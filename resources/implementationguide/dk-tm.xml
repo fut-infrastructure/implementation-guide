@@ -159,6 +159,13 @@
       </sourceReference>
     </resource>
 
+    <!-- Code systems -->
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/dk-tm-regional-subdivision-codes"/>
+      </sourceReference>
+    </resource>
+
     <!-- ValueSets-->
     <resource>
       <example value="false"/>

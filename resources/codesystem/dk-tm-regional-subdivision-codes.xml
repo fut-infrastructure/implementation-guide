@@ -1,0 +1,58 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="dk-tm-regional-subdivision-codes"/>
+    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-regional-subdivision-codes"/>
+    <version value="0.0.1"/>
+    <name value="Regional subdivision codes"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-02"/>
+    <publisher value="FUT"/>
+    <description value="Subdivision codes (Regional codes) used in Denmark" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166-2:DK-2"/>
+            <code value="ISO"/>
+        </coding>
+    </jurisdiction>
+    <content value="complete"/>
+    <concept>
+        <code value="DK-84"/>
+        <display value="Capital Region of Denmark"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Hovedstaden"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="DK-82"/>
+        <display value="Central Denmark Region"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Midtjylland"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="DK-81"/>
+        <display value="Nord Denmark Region"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Nordjylland"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="DK-85"/>
+        <display value="Region Zealand"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Sjælland"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="DK-83"/>
+        <display value="Region of Southern Denmark"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Syddanmark"/>
+        </designation>
+    </concept>
+</CodeSystem>
