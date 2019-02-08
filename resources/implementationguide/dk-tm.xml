@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <id value="dk-tm"/>
+  <url value="http://trifork.dk/fhir/ImplementationGuide/dk-tm"/>
+  <version value="3.2.0"/>
+  <name value="Danish Telemedicine"/>
+
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Systematic | Trifork"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://wherever.dk"/>
+    </telecom>
+  </contact>
+  <description value="The Danish Telemedicine Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications."/>
+  <package>
+    <name value="base"/>
+
+    <!-- Operations -->
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="OperationDefinition/dk-tm-patient"/>
+      </sourceReference>
+    </resource>
+
+    <!-- Search parameters -->
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="SearchParameter/patient.managingOrganization.identifier"/>
+      </sourceReference>
+    </resource>
+
+    <!-- Examples -->
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Communication/dk-tm-message-nemsms-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/dk-tm-message"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Patient/DkTmPatientValid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/dk-tm-patient"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Communication/dk-tm-correspondance-all-types"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/dk-tm-correspondance"/>
+    </resource>
+
+    <!-- Structure definitions-->
+        <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ssn-identifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-person"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-related-person"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-patient"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-authorizationTime"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-reference-description"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-correspondance-address"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-message"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-correspondance"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-itcompetencelevel"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-patient-contactnote"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-patient-relatedPerson"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-address"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-municipalityCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-regionalSubdivisionCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-generalHealthCondition"/>
+      </sourceReference>
+    </resource>
+
+    <!-- Capability statement -->
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/metadata"/>
+      </sourceReference>
+    </resource>
+
+    <!-- Naming systems -->
+    <resource>
+      <sourceReference>
+        <reference value="NamingSystem/cpr"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="NamingSystem/sor"/>
+      </sourceReference>
+    </resource>
+
+    <!-- ValueSets-->
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/it-selfreliance"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dk-tm-relatedperson-relationshiptype"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dk-tm-municipality-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dk-tm-regional-subdivision-codes"/>
+      </sourceReference>
+    </resource>
+
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="Home Page"/>
+    <kind value="page"/>
+    <page>
+      <source value="registry.html"/>
+      <title value="Registry"/>
+      <kind value="list"/>
+
+      <type value="CapabilityStatement"/>
+
+      <type value="StructureDefinition"/>
+      <type value="ValueSet"/>
+      <type value="ConceptMap"/>
+    </page>
+
+  </page>
+</ImplementationGuide>

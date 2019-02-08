@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-related-person" />
+  <name value="Telemedicine related person" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="RelatedPerson" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+  <derivation value="constraint" />
+  <differential>
+  <element id="RelatedPerson">
+      <path value="RelatedPerson" />
+    </element>
+    <element id="RelatedPerson.extension">
+      <path value="RelatedPerson.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="RelatedPerson.extension:contactNote">
+      <path value="RelatedPerson.extension" />
+      <sliceName value="contactNote" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-contactnote" />
+      </type>
+    </element>
+    <element id="RelatedPerson.identifier">
+      <path value="RelatedPerson.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="use" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="RelatedPerson.identifier:ssn-dk">
+      <path value="RelatedPerson.identifier" />
+      <sliceName value="ssn-dk" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ssn-identifier" />
+      </type>
+    </element>
+    <element id="RelatedPerson.relationship">
+      <path value="RelatedPerson.relationship" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="PatientRelationshipType" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/dk-tm-relatedperson-relationshiptype" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="RelatedPerson.relationship.coding">
+      <path value="RelatedPerson.relationship.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/dk-tm-relatedperson-relationshiptype" />
+      </binding>
+    </element>
+    <element id="RelatedPerson.name">
+      <path value="RelatedPerson.name" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

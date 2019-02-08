@@ -1,0 +1,38 @@
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="dk-tm-message-nemsms-valid"/>
+  <meta>
+    <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-message"/>
+  </meta>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://faellestelemedicin.dk/MessageCategory"/>
+      <code value="message"/>
+    </coding>
+    <text value="Besked"/>
+  </category>
+  <medium>
+    <coding>
+      <system value="http://faellestelemedicin.dk/MessageMedium"/>
+      <code value="nemsms"/>
+    </coding>
+    <text value="NemSMS"/>
+  </medium>
+  <sent value="2018-12-12T18:01:10-08:00"/>
+  <received value="2018-12-12T18:01:11-08:00"/>
+  <recipient>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.2"/>
+      <value value="1234567890"/>
+    </identifier>
+  </recipient>
+  <sender>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.1.2"/>
+      <value value="5798000363007"/>
+    </identifier>
+  </sender>
+  <payload>
+    <contentString value="Det er blevet tid til indberetning af blodtryk"/>
+  </payload>
+</Communication>

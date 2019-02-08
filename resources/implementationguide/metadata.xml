@@ -1,0 +1,590 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="metadata"/>
+   <status value="active"/>
+   <date value="2019-02-04T10:32:37+01:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="Trifork FUT"/>
+      <version value="3.7.0-SNAPSHOT"/>
+   </software>
+   <implementation>
+      <description value="Trifork on FHIR (DSTU3 Resources)"/>
+      <url value="http://localhost:8080/baseDstu3"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <type value="Appointment"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Appointment date/time."/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="An Identifier of the Appointment"/>
+         </searchParam>
+         <searchParam>
+            <name value="incomingreferral"/>
+            <type value="reference"/>
+            <documentation value="The ReferralRequest provided as information to allocate to the Encounter"/>
+         </searchParam>
+         <searchParam>
+            <name value="practitioner"/>
+            <type value="reference"/>
+            <documentation value="One of the individuals of the appointment is this practitioner"/>
+         </searchParam>
+         <searchParam>
+            <name value="appointment-type"/>
+            <type value="token"/>
+            <documentation value="The style of appointment or patient that has been booked in the slot (not service type)"/>
+         </searchParam>
+         <searchParam>
+            <name value="part-status"/>
+            <type value="token"/>
+            <documentation value="The Participation status of the subject, or other participant on the appointment. Can be used to locate participants that have not responded to meeting requests."/>
+         </searchParam>
+         <searchParam>
+            <name value="service-type"/>
+            <type value="token"/>
+            <documentation value="The specific service that is to be performed during this appointment"/>
+         </searchParam>
+         <searchParam>
+            <name value="actor"/>
+            <type value="reference"/>
+            <documentation value="Any one of the individuals participating in the appointment"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="One of the individuals of the appointment is this patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="This location is listed in the participants of the appointment"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The overall status of the appointment"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="NamingSystem"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/NamingSystem"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="NamingSystem:replaced-by"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The naming system publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="When is identifier valid?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="codesystem | identifier | root"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="e.g. driver,  provider,  patient, bank etc."/>
+         </searchParam>
+         <searchParam>
+            <name value="id-type"/>
+            <type value="token"/>
+            <documentation value="oid | uuid | uri | other"/>
+         </searchParam>
+         <searchParam>
+            <name value="contact"/>
+            <type value="string"/>
+            <documentation value="Name of an individual to contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="responsible"/>
+            <type value="string"/>
+            <documentation value="Who maintains system namespace?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="Contact details for individual or organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="value"/>
+            <type value="string"/>
+            <documentation value="The unique identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="replaced-by"/>
+            <type value="reference"/>
+            <documentation value="Use this instead"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the naming system"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The operation definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Name used to invoke the operation"/>
+         </searchParam>
+         <searchParam>
+            <name value="instance"/>
+            <type value="token"/>
+            <documentation value="Invoke on an instance?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="operation | query"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Invole at the type level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="system"/>
+            <type value="token"/>
+            <documentation value="Invoke at the system level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="param-profile"/>
+            <type value="reference"/>
+            <documentation value="Profile on the type"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="reference"/>
+            <documentation value="Marks this as a profile of the base"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the operation definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The structure definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="valueset"/>
+            <type value="reference"/>
+            <documentation value="A vocabulary binding reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="primitive-type | complex-type | resource | logical"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <type value="token"/>
+            <documentation value="resource | datatype | extension"/>
+         </searchParam>
+         <searchParam>
+            <name value="experimental"/>
+            <type value="token"/>
+            <documentation value="For testing purposes, not real usage"/>
+         </searchParam>
+         <searchParam>
+            <name value="abstract"/>
+            <type value="token"/>
+            <documentation value="Whether the structure is abstract"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="path"/>
+            <type value="token"/>
+            <documentation value="A path that is constrained in the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="ext-context"/>
+            <type value="string"/>
+            <documentation value="Where the extension can be used in instances"/>
+         </searchParam>
+         <searchParam>
+            <name value="base-path"/>
+            <type value="token"/>
+            <documentation value="Path that identifies the base element"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derivation"/>
+            <type value="token"/>
+            <documentation value="specialization | constraint - How relates to base definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="keyword"/>
+            <type value="token"/>
+            <documentation value="A code for the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="uri"/>
+            <documentation value="Definition that this type is constrained/specialized from"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the structure definition"/>
+         </searchParam>
+      </resource>
+      <interaction>
+         <code value="history-system"/>
+      </interaction>
+      <interaction>
+         <code value="transaction"/>
+      </interaction>
+      <!--<operation>
+         <name value="mark-all-resources-for-reindexing"/>
+         <definition>
+            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="perform-reindexing-pass"/>
+         <definition>
+            <reference value="OperationDefinition/-s-perform-reindexing-pass"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/-s-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="suggest-keywords"/>
+         <definition>
+            <reference value="OperationDefinition/-s-suggest-keywords"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-s-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-is-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="get-resource-counts"/>
+         <definition>
+            <reference value="OperationDefinition/-s-get-resource-counts"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-meta"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-expunge"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-meta-delete"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-expunge"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta-delete"/>
+         </definition>
+      </operation>
+      
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-validate"/>
+         </definition>
+      </operation>-->
+   </rest>
+</CapabilityStatement>

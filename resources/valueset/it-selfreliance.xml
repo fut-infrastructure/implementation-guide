@@ -1,0 +1,69 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="it-selfreliance"/>
+  <url value="http://trifork.dk/fhir/ValueSet/it-selfreliance"/>
+  <version value="0.0.1"/>
+  <name value="it-selfreliance"/>
+  
+
+  <title value="IT selfreliance"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-02"/>
+  <publisher value="FUT"/>
+  <contact>
+    <name value="FUT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"/>
+    </telecom>
+  </contact>
+  <description value="Different types of IT self reliance features" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="smartphone"/>
+        <display value="Able to handle a smarthpone"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Can handle smarthpones"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Kan betjene SMART phone"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="browser"/>
+        <display value="Can use a browser"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Can use a browser"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Kan betjene en browser"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="pc/mac"/>
+        <display value="Can use a computer"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Can use a computer"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Kan betjene en computer"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,117 @@
+<Communication xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance"/>
+  </meta>
+  <id value="dk-tm-correspondance-all-types"/>
+  <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime">
+    <valueDateTime value="2013-06-08T09:57:34.211Z"/>
+  </extension>
+  <status value="completed"/>
+  <identifier>
+    <system value='http://faellestelemedicin.dk/CorrespondanceEnvelopeIdentifier'/>
+    <value value='123'/>
+  </identifier>
+  <identifier>
+    <system value='http://faellestelemedicin.dk/CorrespondanceLetterIdentifier'/>
+    <value value='123'/>
+  </identifier>
+  <category>
+    <coding>
+      <system value='http://faellestelemedicin.dk/CorrespondanceAcknowledgementCode'/>
+      <code value='pluspositivkvitt'/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value='http://faellestelemedicin.dk/CorrespondanceVersionCode'/>
+      <code value='XD9134L'/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value='http://faellestelemedicin.dk/CorrespondanceTypeCode'/>
+      <code value='XDIS91'/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value='http://faellestelemedicin.dk/CorrespondanceStatusCode'/>
+      <code value='nyt'/>
+    </coding>
+  </category>
+  <subject>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.2"/>
+      <value value="1234567890"/>
+    </identifier>
+  </subject>
+  <sent value="2018-12-12T18:01:10-08:00"/>
+  <recipient>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.1.2"/>
+      <value value="5798000363007"/>
+    </identifier>
+    <display value="Sundhedsstyrelsen"/>
+  </recipient>
+  <sender>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.1.2"/>
+      <value value="5790002286346"/>
+    </identifier>
+    <display value="Steno Diabetes Center Copenhagen"/>
+  </sender>
+  <payload>
+    <contentAttachment>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+        <valueCode value="sup"/>
+      </extension>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+        <valueString value="true"/>
+      </extension>
+    </contentAttachment>
+  </payload>
+  <payload>
+    <contentAttachment>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+        <valueCode value="url"/>
+      </extension>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+        <valueString value="BIN"/>
+      </extension>
+      <url value="http://sundhedsstyrelsen.dk/~/media/8612162363FB4BC3A09B32706EA13D36.ashx"/>
+    </contentAttachment>
+  </payload>
+  <payload>
+    <contentAttachment>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+        <valueCode value="clinicalInformation"/>
+      </extension>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+        <valueString value=""/>
+      </extension>
+      <contentType value="text/plain"/>
+      <data value='SGVsbG8gd29ybGQ='/>
+    </contentAttachment>
+  </payload>
+  <payload>
+    <contentAttachment>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+        <valueCode value="attachment"/>
+      </extension>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+        <valueString value="BIN"/>
+      </extension>
+      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-identifier">
+        <valueIdentifier>
+	  <identifier>
+	    <value>260947-9989_021121SKR0XX0166OBJ001</value>
+	  </identifier>
+	</valueIdentifier>
+      </extension>
+      <title>tekst</title>
+      <contentType value="application/pdf"/>
+      <data value='SGVsbG8gd29ybGQ='/>
+      <size value='11'/>
+    </contentAttachment>
+  </payload>
+</Communication>

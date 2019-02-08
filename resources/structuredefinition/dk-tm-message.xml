@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dk-tm-message" />
+  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-message" />
+  <name value="Telemedicine message" />
+  <status value="draft" />
+  <description value="This is the profile for general messaging in the telemedicine platform" />
+  <copyright value="Trifork A&amp;S" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Communication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Communication">
+      <path value="Communication" />
+    </element>
+    <element id="Communication.partOf">
+      <path value="Communication.partOf" />
+      <short value="The CarePlan that this communication relates to" />
+      <definition value="The CarePlan that this communication relates to (when relevant)" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+      </type>
+    </element>
+    <element id="Communication.category">
+      <path value="Communication.category" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Communication.category:DkTmCategory">
+      <path value="Communication.category" />
+      <sliceName value="DkTmCategory" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Communication.category:DkTmCategory.coding.system">
+      <path value="Communication.category.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://faellestelemedicin.dk/MessageCategory" />
+    </element>
+    <element id="Communication.medium">
+      <path value="Communication.medium" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Communication.medium.coding.system">
+      <path value="Communication.medium.coding.system" />
+      <fixedUri value="http://faellestelemedicin.dk/MessageMedium" />
+    </element>
+    <element id="Communication.medium:DkTmMedium">
+      <path value="Communication.medium" />
+      <sliceName value="DkTmMedium" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Communication.medium:DkTmMedium.coding.system">
+      <path value="Communication.medium.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://faellestelemedicin.dk/MessageMedium" />
+    </element>
+    <element id="Communication.recipient">
+      <path value="Communication.recipient" />
+      <min value="1" />
+    </element>
+    <element id="Communication.sender">
+      <path value="Communication.sender" />
+      <min value="1" />
+    </element>
+    <element id="Communication.payload">
+      <path value="Communication.payload" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="1" />
+    </element>
+    <element id="Communication.payload.content[x]:contentAttachment">
+      <path value="Communication.payload.contentAttachment" />
+      <sliceName value="contentAttachment" />
+      <type>
+        <code value="Attachment" />
+      </type>
+    </element>
+    <element id="Communication.payload:reference">
+      <path value="Communication.payload" />
+      <sliceName value="reference" />
+      <max value="1" />
+    </element>
+    <element id="Communication.payload:reference.content[x]:contentReference">
+      <path value="Communication.payload.contentReference" />
+      <sliceName value="contentReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

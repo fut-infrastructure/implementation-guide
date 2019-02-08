@@ -1,0 +1,43 @@
+{
+  "status": "active",
+  "uniqueId": [
+    {
+      "type": "oid",
+      "value": "1.2.208.176.1.2"
+    },
+    {
+      "type": "uri",
+      "value": "http://www.cpr.dk/cpr-systemet"
+    }
+  ],
+  "description": "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.",
+  "type": {
+    "coding": [
+      {
+        "code": "SB",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "display": "Social Beneficiary Identifier"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "name": "Thor Schliemann"
+    }
+  ],
+  "date": "1968-04-02",
+  "responsible": "CPR-kontoret, Økonomi- og Indenrigsministeriets departement",
+  "name": "Danish civil registration system - CPR",
+  "meta": {
+    "lastUpdated": "2017-11-17T13:02:26.24-05:00",
+    "versionId": "1"
+  },
+  "publisher": "Sundhedsdatastyrelsen?",
+  "kind": "identifier",
+  "resourceType": "NamingSystem",
+  "id": "cpr",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>\n  <p>\n    <b>Generated Narrative with Details</b>\n  </p>\n  <p>\n    <b>id</b>: cpr</p>\n  <p>\n    <b>meta</b>:</p>\n  <p>\n    <b>name</b>: Danish civil registration system - CPR</p>\n  <p>\n    <b>status</b>: active</p>\n  <p>\n    <b>kind</b>: identifier</p>\n  <p>\n    <b>date</b>: Apr 2, 1968</p>\n  <p>\n    <b>publisher</b>: Sundhedsdatastyrelsen?</p>\n  <p>\n    <b>contact</b>:</p>\n  <p>\n    <b>responsible</b>: CPR-kontoret, Økonomi- og Indenrigsministeriets departement</p>\n  <p>\n    <b>type</b>: Social Beneficiary Identifier<span style='background: LightGoldenRodYellow'>(Details : {http://terminology.hl7.org/CodeSystem/v2-0203 code &apos;SB&apos; = &apos;Social Beneficiary Identifier&apos;, given as &apos;Social Beneficiary Identifier&apos;})</span>\n  </p>\n  <p>\n    <b>description</b>: The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.</p>\n  <blockquote>\n    <p>\n      <b>uniqueId</b>\n    </p>\n    <p>\n      <b>type</b>: oid</p>\n    <p>\n      <b>value</b>: 1.2.208.176.1.2</p>\n  </blockquote>\n  <blockquote>\n    <p>\n      <b>uniqueId</b>\n    </p>\n    <p>\n      <b>type</b>: uri</p>\n    <p>\n      <b>value</b>: http://www.cpr.dk/cpr-systemet</p>\n  </blockquote>\n</div>"
+  }
+}

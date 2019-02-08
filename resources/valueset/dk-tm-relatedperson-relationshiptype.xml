@@ -1,0 +1,131 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-tm-relatedperson-relationshiptype"/>
+  <url value="http://trifork.dk/fhir/ValueSet/dk-tm-relatedperson-relationshiptype"/>
+  <version value="0.0.1"/>
+  <name value="Relationship types"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-02"/>
+  <publisher value="FUT"/>
+  <description value="A set of codes that can be used to indicate the relationship between a Patient and a Related Person used in Denmark" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:oid:1.2.208.184"/>
+      <code value="Medcom"/>
+    </coding>
+  </jurisdiction>
+
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/RoleCode"/>
+      <concept>
+        <code value="FAMMEMB"/>
+        <display value="family member"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Øvrig familie"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="SIB"/>
+        <display value="sibling"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Søskende"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="DOMPART"/>
+        <display value="domestic partner"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Registreret partner"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="ROOM"/>
+        <display value="Roommate"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Samboende"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="U"/>
+        <display value="Unknown"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Uspecificeret pårørende"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="NBOR"/>
+        <display value="neighbor"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Nabo"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="CHLDINLAW"/>
+        <display value="child-in-law"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Svigerbarn"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="GRNDCHILD"/>
+        <display value="grandchild"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Barnebarn"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="PRN"/>
+        <display value="parent"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Forældre"/>
+        </designation>
+      </concept>
+      <concept>
+
+        <code value="O"/>
+        <display value="Other"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Ingen relationer"/>
+        </designation>
+      </concept>
+
+      <concept>
+        <code value="CHILD"/>
+        <display value="child"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Barn"/>
+        </designation>
+      </concept>
+
+      <concept>
+
+        <code value="SPS"/>
+        <display value="spouse"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Ægtefælle"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

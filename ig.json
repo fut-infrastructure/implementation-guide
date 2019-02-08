@@ -1,0 +1,64 @@
+{
+    "tool": "jekyll",
+    "version": "3.0.1",
+    "fixed-business-version": "0.0.1",
+    "license": "CC-BY-SA-4.0",
+    "npm-name": "dk.fut.fhir.ig.core",
+    "paths": {
+      "resources": [
+        "resources",
+        "examples",
+        "examplesNonValid"
+      ],
+      "pages": ["pages","framework"],
+      "temp": "temp",
+      "output": "output",
+      "qa": "qa",
+      "txCache": "txCache",
+      "specification": "http:/hl7.org/fhir/STU3"
+    },
+    "language" : "en", 
+    "languages" : [ 
+      "en", "da-DK"
+    ],
+    "path-pattern": "[type]-[id].html",
+    "defaults": {
+      "Any": {
+        "template-format": "instance-template-format.html",
+        "template-base": "instance-template-base.html"
+      },
+      "StructureDefinition": {
+        "template-base": "instance-template-sd.html",
+        "template-defns": "instance-template-sd-definitions.html",
+        "template-mappings": "instance-template-sd-mappings.html",
+        "template-examples": "instance-template-sd-examples.html"
+      }
+    },
+    
+    "canonicalBase": "http://trifork.dk/fhir",
+    "source": "implementationguide/dk-tm.xml",
+    "sct-edition": "http://snomed.info/sct/900000000000207008",
+    "resources": {
+      
+    },
+    "logging": [
+      "init",
+      "progress",
+      "context",
+      "html",
+      "tx"
+    ],
+    "extraTemplates": [
+      {
+        "name": "mappings",
+        "description": "Mappings"
+      },
+      {
+        "name": "examples",
+        "description": "Examples"
+      }
+     
+    ]
+  
+    
+  }

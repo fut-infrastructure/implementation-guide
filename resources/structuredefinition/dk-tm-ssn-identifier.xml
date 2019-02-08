@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ssn-identifier" />
+  <name value="Danish SSN Identifier" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Identifier" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Identifier">
+      <path value="Identifier" />
+      <short value="An identifier intended for computation" />
+      <definition value="A technical identifier - identifies some entity uniquely and unambiguously." />
+      <base>
+        <path value="Element" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <mapping>
+        <identity value="v2" />
+        <map value="CX / EI (occasionally, more often EI maps to a resource id or a URL)" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="II - see see identifier pattern at http://wiki.hl7.org/index.php?title=Common_Design_Patterns#Identifier_Pattern for relevant discussion. The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]" />
+      </mapping>
+      <mapping>
+        <identity value="servd" />
+        <map value="Identifier" />
+      </mapping>
+    </element>
+    <element id="Identifier.use">
+      <path value="Identifier.use" />
+      <fixedCode value="official" />
+    </element>
+    <element id="Identifier.system">
+      <path value="Identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:1.2.208.176.1.2" />
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value" />
+      <min value="1" />
+      <constraint>
+        <key value="ssn" />
+        <requirements value="Requirement of danish social security numbers" />
+        <severity value="error" />
+        <human value="Requirement of danish social security numbers" />
+        <expression value="value.matches('^[0-9]{10}$')" />
+      </constraint>
+      <mustSupport value="false" />
+    </element>
+  </differential>
+</StructureDefinition>

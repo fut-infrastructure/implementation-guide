@@ -1,0 +1,45 @@
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="DkTmPatientValid"/>
+    <meta>
+        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-patient" />
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
+        <valueBoolean value="true"/>
+    </extension>
+    <identifier>
+        <system value="urn:oid:1.2.208.176.1.2" />
+        <value value="1122334455" />
+    </identifier>
+    <name>
+        <family value="Hansen" />
+        <given value="Jens" />
+    </name>
+    <telecom>
+        <system value="phone" />
+        <value value="+45 86123456" />
+    </telecom>
+    <telecom>
+        <system value="other"/>
+        <value value="NemSMS"/>
+    </telecom>
+    <telecom>
+        <system value="other"/>
+        <value value="eBoks"/>
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1982-03-20" />
+    <address>
+        <use value="home" />
+        <line value="Europaplads 2" />
+        <city value="Aarhus C" />
+        <postalCode value="8000" />
+    </address>
+    <managingOrganization>
+        <identifier>
+            <system value="urn:oid:1.2.208.176.1.1.2" />
+            <value value="5790002286346" />
+        </identifier>
+    </managingOrganization>
+    
+</Patient>
