@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-tm-correspondance-acknowledgement-code"/>
+    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-acknowledgement-code"/>
+    <version value="0.0.1"/>
+    <name value="Correspondance acknowledgement code"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-11"/>
+    <publisher value="FUT"/>
+    <description value="AcknowledgementCode in correspondance messages specifies if a receipt is required with the status of how a message was processed by the recipient. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'AcknowledgementCode'" />
+    <compose>
+    <include>
+      <system value="http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf"/>
+
+      <concept>
+        <code value="minuspositivkvitt"/>
+        <display value="Ingen positiv-kvittering ønskes"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Ingen positiv-kvittering ønskes"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="pluspositivkvitt"/>
+        <display value="Positiv-kvittering ønskes"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Positiv-kvittering ønskes"/>
+        </designation>
+      </concept>
+      
+    </include>
+    </compose>
+</ValueSet>
