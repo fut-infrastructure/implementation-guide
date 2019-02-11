@@ -13,10 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication">
+     <element id="Communication">
       <path value="Communication" />
     </element>
-    <element id="Communication.partOf">
+   <element id="Communication.partOf">
       <path value="Communication.partOf" />
       <short value="The CarePlan that this communication relates to" />
       <definition value="The CarePlan that this communication relates to (when relevant)" />
@@ -41,6 +41,14 @@
       <sliceName value="DkTmCategory" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationCategory" />
+        </extension>
+        <strength value="required" />
+        <description value="Codes for general categories of communications" />
+        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category" />
+      </binding>
     </element>
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
@@ -67,6 +75,14 @@
       <sliceName value="DkTmMedium" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationMedium" />
+        </extension>
+        <strength value="example" />
+        <description value="Codes for communication mediums" />
+        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-medium" />
+      </binding>
     </element>
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
