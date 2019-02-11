@@ -42,6 +42,17 @@ and returns the Patient resource where the Person is used as a template. If no P
         <type value="Reference"/>
     </parameter>
     <parameter>
+        <name value="provenance"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <documentation value="A provenance resource that models what act this patient is under"/>
+        <type value="Provenance"/>
+        <profile>
+            <reference value="http://trifork.dk/fhir/StructureDefinition/dk-tm-provenance"/>
+        </profile>
+    </parameter>
+    <parameter>
         <name value="return"/>
         <use value="out"/>
         <min value="1"/>

@@ -34,7 +34,7 @@
         <reference value="OperationDefinition/dk-tm-patient-update-operationdefinition"/>
       </sourceReference>
     </resource>
-        <resource>
+    <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="OperationDefinition/dk-tm-person-update-operationdefinition"/>
@@ -43,7 +43,7 @@
 
     <!-- Search parameters -->
     <resource>
-      <example value="true"/>
+      <example value="false"/>
       <sourceReference>
         <reference value="SearchParameter/dk-tm-patient-search-managingOrganizationIdentifier"/>
       </sourceReference>
@@ -73,6 +73,11 @@
     </resource>
 
     <!-- Structure definitions-->
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-provenance"/>
+      </sourceReference>
+    </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/dk-tm-ssn-identifier"/>
@@ -153,6 +158,12 @@
         <reference value="StructureDefinition/dk-tm-ext-generalHealthCondition"/>
       </sourceReference>
     </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-functionalCapacity"/>
+      </sourceReference>
+    </resource>
 
     <!-- Capability statement -->
     <resource>
@@ -181,6 +192,13 @@
     </resource>
 
     <!-- ValueSets-->
+
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dk-tm-provenance-policies"/>
+      </sourceReference>
+    </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
@@ -260,6 +278,11 @@
     <title value="Home Page"/>
     <kind value="page"/>
     <page>
+      <source value="todo.md"/>
+      <title value="Table of Contents"/>
+      <kind value="page"/>
+    </page>
+    <page>
       <source value="registry.html"/>
       <title value="Registry"/>
       <kind value="list"/>
@@ -270,6 +293,9 @@
       <type value="ValueSet"/>
       <type value="ConceptMap"/>
     </page>
-
+    <!--<page>
+      <source value ="profiles"/>
+      <package value="markdown"/>
+    </page>-->
   </page>
 </ImplementationGuide>
