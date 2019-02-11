@@ -9,6 +9,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Systematic | Trifork"/>
+  <fhirVersion value="3.0.1"/>
   <contact>
     <telecom>
       <system value="url"/>
@@ -20,10 +21,23 @@
     <name value="base"/>
 
     <!-- Operations -->
+
     <resource>
-      <example value="true"/>
+      <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/dk-tm-patient"/>
+        <reference value="OperationDefinition/dk-tm-patient-create-operationdefinition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/dk-tm-patient-update-operationdefinition"/>
+      </sourceReference>
+    </resource>
+        <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/dk-tm-person-update-operationdefinition"/>
       </sourceReference>
     </resource>
 
@@ -31,7 +45,7 @@
     <resource>
       <example value="true"/>
       <sourceReference>
-        <reference value="SearchParameter/patient.managingOrganization.identifier"/>
+        <reference value="SearchParameter/dk-tm-patient-search-managingOrganizationIdentifier"/>
       </sourceReference>
     </resource>
 
@@ -59,7 +73,7 @@
     </resource>
 
     <!-- Structure definitions-->
-        <resource>
+    <resource>
       <sourceReference>
         <reference value="StructureDefinition/dk-tm-ssn-identifier"/>
       </sourceReference>
