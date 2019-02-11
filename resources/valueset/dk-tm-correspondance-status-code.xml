@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-tm-correspondance-status-code"/>
+    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-status-code"/>
+    <version value="0.0.1"/>
+    <name value="Correspondance status code"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-11"/>
+    <publisher value="FUT"/>
+    <description value="StatusCode in correspondance messages must be filled in with a valid status as specified. It indicates if the correspondance message is completely new (the most common case), or if it replaces a previously sent correspondance message. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'StatusCode'" />
+    <compose>
+    <include>
+      <system value="http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf"/>
+
+      <concept>
+        <code value="Nytbrev"/>
+        <display value="A new correspondance message, which does not replace a previous one"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="En ny korrespondancemeddelelse, som ikke erstatter et tidligere"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="Rettetbrev"/>
+        <display value="A correspondance message, which replaces a previous one"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="En korrespondancemeddelelse, som erstatter et tidligere sendt"/>
+        </designation>
+      </concept>
+      
+    </include>
+    </compose>
+</ValueSet>

@@ -8,35 +8,35 @@
   </extension>
   <status value="completed"/>
   <identifier>
-    <system value='http://faellestelemedicin.dk/CorrespondanceEnvelopeIdentifier'/>
+    <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-envelope-identifier'/>
     <value value='123'/>
   </identifier>
   <identifier>
-    <system value='http://faellestelemedicin.dk/CorrespondanceLetterIdentifier'/>
+    <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-letter-identifier'/>
     <value value='123'/>
   </identifier>
   <category>
     <coding>
-      <system value='http://faellestelemedicin.dk/CorrespondanceAcknowledgementCode'/>
-      <code value='pluspositivkvitt'/>
+      <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-acknowledgement-code'/>
+      <code value='minuspositivkvitt'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://faellestelemedicin.dk/CorrespondanceVersionCode'/>
+      <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-version-code'/>
       <code value='XD9134L'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://faellestelemedicin.dk/CorrespondanceTypeCode'/>
+      <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-type-code'/>
       <code value='XDIS91'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://faellestelemedicin.dk/CorrespondanceStatusCode'/>
-      <code value='nyt'/>
+      <system value='http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-status-code'/>
+      <code value='Nytbrev'/>
     </coding>
   </category>
   <subject>

@@ -1,0 +1,49 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="message-medium"/>
+  <url value="http://trifork.dk/fhir/ValueSet/dk-tm-message-medium"/>
+  <version value="0.0.1"/>
+  <name value="Message medium"/>  
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-08"/>
+  <publisher value="FUT"/>
+  <contact>
+    <name value="FUT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"/>
+    </telecom>
+  </contact>
+  <description value="The set of possible message types" />
+  <jurisdiction>
+    <coding>
+      <system value="http://digst.dk"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  
+  <compose>
+    <include>
+      <system value="http://faellestelemedicin.dk/dk-tm-message-medium"/>
+
+      <concept>
+        <code value="nemsms"/>
+        <display value="NemSMS"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="NemSMS"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="eboks"/>
+        <display value="eBoks"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="eBoks"/>
+        </designation>
+      </concept>
+      
+    </include>
+  </compose>
+</ValueSet>

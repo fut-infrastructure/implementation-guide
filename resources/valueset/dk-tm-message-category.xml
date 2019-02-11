@@ -1,0 +1,83 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="message-category"/>
+  <url value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category"/>
+  <version value="0.0.1"/>
+  <name value="Message category"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-08"/>
+  <publisher value="FUT"/>
+  <contact>
+    <name value="FUT"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"/>
+    </telecom>
+  </contact>
+  <description value="The set of possible message types" />
+  <jurisdiction>
+    <coding>
+      <system value="http://digst.dk"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  
+  <compose>
+    <include>
+      <system value="http://faellestelemedicin.dk/dk-tm-message-category"/>
+
+      <concept>
+        <code value="message"/>
+        <display value="Message"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Message"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Besked"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="notification"/>
+        <display value="Notification"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Notification"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Notifikation"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="advice"/>
+        <display value="Advice"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Advice"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Advisering"/>
+        </designation>
+      </concept>
+      
+      <concept>
+        <code value="note"/>
+        <display value="Note"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Note"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Note"/>
+        </designation>
+      </concept>
+      
+    </include>
+  </compose>
+</ValueSet>

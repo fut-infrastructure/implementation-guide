@@ -1,0 +1,26 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-tm-correspondance-type-code"/>
+    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-type-code"/>
+    <version value="0.0.1"/>
+    <name value="Correspondance type code"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-11"/>
+    <publisher value="FUT"/>
+    <description value="TypeCode in correspondance messages must be filled in with a valid type as specified. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'TypeCode'" />
+    <compose>
+    <include>
+      <system value="http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf"/>
+
+      <concept>
+        <code value="XDIS91"/>
+        <display value="The type for MedCom correspondance messages"/>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Type for 'det gode' XML korrespondancebrev"/>
+        </designation>
+      </concept>
+      
+    </include>
+    </compose>
+</ValueSet>
