@@ -48,6 +48,7 @@
     <element id="Communication.identifier:envelopeIdentifier">
       <path value="Communication.identifier" />
       <sliceName value="envelopeIdentifier" />
+      <short value="Use value set &quot;Correspondance envelope identifier&quot;" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -59,6 +60,7 @@
     <element id="Communication.identifier:letterIdentifier">
       <path value="Communication.identifier" />
       <sliceName value="letterIdentifier" />
+      <short value="Use value set &quot;Correspondance envelope identifier&quot;" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -82,6 +84,7 @@
       <path value="Communication.category" />
       <sliceName value="acknowledgementCode" />
       <label value="AcknowledgementCode label" />
+      <short value="Use value set &quot;Correspondance acknowledgement code&quot;" />
       <requirements value="AcknowledgementCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
@@ -106,6 +109,7 @@
       <path value="Communication.category" />
       <sliceName value="versionCode" />
       <label value="VersionCode label" />
+      <short value="Use value set &quot;Correspondance version code&quot;" />
       <requirements value="VersionCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
@@ -123,6 +127,7 @@
     <element id="Communication.category:typeCode">
       <path value="Communication.category" />
       <sliceName value="typeCode" />
+      <short value="Use value set &quot;Correspondance type code&quot;" />
       <requirements value="TypeCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
@@ -138,6 +143,7 @@
     <element id="Communication.category:statusCode">
       <path value="Communication.category" />
       <sliceName value="statusCode" />
+      <short value="Use value set &quot;Correspondance status code&quot;" />
       <requirements value="StatusCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
