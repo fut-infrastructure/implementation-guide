@@ -13,10 +13,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-     <element id="Communication">
+    <element id="Communication">
       <path value="Communication" />
     </element>
-   <element id="Communication.partOf">
+    <element id="Communication">
+      <path value="Communication" />
+      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition" />
+    </element>
+    <element id="Communication.identifier">
+      <path value="Communication.identifier" />
+      <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
+    </element>
+    <element id="Communication.partOf">
       <path value="Communication.partOf" />
       <short value="The CarePlan that this communication relates to" />
       <definition value="The CarePlan that this communication relates to (when relevant)" />
@@ -41,19 +49,25 @@
       <sliceName value="DkTmCategory" />
       <min value="1" />
       <max value="1" />
+    </element>
+    <element id="Communication.category:DkTmCategory.coding">
+      <path value="Communication.category.coding" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
         <strength value="required" />
-        <description value="Codes for general categories of communications" />
         <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category" />
       </binding>
     </element>
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://faellestelemedicin.dk/MessageCategory" />
+      <fixedUri value="http://trifork.dk/dk-tm-message-category" />
+    </element>
+    <element id="Communication.category:DkTmCategory.coding.code">
+      <path value="Communication.category.coding.code" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category" />
+      </binding>
     </element>
     <element id="Communication.medium">
       <path value="Communication.medium" />
@@ -87,7 +101,15 @@
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
-      <fixedUri value="http://faellestelemedicin.dk/MessageMedium" />
+      <fixedUri value="http://trifork.dk/dk-tm-message-medium" />
+    </element>
+    <element id="Communication.medium:DkTmMedium.coding.code">
+      <path value="Communication.medium.coding.code" />
+      <binding>
+        <strength value="required" />
+        <description value="A valid message medium must be supplied" />
+        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-medium" />
+      </binding>
     </element>
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
@@ -99,33 +121,13 @@
     </element>
     <element id="Communication.payload">
       <path value="Communication.payload" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <max value="1" />
     </element>
-    <element id="Communication.payload.content[x]:contentAttachment">
-      <path value="Communication.payload.contentAttachment" />
-      <sliceName value="contentAttachment" />
+    <element id="Communication.payload.content[x]:contentString">
+      <path value="Communication.payload.contentString" />
+      <sliceName value="contentString" />
       <type>
-        <code value="Attachment" />
-      </type>
-    </element>
-    <element id="Communication.payload:reference">
-      <path value="Communication.payload" />
-      <sliceName value="reference" />
-      <max value="1" />
-    </element>
-    <element id="Communication.payload:reference.content[x]:contentReference">
-      <path value="Communication.payload.contentReference" />
-      <sliceName value="contentReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <code value="string" />
       </type>
     </element>
   </differential>

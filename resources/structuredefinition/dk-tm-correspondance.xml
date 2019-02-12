@@ -42,6 +42,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
       <min value="1" />
     </element>
     <element id="Communication.identifier:envelopeIdentifier">
@@ -53,15 +54,7 @@
     <element id="Communication.identifier:envelopeIdentifier.system">
       <path value="Communication.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-envelope-identifier" />
-    </element>
-    <element id="Communication.identifier:envelopeIdentifier.value">
-      <path value="Communication.identifier.value" />
-      <binding>
-        <strength value="required" />
-        <description value="Envelope identifier" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-envelope-identifier" />
-      </binding>
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-envelope-identifier" />
     </element>
     <element id="Communication.identifier:letterIdentifier">
       <path value="Communication.identifier" />
@@ -72,15 +65,7 @@
     <element id="Communication.identifier:letterIdentifier.system">
       <path value="Communication.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-letter-identifier" />
-    </element>
-    <element id="Communication.identifier:letterIdentifier.value">
-      <path value="Communication.identifier.value" />
-      <binding>
-        <strength value="required" />
-        <description value="Letter identifier" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-letter-identifier" />
-      </binding>
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-letter-identifier" />
     </element>
     <element id="Communication.category">
       <path value="Communication.category" />
@@ -115,7 +100,7 @@
     <element id="Communication.category:acknowledgementCode.coding.system">
       <path value="Communication.category.coding.system" />
       <label value="Required for correspondance" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-acknowledgement-code" />
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-acknowledgement-code" />
     </element>
     <element id="Communication.category:versionCode">
       <path value="Communication.category" />
@@ -125,13 +110,6 @@
       <min value="1" />
       <max value="1" />
       <meaningWhenMissing value="Meaning when missing" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-version-code" />
-      </binding>
     </element>
     <element id="Communication.category:versionCode.coding">
       <path value="Communication.category.coding" />
@@ -140,7 +118,7 @@
     <element id="Communication.category:versionCode.coding.system">
       <path value="Communication.category.coding.system" />
       <label value="Required for correspondance" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-version-code" />
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-version-code" />
     </element>
     <element id="Communication.category:typeCode">
       <path value="Communication.category" />
@@ -148,15 +126,6 @@
       <requirements value="TypeCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-type-code" />
-        </valueSetReference>
-      </binding>
     </element>
     <element id="Communication.category:typeCode.coding">
       <path value="Communication.category.coding" />
@@ -164,7 +133,7 @@
     </element>
     <element id="Communication.category:typeCode.coding.system">
       <path value="Communication.category.coding.system" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-type-code" />
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-type-code" />
     </element>
     <element id="Communication.category:statusCode">
       <path value="Communication.category" />
@@ -172,13 +141,6 @@
       <requirements value="StatusCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-status-code" />
-      </binding>
     </element>
     <element id="Communication.category:statusCode.coding">
       <path value="Communication.category.coding" />
@@ -186,7 +148,7 @@
     </element>
     <element id="Communication.category:statusCode.coding.system">
       <path value="Communication.category.coding.system" />
-      <fixedUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-status-code" />
+      <fixedUri value="http://trifork.dk/dk-tm-correspondance-status-code" />
     </element>
     <element id="Communication.subject">
       <path value="Communication.subject" />

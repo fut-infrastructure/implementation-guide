@@ -1,19 +1,19 @@
 <Communication xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-message-nemsms-valid"/>
+  <!-- id value="dk-tm-message-nemsms-valid"/ -->
   <meta>
     <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-message"/>
   </meta>
   <status value="completed"/>
   <category>
     <coding>
-      <system value="http://faellestelemedicin.dk/MessageCategory"/>
+      <system value="http://trifork.dk/dk-tm-message-category"/>
       <code value="message"/>
     </coding>
     <text value="Besked"/>
   </category>
   <medium>
     <coding>
-      <system value="http://faellestelemedicin.dk/MessageMedium"/>
+      <system value="http://trifork.dk/dk-tm-message-medium"/>
       <code value="nemsms"/>
     </coding>
     <text value="NemSMS"/>
