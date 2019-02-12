@@ -1,5 +1,5 @@
 <Communication xmlns="http://hl7.org/fhir">
-  <id value="correspondance-all-types"/>
+  <!-- id value="correspondance-all-types"/ -->
   <meta>
     <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance"/>
   </meta>
@@ -63,7 +63,7 @@
   <payload>
     <contentAttachment>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
-        <valueCode value="sup"/>
+        <valueString value="sup"/>
       </extension>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
         <valueString value="true"/>
@@ -73,7 +73,7 @@
   <payload>
     <contentAttachment>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
-        <valueCode value="url"/>
+        <valueString value="url"/>
       </extension>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
         <valueString value="BIN"/>
@@ -84,10 +84,10 @@
   <payload>
     <contentAttachment>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
-        <valueCode value="clinicalInformation"/>
+        <valueString value="clinicalInformation"/>
       </extension>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
-        <valueString value=""/>
+        <valueString value="Description"/>
       </extension>
       <contentType value="text/plain"/>
       <data value='SGVsbG8gd29ybGQ='/>
@@ -96,17 +96,17 @@
   <payload>
     <contentAttachment>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
-        <valueCode value="attachment"/>
+        <valueString value="attachment"/>
       </extension>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
         <valueString value="BIN"/>
       </extension>
       <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-identifier">
         <valueIdentifier>
-	  <identifier>
-	    <value>260947-9989_021121SKR0XX0166OBJ001</value>
-	  </identifier>
-	</valueIdentifier>
+	      <identifier>
+	        <value>260947-9989_021121SKR0XX0166OBJ001</value>
+	      </identifier>
+	    </valueIdentifier>
       </extension>
       <title>tekst</title>
       <contentType value="application/pdf"/>
