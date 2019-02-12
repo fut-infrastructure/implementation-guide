@@ -168,7 +168,6 @@
     <element id="Communication.subject.identifier.extension:alternativeId">
       <path value="Communication.subject.identifier.extension" />
       <sliceName value="alternativeId" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
