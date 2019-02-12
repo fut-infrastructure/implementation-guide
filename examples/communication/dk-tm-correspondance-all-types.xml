@@ -1,5 +1,5 @@
 <Communication xmlns="http://hl7.org/fhir">
-  <!-- id value="correspondance-all-types"/ -->
+  <id value="correspondance-all-types"/>
   <meta>
     <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance"/>
   </meta>
