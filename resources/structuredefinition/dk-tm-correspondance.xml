@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-
+  <id value="dk-tm-correspondance" />
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance" />
-  <id value="dk-tm-correspondance"/>
   <name value="Telemedicine correspondance" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -14,6 +13,7 @@
   <differential>
     <element id="Communication">
       <path value="Communication" />
+      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition.." />
     </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
@@ -90,13 +90,6 @@
       <requirements value="AcknowledgementCode is required for correspondance messages" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-acknowledgement-code" />
-      </binding>
     </element>
     <element id="Communication.category:acknowledgementCode.coding">
       <path value="Communication.category.coding" />
@@ -162,6 +155,26 @@
       <path value="Communication.subject" />
       <min value="1" />
     </element>
+    <element id="Communication.subject.identifier.extension">
+      <path value="Communication.subject.identifier.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Communication.subject.identifier.extension:alternativeId">
+      <path value="Communication.subject.identifier.extension" />
+      <sliceName value="alternativeId" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-correspondance-address" />
+      </type>
+    </element>
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
       <min value="1" />
@@ -189,6 +202,10 @@
       <path value="Communication.sender.display" />
       <min value="1" />
     </element>
+    <element id="Communication.payload">
+      <path value="Communication.payload" />
+      <min value="1" />
+    </element>
     <element id="Communication.payload.content[x]:contentAttachment">
       <path value="Communication.payload.contentAttachment" />
       <sliceName value="contentAttachment" />
@@ -209,7 +226,7 @@
     <element id="Communication.payload.content[x]:contentAttachment.extension:referenceType">
       <path value="Communication.payload.contentAttachment.extension" />
       <sliceName value="referenceType" />
-      <min value="1" />
+      <definition value="Optional Extension Element - found in all resources" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -223,6 +240,15 @@
       <type>
         <code value="Extension" />
         <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description" />
+      </type>
+    </element>
+    <element id="Communication.payload.content[x]:contentAttachment.extension:identifier">
+      <path value="Communication.payload.contentAttachment.extension" />
+      <sliceName value="identifier" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-identifier" />
       </type>
     </element>
   </differential>

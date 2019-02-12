@@ -24,7 +24,7 @@
   
   <compose>
     <include>
-      <system value="http://faellestelemedicin.dk/dk-tm-message-category"/>
+      <system value="http://trifork.dk/dk-tm-message-category"/>
 
       <concept>
         <code value="message"/>

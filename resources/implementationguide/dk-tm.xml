@@ -116,6 +116,16 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-referencetype"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-ext-identifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/dk-tm-ext-reference-description"/>
       </sourceReference>
     </resource>

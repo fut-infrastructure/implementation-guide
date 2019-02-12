@@ -15,10 +15,7 @@
   <differential>
     <element id="Communication">
       <path value="Communication" />
-    </element>
-    <element id="Communication">
-      <path value="Communication" />
-      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition" />
+      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition. " />
     </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
@@ -79,10 +76,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-    </element>
-    <element id="Communication.medium.coding.system">
-      <path value="Communication.medium.coding.system" />
-      <fixedUri value="http://faellestelemedicin.dk/MessageMedium" />
     </element>
     <element id="Communication.medium:DkTmMedium">
       <path value="Communication.medium" />
