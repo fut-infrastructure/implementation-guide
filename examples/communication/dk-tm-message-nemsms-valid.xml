@@ -1,5 +1,5 @@
 <Communication xmlns="http://hl7.org/fhir">
-  <!-- id value="dk-tm-message-nemsms-valid"/ -->
+  <id value="dk-tm-message-nemsms-valid"/>
   <meta>
     <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-message"/>
   </meta>
