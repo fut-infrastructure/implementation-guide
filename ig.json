@@ -34,20 +34,13 @@
         "template-examples": "instance-template-sd-examples.html"
       }
     },
-    
+    "gen-examples": "true",
     "canonicalBase": "http://trifork.dk/fhir",
     "source": "implementationguide/dk-tm.xml",
     "sct-edition": "http://snomed.info/sct/900000000000207008",
     "resources": {
       
     },
-    "logging": [
-      "init",
-      "progress",
-      "context",
-      "html",
-      "tx"
-    ],
     "extraTemplates": [
       {
         "name": "mappings",

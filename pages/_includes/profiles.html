@@ -8,3 +8,5 @@
 <div>
   {% include list-profiles.xhtml %}
 </div>
+
+{% capture my-include %}{% include profiles.md %}{% endcapture %}{{ my-include | markdownify }}
