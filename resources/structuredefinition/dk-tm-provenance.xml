@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dk-tm-provenance" />
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-provenance" />
-  <id value="dk-tm-provenance"/>
   <name value="Danish provenance" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />

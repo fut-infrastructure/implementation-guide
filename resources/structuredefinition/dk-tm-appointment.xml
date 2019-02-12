@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="dk-tm-appointment" />
+  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-appointment" />
+  <name value="Telemedicine appointment" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Appointment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+  <derivation value="constraint" />
+  <differential>
+  <element id="Appointment">
+      <path value="Appointment" />
+    </element>
+    <element id="Appointment.appointmentType">
+      <path value="Appointment.appointmentType" />
+      <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="appointment-type" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-appointmenttype-codes" />
+      </binding>
+    </element>
+    <element id="Appointment.reason">
+      <path value="Appointment.reason" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.participant">
+      <path value="Appointment.participant" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="actor.reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+    </element>
+    <element id="Appointment.participant:patient">
+      <path value="Appointment.participant" />
+      <sliceName value="patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Appointment.participant:patient.type">
+      <path value="Appointment.participant.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant:patient.actor">
+      <path value="Appointment.participant.actor" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-patient" />
+      </type>
+    </element>
+    <element id="Appointment.participant:patient.required">
+      <path value="Appointment.participant.required" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.participant:location">
+      <path value="Appointment.participant" />
+      <sliceName value="location" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Appointment.participant:location.type">
+      <path value="Appointment.participant.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant:location.actor">
+      <path value="Appointment.participant.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+      </type>
+    </element>
+    <element id="Appointment.participant:practitioner">
+      <path value="Appointment.participant" />
+      <sliceName value="practitioner" />
+    </element>
+    <element id="Appointment.participant:practitioner.type">
+      <path value="Appointment.participant.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant:practitioner.actor">
+      <path value="Appointment.participant.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
+    </element>
+    <element id="Appointment.participant:relatedPerson">
+      <path value="Appointment.participant" />
+      <sliceName value="relatedPerson" />
+    </element>
+    <element id="Appointment.participant:relatedPerson.type">
+      <path value="Appointment.participant.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant:relatedPerson.actor">
+      <path value="Appointment.participant.actor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-related-person" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

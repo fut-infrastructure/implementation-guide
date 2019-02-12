@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir"
+<ImplementationGuide xmlns="http://hl7.org/fhir" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id value="dk-tm"/>
   <url value="http://trifork.dk/fhir/ImplementationGuide/dk-tm"/>
@@ -79,6 +79,11 @@
     </resource>
 
     <!-- Structure definitions-->
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/dk-tm-appointment"/>
+      </sourceReference>
+    </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/dk-tm-provenance"/>
@@ -260,6 +265,12 @@
 
     <!-- ValueSets-->
 
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/dk-tm-appointmenttype-codes"/>
+      </sourceReference>
+    </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
