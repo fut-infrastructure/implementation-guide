@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance" />
+  <id value="dk-tm-correspondance"/>
   <name value="Telemedicine correspondance" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
