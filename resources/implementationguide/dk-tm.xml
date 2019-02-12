@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir" 
+<ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id value="dk-tm"/>
   <url value="http://trifork.dk/fhir/ImplementationGuide/dk-tm"/>
@@ -38,6 +38,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="OperationDefinition/dk-tm-person-update-operationdefinition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/FUTQuestionnaire"/>
       </sourceReference>
     </resource>
 
@@ -164,6 +170,67 @@
         <reference value="StructureDefinition/dk-tm-ext-functionalCapacity"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/FUTQuestionnaire.profile"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-maxvalue"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-minvalue"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-author"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-custodian"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-feedback"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-intendedOrganization"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-maxoccurs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-minoccurs"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-recommendation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-reuseCriteria"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-questionnaire-sliderstepvalue"/>
+      </sourceReference>
+    </resource>
+
 
     <!-- Capability statement -->
     <resource>

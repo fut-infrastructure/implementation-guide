@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-reuseCriteria" />
+  <url value="http://example.org/fhir/StructureDefinition/questionnaire-reuseCriteria" />
+  <name value="reuseCriteria" />
+  <status value="draft" />
+  <description value="Defines if and when a response can be reused." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:allowed">
+      <path value="Extension.extension" />
+      <sliceName value="allowed" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:allowed.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="allowed" />
+    </element>
+    <element id="Extension.extension:allowed.value[x]:valueBoolean">
+      <path value="Extension.extension.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:situationQuality">
+      <path value="Extension.extension" />
+      <sliceName value="situationQuality" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:situationQuality.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="situationQuality" />
+    </element>
+    <element id="Extension.extension:situationQuality.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:operationQuality">
+      <path value="Extension.extension" />
+      <sliceName value="operationQuality" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:operationQuality.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="operationQuality" />
+    </element>
+    <element id="Extension.extension:operationQuality.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:dataQuality">
+      <path value="Extension.extension" />
+      <sliceName value="dataQuality" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:dataQuality.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dataQuality" />
+    </element>
+    <element id="Extension.extension:dataQuality.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:dataActuality">
+      <path value="Extension.extension" />
+      <sliceName value="dataActuality" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:dataActuality.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dataActuality" />
+    </element>
+    <element id="Extension.extension:dataActuality.value[x]:valueInteger">
+      <path value="Extension.extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <min value="1" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+    <element id="Extension.extension:dataActualityUnit">
+      <path value="Extension.extension" />
+      <sliceName value="dataActualityUnit" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:dataActualityUnit.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dataActualityUnit" />
+    </element>
+    <element id="Extension.extension:dataActualityUnit.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/questionnaire-reuseCriteria" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

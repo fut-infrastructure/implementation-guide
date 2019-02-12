@@ -55,6 +55,12 @@ tcode: {{[type]}}
             </h3>
 
             <a name="introduction"> </a>
+            {% capture profile_id %}{{[id]}}{% endcapture %}
+            {% for intro in site.data.introduction %}
+              {% if intro.profile == profile_id %}
+                {% include {{[id]}}-intro.html %}
+              {% endif %}
+            {% endfor %}
 
             <a name="profile"> </a>
             <h4>Formal Views of Profile Content</h4>
