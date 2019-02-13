@@ -6,6 +6,14 @@ java -jar org.hl7.fhir.igpublisher.jar -ig ig.json
 
 Then run eg. 'jekyll serve' in the /output directory
 
+## Building with docker
+
+```sh
+docker build -t igpublisher .
+docker run -v $(pwd):/tmp igpublisher /tmp/ig.json
+open output/index.html
+```
+
 ## Add a introduction to a profile
 It is possible to write an introduction to a profile by following these steps:
 1. Create a markdown file in `/pages/_includes` with the name id-intro.md where id is the name of the resource (eg. dk-tm-correspondance-intro.md). The content of the file should be the introduction.
