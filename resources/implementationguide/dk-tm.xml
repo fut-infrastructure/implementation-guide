@@ -4,8 +4,7 @@
   <id value="dk-tm"/>
   <url value="http://trifork.dk/fhir/ImplementationGuide/dk-tm"/>
   <version value="3.2.0"/>
-  <name value="Danish Telemedicine"/>
-
+  <name value="eHealth Infrastructure"/>
   <status value="draft"/>
   <experimental value="true"/>
   <publisher value="Systematic | Trifork"/>
@@ -13,10 +12,10 @@
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="http://wherever.dk"/>
+      <value value="http://ehealth.sundhed.dk"/>
     </telecom>
   </contact>
-  <description value="The Danish Telemedicine Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications."/>
+  <description value="The Danish eHealth Infrastructure Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications."/>
   <package>
     <name value="base"/>
 

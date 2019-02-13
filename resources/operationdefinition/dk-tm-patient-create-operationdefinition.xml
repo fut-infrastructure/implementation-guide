@@ -2,20 +2,11 @@
 <OperationDefinition xmlns="http://hl7.org/fhir" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id value="dk-tm-patient-create-operationdefinition"/>
-
     <name value="Create Patient from Person"/>
-
     <status value="active"/>
     <kind value="operation"/>
     <date value="2019-02-02"/>
-    <description value="This operation is used to create a new Patient resource from a Person resource. Once executed successfully the Patient resource is created on the server and as well returned in the response bundle.
-  
-The operation takes the input parameters:
-
-  - person identifier
-  - organization reference
-
-and returns the Patient resource where the Person is used as a template. If no Person resource exists with the given SSN, the Person is created."/>
+    <description value="This operation is used to create a new Patient resource from a Person resource. Once executed successfully the Patient resource is created on the server and as well returned in the response bundle. The operation takes the input parameters listed below and returns the Patient resource where the Person is used as a template meaning that all demographics data is copied from the Person to the Patient. If no Person resource exists with the given SSN, the Person is created.&#xD;&#xA;&#xD;&#xA;### Note&#xD;&#xA;This operation is currently the only way to create Patient resources in the eHealth Infrastructure" />
     <code value="createPatientFromPerson"/>
     <comment value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
     <resource value="Patient"/>

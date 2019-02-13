@@ -1,9 +1,9 @@
 {
     "tool": "jekyll",
     "version": "3.0.1",
-    "fixed-business-version": "0.0.1",
+    "fixed-business-version": "0.6.0",
     "license": "CC-BY-SA-4.0",
-    "npm-name": "dk.fut.fhir.ig.core",
+    "npm-name": "dk.ehealth.sundhed.fhir.ig.core",
     "paths": {
       "resources": [
         "resources",
@@ -42,10 +42,6 @@
       
     },
     "extraTemplates": [
-      {
-        "name": "mappings",
-        "description": "Mappings"
-      },
       {
         "name": "examples",
         "description": "Examples"

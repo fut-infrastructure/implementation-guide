@@ -1,4 +1,4 @@
-# Danish National Telemedicine Implementation Guide
+# Danish eHealth Implementation Guide
 
 ## Introduction
 This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> in the danish national 

@@ -40,7 +40,6 @@ tcode: {{[type]}}
                   <li class="{% if page.path == "{{[type]}}-{{[id]}}.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
                   {% if "{{[type]}}" == "StructureDefinition" %}
                     <li class="{% if page.path == "{{[type]}}-{{[id]}}-definitions.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
-                    <li class="{% if page.path == "{{[type]}}-{{[id]}}-mappings.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-mappings.html">Mappings</a></li>
                     <li class="{% if page.path == "{{[type]}}-{{[id]}}-examples.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
                     <li class="{% if page.path == "OperationDefinition-{{[id]}}-operations.html" %}active{% endif %}"><a href="OperationDefinition-{{[id]}}-operations.html">Operations</a></li>
                   {% endif %}

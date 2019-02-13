@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-patient" />
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This is some additional text</div>
+  </text>
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-patient" />
   <name value="Telemedicine patient" />
   <status value="draft" />
-  <description value="This profile holds the patient information needed in the danish telemedicine context" />
+  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a person in a careplan process. All patients must be linked to an actual person resource instance, where the person acts a template for a patient. A newly created patient is always based from a person which also means that a person links to all its patients.&#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operations defined for the Patient resource. The operations ensure that patients are created with the proper demographics data, the proper managing organization and under the proper legislation and having a proper link between person and patient." />
   <copyright value="Trifork A/S" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -15,6 +19,7 @@
   <differential>
     <element id="Patient">
       <path value="Patient" />
+      <comment value="This is the comment on the patient" />
     </element>
     <element id="Patient.extension">
       <path value="Patient.extension" />
@@ -89,6 +94,8 @@
     <element id="Patient.identifier:dk-ssn">
       <path value="Patient.identifier" />
       <sliceName value="dk-ssn" />
+      <definition value="A technical identifier - identifies some entity uniquely and unambiguously. This identifier holds the social security number defined in a danish context" />
+      <comment value="This is the comment on the SSN slice" />
       <min value="1" />
       <max value="1" />
       <type>
