@@ -95,7 +95,6 @@
       <path value="Patient.identifier" />
       <sliceName value="dk-ssn" />
       <definition value="A technical identifier - identifies some entity uniquely and unambiguously. This identifier holds the social security number defined in a danish context" />
-      <comment value="This is the comment on the SSN slice" />
       <min value="1" />
       <max value="1" />
       <type>
