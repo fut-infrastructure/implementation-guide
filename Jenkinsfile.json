@@ -1,0 +1,17 @@
+{
+  "app": {
+    "name": "ehealth-documentation"
+  },
+  "s3": {
+    "bucket": "ehealth-documentation",
+    "region": "eu-west-1",
+    "jenkins_creds_id": "eks-admin"
+  },
+  "pipeline": {
+    "enabled": true,
+    "debug": false,
+    "library": {
+      "branch": "dev"
+    }
+  }
+}
