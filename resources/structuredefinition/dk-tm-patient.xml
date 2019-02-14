@@ -19,7 +19,6 @@
   <differential>
     <element id="Patient">
       <path value="Patient" />
-      <comment value="This is the comment on the patient" />
     </element>
     <element id="Patient.extension">
       <path value="Patient.extension" />
