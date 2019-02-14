@@ -6,6 +6,17 @@ java -jar org.hl7.fhir.igpublisher.jar -ig ig.json
 
 Then run eg. 'jekyll serve' in the /output directory
 
+## Auto deployment
+
+All commits to `master` branch is automatically build as html and deployed to s3.
+
+http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/
+
+The output of the igpublisher is uploaded to `s3://ehealth-documentation/vx.x.x/ig/`
+where `x.x.x` is taken from `fixed-business-version` in `ig.json`
+
+When creating a new version in `ig.json`, remember to add the new version in the `static/index.html` file to be able to browse to the new version.
+
 ## Building with docker
 
 ```sh
