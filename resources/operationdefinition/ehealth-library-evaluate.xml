@@ -1,0 +1,20 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="Library--evaluate"/>
+   <name value="evaluate"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="The operation causes the parameters passed as input to be evaluated against the decision support rule identified by the Library resource, returning the produced output and/or errors. The operation is applicable for logic-library type (see Library.type) Library resource that identifies a decision support rule and defines its parameters. The input Parameters shall be structured in accordance with the Library.parameter and also contain a value for each parameter congruent with the parameter type."/>
+   <idempotent value="true"/>
+   <code value="evaluate"/>
+   <resource value="Library"/>
+   <system value="false"/>
+   <type value="true"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="parameters"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Parameters"/>
+   </parameter>
+</OperationDefinition>

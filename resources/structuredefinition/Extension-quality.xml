@@ -34,8 +34,14 @@
     <element id="Extension.extension:qualityType">
       <path value="Extension.extension" />
       <sliceName value="qualityType" />
+      <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality &#xD;&#xA;" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Type of quality" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/quality-types" />
+      </binding>
     </element>
     <element id="Extension.extension:qualityType.url">
       <path value="Extension.extension.url" />
@@ -51,6 +57,7 @@
     <element id="Extension.extension:qualityCode">
       <path value="Extension.extension" />
       <sliceName value="qualityCode" />
+      <definition value="Assessed value of quality. Depending on type of quality:&#xD;&#xA;http://ehealth.sundhed.dk/vs/usage-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;" />
       <min value="1" />
       <max value="1" />
     </element>

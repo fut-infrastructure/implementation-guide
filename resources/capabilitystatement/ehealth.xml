@@ -1,0 +1,1062 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="ehealth"/>
+   <status value="active"/>
+   <date value="2019-02-15T13:58:20+00:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="HAPI FHIR Server"/>
+      <version value="3.6.0"/>
+   </software>
+   <implementation>
+      <description value="FUT FHIR Server"/>
+      <url value="http://hapi-fhir-server:8080/baseDstu3"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <type value="ActivityDefinition"/>
+         <profile>
+            <reference value="StructureDefinition/FUTActivityDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="CarePlan"/>
+         <profile>
+            <reference value="StructureDefinition/FUTCarePlan"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="CareTeam"/>
+         <profile>
+            <reference value="StructureDefinition/FUTCareTeam"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+      </resource>
+      <resource>
+         <type value="ClinicalImpression"/>
+         <profile>
+            <reference value="StructureDefinition/FUTClinicalImpression"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Communication"/>
+         <profile>
+            <reference value="StructureDefinition/FUTCommunication"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Condition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+      </resource>
+      <resource>
+         <type value="Consent"/>
+         <profile>
+            <reference value="StructureDefinition/FUTConsent"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Device"/>
+         <profile>
+            <reference value="StructureDefinition/FUTDevice"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="DeviceMetric"/>
+         <profile>
+            <reference value="StructureDefinition/FUTDeviceMetric"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="DeviceUseStatement"/>
+         <profile>
+            <reference value="StructureDefinition/FUTDeviceUseStatement"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="DocumentReference"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="EpisodeOfCare"/>
+         <profile>
+            <reference value="StructureDefinition/FUTEpisodeOfCare"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Library"/>
+         <profile>
+            <reference value="StructureDefinition/FUTLibrary"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Media"/>
+         <profile>
+            <reference value="StructureDefinition/FUTMedia"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+      </resource>
+      <resource>
+         <type value="Observation"/>
+         <profile>
+            <reference value="StructureDefinition/FUTObservation"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The operation definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Name used to invoke the operation"/>
+         </searchParam>
+         <searchParam>
+            <name value="instance"/>
+            <type value="token"/>
+            <documentation value="Invoke on an instance?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="operation | query"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Invole at the type level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="system"/>
+            <type value="token"/>
+            <documentation value="Invoke at the system level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="param-profile"/>
+            <type value="reference"/>
+            <documentation value="Profile on the type"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="reference"/>
+            <documentation value="Marks this as a profile of the base"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the operation definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="Organization"/>
+         <profile>
+            <reference value="StructureDefinition/FUTOrganization"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="PlanDefinition"/>
+         <profile>
+            <reference value="StructureDefinition/FUTPlanDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Practitioner"/>
+         <profile>
+            <reference value="StructureDefinition/FUTPractitioner"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="PractitionerRole"/>
+         <profile>
+            <reference value="StructureDefinition/FUTPractitionerRole"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+      </resource>
+      <resource>
+         <type value="ProcedureRequest"/>
+         <profile>
+            <reference value="StructureDefinition/FUTProcedureRequest"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <resource>
+         <type value="Provenance"/>
+         <profile>
+            <reference value="StructureDefinition/FUTProvenance"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+      </resource>
+      <resource>
+         <type value="Questionnaire"/>
+         <profile>
+            <reference value="StructureDefinition/FUTQuestionnaire"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+      </resource>
+      <resource>
+         <type value="QuestionnaireResponse"/>
+         <profile>
+            <reference value="StructureDefinition/FUTQuestionnaireResponse"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The structure definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="valueset"/>
+            <type value="reference"/>
+            <documentation value="A vocabulary binding reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="primitive-type | complex-type | resource | logical"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <type value="token"/>
+            <documentation value="resource | datatype | extension"/>
+         </searchParam>
+         <searchParam>
+            <name value="experimental"/>
+            <type value="token"/>
+            <documentation value="For testing purposes, not real usage"/>
+         </searchParam>
+         <searchParam>
+            <name value="abstract"/>
+            <type value="token"/>
+            <documentation value="Whether the structure is abstract"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="path"/>
+            <type value="token"/>
+            <documentation value="A path that is constrained in the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="ext-context"/>
+            <type value="string"/>
+            <documentation value="Where the extension can be used in instances"/>
+         </searchParam>
+         <searchParam>
+            <name value="base-path"/>
+            <type value="token"/>
+            <documentation value="Path that identifies the base element"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derivation"/>
+            <type value="token"/>
+            <documentation value="specialization | constraint - How relates to base definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="keyword"/>
+            <type value="token"/>
+            <documentation value="A code for the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="uri"/>
+            <documentation value="Definition that this type is constrained/specialized from"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the structure definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="Task"/>
+         <profile>
+            <reference value="StructureDefinition/FUTTask"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalRead value="full-support"/>
+         <conditionalUpdate value="true"/>
+      </resource>
+      <interaction>
+         <code value="history-system"/>
+      </interaction>
+      <interaction>
+         <code value="transaction"/>
+      </interaction>
+      <operation>
+         <name value="mark-all-resources-for-reindexing"/>
+         <definition>
+            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="perform-reindexing-pass"/>
+         <definition>
+            <reference value="OperationDefinition/-s-perform-reindexing-pass"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="get-resource-counts"/>
+         <definition>
+            <reference value="OperationDefinition/-s-get-resource-counts"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="suggest-keywords"/>
+         <definition>
+            <reference value="OperationDefinition/-s-suggest-keywords"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-s-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-is-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/-s-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-measurements"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-measurements"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="create-episode-of-care"/>
+         <definition>
+            <reference value="OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-organization-and-practitioner-external"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="submit-measurement"/>
+         <definition>
+            <reference value="OperationDefinition/-s-submit-measurement"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="evaluate"/>
+         <definition>
+            <reference value="OperationDefinition/Library--evaluate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-external"/>
+         <definition>
+            <reference value="OperationDefinition/Organization--fetch-external"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="apply"/>
+         <definition>
+            <reference value="OperationDefinition/PlanDefinition--apply"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-external"/>
+         <definition>
+            <reference value="OperationDefinition/Practitioner--fetch-external"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/PractitionerRole-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/Questionnaire-i-meta-delete"/>
+         </definition>
+      </operation>
+   </rest>
+</CapabilityStatement>
