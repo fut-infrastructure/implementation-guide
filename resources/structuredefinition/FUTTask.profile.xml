@@ -27,7 +27,7 @@
       <min value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/Extension-task-category" />
+        <profile value="http://example.org/fhir/StructureDefinition/task-category" />
       </type>
     </element>
     <element id="Task.definition[x]">

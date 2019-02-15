@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organisation-telecom-custodian" />
-  <url value="http://example.org/fhir/StructureDefinition/Extension-organisation-telecom-custodian" />
+  <url value="http://example.org/fhir/StructureDefinition/organisation-telecom-custodian" />
   <name value="custodian" />
   <status value="draft" />
   <description value="Custodian of this ContactPoint." />
@@ -33,7 +33,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-organisation-telecom-custodian" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/organisation-telecom-custodian" />
     </element>
     <element id="Extension.value[x]:valueCode">
       <path value="Extension.valueCode" />
@@ -46,7 +46,7 @@
         <strength value="required" />
         <description value="Custodian" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/cs/contactpoint-custodian-0.6.0" />
+          <reference value="http://ehealth.sundhed.dk/cs/contactpoint-custodian" />
         </valueSetReference>
       </binding>
     </element>

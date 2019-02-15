@@ -1,7 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="ehealth"/>
    <status value="active"/>
-   <date value="2019-02-15T13:58:20+00:00"/>
+   <date value="2019-02-15T18:50:47+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +9,7 @@
    </software>
    <implementation>
       <description value="FUT FHIR Server"/>
-      <url value="http://hapi-fhir-server:8080/baseDstu3"/>
+      <url value="http://10.1.3.170:8080/hapi-fhir-server/baseDstu3"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -867,6 +866,12 @@
          </definition>
       </operation>
       <operation>
+         <name value="submit-measurement"/>
+         <definition>
+            <reference value="OperationDefinition/-s-submit-measurement"/>
+         </definition>
+      </operation>
+      <operation>
          <name value="search-measurements"/>
          <definition>
             <reference value="OperationDefinition/-s-search-measurements"/>
@@ -882,12 +887,6 @@
          <name value="search-organization-and-practitioner-external"/>
          <definition>
             <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="submit-measurement"/>
-         <definition>
-            <reference value="OperationDefinition/-s-submit-measurement"/>
          </definition>
       </operation>
       <operation>

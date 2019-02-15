@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="task-category" />
-  <url value="http://example.org/fhir/StructureDefinition/Extension-task-category" />
+  <url value="http://example.org/fhir/StructureDefinition/task-category" />
   <name value="category" />
   <status value="draft" />
   <description value="Category of task." />
@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-task-category" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/task-category" />
     </element>
     <element id="Extension.value[x]:valueCoding">
       <path value="Extension.valueCoding" />

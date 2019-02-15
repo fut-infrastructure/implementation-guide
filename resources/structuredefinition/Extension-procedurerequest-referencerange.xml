@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ProcedureRequest-referenceRange" />
-  <url value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+  <url value="http://example.org/fhir/StructureDefinition/ProcedureRequest-referenceRange" />
   <name value="referenceRange" />
   <status value="draft" />
   <description value="Provides guide for interpretation. Must have at least a low or a high or text" />
@@ -107,7 +107,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/ProcedureRequest-referenceRange" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

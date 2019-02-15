@@ -81,5 +81,23 @@
       <path value="PlanDefinition.relatedArtifact" />
       <comment value="Each related artifact is either an attachment, or a reference to another resource, but not both. The relatedArtifiact.resource attribute can be used to specify a DocumentReference resource." />
     </element>
+    <element id="PlanDefinition.library">
+      <path value="PlanDefinition.library" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTLibrary" />
+      </type>
+    </element>
+    <element id="PlanDefinition.action.definition">
+      <path value="PlanDefinition.action.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTActivityDefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPlanDefinition" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

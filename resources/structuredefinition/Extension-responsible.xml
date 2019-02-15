@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="responsible" />
-  <url value="http://example.org/fhir/StructureDefinition/Extension-careplan-responsible" />
+  <url value="http://example.org/fhir/StructureDefinition/careplan-responsible" />
   <name value="responsible" />
   <status value="draft" />
   <description value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
@@ -87,7 +87,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-careplan-responsible" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/careplan-responsible" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

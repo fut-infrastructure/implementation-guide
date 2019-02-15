@@ -48,7 +48,7 @@
       <sliceName value="custodian" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/Extension-organisation-telecom-custodian" />
+        <profile value="http://example.org/fhir/StructureDefinition/organisation-telecom-custodian" />
       </type>
     </element>
     <element id="Organization.telecom.extension:custodian.valueCode:valueCode">
@@ -66,12 +66,19 @@
           <valueString value="ContactPointSystem" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/contact-point-system-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/contact-point-system" />
       </binding>
     </element>
     <element id="Organization.telecom.value">
       <path value="Organization.telecom.value" />
       <min value="1" />
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

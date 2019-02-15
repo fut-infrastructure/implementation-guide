@@ -42,7 +42,7 @@
       <sliceName value="referenceRange" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+        <profile value="http://example.org/fhir/StructureDefinition/ProcedureRequest-referenceRange" />
       </type>
     </element>
     <element id="ProcedureRequest.definition">

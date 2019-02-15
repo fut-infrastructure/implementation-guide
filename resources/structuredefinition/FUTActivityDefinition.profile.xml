@@ -98,6 +98,13 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/topic-type-0.6.0" />
       </binding>
     </element>
+    <element id="ActivityDefinition.library">
+      <path value="ActivityDefinition.library" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTLibrary" />
+      </type>
+    </element>
     <element id="ActivityDefinition.code">
       <path value="ActivityDefinition.code" />
       <binding>
