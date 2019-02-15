@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-careteam-participant-role"/>
+    <url value="http://ehealth.sundhed.dk/vs/careteam-participant-role"/>
+    <version value="0.6.0"/>
+    <name value="CareTeamParticipantRole"/>
+    <title value="CareTeamParticipantRole"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-08"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Care Team Participant Role."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/careteam-participant-role"/>
+            <concept>
+                <code value="TBD"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

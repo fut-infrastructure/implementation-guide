@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-decision-rule-codes"/>
+    <url value="http://ehealth.sundhed.dk/vs/decision-rule-codes"/>
+    <version value="0.6.0"/>
+    <name value="DecisionRuleCodes"/>
+    <title value="DecisionRuleCodes"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-08"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Value set of clinical impression investigation decision rule codes."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/decision-rule-codes"/>
+            <concept>
+                <code value="TBD"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

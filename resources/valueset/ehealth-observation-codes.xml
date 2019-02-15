@@ -1,0 +1,60 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ehealth-observation-codes"/>
+  <url value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+  <version value="0.6.0"/>
+  <name value="ObservationCodes"/>
+  <title value="ObservationCodes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-08"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <contact>
+    <name value="ehealth.sundhed.dk"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth.sundhed.dk/terminology"/>
+    </telecom>
+  </contact>
+  <description value="Observation codes value set."/>
+  <compose>
+    <include>
+      <system value="http://sundhedsdatastyrelsen.dk/npu"/>
+      <concept>
+        <code value="NPU03011"/>
+        <display value="O2 sat.;Hb(aB)"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Oxygen saturation"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NPU21692"/>
+        <display value="Puls;Hjerte"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Heartbeats per minute"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="NPU03804"/>
+        <display value="Legeme vægt; Pt"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Weight in kilogrammes"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Pt—Legeme; masse = ? kg"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

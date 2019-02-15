@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ehealth-situation-quality"/>
+  <url value="http://ehealth.sundhed.dk/cs/situation-quality"/>
+  <version value="0.6.0"/>
+  <name value="SituationQuality"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-01-29"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth.sundhed.dk/terminology"/>
+    </telecom>
+  </contact>
+  <description value="Codes stating the quality of a measurement situation"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="SQ1"/>
+    <display value="Situation quality 1 (example) "/>
+    <definition value="Example, needs further clarification."/>
+  </concept>
+  <concept>
+    <code value="SQ2"/>
+    <display value="Situation quality 2 (example) "/>
+    <definition value="Example, needs further clarification."/>
+  </concept>
+  <concept>
+    <code value="SQ3"/>
+    <display value="Situation quality 3 (example) "/>
+    <definition value="Example, needs further clarification."/>
+  </concept>
+</CodeSystem>

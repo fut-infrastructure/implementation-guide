@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-responsibility-types"/>
+    <url value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
+    <version value="0.6.0"/>
+    <name value="ResponsibilityTypes"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-01-29"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Responsibility Types"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="TBD"/>
+        <display value="Example value - Under construction"/>
+        <definition value="Example value - Under construction"/>
+    </concept>
+</CodeSystem>

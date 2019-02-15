@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-document-type"/>
+    <url value="http://ehealth.sundhed.dk/vs/document-type"/>
+    <version value="0.6.0"/>
+    <name value="DocumentType"/>
+    <title value="DocumentType"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-08"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Document Type value set."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/document-type"/>
+            <concept>
+                <code value="TBD"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,111 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ehealth-situation-quality"/>
+  <url value="http://ehealth.sundhed.dk/vs/situation-quality"/>
+  <version value="0.6.0"/>
+  <name value="SituationQuality"/>
+  <title value="SituationQuality"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-13"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <contact>
+    <name value="ehealth.sundhed.dk"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://ehealth.sundhed.dk/terminology"/>
+    </telecom>
+  </contact>
+  <description value="Value set of hierarchical codes stating the quality of a measurement situation."/>
+  <compose>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/derived-quality-base"/>
+      <concept>
+        <code value="Unknown"/>
+        <display value="Unknown quality"/>
+        <designation>
+          <language value="en-US"/>
+          <value value="Unknown quality (Unlikely to be adequate where one is expected)"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Ukendt kvalitet"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <identifier value="urn:uuid:42316ff8-2714-4680-9980-f37a6d1a71fc"/>
+    <timestamp value="2018-07-20T23:14:07+10:00"/>
+    <contains>
+      <system value="http://ehealth.sundhed.dk/cs/derived-quality-base"/>
+      <abstract value="false"/>
+      <code value="None"/>
+      <display value="No quality needed"/>
+      <designation>
+        <language value="en-US"/>
+        <value value="Quality value where no derivation rule logic nor values are expected"/>
+      </designation>
+      <designation>
+        <language value="da-DK"/>
+        <value value="Kvalitet ikke forventet"/>
+      </designation>
+      <contains>
+        <system value="http://ehealth.sundhed.dk/cs/derived-quality-base"/>
+        <abstract value="false"/>
+        <code value="DerivationError"/>
+        <display value="Error in deriving or determining the quality"/>
+        <designation>
+          <language value="en-US"/>
+          <value
+              value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error"/>
+        </designation>
+        <designation>
+          <language value="da-DK"/>
+          <value value="Fejl under bestemmelse af kvalitet"/>
+        </designation>
+        <contains>
+          <system value="http://ehealth.sundhed.dk/cs/situation-quality"/>
+          <abstract value="false"/>
+          <code value="SQ1"/>
+          <display value="Situation quality 1 (example)"/>
+          <designation>
+            <language value="en-US"/>
+            <value value="Example, needs further clarification"/>
+          </designation>
+          <designation>
+            <language value="da-DK"/>
+            <value value="Eksempel, under udarbejdelse"/>
+          </designation>
+          <contains>
+            <system value="http://ehealth.sundhed.dk/cs/situation-quality"/>
+            <abstract value="false"/>
+            <code value="SQ2"/>
+            <display value="Situation quality 2 (example)"/>
+            <designation>
+              <language value="en-US"/>
+              <value value="Example, needs further clarification"/>
+            </designation>
+            <designation>
+              <language value="da-DK"/>
+              <value value="Eksempel, under udarbejdelse"/>
+            </designation>
+            <contains>
+              <system value="http://ehealth.sundhed.dk/cs/situation-quality"/>
+              <abstract value="false"/>
+              <code value="SQ3"/>
+              <display value="Situation quality 3 (example)"/>
+              <designation>
+                <language value="en-US"/>
+                <value value="Example, needs further clarification"/>
+              </designation>
+              <designation>
+                <language value="da-DK"/>
+                <value value="Eksempel, under udarbejdelse"/>
+              </designation>
+            </contains>
+          </contains>
+        </contains>
+      </contains>
+    </contains>
+  </expansion>
+</ValueSet>
