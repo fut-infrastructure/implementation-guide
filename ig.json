@@ -17,8 +17,8 @@
       "txCache": "txCache",
       "specification": "http://hl7.org/fhir/STU3"
     },
-    "language" : "en", 
-    "languages" : [ 
+    "language" : "en",
+    "languages" : [
       "en", "da-DK"
     ],
     "path-pattern": "[type]-[id].html",
@@ -39,15 +39,19 @@
     "source": "implementationguide/dk-tm.xml",
     "sct-edition": "http://snomed.info/sct/900000000000207008",
     "resources": {
-      
+
     },
     "extraTemplates": [
       {
         "name": "examples",
         "description": "Examples"
       }
-     
+    ],
+    "logging" : [
+      "init",
+      "progress",
+      "context",
+      "html",
+      "tx"
     ]
-  
-    
   }

@@ -1,18 +1,18 @@
 # Danish eHealth Implementation Guide
 
 ## Introduction
-This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> in the danish national 
+This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> in the danish national
 telemedicine context.
 
-This document is a specification that reflects the capabilities of the FHIR<sup>&reg;&copy;</sup>-infrastructural part 
+This document is a specification that reflects the capabilities of the FHIR<sup>&reg;&copy;</sup>-infrastructural part
 of the national danish telemedicine system.
 
-The intended audience of the implementation guide is IT architects, developers and testers who are seeking to understand 
+The intended audience of the implementation guide is IT architects, developers and testers who are seeking to understand
 the available resources in the telemedicine infrastructure, and how they can be used.
 
 ## Scope
 
-This document presents Danish use concepts defined via FHIR processable artefacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR STU3 specification. 
+This document presents Danish use concepts defined via FHIR processable artefacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR STU3 specification.
 * [Profiles](profiles.html) - are constraints of core FHIR resources and datatype for use in the danish national telemedicine infrastructure
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts of the danish national telemedicine infrastructure
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the context of the danish national telemedicine infrastructure
