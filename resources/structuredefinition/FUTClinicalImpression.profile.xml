@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FUTClinicalImpression" />
+  <url value="http://example.org/fhir/StructureDefinition/FUTClinicalImpression" />
+  <name value="FUTClinicalImpression" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ClinicalImpression" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ClinicalImpression.code">
+      <path value="ClinicalImpression.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.context">
+      <path value="ClinicalImpression.context" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalImpression.assessor">
+      <path value="ClinicalImpression.assessor" />
+      <requirements value="constraint: must be present when code designates practitioner's assessment" />
+    </element>
+    <element id="ClinicalImpression.investigation.extension">
+      <path value="ClinicalImpression.investigation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule">
+      <path value="ClinicalImpression.investigation.extension" />
+      <sliceName value="decisionRule" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/clinicalImpression-decisionRule" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
+      <path value="ClinicalImpression.investigation.extension.extension" />
+      <sliceName value="outputParameters" />
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters.valueReference:valueReference">
+      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.finding">
+      <path value="ClinicalImpression.finding" />
+      <requirements value="constraint: must be present when code designates practitioner's assessment" />
+    </element>
+  </differential>
+</StructureDefinition>

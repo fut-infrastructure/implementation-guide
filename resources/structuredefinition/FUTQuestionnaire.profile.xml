@@ -75,6 +75,13 @@
       <short value="The type of the Questionnaire" />
       <definition value="The possible types will be defined on the terminology server." />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="QuestionnaireConcept" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types-0.6.0" />
+      </binding>
     </element>
     <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />

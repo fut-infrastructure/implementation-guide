@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FUTProcedureRequest" />
+  <url value="http://example.org/fhir/StructureDefinition/FUTProcedureRequest" />
+  <name value="FUTProcedureRequest" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ProcedureRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ProcedureRequest.extension">
+      <path value="ProcedureRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ProcedureRequest.extension:responsible">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="responsible" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/careplan-responsible" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.extension:responsibleHistory">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="responsibleHistory" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/responsible-history" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.extension:referenceRange">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="referenceRange" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.definition">
+      <path value="ProcedureRequest.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.basedOn">
+      <path value="ProcedureRequest.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="ProcedureRequest.replaces">
+      <path value="ProcedureRequest.replaces" />
+      <max value="0" />
+    </element>
+    <element id="ProcedureRequest.code.coding">
+      <path value="ProcedureRequest.code.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/procedure-code" />
+      </binding>
+    </element>
+    <element id="ProcedureRequest.subject">
+      <path value="ProcedureRequest.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.context">
+      <path value="ProcedureRequest.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

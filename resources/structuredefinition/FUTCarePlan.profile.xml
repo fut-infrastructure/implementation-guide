@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FUTCarePlan" />
+  <url value="http://example.org/fhir/StructureDefinition/FUTCarePlan" />
+  <name value="FUTCarePlan" />
+  <status value="draft" />
+  <description value="FUTCarePlan" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CarePlan" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CarePlan.extension">
+      <path value="CarePlan.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CarePlan.extension:statusHistory">
+      <path value="CarePlan.extension" />
+      <sliceName value="statusHistory" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/careplan-statushistory" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:monitoringResponsible">
+      <path value="CarePlan.extension" />
+      <sliceName value="monitoringResponsible" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/careplan-monitoring-responsible" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:monitoringResponsibleHistory">
+      <path value="CarePlan.extension" />
+      <sliceName value="monitoringResponsibleHistory" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/careplan-monitoring-responsible-history" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:responsible">
+      <path value="CarePlan.extension" />
+      <sliceName value="responsible" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/careplan-responsible" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:responsibleHistory">
+      <path value="CarePlan.extension" />
+      <sliceName value="responsibleHistory" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/responsible-history" />
+      </type>
+    </element>
+    <element id="CarePlan.definition">
+      <path value="CarePlan.definition" />
+      <short value="Plan Definition" />
+      <definition value="PlanDefinition used as template for this CarePlan" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="CarePlan.basedOn">
+      <path value="CarePlan.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.replaces">
+      <path value="CarePlan.replaces" />
+      <max value="0" />
+    </element>
+    <element id="CarePlan.partOf">
+      <path value="CarePlan.partOf" />
+      <max value="1" />
+    </element>
+    <element id="CarePlan.status">
+      <path value="CarePlan.status" />
+      <short value="draft | active | suspended | completed | entered-in-error | cancelled" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CarePlanStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/care-plan-status" />
+      </binding>
+    </element>
+    <element id="CarePlan.intent">
+      <path value="CarePlan.intent" />
+      <short value="order" />
+    </element>
+    <element id="CarePlan.category">
+      <path value="CarePlan.category" />
+      <definition value="Type of plan (Care Plan Category)" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="CarePlan.subject">
+      <path value="CarePlan.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="CarePlan.context">
+      <path value="CarePlan.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+      </type>
+    </element>
+    <element id="CarePlan.period">
+      <path value="CarePlan.period" />
+      <min value="1" />
+    </element>
+    <element id="CarePlan.addresses">
+      <path value="CarePlan.addresses" />
+      <comment value="Condition.code is inherited from PlanDefinition.useContext.valueCodeableConcept for the code: focus.&#xD;&#xA;&#xD;&#xA;The Condition is a contained resource in this context." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="CarePlan.activity.reference">
+      <path value="CarePlan.activity.reference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

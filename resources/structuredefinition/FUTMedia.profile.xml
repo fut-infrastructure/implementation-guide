@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="FUTMedia" />
+  <url value="http://example.org/fhir/StructureDefinition/FUTMedia" />
+  <name value="FUTMedia" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Media" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Media" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Media.extension">
+      <path value="Media.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Media.extension:quality">
+      <path value="Media.extension" />
+      <sliceName value="quality" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/quality" />
+      </type>
+    </element>
+    <element id="Media.extension:sharingPolicy">
+      <path value="Media.extension" />
+      <sliceName value="sharingPolicy" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/sharingPolicy" />
+      </type>
+    </element>
+    <element id="Media.basedOn">
+      <path value="Media.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+      </type>
+    </element>
+    <element id="Media.subject">
+      <path value="Media.subject" />
+      <min value="1" />
+    </element>
+    <element id="Media.subject.reference">
+      <path value="Media.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="Media.context">
+      <path value="Media.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

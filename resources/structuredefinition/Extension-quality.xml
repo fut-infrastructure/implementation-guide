@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="quality" />
+  <url value="http://example.org/fhir/StructureDefinition/quality" />
+  <name value="quality" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ActivityDefinition" />
+  <context value="Media" />
+  <context value="QuestionnaireResponse" />
+  <context value="Observation" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Minimum requirements for qualities" />
+      <definition value="The minimum requirements for qualities" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:qualityType">
+      <path value="Extension.extension" />
+      <sliceName value="qualityType" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:qualityType.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="qualityType" />
+    </element>
+    <element id="Extension.extension:qualityType.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:qualityCode">
+      <path value="Extension.extension" />
+      <sliceName value="qualityCode" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:qualityCode.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="qualityCode" />
+    </element>
+    <element id="Extension.extension:qualityCode.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <short value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality-0.6.0), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality-0.6.0) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality-0.6.0)" />
+      <definition value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality-0.6.0), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality-0.6.0) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality-0.6.0)" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/quality" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

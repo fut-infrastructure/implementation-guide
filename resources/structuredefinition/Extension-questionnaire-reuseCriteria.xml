@@ -58,6 +58,11 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value=" Value set of hierarchical codes stating the quality of a measurement situation." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/situation-quality-0.6.0" />
+      </binding>
     </element>
     <element id="Extension.extension:operationQuality">
       <path value="Extension.extension" />

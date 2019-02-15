@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProcedureRequest-referenceRange" />
+  <url value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+  <name value="referenceRange" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ProcedureRequest" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:low">
+      <path value="Extension.extension" />
+      <sliceName value="low" />
+      <short value="Low Range, if relevant" />
+      <definition value="Low Range, if relevant" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:low.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="low" />
+    </element>
+    <element id="Extension.extension:low.value[x]:valueQuantity">
+      <path value="Extension.extension.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:high">
+      <path value="Extension.extension" />
+      <sliceName value="high" />
+      <short value="High Range, if relevant" />
+      <definition value="High Range, if relevant" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:high.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="high" />
+    </element>
+    <element id="Extension.extension:high.value[x]:valueQuantity">
+      <path value="Extension.extension.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <short value="Reference range qualifier" />
+      <definition value="Reference range qualifier" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Reference Range Meaning" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
