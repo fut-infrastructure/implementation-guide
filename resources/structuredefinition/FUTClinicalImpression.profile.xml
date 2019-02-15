@@ -19,10 +19,29 @@
     <element id="ClinicalImpression.context">
       <path value="ClinicalImpression.context" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTEpisodeOfCare" />
+      </type>
     </element>
     <element id="ClinicalImpression.assessor">
       <path value="ClinicalImpression.assessor" />
       <requirements value="constraint: must be present when code designates practitioner's assessment" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.previous">
+      <path value="ClinicalImpression.previous" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTClinicalImpression" />
+      </type>
     </element>
     <element id="ClinicalImpression.investigation.extension">
       <path value="ClinicalImpression.investigation.extension" />
@@ -37,8 +56,6 @@
     <element id="ClinicalImpression.investigation.extension:decisionRule">
       <path value="ClinicalImpression.investigation.extension" />
       <sliceName value="decisionRule" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/clinicalImpression-decisionRule" />
@@ -60,6 +77,68 @@
     <element id="ClinicalImpression.finding">
       <path value="ClinicalImpression.finding" />
       <requirements value="constraint: must be present when code designates practitioner's assessment" />
+    </element>
+    <element id="ClinicalImpression.finding.item[x]">
+      <path value="ClinicalImpression.finding.item[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTObservation" />
+      </type>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ConditionKind" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes" />
+      </binding>
+    </element>
+    <element id="ClinicalImpression.action">
+      <path value="ClinicalImpression.action" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTProcedureRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.note.author[x]">
+      <path value="ClinicalImpression.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

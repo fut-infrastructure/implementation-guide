@@ -35,11 +35,65 @@
       <path value="Consent.consentingParty" />
       <comment value="Commonly, the patient the consent pertains to is the consentor, but particularly for young and old people, it may be some other person - e.g. a legal guardian.&#xD;&#xA;&#xD;&#xA;Patient or related person (eg guardian) consenting on behalf of the patient.&#xD;&#xA;Receiving organisation of the consent." />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
     </element>
     <element id="Consent.actor">
       <path value="Consent.actor" />
       <comment value="Careteam/organisation that is authorized to forward information by this consent." />
       <min value="1" />
+    </element>
+    <element id="Consent.actor.reference">
+      <path value="Consent.actor.reference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+    </element>
+    <element id="Consent.organization">
+      <path value="Consent.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
     </element>
     <element id="Consent.data">
       <path value="Consent.data" />
@@ -49,7 +103,38 @@
       <path value="Consent.data.reference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTEpisodeOfCare" />
+      </type>
+    </element>
+    <element id="Consent.except.actor.reference">
+      <path value="Consent.except.actor.reference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
     </element>
   </differential>

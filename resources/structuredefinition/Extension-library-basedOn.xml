@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/library-basedOn" />
   <name value="basedOn" />
   <status value="draft" />
+  <description value="Library that this library is based on" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -43,7 +44,7 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Library" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTLibrary" />
       </type>
     </element>
   </differential>

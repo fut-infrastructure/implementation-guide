@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/clinicalImpression-decisionRule" />
   <name value="decisionRule" />
   <status value="draft" />
+  <description value="Decision support identification, parameters and result" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

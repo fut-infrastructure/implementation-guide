@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/quality" />
   <name value="quality" />
   <status value="draft" />
+  <description value="The minimum requirements for qualities" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -34,7 +35,7 @@
     <element id="Extension.extension:qualityType">
       <path value="Extension.extension" />
       <sliceName value="qualityType" />
-      <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality &#xD;&#xA;" />
+      <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality" />
       <min value="1" />
       <max value="1" />
       <binding>
@@ -57,7 +58,7 @@
     <element id="Extension.extension:qualityCode">
       <path value="Extension.extension" />
       <sliceName value="qualityCode" />
-      <definition value="Assessed value of quality. Depending on type of quality:&#xD;&#xA;http://ehealth.sundhed.dk/vs/usage-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;" />
+      <definition value="Assessed value of quality. Depending on type of quality:&#xD;&#xA;http://ehealth.sundhed.dk/vs/usage-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/situation-quality" />
       <min value="1" />
       <max value="1" />
     </element>

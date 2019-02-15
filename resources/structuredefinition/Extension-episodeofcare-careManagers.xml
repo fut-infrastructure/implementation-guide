@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/episodeofcare-careManagers" />
   <name value="episodeofcare-careManagers" />
   <status value="draft" />
+  <description value="Care manager/care co-ordinator for the patient." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -29,17 +30,17 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
         <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
         <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
         <aggregation value="referenced" />
       </type>
     </element>

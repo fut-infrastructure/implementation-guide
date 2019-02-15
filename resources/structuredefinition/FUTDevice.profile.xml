@@ -53,5 +53,12 @@
         </valueSetReference>
       </binding>
     </element>
+    <element id="Device.owner">
+      <path value="Device.owner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

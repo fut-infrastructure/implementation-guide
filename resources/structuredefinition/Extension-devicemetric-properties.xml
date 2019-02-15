@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/devicemetric-properties" />
   <name value="properties" />
   <status value="draft" />
+  <description value="Properties of this device. Properties are static by nature whereas .qualities are dynamic and may change during the life cycle or calibration cycle of a device." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

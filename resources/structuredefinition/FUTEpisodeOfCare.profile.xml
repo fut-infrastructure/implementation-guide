@@ -65,6 +65,10 @@
     <element id="EpisodeOfCare.managingOrganization">
       <path value="EpisodeOfCare.managingOrganization" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
     </element>
     <element id="EpisodeOfCare.period">
       <path value="EpisodeOfCare.period" />
@@ -73,6 +77,13 @@
     <element id="EpisodeOfCare.careManager">
       <path value="EpisodeOfCare.careManager" />
       <max value="0" />
+    </element>
+    <element id="EpisodeOfCare.team">
+      <path value="EpisodeOfCare.team" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
     </element>
     <element id="EpisodeOfCare.account">
       <path value="EpisodeOfCare.account" />

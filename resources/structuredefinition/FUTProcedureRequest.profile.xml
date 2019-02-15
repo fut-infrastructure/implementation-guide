@@ -49,7 +49,7 @@
       <path value="ProcedureRequest.definition" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTActivityDefinition" />
       </type>
     </element>
     <element id="ProcedureRequest.basedOn">
@@ -79,8 +79,86 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTEpisodeOfCare" />
         <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.requester.agent">
+      <path value="ProcedureRequest.requester.agent" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.performer">
+      <path value="ProcedureRequest.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.reasonReference">
+      <path value="ProcedureRequest.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTObservation" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.note.author[x]">
+      <path value="ProcedureRequest.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.relevantHistory">
+      <path value="ProcedureRequest.relevantHistory" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTProvenance" />
       </type>
     </element>
   </differential>

@@ -24,8 +24,6 @@
     <element id="Media.extension:quality">
       <path value="Media.extension" />
       <sliceName value="quality" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/quality" />
@@ -43,18 +41,40 @@
     </element>
     <element id="Media.basedOn">
       <path value="Media.basedOn" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTProcedureRequest" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCarePlan" />
       </type>
     </element>
     <element id="Media.subject">
       <path value="Media.subject" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+      </type>
     </element>
     <element id="Media.subject.reference">
       <path value="Media.subject.reference" />
@@ -64,7 +84,25 @@
       <path value="Media.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTEpisodeOfCare" />
+      </type>
+    </element>
+    <element id="Media.operator">
+      <path value="Media.operator" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+    </element>
+    <element id="Media.device">
+      <path value="Media.device" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDeviceMetric" />
       </type>
     </element>
   </differential>

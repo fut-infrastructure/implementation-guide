@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/devicemetric-templatequalities" />
   <name value="templatequalities" />
   <status value="draft" />
+  <description value="Device quality default settings for an initial, a degraded, and an overriden device quality." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

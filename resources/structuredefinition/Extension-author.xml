@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/author" />
   <name value="author" />
   <status value="draft" />
+  <description value="People/organisations who maintains the plan definition. This will often be identical to the owner." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/Extension-ProcedureRequest-referenceRange" />
   <name value="referenceRange" />
   <status value="draft" />
+  <description value="Provides guide for interpretation. Must have at least a low or a high or text" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

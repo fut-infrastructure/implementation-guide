@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/library-revision" />
   <name value="revision" />
   <status value="draft" />
+  <description value="Business revision of the questionnaire." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

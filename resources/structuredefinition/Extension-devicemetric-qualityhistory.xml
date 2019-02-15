@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/devicemetric-qualityhistory" />
   <name value="qualityhistory" />
   <status value="draft" />
+  <description value="History of device quality" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

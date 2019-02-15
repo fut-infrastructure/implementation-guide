@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="careplan-monitoring-responsible" />
-  <url value="http://example.org/fhir/StructureDefinition/careplan-monitoring-responsible" />
+  <url value="http://example.org/fhir/StructureDefinition/Extension-careplan-monitoring-responsible" />
   <name value="monitoring-responsible" />
   <status value="draft" />
+  <description value="Individuals, careteam and/or organization responsible for monitoring this plan." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -22,7 +23,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/careplan-monitoring-responsible" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-careplan-monitoring-responsible" />
     </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.value[x]" />
@@ -30,15 +31,15 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
       </type>
     </element>
   </differential>

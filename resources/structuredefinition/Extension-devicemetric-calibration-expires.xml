@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/devicemetric-calibration-expires" />
   <name value="expires" />
   <status value="draft" />
+  <description value="Date when the current calibration expires and recalibration is required." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

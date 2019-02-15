@@ -80,7 +80,7 @@
           <valueString value="QuestionnaireConcept" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types" />
       </binding>
     </element>
     <element id="Questionnaire.item.extension">

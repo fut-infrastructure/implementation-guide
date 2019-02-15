@@ -64,6 +64,10 @@
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTDevice" />
+      </type>
     </element>
     <element id="DeviceMetric.parent">
       <path value="DeviceMetric.parent" />

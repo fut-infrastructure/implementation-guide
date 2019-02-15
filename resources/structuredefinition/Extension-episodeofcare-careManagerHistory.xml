@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/episodeofcare-careManagerHistory" />
   <name value="episodeofcare-careManagerHistory" />
   <status value="draft" />
+  <description value="History of care managers/care co-ordinators for the patient." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -40,15 +41,15 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
       </type>
     </element>
     <element id="Extension.extension:period">

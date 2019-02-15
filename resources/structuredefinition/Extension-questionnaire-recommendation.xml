@@ -28,7 +28,7 @@
       <binding>
         <strength value="required" />
         <description value="Value set of questionnaire recommendation codes." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-recommendation-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-recommendation" />
       </binding>
     </element>
   </differential>

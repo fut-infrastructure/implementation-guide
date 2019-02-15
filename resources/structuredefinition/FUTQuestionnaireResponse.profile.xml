@@ -24,8 +24,6 @@
     <element id="QuestionnaireResponse.extension:quality">
       <path value="QuestionnaireResponse.extension" />
       <sliceName value="quality" />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://example.org/fhir/StructureDefinition/quality" />
@@ -38,12 +36,20 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTProcedureRequest" />
       </type>
     </element>
     <element id="QuestionnaireResponse.parent">
       <path value="QuestionnaireResponse.parent" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTObservation" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+      </type>
     </element>
     <element id="QuestionnaireResponse.questionnaire">
       <path value="QuestionnaireResponse.questionnaire" />
@@ -57,6 +63,18 @@
     <element id="QuestionnaireResponse.source">
       <path value="QuestionnaireResponse.source" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
     </element>
     <element id="QuestionnaireResponse.item.answer.item">
       <path value="QuestionnaireResponse.item.answer.item" />

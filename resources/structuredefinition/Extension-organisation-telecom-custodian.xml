@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/Extension-organisation-telecom-custodian" />
   <name value="custodian" />
   <status value="draft" />
+  <description value="Custodian of this ContactPoint." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

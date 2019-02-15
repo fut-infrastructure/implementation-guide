@@ -68,6 +68,14 @@
       <definition value="PlanDefinition used as template for this CarePlan" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPlanDefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTQuestionnaire" />
+      </type>
     </element>
     <element id="CarePlan.basedOn">
       <path value="CarePlan.basedOn" />
@@ -80,6 +88,10 @@
     <element id="CarePlan.partOf">
       <path value="CarePlan.partOf" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCarePlan" />
+      </type>
     </element>
     <element id="CarePlan.status">
       <path value="CarePlan.status" />
@@ -114,12 +126,42 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTEpisodeOfCare" />
       </type>
     </element>
     <element id="CarePlan.period">
       <path value="CarePlan.period" />
       <min value="1" />
+    </element>
+    <element id="CarePlan.author">
+      <path value="CarePlan.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
+    </element>
+    <element id="CarePlan.careTeam">
+      <path value="CarePlan.careTeam" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
     </element>
     <element id="CarePlan.addresses">
       <path value="CarePlan.addresses" />
@@ -137,7 +179,48 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTProcedureRequest" />
+      </type>
+    </element>
+    <element id="CarePlan.activity.detail.performer">
+      <path value="CarePlan.activity.detail.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTCareTeam" />
+      </type>
+    </element>
+    <element id="CarePlan.note.author[x]">
+      <path value="CarePlan.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
       </type>
     </element>
   </differential>

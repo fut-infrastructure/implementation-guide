@@ -14,4 +14,13 @@ OIO-ORG exposes a webservice where the newest data for an organisation can be fe
 
 Contact information can be edited/added both  in the integration platform and in the source systems. To ensure that no information is lost during merge, each ContactPoint will be tagged with a *custodian* field marking which system currently owns it.
 
-TODO: OIO-ORG view filtered depending on the caller
+It is possible to search for Observations based on:
+* context 
+* subject
+* code
+* period
+* deviceMeasuringQuality
+* situationQuality
+* operationQuality
+
+At least one of "subject" and "context" must be provided. "period" searches on range of "effective".

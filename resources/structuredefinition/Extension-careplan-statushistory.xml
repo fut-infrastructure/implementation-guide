@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="careplan-statushistory" />
-  <url value="http://example.org/fhir/StructureDefinition/careplan-statushistory" />
+  <url value="http://example.org/fhir/StructureDefinition/Extension-careplan-statushistory" />
   <name value="statushistory" />
   <status value="draft" />
+  <description value="History of status changes" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -50,7 +51,7 @@
       <binding>
         <strength value="required" />
         <description value="Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/careplan-status-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/careplan-status" />
       </binding>
     </element>
     <element id="Extension.extension:period">
@@ -75,7 +76,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://example.org/fhir/StructureDefinition/careplan-statushistory" />
+      <fixedUri value="http://example.org/fhir/StructureDefinition/Extension-careplan-statushistory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

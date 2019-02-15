@@ -62,11 +62,11 @@
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTOrganization" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://example.org/fhir/StructureDefinition/FUTPractitioner" />
       </type>
       <type>
         <code value="Reference" />

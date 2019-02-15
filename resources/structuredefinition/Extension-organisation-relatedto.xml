@@ -4,6 +4,7 @@
   <url value="http://example.org/fhir/StructureDefinition/organisation-relatedto" />
   <name value="relatedto" />
   <status value="draft" />
+  <description value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
