@@ -1,0 +1,20 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="PlanDefinition--apply"/>
+   <name value="apply"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Create a careplan for a specific patient using this PlanDefinition as a template."/>
+   <idempotent value="false"/>
+   <code value="apply"/>
+   <resource value="PlanDefinition"/>
+   <system value="false"/>
+   <type value="true"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="patient"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Patient"/>
+   </parameter>
+</OperationDefinition>

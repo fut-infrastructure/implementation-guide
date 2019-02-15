@@ -1,6 +1,4 @@
-# PlanDefinition
-
-## Governance principles
+#### Governance principles
 
 PlanDefinitions (subplans), Questionnaires and ActivityDefinitions can be modified independently. Often by people in different organisations. PlanDefinitions (subplans), Questionnaires and ActivityDefinitions, can all be reused in different top level PlanDefinitions.
 
@@ -23,7 +21,7 @@ Example: A new ActivityDefinition should be added to an existing PlanDefinition.
 3. Add a reference to the new ActivityDefinition in *action.definition*
 4. Call Create with the modified plan. This will create a new version of the plan in the database with the new ActivityDefinition added.
 
-## Update restrictions
+#### Update restrictions
 
 These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires
 

@@ -48,7 +48,49 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/FUTQuestionnaire"/>
+        <reference value="OperationDefinition/ehealth-library-evaluate"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-organization-fetch-external"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-plan-definition-apply"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-practitioner-fetch-external"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-system-create-episode-of-care"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-system-search-measurements"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-system-search-organization-and-practitioner-external"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-system-submit-measurementl"/>
       </sourceReference>
     </resource>
 
@@ -514,9 +556,15 @@
     <!-- Capability statement -->
     <resource>
       <sourceReference>
+        <reference value="CapabilityStatement/ehealth"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CapabilityStatement/metadata"/>
       </sourceReference>
     </resource>
+
 
     <!-- Naming systems -->
     <resource>

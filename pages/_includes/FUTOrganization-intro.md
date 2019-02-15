@@ -1,6 +1,4 @@
-# Organisation
-
-## Identifiers
+#### Identifiers
 
 Organisations can be imported from SOR or OIO-ORG. This means that organisations can have different identifiers depending on the source system. For some organisations (e.g. SSL suppliers), it may also be relevant to register CVR-no.
 
@@ -8,7 +6,7 @@ Organisations can be imported from SOR or OIO-ORG. This means that organisations
 * KOMBIT STS-ORG-ID: "https://www.kombit.dk/sts/organisation"
 * CVR no: "urn:oid:2.16.840.1.113883.2.24.1.1"
 
-## Import and merge
+#### Import and merge
 
 SOR supplies a list of updates each night. These updates will be merged into the existing organisation resources in the database.
 
