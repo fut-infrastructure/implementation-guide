@@ -60,7 +60,12 @@ volumes:[
           s3Delete(bucket: config.s3.bucket, path: 'index.html')
           s3Upload(file:'static/index.html', bucket:config.s3.bucket, path:'')
 
-          def igPath = 'v' + igConfig["fixed-business-version"] + "/ig"
+          def igPath = ""
+          if (igConfig["fixed-business-version"] == "latest") {
+            igPath = "latest/ig"
+          } else {
+            igPath = 'v' + igConfig["fixed-business-version"] + "/ig"
+          }
           s3Delete(bucket: config.s3.bucket, path: igPath)
           s3Upload(file:'output/', bucket:config.s3.bucket, path: igPath)
         }
