@@ -12,6 +12,7 @@
   <context value="EpisodeOfCare" />
   <context value="CarePlan" />
   <context value="ProcedureRequest" />
+  <context value="Appointment" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -19,7 +20,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
-      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
