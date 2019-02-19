@@ -1,5 +1,5 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-    <id value="communication.category.identifier" />
+    <id value="communication.category.coding" />
     <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/category"/>
     <name value="communicationCategory" />
     <status value="active" />
