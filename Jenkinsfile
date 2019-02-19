@@ -6,8 +6,9 @@
 @Library('github.com/lachie83/jenkins-pipeline@dev')
 
 def pipeline = new io.estrado.Pipeline()
+def label = "implementationguide-${UUID.randomUUID().toString()}"
 
-podTemplate(label: 'jenkins-pipeline', containers: [
+podTemplate(label: label, containers: [
     containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:3.27-1-alpine', args: '${computer.jnlpmac} ${computer.name}', workingDir: '/home/jenkins', resourceRequestCpu: '200m', resourceLimitCpu: '500m', resourceRequestMemory: '256Mi', resourceLimitMemory: '512Mi'),
     containerTemplate(name: 'igpublisher', image: '275145157824.dkr.ecr.eu-west-1.amazonaws.com/admin/igpublisher:latest', command: 'cat', ttyEnabled: true)
 ],
@@ -15,7 +16,7 @@ volumes:[
     hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
 ]){
 
-  node ('jenkins-pipeline') {
+  node (label) {
 
     checkout scm
 
