@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-message" />
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-message" />
-  <name value="Telemedicine message" />
+  <name value="Telemedicine message " />
   <status value="draft" />
   <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, is handled through the use of the Provenance resource." />
   <copyright value="Trifork A&amp;S" />
@@ -15,7 +15,7 @@
   <differential>
     <element id="Communication">
       <path value="Communication" />
-      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition. " />
+      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition.." />
     </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
@@ -107,10 +107,26 @@
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+      </type>
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+      </type>
     </element>
     <element id="Communication.payload">
       <path value="Communication.payload" />
