@@ -369,7 +369,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-clinicalImpression-decisionRule"/>
+        <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisionrule"/>
       </sourceReference>
     </resource>
     <resource>
@@ -409,32 +409,32 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-careManagerHistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagerhistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-careManagers"/>
+        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagers"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-intendedAudience"/>
+        <reference value="StructureDefinition/Extension-ehealth-intendedaudience"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-basedOn"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-basedon"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-parameterBinding"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-parameterbinding"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-parameterName"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-parametername"/>
       </sourceReference>
     </resource>
     <resource>
@@ -499,7 +499,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-intendedOrganization"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-intendedorganization"/>
       </sourceReference>
     </resource>
     <resource>
@@ -519,7 +519,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-reuseCriteria"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-reusecriteria"/>
       </sourceReference>
     </resource>
     <resource>
@@ -534,7 +534,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-referenceRange"/>
+        <reference value="StructureDefinition/Extension-ehealth-referencerange"/>
       </sourceReference>
     </resource>
     <resource>
@@ -549,7 +549,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-sharingPolicy"/>
+        <reference value="StructureDefinition/Extension-ehealth-sharingpolicy"/>
       </sourceReference>
     </resource>
     <resource>
