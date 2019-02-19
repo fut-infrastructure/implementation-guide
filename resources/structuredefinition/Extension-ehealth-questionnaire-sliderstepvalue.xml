@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-questionnaire-sliderstepvalue" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
+  <name value="sliderStepValue" />
+  <status value="draft" />
+  <description value="For slider-based controls, indicates the step size to use when toggling the control up or down." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire.item" />
+  <context value="Questionnaire.item.item" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
+    </element>
+    <element id="Extension.value[x]:valueInteger">
+      <path value="Extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <min value="1" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

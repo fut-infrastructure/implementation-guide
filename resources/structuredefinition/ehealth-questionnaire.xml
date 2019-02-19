@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-questionnaire" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
+  <name value="ehealth-questionnaire" />
+  <title value="eHealth Questionnaire" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Questionnaire" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Questionnaire" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Questionnaire.extension">
+      <path value="Questionnaire.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.extension:recommendation">
+      <path value="Questionnaire.extension" />
+      <sliceName value="recommendation" />
+      <short value="Recommendation" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-recommendation" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:custodian">
+      <path value="Questionnaire.extension" />
+      <sliceName value="custodian" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-custodian" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:author">
+      <path value="Questionnaire.extension" />
+      <sliceName value="author" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-author" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:intendedOrganization">
+      <path value="Questionnaire.extension" />
+      <sliceName value="intendedOrganization" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:reuse">
+      <path value="Questionnaire.extension" />
+      <sliceName value="reuse" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
+      </type>
+    </element>
+    <element id="Questionnaire.version">
+      <path value="Questionnaire.version" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.code">
+      <path value="Questionnaire.code" />
+      <short value="The type of the Questionnaire" />
+      <definition value="The possible types will be defined on the terminology server." />
+      <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="QuestionnaireConcept" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types" />
+      </binding>
+    </element>
+    <element id="Questionnaire.item.extension">
+      <path value="Questionnaire.item.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:minOccurs">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="minOccurs" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:minOccurs.valueInteger:valueInteger">
+      <path value="Questionnaire.item.extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.extension:feedback">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="feedback" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-feedback" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:maxOccurs">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="maxOccurs" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:maxOccurs.valueInteger:valueInteger">
+      <path value="Questionnaire.item.extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <min value="1" />
+    </element>
+    <element id="Questionnaire.item.extension:minValue">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="minValue" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/minValue" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:maxValue">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="maxValue" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/maxValue" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:slidingStepValue">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="slidingStepValue" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

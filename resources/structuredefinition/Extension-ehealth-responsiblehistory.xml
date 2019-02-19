@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-responsibleHistory" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
+  <name value="responsibleHistory" />
+  <status value="draft" />
+  <description value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="EpisodeOfCare" />
+  <context value="CarePlan" />
+  <context value="ProcedureRequest" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <short value="Responsibility type" />
+      <definition value="Responsibility type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Responsibility type" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/responsibility-types" />
+      </binding>
+    </element>
+    <element id="Extension.extension:actor">
+      <path value="Extension.extension" />
+      <sliceName value="actor" />
+      <short value="Responsible actor" />
+      <definition value="Responsible actor" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:actor.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="actor" />
+    </element>
+    <element id="Extension.extension:actor.value[x]:valueReference">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+    </element>
+    <element id="Extension.extension:period">
+      <path value="Extension.extension" />
+      <sliceName value="period" />
+      <short value="Period" />
+      <definition value="Period" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:period.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="period" />
+    </element>
+    <element id="Extension.extension:period.value[x]:valuePeriod">
+      <path value="Extension.extension.valuePeriod" />
+      <sliceName value="valuePeriod" />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

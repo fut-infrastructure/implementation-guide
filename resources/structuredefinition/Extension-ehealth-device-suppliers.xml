@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-device-suppliers" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
+  <name value="suppliers" />
+  <status value="draft" />
+  <description value="Suppliers of different kinds. E.g device suppliers, support suppliers, training suppliers, etc." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Device" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:supplier">
+      <path value="Extension.extension" />
+      <sliceName value="supplier" />
+      <short value="Reference to the supplier" />
+      <definition value="Reference to the supplier" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:supplier.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="supplier" />
+    </element>
+    <element id="Extension.extension:supplier.value[x]:valueReference">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+    </element>
+    <element id="Extension.extension:supplier.value[x]:valueReference.identifier">
+      <path value="Extension.extension.value[x].identifier" />
+      <max value="0" />
+    </element>
+    <element id="Extension.extension:role">
+      <path value="Extension.extension" />
+      <sliceName value="role" />
+      <short value="Roles of this supplier" />
+      <definition value="Roles of this supplier (e.g. trainer, provisioner, maintainer, supporter, decommisioner, helpdesk)" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/device-supplier-roles" />
+      </binding>
+    </element>
+    <element id="Extension.extension:role.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="role" />
+    </element>
+    <element id="Extension.extension:role.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

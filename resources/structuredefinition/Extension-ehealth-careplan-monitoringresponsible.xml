@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-careplan-monitoringResponsible" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-monitoringResponsible" />
+  <name value="monitoringResponsible" />
+  <status value="draft" />
+  <description value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="CarePlan" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+      <definition value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-monitoringResponsible" />
+    </element>
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

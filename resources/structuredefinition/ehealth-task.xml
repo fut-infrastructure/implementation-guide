@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-task" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task" />
+  <name value="ehealth-task" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Task" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Task.extension">
+      <path value="Task.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Task.extension:category">
+      <path value="Task.extension" />
+      <sliceName value="category" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category" />
+      </type>
+    </element>
+    <element id="Task.definition[x]">
+      <path value="Task.definition[x]" />
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition" />
+      </type>
+    </element>
+    <element id="Task.partOf">
+      <path value="Task.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task" />
+      </type>
+    </element>
+    <element id="Task.intent">
+      <path value="Task.intent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Task.priority">
+      <path value="Task.priority" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Task.context">
+      <path value="Task.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+      </type>
+    </element>
+    <element id="Task.owner">
+      <path value="Task.owner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+      </type>
+    </element>
+    <element id="Task.relevantHistory">
+      <path value="Task.relevantHistory" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-procedurerequest" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
+  <name value="ehealth-procedurerequest" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ProcedureRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ProcedureRequest.extension">
+      <path value="ProcedureRequest.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="ProcedureRequest.extension:responsible">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="responsible" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.extension:responsibleHistory">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="responsibleHistory" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.extension:referenceRange">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="referenceRange" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest-referenceRange" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.definition">
+      <path value="ProcedureRequest.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.basedOn">
+      <path value="ProcedureRequest.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="ProcedureRequest.replaces">
+      <path value="ProcedureRequest.replaces" />
+      <max value="0" />
+    </element>
+    <element id="ProcedureRequest.code.coding">
+      <path value="ProcedureRequest.code.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/procedure-code" />
+      </binding>
+    </element>
+    <element id="ProcedureRequest.subject">
+      <path value="ProcedureRequest.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.context">
+      <path value="ProcedureRequest.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.requester.agent">
+      <path value="ProcedureRequest.requester.agent" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.performer">
+      <path value="ProcedureRequest.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/HealthcareService" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.reasonReference">
+      <path value="ProcedureRequest.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.note.author[x]">
+      <path value="ProcedureRequest.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="ProcedureRequest.relevantHistory">
+      <path value="ProcedureRequest.relevantHistory" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

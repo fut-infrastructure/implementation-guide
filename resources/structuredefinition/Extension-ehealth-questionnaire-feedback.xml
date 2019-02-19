@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-questionnaire-feedback" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-feedback" />
+  <name value="feedback" />
+  <status value="draft" />
+  <description value="Feedback if reponse is within the defined range." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire.item" />
+  <context value="Questionnaire.item.item" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:value">
+      <path value="Extension.extension" />
+      <sliceName value="value" />
+      <short value="Feedback message" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:value.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="value" />
+    </element>
+    <element id="Extension.extension:value.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:min">
+      <path value="Extension.extension" />
+      <sliceName value="min" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:min.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="min" />
+    </element>
+    <element id="Extension.extension:min.value[x]:valueInteger">
+      <path value="Extension.extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+    <element id="Extension.extension:max">
+      <path value="Extension.extension" />
+      <sliceName value="max" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:max.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="max" />
+    </element>
+    <element id="Extension.extension:max.value[x]:valueInteger">
+      <path value="Extension.extension.valueInteger" />
+      <sliceName value="valueInteger" />
+      <type>
+        <code value="integer" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-feedback" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

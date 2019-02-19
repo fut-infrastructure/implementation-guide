@@ -234,207 +234,207 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTActivityDefinition.profile"/>
+        <reference value="StructureDefinition/ehealth-activitydefinition"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTCarePlan.profile"/>
+        <reference value="StructureDefinition/ehealth-careplan"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTCareTeam.profile"/>
+        <reference value="StructureDefinition/ehealth-careteam"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTClinicalImpression.profile"/>
+        <reference value="StructureDefinition/ehealth-clinicalimpression"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTCommunication.profile"/>
+        <reference value="StructureDefinition/ehealth-communication"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTConsent.profile"/>
+        <reference value="StructureDefinition/ehealth-consent"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTDevice.profile"/>
+        <reference value="StructureDefinition/ehealth-device"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTDeviceMetric.profile"/>
+        <reference value="StructureDefinition/ehealth-devicemetric"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTDeviceUseStatement.profile"/>
+        <reference value="StructureDefinition/ehealth-deviceusestatement"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTEpisodeOfCare.profile"/>
+        <reference value="StructureDefinition/ehealth-episodeofcare"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTLibrary.profile"/>
+        <reference value="StructureDefinition/ehealth-library"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTMedia.profile"/>
+        <reference value="StructureDefinition/ehealth-media"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTObservation.profile"/>
+        <reference value="StructureDefinition/ehealth-observation"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTOrganization.profile"/>
+        <reference value="StructureDefinition/ehealth-organization"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTPlanDefinition.profile"/>
+        <reference value="StructureDefinition/ehealth-plandefinition"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTPractitioner.profile"/>
+        <reference value="StructureDefinition/ehealth-practitioner"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTPractitionerRole.profile"/>
+        <reference value="StructureDefinition/ehealth-practitionerrole"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTProcedureRequest.profile"/>
+        <reference value="StructureDefinition/ehealth-procedurerequest"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTProvenance.profile"/>
+        <reference value="StructureDefinition/ehealth-provenance"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTQuestionnaire.profile"/>
+        <reference value="StructureDefinition/ehealth-questionnaire"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTQuestionnaireResponse.profile"/>
+        <reference value="StructureDefinition/ehealth-questionnaireresponse"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/FUTTask.profile"/>
+        <reference value="StructureDefinition/ehealth-task"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-author"/>
+        <reference value="StructureDefinition/Extension-ehealth-author"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-careplan-monitoring-responsible"/>
+        <reference value="StructureDefinition/Extension-ehealth-careplan-monitoringresponsible"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-careplan-monitoring-responsible-history"/>
+        <reference value="StructureDefinition/Extension-ehealth-careplan-monitoringresponsiblehistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-careplan-statushistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-careplan-statushistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-clinicalImpression-decisionRule"/>
+        <reference value="StructureDefinition/Extension-ehealth-clinicalImpression-decisionRule"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-devicemetric-calibration-expires"/>
+        <reference value="StructureDefinition/Extension-ehealth-devicemetric-calibrationexpires"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-devicemetric-properties"/>
+        <reference value="StructureDefinition/Extension-ehealth-devicemetric-properties"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-devicemetric-qualities"/>
+        <reference value="StructureDefinition/Extension-ehealth-devicemetric-qualities"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-devicemetric-qualityhistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-devicemetric-qualityhistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-devicemetric-templatequalities"/>
+        <reference value="StructureDefinition/Extension-ehealth-devicemetric-templatequalities"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-device-privatelyowned"/>
+        <reference value="StructureDefinition/Extension-ehealth-device-privatelyowned"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-device-suppliers"/>
+        <reference value="StructureDefinition/Extension-ehealth-device-suppliers"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-episodeofcare-careManagerHistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-careManagerHistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-episodeofcare-careManagers"/>
+        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-careManagers"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-intendedAudience"/>
+        <reference value="StructureDefinition/Extension-ehealth-intendedAudience"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-library-basedOn"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-basedOn"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-library-parameterBinding"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-parameterBinding"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-library-parameterName"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-parameterName"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-library-revision"/>
+        <reference value="StructureDefinition/Extension-ehealth-library-revision"/>
       </sourceReference>
     </resource>
     <resource>
@@ -449,52 +449,52 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-organisation-relatedto"/>
+        <reference value="StructureDefinition/Extension-ehealth-organisation-relatedto"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-organisation-telecom-custodian"/>
+        <reference value="StructureDefinition/Extension-ehealth-organisation-telecomcustodian"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-owner"/>
+        <reference value="StructureDefinition/Extension-ehealth-owner"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-plandefinition-role"/>
+        <reference value="StructureDefinition/Extension-ehealth-plandefinitionrole"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-procedurerequest-referencerange"/>
+        <reference value="StructureDefinition/Extension-ehealth-procedurerequest-referencerange"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-quality"/>
+        <reference value="StructureDefinition/Extension-ehealth-quality"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-author"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-author"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-custodian"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-custodian"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-feedback"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-feedback"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-intendedOrganization"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-intendedOrganization"/>
       </sourceReference>
     </resource>
     <resource>
@@ -509,47 +509,47 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-recommendation"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-recommendation"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-reuseCriteria"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-reuseCriteria"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-questionnaire-sliderstepvalue"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-sliderstepvalue"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-recommendation"/>
+        <reference value="StructureDefinition/Extension-ehealth-recommendation"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-referenceRange"/>
+        <reference value="StructureDefinition/Extension-ehealth-referenceRange"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-responsible"/>
+        <reference value="StructureDefinition/Extension-ehealth-responsible"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-responsible-history"/>
+        <reference value="StructureDefinition/Extension-ehealth-responsiblehistory"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-sharingPolicy"/>
+        <reference value="StructureDefinition/Extension-ehealth-sharingPolicy"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-task-category"/>
+        <reference value="StructureDefinition/Extension-ehealth-task-category"/>
       </sourceReference>
     </resource>
 

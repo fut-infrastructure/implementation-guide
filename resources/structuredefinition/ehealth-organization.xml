@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-organization" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+  <name value="ehealth-organization" />
+  <title value="eHealth Organization" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Organization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Organization.extension">
+      <path value="Organization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.extension:relatedTo">
+      <path value="Organization.extension" />
+      <sliceName value="relatedTo" />
+      <short value="Relations to other Organizations" />
+      <definition value="Relations to other Organizations" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organisation-relatedTo" />
+      </type>
+    </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+    </element>
+    <element id="Organization.telecom.extension">
+      <path value="Organization.telecom.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Organization.telecom.extension:custodian">
+      <path value="Organization.telecom.extension" />
+      <sliceName value="custodian" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organisation-telecomCustodian" />
+      </type>
+    </element>
+    <element id="Organization.telecom.system">
+      <path value="Organization.telecom.system" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactPointSystem" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/contact-point-system" />
+      </binding>
+    </element>
+    <element id="Organization.telecom.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

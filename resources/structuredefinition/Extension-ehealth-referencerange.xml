@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-referenceRange" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
+  <name value="referenceRange" />
+  <status value="draft" />
+  <description value="Provides guide for interpretation. Must have at least a low or a high or text" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ActivityDefinition" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Provides guide for interpretation" />
+      <definition value="Provides guide for interpretation&#xD;&#xA;+ Must have at least a low or a high or text&#xD;&#xA;&#xD;&#xA;This rule have not been made as part of the forge!" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:low">
+      <path value="Extension.extension" />
+      <sliceName value="low" />
+      <short value="Low range" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:low.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="low" />
+    </element>
+    <element id="Extension.extension:low.value[x]:valueQuantity">
+      <path value="Extension.extension.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:high">
+      <path value="Extension.extension" />
+      <sliceName value="high" />
+      <short value="High range" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:high.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="high" />
+    </element>
+    <element id="Extension.extension:high.value[x]:valueQuantity">
+      <path value="Extension.extension.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:type">
+      <path value="Extension.extension" />
+      <sliceName value="type" />
+      <short value="Reference range qualifier" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:type.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="type" />
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

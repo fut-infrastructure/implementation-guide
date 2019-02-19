@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-episodeofcare-careManagerHistory" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
+  <name value="careManagerHistory" />
+  <status value="draft" />
+  <description value="History of care managers/care co-ordinators for the patient." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="EpisodeOfCare" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:careManager">
+      <path value="Extension.extension" />
+      <sliceName value="careManager" />
+      <short value="Historic care manager." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:careManager.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="careManager" />
+    </element>
+    <element id="Extension.extension:careManager.value[x]:valueReference">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
+    <element id="Extension.extension:period">
+      <path value="Extension.extension" />
+      <sliceName value="period" />
+      <short value="Period of the historic care manager." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:period.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="period" />
+    </element>
+    <element id="Extension.extension:period.value[x]:valuePeriod">
+      <path value="Extension.extension.valuePeriod" />
+      <sliceName value="valuePeriod" />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

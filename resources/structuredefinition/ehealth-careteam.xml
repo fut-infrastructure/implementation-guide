@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-careteam" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+  <name value="ehealth-careteam" />
+  <title value="eHealth CareTeam" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CareTeam" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CareTeam.name">
+      <path value="CareTeam.name" />
+      <min value="1" />
+    </element>
+    <element id="CareTeam.participant.role">
+      <path value="CareTeam.participant.role" />
+      <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CareTeamParticipantRole" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/careteam-participant-role-0.6.0" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="CareTeam.participant.member">
+      <path value="CareTeam.participant.member" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

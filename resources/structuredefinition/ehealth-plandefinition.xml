@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-plandefinition" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" />
+  <name value="ehealth-plandefinition" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="PlanDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="PlanDefinition.extension">
+      <path value="PlanDefinition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PlanDefinition.extension:recommendation">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="recommendation" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set of plan definition recommendation codes." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation-0.6.0" />
+      </binding>
+    </element>
+    <element id="PlanDefinition.extension:intendedAudience">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="intendedAudience" />
+      <short value="Intended audience for the plan" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:author">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="author" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:owner">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="owner" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner" />
+      </type>
+    </element>
+    <element id="PlanDefinition.extension:role">
+      <path value="PlanDefinition.extension" />
+      <sliceName value="role" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinitionRole" />
+      </type>
+    </element>
+    <element id="PlanDefinition.version">
+      <path value="PlanDefinition.version" />
+      <min value="1" />
+    </element>
+    <element id="PlanDefinition.relatedArtifact">
+      <path value="PlanDefinition.relatedArtifact" />
+      <comment value="Each related artifact is either an attachment, or a reference to another resource, but not both. The relatedArtifiact.resource attribute can be used to specify a DocumentReference resource." />
+    </element>
+    <element id="PlanDefinition.library">
+      <path value="PlanDefinition.library" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
+      </type>
+    </element>
+    <element id="PlanDefinition.action.definition">
+      <path value="PlanDefinition.action.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
