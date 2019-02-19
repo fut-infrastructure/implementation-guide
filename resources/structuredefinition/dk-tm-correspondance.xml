@@ -4,7 +4,7 @@
   <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance" />
   <name value="Telemedicine correspondance" />
   <status value="draft" />
-  <description value="This is the profile for correspondance messages, which are also known as &quot;XDIS91&quot; in existing terminology. It covers messages between health professionals concerning a specific patient/subject, eg. a descriptions of a specific treatment going from hospital to doctor.&#xD;&#xA;&#xD;&#xA;The correspondance message may contain different types of attachments. These are reflected in the provided example &quot;correspondance-all-types&quot;, which contains all four types. The type of the individual attachments are specified using the referencetype extension. The types are:&#xD;&#xA;&#xD;&#xA; * clinicalinformation: For the most usual case: clinical information about the subject (base64-encoded in the data section)&#xD;&#xA; * url: For references to external URLs&#xD;&#xA; * sup: To specify if additional data exists in the SUP database&#xD;&#xA; * attachment: For binary attachments, eg. images, PDF documents etc. These are included base64-encoded in the data section)&#xD;&#xA;&#xD;&#xA;For remaining document data, see the corresponding value sets." />
+  <description value="This is the profile for correspondance messages, which are also known as &quot;XDIS91&quot; in existing terminology. It covers messages between health professionals concerning a specific patient/subject, eg. a descriptions of a specific treatment going from hospital to doctor.&#xD;&#xA;&#xD;&#xA;The correspondance message may contain different types of attachments. These are reflected in the provided example &quot;correspondance-all-types&quot;, which contains all four types. The type of the individual attachments are specified using the referencetype extension. The types are:&#xD;&#xA;&#xD;&#xA; * clinicalinformation: For the most usual case: clinical information about the subject (base64-encoded in the data section)&#xD;&#xA; * url: For references to external URLs&#xD;&#xA; * sup: To specify if additional data exists in the SUP database&#xD;&#xA; * attachment: For binary attachments, eg. images, PDF documents etc. These are included base64-encoded in the data section)&#xD;&#xA;&#xD;&#xA;For remaining document data, see the corresponding value sets. " />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -179,6 +179,18 @@
       <path value="Communication.recipient" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
     </element>
     <element id="Communication.recipient.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -194,6 +206,18 @@
     <element id="Communication.sender">
       <path value="Communication.sender" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+      </type>
     </element>
     <element id="Communication.sender.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
