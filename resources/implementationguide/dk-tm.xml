@@ -133,6 +133,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/dk-tm-appointmentresponse"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/dk-tm-provenance"/>
       </sourceReference>
     </resource>
