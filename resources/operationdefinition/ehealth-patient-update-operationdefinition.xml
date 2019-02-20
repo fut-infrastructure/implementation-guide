@@ -21,7 +21,7 @@
         <documentation value="The social security number of the person on which this operation is executed."/>
         <type value="Identifier"/>
         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-ssn-identifier"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ssn-identifier"/>
         </profile>
     </parameter>
 </OperationDefinition>

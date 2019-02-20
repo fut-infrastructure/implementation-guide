@@ -156,11 +156,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/ehealth-person"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/ehealth-related-person"/>
       </sourceReference>
     </resource>

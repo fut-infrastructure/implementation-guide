@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="metadata" />
    <status value="active"/>
-   <date value="2019-02-20T10:49:39+01:00"/>
+   <date value="2019-02-20T15:17:28+01:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -540,127 +540,6 @@
          </searchParam>
       </resource>
       <resource>
-         <type value="Person"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-person"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="A person Identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="address"/>
-            <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
-         </searchParam>
-         <searchParam>
-            <name value="birthdate"/>
-            <type value="date"/>
-            <documentation value="The person's date of birth"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-state"/>
-            <type value="string"/>
-            <documentation value="A state specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="gender"/>
-            <type value="token"/>
-            <documentation value="The gender of the person"/>
-         </searchParam>
-         <searchParam>
-            <name value="practitioner"/>
-            <type value="reference"/>
-            <documentation value="The Person links to this Practitioner"/>
-         </searchParam>
-         <searchParam>
-            <name value="link"/>
-            <type value="reference"/>
-            <documentation value="Any link has this Patient, Person, RelatedPerson or Practitioner reference"/>
-         </searchParam>
-         <searchParam>
-            <name value="relatedperson"/>
-            <type value="reference"/>
-            <documentation value="The Person links to this RelatedPerson"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-postalcode"/>
-            <type value="string"/>
-            <documentation value="A postal code specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-country"/>
-            <type value="string"/>
-            <documentation value="A country specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="phonetic"/>
-            <type value="string"/>
-            <documentation value="A portion of name using some kind of phonetic matching algorithm"/>
-         </searchParam>
-         <searchParam>
-            <name value="phone"/>
-            <type value="token"/>
-            <documentation value="A value in a phone contact"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="The Person links to this Patient"/>
-         </searchParam>
-         <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="The organization at which this person record is being managed"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-use"/>
-            <type value="token"/>
-            <documentation value="A use code specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
-         </searchParam>
-         <searchParam>
-            <name value="telecom"/>
-            <type value="token"/>
-            <documentation value="The value in any kind of contact"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-city"/>
-            <type value="string"/>
-            <documentation value="A city specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="email"/>
-            <type value="token"/>
-            <documentation value="A value in an email contact"/>
-         </searchParam>
-      </resource>
-      <resource>
          <type value="Provenance"/>
          <profile>
             <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
@@ -883,7 +762,27 @@
          <interaction>
             <code value="read"/>
          </interaction>
-         
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
@@ -1021,39 +920,15 @@
          <code value="transaction"/>
       </interaction>
       <operation>
-         <name value="mark-all-resources-for-reindexing"/>
-         <definition>
-            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="perform-reindexing-pass"/>
          <definition>
             <reference value="OperationDefinition/-s-perform-reindexing-pass"/>
          </definition>
       </operation>
       <operation>
-         <name value="expunge"/>
+         <name value="mark-all-resources-for-reindexing"/>
          <definition>
-            <reference value="OperationDefinition/-s-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/-is-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="suggest-keywords"/>
-         <definition>
-            <reference value="OperationDefinition/-s-suggest-keywords"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/-s-meta"/>
+            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
          </definition>
       </operation>
       <operation>
@@ -1063,15 +938,27 @@
          </definition>
       </operation>
       <operation>
-         <name value="expunge"/>
+         <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/Appointment--expunge"/>
+            <reference value="OperationDefinition/-s-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="suggest-keywords"/>
+         <definition>
+            <reference value="OperationDefinition/-s-suggest-keywords"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/Appointment-i-expunge"/>
+            <reference value="OperationDefinition/-is-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-s-expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1111,21 +998,21 @@
          </definition>
       </operation>
       <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment--expunge"/>
+         </definition>
+      </operation>
+      <operation>
          <name value="exportAsiCal"/>
          <definition>
             <reference value="OperationDefinition/Appointment-i-exportAsiCal"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/AppointmentResponse--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/AppointmentResponse-i-expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1167,13 +1054,13 @@
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/Communication--expunge"/>
+            <reference value="OperationDefinition/AppointmentResponse-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/Communication-i-expunge"/>
+            <reference value="OperationDefinition/AppointmentResponse--expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1215,13 +1102,13 @@
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/Patient--expunge"/>
+            <reference value="OperationDefinition/Communication-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/Patient-i-expunge"/>
+            <reference value="OperationDefinition/Communication--expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1261,69 +1148,21 @@
          </definition>
       </operation>
       <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Patient-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/Patient--expunge"/>
+         </definition>
+      </operation>
+      <operation>
          <name value="createPatientFromPerson"/>
          <definition>
             <reference value="OperationDefinition/Patient--createPatientFromPerson"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Person--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Person-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/Person-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/Person--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="OperationDefinition/Person-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/Person-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Person--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Person-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Provenance--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Provenance-i-expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1365,13 +1204,13 @@
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/RelatedPerson--expunge"/>
+            <reference value="OperationDefinition/Provenance-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/RelatedPerson-i-expunge"/>
+            <reference value="OperationDefinition/Provenance--expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1413,13 +1252,13 @@
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition--expunge"/>
+            <reference value="OperationDefinition/RelatedPerson-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-expunge"/>
+            <reference value="OperationDefinition/RelatedPerson--expunge"/>
          </definition>
       </operation>
       <operation>
@@ -1456,6 +1295,18 @@
          <name value="validate"/>
          <definition>
             <reference value="OperationDefinition/StructureDefinition-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/StructureDefinition--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/StructureDefinition-i-expunge"/>
          </definition>
       </operation>
    </rest>
