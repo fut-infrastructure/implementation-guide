@@ -51,26 +51,26 @@
     <element id="Communication.identifier:envelopeIdentifier">
       <path value="Communication.identifier" />
       <sliceName value="envelopeIdentifier" />
-      <short value="Use value set &quot;Correspondance envelope identifier&quot;" />
+      <short value="Use value set &quot;CorrespondanceEnvelopeIdentifier&quot;" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Communication.identifier:envelopeIdentifier.system">
       <path value="Communication.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-envelope-identifier" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-envelope-identifier" />
     </element>
     <element id="Communication.identifier:letterIdentifier">
       <path value="Communication.identifier" />
       <sliceName value="letterIdentifier" />
-      <short value="Use value set &quot;Correspondance envelope identifier&quot;" />
+      <short value="Use value set &quot;CorrespondanceEnvelopeIdentifier&quot;" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Communication.identifier:letterIdentifier.system">
       <path value="Communication.identifier.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-letter-identifier" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-letter-identifier" />
     </element>
     <element id="Communication.category">
       <path value="Communication.category" />
@@ -99,7 +99,7 @@
     <element id="Communication.category:acknowledgementCode.coding.system">
       <path value="Communication.category.coding.system" />
       <label value="Required for correspondance" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-acknowledgement-code" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-acknowledgement-code" />
     </element>
     <element id="Communication.category:versionCode">
       <path value="Communication.category" />
@@ -118,7 +118,7 @@
     <element id="Communication.category:versionCode.coding.system">
       <path value="Communication.category.coding.system" />
       <label value="Required for correspondance" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-version-code" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-version-code" />
     </element>
     <element id="Communication.category:typeCode">
       <path value="Communication.category" />
@@ -134,7 +134,7 @@
     </element>
     <element id="Communication.category:typeCode.coding.system">
       <path value="Communication.category.coding.system" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-type-code" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-type-code" />
     </element>
     <element id="Communication.category:statusCode">
       <path value="Communication.category" />
@@ -150,7 +150,7 @@
     </element>
     <element id="Communication.category:statusCode.coding.system">
       <path value="Communication.category.coding.system" />
-      <fixedUri value="http://trifork.dk/dk-tm-correspondance-status-code" />
+      <fixedUri value="http://ehealth.sundhed.dk/correspondance-status-code" />
     </element>
     <element id="Communication.subject">
       <path value="Communication.subject" />

@@ -586,7 +586,7 @@
     <!-- Code systems -->
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/dk-tm-regional-subdivision-codes"/>
+        <reference value="CodeSystem/ehealth-regional-subdivision-codes"/>
       </sourceReference>
     </resource>
     <resource>

@@ -1,8 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="dk-tm-correspondance-envelope-identifier"/>
+    <id value="correspondance-envelope-identifier"/>
     <url value="http://ehealth.sundhed.dk/vs/correspondance-envelope-identifier"/>
     <version value="0.0.1"/>
-    <name value="Correspondance envelope identifier"/>
+    <name value="CorrespondanceEnvelopeIdentifier"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-10"/>

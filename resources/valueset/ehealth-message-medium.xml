@@ -1,8 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-message-medium"/>
+  <id value="message-medium"/>
   <url value="http://ehealth.sundhed.dk/vs/message-medium"/>
   <version value="0.0.1"/>
-  <name value="Message medium"/>  
+  <name value="MessageMedium"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2019-02-08"/>
@@ -24,7 +24,7 @@
   
   <compose>
     <include>
-      <system value="http://trifork.dk/dk-tm-message-medium"/>
+      <system value="http://ehealth.sundhed.dk/message-medium"/>
 
       <concept>
         <code value="nemsms"/>

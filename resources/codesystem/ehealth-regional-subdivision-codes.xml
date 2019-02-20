@@ -1,5 +1,5 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="dk-tm-regional-subdivision-codes"/>
+    <id value="regional-subdivision-codes"/>
     <url value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes"/>
     <version value="0.0.1"/>
     <name value="Regional subdivision codes"/>

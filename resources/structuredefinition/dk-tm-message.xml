@@ -57,7 +57,7 @@
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/dk-tm-message-category" />
+      <fixedUri value="http://ehealth.sundhed.dk/message-category" />
     </element>
     <element id="Communication.category:DkTmCategory.coding.code">
       <path value="Communication.category.coding.code" />
@@ -94,7 +94,7 @@
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
-      <fixedUri value="http://trifork.dk/dk-tm-message-medium" />
+      <fixedUri value="http://ehealth.sundhed.dk/message-medium" />
     </element>
     <element id="Communication.medium:DkTmMedium.coding.code">
       <path value="Communication.medium.coding.code" />
