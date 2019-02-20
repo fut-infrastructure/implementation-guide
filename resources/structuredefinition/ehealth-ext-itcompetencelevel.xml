@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-ext-itcompetencelevel" />
+  <id value="ehealth-itcompetencelevel" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
   <name value="IT Competence Level" />
   <status value="draft" />
