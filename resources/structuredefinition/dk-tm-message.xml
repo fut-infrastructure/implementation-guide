@@ -51,7 +51,7 @@
       <path value="Communication.category.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-category" />
       </binding>
     </element>
     <element id="Communication.category:DkTmCategory.coding.system">
@@ -63,7 +63,7 @@
       <path value="Communication.category.coding.code" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-category" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-category" />
       </binding>
     </element>
     <element id="Communication.medium">
@@ -88,7 +88,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes for communication mediums" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-medium" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-medium" />
       </binding>
     </element>
     <element id="Communication.medium:DkTmMedium.coding.system">
@@ -101,7 +101,7 @@
       <binding>
         <strength value="required" />
         <description value="A valid message medium must be supplied" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-message-medium" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-medium" />
       </binding>
     </element>
     <element id="Communication.recipient">

@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="dk-tm-regional-subdivision-codes"/>
-    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-regional-subdivision-codes"/>
+    <url value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes"/>
     <version value="0.0.1"/>
     <name value="Regional subdivision codes"/>
     <status value="draft"/>

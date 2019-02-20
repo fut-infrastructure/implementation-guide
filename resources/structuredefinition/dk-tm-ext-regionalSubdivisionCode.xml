@@ -31,7 +31,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-regional-subdivision-codes" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes" />
       </binding>
     </element>
   </differential>

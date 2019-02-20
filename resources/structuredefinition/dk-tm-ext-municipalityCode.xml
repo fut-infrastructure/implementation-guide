@@ -27,7 +27,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-municipality-codes" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/municipality-codes" />
       </binding>
     </element>
     <element id="Extension.value[x]:valueCoding.code">
@@ -35,7 +35,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-municipality-codes" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/municipality-codes" />
       </binding>
     </element>
   </differential>

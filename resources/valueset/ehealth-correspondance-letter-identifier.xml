@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="dk-tm-correspondance-letter-identifier"/>
-    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-letter-identifier"/>
+    <url value="http://ehealth.sundhed.dk/vs/correspondance-letter-identifier"/>
     <version value="0.0.1"/>
     <name value="Correspondance letter identifier"/>
     <status value="draft"/>
