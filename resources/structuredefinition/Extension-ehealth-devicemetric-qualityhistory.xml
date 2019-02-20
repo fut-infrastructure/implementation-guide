@@ -33,7 +33,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types" />
       </binding>
     </element>
     <element id="Extension.extension:category.url">

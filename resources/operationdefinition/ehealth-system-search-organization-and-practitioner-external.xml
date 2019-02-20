@@ -3,7 +3,7 @@
    <name value="search-organization-and-practitioner-external"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Search Practioner or Organization data and return a volatile resource not stored in FUT.&#xa;&#xa;Only source=STS-ORG is supported. SOR does not support webservice for lookup.&#xa;&#xa;https://www.kombit.dk/indhold/organisation"/>
+   <description value="Search Practioner or Organization data and return a volatile resource not stored in eHealth.&#xa;&#xa;Only source=STS-ORG is supported. SOR does not support webservice for lookup.&#xa;&#xa;https://www.kombit.dk/indhold/organisation"/>
    <idempotent value="false"/>
    <code value="search-organization-and-practitioner-external"/>
    <system value="true"/>

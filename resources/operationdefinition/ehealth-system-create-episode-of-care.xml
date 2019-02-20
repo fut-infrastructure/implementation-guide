@@ -3,16 +3,16 @@
    <name value="create-episode-of-care"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="At least one Provenance must be a &quot;GDPR&quot;-provenance. The server will automatically add and return an origin Provenance."/>
+   <description value="The input Bundle must contain at least one Provenance and only one EpisodeOfCare. At least one Provenance must be a &quot;GDPR&quot;-provenance. The server will automatically add and return an origin Provenance."/>
    <idempotent value="false"/>
    <code value="create-episode-of-care"/>
    <system value="true"/>
    <type value="true"/>
    <instance value="false"/>
    <parameter>
-      <name value="episodeOfCare"/>
+      <name value="episodeOfCareAndProvenances"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="Bundle"/>
    </parameter>

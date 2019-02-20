@@ -33,7 +33,7 @@
         <strength value="required" />
         <description value="Custodian" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/cs/contactpoint-custodian" />
+          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-custodian" />
         </valueSetReference>
       </binding>
     </element>

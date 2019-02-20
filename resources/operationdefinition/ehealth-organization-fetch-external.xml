@@ -1,11 +1,11 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
-   <id value="Organization--fetch-external"/>
-   <name value="fetch-external"/>
+   <id value="Organization--fetch-external-organizations"/>
+   <name value="fetch-external-organizations"/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Fetch and store Organization data.&#xa;&#xa;Only source=STS-ORG is supported. SOR does not support webservice for lookup.&#xa;&#xa;https://www.kombit.dk/indhold/organisation"/>
    <idempotent value="false"/>
-   <code value="fetch-external"/>
+   <code value="fetch-external-organizations"/>
    <resource value="Organization"/>
    <system value="false"/>
    <type value="true"/>

@@ -96,7 +96,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/cs/decision-rule-codes-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/decision-rule-codes" />
       </binding>
     </element>
     <element id="Extension.extension:parameter">

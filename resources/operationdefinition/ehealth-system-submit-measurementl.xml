@@ -3,7 +3,7 @@
    <name value="submit-measurement"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Receives, validates, and stores a bundle of related Observation, Media, and QuestionnaireResponse.&#xa;&#xa;Supplied Provenance must &quot;target&quot; other resources in same bundle.&#xa;&#xa;--&#xa;&#xa;Supplied Communication must have other resources in same bundle as &quot;topic&quot;.&#xa;&#xa;--&#xa;&#xa;This method is intended for uploading single measurements. Uploading large batches of resources is considered misuse.&#xa;&#xa;--&#xa;&#xa;FUT will implicitly add Provenance resource targetting all resources received in the same measurement bundle."/>
+   <description value="Receives, validates, and stores a bundle of related Observation, Media, and QuestionnaireResponse.&#xa;&#xa;Supplied Provenance must &quot;target&quot; other resources in same bundle.&#xa;&#xa;--&#xa;&#xa;Supplied Communication must have other resources in same bundle as &quot;topic&quot;.&#xa;&#xa;--&#xa;&#xa;This method is intended for uploading single measurements. Uploading large batches of resources is considered misuse.&#xa;&#xa;--&#xa;&#xa;eHealth will implicitly add Provenance resource targetting all resources received in the same measurement bundle."/>
    <idempotent value="false"/>
    <code value="submit-measurement"/>
    <system value="true"/>
