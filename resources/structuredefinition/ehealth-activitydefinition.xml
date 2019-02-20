@@ -94,7 +94,7 @@
         </extension>
         <strength value="required" />
         <description value="Treatment | Self-treatment" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/topic-type-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/topic-type" />
       </binding>
     </element>
     <element id="ActivityDefinition.library">
@@ -111,7 +111,7 @@
           <valueString value="ActivityDefinitionType" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
       </binding>
     </element>
   </differential>

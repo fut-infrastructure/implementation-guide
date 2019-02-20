@@ -25,7 +25,7 @@
         </extension>
         <strength value="example" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/careteam-participant-role-0.6.0" />
+          <reference value="http://ehealth.sundhed.dk/vs/careteam-participant-role" />
         </valueSetReference>
       </binding>
     </element>
