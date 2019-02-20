@@ -6,7 +6,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">This is some additional text</div>
   </text>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
-  <name value="Telemedicine patient" />
+  <name value="ehealth-patient" />
   <status value="draft" />
   <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a person in a careplan process. All patients must be linked to an actual person resource instance, where the person acts a template for a patient. A newly created patient is always based from a person which also means that a person links to all its patients.&#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operations defined for the Patient resource. The operations ensure that patients are created with the proper demographics data, the proper managing organization and under the proper legislation and having a proper link between person and patient." />
   <copyright value="Trifork A/S" />

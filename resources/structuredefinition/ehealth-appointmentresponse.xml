@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-appointmentresponse" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointmentresponse" />
-  <name value="Appointment response" />
+  <name value="ehealth-appointmentresponse" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
