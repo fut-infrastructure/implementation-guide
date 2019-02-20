@@ -6,7 +6,7 @@
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-11"/>
-    <publisher value="FUT"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <description value="TypeCode in correspondance messages must be filled in with a valid type as specified. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'TypeCode'" />
     <compose>
     <include>

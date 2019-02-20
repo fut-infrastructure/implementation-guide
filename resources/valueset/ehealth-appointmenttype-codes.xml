@@ -6,7 +6,7 @@
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-02"/>
-    <publisher value="FUT"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <description value="Appointment type codes used by the system" />
     <compose>
         <include>

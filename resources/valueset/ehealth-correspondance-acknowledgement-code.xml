@@ -6,7 +6,7 @@
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-11"/>
-    <publisher value="FUT"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <description value="AcknowledgementCode in correspondance messages specifies if a receipt is required with the status of how a message was processed by the recipient. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'AcknowledgementCode'" />
     <compose>
     <include>

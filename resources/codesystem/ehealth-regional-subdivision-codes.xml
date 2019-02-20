@@ -1,12 +1,12 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="regional-subdivision-codes"/>
-    <url value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes"/>
+    <url value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
     <version value="0.0.1"/>
     <name value="Regional subdivision codes"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-02"/>
-    <publisher value="FUT"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <description value="Subdivision codes (Regional codes) used in Denmark" />
     <jurisdiction>
         <coding>

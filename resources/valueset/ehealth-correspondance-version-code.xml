@@ -6,7 +6,7 @@
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-11"/>
-    <publisher value="FUT"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <description value="VersionCode in correspondance messages must be filled in with a valid version key as specified. A correct version code is important, as recipient systems use it to decide which letter type a particular recipient handles. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'VersionCode'" />
     <compose>
     <include>
