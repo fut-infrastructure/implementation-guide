@@ -43,13 +43,6 @@ If you are new to FHIR (Fast Healthcare Interoperability Resources), consider to
 
 Great FHIR exercises and tutorials can be found at [https://fhir-drills.github.io/](https://fhir-drills.github.io/) and [https://simplifier.net/guide/ProfilingAcademy/](https://simplifier.net/guide/ProfilingAcademy/)
 
-## Known Issues
-
-This Implementation Guide has the following known issues:
-
-* Profile names are not consistent with eHealth naming as prefixes FUT and dk-tm still appear.
-* Profiles link to FHIR STU3 Resources where eHealth Infrastructure profiles should be used.
-
 ## Reader's Guide
 
 * Overall security mechanisms have been described elsewhere.
