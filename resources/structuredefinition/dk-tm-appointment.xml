@@ -43,7 +43,7 @@
           <valueString value="appointment-type" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-appointmenttype-codes" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/appointmenttype-codes" />
       </binding>
     </element>
     <element id="Appointment.reason">

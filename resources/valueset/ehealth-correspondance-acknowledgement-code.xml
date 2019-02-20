@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="dk-tm-correspondance-acknowledgement-code"/>
-    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-correspondance-acknowledgement-code"/>
+    <url value="http://ehealth.sundhed.dk/vs/correspondance-acknowledgement-code"/>
     <version value="0.0.1"/>
     <name value="Correspondance acknowledgement code"/>
     <status value="draft"/>

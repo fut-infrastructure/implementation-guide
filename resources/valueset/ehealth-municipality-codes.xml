@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="dk-tm-municipality-codes"/>
-    <url value="http://trifork.dk/fhir/ValueSet/dk-tm-municipality-codes"/>
+    <url value="http://ehealth.sundhed.dk/vs/municipality-codes"/>
     <version value="0.0.1"/>
     <name value="Municipality codes"/>
     <status value="draft"/>
