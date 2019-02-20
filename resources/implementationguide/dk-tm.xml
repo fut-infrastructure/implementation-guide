@@ -163,27 +163,27 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-authorizationTime"/>
+        <reference value="StructureDefinition/ehealth-ext-authorizationTime"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-referencetype"/>
+        <reference value="StructureDefinition/ehealth-ext-referencetype"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-identifier"/>
+        <reference value="StructureDefinition/ehealth-ext-identifier"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-reference-description"/>
+        <reference value="StructureDefinition/ehealth-ext-reference-description"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-correspondance-address"/>
+        <reference value="StructureDefinition/ehealth-ext-correspondance-address"/>
       </sourceReference>
     </resource>
     <resource>
@@ -198,43 +198,43 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-itcompetencelevel"/>
+        <reference value="StructureDefinition/ehealth-ext-itcompetencelevel"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-patient-contactnote"/>
+        <reference value="StructureDefinition/ehealth-ext-patient-contactnote"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-patient-relatedPerson"/>
+        <reference value="StructureDefinition/ehealth-ext-patient-relatedPerson"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-address"/>
+        <reference value="StructureDefinition/ehealth-ext-address"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-municipalityCode"/>
+        <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-regionalSubdivisionCode"/>
+        <reference value="StructureDefinition/ehealth-ext-regionalSubdivisionCode"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-generalHealthCondition"/>
+        <reference value="StructureDefinition/ehealth-ext-generalHealthCondition"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ext-functionalCapacity"/>
+        <reference value="StructureDefinition/ehealth-ext-functionalCapacity"/>
       </sourceReference>
     </resource>
     <resource>

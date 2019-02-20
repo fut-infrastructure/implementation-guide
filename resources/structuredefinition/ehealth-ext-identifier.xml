@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
-  <id value="dk-tm-ext-authorizationTime"/>
-  <name value="AuthorizationTime" />
+  <id value="ehealth-identifier" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier" />
+  <name value="Identifier" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Communication" />
+  <contextType value="datatype" />
+  <context value="Attachment" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -142,7 +142,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -160,13 +160,13 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Extension.value[x]:valueDateTime">
-      <path value="Extension.valueDateTime" />
-      <sliceName value="valueDateTime" />
+    <element id="Extension.value[x]:valueIdentifier">
+      <path value="Extension.valueIdentifier" />
+      <sliceName value="valueIdentifier" />
       <short value="Value of extension" />
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)." />
       <comment value="A stream of bytes, base64 encoded" />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="Extension.value[x]" />
@@ -174,7 +174,7 @@
         <max value="1" />
       </base>
       <type>
-        <code value="dateTime" />
+        <code value="Identifier" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -197,14 +197,13 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier" />
     </element>
-    <element id="Extension.value[x]:valueDateTime">
-      <path value="Extension.valueDateTime" />
-      <sliceName value="valueDateTime" />
-      <min value="1" />
+    <element id="Extension.value[x]:valueIdentifier">
+      <path value="Extension.valueIdentifier" />
+      <sliceName value="valueIdentifier" />
       <type>
-        <code value="dateTime" />
+        <code value="Identifier" />
       </type>
     </element>
   </differential>

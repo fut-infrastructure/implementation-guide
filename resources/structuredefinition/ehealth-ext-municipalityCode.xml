@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="dk-tm-ext-municipalityCode"/>
+<id value="ehealth-municipalityCode"/>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code" />
   <name value="Danish municipality code" />
   <status value="draft" />

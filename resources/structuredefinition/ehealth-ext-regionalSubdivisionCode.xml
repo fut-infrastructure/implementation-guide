@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-ext-regionalSubdivisionCode" />
+  <id value="ehealth-regionalSubdivisionCode" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
   <name value="Danish regional code" />
   <status value="draft" />

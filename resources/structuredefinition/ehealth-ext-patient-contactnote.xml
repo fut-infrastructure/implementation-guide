@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-ext-patient-contactnote" />
+  <id value="ehealth-patient-contactnote" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
   <name value="Patient contact note" />
   <status value="draft" />

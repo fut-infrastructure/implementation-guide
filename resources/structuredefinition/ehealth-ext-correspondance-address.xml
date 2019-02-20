@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-correspondance-address" />
-  <id value="dk-tm-ext-correspondance-address"/>
+  <id value="ehealth-correspondance-address"/>
   <name value="Correspondance Address" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />

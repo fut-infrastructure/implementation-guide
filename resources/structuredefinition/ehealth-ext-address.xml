@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-ext-address" />
+  <id value="ehealth-address" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
   <name value="Danish address" />
   <status value="draft" />
