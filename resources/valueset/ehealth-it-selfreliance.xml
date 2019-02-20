@@ -1,8 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="it-selfreliance"/>
-  <url value="http://trifork.dk/fhir/ValueSet/it-selfreliance"/>
+  <url value="http://ehealth.sundhed.dk/vs/it-selfreliance"/>
   <version value="0.0.1"/>
-  <name value="it-selfreliance"/>
+  <name value="ITSelfreliance"/>
   
 
   <title value="IT selfreliance"/>

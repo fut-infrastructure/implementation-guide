@@ -44,14 +44,14 @@
       <sliceName value="valueCodeableConcept" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/it-selfreliance" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/it-selfreliance" />
       </binding>
     </element>
     <element id="Patient.extension:itcompetencelevel.valueCodeableConcept:valueCodeableConcept.coding">
       <path value="Patient.extension.valueCodeableConcept.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/it-selfreliance" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/it-selfreliance" />
       </binding>
     </element>
     <element id="Patient.extension:interpreterRequired">
