@@ -770,13 +770,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-appointmenttype-codes"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/dk-tm-provenance-policies"/>
+        <reference value="ValueSet/ehealth-appointmenttype-codes"/>
       </sourceReference>
     </resource>
     <resource>
@@ -788,67 +782,67 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-relatedperson-relationshiptype"/>
+        <reference value="ValueSet/ehealth-relatedperson-relationshiptype"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-municipality-codes"/>
+        <reference value="ValueSet/ehealth-municipality-codes"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-regional-subdivision-codes"/>
+        <reference value="ValueSet/ehealth-regional-subdivision-codes"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-message-category"/>
+        <reference value="ValueSet/ehealth-message-category"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-message-medium"/>
+        <reference value="ValueSet/ehealth-message-medium"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-letter-identifier"/>
+        <reference value="ValueSet/ehealth-correspondance-letter-identifier"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-envelope-identifier"/>
+        <reference value="ValueSet/ehealth-correspondance-envelope-identifier"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-acknowledgement-code"/>
+        <reference value="ValueSet/ehealth-correspondance-acknowledgement-code"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-version-code"/>
+        <reference value="ValueSet/ehealth-correspondance-version-code"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-type-code"/>
+        <reference value="ValueSet/ehealth-correspondance-type-code"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/dk-tm-correspondance-status-code"/>
+        <reference value="ValueSet/ehealth-correspondance-status-code"/>
       </sourceReference>
     </resource>
 
