@@ -101,7 +101,7 @@
           <valueString value="CarePlanStatus" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/care-plan-status" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/careplan-status" />
       </binding>
     </element>
     <element id="CarePlan.intent">

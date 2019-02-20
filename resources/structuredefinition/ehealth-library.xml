@@ -54,7 +54,7 @@
       <sliceName value="parameterBinding" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterBinding" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parametBindinger" />
       </type>
     </element>
     <element id="Library.version">

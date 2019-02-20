@@ -23,7 +23,7 @@
       <binding>
         <strength value="required" />
         <description value="Value set of kinds of consents." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/consent-category-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/consent-category" />
       </binding>
     </element>
     <element id="Consent.patient">

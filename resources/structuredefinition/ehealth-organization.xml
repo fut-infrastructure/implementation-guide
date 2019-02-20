@@ -61,7 +61,7 @@
           <valueString value="ContactPointSystem" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/contact-point-system" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
       </binding>
     </element>
     <element id="Organization.telecom.value">

@@ -33,7 +33,7 @@
       <binding>
         <strength value="required" />
         <description value="Policy for sharing this resource with national data banks." />
-        <valueSetUri value="http://tm.dk/vs/submission-sharing-policies-1.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/submission-sharing-policies" />
       </binding>
     </element>
   </differential>
