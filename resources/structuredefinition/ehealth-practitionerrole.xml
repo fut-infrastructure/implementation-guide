@@ -33,7 +33,7 @@
         </extension>
         <strength value="example" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/practitioner-role-0.6.0" />
+          <reference value="http://ehealth.sundhed.dk/vs/practitioner-role" />
         </valueSetReference>
       </binding>
     </element>

@@ -33,7 +33,7 @@
       <binding>
         <strength value="required" />
         <description value="Value set of plan definition recommendation codes." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation-0.6.0" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation" />
       </binding>
     </element>
     <element id="ActivityDefinition.extension:owner">
@@ -111,7 +111,7 @@
           <valueString value="ActivityDefinitionType" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
+        <valueSetUri value="http://ehealth.sundhed.dk/cs/activitydefinition-codes" />
       </binding>
     </element>
   </differential>

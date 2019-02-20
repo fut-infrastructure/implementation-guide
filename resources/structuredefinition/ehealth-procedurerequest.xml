@@ -64,7 +64,7 @@
       <path value="ProcedureRequest.code.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/procedure-code" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
       </binding>
     </element>
     <element id="ProcedureRequest.subject">
