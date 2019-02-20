@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-provenance" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance" />
-  <name value="Danish provenance" />
+  <name value="ehealth-provenance" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
