@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OperationDefinition xmlns="http://hl7.org/fhir" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id value="dk-tm-appointment-toical-operationdefinition"/>
+    <id value="ehealth-appointment-toical-operationdefinition"/>
     <name value="Export Appointment to iCal"/>
     <status value="active"/>
     <kind value="operation"/>
     <date value="2019-02-02"/>
     <description value="This operation exports the Appointment to an iCal [RFC-5545](https://tools.ietf.org/html/rfc5545) format"/>
     <code value="exportAsiCal"/>
-    <comment value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
+    <comment value="The iCal file is wrapped inside a Binary resource."/>
     <resource value="Appointment"/>
     <system value="false"/>
     <type value="false"/>

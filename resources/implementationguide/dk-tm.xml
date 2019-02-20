@@ -24,13 +24,13 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/dk-tm-appointment-toical-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-appointment-toical-operationdefinition"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/dk-tm-patient-create-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-patient-create-operationdefinition"/>
       </sourceReference>
     </resource>
     <resource>
