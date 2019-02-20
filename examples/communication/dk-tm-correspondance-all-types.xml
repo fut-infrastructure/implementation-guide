@@ -8,34 +8,34 @@
   </extension>
   <status value="completed"/>
   <identifier>
-    <system value='http://trifork.dk/dk-tm-correspondance-envelope-identifier'/>
+    <system value='http://ehealth.sundhed.dk/correspondance-envelope-identifier'/>
     <value value='123'/>
   </identifier>
   <identifier>
-    <system value='http://trifork.dk/dk-tm-correspondance-letter-identifier'/>
+    <system value='http://ehealth.sundhed.dk/correspondance-letter-identifier'/>
     <value value='123'/>
   </identifier>
   <category>
     <coding>
-      <system value='http://trifork.dk/dk-tm-correspondance-acknowledgement-code'/>
+      <system value='http://ehealth.sundhed.dk/correspondance-acknowledgement-code'/>
       <code value='minuspositivkvitt'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://trifork.dk/dk-tm-correspondance-version-code'/>
+      <system value='http://ehealth.sundhed.dk/correspondance-version-code'/>
       <code value='XD9134L'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://trifork.dk/dk-tm-correspondance-type-code'/>
+      <system value='http://ehealth.sundhed.dk/correspondance-type-code'/>
       <code value='XDIS91'/>
     </coding>
   </category>
   <category>
     <coding>
-      <system value='http://trifork.dk/dk-tm-correspondance-status-code'/>
+      <system value='http://ehealth.sundhed.dk/correspondance-status-code'/>
       <code value='Nytbrev'/>
     </coding>
   </category>

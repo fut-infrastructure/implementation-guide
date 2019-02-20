@@ -1,8 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="dk-tm-correspondance-status-code"/>
+    <id value="correspondance-status-code"/>
     <url value="http://ehealth.sundhed.dk/vs/correspondance-status-code"/>
     <version value="0.0.1"/>
-    <name value="Correspondance status code"/>
+    <name value="CorrespondanceStatusCode"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-11"/>

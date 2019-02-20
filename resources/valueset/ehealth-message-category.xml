@@ -2,7 +2,7 @@
   <id value="message-category"/>
   <url value="http://ehealth.sundhed.dk/vs/message-category"/>
   <version value="0.0.1"/>
-  <name value="Message category"/>
+  <name value="MessageCategory"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2019-02-08"/>
@@ -24,7 +24,7 @@
   
   <compose>
     <include>
-      <system value="http://trifork.dk/dk-tm-message-category"/>
+      <system value="http://ehealth.sundhed.dk/message-category"/>
 
       <concept>
         <code value="message"/>

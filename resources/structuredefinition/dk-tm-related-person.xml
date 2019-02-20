@@ -61,7 +61,7 @@
         </extension>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/dk-tm-relatedperson-relationshiptype" />
+          <reference value="http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype" />
         </valueSetReference>
       </binding>
     </element>
@@ -69,7 +69,7 @@
       <path value="RelatedPerson.relationship.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/dk-tm-relatedperson-relationshiptype" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype" />
       </binding>
     </element>
     <element id="RelatedPerson.name">
