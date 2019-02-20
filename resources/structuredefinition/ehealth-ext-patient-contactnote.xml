@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-patient-contactnote" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
-  <name value="Patient contact note" />
+  <name value="PatientContactNote" />
   <status value="draft" />
   <description value="This note holds the information of when the patient is available for communication - eg. between 10 and 12 every monday" />
   <copyright value="Trifork A/S" />

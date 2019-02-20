@@ -2,7 +2,7 @@
     xmlns="http://hl7.org/fhir">
     <id value="DkTmPatientValid"/>
     <meta>
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-patient" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired">
         <valueBoolean value="true"/>

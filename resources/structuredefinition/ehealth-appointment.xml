@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="dk-tm-appointment" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-appointment" />
+  <id value="ehealth-appointment" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
   <name value="Telemedicine appointment" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -76,7 +76,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-patient" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
     </element>
     <element id="Appointment.participant:patient.required">
@@ -127,7 +127,7 @@
       <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-related-person" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person" />
       </type>
     </element>
   </differential>
