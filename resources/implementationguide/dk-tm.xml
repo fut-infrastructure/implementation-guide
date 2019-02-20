@@ -776,7 +776,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/it-selfreliance"/>
+        <reference value="ValueSet/ehealth-it-selfreliance"/>
       </sourceReference>
     </resource>
     <resource>
