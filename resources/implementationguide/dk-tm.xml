@@ -337,11 +337,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/ehealth-provenance"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/ehealth-questionnaire"/>
       </sourceReference>
     </resource>

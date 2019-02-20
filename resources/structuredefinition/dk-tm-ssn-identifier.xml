@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ssn-identifier" />
-  <id value="dk-tm-ssn-identifier"/>
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ssn-identifier" />
+  <id value="ehealth-ssn-identifier"/>
   <name value="Danish SSN Identifier" />
   <status value="draft" />
   <description value="This structure holds the danish CPR identifier" />
