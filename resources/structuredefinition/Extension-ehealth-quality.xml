@@ -69,8 +69,8 @@
     <element id="Extension.extension:qualityCode.value[x]:valueCoding">
       <path value="Extension.extension.valueCoding" />
       <sliceName value="valueCoding" />
-      <short value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality-0.6.0), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality-0.6.0) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality-0.6.0)" />
-      <definition value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality-0.6.0), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality-0.6.0) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality-0.6.0)" />
+      <short value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
+      <definition value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
       <type>
         <code value="Coding" />
       </type>
