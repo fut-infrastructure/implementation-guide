@@ -20,7 +20,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://trifork.dk/fhir/ValueSet/dk-tm-provenance-policies" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-provenance-policies" />
       </binding>
     </element>
   </differential>
