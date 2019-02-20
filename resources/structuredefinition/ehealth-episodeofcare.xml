@@ -21,9 +21,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="EpisodeOfCare.extension:careManagers">
+    <element id="EpisodeOfCare.extension:careManager">
       <path value="EpisodeOfCare.extension" />
-      <sliceName value="careManagers" />
+      <sliceName value="careManager" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers" />
