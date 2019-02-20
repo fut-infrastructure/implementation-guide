@@ -102,57 +102,57 @@
       <sourceReference>
         <reference value="Communication/dk-tm-message-nemsms-valid"/>
       </sourceReference>
-      <exampleFor value="StructureDefinition/dk-tm-message"/>
+      <exampleFor value="StructureDefinition/ehealth-message"/>
     </resource>
     <resource>
       <example value="true"/>
       <sourceReference>
         <reference value="Patient/DkTmPatientValid"/>
       </sourceReference>
-      <exampleFor value="StructureDefinition/dk-tm-patient"/>
+      <exampleFor value="StructureDefinition/ehealth-patient"/>
     </resource>
     <resource>
       <example value="true"/>
       <sourceReference>
         <reference value="Communication/dk-tm-correspondance-all-types"/>
       </sourceReference>
-      <exampleFor value="StructureDefinition/dk-tm-correspondance"/>
+      <exampleFor value="StructureDefinition/ehealth-correspondance"/>
     </resource>
 
     <!-- Structure definitions-->
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-appointment"/>
+        <reference value="StructureDefinition/ehealth-appointment"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-appointmentresponse"/>
+        <reference value="StructureDefinition/ehealth-appointmentresponse"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-provenance"/>
+        <reference value="StructureDefinition/ehealth-provenance"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-ssn-identifier"/>
+        <reference value="StructureDefinition/ehealth-ssn-identifier"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-person"/>
+        <reference value="StructureDefinition/ehealth-person"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-related-person"/>
+        <reference value="StructureDefinition/ehealth-related-person"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-patient"/>
+        <reference value="StructureDefinition/ehealth-patient"/>
       </sourceReference>
     </resource>
     <resource>
@@ -182,12 +182,12 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-message"/>
+        <reference value="StructureDefinition/ehealth-message"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/dk-tm-correspondance"/>
+        <reference value="StructureDefinition/ehealth-correspondance"/>
       </sourceReference>
     </resource>
     <resource>
