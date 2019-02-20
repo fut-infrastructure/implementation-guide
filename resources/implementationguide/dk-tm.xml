@@ -36,13 +36,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/dk-tm-patient-update-operationdefinition"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="OperationDefinition/dk-tm-person-update-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-patient-update-operationdefinition"/>
       </sourceReference>
     </resource>
     <resource>

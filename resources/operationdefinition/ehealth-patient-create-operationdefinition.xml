@@ -2,12 +2,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id value="ehealth-patient-create-operationdefinition"/>
-    <name value="Create Patient from Person"/>
+    <name value="Create Patient"/>
     <status value="active"/>
     <kind value="operation"/>
     <date value="2019-02-02"/>
     <description value="This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided social secutiy number (ssn) is used as the origin of the data. &#xD;&#xA;&#xD;&#xA;### Note&#xD;&#xA;This operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings are present according to danish law" />
-    <code value="createPatientFromPerson"/>
+    <code value="createPatient"/>
     <comment value="See the wiki for examples on how to use the operation."/>
     <resource value="Patient"/>
     <system value="false"/>
