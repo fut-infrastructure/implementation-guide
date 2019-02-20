@@ -22,7 +22,7 @@ In the eHealth Infrastructure the Observation resource is used in conjunction wi
   - In certain circumstances data from Observations and QuestionnaireResponses can be reused. When this happens, a Provenance resource will identify the source of the original data.
   - Provenance is also used to link correlated resources submitted together.
 
-### Observation Bundles
+### Submitting Observation bundles
 Observations can be submitted using the submit-measurement operation. It is possible to submit a bundle of related resources containing:
 * Observations
 * Media
@@ -55,3 +55,17 @@ When an Observation-bundle is submitted the eHealth Infrastructure will automati
 a Provenance resource, which identifies the resources which were submitted in the same bundle. 
 
 The search-measurements operation can return the resources submitted as part of the same bundle.
+
+### Searching for Observations
+It is possible to search for Observations based on:
+* context 
+* subject
+* code
+* period
+* deviceMeasuringQuality
+* situationQuality
+* operationQuality
+
+At least one of "subject" and "context" must be provided. "period" searches on range of "effective".
+
+See [Searching](https://www.hl7.org/fhir/stu3/search.html) for more information about searching in REST, messaging, and services.
