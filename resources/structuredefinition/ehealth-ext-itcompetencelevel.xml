@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-itcompetencelevel" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
-  <name value="IT Competence Level" />
+  <name value="ITCompetenceLevel" />
   <status value="draft" />
   <description value="This extension describes the IT skills of a patient" />
   <fhirVersion value="3.0.1" />

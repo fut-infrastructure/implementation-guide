@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <id value="ehealth-functionalCapacity"/>
-  <name value="FSIII Functioncal capacity" />
+  <name value="FSIIIFunctioncalCapacity" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

@@ -8,7 +8,7 @@
     <valueInteger value="1" />
   </extension>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-relatedPerson" />
-  <name value="Related person" />
+  <name value="RelatedPerson" />
   <status value="draft" />
   <date value="2018-12-27T22:37:54+11:00" />
   <publisher value="HL7" />

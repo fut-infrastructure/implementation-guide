@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-regionalSubdivisionCode" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
-  <name value="Danish regional code" />
+  <name value="DanishRegionalCode" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
