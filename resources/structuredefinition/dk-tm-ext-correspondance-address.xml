@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-correspondance-address" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-correspondance-address" />
   <id value="dk-tm-ext-correspondance-address"/>
   <name value="Correspondance Address" />
   <status value="draft" />
@@ -159,7 +159,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-correspondance-address" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-correspondance-address" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

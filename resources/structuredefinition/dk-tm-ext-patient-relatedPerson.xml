@@ -7,7 +7,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="1" />
   </extension>
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-relatedPerson" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-relatedPerson" />
   <name value="Related person" />
   <status value="draft" />
   <date value="2018-12-27T22:37:54+11:00" />
@@ -34,7 +34,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-relatedPerson" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-relatedPerson" />
     </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.valueReference" />

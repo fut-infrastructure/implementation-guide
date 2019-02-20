@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-ext-referencetype" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype" />
   <name value="ReferenceType" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -15,7 +15,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />

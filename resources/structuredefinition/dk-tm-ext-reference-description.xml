@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-ext-reference-description" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description" />
   <name value="Description" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -142,7 +142,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -197,7 +197,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />

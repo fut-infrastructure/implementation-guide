@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-ext-patient-contactnote" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-contactnote" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
   <name value="Patient contact note" />
   <status value="draft" />
   <description value="This note holds the information of when the patient is available for communication - eg. between 10 and 12 every monday" />
@@ -18,7 +18,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-contactnote" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
     </element>
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />

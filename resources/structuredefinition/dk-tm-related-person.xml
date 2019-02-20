@@ -30,7 +30,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-contactnote" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
       </type>
     </element>
     <element id="RelatedPerson.identifier">

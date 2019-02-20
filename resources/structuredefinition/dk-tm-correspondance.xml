@@ -33,7 +33,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
       </type>
     </element>
     <element id="Communication.identifier">
@@ -172,7 +172,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-correspondance-address" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-correspondance-address" />
       </type>
     </element>
     <element id="Communication.recipient">
@@ -254,7 +254,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype" />
       </type>
     </element>
     <element id="Communication.payload.content[x]:contentAttachment.extension:description">
@@ -263,7 +263,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description" />
       </type>
     </element>
     <element id="Communication.payload.content[x]:contentAttachment.extension:identifier">
@@ -272,7 +272,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-identifier" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier" />
       </type>
     </element>
   </differential>

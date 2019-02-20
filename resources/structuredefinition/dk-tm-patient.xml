@@ -36,7 +36,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-itcompetencelevel" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
       </type>
     </element>
     <element id="Patient.extension:itcompetencelevel.valueCodeableConcept:valueCodeableConcept">
@@ -67,7 +67,7 @@
       <sliceName value="generalHealthCondition" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-generalHealthCondition" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-general-health-condition" />
       </type>
     </element>
     <element id="Patient.extension:functionalCapacity">
@@ -75,7 +75,7 @@
       <sliceName value="functionalCapacity" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-functionalCapacity" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
       </type>
     </element>
     <element id="Patient.identifier">
@@ -177,7 +177,7 @@
       <max value="1" />
       <type>
         <code value="Address" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-address" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
     </element>
     <element id="Patient.address:officialHomeAddress.extension:municipalityCode">
@@ -199,7 +199,7 @@
       <sliceName value="temporaryAddress" />
       <type>
         <code value="Address" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-address" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
     </element>
     <element id="Patient.contact.extension">
@@ -217,7 +217,7 @@
       <sliceName value="relatedPerson" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-relatedPerson" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-relatedPerson" />
       </type>
     </element>
     <element id="Patient.contact.extension:contactNote">
@@ -225,14 +225,14 @@
       <sliceName value="contactNote" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-patient-contactnote" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote" />
       </type>
     </element>
     <element id="Patient.contact.address">
       <path value="Patient.contact.address" />
       <type>
         <code value="Address" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-address" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
     </element>
     <element id="Patient.animal">
