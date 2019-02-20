@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
 <id value="ehealth-person"/>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-person" />
-  <name value="Danish person" />
+  <name value="ehealth-person" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

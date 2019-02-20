@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ssn-identifier" />
   <id value="ehealth-ssn-identifier"/>
-  <name value="Danish SSN Identifier" />
+  <name value="SSN Identifier" />
   <status value="draft" />
   <description value="This structure holds the danish CPR identifier" />
   <fhirVersion value="3.0.1" />

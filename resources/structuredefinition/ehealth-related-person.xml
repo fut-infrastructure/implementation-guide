@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person" />
   <id value="ehealth-related-person"/>
-  <name value="Telemedicine related person" />
+  <name value="ehealth-relatedperson" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
