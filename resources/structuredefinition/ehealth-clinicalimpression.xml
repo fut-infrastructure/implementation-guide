@@ -86,6 +86,33 @@
         <aggregation value="contained" />
       </type>
     </element>
+    <element id="ClinicalImpression.investigation.item">
+      <path value="ClinicalImpression.investigation.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RiskAssessment" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
+      </type>
+    </element>
     <element id="ClinicalImpression.finding">
       <path value="ClinicalImpression.finding" />
       <requirements value="constraint: must be present when code designates practitioner's assessment" />
