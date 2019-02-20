@@ -8,3 +8,4 @@ resources/implementationguide/ig-new.json
 resources/implementationguide/ig-new.xml
 resources/implementationguide/ig-validation-parameters.json
 ig.ini
+org.hl7.fhir.igpublisher.jar

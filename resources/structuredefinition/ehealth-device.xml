@@ -51,6 +51,13 @@
         </valueSetReference>
       </binding>
     </element>
+    <element id="Device.patient">
+      <path value="Device.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+    </element>
     <element id="Device.owner">
       <path value="Device.owner" />
       <type>

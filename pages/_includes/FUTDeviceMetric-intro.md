@@ -22,6 +22,13 @@ The quality of the device can be expressed in a number of ways:
 * a degraded device quality value
 * an overridden device quality
 
+The current quality of the Device is `DeviceMetric.quality`.
+
+The default values for initial, degraded, and overridden quality are kept in `DeviceMetric.templateQualities`.
+
+Historic values and periods of `DeviceMetric.quality` are kept in `DeviceMetric.qualityHistory`.
+This history is maintained by the eHealth Infrastructure.
+
 If the device is of a kind where calibration influences the device quality, and once the
 calibration has expired, the device quality will be based on the degraded quality value.
 Once the device has been calibrated (and a new calibration expiry has been set), the 
@@ -29,4 +36,3 @@ device quality is based on the initial device quality.
 
 At any time, a Practitioner can set which of the initial, degraded and overridden device
 quality shall be used as current.
- 

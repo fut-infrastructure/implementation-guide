@@ -32,11 +32,13 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-properties" />
       </type>
     </element>
-    <element id="DeviceMetric.extension:qualities">
+    <element id="DeviceMetric.extension:quality">
       <path value="DeviceMetric.extension" />
-      <sliceName value="qualities" />
+      <sliceName value="quality" />
       <short value="Qualities of the Device" />
       <definition value="Qualities are characteristics of the Device which may change over time or across calibration cycles, such as battery state, etc." />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities" />

@@ -32,6 +32,38 @@
     <element id="CareTeam.participant.member">
       <path value="CareTeam.participant.member" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="CareTeam.managingOrganization">
+      <path value="CareTeam.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

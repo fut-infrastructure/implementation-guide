@@ -60,6 +60,36 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="QuestionnaireResponse.context">
+      <path value="QuestionnaireResponse.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.author">
+      <path value="QuestionnaireResponse.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+    </element>
     <element id="QuestionnaireResponse.source">
       <path value="QuestionnaireResponse.source" />
       <min value="1" />
@@ -73,7 +103,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
       </type>
     </element>
     <element id="QuestionnaireResponse.item.answer.item">
