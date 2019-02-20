@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-ext-address" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-address" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
   <name value="Danish address" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -27,7 +27,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-municipalityCode" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code" />
       </type>
     </element>
     <element id="Address.extension:regionalSubdivisionCode">
@@ -36,7 +36,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-regionalSubdivisionCode" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
       </type>
     </element>
     <element id="Address.use">

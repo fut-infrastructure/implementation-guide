@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
   <id value="dk-tm-ext-authorizationTime"/>
   <name value="AuthorizationTime" />
   <status value="draft" />
@@ -142,7 +142,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -197,7 +197,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
     </element>
     <element id="Extension.value[x]:valueDateTime">
       <path value="Extension.valueDateTime" />

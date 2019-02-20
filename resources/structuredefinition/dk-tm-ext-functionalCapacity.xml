@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-functionalCapacity" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <id value="dk-tm-ext-functionalCapacity"/>
   <name value="FSIII Functioncal capacity" />
   <status value="draft" />
@@ -31,7 +31,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-functionalCapacity" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />

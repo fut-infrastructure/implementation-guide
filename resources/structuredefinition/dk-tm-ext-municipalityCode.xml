@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 <id value="dk-tm-ext-municipalityCode"/>
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-municipalityCode" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code" />
   <name value="Danish municipality code" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -17,7 +17,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/municipalityCode" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/municipalityCode" />
     </element>
     <element id="Extension.value[x]:valueCoding">
       <path value="Extension.valueCoding" />

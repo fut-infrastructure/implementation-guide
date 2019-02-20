@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="dk-tm-ext-regionalSubdivisionCode" />
-  <url value="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-regionalSubdivisionCode" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
   <name value="Danish regional code" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
@@ -17,7 +17,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://trifork.dk/fhir/StructureDefinition/regionalSubdivisionCode" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/regionalSubdivisionCode" />
     </element>
     <element id="Extension.value[x]:valueCoding">
       <path value="Extension.valueCoding" />

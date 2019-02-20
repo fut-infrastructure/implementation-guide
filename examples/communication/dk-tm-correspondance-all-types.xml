@@ -3,7 +3,7 @@
   <meta>
     <profile value="http://trifork.dk/fhir/StructureDefinition/dk-tm-correspondance"/>
   </meta>
-  <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-authorizationTime">
+  <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime">
     <valueDateTime value="2013-06-08T09:57:34.211Z"/>
   </extension>
   <status value="completed"/>
@@ -62,20 +62,20 @@
   </sender>
   <payload>
     <contentAttachment>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="sup"/>
       </extension>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="true"/>
       </extension>
     </contentAttachment>
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="url"/>
       </extension>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="BIN"/>
       </extension>
       <url value="http://sundhedsstyrelsen.dk/~/media/8612162363FB4BC3A09B32706EA13D36.ashx"/>
@@ -83,10 +83,10 @@
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="clinicalInformation"/>
       </extension>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="Description"/>
       </extension>
       <contentType value="text/plain"/>
@@ -95,13 +95,13 @@
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="attachment"/>
       </extension>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="BIN"/>
       </extension>
-      <extension url="http://trifork.dk/fhir/StructureDefinition/dk-tm-ext-identifier">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier">
         <valueIdentifier>
 	      <identifier>
 	        <value>260947-9989_021121SKR0XX0166OBJ001</value>
