@@ -1,5 +1,5 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-    <id value="patient.managingOrganization.identifier" />
+    <id value="ehealth-patient-search-managingOrganizationIdentifier" />
     <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Patient/managingOrganizationIdentifier"/>
     <name value="managingOrganizationIdentifier" />
     <status value="active" />

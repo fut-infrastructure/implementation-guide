@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <id value="dk-tm"/>
-  <url value="http://trifork.dk/fhir/ImplementationGuide/dk-tm"/>
+  <url value="http://ehealth.sundhed.dk/fhir/ImplementationGuide/dk-tm"/>
   <version value="3.2.0"/>
   <name value="eHealth Infrastructure"/>
   <status value="draft"/>
@@ -92,7 +92,21 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="SearchParameter/dk-tm-patient-search-managingOrganizationIdentifier"/>
+        <reference value="SearchParameter/ehealth-patient-search-managingOrganizationIdentifier"/>
+      </sourceReference>
+    </resource>
+
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-communicationCategory"/>
+      </sourceReference>
+    </resource>
+
+        <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-recipientIdentifier"/>
       </sourceReference>
     </resource>
 
