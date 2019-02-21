@@ -97,6 +97,13 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/topic-type" />
       </binding>
     </element>
+    <element id="ActivityDefinition.relatedArtifact">
+      <path value="ActivityDefinition.relatedArtifact" />
+      <type>
+        <code value="RelatedArtifact" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/RelatedArtifact" />
+      </type>
+    </element>
     <element id="ActivityDefinition.library">
       <path value="ActivityDefinition.library" />
       <type>
