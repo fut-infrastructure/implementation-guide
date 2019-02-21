@@ -1,10 +1,28 @@
-This IG is based on https://github.com/hl7ch/ch-core
+# README
+This IG inspired by the Implementation guide found at https://github.com/hl7ch/ch-core
 
+The IG publication tool to build this site can be found at http://build.fhir.org/org.hl7.fhir.igpublisher.jar
+
+Fetch it as follows:
+
+```
 wget http://build.fhir.org/org.hl7.fhir.igpublisher.jar -O org.hl7.fhir.igpublisher.jar
+```
 
+Run it from the root of the project by doing eg.:
+```
 java -jar org.hl7.fhir.igpublisher.jar -ig ig.json
+```
 
-Then run eg. 'jekyll serve' in the /output directory
+View the results by doing:
+```
+jekyll serve
+```
+in the /output directory
+
+## Build results
+
+Results of a successful build can be found at `/qa.html`
 
 ## Auto deployment
 
