@@ -39,6 +39,7 @@
     <element id="Extension.extension:value.value[x]:valueString">
       <path value="Extension.extension.valueString" />
       <sliceName value="valueString" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>
@@ -56,6 +57,7 @@
     <element id="Extension.extension:min.value[x]:valueInteger">
       <path value="Extension.extension.valueInteger" />
       <sliceName value="valueInteger" />
+      <min value="1" />
       <type>
         <code value="integer" />
       </type>
@@ -73,6 +75,7 @@
     <element id="Extension.extension:max.value[x]:valueInteger">
       <path value="Extension.extension.valueInteger" />
       <sliceName value="valueInteger" />
+      <min value="1" />
       <type>
         <code value="integer" />
       </type>
