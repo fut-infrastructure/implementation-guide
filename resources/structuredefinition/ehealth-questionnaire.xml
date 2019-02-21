@@ -36,6 +36,7 @@
       <path value="Questionnaire.extension" />
       <sliceName value="custodian" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-custodian" />
