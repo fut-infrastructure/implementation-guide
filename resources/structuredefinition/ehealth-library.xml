@@ -43,7 +43,6 @@
     <element id="Library.extension:intendedAudience">
       <path value="Library.extension" />
       <sliceName value="intendedAudience" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
