@@ -66,10 +66,6 @@
       <short value="Roles of this supplier" />
       <definition value="Roles of this supplier (e.g. trainer, provisioner, maintainer, supporter, decommisioner, helpdesk)" />
       <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/device-supplier-roles" />
-      </binding>
     </element>
     <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
@@ -78,9 +74,16 @@
     <element id="Extension.extension:role.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-supplier-roles" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
