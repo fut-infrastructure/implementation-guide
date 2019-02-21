@@ -25,6 +25,8 @@
     <element id="ActivityDefinition.extension:recommendation">
       <path value="ActivityDefinition.extension" />
       <sliceName value="recommendation" />
+      <short value="Recommendation state of the plan definition." />
+      <definition value="Defines the recommendation state of the plan definition." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -39,6 +41,8 @@
     <element id="ActivityDefinition.extension:owner">
       <path value="ActivityDefinition.extension" />
       <sliceName value="owner" />
+      <short value="The formal owner of the ActivityDefinition." />
+      <definition value="The formal owner of the ActivityDefinition." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -49,6 +53,8 @@
     <element id="ActivityDefinition.extension:author">
       <path value="ActivityDefinition.extension" />
       <sliceName value="author" />
+      <short value="The people or organizations who maintain the plan definition." />
+      <definition value="People/organizations who maintain the plan definition. This will often be identical to the owner." />
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -58,7 +64,8 @@
     <element id="ActivityDefinition.extension:intendedAudience">
       <path value="ActivityDefinition.extension" />
       <sliceName value="intendedAudience" />
-      <short value="Intended audience for the plan" />
+      <short value="Intended audience for the plan." />
+      <definition value="Specifies that the plan is only intended for use in the specified organizations. Leave blank if the plan is intended for global use." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
@@ -67,6 +74,8 @@
     <element id="ActivityDefinition.extension:referenceRange">
       <path value="ActivityDefinition.extension" />
       <sliceName value="referenceRange" />
+      <short value="Provides guide for interpretation." />
+      <definition value="Provides guide for interpretation&#xD;&#xA;+ Must have at least a low or a high or text" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
@@ -75,6 +84,8 @@
     <element id="ActivityDefinition.extension:minimumQuality">
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
+      <short value="Minimum requirements for qualities." />
+      <definition value="The minimum requirements for qualities." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />

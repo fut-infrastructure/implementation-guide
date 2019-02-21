@@ -24,6 +24,8 @@
     <element id="PlanDefinition.extension:recommendation">
       <path value="PlanDefinition.extension" />
       <sliceName value="recommendation" />
+      <short value="Recommendation state of the plan definition." />
+      <definition value="Defines the recommendation state of the plan definition." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -38,7 +40,8 @@
     <element id="PlanDefinition.extension:intendedAudience">
       <path value="PlanDefinition.extension" />
       <sliceName value="intendedAudience" />
-      <short value="Intended audience for the plan" />
+      <short value="Intended audience for the plan." />
+      <definition value="Intended audience for the plan." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
@@ -47,6 +50,8 @@
     <element id="PlanDefinition.extension:author">
       <path value="PlanDefinition.extension" />
       <sliceName value="author" />
+      <short value="People or organisations who maintain the plan definition" />
+      <definition value="People or organisations who maintain the plan definition. This will often be identical to the owner." />
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -56,6 +61,8 @@
     <element id="PlanDefinition.extension:owner">
       <path value="PlanDefinition.extension" />
       <sliceName value="owner" />
+      <short value="The formal owner of the PlanDefinition" />
+      <definition value="The formal owner of the PlanDefinition" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -66,6 +73,8 @@
     <element id="PlanDefinition.extension:role">
       <path value="PlanDefinition.extension" />
       <sliceName value="role" />
+      <short value="Roles involved in the Plan" />
+      <definition value="Roles involved in the Plan. This information is used when assigning a careteam to a careplan based on this plandefinition. The roles can be used to verify that the assigned careteam includes all necessary roles and if any roles are not covered to find Practioners with the required roles in the organizational unit." />
       <min value="0" />
       <max value="*" />
       <type>
