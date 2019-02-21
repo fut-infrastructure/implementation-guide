@@ -14,6 +14,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -102,6 +107,7 @@
     <element id="Extension.extension:parameter">
       <path value="Extension.extension" />
       <sliceName value="parameter" />
+      <min value="1" />
     </element>
     <element id="Extension.extension:parameter.extension">
       <path value="Extension.extension.extension" />
