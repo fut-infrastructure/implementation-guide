@@ -47,6 +47,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/cs/devicemetric-property-types" />
+      </binding>
     </element>
     <element id="Extension.extension:value">
       <path value="Extension.extension" />
