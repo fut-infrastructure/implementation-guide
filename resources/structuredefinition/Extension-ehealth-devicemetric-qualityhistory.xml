@@ -31,10 +31,6 @@
       <definition value="Category of this device quality" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types" />
-      </binding>
     </element>
     <element id="Extension.extension:category.url">
       <path value="Extension.extension.url" />
@@ -46,6 +42,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types" />
+      </binding>
     </element>
     <element id="Extension.extension:value">
       <path value="Extension.extension" />
