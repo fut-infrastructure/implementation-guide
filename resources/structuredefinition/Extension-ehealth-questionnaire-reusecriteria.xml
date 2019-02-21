@@ -126,12 +126,12 @@
       <path value="Extension.extension.url" />
       <fixedUri value="dataActualityUnit" />
     </element>
-    <element id="Extension.extension:dataActualityUnit.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:dataActualityUnit.value[x]:valueTiming">
+      <path value="Extension.extension.valueTiming" />
+      <sliceName value="valueTiming" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="Timing" />
       </type>
     </element>
     <element id="Extension.url">
