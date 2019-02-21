@@ -49,6 +49,8 @@
     <element id="Organization.telecom.extension:custodian">
       <path value="Organization.telecom.extension" />
       <sliceName value="custodian" />
+      <short value="Custodian of this ContactPoint." />
+      <definition value="If this field is null or points to STS ORG or SOR - then it may be overridden by future automatic data imports from these systems. If the field refers to something else, this data will remain available - also after future automatic data imports." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organisation-telecomCustodian" />
