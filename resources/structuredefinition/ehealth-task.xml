@@ -25,6 +25,7 @@
       <path value="Task.extension" />
       <sliceName value="category" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category" />
