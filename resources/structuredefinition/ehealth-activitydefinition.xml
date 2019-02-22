@@ -85,10 +85,12 @@
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
       <short value="Minimum requirements for qualities." />
-      <definition value="The minimum requirements for qualities." />
+      <definition value="Minimum requirements for qualities." />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
       </type>
     </element>
     <element id="ActivityDefinition.version">
