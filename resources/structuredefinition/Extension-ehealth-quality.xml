@@ -9,7 +9,6 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
-  <context value="ActivityDefinition" />
   <context value="Media" />
   <context value="QuestionnaireResponse" />
   <context value="Observation" />
