@@ -94,6 +94,11 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
       </type>
     </element>
+    <element id="ActivityDefinition.extension:minimumQuality.extension:qualityType">
+      <path value="ActivityDefinition.extension.extension" />
+      <sliceName value="qualityType" />
+      <short value="Type of quality. " />
+    </element>
     <element id="ActivityDefinition.version">
       <path value="ActivityDefinition.version" />
       <min value="1" />
