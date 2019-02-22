@@ -21,16 +21,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Library.extension:revision">
-      <path value="Library.extension" />
-      <sliceName value="revision" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-revision" />
-      </type>
-    </element>
     <element id="Library.extension:basedOn">
       <path value="Library.extension" />
       <sliceName value="basedOn" />
@@ -54,6 +44,16 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterBinding" />
+      </type>
+    </element>
+    <element id="Library.extension:revision">
+      <path value="Library.extension" />
+      <sliceName value="revision" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
       </type>
     </element>
     <element id="Library.version">

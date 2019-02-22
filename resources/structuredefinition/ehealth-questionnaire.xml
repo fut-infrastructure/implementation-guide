@@ -68,6 +68,16 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
       </type>
     </element>
+    <element id="Questionnaire.extension:revision">
+      <path value="Questionnaire.extension" />
+      <sliceName value="revision" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
+      </type>
+    </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
       <min value="1" />
