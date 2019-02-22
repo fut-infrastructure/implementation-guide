@@ -4,7 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
   <name value="referenceRange" />
   <status value="draft" />
-  <description value="Provides guide for interpretation. Must have at least a low or a high or text" />
+  <description value="Provides guide for interpretation. Must have at least a low or a high." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
