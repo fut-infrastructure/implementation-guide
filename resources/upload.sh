@@ -23,6 +23,7 @@ done
 for f in $PROFILES
 do
   echo "*** Uploading profile $f..."
+#  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/StructureDefinition/?add_snapshot=true
   curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/StructureDefinition/
 done
 for f in $SEARCHPARAMS
