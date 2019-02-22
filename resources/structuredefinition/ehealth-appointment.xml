@@ -33,7 +33,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/careplan-responsible" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
     <element id="Appointment.appointmentType">
@@ -113,7 +113,7 @@
       <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
       </type>
     </element>
     <element id="Appointment.participant:relatedPerson">
