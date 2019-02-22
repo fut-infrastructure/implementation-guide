@@ -42,7 +42,7 @@
       <sliceName value="referenceRange" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest-referenceRange" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
       </type>
     </element>
     <element id="ProcedureRequest.definition">
