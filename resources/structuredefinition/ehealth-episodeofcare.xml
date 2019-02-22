@@ -24,6 +24,8 @@
     <element id="EpisodeOfCare.extension:careManager">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="careManager" />
+      <short value="Care managers/care coordinators." />
+      <definition value="Care managers/care coordinators for the patient." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers" />
@@ -32,8 +34,8 @@
     <element id="EpisodeOfCare.extension:careManagerHistory">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="careManagerHistory" />
-      <short value="History of care managers/care co-ordinators for the patient." />
-      <definition value="History of care managers/care co-ordinators for the patient." />
+      <short value="History of care managers/care coordinators for the patient." />
+      <definition value="History of care managers/care coordinators for the patient. When a new care manager is assigned the previous one is moved to here and assigned a period." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
@@ -42,6 +44,8 @@
     <element id="EpisodeOfCare.extension:responsible">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="responsible" />
+      <short value="Individuals, careteam or organization responsible for monitoring this plan." />
+      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
@@ -50,6 +54,8 @@
     <element id="EpisodeOfCare.extension:responsibleHistory">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="responsibleHistory" />
+      <short value="Previous individuals, careteams and organizations responsible for monitoring this plan." />
+      <definition value="Previous individuals, careteams and organizations responsible for monitoring this plan in the specified period." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
