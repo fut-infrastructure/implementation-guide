@@ -91,6 +91,10 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/message-medium" />
       </binding>
     </element>
+    <element id="Communication.medium:DkTmMedium.coding">
+      <path value="Communication.medium.coding" />
+      <definition value="A reference to a code defined by a terminology system" />
+    </element>
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
