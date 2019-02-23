@@ -11,6 +11,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AppointmentResponse" />
   <derivation value="constraint" />
   <differential>
+    <element id="AppointmentResponse">
+      <path value="AppointmentResponse"/>
+    </element>
+    <element id="AppointmentResponse.appointment">
+      <path value="AppointmentResponse.appointment" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
+      </type>
+    </element>
     <element id="AppointmentResponse.actor">
       <path value="AppointmentResponse.actor" />
       <type>
