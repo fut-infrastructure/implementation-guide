@@ -472,11 +472,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-procedurerequest-referencerange"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-quality"/>
       </sourceReference>
     </resource>
