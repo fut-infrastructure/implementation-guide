@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinitionRole" />
   <name value="role" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Roles involved in the Plan" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

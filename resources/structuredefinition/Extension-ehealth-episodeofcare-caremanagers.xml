@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers" />
   <name value="careManagers" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Care manager/care co-ordinator for the patient." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

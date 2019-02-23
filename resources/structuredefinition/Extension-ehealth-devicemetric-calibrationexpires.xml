@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-calibrationExpires" />
   <name value="calibrationExpires" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Date when the current calibration expires and recalibration is required." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

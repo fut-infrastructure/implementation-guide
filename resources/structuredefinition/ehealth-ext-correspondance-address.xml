@@ -4,6 +4,7 @@
   <id value="ehealth-correspondance-address"/>
   <name value="CorrespondanceAddress" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

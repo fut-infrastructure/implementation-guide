@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
   <name value="ITCompetenceLevel" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="This extension describes the IT skills of a patient" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

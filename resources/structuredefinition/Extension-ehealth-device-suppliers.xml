@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
   <name value="suppliers" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Suppliers of different kinds. E.g device suppliers, support suppliers, training suppliers, etc." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

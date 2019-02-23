@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
   <name value="reuseCriteria" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Defines if and when a response can be reused." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

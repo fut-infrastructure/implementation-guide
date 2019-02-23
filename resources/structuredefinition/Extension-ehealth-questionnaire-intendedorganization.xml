@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization" />
   <name value="intendedOrganization" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="The questionnaire is intended to be used by these organizations." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

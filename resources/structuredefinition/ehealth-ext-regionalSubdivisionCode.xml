@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
   <name value="DanishRegionalCode" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

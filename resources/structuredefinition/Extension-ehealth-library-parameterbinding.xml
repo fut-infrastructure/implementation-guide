@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterBinding" />
   <name value="parameterBinding" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Mappings of parameters defined for the library" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organisation-relatedTo" />
   <name value="relatedTo" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Relations to other Organizations" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

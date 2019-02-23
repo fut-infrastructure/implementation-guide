@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
   <name value="sharingPolicy" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Policy for sharing this resource with national data banks." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

@@ -4,6 +4,7 @@
   <id value="ehealth-functionalCapacity"/>
   <name value="FSIIIFunctioncalCapacity" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

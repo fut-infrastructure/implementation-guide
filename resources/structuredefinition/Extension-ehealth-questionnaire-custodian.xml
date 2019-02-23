@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-custodian" />
   <name value="custodian" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Responsible organization for the provision." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

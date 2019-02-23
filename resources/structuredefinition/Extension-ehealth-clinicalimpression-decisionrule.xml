@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
   <name value="decisionRule" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Decision support identification, parameters and result" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

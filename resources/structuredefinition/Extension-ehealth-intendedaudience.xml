@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
   <name value="intendedAudience" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Specifies that the plan is only intended for use in the specified organisations. Leave blank if the plan is intended for global use." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
