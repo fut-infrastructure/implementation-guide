@@ -437,7 +437,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-revision"/>
+        <reference value="StructureDefinition/Extension-ehealth-revision"/>
       </sourceReference>
     </resource>
     <resource>
