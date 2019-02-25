@@ -22,7 +22,7 @@ against reference ranges specified in CarePlan/ProcedureRequest. The result of t
 captured in a ClinicalImpression which is referenced as Task focus in a Task created by
 the eHealth Infrastructure. The Task has:
 
-* Task owner that references the CareTeam of the CarePlan
+* Task owner that references a selected CareTeam of the CarePlan
 * Task category is coding that states need to assess a triaging result
 * Task priority reflecting the triaging result
 
