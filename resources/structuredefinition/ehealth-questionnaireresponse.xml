@@ -58,7 +58,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.context">

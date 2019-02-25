@@ -83,7 +83,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ProcedureRequest.requester.agent">
