@@ -91,7 +91,7 @@
       <max value="*" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-minimumQuality" />
       </type>
     </element>
     <element id="ActivityDefinition.version">

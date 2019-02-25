@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-minimumQuality" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-minimumQuality" />
   <name value="minimumQuality" />
   <status value="draft" />
   <description value="The minimum requirements for qualities" />
@@ -17,7 +17,7 @@
     <element id="Extension">
       <path value="Extension" />
       <short value="Minimum quality requirements." />
-      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality." />
+      <definition value="Minimum quality requirements such as quality in usage, device quality and situation quality." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -76,7 +76,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-minimumQuality" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
