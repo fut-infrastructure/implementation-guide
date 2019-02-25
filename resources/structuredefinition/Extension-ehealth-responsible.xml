@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
   <name value="responsible" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

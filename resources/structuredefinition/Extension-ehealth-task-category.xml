@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category" />
   <name value="category" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Category of task." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

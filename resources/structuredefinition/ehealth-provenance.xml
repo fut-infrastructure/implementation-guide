@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance" />
   <name value="ehealth-provenance" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />

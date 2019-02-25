@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author" />
   <name value="author" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="People/organisations who maintains the plan definition. This will often be identical to the owner." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

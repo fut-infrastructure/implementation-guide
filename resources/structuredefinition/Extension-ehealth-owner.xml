@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner" />
   <name value="owner" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="The formal owner of the PlanDefinition" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

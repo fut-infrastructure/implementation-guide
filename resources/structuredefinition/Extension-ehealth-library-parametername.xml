@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterName" />
   <name value="parameterName" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Name of the parameter given as string. This must match the parameter name in the ParameterDefinition." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

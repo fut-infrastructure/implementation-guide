@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation" />
   <name value="recommendation" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="The recommendation state of the plan definition" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

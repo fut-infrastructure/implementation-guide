@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
   <name value="quality" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Requirements for qualities" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
@@ -18,8 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Quality measure." />
-      <definition value="Quality measure." />
+      <short value="Minimum requirements for qualities" />
+      <definition value="The minimum requirements for qualities" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />

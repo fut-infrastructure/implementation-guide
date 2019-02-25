@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-basedOn" />
   <name value="basedOn" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Library that this library is based on" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

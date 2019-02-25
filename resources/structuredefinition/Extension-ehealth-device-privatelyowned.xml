@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-privatelyOwned" />
   <name value="privatelyOwned" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="True if this device is privately owned (BYOD - Bring you own device)." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

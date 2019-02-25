@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
   <name value="careManagerHistory" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="History of care managers/care co-ordinators for the patient." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

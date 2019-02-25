@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-feedback" />
   <name value="feedback" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Feedback if reponse is within the defined range." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />

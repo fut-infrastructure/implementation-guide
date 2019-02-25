@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
   <name value="revision" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Business revision of the questionnaire." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
