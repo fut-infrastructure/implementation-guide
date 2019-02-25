@@ -85,19 +85,14 @@
     <element id="ActivityDefinition.extension:minimumQuality">
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
-      <short value="Minimum requirements for qualities." />
-      <definition value="Minimum requirements for qualities." />
+      <short value="Minumum quality requirements." />
+      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality.&#xD;&#xA;" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
       </type>
-    </element>
-    <element id="ActivityDefinition.extension:minimumQuality.extension:qualityType">
-      <path value="ActivityDefinition.extension.extension" />
-      <sliceName value="qualityType" />
-      <short value="Type of quality. " />
     </element>
     <element id="ActivityDefinition.version">
       <path value="ActivityDefinition.version" />

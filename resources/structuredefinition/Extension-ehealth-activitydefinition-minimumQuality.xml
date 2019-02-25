@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-activitydefinition-minimumQuality" />
+  <id value="ehealth-minimumQuality" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition-minimumQuality" />
   <name value="minimumQuality" />
   <status value="draft" />
@@ -16,8 +16,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Minimum quality." />
-      <definition value="Minimum quality." />
+      <short value="Minimum quality requirements." />
+      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -32,6 +32,7 @@
     <element id="Extension.extension:qualityType">
       <path value="Extension.extension" />
       <sliceName value="qualityType" />
+      <short value="Type of quality." />
       <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality" />
       <min value="1" />
       <max value="1" />
