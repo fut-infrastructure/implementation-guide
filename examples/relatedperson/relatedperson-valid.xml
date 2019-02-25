@@ -1,0 +1,29 @@
+<RelatedPerson xmlns='http://hl7.org/fhir'>
+    <id value="related-person-valid"/>
+    <meta>
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person"/>
+    </meta>
+    <identifier>
+        <system value='urn:oid:1.2.208.176.1.2'/>
+        <value value='1234567890'/>
+    </identifier>
+    <patient>
+        <identifier>
+            <system value='urn:oid:1.2.208.176.1.2'/>
+            <value value='1122334455'/>
+        </identifier>
+    </patient>
+    <name>
+        <family value='Hansen'/>
+        <given value='Jens'/>
+    </name>
+    <address>
+        <use value="home"/>
+        <line value="Europaplads 2"/>
+        <city value="Aarhus C"/>
+        <postalCode value="8000"/>
+    </address>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote">
+        <valueString value="Er behjælpelig med transport til og fra sygehuset"/>
+    </extension>
+</RelatedPerson>

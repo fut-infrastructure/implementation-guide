@@ -1,6 +1,6 @@
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="DkTmPatientValid"/>
+    <id value="patient-valid"/>
     <meta>
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
     </meta>
@@ -41,5 +41,5 @@
             <value value="5790002286346" />
         </identifier>
     </managingOrganization>
-    
+
 </Patient>
