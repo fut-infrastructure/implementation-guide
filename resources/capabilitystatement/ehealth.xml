@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="ehealth" />
    <status value="active"/>
-   <date value="2019-02-20T14:27:51+00:00"/>
+   <date value="2019-02-25T07:06:15+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth FHIR Server"/>
-      <url value="http://10.1.0.219:8080/hapi-fhir-server/baseDstu3"/>
+      <url value="http://10.1.0.233:8080/hapi-fhir-server/baseDstu3"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -20,7 +20,7 @@
       <mode value="server"/>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="12"/>
+            <valueDecimal value="111"/>
          </extension>
          <type value="ActivityDefinition"/>
          <profile>
@@ -48,7 +48,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="2"/>
+            <valueDecimal value="9"/>
          </extension>
          <type value="CarePlan"/>
          <profile>
@@ -72,7 +72,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="6"/>
+            <valueDecimal value="52"/>
          </extension>
          <type value="CareTeam"/>
          <profile>
@@ -113,7 +113,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="8"/>
+            <valueDecimal value="36"/>
          </extension>
          <type value="ClinicalImpression"/>
          <profile>
@@ -141,7 +141,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="8"/>
+            <valueDecimal value="40"/>
          </extension>
          <type value="Communication"/>
          <profile>
@@ -169,7 +169,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="6"/>
+            <valueDecimal value="30"/>
          </extension>
          <type value="Condition"/>
          <profile>
@@ -189,7 +189,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="16"/>
+            <valueDecimal value="84"/>
          </extension>
          <type value="Consent"/>
          <profile>
@@ -217,7 +217,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="38"/>
+            <valueDecimal value="175"/>
          </extension>
          <type value="Device"/>
          <profile>
@@ -245,7 +245,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="6"/>
+            <valueDecimal value="31"/>
          </extension>
          <type value="DeviceMetric"/>
          <profile>
@@ -273,7 +273,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="8"/>
+            <valueDecimal value="36"/>
          </extension>
          <type value="DeviceUseStatement"/>
          <profile>
@@ -300,6 +300,9 @@
          <conditionalUpdate value="true"/>
       </resource>
       <resource>
+         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+            <valueDecimal value="21"/>
+         </extension>
          <type value="DocumentReference"/>
          <profile>
             <reference value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
@@ -326,7 +329,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="106"/>
+            <valueDecimal value="613"/>
          </extension>
          <type value="EpisodeOfCare"/>
          <profile>
@@ -350,7 +353,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="4"/>
+            <valueDecimal value="28"/>
          </extension>
          <type value="Library"/>
          <profile>
@@ -378,7 +381,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="8"/>
+            <valueDecimal value="38"/>
          </extension>
          <type value="Media"/>
          <profile>
@@ -398,7 +401,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="8"/>
+            <valueDecimal value="32"/>
          </extension>
          <type value="Observation"/>
          <profile>
@@ -513,7 +516,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="258"/>
+            <valueDecimal value="1372"/>
          </extension>
          <type value="Organization"/>
          <profile>
@@ -537,7 +540,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="12"/>
+            <valueDecimal value="54"/>
          </extension>
          <type value="PlanDefinition"/>
          <profile>
@@ -565,7 +568,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="78"/>
+            <valueDecimal value="422"/>
          </extension>
          <type value="Practitioner"/>
          <profile>
@@ -589,7 +592,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="10"/>
+            <valueDecimal value="58"/>
          </extension>
          <type value="PractitionerRole"/>
          <profile>
@@ -630,7 +633,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="2"/>
+            <valueDecimal value="63"/>
          </extension>
          <type value="ProcedureRequest"/>
          <profile>
@@ -645,16 +648,13 @@
          <interaction>
             <code value="update"/>
          </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="12"/>
+            <valueDecimal value="47"/>
          </extension>
          <type value="Provenance"/>
          <profile>
@@ -671,7 +671,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="36"/>
+            <valueDecimal value="167"/>
          </extension>
          <type value="Questionnaire"/>
          <profile>
@@ -712,7 +712,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="6"/>
+            <valueDecimal value="29"/>
          </extension>
          <type value="QuestionnaireResponse"/>
          <profile>
@@ -865,7 +865,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="10"/>
+            <valueDecimal value="45"/>
          </extension>
          <type value="Task"/>
          <profile>
@@ -936,12 +936,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="search-organization-and-practitioner-external"/>
-         <definition>
-            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="submit-measurement"/>
          <definition>
             <reference value="OperationDefinition/-s-submit-measurement"/>
@@ -957,6 +951,12 @@
          <name value="create-episode-of-care"/>
          <definition>
             <reference value="OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-organization-and-practitioner-external"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
          </definition>
       </operation>
       <operation>
