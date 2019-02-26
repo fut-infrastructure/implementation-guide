@@ -3,6 +3,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-correspondance-address" />
   <id value="ehealth-correspondance-address"/>
   <name value="CorrespondanceAddress" />
+  <title value="eHealth CorrespondanceAddress" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

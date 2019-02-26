@@ -3,6 +3,7 @@
   <id value="ehealth-media" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media" />
   <name value="ehealth-media" />
+  <title value="eHealth Media" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

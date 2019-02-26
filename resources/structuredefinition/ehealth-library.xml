@@ -3,6 +3,7 @@
   <id value="ehealth-library" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
   <name value="ehealth-library" />
+  <title value="eHealth Library" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

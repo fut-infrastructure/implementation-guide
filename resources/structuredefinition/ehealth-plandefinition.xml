@@ -3,6 +3,7 @@
   <id value="ehealth-plandefinition" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" />
   <name value="ehealth-plandefinition" />
+  <title value="eHealth PlanDefinition" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

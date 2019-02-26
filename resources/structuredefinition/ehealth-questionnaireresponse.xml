@@ -3,6 +3,7 @@
   <id value="ehealth-questionnaireresponse" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse" />
   <name value="ehealth-questionnaireresponse" />
+  <title value="eHealth QuestionnaireResponse" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

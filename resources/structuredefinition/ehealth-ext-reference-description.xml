@@ -3,6 +3,7 @@
   <id value="ehealth-reference-description" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description" />
   <name value="Description" />
+  <title value="eHealth ReferenceDescription" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

@@ -3,6 +3,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ssn-identifier" />
   <id value="ehealth-ssn-identifier"/>
   <name value="SSN Identifier" />
+  <title value="eHealth SSN Identifier" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="This structure holds the danish CPR identifier" />

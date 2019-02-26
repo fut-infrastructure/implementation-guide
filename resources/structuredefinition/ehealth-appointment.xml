@@ -3,6 +3,7 @@
   <id value="ehealth-appointment" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
   <name value="ehealth-appointment" />
+  <title value="eHealth Appointment" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="This profile uses multiple slices for the field *__participant__*. The slicing means that at least one patient, one location and at least one practitioner must be present. For more info on slicing, see the [FHIR documentation](http://hl7.org/fhir/STU3/profiling.html#slicing)." />

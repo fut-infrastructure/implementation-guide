@@ -3,6 +3,7 @@
   <id value="ehealth-address" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
   <name value="DanishAddress" />
+  <title value="eHealth Address" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

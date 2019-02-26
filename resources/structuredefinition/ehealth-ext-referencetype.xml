@@ -3,6 +3,7 @@
   <id value="ehealth-referencetype" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype" />
   <name value="ReferenceType" />
+  <title value="eHealth ReferenceType" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

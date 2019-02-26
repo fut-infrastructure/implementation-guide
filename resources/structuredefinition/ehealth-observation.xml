@@ -3,6 +3,7 @@
   <id value="ehealth-observation" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
   <name value="ehealth-observation" />
+  <title value="eHealth Observation" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

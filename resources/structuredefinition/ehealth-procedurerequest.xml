@@ -3,6 +3,7 @@
   <id value="ehealth-procedurerequest" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
   <name value="ehealth-procedurerequest" />
+  <title value="eHealth ProcedureRequest" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

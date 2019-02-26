@@ -3,6 +3,7 @@
   <id value="ehealth-deviceUseStatement" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceUseStatement" />
   <name value="ehealth-deviceUseStatement" />
+  <title value="eHealth DeviceUseStatement" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

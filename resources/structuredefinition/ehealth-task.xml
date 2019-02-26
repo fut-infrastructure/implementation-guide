@@ -3,6 +3,7 @@
   <id value="ehealth-task" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task" />
   <name value="ehealth-task" />
+  <title value="eHealth Task" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

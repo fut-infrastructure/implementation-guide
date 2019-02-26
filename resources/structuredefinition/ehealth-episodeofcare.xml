@@ -3,6 +3,7 @@
   <id value="ehealth-episodeofcare" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
   <name value="ehealth-episodeofcare" />
+  <title value="eHealth EpisodeOfCare" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

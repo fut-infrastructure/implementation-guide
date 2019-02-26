@@ -3,6 +3,7 @@
   <id value="ehealth-practitionerRole" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerRole" />
   <name value="ehealth-practitionerRole" />
+  <title value="eHealth PractitionerRole" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

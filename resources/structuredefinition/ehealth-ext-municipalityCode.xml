@@ -3,6 +3,7 @@
 <id value="ehealth-municipalityCode"/>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code" />
   <name value="DanishMunicipalityCode" />
+  <title value="eHealth MunicipalityCode" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

@@ -3,6 +3,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <id value="ehealth-functionalCapacity"/>
   <name value="FSIIIFunctioncalCapacity" />
+  <title value="eHealth FunctionalCapacity" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />

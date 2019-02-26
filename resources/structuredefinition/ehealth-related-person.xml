@@ -3,6 +3,7 @@
   <id value="ehealth-related-person" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
   <name value="ehealth-relatedperson" />
+  <title value="eHealth RelatedPerson" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <fhirVersion value="3.0.1" />
