@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-related-person" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
   <name value="ehealth-relatedperson" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />

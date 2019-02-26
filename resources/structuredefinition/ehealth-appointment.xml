@@ -129,7 +129,7 @@
       <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
       </type>
     </element>
   </differential>

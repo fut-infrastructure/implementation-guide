@@ -1,7 +1,7 @@
 <RelatedPerson xmlns='http://hl7.org/fhir'>
     <id value="related-person-valid"/>
     <meta>
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person"/>
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
     </meta>
     <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote">
         <valueString value="Er behjælpelig med transport til og fra sygehuset"/>
