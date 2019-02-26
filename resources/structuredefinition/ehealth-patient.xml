@@ -9,8 +9,7 @@
   <name value="ehealth-patient" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a person in a careplan process. All patients are linked to an actual *person* through the use if the _identifier_ (the social security number). The Patient resource refers to an Organization in the field Patient.managingOrganization. This organization is the custodian [(*Dataansvarlig*)](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32016R0679#d1e1482-1-1) of all data that is hooked up on that Patient resource.&#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operations defined for the Patient resource. The operations ensure that patients are created with the proper demographics data, the proper managing organization and under the proper legislation and having a proper link between person and patient." />
-  <copyright value="Trifork A/S" />
+  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a person in a careplan process. All patients must be linked to an actual person resource instance, where the person acts a template for a patient. A newly created patient is always based from a person which also means that a person links to all its patients.&#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operations defined for the Patient resource. The operations ensure that patients are created with the proper demographics data, the proper managing organization and under the proper legislation and having a proper link between person and patient." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -19,7 +18,8 @@
   <derivation value="constraint" />
   <differential>
     <element id="Patient">
-      <path value="Patient"/>
+      <path value="Patient" />
+      <definition value="Demographics and other administrative information about an individual or animal receiving care or other health-related services" />
     </element>
     <element id="Patient.extension">
       <path value="Patient.extension" />
@@ -187,6 +187,10 @@
         <code value="Address" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
+    </element>
+    <element id="Patient.address:temporaryAddress.use">
+      <path value="Patient.address.use" />
+      <fixedCode value="temp" />
     </element>
     <element id="Patient.contact.extension">
       <path value="Patient.contact.extension" />
