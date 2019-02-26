@@ -114,23 +114,51 @@
     <resource>
       <example value="true"/>
       <sourceReference>
-        <reference value="Communication/dk-tm-message-nemsms-valid"/>
+        <reference value="Communication/message-nemsms-valid"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-message"/>
     </resource>
     <resource>
       <example value="true"/>
       <sourceReference>
-        <reference value="Patient/DkTmPatientValid"/>
+        <reference value="Patient/patient-valid"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-patient"/>
     </resource>
     <resource>
       <example value="true"/>
       <sourceReference>
-        <reference value="Communication/dk-tm-correspondance-all-types"/>
+        <reference value="Communication/correspondance-all-types"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-correspondance"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Provenance/provenance-message-activate-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-provenance"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="RelatedPerson/relatedperson-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-related-person"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Appointment/appointment-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-appointment"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="AppointmentResponse/appointmentresponse-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-appointmentresponse"/>
     </resource>
 
     <!-- Structure definitions-->

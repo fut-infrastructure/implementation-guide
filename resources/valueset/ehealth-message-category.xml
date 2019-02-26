@@ -24,7 +24,7 @@
   
   <compose>
     <include>
-      <system value="http://ehealth.sundhed.dk/message-category"/>
+      <system value="http://ehealth.sundhed.dk/cs/message-category"/>
 
       <concept>
         <code value="message"/>

@@ -11,11 +11,17 @@ fi
 echo "NOTICE: Resources must be saved in snapshot format if they are required to validate requests on HAPI FHIR"
 echo "Uploading FHIR resources to $1..."
 
+CODESYSTEMS=codesystem/*.xml
 VALUESETS=valueset/*.xml
 PROFILES=structuredefinition/*.xml
 SEARCHPARAMS=searchparameter/*.xml
 
-for f in $VALUESETS	 
+for f in $CODESYSTEMS
+do
+  echo "*** Uploading code system $f..."
+  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/CodeSystem/
+done
+for f in $VALUESETS
 do
   echo "*** Uploading value set $f..."
   curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/ValueSet/

@@ -1,0 +1,46 @@
+<Appointment xmlns='http://hl7.org/fhir'>
+    <id value="appointment-valid"/>
+    <meta>
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
+    </meta>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible">
+        <extension url="type">
+            <valueCode value="TBD"/>
+        </extension>
+        <extension url="actor">
+            <valueReference>
+                <reference value="http://example.com/CareTeam/42"/>
+                <display value="CareTeam Aarhus"/>
+            </valueReference>
+        </extension>
+    </extension>
+    <status value='proposed'/>
+    <appointmentType>
+        <coding>
+            <system value="http://ehealth.sundhed.dk/appointment-type"/>
+            <code value="followup"/>
+            <display value="Followup"/>
+        </coding>
+    </appointmentType>
+    <reason>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="413095006"/>
+        </coding>
+        <text value="Clinical Review"/>
+    </reason>
+    <participant>
+        <actor>
+            <reference value="http://example.com/Patient/136"/>
+            <display value="Jens Hansen"/>
+        </actor>
+        <status value="needs-action"/>
+    </participant>
+    <participant>
+        <actor>
+            <reference value="http://example.com/Practitioner/145"/>
+            <display value="Tove Jensen"/>
+        </actor>
+        <status value="needs-action"/>
+    </participant>
+</Appointment>

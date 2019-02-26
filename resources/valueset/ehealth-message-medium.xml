@@ -24,7 +24,7 @@
   
   <compose>
     <include>
-      <system value="http://ehealth.sundhed.dk/message-medium"/>
+      <system value="http://ehealth.sundhed.dk/cs/message-medium"/>
 
       <concept>
         <code value="nemsms"/>

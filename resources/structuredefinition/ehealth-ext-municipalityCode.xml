@@ -18,7 +18,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/municipalityCode" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code" />
     </element>
     <element id="Extension.value[x]:valueCoding">
       <path value="Extension.valueCoding" />

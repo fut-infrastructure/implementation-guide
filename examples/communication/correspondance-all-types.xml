@@ -5,8 +5,7 @@
   </meta>
   <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime">
     <valueDateTime value="2013-06-08T09:57:34.211Z"/>
-  </extension>
-  <status value="completed"/>
+  </extension>>
   <identifier>
     <system value='http://ehealth.sundhed.dk/correspondance-envelope-identifier'/>
     <value value='123'/>
@@ -15,6 +14,7 @@
     <system value='http://ehealth.sundhed.dk/correspondance-letter-identifier'/>
     <value value='123'/>
   </identifier>
+  <status value="completed"/>
   <category>
     <coding>
       <system value='http://ehealth.sundhed.dk/correspondance-acknowledgement-code'/>
@@ -45,7 +45,6 @@
       <value value="1234567890"/>
     </identifier>
   </subject>
-  <sent value="2018-12-12T18:01:10-08:00"/>
   <recipient>
     <identifier>
       <system value="urn:oid:1.2.208.176.1.1.2"/>
@@ -53,6 +52,7 @@
     </identifier>
     <display value="Sundhedsstyrelsen"/>
   </recipient>
+  <sent value="2018-12-12T18:01:10-08:00"/>
   <sender>
     <identifier>
       <system value="urn:oid:1.2.208.176.1.1.2"/>
@@ -103,15 +103,13 @@
       </extension>
       <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier">
         <valueIdentifier>
-	      <identifier>
-	        <value>260947-9989_021121SKR0XX0166OBJ001</value>
-	      </identifier>
-	    </valueIdentifier>
+          <value value="260947-9989_021121SKR0XX0166OBJ001"/>
+        </valueIdentifier>
       </extension>
-      <title>tekst</title>
       <contentType value="application/pdf"/>
       <data value='SGVsbG8gd29ybGQ='/>
       <size value='11'/>
+      <title value="tekst"/>
     </contentAttachment>
   </payload>
 </Communication>
