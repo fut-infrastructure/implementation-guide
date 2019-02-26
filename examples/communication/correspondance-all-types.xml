@@ -6,7 +6,6 @@
   <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime">
     <valueDateTime value="2013-06-08T09:57:34.211Z"/>
   </extension>>
-  <status value="completed"/>
   <identifier>
     <system value='http://ehealth.sundhed.dk/correspondance-envelope-identifier'/>
     <value value='123'/>
@@ -15,6 +14,7 @@
     <system value='http://ehealth.sundhed.dk/correspondance-letter-identifier'/>
     <value value='123'/>
   </identifier>
+  <status value="completed"/>
   <category>
     <coding>
       <system value='http://ehealth.sundhed.dk/correspondance-acknowledgement-code'/>
@@ -45,7 +45,6 @@
       <value value="1234567890"/>
     </identifier>
   </subject>
-  <sent value="2018-12-12T18:01:10-08:00"/>
   <recipient>
     <identifier>
       <system value="urn:oid:1.2.208.176.1.1.2"/>
@@ -53,6 +52,7 @@
     </identifier>
     <display value="Sundhedsstyrelsen"/>
   </recipient>
+  <sent value="2018-12-12T18:01:10-08:00"/>
   <sender>
     <identifier>
       <system value="urn:oid:1.2.208.176.1.1.2"/>
@@ -62,20 +62,20 @@
   </sender>
   <payload>
     <contentAttachment>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="sup"/>
       </extension>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="true"/>
       </extension>
     </contentAttachment>
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="url"/>
       </extension>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="BIN"/>
       </extension>
       <url value="http://sundhedsstyrelsen.dk/~/media/8612162363FB4BC3A09B32706EA13D36.ashx"/>
@@ -83,10 +83,10 @@
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="clinicalInformation"/>
       </extension>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="Description"/>
       </extension>
       <contentType value="text/plain"/>
@@ -95,21 +95,21 @@
   </payload>
   <payload>
     <contentAttachment>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-referencetype">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referencetype">
         <valueString value="attachment"/>
       </extension>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-reference-description">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reference-description">
         <valueString value="BIN"/>
       </extension>
-      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-identifier">
+      <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-identifier">
         <valueIdentifier>
           <value value="260947-9989_021121SKR0XX0166OBJ001"/>
         </valueIdentifier>
       </extension>
-      <title>tekst</title>
       <contentType value="application/pdf"/>
       <data value='SGVsbG8gd29ybGQ='/>
       <size value='11'/>
+      <title value="tekst"/>
     </contentAttachment>
   </payload>
 </Communication>

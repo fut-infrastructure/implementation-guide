@@ -3,6 +3,9 @@
     <meta>
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-related-person"/>
     </meta>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote">
+        <valueString value="Er behjælpelig med transport til og fra sygehuset"/>
+    </extension>
     <identifier>
         <system value='urn:oid:1.2.208.176.1.2'/>
         <value value='1234567890'/>
@@ -23,7 +26,4 @@
         <city value="Aarhus C"/>
         <postalCode value="8000"/>
     </address>
-    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote">
-        <valueString value="Er behjælpelig med transport til og fra sygehuset"/>
-    </extension>
 </RelatedPerson>

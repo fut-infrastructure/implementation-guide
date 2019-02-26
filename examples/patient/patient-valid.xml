@@ -16,10 +16,6 @@
         <given value="Jens" />
     </name>
     <telecom>
-        <system value="phone" />
-        <value value="+45 86123456" />
-    </telecom>
-    <telecom>
         <system value="other"/>
         <value value="NemSMS"/>
     </telecom>
@@ -30,7 +26,33 @@
     <gender value="male" />
     <birthDate value="1982-03-20" />
     <address>
+        <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code">
+            <valueCoding>
+                <code value='751'/>
+            </valueCoding>
+        </extension>
+        <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code">
+            <valueCoding>
+                <code value='DK-82'/>
+            </valueCoding>
+        </extension>
         <use value="home" />
+        <line value="Hjemplads 42" />
+        <city value="Aarhus C" />
+        <postalCode value="8000" />
+    </address>
+    <address>
+        <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-municipality-code">
+            <valueCoding>
+                <code value='751'/>
+            </valueCoding>
+        </extension>
+        <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code">
+            <valueCoding>
+                <code value='DK-82'/>
+            </valueCoding>
+        </extension>
+        <use value="temp" />
         <line value="Europaplads 2" />
         <city value="Aarhus C" />
         <postalCode value="8000" />
