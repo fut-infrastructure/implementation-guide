@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
   <derivation value="constraint" />
   <differential>
+    <element id="DeviceUseStatement">
+      <path value="DeviceUseStatement" />
+      <short value="A record of a device being used by a patient." />
+    </element>
     <element id="DeviceUseStatement.subject">
       <path value="DeviceUseStatement.subject" />
       <type>

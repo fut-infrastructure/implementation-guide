@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
   <derivation value="constraint" />
   <differential>
+    <element id="EpisodeOfCare">
+      <path value="EpisodeOfCare" />
+      <short value="An association between a patient and an organization / healthcare provider(s) during which time encounters may occur." />
+    </element>
     <element id="EpisodeOfCare.extension">
       <path value="EpisodeOfCare.extension" />
       <slicing>

@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
   <derivation value="constraint" />
   <differential>
+    <element id="Consent">
+      <path value="Consent" />
+      <short value="Used to express a Consent regarding Healthcare." />
+    </element>
     <element id="Consent.category">
       <path value="Consent.category" />
       <short value="Type of the consent statement" />

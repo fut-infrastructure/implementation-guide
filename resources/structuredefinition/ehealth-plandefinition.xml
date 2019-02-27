@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="PlanDefinition">
+      <path value="PlanDefinition" />
+      <short value="This resource allows for the definition of various types of plans as a sharable, consumable, and executable artifact." />
+    </element>
     <element id="PlanDefinition.extension">
       <path value="PlanDefinition.extension" />
       <slicing>

@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
   <derivation value="constraint" />
   <differential>
+    <element id="CarePlan">
+      <path value="CarePlan" />
+      <short value="The intention of how one or more practitioners intend to deliver care for a particular patient, group or community for a period of time." />
+    </element>
     <element id="CarePlan.extension">
       <path value="CarePlan.extension" />
       <slicing>

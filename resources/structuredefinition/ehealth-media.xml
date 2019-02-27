@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Media" />
   <derivation value="constraint" />
   <differential>
+    <element id="Media">
+      <path value="Media" />
+      <short value="A photo, video, or audio recording acquired or used in healthcare." />
+    </element>
     <element id="Media.extension">
       <path value="Media.extension" />
       <slicing>

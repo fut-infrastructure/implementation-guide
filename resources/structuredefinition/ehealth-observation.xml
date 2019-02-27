@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <short value="Measurements and simple assertions made about a patient, device or other subject." />
+    </element>
     <element id="Observation.extension">
       <path value="Observation.extension" />
       <slicing>

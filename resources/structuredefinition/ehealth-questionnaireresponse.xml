@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" />
   <derivation value="constraint" />
   <differential>
+    <element id="QuestionnaireResponse">
+      <path value="QuestionnaireResponse" />
+      <short value="A structured set of questions and their answers." />
+    </element>
     <element id="QuestionnaireResponse.extension">
       <path value="QuestionnaireResponse.extension" />
       <slicing>

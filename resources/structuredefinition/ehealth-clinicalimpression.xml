@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
   <derivation value="constraint" />
   <differential>
+    <element id="ClinicalImpression">
+      <path value="ClinicalImpression" />
+      <short value="A record of a clinical assessment performed to determine what problem(s) may affect the patient." />
+    </element>
     <element id="ClinicalImpression.code">
       <path value="ClinicalImpression.code" />
       <min value="1" />

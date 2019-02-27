@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
   <derivation value="constraint" />
   <differential>
+    <element id="CareTeam">
+      <path value="CareTeam" />
+      <short value="People and organizations who plan to participate in the coordination and delivery of care for a patient." />
+    </element>
     <element id="CareTeam.name">
       <path value="CareTeam.name" />
       <min value="1" />

@@ -16,7 +16,6 @@
     <element id="Provenance">
       <path value="Provenance" />
     </element>
-
     <element id="Provenance.policy">
       <path value="Provenance.policy" />
       <min value="1" />

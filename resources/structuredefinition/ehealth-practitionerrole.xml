@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
   <derivation value="constraint" />
   <differential>
+    <element id="PractitionerRole">
+      <path value="PractitionerRole" />
+      <short value="A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time." />
+    </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <type>

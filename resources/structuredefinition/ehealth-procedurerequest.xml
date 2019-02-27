@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ProcedureRequest">
+      <path value="ProcedureRequest" />
+      <short value="A record of a request for diagnostic investigations, treatments, or operations to be performed." />
+    </element>
     <element id="ProcedureRequest.extension">
       <path value="ProcedureRequest.extension" />
       <slicing>

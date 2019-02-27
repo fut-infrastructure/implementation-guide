@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task" />
   <derivation value="constraint" />
   <differential>
+    <element id="Task">
+      <path value="Task" />
+      <short value="A task to be performed." />
+    </element>
     <element id="Task.extension">
       <path value="Task.extension" />
       <slicing>

@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
   <derivation value="constraint" />
   <differential>
+    <element id="ActivityDefinition">
+      <path value="ActivityDefinition" />
+      <short value="The definition of a specific activity to be taken, independent of any particular patient or context." />
+    </element>
     <element id="ActivityDefinition.extension">
       <path value="ActivityDefinition.extension" />
       <slicing>
@@ -86,7 +90,7 @@
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
       <short value="Minumum quality requirements." />
-      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality.&#xD;&#xA;" />
+      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality." />
       <min value="0" />
       <max value="*" />
       <type>

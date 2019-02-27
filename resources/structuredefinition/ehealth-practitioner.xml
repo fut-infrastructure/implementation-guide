@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
   <derivation value="constraint" />
   <differential>
+    <element id="Practitioner">
+      <path value="Practitioner" />
+      <short value="A person who is directly or indirectly involved in the provisioning of healthcare." />
+    </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
       <min value="1" />

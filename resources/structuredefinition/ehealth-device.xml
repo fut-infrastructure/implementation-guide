@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
   <derivation value="constraint" />
   <differential>
+    <element id="Device">
+      <path value="Device" />
+      <short value="An instance or a type of a manufactured item that is used in the provision of healthcare." />
+    </element>
     <element id="Device.extension">
       <path value="Device.extension" />
       <slicing>

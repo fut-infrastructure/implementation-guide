@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceMetric" />
   <derivation value="constraint" />
   <differential>
+    <element id="DeviceMetric">
+      <path value="DeviceMetric" />
+      <short value="Describes a measurement, calculation or setting capability of a medical device." />
+    </element>
     <element id="DeviceMetric.extension">
       <path value="DeviceMetric.extension" />
       <slicing>
