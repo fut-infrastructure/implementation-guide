@@ -13,6 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Communication">
+      <path value="Communication" />
+      <short value="A communication is a conveyance of information from a sender to a receiver." />
+    </element>
     <element id="Communication.definition">
       <path value="Communication.definition" />
       <type>
