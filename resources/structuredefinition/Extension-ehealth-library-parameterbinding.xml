@@ -166,8 +166,11 @@
       <sliceName value="valueCode" />
       <type>
         <code value="code" />
-        <profile value="http://hl7.org/fhir/quantity-comparator" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="https://www.hl7.org/fhir/valueset-quantity-comparator.html" />
+      </binding>
     </element>
     <element id="Extension.extension:valueMapping.extension:targetValue">
       <path value="Extension.extension.extension" />
