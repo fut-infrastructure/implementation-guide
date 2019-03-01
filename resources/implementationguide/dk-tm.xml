@@ -790,6 +790,16 @@
         <reference value="CodeSystem/npu"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-message-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-message-medium"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
