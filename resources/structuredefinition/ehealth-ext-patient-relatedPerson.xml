@@ -12,7 +12,6 @@
   <title value="eHealth RelatedPerson" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <date value="2018-12-27T22:37:54+11:00" />
   <publisher value="HL7" />
   <description value="In some cases a Patient.contact will also be populated as a RelatedPerson resource. This linkage permits the linkage between the 2 resources to be able to accurately indicate a representation of the same individual, and updating details between could be appropriate." />
   <fhirVersion value="3.0.1" />

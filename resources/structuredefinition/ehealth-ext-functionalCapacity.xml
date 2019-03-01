@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <id value="ehealth-functionalCapacity"/>
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <name value="FSIIIFunctioncalCapacity" />
   <title value="eHealth FunctionalCapacity" />
   <status value="draft" />
