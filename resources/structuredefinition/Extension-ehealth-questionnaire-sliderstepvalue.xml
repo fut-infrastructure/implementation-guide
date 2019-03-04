@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-questionnaire-sliderstepvalue" />
+  <id value="ehealth-questionnaire-sliderStepValue" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
   <name value="sliderStepValue" />
   <status value="draft" />
