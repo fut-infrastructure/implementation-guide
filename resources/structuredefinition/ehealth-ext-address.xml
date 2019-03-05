@@ -6,6 +6,7 @@
   <title value="eHealth Address" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
+  <description value="Danish address including municipality code and regional code" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
