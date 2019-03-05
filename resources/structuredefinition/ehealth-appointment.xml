@@ -67,8 +67,6 @@
     <element id="Appointment.participant:patient">
       <path value="Appointment.participant" />
       <sliceName value="patient" />
-      <min value="1" />
-      <max value="1" />
     </element>
     <element id="Appointment.participant:patient.type">
       <path value="Appointment.participant.type" />
