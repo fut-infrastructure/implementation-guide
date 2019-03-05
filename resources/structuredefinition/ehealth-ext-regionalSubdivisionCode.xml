@@ -6,6 +6,7 @@
   <title value="eHealth RegionalSubdivisionCode" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
+  <description value="Danish regional code" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
