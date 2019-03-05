@@ -81,6 +81,10 @@
       <path value="DeviceMetric.parent" />
       <max value="0" />
     </element>
+    <element id="DeviceMetric.calibration">
+      <path value="DeviceMetric.calibration" />
+      <short value="Describes the calibrations that have been performed or that are required to be performed." />
+    </element>
     <element id="DeviceMetric.calibration.extension">
       <path value="DeviceMetric.calibration.extension" />
       <slicing>
