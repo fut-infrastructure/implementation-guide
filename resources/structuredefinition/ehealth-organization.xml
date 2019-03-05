@@ -41,6 +41,10 @@
       <path value="Organization.name" />
       <min value="1" />
     </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <short value="A contact detail for the organization." />
+    </element>
     <element id="Organization.telecom.extension">
       <path value="Organization.telecom.extension" />
       <slicing>
