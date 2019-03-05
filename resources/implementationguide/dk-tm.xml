@@ -295,6 +295,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-condition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-consent"/>
       </sourceReference>
     </resource>
@@ -922,6 +927,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-clinicalimpression-finding-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-conditions"/>
       </sourceReference>
     </resource>
     <resource>

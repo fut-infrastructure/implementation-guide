@@ -136,7 +136,7 @@
       <path value="ProcedureRequest.reasonReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
       </type>
       <type>
         <code value="Reference" />
