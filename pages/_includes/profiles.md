@@ -35,7 +35,6 @@ The following profiles for FHIR *datatypes* have been defined for this implement
 - [ImagingStudy](http://hl7.org/fhir/STU3/imagingstudy.html)
 - [List](http://hl7.org/fhir/stu3/list.html)
 - [Location](http://hl7.org/fhir/STU3/location.html)
-- [Location](http://hl7.org/fhir/STU3/location.html)
 - [Medication](http://hl7.org/fhir/STU3/medication.html)
 - [MedicationRequest](http://hl7.org/fhir/STU3/medicationrequest.html)
 - [NamingSystem](http://hl7.org/fhir/stu3/namingsystem.html)
