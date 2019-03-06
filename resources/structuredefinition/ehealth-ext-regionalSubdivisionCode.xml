@@ -6,6 +6,7 @@
   <title value="eHealth RegionalSubdivisionCode" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
+  <description value="Danish regional code" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -21,20 +22,12 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
     </element>
-    <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Extension.value[x]:valueCoding.code">
-      <path value="Extension.valueCoding.code" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

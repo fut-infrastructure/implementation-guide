@@ -6,6 +6,7 @@
   <title value="eHealth ReferenceType" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
+  <description value="Indicates the type of a document/information reference" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
