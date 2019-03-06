@@ -3,6 +3,7 @@
   <id value="ehealth-condition" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
   <name value="ehealth-condition" />
+  <title value="eHealth Condition" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
