@@ -6,7 +6,7 @@
   <title value="eHealth Message" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, is handled through the use of the Provenance resource." />
+  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the Provenance resource. " />
   <copyright value="Trifork A&amp;S" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
