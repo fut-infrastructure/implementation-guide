@@ -68,6 +68,10 @@
       <path value="ProcedureRequest.replaces" />
       <max value="0" />
     </element>
+    <element id="ProcedureRequest.code">
+      <path value="ProcedureRequest.code" />
+      <short value="What is being requested/ordered" />
+    </element>
     <element id="ProcedureRequest.code.coding">
       <path value="ProcedureRequest.code.coding" />
       <binding>
@@ -89,6 +93,10 @@
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
       </type>
+    </element>
+    <element id="ProcedureRequest.requester">
+      <path value="ProcedureRequest.requester" />
+      <short value="Who/what is requesting procedure or diagnostic" />
     </element>
     <element id="ProcedureRequest.requester.agent">
       <path value="ProcedureRequest.requester.agent" />
@@ -142,6 +150,10 @@
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
       </type>
+    </element>
+    <element id="ProcedureRequest.note">
+      <path value="ProcedureRequest.note" />
+      <short value="Comments" />
     </element>
     <element id="ProcedureRequest.note.author[x]">
       <path value="ProcedureRequest.note.author[x]" />
