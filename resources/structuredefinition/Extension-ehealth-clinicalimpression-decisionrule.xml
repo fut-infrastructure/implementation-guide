@@ -15,6 +15,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Decision rule" />
+      <definition value="Decision rule" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -28,6 +33,7 @@
     <element id="Extension.extension:identifier">
       <path value="Extension.extension" />
       <sliceName value="identifier" />
+      <short value="Identifier" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -46,6 +52,7 @@
     <element id="Extension.extension:version">
       <path value="Extension.extension" />
       <sliceName value="version" />
+      <short value="Version" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -64,6 +71,7 @@
     <element id="Extension.extension:revision">
       <path value="Extension.extension" />
       <sliceName value="revision" />
+      <short value="Revision" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -82,6 +90,7 @@
     <element id="Extension.extension:code">
       <path value="Extension.extension" />
       <sliceName value="code" />
+      <short value="Code" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -103,6 +112,7 @@
     <element id="Extension.extension:parameter">
       <path value="Extension.extension" />
       <sliceName value="parameter" />
+      <short value="Parameter" />
       <min value="1" />
     </element>
     <element id="Extension.extension:parameter.extension">
@@ -264,6 +274,7 @@
     <element id="Extension.extension:inputParameters">
       <path value="Extension.extension" />
       <sliceName value="inputParameters" />
+      <short value="Input parameter" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -283,6 +294,7 @@
     <element id="Extension.extension:outputParameters">
       <path value="Extension.extension" />
       <sliceName value="outputParameters" />
+      <short value="Output parameter" />
       <max value="1" />
     </element>
     <element id="Extension.extension:outputParameters.url">
@@ -300,6 +312,7 @@
     <element id="Extension.extension:evaluationMessage">
       <path value="Extension.extension" />
       <sliceName value="evaluationMessage" />
+      <short value="Evaluation message" />
     </element>
     <element id="Extension.extension:evaluationMessage.url">
       <path value="Extension.extension.url" />
