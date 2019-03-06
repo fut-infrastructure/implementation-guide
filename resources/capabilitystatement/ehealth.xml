@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="ehealth" />
    <status value="active"/>
-   <date value="2019-02-25T07:06:15+00:00"/>
+   <date value="2019-03-06T12:28:40+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="HAPI FHIR Server"/>
-      <version value="3.6.0"/>
+      <version value="3.7.0"/>
    </software>
    <implementation>
       <description value="eHealth FHIR Server"/>
-      <url value="http://10.1.0.233:8080/hapi-fhir-server/baseDstu3"/>
+      <url value="http://192.168.235.97:8080/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -19,9 +19,6 @@
    <rest>
       <mode value="server"/>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="111"/>
-         </extension>
          <type value="ActivityDefinition"/>
          <profile>
             <reference value="StructureDefinition/ehealth-activitydefinition"/>
@@ -45,11 +42,114 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="ActivityDefinition:composed-of"/>
+         <searchInclude value="ActivityDefinition:depends-on"/>
+         <searchInclude value="ActivityDefinition:derived-from"/>
+         <searchInclude value="ActivityDefinition:predecessor"/>
+         <searchInclude value="ActivityDefinition:successor"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The activity definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="owner"/>
+            <type value="reference"/>
+            <documentation value="The formal owner of the ActivityDefinition"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derived-from"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="predecessor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="depends-on"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the activity definition is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="topic"/>
+            <type value="token"/>
+            <documentation value="Topics associated with the module"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the activity definition"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="9"/>
-         </extension>
          <type value="CarePlan"/>
          <profile>
             <reference value="StructureDefinition/ehealth-careplan"/>
@@ -69,11 +169,123 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="care-team"/>
+            <type value="reference"/>
+            <documentation value="Who's involved in plan?"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Time period plan covers"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External Ids for this plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="goal"/>
+            <type value="reference"/>
+            <documentation value="Desired outcome of plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="reference"/>
+            <documentation value="Matches if the practitioner is listed as a performer in any of the &quot;simple&quot; activities.  (For performers of the detailed activities, chain through the activitydetail search parameter.)"/>
+         </searchParam>
+         <searchParam>
+            <name value="replaces"/>
+            <type value="reference"/>
+            <documentation value="CarePlan replaced by this CarePlan"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who care plan is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="monitoring_responsible"/>
+            <type value="reference"/>
+            <documentation value="Individuals, careteam and/or organization responsible for monitoring this plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="part-of"/>
+            <type value="reference"/>
+            <documentation value="Part of referenced CarePlan"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Created in context of"/>
+         </searchParam>
+         <searchParam>
+            <name value="intent"/>
+            <type value="token"/>
+            <documentation value="proposal | plan | order | option"/>
+         </searchParam>
+         <searchParam>
+            <name value="activity-reference"/>
+            <type value="reference"/>
+            <documentation value="Activity details defined in specific resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="condition"/>
+            <type value="reference"/>
+            <documentation value="Health issues this plan addresses"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Fulfills care plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who care plan is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Created in context of"/>
+         </searchParam>
+         <searchParam>
+            <name value="activity-date"/>
+            <type value="date"/>
+            <documentation value="Specified date occurs within period specified by CarePlan.activity.timingSchedule"/>
+         </searchParam>
+         <searchParam>
+            <name value="definition"/>
+            <type value="reference"/>
+            <documentation value="Protocol or definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Type of plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="activity-code"/>
+            <type value="token"/>
+            <documentation value="Detail type of activity"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="draft | active | suspended | completed | entered-in-error | cancelled | unknown"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="52"/>
-         </extension>
          <type value="CareTeam"/>
          <profile>
             <reference value="StructureDefinition/ehealth-careteam"/>
@@ -110,11 +322,77 @@
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="CarePlan:activity-reference"/>
+         <searchInclude value="CarePlan:based-on"/>
+         <searchInclude value="CarePlan:care-team"/>
+         <searchInclude value="CarePlan:condition"/>
+         <searchInclude value="CarePlan:context"/>
+         <searchInclude value="CarePlan:definition"/>
+         <searchInclude value="CarePlan:encounter"/>
+         <searchInclude value="CarePlan:goal"/>
+         <searchInclude value="CarePlan:part-of"/>
+         <searchInclude value="CarePlan:patient"/>
+         <searchInclude value="CarePlan:performer"/>
+         <searchInclude value="CarePlan:replaces"/>
+         <searchInclude value="CarePlan:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Time period team covers"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External Ids for this team"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who care team is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who care team is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode associated with CareTeam"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode associated with CareTeam"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Type of team"/>
+         </searchParam>
+         <searchParam>
+            <name value="participant"/>
+            <type value="reference"/>
+            <documentation value="Who is involved"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="proposed | active | suspended | inactive | entered-in-error"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="36"/>
-         </extension>
          <type value="ClinicalImpression"/>
          <profile>
             <reference value="StructureDefinition/ehealth-clinicalimpression"/>
@@ -138,11 +416,93 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="ClinicalImpression:action"/>
+         <searchInclude value="ClinicalImpression:assessor"/>
+         <searchInclude value="ClinicalImpression:context"/>
+         <searchInclude value="ClinicalImpression:finding-ref"/>
+         <searchInclude value="ClinicalImpression:investigation"/>
+         <searchInclude value="ClinicalImpression:patient"/>
+         <searchInclude value="ClinicalImpression:previous"/>
+         <searchInclude value="ClinicalImpression:problem"/>
+         <searchInclude value="ClinicalImpression:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="When the assessment was documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Business identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="previous"/>
+            <type value="reference"/>
+            <documentation value="Reference to last assessment"/>
+         </searchParam>
+         <searchParam>
+            <name value="finding-code"/>
+            <type value="token"/>
+            <documentation value="What was found"/>
+         </searchParam>
+         <searchParam>
+            <name value="assessor"/>
+            <type value="reference"/>
+            <documentation value="The clinician performing the assessment"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Patient or group assessed"/>
+         </searchParam>
+         <searchParam>
+            <name value="finding-ref"/>
+            <type value="reference"/>
+            <documentation value="What was found"/>
+         </searchParam>
+         <searchParam>
+            <name value="problem"/>
+            <type value="reference"/>
+            <documentation value="Relevant impressions of patient state"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Patient or group assessed"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or Episode created from"/>
+         </searchParam>
+         <searchParam>
+            <name value="action"/>
+            <type value="reference"/>
+            <documentation value="Action taken as part of assessment procedure"/>
+         </searchParam>
+         <searchParam>
+            <name value="investigation"/>
+            <type value="reference"/>
+            <documentation value="Record of a specific investigation"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="draft | completed | entered-in-error"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="40"/>
-         </extension>
          <type value="Communication"/>
          <profile>
             <reference value="StructureDefinition/ehealth-communication"/>
@@ -166,14 +526,96 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Unique identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Focus of message"/>
+         </searchParam>
+         <searchParam>
+            <name value="part-of"/>
+            <type value="reference"/>
+            <documentation value="Part of this action"/>
+         </searchParam>
+         <searchParam>
+            <name value="received"/>
+            <type value="date"/>
+            <documentation value="When received"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Encounter leading to message"/>
+         </searchParam>
+         <searchParam>
+            <name value="medium"/>
+            <type value="token"/>
+            <documentation value="A channel of communication"/>
+         </searchParam>
+         <searchParam>
+            <name value="sent"/>
+            <type value="date"/>
+            <documentation value="When sent"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Request fulfilled by this communication"/>
+         </searchParam>
+         <searchParam>
+            <name value="sender"/>
+            <type value="reference"/>
+            <documentation value="Message sender"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Focus of message"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode leading to message"/>
+         </searchParam>
+         <searchParam>
+            <name value="recipient"/>
+            <type value="reference"/>
+            <documentation value="Message recipient"/>
+         </searchParam>
+         <searchParam>
+            <name value="definition"/>
+            <type value="reference"/>
+            <documentation value="Instantiates protocol or definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Message category"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="preparation | in-progress | suspended | aborted | completed | entered-in-error"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="30"/>
-         </extension>
          <type value="Condition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -186,11 +628,133 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="onset-info"/>
+            <type value="string"/>
+            <documentation value="Onsets as a string"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Code for the condition"/>
+         </searchParam>
+         <searchParam>
+            <name value="evidence"/>
+            <type value="token"/>
+            <documentation value="Manifestation/symptom"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who has the condition?"/>
+         </searchParam>
+         <searchParam>
+            <name value="verification-status"/>
+            <type value="token"/>
+            <documentation value="provisional | differential | confirmed | refuted | entered-in-error | unknown"/>
+         </searchParam>
+         <searchParam>
+            <name value="clinical-status"/>
+            <type value="token"/>
+            <documentation value="The clinical status of the condition"/>
+         </searchParam>
+         <searchParam>
+            <name value="onset-date"/>
+            <type value="date"/>
+            <documentation value="Date related onsets (dateTime and Period)"/>
+         </searchParam>
+         <searchParam>
+            <name value="abatement-date"/>
+            <type value="date"/>
+            <documentation value="Date-related abatements (dateTime and period)"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who has the condition?"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode when condition first asserted"/>
+         </searchParam>
+         <searchParam>
+            <name value="abatement-age"/>
+            <type value="quantity"/>
+            <documentation value="Abatement as age or age range"/>
+         </searchParam>
+         <searchParam>
+            <name value="asserted-date"/>
+            <type value="date"/>
+            <documentation value="Date record was believed accurate"/>
+         </searchParam>
+         <searchParam>
+            <name value="evidence-detail"/>
+            <type value="reference"/>
+            <documentation value="Supporting information found elsewhere"/>
+         </searchParam>
+         <searchParam>
+            <name value="severity"/>
+            <type value="token"/>
+            <documentation value="The severity of the condition"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A unique identifier of the condition record"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Encounter when condition first asserted"/>
+         </searchParam>
+         <searchParam>
+            <name value="abatement-boolean"/>
+            <type value="token"/>
+            <documentation value="Abatement boolean (boolean is true or non-boolean values are present)"/>
+         </searchParam>
+         <searchParam>
+            <name value="asserter"/>
+            <type value="reference"/>
+            <documentation value="Person who asserts this condition"/>
+         </searchParam>
+         <searchParam>
+            <name value="stage"/>
+            <type value="token"/>
+            <documentation value="Simple summary (disease specific)"/>
+         </searchParam>
+         <searchParam>
+            <name value="abatement-string"/>
+            <type value="string"/>
+            <documentation value="Abatement as a string"/>
+         </searchParam>
+         <searchParam>
+            <name value="onset-age"/>
+            <type value="quantity"/>
+            <documentation value="Onsets as age or age range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="body-site"/>
+            <type value="token"/>
+            <documentation value="Anatomical location, if relevant"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="The category of the condition"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="84"/>
-         </extension>
          <type value="Consent"/>
          <profile>
             <reference value="StructureDefinition/ehealth-consent"/>
@@ -214,11 +778,88 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="When this Consent was created or indexed"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Identifier for this record (external references)"/>
+         </searchParam>
+         <searchParam>
+            <name value="securitylabel"/>
+            <type value="token"/>
+            <documentation value="Security Labels that define affected resources"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Period that this consent applies"/>
+         </searchParam>
+         <searchParam>
+            <name value="data"/>
+            <type value="reference"/>
+            <documentation value="The actual data reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="purpose"/>
+            <type value="token"/>
+            <documentation value="Context of activities for which the agreement is made"/>
+         </searchParam>
+         <searchParam>
+            <name value="source"/>
+            <type value="reference"/>
+            <documentation value="Source from which this consent is taken"/>
+         </searchParam>
+         <searchParam>
+            <name value="actor"/>
+            <type value="reference"/>
+            <documentation value="Resource for the actor (or group, by role)"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who the consent applies to"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="Custodian of the consent"/>
+         </searchParam>
+         <searchParam>
+            <name value="action"/>
+            <type value="token"/>
+            <documentation value="Actions controlled by this consent"/>
+         </searchParam>
+         <searchParam>
+            <name value="consentor"/>
+            <type value="reference"/>
+            <documentation value="Who is agreeing to the policy and exceptions"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Classification of the consent statement - for indexing/retrieval"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="draft | proposed | active | rejected | inactive | entered-in-error"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="175"/>
-         </extension>
          <type value="Device"/>
          <profile>
             <reference value="StructureDefinition/ehealth-device"/>
@@ -242,11 +883,82 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="Device:location"/>
+         <searchInclude value="Device:organization"/>
+         <searchInclude value="Device:patient"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="udi-di"/>
+            <type value="string"/>
+            <documentation value="The udi Device Identifier (DI)"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Instance id from manufacturer, owner, and others"/>
+         </searchParam>
+         <searchParam>
+            <name value="udi-carrier"/>
+            <type value="string"/>
+            <documentation value="UDI Barcode (RFID or other technology) string either in HRF format or AIDC format converted to base64 string."/>
+         </searchParam>
+         <searchParam>
+            <name value="device-name"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the Device.udi.name  or Device.type.coding.display or  Device.type.text"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="The type of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="Network address to contact device"/>
+         </searchParam>
+         <searchParam>
+            <name value="manufacturer"/>
+            <type value="string"/>
+            <documentation value="The manufacturer of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Patient information, if the resource is affixed to a person"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The organization responsible for the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="A location, where the resource is found"/>
+         </searchParam>
+         <searchParam>
+            <name value="model"/>
+            <type value="string"/>
+            <documentation value="The model of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="active | inactive | entered-in-error | unknown"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="31"/>
-         </extension>
          <type value="DeviceMetric"/>
          <profile>
             <reference value="StructureDefinition/ehealth-devicemetric"/>
@@ -270,11 +982,46 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="DeviceMetric:parent"/>
+         <searchInclude value="DeviceMetric:source"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="The identifier of the metric"/>
+         </searchParam>
+         <searchParam>
+            <name value="parent"/>
+            <type value="reference"/>
+            <documentation value="The parent DeviceMetric resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="source"/>
+            <type value="reference"/>
+            <documentation value="The device resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="The category of the metric"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="The component type"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="36"/>
-         </extension>
          <type value="DeviceUseStatement"/>
          <profile>
             <reference value="StructureDefinition/ehealth-deviceusestatement"/>
@@ -298,11 +1045,42 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="DeviceUseStatement:device"/>
+         <searchInclude value="DeviceUseStatement:patient"/>
+         <searchInclude value="DeviceUseStatement:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Search by identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Search by subject - a patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Search by subject"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="device"/>
+            <type value="reference"/>
+            <documentation value="Search by device"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="21"/>
-         </extension>
          <type value="DocumentReference"/>
          <profile>
             <reference value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
@@ -326,11 +1104,157 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="DocumentReference:authenticator"/>
+         <searchInclude value="DocumentReference:author"/>
+         <searchInclude value="DocumentReference:custodian"/>
+         <searchInclude value="DocumentReference:encounter"/>
+         <searchInclude value="DocumentReference:patient"/>
+         <searchInclude value="DocumentReference:related-ref"/>
+         <searchInclude value="DocumentReference:relatesto"/>
+         <searchInclude value="DocumentReference:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="securitylabel"/>
+            <type value="token"/>
+            <documentation value="Document security-tags"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who/what is the subject of the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="Human-readable description (title)"/>
+         </searchParam>
+         <searchParam>
+            <name value="language"/>
+            <type value="token"/>
+            <documentation value="Human language of the content (BCP-47)"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Kind of document (LOINC if possible)"/>
+         </searchParam>
+         <searchParam>
+            <name value="relation"/>
+            <type value="token"/>
+            <documentation value="replaces | transforms | signs | appends"/>
+         </searchParam>
+         <searchParam>
+            <name value="setting"/>
+            <type value="token"/>
+            <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who/what is the subject of the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="event"/>
+            <type value="token"/>
+            <documentation value="Main clinical acts documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="relationship"/>
+            <type value="composite"/>
+            <documentation value="Combination of relation and relatesTo"/>
+         </searchParam>
+         <searchParam>
+            <name value="authenticator"/>
+            <type value="reference"/>
+            <documentation value="Who/what authenticated the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="class"/>
+            <type value="token"/>
+            <documentation value="Categorization of document"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Master Version Specific Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Time of service that is being documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="related-id"/>
+            <type value="token"/>
+            <documentation value="Identifier of related objects or events"/>
+         </searchParam>
+         <searchParam>
+            <name value="custodian"/>
+            <type value="reference"/>
+            <documentation value="Organization which maintains the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="indexed"/>
+            <type value="date"/>
+            <documentation value="When this document reference was created"/>
+         </searchParam>
+         <searchParam>
+            <name value="author"/>
+            <type value="reference"/>
+            <documentation value="Who and/or what authored the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="created"/>
+            <type value="date"/>
+            <documentation value="Document creation time"/>
+         </searchParam>
+         <searchParam>
+            <name value="format"/>
+            <type value="token"/>
+            <documentation value="Format/content rules for the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Context of the document  content"/>
+         </searchParam>
+         <searchParam>
+            <name value="related-ref"/>
+            <type value="reference"/>
+            <documentation value="Related Resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="uri"/>
+            <documentation value="Uri where the data can be found"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="relatesto"/>
+            <type value="reference"/>
+            <documentation value="Target of the relationship"/>
+         </searchParam>
+         <searchParam>
+            <name value="facility"/>
+            <type value="token"/>
+            <documentation value="Kind of facility where patient was seen"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="current | superseded | entered-in-error"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="613"/>
-         </extension>
          <type value="EpisodeOfCare"/>
          <profile>
             <reference value="StructureDefinition/ehealth-episodeofcare"/>
@@ -350,11 +1274,63 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The provided date search value falls within the episode of care's period"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Business Identifier(s) relevant for this EpisodeOfCare"/>
+         </searchParam>
+         <searchParam>
+            <name value="condition"/>
+            <type value="reference"/>
+            <documentation value="Conditions/problems/diagnoses this episode of care is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="incomingreferral"/>
+            <type value="reference"/>
+            <documentation value="Incoming Referral Request"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="The patient who is the focus of this episode of care"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The organization that has assumed the specific responsibilities of this EpisodeOfCare"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type/class  - e.g. specialist referral, disease management"/>
+         </searchParam>
+         <searchParam>
+            <name value="care-manager"/>
+            <type value="reference"/>
+            <documentation value="Care manager/care co-ordinator for the patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the Episode of Care as provided (does not check the status history collection)"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="28"/>
-         </extension>
          <type value="Library"/>
          <profile>
             <reference value="StructureDefinition/ehealth-library"/>
@@ -378,11 +1354,109 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="Library:composed-of"/>
+         <searchInclude value="Library:depends-on"/>
+         <searchInclude value="Library:derived-from"/>
+         <searchInclude value="Library:predecessor"/>
+         <searchInclude value="Library:successor"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The library publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="derived-from"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="predecessor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="depends-on"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the library is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="topic"/>
+            <type value="token"/>
+            <documentation value="Topics associated with the module"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the library"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="38"/>
-         </extension>
          <type value="Media"/>
          <profile>
             <reference value="StructureDefinition/ehealth-media"/>
@@ -398,11 +1472,83 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="When Media was collected"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Identifier(s) for the image"/>
+         </searchParam>
+         <searchParam>
+            <name value="created"/>
+            <type value="date"/>
+            <documentation value="Date attachment was first created"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who/What this Media is a record of"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="photo | video | audio"/>
+         </searchParam>
+         <searchParam>
+            <name value="operator"/>
+            <type value="reference"/>
+            <documentation value="The person who generated the image"/>
+         </searchParam>
+         <searchParam>
+            <name value="site"/>
+            <type value="token"/>
+            <documentation value="Body part in media"/>
+         </searchParam>
+         <searchParam>
+            <name value="view"/>
+            <type value="token"/>
+            <documentation value="Imaging view, e.g. Lateral or Antero-posterior"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Procedure that caused this media to be created"/>
+         </searchParam>
+         <searchParam>
+            <name value="subtype"/>
+            <type value="token"/>
+            <documentation value="The type of acquisition equipment/process"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who/What this Media is a record of"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter / Episode associated with media"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="device"/>
+            <type value="reference"/>
+            <documentation value="Observing Device"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="32"/>
-         </extension>
          <type value="Observation"/>
          <profile>
             <reference value="StructureDefinition/ehealth-observation"/>
@@ -418,6 +1564,206 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-data-absent-reason"/>
+            <type value="token"/>
+            <documentation value="The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="The code of the observation type"/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-code-value-quantity"/>
+            <type value="composite"/>
+            <documentation value="Code and quantity value parameter pair, including in components"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-data-absent-reason"/>
+            <type value="token"/>
+            <documentation value="The reason why the expected value in the element Observation.component.value[x] is missing."/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="The subject that the observation is about"/>
+         </searchParam>
+         <searchParam>
+            <name value="value-concept"/>
+            <type value="token"/>
+            <documentation value="The value of the observation, if the value is a CodeableConcept"/>
+         </searchParam>
+         <searchParam>
+            <name value="value-date"/>
+            <type value="date"/>
+            <documentation value="The value of the observation, if the value is a date or period of time"/>
+         </searchParam>
+         <searchParam>
+            <name value="code-value-string"/>
+            <type value="composite"/>
+            <documentation value="Code and string value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-code-value-quantity"/>
+            <type value="composite"/>
+            <documentation value="Component code and component quantity value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Reference to the test or procedure request."/>
+         </searchParam>
+         <searchParam>
+            <name value="related"/>
+            <type value="composite"/>
+            <documentation value="Related Observations - search on related-type and related-target together"/>
+         </searchParam>
+         <searchParam>
+            <name value="code-value-date"/>
+            <type value="composite"/>
+            <documentation value="Code and date/time value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="The subject that the observation is about (if patient)"/>
+         </searchParam>
+         <searchParam>
+            <name value="specimen"/>
+            <type value="reference"/>
+            <documentation value="Specimen used for this observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="code-value-quantity"/>
+            <type value="composite"/>
+            <documentation value="Code and quantity value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-code"/>
+            <type value="token"/>
+            <documentation value="The component code of the observation type"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Healthcare event  (Episode-of-care or Encounter) related to the observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-code-value-concept"/>
+            <type value="composite"/>
+            <documentation value="Code and coded value parameter pair, including in components"/>
+         </searchParam>
+         <searchParam>
+            <name value="value-string"/>
+            <type value="string"/>
+            <documentation value="The value of the observation, if the value is a string, and also searches in CodeableConcept.text"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="The unique id for a particular observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="reference"/>
+            <documentation value="Who performed the observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-code"/>
+            <type value="token"/>
+            <documentation value="The code of the observation type or component type"/>
+         </searchParam>
+         <searchParam>
+            <name value="method"/>
+            <type value="token"/>
+            <documentation value="The method used for the observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="value-quantity"/>
+            <type value="quantity"/>
+            <documentation value="The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-value-quantity"/>
+            <type value="quantity"/>
+            <documentation value="The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+         </searchParam>
+         <searchParam>
+            <name value="data-absent-reason"/>
+            <type value="token"/>
+            <documentation value="The reason why the expected value in the element Observation.value[x] is missing."/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-value-quantity"/>
+            <type value="quantity"/>
+            <documentation value="The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Encounter related to the observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="related-type"/>
+            <type value="token"/>
+            <documentation value="has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"/>
+         </searchParam>
+         <searchParam>
+            <name value="related-target"/>
+            <type value="reference"/>
+            <documentation value="Resource that is related to this one"/>
+         </searchParam>
+         <searchParam>
+            <name value="code-value-concept"/>
+            <type value="composite"/>
+            <documentation value="Code and coded value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-code-value-concept"/>
+            <type value="composite"/>
+            <documentation value="Component code and component coded value parameter pair"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="component-value-concept"/>
+            <type value="token"/>
+            <documentation value="The value of the component observation, if the value is a CodeableConcept"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="The classification of the type of observation"/>
+         </searchParam>
+         <searchParam>
+            <name value="device"/>
+            <type value="reference"/>
+            <documentation value="The Device that generated the observation data."/>
+         </searchParam>
+         <searchParam>
+            <name value="combo-value-concept"/>
+            <type value="token"/>
+            <documentation value="The value or component value of the observation, if the value is a CodeableConcept"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The status of the observation"/>
+         </searchParam>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
@@ -515,9 +1861,6 @@
          </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="1372"/>
-         </extension>
          <type value="Organization"/>
          <profile>
             <reference value="StructureDefinition/ehealth-organization"/>
@@ -537,11 +1880,86 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="Organization:endpoint"/>
+         <searchInclude value="Organization:partof"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
+         </searchParam>
+         <searchParam>
+            <name value="partof"/>
+            <type value="reference"/>
+            <documentation value="An organization of which this organization forms a part"/>
+         </searchParam>
+         <searchParam>
+            <name value="address"/>
+            <type value="string"/>
+            <documentation value="A (part of the) address of the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-state"/>
+            <type value="string"/>
+            <documentation value="A state specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="A code for the type of organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-postalcode"/>
+            <type value="string"/>
+            <documentation value="A postal code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-country"/>
+            <type value="string"/>
+            <documentation value="A country specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="endpoint"/>
+            <type value="reference"/>
+            <documentation value="Technical endpoints providing access to services operated for the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="phonetic"/>
+            <type value="string"/>
+            <documentation value="A portion of the organization's name using some kind of phonetic matching algorithm"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-use"/>
+            <type value="token"/>
+            <documentation value="A use code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="A portion of the organization's name or alias"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-city"/>
+            <type value="string"/>
+            <documentation value="A city specified in an address"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="54"/>
-         </extension>
          <type value="PlanDefinition"/>
          <profile>
             <reference value="StructureDefinition/ehealth-plandefinition"/>
@@ -565,11 +1983,109 @@
          <conditionalCreate value="true"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="PlanDefinition:composed-of"/>
+         <searchInclude value="PlanDefinition:depends-on"/>
+         <searchInclude value="PlanDefinition:derived-from"/>
+         <searchInclude value="PlanDefinition:predecessor"/>
+         <searchInclude value="PlanDefinition:successor"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The plan definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derived-from"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="predecessor"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="depends-on"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
+         </searchParam>
+         <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the plan definition is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="topic"/>
+            <type value="token"/>
+            <documentation value="Topics associated with the module"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the plan definition"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="422"/>
-         </extension>
          <type value="Practitioner"/>
          <profile>
             <reference value="StructureDefinition/ehealth-practitioner"/>
@@ -589,11 +2105,104 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="given"/>
+            <type value="string"/>
+            <documentation value="A portion of the given name"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A practitioner's Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="address"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-state"/>
+            <type value="string"/>
+            <documentation value="A state specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="gender"/>
+            <type value="token"/>
+            <documentation value="Gender of the practitioner"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="Whether the practitioner record is active"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-postalcode"/>
+            <type value="string"/>
+            <documentation value="A postalCode specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-country"/>
+            <type value="string"/>
+            <documentation value="A country specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="phonetic"/>
+            <type value="string"/>
+            <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
+         </searchParam>
+         <searchParam>
+            <name value="phone"/>
+            <type value="token"/>
+            <documentation value="A value in a phone contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-use"/>
+            <type value="token"/>
+            <documentation value="A use code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="The value in any kind of contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-city"/>
+            <type value="string"/>
+            <documentation value="A city specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="communication"/>
+            <type value="token"/>
+            <documentation value="One of the languages that the practitioner can communicate with"/>
+         </searchParam>
+         <searchParam>
+            <name value="family"/>
+            <type value="string"/>
+            <documentation value="A portion of the family name"/>
+         </searchParam>
+         <searchParam>
+            <name value="email"/>
+            <type value="token"/>
+            <documentation value="A value in an email contact"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="58"/>
-         </extension>
          <type value="PractitionerRole"/>
          <profile>
             <reference value="StructureDefinition/ehealth-practitionerrole"/>
@@ -630,11 +2239,89 @@
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="PractitionerRole:endpoint"/>
+         <searchInclude value="PractitionerRole:location"/>
+         <searchInclude value="PractitionerRole:organization"/>
+         <searchInclude value="PractitionerRole:practitioner"/>
+         <searchInclude value="PractitionerRole:service"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A practitioner's Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="specialty"/>
+            <type value="token"/>
+            <documentation value="The practitioner has this specialty at an organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="role"/>
+            <type value="token"/>
+            <documentation value="The practitioner can perform this role at for the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="practitioner"/>
+            <type value="reference"/>
+            <documentation value="Practitioner that is able to provide the defined services for the organation"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="Whether this practitioner's record is in active use"/>
+         </searchParam>
+         <searchParam>
+            <name value="endpoint"/>
+            <type value="reference"/>
+            <documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
+         </searchParam>
+         <searchParam>
+            <name value="phone"/>
+            <type value="token"/>
+            <documentation value="A value in a phone contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="service"/>
+            <type value="reference"/>
+            <documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="One of the locations at which this practitioner provides care"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="The value in any kind of contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="email"/>
+            <type value="token"/>
+            <documentation value="A value in an email contact"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="63"/>
-         </extension>
          <type value="ProcedureRequest"/>
          <profile>
             <reference value="StructureDefinition/ehealth-procedurerequest"/>
@@ -651,11 +2338,118 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="authored"/>
+            <type value="date"/>
+            <documentation value="Date request signed"/>
+         </searchParam>
+         <searchParam>
+            <name value="requester"/>
+            <type value="reference"/>
+            <documentation value="Individual making the request"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Identifiers assigned to this order"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="What is being requested/ordered"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="reference"/>
+            <documentation value="Requested perfomer"/>
+         </searchParam>
+         <searchParam>
+            <name value="requisition"/>
+            <type value="token"/>
+            <documentation value="Composite Request ID"/>
+         </searchParam>
+         <searchParam>
+            <name value="replaces"/>
+            <type value="reference"/>
+            <documentation value="What request replaces"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Search by subject"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="An encounter in which this request is made"/>
+         </searchParam>
+         <searchParam>
+            <name value="occurrence"/>
+            <type value="date"/>
+            <documentation value="When procedure should occur"/>
+         </searchParam>
+         <searchParam>
+            <name value="priority"/>
+            <type value="token"/>
+            <documentation value="routine | urgent | asap | stat"/>
+         </searchParam>
+         <searchParam>
+            <name value="intent"/>
+            <type value="token"/>
+            <documentation value="proposal | plan | order +"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer-type"/>
+            <type value="token"/>
+            <documentation value="Performer role"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="What request fulfills"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Search by subject - a patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="specimen"/>
+            <type value="reference"/>
+            <documentation value="Specimen to be tested"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or Episode during which request was created"/>
+         </searchParam>
+         <searchParam>
+            <name value="definition"/>
+            <type value="reference"/>
+            <documentation value="Protocol or definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="body-site"/>
+            <type value="token"/>
+            <documentation value="Where procedure is going to be done"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="draft | active | suspended | completed | entered-in-error | cancelled"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="47"/>
-         </extension>
          <type value="Provenance"/>
          <profile>
             <reference value="StructureDefinition/ehealth-provenance"/>
@@ -668,11 +2462,73 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="entity-ref"/>
+            <type value="reference"/>
+            <documentation value="Identity of entity"/>
+         </searchParam>
+         <searchParam>
+            <name value="agent"/>
+            <type value="reference"/>
+            <documentation value="Who participated"/>
+         </searchParam>
+         <searchParam>
+            <name value="signature-type"/>
+            <type value="token"/>
+            <documentation value="Indication of the reason the entity signed the object(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="start"/>
+            <type value="date"/>
+            <documentation value="Starting time with inclusive boundary"/>
+         </searchParam>
+         <searchParam>
+            <name value="recorded"/>
+            <type value="date"/>
+            <documentation value="When the activity was recorded / updated"/>
+         </searchParam>
+         <searchParam>
+            <name value="target"/>
+            <type value="reference"/>
+            <documentation value="Target Reference(s) (usually version specific)"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Target Reference(s) (usually version specific)"/>
+         </searchParam>
+         <searchParam>
+            <name value="end"/>
+            <type value="date"/>
+            <documentation value="End time with inclusive boundary, if not ongoing"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="Where the activity occurred, if relevant"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="agent-role"/>
+            <type value="token"/>
+            <documentation value="What the agents role was"/>
+         </searchParam>
+         <searchParam>
+            <name value="entity-id"/>
+            <type value="token"/>
+            <documentation value="Identity of entity"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="167"/>
-         </extension>
          <type value="Questionnaire"/>
          <profile>
             <reference value="StructureDefinition/ehealth-questionnaire"/>
@@ -709,11 +2565,79 @@
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The questionnaire publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="A code that corresponds to one of its items in the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the questionnaire is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the questionnaire"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the questionnaire"/>
+         </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="29"/>
-         </extension>
          <type value="QuestionnaireResponse"/>
          <profile>
             <reference value="StructureDefinition/ehealth-questionnaireresponse"/>
@@ -729,6 +2653,71 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="authored"/>
+            <type value="date"/>
+            <documentation value="When the questionnaire response was last changed"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="The unique identifier for the questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="parent"/>
+            <type value="reference"/>
+            <documentation value="Procedure or observation this questionnaire response was performed as a part of"/>
+         </searchParam>
+         <searchParam>
+            <name value="questionnaire"/>
+            <type value="reference"/>
+            <documentation value="The questionnaire the answers are provided for"/>
+         </searchParam>
+         <searchParam>
+            <name value="author"/>
+            <type value="reference"/>
+            <documentation value="The author of the questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="The subject of the questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="source"/>
+            <type value="reference"/>
+            <documentation value="The individual providing the information reflected in the questionnaire respose"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Plan/proposal/order fulfilled by this questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="The patient that is the subject of the questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode associated with the questionnaire response"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The status of the questionnaire response"/>
+         </searchParam>
       </resource>
       <resource>
          <type value="StructureDefinition"/>
@@ -864,9 +2853,6 @@
          </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="45"/>
-         </extension>
          <type value="Task"/>
          <profile>
             <reference value="StructureDefinition/ehealth-task"/>
@@ -886,6 +2872,126 @@
          <versioning value="versioned-update"/>
          <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
+         <searchInclude value="*"/>
+         <searchInclude value="Task:based-on"/>
+         <searchInclude value="Task:context"/>
+         <searchInclude value="Task:focus"/>
+         <searchInclude value="Task:organization"/>
+         <searchInclude value="Task:owner"/>
+         <searchInclude value="Task:part-of"/>
+         <searchInclude value="Task:patient"/>
+         <searchInclude value="Task:requester"/>
+         <searchInclude value="Task:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="owner"/>
+            <type value="reference"/>
+            <documentation value="Search by task owner"/>
+         </searchParam>
+         <searchParam>
+            <name value="requester"/>
+            <type value="reference"/>
+            <documentation value="Search by task requester"/>
+         </searchParam>
+         <searchParam>
+            <name value="business-status"/>
+            <type value="token"/>
+            <documentation value="Search by business status"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Search for a task instance by its business identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Search by period Task is/was underway"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Search by task code"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="token"/>
+            <documentation value="Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Search by subject"/>
+         </searchParam>
+         <searchParam>
+            <name value="focus"/>
+            <type value="reference"/>
+            <documentation value="Search by task focus"/>
+         </searchParam>
+         <searchParam>
+            <name value="part-of"/>
+            <type value="reference"/>
+            <documentation value="Search by task this task is part of"/>
+         </searchParam>
+         <searchParam>
+            <name value="authored-on"/>
+            <type value="date"/>
+            <documentation value="Search by creation date"/>
+         </searchParam>
+         <searchParam>
+            <name value="priority"/>
+            <type value="token"/>
+            <documentation value="Search by task priority"/>
+         </searchParam>
+         <searchParam>
+            <name value="intent"/>
+            <type value="token"/>
+            <documentation value="Search by task intent"/>
+         </searchParam>
+         <searchParam>
+            <name value="group-identifier"/>
+            <type value="token"/>
+            <documentation value="Search by group identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Search by requests this task is based on"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Search by patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="Search by responsible organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Search by encounter or episode"/>
+         </searchParam>
+         <searchParam>
+            <name value="modified"/>
+            <type value="date"/>
+            <documentation value="Search by last modification date"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="Search by task status"/>
+         </searchParam>
       </resource>
       <interaction>
          <code value="history-system"/>
@@ -936,18 +3042,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="submit-measurement"/>
-         <definition>
-            <reference value="OperationDefinition/-s-submit-measurement"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="search-measurements"/>
-         <definition>
-            <reference value="OperationDefinition/-s-search-measurements"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="create-episode-of-care"/>
          <definition>
             <reference value="OperationDefinition/-s-create-episode-of-care"/>
@@ -957,6 +3051,18 @@
          <name value="search-organization-and-practitioner-external"/>
          <definition>
             <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="submit-measurement"/>
+         <definition>
+            <reference value="OperationDefinition/-s-submit-measurement"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-measurements"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-measurements"/>
          </definition>
       </operation>
       <operation>
@@ -986,13 +3092,13 @@
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta"/>
+            <reference value="OperationDefinition/CareTeam--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--meta"/>
+            <reference value="OperationDefinition/CareTeam-i-meta"/>
          </definition>
       </operation>
       <operation>
@@ -1058,13 +3164,13 @@
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-meta"/>
+            <reference value="OperationDefinition/PractitionerRole--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole--meta"/>
+            <reference value="OperationDefinition/PractitionerRole-i-meta"/>
          </definition>
       </operation>
       <operation>
@@ -1106,13 +3212,13 @@
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/Questionnaire-i-meta"/>
+            <reference value="OperationDefinition/Questionnaire--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/Questionnaire--meta"/>
+            <reference value="OperationDefinition/Questionnaire-i-meta"/>
          </definition>
       </operation>
       <operation>
