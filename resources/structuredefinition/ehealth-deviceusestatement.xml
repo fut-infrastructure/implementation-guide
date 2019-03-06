@@ -46,6 +46,10 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
       </type>
     </element>
+    <element id="DeviceUseStatement.note">
+      <path value="DeviceUseStatement.note" />
+      <short value="Additional details (comments, instructions)" />
+    </element>
     <element id="DeviceUseStatement.note.author[x]">
       <path value="DeviceUseStatement.note.author[x]" />
       <type>
