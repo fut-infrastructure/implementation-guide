@@ -94,7 +94,7 @@
     </element>
     <element id="PlanDefinition.relatedArtifact">
       <path value="PlanDefinition.relatedArtifact" />
-      <comment value="Each related artifact is either an attachment, or a reference to another resource, but not both. The relatedArtifiact.resource attribute can be used to specify a DocumentReference resource." />
+      <definition value="Related artifacts such as additional documentation, justification, or bibliographic references. Each related artifact is either an attachment, or a reference to another resource, but not both. The relatedArtifact.resource attribute can be used to specify a DocumentReference resource." />
     </element>
     <element id="PlanDefinition.library">
       <path value="PlanDefinition.library" />

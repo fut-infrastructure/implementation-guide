@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-functionalCapacity" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
-  <id value="ehealth-functionalCapacity"/>
-  <name value="FSIIIFunctioncalCapacity" />
-  <title value="eHealth FunctionalCapacity" />
+  <name value="Functioncal Capacity" />
   <status value="draft" />
-  <publisher value="ehealth.sundhed.dk" />
+  <description value="Describes the functional capacity of a patient. This extension is a generic construct in the sense that only one the group *ValueSet* is specified. This means that the selected *code.coding.code* in this construct MUST contain a value from the selected *ValueSet* in group.coding.code. An optional score can be given to the *code.coding.code* in the score.coding.code" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -17,34 +16,204 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
       <constraint>
-        <key value="ext-1" />
+        <key value="group-code-requirement" />
         <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+        <human value="Validates that the valueset selected in group is the one that is present in code.system" />
+        <expression value="extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity').extension('group').value.code~extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity').extension('code').value.system" />
       </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:group">
+      <path value="Extension.extension" />
+      <sliceName value="group" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:group.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="group" />
+    </element>
+    <element id="Extension.extension:group.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:group.value[x]:valueCoding.code">
+      <path value="Extension.extension.valueCoding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:code">
+      <path value="Extension.extension" />
+      <sliceName value="code" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:code.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="code" />
+    </element>
+    <element id="Extension.extension:code.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:code.value[x]:valueCoding.system">
+      <path value="Extension.extension.valueCoding.system" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:score">
+      <path value="Extension.extension" />
+      <sliceName value="score" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:score.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="score" />
+    </element>
+    <element id="Extension.extension:score.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <min value="1" />
+      <type>
+        <code value="Coding" />
+      </type>
+    </element>
+    <element id="Extension.extension:score.value[x]:valueCoding.system">
+      <path value="Extension.extension.valueCoding.system" />
+      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+      <type>
+        <code value="base64Binary" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="date" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="id" />
+      </type>
+      <type>
+        <code value="instant" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="markdown" />
+      </type>
+      <type>
+        <code value="oid" />
+      </type>
+      <type>
+        <code value="positiveInt" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="unsignedInt" />
+      </type>
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="Address" />
+      </type>
+      <type>
+        <code value="Age" />
+      </type>
+      <type>
+        <code value="Annotation" />
+      </type>
+      <type>
+        <code value="Attachment" />
+      </type>
       <type>
         <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="required" />
-        <description value="http://www.fs3.nu/filer/Dokumenter/Klassifikation/FSIII%20Beskrivelse%20af%20funktionsevnetilstande%20(Servicelov).pdf" />
-      </binding>
+      <type>
+        <code value="Coding" />
+      </type>
+      <type>
+        <code value="ContactPoint" />
+      </type>
+      <type>
+        <code value="Count" />
+      </type>
+      <type>
+        <code value="Distance" />
+      </type>
+      <type>
+        <code value="Duration" />
+      </type>
+      <type>
+        <code value="HumanName" />
+      </type>
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Money" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="SampledData" />
+      </type>
+      <type>
+        <code value="Signature" />
+      </type>
+      <type>
+        <code value="Timing" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

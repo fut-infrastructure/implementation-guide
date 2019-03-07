@@ -32,9 +32,13 @@
             </valueCoding>
         </extension>
         <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code">
-            <valueCoding>
-                <code value='DK-82'/>
-            </valueCoding>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
+                    <code value="DK-82"/>
+                    <display value="Midtjylland"/>
+                </coding>
+            </valueCodeableConcept>
         </extension>
         <use value="home" />
         <line value="Hjemplads 42" />
@@ -48,9 +52,13 @@
             </valueCoding>
         </extension>
         <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code">
-            <valueCoding>
-                <code value='DK-82'/>
-            </valueCoding>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
+                    <code value="DK-82"/>
+                    <display value="Midtjylland"/>
+                </coding>
+            </valueCodeableConcept>
         </extension>
         <use value="temp" />
         <line value="Europaplads 2" />

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ssn-identifier" />
-  <id value="ehealth-ssn-identifier"/>
-  <name value="SSN Identifier" />
-  <title value="eHealth SSN Identifier" />
+  <id value="ehealth-dk-crn-identifier" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dk-crn-identifier" />
+  <name value="DK CRN Identifier" />
+  <title value="eHealth Danish Civil Registration Number" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This structure holds the danish CPR identifier" />
+  <description value="This structure holds the danish *civil registration number* (CRN) identifier" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -27,10 +27,10 @@
       <path value="Identifier.value" />
       <min value="1" />
       <constraint>
-        <key value="ssn" />
-        <requirements value="Requirement of danish social security numbers" />
+        <key value="crn" />
+        <requirements value="Requirement of danish civil registration numbers" />
         <severity value="error" />
-        <human value="Requirement of danish social security numbers" />
+        <human value="Requirement of danish civil registration numbers" />
         <expression value="value.matches('^[0-9]{10}$')" />
       </constraint>
       <mustSupport value="false" />

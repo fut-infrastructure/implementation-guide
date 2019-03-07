@@ -81,6 +81,10 @@
       <path value="DeviceMetric.parent" />
       <max value="0" />
     </element>
+    <element id="DeviceMetric.calibration">
+      <path value="DeviceMetric.calibration" />
+      <short value="Describes the calibrations that have been performed or that are required to be performed." />
+    </element>
     <element id="DeviceMetric.calibration.extension">
       <path value="DeviceMetric.calibration.extension" />
       <slicing>
@@ -91,10 +95,12 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="DeviceMetric.calibration.extension:expires">
+    <element id="DeviceMetric.calibration.extension:calibrationExpires">
       <path value="DeviceMetric.calibration.extension" />
-      <sliceName value="expires" />
+      <sliceName value="calibrationExpires" />
+      <short value="Date when the current calibration expires." />
       <definition value="Date when the current calibration expires and recalibration is required." />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />

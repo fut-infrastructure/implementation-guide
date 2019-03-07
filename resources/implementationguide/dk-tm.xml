@@ -164,113 +164,17 @@
     <!-- Structure definitions-->
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-activitydefinition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-appointment"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-appointmentresponse"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-provenance"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ssn-identifier"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-related-person"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-patient"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-authorizationTime"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-referencetype"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-identifier"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-reference-description"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-correspondance-address"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-message"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-correspondance"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-itcompetencelevel"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-patient-contactnote"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-patient-relatedPerson"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-address"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-regionalSubdivisionCode"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-generalHealthCondition"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-ext-functionalCapacity"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-activitydefinition"/>
       </sourceReference>
     </resource>
     <resource>
@@ -295,7 +199,17 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-condition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-consent"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-correspondance"/>
       </sourceReference>
     </resource>
     <resource>
@@ -330,12 +244,22 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-message"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-observation"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-organization"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-patient"/>
       </sourceReference>
     </resource>
     <resource>
@@ -360,6 +284,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-provenance"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-questionnaire"/>
       </sourceReference>
     </resource>
@@ -370,9 +299,21 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-related-person"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-dk-crn-identifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-task"/>
       </sourceReference>
     </resource>
+
+    <!-- Extensions -->
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-activitydefinition-minimumQuality"/>
@@ -380,7 +321,17 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-address"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-author"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-authorizationTime"/>
       </sourceReference>
     </resource>
     <resource>
@@ -401,6 +352,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisionrule"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-correspondance-address"/>
       </sourceReference>
     </resource>
     <resource>
@@ -449,8 +405,29 @@
       </sourceReference>
     </resource>
     <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-functionalCapacity"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-generalHealthCondition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-identifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-intendedaudience"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-itcompetencelevel"/>
       </sourceReference>
     </resource>
     <resource>
@@ -466,6 +443,21 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-library-parametername"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-patient-contactnote"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-referencetype"/>
       </sourceReference>
     </resource>
     <resource>
@@ -545,6 +537,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-regionalSubdivisionCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-questionnaire-reusecriteria"/>
       </sourceReference>
     </resource>
@@ -561,6 +558,16 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-referencerange"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-reference-description"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-patient-relatedPerson"/>
       </sourceReference>
     </resource>
     <resource>
@@ -790,6 +797,16 @@
         <reference value="CodeSystem/npu"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-message-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-message-medium"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
@@ -912,6 +929,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-clinicalimpression-finding-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-conditions"/>
       </sourceReference>
     </resource>
     <resource>

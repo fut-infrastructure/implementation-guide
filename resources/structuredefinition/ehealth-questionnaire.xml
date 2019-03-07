@@ -100,6 +100,10 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types" />
       </binding>
     </element>
+    <element id="Questionnaire.item">
+      <path value="Questionnaire.item" />
+      <short value="Questions and sections within the Questionnaire" />
+    </element>
     <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>

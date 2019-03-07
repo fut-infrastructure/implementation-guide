@@ -21,6 +21,10 @@
       <path value="CareTeam.name" />
       <min value="1" />
     </element>
+    <element id="CareTeam.participant">
+      <path value="CareTeam.participant" />
+      <short value="Members of the team" />
+    </element>
     <element id="CareTeam.participant.role">
       <path value="CareTeam.participant.role" />
       <min value="1" />

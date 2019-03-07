@@ -70,25 +70,20 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="ClinicalImpression.investigation">
+      <path value="ClinicalImpression.investigation" />
+      <short value="One or more sets of investigations (signs, symptions, etc.)" />
+    </element>
     <element id="ClinicalImpression.investigation.extension:decisionRule">
       <path value="ClinicalImpression.investigation.extension" />
       <sliceName value="decisionRule" />
+      <short value="Decision rule." />
+      <definition value="Decision rule." />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
-      </type>
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
-      <path value="ClinicalImpression.investigation.extension.extension" />
-      <sliceName value="outputParameters" />
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters.valueReference:valueReference">
-      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
-        <aggregation value="contained" />
       </type>
     </element>
     <element id="ClinicalImpression.investigation.item">
@@ -129,7 +124,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
       </type>
       <type>
         <code value="Reference" />
@@ -165,6 +160,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
       </type>
+    </element>
+    <element id="ClinicalImpression.note">
+      <path value="ClinicalImpression.note" />
+      <short value="Comments made about the ClinicalImpression." />
     </element>
     <element id="ClinicalImpression.note.author[x]">
       <path value="ClinicalImpression.note.author[x]" />

@@ -33,6 +33,6 @@
     </identifier>
   </sender>
   <payload>
-    <contentString value="Det er blevet tid til indberetning af blodtryk"/>
+    <contentString value="Du har modtaget en ny Besked. Benyt dit system til telemedicin for at læse beskeden."/>
   </payload>
 </Communication>

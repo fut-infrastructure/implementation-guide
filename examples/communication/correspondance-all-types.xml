@@ -5,7 +5,7 @@
   </meta>
   <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime">
     <valueDateTime value="2013-06-08T09:57:34.211Z"/>
-  </extension>>
+  </extension>
   <identifier>
     <system value='http://ehealth.sundhed.dk/correspondance-envelope-identifier'/>
     <value value='123'/>

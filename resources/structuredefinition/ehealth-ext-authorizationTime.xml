@@ -3,9 +3,9 @@
   <id value="ehealth-authorizationTime" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-authorizationTime" />
   <name value="AuthorizationTime" />
-  <title value="eHealth AuthorizationTime" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
+  <description value="Contains date and time of authorization" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

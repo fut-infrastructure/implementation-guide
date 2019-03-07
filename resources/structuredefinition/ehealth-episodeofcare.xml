@@ -74,6 +74,14 @@
       <path value="EpisodeOfCare.diagnosis" />
       <min value="1" />
     </element>
+    <element id="EpisodeOfCare.diagnosis.condition">
+      <path value="EpisodeOfCare.diagnosis.condition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+        <aggregation value="contained" />
+      </type>
+    </element>
     <element id="EpisodeOfCare.patient">
       <path value="EpisodeOfCare.patient" />
       <type>
