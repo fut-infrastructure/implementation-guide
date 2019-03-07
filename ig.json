@@ -60,7 +60,7 @@
       "tx"
     ],
     "pre-process" : [{
-      "folder" : "exampleOperations/activitydefinition",
+      "folder" : "exampleOperations",
       "relativePath" : "_includes"
    }]
   }

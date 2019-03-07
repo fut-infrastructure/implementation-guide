@@ -1,14 +1,17 @@
-PUT [base]/ActivityDefinition/3360
+`PUT [base]/ActivityDefinition/3360`
 
-HEADER:
+__Header__
+```
 Accept-Charset: utf-8
 If-Match: "1"
 Accept: application/fhir+xml;q=1.0, application/xml+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.6.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+xml; charset=UTF-8
+```
 
-BODY:
+__Body__
+```
 <ActivityDefinition xmlns="http://hl7.org/fhir">
    <id value="3360"/>
    <meta>
@@ -33,9 +36,10 @@ BODY:
       <text value="a380764b-0516-4f5e-9252-6e174a20f134"/>
    </topic>
 </ActivityDefinition>
+```
 
-
-Response:
+__Response__
+```
 <ActivityDefinition xmlns="http://hl7.org/fhir">
    <id value="3360"/>
    <meta>
@@ -60,3 +64,4 @@ Response:
       <text value="a380764b-0516-4f5e-9252-6e174a20f134"/>
    </topic>
 </ActivityDefinition>
+```
