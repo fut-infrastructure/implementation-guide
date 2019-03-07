@@ -113,6 +113,13 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
+    <element id="ProcedureRequest.requester.onBehalfOf">
+      <path value="ProcedureRequest.requester.onBehalfOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
     <element id="ProcedureRequest.performer">
       <path value="ProcedureRequest.performer" />
       <type>

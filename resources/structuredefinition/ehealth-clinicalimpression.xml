@@ -60,6 +60,17 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression" />
       </type>
     </element>
+    <element id="ClinicalImpression.problem">
+      <path value="ClinicalImpression.problem" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+      </type>
+    </element>
     <element id="ClinicalImpression.investigation.extension">
       <path value="ClinicalImpression.investigation.extension" />
       <slicing>
@@ -158,7 +169,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
       </type>
     </element>
     <element id="ClinicalImpression.note">

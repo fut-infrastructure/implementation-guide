@@ -121,7 +121,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent" />
       </type>
       <type>
         <code value="Reference" />
