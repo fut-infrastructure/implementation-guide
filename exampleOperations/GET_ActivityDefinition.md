@@ -1,14 +1,15 @@
-GET [base]/ActivityDefinition/3344
+`GET [base]/ActivityDefinition/3344`
 
-HEADER:
+__Header__
+```
 Accept-Charset: utf-8
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.6.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
+```
 
-
-
-Response:
+__Response__
+```json
 {
   "resourceType": "ActivityDefinition",
   "id": "3344",
@@ -94,3 +95,4 @@ Response:
     }
   ]
 }
+```

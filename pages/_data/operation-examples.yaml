@@ -1,2 +1,8 @@
 - profile: ehealth-activitydefinition
   path: GET_ActivityDefinition.md
+
+- profile: ehealth-activitydefinition
+  path: GET_ActivityDefinition_version.md
+
+- profile: ehealth-activitydefinition
+  path: PUT_ActivityDefinition.md
