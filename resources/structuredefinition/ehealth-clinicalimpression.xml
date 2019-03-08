@@ -81,6 +81,10 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="ClinicalImpression.investigation">
+      <path value="ClinicalImpression.investigation" />
+      <short value="One or more sets of investigations (signs, symptions, etc.)" />
+    </element>
     <element id="ClinicalImpression.investigation.extension:decisionRule">
       <path value="ClinicalImpression.investigation.extension" />
       <sliceName value="decisionRule" />
