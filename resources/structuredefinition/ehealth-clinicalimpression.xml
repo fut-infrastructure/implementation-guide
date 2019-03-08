@@ -177,6 +177,10 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
       </type>
     </element>
+    <element id="ClinicalImpression.note">
+      <path value="ClinicalImpression.note" />
+      <short value="Comments made about the ClinicalImpression." />
+    </element>
     <element id="ClinicalImpression.note.author[x]">
       <path value="ClinicalImpression.note.author[x]" />
       <type>
