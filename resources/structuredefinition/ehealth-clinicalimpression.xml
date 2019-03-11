@@ -61,15 +61,19 @@
       </type>
     </element>
     <element id="ClinicalImpression.problem">
-      <path value="ClinicalImpression.problem" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
-      </type>
+       <path value="ClinicalImpression.problem" />
+          <type>
+              <code value="Reference" />
+              <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+          </type>
+          <type>
+              <code value="Reference" />
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+          </type>
+      </element>
+    <element id="ClinicalImpression.investigation">
+      <path value="ClinicalImpression.investigation" />
+      <short value="One or more sets of investigations (signs, symptoms, etc.)" />
     </element>
     <element id="ClinicalImpression.investigation.extension">
       <path value="ClinicalImpression.investigation.extension" />
@@ -84,6 +88,7 @@
     <element id="ClinicalImpression.investigation.extension:decisionRule">
       <path value="ClinicalImpression.investigation.extension" />
       <sliceName value="decisionRule" />
+      <short value="Decision rule." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
