@@ -19,21 +19,21 @@ SEARCHPARAMS=searchparameter/*.xml
 for f in $CODESYSTEMS
 do
   echo "*** Uploading code system $f..."
-  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/CodeSystem/
+  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/CodeSystem/
 done
 for f in $VALUESETS
 do
   echo "*** Uploading value set $f..."
-  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/ValueSet/
+  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/ValueSet/
 done
 for f in $PROFILES
 do
   echo "*** Uploading profile $f..."
-  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/StructureDefinition/?add_snapshot=true
+  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/StructureDefinition/?add_snapshot=true
 #  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/StructureDefinition/
 done
 for f in $SEARCHPARAMS
 do
   echo "*** Uploading search parameter $f..."
-  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/baseDstu3/SearchParameter/
+  curl -X POST -H "Content-type: application/fhir+xml" -d @$f  $1/SearchParameter/
 done
