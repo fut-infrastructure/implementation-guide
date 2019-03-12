@@ -1,8 +1,261 @@
+# ehealth-activitydefinition
 - profile: ehealth-activitydefinition
   path: GET_ActivityDefinition.md
+
+- profile: ehealth-activitydefinition
+  path: GET_ActivityDefinition_search.md
 
 - profile: ehealth-activitydefinition
   path: GET_ActivityDefinition_version.md
 
 - profile: ehealth-activitydefinition
+  path: POST_ActivityDefinition.md
+
+- profile: ehealth-activitydefinition
   path: PUT_ActivityDefinition.md
+
+# ehealth-careplan
+- profile: ehealth-careplan
+  path: GET_CarePlan_search.md
+
+- profile: ehealth-careplan
+  path: GET_CarePlan_version.md
+
+- profile: ehealth-careplan
+  path: PUT_CarePlan.md
+
+# ehealth-careteam
+- profile: ehealth-careteam
+  path: DELETE_CareTeam.md
+
+- profile: ehealth-careteam
+  path: GET_CareTeam_search.md
+
+- profile: ehealth-careteam
+  path: GET_CareTeam_version.md
+
+- profile: ehealth-careteam
+  path: POST_CareTeam.md
+
+- profile: ehealth-careteam
+  path: PUT_CareTeam.md
+
+# ehealth-clinicalimpression
+- profile: ehealth-clinicalimpression
+  path: GET_ClinicalImpression_search.md
+
+- profile: ehealth-clinicalimpression
+  path: GET_ClinicalImpression_version.md
+
+- profile: ehealth-clinicalimpression
+  path: POST_ClinicalImpression.md
+
+- profile: ehealth-clinicalimpression
+  path: PUT_ClinicalImpression.md
+
+# ehealth-communication
+- profile: ehealth-communication
+  path: GET_Communication_search.md
+
+- profile: ehealth-communication
+  path: GET_Communication_version.md
+
+- profile: ehealth-communication
+  path: POST_Communication.md
+
+- profile: ehealth-communication
+  path: PUT_Communication.md
+
+# ehealth-condition
+- profile: ehealth-condition
+  path: GET_Condition_search.md
+
+- profile: ehealth-condition
+  path: GET_Condition_version.md
+
+# ehealth-consent
+- profile: ehealth-consent
+  path: GET_Consent_search.md
+
+- profile: ehealth-consent
+  path: GET_Consent_version.md
+
+- profile: ehealth-consent
+  path: POST_Consent.md
+
+- profile: ehealth-consent
+  path: PUT_Consent.md
+
+# ehealth-device
+- profile: ehealth-device
+  path: GET_Device_search.md
+
+- profile: ehealth-device
+  path: GET_Device_version.md
+
+- profile: ehealth-device
+  path: POST_Device.md
+
+- profile: ehealth-device
+  path: PUT_Device.md
+
+# ehealth-devicemetric
+- profile: ehealth-devicemetric
+  path: GET_DeviceMetric_search.md
+
+- profile: ehealth-devicemetric
+  path: GET_DeviceMetric_version.md
+
+- profile: ehealth-devicemetric
+  path: POST_DeviceMetric.md
+
+- profile: ehealth-devicemetric
+  path: PUT_DeviceMetric.md
+
+# ehealth-deviceUseStatement
+- profile: ehealth-deviceUseStatement
+  path: GET_DeviceUseStatement_search.md
+
+- profile: ehealth-deviceUseStatement
+  path: GET_DeviceUseStatement_version.md
+
+- profile: ehealth-deviceUseStatement
+  path: POST_DeviceUseStatement.md
+
+- profile: ehealth-deviceUseStatement
+  path: PUT_DeviceUseStatement.md
+
+#
+# GET_DocumentReference_search.md
+# GET_DocumentReference_version.md
+# POST_DocumentReference.md
+# PUT_DocumentReference.md
+#
+
+# ehealth-episodeofcare
+- profile: ehealth-episodeofcare
+  path: GET_EpisodeOfCare_search.md
+
+- profile: ehealth-episodeofcare
+  path: GET_EpisodeOfCare_version.md
+
+- profile: ehealth-episodeofcare
+  path: PUT_EpisodeOfCare.md
+
+# ehealth-library
+- profile: ehealth-library
+  path: GET_Library_search.md
+
+- profile: ehealth-library
+  path: GET_Library_version.md
+
+- profile: ehealth-library
+  path: POST_Library.md
+
+- profile: ehealth-library
+  path: PUT_Library.md
+
+# ehealth-media
+- profile: ehealth-media
+  path: GET_Media_search.md
+
+- profile: ehealth-media
+  path: GET_Media_version.md
+
+# ehealth-observation
+- profile: ehealth-observation
+  path: GET_Observation_search.md
+
+- profile: ehealth-observation
+  path: GET_Observation_version.md
+
+# ehealth-organization
+- profile: ehealth-organization
+  path: GET_Organization_search.md
+
+- profile: ehealth-organization
+  path: GET_Organization_version.md
+
+- profile: ehealth-organization
+  path: POST_Organization.md
+
+- profile: ehealth-organization
+  path: PUT_Organization.md
+
+# ehealth-plandefinition
+- profile: ehealth-plandefinition
+  path: GET_PlanDefinition_search.md
+
+- profile: ehealth-plandefinition
+  path: GET_PlanDefinition_version.md
+
+- profile: ehealth-plandefinition
+  path: POST_PlanDefinition.md
+
+- profile: ehealth-plandefinition
+  path: PUT_PlanDefinition.md
+
+# ehealth-practitioner
+- profile: ehealth-practitioner
+  path: GET_Practitioner_search.md
+
+- profile: ehealth-practitioner
+  path: GET_Practitioner_version.md
+
+- profile: ehealth-practitioner
+  path: POST_Practitioner.md
+
+- profile: ehealth-practitioner
+  path: PUT_Practitioner.md
+
+# ehealth-practitionerRole
+- profile: ehealth-practitionerRole
+  path: DELETE_PractitionerRole.md
+
+- profile: ehealth-practitionerRole
+  path: GET_PractitionerRole_search.md
+
+- profile: ehealth-practitionerRole
+  path: GET_PractitionerRole_version.md
+
+- profile: ehealth-practitionerRole
+  path: POST_PractitionerRole.md
+
+- profile: ehealth-practitionerRole
+  path: PUT_PractitionerRole.md
+
+# ehealth-procedurerequest
+- profile: ehealth-procedurerequest
+  path: GET_ProcedureRequest_version.md
+
+- profile: ehealth-procedurerequest
+  path: PUT_ProcedureRequest.md
+
+# ehealth-provenance
+- profile: ehealth-provenance
+  path: GET_Provenance_version.md
+
+# ehealth-questionnaire
+- profile: ehealth-questionnaire
+  path: DELETE_Questionnaire.md
+
+- profile: ehealth-questionnaire
+  path: GET_Questionnaire_search.md
+
+- profile: ehealth-questionnaire
+  path: GET_Questionnaire_version.md
+
+- profile: ehealth-questionnaire
+  path: POST_Questionnaire.md
+
+- profile: ehealth-questionnaire
+  path: PUT_Questionnaire.md
+
+# ehealth-questionnaireresponse
+- profile: ehealth-questionnaireresponse
+  path: GET_QuestionnaireResponse_version.md
+
+
+
+# ehealth-relatedperson
+# ehealth-task

@@ -1,50 +1,28 @@
-`GET [base]/ActivityDefinition/3344`
+`GET [base]/ActivityDefinition/3683`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.6.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
+
+
 
 __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "3344",
+  "id": "3683",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-03-01T13:25:05.612+00:00",
+    "lastUpdated": "2019-03-11T13:25:57.410+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
   },
   "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
-      "valueCoding": {
-        "code": "RecomCode"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner",
-      "valueReference": {
-        "reference": "Organization/3342"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author",
-      "valueReference": {
-        "reference": "Practitioner/3341"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "Organization/3343"
-      }
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange",
       "extension": [
@@ -84,14 +62,38 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCoding": {
+        "code": "RecomCode"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner",
+      "valueReference": {
+        "reference": "Organization/3681"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author",
+      "valueReference": {
+        "reference": "Practitioner/3680"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "Organization/3682"
+      }
     }
   ],
-  "version": "676985e4-9471-4203-ac1a-79478467a4f1",
-  "name": "ebf79623-8b19-400d-9044-544242069bc5",
+  "version": "f3b0f5d6-52c8-4391-9e69-1ba853a5ee58",
+  "name": "e3711c2c-b0c6-41db-b953-7c4fc4120478",
   "status": "active",
   "topic": [
     {
-      "text": "7c1e11a4-2253-4d19-a20d-ec9432b825ae"
+      "text": "eb983e96-0f7a-4c84-96d5-e639d124ffbe"
     }
   ]
 }

@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition/3708/_history/2`
+`GET [base]/PlanDefinition/4343/_history/2`
 
 __Header__
 ```
@@ -13,36 +13,30 @@ Accept-Encoding: gzip
 __Response__
 ```json
 {
-  "resourceType": "ActivityDefinition",
-  "id": "3708",
+  "resourceType": "PlanDefinition",
+  "id": "4343",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-03-11T13:26:02.833+00:00",
+    "lastUpdated": "2019-03-11T13:28:00.960+00:00",
     "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
   },
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner",
       "valueReference": {
-        "reference": "Organization/3707"
+        "reference": "Organization/4342"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author",
       "valueReference": {
-        "reference": "Practitioner/3706"
+        "reference": "Practitioner/4341"
       }
     }
   ],
-  "version": "cdc6494d-6280-4aab-9338-b78ef579cbd7",
-  "name": "8926a185-d620-44c3-8844-2257ecbd7f73",
-  "status": "active",
-  "topic": [
-    {
-      "text": "ccb5b624-fb12-4ff2-911a-357ee47b41fd"
-    }
-  ]
+  "version": "hest",
+  "status": "active"
 }
 ```
