@@ -101,6 +101,7 @@
       "http://ehealth.sundhed.dk/vs/careplan-status",
       "http://ehealth.sundhed.dk/vs/careteam-category",
       "http://ehealth.sundhed.dk/vs/careteam-participant-role",
+      "http://ehealth.sundhed.dk/vs/conditions",
       "http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes",
       "http://ehealth.sundhed.dk/vs/consent-category",
       "http://ehealth.sundhed.dk/vs/contactpoint-custodian",

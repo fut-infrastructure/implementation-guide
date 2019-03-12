@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="ehealth" />
+   <id value="ehealth"/>
    <status value="active"/>
-   <date value="2019-03-06T12:28:40+00:00"/>
+   <date value="2019-03-12T14:33:02+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -21,7 +21,7 @@
       <resource>
          <type value="ActivityDefinition"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-activitydefinition"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -152,7 +152,7 @@
       <resource>
          <type value="CarePlan"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-careplan"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -288,7 +288,7 @@
       <resource>
          <type value="CareTeam"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-careteam"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -395,7 +395,7 @@
       <resource>
          <type value="ClinicalImpression"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-clinicalimpression"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -505,7 +505,7 @@
       <resource>
          <type value="Communication"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-communication"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -757,7 +757,7 @@
       <resource>
          <type value="Consent"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-consent"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -862,7 +862,7 @@
       <resource>
          <type value="Device"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-device"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -961,7 +961,7 @@
       <resource>
          <type value="DeviceMetric"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-devicemetric"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1024,7 +1024,7 @@
       <resource>
          <type value="DeviceUseStatement"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-deviceusestatement"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1060,6 +1060,11 @@
             <documentation value="Search by identifier"/>
          </searchParam>
          <searchParam>
+            <name value="when-used"/>
+            <type value="date"/>
+            <documentation value="The time period over which the device was used."/>
+         </searchParam>
+         <searchParam>
             <name value="patient"/>
             <type value="reference"/>
             <documentation value="Search by subject - a patient"/>
@@ -1078,6 +1083,11 @@
             <name value="device"/>
             <type value="reference"/>
             <documentation value="Search by device"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="active | completed | entered-in-error +"/>
          </searchParam>
       </resource>
       <resource>
@@ -1257,7 +1267,7 @@
       <resource>
          <type value="EpisodeOfCare"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-episodeofcare"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1333,7 +1343,7 @@
       <resource>
          <type value="Library"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-library"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1459,7 +1469,7 @@
       <resource>
          <type value="Media"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-media"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1551,7 +1561,7 @@
       <resource>
          <type value="Observation"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-observation"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1863,7 +1873,7 @@
       <resource>
          <type value="Organization"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-organization"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -1962,7 +1972,7 @@
       <resource>
          <type value="PlanDefinition"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-plandefinition"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2088,7 +2098,7 @@
       <resource>
          <type value="Practitioner"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-practitioner"/>
+            <reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2205,7 +2215,7 @@
       <resource>
          <type value="PractitionerRole"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-practitionerrole"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2324,7 +2334,7 @@
       <resource>
          <type value="ProcedureRequest"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-procedurerequest"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2452,7 +2462,7 @@
       <resource>
          <type value="Provenance"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-provenance"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2531,7 +2541,7 @@
       <resource>
          <type value="Questionnaire"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-questionnaire"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2640,7 +2650,7 @@
       <resource>
          <type value="QuestionnaireResponse"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-questionnaireresponse"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -2855,7 +2865,7 @@
       <resource>
          <type value="Task"/>
          <profile>
-            <reference value="StructureDefinition/ehealth-task"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -3042,18 +3052,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="create-episode-of-care"/>
-         <definition>
-            <reference value="OperationDefinition/-s-create-episode-of-care"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="search-organization-and-practitioner-external"/>
-         <definition>
-            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="submit-measurement"/>
          <definition>
             <reference value="OperationDefinition/-s-submit-measurement"/>
@@ -3063,6 +3061,18 @@
          <name value="search-measurements"/>
          <definition>
             <reference value="OperationDefinition/-s-search-measurements"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="create-episode-of-care"/>
+         <definition>
+            <reference value="OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-organization-and-practitioner-external"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
          </definition>
       </operation>
       <operation>
