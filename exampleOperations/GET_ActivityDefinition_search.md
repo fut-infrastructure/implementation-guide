@@ -1,38 +1,40 @@
-`GET [base]/ActivityDefinition?name=2a3e77db-c546-4058-9a2c-3f694001a927`
+`GET [base]/ActivityDefinition?owner=Organization%2F3698`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.6.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
+
+
 
 __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "4047a693-0891-45a5-8ae4-d7cd753b6c4e",
+  "id": "62c191d7-0075-4535-8728-04b36a730d04",
   "meta": {
-    "lastUpdated": "2019-03-01T13:25:09.648+00:00"
+    "lastUpdated": "2019-03-11T13:26:02.293+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://localhost:31000/hapi-fhir-server/baseDstu3/ActivityDefinition?name=2a3e77db-c546-4058-9a2c-3f694001a927"
+      "url": "http://localhost:31000/hapi-fhir-server/fhir/ActivityDefinition?_format\u003djson\u0026_pretty\u003dtrue\u0026owner\u003dOrganization%2F3698"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://localhost:31000/hapi-fhir-server/baseDstu3/ActivityDefinition/3357",
+      "fullUrl": "http://localhost:31000/hapi-fhir-server/fhir/ActivityDefinition/3705",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "3357",
+        "id": "3705",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-03-01T13:25:09.306+00:00",
+          "lastUpdated": "2019-03-11T13:26:02.132+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -41,22 +43,22 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner",
             "valueReference": {
-              "reference": "Organization/3356"
+              "reference": "Organization/3698"
             }
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author",
             "valueReference": {
-              "reference": "Practitioner/3355"
+              "reference": "Practitioner/3703"
             }
           }
         ],
-        "version": "2b6ebf7d-99b0-42dc-a452-19bc8b2f7f4c",
-        "name": "2a3e77db-c546-4058-9a2c-3f694001a927",
+        "version": "e1f5738b-7ab5-4a12-88c3-09142e9a652a",
+        "name": "8b0fb442-4a28-4a41-ab64-011eb82fa791",
         "status": "active",
         "topic": [
           {
-            "text": "c9047854-0223-4a4f-bdc0-610aebc2b7ee"
+            "text": "84545178-a2a6-4822-bcdc-7481db110143"
           }
         ]
       },
@@ -65,13 +67,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://localhost:31000/hapi-fhir-server/baseDstu3/ActivityDefinition/3351",
+      "fullUrl": "http://localhost:31000/hapi-fhir-server/fhir/ActivityDefinition/3699",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "3351",
+        "id": "3699",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-03-01T13:25:07.809+00:00",
+          "lastUpdated": "2019-03-11T13:26:01.026+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -80,22 +82,22 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-owner",
             "valueReference": {
-              "reference": "Organization/3350"
+              "reference": "Organization/3698"
             }
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-author",
             "valueReference": {
-              "reference": "Practitioner/3349"
+              "reference": "Practitioner/3697"
             }
           }
         ],
-        "version": "619767cb-c916-46ec-9484-3104bc8062e5",
-        "name": "2a3e77db-c546-4058-9a2c-3f694001a927",
+        "version": "b29a77e3-75c0-4d30-bb1e-6ede12c89234",
+        "name": "92ce71ec-8ce3-40e3-a2f2-50c1160545f4",
         "status": "active",
         "topic": [
           {
-            "text": "020a8300-9916-49f5-b6e8-f0a6a1e1611c"
+            "text": "45065268-0523-497e-9ca6-51d28cca1633"
           }
         ]
       },
