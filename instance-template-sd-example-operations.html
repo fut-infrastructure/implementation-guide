@@ -49,24 +49,15 @@ tcode: {{[type]}}
             </ul>
 
             <a name="root"> </a>
-            <h2 id="root">StructureDefinition: {{[title]}} - Examples</h4>
-            {% assign intro = site.data.pages[page.path].intro %}
-            {% if site.data.pages[page.path].intro != null %}
-            <div style="display:inline-block">
-            {% include {{intro}} %}
-            </div>
-            {% endif %}
+            <h2 id="root">StructureDefinition: {{[title]}} - Operation examples</h4>
+            {% capture profile_id %}{{[id]}}{% endcapture %}
+            {% for example in site.data.operation-examples %}
+              {% if example.profile == profile_id %}
+                {% capture my-include %}{% include {{ example.path }} %}{% endcapture %}{{ my-include | markdownify }}
+                <hr>
+              {% endif %}
+            {% endfor %}
 
-            <ul>
-            {% include StructureDefinition-example-list-{{page.id}}.xhtml %}
-            </ul>
-
-            {% assign notes = site.data.pages[page.path].notes %}
-            {% if site.data.pages[page.path].notes != null %}
-            <div style="display:inline-block">
-            {% include {{notes}} %}
-            </div>
-            {% endif %}
           </div>
 
          </div>

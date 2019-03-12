@@ -31,7 +31,8 @@
         "template-base": "instance-template-sd.html",
         "template-defns": "instance-template-sd-definitions.html",
         "template-mappings": "instance-template-sd-mappings.html",
-        "template-examples": "instance-template-sd-examples.html"
+        "template-examples": "instance-template-sd-examples.html",
+        "template-example-operations": "instance-template-sd-example-operations.html"
       }
     },
     "gen-examples": "true",
@@ -45,6 +46,10 @@
       {
         "name": "examples",
         "description": "Examples"
+      },
+      {
+        "name": "example-operations",
+        "description": "Operation examples"
       }
     ],
     "logging" : [
@@ -53,5 +58,9 @@
       "context",
       "html",
       "tx"
-    ]
+    ],
+    "pre-process" : [{
+      "folder" : "exampleOperations",
+      "relativePath" : "_includes"
+   }]
   }
