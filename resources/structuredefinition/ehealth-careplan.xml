@@ -187,6 +187,28 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
       </type>
     </element>
+    <element id="CarePlan.activity.detail.definition">
+      <path value="CarePlan.activity.detail.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
+      </type>
+    </element>
+    <element id="CarePlan.activity.detail.reasonReference">
+      <path value="CarePlan.activity.detail.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+      </type>
+    </element>
     <element id="CarePlan.activity.detail.performer">
       <path value="CarePlan.activity.detail.performer" />
       <type>

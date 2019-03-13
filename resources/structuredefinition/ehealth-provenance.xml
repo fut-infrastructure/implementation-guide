@@ -24,5 +24,57 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-provenance-policies" />
       </binding>
     </element>
+    <element id="Provenance.agent.who[x]">
+      <path value="Provenance.agent.who[x]" />
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
+    <element id="Provenance.agent.onBehalfOf[x]">
+      <path value="Provenance.agent.onBehalfOf[x]" />
+      <type>
+        <code value="uri" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

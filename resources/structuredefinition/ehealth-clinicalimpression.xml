@@ -60,6 +60,17 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression" />
       </type>
     </element>
+    <element id="ClinicalImpression.problem">
+       <path value="ClinicalImpression.problem" />
+          <type>
+              <code value="Reference" />
+              <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+          </type>
+          <type>
+              <code value="Reference" />
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+          </type>
+      </element>
     <element id="ClinicalImpression.investigation">
       <path value="ClinicalImpression.investigation" />
       <short value="One or more sets of investigations (signs, symptoms, etc.)" />
@@ -81,6 +92,19 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
+      <path value="ClinicalImpression.investigation.extension.extension" />
+      <sliceName value="outputParameters" />
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters.valueReference:valueReference">
+      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="ClinicalImpression.investigation.item">
@@ -155,7 +179,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
       </type>
     </element>
     <element id="ClinicalImpression.note">

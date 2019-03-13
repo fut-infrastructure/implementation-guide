@@ -1,0 +1,53 @@
+`PUT [base]/Practitioner/4350`
+
+__Header__
+```
+Accept-Charset: utf-8
+If-Match: "1"
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+Accept-Encoding: gzip
+Content-Type: application/fhir+json; charset=UTF-8
+```
+
+__Body__:
+```json
+{
+  "resourceType": "Practitioner",
+  "id": "4350",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-03-11T13:28:02.877+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+    ]
+  },
+  "active": true,
+  "name": [
+    {
+      "family": "c7b301ab-3521-47cf-95a6-3c7bb7a0adf8"
+    }
+  ]
+}
+```
+
+__Response__
+```json
+{
+  "resourceType": "Practitioner",
+  "id": "4350",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2019-03-11T13:28:03.034+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+    ]
+  },
+  "active": true,
+  "name": [
+    {
+      "family": "c7b301ab-3521-47cf-95a6-3c7bb7a0adf8"
+    }
+  ]
+}
+```

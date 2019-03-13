@@ -22,5 +22,12 @@
       <min value="1" />
       <max value="1" />
     </element>
+    <element id="Practitioner.qualification.issuer">
+      <path value="Practitioner.qualification.issuer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

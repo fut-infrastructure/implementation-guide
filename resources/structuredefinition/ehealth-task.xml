@@ -75,6 +75,36 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
       </type>
     </element>
+    <element id="Task.requester.agent">
+      <path value="Task.requester.agent" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+    </element>
+    <element id="Task.requester.onBehalfOf">
+      <path value="Task.requester.onBehalfOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
     <element id="Task.owner">
       <path value="Task.owner" />
       <min value="1" />
@@ -104,6 +134,29 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance" />
+      </type>
+    </element>
+    <element id="Task.restriction.recipient">
+      <path value="Task.restriction.recipient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
   </differential>
