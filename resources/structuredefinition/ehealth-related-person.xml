@@ -14,7 +14,8 @@
   <derivation value="constraint" />
   <differential>
     <element id="RelatedPerson">
-      <path value="RelatedPerson"/>
+      <path value="RelatedPerson" />
+      <definition value="Information about a person that is involved in the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process" />
     </element>
     <element id="RelatedPerson.extension">
       <path value="RelatedPerson.extension" />
@@ -69,9 +70,7 @@
           <valueString value="PatientRelationshipType" />
         </extension>
         <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype" />
-        </valueSetReference>
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype" />
       </binding>
     </element>
     <element id="RelatedPerson.relationship.coding">

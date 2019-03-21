@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="ehealth"/>
    <status value="active"/>
-   <date value="2019-03-18T13:51:20+00:00"/>
+   <date value="2019-03-12T14:33:02+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -3064,18 +3064,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="create-episode-of-care"/>
-         <definition>
-            <reference value="OperationDefinition/-s-create-episode-of-care"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="search-organization-and-practitioner-external"/>
-         <definition>
-            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="transformToObservation"/>
          <definition>
             <reference value="OperationDefinition/-s-transformToObservation"/>
@@ -3109,6 +3097,18 @@
          <name value="transformToQRD"/>
          <definition>
             <reference value="OperationDefinition/-s-transformToQRD"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="create-episode-of-care"/>
+         <definition>
+            <reference value="OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="search-organization-and-practitioner-external"/>
+         <definition>
+            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
          </definition>
       </operation>
       <operation>
