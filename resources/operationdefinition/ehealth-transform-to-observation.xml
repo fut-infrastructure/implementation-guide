@@ -3,7 +3,7 @@
    <name value="transformToObservation"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Transforms a DK-HL7 Personal Health Monitoring Report (PHMR) resource to a eHealth Observation resource. The input DocumentReference contains the CDA XML for the DK-HL7 Personal Health Monitoring Report. The returned Bundle contains a eHealth Observation and a Composition resource which reference the returned eHealth Observation."/>
+   <description value="Transforms a DK-HL7 Personal Health Monitoring Report (PHMR) resource to a eHealth Observation resource. The input FHIR DocumentReference contains the CDA XML for the DK-HL7 Personal Health Monitoring Report. The returned Bundle contains a eHealth Observation and a Composition resource which reference the returned eHealth Observation."/>
    <idempotent value="true"/>
    <code value="transformToObservation"/>
    <system value="true"/>

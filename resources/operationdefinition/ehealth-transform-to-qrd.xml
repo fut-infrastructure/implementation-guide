@@ -3,7 +3,7 @@
    <name value="transformToQRD"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Transforms a eHealth Questionnaire Response resource to a DK-HL7 Questionnaire Response Document (QRD) resource. The input Bundle should contain one eHealth Questionnaire Response and a Composition resource which reference the eHealth Questionnaire Response. The DocumentReference that is returned contains the CDA XML for the DK-HL7 Questionnaire Response Document."/>
+   <description value="Transforms a eHealth Questionnaire Response resource to a DK-HL7 Questionnaire Response Document (QRD) resource. The input Bundle should contain one eHealth Questionnaire Response and a Composition resource which reference the eHealth Questionnaire Response. The FHIR DocumentReference that is returned contains the CDA XML for the DK-HL7 Questionnaire Response Document."/>
    <idempotent value="true"/>
    <code value="transformToQRD"/>
    <system value="true"/>
