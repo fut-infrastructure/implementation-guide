@@ -1,0 +1,26 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-transformToAppointment"/>
+   <name value="transformToAppointment"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Transforms a DK-HL7 Appointment Document (APD) resource to a eHealth Appointment resource. The input DocumentReference contains the CDA XML for the DK-HL7 Appointment Document. The returned Bundle contains a eHealth Appointment and a Composition resource which reference the returned eHealth Appointment."/>
+   <idempotent value="true"/>
+   <code value="transformToAppointment"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="documentReference"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="DocumentReference"/>
+   </parameter>
+   <parameter>
+      <name value="bundle"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+</OperationDefinition>
