@@ -12,7 +12,11 @@ All notable changes to this project will be documented on this page.
 
 #### Changed
 
-- -
+- Changed the type of ehealth-sharingPolicy to CodeableConcept.
+
+- Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
+
+- Changed the type of ehealth-task-category to CodeableConcept
 
 #### Removed
 
