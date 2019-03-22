@@ -29,7 +29,6 @@ The following foundation and base FHIR resources are used in the eHealth Infrast
 - [Resource](http://hl7.org/fhir/STU3/resource.html)
 - [Bundle](http://hl7.org/fhir/STU3/bundle.html)
 - [List](http://hl7.org/fhir/stu3/list.html)
-- [DocumentReference](http://hl7.org/fhir/stu3/documentreference.html)
 
 These resources are used as defined in FHIR Core as no need for profiling has been identified.
 
