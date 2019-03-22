@@ -235,6 +235,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-composition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-condition"/>
       </sourceReference>
     </resource>
@@ -261,6 +266,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-deviceusestatement"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-documentreference"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1037,6 +1047,30 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-document-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-event-type-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-facility-type-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-format-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-practice-setting-codes"/>
       </sourceReference>
     </resource>
     <resource>
