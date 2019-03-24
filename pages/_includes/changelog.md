@@ -148,11 +148,6 @@ All notable changes to this project will be documented on this page.
 - Organization, changed, Organization.partOf marked Referenced
 - Organization, changed, Organization.endpoint marked Referenced
 
-- Patient, changed, Patient.contact.organization marked Referenced
-- Patient, changed, Patient.generalPractitioner marked Referenced
-- Patient, changed, Patient.managingOrganization marked Referenced
-- Patient, changed, Patient.link.other marked Referenced
-
 - Practitioner, changed, Practitioner.qualification.issuer marked Referenced
 
 - PractitionerRole, changed, PractitionerRole.practitioner marked Referenced

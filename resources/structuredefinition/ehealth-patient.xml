@@ -218,28 +218,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
     </element>
-    <element id="Patient.contact.address.extension:regionalSubdivisionCode">
-      <path value="Patient.contact.address.extension" />
-      <sliceName value="regionalSubdivisionCode" />
-    </element>
-    <element id="Patient.contact.address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding">
-      <path value="Patient.contact.address.extension.valueCodeableConcept.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Patient.animal">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
         <valueString value="Animal" />
@@ -263,41 +241,10 @@
       <path value="Patient.communication.language.coding.system" />
       <fixedUri value="urn:ietf:bcp:47" />
     </element>
-    <element id="Patient.generalPractitioner">
-      <path value="Patient.generalPractitioner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <aggregation value="referenced" />
-      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.link.other">
-      <path value="Patient.link.other" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <aggregation value="referenced" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
