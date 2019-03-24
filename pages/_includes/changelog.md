@@ -57,6 +57,20 @@ All notable changes to this project will be documented on this page.
 - CareTeam, changed, CareTeam.managingOrganization marked Referenced
 - CareTeam, changed, CareTeam.note.author[x] marked Referenced
 
+- ClinicalImpression, changed, ClinicalImpression.subject marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.context marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.assessor marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.previous marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.problem marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.investigation.item marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.finding.item[x] marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.prognosisReference marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.action marked Referenced
+- ClinicalImpression, changed, ClinicalImpression.note.author[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
