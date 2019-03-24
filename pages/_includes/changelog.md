@@ -134,6 +134,14 @@ All notable changes to this project will be documented on this page.
 - EpisodeOfCare, changed, EpisodeOfCare.referralRequest marked Referenced
 - EpisodeOfCare, changed, EpisodeOfCare.careManager marked Referenced
 
+- Library, changed, Library.extension:basedOn.valueReference:valueReference marked Referenced
+- Library, changed, Library.extension:intendedAudience.valueReference:valueReference marked Referenced
+- Library, changed, Library.extension:parameterBinding.extension:resource.valueReference:valueReference marked Referenced
+- Library, changed, Library.extension:parameterBinding.extension:kind.valueReference:valueReference marked Referenced
+- Library, changed, Library.relatedArtifact.resource marked Referenced
+- Library, changed, Library.parameter.profile marked Referenced
+- Library, changed, Library.dataRequirement.codeFilter.valueSet[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
