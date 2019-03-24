@@ -124,6 +124,16 @@ All notable changes to this project will be documented on this page.
 
 - DK CRN Identifier, changed, Identifier.assigner marked Referenced
 
+- EpisodeOfCare, changed, EpisodeOfCare.extension:careManager.value[x]:valueReference marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.extension:careManagerHistory.extension:careManager.value[x]:valueReference marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.diagnosis.condition marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.patient marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.managingOrganization marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.referralRequest marked Referenced
+- EpisodeOfCare, changed, EpisodeOfCare.careManager marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
