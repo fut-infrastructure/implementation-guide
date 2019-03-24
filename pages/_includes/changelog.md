@@ -168,6 +168,10 @@ All notable changes to this project will be documented on this page.
 - Observation, changed, Observation.device marked Referenced
 - Observation, changed, Observation.related.target marked Referenced
 
+- Organization, changed, Organization.extension:relatedTo.extension:target.valueReference:valueReference marked Referenced
+- Organization, changed, Organization.partOf marked Referenced
+- Organization, changed, Organization.endpoint marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
