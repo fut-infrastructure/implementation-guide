@@ -22,10 +22,28 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.basedOn">
+      <path value="Communication.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.partOf">
+      <path value="Communication.partOf" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.category">
@@ -39,6 +57,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.recipient">
@@ -47,35 +66,47 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.topic">
       <path value="Communication.topic" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
     </element>
     <element id="Communication.context">
       <path value="Communication.context" />
@@ -85,6 +116,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.sender">
@@ -95,22 +127,27 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.reasonReference">
@@ -118,15 +155,38 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.payload.content[x]:contentString">
       <path value="Communication.payload.contentString" />
       <sliceName value="contentString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Communication.note.author[x]">
+      <path value="Communication.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
+      </type>
       <type>
         <code value="string" />
       </type>
