@@ -185,6 +185,21 @@ All notable changes to this project will be documented on this page.
 - PractitionerRole, changed, PractitionerRole.healthcareService marked Referenced
 - PractitionerRole, changed, PractitionerRole.endpoint marked Referenced
 
+- ProcedureRequest, changed, ProcedureRequest.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.definition marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.requisition.assigner marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.subject marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.context marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.requester.agent marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.requester.onBehalfOf marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.performer marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.reasonReference marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.supportingInfo marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.specimen marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.note.author[x] marked Referenced
+- ProcedureRequest, changed, ProcedureRequest.relevantHistory marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
