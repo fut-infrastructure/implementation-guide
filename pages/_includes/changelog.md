@@ -89,6 +89,15 @@ All notable changes to this project will be documented on this page.
 - Condition, changed, Condition.evidence.detail marked Referenced
 - Condition, changed, Condition.note.author[x] marked Referenced
 
+- Consent, changed, Consent.patient marked Referenced
+- Consent, changed, Consent.consentingParty marked Referenced
+- Consent, changed, Consent.actor.reference marked Referenced
+- Consent, changed, Consent.organization marked Referenced
+- Consent, changed, Consent.source[x] marked Referenced
+- Consent, changed, Consent.data.reference marked Referenced
+- Consent, changed, Consent.except.actor.reference marked Referenced
+- Consent, changed, Consent.except.data.reference marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
