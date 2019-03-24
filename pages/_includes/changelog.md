@@ -182,8 +182,6 @@ All notable changes to this project will be documented on this page.
 - QuestionnaireResponse, changed, QuestionnaireResponse.item.answer.item.subject marked Referenced
 - QuestionnaireResponse, changed, QuestionnaireResponse.item.item.subject marked Referenced
 
-- RelatedPerson, changed, RelatedPerson.patient marked Referenced
-
 - Task, changed, Task.definition[x] marked Referenced
 - Task, changed, Task.basedOn marked Referenced
 - Task, changed, Task.groupIdentifier.assigner marked Referenced
