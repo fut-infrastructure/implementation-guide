@@ -142,6 +142,13 @@ All notable changes to this project will be documented on this page.
 - Library, changed, Library.parameter.profile marked Referenced
 - Library, changed, Library.dataRequirement.codeFilter.valueSet[x] marked Referenced
 
+- Media, changed, Media.basedOn marked Referenced
+- Media, changed, Media.subject marked Referenced
+- Media, changed, Media.context marked Referenced
+- Media, changed, Media.operator marked Referenced
+- Media, changed, Media.device marked Referenced
+- Media, changed, Media.note.author[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
