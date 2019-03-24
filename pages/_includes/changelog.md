@@ -196,6 +196,8 @@ All notable changes to this project will be documented on this page.
 - Task, changed, Task.relevantHistory marked Referenced
 - Task, changed, Task.restriction.recipient marked Referenced
 
+- Author, changed, Extension.value[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
