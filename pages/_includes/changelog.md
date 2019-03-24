@@ -58,17 +58,6 @@ All notable changes to this project will be documented on this page.
 - ClinicalImpression, changed, ClinicalImpression.action marked Referenced
 - ClinicalImpression, changed, ClinicalImpression.note.author[x] marked Referenced
 
-- Communication, changed, Communication.definition marked Referenced
-- Communication, changed, Communication.basedOn marked Referenced
-- Communication, changed, Communication.partOf marked Referenced
-- Communication, changed, Communication.subject marked Referenced
-- Communication, changed, Communication.recipient marked Referenced
-- Communication, changed, Communication.topic marked Referenced
-- Communication, changed, Communication.context marked Referenced
-- Communication, changed, Communication.sender marked Referenced
-- Communication, changed, Communication.reasonReference marked Referenced
-- Communication, changed, Communication.note.author[x] marked Referenced
-
 - Condition, changed, Condition.subject marked Referenced
 - Condition, changed, Condition.context marked Referenced
 - Condition, changed, Condition.asserter marked Referenced
