@@ -210,6 +210,17 @@ All notable changes to this project will be documented on this page.
 - Provenance, changed, Provenance.signature.who[x] marked Referenced
 - Provenance, changed, Provenance.signature.onBehalfOf[x] marked Referenced
 
+- QuestionnaireResponse, changed, QuestionnaireResponse.basedOn marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.parent marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.questionnaire marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.subject marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.context marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.author marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.source marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.item.subject marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.item.answer.item.subject marked Referenced
+- QuestionnaireResponse, changed, QuestionnaireResponse.item.item.subject marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
