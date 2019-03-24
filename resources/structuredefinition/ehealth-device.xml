@@ -44,6 +44,34 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
       </type>
     </element>
+    <element id="Device.extension:suppliers.extension:supplier">
+      <path value="Device.extension.extension" />
+      <sliceName value="supplier" />
+    </element>
+    <element id="Device.extension:suppliers.extension:supplier.value[x]:valueReference">
+      <path value="Device.extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Device.type">
       <path value="Device.type" />
       <binding>
@@ -61,6 +89,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Device.owner">
@@ -68,6 +97,36 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Device.location">
+      <path value="Device.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Device.note.author[x]">
+      <path value="Device.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="string" />
       </type>
     </element>
   </differential>
