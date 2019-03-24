@@ -198,6 +198,8 @@ All notable changes to this project will be documented on this page.
 
 - Author, changed, Extension.value[x] marked Referenced
 
+- CarePlan-MonitoringResponsible, changed, Extension.value[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
