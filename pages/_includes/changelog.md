@@ -49,6 +49,14 @@ All notable changes to this project will be documented on this page.
 - CarePlan, changed, CarePlan.activity.detail.product[x] marked Referenced
 - CarePlan, changed, CarePlan.note.author[x] marked Referenced
 
+- CareTeam, changed, CareTeam.subject marked Referenced
+- CareTeam, changed, CareTeam.context marked Referenced
+- CareTeam, changed, CareTeam.participant.member marked Referenced
+- CareTeam, changed, CareTeam.participant.onBehalfOf marked Referenced
+- CareTeam, changed, CareTeam.reasonReference marked Referenced
+- CareTeam, changed, CareTeam.managingOrganization marked Referenced
+- CareTeam, changed, CareTeam.note.author[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
