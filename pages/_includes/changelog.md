@@ -22,6 +22,9 @@ All notable changes to this project will be documented on this page.
 - Appointment, changed, Appointment.participant:practitioner.actor marked Referenced
 - Appointment, changed, Appointment.participant:relatedPerson.actor marked Referenced
 
+- AppointmentResponse, changed, AppointmentResponse.appointment marked Referenced
+- AppointmentResponse, changed, AppointmentResponse.actor marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
