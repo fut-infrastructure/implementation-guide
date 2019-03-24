@@ -12,6 +12,16 @@ All notable changes to this project will be documented on this page.
 
 #### Changed
 
+- Appointment, changed, Appointment.extension:responsible.extension:actor marked Referenced
+- Appointment, changed, Appointment.indication marked Referenced
+- Appointment, changed, Appointment.supportingInformation marked Referenced
+- Appointment, changed, Appointment.slot marked Referenced
+- Appointment, changed, Appointment.incomingReferral marked Referenced
+- Appointment, changed, Appointment.participant:patient.actor marked Referenced
+- Appointment, changed, Appointment.participant:location.actor marked Referenced
+- Appointment, changed, Appointment.participant:practitioner.actor marked Referenced
+- Appointment, changed, Appointment.participant:relatedPerson.actor marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
