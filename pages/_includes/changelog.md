@@ -115,6 +115,8 @@ All notable changes to this project will be documented on this page.
 - Device, changed, Device.location marked Referenced
 - Device, changed, Device.note.author[x] marked Referenced
 
+- DeviceMetric, changed, DeviceMetric.source marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
