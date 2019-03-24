@@ -200,6 +200,16 @@ All notable changes to this project will be documented on this page.
 - ProcedureRequest, changed, ProcedureRequest.note.author[x] marked Referenced
 - ProcedureRequest, changed, ProcedureRequest.relevantHistory marked Referenced
 
+- Provenance, changed, Provenance.target marked Referenced
+- Provenance, changed, Provenance.location marked Referenced
+- Provenance, changed, Provenance.agent.who[x] marked Referenced
+- Provenance, changed, Provenance.agent.onBehalfOf[x] marked Referenced
+- Provenance, changed, Provenance.entity.what[x] marked Referenced
+- Provenance, changed, Provenance.entity.agent.who[x] marked Referenced
+- Provenance, changed, Provenance.entity.agent.onBehalfOf[x] marked Referenced
+- Provenance, changed, Provenance.signature.who[x] marked Referenced
+- Provenance, changed, Provenance.signature.onBehalfOf[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
