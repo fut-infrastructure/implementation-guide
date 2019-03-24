@@ -223,6 +223,20 @@ All notable changes to this project will be documented on this page.
 
 - RelatedPerson, changed, RelatedPerson.patient marked Referenced
 
+- Task, changed, Task.definition[x] marked Referenced
+- Task, changed, Task.basedOn marked Referenced
+- Task, changed, Task.groupIdentifier.assigner marked Referenced
+- Task, changed, Task.partOf marked Referenced
+- Task, changed, Task.focus marked Referenced
+- Task, changed, Task.for marked Referenced
+- Task, changed, Task.context marked Referenced
+- Task, changed, Task.requester.agent marked Referenced
+- Task, changed, Task.requester.onBehalfOf marked Referenced
+- Task, changed, Task.owner marked Referenced
+- Task, changed, Task.note.author[x] marked Referenced
+- Task, changed, Task.relevantHistory marked Referenced
+- Task, changed, Task.restriction.recipient marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
