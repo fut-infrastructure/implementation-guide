@@ -12,9 +12,6 @@ All notable changes to this project will be documented on this page.
 
 #### Changed
 
-- AppointmentResponse, changed, AppointmentResponse.appointment marked Referenced
-- AppointmentResponse, changed, AppointmentResponse.actor marked Referenced
-
 - CarePlan, changed, CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - CarePlan, changed, CarePlan.extension:monitoringResponsibleHistory.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - CarePlan, changed, CarePlan.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
