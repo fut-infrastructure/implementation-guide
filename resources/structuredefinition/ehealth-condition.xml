@@ -29,10 +29,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Condition.context">
@@ -40,10 +42,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Condition.asserter">
@@ -51,14 +55,17 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Condition.stage.assessment">
@@ -66,14 +73,46 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Condition.evidence.detail">
+      <path value="Condition.evidence.detail" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Condition.note.author[x]">
+      <path value="Condition.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="string" />
       </type>
     </element>
   </differential>
