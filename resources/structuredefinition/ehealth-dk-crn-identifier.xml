@@ -35,5 +35,13 @@
       </constraint>
       <mustSupport value="false" />
     </element>
+    <element id="Identifier.assigner">
+      <path value="Identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
