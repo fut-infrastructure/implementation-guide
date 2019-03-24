@@ -179,6 +179,12 @@ All notable changes to this project will be documented on this page.
 
 - Practitioner, changed, Practitioner.qualification.issuer marked Referenced
 
+- PractitionerRole, changed, PractitionerRole.practitioner marked Referenced
+- PractitionerRole, changed, PractitionerRole.organization marked Referenced
+- PractitionerRole, changed, PractitionerRole.location marked Referenced
+- PractitionerRole, changed, PractitionerRole.healthcareService marked Referenced
+- PractitionerRole, changed, PractitionerRole.endpoint marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
