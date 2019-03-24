@@ -13,14 +13,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/AppointmentResponse" />
   <derivation value="constraint" />
   <differential>
-    <element id="AppointmentResponse">
-      <path value="AppointmentResponse"/>
-    </element>
     <element id="AppointmentResponse.appointment">
       <path value="AppointmentResponse.appointment" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="AppointmentResponse.actor">
@@ -28,18 +26,22 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
