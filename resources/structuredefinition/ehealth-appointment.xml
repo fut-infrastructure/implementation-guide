@@ -38,29 +38,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
-    <element id="Appointment.extension:responsible.extension:actor">
-      <path value="Appointment.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor.value[x]:valueReference">
-      <path value="Appointment.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
@@ -75,43 +52,6 @@
     <element id="Appointment.reason">
       <path value="Appointment.reason" />
       <min value="1" />
-    </element>
-    <element id="Appointment.indication">
-      <path value="Appointment.indication" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
-    <element id="Appointment.supportingInformation">
-      <path value="Appointment.supportingInformation" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
-    <element id="Appointment.slot">
-      <path value="Appointment.slot" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Slot" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
-    <element id="Appointment.incomingReferral">
-      <path value="Appointment.incomingReferral" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
-        <aggregation value="referenced" />
-      </type>
     </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
@@ -138,7 +78,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Appointment.participant:patient.required">
@@ -160,7 +99,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Appointment.participant:practitioner">
@@ -176,7 +114,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Appointment.participant:relatedPerson">
@@ -192,7 +129,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
