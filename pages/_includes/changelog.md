@@ -98,6 +98,17 @@ All notable changes to this project will be documented on this page.
 - Consent, changed, Consent.except.actor.reference marked Referenced
 - Consent, changed, Consent.except.data.reference marked Referenced
 
+- Correspondance, changed, Communication.definition marked Referenced
+- Correspondance, changed, Communication.basedOn marked Referenced
+- Correspondance, changed, Communication.partOf marked Referenced
+- Correspondance, changed, Communication.subject marked Referenced
+- Correspondance, changed, Communication.recipient marked Referenced
+- Correspondance, changed, Communication.topic marked Referenced
+- Correspondance, changed, Communication.context marked Referenced
+- Correspondance, changed, Communication.sender marked Referenced
+- Correspondance, changed, Communication.reasonReference marked Referenced
+- Correspondance, changed, Communication.note.author[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
