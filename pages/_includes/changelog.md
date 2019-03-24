@@ -160,6 +160,14 @@ All notable changes to this project will be documented on this page.
 - Message, changed, Communication.reasonReference marked Referenced
 - Message, changed, Communication.note.author[x] marked Referenced
 
+- Observation, changed, Observation.basedOn marked Referenced
+- Observation, changed, Observation.subject marked Referenced
+- Observation, changed, Observation.context marked Referenced
+- Observation, changed, Observation.performer marked Referenced
+- Observation, changed, Observation.specimen marked Referenced
+- Observation, changed, Observation.device marked Referenced
+- Observation, changed, Observation.related.target marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
