@@ -171,16 +171,6 @@ All notable changes to this project will be documented on this page.
 - ProcedureRequest, changed, ProcedureRequest.note.author[x] marked Referenced
 - ProcedureRequest, changed, ProcedureRequest.relevantHistory marked Referenced
 
-- Provenance, changed, Provenance.target marked Referenced
-- Provenance, changed, Provenance.location marked Referenced
-- Provenance, changed, Provenance.agent.who[x] marked Referenced
-- Provenance, changed, Provenance.agent.onBehalfOf[x] marked Referenced
-- Provenance, changed, Provenance.entity.what[x] marked Referenced
-- Provenance, changed, Provenance.entity.agent.who[x] marked Referenced
-- Provenance, changed, Provenance.entity.agent.onBehalfOf[x] marked Referenced
-- Provenance, changed, Provenance.signature.who[x] marked Referenced
-- Provenance, changed, Provenance.signature.onBehalfOf[x] marked Referenced
-
 - QuestionnaireResponse, changed, QuestionnaireResponse.basedOn marked Referenced
 - QuestionnaireResponse, changed, QuestionnaireResponse.parent marked Referenced
 - QuestionnaireResponse, changed, QuestionnaireResponse.questionnaire marked Referenced
