@@ -25,6 +25,30 @@ All notable changes to this project will be documented on this page.
 - AppointmentResponse, changed, AppointmentResponse.appointment marked Referenced
 - AppointmentResponse, changed, AppointmentResponse.actor marked Referenced
 
+- CarePlan, changed, CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
+- CarePlan, changed, CarePlan.extension:monitoringResponsibleHistory.extension:monitoringResponsible.value[x]:valueReference marked Referenced
+- CarePlan, changed, CarePlan.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
+- CarePlan, changed, CarePlan.extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
+- CarePlan, changed, CarePlan.definition marked Referenced
+- CarePlan, changed, CarePlan.partOf marked Referenced
+- CarePlan, changed, CarePlan.subject marked Referenced
+- CarePlan, changed, CarePlan.context marked Referenced
+- CarePlan, changed, CarePlan.author marked Referenced
+- CarePlan, changed, CarePlan.careTeam marked Referenced
+- CarePlan, changed, CarePlan.addresses marked Referenced
+- CarePlan, changed, CarePlan.supportingInfo marked Referenced
+- CarePlan, changed, CarePlan.goal marked Referenced
+- CarePlan, changed, CarePlan.activity.outcomeReference marked Referenced
+- CarePlan, changed, CarePlan.activity.progress.author[x] marked Referenced
+- CarePlan, changed, CarePlan.activity.reference marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.definition marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.reasonReference marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.goal marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.location marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.performer marked Referenced
+- CarePlan, changed, CarePlan.activity.detail.product[x] marked Referenced
+- CarePlan, changed, CarePlan.note.author[x] marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
