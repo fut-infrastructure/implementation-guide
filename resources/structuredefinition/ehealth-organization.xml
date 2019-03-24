@@ -37,6 +37,19 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organisation-relatedTo" />
       </type>
     </element>
+    <element id="Organization.extension:relatedTo.extension:target">
+      <path value="Organization.extension.extension" />
+      <sliceName value="target" />
+    </element>
+    <element id="Organization.extension:relatedTo.extension:target.valueReference:valueReference">
+      <path value="Organization.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <min value="1" />
@@ -84,6 +97,15 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Organization.endpoint">
+      <path value="Organization.endpoint" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
