@@ -208,6 +208,8 @@ All notable changes to this project will be documented on this page.
 
 - EpisodeOfCare-CareManagerHistory, changed, reference marked Referenced
 
+- EpisodeOfCare-CareManagers, changed, reference marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
