@@ -172,6 +172,11 @@ All notable changes to this project will be documented on this page.
 - Organization, changed, Organization.partOf marked Referenced
 - Organization, changed, Organization.endpoint marked Referenced
 
+- Patient, changed, Patient.contact.organization marked Referenced
+- Patient, changed, Patient.generalPractitioner marked Referenced
+- Patient, changed, Patient.managingOrganization marked Referenced
+- Patient, changed, Patient.link.other marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
