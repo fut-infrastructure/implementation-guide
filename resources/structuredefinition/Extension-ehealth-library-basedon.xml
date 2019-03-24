@@ -25,6 +25,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
