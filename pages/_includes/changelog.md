@@ -196,9 +196,11 @@ All notable changes to this project will be documented on this page.
 - Task, changed, Task.relevantHistory marked Referenced
 - Task, changed, Task.restriction.recipient marked Referenced
 
-- Author, changed, Extension.value[x] marked Referenced
+- Author, changed, Extension.value[x]:valueReference marked Referenced
 
-- CarePlan-MonitoringResponsible, changed, Extension.value[x] marked Referenced
+- CarePlan-MonitoringResponsible, changed, Extension.value[x]:valueReference marked Referenced
+
+- CarePlan-MonitoringResponsibleHistory, changed, Extension.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
