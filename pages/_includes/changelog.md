@@ -216,6 +216,8 @@ All notable changes to this project will be documented on this page.
 
 - Library-ParameterBinding, changed, reference marked Referenced
 
+- Organisation-RelatedTo, changed, reference marked Referenced
+
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
