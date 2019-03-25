@@ -3,28 +3,28 @@
    <name value="search-measurements"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Searches for bundles of corresponding observations, media, questionnaire responses and questionnaires."/>
+   <description value="Searches for bundles of corresponding observations, media and questionnaire responses.&#xa;&quot;period&quot; must always be specified.&#xa;&#xa;Additionally at least &quot;patient&quot; or &quot;episodeOfCare&quot; must be specified.&#xa;&#xa;--&#xa;patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).&#xa;episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).&#xa;device: Find resource(s) referring the specified device - Reference(eHealth Device).&#xa;period: Resource(s) must have effective, occurrence or authored attribute within the specified period."/>
    <idempotent value="false"/>
    <code value="search-measurements"/>
    <system value="true"/>
    <type value="false"/>
    <instance value="false"/>
    <parameter>
-      <name value="patientId"/>
+      <name value="patient"/>
       <use value="in"/>
       <min value="0"/>
       <max value="1"/>
       <type value="Reference"/>
    </parameter>
    <parameter>
-      <name value="carePlanId"/>
+      <name value="episodeOfCare"/>
       <use value="in"/>
       <min value="0"/>
       <max value="1"/>
       <type value="Reference"/>
    </parameter>
    <parameter>
-      <name value="deviceId"/>
+      <name value="device"/>
       <use value="in"/>
       <min value="0"/>
       <max value="1"/>
@@ -33,7 +33,7 @@
    <parameter>
       <name value="period"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="Period"/>
    </parameter>

@@ -263,6 +263,8 @@ All notable changes to this project will be documented on this page.
 
 - Changed the type of ehealth-task-category to CodeableConcept
 
+- Operation search-measurements updated description and set period required.
+
 #### Removed
 
 - -
