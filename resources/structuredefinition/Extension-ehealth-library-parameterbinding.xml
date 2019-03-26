@@ -58,6 +58,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:identifier">
@@ -75,6 +76,14 @@
       <sliceName value="valueIdentifier" />
       <type>
         <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.extension:identifier.value[x]:valueIdentifier.assigner">
+      <path value="Extension.extension.valueIdentifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:version">
@@ -204,6 +213,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:name">

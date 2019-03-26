@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth FHIR Server"/>
-      <url value="http://192.168.235.97:8080/hapi-fhir-server/fhir"/>
+      <url value="http://10.1.1.116:8080/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -3061,6 +3061,42 @@
          <name value="search-measurements"/>
          <definition>
             <reference value="OperationDefinition/-s-search-measurements"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToObservation"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToObservation"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToPHMR"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToPHMR"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToAppointment"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToAppointment"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToAPD"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToAPD"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToQuestionnaireResponse"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToQuestionnaireResponse"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToQRD"/>
+         <definition>
+            <reference value="OperationDefinition/-s-transformToQRD"/>
          </definition>
       </operation>
       <operation>

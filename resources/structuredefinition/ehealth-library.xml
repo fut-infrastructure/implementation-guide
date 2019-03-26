@@ -36,6 +36,15 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-basedOn" />
       </type>
     </element>
+    <element id="Library.extension:basedOn.valueReference:valueReference">
+      <path value="Library.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Library.extension:intendedAudience">
       <path value="Library.extension" />
       <sliceName value="intendedAudience" />
@@ -44,12 +53,47 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
       </type>
     </element>
+    <element id="Library.extension:intendedAudience.valueReference:valueReference">
+      <path value="Library.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Library.extension:parameterBinding">
       <path value="Library.extension" />
       <sliceName value="parameterBinding" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterBinding" />
+      </type>
+    </element>
+    <element id="Library.extension:parameterBinding.extension:resource">
+      <path value="Library.extension.extension" />
+      <sliceName value="resource" />
+    </element>
+    <element id="Library.extension:parameterBinding.extension:resource.valueReference:valueReference">
+      <path value="Library.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Library.extension:parameterBinding.extension:kind">
+      <path value="Library.extension.extension" />
+      <sliceName value="kind" />
+    </element>
+    <element id="Library.extension:parameterBinding.extension:kind.valueReference:valueReference">
+      <path value="Library.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Library.extension:revision">
@@ -65,6 +109,14 @@
     <element id="Library.version">
       <path value="Library.version" />
       <min value="1" />
+    </element>
+    <element id="Library.relatedArtifact.resource">
+      <path value="Library.relatedArtifact.resource" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
     </element>
     <element id="Library.parameter">
       <path value="Library.parameter" />
@@ -87,6 +139,25 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterName" />
+      </type>
+    </element>
+    <element id="Library.parameter.profile">
+      <path value="Library.parameter.profile" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Library.dataRequirement.codeFilter.valueSet[x]">
+      <path value="Library.dataRequirement.codeFilter.valueSet[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
