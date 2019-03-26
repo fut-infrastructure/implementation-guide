@@ -25,12 +25,12 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation" />
     </element>
-    <element id="Extension.value[x]:valueCoding">
-      <path value="Extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
     </element>
   </differential>

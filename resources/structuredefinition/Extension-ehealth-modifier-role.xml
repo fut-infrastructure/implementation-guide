@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-modifier-role" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+  <name value="modifierRole" />
+  <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
+  <description value="This is a modifier role that can hold a role and a reference to the item who has the role. Ex. owner + a reference to the owner organization." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ActivityDefinition" />
+  <context value="Questionnaire" />
+  <context value="PlanDefinition" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:reference">
+      <path value="Extension.extension" />
+      <sliceName value="reference" />
+      <short value="Holds a reference to either Organization, CareTeam, Practitioner" />
+      <comment value="Holds a reference to either Organization, CareTeam, Practitioner." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:reference.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="reference" />
+    </element>
+    <element id="Extension.extension:reference.value[x]:valueReference">
+      <path value="Extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <short value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
+      <comment value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Extension.extension:role">
+      <path value="Extension.extension" />
+      <sliceName value="role" />
+      <short value="This tells something about the value of the reference." />
+      <definition value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
+      <comment value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:role.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="role" />
+    </element>
+    <element id="Extension.extension:role.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
