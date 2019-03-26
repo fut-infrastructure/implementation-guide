@@ -31,9 +31,9 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="Codes for questionnaires, groups and individual questions" />
+        <description value="Questionnaire types" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/questionnaire-questions" />
+          <reference value="http://ehealth.sundhed.dk/cs/questionnaire-types" />
         </valueSetReference>
       </binding>
     </element>
