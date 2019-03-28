@@ -6,7 +6,7 @@
   <title value="eHealth Message" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the Provenance resource. " />
+  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the Provenance resource." />
   <copyright value="Trifork A&amp;S" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -23,6 +23,27 @@
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
     </element>
+    <element id="Communication.definition">
+      <path value="Communication.definition" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PlanDefinition" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.basedOn">
+      <path value="Communication.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Communication.partOf">
       <path value="Communication.partOf" />
       <short value="The CarePlan that this communication relates to" />
@@ -30,6 +51,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.category">
@@ -110,20 +132,57 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/message-medium" />
       </binding>
     </element>
+    <element id="Communication.subject">
+      <path value="Communication.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
       <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.topic">
+      <path value="Communication.topic" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.context">
+      <path value="Communication.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.sender">
@@ -132,14 +191,30 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Communication.reasonReference">
+      <path value="Communication.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Communication.payload">
@@ -149,6 +224,27 @@
     <element id="Communication.payload.content[x]:contentString">
       <path value="Communication.payload.contentString" />
       <sliceName value="contentString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Communication.note.author[x]">
+      <path value="Communication.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
+      </type>
       <type>
         <code value="string" />
       </type>

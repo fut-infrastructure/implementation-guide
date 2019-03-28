@@ -49,6 +49,14 @@
         <code value="Identifier" />
       </type>
     </element>
+    <element id="Extension.extension:identifier.value[x]:valueIdentifier.assigner">
+      <path value="Extension.extension.valueIdentifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Extension.extension:version">
       <path value="Extension.extension" />
       <sliceName value="version" />
@@ -289,6 +297,7 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
         <aggregation value="contained" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:outputParameters">
@@ -307,6 +316,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:evaluationMessage">
@@ -324,6 +334,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.url">

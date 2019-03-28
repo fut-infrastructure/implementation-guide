@@ -48,11 +48,11 @@
       <path value="Extension.extension.url" />
       <fixedUri value="qualityType" />
     </element>
-    <element id="Extension.extension:qualityType.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:qualityType.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:qualityCode">
@@ -67,13 +67,13 @@
       <path value="Extension.extension.url" />
       <fixedUri value="qualityCode" />
     </element>
-    <element id="Extension.extension:qualityCode.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:qualityCode.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <short value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
       <definition value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.url">

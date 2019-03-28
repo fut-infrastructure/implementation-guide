@@ -27,10 +27,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.context">
@@ -39,10 +41,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.assessor">
@@ -51,6 +55,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.previous">
@@ -58,19 +63,22 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.problem">
-       <path value="ClinicalImpression.problem" />
-          <type>
-              <code value="Reference" />
-              <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
-          </type>
-          <type>
-              <code value="Reference" />
-              <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
-          </type>
-      </element>
+      <path value="ClinicalImpression.problem" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="ClinicalImpression.investigation">
       <path value="ClinicalImpression.investigation" />
       <short value="One or more sets of investigations (signs, symptoms, etc.)" />
@@ -94,6 +102,20 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
       </type>
     </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters">
+      <path value="ClinicalImpression.investigation.extension.extension" />
+      <sliceName value="inputParameters" />
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters.valueReference:valueReference">
+      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
       <path value="ClinicalImpression.investigation.extension.extension" />
       <sliceName value="outputParameters" />
@@ -105,6 +127,20 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
         <aggregation value="contained" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage">
+      <path value="ClinicalImpression.investigation.extension.extension" />
+      <sliceName value="evaluationMessage" />
+    </element>
+    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage.valueReference:valueReference">
+      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.investigation.item">
@@ -112,26 +148,32 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RiskAssessment" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.finding">
@@ -146,10 +188,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <aggregation value="referenced" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -159,27 +203,40 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes" />
       </binding>
     </element>
+    <element id="ClinicalImpression.prognosisReference">
+      <path value="ClinicalImpression.prognosisReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RiskAssessment" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="ClinicalImpression.action">
       <path value="ClinicalImpression.action" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ClinicalImpression.note">
@@ -191,14 +248,17 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="string" />

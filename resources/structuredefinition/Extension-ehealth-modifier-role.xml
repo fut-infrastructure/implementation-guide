@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-device-suppliers" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
-  <name value="suppliers" />
+  <id value="ehealth-modifier-role" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+  <name value="modifierRole" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="Suppliers of different kinds. E.g device suppliers, support suppliers, training suppliers, etc." />
+  <description value="This is a modifier role that can hold a role and a reference to the item who has the role. Ex. owner + a reference to the owner organization." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
-  <context value="Device" />
+  <context value="ActivityDefinition" />
+  <context value="Questionnaire" />
+  <context value="PlanDefinition" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -25,21 +27,24 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:supplier">
+    <element id="Extension.extension:reference">
       <path value="Extension.extension" />
-      <sliceName value="supplier" />
-      <short value="Reference to the supplier" />
-      <definition value="Reference to the supplier" />
+      <sliceName value="reference" />
+      <short value="Holds a reference to either Organization, CareTeam, Practitioner" />
+      <comment value="Holds a reference to either Organization, CareTeam, Practitioner." />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:supplier.url">
+    <element id="Extension.extension:reference.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="supplier" />
+      <fixedUri value="reference" />
     </element>
-    <element id="Extension.extension:supplier.value[x]:valueReference">
+    <element id="Extension.extension:reference.value[x]:valueReference">
       <path value="Extension.extension.value[x]" />
       <sliceName value="valueReference" />
+      <short value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
+      <comment value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
@@ -52,25 +57,18 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
         <aggregation value="referenced" />
       </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
-    <element id="Extension.extension:supplier.value[x]:valueReference.identifier">
-      <path value="Extension.extension.value[x].identifier" />
-      <max value="0" />
     </element>
     <element id="Extension.extension:role">
       <path value="Extension.extension" />
       <sliceName value="role" />
-      <short value="Roles of this supplier" />
-      <definition value="Roles of this supplier (e.g. trainer, provisioner, maintainer, supporter, decommisioner, helpdesk)" />
+      <short value="This tells something about the value of the reference." />
+      <definition value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
+      <comment value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
       <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
@@ -83,16 +81,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/device-supplier-roles" />
-        </valueSetReference>
-      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

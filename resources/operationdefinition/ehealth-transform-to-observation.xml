@@ -1,0 +1,26 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-transformToObservation"/>
+   <name value="transformToObservation"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Transforms a DK-HL7 Personal Health Monitoring Report (PHMR) resource to a eHealth Observation resource. The input FHIR DocumentReference contains the CDA XML for the DK-HL7 Personal Health Monitoring Report. The returned Bundle contains a eHealth Observation and a Composition resource which reference the returned eHealth Observation."/>
+   <idempotent value="true"/>
+   <code value="transformToObservation"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="documentReference"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="DocumentReference"/>
+   </parameter>
+   <parameter>
+      <name value="bundle"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+</OperationDefinition>

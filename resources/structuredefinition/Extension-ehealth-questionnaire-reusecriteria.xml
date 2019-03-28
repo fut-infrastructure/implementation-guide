@@ -52,17 +52,19 @@
       <path value="Extension.extension.url" />
       <fixedUri value="situationQuality" />
     </element>
-    <element id="Extension.extension:situationQuality.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:situationQuality.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
-        <description value="Value set of hierarchical codes stating the quality of a measurement situation." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/situation-quality" />
+        <description value="Value set of hierarchical codes stating the quality of a measurement situation" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/situation-quality" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:operationQuality">
@@ -74,12 +76,12 @@
       <path value="Extension.extension.url" />
       <fixedUri value="operationQuality" />
     </element>
-    <element id="Extension.extension:operationQuality.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:operationQuality.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:dataQuality">
@@ -91,12 +93,12 @@
       <path value="Extension.extension.url" />
       <fixedUri value="dataQuality" />
     </element>
-    <element id="Extension.extension:dataQuality.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
+    <element id="Extension.extension:dataQuality.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="Coding" />
+        <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.extension:dataActuality">

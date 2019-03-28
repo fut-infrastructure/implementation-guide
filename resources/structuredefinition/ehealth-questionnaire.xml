@@ -37,26 +37,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-recommendation" />
       </type>
     </element>
-    <element id="Questionnaire.extension:custodian">
-      <path value="Questionnaire.extension" />
-      <sliceName value="custodian" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-custodian" />
-      </type>
-    </element>
-    <element id="Questionnaire.extension:author">
-      <path value="Questionnaire.extension" />
-      <sliceName value="author" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-author" />
-      </type>
-    </element>
     <element id="Questionnaire.extension:intendedOrganization">
       <path value="Questionnaire.extension" />
       <sliceName value="intendedOrganization" />
@@ -76,33 +56,37 @@
     <element id="Questionnaire.extension:revision">
       <path value="Questionnaire.extension" />
       <sliceName value="revision" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
       </type>
     </element>
+    <element id="Questionnaire.extension:modifierRole">
+      <path value="Questionnaire.extension" />
+      <sliceName value="modifierRole" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+      </type>
+    </element>
+    <element id="Questionnaire.extension:type">
+      <path value="Questionnaire.extension" />
+      <sliceName value="type" />
+      <short value="Concept that represents the overall questionnaire" />
+      <definition value="An identifier for this question or group of questions in a particular terminology such as LOINC." />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <requirements value="Allows linking of the complete Questionnaire resources to formal terminologies.  It's common for &quot;panels&quot; of questions to be identified by a code." />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type" />
+      </type>
+    </element>
     <element id="Questionnaire.version">
       <path value="Questionnaire.version" />
       <min value="1" />
-    </element>
-    <element id="Questionnaire.code">
-      <path value="Questionnaire.code" />
-      <short value="The type of the Questionnaire" />
-      <definition value="The possible types will be defined on the terminology server." />
-      <min value="1" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="QuestionnaireConcept" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-types" />
-      </binding>
-    </element>
-    <element id="Questionnaire.item">
-      <path value="Questionnaire.item" />
-      <short value="Questions and sections within the Questionnaire" />
     </element>
     <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />

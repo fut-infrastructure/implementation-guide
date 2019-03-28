@@ -43,6 +43,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.parent">
@@ -51,10 +52,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.questionnaire">
@@ -63,6 +66,15 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.context">
@@ -70,10 +82,12 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.author">
@@ -81,18 +95,22 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.source">
@@ -101,23 +119,50 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.item.subject">
+      <path value="QuestionnaireResponse.item.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.item.answer.item">
       <path value="QuestionnaireResponse.item.answer.item" />
       <comment value="Nested questionnaire response items.&#xD;&#xA;&#xD;&#xA;Answers shall be provided in accordance with the questionnaire. Questionnaires, however, formed using nested items are likely to produce questionnaire responses that cannot be transformed to Clinical Document Architecture (CDA) counterparts without loss." />
     </element>
+    <element id="QuestionnaireResponse.item.answer.item.subject">
+      <path value="QuestionnaireResponse.item.answer.item.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="QuestionnaireResponse.item.item">
       <path value="QuestionnaireResponse.item.item" />
       <comment value="Nested groups and questions.&#xD;&#xA;&#xD;&#xA;Answers shall be provided in accordance with the questionnaire. Questionnaires, however, formed using nested items are likely to produce questionnaire responses that cannot be transformed to Clinical Document Architecture (CDA) counterparts without loss." />
+    </element>
+    <element id="QuestionnaireResponse.item.item.subject">
+      <path value="QuestionnaireResponse.item.item.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
