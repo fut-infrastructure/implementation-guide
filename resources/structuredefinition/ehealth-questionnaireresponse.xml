@@ -57,7 +57,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="QuestionnaireResponse.questionnaire">
@@ -69,20 +68,11 @@
         <aggregation value="referenced" />
       </type>
     </element>
-    <element id="QuestionnaireResponse.subject">
-      <path value="QuestionnaireResponse.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="QuestionnaireResponse.context">
       <path value="QuestionnaireResponse.context" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
-        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
