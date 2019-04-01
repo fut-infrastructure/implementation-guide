@@ -820,7 +820,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-submission-sharing-policy"/>
+        <reference value="CodeSystem/ehealth-submission-sharing-policies"/>
       </sourceReference>
     </resource>
     <resource>

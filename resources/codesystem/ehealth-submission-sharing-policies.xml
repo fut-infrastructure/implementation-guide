@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="ehealth-submission-sharing-policy"/>
-    <url value="http://ehealth.sundhed.dk/cs/submission-sharing-policy"/>
+    <id value="ehealth-submission-sharing-policies"/>
+    <url value="http://ehealth.sundhed.dk/cs/submission-sharing-policies"/>
     <version value="0.6.0"/>
-    <name value="SubmissionSharingPolicy"/>
+    <name value="SubmissionSharingPolicies"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -14,7 +14,7 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Submission sharing policy types"/>
+    <description value="Submission sharing policies"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
