@@ -38,11 +38,6 @@
       <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="Type of quality" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/quality-types" />
-      </binding>
     </element>
     <element id="Extension.extension:qualityType.url">
       <path value="Extension.extension.url" />
@@ -51,9 +46,17 @@
     <element id="Extension.extension:qualityType.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="Type of quality" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/quality-types" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:qualityCode">
       <path value="Extension.extension" />
@@ -72,6 +75,7 @@
       <sliceName value="valueCodeableConcept" />
       <short value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
       <definition value="Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
