@@ -31,6 +31,13 @@
     <element id="Communication.category">
       <path value="Communication.category" />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationCategory" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/communication-category" />
+      </binding>
     </element>
     <element id="Communication.subject">
       <path value="Communication.subject" />
