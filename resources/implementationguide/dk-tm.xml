@@ -84,7 +84,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-system-submit-measurementl"/>
+        <reference value="OperationDefinition/ehealth-system-submit-measurement"/>
       </sourceReference>
     </resource>
     <resource>

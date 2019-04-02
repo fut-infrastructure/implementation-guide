@@ -1,0 +1,19 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-submit-measurement"/>
+   <name value="submit-measurement"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Receives, validates, and stores a bundle of related EHealthObservation, EHealthMedia and EHealthQuestionnaireResponse.&#xa;&#xa;Supplied EHealthProvenance must reference other resources in same bundle. To reference a resource the id of the resource to target has to have the format &quot;urn:oid:&lt;the oid>&quot; or &quot;urn:uuid:&lt;the uuid>&quot;. The eHealth infrastructure will substitute the id when saving the resources. &#xa;&#xa;This method is intended for uploading single measurements. Uploading large batches of resources is considered misuse.&#xa;&#xa;All input resources should reference the same patient and episode of care.&#xa;The eHealth infrastructure will implicitly add a Provenance resource targetting all resources received in the same measurement bundle."/>
+   <idempotent value="false"/>
+   <code value="submit-measurement"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="measurement"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+</OperationDefinition>
