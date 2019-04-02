@@ -77,7 +77,6 @@
       <path value="ActivityDefinition.extension" />
       <sliceName value="modifierRole" />
       <min value="1" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
@@ -121,7 +120,7 @@
           <valueString value="ActivityDefinitionType" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/cs/activitydefinition-codes" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
       </binding>
     </element>
   </differential>
