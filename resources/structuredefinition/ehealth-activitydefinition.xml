@@ -63,16 +63,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
       </type>
     </element>
-    <element id="ActivityDefinition.extension:minimumQuality">
-      <path value="ActivityDefinition.extension" />
-      <sliceName value="minimumQuality" />
-      <short value="Minumum quality requirements." />
-      <definition value="Minumum quality requirements such as quality in usage, device quality and situation quality." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-minimumQuality" />
-      </type>
-    </element>
     <element id="ActivityDefinition.extension:modifierRole">
       <path value="ActivityDefinition.extension" />
       <sliceName value="modifierRole" />
@@ -80,6 +70,14 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+      </type>
+    </element>
+    <element id="ActivityDefinition.extension:minimumQuality">
+      <path value="ActivityDefinition.extension" />
+      <sliceName value="minimumQuality" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
       </type>
     </element>
     <element id="ActivityDefinition.version">
@@ -111,6 +109,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ActivityDefinition.code">
