@@ -104,7 +104,6 @@
     <element id="Communication.medium:DkTmMedium">
       <path value="Communication.medium" />
       <sliceName value="DkTmMedium" />
-      <min value="1" />
       <max value="1" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
