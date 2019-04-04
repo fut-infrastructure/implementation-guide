@@ -52,7 +52,9 @@
           <valueString value="ContactPointSystem" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Organization.telecom.value">
@@ -80,14 +82,26 @@
     <element id="Organization.contact.telecom.extension:custodian">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="custodian" />
-      <short value="Custodian of this ContactPoint." />
-      <definition value="If this field is null or points to STS ORG or SOR - then it may be overridden by future automatic data imports from these systems. If the field refers to something else, this data will remain available - also after future automatic data imports." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian" />
       </type>
+    </element>
+    <element id="Organization.contact.telecom.system">
+      <path value="Organization.contact.telecom.system" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ContactPointSystem" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Organization.contact.telecom.value">
+      <path value="Organization.contact.telecom.value" />
+      <min value="1" />
     </element>
     <element id="Organization.endpoint">
       <path value="Organization.endpoint" />
