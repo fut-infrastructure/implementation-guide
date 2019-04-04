@@ -35,58 +35,12 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
-    <element id="ProcedureRequest.extension:responsible.extension:actor">
-      <path value="ProcedureRequest.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="ProcedureRequest.extension:responsible.extension:actor.value[x]:valueReference">
-      <path value="ProcedureRequest.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="ProcedureRequest.extension:responsibleHistory">
       <path value="ProcedureRequest.extension" />
       <sliceName value="responsibleHistory" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
-      </type>
-    </element>
-    <element id="ProcedureRequest.extension:responsibleHistory.extension:actor">
-      <path value="ProcedureRequest.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="ProcedureRequest.extension:responsibleHistory.extension:actor.value[x]:valueReference">
-      <path value="ProcedureRequest.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="ProcedureRequest.extension:referenceRange">

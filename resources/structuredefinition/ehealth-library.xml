@@ -62,14 +62,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
       </type>
     </element>
-    <element id="Library.identifier.assigner">
-      <path value="Library.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Library.version">
       <path value="Library.version" />
       <min value="1" />
@@ -95,14 +87,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterName" />
-      </type>
-    </element>
-    <element id="Library.parameter.profile">
-      <path value="Library.parameter.profile" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
-        <aggregation value="referenced" />
       </type>
     </element>
   </differential>
