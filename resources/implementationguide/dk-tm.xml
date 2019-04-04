@@ -84,7 +84,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-system-submit-measurementl"/>
+        <reference value="OperationDefinition/ehealth-system-submit-measurement"/>
       </sourceReference>
     </resource>
     <resource>
@@ -360,11 +360,6 @@
     </resource>
 
     <!-- Extensions -->
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-activitydefinition-minimumQuality"/>
-      </sourceReference>
-    </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-address"/>
