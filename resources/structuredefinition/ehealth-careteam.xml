@@ -111,5 +111,23 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="CareTeam.note.author[x]">
+      <path value="CareTeam.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

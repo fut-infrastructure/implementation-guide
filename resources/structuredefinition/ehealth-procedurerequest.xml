@@ -73,7 +73,7 @@
       <path value="ProcedureRequest.requisition.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
         <aggregation value="referenced" />
       </type>
     </element>
