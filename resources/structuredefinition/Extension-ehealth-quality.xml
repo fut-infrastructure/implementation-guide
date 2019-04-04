@@ -13,6 +13,7 @@
   <context value="Media" />
   <context value="QuestionnaireResponse" />
   <context value="Observation" />
+  <context value="ActivityDefinition" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

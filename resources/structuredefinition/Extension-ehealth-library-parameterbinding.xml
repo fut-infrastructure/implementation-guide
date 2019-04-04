@@ -82,7 +82,7 @@
       <path value="Extension.extension.valueIdentifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
         <aggregation value="referenced" />
       </type>
     </element>
@@ -213,7 +213,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:name">

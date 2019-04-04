@@ -33,7 +33,7 @@
         <strength value="required" />
         <description value="Questionnaire types" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/cs/questionnaire-types" />
+          <reference value="http://ehealth.sundhed.dk/vs/questionnaire-types" />
         </valueSetReference>
       </binding>
     </element>
