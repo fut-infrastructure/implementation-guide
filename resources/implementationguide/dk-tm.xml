@@ -518,12 +518,12 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-organisation-relatedto"/>
+        <reference value="StructureDefinition/Extension-ehealth-organization-relatedto"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-organisation-telecomcustodian"/>
+        <reference value="StructureDefinition/Extension-ehealth-organization-telecomcustodian"/>
       </sourceReference>
     </resource>
     <resource>
