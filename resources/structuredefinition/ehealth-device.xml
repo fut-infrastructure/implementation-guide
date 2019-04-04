@@ -70,14 +70,6 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
-    <element id="Device.location">
-      <path value="Device.location" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Device.note.author[x]">
       <path value="Device.note.author[x]" />
       <type>
