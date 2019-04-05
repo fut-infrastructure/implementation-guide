@@ -178,7 +178,9 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="https://www.hl7.org/fhir/valueset-quantity-comparator.html" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:valueMapping.extension:targetValue">
