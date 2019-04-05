@@ -69,6 +69,13 @@
       <comment value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="TDB" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
@@ -81,6 +88,13 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="TBD" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

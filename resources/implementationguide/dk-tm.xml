@@ -863,6 +863,11 @@
         <reference value="CodeSystem/ehealth-message-medium"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-plandefinition-modifier-role"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
@@ -1165,6 +1170,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-usage-quality"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+         <reference value="ValueSet/ehealth-plandefinition-modifier-role"/>
       </sourceReference>
     </resource>
 
