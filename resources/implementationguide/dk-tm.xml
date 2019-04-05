@@ -641,6 +641,11 @@
         <reference value="StructureDefinition/Extension-ehealth-modifier-role"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-type"/>
+      </sourceReference>
+    </resource>
 
     <!-- Capability statement -->
     <resource>
