@@ -52,9 +52,7 @@
           <valueString value="ContactPointSystem" />
         </extension>
         <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
-        </valueSetReference>
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
       </binding>
     </element>
     <element id="Organization.telecom.value">
@@ -94,9 +92,7 @@
           <valueString value="ContactPointSystem" />
         </extension>
         <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
-        </valueSetReference>
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
       </binding>
     </element>
     <element id="Organization.contact.telecom.value">
