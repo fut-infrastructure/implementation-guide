@@ -588,7 +588,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-sliderstepvalue"/>
+        <reference value="StructureDefinition/Extension-ehealth-questionnaire-sliderStepValue"/>
       </sourceReference>
     </resource>
     <resource>
