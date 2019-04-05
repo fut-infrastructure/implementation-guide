@@ -173,7 +173,7 @@
       <sourceReference>
         <reference value="Provenance/provenance-message-activate-valid"/>
       </sourceReference>
-      <exampleFor value="StructureDefinition/ehealth-provenance"/>
+      <exampleFor value="StructureDefinition/ehealth-detached-provenance"/>
     </resource>
     <resource>
       <example value="true"/>
@@ -331,6 +331,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-provenance"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-detached-provenance"/>
       </sourceReference>
     </resource>
     <resource>
