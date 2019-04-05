@@ -32,6 +32,13 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="TBD" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation" />
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
