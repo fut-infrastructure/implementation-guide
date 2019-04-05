@@ -18,6 +18,7 @@ ehealth-practitioner
 ehealth-practitionerRole
 ehealth-procedurerequest
 ehealth-provenance
+ehealth-detached-provenance
 ehealth-questionnaire
 ehealth-questionnaireresponse
 ehealth-task
