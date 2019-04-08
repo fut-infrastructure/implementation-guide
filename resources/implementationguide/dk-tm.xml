@@ -868,6 +868,11 @@
         <reference value="CodeSystem/ehealth-plandefinition-modifier-role"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-reference-range-type"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
@@ -1176,6 +1181,12 @@
       <example value="false"/>
       <sourceReference>
          <reference value="ValueSet/ehealth-plandefinition-modifier-role"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-reference-range-type"/>
       </sourceReference>
     </resource>
 
