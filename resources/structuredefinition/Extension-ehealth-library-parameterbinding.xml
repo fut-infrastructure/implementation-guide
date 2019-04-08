@@ -42,6 +42,23 @@
         <code value="string" />
       </type>
     </element>
+    <element id="Extension.extension:boundParameterName">
+      <path value="Extension.extension" />
+      <sliceName value="boundParameterName" />
+      <short value="Name of the parameter in the parameter definition of this library which shall be used (bound to) the parameter given in parameterName." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:boundParameterName.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="boundParameterName" />
+    </element>
+    <element id="Extension.extension:boundParameterName.value[x]:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="Extension.extension:resource">
       <path value="Extension.extension" />
       <sliceName value="resource" />
@@ -213,21 +230,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
-      </type>
-    </element>
-    <element id="Extension.extension:name">
-      <path value="Extension.extension" />
-      <sliceName value="name" />
-    </element>
-    <element id="Extension.extension:name.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="name" />
-    </element>
-    <element id="Extension.extension:name.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <type>
-        <code value="string" />
       </type>
     </element>
     <element id="Extension.url">

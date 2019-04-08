@@ -37,6 +37,8 @@ All notable changes to this project will be documented on this page.
 
 - Added custom operations for transformations between DK-HL7 QRD/eHealth QuestionnaireResponse, DK-HL7 APD/eHealth Appointment and DK-HL7 PHRM/eHealth Observation.
 
+- Added ehealth-guidanceresponse used as return parameter in library$evaluate operation
+
 #### Changed
 
 - CarePlan, changed, CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
@@ -144,6 +146,7 @@ All notable changes to this project will be documented on this page.
 - Library, changed, Library.relatedArtifact.resource marked Referenced
 - Library, changed, Library.parameter.profile marked Referenced
 - Library, changed, Library.dataRequirement.codeFilter.valueSet[x] marked Referenced
+- Library, changed, Library.parameterbinding.name renamed to boundParameterName
 
 - Media, changed, Media.basedOn marked Referenced
 - Media, changed, Media.subject marked Referenced
