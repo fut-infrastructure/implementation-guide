@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="ehealth-clinicalimpression-finding-codes"/>
-    <url value="http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes"/>
+    <id value="ehealth-clinicalimpression-codes"/>
+    <url value="http://ehealth.sundhed.dk/vs/clinicalimpression-codes"/>
     <version value="0.6.0"/>
     <name value="ClinicalImpressionCodes"/>
     <title value="ClinicalImpressionCodes"/>
