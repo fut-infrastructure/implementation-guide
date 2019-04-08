@@ -30,6 +30,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/task-category" />
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
