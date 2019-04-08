@@ -47,6 +47,10 @@
       <path value="Extension.extension" />
       <sliceName value="situationQuality" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/situation-quality" />
+      </binding>
     </element>
     <element id="Extension.extension:situationQuality.url">
       <path value="Extension.extension.url" />
