@@ -75,6 +75,12 @@
       <sliceName value="type" />
       <short value="Reference range qualifier" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
