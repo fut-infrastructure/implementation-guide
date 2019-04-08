@@ -69,6 +69,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/organization-relation-type" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:period">
       <path value="Extension.extension" />
