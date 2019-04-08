@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse" />
+  <name value="ehealth-guidanceresponse" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="GuidanceResponse" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/GuidanceResponse" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="GuidanceResponse.module">
+      <path value="GuidanceResponse.module" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceDefinition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.subject">
+      <path value="GuidanceResponse.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.context">
+      <path value="GuidanceResponse.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.performer">
+      <path value="GuidanceResponse.performer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.result">
+      <path value="GuidanceResponse.result" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
