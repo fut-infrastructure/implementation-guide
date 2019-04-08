@@ -720,6 +720,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-conditions"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-consent-category"/>
       </sourceReference>
     </resource>
