@@ -75,6 +75,10 @@
       <path value="Extension.extension" />
       <sliceName value="operationQuality" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/usage-quality" />
+      </binding>
     </element>
     <element id="Extension.extension:operationQuality.url">
       <path value="Extension.extension.url" />
@@ -87,11 +91,22 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set of hierarchical codes stating the quality of a measurement operation" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/usage-quality" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:dataQuality">
       <path value="Extension.extension" />
       <sliceName value="dataQuality" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/device-measuring-quality" />
+      </binding>
     </element>
     <element id="Extension.extension:dataQuality.url">
       <path value="Extension.extension.url" />
@@ -104,6 +119,13 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="Value set of hierarchical codes stating the quality of the measurement data" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-measuring-quality" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:dataActuality">
       <path value="Extension.extension" />
