@@ -775,6 +775,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-device-use-reason"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-document-class"/>
       </sourceReference>
     </resource>
@@ -1066,6 +1071,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-device-types"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-use-reason"/>
       </sourceReference>
     </resource>
     <resource>

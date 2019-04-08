@@ -51,6 +51,24 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="DeviceUseStatement.indication">
+      <path value="DeviceUseStatement.indication" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-use-reason" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="DeviceUseStatement.indication.coding">
+      <path value="DeviceUseStatement.indication.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-use-reason" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="DeviceUseStatement.note">
       <path value="DeviceUseStatement.note" />
       <short value="Additional details (comments, instructions)" />
