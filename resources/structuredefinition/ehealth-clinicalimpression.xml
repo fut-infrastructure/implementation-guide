@@ -19,7 +19,6 @@
     </element>
     <element id="ClinicalImpression.code">
       <path value="ClinicalImpression.code" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ClinicalImpression.subject">
@@ -102,20 +101,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
       </type>
     </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters">
-      <path value="ClinicalImpression.investigation.extension.extension" />
-      <sliceName value="inputParameters" />
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters.valueReference:valueReference">
-      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
-        <aggregation value="contained" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
       <path value="ClinicalImpression.investigation.extension.extension" />
       <sliceName value="outputParameters" />
@@ -127,19 +112,6 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
         <aggregation value="contained" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage">
-      <path value="ClinicalImpression.investigation.extension.extension" />
-      <sliceName value="evaluationMessage" />
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage.valueReference:valueReference">
-      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
         <aggregation value="referenced" />
       </type>
     </element>

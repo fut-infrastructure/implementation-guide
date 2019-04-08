@@ -45,7 +45,9 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/devicemetric-quality-types" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:value">

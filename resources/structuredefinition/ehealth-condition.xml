@@ -12,18 +12,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.code">
-      <path value="Condition.code" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConditionKind" />
-        </extension>
-        <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/condition" />
-        </valueSetReference>
-      </binding>
-    </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
       <type>

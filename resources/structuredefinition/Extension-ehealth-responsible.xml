@@ -45,17 +45,19 @@
       <path value="Extension.extension.url" />
       <fixedUri value="type" />
     </element>
-    <element id="Extension.extension:type.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
         <description value="Responsibility type" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/responsibility-types" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/responsibility-types" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:actor">

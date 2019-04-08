@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-practitionerRole" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerRole" />
-  <name value="ehealth-practitionerRole" />
+  <id value="ehealth-practitionerrole" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole" />
+  <name value="ehealth-practitionerrole" />
   <title value="eHealth PractitionerRole" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
