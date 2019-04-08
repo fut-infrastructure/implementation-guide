@@ -28,6 +28,21 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/careteam-participant-role" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.valueCodeableConcept.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/careteam-participant-role" />
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
