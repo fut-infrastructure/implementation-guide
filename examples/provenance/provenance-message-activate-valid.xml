@@ -1,7 +1,7 @@
 <Provenance xmlns="http://hl7.org/fhir">
     <id value="provenance-message-activate-valid"/>
     <meta>
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-detached-provenance"/>
     </meta>
     <target>
         <reference value="http://example.com/Communication/1234"/>
