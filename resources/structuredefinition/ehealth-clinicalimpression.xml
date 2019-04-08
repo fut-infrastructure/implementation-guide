@@ -21,6 +21,25 @@
       <path value="ClinicalImpression.code" />
       <min value="1" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ClinicalImpressionCode" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/clinicalimpression-codes" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="ClinicalImpression.code.coding">
+      <path value="ClinicalImpression.code.coding" />
+      <binding>
+        <strength value="required" />
+        <description value="Identifies categories of clinical impressions.  This is a place-holder only.  It may be removed" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/clinicalimpression-codes" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="ClinicalImpression.subject">
       <path value="ClinicalImpression.subject" />

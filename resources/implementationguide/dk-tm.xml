@@ -999,6 +999,12 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+          <reference value="ValueSet/ehealth-clinicalimpression-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/ehealth-clinicalimpression-finding-codes"/>
       </sourceReference>
     </resource>
