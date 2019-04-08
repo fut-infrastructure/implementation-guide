@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="TBD2"/>
+        <display value="Example value - Under construction"/>
+        <definition value="Example value - Under construction"/>
+    </concept>
 </CodeSystem>
