@@ -95,6 +95,20 @@
           <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
         </valueSetReference>
       </binding>
+<!--      <binding>-->
+<!--        <strength value="required" />-->
+<!--        <description value="owner (Display:Owner)" />-->
+<!--        <valueSetReference>-->
+<!--          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />-->
+<!--        </valueSetReference>-->
+<!--      </binding>-->
+<!--      <binding>-->
+<!--        <strength value="required" />-->
+<!--        <description value="co-author (Display: Co-author )" />-->
+<!--        <valueSetReference>-->
+<!--          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />-->
+<!--        </valueSetReference>-->
+<!--      </binding>-->
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
