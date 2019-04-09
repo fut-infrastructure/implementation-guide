@@ -32,10 +32,6 @@
       <definition value="The type of property; e.g. color, weight, ease-of-use, language, CE-labelling, etc. Properties are static characteristics of the Device and do not change over time or across calibration cycles." />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/devicemetric-property-types" />
-      </binding>
     </element>
     <element id="Extension.extension:type.url">
       <path value="Extension.extension.url" />
@@ -50,7 +46,9 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/cs/devicemetric-property-types" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/devicemetric-property-types" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:value">

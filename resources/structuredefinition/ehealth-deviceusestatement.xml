@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-deviceUseStatement" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceUseStatement" />
-  <name value="ehealth-deviceUseStatement" />
+  <id value="ehealth-deviceusestatement" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement" />
+  <name value="ehealth-deviceusestatement" />
   <title value="eHealth DeviceUseStatement" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />

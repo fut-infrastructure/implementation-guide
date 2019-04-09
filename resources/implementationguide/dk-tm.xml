@@ -543,7 +543,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-plandefinitionrole"/>
+        <reference value="StructureDefinition/Extension-ehealth-plandefinition-role"/>
       </sourceReference>
     </resource>
     <resource>

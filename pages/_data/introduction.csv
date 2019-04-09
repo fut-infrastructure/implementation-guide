@@ -7,7 +7,6 @@ ehealth-communication
 ehealth-consent
 ehealth-device
 ehealth-devicemetric
-ehealth-deviceusestatement
 ehealth-episodeofcare
 ehealth-library
 ehealth-media
@@ -15,7 +14,6 @@ ehealth-observation
 ehealth-organization
 ehealth-plandefinition
 ehealth-practitioner
-ehealth-practitionerRole
 ehealth-procedurerequest
 ehealth-provenance
 ehealth-detached-provenance

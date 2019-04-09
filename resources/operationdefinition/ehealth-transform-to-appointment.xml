@@ -3,7 +3,7 @@
    <name value="transformToAppointment"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Transforms a DK-HL7 Appointment Document (APD) resource to a eHealth Appointment resource. The input FHIR DocumentReference contains the CDA XML for the DK-HL7 Appointment Document. The returned Bundle contains a eHealth Appointment and a Composition resource which reference the returned eHealth Appointment."/>
+   <description value="Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."/>
    <idempotent value="true"/>
    <code value="transformToAppointment"/>
    <system value="true"/>

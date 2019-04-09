@@ -42,17 +42,19 @@
       <path value="Extension.extension.url" />
       <fixedUri value="status" />
     </element>
-    <element id="Extension.extension:status.value[x]:valueCode">
-      <path value="Extension.extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.extension:status.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
         <description value="Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/careplan-status" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/careplan-status" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.extension:period">

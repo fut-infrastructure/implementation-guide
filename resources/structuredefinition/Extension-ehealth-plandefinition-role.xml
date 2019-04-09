@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-planDefinitionRole" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinitionRole" />
+  <id value="ehealth-plandefinition-role" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition-role" />
   <name value="role" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
@@ -18,7 +18,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinitionRole" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition-role" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
@@ -26,7 +26,6 @@
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />

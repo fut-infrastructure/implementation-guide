@@ -104,13 +104,6 @@
     <element id="CarePlan.status">
       <path value="CarePlan.status" />
       <short value="draft | active | suspended | completed | entered-in-error | cancelled" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CarePlanStatus" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/careplan-status" />
-      </binding>
     </element>
     <element id="CarePlan.intent">
       <path value="CarePlan.intent" />
