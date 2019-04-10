@@ -1,20 +1,27 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
-   <id value="Library--evaluate"/>
+   <id value="Library-i-evaluate"/>
    <name value="evaluate"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="The operation causes the parameters passed as input to be evaluated against the decision support rule identified by the Library resource, returning the produced output and/or errors. The operation is applicable for logic-library type (see Library.type) Library resource that identifies a decision support rule and defines its parameters. The input Parameters shall be structured in accordance with the Library.parameter and also contain a value for each parameter congruent with the parameter type."/>
+   <description value="This operation evaluates parameters passed as input against the decision support rule identified by the ehealth-library resource. It returns the computed clinical decision support result and/or errors.&#xa;&#xa;The operation is applicable for an ehealth-library resource with type=logic-library. Such a resource identifies a decision support rule and defines its parameters.&#xa;### Parameter description&#xa;- 1..1 Parameters: HL7 FHIR [Parameters](https://www.hl7.org/fhir/stu3/parameters.html) resource containing input parameters for the clinical decision support computation. See ehealth-library.parameters for required parameters.&#xa;&#xa;### Output description&#xa;Upon success this operation returns an ehealth-guidanceresponse resource containing the decision support result."/>
    <idempotent value="true"/>
    <code value="evaluate"/>
    <resource value="Library"/>
    <system value="false"/>
-   <type value="true"/>
-   <instance value="false"/>
+   <type value="false"/>
+   <instance value="true"/>
    <parameter>
       <name value="parameters"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="Parameters"/>
+   </parameter>
+   <parameter>
+      <name value="result"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="GuidanceResponse"/>
    </parameter>
 </OperationDefinition>
