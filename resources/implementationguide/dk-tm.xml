@@ -888,6 +888,11 @@
         <reference value="CodeSystem/ehealth-reference-range-type"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/medcom"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
