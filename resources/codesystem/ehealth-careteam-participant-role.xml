@@ -18,8 +18,8 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="monitoringResponsible"/>
+        <display value="Monitoring responsible"/>
+        <definition value="Monitoring responsible"/>
     </concept>
 </CodeSystem>
