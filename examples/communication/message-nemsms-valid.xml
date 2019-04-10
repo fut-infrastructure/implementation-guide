@@ -19,18 +19,12 @@
     <text value="NemSMS"/>
   </medium>
   <recipient>
-    <identifier>
-      <system value="urn:oid:1.2.208.176.1.2"/>
-      <value value="1234567899"/>
-    </identifier>
+    <reference value="http://practitioner.ehealth.sundhed.dk/Practitioner/123"/>
   </recipient>
   <sent value="2018-12-12T18:01:10-08:00"/>
   <received value="2018-12-12T18:01:11-08:00"/>
   <sender>
-    <identifier>
-      <system value="urn:oid:1.2.208.176.1.1.2"/>
-      <value value="5798000363007"/>
-    </identifier>
+    <reference value="http://patient.ehealth.sundhed.dk/Patient/XXX"/>
   </sender>
   <payload>
     <contentString value="Du har modtaget en ny Besked. Benyt dit system til telemedicin for at læse beskeden."/>
