@@ -18,15 +18,7 @@
     <description value="Treatment | Self-treatment."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/topic-type"/>
-            <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
-                </designation>
-            </concept>
+            <system value="http://hl7.org/fhir/definition-topic"/>
         </include>
     </compose>
 </ValueSet>
