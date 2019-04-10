@@ -37,8 +37,9 @@ All notable changes to this project will be documented on this page.
 - changed intendedOrganization, reference marked Referenced
 
 #### CarePlan (ehealth-careplan)
-- changed monitoringResponsible, reference marked Referenced
-- changed monitoringResponsibleHistory, reference marked Referenced
+- added responsibilitySummary
+- removed monitoringResponsible
+- removed monitoringResponsibleHistory
 - changed CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - changed CarePlan.extension:monitoringResponsibleHistory.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - changed CarePlan.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
@@ -200,8 +201,8 @@ All notable changes to this project will be documented on this page.
 - PractitionerRole, changed, PractitionerRole.endpoint marked Referenced
 
 #### ProcedureRequest (ehealth-procedurerequest)
-- ProcedureRequest, changed, ProcedureRequest.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
-- ProcedureRequest, changed, ProcedureRequest.extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
+- ProcedureRequest, removed, ProcedureRequest.extension:responsible
+- ProcedureRequest, removed, ProcedureRequest.extension:responsibleHistory
 - ProcedureRequest, changed, ProcedureRequest.definition marked Referenced
 - ProcedureRequest, changed, ProcedureRequest.requisition.assigner marked Referenced
 - ProcedureRequest, changed, ProcedureRequest.subject marked Referenced
