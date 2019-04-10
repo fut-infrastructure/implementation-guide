@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="ehealth-activitydefinition-code"/>
-    <url value="http://ehealth.sundhed.dk/vs/activitydefinition-code"/>
+    <id value="ehealth-plandefinition-role"/>
+    <url value="http://ehealth.sundhed.dk/vs/plandefinition-role"/>
     <version value="0.6.0"/>
-    <name value="ActivityDefinitionCode"/>
-    <title value="ActivityDefinitionCode"/>
+    <name value="PlanDefinitionRole"/>
+    <title value="PlanDefinitionRole"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-08"/>
@@ -15,10 +15,10 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Activity Definition Code."/>
+    <description value="Value set of plan definition role codes."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/activitydefinition-code"/>
+            <system value="http://ehealth.sundhed.dk/cs/plandefinition-role"/>
             <concept>
                 <code value="TBD"/>
                 <display value="Example value - Under construction"/>
@@ -27,16 +27,12 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
-        </include>
-        <include>
-            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
-            <!-- system: urn:oid:1.2.208.176.2.1-->
             <concept>
-                <code value="NPU03011"/>
-                <display value="O2 sat.;Hb(aB)"/>
+                <code value="monitoringResponsible"/>
+                <display value="Monitoring responsible"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="O2 sat.;Hb(aB)"/>
+                    <value value="Monitoring responsible"/>
                 </designation>
             </concept>
         </include>
