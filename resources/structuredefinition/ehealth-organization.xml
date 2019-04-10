@@ -88,6 +88,8 @@
     <element id="Organization.contact.telecom.extension:system">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="system" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem" />
