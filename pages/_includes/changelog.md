@@ -163,6 +163,7 @@ All notable changes to this project will be documented on this page.
 - Media, changed, Media.note.author[x] marked Referenced
 
 #### Communication (ehealth-message)
+- Message, changed, Communication.medium is now optional (not always relevant)
 - Message, changed, Communication.definition marked Referenced
 - Message, changed, Communication.basedOn marked Referenced
 - Message, changed, Communication.partOf marked Referenced
@@ -240,6 +241,12 @@ All notable changes to this project will be documented on this page.
 - Task, changed, Task.note.author[x] marked Referenced
 - Task, changed, Task.relevantHistory marked Referenced
 - Task, changed, Task.restriction.recipient marked Referenced
+
+#### DetachedProvenance (ehealth-detached-provenance)
+- Added as an unchanged copy of the existing ehealth-provenance to allow provenance to exist on multiple HAPI FHIR instances
+
+#### RelatedPerson (ehealth-related-person)
+- RelatedPerson, changed, RelatedPerson.relationship value set should not be a ResourceReference
 
 #### GuidanceResponse (ehealth-guidanceresponse)
 - added the profile as it is used as return parameter in library$evaluate operation
