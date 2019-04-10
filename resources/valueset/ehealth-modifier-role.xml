@@ -1,9 +1,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="ehealth-plandefinition-modifier-role"/>
-    <url value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role"/>
+    <id value="ehealth-modifier-role"/>
+    <url value="http://ehealth.sundhed.dk/vs/modifier-role"/>
     <version value="0.6.0"/>
-    <name value="PlanDefinitionModifierRole"/>
-    <title value="PlanDefinitionModifierRole"/>
+    <name value="ModifierRole"/>
+    <title value="ModifierRole"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2019-02-08"/>
@@ -18,21 +18,21 @@
     <description value="Value set of plan definition modifier role codes."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/plandefinition-modifier-role"/>
+            <system value="http://ehealth.sundhed.dk/cs/modifier-role"/>
             <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
+                <code value="owner"/>
+                <display value="Owner"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
+                    <value value="Owner"/>
                 </designation>
             </concept>
             <concept>
-                <code value="TBD2"/>
-                <display value="Example value - Under construction"/>
+                <code value="co-author"/>
+                <display value="Co-author"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
+                    <value value="Co-author"/>
                 </designation>
             </concept>
         </include>

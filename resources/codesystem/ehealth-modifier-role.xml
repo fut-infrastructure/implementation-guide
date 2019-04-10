@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="ehealth-plandefinition-modifier-role"/>
-    <url value="http://ehealth.sundhed.dk/cs/plandefinition-modifier-role"/>
+    <id value="ehealth-modifier-role"/>
+    <url value="http://ehealth.sundhed.dk/cs/modifier-role"/>
     <version value="0.6.0"/>
-    <name value="PlanDefinitionModifierRole"/>
+    <name value="ModifierRole"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -14,17 +14,17 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Plan Definition Modifier Role"/>
+    <description value="Modifier Role"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="owner"/>
+        <display value="Owner"/>
+        <definition value="Owner"/>
     </concept>
     <concept>
-        <code value="TBD2"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="co-author"/>
+        <display value="Co-author"/>
+        <definition value="Co-author"/>
     </concept>
 </CodeSystem>

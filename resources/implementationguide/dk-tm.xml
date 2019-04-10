@@ -880,7 +880,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-plandefinition-modifier-role"/>
+        <reference value="CodeSystem/ehealth-modifier-role"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1212,7 +1212,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-         <reference value="ValueSet/ehealth-plandefinition-modifier-role"/>
+         <reference value="ValueSet/ehealth-modifier-role"/>
       </sourceReference>
     </resource>
     <resource>

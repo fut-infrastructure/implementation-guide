@@ -71,9 +71,9 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="TDB" />
+        <description value="" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>
       </binding>
     </element>
@@ -92,23 +92,9 @@
         <strength value="required" />
         <description value="TBD" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>
       </binding>
-<!--      <binding>-->
-<!--        <strength value="required" />-->
-<!--        <description value="owner (Display:Owner)" />-->
-<!--        <valueSetReference>-->
-<!--          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />-->
-<!--        </valueSetReference>-->
-<!--      </binding>-->
-<!--      <binding>-->
-<!--        <strength value="required" />-->
-<!--        <description value="co-author (Display: Co-author )" />-->
-<!--        <valueSetReference>-->
-<!--          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />-->
-<!--        </valueSetReference>-->
-<!--      </binding>-->
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
