@@ -71,7 +71,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="" />
+        <description value="TDB" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>
