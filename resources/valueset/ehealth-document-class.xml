@@ -29,7 +29,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://www.medcom.dk"/>
+            <system value="http://www.example.com/medcom/document-class"/>
             <concept>
                 <code value="001"/>
                 <display value="001"/>

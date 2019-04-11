@@ -898,7 +898,16 @@
         <reference value="CodeSystem/medcom"/>
       </sourceReference>
     </resource>
-
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/medcom-document-class"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/snomed"/>
+      </sourceReference>
+    </resource>
     <!-- ValueSets-->
 
     <resource>

@@ -16,9 +16,6 @@
         </telecom>
     </contact>
     <description value="Format Codes value set."/>
-    <include>
-        <system value="http://sundhedsdatastyrelsen.dk/npu"/>
-    </include>
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/event-type-codes"/>
@@ -30,6 +27,9 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+        </include>
+        <include>
+            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
         </include>
     </compose>
 </ValueSet>
