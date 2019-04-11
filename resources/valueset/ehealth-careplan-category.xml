@@ -28,5 +28,24 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="412776001"/>
+                <display value="Chronic obstructive pulmonary disease clinical management plan"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Chronic obstructive pulmonary disease clinical management plan"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="412777005"/>
+                <display value="Diabetes clinical management plan"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Diabetes clinical management plan"/>
+                </designation>
+            </concept>
+        </include>
     </compose>
 </ValueSet>

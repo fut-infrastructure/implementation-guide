@@ -28,5 +28,16 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://www.medcom.dk"/>
+            <concept>
+                <code value="001"/>
+                <display value="001"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="001"/>
+                </designation>
+            </concept>
+        </include>
     </compose>
 </ValueSet>

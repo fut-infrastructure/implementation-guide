@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="Snomed"/>
+    <url value="http://snomed.info/sct"/>
+    <version value="1.0.0"/>
+    <name value="Snomed Codes"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-01-24"/>
+    <publisher value="The Danish Health Data Authority"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://snomed.info/sct"/>
+        </telecom>
+    </contact>
+    <description value="Observation codes used for communication and administration of laboratory results in Denmark."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="412776001"/>
+        <display value="Chronic obstructive pulmonary disease clinical management plan"/>
+        <definition value="Chronic obstructive pulmonary disease clinical management plan"/>
+    </concept>
+    <concept>
+        <code value="412777005"/>
+        <display value="Diabetes clinical management plan"/>
+        <definition value="Diabetes clinical management plan"/>
+    </concept>
+</CodeSystem>

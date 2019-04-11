@@ -22,4 +22,19 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="53576-5"/>
+        <display value="Personal health monitoring report Document"/>
+        <definition value="Personal health monitoring report Document"/>
+    </concept>
+    <concept>
+        <code value="74468-0"/>
+        <display value="Questionnaire Form Definition Document"/>
+        <definition value="Questionnaire Form Definition Document"/>
+    </concept>
+    <concept>
+        <code value="74465-6"/>
+        <display value="Questionnaire Response Document"/>
+        <definition value="Questionnaire Response Document"/>
+    </concept>
 </CodeSystem>
