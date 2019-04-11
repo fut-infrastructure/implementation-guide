@@ -35,22 +35,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-statusHistory" />
       </type>
     </element>
-    <element id="CarePlan.extension:monitoringResponsible">
-      <path value="CarePlan.extension" />
-      <sliceName value="monitoringResponsible" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-monitoringResponsible" />
-      </type>
-    </element>
-    <element id="CarePlan.extension:monitoringResponsibleHistory">
-      <path value="CarePlan.extension" />
-      <sliceName value="monitoringResponsibleHistory" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-monitoringResponsibleHistory" />
-      </type>
-    </element>
     <element id="CarePlan.extension:responsible">
       <path value="CarePlan.extension" />
       <sliceName value="responsible" />
@@ -65,6 +49,19 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:responsibilitySummary">
+      <path value="CarePlan.extension" />
+      <sliceName value="responsibilitySummary" />
+      <short value="High level summary of responsibilities presented to patient." />
+      <definition value="High level summary of responsibilities presented to patient." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-responsibilitySummary" />
       </type>
     </element>
     <element id="CarePlan.definition">

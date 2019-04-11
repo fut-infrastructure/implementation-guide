@@ -19,8 +19,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - added modifierRole extension as a replacement to author and owner
 
 #### CarePlan (ehealth-careplan)
-- changed monitoringResponsible, reference marked Referenced
-- changed monitoringResponsibleHistory, reference marked Referenced
+- added responsibilitySummary
+- removed monitoringResponsible
+- removed monitoringResponsibleHistory
 - changed CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - changed CarePlan.extension:monitoringResponsibleHistory.extension:monitoringResponsible.value[x]:valueReference marked Referenced
 - changed CarePlan.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
@@ -194,8 +195,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed endpoint marked Referenced
 
 #### ProcedureRequest (ehealth-procedurerequest)
-- changed extension:responsible.extension:actor.value[x]:valueReference marked Referenced
-- changed extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
+- deleted extension:responsible
+- deleted extension:responsibleHistory
 - changed definition marked Referenced
 - changed requisition.assigner marked Referenced
 - changed subject marked Referenced
