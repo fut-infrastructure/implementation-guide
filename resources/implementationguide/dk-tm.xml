@@ -538,6 +538,16 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-telecomsystem"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-telecomvalue"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-owner"/>
       </sourceReference>
     </resource>

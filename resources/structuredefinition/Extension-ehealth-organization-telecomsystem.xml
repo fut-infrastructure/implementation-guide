@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-organization-telecomSystem" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem" />
+  <name value="telecomSystem" />
+  <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Organization.contact.telecom" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem" />
+    </element>
+    <element id="Extension.value[x]:valueCode">
+      <path value="Extension.valueCode" />
+      <sliceName value="valueCode" />
+      <type>
+        <code value="code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="phone | fax | email | pager | url | sms | ean | other" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
