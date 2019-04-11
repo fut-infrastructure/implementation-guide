@@ -27,22 +27,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="ProcedureRequest.extension:responsible">
-      <path value="ProcedureRequest.extension" />
-      <sliceName value="responsible" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
-      </type>
-    </element>
-    <element id="ProcedureRequest.extension:responsibleHistory">
-      <path value="ProcedureRequest.extension" />
-      <sliceName value="responsibleHistory" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
-      </type>
-    </element>
     <element id="ProcedureRequest.extension:referenceRange">
       <path value="ProcedureRequest.extension" />
       <sliceName value="referenceRange" />

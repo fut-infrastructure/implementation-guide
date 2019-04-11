@@ -387,12 +387,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-careplan-monitoringresponsible"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-careplan-monitoringresponsiblehistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-careplan-responsibilitysummary"/>
       </sourceReference>
     </resource>
     <resource>
