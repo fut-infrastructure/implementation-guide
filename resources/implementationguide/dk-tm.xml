@@ -48,19 +48,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-organization-fetch-external"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
         <reference value="OperationDefinition/ehealth-plan-definition-apply"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="OperationDefinition/ehealth-practitioner-fetch-external"/>
       </sourceReference>
     </resource>
     <resource>
@@ -73,12 +61,6 @@
       <example value="false"/>
       <sourceReference>
         <reference value="OperationDefinition/ehealth-system-search-measurements"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="OperationDefinition/ehealth-system-search-organization-and-practitioner-external"/>
       </sourceReference>
     </resource>
     <resource>
