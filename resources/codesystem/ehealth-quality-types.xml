@@ -27,4 +27,19 @@
         <display value="Example value2 - Under construction"/>
         <definition value="Example value2 - Under construction"/>
     </concept>
+    <concept>
+        <code value="SQ"/>
+        <display value="Situation Quality"/>
+        <definition value="Situation Quality"/>
+    </concept>
+    <concept>
+        <code value="DMQ"/>
+        <display value="Device Measuring Quality"/>
+        <definition value="Device Measuring Quality"/>
+    </concept>
+    <concept>
+        <code value="UQ"/>
+        <display value="Usage Quality"/>
+        <definition value="Usage Quality"/>
+    </concept>
 </CodeSystem>

@@ -28,5 +28,8 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
+        </include>
     </compose>
 </ValueSet>

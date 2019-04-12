@@ -22,4 +22,44 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="Mandatory"/>
+        <display value="Mandatory"/>
+        <definition value="Mandatory"/>
+    </concept>
+    <concept>
+        <code value="Recommended"/>
+        <display value="Recommended"/>
+        <definition value="Recommended"/>
+    </concept>
+    <concept>
+        <code value="Confirmed"/>
+        <display value="Confirmed"/>
+        <definition value="Confirmed"/>
+    </concept>
+    <concept>
+        <code value="NotRecommended"/>
+        <display value="NotRecommended"/>
+        <definition value="NotRecommended"/>
+    </concept>
+    <concept>
+        <code value="Applicable"/>
+        <display value="Applicable"/>
+        <definition value="Applicable"/>
+    </concept>
+    <concept>
+        <code value="PhasedOut"/>
+        <display value="PhasedOut"/>
+        <definition value="PhasedOut"/>
+    </concept>
+    <concept>
+        <code value="Observed"/>
+        <display value="Observed"/>
+        <definition value="Observed"/>
+    </concept>
+    <concept>
+        <code value="Planned"/>
+        <display value="Planned"/>
+        <definition value="Planned"/>
+    </concept>
 </CodeSystem>

@@ -73,7 +73,7 @@
         <strength value="required" />
         <description value="TDB" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>
       </binding>
     </element>
@@ -92,7 +92,7 @@
         <strength value="required" />
         <description value="TBD" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/plandefinition-modifier-role" />
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>
       </binding>
     </element>

@@ -27,6 +27,30 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="Triage"/>
+                <display value="Triage"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Triage"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Quality"/>
+                <display value="Quality"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Quality"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Generic"/>
+                <display value="Generic"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Generic"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

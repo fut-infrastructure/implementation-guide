@@ -35,6 +35,30 @@
                     <value value="Example value2 - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="SQ"/>
+                <display value="Situation Quality"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Situation Quality"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="DMQ"/>
+                <display value="Device Measuring Quality"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Device Measuring Quality"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="UQ"/>
+                <display value="Usage Quality"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Usage Quality"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

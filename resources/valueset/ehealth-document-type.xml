@@ -28,5 +28,32 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="53576-5"/>
+                <display value="Personal health monitoring report Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Personal health monitoring report Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="74468-0"/>
+                <display value="Questionnaire Form Definition Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Questionnaire Form Definition Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="74465-6"/>
+                <display value="Questionnaire Response Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Questionnaire Response Document"/>
+                </designation>
+            </concept>
+        </include>
     </compose>
 </ValueSet>

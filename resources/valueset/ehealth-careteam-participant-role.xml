@@ -20,11 +20,11 @@
         <include>
             <system value="http://ehealth.sundhed.dk/cs/careteam-participant-role"/>
             <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
+                <code value="monitoringResponsible"/>
+                <display value="Monitoring responsible"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
+                    <value value="Monitoring responsible"/>
                 </designation>
             </concept>
         </include>

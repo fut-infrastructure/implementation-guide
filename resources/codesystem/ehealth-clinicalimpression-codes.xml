@@ -22,4 +22,29 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="TriagingResult"/>
+        <display value="Result of triaging"/>
+        <definition value="Result of triaging"/>
+    </concept>
+    <concept>
+        <code value="MeasurementAssessment"/>
+        <display value="Assessment of measurement"/>
+        <definition value="Assessment of measurement"/>
+    </concept>
+    <concept>
+        <code value="MeasurementTypeUnexpected"/>
+        <display value="Measurement of unexpected type"/>
+        <definition value="Measurement of unexpected type"/>
+    </concept>
+    <concept>
+        <code value="MeasurementTimingUnexpected"/>
+        <display value="Measurement not expected"/>
+        <definition value="Measurement not expected"/>
+    </concept>
+    <concept>
+        <code value="ClinicalDecisionSupportResult"/>
+        <display value="Generic result of CDS"/>
+        <definition value="Generic result of CDS"/>
+    </concept>
 </CodeSystem>

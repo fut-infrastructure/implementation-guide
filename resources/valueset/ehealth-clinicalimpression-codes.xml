@@ -27,6 +27,46 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="TriagingResult"/>
+                <display value="Result of triaging"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Result of triaging"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MeasurementAssessment"/>
+                <display value="Assessment of measurement"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Assessment of measurement"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MeasurementTypeUnexpected"/>
+                <display value="Measurement of unexpected type"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement of unexpected type"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MeasurementTimingUnexpected"/>
+                <display value="Measurement not expected"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement not expected"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="ClinicalDecisionSupportResult"/>
+                <display value="Generic result of CDS"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Generic result of CDS"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

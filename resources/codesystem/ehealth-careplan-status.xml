@@ -22,4 +22,34 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="draft"/>
+        <display value="draft"/>
+        <definition value="draft"/>
+    </concept>
+    <concept>
+        <code value="active"/>
+        <display value="active"/>
+        <definition value="active"/>
+    </concept>
+    <concept>
+        <code value="suspended"/>
+        <display value="suspended"/>
+        <definition value="suspended"/>
+    </concept>
+    <concept>
+        <code value="completed"/>
+        <display value="completed"/>
+        <definition value="completed"/>
+    </concept>
+    <concept>
+        <code value="entered-in-error"/>
+        <display value="entered-in-error"/>
+        <definition value="entered-in-error"/>
+    </concept>
+    <concept>
+        <code value="cancelled"/>
+        <display value="cancelled"/>
+        <definition value="cancelled"/>
+    </concept>
 </CodeSystem>

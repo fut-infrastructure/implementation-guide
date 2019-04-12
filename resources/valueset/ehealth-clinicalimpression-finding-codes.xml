@@ -27,6 +27,22 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="Approved"/>
+                <display value="Approved"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Approved"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Approved for sharing"/>
+                <display value="Approved for sharing"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Approved for sharing"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
