@@ -120,6 +120,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed owner marked Referenced
 - changed location marked Referenced
 - changed note.author[x] marked Referenced
+- changed type valueset binding strength to required 
 
 #### DeviceMetric (ehealth-devicemetric)
 - changed source marked Referenced

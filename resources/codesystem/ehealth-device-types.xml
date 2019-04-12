@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+	<concept>
+        <code value="59181002"/>
+        <display value="Oxygen analyser"/>
+        <definition value="Oxygen analyser"/>
+    </concept>
 </CodeSystem>
