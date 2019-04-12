@@ -15,7 +15,7 @@
       <use value="in"/>
       <min value="1"/>
       <max value="1"/>
-      <type value="EpisodeOfCare"/>
+      <type value="Reference"/>
    </parameter>
    <parameter>
       <name value="return"/>
