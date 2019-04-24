@@ -54,6 +54,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed CareTeam.reasonReference marked Referenced
 - changed CareTeam.managingOrganization marked Referenced
 - changed CareTeam.note.author[x] marked Referenced
+- documentation have been updated
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - changed ClinicalImpression.subject marked Referenced
@@ -238,8 +239,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed item.answer.item.subject marked Referenced
 - changed item.item.subject marked Referenced
 
-#### RelatedPerson (ehealth-related-person)
+#### RelatedPerson (ehealth-relatedperson)
 - changed relationship value set should not be a ResourceReference
+- renamed related-person to relatedperson 
 
 #### Task (ehealth-task)
 - changed definition[x] marked Referenced
