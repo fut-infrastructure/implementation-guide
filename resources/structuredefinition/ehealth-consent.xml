@@ -22,6 +22,15 @@
       <short value="Type of the consent statement" />
       <definition value="Type of consent. E.g. &quot;Send address information to SSL provider&quot;. The Category can implicitly specify both action and data. In this example data is address information for the related Patient and the action is sending the address to an SSL provider.&#xD;&#xA;&#xD;&#xA;The infrastructure will enforce consent rules based on the category." />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ConsentCategory" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/consent-category" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Consent.category.coding">
       <path value="Consent.category.coding" />
