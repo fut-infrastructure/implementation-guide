@@ -162,7 +162,7 @@
       <sourceReference>
         <reference value="RelatedPerson/relatedperson-valid"/>
       </sourceReference>
-      <exampleFor value="StructureDefinition/ehealth-related-person"/>
+      <exampleFor value="StructureDefinition/ehealth-relatedperson"/>
     </resource>
     <resource>
       <example value="true"/>
@@ -337,7 +337,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/ehealth-related-person"/>
+        <reference value="StructureDefinition/ehealth-relatedperson"/>
       </sourceReference>
     </resource>
     <resource>
