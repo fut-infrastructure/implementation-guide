@@ -115,7 +115,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="CarePlanCategory" />
         </extension>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/careplan-category" />
         </valueSetReference>
