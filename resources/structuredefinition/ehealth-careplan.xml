@@ -111,6 +111,15 @@
       <definition value="Type of plan (Care Plan Category)" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CarePlanCategory" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/careplan-category" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="CarePlan.subject">
       <path value="CarePlan.subject" />
