@@ -22,4 +22,19 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="SOR"/>
+        <display value="Contact point maintained in the SOR register"/>
+        <definition value="Contact point maintained in the SOR register"/>
+    </concept>
+    <concept>
+        <code value="ORG"/>
+        <display value="Contact point maintained in KOMBIT STS Organisation"/>
+        <definition value="Contact point maintained in KOMBIT STS Organisation"/>
+    </concept>
+    <concept>
+        <code value="MAN"/>
+        <display value="Contact point maintained manually in eHealth Infrastructure"/>
+        <definition value="Contact point maintained manually in eHealth Infrastructure"/>
+    </concept>
 </CodeSystem>

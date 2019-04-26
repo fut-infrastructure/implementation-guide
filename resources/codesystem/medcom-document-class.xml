@@ -23,7 +23,7 @@
     <content value="complete"/>
     <concept>
         <code value="001"/>
-        <display value="001"/>
-        <definition value="001"/>
+        <display value="clinical report"/>
+        <definition value="clinical report"/>
     </concept>
 </CodeSystem>

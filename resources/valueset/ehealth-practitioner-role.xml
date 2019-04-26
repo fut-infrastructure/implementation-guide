@@ -15,8 +15,7 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description
-            value="http://hl7.org/fhir/ValueSet/practitioner-role + ssl | SSL | Service Support and Logistics Employee."/>
+    <description value="Practitioner roles"/>
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/practitioner-role"/>
@@ -28,6 +27,17 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="ssl"/>
+                <display value="Service Support and Logistics"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Service Support and Logistics"/>
+                </designation>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/ValueSet/practitioner-role"/>
         </include>
     </compose>
 </ValueSet>

@@ -27,6 +27,14 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="buttonSize"/>
+                <display value="Size of button on device"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Size of button on device"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

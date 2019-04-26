@@ -22,4 +22,19 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="monitoringResponsible"/>
+        <display value="Monitoring Responsible"/>
+        <definition value="Monitoring Responsible"/>
+    </concept>
+    <concept>
+        <code value="monitoringDelegate"/>
+        <display value="Monitoring Delegate"/>
+        <definition value="Monitoring Delegate"/>
+    </concept>
+    <concept>
+        <code value="supporter"/>
+        <display value="Supporter"/>
+        <definition value="Supporter"/>
+    </concept>
 </CodeSystem>

@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="buttonSize"/>
+        <display value="Size of button on device"/>
+        <definition value="Size of button on device"/>
+    </concept>
 </CodeSystem>

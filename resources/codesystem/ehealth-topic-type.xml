@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="self-treatment"/>
+        <display value="Self-treatment"/>
+        <definition value="Self-treatment"/>
+    </concept>
 </CodeSystem>

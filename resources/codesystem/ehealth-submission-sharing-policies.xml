@@ -22,4 +22,14 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="sharingAllowed"/>
+        <display value="Sharing is allowed"/>
+        <definition value="Sharing is allowed"/>
+    </concept>
+    <concept>
+        <code value="noSharing"/>
+        <display value="No sharing"/>
+        <definition value="No sharing"/>
+    </concept>
 </CodeSystem>

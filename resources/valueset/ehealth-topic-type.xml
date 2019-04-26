@@ -15,10 +15,29 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Treatment | Self-treatment."/>
+    <description value="Topic types."/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/definition-topic"/>
+        </include>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/topic-type"/>
+            <concept>
+                <code value="self-treatment"/>
+                <display value="Self-treatment"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Self-treatment"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="TBD"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

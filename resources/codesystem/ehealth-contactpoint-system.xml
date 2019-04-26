@@ -22,4 +22,12 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="EAN"/>
+        <display value="Global location number"/>
+        <designation>
+            <language value="en-US"/>
+            <value value="Global location number"/>
+        </designation>
+    </concept>
 </CodeSystem>

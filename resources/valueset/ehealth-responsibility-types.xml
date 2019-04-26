@@ -27,6 +27,30 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="monitoringResponsible"/>
+                <display value="Monitoring Responsible"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Monitoring Responsible"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="monitoringDelegate"/>
+                <display value="Monitoring Delegate"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Monitoring Delegate"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="supporter"/>
+                <display value="Supporter"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Supporter"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
