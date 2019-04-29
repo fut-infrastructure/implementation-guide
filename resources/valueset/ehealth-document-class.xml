@@ -32,10 +32,10 @@
             <system value="http://www.example.com/medcom/document-class"/>
             <concept>
                 <code value="001"/>
-                <display value="001"/>
+                <display value="clinical report"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="001"/>
+                    <value value="clinical report"/>
                 </designation>
             </concept>
         </include>

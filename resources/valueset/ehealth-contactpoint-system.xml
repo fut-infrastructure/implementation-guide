@@ -15,8 +15,11 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="http://hl7.org/fhir/ValueSet/contactpoint-system + gln | EAN | Global location number."/>
+    <description value="Contact point systems."/>
     <compose>
+        <include>
+            <system value="http://hl7.org/fhir/ValueSet/contactpoint-system"/>
+        </include>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/contactpoint-system"/>
             <concept>
@@ -25,6 +28,14 @@
                 <designation>
                     <language value="en-US"/>
                     <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="EAN"/>
+                <display value="Global location number"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Global location number"/>
                 </designation>
             </concept>
         </include>

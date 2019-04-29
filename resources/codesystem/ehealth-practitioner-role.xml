@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="ssl"/>
+        <display value="Service Support and Logistics"/>
+        <definition value="Service Support and Logistics"/>
+    </concept>
 </CodeSystem>

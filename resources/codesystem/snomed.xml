@@ -27,4 +27,9 @@
         <display value="Diabetes clinical management plan"/>
         <definition value="Diabetes clinical management plan"/>
     </concept>
+    <concept>
+        <code value="59181002"/>
+        <display value="Oxygen analyser"/>
+        <definition value="Oxygen analyser"/>
+    </concept>
 </CodeSystem>

@@ -22,4 +22,19 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="MissingMeasurementResolving"/>
+        <display value="Need resolving of why scheduled measurement has not been submitted"/>
+        <definition value="Need resolving of why scheduled measurement has not been submitted"/>
+    </concept>
+    <concept>
+        <code value="UnexpectedMeasurementResolving"/>
+        <display value="Need resolving of why unexpected measurement was submitted"/>
+        <definition value="Need resolving of why unexpected measurement was submitted"/>
+    </concept>
+    <concept>
+        <code value="MeasurementForAssessment"/>
+        <display value="Need assessment of measurement"/>
+        <definition value="Need assessment of measurement"/>
+    </concept>
 </CodeSystem>

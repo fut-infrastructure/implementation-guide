@@ -35,6 +35,102 @@
                     <value value="Example value2 - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="Obligatory"/>
+                <display value="Obligatory"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Mandatory"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Obligatorisk"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Recommended"/>
+                <display value="Recommended"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Recommended"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Anbefalet"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Sustained"/>
+                <display value="Sustained"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Sustained"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Opretholdt"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Deprecated"/>
+                <display value="Deprecated"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Deprecated"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Frarådes"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Applicable"/>
+                <display value="Applicable"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Applicable"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Anvendelig"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="BeingPhasedOut"/>
+                <display value="BeingPhasedOut"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="BeingPhasedOut"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Udfases"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Observed"/>
+                <display value="Observed"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Observed"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Observeres"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="Planned"/>
+                <display value="Planned"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Planned"/>
+                </designation>
+                <designation>
+                    <language value="da-DK"/>
+                    <value value="Planlagt"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
