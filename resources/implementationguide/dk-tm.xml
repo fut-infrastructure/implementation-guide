@@ -672,7 +672,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-activitydefinition-codes"/>
+        <reference value="CodeSystem/ehealth-activitydefinition-code"/>
       </sourceReference>
     </resource>
     <resource>

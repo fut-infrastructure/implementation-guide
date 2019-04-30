@@ -21,8 +21,8 @@
             <system value="http://ehealth.sundhed.dk/cs/device-types"/>
         </include>
         <include>
-            <system value="http://snomed.info/sct"/>"
-            <concept> todo:
+            <system value="http://snomed.info/sct"/>
+            <concept>
                 <code value="59181002"/>
                 <display value="Oxygen analyser"/>
                 <designation>
