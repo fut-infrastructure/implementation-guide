@@ -156,10 +156,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Media (ehealth-media)
 - Changed referenced resources to use aggregation type "referenced"
+- Changed the type of extension element qualityType and qualityCode to CodeableConcept
+- Changed the type of extension element qualityType and qualityCode to CodeableConcept
+- Changed the type of extension element ehealth-sharingPolicy to CodeableConcept
 
 #### Observation (ehealth-observation)
 - Added element 'specimen' referencing FHIR Specimen
 - Changed referenced resources to use aggregation type "referenced"
+- Changed the type of extension element qualityType and qualityCode to CodeableConcept
+- Changed the type of extension element ehealth-sharingPolicy to CodeableConcept
 
 #### Organization (ehealth-organization)
 - Added extensions for system and value to be used inside organization.contact.telecom
@@ -202,6 +207,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed referenced resources to use aggregation type "referenced"
+- Changed the type of extension element qualityType and qualityCode to CodeableConcept
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added resource definition
@@ -211,25 +217,5 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Task (ehealth-task)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed ehealth-task-category to CodeableConcept type
-
-- Author, changed, reference marked Referenced
-
-- Device-Suppliers, changed, reference marked Referenced
-
-- EpisodeOfCare-CareManagerHistory, changed, reference marked Referenced
-
-- EpisodeOfCare-CareManagers, changed, reference marked Referenced
-
-- IntendedAudience, changed, reference marked Referenced
-
-- Owner, changed, reference marked Referenced
-
-- Responsible, changed, reference marked Referenced
-
-- ResponsibleHistory, changed, reference marked Referenced
-
-- Changed the type of ehealth-sharingPolicy to CodeableConcept.
-
-- Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
 
 ## v1.0.0 - 2019-03-06
