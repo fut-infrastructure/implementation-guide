@@ -642,15 +642,34 @@
     <!-- Capability statement -->
     <resource>
       <sourceReference>
-        <reference value="CapabilityStatement/ehealth"/>
+        <reference value="CapabilityStatement/metadata"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CapabilityStatement/metadata"/>
+        <reference value="CapabilityStatement/hapi-fhir-server"/>
       </sourceReference>
     </resource>
-
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/measurement"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/organization"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/questionnaire"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/terminology"/>
+      </sourceReference>
+    </resource>
 
     <!-- Naming systems -->
     <resource>
