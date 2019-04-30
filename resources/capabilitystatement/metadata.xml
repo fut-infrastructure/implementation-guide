@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="metadata" />
    <status value="active"/>
-   <date value="2019-02-20T15:17:28+01:00"/>
+   <date value="2019-04-30T10:35:26+02:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="https://ehealth-documentation.s3-eu-west-1.amazonaws.com/index.html"/>
-      <url value="http://localhost:8080/hapi-fhir-jpaserver/baseDstu3"/>
+      <url value="http://localhost:8080/trifork-fhir-server"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -18,6 +18,25 @@
    <format value="application/fhir+json"/>
    <rest>
       <mode value="server"/>
+      <security>
+         <extension url="http://ehealth.sundhed.dk/StructureDefinition/oauth-uris">
+            <extension url="token">
+               <valueUri value="http://localhost:8080/trifork-fhir-server/token"/>
+            </extension>
+            <extension url="authorize">
+               <valueUri value="http://localhost:8080/trifork-fhir-server/authorize"/>
+            </extension>
+            <extension url="revoke">
+               <valueUri value="http://localhost:8080/trifork-fhir-server/revoke"/>
+            </extension>
+         </extension>
+         <service>
+            <coding>
+               <system value="http://hl7.org/fhir/restful-security-service"/>
+               <display value="OAuth"/>
+            </coding>
+         </service>
+      </security>
       <resource>
          <type value="Appointment"/>
          <profile>
@@ -179,13 +198,22 @@
       <resource>
          <type value="Communication"/>
          <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"/>
          </profile>
          <interaction>
             <code value="read"/>
          </interaction>
          <interaction>
             <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
          </interaction>
          <interaction>
             <code value="create"/>
@@ -195,6 +223,8 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
          <searchParam>
             <name value="_language"/>
             <type value="string"/>
@@ -209,6 +239,16 @@
             <name value="subject"/>
             <type value="reference"/>
             <documentation value="Focus of message"/>
+         </searchParam>
+         <searchParam>
+            <name value="recipientIdentifier"/>
+            <type value="token"/>
+            <documentation value="Search parameter for finding communication based on the identifier(s) of the recipient"/>
+         </searchParam>
+         <searchParam>
+            <name value="communicationCategory"/>
+            <type value="token"/>
+            <documentation value="Search parameter for finding communication based on the category code"/>
          </searchParam>
          <searchParam>
             <name value="part-of"/>
@@ -377,9 +417,6 @@
          </searchParam>
       </resource>
       <resource>
-         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="15"/>
-         </extension>
          <type value="Patient"/>
          <profile>
             <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"/>
@@ -389,6 +426,9 @@
          </interaction>
          <interaction>
             <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <interaction>
             <code value="patch"/>
@@ -403,6 +443,7 @@
             <code value="search-type"/>
          </interaction>
          <versioning value="versioned-update"/>
+         <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
             <type value="string"/>
@@ -462,6 +503,11 @@
             <name value="phonetic"/>
             <type value="string"/>
             <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
+         </searchParam>
+         <searchParam>
+            <name value="managingOrganizationIdentifier"/>
+            <type value="token"/>
+            <documentation value="Search parameter for finding a patient based on the identifier(s) of the managing organization"/>
          </searchParam>
          <searchParam>
             <name value="telecom"/>
@@ -542,7 +588,7 @@
       <resource>
          <type value="Provenance"/>
          <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-detached-provenance"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -583,6 +629,11 @@
             <name value="signature-type"/>
             <type value="token"/>
             <documentation value="Indication of the reason the entity signed the object(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="activity"/>
+            <type value="token"/>
+            <documentation value="Search parameter for finding detached provenances based on the activity type"/>
          </searchParam>
          <searchParam>
             <name value="start"/>
@@ -755,9 +806,9 @@
          </searchParam>
       </resource>
       <resource>
-         <type value="StructureDefinition"/>
+         <type value="SearchParameter"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+            <reference value="http://hl7.org/fhir/StructureDefinition/SearchParameter"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -791,7 +842,100 @@
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
-         <searchInclude value="StructureDefinition:valueset"/>
+         <searchInclude value="SearchParameter:component"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The search parameter publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Code used in URL"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="derived-from"/>
+            <type value="uri"/>
+            <documentation value="Original Definition for the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="number | date | string | token | reference | composite | quantity | uri"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="target"/>
+            <type value="token"/>
+            <documentation value="Types of resource (if a resource reference)"/>
+         </searchParam>
+         <searchParam>
+            <name value="component"/>
+            <type value="reference"/>
+            <documentation value="Defines how the part works"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the search parameter"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="token"/>
+            <documentation value="The resource type(s) this search parameter applies to"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the search parameter"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
          <searchParam>
             <name value="_language"/>
             <type value="string"/>
@@ -932,15 +1076,15 @@
          </definition>
       </operation>
       <operation>
-         <name value="get-resource-counts"/>
-         <definition>
-            <reference value="OperationDefinition/-s-get-resource-counts"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="meta"/>
          <definition>
             <reference value="OperationDefinition/-s-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="get-resource-counts"/>
+         <definition>
+            <reference value="OperationDefinition/-s-get-resource-counts"/>
          </definition>
       </operation>
       <operation>
@@ -959,6 +1103,18 @@
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/-s-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Appointment-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -986,18 +1142,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Appointment--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Appointment-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Appointment-i-expunge"/>
@@ -1013,6 +1157,18 @@
          <name value="exportAsiCal"/>
          <definition>
             <reference value="OperationDefinition/Appointment-i-exportAsiCal"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/AppointmentResponse--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/AppointmentResponse-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -1040,18 +1196,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/AppointmentResponse--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/AppointmentResponse-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/AppointmentResponse-i-expunge"/>
@@ -1061,6 +1205,18 @@
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/AppointmentResponse--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Communication--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Communication-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -1088,18 +1244,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Communication--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Communication-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Communication-i-expunge"/>
@@ -1109,6 +1253,18 @@
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Communication--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Patient--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Patient-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -1136,18 +1292,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Patient--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Patient-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Patient-i-expunge"/>
@@ -1160,9 +1304,27 @@
          </definition>
       </operation>
       <operation>
-         <name value="createPatientFromPerson"/>
+         <name value="createPatient"/>
          <definition>
-            <reference value="OperationDefinition/Patient--createPatientFromPerson"/>
+            <reference value="OperationDefinition/Patient--createPatient"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="updatePatientWithSKRSData"/>
+         <definition>
+            <reference value="OperationDefinition/Patient--updatePatientWithSKRSData"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Provenance--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/Provenance-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -1190,18 +1352,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Provenance--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Provenance-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Provenance-i-expunge"/>
@@ -1211,6 +1361,18 @@
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/Provenance--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/RelatedPerson--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/RelatedPerson-i-validate"/>
          </definition>
       </operation>
       <operation>
@@ -1238,18 +1400,6 @@
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/RelatedPerson--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/RelatedPerson-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="expunge"/>
          <definition>
             <reference value="OperationDefinition/RelatedPerson-i-expunge"/>
@@ -1262,51 +1412,51 @@
          </definition>
       </operation>
       <operation>
-         <name value="meta"/>
+         <name value="validate"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-meta"/>
+            <reference value="OperationDefinition/SearchParameter-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/SearchParameter--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition--meta"/>
+            <reference value="OperationDefinition/SearchParameter--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/SearchParameter-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-meta-add"/>
+            <reference value="OperationDefinition/SearchParameter-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/StructureDefinition--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-validate"/>
+            <reference value="OperationDefinition/SearchParameter-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition--expunge"/>
+            <reference value="OperationDefinition/SearchParameter-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/StructureDefinition-i-expunge"/>
+            <reference value="OperationDefinition/SearchParameter--expunge"/>
          </definition>
       </operation>
    </rest>
