@@ -9,7 +9,84 @@ This is the log of changes made to the eHealth Implementation Guide.
 - added operations examples for ehealth-activitydefinition, ehealth-careplan, ehealth-careteam, ehealth-clinicalimpression, ehealth-communication, ehealth-message, ehealth-condition, ehealth-consent, ehealth-device, ehealth-devicemetric, ehealth-deviceUseStatement, ehealth-episodeofcare, ehealth-library, ehealth-media, ehealth-observation, ehealth-organization, ehealth-plandefinition, ehealth-practitioner, ehealth-practitionerRole, ehealth-procedurerequest, ehealth-provenance, ehealth-questionnaire and ehealth-questionnaireresponse.
 - added custom operations for transformations between DK-HL7 QRD/eHealth QuestionnaireResponse, DK-HL7 APD/eHealth Appointment and DK-HL7 PHRM/eHealth Observation.
 - changed DK CRN Identifier, Identifier.assigner marked Referenced
-- changed operation search-measurements, updated description and set period required.
+- made intra-IG links work by prepending them with `http://ehealth.sundhed.dk/fhir/`
+- added operation examples for most of the resources 
+- changed strength of all value bindings to 'required'
+
+### Custom operations
+
+#### System operations
+- Added description of `-s-submit-measurement`
+- Changed description of `-s-search-measurements`, parameter 'period' now required
+- Added description of `-s-transformToObservation`
+- Added description of `-s-transformToPHMR`
+- Added description of `-s-transformToAppointment`
+- Added description of `-s-transformToAPD`
+- Added description of `-s-transformToQuestionnaireResponse`
+- Added description of `-s-transformToQRD`
+- Improved description of `-s-create-episode-of-care`
+- Removed `fetch-external-organizations`
+- Removed `fetch-external-practitioners`
+- Removed `search-organization-and-practitioner-external`
+
+#### Instance operations
+- return value of `Library-i-evaluate` changed to 'Parameters'
+- Added description of `Library-i-evaluate` 
+- Added description of `PlanDefinition-i-apply`
+
+### Code systems
+- Added `http://www.example.com/medcom/document-class`
+- Added `http://snomed.info/sct`
+- Added `http://www.example.com/medcom/message-codes`
+- Added `http://ehealth.sundhed.dk/cs/reference-range-type`  
+- Added `http://ehealth.sundhed.dk/cs/modifier-role`
+- Added `http://ehealth.sundhed.dk/cs/conditions`
+- Added `http://ehealth.sundhed.dk/cs/device-use-reason`
+- Changed `http://ehealth.sundhed.dk/cs/careplan-status`
+- Changed `http://ehealth.sundhed.dk/cs/careteam-participant-role`
+- Changed `http://ehealth.sundhed.dk/cs/clinicalimpression-codes`
+- Changed `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+- Changed `http://ehealth.sundhed.dk/cs/decision-rule-codes`
+- Changed `http://ehealth.sundhed.dk/cs/device-types`
+- Changed `http://ehealth.sundhed.dk/cs/plandefinition-recommendation` 
+- Changed `http://ehealth.sundhed.dk/cs/quality-types`
+- Changed `http://ehealth.sundhed.dk/cs/questionnaire-recommendation`
+- Changed `http://ehealth.sundhed.dk/cs/questionnaire-types`
+- Changed `http://ehealth.sundhed.dk/cs/usage-quality`
+- Renamed `http://ehealth.sundhed.dk/cs/submission-sharing-policy to http://ehealth.sundhed.dk/cs/submission-sharing-policies`  
+  
+### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
+- Added `http://ehealth.sundhed.dk/vs/device-use-reason`
+- Added `http://ehealth.sundhed.dk/vs/event-type-codes`, referenced by
+  - ehealth-composition
+  - ehealth-documentreference
+- Added `http://ehealth.sundhed.dk/vs/facility-type-codes`, referenced by
+  - ehealth-documentreference
+- `http://ehealth.sundhed.dk/vs/format-codes`, referenced by
+  - ehealth-documentreference
+  - ehealth-plandefinition-role      
+- Added `http://ehealth.sundhed.dk/vs/modifier-role`
+- Added `http://ehealth.sundhed.dk/vs/practice-setting-codes`, referenced by
+  - ehealth-documentreference
+- Added `http://ehealth.sundhed.dk/vs/reference-range-type`
+
+- Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
+- Chaned `http://ehealth.sundhed.dk/vs/careplan-category`
+- Changed `ehealth-careplan-status`
+- Changed `http://ehealth.sundhed.dk/vs/careteam-participant-role`
+- Changed `http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes`
+- Changed `http://ehealth.sundhed.dk/vs/decision-rule-codes`
+- Changed `http://ehealth.sundhed.dk/vs/device-types`
+- Changed `http://ehealth.sundhed.dk/vs/document-class`
+- Changed `http://ehealth.sundhed.dk/vs/document-type`
+- Changed `http://ehealth.sundhed.dk/vs/plandefinition-recommendation`
+- Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
+- Changed `http://ehealth.sundhed.dk/vs/quality-types`
+- Changed `http://ehealth.sundhed.dk/vs/questionnaire-recommendation`
+- Changed `http://ehealth.sundhed.dk/vs/questionnaire-types`
+- Changed `http://ehealth.sundhed.dk/vs/topic-type`
+- Changed `http://ehealth.sundhed.dk/vs/usage-quality`      
 
 ### Resource/profile changes
 
@@ -17,6 +94,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - deleted author element
 - deleted owner element
 - added modifierRole extension as a replacement to author and owner
+- changed extension element minimumQuality to be of type ehealth-quality
 
 #### CarePlan (ehealth-careplan)
 - added responsibilitySummary
@@ -45,7 +123,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed CarePlan.activity.detail.performer marked Referenced
 - changed CarePlan.activity.detail.product[x] marked Referenced
 - changed CarePlan.note.author[x] marked Referenced
-
+- changed CarePlan.category value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
+ 
 #### CareTeam (ehealth-careteam)
 - changed CareTeam.subject marked Referenced
 - changed CareTeam.context marked Referenced
@@ -57,6 +136,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - documentation have been updated
 
 #### ClinicalImpression (ehealth-clinicalimpression)
+- improved resource description
 - changed ClinicalImpression.subject marked Referenced
 - changed ClinicalImpression.context marked Referenced
 - changed ClinicalImpression.assessor marked Referenced
@@ -69,8 +149,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed ClinicalImpression.finding.item[x] marked Referenced
 - changed ClinicalImpression.prognosisReference marked Referenced
 - changed ClinicalImpression.action marked Referenced
+- changed ClinicalImpression.action to support ehealth-appointment
 - changed ClinicalImpression.note.author[x] marked Referenced
 - changed ClinicalImpression-DecisionRule marked Referenced
+- changed ClinicalImpression.code to `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
 
 #### Condition (ehealth-condition)
 - changed subject marked Referenced
@@ -81,6 +163,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed note.author[x] marked Referenced
 
 #### Consent (ehealth-consent)
+- changed category value set binding to `http://ehealth.sundhed.dk/vs/consent-category`
 - changed patient marked Referenced
 - changed consentingParty marked Referenced
 - changed actor.reference marked Referenced
@@ -101,6 +184,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed sender marked Referenced
 - changed reasonReference marked Referenced
 - changed note.author[x] marked Referenced
+- changed category to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
 
 #### Communication (ehealth-message)
 - changed medium is now optional (not always relevant)
@@ -114,6 +198,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed sender marked Referenced
 - changed reasonReference marked Referenced
 - changed note.author[x] marked Referenced
+
+#### Composition (ehealth-composition)
+- Added resource and relevant ValueSets
 
 #### Device (ehealth-device)
 - changed extension:suppliers.extension:supplier marked Referenced
@@ -131,6 +218,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed source marked Referenced
 - changed device marked Referenced
 - changed note.author[x] marked Referenced
+- changed indication to require code from value set `http://ehealth.sundhed.dk/vs/device-use-reason`
+
+#### DocumentReference (ehealth-documentreference)
+- Added resource and relevant ValueSets
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - changed extension:careManager.value[x]:valueReference marked Referenced
@@ -142,6 +233,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed managingOrganization marked Referenced
 - changed referralRequest marked Referenced
 - changed careManager marked Referenced
+- changed team marked Referenced
 
 #### GuidanceResponse (ehealth-guidanceresponse)
 - added the profile as it is used as return parameter in library$evaluate operation
@@ -171,15 +263,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed subject marked Referenced
 - changed context marked Referenced
 - changed performer marked Referenced
-- changed specimen marked Referenced
 - changed device marked Referenced
 - changed related.target marked Referenced
+- added element 'specimen' referencing FHIR Specimen
 
 #### Organization (ehealth-organization)
 - changed extension:relatedTo.extension:target.valueReference:valueReference marked Referenced
 - changed partOf marked Referenced
 - changed endpoint marked Referenced
 - changed relatedTo marked Referenced
+- changed contact.telecom.extension.system to be mandatory
+- Added extensions for system and value to be used inside organization.contact.telecom
 
 #### PlanDefinition (ehealth-plandefinition)
 - deleted author element
@@ -215,6 +309,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Provenance (ehealth-detached-provenance)
 - added as an unchanged copy of the existing ehealth-provenance to allow provenance to exist on multiple HAPI FHIR instances
 
+#### Provenance (ehealth-provenance)
+- referenced elements marked "referenced".
+
 #### Questionnaire (ehealth-questionnaire)
 - deleted author element
 - deleted custodian element
@@ -241,6 +338,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### RelatedPerson (ehealth-relatedperson)
 - changed relationship value set should not be a ResourceReference
+- added resource definition
 - renamed related-person to relatedperson 
 
 #### Task (ehealth-task)
@@ -258,7 +356,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed relevantHistory marked Referenced
 - changed restriction.recipient marked Referenced
 - changed ehealth-task-category to CodeableConcept type
-
 
 - Author, changed, reference marked Referenced
 
@@ -279,8 +376,5 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed the type of ehealth-sharingPolicy to CodeableConcept.
 
 - Changed the type of ehealth-quality.qualityType and ehealth-quality.qualityCode to CodeableConcept.
-
-
-
 
 ## v1.0.0 - 2019-03-06
