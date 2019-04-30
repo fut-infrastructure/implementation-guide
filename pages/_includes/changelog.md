@@ -72,7 +72,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/reference-range-type`
 
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
-- Chaned `http://ehealth.sundhed.dk/vs/careplan-category`
+- Changed `http://ehealth.sundhed.dk/vs/careplan-category`
 - Changed `ehealth-careplan-status`
 - Changed `http://ehealth.sundhed.dk/vs/careteam-participant-role`
 - Changed `http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes`
@@ -97,181 +97,73 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed extension element minimumQuality to be of type ehealth-quality
 
 #### CarePlan (ehealth-careplan)
+- referenced resources marked "Referenced"
 - added responsibilitySummary
 - removed monitoringResponsible
 - removed monitoringResponsibleHistory
-- changed CarePlan.extension:monitoringResponsible.value[x]:valueReference marked Referenced
-- changed CarePlan.extension:monitoringResponsibleHistory.extension:monitoringResponsible.value[x]:valueReference marked Referenced
-- changed CarePlan.extension:responsible.extension:actor.value[x]:valueReference marked Referenced
-- changed CarePlan.extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
-- changed CarePlan.definition marked Referenced
-- changed CarePlan.partOf marked Referenced
-- changed CarePlan.subject marked Referenced
-- changed CarePlan.context marked Referenced
-- changed CarePlan.author marked Referenced
-- changed CarePlan.careTeam marked Referenced
-- changed CarePlan.addresses marked Referenced
-- changed CarePlan.supportingInfo marked Referenced
-- changed CarePlan.goal marked Referenced
-- changed CarePlan.activity.outcomeReference marked Referenced
-- changed CarePlan.activity.progress.author[x] marked Referenced
-- changed CarePlan.activity.reference marked Referenced
-- changed CarePlan.activity.detail.definition marked Referenced
-- changed CarePlan.activity.detail.reasonReference marked Referenced
-- changed CarePlan.activity.detail.goal marked Referenced
-- changed CarePlan.activity.detail.location marked Referenced
-- changed CarePlan.activity.detail.performer marked Referenced
-- changed CarePlan.activity.detail.product[x] marked Referenced
-- changed CarePlan.note.author[x] marked Referenced
 - changed CarePlan.category value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
  
 #### CareTeam (ehealth-careteam)
-- changed CareTeam.subject marked Referenced
-- changed CareTeam.context marked Referenced
-- changed CareTeam.participant.member marked Referenced
-- changed CareTeam.participant.onBehalfOf marked Referenced
-- changed CareTeam.reasonReference marked Referenced
-- changed CareTeam.managingOrganization marked Referenced
-- changed CareTeam.note.author[x] marked Referenced
-- documentation have been updated
+- referenced resources marked "Referenced"
+- documentation has been updated
 
 #### ClinicalImpression (ehealth-clinicalimpression)
+- referenced resources marked "Referenced"
 - improved resource description
-- changed ClinicalImpression.subject marked Referenced
-- changed ClinicalImpression.context marked Referenced
-- changed ClinicalImpression.assessor marked Referenced
-- changed ClinicalImpression.previous marked Referenced
-- changed ClinicalImpression.problem marked Referenced
-- changed ClinicalImpression.investigation.extension:decisionRule.extension:inputParameters marked Referenced
-- changed ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters marked Referenced
-- changed ClinicalImpression.investigation.extension:decisionRule.extension:evaluationMessage marked Referenced
-- changed ClinicalImpression.investigation.item marked Referenced
-- changed ClinicalImpression.finding.item[x] marked Referenced
-- changed ClinicalImpression.prognosisReference marked Referenced
-- changed ClinicalImpression.action marked Referenced
 - changed ClinicalImpression.action to support ehealth-appointment
-- changed ClinicalImpression.note.author[x] marked Referenced
-- changed ClinicalImpression-DecisionRule marked Referenced
 - changed ClinicalImpression.code to `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
 
 #### Condition (ehealth-condition)
-- changed subject marked Referenced
-- changed context marked Referenced
-- changed asserter marked Referenced
-- changed stage.assessment marked Referenced
-- changed evidence.detail marked Referenced
-- changed note.author[x] marked Referenced
+- referenced resources marked "Referenced"
 
 #### Consent (ehealth-consent)
+- referenced resources marked "Referenced"
 - changed category value set binding to `http://ehealth.sundhed.dk/vs/consent-category`
-- changed patient marked Referenced
-- changed consentingParty marked Referenced
-- changed actor.reference marked Referenced
-- changed organization marked Referenced
-- changed source[x] marked Referenced
-- changed data.reference marked Referenced
-- changed except.actor.reference marked Referenced
-- changed except.data.reference marked Referenced
 
 #### Communication (ehealth-correspondance)
-- changed definition marked Referenced
-- changed basedOn marked Referenced
-- changed partOf marked Referenced
-- changed subject marked Referenced
-- changed recipient marked Referenced
-- changed topic marked Referenced
-- changed context marked Referenced
-- changed sender marked Referenced
-- changed reasonReference marked Referenced
-- changed note.author[x] marked Referenced
+- referenced resources marked "Referenced"
 - changed category to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
 
 #### Communication (ehealth-message)
+- referenced resources marked "Referenced"
 - changed medium is now optional (not always relevant)
-- changed definition marked Referenced
-- changed basedOn marked Referenced
-- changed partOf marked Referenced
-- changed subject marked Referenced
-- changed recipient marked Referenced
-- changed topic marked Referenced
-- changed context marked Referenced
-- changed sender marked Referenced
-- changed reasonReference marked Referenced
-- changed note.author[x] marked Referenced
 
 #### Composition (ehealth-composition)
 - Added resource and relevant ValueSets
 
 #### Device (ehealth-device)
-- changed extension:suppliers.extension:supplier marked Referenced
-- changed patient marked Referenced
-- changed owner marked Referenced
-- changed location marked Referenced
-- changed note.author[x] marked Referenced
+- referenced resources marked "Referenced"
 - changed type valueset binding strength to required 
 
 #### DeviceMetric (ehealth-devicemetric)
-- changed source marked Referenced
+- referenced resources marked "Referenced"
 
 #### DeviceUseStatement (ehealth-deviceusestatement)
-- changed subject marked Referenced
-- changed source marked Referenced
-- changed device marked Referenced
-- changed note.author[x] marked Referenced
+- referenced resources marked "Referenced"
 - changed indication to require code from value set `http://ehealth.sundhed.dk/vs/device-use-reason`
 
 #### DocumentReference (ehealth-documentreference)
 - Added resource and relevant ValueSets
 
 #### EpisodeOfCare (ehealth-episodeofcare)
-- changed extension:careManager.value[x]:valueReference marked Referenced
-- changed extension:careManagerHistory.extension:careManager.value[x]:valueReference marked Referenced
-- changed extension:responsible.extension:actor.value[x]:valueReference marked Referenced
-- changed extension:responsibleHistory.extension:actor.value[x]:valueReference marked Referenced
-- changed diagnosis.condition marked Referenced
-- changed patient marked Referenced
-- changed managingOrganization marked Referenced
-- changed referralRequest marked Referenced
-- changed careManager marked Referenced
-- changed team marked Referenced
+- referenced resources marked "Referenced"
 
 #### GuidanceResponse (ehealth-guidanceresponse)
 - added the profile as it is used as return parameter in library$evaluate operation
 
 #### Library (ehealth-library)
-- changed extension:basedOn.valueReference:valueReference marked Referenced
-- changed extension:intendedAudience.valueReference:valueReference marked Referenced
-- changed extension:parameterBinding.extension:resource.valueReference:valueReference marked Referenced
-- changed extension:parameterBinding.extension:kind.valueReference:valueReference marked Referenced
-- changed relatedArtifact.resource marked Referenced
-- changed parameter.profile marked Referenced
-- changed dataRequirement.codeFilter.valueSet[x] marked Referenced
+- referenced resources marked "Referenced"
 - changed parameterbinding.name renamed to boundParameterName
-- changed basedOn marked Referenced
-- changed parameterBinding marked Referenced
 
 #### Media (ehealth-media)
-- changed basedOn marked Referenced
-- changed subject marked Referenced
-- changed context marked Referenced
-- changed operator marked Referenced
-- changed device marked Referenced
-- changed note.author[x] marked Referenced
+- referenced resources marked "Referenced"
 
 #### Observation (ehealth-observation)
-- changed basedOn marked Referenced
-- changed subject marked Referenced
-- changed context marked Referenced
-- changed performer marked Referenced
-- changed device marked Referenced
-- changed related.target marked Referenced
+- referenced resources marked "Referenced"
 - added element 'specimen' referencing FHIR Specimen
 
 #### Organization (ehealth-organization)
-- changed extension:relatedTo.extension:target.valueReference:valueReference marked Referenced
-- changed partOf marked Referenced
-- changed endpoint marked Referenced
-- changed relatedTo marked Referenced
+- referenced resources marked "Referenced"
 - changed contact.telecom.extension.system to be mandatory
 - Added extensions for system and value to be used inside organization.contact.telecom
 
@@ -281,38 +173,24 @@ This is the log of changes made to the eHealth Implementation Guide.
 - added modifierRole extension as a replacement to author and owner
 
 #### Practitioner (ehealth-practitioner)
-- changed qualification.issuer marked Referenced
+- referenced resources marked "Referenced"
 
 #### PractitionerRole (ehealth-practitionerrole)
-- changed practitioner marked Referenced
-- changed organization marked Referenced
-- changed location marked Referenced
-- changed healthcareService marked Referenced
-- changed endpoint marked Referenced
+- referenced resources marked "Referenced"
 
 #### ProcedureRequest (ehealth-procedurerequest)
+- referenced resources marked "Referenced"
 - deleted extension:responsible
 - deleted extension:responsibleHistory
-- changed definition marked Referenced
-- changed requisition.assigner marked Referenced
-- changed subject marked Referenced
-- changed context marked Referenced
-- changed requester.agent marked Referenced
-- changed requester.onBehalfOf marked Referenced
-- changed performer marked Referenced
-- changed reasonReference marked Referenced
-- changed supportingInfo marked Referenced
-- changed specimen marked Referenced
-- changed note.author[x] marked Referenced
-- changed relevantHistory marked Referenced
 
 #### Provenance (ehealth-detached-provenance)
 - added as an unchanged copy of the existing ehealth-provenance to allow provenance to exist on multiple HAPI FHIR instances
 
 #### Provenance (ehealth-provenance)
-- referenced elements marked "referenced".
+- referenced resources marked "Referenced"
 
 #### Questionnaire (ehealth-questionnaire)
+- referenced resources marked "Referenced"
 - deleted author element
 - deleted custodian element
 - added modifierRole extension as a replacement to author and custodian
@@ -322,19 +200,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - changed recommendation extension from Coding to CodeableConcept 
 - changed QuestionnaireReuseCriteria extension from Coding to CodeableConcept for fields situationQuality, operationQuality, dataQuality
 - changed QuestionnaireRecommendation extension from Coding to CodeableConcept 
-- changed intendedOrganization, reference marked Referenced
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
-- changed basedOn marked Referenced
-- changed parent marked Referenced
-- changed questionnaire marked Referenced
-- changed subject marked Referenced
-- changed context marked Referenced
-- changed author marked Referenced
-- changed source marked Referenced
-- changed item.subject marked Referenced
-- changed item.answer.item.subject marked Referenced
-- changed item.item.subject marked Referenced
+- referenced resources marked "Referenced"
 
 #### RelatedPerson (ehealth-relatedperson)
 - changed relationship value set should not be a ResourceReference
@@ -342,19 +210,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - renamed related-person to relatedperson 
 
 #### Task (ehealth-task)
-- changed definition[x] marked Referenced
-- changed basedOn marked Referenced
-- changed groupIdentifier.assigner marked Referenced
-- changed partOf marked Referenced
-- changed focus marked Referenced
-- changed for marked Referenced
-- changed context marked Referenced
-- changed requester.agent marked Referenced
-- changed requester.onBehalfOf marked Referenced
-- changed owner marked Referenced
-- changed note.author[x] marked Referenced
-- changed relevantHistory marked Referenced
-- changed restriction.recipient marked Referenced
+- referenced resources marked "Referenced"
 - changed ehealth-task-category to CodeableConcept type
 
 - Author, changed, reference marked Referenced
