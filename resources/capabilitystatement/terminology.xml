@@ -1,0 +1,1027 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="8bff92fe-2f9c-4dac-9aee-652a2d3acf5f"/>
+   <status value="active"/>
+   <date value="2019-04-30T11:34:02+00:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="HAPI FHIR Server"/>
+      <version value="3.7.0"/>
+   </software>
+   <implementation>
+      <description value="eHealth Terminology Server"/>
+      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/terminology/fhir"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+            <valueDecimal value="46"/>
+         </extension>
+         <type value="CodeSystem"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/CodeSystem"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The code system publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="A code defined in the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="content-mode"/>
+            <type value="token"/>
+            <documentation value="not-present | example | fragment | complete"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="language"/>
+            <type value="token"/>
+            <documentation value="A language in which a designation is provided"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="system"/>
+            <type value="uri"/>
+            <documentation value="The system for any codes defined by this code system (same as 'url')"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the code system"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="ConceptMap"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/ConceptMap"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="ConceptMap:source"/>
+         <searchInclude value="ConceptMap:source-uri"/>
+         <searchInclude value="ConceptMap:target"/>
+         <searchInclude value="ConceptMap:target-uri"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The concept map publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="other"/>
+            <type value="uri"/>
+            <documentation value="Canonical URL for other concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="product"/>
+            <type value="uri"/>
+            <documentation value="Reference to property mapping depends on"/>
+         </searchParam>
+         <searchParam>
+            <name value="dependson"/>
+            <type value="uri"/>
+            <documentation value="Reference to property mapping depends on"/>
+         </searchParam>
+         <searchParam>
+            <name value="target-system"/>
+            <type value="uri"/>
+            <documentation value="System of the target (if necessary)"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="source"/>
+            <type value="reference"/>
+            <documentation value="Identifies the source of the concepts which are being mapped"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="target"/>
+            <type value="reference"/>
+            <documentation value="Provides context to the mappings"/>
+         </searchParam>
+         <searchParam>
+            <name value="source-code"/>
+            <type value="token"/>
+            <documentation value="Identifies element being mapped"/>
+         </searchParam>
+         <searchParam>
+            <name value="source-uri"/>
+            <type value="reference"/>
+            <documentation value="Identifies the source of the concepts which are being mapped"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="source-system"/>
+            <type value="uri"/>
+            <documentation value="Code System (if value set crosses code systems)"/>
+         </searchParam>
+         <searchParam>
+            <name value="target-code"/>
+            <type value="token"/>
+            <documentation value="Code that identifies the target element"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="target-uri"/>
+            <type value="reference"/>
+            <documentation value="Provides context to the mappings"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="NamingSystem"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/NamingSystem"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="NamingSystem:replaced-by"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The naming system publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="When is identifier valid?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="codesystem | identifier | root"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="e.g. driver,  provider,  patient, bank etc."/>
+         </searchParam>
+         <searchParam>
+            <name value="id-type"/>
+            <type value="token"/>
+            <documentation value="oid | uuid | uri | other"/>
+         </searchParam>
+         <searchParam>
+            <name value="contact"/>
+            <type value="string"/>
+            <documentation value="Name of an individual to contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="responsible"/>
+            <type value="string"/>
+            <documentation value="Who maintains system namespace?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="Contact details for individual or organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="value"/>
+            <type value="string"/>
+            <documentation value="The unique identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="replaced-by"/>
+            <type value="reference"/>
+            <documentation value="Use this instead"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the naming system"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The operation definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Name used to invoke the operation"/>
+         </searchParam>
+         <searchParam>
+            <name value="instance"/>
+            <type value="token"/>
+            <documentation value="Invoke on an instance?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="operation | query"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Invole at the type level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="system"/>
+            <type value="token"/>
+            <documentation value="Invoke at the system level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="param-profile"/>
+            <type value="reference"/>
+            <documentation value="Profile on the type"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="reference"/>
+            <documentation value="Marks this as a profile of the base"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the operation definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The structure definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="valueset"/>
+            <type value="reference"/>
+            <documentation value="A vocabulary binding reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="primitive-type | complex-type | resource | logical"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <type value="token"/>
+            <documentation value="resource | datatype | extension"/>
+         </searchParam>
+         <searchParam>
+            <name value="experimental"/>
+            <type value="token"/>
+            <documentation value="For testing purposes, not real usage"/>
+         </searchParam>
+         <searchParam>
+            <name value="abstract"/>
+            <type value="token"/>
+            <documentation value="Whether the structure is abstract"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="path"/>
+            <type value="token"/>
+            <documentation value="A path that is constrained in the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="ext-context"/>
+            <type value="string"/>
+            <documentation value="Where the extension can be used in instances"/>
+         </searchParam>
+         <searchParam>
+            <name value="base-path"/>
+            <type value="token"/>
+            <documentation value="Path that identifies the base element"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derivation"/>
+            <type value="token"/>
+            <documentation value="specialization | constraint - How relates to base definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="keyword"/>
+            <type value="token"/>
+            <documentation value="A code for the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="uri"/>
+            <documentation value="Definition that this type is constrained/specialized from"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the structure definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+            <valueDecimal value="31"/>
+         </extension>
+         <type value="ValueSet"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The value set publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="expansion"/>
+            <type value="uri"/>
+            <documentation value="Uniquely identifies this expansion"/>
+         </searchParam>
+         <searchParam>
+            <name value="reference"/>
+            <type value="uri"/>
+            <documentation value="A code system included or excluded in the value set or an imported value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the value set"/>
+         </searchParam>
+      </resource>
+      <interaction>
+         <code value="history-system"/>
+      </interaction>
+      <interaction>
+         <code value="transaction"/>
+      </interaction>
+      <operation>
+         <name value="mark-all-resources-for-reindexing"/>
+         <definition>
+            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="perform-reindexing-pass"/>
+         <definition>
+            <reference value="OperationDefinition/-s-perform-reindexing-pass"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/-s-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="get-resource-counts"/>
+         <definition>
+            <reference value="OperationDefinition/-s-get-resource-counts"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="suggest-keywords"/>
+         <definition>
+            <reference value="OperationDefinition/-s-suggest-keywords"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-s-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/-is-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="lookup"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem--lookup"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="translate"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-translate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expand"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-expand"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate-code"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-validate-code"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-meta-add"/>
+         </definition>
+      </operation>
+   </rest>
+</CapabilityStatement>

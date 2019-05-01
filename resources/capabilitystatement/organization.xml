@@ -1,0 +1,622 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="4d10bcdb-2b2c-412e-9862-d96af54b8bd7"/>
+   <status value="active"/>
+   <date value="2019-04-26T11:16:45+00:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="HAPI FHIR Server"/>
+      <version value="3.7.0"/>
+   </software>
+   <implementation>
+      <description value="eHealth FHIR microservice"/>
+      <url value="http://192.168.88.149:8080/organization/fhir"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <type value="CareTeam"/>
+         <profile>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="CarePlan:activity-reference"/>
+         <searchInclude value="CarePlan:based-on"/>
+         <searchInclude value="CarePlan:care-team"/>
+         <searchInclude value="CarePlan:condition"/>
+         <searchInclude value="CarePlan:context"/>
+         <searchInclude value="CarePlan:definition"/>
+         <searchInclude value="CarePlan:encounter"/>
+         <searchInclude value="CarePlan:goal"/>
+         <searchInclude value="CarePlan:part-of"/>
+         <searchInclude value="CarePlan:patient"/>
+         <searchInclude value="CarePlan:performer"/>
+         <searchInclude value="CarePlan:replaces"/>
+         <searchInclude value="CarePlan:subject"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Time period team covers"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External Ids for this team"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who care team is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who care team is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode associated with CareTeam"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode associated with CareTeam"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Type of team"/>
+         </searchParam>
+         <searchParam>
+            <name value="participant"/>
+            <type value="reference"/>
+            <documentation value="Who is involved"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="proposed | active | suspended | inactive | entered-in-error"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The operation definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Name used to invoke the operation"/>
+         </searchParam>
+         <searchParam>
+            <name value="instance"/>
+            <type value="token"/>
+            <documentation value="Invoke on an instance?"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="operation | query"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Invole at the type level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="system"/>
+            <type value="token"/>
+            <documentation value="Invoke at the system level?"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the operation definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="param-profile"/>
+            <type value="reference"/>
+            <documentation value="Profile on the type"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="reference"/>
+            <documentation value="Marks this as a profile of the base"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the operation definition"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="Organization"/>
+         <profile>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchInclude value="*"/>
+         <searchInclude value="Organization:endpoint"/>
+         <searchInclude value="Organization:partof"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
+         </searchParam>
+         <searchParam>
+            <name value="partof"/>
+            <type value="reference"/>
+            <documentation value="An organization of which this organization forms a part"/>
+         </searchParam>
+         <searchParam>
+            <name value="address"/>
+            <type value="string"/>
+            <documentation value="A (part of the) address of the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-state"/>
+            <type value="string"/>
+            <documentation value="A state specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="A code for the type of organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-postalcode"/>
+            <type value="string"/>
+            <documentation value="A postal code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-country"/>
+            <type value="string"/>
+            <documentation value="A country specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="endpoint"/>
+            <type value="reference"/>
+            <documentation value="Technical endpoints providing access to services operated for the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="phonetic"/>
+            <type value="string"/>
+            <documentation value="A portion of the organization's name using some kind of phonetic matching algorithm"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-use"/>
+            <type value="token"/>
+            <documentation value="A use code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="A portion of the organization's name or alias"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-city"/>
+            <type value="string"/>
+            <documentation value="A city specified in an address"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="Practitioner"/>
+         <profile>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="given"/>
+            <type value="string"/>
+            <documentation value="A portion of the given name"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A practitioner's Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="address"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-state"/>
+            <type value="string"/>
+            <documentation value="A state specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="gender"/>
+            <type value="token"/>
+            <documentation value="Gender of the practitioner"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="Whether the practitioner record is active"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-postalcode"/>
+            <type value="string"/>
+            <documentation value="A postalCode specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-country"/>
+            <type value="string"/>
+            <documentation value="A country specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="phonetic"/>
+            <type value="string"/>
+            <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
+         </searchParam>
+         <searchParam>
+            <name value="phone"/>
+            <type value="token"/>
+            <documentation value="A value in a phone contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-use"/>
+            <type value="token"/>
+            <documentation value="A use code specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="The value in any kind of contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="address-city"/>
+            <type value="string"/>
+            <documentation value="A city specified in an address"/>
+         </searchParam>
+         <searchParam>
+            <name value="communication"/>
+            <type value="token"/>
+            <documentation value="One of the languages that the practitioner can communicate with"/>
+         </searchParam>
+         <searchParam>
+            <name value="family"/>
+            <type value="string"/>
+            <documentation value="A portion of the family name"/>
+         </searchParam>
+         <searchParam>
+            <name value="email"/>
+            <type value="token"/>
+            <documentation value="A value in an email contact"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <versioning value="versioned-update"/>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The structure definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="valueset"/>
+            <type value="reference"/>
+            <documentation value="A vocabulary binding reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="primitive-type | complex-type | resource | logical"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <type value="token"/>
+            <documentation value="resource | datatype | extension"/>
+         </searchParam>
+         <searchParam>
+            <name value="experimental"/>
+            <type value="token"/>
+            <documentation value="For testing purposes, not real usage"/>
+         </searchParam>
+         <searchParam>
+            <name value="abstract"/>
+            <type value="token"/>
+            <documentation value="Whether the structure is abstract"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="path"/>
+            <type value="token"/>
+            <documentation value="A path that is constrained in the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="ext-context"/>
+            <type value="string"/>
+            <documentation value="Where the extension can be used in instances"/>
+         </searchParam>
+         <searchParam>
+            <name value="base-path"/>
+            <type value="token"/>
+            <documentation value="Path that identifies the base element"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="derivation"/>
+            <type value="token"/>
+            <documentation value="specialization | constraint - How relates to base definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="keyword"/>
+            <type value="token"/>
+            <documentation value="A code for the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="uri"/>
+            <documentation value="Definition that this type is constrained/specialized from"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the structure definition"/>
+         </searchParam>
+      </resource>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-add"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/CareTeam-i-meta-delete"/>
+         </definition>
+      </operation>
+   </rest>
+</CapabilityStatement>

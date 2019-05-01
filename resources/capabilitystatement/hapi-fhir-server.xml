@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="ehealth"/>
+   <id value="79df7faa-d006-4179-bd2a-20469c9fb93f"/>
    <status value="active"/>
-   <date value="2019-03-12T14:33:02+00:00"/>
+   <date value="2019-04-29T10:58:08+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="HAPI FHIR Server"/>
-      <version value="3.7.0"/>
+      <version value="3.7.0-sse1"/>
    </software>
    <implementation>
-      <description value="eHealth FHIR Server"/>
-      <url value="http://10.1.1.116:8080/hapi-fhir-server/fhir"/>
+      <description value="eHealth FHIR microservice"/>
+      <url value="http://192.168.128.239:8080/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -40,7 +40,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="ActivityDefinition:composed-of"/>
@@ -57,11 +56,6 @@
             <name value="date"/>
             <type value="date"/>
             <documentation value="The activity definition publication date"/>
-         </searchParam>
-         <searchParam>
-            <name value="owner"/>
-            <type value="reference"/>
-            <documentation value="The formal owner of the ActivityDefinition"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
@@ -167,7 +161,6 @@
             <code value="search-type"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
@@ -185,34 +178,14 @@
             <documentation value="Time period plan covers"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External Ids for this plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="goal"/>
-            <type value="reference"/>
-            <documentation value="Desired outcome of plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer"/>
-            <type value="reference"/>
-            <documentation value="Matches if the practitioner is listed as a performer in any of the &quot;simple&quot; activities.  (For performers of the detailed activities, chain through the activitydetail search parameter.)"/>
-         </searchParam>
-         <searchParam>
-            <name value="replaces"/>
-            <type value="reference"/>
-            <documentation value="CarePlan replaced by this CarePlan"/>
-         </searchParam>
-         <searchParam>
             <name value="subject"/>
             <type value="reference"/>
             <documentation value="Who care plan is for"/>
          </searchParam>
          <searchParam>
-            <name value="monitoring_responsible"/>
+            <name value="responsibility_summary_actor"/>
             <type value="reference"/>
-            <documentation value="Individuals, careteam and/or organization responsible for monitoring this plan"/>
+            <documentation value="The responsibility summary actor of the care plan"/>
          </searchParam>
          <searchParam>
             <name value="part-of"/>
@@ -220,24 +193,9 @@
             <documentation value="Part of referenced CarePlan"/>
          </searchParam>
          <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Created in context of"/>
-         </searchParam>
-         <searchParam>
-            <name value="intent"/>
+            <name value="responsible_type"/>
             <type value="token"/>
-            <documentation value="proposal | plan | order | option"/>
-         </searchParam>
-         <searchParam>
-            <name value="activity-reference"/>
-            <type value="reference"/>
-            <documentation value="Activity details defined in specific resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="condition"/>
-            <type value="reference"/>
-            <documentation value="Health issues this plan addresses"/>
+            <documentation value="The responsible type of the care plan"/>
          </searchParam>
          <searchParam>
             <name value="based-on"/>
@@ -265,6 +223,61 @@
             <documentation value="Protocol or definition"/>
          </searchParam>
          <searchParam>
+            <name value="activity-code"/>
+            <type value="token"/>
+            <documentation value="Detail type of activity"/>
+         </searchParam>
+         <searchParam>
+            <name value="responsible_actor"/>
+            <type value="reference"/>
+            <documentation value="The responsible actor of the care plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External Ids for this plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="goal"/>
+            <type value="reference"/>
+            <documentation value="Desired outcome of plan"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="reference"/>
+            <documentation value="Matches if the practitioner is listed as a performer in any of the &quot;simple&quot; activities.  (For performers of the detailed activities, chain through the activitydetail search parameter.)"/>
+         </searchParam>
+         <searchParam>
+            <name value="replaces"/>
+            <type value="reference"/>
+            <documentation value="CarePlan replaced by this CarePlan"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Created in context of"/>
+         </searchParam>
+         <searchParam>
+            <name value="intent"/>
+            <type value="token"/>
+            <documentation value="proposal | plan | order | option"/>
+         </searchParam>
+         <searchParam>
+            <name value="activity-reference"/>
+            <type value="reference"/>
+            <documentation value="Activity details defined in specific resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="condition"/>
+            <type value="reference"/>
+            <documentation value="Health issues this plan addresses"/>
+         </searchParam>
+         <searchParam>
+            <name value="responsibility_summary_type"/>
+            <type value="token"/>
+            <documentation value="The responsibility summary type of the care plan"/>
+         </searchParam>
+         <searchParam>
             <name value="_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
@@ -275,121 +288,9 @@
             <documentation value="Type of plan"/>
          </searchParam>
          <searchParam>
-            <name value="activity-code"/>
-            <type value="token"/>
-            <documentation value="Detail type of activity"/>
-         </searchParam>
-         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="draft | active | suspended | completed | entered-in-error | cancelled | unknown"/>
-         </searchParam>
-      </resource>
-      <resource>
-         <type value="CareTeam"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
-         </interaction>
-         <interaction>
-            <code value="delete"/>
-         </interaction>
-         <interaction>
-            <code value="history-instance"/>
-         </interaction>
-         <interaction>
-            <code value="history-type"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
-         <conditionalUpdate value="true"/>
-         <conditionalDelete value="multiple"/>
-         <searchInclude value="*"/>
-         <searchInclude value="CarePlan:activity-reference"/>
-         <searchInclude value="CarePlan:based-on"/>
-         <searchInclude value="CarePlan:care-team"/>
-         <searchInclude value="CarePlan:condition"/>
-         <searchInclude value="CarePlan:context"/>
-         <searchInclude value="CarePlan:definition"/>
-         <searchInclude value="CarePlan:encounter"/>
-         <searchInclude value="CarePlan:goal"/>
-         <searchInclude value="CarePlan:part-of"/>
-         <searchInclude value="CarePlan:patient"/>
-         <searchInclude value="CarePlan:performer"/>
-         <searchInclude value="CarePlan:replaces"/>
-         <searchInclude value="CarePlan:subject"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="Time period team covers"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External Ids for this team"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Who care team is for"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Who care team is for"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode associated with CareTeam"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode associated with CareTeam"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="Type of team"/>
-         </searchParam>
-         <searchParam>
-            <name value="participant"/>
-            <type value="reference"/>
-            <documentation value="Who is involved"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="proposed | active | suspended | inactive | entered-in-error"/>
          </searchParam>
       </resource>
       <resource>
@@ -414,7 +315,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="ClinicalImpression:action"/>
@@ -524,7 +424,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
@@ -627,7 +526,6 @@
             <code value="search-type"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <searchParam>
             <name value="_language"/>
             <type value="string"/>
@@ -776,7 +674,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
@@ -881,7 +778,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="Device:location"/>
@@ -980,7 +876,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="DeviceMetric:parent"/>
@@ -1043,7 +938,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="DeviceUseStatement:device"/>
@@ -1112,7 +1006,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="DocumentReference:authenticator"/>
@@ -1282,7 +1175,6 @@
             <code value="search-type"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
@@ -1362,7 +1254,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="Library:composed-of"/>
@@ -1467,315 +1358,6 @@
          </searchParam>
       </resource>
       <resource>
-         <type value="Media"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="When Media was collected"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Identifier(s) for the image"/>
-         </searchParam>
-         <searchParam>
-            <name value="created"/>
-            <type value="date"/>
-            <documentation value="Date attachment was first created"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Who/What this Media is a record of"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="photo | video | audio"/>
-         </searchParam>
-         <searchParam>
-            <name value="operator"/>
-            <type value="reference"/>
-            <documentation value="The person who generated the image"/>
-         </searchParam>
-         <searchParam>
-            <name value="site"/>
-            <type value="token"/>
-            <documentation value="Body part in media"/>
-         </searchParam>
-         <searchParam>
-            <name value="view"/>
-            <type value="token"/>
-            <documentation value="Imaging view, e.g. Lateral or Antero-posterior"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Procedure that caused this media to be created"/>
-         </searchParam>
-         <searchParam>
-            <name value="subtype"/>
-            <type value="token"/>
-            <documentation value="The type of acquisition equipment/process"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Who/What this Media is a record of"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter / Episode associated with media"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="device"/>
-            <type value="reference"/>
-            <documentation value="Observing Device"/>
-         </searchParam>
-      </resource>
-      <resource>
-         <type value="Observation"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period"/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-data-absent-reason"/>
-            <type value="token"/>
-            <documentation value="The reason why the expected value in the element Observation.value[x] or Observation.component.value[x] is missing."/>
-         </searchParam>
-         <searchParam>
-            <name value="code"/>
-            <type value="token"/>
-            <documentation value="The code of the observation type"/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-code-value-quantity"/>
-            <type value="composite"/>
-            <documentation value="Code and quantity value parameter pair, including in components"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-data-absent-reason"/>
-            <type value="token"/>
-            <documentation value="The reason why the expected value in the element Observation.component.value[x] is missing."/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="The subject that the observation is about"/>
-         </searchParam>
-         <searchParam>
-            <name value="value-concept"/>
-            <type value="token"/>
-            <documentation value="The value of the observation, if the value is a CodeableConcept"/>
-         </searchParam>
-         <searchParam>
-            <name value="value-date"/>
-            <type value="date"/>
-            <documentation value="The value of the observation, if the value is a date or period of time"/>
-         </searchParam>
-         <searchParam>
-            <name value="code-value-string"/>
-            <type value="composite"/>
-            <documentation value="Code and string value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-code-value-quantity"/>
-            <type value="composite"/>
-            <documentation value="Component code and component quantity value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Reference to the test or procedure request."/>
-         </searchParam>
-         <searchParam>
-            <name value="related"/>
-            <type value="composite"/>
-            <documentation value="Related Observations - search on related-type and related-target together"/>
-         </searchParam>
-         <searchParam>
-            <name value="code-value-date"/>
-            <type value="composite"/>
-            <documentation value="Code and date/time value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="The subject that the observation is about (if patient)"/>
-         </searchParam>
-         <searchParam>
-            <name value="specimen"/>
-            <type value="reference"/>
-            <documentation value="Specimen used for this observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="code-value-quantity"/>
-            <type value="composite"/>
-            <documentation value="Code and quantity value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-code"/>
-            <type value="token"/>
-            <documentation value="The component code of the observation type"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Healthcare event  (Episode-of-care or Encounter) related to the observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-code-value-concept"/>
-            <type value="composite"/>
-            <documentation value="Code and coded value parameter pair, including in components"/>
-         </searchParam>
-         <searchParam>
-            <name value="value-string"/>
-            <type value="string"/>
-            <documentation value="The value of the observation, if the value is a string, and also searches in CodeableConcept.text"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="The unique id for a particular observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer"/>
-            <type value="reference"/>
-            <documentation value="Who performed the observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-code"/>
-            <type value="token"/>
-            <documentation value="The code of the observation type or component type"/>
-         </searchParam>
-         <searchParam>
-            <name value="method"/>
-            <type value="token"/>
-            <documentation value="The method used for the observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="value-quantity"/>
-            <type value="quantity"/>
-            <documentation value="The value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-value-quantity"/>
-            <type value="quantity"/>
-            <documentation value="The value of the component observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
-         </searchParam>
-         <searchParam>
-            <name value="data-absent-reason"/>
-            <type value="token"/>
-            <documentation value="The reason why the expected value in the element Observation.value[x] is missing."/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-value-quantity"/>
-            <type value="quantity"/>
-            <documentation value="The value or component value of the observation, if the value is a Quantity, or a SampledData (just search on the bounds of the values in sampled data)"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Encounter related to the observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="related-type"/>
-            <type value="token"/>
-            <documentation value="has-member | derived-from | sequel-to | replaces | qualified-by | interfered-by"/>
-         </searchParam>
-         <searchParam>
-            <name value="related-target"/>
-            <type value="reference"/>
-            <documentation value="Resource that is related to this one"/>
-         </searchParam>
-         <searchParam>
-            <name value="code-value-concept"/>
-            <type value="composite"/>
-            <documentation value="Code and coded value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-code-value-concept"/>
-            <type value="composite"/>
-            <documentation value="Component code and component coded value parameter pair"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="component-value-concept"/>
-            <type value="token"/>
-            <documentation value="The value of the component observation, if the value is a CodeableConcept"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="The classification of the type of observation"/>
-         </searchParam>
-         <searchParam>
-            <name value="device"/>
-            <type value="reference"/>
-            <documentation value="The Device that generated the observation data."/>
-         </searchParam>
-         <searchParam>
-            <name value="combo-value-concept"/>
-            <type value="token"/>
-            <documentation value="The value or component value of the observation, if the value is a CodeableConcept"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The status of the observation"/>
-         </searchParam>
-      </resource>
-      <resource>
          <type value="OperationDefinition"/>
          <profile>
             <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
@@ -1871,105 +1453,6 @@
          </searchParam>
       </resource>
       <resource>
-         <type value="Organization"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
-         <conditionalUpdate value="true"/>
-         <searchInclude value="*"/>
-         <searchInclude value="Organization:endpoint"/>
-         <searchInclude value="Organization:partof"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
-         </searchParam>
-         <searchParam>
-            <name value="partof"/>
-            <type value="reference"/>
-            <documentation value="An organization of which this organization forms a part"/>
-         </searchParam>
-         <searchParam>
-            <name value="address"/>
-            <type value="string"/>
-            <documentation value="A (part of the) address of the organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-state"/>
-            <type value="string"/>
-            <documentation value="A state specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="active"/>
-            <type value="token"/>
-            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="A code for the type of organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-postalcode"/>
-            <type value="string"/>
-            <documentation value="A postal code specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-country"/>
-            <type value="string"/>
-            <documentation value="A country specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="endpoint"/>
-            <type value="reference"/>
-            <documentation value="Technical endpoints providing access to services operated for the organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="phonetic"/>
-            <type value="string"/>
-            <documentation value="A portion of the organization's name using some kind of phonetic matching algorithm"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-use"/>
-            <type value="token"/>
-            <documentation value="A use code specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="A portion of the organization's name or alias"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-city"/>
-            <type value="string"/>
-            <documentation value="A city specified in an address"/>
-         </searchParam>
-      </resource>
-      <resource>
          <type value="PlanDefinition"/>
          <profile>
             <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"/>
@@ -1991,7 +1474,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="PlanDefinition:composed-of"/>
@@ -2096,123 +1578,6 @@
          </searchParam>
       </resource>
       <resource>
-         <type value="Practitioner"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
-         <conditionalUpdate value="true"/>
-         <searchInclude value="*"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="given"/>
-            <type value="string"/>
-            <documentation value="A portion of the given name"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="A practitioner's Identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="address"/>
-            <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-state"/>
-            <type value="string"/>
-            <documentation value="A state specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="gender"/>
-            <type value="token"/>
-            <documentation value="Gender of the practitioner"/>
-         </searchParam>
-         <searchParam>
-            <name value="active"/>
-            <type value="token"/>
-            <documentation value="Whether the practitioner record is active"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-postalcode"/>
-            <type value="string"/>
-            <documentation value="A postalCode specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-country"/>
-            <type value="string"/>
-            <documentation value="A country specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="phonetic"/>
-            <type value="string"/>
-            <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
-         </searchParam>
-         <searchParam>
-            <name value="phone"/>
-            <type value="token"/>
-            <documentation value="A value in a phone contact"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-use"/>
-            <type value="token"/>
-            <documentation value="A use code specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
-         </searchParam>
-         <searchParam>
-            <name value="telecom"/>
-            <type value="token"/>
-            <documentation value="The value in any kind of contact"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="address-city"/>
-            <type value="string"/>
-            <documentation value="A city specified in an address"/>
-         </searchParam>
-         <searchParam>
-            <name value="communication"/>
-            <type value="token"/>
-            <documentation value="One of the languages that the practitioner can communicate with"/>
-         </searchParam>
-         <searchParam>
-            <name value="family"/>
-            <type value="string"/>
-            <documentation value="A portion of the family name"/>
-         </searchParam>
-         <searchParam>
-            <name value="email"/>
-            <type value="token"/>
-            <documentation value="A value in an email contact"/>
-         </searchParam>
-      </resource>
-      <resource>
          <type value="PractitionerRole"/>
          <profile>
             <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"/>
@@ -2246,7 +1611,6 @@
          </interaction>
          <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
@@ -2346,7 +1710,6 @@
             <code value="update"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchParam>
             <name value="_language"/>
@@ -2471,7 +1834,6 @@
             <code value="vread"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <searchParam>
             <name value="_language"/>
             <type value="string"/>
@@ -2536,197 +1898,6 @@
             <name value="entity-id"/>
             <type value="token"/>
             <documentation value="Identity of entity"/>
-         </searchParam>
-      </resource>
-      <resource>
-         <type value="Questionnaire"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
-         </interaction>
-         <interaction>
-            <code value="delete"/>
-         </interaction>
-         <interaction>
-            <code value="history-instance"/>
-         </interaction>
-         <interaction>
-            <code value="history-type"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalCreate value="true"/>
-         <conditionalRead value="full-support"/>
-         <conditionalUpdate value="true"/>
-         <conditionalDelete value="multiple"/>
-         <searchInclude value="*"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="The questionnaire publication date"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External identifier for the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="code"/>
-            <type value="token"/>
-            <documentation value="A code that corresponds to one of its items in the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="description"/>
-            <type value="string"/>
-            <documentation value="The description of the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="title"/>
-            <type value="string"/>
-            <documentation value="The human-friendly name of the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="version"/>
-            <type value="token"/>
-            <documentation value="The business version of the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="url"/>
-            <type value="uri"/>
-            <documentation value="The uri that identifies the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="effective"/>
-            <type value="date"/>
-            <documentation value="The time during which the questionnaire is intended to be in use"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the questionnaire"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the questionnaire"/>
-         </searchParam>
-      </resource>
-      <resource>
-         <type value="QuestionnaireResponse"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="authored"/>
-            <type value="date"/>
-            <documentation value="When the questionnaire response was last changed"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="The unique identifier for the questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="parent"/>
-            <type value="reference"/>
-            <documentation value="Procedure or observation this questionnaire response was performed as a part of"/>
-         </searchParam>
-         <searchParam>
-            <name value="questionnaire"/>
-            <type value="reference"/>
-            <documentation value="The questionnaire the answers are provided for"/>
-         </searchParam>
-         <searchParam>
-            <name value="author"/>
-            <type value="reference"/>
-            <documentation value="The author of the questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="The subject of the questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="source"/>
-            <type value="reference"/>
-            <documentation value="The individual providing the information reflected in the questionnaire respose"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Plan/proposal/order fulfilled by this questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="The patient that is the subject of the questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode associated with the questionnaire response"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The status of the questionnaire response"/>
          </searchParam>
       </resource>
       <resource>
@@ -2880,7 +2051,6 @@
             <code value="search-type"/>
          </interaction>
          <versioning value="versioned-update"/>
-         <conditionalRead value="full-support"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="Task:based-on"/>
@@ -3003,280 +2173,106 @@
             <documentation value="Search by task status"/>
          </searchParam>
       </resource>
-      <interaction>
-         <code value="history-system"/>
-      </interaction>
-      <interaction>
-         <code value="transaction"/>
-      </interaction>
-      <operation>
-         <name value="mark-all-resources-for-reindexing"/>
-         <definition>
-            <reference value="OperationDefinition/-s-mark-all-resources-for-reindexing"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="perform-reindexing-pass"/>
-         <definition>
-            <reference value="OperationDefinition/-s-perform-reindexing-pass"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="get-resource-counts"/>
-         <definition>
-            <reference value="OperationDefinition/-s-get-resource-counts"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="suggest-keywords"/>
-         <definition>
-            <reference value="OperationDefinition/-s-suggest-keywords"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/-s-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/-is-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/-s-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="submit-measurement"/>
-         <definition>
-            <reference value="OperationDefinition/-s-submit-measurement"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="search-measurements"/>
-         <definition>
-            <reference value="OperationDefinition/-s-search-measurements"/>
-         </definition>
-      </operation>
       <operation>
          <name value="transformToObservation"/>
          <definition>
-            <reference value="OperationDefinition/-s-transformToObservation"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToPHMR"/>
          <definition>
-            <reference value="OperationDefinition/-s-transformToPHMR"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToAppointment"/>
-         <definition>
-            <reference value="OperationDefinition/-s-transformToAppointment"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToAPD"/>
-         <definition>
-            <reference value="OperationDefinition/-s-transformToAPD"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToQuestionnaireResponse"/>
-         <definition>
-            <reference value="OperationDefinition/-s-transformToQuestionnaireResponse"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToQRD"/>
-         <definition>
-            <reference value="OperationDefinition/-s-transformToQRD"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
          </definition>
       </operation>
       <operation>
          <name value="create-episode-of-care"/>
          <definition>
-            <reference value="OperationDefinition/-s-create-episode-of-care"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
          </definition>
       </operation>
       <operation>
-         <name value="search-organization-and-practitioner-external"/>
+         <name value="transformToAppointment"/>
          <definition>
-            <reference value="OperationDefinition/-s-search-organization-and-practitioner-external"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
+         <name value="transformToAPD"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-validate"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
+         <name value="transformToQuestionnaireResponse"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--validate"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
          </definition>
       </operation>
       <operation>
-         <name value="expunge"/>
+         <name value="transformToQRD"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/CareTeam-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/CareTeam--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta-delete"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
          </definition>
       </operation>
       <operation>
          <name value="evaluate"/>
          <definition>
-            <reference value="OperationDefinition/Library--evaluate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="fetch-external-organizations"/>
-         <definition>
-            <reference value="OperationDefinition/Organization--fetch-external-organizations"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
          </definition>
       </operation>
       <operation>
          <name value="apply"/>
          <definition>
-            <reference value="OperationDefinition/PlanDefinition-i-apply"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="fetch-external-practitioners"/>
-         <definition>
-            <reference value="OperationDefinition/Practitioner--fetch-external-practitioners"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-validate"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole--validate"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole--expunge"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/PractitionerRole--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-meta"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-meta-add"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="OperationDefinition/PractitionerRole-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire-i-expunge"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/Questionnaire--meta"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/Questionnaire-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/Questionnaire-i-meta-delete"/>
+            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
          </definition>
       </operation>
    </rest>
