@@ -6,12 +6,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 
-- Added operations examples for 'ehealth-activitydefinition', 'ehealth-careplan', 'ehealth-careteam', 'ehealth-clinicalimpression', 'ehealth-communication', 'ehealth-message', 'ehealth-condition', 'ehealth-consent', 'ehealth-device', 'ehealth-devicemetric', 'ehealth-deviceUseStatement', 'ehealth-episodeofcare', 'ehealth-library', 'ehealth-media', 'ehealth-observation', 'ehealth-organization', 'ehealth-plandefinition', 'ehealth-practitioner', 'ehealth-practitionerRole', 'ehealth-procedurerequest', 'ehealth-provenance', 'ehealth-questionnaire' and 'ehealth-questionnaireresponse'.
-- Added custom operations for transformations between 'DK-HL7 QRD/eHealth QuestionnaireResponse', 'DK-HL7 APD/eHealth Appointment' and 'DK-HL7 PHRM/eHealth Observation'.
+- Added operations examples for `ehealth-activitydefinition`, `ehealth-careplan`, `ehealth-careteam`, `ehealth-clinicalimpression`, `ehealth-communication`, `ehealth-message`, `ehealth-condition`, `ehealth-consent`, `ehealth-device`, `ehealth-devicemetric`, `ehealth-deviceUseStatement`, `ehealth-episodeofcare`, `ehealth-library`, `ehealth-media`, `ehealth-observation`, `ehealth-organization`, `ehealth-plandefinition`, `ehealth-practitioner`, `ehealth-practitionerRole`, `ehealth-procedurerequest`, `ehealth-provenance`, `ehealth-questionnaire` and `ehealth-questionnaireresponse`.
+- Added custom operations for transformations between `DK-HL7 QRD/eHealth QuestionnaireResponse`, `DK-HL7 APD/eHealth Appointment` and `DK-HL7 PHRM/eHealth Observation`.
 - Added `http://ehealth.sundhed.dk/fhir/` as base-url to intra-IG links
 - Added operation examples for most of the resources 
-- Changed 'DK CRN Identifier', 'Identifier.assigner' marked Referenced
-- Changed strength of all value bindings to 'required'
+- Changed `DK CRN Identifier`, `Identifier.assigner` marked Referenced
+- Changed strength of all value bindings to "required"
 
 ### Custom operations
 
@@ -23,7 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added description of `-s-transformToAPD`
 - Added description of `-s-transformToQuestionnaireResponse`
 - Added description of `-s-transformToQRD`
-- Changed description of `-s-search-measurements`, parameter 'period' now required
+- Changed description of `-s-search-measurements`, parameter `period` now required
 - Changed description of `-s-create-episode-of-care`
 - Deleted `fetch-external-organizations`
 - Deleted `fetch-external-practitioners`
@@ -32,7 +32,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 - Added description of `Library-i-evaluate` 
 - Added description of `PlanDefinition-i-apply`
-- Changed return value of `Library-i-evaluate` to 'Parameters'
+- Changed return value of `Library-i-evaluate` to `Parameters`
 
 ### Code systems
 - Added `http://www.example.com/medcom/document-class`
@@ -59,16 +59,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
 - Added `http://ehealth.sundhed.dk/vs/device-use-reason`
 - Added `http://ehealth.sundhed.dk/vs/event-type-codes`, referenced by
-  - 'ehealth-composition'
-  - 'ehealth-documentreference'
+  - `ehealth-composition`
+  - `ehealth-documentreference`
 - Added `http://ehealth.sundhed.dk/vs/facility-type-codes`, referenced by
-  - 'ehealth-documentreference'
+  - `ehealth-documentreference`
 - `http://ehealth.sundhed.dk/vs/format-codes`, referenced by
-  - 'ehealth-documentreference'
-  - 'ehealth-plandefinition-role'      
+  - `ehealth-documentreference`
+  - `ehealth-plandefinition-role`      
 - Added `http://ehealth.sundhed.dk/vs/modifier-role`
 - Added `http://ehealth.sundhed.dk/vs/practice-setting-codes`, referenced by
-  - 'ehealth-documentreference'
+  - `ehealth-documentreference`
 - Added `http://ehealth.sundhed.dk/vs/reference-range-type`
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 - Changed `http://ehealth.sundhed.dk/vs/careplan-category`
@@ -90,49 +90,48 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 
 #### ActivityDefinition (ehealth-activitydefinition)
-- Added extension 'modifierRole' as a replacement for elements 'author' and 'owner'
-- Changed extension element 'minimumQuality' to be of type 'ehealth-quality'
-- Deleted element 'author'
-- Deleted element 'owner'
+- Added extension `modifierRole` as a replacement for elements `author` and `owner`
+- Changed extension element `minimumQuality` to be of type `ehealth-quality`
+- Deleted element `author`
+- Deleted element `owner`
 
 #### CarePlan (ehealth-careplan)
-- Added extension 'responsibilitySummary'
+- Added extension `responsibilitySummary`
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'CarePlan.category' value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
-- Deleted extension 'monitoringResponsible'
-- Deleted extension 'monitoringResponsibleHistory'
+- Changed element `CarePlan.category` value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
+- Deleted extension `monitoringResponsible`
+- Deleted extension `monitoringResponsibleHistory`
  
 #### CareTeam (ehealth-careteam)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'documentation'
+- Changed element `documentation`
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed resource description
-- Changed element 'ClinicalImpression.action' to support 'ehealth-appointment'
-- Changed element 'ClinicalImpression.code' value set binding to `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
+- Changed element `ClinicalImpression.action` to support `ehealth-appointment`
+- Changed element `ClinicalImpression.code` value set binding to `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
 
 #### Condition (ehealth-condition)
 - Changed referenced resources to use aggregation type "referenced"
 
 #### Consent (ehealth-consent)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'category' value set binding to `http://ehealth.sundhed.dk/vs/consent-category`
+- Changed element `category` value set binding to `http://ehealth.sundhed.dk/vs/consent-category`
 
 #### Communication (ehealth-correspondance)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'category' to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
+- Changed element `category` to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
 
 #### Communication (ehealth-message)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'medium' is now optional (not always relevant)
+- Changed element `medium` is now optional (not always relevant)
 
 #### Composition (ehealth-composition)
 - Added resource and relevant ValueSets
 
 #### Device (ehealth-device)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed type valueset binding strength to 'required' 
 
 #### DeviceMetric (ehealth-devicemetric)
 - Changed referenced resources to use aggregation type "referenced"
@@ -148,32 +147,32 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 
 #### GuidanceResponse (ehealth-guidanceresponse)
-- Added the profile as it is used as return parameter in 'library$evaluate' operation
+- Added the profile as it is used as return parameter in `library$evaluate` operation
 
 #### Library (ehealth-library)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed (renamed) element 'parameterbinding.name' to 'boundParameterName'
+- Changed (renamed) element `parameterbinding.name` to `boundParameterName`
 
 #### Media (ehealth-media)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed the type of extension element 'qualityType' and 'qualityCode' to CodeableConcept
-- Changed the type of extension element 'ehealth-sharingPolicy' to CodeableConcept
+- Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
+- Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
 
 #### Observation (ehealth-observation)
-- Added element 'specimen' referencing FHIR Specimen
+- Added element `specimen` referencing FHIR Specimen
 - Changed referenced resources to use aggregation type "referenced"
-- Changed the type of extension element 'qualityType' and 'qualityCode' to CodeableConcept
-- Changed the type of extension element 'ehealth-sharingPolicy' to CodeableConcept
+- Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
+- Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
 
 #### Organization (ehealth-organization)
-- Added extensions for 'system' and 'value' to be used inside 'organization.contact.telecom'
+- Added extensions for `system` and `value` to be used inside `organization.contact.telecom`
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'contact.telecom.extension.system' to be mandatory
+- Changed element `contact.telecom.extension.system` to be mandatory
 
 #### PlanDefinition (ehealth-plandefinition)
-- Added extension 'modifierRole' as a replacement for elements 'author' and 'owner'
-- Deleted element 'author'
-- Deleted element 'owner' 
+- Added extension `modifierRole` as a replacement for elements `author` and `owner`
+- Deleted element `author`
+- Deleted element `owner` 
 
 #### Practitioner (ehealth-practitioner)
 - Changed referenced resources to use aggregation type "referenced"
@@ -183,40 +182,40 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Changed referenced resources to use aggregation type "referenced"
-- Deleted extension 'responsible'
-- Deleted extension 'responsibleHistory'
+- Deleted extension `responsible`
+- Deleted extension `responsibleHistory`
 
 #### Provenance (ehealth-detached-provenance)
-- Added as an unchanged copy of the existing 'ehealth-provenance' to allow 'provenance' to exist on multiple HAPI FHIR instances
+- Added as an unchanged copy of the existing `ehealth-provenance` to allow `provenance` to exist on multiple HAPI FHIR instances
 
 #### Provenance (ehealth-provenance)
 - Changed referenced resources to use aggregation type "referenced"
 
 #### Questionnaire (ehealth-questionnaire)
-- Added extension 'modifierRole' as a replacement for elements 'author' and 'custodian'
-- Added element 'type' as replacement of element 'code'
-- Added extension 'QuestionnaireType'
+- Added extension `modifierRole` as a replacement for elements `author` and `custodian`
+- Added element `type` as replacement of element `code`
+- Added extension `QuestionnaireType`
 - Changed referenced resources to use aggregation type "referenced"
-- Changed element 'code' to default with 0-0 cardinality
-- Changed 'recommendation' extension from Coding to CodeableConcept 
-- Changed extension 'QuestionnaireReuseCriteria' from Coding to CodeableConcept for elements 'situationQuality', 'operationQuality' and 'dataQuality'
-- Changed extension 'QuestionnaireRecommendation' from Coding to CodeableConcept 
-- Deleted element 'author'
-- Deleted element 'custodian'
+- Changed element `code` to default with 0-0 cardinality
+- Changed `recommendation` extension from Coding to CodeableConcept 
+- Changed extension `QuestionnaireReuseCriteria` from Coding to CodeableConcept for elements `situationQuality`, `operationQuality` and `dataQuality`
+- Changed extension `QuestionnaireRecommendation` from Coding to CodeableConcept 
+- Deleted element `author`
+- Deleted element `custodian`
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed the type of extension element 'qualityType' and 'qualityCode' to CodeableConcept
-- Changed element 'context' to be mandatory
-- Changed element 'subject' to be mandatory
+- Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
+- Changed element `context` to be mandatory
+- Changed element `subject` to be mandatory
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added resource definition
-- Changed 'relationship' value set should not be a ResourceReference
-- Changed (renamed) 'related-person' to 'relatedperson' 
+- Changed element `relationship` value set should not be a ResourceReference
+- Changed (renamed) `related-person` to `relatedperson` 
 
 #### Task (ehealth-task)
 - Changed referenced resources to use aggregation type "referenced"
-- Changed 'ehealth-task-category' to CodeableConcept type
+- Changed `ehealth-task-category` to CodeableConcept type
 
 ## v1.0.0 - 2019-03-06
