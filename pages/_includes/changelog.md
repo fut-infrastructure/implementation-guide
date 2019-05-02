@@ -208,6 +208,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed the type of extension element qualityType and qualityCode to CodeableConcept
+- Changed context element to be mandatory
+- Changed subject element to be mandatory
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added resource definition
