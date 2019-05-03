@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="4a48807c-d830-4166-8a69-dbd3fb4f2071"/>
+   <id value="measurement"/>
    <status value="active"/>
-   <date value="2019-04-29T10:58:04+00:00"/>
+   <date value="2019-05-02T08:23:53+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="HAPI FHIR Server"/>
-      <version value="3.7.0-sse1"/>
+      <version value="3.7.0"/>
    </software>
    <implementation>
       <description value="eHealth FHIR microservice"/>
-      <url value="http://192.168.177.12:8080/measurement/fhir"/>
+      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -859,61 +859,61 @@
       <operation>
          <name value="submit-measurement"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/-s-submit-measurement"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/-s-submit-measurement"/>
          </definition>
       </operation>
       <operation>
          <name value="search-measurements"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/-s-search-measurements"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/-s-search-measurements"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Media--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Media--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Media-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Media-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Observation--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Observation--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Observation-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Observation-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Provenance--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Provenance--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/Provenance-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Provenance-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.177.12:8080/measurement/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
          </definition>
       </operation>
    </rest>

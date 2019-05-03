@@ -1,0 +1,34 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="Questionnaire--transform-to-questionnaire"/>
+   <name value="transform-to-questionnaire"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Transforms the DK-HL7 Questionnaire Form Definition Document (QFDD) to an eHealth Questionnaire resource. The input FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document. The returned Bundle contains the eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire."/>
+   <idempotent value="true"/>
+   <code value="transform-to-questionnaire"/>
+   <resource value="Questionnaire"/>
+   <system value="false"/>
+   <type value="true"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="documentReference"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="DocumentReference"/>
+   </parameter>
+   <parameter>
+      <name value="questionnaire"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Questionnaire"/>
+   </parameter>
+   <parameter>
+      <name value="composition"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Composition"/>
+   </parameter>
+</OperationDefinition>
