@@ -114,6 +114,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Condition (ehealth-condition)
 - Changed referenced resources to use aggregation type "referenced"
+- Changed element `Condition.note.author[x]` to support `ehealth-relatedperson`
 
 #### Consent (ehealth-consent)
 - Changed referenced resources to use aggregation type "referenced"
@@ -157,6 +158,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
 - Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
+- Removed `ehealth-careplan` from `Media.basedOn` element
 
 #### Observation (ehealth-observation)
 - Added element `specimen` referencing FHIR Specimen
@@ -217,5 +219,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Task (ehealth-task)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed `ehealth-task-category` to CodeableConcept type
+- Added extension `responsible`
 
 ## v1.0.0 - 2019-03-06

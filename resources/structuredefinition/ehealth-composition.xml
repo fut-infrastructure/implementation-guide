@@ -12,6 +12,34 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Composition.extension">
+      <path value="Composition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:authorOrganization">
+      <path value="Composition.extension" />
+      <sliceName value="authorOrganization" />
+      <short value="Organization that authored the Composition" />
+      <definition value="Organization that authored the Composition" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition-authorOrganization" />
+      </type>
+    </element>
+    <element id="Composition.extension:authorOrganization.valueReference:valueReference">
+      <path value="Composition.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+      </type>
+    </element>
     <element id="Composition.type">
       <path value="Composition.type" />
       <binding>
@@ -53,10 +81,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
     <element id="Composition.attester.party">

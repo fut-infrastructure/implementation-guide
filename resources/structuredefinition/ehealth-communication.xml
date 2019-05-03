@@ -17,6 +17,26 @@
       <path value="Communication" />
       <short value="A communication is a conveyance of information from a sender to a receiver." />
     </element>
+    <element id="Communication.extension">
+      <path value="Communication.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Communication.extension:recipientCareTeam">
+      <path value="Communication.extension" />
+      <sliceName value="recipientCareTeam" />
+      <short value="CareTeam message recipient" />
+      <definition value="CareTeam message recipient" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
+      </type>
+    </element>
     <element id="Communication.definition">
       <path value="Communication.definition" />
       <type>
@@ -74,10 +94,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
       </type>
     </element>
     <element id="Communication.topic">
