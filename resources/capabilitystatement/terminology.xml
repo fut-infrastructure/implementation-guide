@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="8bff92fe-2f9c-4dac-9aee-652a2d3acf5f"/>
+   <id value="terminology"/>
    <status value="active"/>
-   <date value="2019-04-30T11:34:02+00:00"/>
+   <date value="2019-05-02T12:26:43+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>

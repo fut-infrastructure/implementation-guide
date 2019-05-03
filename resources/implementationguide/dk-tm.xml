@@ -382,6 +382,16 @@
         <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisionrule"/>
       </sourceReference>
     </resource>
+	<resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-communication-recipientcareteam"/>
+      </sourceReference>
+    </resource>
+	<resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-composition-authororganization"/>
+      </sourceReference>
+    </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-correspondance-address"/>
@@ -626,6 +636,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-task-category"/>
+      </sourceReference>
+    </resource>
+	 <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-task-responsible"/>
       </sourceReference>
     </resource>
     <resource>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<OperationDefinition xmlns="http://hl7.org/fhir" 
+<OperationDefinition xmlns="http://hl7.org/fhir"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <id value="ehealth-appointment-toical-operationdefinition"/>
     <name value="Export Appointment to iCal"/>
