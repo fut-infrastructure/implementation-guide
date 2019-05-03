@@ -19,7 +19,6 @@
       <path value="Extension" />
       <short value="Care managers/care co-ordinators" />
       <definition value="Care managers/care co-ordinators for the patient." />
-      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

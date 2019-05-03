@@ -68,8 +68,13 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="QuestionnaireResponse.subject">
+      <path value="QuestionnaireResponse.subject" />
+      <min value="1" />
+    </element>
     <element id="QuestionnaireResponse.context">
       <path value="QuestionnaireResponse.context" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />

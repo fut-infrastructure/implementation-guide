@@ -32,28 +32,10 @@
       <sliceName value="careManager" />
       <short value="Care managers/care coordinators." />
       <definition value="Care managers/care coordinators for the patient." />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.extension:careManager.value[x]:valueReference">
-      <path value="EpisodeOfCare.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="EpisodeOfCare.extension:careManagerHistory">
@@ -66,29 +48,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
       </type>
     </element>
-    <element id="EpisodeOfCare.extension:careManagerHistory.extension:careManager">
-      <path value="EpisodeOfCare.extension.extension" />
-      <sliceName value="careManager" />
-    </element>
-    <element id="EpisodeOfCare.extension:careManagerHistory.extension:careManager.value[x]:valueReference">
-      <path value="EpisodeOfCare.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="EpisodeOfCare.extension:responsible">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="responsible" />
@@ -99,29 +58,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
-    <element id="EpisodeOfCare.extension:responsible.extension:actor">
-      <path value="EpisodeOfCare.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="EpisodeOfCare.extension:responsible.extension:actor.value[x]:valueReference">
-      <path value="EpisodeOfCare.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="EpisodeOfCare.extension:responsibleHistory">
       <path value="EpisodeOfCare.extension" />
       <sliceName value="responsibleHistory" />
@@ -130,29 +66,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
-      </type>
-    </element>
-    <element id="EpisodeOfCare.extension:responsibleHistory.extension:actor">
-      <path value="EpisodeOfCare.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="EpisodeOfCare.extension:responsibleHistory.extension:actor.value[x]:valueReference">
-      <path value="EpisodeOfCare.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="EpisodeOfCare.diagnosis">
