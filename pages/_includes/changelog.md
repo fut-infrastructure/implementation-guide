@@ -12,6 +12,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added operation examples for most of the resources 
 - Changed `DK CRN Identifier`, `Identifier.assigner` marked Referenced
 - Changed strength of all value bindings to "required"
+- Added capabilitystatements for `Measurement Service`, `Organization Service`, `Questionnaire Service` and `Terminology Service`
 
 ### Custom operations
 

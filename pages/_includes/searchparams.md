@@ -6,7 +6,7 @@ The following operations and search parameters have been defined for the eHealth
 
 ### Search Parameters
 
-For a list of search parameters supported per FHIR resource, please consult the particular server's capability statement
+For a list of search parameters supported per FHIR resource, please consult the capability statement of the particular server 
 in the top menu item Capability Statements. Displaying the capability statement as either XML or JSON, the search
 parameters can be found in the searchParam element of each resource.
 

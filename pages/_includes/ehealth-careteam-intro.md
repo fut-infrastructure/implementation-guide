@@ -4,13 +4,13 @@ The intended usage is depicted here:
                         +---------------+
                         | EpisodeOfCare |                            ---> :  "References"
                         +-------------+-+
-                           ^    ^     |
-                           |    |     v
-                  +--------+-+  |   +---------+     
-                  | CarePlan |--+-->| Patient |
-                  +--------+-+  |   +---------+
-                           |    |    
-                           v    |     
+                           ^          |
+                           |          v
+                  +--------+-+      +---------+     
+                  | CarePlan |----->| Patient |
+                  +--------+-+      +---------+
+                           |        
+                           v         
                           +-----+---------+                              
                           |    CareTeam   |                              
                           +---------------+
@@ -31,12 +31,12 @@ A CareTeam has a lifecycle independent of Patients. It represents an organizatio
 a "real-world" unit such as a hospital department/care unit or a "virtual" unit spanning sectors or several real-world 
 organizational units.
 
-CareTeam does not need to have references to either Patient or EpisodeOfCare. Instead it is intended to be referenced 
-by CareTeams which perform the actual Patient care. It can be used to group Practitioners from different organizations 
-into a single CareTeam. It can also be used to assign practitioners from the same organization to more specific teams. 
-For example based on role: e.g. a CareTeam consisting of monitoring responsible Practitioners.
+In eHealth Infrastructure, CareTeam will not reference Patient or EpisodeOfCare as subject and context, respectively.
+Instead CareTeam is intended to be referenced from CarePlan. It can be used to group practitioners from different
+organizations into a single CareTeam. It can also be used to assign practitioners from the same organization to
+more specific teams. 
 
 #### Composition of CareTeams
 There are currently no restrictions on the composition of CareTeams. 
 The intended usage is to establish a few layers of CareTeams, but it is important to make sure that the CareTem member 
-graph doesn't contain any cycles.
+graph contains no cycles.
