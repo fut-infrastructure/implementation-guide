@@ -37,4 +37,14 @@
         <display value="Supporter"/>
         <definition value="Supporter"/>
     </concept>
+    <concept>
+        <code value="orderPlacer"/>
+        <display value="Responsible for placing orders for devices and services"/>
+        <definition value="Placer of orders"/>
+    </concept>
+    <concept>
+        <code value="trainer"/>
+        <display value="Responsible for training"/>
+        <definition value="Trainer"/>
+    </concept>
 </CodeSystem>

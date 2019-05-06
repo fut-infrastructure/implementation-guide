@@ -51,6 +51,22 @@
                     <value value="Supporter"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="orderPlacer"/>
+                <display value="Responsible for placing orders for devices and services"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Placer of orders"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="trainer"/>
+                <display value="Responsible for training"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Trainer"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

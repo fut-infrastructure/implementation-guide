@@ -7,9 +7,6 @@ eHealth Infrastructure context.
 This document is a specification that reflects the capabilities of the FHIR<sup>&reg;&copy;</sup>-infrastructural part
 of the eHealth Infrastructure.
 
-The intended audience of the implementation guide is IT architects, developers and testers who are seeking to understand
-the available resources in the eHealth Infrastructure and how they can be used.
-
 ## Scope
 
 This document presents Danish use concepts defined via FHIR processable artifacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR STU3 specification.
@@ -45,7 +42,8 @@ Great FHIR exercises and tutorials can be found at [https://fhir-drills.github.i
 
 ## Reader's Guide
 
-* Overall security mechanisms have been described elsewhere.
+The intended audience of the implementation guide is IT architects, developers and testers who are seeking to understand
+the available resources in the eHealth Infrastructure and how they can be used.
+
 * In general, business validation rules have not been described.
-* An open modeling approach is reflected in the Implementation Guide as it is seen as a means to support future integration. A consequence is that many elements of resources have been left optional instead of removed all together.
-* Many value sets and code systems have been defined with a single entry indicating work in progress. These will mature in time.
+* Most value sets and code systems are still under construction. These will mature in time.
