@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="4d10bcdb-2b2c-412e-9862-d96af54b8bd7"/>
+   <id value="organization"/>
    <status value="active"/>
-   <date value="2019-04-26T11:16:45+00:00"/>
+   <date value="2019-05-02T08:24:01+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth FHIR microservice"/>
-      <url value="http://192.168.88.149:8080/organization/fhir"/>
+      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -573,49 +573,49 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam--meta"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta-add"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="OperationDefinition/CareTeam-i-meta-delete"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta-delete"/>
          </definition>
       </operation>
    </rest>

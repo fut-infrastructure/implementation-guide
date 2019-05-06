@@ -10,17 +10,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/GuidanceResponse" />
   <derivation value="constraint" />
   <differential>
-    <element id="GuidanceResponse.module">
-      <path value="GuidanceResponse.module" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceDefinition" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
-      </type>
-    </element>
     <element id="GuidanceResponse.subject">
       <path value="GuidanceResponse.subject" />
       <type>

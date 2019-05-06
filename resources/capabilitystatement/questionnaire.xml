@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="d265fac1-d46b-4be8-9adf-ff9d00ad366c"/>
+   <id value="questionnaire"/>
    <status value="active"/>
-   <date value="2019-04-29T10:46:48+00:00"/>
+   <date value="2019-05-02T08:23:50+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="HAPI FHIR Server"/>
-      <version value="3.7.0-sse1"/>
+      <version value="3.7.0"/>
    </software>
    <implementation>
       <description value="eHealth FHIR microservice"/>
-      <url value="http://192.168.96.169:8080/questionnaire/fhir"/>
+      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -687,55 +687,55 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire-i-expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire--expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta-add"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire--meta"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="transform-to-questionnaire"/>
          <definition>
-            <reference value="http://192.168.96.169:8080/questionnaire/fhir/OperationDefinition/Questionnaire--transform-to-questionnaire"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/questionnaire/fhir/OperationDefinition/Questionnaire--transform-to-questionnaire"/>
          </definition>
       </operation>
    </rest>

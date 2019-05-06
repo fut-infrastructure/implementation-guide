@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="79df7faa-d006-4179-bd2a-20469c9fb93f"/>
+   <id value="hapi-fhir-server"/>
    <status value="active"/>
-   <date value="2019-04-29T10:58:08+00:00"/>
+   <date value="2019-05-02T08:23:58+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="HAPI FHIR Server"/>
-      <version value="3.7.0-sse1"/>
+      <version value="3.7.0"/>
    </software>
    <implementation>
       <description value="eHealth FHIR microservice"/>
-      <url value="http://192.168.128.239:8080/hapi-fhir-server/fhir"/>
+      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -2174,105 +2174,105 @@
          </searchParam>
       </resource>
       <operation>
+         <name value="create-episode-of-care"/>
+         <definition>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
          <name value="transformToObservation"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToPHMR"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="create-episode-of-care"/>
-         <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToAppointment"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToAPD"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToQuestionnaireResponse"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToQRD"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
          </definition>
       </operation>
       <operation>
          <name value="evaluate"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
          </definition>
       </operation>
       <operation>
          <name value="apply"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://192.168.128.239:8080/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
+            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
          </definition>
       </operation>
    </rest>

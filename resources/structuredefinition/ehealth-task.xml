@@ -37,6 +37,18 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category" />
       </type>
     </element>
+    <element id="Task.extension:responsible">
+      <path value="Task.extension" />
+      <sliceName value="responsible" />
+      <short value="Responsible entity" />
+      <definition value="Individual, CareTeam or organization responsible for task execution." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible" />
+      </type>
+    </element>
     <element id="Task.definition[x]">
       <path value="Task.definition[x]" />
       <type>
@@ -149,7 +161,7 @@
     </element>
     <element id="Task.owner">
       <path value="Task.owner" />
-      <min value="1" />
+      <definition value="Individual or organization currently responsible for task execution." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
@@ -168,11 +180,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
         <aggregation value="referenced" />
       </type>
     </element>
