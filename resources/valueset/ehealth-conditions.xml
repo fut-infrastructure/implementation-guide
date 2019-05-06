@@ -27,6 +27,14 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="TBD2"/>
+                <display value="Example value 2 - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value 2 - Under construction"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
