@@ -32,4 +32,9 @@
         <display value="Oxygen analyser"/>
         <definition value="Oxygen analyser"/>
     </concept>
+    <concept>
+        <code value="313299006"/>
+        <display value="Severe chronic obstructive pulmonary disease"/>
+        <definition value="Severe chronic obstructive pulmonary disease"/>
+    </concept>
 </CodeSystem>
