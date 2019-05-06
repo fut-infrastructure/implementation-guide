@@ -22,15 +22,19 @@ FHIR profiles are managed under the constellation of the Danish municipalities, 
 
 ## Conformance Requirements
 
-The [Capability Statements Section](CapabilityStatement-metadata.html) outlines the conformance requirements for the eHealth Infrastructure Core Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported.
+The Capability Statements Section outlines the conformance requirements for the eHealth Infrastructure Core Servers and Client applications, identifying the specific profiles that need to be supported, the specific RESTful operations that need to be supported, and the search parameters that need to be supported.
+
+Due to a defect in the tool that generates the implementation guide, the table of exposed operations on each resource is not correct. For a list of operations supported per FHIR resource, please consult the capability statement of the particular server. Displaying the capability statement as either XML or JSON, the operations can be found in the interaction element of each resource.
 
 ## Collaboration
+
 This guide is the product of collaborative work undertaken with participants from:
 
 * [Systematic A/S](https://systematic.com/)
 * [Trifork A/S](https://trifork.com/)
 
 ## Note to FHIR Newcomers
+
 If you are new to FHIR (Fast Healthcare Interoperability Resources), consider to head over to the FHIR specification at [http://hl7.org/fhir/STU3/](http://hl7.org/fhir/STU3/) and study it at your own pace. In particular, check out the following links:
 
 - Summary: [http://hl7.org/fhir/STU3/summary.html](http://hl7.org/fhir/STU3/summary.html)
