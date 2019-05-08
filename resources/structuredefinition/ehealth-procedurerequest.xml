@@ -61,11 +61,16 @@
         <aggregation value="referenced" />
       </type>
     </element>
-    <element id="ProcedureRequest.code.coding">
-      <path value="ProcedureRequest.code.coding" />
+    <element id="ProcedureRequest.code">
+      <path value="ProcedureRequest.code" />
       <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureRequestCode" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="ProcedureRequest.subject">
@@ -84,10 +89,6 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
         <aggregation value="referenced" />
       </type>
-    </element>
-    <element id="ProcedureRequest.requester">
-      <path value="ProcedureRequest.requester" />
-      <short value="Who/what is requesting procedure or diagnostic" />
     </element>
     <element id="ProcedureRequest.requester.agent">
       <path value="ProcedureRequest.requester.agent" />

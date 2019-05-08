@@ -116,6 +116,7 @@
     </element>
     <element id="ActivityDefinition.code">
       <path value="ActivityDefinition.code" />
+      <min value="1" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ActivityDefinitionType" />
