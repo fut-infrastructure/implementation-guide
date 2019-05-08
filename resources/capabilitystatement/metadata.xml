@@ -932,6 +932,32 @@
          <interaction>
             <code value="read"/>
          </interaction>
+         <!-- MANUAL ADD BEGIN -->
+         <!-- Interactions vread, update, patch, delete, history-instance, history-type and create added manually below.
+              Otherwise the corresponding operations will not be provided for other profiles in the implementation guide
+         -->
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="history-instance"/>
+         </interaction>
+         <interaction>
+            <code value="history-type"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <!-- MANUAL ADD END -->
          <interaction>
             <code value="search-type"/>
          </interaction>
