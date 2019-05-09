@@ -12,6 +12,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### Resource/profile changes
 
+#### ActivityDefinition (ehealth-activitydefinition)
+- Changed element `code` to be mandatory
+
+#### ProcedureRequest (ehealth-procedurerequest)
+- Changed element `code` to require code from value set `http://ehealth.sundhed.dk/vs/activitydefinition-code`
+- Changed element `code.coding` removed value set binding
+
 ## 2019.5 (2019-05-07)
 
 ### General changes
@@ -106,7 +113,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed extension element `minimumQuality` to be of type `ehealth-quality`
 - Deleted element `author`
 - Deleted element `owner`
-- Changed element `code` to be mandatory
 
 #### CarePlan (ehealth-careplan)
 - Added extension `responsibilitySummary`
@@ -199,8 +205,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Deleted extension `responsible`
 - Deleted extension `responsibleHistory`
-- Changed element `code` to require code from value set `http://ehealth.sundhed.dk/vs/activitydefinition-code`
-- Changed element `code.coding` removed value set binding
 
 #### Provenance (ehealth-detached-provenance)
 - Added as an unchanged copy of the existing `ehealth-provenance` to allow `provenance` to exist on multiple HAPI FHIR instances
