@@ -56,15 +56,31 @@
     <element id="PlanDefinition.extension:modifierRole">
       <path value="PlanDefinition.extension" />
       <sliceName value="modifierRole" />
+      <short value="Stakeholders involved in maintenance of this PlanDefinition." />
+      <definition value="Stakeholders involved in maintenance of this PlanDefinition." />
       <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
       </type>
     </element>
+    <element id="PlanDefinition.extension:modifierRole.extension:reference">
+      <path value="PlanDefinition.extension.extension" />
+      <sliceName value="reference" />
+      <short value="Stakeholder playing a role in maintaining the PlanDefinition" />
+      <definition value="The stakeholder referenced by this element plays a role in maintaining the PlanDefinition." />
+    </element>
+    <element id="PlanDefinition.extension:modifierRole.extension:role">
+      <path value="PlanDefinition.extension.extension" />
+      <sliceName value="role" />
+      <short value="Role this stakeholder plays in maintaining the PlanDefinition. Only some roles are allowed to update." />
+      <definition value="The role played by the &quot;reference&quot; resource in modifying and maintaining the PlanDefinition. Only some roles are allowed to update." />
+    </element>
     <element id="PlanDefinition.extension:role">
       <path value="PlanDefinition.extension" />
       <sliceName value="role" />
+      <short value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
+      <definition value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
       <min value="0" />
       <max value="*" />
       <type>
