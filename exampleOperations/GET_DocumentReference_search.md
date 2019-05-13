@@ -1,8 +1,9 @@
-`GET [base]/DocumentReference?description=406d527c-b11b-4b98-8f0c-22c030738894`
+`GET [base]/DocumentReference?indexed=1977-04-01T11%3A33%3A52%2B01%3A00`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJwWjRaNUUydU9UTXNPY1BiazYydUJwUkdGUVROSV9fT1I3UndQcmdJU0FVIn0.eyJqdGkiOiI4ZmQyODZhNy1kZjkzLTQ5ZDItYjQzMS04MDY0NTlhNzlkNjgiLCJleHAiOjE1NTc3MzY4NDQsIm5iZiI6MCwiaWF0IjoxNTU3NzM2NTQ0LCJpc3MiOiJodHRwczovL2ludHRlc3QuZWhlYWx0aC5zdW5kaGVkLmRrL2F1dGgvcmVhbG1zL2ludHRlc3QiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTRmYzdkMGUtMWZiOC00MzZmLWFiNWYtMTYzODZkZjZlYzdiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidHJpZm9ya19tb2NrIiwiYXV0aF90aW1lIjowLCJzZXNzaW9uX3N0YXRlIjoiZmQ0Y2EwZjUtYjgxZC00NGJiLWEyODMtYTg5M2VlMjZhM2QwIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwiZnV0LWEiXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6InRlc3QiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzeXN0ZW1hdGljIiwiZmFtaWx5X25hbWUiOiJ0ZXN0In0.SgtquyI0NZWkUipOmlojTElu64YmTb0iMjX4v-AkFXNojMYJWCEkvNuZqMYhrQR3dBek9-wyekecIvjxCjpHyM3ABV-rJOCdkAFFnZs0Csv9Z7lZr-eZjtJ6l3oPT719F5FPqkM_6HLKRh16o2t8KEVVYvp_uBfzAuouU_KxBMaqgSgnE9-X6xuxByhto0GfbwME9MpMVhxNWxWVMJDMIBf1o7Ef1zpjnlUyK7z6knmiv4tLr5C0XzwcmObLGVjyreGXKME9m34fjGlEI6CRT2cdrsmaBsjLVm62XCusaTWDEfreDL9w553SH7sEwx_SaB6Uzfgz0beLCmoECE_NHg
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -14,35 +15,41 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "9700954e-e1c9-431a-b703-9e5a166bd513",
+  "id": "85e4e6c9-5a51-4df8-a35c-ecf6671fcaf2",
   "meta": {
-    "lastUpdated": "2019-03-11T13:27:09.180+00:00"
+    "lastUpdated": "2019-05-13T08:35:49.062+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://localhost:31000/hapi-fhir-server/fhir/DocumentReference?_format\u003djson\u0026_pretty\u003dtrue\u0026description\u003d406d527c-b11b-4b98-8f0c-22c030738894"
+      "url": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference?_format\u003djson\u0026_pretty\u003dtrue\u0026indexed\u003d1977-04-01T11%3A33%3A52%2B01%3A00"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://localhost:31000/hapi-fhir-server/fhir/DocumentReference/4035",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference/22",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "4035",
+        "id": "22",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-03-11T13:27:09.011+00:00"
+          "lastUpdated": "2019-05-13T08:35:48.781+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+          ]
         },
         "status": "current",
         "type": {
-          "id": "2cf7a1a7-d899-436d-998f-3fb6040666c6",
-          "text": "type"
+          "coding": [
+            {
+              "system": "http://ehealth.sundhed.dk/cs/document-type",
+              "code": "TBD"
+            }
+          ]
         },
-        "indexed": "2019-03-11T14:27:09.006+01:00",
-        "description": "406d527c-b11b-4b98-8f0c-22c030738894",
+        "indexed": "1977-04-01T11:33:52.187+01:00",
         "content": [
           {
             "attachment": {
@@ -56,21 +63,27 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://localhost:31000/hapi-fhir-server/fhir/DocumentReference/4033",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference/21",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "4033",
+        "id": "21",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-03-11T13:27:08.548+00:00"
+          "lastUpdated": "2019-05-13T08:35:48.626+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+          ]
         },
         "status": "current",
         "type": {
-          "id": "1f6ee860-9d36-4ddc-9193-e9da394f7ad7",
-          "text": "type"
+          "coding": [
+            {
+              "system": "http://ehealth.sundhed.dk/cs/document-type",
+              "code": "TBD"
+            }
+          ]
         },
-        "indexed": "2019-03-11T14:27:08.536+01:00",
-        "description": "406d527c-b11b-4b98-8f0c-22c030738894",
+        "indexed": "1977-04-01T11:33:52.187+01:00",
         "content": [
           {
             "attachment": {
