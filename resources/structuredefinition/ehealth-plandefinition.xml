@@ -56,8 +56,8 @@
     <element id="PlanDefinition.extension:modifierRole">
       <path value="PlanDefinition.extension" />
       <sliceName value="modifierRole" />
-      <short value="Stakeholders involved in maintenance of this PlanDefinition." />
-      <definition value="Stakeholders involved in maintenance of this PlanDefinition." />
+      <short value="Maintainers of the plan definition. Identifies practitioners, care teams and organizations and their responsibility as maintainers." />
+      <definition value="Maintainers of the plan definition. Identifies practitioners, care teams and organizations and their responsibility as maintainers." />
       <min value="1" />
       <type>
         <code value="Extension" />
@@ -67,14 +67,14 @@
     <element id="PlanDefinition.extension:modifierRole.extension:reference">
       <path value="PlanDefinition.extension.extension" />
       <sliceName value="reference" />
-      <short value="Stakeholder playing a role in maintaining the PlanDefinition" />
-      <definition value="The stakeholder referenced by this element plays a role in maintaining the PlanDefinition." />
+      <short value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the plan definition." />
+      <definition value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the plan definition." />
     </element>
     <element id="PlanDefinition.extension:modifierRole.extension:role">
       <path value="PlanDefinition.extension.extension" />
       <sliceName value="role" />
-      <short value="Role this stakeholder plays in maintaining the PlanDefinition. Only some roles are allowed to update." />
-      <definition value="The role played by the &quot;reference&quot; resource in modifying and maintaining the PlanDefinition. Only some roles are allowed to update." />
+      <short value="Type of involvement. Indicates specific responsibility of the entity maintaining the plan definition." />
+      <definition value="Type of involvement. Indicates specific responsibility of the entity maintaining the plan definition." />
     </element>
     <element id="PlanDefinition.extension:role">
       <path value="PlanDefinition.extension" />

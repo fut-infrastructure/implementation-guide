@@ -14,6 +14,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ActivityDefinition (ehealth-activitydefinition)
 - Changed element `code` to be mandatory
+- Added definition of `modifierRole` 
+
+#### PlanDefinition (ehealth-plandefinition)
+- Added definition of `modifierRole` 
+- Added definition of `role` 
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Changed element `code` to require code from value set `http://ehealth.sundhed.dk/vs/activitydefinition-code`
