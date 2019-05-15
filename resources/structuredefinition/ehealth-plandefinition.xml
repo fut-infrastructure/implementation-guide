@@ -76,6 +76,18 @@
       <path value="PlanDefinition.version" />
       <min value="1" />
     </element>
+    <element id="PlanDefinition.topic">
+      <path value="PlanDefinition.topic" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DefinitionTopic" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/topic-type" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="PlanDefinition.relatedArtifact">
       <path value="PlanDefinition.relatedArtifact" />
       <definition value="Related artifacts such as additional documentation, justification, or bibliographic references. Each related artifact is either an attachment, or a reference to another resource, but not both. The relatedArtifact.resource attribute can be used to specify a DocumentReference resource." />
