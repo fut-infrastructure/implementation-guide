@@ -27,6 +27,31 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 
+- Updated operation examples for most of the resources
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### Resource/profile changes
+
+#### ActivityDefinition (ehealth-activitydefinition)
+- Changed element `code` to be mandatory
+- Added definition of `modifierRole` 
+
+#### PlanDefinition (ehealth-plandefinition)
+- Added definition of `modifierRole` 
+- Added definition of `role` 
+
+#### ProcedureRequest (ehealth-procedurerequest)
+- Changed element `code` to require code from value set `http://ehealth.sundhed.dk/vs/activitydefinition-code`
+- Changed element `code.coding` removed value set binding
+
+## 2019.5 (2019-05-07)
+
+### General changes
+
 - Added operations examples for `ehealth-activitydefinition`, `ehealth-careplan`, `ehealth-careteam`, `ehealth-clinicalimpression`, `ehealth-communication`, `ehealth-message`, `ehealth-condition`, `ehealth-consent`, `ehealth-device`, `ehealth-devicemetric`, `ehealth-deviceUseStatement`, `ehealth-episodeofcare`, `ehealth-library`, `ehealth-media`, `ehealth-observation`, `ehealth-organization`, `ehealth-plandefinition`, `ehealth-practitioner`, `ehealth-practitionerRole`, `ehealth-procedurerequest`, `ehealth-provenance`, `ehealth-questionnaire` and `ehealth-questionnaireresponse`.
 - Added custom operations for transformations between `DK-HL7 QRD/eHealth QuestionnaireResponse`, `DK-HL7 APD/eHealth Appointment` and `DK-HL7 PHRM/eHealth Observation`.
 - Added `http://ehealth.sundhed.dk/fhir/` as base-url to intra-IG links
@@ -34,6 +59,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `DK CRN Identifier`, `Identifier.assigner` marked Referenced
 - Changed strength of all value bindings to "required"
 - Added capabilitystatements for `Measurement Service`, `Organization Service`, `Questionnaire Service` and `Terminology Service`
+- Updated capabilitystatement for `Patient Service`
 
 ### Custom operations
 
