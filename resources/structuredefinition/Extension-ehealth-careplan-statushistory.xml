@@ -53,7 +53,7 @@
         <strength value="required" />
         <description value="Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record." />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/careplan-status" />
+          <reference value="http://hl7.org/fhir/ValueSet/care-plan-status" />
         </valueSetReference>
       </binding>
     </element>

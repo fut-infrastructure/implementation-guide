@@ -721,11 +721,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-careplan-status"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="CodeSystem/ehealth-careteam-category"/>
       </sourceReference>
     </resource>
@@ -1021,12 +1016,6 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-careplan-intent"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/ehealth-careplan-status"/>
       </sourceReference>
     </resource>
     <resource>
