@@ -2,15 +2,26 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2019.5.1 (2019-05-15)
 
 ### General changes
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
+- Removed `http://ehealth.sundhed.dk/cs/careplan-status`
+
 ### ValueSets
+- Added new codes `250554003`, `445988008` to `http://ehealth.sundhed.dk/vs/ehealth-activitydefinition-code`.
+- Removed `http://ehealth.sundhed.dk/vs/careplan-status`
+
 ### Resource/profile changes
+
+#### CarePlan (ehealth-careplan)
+- Changed element `CarePlan.statusHistory.status` value set binding to `http://hl7.org/fhir/care-plan-status`
+
+#### PlanDefinition (ehealth-plandefinition)
+- Changed element `topic` value set binding to `http://ehealth.sundhed.dk/vs/topic-type`
 
 ## 2019.5 (2019-05-07)
 
@@ -65,7 +76,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/cs/questionnaire-types`
 - Changed `http://ehealth.sundhed.dk/cs/usage-quality`
 - Changed (renamed) `http://ehealth.sundhed.dk/cs/submission-sharing-policy` to `http://ehealth.sundhed.dk/cs/submission-sharing-policies`  
-- Removed `http://ehealth.sundhed.dk/cs/careplan-status`
   
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
@@ -82,7 +92,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/practice-setting-codes`, referenced by
   - `ehealth-documentreference`
 - Added `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Added new codes `250554003`, `445988008` to `http://ehealth.sundhed.dk/vs/ehealth-activitydefinition-code`.
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 - Changed `http://ehealth.sundhed.dk/vs/careplan-category`
 - Changed `ehealth-careplan-status`
@@ -99,7 +108,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/vs/questionnaire-types`
 - Changed `http://ehealth.sundhed.dk/vs/topic-type`
 - Changed `http://ehealth.sundhed.dk/vs/usage-quality`
-- Removed `http://ehealth.sundhed.dk/vs/careplan-status`
 
 ### Resource/profile changes
 
@@ -113,7 +121,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `responsibilitySummary`
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `CarePlan.category` value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
-- Changed element `CarePlan.statusHistory.status` value set binding to `http://hl7.org/fhir/care-plan-status`
 - Deleted extension `monitoringResponsible`
 - Deleted extension `monitoringResponsibleHistory`
  
@@ -188,7 +195,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### PlanDefinition (ehealth-plandefinition)
 - Added extension `modifierRole` as a replacement for elements `author` and `owner`
-- Changed element `topic` value set binding to `http://ehealth.sundhed.dk/vs/topic-type`
 - Deleted element `author`
 - Deleted element `owner` 
 
