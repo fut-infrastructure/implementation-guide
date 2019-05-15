@@ -102,6 +102,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `responsibilitySummary`
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `CarePlan.category` value set binding to `http://ehealth.sundhed.dk/vs/careplan-category`
+- Changed element `CarePlan.statusHistory.status` value set binding to `http://hl7.org/fhir/care-plan-status`
 - Deleted extension `monitoringResponsible`
 - Deleted extension `monitoringResponsibleHistory`
  
@@ -176,6 +177,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### PlanDefinition (ehealth-plandefinition)
 - Added extension `modifierRole` as a replacement for elements `author` and `owner`
+- Changed element `topic` value set binding to `http://ehealth.sundhed.dk/vs/topic-type`
 - Deleted element `author`
 - Deleted element `owner` 
 
