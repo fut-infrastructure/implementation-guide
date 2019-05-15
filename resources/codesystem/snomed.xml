@@ -18,6 +18,11 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
+        <code value="250554003"/>
+        <display value="Oxygen saturation at periphery"/>
+        <definition value="Oxygen saturation at periphery"/>
+    </concept>
+    <concept>
         <code value="412776001"/>
         <display value="Chronic obstructive pulmonary disease clinical management plan"/>
         <definition value="Chronic obstructive pulmonary disease clinical management plan"/>
@@ -26,6 +31,11 @@
         <code value="412777005"/>
         <display value="Diabetes clinical management plan"/>
         <definition value="Diabetes clinical management plan"/>
+    </concept>
+    <concept>
+        <code value="445988008"/>
+        <display value="Assessment using health assessment questionnaire (procedure)"/>
+        <definition value="Assessment using health assessment questionnaire (procedure)"/>
     </concept>
     <concept>
         <code value="59181002"/>

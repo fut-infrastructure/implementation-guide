@@ -40,5 +40,24 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="250554003"/>
+                <display value="Oxygen saturation at periphery"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Oxygen saturation at periphery"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="445988008"/>
+                <display value="Assessment using health assessment questionnaire (procedure)"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Assessment using health assessment questionnaire (procedure)"/>
+                </designation>
+            </concept>
+        </include>
     </compose>
 </ValueSet>
