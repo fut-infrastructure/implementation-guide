@@ -74,18 +74,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
       </type>
     </element>
-    <element id="ActivityDefinition.extension:modifierRole.extension:reference">
-      <path value="ActivityDefinition.extension.extension" />
-      <sliceName value="reference" />
-      <short value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
-      <definition value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
-    </element>
-    <element id="ActivityDefinition.extension:modifierRole.extension:role">
-      <path value="ActivityDefinition.extension.extension" />
-      <sliceName value="role" />
-      <short value="Type of involvement. Indicates specific responsibility of the entity maintaining the activity definition." />
-      <definition value="Type of involvement. Indicates specific responsibility of the entity maintaining the activity definition." />
-    </element>
     <element id="ActivityDefinition.extension:minimumQuality">
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />

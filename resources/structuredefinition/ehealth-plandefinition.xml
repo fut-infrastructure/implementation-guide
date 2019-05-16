@@ -64,23 +64,9 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
       </type>
     </element>
-    <element id="PlanDefinition.extension:modifierRole.extension:reference">
-      <path value="PlanDefinition.extension.extension" />
-      <sliceName value="reference" />
-      <short value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the plan definition." />
-      <definition value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the plan definition." />
-    </element>
-    <element id="PlanDefinition.extension:modifierRole.extension:role">
-      <path value="PlanDefinition.extension.extension" />
-      <sliceName value="role" />
-      <short value="Type of involvement. Indicates specific responsibility of the entity maintaining the plan definition." />
-      <definition value="Type of involvement. Indicates specific responsibility of the entity maintaining the plan definition." />
-    </element>
     <element id="PlanDefinition.extension:role">
       <path value="PlanDefinition.extension" />
       <sliceName value="role" />
-      <short value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
-      <definition value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
       <min value="0" />
       <max value="*" />
       <type>
