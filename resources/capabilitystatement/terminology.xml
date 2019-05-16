@@ -1,4 +1,5 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="terminology"/>
    <status value="active"/>
    <date value="2019-05-16T12:01:35+00:00"/>
    <publisher value="Not provided"/>
