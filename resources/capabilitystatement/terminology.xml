@@ -1,7 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="terminology"/>
    <status value="active"/>
-   <date value="2019-05-02T12:26:43+00:00"/>
+   <date value="2019-05-16T12:01:35+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +9,7 @@
    </software>
    <implementation>
       <description value="eHealth Terminology Server"/>
-      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/terminology/fhir"/>
+      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/terminology/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -20,7 +19,7 @@
       <mode value="server"/>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="46"/>
+            <valueDecimal value="45"/>
          </extension>
          <type value="CodeSystem"/>
          <profile>
@@ -650,7 +649,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="31"/>
+            <valueDecimal value="55"/>
          </extension>
          <type value="ValueSet"/>
          <profile>
@@ -850,15 +849,15 @@
          </definition>
       </operation>
       <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/CodeSystem-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="meta-add"/>
          <definition>
             <reference value="OperationDefinition/CodeSystem-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/CodeSystem-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
@@ -904,15 +903,15 @@
          </definition>
       </operation>
       <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/ConceptMap-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="meta-add"/>
          <definition>
             <reference value="OperationDefinition/ConceptMap-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/ConceptMap-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
@@ -952,15 +951,15 @@
          </definition>
       </operation>
       <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/NamingSystem-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="meta-add"/>
          <definition>
             <reference value="OperationDefinition/NamingSystem-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/NamingSystem-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
@@ -1012,15 +1011,15 @@
          </definition>
       </operation>
       <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="OperationDefinition/ValueSet-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="meta-add"/>
          <definition>
             <reference value="OperationDefinition/ValueSet-i-meta-add"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta-delete"/>
+         <definition>
+            <reference value="OperationDefinition/ValueSet-i-meta-delete"/>
          </definition>
       </operation>
    </rest>

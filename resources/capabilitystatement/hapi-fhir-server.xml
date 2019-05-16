@@ -1,7 +1,6 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-   <id value="hapi-fhir-server"/>
    <status value="active"/>
-   <date value="2019-05-02T08:23:58+00:00"/>
+   <date value="2019-05-16T11:56:30+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -9,8 +8,8 @@
       <version value="3.7.0"/>
    </software>
    <implementation>
-      <description value="eHealth FHIR microservice"/>
-      <url value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir"/>
+      <description value="eHealth hapi-fhir-server service"/>
+      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -38,7 +37,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -48,9 +46,54 @@
          <searchInclude value="ActivityDefinition:predecessor"/>
          <searchInclude value="ActivityDefinition:successor"/>
          <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
             <name value="_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
@@ -58,19 +101,9 @@
             <documentation value="The activity definition publication date"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External identifier for the activity definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="successor"/>
+            <name value="depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
@@ -83,12 +116,42 @@
             <documentation value="The description of the activity definition"/>
          </searchParam>
          <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the activity definition is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the activity definition"/>
+         </searchParam>
+         <searchParam>
             <name value="predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
-            <name value="composed-of"/>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the activity definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
@@ -98,9 +161,9 @@
             <documentation value="The human-friendly name of the activity definition"/>
          </searchParam>
          <searchParam>
-            <name value="version"/>
+            <name value="topic"/>
             <type value="token"/>
-            <documentation value="The business version of the activity definition"/>
+            <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
@@ -108,39 +171,9 @@
             <documentation value="The uri that identifies the activity definition"/>
          </searchParam>
          <searchParam>
-            <name value="depends-on"/>
-            <type value="reference"/>
-            <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="effective"/>
-            <type value="date"/>
-            <documentation value="The time during which the activity definition is intended to be in use"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the activity definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the activity definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="topic"/>
+            <name value="version"/>
             <type value="token"/>
-            <documentation value="Topics associated with the module"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the activity definition"/>
+            <documentation value="The business version of the activity definition"/>
          </searchParam>
       </resource>
       <resource>
@@ -160,17 +193,16 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalUpdate value="true"/>
          <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Type of plan"/>
          </searchParam>
          <searchParam>
-            <name value="care-team"/>
+            <name value="context"/>
             <type value="reference"/>
-            <documentation value="Who's involved in plan?"/>
+            <documentation value="Created in context of"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
@@ -178,7 +210,12 @@
             <documentation value="Time period plan covers"/>
          </searchParam>
          <searchParam>
-            <name value="subject"/>
+            <name value="part-of"/>
+            <type value="reference"/>
+            <documentation value="Part of referenced CarePlan"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
             <type value="reference"/>
             <documentation value="Who care plan is for"/>
          </searchParam>
@@ -188,44 +225,9 @@
             <documentation value="The responsibility summary actor of the care plan"/>
          </searchParam>
          <searchParam>
-            <name value="part-of"/>
-            <type value="reference"/>
-            <documentation value="Part of referenced CarePlan"/>
-         </searchParam>
-         <searchParam>
-            <name value="responsible_type"/>
+            <name value="responsibility_summary_type"/>
             <type value="token"/>
-            <documentation value="The responsible type of the care plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Fulfills care plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Who care plan is for"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Created in context of"/>
-         </searchParam>
-         <searchParam>
-            <name value="activity-date"/>
-            <type value="date"/>
-            <documentation value="Specified date occurs within period specified by CarePlan.activity.timingSchedule"/>
-         </searchParam>
-         <searchParam>
-            <name value="definition"/>
-            <type value="reference"/>
-            <documentation value="Protocol or definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="activity-code"/>
-            <type value="token"/>
-            <documentation value="Detail type of activity"/>
+            <documentation value="The responsibility summary type of the care plan"/>
          </searchParam>
          <searchParam>
             <name value="responsible_actor"/>
@@ -233,64 +235,14 @@
             <documentation value="The responsible actor of the care plan"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
+            <name value="responsible_type"/>
             <type value="token"/>
-            <documentation value="External Ids for this plan"/>
+            <documentation value="The responsible type of the care plan"/>
          </searchParam>
          <searchParam>
-            <name value="goal"/>
+            <name value="subject"/>
             <type value="reference"/>
-            <documentation value="Desired outcome of plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer"/>
-            <type value="reference"/>
-            <documentation value="Matches if the practitioner is listed as a performer in any of the &quot;simple&quot; activities.  (For performers of the detailed activities, chain through the activitydetail search parameter.)"/>
-         </searchParam>
-         <searchParam>
-            <name value="replaces"/>
-            <type value="reference"/>
-            <documentation value="CarePlan replaced by this CarePlan"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Created in context of"/>
-         </searchParam>
-         <searchParam>
-            <name value="intent"/>
-            <type value="token"/>
-            <documentation value="proposal | plan | order | option"/>
-         </searchParam>
-         <searchParam>
-            <name value="activity-reference"/>
-            <type value="reference"/>
-            <documentation value="Activity details defined in specific resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="condition"/>
-            <type value="reference"/>
-            <documentation value="Health issues this plan addresses"/>
-         </searchParam>
-         <searchParam>
-            <name value="responsibility_summary_type"/>
-            <type value="token"/>
-            <documentation value="The responsibility summary type of the care plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="Type of plan"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="draft | active | suspended | completed | entered-in-error | cancelled | unknown"/>
+            <documentation value="Who care plan is for"/>
          </searchParam>
       </resource>
       <resource>
@@ -313,7 +265,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -327,69 +278,14 @@
          <searchInclude value="ClinicalImpression:problem"/>
          <searchInclude value="ClinicalImpression:subject"/>
          <searchParam>
-            <name value="_language"/>
+            <name value="_content"/>
             <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="When the assessment was documented"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Business identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="previous"/>
-            <type value="reference"/>
-            <documentation value="Reference to last assessment"/>
-         </searchParam>
-         <searchParam>
-            <name value="finding-code"/>
-            <type value="token"/>
-            <documentation value="What was found"/>
-         </searchParam>
-         <searchParam>
-            <name value="assessor"/>
-            <type value="reference"/>
-            <documentation value="The clinician performing the assessment"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Patient or group assessed"/>
-         </searchParam>
-         <searchParam>
-            <name value="finding-ref"/>
-            <type value="reference"/>
-            <documentation value="What was found"/>
-         </searchParam>
-         <searchParam>
-            <name value="problem"/>
-            <type value="reference"/>
-            <documentation value="Relevant impressions of patient state"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Patient or group assessed"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or Episode created from"/>
-         </searchParam>
-         <searchParam>
-            <name value="action"/>
-            <type value="reference"/>
-            <documentation value="Action taken as part of assessment procedure"/>
-         </searchParam>
-         <searchParam>
-            <name value="investigation"/>
-            <type value="reference"/>
-            <documentation value="Record of a specific investigation"/>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -397,9 +293,99 @@
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="action"/>
+            <type value="reference"/>
+            <documentation value="Action taken as part of assessment procedure"/>
+         </searchParam>
+         <searchParam>
+            <name value="assessor"/>
+            <type value="reference"/>
+            <documentation value="The clinician performing the assessment"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or Episode created from"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="When the assessment was documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="finding-code"/>
+            <type value="token"/>
+            <documentation value="What was found"/>
+         </searchParam>
+         <searchParam>
+            <name value="finding-ref"/>
+            <type value="reference"/>
+            <documentation value="What was found"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Business identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="investigation"/>
+            <type value="reference"/>
+            <documentation value="Record of a specific investigation"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Patient or group assessed"/>
+         </searchParam>
+         <searchParam>
+            <name value="previous"/>
+            <type value="reference"/>
+            <documentation value="Reference to last assessment"/>
+         </searchParam>
+         <searchParam>
+            <name value="problem"/>
+            <type value="reference"/>
+            <documentation value="Relevant impressions of patient state"/>
+         </searchParam>
+         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="draft | completed | entered-in-error"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Patient or group assessed"/>
          </searchParam>
       </resource>
       <resource>
@@ -422,93 +408,12 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Unique identifier"/>
-         </searchParam>
          <searchParam>
             <name value="subject"/>
             <type value="reference"/>
             <documentation value="Focus of message"/>
-         </searchParam>
-         <searchParam>
-            <name value="part-of"/>
-            <type value="reference"/>
-            <documentation value="Part of this action"/>
-         </searchParam>
-         <searchParam>
-            <name value="received"/>
-            <type value="date"/>
-            <documentation value="When received"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Encounter leading to message"/>
-         </searchParam>
-         <searchParam>
-            <name value="medium"/>
-            <type value="token"/>
-            <documentation value="A channel of communication"/>
-         </searchParam>
-         <searchParam>
-            <name value="sent"/>
-            <type value="date"/>
-            <documentation value="When sent"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Request fulfilled by this communication"/>
-         </searchParam>
-         <searchParam>
-            <name value="sender"/>
-            <type value="reference"/>
-            <documentation value="Message sender"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Focus of message"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode leading to message"/>
-         </searchParam>
-         <searchParam>
-            <name value="recipient"/>
-            <type value="reference"/>
-            <documentation value="Message recipient"/>
-         </searchParam>
-         <searchParam>
-            <name value="definition"/>
-            <type value="reference"/>
-            <documentation value="Instantiates protocol or definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="Message category"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="preparation | in-progress | suspended | aborted | completed | entered-in-error"/>
          </searchParam>
       </resource>
       <resource>
@@ -525,131 +430,15 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="onset-info"/>
-            <type value="string"/>
-            <documentation value="Onsets as a string"/>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="The category of the condition"/>
          </searchParam>
          <searchParam>
             <name value="code"/>
             <type value="token"/>
             <documentation value="Code for the condition"/>
-         </searchParam>
-         <searchParam>
-            <name value="evidence"/>
-            <type value="token"/>
-            <documentation value="Manifestation/symptom"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Who has the condition?"/>
-         </searchParam>
-         <searchParam>
-            <name value="verification-status"/>
-            <type value="token"/>
-            <documentation value="provisional | differential | confirmed | refuted | entered-in-error | unknown"/>
-         </searchParam>
-         <searchParam>
-            <name value="clinical-status"/>
-            <type value="token"/>
-            <documentation value="The clinical status of the condition"/>
-         </searchParam>
-         <searchParam>
-            <name value="onset-date"/>
-            <type value="date"/>
-            <documentation value="Date related onsets (dateTime and Period)"/>
-         </searchParam>
-         <searchParam>
-            <name value="abatement-date"/>
-            <type value="date"/>
-            <documentation value="Date-related abatements (dateTime and period)"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Who has the condition?"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode when condition first asserted"/>
-         </searchParam>
-         <searchParam>
-            <name value="abatement-age"/>
-            <type value="quantity"/>
-            <documentation value="Abatement as age or age range"/>
-         </searchParam>
-         <searchParam>
-            <name value="asserted-date"/>
-            <type value="date"/>
-            <documentation value="Date record was believed accurate"/>
-         </searchParam>
-         <searchParam>
-            <name value="evidence-detail"/>
-            <type value="reference"/>
-            <documentation value="Supporting information found elsewhere"/>
-         </searchParam>
-         <searchParam>
-            <name value="severity"/>
-            <type value="token"/>
-            <documentation value="The severity of the condition"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="A unique identifier of the condition record"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Encounter when condition first asserted"/>
-         </searchParam>
-         <searchParam>
-            <name value="abatement-boolean"/>
-            <type value="token"/>
-            <documentation value="Abatement boolean (boolean is true or non-boolean values are present)"/>
-         </searchParam>
-         <searchParam>
-            <name value="asserter"/>
-            <type value="reference"/>
-            <documentation value="Person who asserts this condition"/>
-         </searchParam>
-         <searchParam>
-            <name value="stage"/>
-            <type value="token"/>
-            <documentation value="Simple summary (disease specific)"/>
-         </searchParam>
-         <searchParam>
-            <name value="abatement-string"/>
-            <type value="string"/>
-            <documentation value="Abatement as a string"/>
-         </searchParam>
-         <searchParam>
-            <name value="onset-age"/>
-            <type value="quantity"/>
-            <documentation value="Onsets as age or age range"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="body-site"/>
-            <type value="token"/>
-            <documentation value="Anatomical location, if relevant"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="The category of the condition"/>
          </searchParam>
       </resource>
       <resource>
@@ -672,33 +461,17 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <name value="actor"/>
+            <type value="reference"/>
+            <documentation value="Resource for the actor (or group, by role)"/>
          </searchParam>
          <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="When this Consent was created or indexed"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
+            <name value="category"/>
             <type value="token"/>
-            <documentation value="Identifier for this record (external references)"/>
-         </searchParam>
-         <searchParam>
-            <name value="securitylabel"/>
-            <type value="token"/>
-            <documentation value="Security Labels that define affected resources"/>
-         </searchParam>
-         <searchParam>
-            <name value="period"/>
-            <type value="date"/>
-            <documentation value="Period that this consent applies"/>
+            <documentation value="Classification of the consent statement - for indexing/retrieval"/>
          </searchParam>
          <searchParam>
             <name value="data"/>
@@ -706,49 +479,14 @@
             <documentation value="The actual data reference"/>
          </searchParam>
          <searchParam>
-            <name value="purpose"/>
-            <type value="token"/>
-            <documentation value="Context of activities for which the agreement is made"/>
-         </searchParam>
-         <searchParam>
-            <name value="source"/>
-            <type value="reference"/>
-            <documentation value="Source from which this consent is taken"/>
-         </searchParam>
-         <searchParam>
-            <name value="actor"/>
-            <type value="reference"/>
-            <documentation value="Resource for the actor (or group, by role)"/>
-         </searchParam>
-         <searchParam>
             <name value="patient"/>
             <type value="reference"/>
             <documentation value="Who the consent applies to"/>
          </searchParam>
          <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="Custodian of the consent"/>
-         </searchParam>
-         <searchParam>
-            <name value="action"/>
-            <type value="token"/>
-            <documentation value="Actions controlled by this consent"/>
-         </searchParam>
-         <searchParam>
-            <name value="consentor"/>
-            <type value="reference"/>
-            <documentation value="Who is agreeing to the policy and exceptions"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="Classification of the consent statement - for indexing/retrieval"/>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Period that this consent applies"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
@@ -776,7 +514,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -784,64 +521,14 @@
          <searchInclude value="Device:organization"/>
          <searchInclude value="Device:patient"/>
          <searchParam>
-            <name value="_language"/>
+            <name value="_content"/>
             <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
-            <name value="udi-di"/>
+            <name value="_has"/>
             <type value="string"/>
-            <documentation value="The udi Device Identifier (DI)"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Instance id from manufacturer, owner, and others"/>
-         </searchParam>
-         <searchParam>
-            <name value="udi-carrier"/>
-            <type value="string"/>
-            <documentation value="UDI Barcode (RFID or other technology) string either in HRF format or AIDC format converted to base64 string."/>
-         </searchParam>
-         <searchParam>
-            <name value="device-name"/>
-            <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the Device.udi.name  or Device.type.coding.display or  Device.type.text"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="The type of the device"/>
-         </searchParam>
-         <searchParam>
-            <name value="url"/>
-            <type value="uri"/>
-            <documentation value="Network address to contact device"/>
-         </searchParam>
-         <searchParam>
-            <name value="manufacturer"/>
-            <type value="string"/>
-            <documentation value="The manufacturer of the device"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Patient information, if the resource is affixed to a person"/>
-         </searchParam>
-         <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="The organization responsible for the device"/>
-         </searchParam>
-         <searchParam>
-            <name value="location"/>
-            <type value="reference"/>
-            <documentation value="A location, where the resource is found"/>
-         </searchParam>
-         <searchParam>
-            <name value="model"/>
-            <type value="string"/>
-            <documentation value="The model of the device"/>
+            <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -849,9 +536,94 @@
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="device-name"/>
+            <type value="string"/>
+            <documentation value="A server defined search that may match any of the string fields in the Device.udi.name  or Device.type.coding.display or  Device.type.text"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Instance id from manufacturer, owner, and others"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="A location, where the resource is found"/>
+         </searchParam>
+         <searchParam>
+            <name value="manufacturer"/>
+            <type value="string"/>
+            <documentation value="The manufacturer of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="model"/>
+            <type value="string"/>
+            <documentation value="The model of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The organization responsible for the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Patient information, if the resource is affixed to a person"/>
+         </searchParam>
+         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="active | inactive | entered-in-error | unknown"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="The type of the device"/>
+         </searchParam>
+         <searchParam>
+            <name value="udi-carrier"/>
+            <type value="string"/>
+            <documentation value="UDI Barcode (RFID or other technology) string either in HRF format or AIDC format converted to base64 string."/>
+         </searchParam>
+         <searchParam>
+            <name value="udi-di"/>
+            <type value="string"/>
+            <documentation value="The udi Device Identifier (DI)"/>
+         </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="Network address to contact device"/>
          </searchParam>
       </resource>
       <resource>
@@ -874,16 +646,60 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="DeviceMetric:parent"/>
          <searchInclude value="DeviceMetric:source"/>
          <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
             <name value="_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="The category of the metric"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
@@ -896,19 +712,9 @@
             <documentation value="The parent DeviceMetric resource"/>
          </searchParam>
          <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
             <name value="source"/>
             <type value="reference"/>
             <documentation value="The device resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="category"/>
-            <type value="token"/>
-            <documentation value="The category of the metric"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
@@ -936,7 +742,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -944,29 +749,14 @@
          <searchInclude value="DeviceUseStatement:patient"/>
          <searchInclude value="DeviceUseStatement:subject"/>
          <searchParam>
-            <name value="_language"/>
+            <name value="_content"/>
             <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Search by identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="when-used"/>
-            <type value="date"/>
-            <documentation value="The time period over which the device was used."/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Search by subject - a patient"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Search by subject"/>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -974,14 +764,64 @@
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
             <name value="device"/>
             <type value="reference"/>
             <documentation value="Search by device"/>
          </searchParam>
          <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Search by identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Search by subject - a patient"/>
+         </searchParam>
+         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="active | completed | entered-in-error +"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Search by subject"/>
+         </searchParam>
+         <searchParam>
+            <name value="when-used"/>
+            <type value="date"/>
+            <documentation value="Period device was used"/>
          </searchParam>
       </resource>
       <resource>
@@ -1004,7 +844,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -1017,59 +856,49 @@
          <searchInclude value="DocumentReference:relatesto"/>
          <searchInclude value="DocumentReference:subject"/>
          <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
             <name value="_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
-            <name value="securitylabel"/>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
             <type value="token"/>
-            <documentation value="Document security-tags"/>
+            <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Who/what is the subject of the document"/>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
-            <name value="description"/>
+            <name value="_text"/>
             <type value="string"/>
-            <documentation value="Human-readable description (title)"/>
-         </searchParam>
-         <searchParam>
-            <name value="language"/>
-            <type value="token"/>
-            <documentation value="Human language of the content (BCP-47)"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="Kind of document (LOINC if possible)"/>
-         </searchParam>
-         <searchParam>
-            <name value="relation"/>
-            <type value="token"/>
-            <documentation value="replaces | transforms | signs | appends"/>
-         </searchParam>
-         <searchParam>
-            <name value="setting"/>
-            <type value="token"/>
-            <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Who/what is the subject of the document"/>
-         </searchParam>
-         <searchParam>
-            <name value="event"/>
-            <type value="token"/>
-            <documentation value="Main clinical acts documented"/>
-         </searchParam>
-         <searchParam>
-            <name value="relationship"/>
-            <type value="composite"/>
-            <documentation value="Combination of relation and relatesTo"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="authenticator"/>
@@ -1077,14 +906,74 @@
             <documentation value="Who/what authenticated the document"/>
          </searchParam>
          <searchParam>
+            <name value="author"/>
+            <type value="reference"/>
+            <documentation value="Who and/or what authored the document"/>
+         </searchParam>
+         <searchParam>
             <name value="class"/>
             <type value="token"/>
             <documentation value="Categorization of document"/>
          </searchParam>
          <searchParam>
+            <name value="created"/>
+            <type value="date"/>
+            <documentation value="Document creation time"/>
+         </searchParam>
+         <searchParam>
+            <name value="custodian"/>
+            <type value="reference"/>
+            <documentation value="Organization which maintains the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="Human-readable description (title)"/>
+         </searchParam>
+         <searchParam>
+            <name value="encounter"/>
+            <type value="reference"/>
+            <documentation value="Context of the document  content"/>
+         </searchParam>
+         <searchParam>
+            <name value="event"/>
+            <type value="token"/>
+            <documentation value="Main clinical acts documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="facility"/>
+            <type value="token"/>
+            <documentation value="Kind of facility where patient was seen"/>
+         </searchParam>
+         <searchParam>
+            <name value="format"/>
+            <type value="token"/>
+            <documentation value="Format/content rules for the document"/>
+         </searchParam>
+         <searchParam>
             <name value="identifier"/>
             <type value="token"/>
             <documentation value="Master Version Specific Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="indexed"/>
+            <type value="date"/>
+            <documentation value="When this document reference was created"/>
+         </searchParam>
+         <searchParam>
+            <name value="language"/>
+            <type value="token"/>
+            <documentation value="Human language of the content (BCP-47)"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="uri"/>
+            <documentation value="Uri where the data can be found"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who/what is the subject of the document"/>
          </searchParam>
          <searchParam>
             <name value="period"/>
@@ -1097,49 +986,9 @@
             <documentation value="Identifier of related objects or events"/>
          </searchParam>
          <searchParam>
-            <name value="custodian"/>
-            <type value="reference"/>
-            <documentation value="Organization which maintains the document"/>
-         </searchParam>
-         <searchParam>
-            <name value="indexed"/>
-            <type value="date"/>
-            <documentation value="When this document reference was created"/>
-         </searchParam>
-         <searchParam>
-            <name value="author"/>
-            <type value="reference"/>
-            <documentation value="Who and/or what authored the document"/>
-         </searchParam>
-         <searchParam>
-            <name value="created"/>
-            <type value="date"/>
-            <documentation value="Document creation time"/>
-         </searchParam>
-         <searchParam>
-            <name value="format"/>
-            <type value="token"/>
-            <documentation value="Format/content rules for the document"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="Context of the document  content"/>
-         </searchParam>
-         <searchParam>
             <name value="related-ref"/>
             <type value="reference"/>
             <documentation value="Related Resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="location"/>
-            <type value="uri"/>
-            <documentation value="Uri where the data can be found"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="relatesto"/>
@@ -1147,14 +996,39 @@
             <documentation value="Target of the relationship"/>
          </searchParam>
          <searchParam>
-            <name value="facility"/>
+            <name value="relation"/>
             <type value="token"/>
-            <documentation value="Kind of facility where patient was seen"/>
+            <documentation value="replaces | transforms | signs | appends"/>
+         </searchParam>
+         <searchParam>
+            <name value="relationship"/>
+            <type value="composite"/>
+            <documentation value="Combination of relation and relatesTo"/>
+         </searchParam>
+         <searchParam>
+            <name value="securitylabel"/>
+            <type value="token"/>
+            <documentation value="Document security-tags"/>
+         </searchParam>
+         <searchParam>
+            <name value="setting"/>
+            <type value="token"/>
+            <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="current | superseded | entered-in-error"/>
+         </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Who/what is the subject of the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Kind of document (LOINC if possible)"/>
          </searchParam>
       </resource>
       <resource>
@@ -1174,57 +1048,16 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalUpdate value="true"/>
          <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="The provided date search value falls within the episode of care's period"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Business Identifier(s) relevant for this EpisodeOfCare"/>
-         </searchParam>
-         <searchParam>
-            <name value="condition"/>
+            <name value="care-manager"/>
             <type value="reference"/>
-            <documentation value="Conditions/problems/diagnoses this episode of care is for"/>
-         </searchParam>
-         <searchParam>
-            <name value="incomingreferral"/>
-            <type value="reference"/>
-            <documentation value="Incoming Referral Request"/>
+            <documentation value="Care manager/care co-ordinator for the patient"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
             <type value="reference"/>
             <documentation value="The patient who is the focus of this episode of care"/>
-         </searchParam>
-         <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="The organization that has assumed the specific responsibilities of this EpisodeOfCare"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="Type/class  - e.g. specialist referral, disease management"/>
-         </searchParam>
-         <searchParam>
-            <name value="care-manager"/>
-            <type value="reference"/>
-            <documentation value="Care manager/care co-ordinator for the patient"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
@@ -1252,7 +1085,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -1262,9 +1094,54 @@
          <searchInclude value="Library:predecessor"/>
          <searchInclude value="Library:successor"/>
          <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
             <name value="_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
@@ -1272,19 +1149,9 @@
             <documentation value="The library publication date"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External identifier for the library"/>
-         </searchParam>
-         <searchParam>
-            <name value="successor"/>
+            <name value="depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the library"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
@@ -1297,12 +1164,42 @@
             <documentation value="The description of the library"/>
          </searchParam>
          <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the library is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the library"/>
+         </searchParam>
+         <searchParam>
             <name value="predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
-            <name value="composed-of"/>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the library"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
@@ -1312,9 +1209,9 @@
             <documentation value="The human-friendly name of the library"/>
          </searchParam>
          <searchParam>
-            <name value="version"/>
+            <name value="topic"/>
             <type value="token"/>
-            <documentation value="The business version of the library"/>
+            <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
@@ -1322,39 +1219,9 @@
             <documentation value="The uri that identifies the library"/>
          </searchParam>
          <searchParam>
-            <name value="depends-on"/>
-            <type value="reference"/>
-            <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="effective"/>
-            <type value="date"/>
-            <documentation value="The time during which the library is intended to be in use"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the library"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the library"/>
-         </searchParam>
-         <searchParam>
-            <name value="topic"/>
+            <name value="version"/>
             <type value="token"/>
-            <documentation value="Topics associated with the module"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the library"/>
+            <documentation value="The business version of the library"/>
          </searchParam>
       </resource>
       <resource>
@@ -1365,92 +1232,6 @@
          <interaction>
             <code value="read"/>
          </interaction>
-         <versioning value="versioned-update"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="The operation definition publication date"/>
-         </searchParam>
-         <searchParam>
-            <name value="code"/>
-            <type value="token"/>
-            <documentation value="Name used to invoke the operation"/>
-         </searchParam>
-         <searchParam>
-            <name value="instance"/>
-            <type value="token"/>
-            <documentation value="Invoke on an instance?"/>
-         </searchParam>
-         <searchParam>
-            <name value="kind"/>
-            <type value="token"/>
-            <documentation value="operation | query"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="description"/>
-            <type value="string"/>
-            <documentation value="The description of the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="Invole at the type level?"/>
-         </searchParam>
-         <searchParam>
-            <name value="version"/>
-            <type value="token"/>
-            <documentation value="The business version of the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="url"/>
-            <type value="uri"/>
-            <documentation value="The uri that identifies the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="system"/>
-            <type value="token"/>
-            <documentation value="Invoke at the system level?"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the operation definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="param-profile"/>
-            <type value="reference"/>
-            <documentation value="Profile on the type"/>
-         </searchParam>
-         <searchParam>
-            <name value="base"/>
-            <type value="reference"/>
-            <documentation value="Marks this as a profile of the base"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the operation definition"/>
-         </searchParam>
       </resource>
       <resource>
          <type value="PlanDefinition"/>
@@ -1472,7 +1253,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
@@ -1482,9 +1262,54 @@
          <searchInclude value="PlanDefinition:predecessor"/>
          <searchInclude value="PlanDefinition:successor"/>
          <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
             <name value="_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="composed-of"/>
+            <type value="reference"/>
+            <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
@@ -1492,19 +1317,9 @@
             <documentation value="The plan definition publication date"/>
          </searchParam>
          <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External identifier for the plan definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="successor"/>
+            <name value="depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
@@ -1517,12 +1332,42 @@
             <documentation value="The description of the plan definition"/>
          </searchParam>
          <searchParam>
+            <name value="effective"/>
+            <type value="date"/>
+            <documentation value="The time during which the plan definition is intended to be in use"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the plan definition"/>
+         </searchParam>
+         <searchParam>
             <name value="predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
-            <name value="composed-of"/>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the plan definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
@@ -1532,9 +1377,9 @@
             <documentation value="The human-friendly name of the plan definition"/>
          </searchParam>
          <searchParam>
-            <name value="version"/>
+            <name value="topic"/>
             <type value="token"/>
-            <documentation value="The business version of the plan definition"/>
+            <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
@@ -1542,39 +1387,9 @@
             <documentation value="The uri that identifies the plan definition"/>
          </searchParam>
          <searchParam>
-            <name value="depends-on"/>
-            <type value="reference"/>
-            <documentation value="What resource is being referenced"/>
-         </searchParam>
-         <searchParam>
-            <name value="effective"/>
-            <type value="date"/>
-            <documentation value="The time during which the plan definition is intended to be in use"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the plan definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the plan definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="topic"/>
+            <name value="version"/>
             <type value="token"/>
-            <documentation value="Topics associated with the module"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the plan definition"/>
+            <documentation value="The business version of the plan definition"/>
          </searchParam>
       </resource>
       <resource>
@@ -1609,7 +1424,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
@@ -1620,69 +1434,14 @@
          <searchInclude value="PractitionerRole:practitioner"/>
          <searchInclude value="PractitionerRole:service"/>
          <searchParam>
-            <name value="_language"/>
+            <name value="_content"/>
             <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="A practitioner's Identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="specialty"/>
-            <type value="token"/>
-            <documentation value="The practitioner has this specialty at an organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="role"/>
-            <type value="token"/>
-            <documentation value="The practitioner can perform this role at for the organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="practitioner"/>
-            <type value="reference"/>
-            <documentation value="Practitioner that is able to provide the defined services for the organation"/>
-         </searchParam>
-         <searchParam>
-            <name value="active"/>
-            <type value="token"/>
-            <documentation value="Whether this practitioner's record is in active use"/>
-         </searchParam>
-         <searchParam>
-            <name value="endpoint"/>
-            <type value="reference"/>
-            <documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
-         </searchParam>
-         <searchParam>
-            <name value="phone"/>
-            <type value="token"/>
-            <documentation value="A value in a phone contact"/>
-         </searchParam>
-         <searchParam>
-            <name value="service"/>
-            <type value="reference"/>
-            <documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
-         </searchParam>
-         <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
-         </searchParam>
-         <searchParam>
-            <name value="location"/>
-            <type value="reference"/>
-            <documentation value="One of the locations at which this practitioner provides care"/>
-         </searchParam>
-         <searchParam>
-            <name value="telecom"/>
-            <type value="token"/>
-            <documentation value="The value in any kind of contact"/>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -1690,9 +1449,99 @@
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="Whether this practitioner's record is in active use"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
+         </searchParam>
+         <searchParam>
             <name value="email"/>
             <type value="token"/>
             <documentation value="A value in an email contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="endpoint"/>
+            <type value="reference"/>
+            <documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A practitioner's Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="One of the locations at which this practitioner provides care"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
+         </searchParam>
+         <searchParam>
+            <name value="phone"/>
+            <type value="token"/>
+            <documentation value="A value in a phone contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="practitioner"/>
+            <type value="reference"/>
+            <documentation value="Practitioner that is able to provide the defined services for the organation"/>
+         </searchParam>
+         <searchParam>
+            <name value="role"/>
+            <type value="token"/>
+            <documentation value="The practitioner can perform this role at for the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="service"/>
+            <type value="reference"/>
+            <documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="specialty"/>
+            <type value="token"/>
+            <documentation value="The practitioner has this specialty at an organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="The value in any kind of contact"/>
          </searchParam>
       </resource>
       <resource>
@@ -1709,118 +1558,7 @@
          <interaction>
             <code value="update"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalUpdate value="true"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="authored"/>
-            <type value="date"/>
-            <documentation value="Date request signed"/>
-         </searchParam>
-         <searchParam>
-            <name value="requester"/>
-            <type value="reference"/>
-            <documentation value="Individual making the request"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Identifiers assigned to this order"/>
-         </searchParam>
-         <searchParam>
-            <name value="code"/>
-            <type value="token"/>
-            <documentation value="What is being requested/ordered"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer"/>
-            <type value="reference"/>
-            <documentation value="Requested perfomer"/>
-         </searchParam>
-         <searchParam>
-            <name value="requisition"/>
-            <type value="token"/>
-            <documentation value="Composite Request ID"/>
-         </searchParam>
-         <searchParam>
-            <name value="replaces"/>
-            <type value="reference"/>
-            <documentation value="What request replaces"/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Search by subject"/>
-         </searchParam>
-         <searchParam>
-            <name value="encounter"/>
-            <type value="reference"/>
-            <documentation value="An encounter in which this request is made"/>
-         </searchParam>
-         <searchParam>
-            <name value="occurrence"/>
-            <type value="date"/>
-            <documentation value="When procedure should occur"/>
-         </searchParam>
-         <searchParam>
-            <name value="priority"/>
-            <type value="token"/>
-            <documentation value="routine | urgent | asap | stat"/>
-         </searchParam>
-         <searchParam>
-            <name value="intent"/>
-            <type value="token"/>
-            <documentation value="proposal | plan | order +"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer-type"/>
-            <type value="token"/>
-            <documentation value="Performer role"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="What request fulfills"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Search by subject - a patient"/>
-         </searchParam>
-         <searchParam>
-            <name value="specimen"/>
-            <type value="reference"/>
-            <documentation value="Specimen to be tested"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or Episode during which request was created"/>
-         </searchParam>
-         <searchParam>
-            <name value="definition"/>
-            <type value="reference"/>
-            <documentation value="Protocol or definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="body-site"/>
-            <type value="token"/>
-            <documentation value="Where procedure is going to be done"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="draft | active | suspended | completed | entered-in-error | cancelled"/>
-         </searchParam>
       </resource>
       <resource>
          <type value="Provenance"/>
@@ -1833,72 +1571,6 @@
          <interaction>
             <code value="vread"/>
          </interaction>
-         <versioning value="versioned-update"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="entity-ref"/>
-            <type value="reference"/>
-            <documentation value="Identity of entity"/>
-         </searchParam>
-         <searchParam>
-            <name value="agent"/>
-            <type value="reference"/>
-            <documentation value="Who participated"/>
-         </searchParam>
-         <searchParam>
-            <name value="signature-type"/>
-            <type value="token"/>
-            <documentation value="Indication of the reason the entity signed the object(s)"/>
-         </searchParam>
-         <searchParam>
-            <name value="start"/>
-            <type value="date"/>
-            <documentation value="Starting time with inclusive boundary"/>
-         </searchParam>
-         <searchParam>
-            <name value="recorded"/>
-            <type value="date"/>
-            <documentation value="When the activity was recorded / updated"/>
-         </searchParam>
-         <searchParam>
-            <name value="target"/>
-            <type value="reference"/>
-            <documentation value="Target Reference(s) (usually version specific)"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Target Reference(s) (usually version specific)"/>
-         </searchParam>
-         <searchParam>
-            <name value="end"/>
-            <type value="date"/>
-            <documentation value="End time with inclusive boundary, if not ongoing"/>
-         </searchParam>
-         <searchParam>
-            <name value="location"/>
-            <type value="reference"/>
-            <documentation value="Where the activity occurred, if relevant"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="agent-role"/>
-            <type value="token"/>
-            <documentation value="What the agents role was"/>
-         </searchParam>
-         <searchParam>
-            <name value="entity-id"/>
-            <type value="token"/>
-            <documentation value="Identity of entity"/>
-         </searchParam>
       </resource>
       <resource>
          <type value="StructureDefinition"/>
@@ -1911,126 +1583,10 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
-         <searchParam>
-            <name value="_language"/>
-            <type value="string"/>
-            <documentation value="The language of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="date"/>
-            <type value="date"/>
-            <documentation value="The structure definition publication date"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="External identifier for the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="valueset"/>
-            <type value="reference"/>
-            <documentation value="A vocabulary binding reference"/>
-         </searchParam>
-         <searchParam>
-            <name value="kind"/>
-            <type value="token"/>
-            <documentation value="primitive-type | complex-type | resource | logical"/>
-         </searchParam>
-         <searchParam>
-            <name value="jurisdiction"/>
-            <type value="token"/>
-            <documentation value="Intended jurisdiction for the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="description"/>
-            <type value="string"/>
-            <documentation value="The description of the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="context-type"/>
-            <type value="token"/>
-            <documentation value="resource | datatype | extension"/>
-         </searchParam>
-         <searchParam>
-            <name value="experimental"/>
-            <type value="token"/>
-            <documentation value="For testing purposes, not real usage"/>
-         </searchParam>
-         <searchParam>
-            <name value="abstract"/>
-            <type value="token"/>
-            <documentation value="Whether the structure is abstract"/>
-         </searchParam>
-         <searchParam>
-            <name value="title"/>
-            <type value="string"/>
-            <documentation value="The human-friendly name of the structure definition"/>
-         </searchParam>
          <searchParam>
             <name value="type"/>
             <type value="token"/>
             <documentation value="Type defined or constrained by this structure"/>
-         </searchParam>
-         <searchParam>
-            <name value="version"/>
-            <type value="token"/>
-            <documentation value="The business version of the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="url"/>
-            <type value="uri"/>
-            <documentation value="The uri that identifies the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="path"/>
-            <type value="token"/>
-            <documentation value="A path that is constrained in the profile"/>
-         </searchParam>
-         <searchParam>
-            <name value="ext-context"/>
-            <type value="string"/>
-            <documentation value="Where the extension can be used in instances"/>
-         </searchParam>
-         <searchParam>
-            <name value="base-path"/>
-            <type value="token"/>
-            <documentation value="Path that identifies the base element"/>
-         </searchParam>
-         <searchParam>
-            <name value="name"/>
-            <type value="string"/>
-            <documentation value="Computationally friendly name of the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="publisher"/>
-            <type value="string"/>
-            <documentation value="Name of the publisher of the structure definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="derivation"/>
-            <type value="token"/>
-            <documentation value="specialization | constraint - How relates to base definition"/>
-         </searchParam>
-         <searchParam>
-            <name value="_id"/>
-            <type value="token"/>
-            <documentation value="The ID of the resource"/>
-         </searchParam>
-         <searchParam>
-            <name value="keyword"/>
-            <type value="token"/>
-            <documentation value="A code for the profile"/>
-         </searchParam>
-         <searchParam>
-            <name value="base"/>
-            <type value="uri"/>
-            <documentation value="Definition that this type is constrained/specialized from"/>
-         </searchParam>
-         <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="The current status of the structure definition"/>
          </searchParam>
       </resource>
       <resource>
@@ -2050,7 +1606,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <versioning value="versioned-update"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="Task:based-on"/>
@@ -2063,104 +1618,14 @@
          <searchInclude value="Task:requester"/>
          <searchInclude value="Task:subject"/>
          <searchParam>
-            <name value="_language"/>
+            <name value="_content"/>
             <type value="string"/>
-            <documentation value="The language of the resource"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
-            <name value="owner"/>
-            <type value="reference"/>
-            <documentation value="Search by task owner"/>
-         </searchParam>
-         <searchParam>
-            <name value="requester"/>
-            <type value="reference"/>
-            <documentation value="Search by task requester"/>
-         </searchParam>
-         <searchParam>
-            <name value="business-status"/>
-            <type value="token"/>
-            <documentation value="Search by business status"/>
-         </searchParam>
-         <searchParam>
-            <name value="identifier"/>
-            <type value="token"/>
-            <documentation value="Search for a task instance by its business identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="period"/>
-            <type value="date"/>
-            <documentation value="Search by period Task is/was underway"/>
-         </searchParam>
-         <searchParam>
-            <name value="code"/>
-            <type value="token"/>
-            <documentation value="Search by task code"/>
-         </searchParam>
-         <searchParam>
-            <name value="performer"/>
-            <type value="token"/>
-            <documentation value="Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."/>
-         </searchParam>
-         <searchParam>
-            <name value="subject"/>
-            <type value="reference"/>
-            <documentation value="Search by subject"/>
-         </searchParam>
-         <searchParam>
-            <name value="focus"/>
-            <type value="reference"/>
-            <documentation value="Search by task focus"/>
-         </searchParam>
-         <searchParam>
-            <name value="part-of"/>
-            <type value="reference"/>
-            <documentation value="Search by task this task is part of"/>
-         </searchParam>
-         <searchParam>
-            <name value="authored-on"/>
-            <type value="date"/>
-            <documentation value="Search by creation date"/>
-         </searchParam>
-         <searchParam>
-            <name value="priority"/>
-            <type value="token"/>
-            <documentation value="Search by task priority"/>
-         </searchParam>
-         <searchParam>
-            <name value="intent"/>
-            <type value="token"/>
-            <documentation value="Search by task intent"/>
-         </searchParam>
-         <searchParam>
-            <name value="group-identifier"/>
-            <type value="token"/>
-            <documentation value="Search by group identifier"/>
-         </searchParam>
-         <searchParam>
-            <name value="based-on"/>
-            <type value="reference"/>
-            <documentation value="Search by requests this task is based on"/>
-         </searchParam>
-         <searchParam>
-            <name value="patient"/>
-            <type value="reference"/>
-            <documentation value="Search by patient"/>
-         </searchParam>
-         <searchParam>
-            <name value="organization"/>
-            <type value="reference"/>
-            <documentation value="Search by responsible organization"/>
-         </searchParam>
-         <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Search by encounter or episode"/>
-         </searchParam>
-         <searchParam>
-            <name value="modified"/>
-            <type value="date"/>
-            <documentation value="Search by last modification date"/>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -2168,111 +1633,236 @@
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="authored-on"/>
+            <type value="date"/>
+            <documentation value="Search by creation date"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Search by requests this task is based on"/>
+         </searchParam>
+         <searchParam>
+            <name value="business-status"/>
+            <type value="token"/>
+            <documentation value="Search by business status"/>
+         </searchParam>
+         <searchParam>
+            <name value="code"/>
+            <type value="token"/>
+            <documentation value="Search by task code"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Search by encounter or episode"/>
+         </searchParam>
+         <searchParam>
+            <name value="focus"/>
+            <type value="reference"/>
+            <documentation value="Search by task focus"/>
+         </searchParam>
+         <searchParam>
+            <name value="group-identifier"/>
+            <type value="token"/>
+            <documentation value="Search by group identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="Search for a task instance by its business identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="intent"/>
+            <type value="token"/>
+            <documentation value="Search by task intent"/>
+         </searchParam>
+         <searchParam>
+            <name value="modified"/>
+            <type value="date"/>
+            <documentation value="Search by last modification date"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="Search by responsible organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="owner"/>
+            <type value="reference"/>
+            <documentation value="Search by task owner"/>
+         </searchParam>
+         <searchParam>
+            <name value="part-of"/>
+            <type value="reference"/>
+            <documentation value="Search by task this task is part of"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Search by patient"/>
+         </searchParam>
+         <searchParam>
+            <name value="performer"/>
+            <type value="token"/>
+            <documentation value="Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Search by period Task is/was underway"/>
+         </searchParam>
+         <searchParam>
+            <name value="priority"/>
+            <type value="token"/>
+            <documentation value="Search by task priority"/>
+         </searchParam>
+         <searchParam>
+            <name value="requester"/>
+            <type value="reference"/>
+            <documentation value="Search by task requester"/>
+         </searchParam>
+         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="Search by task status"/>
          </searchParam>
+         <searchParam>
+            <name value="subject"/>
+            <type value="reference"/>
+            <documentation value="Search by subject"/>
+         </searchParam>
       </resource>
-      <operation>
-         <name value="create-episode-of-care"/>
-         <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToObservation"/>
-         <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToPHMR"/>
-         <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
-         </definition>
-      </operation>
       <operation>
          <name value="transformToAppointment"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToAPD"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToQuestionnaireResponse"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToQRD"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="create-episode-of-care"/>
+         <definition>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToObservation"/>
+         <definition>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToPHMR"/>
+         <definition>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
          </definition>
       </operation>
       <operation>
          <name value="evaluate"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
          </definition>
       </operation>
       <operation>
          <name value="apply"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://aeaf5c9912ee011e9a55c06d905b639a-127735016.eu-north-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
+            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
          </definition>
       </operation>
    </rest>
