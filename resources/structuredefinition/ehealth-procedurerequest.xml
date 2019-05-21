@@ -67,7 +67,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ProcedureRequestCode" />
         </extension>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
         </valueSetReference>
