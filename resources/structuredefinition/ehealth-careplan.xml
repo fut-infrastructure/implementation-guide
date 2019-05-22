@@ -218,6 +218,7 @@
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest" />
         <aggregation value="referenced" />
+        <aggregation value="bundled" />
       </type>
     </element>
     <element id="CarePlan.activity.detail.definition">
