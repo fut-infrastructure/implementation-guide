@@ -2,6 +2,24 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### Resource/profile changes
+#### ActivityDefinition (ehealth-activitydefinition)
+- Added definition of `minimumQuality` 
+- Added definition of `modifierRole` 
+- Changed definition of `reference`
+
+#### PlanDefinition (ehealth-plandefinition)
+- Added definition of `modifierRole` 
+- Added definition of `role` 
+
 ## 2019.5.1 (2019-05-15)
 
 ### General changes
