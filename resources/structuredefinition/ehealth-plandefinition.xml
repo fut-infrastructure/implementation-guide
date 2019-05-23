@@ -67,6 +67,8 @@
     <element id="PlanDefinition.extension:role">
       <path value="PlanDefinition.extension" />
       <sliceName value="role" />
+      <short value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
+      <definition value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
       <min value="0" />
       <max value="*" />
       <type>

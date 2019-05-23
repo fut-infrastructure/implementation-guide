@@ -17,6 +17,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Maintainers (custodians) of this resource" />
+      <definition value="Maintainers (custodians) of this resource" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -30,7 +35,8 @@
     <element id="Extension.extension:reference">
       <path value="Extension.extension" />
       <sliceName value="reference" />
-      <short value="Holds a reference to either Organization, CareTeam, Practitioner" />
+      <short value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
+      <definition value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
       <comment value="Holds a reference to either Organization, CareTeam, Practitioner." />
       <min value="1" />
       <max value="1" />
@@ -64,14 +70,13 @@
     <element id="Extension.extension:role">
       <path value="Extension.extension" />
       <sliceName value="role" />
-      <short value="This tells something about the value of the reference." />
-      <definition value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
+      <short value="Type of involvement. Indicates specific responsibility of the entity maintaining the activity definition." />
+      <definition value="Type of involvement. Indicates aresponsibility of the entity maintaining the activity definition." />
       <comment value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
       <min value="1" />
       <max value="1" />
       <binding>
         <strength value="required" />
-        <description value="TDB" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>

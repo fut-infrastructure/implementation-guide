@@ -77,6 +77,8 @@
     <element id="ActivityDefinition.extension:minimumQuality">
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
+      <short value="Minimum requirements for qualities" />
+      <definition value="Minimum requirements for qualities" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
