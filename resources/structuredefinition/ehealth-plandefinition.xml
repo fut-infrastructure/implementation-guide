@@ -46,6 +46,8 @@
     <element id="PlanDefinition.extension:intendedAudience">
       <path value="PlanDefinition.extension" />
       <sliceName value="intendedAudience" />
+      <short value="The intended audience of the plandefinition" />
+      <definition value="Specifies that the plandefinition is only intended for use in the specified organisations. Leave blank if the plandefinition is intended for global use." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />

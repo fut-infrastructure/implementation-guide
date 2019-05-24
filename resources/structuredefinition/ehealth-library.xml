@@ -39,6 +39,8 @@
     <element id="Library.extension:intendedAudience">
       <path value="Library.extension" />
       <sliceName value="intendedAudience" />
+      <short value="The intended audience of the library" />
+      <definition value="Specifies that the library is only intended for use in the specified organisations. Leave blank if the library is intended for global use." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />

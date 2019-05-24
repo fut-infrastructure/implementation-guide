@@ -46,6 +46,8 @@
     <element id="ActivityDefinition.extension:intendedAudience">
       <path value="ActivityDefinition.extension" />
       <sliceName value="intendedAudience" />
+      <short value="The intended audience of the activitydefinition" />
+      <definition value="Specifies that the activitydefinition is only intended for use in the specified organisations. Leave blank if the activitydefinition is intended for global use." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
@@ -75,6 +77,7 @@
     <element id="ActivityDefinition.extension:minimumQuality">
       <path value="ActivityDefinition.extension" />
       <sliceName value="minimumQuality" />
+      <short value="Minimum requirements for qualities." />
       <definition value="Minimum requirements for qualities" />
       <type>
         <code value="Extension" />
