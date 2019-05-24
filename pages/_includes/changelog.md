@@ -16,6 +16,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Changed definition of `reference`
 
+#### Library (ehealth-library)
+- Added extension `modifierRole`
+
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
 - Added definition of `role` 
