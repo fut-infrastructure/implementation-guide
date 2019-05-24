@@ -17,6 +17,10 @@ Measurements in the form of Observation, QuestionnaireResponse or other resource
 expected to be submitted by a Patient according to a measurement regime specified in a CarePlan
 and referenced CarePlan/ProcedureRequest.
 
+As in standard FHIR `Task.context` is always referencing the Encounter or EpisodeOfCare from which 
+the Task originated. `Task.focus` can reference any resource and is used to refer to the resource 
+which the Task responsible should be acting on. Examples are given below.
+
 ### Use of Task for coordinating assessment of submitted measurement
 
 The eHealth Infrastructure supports triaging based on comparison of submitted measurements
