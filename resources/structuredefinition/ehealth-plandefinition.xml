@@ -46,8 +46,6 @@
     <element id="PlanDefinition.extension:intendedAudience">
       <path value="PlanDefinition.extension" />
       <sliceName value="intendedAudience" />
-      <short value="Intended audience for the plan." />
-      <definition value="Intended audience for the plan." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
@@ -69,8 +67,6 @@
       <sliceName value="role" />
       <short value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
       <definition value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
-      <min value="0" />
-      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition-role" />

@@ -13,6 +13,7 @@
   <context value="ActivityDefinition" />
   <context value="Questionnaire" />
   <context value="PlanDefinition" />
+  <context value="Library" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />

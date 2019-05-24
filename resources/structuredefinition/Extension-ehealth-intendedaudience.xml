@@ -19,8 +19,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="The audience of the PlanDefinition" />
-      <definition value="Specifies that the plan is only intended for use in the specified organisations. Leave blank if the plan is intended for global use." />
+      <short value="The intended audience of the resource" />
+      <definition value="Specifies that the resource is only intended for use in the specified organisations. Leave blank if the resource is intended for global use." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

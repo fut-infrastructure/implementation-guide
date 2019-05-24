@@ -62,6 +62,18 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision" />
       </type>
     </element>
+    <element id="Library.extension:modifierRole">
+      <path value="Library.extension" />
+      <sliceName value="modifierRole" />
+      <short value="Maintainers of the library. Identifies practitioners, care teams and organizations and their responsibility as maintainers." />
+      <definition value="Maintainers of the library. Identifies practitioners, care teams and organizations and their responsibility as maintainers." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
+      </type>
+    </element>
     <element id="Library.version">
       <path value="Library.version" />
       <min value="1" />
