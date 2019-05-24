@@ -1,89 +1,35 @@
-This resource identifies an instance or a type of a manufactured item that is used in the
+# Introduction
+This resource identifies a specific instance of a manufactured item that is used in the
 provision of healthcare without being substantially changed through that activity. The device
 may be a medical or non-medical device. Medical devices include durable (reusable) medical
 equipment, implantable devices, as well as disposable equipment used for diagnostic, treatment,
 and research for healthcare and public health. Non-medical devices may include items such as a
 machine, cellphone, computer, application, etc.
 
-## REST API Examples
+Because the Device resource represents a specific instance of a Device, it must have at least one
+identifier, such as a serial no., which together with the manufacturer and model uniquely identifies
+the device instance.
 
-### Create Device
-Create a simple Device resource with manufacturer and model:
+Each Device can be related to a number of suppliers with different roles; such as e.g. the provisioner, 
+and suppliers of user training, maintenance, or decommissioning of the device.
 
-```
-POST /hapi-fhir-server/baseDstu3/Device/ 
+# Scope and Usage
+In eHealth Devices are registered as FHIR resources when they are actively used in a current 
+CarePlan for a Patient. The relation between a CarePlan and a Device is represented by a DeviceUseStatement
+resource.
 
-Content-Type: application/fhir+json
+The main purpose of registering a specific Device to a Patient through a CarePlan is purely clinical; 
+not logistical. If for example at some point it is determined that a specific device has yielded 
+errorenous or biased measurements, it may be important to track which patients have used this device.
 
-{
-    "resourceType": "Device",
-    "manufacturer": "Vitalograph",
-    "model": "Alpha IV"
-}
-```
+### Life cycle
+The life cycle of Device resources is normally managed by the SSL subsystem, when an SSL supplier or a practitioner
+signals that a device has been delivered to a patient. At this time the FHIR database is searched for an
+existing instance of this Device resource - if one is found it will be reused. Otherwise a new device resource
+is created and related to the Patient's Careplan through a DeviceUseStatement.
 
-If this create operation goes well, the server responds with HTTP status 201 Created, and a response like this:
+### Privately owned devices
+In special cases a Device is not delivered to the patient by the healthcare system through an SSL supplier, but
+is instead nprivately owned (or somehow else provisioned by) the patient. In such cases the element 
+`Device.privatelyOwned` is set to true. Otherwise it is `null` or `false`.
 
-```
-X-FHIR-Request-Validation: No issues detected
-Location: http://localhost:31000/hapi-fhir-server/baseDstu3/Device/1955/_history/1
-Content-Type: application/fhir+json;charset=utf-8
-
-{
-    "resourceType": "Device",
-    "id": "1955",
-    "meta": {
-        "versionId": "1",
-        "lastUpdated": "2019-02-27T13:20:12.511+00:00"
-    },
-    "manufacturer": "Vitalograph",
-    "model": "Alpha IV"
-}
-```
-
-### Create a privately owned Device
-
-Create a Device similar to the above, but using an extension field to mark it as "privately owned":
-
-```
-POST /hapi-fhir-server/baseDstu3/Device/ HTTP/1.1
-
-Content-Type: application/fhir+json
-
-{
-    "resourceType": "Device",
-    "extension": [
-      {
-        "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-privatelyOwned",
-        "valueBoolean": true
-      }
-    ],
-    "manufacturer": "Vitalograph",
-    "model": "Alpha IV"
-}
-```
-
-which yields this response:
-
-```
-X-FHIR-Request-Validation: No issues detected
-Location: http://localhost:31000/hapi-fhir-server/baseDstu3/Device/1956/_history/1
-Content-Type: application/fhir+json;charset=utf-8
-
-{
-  "resourceType": "Device",
-  "id": "1956",
-  "meta": {
-    "versionId": "1",
-    "lastUpdated": "2019-02-27T13:26:19.406+00:00"
-  },
-  "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-privatelyOwned",
-      "valueBoolean": true
-    }
-  ],
-  "manufacturer": "Vitalograph",
-  "model": "Alpha IV"
-}
-```
