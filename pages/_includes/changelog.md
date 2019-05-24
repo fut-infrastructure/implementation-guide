@@ -23,6 +23,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Added definition of `role` 
 
+#### Task (ehealth-task)
+- Updated resource description
+
 ## 2019.5.1 (2019-05-15)
 
 ### General changes

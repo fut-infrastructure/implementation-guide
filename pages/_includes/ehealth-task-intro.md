@@ -1,13 +1,15 @@
+# Introduction
+
 A task resource describes an activity that can be performed and tracks the state of completion of that activity.
 It is a representation that an activity should be or has been initiated, and eventually, represents the successful
 or unsuccessful completion of that activity.
 
-#### Scope and Usage
+# Scope and Usage
 
 In scope of the eHealth Infrastructure, the Task resource is used for:
 
-* tracking an activity to be performed by a single individual, for instance a citizen
-* coordinating and tracking an activity to be performed by a member of a careteam
+* tracking an activity to be performed by an individual (a Patient, a Practitioner, or a RelatedPerson).
+* coordinating and tracking an activity to be performed by a member of a CareTeam or an Organization. 
 
 Task resources are produced by eHealth Infrastructure as reaction to measurements being
 submitted or expected measurements not being submitted.
@@ -15,7 +17,7 @@ Measurements in the form of Observation, QuestionnaireResponse or other resource
 expected to be submitted by a Patient according to a measurement regime specified in a CarePlan
 and referenced CarePlan/ProcedureRequest.
 
-##### Use of Task for coordinating assessment of submitted measurement
+### Use of Task for coordinating assessment of submitted measurement
 
 The eHealth Infrastructure supports triaging based on comparison of submitted measurements
 against reference ranges specified in CarePlan/ProcedureRequest. The result of triaging is
@@ -26,7 +28,7 @@ the eHealth Infrastructure. The Task has:
 * Task category is coding that states need to assess a triaging result
 * Task priority reflecting the triaging result
 
-##### Use of Task for resolving missing or unexpected measurement
+### Use of Task for resolving missing or unexpected measurement
 
 In case the eHealth Infrastructure detects that measurement submissions are missing, it creates a
 Communication to the Patient reminding to follow measurement regime. It also creates a Task:
@@ -46,11 +48,11 @@ it creates a ClinicalImpression resource stating this. It also creates a Task wh
 * Task category is coding that states need to resolve unexpected measurement submission
 * Task focus references the ClinicalImpression
 
-##### No use of Task for coordinating measuring to be performed by Patient
+### No use of Task for coordinating measuring to be performed by Patient
 
 No Task resources are created to assist in adhering to a measurement regime.
 
-##### Use of Task in coordinating activities across multiple patients
+### Use of Task in coordinating activities across multiple patients
 
 The Task has been extended with support for CareTeam as Task owner. It is expected that
 each CareTeam will provide support/monitoring of multiple patients. The Task resources
@@ -61,7 +63,7 @@ can coordinate Task assignments (by adding Practitioner as Task owner and settin
 while preserving the CareTeam as fallback in case the Practitioner is unable to process the
 Task, for instance due to absence.
 
-##### Patient's use of Task
+### Patient's use of Task
 
 Task resources owned by the Patient (assigned to the Patient) are used for activities
 scheduled as a response of assessment of self-treatment plans. This assessment can be the result
