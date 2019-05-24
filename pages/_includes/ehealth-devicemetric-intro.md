@@ -1,8 +1,9 @@
-Describes a measurement, calculation or setting capability of a medical device.
+# Introduction
+This resource describes qualities and other properties related to a Device.
+In addition it can describe a measurement, calculation or setting capability of the device.
 
-#### Scope and Usage
-
-In scope of the eHealth Infrastructure, the DeviceMetric resource is also used for:
+# Scope and Usage
+In scope of the eHealth Infrastructure, the DeviceMetric resource is used for:
 
 * additional properties pertaining to the referenced Device, for instance, properties 
 specifying simplicity of use, language, size and so on. These properties are captured
@@ -10,7 +11,7 @@ through a generic structure based on a property type and value in the extension 
 
 * setting of device quality
 
-##### Device quality settings
+### Device quality settings
 
 The quality of the device can be expressed in a number of ways:
 
@@ -36,3 +37,9 @@ device quality is based on the initial device quality.
 
 At any time, a Practitioner can set which of the initial, degraded and overridden device
 quality shall be used as current.
+
+### Life cycle
+In most cases DeviceMetric resources are created by the SSL subsystem when a Device is signalelled
+to be in use by a Patient. 
+
+The initial values of device quality is set from values in the SSL catalogue.
