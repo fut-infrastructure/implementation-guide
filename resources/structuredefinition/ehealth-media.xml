@@ -91,7 +91,11 @@
     <element id="Media.context">
       <path value="Media.context" />
       <min value="1" />
-      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
+      </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
