@@ -17,8 +17,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
-      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+      <short value="This extension expresses relations between organizations imported from different sources." />
+      <definition value="This extension expresses relations between organizations imported from different sources." />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -33,6 +33,8 @@
     <element id="Extension.extension:target">
       <path value="Extension.extension" />
       <sliceName value="target" />
+      <short value="A reference to another Organization to which this Organization is (or was) related." />
+      <definition value="A reference to another Organization to which this Organization is (or was) related." />
       <min value="1" />
       <max value="1" />
     </element>
