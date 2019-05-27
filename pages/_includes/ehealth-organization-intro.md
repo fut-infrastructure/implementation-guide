@@ -18,7 +18,7 @@ SOR supplies a list of updates each night. These updates will be merged into the
 
 STS-ORG provides a number of webservices where the newest organisation data can be fetched. 
 
-Contact information can be edited/added both in the integration platform and in the source systems. To ensure that no information is lost during merge, each ContactPoint will be tagged with a *custodian* element marking which system currently owns it.
+Contact information can be edited/added both in the integration platform and in the source systems. To ensure that no information is lost during merge, each ContactPoint will be tagged with a custodian element marking which system currently maintains it. When merging information from a given source, the ContactPoint elements with a different custodian will not be affected.
 
 ### Relations to other organizations
 It is possible to relate Organization resources to other Organization resources using the extension element `relatedTo`.
