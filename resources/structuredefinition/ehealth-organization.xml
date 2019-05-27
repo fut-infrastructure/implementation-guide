@@ -37,6 +37,18 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-relatedTo" />
       </type>
     </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="OrganizationType" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/organization-type" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <min value="1" />

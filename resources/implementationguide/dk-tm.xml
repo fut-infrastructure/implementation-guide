@@ -1159,6 +1159,12 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="ValueSet/ehealth-organization-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/ehealth-plandefinition-recommendation"/>
       </sourceReference>
     </resource>

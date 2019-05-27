@@ -1,0 +1,64 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-organization-type"/>
+    <url value="http://ehealth.sundhed.dk/vs/organization-type"/>
+    <version value="0.0.1"/>
+    <name value="OrganizationType"/>
+    <title value="OrganizationType"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-05-27"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Value set used for indicating the organization type"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="547211000005108"/>
+                <display value="Municipality"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Municipality"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="550881000005103"/>
+                <display value="Region"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Region"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394761003"/>
+                <display value="General practitioner practice site"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="General practitioner practice site"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="22232009"/>
+                <display value="Hospital"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Hospital"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="550851000005109"/>
+                <display value="Clinical unit"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Clinical unit"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

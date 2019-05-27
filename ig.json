@@ -135,6 +135,7 @@
       "http://ehealth.sundhed.dk/vs/municipality-codes",
       "http://ehealth.sundhed.dk/vs/observation-codes",
       "http://ehealth.sundhed.dk/vs/organization-relation-type",
+      "http://ehealth.sundhed.dk/vs/organization-type",
       "http://ehealth.sundhed.dk/vs/plandefinition-recommendation",
       "http://ehealth.sundhed.dk/vs/practitioner-role",
       "http://ehealth.sundhed.dk/vs/ehealth-provenance-policies",

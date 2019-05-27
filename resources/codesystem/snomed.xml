@@ -47,4 +47,29 @@
         <display value="Severe chronic obstructive pulmonary disease"/>
         <definition value="Severe chronic obstructive pulmonary disease"/>
     </concept>
+    <concept>
+        <code value="547211000005108"/>
+        <display value="Municipality"/>
+        <definition value="Municipality"/>
+    </concept>
+    <concept>
+        <code value="550881000005103"/>
+        <display value="Region"/>
+        <definition value="Region"/>
+    </concept>
+    <concept>
+        <code value="394761003"/>
+        <display value="General practitioner practice site"/>
+        <definition value="General practitioner practice site"/>
+    </concept>
+    <concept>
+        <code value="22232009"/>
+        <display value="Hospital"/>
+        <definition value="Hospital"/>
+    </concept>
+    <concept>
+        <code value="550851000005109"/>
+        <display value="Clinical unit"/>
+        <definition value="Clinical unit"/>
+    </concept>
 </CodeSystem>

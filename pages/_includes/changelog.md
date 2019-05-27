@@ -9,7 +9,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new codes `22232009`, `394761003`, `550881000005103`, `547211000005108`, `550851000005109` to `http://snomed.info/sct`
+
 ### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/organization-type`
+
 ### Resource/profile changes
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added definition of `minimumQuality` 
@@ -27,6 +31,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Library (ehealth-library)
 - Added extension `modifierRole`
+
+#### Organization (ehealth-organization)
+- Changed element `type` value set binding to `http://ehealth.sundhed.dk/vs/organization-type`
 
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
