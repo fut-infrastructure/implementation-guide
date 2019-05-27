@@ -38,6 +38,9 @@
   path: GET_CareTeam_version.md
 
 - profile: ehealth-careteam
+  path: GET_CareTeam.md
+
+- profile: ehealth-careteam
   path: POST_CareTeam.md
 
 - profile: ehealth-careteam
@@ -156,6 +159,9 @@
 
 - profile: ehealth-documentreference
   path: POST_DocumentReference.md
+
+- profile: ehealth-documentreference
+  path: PUT_DocumentReference.md
 
 # ehealth-episodeofcare
 - profile: ehealth-episodeofcare
@@ -280,6 +286,9 @@
   path: DELETE_Questionnaire.md
 
 - profile: ehealth-questionnaire
+  path: GET_Questionnaire.md
+
+- profile: ehealth-questionnaire
   path: GET_Questionnaire_search.md
 
 - profile: ehealth-questionnaire
@@ -292,6 +301,9 @@
   path: PUT_Questionnaire.md
 
 # ehealth-questionnaireresponse
+- profile: ehealth-questionnaireresponse
+  path: GET_QuestionnaireResponse.md
+
 - profile: ehealth-questionnaireresponse
   path: GET_QuestionnaireResponse_search.md
 

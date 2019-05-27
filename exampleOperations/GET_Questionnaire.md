@@ -1,4 +1,4 @@
-`GET [base]/Questionnaire/74/_history/2`
+`GET [base]/Questionnaire/78`
 
 __Header__
 ```
@@ -14,15 +14,21 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "74",
+  "id": "78",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:45:01.687+00:00",
+    "lastUpdated": "2019-05-27T08:45:03.145+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
   },
   "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
+      "valueReference": {
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/66167"
+      }
+    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type",
       "valueCodeableConcept": {
@@ -40,7 +46,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/88117"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/60096"
           }
         },
         {
@@ -57,8 +63,8 @@ __Response__
       ]
     }
   ],
-  "version": "c3e71de4-8daf-48d3-b4a7-13c47c0acfcc",
-  "name": "1c47a41c-651a-4cc5-8f70-19e11a8a07cf",
+  "version": "473b4602-57bf-48e7-a248-747d9824681f",
+  "name": "4c99f034-173c-4bf8-b958-45e9966eaedd",
   "status": "retired"
 }
 ```
