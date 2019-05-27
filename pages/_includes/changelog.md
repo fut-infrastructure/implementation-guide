@@ -37,6 +37,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated description of `relatedTo.target`
 - Changed element `type` value set binding to `http://ehealth.sundhed.dk/vs/organization-type`
 
+#### Media (ehealth-media)
+- Added Encounter as possible reference type for `context`
+
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
 - Added definition of `role` 
