@@ -16,12 +16,24 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Changed definition of `reference`
 
+#### Device (ehealth-device)
+- Updated resource description
+
+#### DeviceMetric (ehealth-devicemetric)
+- Updated resource description
+
+#### DeviceUseStatement (ehealth-deviceusestatement)
+- Added resource description
+
 #### Library (ehealth-library)
 - Added extension `modifierRole`
 
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
 - Added definition of `role` 
+
+#### Task (ehealth-task)
+- Updated resource description
 
 ## 2019.5.1 (2019-05-15)
 
