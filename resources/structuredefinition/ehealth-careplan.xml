@@ -182,6 +182,22 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="CarePlan.supportingInfo">
+      <path value="CarePlan.supportingInfo" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="CarePlan.goal">
+      <path value="CarePlan.goal" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Goal" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="CarePlan.activity.outcomeReference">
       <path value="CarePlan.activity.outcomeReference" />
       <type>
