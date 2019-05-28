@@ -42,6 +42,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>

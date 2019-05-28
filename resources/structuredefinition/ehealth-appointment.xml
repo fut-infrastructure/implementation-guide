@@ -54,6 +54,43 @@
       <path value="Appointment.reason" />
       <min value="1" />
     </element>
+    <element id="Appointment.indication">
+      <path value="Appointment.indication" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Appointment.supportingInformation">
+      <path value="Appointment.supportingInformation" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Appointment.slot">
+      <path value="Appointment.slot" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Slot" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Appointment.incomingReferral">
+      <path value="Appointment.incomingReferral" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ReferralRequest" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
       <min value="2" />

@@ -10,6 +10,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/GuidanceResponse" />
   <derivation value="constraint" />
   <differential>
+    <element id="GuidanceResponse.module">
+      <path value="GuidanceResponse.module" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceDefinition" />
+        <aggregation value="referenced" />
+        <aggregation value="contained" />
+      </type>
+    </element>
     <element id="GuidanceResponse.subject">
       <path value="GuidanceResponse.subject" />
       <type>
@@ -23,6 +32,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
@@ -38,6 +48,33 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="GuidanceResponse.reason[x]">
+      <path value="GuidanceResponse.reason[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.evaluationMessage">
+      <path value="GuidanceResponse.evaluationMessage" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/OperationOutcome" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="GuidanceResponse.outputParameters">
+      <path value="GuidanceResponse.outputParameters" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="GuidanceResponse.result">
       <path value="GuidanceResponse.result" />
       <type>
@@ -48,6 +85,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup" />
+        <aggregation value="referenced" />
       </type>
     </element>
   </differential>

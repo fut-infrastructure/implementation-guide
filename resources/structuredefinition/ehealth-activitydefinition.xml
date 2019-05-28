@@ -129,5 +129,37 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/activitydefinition-code" />
       </binding>
     </element>
+    <element id="ActivityDefinition.location">
+      <path value="ActivityDefinition.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="ActivityDefinition.product[x]">
+      <path value="ActivityDefinition.product[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="ActivityDefinition.transform">
+      <path value="ActivityDefinition.transform" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/StructureMap" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
