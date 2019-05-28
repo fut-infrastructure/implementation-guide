@@ -58,6 +58,7 @@
     </element>
     <element id="Device.patient">
       <path value="Device.patient" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
