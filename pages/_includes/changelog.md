@@ -10,7 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added new codes `22232009`, `394761003`, `550881000005103`, `547211000005108`, `550851000005109` to `http://snomed.info/sct`
-- Updated description of values in `http://ehealth.sundhed.dk/cs/ehealth-quality-types` to define relation to legal quality codes. 
+- Updated description of values in `http://ehealth.sundhed.dk/cs/ehealth-quality-types` to define relation to valid quality codes. 
 
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/organization-type`

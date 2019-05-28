@@ -36,7 +36,7 @@
     <element id="Extension.extension:qualityType">
       <path value="Extension.extension" />
       <sliceName value="qualityType" />
-      <short value="Type of quality. qualityCode must have value from value set according to the value of qualityType." />
+      <short value="Type of quality. qualityCode must have value from a value set according to the value of qualityType. See value set QualityTypes for details." />
       <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality" />
       <min value="1" />
       <max value="1" />
@@ -63,7 +63,7 @@
     <element id="Extension.extension:qualityCode">
       <path value="Extension.extension" />
       <sliceName value="qualityCode" />
-      <short value="Assessed value of quality. Value must be from value set related to qualityType." />
+      <short value="Assessed value of quality. Value must be from value set related to qualityType. See value set QualityTypes for details." />
       <definition value="Assessed value of quality. Depending on type of quality:&#xD;&#xA;http://ehealth.sundhed.dk/vs/usage-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/situation-quality" />
       <min value="1" />
       <max value="1" />

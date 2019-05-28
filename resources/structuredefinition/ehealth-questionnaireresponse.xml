@@ -38,12 +38,12 @@
     <element id="QuestionnaireResponse.extension:quality.extension:qualityType">
       <path value="QuestionnaireResponse.extension.extension" />
       <sliceName value="qualityType" />
-      <short value="Type of quality. qualityCode must have value from value set according to the value of qualityType." />
+      <short value="Type of quality. qualityCode must have value from a value set according to the value of qualityType. See value set QualityTypes for details." />
     </element>
     <element id="QuestionnaireResponse.extension:quality.extension:qualityCode">
       <path value="QuestionnaireResponse.extension.extension" />
       <sliceName value="qualityCode" />
-      <short value="Assessed value of quality. Value must be from value set related to qualityType." />
+      <short value="Assessed value of quality. Value must be from value set related to qualityType. See value set QualityTypes for details." />
     </element>
     <element id="QuestionnaireResponse.basedOn">
       <path value="QuestionnaireResponse.basedOn" />
