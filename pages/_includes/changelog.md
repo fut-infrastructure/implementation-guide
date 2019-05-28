@@ -26,6 +26,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Device (ehealth-device)
 - Updated resource description
+- Updated description of `privatelyOwned`
+- Updated description of `suppliers`
 
 #### DeviceMetric (ehealth-devicemetric)
 - Updated resource description
