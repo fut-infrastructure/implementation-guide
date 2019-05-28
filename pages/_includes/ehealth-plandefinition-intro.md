@@ -4,7 +4,9 @@ This resource allows for the definition of various types of plans as a sharable,
 
 # Scope and Usage
 
-In scope of the eHealth infrastructure PlanDefinitions are used to defined packages for telemedicine.
+In scope of the eHealth infrastructure, PlanDefinitions are used for defining tele-medicine plans. A PlanDefinition is comprised by potentially a number of subplans (each also represented as a PlanDefinition), and a number of activities each represented by an ActivityDefinition instance. These in turn can specify an activity to be performed, for instance measuring of a measure or answering of a Questionnaire.
+
+Once a PlanDefinition and all the PlanDefinition, ActivityDefinition, and Questionnaire instances comprising it has a status set to other than draft, it can be itself be set to active. With that status it can be used as a template for applying it into a CarePlan bound to a specific Patient. The CarePlan then references the PlanDefinition as its definition.
 
 ### Governance principles
 PlanDefinitions (subplans), Questionnaires and ActivityDefinitions can be modified independently. Often by people in different organisations. PlanDefinitions (subplans), Questionnaires and ActivityDefinitions, can all be reused in different top level PlanDefinitions.
@@ -29,9 +31,10 @@ Example: A new ActivityDefinition should be added to an existing PlanDefinition.
 4. Call Create with the modified plan. This will create a new version of the plan in the database with the new ActivityDefinition added.
 
 ### Update restrictions
-These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires
+These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires:
 
-* The *owner* of the resource can always update the resource
+* The Practitioner, CareTeam or Organization referenced by `ehealth-modifier-role.reference` having `ehealth-modifier-role.role` set to `owner` can update the resource and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors. This is in contrast to the entities referenced where the `ehealth-modifier-role.role` is set to co-author, who can update the resource but not alter `ehealth-modifier-role`.
+* The *owner* of the resource can always update the resource.
 * The owner can add *authors* that can also update the resource. Only the owner can modify the list of authors.
 * intendedAudience is a recommendation for use. The system will not enforce any restrictions.
 
