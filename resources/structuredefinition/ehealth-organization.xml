@@ -100,7 +100,7 @@
     <element id="Organization.contact.telecom.extension:custodian">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="custodian" />
-      <short value="SOR | ORG | MAN" />
+      <short value="The custodian that maintains the contact point: SOR | ORG | MAN" />
       <definition value="Custodian for ContactPoint - where is the contact maintained." />
       <type>
         <code value="Extension" />
@@ -110,7 +110,7 @@
     <element id="Organization.contact.telecom.extension:system">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="system" />
-      <short value="phone | fax | email | pager | url | sms | ean | other" />
+      <short value="Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other" />
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
       <min value="1" />
       <max value="1" />
