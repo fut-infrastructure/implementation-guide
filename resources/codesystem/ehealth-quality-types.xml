@@ -30,16 +30,16 @@
     <concept>
         <code value="SQ"/>
         <display value="Situation Quality"/>
-        <definition value="Situation Quality"/>
+        <definition value="Situation Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/situation-quality value set."/>
     </concept>
     <concept>
         <code value="DMQ"/>
         <display value="Device Measuring Quality"/>
-        <definition value="Device Measuring Quality"/>
+        <definition value="Device Measuring Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/device-measuring-quality value set."/>
     </concept>
     <concept>
         <code value="UQ"/>
         <display value="Usage Quality"/>
-        <definition value="Usage Quality"/>
+        <definition value="Usage Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/usage-quality value set."/>
     </concept>
 </CodeSystem>
