@@ -28,12 +28,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated resource description
 - Updated description of `privatelyOwned`
 - Updated description of `suppliers`
+- Changed cardinality for `patient` to 0..0
 
 #### DeviceMetric (ehealth-devicemetric)
 - Updated resource description
 
 #### DeviceUseStatement (ehealth-deviceusestatement)
 - Added resource description
+- Added extension `context` reference to CarePlan
 
 #### GuidanceResponse (ehealth-guidanceresponse)
 - Added introduction
