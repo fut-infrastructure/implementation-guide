@@ -17,6 +17,7 @@
     <element id="Appointment">
       <path value="Appointment" />
       <short value="A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)." />
+      <definition value="A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)" />
     </element>
     <element id="Appointment.extension">
       <path value="Appointment.extension" />
@@ -55,80 +56,25 @@
     </element>
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="actor.reference" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="2" />
     </element>
-    <element id="Appointment.participant:patient">
-      <path value="Appointment.participant" />
-      <sliceName value="patient" />
-    </element>
-    <element id="Appointment.participant:patient.type">
-      <path value="Appointment.participant.type" />
-      <max value="0" />
-    </element>
-    <element id="Appointment.participant:patient.actor">
+    <element id="Appointment.participant.actor">
       <path value="Appointment.participant.actor" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
-    </element>
-    <element id="Appointment.participant:patient.required">
-      <path value="Appointment.participant.required" />
-      <min value="1" />
-    </element>
-    <element id="Appointment.participant:location">
-      <path value="Appointment.participant" />
-      <sliceName value="location" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Appointment.participant:location.type">
-      <path value="Appointment.participant.type" />
-      <max value="0" />
-    </element>
-    <element id="Appointment.participant:location.actor">
-      <path value="Appointment.participant.actor" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
-      </type>
-    </element>
-    <element id="Appointment.participant:practitioner">
-      <path value="Appointment.participant" />
-      <sliceName value="practitioner" />
-    </element>
-    <element id="Appointment.participant:practitioner.type">
-      <path value="Appointment.participant.type" />
-      <max value="0" />
-    </element>
-    <element id="Appointment.participant:practitioner.actor">
-      <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
       </type>
-    </element>
-    <element id="Appointment.participant:relatedPerson">
-      <path value="Appointment.participant" />
-      <sliceName value="relatedPerson" />
-    </element>
-    <element id="Appointment.participant:relatedPerson.type">
-      <path value="Appointment.participant.type" />
-      <max value="0" />
-    </element>
-    <element id="Appointment.participant:relatedPerson.actor">
-      <path value="Appointment.participant.actor" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
       </type>
     </element>
   </differential>

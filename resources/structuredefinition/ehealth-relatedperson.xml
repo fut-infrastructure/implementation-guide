@@ -49,7 +49,7 @@
     <element id="RelatedPerson.identifier:dk-civil-registration-number">
       <path value="RelatedPerson.identifier" />
       <sliceName value="dk-civil-registration-number" />
-      <min value="1" />
+      <definition value="A technical identifier - identifies some entity uniquely and unambiguously" />
       <max value="1" />
       <type>
         <code value="Identifier" />
