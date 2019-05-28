@@ -42,6 +42,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `modifierRole`
 
 #### Organization (ehealth-organization)
+- Added description for `telecomCustodian`, `telecomSystem` and `telecomValue`
 - Updated introduction
 - Updated description of `relatedTo.target`
 - Changed element `type` value set binding to `http://ehealth.sundhed.dk/vs/organization-type`

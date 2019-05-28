@@ -79,6 +79,14 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="Organization.contact">
+      <path value="Organization.contact" />
+      <short value="Contact for the organization for a certain purpose." />
+    </element>
+    <element id="Organization.contact.telecom">
+      <path value="Organization.contact.telecom" />
+      <short value="Contact details (telephone, email, etc.)  for a contact." />
+    </element>
     <element id="Organization.contact.telecom.extension">
       <path value="Organization.contact.telecom.extension" />
       <slicing>
@@ -92,6 +100,8 @@
     <element id="Organization.contact.telecom.extension:custodian">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="custodian" />
+      <short value="SOR | ORG | MAN" />
+      <definition value="Custodian for ContactPoint - where is the contact maintained." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian" />
@@ -100,6 +110,8 @@
     <element id="Organization.contact.telecom.extension:system">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="system" />
+      <short value="phone | fax | email | pager | url | sms | ean | other" />
+      <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
       <min value="1" />
       <max value="1" />
       <type>
@@ -110,6 +122,8 @@
     <element id="Organization.contact.telecom.extension:value">
       <path value="Organization.contact.telecom.extension" />
       <sliceName value="value" />
+      <short value="The actual contact point details (i.e. phone number or email address)" />
+      <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." />
       <min value="1" />
       <max value="1" />
       <type>
