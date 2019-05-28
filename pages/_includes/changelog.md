@@ -20,6 +20,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Changed definition of `reference`
 
+#### CareTeam (ehealth-careteam)
+- Changed description, reflecting that current use of CareTeam is not tied to patient
+
 #### Device (ehealth-device)
 - Updated resource description
 
