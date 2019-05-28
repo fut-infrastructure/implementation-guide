@@ -35,6 +35,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### DeviceUseStatement (ehealth-deviceusestatement)
 - Added resource description
 
+#### DocumentReference (ehealth-documentreference)
+- Added resource description
+
 #### GuidanceResponse (ehealth-guidanceresponse)
 - Added introduction
 

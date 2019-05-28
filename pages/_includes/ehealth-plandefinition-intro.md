@@ -1,5 +1,12 @@
-#### Governance principles
+# Introduction
 
+This resource allows for the definition of various types of plans as a sharable, consumable, and executable artifact. The resource is general enough to support the description of a broad range of clinical artifacts such as clinical decision support rules, order sets and protocols.
+
+# Scope and Usage
+
+In scope of the eHealth infrastructure PlanDefinitions are used to defined packages for telemedicine.
+
+### Governance principles
 PlanDefinitions (subplans), Questionnaires and ActivityDefinitions can be modified independently. Often by people in different organisations. PlanDefinitions (subplans), Questionnaires and ActivityDefinitions, can all be reused in different top level PlanDefinitions.
 
 The folowing principles ensures that the owner of a resource can make controlled updates when resources maintained by other organisations are updated.
@@ -21,10 +28,12 @@ Example: A new ActivityDefinition should be added to an existing PlanDefinition.
 3. Add a reference to the new ActivityDefinition in *action.definition*
 4. Call Create with the modified plan. This will create a new version of the plan in the database with the new ActivityDefinition added.
 
-#### Update restrictions
-
+### Update restrictions
 These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires
 
 * The *owner* of the resource can always update the resource
 * The owner can add *authors* that can also update the resource. Only the owner can modify the list of authors.
 * intendedAudience is a recommendation for use. The system will not enforce any restrictions.
+
+### Referencing information material
+PlanDefinitions can reference information material. This material can be intended for patients or relatives and be in the form of e.g. videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.
