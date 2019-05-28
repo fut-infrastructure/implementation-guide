@@ -28,12 +28,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated resource description
 - Updated description of `privatelyOwned`
 - Updated description of `suppliers`
+- Changed cardinality for `patient` to 0..0
 
 #### DeviceMetric (ehealth-devicemetric)
 - Updated resource description
 
 #### DeviceUseStatement (ehealth-deviceusestatement)
 - Added resource description
+- Added extension `context` reference to CarePlan
 
 #### DocumentReference (ehealth-documentreference)
 - Added resource description
@@ -45,6 +47,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `modifierRole`
 
 #### Organization (ehealth-organization)
+- Added description of `telecomCustodian`, `telecomSystem` and `telecomValue`
 - Updated introduction
 - Updated description of `relatedTo.target`
 - Changed element `type` value set binding to `http://ehealth.sundhed.dk/vs/organization-type`

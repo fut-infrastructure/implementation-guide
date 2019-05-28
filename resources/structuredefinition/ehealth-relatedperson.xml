@@ -30,6 +30,8 @@
     <element id="RelatedPerson.extension:contactNote">
       <path value="RelatedPerson.extension" />
       <sliceName value="contactNote" />
+      <short value="Free text description of the role played by the related person towards the patient, which every day tasks he/she may be helpful in taking part of, etc." />
+      <comment value="Free text description of the role played by the related person towards the patient, which every day tasks he/she may be helpful in taking part of, etc." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -49,7 +51,7 @@
     <element id="RelatedPerson.identifier:dk-civil-registration-number">
       <path value="RelatedPerson.identifier" />
       <sliceName value="dk-civil-registration-number" />
-      <min value="1" />
+      <definition value="A technical identifier - identifies some entity uniquely and unambiguously" />
       <max value="1" />
       <type>
         <code value="Identifier" />
