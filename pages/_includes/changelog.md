@@ -59,6 +59,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Added definition of `role` 
 
+#### Provenance (ehealth-provenance)
+- Added resource description
+
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Updated descriptions of `quality.qualityType` and `quality.qualityCode`.
 
