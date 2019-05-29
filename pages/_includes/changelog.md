@@ -2,25 +2,11 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
-
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### Resource/profile changes
-
 ## 2019.5.2 (2019-05-29)
 
 ### General changes
 - Added note to General Guidance on Coding code and system must be provided despite being optional in FHIR
 
-### Custom operations
-#### System operations
-#### Instance operations
 ### Code systems
 - Added new codes `22232009`, `394761003`, `550881000005103`, `547211000005108`, `550851000005109` to `http://snomed.info/sct`
 - Updated description of values in `http://ehealth.sundhed.dk/cs/ehealth-quality-types` to define relation to valid quality codes. 
@@ -83,10 +69,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## 2019.5.1 (2019-05-15)
 
-### General changes
-### Custom operations
-#### System operations
-#### Instance operations
 ### Code systems
 - Removed `http://ehealth.sundhed.dk/cs/careplan-status`
 
@@ -108,11 +90,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 - Updated operation examples for most of the resources
 
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
 ### Resource/profile changes
 
 #### ActivityDefinition (ehealth-activitydefinition)
