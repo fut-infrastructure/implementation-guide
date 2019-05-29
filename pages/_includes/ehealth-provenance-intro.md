@@ -7,7 +7,13 @@ In scope of the eHealth Infrastructure, Provenance resources are used for a numb
 The details of different usages of Provenance resources relevant to clients are described together with the resources and operations they are supporting. In overview this is:
 
 ### Reuse of Observations and QuestionnaireResponses
-In certain circumstances data from Observations and QuestionnaireResponses can be reused. When this is requested by a client a Provenance resource will identify the source of the original data.
+When a client submits measurements in the form of Observation, QuestionnaireResponse and/or Media, the client can submit one or more of these as reused resources, provided that reuse requirements have been met. For each resource where data is reused, the client must construct a Provenance that:
+
+* identifies the resource containing reused data through the target of Provenance
+* identifies the resource from where data was reused
+* identifies a policy which states reuse
+
+Each such Provenance must be submitted along with the resources containing reused data.
 
 See [eHealth-observation](StructureDefinition-ehealth-observation.html#marking-observations-as-reused) for further details.
 
@@ -19,7 +25,7 @@ See [eHealth-observation](StructureDefinition-ehealth-observation.html#marking-r
 ### Stating legal frameworks and data privacy regulations for episodes of care
 Provenance resources are submitted by a client for creation when an eHealth-episodeofcare is created using the `create-episode-of-care`n operation.
 
-Some of these provenance resources hold information about which legal frame the the eHealth-episodeofcare is created under. This could be for instance the health law (in Danish: "Sundhedsloven") or other relevant legal frameworks. 
+Some of these provenance resources hold information about which legal frame the EpisodeOfCare is created under. This could be for instance the health law (in Danish: "Sundhedsloven") or other relevant legal frameworks. 
 
 Other of these provenance resource define which data privacy regulations are applicable to data concerning patient, practitioners, and suppliers which are sources of data under the episode of care.
 
