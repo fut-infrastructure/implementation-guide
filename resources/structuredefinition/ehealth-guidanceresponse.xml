@@ -67,14 +67,6 @@
         <aggregation value="referenced" />
       </type>
     </element>
-    <element id="GuidanceResponse.outputParameters">
-      <path value="GuidanceResponse.outputParameters" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="GuidanceResponse.result">
       <path value="GuidanceResponse.result" />
       <type>
