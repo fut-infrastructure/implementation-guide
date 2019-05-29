@@ -25,7 +25,7 @@ __Body__:
         {
           "url": "supplier",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/14252"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/37658"
           }
         },
         {
@@ -52,10 +52,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "498",
+  "id": "147",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:17:54.780+00:00",
+    "lastUpdated": "2019-05-29T09:14:13.401+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -67,7 +67,7 @@ __Response__
         {
           "url": "supplier",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/14252"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/37658"
           }
         },
         {

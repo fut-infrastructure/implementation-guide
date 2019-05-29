@@ -17,17 +17,17 @@ __Body__:
   "id": "12",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:33:50.161+00:00",
+    "lastUpdated": "2019-05-29T08:21:24.746+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "e04c546d-da68-4b44-8aef-5dd72f6b43e4"
+      "id": "7b606b5c-590c-47e6-9c7f-703514f45448"
     }
   ],
-  "name": "ef744311-88a2-48b2-aa28-9d2225cb62f5"
+  "name": "804eafd3-b3a9-48b3-acf4-e4eed6ad2781"
 }
 ```
 
@@ -38,16 +38,16 @@ __Response__
   "id": "12",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:33:50.332+00:00",
+    "lastUpdated": "2019-05-29T08:21:24.926+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "e04c546d-da68-4b44-8aef-5dd72f6b43e4"
+      "id": "7b606b5c-590c-47e6-9c7f-703514f45448"
     }
   ],
-  "name": "ef744311-88a2-48b2-aa28-9d2225cb62f5"
+  "name": "804eafd3-b3a9-48b3-acf4-e4eed6ad2781"
 }
 ```

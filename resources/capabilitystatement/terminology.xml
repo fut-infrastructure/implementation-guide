@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="terminology"/>
    <status value="active"/>
-   <date value="2019-05-16T12:01:35+00:00"/>
+   <date value="2019-05-29T10:34:18+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth Terminology Server"/>
-      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/terminology/fhir"/>
+      <url value="http://inttest.ehealth.sundhed.dk/terminology/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -20,7 +20,7 @@
       <mode value="server"/>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="45"/>
+            <valueDecimal value="46"/>
          </extension>
          <type value="CodeSystem"/>
          <profile>
@@ -650,7 +650,7 @@
       </resource>
       <resource>
          <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-            <valueDecimal value="55"/>
+            <valueDecimal value="54"/>
          </extension>
          <type value="ValueSet"/>
          <profile>

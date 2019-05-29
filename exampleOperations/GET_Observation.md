@@ -17,7 +17,7 @@ __Response__
   "id": "40",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:55:49.734+00:00",
+    "lastUpdated": "2019-05-29T08:13:35.670+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -53,7 +53,7 @@ __Response__
             "coding": [
               {
                 "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                "code": "afae5593-c1ea-4fde-bb6d-7a462834bb79"
+                "code": "15a0da94-8cc8-45a9-bf6a-a78996b01191"
               }
             ]
           }
@@ -63,7 +63,7 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/57835"
+      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/67940"
     }
   ],
   "status": "amended",
@@ -76,22 +76,22 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/23779"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/39567"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/12429"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/27417"
   },
   "effectivePeriod": {
-    "start": "2019-05-27T10:55:49+02:00",
-    "end": "2019-05-27T10:55:49+02:00"
+    "start": "2019-05-29T10:13:35+02:00",
+    "end": "2019-05-29T10:13:35+02:00"
   },
   "performer": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/44661"
+      "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/25841"
     }
   ],
   "device": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/93082"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/50276"
   }
 }
 ```

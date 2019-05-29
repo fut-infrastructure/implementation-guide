@@ -1,4 +1,4 @@
-`GET [base]/CarePlan?responsibility_summary_actor=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Forganization%2Ffhir%2FOrganization%2F91780`
+`GET [base]/CarePlan?responsibility_summary_actor=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Forganization%2Ffhir%2FOrganization%2F56374`
 
 __Header__
 ```
@@ -14,27 +14,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "54743fef-37bf-4b80-912b-0a187c323676",
+  "id": "58b9f644-e055-4633-bc42-35df202725ab",
   "meta": {
-    "lastUpdated": "2019-05-27T08:17:42.907+00:00"
+    "lastUpdated": "2019-05-29T09:14:01.795+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan?_format\u003djson\u0026_pretty\u003dtrue\u0026responsibility_summary_actor\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Forganization%2Ffhir%2FOrganization%2F91780"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan?_format\u003djson\u0026_pretty\u003dtrue\u0026responsibility_summary_actor\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Forganization%2Ffhir%2FOrganization%2F56374"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/406",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/63",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "406",
+        "id": "63",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:41.733+00:00",
+          "lastUpdated": "2019-05-29T09:14:01.626+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -56,7 +56,7 @@ __Response__
               {
                 "url": "actor",
                 "valueReference": {
-                  "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/91780"
+                  "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/56374"
                 }
               }
             ]
@@ -64,7 +64,7 @@ __Response__
         ],
         "definition": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/14944"
+            "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/52697"
           }
         ],
         "status": "completed",
@@ -79,10 +79,10 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/71645"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/12635"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/404"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/61"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -90,7 +90,7 @@ __Response__
         },
         "addresses": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/405"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/62"
           }
         ]
       },
@@ -99,13 +99,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/414",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/55",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "414",
+        "id": "55",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:42.784+00:00",
+          "lastUpdated": "2019-05-29T09:14:00.743+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -127,7 +127,7 @@ __Response__
               {
                 "url": "actor",
                 "valueReference": {
-                  "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/91780"
+                  "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/56374"
                 }
               }
             ]
@@ -135,7 +135,7 @@ __Response__
         ],
         "definition": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/19988"
+            "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/46989"
           }
         ],
         "status": "completed",
@@ -150,10 +150,10 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/62701"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/20993"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/412"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/53"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -161,7 +161,7 @@ __Response__
         },
         "addresses": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/413"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/54"
           }
         ]
       },

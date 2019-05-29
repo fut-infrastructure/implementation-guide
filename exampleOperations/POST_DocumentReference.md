@@ -13,21 +13,12 @@ __Body__:
 ```json
 {
   "resourceType": "DocumentReference",
-  "meta": {
-    "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-    ]
-  },
   "status": "current",
   "type": {
-    "coding": [
-      {
-        "system": "http://ehealth.sundhed.dk/cs/document-type",
-        "code": "TBD"
-      }
-    ]
+    "id": "d68c44b9-2c14-4485-bd1a-8732f09515fa",
+    "text": "type"
   },
-  "indexed": "2019-05-27T10:44:51.850+02:00",
+  "indexed": "2019-05-29T11:14:26.967+02:00",
   "content": [
     {
       "attachment": {
@@ -42,24 +33,17 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "49",
+  "id": "280",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:44:51.872+00:00",
-    "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-    ]
+    "lastUpdated": "2019-05-29T09:14:26.980+00:00"
   },
   "status": "current",
   "type": {
-    "coding": [
-      {
-        "system": "http://ehealth.sundhed.dk/cs/document-type",
-        "code": "TBD"
-      }
-    ]
+    "id": "d68c44b9-2c14-4485-bd1a-8732f09515fa",
+    "text": "type"
   },
-  "indexed": "2019-05-27T10:44:51.850+02:00",
+  "indexed": "2019-05-29T11:14:26.967+02:00",
   "content": [
     {
       "attachment": {

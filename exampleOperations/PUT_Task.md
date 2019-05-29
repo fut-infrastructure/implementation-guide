@@ -1,4 +1,4 @@
-`PUT [base]/Task/668`
+`PUT [base]/Task/397`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Body__:
 ```json
 {
   "resourceType": "Task",
-  "id": "668",
+  "id": "397",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:17.764+00:00",
+    "lastUpdated": "2019-05-29T09:14:43.053+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -37,7 +37,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/23369"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/67806"
       }
     }
   ],
@@ -45,7 +45,7 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/667"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/396"
   }
 }
 ```
@@ -54,10 +54,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "668",
+  "id": "397",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:18:17.915+00:00",
+    "lastUpdated": "2019-05-29T09:14:43.170+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -77,7 +77,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/23369"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/67806"
       }
     }
   ],
@@ -85,7 +85,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/667"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/396"
   }
 }
 ```

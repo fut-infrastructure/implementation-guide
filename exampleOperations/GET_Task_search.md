@@ -1,4 +1,4 @@
-`GET [base]/Task?context=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FEpisodeOfCare%2F655`
+`GET [base]/Task?context=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FEpisodeOfCare%2F384`
 
 __Header__
 ```
@@ -14,27 +14,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "bce45630-2b1d-4046-be0c-3ffe9a6e499a",
+  "id": "252afd62-b858-4c8d-9044-afe7341de416",
   "meta": {
-    "lastUpdated": "2019-05-27T08:18:17.025+00:00"
+    "lastUpdated": "2019-05-29T09:14:42.416+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task?_format\u003djson\u0026_pretty\u003dtrue\u0026context\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FEpisodeOfCare%2F655"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task?_format\u003djson\u0026_pretty\u003dtrue\u0026context\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FEpisodeOfCare%2F384"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task/662",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task/391",
       "resource": {
         "resourceType": "Task",
-        "id": "662",
+        "id": "391",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:18:16.939+00:00",
+          "lastUpdated": "2019-05-29T09:14:42.321+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -54,7 +54,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/18774"
+              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/29693"
             }
           }
         ],
@@ -62,7 +62,7 @@ __Response__
         "intent": "proposal",
         "priority": "routine",
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/655"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/384"
         }
       },
       "search": {
@@ -70,13 +70,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task/656",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Task/385",
       "resource": {
         "resourceType": "Task",
-        "id": "656",
+        "id": "385",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:18:16.455+00:00",
+          "lastUpdated": "2019-05-29T09:14:41.732+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -96,7 +96,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/61588"
+              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/72328"
             }
           }
         ],
@@ -104,7 +104,7 @@ __Response__
         "intent": "proposal",
         "priority": "routine",
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/655"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/384"
         }
       },
       "search": {

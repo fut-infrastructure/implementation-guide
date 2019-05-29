@@ -2,13 +2,10 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2019.5.2 (2019-05-29)
 
 ### General changes
 
-### Custom operations
-#### System operations
-#### Instance operations
 ### Code systems
 ### ValueSets
 ### Resource/profile changes

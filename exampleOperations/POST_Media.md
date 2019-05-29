@@ -54,7 +54,7 @@ __Body__:
                   "coding": [
                     {
                       "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                      "code": "7b916731-9a33-4164-994a-2e0bcc34694e"
+                      "code": "fa3915a5-70b1-47b1-880b-6fa959418c05"
                     }
                   ]
                 }
@@ -64,15 +64,15 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/51305"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/57684"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/41173"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/5947"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/35546"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/77247"
         },
         "content": {
           "language": "en"

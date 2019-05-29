@@ -1,4 +1,4 @@
-`GET [base]/DeviceMetric?source=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FDevice%2F588%2F_history%2F1`
+`GET [base]/DeviceMetric?source=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FDevice%2F317%2F_history%2F1`
 
 __Header__
 ```
@@ -14,27 +14,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "35c44133-1d71-4c46-945d-4507d789212a",
+  "id": "aae97f50-13b3-48f6-a0f1-2804b7426063",
   "meta": {
-    "lastUpdated": "2019-05-27T08:18:07.703+00:00"
+    "lastUpdated": "2019-05-29T09:14:33.055+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DeviceMetric?_format\u003djson\u0026_pretty\u003dtrue\u0026source\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FDevice%2F588%2F_history%2F1"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DeviceMetric?_format\u003djson\u0026_pretty\u003dtrue\u0026source\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Fhapi-fhir-server%2Ffhir%2FDevice%2F317%2F_history%2F1"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DeviceMetric/590",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DeviceMetric/319",
       "resource": {
         "resourceType": "DeviceMetric",
-        "id": "590",
+        "id": "319",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:18:07.226+00:00",
+          "lastUpdated": "2019-05-29T09:14:32.601+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -154,13 +154,13 @@ __Response__
           }
         ],
         "identifier": {
-          "value": "urn:uuid:866cb6ef-680c-405d-8e3b-c90cf85ee368"
+          "value": "urn:uuid:1111bda5-11a7-48f8-916c-6db49ead3b35"
         },
         "type": {
           "text": "device metric type"
         },
         "source": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/588"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/317"
         },
         "category": "measurement"
       },

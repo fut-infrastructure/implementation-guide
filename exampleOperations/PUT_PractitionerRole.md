@@ -1,4 +1,4 @@
-`PUT [base]/PractitionerRole/604`
+`PUT [base]/PractitionerRole/333`
 
 __Header__
 ```
@@ -14,17 +14,17 @@ __Body__:
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "604",
+  "id": "333",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:09.746+00:00",
+    "lastUpdated": "2019-05-29T09:14:35.067+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
   },
   "active": true,
   "organization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/5104"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/18772"
   }
 }
 ```
@@ -33,17 +33,17 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "604",
+  "id": "333",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:18:09.832+00:00",
+    "lastUpdated": "2019-05-29T09:14:35.165+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
   },
   "active": true,
   "organization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/5104"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/18772"
   }
 }
 ```

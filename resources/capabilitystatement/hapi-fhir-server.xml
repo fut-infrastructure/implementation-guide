@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="hapi-fhir-server"/>
    <status value="active"/>
-   <date value="2019-05-16T11:56:30+00:00"/>
+   <date value="2019-05-29T09:48:58+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth hapi-fhir-server service"/>
-      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir"/>
+      <url value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -429,8 +429,12 @@
             <code value="vread"/>
          </interaction>
          <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
             <code value="search-type"/>
          </interaction>
+         <conditionalCreate value="true"/>
          <searchParam>
             <name value="category"/>
             <type value="token"/>
@@ -793,6 +797,11 @@
             <name value="_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Search by context"/>
          </searchParam>
          <searchParam>
             <name value="device"/>
@@ -1765,105 +1774,105 @@
          </searchParam>
       </resource>
       <operation>
-         <name value="transformToAppointment"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToAPD"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToQuestionnaireResponse"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="transformToQRD"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="create-episode-of-care"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-create-episode-of-care"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToObservation"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToObservation"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToQuestionnaireResponse"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQuestionnaireResponse"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToQRD"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToQRD"/>
          </definition>
       </operation>
       <operation>
          <name value="transformToPHMR"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToPHMR"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToAppointment"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAppointment"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="transformToAPD"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/-s-transformToAPD"/>
          </definition>
       </operation>
       <operation>
          <name value="evaluate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/Library-i-evaluate"/>
          </definition>
       </operation>
       <operation>
          <name value="apply"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PlanDefinition-i-apply"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://inttest.ehealth.sundhed.dk/hapi-fhir-server/fhir/OperationDefinition/PractitionerRole--meta"/>
          </definition>
       </operation>
    </rest>

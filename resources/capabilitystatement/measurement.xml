@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="measurement"/>
    <status value="active"/>
-   <date value="2019-05-16T10:56:37+00:00"/>
+   <date value="2019-05-29T09:51:28+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth measurement service"/>
-      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir"/>
+      <url value="http://inttest.ehealth.sundhed.dk/measurement/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -242,61 +242,61 @@
       <operation>
          <name value="submit-measurement"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/-s-submit-measurement"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/-s-submit-measurement"/>
          </definition>
       </operation>
       <operation>
          <name value="search-measurements"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/-s-search-measurements"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/-s-search-measurements"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Media--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Media--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Media-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Media-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Observation--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Observation--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Observation-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Observation-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Provenance--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Provenance--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/Provenance-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/Provenance-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/measurement/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/measurement/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
          </definition>
       </operation>
    </rest>

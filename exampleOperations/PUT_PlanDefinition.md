@@ -1,4 +1,4 @@
-`PUT [base]/PlanDefinition/598`
+`PUT [base]/PlanDefinition/327`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Body__:
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "598",
+  "id": "327",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:08.576+00:00",
+    "lastUpdated": "2019-05-29T09:14:34.016+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -29,7 +29,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97544"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27119"
           }
         },
         {
@@ -46,7 +46,7 @@ __Body__:
       ]
     }
   ],
-  "version": "53fd431b-5ed8-45b3-845b-70511cf30931",
+  "version": "3b01d617-9d2d-4545-8908-2d8d7acc230f",
   "status": "active"
 }
 ```
@@ -55,10 +55,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "598",
+  "id": "327",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:18:08.815+00:00",
+    "lastUpdated": "2019-05-29T09:14:34.168+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -70,7 +70,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97544"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27119"
           }
         },
         {
@@ -87,7 +87,7 @@ __Response__
       ]
     }
   ],
-  "version": "53fd431b-5ed8-45b3-845b-70511cf30931",
+  "version": "3b01d617-9d2d-4545-8908-2d8d7acc230f",
   "status": "active"
 }
 ```

@@ -1,4 +1,4 @@
-`GET [base]/Communication/297/_history/1`
+`GET [base]/Communication/116/_history/2`
 
 __Header__
 ```
@@ -14,37 +14,37 @@ __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "297",
+  "id": "116",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2019-05-27T08:56:44.800+00:00",
+    "versionId": "2",
+    "lastUpdated": "2019-05-29T09:14:08.733+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
   },
-  "status": "completed",
+  "status": "aborted",
   "category": [
     {
       "coding": [
         {
-          "code": "notification"
+          "code": "instruction"
         }
       ]
     }
   ],
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/27236"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/22447"
   },
   "topic": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/78904"
+      "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/22447"
     }
   ],
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/47492"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/115"
   },
   "sender": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/65042"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/22447"
   }
 }
 ```

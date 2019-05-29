@@ -1,4 +1,4 @@
-`GET [base]/Task/653`
+`GET [base]/Task/382`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "653",
+  "id": "382",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:16.115+00:00",
+    "lastUpdated": "2019-05-29T09:14:41.434+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -37,7 +37,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/45441"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/26488"
       }
     }
   ],
@@ -45,7 +45,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/652"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/381"
   }
 }
 ```

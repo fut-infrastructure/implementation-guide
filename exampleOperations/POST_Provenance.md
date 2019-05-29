@@ -25,17 +25,17 @@ __Body__:
         },
         "target": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/53038"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/74561"
           }
         ],
-        "recorded": "2019-05-27T10:55:57.918+02:00",
+        "recorded": "2019-05-29T10:13:44.785+02:00",
         "policy": [
           "policy"
         ],
         "agent": [
           {
             "whoReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/79834"
+              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/14178"
             }
           }
         ]

@@ -1,4 +1,4 @@
-`GET [base]/CareTeam/45`
+`GET [base]/CareTeam/46`
 
 __Header__
 ```
@@ -14,22 +14,22 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "45",
+  "id": "46",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:33:56.407+00:00",
+    "lastUpdated": "2019-05-29T08:21:31.473+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "acc66caf-2726-476e-8321-2f762f6bd18f"
+      "id": "3b757720-9004-44f3-a5b2-b7cbf3b504c2"
     }
   ],
-  "name": "aa504879-ca18-484b-810c-9d7591abb301",
+  "name": "c2138b0d-56f5-4c6c-a648-55706d6f6dfd",
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/31874"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/58647"
   },
   "participant": [
     {
@@ -42,7 +42,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/31874"
+        "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/58647"
       }
     },
     {
@@ -55,7 +55,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/CareTeam/42"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/CareTeam/43"
       }
     },
     {
@@ -68,13 +68,13 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Practitioner/44"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Practitioner/45"
       }
     }
   ],
   "managingOrganization": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/43"
+      "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/44"
     }
   ]
 }
