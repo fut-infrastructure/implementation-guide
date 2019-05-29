@@ -27,7 +27,7 @@ Provenance resources are submitted by a client for creation when an eHealth-epis
 
 Some of these provenance resources hold information about which legal frame the EpisodeOfCare is created under. This could be for instance the health law (in Danish: "Sundhedsloven") or other relevant legal frameworks. 
 
-Other of these provenance resource define which data privacy regulations are applicable to data concerning patient, practitioners, and suppliers which are sources of data under the episode of care.
+Other of these provenance resource define which data privacy regulations are applicable to data concerning patient, practitioners, and suppliers under the episode of care.
 
 See [create-episode-of-care](OperationDefinition--s-create-episode-of-care.html) for further details.
 
