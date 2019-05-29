@@ -5,6 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Added note to General Guidance on Coding code and system must be provided despite being optional in FHIR
+
 ### Custom operations
 #### System operations
 #### Instance operations
