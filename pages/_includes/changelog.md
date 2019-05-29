@@ -59,6 +59,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Added definition of `role` 
 
+#### Provenance (ehealth-provenance)
+- Added resource description
+
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Updated descriptions of `quality.qualityType` and `quality.qualityCode`.
 
@@ -239,6 +242,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `medium` is now optional (not always relevant)
 
+#### Appointment (ehealth-appointment)
+- Location is no longer required
+- Changed description due to new cardinalities
+
+#### AppointmentResponse (ehealth-appointmentresponse)
+- References changed from general to ehealth-specific profiles
+
 #### Composition (ehealth-composition)
 - Added resource and relevant ValueSets
 
@@ -326,6 +336,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added resource definition
 - Changed element `relationship` value set should not be a ResourceReference
 - Changed (renamed) `related-person` to `relatedperson` 
+- Added description for contactNote
 
 #### Task (ehealth-task)
 - Changed referenced resources to use aggregation type "referenced"

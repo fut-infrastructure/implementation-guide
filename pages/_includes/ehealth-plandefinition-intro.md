@@ -35,8 +35,7 @@ These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Quest
 
 * The Practitioner, CareTeam or Organization referenced by `ehealth-modifier-role.reference` having `ehealth-modifier-role.role` set to `owner` can update the resource and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors. This is in contrast to the entities referenced where the `ehealth-modifier-role.role` is set to co-author, who can update the resource but not alter `ehealth-modifier-role`.
 * The *owner* of the resource can always update the resource.
-* The owner can add *authors* that can also update the resource. Only the owner can modify the list of authors.
 * intendedAudience is a recommendation for use. The system will not enforce any restrictions.
 
 ### Referencing information material
-PlanDefinitions can reference information material. This material can be intended for patients or relatives and be in the form of e.g. videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.
+PlanDefinitions can reference information material intended for [Practitioner](StructureDefinition-ehealth-practitioner.html), [Patient](StructureDefinition-ehealth-patient.html) or [RelatedPerson](StructureDefinition-ehealth-relatedperson.html). The material can be in the form of embedded material (of reasonable size) or referenced videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.

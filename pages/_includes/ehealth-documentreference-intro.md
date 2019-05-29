@@ -11,5 +11,5 @@ Typically, DocumentReference resources are used in document indexing systems, su
 # Scope and Usage
 In scope of the eHealth infrastructure the primary use of the DocumentReference resource is to contain or refer to information material used in relation to PlanDefinition and Questionnaire. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material. 
 
-See [PlanDefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
+See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
  
