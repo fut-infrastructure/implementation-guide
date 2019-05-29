@@ -14,7 +14,8 @@
   <derivation value="constraint" />
   <differential>
     <element id="AppointmentResponse">
-      <path value="AppointmentResponse"/>
+      <path value="AppointmentResponse" />
+      <definition value="A reply to an appointment request for a patient and/or practitioner(s), such as a confirmation or rejection.." />
     </element>
     <element id="AppointmentResponse.appointment">
       <path value="AppointmentResponse.appointment" />
@@ -27,15 +28,15 @@
       <path value="AppointmentResponse.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
       </type>
       <type>
         <code value="Reference" />

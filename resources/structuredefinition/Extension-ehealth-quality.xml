@@ -5,7 +5,7 @@
   <name value="quality" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="Requirements for qualities" />
+  <description value="Minimum required or actually assessed quality values. The qualityType element states the type of quality. For different values of qualityType the required or assessed quality value (qualityCode) must be from different value sets. The relation between qualityType and allowed value sets are defined in the definition of value set http://ehealth.sundhed.dk/vs/quality-types." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -36,7 +36,7 @@
     <element id="Extension.extension:qualityType">
       <path value="Extension.extension" />
       <sliceName value="qualityType" />
-      <short value="Type of quality." />
+      <short value="Type of quality. qualityCode must have value from a value set according to the value of qualityType. See value set QualityTypes for details." />
       <definition value="Type of quality. Use valueset for quality code according to type of quality:&#xD;&#xA;Situation Quality - http://ehealth.sundhed.dk/vs/situation-quality&#xD;&#xA;Device Measuring Quality - http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;Usage Quality - http://ehealth.sundhed.dk/vs/usage-quality" />
       <min value="1" />
       <max value="1" />
@@ -63,7 +63,7 @@
     <element id="Extension.extension:qualityCode">
       <path value="Extension.extension" />
       <sliceName value="qualityCode" />
-      <short value="Assessed value of quality." />
+      <short value="Assessed value of quality. Value must be from value set related to qualityType. See value set QualityTypes for details." />
       <definition value="Assessed value of quality. Depending on type of quality:&#xD;&#xA;http://ehealth.sundhed.dk/vs/usage-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/device-measuring-quality&#xD;&#xA;http://ehealth.sundhed.dk/vs/situation-quality" />
       <min value="1" />
       <max value="1" />

@@ -17,6 +17,28 @@
       <path value="DeviceUseStatement" />
       <short value="A record of a device being used by a patient." />
     </element>
+    <element id="DeviceUseStatement.extension">
+      <path value="DeviceUseStatement.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="DeviceUseStatement.extension:context">
+      <path value="DeviceUseStatement.extension" />
+      <sliceName value="context" />
+      <short value="The careplan context for the device use" />
+      <definition value="The CarePlan context for the device use. If a Device is used by the same Patient for more than one CarePlan, then more than one DeviceUseStatement will be created and have the same CarePlan as context." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context" />
+      </type>
+    </element>
     <element id="DeviceUseStatement.subject">
       <path value="DeviceUseStatement.subject" />
       <type>

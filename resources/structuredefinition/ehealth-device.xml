@@ -30,6 +30,8 @@
     <element id="Device.extension:privatelyOwned">
       <path value="Device.extension" />
       <sliceName value="privatelyOwned" />
+      <short value="True if this device is owned or provided by the patient." />
+      <definition value="True if this device is owned or provided by the patient." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -39,6 +41,8 @@
     <element id="Device.extension:suppliers">
       <path value="Device.extension" />
       <sliceName value="suppliers" />
+      <short value="Different types of suppliers for this device." />
+      <definition value="Different types of suppliers for this device. E.g. provisioners, maintainers, calibrators, decommissioners, trainers." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
@@ -58,6 +62,7 @@
     </element>
     <element id="Device.patient">
       <path value="Device.patient" />
+      <max value="0" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />

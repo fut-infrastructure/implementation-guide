@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added new codes `22232009`, `394761003`, `550881000005103`, `547211000005108`, `550851000005109` to `http://snomed.info/sct`
+- Updated description of values in `http://ehealth.sundhed.dk/cs/ehealth-quality-types` to define relation to valid quality codes. 
 
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/organization-type`
@@ -25,11 +26,18 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Device (ehealth-device)
 - Updated resource description
+- Updated description of `privatelyOwned`
+- Updated description of `suppliers`
+- Changed cardinality for `patient` to 0..0
 
 #### DeviceMetric (ehealth-devicemetric)
 - Updated resource description
 
 #### DeviceUseStatement (ehealth-deviceusestatement)
+- Added resource description
+- Added extension `context` reference to CarePlan
+
+#### DocumentReference (ehealth-documentreference)
 - Added resource description
 
 #### GuidanceResponse (ehealth-guidanceresponse)
@@ -39,6 +47,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `modifierRole`
 
 #### Organization (ehealth-organization)
+- Added description of `telecomCustodian`, `telecomSystem` and `telecomValue`
 - Updated introduction
 - Updated description of `relatedTo.target`
 - Changed element `type` value set binding to `http://ehealth.sundhed.dk/vs/organization-type`
@@ -49,6 +58,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
 - Added definition of `role` 
+
+#### QuestionnaireResponse (ehealth-questionnaireresponse)
+- Updated descriptions of `quality.qualityType` and `quality.qualityCode`.
 
 #### Task (ehealth-task)
 - Updated resource description
