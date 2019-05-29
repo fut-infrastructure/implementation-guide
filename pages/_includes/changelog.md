@@ -5,14 +5,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2019.5.2 (2019-05-29)
 
 ### General changes
-
-### Code systems
-### ValueSets
-### Resource/profile changes
-
-## 2019.5.2 (2019-05-29)
-
-### General changes
 - Added note to General Guidance on Coding code and system must be provided despite being optional in FHIR
 
 ### Code systems
