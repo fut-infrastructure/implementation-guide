@@ -1,4 +1,4 @@
-`GET [base]/QuestionnaireResponse?subject=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F80391`
+`GET [base]/QuestionnaireResponse?subject=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F638`
 
 __Header__
 ```
@@ -14,16 +14,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "6de48d81-dbe1-4a45-87e8-a6c9fc51dd53",
+  "id": "9aeabb8d-667c-4b4d-843e-fcc265f55140",
   "meta": {
-    "lastUpdated": "2019-05-27T08:56:46.079+00:00"
+    "lastUpdated": "2019-05-29T08:14:33.035+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/QuestionnaireResponse?_format\u003djson\u0026_pretty\u003dtrue\u0026subject\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F80391"
+      "url": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/QuestionnaireResponse?_format\u003djson\u0026_pretty\u003dtrue\u0026subject\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F638"
     }
   ],
   "entry": [
@@ -34,14 +34,14 @@ __Response__
         "id": "309",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:56:45.974+00:00",
+          "lastUpdated": "2019-05-29T08:14:32.915+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/67885"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/93526"
           }
         ],
         "parent": [
@@ -50,17 +50,17 @@ __Response__
           }
         ],
         "questionnaire": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/4837"
+          "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/81269"
         },
         "status": "completed",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/80391"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/638"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/18701"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/65346"
         },
         "source": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/61527"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/46556"
         }
       },
       "search": {

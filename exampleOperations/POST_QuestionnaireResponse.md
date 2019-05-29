@@ -25,21 +25,21 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/35311"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/99662"
           }
         ],
         "questionnaire": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/19612"
+          "reference": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/Questionnaire/38121"
         },
         "status": "completed",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/10268"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/92478"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/23613"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/93437"
         },
         "source": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/57885"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/95431"
         }
       }
     }

@@ -17,7 +17,7 @@ __Response__
   "id": "282",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:56:42.261+00:00",
+    "lastUpdated": "2019-05-29T08:14:29.080+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
     ]
@@ -27,14 +27,14 @@ __Response__
       "reference": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/Observation/283"
     }
   ],
-  "recorded": "2019-05-27T10:56:42.228+02:00",
+  "recorded": "2019-05-29T10:14:29.057+02:00",
   "policy": [
     "policy"
   ],
   "agent": [
     {
       "whoReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/75406"
+        "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/60668"
       }
     }
   ]

@@ -17,7 +17,7 @@ __Response__
   "id": "11",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:55:40.306+00:00",
+    "lastUpdated": "2019-05-29T08:13:26.331+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
     ]
@@ -53,7 +53,7 @@ __Response__
             "coding": [
               {
                 "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                "code": "aa0ed0ab-af08-42cf-a798-35573846d284"
+                "code": "5849fa1f-c485-473c-b8b1-9a3c8ba9f693"
               }
             ]
           }
@@ -63,15 +63,15 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/13097"
+      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/71208"
     }
   ],
   "type": "audio",
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/45585"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/33155"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/23859"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/345"
   },
   "content": {
     "language": "en"

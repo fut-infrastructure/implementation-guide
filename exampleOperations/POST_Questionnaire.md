@@ -22,7 +22,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/7895"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/23196"
       }
     },
     {
@@ -42,7 +42,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/44208"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/82258"
           }
         },
         {
@@ -59,8 +59,8 @@ __Body__:
       ]
     }
   ],
-  "version": "ccce50a2-b330-46a5-955f-9c8f59f20b88",
-  "name": "5e4190de-0b6d-40d9-bc6b-1d5824db6a2b",
+  "version": "c4064577-0704-4880-9742-d6293815e94a",
+  "name": "dbd0bd09-83d4-4cd3-8625-624b391ac413",
   "status": "active"
 }
 ```
@@ -72,7 +72,7 @@ __Response__
   "id": "77",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:45:02.675+00:00",
+    "lastUpdated": "2019-05-29T07:53:38.914+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -81,7 +81,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/7895"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/23196"
       }
     },
     {
@@ -101,7 +101,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/44208"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/82258"
           }
         },
         {
@@ -118,8 +118,8 @@ __Response__
       ]
     }
   ],
-  "version": "ccce50a2-b330-46a5-955f-9c8f59f20b88",
-  "name": "5e4190de-0b6d-40d9-bc6b-1d5824db6a2b",
+  "version": "c4064577-0704-4880-9742-d6293815e94a",
+  "name": "dbd0bd09-83d4-4cd3-8625-624b391ac413",
   "status": "active"
 }
 ```

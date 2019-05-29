@@ -1,4 +1,4 @@
-`PUT [base]/ActivityDefinition/357`
+`PUT [base]/ActivityDefinition/6`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Body__:
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "357",
+  "id": "6",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:17:32.842+00:00",
+    "lastUpdated": "2019-05-29T09:13:52.118+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -29,7 +29,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/65611"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/45841"
           }
         },
         {
@@ -46,8 +46,8 @@ __Body__:
       ]
     }
   ],
-  "version": "366ea74a-cf7d-4a74-bbb7-4fd61d7bd876",
-  "name": "33230180-206d-4035-b4d9-7121f7c65a37",
+  "version": "3020b61b-3a43-48d0-9761-cbd349fe7788",
+  "name": "6650f5f7-7d9c-4270-be9f-86eac280941f",
   "status": "active",
   "topic": [
     {
@@ -74,10 +74,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "357",
+  "id": "6",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:17:33.152+00:00",
+    "lastUpdated": "2019-05-29T09:13:52.400+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -89,7 +89,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/65611"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/45841"
           }
         },
         {
@@ -106,8 +106,8 @@ __Response__
       ]
     }
   ],
-  "version": "366ea74a-cf7d-4a74-bbb7-4fd61d7bd876",
-  "name": "33230180-206d-4035-b4d9-7121f7c65a37",
+  "version": "3020b61b-3a43-48d0-9761-cbd349fe7788",
+  "name": "6650f5f7-7d9c-4270-be9f-86eac280941f",
   "status": "active",
   "topic": [
     {

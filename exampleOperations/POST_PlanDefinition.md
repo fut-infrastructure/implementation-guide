@@ -1,4 +1,4 @@
-`POST [base]/PlanDefinition/585/$apply`
+`POST [base]/PlanDefinition/314/$apply`
 
 __Header__
 ```
@@ -17,7 +17,7 @@ __Body__:
     {
       "name": "episodeOfCare",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/587"
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/316"
       }
     }
   ]
@@ -28,17 +28,17 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "593",
+  "id": "322",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:07.226+00:00",
+    "lastUpdated": "2019-05-29T09:14:32.601+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
   },
   "definition": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/PlanDefinition/585"
+      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/PlanDefinition/314"
     }
   ],
   "status": "active",
@@ -55,28 +55,28 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/30409"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/72690"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/587"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/316"
   },
   "period": {
-    "start": "2019-05-27T08:18:07+00:00"
+    "start": "2019-05-29T09:14:32+00:00"
   },
   "addresses": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/586"
+      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/315"
     }
   ],
   "activity": [
     {
       "reference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/591"
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/320"
       }
     },
     {
       "reference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/592"
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/321"
       }
     }
   ]

@@ -28,10 +28,10 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/15841"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/16574"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/425"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/74"
   }
 }
 ```
@@ -40,10 +40,10 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "426",
+  "id": "75",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:17:44.634+00:00",
+    "lastUpdated": "2019-05-29T09:14:03.283+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -58,10 +58,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/15841"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/16574"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/425"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/74"
   }
 }
 ```

@@ -1,4 +1,4 @@
-`PUT [base]/Device/504`
+`PUT [base]/Device/153`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Body__:
 ```json
 {
   "resourceType": "Device",
-  "id": "504",
+  "id": "153",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:17:55.630+00:00",
+    "lastUpdated": "2019-05-29T09:14:14.140+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -36,10 +36,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "504",
+  "id": "153",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:17:55.750+00:00",
+    "lastUpdated": "2019-05-29T09:14:14.276+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]

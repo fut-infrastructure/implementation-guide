@@ -59,7 +59,7 @@ __Response__
       "extension": [
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-          "valueString": "21fa5ed6-db38-461a-898a-59500e9b3fb7"
+          "valueString": "0da036ca-af87-4388-8de9-f2bb58e8fff2"
         },
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -67,7 +67,7 @@ __Response__
             {
               "url": "reference",
               "valueReference": {
-                "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/94271"
+                "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/14504"
               }
             },
             {
@@ -84,8 +84,8 @@ __Response__
           ]
         }
       ],
-      "version": "3dbe90da-b818-4dbe-ad2c-6f685deddf14",
-      "name": "2fed3ba7-25a2-4c52-bf23-504c9d79b4ef",
+      "version": "b8dd0587-5dde-48ab-91f0-71b2f6f38860",
+      "name": "3ad97bf4-a14e-4c01-96bb-f5c3039ac985",
       "status": "draft",
       "type": {
         "coding": [
@@ -99,7 +99,7 @@ __Response__
           "extension": [
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterName",
-              "valueString": "b377a7d4-7987-412b-ac74-0a017f46fc09"
+              "valueString": "9b363d44-1f57-4086-a6c4-053a59d7bc6e"
             }
           ],
           "use": "in",

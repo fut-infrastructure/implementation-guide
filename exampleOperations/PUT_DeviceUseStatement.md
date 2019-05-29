@@ -1,4 +1,4 @@
-`PUT [base]/DeviceUseStatement/550`
+`PUT [base]/DeviceUseStatement/279`
 
 __Header__
 ```
@@ -14,20 +14,28 @@ __Body__:
 ```json
 {
   "resourceType": "DeviceUseStatement",
-  "id": "550",
+  "id": "279",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:00.746+00:00",
+    "lastUpdated": "2019-05-29T09:14:26.727+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
   },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
+      "valueReference": {
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/278"
+      }
+    }
+  ],
   "status": "completed",
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/95869"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/84590"
   },
   "device": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/549"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/274"
   }
 }
 ```
@@ -36,20 +44,28 @@ __Response__
 ```json
 {
   "resourceType": "DeviceUseStatement",
-  "id": "550",
+  "id": "279",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:18:00.871+00:00",
+    "lastUpdated": "2019-05-29T09:14:26.846+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
   },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
+      "valueReference": {
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/CarePlan/278"
+      }
+    }
+  ],
   "status": "completed",
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/95869"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/84590"
   },
   "device": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/549"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/274"
   }
 }
 ```

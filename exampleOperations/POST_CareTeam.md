@@ -21,17 +21,17 @@ __Body__:
         "id": "14",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:33:50.599+00:00",
+          "lastUpdated": "2019-05-29T08:21:25.289+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "3ae8f9b4-a016-4033-9bf6-8c145a422f55"
+            "id": "4e0a7db7-9812-4795-b192-392445918c95"
           }
         ],
-        "name": "e95660b8-eba4-4b4d-b1f4-7754921e1851"
+        "name": "c6a7e357-624b-4229-a7b9-349300a0f67d"
       }
     }
   ]

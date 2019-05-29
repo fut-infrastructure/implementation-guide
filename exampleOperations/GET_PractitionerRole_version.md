@@ -1,4 +1,4 @@
-`GET [base]/PractitionerRole/604/_history/2`
+`GET [base]/PractitionerRole/333/_history/2`
 
 __Header__
 ```
@@ -14,17 +14,17 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "604",
+  "id": "333",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:18:09.832+00:00",
+    "lastUpdated": "2019-05-29T09:14:35.165+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
   },
   "active": true,
   "organization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/5104"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/18772"
   }
 }
 ```

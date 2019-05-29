@@ -1,4 +1,4 @@
-`GET [base]/ClinicalImpression/444/_history/2`
+`GET [base]/ClinicalImpression/93/_history/2`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "444",
+  "id": "93",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:17:47.099+00:00",
+    "lastUpdated": "2019-05-29T09:14:05.786+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -32,10 +32,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/69926"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/1523"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/443"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/92"
   }
 }
 ```

@@ -1,4 +1,4 @@
-`GET [base]/ProcedureRequest/615`
+`GET [base]/ProcedureRequest/344`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "615",
+  "id": "344",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:11.098+00:00",
+    "lastUpdated": "2019-05-29T09:14:36.589+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -54,7 +54,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ActivityDefinition/612"
+      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ActivityDefinition/341"
     }
   ],
   "status": "completed",
@@ -68,10 +68,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/27582"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/66321"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/614"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/343"
   }
 }
 ```

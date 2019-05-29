@@ -1,4 +1,4 @@
-`GET [base]/Practitioner/41/_history/2`
+`GET [base]/Practitioner/42/_history/2`
 
 __Header__
 ```
@@ -14,17 +14,17 @@ __Response__
 ```json
 {
   "resourceType": "Practitioner",
-  "id": "41",
+  "id": "42",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:33:55.883+00:00",
+    "lastUpdated": "2019-05-29T08:21:30.904+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
     ]
   },
   "name": [
     {
-      "family": "77651078-94b2-4d89-bc0c-3cfaef03367a"
+      "family": "3877b51c-f439-4fa0-a1e8-3d0cf5424096"
     }
   ]
 }

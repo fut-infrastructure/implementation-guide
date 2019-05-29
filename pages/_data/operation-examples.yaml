@@ -92,6 +92,12 @@
 - profile: ehealth-condition
   path: GET_Condition_search.md
 
+- profile: ehealth-condition
+  path: GET_Condition_version.md
+
+- profile: ehealth-condition
+  path: POST_Condition.md
+
 # ehealth-consent
 - profile: ehealth-consent
   path: GET_Consent_search.md

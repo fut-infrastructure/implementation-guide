@@ -1,4 +1,4 @@
-`GET [base]/Consent?patient=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F24654`
+`GET [base]/Consent?patient=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F49145`
 
 __Header__
 ```
@@ -14,27 +14,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "80c8f719-e979-4089-9b3f-6aeaae26ee12",
+  "id": "19c1e9f5-48e9-46f3-b2ea-872d6b9cc306",
   "meta": {
-    "lastUpdated": "2019-05-27T08:17:53.548+00:00"
+    "lastUpdated": "2019-05-29T09:14:12.066+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent?_format\u003djson\u0026_pretty\u003dtrue\u0026patient\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F24654"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent?_format\u003djson\u0026_pretty\u003dtrue\u0026patient\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F49145"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent/484",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent/139",
       "resource": {
         "resourceType": "Consent",
-        "id": "484",
+        "id": "139",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:52.806+00:00",
+          "lastUpdated": "2019-05-29T09:14:11.879+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -50,7 +50,7 @@ __Response__
           }
         ],
         "patient": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/24654"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/49145"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -58,12 +58,12 @@ __Response__
         },
         "consentingParty": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/95538"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/12821"
           }
         ],
         "actor": [
           {
-            "id": "29b72a18-7350-4575-b293-c203e43ea69d",
+            "id": "333760d0-c0b8-4c85-9bd6-096adf7068ae",
             "role": {
               "coding": [
                 {
@@ -72,7 +72,7 @@ __Response__
               ]
             },
             "reference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/31817"
+              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/29416"
             }
           }
         ],
@@ -81,7 +81,7 @@ __Response__
           {
             "meaning": "related",
             "reference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/483"
+              "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/138"
             }
           }
         ]
@@ -91,13 +91,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent/490",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Consent/133",
       "resource": {
         "resourceType": "Consent",
-        "id": "490",
+        "id": "133",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:53.455+00:00",
+          "lastUpdated": "2019-05-29T09:14:11.222+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -113,7 +113,7 @@ __Response__
           }
         ],
         "patient": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/24654"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/49145"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -121,12 +121,12 @@ __Response__
         },
         "consentingParty": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/22275"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/80988"
           }
         ],
         "actor": [
           {
-            "id": "1d7018e3-b347-4538-aed9-32ce6b624df7",
+            "id": "854f937c-0a35-4d90-a866-39cf855b11e1",
             "role": {
               "coding": [
                 {
@@ -135,7 +135,7 @@ __Response__
               ]
             },
             "reference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/99873"
+              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/84728"
             }
           }
         ],
@@ -144,7 +144,7 @@ __Response__
           {
             "meaning": "related",
             "reference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/489"
+              "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/132"
             }
           }
         ]

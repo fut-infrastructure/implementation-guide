@@ -19,7 +19,7 @@ __Body__:
     ]
   },
   "organization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/22412"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/95085"
   }
 }
 ```
@@ -28,16 +28,16 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "599",
+  "id": "328",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:08.974+00:00",
+    "lastUpdated": "2019-05-29T09:14:34.401+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
   },
   "organization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/22412"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/95085"
   }
 }
 ```

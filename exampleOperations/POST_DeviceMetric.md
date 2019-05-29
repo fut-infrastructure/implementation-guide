@@ -148,7 +148,7 @@ __Body__:
     "text": "code"
   },
   "source": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/506"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/155"
   },
   "category": "calculation"
 }
@@ -158,10 +158,10 @@ __Response__
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "507",
+  "id": "156",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:17:56.054+00:00",
+    "lastUpdated": "2019-05-29T09:14:14.771+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -296,7 +296,7 @@ __Response__
     "text": "code"
   },
   "source": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/506"
+    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/155"
   },
   "category": "calculation"
 }

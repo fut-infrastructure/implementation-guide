@@ -38,7 +38,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/81548"
+            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/76465"
           }
         ],
         "status": "amended",
@@ -51,22 +51,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/20990"
+          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/75057"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/76520"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/17292"
         },
         "effectivePeriod": {
-          "start": "2019-05-27T10:55:56+02:00",
-          "end": "2019-05-27T10:55:56+02:00"
+          "start": "2019-05-29T10:13:43+02:00",
+          "end": "2019-05-29T10:13:43+02:00"
         },
         "performer": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/86063"
+            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/56039"
           }
         ],
         "device": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/20624"
+          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/28279"
         }
       }
     }

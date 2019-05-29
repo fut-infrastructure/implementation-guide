@@ -1,4 +1,4 @@
-`GET [base]/Device?manufacturer%3Aexact=ae4deee0-1fdf-47cf-91dd-6f1c8113da7f`
+`GET [base]/Device?manufacturer%3Aexact=85fad19c-23cf-480c-b43d-e002bd8ffaf9`
 
 __Header__
 ```
@@ -14,27 +14,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "70a1849e-1d84-4d6b-9f24-4cec248df319",
+  "id": "a69f5916-1e04-47b5-bb4b-1ce2abee6f7a",
   "meta": {
-    "lastUpdated": "2019-05-27T08:17:55.462+00:00"
+    "lastUpdated": "2019-05-29T09:14:13.921+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device?_format\u003djson\u0026_pretty\u003dtrue\u0026manufacturer%3Aexact\u003dae4deee0-1fdf-47cf-91dd-6f1c8113da7f"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device?_format\u003djson\u0026_pretty\u003dtrue\u0026manufacturer%3Aexact\u003d85fad19c-23cf-480c-b43d-e002bd8ffaf9"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/500",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/151",
       "resource": {
         "resourceType": "Device",
-        "id": "500",
+        "id": "151",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:55.019+00:00",
+          "lastUpdated": "2019-05-29T09:14:13.825+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -45,20 +45,20 @@ __Response__
             "valueBoolean": true
           }
         ],
-        "manufacturer": "ae4deee0-1fdf-47cf-91dd-6f1c8113da7f"
+        "manufacturer": "85fad19c-23cf-480c-b43d-e002bd8ffaf9"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/502",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/149",
       "resource": {
         "resourceType": "Device",
-        "id": "502",
+        "id": "149",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:17:55.320+00:00",
+          "lastUpdated": "2019-05-29T09:14:13.605+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -69,7 +69,7 @@ __Response__
             "valueBoolean": true
           }
         ],
-        "manufacturer": "ae4deee0-1fdf-47cf-91dd-6f1c8113da7f"
+        "manufacturer": "85fad19c-23cf-480c-b43d-e002bd8ffaf9"
       },
       "search": {
         "mode": "match"

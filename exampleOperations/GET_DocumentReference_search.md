@@ -1,4 +1,4 @@
-`GET [base]/DocumentReference?indexed=1995-06-11T19%3A48%3A34%2B02%3A00`
+`GET [base]/DocumentReference?description=d81e69f1-a89a-4ccd-9b20-0d703815379d`
 
 __Header__
 ```
@@ -14,41 +14,35 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "5f6337b3-5da7-4628-94ab-73db17f4c29f",
+  "id": "5f91e5c6-c9cb-49b3-a98b-eabfacdadc0d",
   "meta": {
-    "lastUpdated": "2019-05-27T08:44:52.838+00:00"
+    "lastUpdated": "2019-05-29T09:14:27.646+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference?_format\u003djson\u0026_pretty\u003dtrue\u0026indexed\u003d1995-06-11T19%3A48%3A34%2B02%3A00"
+      "url": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DocumentReference?_format\u003djson\u0026_pretty\u003dtrue\u0026description\u003dd81e69f1-a89a-4ccd-9b20-0d703815379d"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference/52",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DocumentReference/284",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "52",
+        "id": "284",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:44:52.389+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-          ]
+          "lastUpdated": "2019-05-29T09:14:27.563+00:00"
         },
         "status": "current",
         "type": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
-            }
-          ]
+          "id": "8a886476-aa61-4f62-a160-aab612e2aad2",
+          "text": "type"
         },
-        "indexed": "1995-06-11T19:48:34.279+02:00",
+        "indexed": "2019-05-29T11:14:27.556+02:00",
+        "description": "d81e69f1-a89a-4ccd-9b20-0d703815379d",
         "content": [
           {
             "attachment": {
@@ -62,27 +56,21 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/questionnaire/fhir/DocumentReference/53",
+      "fullUrl": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/DocumentReference/282",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "53",
+        "id": "282",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-27T08:44:52.488+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-          ]
+          "lastUpdated": "2019-05-29T09:14:27.331+00:00"
         },
         "status": "current",
         "type": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
-            }
-          ]
+          "id": "c0267b44-3fe4-4a51-905c-378b70d5d753",
+          "text": "type"
         },
-        "indexed": "1995-06-11T19:48:34.279+02:00",
+        "indexed": "2019-05-29T11:14:27.320+02:00",
+        "description": "d81e69f1-a89a-4ccd-9b20-0d703815379d",
         "content": [
           {
             "attachment": {

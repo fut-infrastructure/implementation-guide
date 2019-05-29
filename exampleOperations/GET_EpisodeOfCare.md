@@ -1,4 +1,4 @@
-`GET [base]/EpisodeOfCare/562`
+`GET [base]/EpisodeOfCare/291`
 
 __Header__
 ```
@@ -14,10 +14,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "562",
+  "id": "291",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:18:02.850+00:00",
+    "lastUpdated": "2019-05-29T09:14:28.523+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -26,7 +26,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Practitioner/78073"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Practitioner/20668"
       }
     }
   ],
@@ -34,15 +34,15 @@ __Response__
   "diagnosis": [
     {
       "condition": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/561"
+        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/290"
       }
     }
   ],
   "patient": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/15448"
+    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/35931"
   },
   "managingOrganization": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/33386"
+    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/53144"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",

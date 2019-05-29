@@ -22,7 +22,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition-authorOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/78346"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/39383"
       }
     }
   ],
@@ -41,7 +41,7 @@ __Body__:
       "value": "1234"
     }
   },
-  "date": "2019-05-27T10:44:49+02:00",
+  "date": "2019-05-29T09:53:26+02:00",
   "author": [
     {
       "identifier": {
@@ -50,7 +50,7 @@ __Body__:
       }
     }
   ],
-  "title": "c2111c1c-a709-4abf-8660-6367b1856981"
+  "title": "9329fc7b-28ed-4134-8ff5-d41cada7cbc6"
 }
 ```
 
@@ -61,7 +61,7 @@ __Response__
   "id": "41",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:44:49.703+00:00",
+    "lastUpdated": "2019-05-29T07:53:26.204+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
     ]
@@ -70,7 +70,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition-authorOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/78346"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/39383"
       }
     }
   ],
@@ -89,7 +89,7 @@ __Response__
       "value": "1234"
     }
   },
-  "date": "2019-05-27T10:44:49+02:00",
+  "date": "2019-05-29T09:53:26+02:00",
   "author": [
     {
       "identifier": {
@@ -98,6 +98,6 @@ __Response__
       }
     }
   ],
-  "title": "c2111c1c-a709-4abf-8660-6367b1856981"
+  "title": "9329fc7b-28ed-4134-8ff5-d41cada7cbc6"
 }
 ```

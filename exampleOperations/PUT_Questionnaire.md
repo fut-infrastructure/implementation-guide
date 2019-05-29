@@ -17,7 +17,7 @@ __Body__:
   "id": "78",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-27T08:45:02.964+00:00",
+    "lastUpdated": "2019-05-29T07:53:39.138+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -26,7 +26,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/66167"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97039"
       }
     },
     {
@@ -46,7 +46,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/60096"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27611"
           }
         },
         {
@@ -63,8 +63,8 @@ __Body__:
       ]
     }
   ],
-  "version": "473b4602-57bf-48e7-a248-747d9824681f",
-  "name": "4c99f034-173c-4bf8-b958-45e9966eaedd",
+  "version": "1b6b5f6e-0a29-43b6-bbc9-acd4bc490b33",
+  "name": "9feac22f-c70a-4e4d-8bcd-0d2a7a9b6909",
   "status": "retired"
 }
 ```
@@ -76,7 +76,7 @@ __Response__
   "id": "78",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-27T08:45:03.145+00:00",
+    "lastUpdated": "2019-05-29T07:53:39.395+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -85,7 +85,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/66167"
+        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97039"
       }
     },
     {
@@ -105,7 +105,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/60096"
+            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27611"
           }
         },
         {
@@ -122,8 +122,8 @@ __Response__
       ]
     }
   ],
-  "version": "473b4602-57bf-48e7-a248-747d9824681f",
-  "name": "4c99f034-173c-4bf8-b958-45e9966eaedd",
+  "version": "1b6b5f6e-0a29-43b6-bbc9-acd4bc490b33",
+  "name": "9feac22f-c70a-4e4d-8bcd-0d2a7a9b6909",
   "status": "retired"
 }
 ```
