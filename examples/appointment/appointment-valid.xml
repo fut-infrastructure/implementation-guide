@@ -5,11 +5,16 @@
     </meta>
     <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible">
         <extension url="type">
-            <valueCode value="TBD"/>
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://ehealth.sundhed.dk/cs/responsibility-type"/>
+                    <code value="TBD"/>
+                </coding>
+            </valueCodeableConcept>
         </extension>
         <extension url="actor">
             <valueReference>
-                <reference value="http://example.com/CareTeam/42"/>
+                <reference value="http://inttest.ehealth.sundhed.dk/CareTeam/42"/>
                 <display value="CareTeam Aarhus"/>
             </valueReference>
         </extension>
@@ -25,21 +30,20 @@
     <reason>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="413095006"/>
+            <code value="109006"/>
         </coding>
-        <text value="Clinical Review"/>
+        <text value="Anxiety disorder of childhood OR adolescence"/>
     </reason>
     <participant>
         <actor>
-            <reference value="http://example.com/Patient/136"/>
-            <display value="Jens Hansen"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/42"/>
+            <display value="Tove Jensen"/>
         </actor>
         <status value="needs-action"/>
     </participant>
     <participant>
         <actor>
-            <reference value="http://example.com/Practitioner/145"/>
-            <display value="Tove Jensen"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/123"/>
         </actor>
         <status value="needs-action"/>
     </participant>
