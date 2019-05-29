@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="organization"/>
    <status value="active"/>
-   <date value="2019-05-16T10:56:35+00:00"/>
+   <date value="2019-05-29T09:51:29+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth organization service"/>
-      <url value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir"/>
+      <url value="http://inttest.ehealth.sundhed.dk/organization/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -528,49 +528,49 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--validate"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--expunge"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam--expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-expunge"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam--meta"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta-add"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://a6fc5f4ba703b11e997b80a68cc1fe5a-2049526591.eu-west-1.elb.amazonaws.com/organization/fhir/OperationDefinition/CareTeam-i-meta-delete"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/OperationDefinition/CareTeam-i-meta-delete"/>
          </definition>
       </operation>
    </rest>
