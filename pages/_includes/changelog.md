@@ -30,15 +30,36 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `minimumQuality` 
 - Added definition of `modifierRole` 
 - Changed definition of `reference`
+- Changed referenced resources to use aggregation type "referenced"
+
+#### Appointment (ehealth-appointment)
+- Changed referenced resources to use aggregation type "referenced"
+
+#### AppointmentResponse (ehealth-appointmentresponse)
+- Changed referenced resources to use aggregation type "referenced"
+
+#### CarePlan (ehealth-careplan)
+- Changed referenced resources to use aggregation type "referenced"
 
 #### CareTeam (ehealth-careteam)
 - Changed description, reflecting that current use of CareTeam is not tied to patient
+- Changed referenced resources to use aggregation type "referenced"
+
+#### Communication (ehealth-communication)
+- Changed referenced resources to use aggregation type "referenced"
+
+#### Composition (ehealth-composition)
+- Changed referenced resources to use aggregation type "referenced"
+
+#### Provenance (ehealth-detached-provenance)
+- Changed referenced resources to use aggregation type "referenced"
 
 #### Device (ehealth-device)
 - Updated resource description
 - Updated description of `privatelyOwned`
 - Updated description of `suppliers`
 - Changed cardinality for `patient` to 0..0
+- Changed referenced resources to use aggregation type "referenced"
 
 #### DeviceMetric (ehealth-devicemetric)
 - Updated resource description
@@ -49,9 +70,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### DocumentReference (ehealth-documentreference)
 - Added resource description
+- Changed referenced resources to use aggregation type "referenced"
 
 #### GuidanceResponse (ehealth-guidanceresponse)
 - Added introduction
+- Changed referenced resources to use aggregation type "referenced"
+- Changed element `module` to use aggregation types "referenced" and "contained"
 
 #### Library (ehealth-library)
 - Added extension `modifierRole`
@@ -65,15 +89,27 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Media (ehealth-media)
 - Added Encounter as possible reference type for `context`
 
+#### Patient (ehealth-patient) 
+- Changed referenced resources to use aggregation type "referenced"
+
+#### RelatedPerson (ehealth-patient-relatedPerson)
+- Changed referenced resources to use aggregation type "referenced"
+
 #### PlanDefinition (ehealth-plandefinition)
 - Added definition of `modifierRole` 
 - Added definition of `role` 
+- Changed referenced resources to use aggregation type "referenced"
 
 #### Provenance (ehealth-provenance)
 - Added resource description
+- Changed referenced resources to use aggregation type "referenced"
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Updated descriptions of `quality.qualityType` and `quality.qualityCode`.
+- Changed referenced resources to use aggregation type "referenced"
+
+#### RelatedPerson (ehealth-relatedperson)
+- Changed referenced resources to use aggregation type "referenced"
 
 #### Task (ehealth-task)
 - Updated resource description
