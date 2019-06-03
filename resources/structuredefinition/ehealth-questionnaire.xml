@@ -30,7 +30,8 @@
     <element id="Questionnaire.extension:recommendation">
       <path value="Questionnaire.extension" />
       <sliceName value="recommendation" />
-      <short value="Recommendation" />
+      <short value="Degree to which this questionnaire is recommended for use." />
+      <definition value="Degree to which this questionnaire is recommended for use." />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -40,6 +41,8 @@
     <element id="Questionnaire.extension:intendedOrganization">
       <path value="Questionnaire.extension" />
       <sliceName value="intendedOrganization" />
+      <short value="The organization intended to use this questionnaire." />
+      <definition value="The organization intended to use this questionnaire." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization" />
@@ -48,6 +51,8 @@
     <element id="Questionnaire.extension:reuse">
       <path value="Questionnaire.extension" />
       <sliceName value="reuse" />
+      <short value="Criteria to be met for reuse of responses to be allowed." />
+      <definition value="Criteria to be met for reuse of responses to be allowed." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
@@ -56,6 +61,8 @@
     <element id="Questionnaire.extension:revision">
       <path value="Questionnaire.extension" />
       <sliceName value="revision" />
+      <short value="Business revision of the questionnaire." />
+      <definition value="Business revision of the questionnaire." />
       <max value="1" />
       <type>
         <code value="Extension" />
