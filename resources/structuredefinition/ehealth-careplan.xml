@@ -30,6 +30,7 @@
     <element id="CarePlan.extension:statusHistory">
       <path value="CarePlan.extension" />
       <sliceName value="statusHistory" />
+      <short value="Historical statuses of this careplan." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-statusHistory" />
@@ -38,6 +39,7 @@
     <element id="CarePlan.extension:responsible">
       <path value="CarePlan.extension" />
       <sliceName value="responsible" />
+      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
@@ -46,6 +48,7 @@
     <element id="CarePlan.extension:responsibleHistory">
       <path value="CarePlan.extension" />
       <sliceName value="responsibleHistory" />
+      <short value="Individuals, careteam and/or organization historically responsible for monitoring this plan." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
@@ -54,6 +57,7 @@
     <element id="CarePlan.extension:responsibilitySummary">
       <path value="CarePlan.extension" />
       <sliceName value="responsibilitySummary" />
+      <short value="High level summary of responsibilities presented to patient." />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-responsibilitySummary" />

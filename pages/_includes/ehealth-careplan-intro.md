@@ -11,3 +11,8 @@ Subplans can be attached by making them *partOf* the parent plan.
 
 ### Restrictions on deletion
 In order to preserve the context and history, it is not allowed to delete subplans or procedureRequests. The *status* attribute can be used to either *cancel* or *complete* a plan or procedureRequest, if it is no longer relevant for the patient.
+
+### Responsible and responsibleHistory
+A careplan can have a number of responsible CareTeams, Practitioners or Organizations with different roles who are responsible for monitoring different aspects of the CarePlan. For instance a Practitioner could have the role of "monitoringResponsible". All responsibles referenced from element `responsible` currently hold the responsibility defined by their role.
+
+Historically responsible CareTeams, Practitioners or Organizations are referenced from element `responsibleHistory`. This structure is identical to values of the `responsible` element except that entries in `responsibleHistory` also carry a "period" which states the period during which the referenced party was responsible for the CarePlan.
