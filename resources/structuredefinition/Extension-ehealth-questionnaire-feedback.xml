@@ -48,6 +48,7 @@
     <element id="Extension.extension:min">
       <path value="Extension.extension" />
       <sliceName value="min" />
+      <short value="Minimum value of response for feedback to be shown."/>
       <min value="1" />
       <max value="1" />
     </element>
@@ -66,6 +67,7 @@
     <element id="Extension.extension:max">
       <path value="Extension.extension" />
       <sliceName value="max" />
+      <short value="Maximum value of response for feedback to be shown."/>
       <min value="1" />
       <max value="1" />
     </element>
