@@ -11,7 +11,7 @@ Media are immutable. Once they are created as a FHIR resource they cannot be upd
 It is possible to search for Media based on:
 * context 
 * subject
-* codec
+* code
 * period
 * deviceMeasuringQuality
 * situationQuality
