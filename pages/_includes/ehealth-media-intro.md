@@ -1,5 +1,5 @@
 # Introduction
-The Media resource contains photos, videos, and audio recordings. It is used with media acquired or used as part of the healthcare process.
+A photo, video, or audio recording acquired or used in healthcare. The actual content may be inline or provided by direct reference.
 
 # Scope and Usage
 In scope of the eHealth infrastructure Media resources are used with measurements, so that submitted measurement bundles can consist of e.g. Observations, QuestionnaireResponses, and Media. The actual media data can be contained as a payload of the Media resource (using the `content.data` element) or be referenced from the Media resource (using the `content.url` element). 
