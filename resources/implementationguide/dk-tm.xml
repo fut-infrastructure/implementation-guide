@@ -434,6 +434,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-deviceusestatement-context"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagerhistory"/>
       </sourceReference>
     </resource>
