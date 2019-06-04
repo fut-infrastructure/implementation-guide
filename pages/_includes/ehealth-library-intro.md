@@ -1,16 +1,16 @@
+# Introduction
 The Library resource is a general-purpose container for knowledge asset definitions.
 It can be used to describe and expose existing knowledge assets such as logic libraries
 and information model descriptions, as well as to describe a collection of knowledge assets.
 
-#### Scope and Usage
-
+# Scope and Usage
 In scope of the eHealth Infrastructure, the Library resource is used for:
 
 * identifying clinical decision rules
 * specifying input and output parameters for clinical decision rules 
 * specifying bindings for these input parameters
 
-##### Use of Library for defining decision support rules
+### Use of Library for defining decision support rules
 
 A Library resource defining a decision support rule is really capturing metadata about
 the rule rather than the rule logic itself. The rule is identified by `identifier`, `version`,
@@ -21,7 +21,7 @@ the element `intendedAudience` has been added.
 
 This kind of Library has `type` set to logic-library (Coding system omitted).
 
-##### Use of Library for binding value sources to decision support rules parameters
+### Use of Library for binding value sources to decision support rules parameters
 
 A separate Library is used for defining what values to pass in as input parameters when
 invoking a decision support rule (as defined by another Library resource).
@@ -40,7 +40,7 @@ question to use as binding for a decision support rule parameter is specified in
 
 This kind of Library has `type` set to module-definition (Coding system omitted).
 
-##### Use of Library resources at time of decision support rules invocation
+### Use of Library resources at time of decision support rules invocation
 
 The binding and decision support rule Library resources can be associated with a CarePlan /
 ProcedureRequest through their references to PlanDefinition / ActivityDefinition resources.

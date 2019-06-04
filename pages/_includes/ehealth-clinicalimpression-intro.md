@@ -1,3 +1,4 @@
+# Introduction
 A record of a clinical assessment performed to determine what problem(s) may affect
 the patient and before planning the treatments or management strategies that are best
 to manage a patient's condition. Assessments are often 1:1 with a clinical consultation / encounter,
@@ -5,8 +6,7 @@ but this varies greatly depending on the clinical workflow. This resource is cal
 "ClinicalImpression" rather than "ClinicalAssessment" to avoid confusion with the recording
 of assessment tools such as Apgar score.
 
-#### Scope and Usage
-
+# Scope and Usage
 In scope of the eHealth Infrastructure, the ClinicalImpression resource is used for:
 
 * representing the result of automated processing such as triaging and decision support performed on submitted measurement(s)
@@ -20,7 +20,7 @@ refer to the Observation, QuestionnaireResponse, and Media instances submitted a
 
 The element code specifies what kind of the above uses is the case.
 
-##### Use for Decision Support Result / Triaging Result
+### Use for Decision Support Result / Triaging Result
 
 With the extension investigation.decisionRule, the ClinicalImpression is able to capture
 decision support invocations such as the automated triaging. This entails:
@@ -31,7 +31,7 @@ decision support invocations such as the automated triaging. This entails:
 * actual output parameter values resulting from the decision rule execution
 * possible errors in executing a decision rule are captured in one or more OperationOutcome.
 
-##### Use for Practitioner's Assessment
+### Use for Practitioner's Assessment
 
 The ClinicalImpression instance for the Practitioner assessment refers to 
 a ClinicalImpression instance of the other types. The reference is made with the element previous.

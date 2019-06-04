@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Titles and headlines made more homogeneous
 
 ### Custom operations
 #### System operations
@@ -13,8 +14,26 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### Resource/profile changes
 
+#### ActivityDefinition (ehealth-activitydefinition)
+- Added general resource description
+
+#### Condition (ehealth-condition)
+- Added general resource description
+
 #### Media (ehealth-media)
 - Enhanced resource description
+
+#### Patient (ehealth-patient)
+- Added general resource description
+
+#### Practitioner (ehealth-practitioner)
+- Added general resource description
+
+#### ProcedureRequest (ehealth-procedurerequest)
+- Added general resource description
+
+#### RelatedPerson (ehealth-relatedperson)
+- Added general resource description
 
 ## 2019.5.2 (2019-05-29)
 

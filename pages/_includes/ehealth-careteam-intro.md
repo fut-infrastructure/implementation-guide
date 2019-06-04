@@ -44,7 +44,7 @@ The intended usage is depicted here:
 +----------+       +--------------+       +--------------+   
 ```
 
-#### Composition of CareTeams
+### Composition of CareTeams
 Each CareTeam can comprise a number of other CareTeam, Practitioner, and Organization. The ability for a CareTeam to
 be comprised of a number of Patient and RelatedPerson as well is not currently used in the eHealth Infrastructure, but
 has been retained for possible future use. 
