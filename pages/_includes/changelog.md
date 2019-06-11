@@ -5,6 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Added list of error messages
+
 ### Custom operations
 #### System operations
 #### Instance operations
