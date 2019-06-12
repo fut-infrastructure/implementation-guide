@@ -53,6 +53,14 @@
           <value value="Coherent submitted measurement"/>
         </designation>
       </concept>
+        <concept>
+            <code value="http://ehealth.sundhed.dk/policy/ehealth/organization-administration"/>
+            <display value="Organization administration"/>
+            <designation>
+                <language value="en-US"/>
+                <value value="Organization administration"/>
+            </designation>
+        </concept>
 
     </include>
   </compose>

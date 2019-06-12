@@ -37,6 +37,43 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-relatedTo" />
       </type>
     </element>
+    <element id="Organization.extension:cvrNumber">
+      <path value="Organization.extension" />
+      <sliceName value="cvrNumber" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-cvrNumber" />
+      </type>
+    </element>
+    <element id="Organization.extension:regionCode">
+      <path value="Organization.extension" />
+      <sliceName value="regionCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-regionCode" />
+      </type>
+    </element>
+    <element id="Organization.extension:municipalityCode">
+      <path value="Organization.extension" />
+      <sliceName value="municipalityCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-municipalityCode" />
+      </type>
+    </element>
+    <element id="Organization.extension:source">
+      <path value="Organization.extension" />
+      <sliceName value="source" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source" />
+      </type>
+    </element>
     <element id="Organization.type">
       <path value="Organization.type" />
       <binding>

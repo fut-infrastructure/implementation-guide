@@ -53,9 +53,29 @@
         <definition value="Municipality"/>
     </concept>
     <concept>
+        <code value="550891000005100"/>
+        <display value="Private"/>
+        <definition value="Private"/>
+    </concept>
+    <concept>
         <code value="550881000005103"/>
         <display value="Region"/>
         <definition value="Region"/>
+    </concept>
+    <concept>
+        <code value="398070004"/>
+        <display value="State"/>
+        <definition value="State"/>
+    </concept>
+    <concept>
+        <code value="550811000005108"/>
+        <display value="Administrative unit"/>
+        <definition value="Administrative unit"/>
+    </concept>
+    <concept>
+        <code value="557511000005107"/>
+        <display value="Acupuncture clinic"/>
+        <definition value="Acupuncture clinic"/>
     </concept>
     <concept>
         <code value="394761003"/>
@@ -63,13 +83,308 @@
         <definition value="General practitioner practice site"/>
     </concept>
     <concept>
+        <code value="550411000005105"/>
+        <display value="Other health institution"/>
+        <definition value="Other health institution"/>
+    </concept>
+    <concept>
+        <code value="264372000"/>
+        <display value="Pharmacy"/>
+        <definition value="Pharmacy"/>
+    </concept>
+    <concept>
+        <code value="557501000005109"/>
+        <display value="Pharmacy branch"/>
+        <definition value="Pharmacy branch"/>
+    </concept>
+    <concept>
+        <code value="554851000005102"/>
+        <display value="Asylum centre"/>
+        <definition value="Asylum centre"/>
+    </concept>
+    <concept>
+        <code value="557531000005103"/>
+        <display value="Prosthetist clinic"/>
+        <definition value="Prosthetist clinic"/>
+    </concept>
+    <concept>
+        <code value="20078004"/>
+        <display value="Substance abuse treatment center"/>
+        <definition value="Substance abuse treatment center"/>
+    </concept>
+    <concept>
+        <code value="722173008"/>
+        <display value="Prison based care site"/>
+        <definition value="Prison based care site"/>
+    </concept>
+    <concept>
+        <code value="554221000005108"/>
+        <display value="Dwilling place"/>
+        <definition value="Dwilling place"/>
+    </concept>
+    <concept>
+        <code value="554031000005103"/>
+        <display value="Dietician clinic"/>
+        <definition value="Dietician clinic"/>
+    </concept>
+    <concept>
+        <code value="546821000005103"/>
+        <display value="Occupational therapy clinic"/>
+        <definition value="Occupational therapy clinic"/>
+    </concept>
+    <concept>
+        <code value="702871004"/>
+        <display value="Infertility clinic"/>
+        <definition value="Infertility clinic"/>
+    </concept>
+    <concept>
+        <code value="554061000005105"/>
+        <display value="Chiropodist clinic"/>
+        <definition value="Chiropodist clinic"/>
+    </concept>
+    <concept>
+        <code value="276037005"/>
+        <display value="Volunteer helper"/>
+        <definition value="Volunteer helper"/>
+    </concept>
+    <concept>
+        <code value="550861000005106"/>
+        <display value="Physiotherapy and occupational clinic"/>
+        <definition value="Physiotherapy and occupational clinic"/>
+    </concept>
+    <concept>
+        <code value="547011000005103"/>
+        <display value="Physiotherapy clinic"/>
+        <definition value="Physiotherapy clinic"/>
+    </concept>
+    <concept>
+        <code value="546811000005109"/>
+        <display value="Rehabilitation center"/>
+        <definition value="Rehabilitation center"/>
+    </concept>
+    <concept>
+        <code value="554881000005108"/>
+        <display value="Handicap and psychiatry"/>
+        <definition value="Handicap and psychiatry"/>
+    </concept>
+    <concept>
+        <code value="554861000005100"/>
+        <display value="Handicap"/>
+        <definition value="Handicap"/>
+    </concept>
+    <concept>
+        <code value="554821000005109"/>
+        <display value="Home care"/>
+        <definition value="Home care"/>
+    </concept>
+    <concept>
+        <code value="550621000005101"/>
+        <display value="District nursing"/>
+        <definition value="District nursing"/>
+    </concept>
+    <concept>
         <code value="22232009"/>
         <display value="Hospital"/>
         <definition value="Hospital"/>
     </concept>
     <concept>
+        <code value="702824005"/>
+        <display value="Audiology clinic"/>
+        <definition value="Audiology clinic"/>
+    </concept>
+    <concept>
+        <code value="557591000005104"/>
+        <display value="Web-based care"/>
+        <definition value="Web-based care"/>
+    </concept>
+    <concept>
+        <code value="554411000005101"/>
+        <display value="Employment agency"/>
+        <definition value="Employment agency"/>
+    </concept>
+    <concept>
+        <code value="550631000005103"/>
+        <display value="Midwife clinic"/>
+        <definition value="Midwife clinic"/>
+    </concept>
+    <concept>
+        <code value="550641000005106"/>
+        <display value="Chiropractic clinic"/>
+        <definition value="Chiropractic clinic"/>
+    </concept>
+    <concept>
+        <code value="557521000005101"/>
+        <display value="Alternative treatment clinic"/>
+        <definition value="Alternative treatment clinic"/>
+    </concept>
+    <concept>
+        <code value="557561000005105"/>
+        <display value="Consulting firm"/>
+        <definition value="Consulting firm"/>
+    </concept>
+    <concept>
+        <code value="557541000005106"/>
+        <display value="Cosmetic treatment clinic"/>
+        <definition value="Cosmetic treatment clinic"/>
+    </concept>
+    <concept>
+        <code value="550651000005108"/>
+        <display value="Medical laboratory"/>
+        <definition value="Medical laboratory"/>
+    </concept>
+    <concept>
+        <code value="550661000005105"/>
+        <display value="Emergency medical service"/>
+        <definition value="Emergency medical service"/>
+    </concept>
+    <concept>
+        <code value="557581000005102"/>
+        <display value="Optometrist or optician clinic"/>
+        <definition value="Optometrist or optician clinic"/>
+    </concept>
+    <concept>
+        <code value="557671000005101"/>
+        <display value="Osteopathy clinic"/>
+        <definition value="Osteopathy clinic"/>
+    </concept>
+    <concept>
+        <code value="42665001"/>
+        <display value="Nursing home"/>
+        <definition value="Nursing home"/>
+    </concept>
+    <concept>
+        <code value="554211000005102"/>
+        <display value="Prehospital unit"/>
+        <definition value="Prehospital unit"/>
+    </concept>
+    <concept>
+        <code value="554871000005105"/>
+        <display value="Psychiatry"/>
+        <definition value="Psychiatry"/>
+    </concept>
+    <concept>
+        <code value="550711000005101"/>
+        <display value="Psychological counseling clinic"/>
+        <definition value="Psychological counseling clinic"/>
+    </concept>
+    <concept>
+        <code value="556841000005105"/>
+        <display value="Social psychological counseling"/>
+        <definition value="Social psychological counseling"/>
+    </concept>
+    <concept>
+        <code value="550821000005102"/>
+        <display value="Service unit"/>
+        <definition value="Service unit"/>
+    </concept>
+    <concept>
+        <code value="550671000005100"/>
+        <display value="Medical specialist practice site"/>
+        <definition value="Medical specialist practice site"/>
+    </concept>
+    <concept>
+        <code value="264361005"/>
+        <display value="Health centre"/>
+        <definition value="Health centre"/>
+    </concept>
+    <concept>
+        <code value="554041000005106"/>
+        <display value="Health administration"/>
+        <definition value="Health administration"/>
+    </concept>
+    <concept>
+        <code value="554021000005101"/>
+        <display value="Health visitors"/>
+        <definition value="Health visitors"/>
+    </concept>
+    <concept>
+        <code value="703069008"/>
+        <display value="Nurse practitioner clinic"/>
+        <definition value="Nurse practitioner clinic"/>
+    </concept>
+    <concept>
+        <code value="550681000005102"/>
+        <display value="Dental practice"/>
+        <definition value="Dental practice"/>
+    </concept>
+    <concept>
+        <code value="550691000005104"/>
+        <display value="Dental care clinic"/>
+        <definition value="Dental care clinic"/>
+    </concept>
+    <concept>
+        <code value="550701000005104"/>
+        <display value="Dental technician clinic"/>
+        <definition value="Dental technician clinic"/>
+    </concept>
+    <concept>
+        <code value="554231000005106"/>
+        <display value="Vaccination clinic"/>
+        <definition value="Vaccination clinic"/>
+    </concept>
+    <concept>
+        <code value="554051000005108"/>
+        <display value="Reflexology clinic"/>
+        <definition value="Reflexology clinic"/>
+    </concept>
+    <concept>
+        <code value="550871000005101"/>
+        <display value="Emergency admission unit"/>
+        <definition value="Emergency admission unit"/>
+    </concept>
+    <concept>
+        <code value="554241000005103"/>
+        <display value="Technical location number"/>
+        <definition value="Technical location number"/>
+    </concept>
+    <concept>
+        <code value="309964003"/>
+        <display value="Radiology department"/>
+        <definition value="Radiology department"/>
+    </concept>
+    <concept>
+        <code value="550841000005107"/>
+        <display value="Research unit"/>
+        <definition value="Research unit"/>
+    </concept>
+    <concept>
+        <code value="309904001"/>
+        <display value="Intensive care unit"/>
+        <definition value="Intensive care unit"/>
+    </concept>
+    <concept>
         <code value="550851000005109"/>
         <display value="Clinical unit"/>
         <definition value="Clinical unit"/>
+    </concept>
+    <concept>
+        <code value="551611000005102"/>
+        <display value="Surgical ward"/>
+        <definition value="Surgical ward"/>
+    </concept>
+    <concept>
+        <code value="309939001"/>
+        <display value="Palliative care department"/>
+        <definition value="Palliative care department"/>
+    </concept>
+    <concept>
+        <code value="225728007"/>
+        <display value="Accident and Emergency department"/>
+        <definition value="Accident and Emergency department"/>
+    </concept>
+    <concept>
+        <code value="554071000005100"/>
+        <display value="Hospital pharmacy"/>
+        <definition value="Hospital pharmacy"/>
+    </concept>
+    <concept>
+        <code value="550831000005104"/>
+        <display value="Education unit"/>
+        <definition value="Education unit"/>
+    </concept>
+    <concept>
+        <code value="255203001"/>
+        <display value="Additional values"/>
+        <definition value="Additional values"/>
     </concept>
 </CodeSystem>
