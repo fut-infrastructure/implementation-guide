@@ -520,7 +520,27 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-cvrNumber"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-municipalityCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-regionCode"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-organization-relatedto"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-source"/>
       </sourceReference>
     </resource>
     <resource>
@@ -821,6 +841,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-organization-source"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-plandefinition-recommendation"/>
       </sourceReference>
     </resource>
@@ -857,6 +882,11 @@
     <resource>
       <sourceReference>
         <reference value="CodeSystem/ehealth-situation-quality"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-sor-organization-type"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1159,6 +1189,18 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-organization-relation-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-sor-organization-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-organization-source"/>
       </sourceReference>
     </resource>
     <resource>

@@ -1,12 +1,12 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="ehealth-organization-type"/>
-    <url value="http://ehealth.sundhed.dk/vs/organization-type"/>
+    <id value="ehealth-organization-source"/>
+    <url value="http://ehealth.sundhed.dk/vs/organization-source"/>
     <version value="0.0.1"/>
-    <name value="OrganizationType"/>
-    <title value="OrganizationType"/>
+    <name value="OrganizationSource"/>
+    <title value="OrganizationSource"/>
     <status value="draft"/>
     <experimental value="true"/>
-    <date value="2019-05-27"/>
+    <date value="2019-06-11"/>
     <publisher value="ehealth.sundhed.dk"/>
     <contact>
         <name value="ehealth.sundhed.dk"/>
@@ -15,10 +15,10 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Value set used for indicating the organization type"/>
+    <description value="Value set used for indicating the organization source"/>
     <compose>
 		<include>
-			<valueSet value="http://ehealth.sundhed.dk/vs/sor-organization-type"/>
+            <system value="http://ehealth.sundhed.dk/cs/organization-source"/>
 		</include>
     </compose>
 </ValueSet>
