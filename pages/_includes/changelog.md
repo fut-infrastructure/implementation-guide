@@ -21,6 +21,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 
+#### EpisodeOfCare (ehealth-episodeofcare)
+- Changed slicename for extension 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers' from 'careManager' to 'careManagers'
+
 #### Organization (ehealth-organization)
 - Added definition of `cvrNumber`
 - Added definition of `regionCode`
