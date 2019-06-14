@@ -27,9 +27,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="EpisodeOfCare.extension:careManager">
+    <element id="EpisodeOfCare.extension:careManagers">
       <path value="EpisodeOfCare.extension" />
-      <sliceName value="careManager" />
+      <sliceName value="careManagers" />
       <short value="Care managers/care coordinators." />
       <definition value="Care managers/care coordinators for the patient." />
       <min value="1" />
