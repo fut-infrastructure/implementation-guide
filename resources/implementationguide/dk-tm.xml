@@ -520,17 +520,17 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-organization-cvrNumber"/>
+        <reference value="StructureDefinition/Extension-ehealth-organization-cvrnumber"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-organization-municipalityCode"/>
+        <reference value="StructureDefinition/Extension-ehealth-organization-municipalitycode"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-organization-regionCode"/>
+        <reference value="StructureDefinition/Extension-ehealth-organization-regioncode"/>
       </sourceReference>
     </resource>
     <resource>
