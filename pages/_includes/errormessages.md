@@ -2,7 +2,7 @@
 
 The following list contains the error messages that are defined for the eHealth Infrastructure. The error messages are grouped by profile and follows the pattern `<PROFILENAME>_<OPERATION>_<ERROR>`. The pattern is used to determine which operation can result in the specific error. Note that general errors follows the pattern `GENERAL_<ERROR>`.
 
-If a request result in an error, the error message can be obtained from the `diagnostics` element for the specific entry in the returned `issue` list:
+If a request results in an error, the error message can be obtained from the `diagnostics` element for the specific entry in the returned `issue` list:
 
 ```
 {
