@@ -215,6 +215,9 @@
 - profile: ehealth-observation
   path: POST_Observation.md
 
+- profile: ehealth-patient
+  path: PATCH_Patient.md
+
 # ehealth-organization
 - profile: ehealth-organization
   path: GET_Organization_search.md
