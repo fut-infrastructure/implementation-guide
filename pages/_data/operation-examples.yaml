@@ -227,6 +227,9 @@
 
 - profile: ehealth-organization
   path: GET_Organization_version.md
+  
+- profile: ehealth-organization
+  path: PATCH_Organization.md
 
 # ehealth-plandefinition
 - profile: ehealth-plandefinition
