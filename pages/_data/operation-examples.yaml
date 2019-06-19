@@ -182,6 +182,9 @@
 - profile: ehealth-episodeofcare
   path: PUT_EpisodeOfCare.md
 
+- profile: ehealth-episodeofcare
+  path: POST_create-episode-of-care.md
+
 # ehealth-library
 - profile: ehealth-library
   path: GET_Library_search.md
