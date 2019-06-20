@@ -6,6 +6,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 - Added list of error messages
+- Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher)
 
 ### Custom operations
 #### System operations
@@ -22,6 +23,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
 
 ### Resource/profile changes
+
+#### Provenance (ehealth-provenance)
+- Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher) 
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Changed slicename for extension 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers' from 'careManager' to 'careManagers'
