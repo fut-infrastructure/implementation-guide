@@ -24,31 +24,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 
+#### Consent (ehealth-consent)
+- Added general resource description
+
 #### Provenance (ehealth-provenance)
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
-
-#### EpisodeOfCare (ehealth-episodeofcare)
-- Changed slicename for extension 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers' from 'careManager' to 'careManagers'
-
-#### Organization (ehealth-organization)
-- Added definition of `cvrNumber`
-- Added definition of `regionCode`
-- Added definition of `municipalityCode`
-- Added definition of `source`
-- Changed referenced ValueSet for `type`
-
-## 2019.5.3 (2019-06-07)
-
-### General changes
-- Titles and headlines made more homogeneous
-
-### Resource/profile changes
-
-#### ActivityDefinition (ehealth-activitydefinition)
-- Added general resource description
-
-#### Condition (ehealth-condition)
-- Added general resource description
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Changed slicename for extension 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers' from 'careManager' to 'careManagers'
