@@ -710,6 +710,11 @@
         <reference value="CapabilityStatement/terminology"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/careplan"/>
+      </sourceReference>
+    </resource>
 
     <!-- Naming systems -->
     <resource>

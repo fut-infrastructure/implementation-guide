@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Added list of error messages
 - Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide)
+- Added capabilitystatement for `Care Plan Service`
 
 ### Custom operations
 #### System operations
