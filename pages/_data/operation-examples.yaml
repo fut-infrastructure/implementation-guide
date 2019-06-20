@@ -215,12 +215,21 @@
 - profile: ehealth-observation
   path: POST_Observation.md
 
+- profile: ehealth-patient
+  path: PATCH_Patient.md
+
+- profile: ehealth-message
+  path: PATCH_Communication.md
+
 # ehealth-organization
 - profile: ehealth-organization
   path: GET_Organization_search.md
 
 - profile: ehealth-organization
   path: GET_Organization_version.md
+  
+- profile: ehealth-organization
+  path: PATCH_Organization.md
 
 # ehealth-plandefinition
 - profile: ehealth-plandefinition
