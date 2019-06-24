@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-organization-synchronization-status"/>
+    <url value="http://ehealth.sundhed.dk/cs/organization-synchronization-status"/>
+    <version value="0.0.1"/>
+    <name value="OrganizationSynchronizationStatus"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-06-24"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Organization synchronization status type"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="NotSynchronized"/>
+        <display value="Not synchronized"/>
+        <definition value="Not synchronized"/>
+    </concept>
+    <concept>
+        <code value="EligibleForSynchronization"/>
+        <display value="Eligible for synchronization"/>
+        <definition value="Eligible for automatic synchronization with the source"/>
+    </concept>
+    <concept>
+        <code value="NoLongerSynchronized"/>
+        <display value="No longer synchronized"/>
+        <definition value="No longer eligible for automatic synchronization with the source"/>
+    </concept>
+</CodeSystem>

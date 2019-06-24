@@ -67,11 +67,21 @@
     <element id="Organization.extension:source">
       <path value="Organization.extension" />
       <sliceName value="source" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source" />
+      </type>
+    </element>
+    <element id="Organization.extension:synchronizationStatus">
+      <path value="Organization.extension" />
+      <sliceName value="synchronizationStatus" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus" />
       </type>
     </element>
     <element id="Organization.type">

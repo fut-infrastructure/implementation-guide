@@ -545,6 +545,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-synchronizationstatus"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-organization-telecomcustodian"/>
       </sourceReference>
     </resource>
@@ -847,6 +852,11 @@
     <resource>
       <sourceReference>
         <reference value="CodeSystem/ehealth-organization-source"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-organization-synchronization-status"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1206,6 +1216,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-organization-source"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-organization-synchronization-status"/>
       </sourceReference>
     </resource>
     <resource>
