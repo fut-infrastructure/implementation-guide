@@ -87,9 +87,6 @@
     <element id="Organization.type">
       <path value="Organization.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="OrganizationType" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/organization-type" />
@@ -107,9 +104,6 @@
     <element id="Organization.telecom.system">
       <path value="Organization.telecom.system" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ContactPointSystem" />
-        </extension>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/contactpoint-system" />
       </binding>
@@ -154,9 +148,9 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian" />
       </type>
     </element>
-    <element id="Organization.contact.telecom.extension:system">
+    <element id="Organization.contact.telecom.extension:telecomSystem">
       <path value="Organization.contact.telecom.extension" />
-      <sliceName value="system" />
+      <sliceName value="telecomSystem" />
       <short value="Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other" />
       <definition value="Telecommunications form for contact point - what communications system is required to make use of the contact." />
       <min value="1" />
@@ -166,9 +160,9 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem" />
       </type>
     </element>
-    <element id="Organization.contact.telecom.extension:value">
+    <element id="Organization.contact.telecom.extension:telecomValue">
       <path value="Organization.contact.telecom.extension" />
-      <sliceName value="value" />
+      <sliceName value="telecomValue" />
       <short value="The actual contact point details (i.e. phone number or email address)" />
       <definition value="The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address)." />
       <min value="1" />

@@ -18,11 +18,12 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem" />
     </element>
-    <element id="Extension.value[x]:valueCode">
-      <path value="Extension.valueCode" />
-      <sliceName value="valueCode" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
-        <code value="code" />
+        <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
