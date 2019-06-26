@@ -36,6 +36,7 @@
     <element id="Extension.value[x]:valueString">
       <path value="Extension.valueString" />
       <sliceName value="valueString" />
+      <min value="1" />
       <type>
         <code value="string" />
       </type>

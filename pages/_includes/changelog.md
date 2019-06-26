@@ -46,6 +46,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `source` (mandatory)
 - Added definition of `synchronizationStatus` (mandatory)
 - Changed referenced ValueSet for `type`
+- Changed type of extension element `contact.telecom.custodian` from `code` to `CodeableConcept`
+- Changed type of extension element `contact.telecom.system` from `code` to `CodeableConcept`
+- Renamed extension element `contact.telecom.system` to `contact.telecom.telecomSystem` 
+- Renamed extension element `contact.telecom.value` to `contact.telecom.telecomValue` 
+- Changed cardinality of extension element `contact.telecom.telecomValue` inside extension to min 1
 
 ## 2019.5.3 (2019-06-07)
 
