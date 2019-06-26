@@ -29,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/vs/organization-type`
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
 - Changed `http://ehealth.sundhed.dk/vs/contactpoint-system` to include `http://hl7.org/fhir/ValueSet/contact-point-system`
+- Added new code `PITEOC` to `http://ehealth.sundhed.dk/vs/consent-category`
 
 ### Resource/profile changes
 

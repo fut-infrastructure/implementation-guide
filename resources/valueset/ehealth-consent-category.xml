@@ -28,5 +28,16 @@
                 </designation>
             </concept>
         </include>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/consent-category"/>
+            <concept>
+                <code value="PITEOC"/>
+                <display value="Participate in Telemedical EpisodeOfCare"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Participate in Telemedical EpisodeOfCare"/>
+                </designation>
+            </concept>
+        </include>
     </compose>
 </ValueSet>
