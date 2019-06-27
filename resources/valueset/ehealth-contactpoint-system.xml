@@ -18,7 +18,7 @@
     <description value="Contact point systems."/>
     <compose>
         <include>
-            <system value="http://hl7.org/fhir/ValueSet/contactpoint-system"/>
+            <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-system"/>
         </include>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/contactpoint-system"/>
