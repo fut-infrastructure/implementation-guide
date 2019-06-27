@@ -1,12 +1,12 @@
 # README
 This IG inspired by the Implementation guide found at https://github.com/hl7ch/ch-core
 
-The IG publication tool to build this site can be found at http://build.fhir.org/org.hl7.fhir.igpublisher.jar
+The IG publication tool to build this site can be found at https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar
 
 Fetch it as follows:
 
 ```
-wget http://build.fhir.org/org.hl7.fhir.igpublisher.jar -O org.hl7.fhir.igpublisher.jar
+wget 'https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar' -O org.hl7.fhir.igpublisher.jar
 ```
 
 Run it from the root of the project by doing eg.:
