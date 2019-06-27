@@ -30,6 +30,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 
+#### Composition (ehealth-composition)
+- Change so references can be bundled or contained
+
 #### Consent (ehealth-consent)
 - Added general resource description
 

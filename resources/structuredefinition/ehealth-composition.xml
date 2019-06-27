@@ -38,14 +38,13 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.type">
       <path value="Composition.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentType" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/document-type" />
@@ -55,9 +54,6 @@
     <element id="Composition.class">
       <path value="Composition.class" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentClass" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/document-class" />
@@ -69,7 +65,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.encounter">
@@ -77,7 +74,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
-        <aggregation value="referenced" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.author">
@@ -85,18 +83,26 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.attester.party">
@@ -119,6 +125,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.relatesTo.target[x]">
@@ -129,19 +137,26 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition" />
+        <aggregation value="bundled" />
+        <aggregation value="contained" />
       </type>
     </element>
     <element id="Composition.event.code">
       <path value="Composition.event.code" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentEventType" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/event-type-codes" />
         </valueSetReference>
       </binding>
+    </element>
+    <element id="Composition.section.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <aggregation value="bundled" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
