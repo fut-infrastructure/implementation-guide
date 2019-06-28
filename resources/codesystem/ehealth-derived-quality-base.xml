@@ -22,19 +22,19 @@
   <content value="complete"/>
 
   <concept>
-    <code value="UNKNOWN"/>
+    <code value="Unknown"/>
     <display value="Unknown"/>
     <definition value="Unknown quality (Unlikely to be adequate where one is expected)"/>
   </concept>
 
   <concept>
-    <code value="NONE"/>
+    <code value="None"/>
     <display value="None"/>
     <definition value="Quality value where no derivation rule logic and/or values are expected"/>
   </concept>
 
   <concept>
-    <code value="DERIVATION_ERROR"/>
+    <code value="DerivationError"/>
     <display value="Error in deriving the quality"/>
     <definition value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error."/>
   </concept>
