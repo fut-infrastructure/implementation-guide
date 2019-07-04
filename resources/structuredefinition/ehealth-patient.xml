@@ -170,12 +170,10 @@
     <element id="Patient.address:officialHomeAddress.extension:municipalityCode">
       <path value="Patient.address.extension" />
       <sliceName value="municipalityCode" />
-      <min value="1" />
     </element>
     <element id="Patient.address:officialHomeAddress.extension:regionalSubdivisionCode">
       <path value="Patient.address.extension" />
       <sliceName value="regionalSubdivisionCode" />
-      <min value="1" />
     </element>
     <element id="Patient.address:officialHomeAddress.use">
       <path value="Patient.address.use" />
