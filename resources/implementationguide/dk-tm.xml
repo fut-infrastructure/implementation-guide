@@ -139,6 +139,13 @@
     <resource>
       <example value="true"/>
       <sourceReference>
+        <reference value="Communication/message-careteam-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-message"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
         <reference value="Patient/patient-valid"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-patient"/>

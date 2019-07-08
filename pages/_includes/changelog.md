@@ -122,6 +122,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-communication)
 - Changed referenced resources to use aggregation type "referenced"
 - Added PATCH example
+- Possible to use CareTeam as recipient using extension
 
 #### Composition (ehealth-composition)
 - Changed referenced resources to use aggregation type "referenced"
