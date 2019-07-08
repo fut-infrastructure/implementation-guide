@@ -12,7 +12,7 @@ Content-Type: application/json-patch+json; charset=UTF-8
 __Body__:
 ```json
 [
-  { "op": "replace", "path": "/telecom/", "value": 
+  { "op": "replace", "path": "/telecom", "value": 
     [{
       "system": "phone",
       "value": "(45) 12345678",

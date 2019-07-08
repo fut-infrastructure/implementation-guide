@@ -12,7 +12,7 @@ Content-Type: application/json-patch+json; charset=UTF-8
 __Body__:
 ```json
 [
-  { "op": "replace", "path": "/payload/0/contentString/", "value": "Increased blood pressure due to illness" }
+  { "op": "replace", "path": "/payload/0/contentString", "value": "Increased blood pressure due to illness" }
 ]
 ```
 

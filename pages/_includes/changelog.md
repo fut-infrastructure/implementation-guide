@@ -76,6 +76,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Patient (ehealth-patient)
 - Added general resource description
+- Added PATCH example
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description
@@ -120,6 +121,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Communication (ehealth-communication)
 - Changed referenced resources to use aggregation type "referenced"
+- Added PATCH example
 
 #### Composition (ehealth-composition)
 - Changed referenced resources to use aggregation type "referenced"
