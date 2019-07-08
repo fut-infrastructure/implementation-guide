@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-episodeofcare-careManagerHistory" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
-  <name value="careManagerHistory" />
+  <id value="ehealth-teamHistory" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory" />
+  <name value="teamHistory" />
   <status value="draft" />
-  <publisher value="ehealth.sundhed.dk" />
-  <description value="History of care managers/care co-ordinators for the patient." />
+  <description value="History of assigned careTeam" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
   <context value="EpisodeOfCare" />
+  <context value="CarePlan" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="History of care managers/care coordinators." />
-      <definition value="History of care managers/care coordinators. When a new care manager is assigned the previous one is moved to here and assigned a period." />
-    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -30,41 +25,29 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:careManager">
+    <element id="Extension.extension:careTeam">
       <path value="Extension.extension" />
-      <sliceName value="careManager" />
-      <short value="Historic care manager." />
+      <sliceName value="careTeam" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:careManager.url">
+    <element id="Extension.extension:careTeam.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="careManager" />
+      <fixedUri value="careTeam" />
     </element>
-    <element id="Extension.extension:careManager.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
+    <element id="Extension.extension:careTeam.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
       <sliceName value="valueReference" />
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
         <aggregation value="referenced" />
       </type>
     </element>
     <element id="Extension.extension:period">
       <path value="Extension.extension" />
       <sliceName value="period" />
-      <short value="Period of the historic care manager." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -82,7 +65,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagerHistory" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

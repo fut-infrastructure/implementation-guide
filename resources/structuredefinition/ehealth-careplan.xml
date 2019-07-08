@@ -36,31 +36,12 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-statusHistory" />
       </type>
     </element>
-    <element id="CarePlan.extension:responsible">
+    <element id="CarePlan.extension:teamHistory">
       <path value="CarePlan.extension" />
-      <sliceName value="responsible" />
-      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
+      <sliceName value="teamHistory" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
-      </type>
-    </element>
-    <element id="CarePlan.extension:responsibleHistory">
-      <path value="CarePlan.extension" />
-      <sliceName value="responsibleHistory" />
-      <short value="Individuals, careteam and/or organization historically responsible for monitoring this plan." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleHistory" />
-      </type>
-    </element>
-    <element id="CarePlan.extension:responsibilitySummary">
-      <path value="CarePlan.extension" />
-      <sliceName value="responsibilitySummary" />
-      <short value="High level summary of responsibilities presented to patient." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-responsibilitySummary" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory" />
       </type>
     </element>
     <element id="CarePlan.definition">

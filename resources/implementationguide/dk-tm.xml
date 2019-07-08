@@ -376,11 +376,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-careplan-responsibilitysummary"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-careplan-statushistory"/>
       </sourceReference>
     </resource>
@@ -446,12 +441,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagerhistory"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagers"/>
+        <reference value="StructureDefinition/Extension-ehealth-episodeofcare-caremanagerOrganization"/>
       </sourceReference>
     </resource>
     <resource>
@@ -662,12 +652,12 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-responsiblehistory"/>
+        <reference value="StructureDefinition/Extension-ehealth-sharingpolicy"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-sharingpolicy"/>
+        <reference value="StructureDefinition/Extension-ehealth-teamHistory"/>
       </sourceReference>
     </resource>
     <resource>
