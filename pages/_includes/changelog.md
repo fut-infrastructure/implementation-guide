@@ -33,6 +33,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 
+#### CarePlan (ehealth-careplan)
+- Removed extension `responsibilitySummary`
+- Removed extension `responsibleHistory`
+- Removed extension `responsible`
+- Added extension `careTeamHistory `
+
 #### Composition (ehealth-composition)
 - Change so references can be bundled or contained
 
@@ -43,7 +49,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
 
 #### EpisodeOfCare (ehealth-episodeofcare)
-- Changed slicename for extension 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers' from 'careManager' to 'careManagers'
+- Removed extension `careManagers`
+- Removed extension `careManagersHistory`
+- Removed extension `responsible`
+- Removed extension `responsibleHistory`
+- Added extension `caremanagerOrganization`
+- Added extension `teamHistory`
 
 #### Organization (ehealth-organization)
 - Added definition of `cvrNumber`
