@@ -13,8 +13,10 @@ For each message type is documented:
 #### EHealthReferenceEvent
 Messages of EHealthReferenceEvent message type are issued when a resource element containing references is updated. Separate messages are issued for references added, and references removed
 
+##### Destination
 topic: Topic is named: [FHIR profile of the resource].[name of resource element]
 
+##### Message
 
 ```
 {
@@ -55,23 +57,24 @@ topic: Topic is named: [FHIR profile of the resource].[name of resource element]
   }
 }
 ```
-| Property | Type | Description |
- | --- | --- | --- |
-eventType | string | The type of event |
-messageType | string | The name of the message type |
-messageVersion | string | The version of the message type, eg. "1.0" |
-resourceElement | string | The reference resource element that has changed |
-resourceReference | string | The reference (absolute URL) of the resource for which the event message is issued |
-messageClass | string | The Java class path of the event message. For internal use (serializing/deserializing from/to Java objects)) |
-patientReference | string | The reference (absolute URL) to the patient resource, if the resource, for which the event message is issued, is related to a patient |
-resourceProfile | string | The FHIR profile of the resource for which the event message is issued |
+##### Properties
+- `eventType`: The type of event
+- `messageType`: The name of the message type
+- `messageVersion`: The version of the message type, eg. "1.0"
+- `resourceElement`: The reference resource element that has changed
+- `resourceReference`: The reference (absolute URL) of the resource for which the event message is issued
+- `messageClass`: The Java class path of the event message. For internal use (serializing/deserializing from/to Java objects))
+- `patientReference`: The reference (absolute URL) to the patient resource, if the resource, for which the event message is issued, is related to a patient
+- `resourceProfile`: The FHIR profile of the resource for which the event message is issued
 
 
 #### EHealthSimpleEvent
 Messages of EHealthSimpleEvent message type are issued when a resource is created, updated or deleted.
 
+##### Destination
 topic: Topic is named: [FHIR profile of the resource]
 
+##### Message
 
 ```
 {
@@ -101,14 +104,13 @@ topic: Topic is named: [FHIR profile of the resource]
   }
 }
 ```
-| Property | Type | Description |
- | --- | --- | --- |
-eventType | string | The type of event |
-messageType | string | The name of the message type |
-messageVersion | string | The version of the message type, eg. "1.0" |
-resourceReference | string | The reference (absolute URL) of the resource for which the event message is issued |
-messageClass | string | The Java class path of the event message. For internal use (serializing/deserializing from/to Java objects)) |
-patientReference | string | The reference (absolute URL) to the patient resource, if the resource, for which the event message is issued, is related to a patient |
-resourceProfile | string | The FHIR profile of the resource for which the event message is issued |
+##### Properties
+- `eventType`: The type of event
+- `messageType`: The name of the message type
+- `messageVersion`: The version of the message type, eg. "1.0"
+- `resourceReference`: The reference (absolute URL) of the resource for which the event message is issued
+- `messageClass`: The Java class path of the event message. For internal use (serializing/deserializing from/to Java objects))
+- `patientReference`: The reference (absolute URL) to the patient resource, if the resource, for which the event message is issued, is related to a patient
+- `resourceProfile`: The FHIR profile of the resource for which the event message is issued
 
 
