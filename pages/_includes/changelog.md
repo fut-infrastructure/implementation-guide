@@ -9,6 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide)
 - Added capabilitystatement for `Care Plan Service`
 - Updated `-s-create-episode-of-care` operation examples for `ehealth-episodeofcare` and moved to `ehealth-episodeofcare` operation examples.
+- Added description of message broker event messages
 
 ### Custom operations
 #### System operations
