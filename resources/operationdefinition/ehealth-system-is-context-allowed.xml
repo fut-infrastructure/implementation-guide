@@ -1,0 +1,20 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="EpisodeOfCare-i-is-context-allowed"/>
+    <name value="is-context-allowed"/>
+    <status value="active"/>
+    <kind value="operation"/>
+    <description value="Checks that it is allowed to set an EpisodeOfCare as context on the security token.&#xd;&#xa;Throws an exception if it is not possible for the Episode Of Care.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context"/>
+    <idempotent value="true"/>
+    <code value="is-context-allowed"/>
+    <resource value="EpisodeOfCare"/>
+    <system value="false"/>
+    <type value="false"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Parameters"/>
+    </parameter>
+</OperationDefinition>

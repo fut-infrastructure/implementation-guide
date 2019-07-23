@@ -185,6 +185,9 @@
 - profile: ehealth-episodeofcare
   path: POST_create-episode-of-care.md
 
+- profile: ehealth-episodeofcare
+  path: GET_is-context-allowed.md
+
 # ehealth-library
 - profile: ehealth-library
   path: GET_Library_search.md

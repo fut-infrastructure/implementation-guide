@@ -14,6 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Custom operations
 #### System operations
 - Changed description of `-s-create-episode-of-care`
+- Added description and example of `-s-is-context-allowed` operation
 
 #### Instance operations
 ### Code systems

@@ -60,6 +60,12 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="OperationDefinition/ehealth-system-is-context-allowed"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="OperationDefinition/ehealth-system-search-measurements"/>
       </sourceReference>
     </resource>
