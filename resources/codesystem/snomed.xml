@@ -387,4 +387,239 @@
         <display value="Additional values"/>
         <definition value="Additional values"/>
     </concept>
+    <concept>
+        <code value="394537008"/>
+        <display value="Pediatrics"/>
+        <definition value="Pediatrics"/>
+    </concept>
+    <concept>
+        <code value="394577000"/>
+        <display value="Anaesthetics"/>
+        <definition value="Anaesthetics"/>
+    </concept>
+    <concept>
+        <code value="394579002"/>
+        <display value="Cardiology"/>
+        <definition value="Cardiology"/>
+    </concept>
+    <concept>
+        <code value="394580004"/>
+        <display value="Clinical genetics"/>
+        <definition value="Clinical genetics"/>
+    </concept>
+    <concept>
+        <code value="394581000"/>
+        <display value="Community medicine"/>
+        <definition value="Community medicine"/>
+    </concept>
+    <concept>
+        <code value="394582007"/>
+        <display value="Dermatology"/>
+        <definition value="Dermatology"/>
+    </concept>
+    <concept>
+        <code value="394583002"/>
+        <display value="Endocrinology"/>
+        <definition value="Endocrinology"/>
+    </concept>
+    <concept>
+        <code value="394584008"/>
+        <display value="Gastroenterology"/>
+        <definition value="Gastroenterology"/>
+    </concept>
+    <concept>
+        <code value="394585009"/>
+        <display value="Obstetrics and gynecology"/>
+        <definition value="Obstetrics and gynecology"/>
+    </concept>
+    <concept>
+        <code value="394587001"/>
+        <display value="Psychiatry"/>
+        <definition value="Psychiatry"/>
+    </concept>
+    <concept>
+        <code value="394588006"/>
+        <display value="Child and adolescent psychiatry"/>
+        <definition value="Child and adolescent psychiatry"/>
+    </concept>
+    <concept>
+        <code value="394589003"/>
+        <display value="Nephrology"/>
+        <definition value="Nephrology"/>
+    </concept>
+    <concept>
+        <code value="394591006"/>
+        <display value="Neurology"/>
+        <definition value="Neurology"/>
+    </concept>
+    <concept>
+        <code value="394592004"/>
+        <display value="Clinical oncology"/>
+        <definition value="Clinical oncology"/>
+    </concept>
+    <concept>
+        <code value="394594003"/>
+        <display value="Ophthalmology"/>
+        <definition value="Ophthalmology"/>
+    </concept>
+    <concept>
+        <code value="394596001"/>
+        <display value="Chemical pathology"/>
+        <definition value="Chemical pathology"/>
+    </concept>
+    <concept>
+        <code value="394600006"/>
+        <display value="Clinical pharmacology"/>
+        <definition value="Clinical pharmacology"/>
+    </concept>
+    <concept>
+        <code value="394601005"/>
+        <display value="Clinical physiology"/>
+        <definition value="Clinical physiology"/>
+    </concept>
+    <concept>
+        <code value="394603008"/>
+        <display value="Cardiothoracic surgery"/>
+        <definition value="Cardiothoracic surgery"/>
+    </concept>
+    <concept>
+        <code value="394604002"/>
+        <display value="Ear, nose and throat surgery"/>
+        <definition value="Ear, nose and throat surgery"/>
+    </concept>
+    <concept>
+        <code value="394605001"/>
+        <display value="Oral surgery"/>
+        <definition value="Oral surgery"/>
+    </concept>
+    <concept>
+        <code value="394608004"/>
+        <display value="Orthodontics"/>
+        <definition value="Orthodontics"/>
+    </concept>
+    <concept>
+        <code value="394609007"/>
+        <display value="General surgery"/>
+        <definition value="General surgery"/>
+    </concept>
+    <concept>
+        <code value="394610002"/>
+        <display value="Neurosurgery"/>
+        <definition value="Neurosurgery"/>
+    </concept>
+    <concept>
+        <code value="394611003"/>
+        <display value="Plastic surgery - specialty"/>
+        <definition value="Plastic surgery - specialty"/>
+    </concept>
+    <concept>
+        <code value="394612005"/>
+        <display value="Urology"/>
+        <definition value="Urology"/>
+    </concept>
+    <concept>
+        <code value="394801008"/>
+        <display value="Trauma and orthopedics"/>
+        <definition value="Trauma and orthopedics"/>
+    </concept>
+    <concept>
+        <code value="394803006"/>
+        <display value="Clinical hematology"/>
+        <definition value="Clinical hematology"/>
+    </concept>
+    <concept>
+        <code value="394805004"/>
+        <display value="Clinical immunology/allergy"/>
+        <definition value="Clinical immunology/allergy"/>
+    </concept>
+    <concept>
+        <code value="394807007"/>
+        <display value="Infectious diseases (specialty)"/>
+        <definition value="Infectious diseases (specialty)"/>
+    </concept>
+    <concept>
+        <code value="394809005"/>
+        <display value="Clinical neuro-physiology"/>
+        <definition value="Clinical neuro-physiology"/>
+    </concept>
+    <concept>
+        <code value="394810000"/>
+        <display value="Rheumatology"/>
+        <definition value="Rheumatology"/>
+    </concept>
+    <concept>
+        <code value="394811001"/>
+        <display value="Geriatric medicine"/>
+        <definition value="Geriatric medicine"/>
+    </concept>
+    <concept>
+        <code value="394812008"/>
+        <display value="Dental medicine specialties"/>
+        <definition value="Dental medicine specialties"/>
+    </concept>
+    <concept>
+        <code value="394821009"/>
+        <display value="Occupational medicine"/>
+        <definition value="Occupational medicine"/>
+    </concept>
+    <concept>
+        <code value="394914008"/>
+        <display value="Radiology - speciality"/>
+        <definition value="Radiology - speciality"/>
+    </concept>
+    <concept>
+        <code value="394915009"/>
+        <display value="General pathology (speciality)"/>
+        <definition value="General pathology (speciality)"/>
+    </concept>
+    <concept>
+        <code value="408443003"/>
+        <display value="General medical practice"/>
+        <definition value="General medical practice"/>
+    </concept>
+    <concept>
+        <code value="408448007"/>
+        <display value="Tropical medicine"/>
+        <definition value="Tropical medicine"/>
+    </concept>
+    <concept>
+        <code value="408454008"/>
+        <display value="Clinical microbiology"/>
+        <definition value="Clinical microbiology"/>
+    </concept>
+    <concept>
+        <code value="408463005"/>
+        <display value="Vascular surgery"/>
+        <definition value="Vascular surgery"/>
+    </concept>
+    <concept>
+        <code value="408472002"/>
+        <display value="Hepatology"/>
+        <definition value="Hepatology"/>
+    </concept>
+    <concept>
+        <code value="418112009"/>
+        <display value="Pulmonary medicine"/>
+        <definition value="Pulmonary medicine"/>
+    </concept>
+    <concept>
+        <code value="419192003"/>
+        <display value="Internal medicine"/>
+        <definition value="Internal medicine"/>
+    </concept>
+    <concept>
+        <code value="421661004"/>
+        <display value="Blood banking and transfusion medicine (specialty)"/>
+        <definition value="Blood banking and transfusion medicine (specialty)"/>
+    </concept>
+    <concept>
+        <code value="551411000005104"/>
+        <display value="Surgical gastroenterology"/>
+        <definition value="Surgical gastroenterology"/>
+    </concept>
+    <concept>
+        <code value="554011000005107"/>
+        <display value="Forensic medicine"/>
+        <definition value="Forensic medicine"/>
+    </concept>
 </CodeSystem>

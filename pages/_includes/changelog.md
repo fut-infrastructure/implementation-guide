@@ -20,13 +20,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added `http://ehealth.sundhed.dk/cs/organization-source`
 - Added `http://ehealth.sundhed.dk/cs/sor-organization-type`
+- Added `http://ehealth.sundhed.dk/cs/sor-organization-specialty`
 - Added `http://ehealth.sundhed.dk/cs/organization-synchronization-status`
 - Added new codes `550891000005100`, `398070004`, `550811000005108`, `557511000005107`, `550411000005105`, `264372000`, `557501000005109`, `554851000005102`, `557531000005103`, `20078004`, `722173008`, `554221000005108`, `554031000005103`, `546821000005103`, `702871004`, `554061000005105`, `276037005`, `550861000005106`, `547011000005103`, `546811000005109`, `554881000005108`, `554861000005100`, `554821000005109`, `550621000005101`, `702824005`, `557591000005104`, `554411000005101`, `550631000005103`, `550641000005106`, `557521000005101`, `557561000005105`, `557541000005106`, `550651000005108`, `550661000005105`, `557581000005102`, `557671000005101`, `42665001`, `554211000005102`, `554871000005105`, `550711000005101`, `556841000005105`, `550821000005102`, `550671000005100`, `264361005`, `554041000005106`, `554021000005101`, `703069008`, `550681000005102`, `550691000005104`, `550701000005104`, `554231000005106`, `554051000005108`, `550871000005101`, `554241000005103`, `309964003`, `550841000005107`, `309904001`, `551611000005102`, `309939001`, `225728007`, `554071000005100`, `550831000005104`, `255203001` to `http://snomed.info/sct`
+- Added new specialty codes `394537008`, `394577000`, `394579002`, `394580004`, `394581000`, `394582007`, `394583002`, `394584008`, `394585009`, `394587001`, `394588006`, `394589003`, `394591006`, `394592004`, `394594003`, `394596001`, `394600006`, `394601005`, `394603008`, `394604002`, `394605001`, `394608004`, `394609007`, `394610002`, `394611003`, `394612005`, `394801008`, `394803006`, `394805004`, `394807007`, `394809005`, `394810000`, `394811001`, `394812008`, `394821009`, `394914008`, `394915009`, `408443003`, `408448007`, `408454008`, `408463005`, `408472002`, `418112009`, `419192003`, `421661004`, `551411000005104`, `554011000005107` to `http://snomed.info/sct`
 - Changed `http://ehealth.sundhed.dk/cs/derived-quality-base` so the codes are not in all caps
 
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-type`
+- Added `http://ehealth.sundhed.dk/vs/sor-organization-specialty`
 - Added `http://ehealth.sundhed.dk/vs/organization-source`
+- Added `http://ehealth.sundhed.dk/vs/organization-specialty`
 - Added `http://ehealth.sundhed.dk/vs/organization-synchronization-status`
 - Changed `http://ehealth.sundhed.dk/vs/organization-type`
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
@@ -59,11 +63,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `teamHistory`
 
 #### Organization (ehealth-organization)
-- Added definition of `cvrNumber`
-- Added definition of `regionCode`
-- Added definition of `municipalityCode`
-- Added definition of `source` (mandatory)
-- Added definition of `synchronizationStatus` (mandatory)
+- Added extension `cvrNumber`
+- Added extension `regionCode`
+- Added extension `municipalityCode`
+- Added extension `source` (mandatory)
+- Added extension `synchronizationStatus` (mandatory)
+- Added extension `providerIdentifier`
+- Added extension `specialty`
 - Changed referenced ValueSet for `type`
 - Changed type of extension element `contact.telecom.custodian` from `code` to `CodeableConcept`
 - Changed type of extension element `contact.telecom.system` from `code` to `CodeableConcept`

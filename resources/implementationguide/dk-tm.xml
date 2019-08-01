@@ -533,6 +533,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-provideridentifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-organization-regioncode"/>
       </sourceReference>
     </resource>
@@ -544,6 +549,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-organization-source"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-organization-specialty"/>
       </sourceReference>
     </resource>
     <resource>
@@ -909,6 +919,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-sor-organization-specialty"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-submission-quality-type"/>
       </sourceReference>
     </resource>
@@ -1212,6 +1227,12 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="ValueSet/ehealth-sor-organization-specialty"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/ehealth-sor-organization-type"/>
       </sourceReference>
     </resource>
@@ -1219,6 +1240,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-organization-source"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-organization-specialty"/>
       </sourceReference>
     </resource>
     <resource>

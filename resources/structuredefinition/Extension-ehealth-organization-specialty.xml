@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-organization-specialty" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty" />
+  <name value="specialty" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <description value="The specialty of the organization"/>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Organization" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="The organization's specialty" />
+      <definition value="The organization's specialty" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Organization specialty" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/organization-specialty" />
+        </valueSetReference>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
