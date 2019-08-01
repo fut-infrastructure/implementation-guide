@@ -398,6 +398,14 @@
                     <value value="Forensic medicine"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="773568002"/>
+                <display value="Emergency medicine"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Emergency medicine"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

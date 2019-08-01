@@ -622,4 +622,9 @@
         <display value="Forensic medicine"/>
         <definition value="Forensic medicine"/>
     </concept>
+    <concept>
+        <code value="773568002"/>
+        <display value="Emergency medicine"/>
+        <definition value="Emergency medicine"/>
+    </concept>
 </CodeSystem>
