@@ -373,6 +373,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-message)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `medium` is now optional (not always relevant)
+- Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
 
 #### Appointment (ehealth-appointment)
 - Location is no longer required
