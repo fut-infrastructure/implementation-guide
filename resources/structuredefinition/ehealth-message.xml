@@ -217,17 +217,17 @@
       <path value="Communication.sender" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
         <aggregation value="referenced" />
       </type>
     </element>
