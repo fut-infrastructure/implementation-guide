@@ -39,6 +39,16 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
       </type>
     </element>
+    <element id="Communication.extension:senderCareTeam">
+      <path value="Communication.extension" />
+      <sliceName value="senderCareTeam" />
+      <short value="CareTeam message sender" />
+      <definition value="CareTeam message sender" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />
+      </type>
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
@@ -205,7 +215,6 @@
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
