@@ -397,6 +397,11 @@
     </resource>
 	<resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-communication-sendercareteam"/>
+      </sourceReference>
+    </resource>
+	<resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-composition-authororganization"/>
       </sourceReference>
     </resource>
