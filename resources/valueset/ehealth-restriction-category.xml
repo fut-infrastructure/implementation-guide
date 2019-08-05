@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-restriction-category"/>
+    <url value="http://ehealth.sundhed.dk/vs/restriction-category"/>
+    <version value="0.6.0"/>
+    <name value="RestrictionCategory"/>
+    <title value="RestrictionCategory"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-08-05"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Value set for restriction category."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/restriction-category"/>
+            <concept>
+                <code value="measurement-monitoring"/>
+                <display value="Monitoring of measurement(s)"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Monitoring of measurement(s)"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

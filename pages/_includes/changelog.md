@@ -18,6 +18,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Instance operations
 ### Code systems
+- Added `http://ehealth.sundhed.dk/cs/restriction-category`
 - Added `http://ehealth.sundhed.dk/cs/organization-source`
 - Added `http://ehealth.sundhed.dk/cs/sor-organization-type`
 - Added `http://ehealth.sundhed.dk/cs/sor-organization-specialty`
@@ -27,6 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/cs/derived-quality-base` so the codes are not in all caps
 
 ### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/restriction-category`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-type`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-specialty`
 - Added `http://ehealth.sundhed.dk/vs/organization-source`
@@ -43,10 +45,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsibilitySummary`
 - Removed extension `responsibleHistory`
 - Removed extension `responsible`
-- Added extension `careTeamHistory `
+- Added extension `careTeamHistory`
 
 #### Composition (ehealth-composition)
 - Change so references can be bundled or contained
+
+#### ClinicalImpression (ehealth-clinicalimpression)
+- Added extension `careplan`
+
+#### Task (ehealth-task)
+- Added extension `restriction-category`
+- Remove Organization as possible task-responsible
 
 #### Consent (ehealth-consent)
 - Added general resource description

@@ -31,7 +31,6 @@
       <path value="Task.extension" />
       <sliceName value="category" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category" />
@@ -43,10 +42,19 @@
       <short value="Responsible entity" />
       <definition value="Individual, CareTeam or organization responsible for task execution." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible" />
+      </type>
+    </element>
+    <element id="Task.extension:restriction-category">
+      <path value="Task.extension" />
+      <sliceName value="restriction-category" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category" />
       </type>
     </element>
     <element id="Task.definition[x]">
