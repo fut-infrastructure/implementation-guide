@@ -27,6 +27,14 @@
                     <value value="Monitoring of measurement(s)"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="measuring-support"/>
+                <display value="Support of measurement(s)"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Support of measurement(s)"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

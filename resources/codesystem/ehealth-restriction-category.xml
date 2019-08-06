@@ -22,4 +22,9 @@
         <display value="Monitoring of measurement(s)"/>
         <definition value="Monitoring of measurement(s)"/>
     </concept>
+    <concept>
+        <code value="measuring-support"/>
+        <display value="Support of measurement(s)"/>
+        <definition value="Support of measurement(s)"/>
+    </concept>
 </CodeSystem>
