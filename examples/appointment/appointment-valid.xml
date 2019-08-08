@@ -22,17 +22,16 @@
     <status value='proposed'/>
     <appointmentType>
         <coding>
-            <system value="http://ehealth.sundhed.dk/appointment-type"/>
-            <code value="followup"/>
-            <display value="Followup"/>
+            <system value="http://ehealth.sundhed.dk/cs/appointmenttype-codes"/>
+            <code value="FOLLOWUP"/>
         </coding>
     </appointmentType>
     <reason>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="109006"/>
+            <code value="412776001"/>
         </coding>
-        <text value="Anxiety disorder of childhood OR adolescence"/>
+        <text value="Clinical Review"/>
     </reason>
     <participant>
         <actor>

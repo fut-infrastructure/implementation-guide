@@ -389,6 +389,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Appointment (ehealth-appointment)
 - Location is no longer required
 - Changed description due to new cardinalities
+- Added CodeSystem for appointmentType, updated example accordingly
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - References changed from general to ehealth-specific profiles

@@ -10,7 +10,7 @@
     <description value="Appointment type codes used by the system" />
     <compose>
         <include>
-            <system value="https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"/>
+            <system value="http://ehealth.sundhed.dk/cs/appointmenttype-codes"/>
         </include>
     </compose>
 </ValueSet>
