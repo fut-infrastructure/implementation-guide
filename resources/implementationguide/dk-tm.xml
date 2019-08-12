@@ -764,6 +764,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-municipality-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-appointmenttype-codes"/>
       </sourceReference>
     </resource>

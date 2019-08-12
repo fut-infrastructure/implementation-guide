@@ -105,6 +105,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Patient (ehealth-patient)
 - Added general resource description
 - Added PATCH example
+- Added municipality code CodeSystem (DK: kommunekoder)
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description
