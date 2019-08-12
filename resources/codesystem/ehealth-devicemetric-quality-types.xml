@@ -17,7 +17,7 @@
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>
-    <code value="inital"/>
+    <code value="initial"/>
     <display value="Initial device quality"/>
     <designation>
       <language value="en-US"/>

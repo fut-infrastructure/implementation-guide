@@ -20,7 +20,7 @@
         <include>
             <system value="http://ehealth.sundhed.dk/cs/devicemetric-quality-types"/>
             <concept>
-                <code value="inital"/>
+                <code value="initial"/>
                 <display value="Initial device quality"/>
                 <designation>
                     <language value="en-US"/>
