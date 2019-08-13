@@ -27,15 +27,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Library.extension:basedOn">
-      <path value="Library.extension" />
-      <sliceName value="basedOn" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-basedOn" />
-      </type>
-    </element>
     <element id="Library.extension:intendedAudience">
       <path value="Library.extension" />
       <sliceName value="intendedAudience" />
@@ -44,14 +35,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
-      </type>
-    </element>
-    <element id="Library.extension:parameterBinding">
-      <path value="Library.extension" />
-      <sliceName value="parameterBinding" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterBinding" />
       </type>
     </element>
     <element id="Library.extension:revision">
@@ -83,25 +66,6 @@
     <element id="Library.parameter">
       <path value="Library.parameter" />
       <min value="1" />
-    </element>
-    <element id="Library.parameter.extension">
-      <path value="Library.parameter.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Library.parameter.extension:parameterName">
-      <path value="Library.parameter.extension" />
-      <sliceName value="parameterName" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library-parameterName" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>

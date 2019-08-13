@@ -53,6 +53,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
 
+#### Library (ehealth-library)
+- Removed extension `basedOn`
+- Removed extension `parameterBinding`
+- Removed extension `parameterName`
+
 #### Task (ehealth-task)
 - Added extension `restriction-category`
 - Remove Organization as possible task-responsible
