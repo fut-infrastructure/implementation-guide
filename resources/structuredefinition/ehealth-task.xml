@@ -47,11 +47,10 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible" />
       </type>
     </element>
-    <element id="Task.extension:restriction-category">
+    <element id="Task.extension:restrictionCategory">
       <path value="Task.extension" />
-      <sliceName value="restriction-category" />
-      <min value="0" />
-      <max value="*" />
+      <sliceName value="restrictionCategory" />
+      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category" />

@@ -18,6 +18,11 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
+        <code value="None"/>
+        <display value="None"/>
+        <definition value="No restiction category. Should not be combined with other values"/>
+    </concept>
+    <concept>
         <code value="measurement-monitoring"/>
         <display value="Monitoring of measurement(s)"/>
         <definition value="Monitoring of measurement(s)"/>

@@ -20,6 +20,14 @@
         <include>
             <system value="http://ehealth.sundhed.dk/cs/restriction-category"/>
             <concept>
+                <code value="None"/>
+                <display value="None"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="No restiction category. Should not be combined with other values"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="measurement-monitoring"/>
                 <display value="Monitoring of measurement(s)"/>
                 <designation>
