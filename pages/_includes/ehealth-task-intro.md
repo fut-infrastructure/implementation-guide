@@ -18,7 +18,8 @@ The context in which the Task is created is identified through `context`. In the
 The eHealth Infrastructure supports triaging based on comparison of submitted measurements against reference ranges specified in CarePlan/ProcedureRequest. The result of triaging is captured in a ClinicalImpression which is referenced as Task focus in a Task created by the eHealth Infrastructure. The Task has:
 
 * Task owner that references a selected CareTeam of the CarePlan
-* Task category is coding that states need to assess a triaging result
+* Task category is a coding that states need to assess a triaging result
+* Task restriction category is a coding that can be used to restrict access to the task, for instance restricting a task so only monitoring responsibles can access it
 * Task priority reflecting the triaging result
 
 ### Use of Task for resolving missing or unexpected measurement
