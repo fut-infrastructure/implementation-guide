@@ -483,21 +483,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-basedon"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-parameterbinding"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-library-parametername"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
       </sourceReference>
     </resource>
