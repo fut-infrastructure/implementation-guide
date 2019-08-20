@@ -1,48 +1,47 @@
 # Introduction
+
 The Library resource is a general-purpose container for knowledge asset definitions.
 It can be used to describe and expose existing knowledge assets such as logic libraries
 and information model descriptions, as well as to describe a collection of knowledge assets.
 
 # Scope and Usage
+
 In scope of the eHealth Infrastructure, the Library resource is used for:
 
-* identifying clinical decision rules
+* specifying clinical decision rules
+    * used for calculating situational context
+    * used for calculating operational context
+    * used for evaluating measurements and triaging based on this evaluation
 * specifying input and output parameters for clinical decision rules 
-* specifying bindings for these input parameters
 
-### Use of Library for defining decision support rules
+### Defining clinical decision rules
 
-A Library resource defining a decision support rule is really capturing metadata about
-the rule rather than the rule logic itself. The rule is identified by `identifier`, `version`,
-and `ehealth-revision` while the input and output parameters are specified in the structure named `parameter`.
+The clinical decision rules are defined as JBoss Drools rules and are stored in the `content` structure as a base64 
+encoded string. When defining the rule it is important that the rule package is set to "rules".
 
-In order to support organizations in defining of Library for use in their organizational context,
-the element `intendedAudience` has been added.
+Input and output parameters used by the rule should be defined in the `parameters` structure with the `use` element set to 
+the appropriate type of parameter. Only one output type should be defined. In the rule logic the output parameter should 
+be defined as a global variable with the name "result".
 
-This kind of Library has `type` set to logic-library (Coding system omitted).
+It is important that the input and output parameters defined in the Library resource corresponds to the input and output
+parameters defined in the clinical decision rule logic. The eHealth infrastructure wont be able to execute a rule if any 
+inconsistency exists.
 
-### Use of Library for binding value sources to decision support rules parameters
+When defining a rule to be used for evaluation of Observation resources, it is possible to specify that historical 
+Observation resources with the same ProcedureRequest reference should be used as input to the rule. This is done using the 
+`dataRequirement` structure where the `dateFilter.valueDuration` is set. Observation resources where the `effective` element
+is overlapping this duration is given as input to the rule. 
 
-A separate Library is used for defining what values to pass in as input parameters when
-invoking a decision support rule (as defined by another Library resource).
+### Invoke clinical decision rules
 
-The Library defining the binding identifies the decision support rule Library resource
-through the extension `basedOn`. The binding between the decision support rule parameters and 
-the source from which to get a value is defined in the extension `parameterBinding`.
-
-It is important that the binding defines value sources for each of the input parameters
-defined in the decision support rule Library resource and that the parameter names and
-types are correct.
-
-In the parameterBinding elements, a Questionnaire can be referenced through the element
-`resource` and identified with `identifier`, `version` and `ehealth-revision`. The particular questionnaire
-question to use as binding for a decision support rule parameter is specified in `linkId`.
-
-This kind of Library has `type` set to module-definition (Coding system omitted).
-
+The clinical decision rules used for calculating situational and operational context can be invoked using the `evaluate` 
+operation on the specific Library resource. Evaluation of submitted measurements will be invoked automatic and asynchronous.
+The eHealth Infrastructure will create the relevant ClinicalImpression, Task and Communication resources based on the 
+automatic evaluation of submitted measurements.
+ 
 ### Use of Library resources at time of decision support rules invocation
 
-The binding and decision support rule Library resources can be associated with a CarePlan /
+The decision support rule Library can be associated with a CarePlan /
 ProcedureRequest through their references to PlanDefinition / ActivityDefinition resources.
 When a measurement is submitted in scope of a CarePlan, the answer values in a submitted
 QuestionnaireResponse can be found and passed in as parameters to the decision support rule

@@ -16,6 +16,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 - Changed description of `-s-create-episode-of-care`
 - Added description and example of `-s-is-context-allowed` operation
+- Changed description of `Library-i-evaluate`
 
 #### Instance operations
 ### Code systems
@@ -58,6 +59,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `basedOn`
 - Removed extension `parameterBinding`
 - Removed extension `parameterName`
+- Updated general resource description
 
 #### Task (ehealth-task)
 - Added extension `restriction-category`
