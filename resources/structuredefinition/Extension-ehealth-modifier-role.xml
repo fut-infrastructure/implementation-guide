@@ -36,9 +36,9 @@
     <element id="Extension.extension:reference">
       <path value="Extension.extension" />
       <sliceName value="reference" />
-      <short value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
-      <definition value="Who is involved as maintainer. The specific practitioner, care team or organization who is maintaining the activity definition." />
-      <comment value="Holds a reference to either Organization, CareTeam, Practitioner." />
+      <short value="Who is involved as maintainer. The specific organization who is maintaining the activity definition." />
+      <definition value="Who is involved as maintainer. The specific organization who is maintaining the activity definition." />
+      <comment value="This holds a reference to an Organization." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -47,24 +47,14 @@
       <fixedUri value="reference" />
     </element>
     <element id="Extension.extension:reference.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
+      <path value="Extension.extension.valueReference" />
       <sliceName value="valueReference" />
-      <short value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
-      <comment value="This holds a reference to either an Organization, CareTeam or a Practitioner." />
+      <short value="This holds a reference to an Organization." />
+      <comment value="This holds a reference to an Organization." />
       <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
         <aggregation value="referenced" />
       </type>
     </element>

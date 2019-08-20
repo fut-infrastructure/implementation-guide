@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added capabilitystatement for `Care Plan Service`
 - Updated `-s-create-episode-of-care` operation examples for `ehealth-episodeofcare` and moved to `ehealth-episodeofcare` operation examples.
 - Added description of message broker event messages
+- Changed extension `modifierRole` to contain only `ehealth-organization` type reference
 
 ### Custom operations
 #### System operations
