@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fs3-categories"/>
+  <url value="http://ehealth.sundhed.dk/vs/fs3-categories"/>
+  <version value="0.0.1"/>
+  <name value="Fælles Sprog III, kategorier"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-08"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <contact>
+    <name value="ehealth.sundhed.dk"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth.sundhed.dk/terminology"/>
+    </telecom>
+  </contact>
+  <description value="Fælles Sprog III, kategorier" />
+  <compose>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-group-communitylife"/>
+    </include>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions"/>
+    </include>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-group-mobility"/>
+    </include>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks"/>
+    </include>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-group-selfcare"/>
+    </include>
+  </compose>
+</ValueSet>

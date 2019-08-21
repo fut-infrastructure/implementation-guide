@@ -35,11 +35,16 @@
     <element id="Patient.extension:itcompetencelevel">
       <path value="Patient.extension" />
       <sliceName value="itcompetencelevel" />
-      <max value="1" />
+      <definition value="Optional Extension Element - found in all resources" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
       </type>
+    </element>
+    <element id="Patient.extension:itcompetencelevel.valueCodeableConcept:valueCodeableConcept">
+      <path value="Patient.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)" />
     </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
@@ -166,14 +171,6 @@
         <code value="Address" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
-    </element>
-    <element id="Patient.address:officialHomeAddress.extension:municipalityCode">
-      <path value="Patient.address.extension" />
-      <sliceName value="municipalityCode" />
-    </element>
-    <element id="Patient.address:officialHomeAddress.extension:regionalSubdivisionCode">
-      <path value="Patient.address.extension" />
-      <sliceName value="regionalSubdivisionCode" />
     </element>
     <element id="Patient.address:officialHomeAddress.use">
       <path value="Patient.address.use" />

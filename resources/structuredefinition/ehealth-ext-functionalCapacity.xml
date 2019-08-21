@@ -4,7 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <name value="Functioncal Capacity" />
   <status value="draft" />
-  <description value="Describes the functional capacity of a patient. This extension is a generic construct in the sense that only one the group *ValueSet* is specified. This means that the selected *code.coding.code* in this construct MUST contain a value from the selected *ValueSet* in group.coding.code. An optional score can be given to the *code.coding.code* in the score.coding.code" />
+  <description value="Describes the functional capacity of a patient. The functional capacity is documentet through a variety of categories (eg. &quot;Endurance&quot;), that each belong to separate groups (eg. &quot;Mobility&quot;). For each of these categories, a score is provided from the required ValueSet. Along with that, the citizens own assessment, goal assessment, and importance can be registered. The groups, categories and scores all originate from &quot;Fælles Sprog III Funktionsevnetilstand&quot;, which is described here: http://www.fs3.nu/filer/Dokumenter/Metode/FSIII-Guide-til-funktionsevnetilstande.pdf" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -49,6 +49,10 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-groups" />
+      </binding>
     </element>
     <element id="Extension.extension:group.value[x]:valueCoding.code">
       <path value="Extension.extension.valueCoding.code" />
@@ -70,6 +74,10 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-categories" />
+      </binding>
     </element>
     <element id="Extension.extension:code.value[x]:valueCoding.system">
       <path value="Extension.extension.valueCoding.system" />
@@ -91,10 +99,78 @@
       <type>
         <code value="Coding" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-scores" />
+      </binding>
     </element>
     <element id="Extension.extension:score.value[x]:valueCoding.system">
       <path value="Extension.extension.valueCoding.system" />
       <min value="1" />
+    </element>
+    <element id="Extension.extension:score.value[x]:valueCoding.code">
+      <path value="Extension.extension.valueCoding.code" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:citizenImportanceScore">
+      <path value="Extension.extension" />
+      <sliceName value="citizenImportanceScore" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:citizenImportanceScore.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="citizenImportanceScore" />
+    </element>
+    <element id="Extension.extension:citizenImportanceScore.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-citizen-importance-scores" />
+      </binding>
+    </element>
+    <element id="Extension.extension:citizenScore">
+      <path value="Extension.extension" />
+      <sliceName value="citizenScore" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:citizenScore.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="citizenScore" />
+    </element>
+    <element id="Extension.extension:citizenScore.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-citizen-performance-scores" />
+      </binding>
+    </element>
+    <element id="Extension.extension:citizenGoalScore">
+      <path value="Extension.extension" />
+      <sliceName value="citizenGoalScore" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:citizenGoalScore.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="citizenGoalScore" />
+    </element>
+    <element id="Extension.extension:citizenGoalScore.value[x]:valueCoding">
+      <path value="Extension.extension.valueCoding" />
+      <sliceName value="valueCoding" />
+      <type>
+        <code value="Coding" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-citizen-performance-scores" />
+      </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

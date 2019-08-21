@@ -1,0 +1,76 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="fs3-group-mentalfunctions"/>
+    <url value="http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions"/>
+    <version value="0.0.1"/>
+    <name value="Fælles Sprog III, Mentale funktioner"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <description value="Fælles Sprog III, Mentale funktioner" />
+    <content value="complete"/>
+    <concept>
+        <code value="ACQUIRE_SKILLS"/>
+        <display value="Tilegne sig færdigheder"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Tilegne sig færdigheder"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="PROBLEM_SOLVING"/>
+        <display value="Problemløsning"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Problemløsning"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES"/>
+        <display value="Anvende kommunikationsudstyr og -teknikker"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Anvende kommunikationsudstyr og -teknikker"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="ORIENTATION"/>
+        <display value="Orienteringsevne"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Orienteringsevne"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="ENERGY_AND_ACTING_POWER"/>
+        <display value="Energi og handlekraft"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Energi og handlekraft"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="MEMORY"/>
+        <display value="Hukommelse"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Hukommelse"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="FEELING_FUNCTIONS"/>
+        <display value="Følelsesfunktioner"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Følelsesfunktioner"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="OVERALL_COGNITIVE_FUNCTIONS"/>
+        <display value="Overordnede kognitive funktioner"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Overordnede kognitive funktioner"/>
+        </designation>
+    </concept>
+</CodeSystem>

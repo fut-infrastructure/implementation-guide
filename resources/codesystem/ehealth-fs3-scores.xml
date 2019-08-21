@@ -1,0 +1,80 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="fs3-scores"/>
+    <url value="http://ehealth.sundhed.dk/cs/fs3-scores"/>
+    <version value="0.0.1"/>
+    <name value="Fælles Sprog III, niveauer"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <description value="Fælles Sprog III, niveauer" />
+    <content value="complete"/>
+    <concept>
+        <code value="0"/>
+        <display value="Ingen eller ubetydelige begrænsninger"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Ingen eller ubetydelige begrænsninger"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="1"/>
+        <display value="Lette begrænsninger"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Lette begrænsninger"/>
+        </designation>
+        <designation>
+            <language value="en-US"/>
+            <value value="Light restrictions"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="2"/>
+        <display value="Moderate begrænsninger"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Moderate begrænsninger"/>
+        </designation>
+        <designation>
+            <language value="en-US"/>
+            <value value="Moderate restrictions"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="3"/>
+        <display value="Svære begrænsninger"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Svære begrænsninger"/>
+        </designation>
+        <designation>
+            <language value="en-US"/>
+            <value value="Severe restrictions"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="Totale begrænsninger"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Totale begrænsninger"/>
+        </designation>
+        <designation>
+            <language value="en-US"/>
+            <value value="Total restrictions"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="9"/>
+        <display value="Ikke relevant"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Ikke relevant"/>
+        </designation>
+        <designation>
+            <language value="en-US"/>
+            <value value="Not relevant"/>
+        </designation>
+    </concept>
+</CodeSystem>

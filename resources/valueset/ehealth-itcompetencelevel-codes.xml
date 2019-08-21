@@ -1,0 +1,59 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="competence-percentage-codes"/>
+  <url value="http://ehealth.sundhed.dk/vs/itcompetencelevel-codes"/>
+  <version value="0.0.1"/>
+  <name value="MessageCategory"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-08"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <contact>
+    <name value="ehealth.sundhed.dk"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://ehealth.sundhed.dk/terminology"/>
+    </telecom>
+  </contact>
+  <description value="The set of possible message types" />
+  <compose>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/fs3-scores"/>
+    </include>
+    <include>
+      <system value="http://ehealth.sundhed.dk/cs/percentage-codes"/>
+      <concept>
+        <code value="0"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+      </concept>
+      <concept>
+        <code value="20"/>
+      </concept>
+      <concept>
+        <code value="30"/>
+      </concept>
+      <concept>
+        <code value="40"/>
+      </concept>
+      <concept>
+        <code value="50"/>
+      </concept>
+      <concept>
+        <code value="60"/>
+      </concept>
+      <concept>
+        <code value="70"/>
+      </concept>
+      <concept>
+        <code value="80"/>
+      </concept>
+      <concept>
+        <code value="90"/>
+      </concept>
+      <concept>
+        <code value="100"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -16,47 +16,7 @@
     </jurisdiction>
     <compose>
         <include>
-            <system value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
-            <concept>
-                <code value="DK-84"/>
-                <display value="Capital Region of Denmark"/>
-                <designation>
-                    <language value="da-DK"/>
-                    <value value="Hovedstaden"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="DK-82"/>
-                <display value="Central Denmark Region"/>
-                <designation>
-                    <language value="da-DK"/>
-                    <value value="Midtjylland"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="DK-81"/>
-                <display value="Nord Denmark Region"/>
-                <designation>
-                    <language value="da-DK"/>
-                    <value value="Nordjylland"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="DK-85"/>
-                <display value="Region Zealand"/>
-                <designation>
-                    <language value="da-DK"/>
-                    <value value="Sjælland"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="DK-83"/>
-                <display value="Region of Southern Denmark"/>
-                <designation>
-                    <language value="da-DK"/>
-                    <value value="Syddanmark"/>
-                </designation>
-            </concept>
+            <system value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
         </include>
     </compose>
 </ValueSet>

@@ -27,5 +27,13 @@
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.valueCodeableConcept.coding" />
+      <definition value="A reference to a code defined by a terminology system" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/itcompetencelevel-codes" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
