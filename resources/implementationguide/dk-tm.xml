@@ -999,11 +999,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-fs3-groups"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="CodeSystem/ehealth-fs3-scores"/>
       </sourceReference>
     </resource>
@@ -1465,12 +1460,6 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-fs3-categories"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/ehealth-fs3-groups"/>
       </sourceReference>
     </resource>
     <resource>

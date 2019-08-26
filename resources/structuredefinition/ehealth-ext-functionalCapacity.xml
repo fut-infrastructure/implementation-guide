@@ -33,31 +33,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:group">
-      <path value="Extension.extension" />
-      <sliceName value="group" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:group.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="group" />
-    </element>
-    <element id="Extension.extension:group.value[x]:valueCoding">
-      <path value="Extension.extension.valueCoding" />
-      <sliceName value="valueCoding" />
-      <type>
-        <code value="Coding" />
-      </type>
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/fs3-groups" />
-      </binding>
-    </element>
-    <element id="Extension.extension:group.value[x]:valueCoding.code">
-      <path value="Extension.extension.valueCoding.code" />
-      <min value="1" />
-    </element>
     <element id="Extension.extension:code">
       <path value="Extension.extension" />
       <sliceName value="code" />

@@ -317,7 +317,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/fs3-group-mobility`
 - Added `http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks`
 - Added `http://ehealth.sundhed.dk/cs/fs3-group-selfcare`
-- Added `http://ehealth.sundhed.dk/cs/fs3-groups`
 - Added `http://ehealth.sundhed.dk/cs/fs3-health-communication`
 - Added `http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials`
 - Added `http://ehealth.sundhed.dk/cs/fs3-health-function-level`
@@ -363,7 +362,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/fs3-categories`
 - Added `http://ehealth.sundhed.dk/vs/fs3-citizen-importance-scores`
 - Added `http://ehealth.sundhed.dk/vs/fs3-citizen-performance-scores`
-- Added `http://ehealth.sundhed.dk/vs/fs3-groups`
 - Added `http://ehealth.sundhed.dk/vs/fs3-health`
 - Added `http://ehealth.sundhed.dk/vs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/vs/itcompetencelevel-codes`
