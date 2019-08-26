@@ -117,6 +117,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed it-competence-level multiplicity from 0-1 to 0-*, and added ValueSet (ehealth-itcompetencelevel-codes)
 - Added FS3 ValueSets/CodeSystems for ehealth-functionalCapacity extension, and updated description. Citizen-fields added.
 - FunktionalCapacity score code is now required
+- Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description
@@ -309,6 +310,28 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/modifier-role`
 - Added `http://ehealth.sundhed.dk/cs/conditions`
 - Added `http://ehealth.sundhed.dk/cs/device-use-reason`
+- Added `http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores`
+- Added `http://ehealth.sundhed.dk/cs/fs3-citizen-performance-scores`
+- Added `http://ehealth.sundhed.dk/cs/fs3-group-communitylife`
+- Added `http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions`
+- Added `http://ehealth.sundhed.dk/cs/fs3-group-mobility`
+- Added `http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks`
+- Added `http://ehealth.sundhed.dk/cs/fs3-group-selfcare`
+- Added `http://ehealth.sundhed.dk/cs/fs3-groups`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-communication`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-function-level`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-musculoskeletal`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-nutrition`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-pain-and-sensory-impressions`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-respiration-and-circulation`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-sexuality`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-skin-and-mucous-membranes`
+- Added `http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest`
+- Added `http://ehealth.sundhed.dk/cs/fs3-scores`
+- Added `http://ehealth.sundhed.dk/cs/percentage-codes`
 - Changed `http://ehealth.sundhed.dk/cs/careplan-status`
 - Changed `http://ehealth.sundhed.dk/cs/careteam-participant-role`
 - Changed `http://ehealth.sundhed.dk/cs/clinicalimpression-codes`
@@ -337,6 +360,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/practice-setting-codes`, referenced by
   - `ehealth-documentreference`
 - Added `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Added `http://ehealth.sundhed.dk/vs/fs3-categories`
+- Added `http://ehealth.sundhed.dk/vs/fs3-citizen-importance-scores`
+- Added `http://ehealth.sundhed.dk/vs/fs3-citizen-performance-scores`
+- Added `http://ehealth.sundhed.dk/vs/fs3-groups`
+- Added `http://ehealth.sundhed.dk/vs/fs3-health`
+- Added `http://ehealth.sundhed.dk/vs/fs3-scores`
+- Added `http://ehealth.sundhed.dk/vs/itcompetencelevel-codes`
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 - Changed `http://ehealth.sundhed.dk/vs/careplan-category`
 - Changed `ehealth-careplan-status`
@@ -390,6 +420,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-correspondance)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `category` to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
+- Removed from IG as per customer request
 
 #### Communication (ehealth-message)
 - Changed referenced resources to use aggregation type "referenced"

@@ -243,11 +243,11 @@
         <reference value="StructureDefinition/ehealth-consent"/>
       </sourceReference>
     </resource>
-    <resource>
+    <!--resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-correspondance"/>
       </sourceReference>
-    </resource>
+    </resource-->
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-device"/>
@@ -1037,6 +1037,67 @@
         <reference value="CodeSystem/snomed"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-communication"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-excretion-of-waste-materials"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-function-level"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-knowledge-and-development"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-musculoskeletal"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-nutrition"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-pain-and-sensory-impressions"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-psychosocial-conditions"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-respiration-and-circulation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-sexuality"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-skin-and-mucous-membranes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-fs3-health-sleep-and-rest"/>
+      </sourceReference>
+    </resource>
+
     <!-- ValueSets-->
 
     <resource>
@@ -1416,6 +1477,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-fs3-scores"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-fs3-health"/>
       </sourceReference>
     </resource>
     <resource>

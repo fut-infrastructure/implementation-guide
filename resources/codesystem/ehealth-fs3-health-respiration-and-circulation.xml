@@ -1,0 +1,28 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="fs3-health-respiration-and-circulation"/>
+    <url value="http://ehealth.sundhed.dk/cs/fs3-health-respiration-and-circulation"/>
+    <version value="0.0.1"/>
+    <name value="Fælles Sprog III, Respiration og cirkulation"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <description value="Fælles Sprog III, Respiration og cirkulation" />
+    <content value="complete"/>
+    <concept>
+        <code value="RESPIRATION"/>
+        <display value="Respirationsproblemer"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Respirationsproblemer"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="CIRCULATION"/>
+        <display value="Cirkulationsproblemer"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Cirkulationsproblemer"/>
+        </designation>
+    </concept>
+</CodeSystem>
