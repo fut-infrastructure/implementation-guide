@@ -2,7 +2,7 @@
   <id value="competence-percentage-codes"/>
   <url value="http://ehealth.sundhed.dk/vs/itcompetencelevel-codes"/>
   <version value="0.0.1"/>
-  <name value="MessageCategory"/>
+  <name value="IT Competence Level codes"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2019-02-08"/>
