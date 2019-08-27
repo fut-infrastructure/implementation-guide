@@ -3,6 +3,11 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+### Code systems
+- Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
+
+### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
 
 ### General changes
 - Added list of error messages
