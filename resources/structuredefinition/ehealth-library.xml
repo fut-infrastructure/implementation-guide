@@ -63,6 +63,20 @@
       <path value="Library.version" />
       <min value="1" />
     </element>
+    <element id="Library.type">
+      <path value="Library.type" />
+      <short value="logic-library | model-definition | asset-collection | module-definition | automated-processing" />
+      <definition value="Identifies the type of library such as a Logic Library, Model Definition, Asset Collection, Module Definition, or Automated Processing." />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="LibraryType" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/library-type" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="Library.parameter">
       <path value="Library.parameter" />
       <min value="1" />
