@@ -9,6 +9,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
 
+#### Library (ehealth-library)
+- Changed Library.type value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`
+
 ### General changes
 - Added list of error messages
 - Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide)
