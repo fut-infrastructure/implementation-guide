@@ -1092,6 +1092,11 @@
         <reference value="CodeSystem/ehealth-fs3-health-sleep-and-rest"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-library-type"/>
+      </sourceReference>
+    </resource>
 
     <!-- ValueSets-->
 
@@ -1484,6 +1489,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-fs3-citizen-performance-scores"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-library-type"/>
       </sourceReference>
     </resource>
 
