@@ -22,6 +22,16 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `GENERAL_RESOURCE_NOT_FOUND`: Resource %s with id %s is not found.
 
+- `GENERAL_EXTERNAL_RESOURCE_REFERENCE_NOT_FOUND`: External resource reference not found: %s
+
+- `GENERAL_ONLY_JSON_PATCH_ALLOWED`: Only JSON PATCH is allowed
+
+- `GENERAL_JSON_PATCH_VALIDATION_FAILED`: JSON patch validation failed: %s
+
+- `GENERAL_FORBIDDEN_JSON_PATCH_PATH`: Forbidden JSON PATCH path: %s
+
+- `GENERAL_INTERNAL_ERROR`: Detailed error: %s
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_NOT_FOUND`: ActivityDefinition with id %s is not found.
@@ -69,4 +79,28 @@ If a requests result in an error, the error message can be obtained from the `di
 - `PLANDEFINITION_VALIDATE_MANDATORY_ACTIVITYDEFINITION_OR_SUBPLAN_REFERENCE`: At least one activity definition or subplan should be referenced.
 
 - `PLANDEFINITION_VALIDATE_ALL_REFERENCED_ACTIVITYDEFINITIONS_OR_SUBPLANS_SHOULD_BE_ACTIVE`: All referenced activity definitions or subplans should be with state: "active".
+
+#### ehealth-patient
+
+- `PATIENT_OFFICIAL_NAME_CHANGE_NOT_ALLOWED`: Official name change not allowed
+
+- `PATIENT_CPR_CHANGE_IS_NOT_ALLOWED`: CPR change is not allowed
+
+- `PATIENT_HOME_ADDRESS_CHANGE_IS_NOT_ALLOWED`: Home address change is not allowed
+
+- `PATIENT_ADDRESS_VALIDATION_FALIED`: Patient address validation failed: %s
+
+- `PATIENT_IDENTIFIER_MUST_BE_OF_TYPE_CRN`: Identifier must be of type CRN
+
+#### ehealth-message
+
+- `COMMUNICATION_EXACTLY_ONE_RECIPIENT_OR_CARE_TEAM_RECIPIENT_MUST_BE_SUPPLIED`: Exactly one recipient or CareTeam recipient must be supplied
+
+- `COMMUNICATION_EXACTLY_ONE_SENDER_OR_CARE_TEAM_SENDER_MUST_BE_SUPPLIED`: Exactly one sender or CareTeam sender must be supplied
+
+- `COMMUNICATION_UPDATE_TO_CATEGORY_IS_NOT_ALLOWED`: Update to category is not allowed: %s
+
+- `COMMUNICATION_JSON_PATCH_IS_ONLY_ALLOWED_FOR_NOTE`: JSON patch is only allowed for category '%s' (current is '%s')
+
+- `COMMUNICATION_EXACTLY_ONE_MESSAGE_CATEGORY_IS_EXPECTED_ACTUAL`: Exactly one message category is expected. Actual: %s
 
