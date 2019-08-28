@@ -71,7 +71,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="LibraryType" />
         </extension>
-        <strength value="extensible" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/library-type" />
         </valueSetReference>
