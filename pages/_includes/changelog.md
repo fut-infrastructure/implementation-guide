@@ -10,7 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
 
 #### Library (ehealth-library)
-- Changed Library.type value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`
+- Changed Library.type value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
 
 ### General changes
 - Added list of error messages
