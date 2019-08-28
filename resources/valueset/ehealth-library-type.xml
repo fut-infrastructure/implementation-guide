@@ -23,14 +23,6 @@
         </include>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/library-type"/>
-            <concept>
-                <code value="automated-processing"/>
-                <display value="Automated Processing"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Automated Processing"/>
-                </designation>
-            </concept>
         </include>
     </compose>
 </ValueSet>
