@@ -8,13 +8,17 @@
 def pipeline = new io.estrado.Pipeline()
 def label = "${env.BUILD_TAG}".toLowerCase().replaceAll(/[^-\w]/, '-')
 
-podTemplate(label: label, containers: [
+podTemplate(label: label,
+  containers: [
     containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:3.27-1-alpine', args: '${computer.jnlpmac} ${computer.name}', workingDir: '/home/jenkins', resourceRequestCpu: '200m', resourceLimitCpu: '500m', resourceRequestMemory: '256Mi', resourceLimitMemory: '512Mi'),
-    containerTemplate(name: 'igpublisher', image: '275145157824.dkr.ecr.eu-west-1.amazonaws.com/admin/igpublisher:2019-06-20', command: 'cat', ttyEnabled: true)
-],
-volumes:[
-    hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
-]){
+    containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2019-08-20', command: 'cat', ttyEnabled: true)
+  ],
+  imagePullSecrets: [
+      'harbor'
+  ],
+  volumes:[
+      hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
+  ]){
 
   node (label) {
 
