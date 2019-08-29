@@ -11,7 +11,7 @@ def label = "${env.BUILD_TAG}".toLowerCase().replaceAll(/[^-\w]/, '-')
 podTemplate(label: label,
   containers: [
     containerTemplate(name: 'jnlp', image: 'jenkinsci/jnlp-slave:3.27-1-alpine', args: '${computer.jnlpmac} ${computer.name}', workingDir: '/home/jenkins', resourceRequestCpu: '200m', resourceLimitCpu: '500m', resourceRequestMemory: '256Mi', resourceLimitMemory: '512Mi'),
-    containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2019-08-20', command: 'cat', ttyEnabled: true)
+    containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2019-06-20', command: 'cat', ttyEnabled: true)
   ],
   imagePullSecrets: [
       'harbor'
