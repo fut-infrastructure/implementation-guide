@@ -41,11 +41,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
       </type>
     </element>
-    <element id="Patient.extension:itcompetencelevel.valueCodeableConcept:valueCodeableConcept">
-      <path value="Patient.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)" />
-    </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="interpreterRequired" />
@@ -256,16 +251,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <aggregation value="referenced" />
       </type>
-    </element>
-    <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <aggregation value="referenced" />
-      </type>
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

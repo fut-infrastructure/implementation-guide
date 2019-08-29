@@ -127,6 +127,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - FunktionalCapacity score code is now required
 - Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
 - Added it-competence-level support for device-type and description data
+- Removed managingOrganization requirement as consequence of issue FUT1-1586
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description
