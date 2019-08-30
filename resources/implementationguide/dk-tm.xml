@@ -385,11 +385,11 @@
         <reference value="StructureDefinition/Extension-ehealth-careplan-statushistory"/>
       </sourceReference>
     </resource>
-    <resource>
+    <!--resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisionrule"/>
       </sourceReference>
-    </resource>
+    </resource-->
 	<resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-communication-recipientcareteam"/>
