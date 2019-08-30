@@ -387,7 +387,12 @@
     </resource>
     <!--resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisionrule"/>
+        <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-careplan"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-clinicalimpression-decisioncontext"/>
       </sourceReference>
     </resource-->
 	<resource>

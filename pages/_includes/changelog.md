@@ -62,6 +62,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
+- Added extension `decisionContext`
+- Removed extension `decisionRule`
 
 #### Library (ehealth-library)
 - Removed extension `basedOn`

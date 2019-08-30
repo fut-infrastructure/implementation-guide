@@ -30,11 +30,18 @@
     <element id="ClinicalImpression.extension:careplan">
       <path value="ClinicalImpression.extension" />
       <sliceName value="careplan" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan" />
+      </type>
+    </element>
+    <element id="ClinicalImpression.extension:decisionContext">
+      <path value="ClinicalImpression.extension" />
+      <sliceName value="decisionContext" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionContext" />
       </type>
     </element>
     <element id="ClinicalImpression.code">
@@ -118,39 +125,6 @@
     <element id="ClinicalImpression.investigation">
       <path value="ClinicalImpression.investigation" />
       <short value="One or more sets of investigations (signs, symptoms, etc.)" />
-    </element>
-    <element id="ClinicalImpression.investigation.extension">
-      <path value="ClinicalImpression.investigation.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule">
-      <path value="ClinicalImpression.investigation.extension" />
-      <sliceName value="decisionRule" />
-      <short value="Decision rule." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionRule" />
-      </type>
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters">
-      <path value="ClinicalImpression.investigation.extension.extension" />
-      <sliceName value="outputParameters" />
-    </element>
-    <element id="ClinicalImpression.investigation.extension:decisionRule.extension:outputParameters.valueReference:valueReference">
-      <path value="ClinicalImpression.investigation.extension.extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Parameters" />
-        <aggregation value="contained" />
-        <aggregation value="referenced" />
-      </type>
     </element>
     <element id="ClinicalImpression.investigation.item">
       <path value="ClinicalImpression.investigation.item" />
