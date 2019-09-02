@@ -104,3 +104,6 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `COMMUNICATION_EXACTLY_ONE_MESSAGE_CATEGORY_IS_EXPECTED_ACTUAL`: Exactly one message category is expected. Actual: %s
 
+- `COMMUNICATION_MEDIUM_EBOKS_OR_NEMSMS_REQUIRES_PATIENT_RECIPIENT`: A recipient of type Patient is required for this medium: %s
+
+- `COMMUNICATION_PATIENT_NEMSMS_NOT_ALLOWED`: Patient does not allow telecom medium NemSMS
