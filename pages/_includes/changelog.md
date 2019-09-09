@@ -128,7 +128,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added FS3 ValueSets/CodeSystems for ehealth-functionalCapacity extension, and updated description. Citizen-fields added.
 - FunktionalCapacity score code is now required
 - Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
-- Added it-competence-level support for device-type and description data
+- Added it-competence-level support for score, device-type and description data
 - Removed managingOrganization requirement as consequence of issue FUT1-1586
 
 #### Practitioner (ehealth-practitioner)
@@ -161,6 +161,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Appointment (ehealth-appointment)
 - Changed referenced resources to use aggregation type "referenced"
+- Appointment type changed from extensible to required
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - Changed referenced resources to use aggregation type "referenced"
@@ -217,9 +218,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Media (ehealth-media)
 - Added Encounter as possible reference type for `context`
-
-#### Patient (ehealth-patient) 
-- Changed referenced resources to use aggregation type "referenced"
 
 #### RelatedPerson (ehealth-patient-relatedPerson)
 - Changed referenced resources to use aggregation type "referenced"

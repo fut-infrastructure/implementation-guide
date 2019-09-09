@@ -41,6 +41,17 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
       </type>
     </element>
+    <element id="Patient.extension:itcompetencelevel.extension:score">
+      <path value="Patient.extension.extension" />
+      <sliceName value="score" />
+    </element>
+    <element id="Patient.extension:itcompetencelevel.extension:score.valueCodeableConcept:valueCodeableConcept.coding">
+      <path value="Patient.extension.extension.valueCodeableConcept.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/itcompetencelevel-codes" />
+      </binding>
+    </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
       <sliceName value="interpreterRequired" />
@@ -207,6 +218,20 @@
         <code value="Address" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
+    </element>
+    <element id="Patient.contact.address.extension:regionalSubdivisionCode">
+      <path value="Patient.contact.address.extension" />
+      <sliceName value="regionalSubdivisionCode" />
+    </element>
+    <element id="Patient.contact.address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding">
+      <path value="Patient.contact.address.extension.valueCodeableConcept.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.contact.organization">
       <path value="Patient.contact.organization" />

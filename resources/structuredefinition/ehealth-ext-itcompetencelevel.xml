@@ -59,6 +59,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:score.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.extension.valueCodeableConcept.coding" />
       <binding>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/itcompetencelevel-codes" />

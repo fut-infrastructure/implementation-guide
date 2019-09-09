@@ -42,11 +42,11 @@
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
+    </element>
+    <element id="Appointment.appointmentType.coding">
+      <path value="Appointment.appointmentType.coding" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="appointment-type" />
-        </extension>
-        <strength value="extensible" />
+        <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/appointmenttype-codes" />
       </binding>
     </element>
