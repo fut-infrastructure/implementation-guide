@@ -72,20 +72,10 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
         <aggregation value="referenced" />
       </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <aggregation value="referenced" />
-      </type>
     </element>
     <element id="ClinicalImpression.context">
       <path value="ClinicalImpression.context" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
-        <aggregation value="referenced" />
-      </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />

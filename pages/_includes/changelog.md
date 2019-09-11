@@ -64,6 +64,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `careplan`
 - Added extension `decisionContext`
 - Removed extension `decisionRule`
+- Removed option "Encounter" from 'context'
+- Removed option "Group" from 'subject'
 
 #### Library (ehealth-library)
 - Removed extension `basedOn`
