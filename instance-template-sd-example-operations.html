@@ -41,13 +41,13 @@ tcode: {{[type]}}
               {% if "{{[type]}}" == "StructureDefinition" %}
               <li class="{% if page.path == "{{[type]}}-{{[id]}}-definitions.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
               <li class="{% if page.path == "{{[type]}}-{{[id]}}-examples.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
-              <li class="{% if page.path == "{{[type]}}-{{[id]}}-example-operations.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-example-operations.html">Example operations</a></li>
-              <!-- <li class="{% if page.path == "OperationDefinition-{{[id]}}-operations.html" %}active{% endif %}"><a href="OperationDefinition-{{[id]}}-operations.html">Operations</a></li>
+             <!-- <li class="{% if page.path == "{{[type]}}-{{[id]}}-example-operations.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-example-operations.html">Example operations</a></li>
+            --><!-- <li class="{% if page.path == "OperationDefinition-{{[id]}}-operations.html" %}active{% endif %}"><a href="OperationDefinition-{{[id]}}-operations.html">Operations</a></li>
               {% endif %} -->
               <li class="{% if page.path == "{{[type]}}-{{[id]}}.xml.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
               <li class="{% if page.path == "{{[type]}}-{{[id]}}.json.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
             </ul>
-
+<!--
             <a name="root"> </a>
             <h2 id="root">StructureDefinition: {{[title]}} - Operation examples</h4>
             {% capture profile_id %}{{[id]}}{% endcapture %}
@@ -57,7 +57,7 @@ tcode: {{[type]}}
                 <hr>
               {% endif %}
             {% endfor %}
-
+-->
           </div>
 
          </div>

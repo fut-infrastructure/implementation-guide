@@ -42,8 +42,8 @@
                     {% if "{{[type]}}" == "StructureDefinition" %}
                       <li class="{% if page.path == "{{[type]}}-{{[id]}}-definitions.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-definitions.html">Detailed Descriptions</a></li>
                       <li class="{% if page.path == "{{[type]}}-{{[id]}}-examples.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-examples.html">Examples</a></li>
-                      <li class="{% if page.path == "{{[type]}}-{{[id]}}-example-operations.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-example-operations.html">Example operations</a></li>
-                    {% endif %}
+                      <!--<li class="{% if page.path == "{{[type]}}-{{[id]}}-example-operations.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}-example-operations.html">Example operations</a></li>
+                      -->{% endif %}
                     <li class="{% if page.path == "{{[type]}}-{{[id]}}.xml.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
                     <li class="{% if page.path == "{{[type]}}-{{[id]}}.json.html" %}active{% endif %}"><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
                 </ul>

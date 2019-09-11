@@ -31,8 +31,8 @@
         "template-base": "instance-template-sd.html",
         "template-defns": "instance-template-sd-definitions.html",
         "template-mappings": "instance-template-sd-mappings.html",
-        "template-examples": "instance-template-sd-examples.html",
-        "template-example-operations": "instance-template-sd-example-operations.html"
+        "template-examples": "instance-template-sd-examples.html"
+        
       }
     },
     "gen-examples": "true",
@@ -59,10 +59,7 @@
       "html",
       "tx"
     ],
-    "pre-process" : [{
-      "folder" : "exampleOperations",
-      "relativePath" : "_includes"
-   }],
+    
     "special-urls" : [
       "http://ehealth.sundhed.dk/cs/activitydefinition-codes",
       "http://ehealth.sundhed.dk/cs/careplan-category",
