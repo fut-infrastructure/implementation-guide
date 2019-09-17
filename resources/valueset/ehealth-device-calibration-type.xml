@@ -1,0 +1,27 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-device-calibration-type"/>
+    <url value="http://ehealth.sundhed.dk/vs/device-calibration-type"/>
+    <version value="0.6.0"/>
+    <name value="Device calibration type"/>
+    <title value="Device calibration type"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-09-16"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Device calibration type"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/metric-calibration-type"/>
+        </include>
+    </compose>
+</ValueSet>
+
+
+

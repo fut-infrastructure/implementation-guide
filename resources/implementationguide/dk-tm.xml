@@ -829,6 +829,26 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-device-calibration-actor"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-device-calibration-period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-device-safety"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-device-service-types"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-devicemetric-property-types"/>
       </sourceReference>
     </resource>
@@ -1265,6 +1285,36 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="ValueSet/ehealth-device-calibration-actor"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-calibration-period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-calibration-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-safety"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-service-types"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/ehealth-devicemetric-property-types"/>
       </sourceReference>
     </resource>
@@ -1350,6 +1400,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-sor-organization-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-ssl-catalogue-item-annotations"/>
       </sourceReference>
     </resource>
     <resource>
