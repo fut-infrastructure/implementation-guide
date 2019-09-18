@@ -19,13 +19,29 @@
     <compose>
         <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-calibration-actor"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-measurement-unit"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-calibration-period"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-calibration-type"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-safety"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-types"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/usage-quality"/>
+        </include>
+        <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-measuring-quality"/>
         </include>
     </compose>
