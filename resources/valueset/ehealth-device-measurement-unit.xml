@@ -18,7 +18,7 @@
     <description value="Device measurement unit"/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/device-measurement-unit"/>
+            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
             <concept>
                 <code value="NPU03011"/>
                 <display value="O2 sat.;Hb(aB)"/>

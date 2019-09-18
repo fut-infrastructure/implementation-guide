@@ -5,10 +5,21 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 ### Code systems
 - Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
+- Added `http://ehealth.sundhed.dk/cs/device-safety`
+- Added `http://ehealth.sundhed.dk/cs/device-calibration-period`
+- Added `http://ehealth.sundhed.dk/cs/device-calibration-actor`
+- Added `http://ehealth.sundhed.dk/cs/device-service-type`
+
 
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
-
+- Added `http://ehealth.sundhed.dk/vs/device-measurement-unit` 
+- Added `http://ehealth.sundhed.dk/vs/device-safety`
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-type` 
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-period` 
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-actor` 
+- Added `http://ehealth.sundhed.dk/vs/device-service-types`
+- Added `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`
 #### Library (ehealth-library)
 - Changed Library.type value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
 
