@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-device-measurement-unit"/>
+    <url value="http://ehealth.sundhed.dk/cs/device-measurement-unit"/>
+    <version value="0.6.0"/>
+    <name value="DeviceMeasurementUnit"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-01-29"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Device measurement unit"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="NPU03011"/>
+        <display value="O2 sat.;Hb(aB)"/>
+        <definition value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="NPU21692"/>
+        <display value="Puls;Hjerte"/>
+        <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="NPU03804"/>
+        <display value="Legeme vægt; Pt"/>
+        <definition value="Pt—Legeme; masse = ? kg"/>
+        <designation>
+            <language value="da-DK"/>
+            <value value="Pt—Legeme; masse = ? kg"/>
+        </designation>
+    </concept>
+</CodeSystem>

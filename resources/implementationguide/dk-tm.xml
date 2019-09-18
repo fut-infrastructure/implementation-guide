@@ -829,6 +829,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-device-measurement-unit"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-device-calibration-actor"/>
       </sourceReference>
     </resource>
@@ -1280,6 +1285,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-device-measuring-quality"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-device-measurement-unit"/>
       </sourceReference>
     </resource>
     <resource>
