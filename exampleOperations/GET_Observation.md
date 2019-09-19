@@ -1,10 +1,11 @@
-`GET [base]/Observation/40`
+`GET [base]/Observation/283`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "40",
+  "id": "283",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T08:13:35.670+00:00",
+    "lastUpdated": "2019-09-18T07:45:42.160+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -42,7 +43,9 @@ __Response__
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "TBD"
+                "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                "code": "DMQ",
+                "display": "Device Measuring Quality"
               }
             ]
           }
@@ -52,8 +55,8 @@ __Response__
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                "code": "15a0da94-8cc8-45a9-bf6a-a78996b01191"
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
               }
             ]
           }
@@ -63,7 +66,7 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/67940"
+      "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/45676"
     }
   ],
   "status": "amended",
@@ -73,25 +76,26 @@ __Response__
         "system": "http://sundhedsdatastyrelsen.dk/npu",
         "code": "NPU03011"
       }
-    ]
+    ],
+    "text": "f5b3021c-dfed-49ad-9e2a-dbdf6f2dc8df"
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/39567"
+    "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/2045"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/27417"
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/59843"
   },
   "effectivePeriod": {
-    "start": "2019-05-29T10:13:35+02:00",
-    "end": "2019-05-29T10:13:35+02:00"
+    "start": "2019-09-18T09:45:42+02:00",
+    "end": "2019-09-18T09:45:42+02:00"
   },
   "performer": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/25841"
+      "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/60684"
     }
   ],
   "device": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/50276"
+    "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/51130"
   }
 }
 ```

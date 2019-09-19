@@ -1,10 +1,11 @@
-`POST [base]/PlanDefinition/314/$apply`
+`POST [base]/PlanDefinition`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJQbGFuRGVmaW5pdGlvbi5jcmVhdGUiLCJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbi5yZWFkIl0sIm9yZ2FuaXphdGlvbkNvbnRleHRJZCI6Imh0dHA6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzg5NTYxIiwidXNlclR5cGUiOiJQQVRJRU5UIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -12,73 +13,78 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType": "PlanDefinition",
+  "meta": {
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
+    ]
+  },
+  "extension": [
     {
-      "name": "episodeOfCare",
-      "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/316"
-      }
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+      "extension": [
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/89561"
+          }
+        },
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                "code": "owner"
+              }
+            ]
+          }
+        }
+      ]
     }
-  ]
+  ],
+  "version": "74a9f552-eddd-41b9-b36f-2d3e17e6062a",
+  "status": "active"
 }
 ```
 
 __Response__
 ```json
 {
-  "resourceType": "CarePlan",
-  "id": "322",
+  "resourceType": "PlanDefinition",
+  "id": "90",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T09:14:32.601+00:00",
+    "lastUpdated": "2019-09-18T08:02:49.370+00:00",
     "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
   },
-  "definition": [
+  "extension": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/PlanDefinition/314"
-    }
-  ],
-  "status": "active",
-  "intent": "order",
-  "category": [
-    {
-      "coding": [
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+      "extension": [
         {
-          "system": "http://snomed.info/sct",
-          "code": "412776001",
-          "display": "Chronic obstructive pulmonary disease clinical management plan"
+          "url": "reference",
+          "valueReference": {
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/89561"
+          }
+        },
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                "code": "owner"
+              }
+            ]
+          }
         }
       ]
     }
   ],
-  "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/72690"
-  },
-  "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/316"
-  },
-  "period": {
-    "start": "2019-05-29T09:14:32+00:00"
-  },
-  "addresses": [
-    {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Condition/315"
-    }
-  ],
-  "activity": [
-    {
-      "reference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/320"
-      }
-    },
-    {
-      "reference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/321"
-      }
-    }
-  ]
+  "version": "74a9f552-eddd-41b9-b36f-2d3e17e6062a",
+  "status": "active"
 }
 ```

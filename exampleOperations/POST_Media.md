@@ -3,8 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -43,6 +44,7 @@ __Body__:
                 "valueCodeableConcept": {
                   "coding": [
                     {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "TBD"
                     }
                   ]
@@ -53,8 +55,8 @@ __Body__:
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                      "code": "fa3915a5-70b1-47b1-880b-6fa959418c05"
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "TBD"
                     }
                   ]
                 }
@@ -64,15 +66,15 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/57684"
+            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/8953"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/5947"
+          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/37431"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/77247"
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/27105"
         },
         "content": {
           "language": "en"
@@ -89,7 +91,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ch1\u003eOperation Outcome\u003c/h1\u003e\u003ctable border\u003d\"0\"\u003e\u003ctr\u003e\u003ctd style\u003d\"font-weight: bold;\"\u003eINFORMATION\u003c/td\u003e\u003ctd\u003e[]\u003c/td\u003e\u003ctd\u003e\u003cpre\u003eNo issues detected during validation\u003c/pre\u003e\u003c/td\u003e\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\u003c/tr\u003e\r\n\t\t\u003c/table\u003e\r\n\t\u003c/div\u003e"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {

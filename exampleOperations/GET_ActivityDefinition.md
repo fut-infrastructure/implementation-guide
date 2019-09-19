@@ -1,10 +1,11 @@
-`GET [base]/ActivityDefinition/1`
+`GET [base]/ActivityDefinition/6`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJBY3Rpdml0eURlZmluaXRpb24udXBkYXRlIiwic3lzdGVtLyR0ZXN0LW9ubHktY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdLCJ1c2VyVHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,15 +15,54 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "1",
+  "id": "6",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T09:13:49.358+00:00",
+    "lastUpdated": "2019-09-18T08:02:09.636+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
   },
   "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/74129"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+      "extension": [
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/7502"
+          }
+        },
+        {
+          "url": "role",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                "code": "owner"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange",
       "extension": [
@@ -71,46 +111,7 @@ __Response__
             "coding": [
               {
                 "system": "http://ehealth.sundhed.dk/cs/usage-quality",
-                "code": "a8df39d0-d33d-4196-a428-1e1a76d10403"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
-            "code": "TBD"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/29222"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
-      "extension": [
-        {
-          "url": "reference",
-          "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/53797"
-          }
-        },
-        {
-          "url": "role",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/modifier-role",
-                "code": "owner"
+                "code": "TBD"
               }
             ]
           }
@@ -118,15 +119,15 @@ __Response__
       ]
     }
   ],
-  "version": "24dc5b91-cf80-4ce9-b7c7-275cce9a5cf6",
-  "name": "6e337fa6-b996-4e66-94e0-805c69cd8d37",
+  "version": "87fe9d91-c198-4a39-8d83-281f534f0e76",
+  "name": "6daff3a2-315d-41ea-a6a9-2bb086d030fb",
   "status": "active",
   "topic": [
     {
       "coding": [
         {
           "system": "http://hl7.org/fhir/definition-topic",
-          "code": "assessment"
+          "code": "treatment"
         }
       ]
     }

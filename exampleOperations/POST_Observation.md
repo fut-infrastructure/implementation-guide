@@ -3,8 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -38,7 +39,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/76465"
+            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/2082"
           }
         ],
         "status": "amended",
@@ -51,22 +52,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/75057"
+          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/94110"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/17292"
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/40399"
         },
         "effectivePeriod": {
-          "start": "2019-05-29T10:13:43+02:00",
-          "end": "2019-05-29T10:13:43+02:00"
+          "start": "2019-09-18T09:44:47+02:00",
+          "end": "2019-09-18T09:44:47+02:00"
         },
         "performer": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/56039"
+            "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/88651"
           }
         ],
         "device": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/Device/28279"
+          "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/93757"
         }
       }
     }
@@ -80,7 +81,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003ch1\u003eOperation Outcome\u003c/h1\u003e\u003ctable border\u003d\"0\"\u003e\u003ctr\u003e\u003ctd style\u003d\"font-weight: bold;\"\u003eINFORMATION\u003c/td\u003e\u003ctd\u003e[]\u003c/td\u003e\u003ctd\u003e\u003cpre\u003eNo issues detected during validation\u003c/pre\u003e\u003c/td\u003e\r\n\t\t\t\t\t\r\n\t\t\t\t\r\n\t\t\t\u003c/tr\u003e\r\n\t\t\u003c/table\u003e\r\n\t\u003c/div\u003e"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {

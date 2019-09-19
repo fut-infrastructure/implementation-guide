@@ -1,10 +1,11 @@
-`GET [base]/Organization?identifier=urn%3Aoid%3A1.2.208.176.1.1%7C0379ff4a-1241-4b8a-ae73-2a4855affb70`
+`GET [base]/Organization?specialty=http%3A%2F%2Fsnomed.info%2Fsct%7C394579002&name%3Aexact=bff6017b-ec89-4e8f-8a8e-6dbb8e55c5a4`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL09yZ2FuaXphdGlvbi5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,62 +15,131 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "864b18da-e4cf-4183-81d4-19c87fc4df80",
+  "id": "e4eadc9b-253b-407f-93bd-113526287f01",
   "meta": {
-    "lastUpdated": "2019-05-29T08:21:28.987+00:00"
+    "lastUpdated": "2019-09-18T05:59:10.787+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization?_format\u003djson\u0026_pretty\u003dtrue\u0026identifier\u003durn%3Aoid%3A1.2.208.176.1.1%7C0379ff4a-1241-4b8a-ae73-2a4855affb70"
+      "url": "http://organization.local.ehealth.sundhed.dk/fhir/Organization?_format=json&_pretty=true&name%3Aexact=bff6017b-ec89-4e8f-8a8e-6dbb8e55c5a4&specialty=http%3A%2F%2Fsnomed.info%2Fsct%7C394579002"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/30",
+      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/253",
       "resource": {
         "resourceType": "Organization",
-        "id": "30",
+        "id": "253",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-29T08:21:28.754+00:00",
+          "lastUpdated": "2019-09-18T05:59:10.259+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
           ]
         },
-        "identifier": [
+        "extension": [
           {
-            "system": "urn:oid:1.2.208.176.1.1",
-            "value": "0379ff4a-1241-4b8a-ae73-2a4855affb70"
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/organization-source",
+                  "code": "manual"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
+                  "code": "NotSynchronized"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/sor-organization-specialty",
+                  "code": "unknown"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394579002"
+                }
+              ]
+            }
           }
         ],
-        "name": "4bb1115a-819b-470e-a10b-e6af6169f341"
+        "name": "bff6017b-ec89-4e8f-8a8e-6dbb8e55c5a4"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/28",
+      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/252",
       "resource": {
         "resourceType": "Organization",
-        "id": "28",
+        "id": "252",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-29T08:21:28.499+00:00",
+          "lastUpdated": "2019-09-18T05:59:10.043+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
           ]
         },
-        "identifier": [
+        "extension": [
           {
-            "system": "urn:oid:1.2.208.176.1.1",
-            "value": "0379ff4a-1241-4b8a-ae73-2a4855affb70"
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/organization-source",
+                  "code": "manual"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
+                  "code": "NotSynchronized"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394579002"
+                }
+              ]
+            }
           }
         ],
-        "name": "d77885e5-0a3f-4204-9606-9ba38a70495b"
+        "name": "bff6017b-ec89-4e8f-8a8e-6dbb8e55c5a4"
       },
       "search": {
         "mode": "match"

@@ -1,6 +1,6 @@
 FROM jruby:9
 
-RUN gem install bundler jekyll
+RUN gem install bundler jekyll:3.8.5
 
 RUN wget 'https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar' -O org.hl7.fhir.igpublisher.jar
 

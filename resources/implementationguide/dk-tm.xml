@@ -700,11 +700,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CapabilityStatement/hapi-fhir-server"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="CapabilityStatement/measurement"/>
       </sourceReference>
     </resource>
@@ -726,6 +721,26 @@
     <resource>
       <sourceReference>
         <reference value="CapabilityStatement/careplan"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/device"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/library"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/plan"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/document-transformation"/>
       </sourceReference>
     </resource>
 

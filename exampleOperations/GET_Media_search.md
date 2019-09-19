@@ -1,10 +1,11 @@
-`GET [base]/Media?subject=http%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F44896&type=audio`
+`GET [base]/Media?subject=http%3A%2F%2Ftrifork-fhir-server.local.ehealth.sundhed.dk%2Ftrifork-fhir-server%2FPatient%2F79868&type=audio`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "a94c42c6-cf83-419f-af35-d97fc19c344c",
+  "id": "5031e0bc-4224-4d9a-b360-7b93fb06446c",
   "meta": {
-    "lastUpdated": "2019-05-29T08:13:33.857+00:00"
+    "lastUpdated": "2019-09-18T07:44:32.586+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/Media?_format\u003djson\u0026_pretty\u003dtrue\u0026subject\u003dhttp%3A%2F%2Flocal.ehealth.sundhed.dk%3A31380%2Ftrifork-fhir-server%2FPatient%2F44896\u0026type\u003daudio"
+      "url": "http://measurement.local.ehealth.sundhed.dk/fhir/Media?_format=json&_pretty=true&subject=http%3A%2F%2Ftrifork-fhir-server.local.ehealth.sundhed.dk%2Ftrifork-fhir-server%2FPatient%2F79868&type=audio"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/Media/35",
+      "fullUrl": "http://measurement.local.ehealth.sundhed.dk/fhir/Media/37",
       "resource": {
         "resourceType": "Media",
-        "id": "35",
+        "id": "37",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-29T08:13:33.717+00:00",
+          "lastUpdated": "2019-09-18T07:44:32.262+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
           ]
@@ -59,6 +60,7 @@ __Response__
                 "valueCodeableConcept": {
                   "coding": [
                     {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "TBD"
                     }
                   ]
@@ -69,8 +71,8 @@ __Response__
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                      "code": "f15265d2-9ac4-4462-a860-870d89b79633"
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "TBD"
                     }
                   ]
                 }
@@ -80,15 +82,15 @@ __Response__
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/72798"
+            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/48397"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/44896"
+          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/79868"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/86768"
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/81347"
         },
         "content": {
           "language": "en"
@@ -99,13 +101,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://local.ehealth.sundhed.dk:31380/measurement/fhir/Media/33",
+      "fullUrl": "http://measurement.local.ehealth.sundhed.dk/fhir/Media/35",
       "resource": {
         "resourceType": "Media",
-        "id": "33",
+        "id": "35",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-05-29T08:13:33.234+00:00",
+          "lastUpdated": "2019-09-18T07:44:31.638+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
           ]
@@ -130,6 +132,7 @@ __Response__
                 "valueCodeableConcept": {
                   "coding": [
                     {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "TBD"
                     }
                   ]
@@ -140,8 +143,8 @@ __Response__
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                      "code": "a57b5b3d-9378-4936-8b0f-1c4690b25341"
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "TBD"
                     }
                   ]
                 }
@@ -151,15 +154,15 @@ __Response__
         ],
         "basedOn": [
           {
-            "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ProcedureRequest/87871"
+            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/8291"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/44896"
+          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/79868"
         },
         "context": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/29465"
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/46929"
         },
         "content": {
           "language": "en"
