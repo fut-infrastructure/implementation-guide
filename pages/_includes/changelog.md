@@ -130,12 +130,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added general resource description
+- Added sharingPolicy extension
 
 #### Condition (ehealth-condition)
 - Added general resource description
 
 #### Media (ehealth-media)
 - Enhanced resource description
+- Removed sharingPolicy extension
 
 #### Patient (ehealth-patient)
 - Added general resource description
@@ -153,6 +155,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Added general resource description
+- Added sharingPolicy extension
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added general resource description
@@ -501,6 +504,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
 - Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
+- Removed sharingPolicy extension
 
 #### Organization (ehealth-organization)
 - Added extensions for `system` and `value` to be used inside `organization.contact.telecom`

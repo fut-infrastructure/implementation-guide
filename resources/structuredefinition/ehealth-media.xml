@@ -35,16 +35,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
       </type>
     </element>
-    <element id="Media.extension:sharingPolicy">
-      <path value="Media.extension" />
-      <sliceName value="sharingPolicy" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
-      </type>
-    </element>
     <element id="Media.basedOn">
       <path value="Media.basedOn" />
       <min value="1" />

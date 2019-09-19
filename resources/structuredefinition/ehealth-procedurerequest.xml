@@ -35,6 +35,17 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange" />
       </type>
     </element>
+    <element id="ProcedureRequest.extension:sharingPolicy">
+      <path value="ProcedureRequest.extension" />
+      <sliceName value="sharingPolicy" />
+      <definition value="Policy for sharing this resource with national data banks." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
+      </type>
+    </element>
     <element id="ProcedureRequest.definition">
       <path value="ProcedureRequest.definition" />
       <min value="1" />
