@@ -24,19 +24,25 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-appointment-toical-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-appointment-toical"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-patient-create-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-patient-create"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-patient-update-operationdefinition"/>
+        <reference value="OperationDefinition/ehealth-patient-skrs-update"/>
+      </sourceReference>
+    </resource>
+        <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-person-lookup"/>
       </sourceReference>
     </resource>
     <resource>
@@ -113,12 +119,7 @@
     </resource>
 
     <!-- Search parameters -->
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="SearchParameter/ehealth-patient-search-managingOrganizationIdentifier"/>
-      </sourceReference>
-    </resource>
+
 
     <resource>
       <example value="false"/>
@@ -695,7 +696,7 @@
     <!-- Capability statement -->
     <resource>
       <sourceReference>
-        <reference value="CapabilityStatement/metadata"/>
+        <reference value="CapabilityStatement/patient"/>
       </sourceReference>
     </resource>
     <resource>
