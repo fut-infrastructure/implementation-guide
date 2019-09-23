@@ -3,25 +3,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
-### Code systems
-- Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
-- Added `http://ehealth.sundhed.dk/cs/device-safety`
-- Added `http://ehealth.sundhed.dk/cs/device-calibration-period`
-- Added `http://ehealth.sundhed.dk/cs/device-calibration-actor`
-- Added `http://ehealth.sundhed.dk/cs/device-service-type`
-
-
-### ValueSets
-- Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
-- Added `http://ehealth.sundhed.dk/vs/device-measurement-unit` 
-- Added `http://ehealth.sundhed.dk/vs/device-safety`
-- Added `http://ehealth.sundhed.dk/vs/device-calibration-type` 
-- Added `http://ehealth.sundhed.dk/vs/device-calibration-period` 
-- Added `http://ehealth.sundhed.dk/vs/device-calibration-actor` 
-- Added `http://ehealth.sundhed.dk/vs/device-service-types`
-- Added `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`
-#### Library (ehealth-library)
-- Changed Library.type value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
 
 ### General changes
 - Added list of error messages
@@ -45,16 +26,32 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Instance operations
 ### Code systems
+- Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
+- Added `http://ehealth.sundhed.dk/cs/device-safety`
+- Added `http://ehealth.sundhed.dk/cs/device-calibration-period`
+- Added `http://ehealth.sundhed.dk/cs/device-calibration-actor`
+- Added `http://ehealth.sundhed.dk/cs/device-service-type`
+- Added `http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes`
 - Added `http://ehealth.sundhed.dk/cs/restriction-category`
 - Added `http://ehealth.sundhed.dk/cs/organization-source`
 - Added `http://ehealth.sundhed.dk/cs/sor-organization-type`
 - Added `http://ehealth.sundhed.dk/cs/sor-organization-specialty`
 - Added `http://ehealth.sundhed.dk/cs/organization-synchronization-status`
-- Added new codes `550891000005100`, `398070004`, `550811000005108`, `557511000005107`, `550411000005105`, `264372000`, `557501000005109`, `554851000005102`, `557531000005103`, `20078004`, `722173008`, `554221000005108`, `554031000005103`, `546821000005103`, `702871004`, `554061000005105`, `276037005`, `550861000005106`, `547011000005103`, `546811000005109`, `554881000005108`, `554861000005100`, `554821000005109`, `550621000005101`, `702824005`, `557591000005104`, `554411000005101`, `550631000005103`, `550641000005106`, `557521000005101`, `557561000005105`, `557541000005106`, `550651000005108`, `550661000005105`, `557581000005102`, `557671000005101`, `42665001`, `554211000005102`, `554871000005105`, `550711000005101`, `556841000005105`, `550821000005102`, `550671000005100`, `264361005`, `554041000005106`, `554021000005101`, `703069008`, `550681000005102`, `550691000005104`, `550701000005104`, `554231000005106`, `554051000005108`, `550871000005101`, `554241000005103`, `309964003`, `550841000005107`, `309904001`, `551611000005102`, `309939001`, `225728007`, `554071000005100`, `550831000005104`, `255203001` to `http://snomed.info/sct`
+- Added new codes `550891000005100`, `398070004`, `550811000005108`, `557511000005107`, `550411000005105`, `264372000`, `557501000005109`, `554851000005102`, `557531000005103`, `20078004`, `722173008`, `554221000005108`, `554031000005103`, `546821000005103`, `702871004`, `554061000005105`, `276037005`, `550861000005106`, `547011000005103`, `546811000005109`, `554881000005108`, `554861000005100`, `554821000005109`, `550621000005101`, `702824005`, `557591000005104`, `554411000005101`, `550631000005103`, `550641000005106`, `557521000005101`, `557561000005105`, `557541000005106`, `550651000005108`, `550661000005105`, `557581000005102`, `557671000005101`, `42665001`, `554211000005102`, `554871000005105`, `550711000005101`, `556841000005105`, `550821000005102`, `550671000005100`, `264361005`, `554041000005106`, `554021000005101`, `703069008`, `550681000005102`, `550691000005104`, `550701000005104`, `554231000005106`, `554051000005108`, `550871000005101`, `554241000005103`, `309964003`, `550841000005107`, `309904001`, `551611000005102`, `309939001`, `225728007`, `554071000005100`, `550831000005104`, `255203001`, `449171008`, `448225001` to `http://snomed.info/sct`
 - Added new specialty codes `394537008`, `394577000`, `394579002`, `394580004`, `394581000`, `394582007`, `394583002`, `394584008`, `394585009`, `394587001`, `394588006`, `394589003`, `394591006`, `394592004`, `394594003`, `394596001`, `394600006`, `394601005`, `394603008`, `394604002`, `394605001`, `394608004`, `394609007`, `394610002`, `394611003`, `394612005`, `394801008`, `394803006`, `394805004`, `394807007`, `394809005`, `394810000`, `394811001`, `394812008`, `394821009`, `394914008`, `394915009`, `408443003`, `408448007`, `408454008`, `408463005`, `408472002`, `418112009`, `419192003`, `421661004`, `551411000005104`, `554011000005107`, `773568002` to `http://snomed.info/sct`
 - Changed `http://ehealth.sundhed.dk/cs/derived-quality-base` so the codes are not in all caps
 
 ### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
+- Added `http://ehealth.sundhed.dk/vs/device-measurement-unit` 
+- Added `http://ehealth.sundhed.dk/vs/device-safety`
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-type` 
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-period` 
+- Added `http://ehealth.sundhed.dk/vs/device-calibration-actor` 
+- Added `http://ehealth.sundhed.dk/vs/device-service-types`
+- Added `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`
+- Added `http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes`
+- Added `http://ehealth.sundhed.dk/vs/restriction-category`
 - Added `http://ehealth.sundhed.dk/vs/restriction-category`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-type`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-specialty`
@@ -65,6 +62,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
 - Changed `http://ehealth.sundhed.dk/vs/contactpoint-system` to include `http://hl7.org/fhir/ValueSet/contact-point-system`
 - Added new code `PITEOC` to `http://ehealth.sundhed.dk/vs/consent-category`
+- Added SNOMED CT codes `449171008` and `448225001` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
 
 ### Resource/profile changes
 
@@ -80,15 +78,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
 - Added extension `decisionContext`
+- Added extension `decision`
+- Added option "Observation" as contained element to `finding.item`
 - Removed extension `decisionRule`
-- Removed option "Encounter" from 'context'
-- Removed option "Group" from 'subject'
+- Removed option "Encounter" from `context`
+- Removed option "Group" from `subject`
+- Removed option "eHealth-Observation" from `finding.item`
 
 #### Library (ehealth-library)
 - Removed extension `basedOn`
 - Removed extension `parameterBinding`
 - Removed extension `parameterName`
 - Updated general resource description
+- Changed `Library.type` value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
 
 #### Task (ehealth-task)
 - Added extension `restriction-category`

@@ -22,14 +22,4 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
-    <concept>
-        <code value="Approved"/>
-        <display value="Approved"/>
-        <definition value="Approved"/>
-    </concept>
-    <concept>
-        <code value="Approved for sharing"/>
-        <display value="Approved for sharing"/>
-        <definition value="Approved for sharing"/>
-    </concept>
 </CodeSystem>

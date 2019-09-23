@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-clinicalimpression-decision-codes"/>
+    <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes"/>
+    <version value="0.6.0"/>
+    <name value="ClinicalImpressionDecisionCodes"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-09-23"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Clinical Impression Decision Codes"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="approved"/>
+        <display value="Approved"/>
+        <definition value="Approved"/>
+    </concept>
+    <concept>
+        <code value="approved-for-sharing"/>
+        <display value="Approved for sharing"/>
+        <definition value="Approved for sharing"/>
+    </concept>
+</CodeSystem>

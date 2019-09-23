@@ -30,6 +30,7 @@
     <element id="ClinicalImpression.extension:careplan">
       <path value="ClinicalImpression.extension" />
       <sliceName value="careplan" />
+      <short value="The CarePlan" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -39,15 +40,24 @@
     <element id="ClinicalImpression.extension:decisionContext">
       <path value="ClinicalImpression.extension" />
       <sliceName value="decisionContext" />
+      <short value="Library and relevant resources used for evaluation" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decisionContext" />
       </type>
     </element>
+    <element id="ClinicalImpression.extension:decision">
+      <path value="ClinicalImpression.extension" />
+      <sliceName value="decision" />
+      <short value="approved | approved-for-sharing" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision" />
+      </type>
+    </element>
     <element id="ClinicalImpression.code">
       <path value="ClinicalImpression.code" />
       <min value="1" />
-      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSetReference>
@@ -160,12 +170,12 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
-        <aggregation value="referenced" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <aggregation value="contained" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition" />
         <aggregation value="referenced" />
       </type>
       <binding>
