@@ -143,6 +143,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Enhanced resource description
 - Removed sharingPolicy extension
 
+#### Communication (ehealth-communication)
+- add extension `senderCareTeam`
+- add extension `restrictionCategory`
+- Changed cardinality of element `sender` to 0...1
+- References to organization were removed from 'sender' and 'recipient'
+- add context reference to Encounter
+
 #### Patient (ehealth-patient)
 - Added general resource description
 - Added PATCH example
