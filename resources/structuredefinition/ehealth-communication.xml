@@ -37,6 +37,30 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
       </type>
     </element>
+    <element id="Communication.extension:senderCareTeam">
+      <path value="Communication.extension" />
+      <sliceName value="senderCareTeam" />
+      <short value="CareTeam message sender" />
+      <definition value="CareTeam message sender" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />
+      </type>
+    </element>
+    <element id="Communication.extension:restrictionCategory">
+      <path value="Communication.extension" />
+      <sliceName value="restrictionCategory" />
+      <short value="Restriction category" />
+      <definition value="Restriction category" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category" />
+      </type>
+    </element>
     <element id="Communication.definition">
       <path value="Communication.definition" />
       <type>
@@ -97,11 +121,6 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
         <aggregation value="referenced" />
       </type>
@@ -137,6 +156,10 @@
       <min value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
         <aggregation value="referenced" />
       </type>
@@ -145,15 +168,9 @@
       <path value="Communication.sender" />
       <definition value="Who created the message." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;&#xD;&#xA;Who created the message." />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
         <aggregation value="referenced" />
       </type>
       <type>

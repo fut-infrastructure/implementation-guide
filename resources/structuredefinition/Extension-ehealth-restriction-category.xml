@@ -11,6 +11,7 @@
   <abstract value="false" />
   <contextType value="resource" />
   <context value="Task" />
+  <context value="Communication" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
