@@ -94,9 +94,9 @@ If a requests result in an error, the error message can be obtained from the `di
 
 #### ehealth-message
 
-- `COMMUNICATION_RECIPIENT_OR_CARE_TEAM_RECIPIENT_MUST_BE_SUPPLIED`: Recipient or CareTeam recipient must be supplied
+- `COMMUNICATION_EXACTLY_ONE_RECIPIENT_OR_CARE_TEAM_RECIPIENT_MUST_BE_SUPPLIED`: Exactly one recipient or CareTeam recipient must be supplied
 
-- `COMMUNICATION_SENDER_OR_CARE_TEAM_SENDER_MUST_BE_SUPPLIED`: Sender or CareTeam sender must be supplied
+- `COMMUNICATION_EXACTLY_ONE_SENDER_OR_CARE_TEAM_SENDER_MUST_BE_SUPPLIED`: Exactly one sender or CareTeam sender must be supplied
 
 - `COMMUNICATION_UPDATE_TO_CATEGORY_IS_NOT_ALLOWED`: Update to category is not allowed: %s
 
