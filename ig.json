@@ -37,7 +37,7 @@
     },
     "gen-examples": "true",
     "canonicalBase": "http://ehealth.sundhed.dk/fhir",
-    "source": "implementationguide/dk-tm.xml",
+    "source": "implementationguide/dk.ehealth.sundhed.fhir.ig.core.xml",
     "sct-edition": "http://snomed.info/sct/900000000000207008",
     "resources": {
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <id value="dk-tm"/>
-  <url value="http://ehealth.sundhed.dk/fhir/ImplementationGuide/dk-tm"/>
+  <id value="dk.ehealth.sundhed.fhir.ig.core"/>
+  <url value="https://docs.ehealth.sundhed.dk/latest/ig/index.html"/>
   <version value="3.2.0"/>
   <name value="eHealth Infrastructure"/>
   <status value="draft"/>
@@ -42,7 +42,7 @@
         <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-person-lookup"/>
+        <reference value="OperationDefinition/ehealth-person-match"/>
       </sourceReference>
     </resource>
     <resource>

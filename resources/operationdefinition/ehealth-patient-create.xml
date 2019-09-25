@@ -30,6 +30,6 @@
         <min value="1"/>
         <max value="1"/>
         <documentation value="The Patient resource that has been created on the server or an already created patient"/>
-        <type value="Parameters"/>
+        <type value="Patient"/>
     </parameter>
 </OperationDefinition>

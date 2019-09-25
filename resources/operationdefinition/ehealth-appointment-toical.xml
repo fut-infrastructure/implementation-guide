@@ -5,6 +5,7 @@
     <name value="Export Appointment to iCal"/>
     <status value="active"/>
     <kind value="operation"/>
+    <idempotent value="true"/>
     <date value="2019-02-02"/>
     <description value="This operation exports the Appointment to an iCal [RFC-5545](https://tools.ietf.org/html/rfc5545) format"/>
     <code value="exportAsiCal"/>
@@ -18,7 +19,7 @@
         <use value="out"/>
         <min value="1"/>
         <max value="1"/>
-        <documentation value="Bundle including a Binary resource that encapsulates the iCal file in a Binary resource"/>
+        <documentation value="A Binary resource that encapsulates the iCal file"/>
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>
