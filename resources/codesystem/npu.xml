@@ -22,7 +22,7 @@
     <display value="O2 sat.;Hb(aB)"/>
     <definition value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
     <designation>
-      <language value="da-DK"/>
+      <language value="da"/>
       <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
     </designation>
   </concept>
@@ -31,7 +31,7 @@
     <display value="Puls;Hjerte"/>
     <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
     <designation>
-      <language value="da-DK"/>
+      <language value="da"/>
       <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
     </designation>
   </concept>
@@ -40,7 +40,7 @@
     <display value="Legeme vægt; Pt"/>
     <definition value="Pt—Legeme; masse = ? kg"/>
     <designation>
-      <language value="da-DK"/>
+      <language value="da"/>
       <value value="Pt—Legeme; masse = ? kg"/>
     </designation>
   </concept>

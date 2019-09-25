@@ -19,7 +19,7 @@
         <code value="DK-84"/>
         <display value="Capital Region of Denmark"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Hovedstaden"/>
         </designation>
     </concept>
@@ -27,7 +27,7 @@
         <code value="DK-82"/>
         <display value="Central Denmark Region"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Midtjylland"/>
         </designation>
     </concept>
@@ -35,7 +35,7 @@
         <code value="DK-81"/>
         <display value="Nord Denmark Region"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Nordjylland"/>
         </designation>
     </concept>
@@ -43,7 +43,7 @@
         <code value="DK-85"/>
         <display value="Region Zealand"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Sjælland"/>
         </designation>
     </concept>
@@ -51,7 +51,7 @@
         <code value="DK-83"/>
         <display value="Region of Southern Denmark"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Syddanmark"/>
         </designation>
     </concept>

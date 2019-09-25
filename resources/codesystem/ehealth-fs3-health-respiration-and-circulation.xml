@@ -13,7 +13,7 @@
         <code value="RESPIRATION"/>
         <display value="Respirationsproblemer"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Respirationsproblemer"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="CIRCULATION"/>
         <display value="Cirkulationsproblemer"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Cirkulationsproblemer"/>
         </designation>
     </concept>

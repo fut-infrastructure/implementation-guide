@@ -13,7 +13,7 @@
         <code value="SOCIALIZATION"/>
         <display value="Problemer med socialt samvær"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med socialt samvær"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="EMOTIONAL"/>
         <display value="Emotionelle problemer"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Emotionelle problemer"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="ABUSE"/>
         <display value="Problemer med misbrug"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med misbrug"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="MENTAL"/>
         <display value="Mentale problemer"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Mentale problemer"/>
         </designation>
     </concept>

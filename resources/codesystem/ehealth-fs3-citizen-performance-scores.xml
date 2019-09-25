@@ -13,7 +13,7 @@
         <code value="PERFORMS_INDEPENDENTLY"/>
         <display value="Udfører selv"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Udfører selv"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="PERFORMS_PARTLY"/>
         <display value="Udfører dele af aktiviteten"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Udfører dele af aktiviteten"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="DOES_NOT_PERFORM"/>
         <display value="Udfører ikke selv aktiviteten"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Udfører ikke selv aktiviteten"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="IRRELEVANT"/>
         <display value="Ikke relevant"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Ikke relevant"/>
         </designation>
     </concept>

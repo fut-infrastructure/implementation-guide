@@ -13,7 +13,7 @@
         <code value="PAID_EMPLOYMENT"/>
         <display value="Have lønnet beskæftigelse"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Have lønnet beskæftigelse"/>
         </designation>
     </concept>
