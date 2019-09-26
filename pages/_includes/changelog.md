@@ -146,6 +146,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-communication)
 - add extension `senderCareTeam`
 - add extension `restrictionCategory`
+- Changed category to 'http://ehealth.sundhed.dk/vs/ehealth-communication-category'
 - Changed cardinality of element `sender` to 0...1
 - References to organization were removed from 'sender' and 'recipient'
 - add context reference to Encounter
@@ -374,6 +375,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest`
 - Added `http://ehealth.sundhed.dk/cs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/cs/percentage-codes`
+- Added `http://ehealth.sundhed.dk/cs/ehealth-communication-category`
 - Changed `http://ehealth.sundhed.dk/cs/careplan-status`
 - Changed `http://ehealth.sundhed.dk/cs/careteam-participant-role`
 - Changed `http://ehealth.sundhed.dk/cs/clinicalimpression-codes`
@@ -408,6 +410,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/fs3-health`
 - Added `http://ehealth.sundhed.dk/vs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/vs/itcompetencelevel-codes`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-communication-category`
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 - Changed `http://ehealth.sundhed.dk/vs/careplan-category`
 - Changed `ehealth-careplan-status`
