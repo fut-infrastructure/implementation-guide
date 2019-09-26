@@ -26,7 +26,7 @@
     <display value="Terapeutiske grænseværdier for RØD alarm"/>
     <definition value="Terapeutiske grænseværdier for RØD alarm"/>
     <designation>
-      <language value="da-DK"/>
+      <language value="da"/>
       <value value="Terapeutiske grænseværdier for RØD alarm"/>
     </designation>
   </concept>
@@ -35,7 +35,7 @@
     <display value="Terapeutiske grænseværdier for GUL alarm"/>
     <definition value="Terapeutiske grænseværdier for GUL alarm"/>
     <designation>
-      <language value="da-DK"/>
+      <language value="da"/>
       <value value="Terapeutiske grænseværdier for GUL alarm"/>
     </designation>
   </concept>

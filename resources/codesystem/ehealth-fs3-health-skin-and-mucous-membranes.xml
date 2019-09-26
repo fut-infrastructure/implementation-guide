@@ -13,7 +13,7 @@
         <code value="SURGICAL_WOUND"/>
         <display value="Problemer med kirurgisk sår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med kirurgisk sår"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="DIABETIC_WOUND"/>
         <display value="Problemer med diabetisk sår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med diabetisk sår"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="CANCER_WOUND"/>
         <display value="Problemer med cancersår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med cancersår"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="PRESSURE_WOUND"/>
         <display value="Problemer med tryksår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med tryksår"/>
         </designation>
     </concept>
@@ -45,7 +45,7 @@
         <code value="ARTERIAL_WOUND"/>
         <display value="Problemer med arterielt sår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med arterielt sår"/>
         </designation>
     </concept>
@@ -53,7 +53,7 @@
         <code value="VENOUS_WOUND"/>
         <display value="Problemer med venøst sår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med venøst sår"/>
         </designation>
     </concept>
@@ -61,7 +61,7 @@
         <code value="MIXED_WOUND"/>
         <display value="Problemer med blandingssår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med blandingssår"/>
         </designation>
     </concept>
@@ -69,7 +69,7 @@
         <code value="TRAUMA_WOUND"/>
         <display value="Problemer med traumesår"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med traumesår"/>
         </designation>
     </concept>
@@ -77,7 +77,7 @@
         <code value="OTHER_ISSUE"/>
         <display value="Andre problemer med hud og slimhinder"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Andre problemer med hud og slimhinder"/>
         </designation>
     </concept>

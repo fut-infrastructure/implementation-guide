@@ -22,7 +22,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added description and example of `-s-is-context-allowed` operation
 - Changed description of `Library-i-evaluate`
 - Changed description of `createPatient`
-- Added description of `lookup` on Person
+- Added description of `match` on Person
 
 #### Instance operations
 ### Code systems

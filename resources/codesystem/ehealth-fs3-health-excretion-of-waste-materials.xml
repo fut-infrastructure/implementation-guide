@@ -13,7 +13,7 @@
         <code value="URINATION"/>
         <display value="Problemer med vandladning"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med vandladning"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="URINARY_INCONTINENCE"/>
         <display value="Problemer med urininkontinens"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med urininkontinens"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="FAECAL_INCONTINENCE"/>
         <display value="Problemer med afføringsinkontinens"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med afføringsinkontinens"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="STOMACH_INTESTINES"/>
         <display value="Problemer med mave og tarm"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med mave og tarm"/>
         </designation>
     </concept>

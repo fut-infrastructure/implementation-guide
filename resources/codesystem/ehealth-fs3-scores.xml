@@ -13,7 +13,7 @@
         <code value="0"/>
         <display value="Ingen eller ubetydelige begrænsninger"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Ingen eller ubetydelige begrænsninger"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="1"/>
         <display value="Lette begrænsninger"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Lette begrænsninger"/>
         </designation>
         <designation>
@@ -33,7 +33,7 @@
         <code value="2"/>
         <display value="Moderate begrænsninger"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Moderate begrænsninger"/>
         </designation>
         <designation>
@@ -45,7 +45,7 @@
         <code value="3"/>
         <display value="Svære begrænsninger"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Svære begrænsninger"/>
         </designation>
         <designation>
@@ -57,7 +57,7 @@
         <code value="4"/>
         <display value="Totale begrænsninger"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Totale begrænsninger"/>
         </designation>
         <designation>
@@ -69,7 +69,7 @@
         <code value="9"/>
         <display value="Ikke relevant"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Ikke relevant"/>
         </designation>
         <designation>
