@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-communication-category"/>
+    <url value="http://ehealth.sundhed.dk/vs/communication-category"/>
+    <version value="0.6.0"/>
+    <name value="Communication Category"/>
+    <title value="Communication Category"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-09-27"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Communication Category."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/communication-category"/>
+            <concept>
+                <code value="annotation"/>
+                <display value="annotation"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Annotation"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

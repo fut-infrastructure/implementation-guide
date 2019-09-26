@@ -820,6 +820,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-communication-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-conditions"/>
       </sourceReference>
     </resource>
@@ -1276,6 +1281,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-clinicalimpression-finding-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-communication-category"/>
       </sourceReference>
     </resource>
     <resource>
