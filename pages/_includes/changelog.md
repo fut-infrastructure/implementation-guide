@@ -576,4 +576,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `ehealth-task-category` to CodeableConcept type
 - Added extension `responsible`
 
+#### Video appointment (ehealth-videoappointment)
+- Initial version
+
 ## v1.0.0 - 2019-03-06
