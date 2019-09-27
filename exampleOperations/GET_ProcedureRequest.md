@@ -1,10 +1,11 @@
-`GET [base]/ProcedureRequest/344`
+`GET [base]/ProcedureRequest/649`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "344",
+  "id": "649",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T09:14:36.589+00:00",
+    "lastUpdated": "2019-09-18T06:53:23.779+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -29,13 +30,13 @@ __Response__
         {
           "url": "low",
           "valueQuantity": {
-            "value": 2
+            "value": 2.0
           }
         },
         {
           "url": "high",
           "valueQuantity": {
-            "value": 5
+            "value": 4.0
           }
         },
         {
@@ -43,8 +44,8 @@ __Response__
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/referencerange-meaning",
-                "code": "normal"
+                "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
+                "code": "TBD"
               }
             ]
           }
@@ -54,7 +55,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/ActivityDefinition/341"
+      "reference": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/24997"
     }
   ],
   "status": "completed",
@@ -65,13 +66,14 @@ __Response__
         "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
         "code": "TBD"
       }
-    ]
+    ],
+    "text": "ed501b91-b853-4111-bfe3-2f56de871c00"
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/66321"
+    "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/60064"
   },
   "context": {
-    "reference": "http://local.ehealth.sundhed.dk:31380/hapi-fhir-server/fhir/EpisodeOfCare/343"
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/648"
   }
 }
 ```

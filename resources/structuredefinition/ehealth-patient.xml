@@ -10,7 +10,7 @@
   <title value="eHealth Patient" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a person in a careplan process. All patients must be linked to an actual person resource instance, where the person acts a template for a patient. A newly created patient is always based from a person which also means that a person links to all its patients.&#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operations defined for the Patient resource. The operations ensure that patients are created with the proper demographics data, the proper managing organization and under the proper legislation and having a proper link between person and patient." />
+  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a real person in a careplan process. &#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operation defined for the Patient resource (see the createPatient operation). The operation ensure that patients are created with the proper demographics data delivered by national registers." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -40,11 +40,6 @@
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-itcompetencelevel" />
       </type>
-    </element>
-    <element id="Patient.extension:itcompetencelevel.valueCodeableConcept:valueCodeableConcept">
-      <path value="Patient.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)" />
     </element>
     <element id="Patient.extension:interpreterRequired">
       <path value="Patient.extension" />
@@ -256,16 +251,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <aggregation value="referenced" />
       </type>
-    </element>
-    <element id="Patient.managingOrganization">
-      <path value="Patient.managingOrganization" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
-        <aggregation value="referenced" />
-      </type>
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,10 +1,11 @@
-`GET [base]/Organization/24/_history/1`
+`GET [base]/Organization/122/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL09yZ2FuaXphdGlvbi5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,66 +15,116 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "24",
+  "id": "122",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2019-05-29T08:21:27.624+00:00",
+    "versionId": "2",
+    "lastUpdated": "2019-09-18T05:58:35.727+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
   },
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-relatedTo",
-      "extension": [
-        {
-          "url": "target",
-          "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/23"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/organization-source",
+            "code": "manual"
           }
-        },
-        {
-          "url": "relationType",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/organization-relation-type",
-                "code": "TBD"
-              }
-            ]
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
+            "code": "NotSynchronized"
           }
-        },
-        {
-          "url": "period",
-          "valuePeriod": {
-            "start": "2019-05-29T10:21:27+02:00",
-            "end": "2019-05-29T10:21:27+02:00"
-          }
-        }
-      ]
+        ]
+      }
     }
   ],
-  "name": "475ca307-1dd2-46d7-8696-a05dc67173d6",
+  "name": "f98448de-6bda-4723-837e-d3632c1bf3f5",
   "contact": [
     {
+      "purpose": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/contactentity-type",
+            "code": "HR"
+          }
+        ]
+      },
+      "name": {
+        "use": "official",
+        "text": "Mr John Snow Junior",
+        "family": "Snow",
+        "given": [
+          "John"
+        ],
+        "period": {
+          "start": "2017-01-01",
+          "end": "2020-01-01"
+        }
+      },
       "telecom": [
         {
           "extension": [
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian",
-              "valueCode": "TBD"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/contactpoint-custodian",
+                    "code": "SOR"
+                  }
+                ]
+              }
             },
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem",
-              "valueCode": "TBD"
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/contactpoint-system",
+                    "code": "TBD"
+                  }
+                ]
+              }
             },
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue",
-              "valueString": "577ec4f0-225f-4103-a3dc-460ff156ff1c"
+              "valueString": "john.snow@gmail.com"
             }
-          ]
+          ],
+          "use": "home",
+          "rank": 1,
+          "period": {
+            "start": "2017-01-01",
+            "end": "2020-01-01"
+          }
         }
-      ]
+      ],
+      "address": {
+        "use": "home",
+        "type": "physical",
+        "text": "Westeros, The North, Winterfell, John Snow street, 1/14",
+        "line": [
+          "John Snow street, 1/14"
+        ],
+        "city": "Winterfell",
+        "district": "Winterfell",
+        "state": "The North",
+        "postalCode": "79070",
+        "country": "Westeros",
+        "period": {
+          "start": "2017-01-01",
+          "end": "2020-01-01"
+        }
+      }
     }
   ]
 }

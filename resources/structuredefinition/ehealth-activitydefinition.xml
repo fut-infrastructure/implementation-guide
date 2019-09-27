@@ -84,6 +84,16 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
       </type>
     </element>
+    <element id="ActivityDefinition.extension:sharingPolicy">
+      <path value="ActivityDefinition.extension" />
+      <sliceName value="sharingPolicy" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
+      </type>
+    </element>
     <element id="ActivityDefinition.version">
       <path value="ActivityDefinition.version" />
       <min value="1" />

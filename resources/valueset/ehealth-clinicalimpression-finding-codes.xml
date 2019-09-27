@@ -27,20 +27,23 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
             <concept>
-                <code value="Approved"/>
-                <display value="Approved"/>
+                <code value="449171008"/>
+                <display value="Oxygen saturation below reference range"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="Approved"/>
+                    <value value="Oxygen saturation below reference range"/>
                 </designation>
             </concept>
             <concept>
-                <code value="Approved for sharing"/>
-                <display value="Approved for sharing"/>
+                <code value="448225001"/>
+                <display value="Oxygen saturation within reference range"/>
                 <designation>
                     <language value="en-US"/>
-                    <value value="Approved for sharing"/>
+                    <value value="Oxygen saturation within reference range"/>
                 </designation>
             </concept>
         </include>

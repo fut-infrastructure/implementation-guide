@@ -1,3 +1,31 @@
+# system
+- profile: system
+  path: POST_apply.md
+
+- profile: system
+  path: POST_create-episode-of-care.md
+
+- profile: system
+  path: GET_is-context-allowed.md
+
+- profile: system
+  path: POST_search-measurements.md
+
+- profile: system
+  path: POST_submit-measurement.md
+
+- profile: system
+  path: POST_transform-to-questionnaire.md
+
+- profile: system
+  path: POST_transformToPHMR.md
+
+- profile: system
+  path: POST_transformToQRD.md
+
+- profile: system
+  path: POST_update-care-teams.md
+
 # ehealth-activitydefinition
 - profile: ehealth-activitydefinition
   path: GET_ActivityDefinition.md
@@ -23,6 +51,9 @@
 
 - profile: ehealth-careplan
   path: GET_CarePlan_version.md
+
+- profile: ehealth-careplan
+  path: POST_CarePlan.md
 
 - profile: ehealth-careplan
   path: PUT_CarePlan.md
@@ -54,10 +85,10 @@
   path: GET_ClinicalImpression_version.md
 
 - profile: ehealth-clinicalimpression
-  path: POST_ClinicalImpression.md
+  path: PATCH_ClinicalImpression.md
 
 - profile: ehealth-clinicalimpression
-  path: PUT_ClinicalImpression.md
+  path: POST_ClinicalImpression.md
 
 # ehealth-communication
 - profile: ehealth-communication
@@ -69,9 +100,6 @@
 - profile: ehealth-communication
   path: POST_Communication.md
 
-- profile: ehealth-communication
-  path: PUT_Communication.md
-
 # ehealth-composition
 - profile: ehealth-composition
   path: DELETE_Composition.md
@@ -80,7 +108,7 @@
   path: GET_Composition_search.md
 
 - profile: ehealth-composition
-  path: GET_Composition_version.md
+  path: GET_Composition.md
 
 - profile: ehealth-composition
   path: POST_Composition.md
@@ -90,13 +118,13 @@
   path: GET_Condition.md
 
 - profile: ehealth-condition
-  path: GET_Condition_search.md
-
-- profile: ehealth-condition
   path: GET_Condition_version.md
 
 - profile: ehealth-condition
   path: POST_Condition.md
+
+- profile: ehealth-condition
+  path: PATCH_Condition.md
 
 # ehealth-consent
 - profile: ehealth-consent
@@ -113,9 +141,6 @@
 
 # ehealth-device
 - profile: ehealth-device
-  path: GET_Device.md
-
-- profile: ehealth-device
   path: GET_Device_search.md
 
 - profile: ehealth-device
@@ -128,6 +153,9 @@
   path: PUT_Device.md
 
 # ehealth-devicemetric
+- profile: ehealth-devicemetric
+  path: DELETE_DeviceMetric.md
+
 - profile: ehealth-devicemetric
   path: GET_DeviceMetric_search.md
 
@@ -164,6 +192,9 @@
   path: GET_DocumentReference_version.md
 
 - profile: ehealth-documentreference
+  path: GET_DocumentReference.md
+
+- profile: ehealth-documentreference
   path: POST_DocumentReference.md
 
 - profile: ehealth-documentreference
@@ -180,13 +211,10 @@
   path: GET_EpisodeOfCare_version.md
 
 - profile: ehealth-episodeofcare
-  path: PUT_EpisodeOfCare.md
+  path: PATCH_EpisodeOfCare.md
 
 - profile: ehealth-episodeofcare
-  path: POST_create-episode-of-care.md
-
-- profile: ehealth-episodeofcare
-  path: GET_is-context-allowed.md
+  path: POST_EpisodeOfCare.md
 
 # ehealth-library
 - profile: ehealth-library
@@ -221,21 +249,25 @@
 - profile: ehealth-observation
   path: POST_Observation.md
 
-- profile: ehealth-patient
-  path: PATCH_Patient.md
-
-- profile: ehealth-message
-  path: PATCH_Communication.md
-
 # ehealth-organization
+- profile: ehealth-organization
+  path: GET_Organization.md
+
 - profile: ehealth-organization
   path: GET_Organization_search.md
 
 - profile: ehealth-organization
   path: GET_Organization_version.md
-  
+
 - profile: ehealth-organization
   path: PATCH_Organization.md
+
+- profile: ehealth-organization
+  path: POST_Organization.md
+
+# ehealth-patient
+- profile: ehealth-patient
+  path: PATCH_Patient.md
 
 # ehealth-plandefinition
 - profile: ehealth-plandefinition
@@ -252,9 +284,6 @@
 
 # ehealth-practitioner
 - profile: ehealth-practitioner
-  path: DELETE_Practitioner.md
-
-- profile: ehealth-practitioner
   path: GET_Practitioner_search.md
 
 - profile: ehealth-practitioner
@@ -266,22 +295,6 @@
 - profile: ehealth-practitioner
   path: PUT_Practitioner.md
 
-# ehealth-practitionerrole
-- profile: ehealth-practitionerrole
-  path: DELETE_PractitionerRole.md
-
-- profile: ehealth-practitionerrole
-  path: GET_PractitionerRole_search.md
-
-- profile: ehealth-practitionerrole
-  path: GET_PractitionerRole_version.md
-
-- profile: ehealth-practitionerrole
-  path: POST_PractitionerRole.md
-
-- profile: ehealth-practitionerrole
-  path: PUT_PractitionerRole.md
-
 # ehealth-procedurerequest
 - profile: ehealth-procedurerequest
   path: GET_ProcedureRequest.md
@@ -290,11 +303,17 @@
   path: GET_ProcedureRequest_version.md
 
 - profile: ehealth-procedurerequest
+  path: POST_ProcedureRequest.md
+
+- profile: ehealth-procedurerequest
   path: PUT_ProcedureRequest.md
 
 # ehealth-provenance
 - profile: ehealth-provenance
   path: GET_Provenance.md
+
+- profile: ehealth-provenance
+  path: GET_Provenance_search.md
 
 - profile: ehealth-provenance
   path: GET_Provenance_version.md
@@ -329,9 +348,6 @@
   path: GET_QuestionnaireResponse_search.md
 
 - profile: ehealth-questionnaireresponse
-  path: GET_QuestionnaireResponse_version.md
-
-- profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse.md
 
 # ehealth-relatedperson
@@ -347,4 +363,7 @@
   path: GET_Task_version.md
 
 - profile: ehealth-task
-  path: PUT_Task.md
+  path: PATCH_Task.md
+
+- profile: ehealth-task
+  path: POST_Task.md

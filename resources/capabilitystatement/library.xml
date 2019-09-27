@@ -1,0 +1,231 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="library"/>
+    <status value="active"/>
+    <date value="2019-09-18T07:32:27+00:00"/>
+    <publisher value="Not provided"/>
+    <kind value="instance"/>
+    <software>
+        <name value="library"/>
+        <version value="0.1.0"/>
+    </software>
+    <implementation>
+        <description value="eHealth library service"/>
+        <url value="http://library.local.ehealth.sundhed.dk/fhir"/>
+    </implementation>
+    <fhirVersion value="3.0.1"/>
+    <acceptUnknown value="extensions"/>
+    <format value="application/fhir+xml"/>
+    <format value="application/fhir+json"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="Library"/>
+            <profile>
+                <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <conditionalCreate value="true"/>
+            <conditionalUpdate value="true"/>
+            <searchInclude value="*"/>
+            <searchInclude value="Library:composed-of"/>
+            <searchInclude value="Library:depends-on"/>
+            <searchInclude value="Library:derived-from"/>
+            <searchInclude value="Library:predecessor"/>
+            <searchInclude value="Library:successor"/>
+            <searchParam>
+                <name value="_content"/>
+                <type value="string"/>
+                <documentation value="Search the contents of the resource's data using a fulltext search"/>
+            </searchParam>
+            <searchParam>
+                <name value="_has"/>
+                <type value="string"/>
+                <documentation value="Return resources linked to by the given target"/>
+            </searchParam>
+            <searchParam>
+                <name value="_id"/>
+                <type value="token"/>
+                <documentation value="The ID of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="_language"/>
+                <type value="string"/>
+                <documentation value="The language of the resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="_lastUpdated"/>
+                <type value="date"/>
+                <documentation value="Only return resources which were last updated as specified by the given range"/>
+            </searchParam>
+            <searchParam>
+                <name value="_profile"/>
+                <type value="uri"/>
+                <documentation value="Search for resources which have the given profile"/>
+            </searchParam>
+            <searchParam>
+                <name value="_security"/>
+                <type value="token"/>
+                <documentation value="Search for resources which have the given security labels"/>
+            </searchParam>
+            <searchParam>
+                <name value="_tag"/>
+                <type value="token"/>
+                <documentation value="Search for resources which have the given tag"/>
+            </searchParam>
+            <searchParam>
+                <name value="_text"/>
+                <type value="string"/>
+                <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+            </searchParam>
+            <searchParam>
+                <name value="composed-of"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
+            </searchParam>
+            <searchParam>
+                <name value="date"/>
+                <type value="date"/>
+                <documentation value="The library publication date"/>
+            </searchParam>
+            <searchParam>
+                <name value="depends-on"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
+            </searchParam>
+            <searchParam>
+                <name value="derived-from"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
+            </searchParam>
+            <searchParam>
+                <name value="description"/>
+                <type value="string"/>
+                <documentation value="The description of the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="effective"/>
+                <type value="date"/>
+                <documentation value="The time during which the library is intended to be in use"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="External identifier for the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="jurisdiction"/>
+                <type value="token"/>
+                <documentation value="Intended jurisdiction for the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="name"/>
+                <type value="string"/>
+                <documentation value="Computationally friendly name of the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="predecessor"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
+            </searchParam>
+            <searchParam>
+                <name value="publisher"/>
+                <type value="string"/>
+                <documentation value="Name of the publisher of the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="status"/>
+                <type value="token"/>
+                <documentation value="The current status of the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="successor"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
+            </searchParam>
+            <searchParam>
+                <name value="title"/>
+                <type value="string"/>
+                <documentation value="The human-friendly name of the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="topic"/>
+                <type value="token"/>
+                <documentation value="Topics associated with the module"/>
+            </searchParam>
+            <searchParam>
+                <name value="url"/>
+                <type value="uri"/>
+                <documentation value="The uri that identifies the library"/>
+            </searchParam>
+            <searchParam>
+                <name value="version"/>
+                <type value="token"/>
+                <documentation value="The business version of the library"/>
+            </searchParam>
+        </resource>
+        <resource>
+            <type value="OperationDefinition"/>
+            <profile>
+                <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="StructureDefinition"/>
+            <profile>
+                <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+            </profile>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <searchParam>
+                <name value="type"/>
+                <type value="token"/>
+                <documentation value="Type defined or constrained by this structure"/>
+            </searchParam>
+        </resource>
+        <operation>
+            <name value="expunge"/>
+            <definition>
+                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="evaluate"/>
+            <definition>
+                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library-i-evaluate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="validate"/>
+            <definition>
+                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library-i-validate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="validate"/>
+            <definition>
+                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library--validate"/>
+            </definition>
+        </operation>
+    </rest>
+</CapabilityStatement>

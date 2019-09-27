@@ -1,10 +1,11 @@
-`POST [base]/Practitioner`
+`POST [base]/Practitioner/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL1ByYWN0aXRpb25lci5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -12,15 +13,23 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-  "resourceType": "Practitioner",
-  "meta": {
-    "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-    ]
-  },
-  "name": [
+  "resourceType": "Parameters",
+  "parameter": [
     {
-      "family": "05045b8f-25c6-41d4-a11e-b1654b2880ac"
+      "name": "resource",
+      "resource": {
+        "resourceType": "Practitioner",
+        "meta": {
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+          ]
+        },
+        "name": [
+          {
+            "family": "ae85b501-4359-41e9-89de-f1971913c10d"
+          }
+        ]
+      }
     }
   ]
 }
@@ -29,18 +38,21 @@ __Body__:
 __Response__
 ```json
 {
-  "resourceType": "Practitioner",
-  "id": "33",
-  "meta": {
-    "versionId": "1",
-    "lastUpdated": "2019-05-29T08:21:29.353+00:00",
-    "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-    ]
+  "resourceType": "OperationOutcome",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
-  "name": [
+  "issue": [
     {
-      "family": "05045b8f-25c6-41d4-a11e-b1654b2880ac"
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
+    },
+    {
+      "severity": "information",
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     }
   ]
 }

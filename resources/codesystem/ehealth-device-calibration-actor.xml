@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-device-calibration-actor"/>
+    <url value="http://ehealth.sundhed.dk/cs/device-calibration-actor"/>
+    <version value="0.6.0"/>
+    <name value="Device calibration actor"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-09-16"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Device calibration actor."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="PATIENT"/>
+        <display value="Calibrated by patient"/>
+        <definition value="Calibrated by patient"/>
+    </concept>
+	<concept>
+        <code value="SSLPATIENT"/>
+        <display value="Calibrated by SSL provider at patient residence"/>
+        <definition value="Calibrated by SSL provider at patient residence"/>
+    </concept>
+    <concept>
+        <code value="SSL"/>
+        <display value="Calibrated by SSL at SSL supplier"/>
+        <definition value="Calibrated by SSL at SSL supplier"/>
+    </concept>
+</CodeSystem>

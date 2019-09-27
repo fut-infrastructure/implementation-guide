@@ -3,10 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJzdWIiOiJhc2QiLCJwcmFjdGl0aW9uZXJJZCI6Imh0dHA6Ly9sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGs6MzEzODAvb3JnYW5pemF0aW9uL2ZoaXIvUHJhY3RpdGlvbmVyLzY2NDY4Iiwicm9sZXMiOltdLCJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXX0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJzdWIiOiJodHRwOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1ByYWN0aXRpb25lci83ODQ2NCIsInBlcm1pc3Npb25zIjpbIkVwaXNvZGVPZkNhcmUuY3JlYXRlLWVwaXNvZGUtb2YtY2FyZSJdLCJwYXRpZW50Q29udGV4dElkIjoiaHR0cDovL3RyaWZvcmstZmhpci1zZXJ2ZXIubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL3RyaWZvcmstZmhpci1zZXJ2ZXIvUGF0aWVudC81NDk4NiIsInVzZXJUeXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
-Prefer: return=representation
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -23,7 +22,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:54da1727-2e04-4265-af2c-1925b783a4bf",
+            "fullUrl": "urn:uuid:32401951-a914-424b-945f-4423e8c0578e",
             "resource": {
               "resourceType": "Provenance",
               "meta": {
@@ -33,17 +32,17 @@ __Body__:
               },
               "target": [
                 {
-                  "reference": "urn:uuid:5c5a3cab-0e02-4e0c-a58a-efbf25b35a6f"
+                  "reference": "urn:uuid:0c7228e7-828b-46dc-be01-2a3e729d6b2a"
                 }
               ],
-              "recorded": "2019-06-24T11:24:31.016+03:00",
+              "recorded": "2019-09-18T08:53:14.841+02:00",
               "policy": [
                 "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
               ],
               "agent": [
                 {
                   "whoReference": {
-                    "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/90559"
+                    "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/31427"
                   }
                 }
               ]
@@ -54,7 +53,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:5c5a3cab-0e02-4e0c-a58a-efbf25b35a6f",
+            "fullUrl": "urn:uuid:0c7228e7-828b-46dc-be01-2a3e729d6b2a",
             "resource": {
               "resourceType": "EpisodeOfCare",
               "meta": {
@@ -64,29 +63,29 @@ __Body__:
               },
               "extension": [
                 {
-                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers",
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
                   "valueReference": {
-                    "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/64296"
+                    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/56014"
                   }
                 }
               ],
-              "status": "active",
+              "status": "planned",
               "diagnosis": [
                 {
                   "condition": {
-                    "reference": "urn:uuid:4ccd883b-fbd0-4695-97f1-4611e42ca77a"
+                    "reference": "urn:uuid:8ec3461d-1a24-48c5-bd8f-c73dc1e92fc4"
                   }
                 }
               ],
               "patient": {
-                "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/76430"
+                "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/54986"
               },
               "managingOrganization": {
-                "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/86806"
+                "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/87888"
               },
               "period": {
-                "start": "1970-01-01T02:00:01+02:00",
-                "end": "1970-01-01T02:01:40+02:00"
+                "start": "1970-01-01T01:00:01+01:00",
+                "end": "1970-01-01T01:01:40+01:00"
               }
             },
             "request": {
@@ -95,7 +94,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:4ccd883b-fbd0-4695-97f1-4611e42ca77a",
+            "fullUrl": "urn:uuid:8ec3461d-1a24-48c5-bd8f-c73dc1e92fc4",
             "resource": {
               "resourceType": "Condition",
               "meta": {
@@ -113,7 +112,7 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/76430"
+                "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/54986"
               }
             },
             "request": {
@@ -135,170 +134,35 @@ __Response__
   "type": "transaction-response",
   "entry": [
     {
-      "resource": {
-        "resourceType": "Provenance",
-        "id": "564",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-06-24T08:24:31.240+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-          ]
-        },
-        "target": [
-          {
-            "reference": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/EpisodeOfCare/565"
-          }
-        ],
-        "recorded": "2019-06-24T11:24:31.016+03:00",
-        "policy": [
-          "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
-        ],
-        "agent": [
-          {
-            "whoReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/90559"
-            }
-          }
-        ]
-      },
       "response": {
         "status": "201 Created",
-        "location": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/Provenance/564/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/590/_history/1",
         "etag": "1",
-        "lastModified": "2019-06-24T08:24:31.240+00:00"
+        "lastModified": "2019-09-18T06:53:14.902+00:00"
       }
     },
     {
-      "resource": {
-        "resourceType": "EpisodeOfCare",
-        "id": "565",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-06-24T08:24:31.240+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-careManagers",
-            "valueReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/64296"
-            }
-          }
-        ],
-        "status": "active",
-        "diagnosis": [
-          {
-            "condition": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/Condition/566"
-            }
-          }
-        ],
-        "patient": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/76430"
-        },
-        "managingOrganization": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/86806"
-        },
-        "period": {
-          "start": "1970-01-01T02:00:01+02:00",
-          "end": "1970-01-01T02:01:40+02:00"
-        }
-      },
       "response": {
         "status": "201 Created",
-        "location": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/EpisodeOfCare/565/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/591/_history/1",
         "etag": "1",
-        "lastModified": "2019-06-24T08:24:31.240+00:00"
+        "lastModified": "2019-09-18T06:53:14.902+00:00"
       }
     },
     {
-      "resource": {
-        "resourceType": "Condition",
-        "id": "566",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-06-24T08:24:31.240+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
-          ]
-        },
-        "clinicalStatus": "active",
-        "code": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/conditions",
-              "code": "TBD"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "http://local.ehealth.sundhed.dk:31380/trifork-fhir-server/Patient/76430"
-        }
-      },
       "response": {
         "status": "201 Created",
-        "location": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/Condition/566/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/592/_history/1",
         "etag": "1",
-        "lastModified": "2019-06-24T08:24:31.240+00:00"
+        "lastModified": "2019-09-18T06:53:14.902+00:00"
       }
     },
     {
-      "resource": {
-        "resourceType": "Provenance",
-        "id": "567",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-06-24T08:24:31.240+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-          ]
-        },
-        "target": [
-          {
-            "reference": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/EpisodeOfCare/565"
-          }
-        ],
-        "recorded": "2019-06-24T08:24:31.239+00:00",
-        "policy": [
-          "http://ehealth.sundhed.dk/policy/ehealth/patient-data",
-          "http://ehealth.sundhed.dk/policy/eu/general-data-protection-regulation"
-        ],
-        "reason": [
-          {
-            "system": "http://hl7.org/fhir/v3/ActReason",
-            "code": "PATADMIN"
-          }
-        ],
-        "activity": {
-          "system": "http://hl7.org/fhir/v3/DataOperation",
-          "code": "CREATE"
-        },
-        "agent": [
-          {
-            "role": [
-              {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/v3/ParticipationType",
-                    "code": "AUT"
-                  }
-                ]
-              }
-            ],
-            "whoReference": {
-              "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Practitioner/66468"
-            }
-          }
-        ]
-      },
       "response": {
         "status": "201 Created",
-        "location": "http://local.ehealth.sundhed.dk:31380/careplan/fhir/Provenance/567/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/593/_history/1",
         "etag": "1",
-        "lastModified": "2019-06-24T08:24:31.240+00:00"
+        "lastModified": "2019-09-18T06:53:14.902+00:00"
       }
     }
   ]

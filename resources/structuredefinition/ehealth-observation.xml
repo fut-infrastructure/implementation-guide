@@ -35,16 +35,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
       </type>
     </element>
-    <element id="Observation.extension:sharingPolicy">
-      <path value="Observation.extension" />
-      <sliceName value="sharingPolicy" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
-      </type>
-    </element>
     <element id="Observation.basedOn">
       <path value="Observation.basedOn" />
       <short value="Fulfills procedure request." />

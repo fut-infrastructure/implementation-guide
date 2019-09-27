@@ -1,10 +1,11 @@
-`GET [base]/CareTeam/12/_history/2`
+`GET [base]/CareTeam/66/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL0NhcmVUZWFtLnJlYWQiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,19 +15,19 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "12",
+  "id": "66",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-29T08:21:24.926+00:00",
+    "lastUpdated": "2019-09-18T05:58:12.437+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "7b606b5c-590c-47e6-9c7f-703514f45448"
+      "id": "111ff3be-06c0-438e-9125-94bb0d0b6b7f"
     }
   ],
-  "name": "804eafd3-b3a9-48b3-acf4-e4eed6ad2781"
+  "name": "3486c294-2737-4138-9d0e-46581c3a5ecb"
 }
 ```

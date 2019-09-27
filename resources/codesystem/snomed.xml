@@ -628,6 +628,16 @@
         <definition value="Emergency medicine"/>
     </concept>
     <concept>
+        <code value="449171008"/>
+        <display value="Oxygen saturation below reference range"/>
+        <definition value="Oxygen saturation below reference range"/>
+    </concept>
+    <concept>
+        <code value="448225001"/>
+        <display value="Oxygen saturation within reference range"/>
+        <definition value="Oxygen saturation within reference range"/>
+    </concept>
+    <concept>
         <code value="900000000000550004"/>
         <display value="Definition"/>
         <definition value="Definition"/>

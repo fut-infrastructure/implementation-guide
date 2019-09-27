@@ -1,11 +1,12 @@
-`PUT [base]/Questionnaire/78`
+`PUT [base]/Questionnaire/31`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdLCJ1c2VyVHlwZSI6IlNZU1RFTSJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -14,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "78",
+  "id": "31",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T07:53:39.138+00:00",
+    "lastUpdated": "2019-09-18T08:28:48.260+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -26,7 +27,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97039"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/4431"
       }
     },
     {
@@ -46,7 +47,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27611"
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/94331"
           }
         },
         {
@@ -63,8 +64,8 @@ __Body__:
       ]
     }
   ],
-  "version": "1b6b5f6e-0a29-43b6-bbc9-acd4bc490b33",
-  "name": "9feac22f-c70a-4e4d-8bcd-0d2a7a9b6909",
+  "version": "b0933ab7-4d58-4ec0-ade0-f5f903713fab",
+  "name": "024027c1-524c-477c-8794-9b79fc2fe829",
   "status": "retired"
 }
 ```
@@ -73,10 +74,10 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "78",
+  "id": "31",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-29T07:53:39.395+00:00",
+    "lastUpdated": "2019-09-18T08:28:48.681+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -85,7 +86,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/97039"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/4431"
       }
     },
     {
@@ -105,7 +106,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27611"
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/94331"
           }
         },
         {
@@ -122,8 +123,8 @@ __Response__
       ]
     }
   ],
-  "version": "1b6b5f6e-0a29-43b6-bbc9-acd4bc490b33",
-  "name": "9feac22f-c70a-4e4d-8bcd-0d2a7a9b6909",
+  "version": "b0933ab7-4d58-4ec0-ade0-f5f903713fab",
+  "name": "024027c1-524c-477c-8794-9b79fc2fe829",
   "status": "retired"
 }
 ```

@@ -1,11 +1,12 @@
-`PUT [base]/PlanDefinition/327`
+`PUT [base]/PlanDefinition/94`
 
 __Header__
 ```
 Accept-Charset: utf-8
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbi51cGRhdGUiLCJQbGFuRGVmaW5pdGlvbi5yZWFkIl0sIm9yZ2FuaXphdGlvbkNvbnRleHRJZCI6Imh0dHA6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzgzOTE1IiwidXNlclR5cGUiOiJQQVRJRU5UIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.7.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -14,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "327",
+  "id": "94",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-05-29T09:14:34.016+00:00",
+    "lastUpdated": "2019-09-18T08:02:50.577+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -29,7 +30,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27119"
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/83915"
           }
         },
         {
@@ -46,8 +47,8 @@ __Body__:
       ]
     }
   ],
-  "version": "3b01d617-9d2d-4545-8908-2d8d7acc230f",
-  "status": "active"
+  "version": "c50f4b41-4714-4c94-a4a5-0410565cf9cf",
+  "status": "retired"
 }
 ```
 
@@ -55,10 +56,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "327",
+  "id": "94",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-05-29T09:14:34.168+00:00",
+    "lastUpdated": "2019-09-18T08:02:50.762+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -70,7 +71,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://local.ehealth.sundhed.dk:31380/organization/fhir/Organization/27119"
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/83915"
           }
         },
         {
@@ -87,7 +88,7 @@ __Response__
       ]
     }
   ],
-  "version": "3b01d617-9d2d-4545-8908-2d8d7acc230f",
-  "status": "active"
+  "version": "c50f4b41-4714-4c94-a4a5-0410565cf9cf",
+  "status": "retired"
 }
 ```
