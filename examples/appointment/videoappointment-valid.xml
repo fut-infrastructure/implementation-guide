@@ -1,0 +1,63 @@
+<Appointment xmlns='http://hl7.org/fhir'>
+    <id value="videoappointment-valid"/>
+    <meta>
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"/>
+    </meta>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-end-meeting-on-end-time">
+        <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants">
+        <valueInteger value="5"/>
+    </extension>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url">
+        <valueString value="https://portal.vconf.dk/?url=4618@test.dk&amp;pin=9180&amp;start_dato=2018-11-01T11:15:00"/>
+    </extension>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-pin-code">
+        <valueInteger value="1234"/>
+    </extension>
+    <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible">
+        <extension url="type">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://ehealth.sundhed.dk/cs/responsibility-type"/>
+                    <code value="TBD"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="actor">
+            <valueReference>
+                <reference value="http://inttest.ehealth.sundhed.dk/CareTeam/42"/>
+                <display value="CareTeam Aarhus"/>
+            </valueReference>
+        </extension>
+    </extension>
+    <status value='proposed'/>
+    <appointmentType>
+        <coding>
+            <system value="http://ehealth.sundhed.dk/cs/appointmenttype-codes"/>
+            <code value="FOLLOWUP"/>
+        </coding>
+    </appointmentType>
+    <reason>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="412776001"/>
+        </coding>
+        <text value="Clinical Review"/>
+    </reason>
+    <start value="2013-12-10T09:00:00Z"/>
+    <end value="2013-12-10T11:00:00Z"/>
+    <participant>
+        <actor>
+            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/42"/>
+            <display value="Tove Jensen"/>
+        </actor>
+        <status value="needs-action"/>
+    </participant>
+    <participant>
+        <actor>
+            <reference value="http://inttest.ehealth.sundhed.dk/trifork-fhir-server/Patient/XXX"/>
+        </actor>
+        <status value="needs-action"/>
+    </participant>
+</Appointment>

@@ -188,6 +188,13 @@
     <resource>
       <example value="true"/>
       <sourceReference>
+        <reference value="Appointment/videoappointment-valid"/>
+      </sourceReference>
+      <exampleFor value="StructureDefinition/ehealth-videoappointment"/>
+    </resource>
+    <resource>
+      <example value="true"/>
+      <sourceReference>
         <reference value="AppointmentResponse/appointmentresponse-valid"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-appointmentresponse"/>
@@ -364,6 +371,11 @@
         <reference value="StructureDefinition/ehealth-task"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-videoappointment"/>
+      </sourceReference>
+    </resource>
 
     <!-- Extensions -->
     <resource>
@@ -467,6 +479,11 @@
       </sourceReference>
     </resource>
     <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-end-meeting-on-end-time"/>
+      </sourceReference>
+    </resource>
+    <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-functionalCapacity"/>
@@ -494,12 +511,27 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-max-participants"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-meeting-url"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
       </sourceReference>
     </resource>
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-patient-contactnote"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-pin-code"/>
       </sourceReference>
     </resource>
     <resource>
