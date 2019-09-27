@@ -36,7 +36,7 @@
           <value value="Can handle smarthpones"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Kan betjene SMART phone"/>
         </designation>
       </concept>
@@ -48,7 +48,7 @@
           <value value="Can use a browser"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Kan betjene en browser"/>
         </designation>
       </concept>
@@ -60,7 +60,7 @@
           <value value="Can use a computer"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Kan betjene en computer"/>
         </designation>
       </concept>

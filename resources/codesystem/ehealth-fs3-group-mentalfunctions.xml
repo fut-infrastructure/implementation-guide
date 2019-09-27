@@ -13,7 +13,7 @@
         <code value="ACQUIRE_SKILLS"/>
         <display value="Tilegne sig færdigheder"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Tilegne sig færdigheder"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="PROBLEM_SOLVING"/>
         <display value="Problemløsning"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemløsning"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES"/>
         <display value="Anvende kommunikationsudstyr og -teknikker"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Anvende kommunikationsudstyr og -teknikker"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="ORIENTATION"/>
         <display value="Orienteringsevne"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Orienteringsevne"/>
         </designation>
     </concept>
@@ -45,7 +45,7 @@
         <code value="ENERGY_AND_ACTING_POWER"/>
         <display value="Energi og handlekraft"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Energi og handlekraft"/>
         </designation>
     </concept>
@@ -53,7 +53,7 @@
         <code value="MEMORY"/>
         <display value="Hukommelse"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Hukommelse"/>
         </designation>
     </concept>
@@ -61,7 +61,7 @@
         <code value="FEELING_FUNCTIONS"/>
         <display value="Følelsesfunktioner"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Følelsesfunktioner"/>
         </designation>
     </concept>
@@ -69,7 +69,7 @@
         <code value="OVERALL_COGNITIVE_FUNCTIONS"/>
         <display value="Overordnede kognitive funktioner"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Overordnede kognitive funktioner"/>
         </designation>
     </concept>

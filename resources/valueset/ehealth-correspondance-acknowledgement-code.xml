@@ -16,7 +16,7 @@
         <code value="minuspositivkvitt"/>
         <display value="Ingen positiv-kvittering ønskes"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Ingen positiv-kvittering ønskes"/>
         </designation>
       </concept>
@@ -25,7 +25,7 @@
         <code value="pluspositivkvitt"/>
         <display value="Positiv-kvittering ønskes"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Positiv-kvittering ønskes"/>
         </designation>
       </concept>

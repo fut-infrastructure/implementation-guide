@@ -43,7 +43,7 @@
                     <value value="Mandatory"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Obligatorisk"/>
                 </designation>
             </concept>
@@ -55,7 +55,7 @@
                     <value value="Recommended"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Anbefalet"/>
                 </designation>
             </concept>
@@ -67,7 +67,7 @@
                     <value value="Sustained"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Opretholdt"/>
                 </designation>
             </concept>
@@ -79,7 +79,7 @@
                     <value value="Deprecated"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Frarådes"/>
                 </designation>
             </concept>
@@ -91,7 +91,7 @@
                     <value value="Applicable"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Anvendelig"/>
                 </designation>
             </concept>
@@ -103,7 +103,7 @@
                     <value value="BeingPhasedOut"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Udfases"/>
                 </designation>
             </concept>
@@ -115,7 +115,7 @@
                     <value value="Observed"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Observeres"/>
                 </designation>
             </concept>
@@ -127,7 +127,7 @@
                     <value value="Planned"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Planlagt"/>
                 </designation>
             </concept>

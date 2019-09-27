@@ -13,7 +13,7 @@
         <code value="PERSONAL_CARE"/>
         <display value="Problemer med personlig pleje"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med personlig pleje"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="DAILY_ACTIVITIES"/>
         <display value="Problemer med daglige aktiviteter"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Problemer med daglige aktiviteter"/>
         </designation>
     </concept>

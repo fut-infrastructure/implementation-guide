@@ -1,67 +1,132 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="ehealth-provenance-policies"/>
-  <url value="http://ehealth.sundhed.dk/vs/ehealth-provenance-policies"/>
-  <version value="0.0.1"/>
-  <name value="Policies for provenances"/>
-  <title value="Policies for provenances"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2019-02-02"/>
-  <publisher value="ehealth.sundhed.dk"/>
-  <contact>
-    <name value="ehealth.sundhed.dk"/>
-    <telecom>
-      <system value="url"/>
-      <value value="https://ehealth.sundhed.dk/terminology"/>
-    </telecom>
-  </contact>
-  <description value="Policies under which data can be provided" />
-
-
-  <compose>
-    <include>
-      <system value="http://www.justitsministeriet.dk/"/>
-      <concept>
-        <code value="healthcare-act"/>
-        <display value="Danish healthcare act"/>
-        <designation>
-          <language value="en-US"/>
-          <value value="Danish healthcare act"/>
-        </designation>
-        <designation>
-          <language value="da-DK"/>
-          <value value="Sundhedsloven"/>
-        </designation>
-      </concept>
-      <concept>
-        <code value="service-act"/>
-        <display value="Danish service act"/>
-        <designation>
-          <language value="en-US"/>
-          <value value="Danish service act"/>
-        </designation>
-        <designation>
-          <language value="da-DK"/>
-          <value value="Serviceloven"/>
-        </designation>
-      </concept>
-      <concept>
-        <code value="coherent-submitted-measurement"/>
-        <display value="Coherent submitted measurement"/>
-        <designation>
-          <language value="en-US"/>
-          <value value="Coherent submitted measurement"/>
-        </designation>
-      </concept>
-        <concept>
-            <code value="http://ehealth.sundhed.dk/policy/ehealth/organization-administration"/>
-            <display value="Organization administration"/>
-            <designation>
-                <language value="en-US"/>
-                <value value="Organization administration"/>
-            </designation>
-        </concept>
-
-    </include>
-  </compose>
+    <id value="ehealth-provenance-policies"/>
+    <url value="http://ehealth.sundhed.dk/vs/ehealth-provenance-policies"/>
+    <version value="0.0.1"/>
+    <name value="Policies for provenances"/>
+    <title value="Policies for provenances"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2019-02-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Policies under which data can be provided"/>
+    <compose>
+        <include>
+            <system value="http://www.justitsministeriet.dk/"/>
+            <concept>
+                <code value="healthcare-act"/>
+                <display value="Danish healthcare act"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Danish healthcare act"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Sundhedsloven"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="service-act"/>
+                <display value="Danish service act"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Danish service act"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Serviceloven"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"/>
+                <display value="Coherent submitted measurement"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Coherent submitted measurement"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Målinger indsendt sammen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/ehealth/measurement-reuse"/>
+                <display value="Measurement reuse"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement reuse"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Genbrugte måledata"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/ehealth/organization-administration"/>
+                <display value="Organization administration"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Organization administration"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Administrering af organisationsoplysninger"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/dk/sundhedsloven"/>
+                <display value="Danish healthcare act"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Danish healthcare act"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Sundhedsloven"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/dk/serviceloven"/>
+                <display value="Danish service act"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Danish service act"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Serviceloven"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/dk/persondataloven"/>
+                <display value="Person Data"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Person Data"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Oplysninger underlagt Persondataloven"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/eu/general-data-protection-regulation"/>
+                <display value="General Data Protection Regulation"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="General Data Protection Regulation"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="GDPR data"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
 </ValueSet>

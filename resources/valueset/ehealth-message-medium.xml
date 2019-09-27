@@ -30,7 +30,7 @@
         <code value="nemsms"/>
         <display value="NemSMS"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="NemSMS"/>
         </designation>
       </concept>
@@ -39,7 +39,7 @@
         <code value="eboks"/>
         <display value="eBoks"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="eBoks"/>
         </designation>
       </concept>

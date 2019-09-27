@@ -13,7 +13,7 @@
         <code value="PERFORM_DAILY_ROUTINES"/>
         <display value="Udføre daglige rutiner"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Udføre daglige rutiner"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="OBTAIN_GOODS_AND_SERVICES"/>
         <display value="Skaffe sig varer og tjenesteydelser"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Skaffe sig varer og tjenesteydelser"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="COOKING"/>
         <display value="Lave mad"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Lave mad"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="DOING_DOMESTIC_WORK"/>
         <display value="Lave husligt arbejde"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Lave husligt arbejde"/>
         </designation>
     </concept>

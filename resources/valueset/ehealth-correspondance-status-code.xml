@@ -16,7 +16,7 @@
         <code value="Nytbrev"/>
         <display value="A new correspondance message, which does not replace a previous one"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="En ny korrespondancemeddelelse, som ikke erstatter et tidligere"/>
         </designation>
       </concept>
@@ -25,7 +25,7 @@
         <code value="Rettetbrev"/>
         <display value="A correspondance message, which replaces a previous one"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="En korrespondancemeddelelse, som erstatter et tidligere sendt"/>
         </designation>
       </concept>

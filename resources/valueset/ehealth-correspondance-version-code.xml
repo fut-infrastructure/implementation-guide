@@ -16,7 +16,7 @@
         <code value="XD9134L"/>
         <display value="The version number for MedCom correspondance messages"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Versionsnummer for 'det gode' XML korrespondancebrev"/>
         </designation>
       </concept>

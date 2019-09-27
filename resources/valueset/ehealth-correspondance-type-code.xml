@@ -16,7 +16,7 @@
         <code value="XDIS91"/>
         <display value="The type for MedCom correspondance messages"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Type for 'det gode' XML korrespondancebrev"/>
         </designation>
       </concept>

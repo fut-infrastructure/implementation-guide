@@ -13,7 +13,7 @@
         <code value="CHANGE_BODY_POSITION"/>
         <display value="Ændre kropsstilling"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Ændre kropsstilling"/>
         </designation>
     </concept>
@@ -21,7 +21,7 @@
         <code value="MOVE"/>
         <display value="Forflytte sig"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Forflytte sig"/>
         </designation>
     </concept>
@@ -29,7 +29,7 @@
         <code value="LIFT_AND_CARRY"/>
         <display value="Løfte og bære"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Løfte og bære"/>
         </designation>
     </concept>
@@ -37,7 +37,7 @@
         <code value="WALK"/>
         <display value="Gå"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Gå"/>
         </designation>
     </concept>
@@ -45,7 +45,7 @@
         <code value="MOVE_AROUND"/>
         <display value="Bevæge sig omkring"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Bevæge sig omkring"/>
         </designation>
     </concept>
@@ -53,7 +53,7 @@
         <code value="MOVE_IN_DIFFERENT_ENVIRONMENTS"/>
         <display value="Færden i forskellige omgivelser"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Færden i forskellige omgivelser"/>
         </designation>
     </concept>
@@ -61,7 +61,7 @@
         <code value="USE_TRANSPORTATION"/>
         <display value="Bruge transportmidler"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Bruge transportmidler"/>
         </designation>
     </concept>
@@ -69,7 +69,7 @@
         <code value="ENDURANCE"/>
         <display value="Udholdenhed"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Udholdenhed"/>
         </designation>
     </concept>
@@ -77,7 +77,7 @@
         <code value="MUSCLE_STRENGTH"/>
         <display value="Muskelstyrke"/>
         <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Muskelstyrke"/>
         </designation>
     </concept>

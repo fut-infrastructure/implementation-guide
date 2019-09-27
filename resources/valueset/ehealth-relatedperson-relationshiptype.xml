@@ -22,7 +22,7 @@
         <code value="FAMMEMB"/>
         <display value="family member"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Øvrig familie"/>
         </designation>
       </concept>
@@ -31,7 +31,7 @@
         <code value="SIB"/>
         <display value="sibling"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Søskende"/>
         </designation>
       </concept>
@@ -40,7 +40,7 @@
         <code value="DOMPART"/>
         <display value="domestic partner"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Registreret partner"/>
         </designation>
       </concept>
@@ -49,7 +49,7 @@
         <code value="ROOM"/>
         <display value="Roommate"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Samboende"/>
         </designation>
       </concept>
@@ -58,7 +58,7 @@
         <code value="U"/>
         <display value="Unknown"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Uspecificeret pårørende"/>
         </designation>
       </concept>
@@ -67,7 +67,7 @@
         <code value="NBOR"/>
         <display value="neighbor"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Nabo"/>
         </designation>
       </concept>
@@ -76,7 +76,7 @@
         <code value="CHLDINLAW"/>
         <display value="child-in-law"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Svigerbarn"/>
         </designation>
       </concept>
@@ -85,7 +85,7 @@
         <code value="GRNDCHILD"/>
         <display value="grandchild"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Barnebarn"/>
         </designation>
       </concept>
@@ -94,7 +94,7 @@
         <code value="PRN"/>
         <display value="parent"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Forældre"/>
         </designation>
       </concept>
@@ -103,7 +103,7 @@
         <code value="O"/>
         <display value="Other"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Ingen relationer"/>
         </designation>
       </concept>
@@ -112,7 +112,7 @@
         <code value="CHILD"/>
         <display value="child"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Barn"/>
         </designation>
       </concept>
@@ -122,7 +122,7 @@
         <code value="SPS"/>
         <display value="spouse"/>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Ægtefælle"/>
         </designation>
       </concept>

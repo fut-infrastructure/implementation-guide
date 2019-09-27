@@ -27,7 +27,7 @@
           <value value="Unknown quality (Unlikely to be adequate where one is expected)"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Ukendt kvalitet"/>
         </designation>
       </concept>
@@ -46,7 +46,7 @@
         <value value="Quality value where no derivation rule logic nor values are expected"/>
       </designation>
       <designation>
-        <language value="da-DK"/>
+        <language value="da"/>
         <value value="Kvalitet ikke forventet"/>
       </designation>
       <contains>
@@ -60,7 +60,7 @@
               value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Fejl under bestemmelse af kvalitet"/>
         </designation>
         <contains>
@@ -73,7 +73,7 @@
             <value value="Example, needs further clarification"/>
           </designation>
           <designation>
-            <language value="da-DK"/>
+            <language value="da"/>
             <value value="Eksempel, under udarbejdelse"/>
           </designation>
           <contains>
@@ -86,7 +86,7 @@
               <value value="Example, needs further clarification"/>
             </designation>
             <designation>
-              <language value="da-DK"/>
+              <language value="da"/>
               <value value="Eksempel, under udarbejdelse"/>
             </designation>
             <contains>
@@ -99,7 +99,7 @@
                 <value value="Example, needs further clarification"/>
               </designation>
               <designation>
-                <language value="da-DK"/>
+                <language value="da"/>
                 <value value="Eksempel, under udarbejdelse"/>
               </designation>
             </contains>
