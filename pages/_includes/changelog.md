@@ -19,6 +19,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `-s-create-episode-of-care` operation examples for `ehealth-episodeofcare` and moved to `ehealth-episodeofcare` operation examples.
 - Added description of message broker event messages
 - Changed extension `modifierRole` to contain only `ehealth-organization` type reference
+- Added specification of how Quantity and its defined variations should be used to General Guidance.
+- Emptied FHIR Resources Slated for Use or Profiling on page Profiles.
 
 ### Custom operations
 #### System operations
