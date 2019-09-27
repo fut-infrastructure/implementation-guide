@@ -54,6 +54,32 @@
                     <value value="Questionnaire Response Document"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="69730-0"/>
+                <display value="Instructions"/>
+                <designation>
+                    <language value="da"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000550004"/>
+                        <display value="Definition"/>
+                    </use>
+                    <value value="Instruktioner"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="48766-0"/>
+                <display value="Information source"/>
+                <designation>
+                    <language value="da"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000550004"/>
+                        <display value="Definition"/>
+                    </use>
+                    <value value="Informationskilde"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

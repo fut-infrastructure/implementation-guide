@@ -627,4 +627,9 @@
         <display value="Emergency medicine"/>
         <definition value="Emergency medicine"/>
     </concept>
+    <concept>
+        <code value="900000000000550004"/>
+        <display value="Definition"/>
+        <definition value="Definition"/>
+    </concept>
 </CodeSystem>
