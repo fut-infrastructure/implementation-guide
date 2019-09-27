@@ -21,5 +21,18 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Midlertidig værdi"/>
+        </designation>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2019-09-18"/>
+        </property>
     </concept>
 </CodeSystem>
