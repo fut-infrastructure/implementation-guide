@@ -95,7 +95,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-communication-category" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/communication-category" />
       </binding>
     </element>
     <element id="Communication.subject">

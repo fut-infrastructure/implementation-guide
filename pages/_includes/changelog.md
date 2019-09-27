@@ -146,7 +146,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-communication)
 - add extension `senderCareTeam`
 - add extension `restrictionCategory`
-- Changed category to 'http://ehealth.sundhed.dk/vs/ehealth-communication-category'
+- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
 - Changed cardinality of element `sender` to 0...1
 - References to organization were removed from 'sender' and 'recipient'
 - add context reference to Encounter
