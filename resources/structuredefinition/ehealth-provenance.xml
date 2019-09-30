@@ -89,5 +89,12 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
+    <element id="Provenance.entity.dateTime">
+      <path value="Provenance.entity.dateTimeOfReusedEntity" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

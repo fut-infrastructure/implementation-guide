@@ -27,6 +27,16 @@
         <rules value="open" />
       </slicing>
     </element>
+    <element id="ActivityDefinition.extension:reuse">
+      <path value="ActivityDefinition.extension" />
+      <sliceName value="reuse" />
+      <short value="Criteria to be met for reuse of responses to be allowed." />
+      <definition value="Criteria to be met for reuse of responses to be allowed." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria" />
+      </type>
+    </element>
     <element id="ActivityDefinition.extension:recommendation">
       <path value="ActivityDefinition.extension" />
       <sliceName value="recommendation" />

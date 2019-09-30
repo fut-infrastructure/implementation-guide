@@ -666,7 +666,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-reusecriteria"/>
+        <reference value="StructureDefinition/Extension-ehealth-reusecriteria"/>
       </sourceReference>
     </resource>
     <resource>

@@ -71,6 +71,10 @@
       <min value="1" />
       <type>
         <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+      </type>
+      <type>
+        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
         <aggregation value="referenced" />
       </type>
@@ -142,6 +146,18 @@
     <element id="Observation.referenceRange.high">
       <path value="Observation.referenceRange.high" />
       <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.&#xD;&#xA;&#xD;&#xA;High Range, if relevant" />
+    </element>
+    <element id="Observation.referenceRange.type">
+      <path value="Observation.referenceRange.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationRangeMeaning" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Observation.related.target">
       <path value="Observation.related.target" />

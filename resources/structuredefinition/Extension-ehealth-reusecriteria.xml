@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-questionnaire-reuseCriteria" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
+  <id value="ehealth-reuseCriteria" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria" />
   <name value="reuseCriteria" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
@@ -137,35 +137,17 @@
       <path value="Extension.extension.url" />
       <fixedUri value="dataActuality" />
     </element>
-    <element id="Extension.extension:dataActuality.value[x]:valueInteger">
-      <path value="Extension.extension.valueInteger" />
-      <sliceName value="valueInteger" />
+    <element id="Extension.extension:dataActuality.value[x]:valueDuration">
+      <path value="Extension.extension.valueDuration" />
+      <sliceName value="valueDuration" />
       <min value="1" />
       <type>
-        <code value="integer" />
-      </type>
-    </element>
-    <element id="Extension.extension:dataActualityUnit">
-      <path value="Extension.extension" />
-      <sliceName value="dataActualityUnit" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:dataActualityUnit.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="dataActualityUnit" />
-    </element>
-    <element id="Extension.extension:dataActualityUnit.value[x]:valueTiming">
-      <path value="Extension.extension.valueTiming" />
-      <sliceName value="valueTiming" />
-      <min value="1" />
-      <type>
-        <code value="Timing" />
+        <code value="Duration" />
       </type>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-reuseCriteria" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
