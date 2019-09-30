@@ -637,4 +637,9 @@
         <display value="Oxygen saturation within reference range"/>
         <definition value="Oxygen saturation within reference range"/>
     </concept>
+    <concept>
+        <code value="900000000000550004"/>
+        <display value="Definition"/>
+        <definition value="Definition"/>
+    </concept>
 </CodeSystem>

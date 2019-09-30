@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="1.2.208.184.100.8--20190325"/>
+    <url value="urn:oid:1.2.208.184.100.8"/>
+    <version value="20190829"/>
+    <name value="DAK-E Codes"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-03-25"/>
+    <publisher value="KiAP - Kvalitet i Almen Praksis"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.medcom.dk/opslag/koder-tabeller-ydere/koder/laboratorieomraadet/dak-e-koder"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="ghe@medcom.dk"/>
+        </telecom>
+    </contact>
+    <description value="Procedure and observation codes used for communication and administration of laboratory results in Denmark."/>
+    <caseSensitive value="true"/>
+    <content value="fragment"/>
+    <concept>
+        <code value="MCS88050"/>
+        <display value="Rejse sætte sig testen;Pt"/>
+        <definition value="Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek"/>
+        <designation>
+            <language value="da"/>
+            <value value="Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="MCS88137"/>
+        <display value="CAT score;Pt"/>
+        <definition value="Pt-CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?"/>
+        <designation>
+            <language value="da"/>
+            <value value="Pt-CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?"/>
+        </designation>
+    </concept>
+</CodeSystem>

@@ -31,6 +31,27 @@ Elements of type [Coding](http://hl7.org/fhir/STU3/datatypes.html#codesystem) an
   The services comprising the eHealth Infrastructure must be expected to introduce verification hereof
   at any time. 
   
+#### Use of Quantity and its Defined Variations
+[Quantity](http://hl7.org/fhir/STU3/datatypes.html#quantity) contains a number of optional elements of which
+some are part of constraints where they are deemed mandatory (see constraints 
+under http://hl7.org/fhir/STU3/datatypes.html#quantity).
+
+In scope of the eHealth Infrastructure, the following elements shall be handled as mandatory:
+* unit
+* system
+* code
+
+It must be expected that eHealth Infrastructure services can introduce verification of this at any time.
+
+When Unified Code fr Units of Measurements (UCUM) is used for system, and this is most likely the case in
+the eHealth Infrastructure, the source of the values used are as follows:
+* unit is typically based on the printSymbol element in the corresponding entry in http://unitsofmeasure.org/ucum-essence.xml, possibly starting with a prefix for metric units 
+* code is typically based on the code element in the corresponding entry in http://unitsofmeasure.org/ucum-essence.xml, possibly starting with a prefix for metric units
+* system is "http://unitsofmeasure.org"
+
+This applies for the Quantity and [its defined variations](http://hl7.org/fhir/STU3/datatypes.html#QuantityVariations)
+except Count.
+
 ### Security
 eHealth Infrastructure security mechanisms are described on the [wiki site](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/).
 

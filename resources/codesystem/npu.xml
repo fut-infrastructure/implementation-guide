@@ -4,7 +4,7 @@
   <url value="http://sundhedsdatastyrelsen.dk/npu"/>
   <version value="1.0.0"/>
   <name value="Danish NPU Codes (NPU)"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2019-01-24"/>
   <publisher value="The Danish Health Data Authority"/>

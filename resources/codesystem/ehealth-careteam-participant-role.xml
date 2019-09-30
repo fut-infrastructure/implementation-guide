@@ -6,7 +6,7 @@
     <name value="CareTeamParticipantRole"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2019-01-29"/>
+    <date value="2019-09-19"/>
     <publisher value="ehealth.sundhed.dk"/>
     <contact>
         <telecom>
@@ -18,18 +18,218 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
+        <code value="treatmentResponsible"/>
+        <display value="Treatment Responsible"/>
+        <definition value="Treatment Responsible"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Behandlingsansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
         <code value="monitoringResponsible"/>
         <display value="Monitoring responsible"/>
         <definition value="Monitoring responsible"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+        </designation>
     </concept>
     <concept>
         <code value="monitoringDelegate"/>
         <display value="Monitoring Delegate"/>
         <definition value="Monitoring Delegate"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Monitoreringsmedhjælper"/>
+        </designation>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2019-09-18"/>
+        </property>
     </concept>
+    <concept>
+        <code value="teleMedicineActor"/>
+        <display value="Tele Medicine Actor"/>
+        <definition value="Tele Medicine Actor"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Telemedicinsk aktør"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="administrativePersonnel"/>
+        <display value="Administrative Personnel"/>
+        <definition value="Administrative Personnel"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Administrativt personale"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="healthcareProfessional"/>
+        <display value="Healthcare Professional"/>
+        <definition value="Healthcare Professional"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Sundhedsfaglig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="reportGenerator"/>
+        <display value="Report, statistics and data extractor"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Nøgletalsmedarbejder"/>
+        </designation>
+    </concept>
+
+    <concept>
+        <code value="clinicalAdministrator"/>
+        <display value="Clinical Administrator"/>
+        <definition value="Clinical Administrator"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Sundhedsfaglig administrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="administrator"/>
+        <display value="Administrator"/>
+        <definition value="Administrator"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Administrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="questionnaireEditor"/>
+        <display value="Questionnaire editor"/>
+        <definition value="Questionnaire editor"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Sundhedsfaglig spørgeskemaeditor"/>
+        </designation>
+    </concept>
+
     <concept>
         <code value="supporter"/>
         <display value="Supporter"/>
-        <definition value="Supporter"/>
+        <definition value="Supporter at business partner"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Support samarbejdspartner"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="serviceAndLogistics"/>
+        <display value="Service and logistics"/>
+        <definition value="Service and logistics supporter at business partner"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Service og logistik samarbejdspartner"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="orderPlacer"/>
+        <display value="Order placer"/>
+        <definition value="Placer of orders"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Bestiller af udstyr"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="userAdministrator"/>
+        <display value="User administrator"/>
+        <definition value="User administrator"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Brugeradministrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="teamAdministrator"/>
+        <display value="Team administrator"/>
+        <definition value="Team administrator"/>
+        <designation>
+            <language value="da"/>
+            <use>
+                <system value="http://snomed.info/sct"/>
+                <code value="900000000000550004"/>
+                <display value="Definition"/>
+            </use>
+            <value value="Teamadministrator"/>
+        </designation>
     </concept>
 </CodeSystem>

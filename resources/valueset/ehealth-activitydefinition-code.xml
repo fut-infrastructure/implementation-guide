@@ -39,6 +39,14 @@
                     <value value="O2 sat.;Hb(aB)"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="NPU27281"/>
+                <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                </designation>
+            </concept>
         </include>
         <include>
             <system value="http://snomed.info/sct"/>

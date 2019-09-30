@@ -15,6 +15,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added page containing operation examples for all custom operations
 - Update all operation examples
 - Restructured `Operations and Search parameters` section
+- Added specification of how Quantity and its defined variations should be used to General Guidance.
+- Emptied FHIR Resources Slated for Use or Profiling on page Profiles.
 
 ### Custom operations
 #### System operations
@@ -161,7 +163,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - FunktionalCapacity score code is now required
 - Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
 - Added it-competence-level support for device-type and description data
-- Removed managingOrganization requirement as consequence of issue FUT1-1586
+- Removed managingOrganization
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description

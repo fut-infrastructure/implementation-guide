@@ -34,7 +34,7 @@
           <value value="Message"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Besked"/>
         </designation>
       </concept>
@@ -47,7 +47,7 @@
           <value value="Notification"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Notifikation"/>
         </designation>
       </concept>
@@ -60,7 +60,7 @@
           <value value="Advice"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Advisering"/>
         </designation>
       </concept>
@@ -73,7 +73,7 @@
           <value value="Note"/>
         </designation>
         <designation>
-          <language value="da-DK"/>
+          <language value="da"/>
           <value value="Note"/>
         </designation>
       </concept>
