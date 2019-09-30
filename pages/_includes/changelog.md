@@ -79,9 +79,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Questionnaire (ehealth-questionnaire)
 - Removed `reuseCriteria` extension
 
-#### Provenance (ehealth-detached-provenance)
-- Added optional dateTimeOfReusedEntity
-
 #### Observation (ehealth-observation)
 - Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
 - Observation.context reference to Encounter was added
@@ -127,6 +124,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Provenance (ehealth-provenance)
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
+- Added optional dateTimeOfReusedEntity
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
