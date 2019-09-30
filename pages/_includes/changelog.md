@@ -135,6 +135,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added general resource description
 - Added sharingPolicy extension
+- Added ehealth-reuseCriteria extension
 
 #### Condition (ehealth-condition)
 - Added general resource description
@@ -168,6 +169,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ProcedureRequest (ehealth-procedurerequest)
 - Added general resource description
 - Added sharingPolicy extension
+- Added ehealth-reuseCriteria extension
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added general resource description
@@ -427,6 +429,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/vs/questionnaire-types`
 - Changed `http://ehealth.sundhed.dk/vs/topic-type`
 - Changed `http://ehealth.sundhed.dk/vs/usage-quality`
+- Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies` added new policy : `http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen`
 
 ### Resource/profile changes
 
@@ -519,7 +522,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
 - Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
 - Removed sharingPolicy extension
-
+- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Observation.context reference to Encounter was added
 #### Organization (ehealth-organization)
 - Added extensions for `system` and `value` to be used inside `organization.contact.telecom`
 - Changed referenced resources to use aggregation type "referenced"
@@ -543,7 +547,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Provenance (ehealth-detached-provenance)
 - Added as an unchanged copy of the existing `ehealth-provenance` to allow `provenance` to exist on multiple HAPI FHIR instances
-
+- Added optional dateTimeOfReusedEntity
 #### Provenance (ehealth-provenance)
 - Changed referenced resources to use aggregation type "referenced"
 
@@ -558,6 +562,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed extension `QuestionnaireRecommendation` from Coding to CodeableConcept 
 - Deleted element `author`
 - Deleted element `custodian`
+- Removed `reuseCriteria` extension
+
+#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
+- Renamed to `ehealth-reuseCriteria`
+
+#### ReuseCriteria (ehealth-reuseCriteria)
+- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
+- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed referenced resources to use aggregation type "referenced"
