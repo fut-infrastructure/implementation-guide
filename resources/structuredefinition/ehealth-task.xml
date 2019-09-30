@@ -98,6 +98,7 @@
     </element>
     <element id="Task.priority">
       <path value="Task.priority" />
+      <short value="routine | urgent | asap | stat" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
