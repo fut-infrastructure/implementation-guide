@@ -127,6 +127,14 @@
                     <value value="GDPR data"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen"/>
+                <display value="Reuse of measurement chosen by citizen"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Reuse of measurement chosen by citizen"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
