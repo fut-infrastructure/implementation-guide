@@ -95,6 +95,9 @@
       <type>
         <code value="dateTime" />
       </type>
+      <type>
+        <code value="Period" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
