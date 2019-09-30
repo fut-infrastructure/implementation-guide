@@ -3,28 +3,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
-#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
-- Renamed to `ehealth-reuseCriteria`
-
-#### ReuseCriteria (ehealth-reuseCriteria)
-- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
-- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
-
-#### Questionnaire (ehealth-questionnaire)
-- Removed `reuseCriteria` extension
-
-#### Provenance (ehealth-detached-provenance)
-- Added optional dateTimeOfReusedEntity
-
-#### Observation (ehealth-observation)
-- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Observation.context reference to Encounter was added
-
-#### ActivityDefinition (ehealth-activitydefinition)
-- Added ehealth-reuseCriteria extension
-
-#### ProcedureRequest (ehealth-procedurerequest)
-- Added ehealth-reuseCriteria extension
 
 ### General changes
 - Added list of error messages
@@ -90,6 +68,29 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies` added new policy : `http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen`
 
 ### Resource/profile changes
+
+#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
+- Renamed to `ehealth-reuseCriteria`
+
+#### ReuseCriteria (ehealth-reuseCriteria)
+- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
+- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
+
+#### Questionnaire (ehealth-questionnaire)
+- Removed `reuseCriteria` extension
+
+#### Provenance (ehealth-detached-provenance)
+- Added optional dateTimeOfReusedEntity
+
+#### Observation (ehealth-observation)
+- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Observation.context reference to Encounter was added
+
+#### ActivityDefinition (ehealth-activitydefinition)
+- Added ehealth-reuseCriteria extension
+
+#### ProcedureRequest (ehealth-procedurerequest)
+- Added ehealth-reuseCriteria extension
 
 #### CarePlan (ehealth-careplan)
 - Removed extension `responsibilitySummary`
