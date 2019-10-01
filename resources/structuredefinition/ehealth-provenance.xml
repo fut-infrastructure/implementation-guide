@@ -106,7 +106,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dateTimeOfReusedEntity" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance-dateTimeOfReusedEntity" />
       </type>
     </element>
   </differential>

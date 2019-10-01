@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-dateTimeOfReusedEntity" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dateTimeOfReusedEntity" />
+  <id value="ehealth-provenance-dateTimeOfReusedEntity" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance-dateTimeOfReusedEntity" />
   <name value="DateTimeOfReusedEntity" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
@@ -17,7 +17,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dateTimeOfReusedEntity" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance-dateTimeOfReusedEntity" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

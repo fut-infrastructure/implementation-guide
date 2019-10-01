@@ -621,6 +621,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-provenance-dateTimeOfReusedEntity"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-quality"/>
       </sourceReference>
     </resource>
