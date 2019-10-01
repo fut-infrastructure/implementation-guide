@@ -15,13 +15,6 @@
     </telecom>
   </contact>
   <description value="The set of possible message types" />
-  <jurisdiction>
-    <coding>
-      <system value="http://digst.dk"/>
-      <code value="DK"/>
-    </coding>
-  </jurisdiction>
-  
   <compose>
     <include>
       <system value="http://ehealth.sundhed.dk/cs/message-category"/>

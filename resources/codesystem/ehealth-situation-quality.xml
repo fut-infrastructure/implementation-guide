@@ -16,6 +16,7 @@
     </contact>
     <description value="Codes stating the quality of a measurement situation"/>
     <caseSensitive value="true"/>
+    <hierarchyMeaning value="is-a"/>
     <content value="complete"/>
     <concept>
         <code value="Unknown"/>
@@ -32,15 +33,15 @@
                         value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error"/>
                 <concept>
                     <code value="SQ1"/>
-                    <display value="Situation quality 1 (example) "/>
+                    <display value="Situation quality 1 (example)"/>
                     <definition value="Example, needs further clarification."/>
                     <concept>
                         <code value="SQ2"/>
-                        <display value="Situation quality 2 (example) "/>
+                        <display value="Situation quality 2 (example)"/>
                         <definition value="Example, needs further clarification."/>
                         <concept>
                             <code value="SQ3"/>
-                            <display value="Situation quality 3 (example) "/>
+                            <display value="Situation quality 3 (example)"/>
                             <definition value="Example, needs further clarification."/>
                         </concept>
                     </concept>

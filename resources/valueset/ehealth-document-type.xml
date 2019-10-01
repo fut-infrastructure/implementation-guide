@@ -59,11 +59,6 @@
                 <display value="Instructions"/>
                 <designation>
                     <language value="da"/>
-                    <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000550004"/>
-                        <display value="Definition"/>
-                    </use>
                     <value value="Instruktioner"/>
                 </designation>
             </concept>
@@ -72,11 +67,6 @@
                 <display value="Information source"/>
                 <designation>
                     <language value="da"/>
-                    <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000550004"/>
-                        <display value="Definition"/>
-                    </use>
                     <value value="Informationskilde"/>
                 </designation>
             </concept>

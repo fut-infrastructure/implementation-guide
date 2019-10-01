@@ -8,12 +8,6 @@
     <date value="2019-02-02"/>
     <publisher value="ehealth.sundhed.dk"/>
     <description value="Municipality codes used in Denmark" />
-    <jurisdiction>
-        <coding>
-            <system value="urn:oid:1.2.208.184"/>
-            <code value="Medcom"/>
-        </coding>
-    </jurisdiction>
     <compose>
         <include>
             <system value="http://danmarksadresser.dk/kommunekode"/>
