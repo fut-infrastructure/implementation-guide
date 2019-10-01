@@ -56,8 +56,6 @@
                 </designation>
             </concept>
         </include>
-    </compose>
-    <compose>
         <include>
             <system value="urn:oid:1.2.208.184.100.8"/>
             <concept>
