@@ -27,4 +27,9 @@
         <display value="Participate in Telemedical EpisodeOfCare"/>
         <definition value="Participate in Telemedical EpisodeOfCare"/>
     </concept>
+    <concept>
+        <code value="SSLPCI"/>
+        <display value="Forward patient contact information to SSL provider"/>
+        <definition value="Forward patient contact information to SSL provider"/>
+    </concept>
 </CodeSystem>
