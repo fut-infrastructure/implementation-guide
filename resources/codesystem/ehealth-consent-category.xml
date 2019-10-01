@@ -22,4 +22,9 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="PITEOC"/>
+        <display value="Participate in Telemedical EpisodeOfCare"/>
+        <definition value="Participate in Telemedical EpisodeOfCare"/>
+    </concept>
 </CodeSystem>
