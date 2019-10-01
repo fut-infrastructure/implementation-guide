@@ -27,7 +27,7 @@
                     <value value="Oxygen saturation"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
                 </designation>
             </concept>
@@ -39,7 +39,7 @@
                     <value value="Heartbeats per minute"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
                 </designation>
             </concept>
@@ -51,7 +51,7 @@
                     <value value="Weight in kilogrammes"/>
                 </designation>
                 <designation>
-                    <language value="da-DK"/>
+                    <language value="da"/>
                     <value value="Pt—Legeme; masse = ? kg"/>
                 </designation>
             </concept>

@@ -8,13 +8,6 @@
   <date value="2019-02-02"/>
   <publisher value="ehealth.sundhed.dk"/>
   <description value="A set of codes that can be used to indicate the relationship between a Patient and a Related Person used in Denmark" />
-  <jurisdiction>
-    <coding>
-      <system value="urn:oid:1.2.208.184"/>
-      <code value="Medcom"/>
-    </coding>
-  </jurisdiction>
-
   <compose>
     <include>
       <system value="http://hl7.org/fhir/v3/RoleCode"/>

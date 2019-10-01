@@ -19,7 +19,7 @@
     <content value="complete"/>
     <concept>
         <code value="CHECKUP"/>
-        <display value="A routine check-up, such as an annual physical	"/>
+        <display value="A routine check-up, such as an annual physical"/>
     </concept>
     <concept>
         <code value="EMERGENCY"/>
@@ -27,11 +27,11 @@
     </concept>
     <concept>
         <code value="FOLLOWUP"/>
-        <display value="A follow up visit from a previous appointment	"/>
+        <display value="A follow up visit from a previous appointment"/>
     </concept>
     <concept>
         <code value="ROUTINE"/>
-        <display value="Routine appointment - default if not valued	"/>
+        <display value="Routine appointment - default if not valued"/>
     </concept>
     <concept>
         <code value="WALKIN"/>

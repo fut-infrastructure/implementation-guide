@@ -8,12 +8,6 @@
     <date value="2019-02-02"/>
     <publisher value="ehealth.sundhed.dk"/>
     <description value="Subdivision codes (Regional codes) used in Denmark" />
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166-2:DK-2"/>
-            <code value="ISO"/>
-        </coding>
-    </jurisdiction>
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
