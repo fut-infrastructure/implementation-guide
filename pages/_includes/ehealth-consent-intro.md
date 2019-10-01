@@ -5,7 +5,7 @@ A Consent resource is a record of a healthcare consumer’s policy choices, whic
 In the eHealth infrastructure a Consent resource is used
 
 1. as a record of the fact that a Patient has given a Consent and 
-1. to enforce data policies that require Consent to be given and recorded for a Patient.
+2. to enforce data policies that require Consent to be given and recorded for a Patient.
 
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
@@ -14,7 +14,7 @@ eHealth operates with two categories of consents:
 
 1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpretated to also apply to all CarePlan instances related to the consented EpisodeOfCare.
 
-1. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
+2. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
 Consents of category **PITEOC** are expressed by creating a Consent resource with:
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
@@ -25,12 +25,12 @@ Consents of category **SSLPCI** are expressed by creating a Consent resource wit
 - `Consent.category.coding.code = "SSLPCI"`.
 
 ## Enforcement of Consent 
-Business rules are built into to eHealth infrastructure to ensure that data can only be processed or forwarded to other systems and actors when the proper Consent is given.
+Business rules are built into eHealth infrastructure to ensure that data can only be processed or forwarded to other systems and actors when the proper Consent is given.
 
 This means, that:
 
-1) An EpisodeOfCare can only change status to `active` if a Consent with category PITEOC has been given.
-2) An SSL Order can only change status to `submitted` if a Consent with category SSLPCI has been given.
+1. An EpisodeOfCare can only change status to `active` if a Consent with category PITEOC has been given.
+2. An SSL Order can only change status to `submitted` if a Consent with category SSLPCI has been given.
 
 In addition to the `Consent.category` element, the following elements must be set on a Consent resource for the policy enforcing business logic to take effect:
 
