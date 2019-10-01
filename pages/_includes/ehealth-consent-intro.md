@@ -5,7 +5,7 @@ A Consent resource is a record of a healthcare consumer’s policy choices, whic
 In the eHealth infrastructure a Consent resource is used
 
 1. as a record of the fact that a Patient has given a Consent and 
-1. to enforce data policies that require Consent to given and recorded for a Patient.
+1. to enforce data policies that require Consent to be given and recorded for a Patient.
 
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
@@ -16,9 +16,13 @@ eHealth operates with two categories of consents:
 
 1. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
-Consents of category **PITEOC** are expressed by creating a Consent resource with the `Consent.category.coding` element having value `http://ehealth.sundhed.dk/cs/consent-category|PITEOC`.
+Consents of category **PITEOC** are expressed by creating a Consent resource with:
+- `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
+- `Consent.category.coding.code = "PITEOC"`.
 
-Consents of category **SSLPCI** are expressed by creating a Consent resource with the `Consent.category.coding` element having value `http://ehealth.sundhed.dk/cs/consent-category|SSLPCI`.
+Consents of category **SSLPCI** are expressed by creating a Consent resource with:
+- `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
+- `Consent.category.coding.code = "SSLPCI"`.
 
 ## Enforcement of Consent 
 Business rules are built into to eHealth infrastructure to ensure that data can only be processed or forwarded to other systems and actors when the proper Consent is given.
