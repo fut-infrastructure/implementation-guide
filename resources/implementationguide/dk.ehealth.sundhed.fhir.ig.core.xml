@@ -786,6 +786,11 @@
         <reference value="CapabilityStatement/document-transformation"/>
       </sourceReference>
     </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CapabilityStatement/task"/>
+      </sourceReference>
+    </resource>
 
     <!-- Naming systems -->
     <resource>
