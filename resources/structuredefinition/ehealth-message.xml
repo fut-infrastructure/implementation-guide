@@ -6,7 +6,7 @@
   <title value="eHealth Message" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the Provenance resource." />
+  <description value="This is the profile for general messaging in the eHealth platform. It covers four different message types: messages, notifications, advice, and notes. This is specified using the message category (value set &quot;Message category&quot;). When needed, a message medium may also be specified: NemSMS or eBoks (value set &quot;Message medium&quot;).&#xD;&#xA;&#xD;&#xA;Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the ehealth-detached-provenance resource." />
   <copyright value="Trifork A&amp;S" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
@@ -48,6 +48,24 @@
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />
       </type>
+    </element>
+    <element id="Communication.extension:restrictionCategory">
+      <path value="Communication.extension" />
+      <sliceName value="restrictionCategory" />
+      <definition value="Optional Extension Element - found in all resources" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category" />
+      </type>
+    </element>
+    <element id="Communication.extension:restrictionCategory.valueCodeableConcept:valueCodeableConcept">
+      <path value="Communication.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).." />
+    </element>
+    <element id="Communication.extension:restrictionCategory.valueCodeableConcept:valueCodeableConcept.coding">
+      <path value="Communication.extension.valueCodeableConcept.coding" />
+      <definition value="A reference to a code defined by a terminology system.." />
     </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
@@ -184,11 +202,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
         <aggregation value="referenced" />
       </type>
     </element>

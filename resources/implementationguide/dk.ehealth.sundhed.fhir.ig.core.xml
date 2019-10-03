@@ -671,6 +671,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/Extension-ehealth-restriction-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-reusecriteria"/>
       </sourceReference>
     </resource>

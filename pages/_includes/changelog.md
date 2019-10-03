@@ -186,6 +186,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
 - Added it-competence-level support for device-type and description data
 - Removed managingOrganization
+- Legal PATCH operations described
 
 #### Practitioner (ehealth-practitioner)
 - Added general resource description
@@ -497,6 +498,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
 - Only one recipient is allowed
 - Device added as possibility for sender
+- CareTeam removed as possible recipient (profiling defect, extension must be used instead)
+- Legal PATCH operations described
 
 #### Appointment (ehealth-appointment)
 - Location is no longer required
