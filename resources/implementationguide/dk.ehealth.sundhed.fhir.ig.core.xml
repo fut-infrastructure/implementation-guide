@@ -1012,6 +1012,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-restriction-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-situation-quality"/>
       </sourceReference>
     </resource>
@@ -1484,6 +1489,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-organization-relation-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-restriction-category"/>
       </sourceReference>
     </resource>
     <resource>
