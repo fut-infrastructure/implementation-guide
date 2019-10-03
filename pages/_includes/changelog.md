@@ -15,8 +15,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added page containing operation examples for all custom operations
 - Update all operation examples
 - Restructured `Operations and Search parameters` section
-- Added specification of how Quantity and its defined variations should be used to General Guidance.
-- Emptied FHIR Resources Slated for Use or Profiling on page Profiles.
+- Added specification of how Quantity and its defined variations should be used to General Guidance
+- Emptied FHIR Resources Slated for Use or Profiling on page Profiles
 
 ### Custom operations
 #### System operations
