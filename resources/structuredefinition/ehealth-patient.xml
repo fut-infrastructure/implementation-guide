@@ -10,7 +10,7 @@
   <title value="eHealth Patient" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a real person in a careplan process. &#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operation defined for the Patient resource (see the createPatient operation). The operation ensure that patients are created with the proper demographics data delivered by national registers." />
+  <description value="This profile holds the patient information needed in the danish eHealth context. Patients models the concept of a real person in a careplan process. &#xD;&#xA;&#xD;&#xA;#### Creating patients&#xD;&#xA;Patients can only be created using the operation defined for the Patient resource (see the createPatient operation). The operation ensure that patients are created with the proper demographics data delivered by national registers. There can only be a single patient pr. actual person." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
