@@ -51,6 +51,8 @@
     <element id="Task.extension:restrictionCategory">
       <path value="Task.extension" />
       <sliceName value="restrictionCategory" />
+      <short value="For certain category of workflow/responsibility only." />
+      <definition value="The resource is intended for certain category of workflow/responsibility only." />
       <min value="1" />
       <type>
         <code value="Extension" />
