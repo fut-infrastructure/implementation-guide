@@ -385,11 +385,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-author"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-authorizationTime"/>
       </sourceReference>
     </resource>
@@ -627,16 +622,6 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/Extension-ehealth-quality"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-author"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/Extension-ehealth-questionnaire-custodian"/>
       </sourceReference>
     </resource>
     <resource>
