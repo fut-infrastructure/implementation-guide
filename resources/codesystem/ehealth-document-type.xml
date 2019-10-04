@@ -30,4 +30,17 @@
             <valueDateTime value="2019-09-18"/>
         </property>
     </concept>
+    <concept>
+        <code value="TBD2"/>
+        <display value="Example value - Under construction"/>
+        <definition value="Example value - Under construction"/>
+        <designation>
+            <language value="da"/>
+            <value value="Midlertidig værdi"/>
+        </designation>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2019-09-18"/>
+        </property>
+    </concept>
 </CodeSystem>
