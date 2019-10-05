@@ -27,12 +27,20 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/restriction-category" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding">
       <path value="Extension.valueCodeableConcept.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/restriction-category" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/restriction-category" />
+        </valueSetReference>
       </binding>
     </element>
   </differential>
