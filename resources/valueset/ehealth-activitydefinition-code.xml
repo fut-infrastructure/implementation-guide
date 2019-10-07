@@ -29,8 +29,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
-            <!-- system: urn:oid:1.2.208.176.2.1-->
+            <system value="urn:oid:1.2.208.176.2.1"/>
             <concept>
                 <code value="NPU03011"/>
                 <display value="O2 sat.;Hb(aB)"/>
