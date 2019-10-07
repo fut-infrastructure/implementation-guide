@@ -27,6 +27,14 @@
                     <value value="Example value - Under construction"/>
                 </designation>
             </concept>
+			<concept>
+                <code value="MissingMeasurement"/>
+                <display value="Missing Measurement"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Missing Measurement"/>
+                </designation>
+            </concept>
             <concept>
                 <code value="MissingMeasurementResolving"/>
                 <display value="Need resolving of why scheduled measurement has not been submitted"/>

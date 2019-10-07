@@ -27,6 +27,14 @@
                     <value value="Annotation"/>
                 </designation>
             </concept>
+			<concept>
+                <code value="MissingMeasurement"/>
+                <display value="Missing Measurement"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Missing Measurement"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
