@@ -3,6 +3,8 @@
 An AppointmentResponse is a response to an Appointment, such as a confirmation or rejection. In its most basic form, the AppointmentResponse contains a reference to the actual Appointment, 
 the participant (actor), and a status indicating if the response indicates eg. a confirmation (participantStatus=accepted) or rejection (participantStatus=declined).
 
+When an AppointmentResponse is created, the status of the participant is updated on the corresponding
+Appointment.
 
 # Scope and Usage
 In the eHealth Infrastructure the AppointmentResponse resource is used in conjunction with the following resources:
