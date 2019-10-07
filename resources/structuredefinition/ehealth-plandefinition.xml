@@ -64,16 +64,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
       </type>
     </element>
-    <element id="PlanDefinition.extension:role">
-      <path value="PlanDefinition.extension" />
-      <sliceName value="role" />
-      <short value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
-      <definition value="Required roles of participants in CarePlans originating from applying this PlanDefinition to a Patient." />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition-role" />
-      </type>
-    </element>
     <element id="PlanDefinition.version">
       <path value="PlanDefinition.version" />
       <min value="1" />
