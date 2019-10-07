@@ -1,0 +1,32 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-appointment-reason"/>
+    <url value="http://ehealth.sundhed.dk/vs/appointment-reason"/>
+    <version value="0.6.0"/>
+    <name value="AppointmentReason"/>
+    <title value="AppointmentReason"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-02-08"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Appointment reason"/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/appointment-reason"/>
+            <concept>
+                <code value="412776001"/>
+                <display value="Clinical review"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Clinical review"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

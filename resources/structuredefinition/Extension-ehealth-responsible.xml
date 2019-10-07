@@ -51,12 +51,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.extension.valueCodeableConcept.coding" />
       <binding>
         <strength value="required" />
-        <description value="Responsibility type" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/responsibility-types" />
-        </valueSetReference>
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/responsibility-types" />
       </binding>
     </element>
     <element id="Extension.extension:actor">

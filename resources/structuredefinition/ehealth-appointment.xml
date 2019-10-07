@@ -43,16 +43,24 @@
       <path value="Appointment.appointmentType" />
       <min value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="appointment-type" />
-        </extension>
         <strength value="extensible" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/appointmenttype-codes" />
       </binding>
     </element>
     <element id="Appointment.reason">
       <path value="Appointment.reason" />
-      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/encounter-reason" />
+      </binding>
+    </element>
+    <element id="Appointment.reason.coding">
+      <path value="Appointment.reason.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/appointment-reason" />
+      </binding>
     </element>
     <element id="Appointment.indication">
       <path value="Appointment.indication" />

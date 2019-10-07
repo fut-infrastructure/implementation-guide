@@ -220,6 +220,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Appointment (ehealth-appointment)
 - Changed referenced resources to use aggregation type "referenced"
+- Added ValueSet "ehealth-appointment-reason"
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - Changed referenced resources to use aggregation type "referenced"
