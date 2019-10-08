@@ -817,6 +817,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-appointment-reason"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-careplan-category"/>
       </sourceReference>
     </resource>
@@ -1197,6 +1202,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-appointmenttype-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-appointment-reason"/>
       </sourceReference>
     </resource>
     <resource>

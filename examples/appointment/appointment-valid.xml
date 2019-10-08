@@ -7,8 +7,8 @@
         <extension url="type">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://ehealth.sundhed.dk/cs/responsibility-type"/>
-                    <code value="TBD"/>
+                    <system value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
+                    <code value="monitoringResponsible"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
@@ -28,7 +28,7 @@
     </appointmentType>
     <reason>
         <coding>
-            <system value="http://snomed.info/sct"/>
+            <system value="http://ehealth.sundhed.dk/cs/appointment-reason"/>
             <code value="412776001"/>
         </coding>
         <text value="Clinical Review"/>
