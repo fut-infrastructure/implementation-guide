@@ -99,11 +99,13 @@
     </element>
     <element id="CareTeam.reasonCode">
       <path value="CareTeam.reasonCode" />
+      <min value="1" />
+      <max value="1" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="CareTeamReason" />
         </extension>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/conditions" />
         </valueSetReference>
