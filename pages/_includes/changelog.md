@@ -231,6 +231,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### CareTeam (ehealth-careteam)
 - Changed description, reflecting that current use of CareTeam is not tied to patient
 - Changed referenced resources to use aggregation type "referenced"
+- Added `reasonCode`
 
 #### Communication (ehealth-communication)
 - Changed referenced resources to use aggregation type "referenced"
@@ -288,6 +289,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Added definition of `role` 
 - Changed referenced resources to use aggregation type "referenced"
+- Removed `role`
 
 #### Provenance (ehealth-provenance)
 - Added resource description
