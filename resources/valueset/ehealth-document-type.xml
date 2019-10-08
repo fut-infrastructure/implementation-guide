@@ -19,6 +19,22 @@
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/document-type"/>
+            <concept>
+                <code value="TBD"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="TBD2"/>
+                <display value="Example value - Under construction"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Example value - Under construction"/>
+                </designation>
+            </concept>
         </include>
         <include>
             <system value="http://loinc.org"/>
