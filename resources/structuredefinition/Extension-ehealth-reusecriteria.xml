@@ -10,7 +10,8 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
-  <context value="Questionnaire" />
+  <context value="ProcedureRequest" />
+  <context value="ActivityDefinition" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -71,20 +72,20 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Extension.extension:operationQuality">
+    <element id="Extension.extension:usageQuality">
       <path value="Extension.extension" />
-      <sliceName value="operationQuality" />
+      <sliceName value="usageQuality" />
       <max value="1" />
       <binding>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/usage-quality" />
       </binding>
     </element>
-    <element id="Extension.extension:operationQuality.url">
+    <element id="Extension.extension:usageQuality.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="operationQuality" />
+      <fixedUri value="usageQuality" />
     </element>
-    <element id="Extension.extension:operationQuality.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:usageQuality.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
@@ -99,20 +100,20 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Extension.extension:dataQuality">
+    <element id="Extension.extension:deviceMeasuringQuality">
       <path value="Extension.extension" />
-      <sliceName value="dataQuality" />
+      <sliceName value="deviceMeasuringQuality" />
       <max value="1" />
       <binding>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/device-measuring-quality" />
       </binding>
     </element>
-    <element id="Extension.extension:dataQuality.url">
+    <element id="Extension.extension:deviceMeasuringQuality.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="dataQuality" />
+      <fixedUri value="deviceMeasuringQuality" />
     </element>
-    <element id="Extension.extension:dataQuality.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:deviceMeasuringQuality.value[x]:valueCodeableConcept">
       <path value="Extension.extension.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />

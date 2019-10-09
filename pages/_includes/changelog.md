@@ -77,6 +77,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ReuseCriteria (ehealth-reuseCriteria)
 - Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
 - Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
+- Renamed `operationQuality` to `usageQuality`
+- Renamed `dataQuality` to `deviceMeasuringQuality`
 
 #### Questionnaire (ehealth-questionnaire)
 - Removed `reuseCriteria` extension

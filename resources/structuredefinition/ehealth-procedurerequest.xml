@@ -46,11 +46,12 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy" />
       </type>
     </element>
-    <element id="ProcedureRequest.extension:reuse">
+    <element id="ProcedureRequest.extension:reuseCriteria">
       <path value="ProcedureRequest.extension" />
-      <sliceName value="reuse" />
+      <sliceName value="reuseCriteria" />
       <short value="Criteria to be met for reuse of responses to be allowed." />
       <definition value="Criteria to be met for reuse of responses to be allowed." />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria" />
