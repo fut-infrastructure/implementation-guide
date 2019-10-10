@@ -15,10 +15,10 @@
   <differential>
     <element id="Provenance.target">
       <path value="Provenance.target" />
+      <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <aggregation value="referenced" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message" />
       </type>
     </element>
     <element id="Provenance.policy">
@@ -37,6 +37,10 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <max value="1" />
+    </element>
     <element id="Provenance.agent.who[x]">
       <path value="Provenance.agent.who[x]" />
       <type>
@@ -48,19 +52,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
     <element id="Provenance.agent.onBehalfOf[x]">
@@ -74,19 +70,11 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
-      </type>
-      <type>
-        <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
       </type>
     </element>
   </differential>
