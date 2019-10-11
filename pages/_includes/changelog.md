@@ -61,6 +61,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest`
 - Added `http://ehealth.sundhed.dk/cs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/cs/percentage-codes`
+- Added `http://ehealth.sundhed.dk/cs/ehealth-communication-category`
 - Added new code `SSLPCI` to `http://ehealth.sundhed.dk/cs/consent-category`
 - Added new codes `550891000005100`, `398070004`, `550811000005108`, `557511000005107`, `550411000005105`, `264372000`, `557501000005109`, `554851000005102`, `557531000005103`, `20078004`, `722173008`, `554221000005108`, `554031000005103`, `546821000005103`, `702871004`, `554061000005105`, `276037005`, `550861000005106`, `547011000005103`, `546811000005109`, `554881000005108`, `554861000005100`, `554821000005109`, `550621000005101`, `702824005`, `557591000005104`, `554411000005101`, `550631000005103`, `550641000005106`, `557521000005101`, `557561000005105`, `557541000005106`, `550651000005108`, `550661000005105`, `557581000005102`, `557671000005101`, `42665001`, `554211000005102`, `554871000005105`, `550711000005101`, `556841000005105`, `550821000005102`, `550671000005100`, `264361005`, `554041000005106`, `554021000005101`, `703069008`, `550681000005102`, `550691000005104`, `550701000005104`, `554231000005106`, `554051000005108`, `550871000005101`, `554241000005103`, `309964003`, `550841000005107`, `309904001`, `551611000005102`, `309939001`, `225728007`, `554071000005100`, `550831000005104`, `255203001`, `449171008`, `448225001` to `http://snomed.info/sct`
 - Added new specialty codes `394537008`, `394577000`, `394579002`, `394580004`, `394581000`, `394582007`, `394583002`, `394584008`, `394585009`, `394587001`, `394588006`, `394589003`, `394591006`, `394592004`, `394594003`, `394596001`, `394600006`, `394601005`, `394603008`, `394604002`, `394605001`, `394608004`, `394609007`, `394610002`, `394611003`, `394612005`, `394801008`, `394803006`, `394805004`, `394807007`, `394809005`, `394810000`, `394811001`, `394812008`, `394821009`, `394914008`, `394915009`, `408443003`, `408448007`, `408454008`, `408463005`, `408472002`, `418112009`, `419192003`, `421661004`, `551411000005104`, `554011000005107`, `773568002` to `http://snomed.info/sct`
@@ -89,6 +90,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/fs3-health`
 - Added `http://ehealth.sundhed.dk/vs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/vs/itcompetencelevel-codes`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-communication-category`
 - Changed `http://ehealth.sundhed.dk/vs/organization-type`
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
 - Changed `http://ehealth.sundhed.dk/vs/contactpoint-system` to include `http://hl7.org/fhir/ValueSet/contact-point-system`
@@ -113,12 +115,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Observation (ehealth-observation)
 - Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
 - Observation.context reference to Encounter was added
+- Removed sharingPolicy extension
 
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added ehealth-reuseCriteria extension
+- Added sharingPolicy extension
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Added ehealth-reuseCriteria extension
+- Added sharingPolicy extension
 
 #### CarePlan (ehealth-careplan)
 - Removed extension `responsibilitySummary`
@@ -193,6 +198,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Legal PATCH operations described
 
 #### Patient (ehealth-patient)
+- Added PATCH example
 - Added municipality code CodeSystem (DK: kommunekoder)
 - Changed it-competence-level multiplicity from 0-1 to 0-*, and added ValueSet (ehealth-itcompetencelevel-codes)
 - Added FS3 ValueSets/CodeSystems for ehealth-functionalCapacity extension, and updated description. Citizen-fields added.
@@ -201,14 +207,41 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added it-competence-level support for device-type and description data
 - Removed managingOrganization
 - Legal PATCH operations described
+- Changed referenced resources to use aggregation type "referenced"
 
 #### Appointment (ehealth-appointment)
 - Location is no longer required
 - Changed description due to new cardinalities
 - Added CodeSystem for appointmentType, updated example accordingly
+- Added ValueSet "ehealth-appointment-reason"
+
+#### Media (ehealth-media)
+- Removed sharingPolicy extension
+
+#### Communication (ehealth-communication)
+- add extension `senderCareTeam`
+- add extension `restrictionCategory`
+- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
+- Changed cardinality of element `sender` to 0...1
+- References to organization were removed from 'sender' and 'recipient'
+- add context reference to Encounter
+- Added PATCH example
+- Possible to use CareTeam as recipient using extension
+
+#### Communication (ehealth-correspondance)
+- Removed from IG as per customer request
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - References changed from general to ehealth-specific profiles
+
+#### PlanDefinition (ehealth-plandefinition)
+- Removed `role`
+
+#### CareTeam (ehealth-careteam)
+- Added `reasonCode`
+
+#### Video appointment (ehealth-videoappointment)
+- Initial version
 
 ## 2019.5.3 (2019-06-07)
 
@@ -219,22 +252,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added general resource description
-- Added sharingPolicy extension
 
 #### Condition (ehealth-condition)
 - Added general resource description
 
 #### Media (ehealth-media)
 - Enhanced resource description
-- Removed sharingPolicy extension
-
-#### Communication (ehealth-communication)
-- add extension `senderCareTeam`
-- add extension `restrictionCategory`
-- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
-- Changed cardinality of element `sender` to 0...1
-- References to organization were removed from 'sender' and 'recipient'
-- add context reference to Encounter
 
 #### Patient (ehealth-patient)
 - Added general resource description
@@ -244,7 +267,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Added general resource description
-- Added sharingPolicy extension
 
 #### RelatedPerson (ehealth-relatedperson)
 - Added general resource description
@@ -270,7 +292,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Appointment (ehealth-appointment)
 - Changed referenced resources to use aggregation type "referenced"
-- Added ValueSet "ehealth-appointment-reason"
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - Changed referenced resources to use aggregation type "referenced"
@@ -281,12 +302,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### CareTeam (ehealth-careteam)
 - Changed description, reflecting that current use of CareTeam is not tied to patient
 - Changed referenced resources to use aggregation type "referenced"
-- Added `reasonCode`
 
 #### Communication (ehealth-communication)
 - Changed referenced resources to use aggregation type "referenced"
-- Added PATCH example
-- Possible to use CareTeam as recipient using extension
 
 #### Composition (ehealth-composition)
 - Changed referenced resources to use aggregation type "referenced"
@@ -329,9 +347,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Media (ehealth-media)
 - Added Encounter as possible reference type for `context`
 
-#### Patient (ehealth-patient) 
-- Changed referenced resources to use aggregation type "referenced"
-
 #### RelatedPerson (ehealth-patient-relatedPerson)
 - Changed referenced resources to use aggregation type "referenced"
 
@@ -339,7 +354,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added definition of `modifierRole` 
 - Added definition of `role` 
 - Changed referenced resources to use aggregation type "referenced"
-- Removed `role`
 
 #### Provenance (ehealth-provenance)
 - Added resource description
@@ -434,7 +448,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/modifier-role`
 - Added `http://ehealth.sundhed.dk/cs/conditions`
 - Added `http://ehealth.sundhed.dk/cs/device-use-reason`
-- Added `http://ehealth.sundhed.dk/cs/ehealth-communication-category`
 - Changed `http://ehealth.sundhed.dk/cs/careplan-status`
 - Changed `http://ehealth.sundhed.dk/cs/careteam-participant-role`
 - Changed `http://ehealth.sundhed.dk/cs/clinicalimpression-codes`
@@ -463,7 +476,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/practice-setting-codes`, referenced by
   - `ehealth-documentreference`
 - Added `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Added `http://ehealth.sundhed.dk/vs/ehealth-communication-category`
 - Changed `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 - Changed `http://ehealth.sundhed.dk/vs/careplan-category`
 - Changed `ehealth-careplan-status`
@@ -517,7 +529,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Communication (ehealth-correspondance)
 - Changed referenced resources to use aggregation type "referenced"
 - Changed element `category` to require code from value set `http://hl7.org/fhir/ValueSet/communication-category`
-- Removed from IG as per customer request
 
 #### Communication (ehealth-message)
 - Changed referenced resources to use aggregation type "referenced"
@@ -560,7 +571,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Changed the type of extension element `qualityType` and `qualityCode` to CodeableConcept
 - Changed the type of extension element `ehealth-sharingPolicy` to CodeableConcept
-- Removed sharingPolicy extension
 
 #### Organization (ehealth-organization)
 - Added extensions for `system` and `value` to be used inside `organization.contact.telecom`
@@ -617,8 +627,5 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Changed `ehealth-task-category` to CodeableConcept type
 - Added extension `responsible`
-
-#### Video appointment (ehealth-videoappointment)
-- Initial version
 
 ## v1.0.0 - 2019-03-06
