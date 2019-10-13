@@ -642,4 +642,19 @@
         <display value="Definition"/>
         <definition value="Definition"/>
     </concept>
+    <concept>
+        <code value="900000000000550004"/>
+        <display value="Definition"/>
+        <definition value="Definition"/>
+    </concept>
+    <concept>
+        <code value="271336007"/>
+        <display value="Examination / signs"/>
+        <definition value="Examination / signs"/>
+    </concept>
+    <concept>
+        <code value="160237006"/>
+        <display value="History/symptoms"/>
+        <definition value="History/symptoms"/>
+    </concept>
 </CodeSystem>
