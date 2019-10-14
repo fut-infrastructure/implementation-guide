@@ -217,6 +217,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Media (ehealth-media)
 - Removed sharingPolicy extension
+- Changed cardinality of element `occurence[x]` to 1..1
+
+#### QuestionnaireResponse (ehealth-questionnaireresponse)
+- Changed cardinality of element `authored` to 1..1
 
 #### Communication (ehealth-communication)
 - add extension `senderCareTeam`

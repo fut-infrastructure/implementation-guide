@@ -92,6 +92,10 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="Media.occurrence[x]">
+      <path value="Media.occurrence[x]" />
+      <min value="1" />
+    </element>
     <element id="Media.operator">
       <path value="Media.operator" />
       <type>

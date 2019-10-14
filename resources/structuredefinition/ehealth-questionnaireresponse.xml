@@ -92,6 +92,10 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="QuestionnaireResponse.authored">
+      <path value="QuestionnaireResponse.authored" />
+      <min value="1" />
+    </element>
     <element id="QuestionnaireResponse.author">
       <path value="QuestionnaireResponse.author" />
       <type>
