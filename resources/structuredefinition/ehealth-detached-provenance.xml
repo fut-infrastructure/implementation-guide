@@ -54,10 +54,6 @@
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
       </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
-      </type>
     </element>
     <element id="Provenance.agent.onBehalfOf[x]">
       <path value="Provenance.agent.onBehalfOf[x]" />
@@ -71,10 +67,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />
       </type>
     </element>
   </differential>

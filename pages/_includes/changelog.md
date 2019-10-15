@@ -165,7 +165,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Provenance (ehealth-detached-provenance)
 - agent.whoReference and target now constrained to max 1
 - target constrained to only reference ehealth-message
-- agent can no longer reference RelatedPerson and Organisation
+- agent can no longer reference RelatedPerson, Device, or Organisation
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
