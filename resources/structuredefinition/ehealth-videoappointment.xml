@@ -77,9 +77,6 @@
       <path value="Appointment.appointmentType" />
       <min value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="appointment-type" />
-        </extension>
         <strength value="extensible" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/appointmenttype-codes" />
       </binding>
@@ -100,6 +97,10 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
         <aggregation value="referenced" />
       </type>
+    </element>
+    <element id="Appointment.description">
+      <path value="Appointment.description" />
+      <min value="1" />
     </element>
     <element id="Appointment.supportingInformation">
       <path value="Appointment.supportingInformation" />
