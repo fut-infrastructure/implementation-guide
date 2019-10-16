@@ -1,37 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<OperationDefinition xmlns="http://hl7.org/fhir" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <id value="ehealth-person-match"/>
-    <name value="Person name lookup"/>
-    <status value="active"/>
-    <kind value="operation"/>
-    <idempotent value="true"/>
-    <date value="2019-02-02"/>
-    <description value="This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource" />
-    <code value="match"/>
-    <resource value="Person"/>
-    <system value="false"/>
-    <type value="true"/>
-    <instance value="false"/>
-    <parameter>
-        <name value="resource"/>
-        <use value="in"/>
-        <min value="1"/>
-        <max value="1"/>
-        <documentation value="The social security number of the person on which this operation is executed, wrapped in a Person."/>
-        <type value="Person"/>
-    </parameter>
-    <parameter>
-        <name value="return"/>
-        <use value="out"/>
-        <min value="1"/>
-        <max value="1"/>
-        <documentation value="	
-A bundle containing a set of Person records that represent possible matches, optionally it may also contain an OperationOutcome with further information about the search results (such as warnings or information messages, such as a count of records that were close but eliminated)
-
-If the operation was unsuccessful, then an OperationOutcome may be returned along with a BadRequest status Code (e.g. security issue, or insufficient properties in person fragment - check against profile)
-
-Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource"/>
-        <type value="Bundle"/>
-    </parameter>
+<?xml version="1.0" encoding="utf-8"?>
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-person-match" />
+  <url value="http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-person-match" />
+  <name value="Person name lookup" />
+  <status value="active" />
+  <kind value="operation" />
+  <date value="2019-02-02" />
+  <description value="This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource" />
+  <idempotent value="true" />
+  <code value="match" />
+  <resource value="Person" />
+  <system value="false" />
+  <type value="true" />
+  <instance value="false" />
+  <parameter>
+    <name value="resource" />
+    <use value="in" />
+    <min value="1" />
+    <max value="1" />
+    <documentation value="The social security number of the person on which this operation is executed, wrapped in a Person." />
+    <type value="Person" />
+  </parameter>
+  <parameter>
+    <name value="return" />
+    <use value="out" />
+    <min value="1" />
+    <max value="1" />
+    <documentation value="A bundle containing a set of Person records that represent possible matches, optionally it may also contain an OperationOutcome with further information about the search results (such as warnings or information messages, such as a count of records that were close but eliminated)  If the operation was unsuccessful, then an OperationOutcome may be returned along with a BadRequest status Code (e.g. security issue, or insufficient properties in person fragment - check against profile)  Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource." />
+    <type value="Bundle" />
+  </parameter>
 </OperationDefinition>
