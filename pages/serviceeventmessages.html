@@ -30,14 +30,14 @@ title:  searchparam page
                 <div class="col-12">
                     {% include operations-and-searchparam-navbar.html %}
 
-                    <a name="root"> </a>
-                    <h2 id="root">Operation examples</h2>
-                        {% for example in site.data.operation-examples %}
-                            {% if example.profile == 'system' %}
-                                {% capture my-include %}{% include {{ example.path }} %}{% endcapture %}{{ my-include | markdownify }}
-                                <hr>
-                            {% endif %}
-                        {% endfor %}
+                    <h3>Service event messages</h3>
+                    {% capture my-include %}{% include systematic-service-event-tables.md %}{% endcapture %}{{ my-include | markdownify }}
+                    {% capture my-include %}{% include trifork-service-event-tables.md %}{% endcapture %}{{ my-include | markdownify }}
+
+                    <h3>Examples</h3>
+                    {% capture my-include %}{% include systematic-service-event-examples.md %}{% endcapture %}{{ my-include | markdownify }}
+                    {% capture my-include %}{% include trifork-service-event-tables.md %}{% endcapture %}{{ my-include | markdownify }}
+
 
                 </div>
             </div>

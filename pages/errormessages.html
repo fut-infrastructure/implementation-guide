@@ -28,13 +28,7 @@ title:  searchparam page
         <div class="row">
             <div class="inner-wrapper">
                 <div class="col-12">
-                    <ul class="nav nav-tabs">
-                        <li class="{% if page.path == "operations.html" %}active{% endif %}"><a href="operations.html">Operations</a></li>
-                        <li class="{% if page.path == "example-operations.html" %}active{% endif %}"><a href="example-operations.html">Example operations</a></li>
-                        <li class="{% if page.path == "searchparams.html" %}active{% endif %}"><a href="searchparams.html">Search parameters</a></li>
-                        <li class="{% if page.path == "errormessages.html" %}active{% endif %}"><a href="errormessages.html">Error messages</a></li>
-                        <li class="{% if page.path == "eventmessages.html" %}active{% endif %}"><a href="eventmessages.html">Event messages</a></li>
-                    </ul>
+                    {% include operations-and-searchparam-navbar.html %}
 
                     {% capture my-include %}{% include errormessages.md %}{% endcapture %}{{ my-include | markdownify }}
 
