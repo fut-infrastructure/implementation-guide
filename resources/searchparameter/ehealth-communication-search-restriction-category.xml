@@ -1,0 +1,12 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="ehealth-communication-search-restrictionCategory" />
+    <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/restrictionCategory"/>
+    <name value="restrictionCategory" />
+    <status value="active" />
+    <code value="restrictionCategory" />
+    <base value="Communication" />
+    <type value="reference" />
+    <description value="Search parameter for finding communication based on CareTeam recipient" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/restriction-category').coding" />
+    <xpathUsage value="normal" />
+</SearchParameter>

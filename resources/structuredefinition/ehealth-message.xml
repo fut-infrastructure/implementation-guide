@@ -67,6 +67,16 @@
       <path value="Communication.extension.valueCodeableConcept.coding" />
       <definition value="A reference to a code defined by a terminology system.." />
     </element>
+    <element id="Communication.extension:threadId">
+      <path value="Communication.extension" />
+      <sliceName value="threadId" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-thread-id" />
+      </type>
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
@@ -153,9 +163,6 @@
       <sliceName value="DkTmMedium" />
       <max value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationMedium" />
-        </extension>
         <strength value="example" />
         <description value="Codes for communication mediums" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/message-medium" />

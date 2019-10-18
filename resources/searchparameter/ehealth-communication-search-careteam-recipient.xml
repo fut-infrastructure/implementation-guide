@@ -1,0 +1,12 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="ehealth-communication-search-careTeamRecipient" />
+    <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamRecipient"/>
+    <name value="careTeamRecipient" />
+    <status value="active" />
+    <code value="careTeamRecipient" />
+    <base value="Communication" />
+    <type value="reference" />
+    <description value="Search parameter for finding communication based on CareTeam recipient" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam')" />
+    <xpathUsage value="normal" />
+</SearchParameter>

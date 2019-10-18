@@ -20,7 +20,18 @@ comes in four flavours depending on the "category" of the message:
   PATCH operation). A personal note may be updated by the sender, but not by the recipient.
 
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "topic" field, no 
-matter which category it is.
+matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by
+assigning the same thread-id in the provided extension.
+
+# Search parameters
+
+The following custom search parameters may be used when searching for ehealth-message instances:
+
+- __careTeamRecipient__: Specify an absolute reference to the CareTeam which must be message recipient
+- __careTeamSender__: Specify an absolute reference to the CareTeam which must be message sender
+- __threadId__: Specify the logical "thread id" used to correlate messages
+- __communicationCategory__: Specify the desired category using system and identifier (eg. "http://ehealth.sundhed.dk/message-category/" and "message")
+- __restrictionCategory__: Specify the desired restriction category using system and identifier (eg. "http://ehealth.sundhed.dk/cs/restriction-category" and "measurement-monitoring")
 
 # Scope and Usage
 In the eHealth Infrastructure the Appointment resource is used in conjunction with the following resources:
