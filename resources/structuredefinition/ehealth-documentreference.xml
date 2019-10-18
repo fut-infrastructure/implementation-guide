@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-documentreference" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference" />
   <name value="ehealth-documentreference" />
   <status value="draft" />
@@ -13,9 +14,6 @@
     <element id="DocumentReference.type">
       <path value="DocumentReference.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80Type" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/document-type" />
@@ -25,9 +23,6 @@
     <element id="DocumentReference.class">
       <path value="DocumentReference.class" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80Class" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/document-class" />
@@ -116,9 +111,6 @@
     <element id="DocumentReference.content.format">
       <path value="DocumentReference.content.format" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentFormat" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/format-codes" />
@@ -128,9 +120,6 @@
     <element id="DocumentReference.context.event">
       <path value="DocumentReference.context.event" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentEventType" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/event-type-codes" />
@@ -140,9 +129,6 @@
     <element id="DocumentReference.context.facilityType">
       <path value="DocumentReference.context.facilityType" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80FacilityType" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/facility-type-codes" />
@@ -152,9 +138,6 @@
     <element id="DocumentReference.context.practiceSetting">
       <path value="DocumentReference.context.practiceSetting" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentC80PracticeSetting" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/practice-setting-codes" />
