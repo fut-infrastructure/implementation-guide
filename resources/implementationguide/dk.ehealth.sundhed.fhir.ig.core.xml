@@ -1127,11 +1127,6 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/snomed"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <sourceReference>
         <reference value="CodeSystem/ehealth-fs3-health-communication"/>
       </sourceReference>
     </resource>
