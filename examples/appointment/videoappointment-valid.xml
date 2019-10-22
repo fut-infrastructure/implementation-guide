@@ -19,7 +19,7 @@
         <extension url="type">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
+                    <system value="http://ehealth.sundhed.dk/cs/responsibility-type"/>
                     <code value="monitoringResponsible"/>
                 </coding>
             </valueCodeableConcept>
@@ -45,6 +45,9 @@
         </coding>
         <text value="Clinical Review"/>
     </reason>
+    <description value="Description"/>
+    <start value="2013-12-10T09:00:00Z"/>
+    <end value="2013-12-10T11:00:00Z"/>
     <participant>
         <actor>
             <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/42"/>
@@ -54,7 +57,7 @@
     </participant>
     <participant>
         <actor>
-            <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/123"/>
+            <reference value="http://inttest.ehealth.sundhed.dk/trifork-fhir-server/Patient/XXX"/>
         </actor>
         <status value="needs-action"/>
     </participant>

@@ -120,18 +120,40 @@
 
     <!-- Search parameters -->
 
-
     <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="SearchParameter/ehealth-communication-search-communicationCategory"/>
       </sourceReference>
     </resource>
-
-        <resource>
+    <resource>
       <example value="false"/>
       <sourceReference>
         <reference value="SearchParameter/ehealth-communication-search-recipientIdentifier"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-threadId"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-restriction-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-careteam-recipient"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-careteam-sender"/>
       </sourceReference>
     </resource>
 

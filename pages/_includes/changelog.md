@@ -196,6 +196,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Device added as possibility for sender
 - CareTeam removed as possible recipient (profiling defect, extension must be used instead)
 - Legal PATCH operations described
+- Available search parameters added
 
 #### Patient (ehealth-patient)
 - Added PATCH example
