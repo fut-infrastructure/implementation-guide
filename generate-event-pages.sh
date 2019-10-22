@@ -1,7 +1,7 @@
 #!/bin/bash
 projects="Questionnaire Measurement Organization Plan Careplan Terminology Device Task Library DocumentTransformation SslCatalogue SslCatalogueExcel SslOrder"
 dir=service_event_messages
-branch=default:true
+branch=default:true #release%2F2019.6
 
 read -s -p "Username: " username
 echo
@@ -20,12 +20,14 @@ function append_newline_to_all_files_in_directory() {
 }
 
 for project in $projects; do
-    url="https://teamcity/app/rest/builds/project:Fut_BuildServices_${project},status:SUCCESS,buildType:Fut_BuildServices_${project}_BuildAndUploadImage,branch:default:true/artifacts/content/messaging.zip"
+    url="https://teamcity/app/rest/builds/project:Fut_BuildServices_${project},status:SUCCESS,buildType:Fut_BuildServices_${project}_BuildAndUploadImage,branch:${branch}/artifacts/content/messaging.zip"
     status_code=$(curl -o /dev/null -I -sw '%{http_code}' -k -u ${username}:${password} ${url});
     if [ ${status_code} -eq 200 ]
     then
+        echo ${project}
+
         # get the zip for the specific teamcity project
-        curl -s -o ${dir}/${project}-messaging.zip -k -u ${username}:${password} ${url}
+        curl -o ${dir}/${project}-messaging.zip -k -u ${username}:${password} ${url}
 
         # unzip the messaging.zip into the defined directory in the IG
         unzip -q ${dir}/${project}-messaging.zip -d ${dir}

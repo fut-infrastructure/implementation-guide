@@ -35,6 +35,35 @@
 |EHealthSimpleEvent|created|ehealth-consent|Generated when a Consent is created.|
 |EHealthSimpleEvent|updated|ehealth-consent|Generated when a Consent is updated.|
 {:.grid}
+#### Document Transformation Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthContextEvent|created|ehealth-documentreference.document-publication-prepared|A DocumentReference with content type of PHMR or QRD has been created|
+{:.grid}
+#### Measurement Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthContextEvent|created|ehealth-provenance.measurement-received|A measurement has been submitted and a Provenance with policy of type coherent-submitted-measurement has been created |
+{:.grid}
+#### Organization Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthReferenceEvent|reference_added|ehealth-organization.partOf|An Organization for which this Organization is part of has been added|
+|EHealthReferenceEvent|reference_removed|ehealth-organization.partOf|An Organization for which this Organization is part of has been removed|
+{:.grid}
+
+#### CareTeam Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthReferenceEvent|reference_added|ehealth-careteam.reasonReference|The reason for a CareTeam to exist has been added|
+|EHealthReferenceEvent|reference_removed|ehealth-careteam.reasonReference|The reason for a CareTeam to exist has been removed|
+|EHealthReferenceEvent|reference_added|ehealth-careteam.managingOrganization|An Organization which is responsible for a CareTeam has been added |
+|EHealthReferenceEvent|reference_removed|ehealth-careteam.managingOrganization|An Organization which is responsible for a CareTeam has been removed|
+{:.grid}
 #### PlanDefinition Messages
 
 |MessageType|EventType|Topic|Description|
@@ -63,4 +92,130 @@
 |---|---|---|---|
 |EHealthSimpleEvent|created|ehealth-documentreference|A DocumentReference has been created.|
 |EHealthSimpleEvent|updated|ehealth-documentreference|A DocumentReference has been updated.|
+{:.grid}
+##### Questionnaire Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ehealth-questionnaire|A Questionnaire has been created.|
+|EHealthSimpleEvent|updated|ehealth-questionnaire|A Questionnaire has been updated.|
+|EHealthContextEvent|updated|ehealth-questionnaire.retired|A Questionnaire has been retired.|
+{:.grid}
+#### SSL Annotation Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-annotation|An Annotation has been created|
+|EHealthSimpleEvent|updated|ssl-annotation|An Annotation has been updated|
+|EHealthSimpleEvent|deleted|ssl-annotation|An Annotation has been deleted|
+{:.grid}
+
+#### SSL BlackList Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-blackList|A BlackList has been created|
+|EHealthSimpleEvent|deleted|ssl-blackList|A BlackList has been deleted|
+{:.grid}
+
+#### SSL Catalogue Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-catalogue|A Catalogue has been created|
+|EHealthSimpleEvent|updated|ssl-catalogue|A Catalogue has been updated|
+{:.grid}
+
+#### SSL CatalogueItem Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-catalogueItem|A CatalogueItem has been created|
+|EHealthSimpleEvent|updated|ssl-catalogueItem|A CatalogueItem has been updated|
+{:.grid}
+
+#### SSL WhiteList Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-whiteList|A WhiteList has been created|
+|EHealthSimpleEvent|deleted|ssl-whiteList|A WhiteList has been deleted|
+{:.grid}
+#### SSL Order Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-order|An Order has been created|
+|EHealthSimpleEvent|updated|ssl-order|An Order has been updated|
+|EHealthSimpleEvent|deleted|ssl-order|An Order has been deleted|
+{:.grid}
+
+#### SSL OrderLine Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ssl-orderline|An OrderLine has been created|
+|EHealthSimpleEvent|updated|ssl-orderline|An OrderLine has been updated|
+|EHealthSimpleEvent|deleted|ssl-orderline|An OrderLine has been deleted|
+{:.grid}
+#### ClinicalImpression Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ehealth-clinicalimpression|A ClinicalImpression has been created|
+{:.grid}
+
+#### Task Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ehealth-task|A Task has been created.|
+|EHealthSimpleEvent|updated|ehealth-task|A Task has been updated.|
+|EHealthReferenceEvent|reference_added|ehealth-task.owner|The owner reference has been added to a Task|
+|EHealthReferenceEvent|reference_removed|ehealth-task.owner|The owner reference has been removed from a Task|
+|EHealthReferenceEvent|reference_added|ehealth-task.responsible|The responsible reference has been added to a Task|
+|EHealthReferenceEvent|reference_removed|ehealth-task.responsible|The responsible reference has been removed from a Task|
+{:.grid}
+
+#### Automated Processing Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthContextEvent|created|ehealth-provenance.measurement-processed|A measurement has been automatically processed|
+|EHealthContextEvent|created|ehealth-procedurerequest.measurement-missing|An expected measurement has not been submitted|
+{:.grid}
+#### CodeSystem Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|CodeSystem|A CodeSystem has been created|
+|EHealthSimpleEvent|updated|CodeSystem|A CodeSystem has been updated|
+|EHealthSimpleEvent|deleted|CodeSystem|A CodeSystem has been deleted|
+{:.grid}
+
+#### ValueSet Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ValueSet|A ValueSet has been created|
+|EHealthSimpleEvent|updated|ValueSet|A ValueSet has been updated|
+|EHealthSimpleEvent|deleted|ValueSet|A ValueSet has been deleted|
+{:.grid}
+
+#### NamingSystem Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|NamingSystem|A NamingSystem has been created|
+|EHealthSimpleEvent|updated|NamingSystem|A NamingSystem has been updated|
+|EHealthSimpleEvent|deleted|NamingSystem|A NamingSystem has been deleted|
+{:.grid}
+
+#### ConceptMap Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ConceptMap|A ConceptMap has been created|
+|EHealthSimpleEvent|updated|ConceptMap|A ConceptMap has been updated|
+|EHealthSimpleEvent|deleted|ConceptMap|A ConceptMap has been deleted|
 {:.grid}
