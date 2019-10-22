@@ -163,9 +163,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added optional dateTimeOfReusedEntity
 
 #### Provenance (ehealth-detached-provenance)
-- agent.whoReference and target now constrained to max 1
-- target constrained to only reference ehealth-message
-- agent can no longer reference RelatedPerson, Device, or Organisation
+- `agent.whoReference` and `target` now constrained to max 1
+- `target` constrained to only reference ehealth-message
+- `agent` can no longer reference RelatedPerson, Device, or Organisation
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
@@ -223,12 +223,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed cardinality of element `authored` to 1..1
 
 #### Communication (ehealth-communication)
-- add extension `senderCareTeam`
-- add extension `restrictionCategory`
+- Added extension `senderCareTeam`
+- Added extension `restrictionCategory`
 - Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
-- Changed cardinality of element `sender` to 0...1
+- Changed cardinality of element `sender` to 0..1
 - References to organization were removed from 'sender' and 'recipient'
-- add context reference to Encounter
+- Added context reference to Encounter
 - Added PATCH example
 - Possible to use CareTeam as recipient using extension
 
@@ -243,6 +243,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### CareTeam (ehealth-careteam)
 - Added `reasonCode`
+- Changed cardinality of element `subject` to 0..0
+- Changed cardinality of element `context` to 0..0
+- Changed cardinality of element `reasonReference` to 0..0
 
 #### Video appointment (ehealth-videoappointment)
 - Initial version
