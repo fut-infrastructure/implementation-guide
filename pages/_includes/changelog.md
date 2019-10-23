@@ -468,6 +468,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/cs/questionnaire-types`
 - Changed `http://ehealth.sundhed.dk/cs/usage-quality`
 - Changed (renamed) `http://ehealth.sundhed.dk/cs/submission-sharing-policy` to `http://ehealth.sundhed.dk/cs/submission-sharing-policies`  
+- Changed (renamed) `http://ehealth.sundhed.dk/cs/submission-sharing-policies` to `http://ehealth.sundhed.dk/cs/measurement-sharing-policies`  
   
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/clinicalimpression-codes`
@@ -500,6 +501,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/vs/questionnaire-types`
 - Changed `http://ehealth.sundhed.dk/vs/topic-type`
 - Changed `http://ehealth.sundhed.dk/vs/usage-quality`
+- Changed (renamed) `http://ehealth.sundhed.dk/vs/submission-sharing-policies` to `http://ehealth.sundhed.dk/vs/measurement-sharing-policies`
 
 ### Resource/profile changes
 

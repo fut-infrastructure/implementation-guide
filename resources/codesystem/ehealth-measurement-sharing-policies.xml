@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="ehealth-submission-sharing-policies"/>
-    <url value="http://ehealth.sundhed.dk/cs/submission-sharing-policies"/>
+    <id value="ehealth-measurement-sharing-policies"/>
+    <url value="http://ehealth.sundhed.dk/cs/measurement-sharing-policies"/>
     <version value="0.6.0"/>
-    <name value="SubmissionSharingPolicies"/>
+    <name value="MeasurementSharingPolicies"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -14,7 +14,7 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Submission sharing policies"/>
+    <description value="Measurement sharing policies"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
@@ -23,9 +23,14 @@
         <definition value="Example value - Under construction"/>
     </concept>
     <concept>
-        <code value="sharingAllowed"/>
-        <display value="Sharing is allowed"/>
-        <definition value="Sharing is allowed"/>
+        <code value="sharingAllowedDestinationNationalHealthData"/>
+        <display value="Sharing is allowed destination national health data"/>
+        <definition value="Sharing is allowed destination national health data"/>
+    </concept>
+    <concept>
+        <code value="sharingAllowedDestinationMunicipalData"/>
+        <display value="Sharing is allowed destination municipal data"/>
+        <definition value="Sharing is allowed destination municipal data"/>
     </concept>
     <concept>
         <code value="noSharing"/>

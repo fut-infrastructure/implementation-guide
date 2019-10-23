@@ -1054,7 +1054,7 @@
     </resource>
     <resource>
       <sourceReference>
-        <reference value="CodeSystem/ehealth-submission-sharing-policies"/>
+        <reference value="CodeSystem/ehealth-measurement-sharing-policies"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1608,7 +1608,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="ValueSet/ehealth-submission-sharing-policies"/>
+        <reference value="ValueSet/ehealth-measurement-sharing-policies"/>
       </sourceReference>
     </resource>
     <resource>
