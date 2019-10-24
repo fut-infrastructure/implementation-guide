@@ -6,7 +6,7 @@
   <title value="eHealth ITCompetenceLevel" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This extension describes the IT skills of a patient" />
+  <description value="This extension describes the IT skills/competence of a patient. The IT competence may optionally be related to a specific device type, and may be assessed using a score (either a FS3 score or a percentage), or as a free text description." />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
