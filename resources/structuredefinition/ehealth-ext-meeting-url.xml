@@ -20,11 +20,11 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url" />
     </element>
-    <element id="Extension.value[x]:valueString">
-      <path value="Extension.valueString" />
-      <sliceName value="valueString" />
+    <element id="Extension.value[x]:valueUri">
+      <path value="Extension.valueUri" />
+      <sliceName value="valueUri" />
       <type>
-        <code value="string" />
+        <code value="uri" />
       </type>
     </element>
   </differential>
