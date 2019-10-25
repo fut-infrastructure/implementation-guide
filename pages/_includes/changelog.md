@@ -202,9 +202,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added PATCH example
 - Added municipality code CodeSystem (DK: kommunekoder)
 - Changed it-competence-level multiplicity from 0-1 to 0-*, and added ValueSet (ehealth-itcompetencelevel-codes)
-- Added FS3 ValueSets/CodeSystems for ehealth-functionalCapacity extension, and updated description. Citizen-fields added.
-- FunktionalCapacity score code is now required
-- Changed ehealth-functionalCapacity extension from CodableConcept to type/description type, and added FS3 ValueSets/CodeSystems
 - Added it-competence-level support for device-type and description data
 - Removed managingOrganization
 - Legal PATCH operations described

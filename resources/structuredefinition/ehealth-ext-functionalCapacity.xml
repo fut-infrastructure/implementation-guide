@@ -4,7 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
   <name value="Functioncal Capacity" />
   <status value="draft" />
-  <description value="For future use (not necessary for KOL). Describes the functional capacity of a patient. The functional capacity is documentet through a variety of categories (eg. &quot;Endurance&quot;), that each belong to separate groups (eg. &quot;Mobility&quot;). For each of these categories, a score is provided from the required ValueSet. Along with that, the citizens own assessment, goal assessment, and importance can be registered. The groups, categories and scores all originate from &quot;Fælles Sprog III Funktionsevnetilstand&quot;, which is described here: http://www.fs3.nu/filer/Dokumenter/Metode/FSIII-Guide-til-funktionsevnetilstande.pdf" />
+  <description value="Describes the functional capacity of a patient. The functional capacity is documentet through a variety of categories (eg. &quot;Endurance&quot;), that each belong to separate groups (eg. &quot;Mobility&quot;). For each of these categories, a score is provided from the required ValueSet. Along with that, the citizens own assessment, goal assessment, and importance can be registered. The groups, categories and scores all originate from &quot;Fælles Sprog III Funktionsevnetilstand&quot;, which is described here: http://www.fs3.nu/filer/Dokumenter/Metode/FSIII-Guide-til-funktionsevnetilstande.pdf" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

@@ -57,14 +57,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-general-health-condition" />
       </type>
     </element>
-    <element id="Patient.extension:functionalCapacity">
-      <path value="Patient.extension" />
-      <sliceName value="functionalCapacity" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-functional-capacity" />
-      </type>
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
@@ -207,6 +199,20 @@
         <code value="Address" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
+    </element>
+    <element id="Patient.contact.address.extension:regionalSubdivisionCode">
+      <path value="Patient.contact.address.extension" />
+      <sliceName value="regionalSubdivisionCode" />
+    </element>
+    <element id="Patient.contact.address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding">
+      <path value="Patient.contact.address.extension.valueCodeableConcept.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.contact.organization">
       <path value="Patient.contact.organization" />
