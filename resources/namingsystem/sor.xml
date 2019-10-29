@@ -25,7 +25,7 @@
     <responsible value="The Health Service's Organizational Register was developed in the National Board of Health in 2006-2007 in cooperation with the regions and MedCom" />
     <type>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <system value="http://hl7.org/fhir/identifier-type" />
             <code value="NPI" />
             <display value="National provider identifier" />
         </coding>

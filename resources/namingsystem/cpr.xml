@@ -16,7 +16,7 @@
     <responsible value="CPR-kontoret, Økonomi- og Indenrigsministeriets departement" />
     <type>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <system value="http://hl7.org/fhir/identifier-type" />
             <code value="SB" />
             <display value="Social Beneficiary Identifier" />
         </coding>
