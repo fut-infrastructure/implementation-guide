@@ -199,6 +199,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Legal PATCH operations described
 - Available search parameters added
 - Added administrative-status and period (part of discarding detached-provenance)
+- Restricted value set for status (ehealth-status)
 
 #### Patient (ehealth-patient)
 - Added PATCH example

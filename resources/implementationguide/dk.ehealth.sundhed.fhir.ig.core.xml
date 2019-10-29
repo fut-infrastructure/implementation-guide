@@ -1257,6 +1257,12 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="ValueSet/ehealth-event-status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="ValueSet/ehealth-it-selfreliance"/>
       </sourceReference>
     </resource>

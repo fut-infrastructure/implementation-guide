@@ -130,6 +130,17 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="Communication.status">
+      <path value="Communication.status" />
+      <short value="preparation | aborted | completed " />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/event-status" />
+      </binding>
+    </element>
     <element id="Communication.category">
       <path value="Communication.category" />
       <slicing>
