@@ -5,8 +5,8 @@
     <status value="active" />
     <code value="restrictionCategory" />
     <base value="Communication" />
-    <type value="reference" />
+    <type value="token" />
     <description value="Search parameter for finding communication based on CareTeam recipient" />
-    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/restriction-category').coding" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/restriction-category')" />
     <xpathUsage value="normal" />
 </SearchParameter>

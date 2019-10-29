@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-period" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-period" />
+  <name value="Period" />
+  <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
+  <description value="Contains a period, eg. specifying temporal validity" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Communication" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-period" />
+    </element>
+    <element id="Extension.value[x]:valuePeriod">
+      <path value="Extension.valuePeriod" />
+      <sliceName value="valuePeriod" />
+      <min value="1" />
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

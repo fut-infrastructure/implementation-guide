@@ -70,11 +70,29 @@
     <element id="Communication.extension:threadId">
       <path value="Communication.extension" />
       <sliceName value="threadId" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-thread-id" />
+      </type>
+    </element>
+    <element id="Communication.extension:period">
+      <path value="Communication.extension" />
+      <sliceName value="period" />
+      <short value="Specified the temporal validity of an ehealth/message instance" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-period" />
+      </type>
+    </element>
+    <element id="Communication.extension:administrativeStatus">
+      <path value="Communication.extension" />
+      <sliceName value="administrativeStatus" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-administrative-status" />
       </type>
     </element>
     <element id="Communication.identifier">

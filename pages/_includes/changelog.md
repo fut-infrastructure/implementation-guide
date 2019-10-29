@@ -78,7 +78,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`
 - Added `http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes`
 - Added `http://ehealth.sundhed.dk/vs/restriction-category`
-- Added `http://ehealth.sundhed.dk/vs/restriction-category`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-type`
 - Added `http://ehealth.sundhed.dk/vs/sor-organization-specialty`
 - Added `http://ehealth.sundhed.dk/vs/organization-source`
@@ -91,6 +90,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/fs3-scores`
 - Added `http://ehealth.sundhed.dk/vs/itcompetencelevel-codes`
 - Added `http://ehealth.sundhed.dk/vs/ehealth-communication-category`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-administrative-status`
 - Changed `http://ehealth.sundhed.dk/vs/organization-type`
 - Added new code `http://ehealth.sundhed.dk/policy/ehealth/organization-administration` to `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
 - Changed `http://ehealth.sundhed.dk/vs/contactpoint-system` to include `http://hl7.org/fhir/ValueSet/contact-point-system`
@@ -161,6 +161,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Provenance (ehealth-provenance)
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
 - Added optional dateTimeOfReusedEntity
+- Removed profile for now (FUT1-2623 and FUT1-2734)
 
 #### Provenance (ehealth-detached-provenance)
 - `agent.whoReference` and `target` now constrained to max 1
@@ -197,6 +198,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - CareTeam removed as possible recipient (profiling defect, extension must be used instead)
 - Legal PATCH operations described
 - Available search parameters added
+- Added administrative-status and period (part of discarding detached-provenance)
 
 #### Patient (ehealth-patient)
 - Added PATCH example
@@ -206,6 +208,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed managingOrganization
 - Legal PATCH operations described
 - Changed referenced resources to use aggregation type "referenced"
+- Removed functional-capacity extension (not to be used for now)
 
 #### Appointment (ehealth-appointment)
 - Location is no longer required

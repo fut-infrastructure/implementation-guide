@@ -13,22 +13,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
   <derivation value="constraint" />
   <differential>
-    <element id="Provenance.target">
-      <path value="Provenance.target" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message" />
-      </type>
-    </element>
-    <element id="Provenance.policy">
-      <path value="Provenance.policy" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-provenance-policies" />
-      </binding>
-    </element>
     <element id="Provenance.location">
       <path value="Provenance.location" />
       <type>

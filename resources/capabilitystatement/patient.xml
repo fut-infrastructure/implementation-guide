@@ -424,11 +424,6 @@
             <documentation value="Focus of message"/>
          </searchParam>
          <searchParam>
-            <name value="recipientIdentifier"/>
-            <type value="token"/>
-            <documentation value="Search parameter for finding communication based on the identifier(s) of the recipient"/>
-         </searchParam>
-         <searchParam>
             <name value="communicationCategory"/>
             <type value="token"/>
             <documentation value="Search parameter for finding communication based on the category code"/>

@@ -1,0 +1,12 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="ehealth-communication-search-administrativeStatus" />
+    <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/administrativeStatus"/>
+    <name value="administrativeStatus" />
+    <status value="active" />
+    <code value="administrativeStatus" />
+    <base value="Communication" />
+    <type value="token" />
+    <description value="Search parameter for finding communication based on administrative status" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/administrative-status')" />
+    <xpathUsage value="normal" />
+</SearchParameter>

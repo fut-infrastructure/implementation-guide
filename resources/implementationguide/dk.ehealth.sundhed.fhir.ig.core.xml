@@ -123,25 +123,7 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="SearchParameter/ehealth-communication-search-communicationCategory"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="SearchParameter/ehealth-communication-search-recipientIdentifier"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="SearchParameter/ehealth-communication-search-threadId"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="SearchParameter/ehealth-communication-search-restriction-category"/>
+        <reference value="SearchParameter/ehealth-communication-search-administrative-status"/>
       </sourceReference>
     </resource>
     <resource>
@@ -154,6 +136,30 @@
       <example value="false"/>
       <sourceReference>
         <reference value="SearchParameter/ehealth-communication-search-careteam-sender"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-communicationCategory"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-restriction-category"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="SearchParameter/ehealth-communication-search-threadId"/>
       </sourceReference>
     </resource>
 
@@ -186,13 +192,13 @@
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-correspondance"/>
     </resource>
-    <resource>
+    <!-- resource>
       <example value="true"/>
       <sourceReference>
         <reference value="Provenance/provenance-message-activate-valid"/>
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-detached-provenance"/>
-    </resource>
+    </resource -->
     <resource>
       <example value="true"/>
       <sourceReference>
@@ -363,11 +369,11 @@
         <reference value="StructureDefinition/ehealth-provenance"/>
       </sourceReference>
     </resource>
-    <resource>
+    <!-- resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-detached-provenance"/>
       </sourceReference>
-    </resource>
+    </resource -->
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-questionnaire"/>
@@ -403,6 +409,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-address"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-administrativeStatus"/>
       </sourceReference>
     </resource>
     <resource>
@@ -824,6 +835,11 @@
     <!-- Code systems -->
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-administrative-status"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-regional-subdivision-codes"/>
       </sourceReference>
     </resource>
@@ -1224,6 +1240,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-appointmenttype-codes"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-administrative-status"/>
       </sourceReference>
     </resource>
     <resource>

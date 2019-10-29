@@ -1,0 +1,12 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="ehealth-communication-search-period" />
+    <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/period"/>
+    <name value="period" />
+    <status value="active" />
+    <code value="period" />
+    <base value="Communication" />
+    <type value="date" />
+    <description value="Search parameter for finding communication based on period" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-period')" />
+    <xpathUsage value="normal" />
+</SearchParameter>
