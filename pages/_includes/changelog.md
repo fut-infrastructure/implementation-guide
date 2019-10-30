@@ -29,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Instance operations
 ### Code systems
+- All `CodeSystem` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
 - Added `http://ehealth.sundhed.dk/cs/device-safety`
 - Added `http://ehealth.sundhed.dk/cs/device-calibration-period`
@@ -68,6 +69,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed `http://ehealth.sundhed.dk/cs/derived-quality-base` so the codes are not in all caps
 
 ### ValueSets
+- All `ValueSet` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
 - Added `http://ehealth.sundhed.dk/vs/device-measurement-unit` 
 - Added `http://ehealth.sundhed.dk/vs/device-safety`
@@ -97,6 +99,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `PITEOC` to `http://ehealth.sundhed.dk/vs/consent-category`
 - Added SNOMED CT codes `449171008` and `448225001` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
 - Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies` added new policy : `http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen`
+
+### ConceptMaps
+- All `ConceptMap` migrated to `active` status
 
 ### Resource/profile changes
 

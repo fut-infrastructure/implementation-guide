@@ -4,7 +4,7 @@
     <version value="0.0.1"/>
     <name value="OrganizationSynchronizationStatus"/>
     <title value="OrganizationSynchronizationStatus"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="true"/>
     <date value="2019-06-24"/>
     <publisher value="ehealth.sundhed.dk"/>
