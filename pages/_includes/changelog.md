@@ -161,12 +161,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Provenance (ehealth-provenance)
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
 - Added optional dateTimeOfReusedEntity
-- Removed profile for now (FUT1-2623 and FUT1-2734)
 
 #### Provenance (ehealth-detached-provenance)
 - `agent.whoReference` and `target` now constrained to max 1
 - `target` constrained to only reference ehealth-message
 - `agent` can no longer reference RelatedPerson, Device, or Organisation
+- Removed profile for now (FUT1-2623 and FUT1-2734)
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
