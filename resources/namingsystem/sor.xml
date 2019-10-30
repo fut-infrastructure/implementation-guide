@@ -25,9 +25,9 @@
     <responsible value="The Health Service's Organizational Register was developed in the National Board of Health in 2006-2007 in cooperation with the regions and MedCom" />
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/identifier-type" />
-            <code value="NPI" />
-            <display value="National provider identifier" />
+            <system value="http://hl7.org/fhir/v2/0203" />
+            <code value="PRN" />
+            <display value="Provider number" />
         </coding>
     </type>
     <description value="SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former." />
