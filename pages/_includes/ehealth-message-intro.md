@@ -1,6 +1,6 @@
 # Introduction
 
-An ehealth-message defines written communication 
+An ehealth-message defines written communication and
 comes in four flavours depending on the "category" of the message:
 
 - __Message__: For sending messages from Patients, CareTeams (Practitioners), and Devices to Patients or CareTeams. 
