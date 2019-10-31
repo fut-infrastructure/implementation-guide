@@ -205,6 +205,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Available search parameters added
 - Added administrative-status and period (part of discarding detached-provenance)
 - Restricted value set for status (ehealth-status)
+- Added "title" extension to allow message "subject"
 
 #### Patient (ehealth-patient)
 - Added PATCH example

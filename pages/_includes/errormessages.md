@@ -100,7 +100,9 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `COMMUNICATION_UPDATE_TO_CATEGORY_IS_NOT_ALLOWED`: Update to category is not allowed: %s
 
-- `COMMUNICATION_JSON_PATCH_IS_ONLY_ALLOWED_FOR_NOTE`: JSON patch is only allowed for category '%s' (current is '%s')
+- `COMMUNICATION_UPDATE_NON_ADMINISTRATIVE_STATUS_NOT_ALLOWED`: Only update to administrative-status extension is allowed when status in completed
+
+- `COMMUNICATION_JSON_PATCH_IS_ONLY_ALLOWED_FOR_NOTE`: This JSON patch type is only allowed for category '%s' (current is '%s')
 
 - `COMMUNICATION_EXACTLY_ONE_MESSAGE_CATEGORY_IS_EXPECTED_ACTUAL`: Exactly one message category is expected. Actual: %s
 
