@@ -7,8 +7,8 @@ comes in four flavours depending on the "category" of the message:
   Messages may not be sent between Patients or between Practitioners. When sending a message to a CareTeam, it is 
   possible to narrow the recipient to be of a certain role. This is done by setting the "restriction-category" 
   extension to a specific role value.
-  When sent, a message may no longer be updated by the sender. 
-  A recipient may update the "received" time on a message.
+  When sent (by setting status "completed"), a message may no longer be updated by the sender. 
+  A recipient may update the "received" time and the "administrative-status" (eg. "read") on a message.
 - __Notification__: For sending notification from Practitioners to Patients. These are usually text-based, and may
   have a temporal validity attached (see "period" extension) to indicate at which point a 
   notification is no longer valid. When sent, a notification may no longer be updated by the sender.
@@ -21,7 +21,7 @@ comes in four flavours depending on the "category" of the message:
 
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "topic" field, no 
 matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by
-assigning the same thread-id in the provided extension.
+assigning the same thread-id in the provided extension. The message subject may be provided in the title extension.
 
 # Remarks about status and administrative-status
 
