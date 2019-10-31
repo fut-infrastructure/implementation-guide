@@ -5,7 +5,7 @@
   <name value="responsible" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+  <description value="Individuals, careteam and/or organization who are responsible in the given context" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -31,33 +31,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Extension.extension:type">
-      <path value="Extension.extension" />
-      <sliceName value="type" />
-      <short value="Responsibility type" />
-      <definition value="Responsibility type" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:type.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="type" />
-    </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Extension.extension:type.value[x]:valueCodeableConcept.coding">
-      <path value="Extension.extension.valueCodeableConcept.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/responsibility-types" />
-      </binding>
     </element>
     <element id="Extension.extension:actor">
       <path value="Extension.extension" />

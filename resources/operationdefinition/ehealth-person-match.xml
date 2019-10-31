@@ -5,7 +5,7 @@
   <name value="Person name lookup" />
   <status value="active" />
   <kind value="operation" />
-  <date value="2019-02-02" />
+  <date value="2019-10-16" />
   <description value="This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource" />
   <idempotent value="true" />
   <code value="match" />
