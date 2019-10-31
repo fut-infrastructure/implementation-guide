@@ -18,6 +18,12 @@
       <path value="Appointment" />
       <short value="A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)." />
       <definition value="A booking of a healthcare event among patient(s), practitioner(s), related person(s) and/or device(s) for a specific date/time. This may result in one or more Encounter(s)" />
+      <constraint>
+        <key value="responsible-1" />
+        <severity value="error" />
+        <human value="Ensuring that responsible entity is a participating party" />
+        <expression value="extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').valueReference in participant.extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').valueReference or extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').valueReference in participant.actor.reference" />
+      </constraint>
     </element>
     <element id="Appointment.extension">
       <path value="Appointment.extension" />
@@ -37,6 +43,24 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
+      </type>
+    </element>
+    <element id="Appointment.extension:responsible.extension:actor">
+      <path value="Appointment.extension.extension" />
+      <sliceName value="actor" />
+    </element>
+    <element id="Appointment.extension:responsible.extension:actor.value[x]:valueReference">
+      <path value="Appointment.extension.extension.value[x]" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Appointment.appointmentType">
@@ -102,6 +126,24 @@
     <element id="Appointment.participant">
       <path value="Appointment.participant" />
       <min value="2" />
+    </element>
+    <element id="Appointment.participant.extension">
+      <path value="Appointment.participant.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Appointment.participant.extension:careteam">
+      <path value="Appointment.participant.extension" />
+      <sliceName value="careteam" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/ehealth-ext-careteam" />
+      </type>
     </element>
     <element id="Appointment.participant.actor">
       <path value="Appointment.participant.actor" />
