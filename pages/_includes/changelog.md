@@ -608,7 +608,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added as an unchanged copy of the existing `ehealth-provenance` to allow `provenance` to exist on multiple HAPI FHIR instances
 
 #### Provenance (ehealth-provenance)
-- Changed referenced resources to use aggregation type "referenced"
+- Changed referenced resources to use aggregation type "referenced".
 
 #### Questionnaire (ehealth-questionnaire)
 - Added extension `modifierRole` as a replacement for elements `author` and `custodian`
