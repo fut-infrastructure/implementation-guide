@@ -22,7 +22,7 @@
         <key value="videoresponsible-2" />
         <severity value="error" />
         <human value="Ensuring that responsible entity is a participating party" />
-        <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').first().value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').first().value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').first().value.reference in participant.actor.reference)" />
+        <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.actor.reference)" />
       </constraint>
     </element>
     <element id="Appointment.extension">
