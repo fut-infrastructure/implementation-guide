@@ -220,13 +220,7 @@
       </sourceReference>
       <exampleFor value="StructureDefinition/ehealth-videoappointment"/>
     </resource>
-    <resource>
-      <example value="true"/>
-      <sourceReference>
-        <reference value="AppointmentResponse/appointmentresponse-valid"/>
-      </sourceReference>
-      <exampleFor value="StructureDefinition/ehealth-appointmentresponse"/>
-    </resource>
+    
 
     <!-- Structure definitions-->
     <resource>
@@ -239,11 +233,7 @@
         <reference value="StructureDefinition/ehealth-appointment"/>
       </sourceReference>
     </resource>
-    <resource>
-      <sourceReference>
-        <reference value="StructureDefinition/ehealth-appointmentresponse"/>
-      </sourceReference>
-    </resource>
+    
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-careplan"/>

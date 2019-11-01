@@ -22,7 +22,7 @@
         <key value="videoresponsible-2" />
         <severity value="error" />
         <human value="Ensuring that responsible entity is a participating party" />
-        <expression value="extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').valueReference in participant.extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').valueReference or extension.where('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').valueReference in participant.actor.reference" />
+        <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').first().value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').first().value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').first().value.reference in participant.actor.reference)" />
       </constraint>
     </element>
     <element id="Appointment.extension">
@@ -34,34 +34,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Appointment.extension:responsible">
-      <path value="Appointment.extension" />
-      <sliceName value="responsible" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
-      </type>
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor">
-      <path value="Appointment.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor.value[x]:valueReference">
-      <path value="Appointment.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
     </element>
     <element id="Appointment.extension:endMeetingOnEndTime">
       <path value="Appointment.extension" />
@@ -99,6 +71,14 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-pin-code" />
       </type>
     </element>
+    <element id="Appointment.extension:responsible">
+      <path value="Appointment.extension" />
+      <sliceName value="responsible" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
+      </type>
+    </element>
     <element id="Appointment.identifier">
       <path value="Appointment.identifier" />
       <slicing>
@@ -130,6 +110,20 @@
     <element id="Appointment.reason">
       <path value="Appointment.reason" />
       <min value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ApptReason" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/appointment-reason" />
+      </binding>
+    </element>
+    <element id="Appointment.reason.coding">
+      <path value="Appointment.reason.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/appointment-reason" />
+      </binding>
     </element>
     <element id="Appointment.indication">
       <path value="Appointment.indication" />
