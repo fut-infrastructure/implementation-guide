@@ -17,6 +17,10 @@
       <path value="CareTeam" />
       <short value="People and organizations who plan to participate in the coordination and delivery of care for a patient." />
     </element>
+    <element id="CareTeam.status">
+      <path value="CareTeam.status" />
+      <min value="1" />
+    </element>
     <element id="CareTeam.name">
       <path value="CareTeam.name" />
       <min value="1" />

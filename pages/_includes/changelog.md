@@ -249,6 +249,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed cardinality of element `subject` to 0..0
 - Changed cardinality of element `context` to 0..0
 - Changed cardinality of element `reasonReference` to 0..0
+- Changed cardinality of element `status` to 1..1
 
 #### Video appointment (ehealth-videoappointment)
 - Initial version
