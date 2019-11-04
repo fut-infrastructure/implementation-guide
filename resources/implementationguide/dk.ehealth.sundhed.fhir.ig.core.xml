@@ -714,6 +714,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-careteam"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-reference-description"/>
       </sourceReference>
     </resource>
