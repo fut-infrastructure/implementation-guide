@@ -100,7 +100,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `PITEOC` to `http://ehealth.sundhed.dk/vs/consent-category`
 - Added SNOMED CT codes `449171008` and `448225001` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
 - Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies` added new policy : `http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen`
-- Added `http://ehealth.sundhed.dk/cs/oio-organization-type`
+- Added `http://ehealth.sundhed.dk/vs/oio-organization-type`
 
 ### ConceptMaps
 - All `ConceptMap` migrated to `active` status
