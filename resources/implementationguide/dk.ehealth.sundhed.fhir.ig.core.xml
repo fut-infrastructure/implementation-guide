@@ -549,6 +549,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-priority"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-pin-code"/>
       </sourceReference>
     </resource>
@@ -1006,6 +1011,11 @@
     <resource>
       <sourceReference>
         <reference value="CodeSystem/ehealth-practitioner-role"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="CodeSystem/ehealth-priority"/>
       </sourceReference>
     </resource>
     <resource>
@@ -1525,6 +1535,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-organization-relation-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-priority"/>
       </sourceReference>
     </resource>
     <resource>

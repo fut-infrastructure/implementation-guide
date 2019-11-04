@@ -201,6 +201,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added administrative-status and period (part of discarding detached-provenance)
 - Restricted value set for status (ehealth-status)
 - Added "title" extension to allow message "subject"
+- Added "priority" extension with value set as specified in R4 spec (but not included in R3)
 
 #### Patient (ehealth-patient)
 - Added PATCH example
