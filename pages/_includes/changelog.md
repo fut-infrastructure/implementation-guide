@@ -2,7 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+#### 2019.6.1 (2019-11-08)
 
 ### General changes
 - Added list of error messages
@@ -100,30 +100,21 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 
-#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
-- Renamed to `ehealth-reuseCriteria`
-
-#### ReuseCriteria (ehealth-reuseCriteria)
-- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
-- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
-- Renamed `operationQuality` to `usageQuality`
-- Renamed `dataQuality` to `deviceMeasuringQuality`
-
-#### Questionnaire (ehealth-questionnaire)
-- Removed `reuseCriteria` extension
-
-#### Observation (ehealth-observation)
-- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Observation.context reference to Encounter was added
-- Removed sharingPolicy extension
-
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added ehealth-reuseCriteria extension
 - Added sharingPolicy extension
 
-#### ProcedureRequest (ehealth-procedurerequest)
-- Added ehealth-reuseCriteria extension
-- Added sharingPolicy extension
+#### Appointment (ehealth-appointment & ehealth-videoappointment)
+- Location is no longer required
+- Changed description due to new cardinalities
+- Added CodeSystem for appointmentType, updated example accordingly
+- Added ValueSet "ehealth-appointment-reason"
+- Added 'responsible' extension
+- Added careteam as possible participant
+- Added FhirPath constraint that assert responsible is always part of the participants
+
+#### AppointmentResponse (ehealth-appointmentresponse)
+- References changed from general to ehealth-specific profiles
 
 #### CarePlan (ehealth-careplan)
 - Removed extension `responsibilitySummary`
@@ -131,8 +122,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsible`
 - Added extension `careTeamHistory`
 
-#### Composition (ehealth-composition)
-- Change so references can be bundled or contained
+#### CareTeam (ehealth-careteam)
+- Added `reasonCode`
+- Changed cardinality of element `subject` to 0..0
+- Changed cardinality of element `context` to 0..0
+- Changed cardinality of element `reasonReference` to 0..0
+- Changed cardinality of element `status` to 1..1
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
@@ -144,25 +139,23 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed option "Group" from `subject`
 - Removed option "eHealth-Observation" from `finding.item`
 
-#### Library (ehealth-library)
-- Removed extension `basedOn`
-- Removed extension `parameterBinding`
-- Removed extension `parameterName`
-- Updated general resource description
-- Changed `Library.type` value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
+#### Communication (ehealth-communication)
+- Added extension `senderCareTeam`
+- Added extension `restrictionCategory`
+- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
+- Changed cardinality of element `sender` to 0..1
+- References to organization were removed from 'sender' and 'recipient'
+- Added context reference to Encounter
+- Added PATCH example
+- Possible to use CareTeam as recipient using extension
 
-#### Task (ehealth-task)
-- Added extension `restriction-category`
-- Remove Organization as possible task-responsible
+#### Composition (ehealth-composition)
+- Change so references can be bundled or contained
 
 #### Consent (ehealth-consent)
 - Added general resource description
 
-#### Provenance (ehealth-provenance)
-- Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
-- Added optional dateTimeOfReusedEntity
-
-#### Provenance (ehealth-detached-provenance)
+#### Detached Provenance (ehealth-detached-provenance)
 - `agent.whoReference` and `target` now constrained to max 1
 - `target` constrained to only reference ehealth-message
 - `agent` can no longer reference RelatedPerson, Device, or Organisation
@@ -175,6 +168,34 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsibleHistory`
 - Added extension `caremanagerOrganization`
 - Added extension `teamHistory`
+
+#### Library (ehealth-library)
+- Removed extension `basedOn`
+- Removed extension `parameterBinding`
+- Removed extension `parameterName`
+- Updated general resource description
+- Changed `Library.type` value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
+
+#### Media (ehealth-media)
+- Removed sharingPolicy extension
+- Changed cardinality of element `occurence[x]` to 1..1
+
+#### Message (ehealth-message)
+- Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
+- Only one recipient is allowed
+- Device added as possibility for sender
+- CareTeam removed as possible recipient (profiling defect, extension must be used instead)
+- Legal PATCH operations described
+- Available search parameters added
+- Added administrative-status and period (part of discarding detached-provenance)
+- Restricted value set for status (ehealth-status)
+- Added "title" extension to allow message "subject"
+- Added "priority" extension with value set as specified in R4 spec (but not included in R3)
+
+#### Observation (ehealth-observation)
+- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Observation.context reference to Encounter was added
+- Removed sharingPolicy extension
 
 #### Organization (ehealth-organization)
 - Added extension `cvrNumber`
@@ -191,18 +212,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Renamed extension element `contact.telecom.value` to `contact.telecom.telecomValue` 
 - Changed cardinality of extension element `contact.telecom.telecomValue` inside extension to min 1
 
-#### Communication (ehealth-message)
-- Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
-- Only one recipient is allowed
-- Device added as possibility for sender
-- CareTeam removed as possible recipient (profiling defect, extension must be used instead)
-- Legal PATCH operations described
-- Available search parameters added
-- Added administrative-status and period (part of discarding detached-provenance)
-- Restricted value set for status (ehealth-status)
-- Added "title" extension to allow message "subject"
-- Added "priority" extension with value set as specified in R4 spec (but not included in R3)
-
 #### Patient (ehealth-patient)
 - Added PATCH example
 - Added municipality code CodeSystem (DK: kommunekoder)
@@ -213,47 +222,35 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Removed functional-capacity extension (not to be used for now)
 
-#### Appointment (ehealth-appointment & ehealth-videoappointment)
-- Location is no longer required
-- Changed description due to new cardinalities
-- Added CodeSystem for appointmentType, updated example accordingly
-- Added ValueSet "ehealth-appointment-reason"
-- Added 'responsible' extension
-- Added careteam as possible participant
-- Added FhirPath constraint that assert responsible is always part of the participants
+#### PlanDefinition (ehealth-plandefinition)
+- Removed `role`
 
-#### Media (ehealth-media)
-- Removed sharingPolicy extension
-- Changed cardinality of element `occurence[x]` to 1..1
+#### ProcedureRequest (ehealth-procedurerequest)
+- Added ehealth-reuseCriteria extension
+- Added sharingPolicy extension
+
+#### Provenance (ehealth-provenance)
+- Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
+- Added optional dateTimeOfReusedEntity
+
+#### Questionnaire (ehealth-questionnaire)
+- Removed `reuseCriteria` extension
+
+#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
+- Renamed to `ehealth-reuseCriteria`
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed cardinality of element `authored` to 1..1
 
-#### Communication (ehealth-communication)
-- Added extension `senderCareTeam`
-- Added extension `restrictionCategory`
-- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
-- Changed cardinality of element `sender` to 0..1
-- References to organization were removed from 'sender' and 'recipient'
-- Added context reference to Encounter
-- Added PATCH example
-- Possible to use CareTeam as recipient using extension
+#### ReuseCriteria (ehealth-reuseCriteria)
+- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
+- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
+- Renamed `operationQuality` to `usageQuality`
+- Renamed `dataQuality` to `deviceMeasuringQuality`
 
-#### Communication (ehealth-correspondance)
-- Removed from IG as per customer request
-
-#### AppointmentResponse (ehealth-appointmentresponse)
-- References changed from general to ehealth-specific profiles
-
-#### PlanDefinition (ehealth-plandefinition)
-- Removed `role`
-
-#### CareTeam (ehealth-careteam)
-- Added `reasonCode`
-- Changed cardinality of element `subject` to 0..0
-- Changed cardinality of element `context` to 0..0
-- Changed cardinality of element `reasonReference` to 0..0
-- Changed cardinality of element `status` to 1..1
+#### Task (ehealth-task)
+- Added extension `restriction-category`
+- Remove Organization as possible task-responsible
 
 #### Video appointment (ehealth-videoappointment)
 - Initial version
