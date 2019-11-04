@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="task"/>
     <status value="active"/>
-    <date value="2019-09-18T08:16:12+00:00"/>
+    <date value="2019-11-04T16:39:00+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="task"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
     </software>
     <implementation>
         <description value="eHealth task service"/>
-        <url value="http://task.local.ehealth.sundhed.dk/fhir"/>
+        <url value="http://task.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -368,33 +368,27 @@
             </searchParam>
         </resource>
         <operation>
-            <name value="expunge"/>
+            <name value="validate"/>
             <definition>
-                <reference value="http://task.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.local.ehealth.sundhed.dk/fhir/OperationDefinition/ClinicalImpression--validate"/>
+                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.local.ehealth.sundhed.dk/fhir/OperationDefinition/ClinicalImpression-i-validate"/>
+                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.local.ehealth.sundhed.dk/fhir/OperationDefinition/Task-i-validate"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://task.local.ehealth.sundhed.dk/fhir/OperationDefinition/Task--validate"/>
+                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task-i-validate"/>
             </definition>
         </operation>
     </rest>

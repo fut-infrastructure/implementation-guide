@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="careplan"/>
     <status value="active"/>
-    <date value="2019-09-18T06:50:38+00:00"/>
+    <date value="2019-11-04T17:23:59+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="careplan"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
     </software>
     <implementation>
         <description value="eHealth careplan service"/>
-        <url value="http://careplan.local.ehealth.sundhed.dk/fhir"/>
+        <url value="http://careplan.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -37,6 +37,7 @@
             </interaction>
             <conditionalUpdate value="true"/>
             <searchInclude value="CarePlan:activity-reference"/>
+            <searchInclude value="CarePlan:context"/>
             <searchInclude value="CarePlan:part-of"/>
             <searchParam>
                 <name value="_id"/>
@@ -47,6 +48,11 @@
                 <name value="activity-reference"/>
                 <type value="reference"/>
                 <documentation value="Activity details defined in specific resource"/>
+            </searchParam>
+            <searchParam>
+                <name value="care-team"/>
+                <type value="reference"/>
+                <documentation value="Who's involved in plan?"/>
             </searchParam>
             <searchParam>
                 <name value="category"/>
@@ -211,7 +217,7 @@
         <resource>
             <type value="PlanDefinition"/>
             <profile>
-                <reference value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
+                <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"/>
             </profile>
             <interaction>
                 <code value="read"/>
@@ -436,151 +442,157 @@
         <operation>
             <name value="apply"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-apply"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply"/>
             </definition>
         </operation>
         <operation>
             <name value="create-episode-of-care"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-create-episode-of-care"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-create-episode-of-care"/>
             </definition>
         </operation>
         <operation>
             <name value="update-care-teams"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-update-care-teams"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-update-care-teams"/>
             </definition>
         </operation>
         <operation>
-            <name value="expunge"/>
+            <name value="suggest-care-teams"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/CarePlan-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/CarePlan--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Condition--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Condition-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Condition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Consent-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Condition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Consent--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Consent-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/EpisodeOfCare--validate"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/EpisodeOfCare-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Consent--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="is-context-allowed"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="update-care-teams"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-update-care-teams"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-validate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="expunge"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--expunge"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="expunge"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-expunge"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="meta"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-meta"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="meta"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--meta"/>
             </definition>
         </operation>
         <operation>
             <name value="meta-add"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-meta-add"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-meta-add"/>
             </definition>
         </operation>
         <operation>
             <name value="meta-delete"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-meta-delete"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="expunge"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition--expunge"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="expunge"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-expunge"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-meta"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta"/>
-            <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition--meta"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-meta-delete"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/ProcedureRequest--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/ProcedureRequest-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Provenance-i-validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ProcedureRequest--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://careplan.local.ehealth.sundhed.dk/fhir/OperationDefinition/Provenance--validate"/>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ProcedureRequest-i-validate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="validate"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Provenance-i-validate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="validate"/>
+            <definition>
+                <reference value="http://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Provenance--validate"/>
             </definition>
         </operation>
     </rest>
