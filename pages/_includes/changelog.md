@@ -2,7 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-#### 2019.6.1 (2019-11-08)
+## 2019.6.1 (2019-11-08)
 
 ### General changes
 - Added list of error messages
