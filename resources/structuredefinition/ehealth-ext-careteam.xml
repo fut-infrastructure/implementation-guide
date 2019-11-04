@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-ext-careteam"/>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam" />
   <name value="ehealth-ext-careteam" />
   <status value="draft" />
