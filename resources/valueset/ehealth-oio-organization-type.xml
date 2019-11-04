@@ -15,7 +15,7 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Value set used for indicating OIO organization type"/>
+    <description value="Value set used for indicating the organization type for organizations from OIO / STS-ORG"/>
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/oio-organization-type"/>
