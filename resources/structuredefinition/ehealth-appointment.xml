@@ -45,38 +45,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
-    <element id="Appointment.extension:responsible.extension">
-      <path value="Appointment.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor">
-      <path value="Appointment.extension.extension" />
-      <sliceName value="actor" />
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor.url">
-      <path value="Appointment.extension.extension.url" />
-      <fixedUri value="actor" />
-    </element>
-    <element id="Appointment.extension:responsible.extension:actor.value[x]:valueReference">
-      <path value="Appointment.extension.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
