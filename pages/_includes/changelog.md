@@ -213,11 +213,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Removed functional-capacity extension (not to be used for now)
 
-#### Appointment (ehealth-appointment)
+#### Appointment (ehealth-appointment & ehealth-videoappointment)
 - Location is no longer required
 - Changed description due to new cardinalities
 - Added CodeSystem for appointmentType, updated example accordingly
 - Added ValueSet "ehealth-appointment-reason"
+- Added 'responsible' extension
+- Added careteam as possible participant
+- Added FhirPath constraint that assert responsible is always part of the participants
 
 #### Media (ehealth-media)
 - Removed sharingPolicy extension
