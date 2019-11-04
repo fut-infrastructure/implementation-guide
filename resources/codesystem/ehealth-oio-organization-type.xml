@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-oio-organization-types"/>
+    <url value="http://ehealth.sundhed.dk/cs/oio-organization-types"/>
+    <version value="0.6.0"/>
+    <name value="OIO Organization Types"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-01-29"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="OIO Organization Types"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="Organisation"/>
+        <display value="Organisation"/>
+        <definition value="Organisation"/>
+    </concept>
+    <concept>
+        <code value="OrganisationEnhed"/>
+        <display value="Organisation Enhed"/>
+        <definition value="Organisation Enhed"/>
+    </concept>
+</CodeSystem>

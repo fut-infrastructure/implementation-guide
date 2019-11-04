@@ -1060,6 +1060,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="CodeSystem/ehealth-oio-organization-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="CodeSystem/ehealth-sor-organization-specialty"/>
       </sourceReference>
     </resource>
@@ -1553,6 +1558,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="ValueSet/ehealth-sor-organization-type"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/ehealth-oio-organization-type"/>
       </sourceReference>
     </resource>
     <resource>
