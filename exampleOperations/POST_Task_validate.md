@@ -1,9 +1,9 @@
-`POST [base]/Observation/$validate`
+`POST [base]/Task/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,56 +18,47 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "Observation",
+        "resourceType": "Task",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
         },
         "extension": [
           {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy",
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://ehealth.sundhed.dk/cs/submission-sharing-policies",
+                  "system": "http://ehealth.sundhed.dk/cs/task-category",
                   "code": "TBD"
                 }
               ]
             }
-          }
-        ],
-        "basedOn": [
+          },
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/2082"
-          }
-        ],
-        "status": "amended",
-        "code": {
-          "coding": [
-            {
-              "system": "http://sundhedsdatastyrelsen.dk/npu",
-              "code": "NPU03011"
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
+                  "code": "None"
+                }
+              ]
             }
-          ]
-        },
-        "subject": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/94110"
-        },
-        "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/40399"
-        },
-        "effectivePeriod": {
-          "start": "2019-09-18T09:44:47+02:00",
-          "end": "2019-09-18T09:44:47+02:00"
-        },
-        "performer": [
+          },
           {
-            "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/88651"
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+            "valueReference": {
+              "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/62711"
+            }
           }
         ],
-        "device": {
-          "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/93757"
+        "status": "draft",
+        "intent": "proposal",
+        "priority": "routine",
+        "context": {
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/35975"
         }
       }
     }

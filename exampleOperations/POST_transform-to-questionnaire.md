@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vdHJhbnNmb3JtLXRvLXF1ZXN0aW9ubmFpcmUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCIkdHJhbnNmb3JtLXRvLXF1ZXN0aW9ubmFpcmUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2019-09-18T13:11:48.217+02:00",
+        "indexed": "2019-11-04T21:29:31.575+01:00",
         "content": [
           {
             "attachment": {
@@ -140,7 +140,7 @@ __Response__
                   {
                     "url": "reference",
                     "valueReference": {
-                      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/65406"
+                      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/49609"
                     }
                   },
                   {

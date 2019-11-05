@@ -1,12 +1,6 @@
 # system
 - profile: system
-  path: POST_apply.md
-
-- profile: system
   path: POST_create-episode-of-care.md
-
-- profile: system
-  path: GET_is-context-allowed.md
 
 - profile: system
   path: POST_search-measurements.md
@@ -18,10 +12,10 @@
   path: POST_transform-to-questionnaire.md
 
 - profile: system
-  path: POST_transformToPHMR.md
+  path: POST_transform-to-PHMR.md
 
 - profile: system
-  path: POST_transformToQRD.md
+  path: POST_transform-to-QRD.md
 
 - profile: system
   path: POST_update-care-teams.md
@@ -40,6 +34,9 @@
   path: POST_ActivityDefinition.md
 
 - profile: ehealth-activitydefinition
+  path: POST_ActivityDefinition_validate.md
+
+- profile: ehealth-activitydefinition
   path: PUT_ActivityDefinition.md
 
 # ehealth-careplan
@@ -56,7 +53,13 @@
   path: POST_CarePlan.md
 
 - profile: ehealth-careplan
+  path: POST_CarePlan_validate.md
+
+- profile: ehealth-careplan
   path: PUT_CarePlan.md
+
+- profile: ehealth-careplan
+  path: POST_suggest-care-teams.md
 
 # ehealth-careteam
 - profile: ehealth-careteam
@@ -75,6 +78,9 @@
   path: POST_CareTeam.md
 
 - profile: ehealth-careteam
+  path: POST_CareTeam_validate.md
+
+- profile: ehealth-careteam
   path: PUT_CareTeam.md
 
 # ehealth-clinicalimpression
@@ -90,7 +96,13 @@
 - profile: ehealth-clinicalimpression
   path: POST_ClinicalImpression.md
 
+- profile: ehealth-clinicalimpression
+  path: POST_ClinicalImpression.md
+
 # ehealth-communication
+- profile: ehealth-communication
+  path: POST_ClinicalImpression_validate.md
+
 - profile: ehealth-communication
   path: GET_Communication_search.md
 
@@ -98,7 +110,13 @@
   path: GET_Communication_version.md
 
 - profile: ehealth-communication
+  path: PATCH_Communication.md
+
+- profile: ehealth-communication
   path: POST_Communication.md
+
+- profile: ehealth-communication
+  path: POST_Communication_validate.md
 
 # ehealth-composition
 - profile: ehealth-composition
@@ -121,10 +139,13 @@
   path: GET_Condition_version.md
 
 - profile: ehealth-condition
+  path: PATCH_Condition.md
+
+- profile: ehealth-condition
   path: POST_Condition.md
 
 - profile: ehealth-condition
-  path: PATCH_Condition.md
+  path: POST_Condition_validate.md
 
 # ehealth-consent
 - profile: ehealth-consent
@@ -135,6 +156,9 @@
 
 - profile: ehealth-consent
   path: POST_Consent.md
+
+- profile: ehealth-consent
+  path: POST_Consent_validate.md
 
 - profile: ehealth-consent
   path: PUT_Consent.md
@@ -148,6 +172,9 @@
 
 - profile: ehealth-device
   path: POST_Device.md
+
+- profile: ehealth-device
+  path: POST_Device_validate.md
 
 - profile: ehealth-device
   path: PUT_Device.md
@@ -179,6 +206,9 @@
   path: POST_DeviceUseStatement.md
 
 - profile: ehealth-deviceusestatement
+  path: POST_DeviceUseStatement_validate.md
+
+- profile: ehealth-deviceusestatement
   path: PUT_DeviceUseStatement.md
 
 # ehealth-documentreference
@@ -198,6 +228,9 @@
   path: POST_DocumentReference.md
 
 - profile: ehealth-documentreference
+  path: POST_DocumentReference_validate.md
+
+- profile: ehealth-documentreference
   path: PUT_DocumentReference.md
 
 # ehealth-episodeofcare
@@ -211,10 +244,16 @@
   path: GET_EpisodeOfCare_version.md
 
 - profile: ehealth-episodeofcare
+  path: POST_is-context-allowed.md
+
+- profile: ehealth-episodeofcare
   path: PATCH_EpisodeOfCare.md
 
 - profile: ehealth-episodeofcare
   path: POST_EpisodeOfCare.md
+
+- profile: ehealth-episodeofcare
+  path: POST_EpisodeOfCare_validate.md
 
 # ehealth-library
 - profile: ehealth-library
@@ -224,7 +263,13 @@
   path: GET_Library_version.md
 
 - profile: ehealth-library
+  path: POST_evaluate.md
+
+- profile: ehealth-library
   path: POST_Library.md
+
+- profile: ehealth-library
+  path: POST_Library_validate.md
 
 - profile: ehealth-library
   path: PUT_Library.md
@@ -237,7 +282,10 @@
   path: GET_Media_search.md
 
 - profile: ehealth-media
-  path: POST_Media.md
+  path: GET_Media_version.md
+
+- profile: ehealth-media
+  path: POST_Media_validate.md
 
 # ehealth-observation
 - profile: ehealth-observation
@@ -247,7 +295,10 @@
   path: GET_Observation_search.md
 
 - profile: ehealth-observation
-  path: POST_Observation.md
+  path: GET_Observation_version.md
+
+- profile: ehealth-observation
+  path: POST_Observation_validate.md
 
 # ehealth-organization
 - profile: ehealth-organization
@@ -263,7 +314,7 @@
   path: PATCH_Organization.md
 
 - profile: ehealth-organization
-  path: POST_Organization.md
+  path: POST_Organization_validate.md
 
 # ehealth-patient
 - profile: ehealth-patient
@@ -277,7 +328,13 @@
   path: GET_PlanDefinition_version.md
 
 - profile: ehealth-plandefinition
+  path: POST_apply.md
+
+- profile: ehealth-plandefinition
   path: POST_PlanDefinition.md
+
+- profile: ehealth-plandefinition
+  path: POST_PlanDefinition_validate.md
 
 - profile: ehealth-plandefinition
   path: PUT_PlanDefinition.md
@@ -293,6 +350,9 @@
   path: POST_Practitioner.md
 
 - profile: ehealth-practitioner
+  path: POST_Practitioner_validate.md
+
+- profile: ehealth-practitioner
   path: PUT_Practitioner.md
 
 # ehealth-procedurerequest
@@ -303,7 +363,7 @@
   path: GET_ProcedureRequest_version.md
 
 - profile: ehealth-procedurerequest
-  path: POST_ProcedureRequest.md
+  path: POST_ProcedureRequest_validate.md
 
 - profile: ehealth-procedurerequest
   path: PUT_ProcedureRequest.md
@@ -319,7 +379,7 @@
   path: GET_Provenance_version.md
 
 - profile: ehealth-provenance
-  path: POST_Provenance.md
+  path: POST_Provenance_validate.md
 
 # ehealth-questionnaire
 - profile: ehealth-questionnaire
@@ -338,6 +398,9 @@
   path: POST_Questionnaire.md
 
 - profile: ehealth-questionnaire
+  path: POST_Questionnaire_validate.md
+
+- profile: ehealth-questionnaire
   path: PUT_Questionnaire.md
 
 # ehealth-questionnaireresponse
@@ -348,7 +411,10 @@
   path: GET_QuestionnaireResponse_search.md
 
 - profile: ehealth-questionnaireresponse
-  path: POST_QuestionnaireResponse.md
+  path: GET_QuestionnaireResponse_version.md
+
+- profile: ehealth-questionnaireresponse
+  path: POST_QuestionnaireResponse_validate.md
 
 # ehealth-relatedperson
 
@@ -367,3 +433,6 @@
 
 - profile: ehealth-task
   path: POST_Task.md
+
+- profile: ehealth-task
+  path: POST_Task_validate.md

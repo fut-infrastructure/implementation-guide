@@ -1,9 +1,9 @@
-`POST [base]/Organization/$validate`
+`POST [base]/DeviceUseStatement/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL09yZ2FuaXphdGlvbi5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjMzYTgxYjktNTFjYy00M2IxLTg3NmItMjczY2QyZWRjZTAwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,37 +18,30 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "Organization",
+        "resourceType": "DeviceUseStatement",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
           ]
         },
         "extension": [
           {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/organization-source",
-                  "code": "manual"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
-                  "code": "NotSynchronized"
-                }
-              ]
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
+            "valueReference": {
+              "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/7564"
             }
           }
         ],
-        "name": "e97baa18-5afc-477e-82a5-fb1546f28eb4"
+        "status": "active",
+        "subject": {
+          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/44128"
+        },
+        "source": {
+          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/67371"
+        },
+        "device": {
+          "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/158"
+        }
       }
     }
   ]

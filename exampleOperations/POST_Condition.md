@@ -1,9 +1,9 @@
-`POST [base]/Condition/328/$validate`
+`POST [base]/Condition`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24ucmVhZCIsIkNvbmRpdGlvbi5jcmVhdGUiLCJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QcmFjdGl0aW9uZXIvNjQwMjkiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24uY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -13,57 +13,50 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-  "resourceType": "Parameters",
-  "parameter": [
-    {
-      "name": "resource",
-      "resource": {
-        "resourceType": "Condition",
-        "id": "328",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-09-18T06:52:24.770+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
-          ]
-        },
-        "clinicalStatus": "active",
-        "code": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/conditions",
-              "code": "TBD"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/24242"
-        }
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
+    ]
+  },
+  "clinicalStatus": "active",
+  "code": {
+    "coding": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/conditions",
+        "code": "TBD"
       }
-    }
-  ]
+    ]
+  },
+  "subject": {
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/16224"
+  }
 }
 ```
 
 __Response__
 ```json
 {
-  "resourceType": "OperationOutcome",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+  "resourceType": "Condition",
+  "id": "581",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-11-04T20:16:38.436+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
+    ]
   },
-  "issue": [
-    {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
-    },
-    {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
-    }
-  ]
+  "clinicalStatus": "active",
+  "code": {
+    "coding": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/conditions",
+        "code": "TBD"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/16224"
+  }
 }
 ```

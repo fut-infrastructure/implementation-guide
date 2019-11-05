@@ -1,9 +1,9 @@
-`PUT [base]/Device/56`
+`PUT [base]/Device/60`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL0RldmljZS53cml0ZSIsInVzZXIvRGV2aWNlLnJlYWQiLCJ1c2VyL0RldmljZU1ldHJpYy5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjg1MjUzOWItYzg2YS00NGYyLWJkODEtY2Y1NTE0ZTliYjA4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy5yZWFkIiwiRGV2aWNlLnJlYWQiLCJEZXZpY2Uud3JpdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Device",
-  "id": "56",
+  "id": "60",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-09-18T07:08:50.806+00:00",
+    "lastUpdated": "2019-11-04T20:07:04.455+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -37,10 +37,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "56",
+  "id": "60",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-09-18T07:08:51.503+00:00",
+    "lastUpdated": "2019-11-04T20:07:05.060+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]

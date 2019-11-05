@@ -1,9 +1,9 @@
-`POST [base]/Media/$validate`
+`POST [base]/ActivityDefinition/29/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,10 +18,13 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "Media",
+        "resourceType": "ActivityDefinition",
+        "id": "29",
         "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T06:31:24.342+00:00",
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
         },
         "extension": [
@@ -30,33 +33,28 @@ __Body__:
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "system": "http://ehealth.sundhed.dk/cs/submission-sharing-policies",
+                  "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
                   "code": "TBD"
                 }
               ]
             }
           },
           {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
             "extension": [
               {
-                "url": "qualityType",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                      "code": "TBD"
-                    }
-                  ]
+                "url": "reference",
+                "valueReference": {
+                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/88597"
                 }
               },
               {
-                "url": "qualityCode",
+                "url": "role",
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
-                      "code": "TBD"
+                      "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                      "code": "owner"
                     }
                   ]
                 }
@@ -64,20 +62,26 @@ __Body__:
             ]
           }
         ],
-        "basedOn": [
+        "version": "5c93e177-4d2f-400e-a230-b0de7362ee0b",
+        "name": "1810bf0a-d65c-46bc-a0eb-c9c272616b97",
+        "status": "active",
+        "topic": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/8953"
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/definition-topic",
+                "code": "treatment"
+              }
+            ]
           }
         ],
-        "type": "audio",
-        "subject": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/37431"
-        },
-        "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/27105"
-        },
-        "content": {
-          "language": "en"
+        "code": {
+          "coding": [
+            {
+              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
+              "code": "TBD"
+            }
+          ]
         }
       }
     }

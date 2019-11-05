@@ -1,9 +1,9 @@
-`GET [base]/CareTeam/303`
+`GET [base]/CareTeam/295`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL0NhcmVUZWFtLnJlYWQiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjMzZDA0NWQtY2MzMy00MmFhLWE4MDAtNzUyMmI3ZTQ2MzMyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,23 +15,22 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "303",
+  "id": "295",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-09-18T05:59:19.664+00:00",
+    "lastUpdated": "2019-11-04T19:50:32.099+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "dca70c88-fc15-4cc7-a676-67b9be2302e1"
+      "id": "372ff45a-74d1-443e-beac-a7c7afb2abcf",
+      "system": "urn:ietf:rfc:3986"
     }
   ],
-  "name": "c8cc5972-aa63-4391-bd09-e31996245c00",
-  "subject": {
-    "reference": "http://local.ehealth.sundhed.dk/trifork-fhir-server/Patient/53197"
-  },
+  "status": "active",
+  "name": "039d16ff-4b02-4a3c-8cf2-ace93e2ff61a",
   "participant": [
     {
       "role": {
@@ -43,7 +42,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://local.ehealth.sundhed.dk/trifork-fhir-server/Patient/53197"
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/35909"
       }
     },
     {
@@ -56,7 +55,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/300"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/292"
       }
     },
     {
@@ -69,13 +68,23 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/302"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/294"
       }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/conditions",
+          "code": "TBD"
+        }
+      ]
     }
   ],
   "managingOrganization": [
     {
-      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/301"
+      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/293"
     }
   ]
 }

@@ -1,9 +1,9 @@
-`GET [base]/PlanDefinition?name=1bbcc50f-9c05-4b0c-abec-447ad6cc1354&_include%3Arecurse=*`
+`GET [base]/PlanDefinition?name=78017a75-b833-446e-a05a-3590d99f67f5&_include%3Arecurse=*`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24ucmVhZCIsIlBsYW5EZWZpbml0aW9uLnNlYXJjaCIsIlBsYW5EZWZpbml0aW9uLnJlYWQiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl0sInVzZXJUeXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJQbGFuRGVmaW5pdGlvbi5zZWFyY2giLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "4eedb3be-71fc-4ff7-9d98-7592778fdb6c",
+  "id": "1950c847-ed37-4fdd-88e2-0bc4c25e1f2e",
   "meta": {
-    "lastUpdated": "2019-09-18T08:02:57.759+00:00"
+    "lastUpdated": "2019-11-05T06:31:56.638+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition?_format=json&_include%3Arecurse=*&_pretty=true&name=1bbcc50f-9c05-4b0c-abec-447ad6cc1354"
+      "url": "http://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition?_format=json&_include%3Arecurse=*&_pretty=true&name=78017a75-b833-446e-a05a-3590d99f67f5"
     }
   ],
   "entry": [
@@ -35,7 +35,7 @@ __Response__
         "id": "119",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-09-18T08:02:57.401+00:00",
+          "lastUpdated": "2019-11-05T06:31:56.278+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
           ]
@@ -47,7 +47,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/65885"
+                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/56052"
                 }
               },
               {
@@ -64,13 +64,13 @@ __Response__
             ]
           }
         ],
-        "version": "1855a031-8c3a-4138-b6f9-34f76a945fb2",
-        "name": "1bbcc50f-9c05-4b0c-abec-447ad6cc1354",
+        "version": "7f6a66a2-3c04-4490-b339-67a5e626c96c",
+        "name": "78017a75-b833-446e-a05a-3590d99f67f5",
         "status": "active",
         "relatedArtifact": [
           {
             "type": "predecessor",
-            "display": "00923b33-5ed4-4d9f-b70d-ff09fe83f286",
+            "display": "c244a420-4b3e-4cbc-9d87-a0e88275acd8",
             "resource": {
               "reference": "http://plan.local.ehealth.sundhed.dk/fhir/DocumentReference/118"
             }
@@ -88,7 +88,7 @@ __Response__
         "id": "118",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-09-18T08:02:57.184+00:00",
+          "lastUpdated": "2019-11-05T06:31:56.072+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -102,7 +102,7 @@ __Response__
             }
           ]
         },
-        "indexed": "2019-09-18T10:02:57.169+02:00",
+        "indexed": "2019-11-05T07:31:56.063+01:00",
         "content": [
           {
             "attachment": {

@@ -1,9 +1,9 @@
-`GET [base]/CareTeam?status=active&date=ge2019-09-18T07%3A58%3A53%2B02%3A00`
+`GET [base]/CareTeam?status=active&date=ge2019-11-04T20%3A50%3A04%2B01%3A00&date=le2019-11-04T20%3A50%3A04%2B01%3A00`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL0NhcmVUZWFtLnJlYWQiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWQxZmNiNWEtZDJkOC00Y2EzLWJmODEtYmJjYjdjM2Q2NmNlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,68 +15,90 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "a0775902-1a36-4736-a848-d3d57f51029b",
+  "id": "e8d6b1e5-b335-420b-be1c-f0c5964c095a",
   "meta": {
-    "lastUpdated": "2019-09-18T05:58:54.075+00:00"
+    "lastUpdated": "2019-11-04T19:50:05.434+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam?_format=json&_pretty=true&date=ge2019-09-18T07%3A58%3A53%2B02%3A00&status=active"
+      "url": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam?_format=json&_pretty=true&date=ge2019-11-04T20%3A50%3A04%2B01%3A00&date=le2019-11-04T20%3A50%3A04%2B01%3A00&status=active"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/182",
+      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/170",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "182",
+        "id": "170",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-09-18T05:58:53.628+00:00",
+          "lastUpdated": "2019-11-04T19:50:04.804+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "b79f5628-11fa-4959-8b4f-9b2107cc7e20"
+            "id": "e400b109-1787-4d2c-a2d7-fc1c1e47964f",
+            "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "c1b6c67b-5f6c-4265-8d59-f100e1593456",
+        "name": "7f15b01d-4441-418f-a12b-7d57b2e4cfc0",
         "period": {
-          "end": "2019-09-18T07:58:53+02:00"
-        }
+          "end": "2019-11-04T20:50:04+01:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/conditions",
+                "code": "TBD"
+              }
+            ]
+          }
+        ]
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/183",
+      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/171",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "183",
+        "id": "171",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-09-18T05:58:53.786+00:00",
+          "lastUpdated": "2019-11-04T19:50:05.038+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "a24d8e0a-6868-4b63-9c7d-b1e0c96e51e2"
+            "id": "6aa17f49-b4b3-4bc8-b859-68bd8a574b2a",
+            "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "de29c363-f810-43ff-bed9-cfdf4ca33df4",
+        "name": "1a12ef6a-ff18-4a5f-a9ff-b4abef7ee087",
         "period": {
-          "end": "2019-09-18T07:58:53+02:00"
-        }
+          "end": "2019-11-04T20:50:04+01:00"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/conditions",
+                "code": "TBD"
+              }
+            ]
+          }
+        ]
       },
       "search": {
         "mode": "match"
