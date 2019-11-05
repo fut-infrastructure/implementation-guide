@@ -7,6 +7,6 @@
     <base value="Appointment" />
     <type value="reference" />
     <description value="Search parameter for finding responsible entity on Appointment" />
-    <expression value="Appointment.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').extension.where(url = 'actor')" />
+    <expression value="Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible')" />
     <xpathUsage value="normal" />
 </SearchParameter>
