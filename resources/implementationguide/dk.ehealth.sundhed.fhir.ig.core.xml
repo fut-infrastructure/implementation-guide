@@ -549,6 +549,11 @@
     </resource>
     <resource>
       <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-period"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-priority"/>
       </sourceReference>
     </resource>
@@ -560,6 +565,11 @@
     <resource>
       <sourceReference>
         <reference value="StructureDefinition/ehealth-ext-referencetype"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <sourceReference>
+        <reference value="StructureDefinition/ehealth-ext-title"/>
       </sourceReference>
     </resource>
     <resource>

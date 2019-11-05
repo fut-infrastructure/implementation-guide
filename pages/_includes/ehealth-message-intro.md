@@ -51,7 +51,7 @@ The following custom search parameters may be used when searching for ehealth-me
 - __restrictionCategory__: Specify the desired restriction category using system and code (eg. "http://ehealth.sundhed.dk/cs/restriction-category" and "measurement-monitoring")
 
 # Scope and Usage
-In the eHealth Infrastructure the Appointment resource is used in conjunction with the following resources:
+In the eHealth Infrastructure the ehealth-message resource is used in conjunction with the following resources:
 
 - Patient
   - As sender or recipient of a message
