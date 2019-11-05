@@ -30,6 +30,30 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="OperationDefinition/ehealth-careplan-suggest-care-teams"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-careplan-update-care-teams"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-episodeofcare-is-context-allowed"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-episodeofcare-update-care-teams"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="OperationDefinition/ehealth-patient-create"/>
       </sourceReference>
     </resource>
@@ -66,12 +90,6 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-system-is-context-allowed"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
         <reference value="OperationDefinition/ehealth-system-search-measurements"/>
       </sourceReference>
     </resource>
@@ -84,37 +102,19 @@
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-transform-to-observation"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
         <reference value="OperationDefinition/ehealth-transform-to-phmr"/>
       </sourceReference>
     </resource>
     <resource>
       <example value="false"/>
       <sourceReference>
-        <reference value="OperationDefinition/ehealth-transform-to-appointment"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="OperationDefinition/ehealth-transform-to-apd"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="OperationDefinition/ehealth-transform-to-questionnaire-response"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <example value="false"/>
-      <sourceReference>
         <reference value="OperationDefinition/ehealth-transform-to-qrd"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-transform-to-questionnaire"/>
       </sourceReference>
     </resource>
 
