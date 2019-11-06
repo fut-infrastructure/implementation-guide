@@ -39,6 +39,16 @@
 - profile: ehealth-activitydefinition
   path: PUT_ActivityDefinition.md
 
+# ehealth-appointment
+- profile: ehealth-appointment
+  path: POST_Appointment_7.md
+
+- profile: ehealth-appointment
+  path: GET_Appointment_5.md
+
+- profile: ehealth-appointment
+  path: PUT_Appointment_5.md
+
 # ehealth-careplan
 - profile: ehealth-careplan
   path: GET_CarePlan.md
@@ -287,6 +297,19 @@
 - profile: ehealth-media
   path: POST_Media_validate.md
 
+# ehealth-message
+- profile: ehealth-message
+  path: POST_Message_1.md
+
+- profile: ehealth-message
+  path: GET_Message_4.md
+
+- profile: ehealth-message
+  path: PATCH_Message_3.md
+
+- profile: ehealth-message
+  path: DELETE_Message_3.md
+
 # ehealth-observation
 - profile: ehealth-observation
   path: GET_Observation.md
@@ -318,7 +341,13 @@
 
 # ehealth-patient
 - profile: ehealth-patient
-  path: PATCH_Patient.md
+  path: POST_Patient_1.md
+
+- profile: ehealth-patient
+  path: GET_Patient_1.md
+
+- profile: ehealth-patient
+  path: PATCH_Patient_7.md
 
 # ehealth-plandefinition
 - profile: ehealth-plandefinition
@@ -417,6 +446,15 @@
   path: POST_QuestionnaireResponse_validate.md
 
 # ehealth-relatedperson
+
+- profile: ehealth-relatedperson
+  path: POST_RelatedPerson_1.md
+
+- profile: ehealth-relatedperson
+  path: PUT_RelatedPerson_1.md
+
+- profile: ehealth-relatedperson
+  path: DELETE_RelatedPerson_1.md
 
 # ehealth-task
 - profile: ehealth-task
