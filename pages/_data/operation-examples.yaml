@@ -487,3 +487,6 @@
 
 - profile: ehealth-videoappointment
   path: GET_Appointment_Video.md
+
+- profile: ehealth-videoappointment
+  path: PATCH_Appointment_Video.md
