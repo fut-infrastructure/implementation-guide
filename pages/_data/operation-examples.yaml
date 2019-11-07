@@ -480,3 +480,10 @@
 
 - profile: ehealth-task
   path: POST_Task_validate.md
+
+# ehealth-videoappointment
+- profile: ehealth-videoappointment
+  path: POST_Appointment_Video.md
+
+- profile: ehealth-videoappointment
+  path: GET_Appointment_Video.md
