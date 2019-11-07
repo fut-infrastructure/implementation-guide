@@ -454,6 +454,12 @@
   path: PUT_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
+  path: PATCH_RelatedPerson_1.md
+
+- profile: ehealth-relatedperson
+  path: GET_RelatedPerson_1.md
+
+- profile: ehealth-relatedperson
   path: DELETE_RelatedPerson_1.md
 
 # ehealth-task
