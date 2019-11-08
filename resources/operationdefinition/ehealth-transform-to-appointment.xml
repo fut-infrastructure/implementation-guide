@@ -1,0 +1,26 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="-s-transform-to-appointment"/>
+    <name value="transform-to-appointment"/>
+    <status value="active"/>
+    <kind value="operation"/>
+    <description value="Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."/>
+    <idempotent value="true"/>
+    <code value="transform-to-appointment"/>
+    <system value="true"/>
+    <type value="false"/>
+    <instance value="false"/>
+    <parameter>
+        <name value="documentReference"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="DocumentReference"/>
+    </parameter>
+    <parameter>
+        <name value="bundle"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>
