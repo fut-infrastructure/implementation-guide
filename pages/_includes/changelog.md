@@ -18,6 +18,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added specification of how Quantity and its defined variations should be used to General Guidance
 - Emptied FHIR Resources Slated for Use or Profiling on page Profiles
 - Removed descriptions of unused extensions `ehealth-author`, `ehealth-questionnaire-author`, and `ehealth-questionnaire-custodian`. 
+- Removed ehealth-appointmentresponse profile
+- Removed ehealth-detached-provenance (FUT1-2623 and FUT1-2734)
 
 ### Custom operations
 #### System operations
@@ -114,9 +116,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added FhirPath constraint that assert responsible is always part of the participants
 - Updated intro
 
-#### AppointmentResponse (ehealth-appointmentresponse)
-- References changed from general to ehealth-specific profiles
-
 #### CarePlan (ehealth-careplan)
 - Removed extension `responsibilitySummary`
 - Removed extension `responsibleHistory`
@@ -160,12 +159,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Consent (ehealth-consent)
 - Added general resource description
-
-#### Detached Provenance (ehealth-detached-provenance)
-- `agent.whoReference` and `target` now constrained to max 1
-- `target` constrained to only reference ehealth-message
-- `agent` can no longer reference RelatedPerson, Device, or Organisation
-- Removed profile for now (FUT1-2623 and FUT1-2734)
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
@@ -262,9 +255,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Task (ehealth-task)
 - Added extension `restriction-category`
 - Remove Organization as possible task-responsible
-
-#### Video appointment (ehealth-videoappointment)
-- Initial version
 
 ## 2019.5.3 (2019-06-07)
 
