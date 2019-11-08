@@ -49,6 +49,9 @@
 - profile: ehealth-appointment
   path: PUT_Appointment_5.md
 
+- profile: ehealth-appointment
+  path: PATCH_Appointment_5.md
+
 # ehealth-careplan
 - profile: ehealth-careplan
   path: GET_CarePlan.md
@@ -490,3 +493,6 @@
 
 - profile: ehealth-videoappointment
   path: PATCH_Appointment_Video.md
+
+- profile: ehealth-videoappointment
+  path: PUT_Appointment_Video.md

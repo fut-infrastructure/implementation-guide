@@ -102,6 +102,24 @@
     <resource>
       <example value="false"/>
       <sourceReference>
+        <reference value="OperationDefinition/ehealth-transform-to-apd"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-transform-to-appointment"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-transform-to-observation"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
         <reference value="OperationDefinition/ehealth-transform-to-phmr"/>
       </sourceReference>
     </resource>
@@ -115,6 +133,12 @@
       <example value="false"/>
       <sourceReference>
         <reference value="OperationDefinition/ehealth-transform-to-questionnaire"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="OperationDefinition/ehealth-transform-to-questionnaire-response"/>
       </sourceReference>
     </resource>
 
