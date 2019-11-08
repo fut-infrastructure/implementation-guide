@@ -7,7 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Added list of error messages
 - Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide)
-- Added capabilitystatement for `Care Plan Service`, `Device Service`, `Library Service`, `Document Transformation Service`, `Task Service` and `Plan Service`
+- Added capabilitystatement for `CarePlan Service`, `Device Service`, `Library Service`, `Document Transformation Service`, `Task Service` and `Plan Service`
 - Removed capabilitystatement for `Clinical Domain Stub - Systematic`
 - Updated `-s-create-episode-of-care` operation examples for `ehealth-episodeofcare`
 - Added description of message broker event messages
@@ -112,6 +112,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added 'responsible' extension
 - Added careteam as possible participant
 - Added FhirPath constraint that assert responsible is always part of the participants
+- Updated intro
 
 #### AppointmentResponse (ehealth-appointmentresponse)
 - References changed from general to ehealth-specific profiles
@@ -121,6 +122,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsibleHistory`
 - Removed extension `responsible`
 - Added extension `careTeamHistory`
+- Updated intro
 
 #### CareTeam (ehealth-careteam)
 - Added `reasonCode`
@@ -128,6 +130,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed cardinality of element `context` to 0..0
 - Changed cardinality of element `reasonReference` to 0..0
 - Changed cardinality of element `status` to 1..1
+- Updated intro
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
@@ -138,6 +141,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed option "Encounter" from `context`
 - Removed option "Group" from `subject`
 - Removed option "eHealth-Observation" from `finding.item`
+- Updated intro
 
 #### Communication (ehealth-communication)
 - Added extension `senderCareTeam`
@@ -148,9 +152,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added context reference to Encounter
 - Added PATCH example
 - Possible to use CareTeam as recipient using extension
+- Updated intro
 
 #### Composition (ehealth-composition)
 - Change so references can be bundled or contained
+- Updated intro
 
 #### Consent (ehealth-consent)
 - Added general resource description
@@ -168,6 +174,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsibleHistory`
 - Added extension `caremanagerOrganization`
 - Added extension `teamHistory`
+- Updated intro
 
 #### Library (ehealth-library)
 - Removed extension `basedOn`
@@ -196,6 +203,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
 - Observation.context reference to Encounter was added
 - Removed sharingPolicy extension
+- Updated intro
 
 #### Organization (ehealth-organization)
 - Added extension `cvrNumber`
@@ -224,14 +232,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### PlanDefinition (ehealth-plandefinition)
 - Removed `role`
+- Updated intro
 
 #### ProcedureRequest (ehealth-procedurerequest)
 - Added ehealth-reuseCriteria extension
 - Added sharingPolicy extension
+- Updated intro
 
 #### Provenance (ehealth-provenance)
 - Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
 - Added optional dateTimeOfReusedEntity
+- Updated intro
 
 #### Questionnaire (ehealth-questionnaire)
 - Removed `reuseCriteria` extension

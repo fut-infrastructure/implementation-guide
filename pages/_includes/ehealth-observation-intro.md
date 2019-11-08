@@ -16,7 +16,7 @@ In the eHealth Infrastructure the Observation resource is used in conjunction wi
   - Some activities may involve answering a Questionnaire. The answer is captured in a QuestionnaireResponse. Questionnaires can be used for standalone information about the health of the patient, or they can be used to provide context information for Observations.
 
 - Communication
-  - Communication resources can be used to annotate Observations. Recipient controls who has access to the annotations.
+  - Communication resources can be used to annotate Observations. See the profile ehealth-communication for further details.
 
 - Provenance
   - In certain circumstances data from Observations and QuestionnaireResponses can be reused. When this happens, a Provenance resource will identify the source of the original data.
@@ -27,7 +27,6 @@ Observations can be submitted using the submit-measurement operation. It is poss
 * Observations
 * Media
 * QuestionnaireResponses
-* Communications
 * Provenances
 
 The submit-measurement operation is intended for uploading single measurements, not bulk uploads. Uploading large batches of resources is considered misuse.
