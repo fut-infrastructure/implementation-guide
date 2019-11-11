@@ -24,6 +24,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - All `ConceptMap` migrated to `active` status
 
 ### Resource/profile changes
+- Added CommunicationRequest profile
 
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
