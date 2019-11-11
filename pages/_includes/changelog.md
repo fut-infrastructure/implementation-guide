@@ -2,7 +2,33 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 2019.6 (2019-11-08)
+## Unreleased
+
+### General changes
+
+### Custom operations
+
+#### System operations
+
+#### Instance operations
+
+### Code systems
+- All `CodeSystem` migrated to `active` status
+- Added `http://ehealth.sundhed.dk/cs/oio-organization-type`
+
+### ValueSets
+- All `ValueSet` migrated to `active` status
+- Added `http://ehealth.sundhed.dk/vs/oio-organization-type`
+
+### ConceptMaps
+- All `ConceptMap` migrated to `active` status
+
+### Resource/profile changes
+
+#### Message (ehealth-message)
+- Added "title" extension to allow message "subject"
+
+## 2019.6.1 (2019-11-08)
 
 ### General changes
 - Added list of error messages
@@ -189,7 +215,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Available search parameters added
 - Added administrative-status and period (part of discarding detached-provenance)
 - Restricted value set for status (ehealth-status)
-- Added "title" extension to allow message "subject"
 - Added "priority" extension with value set as specified in R4 spec (but not included in R3)
 
 #### Observation (ehealth-observation)
