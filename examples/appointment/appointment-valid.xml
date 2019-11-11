@@ -4,20 +4,10 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
     </meta>
     <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible">
-        <extension url="type">
-            <valueCodeableConcept>
-                <coding>
-                    <system value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
-                    <code value="monitoringResponsible"/>
-                </coding>
-            </valueCodeableConcept>
-        </extension>
-        <extension url="actor">
-            <valueReference>
-                <reference value="http://inttest.ehealth.sundhed.dk/CareTeam/42"/>
-                <display value="CareTeam Aarhus"/>
-            </valueReference>
-        </extension>
+        <valueReference>
+            <reference value="http://inttest.ehealth.sundhed.dk/CareTeam/42"/>
+            <display value="CareTeam Aarhus"/>
+        </valueReference>
     </extension>
     <status value='proposed'/>
     <appointmentType>
@@ -44,6 +34,21 @@
         <actor>
             <reference value="http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/123"/>
         </actor>
+        <status value="needs-action"/>
+    </participant>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="ATND"/>
+            </coding>
+        </type>
+        <extension url="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam">
+            <valueReference>
+                <reference value="http://inttest.ehealth.sundhed.dk/CareTeam/42"/>
+                <display value="CareTeam Aarhus"/>
+            </valueReference>
+        </extension>
         <status value="needs-action"/>
     </participant>
 </Appointment>

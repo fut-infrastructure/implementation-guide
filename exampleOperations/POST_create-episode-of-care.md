@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJzdWIiOiJodHRwOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1ByYWN0aXRpb25lci83ODQ2NCIsInBlcm1pc3Npb25zIjpbIkVwaXNvZGVPZkNhcmUuY3JlYXRlLWVwaXNvZGUtb2YtY2FyZSJdLCJwYXRpZW50Q29udGV4dElkIjoiaHR0cDovL3RyaWZvcmstZmhpci1zZXJ2ZXIubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL3RyaWZvcmstZmhpci1zZXJ2ZXIvUGF0aWVudC81NDk4NiIsInVzZXJUeXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QcmFjdGl0aW9uZXIvNTIzMTQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJGNyZWF0ZS1lcGlzb2RlLW9mLWNhcmUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlByb3ZlbmFuY2UucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,7 +22,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:32401951-a914-424b-945f-4423e8c0578e",
+            "fullUrl": "urn:uuid:c462d901-6b27-4d7e-8ecd-94a425ce9768",
             "resource": {
               "resourceType": "Provenance",
               "meta": {
@@ -32,17 +32,17 @@ __Body__:
               },
               "target": [
                 {
-                  "reference": "urn:uuid:0c7228e7-828b-46dc-be01-2a3e729d6b2a"
+                  "reference": "urn:uuid:8e9baf3d-305b-49d0-8e48-48ac8801f7c3"
                 }
               ],
-              "recorded": "2019-09-18T08:53:14.841+02:00",
+              "recorded": "2019-11-04T21:16:56.419+01:00",
               "policy": [
                 "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
               ],
               "agent": [
                 {
                   "whoReference": {
-                    "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/31427"
+                    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/77622"
                   }
                 }
               ]
@@ -53,7 +53,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:0c7228e7-828b-46dc-be01-2a3e729d6b2a",
+            "fullUrl": "urn:uuid:8e9baf3d-305b-49d0-8e48-48ac8801f7c3",
             "resource": {
               "resourceType": "EpisodeOfCare",
               "meta": {
@@ -65,7 +65,7 @@ __Body__:
                 {
                   "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
                   "valueReference": {
-                    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/56014"
+                    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/65615"
                   }
                 }
               ],
@@ -73,15 +73,15 @@ __Body__:
               "diagnosis": [
                 {
                   "condition": {
-                    "reference": "urn:uuid:8ec3461d-1a24-48c5-bd8f-c73dc1e92fc4"
+                    "reference": "urn:uuid:67affd71-64d5-49fa-9a18-2ee006d561f5"
                   }
                 }
               ],
               "patient": {
-                "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/54986"
+                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/8782"
               },
               "managingOrganization": {
-                "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/87888"
+                "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/8345"
               },
               "period": {
                 "start": "1970-01-01T01:00:01+01:00",
@@ -94,7 +94,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:8ec3461d-1a24-48c5-bd8f-c73dc1e92fc4",
+            "fullUrl": "urn:uuid:67affd71-64d5-49fa-9a18-2ee006d561f5",
             "resource": {
               "resourceType": "Condition",
               "meta": {
@@ -112,7 +112,7 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/54986"
+                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/8782"
               }
             },
             "request": {
@@ -136,33 +136,33 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/590/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/713/_history/1",
         "etag": "1",
-        "lastModified": "2019-09-18T06:53:14.902+00:00"
+        "lastModified": "2019-11-04T20:16:56.439+00:00"
       }
     },
     {
       "response": {
         "status": "201 Created",
-        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/591/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/714/_history/1",
         "etag": "1",
-        "lastModified": "2019-09-18T06:53:14.902+00:00"
+        "lastModified": "2019-11-04T20:16:56.439+00:00"
       }
     },
     {
       "response": {
         "status": "201 Created",
-        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/592/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/715/_history/1",
         "etag": "1",
-        "lastModified": "2019-09-18T06:53:14.902+00:00"
+        "lastModified": "2019-11-04T20:16:56.439+00:00"
       }
     },
     {
       "response": {
         "status": "201 Created",
-        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/593/_history/1",
+        "location": "http://careplan.local.ehealth.sundhed.dk/fhir/Provenance/716/_history/1",
         "etag": "1",
-        "lastModified": "2019-09-18T06:53:14.902+00:00"
+        "lastModified": "2019-11-04T20:16:56.439+00:00"
       }
     }
   ]

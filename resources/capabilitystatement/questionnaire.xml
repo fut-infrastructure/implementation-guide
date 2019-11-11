@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="questionnaire"/>
    <status value="active"/>
-   <date value="2019-09-18T10:37:58+00:00"/>
+   <date value="2019-11-04T12:30:33+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth questionnaire service"/>
-      <url value="http://questionnaire.local.ehealth.sundhed.dk/fhir"/>
+      <url value="http://questionnaire.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -149,11 +149,6 @@
             <documentation value="Modifier role"/>
          </searchParam>
          <searchParam>
-            <name value="situationQuality"/>
-            <type value="token"/>
-            <documentation value="Reuse situation quality"/>
-         </searchParam>
-         <searchParam>
             <name value="status"/>
             <type value="token"/>
             <documentation value="The current status of the questionnaire"/>
@@ -197,21 +192,15 @@
          </searchParam>
       </resource>
       <operation>
-         <name value="expunge"/>
+         <name value="validate"/>
          <definition>
-            <reference value="http://questionnaire.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+            <reference value="http://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://questionnaire.local.ehealth.sundhed.dk/fhir/OperationDefinition/Questionnaire--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://questionnaire.local.ehealth.sundhed.dk/fhir/OperationDefinition/Questionnaire-i-validate"/>
+            <reference value="http://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire--validate"/>
          </definition>
       </operation>
    </rest>

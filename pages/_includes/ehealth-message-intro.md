@@ -21,7 +21,8 @@ comes in four flavours depending on the "category" of the message:
 
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "topic" field, no 
 matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by
-assigning the same thread-id in the provided extension. The message subject may be provided in the title extension.
+assigning the same thread-id in the provided extension. The message subject may be provided in the title extension, and
+an optional priority may be provided in the ehealth-priority extension.
 
 # Remarks about status and administrative-status
 
@@ -50,7 +51,7 @@ The following custom search parameters may be used when searching for ehealth-me
 - __restrictionCategory__: Specify the desired restriction category using system and code (eg. "http://ehealth.sundhed.dk/cs/restriction-category" and "measurement-monitoring")
 
 # Scope and Usage
-In the eHealth Infrastructure the Appointment resource is used in conjunction with the following resources:
+In the eHealth Infrastructure the ehealth-message resource is used in conjunction with the following resources:
 
 - Patient
   - As sender or recipient of a message

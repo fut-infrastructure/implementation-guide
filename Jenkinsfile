@@ -10,7 +10,7 @@ def label = "${env.BUILD_TAG}".toLowerCase().replaceAll(/[^-\w]/, '-')
 
 podTemplate(label: label,
   containers: [
-    containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2019-09-19', command: 'cat', ttyEnabled: true)
+    containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2019-11-01', command: 'cat', ttyEnabled: true)
   ],
   imagePullSecrets: [
       'harbor'

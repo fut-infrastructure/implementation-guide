@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="measurement"/>
    <status value="active"/>
-   <date value="2019-09-18T07:50:40+00:00"/>
+   <date value="2019-11-04T12:31:46+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth measurement service"/>
-      <url value="http://measurement.local.ehealth.sundhed.dk/fhir"/>
+      <url value="http://measurement.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -30,7 +30,7 @@
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
             <code value="create"/>
@@ -39,7 +39,31 @@
             <code value="search-type"/>
          </interaction>
          <conditionalCreate value="true"/>
-         <conditionalUpdate value="true"/>
+         <searchParam>
+            <name value="context"/>
+            <type value="reference"/>
+            <documentation value="Encounter or episode leading to message"/>
+         </searchParam>
+         <searchParam>
+            <name value="recipient"/>
+            <type value="reference"/>
+            <documentation value="Message recipient"/>
+         </searchParam>
+         <searchParam>
+            <name value="recipientCareTeam"/>
+            <type value="reference"/>
+            <documentation value="Recipient care team"/>
+         </searchParam>
+         <searchParam>
+            <name value="sender"/>
+            <type value="reference"/>
+            <documentation value="Message sender"/>
+         </searchParam>
+         <searchParam>
+            <name value="senderCareTeam"/>
+            <type value="reference"/>
+            <documentation value="Sender care team"/>
+         </searchParam>
          <searchParam>
             <name value="subject"/>
             <type value="reference"/>
@@ -60,10 +84,16 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <searchInclude value="Provenance:target"/>
          <searchParam>
             <name value="_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Procedure that caused this media to be created"/>
          </searchParam>
          <searchParam>
             <name value="context"/>
@@ -110,6 +140,7 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <searchInclude value="Provenance:target"/>
          <searchParam>
             <name value="_content"/>
             <type value="string"/>
@@ -201,10 +232,16 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <searchInclude value="Provenance:target"/>
          <searchParam>
             <name value="authored"/>
             <type value="date"/>
             <documentation value="When the questionnaire response was last changed"/>
+         </searchParam>
+         <searchParam>
+            <name value="based-on"/>
+            <type value="reference"/>
+            <documentation value="Plan/proposal/order fulfilled by this questionnaire response"/>
          </searchParam>
          <searchParam>
             <name value="context"/>
@@ -252,79 +289,61 @@
       <operation>
          <name value="submit-measurement"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-submit-measurement"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-submit-measurement"/>
          </definition>
       </operation>
       <operation>
          <name value="search-measurements"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-search-measurements"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Communication-i-validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Communication--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Communication--validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Communication-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Media--validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Media-i-validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Observation--validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Observation-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Observation-i-validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Observation--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Provenance--validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/Provenance-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://measurement.local.ehealth.sundhed.dk/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
+            <reference value="http://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
          </definition>
       </operation>
    </rest>

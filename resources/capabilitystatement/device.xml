@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="device"/>
     <status value="active"/>
-    <date value="2019-09-18T07:12:30+00:00"/>
+    <date value="2019-11-04T17:41:58+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="device"/>
-        <version value="0.1.0"/>
+        <version value="1.0.0"/>
     </software>
     <implementation>
         <description value="eHealth device service"/>
-        <url value="http://device.local.ehealth.sundhed.dk/fhir"/>
+        <url value="http://device.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -380,21 +380,15 @@
             </searchParam>
         </resource>
         <operation>
-            <name value="expunge"/>
+            <name value="validate"/>
             <definition>
-                <reference value="http://device.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+                <reference value="http://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Device--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://device.local.ehealth.sundhed.dk/fhir/OperationDefinition/Device--validate"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://device.local.ehealth.sundhed.dk/fhir/OperationDefinition/DeviceUseStatement--validate"/>
+                <reference value="http://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceUseStatement--validate"/>
             </definition>
         </operation>
     </rest>

@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="plan"/>
     <status value="active"/>
-    <date value="2019-09-18T08:05:54+00:00"/>
+    <date value="2019-11-04T12:37:56+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
@@ -10,7 +10,7 @@
     </software>
     <implementation>
         <description value="eHealth plan service"/>
-        <url value="http://plan.local.ehealth.sundhed.dk/fhir"/>
+        <url value="http://plan.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -433,6 +433,7 @@
             <searchInclude value="PlanDefinition:composed-of"/>
             <searchInclude value="PlanDefinition:depends-on"/>
             <searchInclude value="PlanDefinition:derived-from"/>
+            <searchInclude value="PlanDefinition:documentation"/>
             <searchInclude value="PlanDefinition:predecessor"/>
             <searchInclude value="PlanDefinition:successor"/>
             <searchParam>
@@ -504,6 +505,11 @@
                 <name value="description"/>
                 <type value="string"/>
                 <documentation value="The description of the plan definition"/>
+            </searchParam>
+            <searchParam>
+                <name value="documentation"/>
+                <type value="reference"/>
+                <documentation value="What resource is being referenced"/>
             </searchParam>
             <searchParam>
                 <name value="effective"/>
@@ -609,51 +615,45 @@
             </searchParam>
         </resource>
         <operation>
-            <name value="expunge"/>
+            <name value="validate"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/ActivityDefinition-i-validate"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/ActivityDefinition--validate"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/DocumentReference-i-validate"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/DocumentReference--validate"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--validate"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="validate"/>
+            <definition>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="apply"/>
             <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-apply"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-validate"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="validate"/>
-            <definition>
-                <reference value="http://plan.local.ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition--validate"/>
+                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
             </definition>
         </operation>
     </rest>

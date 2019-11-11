@@ -1,9 +1,9 @@
-`POST [base]/CareTeam/68/$validate`
+`POST [base]/CareTeam`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJ1c2VyL0NhcmVUZWFtLnJlYWQiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmQ0YTI1NmYtY2JiOS00NjBmLWFlMDItYTYwYWExNTcyNWIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -13,27 +13,74 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType": "CareTeam",
+  "meta": {
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
+    ]
+  },
+  "identifier": [
     {
-      "name": "resource",
-      "resource": {
-        "resourceType": "CareTeam",
-        "id": "68",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-09-18T05:58:13.560+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
-          ]
-        },
-        "identifier": [
+      "id": "53b0e5cf-5146-4653-8b21-4a5b9d42eb66",
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "active",
+  "name": "fb3c93e0-5822-4fad-9a4c-ae4b3d870404",
+  "participant": [
+    {
+      "role": {
+        "coding": [
           {
-            "id": "ff1fb454-7354-42a2-b5c8-e70b1a16da06"
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
           }
-        ],
-        "name": "5ecedaf2-0b53-4ea5-a8e9-bff8f5198d80"
+        ]
+      },
+      "member": {
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/55488"
       }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
+          }
+        ]
+      },
+      "member": {
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/22118"
+      }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
+          }
+        ]
+      },
+      "member": {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/5"
+      }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/conditions",
+          "code": "TBD"
+        }
+      ]
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/6"
     }
   ]
 }
@@ -42,21 +89,77 @@ __Body__:
 __Response__
 ```json
 {
-  "resourceType": "OperationOutcome",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+  "resourceType": "CareTeam",
+  "id": "7",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-11-04T19:49:14.328+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
+    ]
   },
-  "issue": [
+  "identifier": [
     {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
+      "id": "53b0e5cf-5146-4653-8b21-4a5b9d42eb66",
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "active",
+  "name": "fb3c93e0-5822-4fad-9a4c-ae4b3d870404",
+  "participant": [
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
+          }
+        ]
+      },
+      "member": {
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/55488"
+      }
     },
     {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
+      "role": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
+          }
+        ]
+      },
+      "member": {
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/22118"
+      }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+            "code": "monitoringResponsible"
+          }
+        ]
+      },
+      "member": {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/5"
+      }
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/conditions",
+          "code": "TBD"
+        }
+      ]
+    }
+  ],
+  "managingOrganization": [
+    {
+      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/6"
     }
   ]
 }

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJBY3Rpdml0eURlZmluaXRpb24udXBkYXRlIiwic3lzdGVtLyR0ZXN0LW9ubHktY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdLCJ1c2VyVHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,12 +18,23 @@ __Response__
   "id": "6",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-09-18T08:02:09.636+00:00",
+    "lastUpdated": "2019-11-05T06:31:13.246+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
   },
   "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
       "valueCodeableConcept": {
@@ -38,7 +49,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/74129"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/44385"
       }
     },
     {
@@ -47,7 +58,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/7502"
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/21391"
           }
         },
         {
@@ -117,10 +128,60 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+      "extension": [
+        {
+          "url": "allowed",
+          "valueBoolean": true
+        },
+        {
+          "url": "situationQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                "code": "Unknown"
+              }
+            ]
+          }
+        },
+        {
+          "url": "usageQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "deviceMeasuringQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "dataActuality",
+          "valueDuration": {
+            "value": -2087209474,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
     }
   ],
-  "version": "87fe9d91-c198-4a39-8d83-281f534f0e76",
-  "name": "6daff3a2-315d-41ea-a6a9-2bb086d030fb",
+  "version": "cbde3933-58a3-456e-8dbf-ec7e94a3d6cb",
+  "name": "ec3ab96e-1cff-4f85-93b7-2298f9bc751f",
   "status": "active",
   "topic": [
     {

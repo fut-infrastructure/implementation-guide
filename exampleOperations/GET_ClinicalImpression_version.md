@@ -1,9 +1,9 @@
-`GET [base]/ClinicalImpression/25/_history/1`
+`GET [base]/ClinicalImpression/26/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJzdWIiOiJodHRwOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1ByYWN0aXRpb25lci80NTAyOCIsInBlcm1pc3Npb25zIjpbIkNsaW5pY2FsSW1wcmVzc2lvbi5yZWFkIl0sInBhdGllbnRDb250ZXh0SWQiOiJodHRwOi8vbG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL3RyaWZvcmstZmhpci1zZXJ2ZXIvUGF0aWVudC84NTgyNiIsImVwaXNvZGVPZkNhcmVDb250ZXh0SWQiOiJodHRwOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS82NDYzMSIsImNhcmVUZWFtQ29udGV4dElkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9DYXJlVGVhbS80NDM5NiIsInVzZXJUeXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QcmFjdGl0aW9uZXIvODMyMTQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9DYXJlVGVhbS84NTM0NyIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHA6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzI1OTU2IiwicGF0aWVudF9pZCI6Imh0dHA6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvNzk1NyJ9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "25",
+  "id": "26",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-09-18T08:17:12.429+00:00",
+    "lastUpdated": "2019-11-04T19:57:59.517+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
       "valueReference": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/19660"
+        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/22262"
       }
     }
   ],
@@ -41,10 +41,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://local.ehealth.sundhed.dk/trifork-fhir-server/Patient/85826"
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/7957"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/64631"
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/25956"
   }
 }
 ```

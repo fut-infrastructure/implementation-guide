@@ -17,37 +17,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension">
-      <path value="Extension" />
-      <short value="Individuals, careteam and/or organization responsible for monitoring this plan." />
-      <definition value="Individuals, careteam and/or organization who was responsible for monitoring this plan in the specified period" />
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
     </element>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:actor">
-      <path value="Extension.extension" />
-      <sliceName value="actor" />
-      <short value="Responsible actor" />
-      <definition value="Responsible actor" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:actor.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="actor" />
-    </element>
-    <element id="Extension.extension:actor.value[x]:valueReference">
-      <path value="Extension.extension.value[x]" />
+    <element id="Extension.value[x]:valueReference">
+      <path value="Extension.value[x]" />
       <sliceName value="valueReference" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
@@ -63,14 +39,6 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
         <aggregation value="referenced" />
       </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

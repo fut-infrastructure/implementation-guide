@@ -11,14 +11,14 @@ Once a PlanDefinition and all the PlanDefinition, ActivityDefinition, and Questi
 ### Governance principles
 PlanDefinitions (subplans), Questionnaires and ActivityDefinitions can be modified independently. Often by people in different organisations. PlanDefinitions (subplans), Questionnaires and ActivityDefinitions, can all be reused in different top level PlanDefinitions.
 
-The folowing principles ensures that the owner of a resource can make controlled updates when resources maintained by other organisations are updated.
+The following principles ensures that the owner of a resource can make controlled updates when resources maintained by other organisations are updated.
 
 These principles are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires. Plan is used as an example in the following principles:
 
 * Each plan has a version and a status
 * While a plan version is being worked on it should be in status: *draft*
-* When a plan version is approved it changes status to *active* and is now ready to be used by Careplans or as a subplan in another plan.
-* A plan with status: *active* can be *retired*, but cannot otherwise change. *Retired* status means that new references to the plan cannot be created. Existing plans may still continue to use the retired version.
+* When a plan version is approved it changes status to *active* and is now ready to be used by CarePlans or as a subplan in another plan.
+* A plan with status: *active* can be *retired*, but cannot otherwise change. Status *retired* means that new references to the plan cannot be created. Existing plans may still continue to use the retired version.
 * If a plan needs to be updated, a new version must be created with status: *draft*. The new version will be a separate resource with a new id and version, but the same name as the previous version.
 * References to plans in FHIR are always to a specific resource id. In practice this means that a reference will identify a specific (Name, Version) combination.
 * If a subplan is available in a new active version, that the parent plan wants to use, then a new version of the parent plan must be created and then the reference can be updated to the new subplan.
@@ -31,11 +31,14 @@ Example: A new ActivityDefinition should be added to an existing PlanDefinition.
 4. Call Create with the modified plan. This will create a new version of the plan in the database with the new ActivityDefinition added.
 
 ### Update restrictions
-These restrictions are valid for PlanDefinitions, ActivityDefinitions, and Questionnaires:
-
-* The Practitioner, CareTeam or Organization referenced by `ehealth-modifier-role.reference` having `ehealth-modifier-role.role` set to `owner` can update the resource and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors. This is in contrast to the entities referenced where the `ehealth-modifier-role.role` is set to co-author, who can update the resource but not alter `ehealth-modifier-role`.
-* The *owner* of the resource can always update the resource.
-* intendedAudience is a recommendation for use. The system will not enforce any restrictions.
+The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
+the PlanDefinition:
+ 
+ * `ehealth-modifier-role.reference` references the Organization
+ * `ehealth-modifier-role.role` set to `owner` means that the referenced Organization can update the resource 
+ and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors.
+ * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
+  but not alter the element `ehealth-modifier-role`.
 
 ### Referencing information material
 PlanDefinitions can reference information material intended for [Practitioner](StructureDefinition-ehealth-practitioner.html), [Patient](StructureDefinition-ehealth-patient.html) or [RelatedPerson](StructureDefinition-ehealth-relatedperson.html). The material can be in the form of embedded material (of reasonable size) or referenced videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.

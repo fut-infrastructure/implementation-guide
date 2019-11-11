@@ -4,3 +4,8 @@ ProcedureRequest is a record of a request for a procedure to be planned, propose
 # Scope and Usage
 In scope of the eHealth infrastructure ProcedureRequests are used with CarePlans to express actual measurement activities to be performed by a Patient in the context of a CarePlan.
 
+The eHealth profile of ProcedureRequest has the following extensions:
+* `ehealth-reuseCriteria` which defines whether resource(s) resulting from conducting the activity, typically measurements or answering of Questionnaire may be reused and if so with which criteria. These are copied from the ActivityDefinition referenced in `definition` and can subsequently be adjusted to suit the particular Patient context 
+* `ehealth-referenceRange` can contain one or more reference ranges against which values in measurements (resource(s)
+ resulting from conducting the activity) can be compared. These are copied from the ActivityDefinition referenced in `definition` and can subsequently be adjusted to suit the particular Patient context
+* `ehealth-sharingPolicy` sets a stance on whether publication to national document sharing of the measurements (resource(s) resulting from conducting the activity) shall be allowed or not. The value is copied from the ActivityDefinition referenced in `definition` and can subsequently be adjusted to suit the particular Patient context.

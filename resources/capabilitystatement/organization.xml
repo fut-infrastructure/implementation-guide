@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="organization"/>
    <status value="active"/>
-   <date value="2019-09-18T06:41:46+00:00"/>
+   <date value="2019-11-04T12:38:04+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth organization service"/>
-      <url value="http://organization.local.ehealth.sundhed.dk/fhir"/>
+      <url value="http://organization.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -53,6 +53,7 @@
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
+         <searchInclude value="CareTeam:managingOrganization"/>
          <searchInclude value="CareTeam:participant"/>
          <searchInclude value="CareTeam:subject"/>
          <searchParam>
@@ -126,6 +127,11 @@
             <documentation value="External Ids for this team"/>
          </searchParam>
          <searchParam>
+            <name value="managingOrganization"/>
+            <type value="reference"/>
+            <documentation value="Managing organization of a care team"/>
+         </searchParam>
+         <searchParam>
             <name value="participant"/>
             <type value="reference"/>
             <documentation value="Who is involved"/>
@@ -134,6 +140,11 @@
             <name value="patient"/>
             <type value="reference"/>
             <documentation value="Who care team is for"/>
+         </searchParam>
+         <searchParam>
+            <name value="reasonCode"/>
+            <type value="token"/>
+            <documentation value="Reason care team exists"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
@@ -497,85 +508,79 @@
       <operation>
          <name value="import-organizations"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-import-organizations"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations"/>
          </definition>
       </operation>
       <operation>
          <name value="expunge"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam--expunge"/>
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
+         <name value="expunge"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-i-validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-expunge"/>
          </definition>
       </operation>
       <operation>
-         <name value="validate"/>
+         <name value="meta"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam--validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam--meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-i-meta-add"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam--meta"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/Organization--validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/Organization-i-validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/Practitioner--validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/Practitioner-i-validate"/>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="http://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
          </definition>
       </operation>
    </rest>

@@ -2,12 +2,12 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2019.6 (2019-11-08)
 
 ### General changes
 - Added list of error messages
 - Added missing operations in operations tables for capability statements (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide)
-- Added capabilitystatement for `Care Plan Service`, `Device Service`, `Library Service`, `Document Transformation Service`, `Task Service` and `Plan Service`
+- Added capabilitystatement for `CarePlan Service`, `Device Service`, `Library Service`, `Document Transformation Service`, `Task Service` and `Plan Service`
 - Removed capabilitystatement for `Clinical Domain Stub - Systematic`
 - Updated `-s-create-episode-of-care` operation examples for `ehealth-episodeofcare`
 - Added description of message broker event messages
@@ -18,6 +18,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added specification of how Quantity and its defined variations should be used to General Guidance
 - Emptied FHIR Resources Slated for Use or Profiling on page Profiles
 - Removed descriptions of unused extensions `ehealth-author`, `ehealth-questionnaire-author`, and `ehealth-questionnaire-custodian`. 
+- Removed ehealth-appointmentresponse profile
+- Removed ehealth-detached-provenance (FUT1-2623 and FUT1-2734)
 
 ### Custom operations
 #### System operations
@@ -29,7 +31,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Instance operations
 ### Code systems
-- All `CodeSystem` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/cs/library-type` defining code `automated-processing`
 - Added `http://ehealth.sundhed.dk/cs/device-safety`
 - Added `http://ehealth.sundhed.dk/cs/device-calibration-period`
@@ -67,10 +68,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new codes `550891000005100`, `398070004`, `550811000005108`, `557511000005107`, `550411000005105`, `264372000`, `557501000005109`, `554851000005102`, `557531000005103`, `20078004`, `722173008`, `554221000005108`, `554031000005103`, `546821000005103`, `702871004`, `554061000005105`, `276037005`, `550861000005106`, `547011000005103`, `546811000005109`, `554881000005108`, `554861000005100`, `554821000005109`, `550621000005101`, `702824005`, `557591000005104`, `554411000005101`, `550631000005103`, `550641000005106`, `557521000005101`, `557561000005105`, `557541000005106`, `550651000005108`, `550661000005105`, `557581000005102`, `557671000005101`, `42665001`, `554211000005102`, `554871000005105`, `550711000005101`, `556841000005105`, `550821000005102`, `550671000005100`, `264361005`, `554041000005106`, `554021000005101`, `703069008`, `550681000005102`, `550691000005104`, `550701000005104`, `554231000005106`, `554051000005108`, `550871000005101`, `554241000005103`, `309964003`, `550841000005107`, `309904001`, `551611000005102`, `309939001`, `225728007`, `554071000005100`, `550831000005104`, `255203001`, `449171008`, `448225001` to `http://snomed.info/sct`
 - Added new specialty codes `394537008`, `394577000`, `394579002`, `394580004`, `394581000`, `394582007`, `394583002`, `394584008`, `394585009`, `394587001`, `394588006`, `394589003`, `394591006`, `394592004`, `394594003`, `394596001`, `394600006`, `394601005`, `394603008`, `394604002`, `394605001`, `394608004`, `394609007`, `394610002`, `394611003`, `394612005`, `394801008`, `394803006`, `394805004`, `394807007`, `394809005`, `394810000`, `394811001`, `394812008`, `394821009`, `394914008`, `394915009`, `408443003`, `408448007`, `408454008`, `408463005`, `408472002`, `418112009`, `419192003`, `421661004`, `551411000005104`, `554011000005107`, `773568002` to `http://snomed.info/sct`
 - Changed `http://ehealth.sundhed.dk/cs/derived-quality-base` so the codes are not in all caps
-- Added `http://ehealth.sundhed.dk/cs/oio-organization-type`
 
 ### ValueSets
-- All `ValueSet` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/vs/library-type` including code `automated-processing`
 - Added `http://ehealth.sundhed.dk/vs/device-measurement-unit` 
 - Added `http://ehealth.sundhed.dk/vs/device-safety`
@@ -100,46 +99,37 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `PITEOC` to `http://ehealth.sundhed.dk/vs/consent-category`
 - Added SNOMED CT codes `449171008` and `448225001` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
 - Changed `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies` added new policy : `http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen`
-- Added `http://ehealth.sundhed.dk/vs/oio-organization-type`
-
-### ConceptMaps
-- All `ConceptMap` migrated to `active` status
 
 ### Resource/profile changes
-
-#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
-- Renamed to `ehealth-reuseCriteria`
-
-#### ReuseCriteria (ehealth-reuseCriteria)
-- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
-- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
-- Renamed `operationQuality` to `usageQuality`
-- Renamed `dataQuality` to `deviceMeasuringQuality`
-
-#### Questionnaire (ehealth-questionnaire)
-- Removed `reuseCriteria` extension
-
-#### Observation (ehealth-observation)
-- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Observation.context reference to Encounter was added
-- Removed sharingPolicy extension
 
 #### ActivityDefinition (ehealth-activitydefinition)
 - Added ehealth-reuseCriteria extension
 - Added sharingPolicy extension
 
-#### ProcedureRequest (ehealth-procedurerequest)
-- Added ehealth-reuseCriteria extension
-- Added sharingPolicy extension
+#### Appointment (ehealth-appointment & ehealth-videoappointment)
+- Location is no longer required
+- Changed description due to new cardinalities
+- Added CodeSystem for appointmentType, updated example accordingly
+- Added ValueSet "ehealth-appointment-reason"
+- Added 'responsible' extension
+- Added careteam as possible participant
+- Added FhirPath constraint that assert responsible is always part of the participants
+- Updated intro
 
 #### CarePlan (ehealth-careplan)
 - Removed extension `responsibilitySummary`
 - Removed extension `responsibleHistory`
 - Removed extension `responsible`
 - Added extension `careTeamHistory`
+- Updated intro
 
-#### Composition (ehealth-composition)
-- Change so references can be bundled or contained
+#### CareTeam (ehealth-careteam)
+- Added `reasonCode`
+- Changed cardinality of element `subject` to 0..0
+- Changed cardinality of element `context` to 0..0
+- Changed cardinality of element `reasonReference` to 0..0
+- Changed cardinality of element `status` to 1..1
+- Updated intro
 
 #### ClinicalImpression (ehealth-clinicalimpression)
 - Added extension `careplan`
@@ -150,30 +140,25 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed option "Encounter" from `context`
 - Removed option "Group" from `subject`
 - Removed option "eHealth-Observation" from `finding.item`
+- Updated intro
 
-#### Library (ehealth-library)
-- Removed extension `basedOn`
-- Removed extension `parameterBinding`
-- Removed extension `parameterName`
-- Updated general resource description
-- Changed `Library.type` value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
+#### Communication (ehealth-communication)
+- Added extension `senderCareTeam`
+- Added extension `restrictionCategory`
+- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
+- Changed cardinality of element `sender` to 0..1
+- References to organization were removed from 'sender' and 'recipient'
+- Added context reference to Encounter
+- Added PATCH example
+- Possible to use CareTeam as recipient using extension
+- Updated intro
 
-#### Task (ehealth-task)
-- Added extension `restriction-category`
-- Remove Organization as possible task-responsible
+#### Composition (ehealth-composition)
+- Change so references can be bundled or contained
+- Updated intro
 
 #### Consent (ehealth-consent)
 - Added general resource description
-
-#### Provenance (ehealth-provenance)
-- Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
-- Added optional dateTimeOfReusedEntity
-
-#### Provenance (ehealth-detached-provenance)
-- `agent.whoReference` and `target` now constrained to max 1
-- `target` constrained to only reference ehealth-message
-- `agent` can no longer reference RelatedPerson, Device, or Organisation
-- Removed profile for now (FUT1-2623 and FUT1-2734)
 
 #### EpisodeOfCare (ehealth-episodeofcare)
 - Removed extension `careManagers`
@@ -182,6 +167,36 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed extension `responsibleHistory`
 - Added extension `caremanagerOrganization`
 - Added extension `teamHistory`
+- Updated intro
+
+#### Library (ehealth-library)
+- Removed extension `basedOn`
+- Removed extension `parameterBinding`
+- Removed extension `parameterName`
+- Updated general resource description
+- Changed `Library.type` value set reference to `http://ehealth.sundhed.dk/vs/library-type` - to allow value `automated-processing`. Changed to be required.
+
+#### Media (ehealth-media)
+- Removed sharingPolicy extension
+- Changed cardinality of element `occurence[x]` to 1..1
+
+#### Message (ehealth-message)
+- Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
+- Only one recipient is allowed
+- Device added as possibility for sender
+- CareTeam removed as possible recipient (profiling defect, extension must be used instead)
+- Legal PATCH operations described
+- Available search parameters added
+- Added administrative-status and period (part of discarding detached-provenance)
+- Restricted value set for status (ehealth-status)
+- Added "title" extension to allow message "subject"
+- Added "priority" extension with value set as specified in R4 spec (but not included in R3)
+
+#### Observation (ehealth-observation)
+- Observation.referenceRange.type was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Observation.context reference to Encounter was added
+- Removed sharingPolicy extension
+- Updated intro
 
 #### Organization (ehealth-organization)
 - Added extension `cvrNumber`
@@ -198,17 +213,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Renamed extension element `contact.telecom.value` to `contact.telecom.telecomValue` 
 - Changed cardinality of extension element `contact.telecom.telecomValue` inside extension to min 1
 
-#### Communication (ehealth-message)
-- Added CareTeam as recipient/sender option and changed sender/recipient requirement to 0
-- Only one recipient is allowed
-- Device added as possibility for sender
-- CareTeam removed as possible recipient (profiling defect, extension must be used instead)
-- Legal PATCH operations described
-- Available search parameters added
-- Added administrative-status and period (part of discarding detached-provenance)
-- Restricted value set for status (ehealth-status)
-- Added "title" extension to allow message "subject"
-
 #### Patient (ehealth-patient)
 - Added PATCH example
 - Added municipality code CodeSystem (DK: kommunekoder)
@@ -219,46 +223,38 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed referenced resources to use aggregation type "referenced"
 - Removed functional-capacity extension (not to be used for now)
 
-#### Appointment (ehealth-appointment)
-- Location is no longer required
-- Changed description due to new cardinalities
-- Added CodeSystem for appointmentType, updated example accordingly
-- Added ValueSet "ehealth-appointment-reason"
+#### PlanDefinition (ehealth-plandefinition)
+- Removed `role`
+- Updated intro
 
-#### Media (ehealth-media)
-- Removed sharingPolicy extension
-- Changed cardinality of element `occurence[x]` to 1..1
+#### ProcedureRequest (ehealth-procedurerequest)
+- Added ehealth-reuseCriteria extension
+- Added sharingPolicy extension
+- Updated intro
+
+#### Provenance (ehealth-provenance)
+- Added value set link for element `Provenance.agent.role` (issue fixed by new release of IG Publisher tool used for generating this Implementation Guide) 
+- Added optional dateTimeOfReusedEntity
+- Updated intro
+
+#### Questionnaire (ehealth-questionnaire)
+- Removed `reuseCriteria` extension
+
+#### Questionnaire reuseCriteria (ehealth-questionnaire-reuseCriteria)
+- Renamed to `ehealth-reuseCriteria`
 
 #### QuestionnaireResponse (ehealth-questionnaireresponse)
 - Changed cardinality of element `authored` to 1..1
 
-#### Communication (ehealth-communication)
-- Added extension `senderCareTeam`
-- Added extension `restrictionCategory`
-- Changed category to 'http://ehealth.sundhed.dk/vs/communication-category'
-- Changed cardinality of element `sender` to 0..1
-- References to organization were removed from 'sender' and 'recipient'
-- Added context reference to Encounter
-- Added PATCH example
-- Possible to use CareTeam as recipient using extension
+#### ReuseCriteria (ehealth-reuseCriteria)
+- Removed `dataActuality` (integer) & `dataActualityUnit` (timing)
+- Added `dataActuality` (1 .. 1) consisting of a FHIR Duration.
+- Renamed `operationQuality` to `usageQuality`
+- Renamed `dataQuality` to `deviceMeasuringQuality`
 
-#### Communication (ehealth-correspondance)
-- Removed from IG as per customer request
-
-#### AppointmentResponse (ehealth-appointmentresponse)
-- References changed from general to ehealth-specific profiles
-
-#### PlanDefinition (ehealth-plandefinition)
-- Removed `role`
-
-#### CareTeam (ehealth-careteam)
-- Added `reasonCode`
-- Changed cardinality of element `subject` to 0..0
-- Changed cardinality of element `context` to 0..0
-- Changed cardinality of element `reasonReference` to 0..0
-
-#### Video appointment (ehealth-videoappointment)
-- Initial version
+#### Task (ehealth-task)
+- Added extension `restriction-category`
+- Remove Organization as possible task-responsible
 
 ## 2019.5.3 (2019-06-07)
 

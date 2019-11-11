@@ -88,7 +88,6 @@
     <element id="Communication.extension:administrativeStatus">
       <path value="Communication.extension" />
       <sliceName value="administrativeStatus" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -99,13 +98,33 @@
       <path value="Communication.extension" />
       <sliceName value="title" />
       <short value="Message title" />
-      <definition value="Message title." />
-      <min value="0" />
+      <definition value="Message title" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-title" />
       </type>
+    </element>
+    <element id="Communication.extension:priority">
+      <path value="Communication.extension" />
+      <sliceName value="priority" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-priority" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/priority" />
+      </binding>
+    </element>
+    <element id="Communication.extension:priority.valueCode:valueCode">
+      <path value="Communication.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/priority" />
+      </binding>
     </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
@@ -144,11 +163,9 @@
     </element>
     <element id="Communication.status">
       <path value="Communication.status" />
-      <short value="preparation | aborted | completed " />
+      <short value="preparation | aborted | completed" />
+      <definition value="The status of the transmission" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationStatus" />
-        </extension>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/event-status" />
       </binding>

@@ -1,9 +1,9 @@
-`POST [base]/ProcedureRequest/$validate`
+`POST [base]/QuestionnaireResponse/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2FiZmE5MDYtM2U4MS00MWI3LWI1YTAtZTYzODMzM2Q3N2Y3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,33 +18,30 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "QuestionnaireResponse",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
-        "definition": [
+        "basedOn": [
           {
-            "reference": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/96874"
+            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/56602"
           }
         ],
-        "status": "completed",
-        "intent": "filler-order",
-        "code": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-              "code": "TBD"
-            }
-          ],
-          "text": "9be7577d-66c1-4be9-93d6-d36a7529ecd8"
+        "questionnaire": {
+          "reference": "http://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/39145"
         },
+        "status": "completed",
         "subject": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/34818"
+          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/64616"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/683"
+          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/91965"
+        },
+        "authored": "2019-11-05T07:23:20+01:00",
+        "source": {
+          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/33894"
         }
       }
     }

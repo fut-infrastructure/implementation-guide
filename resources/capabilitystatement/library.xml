@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="library"/>
     <status value="active"/>
-    <date value="2019-09-18T07:32:27+00:00"/>
+    <date value="2019-11-04T12:50:41+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
@@ -10,7 +10,7 @@
     </software>
     <implementation>
         <description value="eHealth library service"/>
-        <url value="http://library.local.ehealth.sundhed.dk/fhir"/>
+        <url value="http://library.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -204,27 +204,21 @@
             </searchParam>
         </resource>
         <operation>
-            <name value="expunge"/>
-            <definition>
-                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge"/>
-            </definition>
-        </operation>
-        <operation>
             <name value="evaluate"/>
             <definition>
-                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library-i-evaluate"/>
+                <reference value="http://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-i-evaluate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library-i-validate"/>
+                <reference value="http://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://library.local.ehealth.sundhed.dk/fhir/OperationDefinition/Library--validate"/>
+                <reference value="http://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-i-validate"/>
             </definition>
         </operation>
     </rest>

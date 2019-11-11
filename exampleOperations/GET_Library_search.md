@@ -1,9 +1,9 @@
-`GET [base]/Library?name=444e1095-65e9-48d8-aef7-d09736dc13e5`
+`GET [base]/Library?name=b6ecba57-cdfa-425e-a449-409de0100d2d`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJMaWJyYXJ5LnNlYXJjaCJdLCJ1c2VyVHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzRmNjUwMWUtZjQyOC00OWEzLTk5NGQtMmY4NjBhOTZmYThkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "07d0bd7a-cea8-4932-83ae-20a8f47b052c",
+  "id": "a162ef4b-ded0-4395-a1e1-8de34a6c0907",
   "meta": {
-    "lastUpdated": "2019-09-18T07:32:37.708+00:00"
+    "lastUpdated": "2019-11-05T06:14:29.637+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://library.local.ehealth.sundhed.dk/fhir/Library?_format=json&_pretty=true&name=444e1095-65e9-48d8-aef7-d09736dc13e5"
+      "url": "http://library.local.ehealth.sundhed.dk/fhir/Library?_format=json&_pretty=true&name=b6ecba57-cdfa-425e-a449-409de0100d2d"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://library.local.ehealth.sundhed.dk/fhir/Library/19",
+      "fullUrl": "http://library.local.ehealth.sundhed.dk/fhir/Library/20",
       "resource": {
         "resourceType": "Library",
-        "id": "19",
+        "id": "20",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-09-18T07:32:37.260+00:00",
+          "lastUpdated": "2019-11-05T06:14:29.325+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
           ]
@@ -43,7 +43,7 @@ __Response__
         "extension": [
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-            "valueString": "e4d9baa6-4f6c-4c82-be5f-76c72b401954"
+            "valueString": "0c674210-cef6-4475-87d6-7d3b2c842e55"
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -51,7 +51,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/73652"
+                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/15603"
                 }
               },
               {
@@ -68,8 +68,8 @@ __Response__
             ]
           }
         ],
-        "version": "fdc6f731-63e9-405b-bda6-33d0a52f9d05",
-        "name": "444e1095-65e9-48d8-aef7-d09736dc13e5",
+        "version": "976db029-1e15-4b01-bf07-69e7b5ff7442",
+        "name": "b6ecba57-cdfa-425e-a449-409de0100d2d",
         "status": "draft",
         "type": {
           "coding": [

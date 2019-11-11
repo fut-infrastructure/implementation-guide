@@ -1,9 +1,9 @@
-`POST [base]/QuestionnaireResponse/$validate`
+`POST [base]/Practitioner/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOGIxZTkwN2ItYzI0ZS00ODY2LTkwMWMtNDBjZDBmODk5NThiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,30 +18,17 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "QuestionnaireResponse",
+        "resourceType": "Practitioner",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
         },
-        "basedOn": [
+        "name": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/47466"
+            "family": "7dbc62de-3e98-4991-b63f-95ddb071b38e"
           }
-        ],
-        "questionnaire": {
-          "reference": "http://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/26754"
-        },
-        "status": "completed",
-        "subject": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/12373"
-        },
-        "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/52352"
-        },
-        "source": {
-          "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/37186"
-        }
+        ]
       }
     }
   ]

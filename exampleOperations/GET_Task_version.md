@@ -1,9 +1,9 @@
-`GET [base]/Task/74/_history/1`
+`GET [base]/Task/80/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJzdWIiOiJodHRwOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1ByYWN0aXRpb25lci83MDgiLCJwZXJtaXNzaW9ucyI6WyJUYXNrLnJlYWQubWVhc3VyZW1lbnQtbW9uaXRvcmluZyIsIlRhc2sucmVhZCJdLCJjYXJlVGVhbUNvbnRleHRJZCI6Imh0dHA6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vMjc4ODEiLCJ1c2VyVHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QcmFjdGl0aW9uZXIvMjY4MDAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5yZWFkLm1lYXN1cmVtZW50LW1vbml0b3JpbmciLCJUYXNrLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9DYXJlVGVhbS82ODgyIn0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "74",
+  "id": "80",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-09-18T08:17:36.558+00:00",
+    "lastUpdated": "2019-11-04T19:58:35.719+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -48,19 +48,19 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/27881"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/6882"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/4259"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/69841"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://local.ehealth.sundhed.dk/trifork-fhir-server/Patient/88829"
+        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/72343"
       }
     }
   ],
@@ -68,7 +68,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/28265"
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/65747"
   }
 }
 ```

@@ -1,9 +1,9 @@
-`POST [base]/Task/$validate`
+`POST [base]/Task`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJzeXN0ZW0vJHRlc3Qtb25seS1jcmVhdGUiLCJUYXNrLnJlYWQiXSwidXNlclR5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -13,78 +13,105 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType": "Task",
+  "meta": {
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
+    ]
+  },
+  "extension": [
     {
-      "name": "resource",
-      "resource": {
-        "resourceType": "Task",
-        "meta": {
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
-          ]
-        },
-        "extension": [
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
+      "valueCodeableConcept": {
+        "coding": [
           {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/task-category",
-                  "code": "TBD"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "None"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-            "valueReference": {
-              "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/11421"
-            }
+            "system": "http://ehealth.sundhed.dk/cs/task-category",
+            "code": "TBD"
           }
-        ],
-        "status": "draft",
-        "intent": "proposal",
-        "priority": "routine",
-        "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/21379"
-        }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/restriction-category",
+            "code": "None"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+      "valueReference": {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/12616"
       }
     }
-  ]
+  ],
+  "status": "draft",
+  "intent": "proposal",
+  "priority": "routine",
+  "for": {
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/5094"
+  },
+  "context": {
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/85185"
+  }
 }
 ```
 
 __Response__
 ```json
 {
-  "resourceType": "OperationOutcome",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+  "resourceType": "Task",
+  "id": "46",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-11-04T19:58:18.141+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
+    ]
   },
-  "issue": [
+  "extension": [
     {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-category",
+            "code": "TBD"
+          }
+        ]
+      }
     },
     {
-      "severity": "information",
-      "code": "informational",
-      "diagnostics": "No issues detected during validation"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/restriction-category",
+            "code": "None"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+      "valueReference": {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/12616"
+      }
     }
-  ]
+  ],
+  "status": "draft",
+  "intent": "proposal",
+  "priority": "routine",
+  "for": {
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/5094"
+  },
+  "context": {
+    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/85185"
+  },
+  "authoredOn": "2019-11-04T19:58:18+00:00"
 }
 ```

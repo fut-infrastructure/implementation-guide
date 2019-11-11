@@ -1,9 +1,9 @@
-`PATCH [base]/EpisodeOfCare/605`
+`PATCH [base]/EpisodeOfCare/868`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJwZXJtaXNzaW9ucyI6WyJFcGlzb2RlT2ZDYXJlLnBhdGNoIl0sImVwaXNvZGVPZkNhcmVDb250ZXh0SWQiOiJodHRwOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS82MDUvX2hpc3RvcnkvMSIsInVzZXJUeXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QcmFjdGl0aW9uZXIvNTQ5ODgiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,8 +15,12 @@ __Body__:
 [
   {
     "op": "replace",
-    "path": "/status",
-    "value": "cancelled"
+    "path": "/team",
+    "value": [
+      {
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/37774"
+      }
+    ]
   }
 ]
 ```
@@ -25,10 +29,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "605",
+  "id": "868",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-09-18T06:53:17.292+00:00",
+    "lastUpdated": "2019-11-04T20:17:23.181+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -37,36 +41,68 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/44989"
+        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/32519"
       }
-    }
-  ],
-  "status": "cancelled",
-  "statusHistory": [
+    },
     {
-      "status": "cancelled",
-      "period": {
-        "start": "2019-09-18T06:53:17+00:00"
-      }
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory",
+      "extension": [
+        {
+          "url": "careTeam",
+          "valueReference": {
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/91802"
+          }
+        },
+        {
+          "url": "period",
+          "valuePeriod": {
+            "start": "2019-11-03T21:17:22+01:00",
+            "end": "2019-11-04T20:17:23+00:00"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory",
+      "extension": [
+        {
+          "url": "careTeam",
+          "valueReference": {
+            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/37774"
+          }
+        },
+        {
+          "url": "period",
+          "valuePeriod": {
+            "start": "2019-11-04T20:17:23+00:00"
+          }
+        }
+      ]
     }
   ],
+  "status": "active",
   "diagnosis": [
     {
       "condition": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/604"
+        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/867"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "http://trifork-fhir-server.local.ehealth.sundhed.dk/trifork-fhir-server/Patient/70954"
+    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/94660"
   },
   "managingOrganization": {
-    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/87029"
+    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/97688"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
     "end": "1970-01-01T01:01:40+01:00"
-  }
+  },
+  "team": [
+    {
+      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/37774"
+    }
+  ]
 }
 ```

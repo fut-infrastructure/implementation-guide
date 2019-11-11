@@ -4,14 +4,14 @@ Provenance of a resource is a record that describes entities and processes invol
 # Scope and Usage
 In scope of the eHealth Infrastructure, Provenance resources are used for a number of different purposes. Some of these purposes are purely internal to the infrastructure, whereas others are of relevance to clients of the infrastructure.
 
-The details of different usages of Provenance resources relevant to clients are described together with the resources and operations they are supporting. In overview this is:
+The details of different usages of Provenance resources relevant to clients are described in the following sections together with the resources and operations they are supporting.
 
-### Reuse of Observations and QuestionnaireResponses
+### Reuse of measurements
 When a client submits measurements in the form of Observation, QuestionnaireResponse and/or Media, the client can submit one or more of these as reused resources, provided that reuse requirements have been met. For each resource where data is reused, the client must construct a Provenance that:
 
-* identifies the resource containing reused data through the target of Provenance
-* identifies the resource from where data was reused
-* identifies a policy which states reuse
+* identifies the resource containing reused data through the `target` element
+* identifies the resource from where data was reused through the `entity[0].what` element
+* identifies a `policy` which states reuse
 
 Each such Provenance must be submitted along with the resources containing reused data.
 
@@ -23,15 +23,10 @@ Provenance resources are created internally by the eHealth infrastructure to lin
 See [eHealth-observation](StructureDefinition-ehealth-observation.html#marking-resources-submitted-in-same-bundle) for further details.
 
 ### Stating legal frameworks and data privacy regulations for episodes of care
-Provenance resources are submitted by a client for creation when an eHealth-episodeofcare is created using the `create-episode-of-care`n operation.
+Provenance resources are submitted by a client for creation when an EpisodeOfCare (in profile ehealth-episodeofcare) is created using the `create-episode-of-care` operation.
 
-Some of these provenance resources hold information about which legal frame the EpisodeOfCare is created under. This could be for instance the health law (in Danish: "Sundhedsloven") or other relevant legal frameworks. 
+Some of these provenance resources hold information about which legal frame the EpisodeOfCare is created under through the Provenance element `policy`. This could be for instance the health law (in Danish: "Sundhedsloven") or other relevant legal frameworks. 
 
-Other of these provenance resource define which data privacy regulations are applicable to data concerning patient, practitioners, and suppliers under the episode of care.
+Other of these provenance resources define which data privacy regulations are applicable to data concerning patient, practitioners, and suppliers under the episode of care. This, too, is captured in `policy`.
 
 See [create-episode-of-care](OperationDefinition--s-create-episode-of-care.html) for further details.
-
-### Controlling Message states
-State related to Message resources, such as whether a message has been read or not, or time limited validity on notifications, is also handled through the use of Provenance resources.
-
-See [eHealth-message](StructureDefinition-ehealth-message.html) for further details.
