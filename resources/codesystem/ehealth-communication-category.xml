@@ -22,4 +22,9 @@
         <display value="annotation"/>
         <definition value="Annotation"/>
     </concept>
+    <concept>
+        <code value="note"/>
+        <display value="note"/>
+        <definition value="Note"/>
+    </concept>
 </CodeSystem>

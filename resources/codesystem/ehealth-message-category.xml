@@ -1,12 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ehealth-message-category"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml"><h2>MessageCategory</h2><div><p>Message category types</p>
+        </div><p>This code system http://ehealth.sundhed.dk/cs/message-category defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">TBD<a name="ehealth-message-category-TBD"> </a></td><td>Example value - Under construction</td><td>Example value - Under construction</td></tr></table></div>
+    </text>
     <url value="http://ehealth.sundhed.dk/cs/message-category"/>
-    <version value="0.6.0"/>
+    <version value="latest"/>
     <name value="MessageCategory"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2019-01-29"/>
+    <date value="2019-01-29T00:00:00+00:00"/>
     <publisher value="ehealth.sundhed.dk"/>
     <contact>
         <telecom>
@@ -18,8 +22,51 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="message"/>
+        <display value="Message"/>
+        <designation>
+            <language value="en-US"/>
+            <value value="Message"/>
+        </designation>
+        <designation>
+            <language value="da"/>
+            <value value="Besked"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="notification"/>
+        <display value="Notification"/>
+        <designation>
+            <language value="en-US"/>
+            <value value="Notification"/>
+        </designation>
+        <designation>
+            <language value="da"/>
+            <value value="Notifikation"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="advice"/>
+        <display value="Advice"/>
+        <designation>
+            <language value="en-US"/>
+            <value value="Advice"/>
+        </designation>
+        <designation>
+            <language value="da"/>
+            <value value="Advisering"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="note"/>
+        <display value="Note"/>
+        <designation>
+            <language value="en-US"/>
+            <value value="Note"/>
+        </designation>
+        <designation>
+            <language value="da"/>
+            <value value="Note"/>
+        </designation>
     </concept>
 </CodeSystem>

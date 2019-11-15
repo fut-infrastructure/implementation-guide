@@ -27,6 +27,14 @@
                     <value value="Annotation"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="note"/>
+                <display value="note"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="note"/>
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>
