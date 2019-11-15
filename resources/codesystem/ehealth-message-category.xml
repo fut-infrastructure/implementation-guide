@@ -6,7 +6,7 @@
         </div><p>This code system http://ehealth.sundhed.dk/cs/message-category defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">TBD<a name="ehealth-message-category-TBD"> </a></td><td>Example value - Under construction</td><td>Example value - Under construction</td></tr></table></div>
     </text>
     <url value="http://ehealth.sundhed.dk/cs/message-category"/>
-    <version value="latest"/>
+    <version value="0.6.0"/>
     <name value="MessageCategory"/>
     <status value="active"/>
     <experimental value="false"/>
