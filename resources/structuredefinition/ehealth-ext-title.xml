@@ -6,7 +6,7 @@
   <title value="eHealth Title" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="The PIN code to be used to gain access to a video meeting. Is provided by the service, not the client, and is not updateable" />
+  <description value="The title of the message" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
