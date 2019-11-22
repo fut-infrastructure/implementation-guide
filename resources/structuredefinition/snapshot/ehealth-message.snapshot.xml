@@ -14,7 +14,7 @@
 
 Message-related state, such as whether a message has been read or not, or time limited validity on notifications, is handled through the use of the ehealth-detached-provenance resource."/>
     <copyright value="Trifork A&amp;S"/>
-    <fhirVersion value="3.0.2"/>
+    <fhirVersion value="3.0.1"/>
     <mapping>
         <identity value="workflow"/>
         <uri value="http://hl7.org/fhir/workflow"/>
