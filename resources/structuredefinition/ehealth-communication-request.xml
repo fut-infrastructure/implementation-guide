@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-communication-request" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request" />
+  <name value="ehealth-communication-request" />
+  <title value="eHealth CommunicationRequest" />
+  <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="CommunicationRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CommunicationRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="CommunicationRequest.category">
+      <path value="CommunicationRequest.category" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationCategory" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/message-category" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="CommunicationRequest.priority">
+      <path value="CommunicationRequest.priority" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationPriority" />
+        </extension>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/request-priority" />
+      </binding>
+    </element>
+    <element id="CommunicationRequest.medium">
+      <path value="CommunicationRequest.medium" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationMedium" />
+        </extension>
+        <strength value="example" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/message-medium" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="CommunicationRequest.subject">
+      <path value="CommunicationRequest.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="CommunicationRequest.recipient">
+      <path value="CommunicationRequest.recipient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam" />
+      </type>
+    </element>
+    <element id="CommunicationRequest.context">
+      <path value="CommunicationRequest.context" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
