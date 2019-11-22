@@ -26,6 +26,18 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `GENERAL_VALUESET_VALIDATION_ERROR`: Validation error: %s
 
+- `GENERAL_EXTERNAL_RESOURCE_REFERENCE_NOT_FOUND`: External resource reference not found: %s
+
+- `GENERAL_ONLY_JSON_PATCH_ALLOWED`: Only JSON PATCH is allowed
+
+- `GENERAL_JSON_PATCH_VALIDATION_FAILED`: JSON patch validation failed: %s
+
+- `GENERAL_FORBIDDEN_JSON_PATCH_PATH`: Forbidden JSON PATCH path: %s
+
+- `INSTANCE_VALIDATION_ERROR`: Error during instance validation: %s
+
+- `GENERAL_INTERNAL_ERROR`: Detailed error: %s
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s.
@@ -284,3 +296,32 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION_AUTHOR_ORGANIZATION`: Composition.authorOrganization is mandatory for transformation
 
+#### ehealth-patient
+
+- `PATIENT_OFFICIAL_NAME_CHANGE_NOT_ALLOWED`: Official name change not allowed
+
+- `PATIENT_CPR_CHANGE_IS_NOT_ALLOWED`: CPR change is not allowed
+
+- `PATIENT_HOME_ADDRESS_CHANGE_IS_NOT_ALLOWED`: Home address change is not allowed
+
+- `PATIENT_ADDRESS_VALIDATION_FALIED`: Patient address validation failed: %s
+
+- `PATIENT_IDENTIFIER_MUST_BE_OF_TYPE_CRN`: Identifier must be of type 'crn'
+
+#### ehealth-message
+
+- `COMMUNICATION_EXACTLY_ONE_RECIPIENT_OR_CARE_TEAM_RECIPIENT_MUST_BE_SUPPLIED`: Exactly one recipient or CareTeam recipient must be supplied
+
+- `COMMUNICATION_EXACTLY_ONE_SENDER_OR_CARE_TEAM_SENDER_MUST_BE_SUPPLIED`: Exactly one sender or CareTeam sender must be supplied
+
+- `COMMUNICATION_UPDATE_TO_CATEGORY_IS_NOT_ALLOWED`: Update to category is not allowed: %s
+
+- `COMMUNICATION_UPDATE_NON_ADMINISTRATIVE_STATUS_NOT_ALLOWED`: Only update to administrative-status extension is allowed when status in completed
+
+- `COMMUNICATION_JSON_PATCH_IS_ONLY_ALLOWED_FOR_NOTE`: This JSON patch type is only allowed for category '%s' (current is '%s')
+
+- `COMMUNICATION_EXACTLY_ONE_MESSAGE_CATEGORY_IS_EXPECTED_ACTUAL`: Exactly one message category is expected. Actual: %s
+
+- `COMMUNICATION_MEDIUM_EBOKS_OR_NEMSMS_REQUIRES_PATIENT_RECIPIENT`: A recipient of type Patient is required for this medium: %s
+
+- `COMMUNICATION_PATIENT_NEMSMS_NOT_ALLOWED`: Patient does not allow telecom medium NemSMS

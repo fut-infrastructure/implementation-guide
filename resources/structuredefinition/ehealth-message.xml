@@ -197,7 +197,7 @@
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/message-category" />
+      <fixedUri value="http://ehealth.sundhed.dk/cs/message-category" />
     </element>
     <element id="Communication.category:DkTmCategory.coding.code">
       <path value="Communication.category.coding.code" />
