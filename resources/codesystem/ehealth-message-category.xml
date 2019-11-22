@@ -18,8 +18,28 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="message"/>
+        <display value="Message"/>
+        <definition value="Message"/>
+    </concept>
+    <concept>
+        <code value="besked"/>
+        <display value="Besked"/>
+        <definition value="Besked"/>
+    </concept>
+    <concept>
+        <code value="notification"/>
+        <display value="Notification"/>
+        <definition value="Notifikation"/>
+    </concept>
+    <concept>
+        <code value="advice"/>
+        <display value="Advice"/>
+        <definition value="Advisering"/>
+    </concept>
+    <concept>
+        <code value="note"/>
+        <display value="Note"/>
+        <definition value="Note"/>
     </concept>
 </CodeSystem>
