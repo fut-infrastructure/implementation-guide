@@ -19,15 +19,12 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Communication" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ProcedureRequest" />
       </type>
     </element>
     <element id="CommunicationRequest.category">
       <path value="CommunicationRequest.category" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationCategory" />
-        </extension>
         <strength value="example" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/message-category" />
@@ -37,9 +34,6 @@
     <element id="CommunicationRequest.priority">
       <path value="CommunicationRequest.priority" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationPriority" />
-        </extension>
         <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/request-priority" />
       </binding>
@@ -47,9 +41,6 @@
     <element id="CommunicationRequest.medium">
       <path value="CommunicationRequest.medium" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="CommunicationMedium" />
-        </extension>
         <strength value="example" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/message-medium" />
