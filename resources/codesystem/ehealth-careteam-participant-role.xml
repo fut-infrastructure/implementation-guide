@@ -125,6 +125,24 @@
         </designation>
     </concept>
     <concept>
+        <code value="catalogueResponsible"/>
+        <display value="Catalogue responsible"/>
+        <definition value="SSL catalogue responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Service og logistik katalogansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="contractResponsible"/>
+        <display value="Contract responsible"/>
+        <definition value="SSL contract responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Service og logistik kontraktansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
         <code value="orderPlacer"/>
         <display value="Order placer"/>
         <definition value="Placer of orders"/>
