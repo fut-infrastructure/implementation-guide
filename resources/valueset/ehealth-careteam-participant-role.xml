@@ -19,30 +19,6 @@
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/careteam-participant-role"/>
-            <concept>
-                <code value="monitoringResponsible"/>
-                <display value="Monitoring responsible"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Monitoring responsible"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="monitoringDelegate"/>
-                <display value="Monitoring Delegate"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Monitoring Delegate"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="supporter"/>
-                <display value="Supporter"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Supporter"/>
-                </designation>
-            </concept>
         </include>
     </compose>
 </ValueSet>
