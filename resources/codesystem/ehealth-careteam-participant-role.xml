@@ -134,6 +134,15 @@
         </designation>
     </concept>
     <concept>
+        <code value="catalogueAnnotator"/>
+        <display value="Catalogue annotator"/>
+        <definition value="SSL catalogue annotator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Service og logistik katalogopmærker"/>
+        </designation>
+    </concept>
+    <concept>
         <code value="contractResponsible"/>
         <display value="Contract responsible"/>
         <definition value="SSL contract responsible"/>
@@ -149,6 +158,24 @@
         <designation>
             <language value="da"/>
             <value value="Bestiller af udstyr"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="incidentReporter"/>
+        <display value="Incident reporter"/>
+        <definition value="Reporter of incidents"/>
+        <designation>
+            <language value="da"/>
+            <value value="Fejlmelder"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="incidentLocator"/>
+        <display value="Incident locator"/>
+        <definition value="Incident locator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Fejlfinder"/>
         </designation>
     </concept>
     <concept>
