@@ -19,6 +19,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - All `ValueSet` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/vs/oio-organization-type`
+- Included ValueSet `http://hl7.org/fhir/ValueSet/metric-category` in ValueSet `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`  
 
 ### ConceptMaps
 - All `ConceptMap` migrated to `active` status
