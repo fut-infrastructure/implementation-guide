@@ -44,6 +44,9 @@
         <include>
             <valueSet value="http://ehealth.sundhed.dk/vs/device-measuring-quality"/>
         </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/ValueSet/metric-category"/>
+        </include>
     </compose>
 </ValueSet>
 
