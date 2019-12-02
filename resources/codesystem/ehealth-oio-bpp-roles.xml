@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-oio-bpp-roles"/>
+    <url value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
+    <version value="0.6.0"/>
+    <name value="OIOBPPRole"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="OIO BPP Role"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="teleMedicineActor"/>
+        <display value="Tele medicine actor"/>
+        <definition value="Tele medicine actor"/>
+        <designation>
+            <language value="da"/>
+            <value value="Telemedicinsk aktør"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="administrativePersonnel"/>
+        <display value="Administrative personnel"/>
+        <definition value="Administrative personnel"/>
+        <designation>
+            <language value="da"/>
+            <value value="Administrativt personale"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="healthcareProfessional"/>
+        <display value="Healthcare professional"/>
+        <definition value="Healthcare professional"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsfaglig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="monitoringResponsible"/>
+        <display value="Monitoring responsible"/>
+        <definition value="Monitoring responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="treatmentResponsible"/>
+        <display value="Treatment responsible"/>
+        <definition value="Treatment responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Behandlingsansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="reportGenerator"/>
+        <display value="Report generator"/>
+        <definition value="Report generator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Nøgletalsmedarbejder"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="questionnaireEditor"/>
+        <display value="Questionnaire editor"/>
+        <definition value="Questionnaire editor"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsfaglig spørgeskemaeditor"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="administrator"/>
+        <display value="Administrator"/>
+        <definition value="Administrator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Administrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="incidentLocator"/>
+        <display value="Incident locator"/>
+        <definition value="Incident locator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Fejlfinder"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="clinicalAdministrator"/>
+        <display value="Clinical administrator"/>
+        <definition value="Clinical administrator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsfaglig administrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="userAdministrator"/>
+        <display value="User administrator"/>
+        <definition value="User administrator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Brugeradministrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="teamAdministrator"/>
+        <display value="Team administrator"/>
+        <definition value="Team administrator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Teamadministrator"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="orderPlacer"/>
+        <display value="Order placer"/>
+        <definition value="Order placer"/>
+        <designation>
+            <language value="da"/>
+            <value value="Bestiller af udstyr"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="serviceAndLogistics"/>
+        <display value="Service and logistics"/>
+        <definition value="Service and logistics"/>
+        <designation>
+            <language value="da"/>
+            <value value="Service og logistik samarbejdspartner"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="incidentReporter"/>
+        <display value="Incident reporter"/>
+        <definition value="Incident reporter"/>
+        <designation>
+            <language value="da"/>
+            <value value="Fejlmelder"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="supporter"/>
+        <display value="Supporter"/>
+        <definition value="Supporter"/>
+        <designation>
+            <language value="da"/>
+            <value value="Support samarbejdspartner"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="catalogueResponsible"/>
+        <display value="Catalogue responsible"/>
+        <definition value="Catalogue responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Katalogansvarlig"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="catalogueAnnotator"/>
+        <display value="Catalogue annotator"/>
+        <definition value="Catalogue annotator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Katalogopmærker"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="contractResponsible"/>
+        <display value="Contract responsible"/>
+        <definition value="Contract responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Aftaleansvarlig"/>
+        </designation>
+    </concept>
+</CodeSystem>

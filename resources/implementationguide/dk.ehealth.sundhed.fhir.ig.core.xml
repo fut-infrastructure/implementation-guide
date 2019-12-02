@@ -1099,6 +1099,11 @@
         </resource>
         <resource>
             <sourceReference>
+                <reference value="CodeSystem/ehealth-oio-bpp-roles"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <sourceReference>
                 <reference value="CodeSystem/ehealth-oio-organization-type"/>
             </sourceReference>
         </resource>
@@ -1603,6 +1608,12 @@
             <example value="false"/>
             <sourceReference>
                 <reference value="ValueSet/ehealth-sor-organization-type"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="ValueSet/ehealth-oio-bpp-roles"/>
             </sourceReference>
         </resource>
         <resource>

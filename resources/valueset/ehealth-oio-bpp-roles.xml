@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-oio-bpp-roles"/>
+    <url value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
+    <version value="0.6.0"/>
+    <name value="OIOBPPRoles"/>
+    <title value="OIOBPPRoles"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <date value="2019-12-02"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="OIO BPP roles."/>
+    <compose>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/oio-bpp-roles"/>
+        </include>
+    </compose>
+</ValueSet>
