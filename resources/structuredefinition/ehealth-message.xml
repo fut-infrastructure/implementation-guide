@@ -34,6 +34,7 @@
       <sliceName value="recipientCareTeam" />
       <short value="CareTeam message recipient" />
       <definition value="CareTeam message recipient" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
@@ -44,6 +45,7 @@
       <sliceName value="senderCareTeam" />
       <short value="CareTeam message sender" />
       <definition value="CareTeam message sender" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />

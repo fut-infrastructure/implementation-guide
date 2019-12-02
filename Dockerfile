@@ -1,6 +1,8 @@
 FROM jruby:9
 
-RUN gem install bundler jekyll:3.8.5
+RUN apt-get update && apt-get -y install build-essential
+
+RUN gem install bundler jekyll
 
 ARG BUILD_DATE=not_a_date
 
