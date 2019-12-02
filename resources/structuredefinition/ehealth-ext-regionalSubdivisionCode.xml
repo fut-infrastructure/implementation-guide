@@ -28,6 +28,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
