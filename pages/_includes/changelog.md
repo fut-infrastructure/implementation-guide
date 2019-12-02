@@ -25,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### ConceptMaps
 - All `ConceptMap` migrated to `active` status
+- Added `oiobpp-roles-to-participant-role`
 
 ### Resource/profile changes
 - Added CommunicationRequest profile
