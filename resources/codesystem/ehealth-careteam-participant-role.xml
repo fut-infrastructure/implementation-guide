@@ -19,8 +19,8 @@
     <content value="complete"/>
     <concept>
         <code value="treatmentResponsible"/>
-        <display value="Treatment Responsible"/>
-        <definition value="Treatment Responsible"/>
+        <display value="Treatment responsible"/>
+        <definition value="Treatment responsible"/>
         <designation>
             <language value="da"/>
             <value value="Behandlingsansvarlig"/>
@@ -33,8 +33,8 @@
     </concept>
     <concept>
         <code value="monitoringDelegate"/>
-        <display value="Monitoring Delegate"/>
-        <definition value="Monitoring Delegate"/>
+        <display value="Monitoring delegate"/>
+        <definition value="Monitoring delegate"/>
         <designation>
             <language value="da"/>
             <value value="Monitoreringsmedhjælper"/>
@@ -46,8 +46,8 @@
     </concept>
     <concept>
         <code value="teleMedicineActor"/>
-        <display value="Tele Medicine Actor"/>
-        <definition value="Tele Medicine Actor"/>
+        <display value="Tele medicine actor"/>
+        <definition value="Tele medicine actor"/>
         <designation>
             <language value="da"/>
             <value value="Telemedicinsk aktør"/>
@@ -55,8 +55,8 @@
     </concept>
     <concept>
         <code value="administrativePersonnel"/>
-        <display value="Administrative Personnel"/>
-        <definition value="Administrative Personnel"/>
+        <display value="Administrative personnel"/>
+        <definition value="Administrative personnel"/>
         <designation>
             <language value="da"/>
             <value value="Administrativt personale"/>
@@ -64,7 +64,7 @@
     </concept>
     <concept>
         <code value="healthcareProfessional"/>
-        <display value="Healthcare Professional"/>
+        <display value="Healthcare professional"/>
         <definition value="Healthcare Professional"/>
         <designation>
             <language value="da"/>
@@ -81,8 +81,8 @@
     </concept>
     <concept>
         <code value="clinicalAdministrator"/>
-        <display value="Clinical Administrator"/>
-        <definition value="Clinical Administrator"/>
+        <display value="Clinical administrator"/>
+        <definition value="Clinical administrator"/>
         <designation>
             <language value="da"/>
             <value value="Sundhedsfaglig administrator"/>
