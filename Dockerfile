@@ -6,7 +6,8 @@ RUN gem install bundler jekyll
 
 ARG BUILD_DATE=not_a_date
 
-RUN wget -q 'https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar' -O org.hl7.fhir.igpublisher.jar
+RUN wget -q 'https://github.com/FHIR/latest-ig-publisher/blob/56ec960dc4c059b4c3e6bb16a7526030ed8d7d3d/org.hl7.fhir.publisher.jar?raw=true' -O org.hl7.fhir.igpublisher.jar #version 1.0.5-SNAPSHOT
+#RUN wget -q 'https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar' -O org.hl7.fhir.igpublisher.jar
 
 #RUN wget -q 'https://www.hl7.org/fhir/stu3/package.tgz' -O package.tgz
 
