@@ -1778,7 +1778,12 @@
                 <reference value="ValueSet/ehealth-library-type"/>
             </sourceReference>
         </resource>
-
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="ConceptMap/oio-bpp-roles-to-careteam-participant-roles"/>
+            </sourceReference>
+        </resource>
     </package>
     <page>
         <source value="index.html"/>
