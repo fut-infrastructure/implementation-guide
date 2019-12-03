@@ -29,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
+- Maximum allow 1 senderCareTeam/recipientCareTeam (multiple were allowed earlier by error)
 
 ## 2019.6.1 (2019-11-08)
 
