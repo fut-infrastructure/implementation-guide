@@ -235,7 +235,7 @@
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/message-medium" />
+      <fixedUri value="http://ehealth.sundhed.dk/cs/message-medium" />
     </element>
     <element id="Communication.medium:DkTmMedium.coding.code">
       <path value="Communication.medium.coding.code" />

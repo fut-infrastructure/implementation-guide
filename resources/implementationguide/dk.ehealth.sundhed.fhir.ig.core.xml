@@ -560,6 +560,11 @@
                 <reference value="StructureDefinition/ehealth-ext-meeting-url"/>
             </sourceReference>
         </resource>
+                <resource>
+            <sourceReference>
+                <reference value="StructureDefinition/ehealth-ext-vmr-uri"/>
+            </sourceReference>
+        </resource>
         <resource>
             <sourceReference>
                 <reference value="StructureDefinition/ehealth-ext-municipalityCode"/>
@@ -582,7 +587,12 @@
         </resource>
         <resource>
             <sourceReference>
-                <reference value="StructureDefinition/ehealth-ext-pin-code"/>
+                <reference value="StructureDefinition/ehealth-ext-guest-pin-code"/>
+            </sourceReference>
+        </resource>
+                <resource>
+            <sourceReference>
+                <reference value="StructureDefinition/ehealth-ext-host-pin-code"/>
             </sourceReference>
         </resource>
         <resource>
