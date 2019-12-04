@@ -15,12 +15,6 @@
             <value value="http://ehealth.sundhed.dk/"/>
         </telecom>
     </contact>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-        </coding>
-    </jurisdiction>
     <sourceUri value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
     <targetUri value="http://ehealth.sundhed.dk/vs/careteam-participant-role"/>
     <group>
