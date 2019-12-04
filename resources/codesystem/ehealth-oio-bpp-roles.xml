@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ehealth-oio-bpp-roles"/>
-    <url value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
+    <url value="http://ehealth.sundhed.dk/cs/oio-bpp-roles"/>
     <version value="0.6.0"/>
     <name value="OIOBPPRole"/>
     <status value="active"/>
