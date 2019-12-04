@@ -62,13 +62,31 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url" />
       </type>
     </element>
-    <element id="Appointment.extension:pinCode">
+        <element id="Appointment.extension:vmrUri">
       <path value="Appointment.extension" />
-      <sliceName value="pinCode" />
+      <sliceName value="vmrUri" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-pin-code" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-vmr-uri" />
+      </type>
+    </element>
+    <element id="Appointment.extension:guestPinCode">
+      <path value="Appointment.extension" />
+      <sliceName value="guestPinCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guest-pin-code" />
+      </type>
+    </element>
+        <element id="Appointment.extension:hostPinCode">
+      <path value="Appointment.extension" />
+      <sliceName value="hostPinCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-host-pin-code" />
       </type>
     </element>
     <element id="Appointment.extension:responsible">
@@ -111,9 +129,6 @@
       <path value="Appointment.reason" />
       <min value="1" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ApptReason" />
-        </extension>
         <strength value="preferred" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/appointment-reason" />
       </binding>
