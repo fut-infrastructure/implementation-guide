@@ -2,15 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
-
-### Custom operations
-
-#### System operations
-
-#### Instance operations
+## 2019.6.1 (2019-12-04)
 
 ### Code systems
 - All `CodeSystem` migrated to `active` status
@@ -35,7 +27,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added "title" extension to allow message "subject"
 - Maximum allow 1 senderCareTeam/recipientCareTeam (multiple were allowed earlier by error)
 
-## 2019.6.1 (2019-11-08)
+## 2019.6 (2019-11-08)
 
 ### General changes
 - Added list of error messages
