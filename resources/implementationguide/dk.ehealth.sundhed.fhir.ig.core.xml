@@ -142,6 +142,151 @@
                 <reference value="OperationDefinition/ehealth-transform-to-questionnaire-response"/>
             </sourceReference>
         </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-careplan-and-episode-of-care-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-careplan-customization-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-careplan-duration-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-careplans-by-patient"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-careteam-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-measurement-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-patient-devices"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-patient-gdpr"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-patient-total"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-practitioner-gdpr"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-practitioner-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-fetch-ssl-orders"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-careplan-and-episode-of-care-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-careplan-customization-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-careplan-duration-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-careplans-by-patient"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-careteam-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-measurement-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-patient-devices"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-patient-gdpr"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-patient-total"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-practitioner-gdpr"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-practitioner-stats"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
+                <reference value="OperationDefinition/ehealth-reporting-schedule-ssl-orders"/>
+            </sourceReference>
+        </resource>
+
 
         <!-- Search parameters -->
 

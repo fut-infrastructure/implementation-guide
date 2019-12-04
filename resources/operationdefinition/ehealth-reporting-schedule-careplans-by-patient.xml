@@ -1,0 +1,36 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="-s-schedule-careplans-by-patient"/>
+    <name value="schedule-careplans-by-patient"/>
+    <status value="active"/>
+    <kind value="operation"/>
+    <description value="Schedule a report with episodes of care and related resources, grouped by episode of care"/>
+    <idempotent value="false"/>
+    <code value="schedule-careplans-by-patient"/>
+    <system value="true"/>
+    <type value="false"/>
+    <instance value="false"/>
+    <parameter>
+        <name value="anonymization"/>
+        <use value="in"/>
+        <min value="1"/>
+        <max value="1"/>
+        <type value="string"/>
+        <documentation value="Use anonymization mode [NONE, ANONYMIZED]. " />
+    </parameter>
+    <parameter>
+        <name value="organization"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Reference"/>
+        <documentation value="Only episodes of care for organization. " />
+    </parameter>
+    <parameter>
+        <name value="period"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Period"/>
+        <documentation value="Only care plans within period. " />
+    </parameter>
+</OperationDefinition>

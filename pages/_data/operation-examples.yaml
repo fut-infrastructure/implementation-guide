@@ -19,6 +19,76 @@
 
 - profile: system
   path: POST_update-care-teams.md
+# system reporting
+
+- profile: system
+  path: POST_fetch-careplan-and-episode-of-care-stats.md
+
+- profile: system
+  path: POST_fetch-careplan-customization-stats.md
+
+- profile: system
+  path: POST_fetch-careplan-duration-stats.md
+
+- profile: system
+  path: POST_fetch-careplans-by-patient.md
+
+- profile: system
+  path: POST_fetch-careteam-stats.md
+
+- profile: system
+  path: POST_fetch-measurement-stats.md
+
+- profile: system
+  path: POST_fetch-patient-devices.md
+
+- profile: system
+  path: POST_fetch-patient-gdpr.md
+
+- profile: system
+  path: POST_fetch-practitioner-gdpr.md
+
+- profile: system
+  path: POST_fetch-practitioner-stats.md
+
+- profile: system
+  path: POST_fetch-ssl-orders.md
+
+- profile: system
+  path: POST_schedule-careplan-and-episode-of-care-stats.md
+
+- profile: system
+  path: POST_schedule-careplan-customization-stats.md
+
+- profile: system
+  path: POST_schedule-careplan-duration-stats.md
+
+- profile: system
+  path: POST_schedule-careplans-by-patient.md
+
+- profile: system
+  path: POST_schedule-careteam-stats.md
+
+- profile: system
+  path: POST_schedule-measurement-stats.md
+
+- profile: system
+  path: POST_schedule-patient-devices.md
+
+- profile: system
+  path: POST_schedule-patient-gdpr.md
+
+- profile: system
+  path: POST_schedule-patient-total.md
+
+- profile: system
+  path: POST_schedule-practitioner-gdpr.md
+
+- profile: system
+  path: POST_schedule-practitioner-stats.md
+
+- profile: system
+  path: POST_schedule-ssl-orders.md
 
 # ehealth-activitydefinition
 - profile: ehealth-activitydefinition
@@ -464,6 +534,10 @@
 
 - profile: ehealth-relatedperson
   path: DELETE_RelatedPerson_1.md
+
+# ehealth-reporting
+- profile: ehealth-binary
+  path: GET_Binary.md
 
 # ehealth-task
 - profile: ehealth-task
