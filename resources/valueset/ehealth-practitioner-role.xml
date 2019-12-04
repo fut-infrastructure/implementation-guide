@@ -37,7 +37,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://hl7.org/fhir/ValueSet/practitioner-role"/>
+            <valueSet value="http://hl7.org/fhir/ValueSet/practitioner-role"/>
         </include>
     </compose>
 </ValueSet>

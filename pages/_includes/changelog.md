@@ -21,6 +21,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - All `ValueSet` migrated to `active` status
 - Added `http://ehealth.sundhed.dk/vs/oio-organization-type`
 - Added `http://ehealth.sundhed.dk/vs/oio-bpp-roles`
+- Changed include of `http://hl7.org/fhir/ValueSet/practitioner-role` in `ehealth-practitioner-role` to be of type `valueSet` instead of `system`
 - Included ValueSet `http://hl7.org/fhir/ValueSet/metric-category` in ValueSet `http://ehealth.sundhed.dk/vs/ssl-catalogue-item-annotations`  
 
 ### ConceptMaps
