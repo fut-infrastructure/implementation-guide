@@ -35,6 +35,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Added CommunicationRequest profile
 
+#### Appointment (ehealth-appointment)
+- Max. one CareTeam per participant (0..n by mistake)
+
+#### VideoAppointment (ehealth-videoappointment)
+- Max. one CareTeam per participant (0..n by mistake)
+
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
 - Maximum allow 1 senderCareTeam/recipientCareTeam (multiple were allowed earlier by error)

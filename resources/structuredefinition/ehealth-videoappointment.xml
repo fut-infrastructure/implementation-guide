@@ -206,6 +206,7 @@
     <element id="Appointment.participant.extension:careteam">
       <path value="Appointment.participant.extension" />
       <sliceName value="careteam" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam" />
