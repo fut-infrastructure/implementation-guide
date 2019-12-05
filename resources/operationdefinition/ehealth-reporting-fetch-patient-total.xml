@@ -49,4 +49,12 @@
         <type value="string"/>
         <documentation value="Only episodes of care with status. " />
     </parameter>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Binary"/>
+        <documentation value="The report is in content. " />
+    </parameter>
 </OperationDefinition>
