@@ -62,7 +62,7 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url" />
       </type>
     </element>
-        <element id="Appointment.extension:vmrUri">
+    <element id="Appointment.extension:vmrUri">
       <path value="Appointment.extension" />
       <sliceName value="vmrUri" />
       <max value="1" />
@@ -80,7 +80,7 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guest-pin-code" />
       </type>
     </element>
-        <element id="Appointment.extension:hostPinCode">
+    <element id="Appointment.extension:hostPinCode">
       <path value="Appointment.extension" />
       <sliceName value="hostPinCode" />
       <max value="1" />
@@ -92,6 +92,7 @@
     <element id="Appointment.extension:responsible">
       <path value="Appointment.extension" />
       <sliceName value="responsible" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
