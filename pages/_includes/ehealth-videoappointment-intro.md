@@ -33,8 +33,13 @@ The most important fields of the ehealth-videoappointment are described below:
 
 - meeting-url (extension): the URL used to attend the meeting (provided by the service, not the client).
 
-- pinCode (extension): The guest pin code to be used when entering the meeting (is provided by the service itself
+- vmr-uri (extension): the Virtual Meeting Room URI that can be used in eg. webRTC clients.
+
+- guest pinCode (extension): The guest pin code to be used when entering the meeting (is provided by the service itself
   based on the scheduling template used).
+
+- host pinCode (extension): The host pin code to be used when entering the meeting (is provided by the service itself
+  based on the scheduling template used). If no host attends, the meeting is not started
 
 If other resources need to be referenced as part of the video appointment, it is possible to reference Condition and Procedure
 resources as the reason for the meeting, or using "supportingInformation" to reference other resource types.
