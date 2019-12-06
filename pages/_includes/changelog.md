@@ -37,10 +37,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Appointment (ehealth-appointment)
 - Max. one CareTeam per participant (0..n by mistake)
+- Organization no longer possible as responsible
 
 #### VideoAppointment (ehealth-videoappointment)
 - Max. one CareTeam per participant (0..n by mistake)
 - At most one responsible party (was 0..n by mistake)
+- Organization no longer possible as responsible
 
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
