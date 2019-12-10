@@ -15,10 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication">
-      <path value="Communication" />
-      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition.." />
-    </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
       <slicing>
@@ -310,6 +306,13 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <aggregation value="referenced" />
       </type>
+    </element>
+    <element id="Communication.reasonCode.coding">
+      <path value="Communication.reasonCode.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-reasonCode" />
+      </binding>
     </element>
     <element id="Communication.reasonReference">
       <path value="Communication.reasonReference" />

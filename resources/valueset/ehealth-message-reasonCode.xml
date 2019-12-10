@@ -1,0 +1,26 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ehealth-message-reasonCode"/>
+    <url value="http://ehealth.sundhed.dk/vs/message-reasonCode"/>
+    <version value="0.0.1"/>
+    <name value="eHealth Message Reason Code"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <date value="2019-02-08"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="eHealth Message Reason Code" />
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+        </include>
+        <include>
+            <system value="http://ehealth.sundhed.dk/cs/task-category"/>
+        </include>
+    </compose>
+</ValueSet>

@@ -1726,6 +1726,12 @@
         <resource>
             <example value="false"/>
             <sourceReference>
+                <reference value="ValueSet/ehealth-message-reasonCode"/>
+            </sourceReference>
+        </resource>
+        <resource>
+            <example value="false"/>
+            <sourceReference>
                 <reference value="ValueSet/ehealth-practice-setting-codes"/>
             </sourceReference>
         </resource>
