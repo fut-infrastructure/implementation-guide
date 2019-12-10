@@ -1,4 +1,4 @@
- # Introduction
+# Introduction
  
 The FHIR resource Communication is a record of a communication. A communication is a conveyance of information from one entity, a sender, to another entity, a receiver.
  
