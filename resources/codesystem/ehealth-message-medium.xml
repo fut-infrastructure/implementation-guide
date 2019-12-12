@@ -18,8 +18,21 @@
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
+        <code value="nemsms"/>
+        <display value="NemSMS"/>
+        <designation>
+            <language value="da"/>
+            <value value="NemSMS"/>
+        </designation>
     </concept>
+
+    <concept>
+        <code value="eboks"/>
+        <display value="eBoks"/>
+        <designation>
+            <language value="da"/>
+            <value value="eBoks"/>
+        </designation>
+    </concept>
+
 </CodeSystem>
