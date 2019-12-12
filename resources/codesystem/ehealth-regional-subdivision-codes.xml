@@ -1,6 +1,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="regional-subdivision-codes"/>
-    <url value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
+    <url value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
     <version value="0.0.1"/>
     <name value="Regional subdivision codes"/>
     <status value="active"/>

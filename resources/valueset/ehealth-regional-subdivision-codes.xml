@@ -10,7 +10,7 @@
     <description value="Subdivision codes (Regional codes) used in Denmark" />
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
+            <system value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
         </include>
     </compose>
 </ValueSet>
