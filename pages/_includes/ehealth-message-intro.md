@@ -21,7 +21,8 @@ comes in four flavours depending on the "category" of the message:
 
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "topic" field, no 
 matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by
-assigning the same thread-id in the provided extension. The message subject may be provided in the title extension, and
+assigning the same thread-id in the provided extension. Similarly, they may be organized in a group (eg. group messages)
+by assigning the same group-id in that extension. The message subject may be provided in the title extension, and
 an optional priority may be provided in the ehealth-priority extension.
 
 # Remarks about status and administrative-status

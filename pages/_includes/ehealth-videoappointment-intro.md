@@ -42,7 +42,8 @@ The most important fields of the ehealth-videoappointment are described below:
   based on the scheduling template used). If no host attends, the meeting is not started
 
 If other resources need to be referenced as part of the video appointment, it is possible to reference Condition and Procedure
-resources as the reason for the meeting, or using "supportingInformation" to reference other resource types.
+resources as the reason for the meeting, or using "supportingInformation" to reference other resource types. The
+"group-id" extension can be used for logically grouping different appointments.
 
 # Scope and Usage
 In the eHealth Infrastructure the Appointment resource is used in conjunction with the following resources:

@@ -38,16 +38,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Appointment (ehealth-appointment)
 - Max. one CareTeam per participant (0..n by mistake)
 - Organization no longer possible as responsible
+- Added extension for (optional) group-id to correlate different appointments
 
 #### VideoAppointment (ehealth-videoappointment)
 - Max. one CareTeam per participant (0..n by mistake)
 - At most one responsible party (was 0..n by mistake)
 - Organization no longer possible as responsible
+- Added extension for (optional) group-id to correlate different video appointments
 
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
 - Maximum allow 1 senderCareTeam/recipientCareTeam (multiple were allowed earlier by error)
 - ReasonCode extended to allow task-category codes
+- Added extension for (optional) group-id to correlate different messages
 
 ## 2019.6 (2019-11-08)
 
