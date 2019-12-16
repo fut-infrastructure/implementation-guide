@@ -85,6 +85,21 @@
       <path value="Questionnaire.version" />
       <min value="1" />
     </element>
+    <element id="Questionnaire.jurisdiction">
+      <path value="Questionnaire.jurisdiction" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Jurisdiction" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/jurisdiction" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="Questionnaire.item.extension">
       <path value="Questionnaire.item.extension" />
       <slicing>
