@@ -15,7 +15,7 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Value set used for indicating the specialty for organizations"/>
+    <description value="Value set used for indicating the specialty for organizations."/>
     <compose>
 		<include>
 			<valueSet value="http://ehealth.sundhed.dk/vs/sor-organization-specialty"/>

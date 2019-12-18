@@ -15,21 +15,10 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Format Codes value set."/>
+    <description value="Event type codes value set."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/event-type-codes"/>
-            <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
-                </designation>
-            </concept>
-        </include>
-        <include>
-            <system value="http://sundhedsdatastyrelsen.dk/npu"/>
+            <valueSet value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs"/>
         </include>
     </compose>
 </ValueSet>

@@ -9,8 +9,24 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Custom operations
 #### System operations
 #### Instance operations
+
 ### Code systems
+- Added `urn:oid:1.2.208.184.100.9`
+- Added `urn:oid:1.2.208.184.100.10`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs`
+- Removed `http://ehealth.sundhed.dk/cs/document-class`
+- Removed `http://ehealth.sundhed.dk/cs/document-type`
+- Removed `http://www.example.com/medcom/document-class`
+
 ### ValueSets
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs`
+- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
+
+
 ### ConceptMaps
 ### Resource/profile changes
 

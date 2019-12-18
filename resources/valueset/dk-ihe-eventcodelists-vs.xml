@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-ihe-eventcodelists-vs"/>
+    <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs"/>
+    <version value="0.99"/>
+    <name value="DK_IHE_EventCodeLists_VS"/>
+    <title value="DK_IHE_EventCodeLists_VS"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-11"/>
+    <publisher value="Sundhedsdatastyrelsen"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="email"/>
+            <value value="thsc@sundhedsdata.dk"/>
+        </telecom>
+    </contact>
+    <description value="Event codes used in DK IHE Document sharing. The codes shall be NPU or procedure codes used in the Danish health care systems."/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.208.176.2.1"/>
+        </include>
+    </compose>
+</ValueSet>

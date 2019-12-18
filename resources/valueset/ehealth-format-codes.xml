@@ -18,15 +18,7 @@
     <description value="Format Codes value set."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/format-codes"/>
-            <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
-                </designation>
-            </concept>
+            <valueSet value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs"/>
         </include>
     </compose>
 </ValueSet>

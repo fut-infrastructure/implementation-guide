@@ -1,0 +1,88 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-ihe-typecode-vs"/>
+    <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs"/>
+    <version value="0.99"/>
+    <name value="DK_IHE_TypeCode_VS"/>
+    <title value="DK_IHE_TypeCode_VS"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-11"/>
+    <publisher value="Sundhedsdatastyrelsen"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="email"/>
+            <value value="thsc@sundhedsdata.dk"/>
+        </telecom>
+    </contact>
+    <description value="Value set for the typeCode attribute. The typeCode specifies the precise type of document from the user perspective. The granularity of typeCode is finer grained than its superior classCode."/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="53576-5"/>
+                <display value="Personal health monitoring report Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Personal health monitoring report Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="74468-0"/>
+                <display value="Questionnaire Form Definition Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Questionnaire Form Definition Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="74465-6"/>
+                <display value="Questionnaire Response Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Questionnaire Response Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="11502-2"/>
+                <display value="LABORATORY REPORT.TOTAL"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="LABORATORY REPORT.TOTAL"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="56446-8"/>
+                <display value="Appointment Summary Document"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Appointment Summary Document"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="39290-2"/>
+                <display value="Follow-up (referred to) program, appointment date"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Follow-up (referred to) program, appointment date"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="39289-4"/>
+                <display value="Follow-up (referred to) provider and/or specialist, appointment date"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Follow-up (referred to) provider and/or specialist, appointment date"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="81215-6"/>
+                <display value="Care plan - recommended C-CDA R2.0 and R2.1 sections"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Care plan - recommended C-CDA R2.0 and R2.1 sections"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

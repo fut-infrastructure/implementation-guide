@@ -22,4 +22,13 @@
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
     </concept>
+    <concept>
+        <code value="related-to-SOR"/>
+        <display value="Relateret til organisatorisk enhed i SOR"/>
+        <definition value="Relateret til organisatorisk enhed i SOR"/>
+        <designation>
+            <language value="da"/>
+            <value value="Relateret til organisatorisk enhed i SOR"/>
+        </designation>
+    </concept>
 </CodeSystem>

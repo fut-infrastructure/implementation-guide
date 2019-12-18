@@ -1,0 +1,392 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="dk-ihe-practicesettingcode-vs"/>
+    <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs"/>
+    <version value="0.99"/>
+    <name value="DK_IHE_practiceSettingCode_VS"/>
+    <title value="DK_IHE_practiceSettingCode_VS"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-11"/>
+    <publisher value="Sundhedsdatastyrelsen"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="email"/>
+            <value value="thsc@sundhedsdata.dk"/>
+        </telecom>
+    </contact>
+    <description value="Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Enhedstyper' (http://sor.sundhedsstyrelsen.dsdn.dk/lookupdata/#EntityTypes, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED codes."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="408443003"/>
+                <display value="almen medicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="almen medicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394577000"/>
+                <display value="anæstesiologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="anæstesiologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394821009"/>
+                <display value="arbejdsmedicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="arbejdsmedicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394588006"/>
+                <display value="børne- og ungdomspsykiatri"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="børne- og ungdomspsykiatri"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394582007"/>
+                <display value="dermato-venerologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="dermato-venerologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394914008"/>
+                <display value="diagnostisk radiologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="diagnostisk radiologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394583002"/>
+                <display value="endokrinologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="endokrinologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394811001"/>
+                <display value="geriatri"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="geriatri"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394585009"/>
+                <display value="gynækologi og obstetrik"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="gynækologi og obstetrik"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="408472002"/>
+                <display value="hepatologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="hepatologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394803006"/>
+                <display value="hæmatologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="hæmatologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394807007"/>
+                <display value="infektionsmedicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="infektionsmedicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="419192003"/>
+                <display value="intern medicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="intern medicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394579002"/>
+                <display value="kardiologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="kardiologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="408463005"/>
+                <display value="karkirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="karkirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394609007"/>
+                <display value="kirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="kirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="551411000005104"/>
+                <display value="kirurgisk gastroenterologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="kirurgisk gastroenterologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394596001"/>
+                <display value="klinisk biokemi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk biokemi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394600006"/>
+                <display value="klinisk farmakologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk farmakologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394601005"/>
+                <display value="klinisk fysiologi og nuklearmedicin (snomed:  klinisk fysiologi)"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk fysiologi og nuklearmedicin (snomed:  klinisk fysiologi)"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394580004"/>
+                <display value="klinisk genetik"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk genetik"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="421661004"/>
+                <display value="klinisk immunologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk immunologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="408454008"/>
+                <display value="klinisk mikrobiologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk mikrobiologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394809005"/>
+                <display value="klinisk neurofysiologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk neurofysiologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394592004"/>
+                <display value="klinisk onkologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="klinisk onkologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="418112009"/>
+                <display value="lungesygdomme"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="lungesygdomme"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394805004"/>
+                <display value="medicinsk allergologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="medicinsk allergologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394584008"/>
+                <display value="medicinsk gastroenterologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="medicinsk gastroenterologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394589003"/>
+                <display value="nefrologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="nefrologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394610002"/>
+                <display value="neurokirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="neurokirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394591006"/>
+                <display value="neurologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="neurologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394812008"/>
+                <display value="odontologi (snomed: odontologiske specialer)"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="odontologi (snomed: odontologiske specialer)"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394594003"/>
+                <display value="oftalmologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="oftalmologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394801008"/>
+                <display value="ortopædisk kirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="ortopædisk kirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394604002"/>
+                <display value="oto-rhino-laryngologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="oto-rhino-laryngologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394915009"/>
+                <display value="patologisk anatomi og cytologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="patologisk anatomi og cytologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394611003"/>
+                <display value="plastikkirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="plastikkirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394587001"/>
+                <display value="psykiatri"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="psykiatri"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394537008"/>
+                <display value="pædiatri"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="pædiatri"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394810000"/>
+                <display value="reumatologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="reumatologi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="554011000005107"/>
+                <display value="Retsmedicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Retsmedicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394581000"/>
+                <display value="samfundsmedicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="samfundsmedicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394605001"/>
+                <display value="tand-, mund- og kæbekirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="tand-, mund- og kæbekirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394603008"/>
+                <display value="thoraxkirurgi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="thoraxkirurgi"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="408448007"/>
+                <display value="tropemedicin"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="tropemedicin"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394612005"/>
+                <display value="urologi"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="urologi"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

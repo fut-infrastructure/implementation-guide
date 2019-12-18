@@ -15,18 +15,10 @@
             <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
-    <description value="Format Codes value set."/>
+    <description value="Value set used for indicating the specialty for organizations."/>
     <compose>
         <include>
-            <system value="http://ehealth.sundhed.dk/cs/practice-setting-codes"/>
-            <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
-                </designation>
-            </concept>
+            <valueSet value="http://ehealth.sundhed.dk/vs/sor-organization-specialty"/>
         </include>
     </compose>
 </ValueSet>
