@@ -14,6 +14,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Observation (ehealth-observation)
+- Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Changed strength of `Observation.component.code` value set binding to "extensible"
+
 ## 2019.6.1 (2019-12-04)
 
 ### Code systems
