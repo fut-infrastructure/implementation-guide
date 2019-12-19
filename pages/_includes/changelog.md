@@ -25,14 +25,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
-
+- Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in Valueset `http://ehealth.sundhed.dk/vs/reference-range-type`
 
 ### ConceptMaps
 ### Resource/profile changes
 
 #### Observation (ehealth-observation)
-- Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/reference-range-type`
-- Changed strength of `Observation.component.code` value set binding to "extensible"
+- Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/observation-codes`
+- Changed strength of `Observation.component.code` value set binding to "required"
 
 ## 2019.6.1 (2019-12-04)
 
