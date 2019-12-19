@@ -77,6 +77,21 @@
         </valueSetReference>
       </binding>
     </element>
+    <element id="Library.jurisdiction">
+      <path value="Library.jurisdiction" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Jurisdiction" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/jurisdiction" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="Library.parameter">
       <path value="Library.parameter" />
       <min value="1" />

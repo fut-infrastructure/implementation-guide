@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-jurisdiction"/>
+    <url value="http://ehealth.sundhed.dk/cs/jurisdiction"/>
+    <version value="0.6.0"/>
+    <name value="Jurisdiction"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-16"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <description value="Jurisdiction"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="healthcare-act"/>
+        <display value="Sundhedsloven"/>
+        <definition value="Danish healthcare act"/>
+    </concept>
+    <concept>
+        <code value="service-act"/>
+        <display value="Serviceloven"/>
+        <definition value="Danish service act"/>
+    </concept>
+</CodeSystem>

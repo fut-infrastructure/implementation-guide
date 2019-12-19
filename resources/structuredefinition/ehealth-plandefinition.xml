@@ -68,6 +68,21 @@
       <path value="PlanDefinition.version" />
       <min value="1" />
     </element>
+    <element id="PlanDefinition.jurisdiction">
+      <path value="PlanDefinition.jurisdiction" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="Jurisdiction" />
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+          <valueBoolean value="true" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/jurisdiction" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="PlanDefinition.topic">
       <path value="PlanDefinition.topic" />
       <binding>
