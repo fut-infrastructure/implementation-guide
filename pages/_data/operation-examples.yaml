@@ -570,3 +570,6 @@
 
 - profile: ehealth-videoappointment
   path: PUT_Appointment_Video.md
+
+- profile: person
+  path: POST_Person.md
