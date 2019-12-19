@@ -22,7 +22,7 @@
         <target value="hhttp://ehealth.sundhed.dk/vs/careteam-participant-role"/>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
-            <display value="Tele medicine actor"/>
+            <display value="Telemedicinsk aktør"/>
             <target>
                 <code value="teleMedicineActor"/>
                 <display value="Tele medicine actor"/>
@@ -31,7 +31,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:administrative_personnel"/>
-            <display value="Administrative personnel"/>
+            <display value="Administrativt personale"/>
             <target>
                 <code value="administrativePersonnel"/>
                 <display value="Administrative personnel"/>
@@ -40,7 +40,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:healthcare_professional"/>
-            <display value="Healthcare professional"/>
+            <display value="Sundhedsfaglig"/>
             <target>
                 <code value="healthcareProfessional"/>
                 <display value="Healthcare professional"/>
@@ -49,7 +49,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:monitoring_responsible"/>
-            <display value="Monitoring responsible"/>
+            <display value="Sundhedsfaglig monitoreringsansvarlig"/>
             <target>
                 <code value="monitoringResponsible"/>
                 <display value="Monitoring responsible"/>
@@ -58,7 +58,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:treatment_responsible"/>
-            <display value="Treatment responsible"/>
+            <display value="Behandlingsansvarlig"/>
             <target>
                 <code value="treatmentResponsible"/>
                 <display value="Treatment responsible"/>
@@ -67,7 +67,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:report_generator"/>
-            <display value="Report, statistics and data extractor"/>
+            <display value="Nøgletalsmedarbejder"/>
             <target>
                 <code value="reportGenerator"/>
                 <display value="Report, statistics and data extractor"/>
@@ -76,7 +76,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:questionnaire_editor"/>
-            <display value="Questionnaire editor"/>
+            <display value="Sundhedsfaglig spørgeskemaeditor"/>
             <target>
                 <code value="questionnaireEditor"/>
                 <display value="Questionnaire editor"/>
@@ -94,7 +94,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
-            <display value="Incident locator"/>
+            <display value="Fejlfinder"/>
             <target>
                 <code value="incidentLocator"/>
                 <display value="Incident locator"/>
@@ -103,7 +103,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
-            <display value="Clinical administrator"/>
+            <display value="Sundhedsfaglig administrator"/>
             <target>
                 <code value="clinicalAdministrator"/>
                 <display value="Clinical administrator"/>
@@ -112,7 +112,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:user_administrator"/>
-            <display value="User administrator"/>
+            <display value="Brugeradministrator"/>
             <target>
                 <code value="userAdministrator"/>
                 <display value="User administrator"/>
@@ -121,7 +121,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:team_administrator"/>
-            <display value="Team administrator"/>
+            <display value="Teamadministrator"/>
             <target>
                 <code value="teamAdministrator"/>
                 <display value="Team administrator"/>
@@ -130,7 +130,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
-            <display value="Order placer"/>
+            <display value="Bestiller af udstyr"/>
             <target>
                 <code value="orderPlacer"/>
                 <display value="Order placer"/>
@@ -139,7 +139,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:service_and_logistics"/>
-            <display value="Service and logistics"/>
+            <display value="Service og logistik samarbejdspartner"/>
             <target>
                 <code value="serviceAndLogistics"/>
                 <display value="Service and logistics"/>
@@ -148,7 +148,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
-            <display value="Incident reporter"/>
+            <display value="Fejlmelder"/>
             <target>
                 <code value="incidentReporter"/>
                 <display value="Incident reporter"/>
@@ -157,7 +157,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:supporter"/>
-            <display value="Supporter"/>
+            <display value="Support samarbejdspartner"/>
             <target>
                 <code value="supporter"/>
                 <display value="Supporter"/>
@@ -166,7 +166,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible"/>
-            <display value="Catalogue responsible"/>
+            <display value="Katalogansvarlig"/>
             <target>
                 <code value="catalogueResponsible"/>
                 <display value="Catalogue responsible"/>
@@ -175,7 +175,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_annotator"/>
-            <display value="Catalogue annotator"/>
+            <display value="Katalogopmærker"/>
             <target>
                 <code value="catalogueAnnotator"/>
                 <display value="Catalogue annotator"/>
@@ -184,7 +184,7 @@
         </element>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:ssl_contract_responsible"/>
-            <display value="Contract responsible"/>
+            <display value="Aftaleansvarlig"/>
             <target>
                 <code value="contractResponsible"/>
                 <display value="Contract responsible"/>
