@@ -1,7 +1,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="dk-ihe-healthcarefacilitytypecode-vs"/>
     <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs"/>
-    <version value="0.00"/>
+    <version value="0.99"/>
     <name value="DK_IHE_HealthcareFacilityTypeCode_VS"/>
     <title value="DK_IHE_HealthcareFacilityTypeCode_VS"/>
     <status value="active"/>

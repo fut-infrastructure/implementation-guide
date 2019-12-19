@@ -2,6 +2,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="dk-ihe-classcode-cs"/>
     <url value="urn:oid:1.2.208.184.100.9"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.208.184.100.9"/>
+    </identifier>
     <version value="0.99"/>
     <name value="DK_IHE_ClassCode_CS"/>
     <status value="active"/>
