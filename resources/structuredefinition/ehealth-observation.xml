@@ -180,12 +180,9 @@
     <element id="Observation.component.code">
       <path value="Observation.component.code" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
-        </extension>
-        <strength value="extensible" />
+        <strength value="required" />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
+          <reference value="http://ehealth.sundhed.dk/vs/observation-codes" />
         </valueSetReference>
       </binding>
     </element>
