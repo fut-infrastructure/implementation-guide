@@ -19,7 +19,7 @@
     <targetUri value="http://ehealth.sundhed.dk/vs/careteam-participant-role"/>
     <group>
         <source value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
-        <target value="hhttp://ehealth.sundhed.dk/vs/careteam-participant-role"/>
+        <target value="http://ehealth.sundhed.dk/vs/careteam-participant-role"/>
         <element>
             <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
             <display value="Telemedicinsk aktør"/>
