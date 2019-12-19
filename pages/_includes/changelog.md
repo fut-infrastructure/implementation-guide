@@ -29,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### ConceptMaps
 ### Resource/profile changes
+ - Added deceased extension for use on `Person` when doing `Person$match`
 
 #### Observation (ehealth-observation)
 - Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/observation-codes`
