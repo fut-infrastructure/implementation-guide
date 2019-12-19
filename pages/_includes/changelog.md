@@ -25,7 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
-- Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in Valueset `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/reference-range-type`
 
 ### ConceptMaps
 ### Resource/profile changes
