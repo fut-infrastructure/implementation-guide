@@ -21,7 +21,7 @@
       <system value="http://hl7.org/fhir/referencerange-meaning"/>
     </include>
     <include>
-      <system value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+      <valueSet value="http://ehealth.sundhed.dk/vs/observation-codes"/>
     </include>
     <include>
       <!--<system value="urn:oid:1.2.208.184.100.1"/>-->
