@@ -30,6 +30,10 @@
         <code value="monitoringResponsible"/>
         <display value="Monitoring responsible"/>
         <definition value="Monitoring responsible"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+        </designation>
     </concept>
     <concept>
         <code value="monitoringDelegate"/>
