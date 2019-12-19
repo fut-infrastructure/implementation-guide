@@ -21,7 +21,7 @@
         <source value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
         <target value="hhttp://ehealth.sundhed.dk/vs/careteam-participant-role"/>
         <element>
-            <code value="teleMedicineActor"/>
+            <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
             <display value="Tele medicine actor"/>
             <target>
                 <code value="teleMedicineActor"/>
@@ -30,7 +30,7 @@
             </target>
         </element>
         <element>
-            <code value="administrativePersonnel"/>
+            <code value="urn:dk:sundhed:ehealth:role:administrative_personnel"/>
             <display value="Administrative personnel"/>
             <target>
                 <code value="administrativePersonnel"/>
@@ -39,7 +39,7 @@
             </target>
         </element>
         <element>
-            <code value="healthcareProfessional"/>
+            <code value="urn:dk:sundhed:ehealth:role:healthcare_professional"/>
             <display value="Healthcare professional"/>
             <target>
                 <code value="healthcareProfessional"/>
@@ -48,7 +48,7 @@
             </target>
         </element>
         <element>
-            <code value="monitoringResponsible"/>
+            <code value="urn:dk:sundhed:ehealth:role:monitoring_responsible"/>
             <display value="Monitoring responsible"/>
             <target>
                 <code value="monitoringResponsible"/>
@@ -57,7 +57,7 @@
             </target>
         </element>
         <element>
-            <code value="treatmentResponsible"/>
+            <code value="urn:dk:sundhed:ehealth:role:treatment_responsible"/>
             <display value="Treatment responsible"/>
             <target>
                 <code value="treatmentResponsible"/>
@@ -66,7 +66,7 @@
             </target>
         </element>
         <element>
-            <code value="reportGenerator"/>
+            <code value="urn:dk:sundhed:ehealth:role:report_generator"/>
             <display value="Report, statistics and data extractor"/>
             <target>
                 <code value="reportGenerator"/>
@@ -75,7 +75,7 @@
             </target>
         </element>
         <element>
-            <code value="questionnaireEditor"/>
+            <code value="urn:dk:sundhed:ehealth:role:questionnaire_editor"/>
             <display value="Questionnaire editor"/>
             <target>
                 <code value="questionnaireEditor"/>
@@ -84,7 +84,7 @@
             </target>
         </element>
         <element>
-            <code value="administrator"/>
+            <code value="urn:dk:sundhed:ehealth:role:administrator"/>
             <display value="Administrator"/>
             <target>
                 <code value="administrator"/>
@@ -93,7 +93,7 @@
             </target>
         </element>
         <element>
-            <code value="incidentLocator"/>
+            <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
             <display value="Incident locator"/>
             <target>
                 <code value="incidentLocator"/>
@@ -102,7 +102,7 @@
             </target>
         </element>
         <element>
-            <code value="clinicalAdministrator"/>
+            <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
             <display value="Clinical administrator"/>
             <target>
                 <code value="clinicalAdministrator"/>
@@ -111,7 +111,7 @@
             </target>
         </element>
         <element>
-            <code value="userAdministrator"/>
+            <code value="urn:dk:sundhed:ehealth:role:user_administrator"/>
             <display value="User administrator"/>
             <target>
                 <code value="userAdministrator"/>
@@ -120,7 +120,7 @@
             </target>
         </element>
         <element>
-            <code value="teamAdministrator"/>
+            <code value="urn:dk:sundhed:ehealth:role:team_administrator"/>
             <display value="Team administrator"/>
             <target>
                 <code value="teamAdministrator"/>
@@ -129,7 +129,7 @@
             </target>
         </element>
         <element>
-            <code value="orderPlacer"/>
+            <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
             <display value="Order placer"/>
             <target>
                 <code value="orderPlacer"/>
@@ -138,7 +138,7 @@
             </target>
         </element>
         <element>
-            <code value="serviceAndLogistics"/>
+            <code value="urn:dk:sundhed:ehealth:role:service_and_logistics"/>
             <display value="Service and logistics"/>
             <target>
                 <code value="serviceAndLogistics"/>
@@ -147,7 +147,7 @@
             </target>
         </element>
         <element>
-            <code value="incidentReporter"/>
+            <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
             <display value="Incident reporter"/>
             <target>
                 <code value="incidentReporter"/>
@@ -156,7 +156,7 @@
             </target>
         </element>
         <element>
-            <code value="supporter"/>
+            <code value="urn:dk:sundhed:ehealth:role:supporter"/>
             <display value="Supporter"/>
             <target>
                 <code value="supporter"/>
@@ -165,7 +165,7 @@
             </target>
         </element>
         <element>
-            <code value="catalogueResponsible"/>
+            <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible"/>
             <display value="Catalogue responsible"/>
             <target>
                 <code value="catalogueResponsible"/>
@@ -174,7 +174,7 @@
             </target>
         </element>
         <element>
-            <code value="catalogueAnnotator"/>
+            <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_annotator"/>
             <display value="Catalogue annotator"/>
             <target>
                 <code value="catalogueAnnotator"/>
@@ -183,7 +183,7 @@
             </target>
         </element>
         <element>
-            <code value="contractResponsible"/>
+            <code value="urn:dk:sundhed:ehealth:role:ssl_contract_responsible"/>
             <display value="Contract responsible"/>
             <target>
                 <code value="contractResponsible"/>
