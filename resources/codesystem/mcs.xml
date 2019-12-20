@@ -2,6 +2,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="1.2.208.184.100.8--20190325"/>
     <url value="urn:oid:1.2.208.184.100.8"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.208.184.100.8"/>
+    </identifier>
     <version value="20190829"/>
     <name value="DAK-E Codes"/>
     <status value="active"/>
