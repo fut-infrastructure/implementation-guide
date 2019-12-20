@@ -8,7 +8,7 @@ In scope of the eHealth infrastructure, creation of an EpisodeOfCare resource is
  as fulfilling criteria for enrollment in a telemedical care program leading to a referral
  being made to an organization providing such program. At this point a Practitioner within
  the providing organization creates an EpisodeOfCare referring to the Patient and the
- corresponding Conditions, all in the eHealth infrastructure. Created with `status` draft,
+ corresponding Conditions, all in the eHealth infrastructure. Created with `status` planned,
  the Practitioner updates the status to active once:
 
 - a Consent to enroll in the program has been given by the Patient
