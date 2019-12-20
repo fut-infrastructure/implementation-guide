@@ -200,4 +200,13 @@
             <value value="Teamadministrator"/>
         </designation>
     </concept>
+    <concept>
+        <code value="terminologyAdministrator"/>
+        <display value="Terminology administrator"/>
+        <definition value="Terminology administrator"/>
+        <designation>
+            <language value="da"/>
+            <value value="Terminologiadministrator"/>
+        </designation>
+    </concept>
 </CodeSystem>

@@ -162,6 +162,15 @@
         </designation>
     </concept>
     <concept>
+        <code value="urn:dk:sundhed:ehealth:role:terminology_administrator"/>
+        <display value="Terminologiadministrator"/>
+        <definition value="Oprette og vedligeholde terminologi"/>
+        <designation>
+            <language value="da"/>
+            <value value="Terminologiadministrator"/>
+        </designation>
+    </concept>
+    <concept>
         <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible"/>
         <display value="Katalogansvarlig"/>
         <definition value="Oprette og vedligeholde SSL kataloger"/>

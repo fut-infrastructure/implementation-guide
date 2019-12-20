@@ -129,6 +129,15 @@
             </target>
         </element>
         <element>
+            <code value="urn:dk:sundhed:ehealth:role:terminology_administrator"/>
+            <display value="Terminologidministrator"/>
+            <target>
+                <code value="terminologyAdministrator"/>
+                <display value="Terminology administrator"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
             <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
             <display value="Bestiller af udstyr"/>
             <target>
