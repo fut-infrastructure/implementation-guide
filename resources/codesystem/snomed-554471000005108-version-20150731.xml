@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="SnomedCT_RF2Release_DK_20150731"/>
+    <url value="http://snomed.info/sct/554471000005108/version/20150731"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.6.96"/>
+    </identifier>
+    <version value="20150731"/>
+    <name value="Danish-SNOMED-CT-Extension"/>
+    <title value="Danish SNOMED CT Extension"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2019-12-27"/>
+    <publisher value="Danish Release Centre for SNOMED CT"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="https://sundhedsdatastyrelsen.dk/snomedct"/>
+        </telecom>
+    </contact>
+    <description value="Danish SNOMED CT Extension"/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="551411000005104"/>
+        <display value="surgical gastroenterology"/>
+        <definition value="surgical gastroenterology"/>
+        <designation>
+            <language value="da"/>
+            <value value="kirurgisk gastroenterologi"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554011000005107"/>
+        <display value="forensic medicine"/>
+        <definition value="forensic medicine"/>
+        <designation>
+            <language value="da"/>
+            <value value="retsmedicin"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="394812008"/>
+        <display value="dental medicine specialities"/>
+        <definition value="dental medicine specialities"/>
+        <designation>
+            <language value="da"/>
+            <value value="odontologiske specialer"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554221000005108"/>
+        <display value="dwilling place"/>
+        <definition value="dwilling place"/>
+        <designation>
+            <language value="da"/>
+            <value value="bosted"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554031000005103"/>
+        <display value="dietician clinic"/>
+        <definition value="dietician clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="diætistklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="546821000005103"/>
+        <display value="occupational therapy clinic"/>
+        <definition value="occupational therapy clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="ergoterapiklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="547011000005103"/>
+        <display value="fysiotherapy clinic"/>
+        <definition value="fysiotherapy clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="fysioterapiklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="546811000005109"/>
+        <display value="rehabilitation center"/>
+        <definition value="rehabilitation center"/>
+        <designation>
+            <language value="da"/>
+            <value value="genoptræningscenter"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550621000005101"/>
+        <display value="district nursing"/>
+        <definition value="district nursing"/>
+        <designation>
+            <language value="da"/>
+            <value value="hjemmesygepleje"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550631000005103"/>
+        <display value="midwife clinic"/>
+        <definition value="midwife clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="jordemoderklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550641000005106"/>
+        <display value="chiropractic clinic"/>
+        <definition value="chiropractic clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="kiropraktorklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550651000005108"/>
+        <display value="medical laboratory"/>
+        <definition value="medical laboratory"/>
+        <designation>
+            <language value="da"/>
+            <value value="lægelaboratorium"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550661000005105"/>
+        <display value="emergency medical service"/>
+        <definition value="emergency medical service"/>
+        <designation>
+            <language value="da"/>
+            <value value="lægevagt"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554211000005102"/>
+        <display value="prehospital unit"/>
+        <definition value="prehospital unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="præhospitalsenhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550711000005101"/>
+        <display value="psychology counselling clinic"/>
+        <definition value="psychology counselling clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="psykologisk rådgivningsklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550671000005100"/>
+        <display value="medical specialist practice site"/>
+        <definition value="medical specialist practice site"/>
+        <designation>
+            <language value="da"/>
+            <value value="speciallægepraksis"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554061000005105"/>
+        <display value="Chiropodist clinic"/>
+        <definition value="Chiropodist clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="fodterapeutklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554041000005106"/>
+        <display value="health administration"/>
+        <definition value="health administration"/>
+        <designation>
+            <language value="da"/>
+            <value value="sundhedsforvaltning"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554021000005101"/>
+        <display value="health visitors"/>
+        <definition value="health visitors"/>
+        <designation>
+            <language value="da"/>
+            <value value="sundhedspleje"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550681000005102"/>
+        <display value="dental practice"/>
+        <definition value="dental practice"/>
+        <designation>
+            <language value="da"/>
+            <value value="tandlægepraksis"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550691000005104"/>
+        <display value="Dental care clinic"/>
+        <definition value="Dental care clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="tandplejeklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550701000005104"/>
+        <display value="dental technician clinic"/>
+        <definition value="dental technician clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="tandteknisk klinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554231000005106"/>
+        <display value="vaccination clinic"/>
+        <definition value="vaccination clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="vaccinationsklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554051000005108"/>
+        <display value="Reflexology clinic"/>
+        <definition value="Reflexology clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="zoneterapiklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550811000005108"/>
+        <display value="admistrative unit"/>
+        <definition value="admistrative unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="administrativ enhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="547211000005108"/>
+        <display value="municipality"/>
+        <definition value="municipality"/>
+        <designation>
+            <language value="da"/>
+            <value value="kommune"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550891000005100"/>
+        <display value="private"/>
+        <definition value="private"/>
+        <designation>
+            <language value="da"/>
+            <value value="privat"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550881000005103"/>
+        <display value="region"/>
+        <definition value="region"/>
+        <designation>
+            <language value="da"/>
+            <value value="region"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550411000005105"/>
+        <display value="Other health institution"/>
+        <definition value="Other health institution"/>
+        <designation>
+            <language value="da"/>
+            <value value="anden sundhedsinstitution"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554851000005102"/>
+        <display value="Asylum centre"/>
+        <definition value="Asylum centre"/>
+        <designation>
+            <language value="da"/>
+            <value value="asylcenter"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550861000005106"/>
+        <display value="fysiotherapy and occupational clinic"/>
+        <definition value="fysiotherapy and occupational clinic"/>
+        <designation>
+            <language value="da"/>
+            <value value="fysioterapi- og ergoterapiklinik"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554881000005108"/>
+        <display value="handicap and psychiatry"/>
+        <definition value="handicap and psychiatry"/>
+        <designation>
+            <language value="da"/>
+            <value value="handicap og psykiatri"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554861000005100"/>
+        <display value="handicap"/>
+        <definition value="handicap"/>
+        <designation>
+            <language value="da"/>
+            <value value="handicap"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554821000005109"/>
+        <display value="home care"/>
+        <definition value="home care"/>
+        <designation>
+            <language value="da"/>
+            <value value="hjemmepleje"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554411000005101"/>
+        <display value="employment agency"/>
+        <definition value="employment agency"/>
+        <designation>
+            <language value="da"/>
+            <value value="jobcenter"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554871000005105"/>
+        <display value="psychiatry"/>
+        <definition value="psychiatry"/>
+        <designation>
+            <language value="da"/>
+            <value value="psykiatri"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550821000005102"/>
+        <display value="service unit"/>
+        <definition value="service unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="serviceenhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550871000005101"/>
+        <display value="emergency admission unit"/>
+        <definition value="emergency admission unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="akutmodtageenhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554241000005103"/>
+        <display value="technical location number"/>
+        <definition value="technical location number"/>
+        <designation>
+            <language value="da"/>
+            <value value="teknisk lokationsnummer"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550841000005107"/>
+        <display value="research unit"/>
+        <definition value="research unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="forskningsenhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550851000005109"/>
+        <display value="clinical unit"/>
+        <definition value="clinical unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="klinisk enhed"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="551611000005102"/>
+        <display value="surgical ward"/>
+        <definition value="surgical ward"/>
+        <designation>
+            <language value="da"/>
+            <value value="operationsgang"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="554071000005100"/>
+        <display value="hospital pharmacy"/>
+        <definition value="hospital pharmacy"/>
+        <designation>
+            <language value="da"/>
+            <value value="sygehusapotek"/>
+        </designation>
+    </concept>
+    <concept>
+        <code value="550831000005104"/>
+        <display value="education unit"/>
+        <definition value="education unit"/>
+        <designation>
+            <language value="da"/>
+            <value value="uddannelsesenhed"/>
+        </designation>
+    </concept>
+</CodeSystem>
