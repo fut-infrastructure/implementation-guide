@@ -21,6 +21,33 @@
             <system value="http://ehealth.sundhed.dk/cs/sor-organization-specialty"/>
         </include>
         <include>
+            <system value="http://snomed.info/sct/554471000005108/version/20150731"/>
+            <concept>
+                <code value="394812008"/>
+                <display value="Dental medicine specialties"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Dental medicine specialties"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="551411000005104"/>
+                <display value="Surgical gastroenterology"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Surgical gastroenterology"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="554011000005107"/>
+                <display value="Forensic medicine"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Forensic medicine"/>
+                </designation>
+            </concept>
+        </include>
+        <include>
             <system value="http://snomed.info/sct"/>
             <concept>
                 <code value="394537008"/>
@@ -287,14 +314,6 @@
                 </designation>
             </concept>
             <concept>
-                <code value="394812008"/>
-                <display value="Dental medicine specialties"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Dental medicine specialties"/>
-                </designation>
-            </concept>
-            <concept>
                 <code value="394821009"/>
                 <display value="Occupational medicine"/>
                 <designation>
@@ -380,22 +399,6 @@
                 <designation>
                     <language value="en-US"/>
                     <value value="Blood banking and transfusion medicine (specialty)"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="551411000005104"/>
-                <display value="Surgical gastroenterology"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Surgical gastroenterology"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="554011000005107"/>
-                <display value="Forensic medicine"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Forensic medicine"/>
                 </designation>
             </concept>
             <concept>
