@@ -1,0 +1,124 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="document-query"/>
+   <status value="active"/>
+   <date value="2019-12-30T11:48:33+00:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="document-query"/>
+      <version value="1.0.0"/>
+   </software>
+   <implementation>
+      <description value="eHealth document-query service"/>
+      <url value="https://document-query.local.ehealth.sundhed.dk/fhir"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <type value="Binary"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+         </profile>
+      </resource>
+      <resource>
+         <type value="DocumentReference"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+         </profile>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="current | superseded"/>
+         </searchParam>
+         <searchParam>
+            <name value="category"/>
+            <type value="token"/>
+            <documentation value="Categorization of document"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="Document creation time"/>
+         </searchParam>
+         <searchParam>
+            <name value="event"/>
+            <type value="token"/>
+            <documentation value="Main clinical acts documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="facility"/>
+            <type value="token"/>
+            <documentation value="Kind of facility where patient was seen"/>
+         </searchParam>
+         <searchParam>
+            <name value="format"/>
+            <type value="token"/>
+            <documentation value="Format/content rules for the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient"/>
+            <type value="reference"/>
+            <documentation value="Who/what is the subject of the document"/>
+         </searchParam>
+         <searchParam>
+            <name value="patient-identifier"/>
+            <type value="token"/>
+            <documentation value="Who/what is the subject of the document (identifier)"/>
+         </searchParam>
+         <searchParam>
+            <name value="period"/>
+            <type value="date"/>
+            <documentation value="Time of service that is being documented"/>
+         </searchParam>
+         <searchParam>
+            <name value="setting"/>
+            <type value="token"/>
+            <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
+         </searchParam>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Kind of document (LOINC if possible)"/>
+         </searchParam>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+      </resource>
+      <operation>
+         <name value="retrieve-document"/>
+         <definition>
+            <reference value="https://document-query.local.ehealth.sundhed.dk/fhir/OperationDefinition/Binary--retrieve-document"/>
+         </definition>
+      </operation>
+   </rest>
+</CapabilityStatement>

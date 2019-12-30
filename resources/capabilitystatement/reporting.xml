@@ -1,0 +1,208 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+   <id value="reporting"/>
+   <status value="active"/>
+   <date value="2019-12-30T11:50:40+00:00"/>
+   <publisher value="Not provided"/>
+   <kind value="instance"/>
+   <software>
+      <name value="reporting"/>
+      <version value="0.1.0"/>
+   </software>
+   <implementation>
+      <description value="eHealth reporting service"/>
+      <url value="https://reporting.local.ehealth.sundhed.dk/fhir"/>
+   </implementation>
+   <fhirVersion value="3.0.1"/>
+   <acceptUnknown value="extensions"/>
+   <format value="application/fhir+xml"/>
+   <format value="application/fhir+json"/>
+   <rest>
+      <mode value="server"/>
+      <resource>
+         <type value="Binary"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <conditionalDelete value="multiple"/>
+      </resource>
+      <resource>
+         <type value="OperationDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+      </resource>
+      <resource>
+         <type value="StructureDefinition"/>
+         <profile>
+            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <searchParam>
+            <name value="type"/>
+            <type value="token"/>
+            <documentation value="Type defined or constrained by this structure"/>
+         </searchParam>
+      </resource>
+      <operation>
+         <name value="schedule-careplan-and-episode-of-care-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careplan-and-episode-of-care-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-careplan-and-episode-of-care-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplan-and-episode-of-care-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-careplan-customization-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careplan-customization-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-careplan-customization-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplan-customization-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-careplan-duration-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careplan-duration-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-careplan-duration-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplan-duration-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-careplans-by-patient"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careplans-by-patient"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-careplans-by-patient"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplans-by-patient"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-careteam-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careteam-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-careteam-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careteam-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-measurement-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-measurement-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-measurement-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-measurement-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-patient-devices"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-patient-devices"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-patient-devices"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-patient-devices"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-patient-gdpr"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-patient-gdpr"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-patient-gdpr"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-patient-gdpr"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-patient-total"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-patient-total"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-patient-total"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-patient-total"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-practitioner-gdpr"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-practitioner-gdpr"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-practitioner-gdpr"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-practitioner-gdpr"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-practitioner-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-practitioner-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-practitioner-stats"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-practitioner-stats"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="schedule-ssl-orders"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-ssl-orders"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-ssl-orders"/>
+         <definition>
+            <reference value="https://reporting.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-ssl-orders"/>
+         </definition>
+      </operation>
+   </rest>
+</CapabilityStatement>
