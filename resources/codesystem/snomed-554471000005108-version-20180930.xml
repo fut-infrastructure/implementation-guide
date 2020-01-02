@@ -31,31 +31,4 @@
             <value value="osteopatiklinik"/>
         </designation>
     </concept>
-    <concept>
-        <code value=""/>
-        <display value=""/>
-        <definition value=""/>
-        <designation>
-            <language value="da"/>
-            <value value=""/>
-        </designation>
-    </concept>
-    <concept>
-        <code value=""/>
-        <display value=""/>
-        <definition value=""/>
-        <designation>
-            <language value="da"/>
-            <value value=""/>
-        </designation>
-    </concept>
-    <concept>
-        <code value=""/>
-        <display value=""/>
-        <definition value=""/>
-        <designation>
-            <language value="da"/>
-            <value value=""/>
-        </designation>
-    </concept>
 </CodeSystem>
