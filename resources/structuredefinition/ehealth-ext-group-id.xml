@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-group-id" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
-  <name value="MeetingURL" />
+  <name value="ehealth-group-id" />
   <title value="eHealth Group ID" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
