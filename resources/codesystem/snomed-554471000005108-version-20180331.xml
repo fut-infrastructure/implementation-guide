@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="SnomedCT_ManagedServiceDK_PRODUCTION_DK1000005_20180331T120000Z"/>
+    <id value="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z"/>
     <url value="http://snomed.info/sct/554471000005108/version/20180331"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
