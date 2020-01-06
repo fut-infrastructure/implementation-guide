@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="SnomedCT_RF2Release_DK_20150731"/>
+    <id value="SnomedCT-RF2Release-DK-20150731"/>
     <url value="http://snomed.info/sct/554471000005108/version/20150731"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
