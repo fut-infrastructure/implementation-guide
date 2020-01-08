@@ -27,6 +27,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
 - Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/reference-range-type`
 
+### NamingSystems
+- Added ehealth-identifier
+
 ### ConceptMaps
 ### Resource/profile changes
  - Added deceased extension for use on `Person` when doing `Person$match`
