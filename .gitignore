@@ -4,6 +4,7 @@ temp
 txCache
 .idea/
 *.iml
+*.log
 resources/implementationguide/ig-expansion-parameters.json
 resources/implementationguide/ig-new.json
 resources/implementationguide/ig-new.xml
