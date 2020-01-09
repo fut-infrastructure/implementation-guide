@@ -75,6 +75,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Maximum allow 1 senderCareTeam/recipientCareTeam (multiple were allowed earlier by error)
 - ReasonCode extended to allow task-category codes
 - Added extension for (optional) group-id to correlate different messages
+- Fixed search parameter for restriction-category
 
 ## 2019.6 (2019-11-08)
 
