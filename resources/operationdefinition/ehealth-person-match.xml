@@ -6,7 +6,7 @@
   <status value="active" />
   <kind value="operation" />
   <date value="2019-10-16" />
-  <description value="This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource" />
+  <description value="This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource." />
   <idempotent value="true" />
   <code value="match" />
   <resource value="Person" />
@@ -18,7 +18,7 @@
     <use value="in" />
     <min value="1" />
     <max value="1" />
-    <documentation value="The social security number of the person on which this operation is executed, wrapped in a Person." />
+    <documentation value="The social security number of the person on which this operation is executed, wrapped in a Person. If the person exists in the infrastructure a link to the patient is provided" />
     <type value="Person" />
   </parameter>
   <parameter>
