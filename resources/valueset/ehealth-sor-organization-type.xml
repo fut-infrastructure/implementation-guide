@@ -143,6 +143,14 @@
                 </designation>
             </concept>
             <concept>
+                <code value="550681000005102"/>
+                <display value="dental practice"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Dental practice"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="550691000005104"/>
                 <display value="Dental care clinic"/>
                 <designation>
@@ -332,6 +340,14 @@
                 <designation>
                     <language value="en-US"/>
                     <value value="Education unit"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="554031000005103"/>
+                <display value="dietician clinic"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Dietician clinic"/>
                 </designation>
             </concept>
         </include>
@@ -549,6 +565,14 @@
                 <designation>
                     <language value="en-US"/>
                     <value value="Additional values"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="264372000"/>
+                <display value="Pharmacy"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Pharmacy"/>
                 </designation>
             </concept>
         </include>
