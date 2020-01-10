@@ -91,13 +91,6 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
       </binding>
     </element>
-    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept.coding">
-      <path value="Appointment.extension.valueCodeableConcept.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
-      </binding>
-    </element>
     <element id="Appointment.extension:releasableResource">
       <path value="Appointment.extension" />
       <sliceName value="releasableResource" />
