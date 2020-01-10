@@ -74,6 +74,11 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-thread-id" />
       </type>
     </element>
+    <element id="Communication.extension:threadId.valueString:valueString">
+      <path value="Communication.extension.valueString" />
+      <sliceName value="valueString" />
+      <meaningWhenMissing value="If not set by the creator of the resource, the service creates an UUID and sets it as the value" />
+    </element>
     <element id="Communication.extension:period">
       <path value="Communication.extension" />
       <sliceName value="period" />
@@ -127,7 +132,6 @@
     <element id="Communication.extension:groupId">
       <path value="Communication.extension" />
       <sliceName value="groupId" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
