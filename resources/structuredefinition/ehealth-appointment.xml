@@ -76,16 +76,17 @@
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis" />
       </type>
-    </element>
-    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept">
-      <path value="Appointment.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+      <meaningWhenMissing value="When the extension value is missing the resource is under unknown jurisdiction" />
       <constraint>
         <key value="governance-1" />
         <severity value="error" />
         <human value="When extension is used a Episode of Care MUST be referenced" />
         <expression value="%resource.supportingInformation.reference.contains('EpisodeOfCare/')" />
       </constraint>
+    </element>
+    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept">
+      <path value="Appointment.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <binding>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
