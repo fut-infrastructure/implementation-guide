@@ -15,6 +15,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Communication">
+      <path value="Communication" />
+      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition.." />
+    </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
       <slicing>
@@ -30,7 +34,6 @@
       <sliceName value="recipientCareTeam" />
       <short value="CareTeam message recipient" />
       <definition value="CareTeam message recipient" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
@@ -41,7 +44,6 @@
       <sliceName value="senderCareTeam" />
       <short value="CareTeam message sender" />
       <definition value="CareTeam message sender" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />
@@ -124,16 +126,6 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/priority" />
       </binding>
     </element>
-    <element id="Communication.extension:groupId">
-      <path value="Communication.extension" />
-      <sliceName value="groupId" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
-      </type>
-    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
@@ -199,13 +191,15 @@
       <path value="Communication.category.coding" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-category" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/message-category" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/cs/message-category" />
+      <fixedUri value="http://ehealth.sundhed.dk/message-category" />
     </element>
     <element id="Communication.category:DkTmCategory.coding.code">
       <path value="Communication.category.coding.code" />
@@ -241,7 +235,7 @@
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/cs/message-medium" />
+      <fixedUri value="http://ehealth.sundhed.dk/message-medium" />
     </element>
     <element id="Communication.medium:DkTmMedium.coding.code">
       <path value="Communication.medium.coding.code" />
@@ -316,13 +310,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <aggregation value="referenced" />
       </type>
-    </element>
-    <element id="Communication.reasonCode.coding">
-      <path value="Communication.reasonCode.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-reasonCode" />
-      </binding>
     </element>
     <element id="Communication.reasonReference">
       <path value="Communication.reasonReference" />
