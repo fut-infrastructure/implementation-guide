@@ -186,5 +186,26 @@
         </valueSetReference>
       </binding>
     </element>
+    <element id="Observation.component.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component.referenceRange.type">
+      <path value="Observation.component.referenceRange.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationRangeMeaning" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
+        </valueSetReference>
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>

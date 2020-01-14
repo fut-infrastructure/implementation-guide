@@ -37,6 +37,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Observation (ehealth-observation)
 - Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Changed strength of `Observation.component.code` value set binding to "required"
+- `Observation.component.referenceRange.type` was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
+- `Observation.component.value[x]` was changed to contain either `Quantity` or `CodeableConcept`
 
 ## 2019.6.1 (2019-12-04)
 
@@ -63,12 +65,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Max. one CareTeam per participant (0..n by mistake)
 - Organization no longer possible as responsible
 - Added extension for (optional) group-id to correlate different appointments
+- Added search parameter for group-id
 
 #### VideoAppointment (ehealth-videoappointment)
 - Max. one CareTeam per participant (0..n by mistake)
 - At most one responsible party (was 0..n by mistake)
 - Organization no longer possible as responsible
 - Added extension for (optional) group-id to correlate different video appointments
+- Added search parameter for group-id
 
 #### Message (ehealth-message)
 - Added "title" extension to allow message "subject"
@@ -76,6 +80,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - ReasonCode extended to allow task-category codes
 - Added extension for (optional) group-id to correlate different messages
 - Fixed search parameter for restriction-category
+- Added search parameter for group-id
 
 ## 2019.6 (2019-11-08)
 

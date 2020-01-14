@@ -15,10 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Communication">
-      <path value="Communication" />
-      <definition value="An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency was notified about a reportable condition.." />
-    </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
       <slicing>
@@ -34,6 +30,7 @@
       <sliceName value="recipientCareTeam" />
       <short value="CareTeam message recipient" />
       <definition value="CareTeam message recipient" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam" />
@@ -44,6 +41,7 @@
       <sliceName value="senderCareTeam" />
       <short value="CareTeam message sender" />
       <definition value="CareTeam message sender" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam" />
@@ -75,6 +73,11 @@
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-thread-id" />
       </type>
+    </element>
+    <element id="Communication.extension:threadId.valueString:valueString">
+      <path value="Communication.extension.valueString" />
+      <sliceName value="valueString" />
+      <meaningWhenMissing value="If not set by the creator of the resource, the service creates an UUID and sets it as the value" />
     </element>
     <element id="Communication.extension:period">
       <path value="Communication.extension" />
@@ -125,6 +128,15 @@
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/priority" />
       </binding>
+    </element>
+    <element id="Communication.extension:groupId">
+      <path value="Communication.extension" />
+      <sliceName value="groupId" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
+      </type>
     </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
@@ -191,15 +203,13 @@
       <path value="Communication.category.coding" />
       <binding>
         <strength value="required" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/message-category" />
-        </valueSetReference>
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-category" />
       </binding>
     </element>
     <element id="Communication.category:DkTmCategory.coding.system">
       <path value="Communication.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/message-category" />
+      <fixedUri value="http://ehealth.sundhed.dk/cs/message-category" />
     </element>
     <element id="Communication.category:DkTmCategory.coding.code">
       <path value="Communication.category.coding.code" />
@@ -235,7 +245,7 @@
     <element id="Communication.medium:DkTmMedium.coding.system">
       <path value="Communication.medium.coding.system" />
       <min value="1" />
-      <fixedUri value="http://ehealth.sundhed.dk/message-medium" />
+      <fixedUri value="http://ehealth.sundhed.dk/cs/message-medium" />
     </element>
     <element id="Communication.medium:DkTmMedium.coding.code">
       <path value="Communication.medium.coding.code" />
@@ -310,6 +320,13 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
         <aggregation value="referenced" />
       </type>
+    </element>
+    <element id="Communication.reasonCode.coding">
+      <path value="Communication.reasonCode.coding" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/message-reasonCode" />
+      </binding>
     </element>
     <element id="Communication.reasonReference">
       <path value="Communication.reasonReference" />
