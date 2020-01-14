@@ -49,9 +49,6 @@
     <element id="Observation.code">
       <path value="Observation.code" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
-        </extension>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/observation-codes" />
       </binding>
@@ -150,9 +147,6 @@
     <element id="Observation.referenceRange.type">
       <path value="Observation.referenceRange.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationRangeMeaning" />
-        </extension>
         <strength value="extensible" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
@@ -198,9 +192,6 @@
     <element id="Observation.component.referenceRange.type">
       <path value="Observation.component.referenceRange.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationRangeMeaning" />
-        </extension>
         <strength value="extensible" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
