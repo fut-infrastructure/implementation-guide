@@ -189,14 +189,5 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Observation.component.referenceRange.type">
-      <path value="Observation.component.referenceRange.type" />
-      <binding>
-        <strength value="extensible" />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/reference-range-type" />
-        </valueSetReference>
-      </binding>
-    </element>
   </differential>
 </StructureDefinition>
