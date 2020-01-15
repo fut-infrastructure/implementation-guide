@@ -6,14 +6,33 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 
+Document Query Service and Reporting service added 
+- capability statements
+- navigation bar
+
+Example operations updated.
+
 ### Custom operations
+
 #### System operations
+
 #### Instance operations
 
 ### Code systems
 - Added `urn:oid:1.2.208.184.100.9`
 - Added `urn:oid:1.2.208.184.100.10`
-- Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs`
+- Added `http://ehealth.sundhed.dk/cs/jurisdiction`
+- Added `http://ehealth.sundhed.dk/cs/message-category`
+- Added `http://ehealth.sundhed.dk/cs/message-medium`
+- Added `http://snomed.info/sct/554471000005108/version/20150731`
+- Added `http://snomed.info/sct/554471000005108/version/20180331`
+- Added `http://snomed.info/sct/554471000005108/version/20180930`
+- Changed `http://ehealth.sundhed.dk/cs/careteam-participant-role`
+- Changed `http://ehealth.sundhed.dk/cs/oio-bpp-roles`
+- Changed `http://ehealth.sundhed.dk/cs/organization-relation-type`
+- Changed `https://www.iso.org/obp/ui/#iso:code:3166:DK`
+- Changed `urn:oid:1.2.208.184.100.8`
+- Changed `urn:oid:1.2.208.176.2.1`
 - Removed `http://ehealth.sundhed.dk/cs/document-class`
 - Removed `http://ehealth.sundhed.dk/cs/document-type`
 - Removed `http://www.example.com/medcom/document-class`
@@ -25,20 +44,94 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
+- Added `http://ehealth.sundhed.dk/vs/jurisdiction`
+- Added `http://ehealth.sundhed.dk/vs/message-reasonCode`
+- Changed `http://ehealth.sundhed.dk/vs/document-class`
+- Changed `http://ehealth.sundhed.dk/vs/document-type`
+- Changed `http://ehealth.sundhed.dk/vs/event-type-codes`
+- Changed `http://ehealth.sundhed.dk/vs/facility-type-codes`
+- Changed `http://ehealth.sundhed.dk/vs/format-codes`
+- Changed `http://ehealth.sundhed.dk/vs/organization-specialty`
+- Changed `http://ehealth.sundhed.dk/vs/practice-setting-codes`
+- Changed `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Changed `http://ehealth.sundhed.dk/vs/regional-subdivision-codes`
+- Changed `http://ehealth.sundhed.dk/vs/sor-organization-specialty`
+- Changed `http://ehealth.sundhed.dk/vs/sor-organization-type`
 - Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/reference-range-type`
 
 ### NamingSystems
-- Added ehealth-identifier
+- Added ehealth-identifier - _An identifier used internally in eHealth, possibly used for identifiers when transforming to CDA document representations of resources_
 
 ### ConceptMaps
+- Removed `http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir`
+- Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+
 ### Resource/profile changes
  - Added deceased extension for use on `Person` when doing `Person$match`
+
+### ActivityDefinition (ehealth-activitydefinition)
+- ActivityDefinition.jurisdiction bound to ValueSet "http://ehealth.sundhed.dk/vs/jurisdiction"
+
+### Appointment (ehealth-appointment)
+- Updated introduction to describe group-id
+- Added
+  - Appointment.extionsion:responsible.value[x]:valueReference
+  - Appointment.extension:groupId
+  - Appointment.extension:legalBasis
+  - Appointment.extionsen:releasableResource
+- Changed
+  - Appointment.supportingInformation
+    - Cardinality max 1
+    - Reference to ehealth-episodeofcare
+  - Appointment.participant.extension:careteam
+    - Cardinality max 1
+
+### AppointmentResponse (ehealth-appointmentresponse)
+- Removed
+
+### EpisodeOfCare (ehealth-episodeofcare)
+- Updated introduction to mention correct initial status
+
+### Library (ehealth-library)
+- Library.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`
+
+### Message (ehealth-message)
+- Updated introduction to explain use of group-id
+- Added
+  - Communication.extension:threadId.valueString:valueString
+  - Communication.extension:groupId
+- Profiled
+  - Communication.reasonCode.coding
+
+### Organization (ehealth-organization)
+- Updated introduction to mention organizations not maintained by SOR or STS-ORG registries
 
 #### Observation (ehealth-observation)
 - Changed element `Observation.component.code` value set binding to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Changed strength of `Observation.component.code` value set binding to "required"
 - `Observation.component.referenceRange.type` was changed to `http://ehealth.sundhed.dk/vs/reference-range-type`
 - `Observation.component.value[x]` was changed to contain either `Quantity` or `CodeableConcept`
+
+#### PlanDefinition (ehealth-plandefinition)
+- PlanDefinition.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`
+
+#### Questionnaire (ehealth-questionnaire)
+- Profiled
+  - Questionnaire.jurisdiction
+
+#### VideoAppointment (ehealth-videoappointment)
+- Updated introduction to mention vmr-uri, host pin code, group id
+- Added
+  - Appointment.extension.value[x]
+  - Appointment.extension.groupId
+- Changed
+  - Appointment.responsible
+    - cardinality 0..1
+  - Appointment.participant.careteam
+    - cardinality 0..1
+
+### Events
+- Added description of EHealthContextEvent
 
 ## 2019.6.1 (2019-12-04)
 
