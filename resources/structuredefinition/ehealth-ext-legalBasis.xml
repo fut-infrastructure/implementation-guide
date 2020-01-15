@@ -29,12 +29,5 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept.coding">
-      <path value="Extension.valueCodeableConcept.coding" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
-      </binding>
-    </element>
   </differential>
 </StructureDefinition>
