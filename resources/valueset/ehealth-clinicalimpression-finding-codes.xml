@@ -31,6 +31,70 @@
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
+                <code value="281300000"/>
+                <display value="Below reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Below reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="281302008"/>
+                <display value="Above reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Above reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="281301001"/>
+                <display value="Within reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Within reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="394844007"/>
+                <display value="Outside reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Outside reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="442686002"/>
+                <display value="Measurement finding below reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement finding below reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="442756004"/>
+                <display value="Measurement finding above reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement finding above reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="442082004"/>
+                <display value="Measurement finding within reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement finding within reference range"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="442096005"/>
+                <display value="Measurement finding outside reference range"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Measurement finding outside reference range"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="449171008"/>
                 <display value="Oxygen saturation below reference range"/>
                 <designation>
