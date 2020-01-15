@@ -55,9 +55,73 @@
                     <value value="Pt—Legeme; masse = ? kg"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="NPU27281"/>
+                <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                </designation>
+            </concept>
         </include>
         <include>
             <system value="urn:oid:1.2.208.184.100.8"/>
+            <concept>
+                <code value="MCS88015"/>
+                <display value="FEV1;Lunge"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88016"/>
+                <display value="FVC;Lunge"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Lunge—Lungefunktionsundersøgelse vitalkapasitet FVC; vol. = ? L"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88017"/>
+                <display value="FEV1/FVC;Lunge"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Lunge—FEV1/FVC; ratio = ?"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88019"/>
+                <display value="Blodtryk hjemme systolisk;Arm"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88020"/>
+                <display value="Blodtryk hjemme diastolisk;Arm"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88021"/>
+                <display value="MRC skala;Pt(KOL)"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="MCS88023"/>
+                <display value="FEV1 af forventet værdi;Pt(KOL)"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Pt(KOL) - FEV1 i % af den forventede værdi (efter højde,alder og køn); ratio = ?"/>
+                </designation>
+            </concept>
             <concept>
                 <code value="MCS88050"/>
                 <display value="Rejse sætte sig testen;Pt"/>
