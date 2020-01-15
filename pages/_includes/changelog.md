@@ -17,6 +17,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed `http://ehealth.sundhed.dk/cs/document-class`
 - Removed `http://ehealth.sundhed.dk/cs/document-type`
 - Removed `http://www.example.com/medcom/document-class`
+- Added `urn:oid:1.2.208.176.2.4`
+- Updated `urn:oid:1.2.208.176.2.1`
+- Updated `urn:oid:1.2.208.184.100.8`
 
 ### ValueSets
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
@@ -26,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs`
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs`
 - Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/reference-range-type`
+- Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/activitydefinition-code`
 
 ### NamingSystems
 - Added ehealth-identifier
