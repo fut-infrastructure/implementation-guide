@@ -26,6 +26,7 @@
     </contact>
     <description value="Procedure and observation codes used for communication and administration of laboratory results in Denmark."/>
     <caseSensitive value="true"/>
+    <content value="complete"/>
     <concept>
         <code value="DIB0010"/>
         <display value="Følsomhed højre;Fod"/>
