@@ -549,7 +549,8 @@
     </concept>
     <concept>
         <code value="MCS88106"/>
-        <display value="Stoffer;Pt(problematisk stofbrug)&#xa;"/>
+<!--        <display value="Stoffer;Pt(problematisk stofbrug)&#xa;"/>-->
+        <display value="Stoffer;Pt(problematisk stofbrug)"/>
         <definition value="Pt(problematisk stofbrug)—Hash 4 eller flere dg inden for den seneste mnd og/eller andre euforiserende stoffer, som fx amfetamin, kokain og ecstasy 1 eller flere dg inden for den seneste mnd; arb.k.(0 1) = ?"/>
     </concept>
     <concept>
