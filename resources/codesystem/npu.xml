@@ -16,7 +16,7 @@
   </contact>
   <description value="Observation codes used for communication and administration of laboratory results in Denmark."/>
   <caseSensitive value="true"/>
-  <content value="complete"/>
+  <content value="fragment"/>
   <concept>
     <code value="NPU03011"/>
     <display value="O2 sat.;Hb(aB)"/>
