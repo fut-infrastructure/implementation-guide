@@ -1,65 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="1.2.208.176.2.1--20190829"/>
-    <url value="urn:oid:1.2.208.176.2.1"/>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:oid:1.2.208.176.2.1"/>
-    </identifier>
-    <version value="20190829"/>
-    <name value="Danish NPU Codes (NPU)"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <date value="2019-01-24"/>
-    <publisher value="The Danish Health Data Authority"/>
-    <contact>
-        <telecom>
-            <system value="url"/>
-            <value value="http://sundhedsdatastyrelsen.dk/npu"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="labterm@sundhedsdata.dk"/>
-        </telecom>
-    </contact>
-    <description value="Observation codes used for communication and administration of laboratory results in Denmark."/>
-    <caseSensitive value="true"/>
-    <content value="fragment"/>
-    <concept>
-        <code value="NPU03011"/>
-        <display value="O2 sat.;Hb(aB)"/>
-        <definition value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
-        <designation>
-            <language value="da"/>
-            <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
-        </designation>
-    </concept>
-    <concept>
-        <code value="NPU21692"/>
-        <display value="Puls;Hjerte"/>
-        <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
-        <designation>
-            <language value="da"/>
-            <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
-        </designation>
-    </concept>
-    <concept>
-        <code value="NPU03804"/>
-        <display value="Legeme vægt; Pt"/>
-        <definition value="Pt—Legeme; masse = ? kg"/>
-        <designation>
-            <language value="da"/>
-            <value value="Pt—Legeme; masse = ? kg"/>
-        </designation>
-    </concept>
-    <concept>
-        <code value="NPU27281"/>
-        <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
-        <definition value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
-        <designation>
-            <language value="en-US"/>
-            <value value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
-        </designation>
-    </concept>
-
+   <id value="1.2.208.176.2.1--20190829"/>
+   <url value="urn:oid:1.2.208.176.2.1"/>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.208.176.2.1"/>
+   </identifier>
+   <name value="npu-dk"/>
+   <title value="NPU DK"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-12-19T00:00:00+01:00"/>
+   <publisher value="Sundhedsdatastyrelsen"/>
+   <contact>
+      <telecom>
+         <system value="email"/>
+         <value value="labterm@sundhedsdata.dk"/>
+      </telecom>
+   </contact>
+   <description value="It is the translation into Danish of the International NPU Terminology. The NPU terminology defines types of clinical laboratory results expressed as patient properties, with measurement units where relevant, and with individual identifiers. The NPU terminology is owned by: the International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC). The Danish Health Data Authority (see OID {iso(1) member-body(2) dk(208) nsi(176)}) serves as the international repository for the international version. Child OIDs may be registered by the Danish Health Data Authority on decision by the NPU Terminology Steering Committee. OIDs for the national versions are registered by the National Release Centers."/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="NPU03011"/>
+      <display value="Hb(Fe; O&lt;sub>2&lt;/sub>-bind.; aB)—Oxygen(O&lt;sub>2&lt;/sub>); mætn. = ?"/>
+      <definition value="Hb(Fe; O&lt;sub>2&lt;/sub>-bind.; aB)—Oxygen(O&lt;sub>2&lt;/sub>); mætn. = ?"/>
+   </concept>
+   <concept>
+      <code value="NPU27281"/>
+      <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+      <definition value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+   </concept>
+   <concept>
+      <code value="NPU03804"/>
+      <display value="Pt—Legeme; masse = ? kg"/>
+      <definition value="Pt—Legeme; masse = ? kg"/>
+   </concept>
+   <concept>
+      <code value="NPU21692"/>
+      <display value="Hjerte—Systole; frekv. = ? × 1/min"/>
+      <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
+   </concept>
 </CodeSystem>

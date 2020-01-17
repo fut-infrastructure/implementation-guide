@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="1.2.208.184.100.8--20190325"/>
+    <id value="mcs"/>
     <url value="urn:oid:1.2.208.184.100.8"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:1.2.208.184.100.8"/>
     </identifier>
-    <version value="20190829"/>
-    <name value="DAK-E Codes"/>
+    <name value="DAK-E-Codes"/>
+    <title value="DAK-E Codes"/>
     <status value="active"/>
     <experimental value="false"/>
-    <date value="2019-03-25"/>
+    <date value="2020-01-06T00:00:00+01:00"/>
     <publisher value="KiAP - Kvalitet i Almen Praksis"/>
     <contact>
         <telecom>
             <system value="url"/>
             <value value="https://www.medcom.dk/opslag/koder-tabeller-ydere/koder/laboratorieomraadet/dak-e-koder"/>
         </telecom>
+    </contact>
+    <contact>
         <telecom>
             <system value="email"/>
             <value value="ghe@medcom.dk"/>
@@ -24,23 +26,621 @@
     </contact>
     <description value="Procedure and observation codes used for communication and administration of laboratory results in Denmark."/>
     <caseSensitive value="true"/>
-    <content value="fragment"/>
+    <content value="complete"/>
+    <concept>
+        <code value="DIB0010"/>
+        <display value="Følsomhed højre;Fod"/>
+        <definition value="Fod—Følsomhed højre arb.akt.(ingen; normal; reduceret) = ?"/>
+    </concept>
+    <concept>
+        <code value="DIB0011"/>
+        <display value="Følsomhed venstre;Fod"/>
+        <definition value="Fod—Følsomhed venstre arb.akt.(ingen; normal; reduceret) = ?"/>
+    </concept>
+    <concept>
+        <code value="DIB0014"/>
+        <display value="Blodtryk højre,index;Ankel/Arm"/>
+        <definition value="Ankel/Arm—Blodtryk højre,index  =  ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="DIB0015"/>
+        <display value="Blodtryk venstre,index;Ankel/Arm"/>
+        <definition value="Ankel/Arm—Blodtryk venstre,index  =  ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="DIB0018"/>
+        <display value="Sår højre;Fod"/>
+        <definition value="Fod—Sår højre; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="DIB0019"/>
+        <display value="Sår venstre;Fod"/>
+        <definition value="Fod—Sår venstre; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="DNK05219"/>
+        <display value="Elektrokardiografi [EKG12];Pt"/>
+        <definition value="Pt—Elektrokardiografi; egenskabsart(I II III V1-6 aVflr) = ?"/>
+    </concept>
+    <concept>
+        <code value="DNK05472"/>
+        <display value="Blodtryk systolisk;Arm"/>
+        <definition value="Arm—Blodtryk(systolisk); tryk = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="DNK05473"/>
+        <display value="Blodtryk diastolisk;Arm"/>
+        <definition value="Arm—Blodtryk(diastolisk); tryk = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="DNK35842"/>
+        <display value="Glukose(diag.);P(vB; fPt)"/>
+        <definition value="P(vB; fPt)—Glucose; stofk.(diagnostisk) = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="MCS88001"/>
+        <display value="Ugentligt;Pt(motion)"/>
+        <definition value="Pt(motion)—Ugentligt; tid = ? time/uge"/>
+    </concept>
+    <concept>
+        <code value="MCS88002"/>
+        <display value="Dagligt;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Dagligt; antal = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88005"/>
+        <display value="Rygestop tilbudt;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Rygestop tilbudt; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88006"/>
+        <display value="Tobaksrygning ophørt;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Ophørt = ? Årstal"/>
+    </concept>
+    <concept>
+        <code value="MCS88008"/>
+        <display value="Passiv tobaksrygning;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Udsættes du for passiv tobaksrygning; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88009"/>
+        <display value="Rygestop hjælp ønskes;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Vil du gerne have hjælp til at holde op; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88010"/>
+        <display value="Vil du gerne holde op;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Vil du gerne holde op; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88011"/>
+        <display value="Ryger du tobak;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Ryger du tobak; arb.akt.(dagligt; lejlighedsvis; ophørt; aldrig røget) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88014"/>
+        <display value="Diabeteskontrol aftalt;Pt(diabetes)"/>
+        <definition value="Pt(diabetes)—Antal diabeteskontroller aftalt i det kommende år; antal (værdi 0-10) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88015"/>
+        <display value="FEV1;Lunge"/>
+        <definition value="Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"/>
+    </concept>
+    <concept>
+        <code value="MCS88016"/>
+        <display value="FVC;Lunge"/>
+        <definition value="Lunge—Lungefunktionsundersøgelse vitalkapasitet FVC; vol. = ? L"/>
+    </concept>
+    <concept>
+        <code value="MCS88017"/>
+        <display value="FEV1/FVC;Lunge"/>
+        <definition value="Lunge—FEV1/FVC; ratio = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU28404"/>
+        <display value="Taljeomkreds;Pt"/>
+        <definition value="Pt—Taljeomkreds; længde = ? m"/>
+    </concept>
+    <concept>
+        <code value="MCS88019"/>
+        <display value="Blodtryk hjemme systolisk;Arm"/>
+        <definition value="Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="MCS88020"/>
+        <display value="Blodtryk hjemme diastolisk;Arm"/>
+        <definition value="Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="MCS88021"/>
+        <display value="MRC skala;Pt(KOL)"/>
+        <definition value="Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88022"/>
+        <display value="Eksacerbationer;Pt(KOL)"/>
+        <definition value="Pt(KOL)—Antal eksacerbationer i det sidst forløbne år; antal (værdi 1-20) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88023"/>
+        <display value="FEV1 af forventet værdi;Pt(KOL)"/>
+        <definition value="Pt(KOL) - FEV1 i % af den forventede værdi (efter højde,alder og køn); ratio = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88024"/>
+        <display value="Pakkeår;Pt(rygning)"/>
+        <definition value="Pt(rygning)—Antal pakkeår (20 cigaretter dagligt i et år) = ? År"/>
+    </concept>
+    <concept>
+        <code value="MCS88025"/>
+        <display value="HbA1c mål aftalt;Hb (B)(diabetes)"/>
+        <definition value="Hb (B)(diabetes)—HBA1c mål aftalt for det kommende år; stofratio = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88026"/>
+        <display value="LDL-Kolesterol, mål aftalt;P(mål)"/>
+        <definition value="P(mål)—LDL Kolesterol mål aftalt for kommende år; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="MCS88027"/>
+        <display value="BT(systolisk), mål aftalt;Arm(mål)"/>
+        <definition value="Arm(mål)—Blodtryk(systolisk) mål aftalt for kommende år = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="MCS88028"/>
+        <display value="Legeme vægt, mål aftalt;Pt(mål)"/>
+        <definition value="Pt(mål)—Legeme; masse mål aftalt for kommende år = ? Kg"/>
+    </concept>
+    <concept>
+        <code value="MCS88030"/>
+        <display value="FEV1 reversibilitet;Lunge"/>
+        <definition value="Lunge—FEV1 reversibilitet = ? L"/>
+    </concept>
+    <concept>
+        <code value="MCS88032"/>
+        <display value="Hjertesvigts funktionskl.;Pt(NYHA)"/>
+        <definition value="Pt(NYHA)—Hjerteinsufficiens funktionsklasse; antal (værdi 0-4) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88033"/>
+        <display value="BT(diatolisk), mål aftalt;Arm(mål)"/>
+        <definition value="Arm(mål)—Blodtryk(diastolisk) mål aftalt for kommende år = ? mmHg"/>
+    </concept>
+    <concept>
+        <code value="MCS88034"/>
+        <display value="BMI, mål aftalt;Pt(mål)"/>
+        <definition value="Pt(mål)—Legeme; massekoefficient(masse/kvadreret højde) mål aftalt for det kommende år  = ? kg/m"/>
+    </concept>
+    <concept>
+        <code value="MCS88067"/>
+        <display value="Taljeomkreds mål aftalt;Pt(diabet)"/>
+        <definition value="Pt(diabetes)—Taljeomkreds mål aftalt for det kommende år; længde = ? M"/>
+    </concept>
+    <concept>
+        <code value="MCS88036"/>
+        <display value="Alkoholforbrug;Pt(alkohol)"/>
+        <definition value="Pt(alkohol)—Alkoholforbrug ugentlig; antal = ? Uge"/>
+    </concept>
+    <concept>
+        <code value="MCS88039"/>
+        <display value="Til rådighed for arbejdsmark.;Pt"/>
+        <definition value="Pt—Står til rådighed for arbejdsmarkedet; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88040"/>
+        <display value="ASS score;Pt(angst)"/>
+        <definition value="Pt(angst)—Angst scoreskema; antal (værdi 0-50) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88041"/>
+        <display value="MDI score;Pt(depression)"/>
+        <definition value="Pt(depression)—Major Depression Inventory; antal (værdi 0-50) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88042"/>
+        <display value="MMSE score;Pt"/>
+        <definition value="Pt—Mini-Mental State Examination score; antal (værdi 0-30) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88043"/>
+        <display value="Er der talt om kost;Pt(kost)"/>
+        <definition value="Pt(kost)—Er der talt om kost; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88044"/>
+        <display value="Øjenus., fundusundersøgelse;Pt(øje)"/>
+        <definition value="Pt(øje)—Øjenbaggrundsundersøgelse, fundusundersøgelse; arb.k.(0 1) = ?"/>
+    </concept>
     <concept>
         <code value="MCS88050"/>
         <display value="Rejse sætte sig testen;Pt"/>
         <definition value="Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek"/>
-        <designation>
-            <language value="da"/>
-            <value value="Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek"/>
-        </designation>
+    </concept>
+    <concept>
+        <code value="MCS88058"/>
+        <display value="GOLD Inddeling;Pt(KOL)"/>
+        <definition value="Pt(KOL) —GOLD Inddeling; arb.akt.(A; B; C; D) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88059"/>
+        <display value="Symptom;Pt(CMDQ)"/>
+        <definition value="Pt(CMDQ) —Symptom; antal (værdi 0-48) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88060"/>
+        <display value="Helbredsangst;Pt(CMDQ)"/>
+        <definition value="Pt(CMDQ) —Helbredsangst; antal (værdi 0-28)  = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88061"/>
+        <display value="Angsttilstand;Pt(CMDQ)"/>
+        <definition value="Pt(CMDQ) —Angsttilstand; antal (værdi 0-16) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88062"/>
+        <display value="Depression;Pt(CMDQ)"/>
+        <definition value="Pt(CMDQ) —Depression; antal (værdi 0-24) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88063"/>
+        <display value="Alkohol;Pt(CMDQ)"/>
+        <definition value="Pt(CMDQ) —Alkohol; antal (værdi 0-4) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88105"/>
+        <display value="FEV1/FVC reversibilitet;Lunge"/>
+        <definition value="Lunge—FEV1/FVC reversibilitet; ratio = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU01443"/>
+        <display value="Calcium;P"/>
+        <definition value="P—Calcium(II); stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01566"/>
+        <display value="Kolesterol;P"/>
+        <definition value="P—Cholesterol+ester; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01549"/>
+        <display value="Kolesterol;P"/>
+        <definition value="P—Cholesterol(non-ester); stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU18412"/>
+        <display value="Kolesterol;P(fPt)"/>
+        <definition value="P(fPt)—Cholesterol+ester; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01567"/>
+        <display value="Kolesterol HDL;P"/>
+        <definition value="P—Cholesterol+ester, i HDL; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01568"/>
+        <display value="Kolesterol LDL;P"/>
+        <definition value="P—Cholesterol+ester, i LDL; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="DNK35308"/>
+        <display value="Kolesterol LDL (beregnet);P"/>
+        <definition value="P—Cholesterol+ester, i LDL; stofk.(DSKB 2017) = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01700"/>
+        <display value="Vitamin B12;P"/>
+        <definition value="P—Cobalamin; stofk. = ? pmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01807"/>
+        <display value="Kreatinin (Jaffe);P"/>
+        <definition value="P—Creatininium; stofk.(Jaffe) = ? µmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU04998"/>
+        <display value="Kreatinin;P"/>
+        <definition value="P—Creatininium; stofk.(enz.) = ? µmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU18016"/>
+        <display value="Kreatinin;P"/>
+        <definition value="P—Creatininium; stofk. = ? µmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU02192"/>
+        <display value="Glukose;P"/>
+        <definition value="P—Glucose; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU02319"/>
+        <display value="Hæmoglobin;B"/>
+        <definition value="B—Hæmoglobin(Fe); stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU02593"/>
+        <display value="Leukocytter;B"/>
+        <definition value="B—Leukocytter; antalk. = ? × 10&lt;sup>9&lt;/sup>/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03011"/>
+        <display value="O2 sat.;Hb(aB)"/>
+        <definition value="Hb(Fe; O&lt;sub>2&lt;/sub>-bind.; aB)—Oxygen(O&lt;sub>2&lt;/sub>); mætn. = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU03230"/>
+        <display value="Kalium;P"/>
+        <definition value="P—Kalium-ion; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03429"/>
+        <display value="Natrium;P"/>
+        <definition value="P—Natrium-ion; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03568"/>
+        <display value="Trombocytter;B"/>
+        <definition value="B—Thrombocytter; antalk. = ? × 10&lt;sup>9&lt;/sup>/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03577"/>
+        <display value="Thyrotropin [TSH];P"/>
+        <definition value="P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10&lt;sup>-3&lt;/sup> IU/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03794"/>
+        <display value="Legeme højde;Pt"/>
+        <definition value="Pt—Legeme; højde = ? m"/>
+    </concept>
+    <concept>
+        <code value="NPU03804"/>
+        <display value="Legeme vægt;Pt"/>
+        <definition value="Pt—Legeme; masse = ? kg"/>
+    </concept>
+    <concept>
+        <code value="NPU27281"/>
+        <display value="BMI;Pt"/>
+        <definition value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+    </concept>
+    <concept>
+        <code value="NPU03835"/>
+        <display value="Hæmoglobin A1c;Hb(B)"/>
+        <definition value="Hb(Fe; B)—Hæmoglobin A1c(Fe); stoffr. = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU04094"/>
+        <display value="Triglycerid;P"/>
+        <definition value="P—Triglycerid; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU03620"/>
+        <display value="Triglycerid;P(fPt)"/>
+        <definition value="P(fPt)—Triglycerid; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU04207"/>
+        <display value="Glukose(semikvant);U"/>
+        <definition value="U—Glucose; arb.k.(proc.) = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU04208"/>
+        <display value="Hæmoglobin(semikvant);U"/>
+        <definition value="U—Hæmoglobin; arb.k.(proc.) = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU10171"/>
+        <display value="Kolesterol LDL;P(fPt)"/>
+        <definition value="P(fPt)—Cholesterol+ester, i LDL; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU10266"/>
+        <display value="1,25-Dihydroxy-Vitamin D(D3+D2);P"/>
+        <definition value="P—Calcitriol+1,25-Dihydroxyergocalciferol; stofk. = ? pmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU17181"/>
+        <display value="Brain natriuretisk peptid [BNP];P"/>
+        <definition value="P—Brain natriuretisk peptid; stofk. = ? pmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU17997"/>
+        <display value="Albumin (semikvant);U"/>
+        <definition value="U—Albumin; arb.k.(proc.) = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU19651"/>
+        <display value="Alanintransaminase [ALAT];P"/>
+        <definition value="P—Alanintransaminase; kat.k.(IFCC 2002) = ? U/L"/>
+    </concept>
+    <concept>
+        <code value="NPU19657"/>
+        <display value="gamma-Glutamyltransferase;P"/>
+        <definition value="P—gamma-Glutamyltransferase; kat.k.(IFCC 2002) = ? U/L"/>
+    </concept>
+    <concept>
+        <code value="NPU19661"/>
+        <display value="Albumin / Kreatinin-ratio;U"/>
+        <definition value="U—Albumin/Creatininium; masseratio = ? × 10&lt;sup>-3&lt;/sup>"/>
+    </concept>
+    <concept>
+        <code value="NPU03918"/>
+        <display value="Albumin / Kreatinin-ratio;U"/>
+        <definition value="U—Albumin/Creatininium; stofratio = ? × 10&lt;sup>-3&lt;/sup>"/>
+    </concept>
+    <concept>
+        <code value="NPU19748"/>
+        <display value="C-reaktivt protein [CRP];P"/>
+        <definition value="P—C-reaktivt protein; massek. = ? mg/L"/>
+    </concept>
+    <concept>
+        <code value="NPU21692"/>
+        <display value="Puls;Hjerte"/>
+        <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
+    </concept>
+    <concept>
+        <code value="NPU27300"/>
+        <display value="Hæmoglobin A1c (IFCC);Hb(B)"/>
+        <definition value="Hæmoglobin beta kæde(B)—N-(1-deoxyfructos-1-yl)hæmoglobin beta kæde; stoffr. = ? mmol/mol"/>
+    </concept>
+    <concept>
+        <code value="NPU27412"/>
+        <display value="Glukose, middel (fra HbA1c);P"/>
+        <definition value="P—Glucose; stofk.(gennemsnitlig; Hb A1c; proc.) = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="NPU01685"/>
+        <display value="Koagulationsfaktor II+VII+X [INR];P"/>
+        <definition value="P—Koagulation, vævsfaktor-induceret; rel.tid(aktuel/norm; INR; IRP 67/40; proc.) = ?"/>
+    </concept>
+    <concept>
+        <code value="NPU27783"/>
+        <display value="Basisk fosfatase;P"/>
+        <definition value="P—Basisk phosphatase; kat.k.(37 °C; proc.) = ? U/L"/>
+    </concept>
+    <concept>
+        <code value="MCS88071"/>
+        <display value="30 minutter om dagen;Pt(motion)"/>
+        <definition value="Pt(motion)—fysisk aktiv 30 minutter om dagen; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88068"/>
+        <display value="Fysisk aktivitet fritid.;Pt(motion)"/>
+        <definition value="Pt(motion)—fysisk aktivitet i fritiden; arb.akt.(konkurrence; motionsidræt, lettere motion, stillesiddende) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88052"/>
+        <display value="Kostscore;Pt(kost)"/>
+        <definition value="Pt(kost)—kostscore; antal (0-12) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88053"/>
+        <display value="Helbred;Pt(selvvurderet helbred)"/>
+        <definition value="Pt(selvvurderet helbred)—hvordan synes du dit helbred er alt i alt; arb.akt.(Fremragende, vældigt godt, godt, mindre godt, dårligt) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88069"/>
+        <display value="Svangre us.;Pt(svangreundersøgelse)"/>
+        <definition value="Pt(svangreundersøgelse)—Hvilken svangreundersøgelse;  arb.akt.(første; anden; tredje; fjerde) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88070"/>
+        <display value="Børne us.;Pt(børneundersøgelse)"/>
+        <definition value="Pt(børneundersøgelse)—Hvilken børneundersøgelse; arb.akt.( 1 uges; 5 ugers; 5 måneders; 1 års; 2 års; 3 års; 4 års; 5 års) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88100"/>
+        <display value="FEV6;Lunge"/>
+        <definition value="Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"/>
+    </concept>
+    <concept>
+        <code value="MCS88099"/>
+        <display value="FEV1/FEV6;Lunge"/>
+        <definition value="Lunge—FEV1/FEV6 ratio = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88104"/>
+        <display value="FVC reversibilitet;Lunge"/>
+        <definition value="Lunge—FVC reversibilitet = ? L"/>
+    </concept>
+    <concept>
+        <code value="NPU17559"/>
+        <display value="Kreatinin;P"/>
+        <definition value="P—Creatininium; stofk. = ? mmol/L"/>
+    </concept>
+    <concept>
+        <code value="MCS88106"/>
+<!--        <display value="Stoffer;Pt(problematisk stofbrug)&#xa;"/>-->
+        <display value="Stoffer;Pt(problematisk stofbrug)"/>
+        <definition value="Pt(problematisk stofbrug)—Hash 4 eller flere dg inden for den seneste mnd og/eller andre euforiserende stoffer, som fx amfetamin, kokain og ecstasy 1 eller flere dg inden for den seneste mnd; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88116"/>
+        <display value="Debutår;Pt(diabetes)"/>
+        <definition value="Pt(diabetes)—Debutår = ? Årstal"/>
+    </concept>
+    <concept>
+        <code value="MCS88117"/>
+        <display value="Retinopati;Pt(diabetes)"/>
+        <definition value="Pt(diabetes)—Retinopati; arb.k.(0 1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88120"/>
+        <display value="Stabil Angina Pectoris;Pt(CCS)"/>
+        <definition value="Pt(CCS)—Stabil Angina Pectoris; antal (værdi 1-4) = ?"/>
     </concept>
     <concept>
         <code value="MCS88137"/>
         <display value="CAT score;Pt"/>
-        <definition value="Pt-CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?"/>
-        <designation>
-            <language value="da"/>
-            <value value="Pt-CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?"/>
-        </designation>
+        <definition value="Pt—CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88142"/>
+        <display value="Inhalationsteknik kontrol;Pt"/>
+        <definition value="Pt—Inhalationsteknik for indtagelse af inhalationsmedicin kontrolleret i praksis; antal(værdi 0-1) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88143"/>
+        <display value="Lungefunktion undersøgt;Pt"/>
+        <definition value="Pt—Lungefunktion undersøgt; arb.akt.(Ja; Nej; Ej relevant; Ej muligt) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88144"/>
+        <display value="Henvist til Rehabilitering;Pt"/>
+        <definition value="Pt—Henvist til Rehabilitering; arb.akt.(Ja; Nej; Ikke egnet; Ønsker ikke; Ej relevant; Ej spurgt) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88145"/>
+        <display value="Fysisk træning/motion;Pt"/>
+        <definition value="Pt—Fysisk anstrengende træning/motion; arb.akt.(Dagligt; Ugentligt; Månedligt; Ingen; Undgår; Ej spurgt) = ?"/>
+    </concept>
+    <concept>
+        <code value="DNK35302"/>
+        <display value="eGFR / 1,73m²(CKD-EPI)"/>
+        <definition value="Nyre—Glomerulær filtration; vol.hast.(ovfl.=1,73 m²; CKD-EPIkrea; DSKB-DNS-DPS 2015) = ? mL/min"/>
+    </concept>
+    <concept>
+        <code value="DNK35131"/>
+        <display value="eGFR ml/min per 1.73m²;Nyre"/>
+        <definition value="Nyre—Glomerulær filtration; vol.hast.(ovfl.=1,73 m²; DSKB-DNS 2009) = ? mL/min"/>
+    </concept>
+    <concept>
+        <code value="MCS88146"/>
+        <display value="Heartscore;Pt"/>
+        <definition value="Pt—Heartscore(køn,alder,systolisk blodtryk,cholesterol); ratio=?"/>
+    </concept>
+    <concept>
+        <code value="MCS88147"/>
+        <display value="Manniche VAS-score(total);Pt"/>
+        <definition value="Pt—Manniche VAS-score(total); antal(værdi 0-60) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88148"/>
+        <display value="STarT score;Pt"/>
+        <definition value="Pt—Subgroups for Targeted Treatment (STarT) score; arb.akt.(Lav; Middel; Høj) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88149"/>
+        <display value="Motion, mål aftalt;Pt(mål)"/>
+        <definition value="Pt(mål)—Motion, mål aftalt for kommende år; arb.akt.(Dagligt; Ugentligt; Månedligt; Ingen; Undgår; Ej spurgt) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88150"/>
+        <display value="Alkohol, mål aftalt;Pt(mål)"/>
+        <definition value="Pt(mål)—Alkoholforbrug, mål aftalt for kommende år; antal = ? genstand/uge"/>
+    </concept>
+    <concept>
+        <code value="MCS88151"/>
+        <display value="Rygning, mål aftalt;Pt(mål)"/>
+        <definition value="Pt(mål)—Rygning, mål aftalt for kommende år; arb.akt.(dagligt; lejlighedsvis; ophørt; aldrig røget) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88152"/>
+        <display value="Øjenlægekontrol;Pt(diatetes)"/>
+        <definition value="Pt(diabetes)—Øjenlægekontrol; arb.akt.(ja;nej;ej relevant) = ?"/>
+    </concept>
+    <concept>
+        <code value="MCS88153"/>
+        <display value="Fodundersøgelse;Pt(diabetes)"/>
+        <definition value="Pt(diabetes)—Fodundersøgelse; arb.akt.(ja;nej;ej relevant) = ?"/>
     </concept>
 </CodeSystem>
