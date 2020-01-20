@@ -115,11 +115,43 @@
     <element id="Appointment.extension:groupId">
       <path value="Appointment.extension" />
       <sliceName value="groupId" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
+      </type>
+    </element>
+    <element id="Appointment.extension:legalBasis">
+      <path value="Appointment.extension" />
+      <sliceName value="legalBasis" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis" />
+      </type>
+      <meaningWhenMissing value="When the extension value is missing the resource is under unknown jurisdiction" />
+      <constraint>
+        <key value="governance-2" />
+        <severity value="error" />
+        <human value="When extension is used a Episode of Care MUST be referenced" />
+        <expression value="%resource.supportingInformation.reference.contains('EpisodeOfCare/')" />
+      </constraint>
+    </element>
+    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept">
+      <path value="Appointment.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
+      </binding>
+    </element>
+    <element id="Appointment.extension:releasableResource">
+      <path value="Appointment.extension" />
+      <sliceName value="releasableResource" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-releasableResource" />
       </type>
     </element>
     <element id="Appointment.identifier">
@@ -184,9 +216,15 @@
     </element>
     <element id="Appointment.supportingInformation">
       <path value="Appointment.supportingInformation" />
+      <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan" />
         <aggregation value="referenced" />
       </type>
     </element>
@@ -242,18 +280,22 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson" />
+        <aggregation value="referenced" />
       </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location" />
+        <aggregation value="contained" />
       </type>
     </element>
   </differential>
