@@ -10,7 +10,7 @@
     <status value="active" />
     <kind value="identifier" />
     <date value="1968-04-02" />
-    <publisher value="Sundhedsdatastyrelsen?" />
+    <publisher value="Sundhedsdatastyrelsen" />
     <contact>
         <name value="Thor Schliemann" />
     </contact>
@@ -29,6 +29,6 @@
     </uniqueId>
     <uniqueId>
         <type value="uri" />
-        <value value="http://www.cpr.dk/cpr-systemet" />
+        <value value="urn:oid:1.2.208.176.1.2" />
     </uniqueId>
 </NamingSystem>
