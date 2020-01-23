@@ -17,6 +17,26 @@
       <path value="CareTeam" />
       <short value="People and organizations who plan to participate in the coordination and delivery of care for a patient." />
     </element>
+    <element id="CareTeam.extension">
+      <path value="CareTeam.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="CareTeam.extension:telecom">
+      <path value="CareTeam.extension" />
+      <sliceName value="telecom" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam-telecom" />
+      </type>
+    </element>
     <element id="CareTeam.status">
       <path value="CareTeam.status" />
       <min value="1" />

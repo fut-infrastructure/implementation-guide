@@ -76,6 +76,9 @@ Example operations updated.
  - Added deceased extension for use on `Person` when doing `Person$match`
  - Removed `http://ehealth.sundhed.dk/cs/practitioner-role` profile
 
+ #### CareTeam (ehealth-careteam)
+ - Added extension `telecom`
+
 ### ActivityDefinition (ehealth-activitydefinition)
 - ActivityDefinition.jurisdiction bound to ValueSet "http://ehealth.sundhed.dk/vs/jurisdiction"
 
