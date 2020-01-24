@@ -102,6 +102,9 @@ Example operations updated.
 ### EpisodeOfCare (ehealth-episodeofcare)
 - Updated introduction to mention correct initial status
 
+### CommunicationRequest (ehealth-communication-request)
+- Added introduction
+
 ### Library (ehealth-library)
 - Library.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`
 
