@@ -13,7 +13,7 @@ Supported types of messages:
 * `basedOn` Reference to a ProcedureRequest. The CommunicationRequest applies to messages about measurements based on this procedureRequest.
 * `recipient` Reference to either CareTeam or Patient recipient. The CommunicationsRequest applies to messages sent to these recipients. 
 * `category` The CommunicationsRequest applies to messages with this category.
-* `priority` The CommunicationsRequest applies to messages about tasks with this category.
+* `priority` The CommunicationsRequest applies to messages about tasks with this priority.
 * `status` If status is 'active' then messages will be processed and created. If status is 'suspended' then no messages will be created.
 * `medium` This will override the default medium for the message.
 * `payload` This will override the default payload for a message to a patient.
