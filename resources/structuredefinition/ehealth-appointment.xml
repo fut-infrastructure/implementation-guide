@@ -24,6 +24,12 @@
         <human value="Ensuring that responsible entity is a participating party" />
         <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.actor.reference)" />
       </constraint>
+      <constraint>
+        <key value="single-patient-appointment" />
+        <severity value="error" />
+        <human value="Only a single patient is allowed pr. appointment" />
+        <expression value="participant.actor.where(reference.contains('/Patient')).count() &lt; 2" />
+      </constraint>
     </element>
     <element id="Appointment.extension">
       <path value="Appointment.extension" />
