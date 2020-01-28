@@ -107,6 +107,43 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-releasableResource" />
       </type>
     </element>
+    <element id="Appointment.extension:responsible-organization">
+      <path value="Appointment.extension" />
+      <sliceName value="responsible-organization" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization" />
+      </type>
+    </element>
+    <element id="Appointment.extension:responsible-organization.value[x]:valueReference">
+      <path value="Appointment.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Appointment.extension:performing-organization">
+      <path value="Appointment.extension" />
+      <sliceName value="performing-organization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer" />
+      </type>
+    </element>
+    <element id="Appointment.extension:performing-organization.value[x]:valueReference">
+      <path value="Appointment.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />
