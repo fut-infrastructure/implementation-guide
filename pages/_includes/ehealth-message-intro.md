@@ -73,7 +73,7 @@ The following rules apply for the ehealth-message profile:
 * If medium.code is eboks or nemsms, the recipient must be of type Patient
 * Only one of sender or extension senderCareTeam may be filled in
 * Only one of recipient or extension recipientCareTeam may be filled in
-* Medium 'nemsms' may only be used if the Patient allows reception of NemSMS (has telecom with value 'NemSMS)
+* Medium 'nemsms' may only be used if the Patient allows reception of NemSMS (has telecom with value 'NemSMS). In that case, a NemSMS message will be sent to the Patient.
 
 # Update rules
 
