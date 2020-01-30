@@ -41,6 +41,7 @@ Example operations updated.
 - Added `urn:oid:1.2.208.176.2.4`
 - Updated `urn:oid:1.2.208.176.2.1`
 - Updated `urn:oid:1.2.208.184.100.8`
+- Removed `http://ehealth.sundhed.dk/cs/practitioner-role`
 
 ### ValueSets
 - Added `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
@@ -64,6 +65,7 @@ Example operations updated.
 - Changed `http://ehealth.sundhed.dk/vs/sor-organization-type`
 - Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/reference-range-type`
 - Included ValueSet  `http://ehealth.sundhed.dk/vs/observation-codes` in ValueSet `http://ehealth.sundhed.dk/vs/activitydefinition-code`
+- Removed `http://ehealth.sundhed.dk/vs/practitioner-role`
 
 ### NamingSystems
 - Added ehealth-identifier - _An identifier used internally in eHealth, possibly used for identifiers when transforming to CDA document representations of resources_
@@ -74,6 +76,11 @@ Example operations updated.
 
 ### Resource/profile changes
  - Added deceased extension for use on `Person` when doing `Person$match`
+ - Removed `http://ehealth.sundhed.dk/cs/practitioner-role` profile
+ - Added PractitionerRole structure definition
+
+ #### CareTeam (ehealth-careteam)
+ - Added extension `telecom`
 
 ### ActivityDefinition (ehealth-activitydefinition)
 - ActivityDefinition.jurisdiction bound to ValueSet "http://ehealth.sundhed.dk/vs/jurisdiction"
@@ -97,6 +104,9 @@ Example operations updated.
 
 ### EpisodeOfCare (ehealth-episodeofcare)
 - Updated introduction to mention correct initial status
+
+### CommunicationRequest (ehealth-communication-request)
+- Added introduction
 
 ### Library (ehealth-library)
 - Library.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`

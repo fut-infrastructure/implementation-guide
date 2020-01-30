@@ -2,6 +2,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ehealth-questionnaire-types"/>
     <url value="http://ehealth.sundhed.dk/cs/questionnaire-types"/>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.208.999.9.9"/>
+    </identifier>
     <version value="0.6.0"/>
     <name value="QuestionnaireTypes"/>
     <status value="active"/>
