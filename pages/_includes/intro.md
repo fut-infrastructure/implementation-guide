@@ -14,7 +14,7 @@ This document presents Danish use concepts defined via FHIR processable artifact
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts of the eHealth Infrastructure
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the context of the eHealth Infrastructure
 
-FHIR profiles are managed under the constellation of the Danish municipalities, regions and the Danish health authority:
+FHIR profiles are managed under the constellation of the Danish municipalities, regions and the Danish Health Authority:
 
 * [Danish Health Authority](https://sst.dk/)
 * [Danish regions](https://regioner.dk/)
@@ -50,4 +50,4 @@ The intended audience of the implementation guide is IT architects, developers a
 the available resources in the eHealth Infrastructure and how they can be used.
 
 * In general, business validation rules have not been described.
-* Most value sets and code systems are still under construction. These will mature in time.
+* Value sets and code systems should be expected to mature over time.

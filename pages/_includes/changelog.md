@@ -6,9 +6,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 
-Document Query Service and Reporting service added 
-- capability statements
-- navigation bar
+- Changed wording in Reader's Guide on value sets and code systems
+- Added capability statement for Document Query Service
+- Added capability statement for Reporting Service 
+- Changed typos on UCUM in General Guidance
+ 
 
 Example operations updated.
 
