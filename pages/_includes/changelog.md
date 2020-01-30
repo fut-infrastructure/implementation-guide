@@ -82,10 +82,10 @@ Example operations updated.
  #### CareTeam (ehealth-careteam)
  - Added extension `telecom`
 
-### ActivityDefinition (ehealth-activitydefinition)
+#### ActivityDefinition (ehealth-activitydefinition)
 - ActivityDefinition.jurisdiction bound to ValueSet "http://ehealth.sundhed.dk/vs/jurisdiction"
 
-### Appointment (ehealth-appointment)
+#### Appointment (ehealth-appointment)
 - Updated introduction to describe group-id
 - Added
   - Appointment.extionsion:responsible.value[x]:valueReference
@@ -99,19 +99,19 @@ Example operations updated.
   - Appointment.participant.extension:careteam
     - Cardinality max 1
 
-### AppointmentResponse (ehealth-appointmentresponse)
+#### AppointmentResponse (ehealth-appointmentresponse)
 - Removed
 
-### EpisodeOfCare (ehealth-episodeofcare)
+#### EpisodeOfCare (ehealth-episodeofcare)
 - Updated introduction to mention correct initial status
 
-### CommunicationRequest (ehealth-communication-request)
+#### CommunicationRequest (ehealth-communication-request)
 - Added introduction
 
-### Library (ehealth-library)
+#### Library (ehealth-library)
 - Library.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`
 
-### Message (ehealth-message)
+#### Message (ehealth-message)
 - Updated introduction to explain use of group-id
 - Added
   - Communication.extension:threadId.valueString:valueString
@@ -119,7 +119,7 @@ Example operations updated.
 - Profiled
   - Communication.reasonCode.coding
 
-### Organization (ehealth-organization)
+#### Organization (ehealth-organization)
 - Updated introduction to mention organizations not maintained by SOR or STS-ORG registries
 
 #### Observation (ehealth-observation)
@@ -134,6 +134,9 @@ Example operations updated.
 #### Questionnaire (ehealth-questionnaire)
 - Profiled
   - Questionnaire.jurisdiction
+
+#### Task (ehealth-task)
+- Updated intro description
 
 #### VideoAppointment (ehealth-videoappointment)
 - Updated introduction to mention vmr-uri, host pin code, group id
