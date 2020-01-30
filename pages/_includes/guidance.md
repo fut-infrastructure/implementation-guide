@@ -43,7 +43,7 @@ In scope of the eHealth Infrastructure, the following elements shall be handled 
 
 It must be expected that eHealth Infrastructure services can introduce verification of this at any time.
 
-When Unified Code fr Units of Measurements (UCUM) is used for system, and this is most likely the case in
+When Unified Code for Units of Measure (UCUM) is used for system, and this is most likely the case in
 the eHealth Infrastructure, the source of the values used are as follows:
 * unit is typically based on the printSymbol element in the corresponding entry in http://unitsofmeasure.org/ucum-essence.xml, possibly starting with a prefix for metric units 
 * code is typically based on the code element in the corresponding entry in http://unitsofmeasure.org/ucum-essence.xml, possibly starting with a prefix for metric units
