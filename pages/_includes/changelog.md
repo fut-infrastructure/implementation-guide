@@ -75,6 +75,7 @@ Example operations updated.
 ### Resource/profile changes
  - Added deceased extension for use on `Person` when doing `Person$match`
  - Removed `http://ehealth.sundhed.dk/cs/practitioner-role` profile
+ - Added PractitionerRole structure definition
 
  #### CareTeam (ehealth-careteam)
  - Added extension `telecom`
