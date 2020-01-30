@@ -24,19 +24,17 @@ The eHealth Infrastructure supports triaging based on comparison of submitted me
 
 ### Use of Task for resolving missing or unexpected measurement
 
-In case the eHealth Infrastructure detects that measurement submissions are missing, it creates a Communication to the Patient reminding to follow measurement regime. It also creates a Task:
+In case the eHealth Infrastructure detects that measurement submissions are missing, it creates a Communication reminding to follow measurement regime. It also creates a Task:
 
 * Task owner references the CareTeam of the CarePlan
 * Task category is coding that states need to resolve why measurement submission is missing
-* Task focus references the Communication
+* Task focus references the ProcedureRequest for the missing measurement
 
-An unexpected measurement can be in terms of unexpected measurement type, for instance observation code or questionnaire not specified in the CarePlan/ProcedureRequest, or in terms of measurement with odd timing compared to the measurement regime.
-
-In case the eHealth Infrastructure detects an unexpected measurement submission, it creates a ClinicalImpression resource stating this. It also creates a Task where:
+In case the eHealth Infrastructure detects an unexpected measurement submission, it creates a Task where:
 
 * Task owner references the CareTeam of the CarePlan
 * Task category is coding that states need to resolve unexpected measurement submission
-* Task focus references the ClinicalImpression
+ * Task focus references the unexpected measurement
 
 ### No use of Task for coordinating measuring to be performed by Patient
 
