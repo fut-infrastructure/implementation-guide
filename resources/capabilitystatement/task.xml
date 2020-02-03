@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="task"/>
     <status value="active"/>
-    <date value="2019-11-04T16:39:00+00:00"/>
+    <date value="2020-02-01T04:07:25+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="task"/>
-        <version value="1.0.0"/>
+        <version value="1.1.0"/>
     </software>
     <implementation>
         <description value="eHealth task service"/>
-        <url value="http://task.devtest.systematic-ehealth.com/fhir"/>
+        <url value="https://task.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -109,6 +109,11 @@
                 <name value="date"/>
                 <type value="date"/>
                 <documentation value="When the assessment was documented"/>
+            </searchParam>
+            <searchParam>
+                <name value="decision"/>
+                <type value="token"/>
+                <documentation value="Decision"/>
             </searchParam>
             <searchParam>
                 <name value="finding-code"/>
@@ -370,25 +375,25 @@
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression-i-validate"/>
+                <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression--validate"/>
+                <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task--validate"/>
+                <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task-i-validate"/>
+                <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task-i-validate"/>
             </definition>
         </operation>
     </rest>

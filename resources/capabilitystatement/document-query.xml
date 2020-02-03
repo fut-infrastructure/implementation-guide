@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-query"/>
    <status value="active"/>
-   <date value="2019-12-30T11:48:33+00:00"/>
+   <date value="2020-02-01T04:07:09+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
@@ -10,7 +10,7 @@
    </software>
    <implementation>
       <description value="eHealth document-query service"/>
-      <url value="https://document-query.local.ehealth.sundhed.dk/fhir"/>
+      <url value="https://document-query.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -117,7 +117,7 @@
       <operation>
          <name value="retrieve-document"/>
          <definition>
-            <reference value="https://document-query.local.ehealth.sundhed.dk/fhir/OperationDefinition/Binary--retrieve-document"/>
+            <reference value="https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary--retrieve-document"/>
          </definition>
       </operation>
    </rest>

@@ -1,7 +1,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="document-transformation"/>
     <status value="active"/>
-    <date value="2019-11-08T09:09:18+00:00"/>
+    <date value="2020-02-01T04:08:37+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
@@ -10,7 +10,7 @@
     </software>
     <implementation>
         <description value="eHealth document-transformation service"/>
-        <url value="http://document-transformation.local.ehealth.sundhed.dk/fhir"/>
+        <url value="https://document-transformation.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -403,69 +403,81 @@
             </searchParam>
         </resource>
         <operation>
-            <name value="transform-to-APD"/>
-            <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-APD"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-questionnaireResponse"/>
-            <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-questionnaireResponse"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-questionnaire"/>
-            <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-questionnaire"/>
-            </definition>
-        </operation>
-        <operation>
             <name value="transform-to-PHMR"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-PHMR"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-PHMR"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-from-PHMR"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-PHMR"/>
             </definition>
         </operation>
         <operation>
             <name value="transform-to-QRD"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-QRD"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-from-QRD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD"/>
             </definition>
         </operation>
         <operation>
             <name value="transform-to-observation"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-observation"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-observation"/>
             </definition>
         </operation>
         <operation>
             <name value="transform-to-appointment"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-appointment"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-appointment"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-to-APD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-to-QFDD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-from-QFDD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QFDD"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/Composition-i-validate"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Composition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/Composition--validate"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Composition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/DocumentReference-i-validate"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://document-transformation.local.ehealth.sundhed.dk/fhir/OperationDefinition/DocumentReference--validate"/>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference--validate"/>
             </definition>
         </operation>
     </rest>

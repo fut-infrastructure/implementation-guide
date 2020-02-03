@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="plan"/>
     <status value="active"/>
-    <date value="2019-11-04T12:37:56+00:00"/>
+    <date value="2020-02-01T04:07:05+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="plan"/>
-        <version value="0.1.0"/>
+        <version value="1.1.0"/>
     </software>
     <implementation>
         <description value="eHealth plan service"/>
-        <url value="http://plan.devtest.systematic-ehealth.com/fhir"/>
+        <url value="https://plan.devtest.systematic-ehealth.com/fhir"/>
     </implementation>
     <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
@@ -617,43 +617,43 @@
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition-i-validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition--validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-i-validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference--validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--validate"/>
             </definition>
         </operation>
         <operation>
             <name value="validate"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-validate"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-validate"/>
             </definition>
         </operation>
         <operation>
             <name value="apply"/>
             <definition>
-                <reference value="http://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
+                <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
             </definition>
         </operation>
     </rest>

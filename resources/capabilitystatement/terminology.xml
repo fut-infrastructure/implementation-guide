@@ -1,16 +1,16 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="terminology"/>
    <status value="active"/>
-   <date value="2019-11-04T12:32:00+00:00"/>
+   <date value="2020-02-01T04:09:50+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="terminology"/>
-      <version value="1.2.0"/>
+      <version value="1.3.0"/>
    </software>
    <implementation>
       <description value="eHealth terminology service"/>
-      <url value="http://terminology.devtest.systematic-ehealth.com/fhir"/>
+      <url value="https://terminology.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
    <fhirVersion value="3.0.1"/>
    <acceptUnknown value="extensions"/>
@@ -985,325 +985,331 @@
       <operation>
          <name value="upload-external-code-system"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-upload-external-code-system"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-upload-external-code-system"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="import"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import"/>
          </definition>
       </operation>
       <operation>
          <name value="lookup"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--lookup"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--lookup"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-delete"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="subsumes"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--subsumes"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--subsumes"/>
          </definition>
       </operation>
       <operation>
          <name value="translate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-translate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-translate"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-expunge"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-expunge"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-expunge"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-delete"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta"/>
          </definition>
       </operation>
       <operation>
          <name value="meta"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-delete"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate-code"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate-code"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate-code"/>
          </definition>
       </operation>
       <operation>
          <name value="expand"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expand"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--meta"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expand"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-add"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-add"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-add"/>
          </definition>
       </operation>
       <operation>
          <name value="meta-delete"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-delete"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-delete"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="meta"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--meta"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--expunge"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="expunge"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expunge"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="http://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate"/>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate"/>
          </definition>
       </operation>
    </rest>
