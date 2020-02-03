@@ -25,9 +25,8 @@ podTemplate(label: label,
     def config = new groovy.json.JsonSlurperClassic().parseText(inputFile)
     println "pipeline config ==> ${config}"
 
-    def igInputFile = readFile('ig.json')
-    def igConfig = new groovy.json.JsonSlurperClassic().parseText(igInputFile)
-    println "pipeline igConfig ==> ${igConfig}"
+    def version = readFile('pages/_data/version.yaml')
+    println "pipeline version ==> ${version}"
 
     def pwd = pwd()
     def chart_dir = "${pwd}/charts/${config.app.name}"
@@ -62,10 +61,10 @@ podTemplate(label: label,
           s3Upload(file:'static/index.html', bucket:config.s3.bucket, path:'')
 
           def igPath = ""
-          if (igConfig["fixed-business-version"] == "latest") {
+          if (version == "latest") {
             igPath = "latest/ig"
           } else {
-            igPath = 'v' + igConfig["fixed-business-version"] + "/ig"
+            igPath = 'v' + version + "/ig"
           }
           s3Delete(bucket: config.s3.bucket, path: igPath)
           s3Upload(file:'output/', bucket:config.s3.bucket, path: igPath)
