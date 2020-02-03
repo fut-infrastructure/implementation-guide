@@ -15,6 +15,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Communication">
+      <path value="Communication" />
+      <constraint>
+        <key value="nemsms-1" />
+        <severity value="error" />
+        <human value="If communication resource is a NemSMS payload cannot exceed 160" />
+        <expression value="medium.coding.where(code = 'NemSMS').exists() implies payload.contentString.length() &lt; 161" />
+      </constraint>
+    </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
       <slicing>
