@@ -3,7 +3,7 @@
     <name value="is-context-allowed"/>
     <status value="active"/>
     <kind value="operation"/>
-    <description value="Checks that it is allowed to set an EpisodeOfCare as context.&#xd;&#xa;If the user requesting context is a patient, then the patient input parameter should be specified.&#xd;&#xa;If the user requesting context is a practitioner, then the careTeam input parameter should be specified.&#xd;&#xa;Throws an exception if it is not allowed to select the Episode Of Care context.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context"/>
+    <description value="Checks that it is allowed to set an EpisodeOfCare as context.&#xd;&#xa;If the user requesting context is a patient, then the patient input parameter should be specified.&#xd;&#xa;If the user requesting context is a practitioner, then the careTeam input parameter should be specified.&#xd;&#xa;Throws an exception if it is not allowed to select the Episode Of Care context.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context."/>
     <idempotent value="true"/>
     <code value="is-context-allowed"/>
     <resource value="EpisodeOfCare"/>

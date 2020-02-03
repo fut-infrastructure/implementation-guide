@@ -15,7 +15,6 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="List of care teams that should be added to the episode of care and all care plans that has the episode of care as context. Care teams that are already assigned will be ignored." />
         <type value="Reference"/>
     </parameter>
     <parameter>
@@ -23,7 +22,6 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="List of care teams that should be removed from the episode of care and all care plans that has the episode of care as context. Care teams that are not assigned will be ignored." />
         <type value="Reference"/>
     </parameter>
 </OperationDefinition>

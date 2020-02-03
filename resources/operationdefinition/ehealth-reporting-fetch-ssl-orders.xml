@@ -3,7 +3,7 @@
     <name value="fetch-ssl-orders"/>
     <status value="active"/>
     <kind value="operation"/>
-    <description value="Return a report with SSL order details"/>
+    <description value="Run a report listing service, support, and logistics order details."/>
     <idempotent value="false"/>
     <code value="fetch-ssl-orders"/>
     <system value="true"/>
@@ -15,7 +15,6 @@
         <min value="1"/>
         <max value="1"/>
         <type value="string"/>
-        <documentation value="Use anonymization mode [NONE, ANONYMIZED]. " />
     </parameter>
     <parameter>
         <name value="organization"/>
@@ -23,7 +22,6 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Reference"/>
-        <documentation value="Only orders for buyer. " />
     </parameter>
     <parameter>
         <name value="seller"/>
@@ -31,7 +29,6 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Reference"/>
-        <documentation value="Only orders for seller . " />
     </parameter>
     <parameter>
         <name value="period"/>
@@ -39,7 +36,6 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Period"/>
-        <documentation value="Only orders with traceline within period. " />
     </parameter>
     <parameter>
         <name value="return"/>
@@ -47,6 +43,5 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Binary"/>
-        <documentation value="The report is in content. " />
     </parameter>
 </OperationDefinition>

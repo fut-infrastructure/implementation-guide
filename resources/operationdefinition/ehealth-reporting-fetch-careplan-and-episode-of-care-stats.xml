@@ -3,7 +3,7 @@
     <name value="fetch-careplan-and-episode-of-care-stats"/>
     <status value="active"/>
     <kind value="operation"/>
-    <description value="Return a report with counts of active episodes of care and care plans, grouped by condition"/>
+    <description value="Run a report counting active episodes of care and care plans. The counts are grouped by condition."/>
     <idempotent value="false"/>
     <code value="fetch-careplan-and-episode-of-care-stats"/>
     <system value="true"/>
@@ -15,7 +15,6 @@
         <min value="1"/>
         <max value="1"/>
         <type value="string"/>
-        <documentation value="Use anonymization mode [NONE, ANONYMIZED]. " />
     </parameter>
     <parameter>
         <name value="organization"/>
@@ -23,7 +22,6 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Reference"/>
-        <documentation value="Only episodes of care for organization. " />
     </parameter>
     <parameter>
         <name value="period"/>
@@ -31,7 +29,6 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Period"/>
-        <documentation value="Only care plans within period. " />
     </parameter>
     <parameter>
         <name value="return"/>
@@ -39,6 +36,5 @@
         <min value="0"/>
         <max value="1"/>
         <type value="Binary"/>
-        <documentation value="The report is in content. " />
     </parameter>
 </OperationDefinition>

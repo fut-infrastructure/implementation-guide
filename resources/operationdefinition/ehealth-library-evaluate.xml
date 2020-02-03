@@ -8,7 +8,7 @@
    <code value="evaluate"/>
    <resource value="Library"/>
    <system value="false"/>
-   <type value="false"/>
+   <type value="true"/>
    <instance value="true"/>
    <parameter>
       <name value="parameters"/>

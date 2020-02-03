@@ -1,0 +1,26 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-import-organizations"/>
+   <name value="import-organizations"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Import a bundle containing at least one organization tree."/>
+   <idempotent value="false"/>
+   <code value="import-organizations"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="organizations"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+   <parameter>
+      <name value="bundle"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+</OperationDefinition>
