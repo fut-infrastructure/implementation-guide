@@ -3,7 +3,7 @@
     <name value="update-care-teams"/>
     <status value="active"/>
     <kind value="operation"/>
-    <description value="Modify the care team assignment of the care plan and any of its sub plans."/>
+    <description value="Modify the care team assignment of the care plan and all of its sub plans."/>
     <idempotent value="false"/>
     <code value="update-care-teams"/>
     <resource value="CarePlan"/>
@@ -15,7 +15,6 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="List of care teams that should be added to the care plan and all of its sub plans. Care teams that are already assigned will be ignored." />
         <type value="Reference"/>
     </parameter>
     <parameter>
@@ -23,7 +22,6 @@
         <use value="in"/>
         <min value="0"/>
         <max value="*"/>
-        <documentation value="List of care teams that should be removed from the care plan and any of its sub plans. Care teams that are not assigned will be ignored." />
         <type value="Reference"/>
     </parameter>
 </OperationDefinition>
