@@ -24,19 +24,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `GENERAL_SUBJECT_AND_CONTEXT_NOT_PROVIDED`: At least one of subject and context must be provided.
 
-- `GENERAL_VALUESET_VALIDATION_ERROR`: Validation error: %s
-
-- `GENERAL_EXTERNAL_RESOURCE_REFERENCE_NOT_FOUND`: External resource reference not found: %s
-
-- `GENERAL_ONLY_JSON_PATCH_ALLOWED`: Only JSON PATCH is allowed
-
-- `GENERAL_JSON_PATCH_VALIDATION_FAILED`: JSON patch validation failed: %s
-
-- `GENERAL_FORBIDDEN_JSON_PATCH_PATH`: Forbidden JSON PATCH path: %s
-
-- `INSTANCE_VALIDATION_ERROR`: Error during instance validation: %s
-
-- `GENERAL_INTERNAL_ERROR`: Detailed error: %s
+- `GENERAL_VALIDATION_ERROR`: Validation error: %s
 
 #### ehealth-activitydefinition
 
@@ -70,6 +58,16 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `CARETEAM_GENERAL_EXTERNAL_SECURITY_TOKEN_CARETEAM_IDENTIFIER_SYSTEM_IS_MISSING`: The CareTeam must contain an identifier using system "urn:ietf:rfc:3986"
 
+#### ehealth-communicationrequest
+
+- `COMMUNICATIONREQUEST_CONTEXT_NOT_MATCHING_PROCEDUREREQUEST`: The context for the CommunicationRequest: %s does not match the context of the referenced ProcedureRequest: %s
+
+- `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_RECIPIENT`: Patient recipient: %s does not match the subject: %s
+
+- `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_PROCEDUREREQUEST`: The subject for the CommunicationRequest: %s does not match the subject of the referenced ProcedureRequest: %s
+
+- `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Excactly one recipient search parameter required
+
 #### ehealth-context
 
 - `CONTEXT_VALIDATION_EPISODEOFCARE_EXCEPTION`: Episode of care does not match the security token context
@@ -87,6 +85,14 @@ If a requests result in an error, the error message can be obtained from the `di
 - `DEVICE_METRIC_WRITE_WRONG_ORGANIZATION_CONTEXT`: User must be logged into the organization that is the owner of the device
 
 - `DEVICE_USE_STATEMENT_WRITE_WRONG_ORGANIZATION_CONTEXT`: User must be logged into the organization that is the owner of the device
+
+#### ehealth-document
+
+- `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be a SOR organization for query
+
+- `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
+
+- `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: <DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>
 
 #### ehealth-documentreference
 
@@ -140,6 +146,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `LIBRARY_EVALUATE_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
+- `LIBRARY_IDENTIFIER_UPDATE_RESTRICTED`: Validation error: attempt to update Library Identifiers list.
+
 #### ehealth-measurement
 
 - `MEASUREMENT_SEARCHMEASUREMENT_PERIOD_NOT_SPECIFIED`: Period must be specified
@@ -192,6 +200,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INPUT_NOT_PART_OF_SAME_EPISODEOFCARE`: The resources provided are not all part of the same episode of care.
 
+- `MEASUREMENT_SUBMITMEASUREMENT_PROCEDURE_REQUEST_IS_NOT_ACTIVE`: Procedure request with id:[%s] is not active.
+
 - `MEASUREMENT_SUBMITMEASUREMENT_ACTIVITYDEFINITION_MISSING_QUESTIONNAIRE_REFERENCE`: ActivityDefinition with id %s does not contain a relatedArtifact with a Questionnaire reference
 
 - `MEASUREMENT_SUBMITMEASUREMENT_DIFFERENT_PATIENT_REFERENCE`: The patient referenced by the EpisodeOfCare is different than the patient referenced by the provided resources
@@ -205,6 +215,14 @@ If a requests result in an error, the error message can be obtained from the `di
 - `MEASUREMENT_SUBMITMEASUREMENT_RESOURCE_TO_OLD_TO_BE_USED_FOR_REUSE`: Reuse of resource is not allowed due to the resource being too old.
 
 - `MEASUREMENT_SUBMITMEASUREMENT_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
+
+- `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
+
+#### ehealth-organization
+
+- `ORGANIZATION_SOURCE_MUST_BE_MANUAL`: The operation can only be performed for Organization with source "manual"
+
+- `ORGANIZATION_IDENTIFIER_SYSTEM_NOT_ALLOWED_FOR_SOURCE_MANUAL`: Identifier system is not allowed for Organization with source "manual"
 
 #### ehealth-plandefinition
 
@@ -232,6 +250,14 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `QUESTIONNAIRE_NOT_ALLOWED_TO_DELETE_WITH_STATUS`: Delete only possible for questionnaires with status: %s
 
+#### ehealth-reporting
+
+- `REPORTING_MISSING_INPUT_PARAMETER`: Parameter "%s" is mandatory for report "%s".
+
+- `REPORTING_REPORT_GENERATION_FAILED`: Report generation has been failed
+
+- `REPORTING_SYNCHRONOUS_GENERATION_NOT_ALLOWED`: Synchronous generation of the report is not allowed
+
 #### ehealth-security
 
 - `SECURITY_TOKEN_CONTEXT_NOT_ALLOWED`: Security token context not allowed: %s
@@ -252,7 +278,11 @@ If a requests result in an error, the error message can be obtained from the `di
 
 #### ehealth-task
 
+- `TASK_INVESTIGATION_ITEM_REFERENCES_MUST_INCLUDE_VERSION`: Investigation item references must include version
+
 - `TASK_RESTRICTION_CATEGORY_NONE_CANT_BE_COMBINED`: Restriction category 'None' can't be combined with others
+
+- `TASK_RESTRICTION_CATEGORY_NOT_MATCHING_TOKEN_CONTEXT`: Restriction category '%s' does not match token context
 
 - `TASK_MEASUREMENT_PROCESSING_FAILED`: Measurement processing failed for Provenance %s
 
@@ -266,6 +296,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 #### ehealth-transformation
 
+- `TRANSFORMATION_QFDD_XML_MISSING`: Invalid input document reference, it must contain content with data of QFDD xml
+
 - `TRANSFORMATION_QRD_INVALID_INPUT_PARAMETERS`: Input bundle should contain just one EHealthComposition, EHealthQuestionnaireResponse and EHealthQuestionnaire.
 
 - `TRANSFORMATION_QRD_UNSUPPORTED_QUESTION_TYPE`: Unsupported Questionnaire type: %s.
@@ -276,13 +308,19 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `TRANSFORMATION_QRD_MISSING_IDENTIFIER`: Identifier on composition is mandatory
 
+- `TRANSFORMATION_QRD_XML_MISSING`: Invalid input document reference, it must contain content with data of QRD xml
+
 - `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
 
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_CODING`: Observation.code.coding.system must be urn:oid:1.2.208.176.2.1
+- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_CODING`: Observation coding system must be urn:oid:1.2.208.176.2.1
 
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_CODING`: Observation.observationRanges[x].type.coding.system should be http://www.example.com/medcom/message-codes
 
-- `TRANSFORMATION_PHMR_OBSERVATION_QUANTITY_MISSING`: Observation value should be Quantity type and not null
+- `TRANSFORMATION_PHMR_OBSERVATION_QUANTITY_MISSING`: Value should be Quantity type and not null
+
+- `TRANSFORMATION_PHMR_XML_MISSING`: Invalid input document reference, it must contain content with data of PHMR xml
+
+- `TRANSFORMATION_PHMR_ID_OID_NOT_FOUND`: NamingSystem or CodeSystem with url %s is not found.
 
 - `TRANSFORMATION_HEADER_MISSING_CONFIDENTIALITY_CODE`: Composition.confidentiality is mandatory
 
@@ -296,32 +334,3 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION_AUTHOR_ORGANIZATION`: Composition.authorOrganization is mandatory for transformation
 
-#### ehealth-patient
-
-- `PATIENT_OFFICIAL_NAME_CHANGE_NOT_ALLOWED`: Official name change not allowed
-
-- `PATIENT_CPR_CHANGE_IS_NOT_ALLOWED`: CPR change is not allowed
-
-- `PATIENT_HOME_ADDRESS_CHANGE_IS_NOT_ALLOWED`: Home address change is not allowed
-
-- `PATIENT_ADDRESS_VALIDATION_FALIED`: Patient address validation failed: %s
-
-- `PATIENT_IDENTIFIER_MUST_BE_OF_TYPE_CRN`: Identifier must be of type 'crn'
-
-#### ehealth-message
-
-- `COMMUNICATION_EXACTLY_ONE_RECIPIENT_OR_CARE_TEAM_RECIPIENT_MUST_BE_SUPPLIED`: Exactly one recipient or CareTeam recipient must be supplied
-
-- `COMMUNICATION_EXACTLY_ONE_SENDER_OR_CARE_TEAM_SENDER_MUST_BE_SUPPLIED`: Exactly one sender or CareTeam sender must be supplied
-
-- `COMMUNICATION_UPDATE_TO_CATEGORY_IS_NOT_ALLOWED`: Update to category is not allowed: %s
-
-- `COMMUNICATION_UPDATE_NON_ADMINISTRATIVE_STATUS_NOT_ALLOWED`: Only update to administrative-status extension is allowed when status in completed
-
-- `COMMUNICATION_JSON_PATCH_IS_ONLY_ALLOWED_FOR_NOTE`: This JSON patch type is only allowed for category '%s' (current is '%s')
-
-- `COMMUNICATION_EXACTLY_ONE_MESSAGE_CATEGORY_IS_EXPECTED_ACTUAL`: Exactly one message category is expected. Actual: %s
-
-- `COMMUNICATION_MEDIUM_EBOKS_OR_NEMSMS_REQUIRES_PATIENT_RECIPIENT`: A recipient of type Patient is required for this medium: %s
-
-- `COMMUNICATION_PATIENT_NEMSMS_NOT_ALLOWED`: Patient does not allow telecom medium NemSMS
