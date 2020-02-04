@@ -2,7 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2020.1 (2020-02-04)
 
 ### General changes
 
