@@ -108,7 +108,7 @@ __Body__:
     "text": "code"
   },
   "source": {
-    "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/46"
+    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/46"
   },
   "category": "calculation"
 }
@@ -121,7 +121,7 @@ __Response__
   "id": "47",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T20:07:00.551+00:00",
+    "lastUpdated": "2020-02-03T12:30:09.351+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -215,7 +215,7 @@ __Response__
     "text": "code"
   },
   "source": {
-    "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/46"
+    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/46"
   },
   "category": "calculation"
 }

@@ -1,9 +1,9 @@
-`GET [base]/CareTeam?status=active&date=ge2019-11-04T20%3A50%3A04%2B01%3A00&date=le2019-11-04T20%3A50%3A04%2B01%3A00`
+`GET [base]/CareTeam?status=active&date=ge2020-02-03T15%3A01%3A50%2B01%3A00&date=le2020-02-03T15%3A01%3A50%2B01%3A00&managingOrganization=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FOrganization%2F190%2F_history%2F1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWQxZmNiNWEtZDJkOC00Y2EzLWJmODEtYmJjYjdjM2Q2NmNlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjFkZGQ5YzktODI3Mi00MzkyLWJkMGEtZTY3MjVmODhhODc1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,41 +15,41 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "e8d6b1e5-b335-420b-be1c-f0c5964c095a",
+  "id": "a0347259-f88c-46d6-ae2e-e1e497f58661",
   "meta": {
-    "lastUpdated": "2019-11-04T19:50:05.434+00:00"
+    "lastUpdated": "2020-02-03T14:01:51.153+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam?_format=json&_pretty=true&date=ge2019-11-04T20%3A50%3A04%2B01%3A00&date=le2019-11-04T20%3A50%3A04%2B01%3A00&status=active"
+      "url": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam?_format=json&_pretty=true&date=ge2020-02-03T15%3A01%3A50%2B01%3A00&date=le2020-02-03T15%3A01%3A50%2B01%3A00&managingOrganization=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FOrganization%2F190%2F_history%2F1&status=active"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/170",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/191",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "170",
+        "id": "191",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T19:50:04.804+00:00",
+          "lastUpdated": "2020-02-03T14:01:50.315+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "e400b109-1787-4d2c-a2d7-fc1c1e47964f",
+            "id": "df03eb3a-9890-4431-9da9-8236ee04a01a",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "7f15b01d-4441-418f-a12b-7d57b2e4cfc0",
+        "name": "fb950dd4-a406-494b-a87b-b792495b27d1",
         "period": {
-          "end": "2019-11-04T20:50:04+01:00"
+          "end": "2020-02-03T15:01:50+01:00"
         },
         "reasonCode": [
           {
@@ -59,6 +59,11 @@ __Response__
                 "code": "TBD"
               }
             ]
+          }
+        ],
+        "managingOrganization": [
+          {
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/190"
           }
         ]
       },
@@ -67,27 +72,27 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/171",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/192",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "171",
+        "id": "192",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T19:50:05.038+00:00",
+          "lastUpdated": "2020-02-03T14:01:50.555+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "6aa17f49-b4b3-4bc8-b859-68bd8a574b2a",
+            "id": "3fbf8d8e-36d0-49f8-840f-e15674ec7581",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "1a12ef6a-ff18-4a5f-a9ff-b4abef7ee087",
+        "name": "fc645d64-cc60-4f91-bc26-2a0ce8b32011",
         "period": {
-          "end": "2019-11-04T20:50:04+01:00"
+          "end": "2020-02-03T15:01:50+01:00"
         },
         "reasonCode": [
           {
@@ -97,6 +102,11 @@ __Response__
                 "code": "TBD"
               }
             ]
+          }
+        ],
+        "managingOrganization": [
+          {
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/190"
           }
         ]
       },

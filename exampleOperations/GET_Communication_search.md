@@ -1,9 +1,9 @@
-`GET [base]/Communication?subject=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F26233`
+`GET [base]/Communication?context=https%3A%2F%2Fcareplan.local.ehealth.sundhed.dk%2Ffhir%2FEpisodeOfCare%2F75438&recipientCareTeam=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FCareTeam%2F2098`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTg2ZmYzOTEtYmIzNy00M2UwLTgxZTQtZGVkNGIxMzQ5ZTU0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWQ0MTlkODktMjllMS00MzRjLWFiNmEtODJiOWViNDUyMDVmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0NhcmVUZWFtLzIwOTgiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNzU0MzgifSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,32 +15,44 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "75ef15a2-5585-405f-9780-50d785377aa7",
+  "id": "e2c897f8-ecf6-45f8-b1d9-29940a3be3c1",
   "meta": {
-    "lastUpdated": "2019-12-16T11:15:29.117+00:00"
+    "lastUpdated": "2020-02-03T13:25:11.029+00:00"
   },
   "type": "searchset",
-  "total": 2,
+  "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication?_format=json&_pretty=true&subject=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F26233"
+      "url": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication?_format=json&_pretty=true&context=https%3A%2F%2Fcareplan.local.ehealth.sundhed.dk%2Ffhir%2FEpisodeOfCare%2F75438&recipientCareTeam=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FCareTeam%2F2098"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication/881",
+      "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication/87",
       "resource": {
         "resourceType": "Communication",
-        "id": "881",
+        "id": "87",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-12-16T11:15:28.230+00:00",
+          "lastUpdated": "2020-02-03T13:25:10.776+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
         },
         "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam",
+            "valueReference": {
+              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/90948"
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam",
+            "valueReference": {
+              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/2098"
+            }
+          },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
             "valueCodeableConcept": {
@@ -65,67 +77,15 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/26233"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31705"
         },
         "topic": [
           {
-            "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/880"
+            "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/86"
           }
         ],
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/99373"
-        }
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication/885",
-      "resource": {
-        "resourceType": "Communication",
-        "id": "885",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2019-12-16T11:15:28.939+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "None"
-                }
-              ]
-            }
-          }
-        ],
-        "status": "completed",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/communication-category",
-                "code": "annotation"
-              }
-            ]
-          }
-        ],
-        "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/26233"
-        },
-        "topic": [
-          {
-            "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/884"
-          }
-        ],
-        "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/63789"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/75438"
         }
       },
       "search": {

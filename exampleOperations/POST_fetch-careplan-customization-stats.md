@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWY0Y2RhMTQtYTk2ZC00MTAzLTliMDctY2E4NjFiNmIzNTQ0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1jdXN0b21pemF0aW9uLXN0YXRzIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmYyYzI1NzYtNTViZS00MzgwLWJiYzYtYWQ5NmYzNDk5ZjRlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1jdXN0b21pemF0aW9uLXN0YXRzIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,7 +22,7 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/52078"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/42369"
       }
     }
   ]
@@ -44,64 +44,6 @@ __Response__
       "value": "38c6a8c0-c20f-49df-bf40-1bf274aa42fd"
     }
   },
-  "content": "UEsDBBQACAgIAOhhhE8AAAAAAAAAAAAAAABBAAAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8xNy9SZXBvcnRIZWFkZXJdzk1vwjAMBuD/4jMkTcXXcuXOEPS0aQerNSRaSKrEncSq/PdlsLFqR+t9XtsjROpD5B1eCDRsMdLeod8OicPFfiLb4I+MnA43BrMf39ibryv1NFf1vFo0qtZqqdVaqNVqUy1eCu0xlrVMMYEeSzGFIbbUXPvv6v4vnEjQryP4+zPog7/+PlHQB7qBjhytP5d0FzxBnj10iGf0//CBThTJt3S//xjAMPdaymlHuNCiE2QIHRuRBt8Z6kT3Lk/GRvk8oXJZV+sN5PyW8xdQSwcIWdATH8wAAABBAQAAUEsDBBQACAgIAOhhhE8AAAAAAAAAAAAAAABQAAAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8xNy9FSGVhbHRoUGxhbkRlZmluaXRpb24vOTk5NDmlkstOwzAQRf/F6zxIU6VNtwEJVqCWXdWFsceNhWNHfhRKlX9nHGgLqLBBsmR57njOnbEP5OYWqPLtg6L6GoTU0kujyeJALDgTLIPHfQ9kQX4kJERyjNZ1Pa3x0IGn8dIOrEP5LmoFxntrhFR4f01a7/tFnkM78jIXNG+BZ/w5F620+crbwHywcIYcc9Me2fzM3gwJgVcP2o1W1wcSrELgPwid4VJIsKk16PZyeQsCLGgW9R1VAZanwDiu0+FoxNgt1fKNRlKmDKMq+83b/ZfUvJwVZUmGITmRP0yN0MZwoE8Kd2T1PqIZmtfb0anbOw/dn7NgLv/ZLRaIts2LBkuGzYBrkxzfEgXBZpO6qiCt5kykUzplKS0m87TgsxlclbzihcAyzlMfHOZT5uUOCD5TQy3En9ME50332eAqdB21+2jdyw6tf1MbEzS2VSTnkS6p3sLFpGF4B1BLBwhiNQgIWAEAAMICAABQSwECFAAUAAgICADoYYRPWdATH8wAAABBAQAAQQAAAAAAAAAAAAAAAAAAAAAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8xNy9SZXBvcnRIZWFkZXJQSwECFAAUAAgICADoYYRPYjUICFgBAADCAgAAUAAAAAAAAAAAAAAAAAA7AQAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8xNy9FSGVhbHRoUGxhbkRlZmluaXRpb24vOTk5NDlQSwUGAAAAAAIAAgDtAAAAEQMAAAAA"
-}
-```
-
-__Content:__
-
-*CarePlanCustomizationStatsReport_2019_12_04_12_15_17/ReportHeader*
-```json
-{
-  "reportName" : "CarePlanCustomizationStatsReport",
-  "reportTime" : "2019-12-04T12:15:17.166804Z",
-  "parameters" : {
-    "resourceType" : "Parameters",
-    "parameter" : [ {
-      "name" : "anonymization",
-      "valueString" : "None"
-    }, {
-      "name" : "organization",
-      "valueReference" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/52078"
-      }
-    } ]
-  }
-}
-```
-*CarePlanCustomizationStatsReport_2019_12_04_12_15_17/EHealthPlanDefinition/99949*
-```json
-{
-  "EHealthPlanDefinition" : {
-    "resourceType" : "PlanDefinition",
-    "id" : "99949",
-    "meta" : {
-      "versionId" : "1",
-      "profile" : [ "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition" ]
-    },
-    "extension" : [ {
-      "url" : "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
-      "extension" : [ {
-        "url" : "reference",
-        "valueReference" : {
-          "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/37133"
-        }
-      }, {
-        "url" : "role",
-        "valueCodeableConcept" : {
-          "coding" : [ {
-            "system" : "http://ehealth.sundhed.dk/cs/modifier-role",
-            "code" : "owner"
-          } ]
-        }
-      } ]
-    } ],
-    "version" : "fc72966e-68cf-4a4c-a128-1d77e03d6d1f",
-    "status" : "active"
-  },
-  "CarePlanCustomizationSummary" : {
-    "timingCustomizationCount" : 1,
-    "referenceRangeCustomizationCount" : 1
-  }
+  "content": "UEsDBBQACAgIAFByQ1AAAAAAAAAAAAAAAABBAAAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAyMF8wMl8wM18xNF8xOF8zMi9SZXBvcnRIZWFkZXJdzsFOwzAMBuB38XlLuqRDkOvuY9p6AnGwWm+JyJwqSZFGlXenbDAqjtb//bZHiNSHmLd4JjCwwUg7j7wZUg5n94nZBT5kzGl/ZbD48Y27elWpalmpZaWbVW1Wj0Yroev1WquXifYYp7WZYgIzTsUUhthSc+m/q7u/cCbBvI7At2eQA19+n5jQB/qBDjk6Pk3pNjBBWdx1iCfkf3hPR4rELd3u3wewOffJSDkvCR9a9IIsoc9WpIE7S53o3uXRuiifZ1TWSj88QSlvpXwBUEsHCKqi6lbNAAAAQgEAAFBLAwQUAAgICABQckNQAAAAAAAAAAAAAAAAUAAAAENhcmVQbGFuQ3VzdG9taXphdGlvblN0YXRzUmVwb3J0XzIwMjBfMDJfMDNfMTRfMThfMzIvRUhlYWx0aFBsYW5EZWZpbml0aW9uLzIwMjI5pZJNT8MwDIb/S879GF33eS1IcAJt3KYdvNRdI9KkysdgTP3vOIVtMA0uSJWi2G/8PrZ7YHf3CNLVTxLULVZCCSe0YvMDM2i1Nxyf9y2yObsQREyUFM0GWTajS4MOwqMdGkvph5C7oXhrdCUkvV+x2rl2nqZY936J9aqssUzKl7SqhUmXznjuvMGzyVEbt+Rdnr3XXcTwzaGyPerqwLyRZPgPh0aXohJoYqOJ9np5gxUaVDzkdyA9Lk6BflynSw9iiUSbLSjxDsEqkZqDTH6De/wmTcej2TRnXRedrD+petdClwgbSSeZtS54c6JX2x7V7q3D5s9hcJtetksFArd+VWhYt+7oW0fHZYY1TyEb5JDFOJlBnGcjjDfDKosn42HFJzCaDPIplbEOnLekB+7EDhntqQCD4dcpvHW6+Wpw6ZsGzD6gO9EQ+o9sob2itm6i80wXoLZ4VdR1H1BLBwgOX5y7WgEAAMMCAABQSwECFAAUAAgICABQckNQqqLqVs0AAABCAQAAQQAAAAAAAAAAAAAAAAAAAAAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAyMF8wMl8wM18xNF8xOF8zMi9SZXBvcnRIZWFkZXJQSwECFAAUAAgICABQckNQDl+cu1oBAADDAgAAUAAAAAAAAAAAAAAAAAA8AQAAQ2FyZVBsYW5DdXN0b21pemF0aW9uU3RhdHNSZXBvcnRfMjAyMF8wMl8wM18xNF8xOF8zMi9FSGVhbHRoUGxhbkRlZmluaXRpb24vMjAyMjlQSwUGAAAAAAIAAgDtAAAAFAMAAAAA"
 }
 ```

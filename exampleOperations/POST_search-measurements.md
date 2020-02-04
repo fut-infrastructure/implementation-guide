@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGM5OWM1ZmMtNWE5NS00OGM0LWJhNGQtZmM5NWE4OTIyYmU5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGE1YmEyZTEtZTFmYS00MzVlLWIxYTItNjkxMzVmMmIwNzhmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,13 +18,13 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/47490"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/58282"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2018-11-05T00:00:00+01:00"
+        "start": "2019-02-03T00:00:00+01:00"
       }
     }
   ]
@@ -40,17 +40,17 @@ __Response__
     {
       "resource": {
         "resourceType": "Bundle",
-        "id": "914e9819-5bf5-436b-aeae-6cb526e04ae9",
+        "id": "4adadcea-8712-46d8-8d48-3fe92b284659",
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "http://measurement.local.ehealth.sundhed.dk/fhir/Observation/433",
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/504",
             "resource": {
               "resourceType": "Observation",
-              "id": "433",
+              "id": "504",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2019-11-05T06:24:15.545+00:00",
+                "lastUpdated": "2020-02-03T13:27:29.422+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
                 ]
@@ -85,9 +85,15 @@ __Response__
                   ]
                 }
               ],
+              "identifier": [
+                {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
+                  "value": "4d3632d0-a5fd-4e07-b155-258c63973e46"
+                }
+              ],
               "basedOn": [
                 {
-                  "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/24602"
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/37457"
                 }
               ],
               "status": "amended",
@@ -98,36 +104,36 @@ __Response__
                     "code": "NPU03011"
                   }
                 ],
-                "text": "cd545554-61f1-465d-80ae-e360ec9e7f46"
+                "text": "86f12234-b481-4b64-b050-da934798f9b9"
               },
               "subject": {
-                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/47490"
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/58282"
               },
               "context": {
-                "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/96183"
+                "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/72314"
               },
               "effectivePeriod": {
-                "start": "2019-11-05T07:24:15+01:00",
-                "end": "2019-11-05T07:24:15+01:00"
+                "start": "2020-02-03T14:27:29+01:00",
+                "end": "2020-02-03T14:27:29+01:00"
               },
               "performer": [
                 {
-                  "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/61349"
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/49676"
                 }
               ],
               "device": {
-                "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/43449"
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/90566"
               }
             }
           },
           {
-            "fullUrl": "http://measurement.local.ehealth.sundhed.dk/fhir/Media/434",
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Media/505",
             "resource": {
               "resourceType": "Media",
-              "id": "434",
+              "id": "505",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2019-11-05T06:24:15.545+00:00",
+                "lastUpdated": "2020-02-03T13:27:29.422+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
                 ]
@@ -161,62 +167,68 @@ __Response__
                   ]
                 }
               ],
+              "identifier": [
+                {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
+                  "value": "198e37dc-ba4f-437a-be25-d7b8a05b2a31"
+                }
+              ],
               "basedOn": [
                 {
-                  "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/24602"
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/37457"
                 }
               ],
               "type": "audio",
               "subject": {
-                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/47490"
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/58282"
               },
               "context": {
-                "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/96183"
+                "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/72314"
               },
-              "occurrenceDateTime": "2019-11-05T07:24:15+01:00",
+              "occurrenceDateTime": "2020-02-03T14:27:29+01:00",
               "content": {
                 "language": "en"
               }
             }
           },
           {
-            "fullUrl": "http://measurement.local.ehealth.sundhed.dk/fhir/QuestionnaireResponse/435",
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/QuestionnaireResponse/506",
             "resource": {
               "resourceType": "QuestionnaireResponse",
-              "id": "435",
+              "id": "506",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2019-11-05T06:24:15.545+00:00",
+                "lastUpdated": "2020-02-03T13:27:29.422+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
                 ]
               },
               "basedOn": [
                 {
-                  "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/24602"
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/37457"
                 }
               ],
               "questionnaire": {
-                "reference": "http://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/12646"
+                "reference": "https://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/86374"
               },
               "status": "completed",
               "subject": {
-                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/47490"
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/58282"
               },
               "context": {
-                "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/96183"
+                "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/72314"
               },
-              "authored": "2019-11-05T07:24:15+01:00",
+              "authored": "2020-02-03T14:27:29+01:00",
               "source": {
-                "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/71597"
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/63988"
               }
             }
           },
           {
-            "fullUrl": "http://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/12646",
+            "fullUrl": "https://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/86374",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "12646",
+              "id": "86374",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -241,7 +253,7 @@ __Response__
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/4515"
+                        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/8005"
                       }
                     },
                     {
@@ -258,8 +270,8 @@ __Response__
                   ]
                 }
               ],
-              "version": "bb40019f-2807-49d3-a9c9-ff766af8210e",
-              "name": "ed9b0e6b-a20c-4904-909a-080ae464a898",
+              "version": "e73c9355-e442-463a-9277-ccd9f1899c9c",
+              "name": "3c5b37d8-dce7-4729-a3fd-a8acdb83b8c5",
               "status": "active"
             }
           }

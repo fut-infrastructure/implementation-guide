@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjRmNDFiNjEtYjZhNS00MDM0LTg4NzUtOTg5NzFmMjhhNjZiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTE0ZTFhOWQtOWNlOS00ZDdlLWJkMTUtYjZiNTQ1OTkwMjY1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,7 +26,7 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/55002"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/89598"
           }
         ],
         "status": "amended",
@@ -39,22 +39,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/29297"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50226"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/95304"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/83341"
         },
         "effectivePeriod": {
-          "start": "2019-11-05T07:23:06+01:00",
-          "end": "2019-11-05T07:23:06+01:00"
+          "start": "2020-02-03T14:25:56+01:00",
+          "end": "2020-02-03T14:25:56+01:00"
         },
         "performer": [
           {
-            "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/75565"
+            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/75424"
           }
         ],
         "device": {
-          "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/46768"
+          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/99395"
         }
       }
     }
@@ -68,7 +68,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

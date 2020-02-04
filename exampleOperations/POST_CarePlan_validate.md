@@ -1,4 +1,4 @@
-`POST [base]/CarePlan/512/$validate`
+`POST [base]/CarePlan/490/$validate`
 
 __Header__
 ```
@@ -19,17 +19,17 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "512",
+        "id": "490",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T20:16:28.780+00:00",
+          "lastUpdated": "2020-02-03T12:09:58.819+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
         },
         "definition": [
           {
-            "reference": "http://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/51697"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/98368"
           }
         ],
         "status": "draft",
@@ -45,10 +45,10 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/22311"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/73929"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/510"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/488"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -56,7 +56,7 @@ __Body__:
         },
         "addresses": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/511"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/489"
           }
         ]
       }
@@ -71,7 +71,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=9c6308dc-2422-4703-b327-d73d8e244b6b`
+`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=88c6b570-ba15-4203-93cc-a59cd65c368a`
 
 __Header__
 ```
@@ -16,27 +16,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "c40e7986-bd8a-4370-b100-bbf38f78d870",
+  "id": "3bd596a7-f203-4e56-a48c-a7edf1649ce2",
   "meta": {
-    "lastUpdated": "2019-11-05T06:31:21.039+00:00"
+    "lastUpdated": "2020-02-03T14:06:52.531+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition?_format=json&_pretty=true&name=9c6308dc-2422-4703-b327-d73d8e244b6b&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
+      "url": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition?_format=json&_pretty=true&name=88c6b570-ba15-4203-93cc-a59cd65c368a&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/23",
+      "fullUrl": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/23",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "23",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-05T06:31:20.755+00:00",
+          "lastUpdated": "2020-02-03T14:06:52.227+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -70,7 +70,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/1663"
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/40223"
                 }
               },
               {
@@ -87,8 +87,8 @@ __Response__
             ]
           }
         ],
-        "version": "fbfe7ba4-2042-4c66-bca1-671461a3cb47",
-        "name": "9c6308dc-2422-4703-b327-d73d8e244b6b",
+        "version": "64caff36-b438-487f-8387-1683aeab8c20",
+        "name": "88c6b570-ba15-4203-93cc-a59cd65c368a",
         "status": "active",
         "topic": [
           {
@@ -114,13 +114,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/22",
+      "fullUrl": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/22",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "22",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-05T06:31:20.445+00:00",
+          "lastUpdated": "2020-02-03T14:06:51.884+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -154,7 +154,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/43164"
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/52077"
                 }
               },
               {
@@ -171,8 +171,8 @@ __Response__
             ]
           }
         ],
-        "version": "a277c966-480f-4c51-87b4-bc0b4a622e60",
-        "name": "9c6308dc-2422-4703-b327-d73d8e244b6b",
+        "version": "98cc808c-931b-42e4-8273-0e82536c65d5",
+        "name": "88c6b570-ba15-4203-93cc-a59cd65c368a",
         "status": "active",
         "topic": [
           {

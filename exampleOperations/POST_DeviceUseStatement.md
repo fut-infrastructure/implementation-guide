@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDM1NmEwZTAtYzlmZS00NjcwLTgxOGYtNjIyZWZhYjE5ODMxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC53cml0ZSJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cDovL3BhdGllbnQubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUGF0aWVudC82NzM3MSJ9LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjM0ZTFmMmEtZmQyOC00NGQ2LTgxYzktOWViYjIyNjM0OTJmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC53cml0ZSJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvNjY4In0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -23,16 +23,16 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/91954"
+        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/6280"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/67371"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/668"
   },
   "device": {
-    "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/114"
+    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/114"
   }
 }
 ```
@@ -44,7 +44,7 @@ __Response__
   "id": "115",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T20:07:19.742+00:00",
+    "lastUpdated": "2020-02-03T12:30:33.022+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
@@ -53,16 +53,16 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/91954"
+        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/6280"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/67371"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/668"
   },
   "device": {
-    "reference": "http://device.local.ehealth.sundhed.dk/fhir/Device/114"
+    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/114"
   }
 }
 ```

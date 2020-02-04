@@ -79,7 +79,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 918580724,
+                  "value": 261264201,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -89,7 +89,7 @@ __Body__:
         ],
         "definition": [
           {
-            "reference": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/72843"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/33546"
           }
         ],
         "status": "completed",
@@ -101,13 +101,13 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "89d4b322-e0f4-4206-9199-47510acdee4c"
+          "text": "c68fd921-b27f-4634-9f14-58e0a3bf733b"
         },
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/50487"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/44161"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/918"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1153"
         }
       }
     }
@@ -121,7 +121,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

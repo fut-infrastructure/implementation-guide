@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmZiNWRhM2QtMGZiMy00MDRkLWE4N2ItNjIyMWQ4ZjA2MzAxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmZmY2Y4ZTgtZjFmOC00YzIxLTlkNjUtYTY2NTYwNDUxMmFkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/89314"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/1710"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/19369"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/23621"
       }
     }
   ]
@@ -50,69 +50,6 @@ __Response__
       "value": "38c6a8c0-c20f-49df-bf40-1bf274aa42fd"
     }
   },
-  "content": "UEsDBBQACAgIAO9hhE8AAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMTlfMTJfMDRfMTJfMTVfMzEvUmVwb3J0SGVhZGVytY7LbsIwEEX/ZdZg4zxQ429AUJGsWnVhJQO2asbRxKlEo/x7Xaho1H2XM/fcOTMBYx847s0FQUNd7w7cIQ/H2xZWP3HjbnG2UdVaZetN0ahMq1LnSpTltijVS0J7w+lKTG3QUyoOYeQWm2v/XX3+DRck6NcJ6O42FOh6cZ8mukAJ+jB+xDqyo3NK94EQ5tWDDnw29Ac+4gkZqcW7/zGAjbHXUi47wofWeIEWjY9WDCN1FjvRvcuTdSwPC1Q+VbkqYF7YB/Q+ff/PXlXl2yp53+b5C1BLBwhoDfDp0wAAAKgBAABQSwMEFAAICAgA72GETwAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8zMS9PcmRlckRldGFpbHMvT1JERVKtkjFPwzAQhf+L5yRuIgbIWNoBKaKolAEQwxFfGwvHiS6XilDlv2OnJKIjLZIHP5/99PndHcSKFNICGbRpRHoQldd+o5VIRcFcp1I2jQmHQmSqHEyEBYLhImpaqwpUkfqQ+1gON+RqvViuReDeo2W91UjO17bGBKJh4HZSNemKNHejthXjVHxvO4/xN4AaiDs5f3oeABo05lyPx2WWDSY5ED4YsGvcjmiEOeq9d/a6D46RZdp6+tezgwuNcziml93dL0UwtuKSJpwmrhnLcQ87QlQLYBxPFO51/qP6t0AwQY4Xf+uIImMHw7pEB1TWziiZxTdhnITJ1Sa+Tmczt1583ISOSM27Fe3A6i9gXdkRkPGTp1Fq69pg6UYMqNv8KvxDaFM/T+f2tgC7m/Lp+29QSwcIcFMMbC8BAAA8AwAAUEsBAhQAFAAICAgA72GET2gN8OnTAAAAqAEAADAAAAAAAAAAAAAAAAAAAAAAAFNTTE9yZGVyc1JlcG9ydF8yMDE5XzEyXzA0XzEyXzE1XzMxL1JlcG9ydEhlYWRlclBLAQIUABQACAgIAO9hhE9wUwxsLwEAADwDAAA2AAAAAAAAAAAAAAAAADEBAABTU0xPcmRlcnNSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8zMS9PcmRlckRldGFpbHMvT1JERVJQSwUGAAAAAAIAAgDCAAAAxAIAAAAA"
-}
-```
-
-__Content:__
-
-*SSLOrdersReport_2019_12_04_12_15_31/ReportHeader*
-```json
-{
-  "reportName" : "SSLOrdersReport",
-  "reportTime" : "2019-12-04T12:15:31.556451Z",
-  "parameters" : {
-    "resourceType" : "Parameters",
-    "parameter" : [ {
-      "name" : "anonymization",
-      "valueString" : "None"
-    }, {
-      "name" : "organization",
-      "valueReference" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/89314"
-      }
-    }, {
-      "name" : "seller",
-      "valueReference" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/19369"
-      }
-    } ]
-  }
-}
-```
-*SSLOrdersReport_2019_12_04_12_15_31/OrderDetails/ORDER*
-```json
-{
-  "OrderDetails" : {
-    "order" : {
-      "id" : "http://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER",
-      "identifiers" : null,
-      "status" : null,
-      "priority" : null,
-      "notes" : null,
-      "buyer" : "http://ssl-order.local.ehealth.sundhed.dk/v1/party/BUYER",
-      "seller" : "http://ssl-order.local.ehealth.sundhed.dk/v1/party/SELLER",
-      "carePlanRef" : null,
-      "receiver" : null
-    },
-    "orderLines" : [ {
-      "id" : "http://ssl-order.local.ehealth.sundhed.dk/v1/order-line/ORDERLINE",
-      "order" : "http://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER",
-      "status" : null,
-      "item" : null,
-      "agreedDate" : null,
-      "device" : null
-    } ],
-    "traceLines" : [ {
-      "id" : "http://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER/1",
-      "timestamp" : "2019-12-24T18:00:00Z",
-      "createdByOrganization" : null,
-      "text" : null,
-      "supplementaryText" : null,
-      "order" : "http://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER",
-      "orderLine" : null,
-      "statusChange" : null
-    } ]
-  }
+  "content": "UEsDBBQACAgIAFdyQ1AAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjBfMDJfMDNfMTRfMThfNDcvUmVwb3J0SGVhZGVytY7LbsIwEEX/ZdbgVxBB/oYKKpJVqy6sZMBWjR2NnUo0yr/XhYpG3Xc5c8+dMxMQDpHy3lwQNDTN04F6pHS8bWH1E7fuFiuhxFqotahaudFypzc1U2pXb6uXgg6GypVc2qCnUkxxpA7b6/Bdff4NFyTo1wnC3W1CDNeL+zTZxVCgD+NHbDK5cC7pPgaEefWgI51N+AMf8YSEocO7/zGAzXlImvNlifnYGc/QovHZsjSG3mLP+nd+so74YYFyWUsB88Ke0Pvy/X97VbVVsojf5vkLUEsHCDAo6XzSAAAAqQEAAFBLAwQUAAgICABXckNQAAAAAAAAAAAAAAAANgAAAFNTTE9yZGVyc1JlcG9ydF8yMDIwXzAyXzAzXzE0XzE4XzQ3L09yZGVyRGV0YWlscy9PUkRFUq1Ty07DMBD8F5/zaCoOkGObHCpFFJX2AIjDEm8bC8eJ7E1FqPLvOA2OWsSFFsmH3R1rNN4ZH9hSc9QJEghpWHxgVd/3heAsZgVRbeIwNEb6RySQVQ4ywAJBUhGYRvECecDfw30UHm+Ey1WSrpjHqNAIfGFpVCOlZwlRkdgK1MaNDAE1Y1drUWlBretVRTiCb03b6/qjoho0teFs83RUZFDKi0ke0yw7YUlQij3qdl4pgpzS0i7Qac1B44MEtcLtz9FakEQ3RNBSoCHHlQCNmLT174jGHPvh0HfeYFkmVL+sl8uN86WlGNzLFvcp81wWrkrBucWCsHQ17DQiP30Zx73Iv7vu1SZIQ47XP2zQEkZ9JkVptwplbZmmk+jOj6b+9GYd3caTiT3P9kpuU0vIZ+1S70CJTyBRqdFGB26MM8CS4geNiW7qWmJpkw66XZ8A/7HL0ejz/zMvQO3GtXXdF1BLBwjifmOyXwEAANUDAABQSwECFAAUAAgICABXckNQMCjpfNIAAACpAQAAMAAAAAAAAAAAAAAAAAAAAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjBfMDJfMDNfMTRfMThfNDcvUmVwb3J0SGVhZGVyUEsBAhQAFAAICAgAV3JDUOJ+Y7JfAQAA1QMAADYAAAAAAAAAAAAAAAAAMAEAAFNTTE9yZGVyc1JlcG9ydF8yMDIwXzAyXzAzXzE0XzE4XzQ3L09yZGVyRGV0YWlscy9PUkRFUlBLBQYAAAAAAgACAMIAAADzAgAAAAA="
 }
 ```

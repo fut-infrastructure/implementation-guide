@@ -9,7 +9,7 @@
   path: POST_submit-measurement.md
 
 - profile: system
-  path: POST_transform-to-questionnaire.md
+  path: POST_transform-to-QFDD.md
 
 - profile: system
   path: POST_transform-to-PHMR.md
@@ -18,7 +18,20 @@
   path: POST_transform-to-QRD.md
 
 - profile: system
-  path: POST_update-care-teams.md
+  path: POST_transform-from-QFDD.md
+
+- profile: system
+  path: POST_transform-from-PHMR.md
+
+- profile: system
+  path: POST_transform-from-QRD.md
+
+- profile: system
+  path: POST_import-organizations.md
+
+- profile: system
+  path: POST_import.md
+
 # system reporting
 
 - profile: system
@@ -133,9 +146,6 @@
   path: GET_CarePlan_version.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan.md
-
-- profile: ehealth-careplan
   path: POST_CarePlan_validate.md
 
 - profile: ehealth-careplan
@@ -143,6 +153,9 @@
 
 - profile: ehealth-careplan
   path: POST_suggest-care-teams.md
+
+- profile: ehealth-careplan
+  path: POST_CarePlan-update-care-teams.md
 
 # ehealth-careteam
 - profile: ehealth-careteam
@@ -200,6 +213,22 @@
 
 - profile: ehealth-communication
   path: POST_Communication_validate.md
+
+# ehealth-communication-request
+- profile: ehealth-communication-request
+  path: DELETE_CommunicationRequest.md
+
+- profile: ehealth-communication-request
+  path: GET_CommunicationRequest_search.md
+
+- profile: ehealth-communication-request
+  path: GET_CommunicationRequest_version.md
+
+- profile: ehealth-communication-request
+  path: POST_CommunicationRequest.md
+
+- profile: ehealth-communication-request
+  path: PUT_CommunicationRequest.md
 
 # ehealth-composition
 - profile: ehealth-composition
@@ -265,6 +294,9 @@
 # ehealth-devicemetric
 - profile: ehealth-devicemetric
   path: DELETE_DeviceMetric.md
+
+- profile: ehealth-devicemetric
+  path: GET_DeviceMetric.md
 
 - profile: ehealth-devicemetric
   path: GET_DeviceMetric_search.md
@@ -333,10 +365,10 @@
   path: PATCH_EpisodeOfCare.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare.md
+  path: POST_EpisodeOfCare_validate.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare_validate.md
+  path: POST_EpisodeOfCare-update-care-teams.md
 
 # ehealth-library
 - profile: ehealth-library

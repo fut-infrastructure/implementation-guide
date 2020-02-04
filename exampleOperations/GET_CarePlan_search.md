@@ -1,9 +1,9 @@
-`GET [base]/CarePlan?patient=http%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F31312`
+`GET [base]/CarePlan?patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F79923`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHA6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvMzEzMTIifSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50Lzc5OTIzIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,34 +15,34 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "5f3b8b69-2c2e-404d-b6c9-8f3c2fd916fe",
+  "id": "b19d05fa-34ea-4127-b84b-6f66299adc63",
   "meta": {
-    "lastUpdated": "2019-11-04T20:16:35.419+00:00"
+    "lastUpdated": "2020-02-03T12:10:05.773+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan?_format=json&_pretty=true&patient=http%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F31312"
+      "url": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F79923"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/560",
+      "fullUrl": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/538",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "560",
+        "id": "538",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T20:16:35.294+00:00",
+          "lastUpdated": "2020-02-03T12:10:05.594+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
         },
         "definition": [
           {
-            "reference": "http://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/59104"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/87454"
           }
         ],
         "status": "draft",
@@ -58,10 +58,10 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/31312"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/79923"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/558"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/536"
         },
         "period": {
           "start": "1970-01-01T01:00:01+01:00",
@@ -69,7 +69,7 @@ __Response__
         },
         "addresses": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/559"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/537"
           }
         ]
       },

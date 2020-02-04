@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWU5ZTFlNTAtOWZmMC00OTg2LWI2ZjMtZTgwNGU1ZjY3Zjg3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTk1ODFiODctY2Q2YS00MWJmLTlhNTAtYzVmM2MyY2M2NGYxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -55,17 +55,17 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/82571"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/36348"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/82677"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31839"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/32801"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/94415"
         },
-        "occurrenceDateTime": "2019-11-05T07:22:51+01:00",
+        "occurrenceDateTime": "2020-02-03T14:25:36+01:00",
         "content": {
           "language": "en"
         }
@@ -81,7 +81,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

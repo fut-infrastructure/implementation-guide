@@ -1,4 +1,4 @@
-`GET [base]/Composition?title=d42c7255-c4e9-4898-8140-be1c0e173374`
+`GET [base]/Composition?title=5ea4823c-2484-4c41-b795-cec8c80a95ff`
 
 __Header__
 ```
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "473cd37f-53c3-4b35-962e-8281aca8eaa0",
+  "id": "f6a5b3ab-12e4-455c-9411-597a79c09781",
   "meta": {
-    "lastUpdated": "2019-11-04T20:29:15.944+00:00"
+    "lastUpdated": "2020-02-03T12:38:38.047+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "http://document-transformation.local.ehealth.sundhed.dk/fhir/Composition?_format=json&_pretty=true&title=d42c7255-c4e9-4898-8140-be1c0e173374"
+      "url": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Composition?_format=json&_pretty=true&title=5ea4823c-2484-4c41-b795-cec8c80a95ff"
     }
   ],
   "entry": [
     {
-      "fullUrl": "http://document-transformation.local.ehealth.sundhed.dk/fhir/Composition/7",
+      "fullUrl": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Composition/38",
       "resource": {
         "resourceType": "Composition",
-        "id": "7",
+        "id": "38",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T20:29:15.364+00:00",
+          "lastUpdated": "2020-02-03T12:38:37.546+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -65,7 +65,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/10020"
+              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/96296"
             }
           },
           {
@@ -78,7 +78,7 @@ __Response__
             },
             "name": [
               {
-                "family": "c4f10658-75b0-42cc-b61d-99862b9cf398"
+                "family": "3a78556e-8468-4ddb-9cdb-14f969996767"
               }
             ]
           }
@@ -87,34 +87,34 @@ __Response__
         "type": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
+              "system": "http://loinc.org",
+              "code": "53576-5"
             }
           ]
         },
         "subject": {
           "reference": "#1"
         },
-        "date": "2019-11-04T21:29:15+01:00",
+        "date": "2020-02-03T13:38:37+01:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "d42c7255-c4e9-4898-8140-be1c0e173374"
+        "title": "5ea4823c-2484-4c41-b795-cec8c80a95ff"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "http://document-transformation.local.ehealth.sundhed.dk/fhir/Composition/6",
+      "fullUrl": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Composition/37",
       "resource": {
         "resourceType": "Composition",
-        "id": "6",
+        "id": "37",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T20:29:15.047+00:00",
+          "lastUpdated": "2020-02-03T12:38:37.046+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -144,7 +144,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/56667"
+              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/8011"
             }
           },
           {
@@ -157,7 +157,7 @@ __Response__
             },
             "name": [
               {
-                "family": "22c6deb4-0538-47a0-9519-1f11aafc01d2"
+                "family": "ecb1c43c-7e9f-4062-bfdc-58103f81c02e"
               }
             ]
           }
@@ -166,21 +166,21 @@ __Response__
         "type": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
+              "system": "http://loinc.org",
+              "code": "53576-5"
             }
           ]
         },
         "subject": {
           "reference": "#1"
         },
-        "date": "2019-11-04T21:29:14+01:00",
+        "date": "2020-02-03T13:38:37+01:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "d42c7255-c4e9-4898-8140-be1c0e173374"
+        "title": "5ea4823c-2484-4c41-b795-cec8c80a95ff"
       },
       "search": {
         "mode": "match"

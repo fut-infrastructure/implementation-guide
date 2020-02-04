@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzdhYjc0MTItZjc1OC00YzM1LTkwNGQtYmQxNmRhZjNlMzA0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS5yZWFkIiwiRGV2aWNlLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTFlZGZkM2YtZTYwZi00YmFiLThlMmEtYjRiZWMyMjkxNWEwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS5yZWFkIiwiRGV2aWNlLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -30,7 +30,7 @@ __Body__:
         {
           "url": "supplier",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/12111"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/5278"
           }
         },
         {
@@ -67,7 +67,7 @@ __Response__
   "id": "10",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T20:06:47.622+00:00",
+    "lastUpdated": "2020-02-03T12:29:52.234+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -83,7 +83,7 @@ __Response__
         {
           "url": "supplier",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/12111"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/5278"
           }
         },
         {

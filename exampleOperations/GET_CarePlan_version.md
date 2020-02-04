@@ -1,4 +1,4 @@
-`GET [base]/CarePlan/572/_history/2`
+`GET [base]/CarePlan/550/_history/2`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "572",
+  "id": "550",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-11-04T20:16:37.019+00:00",
+    "lastUpdated": "2020-02-03T12:10:07.854+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
@@ -30,13 +30,13 @@ __Response__
         {
           "url": "careTeam",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/44665"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/68773"
           }
         },
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2019-11-04T20:16:37+00:00"
+            "start": "2020-02-03T12:10:07+00:00"
           }
         }
       ]
@@ -44,7 +44,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "http://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/63807"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/56782"
     }
   ],
   "status": "draft",
@@ -60,10 +60,10 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/77637"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/64394"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/570"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/548"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
@@ -71,12 +71,12 @@ __Response__
   },
   "careTeam": [
     {
-      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/44665"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/68773"
     }
   ],
   "addresses": [
     {
-      "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/Condition/571"
+      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/549"
     }
   ]
 }

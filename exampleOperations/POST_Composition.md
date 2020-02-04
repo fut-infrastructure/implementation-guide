@@ -44,7 +44,7 @@ __Body__:
         }
       ],
       "managingOrganization": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/7035"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/72190"
       }
     },
     {
@@ -57,7 +57,7 @@ __Body__:
       },
       "name": [
         {
-          "family": "c219562b-6383-4d0e-949c-f0758887098e"
+          "family": "7374b783-c35b-467d-86ea-60c83d7d6ed3"
         }
       ]
     }
@@ -66,21 +66,21 @@ __Body__:
   "type": {
     "coding": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/document-type",
-        "code": "TBD"
+        "system": "http://loinc.org",
+        "code": "53576-5"
       }
     ]
   },
   "subject": {
     "reference": "#1"
   },
-  "date": "2019-11-04T21:29:09+01:00",
+  "date": "2020-02-03T13:38:34+01:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "b47a1667-07ed-4c7f-8039-bd9616a0c2f0"
+  "title": "be0dd332-41b7-4521-931c-5478a605f930"
 }
 ```
 
@@ -88,10 +88,10 @@ __Response__
 ```json
 {
   "resourceType": "Composition",
-  "id": "1",
+  "id": "32",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T20:29:11.556+00:00",
+    "lastUpdated": "2020-02-03T12:38:34.945+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
     ]
@@ -121,7 +121,7 @@ __Response__
         }
       ],
       "managingOrganization": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/7035"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/72190"
       }
     },
     {
@@ -134,7 +134,7 @@ __Response__
       },
       "name": [
         {
-          "family": "c219562b-6383-4d0e-949c-f0758887098e"
+          "family": "7374b783-c35b-467d-86ea-60c83d7d6ed3"
         }
       ]
     }
@@ -143,20 +143,20 @@ __Response__
   "type": {
     "coding": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/document-type",
-        "code": "TBD"
+        "system": "http://loinc.org",
+        "code": "53576-5"
       }
     ]
   },
   "subject": {
     "reference": "#1"
   },
-  "date": "2019-11-04T21:29:09+01:00",
+  "date": "2020-02-03T13:38:34+01:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "b47a1667-07ed-4c7f-8039-bd9616a0c2f0"
+  "title": "be0dd332-41b7-4521-931c-5478a605f930"
 }
 ```

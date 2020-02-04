@@ -1,4 +1,4 @@
-`POST [base]/CarePlan/16/$suggest-care-teams`
+`POST [base]/CarePlan/8/$suggest-care-teams`
 
 __Header__
 ```
@@ -30,10 +30,10 @@ __Response__
   "type": "searchset",
   "entry": [
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/54977",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/55554",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "54977",
+        "id": "55554",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -42,12 +42,12 @@ __Response__
         },
         "identifier": [
           {
-            "id": "f99d8d2a-792f-43b7-bbd5-513abca9da29",
+            "id": "1f97bca9-1dcf-42e4-bcdc-1fadd99abdf5",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "a237ce9f-1822-45b9-a521-924d328edb8e",
+        "name": "b72e9c99-25fe-40b9-a5c5-9ab9d31f6b69",
         "reasonCode": [
           {
             "coding": [
@@ -61,10 +61,10 @@ __Response__
       }
     },
     {
-      "fullUrl": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/82081",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/68924",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "82081",
+        "id": "68924",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -73,12 +73,12 @@ __Response__
         },
         "identifier": [
           {
-            "id": "7afb0159-3411-4923-b919-fbd50242893b",
+            "id": "52442e2a-8f33-4c3e-a702-6495712c9526",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "e7db56bd-93b9-4f11-89c1-d41c9763c3b3",
+        "name": "fa0eeb4e-8916-45fa-b5f6-c2d515fdaa92",
         "reasonCode": [
           {
             "coding": [

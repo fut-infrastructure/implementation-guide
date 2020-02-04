@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDI2MzZlYTktNzYyZS00MTFmLTllYTEtNTc1ODZkZGFlNzRlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMmYwZmZiYmYtNjk4Mi00NWYyLTkxMTYtZmQ1MjRiODg1ODUwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/69567"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/47837"
       }
     },
     {
       "name": "practitioner",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/6221"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/25169"
       }
     }
   ]
@@ -50,78 +50,6 @@ __Response__
       "value": "38c6a8c0-c20f-49df-bf40-1bf274aa42fd"
     }
   },
-  "content": "UEsDBBQACAgIAO9hhE8AAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDE5XzEyXzA0XzEyXzE1XzMwL1JlcG9ydEhlYWRlcrWRsU7DMBCG3+Xm1o5dmlDPSGylCplADFZyrS1S27o4SCXKu2NSVCx2xtP/3X2/7AkIg6e412cEBQfSbbTReof0+HCo6yWE1Q/V2IWShdithVwXd42QSmzVpmDVfbmpxEtCg6Z0LCINoKa0OPiRWmwuYRH8hhkJ6nUCd62gnXeXs/3U3y0S9KH7EZ8jWXdK6T41g3l1oz2dtPsD13hEQtfi1X8bwMQYFOf5Dut9q3uGBnUfDRtG1xnsWPfOj8YSf8pQXu62ZQVzZg/Zc/2DPf8NXkopkvxtnr8AUEsHCLd4IPjaAAAAtAEAAFBLAwQUAAgICADvYYRPAAAAAAAAAAAAAAAAQwAAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8zMC9FSGVhbHRoUHJhY3RpdGlvbmVyLzYyMjG1Uk1v2yAY/i+cS2xjG4OPayetp1ZbblMPBF5iNBssjCtlUf77gCZRVrWnaTfEA8/X+x7R128gxjA8eyGDCcZZ8Kg/Ig+LW72E7WEG1KO/4DtkVLyjhFTxPEEQ6ccr+CXijwlK97N32ozx8080hDD3RQFDltosq1UDqI36VejB+OJH8KsMq4cH0MZmlctbPN8Kv5zukBVT4jwiLSYzHqJYXWoOitV4x2uOG6Y6zOqmxgy4rDi0lHY1OqW/H2T97rLFlyt4LzxsQUxZ410LV+zcACNtyf97BTKqhqSaIhgFNhht0pSiwbdBlES1Je1wpTuKG152eCc5YEIbQihTui276GY5LAFiLrR62xsIuvda9jVnNLYT4SDCukQ4lfMK6FI1aokGXZUMt0qXuCHAMK9IhTsBwLRugNbp9Sx8MNLMwoZsbYJpd9klDR6sTGTnHpzfC2t+ixR0Mzopxs1n1dxOq8g7d0p2PYjF2Xun3rZBOmXsPh+vOT/vXC6FdFZl1iV6l5kGbb88pEWJ7JOwYh8Jn258njfiX7Lc0hWUt7TLeqc/UEsHCK1xJqeiAQAAhwMAAFBLAQIUABQACAgIAO9hhE+3eCD42gAAALQBAAA3AAAAAAAAAAAAAAAAAAAAAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMTlfMTJfMDRfMTJfMTVfMzAvUmVwb3J0SGVhZGVyUEsBAhQAFAAICAgA72GET61xJqeiAQAAhwMAAEMAAAAAAAAAAAAAAAAAPwEAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAxOV8xMl8wNF8xMl8xNV8zMC9FSGVhbHRoUHJhY3RpdGlvbmVyLzYyMjFQSwUGAAAAAAIAAgDWAAAAUgMAAAAA"
-}
-```
-
-__Content:__
-
-*PractitionerGDPRReport_2019_12_04_12_15_30/ReportHeader*
-```json
-{
-  "reportName" : "PractitionerGDPRReport",
-  "reportTime" : "2019-12-04T12:15:30.786371Z",
-  "parameters" : {
-    "resourceType" : "Parameters",
-    "parameter" : [ {
-      "name" : "anonymization",
-      "valueString" : "None"
-    }, {
-      "name" : "organization",
-      "valueReference" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/69567"
-      }
-    }, {
-      "name" : "practitioner",
-      "valueReference" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/6221"
-      }
-    } ]
-  }
-}
-```
-*PractitionerGDPRReport_2019_12_04_12_15_30/EHealthPractitioner/6221*
-```json
-{
-  "EHealthPractitioner" : {
-    "resourceType" : "Practitioner",
-    "id" : "6221",
-    "meta" : {
-      "versionId" : "1",
-      "profile" : [ "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" ]
-    },
-    "name" : [ {
-      "family" : "30f9ed83-b939-48d7-8343-8e9c19e56673"
-    } ]
-  },
-  "EHealthPractitionerRole" : [ ],
-  "EHealthCareTeam" : [ {
-    "resourceType" : "CareTeam",
-    "id" : "82509",
-    "meta" : {
-      "versionId" : "1",
-      "profile" : [ "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" ]
-    },
-    "identifier" : [ {
-      "id" : "602d5067-1f76-4907-bc9e-2642268df507",
-      "system" : "urn:ietf:rfc:3986"
-    } ],
-    "status" : "active",
-    "name" : "52fef108-5df0-42e8-9121-7aee8ff4e63e",
-    "participant" : [ {
-      "member" : {
-        "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/6221"
-      }
-    } ],
-    "reasonCode" : [ {
-      "coding" : [ {
-        "system" : "http://ehealth.sundhed.dk/cs/conditions",
-        "code" : "TBD"
-      } ]
-    } ],
-    "managingOrganization" : [ {
-      "reference" : "http://organization.local.ehealth.sundhed.dk/fhir/Organization/69567"
-    } ]
-  } ]
+  "content": "UEsDBBQACAgIAFdyQ1AAAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzAyXzAzXzE0XzE4XzQ2L1JlcG9ydEhlYWRlcrWRsW7CMBCG3+VmsJ0QCHiu1I2ikKlVBys5sNVgWxcHiUZ597qholb3jqf/u/t+2SMQekdhry4IEg6kmmCCcRbp+elQVXMIix+qNjOVi1wsRb4UqzorZLaVxYaJcl0Wu9eIekXxWEDqQY5xsXcDNVjf/Cz4DRMS5NsI9l5BWWdvF/OpvltE6Kq6AY+BjD3HdB+bwbR40I7Oyv6BKzwhoW3w7n8MoEPwveQ8XWKda1THUKPqgmb9YFuNLWs/+Ekb4i8JyotyuyphSvQ+ea//0Kf/wfN1ttlF/fs0fQFQSwcIDYzAxdwAAAC3AQAAUEsDBBQACAgIAFdyQ1AAAAAAAAAAAAAAAABEAAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzAyXzAzXzE0XzE4XzQ2L0VIZWFsdGhQcmFjdGl0aW9uZXIvMjUxNjm1Uktv3CAQ/i+cwxo/MT42iZScUql7i3IYw7BGtbEFONJ2tf+94OxG20o5Vb3BDPO9mBN5fEIYw/DdgQwmmNmiI92JOPTz6iTujwuSjvzRviNGxVpR542IlwkDpJF3dD4+eE69PNYXN2szxulXMoSwdFmGw8a186tVA6qd+pnpwbjsR3CrDKvDB9TGbjTXt3S5ZX473xELU8I8EQ2TGY+RDIua5aIEmgNntGprSXshGNUAeclyxhquyDnNXszeg8M9wrTB/OX0s3dxyTln5X93KSNrSKxJpVFog9Em/UQUuMmoe8yLAnsqChk9ihZpjwJorDWV5AyrOqnxRx8w+iKrs53BoDunZVeKtokBxHaAsPrYTpm+I7mmSViLhdAFp4WUBa2anFMBEmmpFLCybMtW8WQWXDDSLGDDJm3Cqb/ui0aHViawlIOPQczuANb8guR0N84Sxt1X2dzuV/axWOck2CH42d7P6uPL5ayMPWzHT6dfpy59JmerNlgf1csNhuy/PaRtiOgTWDhEwJcboZed+Cc3t3hZxduSb4Tn31BLBwjQicnBnQEAAG4DAABQSwECFAAUAAgICABXckNQDYzAxdwAAAC3AQAANwAAAAAAAAAAAAAAAAAAAAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzAyXzAzXzE0XzE4XzQ2L1JlcG9ydEhlYWRlclBLAQIUABQACAgIAFdyQ1DQicnBnQEAAG4DAABEAAAAAAAAAAAAAAAAAEEBAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjBfMDJfMDNfMTRfMThfNDYvRUhlYWx0aFByYWN0aXRpb25lci8yNTE2OVBLBQYAAAAAAgACANcAAABQAwAAAAA="
 }
 ```

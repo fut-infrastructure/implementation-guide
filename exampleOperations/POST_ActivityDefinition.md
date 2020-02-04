@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cDovL29yZ2FuaXphdGlvbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9Pcmdhbml6YXRpb24vMzk4NjIifSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzk3NjM0In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -37,7 +37,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/39862"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/97634"
           }
         },
         {
@@ -54,8 +54,8 @@ __Body__:
       ]
     }
   ],
-  "version": "7e425622-8162-4d79-81ac-37f9ebaf9f59",
-  "name": "41e5e360-aa82-4ad7-b1d0-09ecebf037ab",
+  "version": "2ae94d95-3d0f-44f9-bad2-8c1f621859ca",
+  "name": "a9e3bdd6-1247-4b96-9350-ac1e3f408a42",
   "status": "active",
   "topic": [
     {
@@ -85,7 +85,7 @@ __Response__
   "id": "30",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-05T06:31:25.072+00:00",
+    "lastUpdated": "2020-02-03T14:06:59.459+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -108,7 +108,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/39862"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/97634"
           }
         },
         {
@@ -125,8 +125,8 @@ __Response__
       ]
     }
   ],
-  "version": "7e425622-8162-4d79-81ac-37f9ebaf9f59",
-  "name": "41e5e360-aa82-4ad7-b1d0-09ecebf037ab",
+  "version": "2ae94d95-3d0f-44f9-bad2-8c1f621859ca",
+  "name": "a9e3bdd6-1247-4b96-9350-ac1e3f408a42",
   "status": "active",
   "topic": [
     {

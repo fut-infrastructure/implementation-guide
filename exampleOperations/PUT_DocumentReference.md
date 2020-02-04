@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHA6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzk5NTAyIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi8zMTI0NCJ9LCJ1c2VyX3R5cGUiOiJQQVRJRU5UIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -18,7 +18,7 @@ __Body__:
   "id": "53",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-05T06:31:33.373+00:00",
+    "lastUpdated": "2020-02-03T14:07:08.861+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -32,9 +32,9 @@ __Body__:
       }
     ]
   },
-  "indexed": "2019-11-05T07:31:33.287+01:00",
+  "indexed": "2020-02-03T15:07:08.844+01:00",
   "custodian": {
-    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/99502"
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/31244"
   },
   "content": [
     {
@@ -53,7 +53,7 @@ __Response__
   "id": "53",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-11-05T06:31:33.713+00:00",
+    "lastUpdated": "2020-02-03T14:07:09.059+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -67,9 +67,9 @@ __Response__
       }
     ]
   },
-  "indexed": "2019-11-05T07:31:33.287+01:00",
+  "indexed": "2020-02-03T15:07:08.844+01:00",
   "custodian": {
-    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/99502"
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/31244"
   },
   "content": [
     {

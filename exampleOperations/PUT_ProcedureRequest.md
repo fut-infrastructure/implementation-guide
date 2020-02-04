@@ -1,9 +1,9 @@
-`PUT [base]/ProcedureRequest/940`
+`PUT [base]/ProcedureRequest/1175`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHA6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vMzM5MTYiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS85MzkiLCJwYXRpZW50X2lkIjoiaHR0cDovL3BhdGllbnQubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUGF0aWVudC85Mzg0MyJ9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0NhcmVUZWFtLzI2NTc2IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzExNzQiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvMTQyNTEifSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "940",
+  "id": "1175",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T20:17:33.283+00:00",
+    "lastUpdated": "2020-02-03T12:11:49.242+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -38,7 +38,7 @@ __Body__:
   ],
   "definition": [
     {
-      "reference": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/20713"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/83302"
     }
   ],
   "status": "completed",
@@ -50,13 +50,13 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "bbe776cb-0933-4fd6-af3f-27a95fc9bfaa"
+    "text": "cfc58e09-ab6c-475d-a6a3-3852b09e6297"
   },
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/93843"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/14251"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/939"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1174"
   }
 }
 ```
@@ -65,10 +65,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "940",
+  "id": "1175",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-11-04T20:17:33.878+00:00",
+    "lastUpdated": "2020-02-03T12:11:49.960+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -88,7 +88,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "http://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/20713"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/83302"
     }
   ],
   "status": "completed",
@@ -100,13 +100,13 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "bbe776cb-0933-4fd6-af3f-27a95fc9bfaa"
+    "text": "cfc58e09-ab6c-475d-a6a3-3852b09e6297"
   },
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/93843"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/14251"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/939"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1174"
   }
 }
 ```

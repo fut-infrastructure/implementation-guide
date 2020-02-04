@@ -1,9 +1,9 @@
-`GET [base]/CareTeam/295`
+`GET [base]/CareTeam/316`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjMzZDA0NWQtY2MzMy00MmFhLWE4MDAtNzUyMmI3ZTQ2MzMyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjFlNjhhOWUtMThhOC00MDYwLWIxODMtMzY4ZTEyYzJhOTNkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,22 +15,22 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "295",
+  "id": "316",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T19:50:32.099+00:00",
+    "lastUpdated": "2020-02-03T14:02:21.311+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "372ff45a-74d1-443e-beac-a7c7afb2abcf",
+      "id": "51973bb3-6152-4eff-8d05-61293b609df5",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "039d16ff-4b02-4a3c-8cf2-ace93e2ff61a",
+  "name": "9a6dc419-5fcb-4cde-9cb8-9b536b13dee9",
   "participant": [
     {
       "role": {
@@ -42,7 +42,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/35909"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/64091"
       }
     },
     {
@@ -55,7 +55,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/CareTeam/292"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/313"
       }
     },
     {
@@ -68,7 +68,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/294"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/315"
       }
     }
   ],
@@ -84,7 +84,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Organization/293"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/314"
     }
   ]
 }
