@@ -39,7 +39,7 @@
 
 |MessageType|EventType|Topic|Description|
 |---|---|---|---|
-|EHealthContextEvent|created|ehealth-documentreference.document-publication-prepared|A DocumentReference with content type of PHMR or QRD has been created|
+|EHealthContextEvent|created|ehealth-documentreference.document-published|A DocumentReference with content type of PHMR or QRD has been created|
 {:.grid}
 #### Measurement Messages
 
@@ -163,6 +163,9 @@
 |MessageType|EventType|Topic|Description|
 |---|---|---|---|
 |EHealthSimpleEvent|created|ehealth-clinicalimpression|A ClinicalImpression has been created|
+|EHealthSimpleEvent|updated|ehealth-clinicalimpression|A ClinicalImpression has been updated|
+|EHealthContextEvent|created|ehealth-clinicalimpression.approved-for-sharing|A ClinicalImpression has been approved for sharing|
+|EHealthContextEvent|updated|ehealth-clinicalimpression.approved-for-sharing|A ClinicalImpression has been approved for sharing|
 {:.grid}
 
 #### Task Messages
