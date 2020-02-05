@@ -33,6 +33,10 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/municipality-codes" />
       </binding>
     </element>
+    <element id="Extension.value[x]:valueCoding.system">
+      <path value="Extension.valueCoding.system" />
+      <fixedUri value="http://danmarksadresser.dk/kommunekode" />
+    </element>
     <element id="Extension.value[x]:valueCoding.code">
       <path value="Extension.valueCoding.code" />
       <min value="1" />

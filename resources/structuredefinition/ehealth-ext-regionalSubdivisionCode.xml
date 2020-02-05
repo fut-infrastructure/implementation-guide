@@ -33,5 +33,16 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes" />
       </binding>
     </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.valueCodeableConcept.coding.system" />
+      <fixedUri value="https://www.iso.org/obp/ui/#iso:code:3166:DK" />
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.valueCodeableConcept.coding.code" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes" />
+      </binding>
+    </element>
   </differential>
 </StructureDefinition>
