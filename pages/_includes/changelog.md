@@ -8,6 +8,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Custom operations
 #### System operations
+- Added description and example of `-s-persist-login` operation
+
 #### Instance operations
 ### Code systems
 ### ValueSets

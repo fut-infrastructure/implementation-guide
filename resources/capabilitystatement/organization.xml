@@ -512,6 +512,12 @@
          </definition>
       </operation>
       <operation>
+         <name value="persist-login"/>
+         <definition>
+            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login"/>
+         </definition>
+      </operation>
+      <operation>
          <name value="validate"/>
          <definition>
             <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam--validate"/>

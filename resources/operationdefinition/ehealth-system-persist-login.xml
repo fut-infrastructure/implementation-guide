@@ -1,0 +1,47 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-persist-login"/>
+   <name value="persist-login"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="This operation persist login information into either a CareTeam or a PractitionerRole if it is necessary. The CareTeam is updated if the CareTeam doesn't have both the passed practitioner and CareTeam's PractitionerRole combination. The PractitionerRole is created if a combination of the passed Organization and Practitioner hasn't exist yet."/>
+   <idempotent value="false"/>
+   <code value="persist-login"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="practitioner"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="careTeam"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="careTeamParticipantRole"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type value="CodeableConcept"/>
+   </parameter>
+   <parameter>
+      <name value="organization"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="bundle"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
+   </parameter>
+</OperationDefinition>

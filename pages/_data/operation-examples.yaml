@@ -30,6 +30,9 @@
   path: POST_import-organizations.md
 
 - profile: system
+  path: POST_persist-login.md
+
+- profile: system
   path: POST_import.md
 
 # system reporting
