@@ -122,6 +122,9 @@ Example operations updated.
 #### CommunicationRequest (ehealth-communication-request)
 - Added introduction
 
+#### DeviceMetric (ehealth-devicemetric)
+- Changed valueset binding for type/unit to http://ehealth.sundhed.dk/vs/device-measurement-unit
+
 #### Library (ehealth-library)
 - Library.jurisdiction bound to ValueSet `http://ehealth.sundhed.dk/vs/jurisdiction`
 
