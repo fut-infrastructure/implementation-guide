@@ -69,6 +69,30 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities" />
       </type>
     </element>
+    <element id="DeviceMetric.type">
+      <path value="DeviceMetric.type" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MetricType" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-measurement-unit" />
+        </valueSetReference>
+      </binding>
+    </element>
+    <element id="DeviceMetric.unit">
+      <path value="DeviceMetric.unit" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MetricUnit" />
+        </extension>
+        <strength value="preferred" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/device-measurement-unit" />
+        </valueSetReference>
+      </binding>
+    </element>
     <element id="DeviceMetric.source">
       <path value="DeviceMetric.source" />
       <min value="1" />
@@ -101,7 +125,6 @@
       <sliceName value="calibrationExpires" />
       <short value="Date when the current calibration expires." />
       <definition value="Date when the current calibration expires and recalibration is required." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
