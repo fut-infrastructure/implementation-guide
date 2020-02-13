@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-legalBasis" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis" />
   <name value="ehealth-ext-legalBasis" />
   <title value="Legal basis" />

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="person-deceased" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/person-deceased" />
   <name value="eHealth Person deceased" />
   <status value="draft" />
