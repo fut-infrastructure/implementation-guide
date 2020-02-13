@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-releasableResource" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-releasableResource" />
   <name value="ehealth-ext-releasableResource" />
   <title value="Releasable resource" />
