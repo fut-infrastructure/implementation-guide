@@ -35,6 +35,16 @@
 |EHealthSimpleEvent|created|ehealth-consent|Generated when a Consent is created.|
 |EHealthSimpleEvent|updated|ehealth-consent|Generated when a Consent is updated.|
 {:.grid}
+##### Device Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ehealth-device|A Device has been created.|
+|EHealthSimpleEvent|updated|ehealth-device|A Device has been updated.|
+|EHealthSimpleEvent|created|ehealth-devicemetric|A DeviceMetric has been created.|
+|EHealthSimpleEvent|updated|ehealth-devicemetric|A DeviceMetric has been updated.|
+|EHealthSimpleEvent|deleted|ehealth-devicemetric|A DeviceMetric has been deleted.|
+{:.grid}
 #### Document Transformation Messages
 
 |MessageType|EventType|Topic|Description|
