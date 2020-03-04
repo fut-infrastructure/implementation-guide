@@ -40,4 +40,10 @@ In the eHealth Infrastructure the Appointment resource is used in conjunction wi
 
 - Location
   - If the appointment contains a participant of type Location
+
+# Notifications
+The following rules apply to ehealth-appointment resources, given the appointment contains a participant of type _Patient_, who allows reception of NemSMS (has telecom with value 'NemSMS'):
+
+* a NemSMS is sent to the patient the day prior to the appointments _start_ time.
+
   

@@ -73,7 +73,13 @@ The following rules apply for the ehealth-message profile:
 * If medium.code is eboks or nemsms, the recipient must be of type Patient
 * Only one of sender or extension senderCareTeam may be filled in
 * Only one of recipient or extension recipientCareTeam may be filled in
-* Medium 'nemsms' may only be used if the Patient allows reception of NemSMS (has telecom with value 'NemSMS). In that case, a NemSMS message will be sent to the Patient.
+* Medium 'nemsms' may only be used if the Patient allows reception of NemSMS (has telecom with value 'NemSMS'). In that case, a NemSMS message will be sent to the Patient.
+
+# Notifications
+The following rules apply to ehealth-message resources with _status_ 'completed', given the recipient is a _Patient_ who allows reception of NemSMS (has telecom with value 'NemSMS'):
+
+* the payload of a ehealth-message resource with _medium.code_ 'nemsms' is sent to the Patient as a NemSMS.
+* a ehealth-message resource with _medium.code_ not equal to 'nemsms' triggers a notification message to the Patient, sent as a NemSMS. 
 
 # Update rules
 
