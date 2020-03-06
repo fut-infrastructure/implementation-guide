@@ -59,6 +59,9 @@ podTemplate(label: label,
         withAWS(region:config.s3.region, credentials: config.s3.jenkins_creds_id) {
           s3Delete(bucket: config.s3.bucket, path: 'index.html')
           s3Upload(file:'static/index.html', bucket:config.s3.bucket, path:'')
+          
+					s3Delete(bucket: config.s3.bucket, path: 'google9d5cd626b0e5379d.html')
+          s3Upload(file:'static/google9d5cd626b0e5379d.html', bucket:config.s3.bucket, path:'')
 
           def igPath = ""
           if (version == "latest") {
