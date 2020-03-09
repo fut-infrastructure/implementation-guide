@@ -61,7 +61,7 @@ podTemplate(label: label,
           s3Upload(file:'static/index.html', bucket:config.s3.bucket, path:'')
           
 					s3Delete(bucket: config.s3.bucket, path: 'google9d5cd626b0e5379d.html')
-          s3Upload(file:'static/google9d5cd626b0e5379d.html', bucket:config.s3.bucket, path:'')
+          s3Upload(file:'static/google9d5cd626b0e5379d.html', bucket:config.s3.bucket, path:'v2020.1/ig')
 
           def igPath = ""
           if (version == "latest") {
