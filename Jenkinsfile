@@ -71,7 +71,7 @@ podTemplate(label: label,
           s3Upload(file:'output/', bucket:config.s3.bucket, path: igPath)
 					
 					s3Delete(bucket: config.s3.bucket, path: 'v2020.1/ig/google9d5cd626b0e5379d.html')
-          s3Upload(file:'static/google9d5cd626b0e5379d.html', bucket:config.s3.bucket, path:'v2020.1/ig')
+          s3Upload(file:'static/google9d5cd626b0e5379d.html', bucket:config.s3.bucket, path:'v2020.1/ig/google9d5cd626b0e5379d.html')
         }
       }
     }
