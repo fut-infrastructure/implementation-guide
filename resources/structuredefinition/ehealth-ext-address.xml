@@ -42,27 +42,10 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code" />
       </type>
     </element>
-    <element id="Address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding">
-      <path value="Address.extension.valueCodeableConcept.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding:regionalCode">
-      <path value="Address.extension.valueCodeableConcept.coding" />
-      <sliceName value="regionalCode" />
-    </element>
-    <element id="Address.extension:regionalSubdivisionCode.valueCodeableConcept:valueCodeableConcept.coding:regionalCode.system">
-      <path value="Address.extension.valueCodeableConcept.coding.system" />
-      <fixedUri value="https://www.iso.org/obp/ui/#iso:code:3166:DK" />
-    </element>
     <element id="Address.use">
       <path value="Address.use" />
       <min value="1" />
+      <fixedCode value="home" />
     </element>
     <element id="Address.district">
       <path value="Address.district" />

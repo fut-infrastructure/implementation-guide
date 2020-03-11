@@ -152,28 +152,10 @@
     <element id="Patient.address:officialHomeAddress">
       <path value="Patient.address" />
       <sliceName value="officialHomeAddress" />
-      <min value="1" />
-      <max value="1" />
       <type>
         <code value="Address" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
       </type>
-    </element>
-    <element id="Patient.address:officialHomeAddress.use">
-      <path value="Patient.address.use" />
-      <fixedCode value="home" />
-    </element>
-    <element id="Patient.address:temporaryAddress">
-      <path value="Patient.address" />
-      <sliceName value="temporaryAddress" />
-      <type>
-        <code value="Address" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-address" />
-      </type>
-    </element>
-    <element id="Patient.address:temporaryAddress.use">
-      <path value="Patient.address.use" />
-      <fixedCode value="temp" />
     </element>
     <element id="Patient.contact.extension">
       <path value="Patient.contact.extension" />
