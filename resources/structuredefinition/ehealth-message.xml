@@ -23,6 +23,12 @@
         <human value="If communication resource is a NemSMS payload cannot exceed 160" />
         <expression value="medium.coding.where(code = 'nemsms').exists()  implies payload.contentString.length() &lt;= 160" />
       </constraint>
+      <constraint>
+        <key value="no-patient-to-patient-communcation" />
+        <severity value="error" />
+        <human value="Patients are not allowed to send messages to each other" />
+        <expression value="(sender.reference.contains('Patient/') and recipient.reference.contains('Patient/')).not()" />
+      </constraint>
     </element>
     <element id="Communication.extension">
       <path value="Communication.extension" />
