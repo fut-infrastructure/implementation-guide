@@ -7,12 +7,12 @@
     <status value="active"/>
     <experimental value="true"/>
     <date value="2019-12-02"/>
-    <publisher value="Systematic A/S"/>
+    <publisher value="ehealth.sundhed.dk"/>
     <contact>
-        <name value="Systematic A/S"/>
+        <name value="ehealth.sundhed.dk"/>
         <telecom>
             <system value="url"/>
-            <value value="http://ehealth.sundhed.dk/"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
         </telecom>
     </contact>
     <sourceUri value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
