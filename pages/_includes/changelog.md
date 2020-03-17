@@ -16,6 +16,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Device (ehealth-device)
+- Changed so Status is mandatory
+
 #### Observation (ehealth-observation)
 - Changed so Device is not mandatory
 

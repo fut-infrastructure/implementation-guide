@@ -48,12 +48,13 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-suppliers" />
       </type>
     </element>
+    <element id="Device.status">
+      <path value="Device.status" />
+      <min value="1" />
+    </element>
     <element id="Device.type">
       <path value="Device.type" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DeviceKind" />
-        </extension>
         <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/device-types" />
