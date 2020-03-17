@@ -125,7 +125,6 @@
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
-      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device" />

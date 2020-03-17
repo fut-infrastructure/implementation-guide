@@ -16,6 +16,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Observation (ehealth-observation)
+- Changed so Device is not mandatory
+
 ## 2020.1 (2020-02-04)
 
 ### General changes
