@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="MedComMessageCodes-old"/>
-  <url value="http://www.example.com/medcom/message-codes"/>
-  <!--<identifier>-->
-    <!--<system value="urn:ietf:rfc:3986"/>-->
-    <!--<value value="urn:oid:1.2.208.184.100.1"/>-->
-  <!--</identifier>-->
+  <id value="MedComMessageCodes"/>
+  <url value="urn:oid:1.2.208.184.100.1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.2.208.184.100.1"/>
+  </identifier>
   <version value="1.0.0"/>
   <name value="MedCom Message Codes"/>
-  <status value="retired"/>
+  <status value="active"/>
   <experimental value="false"/>
   <date value="2019-04-10"/>
   <publisher value="MedCom"/>
@@ -20,7 +20,7 @@
   </contact>
   <description value="MedCom Message Codes."/>
   <caseSensitive value="true"/>
-  <content value="complete"/>
+  <content value="fragment"/>
   <concept>
     <code value="RAL"/>
     <display value="Terapeutiske grænseværdier for RØD alarm"/>

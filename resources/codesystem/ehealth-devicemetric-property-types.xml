@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/devicemetric-property-types"/>
     <version value="0.6.0"/>
     <name value="DeviceMetricPropertyTypes"/>
+    <title value="DeviceMetric Property Types"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,10 +22,18 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="buttonSize"/>
         <display value="Size of button on device"/>
         <definition value="Size of button on device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Udstyrets knapstørrelse"/>
+        </designation>
     </concept>
 </CodeSystem>

@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-codes"/>
     <version value="0.6.0"/>
     <name value="ClinicalImpressionCodes"/>
+    <title value="ClinicalImpression Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,30 +22,54 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="TriagingResult"/>
         <display value="Result of triaging"/>
         <definition value="Result of triaging"/>
+        <designation>
+            <language value="da"/>
+            <value value="Triageringsresultat"/>
+        </designation>
     </concept>
     <concept>
         <code value="MeasurementAssessment"/>
         <display value="Assessment of measurement"/>
         <definition value="Assessment of measurement"/>
+        <designation>
+            <language value="da"/>
+            <value value="Vurdering af måling"/>
+        </designation>
     </concept>
     <concept>
         <code value="MeasurementTypeUnexpected"/>
         <display value="Measurement of unexpected type"/>
         <definition value="Measurement of unexpected type"/>
+        <designation>
+            <language value="da"/>
+            <value value="Uventet måling"/>
+        </designation>
     </concept>
     <concept>
         <code value="MeasurementTimingUnexpected"/>
         <display value="Measurement not expected"/>
         <definition value="Measurement not expected"/>
+        <designation>
+            <language value="da"/>
+            <value value="Måling ikke forventet på tidspunktet"/>
+        </designation>
     </concept>
     <concept>
         <code value="ClinicalDecisionSupportResult"/>
         <display value="Generic result of CDS"/>
         <definition value="Generic result of CDS"/>
+        <designation>
+            <language value="da"/>
+            <value value="Resultat af beslutningsstøtte"/>
+        </designation>
     </concept>
 </CodeSystem>

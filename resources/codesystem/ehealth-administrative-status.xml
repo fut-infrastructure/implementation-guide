@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/administrative-status"/>
     <version value="0.6.0"/>
     <name value="AdministrativeStatus"/>
+    <title value="Administrative Status"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-08-05"/>

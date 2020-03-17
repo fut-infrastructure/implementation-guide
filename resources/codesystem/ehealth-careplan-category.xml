@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/careplan-category"/>
     <version value="0.6.0"/>
     <name value="CarePlanCategory"/>
+    <title value="CarePlan Category"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,10 +22,18 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="TBD2"/>
         <display value="Example value 2 - Under construction"/>
         <definition value="Example value 2 - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
 </CodeSystem>

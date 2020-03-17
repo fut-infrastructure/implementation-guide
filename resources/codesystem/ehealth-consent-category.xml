@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/consent-category"/>
     <version value="0.6.0"/>
     <name value="ConsentCategory"/>
+    <title value="Consent Category"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,15 +22,27 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="PITEOC"/>
         <display value="Participate in Telemedical EpisodeOfCare"/>
         <definition value="Participate in Telemedical EpisodeOfCare"/>
+        <designation>
+            <language value="da"/>
+            <value value="Deltagelse i telemedicinsk forløb"/>
+        </designation>
     </concept>
     <concept>
         <code value="SSLPCI"/>
         <display value="Forward patient contact information to SSL provider"/>
         <definition value="Forward patient contact information to SSL provider"/>
+        <designation>
+            <language value="da"/>
+            <value value="Videregivelse til Service, Support og Logistik-leverandør af patientens adresse og kontaktinformation"/>
+        </designation>
     </concept>
 </CodeSystem>

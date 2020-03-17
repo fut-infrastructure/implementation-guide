@@ -3,6 +3,7 @@
   <url value="http://ehealth.sundhed.dk/cs/devicemetric-quality-types"/>
   <version value="0.6.0"/>
   <name value="DeviceMetricQualityTypes"/>
+  <title value="DeviceMetric Quality Types"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-01-29"/>

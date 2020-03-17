@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/careteam-category"/>
     <version value="0.6.0"/>
     <name value="CareTeamCategory"/>
+    <title value="CareTeam Category"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,5 +22,9 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
 </CodeSystem>

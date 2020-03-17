@@ -19,12 +19,20 @@
     <content value="complete"/>
     <concept>
         <code value="healthcare-act"/>
-        <display value="Sundhedsloven"/>
+        <display value="Danish healthcare act"/>
         <definition value="Danish healthcare act"/>
+        <designation>
+            <language value="da"/>
+            <value value="Sundhedsloven"/>
+        </designation>
     </concept>
     <concept>
         <code value="service-act"/>
-        <display value="Serviceloven"/>
+        <display value="Danish service act"/>
         <definition value="Danish service act"/>
+        <designation>
+            <language value="da"/>
+            <value value="Serviceloven"/>
+        </designation>
     </concept>
 </CodeSystem>

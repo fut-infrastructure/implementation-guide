@@ -3,7 +3,8 @@
     <id value="ehealth-device-calibration-actor"/>
     <url value="http://ehealth.sundhed.dk/cs/device-calibration-actor"/>
     <version value="0.6.0"/>
-    <name value="Device calibration actor"/>
+    <name value="DeviceCalibrationActor"/>
+    <title value="Device calibration actor"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-16"/>
@@ -21,15 +22,27 @@
         <code value="PATIENT"/>
         <display value="Calibrated by patient"/>
         <definition value="Calibrated by patient"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kalibreret af patient/borger"/>
+        </designation>
     </concept>
 	<concept>
         <code value="SSLPATIENT"/>
         <display value="Calibrated by SSL provider at patient residence"/>
         <definition value="Calibrated by SSL provider at patient residence"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kalibreret af Service, Support og Logistik-leverandør hos patient/borger"/>
+        </designation>
     </concept>
     <concept>
         <code value="SSL"/>
         <display value="Calibrated by SSL at SSL supplier"/>
         <definition value="Calibrated by SSL at SSL supplier"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kalibreret af Service, Support og Logistik-leverandør hos leverandøren"/>
+        </designation>
     </concept>
 </CodeSystem>

@@ -3,9 +3,9 @@
   <url value="http://ehealth.sundhed.dk/vs/reference-range-type"/>
   <version value="0.6.0"/>
   <name value="ReferenceRangeType"/>
-  <title value="ReferenceRangeType"/>
+  <title value="Reference Range Type"/>
   <status value="active"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2019-02-08"/>
   <publisher value="ehealth.sundhed.dk"/>
   <contact>
@@ -24,7 +24,6 @@
       <valueSet value="http://ehealth.sundhed.dk/vs/observation-codes"/>
     </include>
     <include>
-      <!--<system value="urn:oid:1.2.208.184.100.1"/>-->
       <system value="http://www.example.com/medcom/message-codes"/>
       <concept>
         <code value="RAL"/>
@@ -35,6 +34,19 @@
         <display value="Terapeutiske grænseværdier for GUL alarm"/>
       </concept>
     </include>
+    <include>
+      <system value="urn:oid:1.2.208.184.100.1"/>
+      <concept>
+        <code value="RAL"/>
+        <display value="Terapeutiske grænseværdier for RØD alarm"/>
+      </concept>
+      <concept>
+        <code value="GAL"/>
+        <display value="Terapeutiske grænseværdier for GUL alarm"/>
+      </concept>
+    </include>
+
+
     <include>
       <system value="http://ehealth.sundhed.dk/cs/reference-range-type"/>
       <concept>

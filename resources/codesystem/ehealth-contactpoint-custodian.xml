@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/contactpoint-custodian"/>
     <version value="0.6.0"/>
     <name value="ContactPointCustodian"/>
+    <title value="ContactPoint Custodian"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,16 +22,28 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="SOR"/>
         <display value="Contact point maintained in the SOR register"/>
         <definition value="Contact point maintained in the SOR register"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kontaktinformation vedligeholdt i Sundhedsvæsenets organisationsregister (SOR)"/>
+        </designation>
     </concept>
     <concept>
         <code value="ORG"/>
         <display value="Contact point maintained in KOMBIT STS Organisation"/>
         <definition value="Contact point maintained in KOMBIT STS Organisation"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kontaktinformation vedligeholdt i KOMBIT STS Organisation"/>
+        </designation>
     </concept>
     <concept>
         <code value="MAN"/>

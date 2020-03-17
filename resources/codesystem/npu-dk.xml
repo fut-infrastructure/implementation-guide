@@ -20,7 +20,7 @@
    </contact>
    <description value="It is the translation into Danish of the International NPU Terminology. The NPU terminology defines types of clinical laboratory results expressed as patient properties, with measurement units where relevant, and with individual identifiers. The NPU terminology is owned by: the International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC). The Danish Health Data Authority (see OID {iso(1) member-body(2) dk(208) nsi(176)}) serves as the international repository for the international version. Child OIDs may be registered by the Danish Health Data Authority on decision by the NPU Terminology Steering Committee. OIDs for the national versions are registered by the National Release Centers."/>
    <caseSensitive value="true"/>
-   <content value="complete"/>
+   <content value="fragment"/>
    <concept>
       <code value="NPU03011"/>
       <display value="Hb(Fe; O&lt;sub>2&lt;/sub>-bind.; aB)—Oxygen(O&lt;sub>2&lt;/sub>); mætn. = ?"/>
@@ -31,6 +31,11 @@
       <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
       <definition value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
    </concept>
+    <concept>
+        <code value="NPU03794"/>
+        <display value="Pt—Legeme; højde = ? m"/>
+        <definition value="Pt—Legeme; højde = ? m"/>
+    </concept>
    <concept>
       <code value="NPU03804"/>
       <display value="Pt—Legeme; masse = ? kg"/>
@@ -41,4 +46,50 @@
       <display value="Hjerte—Systole; frekv. = ? × 1/min"/>
       <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
    </concept>
+    <!--
+                <concept>
+                <code value="NPU03011"/>
+                <display value="O2 sat.;Hb(aB)"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Oxygen saturation"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="NPU21692"/>
+                <display value="Puls;Hjerte"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Heartbeats per minute"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Hjerte—Systole; frekv. = ? × 1/min"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="NPU03804"/>
+                <display value="Legeme vægt; Pt"/>
+                <designation>
+                    <language value="en-US"/>
+                    <value value="Weight in kilogrammes"/>
+                </designation>
+                <designation>
+                    <language value="da"/>
+                    <value value="Pt—Legeme; masse = ? kg"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="NPU27281"/>
+                <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                <designation>
+                    <language value="da"/>
+                    <value value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+                </designation>
+            </concept>
+-->
 </CodeSystem>

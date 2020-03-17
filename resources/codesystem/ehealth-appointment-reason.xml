@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/appointment-reason"/>
     <version value="0.6.0"/>
     <name value="AppointmentReason"/>
+    <title value="Appointment Reason"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>

@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes"/>
     <version value="0.6.0"/>
     <name value="ClinicalImpressionDecisionCodes"/>
+    <title value="ClinicalImpression Decision Codes"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-23"/>
@@ -21,10 +22,18 @@
         <code value="approved"/>
         <display value="Approved"/>
         <definition value="Approved"/>
+        <designation>
+            <language value="da"/>
+            <value value="Godkendt"/>
+        </designation>
     </concept>
     <concept>
         <code value="approved-for-sharing"/>
         <display value="Approved for sharing"/>
         <definition value="Approved for sharing"/>
+        <designation>
+            <language value="da"/>
+            <value value="Godkendt til dokumentdeling"/>
+        </designation>
     </concept>
 </CodeSystem>

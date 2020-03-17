@@ -4,6 +4,7 @@
     <url value="http://ehealth.sundhed.dk/cs/contactpoint-system"/>
     <version value="0.6.0"/>
     <name value="ContactPointSystem"/>
+    <title value="ContactPoint System"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-01-29"/>
@@ -21,6 +22,10 @@
         <code value="TBD"/>
         <display value="Example value - Under construction"/>
         <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
     </concept>
     <concept>
         <code value="EAN"/>
@@ -28,6 +33,10 @@
         <designation>
             <language value="en-US"/>
             <value value="Global location number"/>
+        </designation>
+        <designation>
+            <language value="da"/>
+            <value value="EAN-nummer"/>
         </designation>
     </concept>
 </CodeSystem>

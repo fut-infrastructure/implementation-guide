@@ -3,7 +3,7 @@
     <url value="http://ehealth.sundhed.dk/vs/usage-quality"/>
     <version value="0.6.0"/>
     <name value="UsageQuality"/>
-    <title value="UsageQuality"/>
+    <title value="Usage Quality"/>
     <status value="active"/>
     <experimental value="true"/>
     <date value="2019-02-13"/>
@@ -19,22 +19,6 @@
     <compose>
         <include>
             <system value="http://ehealth.sundhed.dk/cs/usage-quality"/>
-            <concept>
-                <code value="TBD"/>
-                <display value="Example value - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value - Under construction"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="TBD2"/>
-                <display value="Example value2 - Under construction"/>
-                <designation>
-                    <language value="en-US"/>
-                    <value value="Example value2 - Under construction"/>
-                </designation>
-            </concept>
         </include>
     </compose>
 </ValueSet>

@@ -8,6 +8,7 @@
     </identifier>
     <version value="0.99"/>
     <name value="DK_IHE_FormatCode_CS"/>
+    <title value="DK_IHE_FormatCode_CS"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-12-11"/>

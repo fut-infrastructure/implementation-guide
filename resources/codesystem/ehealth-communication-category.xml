@@ -3,7 +3,8 @@
     <id value="ehealth-communication-category"/>
     <url value="http://ehealth.sundhed.dk/cs/communication-category"/>
     <version value="0.6.0"/>
-    <name value="communication Category"/>
+    <name value="CommunicationCategory"/>
+    <title value="Communication Category"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-09-27"/>
@@ -21,10 +22,18 @@
         <code value="annotation"/>
         <display value="annotation"/>
         <definition value="Annotation"/>
+        <designation>
+            <language value="da"/>
+            <value value="Annotering"/>
+        </designation>
     </concept>
     <concept>
         <code value="note"/>
         <display value="note"/>
         <definition value="Note"/>
+        <designation>
+            <language value="da"/>
+            <value value="Note"/>
+        </designation>
     </concept>
 </CodeSystem>
