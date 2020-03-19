@@ -15,26 +15,28 @@ The context in which the Task is created is identified through `context`. In the
 
 ### Use of Task for coordinating assessment of submitted measurement
 
-The eHealth Infrastructure supports that automated processing rules can be defined, attached to plans (through the complex of PlanDefinition/ActivityDefinition/Library and CarePlan/ProcedureRequest) and applied to submitted measurements. This includes automated processing rules performing triaging based on comparison of submitted measurements against reference ranges specified in CarePlan/ProcedureRequest. The definition of each automated processing rule controls whether to create the following as a result of the applying the rule:
+The eHealth Infrastructure supports that automated processing rules can be defined as Library resources, attached to plans (through the complex of PlanDefinition/ActivityDefinition/Library and CarePlan/ProcedureRequest) and applied to submitted measurements. This includes automated processing rules performing triaging based on comparison of submitted measurements against reference ranges specified in CarePlan/ProcedureRequest.
+
+The definition of each automated processing rule controls whether to create the following as a result of the applying the rule:
 
 * zero, one or more Communication resources of profile `ehealth-message`
 * zero, one or more Task resources of profile `ehealth-task`
 * zero, one or more ClinicalImpression resources of profile `ehealth-clinicalimpression`
 
 A typical result of triaging, for instance, is expected to be:
-* A Communication referring to a Task
-* A Task referring to a ClinicalImpression
-* A ClinicalImpression referring to one or more measurements (Observation, QuestionnaireResponse or Media)
+* A Communication referring to a Task - creation of this might depend on Task.priority being other than routine
+* A Task with focus set to the measurement
+* A ClinicalImpression referring to a measurement (Observation, QuestionnaireResponse or Media)
 
-In case no automated processing rule has been attached to the plan, the current fallback automated processing rule creates a Task that referes to a single measurement. This, however, could change.
+In case no automated processing rule has been attached to the plan, the current fallback automated processing rule creates a Task that refers to a single measurement. This, however, could change.
 
- A typical Task created by triaging has (is expected to have):
+ A typical Task created by triaging is expected to have:
 
 * Task `category` is a coding that states need to assess a triaging result
 * Task `ehealth-task-responsible` that references the one or more CareTeam attached to the CarePlan
 * Task `ehealth-restriction-category` is a coding that can be used to restrict access to the task, for instance restricting a task so only CareTeam members involved in monitoring measurements can access it
 * Task `priority` reflecting the urgency set by the triaging rule
-* Task `focus` references the ClinicalImpression
+* Task `focus` references an Observation, QuestionnaireResponse or Media
 
 ### Use of Task for resolving missing measurement
 

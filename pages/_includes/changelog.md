@@ -11,16 +11,20 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added description and example of `-s-persist-login` operation
 
 #### Instance operations
+Changes to CodeSystem, ValueSet, ConceptMap and NamingSystem are limited to those not entirely defined through the terminology administration application. 
 ### Code systems
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
 
 #### Device (ehealth-device)
-- Changed so Status is mandatory
+- Changed so status is mandatory
 
 #### Observation (ehealth-observation)
-- Changed so Device is not mandatory
+- Changed so device is not mandatory
+
+#### Task (ehealth-task)
+- Changed introduction to reflect Task elements for resources created by automated processing.
 
 ## 2020.1 (2020-02-04)
 

@@ -101,7 +101,7 @@
     <concept>
         <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
         <display value="Sundhedsfaglig administrator"/>
-        <definition value="Se TM forløb, opret TM forløb, ændre TM forløb, slet TM forløb, se TM forløb, opret TM forløb, ændre TM forløb, slet TM forløb, se måleregime for udførelse af TM pakker/forløb, opret måleregime for udførelse af TM pakker/forløb, ændre måleregime for udførelse af TM pakker/forløb, slet måleregime for udførelse af TM pakker/forløb"/>
+        <definition value="Se TM forløb, opret TM forløb, ændre TM forløb, slet TM forløb, se måleregime for udførelse af TM pakker/forløb, opret måleregime for udførelse af TM pakker/forløb, ændre måleregime for udførelse af TM pakker/forløb, slet måleregime for udførelse af TM pakker/forløb"/>
         <designation>
             <language value="da"/>
             <value value="Sundhedsfaglig administrator"/>
