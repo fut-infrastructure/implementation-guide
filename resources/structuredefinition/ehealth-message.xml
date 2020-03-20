@@ -39,7 +39,7 @@
         <key value="message-invariant" />
         <severity value="error" />
         <human value="Category message invariant" />
-        <expression value="category.coding.code = 'message' implies (recipient.reference.contains('Patient/') and ( sender.reference.contains('Practitioner/') or sender.reference.contains('Device/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())) or ((recipient.reference.contains('Practitioner/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and (sender.reference.contains('Patient/') or sender.reference.contains('Device/')))" />
+        <expression value="category.coding.code = 'message' implies (recipient.reference.contains('Patient/') and ( sender.reference.contains('Practitioner/') or sender.reference.contains('Device/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())) or ((recipient.reference.contains('Practitioner/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and (sender.reference.contains('Patient/') or sender.reference.contains('Device/'))) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists() )" />
       </constraint>
     </element>
     <element id="Communication.extension">
