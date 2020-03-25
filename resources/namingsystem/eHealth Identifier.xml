@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
+   <id value="ehealth-identifier" />
    <name value="eHealth Identifier"/>
    <status value="active"/>
    <kind value="identifier"/>

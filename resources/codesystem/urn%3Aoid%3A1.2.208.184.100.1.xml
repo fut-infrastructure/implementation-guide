@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="medcom-message-codes-refrange"/>
    <url value="urn:oid:1.2.208.184.100.1"/>
    <identifier>
       <system value="urn:ietf:rfc:3986"/>

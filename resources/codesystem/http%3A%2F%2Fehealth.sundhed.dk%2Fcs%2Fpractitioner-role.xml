@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="ehealth-practitioner-role"/>
    <url value="http://ehealth.sundhed.dk/cs/practitioner-role"/>
    <version value="0.6.0"/>
    <name value="PractitionerRole"/>
