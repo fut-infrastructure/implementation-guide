@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Danish SNOMED CT Extension</h2> 
+         <div> 
+            <p>Danish SNOMED CT Extension</p> 
+         </div> 
+         <p>This code system http://snomed.info/sct/554471000005108/version/20180331 defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557511000005107 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557511000005107"> </a> 
+               </td> 
+               <td>Acupuncture clinic</td> 
+               <td>Acupuncture clinic</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557501000005109 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557501000005109"> </a> 
+               </td> 
+               <td>Pharmacy branch</td> 
+               <td>Pharmacy branch</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557531000005103 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557531000005103"> </a> 
+               </td> 
+               <td>Prosthetist clinic</td> 
+               <td>Prosthetist clinic</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557591000005104 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557591000005104"> </a> 
+               </td> 
+               <td>Web-based care</td> 
+               <td>Web-based care</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557521000005101 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557521000005101"> </a> 
+               </td> 
+               <td>Alternative treatment clinic</td> 
+               <td>Alternative treatment clinic</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557561000005105 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557561000005105"> </a> 
+               </td> 
+               <td>Consulting firm</td> 
+               <td>Consulting firm</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557541000005106 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557541000005106"> </a> 
+               </td> 
+               <td>Cosmetic treatment clinic</td> 
+               <td>Cosmetic treatment clinic</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">557581000005102 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-557581000005102"> </a> 
+               </td> 
+               <td>Optometrist or optician clinic</td> 
+               <td>Optometrist or optician clinic</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">556841000005105 <a name="SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z-556841000005105"> </a> 
+               </td> 
+               <td>Social psychological counselling</td> 
+               <td>Social psychological counselling</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://snomed.info/sct/554471000005108/version/20180331"/>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:2.16.840.1.113883.6.96"/>
+   </identifier>
+   <version value="20180331"/>
+   <name value="Danish-SNOMED-CT-Extension"/>
+   <title value="Danish SNOMED CT Extension"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-12-27T00:00:00+00:00"/>
+   <publisher value="Danish Release Centre for SNOMED CT"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="https://sundhedsdatastyrelsen.dk/snomedct"/>
+      </telecom>
+   </contact>
+   <description value="Danish SNOMED CT Extension"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="557511000005107"/>
+      <display value="Acupuncture clinic"/>
+      <definition value="Acupuncture clinic"/>
+      <designation>
+         <language value="da"/>
+         <value value="akupunkturklinik"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557501000005109"/>
+      <display value="Pharmacy branch"/>
+      <definition value="Pharmacy branch"/>
+      <designation>
+         <language value="da"/>
+         <value value="apoteksfilial"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557531000005103"/>
+      <display value="Prosthetist clinic"/>
+      <definition value="Prosthetist clinic"/>
+      <designation>
+         <language value="da"/>
+         <value value="bandagistklinik"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557591000005104"/>
+      <display value="Web-based care"/>
+      <definition value="Web-based care"/>
+      <designation>
+         <language value="da"/>
+         <value value="internetbaseret sundhedsydelse"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557521000005101"/>
+      <display value="Alternative treatment clinic"/>
+      <definition value="Alternative treatment clinic"/>
+      <designation>
+         <language value="da"/>
+         <value value="klinik for alternativ behandling"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557561000005105"/>
+      <display value="Consulting firm"/>
+      <definition value="Consulting firm"/>
+      <designation>
+         <language value="da"/>
+         <value value="konsulentvirksomhed"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557541000005106"/>
+      <display value="Cosmetic treatment clinic"/>
+      <definition value="Cosmetic treatment clinic"/>
+      <designation>
+         <language value="da"/>
+         <value value="kosmetisk klinik"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="557581000005102"/>
+      <display value="Optometrist or optician clinic"/>
+      <definition value="Optometrist or optician clinic"/>
+      <designation>
+         <language value="da"/>
+         <value value="optikervirksomhed"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="556841000005105"/>
+      <display value="Social psychological counselling"/>
+      <definition value="Social psychological counselling"/>
+      <designation>
+         <language value="da"/>
+         <value value="pædagogisk psykologisk rådgivning"/>
+      </designation>
+   </concept>
+</CodeSystem>

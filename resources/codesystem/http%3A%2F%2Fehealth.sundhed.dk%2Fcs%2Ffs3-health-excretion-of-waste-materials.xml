@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Udskillelse af affaldsstoffer</h2> 
+         <div> 
+            <p>Fælles Sprog III, Udskillelse af affaldsstoffer</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">URINATION <a name="fs3-health-excretion-of-waste-materials-URINATION"> </a> 
+               </td> 
+               <td>Problemer med vandladning</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">URINARY_INCONTINENCE <a name="fs3-health-excretion-of-waste-materials-URINARY_INCONTINENCE"> </a> 
+               </td> 
+               <td>Problemer med urininkontinens</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FAECAL_INCONTINENCE <a name="fs3-health-excretion-of-waste-materials-FAECAL_INCONTINENCE"> </a> 
+               </td> 
+               <td>Problemer med afføringsinkontinens</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">STOMACH_INTESTINES <a name="fs3-health-excretion-of-waste-materials-STOMACH_INTESTINES"> </a> 
+               </td> 
+               <td>Problemer med mave og tarm</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Udskillelse af affaldsstoffer"/>
+   <title value="Fælles Sprog III, Udskillelse af affaldsstoffer"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Udskillelse af affaldsstoffer"/>
+   <content value="complete"/>
+   <concept>
+      <code value="URINATION"/>
+      <display value="Problemer med vandladning"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med vandladning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="URINARY_INCONTINENCE"/>
+      <display value="Problemer med urininkontinens"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med urininkontinens"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="FAECAL_INCONTINENCE"/>
+      <display value="Problemer med afføringsinkontinens"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med afføringsinkontinens"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="STOMACH_INTESTINES"/>
+      <display value="Problemer med mave og tarm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med mave og tarm"/>
+      </designation>
+   </concept>
+</CodeSystem>

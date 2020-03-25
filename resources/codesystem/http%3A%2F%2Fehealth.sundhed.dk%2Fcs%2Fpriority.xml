@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Priority</h2> 
+         <div> 
+            <p>Priority</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/priority defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">routine <a name="ehealth-priority-routine"> </a> 
+               </td> 
+               <td>Routine</td> 
+               <td>The request has normal priority.</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">urgent <a name="ehealth-priority-urgent"> </a> 
+               </td> 
+               <td>Urgent</td> 
+               <td>The request should be actioned promptly - higher priority than routine.</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">asap <a name="ehealth-priority-asap"> </a> 
+               </td> 
+               <td>ASAP</td> 
+               <td>The request should be actioned as soon as possible - higher priority than urgent.</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">stat <a name="ehealth-priority-stat"> </a> 
+               </td> 
+               <td>STAT</td> 
+               <td>The request should be actioned immediately - highest possible priority. E.g. an emergency.</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/priority"/>
+   <version value="0.6.0"/>
+   <name value="Priority"/>
+   <title value="Priority"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Priority"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="routine"/>
+      <display value="Routine"/>
+      <definition value="The request has normal priority."/>
+   </concept>
+   <concept>
+      <code value="urgent"/>
+      <display value="Urgent"/>
+      <definition value="The request should be actioned promptly - higher priority than routine."/>
+   </concept>
+   <concept>
+      <code value="asap"/>
+      <display value="ASAP"/>
+      <definition value="The request should be actioned as soon as possible - higher priority than urgent."/>
+   </concept>
+   <concept>
+      <code value="stat"/>
+      <display value="STAT"/>
+      <definition value="The request should be actioned immediately - highest possible priority. E.g. an emergency."/>
+   </concept>
+</CodeSystem>

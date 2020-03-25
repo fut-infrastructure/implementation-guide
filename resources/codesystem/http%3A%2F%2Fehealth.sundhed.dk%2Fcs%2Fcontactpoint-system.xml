@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ContactPointSystem</h2> 
+         <div> 
+            <p>Contact Point System</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/contactpoint-system defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-contactpoint-system-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EAN <a name="ehealth-contactpoint-system-EAN"> </a> 
+               </td> 
+               <td>Global location number</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/contactpoint-system"/>
+   <version value="0.6.0"/>
+   <name value="ContactPointSystem"/>
+   <title value="ContactPoint System"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Contact Point System"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="EAN"/>
+      <display value="Global location number"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Global location number"/>
+      </designation>
+        <designation>
+            <language value="da"/>
+            <value value="EAN-nummer"/>
+        </designation>
+   </concept>
+</CodeSystem>

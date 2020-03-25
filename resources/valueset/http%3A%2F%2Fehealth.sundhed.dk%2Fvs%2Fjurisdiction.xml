@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Jurisdiction</h2> 
+         <div> 
+            <p>Jurisdiction value set</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include all codes defined in <a href="CodeSystem-ehealth-jurisdiction.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/jurisdiction</code> 
+               </a> 
+            </li> 
+         </ul> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/jurisdiction"/>
+   <version value="0.6.0"/>
+   <name value="Jurisdiction"/>
+   <title value="Jurisdiction"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-12-16T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Jurisdiction value set"/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/jurisdiction"/>
+      </include>
+   </compose>
+</ValueSet>

@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>SorOrganizationSpecialty</h2> 
+         <div> 
+            <p>Value set used for indicating the specialty for organizations from Sor</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include all codes defined in <a href="CodeSystem-ehealth-sor-organization-specialty.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/sor-organization-specialty</code> 
+               </a> 
+            </li> 
+            <li>Include these codes as defined in <a href="CodeSystem-SnomedCT-RF2Release-DK-20150731.html"> 
+                  <code>http://snomed.info/sct/554471000005108/version/20150731</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-SnomedCT-RF2Release-DK-20150731.html#SnomedCT-RF2Release-DK-20150731-394812008">394812008</a> 
+                     </td> 
+                     <td>Dental medicine specialties</td> 
+                     <td>dental medicine specialities</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-SnomedCT-RF2Release-DK-20150731.html#SnomedCT-RF2Release-DK-20150731-551411000005104">551411000005104</a> 
+                     </td> 
+                     <td>Surgical gastroenterology</td> 
+                     <td>surgical gastroenterology</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-SnomedCT-RF2Release-DK-20150731.html#SnomedCT-RF2Release-DK-20150731-554011000005107">554011000005107</a> 
+                     </td> 
+                     <td>Forensic medicine</td> 
+                     <td>forensic medicine</td> 
+                  </tr> 
+               </table> 
+            </li> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394537008">394537008</a> 
+                     </td> 
+                     <td>Pediatrics</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394577000">394577000</a> 
+                     </td> 
+                     <td>Anaesthetics</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394579002">394579002</a> 
+                     </td> 
+                     <td>Cardiology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394580004">394580004</a> 
+                     </td> 
+                     <td>Clinical genetics</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394581000">394581000</a> 
+                     </td> 
+                     <td>Community medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394582007">394582007</a> 
+                     </td> 
+                     <td>Dermatology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394583002">394583002</a> 
+                     </td> 
+                     <td>Endocrinology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394584008">394584008</a> 
+                     </td> 
+                     <td>Gastroenterology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394585009">394585009</a> 
+                     </td> 
+                     <td>Obstetrics and gynecology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394587001">394587001</a> 
+                     </td> 
+                     <td>Psychiatry</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394588006">394588006</a> 
+                     </td> 
+                     <td>Child and adolescent psychiatry</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394589003">394589003</a> 
+                     </td> 
+                     <td>Nephrology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394591006">394591006</a> 
+                     </td> 
+                     <td>Neurology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394592004">394592004</a> 
+                     </td> 
+                     <td>Clinical oncology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394594003">394594003</a> 
+                     </td> 
+                     <td>Ophthalmology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394596001">394596001</a> 
+                     </td> 
+                     <td>Chemical pathology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394600006">394600006</a> 
+                     </td> 
+                     <td>Clinical pharmacology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394601005">394601005</a> 
+                     </td> 
+                     <td>Clinical physiology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394603008">394603008</a> 
+                     </td> 
+                     <td>Cardiothoracic surgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394604002">394604002</a> 
+                     </td> 
+                     <td>Ear, nose and throat surgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394605001">394605001</a> 
+                     </td> 
+                     <td>Oral surgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394608004">394608004</a> 
+                     </td> 
+                     <td>Orthodontics</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394609007">394609007</a> 
+                     </td> 
+                     <td>General surgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394610002">394610002</a> 
+                     </td> 
+                     <td>Neurosurgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394611003">394611003</a> 
+                     </td> 
+                     <td>Plastic surgery - specialty</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394612005">394612005</a> 
+                     </td> 
+                     <td>Urology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394801008">394801008</a> 
+                     </td> 
+                     <td>Trauma and orthopedics</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394803006">394803006</a> 
+                     </td> 
+                     <td>Clinical hematology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394805004">394805004</a> 
+                     </td> 
+                     <td>Clinical immunology/allergy</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394807007">394807007</a> 
+                     </td> 
+                     <td>Infectious diseases (specialty)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394809005">394809005</a> 
+                     </td> 
+                     <td>Clinical neuro-physiology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394810000">394810000</a> 
+                     </td> 
+                     <td>Rheumatology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394811001">394811001</a> 
+                     </td> 
+                     <td>Geriatric medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394821009">394821009</a> 
+                     </td> 
+                     <td>Occupational medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394914008">394914008</a> 
+                     </td> 
+                     <td>Radiology - speciality</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394915009">394915009</a> 
+                     </td> 
+                     <td>General pathology (speciality)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=408443003">408443003</a> 
+                     </td> 
+                     <td>General medical practice</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=408448007">408448007</a> 
+                     </td> 
+                     <td>Tropical medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=408454008">408454008</a> 
+                     </td> 
+                     <td>Clinical microbiology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=408463005">408463005</a> 
+                     </td> 
+                     <td>Vascular surgery</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=408472002">408472002</a> 
+                     </td> 
+                     <td>Hepatology</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=418112009">418112009</a> 
+                     </td> 
+                     <td>Pulmonary medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=419192003">419192003</a> 
+                     </td> 
+                     <td>Internal medicine</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=421661004">421661004</a> 
+                     </td> 
+                     <td>Blood banking and transfusion medicine (specialty)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=773568002">773568002</a> 
+                     </td> 
+                     <td>Emergency medicine</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>394812008</td> 
+               <td>Dental medicine specialties</td> 
+            </tr> 
+            <tr> 
+               <td>551411000005104</td> 
+               <td>Surgical gastroenterology</td> 
+            </tr> 
+            <tr> 
+               <td>554011000005107</td> 
+               <td>Forensic medicine</td> 
+            </tr> 
+            <tr> 
+               <td>394537008</td> 
+               <td>Pediatrics</td> 
+            </tr> 
+            <tr> 
+               <td>394577000</td> 
+               <td>Anaesthetics</td> 
+            </tr> 
+            <tr> 
+               <td>394579002</td> 
+               <td>Cardiology</td> 
+            </tr> 
+            <tr> 
+               <td>394580004</td> 
+               <td>Clinical genetics</td> 
+            </tr> 
+            <tr> 
+               <td>394581000</td> 
+               <td>Community medicine</td> 
+            </tr> 
+            <tr> 
+               <td>394582007</td> 
+               <td>Dermatology</td> 
+            </tr> 
+            <tr> 
+               <td>394583002</td> 
+               <td>Endocrinology</td> 
+            </tr> 
+            <tr> 
+               <td>394584008</td> 
+               <td>Gastroenterology</td> 
+            </tr> 
+            <tr> 
+               <td>394585009</td> 
+               <td>Obstetrics and gynecology</td> 
+            </tr> 
+            <tr> 
+               <td>394587001</td> 
+               <td>Psychiatry</td> 
+            </tr> 
+            <tr> 
+               <td>394588006</td> 
+               <td>Child and adolescent psychiatry</td> 
+            </tr> 
+            <tr> 
+               <td>394589003</td> 
+               <td>Nephrology</td> 
+            </tr> 
+            <tr> 
+               <td>394591006</td> 
+               <td>Neurology</td> 
+            </tr> 
+            <tr> 
+               <td>394592004</td> 
+               <td>Clinical oncology</td> 
+            </tr> 
+            <tr> 
+               <td>394594003</td> 
+               <td>Ophthalmology</td> 
+            </tr> 
+            <tr> 
+               <td>394596001</td> 
+               <td>Chemical pathology</td> 
+            </tr> 
+            <tr> 
+               <td>394600006</td> 
+               <td>Clinical pharmacology</td> 
+            </tr> 
+            <tr> 
+               <td>394601005</td> 
+               <td>Clinical physiology</td> 
+            </tr> 
+            <tr> 
+               <td>394603008</td> 
+               <td>Cardiothoracic surgery</td> 
+            </tr> 
+            <tr> 
+               <td>394604002</td> 
+               <td>Ear, nose and throat surgery</td> 
+            </tr> 
+            <tr> 
+               <td>394605001</td> 
+               <td>Oral surgery</td> 
+            </tr> 
+            <tr> 
+               <td>394608004</td> 
+               <td>Orthodontics</td> 
+            </tr> 
+            <tr> 
+               <td>394609007</td> 
+               <td>General surgery</td> 
+            </tr> 
+            <tr> 
+               <td>394610002</td> 
+               <td>Neurosurgery</td> 
+            </tr> 
+            <tr> 
+               <td>394611003</td> 
+               <td>Plastic surgery - specialty</td> 
+            </tr> 
+            <tr> 
+               <td>394612005</td> 
+               <td>Urology</td> 
+            </tr> 
+            <tr> 
+               <td>394801008</td> 
+               <td>Trauma and orthopedics</td> 
+            </tr> 
+            <tr> 
+               <td>394803006</td> 
+               <td>Clinical hematology</td> 
+            </tr> 
+            <tr> 
+               <td>394805004</td> 
+               <td>Clinical immunology/allergy</td> 
+            </tr> 
+            <tr> 
+               <td>394807007</td> 
+               <td>Infectious diseases (specialty)</td> 
+            </tr> 
+            <tr> 
+               <td>394809005</td> 
+               <td>Clinical neuro-physiology</td> 
+            </tr> 
+            <tr> 
+               <td>394810000</td> 
+               <td>Rheumatology</td> 
+            </tr> 
+            <tr> 
+               <td>394811001</td> 
+               <td>Geriatric medicine</td> 
+            </tr> 
+            <tr> 
+               <td>394821009</td> 
+               <td>Occupational medicine</td> 
+            </tr> 
+            <tr> 
+               <td>394914008</td> 
+               <td>Radiology - speciality</td> 
+            </tr> 
+            <tr> 
+               <td>394915009</td> 
+               <td>General pathology (speciality)</td> 
+            </tr> 
+            <tr> 
+               <td>408443003</td> 
+               <td>General medical practice</td> 
+            </tr> 
+            <tr> 
+               <td>408448007</td> 
+               <td>Tropical medicine</td> 
+            </tr> 
+            <tr> 
+               <td>408454008</td> 
+               <td>Clinical microbiology</td> 
+            </tr> 
+            <tr> 
+               <td>408463005</td> 
+               <td>Vascular surgery</td> 
+            </tr> 
+            <tr> 
+               <td>408472002</td> 
+               <td>Hepatology</td> 
+            </tr> 
+            <tr> 
+               <td>418112009</td> 
+               <td>Pulmonary medicine</td> 
+            </tr> 
+            <tr> 
+               <td>419192003</td> 
+               <td>Internal medicine</td> 
+            </tr> 
+            <tr> 
+               <td>421661004</td> 
+               <td>Blood banking and transfusion medicine (specialty)</td> 
+            </tr> 
+            <tr> 
+               <td>773568002</td> 
+               <td>Emergency medicine</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/sor-organization-specialty"/>
+   <version value="0.0.1"/>
+   <name value="SorOrganizationSpecialty"/>
+   <title value="SorOrganizationSpecialty"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-05-27T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set used for indicating the specialty for organizations from Sor"/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/sor-organization-specialty"/>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct/554471000005108/version/20150731"/>
+         <concept>
+            <code value="394812008"/>
+            <display value="Dental medicine specialties"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dental medicine specialties"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="551411000005104"/>
+            <display value="Surgical gastroenterology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Surgical gastroenterology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554011000005107"/>
+            <display value="Forensic medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Forensic medicine"/>
+            </designation>
+         </concept>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="394537008"/>
+            <display value="Pediatrics"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pediatrics"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394577000"/>
+            <display value="Anaesthetics"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Anaesthetics"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394579002"/>
+            <display value="Cardiology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Cardiology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394580004"/>
+            <display value="Clinical genetics"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical genetics"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394581000"/>
+            <display value="Community medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Community medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394582007"/>
+            <display value="Dermatology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dermatology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394583002"/>
+            <display value="Endocrinology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Endocrinology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394584008"/>
+            <display value="Gastroenterology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Gastroenterology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394585009"/>
+            <display value="Obstetrics and gynecology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Obstetrics and gynecology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394587001"/>
+            <display value="Psychiatry"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Psychiatry"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394588006"/>
+            <display value="Child and adolescent psychiatry"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Child and adolescent psychiatry"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394589003"/>
+            <display value="Nephrology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Nephrology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394591006"/>
+            <display value="Neurology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Neurology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394592004"/>
+            <display value="Clinical oncology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical oncology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394594003"/>
+            <display value="Ophthalmology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Ophthalmology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394596001"/>
+            <display value="Chemical pathology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Chemical pathology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394600006"/>
+            <display value="Clinical pharmacology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical pharmacology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394601005"/>
+            <display value="Clinical physiology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical physiology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394603008"/>
+            <display value="Cardiothoracic surgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Cardiothoracic surgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394604002"/>
+            <display value="Ear, nose and throat surgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Ear, nose and throat surgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394605001"/>
+            <display value="Oral surgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Oral surgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394608004"/>
+            <display value="Orthodontics"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Orthodontics"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394609007"/>
+            <display value="General surgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="General surgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394610002"/>
+            <display value="Neurosurgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Neurosurgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394611003"/>
+            <display value="Plastic surgery - specialty"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Plastic surgery - specialty"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394612005"/>
+            <display value="Urology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Urology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394801008"/>
+            <display value="Trauma and orthopedics"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Trauma and orthopedics"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394803006"/>
+            <display value="Clinical hematology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical hematology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394805004"/>
+            <display value="Clinical immunology/allergy"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical immunology/allergy"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394807007"/>
+            <display value="Infectious diseases (specialty)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Infectious diseases (specialty)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394809005"/>
+            <display value="Clinical neuro-physiology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical neuro-physiology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394810000"/>
+            <display value="Rheumatology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Rheumatology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394811001"/>
+            <display value="Geriatric medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Geriatric medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394821009"/>
+            <display value="Occupational medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Occupational medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394914008"/>
+            <display value="Radiology - speciality"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Radiology - speciality"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394915009"/>
+            <display value="General pathology (speciality)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="General pathology (speciality)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408443003"/>
+            <display value="General medical practice"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="General medical practice"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408448007"/>
+            <display value="Tropical medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Tropical medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408454008"/>
+            <display value="Clinical microbiology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical microbiology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408463005"/>
+            <display value="Vascular surgery"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Vascular surgery"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="408472002"/>
+            <display value="Hepatology"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Hepatology"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="418112009"/>
+            <display value="Pulmonary medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pulmonary medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="419192003"/>
+            <display value="Internal medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Internal medicine"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="421661004"/>
+            <display value="Blood banking and transfusion medicine (specialty)"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Blood banking and transfusion medicine (specialty)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="773568002"/>
+            <display value="Emergency medicine"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Emergency medicine"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

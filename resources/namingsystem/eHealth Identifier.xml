@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NamingSystem xmlns="http://hl7.org/fhir">
+   <name value="eHealth Identifier"/>
+   <status value="active"/>
+   <kind value="identifier"/>
+   <date value="2020-01-07T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <responsible value="ehealth.sundhed.dk"/>
+   <description value="An identifier used internally in eHealth, possibly used for identifiers when transforming to CDA document representations of resources."/>
+   <uniqueId>
+      <type value="oid"/>
+      <value value="1.2.208.184"/>
+   </uniqueId>
+   <uniqueId>
+      <type value="uri"/>
+      <value value="http://ehealth.sundhed.dk/id/ehealth-identifier"/>
+   </uniqueId>
+</NamingSystem>

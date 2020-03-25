@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Egenomsorg</h2> 
+         <div> 
+            <p>Fælles Sprog III, Egenomsorg</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-group-selfcare defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">WASH <a name="fs3-group-selfcare-WASH"> </a> 
+               </td> 
+               <td>Vaske sig</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">USE_TOILET <a name="fs3-group-selfcare-USE_TOILET"> </a> 
+               </td> 
+               <td>Gå på toilet</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">BODY_CARE <a name="fs3-group-selfcare-BODY_CARE"> </a> 
+               </td> 
+               <td>Kropspleje</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">DRESS_UNDRESS <a name="fs3-group-selfcare-DRESS_UNDRESS"> </a> 
+               </td> 
+               <td>Af- og påklædning</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EAT <a name="fs3-group-selfcare-EAT"> </a> 
+               </td> 
+               <td>Spise</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">DRINK <a name="fs3-group-selfcare-DRINK"> </a> 
+               </td> 
+               <td>Drikke</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TAKE_CARE_OF_OWN_HEALTH <a name="fs3-group-selfcare-TAKE_CARE_OF_OWN_HEALTH"> </a> 
+               </td> 
+               <td>Varetage egen sundhed</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FOOD_INTAKE <a name="fs3-group-selfcare-FOOD_INTAKE"> </a> 
+               </td> 
+               <td>Fødeindtagelse</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-group-selfcare"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Egenomsorg"/>
+   <title value="Fælles Sprog III, Egenomsorg"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Egenomsorg"/>
+   <content value="complete"/>
+   <concept>
+      <code value="WASH"/>
+      <display value="Vaske sig"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vaske sig"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="USE_TOILET"/>
+      <display value="Gå på toilet"/>
+      <designation>
+         <language value="da"/>
+         <value value="Gå på toilet"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="BODY_CARE"/>
+      <display value="Kropspleje"/>
+      <designation>
+         <language value="da"/>
+         <value value="Kropspleje"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="DRESS_UNDRESS"/>
+      <display value="Af- og påklædning"/>
+      <designation>
+         <language value="da"/>
+         <value value="Af- og påklædning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EAT"/>
+      <display value="Spise"/>
+      <designation>
+         <language value="da"/>
+         <value value="Spise"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="DRINK"/>
+      <display value="Drikke"/>
+      <designation>
+         <language value="da"/>
+         <value value="Drikke"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="TAKE_CARE_OF_OWN_HEALTH"/>
+      <display value="Varetage egen sundhed"/>
+      <designation>
+         <language value="da"/>
+         <value value="Varetage egen sundhed"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="FOOD_INTAKE"/>
+      <display value="Fødeindtagelse"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fødeindtagelse"/>
+      </designation>
+   </concept>
+</CodeSystem>

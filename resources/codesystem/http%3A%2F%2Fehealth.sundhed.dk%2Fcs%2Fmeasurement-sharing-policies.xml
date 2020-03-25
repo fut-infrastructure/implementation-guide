@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MeasurementSharingPolicies</h2> 
+         <div> 
+            <p>Measurement sharing policies</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/measurement-sharing-policies defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-measurement-sharing-policies-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">sharingAllowedDestinationNationalHealthData <a name="ehealth-measurement-sharing-policies-sharingAllowedDestinationNationalHealthData"> </a> 
+               </td> 
+               <td>Sharing is allowed destination national health data</td> 
+               <td>Sharing is allowed destination national health data</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">sharingAllowedDestinationMunicipalData <a name="ehealth-measurement-sharing-policies-sharingAllowedDestinationMunicipalData"> </a> 
+               </td> 
+               <td>Sharing is allowed destination municipal data</td> 
+               <td>Sharing is allowed destination municipal data</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">noSharing <a name="ehealth-measurement-sharing-policies-noSharing"> </a> 
+               </td> 
+               <td>No sharing</td> 
+               <td>No sharing</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/measurement-sharing-policies"/>
+   <version value="0.6.0"/>
+   <name value="MeasurementSharingPolicies"/>
+   <title value="Measurement Sharing Policies"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Measurement sharing policies"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="sharingAllowedDestinationNationalHealthData"/>
+      <display value="Sharing is allowed destination national health data"/>
+      <definition value="Sharing is allowed destination national health data"/>
+        <designation>
+            <language value="da"/>
+            <value value="Må deles via national deling af sundhedsdata"/>
+        </designation>
+   </concept>
+   <concept>
+        <code value="sharingAllowedDestinationNationalServiceActData"/>
+        <display value="Sharing is allowed destination national service act data"/>
+        <definition value="Sharing is allowed destination national service act data"/>
+        <designation>
+            <language value="da"/>
+            <value value="Må deles via national deling af servicelov-data"/>
+        </designation>
+    </concept>
+    <concept>
+      <code value="sharingAllowedDestinationMunicipalData"/>
+      <display value="Sharing is allowed destination municipal data"/>
+      <definition value="Sharing is allowed destination municipal data"/>
+        <designation>
+            <language value="da"/>
+            <value value="Deling "/>
+        </designation>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="noSharing"/>
+      <display value="No sharing"/>
+      <definition value="No sharing"/>
+        <designation>
+            <language value="da"/>
+            <value value="Må ikke deles via national deling af data"/>
+        </designation>
+   </concept>
+</CodeSystem>

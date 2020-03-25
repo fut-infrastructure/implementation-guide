@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Communication Category</h2> 
+         <div> 
+            <p>Communication Category.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-communication-category.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/communication-category</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-communication-category.html#ehealth-communication-category-annotation">annotation</a> 
+                     </td> 
+                     <td>annotation</td> 
+                     <td>Annotation</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-communication-category.html#ehealth-communication-category-note">note</a> 
+                     </td> 
+                     <td>note</td> 
+                     <td>Note</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>annotation</td> 
+               <td>Annotation</td> 
+            </tr> 
+            <tr> 
+               <td>note</td> 
+               <td>note</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/communication-category"/>
+   <version value="0.6.0"/>
+   <name value="CommunicationCategory"/>
+   <title value="Communication Category"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-09-27T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Communication Category."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/communication-category"/>
+      </include>
+   </compose>
+</ValueSet>

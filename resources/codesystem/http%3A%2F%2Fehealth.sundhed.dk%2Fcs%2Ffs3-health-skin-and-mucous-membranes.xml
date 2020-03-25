@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Hud og slimhinder</h2> 
+         <div> 
+            <p>Fælles Sprog III, Hud og slimhinder</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-skin-and-mucous-membranes defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">SURGICAL_WOUND <a name="fs3-health-skin-and-mucous-membranes-SURGICAL_WOUND"> </a> 
+               </td> 
+               <td>Problemer med kirurgisk sår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">DIABETIC_WOUND <a name="fs3-health-skin-and-mucous-membranes-DIABETIC_WOUND"> </a> 
+               </td> 
+               <td>Problemer med diabetisk sår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">CANCER_WOUND <a name="fs3-health-skin-and-mucous-membranes-CANCER_WOUND"> </a> 
+               </td> 
+               <td>Problemer med cancersår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">PRESSURE_WOUND <a name="fs3-health-skin-and-mucous-membranes-PRESSURE_WOUND"> </a> 
+               </td> 
+               <td>Problemer med tryksår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ARTERIAL_WOUND <a name="fs3-health-skin-and-mucous-membranes-ARTERIAL_WOUND"> </a> 
+               </td> 
+               <td>Problemer med arterielt sår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">VENOUS_WOUND <a name="fs3-health-skin-and-mucous-membranes-VENOUS_WOUND"> </a> 
+               </td> 
+               <td>Problemer med venøst sår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MIXED_WOUND <a name="fs3-health-skin-and-mucous-membranes-MIXED_WOUND"> </a> 
+               </td> 
+               <td>Problemer med blandingssår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TRAUMA_WOUND <a name="fs3-health-skin-and-mucous-membranes-TRAUMA_WOUND"> </a> 
+               </td> 
+               <td>Problemer med traumesår</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">OTHER_ISSUE <a name="fs3-health-skin-and-mucous-membranes-OTHER_ISSUE"> </a> 
+               </td> 
+               <td>Andre problemer med hud og slimhinder</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-health-skin-and-mucous-membranes"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Hud og slimhinder"/>
+   <title value="Fælles Sprog III, Hud og slimhinder"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Hud og slimhinder"/>
+   <content value="complete"/>
+   <concept>
+      <code value="SURGICAL_WOUND"/>
+      <display value="Problemer med kirurgisk sår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med kirurgisk sår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="DIABETIC_WOUND"/>
+      <display value="Problemer med diabetisk sår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med diabetisk sår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="CANCER_WOUND"/>
+      <display value="Problemer med cancersår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med cancersår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PRESSURE_WOUND"/>
+      <display value="Problemer med tryksår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med tryksår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ARTERIAL_WOUND"/>
+      <display value="Problemer med arterielt sår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med arterielt sår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="VENOUS_WOUND"/>
+      <display value="Problemer med venøst sår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med venøst sår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MIXED_WOUND"/>
+      <display value="Problemer med blandingssår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med blandingssår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="TRAUMA_WOUND"/>
+      <display value="Problemer med traumesår"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med traumesår"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="OTHER_ISSUE"/>
+      <display value="Andre problemer med hud og slimhinder"/>
+      <designation>
+         <language value="da"/>
+         <value value="Andre problemer med hud og slimhinder"/>
+      </designation>
+   </concept>
+</CodeSystem>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>PlanDefinitionRecommendation</h2> 
+         <div> 
+            <p>Plan Definition Recommendation</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/plandefinition-recommendation defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-plandefinition-recommendation-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Mandatory <a name="ehealth-plandefinition-recommendation-Mandatory"> </a> 
+               </td> 
+               <td>Mandatory</td> 
+               <td>Mandatory</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Recommended <a name="ehealth-plandefinition-recommendation-Recommended"> </a> 
+               </td> 
+               <td>Recommended</td> 
+               <td>Recommended</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Confirmed <a name="ehealth-plandefinition-recommendation-Confirmed"> </a> 
+               </td> 
+               <td>Confirmed</td> 
+               <td>Confirmed</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">NotRecommended <a name="ehealth-plandefinition-recommendation-NotRecommended"> </a> 
+               </td> 
+               <td>NotRecommended</td> 
+               <td>NotRecommended</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Applicable <a name="ehealth-plandefinition-recommendation-Applicable"> </a> 
+               </td> 
+               <td>Applicable</td> 
+               <td>Applicable</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">PhasedOut <a name="ehealth-plandefinition-recommendation-PhasedOut"> </a> 
+               </td> 
+               <td>PhasedOut</td> 
+               <td>PhasedOut</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Observed <a name="ehealth-plandefinition-recommendation-Observed"> </a> 
+               </td> 
+               <td>Observed</td> 
+               <td>Observed</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Planned <a name="ehealth-plandefinition-recommendation-Planned"> </a> 
+               </td> 
+               <td>Planned</td> 
+               <td>Planned</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/plandefinition-recommendation"/>
+   <version value="0.6.0"/>
+   <name value="PlanDefinitionRecommendation"/>
+   <title value="PlanDefinition Recommendation"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Plan Definition Recommendation"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-03-24"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="Mandatory"/>
+      <display value="Mandatory"/>
+      <definition value="Mandatory"/>
+   </concept>
+   <concept>
+      <code value="Recommended"/>
+      <display value="Recommended"/>
+      <definition value="Recommended"/>
+   </concept>
+   <concept>
+      <code value="Confirmed"/>
+      <display value="Confirmed"/>
+      <definition value="Confirmed"/>
+   </concept>
+   <concept>
+      <code value="NotRecommended"/>
+      <display value="NotRecommended"/>
+      <definition value="NotRecommended"/>
+   </concept>
+   <concept>
+      <code value="Applicable"/>
+      <display value="Applicable"/>
+      <definition value="Applicable"/>
+   </concept>
+   <concept>
+      <code value="PhasedOut"/>
+      <display value="PhasedOut"/>
+      <definition value="PhasedOut"/>
+   </concept>
+   <concept>
+      <code value="Observed"/>
+      <display value="Observed"/>
+      <definition value="Observed"/>
+   </concept>
+   <concept>
+      <code value="Planned"/>
+      <display value="Planned"/>
+      <definition value="Planned"/>
+   </concept>
+</CodeSystem>

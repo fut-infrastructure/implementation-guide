@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>OrganizationRelationType</h2> 
+         <div> 
+            <p>How Organizations are related.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-organization-relation-type.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/organization-relation-type</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-organization-relation-type.html#ehealth-organization-relation-type-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/organization-relation-type"/>
+   <version value="0.6.0"/>
+   <name value="OrganizationRelationType"/>
+   <title value="Organization Relation Type"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="How Organizations are related."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/organization-relation-type"/>
+      </include>
+   </compose>
+</ValueSet>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MessageCategory</h2> 
+         <div> 
+            <p>Message category types</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/message-category defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">message <a name="ehealth-message-category-message"> </a> 
+               </td> 
+               <td>Message</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">notification <a name="ehealth-message-category-notification"> </a> 
+               </td> 
+               <td>Notification</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">advice <a name="ehealth-message-category-advice"> </a> 
+               </td> 
+               <td>Advice</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">note <a name="ehealth-message-category-note"> </a> 
+               </td> 
+               <td>Note</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/message-category"/>
+   <version value="0.6.0"/>
+   <name value="MessageCategory"/>
+   <title value="Message Category"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Message category types"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="message"/>
+      <display value="Message"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Message"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Besked"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="notification"/>
+      <display value="Notification"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Notification"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Notifikation"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="advice"/>
+      <display value="Advice"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Advice"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Advisering"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="note"/>
+      <display value="Note"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Note"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Note"/>
+      </designation>
+   </concept>
+</CodeSystem>

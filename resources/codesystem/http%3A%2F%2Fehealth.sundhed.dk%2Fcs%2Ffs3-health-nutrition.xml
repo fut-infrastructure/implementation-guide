@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Ernæring</h2> 
+         <div> 
+            <p>Fælles Sprog III, Ernæring</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-nutrition defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FLUID_INTAKE <a name="fs3-health-nutrition-FLUID_INTAKE"> </a> 
+               </td> 
+               <td>Problemer med væskeindtag</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FOOD_INTAKE <a name="fs3-health-nutrition-FOOD_INTAKE"> </a> 
+               </td> 
+               <td>Problemer med fødeindtag</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">WEIGHT_CHANGE <a name="fs3-health-nutrition-WEIGHT_CHANGE"> </a> 
+               </td> 
+               <td>Uhensigtsmæssig vægtændring</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">OVERWEIGHT <a name="fs3-health-nutrition-OVERWEIGHT"> </a> 
+               </td> 
+               <td>Problemer med overvægt</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">UNDERWEIGHT <a name="fs3-health-nutrition-UNDERWEIGHT"> </a> 
+               </td> 
+               <td>Problemer med undervægt</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-health-nutrition"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Ernæring"/>
+   <title value="Fælles Sprog III, Ernæring"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Ernæring"/>
+   <content value="complete"/>
+   <concept>
+      <code value="FLUID_INTAKE"/>
+      <display value="Problemer med væskeindtag"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med væskeindtag"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="FOOD_INTAKE"/>
+      <display value="Problemer med fødeindtag"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med fødeindtag"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="WEIGHT_CHANGE"/>
+      <display value="Uhensigtsmæssig vægtændring"/>
+      <designation>
+         <language value="da"/>
+         <value value="Uhensigtsmæssig vægtændring"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="OVERWEIGHT"/>
+      <display value="Problemer med overvægt"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med overvægt"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="UNDERWEIGHT"/>
+      <display value="Problemer med undervægt"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med undervægt"/>
+      </designation>
+   </concept>
+</CodeSystem>

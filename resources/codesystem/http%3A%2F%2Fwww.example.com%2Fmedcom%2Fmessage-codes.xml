@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MedCom Message Codes</h2> 
+         <div> 
+            <p>MedCom Message Codes.</p> 
+         </div> 
+         <p>This code system http://www.example.com/medcom/message-codes defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">RAL <a name="MedComMessageCodes-RAL"> </a> 
+               </td> 
+               <td>Terapeutiske grænseværdier for RØD alarm</td> 
+               <td>Terapeutiske grænseværdier for RØD alarm</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">GAL <a name="MedComMessageCodes-GAL"> </a> 
+               </td> 
+               <td>Terapeutiske grænseværdier for GUL alarm</td> 
+               <td>Terapeutiske grænseværdier for GUL alarm</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://www.example.com/medcom/message-codes"/>
+   <version value="1.0.0"/>
+   <name value="MedCom Message Codes"/>
+   <status value="retired"/>
+   <experimental value="false"/>
+   <date value="2019-04-10T00:00:00+00:00"/>
+   <publisher value="MedCom"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://www.medcom.dk"/>
+      </telecom>
+   </contact>
+   <description value="MedCom Message Codes."/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="RAL"/>
+      <display value="Terapeutiske grænseværdier for RØD alarm"/>
+      <definition value="Terapeutiske grænseværdier for RØD alarm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Terapeutiske grænseværdier for RØD alarm"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="GAL"/>
+      <display value="Terapeutiske grænseværdier for GUL alarm"/>
+      <definition value="Terapeutiske grænseværdier for GUL alarm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Terapeutiske grænseværdier for GUL alarm"/>
+      </designation>
+   </concept>
+</CodeSystem>

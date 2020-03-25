@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>CareplanCategory</h2> 
+         <div> 
+            <p>Careplan Category.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-careplan-category.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/careplan-category</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-careplan-category.html#ehealth-careplan-category-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-careplan-category.html#ehealth-careplan-category-TBD2">TBD2</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value 2 - Under construction</td> 
+                  </tr> 
+               </table> 
+            </li> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412776001">412776001</a> 
+                     </td> 
+                     <td>Chronic obstructive pulmonary disease clinical management plan</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=412777005">412777005</a> 
+                     </td> 
+                     <td>Diabetes clinical management plan</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>TBD2</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>412776001</td> 
+               <td>Chronic obstructive pulmonary disease clinical management plan</td> 
+            </tr> 
+            <tr> 
+               <td>412777005</td> 
+               <td>Diabetes clinical management plan</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/careplan-category"/>
+   <version value="0.6.0"/>
+   <name value="CareplanCategory"/>
+   <title value="Careplan Category"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Careplan Category."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/careplan-category"/>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="412776001"/>
+            <display value="Chronic obstructive pulmonary disease clinical management plan"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Chronic obstructive pulmonary disease clinical management plan"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="412777005"/>
+            <display value="Diabetes clinical management plan"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Diabetes clinical management plan"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

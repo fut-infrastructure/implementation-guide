@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>AdministrativeStatus</h2> 
+         <div> 
+            <p>Administrative status</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/administrative-status defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">activate <a name="ehealth-administrative-status-activate"> </a> 
+               </td> 
+               <td>Activate</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">read <a name="ehealth-administrative-status-read"> </a> 
+               </td> 
+               <td>Read</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">reactivate <a name="ehealth-administrative-status-reactivate"> </a> 
+               </td> 
+               <td>Reactivate</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">complete <a name="ehealth-administrative-status-complete"> </a> 
+               </td> 
+               <td>Complete</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/administrative-status"/>
+   <version value="0.6.0"/>
+   <name value="AdministrativeStatus"/>
+   <title value="Administrative Status"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-08-05T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Administrative status"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="activate"/>
+      <display value="Activate"/>
+   </concept>
+   <concept>
+      <code value="read"/>
+      <display value="Read"/>
+   </concept>
+   <concept>
+      <code value="reactivate"/>
+      <display value="Reactivate"/>
+   </concept>
+   <concept>
+      <code value="complete"/>
+      <display value="Complete"/>
+   </concept>
+</CodeSystem>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MeasurementSharingPolicies</h2> 
+         <div> 
+            <p>Policies of sharing submissions with national registers such as KIH.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-measurement-sharing-policies.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/measurement-sharing-policies</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-measurement-sharing-policies.html#ehealth-measurement-sharing-policies-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-measurement-sharing-policies.html#ehealth-measurement-sharing-policies-sharingAllowedDestinationNationalHealthData">sharingAllowedDestinationNationalHealthData</a> 
+                     </td> 
+                     <td>Sharing is allowed destination national health data</td> 
+                     <td>Sharing is allowed destination national health data</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-measurement-sharing-policies.html#ehealth-measurement-sharing-policies-sharingAllowedDestinationMunicipalData">sharingAllowedDestinationMunicipalData</a> 
+                     </td> 
+                     <td>Sharing is allowed destination municipal data</td> 
+                     <td>Sharing is allowed destination municipal data</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-measurement-sharing-policies.html#ehealth-measurement-sharing-policies-noSharing">noSharing</a> 
+                     </td> 
+                     <td>No sharing</td> 
+                     <td>No sharing</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>sharingAllowedDestinationNationalHealthData</td> 
+               <td>Sharing is allowed destination national health data</td> 
+            </tr> 
+            <tr> 
+               <td>sharingAllowedDestinationMunicipalData</td> 
+               <td>Sharing is allowed destination municipal data</td> 
+            </tr> 
+            <tr> 
+               <td>noSharing</td> 
+               <td>No sharing</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/measurement-sharing-policies"/>
+   <version value="0.6.0"/>
+   <name value="MeasurementSharingPolicies"/>
+   <title value="Measurement Sharing Policies"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Policies of sharing submissions with national registers such as KIH."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/measurement-sharing-policies"/>
+      </include>
+   </compose>
+</ValueSet>

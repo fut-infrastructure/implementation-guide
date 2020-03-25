@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Device service types</h2> 
+         <div> 
+            <p>Device service types.</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/device-service-types defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TRAINING <a name="ehealth-device-service-types-TRAINING"> </a> 
+               </td> 
+               <td>Training patient in use of device</td> 
+               <td>Training patient in use of device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">RE-TRAINING <a name="ehealth-device-service-types-RE-TRAINING"> </a> 
+               </td> 
+               <td>Re-training a patient previously trained in using a device</td> 
+               <td>Re-training a patient previously trained in using a device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">CALIBRATION <a name="ehealth-device-service-types-CALIBRATION"> </a> 
+               </td> 
+               <td>Calibration of device</td> 
+               <td>Calibration of device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">REPAIR <a name="ehealth-device-service-types-REPAIR"> </a> 
+               </td> 
+               <td>Off-site repair of device</td> 
+               <td>Off-site repair of device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MAINTENANCE <a name="ehealth-device-service-types-MAINTENANCE"> </a> 
+               </td> 
+               <td>On-site maintenance or repair of device</td> 
+               <td>On-site maintenance or repair of device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">REPLACE <a name="ehealth-device-service-types-REPLACE"> </a> 
+               </td> 
+               <td>Replacement of device</td> 
+               <td>Replacement of device</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">PICKUP <a name="ehealth-device-service-types-PICKUP"> </a> 
+               </td> 
+               <td>Pickup and return device after use</td> 
+               <td>Pickup and return device after use</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">DELIVER <a name="ehealth-device-service-types-DELIVER"> </a> 
+               </td> 
+               <td>Deliver device to patient</td> 
+               <td>Deliver device to patient</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">INSTALL <a name="ehealth-device-service-types-INSTALL"> </a> 
+               </td> 
+               <td>Install and configure device on-site with patient</td> 
+               <td>Install and configure device on-site with patient</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/device-service-types"/>
+   <version value="0.6.0"/>
+   <name value="DeviceServiceTypes"/>
+   <title value="Device service types"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-09-16T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Device service types."/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TRAINING"/>
+      <display value="Training patient in use of device"/>
+      <definition value="Training patient in use of device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Oplæring af patient/borger i brug af udstyr"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="RE-TRAINING"/>
+      <display value="Re-training a patient previously trained in using a device"/>
+      <definition value="Re-training a patient previously trained in using a device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Oplæring af patient/borger tidligere oplært i brug af udstyr"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="CALIBRATION"/>
+      <display value="Calibration of device"/>
+      <definition value="Calibration of device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kalibrering af udstyr"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="REPAIR"/>
+      <display value="Off-site repair of device"/>
+      <definition value="Off-site repair of device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Hjemtagelse af udstyr til reparation"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="MAINTENANCE"/>
+      <display value="On-site maintenance or repair of device"/>
+      <definition value="On-site maintenance or repair of device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Reparation af udstyr på stedet"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="REPLACE"/>
+      <display value="Replacement of device"/>
+      <definition value="Replacement of device"/>
+        <designation>
+            <language value="da"/>
+            <value value="Udskiftning af udstyr"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="PICKUP"/>
+      <display value="Pickup and return device after use"/>
+      <definition value="Pickup and return device after use"/>
+        <designation>
+            <language value="da"/>
+            <value value="Afhentning af udstyr efter brug"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="DELIVER"/>
+      <display value="Deliver device to patient"/>
+      <definition value="Deliver device to patient"/>
+        <designation>
+            <language value="da"/>
+            <value value="Levering til patient/borger"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="INSTALL"/>
+      <display value="Install and configure device on-site with patient"/>
+      <definition value="Install and configure device on-site with patient"/>
+        <designation>
+            <language value="da"/>
+            <value value="Installation og opsætning hos patient/borger"/>
+        </designation>
+   </concept>
+</CodeSystem>

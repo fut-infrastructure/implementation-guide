@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Conditions</h2> 
+         <div> 
+            <p>Conditions.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-conditions.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/conditions</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-conditions.html#ehealth-conditions-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-conditions.html#ehealth-conditions-TBD2">TBD2</a> 
+                     </td> 
+                     <td>Example value 2 - Under construction</td> 
+                     <td>Example value 2 - Under construction</td> 
+                  </tr> 
+               </table> 
+            </li> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=313299006">313299006</a> 
+                     </td> 
+                     <td>Severe chronic obstructive pulmonary disease</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>TBD2</td> 
+               <td>Example value 2 - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>313299006</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/conditions"/>
+   <version value="2020-03-13T10:38:16"/>
+   <name value="Conditions"/>
+   <title value="Conditions"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Conditions."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/conditions"/>
+         </concept>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="313299006"/>
+            <display value="Severe chronic obstructive pulmonary disease"/>
+         </concept>
+      </include>
+      <include>
+         <system value="urn:oid:1.2.208.176.2.4"/>
+         <concept>
+            <code value="DJ44"/>
+            <display value="Kronisk obstruktiv lungesygdom"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

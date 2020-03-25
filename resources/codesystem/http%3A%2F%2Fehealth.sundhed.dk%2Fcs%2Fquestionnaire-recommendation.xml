@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>QuestionnaireRecommendation</h2> 
+         <div> 
+            <p>Questionnaire Recommendation</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/questionnaire-recommendation defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-questionnaire-recommendation-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD2 <a name="ehealth-questionnaire-recommendation-TBD2"> </a> 
+               </td> 
+               <td>Example value2 - Under construction</td> 
+               <td>Example value2 - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Obligatory <a name="ehealth-questionnaire-recommendation-Obligatory"> </a> 
+               </td> 
+               <td>Obligatory</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Recommended <a name="ehealth-questionnaire-recommendation-Recommended"> </a> 
+               </td> 
+               <td>Recommended</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Sustained <a name="ehealth-questionnaire-recommendation-Sustained"> </a> 
+               </td> 
+               <td>Sustained</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Deprecated <a name="ehealth-questionnaire-recommendation-Deprecated"> </a> 
+               </td> 
+               <td>Deprecated</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Applicable <a name="ehealth-questionnaire-recommendation-Applicable"> </a> 
+               </td> 
+               <td>Applicable</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">BeingPhasedOut <a name="ehealth-questionnaire-recommendation-BeingPhasedOut"> </a> 
+               </td> 
+               <td>BeingPhasedOut</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Observed <a name="ehealth-questionnaire-recommendation-Observed"> </a> 
+               </td> 
+               <td>Observed</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">Planned <a name="ehealth-questionnaire-recommendation-Planned"> </a> 
+               </td> 
+               <td>Planned</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/questionnaire-recommendation"/>
+   <version value="0.6.0"/>
+   <name value="QuestionnaireRecommendation"/>
+   <title value="Questionnaire Recommendation"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Questionnaire Recommendation"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="TBD2"/>
+      <display value="Example value2 - Under construction"/>
+      <definition value="Example value2 - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="Obligatory"/>
+      <display value="Obligatory"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Mandatory"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Obligatorisk"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Recommended"/>
+      <display value="Recommended"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Recommended"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Anbefalet"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Sustained"/>
+      <display value="Sustained"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Sustained"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Opretholdt"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Deprecated"/>
+      <display value="Deprecated"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Deprecated"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Frarådes"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Applicable"/>
+      <display value="Applicable"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Applicable"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Anvendelig"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="BeingPhasedOut"/>
+      <display value="BeingPhasedOut"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="BeingPhasedOut"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Udfases"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Observed"/>
+      <display value="Observed"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Observed"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Observeres"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Planned"/>
+      <display value="Planned"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Planned"/>
+      </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Planlagt"/>
+      </designation>
+   </concept>
+</CodeSystem>

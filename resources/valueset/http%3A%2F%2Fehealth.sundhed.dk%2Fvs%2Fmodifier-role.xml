@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ModifierRole</h2> 
+         <div> 
+            <p>Value set of plan definition modifier role codes.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-modifier-role.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/modifier-role</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-modifier-role.html#ehealth-modifier-role-owner">owner</a> 
+                     </td> 
+                     <td>Owner</td> 
+                     <td>Owner</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-modifier-role.html#ehealth-modifier-role-co-author">co-author</a> 
+                     </td> 
+                     <td>Co-author</td> 
+                     <td>Co-author</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>owner</td> 
+               <td>Owner</td> 
+            </tr> 
+            <tr> 
+               <td>co-author</td> 
+               <td>Co-author</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/modifier-role"/>
+   <version value="0.6.0"/>
+   <name value="ModifierRole"/>
+   <title value="Modifier Role"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set of plan definition modifier role codes."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/modifier-role"/>
+      </include>
+   </compose>
+</ValueSet>

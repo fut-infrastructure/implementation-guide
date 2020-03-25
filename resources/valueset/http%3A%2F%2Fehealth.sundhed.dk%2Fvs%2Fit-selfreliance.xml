@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ITSelfreliance</h2> 
+         <div> 
+            <p>Different types of IT self reliance features</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=smartphone">smartphone</a> 
+                     </td> 
+                     <td>Able to handle a smarthpone</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=browser">browser</a> 
+                     </td> 
+                     <td>Can use a browser</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=pc/mac">pc/mac</a> 
+                     </td> 
+                     <td>Can use a computer</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Dansk (Danish, da)</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>smartphone</td> 
+               <td>Kan betjene SMART phone</td> 
+               <td>Can handle smarthpones</td> 
+            </tr> 
+            <tr> 
+               <td>browser</td> 
+               <td>Kan betjene en browser</td> 
+               <td>Can use a browser</td> 
+            </tr> 
+            <tr> 
+               <td>pc/mac</td> 
+               <td>Kan betjene en computer</td> 
+               <td>Can use a computer</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/it-selfreliance"/>
+   <version value="0.0.1"/>
+   <name value="ITSelfreliance"/>
+   <title value="ITSelfreliance"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="FUT"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"/>
+      </telecom>
+   </contact>
+   <description value="Different types of IT self reliance features"/>
+   <compose>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="smartphone"/>
+            <display value="Able to handle a smarthpone"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Can handle smarthpones"/>
+            </designation>
+            <designation>
+               <language value="da"/>
+               <value value="Kan betjene SMART phone"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="browser"/>
+            <display value="Can use a browser"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Can use a browser"/>
+            </designation>
+            <designation>
+               <language value="da"/>
+               <value value="Kan betjene en browser"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="pc/mac"/>
+            <display value="Can use a computer"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Can use a computer"/>
+            </designation>
+            <designation>
+               <language value="da"/>
+               <value value="Kan betjene en computer"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

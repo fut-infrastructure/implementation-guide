@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>PlanDefinitionRecommendation</h2> 
+         <div> 
+            <p>Value set of plan definition recommendation codes.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-plandefinition-recommendation.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/plandefinition-recommendation</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Mandatory">Mandatory</a> 
+                     </td> 
+                     <td>Mandatory</td> 
+                     <td>Mandatory</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Recommended">Recommended</a> 
+                     </td> 
+                     <td>Recommended</td> 
+                     <td>Recommended</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Confirmed">Confirmed</a> 
+                     </td> 
+                     <td>Confirmed</td> 
+                     <td>Confirmed</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-NotRecommended">NotRecommended</a> 
+                     </td> 
+                     <td>NotRecommended</td> 
+                     <td>NotRecommended</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Applicable">Applicable</a> 
+                     </td> 
+                     <td>Applicable</td> 
+                     <td>Applicable</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-PhasedOut">PhasedOut</a> 
+                     </td> 
+                     <td>PhasedOut</td> 
+                     <td>PhasedOut</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Observed">Observed</a> 
+                     </td> 
+                     <td>Observed</td> 
+                     <td>Observed</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-plandefinition-recommendation.html#ehealth-plandefinition-recommendation-Planned">Planned</a> 
+                     </td> 
+                     <td>Planned</td> 
+                     <td>Planned</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Dansk (Danish, da)</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td/> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>Mandatory</td> 
+               <td>Obligatorisk</td> 
+               <td>Mandatory</td> 
+            </tr> 
+            <tr> 
+               <td>Recommended</td> 
+               <td>Anbefalet</td> 
+               <td>Recommended</td> 
+            </tr> 
+            <tr> 
+               <td>Confirmed</td> 
+               <td>Opretholdt</td> 
+               <td>Confirmed</td> 
+            </tr> 
+            <tr> 
+               <td>NotRecommended</td> 
+               <td>Frarådes</td> 
+               <td>NotRecommended</td> 
+            </tr> 
+            <tr> 
+               <td>Applicable</td> 
+               <td>Anvendelig</td> 
+               <td>Applicable</td> 
+            </tr> 
+            <tr> 
+               <td>PhasedOut</td> 
+               <td>Udfases</td> 
+               <td>PhasedOut</td> 
+            </tr> 
+            <tr> 
+               <td>Observed</td> 
+               <td>Observeres</td> 
+               <td>Observed</td> 
+            </tr> 
+            <tr> 
+               <td>Planned</td> 
+               <td>Planlagt</td> 
+               <td>Planned</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation"/>
+   <version value="0.6.0"/>
+   <name value="PlanDefinitionRecommendation"/>
+   <title value="PlanDefinition Recommendation"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set of plan definition recommendation codes."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/plandefinition-recommendation"/>
+      </include>
+   </compose>
+</ValueSet>

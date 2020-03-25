@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, borgerens vurdering af betydning</h2> 
+         <div> 
+            <p>Fælles Sprog III, borgerens vurdering af betydning</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EXPERIENCES_NO_LIMITATIONS <a name="fs3-citizen-importance-scores-EXPERIENCES_NO_LIMITATIONS"> </a> 
+               </td> 
+               <td>Oplever ikke begrænsninger</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EXPERIENCES_LIMITATIONS <a name="fs3-citizen-importance-scores-EXPERIENCES_LIMITATIONS"> </a> 
+               </td> 
+               <td>Oplever begrænsninger</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, borgerens vurdering af betydning"/>
+   <title value="Fælles Sprog III, borgerens vurdering af betydning"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, borgerens vurdering af betydning"/>
+   <content value="complete"/>
+   <concept>
+      <code value="EXPERIENCES_NO_LIMITATIONS"/>
+      <display value="Oplever ikke begrænsninger"/>
+      <designation>
+         <language value="da"/>
+         <value value="Oplever ikke begrænsninger"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EXPERIENCES_LIMITATIONS"/>
+      <display value="Oplever begrænsninger"/>
+      <designation>
+         <language value="da"/>
+         <value value="Oplever begrænsninger"/>
+      </designation>
+   </concept>
+</CodeSystem>

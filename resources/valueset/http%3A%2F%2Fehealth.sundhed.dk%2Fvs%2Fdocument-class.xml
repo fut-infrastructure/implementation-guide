@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>DocumentClass</h2> 
+         <div> 
+            <p>Document Class value set.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Import all the codes that are contained in <a href="ValueSet-dk-ihe-classcode-vs.html">http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs</a> 
+            </li> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=900000000000469006">900000000000469006</a> 
+                     </td> 
+                     <td>URL</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Dansk (Danish, da)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>900000000000469006</td> 
+               <td>Hyperlink</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/document-class"/>
+   <version value="0.6.0"/>
+   <name value="DocumentClass"/>
+   <title value="Document Class"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Document Class value set."/>
+   <compose>
+      <include>
+         <valueSet value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs"/>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="900000000000469006"/>
+            <display value="URL"/>
+            <designation>
+               <language value="da"/>
+               <value value="Hyperlink"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

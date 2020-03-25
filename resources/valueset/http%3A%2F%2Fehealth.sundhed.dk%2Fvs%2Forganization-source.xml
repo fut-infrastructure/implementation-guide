@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>OrganizationSource</h2> 
+         <div> 
+            <p>Value set used for indicating the organization source</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include all codes defined in <a href="CodeSystem-ehealth-organization-source.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/organization-source</code> 
+               </a> 
+            </li> 
+         </ul> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/organization-source"/>
+   <version value="0.0.1"/>
+   <name value="OrganizationSource"/>
+   <title value="Organization Source"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-06-11T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set used for indicating the organization source"/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/organization-source"/>
+      </include>
+   </compose>
+</ValueSet>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>LibraryType</h2> 
+         <div> 
+            <p>Library Type</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/library-type defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">automated-processing <a name="ehealth-library-type-automated-processing"> </a> 
+               </td> 
+               <td>Automated Processing</td> 
+               <td>The resource defines an evaluation context for automated processing</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/library-type"/>
+   <version value="0.6.0"/>
+   <name value="LibraryType"/>
+   <title value="Library Type"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-08-27T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Library Type"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="automated-processing"/>
+      <display value="Automated Processing"/>
+      <definition value="The resource defines an evaluation context for automated processing"/>
+        <designation>
+            <language value="da"/>
+            <value value="Ressourcen definerer en regel og dennes kontekst til brug i automatisk processering"/>
+        </designation>
+   </concept>
+</CodeSystem>

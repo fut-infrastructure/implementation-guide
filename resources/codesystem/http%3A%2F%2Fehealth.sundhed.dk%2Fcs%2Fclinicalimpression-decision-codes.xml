@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ClinicalImpressionDecisionCodes</h2> 
+         <div> 
+            <p>Clinical Impression Decision Codes</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">approved <a name="ehealth-clinicalimpression-decision-codes-approved"> </a> 
+               </td> 
+               <td>Approved</td> 
+               <td>Approved</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">approved-for-sharing <a name="ehealth-clinicalimpression-decision-codes-approved-for-sharing"> </a> 
+               </td> 
+               <td>Approved for sharing</td> 
+               <td>Approved for sharing</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes"/>
+   <version value="0.6.0"/>
+   <name value="ClinicalImpressionDecisionCodes"/>
+   <title value="ClinicalImpression Decision Codes"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-09-23T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Clinical Impression Decision Codes"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="approved"/>
+      <display value="Approved"/>
+      <definition value="Approved"/>
+        <designation>
+            <language value="da"/>
+            <value value="Godkendt"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="approved-for-sharing"/>
+      <display value="Approved for sharing"/>
+      <definition value="Approved for sharing"/>
+        <designation>
+            <language value="da"/>
+            <value value="Godkendt til dokumentdeling"/>
+        </designation>
+   </concept>
+</CodeSystem>

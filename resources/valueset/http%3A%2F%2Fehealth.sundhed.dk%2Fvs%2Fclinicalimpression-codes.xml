@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ClinicalImpressionCodes</h2> 
+         <div> 
+            <p>Value set of clinical impression codes.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-clinicalimpression-codes.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/clinicalimpression-codes</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-TriagingResult">TriagingResult</a> 
+                     </td> 
+                     <td>Result of triaging</td> 
+                     <td>Result of triaging</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-MeasurementAssessment">MeasurementAssessment</a> 
+                     </td> 
+                     <td>Assessment of measurement</td> 
+                     <td>Assessment of measurement</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-MeasurementTypeUnexpected">MeasurementTypeUnexpected</a> 
+                     </td> 
+                     <td>Measurement of unexpected type</td> 
+                     <td>Measurement of unexpected type</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-MeasurementTimingUnexpected">MeasurementTimingUnexpected</a> 
+                     </td> 
+                     <td>Measurement not expected</td> 
+                     <td>Measurement not expected</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-clinicalimpression-codes.html#ehealth-clinicalimpression-codes-ClinicalDecisionSupportResult">ClinicalDecisionSupportResult</a> 
+                     </td> 
+                     <td>Generic result of CDS</td> 
+                     <td>Generic result of CDS</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>TriagingResult</td> 
+               <td>Result of triaging</td> 
+            </tr> 
+            <tr> 
+               <td>MeasurementAssessment</td> 
+               <td>Assessment of measurement</td> 
+            </tr> 
+            <tr> 
+               <td>MeasurementTypeUnexpected</td> 
+               <td>Measurement of unexpected type</td> 
+            </tr> 
+            <tr> 
+               <td>MeasurementTimingUnexpected</td> 
+               <td>Measurement not expected</td> 
+            </tr> 
+            <tr> 
+               <td>ClinicalDecisionSupportResult</td> 
+               <td>Generic result of CDS</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/clinicalimpression-codes"/>
+   <version value="0.6.0"/>
+   <name value="ClinicalImpressionCodes"/>
+   <title value="Clinical Impression Codes"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set of clinical impression codes."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/clinicalimpression-codes"/>
+      </include>
+   </compose>
+</ValueSet>

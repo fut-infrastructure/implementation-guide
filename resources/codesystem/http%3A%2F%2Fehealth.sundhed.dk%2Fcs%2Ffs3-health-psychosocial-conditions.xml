@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Psykosociale forhold</h2> 
+         <div> 
+            <p>Fælles Sprog III, Psykosociale forhold</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">SOCIALIZATION <a name="fs3-health-psychosocial-conditions-SOCIALIZATION"> </a> 
+               </td> 
+               <td>Problemer med socialt samvær</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EMOTIONAL <a name="fs3-health-psychosocial-conditions-EMOTIONAL"> </a> 
+               </td> 
+               <td>Emotionelle problemer</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ABUSE <a name="fs3-health-psychosocial-conditions-ABUSE"> </a> 
+               </td> 
+               <td>Problemer med misbrug</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MENTAL <a name="fs3-health-psychosocial-conditions-MENTAL"> </a> 
+               </td> 
+               <td>Mentale problemer</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Psykosociale forhold"/>
+   <title value="Fælles Sprog III, Psykosociale forhold"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Psykosociale forhold"/>
+   <content value="complete"/>
+   <concept>
+      <code value="SOCIALIZATION"/>
+      <display value="Problemer med socialt samvær"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med socialt samvær"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EMOTIONAL"/>
+      <display value="Emotionelle problemer"/>
+      <designation>
+         <language value="da"/>
+         <value value="Emotionelle problemer"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ABUSE"/>
+      <display value="Problemer med misbrug"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemer med misbrug"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MENTAL"/>
+      <display value="Mentale problemer"/>
+      <designation>
+         <language value="da"/>
+         <value value="Mentale problemer"/>
+      </designation>
+   </concept>
+</CodeSystem>

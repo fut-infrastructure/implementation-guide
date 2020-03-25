@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>CorrespondanceAcknowledgementCode</h2> 
+         <div> 
+            <p>AcknowledgementCode in correspondance messages specifies if a receipt is required with the status of how a message was processed by the recipient. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'AcknowledgementCode'</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <code>http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf</code> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td>minuspositivkvitt</td> 
+                     <td>Ingen positiv-kvittering ønskes</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td>pluspositivkvitt</td> 
+                     <td>Positiv-kvittering ønskes</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Dansk (Danish, da)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>minuspositivkvitt</td> 
+               <td>Ingen positiv-kvittering ønskes</td> 
+            </tr> 
+            <tr> 
+               <td>pluspositivkvitt</td> 
+               <td>Positiv-kvittering ønskes</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/correspondance-acknowledgement-code"/>
+   <version value="0.0.1"/>
+   <name value="CorrespondanceAcknowledgementCode"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-11T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="AcknowledgementCode in correspondance messages specifies if a receipt is required with the status of how a message was processed by the recipient. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'AcknowledgementCode'"/>
+   <compose>
+      <include>
+         <system value="http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf"/>
+         <concept>
+            <code value="minuspositivkvitt"/>
+            <display value="Ingen positiv-kvittering ønskes"/>
+            <designation>
+               <language value="da"/>
+               <value value="Ingen positiv-kvittering ønskes"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="pluspositivkvitt"/>
+            <display value="Positiv-kvittering ønskes"/>
+            <designation>
+               <language value="da"/>
+               <value value="Positiv-kvittering ønskes"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

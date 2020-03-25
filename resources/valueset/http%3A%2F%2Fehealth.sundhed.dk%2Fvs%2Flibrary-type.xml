@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>LibraryType</h2> 
+         <div> 
+            <p>http://hl7.org/fhir/ValueSet/library-type + automated-processing</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include all codes defined in <a href="http://hl7.org/fhir/STU3/codesystem-library-type.html"> 
+                  <code>http://hl7.org/fhir/library-type</code> 
+               </a> 
+            </li> 
+            <li>Include all codes defined in <a href="CodeSystem-ehealth-library-type.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/library-type</code> 
+               </a> 
+            </li> 
+         </ul> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/library-type"/>
+   <version value="0.6.0"/>
+   <name value="LibraryType"/>
+   <title value="Library Type"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-08-27T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="http://hl7.org/fhir/ValueSet/library-type + automated-processing"/>
+   <compose>
+      <include>
+         <system value="http://hl7.org/fhir/library-type"/>
+      </include>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/library-type"/>
+      </include>
+   </compose>
+</ValueSet>

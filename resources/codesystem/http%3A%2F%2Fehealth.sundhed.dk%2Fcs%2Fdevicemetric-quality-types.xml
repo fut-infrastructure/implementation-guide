@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>DeviceMetricQualityTypes</h2> 
+         <div> 
+            <p>Device metric quality type codes</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/devicemetric-quality-types defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">initial <a name="ehealth-devicemetric-quality-types-initial"> </a> 
+               </td> 
+               <td>Initial device quality</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">degraded <a name="ehealth-devicemetric-quality-types-degraded"> </a> 
+               </td> 
+               <td>Degraded device quality</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">overridden <a name="ehealth-devicemetric-quality-types-overridden"> </a> 
+               </td> 
+               <td>Overridden device quality</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/devicemetric-quality-types"/>
+   <version value="0.6.0"/>
+   <name value="DeviceMetricQualityTypes"/>
+   <title value="DeviceMetric Quality Types"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Device metric quality type codes"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="initial"/>
+      <display value="Initial device quality"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Initial device quality"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="degraded"/>
+      <display value="Degraded device quality"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Degraded device quality"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="overridden"/>
+      <display value="Overridden device quality"/>
+      <designation>
+         <language value="en-US"/>
+         <value value="Overridden device quality"/>
+      </designation>
+   </concept>
+</CodeSystem>

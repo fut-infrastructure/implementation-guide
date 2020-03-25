@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ResponsibilityTypes</h2> 
+         <div> 
+            <p>Responsibility Types.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-responsibility-types.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/responsibility-types</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-monitoringResponsible">monitoringResponsible</a> 
+                     </td> 
+                     <td>Monitoring Responsible</td> 
+                     <td>Monitoring Responsible</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-monitoringDelegate">monitoringDelegate</a> 
+                     </td> 
+                     <td>Monitoring Delegate</td> 
+                     <td>Monitoring Delegate</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-supporter">supporter</a> 
+                     </td> 
+                     <td>Supporter</td> 
+                     <td>Supporter</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-orderPlacer">orderPlacer</a> 
+                     </td> 
+                     <td>Responsible for placing orders for devices and services</td> 
+                     <td>Placer of orders</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-responsibility-types.html#ehealth-responsibility-types-trainer">trainer</a> 
+                     </td> 
+                     <td>Responsible for training</td> 
+                     <td>Trainer</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>monitoringResponsible</td> 
+               <td>Monitoring Responsible</td> 
+            </tr> 
+            <tr> 
+               <td>monitoringDelegate</td> 
+               <td>Monitoring Delegate</td> 
+            </tr> 
+            <tr> 
+               <td>supporter</td> 
+               <td>Supporter</td> 
+            </tr> 
+            <tr> 
+               <td>orderPlacer</td> 
+               <td>Placer of orders</td> 
+            </tr> 
+            <tr> 
+               <td>trainer</td> 
+               <td>Trainer</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/responsibility-types"/>
+   <version value="0.6.0"/>
+   <name value="ResponsibilityTypes"/>
+   <title value="ResponsibilityTypes"/>
+   <status value="retired"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Responsibility Types."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
+         <concept>
+            <code value="TBD"/>
+            <display value="Example value - Under construction"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Example value - Under construction"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="monitoringResponsible"/>
+            <display value="Monitoring Responsible"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Monitoring Responsible"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="monitoringDelegate"/>
+            <display value="Monitoring Delegate"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Monitoring Delegate"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="supporter"/>
+            <display value="Supporter"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Supporter"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="orderPlacer"/>
+            <display value="Responsible for placing orders for devices and services"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Placer of orders"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="trainer"/>
+            <display value="Responsible for training"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Trainer"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

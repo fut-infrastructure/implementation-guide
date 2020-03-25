@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>AppointmentTypeCodes</h2> 
+         <div> 
+            <p>Appointment type code</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/appointmenttype-codes defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">CHECKUP <a name="ehealth-appointmenttype-codes-CHECKUP"> </a> 
+               </td> 
+               <td>A routine check-up, such as an annual physical</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">EMERGENCY <a name="ehealth-appointmenttype-codes-EMERGENCY"> </a> 
+               </td> 
+               <td>Emergency appointment</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FOLLOWUP <a name="ehealth-appointmenttype-codes-FOLLOWUP"> </a> 
+               </td> 
+               <td>A follow up visit from a previous appointment</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ROUTINE <a name="ehealth-appointmenttype-codes-ROUTINE"> </a> 
+               </td> 
+               <td>Routine appointment - default if not valued</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">WALKIN <a name="ehealth-appointmenttype-codes-WALKIN"> </a> 
+               </td> 
+               <td>A previously unscheduled walk-in visit</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/appointmenttype-codes"/>
+   <version value="0.6.0"/>
+   <name value="AppointmentTypeCodes"/>
+    <title value="Appointment Type Codes"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Appointment type code"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="CHECKUP"/>
+      <display value="A routine check-up, such as an annual physical"/>
+   </concept>
+   <concept>
+      <code value="EMERGENCY"/>
+      <display value="Emergency appointment"/>
+   </concept>
+   <concept>
+      <code value="FOLLOWUP"/>
+      <display value="A follow up visit from a previous appointment"/>
+   </concept>
+   <concept>
+      <code value="ROUTINE"/>
+      <display value="Routine appointment - default if not valued"/>
+   </concept>
+   <concept>
+      <code value="WALKIN"/>
+      <display value="A previously unscheduled walk-in visit"/>
+   </concept>
+</CodeSystem>

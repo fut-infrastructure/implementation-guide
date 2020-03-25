@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>DK_IHE_ClassCode_CS</h2> 
+         <div> 
+            <p>Code system for the classCode attribute</p> 
+         </div> 
+         <p>This code system urn:oid:1.2.208.184.100.9 defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">001 <a name="dk-ihe-classcode-cs-001"> </a> 
+               </td> 
+               <td>Clinical report</td> 
+               <td>Clinical report document classcode used in DK-IHE metadata.</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">002 <a name="dk-ihe-classcode-cs-002"> </a> 
+               </td> 
+               <td>Personal information about</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">003 <a name="dk-ihe-classcode-cs-003"> </a> 
+               </td> 
+               <td>Planning</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">004 <a name="dk-ihe-classcode-cs-004"> </a> 
+               </td> 
+               <td>Questionnaires</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="urn:oid:1.2.208.184.100.9"/>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.208.184.100.9"/>
+   </identifier>
+   <version value="0.99"/>
+   <name value="DK_IHE_ClassCode_CS"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-12-11T00:00:00+00:00"/>
+   <publisher value="Sundhedsdatastyrelsen"/>
+   <contact>
+      <telecom>
+         <system value="email"/>
+         <value value="thsc@sundhedsdata.dk"/>
+      </telecom>
+   </contact>
+   <description value="Code system for the classCode attribute"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="001"/>
+      <display value="Clinical report"/>
+      <definition value="Clinical report document classcode used in DK-IHE metadata."/>
+   </concept>
+   <concept>
+      <code value="002"/>
+      <display value="Personal information about"/>
+   </concept>
+   <concept>
+      <code value="003"/>
+      <display value="Planning"/>
+   </concept>
+   <concept>
+      <code value="004"/>
+      <display value="Questionnaires"/>
+   </concept>
+</CodeSystem>

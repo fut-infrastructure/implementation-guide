@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MunicipalityCodes</h2> 
+         <div> 
+            <p>Municipality code</p> 
+         </div> 
+         <p>This code system http://danmarksadresser.dk/kommunekode defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0740 <a name="ehealth-municipality-code-0740"> </a> 
+               </td> 
+               <td>Silkeborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0741 <a name="ehealth-municipality-code-0741"> </a> 
+               </td> 
+               <td>Samsø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0851 <a name="ehealth-municipality-code-0851"> </a> 
+               </td> 
+               <td>Aalborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0746 <a name="ehealth-municipality-code-0746"> </a> 
+               </td> 
+               <td>Skanderborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0151 <a name="ehealth-municipality-code-0151"> </a> 
+               </td> 
+               <td>Ballerup</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0260 <a name="ehealth-municipality-code-0260"> </a> 
+               </td> 
+               <td>Halsnæs</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0153 <a name="ehealth-municipality-code-0153"> </a> 
+               </td> 
+               <td>Brøndby</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0370 <a name="ehealth-municipality-code-0370"> </a> 
+               </td> 
+               <td>Næstved</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0155 <a name="ehealth-municipality-code-0155"> </a> 
+               </td> 
+               <td>Dragør</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0480 <a name="ehealth-municipality-code-0480"> </a> 
+               </td> 
+               <td>Nordfyns</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0157 <a name="ehealth-municipality-code-0157"> </a> 
+               </td> 
+               <td>Gentofte</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0265 <a name="ehealth-municipality-code-0265"> </a> 
+               </td> 
+               <td>Roskilde</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0159 <a name="ehealth-municipality-code-0159"> </a> 
+               </td> 
+               <td>Gladsaxe</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0376 <a name="ehealth-municipality-code-0376"> </a> 
+               </td> 
+               <td>Guldborgsund</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0269 <a name="ehealth-municipality-code-0269"> </a> 
+               </td> 
+               <td>Solrød</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0482 <a name="ehealth-municipality-code-0482"> </a> 
+               </td> 
+               <td>Langeland</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0201 <a name="ehealth-municipality-code-0201"> </a> 
+               </td> 
+               <td>Allerød</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0420 <a name="ehealth-municipality-code-0420"> </a> 
+               </td> 
+               <td>Assens</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0530 <a name="ehealth-municipality-code-0530"> </a> 
+               </td> 
+               <td>Billund</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0316 <a name="ehealth-municipality-code-0316"> </a> 
+               </td> 
+               <td>Holbæk</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0751 <a name="ehealth-municipality-code-0751"> </a> 
+               </td> 
+               <td>Aarhus</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0860 <a name="ehealth-municipality-code-0860"> </a> 
+               </td> 
+               <td>Hjørring</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0756 <a name="ehealth-municipality-code-0756"> </a> 
+               </td> 
+               <td>Ikast-Brande</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0161 <a name="ehealth-municipality-code-0161"> </a> 
+               </td> 
+               <td>Glostrup</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0270 <a name="ehealth-municipality-code-0270"> </a> 
+               </td> 
+               <td>Gribskov</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0163 <a name="ehealth-municipality-code-0163"> </a> 
+               </td> 
+               <td>Herlev</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0165 <a name="ehealth-municipality-code-0165"> </a> 
+               </td> 
+               <td>Albertslund</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0167 <a name="ehealth-municipality-code-0167"> </a> 
+               </td> 
+               <td>Hvidovre</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0492 <a name="ehealth-municipality-code-0492"> </a> 
+               </td> 
+               <td>Ærø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0169 <a name="ehealth-municipality-code-0169"> </a> 
+               </td> 
+               <td>Høje-Taastrup</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0101 <a name="ehealth-municipality-code-0101"> </a> 
+               </td> 
+               <td>København</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0210 <a name="ehealth-municipality-code-0210"> </a> 
+               </td> 
+               <td>Fredensborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0320 <a name="ehealth-municipality-code-0320"> </a> 
+               </td> 
+               <td>Faxe</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0430 <a name="ehealth-municipality-code-0430"> </a> 
+               </td> 
+               <td>Faaborg-Midtfyn</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0540 <a name="ehealth-municipality-code-0540"> </a> 
+               </td> 
+               <td>Sønderborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0217 <a name="ehealth-municipality-code-0217"> </a> 
+               </td> 
+               <td>Helsingør</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0326 <a name="ehealth-municipality-code-0326"> </a> 
+               </td> 
+               <td>Kalundborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0219 <a name="ehealth-municipality-code-0219"> </a> 
+               </td> 
+               <td>Hillerød</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0760 <a name="ehealth-municipality-code-0760"> </a> 
+               </td> 
+               <td>Ringkøbing-Skjern</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0329 <a name="ehealth-municipality-code-0329"> </a> 
+               </td> 
+               <td>Ringsted</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0657 <a name="ehealth-municipality-code-0657"> </a> 
+               </td> 
+               <td>Herning</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0766 <a name="ehealth-municipality-code-0766"> </a> 
+               </td> 
+               <td>Hedensted</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0173 <a name="ehealth-municipality-code-0173"> </a> 
+               </td> 
+               <td>Lyngby-Taarbæk</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0390 <a name="ehealth-municipality-code-0390"> </a> 
+               </td> 
+               <td>Vordingborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0175 <a name="ehealth-municipality-code-0175"> </a> 
+               </td> 
+               <td>Rødovre</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0810 <a name="ehealth-municipality-code-0810"> </a> 
+               </td> 
+               <td>Brønderslev</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0813 <a name="ehealth-municipality-code-0813"> </a> 
+               </td> 
+               <td>Frederikshavn</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0706 <a name="ehealth-municipality-code-0706"> </a> 
+               </td> 
+               <td>Syddjurs</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0707 <a name="ehealth-municipality-code-0707"> </a> 
+               </td> 
+               <td>Norddjurs</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0330 <a name="ehealth-municipality-code-0330"> </a> 
+               </td> 
+               <td>Slagelse</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0223 <a name="ehealth-municipality-code-0223"> </a> 
+               </td> 
+               <td>Hørsholm</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0440 <a name="ehealth-municipality-code-0440"> </a> 
+               </td> 
+               <td>Kerteminde</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0550 <a name="ehealth-municipality-code-0550"> </a> 
+               </td> 
+               <td>Tønder</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0336 <a name="ehealth-municipality-code-0336"> </a> 
+               </td> 
+               <td>Stevns</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0661 <a name="ehealth-municipality-code-0661"> </a> 
+               </td> 
+               <td>Holstebro</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0665 <a name="ehealth-municipality-code-0665"> </a> 
+               </td> 
+               <td>Lemvig</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0773 <a name="ehealth-municipality-code-0773"> </a> 
+               </td> 
+               <td>Morsø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0779 <a name="ehealth-municipality-code-0779"> </a> 
+               </td> 
+               <td>Skive</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0183 <a name="ehealth-municipality-code-0183"> </a> 
+               </td> 
+               <td>Ishøj</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0185 <a name="ehealth-municipality-code-0185"> </a> 
+               </td> 
+               <td>Tårnby</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0710 <a name="ehealth-municipality-code-0710"> </a> 
+               </td> 
+               <td>Favrskov</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0187 <a name="ehealth-municipality-code-0187"> </a> 
+               </td> 
+               <td>Vallensbæk</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0820 <a name="ehealth-municipality-code-0820"> </a> 
+               </td> 
+               <td>Vesthimmerland</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0607 <a name="ehealth-municipality-code-0607"> </a> 
+               </td> 
+               <td>Fredericia</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0825 <a name="ehealth-municipality-code-0825"> </a> 
+               </td> 
+               <td>Læsø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0230 <a name="ehealth-municipality-code-0230"> </a> 
+               </td> 
+               <td>Rudersdal</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0340 <a name="ehealth-municipality-code-0340"> </a> 
+               </td> 
+               <td>Sorø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0450 <a name="ehealth-municipality-code-0450"> </a> 
+               </td> 
+               <td>Nyborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0561 <a name="ehealth-municipality-code-0561"> </a> 
+               </td> 
+               <td>Esbjerg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0563 <a name="ehealth-municipality-code-0563"> </a> 
+               </td> 
+               <td>Fanø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0671 <a name="ehealth-municipality-code-0671"> </a> 
+               </td> 
+               <td>Struer</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0190 <a name="ehealth-municipality-code-0190"> </a> 
+               </td> 
+               <td>Furesø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0787 <a name="ehealth-municipality-code-0787"> </a> 
+               </td> 
+               <td>Thisted</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0615 <a name="ehealth-municipality-code-0615"> </a> 
+               </td> 
+               <td>Horsens</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0727 <a name="ehealth-municipality-code-0727"> </a> 
+               </td> 
+               <td>Odder</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0240 <a name="ehealth-municipality-code-0240"> </a> 
+               </td> 
+               <td>Egedal</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0350 <a name="ehealth-municipality-code-0350"> </a> 
+               </td> 
+               <td>Lejre</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0461 <a name="ehealth-municipality-code-0461"> </a> 
+               </td> 
+               <td>Odense</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0573 <a name="ehealth-municipality-code-0573"> </a> 
+               </td> 
+               <td>Varde</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0575 <a name="ehealth-municipality-code-0575"> </a> 
+               </td> 
+               <td>Vejen</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0791 <a name="ehealth-municipality-code-0791"> </a> 
+               </td> 
+               <td>Viborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0400 <a name="ehealth-municipality-code-0400"> </a> 
+               </td> 
+               <td>Bornholm</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0510 <a name="ehealth-municipality-code-0510"> </a> 
+               </td> 
+               <td>Haderslev</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0621 <a name="ehealth-municipality-code-0621"> </a> 
+               </td> 
+               <td>Kolding</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0730 <a name="ehealth-municipality-code-0730"> </a> 
+               </td> 
+               <td>Randers</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0840 <a name="ehealth-municipality-code-0840"> </a> 
+               </td> 
+               <td>Rebild</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0846 <a name="ehealth-municipality-code-0846"> </a> 
+               </td> 
+               <td>Mariagerfjord</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0250 <a name="ehealth-municipality-code-0250"> </a> 
+               </td> 
+               <td>Frederikssund</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0360 <a name="ehealth-municipality-code-0360"> </a> 
+               </td> 
+               <td>Lolland</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0253 <a name="ehealth-municipality-code-0253"> </a> 
+               </td> 
+               <td>Greve</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0849 <a name="ehealth-municipality-code-0849"> </a> 
+               </td> 
+               <td>Jammerbugt</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0147 <a name="ehealth-municipality-code-0147"> </a> 
+               </td> 
+               <td>Frederiksberg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0580 <a name="ehealth-municipality-code-0580"> </a> 
+               </td> 
+               <td>Aabenraa</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0259 <a name="ehealth-municipality-code-0259"> </a> 
+               </td> 
+               <td>Køge</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0479 <a name="ehealth-municipality-code-0479"> </a> 
+               </td> 
+               <td>Svendborg</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0410 <a name="ehealth-municipality-code-0410"> </a> 
+               </td> 
+               <td>Middelfart</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0411 <a name="ehealth-municipality-code-0411"> </a> 
+               </td> 
+               <td>Christiansø</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0306 <a name="ehealth-municipality-code-0306"> </a> 
+               </td> 
+               <td>Odsherred</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">0630 <a name="ehealth-municipality-code-0630"> </a> 
+               </td> 
+               <td>Vejle</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://danmarksadresser.dk/kommunekode"/>
+   <version value="0.6.0"/>
+   <name value="MunicipalityCodes"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Municipality code"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="0740"/>
+      <display value="Silkeborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Silkeborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0741"/>
+      <display value="Samsø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Samsø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0851"/>
+      <display value="Aalborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Aalborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0746"/>
+      <display value="Skanderborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Skanderborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0151"/>
+      <display value="Ballerup"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ballerup"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0260"/>
+      <display value="Halsnæs"/>
+      <designation>
+         <language value="da"/>
+         <value value="Halsnæs"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0153"/>
+      <display value="Brøndby"/>
+      <designation>
+         <language value="da"/>
+         <value value="Brøndby"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0370"/>
+      <display value="Næstved"/>
+      <designation>
+         <language value="da"/>
+         <value value="Næstved"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0155"/>
+      <display value="Dragør"/>
+      <designation>
+         <language value="da"/>
+         <value value="Dragør"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0480"/>
+      <display value="Nordfyns"/>
+      <designation>
+         <language value="da"/>
+         <value value="Nordfyns"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0157"/>
+      <display value="Gentofte"/>
+      <designation>
+         <language value="da"/>
+         <value value="Gentofte"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0265"/>
+      <display value="Roskilde"/>
+      <designation>
+         <language value="da"/>
+         <value value="Roskilde"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0159"/>
+      <display value="Gladsaxe"/>
+      <designation>
+         <language value="da"/>
+         <value value="Gladsaxe"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0376"/>
+      <display value="Guldborgsund"/>
+      <designation>
+         <language value="da"/>
+         <value value="Guldborgsund"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0269"/>
+      <display value="Solrød"/>
+      <designation>
+         <language value="da"/>
+         <value value="Solrød"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0482"/>
+      <display value="Langeland"/>
+      <designation>
+         <language value="da"/>
+         <value value="Langeland"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0201"/>
+      <display value="Allerød"/>
+      <designation>
+         <language value="da"/>
+         <value value="Allerød"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0420"/>
+      <display value="Assens"/>
+      <designation>
+         <language value="da"/>
+         <value value="Assens"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0530"/>
+      <display value="Billund"/>
+      <designation>
+         <language value="da"/>
+         <value value="Billund"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0316"/>
+      <display value="Holbæk"/>
+      <designation>
+         <language value="da"/>
+         <value value="Holbæk"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0751"/>
+      <display value="Aarhus"/>
+      <designation>
+         <language value="da"/>
+         <value value="Aarhus"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0860"/>
+      <display value="Hjørring"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hjørring"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0756"/>
+      <display value="Ikast-Brande"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ikast-Brande"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0161"/>
+      <display value="Glostrup"/>
+      <designation>
+         <language value="da"/>
+         <value value="Glostrup"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0270"/>
+      <display value="Gribskov"/>
+      <designation>
+         <language value="da"/>
+         <value value="Gribskov"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0163"/>
+      <display value="Herlev"/>
+      <designation>
+         <language value="da"/>
+         <value value="Herlev"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0165"/>
+      <display value="Albertslund"/>
+      <designation>
+         <language value="da"/>
+         <value value="Albertslund"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0167"/>
+      <display value="Hvidovre"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hvidovre"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0492"/>
+      <display value="Ærø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ærø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0169"/>
+      <display value="Høje-Taastrup"/>
+      <designation>
+         <language value="da"/>
+         <value value="Høje-Taastrup"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0101"/>
+      <display value="København"/>
+      <designation>
+         <language value="da"/>
+         <value value="København"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0210"/>
+      <display value="Fredensborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fredensborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0320"/>
+      <display value="Faxe"/>
+      <designation>
+         <language value="da"/>
+         <value value="Faxe"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0430"/>
+      <display value="Faaborg-Midtfyn"/>
+      <designation>
+         <language value="da"/>
+         <value value="Faaborg-Midtfyn"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0540"/>
+      <display value="Sønderborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sønderborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0217"/>
+      <display value="Helsingør"/>
+      <designation>
+         <language value="da"/>
+         <value value="Helsingør"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0326"/>
+      <display value="Kalundborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Kalundborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0219"/>
+      <display value="Hillerød"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hillerød"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0760"/>
+      <display value="Ringkøbing-Skjern"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ringkøbing-Skjern"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0329"/>
+      <display value="Ringsted"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ringsted"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0657"/>
+      <display value="Herning"/>
+      <designation>
+         <language value="da"/>
+         <value value="Herning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0766"/>
+      <display value="Hedensted"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hedensted"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0173"/>
+      <display value="Lyngby-Taarbæk"/>
+      <designation>
+         <language value="da"/>
+         <value value="Lyngby-Taarbæk"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0390"/>
+      <display value="Vordingborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vordingborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0175"/>
+      <display value="Rødovre"/>
+      <designation>
+         <language value="da"/>
+         <value value="Rødovre"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0810"/>
+      <display value="Brønderslev"/>
+      <designation>
+         <language value="da"/>
+         <value value="Brønderslev"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0813"/>
+      <display value="Frederikshavn"/>
+      <designation>
+         <language value="da"/>
+         <value value="Frederikshavn"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0706"/>
+      <display value="Syddjurs"/>
+      <designation>
+         <language value="da"/>
+         <value value="Syddjurs"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0707"/>
+      <display value="Norddjurs"/>
+      <designation>
+         <language value="da"/>
+         <value value="Norddjurs"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0330"/>
+      <display value="Slagelse"/>
+      <designation>
+         <language value="da"/>
+         <value value="Slagelse"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0223"/>
+      <display value="Hørsholm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hørsholm"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0440"/>
+      <display value="Kerteminde"/>
+      <designation>
+         <language value="da"/>
+         <value value="Kerteminde"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0550"/>
+      <display value="Tønder"/>
+      <designation>
+         <language value="da"/>
+         <value value="Tønder"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0336"/>
+      <display value="Stevns"/>
+      <designation>
+         <language value="da"/>
+         <value value="Stevns"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0661"/>
+      <display value="Holstebro"/>
+      <designation>
+         <language value="da"/>
+         <value value="Holstebro"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0665"/>
+      <display value="Lemvig"/>
+      <designation>
+         <language value="da"/>
+         <value value="Lemvig"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0773"/>
+      <display value="Morsø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Morsø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0779"/>
+      <display value="Skive"/>
+      <designation>
+         <language value="da"/>
+         <value value="Skive"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0183"/>
+      <display value="Ishøj"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ishøj"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0185"/>
+      <display value="Tårnby"/>
+      <designation>
+         <language value="da"/>
+         <value value="Tårnby"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0710"/>
+      <display value="Favrskov"/>
+      <designation>
+         <language value="da"/>
+         <value value="Favrskov"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0187"/>
+      <display value="Vallensbæk"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vallensbæk"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0820"/>
+      <display value="Vesthimmerland"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vesthimmerland"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0607"/>
+      <display value="Fredericia"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fredericia"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0825"/>
+      <display value="Læsø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Læsø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0230"/>
+      <display value="Rudersdal"/>
+      <designation>
+         <language value="da"/>
+         <value value="Rudersdal"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0340"/>
+      <display value="Sorø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sorø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0450"/>
+      <display value="Nyborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Nyborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0561"/>
+      <display value="Esbjerg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Esbjerg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0563"/>
+      <display value="Fanø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fanø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0671"/>
+      <display value="Struer"/>
+      <designation>
+         <language value="da"/>
+         <value value="Struer"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0190"/>
+      <display value="Furesø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Furesø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0787"/>
+      <display value="Thisted"/>
+      <designation>
+         <language value="da"/>
+         <value value="Thisted"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0615"/>
+      <display value="Horsens"/>
+      <designation>
+         <language value="da"/>
+         <value value="Horsens"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0727"/>
+      <display value="Odder"/>
+      <designation>
+         <language value="da"/>
+         <value value="Odder"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0240"/>
+      <display value="Egedal"/>
+      <designation>
+         <language value="da"/>
+         <value value="Egedal"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0350"/>
+      <display value="Lejre"/>
+      <designation>
+         <language value="da"/>
+         <value value="Lejre"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0461"/>
+      <display value="Odense"/>
+      <designation>
+         <language value="da"/>
+         <value value="Odense"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0573"/>
+      <display value="Varde"/>
+      <designation>
+         <language value="da"/>
+         <value value="Varde"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0575"/>
+      <display value="Vejen"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vejen"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0791"/>
+      <display value="Viborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Viborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0400"/>
+      <display value="Bornholm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Bornholm"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0510"/>
+      <display value="Haderslev"/>
+      <designation>
+         <language value="da"/>
+         <value value="Haderslev"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0621"/>
+      <display value="Kolding"/>
+      <designation>
+         <language value="da"/>
+         <value value="Kolding"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0730"/>
+      <display value="Randers"/>
+      <designation>
+         <language value="da"/>
+         <value value="Randers"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0840"/>
+      <display value="Rebild"/>
+      <designation>
+         <language value="da"/>
+         <value value="Rebild"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0846"/>
+      <display value="Mariagerfjord"/>
+      <designation>
+         <language value="da"/>
+         <value value="Mariagerfjord"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0250"/>
+      <display value="Frederikssund"/>
+      <designation>
+         <language value="da"/>
+         <value value="Frederikssund"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0360"/>
+      <display value="Lolland"/>
+      <designation>
+         <language value="da"/>
+         <value value="Lolland"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0253"/>
+      <display value="Greve"/>
+      <designation>
+         <language value="da"/>
+         <value value="Greve"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0849"/>
+      <display value="Jammerbugt"/>
+      <designation>
+         <language value="da"/>
+         <value value="Jammerbugt"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0147"/>
+      <display value="Frederiksberg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Frederiksberg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0580"/>
+      <display value="Aabenraa"/>
+      <designation>
+         <language value="da"/>
+         <value value="Aabenraa"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0259"/>
+      <display value="Køge"/>
+      <designation>
+         <language value="da"/>
+         <value value="Køge"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0479"/>
+      <display value="Svendborg"/>
+      <designation>
+         <language value="da"/>
+         <value value="Svendborg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0410"/>
+      <display value="Middelfart"/>
+      <designation>
+         <language value="da"/>
+         <value value="Middelfart"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0411"/>
+      <display value="Christiansø"/>
+      <designation>
+         <language value="da"/>
+         <value value="Christiansø"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0306"/>
+      <display value="Odsherred"/>
+      <designation>
+         <language value="da"/>
+         <value value="Odsherred"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="0630"/>
+      <display value="Vejle"/>
+      <designation>
+         <language value="da"/>
+         <value value="Vejle"/>
+      </designation>
+   </concept>
+</CodeSystem>

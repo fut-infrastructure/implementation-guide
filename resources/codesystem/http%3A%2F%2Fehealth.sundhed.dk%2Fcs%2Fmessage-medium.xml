@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>MessageMedium</h2> 
+         <div> 
+            <p>Message medium types</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/message-medium defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">nemsms <a name="ehealth-message-medium-nemsms"> </a> 
+               </td> 
+               <td>NemSMS</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">eboks <a name="ehealth-message-medium-eboks"> </a> 
+               </td> 
+               <td>eBoks</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/message-medium"/>
+   <version value="0.6.0"/>
+   <name value="MessageMedium"/>
+   <title value="Message Medium"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Message medium types"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="nemsms"/>
+      <display value="NemSMS"/>
+      <designation>
+         <language value="da"/>
+         <value value="NemSMS"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="eboks"/>
+      <display value="eBoks"/>
+      <designation>
+         <language value="da"/>
+         <value value="eBoks"/>
+      </designation>
+   </concept>
+</CodeSystem>

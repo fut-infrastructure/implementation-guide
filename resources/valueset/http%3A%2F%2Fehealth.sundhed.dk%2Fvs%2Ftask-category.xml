@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>TaskCategory</h2> 
+         <div> 
+            <p>Value set for task category.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-task-category.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/task-category</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-task-category.html#ehealth-task-category-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-task-category.html#ehealth-task-category-MissingMeasurementResolving">MissingMeasurementResolving</a> 
+                     </td> 
+                     <td>Need resolving of why scheduled measurement has not been submitted</td> 
+                     <td>Need resolving of why scheduled measurement has not been submitted</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-task-category.html#ehealth-task-category-UnexpectedMeasurementResolving">UnexpectedMeasurementResolving</a> 
+                     </td> 
+                     <td>Need resolving of why unexpected measurement was submitted</td> 
+                     <td>Need resolving of why unexpected measurement was submitted</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-task-category.html#ehealth-task-category-MeasurementForAssessment">MeasurementForAssessment</a> 
+                     </td> 
+                     <td>Need assessment of measurement</td> 
+                     <td>Need assessment of measurement</td> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>MissingMeasurementResolving</td> 
+               <td>Need resolving of why scheduled measurement has not been submitted</td> 
+            </tr> 
+            <tr> 
+               <td>UnexpectedMeasurementResolving</td> 
+               <td>Need resolving of why unexpected measurement was submitted</td> 
+            </tr> 
+            <tr> 
+               <td>MeasurementForAssessment</td> 
+               <td>Need assessment of measurement</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/task-category"/>
+   <version value="0.6.0"/>
+   <name value="TaskCategory"/>
+   <title value="Task Category"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set for task category."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/task-category"/>
+         <concept>
+            <code value="TBD"/>
+            <display value="Example value - Under construction"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Example value - Under construction"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="MissingMeasurementResolving"/>
+            <display value="Need resolving of why scheduled measurement has not been submitted"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Need resolving of why scheduled measurement has not been submitted"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="UnexpectedMeasurementResolving"/>
+            <display value="Need resolving of why unexpected measurement was submitted"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Need resolving of why unexpected measurement was submitted"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="MeasurementForAssessment"/>
+            <display value="Need assessment of measurement"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Need assessment of measurement"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

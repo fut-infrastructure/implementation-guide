@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>TaskCategory</h2> 
+         <div> 
+            <p>Task Category</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/task-category defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-task-category-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MissingMeasurementResolving <a name="ehealth-task-category-MissingMeasurementResolving"> </a> 
+               </td> 
+               <td>Need resolving of why scheduled measurement has not been submitted</td> 
+               <td>Need resolving of why scheduled measurement has not been submitted</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">UnexpectedMeasurementResolving <a name="ehealth-task-category-UnexpectedMeasurementResolving"> </a> 
+               </td> 
+               <td>Need resolving of why unexpected measurement was submitted</td> 
+               <td>Need resolving of why unexpected measurement was submitted</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MeasurementForAssessment <a name="ehealth-task-category-MeasurementForAssessment"> </a> 
+               </td> 
+               <td>Need assessment of measurement</td> 
+               <td>Need assessment of measurement</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/task-category"/>
+   <version value="0.6.0"/>
+   <name value="TaskCategory"/>
+   <title value="Task Category"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Task Category"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-27"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="MissingMeasurementResolving"/>
+      <display value="Need resolving of why scheduled measurement has not been submitted"/>
+      <definition value="Need resolving of why scheduled measurement has not been submitted"/>
+      <designation>
+         <language value="da"/>
+         <value value="Afklaring af årsag til manglende målinger"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="UnexpectedMeasurementResolving"/>
+      <display value="Need resolving of why unexpected measurement was submitted"/>
+      <definition value="Need resolving of why unexpected measurement was submitted"/>
+      <designation>
+         <language value="da"/>
+         <value value="Uventet måling"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MeasurementForAssessment"/>
+      <display value="Need assessment of measurement"/>
+      <definition value="Need assessment of measurement"/>
+      <designation>
+         <language value="da"/>
+         <value value="Måling til vurdering"/>
+      </designation>
+   </concept>
+</CodeSystem>

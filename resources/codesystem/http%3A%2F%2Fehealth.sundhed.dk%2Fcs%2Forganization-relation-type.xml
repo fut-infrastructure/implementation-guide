@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>OrganizationRelationType</h2> 
+         <div> 
+            <p>Organization Relation Type</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/organization-relation-type defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-organization-relation-type-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">related-to-SOR <a name="ehealth-organization-relation-type-related-to-SOR"> </a> 
+               </td> 
+               <td>Relateret til organisatorisk enhed i SOR</td> 
+               <td>Relateret til organisatorisk enhed i SOR</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/organization-relation-type"/>
+   <version value="0.6.0"/>
+   <name value="OrganizationRelationType"/>
+   <title value="Organization Relation Type"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Organization Relation Type"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+   </concept>
+   <concept>
+      <code value="related-to-SOR"/>
+      <display value="Relateret til organisatorisk enhed i SOR"/>
+      <definition value="Relateret til organisatorisk enhed i SOR"/>
+      <designation>
+         <language value="da"/>
+         <value value="Relateret til organisatorisk enhed i SOR"/>
+      </designation>
+   </concept>
+</CodeSystem>

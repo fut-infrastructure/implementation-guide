@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ContactPointCustodian</h2> 
+         <div> 
+            <p>Contact Point Custodian</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/contactpoint-custodian defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-contactpoint-custodian-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">SOR <a name="ehealth-contactpoint-custodian-SOR"> </a> 
+               </td> 
+               <td>Contact point maintained in the SOR register</td> 
+               <td>Contact point maintained in the SOR register</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ORG <a name="ehealth-contactpoint-custodian-ORG"> </a> 
+               </td> 
+               <td>Contact point maintained in KOMBIT STS Organisation</td> 
+               <td>Contact point maintained in KOMBIT STS Organisation</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MAN <a name="ehealth-contactpoint-custodian-MAN"> </a> 
+               </td> 
+               <td>Contact point maintained manually in eHealth Infrastructure</td> 
+               <td>Contact point maintained manually in eHealth Infrastructure</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/contactpoint-custodian"/>
+   <version value="0.6.0"/>
+   <name value="ContactPointCustodian"/>
+   <title value="ContactPoint Custodian"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Contact Point Custodian"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="SOR"/>
+      <display value="Contact point maintained in the SOR register"/>
+      <definition value="Contact point maintained in the SOR register"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kontaktinformation vedligeholdt i Sundhedsvæsenets organisationsregister (SOR)"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="ORG"/>
+      <display value="Contact point maintained in KOMBIT STS Organisation"/>
+      <definition value="Contact point maintained in KOMBIT STS Organisation"/>
+        <designation>
+            <language value="da"/>
+            <value value="Kontaktinformation vedligeholdt i KOMBIT STS Organisation"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="MAN"/>
+      <display value="Contact point maintained manually in eHealth Infrastructure"/>
+      <definition value="Contact point maintained manually in eHealth Infrastructure"/>
+   </concept>
+</CodeSystem>

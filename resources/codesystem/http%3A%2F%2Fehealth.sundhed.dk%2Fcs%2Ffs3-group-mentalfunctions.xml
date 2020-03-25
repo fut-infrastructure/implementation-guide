@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>Fælles Sprog III, Mentale funktioner</h2> 
+         <div> 
+            <p>Fælles Sprog III, Mentale funktioner</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ACQUIRE_SKILLS <a name="fs3-group-mentalfunctions-ACQUIRE_SKILLS"> </a> 
+               </td> 
+               <td>Tilegne sig færdigheder</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">PROBLEM_SOLVING <a name="fs3-group-mentalfunctions-PROBLEM_SOLVING"> </a> 
+               </td> 
+               <td>Problemløsning</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES <a name="fs3-group-mentalfunctions-APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES"> </a> 
+               </td> 
+               <td>Anvende kommunikationsudstyr og -teknikker</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ORIENTATION <a name="fs3-group-mentalfunctions-ORIENTATION"> </a> 
+               </td> 
+               <td>Orienteringsevne</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">ENERGY_AND_ACTING_POWER <a name="fs3-group-mentalfunctions-ENERGY_AND_ACTING_POWER"> </a> 
+               </td> 
+               <td>Energi og handlekraft</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">MEMORY <a name="fs3-group-mentalfunctions-MEMORY"> </a> 
+               </td> 
+               <td>Hukommelse</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">FEELING_FUNCTIONS <a name="fs3-group-mentalfunctions-FEELING_FUNCTIONS"> </a> 
+               </td> 
+               <td>Følelsesfunktioner</td> 
+               <td/> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">OVERALL_COGNITIVE_FUNCTIONS <a name="fs3-group-mentalfunctions-OVERALL_COGNITIVE_FUNCTIONS"> </a> 
+               </td> 
+               <td>Overordnede kognitive funktioner</td> 
+               <td/> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions"/>
+   <version value="0.0.1"/>
+   <name value="Fælles Sprog III, Mentale funktioner"/>
+   <title value="Fælles Sprog III, Mentale funktioner"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <description value="Fælles Sprog III, Mentale funktioner"/>
+   <content value="complete"/>
+   <concept>
+      <code value="ACQUIRE_SKILLS"/>
+      <display value="Tilegne sig færdigheder"/>
+      <designation>
+         <language value="da"/>
+         <value value="Tilegne sig færdigheder"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PROBLEM_SOLVING"/>
+      <display value="Problemløsning"/>
+      <designation>
+         <language value="da"/>
+         <value value="Problemløsning"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES"/>
+      <display value="Anvende kommunikationsudstyr og -teknikker"/>
+      <designation>
+         <language value="da"/>
+         <value value="Anvende kommunikationsudstyr og -teknikker"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ORIENTATION"/>
+      <display value="Orienteringsevne"/>
+      <designation>
+         <language value="da"/>
+         <value value="Orienteringsevne"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="ENERGY_AND_ACTING_POWER"/>
+      <display value="Energi og handlekraft"/>
+      <designation>
+         <language value="da"/>
+         <value value="Energi og handlekraft"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="MEMORY"/>
+      <display value="Hukommelse"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hukommelse"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="FEELING_FUNCTIONS"/>
+      <display value="Følelsesfunktioner"/>
+      <designation>
+         <language value="da"/>
+         <value value="Følelsesfunktioner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="OVERALL_COGNITIVE_FUNCTIONS"/>
+      <display value="Overordnede kognitive funktioner"/>
+      <designation>
+         <language value="da"/>
+         <value value="Overordnede kognitive funktioner"/>
+      </designation>
+   </concept>
+</CodeSystem>

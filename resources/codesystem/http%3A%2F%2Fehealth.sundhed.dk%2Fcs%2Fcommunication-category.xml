@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>communication Category</h2> 
+         <div> 
+            <p>Communication category</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/communication-category defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">annotation <a name="ehealth-communication-category-annotation"> </a> 
+               </td> 
+               <td>annotation</td> 
+               <td>Annotation</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">note <a name="ehealth-communication-category-note"> </a> 
+               </td> 
+               <td>note</td> 
+               <td>Note</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/communication-category"/>
+   <version value="0.6.0"/>
+   <name value="CommunicationCategory"/>
+   <title value="Communication Category"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-09-27T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Communication category"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="annotation"/>
+      <display value="annotation"/>
+      <definition value="Annotation"/>
+        <designation>
+            <language value="da"/>
+            <value value="Annotering"/>
+        </designation>
+   </concept>
+   <concept>
+      <code value="note"/>
+      <display value="note"/>
+      <definition value="Note"/>
+        <designation>
+            <language value="da"/>
+            <value value="Note"/>
+        </designation>
+   </concept>
+</CodeSystem>

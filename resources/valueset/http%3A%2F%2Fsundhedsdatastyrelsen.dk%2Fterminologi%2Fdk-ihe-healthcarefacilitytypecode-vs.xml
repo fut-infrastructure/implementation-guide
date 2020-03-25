@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>DK_IHE_HealthcareFacilityTypeCode_VS</h2> 
+         <div> 
+            <p>Allowed value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include these codes as defined in <a href="http://www.snomed.org/"> 
+                  <code>http://snomed.info/sct</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264372000">264372000</a> 
+                     </td> 
+                     <td>apotek</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=20078004">20078004</a> 
+                     </td> 
+                     <td>behandlingscenter for stofmisbrugere</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554221000005108">554221000005108</a> 
+                     </td> 
+                     <td>bosted</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554031000005103">554031000005103</a> 
+                     </td> 
+                     <td>diætistklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=546821000005103">546821000005103</a> 
+                     </td> 
+                     <td>ergoterapiklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=547011000005103">547011000005103</a> 
+                     </td> 
+                     <td>fysioterapiklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=546811000005109">546811000005109</a> 
+                     </td> 
+                     <td>genoptræningscenter (snomed: rehabiliteringscenter)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550621000005101">550621000005101</a> 
+                     </td> 
+                     <td>hjemmesygepleje</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22232009">22232009</a> 
+                     </td> 
+                     <td>hospital</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550631000005103">550631000005103</a> 
+                     </td> 
+                     <td>jordemoderklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550641000005106">550641000005106</a> 
+                     </td> 
+                     <td>kiropraktor klinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550651000005108">550651000005108</a> 
+                     </td> 
+                     <td>lægelaboratorium</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=394761003">394761003</a> 
+                     </td> 
+                     <td>lægepraksis (snomed:  almen lægepraksis)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550661000005105">550661000005105</a> 
+                     </td> 
+                     <td>lægevagt</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42665001">42665001</a> 
+                     </td> 
+                     <td>plejehjem</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554211000005102">554211000005102</a> 
+                     </td> 
+                     <td>præhospitals enhed (snomed:  præhospitalsenhed)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550711000005101">550711000005101</a> 
+                     </td> 
+                     <td>psykologisk rådgivningsklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550671000005100">550671000005100</a> 
+                     </td> 
+                     <td>speciallægepraksis</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554061000005105">554061000005105</a> 
+                     </td> 
+                     <td>statsautoriseret fodterapeut (snomed:  fodterapeutklinik)</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=264361005">264361005</a> 
+                     </td> 
+                     <td>sundhedscenter</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554041000005106">554041000005106</a> 
+                     </td> 
+                     <td>sundhedsforvaltning</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554021000005101">554021000005101</a> 
+                     </td> 
+                     <td>sundhedspleje</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550681000005102">550681000005102</a> 
+                     </td> 
+                     <td>tandlægepraksis</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550691000005104">550691000005104</a> 
+                     </td> 
+                     <td>tandpleje klinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=550701000005104">550701000005104</a> 
+                     </td> 
+                     <td>tandteknisk klinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554231000005106">554231000005106</a> 
+                     </td> 
+                     <td>vaccinationsklinik</td> 
+                     <td/> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=554051000005108">554051000005108</a> 
+                     </td> 
+                     <td>zoneterapiklinik</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Dansk (Danish, da)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>264372000</td> 
+               <td>apotek</td> 
+            </tr> 
+            <tr> 
+               <td>20078004</td> 
+               <td>behandlingscenter for stofmisbrugere</td> 
+            </tr> 
+            <tr> 
+               <td>554221000005108</td> 
+               <td>bosted</td> 
+            </tr> 
+            <tr> 
+               <td>554031000005103</td> 
+               <td>diætistklinik</td> 
+            </tr> 
+            <tr> 
+               <td>546821000005103</td> 
+               <td>ergoterapiklinik</td> 
+            </tr> 
+            <tr> 
+               <td>547011000005103</td> 
+               <td>fysioterapiklinik</td> 
+            </tr> 
+            <tr> 
+               <td>546811000005109</td> 
+               <td>genoptræningscenter (snomed: rehabiliteringscenter)</td> 
+            </tr> 
+            <tr> 
+               <td>550621000005101</td> 
+               <td>hjemmesygepleje</td> 
+            </tr> 
+            <tr> 
+               <td>22232009</td> 
+               <td>hospital</td> 
+            </tr> 
+            <tr> 
+               <td>550631000005103</td> 
+               <td>jordemoderklinik</td> 
+            </tr> 
+            <tr> 
+               <td>550641000005106</td> 
+               <td>kiropraktor klinik</td> 
+            </tr> 
+            <tr> 
+               <td>550651000005108</td> 
+               <td>lægelaboratorium</td> 
+            </tr> 
+            <tr> 
+               <td>394761003</td> 
+               <td>lægepraksis (snomed:  almen lægepraksis)</td> 
+            </tr> 
+            <tr> 
+               <td>550661000005105</td> 
+               <td>lægevagt</td> 
+            </tr> 
+            <tr> 
+               <td>42665001</td> 
+               <td>plejehjem</td> 
+            </tr> 
+            <tr> 
+               <td>554211000005102</td> 
+               <td>præhospitals enhed (snomed:  præhospitalsenhed)</td> 
+            </tr> 
+            <tr> 
+               <td>550711000005101</td> 
+               <td>psykologisk rådgivningsklinik</td> 
+            </tr> 
+            <tr> 
+               <td>550671000005100</td> 
+               <td>speciallægepraksis</td> 
+            </tr> 
+            <tr> 
+               <td>554061000005105</td> 
+               <td>statsautoriseret fodterapeut (snomed:  fodterapeutklinik)</td> 
+            </tr> 
+            <tr> 
+               <td>264361005</td> 
+               <td>sundhedscenter</td> 
+            </tr> 
+            <tr> 
+               <td>554041000005106</td> 
+               <td>sundhedsforvaltning</td> 
+            </tr> 
+            <tr> 
+               <td>554021000005101</td> 
+               <td>sundhedspleje</td> 
+            </tr> 
+            <tr> 
+               <td>550681000005102</td> 
+               <td>tandlægepraksis</td> 
+            </tr> 
+            <tr> 
+               <td>550691000005104</td> 
+               <td>tandpleje klinik</td> 
+            </tr> 
+            <tr> 
+               <td>550701000005104</td> 
+               <td>tandteknisk klinik</td> 
+            </tr> 
+            <tr> 
+               <td>554231000005106</td> 
+               <td>vaccinationsklinik</td> 
+            </tr> 
+            <tr> 
+               <td>554051000005108</td> 
+               <td>zoneterapiklinik</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs"/>
+   <version value="0.99"/>
+   <name value="DK_IHE_HealthcareFacilityTypeCode_VS"/>
+   <title value="DK_IHE_HealthcareFacilityTypeCode_VS"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-12-11T00:00:00+00:00"/>
+   <publisher value="Sundhedsdatastyrelsen"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="email"/>
+         <value value="thsc@sundhedsdata.dk"/>
+      </telecom>
+   </contact>
+   <description value="Allowed value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."/>
+   <compose>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="264372000"/>
+            <display value="apotek"/>
+            <designation>
+               <language value="da"/>
+               <value value="apotek"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="20078004"/>
+            <display value="behandlingscenter for stofmisbrugere"/>
+            <designation>
+               <language value="da"/>
+               <value value="behandlingscenter for stofmisbrugere"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554221000005108"/>
+            <display value="bosted"/>
+            <designation>
+               <language value="da"/>
+               <value value="bosted"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554031000005103"/>
+            <display value="diætistklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="diætistklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="546821000005103"/>
+            <display value="ergoterapiklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="ergoterapiklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="547011000005103"/>
+            <display value="fysioterapiklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="fysioterapiklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="546811000005109"/>
+            <display value="genoptræningscenter (snomed: rehabiliteringscenter)"/>
+            <designation>
+               <language value="da"/>
+               <value value="genoptræningscenter (snomed: rehabiliteringscenter)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550621000005101"/>
+            <display value="hjemmesygepleje"/>
+            <designation>
+               <language value="da"/>
+               <value value="hjemmesygepleje"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="22232009"/>
+            <display value="hospital"/>
+            <designation>
+               <language value="da"/>
+               <value value="hospital"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550631000005103"/>
+            <display value="jordemoderklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="jordemoderklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550641000005106"/>
+            <display value="kiropraktor klinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="kiropraktor klinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550651000005108"/>
+            <display value="lægelaboratorium"/>
+            <designation>
+               <language value="da"/>
+               <value value="lægelaboratorium"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394761003"/>
+            <display value="lægepraksis (snomed:  almen lægepraksis)"/>
+            <designation>
+               <language value="da"/>
+               <value value="lægepraksis (snomed:  almen lægepraksis)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550661000005105"/>
+            <display value="lægevagt"/>
+            <designation>
+               <language value="da"/>
+               <value value="lægevagt"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="42665001"/>
+            <display value="plejehjem"/>
+            <designation>
+               <language value="da"/>
+               <value value="plejehjem"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554211000005102"/>
+            <display value="præhospitals enhed (snomed:  præhospitalsenhed)"/>
+            <designation>
+               <language value="da"/>
+               <value value="præhospitals enhed (snomed:  præhospitalsenhed)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550711000005101"/>
+            <display value="psykologisk rådgivningsklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="psykologisk rådgivningsklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550671000005100"/>
+            <display value="speciallægepraksis"/>
+            <designation>
+               <language value="da"/>
+               <value value="speciallægepraksis"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554061000005105"/>
+            <display value="statsautoriseret fodterapeut (snomed:  fodterapeutklinik)"/>
+            <designation>
+               <language value="da"/>
+               <value value="statsautoriseret fodterapeut (snomed:  fodterapeutklinik)"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="264361005"/>
+            <display value="sundhedscenter"/>
+            <designation>
+               <language value="da"/>
+               <value value="sundhedscenter"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554041000005106"/>
+            <display value="sundhedsforvaltning"/>
+            <designation>
+               <language value="da"/>
+               <value value="sundhedsforvaltning"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554021000005101"/>
+            <display value="sundhedspleje"/>
+            <designation>
+               <language value="da"/>
+               <value value="sundhedspleje"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550681000005102"/>
+            <display value="tandlægepraksis"/>
+            <designation>
+               <language value="da"/>
+               <value value="tandlægepraksis"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550691000005104"/>
+            <display value="tandpleje klinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="tandpleje klinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550701000005104"/>
+            <display value="tandteknisk klinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="tandteknisk klinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554231000005106"/>
+            <display value="vaccinationsklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="vaccinationsklinik"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554051000005108"/>
+            <display value="zoneterapiklinik"/>
+            <designation>
+               <language value="da"/>
+               <value value="zoneterapiklinik"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

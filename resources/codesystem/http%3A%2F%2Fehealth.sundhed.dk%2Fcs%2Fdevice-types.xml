@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>DeviceTypes</h2> 
+         <div> 
+            <p>Types of devices.</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/device-types defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">TBD <a name="ehealth-device-types-TBD"> </a> 
+               </td> 
+               <td>Example value - Under construction</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">59181002 <a name="ehealth-device-types-59181002"> </a> 
+               </td> 
+               <td>Oxygen analyser</td> 
+               <td>Oxygen analyser</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/device-types"/>
+   <version value="0.6.0"/>
+   <name value="DeviceTypes"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Types of devices."/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+   <concept>
+      <code value="59181002"/>
+      <display value="Oxygen analyser"/>
+      <definition value="Oxygen analyser"/>
+        <property>
+            <code value="deprecated"/>
+            <valueDateTime value="2020-02-03"/>
+        </property>
+   </concept>
+</CodeSystem>

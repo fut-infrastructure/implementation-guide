@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>SorOrganizationType</h2> 
+         <div> 
+            <p>Organization types specific for organizations from Sor</p> 
+         </div> 
+         <p>This code system http://ehealth.sundhed.dk/cs/sor-organization-type defines the following codes:</p> 
+         <table class="codes"> 
+            <tr> 
+               <td style="white-space:nowrap"> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>Display</b> 
+               </td> 
+               <td> 
+                  <b>Definition</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">unknown <a name="ehealth-sor-organization-type-unknown"> </a> 
+               </td> 
+               <td>Unknown</td> 
+               <td>Unknown</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">726 <a name="ehealth-sor-organization-type-726"> </a> 
+               </td> 
+               <td>KONVAFD (Converted Organizational Unit)</td> 
+               <td>KONVAFD (Converted Organizational Unit)</td> 
+            </tr> 
+            <tr> 
+               <td style="white-space:nowrap">56781000005109 <a name="ehealth-sor-organization-type-56781000005109"> </a> 
+               </td> 
+               <td>Abuse treatment center</td> 
+               <td>Abuse treatment center</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/cs/sor-organization-type"/>
+   <version value="0.0.1"/>
+   <name value="SorOrganizationType"/>
+   <title value="SOR Organization Type"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-06-11T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Organization types specific for organizations from Sor"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="unknown"/>
+      <display value="Unknown"/>
+      <definition value="Unknown"/>
+   </concept>
+   <concept>
+      <code value="726"/>
+      <display value="KONVAFD (Converted Organizational Unit)"/>
+      <definition value="KONVAFD (Converted Organizational Unit)"/>
+   </concept>
+   <concept>
+      <code value="56781000005109"/>
+      <display value="Abuse treatment center"/>
+      <definition value="Abuse treatment center"/>
+   </concept>
+</CodeSystem>

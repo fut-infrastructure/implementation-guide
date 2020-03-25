@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>OIOBPPRoles</h2> 
+         <div> 
+            <p>OIO BPP roles.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Include all codes defined in <a href="CodeSystem-ehealth-oio-bpp-roles.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/oio-bpp-roles</code> 
+               </a> 
+            </li> 
+         </ul> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/oio-bpp-roles"/>
+   <version value="0.6.0"/>
+   <name value="OIOBPPRoles"/>
+   <title value="OIO BPP Roles"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-12-02T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="OIO BPP roles."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/oio-bpp-roles"/>
+      </include>
+   </compose>
+</ValueSet>

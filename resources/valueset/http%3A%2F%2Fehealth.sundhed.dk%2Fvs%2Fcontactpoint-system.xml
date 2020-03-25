@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <h2>ContactPointSystem</h2> 
+         <div> 
+            <p>Contact point systems.</p> 
+         </div> 
+         <p>This value set includes codes from the following code systems:</p> 
+         <ul> 
+            <li>Import all the codes that are contained in <a href="http://hl7.org/fhir/STU3/valueset-contact-point-system.html">http://hl7.org/fhir/ValueSet/contact-point-system</a> 
+            </li> 
+            <li>Include these codes as defined in <a href="CodeSystem-ehealth-contactpoint-system.html"> 
+                  <code>http://ehealth.sundhed.dk/cs/contactpoint-system</code> 
+               </a> 
+               <table class="none"> 
+                  <tr> 
+                     <td style="white-space:nowrap"> 
+                        <b>Code</b> 
+                     </td> 
+                     <td> 
+                        <b>Display</b> 
+                     </td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-contactpoint-system.html#ehealth-contactpoint-system-TBD">TBD</a> 
+                     </td> 
+                     <td>Example value - Under construction</td> 
+                     <td>Example value - Under construction</td> 
+                  </tr> 
+                  <tr> 
+                     <td> 
+                        <a href="CodeSystem-ehealth-contactpoint-system.html#ehealth-contactpoint-system-EAN">EAN</a> 
+                     </td> 
+                     <td>Global location number</td> 
+                     <td/> 
+                  </tr> 
+               </table> 
+            </li> 
+         </ul> 
+         <p> 
+            <b>Additional Language Displays</b> 
+         </p> 
+         <table class="codes"> 
+            <tr> 
+               <td> 
+                  <b>Code</b> 
+               </td> 
+               <td> 
+                  <b>English (United States) (English (United States), en)</b> 
+               </td> 
+            </tr> 
+            <tr> 
+               <td>TBD</td> 
+               <td>Example value - Under construction</td> 
+            </tr> 
+            <tr> 
+               <td>EAN</td> 
+               <td>Global location number</td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <url value="http://ehealth.sundhed.dk/vs/contactpoint-system"/>
+   <version value="0.6.0"/>
+   <name value="ContactPointSystem"/>
+   <title value="ContactPoint System"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2019-02-08T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Contact point systems."/>
+   <compose>
+      <include>
+         <valueSet value="http://hl7.org/fhir/ValueSet/contact-point-system"/>
+      </include>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/contactpoint-system"/>
+      </include>
+   </compose>
+</ValueSet>
