@@ -98,7 +98,7 @@
       <definition value="Sharing is allowed destination municipal data"/>
         <designation>
             <language value="da"/>
-            <value value="Deling "/>
+            <value value="Deling"/>
         </designation>
         <property>
             <code value="deprecated"/>

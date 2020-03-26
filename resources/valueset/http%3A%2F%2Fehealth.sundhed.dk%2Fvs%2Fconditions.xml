@@ -106,7 +106,6 @@
    <compose>
       <include>
          <system value="http://ehealth.sundhed.dk/cs/conditions"/>
-         </concept>
       </include>
       <include>
          <system value="http://snomed.info/sct"/>

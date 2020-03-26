@@ -28,11 +28,13 @@
             <code value="MCS88019"/>
             <display value="Blodtryk hjemme systolisk;Arm"/>
             <equivalence value="specializes"/>
+            <comment  value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
          </target>
          <target>
             <code value="MCS88020"/>
             <display value="Blodtryk hjemme diastolisk;Arm"/>
             <equivalence value="specializes"/>
+            <comment  value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
          </target>
       </element>
    </group>

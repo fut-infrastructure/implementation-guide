@@ -2,7 +2,6 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
     <id value="ehealth-device-identifier" />
     <name value="eHealth Device Identifier" />
-    <name value="eHealth Device Identifier" />
     <status value="active" />
     <kind value="identifier" />
     <date value="2020-02-18" />
