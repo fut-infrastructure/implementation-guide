@@ -164,7 +164,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `MEASUREMENT_SEARCHMEASUREMENT_REFERENCED_RESOURCE_NOT_FOUND`: Referenced resource not found: %s
 
-- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_OBSERVATION_CODE`: The code of Observation with id %s does not match the code of the referenced ProcedureRequest with id %s.
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_OBSERVATION_CODE`: Observation.code does not match the code of the referenced ProcedureRequest with id %s.
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INVALID_QUESTIONNAIRE_REFERENCE`: Questionnaire reference with id %s is unexpected. Expected questionnaire reference to match questionnaire reference of related ActivityDefinition with id %s.
 
@@ -278,7 +278,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 #### ehealth-task
 
-- `TASK_INVESTIGATION_ITEM_REFERENCES_MUST_INCLUDE_VERSION`: Investigation item references must include version
+- `TASK_INVESTIGATION_ITEM_REFERENCES_MUST_HAVE_VERSION_AND_VERSIONLESS`: Investigation references must have an item with version and one versionless
 
 - `TASK_RESTRICTION_CATEGORY_NONE_CANT_BE_COMBINED`: Restriction category 'None' can't be combined with others
 
