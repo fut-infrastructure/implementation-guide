@@ -1,4 +1,4 @@
-`GET [base]/CommunicationRequest/772/_history/2`
+`GET [base]/CommunicationRequest/598/_history/2`
 
 __Header__
 ```
@@ -15,30 +15,30 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "772",
+  "id": "598",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-02-03T12:10:37.588+00:00",
+    "lastUpdated": "2020-03-26T12:58:27.970+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/766"
+      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/597"
     }
   ],
   "status": "suspended",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/88865"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/73109"
   },
   "recipient": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/74495"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/49522"
     }
   ],
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/763"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/596"
   }
 }
 ```

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzM5MzM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiR0ZXN0LW9ubHktY3JlYXRlIiwiUHJvdmVuYW5jZS5yZWFkIiwiUHJvdmVuYW5jZS5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzk2MDM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiR0ZXN0LW9ubHktY3JlYXRlIiwiUHJvdmVuYW5jZS5yZWFkIiwiUHJvdmVuYW5jZS5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,17 +26,17 @@ __Body__:
         },
         "target": [
           {
-            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/51236"
+            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/74936"
           }
         ],
-        "recorded": "2020-02-03T13:11:52.748+01:00",
+        "recorded": "2020-03-26T13:59:52.270+01:00",
         "policy": [
           "policy"
         ],
         "agent": [
           {
             "whoReference": {
-              "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/63839"
+              "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/39054"
             }
           }
         ]

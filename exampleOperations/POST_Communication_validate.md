@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjk2OWY0YzAtNWFiMS00MWNkLThiOTgtYjgxZDE3OThlYmUwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2YzMWE0NDUtMDg4My00Y2E3LThiNWUtNDVmOWUwMzBkZjlkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -49,7 +49,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/25643"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/70574"
         },
         "topic": [
           {
@@ -57,7 +57,7 @@ __Body__:
           }
         ],
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/6072"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/164"
         }
       }
     }

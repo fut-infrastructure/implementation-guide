@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTk1ODFiODctY2Q2YS00MWJmLTlhNTAtYzVmM2MyY2M2NGYxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTM1OTEzYzEtMTMxMy00YjE3LTlhMjEtYWU4N2UyMTEyOTczIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -55,17 +55,17 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/36348"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/60754"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31839"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/16802"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/94415"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/33623"
         },
-        "occurrenceDateTime": "2020-02-03T14:25:36+01:00",
+        "occurrenceDateTime": "2020-03-26T12:10:24+01:00",
         "content": {
           "language": "en"
         }

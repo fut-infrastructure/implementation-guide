@@ -1,4 +1,4 @@
-`GET [base]/ProcedureRequest/1108`
+`GET [base]/ProcedureRequest/875`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "1108",
+  "id": "875",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T12:11:37.293+00:00",
+    "lastUpdated": "2020-03-26T12:59:36.189+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -66,7 +66,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/27207"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/7348"
     }
   ],
   "status": "completed",
@@ -78,13 +78,13 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "e3a13774-0361-4617-915e-195492797c26"
+    "text": "3cd282b7-792b-40cb-809f-bda06618cb11"
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/21827"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/40400"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1107"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/874"
   }
 }
 ```

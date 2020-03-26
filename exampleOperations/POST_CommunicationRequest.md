@@ -16,22 +16,22 @@ __Body__:
   "resourceType": "CommunicationRequest",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T12:10:11.985+00:00",
+    "lastUpdated": "2020-03-26T12:58:13.942+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/573"
+      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/504"
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50524"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/326"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/570"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/503"
   }
 }
 ```
@@ -40,25 +40,25 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "580",
+  "id": "506",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T12:10:12.106+00:00",
+    "lastUpdated": "2020-03-26T12:58:14.100+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/573"
+      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/504"
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50524"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/326"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/570"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/503"
   }
 }
 ```

@@ -29,11 +29,11 @@ __Body__:
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "53576-5"
+              "code": "69730-0"
             }
           ]
         },
-        "indexed": "2020-02-03T13:38:56.587+01:00",
+        "indexed": "2020-03-26T11:50:52.218+01:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "f05e8fe6-d23d-425b-97f0-7bf953a71a4e",
+        "id": "cb9faf43-bcd7-42b3-8a41-431edf97beea",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -188,7 +188,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Device",
-        "id": "35456082-754d-42ab-9550-85e58b7b8993",
+        "id": "eedb0bea-8cc0-479a-a3dc-8649d74cf4bb",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
@@ -210,7 +210,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b768d886-4ab7-41fa-85cb-13fe93f071b5",
+        "id": "415ef6ed-e51f-448d-a82e-83305ad7a102",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -249,6 +249,37 @@ __Response__
                 "city": "Aalborg Øst",
                 "postalCode": "9220",
                 "country": "Danmark"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+            "extension": [
+              {
+                "url": "qualityType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                      "code": "UQ",
+                      "display": "Usage Quality"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "qualityCode",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "automatically-transferred",
+                      "display": "Automatically transferred measurement"
+                    }
+                  ]
+                }
               }
             ]
           }
@@ -283,14 +314,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/35456082-754d-42ab-9550-85e58b7b8993"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "24f7c2b1-2c12-4694-b184-98c9343d1e05",
+        "id": "abccfb83-d912-4a00-af7d-7e6e3218810e",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -329,6 +360,37 @@ __Response__
                 "city": "Aalborg Øst",
                 "postalCode": "9220",
                 "country": "Danmark"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+            "extension": [
+              {
+                "url": "qualityType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                      "code": "UQ",
+                      "display": "Usage Quality"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "qualityCode",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "automatically-transferred",
+                      "display": "Automatically transferred measurement"
+                    }
+                  ]
+                }
               }
             ]
           }
@@ -363,14 +425,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/35456082-754d-42ab-9550-85e58b7b8993"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "caba95c4-330d-416e-a852-975b54d01f24",
+        "id": "4d1178ad-8a91-4008-8760-07f0b8fba103",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -413,6 +475,37 @@ __Response__
             ]
           }
         ],
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+            "extension": [
+              {
+                "url": "qualityType",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                      "code": "UQ",
+                      "display": "Usage Quality"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "qualityCode",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "automatically-transferred",
+                      "display": "Automatically transferred measurement"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
         "status": "final",
         "code": {
           "coding": [
@@ -437,7 +530,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/35456082-754d-42ab-9550-85e58b7b8993"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
         }
       }
     }

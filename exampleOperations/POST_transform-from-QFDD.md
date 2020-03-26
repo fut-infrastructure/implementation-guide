@@ -29,11 +29,11 @@ __Body__:
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "53576-5"
+              "code": "69730-0"
             }
           ]
         },
-        "indexed": "2020-02-03T13:39:12.974+01:00",
+        "indexed": "2020-03-26T11:51:14.773+01:00",
         "content": [
           {
             "attachment": {

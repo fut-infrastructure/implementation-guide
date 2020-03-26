@@ -1,4 +1,4 @@
-`GET [base]/DocumentReference/30`
+ET [base]/DocumentReference/30`
 
 __Header__
 ```

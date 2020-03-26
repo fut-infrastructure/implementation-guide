@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTE0ZTFhOWQtOWNlOS00ZDdlLWJkMTUtYjZiNTQ1OTkwMjY1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDYwNTNmOTUtZThjNC00MjVmLTgzYmItMGE3Yzg3ODRlN2MwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,7 +26,7 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/89598"
+            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/17118"
           }
         ],
         "status": "amended",
@@ -39,22 +39,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50226"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/27295"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/83341"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/7096"
         },
         "effectivePeriod": {
-          "start": "2020-02-03T14:25:56+01:00",
-          "end": "2020-02-03T14:25:56+01:00"
+          "start": "2020-03-26T12:10:48+01:00",
+          "end": "2020-03-26T12:10:48+01:00"
         },
         "performer": [
           {
-            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/75424"
+            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/77610"
           }
         ],
         "device": {
-          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/99395"
+          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/48235"
         }
       }
     }

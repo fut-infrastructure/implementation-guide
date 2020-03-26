@@ -29,11 +29,11 @@ __Body__:
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "53576-5"
+              "code": "69730-0"
             }
           ]
         },
-        "indexed": "2020-02-03T13:39:18.322+01:00",
+        "indexed": "2020-03-26T11:51:19.747+01:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "6f428fc0-ece5-444d-8f58-b8cd9e465b10",
+        "id": "b3ab59fa-80e7-4a23-8096-37d039ef9212",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"

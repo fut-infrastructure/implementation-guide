@@ -1,4 +1,4 @@
-`POST [base]/EpisodeOfCare/10/$is-context-allowed`
+`POST [base]/EpisodeOfCare/714/$is-context-allowed`
 
 __Header__
 ```
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/78479"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89098"
       }
     }
   ]
@@ -33,7 +33,7 @@ __Response__
     {
       "name": "Patient",
       "valueReference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/78479"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89098"
       }
     }
   ]

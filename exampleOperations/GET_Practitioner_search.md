@@ -1,9 +1,9 @@
-`GET [base]/Practitioner?address-use=work&name=be75e18e-2645-4ce2-811d-279394ad757e`
+`GET [base]/Practitioner?address-use=work&name=80eeeea8-41bf-4f66-b51c-5f12f5795abc`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2Y5Y2RkYzEtYWQ1Ny00ZWI3LWExMTAtNGE2MDY1ZWY5ZWVkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTE3M2NlNWQtMGEzMC00ZTRlLWEyNDgtZGFkZDM1ZWQxNjgxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,44 +15,44 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "e9391ed5-11ae-4b6e-80da-7ec4f359e5c2",
+  "id": "32677985-08b5-4118-8b04-45e68dfab27b",
   "meta": {
-    "lastUpdated": "2020-02-03T14:02:20.547+00:00"
+    "lastUpdated": "2020-03-26T11:23:51.983+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner?_format=json&_pretty=true&address-use=work&name=be75e18e-2645-4ce2-811d-279394ad757e"
+      "url": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner?_format=json&_pretty=true&address-use=work&name=80eeeea8-41bf-4f66-b51c-5f12f5795abc"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/310",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/350",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "310",
+        "id": "350",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-02-03T14:02:20.095+00:00",
+          "lastUpdated": "2020-03-26T11:23:51.557+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
         },
         "name": [
           {
-            "family": "be75e18e-2645-4ce2-811d-279394ad757e"
+            "family": "80eeeea8-41bf-4f66-b51c-5f12f5795abc"
           }
         ],
         "address": [
           {
             "use": "work",
-            "text": "df02a0ab-8c8d-401c-9191-20dc6a27590d",
-            "city": "efd92ead-22f0-4817-ab65-98ea7fbece77",
-            "state": "dd9527ba-5555-467b-a1b9-a3e81a97774a",
-            "postalCode": "8e2b2698-e47d-4dfe-95ba-e9410f2481a6",
-            "country": "a5a6b9ca-0619-4aed-9b82-f0bbac3090c7"
+            "text": "8e7a42e8-2d68-4af8-b23a-77647cf0b21c",
+            "city": "1f9feafd-c59c-47ec-9b53-3bea10b5e476",
+            "state": "7db65bda-b712-4e7c-a20a-491247c1ddc5",
+            "postalCode": "7c80609e-b622-4cc1-a077-e004151d46af",
+            "country": "5d38b2be-799b-4570-93b9-c903ef4e70f8"
           }
         ]
       },
@@ -61,30 +61,30 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/309",
+      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/349",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "309",
+        "id": "349",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-02-03T14:02:19.953+00:00",
+          "lastUpdated": "2020-03-26T11:23:51.375+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
         },
         "name": [
           {
-            "family": "be75e18e-2645-4ce2-811d-279394ad757e"
+            "family": "80eeeea8-41bf-4f66-b51c-5f12f5795abc"
           }
         ],
         "address": [
           {
             "use": "work",
-            "text": "df02a0ab-8c8d-401c-9191-20dc6a27590d",
-            "city": "efd92ead-22f0-4817-ab65-98ea7fbece77",
-            "state": "dd9527ba-5555-467b-a1b9-a3e81a97774a",
-            "postalCode": "8e2b2698-e47d-4dfe-95ba-e9410f2481a6",
-            "country": "a5a6b9ca-0619-4aed-9b82-f0bbac3090c7"
+            "text": "8e7a42e8-2d68-4af8-b23a-77647cf0b21c",
+            "city": "1f9feafd-c59c-47ec-9b53-3bea10b5e476",
+            "state": "7db65bda-b712-4e7c-a20a-491247c1ddc5",
+            "postalCode": "7c80609e-b622-4cc1-a077-e004151d46af",
+            "country": "5d38b2be-799b-4570-93b9-c903ef4e70f8"
           }
         ]
       },

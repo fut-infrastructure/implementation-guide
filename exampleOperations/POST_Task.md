@@ -45,7 +45,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/12616"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/23885"
       }
     }
   ],
@@ -53,10 +53,10 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/5094"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69304"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/85185"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/41346"
   }
 }
 ```
@@ -65,10 +65,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "46",
+  "id": "82",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T19:58:18.141+00:00",
+    "lastUpdated": "2020-03-26T13:41:20.951+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -99,7 +99,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/12616"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/23885"
       }
     }
   ],
@@ -107,11 +107,11 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/5094"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69304"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/85185"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/41346"
   },
-  "authoredOn": "2019-11-04T19:58:18+00:00"
+  "authoredOn": "2020-03-26T13:41:20+00:00"
 }
 ```

@@ -1,9 +1,9 @@
-`GET [base]/EpisodeOfCare/1209`
+`GET [base]/EpisodeOfCare/974`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDk0NDJlMGMtN2RhOS00NTJiLWE1MWMtYjBjZTQ0ZGMwYTI5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvMTIwOSJ9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTJmMWFkZjMtMTc4OC00NTA3LWE5ZTEtOTdjYTg4OTBkOGY0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvOTc0In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "1209",
+  "id": "974",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T12:11:58.952+00:00",
+    "lastUpdated": "2020-03-26T12:59:58.380+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/86441"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/98760"
       }
     }
   ],
@@ -35,16 +35,16 @@ __Response__
   "diagnosis": [
     {
       "condition": {
-        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/1208"
+        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/973"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96853"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/66771"
   },
   "managingOrganization": {
-    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/28560"
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/49772"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",

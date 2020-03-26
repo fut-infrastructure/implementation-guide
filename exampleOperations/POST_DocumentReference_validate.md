@@ -1,4 +1,4 @@
-`POST [base]/DocumentReference/47/$validate`
+`POST [base]/DocumentReference/46/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "47",
+        "id": "46",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-02-03T14:07:06.784+00:00",
+          "lastUpdated": "2020-03-26T13:18:47.839+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -31,12 +31,12 @@ __Body__:
         "type": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
+              "system": "http://loinc.org",
+              "code": "69730-0"
             }
           ]
         },
-        "indexed": "2020-02-03T15:07:06.759+01:00",
+        "indexed": "2020-03-26T14:18:47.785+01:00",
         "content": [
           {
             "attachment": {

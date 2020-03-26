@@ -1,4 +1,4 @@
-`POST [base]/ClinicalImpression/21/$validate`
+`POST [base]/ClinicalImpression/40/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ClinicalImpression",
-        "id": "21",
+        "id": "40",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2019-11-04T19:57:52.253+00:00",
+          "lastUpdated": "2020-03-26T13:40:21.550+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
           ]
@@ -37,10 +37,10 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/45748"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/33938"
         },
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/27124"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/22332"
         }
       }
     }
@@ -54,7 +54,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

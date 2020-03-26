@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWI0YzgyZTktMDFmNS00YWY4LThhZmUtMjdiYmM0NDZkYzRiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvZGVTeXN0ZW0ud3JpdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -14,9 +14,14 @@ __Body__:
 ```json
 {
   "resourceType": "Practitioner",
+  "meta": {
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+    ]
+  },
   "name": [
     {
-      "family": "c378b3b4-1826-48c4-9f05-062fee38850c"
+      "family": "ad1bca3c-a2aa-4e21-a04b-b0402be6ade4"
     }
   ]
 }
@@ -26,14 +31,17 @@ __Response__
 ```json
 {
   "resourceType": "Practitioner",
-  "id": "256",
+  "id": "195",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-04T06:32:55.016+00:00"
+    "lastUpdated": "2020-03-26T11:23:19.008+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+    ]
   },
   "name": [
     {
-      "family": "c378b3b4-1826-48c4-9f05-062fee38850c"
+      "family": "ad1bca3c-a2aa-4e21-a04b-b0402be6ade4"
     }
   ]
 }

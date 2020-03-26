@@ -50,7 +50,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/62711"
+              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/91313"
             }
           }
         ],
@@ -58,7 +58,7 @@ __Body__:
         "intent": "proposal",
         "priority": "routine",
         "context": {
-          "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/35975"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/79722"
         }
       }
     }
@@ -72,7 +72,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {

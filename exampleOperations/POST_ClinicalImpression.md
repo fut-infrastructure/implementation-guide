@@ -21,9 +21,13 @@ __Body__:
   },
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
-      "valueReference": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/26611"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "approved-for-sharing"
+          }
+        ]
       }
     }
   ],
@@ -37,13 +41,10 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/7777"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/22534"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/98979"
-  },
-  "assessor": {
-    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/80233"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/69064"
   }
 }
 ```
@@ -52,19 +53,23 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "3",
+  "id": "5",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2019-11-04T19:57:44.017+00:00",
+    "lastUpdated": "2020-03-26T13:39:58.454+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
   },
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
-      "valueReference": {
-        "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/26611"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "approved-for-sharing"
+          }
+        ]
       }
     }
   ],
@@ -78,14 +83,11 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/7777"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/22534"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/98979"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/69064"
   },
-  "date": "2019-11-04T19:57:44+00:00",
-  "assessor": {
-    "reference": "http://organization.local.ehealth.sundhed.dk/fhir/Practitioner/80233"
-  }
+  "date": "2020-03-26T13:39:58+00:00"
 }
 ```

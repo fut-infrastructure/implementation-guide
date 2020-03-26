@@ -1,5 +1,8 @@
 # system
 - profile: system
+  path: POST_apply.md
+
+- profile: system
   path: POST_create-episode-of-care.md
 
 - profile: system
@@ -33,7 +36,7 @@
   path: POST_persist-login.md
 
 - profile: system
-  path: POST_import.md
+  path: POST_Binary_retrieve-document.md
 
 # system reporting
 
@@ -155,10 +158,10 @@
   path: PUT_CarePlan.md
 
 - profile: ehealth-careplan
-  path: POST_suggest-care-teams.md
+  path: POST_CarePlan_suggest-care-teams.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan-update-care-teams.md
+  path: POST_CarePlan_update-care-teams.md
 
 # ehealth-careteam
 - profile: ehealth-careteam
@@ -362,7 +365,7 @@
   path: GET_EpisodeOfCare_version.md
 
 - profile: ehealth-episodeofcare
-  path: POST_is-context-allowed.md
+  path: POST_EpisodeOfCare_is-context-allowed.md
 
 - profile: ehealth-episodeofcare
   path: PATCH_EpisodeOfCare.md
@@ -371,7 +374,7 @@
   path: POST_EpisodeOfCare_validate.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare-update-care-teams.md
+  path: POST_EpisodeOfCare_update-care-teams.md
 
 # ehealth-library
 - profile: ehealth-library
@@ -381,7 +384,7 @@
   path: GET_Library_version.md
 
 - profile: ehealth-library
-  path: POST_evaluate.md
+  path: POST_Library_evaluate.md
 
 - profile: ehealth-library
   path: POST_Library.md
@@ -401,6 +404,9 @@
 
 - profile: ehealth-media
   path: GET_Media_version.md
+
+- profile: ehealth-media
+  path: POST_Media_get-data.md
 
 - profile: ehealth-media
   path: POST_Media_validate.md
@@ -465,10 +471,10 @@
   path: GET_PlanDefinition_version.md
 
 - profile: ehealth-plandefinition
-  path: POST_apply.md
+  path: POST_PlanDefinition.md
 
 - profile: ehealth-plandefinition
-  path: POST_PlanDefinition.md
+  path: POST_PlanDefinition_apply.md
 
 - profile: ehealth-plandefinition
   path: POST_PlanDefinition_validate.md
@@ -491,6 +497,25 @@
 
 - profile: ehealth-practitioner
   path: PUT_Practitioner.md
+
+# ehealth-practitionerrole
+- profile: ehealth-practitionerrole
+  path: DELETE_PractitionerRole.md
+
+- profile: ehealth-practitionerrole
+  path: GET_PractitionerRole_search.md
+
+- profile: ehealth-practitionerrole
+  path: GET_PractitionerRole_version.md
+
+- profile: ehealth-practitionerrole
+  path: POST_PractitionerRole_validate.md
+
+- profile: ehealth-practitionerrole
+  path: GET_PractitionerRole_version.md
+
+- profile: ehealth-practitionerrole
+  path: PUT_PractitionerRole.md
 
 # ehealth-procedurerequest
 - profile: ehealth-procedurerequest
@@ -572,7 +597,13 @@
 
 # ehealth-reporting
 - profile: ehealth-binary
+  path: DELETE_Binary.md
+
+- profile: ehealth-binary
   path: GET_Binary.md
+
+- profile: ehealth-binary
+  path: GET_Binary_version.md
 
 # ehealth-task
 - profile: ehealth-task

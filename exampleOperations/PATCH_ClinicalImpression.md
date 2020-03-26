@@ -1,4 +1,4 @@
-`PATCH [base]/ClinicalImpression/7`
+`PATCH [base]/ClinicalImpression/10`
 
 __Header__
 ```
@@ -25,14 +25,26 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "7",
+  "id": "10",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2019-11-04T19:57:46.625+00:00",
+    "lastUpdated": "2020-03-26T13:40:09.803+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
   },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "approved-for-sharing"
+          }
+        ]
+      }
+    }
+  ],
   "status": "entered-in-error",
   "code": {
     "coding": [
@@ -43,10 +55,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "http://patient.local.ehealth.sundhed.dk/fhir/Patient/9102"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/29171"
   },
   "context": {
-    "reference": "http://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/62377"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/14239"
   }
 }
 ```

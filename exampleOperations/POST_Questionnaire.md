@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/26965"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/46895"
       }
     },
     {
@@ -43,7 +43,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/911"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/24671"
           }
         },
         {
@@ -60,8 +60,8 @@ __Body__:
       ]
     }
   ],
-  "version": "de9dca55-5290-463c-9f66-d32c9c4763ca",
-  "name": "71611cdc-da9e-4095-9876-92da9a681fc6",
+  "version": "1e3dfbaa-7330-44b9-81f5-a25baa8e8f0d",
+  "name": "80b731c3-b9a2-45b3-9600-e0ebd8070671",
   "status": "active"
 }
 ```
@@ -73,7 +73,7 @@ __Response__
   "id": "28",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T14:26:06.268+00:00",
+    "lastUpdated": "2020-03-26T12:22:35.121+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -82,7 +82,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/26965"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/46895"
       }
     },
     {
@@ -102,7 +102,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/911"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/24671"
           }
         },
         {
@@ -119,8 +119,8 @@ __Response__
       ]
     }
   ],
-  "version": "de9dca55-5290-463c-9f66-d32c9c4763ca",
-  "name": "71611cdc-da9e-4095-9876-92da9a681fc6",
+  "version": "1e3dfbaa-7330-44b9-81f5-a25baa8e8f0d",
+  "name": "80b731c3-b9a2-45b3-9600-e0ebd8070671",
   "status": "active"
 }
 ```

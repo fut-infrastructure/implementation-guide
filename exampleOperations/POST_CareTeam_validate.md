@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWZhYzc3MDItYWY0OS00YWE2LWI5ODgtZWZlNGVkMjZkOWI2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2I5MjAzZjEtNjJlMi00MjU0LTlhOWEtNjFhNmFkYWJmYjE3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,19 +22,19 @@ __Body__:
         "id": "58",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-02-03T14:01:05.344+00:00",
+          "lastUpdated": "2020-03-26T11:22:09.116+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
         },
         "identifier": [
           {
-            "id": "12c02c79-2228-4976-a276-99218d858c05",
+            "id": "4599ec44-c52b-4790-8a4e-c3d292c4f2c9",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "ff06ef15-a8e4-496a-8f93-297b800de95c",
+        "name": "b4167568-7fe2-41f9-b4c5-72fea90726fa",
         "reasonCode": [
           {
             "coding": [

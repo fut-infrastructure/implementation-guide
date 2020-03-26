@@ -1,9 +1,9 @@
-`GET [base]/DocumentReference?type=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fdocument-type%7CTBD&description=8b822c0e-3491-4e75-a36c-078e471d7f17`
+`GET [base]/DocumentReference?status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F19343`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UkZmluZC1kb2N1bWVudC1yZWZlcmVuY2VzIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzUzNjE3IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzE5MzQzIn0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,87 +15,35 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "e40cd5c4-5df9-47be-9008-3bcf0ce2399b",
+  "id": "a393e951-98dc-496a-96d9-022b56142561",
   "meta": {
-    "lastUpdated": "2020-02-03T14:07:32.630+00:00"
+    "lastUpdated": "2020-03-26T14:47:16.424+00:00"
   },
   "type": "searchset",
-  "total": 2,
+  "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.local.ehealth.sundhed.dk/fhir/DocumentReference?_format=json&_pretty=true&description=8b822c0e-3491-4e75-a36c-078e471d7f17&type=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fdocument-type%7CTBD"
+      "url": "https://document-query.local.ehealth.sundhed.dk/fhir/DocumentReference?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F19343&status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.local.ehealth.sundhed.dk/fhir/DocumentReference/105",
+      "fullUrl": "https://document-query.local.ehealth.sundhed.dk/fhir/OperationOutcome/-",
       "resource": {
-        "resourceType": "DocumentReference",
-        "id": "105",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-02-03T14:07:32.236+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-          ]
+        "resourceType": "OperationOutcome",
+        "id": "-",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">ERROR</td><td>[]</td><td><pre>{\"errorCode\":\"XDSRepositoryError\", \"codeContent\":\"Metadata Validation Errors: ExtrinsicObject urn:uuid:592fc2f7-6695-4c60-90d5-e63a46051e48 does not have a mimeType\"}</pre></td>\r\r\r</tr>\r</table>\r</div>"
         },
-        "status": "current",
-        "type": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
-            }
-          ]
-        },
-        "indexed": "2020-02-03T15:07:32.224+01:00",
-        "description": "8b822c0e-3491-4e75-a36c-078e471d7f17",
-        "content": [
+        "issue": [
           {
-            "attachment": {
-              "url": "http://some.com/"
-            }
+            "severity": "error",
+            "code": "exception",
+            "diagnostics": "{\"errorCode\":\"XDSRepositoryError\", \"codeContent\":\"Metadata Validation Errors: ExtrinsicObject urn:uuid:592fc2f7-6695-4c60-90d5-e63a46051e48 does not have a mimeType\"}"
           }
         ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://plan.local.ehealth.sundhed.dk/fhir/DocumentReference/106",
-      "resource": {
-        "resourceType": "DocumentReference",
-        "id": "106",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-02-03T14:07:32.422+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
-          ]
-        },
-        "status": "current",
-        "type": {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/document-type",
-              "code": "TBD"
-            }
-          ]
-        },
-        "indexed": "2020-02-03T15:07:32.407+01:00",
-        "description": "8b822c0e-3491-4e75-a36c-078e471d7f17",
-        "content": [
-          {
-            "attachment": {
-              "url": "http://some.com/"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
       }
     }
   ]

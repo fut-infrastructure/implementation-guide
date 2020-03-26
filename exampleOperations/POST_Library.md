@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjlmMGUwMDUtYTg5YS00Y2M5LWFlYjEtZTgxYTI2YzYzMDJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODljMmI5MzItMDcxMi00MWQ0LTlmYTEtN2I5NTMyODRmODEyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,7 @@ __Body__:
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "230312c5-a319-4b2b-9659-2ecb862587c6"
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/72550"
-      }
+      "valueString": "56fd57b5-742a-407a-93c3-c3861bd43e99"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -36,7 +30,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/61460"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/45882"
           }
         },
         {
@@ -53,7 +47,7 @@ __Body__:
       ]
     }
   ],
-  "version": "65d62260-0aa2-45a0-a0b8-49abeeeeb645",
+  "version": "8dad730d-9039-4b84-b44f-a51898c03c9a",
   "status": "draft",
   "type": {
     "coding": [
@@ -75,10 +69,10 @@ __Response__
 ```json
 {
   "resourceType": "Library",
-  "id": "1",
+  "id": "18",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-04T07:43:30.291+00:00",
+    "lastUpdated": "2020-03-26T10:59:45.302+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -86,13 +80,7 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "230312c5-a319-4b2b-9659-2ecb862587c6"
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/72550"
-      }
+      "valueString": "56fd57b5-742a-407a-93c3-c3861bd43e99"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -100,7 +88,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/61460"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/45882"
           }
         },
         {
@@ -117,7 +105,7 @@ __Response__
       ]
     }
   ],
-  "version": "65d62260-0aa2-45a0-a0b8-49abeeeeb645",
+  "version": "8dad730d-9039-4b84-b44f-a51898c03c9a",
   "status": "draft",
   "type": {
     "coding": [

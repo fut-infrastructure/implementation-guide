@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMmRmNGRiOWUtMWY1OS00MDMwLTg0MTgtMGMxMjEwYjE4YjJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWRldmljZXMiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzU5ODQzZWYtY2IwOC00Y2MyLTlhNzktYTg0ZmE3MjRjNGQ4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWRldmljZXMiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,7 +22,7 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/18795"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/15859"
       }
     }
   ]
@@ -36,7 +36,7 @@ __Response__
   "id": "25",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T14:19:00.685+00:00",
+    "lastUpdated": "2020-03-26T12:38:03.483+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -44,7 +44,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "2df4db9e-1f59-4030-8418-0c1210b18b2d"
+      "value": "759843ef-cb08-4cc2-9a79-a84fa724c4d8"
     }
   },
   "content": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="
