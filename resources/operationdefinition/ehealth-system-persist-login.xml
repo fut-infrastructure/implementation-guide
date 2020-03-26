@@ -3,45 +3,24 @@
    <name value="persist-login"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="This operation persist login information into either a CareTeam or a PractitionerRole if it is necessary. The CareTeam is updated if the CareTeam doesn't have both the passed practitioner and CareTeam's PractitionerRole combination. The PractitionerRole is created if a combination of the passed Organization and Practitioner hasn't exist yet."/>
+   <description value="This operation persists login information into CareTeams and PractitionerRoles&#xa;The following elements of each careteam are mandatory:&#xa;- id: Reference based on the careteam from the saml security token&#xa;- status: any&#xa;- name: any&#xa;- reasonCode: any&#xa;- participant: 1 for each careteam-role in the saml security token&#xa;-- role: from the saml security token&#xa;-- member: reference to the practitioner&#xa;-- onBehalfOf: reference to organization (cannot be set currently because of a bug in hapi)&#xa;&#xa;Persist-login will find each careteam, and update it with any new participants and roles from the input bundle.&#xa;The input careteam resources are are used as a container for the participant list. The rest of the fields are not used.&#xa;The following elements of each PractitionerRole are mandatory:&#xa;- practitioner&#xa;- organization&#xa;- code: roles from the saml security token (CareteamParticipantRole valueset)&#xa;&#xa;Persist-login will search for practitionerRoles for each combination of (practitioner, organization) and create it if it doesn't already exists."/>
    <idempotent value="false"/>
    <code value="persist-login"/>
    <system value="true"/>
    <type value="false"/>
    <instance value="false"/>
    <parameter>
-      <name value="practitioner"/>
-      <use value="in"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type value="Reference"/>
-   </parameter>
-   <parameter>
       <name value="careTeam"/>
       <use value="in"/>
       <min value="0"/>
-      <max value="1"/>
-      <type value="Reference"/>
-   </parameter>
-   <parameter>
-      <name value="careTeamParticipantRole"/>
-      <use value="in"/>
-      <min value="1"/>
       <max value="*"/>
-      <type value="CodeableConcept"/>
+      <type value="CareTeam"/>
    </parameter>
    <parameter>
-      <name value="organization"/>
+      <name value="practitionerRole"/>
       <use value="in"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type value="Reference"/>
-   </parameter>
-   <parameter>
-      <name value="bundle"/>
-      <use value="out"/>
       <min value="0"/>
-      <max value="1"/>
-      <type value="Bundle"/>
+      <max value="*"/>
+      <type value="PractitionerRole"/>
    </parameter>
 </OperationDefinition>

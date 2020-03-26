@@ -3,7 +3,7 @@
    <name value="retrieve-document"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Retrieve document"/>
+   <description value="Retrieve document."/>
    <idempotent value="true"/>
    <code value="retrieve-document"/>
    <resource value="Binary"/>

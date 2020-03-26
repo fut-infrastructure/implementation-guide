@@ -3,7 +3,7 @@
    <name value="apply"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template"/>
+   <description value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."/>
    <idempotent value="false"/>
    <code value="apply"/>
    <resource value="PlanDefinition"/>
