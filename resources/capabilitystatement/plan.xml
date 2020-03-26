@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="plan"/>
     <status value="active"/>
-    <date value="2020-02-01T04:07:05+00:00"/>
+    <date value="2020-03-19T04:08:05+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="plan"/>
-        <version value="1.1.0"/>
+        <version value="1.2.0"/>
     </software>
     <implementation>
         <description value="eHealth plan service"/>

@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-query"/>
    <status value="active"/>
-   <date value="2020-02-01T04:07:09+00:00"/>
+   <date value="2020-03-25T10:28:23+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="document-query"/>
-      <version value="1.0.0"/>
+      <version value="1.1.0"/>
    </software>
    <implementation>
       <description value="eHealth document-query service"/>
@@ -27,7 +27,7 @@
       <resource>
          <type value="DocumentReference"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"/>
          </profile>
          <interaction>
             <code value="search-type"/>

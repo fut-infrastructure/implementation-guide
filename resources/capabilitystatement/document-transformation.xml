@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="document-transformation"/>
     <status value="active"/>
-    <date value="2020-02-01T04:08:37+00:00"/>
+    <date value="2020-03-25T04:08:23+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="document-transformation"/>
-        <version value="1.1.0"/>
+        <version value="1.2.0"/>
     </software>
     <implementation>
         <description value="eHealth document-transformation service"/>
@@ -403,6 +403,18 @@
             </searchParam>
         </resource>
         <operation>
+            <name value="transform-to-QFDD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-from-QFDD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QFDD"/>
+            </definition>
+        </operation>
+        <operation>
             <name value="transform-to-PHMR"/>
             <definition>
                 <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-PHMR"/>
@@ -442,18 +454,6 @@
             <name value="transform-to-APD"/>
             <definition>
                 <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-QFDD"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-from-QFDD"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QFDD"/>
             </definition>
         </operation>
         <operation>

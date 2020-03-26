@@ -2,7 +2,7 @@
     <id value="patient"/>
     <url value="http://ehealth.sundhed.dk/fhir/CapabilityStatement/patient"/>
     <status value="active"/>
-    <date value="2020-02-03T09:37:41+00:00"/>
+    <date value="2020-03-26T08:15:42+00:00"/>
     <publisher value="Trifork"/>
     <kind value="instance"/>
     <software>
@@ -18,22 +18,22 @@
     <format value="application/fhir+json"/>
     <patchFormat value="application/json-patch+json"/>
     <profile>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
+    </profile>
+    <profile>
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"/>
-    </profile>
-    <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"/>
-    </profile>
-    <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"/>
-    </profile>
-    <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
     </profile>
     <profile>
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"/>
     </profile>
     <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
+    </profile>
+    <profile>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"/>
+    </profile>
+    <profile>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"/>
     </profile>
     <rest>
         <mode value="server"/>
@@ -343,7 +343,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="1667"/>
+                <valueDecimal value="5221"/>
             </extension>
             <type value="Communication"/>
             <profile>
@@ -553,7 +553,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="5"/>
+                <valueDecimal value="205"/>
             </extension>
             <type value="Patient"/>
             <profile>
@@ -930,7 +930,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="94"/>
+                <valueDecimal value="96"/>
             </extension>
             <type value="StructureDefinition"/>
             <profile>
@@ -1292,6 +1292,12 @@
             </definition>
         </operation>
         <operation>
+            <name value="meta"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/-s-meta"/>
+            </definition>
+        </operation>
+        <operation>
             <name value="suggest-keywords"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/-s-suggest-keywords"/>
@@ -1316,12 +1322,6 @@
             </definition>
         </operation>
         <operation>
-            <name value="meta"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/-s-meta"/>
-            </definition>
-        </operation>
-        <operation>
             <name value="exportAsiCal"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/Appointment-i-exportAsiCal"/>
@@ -1340,15 +1340,15 @@
             </definition>
         </operation>
         <operation>
-            <name value="lookup"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/CodeSystem--lookup"/>
-            </definition>
-        </operation>
-        <operation>
             <name value="subsumes"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/CodeSystem--subsumes"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="lookup"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/CodeSystem--lookup"/>
             </definition>
         </operation>
         <operation>
@@ -1430,6 +1430,30 @@
             </definition>
         </operation>
         <operation>
+            <name value="meta-delete"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-delete"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="meta"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="meta"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter--meta"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="meta-add"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-add"/>
+            </definition>
+        </operation>
+        <operation>
             <name value="validate"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter--validate"/>
@@ -1442,39 +1466,15 @@
             </definition>
         </operation>
         <operation>
-            <name value="meta"/>
+            <name value="snapshot"/>
             <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter--meta"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta-add"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-add"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta-delete"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-delete"/>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/StructureDefinition-i-snapshot"/>
             </definition>
         </operation>
         <operation>
             <name value="generateSnapshot"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/StructureDefinition--generateSnapshot"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="snapshot"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/StructureDefinition-i-snapshot"/>
             </definition>
         </operation>
         <operation>
@@ -1502,15 +1502,15 @@
             </definition>
         </operation>
         <operation>
-            <name value="expand"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/ValueSet-i-expand"/>
-            </definition>
-        </operation>
-        <operation>
             <name value="validate-code"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/ValueSet-i-validate-code"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="expand"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/ValueSet-i-expand"/>
             </definition>
         </operation>
         <operation>

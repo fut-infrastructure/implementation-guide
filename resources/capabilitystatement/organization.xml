@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="organization"/>
    <status value="active"/>
-   <date value="2020-02-03T04:13:46+00:00"/>
+   <date value="2020-03-25T20:20:06+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="organization"/>
-      <version value="1.3.0"/>
+      <version value="1.4.0"/>
    </software>
    <implementation>
       <description value="eHealth organization service"/>
@@ -489,6 +489,149 @@
          </searchParam>
       </resource>
       <resource>
+         <type value="PractitionerRole"/>
+         <profile>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"/>
+         </profile>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="multiple"/>
+         <searchInclude value="*"/>
+         <searchInclude value="PractitionerRole:endpoint"/>
+         <searchInclude value="PractitionerRole:location"/>
+         <searchInclude value="PractitionerRole:organization"/>
+         <searchInclude value="PractitionerRole:practitioner"/>
+         <searchInclude value="PractitionerRole:service"/>
+         <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="active"/>
+            <type value="token"/>
+            <documentation value="Whether this practitioner's record is in active use"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="email"/>
+            <type value="token"/>
+            <documentation value="A value in an email contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="endpoint"/>
+            <type value="reference"/>
+            <documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="A practitioner's Identifier"/>
+         </searchParam>
+         <searchParam>
+            <name value="location"/>
+            <type value="reference"/>
+            <documentation value="One of the locations at which this practitioner provides care"/>
+         </searchParam>
+         <searchParam>
+            <name value="organization"/>
+            <type value="reference"/>
+            <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
+         </searchParam>
+         <searchParam>
+            <name value="phone"/>
+            <type value="token"/>
+            <documentation value="A value in a phone contact"/>
+         </searchParam>
+         <searchParam>
+            <name value="practitioner"/>
+            <type value="reference"/>
+            <documentation value="Practitioner that is able to provide the defined services for the organation"/>
+         </searchParam>
+         <searchParam>
+            <name value="role"/>
+            <type value="token"/>
+            <documentation value="The practitioner can perform this role at for the organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="service"/>
+            <type value="reference"/>
+            <documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
+         </searchParam>
+         <searchParam>
+            <name value="specialty"/>
+            <type value="token"/>
+            <documentation value="The practitioner has this specialty at an organization"/>
+         </searchParam>
+         <searchParam>
+            <name value="telecom"/>
+            <type value="token"/>
+            <documentation value="The value in any kind of contact"/>
+         </searchParam>
+      </resource>
+      <resource>
          <type value="StructureDefinition"/>
          <profile>
             <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
@@ -551,6 +694,18 @@
          <name value="validate"/>
          <definition>
             <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/PractitionerRole--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/PractitionerRole-i-validate"/>
          </definition>
       </operation>
    </rest>

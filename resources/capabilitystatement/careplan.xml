@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="careplan"/>
     <status value="active"/>
-    <date value="2020-02-01T04:07:28+00:00"/>
+    <date value="2020-03-19T04:09:14+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="careplan"/>
-        <version value="1.1.0"/>
+        <version value="1.2.0"/>
     </software>
     <implementation>
         <description value="eHealth careplan service"/>
@@ -310,6 +310,11 @@
                 <documentation value="Classification of the consent statement - for indexing/retrieval"/>
             </searchParam>
             <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Identifier for this record (external references)"/>
+            </searchParam>
+            <searchParam>
                 <name value="patient"/>
                 <type value="reference"/>
                 <documentation value="Who the consent applies to"/>
@@ -347,6 +352,11 @@
                 <name value="condition"/>
                 <type value="reference"/>
                 <documentation value="Conditions/problems/diagnoses this episode of care is for"/>
+            </searchParam>
+            <searchParam>
+                <name value="identifier"/>
+                <type value="token"/>
+                <documentation value="Business Identifier(s) relevant for this EpisodeOfCare"/>
             </searchParam>
             <searchParam>
                 <name value="organization"/>
