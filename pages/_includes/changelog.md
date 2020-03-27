@@ -2,19 +2,15 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
+## 2020.2 (2020-03-27)
 
 ### Custom operations
 #### System operations
 - Added description and example of `-s-persist-login` operation
 
 #### Instance operations
-Changes to CodeSystem, ValueSet, ConceptMap and NamingSystem are limited to those not entirely defined through the terminology administration application. 
-### Code systems
-### ValueSets
-### ConceptMaps
+- Changes to CodeSystem, ValueSet, ConceptMap and NamingSystem are limited to those not entirely defined through the terminology administration application. 
+
 ### Resource/profile changes
 
 #### Device (ehealth-device)
