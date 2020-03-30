@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-musculoskeletal"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Bevægeapparat</h2> 
-         <div> 
-            <p>Fælles Sprog III, Bevægeapparat</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-musculoskeletal defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MOBILITY_AND_MOVEMENT <a name="fs3-health-musculoskeletal-MOBILITY_AND_MOVEMENT"> </a> 
-               </td> 
-               <td>Problemer med mobilitet og bevægelse</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-musculoskeletal"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Bevægeapparat"/>

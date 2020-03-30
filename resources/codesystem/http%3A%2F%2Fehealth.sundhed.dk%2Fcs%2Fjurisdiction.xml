@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-jurisdiction"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Jurisdiction</h2> 
-         <div> 
-            <p>Jurisdiction</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/jurisdiction defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">healthcare-act <a name="ehealth-jurisdiction-healthcare-act"> </a> 
-               </td> 
-               <td>Sundhedsloven</td> 
-               <td>Danish healthcare act</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">service-act <a name="ehealth-jurisdiction-service-act"> </a> 
-               </td> 
-               <td>Serviceloven</td> 
-               <td>Danish service act</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/jurisdiction"/>
    <version value="0.6.0"/>
    <name value="Jurisdiction"/>

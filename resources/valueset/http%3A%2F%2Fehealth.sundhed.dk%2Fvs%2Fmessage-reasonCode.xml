@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-message-reasonCode"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>eHealth Message Reason Code</h2> 
-         <div> 
-            <p>eHealth Message Reason Code</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="http://www.snomed.org/"> 
-                  <code>http://snomed.info/sct</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-ehealth-task-category.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/task-category</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/message-reasonCode"/>
    <version value="0.0.1"/>
    <name value="eHealth Message Reason Code"/>

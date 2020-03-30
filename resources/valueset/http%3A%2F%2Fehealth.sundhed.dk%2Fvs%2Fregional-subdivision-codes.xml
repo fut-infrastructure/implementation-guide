@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="regional-subdivision-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>RegionalSubdivisionCodes</h2> 
-         <div> 
-            <p>Subdivision codes (Regional codes) used in Denmark</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-regional-subdivision-codes.html"> 
-                  <code>https://www.iso.org/obp/ui/#iso:code:3166:DK</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/regional-subdivision-codes"/>
    <version value="0.0.1"/>
    <name value="RegionalSubdivisionCodes"/>

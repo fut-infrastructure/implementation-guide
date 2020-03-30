@@ -1,66 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="fs3-health"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, helbredstilstande</h2> 
-         <div> 
-            <p>Fælles Sprog III, helbredstilstande</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-function-level.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-function-level</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-musculoskeletal.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-musculoskeletal</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-nutrition.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-nutrition</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-skin-and-mucous-membranes.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-skin-and-mucous-membranes</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-communication.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-communication</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-psychosocial-conditions.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-respiration-and-circulation.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-respiration-and-circulation</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-sexuality.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-sexuality</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-pain-and-sensory-impressions.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-pain-and-sensory-impressions</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-sleep-and-rest.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-knowledge-and-development.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-health-excretion-of-waste-materials.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/fs3-health"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, helbredstilstande"/>

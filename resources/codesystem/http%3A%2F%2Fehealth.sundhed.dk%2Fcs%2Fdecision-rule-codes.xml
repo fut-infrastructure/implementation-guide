@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-decision-rule-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>DecisionRuleCodes</h2> 
-         <div> 
-            <p>Kind of decision rule</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/decision-rule-codes defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-decision-rule-codes-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">Triage <a name="ehealth-decision-rule-codes-Triage"> </a> 
-               </td> 
-               <td>Triage</td> 
-               <td>Triage</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">Quality <a name="ehealth-decision-rule-codes-Quality"> </a> 
-               </td> 
-               <td>Quality</td> 
-               <td>Quality</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">Generic <a name="ehealth-decision-rule-codes-Generic"> </a> 
-               </td> 
-               <td>Generic</td> 
-               <td>Generic</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/decision-rule-codes"/>
    <version value="0.6.0"/>
    <name value="DecisionRuleCodes"/>

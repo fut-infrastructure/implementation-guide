@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-device-supplier-roles"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>DeviceSupplierRoles</h2> 
-         <div> 
-            <p>Types of device related services.</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/device-supplier-roles defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-device-supplier-roles-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/device-supplier-roles"/>
    <version value="0.6.0"/>
    <name value="DeviceSupplierRoles"/>

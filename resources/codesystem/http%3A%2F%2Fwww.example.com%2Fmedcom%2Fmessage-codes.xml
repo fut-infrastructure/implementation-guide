@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="medcom-message-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>MedCom Message Codes</h2> 
-         <div> 
-            <p>MedCom Message Codes.</p> 
-         </div> 
-         <p>This code system http://www.example.com/medcom/message-codes defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">RAL <a name="MedComMessageCodes-RAL"> </a> 
-               </td> 
-               <td>Terapeutiske grænseværdier for RØD alarm</td> 
-               <td>Terapeutiske grænseværdier for RØD alarm</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">GAL <a name="MedComMessageCodes-GAL"> </a> 
-               </td> 
-               <td>Terapeutiske grænseværdier for GUL alarm</td> 
-               <td>Terapeutiske grænseværdier for GUL alarm</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://www.example.com/medcom/message-codes"/>
    <identifier>
       <system value="urn:ietf:rfc:3986"/>

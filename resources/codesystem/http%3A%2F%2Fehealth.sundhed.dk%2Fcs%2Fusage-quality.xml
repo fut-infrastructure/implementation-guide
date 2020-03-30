@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ehealth-usage-quality"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>UsageQuality</h2>
-            <div>
-                <p>Quality codes for usage or operating of measuring device</p>
-            </div>
-            <p>This code system http://ehealth.sundhed.dk/cs/usage-quality defines the following codes:</p>
-            <table class="codes">
-                <tr>
-                    <td style="white-space:nowrap">
-                        <b>Code</b>
-                    </td>
-                    <td>
-                        <b>Display</b>
-                    </td>
-                    <td>
-                        <b>Definition</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="white-space:nowrap">TBD
-                        <a name="ehealth-usage-quality-TBD"></a>
-                    </td>
-                    <td>Example value - Under construction</td>
-                    <td>Example value - Under construction</td>
-                </tr>
-                <tr>
-                    <td style="white-space:nowrap">TBD2
-                        <a name="ehealth-usage-quality-TBD2"></a>
-                    </td>
-                    <td>Example value2 - Under construction</td>
-                    <td>Example value2 - Under construction</td>
-                </tr>
-            </table>
-        </div>
-    </text>
     <url value="http://ehealth.sundhed.dk/cs/usage-quality"/>
     <version value="0.6.0"/>
     <name value="UsageQuality"/>

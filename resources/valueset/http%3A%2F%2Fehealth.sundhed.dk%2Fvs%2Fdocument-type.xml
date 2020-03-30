@@ -1,69 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-document-type"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>DocumentType</h2> 
-         <div> 
-            <p>Document Type value set.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Import all the codes that are contained in <a href="ValueSet-dk-ihe-typecode-vs.html">http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs</a> 
-            </li> 
-            <li>Include these codes as defined in <a href="http://loinc.org"> 
-                  <code>http://loinc.org</code> 
-               </a> 
-               <table class="none"> 
-                  <tr> 
-                     <td style="white-space:nowrap"> 
-                        <b>Code</b> 
-                     </td> 
-                     <td> 
-                        <b>Display</b> 
-                     </td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="http://details.loinc.org/LOINC/69730-0.html">69730-0</a> 
-                     </td> 
-                     <td>Instructions</td> 
-                     <td/> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="http://details.loinc.org/LOINC/48766-0.html">48766-0</a> 
-                     </td> 
-                     <td>Information source</td> 
-                     <td/> 
-                  </tr> 
-               </table> 
-            </li> 
-         </ul> 
-         <p> 
-            <b>Additional Language Displays</b> 
-         </p> 
-         <table class="codes"> 
-            <tr> 
-               <td> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Dansk (Danish, da)</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td>69730-0</td> 
-               <td>Instruktioner</td> 
-            </tr> 
-            <tr> 
-               <td>48766-0</td> 
-               <td>Informationskilde</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/document-type"/>
    <version value="0.6.0"/>
    <name value="DocumentType"/>

@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-restriction-category"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>RestrictionCategory</h2> 
-         <div> 
-            <p>Restriction Category</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/restriction-category defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">None <a name="ehealth-restriction-category-None"> </a> 
-               </td> 
-               <td>None</td> 
-               <td>No restiction category. Should not be combined with other values</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">measurement-monitoring <a name="ehealth-restriction-category-measurement-monitoring"> </a> 
-               </td> 
-               <td>Monitoring of measurement(s)</td> 
-               <td>Monitoring of measurement(s)</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">measuring-support <a name="ehealth-restriction-category-measuring-support"> </a> 
-               </td> 
-               <td>Support of measurement(s)</td> 
-               <td>Support of measurement(s)</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/restriction-category"/>
    <version value="2020-03-23T08:34:49"/>
    <name value="RestrictionCategory"/>

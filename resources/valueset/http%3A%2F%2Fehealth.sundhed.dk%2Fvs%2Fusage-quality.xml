@@ -1,67 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-usage-quality"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>UsageQuality</h2> 
-         <div> 
-            <p>Value set of hierarchical codes stating the quality of the user's operation of a device/ability to qualify questionnaire answers.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include these codes as defined in <a href="CodeSystem-ehealth-usage-quality.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/usage-quality</code> 
-               </a> 
-               <table class="none"> 
-                  <tr> 
-                     <td style="white-space:nowrap"> 
-                        <b>Code</b> 
-                     </td> 
-                     <td> 
-                        <b>Display</b> 
-                     </td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="CodeSystem-ehealth-usage-quality.html#ehealth-usage-quality-TBD">TBD</a> 
-                     </td> 
-                     <td>Example value - Under construction</td> 
-                     <td>Example value - Under construction</td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="CodeSystem-ehealth-usage-quality.html#ehealth-usage-quality-TBD2">TBD2</a> 
-                     </td> 
-                     <td>Example value2 - Under construction</td> 
-                     <td>Example value2 - Under construction</td> 
-                  </tr> 
-               </table> 
-            </li> 
-         </ul> 
-         <p> 
-            <b>Additional Language Displays</b> 
-         </p> 
-         <table class="codes"> 
-            <tr> 
-               <td> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>English (United States) (English (United States), en)</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td>TBD</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td>TBD2</td> 
-               <td>Example value2 - Under construction</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/usage-quality"/>
    <version value="0.6.0"/>
    <name value="UsageQuality"/>

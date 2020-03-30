@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="correspondance-letter-identifier"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>CorrespondanceLetterIdentifier</h2> 
-         <div> 
-            <p>Letter identifiers in correspondance messages are (alpha-numeric) serial numbers which are unique for the sending system. The sender must ensure that the same number is not used twice. Maximum length is 14 characters. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'BrevNr'</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <code>http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf</code> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/correspondance-letter-identifier"/>
    <version value="0.0.1"/>
    <name value="CorrespondanceLetterIdentifier"/>

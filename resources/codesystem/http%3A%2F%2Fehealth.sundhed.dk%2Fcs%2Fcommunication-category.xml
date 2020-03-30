@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-communication-category"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>communication Category</h2> 
-         <div> 
-            <p>Communication category</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/communication-category defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">annotation <a name="ehealth-communication-category-annotation"> </a> 
-               </td> 
-               <td>annotation</td> 
-               <td>Annotation</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">note <a name="ehealth-communication-category-note"> </a> 
-               </td> 
-               <td>note</td> 
-               <td>Note</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/communication-category"/>
    <version value="0.6.0"/>
    <name value="CommunicationCategory"/>

@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="dk-ihe-formatcode-vs"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>DK_IHE_FormatCode_VS</h2> 
-         <div> 
-            <p>Value set for document format code used in national Document sharing.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-dk-ihe-formatcode-cs.html"> 
-                  <code>urn:oid:1.2.208.184.100.10</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs"/>
    <version value="0.99"/>
    <name value="DK_IHE_FormatCode_VS"/>

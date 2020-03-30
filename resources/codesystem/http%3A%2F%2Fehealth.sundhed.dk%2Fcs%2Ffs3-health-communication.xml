@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-communication"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Kommunikation</h2> 
-         <div> 
-            <p>Fælles Sprog III, Kommunikation</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-communication defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">COMMUNICATION <a name="fs3-health-communication-COMMUNICATION"> </a> 
-               </td> 
-               <td>Problemer med kommunikation</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-communication"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Kommunikation"/>

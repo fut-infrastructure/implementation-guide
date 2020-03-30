@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-organization-specialty"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>OrganizationSpecialty</h2> 
-         <div> 
-            <p>Value set used for indicating the specialty for organizations.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Import all the codes that are contained in <a href="ValueSet-ehealth-sor-organization-specialty.html">http://ehealth.sundhed.dk/vs/sor-organization-specialty</a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/organization-specialty"/>
    <version value="0.0.1"/>
    <name value="OrganizationSpecialty"/>

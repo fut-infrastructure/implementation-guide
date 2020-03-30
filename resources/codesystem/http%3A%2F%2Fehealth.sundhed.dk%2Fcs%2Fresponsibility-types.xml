@@ -1,65 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="regional-responsibility-types"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ResponsibilityTypes</h2> 
-         <div> 
-            <p>Responsibility Types</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/responsibility-types defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-responsibility-types-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">monitoringResponsible <a name="ehealth-responsibility-types-monitoringResponsible"> </a> 
-               </td> 
-               <td>Monitoring Responsible</td> 
-               <td>Monitoring Responsible</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">monitoringDelegate <a name="ehealth-responsibility-types-monitoringDelegate"> </a> 
-               </td> 
-               <td>Monitoring Delegate</td> 
-               <td>Monitoring Delegate</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">supporter <a name="ehealth-responsibility-types-supporter"> </a> 
-               </td> 
-               <td>Supporter</td> 
-               <td>Supporter</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">orderPlacer <a name="ehealth-responsibility-types-orderPlacer"> </a> 
-               </td> 
-               <td>Responsible for placing orders for devices and services</td> 
-               <td>Placer of orders</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">trainer <a name="ehealth-responsibility-types-trainer"> </a> 
-               </td> 
-               <td>Responsible for training</td> 
-               <td>Trainer</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/responsibility-types"/>
    <version value="0.6.0"/>
    <name value="ResponsibilityTypes"/>

@@ -1,52 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="correspondance-type-code"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>CorrespondanceTypeCode</h2> 
-         <div> 
-            <p>TypeCode in correspondance messages must be filled in with a valid type as specified. Derived from http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf, see 'TypeCode'</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include these codes as defined in <code>http://svn.medcom.dk/svn/releases/Standarder/Den%20gode%20korrespondance/XML/Dokumentation/XDIS91.pdf</code> 
-               <table class="none"> 
-                  <tr> 
-                     <td style="white-space:nowrap"> 
-                        <b>Code</b> 
-                     </td> 
-                     <td> 
-                        <b>Display</b> 
-                     </td> 
-                  </tr> 
-                  <tr> 
-                     <td>XDIS91</td> 
-                     <td>The type for MedCom correspondance messages</td> 
-                     <td/> 
-                  </tr> 
-               </table> 
-            </li> 
-         </ul> 
-         <p> 
-            <b>Additional Language Displays</b> 
-         </p> 
-         <table class="codes"> 
-            <tr> 
-               <td> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Dansk (Danish, da)</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td>XDIS91</td> 
-               <td>Type for 'det gode' XML korrespondancebrev</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/correspondance-type-code"/>
    <version value="0.0.1"/>
    <name value="CorrespondanceTypeCode"/>

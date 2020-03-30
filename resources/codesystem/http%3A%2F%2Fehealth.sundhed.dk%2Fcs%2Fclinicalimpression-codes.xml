@@ -1,65 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-clinicalimpression-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ClinicalImpressionCodes</h2> 
-         <div> 
-            <p>Assessment types</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/clinicalimpression-codes defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-clinicalimpression-codes-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TriagingResult <a name="ehealth-clinicalimpression-codes-TriagingResult"> </a> 
-               </td> 
-               <td>Result of triaging</td> 
-               <td>Result of triaging</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MeasurementAssessment <a name="ehealth-clinicalimpression-codes-MeasurementAssessment"> </a> 
-               </td> 
-               <td>Assessment of measurement</td> 
-               <td>Assessment of measurement</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MeasurementTypeUnexpected <a name="ehealth-clinicalimpression-codes-MeasurementTypeUnexpected"> </a> 
-               </td> 
-               <td>Measurement of unexpected type</td> 
-               <td>Measurement of unexpected type</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MeasurementTimingUnexpected <a name="ehealth-clinicalimpression-codes-MeasurementTimingUnexpected"> </a> 
-               </td> 
-               <td>Measurement not expected</td> 
-               <td>Measurement not expected</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">ClinicalDecisionSupportResult <a name="ehealth-clinicalimpression-codes-ClinicalDecisionSupportResult"> </a> 
-               </td> 
-               <td>Generic result of CDS</td> 
-               <td>Generic result of CDS</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-codes"/>
    <version value="0.6.0"/>
    <name value="ClinicalImpressionCodes"/>

@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-device-calibration-period"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Device calibration period</h2> 
-         <div> 
-            <p>Device calibration period.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-ehealth-device-calibration-period.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/device-calibration-period</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/device-calibration-period"/>
    <version value="0.6.0"/>
    <name value="DeviceCalibrationPeriod"/>

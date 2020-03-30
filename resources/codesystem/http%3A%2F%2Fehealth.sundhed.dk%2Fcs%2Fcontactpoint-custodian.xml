@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-contactpoint-custodian"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ContactPointCustodian</h2> 
-         <div> 
-            <p>Contact Point Custodian</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/contactpoint-custodian defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-contactpoint-custodian-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">SOR <a name="ehealth-contactpoint-custodian-SOR"> </a> 
-               </td> 
-               <td>Contact point maintained in the SOR register</td> 
-               <td>Contact point maintained in the SOR register</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">ORG <a name="ehealth-contactpoint-custodian-ORG"> </a> 
-               </td> 
-               <td>Contact point maintained in KOMBIT STS Organisation</td> 
-               <td>Contact point maintained in KOMBIT STS Organisation</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MAN <a name="ehealth-contactpoint-custodian-MAN"> </a> 
-               </td> 
-               <td>Contact point maintained manually in eHealth Infrastructure</td> 
-               <td>Contact point maintained manually in eHealth Infrastructure</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/contactpoint-custodian"/>
    <version value="0.6.0"/>
    <name value="ContactPointCustodian"/>

@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-modifier-role"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ModifierRole</h2> 
-         <div> 
-            <p>Modifier Role</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/modifier-role defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">owner <a name="ehealth-modifier-role-owner"> </a> 
-               </td> 
-               <td>Owner</td> 
-               <td>Owner</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">co-author <a name="ehealth-modifier-role-co-author"> </a> 
-               </td> 
-               <td>Co-author</td> 
-               <td>Co-author</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/modifier-role"/>
    <version value="0.6.0"/>
    <name value="ModifierRole"/>

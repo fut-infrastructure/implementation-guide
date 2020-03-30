@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-task-category"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>TaskCategory</h2> 
-         <div> 
-            <p>Task Category</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/task-category defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-task-category-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MissingMeasurementResolving <a name="ehealth-task-category-MissingMeasurementResolving"> </a> 
-               </td> 
-               <td>Need resolving of why scheduled measurement has not been submitted</td> 
-               <td>Need resolving of why scheduled measurement has not been submitted</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">UnexpectedMeasurementResolving <a name="ehealth-task-category-UnexpectedMeasurementResolving"> </a> 
-               </td> 
-               <td>Need resolving of why unexpected measurement was submitted</td> 
-               <td>Need resolving of why unexpected measurement was submitted</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MeasurementForAssessment <a name="ehealth-task-category-MeasurementForAssessment"> </a> 
-               </td> 
-               <td>Need assessment of measurement</td> 
-               <td>Need assessment of measurement</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/task-category"/>
    <version value="0.6.0"/>
    <name value="TaskCategory"/>

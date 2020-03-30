@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="fs3-citizen-importance-scores"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, borgerens vurdering af betydning</h2> 
-         <div> 
-            <p>Fælles Sprog III, borgerens vurdering af betydning</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-citizen-importance-scores.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/fs3-citizen-importance-scores"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, borgerens vurdering af betydning"/>

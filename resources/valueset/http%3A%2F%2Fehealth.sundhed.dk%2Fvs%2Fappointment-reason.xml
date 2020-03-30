@@ -1,56 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-appointment-reason"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>AppointmentReason</h2> 
-         <div> 
-            <p>Appointment reason</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include these codes as defined in <a href="CodeSystem-ehealth-appointment-reason.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/appointment-reason</code> 
-               </a> 
-               <table class="none"> 
-                  <tr> 
-                     <td style="white-space:nowrap"> 
-                        <b>Code</b> 
-                     </td> 
-                     <td> 
-                        <b>Display</b> 
-                     </td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="CodeSystem-ehealth-appointment-reason.html#ehealth-appointment-reason-412776001">412776001</a> 
-                     </td> 
-                     <td>Clinical review</td> 
-                     <td>Clinical review</td> 
-                  </tr> 
-               </table> 
-            </li> 
-         </ul> 
-         <p> 
-            <b>Additional Language Displays</b> 
-         </p> 
-         <table class="codes"> 
-            <tr> 
-               <td> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>English (United States) (English (United States), en)</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td>412776001</td> 
-               <td>Clinical review</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/appointment-reason"/>
    <version value="0.6.0"/>
    <name value="AppointmentReason"/>

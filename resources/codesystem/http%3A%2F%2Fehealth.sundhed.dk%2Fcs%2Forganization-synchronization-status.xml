@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-organization-synchronization-status"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>OrganizationSynchronizationStatus</h2> 
-         <div> 
-            <p>Organization synchronization status type</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/organization-synchronization-status defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">NotSynchronized <a name="ehealth-organization-synchronization-status-NotSynchronized"> </a> 
-               </td> 
-               <td>Not synchronized</td> 
-               <td>Not synchronized</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">EligibleForSynchronization <a name="ehealth-organization-synchronization-status-EligibleForSynchronization"> </a> 
-               </td> 
-               <td>Eligible for synchronization</td> 
-               <td>Eligible for automatic synchronization with the source</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">NoLongerSynchronized <a name="ehealth-organization-synchronization-status-NoLongerSynchronized"> </a> 
-               </td> 
-               <td>No longer synchronized</td> 
-               <td>No longer eligible for automatic synchronization with the source</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/organization-synchronization-status"/>
    <version value="0.0.1"/>
    <name value="OrganizationSynchronizationStatus"/>

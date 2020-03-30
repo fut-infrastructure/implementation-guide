@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-format-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>FormatCodes</h2> 
-         <div> 
-            <p>Format Codes value set.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Import all the codes that are contained in <a href="ValueSet-dk-ihe-formatcode-vs.html">http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs</a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/format-codes"/>
    <version value="0.6.0"/>
    <name value="FormatCodes"/>

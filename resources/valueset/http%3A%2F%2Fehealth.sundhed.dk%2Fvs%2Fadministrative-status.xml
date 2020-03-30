@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="administrative-status"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Administrative status</h2> 
-         <div> 
-            <p>Administrative status</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-ehealth-administrative-status.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/administrative-status</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/administrative-status"/>
    <version value="0.0.1"/>
    <name value="AdministrativeStatus"/>

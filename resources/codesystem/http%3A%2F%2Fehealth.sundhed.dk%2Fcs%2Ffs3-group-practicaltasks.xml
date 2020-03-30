@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-group-practicaltasks"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Praktiske opgaver</h2> 
-         <div> 
-            <p>Fælles Sprog III, Praktiske opgaver</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">PERFORM_DAILY_ROUTINES <a name="fs3-group-practicaltasks-PERFORM_DAILY_ROUTINES"> </a> 
-               </td> 
-               <td>Udføre daglige rutiner</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">OBTAIN_GOODS_AND_SERVICES <a name="fs3-group-practicaltasks-OBTAIN_GOODS_AND_SERVICES"> </a> 
-               </td> 
-               <td>Skaffe sig varer og tjenesteydelser</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">COOKING <a name="fs3-group-practicaltasks-COOKING"> </a> 
-               </td> 
-               <td>Lave mad</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">DOING_DOMESTIC_WORK <a name="fs3-group-practicaltasks-DOING_DOMESTIC_WORK"> </a> 
-               </td> 
-               <td>Lave husligt arbejde</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Praktiske opgaver"/>

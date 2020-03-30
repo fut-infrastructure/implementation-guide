@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="fs3-categories"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, kategorier</h2> 
-         <div> 
-            <p>Fælles Sprog III, kategorier</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-group-communitylife.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-group-communitylife</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-group-mentalfunctions.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-group-mobility.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-group-mobility</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-group-practicaltasks.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks</code> 
-               </a> 
-            </li> 
-            <li>Include all codes defined in <a href="CodeSystem-fs3-group-selfcare.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/fs3-group-selfcare</code> 
-               </a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/fs3-categories"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, kategorier"/>

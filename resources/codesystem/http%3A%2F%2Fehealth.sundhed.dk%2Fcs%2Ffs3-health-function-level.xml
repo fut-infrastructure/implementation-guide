@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-function-level"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Funktionsniveau</h2> 
-         <div> 
-            <p>Fælles Sprog III, Funktionsniveau</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-function-level defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">PERSONAL_CARE <a name="fs3-health-function-level-PERSONAL_CARE"> </a> 
-               </td> 
-               <td>Problemer med personlig pleje</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">DAILY_ACTIVITIES <a name="fs3-health-function-level-DAILY_ACTIVITIES"> </a> 
-               </td> 
-               <td>Problemer med daglige aktiviteter</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-function-level"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Funktionsniveau"/>

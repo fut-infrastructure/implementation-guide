@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-citizen-performance-scores"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, borgerens vurdering af udførelse</h2> 
-         <div> 
-            <p>Fælles Sprog III, borgerens vurdering af udførelse</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-citizen-performance-scores defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">PERFORMS_INDEPENDENTLY <a name="fs3-citizen-performance-scores-PERFORMS_INDEPENDENTLY"> </a> 
-               </td> 
-               <td>Udfører selv</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">PERFORMS_PARTLY <a name="fs3-citizen-performance-scores-PERFORMS_PARTLY"> </a> 
-               </td> 
-               <td>Udfører dele af aktiviteten</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">DOES_NOT_PERFORM <a name="fs3-citizen-performance-scores-DOES_NOT_PERFORM"> </a> 
-               </td> 
-               <td>Udfører ikke selv aktiviteten</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">IRRELEVANT <a name="fs3-citizen-performance-scores-IRRELEVANT"> </a> 
-               </td> 
-               <td>Ikke relevant</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-citizen-performance-scores"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, borgerens vurdering af udførelse"/>

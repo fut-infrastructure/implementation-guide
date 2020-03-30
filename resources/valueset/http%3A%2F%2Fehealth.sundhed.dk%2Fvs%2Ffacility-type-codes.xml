@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-facility-type-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>FacilityTypeCodes</h2> 
-         <div> 
-            <p>Allowed value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Import all the codes that are contained in <a href="ValueSet-ehealth-sor-organization-type.html">http://ehealth.sundhed.dk/vs/sor-organization-type</a> 
-            </li> 
-         </ul> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/facility-type-codes"/>
    <version value="0.6.0"/>
    <name value="FacilityTypeCodes"/>

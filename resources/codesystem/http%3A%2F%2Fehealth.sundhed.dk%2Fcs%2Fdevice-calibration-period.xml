@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-device-calibration-period"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Device calibration period</h2> 
-         <div> 
-            <p>Device calibration period.</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/device-calibration-period defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">7D <a name="ehealth-device-calibration-period-7D"> </a> 
-               </td> 
-               <td>7 days</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">30D <a name="ehealth-device-calibration-period-30D"> </a> 
-               </td> 
-               <td>30 days</td> 
-               <td>30 days</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">1Y <a name="ehealth-device-calibration-period-1Y"> </a> 
-               </td> 
-               <td>1 year</td> 
-               <td>1 year</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/device-calibration-period"/>
    <version value="0.6.0"/>
    <name value="DeviceCalibrationPeriod"/>

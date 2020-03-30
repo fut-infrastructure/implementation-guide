@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-quality-types"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>QualityTypes</h2> 
-         <div> 
-            <p>Quality Types</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/quality-types defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-quality-types-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD2 <a name="ehealth-quality-types-TBD2"> </a> 
-               </td> 
-               <td>Example value2 - Under construction</td> 
-               <td>Example value2 - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">SQ <a name="ehealth-quality-types-SQ"> </a> 
-               </td> 
-               <td>Situation Quality</td> 
-               <td>Situation Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/situation-quality value set.</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">DMQ <a name="ehealth-quality-types-DMQ"> </a> 
-               </td> 
-               <td>Device Measuring Quality</td> 
-               <td>Device Measuring Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/device-measuring-quality value set.</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">UQ <a name="ehealth-quality-types-UQ"> </a> 
-               </td> 
-               <td>Usage Quality</td> 
-               <td>Usage Quality. For this quality type, the quality code should be a code taken from the http://ehealth.sundhed.dk/vs/usage-quality value set.</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/quality-types"/>
    <version value="0.6.0"/>
    <name value="QualityTypes"/>

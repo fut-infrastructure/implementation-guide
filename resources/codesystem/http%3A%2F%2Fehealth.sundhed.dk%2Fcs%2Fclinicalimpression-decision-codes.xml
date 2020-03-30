@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-clinicalimpression-decision-codes"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ClinicalImpressionDecisionCodes</h2> 
-         <div> 
-            <p>Clinical Impression Decision Codes</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">approved <a name="ehealth-clinicalimpression-decision-codes-approved"> </a> 
-               </td> 
-               <td>Approved</td> 
-               <td>Approved</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">approved-for-sharing <a name="ehealth-clinicalimpression-decision-codes-approved-for-sharing"> </a> 
-               </td> 
-               <td>Approved for sharing</td> 
-               <td>Approved for sharing</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes"/>
    <version value="0.6.0"/>
    <name value="ClinicalImpressionDecisionCodes"/>

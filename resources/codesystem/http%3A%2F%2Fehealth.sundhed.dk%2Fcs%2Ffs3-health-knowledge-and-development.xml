@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-knowledge-and-development"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Viden og udvikling</h2> 
-         <div> 
-            <p>Fælles Sprog III, Viden og udvikling</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">MEMORY <a name="fs3-health-knowledge-and-development-MEMORY"> </a> 
-               </td> 
-               <td>Problemer med hukommelse</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">INSIGHT_DISEASE <a name="fs3-health-knowledge-and-development-INSIGHT_DISEASE"> </a> 
-               </td> 
-               <td>Problemer med sygdomsindsigt</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">INSIGHT_TREATMENT_PURPOSE <a name="fs3-health-knowledge-and-development-INSIGHT_TREATMENT_PURPOSE"> </a> 
-               </td> 
-               <td>Problemer med indsigt i behandlingsformål</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">COGNITIVE <a name="fs3-health-knowledge-and-development-COGNITIVE"> </a> 
-               </td> 
-               <td>Kognitive problemer</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Viden og udvikling"/>

@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-sleep-and-rest"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Søvn og hvile</h2> 
-         <div> 
-            <p>Fælles Sprog III, Søvn og hvile</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">CIRCADIAN_RHYTHM <a name="fs3-health-sleep-and-rest-CIRCADIAN_RHYTHM"> </a> 
-               </td> 
-               <td>Døgnrytmeproblemer</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">SLEEP <a name="fs3-health-sleep-and-rest-SLEEP"> </a> 
-               </td> 
-               <td>Søvnproblemer</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Søvn og hvile"/>

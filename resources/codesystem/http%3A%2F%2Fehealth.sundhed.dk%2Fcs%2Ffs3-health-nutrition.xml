@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="fs3-health-nutrition"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>Fælles Sprog III, Ernæring</h2> 
-         <div> 
-            <p>Fælles Sprog III, Ernæring</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/fs3-health-nutrition defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">FLUID_INTAKE <a name="fs3-health-nutrition-FLUID_INTAKE"> </a> 
-               </td> 
-               <td>Problemer med væskeindtag</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">FOOD_INTAKE <a name="fs3-health-nutrition-FOOD_INTAKE"> </a> 
-               </td> 
-               <td>Problemer med fødeindtag</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">WEIGHT_CHANGE <a name="fs3-health-nutrition-WEIGHT_CHANGE"> </a> 
-               </td> 
-               <td>Uhensigtsmæssig vægtændring</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">OVERWEIGHT <a name="fs3-health-nutrition-OVERWEIGHT"> </a> 
-               </td> 
-               <td>Problemer med overvægt</td> 
-               <td/> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">UNDERWEIGHT <a name="fs3-health-nutrition-UNDERWEIGHT"> </a> 
-               </td> 
-               <td>Problemer med undervægt</td> 
-               <td/> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/fs3-health-nutrition"/>
    <version value="0.0.1"/>
    <name value="Fælles Sprog III, Ernæring"/>

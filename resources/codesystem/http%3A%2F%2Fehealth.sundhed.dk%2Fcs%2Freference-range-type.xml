@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-reference-range-type"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ReferenceRangeType</h2> 
-         <div> 
-            <p>Reference Range Type</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/reference-range-type defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-reference-range-type-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD2 <a name="ehealth-reference-range-type-TBD2"> </a> 
-               </td> 
-               <td>Example value2 - Under construction</td> 
-               <td>Example value2 - Under construction</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/reference-range-type"/>
    <version value="0.6.0"/>
    <name value="ReferenceRangeType"/>

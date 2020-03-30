@@ -1,67 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-devicemetric-property-types"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>DeviceMetricPropertyTypes</h2> 
-         <div> 
-            <p>Device Metric Property Types value set.</p> 
-         </div> 
-         <p>This value set includes codes from the following code systems:</p> 
-         <ul> 
-            <li>Include these codes as defined in <a href="CodeSystem-ehealth-devicemetric-property-types.html"> 
-                  <code>http://ehealth.sundhed.dk/cs/devicemetric-property-types</code> 
-               </a> 
-               <table class="none"> 
-                  <tr> 
-                     <td style="white-space:nowrap"> 
-                        <b>Code</b> 
-                     </td> 
-                     <td> 
-                        <b>Display</b> 
-                     </td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="CodeSystem-ehealth-devicemetric-property-types.html#ehealth-devicemetric-property-types-TBD">TBD</a> 
-                     </td> 
-                     <td>Example value - Under construction</td> 
-                     <td>Example value - Under construction</td> 
-                  </tr> 
-                  <tr> 
-                     <td> 
-                        <a href="CodeSystem-ehealth-devicemetric-property-types.html#ehealth-devicemetric-property-types-buttonSize">buttonSize</a> 
-                     </td> 
-                     <td>Size of button on device</td> 
-                     <td>Size of button on device</td> 
-                  </tr> 
-               </table> 
-            </li> 
-         </ul> 
-         <p> 
-            <b>Additional Language Displays</b> 
-         </p> 
-         <table class="codes"> 
-            <tr> 
-               <td> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>English (United States) (English (United States), en)</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td>TBD</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td>buttonSize</td> 
-               <td>Size of button on device</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/vs/devicemetric-property-types"/>
    <version value="0.6.0"/>
    <name value="DeviceMetricPropertyTypes"/>

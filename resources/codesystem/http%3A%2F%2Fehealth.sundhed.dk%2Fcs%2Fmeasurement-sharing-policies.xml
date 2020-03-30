@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-measurement-sharing-policies"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>MeasurementSharingPolicies</h2> 
-         <div> 
-            <p>Measurement sharing policies</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/measurement-sharing-policies defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-measurement-sharing-policies-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">sharingAllowedDestinationNationalHealthData <a name="ehealth-measurement-sharing-policies-sharingAllowedDestinationNationalHealthData"> </a> 
-               </td> 
-               <td>Sharing is allowed destination national health data</td> 
-               <td>Sharing is allowed destination national health data</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">sharingAllowedDestinationMunicipalData <a name="ehealth-measurement-sharing-policies-sharingAllowedDestinationMunicipalData"> </a> 
-               </td> 
-               <td>Sharing is allowed destination municipal data</td> 
-               <td>Sharing is allowed destination municipal data</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">noSharing <a name="ehealth-measurement-sharing-policies-noSharing"> </a> 
-               </td> 
-               <td>No sharing</td> 
-               <td>No sharing</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/measurement-sharing-policies"/>
    <version value="0.6.0"/>
    <name value="MeasurementSharingPolicies"/>

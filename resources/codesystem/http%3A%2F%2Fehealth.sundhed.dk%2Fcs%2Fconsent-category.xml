@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-consent-category"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>ConsentCategory</h2> 
-         <div> 
-            <p>Consent codes</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/consent-category defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">TBD <a name="ehealth-consent-category-TBD"> </a> 
-               </td> 
-               <td>Example value - Under construction</td> 
-               <td>Example value - Under construction</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">PITEOC <a name="ehealth-consent-category-PITEOC"> </a> 
-               </td> 
-               <td>Participate in Telemedical EpisodeOfCare</td> 
-               <td>Participate in Telemedical EpisodeOfCare</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">SSLPCI <a name="ehealth-consent-category-SSLPCI"> </a> 
-               </td> 
-               <td>Forward patient contact information to SSL provider</td> 
-               <td>Forward patient contact information to SSL provider</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/consent-category"/>
    <version value="0.6.0"/>
    <name value="ConsentCategory"/>

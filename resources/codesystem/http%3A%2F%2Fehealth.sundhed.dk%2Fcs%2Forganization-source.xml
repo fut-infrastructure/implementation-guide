@@ -1,47 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-organization-source"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <h2>OrganizationSource</h2> 
-         <div> 
-            <p>Organization source type</p> 
-         </div> 
-         <p>This code system http://ehealth.sundhed.dk/cs/organization-source defines the following codes:</p> 
-         <table class="codes"> 
-            <tr> 
-               <td style="white-space:nowrap"> 
-                  <b>Code</b> 
-               </td> 
-               <td> 
-                  <b>Display</b> 
-               </td> 
-               <td> 
-                  <b>Definition</b> 
-               </td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">manual <a name="ehealth-organization-source-manual"> </a> 
-               </td> 
-               <td>Manual</td> 
-               <td>Manual</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">SOR <a name="ehealth-organization-source-SOR"> </a> 
-               </td> 
-               <td>Sundhedsvæsenets Organisationsregister</td> 
-               <td>Sundhedsvæsenets Organisationsregister</td> 
-            </tr> 
-            <tr> 
-               <td style="white-space:nowrap">STS-ORG <a name="ehealth-organization-source-STS-ORG"> </a> 
-               </td> 
-               <td>KOMBIT Støttesystem (STS) Organisation</td> 
-               <td>KOMBIT Støttesystem (STS) Organisation</td> 
-            </tr> 
-         </table> 
-      </div>
-   </text>
    <url value="http://ehealth.sundhed.dk/cs/organization-source"/>
    <version value="0.0.1"/>
    <name value="OrganizationSource"/>
