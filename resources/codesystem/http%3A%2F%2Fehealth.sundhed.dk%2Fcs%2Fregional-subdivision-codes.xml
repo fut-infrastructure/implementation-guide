@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="regional-subdivision-codes"/>
-   <url value="https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
+   <url value="http://ehealth.sundhed.dk/cs/regional-subdivision-codes"/>
    <version value="0.0.1"/>
    <name value="Regional subdivision codes"/>
    <title value="Regional subdivision codes"/>
-   <status value="active"/>
+   <status value="retired"/>
    <experimental value="true"/>
    <date value="2019-02-02"/>
    <publisher value="ehealth.sundhed.dk"/>
