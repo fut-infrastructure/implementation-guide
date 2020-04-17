@@ -3,6 +3,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient" />
   <name value="skrsPatient" />
   <status value="draft" />
+  <description value="This profile is for internal use by the infrastructure." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
