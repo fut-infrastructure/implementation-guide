@@ -22,8 +22,8 @@
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
    <concept>
@@ -31,8 +31,8 @@
       <display value="Monitoring Responsible"/>
       <definition value="Monitoring Responsible"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
    <concept>
@@ -40,8 +40,8 @@
       <display value="Monitoring Delegate"/>
       <definition value="Monitoring Delegate"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
    <concept>
@@ -49,8 +49,8 @@
       <display value="Supporter"/>
       <definition value="Supporter"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
    <concept>
@@ -58,8 +58,8 @@
       <display value="Responsible for placing orders for devices and services"/>
       <definition value="Placer of orders"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
    <concept>
@@ -67,8 +67,8 @@
       <display value="Responsible for training"/>
       <definition value="Trainer"/>
       <property>
-          <code value="deprecated"/>
-          <valueDateTime value="2020-02-03"/>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
       </property>
    </concept>
 </CodeSystem>

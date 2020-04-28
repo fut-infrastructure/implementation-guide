@@ -22,36 +22,36 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
    <concept>
       <code value="Triage"/>
       <display value="Triage"/>
       <definition value="Triage"/>
-        <designation>
-            <language value="da"/>
-            <value value="Triagering"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Triagering"/>
+      </designation>
    </concept>
    <concept>
       <code value="Quality"/>
       <display value="Quality"/>
       <definition value="Quality"/>
-        <designation>
-            <language value="da"/>
-            <value value="Kvalitetsudstryk"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Kvalitetsudstryk"/>
+      </designation>
    </concept>
    <concept>
       <code value="Generic"/>
       <display value="Generic"/>
       <definition value="Generic"/>
-        <designation>
-            <language value="da"/>
-            <value value="Generel"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Generel"/>
+      </designation>
    </concept>
 </CodeSystem>

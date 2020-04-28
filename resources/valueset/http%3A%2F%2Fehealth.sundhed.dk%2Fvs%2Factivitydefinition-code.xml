@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-activitydefinition-code"/>
    <url value="http://ehealth.sundhed.dk/vs/activitydefinition-code"/>
-   <version value="2020-03-13T12:05:32"/>
+   <version value="2020-04-08T08:25:02"/>
    <name value="ActivityDefinitionCode"/>
    <title value="Activity Definition Code"/>
    <status value="active"/>
@@ -37,6 +37,14 @@
          <concept>
             <code value="229057006"/>
             <display value="Meetings (procedure)"/>
+         </concept>
+         <concept>
+            <code value="273586006"/>
+            <display value="Master questionnaire"/>
+         </concept>
+         <concept>
+            <code value="409073007"/>
+            <display value="Instruction"/>
          </concept>
       </include>
       <include>

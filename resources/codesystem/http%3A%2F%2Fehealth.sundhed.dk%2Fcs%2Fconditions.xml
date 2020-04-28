@@ -22,18 +22,18 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
    <concept>
       <code value="TBD2"/>
       <display value="Example value 2 - Under construction"/>
       <definition value="Example value 2 - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
 </CodeSystem>

@@ -23,8 +23,8 @@
       <display value="7 days"/>
       <definition value="7 days"/>
       <designation>
-          <language value="da"/>
-          <value value="7 dage"/>
+         <language value="da"/>
+         <value value="7 dage"/>
       </designation>
    </concept>
    <concept>
@@ -32,8 +32,8 @@
       <display value="30 days"/>
       <definition value="30 days"/>
       <designation>
-          <language value="da"/>
-          <value value="30 dage"/>
+         <language value="da"/>
+         <value value="30 dage"/>
       </designation>
    </concept>
    <concept>
@@ -41,8 +41,8 @@
       <display value="1 year"/>
       <definition value="1 year"/>
       <designation>
-          <language value="da"/>
-          <value value="1 år"/>
+         <language value="da"/>
+         <value value="1 år"/>
       </designation>
    </concept>
 </CodeSystem>

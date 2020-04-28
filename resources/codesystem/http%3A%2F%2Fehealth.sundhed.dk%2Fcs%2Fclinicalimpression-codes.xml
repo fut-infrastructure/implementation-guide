@@ -22,28 +22,28 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
    <concept>
       <code value="TriagingResult"/>
       <display value="Result of triaging"/>
       <definition value="Result of triaging"/>
-        <designation>
-            <language value="da"/>
-            <value value="Triageringsresultat"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Triageringsresultat"/>
+      </designation>
    </concept>
    <concept>
       <code value="MeasurementAssessment"/>
       <display value="Assessment of measurement"/>
       <definition value="Assessment of measurement"/>
-        <designation>
-            <language value="da"/>
-            <value value="Vurdering af måling"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Vurdering af måling"/>
+      </designation>
     </concept>
     <concept>
         <code value="MeasurementTypeUnexpected"/>

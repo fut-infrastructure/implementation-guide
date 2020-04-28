@@ -2,10 +2,6 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="medcom-message-codes"/>
    <url value="http://www.example.com/medcom/message-codes"/>
-   <identifier>
-      <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:oid:1.2.208.184.100.1"/>
-   </identifier>
    <version value="1.0.0"/>
    <name value="MedCom Message Codes"/>
    <status value="retired"/>

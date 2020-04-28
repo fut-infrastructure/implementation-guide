@@ -1,112 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="ehealth-usage-quality"/>
-    <url value="http://ehealth.sundhed.dk/cs/usage-quality"/>
-    <version value="0.6.0"/>
-    <name value="UsageQuality"/>
-    <title value="Usage Quality"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <date value="2019-01-29T00:00:00+00:00"/>
-    <publisher value="ehealth.sundhed.dk"/>
-    <contact>
-        <telecom>
-            <system value="url"/>
-            <value value="http://ehealth.sundhed.dk/terminology"/>
-        </telecom>
-    </contact>
-    <description value="Quality codes for usage or operating of measuring device"/>
-    <caseSensitive value="true"/>
-    <content value="complete"/>
-    <concept>
-        <code value="none"/>
-        <display value="No quality needed"/>
-        <definition value="Quality value where no derivation rule logic nor values are expected"/>
-        <designation>
+   <id value="ehealth-usage-quality"/>
+   <url value="http://ehealth.sundhed.dk/cs/usage-quality"/>
+   <version value="0.6.0"/>
+   <name value="UsageQuality"/>
+   <title value="Usage Quality"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Quality codes for usage or operating of measuring device"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="none"/>
+      <display value="No quality needed"/>
+      <definition value="Quality value where no derivation rule logic nor values are expected"/>
+      <designation>
+         <language value="da"/>
+         <value value="Ingen betjeningskvalitet krævet/ventet"/>
+      </designation>
+      <concept>
+         <code value="unknown"/>
+         <display value="Unknown quality"/>
+         <definition value="Unknown quality (Unlikely to be adequate if a quality value is expected)"/>
+         <designation>
             <language value="da"/>
-            <value value="Ingen betjeningskvalitet krævet/ventet"/>
-        </designation>
-        <concept>
-            <code value="unknown"/>
-            <display value="Unknown quality"/>
-            <definition value="Unknown quality (Unlikely to be adequate if a quality value is expected)"/>
+            <value value="Ukendt betjeningskvalitet"/>
+         </designation>
+         <concept>
+            <code value="derivation-error"/>
+            <display value="Error in deriving or determining the quality"/>
+            <definition value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error"/>
             <designation>
-                <language value="da"/>
-                <value value="Ukendt betjeningskvalitet"/>
+               <language value="da"/>
+               <value value="Betjeningskvaliteten kunne ikke bestemmes grundet manglende input, utilgængelig logik, eller anden fejl."/>
             </designation>
             <concept>
-                <code value="derivation-error"/>
-                <display value="Error in deriving or determining the quality"/>
-                <definition
-                        value="Quality value could not be derived due to insufficient input, unknown/unavailable logic, or other error"/>
-                <designation>
-                    <language value="da"/>
-                    <value value="Betjeningskvaliteten kunne ikke bestemmes grundet manglende input, utilgængelig logik, eller anden fejl."/>
-                </designation>
-                <concept>
-                    <code value="normal"/>
-                    <display value="Normal/neutral usage quality"/>
-                    <definition value="Normal/neutral usage quality"/>
-                    <designation>
-                        <language value="da"/>
-                        <value value="Normal eller neutral betjeningskvalitet"/>
-                    </designation>
-                    <concept>
-                        <code value="instructions-followed"/>
-                        <display value="Performed in accordance with instructions"/>
-                        <definition value="Performed in accordance with instructions"/>
-                        <designation>
-                            <language value="da"/>
-                            <value value="Brugsvejledning fulgt"/>
-                        </designation>
-                    </concept>
-                    <concept>
-                        <code value="instructions-not-followed"/>
-                        <display value="Performed without following instructions"/>
-                        <definition value="Performed without following instructions"/>
-                        <designation>
-                            <language value="da"/>
-                            <value value="Brugsvejledning ej fulgt"/>
-                        </designation>
-                    </concept>
-                    <concept>
-                        <code value="entered-manually"/>
-                        <display value="Manually entered measurement"/>
-                        <definition value="Manually entered measurement"/>
-                        <designation>
-                            <language value="da"/>
-                            <value value="Manuelt indtastet måling"/>
-                        </designation>
-                    </concept>
-                    <concept>
-                        <code value="automatically-transferred"/>
-                        <display value="Automatically transferred measurement"/>
-                        <definition value="Automatically transferred measurement"/>
-                        <designation>
-                            <language value="da"/>
-                            <value value="Automatisk overført måling"/>
-                        </designation>
-                    </concept>
-                </concept>
+               <code value="normal"/>
+               <display value="Normal/neutral usage quality"/>
+               <definition value="Normal/neutral usage quality"/>
+               <designation>
+                  <language value="da"/>
+                  <value value="Normal eller neutral betjeningskvalitet"/>
+               </designation>
+               <concept>
+                  <code value="instructions-followed"/>
+                  <display value="Performed in accordance with instructions"/>
+                  <definition value="Performed in accordance with instructions"/>
+                  <designation>
+                     <language value="da"/>
+                     <value value="Brugsvejledning fulgt"/>
+                  </designation>
+               </concept>
+               <concept>
+                  <code value="instructions-not-followed"/>
+                  <display value="Performed without following instructions"/>
+                  <definition value="Performed without following instructions"/>
+                  <designation>
+                     <language value="da"/>
+                     <value value="Brugsvejledning ej fulgt"/>
+                  </designation>
+               </concept>
+               <concept>
+                  <code value="entered-manually"/>
+                  <display value="Manually entered measurement"/>
+                  <definition value="Manually entered measurement"/>
+                  <designation>
+                     <language value="da"/>
+                     <value value="Manuelt indtastet måling"/>
+                  </designation>
+               </concept>
+               <concept>
+                  <code value="automatically-transferred"/>
+                  <display value="Automatically transferred measurement"/>
+                  <definition value="Automatically transferred measurement"/>
+                  <designation>
+                     <language value="da"/>
+                     <value value="Automatisk overført måling"/>
+                  </designation>
+               </concept>
             </concept>
-        </concept>
-    </concept>
-    <concept>
-        <code value="TBD"/>
-        <display value="Example value - Under construction"/>
-        <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
-    </concept>
-    <concept>
-        <code value="TBD2"/>
-        <display value="Example value2 - Under construction"/>
-        <definition value="Example value2 - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
-    </concept>
+         </concept>
+      </concept>
+   </concept>
+   <concept>
+      <code value="TBD"/>
+      <display value="Example value - Under construction"/>
+      <definition value="Example value - Under construction"/>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="TBD2"/>
+      <display value="Example value2 - Under construction"/>
+      <definition value="Example value2 - Under construction"/>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
+   </concept>
 </CodeSystem>

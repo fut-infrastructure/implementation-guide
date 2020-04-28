@@ -28,17 +28,17 @@
          <system value="http://www.example.com/medcom/message-codes"/>
       </include>
       <include>
-      <system value="urn:oid:1.2.208.184.100.1"/>
-      <concept>
-        <code value="RAL"/>
-        <display value="Terapeutiske grænseværdier for RØD alarm"/>
-      </concept>
-      <concept>
-        <code value="GAL"/>
-        <display value="Terapeutiske grænseværdier for GUL alarm"/>
-      </concept>
-    </include>
-    <include>
+         <system value="urn:oid:1.2.208.184.100.1"/>
+         <concept>
+            <code value="RAL"/>
+            <display value="Terapeutiske grænseværdier for RØD alarm"/>
+         </concept>
+         <concept>
+            <code value="GAL"/>
+            <display value="Terapeutiske grænseværdier for GUL alarm"/>
+         </concept>
+      </include>
+      <include>
          <system value="http://ehealth.sundhed.dk/cs/reference-range-type"/>
       </include>
    </compose>

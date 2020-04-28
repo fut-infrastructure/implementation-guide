@@ -21,18 +21,18 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
    <concept>
       <code value="59181002"/>
       <display value="Oxygen analyser"/>
       <definition value="Oxygen analyser"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
 </CodeSystem>

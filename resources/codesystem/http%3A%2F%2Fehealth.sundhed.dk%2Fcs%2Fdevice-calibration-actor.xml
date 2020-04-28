@@ -22,27 +22,27 @@
       <code value="PATIENT"/>
       <display value="Calibrated by patient"/>
       <definition value="Calibrated by patient"/>
-        <designation>
-            <language value="da"/>
-            <value value="Kalibreret af patient/borger"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Kalibreret af patient/borger"/>
+      </designation>
    </concept>
    <concept>
       <code value="SSLPATIENT"/>
       <display value="Calibrated by SSL provider at patient residence"/>
       <definition value="Calibrated by SSL provider at patient residence"/>
-        <designation>
-            <language value="da"/>
-            <value value="Kalibreret af Service, Support og Logistik-leverandør hos patient/borger"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Kalibreret af Service, Support og Logistik-leverandør hos patient/borger"/>
+      </designation>
    </concept>
    <concept>
       <code value="SSL"/>
       <display value="Calibrated by SSL at SSL supplier"/>
       <definition value="Calibrated by SSL at SSL supplier"/>
-        <designation>
-            <language value="da"/>
-            <value value="Kalibreret af Service, Support og Logistik-leverandør hos leverandøren"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Kalibreret af Service, Support og Logistik-leverandør hos leverandøren"/>
+      </designation>
    </concept>
 </CodeSystem>

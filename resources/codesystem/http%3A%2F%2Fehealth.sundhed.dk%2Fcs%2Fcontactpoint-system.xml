@@ -22,10 +22,10 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
    <concept>
       <code value="EAN"/>
@@ -34,9 +34,9 @@
          <language value="en-US"/>
          <value value="Global location number"/>
       </designation>
-        <designation>
-            <language value="da"/>
-            <value value="EAN-nummer"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="EAN-nummer"/>
+      </designation>
    </concept>
 </CodeSystem>

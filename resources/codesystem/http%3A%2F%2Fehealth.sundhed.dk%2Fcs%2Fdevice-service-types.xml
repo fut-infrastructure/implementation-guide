@@ -22,81 +22,81 @@
       <code value="TRAINING"/>
       <display value="Training patient in use of device"/>
       <definition value="Training patient in use of device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Oplæring af patient/borger i brug af udstyr"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Oplæring af patient/borger i brug af udstyr"/>
+      </designation>
    </concept>
    <concept>
       <code value="RE-TRAINING"/>
       <display value="Re-training a patient previously trained in using a device"/>
       <definition value="Re-training a patient previously trained in using a device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Oplæring af patient/borger tidligere oplært i brug af udstyr"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Oplæring af patient/borger tidligere oplært i brug af udstyr"/>
+      </designation>
    </concept>
    <concept>
       <code value="CALIBRATION"/>
       <display value="Calibration of device"/>
       <definition value="Calibration of device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Kalibrering af udstyr"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Kalibrering af udstyr"/>
+      </designation>
    </concept>
    <concept>
       <code value="REPAIR"/>
       <display value="Off-site repair of device"/>
       <definition value="Off-site repair of device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Hjemtagelse af udstyr til reparation"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Hjemtagelse af udstyr til reparation"/>
+      </designation>
    </concept>
    <concept>
       <code value="MAINTENANCE"/>
       <display value="On-site maintenance or repair of device"/>
       <definition value="On-site maintenance or repair of device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Reparation af udstyr på stedet"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Reparation af udstyr på stedet"/>
+      </designation>
    </concept>
    <concept>
       <code value="REPLACE"/>
       <display value="Replacement of device"/>
       <definition value="Replacement of device"/>
-        <designation>
-            <language value="da"/>
-            <value value="Udskiftning af udstyr"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Udskiftning af udstyr"/>
+      </designation>
    </concept>
    <concept>
       <code value="PICKUP"/>
       <display value="Pickup and return device after use"/>
       <definition value="Pickup and return device after use"/>
-        <designation>
-            <language value="da"/>
-            <value value="Afhentning af udstyr efter brug"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Afhentning af udstyr efter brug"/>
+      </designation>
    </concept>
    <concept>
       <code value="DELIVER"/>
       <display value="Deliver device to patient"/>
       <definition value="Deliver device to patient"/>
-        <designation>
-            <language value="da"/>
-            <value value="Levering til patient/borger"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Levering til patient/borger"/>
+      </designation>
    </concept>
    <concept>
       <code value="INSTALL"/>
       <display value="Install and configure device on-site with patient"/>
       <definition value="Install and configure device on-site with patient"/>
-        <designation>
-            <language value="da"/>
-            <value value="Installation og opsætning hos patient/borger"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Installation og opsætning hos patient/borger"/>
+      </designation>
    </concept>
 </CodeSystem>

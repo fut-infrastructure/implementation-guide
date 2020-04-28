@@ -4,7 +4,7 @@
    <url value="http://ehealth.sundhed.dk/cs/careplan-intent"/>
    <version value="0.6.0"/>
    <name value="CarePlanIntent"/>
-    <title value="CarePlan Intent"/>
+   <title value="CarePlan Intent"/>
    <status value="active"/>
    <experimental value="false"/>
    <date value="2019-01-29T00:00:00+00:00"/>
@@ -22,9 +22,9 @@
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>
-        <property>
-            <code value="deprecated"/>
-            <valueDateTime value="2020-02-03"/>
-        </property>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-02-03"/>
+      </property>
    </concept>
 </CodeSystem>

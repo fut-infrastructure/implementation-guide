@@ -22,18 +22,18 @@
       <code value="annotation"/>
       <display value="annotation"/>
       <definition value="Annotation"/>
-        <designation>
-            <language value="da"/>
-            <value value="Annotering"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Annotering"/>
+       </designation>
    </concept>
    <concept>
       <code value="note"/>
       <display value="note"/>
       <definition value="Note"/>
-        <designation>
-            <language value="da"/>
-            <value value="Note"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Note"/>
+      </designation>
    </concept>
 </CodeSystem>

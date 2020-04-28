@@ -22,18 +22,18 @@
       <code value="approved"/>
       <display value="Approved"/>
       <definition value="Approved"/>
-        <designation>
-            <language value="da"/>
-            <value value="Godkendt"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Godkendt"/>
+      </designation>
    </concept>
    <concept>
       <code value="approved-for-sharing"/>
       <display value="Approved for sharing"/>
       <definition value="Approved for sharing"/>
-        <designation>
-            <language value="da"/>
-            <value value="Godkendt til dokumentdeling"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Godkendt til dokumentdeling"/>
+      </designation>
    </concept>
 </CodeSystem>

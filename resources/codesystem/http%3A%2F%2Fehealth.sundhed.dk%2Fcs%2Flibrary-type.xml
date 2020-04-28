@@ -22,9 +22,9 @@
       <code value="automated-processing"/>
       <display value="Automated Processing"/>
       <definition value="The resource defines an evaluation context for automated processing"/>
-        <designation>
-            <language value="da"/>
-            <value value="Ressourcen definerer en regel og dennes kontekst til brug i automatisk processering"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Ressourcen definerer en regel og dennes kontekst til brug i automatisk processering"/>
+      </designation>
    </concept>
 </CodeSystem>

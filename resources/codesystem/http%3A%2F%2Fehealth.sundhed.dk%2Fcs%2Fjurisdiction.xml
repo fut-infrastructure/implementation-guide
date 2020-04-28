@@ -22,18 +22,18 @@
       <code value="healthcare-act"/>
       <display value="Danish healthcare act"/>
       <definition value="Danish healthcare act"/>
-        <designation>
-            <language value="da"/>
-            <value value="Sundhedsloven"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Sundhedsloven"/>
+      </designation>
    </concept>
    <concept>
       <code value="service-act"/>
       <display value="Danish service act"/>
       <definition value="Danish service act"/>
-        <designation>
-            <language value="da"/>
-            <value value="Serviceloven"/>
-        </designation>
+      <designation>
+         <language value="da"/>
+         <value value="Serviceloven"/>
+      </designation>
    </concept>
 </CodeSystem>

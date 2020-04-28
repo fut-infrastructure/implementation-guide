@@ -62,4 +62,31 @@
          <valueDateTime value="2020-03-24"/>
       </property>
    </concept>
+   <concept>
+      <code value="HA"/>
+      <display value="Head activity"/>
+      <definition value="Head activity"/>
+      <designation>
+         <language value="da"/>
+         <value value="Hovedaktivitet"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="SQ"/>
+      <display value="Situation quality assessment"/>
+      <definition value="Assessment of situation quality"/>
+      <designation>
+         <language value="da"/>
+         <value value="Bestemmelse af situationskvalitet"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="QR"/>
+      <display value="Usage quality assessment"/>
+      <definition value="Assessment of usage quality"/>
+      <designation>
+         <language value="da"/>
+         <value value="Bestemmelse af betjeningskvalitet"/>
+      </designation>
+   </concept>
 </CodeSystem>
