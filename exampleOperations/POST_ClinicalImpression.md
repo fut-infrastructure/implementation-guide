@@ -41,10 +41,10 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/22534"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/60034"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/69064"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17409"
   }
 }
 ```
@@ -56,7 +56,7 @@ __Response__
   "id": "5",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T13:39:58.454+00:00",
+    "lastUpdated": "2020-04-30T07:15:06.818+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -83,11 +83,11 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/22534"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/60034"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/69064"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17409"
   },
-  "date": "2020-03-26T13:39:58+00:00"
+  "date": "2020-04-30T07:15:06+00:00"
 }
 ```

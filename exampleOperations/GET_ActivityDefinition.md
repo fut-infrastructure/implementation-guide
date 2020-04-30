@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition/6`
+`GET [base]/ActivityDefinition/127`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "6",
+  "id": "127",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-02-03T14:06:44.019+00:00",
+    "lastUpdated": "2020-04-30T06:50:11.508+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -49,7 +49,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/73057"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/63095"
       }
     },
     {
@@ -58,7 +58,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/31731"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/32876"
           }
         },
         {
@@ -142,7 +142,7 @@ __Response__
             "coding": [
               {
                 "system": "http://ehealth.sundhed.dk/cs/situation-quality",
-                "code": "Unknown"
+                "code": "unknown"
               }
             ]
           }
@@ -172,7 +172,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 286137324,
+            "value": -1796462953,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -180,8 +180,8 @@ __Response__
       ]
     }
   ],
-  "version": "d638f7df-7d3c-4056-9fcd-5c43943d7909",
-  "name": "80816a26-27af-4ecf-960f-d9c0a13b891c",
+  "version": "f0854f04-8839-4669-b9e2-952862582e3a",
+  "name": "41a378f7-f994-4acd-a792-4021aed71f63",
   "status": "active",
   "topic": [
     {

@@ -28,7 +28,7 @@ __Response__
   "id": "93",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T13:41:40.039+00:00",
+    "lastUpdated": "2020-04-30T07:16:49.522+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -59,7 +59,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/84163"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/84043"
       }
     }
   ],
@@ -67,7 +67,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/91396"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/33021"
   }
 }
 ```

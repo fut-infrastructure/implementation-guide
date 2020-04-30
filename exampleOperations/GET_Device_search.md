@@ -1,4 +1,4 @@
-`GET [base]/Device?manufacturer%3Aexact=606de3e0-12cd-4ba8-ac01-cf27d3bd5f7e&model%3Aexact=baf28208-ad20-4cc9-a129-cd4c7882f133`
+`GET [base]/Device?manufacturer%3Aexact=0029e2b5-5f29-4743-99c6-67700d011bff&model%3Aexact=72881a99-63d2-4bcc-a2b6-7b41273eb148`
 
 __Header__
 ```
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "77172423-63b2-43cb-8385-dbffe396ff8c",
+  "id": "796c690b-18b4-4d81-a72d-d47471b504a6",
   "meta": {
-    "lastUpdated": "2020-03-26T10:19:21.970+00:00"
+    "lastUpdated": "2020-04-29T19:33:25.792+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.local.ehealth.sundhed.dk/fhir/Device?_format=json&_pretty=true&manufacturer%3Aexact=606de3e0-12cd-4ba8-ac01-cf27d3bd5f7e&model%3Aexact=baf28208-ad20-4cc9-a129-cd4c7882f133"
+      "url": "https://device.local.ehealth.sundhed.dk/fhir/Device?_format=json&_pretty=true&manufacturer%3Aexact=0029e2b5-5f29-4743-99c6-67700d011bff&model%3Aexact=72881a99-63d2-4bcc-a2b6-7b41273eb148"
     }
   ],
   "entry": [
@@ -35,7 +35,7 @@ __Response__
         "id": "21",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:21.501+00:00",
+          "lastUpdated": "2020-04-29T19:33:25.276+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -47,8 +47,8 @@ __Response__
           }
         ],
         "status": "active",
-        "manufacturer": "606de3e0-12cd-4ba8-ac01-cf27d3bd5f7e",
-        "model": "baf28208-ad20-4cc9-a129-cd4c7882f133"
+        "manufacturer": "0029e2b5-5f29-4743-99c6-67700d011bff",
+        "model": "72881a99-63d2-4bcc-a2b6-7b41273eb148"
       },
       "search": {
         "mode": "match"
@@ -61,7 +61,7 @@ __Response__
         "id": "19",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:20.789+00:00",
+          "lastUpdated": "2020-04-29T19:33:24.725+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -73,8 +73,8 @@ __Response__
           }
         ],
         "status": "active",
-        "manufacturer": "606de3e0-12cd-4ba8-ac01-cf27d3bd5f7e",
-        "model": "baf28208-ad20-4cc9-a129-cd4c7882f133"
+        "manufacturer": "0029e2b5-5f29-4743-99c6-67700d011bff",
+        "model": "72881a99-63d2-4bcc-a2b6-7b41273eb148"
       },
       "search": {
         "mode": "match"

@@ -1,9 +1,9 @@
-`POST [base]/Library/19/$evaluate`
+`POST [base]/Library/$evaluate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2QwYzc2ZDgtZTljYy00NjY1LWE3MzAtY2NiYzBlZDA3MDY2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkkZXZhbHVhdGUiXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzUyMDAyIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzUyNzA0In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGYzZjAwOTItZDQxZS00NTkwLThmNTgtNTg1YWM4OGVjYWE5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkkZXZhbHVhdGUiXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzE3MjI0IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzY5NDEyIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -24,18 +24,19 @@ __Body__:
             "name": "observation",
             "resource": {
               "resourceType": "Observation",
-              "id": "10862",
+              "id": "55766",
               "meta": {
+                "versionId": "1",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
                 ]
               },
               "basedOn": [
                 {
-                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/6802"
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/92103"
                 }
               ],
-              "status": "amended",
+              "status": "final",
               "code": {
                 "coding": [
                   {
@@ -45,22 +46,22 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/52704"
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69412"
               },
               "context": {
-                "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/52002"
+                "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17224"
               },
               "effectivePeriod": {
-                "start": "2020-03-26T11:59:46+01:00",
-                "end": "2020-03-26T11:59:46+01:00"
+                "start": "2020-04-30T07:24:53+02:00",
+                "end": "2020-04-30T07:24:53+02:00"
               },
               "performer": [
                 {
-                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/22387"
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69412"
                 }
               ],
               "device": {
-                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/34165"
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/46966"
               }
             }
           }
@@ -89,7 +90,7 @@ __Response__
         {
           "type": "composed-of",
           "resource": {
-            "reference": "https://library.local.ehealth.sundhed.dk/fhir/Library/19"
+            "reference": "https://library.local.ehealth.sundhed.dk/fhir/Library/7"
           }
         }
       ]
@@ -100,7 +101,7 @@ __Response__
       "parameter": [
         {
           "name": "rule-output",
-          "valueString": "Observation/10862"
+          "valueString": "{\"Tasks\":[{\"Category\":{\"system\":\"http://ehealth.sundhed.dk/cs/task-category\",\"code\":\"MeasurementForAssessment\",\"display\":\"Need assessment of measurement\"},\"Description\":\"Need assessment of measurement\",\"Priority\":\"normal\",\"Restriction-Categories\":[{\"system\":\"http://ehealth.sundhed.dk/cs/restriction-category\",\"code\":\"measurement-monitoring\",\"display\":\"Monitoring of measurement(s)\"}],\"Communications\":[]}],\"activateSelfTreatment\":false,\"ClinicalImpressions\":null}"
         }
       ]
     }
@@ -110,10 +111,10 @@ __Response__
   },
   "status": "success",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/52704"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69412"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/52002"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17224"
   },
   "outputParameters": {
     "reference": "#2"

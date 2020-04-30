@@ -1,4 +1,4 @@
-`PUT [base]/Organization/113`
+`PUT [base]/Organization/487`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "113",
+  "id": "487",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T11:22:28.454+00:00",
+    "lastUpdated": "2020-04-30T05:58:16.337+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -47,7 +47,7 @@ __Body__:
       }
     }
   ],
-  "name": "c2fd31d4-4826-460c-8bb9-f4cb11d98ff3"
+  "name": "1e1be508-f37f-412b-b5e5-caf7ae83e9a2"
 }
 ```
 
@@ -55,10 +55,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "113",
+  "id": "487",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T11:22:28.715+00:00",
+    "lastUpdated": "2020-04-30T05:58:16.454+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -87,6 +87,6 @@ __Response__
       }
     }
   ],
-  "name": "c2fd31d4-4826-460c-8bb9-f4cb11d98ff3"
+  "name": "1e1be508-f37f-412b-b5e5-caf7ae83e9a2"
 }
 ```

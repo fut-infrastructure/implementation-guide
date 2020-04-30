@@ -18,7 +18,7 @@ __Body__:
   "id": "672",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:45.301+00:00",
+    "lastUpdated": "2020-04-29T19:24:29.764+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -34,7 +34,7 @@ __Body__:
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/37320"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/36281"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
@@ -42,12 +42,12 @@ __Body__:
   },
   "consentingParty": [
     {
-      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/42538"
+      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/36305"
     }
   ],
   "actor": [
     {
-      "id": "9fd0c0ae-c839-48d4-b929-7a777f309cad",
+      "id": "dd263af0-2d8d-4d92-974d-6bfb93c71f0d",
       "role": {
         "coding": [
           {
@@ -56,7 +56,7 @@ __Body__:
         ]
       },
       "reference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69316"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/6517"
       }
     }
   ],
@@ -79,7 +79,7 @@ __Response__
   "id": "672",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T12:58:46.544+00:00",
+    "lastUpdated": "2020-04-29T19:24:31.067+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -95,7 +95,7 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/37320"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/36281"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
@@ -103,12 +103,12 @@ __Response__
   },
   "consentingParty": [
     {
-      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/42538"
+      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/36305"
     }
   ],
   "actor": [
     {
-      "id": "9fd0c0ae-c839-48d4-b929-7a777f309cad",
+      "id": "dd263af0-2d8d-4d92-974d-6bfb93c71f0d",
       "role": {
         "coding": [
           {
@@ -117,7 +117,7 @@ __Response__
         ]
       },
       "reference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/69316"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/6517"
       }
     }
   ],

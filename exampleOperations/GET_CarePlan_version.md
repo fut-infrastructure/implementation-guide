@@ -18,7 +18,7 @@ __Response__
   "id": "490",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T12:58:11.260+00:00",
+    "lastUpdated": "2020-04-29T19:23:55.187+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
@@ -30,13 +30,13 @@ __Response__
         {
           "url": "careTeam",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/16692"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/9055"
           }
         },
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2020-03-26T12:58:11+00:00"
+            "start": "2020-04-29T19:23:55+00:00"
           }
         }
       ]
@@ -44,7 +44,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/11252"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/40938"
     }
   ],
   "status": "draft",
@@ -60,7 +60,7 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/47614"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/79044"
   },
   "context": {
     "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/489"
@@ -71,7 +71,7 @@ __Response__
   },
   "careTeam": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/16692"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/9055"
     }
   ],
   "addresses": [

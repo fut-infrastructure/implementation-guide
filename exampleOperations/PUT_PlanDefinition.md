@@ -1,9 +1,9 @@
-`PUT [base]/PlanDefinition/93`
+`PUT [base]/PlanDefinition/216`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWFkYWM1YWYtNDIwNy00ZmE5LTgzZjMtODczZDE1ZGJkNjdmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uLnVwZGF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzQxMTk5In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDQyMzI3NzYtYTFjNy00YmZiLThjN2ItNGFiZTY5OWZmODZjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uLnVwZGF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzIyNTE5In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "93",
+  "id": "216",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T13:19:14.680+00:00",
+    "lastUpdated": "2020-04-30T06:50:59.699+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -30,7 +30,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/41199"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/22519"
           }
         },
         {
@@ -47,7 +47,7 @@ __Body__:
       ]
     }
   ],
-  "version": "f09dc922-f039-4b26-916f-46cec7c57c52",
+  "version": "1d7e9495-d29b-4ce7-8a43-1ca0a8348862",
   "status": "retired"
 }
 ```
@@ -56,10 +56,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "93",
+  "id": "216",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T13:19:14.890+00:00",
+    "lastUpdated": "2020-04-30T06:50:59.946+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -71,7 +71,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/41199"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/22519"
           }
         },
         {
@@ -88,7 +88,7 @@ __Response__
       ]
     }
   ],
-  "version": "f09dc922-f039-4b26-916f-46cec7c57c52",
+  "version": "1d7e9495-d29b-4ce7-8a43-1ca0a8348862",
   "status": "retired"
 }
 ```

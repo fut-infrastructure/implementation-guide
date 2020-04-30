@@ -30,7 +30,7 @@ __Body__:
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/19253"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/11371"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
@@ -38,12 +38,12 @@ __Body__:
   },
   "consentingParty": [
     {
-      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/54835"
+      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/10427"
     }
   ],
   "actor": [
     {
-      "id": "f17fc957-9c36-4df0-9c69-ee7693a6f62c",
+      "id": "a0a4b738-48cc-4384-8bdd-20f46a88cb01",
       "role": {
         "coding": [
           {
@@ -52,7 +52,7 @@ __Body__:
         ]
       },
       "reference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50400"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31683"
       }
     }
   ],
@@ -75,7 +75,7 @@ __Response__
   "id": "625",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:34.379+00:00",
+    "lastUpdated": "2020-04-29T19:24:18.752+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -91,7 +91,7 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/19253"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/11371"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",
@@ -99,12 +99,12 @@ __Response__
   },
   "consentingParty": [
     {
-      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/54835"
+      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/10427"
     }
   ],
   "actor": [
     {
-      "id": "f17fc957-9c36-4df0-9c69-ee7693a6f62c",
+      "id": "a0a4b738-48cc-4384-8bdd-20f46a88cb01",
       "role": {
         "coding": [
           {
@@ -113,7 +113,7 @@ __Response__
         ]
       },
       "reference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/50400"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31683"
       }
     }
   ],

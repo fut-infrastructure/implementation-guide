@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWU3ZGFiOWUtMWViOC00NTgzLTgyNTgtMmY4YzQ0OGRjN2VjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiN2FjNzg4OWUtZjY1Zi00ZTk4LWIzMTAtYzE4M2UzNmJmNDMwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/12269"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/41824"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2020-03-26T13:37:36+01:00",
-        "end": "2020-03-26T13:37:36+01:00"
+        "start": "2020-04-30T09:08:49+02:00",
+        "end": "2020-04-30T09:08:49+02:00"
       }
     }
   ]
@@ -43,7 +43,7 @@ __Response__
   "id": "14",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:37:36.920+00:00",
+    "lastUpdated": "2020-04-30T07:08:49.580+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "ee7dab9e-1eb8-4583-8258-2f8c448dc7ec"
+      "value": "7ac7889e-f65f-4e98-b310-c183e36bf430"
     }
   },
   "content": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

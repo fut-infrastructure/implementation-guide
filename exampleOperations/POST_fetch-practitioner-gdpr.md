@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmUxZTQ0MDgtYTMxOS00YmNlLTg3YTgtNDVkZWUyZmUxMGQ0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjZhM2UyNjktYmY5Yy00NmZiLTg1OWQtN2IzZTUxMDhhNTQwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/94174"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/88497"
       }
     },
     {
       "name": "practitioner",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/20599"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/62319"
       }
     }
   ]
@@ -47,9 +47,9 @@ __Response__
   "contentType": "application/gzip-json",
   "securityContext": {
     "identifier": {
-      "value": "6e1e4408-a319-4bce-87a8-45dee2fe10d4"
+      "value": "66a3e269-bf9c-46fb-859d-7b3e5108a540"
     }
   },
-  "content": "UEsDBBQACAgIALhkelAAAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzAzXzI2XzEyXzM3XzQ5L1JlcG9ydEhlYWRlcrWRsU7DMBCG3+Xm1k7clMqeK7GVKmQCMVjJtbZIbeviIJUo745JUbHYGU//d/f9sicgDJ7iQV8QFBxJt9FG6x3S4/5Y10sIqx+qsQslClGsi81aPDSlUJudqiQTVSm28iWhQVM6FpEGUFNaHPxILTbXsAh+w4wE9TqBu1XQzrvrxX7q7xYJ+tD9iM+RrDun9JCawby6057O2v2BazwhoWvx5r8PYGIMg+I8X2K9b3XP0KDuo2HD6DqDHeve+clY4k8ZymVV7iqYM33I3us/9Pl/cFFspUz6t3n+AlBLBwhANIDM2wAAALcBAABQSwMEFAAICAgAuGR6UAAAAAAAAAAAAAAAAEQAAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjBfMDNfMjZfMTJfMzdfNDkvRUhlYWx0aFByYWN0aXRpb25lci8yMDU5ObVSTW/bIBj+L5xLHNvYDj6urdSdNm25TT28hpcYzQYLcKUsyn8f0CbKpvY07WJhHni+eE/k8QlhCuNXByLooK1BR/oTcejt6gTujwuSnvwB3xEt4161bTiPPzMGSFde0Pl44HPCyri/OKv0FG//IGMIS18UOGatjV+NHFFu5M9CjdoV34NbRVgdPqDSJstcztLlVvn5fEcMzInzRBTMejomI2pXAdsJ2pZCUCY6RXdNA7TGdmh4V3FUJTmnu++E/WazxecreA8O9whz1virhiv2VgHnrN799wpEVA1JNUXQEk3QSqdnigazDdU0LcJQUjkgp2yLNeUoJS0ZV1APsgTcRjf+6APGXGR1ptcYVO+U6Gu+a2M7EQ4QVh/hVM4LkkvVRHFZdbxjtIUWKGNqoEOL8SNkVcmu5VCmEhZwQQu9gAnZ2ozzcBkmhQ6NSGSpBx+LsO4ARv+ClHQzWQHT5qNubp+reJ26czLsELw191a+zoOwUptDXl6Tfty68IWwRmZaH92LTEP2nx7SqET2GQwcIuGXG6NvM/FPaW75Cs7KjmXB829QSwcIX9rNeqUBAACLAwAAUEsBAhQAFAAICAgAuGR6UEA0gMzbAAAAtwEAADcAAAAAAAAAAAAAAAAAAAAAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAyMF8wM18yNl8xMl8zN180OS9SZXBvcnRIZWFkZXJQSwECFAAUAAgICAC4ZHpQX9rNeqUBAACLAwAARAAAAAAAAAAAAAAAAABAAQAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzAzXzI2XzEyXzM3XzQ5L0VIZWFsdGhQcmFjdGl0aW9uZXIvMjA1OTlQSwUGAAAAAAIAAgDXAAAAVwMAAAAA"
+  "content": "UEsDBBQACAgIACE5nlAAAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzA0XzMwXzA3XzA5XzAzL1JlcG9ydEhlYWRlcrWRwU7DMBBE/2XPrW2ciiQ+I3ErVcgJxMFKtrVFalsbB6lE+XdMiorFneNq3uyMdmcgDJ7iXp8RFBxId9FG6x3S48OhaVYRNj9Ua1dKCim2YrctRCtKJWolCiZLUcmXRAZNaVdEGkHNyTf6iTpsL2Hd/ytmJKjXGdy1gXbeXc72U3+XSNCHHiZ8jmTdKan7VAyWzY32dNLuD9zgEQldh9f82wAmxjAqznMTG3ynB4YG9RANGyfXG+xZ/86PxhJ/ylBeVbu6hCWLD9m5/iM+fwe/l8VdneLfluULUEsHCDkIVBjaAAAAtgEAAFBLAwQUAAgICAAhOZ5QAAAAAAAAAAAAAAAARAAAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAyMF8wNF8zMF8wN18wOV8wMy9FSGVhbHRoUHJhY3RpdGlvbmVyLzYyMzE5tVJNj9sgEP0vnJfYxnZsfOxupfbUqs2t2sMYhhjVBgvwSmmU/15gmyituqeqN5vHvC/mTN5/QJjD9NmBCDpoa9CR4Uwcers5gYfTimQgv8EPRMt4tmd1xePPggHSyAs6Hy98TFgVz1dnlZ7j9DcyhbAORYFT1tr5zcgJ5U5+L9SkXfE1uE2EzeETKm2yzPUuXe+Vny8PxMCSOM9EwaLnUxRrBYNK9pxy5EgbXlYURqxo2bUl51Wv9h2QS5r9S9gvNlt8voGP4PCAsGSNP2q4YdcK9lHgv1cgompIqimClmiCVjo9UzSYbbRdOTIx1rTrOdCGNYzytha0Yox1DZesYzK68ScfMOYimzODxqAGp8RQ834f24lwgLD5CKdyXpBcqyZlU3PGRUdxbPe06dqGAqqWjqJtWVQs6yaHBRe00CuYkK0tuIzXZVLo0IhElnrwsQjrjmD0D0hJd7MVMO/e6ub+uYrXrbskww7BW/No5es+CCu1OebPW9K3Wxe+ENbITOuje5FpyOHdU1qVyL6AgWMk/HRn9NdO/FOae76i7xveZcHLT1BLBwhDJmuYpQEAAIsDAABQSwECFAAUAAgICAAhOZ5QOQhUGNoAAAC2AQAANwAAAAAAAAAAAAAAAAAAAAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIwXzA0XzMwXzA3XzA5XzAzL1JlcG9ydEhlYWRlclBLAQIUABQACAgIACE5nlBDJmuYpQEAAIsDAABEAAAAAAAAAAAAAAAAAD8BAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjBfMDRfMzBfMDdfMDlfMDMvRUhlYWx0aFByYWN0aXRpb25lci82MjMxOVBLBQYAAAAAAgACANcAAABWAwAAAAA="
 }
 ```

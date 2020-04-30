@@ -1,9 +1,9 @@
-`GET [base]/CarePlan?patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F54235`
+`GET [base]/CarePlan?patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F52845`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzU0MjM1In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzUyODQ1In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "800cb6bb-8f0d-43ee-8ad6-b79c24e672a1",
+  "id": "6c966730-3aeb-49fb-b170-e37a66943f37",
   "meta": {
-    "lastUpdated": "2020-03-26T12:58:09.266+00:00"
+    "lastUpdated": "2020-04-29T19:23:53.117+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F54235"
+      "url": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F52845"
     }
   ],
   "entry": [
@@ -35,14 +35,14 @@ __Response__
         "id": "478",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T12:58:09.088+00:00",
+          "lastUpdated": "2020-04-29T19:23:52.914+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
         },
         "definition": [
           {
-            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/84398"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/32900"
           }
         ],
         "status": "draft",
@@ -58,7 +58,7 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/54235"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/52845"
         },
         "context": {
           "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/477"

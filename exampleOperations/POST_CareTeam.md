@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjQ5ZmZjOGItYzlkOC00NWQ1LWEwOTYtZTdhZDU0ODAwN2U2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjJiYTk0ZTMtMjMxZS00ZjBiLThmYmYtZjQ2MzJmY2NjMzU5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -21,12 +21,12 @@ __Body__:
   },
   "identifier": [
     {
-      "id": "66193585-4098-425a-af7e-41a74f80b0c6",
+      "id": "911d4b23-0d55-4525-8c6d-b8dafc4dbef5",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "ee9eaef3-e63d-4195-a2dc-a0eec09c2162",
+  "name": "91253183-006d-4a44-8add-ea3b073a3f2c",
   "participant": [
     {
       "role": {
@@ -38,7 +38,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/17328"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/36583"
       }
     },
     {
@@ -51,7 +51,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89093"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/78756"
       }
     },
     {
@@ -64,7 +64,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/5"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/370"
       }
     }
   ],
@@ -80,7 +80,7 @@ __Body__:
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/6"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/371"
     }
   ]
 }
@@ -90,22 +90,22 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "7",
+  "id": "372",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T11:21:50.686+00:00",
+    "lastUpdated": "2020-04-30T05:57:49.510+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "66193585-4098-425a-af7e-41a74f80b0c6",
+      "id": "911d4b23-0d55-4525-8c6d-b8dafc4dbef5",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "ee9eaef3-e63d-4195-a2dc-a0eec09c2162",
+  "name": "91253183-006d-4a44-8add-ea3b073a3f2c",
   "participant": [
     {
       "role": {
@@ -117,7 +117,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/17328"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/RelatedPerson/36583"
       }
     },
     {
@@ -130,7 +130,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89093"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/78756"
       }
     },
     {
@@ -143,7 +143,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/5"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/370"
       }
     }
   ],
@@ -159,7 +159,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/6"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/371"
     }
   ]
 }

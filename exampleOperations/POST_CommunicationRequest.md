@@ -16,7 +16,7 @@ __Body__:
   "resourceType": "CommunicationRequest",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:13.942+00:00",
+    "lastUpdated": "2020-04-29T19:23:57.815+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -28,7 +28,7 @@ __Body__:
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/326"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/29609"
   },
   "context": {
     "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/503"
@@ -43,7 +43,7 @@ __Response__
   "id": "506",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:14.100+00:00",
+    "lastUpdated": "2020-04-29T19:23:57.928+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -55,7 +55,7 @@ __Response__
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/326"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/29609"
   },
   "context": {
     "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/503"

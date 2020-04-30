@@ -22,14 +22,14 @@ __Body__:
         "id": "434",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T12:58:01.834+00:00",
+          "lastUpdated": "2020-04-29T19:23:45.205+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
         },
         "definition": [
           {
-            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/70643"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/34630"
           }
         ],
         "status": "draft",
@@ -45,7 +45,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/85514"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/33985"
         },
         "context": {
           "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/433"

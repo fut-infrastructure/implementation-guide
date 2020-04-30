@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMGNiMWZhYWEtMmY3Ni00MjE5LTg1ZjctN2QzMmYwMDczNjZiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzNlZjI1MmUtMGQ2Mi00NDhlLTllZDUtYTJiMGUxNjU4MGUzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,20 +22,20 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/66786"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/22182"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/36349"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/16866"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2020-03-26T13:37:50+01:00",
-        "end": "2020-03-26T13:37:50+01:00"
+        "start": "2020-04-30T09:09:04+02:00",
+        "end": "2020-04-30T09:09:04+02:00"
       }
     }
   ]
@@ -49,7 +49,7 @@ __Response__
   "id": "23",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:37:50.444+00:00",
+    "lastUpdated": "2020-04-30T07:09:04.394+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -57,7 +57,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "0cb1faaa-2f76-4219-85f7-7d32f007366b"
+      "value": "73ef252e-0d62-448e-9ed5-a2b0e16580e3"
     }
   },
   "content": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

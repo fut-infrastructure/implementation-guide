@@ -1,4 +1,4 @@
-`DELETE [base]/Composition/33`
+`DELETE [base]/Composition/130`
 
 __Header__
 ```
@@ -17,13 +17,13 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>Successfully deleted 1 resource(s) in 53ms</pre></td>\r\r\r</tr>\r</table>\r</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>Successfully deleted 1 resource(s) in 82ms</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {
       "severity": "information",
       "code": "informational",
-      "diagnostics": "Successfully deleted 1 resource(s) in 53ms"
+      "diagnostics": "Successfully deleted 1 resource(s) in 82ms"
     }
   ]
 }

@@ -1,4 +1,4 @@
-`POST [base]/ProcedureRequest/918/$validate`
+`POST [base]/ProcedureRequest/$validate`
 
 __Header__
 ```
@@ -19,10 +19,7 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "918",
         "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-03-26T12:59:45.534+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
           ]
@@ -38,11 +35,61 @@ __Body__:
                 }
               ]
             }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+            "extension": [
+              {
+                "url": "allowed",
+                "valueBoolean": true
+              },
+              {
+                "url": "situationQuality",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                      "code": "unknown"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "usageQuality",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                      "code": "TBD"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "deviceMeasuringQuality",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                      "code": "TBD"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "dataActuality",
+                "valueDuration": {
+                  "value": 1681112562,
+                  "system": "http://unitsofmeasure.org",
+                  "code": "h"
+                }
+              }
+            ]
           }
         ],
         "definition": [
           {
-            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/6837"
+            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/80770"
           }
         ],
         "status": "completed",
@@ -54,13 +101,13 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "a7ad5362-6131-4e55-8c02-a2a379370dcd"
+          "text": "7c46a970-8b44-4b81-bc82-36d9a4d1fda7"
         },
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/21712"
+          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31705"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/917"
+          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/920"
         }
       }
     }

@@ -31,7 +31,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/50021"
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/90090"
                 }
               },
               {
@@ -48,7 +48,7 @@ __Body__:
             ]
           }
         ],
-        "version": "ab3f6eae-ea6b-480a-922f-4c53f0859932",
+        "version": "d49d8fa4-c499-4067-b87c-34047c3ede2b",
         "status": "active"
       }
     }

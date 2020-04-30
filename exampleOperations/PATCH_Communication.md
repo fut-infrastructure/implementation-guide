@@ -1,9 +1,9 @@
-`PATCH [base]/Communication/15`
+`PATCH [base]/Communication/557`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWZlZjRiNjYtYzZhMi00OTFiLTkyNGEtMjFjZmFjZmI2YjhhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzM1OTY1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzczMDgyIn0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -25,10 +25,10 @@ __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "15",
+  "id": "557",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T11:09:39.406+00:00",
+    "lastUpdated": "2020-04-30T05:36:49.886+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -58,15 +58,18 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/64316"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/64227"
   },
   "topic": [
     {
-      "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/14"
+      "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/556"
     }
   ],
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/84120"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/73082"
+  },
+  "sender": {
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/35965"
   }
 }
 ```

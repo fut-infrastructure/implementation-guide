@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2020-03-26T11:50:52.218+01:00",
+        "indexed": "2020-04-30T06:59:10.380+02:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "cb9faf43-bcd7-42b3-8a41-431edf97beea",
+        "id": "ad3a07c2-446d-441b-990d-dfb4d5ec83ea",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -173,7 +173,7 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2019-04-09T14:50:10+00:00",
+        "date": "2019-04-09T12:50:10+00:00",
         "author": [
           {
             "reference": "#2"
@@ -188,7 +188,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Device",
-        "id": "eedb0bea-8cc0-479a-a3dc-8649d74cf4bb",
+        "id": "5d629882-dfbb-46fa-9f74-1d85c2a6ca4f",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
@@ -210,7 +210,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "415ef6ed-e51f-448d-a82e-83305ad7a102",
+        "id": "41fb001b-8632-4876-827a-cc505cdad07a",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -303,7 +303,7 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "effectiveDateTime": "2019-04-09T12:10:10+00:00",
+        "effectiveDateTime": "2019-04-09T10:10:10+00:00",
         "performer": [
           {
             "reference": "#1"
@@ -314,14 +314,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "abccfb83-d912-4a00-af7d-7e6e3218810e",
+        "id": "2406e188-47d7-4857-bb2a-806dd44bf176",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -414,7 +414,7 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "effectiveDateTime": "2019-04-09T12:15:10+00:00",
+        "effectiveDateTime": "2019-04-09T10:15:10+00:00",
         "performer": [
           {
             "reference": "#1"
@@ -425,14 +425,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "4d1178ad-8a91-4008-8760-07f0b8fba103",
+        "id": "5096c98c-7b64-422c-9257-3f067b8562f4",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -519,7 +519,7 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "effectiveDateTime": "2019-04-09T12:30:10+00:00",
+        "effectiveDateTime": "2019-04-09T10:30:10+00:00",
         "performer": [
           {
             "reference": "#1"
@@ -530,7 +530,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/eedb0bea-8cc0-479a-a3dc-8649d74cf4bb"
+          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
         }
       }
     }

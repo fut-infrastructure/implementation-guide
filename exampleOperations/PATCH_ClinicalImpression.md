@@ -28,7 +28,7 @@ __Response__
   "id": "10",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T13:40:09.803+00:00",
+    "lastUpdated": "2020-04-30T07:15:17.771+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -55,10 +55,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/29171"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/7695"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/14239"
+    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/49659"
   }
 }
 ```

@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89098"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/35519"
       }
     }
   ]
@@ -33,7 +33,7 @@ __Response__
     {
       "name": "Patient",
       "valueReference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/89098"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/35519"
       }
     }
   ]

@@ -18,7 +18,7 @@ __Response__
   "id": "598",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T12:58:27.970+00:00",
+    "lastUpdated": "2020-04-29T19:24:12.189+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -30,11 +30,11 @@ __Response__
   ],
   "status": "suspended",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/73109"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/56984"
   },
   "recipient": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/49522"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/29610"
     }
   ],
   "context": {

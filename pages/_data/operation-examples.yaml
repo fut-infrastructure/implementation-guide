@@ -12,10 +12,13 @@
   path: POST_submit-measurement.md
 
 - profile: system
-  path: POST_transform-to-QFDD.md
+  path: POST_transform-to-APD.md
 
 - profile: system
   path: POST_transform-to-PHMR.md
+
+- profile: system
+  path: POST_transform-to-QFDD.md
 
 - profile: system
   path: POST_transform-to-QRD.md
@@ -343,9 +346,6 @@
   path: GET_DocumentReference_version.md
 
 - profile: ehealth-documentreference
-  path: GET_DocumentReference.md
-
-- profile: ehealth-documentreference
   path: POST_DocumentReference.md
 
 - profile: ehealth-documentreference
@@ -443,6 +443,9 @@
 
 - profile: ehealth-organization
   path: GET_Organization_search.md
+
+- profile: ehealth-organization
+  path: GET_Organization_traverse-to-sor.md
 
 - profile: ehealth-organization
   path: GET_Organization_version.md

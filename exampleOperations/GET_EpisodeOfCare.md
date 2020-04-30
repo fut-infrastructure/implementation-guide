@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTJmMWFkZjMtMTc4OC00NTA3LWE5ZTEtOTdjYTg4OTBkOGY0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvOTc0In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzg3YTMxZDUtYjM5OS00OWYxLTk1ZmYtMTdmMDAwYjg0NjhjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvOTc0In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,7 +18,7 @@ __Response__
   "id": "974",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:59:58.380+00:00",
+    "lastUpdated": "2020-04-29T19:25:46.869+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/98760"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/17259"
       }
     }
   ],
@@ -41,10 +41,10 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/66771"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/38457"
   },
   "managingOrganization": {
-    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/49772"
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/14904"
   },
   "period": {
     "start": "1970-01-01T01:00:01+01:00",

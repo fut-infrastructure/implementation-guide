@@ -54,7 +54,7 @@ __Body__:
       ]
     }
   ],
-  "name": "86a72356-d01e-4c57-b919-1ae6b05e8c58"
+  "name": "619a170b-797a-4e38-92bc-13a8f8b13d80"
 }
 ```
 
@@ -62,10 +62,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "91",
+  "id": "456",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T11:22:20.110+00:00",
+    "lastUpdated": "2020-04-30T05:58:09.189+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -105,6 +105,6 @@ __Response__
       ]
     }
   ],
-  "name": "86a72356-d01e-4c57-b919-1ae6b05e8c58"
+  "name": "619a170b-797a-4e38-92bc-13a8f8b13d80"
 }
 ```

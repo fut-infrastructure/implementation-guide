@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vNDk1MjIiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNTk2IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzczMTA5In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vMjk2MTAiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNTk2IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzU2OTg0In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -18,7 +18,7 @@ __Body__:
   "id": "598",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:27.758+00:00",
+    "lastUpdated": "2020-04-29T19:24:12.011+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -30,11 +30,11 @@ __Body__:
   ],
   "status": "suspended",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/73109"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/56984"
   },
   "recipient": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/49522"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/29610"
     }
   ],
   "context": {
@@ -50,7 +50,7 @@ __Response__
   "id": "598",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T12:58:27.970+00:00",
+    "lastUpdated": "2020-04-29T19:24:12.189+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -62,11 +62,11 @@ __Response__
   ],
   "status": "suspended",
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/73109"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/56984"
   },
   "recipient": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/49522"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/29610"
     }
   ],
   "context": {

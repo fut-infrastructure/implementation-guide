@@ -1,9 +1,9 @@
-`GET [base]/DocumentReference?status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F19343`
+`GET [base]/DocumentReference?status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F27416`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UkZmluZC1kb2N1bWVudC1yZWZlcmVuY2VzIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzUzNjE3IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzE5MzQzIn0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UkZmluZC1kb2N1bWVudC1yZWZlcmVuY2VzIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzkxMzAyIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzI3NDE2In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "a393e951-98dc-496a-96d9-022b56142561",
+  "id": "88599509-5327-462d-b21f-89225750a4f2",
   "meta": {
-    "lastUpdated": "2020-03-26T14:47:16.424+00:00"
+    "lastUpdated": "2020-04-30T07:43:39.607+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-query.local.ehealth.sundhed.dk/fhir/DocumentReference?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F19343&status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent"
+      "url": "https://document-query.local.ehealth.sundhed.dk/fhir/DocumentReference?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F27416&status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent"
     }
   ],
   "entry": [

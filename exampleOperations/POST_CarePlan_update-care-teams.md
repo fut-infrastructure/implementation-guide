@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDYXJlUGxhbiR1cGRhdGUucmVzcG9uc2liaWxpdHkiLCJDYXJlUGxhbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vNDQ5MzYiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNDgxIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzYzMDE1In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDYXJlUGxhbi5yZWFkIiwiQ2FyZVBsYW4kdXBkYXRlLnJlc3BvbnNpYmlsaXR5IiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vODQ5ODUiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNDgxIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzE5ODI3In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "addCareTeams",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/44936"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/84985"
       }
     }
   ]
@@ -32,14 +32,14 @@ __Response__
   "id": "482",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:58:09.945+00:00",
+    "lastUpdated": "2020-04-29T19:23:53.737+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
   },
   "definition": [
     {
-      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/69761"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/36101"
     }
   ],
   "status": "draft",
@@ -55,7 +55,7 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/63015"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/19827"
   },
   "context": {
     "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/481"
@@ -66,7 +66,7 @@ __Response__
   },
   "careTeam": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/44936"
+      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/84985"
     }
   ],
   "addresses": [

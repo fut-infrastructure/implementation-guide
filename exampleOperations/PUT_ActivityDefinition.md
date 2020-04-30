@@ -1,9 +1,9 @@
-`PUT [base]/ActivityDefinition/34`
+`PUT [base]/ActivityDefinition/156`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzMxOTcxIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzkzMzUyIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "34",
+  "id": "156",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T13:18:38.945+00:00",
+    "lastUpdated": "2020-04-30T06:50:26.388+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -41,7 +41,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/31971"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/93352"
           }
         },
         {
@@ -58,8 +58,8 @@ __Body__:
       ]
     }
   ],
-  "version": "e9bbe296-4f51-413e-a27d-5ee01d28e966",
-  "name": "808bd3fd-3019-4cab-864a-9df35947f380",
+  "version": "0d9481ad-d3ed-4443-8e8e-88e3bc3fe6e1",
+  "name": "33952370-c8ca-404a-9304-6be5bebec702",
   "status": "retired",
   "topic": [
     {
@@ -86,10 +86,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "34",
+  "id": "156",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-03-26T13:18:39.263+00:00",
+    "lastUpdated": "2020-04-30T06:50:26.782+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -112,7 +112,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/31971"
+            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/93352"
           }
         },
         {
@@ -129,8 +129,8 @@ __Response__
       ]
     }
   ],
-  "version": "e9bbe296-4f51-413e-a27d-5ee01d28e966",
-  "name": "808bd3fd-3019-4cab-864a-9df35947f380",
+  "version": "0d9481ad-d3ed-4443-8e8e-88e3bc3fe6e1",
+  "name": "33952370-c8ca-404a-9304-6be5bebec702",
   "status": "retired",
   "topic": [
     {

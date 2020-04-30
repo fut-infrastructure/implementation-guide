@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjBjMTY0ZGItOGQ2Yy00NWIzLWE4MzgtMjIwZmM5NjlhZTFmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODU2MjFhMWUtNzMzZS00ODQxLTgxMWQtMDcxMGIxMDkzMjA2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/82076"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/86253"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/28668"
+        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/56670"
       }
     }
   ]
@@ -47,9 +47,9 @@ __Response__
   "contentType": "application/gzip-json",
   "securityContext": {
     "identifier": {
-      "value": "f0c164db-8d6c-45b3-a838-220fc969ae1f"
+      "value": "85621a1e-733e-4841-811d-0710b1093206"
     }
   },
-  "content": "UEsDBBQACAgIALlkelAAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjBfMDNfMjZfMTJfMzdfNTAvUmVwb3J0SGVhZGVytY5BbsIwEEXvMmuwjVGTyGeoAJGsWrGwkgFbGDsaO0g0yt1xoaJR913O/PfnzQiEfaC00RcEBXX9vqUOKe4fW1j8xI19xFJIsRTrpSyalVTrUr0JJquVEOVHRntN+UrKbVBjLsYwUIvNrf+u7n7DGQnqcwT/dGsf/O1iv3SywWfoqt2AdSLrTzndBI8wLV50oJP2f+A9HpHQt/j0vwYwKfVRcT4vMRda7Rga1C4ZFgffGexYd+ZHY4lvZyivpCgLmGb6iM7l9/9bLKuiqLL4ME13UEsHCJXM/PTSAAAAqgEAAFBLAwQUAAgICAC5ZHpQAAAAAAAAAAAAAAAANgAAAFNTTE9yZGVyc1JlcG9ydF8yMDIwXzAzXzI2XzEyXzM3XzUwL09yZGVyRGV0YWlscy9PUkRFUq1Ty07DMBD8F5/zaCoOkGObHCpFFJX2AIjDEm8bC8eJ7E1FqPLvOA2OWsSFFsmH3R1rNN4ZH9hSc9QJEghpWHxgVd/3heAsZgVRbeIwNEb6RySQVQ4ywAJBUhGYRvECecDfw30UHm+Ey1WSrpjHqNAIfGFpVCOlZwlRkdgK1MaNDAE1Y1drUWlBretVRTiCb03b6/qjoho0teFs83RUZFDKi0ke0yw7YUlQij3qdl4pgpzS0i7Qac1B44MEtcLtz9FakEQ3RNBSoCHHlQCNmLT174jGHPvh0HfeYFkmVL+sl8uN86WlGNzLFvcp81wWrkrBucWCsHQ17DQiP30Zx73Iv7vu1SZIQ47XP2zQEkZ9JkVptwplbZmmk+jOj6b+9GYd3caTiT3P9kpuU0vIZ+1S70CJTyBRqdFGB26MM8CS4geNiW7qWmJpkw66XZ8A/7HL0ejz/zMvQO3GtXXdF1BLBwjifmOyXwEAANUDAABQSwECFAAUAAgICAC5ZHpQlcz89NIAAACqAQAAMAAAAAAAAAAAAAAAAAAAAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjBfMDNfMjZfMTJfMzdfNTAvUmVwb3J0SGVhZGVyUEsBAhQAFAAICAgAuWR6UOJ+Y7JfAQAA1QMAADYAAAAAAAAAAAAAAAAAMAEAAFNTTE9yZGVyc1JlcG9ydF8yMDIwXzAzXzI2XzEyXzM3XzUwL09yZGVyRGV0YWlscy9PUkRFUlBLBQYAAAAAAgACAMIAAADzAgAAAAA="
+  "content": "UEsDBBQACAgIACI5nlAAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjBfMDRfMzBfMDdfMDlfMDQvUmVwb3J0SGVhZGVytY5BbsIwEEXvMmuwTSCh+AwIEMmqFQsrGbCFsaOxgwRR7l4XEI2673Lmvz9veiBsPcWNuiBIKMv1lhqksH9sYfKKK/OIM5GJqVhM56ISSylWUixYthKzWf6Z0FZRuhJTG2SfisF3VGN1a3+qu99wRIL86sE93cp5d7uYu4rGuwRdle2wjGTcKaUb7xCGyZv2dFLuD7zHIxK6Gp/+9wA6xjZIzsclZn2tLEONykbNQucajQ1rzvyoDfHtCOUfRZbPYRjpA1qb3v9vcV4US5HEh2H4BlBLBwiXaKHF0wAAAKoBAABQSwMEFAAICAgAIjmeUAAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAyMF8wNF8zMF8wN18wOV8wNC9PcmRlckRldGFpbHMvT1JERVKtU8tOwzAQ/Bef82gqDpBjmxwqRRSV9gCIwxJvGwvHiexNRajy7zgNjlrEhRbJh90dazTeGR/YUnPUCRIIaVh8YFXf94XgLGYFUW3iMDRG+kckkFUOMsACQVIRmEbxAnnA38N9FB5vhMtVkq6Yx6jQCHxhaVQjpWcJUZHYCtTGjQwBNWNXa1FpQa3rVUU4gm9N2+v6o6IaNLXhbPN0VGRQyotJHtMsO2FJUIo96nZeKYKc0tIu0GnNQeODBLXC7c/RWpBEN0TQUqAhx5UAjZi09e+Ixhz74dB33mBZJlS/rJfLjfOlpRjcyxb3KfNcFq5KwbnFgrB0New0Ij99Gce9yL+77tUmSEOO1z9s0BJGfSZFabcKZW2ZppPozo+m/vRmHd3Gk4k9z/ZKblNLyGftUu9AiU8gUanRRgdujDPAkuIHjYlu6lpiaZMOul2fAP+xy9Ho8/8zL0DtxrV13RdQSwcI4n5jsl8BAADVAwAAUEsBAhQAFAAICAgAIjmeUJdoocXTAAAAqgEAADAAAAAAAAAAAAAAAAAAAAAAAFNTTE9yZGVyc1JlcG9ydF8yMDIwXzA0XzMwXzA3XzA5XzA0L1JlcG9ydEhlYWRlclBLAQIUABQACAgIACI5nlDifmOyXwEAANUDAAA2AAAAAAAAAAAAAAAAADEBAABTU0xPcmRlcnNSZXBvcnRfMjAyMF8wNF8zMF8wN18wOV8wNC9PcmRlckRldGFpbHMvT1JERVJQSwUGAAAAAAIAAgDCAAAA9AIAAAAA"
 }
 ```

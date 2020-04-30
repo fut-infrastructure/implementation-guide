@@ -15,9 +15,9 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "09bc09c1-ca16-460e-a079-1ed969bb18b5",
+  "id": "c8c0ed83-e8e7-4cfb-8c78-a166872bdde4",
   "meta": {
-    "lastUpdated": "2020-03-26T10:19:43.221+00:00"
+    "lastUpdated": "2020-04-29T19:33:48.175+00:00"
   },
   "type": "searchset",
   "total": 7,
@@ -35,7 +35,7 @@ __Response__
         "id": "3",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:05.985+00:00",
+          "lastUpdated": "2020-04-29T19:33:09.998+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -137,7 +137,7 @@ __Response__
             "extension": [
               {
                 "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-calibrationExpires",
-                "valueDateTime": "2020-03-27T11:19:05+01:00"
+                "valueDateTime": "2020-04-30T21:33:09+02:00"
               }
             ]
           }
@@ -154,7 +154,7 @@ __Response__
         "id": "40",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:34.432+00:00",
+          "lastUpdated": "2020-04-29T19:33:38.995+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -319,7 +319,7 @@ __Response__
         "id": "44",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:39.775+00:00",
+          "lastUpdated": "2020-04-29T19:33:44.813+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -428,7 +428,7 @@ __Response__
         "id": "46",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:40.420+00:00",
+          "lastUpdated": "2020-04-29T19:33:45.511+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -537,7 +537,7 @@ __Response__
         "id": "48",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:40.822+00:00",
+          "lastUpdated": "2020-04-29T19:33:45.889+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -646,7 +646,7 @@ __Response__
         "id": "49",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:41.275+00:00",
+          "lastUpdated": "2020-04-29T19:33:46.180+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -755,7 +755,7 @@ __Response__
         "id": "55",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-03-26T10:19:42.966+00:00",
+          "lastUpdated": "2020-04-29T19:33:47.834+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]

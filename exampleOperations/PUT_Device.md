@@ -1,9 +1,9 @@
-`PUT [base]/Device/56`
+`PUT [base]/Device/114`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRGV2aWNlTWV0cmljLnJlYWQiLCJEZXZpY2VNZXRyaWMud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWM5ZGQ4NWYtMTkxOS00MjgyLWI3YzAtZGI4MmVkN2Q3MTVlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS5yZWFkIiwiRGV2aWNlLndyaXRlIiwiRGV2aWNlVXNlU3RhdGVtZW50LnJlYWQiXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzI2NDI0In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Device",
-  "id": "56",
+  "id": "114",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T10:19:43.946+00:00",
+    "lastUpdated": "2020-04-29T19:34:09.148+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -26,10 +26,13 @@ __Body__:
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-privatelyOwned",
-      "valueBoolean": true
+      "valueBoolean": false
     }
   ],
-  "status": "inactive"
+  "status": "active",
+  "owner": {
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/28362"
+  }
 }
 ```
 
@@ -37,10 +40,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "56",
+  "id": "114",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2020-03-26T10:19:44.712+00:00",
+    "versionId": "1",
+    "lastUpdated": "2020-04-29T19:34:09.148+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -48,9 +51,12 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device-privatelyOwned",
-      "valueBoolean": true
+      "valueBoolean": false
     }
   ],
-  "status": "inactive"
+  "status": "active",
+  "owner": {
+    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/28362"
+  }
 }
 ```

@@ -18,7 +18,7 @@ __Response__
   "id": "875",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-03-26T12:59:36.189+00:00",
+    "lastUpdated": "2020-04-29T19:25:25.202+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -66,7 +66,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/7348"
+      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/24204"
     }
   ],
   "status": "completed",
@@ -78,10 +78,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "3cd282b7-792b-40cb-809f-bda06618cb11"
+    "text": "95c8b167-411d-4a3b-9a35-16ebef14dba1"
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/40400"
+    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/91675"
   },
   "context": {
     "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/874"
