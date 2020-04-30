@@ -2,17 +2,12 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
+## 2020.3 (2020-04-30)
 
 ### Custom operations
-#### System operations
 #### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
+- Updated descriptions for reporting operations
+- Added traverse-to-sor instance operation
 
 ## 2020.2 (2020-03-27)
 
