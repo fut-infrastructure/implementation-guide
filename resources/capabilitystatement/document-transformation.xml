@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
     <id value="document-transformation"/>
     <status value="active"/>
-    <date value="2020-03-25T04:08:23+00:00"/>
+    <date value="2020-04-30T03:12:58+00:00"/>
     <publisher value="Not provided"/>
     <kind value="instance"/>
     <software>
         <name value="document-transformation"/>
-        <version value="1.2.0"/>
+        <version value="1.3.0"/>
     </software>
     <implementation>
         <description value="eHealth document-transformation service"/>
@@ -403,6 +403,30 @@
             </searchParam>
         </resource>
         <operation>
+            <name value="transform-to-observation"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-observation"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-from-QRD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-to-appointment"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-appointment"/>
+            </definition>
+        </operation>
+        <operation>
+            <name value="transform-to-APD"/>
+            <definition>
+                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD"/>
+            </definition>
+        </operation>
+        <operation>
             <name value="transform-to-QFDD"/>
             <definition>
                 <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD"/>
@@ -430,30 +454,6 @@
             <name value="transform-to-QRD"/>
             <definition>
                 <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-from-QRD"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-observation"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-observation"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-appointment"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-appointment"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="transform-to-APD"/>
-            <definition>
-                <reference value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD"/>
             </definition>
         </operation>
         <operation>

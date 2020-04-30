@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="reporting"/>
    <status value="active"/>
-   <date value="2020-03-19T04:09:22+00:00"/>
+   <date value="2020-04-30T03:13:21+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="reporting"/>
-      <version value="1.1.0"/>
+      <version value="1.2.0"/>
    </software>
    <implementation>
       <description value="eHealth reporting service"/>
@@ -61,21 +61,15 @@
          </searchParam>
       </resource>
       <operation>
-         <name value="fetch-careplan-and-episode-of-care-stats"/>
-         <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-and-episode-of-care-stats"/>
-         </definition>
-      </operation>
-      <operation>
          <name value="schedule-careplan-and-episode-of-care-stats"/>
          <definition>
             <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-schedule-careplan-and-episode-of-care-stats"/>
          </definition>
       </operation>
       <operation>
-         <name value="fetch-careplan-customization-stats"/>
+         <name value="fetch-careplan-and-episode-of-care-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-customization-stats"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-and-episode-of-care-stats"/>
          </definition>
       </operation>
       <operation>
@@ -85,9 +79,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-careplan-duration-stats"/>
+         <name value="fetch-careplan-customization-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-duration-stats"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-customization-stats"/>
          </definition>
       </operation>
       <operation>
@@ -97,9 +91,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-careplans-by-patient"/>
+         <name value="fetch-careplan-duration-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplans-by-patient"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-duration-stats"/>
          </definition>
       </operation>
       <operation>
@@ -109,9 +103,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-careteam-stats"/>
+         <name value="fetch-careplans-by-patient"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careteam-stats"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplans-by-patient"/>
          </definition>
       </operation>
       <operation>
@@ -121,9 +115,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-measurement-stats"/>
+         <name value="fetch-careteam-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-measurement-stats"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careteam-stats"/>
          </definition>
       </operation>
       <operation>
@@ -133,9 +127,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-patient-devices"/>
+         <name value="fetch-measurement-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-devices"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-measurement-stats"/>
          </definition>
       </operation>
       <operation>
@@ -145,9 +139,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-patient-gdpr"/>
+         <name value="fetch-patient-devices"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-gdpr"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-devices"/>
          </definition>
       </operation>
       <operation>
@@ -157,9 +151,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-patient-total"/>
+         <name value="fetch-patient-gdpr"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-total"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-gdpr"/>
          </definition>
       </operation>
       <operation>
@@ -169,9 +163,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-practitioner-gdpr"/>
+         <name value="fetch-patient-total"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-practitioner-gdpr"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-total"/>
          </definition>
       </operation>
       <operation>
@@ -181,9 +175,9 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-practitioner-stats"/>
+         <name value="fetch-practitioner-gdpr"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-practitioner-stats"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-practitioner-gdpr"/>
          </definition>
       </operation>
       <operation>
@@ -193,15 +187,21 @@
          </definition>
       </operation>
       <operation>
-         <name value="fetch-ssl-orders"/>
+         <name value="fetch-practitioner-stats"/>
          <definition>
-            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-ssl-orders"/>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-practitioner-stats"/>
          </definition>
       </operation>
       <operation>
          <name value="schedule-ssl-orders"/>
          <definition>
             <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-schedule-ssl-orders"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="fetch-ssl-orders"/>
+         <definition>
+            <reference value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-ssl-orders"/>
          </definition>
       </operation>
    </rest>

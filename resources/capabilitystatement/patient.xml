@@ -2,7 +2,7 @@
     <id value="patient"/>
     <url value="http://ehealth.sundhed.dk/fhir/CapabilityStatement/patient"/>
     <status value="active"/>
-    <date value="2020-03-26T08:15:42+00:00"/>
+    <date value="2020-04-30T08:21:53+00:00"/>
     <publisher value="Trifork"/>
     <kind value="instance"/>
     <software>
@@ -18,10 +18,10 @@
     <format value="application/fhir+json"/>
     <patchFormat value="application/json-patch+json"/>
     <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"/>
     </profile>
     <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"/>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"/>
     </profile>
     <profile>
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"/>
@@ -30,10 +30,10 @@
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
     </profile>
     <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"/>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
     </profile>
     <profile>
-        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"/>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"/>
     </profile>
     <rest>
         <mode value="server"/>
@@ -57,6 +57,9 @@
             </service>
         </security>
         <resource>
+            <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
+                <valueDecimal value="91"/>
+            </extension>
             <type value="Appointment"/>
             <profile>
                 <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"/>
@@ -198,7 +201,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="88"/>
+                <valueDecimal value="96"/>
             </extension>
             <type value="CodeSystem"/>
             <profile>
@@ -343,7 +346,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="5221"/>
+                <valueDecimal value="6391"/>
             </extension>
             <type value="Communication"/>
             <profile>
@@ -553,7 +556,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="205"/>
+                <valueDecimal value="207"/>
             </extension>
             <type value="Patient"/>
             <profile>
@@ -1137,7 +1140,7 @@
         </resource>
         <resource>
             <extension url="http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount">
-                <valueDecimal value="84"/>
+                <valueDecimal value="88"/>
             </extension>
             <type value="ValueSet"/>
             <profile>
@@ -1436,6 +1439,12 @@
             </definition>
         </operation>
         <operation>
+            <name value="meta-add"/>
+            <definition>
+                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-add"/>
+            </definition>
+        </operation>
+        <operation>
             <name value="meta"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta"/>
@@ -1445,12 +1454,6 @@
             <name value="meta"/>
             <definition>
                 <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter--meta"/>
-            </definition>
-        </operation>
-        <operation>
-            <name value="meta-add"/>
-            <definition>
-                <reference value="https://localhost:8080/fhir/OperationDefinition/SearchParameter-i-meta-add"/>
             </definition>
         </operation>
         <operation>
