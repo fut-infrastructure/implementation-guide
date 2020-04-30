@@ -38,6 +38,16 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `ASSEMBLER_QRD_INVALID_QUESTIONNAIRE_RELATED_COMPOSITION`: There must be just 1 eHealthComposition related to eHealthQuestionnaire
 
+- `ASSEMBLER_APD_MISSING_SUPPORTING_INFORMATION`: Appointment must have supportingInformation
+
+- `ASSEMBLER_APD_MISSING_PATIENT_PARTICIPANT`: Appointment must have at least one Patient participant
+
+- `ASSEMBLER_APD_MISSING_RESPONSIBLE_ORGANIZATION`: Appointment must have responsible-organization
+
+- `ASSEMBLER_APD_MISSING_PERFORMER`: Appointment must have performer
+
+- `ASSEMBLER_APD_MISSING_RESPONSIBLE_PRACTITIONER`: Appointment must have responsible Practitioner
+
 #### ehealth-careplan
 
 - `CAREPLAN_APPLY_NO_PLANDEFINITION`: There is no PlanDefinition with id %s
@@ -216,6 +226,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `MEASUREMENT_SUBMITMEASUREMENT_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
+- `MEASUREMENT_SUBMITMEASUREMENT_MORE_THAN_ONE_DEVICE_QUALITY`: Only one device quality allowed for each observation/media
+
 - `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
 
 #### ehealth-organization
@@ -223,6 +235,8 @@ If a requests result in an error, the error message can be obtained from the `di
 - `ORGANIZATION_SOURCE_MUST_BE_MANUAL`: The operation can only be performed for Organization with source "manual"
 
 - `ORGANIZATION_IDENTIFIER_SYSTEM_NOT_ALLOWED_FOR_SOURCE_MANUAL`: Identifier system is not allowed for Organization with source "manual"
+
+- `ORGANIZATION_TRAVERSE_TO_SOR_NOT_POSSIBLE`: No related SOR organization could be found for: %s
 
 #### ehealth-plandefinition
 
