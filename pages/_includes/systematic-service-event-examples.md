@@ -1281,7 +1281,7 @@ Message body:
 {
   "messageType": "EHealthContextEvent",
   "messageVersion": "1.0",
-  "eventType": "created",
+  "eventType": "updated",
   "resourceReference": "https://document-transformation.cit-document-transformation-701.local/fhir/DocumentReference/24",
   "resourceVersion": "2",
   "context": "document-published"
@@ -1481,27 +1481,28 @@ Message body:
   "messageType": "EHealthContextEvent",
   "messageVersion": "1.0",
   "eventType": "created",
-  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/35469",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/16802",
   "context": "measurement-missing"
 }
 Message properties:
 {
-date = Fri, 14 Feb 2020 13:53:25 GMT
+date = Thu, 16 Apr 2020 12:12:19 GMT
 server = istio-envoy
 expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 4
+x-envoy-upstream-service-time = 1
 messageVersion = 1.0
 transfer-encoding = chunked
 messageType = EHealthContextEvent
 x-frame-options = SAMEORIGIN
 destination = topic://ehealth-procedurerequest.measurement-missing
-resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/28882
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/17174
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/16802
 pragma = no-cache
 resourceProfile = ehealth-procedurerequest
 context = measurement-missing
 content-type = text/plain; charset=ISO-8859-1
 eventType = created
-id = ID:task-7f7769ff6d-zmq2p-37349-1581685914515-1:7:418:1:1
+id = ID:task-56bdccf95c-8b857-33503-1587038881865-1:5:90:1:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthContextEvent
 }
