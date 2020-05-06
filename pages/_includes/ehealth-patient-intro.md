@@ -32,10 +32,13 @@ In the eHealth Infrastructure the Patient resource is primarily used in conjunct
 Certain data on an ehealth-patient are automatically updated based on the CPR system. This includes official name, 
 address, and of course the CPR number itself.
 
-When adding/updating an address (non-home address), the service will check the address strictly against DAWA (Danmarks Adressers Web API). A strict
-match is required. However, a client may loosen the validation by setting a request header x-address-validation-strategy 
-equal to "WASH" (see https://dawa.aws.dk/dok/api/adresse#datavask). In that case the best match is chosen - therefore
-it is important to check that the outcome was as expected.
+When adding/updating an address (non-home address), the service will by default "wash" the address using DAWA (Danmarks Adressers Web API).  
+See https://dawa.aws.dk/dok/api/adresse#datavask.   
+A client may overrule the default validation strategy by setting a request header `x-address-validation-strategy` 
+with the value "STRICT", "WASH" or "NONE".  
+If "STRICT" is used the request will fail if the address does not match strictly an address in DAWA.  
+If "WASH" is used (the default strategy) the client may want to verify that the wash outcome was as expected.  
+If "NONE" is used no validation/modification is performed (the address is stored as is).
 
 An ehealth-patient may be PATCH updated on paths complying with the regular expressions below.
 
