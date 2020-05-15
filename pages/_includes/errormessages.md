@@ -102,7 +102,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
 
-- `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: <DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>
+- `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: `<DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>`
 
 #### ehealth-documentreference
 
