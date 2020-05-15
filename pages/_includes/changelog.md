@@ -14,6 +14,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Appointment (ehealth-appointment / ehealth-videoappointment)
+- Binding to correct jurisdiction valueset is now enforced
+
 ## 2020.3 (2020-04-30)
 
 ### Custom operations
