@@ -73,6 +73,9 @@ podTemplate(label: label,
           s3Delete(bucket: config.s3.bucket, path: 'sitemap.txt')
           s3Upload(file:'static/sitemap.txt', bucket:config.s3.bucket, path:'sitemap.txt')
 
+          s3Delete(bucket: config.s3.bucket, path: 'robots.txt')
+          s3Upload(file:'static/robots.txt', bucket:config.s3.bucket, path:'robots.txt')
+
           if (version != "latest") {
             igPathLatestReleased = "latest-released/ig"
             s3Delete(bucket: config.s3.bucket, path: igPathLatestReleased)
