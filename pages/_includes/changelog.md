@@ -8,6 +8,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Custom operations
 #### System operations
+- Changed description and example of `-s-persist-login` operation
+
 #### Instance operations
 ### Code systems
 ### ValueSets
@@ -15,7 +17,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 
 #### Appointment (ehealth-appointment / ehealth-videoappointment)
-- Binding to correct jurisdiction valueset is now enforced
+- Changed binding to correct jurisdiction valueset is now enforced
+
+#### Organization (ehealth-organization)
+- Added description of extension organization-source  to intro
 
 ## 2020.3 (2020-04-30)
 

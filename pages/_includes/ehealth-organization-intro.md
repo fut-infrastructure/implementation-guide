@@ -2,7 +2,7 @@
 An Organizations is a formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.
 
 # Scope and Usage
-In scope of the eHealth infrastructure Organizations are limited to represent organizations in the Danish healthcare system as defined by the national health organization registry, SOR, and the joint municipalities IT community Support System Organisation, STS-ORG. 
+In scope of the eHealth infrastructure Organizations are limited to represent organizations in the Danish healthcare system as defined by the national health organization registry, SOR, and the joint municipalities IT community (KOMBIT) Support System Organisation, STS-ORG. 
 
 From these sources Organizations are automatically imported into the eHealth infrastructure. It is not the intention that users of the infrastructure should create any other Organization resources.
 
@@ -16,6 +16,12 @@ Organizations are imported into the eHealth infrastructure from SOR and STS-ORG.
 * CVR number: "urn:oid:2.16.840.1.113883.2.24.1.1"
 
 Organizations created manually are not allowed to have identifiers of types SOR-ID or KOMBIT STS-ORG-ID.
+
+### Source
+The origin of an Organization is maintained in the extension `organization-source` which currently has the following concepts:
+* `SOR` for an organisation imported from SOR
+* `STS-ORG` for an organisation imported from STS-ORG
+* `manual` for a manually created organisation
 
 ### Import and merge
 SOR supplies a list of updates each night. These updates will be merged into the existing organisation resources in the database.
