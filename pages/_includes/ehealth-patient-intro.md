@@ -62,3 +62,9 @@ __Path__ | __Description__
 /generalHealthCondition.* | 
 /functionalCapacity.* | 
 /extension.* | 
+
+# Name and Address Protection
+
+Patients with name and address protection are marked with security label 'restricted' (R in http://hl7.org/fhir/v3/Confidentiality). 
+
+The period of the name and address protection is expressed in an extention with url: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-nameandaddressprotection"

@@ -57,6 +57,16 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-general-health-condition" />
       </type>
     </element>
+    <element id="Patient.extension:nameAndAddressProtection">
+      <path value="Patient.extension" />
+      <sliceName value="nameAndAddressProtection" />
+      <short value="Period of name and address protection" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-nameandaddressprotection" />
+      </type>
+    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
