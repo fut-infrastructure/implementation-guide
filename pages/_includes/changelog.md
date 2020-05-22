@@ -2,18 +2,12 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
+## 2020.4 (2020-05-25)
 
 ### Custom operations
 #### System operations
 - Changed description and example of `-s-persist-login` operation
 
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
 ### Resource/profile changes
 
 #### Appointment (ehealth-appointment / ehealth-videoappointment)
