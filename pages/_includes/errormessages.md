@@ -348,3 +348,5 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION_AUTHOR_ORGANIZATION`: Composition.authorOrganization is mandatory for transformation
 
+- `TRANSFORMATION_APD_XML_MISSING`: Invalid input document reference, it must contain content with data of APD xml
+
