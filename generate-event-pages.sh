@@ -1,5 +1,5 @@
 #!/bin/bash
-projects="Questionnaire Measurement Organization Plan Careplan Terminology Device Task Library DocumentTransformation SslCatalogue SslCatalogueExcel SslOrder"
+projects="Questionnaire Measurement Organization Plan Careplan Terminology Device Task Library DocumentTransformation SslCatalogue SslCatalogue SslOrder"
 dir=service_event_messages
 branch=default:true #release%2F2019.6
 
