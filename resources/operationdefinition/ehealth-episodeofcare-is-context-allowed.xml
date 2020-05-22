@@ -1,34 +1,34 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
-    <id value="EpisodeOfCare-i-is-context-allowed"/>
-    <name value="is-context-allowed"/>
-    <status value="active"/>
-    <kind value="operation"/>
-    <description value="Checks that it is allowed to set an EpisodeOfCare as context.&#xd;&#xa;If the user requesting context is a patient, then the patient input parameter should be specified.&#xd;&#xa;If the user requesting context is a practitioner, then the careTeam input parameter should be specified.&#xd;&#xa;Throws an exception if it is not allowed to select the Episode Of Care context.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context."/>
-    <idempotent value="true"/>
-    <code value="is-context-allowed"/>
-    <resource value="EpisodeOfCare"/>
-    <system value="false"/>
-    <type value="false"/>
-    <instance value="true"/>
-    <parameter>
-        <name value="patient"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="1"/>
-        <type value="Reference"/>
-    </parameter>
-    <parameter>
-        <name value="careTeam"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="1"/>
-        <type value="Reference"/>
-    </parameter>
-    <parameter>
-        <name value="return"/>
-        <use value="out"/>
-        <min value="0"/>
-        <max value="1"/>
-        <type value="Parameters"/>
-    </parameter>
+   <id value="EpisodeOfCare-i-is-context-allowed"/>
+   <name value="is-context-allowed"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Checks that it is allowed to set an EpisodeOfCare as context.&#xd;&#xa;If the user requesting context is a patient, then the patient input parameter should be specified.&#xd;&#xa;If the user requesting context is a practitioner, then the careTeam input parameter should be specified.&#xd;&#xa;Throws an exception if it is not allowed to select the Episode Of Care context.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context. &#xd;&#xa;For a practitioner, two output parameters will be returned on success:&#xd;&#xa;- CareTeam: The Careteam that gave access&#xd;&#xa;- EpisodeOfCare/CarePlan: The EpisodeOfCare or CarePlan that referenced the CareTeam"/>
+   <idempotent value="true"/>
+   <code value="is-context-allowed"/>
+   <resource value="EpisodeOfCare"/>
+   <system value="false"/>
+   <type value="false"/>
+   <instance value="true"/>
+   <parameter>
+      <name value="patient"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="careTeam"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="return"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Parameters"/>
+   </parameter>
 </OperationDefinition>

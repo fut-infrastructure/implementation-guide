@@ -1,27 +1,27 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
-    <id value="EpisodeOfCare-i-update-care-teams"/>
-    <name value="update-care-teams"/>
-    <status value="active"/>
-    <kind value="operation"/>
-    <description value="Modify the care team assignment of the episode of care and all care plans that has the episode of care as context."/>
-    <idempotent value="false"/>
-    <code value="update-care-teams"/>
-    <resource value="EpisodeOfCare"/>
-    <system value="false"/>
-    <type value="false"/>
-    <instance value="true"/>
-    <parameter>
-        <name value="addCareteams"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="*"/>
-        <type value="Reference"/>
-    </parameter>
-    <parameter>
-        <name value="removeCareteams"/>
-        <use value="in"/>
-        <min value="0"/>
-        <max value="*"/>
-        <type value="Reference"/>
-    </parameter>
+   <id value="EpisodeOfCare-i-update-care-teams"/>
+   <name value="update-care-teams"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Modify the care team assignment of the episode of care and all care plans that has the episode of care as context."/>
+   <idempotent value="false"/>
+   <code value="update-care-teams"/>
+   <resource value="EpisodeOfCare"/>
+   <system value="false"/>
+   <type value="false"/>
+   <instance value="true"/>
+   <parameter>
+      <name value="addCareteams"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="removeCareteams"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type value="Reference"/>
+   </parameter>
 </OperationDefinition>
