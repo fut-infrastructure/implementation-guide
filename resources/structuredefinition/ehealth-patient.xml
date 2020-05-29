@@ -157,12 +157,10 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
     </element>
     <element id="Patient.address:officialHomeAddress">
       <path value="Patient.address" />
       <sliceName value="officialHomeAddress" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Address" />
