@@ -14,6 +14,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Careplan 
+- Added teamSchedule and statusSchedule
+
+#### EpisodeOfCare 
+- Added teamSchedule and statusSchedule
+
 ## 2020.4 (2020-05-25)
 
 ### Custom operations
