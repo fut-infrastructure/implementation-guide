@@ -6,7 +6,7 @@
   <title value="eHealth EpisodeOfCare" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="EpisodeOfCare" />
@@ -43,6 +43,30 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory" />
+      </type>
+    </element>
+    <element id="EpisodeOfCare.extension:statusSchedule">
+      <path value="EpisodeOfCare.extension" />
+      <sliceName value="statusSchedule" />
+      <short value="Status Schedule" />
+      <definition value="Contains a list of scheduled status changes" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-statusschedule" />
+      </type>
+    </element>
+    <element id="EpisodeOfCare.extension:teamSchedule">
+      <path value="EpisodeOfCare.extension" />
+      <sliceName value="teamSchedule" />
+      <short value="Team Schedule" />
+      <definition value="Contains a list of scheduled team changes" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamschedule" />
       </type>
     </element>
     <element id="EpisodeOfCare.diagnosis">

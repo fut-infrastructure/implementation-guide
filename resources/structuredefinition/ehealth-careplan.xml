@@ -6,7 +6,7 @@
   <title value="eHealth CarePlan" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="CarePlan" />
@@ -42,6 +42,30 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamHistory" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:statusSchedule">
+      <path value="CarePlan.extension" />
+      <sliceName value="statusSchedule" />
+      <short value="Status Schedule" />
+      <definition value="Contains a list of scheduled status changes" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-statusschedule" />
+      </type>
+    </element>
+    <element id="CarePlan.extension:teamSchedule">
+      <path value="CarePlan.extension" />
+      <sliceName value="teamSchedule" />
+      <short value="Team Schedule" />
+      <definition value="Contains a list of scheduled team changes" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-teamschedule" />
       </type>
     </element>
     <element id="CarePlan.definition">
