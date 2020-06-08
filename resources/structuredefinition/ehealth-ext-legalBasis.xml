@@ -5,7 +5,7 @@
   <name value="ehealth-ext-legalBasis" />
   <title value="Legal basis" />
   <status value="draft" />
-  <fhirVersion value="3.0.2" />
+  <fhirVersion value="3.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
