@@ -6,7 +6,7 @@
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="Scheduled status change" />
-  <fhirVersion value="3.0.2" />
+  <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />

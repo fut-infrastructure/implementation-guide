@@ -6,7 +6,7 @@
   <title value="eHealth EpisodeOfCare" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.2" />
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="EpisodeOfCare" />
