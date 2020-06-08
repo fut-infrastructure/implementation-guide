@@ -42,12 +42,12 @@
       <path value="Extension.extension.url" />
       <fixedUri value="status" />
     </element>
-    <element id="Extension.extension:status.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Extension.extension:status.value[x]:valueCode">
+      <path value="Extension.extension.valueCode" />
+      <sliceName value="valueCode" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="code" />
       </type>
       <binding>
         <strength value="required" />
