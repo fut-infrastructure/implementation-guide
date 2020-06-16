@@ -20,6 +20,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### EpisodeOfCare 
 - Added teamSchedule and statusSchedule
 
+#### CommunicationRequest 
+- Changed cardinality of BasedOn to 0..1
+
 ## 2020.4 (2020-05-25)
 
 ### Custom operations
