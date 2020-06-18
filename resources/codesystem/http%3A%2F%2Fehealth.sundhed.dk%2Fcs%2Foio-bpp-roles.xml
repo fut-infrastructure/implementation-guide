@@ -120,7 +120,7 @@
    <concept>
       <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
       <display value="Fejlmelder"/>
-      <definition value="Kan indberette fejl på telemedicinske løsninger og udstyr "/>
+      <definition value="Kan indberette fejl på telemedicinske løsninger og udstyr"/>
       <designation>
          <language value="da"/>
          <value value="Fejlmelder"/>
