@@ -22,6 +22,159 @@
       <source value="http://ehealth.sundhed.dk/cs/oio-bpp-roles"/>
       <target value="http://ehealth.sundhed.dk/cs/careteam-participant-role"/>
       <element>
+         <code value="urn:dk:sundhed:ehealth:role:citizen_enroller"/>
+         <display value="Borgeropretter"/>
+         <target>
+            <code value="citizenEnroller"/>
+            <display value="Citizen enroller"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:clinical_viewer"/>
+         <display value="Klinisk se adgang"/>
+         <target>
+            <code value="clinicalViewer"/>
+            <display value="Clinical viewer"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:monitoring_assistor"/>
+         <display value="Monitoreringsmedhjælper"/>
+         <target>
+            <code value="monitoringAssistor"/>
+            <display value="Monitoring assistor"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:monitoring_adjuster"/>
+         <display value="Monitoreringstilretter"/>
+         <target>
+            <code value="monitoring_adjuster"/>
+            <display value="Monitoring adjuster"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:report_user"/>
+         <display value="Nøgletalsmedarbejder"/>
+         <target>
+            <code value="reportUser"/>
+            <display value="Report user"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:questionnaire_editor"/>
+         <display value="Spørgeskemaeditor"/>
+         <target>
+            <code value="questionnaireEditor"/>
+            <display value="Questionnaire editor"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
+         <display value="Pakke- og forløbsbygger"/>
+         <target>
+            <code value="clinicalAdministrator"/>
+            <display value="Clinical administrator"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:clinical_supporter"/>
+         <display value="Klinisk supporter"/>
+         <target>
+            <code value="clinicalSupporter"/>
+            <display value="Clinical supporter"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:careteam_administrator"/>
+         <display value="Care Team administrator"/>
+         <target>
+            <code value="careteamAdministrator"/>
+            <display value="Careteam administrator"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
+         <display value="Bestiller af udstyr"/>
+         <target>
+            <code value="orderPlacer"/>
+            <display value="Order placer"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:service_and_logistics"/>
+         <display value="Service og logistik samarbejdspartner"/>
+         <target>
+            <code value="serviceAndLogistics"/>
+            <display value="Service and logistics"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
+         <display value="Fejlmelder"/>
+         <target>
+            <code value="incidentReporter"/>
+            <display value="Incident reporter"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:incident_manager"/>
+         <display value="Support samarbejdspartner"/>
+         <target>
+            <code value="incidentManager"/>
+            <display value="Incident manager"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible"/>
+         <display value="Katalogansvarlig"/>
+         <target>
+            <code value="catalogueResponsible"/>
+            <display value="Catalogue responsible"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_annotator"/>
+         <display value="Katalogopmærker"/>
+         <target>
+            <code value="catalogueAnnotator"/>
+            <display value="Catalogue annotator"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:ssl_contract_responsible"/>
+         <display value="Aftaleansvarlig"/>
+         <target>
+            <code value="contractResponsible"/>
+            <display value="Contract responsible"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
+         <code value="urn:dk:sundhed:ehealth:role:terminology_administrator"/>
+         <display value="Terminologiadministrator"/>
+         <target>
+            <code value="terminologyAdministrator"/>
+            <display value="Terminology administrator"/>
+            <equivalence value="equivalent"/>
+         </target>
+      </element>
+      <element>
          <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
          <display value="Telemedicinsk aktør"/>
          <target>
@@ -76,15 +229,6 @@
          </target>
       </element>
       <element>
-         <code value="urn:dk:sundhed:ehealth:role:questionnaire_editor"/>
-         <display value="Sundhedsfaglig spørgeskemaeditor"/>
-         <target>
-            <code value="questionnaireEditor"/>
-            <display value="Questionnaire editor"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
          <code value="urn:dk:sundhed:ehealth:role:administrator"/>
          <display value="Administrator"/>
          <target>
@@ -99,15 +243,6 @@
          <target>
             <code value="incidentLocator"/>
             <display value="Incident locator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
-         <display value="Sundhedsfaglig administrator"/>
-         <target>
-            <code value="clinicalAdministrator"/>
-            <display value="Clinical administrator"/>
             <equivalence value="equivalent"/>
          </target>
       </element>
@@ -130,74 +265,11 @@
          </target>
       </element>
       <element>
-         <code value="urn:dk:sundhed:ehealth:role:terminology_administrator"/>
-         <display value="Terminologidministrator"/>
-         <target>
-            <code value="terminologyAdministrator"/>
-            <display value="Terminology administrator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
-         <display value="Bestiller af udstyr"/>
-         <target>
-            <code value="orderPlacer"/>
-            <display value="Order placer"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:service_and_logistics"/>
-         <display value="Service og logistik samarbejdspartner"/>
-         <target>
-            <code value="serviceAndLogistics"/>
-            <display value="Service and logistics"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
-         <display value="Fejlmelder"/>
-         <target>
-            <code value="incidentReporter"/>
-            <display value="Incident reporter"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
          <code value="urn:dk:sundhed:ehealth:role:supporter"/>
          <display value="Support samarbejdspartner"/>
          <target>
             <code value="supporter"/>
             <display value="Supporter"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible"/>
-         <display value="Katalogansvarlig"/>
-         <target>
-            <code value="catalogueResponsible"/>
-            <display value="Catalogue responsible"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:ssl_catalogue_annotator"/>
-         <display value="Katalogopmærker"/>
-         <target>
-            <code value="catalogueAnnotator"/>
-            <display value="Catalogue annotator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:ssl_contract_responsible"/>
-         <display value="Aftaleansvarlig"/>
-         <target>
-            <code value="contractResponsible"/>
-            <display value="Contract responsible"/>
             <equivalence value="equivalent"/>
          </target>
       </element>

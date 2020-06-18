@@ -19,87 +19,48 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
-      <code value="treatmentResponsible"/>
-      <display value="Treatment responsible"/>
-      <definition value="Treatment responsible"/>
+      <code value="citizenEnroller"/>
+      <display value="Citizen enroller"/>
+      <definition value="Citizen enroller"/>
       <designation>
          <language value="da"/>
-         <value value="Behandlingsansvarlig"/>
+         <value value="Borgeropretter"/>
       </designation>
    </concept>
    <concept>
-      <code value="monitoringResponsible"/>
-      <display value="Monitoring responsible"/>
-      <definition value="Monitoring responsible"/>
+      <code value="clinicalViewer"/>
+      <display value="Clinical viewer"/>
+      <definition value="Clinical viewer"/>
       <designation>
          <language value="da"/>
-         <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+         <value value="Klinisk se adgang"/>
       </designation>
    </concept>
    <concept>
-      <code value="monitoringDelegate"/>
-      <display value="Monitoring delegate"/>
-      <definition value="Monitoring delegate"/>
+      <code value="monitoringAssistor"/>
+      <display value="Monitoring assistor"/>
+      <definition value="Monitoring assistor"/>
       <designation>
          <language value="da"/>
          <value value="Monitoreringsmedhjælper"/>
       </designation>
-      <property>
-         <code value="deprecated"/>
-         <valueDateTime value="2019-09-18"/>
-      </property>
    </concept>
    <concept>
-      <code value="teleMedicineActor"/>
-      <display value="Tele medicine actor"/>
-      <definition value="Tele medicine actor"/>
+      <code value="monitoring_adjuster"/>
+      <display value="Monitoring adjuster"/>
+      <definition value="Monitoring adjuster"/>
       <designation>
          <language value="da"/>
-         <value value="Telemedicinsk aktør"/>
+         <value value="Monitoreringstilretter "/>
       </designation>
    </concept>
    <concept>
-      <code value="administrativePersonnel"/>
-      <display value="Administrative personnel"/>
-      <definition value="Administrative personnel"/>
-      <designation>
-         <language value="da"/>
-         <value value="Administrativt personale"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="healthcareProfessional"/>
-      <display value="Healthcare professional"/>
-      <definition value="Healthcare Professional"/>
-      <designation>
-         <language value="da"/>
-         <value value="Sundhedsfaglig"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="reportGenerator"/>
-      <display value="Report, statistics and data extractor"/>
+      <code value="reportUser"/>
+      <display value="Report user"/>
+      <definition value="Report user"/>
       <designation>
          <language value="da"/>
          <value value="Nøgletalsmedarbejder"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="clinicalAdministrator"/>
-      <display value="Clinical administrator"/>
-      <definition value="Clinical administrator"/>
-      <designation>
-         <language value="da"/>
-         <value value="Sundhedsfaglig administrator"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="administrator"/>
-      <display value="Administrator"/>
-      <definition value="Administrator"/>
-      <designation>
-         <language value="da"/>
-         <value value="Administrator"/>
       </designation>
    </concept>
    <concept>
@@ -108,16 +69,43 @@
       <definition value="Questionnaire editor"/>
       <designation>
          <language value="da"/>
-         <value value="Sundhedsfaglig spørgeskemaeditor"/>
+         <value value="Spørgeskemaeditor"/>
       </designation>
    </concept>
    <concept>
-      <code value="supporter"/>
-      <display value="Supporter"/>
-      <definition value="Supporter at business partner"/>
+      <code value="clinicalAdministrator"/>
+      <display value="Clinical administrator"/>
+      <definition value="Clinical administrator"/>
       <designation>
          <language value="da"/>
-         <value value="Support samarbejdspartner"/>
+         <value value="Pakke- og forløbsbygger"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="clinicalSupporter"/>
+      <display value="Clinical supporter"/>
+      <definition value="Clinical supporter"/>
+      <designation>
+         <language value="da"/>
+         <value value="Klinisk supporter"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="careteamAdministrator"/>
+      <display value="Careteam administrator"/>
+      <definition value="Careteam administrator"/>
+      <designation>
+         <language value="da"/>
+         <value value="Care Team Administrator"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="orderPlacer"/>
+      <display value="Order placer"/>
+      <definition value="Placer of orders"/>
+      <designation>
+         <language value="da"/>
+         <value value="Bestiller af udstyr"/>
       </designation>
    </concept>
    <concept>
@@ -127,6 +115,24 @@
       <designation>
          <language value="da"/>
          <value value="Service og logistik samarbejdspartner"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="incidentReporter"/>
+      <display value="Incident reporter"/>
+      <definition value="Reporter of incidents"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fejlmelder"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="incidentManager"/>
+      <display value="Incident manager"/>
+      <definition value="Incident manager"/>
+      <designation>
+         <language value="da"/>
+         <value value="Support samarbejdspartner"/>
       </designation>
    </concept>
    <concept>
@@ -157,22 +163,129 @@
       </designation>
    </concept>
    <concept>
-      <code value="orderPlacer"/>
-      <display value="Order placer"/>
-      <definition value="Placer of orders"/>
+      <code value="terminologyAdministrator"/>
+      <display value="Terminology administrator"/>
+      <definition value="Terminology administrator"/>
       <designation>
          <language value="da"/>
-         <value value="Bestiller af udstyr"/>
+         <value value="Terminologiadministrator"/>
       </designation>
    </concept>
    <concept>
-      <code value="incidentReporter"/>
-      <display value="Incident reporter"/>
-      <definition value="Reporter of incidents"/>
+      <code value="treatmentResponsible"/>
+      <display value="Treatment responsible"/>
+      <definition value="Treatment responsible"/>
       <designation>
          <language value="da"/>
-         <value value="Fejlmelder"/>
+         <value value="Behandlingsansvarlig"/>
       </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="monitoringResponsible"/>
+      <display value="Monitoring responsible"/>
+      <definition value="Monitoring responsible"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="monitoringDelegate"/>
+      <display value="Monitoring delegate"/>
+      <definition value="Monitoring delegate"/>
+      <designation>
+         <language value="da"/>
+         <value value="Monitoreringsmedhjælper"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2019-09-18"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="teleMedicineActor"/>
+      <display value="Tele medicine actor"/>
+      <definition value="Tele medicine actor"/>
+      <designation>
+         <language value="da"/>
+         <value value="Telemedicinsk aktør"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="administrativePersonnel"/>
+      <display value="Administrative personnel"/>
+      <definition value="Administrative personnel"/>
+      <designation>
+         <language value="da"/>
+         <value value="Administrativt personale"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="healthcareProfessional"/>
+      <display value="Healthcare professional"/>
+      <definition value="Healthcare Professional"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sundhedsfaglig"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="reportGenerator"/>
+      <display value="Report, statistics and data extractor"/>
+      <designation>
+         <language value="da"/>
+         <value value="Nøgletalsmedarbejder"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="administrator"/>
+      <display value="Administrator"/>
+      <definition value="Administrator"/>
+      <designation>
+         <language value="da"/>
+         <value value="Administrator"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="supporter"/>
+      <display value="Supporter"/>
+      <definition value="Supporter at business partner"/>
+      <designation>
+         <language value="da"/>
+         <value value="Support samarbejdspartner"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
    </concept>
    <concept>
       <code value="incidentLocator"/>
@@ -182,6 +295,10 @@
          <language value="da"/>
          <value value="Fejlfinder"/>
       </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
    </concept>
    <concept>
       <code value="userAdministrator"/>
@@ -191,6 +308,10 @@
          <language value="da"/>
          <value value="Brugeradministrator"/>
       </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
    </concept>
    <concept>
       <code value="teamAdministrator"/>
@@ -200,14 +321,9 @@
          <language value="da"/>
          <value value="Teamadministrator"/>
       </designation>
-   </concept>
-   <concept>
-      <code value="terminologyAdministrator"/>
-      <display value="Terminology administrator"/>
-      <definition value="Terminology administrator"/>
-      <designation>
-         <language value="da"/>
-         <value value="Terminologiadministrator"/>
-      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
    </concept>
 </CodeSystem>

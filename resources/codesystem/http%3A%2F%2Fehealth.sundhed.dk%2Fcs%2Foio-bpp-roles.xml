@@ -19,54 +19,45 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
-      <display value="Telemedicinsk aktør"/>
-      <definition value="Fremsøge grupper af borgere, se TM forløb og pakker hos borger, se måleregime borger, vurdere/håndtere/kvittere for måledata fra borger, se grænseværdier til borger, oprette pausering for borger, se kommunikation til/fra borger, skrive kommunikation til borger, se videoaftaler med borger, opret videoaftale, afvikle videoaftale"/>
+      <code value="urn:dk:sundhed:ehealth:role:citizen_enroller"/>
+      <display value="Borgeropretter"/>
+      <definition value="Kan oprette borger i telemedicinsk forløb og tildele borger en foruddefineret plan"/>
       <designation>
          <language value="da"/>
-         <value value="Telemedicinsk aktør"/>
+         <value value="Borgeropretter"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:administrative_personnel"/>
-      <display value="Administrativt personale"/>
-      <definition value="Opret borger, tildel borger TM forløb og pakker, opret måleregime for borger, tildele standard grænseværdier til borger"/>
+      <code value="urn:dk:sundhed:ehealth:role:clinical_viewer"/>
+      <display value="Klinisk se adgang"/>
+      <definition value="Kan se telemedicinske Måledata for at kunne understøtte dagligt ikke-telemedicinsk arbejde rettet på konkret borger"/>
       <designation>
          <language value="da"/>
-         <value value="Administrativt personale"/>
+         <value value="Klinisk se adgang"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:healthcare_professional"/>
-      <display value="Sundhedsfaglig"/>
-      <definition value="Fremsøge borger, se borgers stamdata, se måledata fra borger, se pausering for borger"/>
+      <code value="urn:dk:sundhed:ehealth:role:monitoring_assistor"/>
+      <display value="Monitoreringsmedhjælper"/>
+      <definition value="Kan håndtere Måledata og kommunikation til/fra borger"/>
       <designation>
          <language value="da"/>
-         <value value="Sundhedsfaglig"/>
+         <value value="Monitoreringsmedhjælper"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:monitoring_responsible"/>
-      <display value="Sundhedsfaglig monitoreringsansvarlig"/>
-      <definition value="Ændre i oprettelse af borger, slet/fjern oprettelse af borger, tilføje yderligere til borgers stamdata, ændre i borgers stamdata, slet i borgers stamdata, ændre i forløb/pakker for borger, slet TM forløb/pakke hos borger, ændre i måleregime for borger, slet måleregime for borger, slet/fjern måledata fra borger, ændre i grænseværdier for borger, slet grænseværdier for borger, ændre i pausering for borger, slet pausering for borger, håndtere/kvittere for/sortere kommunikation med borger, ændre videoaftale, slet videoaftale"/>
+      <code value="urn:dk:sundhed:ehealth:role:monitoring_adjuster"/>
+      <display value="Monitoreringstilretter"/>
+      <definition value="Kan håndtere og ændre i Måleregime, Grænseværdier og telemedicinsk forløb/pakke til borger"/>
       <designation>
          <language value="da"/>
-         <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+         <value value="Monitoreringstilretter"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:treatment_responsible"/>
-      <display value="Behandlingsansvarlig"/>
-      <definition value="Fremsøge grupper af borgere, se TM forløb og pakker hos borger, se måleregime borger, vurdere/håndtere/kvittere for måledata fra borger, se grænseværdier til borger, opprette pausering for borger, se kommunikation til/fra borger, skrive kommunikation til borger, se videoaftaler med borger, opret videoaftale, afvikle videoaftale"/>
-      <designation>
-         <language value="da"/>
-         <value value="Behandlingsansvarlig"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="urn:dk:sundhed:ehealth:role:report_generator"/>
+      <code value="urn:dk:sundhed:ehealth:role:report_user"/>
       <display value="Nøgletalsmedarbejder"/>
-      <definition value="Fremsøge alle borgere, se statistisk data, udtrække statistisk data, generere statistisk rapport"/>
+      <definition value="Kan udføre datatrækning, rapporter og statistik"/>
       <designation>
          <language value="da"/>
          <value value="Nøgletalsmedarbejder"/>
@@ -75,61 +66,43 @@
    <concept>
       <code value="urn:dk:sundhed:ehealth:role:questionnaire_editor"/>
       <display value="Sundhedsfaglig spørgeskemaeditor"/>
-      <definition value="Se spørgeskema, opret spørgeskema, teste spørgeskema, ændre spørgeskema"/>
+      <definition value="Kan udarbejde, ændre og teste Spørgeskema"/>
       <designation>
          <language value="da"/>
          <value value="Sundhedsfaglig spørgeskemaeditor"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:administrator"/>
-      <display value="Administrator"/>
-      <definition value="Se generelle grænseværdier, opret generelle grænseværdier, ændre generelle grænseværdier"/>
-      <designation>
-         <language value="da"/>
-         <value value="Administrator"/>
-      </designation>
-   </concept>
-   <concept>
-      <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
-      <display value="Fejlfinder"/>
-      <definition value="Se hændelseslog, søge i hændelseslog ud fra div. kriterier fx borger, bruger, dato, hændelse"/>
-      <designation>
-         <language value="da"/>
-         <value value="Fejlfinder"/>
-      </designation>
-   </concept>
-   <concept>
       <code value="urn:dk:sundhed:ehealth:role:clinical_administrator"/>
-      <display value="Sundhedsfaglig administrator"/>
-      <definition value="Se TM forløb, opret TM forløb, ændre TM forløb, slet TM forløb, se måleregime for udførelse af TM pakker/forløb, opret måleregime for udførelse af TM pakker/forløb, ændre måleregime for udførelse af TM pakker/forløb, slet måleregime for udførelse af TM pakker/forløb"/>
+      <display value="Pakke- og forløbsbygger"/>
+      <definition value="Kan udvælge Spørgeskema/Måling, sammensætte indholdet af pakker og forløb, navngive pakke/forløb og tilrette de generelle Grænseværdier"/>
       <designation>
          <language value="da"/>
-         <value value="Sundhedsfaglig administrator"/>
+         <value value="Pakke- og forløbsbygger"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:user_administrator"/>
-      <display value="Brugeradministrator"/>
-      <definition value="Se bruger, opret bruger, ændre bruger, slet bruger"/>
+      <code value="urn:dk:sundhed:ehealth:role:clinical_supporter"/>
+      <display value="Klinisk supporter"/>
+      <definition value="Kan undersøge hændelser ud fra div. kriterier fx borger, bruger, dato, hændelse"/>
       <designation>
          <language value="da"/>
-         <value value="Brugeradministrator"/>
+         <value value="Klinisk supporter"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:team_administrator"/>
-      <display value="Teamadministrator"/>
-      <definition value="Se team, opret team, ændre team, slet team"/>
+      <code value="urn:dk:sundhed:ehealth:role:careteam_administrator"/>
+      <display value="Care Team administrator"/>
+      <definition value="Kan håndtere Care Teams i den telemedicinske løsning"/>
       <designation>
          <language value="da"/>
-         <value value="Teamadministrator"/>
+         <value value="Care Team administrator"/>
       </designation>
    </concept>
    <concept>
       <code value="urn:dk:sundhed:ehealth:role:order_placer"/>
       <display value="Bestiller af udstyr"/>
-      <definition value="Se udstyr koblet på TM forløb/pakke, bestil udstyr til TM forløb/pakke, ændre bestilling, slette bestilling, se track og trace på bestilling"/>
+      <definition value="Håndterer bestilling af telemedicinsk udstyr ud fra lokale aftaler"/>
       <designation>
          <language value="da"/>
          <value value="Bestiller af udstyr"/>
@@ -138,7 +111,7 @@
    <concept>
       <code value="urn:dk:sundhed:ehealth:role:service_and_logistics"/>
       <display value="Service og logistik samarbejdspartner"/>
-      <definition value="Modtage og behandle bestilling, håndtere track og trace på bestilling"/>
+      <definition value="Kan håndtere bestilling ud fra lokale aftaler"/>
       <designation>
          <language value="da"/>
          <value value="Service og logistik samarbejdspartner"/>
@@ -147,16 +120,16 @@
    <concept>
       <code value="urn:dk:sundhed:ehealth:role:incident_reporter"/>
       <display value="Fejlmelder"/>
-      <definition value="Sende fejlmelding, ændre fejlmelding, slette fejlmelding"/>
+      <definition value="Kan indberette fejl på telemedicinske løsninger og udstyr "/>
       <designation>
          <language value="da"/>
          <value value="Fejlmelder"/>
       </designation>
    </concept>
    <concept>
-      <code value="urn:dk:sundhed:ehealth:role:supporter"/>
+      <code value="urn:dk:sundhed:ehealth:role:incident_manager"/>
       <display value="Support samarbejdspartner"/>
-      <definition value="Modtage og behandle fejlmelding, håndtere track og trace på fejlsag/status/håndtering"/>
+      <definition value="Kan håndtere fejlmelding ud fra lokale aftaler"/>
       <designation>
          <language value="da"/>
          <value value="Support samarbejdspartner"/>
@@ -197,5 +170,148 @@
          <language value="da"/>
          <value value="Aftaleansvarlig"/>
       </designation>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
+      <display value="Telemedicinsk aktør"/>
+      <definition value="Fremsøge grupper af borgere, se TM forløb og pakker hos borger, se måleregime borger, vurdere/håndtere/kvittere for måledata fra borger, se grænseværdier til borger, oprette pausering for borger, se kommunikation til/fra borger, skrive kommunikation til borger, se videoaftaler med borger, opret videoaftale, afvikle videoaftale"/>
+      <designation>
+         <language value="da"/>
+         <value value="Telemedicinsk aktør"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:administrative_personnel"/>
+      <display value="Administrativt personale"/>
+      <definition value="Opret borger, tildel borger TM forløb og pakker, opret måleregime for borger, tildele standard grænseværdier til borger"/>
+      <designation>
+         <language value="da"/>
+         <value value="Administrativt personale"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:healthcare_professional"/>
+      <display value="Sundhedsfaglig"/>
+      <definition value="Fremsøge borger, se borgers stamdata, se måledata fra borger, se pausering for borger"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sundhedsfaglig"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:monitoring_responsible"/>
+      <display value="Sundhedsfaglig monitoreringsansvarlig"/>
+      <definition value="Ændre i oprettelse af borger, slet/fjern oprettelse af borger, tilføje yderligere til borgers stamdata, ændre i borgers stamdata, slet i borgers stamdata, ændre i forløb/pakker for borger, slet TM forløb/pakke hos borger, ændre i måleregime for borger, slet måleregime for borger, slet/fjern måledata fra borger, ændre i grænseværdier for borger, slet grænseværdier for borger, ændre i pausering for borger, slet pausering for borger, håndtere/kvittere for/sortere kommunikation med borger, ændre videoaftale, slet videoaftale"/>
+      <designation>
+         <language value="da"/>
+         <value value="Sundhedsfaglig monitoreringsansvarlig"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:treatment_responsible"/>
+      <display value="Behandlingsansvarlig"/>
+      <definition value="Fremsøge grupper af borgere, se TM forløb og pakker hos borger, se måleregime borger, vurdere/håndtere/kvittere for måledata fra borger, se grænseværdier til borger, opprette pausering for borger, se kommunikation til/fra borger, skrive kommunikation til borger, se videoaftaler med borger, opret videoaftale, afvikle videoaftale"/>
+      <designation>
+         <language value="da"/>
+         <value value="Behandlingsansvarlig"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:report_generator"/>
+      <display value="Nøgletalsmedarbejder"/>
+      <definition value="Fremsøge alle borgere, se statistisk data, udtrække statistisk data, generere statistisk rapport"/>
+      <designation>
+         <language value="da"/>
+         <value value="Nøgletalsmedarbejder"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:administrator"/>
+      <display value="Administrator"/>
+      <definition value="Se generelle grænseværdier, opret generelle grænseværdier, ændre generelle grænseværdier"/>
+      <designation>
+         <language value="da"/>
+         <value value="Administrator"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
+      <display value="Fejlfinder"/>
+      <definition value="Se hændelseslog, søge i hændelseslog ud fra div. kriterier fx borger, bruger, dato, hændelse"/>
+      <designation>
+         <language value="da"/>
+         <value value="Fejlfinder"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:user_administrator"/>
+      <display value="Brugeradministrator"/>
+      <definition value="Se bruger, opret bruger, ændre bruger, slet bruger"/>
+      <designation>
+         <language value="da"/>
+         <value value="Brugeradministrator"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:team_administrator"/>
+      <display value="Teamadministrator"/>
+      <definition value="Se team, opret team, ændre team, slet team"/>
+      <designation>
+         <language value="da"/>
+         <value value="Teamadministrator"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
+   </concept>
+   <concept>
+      <code value="urn:dk:sundhed:ehealth:role:supporter"/>
+      <display value="Support samarbejdspartner"/>
+      <definition value="Modtage og behandle fejlmelding, håndtere track og trace på fejlsag/status/håndtering"/>
+      <designation>
+         <language value="da"/>
+         <value value="Support samarbejdspartner"/>
+      </designation>
+      <property>
+         <code value="deprecated"/>
+         <valueDateTime value="2020-06-17"/>
+      </property>
    </concept>
 </CodeSystem>
