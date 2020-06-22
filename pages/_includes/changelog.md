@@ -14,6 +14,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Patient
+- Fixed krs profile name and slicing on identifier
+- Opened up that patients does not necessarily have an address (the case for patients with name and address protection)
+
 #### Careplan 
 - Added teamSchedule and statusSchedule
 
