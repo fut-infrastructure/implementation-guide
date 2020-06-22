@@ -21,8 +21,8 @@ function fetch_operation_definitions {
 				filename=${operation##*/} #extract substring after last slash
 				filename=ehealth-${filename/-s-/system-}.xml # prefix and postfix and replase -s with system
 				filename=${filename/-i-/-} #remove -i
+				filename=${filename/--/-} #remove -
 				filename=${filename,,} #to lower case
-				filename=${filename/plandefinition/plan-definition} #handle non standard name for plandefinition
 				echo "Fetching ${operation} and store as ${filename}"
 				curl -k -H "Content-Type: application/fhir+xml" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
 			else

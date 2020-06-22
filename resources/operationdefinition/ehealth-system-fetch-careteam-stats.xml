@@ -1,0 +1,40 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-fetch-careteam-stats"/>
+   <name value="fetch-careteam-stats"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="### Report Contents&#xa;This report contains counts of resources associated with CareTeams:&#xa;- EpisodeOfCare&#xa;- CarePlan&#xa;- Task: Count for each task category&#xa;### Grouping &#xa;This report is grouped by CareTeam. Each group is returned in a separate JSon file.&#xa;### Parameters&#xa;- organization: Filter on CareTeam.managingOrganization match&#xa;- period: Filter on:&#xa;    - CarePlan.period overlap for CarePlans&#xa;    - EpisodeOfCare.period overlap for EpisodeOfCare&#xa;    - Task.authoredOn inside period for Tasks&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.&#xa;### Example output&#xa;EHealthCareTeam is a Fhir resource. See the implementation guide for details&#xa;&#xa;    {&#xa;        'EHealthCareTeam': {&#xa;            'resourceType': 'CareTeam',&#xa;            'id': '12958',&#xa;            'meta': {&#xa;                'versionId': '1',&#xa;                'profile': ['http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam']&#xa;            },&#xa;            'identifier': [{&#xa;                    'id': '59f70e4e-1c31-4647-8c91-404939b6b14e',&#xa;                    'system': 'urn:ietf:rfc:3986'&#xa;                }&#xa;            ],&#xa;            'status': 'active',&#xa;            'name': '0cea5c11-af39-4e5c-8733-9f532ea9961a',&#xa;            'reasonCode': [{&#xa;                    'coding': [{&#xa;                            'system': 'http://ehealth.sundhed.dk/cs/conditions',&#xa;                            'code': 'TBD'&#xa;                        }&#xa;                    ]&#xa;                }&#xa;            ],&#xa;            'managingOrganization': [{&#xa;                    'reference': 'https://organization.local.ehealth.sundhed.dk/fhir/Organization/66642'&#xa;                }&#xa;            ]&#xa;        },&#xa;        'CareTeamSummary': {&#xa;            'episodeOfCareCount': 2,&#xa;            'carePlanCount': 6,&#xa;            'taskCountByCategory': {&#xa;                'MissingMeasurementResolving': 2&#xa;            }&#xa;        }&#xa;    }"/>
+   <idempotent value="false"/>
+   <code value="fetch-careteam-stats"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="anonymization"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type value="string"/>
+   </parameter>
+   <parameter>
+      <name value="organization"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="period"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Period"/>
+   </parameter>
+   <parameter>
+      <name value="return"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Binary"/>
+   </parameter>
+</OperationDefinition>
