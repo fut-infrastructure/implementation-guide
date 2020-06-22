@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="measurement"/>
    <status value="active"/>
-   <date value="2020-05-19T08:46:22+00:00"/>
+   <date value="2020-06-16T12:07:37+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="measurement"/>
-      <version value="1.5.1"/>
+      <version value="1.5.2"/>
    </software>
    <implementation>
       <description value="eHealth measurement service"/>

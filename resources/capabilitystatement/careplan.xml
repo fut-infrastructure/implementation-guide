@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="careplan"/>
    <status value="active"/>
-   <date value="2020-05-20T03:10:34+00:00"/>
+   <date value="2020-06-22T10:59:09+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="careplan"/>
-      <version value="1.4.1"/>
+      <version value="1.5.0"/>
    </software>
    <implementation>
       <description value="eHealth careplan service"/>
@@ -88,6 +88,16 @@
             <name value="status"/>
             <type value="token"/>
             <documentation value="draft | active | suspended | completed | entered-in-error | cancelled | unknown"/>
+         </searchParam>
+         <searchParam>
+            <name value="status-scheduled-time"/>
+            <type value="date"/>
+            <documentation value="Scheduled time for status change"/>
+         </searchParam>
+         <searchParam>
+            <name value="team-scheduled-time"/>
+            <type value="date"/>
+            <documentation value="Scheduled time for team change"/>
          </searchParam>
       </resource>
       <resource>
@@ -374,9 +384,19 @@
             <documentation value="The current status of the Episode of Care as provided (does not check the status history collection)"/>
          </searchParam>
          <searchParam>
+            <name value="status-scheduled-time"/>
+            <type value="date"/>
+            <documentation value="Scheduled time for status change"/>
+         </searchParam>
+         <searchParam>
             <name value="team"/>
             <type value="reference"/>
             <documentation value="The list of practitioners that may be facilitating this episode of care for specific purposes."/>
+         </searchParam>
+         <searchParam>
+            <name value="team-scheduled-time"/>
+            <type value="date"/>
+            <documentation value="Scheduled time for team change"/>
          </searchParam>
       </resource>
       <resource>
@@ -528,13 +548,13 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-validate"/>
+            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare--validate"/>
+            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-validate"/>
          </definition>
       </operation>
       <operation>
