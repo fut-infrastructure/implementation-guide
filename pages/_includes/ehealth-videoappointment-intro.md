@@ -10,6 +10,8 @@ the meeting PIN code and the URL at which the meeting takes place. This means th
 response instead of just the create request itself, and that the client cannot itself decide the meeting URL or the PIN code,
 which is defined in the scheduling template.
 
+The URL to the video appointment is accessible 15 minutes (currently fixed) before the meeting starts.
+
 The most important fields of the ehealth-videoappointment are described below:
 
 - description: The "subject" of the video appointment (textual description).
