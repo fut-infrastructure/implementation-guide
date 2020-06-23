@@ -4,7 +4,7 @@
   <name value="ehealth-skrsPatient" />
   <status value="draft" />
   <description value="This profile is for internal use by the infrastructure." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
