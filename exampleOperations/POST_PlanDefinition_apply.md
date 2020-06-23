@@ -1,9 +1,9 @@
-`POST [base]/PlanDefinition/208/$apply`
+`POST [base]/PlanDefinition/39/$apply`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmNiMDRlYzQtNGVhZS00ODA2LTgwODctZmRhMWE4ZWFhNjZiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uJGFwcGx5Il19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi8zMDE2MCIsImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0NhcmVUZWFtLzE0NDg2IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzY2MTk5IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzgyNjUzIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTEyYmFmOTMtNGE0Ni00NjNiLWI3NmYtOTk1YzY0YmQwMzY4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uJGFwcGx5Il19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTQ5My5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi85NDk4OCIsImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTQ5My5sb2NhbC9maGlyL0NhcmVUZWFtLzU2MjY1IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtcGxhbi00OTMubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzE5NTM5IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtcGxhbi00OTMubG9jYWwvZmhpci9QYXRpZW50LzczNTQ5IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/66199"
+        "reference": "https://careplan.cit-plan-493.local/fhir/EpisodeOfCare/19539"
       }
     }
   ]
@@ -29,7 +29,7 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "73268",
+  "id": "20178",
   "meta": {
     "versionId": "1",
     "profile": [
@@ -38,7 +38,7 @@ __Response__
   },
   "definition": [
     {
-      "reference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/209"
+      "reference": "https://plan.cit-plan-493.local/fhir/PlanDefinition/40"
     }
   ],
   "status": "draft",
@@ -54,18 +54,18 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/75781"
+    "reference": "https://patient.cit-plan-493.local/fhir/Patient/85707"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/14822"
+    "reference": "https://careplan.cit-plan-493.local/fhir/EpisodeOfCare/38495"
   },
   "period": {
-    "start": "1970-01-01T01:00:01+01:00",
-    "end": "1970-01-01T01:01:40+01:00"
+    "start": "1970-01-01T00:00:01+00:00",
+    "end": "1970-01-01T00:01:40+00:00"
   },
   "addresses": [
     {
-      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/37505"
+      "reference": "https://careplan.cit-plan-493.local/fhir/Condition/9255"
     }
   ]
 }

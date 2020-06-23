@@ -42,7 +42,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/94193"
+                  "reference": "https://organization.cit-questionnaire-560.local/fhir/Organization/49725"
                 }
               },
               {
@@ -59,8 +59,8 @@ __Body__:
             ]
           }
         ],
-        "version": "62ea6b47-0e92-4774-9d7a-35f9ba6ead8c",
-        "name": "893b5396-d05b-41f5-9fc6-faca69ab4510",
+        "version": "3fd5e3ce-131d-4185-b152-4ed2f36ef30d",
+        "name": "af648c5e-a778-47c8-b9ae-a28df5ef92e0",
         "status": "active"
       }
     }

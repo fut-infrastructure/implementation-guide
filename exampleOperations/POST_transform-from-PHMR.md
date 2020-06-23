@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2020-04-30T06:59:10.380+02:00",
+        "indexed": "2020-06-22T19:51:23.140+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "ad3a07c2-446d-441b-990d-dfb4d5ec83ea",
+        "id": "090c6301-94c1-406d-80d9-4db7ad8fb392",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -65,12 +65,79 @@ __Response__
         },
         "contained": [
           {
-            "resourceType": "Patient",
+            "resourceType": "Organization",
             "id": "1",
+            "meta": {
+              "profile": [
+                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+              ]
+            },
+            "extension": [
+              {
+                "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/organization-source",
+                      "code": "manual"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
+                      "code": "NotSynchronized"
+                    }
+                  ]
+                }
+              }
+            ],
+            "identifier": [
+              {
+                "system": "1.2.208.176.1.1",
+                "value": "368061000016003"
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "97664800",
+                "use": "work"
+              }
+            ],
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "Lungemedicinsk afdeling",
+                  "Mølleparkvej 4"
+                ],
+                "city": "Aalborg",
+                "postalCode": "9000",
+                "country": "Danmark"
+              }
+            ]
+          },
+          {
+            "resourceType": "Patient",
+            "id": "2",
             "identifier": [
               {
                 "system": "urn:oid:1.2.208.176.1.2",
                 "value": "2512489996"
+              }
+            ],
+            "name": [
+              {
+                "family": "Berggren",
+                "given": [
+                  "Nancy",
+                  "Ann"
+                ]
               }
             ],
             "telecom": [
@@ -101,7 +168,7 @@ __Response__
           },
           {
             "resourceType": "Practitioner",
-            "id": "2",
+            "id": "3",
             "meta": {
               "profile": [
                 "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
@@ -118,7 +185,7 @@ __Response__
           },
           {
             "resourceType": "Organization",
-            "id": "3",
+            "id": "4",
             "meta": {
               "profile": [
                 "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
@@ -156,6 +223,14 @@ __Response__
             ]
           }
         ],
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition-authorOrganization",
+            "valueReference": {
+              "reference": "#1"
+            }
+          }
+        ],
         "identifier": {
           "system": "urn:oid:1.2.208.184",
           "value": "f9562ad0-2e3f-11e6-bdf4-0800200c9a66"
@@ -171,24 +246,24 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "#1"
+          "reference": "#2"
         },
         "date": "2019-04-09T12:50:10+00:00",
         "author": [
           {
-            "reference": "#2"
+            "reference": "#3"
           }
         ],
         "title": "Hjemmemonitorering for 2512489996",
         "custodian": {
-          "reference": "#3"
+          "reference": "#4"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Device",
-        "id": "5d629882-dfbb-46fa-9f74-1d85c2a6ca4f",
+        "id": "db8777bc-e6be-4b77-ba3d-798280cc57bc",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
@@ -210,7 +285,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "41fb001b-8632-4876-827a-cc505cdad07a",
+        "id": "d9255f91-c3e0-4722-aa56-cb5e222acfb7",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -224,6 +299,15 @@ __Response__
               {
                 "system": "urn:oid:1.2.208.176.1.2",
                 "value": "2512489996"
+              }
+            ],
+            "name": [
+              {
+                "family": "Berggren",
+                "given": [
+                  "Nancy",
+                  "Ann"
+                ]
               }
             ],
             "telecom": [
@@ -314,14 +398,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
+          "reference": "https://document-transformation.cit-document-transformation-968.local/fhir/Device/db8777bc-e6be-4b77-ba3d-798280cc57bc"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "2406e188-47d7-4857-bb2a-806dd44bf176",
+        "id": "b15e60a7-4818-431b-aff2-aad02a12b207",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -335,6 +419,15 @@ __Response__
               {
                 "system": "urn:oid:1.2.208.176.1.2",
                 "value": "2512489996"
+              }
+            ],
+            "name": [
+              {
+                "family": "Berggren",
+                "given": [
+                  "Nancy",
+                  "Ann"
+                ]
               }
             ],
             "telecom": [
@@ -425,14 +518,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
+          "reference": "https://document-transformation.cit-document-transformation-968.local/fhir/Device/db8777bc-e6be-4b77-ba3d-798280cc57bc"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "5096c98c-7b64-422c-9257-3f067b8562f4",
+        "id": "e6510a03-b920-4133-bfec-663327eac31f",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -446,6 +539,15 @@ __Response__
               {
                 "system": "urn:oid:1.2.208.176.1.2",
                 "value": "2512489996"
+              }
+            ],
+            "name": [
+              {
+                "family": "Berggren",
+                "given": [
+                  "Nancy",
+                  "Ann"
+                ]
               }
             ],
             "telecom": [
@@ -530,7 +632,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.local.ehealth.sundhed.dk/fhir/Device/5d629882-dfbb-46fa-9f74-1d85c2a6ca4f"
+          "reference": "https://document-transformation.cit-document-transformation-968.local/fhir/Device/db8777bc-e6be-4b77-ba3d-798280cc57bc"
         }
       }
     }

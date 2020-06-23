@@ -1,9 +1,9 @@
-`GET [base]/Library/52/_history/1`
+`GET [base]/Library/30/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjBmYzZhMmQtZmM0OC00MzA0LWIxMjItM2MwNTU1MmY5ODI5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWQ1YmNlNTQtZGY2Zi00MjI5LWEwNDYtODhjMzQ4ZDZmYjIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiTGlicmFyeSRldmFsdWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Library",
-  "id": "52",
+  "id": "30",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2020-04-30T05:24:54.609+00:00",
+    "versionId": "2",
+    "lastUpdated": "2020-06-22T19:55:10.032+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -26,7 +26,7 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "6ce63f4d-1a01-4c52-91c9-0dc7b44bf9e9"
+      "valueString": "a781df98-b547-4803-bb88-e9de5088646a"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -34,7 +34,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/14498"
+            "reference": "https://organization.cit-library-358.local/fhir/Organization/54449"
           }
         },
         {
@@ -51,7 +51,7 @@ __Response__
       ]
     }
   ],
-  "version": "b08bf406-4114-43be-a620-2fb445bfad62",
+  "version": "850ce9a6-9a93-4027-a7bb-dd309086ee27",
   "status": "draft",
   "type": {
     "coding": [

@@ -1,4 +1,4 @@
-`PUT [base]/PractitionerRole/586`
+`PUT [base]/PractitionerRole/228`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "586",
+  "id": "228",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T05:59:06.407+00:00",
+    "lastUpdated": "2020-06-22T19:59:46.615+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
@@ -31,10 +31,10 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "586",
+  "id": "228",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T05:59:06.488+00:00",
+    "lastUpdated": "2020-06-22T19:59:46.746+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]

@@ -1,9 +1,9 @@
-`GET [base]/DeviceUseStatement?patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F30775&when-used=lt2019-09-29`
+`GET [base]/DeviceUseStatement?patient=https%3A%2F%2Fpatient.cit-device-427.local%2Ffhir%2FPatient%2F71467&when-used=lt2019-11-22`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjk1ZmU4YWMtYzcyYS00NzNiLWJhOTgtNDQzODdmMTllMjcwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmMwYjcxZTctYTMwOC00NWQyLWIyOWItYmRlZTM1ZjgwNmYxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "575dce08-78d7-439b-b7c6-83aa53b56ec1",
+  "id": "34543216-8e43-43db-938c-62ad8dad9734",
   "meta": {
-    "lastUpdated": "2020-04-29T19:34:16.779+00:00"
+    "lastUpdated": "2020-06-22T19:48:34.235+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.local.ehealth.sundhed.dk/fhir/DeviceUseStatement?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F30775&when-used=lt2019-09-29"
+      "url": "https://device.cit-device-427.local/fhir/DeviceUseStatement?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.cit-device-427.local%2Ffhir%2FPatient%2F71467&when-used=lt2019-11-22"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://device.local.ehealth.sundhed.dk/fhir/DeviceUseStatement/153",
+      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceUseStatement/56",
       "resource": {
         "resourceType": "DeviceUseStatement",
-        "id": "153",
+        "id": "56",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-04-29T19:34:15.649+00:00",
+          "lastUpdated": "2020-06-22T19:48:33.623+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
           ]
@@ -44,20 +44,20 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
             "valueReference": {
-              "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/53883"
+              "reference": "https://careplan.cit-device-427.local/fhir/CarePlan/17524"
             }
           }
         ],
         "status": "active",
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/30775"
+          "reference": "https://patient.cit-device-427.local/fhir/Patient/71467"
         },
         "whenUsed": {
-          "start": "2019-04-29T21:34:15+02:00",
-          "end": "2019-06-29T21:34:15+02:00"
+          "start": "2019-10-22T19:48:33+00:00",
+          "end": "2019-12-22T19:48:33+00:00"
         },
         "device": {
-          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/152"
+          "reference": "https://device.cit-device-427.local/fhir/Device/55"
         }
       },
       "search": {
@@ -65,13 +65,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://device.local.ehealth.sundhed.dk/fhir/DeviceUseStatement/155",
+      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceUseStatement/54",
       "resource": {
         "resourceType": "DeviceUseStatement",
-        "id": "155",
+        "id": "54",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-04-29T19:34:16.087+00:00",
+          "lastUpdated": "2020-06-22T19:48:33.277+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
           ]
@@ -80,20 +80,20 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
             "valueReference": {
-              "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/27802"
+              "reference": "https://careplan.cit-device-427.local/fhir/CarePlan/17114"
             }
           }
         ],
         "status": "active",
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/30775"
+          "reference": "https://patient.cit-device-427.local/fhir/Patient/71467"
         },
         "whenUsed": {
-          "start": "2019-08-29T21:34:15+02:00",
-          "end": "2019-10-29T21:34:15+01:00"
+          "start": "2019-06-22T19:48:33+00:00",
+          "end": "2019-08-22T19:48:33+00:00"
         },
         "device": {
-          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/154"
+          "reference": "https://device.cit-device-427.local/fhir/Device/53"
         }
       },
       "search": {

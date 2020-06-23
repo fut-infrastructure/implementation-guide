@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2JkODY5NDctMWZiNi00ODdkLTllY2MtNzY0Y2FmNTM2ZGJmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjQ2YTExMDUtZjBmMy00OGIwLTg5MzQtMDg1MTI0Y2I4NWNhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -19,7 +19,7 @@ __Body__:
       "name": "careTeam",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "563",
+        "id": "100",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
@@ -38,7 +38,7 @@ __Body__:
               ]
             },
             "member": {
-              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/565"
+              "reference": "https://organization.cit-organization-661.local/fhir/Practitioner/102"
             }
           }
         ],

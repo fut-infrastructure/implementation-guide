@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2020-04-30T06:59:34.975+02:00",
+        "indexed": "2020-06-22T19:49:08.744+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "6fa1be96-4cd8-4b9b-aa78-f03384dc96b7",
+        "id": "919bed86-1294-4276-a621-f464ff7ea650",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -134,6 +134,14 @@ __Response__
               {
                 "system": "urn:oid:1.2.208.176.1.2",
                 "value": "1111553161"
+              }
+            ],
+            "name": [
+              {
+                "family": "Pedersen",
+                "given": [
+                  "Mads"
+                ]
               }
             ],
             "telecom": [

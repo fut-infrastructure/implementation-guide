@@ -15,6 +15,9 @@
   path: POST_transform-to-APD.md
 
 - profile: system
+  path: POST_transform-from-APD.md
+
+- profile: system
   path: POST_transform-to-PHMR.md
 
 - profile: system

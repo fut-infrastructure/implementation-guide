@@ -50,7 +50,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/26135"
+              "reference": "https://organization.cit-task-899.local/fhir/Practitioner/34271"
             }
           }
         ],
@@ -58,7 +58,7 @@ __Body__:
         "intent": "proposal",
         "priority": "routine",
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/96007"
+          "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/33432"
         }
       }
     }

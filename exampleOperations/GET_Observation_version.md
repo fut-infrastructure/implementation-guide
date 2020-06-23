@@ -1,9 +1,9 @@
-`GET [base]/Observation/735/_history/1`
+`GET [base]/Observation/543/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjUzZDY1NmMtMWIzNi00ZTdiLWE2MTItOTJjZGJhZGE3MTZiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vNDY0OTkiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvNDcyNzEifSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGY4ZjkzMDEtM2FhMi00ZmU5LTk1OGMtM2YzYTVkMzJkNDc1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEwNzQubG9jYWwvZmhpci9DYXJlVGVhbS81Nzc4NSIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTEwNzQubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzIwNTM5IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,17 +15,17 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "735",
+  "id": "543",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T05:37:39.957+00:00",
+    "lastUpdated": "2020-06-22T20:00:15.181+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/25257"
+      "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/33829"
     }
   ],
   "status": "final",
@@ -38,22 +38,22 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/46188"
+    "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/45822"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/47271"
+    "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/20539"
   },
   "effectivePeriod": {
-    "start": "2020-04-30T07:37:39+02:00",
-    "end": "2020-04-30T07:37:39+02:00"
+    "start": "2020-06-22T20:00:15+00:00",
+    "end": "2020-06-22T20:00:15+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/46188"
+      "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/45822"
     }
   ],
   "device": {
-    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/56"
+    "reference": "https://device.cit-measurement-1074.local/fhir/Device/53326"
   }
 }
 ```

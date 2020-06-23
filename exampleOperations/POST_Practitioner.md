@@ -21,7 +21,7 @@ __Body__:
   },
   "name": [
     {
-      "family": "cfc4670f-f3ef-4adf-9649-ffeb1d30a659"
+      "family": "68441475-d307-4385-b9c4-87a9c9049503"
     }
   ]
 }
@@ -31,17 +31,17 @@ __Response__
 ```json
 {
   "resourceType": "Practitioner",
-  "id": "569",
+  "id": "310",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T05:59:02.890+00:00",
+    "lastUpdated": "2020-06-22T20:00:51.046+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
     ]
   },
   "name": [
     {
-      "family": "cfc4670f-f3ef-4adf-9649-ffeb1d30a659"
+      "family": "68441475-d307-4385-b9c4-87a9c9049503"
     }
   ]
 }

@@ -79,7 +79,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 1681112562,
+                  "value": -464613004,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -89,7 +89,7 @@ __Body__:
         ],
         "definition": [
           {
-            "reference": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/80770"
+            "reference": "https://plan.cit-careplan-1279.local/fhir/ActivityDefinition/29950"
           }
         ],
         "status": "completed",
@@ -101,13 +101,13 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "7c46a970-8b44-4b81-bc82-36d9a4d1fda7"
+          "text": "fe3d98a6-06b9-4e71-8dbe-e57b4e2d9274"
         },
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/31705"
+          "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/78422"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/920"
+          "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/699"
         }
       }
     }

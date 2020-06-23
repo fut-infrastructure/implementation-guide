@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjdhZTE3MDctNWE0MC00OGJmLTk1ODctMzUzMjE1ZDliNjIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uLmNyZWF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzYwMDU0In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUGxhbkRlZmluaXRpb24uY3JlYXRlIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbi51cGRhdGUiLCJQbGFuRGVmaW5pdGlvbi5yZWFkIiwiUGxhbkRlZmluaXRpb24kYXBwbHkiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -21,12 +21,29 @@ __Body__:
   },
   "extension": [
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-493.local/fhir/Organization/3345"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/60054"
+            "reference": "https://organization.cit-plan-493.local/fhir/Organization/45478"
           }
         },
         {
@@ -43,7 +60,7 @@ __Body__:
       ]
     }
   ],
-  "version": "1453ebcf-0db3-4d60-8b97-e9d4c7fd6b94",
+  "version": "79122d3d-9459-4ab6-8c73-fa1620bc8572",
   "status": "active"
 }
 ```
@@ -52,22 +69,39 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "211",
+  "id": "41",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T06:50:58.689+00:00",
+    "lastUpdated": "2020-06-22T19:59:41.433+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
   },
   "extension": [
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-493.local/fhir/Organization/3345"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/60054"
+            "reference": "https://organization.cit-plan-493.local/fhir/Organization/45478"
           }
         },
         {
@@ -84,7 +118,7 @@ __Response__
       ]
     }
   ],
-  "version": "1453ebcf-0db3-4d60-8b97-e9d4c7fd6b94",
+  "version": "79122d3d-9459-4ab6-8c73-fa1620bc8572",
   "status": "active"
 }
 ```

@@ -1,4 +1,4 @@
-`GET [base]/Device/78/_history/1`
+`GET [base]/Device/140/_history/1`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "78",
+  "id": "140",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-29T19:33:58.335+00:00",
+    "lastUpdated": "2020-06-22T19:49:35.763+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]

@@ -1,9 +1,9 @@
-`PATCH [base]/Organization/534`
+`PATCH [base]/Organization/300`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWZkODg0YTgtZjI0MC00NjIwLWI0MGYtYjIxNzZhOTk5MTlhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDY3ZTA4NjktY2RkMC00Mjc3LWFiNWQtYmI0MTAyYWUyMzBiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,7 +15,7 @@ __Body__:
 [
   {
     "op": "replace",
-    "path": "/extension/0/extension/2/valuePeriod/end",
+    "path": "/contact/0/name/period/end",
     "value": "2021-01-01"
   }
 ]
@@ -25,44 +25,15 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "534",
+  "id": "300",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T05:58:53.818+00:00",
+    "lastUpdated": "2020-06-22T20:00:41.877+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
   },
   "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-relatedTo",
-      "extension": [
-        {
-          "url": "target",
-          "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/533"
-          }
-        },
-        {
-          "url": "relationType",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/organization-relation-type",
-                "code": "TBD"
-              }
-            ]
-          }
-        },
-        {
-          "url": "period",
-          "valuePeriod": {
-            "start": "2020-04-30T07:58:53+02:00",
-            "end": "2021-01-01"
-          }
-        }
-      ]
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
       "valueCodeableConcept": {
@@ -86,6 +57,47 @@ __Response__
       }
     }
   ],
-  "name": "9c012711-caeb-46c0-a628-7bc9c52bb9e9"
+  "name": "068fe70c-a3d3-49db-9257-de497709e5e0",
+  "contact": [
+    {
+      "name": {
+        "period": {
+          "end": "2021-01-01"
+        }
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/contactpoint-custodian",
+                    "code": "SOR"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/contactpoint-system",
+                    "code": "TBD"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue",
+              "valueString": "acbaed05-4cdb-40b1-a198-1560cd84b601"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```

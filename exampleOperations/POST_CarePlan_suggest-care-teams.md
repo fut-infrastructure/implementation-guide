@@ -1,9 +1,9 @@
-`POST [base]/CarePlan/268/$suggest-care-teams`
+`POST [base]/CarePlan/1130/$suggest-care-teams`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzEwNjgiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvQ2FyZVRlYW0vMTg0MjciLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0VwaXNvZGVPZkNhcmUvMjY3IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzI1ODc4In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTEyNzkubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzU2MzMiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTEyNzkubG9jYWwvZmhpci9DYXJlVGVhbS8yNzMxNiIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTEyNzkubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzExMjkiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0xMjc5LmxvY2FsL2ZoaXIvUGF0aWVudC8zNTQ2NyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -30,10 +30,10 @@ __Response__
   "type": "searchset",
   "entry": [
     {
-      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/18427",
+      "fullUrl": "https://organization.cit-careplan-1279.local/fhir/CareTeam/27316",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "18427",
+        "id": "27316",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -42,12 +42,12 @@ __Response__
         },
         "identifier": [
           {
-            "id": "3cfd3cda-82f0-4a0a-bfbf-723b22561ce2",
+            "id": "915fbb98-34b2-45dd-ae14-5db36ace0254",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "1cdebf67-8f0e-4242-b306-35d638184a21",
+        "name": "a5276d70-dacd-4b26-ad2e-9bad0ce6b19a",
         "reasonCode": [
           {
             "coding": [
@@ -61,10 +61,10 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/52679",
+      "fullUrl": "https://organization.cit-careplan-1279.local/fhir/CareTeam/2053",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "52679",
+        "id": "2053",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -73,12 +73,12 @@ __Response__
         },
         "identifier": [
           {
-            "id": "fc61092f-c4f4-4266-a19e-6db26de1c139",
+            "id": "8f84b914-e4ea-4c1c-9bbf-46a4496eb362",
             "system": "urn:ietf:rfc:3986"
           }
         ],
         "status": "active",
-        "name": "4d7ae632-d38f-4e38-9525-eb6038a507c6",
+        "name": "cf269982-c81e-4153-9938-9709bb3aa9bf",
         "reasonCode": [
           {
             "coding": [

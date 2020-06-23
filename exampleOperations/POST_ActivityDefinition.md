@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzY3NjQ1In0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,6 +15,8 @@ __Body__:
 {
   "resourceType": "ActivityDefinition",
   "meta": {
+    "versionId": "1",
+    "lastUpdated": "2020-06-22T20:00:39.184+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -37,7 +39,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/67645"
+            "reference": "https://organization.cit-plan-493.local/fhir/Organization/84724"
           }
         },
         {
@@ -54,8 +56,8 @@ __Body__:
       ]
     }
   ],
-  "version": "757bf24b-e69b-42bd-940c-922d0da157f9",
-  "name": "976c9818-92a9-4261-b1ce-3f87b6ef1517",
+  "version": "7612f1de-b819-4488-ab59-b30c05c09171",
+  "name": "03513e48-4abf-44af-9831-c37a3efb43bf",
   "status": "active",
   "topic": [
     {
@@ -82,10 +84,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "151",
+  "id": "100",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T06:50:25.001+00:00",
+    "lastUpdated": "2020-06-22T20:00:39.366+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -108,7 +110,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/67645"
+            "reference": "https://organization.cit-plan-493.local/fhir/Organization/84724"
           }
         },
         {
@@ -125,8 +127,8 @@ __Response__
       ]
     }
   ],
-  "version": "757bf24b-e69b-42bd-940c-922d0da157f9",
-  "name": "976c9818-92a9-4261-b1ce-3f87b6ef1517",
+  "version": "7612f1de-b819-4488-ab59-b30c05c09171",
+  "name": "03513e48-4abf-44af-9831-c37a3efb43bf",
   "status": "active",
   "topic": [
     {

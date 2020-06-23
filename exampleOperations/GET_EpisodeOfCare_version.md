@@ -1,9 +1,9 @@
-`GET [base]/EpisodeOfCare/855/_history/2`
+`GET [base]/EpisodeOfCare/788/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzg0MiIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJFcGlzb2RlT2ZDYXJlLnNlYXJjaCIsIkVwaXNvZGVPZkNhcmUucmVhZCIsIkNhcmVQbGFuLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJHVwZGF0ZS1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTEyNzkubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMjgiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "855",
+  "id": "788",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-29T19:25:22.168+00:00",
+    "lastUpdated": "2020-06-23T08:12:34.863+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/73927"
+        "reference": "https://organization.cit-careplan-1279.local/fhir/Organization/17006"
       }
     },
     {
@@ -36,14 +36,14 @@ __Response__
         {
           "url": "careTeam",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/35471"
+            "reference": "https://organization.cit-careplan-1279.local/fhir/CareTeam/93778"
           }
         },
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2020-04-28T21:25:21+02:00",
-            "end": "2020-04-29T19:25:22+00:00"
+            "start": "2020-06-22T08:12:34+00:00",
+            "end": "2020-06-23T08:12:34+00:00"
           }
         }
       ]
@@ -54,13 +54,13 @@ __Response__
         {
           "url": "careTeam",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/41407"
+            "reference": "https://organization.cit-careplan-1279.local/fhir/CareTeam/26377"
           }
         },
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2020-04-29T19:25:22+00:00"
+            "start": "2020-06-23T08:12:34+00:00"
           }
         }
       ]
@@ -70,24 +70,24 @@ __Response__
   "diagnosis": [
     {
       "condition": {
-        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/Condition/854"
+        "reference": "https://careplan.cit-careplan-1279.local/fhir/Condition/787"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/17092"
+    "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/28665"
   },
   "managingOrganization": {
-    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/77624"
+    "reference": "https://organization.cit-careplan-1279.local/fhir/Organization/41897"
   },
   "period": {
-    "start": "1970-01-01T01:00:01+01:00",
-    "end": "1970-01-01T01:01:40+01:00"
+    "start": "1970-01-01T00:00:01+00:00",
+    "end": "1970-01-01T00:01:40+00:00"
   },
   "team": [
     {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/41407"
+      "reference": "https://organization.cit-careplan-1279.local/fhir/CareTeam/26377"
     }
   ]
 }

@@ -1,4 +1,4 @@
-`PUT [base]/DeviceMetric/79`
+`PUT [base]/DeviceMetric/141`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "79",
+  "id": "141",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-29T19:33:58.480+00:00",
+    "lastUpdated": "2020-06-22T19:49:35.989+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -112,7 +112,7 @@ __Body__:
     "text": "code"
   },
   "source": {
-    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/78"
+    "reference": "https://device.cit-device-427.local/fhir/Device/140"
   },
   "operationalStatus": "off",
   "category": "calculation"
@@ -123,10 +123,10 @@ __Response__
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "79",
+  "id": "141",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-29T19:33:58.790+00:00",
+    "lastUpdated": "2020-06-22T19:49:36.213+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -220,7 +220,7 @@ __Response__
     "text": "code"
   },
   "source": {
-    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/78"
+    "reference": "https://device.cit-device-427.local/fhir/Device/140"
   },
   "operationalStatus": "off",
   "category": "calculation"

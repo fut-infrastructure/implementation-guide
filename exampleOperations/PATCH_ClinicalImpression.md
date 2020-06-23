@@ -1,4 +1,4 @@
-`PATCH [base]/ClinicalImpression/10`
+`PATCH [base]/ClinicalImpression/99`
 
 __Header__
 ```
@@ -25,10 +25,10 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "10",
+  "id": "99",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T07:15:17.771+00:00",
+    "lastUpdated": "2020-06-22T20:24:06.965+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -55,10 +55,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/7695"
+    "reference": "https://patient.cit-task-899.local/fhir/Patient/13933"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/49659"
+    "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/76089"
   }
 }
 ```

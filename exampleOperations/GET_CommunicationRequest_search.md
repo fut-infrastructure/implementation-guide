@@ -1,9 +1,9 @@
-`GET [base]/CommunicationRequest?recipient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F63490`
+`GET [base]/CommunicationRequest?priority=stat&recipient=https%3A%2F%2Forganization.cit-careplan-1279.local%2Ffhir%2FCareTeam%2F20591&based-on=https%3A%2F%2Fcareplan.cit-careplan-1279.local%2Ffhir%2FProcedureRequest%2F1357&reasonCode=MeasurementForAssessment&status=active%2Csuspended`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5zZWFyY2giXX0sImNvbnRleHQiOnsicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzYzNDkwIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3Quc2VhcmNoIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuZGVsZXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,48 +15,106 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "a83eb182-f923-4206-9de8-ba5c262030f1",
+  "id": "3e94c5b2-8f66-45db-9b53-a24a1ec32529",
   "meta": {
-    "lastUpdated": "2020-04-29T19:24:09.593+00:00"
+    "lastUpdated": "2020-06-23T08:14:38.738+00:00"
   },
   "type": "searchset",
-  "total": 1,
+  "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.local.ehealth.sundhed.dk/fhir/CommunicationRequest?_format=json&_pretty=true&recipient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F63490"
+      "url": "https://careplan.cit-careplan-1279.local/fhir/CommunicationRequest?_format=json&_pretty=true&based-on=https%3A%2F%2Fcareplan.cit-careplan-1279.local%2Ffhir%2FProcedureRequest%2F1357&priority=stat&reasonCode=MeasurementForAssessment&recipient=https%3A%2F%2Forganization.cit-careplan-1279.local%2Ffhir%2FCareTeam%2F20591&status=active%2Csuspended"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://careplan.local.ehealth.sundhed.dk/fhir/CommunicationRequest/584",
+      "fullUrl": "https://careplan.cit-careplan-1279.local/fhir/CommunicationRequest/1362",
       "resource": {
         "resourceType": "CommunicationRequest",
-        "id": "584",
+        "id": "1362",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-04-29T19:24:09.525+00:00",
+          "lastUpdated": "2020-06-23T08:14:38.632+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
           ]
         },
         "basedOn": [
           {
-            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/583"
+            "reference": "https://careplan.cit-careplan-1279.local/fhir/ProcedureRequest/1357"
           }
         ],
-        "status": "active",
+        "status": "suspended",
+        "priority": "stat",
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/63490"
+          "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/6626"
         },
         "recipient": [
           {
-            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/63490"
+            "reference": "https://organization.cit-careplan-1279.local/fhir/CareTeam/20591"
           }
         ],
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/582"
-        }
+          "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/1360"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/task-category",
+                "code": "MeasurementForAssessment",
+                "display": "Need assessment of measurement"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://careplan.cit-careplan-1279.local/fhir/CommunicationRequest/1358",
+      "resource": {
+        "resourceType": "CommunicationRequest",
+        "id": "1358",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-06-23T08:14:38.136+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
+          ]
+        },
+        "basedOn": [
+          {
+            "reference": "https://careplan.cit-careplan-1279.local/fhir/ProcedureRequest/1357"
+          }
+        ],
+        "status": "active",
+        "priority": "stat",
+        "subject": {
+          "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/24102"
+        },
+        "recipient": [
+          {
+            "reference": "https://organization.cit-careplan-1279.local/fhir/CareTeam/20591"
+          }
+        ],
+        "context": {
+          "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/1356"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/task-category",
+                "code": "MeasurementForAssessment",
+                "display": "Need assessment of measurement"
+              }
+            ]
+          }
+        ]
       },
       "search": {
         "mode": "match"

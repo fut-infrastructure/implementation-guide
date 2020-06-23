@@ -1,9 +1,9 @@
-`DELETE [base]/CareTeam/375`
+`DELETE [base]/CareTeam/137`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjA0YWNhNmYtOGI1YS00ZGUxLWE3MmQtZDQ4MDIxZWZmNTNhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTNjY2U4NmItYTliMS00MDhjLTlkOGQtOTdlNDlmOGJlZWEyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -17,13 +17,13 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>Successfully deleted 1 resource(s) in 25ms</pre></td>\r\r\r</tr>\r</table>\r</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>Successfully deleted 1 resource(s) in 91ms</pre></td>\r\r\r</tr>\r</table>\r</div>"
   },
   "issue": [
     {
       "severity": "information",
       "code": "informational",
-      "diagnostics": "Successfully deleted 1 resource(s) in 25ms"
+      "diagnostics": "Successfully deleted 1 resource(s) in 91ms"
     }
   ]
 }

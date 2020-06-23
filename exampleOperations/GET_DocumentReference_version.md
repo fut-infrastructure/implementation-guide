@@ -1,9 +1,9 @@
-`GET [base]/DocumentReference/174/_history/2`
+`GET [base]/DocumentReference/94/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi8xNzcwIn0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,15 +15,15 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "174",
+  "id": "94",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T06:50:35.945+00:00",
+    "lastUpdated": "2020-06-22T20:00:30.574+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
   },
-  "status": "entered-in-error",
+  "status": "superseded",
   "type": {
     "coding": [
       {
@@ -32,10 +32,7 @@ __Response__
       }
     ]
   },
-  "indexed": "2020-04-30T08:50:35.823+02:00",
-  "custodian": {
-    "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/1770"
-  },
+  "indexed": "2020-06-22T20:00:28.645+00:00",
   "content": [
     {
       "attachment": {

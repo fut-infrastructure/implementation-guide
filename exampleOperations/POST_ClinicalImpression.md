@@ -41,10 +41,10 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/60034"
+    "reference": "https://patient.cit-task-899.local/fhir/Patient/8837"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17409"
+    "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/41506"
   }
 }
 ```
@@ -53,10 +53,10 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "5",
+  "id": "94",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-04-30T07:15:06.818+00:00",
+    "lastUpdated": "2020-06-22T20:23:55.277+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -83,11 +83,11 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/60034"
+    "reference": "https://patient.cit-task-899.local/fhir/Patient/8837"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/17409"
+    "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/41506"
   },
-  "date": "2020-04-30T07:15:06+00:00"
+  "date": "2020-06-22T20:23:55+00:00"
 }
 ```

@@ -1,4 +1,4 @@
-`GET [base]/PractitionerRole?practitioner=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FPractitioner%2F583%2F_history%2F1&organization=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FOrganization%2F584%2F_history%2F1`
+`GET [base]/PractitionerRole?practitioner=https%3A%2F%2Forganization.cit-organization-661.local%2Ffhir%2FPractitioner%2F225%2F_history%2F1&organization=https%3A%2F%2Forganization.cit-organization-661.local%2Ffhir%2FOrganization%2F226%2F_history%2F1`
 
 __Header__
 ```
@@ -15,37 +15,37 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "a9283575-18cb-425b-8e9d-0f468270cab9",
+  "id": "710c871c-d772-43b1-b96a-ef734db99ddf",
   "meta": {
-    "lastUpdated": "2020-04-30T05:59:06.347+00:00"
+    "lastUpdated": "2020-06-22T19:59:46.444+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.local.ehealth.sundhed.dk/fhir/PractitionerRole?_format=json&_pretty=true&organization=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FOrganization%2F584%2F_history%2F1&practitioner=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FPractitioner%2F583%2F_history%2F1"
+      "url": "https://organization.cit-organization-661.local/fhir/PractitionerRole?_format=json&_pretty=true&organization=https%3A%2F%2Forganization.cit-organization-661.local%2Ffhir%2FOrganization%2F226%2F_history%2F1&practitioner=https%3A%2F%2Forganization.cit-organization-661.local%2Ffhir%2FPractitioner%2F225%2F_history%2F1"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.local.ehealth.sundhed.dk/fhir/PractitionerRole/585",
+      "fullUrl": "https://organization.cit-organization-661.local/fhir/PractitionerRole/227",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "585",
+        "id": "227",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-04-30T05:59:06.279+00:00",
+          "lastUpdated": "2020-06-22T19:59:46.349+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
           ]
         },
         "active": true,
         "practitioner": {
-          "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/583"
+          "reference": "https://organization.cit-organization-661.local/fhir/Practitioner/225"
         },
         "organization": {
-          "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/584"
+          "reference": "https://organization.cit-organization-661.local/fhir/Organization/226"
         }
       },
       "search": {

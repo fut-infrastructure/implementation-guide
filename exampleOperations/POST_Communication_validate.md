@@ -1,9 +1,9 @@
-`POST [base]/Communication/$validate`
+`POST [base]/Communication/174/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDVjOWIwZTAtM2FiOS00OWQyLWE1ZWUtYTc3OGY5ZTkwZjYyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzNhMWI1MjItNjU4YS00YWY2LWJjMzAtNjRmNjlkZDU4MTY0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -19,7 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Communication",
+        "id": "174",
         "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-06-22T19:57:41.204+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
@@ -49,15 +52,15 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/13464"
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/72190"
         },
         "topic": [
           {
-            "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/634"
+            "reference": "https://measurement.cit-measurement-1074.local/fhir/Observation/173"
           }
         ],
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/19159"
+          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/12788"
         }
       }
     }

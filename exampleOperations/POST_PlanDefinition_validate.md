@@ -31,7 +31,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/90090"
+                  "reference": "https://organization.cit-plan-493.local/fhir/Organization/90407"
                 }
               },
               {
@@ -48,7 +48,7 @@ __Body__:
             ]
           }
         ],
-        "version": "d49d8fa4-c499-4067-b87c-34047c3ede2b",
+        "version": "bacc02a4-e172-4abe-9955-5cf1f15705fa",
         "status": "active"
       }
     }

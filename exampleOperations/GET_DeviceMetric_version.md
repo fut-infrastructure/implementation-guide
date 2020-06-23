@@ -1,4 +1,4 @@
-`GET [base]/DeviceMetric/79/_history/2`
+`GET [base]/DeviceMetric/141/_history/2`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "79",
+  "id": "141",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-29T19:33:58.790+00:00",
+    "lastUpdated": "2020-06-22T19:49:36.213+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -112,7 +112,7 @@ __Response__
     "text": "code"
   },
   "source": {
-    "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/78"
+    "reference": "https://device.cit-device-427.local/fhir/Device/140"
   },
   "operationalStatus": "off",
   "category": "calculation"

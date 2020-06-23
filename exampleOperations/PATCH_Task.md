@@ -1,4 +1,4 @@
-`PATCH [base]/Task/93`
+`PATCH [base]/Task/71`
 
 __Header__
 ```
@@ -25,10 +25,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "93",
+  "id": "71",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T07:16:49.522+00:00",
+    "lastUpdated": "2020-06-22T20:23:33.181+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -59,7 +59,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/84043"
+        "reference": "https://organization.cit-task-899.local/fhir/Practitioner/64711"
       }
     }
   ],
@@ -67,7 +67,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/33021"
+    "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/41954"
   }
 }
 ```

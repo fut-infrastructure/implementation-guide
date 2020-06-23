@@ -1,9 +1,9 @@
-`GET [base]/DocumentReference?status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F27416`
+`GET [base]/DocumentReference?description=445112b8-c651-4c6c-99aa-cb4093ac22b3`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UkZmluZC1kb2N1bWVudC1yZWZlcmVuY2VzIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzkxMzAyIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50LzI3NDE2In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,35 +15,87 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "88599509-5327-462d-b21f-89225750a4f2",
+  "id": "24fb0a11-93ad-4c66-8011-104c307e3088",
   "meta": {
-    "lastUpdated": "2020-04-30T07:43:39.607+00:00"
+    "lastUpdated": "2020-06-22T20:00:28.474+00:00"
   },
   "type": "searchset",
-  "total": 1,
+  "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-query.local.ehealth.sundhed.dk/fhir/DocumentReference?_format=json&_pretty=true&patient=https%3A%2F%2Fpatient.local.ehealth.sundhed.dk%2Ffhir%2FPatient%2F27416&status=http%3A%2F%2Fhl7.org%2Ffhir%2Fdocument-reference-status%7Ccurrent"
+      "url": "https://plan.cit-plan-493.local/fhir/DocumentReference?_format=json&_pretty=true&description=445112b8-c651-4c6c-99aa-cb4093ac22b3"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-query.local.ehealth.sundhed.dk/fhir/OperationOutcome/-",
+      "fullUrl": "https://plan.cit-plan-493.local/fhir/DocumentReference/93",
       "resource": {
-        "resourceType": "OperationOutcome",
-        "id": "-",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">ERROR</td><td>[]</td><td><pre>{\"errorCode\":\"XDSRepositoryError\", \"codeContent\":\"Metadata Validation Errors: ExtrinsicObject urn:uuid:592fc2f7-6695-4c60-90d5-e63a46051e48 does not have a mimeType\"}</pre></td>\r\r\r</tr>\r</table>\r</div>"
+        "resourceType": "DocumentReference",
+        "id": "93",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-06-22T20:00:28.303+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+          ]
         },
-        "issue": [
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69730-0"
+            }
+          ]
+        },
+        "indexed": "2020-06-22T20:00:28.239+00:00",
+        "description": "445112b8-c651-4c6c-99aa-cb4093ac22b3",
+        "content": [
           {
-            "severity": "error",
-            "code": "exception",
-            "diagnostics": "{\"errorCode\":\"XDSRepositoryError\", \"codeContent\":\"Metadata Validation Errors: ExtrinsicObject urn:uuid:592fc2f7-6695-4c60-90d5-e63a46051e48 does not have a mimeType\"}"
+            "attachment": {
+              "url": "http://some.com/"
+            }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://plan.cit-plan-493.local/fhir/DocumentReference/91",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "91",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-06-22T20:00:27.994+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+          ]
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "69730-0"
+            }
+          ]
+        },
+        "indexed": "2020-06-22T20:00:27.964+00:00",
+        "description": "445112b8-c651-4c6c-99aa-cb4093ac22b3",
+        "content": [
+          {
+            "attachment": {
+              "url": "http://some.com/"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
       }
     }
   ]

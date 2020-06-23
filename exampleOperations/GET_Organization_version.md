@@ -1,9 +1,9 @@
-`GET [base]/Organization/497/_history/2`
+`GET [base]/Organization/293/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTYwYWMyYmItZWI0NS00YWY2LWE4YTYtNzY2ZGI1NGZkMjU0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTZkYmNiZDUtZGYwNS00ZTQwLWEwOTEtOGU1MTNiYTMwZDllIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "497",
+  "id": "293",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T05:58:29.889+00:00",
+    "lastUpdated": "2020-06-22T20:00:22.070+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -47,7 +47,7 @@ __Response__
       }
     }
   ],
-  "name": "a1400a49-c800-470a-ba69-5707873e2b9a",
+  "name": "7e24940c-52ce-49cc-b0be-7da6bfe404c3",
   "contact": [
     {
       "purpose": {

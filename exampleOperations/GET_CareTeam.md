@@ -1,9 +1,9 @@
-`GET [base]/CareTeam/730`
+`GET [base]/CareTeam/100`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmRmZDI0MzUtMGQyNS00NjhiLWJiZDQtYjQwMjljYjg3ZGE4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjQ2YTExMDUtZjBmMy00OGIwLTg5MzQtMDg1MTI0Y2I4NWNhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,22 +15,22 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "730",
+  "id": "100",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2020-04-30T05:59:32.032+00:00",
+    "versionId": "2",
+    "lastUpdated": "2020-06-22T19:58:46.516+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "0371537a-8acf-4719-b531-25eae9bc83c7",
+      "id": "40917288-2a21-44ed-ae62-aedcdb168518",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "9b680790-e9f1-4477-8086-90598d138359",
+  "name": "ec3e8b73-c245-499d-bb14-b4971bb92b4a",
   "participant": [
     {
       "role": {
@@ -42,33 +42,10 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/45186"
-      }
-    },
-    {
-      "role": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-            "code": "monitoringResponsible"
-          }
-        ]
+        "reference": "https://organization.cit-organization-661.local/fhir/Practitioner/102"
       },
-      "member": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/727"
-      }
-    },
-    {
-      "role": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-            "code": "monitoringResponsible"
-          }
-        ]
-      },
-      "member": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Practitioner/729"
+      "period": {
+        "start": "2020-06-22T19:58:46+00:00"
       }
     }
   ],
@@ -80,11 +57,6 @@ __Response__
           "code": "TBD"
         }
       ]
-    }
-  ],
-  "managingOrganization": [
-    {
-      "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/728"
     }
   ]
 }

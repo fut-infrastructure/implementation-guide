@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjZkZjlhNDUtMzMzZC00ZjhlLWJkZWMtMGI2MWQ5NDU1ZTUwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjNmNGFmZjEtZTU5MC00Nzk0LTkyYTgtMTQxZmRjOTRiMjc1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,7 +26,7 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/63693"
+            "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/60787"
           }
         ],
         "status": "final",
@@ -39,22 +39,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/59684"
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/95136"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/76139"
+          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/79289"
         },
         "effectivePeriod": {
-          "start": "2020-04-30T07:37:41+02:00",
-          "end": "2020-04-30T07:37:41+02:00"
+          "start": "2020-06-22T20:00:17+00:00",
+          "end": "2020-06-22T20:00:17+00:00"
         },
         "performer": [
           {
-            "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/59684"
+            "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/95136"
           }
         ],
         "device": {
-          "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/53181"
+          "reference": "https://device.cit-measurement-1074.local/fhir/Device/45230"
         }
       }
     }

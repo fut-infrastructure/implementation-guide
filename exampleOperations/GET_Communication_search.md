@@ -1,9 +1,9 @@
-`GET [base]/Communication?context=https%3A%2F%2Fcareplan.local.ehealth.sundhed.dk%2Ffhir%2FEpisodeOfCare%2F80981&recipientCareTeam=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FCareTeam%2F14995`
+`GET [base]/Communication?subject=https%3A%2F%2Fpatient.cit-measurement-1074.local%2Ffhir%2FPatient%2F66038`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmRkNGJlNzctMmY4Zi00MDA0LWFlZDQtMDNkNjI5NjcwN2MyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0NhcmVUZWFtLzE0OTk1IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzgwOTgxIn0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDRjMThlNDAtOTg4MC00MTI5LWJkOWQtMDhlMDhkZmMxMDAyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,44 +15,32 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "04d9d4b3-6a38-4b65-9257-8ad2e813ac68",
+  "id": "08598c6c-49de-4f72-9214-f986b33b36f8",
   "meta": {
-    "lastUpdated": "2020-04-30T05:37:07.272+00:00"
+    "lastUpdated": "2020-06-22T19:57:38.647+00:00"
   },
   "type": "searchset",
-  "total": 1,
+  "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication?_format=json&_pretty=true&context=https%3A%2F%2Fcareplan.local.ehealth.sundhed.dk%2Ffhir%2FEpisodeOfCare%2F80981&recipientCareTeam=https%3A%2F%2Forganization.local.ehealth.sundhed.dk%2Ffhir%2FCareTeam%2F14995"
+      "url": "https://measurement.cit-measurement-1074.local/fhir/Communication?_format=json&_pretty=true&subject=https%3A%2F%2Fpatient.cit-measurement-1074.local%2Ffhir%2FPatient%2F66038"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Communication/633",
+      "fullUrl": "https://measurement.cit-measurement-1074.local/fhir/Communication/162",
       "resource": {
         "resourceType": "Communication",
-        "id": "633",
+        "id": "162",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-04-30T05:37:07.128+00:00",
+          "lastUpdated": "2020-06-22T19:57:37.897+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
         },
         "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam",
-            "valueReference": {
-              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/52795"
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam",
-            "valueReference": {
-              "reference": "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/14995"
-            }
-          },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
             "valueCodeableConcept": {
@@ -77,15 +65,67 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/20188"
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/66038"
         },
         "topic": [
           {
-            "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/632"
+            "reference": "https://measurement.cit-measurement-1074.local/fhir/Observation/161"
           }
         ],
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/80981"
+          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/42231"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://measurement.cit-measurement-1074.local/fhir/Communication/166",
+      "resource": {
+        "resourceType": "Communication",
+        "id": "166",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-06-22T19:57:38.507+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
+                  "code": "None"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/communication-category",
+                "code": "annotation"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/66038"
+        },
+        "topic": [
+          {
+            "reference": "https://measurement.cit-measurement-1074.local/fhir/Observation/165"
+          }
+        ],
+        "context": {
+          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/23933"
         }
       },
       "search": {

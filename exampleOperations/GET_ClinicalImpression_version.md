@@ -1,9 +1,9 @@
-`GET [base]/ClinicalImpression/45/_history/1`
+`GET [base]/ClinicalImpression/99/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzkyMjYzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNsaW5pY2FsSW1wcmVzc2lvbi5yZWFkIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL0NhcmVUZWFtLzc3ODg3IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzY2NDcwIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50Lzc0MTk1In0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnBhdGNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiLCJDbGluaWNhbEltcHJlc3Npb24uY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,23 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "45",
+  "id": "99",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2020-04-30T07:15:34.809+00:00",
+    "versionId": "2",
+    "lastUpdated": "2020-06-22T20:24:06.965+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
   },
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
-      "valueReference": {
-        "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/51447"
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "approved-for-sharing"
+          }
+        ]
       }
     }
   ],
-  "status": "draft",
+  "status": "entered-in-error",
   "code": {
     "coding": [
       {
@@ -41,10 +45,10 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/74195"
+    "reference": "https://patient.cit-task-899.local/fhir/Patient/13933"
   },
   "context": {
-    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/66470"
+    "reference": "https://careplan.cit-task-899.local/fhir/EpisodeOfCare/76089"
   }
 }
 ```

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZThkNzUxOTQtNjY0YS00YTA2LTlkMWUtM2YwNTFkMWI3NTA2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDc1MDc5MmEtOGVkOC00YjNlLTlmNDYtYzY5OWM1NmU1ZDVlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,22 +26,22 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/61064"
+            "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/84931"
           }
         ],
         "questionnaire": {
-          "reference": "https://questionnaire.local.ehealth.sundhed.dk/fhir/Questionnaire/90500"
+          "reference": "https://questionnaire.cit-measurement-1074.local/fhir/Questionnaire/6215"
         },
         "status": "completed",
         "subject": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/55732"
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/29445"
         },
         "context": {
-          "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/11601"
+          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/54182"
         },
-        "authored": "2020-04-30T07:38:02+02:00",
+        "authored": "2020-06-22T20:00:04+00:00",
         "source": {
-          "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/7017"
+          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/84431"
         }
       }
     }

@@ -1,4 +1,4 @@
-`GET [base]/PractitionerRole/586/_history/2`
+`GET [base]/PractitionerRole/228/_history/2`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "586",
+  "id": "228",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-04-30T05:59:06.488+00:00",
+    "lastUpdated": "2020-06-22T19:59:46.746+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
