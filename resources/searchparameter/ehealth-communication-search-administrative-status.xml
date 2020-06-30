@@ -7,6 +7,6 @@
     <base value="Communication" />
     <type value="token" />
     <description value="Search parameter for finding communication based on administrative status" />
-    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/administrative-status')" />
+    <expression value="Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-administrative-status')" />
     <xpathUsage value="normal" />
 </SearchParameter>
