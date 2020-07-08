@@ -12,7 +12,7 @@
         <description value="eHealth Patient service"/>
         <url value="https://localhost:8080/fhir"/>
     </implementation>
-    <fhirVersion value="3.0.2"/>
+    <fhirVersion value="3.0.1"/>
     <acceptUnknown value="extensions"/>
     <format value="application/fhir+xml"/>
     <format value="application/fhir+json"/>

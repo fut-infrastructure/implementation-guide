@@ -52,6 +52,14 @@
                <value value="Need assessment of measurement"/>
             </designation>
          </concept>
+         <concept>
+            <code value="OpenSSLOrder"/>
+            <display value="Need processing of open SSL order"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Need processing of open SSL order"/>
+            </designation>
+         </concept>
       </include>
    </compose>
 </ValueSet>

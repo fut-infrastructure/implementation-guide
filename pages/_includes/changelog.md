@@ -10,7 +10,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/cs/task-category`
 ### ValueSets
+- Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
 ### ConceptMaps
 ### Resource/profile changes
 

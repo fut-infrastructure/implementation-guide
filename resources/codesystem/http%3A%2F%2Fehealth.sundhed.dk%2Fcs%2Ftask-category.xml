@@ -54,4 +54,13 @@
          <value value="Måling til vurdering"/>
       </designation>
    </concept>
+   <concept>
+      <code value="OpenSSLOrder"/>
+      <display value="Need processing of open SSL order"/>
+      <definition value="Need processing of open SSL order"/>
+      <designation>
+         <language value="da"/>
+         <value value="Behandling af åben SSL bestilling"/>
+      </designation>
+   </concept>
 </CodeSystem>
