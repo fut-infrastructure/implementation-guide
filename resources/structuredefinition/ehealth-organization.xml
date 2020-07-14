@@ -103,6 +103,10 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-specialty" />
       </type>
     </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <min value="1" />
+    </element>
     <element id="Organization.type">
       <path value="Organization.type" />
       <binding>
