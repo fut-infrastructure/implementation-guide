@@ -15,6 +15,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
 ### ConceptMaps
 ### Resource/profile changes
+- added minimum requirement of 1 identifier for eHealth-Organization
 
 ## 2020.5 (2020-06-25)
 
