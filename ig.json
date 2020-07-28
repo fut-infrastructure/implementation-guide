@@ -1,6 +1,6 @@
 {
   "tool": "jekyll",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "CC-BY-SA-4.0",
   "npm-name": "dk.ehealth.sundhed.fhir.ig.core",
   "paths": {
