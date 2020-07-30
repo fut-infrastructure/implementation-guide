@@ -3,7 +3,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
-
 ### General changes
 
 ### Custom operations
@@ -12,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/cs/task-category`
 ### ValueSets
+- Removed code `313299006` from `http://ehealth.sundhed.dk/vs/conditions`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
 ### ConceptMaps
 ### Resource/profile changes

@@ -22,13 +22,6 @@
          <system value="http://ehealth.sundhed.dk/cs/conditions"/>
       </include>
       <include>
-         <system value="http://snomed.info/sct"/>
-         <concept>
-            <code value="313299006"/>
-            <display value="Severe chronic obstructive pulmonary disease"/>
-         </concept>
-      </include>
-      <include>
          <system value="urn:oid:1.2.208.176.2.4"/>
          <concept>
             <code value="DJ44"/>
