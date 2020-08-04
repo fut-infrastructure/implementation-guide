@@ -11,8 +11,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/cs/task-category`
 ### ValueSets
+- Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/vs/task-category`
 - Removed code `313299006` from `http://ehealth.sundhed.dk/vs/conditions`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
 ### ConceptMaps

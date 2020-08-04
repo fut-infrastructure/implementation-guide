@@ -60,6 +60,14 @@
                <value value="Need processing of open SSL order"/>
             </designation>
          </concept>
+         <concept>
+            <code value="CalibrationNeeded"/>
+            <display value="Device in need of calibration"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Device in need of calibration"/>
+            </designation>
+         </concept>
       </include>
    </compose>
 </ValueSet>

@@ -63,4 +63,13 @@
          <value value="Behandling af åben SSL bestilling"/>
       </designation>
    </concept>
+   <concept>
+      <code value="CalibrationNeeded"/>
+      <display value="Device in need of calibration"/>
+      <definition value="Device in need of calibration"/>
+      <designation>
+         <language value="da"/>
+         <value value="Måleudstyr har behov for kalibrering"/>
+      </designation>
+   </concept>
 </CodeSystem>
