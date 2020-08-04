@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 
 ### Custom operations
+- added plandefinition-export and plandefinition-import
 #### System operations
 #### Instance operations
 ### Code systems
