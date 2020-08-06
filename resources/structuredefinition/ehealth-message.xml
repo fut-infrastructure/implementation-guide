@@ -118,6 +118,7 @@
     <element id="Communication.extension:administrativeStatus">
       <path value="Communication.extension" />
       <sliceName value="administrativeStatus" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
