@@ -150,13 +150,5 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="Composition.section.entry">
-      <path value="Composition.section.entry" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-        <aggregation value="bundled" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

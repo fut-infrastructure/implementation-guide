@@ -23,6 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - added minimum requirement of 1 identifier for eHealth-Organization
 - added administrative-status required on eHealth-Message
+- DeviceMetric.type and DeviceMetric.unit strength changed from 'preferred' to 'required'
 
 ## 2020.5 (2020-06-25)
 

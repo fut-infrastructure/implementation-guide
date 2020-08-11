@@ -11,6 +11,8 @@
   <abstract value="false" />
   <contextType value="resource" />
   <context value="ActivityDefinition" />
+  <context value="ActivityDefinition" />
+  <context value="ProcedureRequest" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
