@@ -1,9 +1,9 @@
-`POST [base]/Communication/174/$validate`
+`POST [base]/Communication/176/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzNhMWI1MjItNjU4YS00YWY2LWJjMzAtNjRmNjlkZDU4MTY0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODc0ODM5ODAtNzRiOC00ODA4LTg0ZTQtMjNjMmNiZWU3NDM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Communication",
-        "id": "174",
+        "id": "176",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-06-22T19:57:41.204+00:00",
+          "lastUpdated": "2020-07-10T10:17:17.969+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
@@ -52,15 +52,15 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/72190"
+          "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/32937"
         },
         "topic": [
           {
-            "reference": "https://measurement.cit-measurement-1074.local/fhir/Observation/173"
+            "reference": "https://measurement.cit-measurement-1098.local/fhir/Observation/175"
           }
         ],
         "context": {
-          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/12788"
+          "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/72521"
         }
       }
     }

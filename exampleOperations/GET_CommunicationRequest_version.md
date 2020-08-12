@@ -1,4 +1,4 @@
-`GET [base]/CommunicationRequest/1366/_history/2`
+`GET [base]/CommunicationRequest/1361/_history/2`
 
 __Header__
 ```
@@ -15,25 +15,25 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "1366",
+  "id": "1361",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-23T08:14:39.453+00:00",
+    "lastUpdated": "2020-08-12T07:59:18.908+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-1279.local/fhir/ProcedureRequest/1365"
+      "reference": "https://careplan.cit-careplan-1426.local/fhir/ProcedureRequest/1360"
     }
   ],
   "status": "suspended",
   "subject": {
-    "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/89086"
+    "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/79781"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/1364"
+    "reference": "https://careplan.cit-careplan-1426.local/fhir/EpisodeOfCare/1359"
   }
 }
 ```

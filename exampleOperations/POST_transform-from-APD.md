@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLUFQRCIsIiR0cmFuc2Zvcm0tdG8tQVBEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2020-06-22T19:47:50.363+00:00",
+        "indexed": "2020-08-12T09:28:45.668+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "dbb211b5-51c6-4760-9621-081725e7d8d2",
+        "id": "96cfa1b1-3a2b-4864-9fea-dbe3993851a3",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"

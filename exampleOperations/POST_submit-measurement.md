@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWQwMjc1Y2YtYzU1MS00NjI5LWE0NjQtNGM0MWRhMzUyZGMyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTA3NC5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMzUzNjMiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmQwOGQ3YzAtOWUxZC00ZDcxLWEwZjMtYmI3NGQ5OGQ1MTJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTA5OC5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNTEzNSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -22,7 +22,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:4d85801e-3609-46d2-9bf3-312dd227b882",
+            "fullUrl": "urn:uuid:44edde58-0120-484a-8b8c-b3587cb91d58",
             "resource": {
               "resourceType": "Media",
               "meta": {
@@ -61,17 +61,17 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/85927"
+                  "reference": "https://careplan.cit-measurement-1098.local/fhir/ProcedureRequest/68144"
                 }
               ],
               "type": "audio",
               "subject": {
-                "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/92570"
+                "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/13817"
               },
               "context": {
-                "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/35363"
+                "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/5135"
               },
-              "occurrenceDateTime": "2020-06-22T20:00:10+00:00",
+              "occurrenceDateTime": "2020-07-10T10:19:50+00:00",
               "content": {
                 "language": "en"
               }
@@ -97,9 +97,9 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://measurement.cit-measurement-1074.local/fhir/Media/538/_history/1",
+        "location": "https://measurement.cit-measurement-1098.local/fhir/Media/540/_history/1",
         "etag": "1",
-        "lastModified": "2020-06-22T20:00:10.855+00:00"
+        "lastModified": "2020-07-10T10:19:50.888+00:00"
       }
     }
   ]

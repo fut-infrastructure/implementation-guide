@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -44,7 +44,7 @@ __Body__:
         }
       ],
       "managingOrganization": {
-        "reference": "https://organization.cit-document-transformation-968.local/fhir/Organization/57280"
+        "reference": "https://organization.cit-document-transformation-980.local/fhir/Organization/8473"
       }
     },
     {
@@ -57,7 +57,7 @@ __Body__:
       },
       "name": [
         {
-          "family": "02b64dcc-21eb-4e09-919d-1add04c1bf63"
+          "family": "56f61d04-3b64-4373-954e-577d14e8313b"
         }
       ]
     }
@@ -74,13 +74,13 @@ __Body__:
   "subject": {
     "reference": "#1"
   },
-  "date": "2020-06-22T19:51:27+00:00",
+  "date": "2020-08-12T09:33:50+00:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "05fb1c19-e37a-44eb-a2bb-db7d12b04b8e"
+  "title": "c14cfad4-1f79-4ee3-b28b-f59c63efda03"
 }
 ```
 
@@ -91,7 +91,7 @@ __Response__
   "id": "79",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T19:51:27.270+00:00",
+    "lastUpdated": "2020-08-12T09:33:50.811+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
     ]
@@ -121,7 +121,7 @@ __Response__
         }
       ],
       "managingOrganization": {
-        "reference": "https://organization.cit-document-transformation-968.local/fhir/Organization/57280"
+        "reference": "https://organization.cit-document-transformation-980.local/fhir/Organization/8473"
       }
     },
     {
@@ -134,7 +134,7 @@ __Response__
       },
       "name": [
         {
-          "family": "02b64dcc-21eb-4e09-919d-1add04c1bf63"
+          "family": "56f61d04-3b64-4373-954e-577d14e8313b"
         }
       ]
     }
@@ -151,12 +151,12 @@ __Response__
   "subject": {
     "reference": "#1"
   },
-  "date": "2020-06-22T19:51:27+00:00",
+  "date": "2020-08-12T09:33:50+00:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "05fb1c19-e37a-44eb-a2bb-db7d12b04b8e"
+  "title": "c14cfad4-1f79-4ee3-b28b-f59c63efda03"
 }
 ```

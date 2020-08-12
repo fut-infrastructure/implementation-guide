@@ -1,9 +1,9 @@
-`GET [base]/Communication/124/_history/2`
+`GET [base]/Communication/126/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEwNzQubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMjIwMjUiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xMDc0LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS8yNzY2MCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEwOTgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvOTQzMjgiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xMDk4LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS81OTczMSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "124",
+  "id": "126",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-22T19:57:23.306+00:00",
+    "lastUpdated": "2020-07-10T10:16:57.795+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -48,18 +48,18 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/47855"
+    "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/47525"
   },
   "topic": [
     {
-      "reference": "https://measurement.cit-measurement-1074.local/fhir/Observation/123"
+      "reference": "https://measurement.cit-measurement-1098.local/fhir/Observation/125"
     }
   ],
   "context": {
-    "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/27660"
+    "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/59731"
   },
   "sender": {
-    "reference": "https://organization.cit-measurement-1074.local/fhir/Practitioner/22025"
+    "reference": "https://organization.cit-measurement-1098.local/fhir/Practitioner/94328"
   }
 }
 ```

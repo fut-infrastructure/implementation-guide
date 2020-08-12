@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWU3MWViMTItYmQxZS00NDc3LWJiMTItOWViOGE3ZWJiNjAxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiTGlicmFyeSRldmFsdWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjgxNGM2NGYtNjFjMS00YzY1LWIxMDUtNWIxYmU2ZTQ0YjRlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -27,7 +27,7 @@ __Body__:
         "extension": [
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-            "valueString": "d89e40ef-c22f-4afb-b413-c975a8a24c6b"
+            "valueString": "c35eb1fa-caab-4451-b3ae-bc8c98cede2a"
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -35,7 +35,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-library-358.local/fhir/Organization/27178"
+                  "reference": "https://organization.cit-library-373.local/fhir/Organization/12266"
                 }
               },
               {
@@ -52,11 +52,12 @@ __Body__:
             ]
           }
         ],
-        "version": "584690b4-d7f9-4702-8c83-c06691d0fade",
+        "version": "8344a2d7-ed9a-48b0-83ed-274d2ac34a12",
         "status": "draft",
         "type": {
           "coding": [
             {
+              "system": "http://hl7.org/fhir/library-type",
               "code": "asset-collection"
             }
           ]
@@ -79,7 +80,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r<tr>\r<td style=\"font-weight: bold;\">INFORMATION</td>\r<td>[]</td>\r\r\r\r<td><pre>No issues detected during validation</pre></td>\r\r\r</tr>\r</table>\r</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {

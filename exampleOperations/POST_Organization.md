@@ -43,6 +43,16 @@ __Body__:
       }
     }
   ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
+      "value": "11111111",
+      "period": {
+        "start": "2020-08-05T10:55:52+00:00"
+      }
+    }
+  ],
   "type": [
     {
       "coding": [
@@ -54,7 +64,7 @@ __Body__:
       ]
     }
   ],
-  "name": "58e04a4a-01fa-42fb-8943-0a0ace43868d"
+  "name": "291dc1b8-6ee3-446a-aadc-7760b9d93496"
 }
 ```
 
@@ -65,7 +75,7 @@ __Response__
   "id": "252",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T19:59:55.331+00:00",
+    "lastUpdated": "2020-08-05T10:55:52.199+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -94,6 +104,16 @@ __Response__
       }
     }
   ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
+      "value": "11111111",
+      "period": {
+        "start": "2020-08-05T10:55:52+00:00"
+      }
+    }
+  ],
   "type": [
     {
       "coding": [
@@ -105,6 +125,6 @@ __Response__
       ]
     }
   ],
-  "name": "58e04a4a-01fa-42fb-8943-0a0ace43868d"
+  "name": "291dc1b8-6ee3-446a-aadc-7760b9d93496"
 }
 ```

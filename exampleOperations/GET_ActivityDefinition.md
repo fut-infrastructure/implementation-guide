@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition/98`
+`GET [base]/ActivityDefinition/116`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "98",
+  "id": "116",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T20:00:37.386+00:00",
+    "lastUpdated": "2020-07-31T12:12:44.943+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -49,7 +49,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-493.local/fhir/Organization/62704"
+        "reference": "https://organization.cit-plan-593.local/fhir/Organization/52507"
       }
     },
     {
@@ -58,7 +58,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-493.local/fhir/Organization/11803"
+            "reference": "https://organization.cit-plan-593.local/fhir/Organization/85270"
           }
         },
         {
@@ -172,7 +172,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 229583612,
+            "value": -1958633128,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -180,8 +180,8 @@ __Response__
       ]
     }
   ],
-  "version": "0f2ea7c5-44aa-4ff3-a5c7-6173e196f107",
-  "name": "948e50b1-3bd4-42ac-bc71-3351638d31e8",
+  "version": "708974dc-c319-4b25-87c1-b5cebbb38654",
+  "name": "9f4d6520-21ec-42e6-9777-8ec2a4ac6982",
   "status": "active",
   "topic": [
     {

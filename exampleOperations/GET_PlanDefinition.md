@@ -1,4 +1,4 @@
-`GET [base]/PlanDefinition/80/_history/2`
+`GET [base]/PlanDefinition/51`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "80",
+  "id": "51",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2020-07-31T12:12:04.251+00:00",
+    "versionId": "1",
+    "lastUpdated": "2020-07-31T12:11:40.630+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -30,7 +30,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-593.local/fhir/Organization/35451"
+            "reference": "https://organization.cit-plan-593.local/fhir/Organization/68078"
           }
         },
         {
@@ -47,22 +47,7 @@ __Response__
       ]
     }
   ],
-  "version": "37563e80-42cc-4e7b-a2fe-b26138526580",
-  "status": "active",
-  "relatedArtifact": [
-    {
-      "type": "documentation",
-      "resource": {
-        "reference": "https://plan.cit-plan-593.local/fhir/DocumentReference/81"
-      }
-    }
-  ],
-  "action": [
-    {
-      "definition": {
-        "reference": "https://plan.cit-plan-593.local/fhir/PlanDefinition/82"
-      }
-    }
-  ]
+  "version": "a4bf4e87-69c6-4149-8725-2a65985b2796",
+  "status": "draft"
 }
 ```

@@ -1,9 +1,9 @@
-`GET [base]/Observation/488`
+`GET [base]/Observation/490`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzYwNmNhYmQtNWZiYS00NjZlLTk0MGYtZWZkMzQyOTlmMDE1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzdiYmZlOGEtYjFhMy00MzczLWFiMTYtZjIyOGQ2ODhhZWIyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "488",
+  "id": "490",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T19:59:42.076+00:00",
+    "lastUpdated": "2020-07-10T10:19:22.780+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -56,20 +56,20 @@ __Response__
   "identifier": [
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "005c6d67-bbf6-4406-b924-5a530c119321"
+      "value": "b302b0aa-26c8-40a1-a689-870198a3eb14"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "fa4e4aee-a059-4a95-83b0-5825787e30b9_NPU03011"
+      "value": "80ba7999-fd18-4f89-9133-ca173189e299_NPU03011"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "53560a62-62f0-42bc-bc0e-f3c3ee2bc524_MCS88015"
+      "value": "a2c2f5ab-125d-4280-a052-c65ffc589f81_MCS88015"
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/89180"
+      "reference": "https://careplan.cit-measurement-1098.local/fhir/ProcedureRequest/31469"
     }
   ],
   "status": "final",
@@ -80,25 +80,25 @@ __Response__
         "code": "NPU03011"
       }
     ],
-    "text": "fa46abc0-34ed-4bc7-879c-e6d2e66539fb"
+    "text": "4676b84d-8420-4a25-90b8-36e2f4603a73"
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/90034"
+    "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/56351"
   },
   "context": {
-    "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/76401"
+    "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/83389"
   },
   "effectivePeriod": {
-    "start": "2020-06-22T19:59:39+00:00",
-    "end": "2020-06-22T19:59:39+00:00"
+    "start": "2020-07-10T10:19:20+00:00",
+    "end": "2020-07-10T10:19:20+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/38297"
+      "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/47994"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1074.local/fhir/Device/31057"
+    "reference": "https://device.cit-measurement-1098.local/fhir/Device/34077"
   },
   "component": [
     {

@@ -1,4 +1,4 @@
-`GET [base]/Consent?patient=https%3A%2F%2Fpatient.cit-careplan-1279.local%2Ffhir%2FPatient%2F40492&data=https%3A%2F%2Fcareplan.cit-careplan-1279.local%2Ffhir%2FEpisodeOfCare%2F626%2F_history%2F1&category=SSLPCI&status=active`
+`GET [base]/Consent?patient=https%3A%2F%2Fpatient.cit-careplan-1426.local%2Ffhir%2FPatient%2F58556&data=https%3A%2F%2Fcareplan.cit-careplan-1426.local%2Ffhir%2FEpisodeOfCare%2F604%2F_history%2F1&category=SSLPCI&status=active`
 
 __Header__
 ```
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "0c31ab43-7e5d-4daf-8b2f-3bdeb2ff6fa9",
+  "id": "7c86e935-a014-4dd1-b35c-0be28a01bfa1",
   "meta": {
-    "lastUpdated": "2020-06-23T08:11:29.906+00:00"
+    "lastUpdated": "2020-08-12T07:56:06.409+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.cit-careplan-1279.local/fhir/Consent?_format=json&_pretty=true&category=SSLPCI&data=https%3A%2F%2Fcareplan.cit-careplan-1279.local%2Ffhir%2FEpisodeOfCare%2F626%2F_history%2F1&patient=https%3A%2F%2Fpatient.cit-careplan-1279.local%2Ffhir%2FPatient%2F40492&status=active"
+      "url": "https://careplan.cit-careplan-1426.local/fhir/Consent?_format=json&_pretty=true&category=SSLPCI&data=https%3A%2F%2Fcareplan.cit-careplan-1426.local%2Ffhir%2FEpisodeOfCare%2F604%2F_history%2F1&patient=https%3A%2F%2Fpatient.cit-careplan-1426.local%2Ffhir%2FPatient%2F58556&status=active"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://careplan.cit-careplan-1279.local/fhir/Consent/627",
+      "fullUrl": "https://careplan.cit-careplan-1426.local/fhir/Consent/605",
       "resource": {
         "resourceType": "Consent",
-        "id": "627",
+        "id": "605",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-06-23T08:11:29.644+00:00",
+          "lastUpdated": "2020-08-12T07:56:06.171+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -51,7 +51,7 @@ __Response__
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/40492"
+          "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/58556"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -59,12 +59,12 @@ __Response__
         },
         "consentingParty": [
           {
-            "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/72498"
+            "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/74730"
           }
         ],
         "actor": [
           {
-            "id": "67450e29-d9f1-497f-8761-c9a73076aa74",
+            "id": "2b7c69e0-e8b8-4b02-8059-acb8909072e0",
             "role": {
               "coding": [
                 {
@@ -73,7 +73,7 @@ __Response__
               ]
             },
             "reference": {
-              "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/97900"
+              "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/25383"
             }
           }
         ],
@@ -82,7 +82,7 @@ __Response__
           {
             "meaning": "related",
             "reference": {
-              "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/626"
+              "reference": "https://careplan.cit-careplan-1426.local/fhir/EpisodeOfCare/604"
             }
           }
         ]

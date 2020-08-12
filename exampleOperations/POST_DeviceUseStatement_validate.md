@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWY3MDUzNDMtYzlhNy00OGU4LWI5MTktMzVlZDNkYzQ1OTRhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjA2ZmU1NTgtMDI3Yy00ZmEyLThjZDYtZTMzYzk1ZjdhYjNkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -28,19 +28,19 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
             "valueReference": {
-              "reference": "https://careplan.cit-device-427.local/fhir/CarePlan/74025"
+              "reference": "https://careplan.cit-device-481.local/fhir/CarePlan/14651"
             }
           }
         ],
         "status": "active",
         "subject": {
-          "reference": "https://patient.cit-device-427.local/fhir/Patient/24501"
+          "reference": "https://patient.cit-device-481.local/fhir/Patient/59927"
         },
         "source": {
-          "reference": "https://patient.cit-device-427.local/fhir/Patient/71467"
+          "reference": "https://patient.cit-device-481.local/fhir/Patient/53701"
         },
         "device": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/70"
+          "reference": "https://device.cit-device-481.local/fhir/Device/70"
         }
       }
     }

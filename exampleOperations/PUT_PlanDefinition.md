@@ -1,9 +1,9 @@
-`PUT [base]/PlanDefinition/62`
+`PUT [base]/PlanDefinition/80`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUGxhbkRlZmluaXRpb24uY3JlYXRlIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbi51cGRhdGUiLCJQbGFuRGVmaW5pdGlvbi5yZWFkIiwiUGxhbkRlZmluaXRpb24kYXBwbHkiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUGxhbkRlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJQbGFuRGVmaW5pdGlvbi5zZWFyY2giLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlBsYW5EZWZpbml0aW9uLnVwZGF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIiwiUGxhbkRlZmluaXRpb24kYXBwbHkiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "62",
+  "id": "80",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T19:59:48.525+00:00",
+    "lastUpdated": "2020-07-31T12:12:00.100+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -30,7 +30,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-493.local/fhir/Organization/21232"
+            "reference": "https://organization.cit-plan-593.local/fhir/Organization/35451"
           }
         },
         {
@@ -47,20 +47,20 @@ __Body__:
       ]
     }
   ],
-  "version": "4aa55837-a83d-4289-894c-b69d0327149f",
+  "version": "37563e80-42cc-4e7b-a2fe-b26138526580",
   "status": "active",
   "relatedArtifact": [
     {
       "type": "documentation",
       "resource": {
-        "reference": "https://plan.cit-plan-493.local/fhir/DocumentReference/63"
+        "reference": "https://plan.cit-plan-593.local/fhir/DocumentReference/81"
       }
     }
   ],
   "action": [
     {
       "definition": {
-        "reference": "https://plan.cit-plan-493.local/fhir/PlanDefinition/64"
+        "reference": "https://plan.cit-plan-593.local/fhir/PlanDefinition/82"
       }
     }
   ]
@@ -71,10 +71,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "62",
+  "id": "80",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-22T19:59:55.127+00:00",
+    "lastUpdated": "2020-07-31T12:12:04.251+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -86,7 +86,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-493.local/fhir/Organization/21232"
+            "reference": "https://organization.cit-plan-593.local/fhir/Organization/35451"
           }
         },
         {
@@ -103,20 +103,20 @@ __Response__
       ]
     }
   ],
-  "version": "4aa55837-a83d-4289-894c-b69d0327149f",
+  "version": "37563e80-42cc-4e7b-a2fe-b26138526580",
   "status": "active",
   "relatedArtifact": [
     {
       "type": "documentation",
       "resource": {
-        "reference": "https://plan.cit-plan-493.local/fhir/DocumentReference/63"
+        "reference": "https://plan.cit-plan-593.local/fhir/DocumentReference/81"
       }
     }
   ],
   "action": [
     {
       "definition": {
-        "reference": "https://plan.cit-plan-493.local/fhir/PlanDefinition/64"
+        "reference": "https://plan.cit-plan-593.local/fhir/PlanDefinition/82"
       }
     }
   ]
