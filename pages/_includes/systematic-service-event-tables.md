@@ -4,6 +4,7 @@
 |---|---|---|---|
 |EHealthSimpleEvent|created|ehealth-episodeofcare|An EpisodeOfCare has been created. This only happens when $create-episode-of-care is called|
 |EHealthSimpleEvent|updated|ehealth-episodeofcare|An EpisodeOfCare has been updated.|
+|EHealthContextEvent|updated|ehealth-episodeofcare.status|An EpisodeOfCare status has been updated.|
 |EHealthReferenceEvent|reference_added|ehealth-episodeofcare.team|A CareTeam has been added to an EpisodeOfCare|
 |EHealthReferenceEvent|reference_removed|ehealth-episodeofcare.team|A CareTeam has been removed fra a EpisodeOfCare|
 {:.grid}
@@ -14,6 +15,7 @@
 |---|---|---|---|
 |EHealthSimpleEvent|created|ehealth-careplan|A CarePlan has been created. This only happens when $apply is called on a PlanDefinition|
 |EHealthSimpleEvent|updated|ehealth-careplan|A CarePlan has been updated.|
+|EHealthContextEvent|updated|ehealth-careplan.status|A CarePlan status has been updated.|
 |EHealthReferenceEvent|reference_added|ehealth-careplan.partof|A CarePlan has been added as a subplan|
 |EHealthReferenceEvent|reference_added|ehealth-careplan.careteam|A CareTeam has been added to a CarePlan|
 |EHealthReferenceEvent|reference_removed|ehealth-careplan.careteam|A CareTeam has been removed fra a CarePlan|

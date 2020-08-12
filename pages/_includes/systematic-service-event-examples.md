@@ -453,6 +453,74 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 ```
+#### CarePlan status updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthContextEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/24",
+  "resourceVersion": "2",
+  "context": "status"
+}
+Message properties:
+{
+date = Mon, 29 Jun 2020 11:55:13 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 1
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthContextEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-careplan.status
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/34963
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/24
+pragma = no-cache
+resourceProfile = ehealth-careplan
+context = status
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:careplan-5c8b9bccc-qm87l-37837-1593431393700-1:3:36:2:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthContextEvent
+}
+```
+#### CarePlan updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/8",
+  "resourceVersion": "2"
+}
+Message properties:
+{
+date = Mon, 29 Jun 2020 11:52:43 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 2
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-careplan
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/67471
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/CarePlan/8
+pragma = no-cache
+resourceProfile = ehealth-careplan
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:careplan-5c8b9bccc-qm87l-37837-1593431393700-1:3:12:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
 #### CareTeam managing Organization added example
 
 ```
@@ -1375,6 +1443,80 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 ```
+#### EpisodeOfCare status updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthContextEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1036",
+  "resourceVersion": "2",
+  "context": "status"
+}
+Message properties:
+{
+date = Mon, 29 Jun 2020 11:12:40 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthContextEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-episodeofcare.status
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/57350
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/1036
+pragma = no-cache
+resourceProfile = ehealth-episodeofcare
+context = status
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:careplan-5c8b9bccc-gvtxg-37615-1593428279019-1:3:1234:2:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthContextEvent
+}
+```
+#### EpisodeOfCare team updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthReferenceEvent",
+  "messageVersion": "1.0",
+  "eventType": "reference_added",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/50",
+  "resourceVersion": "2",
+  "resourceElement": "team",
+  "references": [
+    "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/90708",
+    "https://organization.local.ehealth.sundhed.dk/fhir/CareTeam/80549"
+  ]
+}
+Message properties:
+{
+date = Mon, 29 Jun 2020 12:44:03 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthReferenceEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-episodeofcare.team
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/59716
+resourceelement = team
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/50
+pragma = no-cache
+resourceProfile = ehealth-episodeofcare
+content-type = text/plain; charset=ISO-8859-1
+eventType = reference_added
+id = ID:careplan-5c8b9bccc-qm87l-37837-1593431393700-1:3:88:2:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
+}
+```
 #### EpisodeOfCare updated example
 
 ```
@@ -1481,7 +1623,8 @@ Message body:
   "messageType": "EHealthContextEvent",
   "messageVersion": "1.0",
   "eventType": "created",
-  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/16802",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/79457",
+  "resourceVersion": "1",
   "context": "measurement-missing"
 }
 Message properties:
@@ -1907,6 +2050,102 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
 }
 ```
+#### SSL Package created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/1b996c36-1d75-4836-934c-1dee75336639",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 17 Feb 2020 22:09:12 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 1
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-catalogue
+resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/1b996c36-1d75-4836-934c-1dee75336639
+pragma = no-cache
+resourceProfile = ssl-package
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:160:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Package deleted example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "deleted",
+  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/1a621b49-4c9d-4267-adf2-f5d644454232",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 17 Feb 2020 22:07:57 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 6
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-package
+resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/1a621b49-4c9d-4267-adf2-f5d644454232
+pragma = no-cache
+resourceProfile = ssl-package
+content-type = text/plain; charset=ISO-8859-1
+eventType = deleted
+id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:132:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Package updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/6ffa7981-75f9-4460-a79a-d27aaeff3c84",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 17 Feb 2020 22:09:14 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-package
+resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/package/6ffa7981-75f9-4460-a79a-d27aaeff3c84
+pragma = no-cache
+resourceProfile = ssl-package
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:188:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
 #### Plandefinition created example
 
 ```
@@ -1976,6 +2215,43 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
 }
 
+```
+#### Plandefinition Info-material added example (with identifier)
+
+```
+Message body:
+{
+  "messageType": "EHealthReferenceEvent",
+  "messageVersion": "1.0",
+  "eventType": "reference_added",
+  "resourceReference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/208",
+  "resourceVersion": "2",
+  "resourceElement": "relatedArtifact.resource",
+  "references": [
+    "[urn:ietf:rfc:3986]urn:uuid:482cc8c6-afab-11ea-b3de-0242ac130004"
+  ]
+}
+Message properties:
+{
+date = Thu, 25 Jun 2020 12:35:29 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 1
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthReferenceEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-plandefinition.relatedArtifact.resource
+resourceelement = relatedArtifact.resource
+resourceReference = https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/208
+pragma = no-cache
+resourceProfile = ehealth-plandefinition
+content-type = text/plain; charset=ISO-8859-1
+eventType = reference_added
+id = ID:plan-86cd6d5dc9-cxvrz-46523-1593087908930-1:4:24:2:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
+}
 ```
 #### Plandefinition Subplan added example
 
