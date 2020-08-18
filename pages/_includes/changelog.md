@@ -8,8 +8,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Custom operations
 - added plandefinition-export and plandefinition-import
-#### System operations
-#### Instance operations
 ### Code systems
 - Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/cs/task-category`
@@ -17,7 +15,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/vs/task-category`
 - Removed code `313299006` from `http://ehealth.sundhed.dk/vs/conditions`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
-### ConceptMaps
 ### SearchParameters
 - added careteamParticipant as search parameter on Appointments
 ### Resource/profile changes
