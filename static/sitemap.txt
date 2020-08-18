@@ -2,3 +2,4 @@ https://docs.ehealth.sundhed.dk/latest/ig/index.html
 https://docs.ehealth.sundhed.dk/v2020.3/ig/index.html
 https://docs.ehealth.sundhed.dk/v2020.4/ig/index.html
 https://docs.ehealth.sundhed.dk/v2020.5/ig/index.html
+https://docs.ehealth.sundhed.dk/v2020.6/ig/index.html
