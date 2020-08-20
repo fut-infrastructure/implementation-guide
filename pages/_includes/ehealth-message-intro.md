@@ -75,11 +75,22 @@ The following rules apply for the ehealth-message profile:
 * Only one of recipient or extension recipientCareTeam may be filled in
 * Medium 'nemsms' may only be used if the Patient allows reception of NemSMS (has telecom with value 'NemSMS'). In that case, a NemSMS message will be sent to the Patient.
 
-# Notifications
-The following rules apply to ehealth-message resources with _status_ 'completed', given the recipient is a _Patient_ who allows reception of NemSMS (has telecom with value 'NemSMS'):
+# NemSMS Notifications
 
-* the payload of a ehealth-message resource with _medium.code_ 'nemsms' is sent to the Patient as a NemSMS.
-* a ehealth-message resource with _medium.code_ not equal to 'nemsms' triggers a notification message to the Patient, sent as a NemSMS. 
+In order to send a NemSMS to at patient one must create an ehealth-message resource with _medium.code_ 'nemsms' and _status_ 'preparation'. 
+The the payload of the ehealth-message resource is sent asynchronously to the Patient as a NemSMS.
+
+* In case of successful dispatch of the NemSMS the ehealth-message resource _status_ will be updated to 'completed'.
+* In case of failure the ehealth-message resource _status_ will be updated to 'aborted'.
+
+### Automatic NemSMS Notifications
+Given the following conditions:
+
+* An ehealth-message resources with category = 'message' is created or updated with _status_ 'completed'.
+* the recipient is a _Patient_ who allows reception of NemSMS (has telecom with value 'NemSMS')
+* _medium.code_  does not equal 'nemsms' 
+
+then a new ehealth-message resource with _medium.code_ 'nemsms' and _status_ 'preparation' is created, notifying that the first communication has been 'sent'.
 
 # Update rules
 
