@@ -210,6 +210,21 @@
         <valueSetUri value="http://ehealth.sundhed.dk/vs/event-status" />
       </binding>
     </element>
+    <element id="Communication.notDoneReason">
+      <path value="Communication.notDoneReason" />
+      <short value="in-progress | system-error | recipient-unavailable" />
+      <definition value="Describes why the communication event has not occured in coded and/or textual form." />
+      <meaningWhenMissing value="The communication has occured." />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationNotDoneReason" />
+        </extension>
+        <strength value="required" />
+        <description value="Codes for the reason why a communication has not occured." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/communication-not-done-reason" />
+      </binding>
+    </element>
     <element id="Communication.category">
       <path value="Communication.category" />
       <slicing>
