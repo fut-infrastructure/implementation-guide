@@ -71,7 +71,7 @@
       <display value="ratio"/>
       <designation>
          <language value="da"/>
-         <value value=""/>
+         <value value=" "/>
       </designation>
    </concept>
    <concept>
@@ -87,7 +87,7 @@
       <display value="Number"/>
       <designation>
          <language value="da"/>
-         <value value=""/>
+         <value value=" "/>
       </designation>
    </concept>
 </CodeSystem>
