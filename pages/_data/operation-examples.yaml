@@ -643,5 +643,6 @@
 - profile: ehealth-videoappointment
   path: PUT_Appointment_Video.md
 
-- profile: person
+# setting profile = system, in order to include in general operation examples page
+- profile: system
   path: POST_Person.md
