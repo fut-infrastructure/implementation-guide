@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="conceptmap-obs-code-to-ucum"/>
+    <url value="http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum"/>
+    <version value="0.1.0"/>
+    <name value="conceptmap-obs-code-to-ucum"/>
+    <title value="Observation code to UCUM mapping"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <date value="2020-08-31T00:00:00+00:00"/>
+    <publisher value="Systematic A/S"/>
+    <contact>
+        <name value="Systematic A/S"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/"/>
+        </telecom>
+    </contact>
+    <sourceUri value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+    <targetUri value="http://hl7.org/fhir/ValueSet/ucum-common"/>
+    <group>
+        <source value="urn:oid:1.2.208.176.2.1"/>
+        <target value="http://unitsofmeasure.org"/>
+        <element>
+            <code value="NPU03011"/>
+            <display value="O2 sat.;Hb(aB)"/>
+            <target>
+                <code value="%"/>
+                <display value="percent"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU21692"/>
+            <display value="Puls;Hjerte"/>
+            <target>
+                <code value="/min"/>
+                <display value="per minute"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU03804"/>
+            <display value="Legeme vægt; Pt"/>
+            <target>
+                <code value="kg"/>
+                <display value="kilogram"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU27281"/>
+            <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+            <target>
+                <code value="kg/m2"/>
+                <display value="kilogram / (meter ^ 2)"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU03794"/>
+            <display value="Pt—Legeme; højde = ? m"/>
+            <target>
+                <code value="m"/>
+                <display value="meter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="urn:oid:1.2.208.184.100.8"/>
+        <target value="http://unitsofmeasure.org"/>
+        <element>
+            <code value="MCS88015"/>
+            <display value="FEV1;Lunge"/>
+            <target>
+                <code value="L"/>
+                <display value="liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88016"/>
+            <display value="FVC;Lunge"/>
+            <target>
+                <code value="L"/>
+                <display value="liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88017"/>
+            <display value="FEV1/FVC;Lunge"/>
+            <target>
+                <code value="{ratio}"/>
+                <display value="ratio"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88019"/>
+            <display value="Blodtryk hjemme systolisk;Arm"/>
+            <target>
+                <code value="mm[Hg]"/>
+                <display value="millimeter of mercury"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88020"/>
+            <display value="Blodtryk hjemme diastolisk;Arm"/>
+            <target>
+                <code value="mm[Hg]"/>
+                <display value="millimeter of mercury"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88021"/>
+            <display value="MRC skala;Pt(KOL)"/>
+            <target>
+                <code value="{Number}"/>
+                <display value="Number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88023"/>
+            <display value="FEV1 af forventet værdi;Pt(KOL)"/>
+            <target>
+                <code value="{ratio}"/>
+                <display value="ratio"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88050"/>
+            <display value="Rejse sætte sig testen;Pt"/>
+            <target>
+                <code value="{Number}"/>
+                <display value="Number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88137"/>
+            <display value="CAT score;Pt"/>
+            <target>
+                <code value="{Number}"/>
+                <display value="Number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

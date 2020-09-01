@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="ehealth-ucum-printsymbol-supplement"/>
+   <url value="http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement"/>
+   <version value="0.6.0"/>
+   <name value="UCUMPrintSymbolSupplement"/>
+   <title value="UCUM printSymbol supplement"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2019-01-29T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="UCUM printSymbol supplement"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="%"/>
+      <display value="percent"/>
+      <designation>
+         <language value="da"/>
+         <value value="%"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="/min"/>
+      <display value="per minute"/>
+      <designation>
+         <language value="da"/>
+         <value value="/min"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="kg"/>
+      <display value="kilogram"/>
+      <designation>
+         <language value="da"/>
+         <value value="kg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="kg/m2"/>
+      <display value="kilogram / (meter ^ 2)"/>
+      <designation>
+         <language value="da"/>
+         <value value="kg/m2"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="m"/>
+      <display value="meter"/>
+      <designation>
+         <language value="da"/>
+         <value value="m"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="L"/>
+      <display value="liter"/>
+      <designation>
+         <language value="da"/>
+         <value value="l"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="{ratio}"/>
+      <display value="ratio"/>
+      <designation>
+         <language value="da"/>
+         <value value=""/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="mm[Hg]"/>
+      <display value="millimeter of mercury"/>
+      <designation>
+         <language value="da"/>
+         <value value="mmHg"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="{Number}"/>
+      <display value="Number"/>
+      <designation>
+         <language value="da"/>
+         <value value=""/>
+      </designation>
+   </concept>
+</CodeSystem>
