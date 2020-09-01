@@ -2,9 +2,6 @@
 
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ucum-common"/>
-    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-extensible">
-        <valueBoolean value="true"/>
-    </extension>
     <url value="http://hl7.org/fhir/ValueSet/ucum-common"/>
     <version value="4.0.1"/>
     <name value="Common UCUM units"/>
