@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="conceptmap-ucum-to-printsymbol"/>
+    <url value="http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol"/>
+    <version value="0.1.0"/>
+    <name value="conceptmap-ucum-to-printsymbol"/>
+    <title value="UCUM code to PrintSymbol mapping"/>
+    <status value="active"/>
+    <experimental value="true"/>
+    <date value="2020-08-31T00:00:00+00:00"/>
+    <publisher value="Systematic A/S"/>
+    <contact>
+        <name value="Systematic A/S"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/"/>
+        </telecom>
+    </contact>
+    <sourceUri value="http://hl7.org/fhir/ValueSet/ucum-common"/>
+    <targetUri value="http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement"/>
+    <group>
+        <source value="http://unitsofmeasure.org"/>
+        <target value="http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement"/>
+        <element>
+            <code value="%"/>
+            <display value="percent"/>
+            <target>
+                <code value="%"/>
+                <display value="percent"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="/min"/>
+            <display value="per minute"/>
+            <target>
+                <code value="/min"/>
+                <display value="per minute"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="kg"/>
+            <display value="kilogram"/>
+            <target>
+                <code value="kg"/>
+                <display value="kilogram"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="kg/m2"/>
+            <display value="kilogram / (meter ^ 2)"/>
+            <target>
+                <code value="kg/m2"/>
+                <display value="kilogram / (meter ^ 2)"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="m"/>
+            <display value="meter"/>
+            <target>
+                <code value="m"/>
+                <display value="meter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="L"/>
+            <display value="liter"/>
+            <target>
+                <code value="L"/>
+                <display value="liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="{ratio}"/>
+            <display value="ratio"/>
+            <target>
+                <code value="{ratio}"/>
+                <display value="ratio"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="mm[Hg]"/>
+            <display value="millimeter of mercury"/>
+            <target>
+                <code value="mm[Hg]"/>
+                <display value="millimeter of mercury"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="{Number}"/>
+            <display value="Number"/>
+            <target>
+                <code value="{Number}"/>
+                <display value="Number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

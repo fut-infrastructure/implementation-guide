@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ucum-common"/>
+    <url value="http://hl7.org/fhir/ValueSet/ucum-common"/>
+    <version value="4.0.1"/>
+    <name value="Common UCUM units"/>
+    <status value="active"/>
+    <publisher value="FHIR Project"/>
+    <description value="Commonly encountered UCUM units (for purposes of helping populate look ups."/>
+    <copyright value="UCUM is Copyright &#xA9; 1999-2013 Regenstrief Institute, Inc. and The UCUM Organization, Indianapolis, IN. All rights reserved. See http://unitsofmeasure.org/trac//wiki/TermsOfUse for details."/>
+    <compose>
+        <include>
+            <system value="http://unitsofmeasure.org"/>
+        </include>
+    </compose>
+</ValueSet>
