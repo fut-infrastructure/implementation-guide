@@ -2,6 +2,25 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 2020.6.1 (2020-09-11)
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added `http://unitsofmeasure.org`
+- Added `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+### ValueSets
+- Added `http://hl7.org/fhir/ValueSet/ucum-common`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement`
+### ConceptMaps
+- Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+### SearchParameters
+### Resource/profile changes
+
 ## 2020.6 (2020-08-20)
 
 ### General changes
