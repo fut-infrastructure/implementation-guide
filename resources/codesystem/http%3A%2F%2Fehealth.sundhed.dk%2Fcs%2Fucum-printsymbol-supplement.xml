@@ -69,10 +69,6 @@
    <concept>
       <code value="{ratio}"/>
       <display value="ratio"/>
-      <designation>
-         <language value="da"/>
-         <value value=" "/>
-      </designation>
    </concept>
    <concept>
       <code value="mm[Hg]"/>
@@ -85,9 +81,5 @@
    <concept>
       <code value="{Number}"/>
       <display value="Number"/>
-      <designation>
-         <language value="da"/>
-         <value value=" "/>
-      </designation>
    </concept>
 </CodeSystem>
