@@ -68,3 +68,7 @@ __Path__ | __Description__
 Patients with name and address protection are marked with security label 'restricted' (R in http://hl7.org/fhir/v3/Confidentiality). 
 
 The period of the name and address protection is expressed in an extention with url: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-nameandaddressprotection"
+
+# Resolving general practitioner
+
+When creating and updating a patient, the infrastructure gets information about the patients general practitioner. The information about the general practitioner origins from the provider registry (Yderregister: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/yderregisteret) and results in a provider identifier. Under normal circumstances, the provider identifier identifies an organization in SOR registry (Sundhedsvæsenets Organisationsregister: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-sor) which resolves to an organization in the Organization service in the infrastructure. If the organization cannot be identified as an organization in the Organization service, the reference on the general practitioner remains as an logical reference (http://hl7.org/fhir/STU3/references.html#logical) containing the provider identifier.
