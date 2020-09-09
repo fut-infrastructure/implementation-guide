@@ -166,6 +166,17 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
       </type>
     </element>
+    <element id="Communication.extension:myExtension">
+      <path value="Communication.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-on-behalf-of" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
