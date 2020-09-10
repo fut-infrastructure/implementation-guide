@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-ext-careteam"/>
+  <id value="ehealth-ext-careteam" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam" />
   <name value="ehealth-ext-careteam" />
   <status value="draft" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -15,6 +15,7 @@
   <contextType value="resource" />
   <context value="Appointment.participant" />
   <context value="Communication" />
+  <context value="Appointment.participant.actor" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
