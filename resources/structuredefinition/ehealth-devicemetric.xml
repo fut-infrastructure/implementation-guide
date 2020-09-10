@@ -75,7 +75,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MetricType" />
         </extension>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/device-measurement-unit" />
         </valueSetReference>
@@ -87,7 +87,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MetricUnit" />
         </extension>
-        <strength value="preferred" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/device-measurement-unit" />
         </valueSetReference>

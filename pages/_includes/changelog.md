@@ -3,13 +3,33 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+ 
+### General changes
+ 
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
+## 2020.6.1 (2020-09-04)
+
+### Code systems
+- Added `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement`
+### ConceptMaps
+- Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+
+## 2020.6 (2020-08-20)
 
 ### General changes
 
 ### Custom operations
 - added plandefinition-export and plandefinition-import
-#### System operations
-#### Instance operations
 ### Code systems
 - Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/cs/task-category`
@@ -17,12 +37,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `CalibrationNeeded` to `http://ehealth.sundhed.dk/vs/task-category`
 - Removed code `313299006` from `http://ehealth.sundhed.dk/vs/conditions`
 - Added new code `OpenSSLOrder` to `http://ehealth.sundhed.dk/vs/task-category`
-### ConceptMaps
 ### SearchParameters
 - added careteamParticipant as search parameter on Appointments
 ### Resource/profile changes
 - added minimum requirement of 1 identifier for eHealth-Organization
 - added administrative-status required on eHealth-Message
+- DeviceMetric.type and DeviceMetric.unit strength changed from 'preferred' to 'required'
 
 ## 2020.5 (2020-06-25)
 

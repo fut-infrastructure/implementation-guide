@@ -166,6 +166,17 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id" />
       </type>
     </element>
+    <element id="Communication.extension:onBehalfOf">
+      <path value="Communication.extension" />
+      <sliceName value="onBehalfOf" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-on-behalf-of" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <definition value="Identifiers associated with this Communication that are defined by business processes and/ or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation)" />
@@ -208,6 +219,21 @@
       <binding>
         <strength value="required" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/event-status" />
+      </binding>
+    </element>
+    <element id="Communication.notDoneReason">
+      <path value="Communication.notDoneReason" />
+      <short value="in-progress | system-error | recipient-unavailable" />
+      <definition value="Describes why the communication event has not occured in coded and/or textual form." />
+      <meaningWhenMissing value="The communication has occured." />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="CommunicationNotDoneReason" />
+        </extension>
+        <strength value="required" />
+        <description value="Codes for the reason why a communication has not occured." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/communication-not-done-reason" />
       </binding>
     </element>
     <element id="Communication.category">

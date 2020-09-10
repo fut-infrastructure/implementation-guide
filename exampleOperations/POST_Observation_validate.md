@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjNmNGFmZjEtZTU5MC00Nzk0LTkyYTgtMTQxZmRjOTRiMjc1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiN2ZiZTA5YjQtZWRiYS00MWFiLWFkZGQtMjg0NzlkMmIzYWE1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
 Accept-Encoding: gzip
@@ -26,7 +26,7 @@ __Body__:
         },
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1074.local/fhir/ProcedureRequest/60787"
+            "reference": "https://careplan.cit-measurement-1098.local/fhir/ProcedureRequest/24502"
           }
         ],
         "status": "final",
@@ -39,22 +39,22 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/95136"
+          "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/65798"
         },
         "context": {
-          "reference": "https://careplan.cit-measurement-1074.local/fhir/EpisodeOfCare/79289"
+          "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/74460"
         },
         "effectivePeriod": {
-          "start": "2020-06-22T20:00:17+00:00",
-          "end": "2020-06-22T20:00:17+00:00"
+          "start": "2020-07-10T10:19:57+00:00",
+          "end": "2020-07-10T10:19:57+00:00"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-measurement-1074.local/fhir/Patient/95136"
+            "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/65798"
           }
         ],
         "device": {
-          "reference": "https://device.cit-measurement-1074.local/fhir/Device/45230"
+          "reference": "https://device.cit-measurement-1098.local/fhir/Device/53026"
         }
       }
     }

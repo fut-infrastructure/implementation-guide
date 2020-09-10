@@ -26,6 +26,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `GENERAL_VALIDATION_ERROR`: Validation error: %s
 
+- `GENERAL_EXPORT_FAILED`: Export resource has failed.
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s.
@@ -102,7 +104,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
 
-- `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: `<DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>`
+- `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: <DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>
 
 #### ehealth-documentreference
 
@@ -157,6 +159,10 @@ If a requests result in an error, the error message can be obtained from the `di
 - `LIBRARY_EVALUATE_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
 - `LIBRARY_IDENTIFIER_UPDATE_RESTRICTED`: Validation error: attempt to update Library Identifiers list.
+
+- `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s. Number of search results: %s
+
+- `LIBRARY_MISSING_IDENTIFIER`: Library %s does not have identifier of type: %s
 
 #### ehealth-measurement
 
@@ -238,6 +244,12 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `ORGANIZATION_TRAVERSE_TO_SOR_NOT_POSSIBLE`: No related SOR organization could be found for: %s
 
+- `ORGANIZATION_IDENTIFIER_MUST_CONTAIN_AT_LEAST_CVR_FOR_SOURCE_MANUAL`: Identifier system CVR required for Organization with source "manual"
+
+- `ORGANIZATION_UNKNOWN_IDENTIFIER`: Unable to find unique Organization with identifier: %s. Number of search results: %s
+
+- `ORGANIZATION_MISSING_IDENTIFIER`: Organization %s does not have identifier of type: %s
+
 #### ehealth-plandefinition
 
 - `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s.
@@ -247,6 +259,8 @@ If a requests result in an error, the error message can be obtained from the `di
 - `PLANDEFINITION_VALIDATE_MANDATORY_ACTIVITYDEFINITION_OR_SUBPLAN_REFERENCE`: At least one activity definition or subplan should be referenced.
 
 - `PLANDEFINITION_VALIDATE_ALL_REFERENCED_ACTIVITYDEFINITIONS_OR_SUBPLANS_SHOULD_BE_ACTIVE`: All referenced activity definitions or subplans should be with state: "active"
+
+- `PLANDEFINITION_MISSING_RELATED_ACTION`: An action points to a non-existing related action
 
 #### ehealth-provenance
 
@@ -268,7 +282,7 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `REPORTING_MISSING_INPUT_PARAMETER`: Parameter "%s" is mandatory for report "%s".
 
-- `REPORTING_REPORT_GENERATION_FAILED`: Report generation has been failed
+- `REPORTING_REPORT_GENERATION_FAILED`: Report generation has failed
 
 - `REPORTING_SYNCHRONOUS_GENERATION_NOT_ALLOWED`: Synchronous generation of the report is not allowed
 
@@ -289,6 +303,12 @@ If a requests result in an error, the error message can be obtained from the `di
 - `SECURITY_SEARCH_PARAM_NOT_MATCHING_TOKEN_CONTEXT`: Search parameters not matching security token context: %s
 
 - `SECURITY_SEARCH_PARAMS_MANDATORY`: Search parameters mandatory with current user type and combination of search parameters: %s
+
+#### ehealth-status
+
+- `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS`: A scheduled pause may not last more than 30 days
+
+- `STATUS_SCHEDULE_IDENTICAL_TIME`: Multiple status changes may not be scheduled to be activated simultaneously
 
 #### ehealth-task
 

@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJkcXlmaEdsRGkzM2prU2o5NWNRYXp3Zk9MOWUzRDlTbFQ1czQxOFplTzlvIn0.eyJqdGkiOiJjOTZiMTNkZS1kM2QzLTRkMTAtYmY1YS1jY2YzNDdlMzE3MDAiLCJleHAiOjE1NzMwNTE5MTYsIm5iZiI6MCwiaWF0IjoxNTczMDUxNjE2LCJpc3MiOiJodHRwczovL3NhbWwuZnV0LnRyaWZvcmsuY29tL2F1dGgvcmVhbG1zL2VoZWFsdGgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTZlYWYxODEtZGQ2MC00MmIzLWI0ODItODljNDA4YjBkNWQ0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidHJpZm9ya19hZG1pbiIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6IjFlNGZkNWY4LTNlYWEtNGI4ZC1hNWRkLWM1Mzg1MDM0NTFlZSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiT3JnYW5pemF0aW9uLnJlYWQiLCJDb21tdW5pY2F0aW9uLnJlYWQiLCJQcmFjdGl0aW9uZXIuZGVsZXRlIiwiRXBpc29kZU9mQ2FyZS51cGRhdGUiLCJPcmdhbml6YXRpb24ud3JpdGUiLCJQYXRpZW50LnJlYWQiLCJFcGlzb2RlT2ZDYXJlLmRlbGV0ZSIsIlByYWN0aXRpb25lci51cGRhdGUiLCJQYXRpZW50JGNyZWF0ZVBhdGllbnRGcm9tUGVyc29uIiwiT3JnYW5pemF0aW9uLnNlYXJjaCIsIlBhdGllbnQucGF0Y2giLCJQYXRpZW50LioiLCJFcGlzb2RlT2ZDYXJlLioiLCJDYXJlVGVhbS5kZWxldGUiLCJDb21tdW5pY2F0aW9uLioiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIkNvbW11bmljYXRpb24udXBkYXRlIiwiQ2FyZVRlYW0udXBkYXRlIiwiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDb21tdW5pY2F0aW9uLnBhdGNoIiwiQ2FyZVBsYW4ucGF0Y2giLCJDYXJlVGVhbS53cml0ZSIsIkVwaXNvZGVPZkNhcmUud3JpdGUiLCJQcmFjdGl0aW9uZXIuKiIsIlByYWN0aXRpb25lci5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIiwiQ2FyZVBsYW4ud3JpdGUiLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24ud3JpdGUiLCJFcGlzb2RlT2ZDYXJlLmNyZWF0ZSIsIlBhdGllbnQuZGVsZXRlIiwiQ2FyZVRlYW0uKiIsIkNhcmVQbGFuLmNyZWF0ZSIsIlByYWN0aXRpb25lci5yZWFkIiwiUGF0aWVudCR1cGRhdGVQYXRpZW50V2l0aFNLUlNEYXRhIiwiT3JnYW5pemF0aW9uLmRlbGV0ZSIsIkNhcmVUZWFtLmNyZWF0ZSIsIlBhdGllbnQud3JpdGUiLCJQcmFjdGl0aW9uZXIucGF0Y2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJPcmdhbml6YXRpb24uKiIsIlBhdGllbnQuY3JlYXRlIiwiRXBpc29kZU9mQ2FyZSRpcy1jb250ZXh0LWFsbG93ZWQiLCJQYXRpZW50LnNlYXJjaCIsIkNhcmVQbGFuLmRlbGV0ZSIsIkNhcmVQbGFuLioiLCJvZmZsaW5lX2FjY2VzcyIsIkNhcmVUZWFtLnBhdGNoIiwiRXBpc29kZU9mQ2FyZSRjcmVhdGUtZXBpc29kZS1vZi1jYXJlIiwiQ2FyZVBsYW4udXBkYXRlIiwiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJDYXJlVGVhbS5yZWFkIiwiQ29tbXVuaWNhdGlvbi5kZWxldGUiLCJFcGlzb2RlT2ZDYXJlJHVwZGF0ZS1jYXJlLXRlYW1zIiwiUHJhY3RpdGlvbmVyLndyaXRlIiwiUHJhY3RpdGlvbmVyLmNyZWF0ZSIsIkNhcmVQbGFuJHVwZGF0ZS1yZXNwb25zaWJpbGl0eSIsIk9yZ2FuaXphdGlvbi5jcmVhdGUiLCJPcmdhbml6YXRpb24udXBkYXRlIiwiQ2FyZVBsYW4ucmVhZCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiQ2FyZVRlYW0uc2VhcmNoIiwiT3JnYW5pemF0aW9uLnBhdGNoIiwiUGF0aWVudC51cGRhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6ImVoZWFsdGggZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJ1c2VyX3R5cGUiOiJTWVNURU0iLCJ1c2VyX2lkIjoiZTZlYWYxODEtZGQ2MC00MmIzLWI0ODItODljNDA4YjBkNWQ0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiY3VjdW1iZXJfbWFzdGVyIn0.U1VjMQoQssz0A3tr08ZcMzuueXdCVLSeRxPAWJGCg7LEFVB3D_9b2dKbazRhKi7wiWQWK-TPfD7nMkO1mPivSzp8GLC_53ASjABUa39WYkhuruPfeES6-YQYcFih6om_xep9OWBjn4VmWYSjfIWR4sL8_rcPOOhoAH_3S3kajARcbn4HKqocoJ0bwvx4_u_3csYvTbSs7o_ajRBmOxzBlcdctILewA4rhU3zCks_FSn1IChPuBS37ABqnIRCdWcBh02_uDihNW6DgBj0qjOxMbWDqbYPHvKUvcPJYNsjKPPMTxVhXYJxMIkoewi3egJW4TwPrXjDnj3VakKyRYseqw
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJkcXlmaEdsRGkzM2prU2o5NWNRYXp3Zk9MOWUzRDlTbFQ1czQxOFplTzlvIn0.eyJleHAiOjE1OTg5Njg3NjYsImlhdCI6MTU5ODk1MDc2NiwianRpIjoiNGFhMjNlNWEtNTM1Zi00OWNkLWFlMWEtYjhlMTI1MmRiZGRmIiwiaXNzIjoiaHR0cHM6Ly9zYW1sLmZ1dC50cmlmb3JrLmNvbS9hdXRoL3JlYWxtcy9laGVhbHRoIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjI0NjM0NmUxLWMzNWItNDgwYy1iMzZhLWZlM2YyZWE2YjdmYSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImN1Y3VtYmVyIiwic2Vzc2lvbl9zdGF0ZSI6IjliZjIwMzZkLTM4MjgtNGFkNi1hZjNjLTRiYWRhMzE4ZTI1NiIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiT3JnYW5pemF0aW9uLnJlYWQiLCJFcGlzb2RlT2ZDYXJlLnVwZGF0ZSIsIlJlbGF0ZWRQZXJzb24uKiIsIlByb2NlZHVyZVJlcXVlc3QudXBkYXRlIiwiUGF0aWVudC5yZWFkIiwiQ29uc2VudC51cGRhdGUiLCJBY3Rpdml0eURlZmluaXRpb24ucmVhZCIsIkVwaXNvZGVPZkNhcmUuZGVsZXRlIiwiUGVyc29uJG1hdGNoIiwiUGF0aWVudCRjcmVhdGVQYXRpZW50RnJvbVBlcnNvbiIsIk9yZ2FuaXphdGlvbi5zZWFyY2giLCJQcm9jZWR1cmVSZXF1ZXN0LnBhdGNoIiwiQ2l0aXplbiBFbnJvbGxlciIsIkVwaXNvZGVPZkNhcmUuKiIsInVtYV9hdXRob3JpemF0aW9uIiwiUmVsYXRlZFBlcnNvbi53cml0ZSIsIkNhcmVQbGFuJHVwZGF0ZS1jYXJlLXRlYW1zIiwiQ2FyZVBsYW4ucGF0Y2giLCJFcGlzb2RlT2ZDYXJlLndyaXRlIiwiQ29uc2VudC5wYXRjaCIsIlByYWN0aXRpb25lci5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIiwiRG9jdW1lbnRSZWZlcmVuY2UucmVhZCIsIkNvbnNlbnQuc2VhcmNoIiwiUXVlc3Rpb25uYWlyZS5zZWFyY2giLCJMaWJyYXJ5LnJlYWQiLCJSZWxhdGVkUGVyc29uLmNyZWF0ZSIsIkVwaXNvZGVPZkNhcmUuY3JlYXRlIiwiUHJhY3RpdGlvbmVyLnJlYWQiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJQcm9jZWR1cmVSZXF1ZXN0LndyaXRlIiwiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiUHJvY2VkdXJlUmVxdWVzdC5yZWFkIiwiRXBpc29kZU9mQ2FyZS5yZWFkIiwiUXVlc3Rpb25uYWlyZS5yZWFkIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiUHJvY2VkdXJlUmVxdWVzdC4qIiwiUHJvY2VkdXJlUmVxdWVzdC5jcmVhdGUiLCJSZWxhdGVkUGVyc29uLmRlbGV0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlJGlzLWNvbnRleHQtYWxsb3dlZCIsIkNvbmRpdGlvbi5zZWFyY2giLCJDb25kaXRpb24uY3JlYXRlIiwib2ZmbGluZV9hY2Nlc3MiLCJSZWxhdGVkUGVyc29uLnBhdGNoIiwiTGlicmFyeS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlJGNyZWF0ZS1lcGlzb2RlLW9mLWNhcmUiLCJDYXJlUGxhbi51cGRhdGUiLCJSZWxhdGVkUGVyc29uLnVwZGF0ZSIsIlJlbGF0ZWRQZXJzb24ucmVhZCIsIkNvbmRpdGlvbi5yZWFkIiwiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJDb25zZW50LnJlYWQiLCJDYXJlVGVhbS5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIkNvbnNlbnQuY3JlYXRlIiwiUHJvY2VkdXJlUmVxdWVzdC5zZWFyY2giLCJQbGFuRGVmaW5pdGlvbiRhcHBseSIsIkNhcmVQbGFuLnJlYWQiLCJDYXJlUGxhbiR1cGRhdGUucmVzcG9uc2liaWxpdHkiLCJDYXJlVGVhbS5zZWFyY2giLCJDYXJlUGxhbi5zZWFyY2giLCJQcm9jZWR1cmVSZXF1ZXN0LmRlbGV0ZSIsIlJlbGF0ZWRQZXJzb24uc2VhcmNoIiwiUGxhbkRlZmluaXRpb24ucmVhZCJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib2lvX2N1c3RvbSBlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiIsInVzZXJfaWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5mdXQudHJpZm9yay5jb20vZmhpci9QcmFjdGl0aW9uZXIvMTA1Mjk2IiwibmFtZSI6IkNhcmwgRXJpa3NlbiIsImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uZnV0LnRyaWZvcmsuY29tL2ZoaXIvT3JnYW5pemF0aW9uLzg1NjQiLCJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5mdXQudHJpZm9yay5jb20vZmhpci9DYXJlVGVhbS81NDQ1MiJ9LCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJjdWN1bWJlcl9jaXRpemVuX2Vucm9sbGVyIiwiZ2l2ZW5fbmFtZSI6IkNhcmwiLCJmYW1pbHlfbmFtZSI6IkVyaWtzZW4ifQ.YIMDUiOzEKS7pgfmZLlZcEl1XiZRceG6FK9ho0wGNBr7IJ558-OH0rNNvX7ci3hQU7BizwtmENG0tDEVzF4SA3QrEKKQCZYnK_2rhOC07OJnvJCw5E4RUza0ceKE2Mqc_rF5ZTt-NsBGuEO0lvzv1hOlljWqJVbtuR068OqozB8NKtSEmB9yYQFzTYtaNZMks3bLx_qPoSPjYqCNATnWcmjmIOML-1U5J2BrICvGNng4KgjHBTqxXvsZgJ-ADdHg3WdL0qRoXo9mJ8Uzvsc4XXKWU_3wIRoslq0HcpgjrVgRwNewCGF8wkPuvQ00Fz88EsNmFelm72jLDcNnEuKwvw
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/4.0.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.1 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -13,71 +13,54 @@ Content-Type: application/fhir+json; charset=UTF-8
 __Body__:
 ```json
 {
-	"resourceType": "Parameters",
-	"parameter": [
-		{
-			"name": "resource",
-			"resource": {
-				"resourceType": "Person",
-				"identifier": [
-					{
-						"system": "urn:oid:1.2.208.176.1.2",
-						"value": "1401124469"
-					}
-				]
-			}
-		},
-		{
-			"name": "count",
-			"valueInteger": 1
-		}
-	]
+  "resourceType" : "Parameters",
+  "parameter" : [ {
+    "name" : "resource",
+    "resource" : {
+      "resourceType" : "Person",
+      "identifier" : [ {
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0506504003"
+      } ]
+    }
+  } ]
 }
 ```
 
 __Response__
 ```json
 {
-	"resourceType": "Bundle",
-	"type": "searchset",
-	"total": 1,
-	"entry": [
-		{
-			"resource": {
-				"resourceType": "Person",
-				"extension": [
-					{
-						"url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/person-deceased",
-						"valueDateTime": "2018-12-05T23:00:00+00:00"
-					}
-				],
-				"identifier": [
-					{
-						"system": "urn:oid:1.2.208.176.1.2",
-						"value": "1401124469"
-					}
-				],
-				"name": [
-					{
-						"use": "official",
-						"family": "Møller",
-						"given": [
-							"Flemming"
-						]
-					}
-				]
-			},
-			"search": {
-				"extension": [
-					{
-						"url": "http://hl7.org/fhir/StructureDefinition/match-grade",
-						"valueCode": "certain"
-					}
-				],
-				"mode": "match",
-				"score": 1.0
-			}
-		}
-	]
+  "resourceType" : "Bundle",
+  "type" : "searchset",
+  "total" : 1,
+  "entry" : [ {
+    "resource" : {
+      "resourceType" : "Person",
+      "identifier" : [ {
+        "use" : "official",
+        "system" : "urn:oid:1.2.208.176.1.2",
+        "value" : "0506504003"
+      } ],
+      "name" : [ {
+        "use" : "official",
+        "family" : "Mathiasen",
+        "given" : [ "Tjalfe" ]
+      } ],
+      "link" : [ {
+        "target" : {
+          "reference" : "https://patient.fut.trifork.com/fhir/Patient/102"
+        },
+        "assurance" : "level4"
+      } ]
+    },
+    "search" : {
+      "extension" : [ {
+        "url" : "http://hl7.org/fhir/StructureDefinition/match-grade",
+        "valueCode" : "certain"
+      } ],
+      "mode" : "match",
+      "score" : 1.0
+    }
+  } ]
 }
 ```

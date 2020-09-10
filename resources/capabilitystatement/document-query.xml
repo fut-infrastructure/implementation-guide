@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-query"/>
    <status value="active"/>
-   <date value="2020-06-16T12:07:08+00:00"/>
+   <date value="2020-07-10T13:13:17+00:00"/>
    <publisher value="Not provided"/>
    <kind value="instance"/>
    <software>
       <name value="document-query"/>
-      <version value="1.2.2"/>
+      <version value="1.2.4"/>
    </software>
    <implementation>
       <description value="eHealth document-query service"/>

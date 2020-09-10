@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition/118/_history/2`
+`GET [base]/ActivityDefinition/136/_history/2`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "118",
+  "id": "136",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-22T20:00:45.574+00:00",
+    "lastUpdated": "2020-07-31T12:12:52.838+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -41,7 +41,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-493.local/fhir/Organization/61972"
+            "reference": "https://organization.cit-plan-593.local/fhir/Organization/3880"
           }
         },
         {
@@ -58,8 +58,8 @@ __Response__
       ]
     }
   ],
-  "version": "57c70e5e-6553-41c7-8215-6115e41ebea6",
-  "name": "1133b6b0-1bee-49cd-9878-c5c111388011",
+  "version": "321239e6-88bf-44c1-8339-6f39acbbdc5b",
+  "name": "4bc1645b-f687-496c-b989-022d3238a557",
   "status": "draft",
   "topic": [
     {
@@ -75,7 +75,7 @@ __Response__
     {
       "type": "documentation",
       "resource": {
-        "reference": "https://plan.cit-plan-493.local/fhir/DocumentReference/119"
+        "reference": "https://plan.cit-plan-593.local/fhir/DocumentReference/137"
       }
     }
   ],

@@ -1,4 +1,4 @@
-`PUT [base]/ProcedureRequest/681`
+`PUT [base]/ProcedureRequest/659`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "681",
+  "id": "659",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-23T08:11:50.252+00:00",
+    "lastUpdated": "2020-08-12T07:56:24.953+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -39,7 +39,7 @@ __Body__:
   ],
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1279.local/fhir/ActivityDefinition/6735"
+      "reference": "https://plan.cit-careplan-1426.local/fhir/ActivityDefinition/64303"
     }
   ],
   "status": "completed",
@@ -51,13 +51,13 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "e3d74289-c9f0-47cf-abe0-1ed22af061d7"
+    "text": "38a2b3fa-78fd-4a48-9b69-e51ee11f3a0c"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/25226"
+    "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/73125"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/680"
+    "reference": "https://careplan.cit-careplan-1426.local/fhir/EpisodeOfCare/658"
   }
 }
 ```
@@ -66,10 +66,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "681",
+  "id": "659",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-23T08:11:51.657+00:00",
+    "lastUpdated": "2020-08-12T07:56:26.236+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -90,7 +90,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1279.local/fhir/ActivityDefinition/6735"
+      "reference": "https://plan.cit-careplan-1426.local/fhir/ActivityDefinition/64303"
     }
   ],
   "status": "completed",
@@ -102,13 +102,13 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "e3d74289-c9f0-47cf-abe0-1ed22af061d7"
+    "text": "38a2b3fa-78fd-4a48-9b69-e51ee11f3a0c"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1279.local/fhir/Patient/25226"
+    "reference": "https://patient.cit-careplan-1426.local/fhir/Patient/73125"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1279.local/fhir/EpisodeOfCare/680"
+    "reference": "https://careplan.cit-careplan-1426.local/fhir/EpisodeOfCare/658"
   }
 }
 ```

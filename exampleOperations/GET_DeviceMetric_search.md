@@ -15,27 +15,354 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "ac4300f9-6d5b-4e01-b7e2-8b3d22b6d6ba",
+  "id": "ed06389e-dcf0-4e29-ab3b-f58f22d32d20",
   "meta": {
-    "lastUpdated": "2020-06-22T19:49:14.795+00:00"
+    "lastUpdated": "2020-08-11T08:22:45.152+00:00"
   },
   "type": "searchset",
   "total": 6,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.cit-device-427.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial"
+      "url": "https://device.cit-device-481.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/102",
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/106",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "106",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-08-11T08:22:40.624+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 5
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 10
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 12
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 14
+              }
+            ]
+          }
+        ],
+        "identifier": {
+          "value": "Foo"
+        },
+        "type": {
+          "text": "code"
+        },
+        "source": {
+          "reference": "https://device.cit-device-481.local/fhir/Device/105"
+        },
+        "category": "calculation"
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/108",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "108",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-08-11T08:22:42.139+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 5
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 10
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 12
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 14
+              }
+            ]
+          }
+        ],
+        "identifier": {
+          "value": "Foo"
+        },
+        "type": {
+          "text": "code"
+        },
+        "source": {
+          "reference": "https://device.cit-device-481.local/fhir/Device/107"
+        },
+        "category": "calculation"
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/110",
+      "resource": {
+        "resourceType": "DeviceMetric",
+        "id": "110",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2020-08-11T08:22:42.572+00:00",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 5
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 10
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 12
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
+            "extension": [
+              {
+                "url": "category",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
+                      "code": "initial"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "value",
+                "valueInteger": 14
+              }
+            ]
+          }
+        ],
+        "identifier": {
+          "value": "Foo"
+        },
+        "type": {
+          "text": "code"
+        },
+        "source": {
+          "reference": "https://device.cit-device-481.local/fhir/Device/109"
+        },
+        "category": "calculation"
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/102",
       "resource": {
         "resourceType": "DeviceMetric",
         "id": "102",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-06-22T19:48:59.588+00:00",
+          "lastUpdated": "2020-08-11T08:22:31.217+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -185,7 +512,7 @@ __Response__
           ]
         },
         "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/101"
+          "reference": "https://device.cit-device-481.local/fhir/Device/101"
         },
         "category": "calculation"
       },
@@ -194,340 +521,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/106",
-      "resource": {
-        "resourceType": "DeviceMetric",
-        "id": "106",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-06-22T19:49:09.877+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 5
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 10
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 12
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 14
-              }
-            ]
-          }
-        ],
-        "identifier": {
-          "value": "Foo"
-        },
-        "type": {
-          "text": "code"
-        },
-        "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/105"
-        },
-        "category": "calculation"
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/108",
-      "resource": {
-        "resourceType": "DeviceMetric",
-        "id": "108",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-06-22T19:49:11.537+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 5
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 10
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 12
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 14
-              }
-            ]
-          }
-        ],
-        "identifier": {
-          "value": "Foo"
-        },
-        "type": {
-          "text": "code"
-        },
-        "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/107"
-        },
-        "category": "calculation"
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/110",
-      "resource": {
-        "resourceType": "DeviceMetric",
-        "id": "110",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2020-06-22T19:49:12.031+00:00",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-qualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 5
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 10
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 12
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-templateQualities",
-            "extension": [
-              {
-                "url": "category",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types",
-                      "code": "initial"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "value",
-                "valueInteger": 14
-              }
-            ]
-          }
-        ],
-        "identifier": {
-          "value": "Foo"
-        },
-        "type": {
-          "text": "code"
-        },
-        "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/109"
-        },
-        "category": "calculation"
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/111",
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/111",
       "resource": {
         "resourceType": "DeviceMetric",
         "id": "111",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-06-22T19:49:12.418+00:00",
+          "lastUpdated": "2020-08-11T08:22:42.806+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -621,7 +621,7 @@ __Response__
           "text": "code"
         },
         "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/107"
+          "reference": "https://device.cit-device-481.local/fhir/Device/107"
         },
         "category": "calculation"
       },
@@ -630,13 +630,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://device.cit-device-427.local/fhir/DeviceMetric/117",
+      "fullUrl": "https://device.cit-device-481.local/fhir/DeviceMetric/117",
       "resource": {
         "resourceType": "DeviceMetric",
         "id": "117",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-06-22T19:49:14.636+00:00",
+          "lastUpdated": "2020-08-11T08:22:44.970+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -730,7 +730,7 @@ __Response__
           "text": "code"
         },
         "source": {
-          "reference": "https://device.cit-device-427.local/fhir/Device/116"
+          "reference": "https://device.cit-device-481.local/fhir/Device/116"
         },
         "category": "calculation"
       },

@@ -562,6 +562,9 @@
     <element id="Communication.extension:restrictionCategory.url">
       <path value="Communication.extension.url" />
       <representation value="xmlAttr" />
+      <short value="identifies the meaning of the extension" />
+      <definition value="Source of the definition for the extension code - a logical name or a URL." />
+      <comment value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension." />
       <min value="1" />
       <max value="1" />
       <base>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="ehealth-communication-not-done-reason"/>
+   <url value="http://ehealth.sundhed.dk/vs/communication-not-done-reason"/>
+   <version value="0.6.0"/>
+   <name value="CommunicationNotDoneReason"/>
+   <title value="CommunicationNotDoneReason"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2020-08-28T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Not done reason codes for ehealth-message"/>
+   <compose>
+      <include>
+         <system value="http://hl7.org/fhir/event-status"/>
+         <concept>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+         </concept>
+      </include>
+      <include>
+         <system value="http://hl7.org/fhir/communication-not-done-reason"/>
+         <concept>
+            <code value="system-error"/>
+            <display value="System Error"/>
+         </concept>
+         <concept>
+            <code value="recipient-unavailable"/>
+            <display value="Recipient Unavailable"/>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

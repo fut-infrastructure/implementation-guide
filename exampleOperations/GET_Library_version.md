@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWQ1YmNlNTQtZGY2Zi00MjI5LWEwNDYtODhjMzQ4ZDZmYjIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiTGlicmFyeSRldmFsdWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOGM2ODVlOTAtYmVhNC00NzEyLTgyM2MtOGQ4YzYyMmMxMjZkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,7 +18,7 @@ __Response__
   "id": "30",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-06-22T19:55:10.032+00:00",
+    "lastUpdated": "2020-08-12T09:56:14.335+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -26,7 +26,7 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "a781df98-b547-4803-bb88-e9de5088646a"
+      "valueString": "a7bbf5f2-aaed-4712-a742-7a72d42f4f85"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -34,7 +34,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-library-358.local/fhir/Organization/54449"
+            "reference": "https://organization.cit-library-373.local/fhir/Organization/4205"
           }
         },
         {
@@ -51,11 +51,12 @@ __Response__
       ]
     }
   ],
-  "version": "850ce9a6-9a93-4027-a7bb-dd309086ee27",
+  "version": "5840caaf-3484-4c55-87a0-d31ff5967514",
   "status": "draft",
   "type": {
     "coding": [
       {
+        "system": "http://hl7.org/fhir/library-type",
         "code": "asset-collection"
       }
     ]

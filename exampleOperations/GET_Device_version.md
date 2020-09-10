@@ -18,7 +18,7 @@ __Response__
   "id": "140",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-06-22T19:49:35.763+00:00",
+    "lastUpdated": "2020-08-11T08:23:06.684+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
