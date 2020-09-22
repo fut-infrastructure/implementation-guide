@@ -3,6 +3,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+#### Defined question (ehealth-definedquestion)
+- Initial version
+
  
 ### General changes
  
