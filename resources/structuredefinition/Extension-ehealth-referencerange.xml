@@ -6,7 +6,7 @@
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="Provides guide for interpretation. Must have at least a low or a high." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -45,8 +45,8 @@
     <element id="Extension.extension:low.value[x]:valueQuantity">
       <path value="Extension.extension.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <definition value="The value of the low bound of the reference range.  The low bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9).   If the low bound is omitted,  it is assumed to be meaningless (e.g. reference range is &lt;=2.3)." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
@@ -65,8 +65,8 @@
     <element id="Extension.extension:high.value[x]:valueQuantity">
       <path value="Extension.extension.valueQuantity" />
       <sliceName value="valueQuantity" />
+      <definition value="The value of the high bound of the reference range.  The high bound of the reference range endpoint is inclusive of the value (e.g.  reference range is &gt;=5 - &lt;=9).   If the high bound is omitted,  it is assumed to be meaningless (e.g. reference range is &gt;= 2.3)." />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />
