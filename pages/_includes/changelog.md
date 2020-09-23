@@ -17,6 +17,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+#### Reference range (ehealth-referenceRange)
+- ehealth-referenceRange, used in ActivityDefinition and ProcedureRequest, definitions have been added to clarify that low and high values are inclusive, just like they are on Observation.referenceRange 
+
 ## 2020.6.1 (2020-09-04)
 
 ### Code systems
