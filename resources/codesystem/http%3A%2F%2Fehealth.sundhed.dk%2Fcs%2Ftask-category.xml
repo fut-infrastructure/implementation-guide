@@ -72,4 +72,67 @@
          <value value="Måleudstyr har behov for kalibrering"/>
       </designation>
    </concept>
+   <concept>
+      <code value="MeasurementForAssessmentFailureInAutoProcessing"/>
+      <display value="Measurement Assessment failure during automated processing"/>
+      <definition value="Measurement Assessment failure during automated processing"/>
+      <designation>
+         <language value="da"/>
+         <value value="vurdering af måling fejlet under automatisk behandling"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="LibraryUseMismatchFixingNeeded"/>
+      <display value="Input and rule did not match"/>
+      <definition value="Input and rule did not match"/>
+      <designation>
+         <language value="da"/>
+         <value value="Indput og regel passer ikke sammen"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RefRangeNeeded"/>
+      <display value="Missing reference ranges required for automated processing"/>
+      <definition value="Missing reference ranges required for automated processing"/>
+      <designation>
+         <language value="da"/>
+         <value value="Mangler grænseværdier påkrævet for automatisk behandling"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RefRangeFixingNeeded"/>
+      <display value="Reference ranges required for automated processing needs fixing"/>
+      <definition value="Reference ranges required for automated processing needs fixing"/>
+      <designation>
+         <language value="da"/>
+         <value value="Grænseværdier påkrævet for automatisk behandling skal udbedres"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RefBaseNeeded"/>
+      <display value=""/>
+      <definition value=""/>
+      <designation>
+         <language value="da"/>
+         <value value="Mangler gældende grænseværdier for automatisk behandling"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RefBaseFixingNeeded"/>
+      <display value=""/>
+      <definition value=""/>
+      <designation>
+         <language value="da"/>
+         <value value="Gældende grænseværdier for automatisk behandling skal udbedres"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RequiredQuestionAnswerMissing"/>
+      <display value="Missing question answers required for automated processing"/>
+      <definition value="Missing question answers required for automated processing"/>
+      <designation>
+         <language value="da"/>
+         <value value="Mangler besværelse af spørgsmål påkrævet for automatisk behandling"/>
+      </designation>
+   </concept>
 </CodeSystem>
