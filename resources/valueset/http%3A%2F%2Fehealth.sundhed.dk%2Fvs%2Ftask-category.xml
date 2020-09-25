@@ -68,6 +68,62 @@
                <value value="Device in need of calibration"/>
             </designation>
          </concept>
+         <concept>
+            <code value="MeasurementForAssessmentFailureInAutoProcessing"/>
+            <display value="Measurement Assessment failure during automated processing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Measurement Assessment failure during automated processing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="LibraryUseMismatchFixingNeeded"/>
+            <display value="Input and rule did not match"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Input and rule did not match"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="RefRangeNeeded"/>
+            <display value="Missing reference ranges required for automated processing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Missing reference ranges required for automated processing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="RefRangeFixingNeeded"/>
+            <display value="Reference ranges required for automated processing needs fixing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Reference ranges required for automated processing needs fixing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="RefBaseNeeded"/>
+            <display value="Missing applied reference value for automatic processing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Missing applied reference value for automatic processing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="RefBaseFixingNeeded"/>
+            <display value="Applied reference value for automatic processing needs fixing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Applied reference value for automatic processing needs fixing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="RequiredQuestionAnswerMissing"/>
+            <display value="Missing question answers required for automated processing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Missing question answers required for automated processing"/>
+            </designation>
+         </concept>
       </include>
    </compose>
 </ValueSet>
