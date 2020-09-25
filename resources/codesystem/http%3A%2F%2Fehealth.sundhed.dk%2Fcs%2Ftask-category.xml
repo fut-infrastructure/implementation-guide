@@ -110,8 +110,8 @@
    </concept>
    <concept>
       <code value="RefBaseNeeded"/>
-      <display value=""/>
-      <definition value=""/>
+      <display value="Missing applied reference value for automatic processing"/>
+      <definition value="Missing applied reference value for automatic processing"/>
       <designation>
          <language value="da"/>
          <value value="Mangler gældende grænseværdier for automatisk behandling"/>
@@ -119,8 +119,8 @@
    </concept>
    <concept>
       <code value="RefBaseFixingNeeded"/>
-      <display value=""/>
-      <definition value=""/>
+      <display value="Applied reference value for automatic processing needs fixing"/>
+      <definition value="Applied reference value for automatic processing needs fixing"/>
       <designation>
          <language value="da"/>
          <value value="Gældende grænseværdier for automatisk behandling skal udbedres"/>
