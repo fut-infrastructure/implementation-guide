@@ -13,7 +13,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new code `RequiredQuestionAnswerMissing` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefBaseFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefBaseNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefRangeFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefRangeNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `LibraryUseMismatchFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `MeasurementForAssessmentFailureInAutoProcessing` to `http://ehealth.sundhed.dk/cs/task-category`
 ### ValueSets
+- Changed includes in `http://ehealth.sundhed.dk/vs/task-category` to include the system `http://ehealth.sundhed.dk/cs/task-category` instead of the concepts individually
 ### ConceptMaps
 ### Resource/profile changes
 
