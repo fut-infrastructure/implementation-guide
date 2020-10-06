@@ -77,20 +77,34 @@ The following rules apply for the ehealth-message profile:
 
 # NemSMS Notifications
 
-In order to send a NemSMS to at patient one must create an ehealth-message resource with _medium.code_ 'nemsms' and _status_ 'preparation'. 
-The the payload of the ehealth-message resource is sent asynchronously to the Patient as a NemSMS.
+The Patient service will forward ehealth-messages to the public danish NemSMS service given the following conditions:
 
-* In case of successful dispatch of the NemSMS the ehealth-message resource _status_ will be updated to 'completed'.
-* In case of failure the ehealth-message resource _status_ will be updated to 'aborted'.
+* message.medium.code is 'nemsms' (defined in  http://ehealth.sundhed.dk/cs/message-medium)
+* message.status is 'completed'
+
+The message is forwarded asynchronously. To track the progress of the NemSMS, the notDone flag and notDoneReason code is used:
+
+Initially, when the ehealth-message is created message.notDone is true and message.notDoneReason is 'in-progress' (defined in http://hl7.org/fhir/event-status)
+
+If the NemSMS dispatch is successful, message.notDone will be set to false.
+
+If the NemSMS dispatch fails, message.notDone is true and message.notDoneReason is either 'system-error' or 'recipient-unavailable' (defined in http://hl7.org/fhir/communication-not-done-reason)
+* message.note.text can contain further information about the reason for dispatch failure
 
 ### Automatic NemSMS Notifications
-Given the following conditions:
+The Patient service will generate NemSMS ehealth-messages, notifying the recipient that they have received a message, given the following conditions:
 
-* An ehealth-message resources with category = 'message' is created or updated with _status_ 'completed'.
-* the recipient is a _Patient_ who allows reception of NemSMS (has telecom with value 'NemSMS')
-* _medium.code_  does not equal 'nemsms' 
+* message.medium.code is not 'nemsms'
+* message.status is 'completed'
+* message.category is 'message' (defined in http://ehealth.sundhed.dk/cs/message-category)
+* message.recipient is a Patient reference
+* patient.telecom contains ContactPoint 'NemSMS'
 
-then a new ehealth-message resource with _medium.code_ 'nemsms' and _status_ 'preparation' is created, notifying that the first communication has been 'sent'.
+The Patient service will generate NemSMS ehealth-messages, notifying patients that they have an appointment or video appointment scheduled for de following day, given the following conditions:
+
+* appointment.start is current day + 1 day
+* appointment.participant contains one Patient reference
+* patient.telecom contains ContactPoint 'NemSMS'
 
 # Update rules
 
