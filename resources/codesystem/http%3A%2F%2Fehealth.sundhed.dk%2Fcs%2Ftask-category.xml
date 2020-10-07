@@ -78,7 +78,7 @@
       <definition value="Measurement Assessment failure during automated processing"/>
       <designation>
          <language value="da"/>
-         <value value="vurdering af måling fejlet under automatisk behandling"/>
+         <value value="Vurdering af måling er fejlet under automatisk behandling"/>
       </designation>
    </concept>
    <concept>
@@ -87,43 +87,43 @@
       <definition value="Input and rule did not match"/>
       <designation>
          <language value="da"/>
-         <value value="Indput og regel passer ikke sammen"/>
+         <value value="Input og regel passer ikke sammen"/>
       </designation>
    </concept>
    <concept>
       <code value="RefRangeNeeded"/>
-      <display value="Missing reference ranges required for automated processing"/>
-      <definition value="Missing reference ranges required for automated processing"/>
+      <display value="Missing reference range required for automated processing"/>
+      <definition value="Missing reference range required for automated processing"/>
       <designation>
          <language value="da"/>
-         <value value="Mangler grænseværdier påkrævet for automatisk behandling"/>
+         <value value="Mangler grænseværdi påkrævet for automatisk behandling"/>
       </designation>
    </concept>
    <concept>
       <code value="RefRangeFixingNeeded"/>
-      <display value="Reference ranges required for automated processing needs fixing"/>
-      <definition value="Reference ranges required for automated processing needs fixing"/>
+      <display value="Reference range required for automated processing needs fixing"/>
+      <definition value="Reference range required for automated processing needs fixing"/>
       <designation>
          <language value="da"/>
-         <value value="Grænseværdier påkrævet for automatisk behandling skal udbedres"/>
+         <value value="Grænseværdi påkrævet for automatisk behandling skal udbedres"/>
       </designation>
    </concept>
    <concept>
       <code value="RefBaseNeeded"/>
-      <display value="Missing applied reference value for automatic processing"/>
-      <definition value="Missing applied reference value for automatic processing"/>
+      <display value="Missing in force reference base required for automatic processing"/>
+      <definition value="Missing in force reference base required for automatic processing"/>
       <designation>
          <language value="da"/>
-         <value value="Mangler gældende grænseværdier for automatisk behandling"/>
+         <value value="Mangler gældende referenceværdi påkrævet for automatisk behandling"/>
       </designation>
    </concept>
    <concept>
       <code value="RefBaseFixingNeeded"/>
-      <display value="Applied reference value for automatic processing needs fixing"/>
-      <definition value="Applied reference value for automatic processing needs fixing"/>
+      <display value="In force reference base required for automatic processing needs fixing"/>
+      <definition value="In force reference base required for automatic processing needs fixing"/>
       <designation>
          <language value="da"/>
-         <value value="Gældende grænseværdier for automatisk behandling skal udbedres"/>
+         <value value="Gældende referenceværdi påkrævet for automatisk behandling skal udbedres"/>
       </designation>
    </concept>
    <concept>
@@ -132,7 +132,7 @@
       <definition value="Missing question answers required for automated processing"/>
       <designation>
          <language value="da"/>
-         <value value="Mangler besværelse af spørgsmål påkrævet for automatisk behandling"/>
+         <value value="Mangler besvarelse af spørgsmål påkrævet for automatisk behandling"/>
       </designation>
    </concept>
 </CodeSystem>
