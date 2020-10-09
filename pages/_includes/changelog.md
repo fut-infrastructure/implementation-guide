@@ -20,6 +20,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `RefRangeNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `LibraryUseMismatchFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `MeasurementForAssessmentFailureInAutoProcessing` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `red-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+- Added new code `yellow-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+- Added new code `green-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+
 ### ValueSets
 - Changed includes in `http://ehealth.sundhed.dk/vs/task-category` to include the system `http://ehealth.sundhed.dk/cs/task-category` instead of the concepts individually
 ### ConceptMaps
