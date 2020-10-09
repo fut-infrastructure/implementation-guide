@@ -19,6 +19,33 @@
    <caseSensitive value="true"/>
    <content value="complete"/>
    <concept>
+      <code value="red-question-answer"/>
+      <display value="red question and answer combination"/>
+      <definition value="Applied to a single question and answer pair, this indicates a red combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one red combination found."/>
+      <designation>
+         <language value="da"/>
+         <value value="Rød spørgsmål/svar-kombination fundet i spørgeskemabesvarelse"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="yellow-question-answer"/>
+      <display value="yellow question and answer combination"/>
+      <definition value="Applied to a single question and answer pair, this indicates a yellow combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one yellow combination found."/>
+      <designation>
+         <language value="da"/>
+         <value value="Gul spørgsmål/svar-kombination fundet i spørgeskemabesvarelse"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="green-question-answer"/>
+      <display value="green question and answer combination"/>
+      <definition value="Applied to a single question and answer pair, this indicates a green combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates no red or yellow combinations found."/>
+      <designation>
+         <language value="da"/>
+         <value value="Grøn spørgsmål/svar-kombination fundet i spørgeskemabesvarelse. Når anført som opsummering for hel spørgeskemabesvarelse er der ikke fundet røde eller gule spørgsmål/svar-kombinationer."/>
+      </designation>
+   </concept>
+   <concept>
       <code value="TBD"/>
       <display value="Example value - Under construction"/>
       <definition value="Example value - Under construction"/>

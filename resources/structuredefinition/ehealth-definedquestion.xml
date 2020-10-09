@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-definedquestion" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion" />
+  <name value="ehealth-definedquestion" />
+  <title value="eHealth DefinedQuestion" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="StructureDefinition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/StructureDefinition" />
+  <derivation value="constraint" />
+</StructureDefinition>

@@ -3,6 +3,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+#### Defined question (ehealth-definedquestion)
+- Initial version
+
  
 ### General changes
  
@@ -10,9 +13,24 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new code `RequiredQuestionAnswerMissing` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefBaseFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefBaseNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefRangeFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `RefRangeNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `LibraryUseMismatchFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `MeasurementForAssessmentFailureInAutoProcessing` to `http://ehealth.sundhed.dk/cs/task-category`
+- Added new code `red-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+- Added new code `yellow-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+- Added new code `green-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
+
 ### ValueSets
+- Changed includes in `http://ehealth.sundhed.dk/vs/task-category` to include the system `http://ehealth.sundhed.dk/cs/task-category` instead of the concepts individually
 ### ConceptMaps
 ### Resource/profile changes
+
+#### Reference range (ehealth-referenceRange)
+- ehealth-referenceRange, used in ActivityDefinition and ProcedureRequest, definitions have been added to clarify that low and high values are inclusive, just like they are on Observation.referenceRange 
 
 ## 2020.6.1 (2020-09-04)
 
