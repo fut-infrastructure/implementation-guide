@@ -6,7 +6,7 @@
   <title value="eHealth PlanDefinition" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="PlanDefinition" />
@@ -71,12 +71,6 @@
     <element id="PlanDefinition.jurisdiction">
       <path value="PlanDefinition.jurisdiction" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Jurisdiction" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/jurisdiction" />
@@ -86,9 +80,6 @@
     <element id="PlanDefinition.topic">
       <path value="PlanDefinition.topic" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DefinitionTopic" />
-        </extension>
         <strength value="example" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/topic-type" />
@@ -106,6 +97,50 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library" />
         <aggregation value="referenced" />
       </type>
+    </element>
+    <element id="PlanDefinition.action.extension">
+      <path value="PlanDefinition.action.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PlanDefinition.action.extension:overviewUsageMode">
+      <path value="PlanDefinition.action.extension" />
+      <sliceName value="overviewUsageMode" />
+      <short value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+      </type>
+    </element>
+    <element id="PlanDefinition.action.extension:overviewUsageMode.extension">
+      <path value="PlanDefinition.action.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="PlanDefinition.action.extension:overviewUsageMode.extension:overviewUsageMode">
+      <path value="PlanDefinition.action.extension.extension" />
+      <sliceName value="overviewUsageMode" />
+    </element>
+    <element id="PlanDefinition.action.extension:overviewUsageMode.extension:overviewUsageMode.valueCodeableConcept:valueCodeableConcept">
+      <path value="PlanDefinition.action.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <binding>
+        <strength value="required" />
+        <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-overviewUsageMode" />
+      </binding>
     </element>
     <element id="PlanDefinition.action.definition">
       <path value="PlanDefinition.action.definition" />

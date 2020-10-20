@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="ehealth-overviewUsageMode"/>
+   <url value="http://ehealth.sundhed.dk/vs/overviewUsageMode"/>
+   <version value="0.6.0"/>
+   <name value="OverviewUsageMode"/>
+   <title value="Overview Usage Mode"/>
+   <status value="active"/>
+   <experimental value="true"/>
+   <date value="2020-10-19T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Whether the element should appear in overview modes of operation."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/overviewUsageMode"/>
+      </include>
+   </compose>
+</ValueSet>

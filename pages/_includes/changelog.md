@@ -3,6 +3,19 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+
+### Code systems
+- Added `http://ehealth.sundhed.dk/cs/overviewUsageMode`
+### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/overviewUsageMode`
+
+### Resource/profile changes
+- Added extension `OverviewUsageMode`
+#### Questionnaire
+- Added extension OverviewUsageMode to item
+#### PlanDefinition
+- Added extension OverviewUsageMode to action
+
 #### Defined question (ehealth-definedquestion)
 - Initial version
 

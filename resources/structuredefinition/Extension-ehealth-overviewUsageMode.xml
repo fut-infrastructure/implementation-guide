@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ehealth-overviewUsageMode" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+  <name value="overviewUsageMode" />
+  <status value="draft" />
+  <description value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
+  <fhirVersion value="3.0.2" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="Questionnaire.item" />
+  <context value="PlanDefinition.action" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:overviewUsageMode">
+      <path value="Extension.extension" />
+      <sliceName value="overviewUsageMode" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:overviewUsageMode.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="overviewUsageMode" />
+    </element>
+    <element id="Extension.extension:overviewUsageMode.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

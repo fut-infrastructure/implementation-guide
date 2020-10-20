@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="ehealth-overviewUsageMode"/>
+    <url value="http://ehealth.sundhed.dk/cs/overviewUsageMode"/>
+    <version value="0.6.0"/>
+    <name value="overviewUsageMode"/>
+    <title value="Overview usage mode"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-10-19T00:00:00+00:00"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+       <telecom>
+          <system value="url"/>
+          <value value="http://ehealth.sundhed.dk/terminology"/>
+       </telecom>
+    </contact>
+    <description value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+       <code value="no-item-display"/>
+       <display value="Do not render item in overview display"/>
+       <definition value="Do not render item in overview display"/>
+	   <designation>
+          <language value="da"/>
+          <value value="Vis ikke elementet i oversigtsvisning"/>
+       </designation>
+    </concept>
+    <concept>
+       <code value="no-result-display"/>
+       <display value="Do not render result for item in overview display"/>
+       <definition value="Do not render result for item in overview display"/>
+       <designation>
+         <language value="da"/>
+         <value value="Vis ikke måledata for elementet i oversigtsvisning"/>
+       </designation>
+    </concept>
+    <concept>
+       <code value="display-item"/>
+       <display value="Render item in overview display"/>
+       <definition value="Render item in overview display"/>
+       <designation>
+         <language value="da"/>
+         <value value="Vis elementet i oversigtsvisning"/>
+       </designation>
+    </concept>
+    <concept>
+       <code value="display-result"/>
+       <display value="Render result for item in overview display"/>
+       <definition value="Render result for item in overview display"/>
+       <designation>
+         <language value="da"/>
+         <value value="Vis måledata for elementet i oversigtsvisning"/>
+       </designation>
+    </concept>
+</CodeSystem>

@@ -6,7 +6,7 @@
   <title value="eHealth Questionnaire" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Questionnaire" />
@@ -88,12 +88,6 @@
     <element id="Questionnaire.jurisdiction">
       <path value="Questionnaire.jurisdiction" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="Jurisdiction" />
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-          <valueBoolean value="true" />
-        </extension>
         <strength value="extensible" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/jurisdiction" />
@@ -169,6 +163,38 @@
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
       </type>
+    </element>
+    <element id="Questionnaire.item.extension:overviewUsageMode">
+      <path value="Questionnaire.item.extension" />
+      <sliceName value="overviewUsageMode" />
+      <short value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+      </type>
+    </element>
+    <element id="Questionnaire.item.extension:overviewUsageMode.extension">
+      <path value="Questionnaire.item.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Questionnaire.item.extension:overviewUsageMode.extension:overviewUsageMode">
+      <path value="Questionnaire.item.extension.extension" />
+      <sliceName value="overviewUsageMode" />
+    </element>
+    <element id="Questionnaire.item.extension:overviewUsageMode.extension:overviewUsageMode.valueCodeableConcept:valueCodeableConcept">
+      <path value="Questionnaire.item.extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <binding>
+        <strength value="required" />
+        <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-overviewUsageMode" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
