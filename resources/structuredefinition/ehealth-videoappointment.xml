@@ -98,6 +98,7 @@
     <element id="Appointment.extension:responsible">
       <path value="Appointment.extension" />
       <sliceName value="responsible" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -148,14 +149,6 @@
         <human value="Both performer and responsible organization must be populated when legal basis is used" />
         <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
       </constraint>
-    </element>
-    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept">
-      <path value="Appointment.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
-      </binding>
     </element>
     <element id="Appointment.extension:releasableResource">
       <path value="Appointment.extension" />
