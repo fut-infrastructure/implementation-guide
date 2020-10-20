@@ -11,6 +11,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 - Added extension `OverviewUsageMode`
+- Made responsible mandantory on video appointments
+- Removed organization as an option for being listed as responsible on all appointments
 #### Questionnaire
 - Added extension OverviewUsageMode to item
 #### PlanDefinition
@@ -18,7 +20,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Defined question (ehealth-definedquestion)
 - Initial version
-
  
 ### General changes
  
