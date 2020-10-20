@@ -6,7 +6,7 @@
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="Individuals, careteam and/or organization who are responsible in the given context" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />

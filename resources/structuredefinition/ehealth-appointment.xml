@@ -7,7 +7,7 @@
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="This profile models an ehealth appointment. It is only necessary to create one appointment even though it spans more than one participant. Allowed appointment participants are patients, practitioners, relatedpersons, and locations" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Appointment" />
@@ -96,14 +96,6 @@
         <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
       </constraint>
     </element>
-    <element id="Appointment.extension:legalBasis.valueCodeableConcept:valueCodeableConcept">
-      <path value="Appointment.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <binding>
-        <strength value="required" />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/jurisdiction" />
-      </binding>
-    </element>
     <element id="Appointment.extension:releasableResource">
       <path value="Appointment.extension" />
       <sliceName value="releasableResource" />
@@ -120,15 +112,6 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization" />
-      </type>
-    </element>
-    <element id="Appointment.extension:responsible-organization.value[x]:valueReference">
-      <path value="Appointment.extension.valueReference" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
-        <aggregation value="referenced" />
       </type>
     </element>
     <element id="Appointment.extension:performing-organization">
