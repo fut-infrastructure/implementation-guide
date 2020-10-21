@@ -4,6 +4,7 @@
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
   <name value="overviewUsageMode" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
   <fhirVersion value="3.0.2" />
   <mapping>
@@ -20,41 +21,28 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension.extension">
-      <path value="Extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Extension.extension:overviewUsageMode">
-      <path value="Extension.extension" />
-      <sliceName value="overviewUsageMode" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:overviewUsageMode.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="overviewUsageMode" />
-    </element>
-    <element id="Extension.extension:overviewUsageMode.value[x]:valueCodeableConcept">
-      <path value="Extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <short value="Whether the element should appear in overview modes of operation." />
+      <definition value="The possible types will be defined on the terminology server." />
+      <comment value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
+      <requirements value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/ehealth-overviewUsageMode" />
+        </valueSetReference>
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

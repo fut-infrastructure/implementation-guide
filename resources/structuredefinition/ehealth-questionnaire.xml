@@ -167,34 +167,12 @@
     <element id="Questionnaire.item.extension:overviewUsageMode">
       <path value="Questionnaire.item.extension" />
       <sliceName value="overviewUsageMode" />
-      <short value="Whether the element should appear in overview &quot;modes&quot; of operation." />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
       </type>
-    </element>
-    <element id="Questionnaire.item.extension:overviewUsageMode.extension">
-      <path value="Questionnaire.item.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Questionnaire.item.extension:overviewUsageMode.extension:overviewUsageMode">
-      <path value="Questionnaire.item.extension.extension" />
-      <sliceName value="overviewUsageMode" />
-    </element>
-    <element id="Questionnaire.item.extension:overviewUsageMode.extension:overviewUsageMode.valueCodeableConcept:valueCodeableConcept">
-      <path value="Questionnaire.item.extension.extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <binding>
-        <strength value="required" />
-        <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/ehealth-overviewUsageMode" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
