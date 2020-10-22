@@ -40,7 +40,7 @@
         <strength value="required" />
         <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
         <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/ehealth-overviewUsageMode" />
+          <reference value="http://ehealth.sundhed.dk/vs/overviewUsageMode" />
         </valueSetReference>
       </binding>
     </element>
