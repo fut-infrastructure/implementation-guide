@@ -145,8 +145,8 @@
             </target>
         </element>
         <element>
-            <code value="MCS88050"/>
-            <display value="Rejse sætte sig testen;Pt"/>
+            <code value="MCS88137"/>
+            <display value="CAT score;Pt"/>
             <target>
                 <code value="{Number}"/>
                 <display value="Number"/>
@@ -154,9 +154,13 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+    </group>
+    <group>
+        <source value="urn:oid:1.2.208.176.2.1"/>
+        <target value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
         <element>
-            <code value="MCS88137"/>
-            <display value="CAT score;Pt"/>
+            <code value="MCS88050"/>
+            <display value="Rejse sætte sig testen;Pt"/>
             <target>
                 <code value="{Number}"/>
                 <display value="Number"/>
