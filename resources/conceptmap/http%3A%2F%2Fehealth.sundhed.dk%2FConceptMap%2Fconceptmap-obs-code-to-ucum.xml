@@ -162,8 +162,8 @@
             <code value="MCS88050"/>
             <display value="Rejse sætte sig testen;Pt"/>
             <target>
-                <code value="{Number}"/>
-                <display value="Number"/>
+                <code value="1/30sec"/>
+                <display value="one per 30 seconds"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
