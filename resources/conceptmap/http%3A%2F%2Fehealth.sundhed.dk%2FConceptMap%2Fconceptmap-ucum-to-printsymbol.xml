@@ -32,11 +32,11 @@
             </target>
         </element>
         <element>
-            <code value="/min"/>
-            <display value="per minute"/>
+            <code value="1/min"/>
+            <display value="one per minute"/>
             <target>
-                <code value="/min"/>
-                <display value="per minute"/>
+                <code value="1/min"/>
+                <display value="one per minute"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
