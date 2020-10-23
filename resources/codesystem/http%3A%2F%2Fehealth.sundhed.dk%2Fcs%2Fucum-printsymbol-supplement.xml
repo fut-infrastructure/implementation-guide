@@ -82,4 +82,12 @@
       <code value="{Number}"/>
       <display value="Number"/>
    </concept>
+   <concept>
+      <code value="1/30sec"/>
+      <display value="one per 30 seconds"/>
+      <designation>
+         <language value="da"/>
+         <value value="1/ 30sek"/>
+      </designation>
+   </concept>
 </CodeSystem>
