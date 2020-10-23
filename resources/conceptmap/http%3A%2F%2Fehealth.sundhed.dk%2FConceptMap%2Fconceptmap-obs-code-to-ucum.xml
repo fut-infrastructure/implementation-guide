@@ -17,7 +17,6 @@
         </telecom>
     </contact>
     <sourceUri value="http://ehealth.sundhed.dk/vs/observation-codes"/>
-    <targetUri value="http://hl7.org/fhir/ValueSet/ucum-common"/>
     <group>
         <source value="urn:oid:1.2.208.176.2.1"/>
         <target value="http://unitsofmeasure.org"/>
