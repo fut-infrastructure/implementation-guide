@@ -27,6 +27,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new code `1/30sec` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+- Added new system `http://ehealth.sundhed.dk/cs/ehealth-unit-code` with code `1/30sec`
 - Added new code `RequiredQuestionAnswerMissing` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `RefBaseFixingNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
 - Added new code `RefBaseNeeded` to `http://ehealth.sundhed.dk/cs/task-category`
@@ -39,8 +41,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `green-question-answer` to `http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes`
 
 ### ValueSets
+- Added new valueSet `http://ehealth.sundhed.dk/vs/ehealth-unit` to include the valueSets `http://ehealth.sundhed.dk/vs/ehealth-unit-code` and `http://hl7.org/fhir/ValueSet/ucum-common`
+- Added new valueSet `http://ehealth.sundhed.dk/vs/ehealth-unit-code` to include the system `http://ehealth.sundhed.dk/cs/ehealth-unit-code`
 - Changed includes in `http://ehealth.sundhed.dk/vs/task-category` to include the system `http://ehealth.sundhed.dk/cs/task-category` instead of the concepts individually
 ### ConceptMaps
+- Added new group in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Added new group in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+
 ### Resource/profile changes
 
 #### Reference range (ehealth-referenceRange)
