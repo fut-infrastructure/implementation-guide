@@ -19,7 +19,7 @@
     <sourceUri value="http://ehealth.sundhed.dk/vs/ehealth-unit"/>
     <targetUri value="http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement"/>
     <group>
-        <source value="http://ehealth.sundhed.dk/vs/ehealth-unit"/>
+        <source value="http://unitsofmeasure.org"/>
         <target value="http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement"/>
         <element>
             <code value="%"/>
@@ -111,6 +111,10 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+    </group>
+    <group>
+        <source value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
+        <target value="http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement"/>
         <element>
             <code value="1/30sec"/>
             <display value="one per 30 seconds"/>
