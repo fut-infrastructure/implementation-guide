@@ -1,18 +1,18 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="measurement"/>
    <status value="active"/>
-   <date value="2020-07-10T13:13:21+00:00"/>
-   <publisher value="Not provided"/>
+   <date value="2020-10-23T03:17:08+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="measurement"/>
-      <version value="1.5.4"/>
+      <version value="1.5.6"/>
    </software>
    <implementation>
       <description value="eHealth measurement service"/>
       <url value="https://measurement.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.1"/>
+   <fhirVersion value="3.0.2"/>
    <acceptUnknown value="extensions"/>
    <format value="application/fhir+xml"/>
    <format value="application/fhir+json"/>
@@ -215,7 +215,7 @@
       <resource>
          <type value="OperationDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -292,7 +292,7 @@
       <resource>
          <type value="StructureDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+            <reference value="http://hl7.org/fhir/Profile/StructureDefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -300,11 +300,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="Type defined or constrained by this structure"/>
-         </searchParam>
       </resource>
       <operation>
          <name value="submit-measurement"/>
@@ -351,25 +346,25 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Observation-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
             <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Observation--validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
+            <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Observation-i-validate"/>
          </definition>
       </operation>
       <operation>
          <name value="validate"/>
          <definition>
             <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireResponse--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireResponse-i-validate"/>
          </definition>
       </operation>
    </rest>

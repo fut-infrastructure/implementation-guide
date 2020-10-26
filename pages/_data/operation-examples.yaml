@@ -584,6 +584,25 @@
 - profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse_validate.md
 
+# ehealth-definedquestion
+- profile: ehealth-definedquestion
+  path: DELETE_StructureDefinition.md
+
+- profile: ehealth-definedquestion
+  path: GET_StructureDefinition_search.md
+
+- profile: ehealth-definedquestion
+  path: GET_StructureDefinition_version.md
+
+- profile: ehealth-definedquestion
+  path: POST_StructureDefinition.md
+
+- profile: ehealth-definedquestion
+  path: POST_StructureDefinition_validate.md
+
+- profile: ehealth-definedquestion
+  path: PUT_StructureDefinition.md
+
 # ehealth-relatedperson
 
 - profile: ehealth-relatedperson

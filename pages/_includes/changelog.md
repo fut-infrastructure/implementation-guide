@@ -2,7 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2020.7 (2020-10-28)
 
 ### Code systems
 - Added `http://ehealth.sundhed.dk/cs/overviewUsageMode`
@@ -21,11 +21,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Defined question (ehealth-definedquestion)
 - Initial version
  
-### General changes
- 
-### Custom operations
-#### System operations
-#### Instance operations
 ### Code systems
 - Added new code `1/30sec` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
 - Added new system `http://ehealth.sundhed.dk/cs/ehealth-unit-code` with code `1/30sec`

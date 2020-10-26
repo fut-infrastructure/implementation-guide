@@ -1,18 +1,18 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-query"/>
    <status value="active"/>
-   <date value="2020-07-10T13:13:17+00:00"/>
-   <publisher value="Not provided"/>
+   <date value="2020-10-23T03:16:30+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="document-query"/>
-      <version value="1.2.4"/>
+      <version value="1.2.6"/>
    </software>
    <implementation>
       <description value="eHealth document-query service"/>
       <url value="https://document-query.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.1"/>
+   <fhirVersion value="3.0.2"/>
    <acceptUnknown value="extensions"/>
    <format value="application/fhir+xml"/>
    <format value="application/fhir+json"/>
@@ -21,7 +21,7 @@
       <resource>
          <type value="Binary"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+            <reference value="http://hl7.org/fhir/Profile/Binary"/>
          </profile>
       </resource>
       <resource>
@@ -91,7 +91,7 @@
       <resource>
          <type value="OperationDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -100,7 +100,7 @@
       <resource>
          <type value="StructureDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+            <reference value="http://hl7.org/fhir/Profile/StructureDefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -108,11 +108,6 @@
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <searchParam>
-            <name value="type"/>
-            <type value="token"/>
-            <documentation value="Type defined or constrained by this structure"/>
-         </searchParam>
       </resource>
       <operation>
          <name value="retrieve-document"/>
