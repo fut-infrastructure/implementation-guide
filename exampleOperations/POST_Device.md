@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTlkMDA0MDEtMjAwMy00MmE2LTg3OWEtOWFjZjk3NzM2MTFkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTM5ZmQ5MzctMmEyOS00NWU2LWJkMjItM2MwNjYxMzQ5NjQ1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -27,7 +27,7 @@ __Body__:
   ],
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-481.local/fhir/Organization/44935"
+    "reference": "https://organization.cit-device-529.local/fhir/Organization/83900"
   }
 }
 ```
@@ -36,10 +36,10 @@ __Response__
 ```json
 {
   "resourceType": "Device",
-  "id": "146",
+  "id": "144",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-08-11T08:23:14.586+00:00",
+    "lastUpdated": "2020-10-22T13:55:51.883+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -52,7 +52,7 @@ __Response__
   ],
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-481.local/fhir/Organization/44935"
+    "reference": "https://organization.cit-device-529.local/fhir/Organization/83900"
   }
 }
 ```

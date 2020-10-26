@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjY1ZGNmOTYtMmEzMC00MzdiLTlhMWMtZjg0M2Y1YzIyZGI0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmFkMGY2NmItNDIwMi00NTg2LTk2MmUtY2FlMGQzOGUxMjk1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -105,10 +105,15 @@ __Body__:
     "value": "Foo"
   },
   "type": {
-    "text": "code"
+    "coding": [
+      {
+        "system": "urn:oid:1.2.208.176.2.1",
+        "code": "NPU03011"
+      }
+    ]
   },
   "source": {
-    "reference": "https://device.cit-device-481.local/fhir/Device/180"
+    "reference": "https://device.cit-device-529.local/fhir/Device/178"
   },
   "category": "calculation"
 }
@@ -118,10 +123,10 @@ __Response__
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "181",
+  "id": "179",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-08-11T08:23:26.572+00:00",
+    "lastUpdated": "2020-10-22T13:56:01.907+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -212,10 +217,15 @@ __Response__
     "value": "Foo"
   },
   "type": {
-    "text": "code"
+    "coding": [
+      {
+        "system": "urn:oid:1.2.208.176.2.1",
+        "code": "NPU03011"
+      }
+    ]
   },
   "source": {
-    "reference": "https://device.cit-device-481.local/fhir/Device/180"
+    "reference": "https://device.cit-device-529.local/fhir/Device/178"
   },
   "category": "calculation"
 }

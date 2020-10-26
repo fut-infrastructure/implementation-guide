@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEwOTgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvOTQzMjgiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xMDk4LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS81OTczMSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTExMzcubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMzUyNDciLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xMTM3LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS82NDQ1MSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/json-patch+json; charset=UTF-8
 ```
@@ -28,7 +28,7 @@ __Response__
   "id": "126",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-07-10T10:16:57.795+00:00",
+    "lastUpdated": "2020-10-22T13:10:08.435+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -58,18 +58,18 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/47525"
+    "reference": "https://patient.cit-measurement-1137.local/fhir/Patient/22232"
   },
   "topic": [
     {
-      "reference": "https://measurement.cit-measurement-1098.local/fhir/Observation/125"
+      "reference": "https://measurement.cit-measurement-1137.local/fhir/Observation/125"
     }
   ],
   "context": {
-    "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/59731"
+    "reference": "https://careplan.cit-measurement-1137.local/fhir/EpisodeOfCare/64451"
   },
   "sender": {
-    "reference": "https://organization.cit-measurement-1098.local/fhir/Practitioner/94328"
+    "reference": "https://organization.cit-measurement-1137.local/fhir/Practitioner/35247"
   }
 }
 ```

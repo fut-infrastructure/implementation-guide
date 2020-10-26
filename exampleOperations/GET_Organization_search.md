@@ -1,11 +1,11 @@
-`GET [base]/Organization?name=e7cefee7-6043-4544-939f-fca9ebdfa518&_revinclude=Organization%3Apartof`
+`GET [base]/Organization?name=a0b92fdf-1dc0-4c73-a1df-4f4874f5c81e&_revinclude=Organization%3Apartof`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiT3JnYW5pemF0aW9uLndyaXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "eb7902e8-7e76-4d2f-b109-54bb7c4ca5d4",
+  "id": "3f4b7f43-ca4d-4018-8927-8933124b9f69",
   "meta": {
-    "lastUpdated": "2020-08-05T10:55:58.616+00:00"
+    "lastUpdated": "2020-10-22T13:56:38.979+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-687.local/fhir/Organization?_format=json&_pretty=true&_revinclude=Organization%3Apartof&name=e7cefee7-6043-4544-939f-fca9ebdfa518"
+      "url": "https://organization.cit-organization-740.local/fhir/Organization?_format=json&_pretty=true&_revinclude=Organization%3Apartof&name=a0b92fdf-1dc0-4c73-a1df-4f4874f5c81e"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-687.local/fhir/Organization/272",
+      "fullUrl": "https://organization.cit-organization-740.local/fhir/Organization/278",
       "resource": {
         "resourceType": "Organization",
-        "id": "272",
+        "id": "278",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-08-05T10:55:58.328+00:00",
+          "lastUpdated": "2020-10-22T13:56:38.682+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
           ]
@@ -70,24 +70,24 @@ __Response__
             "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
             "value": "11111111",
             "period": {
-              "start": "2020-08-05T10:55:58+00:00"
+              "start": "2020-10-22T13:56:38+00:00"
             }
           }
         ],
-        "name": "e7cefee7-6043-4544-939f-fca9ebdfa518"
+        "name": "a0b92fdf-1dc0-4c73-a1df-4f4874f5c81e"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://organization.cit-organization-687.local/fhir/Organization/273",
+      "fullUrl": "https://organization.cit-organization-740.local/fhir/Organization/279",
       "resource": {
         "resourceType": "Organization",
-        "id": "273",
+        "id": "279",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-08-05T10:55:58.428+00:00",
+          "lastUpdated": "2020-10-22T13:56:38.825+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
           ]
@@ -122,13 +122,13 @@ __Response__
             "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
             "value": "11111111",
             "period": {
-              "start": "2020-08-05T10:55:58+00:00"
+              "start": "2020-10-22T13:56:38+00:00"
             }
           }
         ],
-        "name": "530b9d17-7d17-4276-a7cd-599ba378d618",
+        "name": "4bf14561-4a9c-4a32-9423-7700c7fc919e",
         "partOf": {
-          "reference": "https://organization.cit-organization-687.local/fhir/Organization/272"
+          "reference": "https://organization.cit-organization-740.local/fhir/Organization/278"
         }
       },
       "search": {

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjgxNGM2NGYtNjFjMS00YzY1LWIxMDUtNWIxYmU2ZTQ0YjRlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTAwZjZiNWEtYTQ5Zi00MWYxLWI1MzItMGE3OWRjMjFlMGFjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiTGlicmFyeSRldmFsdWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
@@ -27,7 +27,7 @@ __Body__:
         "extension": [
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-            "valueString": "c35eb1fa-caab-4451-b3ae-bc8c98cede2a"
+            "valueString": "09625fb5-9aa9-48d7-a50f-66267e9e373a"
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -35,7 +35,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-library-373.local/fhir/Organization/12266"
+                  "reference": "https://organization.cit-library-444.local/fhir/Organization/69713"
                 }
               },
               {
@@ -52,7 +52,7 @@ __Body__:
             ]
           }
         ],
-        "version": "8344a2d7-ed9a-48b0-83ed-274d2ac34a12",
+        "version": "fb8ff3fb-bfe0-48f9-934d-cd21ac43f5c8",
         "status": "draft",
         "type": {
           "coding": [
