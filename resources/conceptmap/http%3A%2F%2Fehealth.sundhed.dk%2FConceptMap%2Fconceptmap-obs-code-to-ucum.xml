@@ -156,7 +156,7 @@
         </element>
     </group>
     <group>
-        <source value="urn:oid:1.2.208.176.2.1"/>
+        <source value="urn:oid:1.2.208.184.100.8"/>
         <target value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
         <element>
             <code value="MCS88050"/>
