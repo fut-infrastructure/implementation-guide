@@ -1,4 +1,4 @@
-`GET [base]/Composition?title=a1978fcd-73b4-4675-8f4c-f7434d1e6a66`
+`GET [base]/Composition?title=f5647df0-adb2-4d86-80db-c2916267c45a`
 
 __Header__
 ```
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "68bfdfa6-fad1-4380-8115-193a9dd802df",
+  "id": "462fe93d-d67e-478a-9cfe-2b223e62663a",
   "meta": {
-    "lastUpdated": "2020-08-12T09:33:52.978+00:00"
+    "lastUpdated": "2020-10-22T14:07:39.980+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-transformation.cit-document-transformation-980.local/fhir/Composition?_format=json&_pretty=true&title=a1978fcd-73b4-4675-8f4c-f7434d1e6a66"
+      "url": "https://document-transformation.cit-document-transformation-1026.local/fhir/Composition?_format=json&_pretty=true&title=f5647df0-adb2-4d86-80db-c2916267c45a"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-980.local/fhir/Composition/84",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1026.local/fhir/Composition/84",
       "resource": {
         "resourceType": "Composition",
         "id": "84",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-08-12T09:33:52.406+00:00",
+          "lastUpdated": "2020-10-22T14:07:39.547+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -65,7 +65,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-980.local/fhir/Organization/84361"
+              "reference": "https://organization.cit-document-transformation-1026.local/fhir/Organization/60150"
             }
           },
           {
@@ -78,7 +78,7 @@ __Response__
             },
             "name": [
               {
-                "family": "07f85f88-507d-4556-8a0a-f5e38d8d5d05"
+                "family": "a880bc68-6abf-4fd7-a94c-355b84cb552a"
               }
             ]
           }
@@ -95,26 +95,26 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2020-08-12T09:33:52+00:00",
+        "date": "2020-10-22T14:07:39+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "a1978fcd-73b4-4675-8f4c-f7434d1e6a66"
+        "title": "f5647df0-adb2-4d86-80db-c2916267c45a"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-980.local/fhir/Composition/85",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1026.local/fhir/Composition/85",
       "resource": {
         "resourceType": "Composition",
         "id": "85",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-08-12T09:33:52.605+00:00",
+          "lastUpdated": "2020-10-22T14:07:39.688+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -144,7 +144,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-980.local/fhir/Organization/39292"
+              "reference": "https://organization.cit-document-transformation-1026.local/fhir/Organization/23856"
             }
           },
           {
@@ -157,7 +157,7 @@ __Response__
             },
             "name": [
               {
-                "family": "e40a96fb-a6b3-47e7-a084-884f756dd646"
+                "family": "e8015d62-bd83-4bbe-b650-1f7d4fdd198b"
               }
             ]
           }
@@ -174,13 +174,13 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2020-08-12T09:33:52+00:00",
+        "date": "2020-10-22T14:07:39+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "a1978fcd-73b4-4675-8f4c-f7434d1e6a66"
+        "title": "f5647df0-adb2-4d86-80db-c2916267c45a"
       },
       "search": {
         "mode": "match"

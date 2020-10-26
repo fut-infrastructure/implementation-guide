@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -16,7 +16,7 @@ __Body__:
   "resourceType": "ActivityDefinition",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-07-31T12:12:46.751+00:00",
+    "lastUpdated": "2020-10-23T11:07:58.473+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -39,7 +39,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-593.local/fhir/Organization/49776"
+            "reference": "https://organization.cit-plan-632.local/fhir/Organization/30774"
           }
         },
         {
@@ -56,8 +56,8 @@ __Body__:
       ]
     }
   ],
-  "version": "071bd935-238e-4330-9aa3-07e97949e9e2",
-  "name": "bc231d21-c06b-4585-8baf-29a2736922be",
+  "version": "ab78eaa1-50b4-4983-987a-7dea89b54566",
+  "name": "42bf8d3b-021e-4904-a385-796c1b388983",
   "status": "active",
   "topic": [
     {
@@ -84,10 +84,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "118",
+  "id": "121",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-07-31T12:12:46.899+00:00",
+    "lastUpdated": "2020-10-23T11:07:58.661+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -110,7 +110,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-593.local/fhir/Organization/49776"
+            "reference": "https://organization.cit-plan-632.local/fhir/Organization/30774"
           }
         },
         {
@@ -127,8 +127,8 @@ __Response__
       ]
     }
   ],
-  "version": "071bd935-238e-4330-9aa3-07e97949e9e2",
-  "name": "bc231d21-c06b-4585-8baf-29a2736922be",
+  "version": "ab78eaa1-50b4-4983-987a-7dea89b54566",
+  "name": "42bf8d3b-021e-4904-a385-796c1b388983",
   "status": "active",
   "topic": [
     {

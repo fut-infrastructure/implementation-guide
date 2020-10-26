@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -23,13 +23,13 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/21989"
+        "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/50801"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/87262"
+        "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/76599"
       }
     },
     {
@@ -60,7 +60,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/99774"
+            "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/15633"
           }
         },
         {
@@ -77,8 +77,8 @@ __Body__:
       ]
     }
   ],
-  "version": "9181586e-bb65-430a-897b-c4160098ed86",
-  "name": "0d026bfb-161d-4b23-b4e7-0fc683d04878",
+  "version": "acf50889-e31d-4e3d-aac0-c15754f0687f",
+  "name": "347984f6-e7f5-484e-8946-b7b365a88c51",
   "status": "active",
   "item": [
     {
@@ -122,7 +122,9 @@ __Body__:
         }
       ],
       "linkId": "link,link,link",
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "repeats": true
     }
   ]
 }
@@ -132,10 +134,10 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "12",
+  "id": "24",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-07-10T10:27:14.367+00:00",
+    "lastUpdated": "2020-10-23T11:31:37.471+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -144,13 +146,13 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/21989"
+        "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/50801"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/87262"
+        "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/76599"
       }
     },
     {
@@ -181,7 +183,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-568.local/fhir/Organization/99774"
+            "reference": "https://organization.cit-questionnaire-619.local/fhir/Organization/15633"
           }
         },
         {
@@ -198,8 +200,8 @@ __Response__
       ]
     }
   ],
-  "version": "9181586e-bb65-430a-897b-c4160098ed86",
-  "name": "0d026bfb-161d-4b23-b4e7-0fc683d04878",
+  "version": "acf50889-e31d-4e3d-aac0-c15754f0687f",
+  "name": "347984f6-e7f5-484e-8946-b7b365a88c51",
   "status": "active",
   "item": [
     {
@@ -243,7 +245,9 @@ __Response__
         }
       ],
       "linkId": "link,link,link",
-      "type": "integer"
+      "type": "integer",
+      "required": true,
+      "repeats": true
     }
   ]
 }

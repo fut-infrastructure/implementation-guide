@@ -1,11 +1,11 @@
-`GET [base]/Observation/545/_history/1`
+`GET [base]/Observation/547/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzZjNDNlNDMtMWI3OS00NTEyLWE2NDMtMzEyYTc5MjAyN2I5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEwOTgubG9jYWwvZmhpci9DYXJlVGVhbS8yNTUxMCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTEwOTgubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzcxMzI4IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZGYyM2Q4ZmUtMjBkYi00ZjNhLTlhZWYtZjc0NWExMDI5ODBlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTExMzcubG9jYWwvZmhpci9DYXJlVGVhbS80NTY3OCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTExMzcubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzU1MzU3IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/3.8.0 (FHIR Client; FHIR 3.0.1/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,17 +15,17 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "545",
+  "id": "547",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-07-10T10:19:55.323+00:00",
+    "lastUpdated": "2020-10-22T13:13:35.102+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1098.local/fhir/ProcedureRequest/38314"
+      "reference": "https://careplan.cit-measurement-1137.local/fhir/ProcedureRequest/62422"
     }
   ],
   "status": "final",
@@ -38,22 +38,22 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/21604"
+    "reference": "https://patient.cit-measurement-1137.local/fhir/Patient/63597"
   },
   "context": {
-    "reference": "https://careplan.cit-measurement-1098.local/fhir/EpisodeOfCare/71328"
+    "reference": "https://careplan.cit-measurement-1137.local/fhir/EpisodeOfCare/55357"
   },
   "effectivePeriod": {
-    "start": "2020-07-10T10:19:55+00:00",
-    "end": "2020-07-10T10:19:55+00:00"
+    "start": "2020-10-22T13:13:35+00:00",
+    "end": "2020-10-22T13:13:35+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1098.local/fhir/Patient/21604"
+      "reference": "https://patient.cit-measurement-1137.local/fhir/Patient/63597"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1098.local/fhir/Device/13097"
+    "reference": "https://device.cit-measurement-1137.local/fhir/Device/68323"
   }
 }
 ```
