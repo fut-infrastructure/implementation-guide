@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeSystem xmlns="http://hl7.org/fhir">
+<ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-unit-code"/>
    <url value="http://ehealth.sundhed.dk/vs/ehealth-unit-code"/>
    <version value="2020-10-19T10:00:00"/>
    <name value="eHealthUnitCodes"/>
+   <title value="eHealthUnitCodes"/>
    <status value="active"/>
    <experimental value="false"/>
    <date value="2020-10-19T08:00:00+00:00"/>
@@ -21,4 +22,4 @@
          <system value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
       </include>
    </compose>
-</CodeSystem>
+</ValueSet>
