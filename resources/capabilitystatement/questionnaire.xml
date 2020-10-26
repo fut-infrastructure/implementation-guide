@@ -1,18 +1,18 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="questionnaire"/>
    <status value="active"/>
-   <date value="2020-07-10T13:15:42+00:00"/>
-   <publisher value="Not provided"/>
+   <date value="2020-10-24T03:16:17+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="questionnaire"/>
-      <version value="1.5.4"/>
+      <version value="1.5.6"/>
    </software>
    <implementation>
       <description value="eHealth questionnaire service"/>
       <url value="https://questionnaire.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.1"/>
+   <fhirVersion value="3.0.2"/>
    <acceptUnknown value="extensions"/>
    <format value="application/fhir+xml"/>
    <format value="application/fhir+json"/>
@@ -21,7 +21,7 @@
       <resource>
          <type value="OperationDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
          </profile>
          <interaction>
             <code value="read"/>
@@ -177,20 +177,203 @@
       <resource>
          <type value="StructureDefinition"/>
          <profile>
-            <reference value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
+            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"/>
          </profile>
          <interaction>
             <code value="read"/>
          </interaction>
          <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
+         <interaction>
+            <code value="delete"/>
+         </interaction>
+         <interaction>
+            <code value="create"/>
+         </interaction>
+         <interaction>
             <code value="search-type"/>
          </interaction>
+         <conditionalCreate value="true"/>
+         <conditionalUpdate value="true"/>
+         <conditionalDelete value="single"/>
+         <searchInclude value="*"/>
+         <searchInclude value="StructureDefinition:valueset"/>
+         <searchParam>
+            <name value="_content"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_filter"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a filter"/>
+         </searchParam>
+         <searchParam>
+            <name value="_has"/>
+            <type value="string"/>
+            <documentation value="Return resources linked to by the given target"/>
+         </searchParam>
+         <searchParam>
+            <name value="_id"/>
+            <type value="token"/>
+            <documentation value="The ID of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_language"/>
+            <type value="string"/>
+            <documentation value="The language of the resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="_lastUpdated"/>
+            <type value="date"/>
+            <documentation value="Only return resources which were last updated as specified by the given range"/>
+         </searchParam>
+         <searchParam>
+            <name value="_profile"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="_security"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given security labels"/>
+         </searchParam>
+         <searchParam>
+            <name value="_source"/>
+            <type value="uri"/>
+            <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
+         </searchParam>
+         <searchParam>
+            <name value="_tag"/>
+            <type value="token"/>
+            <documentation value="Search for resources which have the given tag"/>
+         </searchParam>
+         <searchParam>
+            <name value="_text"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="abstract"/>
+            <type value="token"/>
+            <documentation value="Whether the structure is abstract"/>
+         </searchParam>
+         <searchParam>
+            <name value="base"/>
+            <type value="uri"/>
+            <documentation value="Definition that this type is constrained/specialized from"/>
+         </searchParam>
+         <searchParam>
+            <name value="base-path"/>
+            <type value="token"/>
+            <documentation value="Path that identifies the base element"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <type value="token"/>
+            <documentation value="resource | datatype | extension"/>
+         </searchParam>
+         <searchParam>
+            <name value="date"/>
+            <type value="date"/>
+            <documentation value="The structure definition publication date"/>
+         </searchParam>
+         <searchParam>
+            <name value="derivation"/>
+            <type value="token"/>
+            <documentation value="specialization | constraint - How relates to base definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="description"/>
+            <type value="string"/>
+            <documentation value="The description of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="experimental"/>
+            <type value="token"/>
+            <documentation value="For testing purposes, not real usage"/>
+         </searchParam>
+         <searchParam>
+            <name value="ext-context"/>
+            <type value="string"/>
+            <documentation value="Where the extension can be used in instances"/>
+         </searchParam>
+         <searchParam>
+            <name value="identifier"/>
+            <type value="token"/>
+            <documentation value="External identifier for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="jurisdiction"/>
+            <type value="token"/>
+            <documentation value="Intended jurisdiction for the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="keyword"/>
+            <type value="token"/>
+            <documentation value="A code for the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="kind"/>
+            <type value="token"/>
+            <documentation value="primitive-type | complex-type | resource | logical"/>
+         </searchParam>
+         <searchParam>
+            <name value="name"/>
+            <type value="string"/>
+            <documentation value="Computationally friendly name of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="path"/>
+            <type value="token"/>
+            <documentation value="A path that is constrained in the profile"/>
+         </searchParam>
+         <searchParam>
+            <name value="publisher"/>
+            <type value="string"/>
+            <documentation value="Name of the publisher of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="status"/>
+            <type value="token"/>
+            <documentation value="The current status of the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="title"/>
+            <type value="string"/>
+            <documentation value="The human-friendly name of the structure definition"/>
+         </searchParam>
          <searchParam>
             <name value="type"/>
             <type value="token"/>
             <documentation value="Type defined or constrained by this structure"/>
          </searchParam>
+         <searchParam>
+            <name value="url"/>
+            <type value="uri"/>
+            <documentation value="The uri that identifies the structure definition"/>
+         </searchParam>
+         <searchParam>
+            <name value="valueset"/>
+            <type value="reference"/>
+            <documentation value="A vocabulary binding reference"/>
+         </searchParam>
+         <searchParam>
+            <name value="version"/>
+            <type value="token"/>
+            <documentation value="The business version of the structure definition"/>
+         </searchParam>
       </resource>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire--validate"/>
+         </definition>
+      </operation>
       <operation>
          <name value="validate"/>
          <definition>
@@ -200,7 +383,13 @@
       <operation>
          <name value="validate"/>
          <definition>
-            <reference value="https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire--validate"/>
+            <reference value="https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/StructureDefinition--validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate"/>
+         <definition>
+            <reference value="https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/StructureDefinition-i-validate"/>
          </definition>
       </operation>
    </rest>
