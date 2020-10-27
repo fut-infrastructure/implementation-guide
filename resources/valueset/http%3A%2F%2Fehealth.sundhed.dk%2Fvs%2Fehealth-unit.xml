@@ -21,8 +21,6 @@
         <include>
             <system value="http://ehealth.sundhed.dk/vs/ehealth-unit-code"/>
         </include>
-    </compose>
-    <compose>
         <include>
             <system value="http://hl7.org/fhir/ValueSet/ucum-common"/>
         </include>

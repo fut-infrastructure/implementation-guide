@@ -19,11 +19,11 @@
    <content value="complete"/>
    <concept>
       <code value="1/30sec"/>
-      <definition value="Number of occurrences in 30 seconds"/>
       <display value="one per 30 seconds"/>
+      <definition value="Number of occurrences in 30 seconds"/>
       <designation>
          <language value="da"/>
-         <value value="1/30 sek"/>
+         <value value="1/ 30 sek"/>
       </designation>
    </concept>
 </CodeSystem>
