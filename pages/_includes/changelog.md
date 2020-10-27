@@ -2,18 +2,6 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
- 
-### General changes
- 
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-
 ## 2020.7 (2020-10-28)
 
 ### Code systems
@@ -25,8 +13,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension `OverviewUsageMode`
 - Made responsible mandantory on video appointments
 - Removed organization as an option for being listed as responsible on all appointments
+
 #### Questionnaire
 - Added extension OverviewUsageMode to item
+
 #### PlanDefinition
 - Added extension OverviewUsageMode to action
 
@@ -51,6 +41,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new valueSet `http://ehealth.sundhed.dk/vs/ehealth-unit` to include the valueSets `http://ehealth.sundhed.dk/vs/ehealth-unit-code` and `http://hl7.org/fhir/ValueSet/ucum-common`
 - Added new valueSet `http://ehealth.sundhed.dk/vs/ehealth-unit-code` to include the system `http://ehealth.sundhed.dk/cs/ehealth-unit-code`
 - Changed includes in `http://ehealth.sundhed.dk/vs/task-category` to include the system `http://ehealth.sundhed.dk/cs/task-category` instead of the concepts individually
+
 ### ConceptMaps
 - Added new group in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
 - Added new group in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
