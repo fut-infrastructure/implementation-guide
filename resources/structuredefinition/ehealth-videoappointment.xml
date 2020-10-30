@@ -6,7 +6,7 @@
   <title value="eHealth Video Appointment" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This profile models an ehealth video appointment. It is only necessary to create one appointment even though it spans more than one participant. Allowed appointment participants are patients, practitioners, relatedpersons, and locations" />
+  <description value="This profile models an ehealth video appointment. It is only necessary to create one appointment even though it spans more than one participant. Allowed appointment participants are careteams, patients, practitioners, relatedpersons, and locations" />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
@@ -105,20 +105,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible" />
       </type>
     </element>
-    <element id="Appointment.extension:responsible.value[x]:valueReference">
-      <path value="Appointment.extension.value[x]" />
-      <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
-    </element>
     <element id="Appointment.extension:groupId">
       <path value="Appointment.extension" />
       <sliceName value="groupId" />
@@ -159,21 +145,26 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-releasableResource" />
       </type>
     </element>
-    <element id="Appointment.extension:performing-organization">
+    <element id="Appointment.extension:performer">
       <path value="Appointment.extension" />
-      <sliceName value="performing-organization" />
+      <sliceName value="performer" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer" />
       </type>
     </element>
-    <element id="Appointment.extension:performing-organization.value[x]:valueReference">
+    <element id="Appointment.extension:performer.value[x]:valueReference">
       <path value="Appointment.extension.valueReference" />
       <sliceName value="valueReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
         <aggregation value="referenced" />
       </type>
     </element>

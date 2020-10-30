@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-group-appointment" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment" />
-  <name value="ehealth-group-appointment" />
-  <title value="eHealth Group Appointment" />
+  <id value="ehealth-group-videoappointment" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment" />
+  <name value="ehealth-group-videoappointment" />
+  <title value="eHealth Group Video Appointment" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="This profile models an ehealth appointment. It is only necessary to create one appointment even though it spans more than one participant. Allowed appointment participants are patients, practitioners, relatedpersons, and locations" />
+  <description value="This profile models an ehealth group video appointment. It is only necessary to create one appointment even though it spans more than one participant. Allowed appointment participants are careteams, patients, practitioners, relatedpersons, and locations" />
   <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
@@ -34,6 +34,60 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+    </element>
+    <element id="Appointment.extension:endMeetingOnEndTime">
+      <path value="Appointment.extension" />
+      <sliceName value="endMeetingOnEndTime" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-end-meeting-on-end-time" />
+      </type>
+    </element>
+    <element id="Appointment.extension:maxParticipants">
+      <path value="Appointment.extension" />
+      <sliceName value="maxParticipants" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants" />
+      </type>
+    </element>
+    <element id="Appointment.extension:meetingURL">
+      <path value="Appointment.extension" />
+      <sliceName value="meetingURL" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url" />
+      </type>
+    </element>
+    <element id="Appointment.extension:vmrUri">
+      <path value="Appointment.extension" />
+      <sliceName value="vmrUri" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-vmr-uri" />
+      </type>
+    </element>
+    <element id="Appointment.extension:guestPinCode">
+      <path value="Appointment.extension" />
+      <sliceName value="guestPinCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guest-pin-code" />
+      </type>
+    </element>
+    <element id="Appointment.extension:hostPinCode">
+      <path value="Appointment.extension" />
+      <sliceName value="hostPinCode" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-host-pin-code" />
+      </type>
     </element>
     <element id="Appointment.extension:responsible">
       <path value="Appointment.extension" />
@@ -94,6 +148,26 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization" />
       </type>
     </element>
+    <element id="Appointment.identifier">
+      <path value="Appointment.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Appointment.identifier:vdxMeetingId">
+      <path value="Appointment.identifier" />
+      <sliceName value="vdxMeetingId" />
+      <short value="Identifies the FHIR id of the booked VDX meeting resource" />
+      <max value="1" />
+    </element>
+    <element id="Appointment.identifier:vdxMeetingId.system">
+      <path value="Appointment.identifier.system" />
+      <fixedUri value="http://vdx.medcom.dk/meeting" />
+    </element>
     <element id="Appointment.extension:performer">
       <path value="Appointment.extension" />
       <sliceName value="performer" />
@@ -136,9 +210,9 @@
     </element>
     <element id="Appointment.reason">
       <path value="Appointment.reason" />
-      <max value="1" />
+      <min value="1" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSetUri value="http://ehealth.sundhed.dk/vs/appointment-reason" />
       </binding>
     </element>
@@ -162,6 +236,10 @@
         <aggregation value="referenced" />
       </type>
     </element>
+    <element id="Appointment.description">
+      <path value="Appointment.description" />
+      <min value="1" />
+    </element>
     <element id="Appointment.supportingInformation">
       <path value="Appointment.supportingInformation" />
       <max value="1" />
@@ -175,6 +253,14 @@
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan" />
         <aggregation value="referenced" />
       </type>
+    </element>
+    <element id="Appointment.start">
+      <path value="Appointment.start" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.end">
+      <path value="Appointment.end" />
+      <min value="1" />
     </element>
     <element id="Appointment.slot">
       <path value="Appointment.slot" />
