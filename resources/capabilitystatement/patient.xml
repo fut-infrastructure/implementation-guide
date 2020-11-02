@@ -33,6 +33,9 @@
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment"/>
     </profile>
     <profile>
+        <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment"/>
+    </profile>
+    <profile>
         <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"/>
     </profile>
     <profile>
