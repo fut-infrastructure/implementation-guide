@@ -1,0 +1,12 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+    <id value="ehealth-appointment-search-intended-audience" />
+    <url value="http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/intended-audience"/>
+    <name value="intended-audience" />
+    <status value="active" />
+    <code value="intended-audience" />
+    <base value="Appointment" />
+    <type value="reference" />
+    <description value="Search parameter for finding intended audience on Appointment" />
+    <expression value="Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience')" />
+    <xpathUsage value="normal" />
+</SearchParameter>

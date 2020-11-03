@@ -129,6 +129,18 @@
         <human value="Both performer and responsible organization must be populated when legal basis is used" />
         <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
       </constraint>
+      <constraint>
+        <key value="max-patient-particpants" />
+        <severity value="warning" />
+        <human value="Too many intended patient participants" />
+        <expression value="(extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger).not()" />
+      </constraint>
+      <constraint>
+        <key value="min-patient-particpants" />
+        <severity value="warning" />
+        <human value="Too few intended patient participants" />
+        <expression value="(extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueUnsignedInt).not()" />
+      </constraint>
     </element>
     <element id="Appointment.extension:releasableResource">
       <path value="Appointment.extension" />
@@ -186,6 +198,14 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
+      </type>
+    </element>
+    <element id="Appointment.extension:registration-deadline">
+      <path value="Appointment.extension" />
+      <sliceName value="registration-deadline" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment-registration-deadline" />
       </type>
     </element>
     <element id="Appointment.appointmentType">
