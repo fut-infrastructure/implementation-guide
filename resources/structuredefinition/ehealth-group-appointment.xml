@@ -126,6 +126,14 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-creator" />
       </type>
     </element>
+    <element id="Appointment.extension:intendedAudience">
+      <path value="Appointment.extension" />
+      <sliceName value="intendedAudience" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
+      </type>
+    </element>
     <element id="Appointment.appointmentType">
       <path value="Appointment.appointmentType" />
       <min value="1" />

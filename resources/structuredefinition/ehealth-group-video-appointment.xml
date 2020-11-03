@@ -148,26 +148,6 @@
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization" />
       </type>
     </element>
-    <element id="Appointment.identifier">
-      <path value="Appointment.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Appointment.identifier:vdxMeetingId">
-      <path value="Appointment.identifier" />
-      <sliceName value="vdxMeetingId" />
-      <short value="Identifies the FHIR id of the booked VDX meeting resource" />
-      <max value="1" />
-    </element>
-    <element id="Appointment.identifier:vdxMeetingId.system">
-      <path value="Appointment.identifier.system" />
-      <fixedUri value="http://vdx.medcom.dk/meeting" />
-    </element>
     <element id="Appointment.extension:performer">
       <path value="Appointment.extension" />
       <sliceName value="performer" />
@@ -198,6 +178,14 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-creator" />
+      </type>
+    </element>
+    <element id="Appointment.extension:intendedAudience">
+      <path value="Appointment.extension" />
+      <sliceName value="intendedAudience" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience" />
       </type>
     </element>
     <element id="Appointment.appointmentType">
