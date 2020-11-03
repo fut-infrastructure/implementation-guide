@@ -24,6 +24,18 @@
         <human value="Ensuring that responsible entity is a participating party" />
         <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.actor.reference)" />
       </constraint>
+      <constraint>
+        <key value="max-patient-particpants" />
+        <severity value="warning" />
+        <human value="Too many intended patient participants" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
+      </constraint>
+      <constraint>
+        <key value="min-patient-particpants" />
+        <severity value="warning" />
+        <human value="Too few intended patient participants" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueUnsignedInt" />
+      </constraint>
     </element>
     <element id="Appointment.extension">
       <path value="Appointment.extension" />
@@ -128,18 +140,6 @@
         <severity value="error" />
         <human value="Both performer and responsible organization must be populated when legal basis is used" />
         <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
-      </constraint>
-      <constraint>
-        <key value="max-patient-particpants" />
-        <severity value="warning" />
-        <human value="Too many intended patient participants" />
-        <expression value="(extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger).not()" />
-      </constraint>
-      <constraint>
-        <key value="min-patient-particpants" />
-        <severity value="warning" />
-        <human value="Too few intended patient participants" />
-        <expression value="(extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueUnsignedInt).not()" />
       </constraint>
     </element>
     <element id="Appointment.extension:releasableResource">
