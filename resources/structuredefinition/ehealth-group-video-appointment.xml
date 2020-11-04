@@ -205,7 +205,7 @@
       <sliceName value="registration-deadline" />
       <type>
         <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment-registration-deadline" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline" />
       </type>
     </element>
     <element id="Appointment.appointmentType">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment-registration-deadline" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline" />
   <name value="registration-deadline" />
   <status value="draft" />
   <fhirVersion value="3.0.2" />
@@ -19,7 +19,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment-registration-deadline" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline" />
     </element>
     <element id="Extension.value[x]:valueDateTime">
       <path value="Extension.valueDateTime" />
