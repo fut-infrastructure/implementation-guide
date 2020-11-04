@@ -28,13 +28,13 @@
         <key value="max-patient-participants" />
         <severity value="warning" />
         <human value="Too many intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
       </constraint>
       <constraint>
         <key value="min-patient-participants" />
         <severity value="warning" />
         <human value="Too few intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger" />
       </constraint>
     </element>
     <element id="Appointment.extension">
