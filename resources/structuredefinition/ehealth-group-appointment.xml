@@ -25,13 +25,13 @@
         <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.actor.reference)" />
       </constraint>
       <constraint>
-        <key value="max-patient-particpants" />
+        <key value="max-patient-participants" />
         <severity value="warning" />
         <human value="Too many intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueUnsignedInt" />
       </constraint>
       <constraint>
-        <key value="min-patient-particpants" />
+        <key value="min-patient-participants" />
         <severity value="warning" />
         <human value="Too few intended patient participants" />
         <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueUnsignedInt" />
