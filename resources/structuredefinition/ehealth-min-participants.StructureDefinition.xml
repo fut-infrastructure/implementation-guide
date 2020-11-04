@@ -21,11 +21,11 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants" />
     </element>
-     <element id="Extension.value[x]:valueUnsignedInt">
-      <path value="Extension.valueUnsignedInt" />
-      <sliceName value="valueUnsignedInt" />
+     <element id="Extension.value[x]:valueInteger">
+      <path value="Extension.valueInteger" />
+      <sliceName value="valueInteger" />
       <type>
-        <code value="unsignedInt" />
+        <code value="integer" />
       </type>
     </element>
   </differential>

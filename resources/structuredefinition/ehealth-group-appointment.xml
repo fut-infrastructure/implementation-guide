@@ -34,7 +34,7 @@
         <key value="min-patient-participants" />
         <severity value="warning" />
         <human value="Too few intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueUnsignedInt" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt; extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger" />
       </constraint>
     </element>
     <element id="Appointment.extension">
