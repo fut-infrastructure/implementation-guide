@@ -130,7 +130,6 @@
       </type>
     </element>
     <element id="Appointment.extension:ehealth-creator">
-      <definition>The CareTeam that created the group appointment. This value is automatically filled out by the server based on the JWT CareTeam context of the user, and is used afterwards by the server to allow the original creator of the group appointment to afterwards modify any value</definition>
       <path value="Appointment.extension" />
       <sliceName value="ehealth-creator" />
       <max value="1" />
@@ -148,7 +147,6 @@
       </type>
     </element>
     <element id="Appointment.extension:registration-deadline">
-      <definition>If a participant is added after this time, a WARNING validation issue will be generated and returned to the user</definition>
       <path value="Appointment.extension" />
       <sliceName value="registration-deadline" />
       <max value="1" />
