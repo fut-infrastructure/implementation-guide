@@ -25,16 +25,16 @@
         <expression value="(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam').value.reference) or (extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible').value.reference in participant.actor.reference)" />
       </constraint>
       <constraint>
-        <key value="max-patient-participants" />
+        <key value="max-participants" />
         <severity value="warning" />
-        <human value="Too many intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &lt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
+        <human value="Too many intended participants" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() &lt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger" />
       </constraint>
       <constraint>
-        <key value="min-patient-participants" />
+        <key value="min-participants" />
         <severity value="warning" />
-        <human value="Too few intended patient participants" />
-        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.contains('/Patient')).count() &gt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger" />
+        <human value="Too few intended participants" />
+        <expression value="extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() &gt;= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger" />
       </constraint>
     </element>
     <element id="Appointment.extension">
@@ -184,6 +184,7 @@
       </type>
     </element>
     <element id="Appointment.extension:ehealth-creator">
+      <definition>The CareTeam that created the group appointment. This value is automatically filled out by the server based on the JWT CareTeam context of the user, and is used afterwards by the server to allow the original creator of the group appointment to afterwards modify any value</definition>
       <path value="Appointment.extension" />
       <sliceName value="ehealth-creator" />
       <max value="1" />
@@ -201,8 +202,10 @@
       </type>
     </element>
     <element id="Appointment.extension:registration-deadline">
+      <definition>If a participant is added after this time, a WARNING validation issue will be generated and returned to the user</definition>
       <path value="Appointment.extension" />
       <sliceName value="registration-deadline" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline" />
