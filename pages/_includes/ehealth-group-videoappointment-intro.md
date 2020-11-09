@@ -1,5 +1,5 @@
 # Extra Validation Constraints
-- When a dateTime value is present in the ehealth-registration-deadline extension, then a WARNING validation issue will be raised if a participant is added after this dateTime
+- When a dateTime value is present in the ehealth-registration-deadline extension, then a `WARNING` validation issue will be raised if a participant is added to the appointment after this point in time
   - This constraint is implemented directly on the server due to technical limitations, which means it is not listed with other Implementation Guide  constraints
 
 
