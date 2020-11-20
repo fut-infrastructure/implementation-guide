@@ -2,6 +2,23 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+ 
+### General changes
+ 
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added `http://ehealth.sundhed.dk/cs/ehealth-usage-context-type`
+### ValueSets
+- Added `http://ehealth.sundhed.dk/vs/ehealth-usage-context-type`
+### ConceptMaps
+### Resource/profile changes
+
+#### Library (eHealth-library)
+- Changed valueset binding for useContext to http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
+
 ## 2020.7 (2020-10-28)
 
 ### Code systems
