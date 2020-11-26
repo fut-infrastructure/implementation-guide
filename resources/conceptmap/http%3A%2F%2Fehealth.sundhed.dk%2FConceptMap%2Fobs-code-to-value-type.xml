@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="conceptmap-obs-code-to-value-type"/>
+    <url value="http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type"/>
+    <version value="2020-11-26T12:24:16"/>
+    <name value="conceptmap-obs-code-to-value-type"/>
+    <title value="conceptmap-obs-code-to-value-type"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2020-11-26"/>
+    <publisher value="ehealth.sundhed.dk"/>
+    <contact>
+        <name value="ehealth.sundhed.dk"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://ehealth.sundhed.dk/terminology"/>
+        </telecom>
+    </contact>
+    <sourceUri value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+    <targetUri value="http://hl7.org/fhir/ValueSet/data-types"/>
+    <group>
+        <source value="urn:oid:1.2.208.176.2.1"/>
+        <target value="http://hl7.org/fhir/data-types"/>
+        <element>
+            <code value="NPU03011"/>
+            <display value="O2 sat.;Hb(aB)"/>
+            <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU21692"/>
+            <display value="Puls;Hjerte"/>
+            <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU03804"/>
+            <display value="Legeme vægt; Pt"/>
+            <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU27281"/>
+            <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+            <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU03794"/>
+            <display value="Pt—Legeme; højde = ? m"/>
+            <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="urn:oid:1.2.208.184.100.8"/>
+        <target value="http://hl7.org/fhir/data-types"/>
+        <element>
+            <code value="MCS"/>
+            <display value="Hjemmeblodtryksmåling udført af patienten"/>
+            <target>
+            </target>
+        </element>
+    </group>
+</ConceptMap>
