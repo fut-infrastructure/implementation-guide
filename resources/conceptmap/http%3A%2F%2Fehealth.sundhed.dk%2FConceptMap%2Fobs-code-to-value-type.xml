@@ -76,8 +76,56 @@
         <source value="urn:oid:1.2.208.184.100.8"/>
         <target value="http://hl7.org/fhir/data-types"/>
         <element>
-            <code value="MCS"/>
-            <display value="Hjemmeblodtryksmåling udført af patienten"/>
+            <code value="MCS88015"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88016"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88017"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88019"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88020"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88021"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88023"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88050"/>
+            <display value=""/>
+            <target>
+            </target>
+        </element>
+        <element>
+            <code value="MCS88137"/>
+            <display value=""/>
             <target>
             </target>
         </element>
