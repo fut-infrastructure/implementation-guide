@@ -26,7 +26,7 @@
             <display value="O2 sat.;Hb(aB)"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -36,7 +36,7 @@
             <display value="Puls;Hjerte"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -46,7 +46,7 @@
             <display value="Legeme vægt; Pt"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -56,7 +56,7 @@
             <display value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -66,7 +66,7 @@
             <display value="Pt—Legeme; højde = ? m"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -80,7 +80,7 @@
             <display value="FEV1;Lunge"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -90,7 +90,7 @@
             <display value="FVC;Lunge"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -100,7 +100,7 @@
             <display value="FEV1/FVC;Lunge"/>
             <target>
                 <code value="decimal"/>
-                <display value="A rational number with implicit precision"/>
+                <display value="decimal"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -110,7 +110,7 @@
             <display value="Blodtryk hjemme systolisk;Arm"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -120,7 +120,7 @@
             <display value="Blodtryk hjemme diastolisk;Arm"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -130,7 +130,7 @@
             <display value="MRC skala;Pt(KOL)"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -140,7 +140,7 @@
             <display value="FEV1 af forventet værdi;Pt(KOL)"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -150,7 +150,7 @@
             <display value="Rejse sætte sig testen;Pt"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
@@ -160,7 +160,7 @@
             <display value="CAT score;Pt"/>
             <target>
                 <code value="integer"/>
-                <display value="A whole number"/>
+                <display value="integer"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
