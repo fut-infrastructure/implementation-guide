@@ -77,56 +77,92 @@
         <target value="http://hl7.org/fhir/data-types"/>
         <element>
             <code value="MCS88015"/>
-            <display value=""/>
+            <display value="FEV1;Lunge"/>
             <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88016"/>
-            <display value=""/>
+            <display value="FVC;Lunge"/>
             <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88017"/>
-            <display value=""/>
+            <display value="FEV1/FVC;Lunge"/>
             <target>
+                <code value="decimal"/>
+                <display value="A rational number with implicit precision"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88019"/>
-            <display value=""/>
+            <display value="Blodtryk hjemme systolisk;Arm"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88020"/>
-            <display value=""/>
+            <display value="Blodtryk hjemme diastolisk;Arm"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88021"/>
-            <display value=""/>
+            <display value="MRC skala;Pt(KOL)"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88023"/>
-            <display value=""/>
+            <display value="FEV1 af forventet værdi;Pt(KOL)"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88050"/>
-            <display value=""/>
+            <display value="Rejse sætte sig testen;Pt"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
         <element>
             <code value="MCS88137"/>
-            <display value=""/>
+            <display value="CAT score;Pt"/>
             <target>
+                <code value="integer"/>
+                <display value="A whole number"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
     </group>
