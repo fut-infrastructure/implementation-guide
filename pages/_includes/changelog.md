@@ -14,6 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/ehealth-usage-context-type`
 ### ConceptMaps
+- Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
 ### Resource/profile changes
 
 #### Library (eHealth-library)
