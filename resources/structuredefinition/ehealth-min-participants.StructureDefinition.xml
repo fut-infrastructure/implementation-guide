@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MinParticipants"/>
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants" />
   <name value="MinParticipants" />
   <status value="draft" />
