@@ -13,6 +13,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-usage-context-type`
 ### ValueSets
 - Added `http://ehealth.sundhed.dk/vs/ehealth-usage-context-type`
+- Expanded `http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes` with `http://ehealth.sundhed.dk/vs/observation-codes`
 ### ConceptMaps
 - Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
 ### Resource/profile changes

@@ -22,6 +22,9 @@
          <system value="http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes"/>
       </include>
       <include>
+         <valueSet value="http://ehealth.sundhed.dk/vs/observation-codes"/>
+      </include>
+      <include>
          <system value="http://snomed.info/sct"/>
          <concept>
             <code value="281300000"/>
