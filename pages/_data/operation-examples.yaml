@@ -662,6 +662,12 @@
 - profile: ehealth-videoappointment
   path: PUT_Appointment_Video.md
 
+- profile: ehealth-group-appointment
+  path: POST_GroupAppointment.md
+
+- profile: ehealth-group-appointment
+  path: POST_Appointment_Video.md
+
 # setting profile = system, in order to include in general operation examples page
 - profile: system
   path: POST_Person.md
