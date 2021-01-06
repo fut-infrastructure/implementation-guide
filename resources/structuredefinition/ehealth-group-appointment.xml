@@ -84,8 +84,8 @@
       <constraint>
         <key value="responsible-2" />
         <severity value="error" />
-        <human value="Both performer and responsible organization must be populated when legal basis is used" />
-        <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
+        <human value="Both performing organization and responsible organization must be populated when legal basis is used" />
+        <expression value="%resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization').exists() and %resource.extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization').exists()" />
       </constraint>
     </element>
     <element id="Appointment.extension:releasableResource">
@@ -153,6 +153,16 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline" />
+      </type>
+    </element>
+    <element id="Appointment.extension:performing-organization">
+      <path value="Appointment.extension" />
+      <sliceName value="performing-organization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization" />
       </type>
     </element>
     <element id="Appointment.appointmentType">

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-performer" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer" />
-  <name value="ehealth-performer" />
+  <id value="ehealth-performing-organization" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization" />
+  <name value="performing-organization" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
+  <description value="Organization who is performing in the given context" />
   <fhirVersion value="3.0.2" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
   <contextType value="resource" />
@@ -20,21 +17,11 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization" />
     </element>
     <element id="Extension.value[x]:valueReference">
       <path value="Extension.value[x]" />
       <sliceName value="valueReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam" />
-        <aggregation value="referenced" />
-      </type>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner" />
-        <aggregation value="referenced" />
-      </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization" />
