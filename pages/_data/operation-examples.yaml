@@ -663,7 +663,7 @@
   path: PUT_Appointment_Video.md
 
 - profile: ehealth-group-appointment
-  path: POST_GroupAppointment.md
+  path: POST_Group_Appointment.md
 
 - profile: ehealth-group-appointment
   path: POST_Appointment_Video.md
