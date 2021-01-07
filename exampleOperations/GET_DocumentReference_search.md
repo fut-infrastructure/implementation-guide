@@ -1,4 +1,4 @@
-`GET [base]/DocumentReference?description=d9415c1d-a59b-4335-ad39-f823736e2c8f`
+`GET [base]/DocumentReference?description=8a2d0cea-0b8c-46ef-9c20-a34e96782c13`
 
 __Header__
 ```
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "3b4ba225-8dbe-45b8-8d30-0e2d87bf0c02",
+  "id": "bbf27db2-c10f-4a12-9a3f-e9c910a29de1",
   "meta": {
-    "lastUpdated": "2020-10-23T11:07:44.399+00:00"
+    "lastUpdated": "2020-12-21T12:48:50.079+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-632.local/fhir/DocumentReference?_format=json&_pretty=true&description=d9415c1d-a59b-4335-ad39-f823736e2c8f"
+      "url": "https://plan.cit-plan-647.local/fhir/DocumentReference?_format=json&_pretty=true&description=8a2d0cea-0b8c-46ef-9c20-a34e96782c13"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-632.local/fhir/DocumentReference/112",
+      "fullUrl": "https://plan.cit-plan-647.local/fhir/DocumentReference/118",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "112",
+        "id": "118",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-10-23T11:07:43.706+00:00",
+          "lastUpdated": "2020-12-21T12:48:49.938+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -49,8 +49,8 @@ __Response__
             }
           ]
         },
-        "indexed": "2020-10-23T11:07:43.661+00:00",
-        "description": "d9415c1d-a59b-4335-ad39-f823736e2c8f",
+        "indexed": "2020-12-21T12:48:49.890+00:00",
+        "description": "8a2d0cea-0b8c-46ef-9c20-a34e96782c13",
         "content": [
           {
             "attachment": {
@@ -64,13 +64,13 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-632.local/fhir/DocumentReference/114",
+      "fullUrl": "https://plan.cit-plan-647.local/fhir/DocumentReference/116",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "114",
+        "id": "116",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-10-23T11:07:44.185+00:00",
+          "lastUpdated": "2020-12-21T12:48:49.593+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -84,8 +84,8 @@ __Response__
             }
           ]
         },
-        "indexed": "2020-10-23T11:07:44.122+00:00",
-        "description": "d9415c1d-a59b-4335-ad39-f823736e2c8f",
+        "indexed": "2020-12-21T12:48:49.541+00:00",
+        "description": "8a2d0cea-0b8c-46ef-9c20-a34e96782c13",
         "content": [
           {
             "attachment": {

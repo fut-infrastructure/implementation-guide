@@ -18,23 +18,23 @@ __Body__:
   "id": "20",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-23T11:31:32.240+00:00",
+    "lastUpdated": "2020-12-21T12:51:23.413+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "66af1b9a-f1a4-4530-be55-a567d3e64230",
-  "name": "5c3baefa-98ec-4876-adb5-92e4be692a7e",
+  "url": "a4345704-beba-43f0-a903-0d97a871d1e4",
+  "name": "a518461e-a5f9-4f9b-aac2-ddf4398d8c74",
   "status": "draft",
   "kind": "logical",
   "abstract": true,
-  "type": "3c86a320-b3da-4350-9bba-aaab088245af",
+  "type": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
   "snapshot": {
     "element": [
       {
-        "id": "3c86a320-b3da-4350-9bba-aaab088245af",
-        "path": "3c86a320-b3da-4350-9bba-aaab088245af",
-        "definition": "1b6841b8-04a8-40ba-9370-84eacf626c0f",
+        "id": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
+        "path": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
+        "definition": "66ac31aa-16a3-40c4-b944-6d25cd243a48",
         "min": 0,
         "max": "1"
       }
@@ -50,23 +50,23 @@ __Response__
   "id": "20",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-23T11:31:32.495+00:00",
+    "lastUpdated": "2020-12-21T12:51:23.818+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "66af1b9a-f1a4-4530-be55-a567d3e64230",
-  "name": "5c3baefa-98ec-4876-adb5-92e4be692a7e",
+  "url": "a4345704-beba-43f0-a903-0d97a871d1e4",
+  "name": "a518461e-a5f9-4f9b-aac2-ddf4398d8c74",
   "status": "draft",
   "kind": "logical",
   "abstract": true,
-  "type": "3c86a320-b3da-4350-9bba-aaab088245af",
+  "type": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
   "snapshot": {
     "element": [
       {
-        "id": "3c86a320-b3da-4350-9bba-aaab088245af",
-        "path": "3c86a320-b3da-4350-9bba-aaab088245af",
-        "definition": "1b6841b8-04a8-40ba-9370-84eacf626c0f",
+        "id": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
+        "path": "fc44c1f5-291e-448c-8ded-55f9f0e66a2d",
+        "definition": "66ac31aa-16a3-40c4-b944-6d25cd243a48",
         "min": 0,
         "max": "1"
       }

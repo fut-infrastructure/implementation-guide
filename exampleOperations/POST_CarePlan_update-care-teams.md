@@ -1,4 +1,4 @@
-`POST [base]/CarePlan/1645/$update-care-teams`
+`POST [base]/CarePlan/1653/$update-care-teams`
 
 __Header__
 ```
@@ -18,13 +18,13 @@ __Body__:
     {
       "name": "addCareTeams",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-1494.local/fhir/CareTeam/84614"
+        "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/9743"
       }
     },
     {
       "name": "removeCareTeams",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-1494.local/fhir/CareTeam/86988"
+        "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/26260"
       }
     }
   ]
@@ -35,17 +35,17 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "1645",
+  "id": "1653",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-22T12:29:28.815+00:00",
+    "lastUpdated": "2021-01-06T14:02:33.042+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
   },
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1494.local/fhir/PlanDefinition/54095"
+      "reference": "https://plan.cit-careplan-1525.local/fhir/PlanDefinition/25560"
     }
   ],
   "status": "draft",
@@ -61,10 +61,10 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-careplan-1494.local/fhir/Patient/8205"
+    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/20938"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1494.local/fhir/EpisodeOfCare/1643"
+    "reference": "https://careplan.cit-careplan-1525.local/fhir/EpisodeOfCare/1651"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
@@ -72,15 +72,15 @@ __Response__
   },
   "careTeam": [
     {
-      "reference": "https://organization.cit-careplan-1494.local/fhir/CareTeam/24104"
+      "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/37765"
     },
     {
-      "reference": "https://organization.cit-careplan-1494.local/fhir/CareTeam/84614"
+      "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/9743"
     }
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-1494.local/fhir/Condition/1644"
+      "reference": "https://careplan.cit-careplan-1525.local/fhir/Condition/1652"
     }
   ]
 }

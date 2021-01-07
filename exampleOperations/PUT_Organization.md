@@ -1,4 +1,4 @@
-`PUT [base]/Organization/289`
+`PUT [base]/Organization/288`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "289",
+  "id": "288",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-22T13:56:41.075+00:00",
+    "lastUpdated": "2020-12-21T13:23:28.383+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -53,11 +53,11 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2020-10-22T13:56:41+00:00"
+        "start": "2020-12-21T13:23:28+00:00"
       }
     }
   ],
-  "name": "8cdc507e-e0bd-45a0-9cdb-7fd4a1234e25"
+  "name": "e5c1c181-d8f8-4a9a-816d-c1ec9aa2abfd"
 }
 ```
 
@@ -65,10 +65,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "289",
+  "id": "288",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-22T13:56:41.280+00:00",
+    "lastUpdated": "2020-12-21T13:23:28.503+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -103,10 +103,10 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2020-10-22T13:56:41+00:00"
+        "start": "2020-12-21T13:23:28+00:00"
       }
     }
   ],
-  "name": "8cdc507e-e0bd-45a0-9cdb-7fd4a1234e25"
+  "name": "e5c1c181-d8f8-4a9a-816d-c1ec9aa2abfd"
 }
 ```

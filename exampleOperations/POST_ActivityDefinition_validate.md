@@ -1,4 +1,4 @@
-`POST [base]/ActivityDefinition/142/$validate`
+`POST [base]/ActivityDefinition/146/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "142",
+        "id": "146",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-10-23T11:08:11.546+00:00",
+          "lastUpdated": "2020-12-21T12:49:17.886+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -45,7 +45,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-632.local/fhir/Organization/18660"
+                  "reference": "https://organization.cit-plan-647.local/fhir/Organization/32350"
                 }
               },
               {
@@ -62,8 +62,8 @@ __Body__:
             ]
           }
         ],
-        "version": "bdf7479c-3ebf-4e53-bf1b-b60e8d9b6ed2",
-        "name": "b2e21b4d-3a00-4ae6-aca7-75f93effd8af",
+        "version": "8639609a-138f-456b-9a62-6fe7daf97a27",
+        "name": "ccb69cad-7ca9-4763-b985-9fea1b94815d",
         "status": "active",
         "topic": [
           {

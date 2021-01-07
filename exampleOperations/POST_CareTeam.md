@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTc2Y2YwYzUtYTExOC00ZmVlLWFjYTUtMWRlNmIwNzZkYzliIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2IwMjEzMzYtNDk2OC00OWE5LTliNWYtZWM2OGRiNDI0MzkzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
@@ -21,12 +21,12 @@ __Body__:
   },
   "identifier": [
     {
-      "id": "d81efc98-754e-477d-8b45-a64a26575ef6",
+      "id": "5e8f5758-3eb1-415f-9c05-3900f35dd05c",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "81e6db34-80b5-436f-8d19-d1deba3185ab",
+  "name": "ea8ba1d4-a46d-44d3-92c4-103fb5b08ce7",
   "participant": [
     {
       "role": {
@@ -38,7 +38,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://patient.cit-organization-740.local/fhir/RelatedPerson/80469"
+        "reference": "https://patient.cit-organization-751.local/fhir/RelatedPerson/62111"
       }
     },
     {
@@ -51,7 +51,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://patient.cit-organization-740.local/fhir/Patient/63213"
+        "reference": "https://patient.cit-organization-751.local/fhir/Patient/81264"
       }
     },
     {
@@ -64,7 +64,7 @@ __Body__:
         ]
       },
       "member": {
-        "reference": "https://organization.cit-organization-740.local/fhir/CareTeam/138"
+        "reference": "https://organization.cit-organization-751.local/fhir/CareTeam/138"
       }
     }
   ],
@@ -80,7 +80,7 @@ __Body__:
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-740.local/fhir/Organization/139"
+      "reference": "https://organization.cit-organization-751.local/fhir/Organization/139"
     }
   ]
 }
@@ -93,19 +93,19 @@ __Response__
   "id": "140",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-22T13:55:47.674+00:00",
+    "lastUpdated": "2020-12-21T13:22:33.577+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
   "identifier": [
     {
-      "id": "d81efc98-754e-477d-8b45-a64a26575ef6",
+      "id": "5e8f5758-3eb1-415f-9c05-3900f35dd05c",
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "active",
-  "name": "81e6db34-80b5-436f-8d19-d1deba3185ab",
+  "name": "ea8ba1d4-a46d-44d3-92c4-103fb5b08ce7",
   "participant": [
     {
       "role": {
@@ -117,7 +117,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://patient.cit-organization-740.local/fhir/RelatedPerson/80469"
+        "reference": "https://patient.cit-organization-751.local/fhir/RelatedPerson/62111"
       }
     },
     {
@@ -130,7 +130,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://patient.cit-organization-740.local/fhir/Patient/63213"
+        "reference": "https://patient.cit-organization-751.local/fhir/Patient/81264"
       }
     },
     {
@@ -143,7 +143,7 @@ __Response__
         ]
       },
       "member": {
-        "reference": "https://organization.cit-organization-740.local/fhir/CareTeam/138"
+        "reference": "https://organization.cit-organization-751.local/fhir/CareTeam/138"
       }
     }
   ],
@@ -159,7 +159,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-740.local/fhir/Organization/139"
+      "reference": "https://organization.cit-organization-751.local/fhir/Organization/139"
     }
   ]
 }

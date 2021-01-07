@@ -24,18 +24,18 @@ __Body__:
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "90d0bf80-23cd-4835-8fc0-0f8ab9f1c569",
-        "name": "7d8070b0-a4a0-47d8-9e64-16669c12b33e",
+        "url": "391c64a7-aabc-443f-a81f-b2c83372194b",
+        "name": "57c17be9-96f9-4808-a6f2-8bb3b344797a",
         "status": "draft",
         "kind": "logical",
         "abstract": true,
-        "type": "31c334a7-df92-4dea-8bce-ff305e65357c",
+        "type": "f67effea-517f-450d-928f-74bfb6e0fb87",
         "snapshot": {
           "element": [
             {
-              "id": "31c334a7-df92-4dea-8bce-ff305e65357c",
-              "path": "31c334a7-df92-4dea-8bce-ff305e65357c",
-              "definition": "70b6ac22-2ceb-459b-bfde-eac3e06e4bf6",
+              "id": "f67effea-517f-450d-928f-74bfb6e0fb87",
+              "path": "f67effea-517f-450d-928f-74bfb6e0fb87",
+              "definition": "a165ce44-8d6b-484a-9af5-2bc160883e1c",
               "min": 0,
               "max": "1"
             }
