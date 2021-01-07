@@ -16,6 +16,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 #### Appointment (ehealth-appointment)
 - Added search parameter intended-audience
+- Added performing organization to appointments in order to support export of CDA's. Use is required when stating legal basis
+
+#### Video appointment (ehealth-videoappointment)
+- Added performing organization to appointments in order to support export of CDA's. Use is required when stating legal basis
 
 #### Group appointment (ehealth-group-appointment)
 - Initial version
