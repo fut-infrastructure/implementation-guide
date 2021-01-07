@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="plan"/>
    <status value="active"/>
-   <date value="2020-10-24T03:16:19+00:00"/>
+   <date value="2020-12-21T14:25:56+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="plan"/>
-      <version value="1.4.1"/>
+      <version value="1.5.0"/>
    </software>
    <implementation>
       <description value="eHealth plan service"/>
