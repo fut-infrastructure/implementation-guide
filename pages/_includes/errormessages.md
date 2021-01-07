@@ -158,6 +158,8 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `LIBRARY_EVALUATE_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
+- `LIBRARY_EVALUATE_LOGIC_RULE_INVALID_INPUT`: Error evaluating logic rule. Category: %s, Focus: %s, RuleDescription: %s
+
 - `LIBRARY_IDENTIFIER_UPDATE_RESTRICTED`: Validation error: attempt to update Library Identifiers list.
 
 - `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s. Number of search results: %s
