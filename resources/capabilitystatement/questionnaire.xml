@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="questionnaire"/>
    <status value="active"/>
-   <date value="2020-10-24T03:16:17+00:00"/>
+   <date value="2020-12-21T14:25:44+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="questionnaire"/>
-      <version value="1.5.6"/>
+      <version value="1.6.0"/>
    </software>
    <implementation>
       <description value="eHealth questionnaire service"/>
