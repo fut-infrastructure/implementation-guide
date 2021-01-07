@@ -2,7 +2,7 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 2021.1 (2021-01-12)
+## 2020.8 (2021-01-12)
 
 ### Code systems
 - Added `http://ehealth.sundhed.dk/cs/ehealth-usage-context-type`
