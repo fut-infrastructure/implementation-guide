@@ -15,7 +15,7 @@ function fetch_operation_definitions {
 		pipe_commands=" | sed 's|value=||g' | sed 's/\"//g'"
 		operations=$(eval ${find_values_command}${pipe_commands})
 		for operation in $operations; do
-			status_code=$(curl -k -H 'Content-Type: application/fhir+xml' -o /dev/null -sw '%{http_code}' ${operation});
+			status_code=$(curl -k -H 'Content-Type: application/fhir+xml' -H "Authorization: Bearer ${TOKEN}" -o /dev/null -sw '%{http_code}' ${operation});
 			if [ ${status_code} -eq 200 ]
 			then
 				filename=${operation##*/} #extract substring after last slash
@@ -24,7 +24,7 @@ function fetch_operation_definitions {
 				filename=${filename/--/-} #remove -
 				filename=${filename,,} #to lower case
 				echo "Fetching ${operation} and store as ${filename}"
-				curl -k -H "Content-Type: application/fhir+xml" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
+				curl -k -H "Content-Type: application/fhir+xml" -H "Authorization: Bearer ${TOKEN}" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
 			else
 				echo "Unable to find ${operation} - status code: ${status_code}"
 				exit 1
