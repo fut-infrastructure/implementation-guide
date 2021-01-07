@@ -1,4 +1,4 @@
-`PUT [base]/DocumentReference/115`
+`PUT [base]/DocumentReference/119`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "115",
+  "id": "119",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-23T11:07:44.674+00:00",
+    "lastUpdated": "2020-12-21T12:48:50.318+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -32,7 +32,7 @@ __Body__:
       }
     ]
   },
-  "indexed": "2020-10-23T11:07:44.649+00:00",
+  "indexed": "2020-12-21T12:48:50.272+00:00",
   "content": [
     {
       "attachment": {
@@ -47,10 +47,10 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "115",
+  "id": "119",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-23T11:07:47.476+00:00",
+    "lastUpdated": "2020-12-21T12:48:53.561+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -64,7 +64,7 @@ __Response__
       }
     ]
   },
-  "indexed": "2020-10-23T11:07:44.649+00:00",
+  "indexed": "2020-12-21T12:48:50.272+00:00",
   "content": [
     {
       "attachment": {

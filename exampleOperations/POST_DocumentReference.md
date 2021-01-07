@@ -28,7 +28,7 @@ __Body__:
       }
     ]
   },
-  "indexed": "2020-10-23T11:07:40.901+00:00",
+  "indexed": "2020-12-21T12:48:46.783+00:00",
   "content": [
     {
       "attachment": {
@@ -43,10 +43,10 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "110",
+  "id": "114",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-23T11:07:40.952+00:00",
+    "lastUpdated": "2020-12-21T12:48:46.867+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -60,7 +60,7 @@ __Response__
       }
     ]
   },
-  "indexed": "2020-10-23T11:07:40.901+00:00",
+  "indexed": "2020-12-21T12:48:46.783+00:00",
   "content": [
     {
       "attachment": {

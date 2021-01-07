@@ -1,4 +1,4 @@
-`PUT [base]/ProcedureRequest/1168`
+`PUT [base]/ProcedureRequest/1187`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "1168",
+  "id": "1187",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-22T12:27:12.329+00:00",
+    "lastUpdated": "2021-01-06T14:00:09.025+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -30,20 +30,69 @@ __Body__:
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-            "code": "noSharing",
-            "display": "No sharing"
+            "code": "TBD"
           }
         ]
       }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+      "extension": [
+        {
+          "url": "allowed",
+          "valueBoolean": true
+        },
+        {
+          "url": "situationQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                "code": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "url": "usageQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "deviceMeasuringQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "dataActuality",
+          "valueDuration": {
+            "value": 1272174293,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
     }
   ],
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1494.local/fhir/ActivityDefinition/60281"
+      "reference": "https://plan.cit-careplan-1525.local/fhir/ActivityDefinition/4088"
     }
   ],
   "status": "completed",
-  "intent": "option",
+  "intent": "filler-order",
   "code": {
     "coding": [
       {
@@ -51,13 +100,21 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "d9e1c62c-b8df-4e01-aa8e-ef2011443559"
+    "text": "6359c433-4a91-4e8e-98b7-580ca6c5d398"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1494.local/fhir/Patient/15081"
+    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/49116"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1494.local/fhir/EpisodeOfCare/1167"
+    "reference": "https://careplan.cit-careplan-1525.local/fhir/EpisodeOfCare/1186"
+  },
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2021-01-06T14:00:09+00:00",
+        "end": "2021-01-06T14:00:09+00:00"
+      }
+    }
   }
 }
 ```
@@ -66,10 +123,10 @@ __Response__
 ```json
 {
   "resourceType": "ProcedureRequest",
-  "id": "1168",
+  "id": "1187",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-22T12:27:14.605+00:00",
+    "lastUpdated": "2021-01-06T14:00:09.236+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -81,20 +138,69 @@ __Response__
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-            "code": "noSharing",
-            "display": "No sharing"
+            "code": "TBD"
           }
         ]
       }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+      "extension": [
+        {
+          "url": "allowed",
+          "valueBoolean": true
+        },
+        {
+          "url": "situationQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                "code": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "url": "usageQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "deviceMeasuringQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "dataActuality",
+          "valueDuration": {
+            "value": 1272174293,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
     }
   ],
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1494.local/fhir/ActivityDefinition/60281"
+      "reference": "https://plan.cit-careplan-1525.local/fhir/ActivityDefinition/4088"
     }
   ],
   "status": "completed",
-  "intent": "option",
+  "intent": "filler-order",
   "code": {
     "coding": [
       {
@@ -102,13 +208,21 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "d9e1c62c-b8df-4e01-aa8e-ef2011443559"
+    "text": "6359c433-4a91-4e8e-98b7-580ca6c5d398"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1494.local/fhir/Patient/15081"
+    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/49116"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1494.local/fhir/EpisodeOfCare/1167"
+    "reference": "https://careplan.cit-careplan-1525.local/fhir/EpisodeOfCare/1186"
+  },
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2021-01-06T14:00:09+00:00",
+        "end": "2021-01-06T14:00:09+00:00"
+      }
+    }
   }
 }
 ```

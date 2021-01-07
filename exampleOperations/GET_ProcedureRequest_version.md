@@ -18,7 +18,7 @@ __Response__
   "id": "1168",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-10-22T12:27:14.605+00:00",
+    "lastUpdated": "2021-01-06T14:00:02.110+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
     ]
@@ -39,7 +39,7 @@ __Response__
   ],
   "definition": [
     {
-      "reference": "https://plan.cit-careplan-1494.local/fhir/ActivityDefinition/60281"
+      "reference": "https://plan.cit-careplan-1525.local/fhir/ActivityDefinition/30836"
     }
   ],
   "status": "completed",
@@ -51,13 +51,13 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "d9e1c62c-b8df-4e01-aa8e-ef2011443559"
+    "text": "5e489df1-2b48-4c5e-b396-e40b36b85a60"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1494.local/fhir/Patient/15081"
+    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/27471"
   },
   "context": {
-    "reference": "https://careplan.cit-careplan-1494.local/fhir/EpisodeOfCare/1167"
+    "reference": "https://careplan.cit-careplan-1525.local/fhir/EpisodeOfCare/1167"
   }
 }
 ```

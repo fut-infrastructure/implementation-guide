@@ -1,4 +1,4 @@
-`POST [base]/DocumentReference/118/$validate`
+`POST [base]/DocumentReference/122/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "118",
+        "id": "122",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-10-23T11:07:50.623+00:00",
+          "lastUpdated": "2020-12-21T12:48:56.981+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -36,7 +36,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2020-10-23T11:07:50.602+00:00",
+        "indexed": "2020-12-21T12:48:56.921+00:00",
         "content": [
           {
             "attachment": {

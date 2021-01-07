@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjU3OWUwNjgtODVmZi00MDZmLThhMWItY2YwNjM0ZmI2YzdjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTAwZmQ2NDAtYjA3MS00MmJhLTk2ODQtMDc4ZDM3ZTMzOWM5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
@@ -55,17 +55,17 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1137.local/fhir/ProcedureRequest/98265"
+            "reference": "https://careplan.cit-measurement-1150.local/fhir/ProcedureRequest/25616"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "https://patient.cit-measurement-1137.local/fhir/Patient/83578"
+          "reference": "https://patient.cit-measurement-1150.local/fhir/Patient/27547"
         },
         "context": {
-          "reference": "https://careplan.cit-measurement-1137.local/fhir/EpisodeOfCare/18611"
+          "reference": "https://careplan.cit-measurement-1150.local/fhir/EpisodeOfCare/1216"
         },
-        "occurrenceDateTime": "2020-10-22T13:09:28+00:00",
+        "occurrenceDateTime": "2020-12-21T12:38:25+00:00",
         "content": {
           "language": "en"
         }

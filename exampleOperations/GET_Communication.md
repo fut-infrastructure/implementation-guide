@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTg5ZWRhYzktNzI2OS00MTg0LWEwN2YtN2MyMmVlMTg3OTg0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzVlNTY0MzMtYWY5Ny00MGMyLTg1MWMtZTA2ZDQyYjJlYjkzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
@@ -18,7 +18,7 @@ __Response__
   "id": "2",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-22T13:08:29.536+00:00",
+    "lastUpdated": "2020-12-21T12:37:25.409+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam",
       "valueReference": {
-        "reference": "https://organization.cit-measurement-1137.local/fhir/CareTeam/98107"
+        "reference": "https://organization.cit-measurement-1150.local/fhir/CareTeam/27020"
       }
     },
     {
@@ -54,15 +54,15 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-1137.local/fhir/Patient/51966"
+    "reference": "https://patient.cit-measurement-1150.local/fhir/Patient/19973"
   },
   "topic": [
     {
-      "reference": "https://measurement.cit-measurement-1137.local/fhir/Observation/1"
+      "reference": "https://measurement.cit-measurement-1150.local/fhir/Observation/1"
     }
   ],
   "context": {
-    "reference": "https://careplan.cit-measurement-1137.local/fhir/EpisodeOfCare/62396"
+    "reference": "https://careplan.cit-measurement-1150.local/fhir/EpisodeOfCare/83093"
   }
 }
 ```

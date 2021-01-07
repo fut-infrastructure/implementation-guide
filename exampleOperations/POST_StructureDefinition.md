@@ -19,19 +19,19 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "82c81686-4213-4b07-b04e-cdf102221abe",
-  "version": "14b3cbf7-60d1-4289-a121-a0eb06d2bf5f",
-  "name": "c15a2f3e-18b0-443a-9bcc-dc8638c08ae3",
+  "url": "747dc389-94cf-4a40-86b8-f4a2a38eceb5",
+  "version": "99a4bebe-3a56-4203-ac3b-e4baffd85917",
+  "name": "d14d872b-c4a0-4fa5-8f40-73c9f33a9523",
   "status": "draft",
   "kind": "logical",
   "abstract": true,
-  "type": "b46e9930-530e-4fb5-8939-f79a5746090f",
+  "type": "c5f6a502-82cc-4a90-a54c-331f672abda3",
   "snapshot": {
     "element": [
       {
-        "id": "b46e9930-530e-4fb5-8939-f79a5746090f",
-        "path": "b46e9930-530e-4fb5-8939-f79a5746090f",
-        "definition": "f9a843fc-9b0c-42a0-9cf6-b93f573c0816",
+        "id": "c5f6a502-82cc-4a90-a54c-331f672abda3",
+        "path": "c5f6a502-82cc-4a90-a54c-331f672abda3",
+        "definition": "77d4acd9-14f6-416b-9e97-b8e3f520a52b",
         "min": 0,
         "max": "1"
       }
@@ -47,24 +47,24 @@ __Response__
   "id": "15",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-10-23T11:31:30.467+00:00",
+    "lastUpdated": "2020-12-21T12:51:21.608+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "82c81686-4213-4b07-b04e-cdf102221abe",
-  "version": "14b3cbf7-60d1-4289-a121-a0eb06d2bf5f",
-  "name": "c15a2f3e-18b0-443a-9bcc-dc8638c08ae3",
+  "url": "747dc389-94cf-4a40-86b8-f4a2a38eceb5",
+  "version": "99a4bebe-3a56-4203-ac3b-e4baffd85917",
+  "name": "d14d872b-c4a0-4fa5-8f40-73c9f33a9523",
   "status": "draft",
   "kind": "logical",
   "abstract": true,
-  "type": "b46e9930-530e-4fb5-8939-f79a5746090f",
+  "type": "c5f6a502-82cc-4a90-a54c-331f672abda3",
   "snapshot": {
     "element": [
       {
-        "id": "b46e9930-530e-4fb5-8939-f79a5746090f",
-        "path": "b46e9930-530e-4fb5-8939-f79a5746090f",
-        "definition": "f9a843fc-9b0c-42a0-9cf6-b93f573c0816",
+        "id": "c5f6a502-82cc-4a90-a54c-331f672abda3",
+        "path": "c5f6a502-82cc-4a90-a54c-331f672abda3",
+        "definition": "77d4acd9-14f6-416b-9e97-b8e3f520a52b",
         "min": 0,
         "max": "1"
       }
