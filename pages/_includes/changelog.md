@@ -2,13 +2,8 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
- 
-### General changes
- 
-### Custom operations
-#### System operations
-#### Instance operations
+## 2021.1 (2021-01-12)
+
 ### Code systems
 - Added `http://ehealth.sundhed.dk/cs/ehealth-usage-context-type`
 ### ValueSets
@@ -16,7 +11,29 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Expanded `http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes` with `http://ehealth.sundhed.dk/vs/observation-codes`
 ### ConceptMaps
 - Added `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
+
 ### Resource/profile changes
+
+#### Appointment (ehealth-appointment)
+- Added search parameter intended-audience
+
+#### Group appointment (ehealth-group-appointment)
+- Initial version
+
+#### Group video appointment (ehealth-group-videoappointment)
+- Initial version
+
+#### Creator (ehealth-creator)
+- Initial version
+
+#### Assigning careteam (ehealth-assigning-careteam)
+- Initial version
+
+#### Registration deadline (ehealth-registration-deadline)
+- Initial version
+
+#### Min participants (ehealth-min-participants)
+- Initial version
 
 #### Library (eHealth-library)
 - Changed valueset binding for useContext to http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
@@ -30,7 +47,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Resource/profile changes
 - Added extension `OverviewUsageMode`
-- Made responsible mandantory on video appointments
+
+#### Appointments (ehealth-appointment)
+- Removed organization as an option for being listed as responsible on all appointments
+
+#### Video appointments (ehealth-videoappointment)
+- Made responsible mandatory on video appointments
 - Removed organization as an option for being listed as responsible on all appointments
 
 #### Questionnaire
