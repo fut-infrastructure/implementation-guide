@@ -2,6 +2,19 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+ 
+### General changes
+ 
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Added ehealth-goal profile. Used to specify reference base values for relative reference ranges.
+
 ## 2020.8 (2021-01-12)
 
 ### Code systems
