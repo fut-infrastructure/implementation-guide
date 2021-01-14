@@ -3,7 +3,7 @@
   <id value="ehealth-goal" />
   <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal" />
   <name value="ehealth-goal" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="3.0.2" />
   <mapping>
     <identity value="v2" />

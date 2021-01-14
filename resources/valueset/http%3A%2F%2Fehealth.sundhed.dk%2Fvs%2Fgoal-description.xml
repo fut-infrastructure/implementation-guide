@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
    <id value="ehealth-goal-description"/>
    <url value="http://ehealth.sundhed.dk/vs/goal-description"/>
-   <version value="0.6.0"/>
+   <version value="2021-01-13T00:00:00+00:00"/>
    <name value="GoalDescription"/>
    <title value="Goal Description"/>
    <status value="active"/>
