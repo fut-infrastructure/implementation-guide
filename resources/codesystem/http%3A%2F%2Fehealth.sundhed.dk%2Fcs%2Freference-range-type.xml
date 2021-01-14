@@ -36,4 +36,22 @@
          <valueDateTime value="2020-02-27"/>
       </property>
    </concept>
+   <concept>
+      <code value="RELRAL"/>
+      <display value="Terapeutic relative reference range for RED alarm"/>
+      <definition value="Terapeutic relative reference range for RED alarm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Terapeutiske relative grænseværdier for RØD alarm"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="RELGAL"/>
+      <display value="Terapeutic relative reference range for YELLOW alarm"/>
+      <definition value="Terapeutic relative reference range for YELLOW alarm"/>
+      <designation>
+         <language value="da"/>
+         <value value="Terapeutiske relative grænseværdier for GUL alarm"/>
+      </designation>
+   </concept>
 </CodeSystem>

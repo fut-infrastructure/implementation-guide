@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="ehealth-goal-description"/>
+   <url value="http://ehealth.sundhed.dk/vs/goal-description"/>
+   <version value="0.6.0"/>
+   <name value="GoalDescription"/>
+   <title value="Goal Description"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2021-01-13T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <name value="ehealth.sundhed.dk"/>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Value set for goal description."/>
+   <compose>
+      <include>
+         <system value="http://ehealth.sundhed.dk/cs/goal-description"/>
+      </include>
+   </compose>
+</ValueSet>

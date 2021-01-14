@@ -10,7 +10,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added relative reference values to http://ehealth.sundhed.dk/cs/reference-range-type
+- Added new code system: http://ehealth.sundhed.dk/cs/goal-description
 ### ValueSets
+- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-description
+- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-target-measure
 ### ConceptMaps
 ### Resource/profile changes
 - Added ehealth-goal profile. Used to specify reference base values for relative reference ranges.
