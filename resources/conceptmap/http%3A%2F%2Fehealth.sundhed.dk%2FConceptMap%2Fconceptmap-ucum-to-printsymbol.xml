@@ -123,10 +123,10 @@
         </element>
         <element>
             <code value="mg/L"/>
-            <display value="milligram per Liter"/>
+            <display value="milligram per liter"/>
             <target>
                 <code value="mg/L"/>
-                <display value="milligram per Liter"/>
+                <display value="milligram per liter"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
