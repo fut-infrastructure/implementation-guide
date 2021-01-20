@@ -90,4 +90,28 @@
          <value value="1/ 30sek"/>
       </designation>
    </concept>
+   <concept>
+      <code value="1/min"/>
+      <display value="one per minute"/>
+      <designation>
+         <language value="da"/>
+         <value value="1/min"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="cel"/>
+      <display value="degree Celcius"/>
+      <designation>
+         <language value="da"/>
+         <value value="°C"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="mg/L"/>
+      <display value="milligram per liter"/>
+      <designation>
+         <language value="da"/>
+         <value value="mg/L"/>
+      </designation>
+   </concept>
 </CodeSystem>
