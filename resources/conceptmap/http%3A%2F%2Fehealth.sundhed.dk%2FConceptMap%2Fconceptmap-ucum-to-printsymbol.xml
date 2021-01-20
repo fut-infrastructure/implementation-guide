@@ -134,6 +134,12 @@
         <element>
             <code value="/min"/>
             <display value="per minute"/>
+            <target>
+                <code value="/min"/>
+                <display value="per minute"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
         </element>
     </group>
     <group>
