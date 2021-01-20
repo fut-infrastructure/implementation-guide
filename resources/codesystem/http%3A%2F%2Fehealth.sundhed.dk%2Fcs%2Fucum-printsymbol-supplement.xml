@@ -99,7 +99,7 @@
       </designation>
    </concept>
    <concept>
-      <code value="cel"/>
+      <code value="Cel"/>
       <display value="degree Celcius"/>
       <designation>
          <language value="da"/>

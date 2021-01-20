@@ -111,6 +111,30 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+        <element>
+            <code value="Cel"/>
+            <display value="degree Celsius"/>
+            <target>
+                <code value="Cel"/>
+                <display value="degree Celsius"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="mg/L"/>
+            <display value="milligram per Liter"/>
+            <target>
+                <code value="mg/L"/>
+                <display value="milligram per Liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="/min"/>
+            <display value="per minute"/>
+        </element>
     </group>
     <group>
         <source value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
