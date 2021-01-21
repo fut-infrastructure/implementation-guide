@@ -20,7 +20,7 @@
    </contact>
    <description value="MedCom Message Codes."/>
    <caseSensitive value="true"/>
-   <content value="fragment"/>
+   <content value="complete"/>
    <concept>
       <code value="RAL"/>
       <display value="Terapeutiske grænseværdier for RØD alarm"/>
