@@ -135,4 +135,13 @@
          <value value="Mangler besvarelse af spørgsmål påkrævet for automatisk behandling"/>
       </designation>
    </concept>
+   <concept>
+      <code value="ExpectedDelivery"/>
+      <display value="Delivery is expected"/>
+      <definition value="Delivery is expected"/>
+      <designation>
+         <language value="da"/>
+         <value value="Levering er forventet"/>
+      </designation>
+   </concept>
 </CodeSystem>
