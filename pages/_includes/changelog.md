@@ -10,11 +10,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
-- Added relative reference values to http://ehealth.sundhed.dk/cs/reference-range-type
-- Added new code system: http://ehealth.sundhed.dk/cs/goal-description
+- Changed content value from 'fragment' to 'complete' in `urn:ietf:bcp:47`
+- Added relative reference values to `http://ehealth.sundhed.dk/cs/reference-range-type`
+- Added new code system: `http://ehealth.sundhed.dk/cs/goal-description`
 ### ValueSets
-- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-description
-- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-target-measure
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-description`
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-target-measure`
 ### ConceptMaps
 ### Resource/profile changes
 - Added ehealth-goal profile. Used to specify reference base values for relative reference ranges.
@@ -57,7 +58,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Initial version
 
 #### Library (eHealth-library)
-- Changed valueset binding for useContext to http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
+- Changed valueset binding for useContext to `http://ehealth.sundhed.dk/vs/ehealth-usage-context-type`
 
 ## 2020.7 (2020-10-28)
 
