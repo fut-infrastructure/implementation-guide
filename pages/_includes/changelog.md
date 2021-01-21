@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added concept 'ExpectedDelivery' to `http://ehealth.sundhed.dk/cs/task-category`
 - Added relative reference values to http://ehealth.sundhed.dk/cs/reference-range-type
 - Added new code system: http://ehealth.sundhed.dk/cs/goal-description
 ### ValueSets
