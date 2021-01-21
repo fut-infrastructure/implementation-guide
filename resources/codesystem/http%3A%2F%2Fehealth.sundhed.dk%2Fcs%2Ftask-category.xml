@@ -141,7 +141,7 @@
       <definition value="Delivery expected"/>
       <designation>
          <language value="da"/>
-         <value value="Forventet Levering"/>
+         <value value="Forventet levering"/>
       </designation>
    </concept>
 </CodeSystem>
