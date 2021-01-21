@@ -20,7 +20,7 @@
       </telecom>
    </contact>
    <caseSensitive value="true"/>
-   <content value="fragment"/>
+   <content value="complete"/>
    <concept>
       <code value="A"/>
       <display value="Administrative forhold"/>
