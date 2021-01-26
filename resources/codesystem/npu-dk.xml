@@ -1,0 +1,148 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="1.2.208.176.2.1--20190829"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>This code system urn:oid:1.2.208.176.2.1 defines the following codes:</p>
+      <table class="codes">
+        <tr>
+          <td style="white-space:nowrap">
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">NPU03011
+            <a name="1.2.208.176.2.1--20190829-NPU03011"></a>
+          </td>
+          <td>Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?</td>
+          <td>Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">NPU27281
+            <a name="1.2.208.176.2.1--20190829-NPU27281"></a>
+          </td>
+          <td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td>
+          <td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">NPU03804
+            <a name="1.2.208.176.2.1--20190829-NPU03804"></a>
+          </td>
+          <td>Pt—Legeme; masse = ? kg</td>
+          <td>Pt—Legeme; masse = ? kg</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">NPU21692
+            <a name="1.2.208.176.2.1--20190829-NPU21692"></a>
+          </td>
+          <td>Hjerte—Systole; frekv. = ? × 1/min</td>
+          <td>Hjerte—Systole; frekv. = ? × 1/min</td>
+        </tr>
+        <tr>
+          <td style="white-space:nowrap">NPU03794
+            <a name="1.2.208.176.2.1--20190829-NPU03794"></a>
+          </td>
+          <td>Legeme højde;Pt</td>
+          <td>Pt—Legeme; højde = ? m</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <url value="urn:oid:1.2.208.176.2.1"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.2.208.176.2.1"/>
+  </identifier>
+  <version value="2020-02-27T11:56:23"/>
+  <name value="npu-dk"/>
+  <title value="NPU DK"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-12-18T23:00:00+00:00"/>
+  <publisher value="Sundhedsdatastyrelsen"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="labterm@sundhedsdata.dk"/>
+    </telecom>
+  </contact>
+  <description
+      value="It is the translation into Danish of the International NPU Terminology. The NPU terminology defines types of clinical laboratory results expressed as patient properties, with measurement units where relevant, and with individual identifiers. The NPU terminology is owned by: the International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC). The Danish Health Data Authority (see OID {iso(1) member-body(2) dk(208) nsi(176)}) serves as the international repository for the international version. Child OIDs may be registered by the Danish Health Data Authority on decision by the NPU Terminology Steering Committee. OIDs for the national versions are registered by the National Release Centers."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="NPU03011"/>
+    <display
+        value="Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?"/>
+    <definition
+        value="Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?"/>
+    <designation>
+      <language value="da"></language>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"></system>
+        <code value="consumer"></code>
+      </use>
+      <value value="Iltmætning"></value>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NPU27281"/>
+    <display
+        value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+    <definition
+        value="Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"/>
+    <designation>
+      <language value="da"></language>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"></system>
+        <code value="consumer"></code>
+      </use>
+      <value value="BMI"></value>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NPU03804"/>
+    <display value="Pt—Legeme; masse = ? kg"/>
+    <definition value="Pt—Legeme; masse = ? kg"/>
+    <designation>
+      <language value="da"></language>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"></system>
+        <code value="consumer"></code>
+      </use>
+      <value value="Vægt"></value>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NPU21692"/>
+    <display value="Hjerte—Systole; frekv. = ? × 1/min"/>
+    <definition value="Hjerte—Systole; frekv. = ? × 1/min"/>
+    <designation>
+      <language value="da"></language>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"></system>
+        <code value="consumer"></code>
+      </use>
+      <value value="Puls"></value>
+    </designation>
+  </concept>
+  <concept>
+    <code value="NPU03794"/>
+    <display value="Legeme højde;Pt"/>
+    <definition value="Pt—Legeme; højde = ? m"/>
+    <designation>
+      <language value="da"></language>
+      <use>
+        <system value="http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"></system>
+        <code value="consumer"></code>
+      </use>
+      <value value="Højde"></value>
+    </designation>
+  </concept>
+</CodeSystem>

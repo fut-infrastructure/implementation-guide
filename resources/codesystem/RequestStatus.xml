@@ -1,0 +1,131 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="request-status"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="3"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/request-status"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.103"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="RequestStatus"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Codes identifying the stage lifecycle stage of a request"></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/request-status"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="draft"></code>
+      <display value="Draft"></display>
+      <definition value="The request has been created but is not yet complete or ready for action"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Udkast"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="The request is ready to be acted upon"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="suspended"></code>
+      <display value="Suspended"></display>
+      <definition value="The authorization/request to act has been temporarily withdrawn but is expected to resume in the future"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Suspenderet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="cancelled"></code>
+      <display value="Cancelled"></display>
+      <definition value="The authorization/request to act has been terminated prior to the full completion of the intended actions.  No further activity should occur."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Annulleret"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="completed"></code>
+      <display value="Completed"></display>
+      <definition value="Activity against the request has been sufficiently completed to the satisfaction of the requester"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Afsluttet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered in Error"></display>
+      <definition value="This electronic record should never have existed, though it is possible that real-world decisions were based on it.  (If real-world activity has occurred, the status should be &quot;cancelled&quot; rather than &quot;entered-in-error&quot;.)"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="unknown"></code>
+      <display value="Unknown"></display>
+      <definition value="The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for &quot;other&quot; . One of the listed statuses is presumed to apply,  but the system creating the request doesn't know."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Ukendt"></value>
+      </designation>
+   </concept>
+</CodeSystem>

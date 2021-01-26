@@ -1,0 +1,118 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="consent-state-codes"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="1"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="cbcc"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/consent-state-codes"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.740"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="ConsentState"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Indicates the state of the consent"></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/consent-state-codes"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="draft"></code>
+      <display value="Pending"></display>
+      <definition value="The consent is in development or awaiting use but is not yet intended to be acted upon."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Under udarbejdelse"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="proposed"></code>
+      <display value="Proposed"></display>
+      <definition value="The consent has been proposed but not yet agreed to by all parties. The negotiation stage."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Forslag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="The consent is to be followed and enforced."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="rejected"></code>
+      <display value="Rejected"></display>
+      <definition value="The consent has been rejected by one or more of the parties."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Afvist"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="inactive"></code>
+      <display value="Inactive"></display>
+      <definition value="The consent is terminated or replaced."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Inaktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered in Error"></display>
+      <definition value="The consent was created wrongly (e.g. wrong patient) and should be ignored"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+</CodeSystem>

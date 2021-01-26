@@ -1,0 +1,131 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="care-plan-status"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="2"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/care-plan-status"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.131"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="CarePlanStatus"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record."></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/care-plan-status"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="draft"></code>
+      <display value="Pending"></display>
+      <definition value="The plan is in development or awaiting use but is not yet intended to be acted upon."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Under udarbejdelse"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="The plan is intended to be followed and used as part of patient care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="suspended"></code>
+      <display value="Suspended"></display>
+      <definition value="The plan has been temporarily stopped but is expected to resume in the future."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Suspenderet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="completed"></code>
+      <display value="Completed"></display>
+      <definition value="The plan is no longer in use and is not expected to be followed or used in patient care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Afsluttet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered In Error"></display>
+      <definition value="The plan was entered in error and voided."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="cancelled"></code>
+      <display value="Cancelled"></display>
+      <definition value="The plan has been terminated prior to reaching completion (though it may have been replaced by a new plan)."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Annulleret"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="unknown"></code>
+      <display value="Unknown"></display>
+      <definition value="The authoring system doesn't know the current state of the care plan."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Ukendt"></value>
+      </designation>
+   </concept>
+</CodeSystem>
