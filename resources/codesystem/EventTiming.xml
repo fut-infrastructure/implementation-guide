@@ -1,0 +1,105 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="event-timing"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="0"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="fhir"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/event-timing"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.69"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="EventTiming"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Real world event relating to the schedule."></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/event-timing"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="MORN"></code>
+      <display value="Morning"></display>
+      <definition value="event occurs during the morning"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Morgen"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="AFT"></code>
+      <display value="Afternoon"></display>
+      <definition value="event occurs during the afternoon"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Eftermiddag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="EVE"></code>
+      <display value="Evening"></display>
+      <definition value="event occurs during the evening"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aften"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="NIGHT"></code>
+      <display value="Night"></display>
+      <definition value="event occurs during the night"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Nat"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="PHS"></code>
+      <display value="After Sleep"></display>
+      <definition value="event occurs [offset] after subject goes to sleep"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Efter søvnindtræfning"></value>
+      </designation>
+   </concept>
+</CodeSystem>

@@ -1,0 +1,92 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="address-use"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="0"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="fhir"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/address-use"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.61"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="AddressUse"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="The use of an address"></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/address-use"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="home"></code>
+      <display value="Home"></display>
+      <definition value="A communication address at a home."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Hjem"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="work"></code>
+      <display value="Work"></display>
+      <definition value="An office address. First choice for business related contacts during business hours."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Arbejde"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="temp"></code>
+      <display value="Temporary"></display>
+      <definition value="A temporary address. The period can provide more detailed information."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Midlertidig"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="old"></code>
+      <display value="Old / Incorrect"></display>
+      <definition value="This address is no longer in use (or was never correct, but retained for records)."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Gammel / forkert"></value>
+      </designation>
+   </concept>
+</CodeSystem>
