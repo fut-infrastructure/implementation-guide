@@ -1,0 +1,141 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="v3-TimingEvent"></id>
+   <meta>
+      <lastUpdated value="2016-11-11T00:00:00.000+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="External"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="0"></valueInteger>
+   </extension>
+   <url value="http://hl7.org/fhir/v3/TimingEvent"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.5.139"></value>
+   </identifier>
+   <version value="2016-11-11"></version>
+   <name value="v3 Code System TimingEvent"></name>
+   <status value="active"></status>
+   <experimental value="false"></experimental>
+   <date value="2016-11-11T00:00:00+11:00"></date>
+   <publisher value="HL7, Inc"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="**** MISSING DEFINITIONS ****"></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/v3-TimingEvent"></valueSet>
+   <hierarchyMeaning value="is-a"></hierarchyMeaning>
+   <content value="complete"></content>
+   <concept>
+      <code value="AC"></code>
+      <display value="AC"></display>
+      <definition value="before meal (from lat. ante cibus)"></definition>
+   </concept>
+   <concept>
+      <code value="ACD"></code>
+      <display value="ACD"></display>
+      <definition value="before lunch (from lat. ante cibus diurnus)"></definition>
+   </concept>
+   <concept>
+      <code value="ACM"></code>
+      <display value="ACM"></display>
+      <definition value="before breakfast (from lat. ante cibus matutinus)"></definition>
+   </concept>
+   <concept>
+      <code value="ACV"></code>
+      <display value="ACV"></display>
+      <definition value="before dinner (from lat. ante cibus vespertinus)"></definition>
+   </concept>
+   <concept>
+      <code value="C"></code>
+      <display value="C"></display>
+      <definition value="Description: meal (from lat. ante cibus)"></definition>
+      <concept>
+         <code value="CD"></code>
+         <display value="CD"></display>
+         <definition value="Description: lunch (from lat. cibus diurnus)"></definition>
+      </concept>
+      <concept>
+         <code value="CM"></code>
+         <display value="CM"></display>
+         <definition value="Description: breakfast (from lat. cibus matutinus)"></definition>
+      </concept>
+      <concept>
+         <code value="CV"></code>
+         <display value="CV"></display>
+         <definition value="Description: dinner (from lat. cibus vespertinus)"></definition>
+      </concept>
+   </concept>
+   <concept>
+      <code value="HS"></code>
+      <display value="HS"></display>
+      <definition value="Description: Prior to beginning a regular period of extended sleep (this would exclude naps).  Note that this might occur at different times of day depending on a person's regular sleep schedule."></definition>
+   </concept>
+   <concept>
+      <code value="IC"></code>
+      <display value="IC"></display>
+      <definition value="between meals (from lat. inter cibus)"></definition>
+   </concept>
+   <concept>
+      <code value="ICD"></code>
+      <display value="ICD"></display>
+      <definition value="between lunch and dinner"></definition>
+   </concept>
+   <concept>
+      <code value="ICM"></code>
+      <display value="ICM"></display>
+      <definition value="between breakfast and lunch"></definition>
+   </concept>
+   <concept>
+      <code value="ICV"></code>
+      <display value="ICV"></display>
+      <definition value="between dinner and the hour of sleep"></definition>
+   </concept>
+   <concept>
+      <code value="PC"></code>
+      <display value="PC"></display>
+      <definition value="after meal (from lat. post cibus)"></definition>
+   </concept>
+   <concept>
+      <code value="PCD"></code>
+      <display value="PCD"></display>
+      <definition value="after lunch (from lat. post cibus diurnus)"></definition>
+   </concept>
+   <concept>
+      <code value="PCM"></code>
+      <display value="PCM"></display>
+      <definition value="after breakfast (from lat. post cibus matutinus)"></definition>
+   </concept>
+   <concept>
+      <code value="PCV"></code>
+      <display value="PCV"></display>
+      <definition value="after dinner (from lat. post cibus vespertinus)"></definition>
+   </concept>
+   <concept>
+      <code value="WAKE"></code>
+      <display value="WAKE"></display>
+      <definition value="Description: Upon waking up from a regular period of sleep, in order to start regular activities (this would exclude waking up from a nap or temporarily waking up during a period of sleep)
+
+                        
+                           Usage Notes: e.g.
+
+                        Take pulse rate on waking in management of thyrotoxicosis.
+
+                        Take BP on waking in management of hypertension
+
+                        Take basal body temperature on waking in establishing date of ovulation"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Opvågning"></value>
+      </designation>
+   </concept>
+</CodeSystem>

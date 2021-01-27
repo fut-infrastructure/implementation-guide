@@ -1,0 +1,105 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="care-team-status"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="2"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pc"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/care-team-status"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.145"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="CareTeamStatus"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Indicates the status of the care team."></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/care-team-status"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="proposed"></code>
+      <display value="Proposed"></display>
+      <definition value="The care team has been drafted and proposed, but not yet participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Forslag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="active"></code>
+      <display value="Active"></display>
+      <definition value="The care team is currently participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Aktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="suspended"></code>
+      <display value="Suspended"></display>
+      <definition value="The care team is temporarily on hold or suspended and not participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Suspenderet"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="inactive"></code>
+      <display value="Inactive"></display>
+      <definition value="The care team was, but is no longer, participating in the coordination and delivery of care."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Inaktiv"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="entered-in-error"></code>
+      <display value="Entered In Error"></display>
+      <definition value="The care team should have never existed."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fejlindtastning"></value>
+      </designation>
+   </concept>
+</CodeSystem>

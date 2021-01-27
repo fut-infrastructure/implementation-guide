@@ -70,6 +70,26 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+        <element>
+            <code value="NPU08676"/>
+            <display value="Pt—Legeme; temp. = ? °C"/>
+            <target>
+                <code value="Cel"/>
+                <display value="degree Celcius"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU19748"/>
+            <display value="P—C-reaktivt protein; massek. = ? mg/L"/>
+            <target>
+                <code value="mg/L"/>
+                <display value="milligram per liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
     </group>
     <group>
         <source value="urn:oid:1.2.208.184.100.8"/>
@@ -138,8 +158,8 @@
             <code value="MCS88023"/>
             <display value="FEV1 af forventet værdi;Pt(KOL)"/>
             <target>
-                <code value="{ratio}"/>
-                <display value="ratio"/>
+                <code value="%"/>
+                <display value="percent"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>

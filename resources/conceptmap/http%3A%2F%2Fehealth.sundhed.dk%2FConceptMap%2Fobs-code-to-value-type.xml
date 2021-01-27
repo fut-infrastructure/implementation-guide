@@ -71,6 +71,26 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+        <element>
+            <code value="NPU08676"/>
+            <display value="Pt—Legeme; temp. = ? °C"/>
+            <target>
+                <code value="decimal"/>
+                <display value="decimal"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="NPU19748"/>
+            <display value="P—C-reaktivt protein; massek. = ? mg/L"/>
+            <target>
+                <code value="integer"/>
+                <display value="integer"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
     </group>
     <group>
         <source value="urn:oid:1.2.208.184.100.8"/>
