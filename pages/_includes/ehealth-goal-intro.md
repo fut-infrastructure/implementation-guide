@@ -10,5 +10,5 @@ A Goal must have a startDate and optionally a target.dueDate or dueDuration to s
 
 Goal.addresses must reference exactly one procedureRequest containing the reference ranges that the Goal supports. 
  
-Goal.target.measure msut contain an observation code indicating which type of observation the Goal is intended for. 
+Goal.target.measure must contain an observation code indicating which type of observation the Goal is intended for. 
 
