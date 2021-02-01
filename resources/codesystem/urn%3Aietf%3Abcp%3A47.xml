@@ -16,7 +16,7 @@
    </contact>
    <description value="Common Codes from BCP-47 (http://tools.ietf.org/html/bcp47)"/>
    <caseSensitive value="true"/>
-   <content value="fragment"/>
+   <content value="complete"/>
    <concept>
       <code value="ar"/>
       <display value="Arabic"/>

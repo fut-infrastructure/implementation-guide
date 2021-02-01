@@ -10,12 +10,27 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
-- Added relative reference values to http://ehealth.sundhed.dk/cs/reference-range-type
-- Added new code system: http://ehealth.sundhed.dk/cs/goal-description
+- Added new code `mg/L` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+- Added new code `Cel` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+- Added new code `1/min` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
+- Added concept 'ExpectedDelivery' to `http://ehealth.sundhed.dk/cs/task-category`
+- Changed content value from 'fragment' to 'complete' in `urn:oid:1.2.208.184.100.1`
+- Changed content value from 'fragment' to 'complete' in `urn:oid:1.2.208.176.2.4`
+- Changed content value from 'fragment' to 'complete' in `urn:ietf:bcp:47`
+- Added relative reference values to `http://ehealth.sundhed.dk/cs/reference-range-type`
+- Added new code system: `http://ehealth.sundhed.dk/cs/goal-description`
 ### ValueSets
-- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-description
-- Added new valueSet: http://ehealth.sundhed.dk/vs/goal-target-measure
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-description`
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-target-measure`
 ### ConceptMaps
+- Added mapping for code `mg/L` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+- Added mapping for code `Cel` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+- Added mapping for code `/min` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
+- Added mapping for code `NPU08676` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Added mapping for code `NPU19748` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Changed mapping for code `MCS88023` in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
+- Added mapping for code `NPU08676` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
+- Added mapping for code `NPU19748` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
 ### Resource/profile changes
 - Added ehealth-goal profile. Used to specify reference base values for relative reference ranges.
 
@@ -57,7 +72,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Initial version
 
 #### Library (eHealth-library)
-- Changed valueset binding for useContext to http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
+- Changed valueset binding for useContext to `http://ehealth.sundhed.dk/vs/ehealth-usage-context-type`
 
 ## 2020.7 (2020-10-28)
 

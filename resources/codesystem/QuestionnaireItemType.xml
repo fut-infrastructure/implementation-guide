@@ -1,0 +1,273 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="item-type"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="3"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="fhir"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/item-type"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.438"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="QuestionnaireItemType"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="Distinguishes groups from questions and display text and indicates data type for questions"></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/item-type"></valueSet>
+   <content value="complete"></content>
+   <property>
+      <code value="notSelectable"></code>
+      <uri value="http://hl7.org/fhir/concept-properties#notSelectable"></uri>
+      <description value="Indicates that the code is abstract - only intended to be used as a selector for other concepts"></description>
+      <type value="boolean"></type>
+   </property>
+   <concept>
+      <code value="group"></code>
+      <display value="Group"></display>
+      <definition value="An item with no direct answer but should have at least one child item."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Gruppe"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="display"></code>
+      <display value="Display"></display>
+      <definition value="Text for display that will not capture an answer or have child items."></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Visning"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="question"></code>
+      <display value="Question"></display>
+      <definition value="An item that defines a specific answer to be captured, and may have child items.
+(the answer provided in the QuestionnaireResponse should be of the defined datatype)"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Spørgsmål"></value>
+      </designation>
+      <property>
+         <code value="notSelectable"></code>
+         <valueBoolean value="true"></valueBoolean>
+      </property>
+      <concept>
+         <code value="boolean"></code>
+         <display value="Boolean"></display>
+         <definition value="Question with a yes/no answer (valueBoolean)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Boolsk"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="decimal"></code>
+         <display value="Decimal"></display>
+         <definition value="Question with is a real number answer (valueDecimal)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Decimal"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="integer"></code>
+         <display value="Integer"></display>
+         <definition value="Question with an integer answer (valueInteger)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Heltal"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="date"></code>
+         <display value="Date"></display>
+         <definition value="Question with a date answer (valueDate)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Dato"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="dateTime"></code>
+         <display value="Date Time"></display>
+         <definition value="Question with a date and time answer (valueDateTime)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Dato &amp; tidspunkt"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="time"></code>
+         <display value="Time"></display>
+         <definition value="Question with a time (hour:minute:second) answer independent of date. (valueTime)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Tidspunkt"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="string"></code>
+         <display value="String"></display>
+         <definition value="Question with a short (few words to short sentence) free-text entry answer (valueString)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Tekststreng"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="text"></code>
+         <display value="Text"></display>
+         <definition value="Question with a long (potentially multi-paragraph) free-text entry answer (valueString)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Fritekst"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="url"></code>
+         <display value="Url"></display>
+         <definition value="Question with a URL (website, FTP site, etc.) answer (valueUri)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="URL"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="choice"></code>
+         <display value="Choice"></display>
+         <definition value="Question with a Coding drawn from a list of options (specified in either the option property, or via the valueset referenced in the options property) as an answer (valueCoding)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Valg"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="open-choice"></code>
+         <display value="Open Choice"></display>
+         <definition value="Answer is a Coding drawn from a list of options (as with the choice type) or a free-text entry in a string (valueCoding or valueString)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Åbent valg"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="attachment"></code>
+         <display value="Attachment"></display>
+         <definition value="Question with binary content such as a image, PDF, etc. as an answer (valueAttachment)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Vedhæftet fil"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="reference"></code>
+         <display value="Reference"></display>
+         <definition value="Question with a reference to another resource (practitioner, organization, etc.) as an answer (valueReference)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Reference"></value>
+         </designation>
+      </concept>
+      <concept>
+         <code value="quantity"></code>
+         <display value="Quantity"></display>
+         <definition value="Question with a combination of a numeric value and unit, potentially with a comparator (&lt;, &gt;, etc.) as an answer. (valueQuantity)
+There is an extension 'http://hl7.org/fhir/StructureDefinition/questionnaire-unit' that can be used to define what unit whould be captured (or the a unit that has a ucum conversion from the provided unit)"></definition>
+         <designation>
+            <language value="da"></language>
+            <use>
+               <system value="http://snomed.info/sct"></system>
+               <code value="900000000000013009"></code>
+            </use>
+            <value value="Antal"></value>
+         </designation>
+      </concept>
+   </concept>
+</CodeSystem>
