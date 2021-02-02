@@ -14,6 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code `Cel` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
 - Added new code `1/min` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
 - Added concept 'ExpectedDelivery' to `http://ehealth.sundhed.dk/cs/task-category`
+- Added concept 'MeasurementForAssessmentNotTriaged' to `http://ehealth.sundhed.dk/cs/task-category`
 - Changed content value from 'fragment' to 'complete' in `urn:oid:1.2.208.184.100.1`
 - Changed content value from 'fragment' to 'complete' in `urn:oid:1.2.208.176.2.4`
 - Changed content value from 'fragment' to 'complete' in `urn:ietf:bcp:47`
