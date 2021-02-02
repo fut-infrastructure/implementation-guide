@@ -144,4 +144,13 @@
          <value value="Forventet levering"/>
       </designation>
    </concept>
+   <concept>
+      <code value="MeasurementForAssessmentNotTriaged"/>
+      <display value="Need assessment of measurement where triage was not performed during automated processing"/>
+      <definition value="Need assessment of measurement where triage was not performed during automated processing"/>
+      <designation>
+         <language value="da"/>
+         <value value="Måling til vurdering, hvor triagering ikke er udført af automatiseret behandling"/>
+      </designation>
+   </concept>
 </CodeSystem>
