@@ -35,7 +35,7 @@
    </contact>
    <description value="Real world event relating to the schedule."></description>
    <caseSensitive value="true"></caseSensitive>
-   <valueSet value="http://hl7.org/fhir/ValueSet/event-timing"></valueSet>
+   <!--<valueSet value="http://hl7.org/fhir/ValueSet/event-timing"></valueSet>-->
    <content value="complete"></content>
    <concept>
       <code value="MORN"></code>
