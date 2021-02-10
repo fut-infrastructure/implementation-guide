@@ -114,4 +114,12 @@
          <value value="mg/L"/>
       </designation>
    </concept>
+   <concept>
+      <code value="percentpoint"/>
+      <display value="percent point"/>
+      <designation>
+         <language value="da"/>
+         <value value="procentpoint"/>
+      </designation>
+   </concept>
 </CodeSystem>

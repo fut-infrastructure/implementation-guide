@@ -155,5 +155,15 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+        <element>
+            <code value="percentpoint"/>
+            <display value="percent point"/>
+            <target>
+                <code value="percentpoint"/>
+                <display value="percent point"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
     </group>
 </ConceptMap>
