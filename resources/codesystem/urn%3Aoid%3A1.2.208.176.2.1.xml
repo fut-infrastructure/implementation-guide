@@ -1,60 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="1.2.208.176.2.1--20190829"/>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>This code system urn:oid:1.2.208.176.2.1 defines the following codes:</p>
-      <table class="codes">
-        <tr>
-          <td style="white-space:nowrap">
-            <b>Code</b>
-          </td>
-          <td>
-            <b>Display</b>
-          </td>
-          <td>
-            <b>Definition</b>
-          </td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap">NPU03011
-            <a name="1.2.208.176.2.1--20190829-NPU03011"></a>
-          </td>
-          <td>Hb(Fe; O<sub>2</sub>-bind.; aB)—Oxygen(O<sub>2</sub>); mætn. = ?</td>
-          <td>Hb(Fe; O<sub>2</sub>-bind.; aB)—Oxygen(O<sub>2</sub>); mætn. = ?</td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap">NPU27281
-            <a name="1.2.208.176.2.1--20190829-NPU27281"></a>
-          </td>
-          <td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td>
-          <td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap">NPU03804
-            <a name="1.2.208.176.2.1--20190829-NPU03804"></a>
-          </td>
-          <td>Pt—Legeme; masse = ? kg</td>
-          <td>Pt—Legeme; masse = ? kg</td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap">NPU21692
-            <a name="1.2.208.176.2.1--20190829-NPU21692"></a>
-          </td>
-          <td>Hjerte—Systole; frekv. = ? × 1/min</td>
-          <td>Hjerte—Systole; frekv. = ? × 1/min</td>
-        </tr>
-        <tr>
-          <td style="white-space:nowrap">NPU03794
-            <a name="1.2.208.176.2.1--20190829-NPU03794"></a>
-          </td>
-          <td>Legeme højde;Pt</td>
-          <td>Pt—Legeme; højde = ? m</td>
-        </tr>
-      </table>
-    </div>
-  </text>
   <url value="urn:oid:1.2.208.176.2.1"/>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
