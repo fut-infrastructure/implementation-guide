@@ -2,6 +2,10 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="ehealth-reference-range-type"/>
    <url value="http://ehealth.sundhed.dk/cs/reference-range-type"/>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.208.176.7.200.1"/>
+   </identifier>
    <version value="2021-01-13T00:00:00+00:00"/>
    <name value="ReferenceRangeType"/>
    <title value="Reference Range Type"/>
