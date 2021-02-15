@@ -1336,13 +1336,13 @@
     <code value="NPU02593"/>
     <display value="Leukocytter;B"/>
     <definition
-        value="B—Leukocytter; antalk. = ? × 10&lt;sup&gt;9&lt;/sup&gt;/L"/>
+        value="B—Leukocytter; antalk. = ? × 10⁹/L"/>
   </concept>
   <concept>
     <code value="NPU03011"/>
     <display value="O2 sat.;Hb(aB)"/>
     <definition
-        value="Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?"/>
+        value="Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); mætn. = ?"/>
     <designation>
       <language value="da"></language>
       <use>
@@ -1366,13 +1366,13 @@
     <code value="NPU03568"/>
     <display value="Trombocytter;B"/>
     <definition
-        value="B—Thrombocytter; antalk. = ? × 10&lt;sup&gt;9&lt;/sup&gt;/L"/>
+        value="B—Thrombocytter; antalk. = ? × 10e9/L"/>
   </concept>
   <concept>
     <code value="NPU03577"/>
     <display value="Thyrotropin [TSH];P"/>
     <definition
-        value="P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10&lt;sup&gt;-3&lt;/sup&gt; IU/L"/>
+        value="P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10e-3 IU/L"/>
   </concept>
   <concept>
     <code value="NPU03794"/>
@@ -1474,13 +1474,13 @@
     <code value="NPU19661"/>
     <display value="Albumin / Kreatinin-ratio;U"/>
     <definition
-        value="U—Albumin/Creatininium; masseratio = ? × 10&lt;sup&gt;-3&lt;/sup&gt;"/>
+        value="U—Albumin/Creatininium; masseratio = ? × 10e-3"/>
   </concept>
   <concept>
     <code value="NPU03918"/>
     <display value="Albumin / Kreatinin-ratio;U"/>
     <definition
-        value="U—Albumin/Creatininium; stofratio = ? × 10&lt;sup&gt;-3&lt;/sup&gt;"/>
+        value="U—Albumin/Creatininium; stofratio = ? × 10e-3"/>
   </concept>
   <concept>
     <code value="NPU19748"/>
