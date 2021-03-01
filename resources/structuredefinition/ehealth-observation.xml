@@ -38,6 +38,7 @@
     <element id="Observation.extension:resolvedTiming">
       <path value="Observation.extension" />
       <sliceName value="resolvedTiming" />
+      <label value="Resolved Timing" />
       <short value="" />
       <min value="1" />
       <max value="1" />

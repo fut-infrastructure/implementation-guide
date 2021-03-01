@@ -38,7 +38,7 @@
     <element id="Media.extension:resolvedTiming">
       <path value="Media.extension" />
       <sliceName value="resolvedTiming" />
-      <short value="" />
+      <short value="Resolved Timing" />
       <min value="1" />
       <max value="1" />
       <type>

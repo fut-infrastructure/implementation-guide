@@ -5,7 +5,7 @@
   <name value="resolvedTiming" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="Resolved Timing is in measurements (Observation, QuestionnaireResponse, and Media) to identify the ProcedureRequest version that the measurement is based on and the planned timeslot for the measurement" />
+  <description value="Resolved timing reflects whether a measurement (Observation, QuestionnaireResponse or Media) has been performed ad-hoc or as fulfillment of a measurement regime time slot in which case the extent of the time slot is given by start and end. If the measurement regime has a form for which a time slot cannot be resolved or determining is/was not supported, the type unresolved is used." />
   <fhirVersion value="3.0.2" />
   <mapping>
     <identity value="rim" />
@@ -35,8 +35,8 @@
     <element id="Extension.extension:procedureRequestVersionId">
       <path value="Extension.extension" />
       <sliceName value="procedureRequestVersionId" />
-      <short value="Version of procedureRequest" />
-      <definition value="Version of the procedureRequest that the measurement is based on" />
+      <short value="Version of ProcedureRequest" />
+      <definition value="Version of the ProcedureRequest that the measurement is based on" />
       <min value="1" />
       <max value="1" />
     </element>
