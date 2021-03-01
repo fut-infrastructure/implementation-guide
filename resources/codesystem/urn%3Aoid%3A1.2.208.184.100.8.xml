@@ -483,14 +483,14 @@
             <a name="mcs-NPU02593"></a>
           </td>
           <td>Leukocytter;B</td>
-          <td>B—Leukocytter; antalk. = ? × 10&lt;sup&gt;9&lt;/sup&gt;/L</td>
+          <td>B—Leukocytter; antalk. = ? × 10<sup>9</sup>/L</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU03011
             <a name="mcs-NPU03011"></a>
           </td>
           <td>O2 sat.;Hb(aB)</td>
-          <td>Hb(Fe; O&lt;sub&gt;2&lt;/sub&gt;-bind.; aB)—Oxygen(O&lt;sub&gt;2&lt;/sub&gt;); mætn. = ?</td>
+          <td>Hb(Fe; O<sub>2</sub>-bind.; aB)—Oxygen(O<sub>2</sub>); mætn. = ?</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU03230
@@ -511,14 +511,14 @@
             <a name="mcs-NPU03568"></a>
           </td>
           <td>Trombocytter;B</td>
-          <td>B—Thrombocytter; antalk. = ? × 10&lt;sup&gt;9&lt;/sup&gt;/L</td>
+          <td>B—Thrombocytter; antalk. = ? × 10<sup>9</sup>/L</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU03577
             <a name="mcs-NPU03577"></a>
           </td>
           <td>Thyrotropin [TSH];P</td>
-          <td>P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10&lt;sup&gt;-3&lt;/sup&gt; IU/L</td>
+          <td>P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10<sup>-3</sup> IU/L</td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU03794
@@ -623,14 +623,14 @@
             <a name="mcs-NPU19661"></a>
           </td>
           <td>Albumin / Kreatinin-ratio;U</td>
-          <td>U—Albumin/Creatininium; masseratio = ? × 10&lt;sup&gt;-3&lt;/sup&gt;</td>
+          <td>U—Albumin/Creatininium; masseratio = ? × 10<sup>-3</sup></td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU03918
             <a name="mcs-NPU03918"></a>
           </td>
           <td>Albumin / Kreatinin-ratio;U</td>
-          <td>U—Albumin/Creatininium; stofratio = ? × 10&lt;sup&gt;-3&lt;/sup&gt;</td>
+          <td>U—Albumin/Creatininium; stofratio = ? × 10<sup>-3</sup></td>
         </tr>
         <tr>
           <td style="white-space:nowrap">NPU19748

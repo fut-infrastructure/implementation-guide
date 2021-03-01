@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="resolved-timing-type"/>
+   <url value="http://ehealth.sundhed.dk/cs/resolved-timing-type"/>
+   <version value="2021-02-26T00:00:00+00:00"/>
+   <name value="ResolvedTimingType"/>
+   <title value="Resolved Timing Type"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <date value="2021-02-26T00:00:00+00:00"/>
+   <publisher value="ehealth.sundhed.dk"/>
+   <contact>
+      <telecom>
+         <system value="url"/>
+         <value value="http://ehealth.sundhed.dk/terminology"/>
+      </telecom>
+   </contact>
+   <description value="Resolved Timing Type"/>
+   <caseSensitive value="true"/>
+   <content value="complete"/>
+   <concept>
+      <code value="Resolved"/>
+      <display value="Resolved"/>
+      <definition value="Resolved"/>
+      <designation>
+         <language value="da"/>
+         <value value="Opløst måleregimetid"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Unresolved"/>
+      <display value="Unresolved"/>
+      <definition value=""/>
+      <designation>
+         <language value="da"/>
+         <value value="Ej opløst måleregimetid"/>
+      </designation>
+   </concept>
+   <concept>
+      <code value="Adhoc"/>
+      <display value="Adhoc"/>
+      <definition value="Adhoc"/>
+      <designation>
+         <language value="da"/>
+         <value value="Adhoc"/>
+      </designation>
+   </concept>
+</CodeSystem>
