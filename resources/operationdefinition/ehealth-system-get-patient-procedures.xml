@@ -12,7 +12,7 @@
    <parameter>
       <name value="patientReference"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="Reference"/>
    </parameter>
@@ -33,14 +33,14 @@
    <parameter>
       <name value="startDate"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="dateTime"/>
    </parameter>
    <parameter>
       <name value="endDate"/>
       <use value="in"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type value="dateTime"/>
    </parameter>
