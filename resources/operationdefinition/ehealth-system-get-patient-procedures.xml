@@ -1,0 +1,47 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="-s-get-patient-procedures"/>
+   <name value="get-patient-procedures"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="This operation returns an overview of patient procedures within a time period, marked by startDate and endDate. The overview is optionally filtered by providing episodes of care or condition codings.&#xd;&#xa;## Input&#xd;&#xa;The operation has three mandatory inputs, a Patient reference, a start date and a end date. Additionally the operation has two optional inputs: a list of episodes of care and/or a list of condition codings.&#xd;&#xa;### Patient reference&#xd;&#xa;Mandatory reference for the patient which the procedure overview is computed for.&#xd;&#xa;### Start date and end date&#xd;&#xa;Start- and end date are both mandatory date times, and together determine bounds for which measurements can be used in the patient procedure overview.&#xd;&#xa;### Episode of care list&#xd;&#xa;The episode of care list is optional. If episodes of care are provided, these will be used to further filter which care plan/procedure requests are used for the patient procedure overview.&#xd;&#xa;### Condition codings list&#xd;&#xa;The condition coding list is optional. If condition codings are provided, only episodes of care matching the condition will be used for the patient procedure overview.&#xd;&#xa;## Output&#xd;&#xa;For valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with dissolved measurement regimes and associated measurements, lists of any CarePlan or ProcedureRequest referenced in the Parameters and lastly OperationOutcome describing any encountered warnings."/>
+   <idempotent value="false"/>
+   <code value="get-patient-procedures"/>
+   <system value="true"/>
+   <type value="false"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="patientReference"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="episodeOfCare"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type value="Reference"/>
+   </parameter>
+   <parameter>
+      <name value="conditionCodings"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type value="Coding"/>
+   </parameter>
+   <parameter>
+      <name value="startDate"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="dateTime"/>
+   </parameter>
+   <parameter>
+      <name value="endDate"/>
+      <use value="in"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="dateTime"/>
+   </parameter>
+</OperationDefinition>
