@@ -3,14 +3,14 @@
    <name value="get-patient-procedures"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="This operation returns an overview of patient procedures within a time period, marked by startDate and endDate. The overview is optionally filtered by providing episodes of care or condition codings.&#xd;&#xa;## Input&#xd;&#xa;The operation has three mandatory inputs, a Patient reference, a start date and a end date. Additionally the operation has two optional inputs: a list of episodes of care and/or a list of condition codings.&#xd;&#xa;### Patient reference&#xd;&#xa;Mandatory reference for the patient which the procedure overview is computed for.&#xd;&#xa;### Start date and end date&#xd;&#xa;Start- and end date are both mandatory date times, and together determine bounds for which measurements can be used in the patient procedure overview.&#xd;&#xa;### Episode of care list&#xd;&#xa;The episode of care list is optional. If episodes of care are provided, these will be used to further filter which care plan/procedure requests are used for the patient procedure overview.&#xd;&#xa;### Condition codings list&#xd;&#xa;The condition coding list is optional. If condition codings are provided, only episodes of care matching the condition will be used for the patient procedure overview.&#xd;&#xa;## Output&#xd;&#xa;For valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with dissolved measurement regimes and associated measurements, lists of any CarePlan or ProcedureRequest referenced in the Parameters and lastly OperationOutcome describing any encountered warnings."/>
+   <description value="This operation returns an overview of patient procedures within a time period and filtered by either EpisodeOfCare or Condition code(s). On success, the returned Bundle contains a Parameters structure detailing the count of measurements received and expected. This is done per ProcedureRequest with status active for those that are related to EpisodeOfCare either given as input or pertaining to one of the Condition codes. The measurement regime expressed in ProcedureRequest.occurrence[x] is, when possible, resolved to time slot(s) corresponding to datetime/period where an action is supposed to take place, typically performed by the Patient. When the occurrenceTiming variant is used, resolved time slots overlapping with the input time periode are considered. For occurrenceTiming expression which are either adhoc or unresolved, the effective datetime/period of a measurement is considered when checked for overlap with input time period.&#xd;&#xa;## Input&#xd;&#xa;The operation has three mandatory inputs, a Patient reference, a start date and an end date. Additionally the operation has two optional inputs: a list of reference(s) to EpisodeOfCare and a list of Codings for Condition.&#xd;&#xa;### Patient reference&#xd;&#xa;Mandatory reference for the Patient which the procedure overview is computed for.&#xd;&#xa;### Start and end datetimes&#xd;&#xa;Start and end datetime are both mandatory, and together specify the period of interest in the patient procedure overview. As stated above, for resolvable past and future time slots as well as adhoc and unresolved timings there must overlap with this period.&#xd;&#xa;### EpisodeOfCare list&#xd;&#xa;The EpisodeOfCare list is optional, but either of EpisodeOfCare or Condition codes must be provided. If EpisodeOfCare are provided, these will be used to further filter which active CarePlan and ProcedureRequest are considered for the patient procedure overview.&#xd;&#xa;### Condition Coding list&#xd;&#xa;The list of Coding for Condition is optional, but either of EpisodeOfCare or Condition codes must be provided. If Condition Coding are provided, the EpisodeOfCare considered are those referring to a Condition matching at least one of the codes in the list. As above, the EpisodeOfCare (one or more) considered further determines which active CarePlan and ProcedureRequest are considered.&#xd;&#xa;## Output&#xd;&#xa;For valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with resolved measurement regimes and associated counts of measurement submitted and counts expected. Such counts are also included in the Parameters structure when the measurement regime is either adhoc or unresolved. In addition, the Bundle contains CarePlan and ProcedureRequest referenced in the Parameters. The Bundle can contain an OperationOutcome describing any encountered warnings."/>
    <idempotent value="false"/>
    <code value="get-patient-procedures"/>
    <system value="true"/>
    <type value="false"/>
    <instance value="false"/>
    <parameter>
-      <name value="patientReference"/>
+      <name value="patient"/>
       <use value="in"/>
       <min value="1"/>
       <max value="1"/>
@@ -31,17 +31,24 @@
       <type value="Coding"/>
    </parameter>
    <parameter>
-      <name value="startDate"/>
+      <name value="start"/>
       <use value="in"/>
       <min value="1"/>
       <max value="1"/>
       <type value="dateTime"/>
    </parameter>
    <parameter>
-      <name value="endDate"/>
+      <name value="end"/>
       <use value="in"/>
       <min value="1"/>
       <max value="1"/>
       <type value="dateTime"/>
+   </parameter>
+   <parameter>
+      <name value="return"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Bundle"/>
    </parameter>
 </OperationDefinition>
