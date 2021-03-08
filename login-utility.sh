@@ -1,6 +1,8 @@
 #!/bin/bash
-
 # Utility functions for login functionality
+DEBUG=false
+RL=$'\r'
+
 prompt() {
   echo "$@" >/dev/tty
 }
@@ -31,6 +33,11 @@ validate_json() {
    jq 'empty' <<<${json} ||  fail "JSON parse error for: ${json}" || return 1
 }
 
+die() {
+  prompt "ERROR: $*. Aborting."
+  exit 1
+}
+
 login() {
   local domain="devtest.systematic-ehealth.com"
   local username=${FUTUSER}
@@ -43,9 +50,9 @@ login() {
   fi
   read -s -r -p "Password: " password 2> /dev/tty
 
-  log_debug "get authorization token on domain ${DOMAIN} for user ${username}"
+  log_info "get authorization token on domain ${domain} for user ${username}"
   local response=$(
-    curl --location --location-trusted --write "\n" --request POST https://saml.${DOMAIN}/auth/realms/ehealth/protocol/openid-connect/token \
+    curl --location --location-trusted --write "\r%{json}" --request POST https://saml.${domain}/auth/realms/ehealth/protocol/openid-connect/token \
       --header "Content-Type: application/x-www-form-urlencoded" \
       --data-urlencode "grant_type=password" \
       --data-urlencode "client_id=systematic_admin" \
@@ -57,17 +64,18 @@ login() {
   {
     read -r token
     read http_code
+    token=${token%$RL}
+    http_code=${http_code%$RL}
   } < <(
     jq --slurp --compact-output --raw-output \
       '(if length<2 then [{},.[]] else . end)| .[0].access_token, .[1].http_code' \
       <<<"${response}"
   )
 
-  log_debug "HTTP ${http_code}"
-  [ "${http_code}" == "200" ] || die "Authorization failed [HTTP ${http_code}]: ${response}"
+  [ ${http_code} -eq "200" ] || die "Authorization failed [HTTP ${http_code}]: ${response}"
 
   log_debug "got authorization token ${token} on domain ${DOMAIN} for user ${username}"
-  log_info "Authorization token received on domain ${DOMAIN} for user ${username}"
+  log_info "Authorization token received on domain ${domain} for user ${username}"
 
   [ -n "${token}" ] && AUTHORIZATION="Authorization: Bearer ${token}"
 }
