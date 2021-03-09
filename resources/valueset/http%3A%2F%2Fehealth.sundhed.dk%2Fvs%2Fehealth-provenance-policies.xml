@@ -19,7 +19,7 @@
    <description value="Policies under which data can be provided"/>
    <compose>
       <include>
-         <system value="http://ehealth.sundhed.dk/cs/ehealth-provenance-policies/"/>
+         <system value="http://ehealth.sundhed.dk/cs/ehealth-provenance-policies"/>
       </include>
    </compose>
 </ValueSet>
