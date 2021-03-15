@@ -1,7 +1,6 @@
 #!/bin/bash
 # Utility functions for login functionality
 DEBUG=false
-RL=$'\r'
 
 prompt() {
   echo "$@" >/dev/tty
@@ -52,7 +51,7 @@ login() {
 
   log_info "get authorization token on domain ${domain} for user ${username}"
   local response=$(
-    curl --location --location-trusted --write "\r%{json}" --request POST https://saml.${domain}/auth/realms/ehealth/protocol/openid-connect/token \
+    curl --location --location-trusted --write "\n%{json}" --request POST https://saml.${domain}/auth/realms/ehealth/protocol/openid-connect/token \
       --header "Content-Type: application/x-www-form-urlencoded" \
       --data-urlencode "grant_type=password" \
       --data-urlencode "client_id=systematic_admin" \
@@ -64,12 +63,10 @@ login() {
   {
     read -r token
     read http_code
-    token=${token%$RL}
-    http_code=${http_code%$RL}
   } < <(
     jq --slurp --compact-output --raw-output \
       '(if length<2 then [{},.[]] else . end)| .[0].access_token, .[1].http_code' \
-      <<<"${response}"
+      <<<"${response}"  | tr -d '\r'
   )
 
   [ ${http_code} -eq "200" ] || die "Authorization failed [HTTP ${http_code}]: ${response}"
