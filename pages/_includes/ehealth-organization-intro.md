@@ -13,7 +13,7 @@ Organizations are imported into the eHealth infrastructure from SOR and STS-ORG.
 
 * SOR-ID: "urn:oid:1.2.208.176.1.1"
 * KOMBIT STS-ORG-ID: "https://www.kombit.dk/sts/organisation"
-* CVR number: "urn:oid:2.16.840.1.113883.2.24.1.1"
+* SSL-ID: "http://ehealth.sundhed.dk/organization/ssl"
 
 Organizations created manually are not allowed to have identifiers of types SOR-ID or KOMBIT STS-ORG-ID.
 
