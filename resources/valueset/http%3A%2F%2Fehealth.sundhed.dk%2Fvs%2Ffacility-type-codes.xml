@@ -17,9 +17,573 @@
       </telecom>
    </contact>
    <description value="Allowed value set for healthcare facility type code represents the type of organizational setting of the clinical encounter during which the documented act occurred."/>
+   <!--   The composition should just include the sor-organization-type value set-->
+   <!--   But validation on display fails because the validation uses the display from the code system (lower case) instead of the display from the value set (init cap) -->
+   <!--   Therefore the composition is cloned from sor-organization-type value set below-->
+   <!--   <compose>-->
+   <!--      <include>-->
+   <!--         <valueSet value="http://ehealth.sundhed.dk/vs/sor-organization-type"/>-->
+   <!--      </include>-->
+   <!--   </compose>-->
    <compose>
       <include>
-         <valueSet value="http://ehealth.sundhed.dk/vs/sor-organization-type"/>
+         <system value="http://ehealth.sundhed.dk/cs/sor-organization-type"/>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct/554471000005108/version/20150731"/>
+         <concept>
+            <code value="554221000005108"/>
+            <display value="Dwilling place"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dwilling place"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="546821000005103"/>
+            <display value="Occupational therapy clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Occupational therapy clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="547011000005103"/>
+            <display value="Physiotherapy clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Physiotherapy clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="546811000005109"/>
+            <display value="Rehabilitation center"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Rehabilitation center"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550621000005101"/>
+            <display value="District nursing"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="District nursing"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550631000005103"/>
+            <display value="Midwife clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Midwife clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550641000005106"/>
+            <display value="Chiropractic clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Chiropractic clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550651000005108"/>
+            <display value="Medical laboratory"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medical laboratory"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550661000005105"/>
+            <display value="Emergency medical service"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Emergency medical service"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554211000005102"/>
+            <display value="Prehospital unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Prehospital unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550711000005101"/>
+            <display value="Psychological counseling clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Psychological counseling clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550671000005100"/>
+            <display value="Medical specialist practice site"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medical specialist practice site"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554061000005105"/>
+            <display value="Chiropodist clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Chiropodist clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554041000005106"/>
+            <display value="Health administration"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Health administration"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554021000005101"/>
+            <display value="Health visitors"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Health visitors"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550681000005102"/>
+            <display value="dental practice"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dental practice"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550691000005104"/>
+            <display value="Dental care clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dental care clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550701000005104"/>
+            <display value="Dental technician clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dental technician clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554231000005106"/>
+            <display value="Vaccination clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Vaccination clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554051000005108"/>
+            <display value="Reflexology clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Reflexology clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550811000005108"/>
+            <display value="Administrative unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Administrative unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="547211000005108"/>
+            <display value="Municipality"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Municipality"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550891000005100"/>
+            <display value="Private"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Private"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550881000005103"/>
+            <display value="Region"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Region"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550411000005105"/>
+            <display value="Other health institution"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Other health institution"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554851000005102"/>
+            <display value="Asylum centre"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Asylum centre"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550861000005106"/>
+            <display value="Physiotherapy and occupational clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Physiotherapy and occupational clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554881000005108"/>
+            <display value="Handicap and psychiatry"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Handicap and psychiatry"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554861000005100"/>
+            <display value="Handicap"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Handicap"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554821000005109"/>
+            <display value="Home care"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Home care"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554411000005101"/>
+            <display value="Employment agency"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Employment agency"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554871000005105"/>
+            <display value="Psychiatry"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Psychiatry"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550821000005102"/>
+            <display value="Service unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Service unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550871000005101"/>
+            <display value="Emergency admission unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Emergency admission unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554241000005103"/>
+            <display value="Technical location number"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Technical location number"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550841000005107"/>
+            <display value="Research unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Research unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550851000005109"/>
+            <display value="Clinical unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Clinical unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="551611000005102"/>
+            <display value="Surgical ward"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Surgical ward"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554071000005100"/>
+            <display value="Hospital pharmacy"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Hospital pharmacy"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="550831000005104"/>
+            <display value="Education unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Education unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="554031000005103"/>
+            <display value="dietician clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Dietician clinic"/>
+            </designation>
+         </concept>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct/554471000005108/version/20180331"/>
+         <concept>
+            <code value="557511000005107"/>
+            <display value="Acupuncture clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Acupuncture clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557501000005109"/>
+            <display value="Pharmacy branch"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pharmacy branch"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557531000005103"/>
+            <display value="Prosthetist clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Prosthetist clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557591000005104"/>
+            <display value="Web-based care"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Web-based care"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557521000005101"/>
+            <display value="Alternative treatment clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Alternative treatment clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557561000005105"/>
+            <display value="Consulting firm"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Consulting firm"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557541000005106"/>
+            <display value="Cosmetic treatment clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Cosmetic treatment clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="557581000005102"/>
+            <display value="Optometrist or optician clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Optometrist or optician clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="556841000005105"/>
+            <display value="Social psychological counseling"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Social psychological counseling"/>
+            </designation>
+         </concept>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct/554471000005108/version/20180930"/>
+         <concept>
+            <code value="557671000005101"/>
+            <display value="Osteopathy clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Osteopathy clinic"/>
+            </designation>
+         </concept>
+      </include>
+      <include>
+         <system value="http://snomed.info/sct"/>
+         <concept>
+            <code value="398070004"/>
+            <display value="State"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="State"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="394761003"/>
+            <display value="General practitioner practice site"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="General practitioner practice site"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="20078004"/>
+            <display value="Substance abuse treatment center"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Substance abuse treatment center"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="722173008"/>
+            <display value="Prison based care site"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Prison based care site"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="702871004"/>
+            <display value="Infertility clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Infertility clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="276037005"/>
+            <display value="Volunteer helper"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Volunteer helper"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="22232009"/>
+            <display value="Hospital"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Hospital"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="702824005"/>
+            <display value="Audiology clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Audiology clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="42665001"/>
+            <display value="Nursing home"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Nursing home"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="264361005"/>
+            <display value="Health centre"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Health centre"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="703069008"/>
+            <display value="Nurse practitioner clinic"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Nurse practitioner clinic"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="309964003"/>
+            <display value="Radiology department"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Radiology department"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="309904001"/>
+            <display value="Intensive care unit"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Intensive care unit"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="309939001"/>
+            <display value="Palliative care department"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Palliative care department"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="225728007"/>
+            <display value="Accident and Emergency department"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Accident and Emergency department"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="255203001"/>
+            <display value="Additional values"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Additional values"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="264372000"/>
+            <display value="Pharmacy"/>
+            <designation>
+               <language value="en-US"/>
+               <value value="Pharmacy"/>
+            </designation>
+         </concept>
       </include>
    </compose>
 </ValueSet>
