@@ -7,11 +7,13 @@
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
   <description value="Defines the recommendation state of the questionnaire." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -20,9 +22,8 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-recommendation" />
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -30,7 +31,7 @@
       <binding>
         <strength value="required" />
         <description value="Value set of questionnaire recommendation codes." />
-        <valueSetUri value="http://ehealth.sundhed.dk/vs/questionnaire-recommendation" />
+        <valueSet value="http://ehealth.sundhed.dk/vs/questionnaire-recommendation" />
       </binding>
     </element>
   </differential>

@@ -5,13 +5,22 @@
   <name value="feedback" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="Feedback if reponse is within the defined range." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire.item" />
-  <context value="Questionnaire.item.item" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.item" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -29,7 +38,6 @@
     <element id="Extension.extension:value">
       <path value="Extension.extension" />
       <sliceName value="value" />
-      <short value="Feedback message" />
       <min value="1" />
       <max value="1" />
     </element>
@@ -37,10 +45,8 @@
       <path value="Extension.extension.url" />
       <fixedUri value="value" />
     </element>
-    <element id="Extension.extension:value.value[x]:valueString">
-      <path value="Extension.extension.valueString" />
-      <sliceName value="valueString" />
-      <min value="1" />
+    <element id="Extension.extension:value.value[x]">
+      <path value="Extension.extension.value[x]" />
       <type>
         <code value="string" />
       </type>
@@ -48,7 +54,6 @@
     <element id="Extension.extension:min">
       <path value="Extension.extension" />
       <sliceName value="min" />
-      <short value="Minimum value of response for feedback to be shown."/>
       <min value="1" />
       <max value="1" />
     </element>
@@ -56,10 +61,8 @@
       <path value="Extension.extension.url" />
       <fixedUri value="min" />
     </element>
-    <element id="Extension.extension:min.value[x]:valueInteger">
-      <path value="Extension.extension.valueInteger" />
-      <sliceName value="valueInteger" />
-      <min value="1" />
+    <element id="Extension.extension:min.value[x]">
+      <path value="Extension.extension.value[x]" />
       <type>
         <code value="integer" />
       </type>
@@ -67,7 +70,6 @@
     <element id="Extension.extension:max">
       <path value="Extension.extension" />
       <sliceName value="max" />
-      <short value="Maximum value of response for feedback to be shown."/>
       <min value="1" />
       <max value="1" />
     </element>
@@ -75,10 +77,8 @@
       <path value="Extension.extension.url" />
       <fixedUri value="max" />
     </element>
-    <element id="Extension.extension:max.value[x]:valueInteger">
-      <path value="Extension.extension.valueInteger" />
-      <sliceName value="valueInteger" />
-      <min value="1" />
+    <element id="Extension.extension:max.value[x]">
+      <path value="Extension.extension.value[x]" />
       <type>
         <code value="integer" />
       </type>

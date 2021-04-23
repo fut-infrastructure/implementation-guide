@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-overviewUsageMode" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode-r4" />
   <name value="overviewUsageMode" />
   <status value="draft" />
-  <publisher value="ehealth.sundhed.dk" />
-  <description value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
-  <fhirVersion value="3.0.2" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
@@ -14,24 +12,20 @@
   </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire.item" />
-  <context value="PlanDefinition.action" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-overviewUsageMode-r4" />
     </element>
-    <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <short value="Whether the element should appear in overview modes of operation." />
-      <definition value="The possible types will be defined on the terminology server." />
-      <comment value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
-      <requirements value="Identifies whether the specified element and/or results of the element should appear in overview or table presentation." />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -39,9 +33,7 @@
       <binding>
         <strength value="required" />
         <description value="Whether the element should appear in overview &quot;modes&quot; of operation." />
-        <valueSetReference>
-          <reference value="http://ehealth.sundhed.dk/vs/overviewUsageMode" />
-        </valueSetReference>
+        <valueSet value="http://ehealth.sundhed.dk/vs/overviewUsageMode" />
       </binding>
     </element>
   </differential>

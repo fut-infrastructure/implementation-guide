@@ -5,13 +5,22 @@
   <name value="sliderStepValue" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="For slider-based controls, indicates the step size to use when toggling the control up or down." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire.item" />
-  <context value="Questionnaire.item.item" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire.item.item" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -20,9 +29,8 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue" />
     </element>
-    <element id="Extension.value[x]:valueInteger">
-      <path value="Extension.valueInteger" />
-      <sliceName value="valueInteger" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
       <min value="1" />
       <type>
         <code value="integer" />

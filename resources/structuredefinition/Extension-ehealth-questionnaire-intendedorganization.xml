@@ -5,12 +5,18 @@
   <name value="intendedOrganization" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <description value="The questionnaire is intended to be used by these organizations." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
   <kind value="complex-type" />
   <abstract value="false" />
-  <contextType value="resource" />
-  <context value="Questionnaire" />
+  <context>
+    <type value="element" />
+    <expression value="Questionnaire" />
+  </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
@@ -19,9 +25,8 @@
       <path value="Extension.url" />
       <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization" />
     </element>
-    <element id="Extension.value[x]:valueReference">
-      <path value="Extension.valueReference" />
-      <sliceName value="valueReference" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
       <min value="1" />
       <type>
         <code value="Reference" />

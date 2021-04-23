@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ehealth-modifier-role" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role-r4" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
   <name value="modifierRole" />
   <status value="draft" />
+  <publisher value="ehealth.sundhed.dk" />
   <description value="This is a modifier role that can hold a role and a reference to the item who has the role. Ex. owner + a reference to the owner organization." />
-  <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
+  <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="Questionnaire" />
-  </context>
+  <contextType value="resource" />
+  <context value="ActivityDefinition" />
+  <context value="Questionnaire" />
+  <context value="PlanDefinition" />
+  <context value="Library" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Maintainers (custodians) of this resource" />
+      <definition value="Maintainers (custodians) of this resource" />
+    </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
       <slicing>
@@ -36,6 +38,7 @@
       <sliceName value="reference" />
       <short value="Who is involved as maintainer. The specific organization who is maintaining the activity definition." />
       <definition value="Who is involved as maintainer. The specific organization who is maintaining the activity definition." />
+      <comment value="This holds a reference to an Organization." />
       <min value="1" />
       <max value="1" />
     </element>
@@ -43,8 +46,11 @@
       <path value="Extension.extension.url" />
       <fixedUri value="reference" />
     </element>
-    <element id="Extension.extension:reference.value[x]">
-      <path value="Extension.extension.value[x]" />
+    <element id="Extension.extension:reference.value[x]:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <short value="This holds a reference to an Organization." />
+      <comment value="This holds a reference to an Organization." />
       <min value="1" />
       <type>
         <code value="Reference" />
@@ -56,28 +62,39 @@
       <path value="Extension.extension" />
       <sliceName value="role" />
       <short value="Type of involvement. Indicates specific responsibility of the entity maintaining the activity definition." />
-      <definition value="Type of involvement. Indicates specific responsibility of the entity maintaining the activity definition." />
+      <definition value="Type of involvement. Indicates aresponsibility of the entity maintaining the activity definition." />
+      <comment value="This tells something about the value of the reference. If this holds the value owner, the modifierRole.reference will have a reference to the owner." />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
+        </valueSetReference>
+      </binding>
     </element>
     <element id="Extension.extension:role.url">
       <path value="Extension.extension.url" />
       <fixedUri value="role" />
     </element>
-    <element id="Extension.extension:role.value[x]">
-      <path value="Extension.extension.value[x]" />
+    <element id="Extension.extension:role.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://ehealth.sundhed.dk/vs/modifier-role" />
+        <description value="TBD" />
+        <valueSetReference>
+          <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role-r4" />
+      <fixedUri value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
