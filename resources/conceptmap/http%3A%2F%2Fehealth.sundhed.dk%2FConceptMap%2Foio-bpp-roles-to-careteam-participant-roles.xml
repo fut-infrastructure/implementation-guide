@@ -175,69 +175,6 @@
          </target>
       </element>
       <element>
-         <code value="urn:dk:sundhed:ehealth:role:tele_medicine_actor"/>
-         <display value="Telemedicinsk aktør"/>
-         <target>
-            <code value="teleMedicineActor"/>
-            <display value="Tele medicine actor"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:administrative_personnel"/>
-         <display value="Administrativt personale"/>
-         <target>
-            <code value="administrativePersonnel"/>
-            <display value="Administrative personnel"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:healthcare_professional"/>
-         <display value="Sundhedsfaglig"/>
-         <target>
-            <code value="healthcareProfessional"/>
-            <display value="Healthcare professional"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:monitoring_responsible"/>
-         <display value="Sundhedsfaglig monitoreringsansvarlig"/>
-         <target>
-            <code value="monitoringResponsible"/>
-            <display value="Monitoring responsible"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:treatment_responsible"/>
-         <display value="Behandlingsansvarlig"/>
-         <target>
-            <code value="treatmentResponsible"/>
-            <display value="Treatment responsible"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:report_generator"/>
-         <display value="Nøgletalsmedarbejder"/>
-         <target>
-            <code value="reportGenerator"/>
-            <display value="Report, statistics and data extractor"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:administrator"/>
-         <display value="Administrator"/>
-         <target>
-            <code value="administrator"/>
-            <display value="Administrator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
          <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
          <display value="Fejlfinder"/>
          <target>
@@ -252,24 +189,6 @@
          <target>
             <code value="userAdministrator"/>
             <display value="User administrator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:team_administrator"/>
-         <display value="Teamadministrator"/>
-         <target>
-            <code value="teamAdministrator"/>
-            <display value="Team administrator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:supporter"/>
-         <display value="Support samarbejdspartner"/>
-         <target>
-            <code value="supporter"/>
-            <display value="Supporter"/>
             <equivalence value="equivalent"/>
          </target>
       </element>
