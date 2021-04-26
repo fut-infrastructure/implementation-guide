@@ -174,23 +174,5 @@
             <equivalence value="equivalent"/>
          </target>
       </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:incident_locator"/>
-         <display value="Fejlfinder"/>
-         <target>
-            <code value="incidentLocator"/>
-            <display value="Incident locator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
-      <element>
-         <code value="urn:dk:sundhed:ehealth:role:user_administrator"/>
-         <display value="Brugeradministrator"/>
-         <target>
-            <code value="userAdministrator"/>
-            <display value="User administrator"/>
-            <equivalence value="equivalent"/>
-         </target>
-      </element>
    </group>
 </ConceptMap>
