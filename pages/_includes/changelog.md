@@ -42,17 +42,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Changed mapping for code `MCS88023` in `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`
 - Added mapping for code `NPU08676` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
 - Added mapping for code `NPU19748` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:supporter` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:team_administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:report_generator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:treatment_responsible` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:monitoring_responsible` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:healthcare_professional` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:administrative_personnel` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:tele_medicine_actor` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:incident_locator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
-- Removed mappint for code `urn:dk:sundhed:ehealth:role:user_administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:supporter` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:team_administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:report_generator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:treatment_responsible` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:monitoring_responsible` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:healthcare_professional` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:administrative_personnel` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:tele_medicine_actor` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:incident_locator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
+- Removed mapping for code `urn:dk:sundhed:ehealth:role:user_administrator` in `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles`
 ### Resource/profile changes
 - Added ehealth-goal profile. Used to specify reference base values for relative reference ranges.
 - Added new extension: ehealth-resolved-timing to Observation, QuestionnaireResponse, Media 
