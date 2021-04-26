@@ -25,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new code system: `http://ehealth.sundhed.dk/cs/ehealth-provenance-policies`
 - Removed offending HTML from display: `urn:oid:1.2.208.176.2.1`
 - Removed offending HTML from display: `urn:oid:1.2.208.184.100.8`
+- Removed concepts marked as deprecated from code system `http://ehealth.sundhed.dk/cs/careteam-participant-role`
 ### ValueSets
 - Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-description`
 - Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-target-measure`
