@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-transformation"/>
    <status value="active"/>
-   <date value="2020-12-21T14:27:09+00:00"/>
+   <date value="2021-05-05T05:52:16+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="document-transformation"/>
-      <version value="1.5.0"/>
+      <version value="1.7.0"/>
    </software>
    <implementation>
       <description value="eHealth document-transformation service"/>
@@ -383,18 +383,6 @@
          </profile>
          <interaction>
             <code value="read"/>
-         </interaction>
-      </resource>
-      <resource>
-         <type value="StructureDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/StructureDefinition"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
          </interaction>
       </resource>
       <operation>

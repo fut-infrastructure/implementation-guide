@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="measurement"/>
    <status value="active"/>
-   <date value="2020-12-22T08:49:08+00:00"/>
+   <date value="2021-05-02T12:58:21+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="measurement"/>
-      <version value="1.6.0"/>
+      <version value="1.8.0"/>
    </software>
    <implementation>
       <description value="eHealth measurement service"/>
@@ -96,6 +96,11 @@
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
+            <name value="_filter"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a filter"/>
+         </searchParam>
+         <searchParam>
             <name value="based-on"/>
             <type value="reference"/>
             <documentation value="Procedure that caused this media to be created"/>
@@ -124,6 +129,26 @@
             <name value="qualityType"/>
             <type value="token"/>
             <documentation value="Quality type of the media"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingEnd"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing end"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingProcedureRequestVersionId"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing procedureRequestVersionID"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingStart"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing start"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingType"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing type"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
@@ -155,6 +180,11 @@
             <name value="_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
+         </searchParam>
+         <searchParam>
+            <name value="_filter"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
@@ -207,6 +237,26 @@
             <documentation value="The quality type of the observation"/>
          </searchParam>
          <searchParam>
+            <name value="resolvedTimingEnd"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing end"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingProcedureRequestVersionId"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing procedureRequestVersionID"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingStart"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing start"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingType"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing type"/>
+         </searchParam>
+         <searchParam>
             <name value="subject"/>
             <type value="reference"/>
             <documentation value="The subject that the observation is about"/>
@@ -249,6 +299,11 @@
          </interaction>
          <searchInclude value="Provenance:target"/>
          <searchParam>
+            <name value="_filter"/>
+            <type value="string"/>
+            <documentation value="Search the contents of the resource's data using a filter"/>
+         </searchParam>
+         <searchParam>
             <name value="authored"/>
             <type value="date"/>
             <documentation value="When the questionnaire response was last changed"/>
@@ -284,22 +339,30 @@
             <documentation value="The questionnaire the answers are provided for"/>
          </searchParam>
          <searchParam>
+            <name value="resolvedTimingEnd"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing end"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingProcedureRequestVersionId"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing procedureRequestVersionID"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingStart"/>
+            <type value="date"/>
+            <documentation value="Resolved Timing start"/>
+         </searchParam>
+         <searchParam>
+            <name value="resolvedTimingType"/>
+            <type value="token"/>
+            <documentation value="Resolved Timing type"/>
+         </searchParam>
+         <searchParam>
             <name value="subject"/>
             <type value="reference"/>
             <documentation value="The subject of the questionnaire response"/>
          </searchParam>
-      </resource>
-      <resource>
-         <type value="StructureDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/StructureDefinition"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
       </resource>
       <operation>
          <name value="submit-measurement"/>
