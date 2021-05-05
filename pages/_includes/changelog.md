@@ -2,12 +2,10 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
- 
-### General changes
-### Custom operations
+## 2021.2 (2021-05-05)
 #### System operations
-#### Instance operations
+- Added description and example of `-s-get-patient-procedures` operation
+
 ### Code systems
 - Added new code `mg/L` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
 - Added new code `Cel` to `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement`
@@ -32,6 +30,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new valueSet: `http://ehealth.sundhed.dk/vs/goal-target-measure`
 - Added new valueSet: `http://ehealth.sundhed.dk/vs/resolved-timing-type`
 - Changed valueSet: `http://ehealth.sundhed.dk/vs/ehealth-provenance-policies`
+- Changed valueSet: `http://ehealth.sundhed.dk/vs/facility-type-codes`
 ### ConceptMaps
 - Added mapping for code `mg/L` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
 - Added mapping for code `Cel` to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol`
