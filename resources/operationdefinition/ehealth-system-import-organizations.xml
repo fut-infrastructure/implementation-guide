@@ -3,10 +3,7 @@
    <name value="import-organizations"/>
    <status value="active"/>
    <kind value="operation"/>
-   <description value="Import a bundle containing at least one organization tree.
-   In order for a bundle of organizations to be imported they must adhere to two rules.
-      1. All organizations in the bundle must have the same source, either STS or SOR.
-      2. They must have identifiers matching the source"/>
+   <description value="Import a bundle containing at least one organization tree."/>
    <idempotent value="false"/>
    <code value="import-organizations"/>
    <system value="true"/>
