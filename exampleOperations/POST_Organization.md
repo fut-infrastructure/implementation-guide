@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiT3JnYW5pemF0aW9uLndyaXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -49,7 +49,15 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2020-12-21T13:23:18+00:00"
+        "start": "2021-04-19T13:33:54+00:00"
+      }
+    },
+    {
+      "use": "official",
+      "system": "http://ehealth.sundhed.dk/organization/ssl",
+      "value": "2036bbc8-0179-44ab-a599-f4e88e402d64",
+      "period": {
+        "start": "2021-04-19T13:33:54+00:00"
       }
     }
   ],
@@ -64,7 +72,7 @@ __Body__:
       ]
     }
   ],
-  "name": "7ecd4979-8f8c-4ee6-bdc8-24ed198dd66d"
+  "name": "ab8bb862-2091-4a48-83fa-cacc1110b63d"
 }
 ```
 
@@ -72,10 +80,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "257",
+  "id": "258",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-12-21T13:23:18.384+00:00",
+    "lastUpdated": "2021-04-19T13:33:54.628+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -110,7 +118,15 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2020-12-21T13:23:18+00:00"
+        "start": "2021-04-19T13:33:54+00:00"
+      }
+    },
+    {
+      "use": "official",
+      "system": "http://ehealth.sundhed.dk/organization/ssl",
+      "value": "2036bbc8-0179-44ab-a599-f4e88e402d64",
+      "period": {
+        "start": "2021-04-19T13:33:54+00:00"
       }
     }
   ],
@@ -125,6 +141,6 @@ __Response__
       ]
     }
   ],
-  "name": "7ecd4979-8f8c-4ee6-bdc8-24ed198dd66d"
+  "name": "ab8bb862-2091-4a48-83fa-cacc1110b63d"
 }
 ```

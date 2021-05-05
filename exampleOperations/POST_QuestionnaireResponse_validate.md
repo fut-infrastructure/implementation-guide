@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzI2ZjQzZWQtYmNhNC00MTIwLWE0MzYtZmNiMjc1NGJhOTJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjBkYTA2NzMtZDNiZC00N2I2LThlMjMtYjczYTFlYTMzYWFkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -24,24 +24,46 @@ __Body__:
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
+            "extension": [
+              {
+                "url": "procedureRequestVersionId",
+                "valueId": "42"
+              },
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                      "code": "Adhoc"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1150.local/fhir/ProcedureRequest/57158"
+            "reference": "https://careplan.cit-measurement-1229.local/fhir/ProcedureRequest/17956"
           }
         ],
         "questionnaire": {
-          "reference": "https://questionnaire.cit-measurement-1150.local/fhir/Questionnaire/96983"
+          "reference": "https://questionnaire.cit-measurement-1229.local/fhir/Questionnaire/15832"
         },
         "status": "completed",
         "subject": {
-          "reference": "https://patient.cit-measurement-1150.local/fhir/Patient/49715"
+          "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/28326"
         },
         "context": {
-          "reference": "https://careplan.cit-measurement-1150.local/fhir/EpisodeOfCare/73326"
+          "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/21251"
         },
-        "authored": "2020-12-21T12:42:14+00:00",
+        "authored": "2021-04-20T07:23:12+00:00",
         "source": {
-          "reference": "https://patient.cit-measurement-1150.local/fhir/Patient/768"
+          "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/98225"
         }
       }
     }

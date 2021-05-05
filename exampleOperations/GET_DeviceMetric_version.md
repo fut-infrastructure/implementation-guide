@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRGV2aWNlTWV0cmljLnJlYWQiLCJEZXZpY2VNZXRyaWMud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,7 +18,7 @@ __Response__
   "id": "139",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-12-21T12:39:04.113+00:00",
+    "lastUpdated": "2021-04-19T15:16:27.956+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -117,7 +117,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-535.local/fhir/Device/138"
+    "reference": "https://device.cit-device-592.local/fhir/Device/138"
   },
   "operationalStatus": "off",
   "category": "calculation"

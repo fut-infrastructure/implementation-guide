@@ -1,11 +1,11 @@
-`POST [base]/ClinicalImpression/348/$validate`
+`POST [base]/ClinicalImpression/345/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnBhdGNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiLCJDbGluaWNhbEltcHJlc3Npb24uY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ClinicalImpression",
-        "id": "348",
+        "id": "345",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-01-04T10:38:27.167+00:00",
+          "lastUpdated": "2021-04-20T07:07:29.695+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
           ]
@@ -37,10 +37,10 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-task-1151.local/fhir/Patient/56530"
+          "reference": "https://patient.cit-task-1219.local/fhir/Patient/72314"
         },
         "context": {
-          "reference": "https://careplan.cit-task-1151.local/fhir/EpisodeOfCare/75302"
+          "reference": "https://careplan.cit-task-1219.local/fhir/EpisodeOfCare/70146"
         }
       }
     }

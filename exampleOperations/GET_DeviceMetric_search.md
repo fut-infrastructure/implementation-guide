@@ -1,11 +1,11 @@
-`GET [base]/DeviceMetric?qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-535.local%2Ffhir%2FDevice%2F112`
+`GET [base]/DeviceMetric?qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-592.local%2Ffhir%2FDevice%2F112`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRGV2aWNlTWV0cmljLnJlYWQiLCJEZXZpY2VNZXRyaWMud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "41f1cdcd-abed-4789-8994-a6f09a28bdf0",
+  "id": "67f86c59-a33b-4c36-99c7-67a6375cd0d5",
   "meta": {
-    "lastUpdated": "2020-12-21T12:38:40.896+00:00"
+    "lastUpdated": "2021-04-19T15:16:02.602+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.cit-device-535.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-535.local%2Ffhir%2FDevice%2F112"
+      "url": "https://device.cit-device-592.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-592.local%2Ffhir%2FDevice%2F112"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://device.cit-device-535.local/fhir/DeviceMetric/115",
+      "fullUrl": "https://device.cit-device-592.local/fhir/DeviceMetric/115",
       "resource": {
         "resourceType": "DeviceMetric",
         "id": "115",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-12-21T12:38:40.707+00:00",
+          "lastUpdated": "2021-04-19T15:16:02.301+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -134,7 +134,7 @@ __Response__
           ]
         },
         "source": {
-          "reference": "https://device.cit-device-535.local/fhir/Device/112"
+          "reference": "https://device.cit-device-592.local/fhir/Device/112"
         },
         "category": "calculation"
       },

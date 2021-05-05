@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTAwZmQ2NDAtYjA3MS00MmJhLTk2ODQtMDc4ZDM3ZTMzOWM5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmYxNjYxZjktOTFhOS00ZWFmLTljZTYtOWYwMzQ0ZmQxOTg2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -51,21 +51,41 @@ __Body__:
                 }
               }
             ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
+            "extension": [
+              {
+                "url": "procedureRequestVersionId",
+                "valueId": "42"
+              },
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                      "code": "Adhoc"
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1150.local/fhir/ProcedureRequest/25616"
+            "reference": "https://careplan.cit-measurement-1229.local/fhir/ProcedureRequest/95863"
           }
         ],
         "type": "audio",
         "subject": {
-          "reference": "https://patient.cit-measurement-1150.local/fhir/Patient/27547"
+          "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/73812"
         },
         "context": {
-          "reference": "https://careplan.cit-measurement-1150.local/fhir/EpisodeOfCare/1216"
+          "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/52325"
         },
-        "occurrenceDateTime": "2020-12-21T12:38:25+00:00",
+        "occurrenceDateTime": "2021-04-20T07:18:51+00:00",
         "content": {
           "language": "en"
         }

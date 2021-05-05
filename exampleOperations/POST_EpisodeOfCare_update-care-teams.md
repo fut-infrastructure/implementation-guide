@@ -1,11 +1,11 @@
-`POST [base]/EpisodeOfCare/69/$update-care-teams`
+`POST [base]/EpisodeOfCare/1399/$update-care-teams`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE1MjUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMTM4MCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJFcGlzb2RlT2ZDYXJlLnNlYXJjaCIsIkVwaXNvZGVPZkNhcmUucmVhZCIsIkNhcmVQbGFuLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJHVwZGF0ZS1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE3MTYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzIxNDYiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,13 +18,13 @@ __Body__:
     {
       "name": "addCareteams",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/45239"
+        "reference": "https://organization.cit-careplan-1716.local/fhir/CareTeam/12372"
       }
     },
     {
       "name": "removeCareteams",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/82549"
+        "reference": "https://organization.cit-careplan-1716.local/fhir/CareTeam/22900"
       }
     }
   ]
@@ -35,10 +35,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "69",
+  "id": "1399",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-01-06T13:54:35.205+00:00",
+    "lastUpdated": "2021-05-04T09:56:21.234+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -47,7 +47,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-1525.local/fhir/Organization/32906"
+        "reference": "https://organization.cit-careplan-1716.local/fhir/Organization/66929"
       }
     },
     {
@@ -56,13 +56,13 @@ __Response__
         {
           "url": "careTeam",
           "valueReference": {
-            "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/45239"
+            "reference": "https://organization.cit-careplan-1716.local/fhir/CareTeam/12372"
           }
         },
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2021-01-06T13:54:35+00:00"
+            "start": "2021-05-04T09:56:21+00:00"
           }
         }
       ]
@@ -72,16 +72,16 @@ __Response__
   "diagnosis": [
     {
       "condition": {
-        "reference": "https://careplan.cit-careplan-1525.local/fhir/Condition/68"
+        "reference": "https://careplan.cit-careplan-1716.local/fhir/Condition/1398"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/65071"
+    "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/46474"
   },
   "managingOrganization": {
-    "reference": "https://organization.cit-careplan-1525.local/fhir/Organization/20800"
+    "reference": "https://organization.cit-careplan-1716.local/fhir/Organization/20732"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
@@ -89,10 +89,10 @@ __Response__
   },
   "team": [
     {
-      "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/80031"
+      "reference": "https://organization.cit-careplan-1716.local/fhir/CareTeam/27202"
     },
     {
-      "reference": "https://organization.cit-careplan-1525.local/fhir/CareTeam/45239"
+      "reference": "https://organization.cit-careplan-1716.local/fhir/CareTeam/12372"
     }
   ]
 }

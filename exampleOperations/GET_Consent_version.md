@@ -1,11 +1,11 @@
-`GET [base]/Consent/1124/_history/2`
+`GET [base]/Consent/1127/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uc2VudC5yZWFkIiwiQ29uc2VudC5zZWFyY2giLCJDb25zZW50LnVwZGF0ZSIsIkNvbnNlbnQuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "Consent",
-  "id": "1124",
+  "id": "1127",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-01-06T13:59:47.586+00:00",
+    "lastUpdated": "2021-05-04T09:54:21.026+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -35,7 +35,7 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/17788"
+    "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/29727"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
@@ -43,12 +43,12 @@ __Response__
   },
   "consentingParty": [
     {
-      "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/5624"
+      "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/49813"
     }
   ],
   "actor": [
     {
-      "id": "0b9d4494-2b14-436c-8b5e-e1bb1e1e8597",
+      "id": "aa112016-da33-4076-9d55-520454d852eb",
       "role": {
         "coding": [
           {
@@ -58,7 +58,7 @@ __Response__
         ]
       },
       "reference": {
-        "reference": "https://patient.cit-careplan-1525.local/fhir/Patient/67396"
+        "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/32307"
       }
     }
   ],
@@ -67,7 +67,7 @@ __Response__
     {
       "meaning": "related",
       "reference": {
-        "reference": "https://careplan.cit-careplan-1525.local/fhir/EpisodeOfCare/1123"
+        "reference": "https://careplan.cit-careplan-1716.local/fhir/EpisodeOfCare/1126"
       }
     }
   ]
