@@ -2,6 +2,18 @@
 
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+ 
+### General changes
+ 
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
 ## 2021.2 (2021-05-05)
 #### System operations
 - Added description and example of `-s-get-patient-procedures` operation
