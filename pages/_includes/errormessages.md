@@ -236,11 +236,17 @@ If a requests result in an error, the error message can be obtained from the `di
 
 - `MEASUREMENT_SUBMITMEASUREMENT_MORE_THAN_ONE_DEVICE_QUALITY`: Only one device quality allowed for each observation/media
 
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_RESOLVED_TIMING`: ResolvedTiming must have either type=Resolved and start/end or type=Unresolved/Adhoc and no start/end
+
 - `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
 
 #### ehealth-organization
 
 - `ORGANIZATION_SOURCE_MUST_BE_MANUAL`: The operation can only be performed for Organization with source "manual"
+
+- `ORGANIZATION_IDENTIFIER_MUST_BE_SSL_WHEN_SOURCE_MANUAL`: The operation can only be performed for SSL Organizations when the source is "manual"
+
+- `ORGANIZATION_IDENTIFIER_NOT_UNIQUE`: Organization Identifier not unique: %s
 
 - `ORGANIZATION_IDENTIFIER_SYSTEM_NOT_ALLOWED_FOR_SOURCE_MANUAL`: Identifier system is not allowed for Organization with source "manual"
 

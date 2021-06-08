@@ -158,16 +158,28 @@
   path: GET_CarePlan_version.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan_validate.md
+  path: GET_Goal_search.md
 
 - profile: ehealth-careplan
-  path: PUT_CarePlan.md
+  path: GET_Goal_version.md
+
+- profile: ehealth-careplan
+  path: POST_CarePlan_validate.md
 
 - profile: ehealth-careplan
   path: POST_CarePlan_suggest-care-teams.md
 
 - profile: ehealth-careplan
   path: POST_CarePlan_update-care-teams.md
+
+- profile: ehealth-careplan
+  path: POST_Goal.md
+
+- profile: ehealth-careplan
+  path: PUT_CarePlan.md
+
+- profile: ehealth-careplan
+  path: PUT_Goal.md
 
 # ehealth-careteam
 - profile: ehealth-careteam
@@ -397,6 +409,16 @@
 
 - profile: ehealth-library
   path: PUT_Library.md
+
+# ehealth-measurement
+- profile: ehealth-measurement
+  path: GET_Media__filter=subject%20eq%20https%3A
+
+- profile: ehealth-measurement
+  path: GET_Observation__filter=subject%20eq%20https%3A
+
+- profile: ehealth-measurement
+  path: GET_QuestionnaireResponse__filter=subject%20eq%20https%3A
 
 # ehealth-media
 - profile: ehealth-media

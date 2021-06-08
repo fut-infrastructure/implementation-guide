@@ -9,11 +9,12 @@ From these sources Organizations are automatically imported into the eHealth inf
 For SSL supplier organizations not maintained by the SOR or STS-ORG registries, it is possible to manually create and maintain these organizations. 
   
 ### Identifiers
-Organizations are imported into the eHealth infrastructure from SOR and STS-ORG. This means that organisations can have different identifiers depending on the source system. For some organisations (for instance SSL suppliers), organizations can use a business registration number (CVR number) as identifier.
+Organizations are imported into the eHealth infrastructure from SOR and STS-ORG. This means that organisations can have different identifiers depending on the source system. For some organisations (for instance SSL suppliers), organizations can use an SSL Identifier as identifier.
 
+Identifier Systems:
 * SOR-ID: "urn:oid:1.2.208.176.1.1"
 * KOMBIT STS-ORG-ID: "https://www.kombit.dk/sts/organisation"
-* CVR number: "urn:oid:2.16.840.1.113883.2.24.1.1"
+* SSL Identifier: "http://ehealth.sundhed.dk/organization/ssl"
 
 Organizations created manually are not allowed to have identifiers of types SOR-ID or KOMBIT STS-ORG-ID.
 

@@ -1,0 +1,131 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="days-of-week"></id>
+   <meta>
+      <lastUpdated value="2019-10-24T11:53:00+11:00"></lastUpdated>
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status">
+      <valueString value="Informative"></valueString>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+      <valueInteger value="2"></valueInteger>
+   </extension>
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+      <valueCode value="pa"></valueCode>
+   </extension>
+   <url value="http://hl7.org/fhir/days-of-week"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:2.16.840.1.113883.4.642.1.507"></value>
+   </identifier>
+   <version value="3.0.2"></version>
+   <name value="DaysOfWeek"></name>
+   <status value="draft"></status>
+   <experimental value="false"></experimental>
+   <date value="2019-10-24T11:53:00+11:00"></date>
+   <publisher value="HL7 (FHIR Project)"></publisher>
+   <contact>
+      <telecom>
+         <system value="url"></system>
+         <value value="http://hl7.org/fhir"></value>
+      </telecom>
+      <telecom>
+         <system value="email"></system>
+         <value value="fhir@lists.hl7.org"></value>
+      </telecom>
+   </contact>
+   <description value="The days of the week."></description>
+   <caseSensitive value="true"></caseSensitive>
+   <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week"></valueSet>
+   <content value="complete"></content>
+   <concept>
+      <code value="mon"></code>
+      <display value="Monday"></display>
+      <definition value="Monday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Mandag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="tue"></code>
+      <display value="Tuesday"></display>
+      <definition value="Tuesday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Tirsdag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="wed"></code>
+      <display value="Wednesday"></display>
+      <definition value="Wednesday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Onsdag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="thu"></code>
+      <display value="Thursday"></display>
+      <definition value="Thursday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Torsdag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="fri"></code>
+      <display value="Friday"></display>
+      <definition value="Friday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Fredag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="sat"></code>
+      <display value="Saturday"></display>
+      <definition value="Saturday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Lørdag"></value>
+      </designation>
+   </concept>
+   <concept>
+      <code value="sun"></code>
+      <display value="Sunday"></display>
+      <definition value="Sunday"></definition>
+      <designation>
+         <language value="da"></language>
+         <use>
+            <system value="http://snomed.info/sct"></system>
+            <code value="900000000000013009"></code>
+         </use>
+         <value value="Søndag"></value>
+      </designation>
+   </concept>
+</CodeSystem>

@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -24,20 +24,19 @@ __Body__:
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "391c64a7-aabc-443f-a81f-b2c83372194b",
-        "name": "57c17be9-96f9-4808-a6f2-8bb3b344797a",
+        "url": "a3b11151-3bf8-4fe7-ad20-e137f9749e3e",
+        "name": "e99a132f-88e5-4f4b-9114-b9699795c0a8",
         "status": "draft",
         "kind": "logical",
         "abstract": true,
-        "type": "f67effea-517f-450d-928f-74bfb6e0fb87",
-        "snapshot": {
+        "type": "StructureDefinition",
+        "baseDefinition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion",
+        "derivation": "constraint",
+        "differential": {
           "element": [
             {
-              "id": "f67effea-517f-450d-928f-74bfb6e0fb87",
-              "path": "f67effea-517f-450d-928f-74bfb6e0fb87",
-              "definition": "a165ce44-8d6b-484a-9af5-2bc160883e1c",
-              "min": 0,
-              "max": "1"
+              "id": "StructureDefinition",
+              "path": "StructureDefinition"
             }
           ]
         }

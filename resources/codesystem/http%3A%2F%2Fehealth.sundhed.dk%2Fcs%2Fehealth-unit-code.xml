@@ -26,4 +26,13 @@
          <value value="1/ 30 sek"/>
       </designation>
    </concept>
+   <concept>
+      <code value="percentpoint"/>
+      <display value="percent point"/>
+      <definition value="Percentage point"/>
+      <designation>
+         <language value="da"/>
+         <value value="procentpoint"/>
+      </designation>
+   </concept>
 </CodeSystem>

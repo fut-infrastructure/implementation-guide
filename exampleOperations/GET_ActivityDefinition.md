@@ -1,11 +1,11 @@
-`GET [base]/ActivityDefinition/123`
+`GET [base]/ActivityDefinition/124`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "123",
+  "id": "124",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-12-21T12:49:02.294+00:00",
+    "lastUpdated": "2021-04-19T15:02:25.015+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -49,7 +49,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-647.local/fhir/Organization/38983"
+        "reference": "https://organization.cit-plan-705.local/fhir/Organization/27649"
       }
     },
     {
@@ -58,7 +58,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-647.local/fhir/Organization/99986"
+            "reference": "https://organization.cit-plan-705.local/fhir/Organization/52697"
           }
         },
         {
@@ -172,7 +172,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 117520507,
+            "value": 1913483160,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -180,8 +180,8 @@ __Response__
       ]
     }
   ],
-  "version": "993482e1-a2e0-4341-92a7-5dc2f4c1acb7",
-  "name": "13c87b11-172f-45c7-b083-3c4753f5aaa3",
+  "version": "177b9c80-34f7-4c0c-adac-eac24af44388",
+  "name": "cb0a0a96-d7b4-47da-a60e-a04334028d4c",
   "status": "active",
   "topic": [
     {

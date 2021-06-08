@@ -1,12 +1,12 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="terminology"/>
    <status value="active"/>
-   <date value="2020-12-18T15:09:17+00:00"/>
+   <date value="2021-04-20T03:59:48+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="terminology"/>
-      <version value="1.5.7"/>
+      <version value="1.7.0"/>
    </software>
    <implementation>
       <description value="eHealth terminology service"/>
@@ -1106,6 +1106,12 @@
          <name value="validate"/>
          <definition>
             <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate"/>
+         </definition>
+      </operation>
+      <operation>
+         <name value="validate-code"/>
+         <definition>
+            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate-code"/>
          </definition>
       </operation>
       <operation>

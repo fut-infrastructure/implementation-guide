@@ -956,7 +956,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="GoalTargetMeasure" />
         </extension>
-        <strength value="example" />
+        <strength value="required" />
         <description value="Codes to identify the value being tracked, e.g. body weight, blood pressure, or hemoglobin A1c level." />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/goal-target-measure" />
@@ -1425,7 +1425,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="GoalTargetMeasure" />
         </extension>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/goal-target-measure" />
         </valueSetReference>

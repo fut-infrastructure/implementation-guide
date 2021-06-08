@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,8 +15,6 @@ __Body__:
 {
   "resourceType": "ActivityDefinition",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2020-12-21T12:49:04.969+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -34,12 +32,29 @@ __Body__:
       }
     },
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-705.local/fhir/Organization/27649"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-647.local/fhir/Organization/74814"
+            "reference": "https://organization.cit-plan-705.local/fhir/Organization/52697"
           }
         },
         {
@@ -54,10 +69,115 @@ __Body__:
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange",
+      "extension": [
+        {
+          "url": "low",
+          "valueQuantity": {
+            "value": 2.0
+          }
+        },
+        {
+          "url": "high",
+          "valueQuantity": {
+            "value": 4.0
+          }
+        },
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
+                "code": "TBD"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+      "extension": [
+        {
+          "url": "qualityType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "qualityCode",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+      "extension": [
+        {
+          "url": "allowed",
+          "valueBoolean": true
+        },
+        {
+          "url": "situationQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                "code": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "url": "usageQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "deviceMeasuringQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "dataActuality",
+          "valueDuration": {
+            "value": 1913483160,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
     }
   ],
-  "version": "6d3e5b28-0c2f-43c8-b6c3-6c337c671aa3",
-  "name": "7eba5350-dd55-415f-be92-aad9b519807a",
+  "version": "177b9c80-34f7-4c0c-adac-eac24af44388",
+  "name": "cb0a0a96-d7b4-47da-a60e-a04334028d4c",
   "status": "active",
   "topic": [
     {
@@ -84,10 +204,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "125",
+  "id": "124",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-12-21T12:49:05.133+00:00",
+    "lastUpdated": "2021-04-19T15:02:25.015+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -105,12 +225,29 @@ __Response__
       }
     },
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+            "code": "TBD"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-705.local/fhir/Organization/27649"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-647.local/fhir/Organization/74814"
+            "reference": "https://organization.cit-plan-705.local/fhir/Organization/52697"
           }
         },
         {
@@ -125,10 +262,115 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-referenceRange",
+      "extension": [
+        {
+          "url": "low",
+          "valueQuantity": {
+            "value": 2.0
+          }
+        },
+        {
+          "url": "high",
+          "valueQuantity": {
+            "value": 4.0
+          }
+        },
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
+                "code": "TBD"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
+      "extension": [
+        {
+          "url": "qualityType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/quality-types",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "qualityCode",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-reuseCriteria",
+      "extension": [
+        {
+          "url": "allowed",
+          "valueBoolean": true
+        },
+        {
+          "url": "situationQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/situation-quality",
+                "code": "unknown"
+              }
+            ]
+          }
+        },
+        {
+          "url": "usageQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "deviceMeasuringQuality",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
+                "code": "TBD"
+              }
+            ]
+          }
+        },
+        {
+          "url": "dataActuality",
+          "valueDuration": {
+            "value": 1913483160,
+            "system": "http://unitsofmeasure.org",
+            "code": "h"
+          }
+        }
+      ]
     }
   ],
-  "version": "6d3e5b28-0c2f-43c8-b6c3-6c337c671aa3",
-  "name": "7eba5350-dd55-415f-be92-aad9b519807a",
+  "version": "177b9c80-34f7-4c0c-adac-eac24af44388",
+  "name": "cb0a0a96-d7b4-47da-a60e-a04334028d4c",
   "status": "active",
   "topic": [
     {

@@ -3,10 +3,10 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODg4YjUxZjEtNWEyNy00NjRlLWE0ODYtZmQ3NTkyZGQwNTRmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS01MzUubG9jYWwvZmhpci9QYXRpZW50LzE2MzQ5IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWIyZWJlNWYtY2QzYy00MTRhLTg0ODUtNWM2ZDM0MzQ0MjhjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS01OTIubG9jYWwvZmhpci9QYXRpZW50LzU3MTU4IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,7 +18,7 @@ __Body__:
   "id": "64",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2020-12-21T12:37:59.387+00:00",
+    "lastUpdated": "2021-04-19T15:15:18.292+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
@@ -27,16 +27,16 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-535.local/fhir/CarePlan/64853"
+        "reference": "https://careplan.cit-device-592.local/fhir/CarePlan/48394"
       }
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-device-535.local/fhir/Patient/16349"
+    "reference": "https://patient.cit-device-592.local/fhir/Patient/57158"
   },
   "device": {
-    "reference": "https://device.cit-device-535.local/fhir/Device/63"
+    "reference": "https://device.cit-device-592.local/fhir/Device/63"
   }
 }
 ```
@@ -48,7 +48,7 @@ __Response__
   "id": "64",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2020-12-21T12:37:59.776+00:00",
+    "lastUpdated": "2021-04-19T15:15:18.596+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
@@ -57,16 +57,16 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-535.local/fhir/CarePlan/64853"
+        "reference": "https://careplan.cit-device-592.local/fhir/CarePlan/48394"
       }
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-device-535.local/fhir/Patient/16349"
+    "reference": "https://patient.cit-device-592.local/fhir/Patient/57158"
   },
   "device": {
-    "reference": "https://device.cit-device-535.local/fhir/Device/63"
+    "reference": "https://device.cit-device-592.local/fhir/Device/63"
   }
 }
 ```

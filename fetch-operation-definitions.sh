@@ -1,12 +1,17 @@
 #!/bin/bash
+SCRIPT=$(readlink -f $0)
+REPOPATH=$(dirname "${SCRIPT}")
+source "${REPOPATH}/login-utility.sh"
+
 services="careplan device document-query document-transformation library measurement organization plan questionnaire reporting task"
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
 
 IG_PATH=$(pwd)
 echo "Fetching operation definitions from ${SOURCE_ENVIRONMENT} to ${IG_PATH}"
 
-
 function fetch_operation_definitions {
+  login
+
 	for service in $services; do
 		file="$IG_PATH/resources/capabilitystatement/${service}.xml"
 		#Ignore namespace declaration as xmllint can not handle it
@@ -14,8 +19,9 @@ function fetch_operation_definitions {
 		#pipe_commands explained: " | <remove the ' value=' string> | <remove quotes>"
 		pipe_commands=" | sed 's|value=||g' | sed 's/\"//g'"
 		operations=$(eval ${find_values_command}${pipe_commands})
+
 		for operation in $operations; do
-			status_code=$(curl -k -H 'Content-Type: application/fhir+xml' -H "Authorization: Bearer ${TOKEN}" -o /dev/null -sw '%{http_code}' ${operation});
+			status_code=$(curl -k -H 'Content-Type: application/fhir+xml' -H "${AUTHORIZATION}" -o /dev/null -sw '%{http_code}' ${operation});
 			if [ ${status_code} -eq 200 ]
 			then
 				filename=${operation##*/} #extract substring after last slash
@@ -24,7 +30,7 @@ function fetch_operation_definitions {
 				filename=${filename/--/-} #remove -
 				filename=${filename,,} #to lower case
 				echo "Fetching ${operation} and store as ${filename}"
-				curl -k -H "Content-Type: application/fhir+xml" -H "Authorization: Bearer ${TOKEN}" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
+				curl -k -H "Content-Type: application/fhir+xml" -H "${AUTHORIZATION}" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
 			else
 				echo "Unable to find ${operation} - status code: ${status_code}"
 				exit 1

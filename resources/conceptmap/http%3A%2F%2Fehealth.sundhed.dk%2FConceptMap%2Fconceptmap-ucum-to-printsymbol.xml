@@ -111,6 +111,36 @@
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>
         </element>
+        <element>
+            <code value="Cel"/>
+            <display value="degree Celsius"/>
+            <target>
+                <code value="Cel"/>
+                <display value="degree Celsius"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="mg/L"/>
+            <display value="milligram per liter"/>
+            <target>
+                <code value="mg/L"/>
+                <display value="milligram per liter"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="/min"/>
+            <display value="per minute"/>
+            <target>
+                <code value="/min"/>
+                <display value="per minute"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
     </group>
     <group>
         <source value="http://ehealth.sundhed.dk/cs/ehealth-unit-code"/>
@@ -121,6 +151,16 @@
             <target>
                 <code value="1/30sec"/>
                 <display value="one per 30 seconds"/>
+                <equivalence value="specializes"/>
+                <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
+            </target>
+        </element>
+        <element>
+            <code value="percentpoint"/>
+            <display value="percent point"/>
+            <target>
+                <code value="percentpoint"/>
+                <display value="percent point"/>
                 <equivalence value="specializes"/>
                 <comment value="Should really be specializes but igpublisher turns into narrower (which requires a comment)"/>
             </target>

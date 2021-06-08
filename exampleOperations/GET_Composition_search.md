@@ -1,11 +1,11 @@
-`GET [base]/Composition?title=ccbf2372-72a8-4174-b938-f5f89f990ba3`
+`GET [base]/Composition?title=e26bbd47-0037-4730-b025-2f989ab87eb9`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.0.2 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "8c32d1fc-24a7-4a70-ad1b-deb006f4167d",
+  "id": "081ce51e-e901-4c66-bdcb-804c412a9194",
   "meta": {
-    "lastUpdated": "2020-12-21T13:56:53.273+00:00"
+    "lastUpdated": "2021-04-19T15:15:32.572+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-transformation.cit-document-transformation-1046.local/fhir/Composition?_format=json&_pretty=true&title=ccbf2372-72a8-4174-b938-f5f89f990ba3"
+      "url": "https://document-transformation.cit-document-transformation-1083.local/fhir/Composition?_format=json&_pretty=true&title=e26bbd47-0037-4730-b025-2f989ab87eb9"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1046.local/fhir/Composition/84",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1083.local/fhir/Composition/84",
       "resource": {
         "resourceType": "Composition",
         "id": "84",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-12-21T13:56:52.919+00:00",
+          "lastUpdated": "2021-04-19T15:15:31.912+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -65,7 +65,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1046.local/fhir/Organization/12671"
+              "reference": "https://organization.cit-document-transformation-1083.local/fhir/Organization/9301"
             }
           },
           {
@@ -78,7 +78,7 @@ __Response__
             },
             "name": [
               {
-                "family": "a1175e1d-f673-4263-8429-db3d2f4e4e09"
+                "family": "5be11195-c245-43cb-9663-a979aa4b52c5"
               }
             ]
           }
@@ -95,26 +95,26 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2020-12-21T13:56:52+00:00",
+        "date": "2021-04-19T15:15:31+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "ccbf2372-72a8-4174-b938-f5f89f990ba3"
+        "title": "e26bbd47-0037-4730-b025-2f989ab87eb9"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1046.local/fhir/Composition/85",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1083.local/fhir/Composition/85",
       "resource": {
         "resourceType": "Composition",
         "id": "85",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2020-12-21T13:56:53.047+00:00",
+          "lastUpdated": "2021-04-19T15:15:32.179+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -144,7 +144,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1046.local/fhir/Organization/41075"
+              "reference": "https://organization.cit-document-transformation-1083.local/fhir/Organization/91558"
             }
           },
           {
@@ -157,7 +157,7 @@ __Response__
             },
             "name": [
               {
-                "family": "bd7e9f37-63ef-4bdc-9b6f-c46c7362e7f2"
+                "family": "2f433c90-0312-4108-a617-e1feae0473c8"
               }
             ]
           }
@@ -174,13 +174,13 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2020-12-21T13:56:53+00:00",
+        "date": "2021-04-19T15:15:32+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "ccbf2372-72a8-4174-b938-f5f89f990ba3"
+        "title": "e26bbd47-0037-4730-b025-2f989ab87eb9"
       },
       "search": {
         "mode": "match"

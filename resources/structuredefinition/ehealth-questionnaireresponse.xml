@@ -6,7 +6,7 @@
   <title value="eHealth QuestionnaireResponse" />
   <status value="draft" />
   <publisher value="ehealth.sundhed.dk" />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.0.2" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="QuestionnaireResponse" />
@@ -33,6 +33,17 @@
       <type>
         <code value="Extension" />
         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality" />
+      </type>
+    </element>
+    <element id="QuestionnaireResponse.extension:resolvedTiming">
+      <path value="QuestionnaireResponse.extension" />
+      <sliceName value="resolvedTiming" />
+      <short value="Resolved Timing" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing" />
       </type>
     </element>
     <element id="QuestionnaireResponse.basedOn">
