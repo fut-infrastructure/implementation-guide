@@ -86,7 +86,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="TBD" />
+        <description value="Value set of modifier role codes" />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/modifier-role" />
         </valueSetReference>

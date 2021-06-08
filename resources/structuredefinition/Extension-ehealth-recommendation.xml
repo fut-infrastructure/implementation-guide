@@ -34,7 +34,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <description value="TBD" />
+        <description value="Value set of recommendation codes." />
         <valueSetReference>
           <reference value="http://ehealth.sundhed.dk/vs/plandefinition-recommendation" />
         </valueSetReference>

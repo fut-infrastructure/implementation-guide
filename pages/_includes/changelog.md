@@ -5,7 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
  
 ### General changes
- 
+- Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
+
 ### Custom operations
 #### System operations
 #### Instance operations
