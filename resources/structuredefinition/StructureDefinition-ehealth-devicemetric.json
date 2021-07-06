@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ehealth-devicemetric",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric",
+  "version": "0.1.0",
+  "name": "EhealthDeviceMetric",
+  "title": "eHealth DeviceMetric",
+  "status": "active",
+  "description": "eHealth DeviceMetric",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceMetric",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceMetric",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceMetric",
+        "path": "DeviceMetric"
+      }
+    ]
+  }
+}

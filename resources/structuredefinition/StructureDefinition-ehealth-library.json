@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ehealth-library",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "anonymous"
+    }
+  ],
+  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library",
+  "version": "0.1.0",
+  "name": "EhealthLibrary",
+  "title": "eHealth Library",
+  "status": "active",
+  "description": "eHealth Library",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Library",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library",
+        "path": "Library"
+      }
+    ]
+  }
+}

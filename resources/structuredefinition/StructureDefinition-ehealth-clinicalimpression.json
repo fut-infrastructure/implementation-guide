@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ehealth-clinicalimpression",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
+  "version": "0.1.0",
+  "name": "EhealthClinicalImpression",
+  "title": "eHealth ClinicalImpression",
+  "status": "active",
+  "description": "eHealth ClinicalImpression",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ClinicalImpression",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ClinicalImpression",
+        "path": "ClinicalImpression"
+      }
+    ]
+  }
+}

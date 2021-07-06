@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ehealth-planDefinition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Specialized.Definitional Artifacts"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinition",
+  "version": "0.1.0",
+  "name": "EhealthPlanDefinition",
+  "title": "eHealth PlanDefinition",
+  "status": "active",
+  "description": "eHealth PlanDefinition",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition",
+        "path": "PlanDefinition"
+      }
+    ]
+  }
+}
