@@ -43,8 +43,9 @@
   "differential": {
     "element": [
       {
-        "id": "CareTeam",
-        "path": "CareTeam"
+        "id": "CareTeam.name",
+        "path": "CareTeam.name",
+        "min": 1
       }
     ]
   }
