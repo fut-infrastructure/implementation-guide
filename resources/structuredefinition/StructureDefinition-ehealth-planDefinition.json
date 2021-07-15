@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ehealth-planDefinition",
+  "id": "ehealth-plandefinition",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,7 +11,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-planDefinition",
+  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
   "version": "0.1.0",
   "name": "EhealthPlanDefinition",
   "title": "eHealth PlanDefinition",
