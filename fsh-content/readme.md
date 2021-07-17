@@ -1,0 +1,1 @@
+sushi . && ./_genonce.sh
