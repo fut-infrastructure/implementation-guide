@@ -1,0 +1,65 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ehealth-contactpoint-custodian",
+    "url": "http://ehealth.sundhed.dk/cs/contactpoint-custodian",
+    "version": "0.6.0",
+    "name": "ContactPointCustodian",
+    "title": "ContactPoint Custodian",
+    "status": "active",
+    "experimental": false,
+    "date": "2019-01-29T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Contact Point Custodian",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "TBD",
+            "display": "Example value - Under construction",
+            "definition": "Example value - Under construction",
+            "property": [
+                {
+                    "code": "deprecated",
+                    "valueDateTime": "2020-02-03"
+                }
+            ]
+        },
+        {
+            "code": "SOR",
+            "display": "Contact point maintained in the SOR register",
+            "definition": "Contact point maintained in the SOR register",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Kontaktinformation vedligeholdt i Sundhedsvæsenets organisationsregister (SOR)"
+                }
+            ]
+        },
+        {
+            "code": "ORG",
+            "display": "Contact point maintained in KOMBIT STS Organisation",
+            "definition": "Contact point maintained in KOMBIT STS Organisation",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Kontaktinformation vedligeholdt i KOMBIT STS Organisation"
+                }
+            ]
+        },
+        {
+            "code": "MAN",
+            "display": "Contact point maintained manually in eHealth Infrastructure",
+            "definition": "Contact point maintained manually in eHealth Infrastructure"
+        }
+    ]
+}

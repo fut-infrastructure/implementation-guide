@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ehealth-organization-specialty",
+    "url": "http://ehealth.sundhed.dk/vs/organization-specialty",
+    "version": "0.0.1",
+    "name": "OrganizationSpecialty",
+    "title": "Organization Specialty",
+    "status": "active",
+    "experimental": true,
+    "date": "2019-05-27T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "name": "ehealth.sundhed.dk",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Value set used for indicating the specialty for organizations.",
+    "compose": {
+        "include": [
+            {
+                "valueSet": [
+                    "http://ehealth.sundhed.dk/vs/sor-organization-specialty"
+                ]
+            }
+        ]
+    }
+}

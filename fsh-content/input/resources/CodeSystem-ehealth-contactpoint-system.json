@@ -1,0 +1,52 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ehealth-contactpoint-system",
+    "url": "http://ehealth.sundhed.dk/cs/contactpoint-system",
+    "version": "0.6.0",
+    "name": "ContactPointSystem",
+    "title": "ContactPoint System",
+    "status": "active",
+    "experimental": false,
+    "date": "2019-01-29T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Contact Point System",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "TBD",
+            "display": "Example value - Under construction",
+            "definition": "Example value - Under construction",
+            "property": [
+                {
+                    "code": "deprecated",
+                    "valueDateTime": "2020-02-03"
+                }
+            ]
+        },
+        {
+            "code": "EAN",
+            "display": "Global location number",
+            "designation": [
+                {
+                    "language": "en-US",
+                    "value": "Global location number"
+                },
+                {
+                    "language": "da",
+                    "value": "EAN-nummer"
+                }
+            ]
+        }
+    ]
+}
