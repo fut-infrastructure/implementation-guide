@@ -50,6 +50,20 @@
       {
         "id": "CarePlan",
         "path": "CarePlan"
+      },
+      {
+        "id": "CarePlan.extension:workflow-episodeOfCare",
+        "path": "CarePlan.extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ],
+        "min" : 1,
+        "max" : "1"
       }
     ]
   }
