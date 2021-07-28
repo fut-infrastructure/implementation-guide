@@ -60,6 +60,20 @@
       {
         "id": "Condition",
         "path": "Condition"
+      },
+      {
+        "id": "Condition.extension:workflow-episodeOfCare",
+        "path": "Condition.extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ],
+        "min" : 1,
+        "max" : "1"
       }
     ]
   }

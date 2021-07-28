@@ -55,6 +55,20 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest"
+      },
+      {
+        "id": "ServiceRequest.extension:workflow-episodeOfCare",
+        "path": "ServiceRequest.extension",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ],
+        "min" : 1,
+        "max" : "1"
       }
     ]
   }
