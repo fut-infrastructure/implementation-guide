@@ -12,3 +12,6 @@ resources/implementationguide/ig-validation-parameters.json
 ig.ini
 org.hl7.fhir.igpublisher.jar
 service_event_messages
+fsh-content/fsh-generated
+fsh-content/input-cache
+fsh-content/.jekyll-cache
