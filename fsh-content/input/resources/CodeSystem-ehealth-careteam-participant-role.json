@@ -1,214 +1,214 @@
 {
-   "id": "ehealth-careteam-participant-role",
-   "resourceType": "CodeSystem",
-   "concept": [
-      {
-         "display": "Citizen enroller",
-         "code": "citizenEnroller",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Borgeropretter"
-            }
-         ],
-         "definition": "Citizen enroller"
-      },
-      {
-         "display": "Clinical viewer",
-         "code": "clinicalViewer",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Klinisk se adgang"
-            }
-         ],
-         "definition": "Clinical viewer"
-      },
-      {
-         "display": "Monitoring assistor",
-         "code": "monitoringAssistor",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Monitoreringsmedhjælper"
-            }
-         ],
-         "definition": "Monitoring assistor"
-      },
-      {
-         "display": "Monitoring adjuster",
-         "code": "monitoring_adjuster",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Monitoreringstilretter"
-            }
-         ],
-         "definition": "Monitoring adjuster"
-      },
-      {
-         "display": "Report user",
-         "code": "reportUser",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Nøgletalsmedarbejder"
-            }
-         ],
-         "definition": "Report user"
-      },
-      {
-         "display": "Questionnaire editor",
-         "code": "questionnaireEditor",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Spørgeskemaeditor"
-            }
-         ],
-         "definition": "Questionnaire editor"
-      },
-      {
-         "display": "Clinical administrator",
-         "code": "clinicalAdministrator",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Pakke- og forløbsbygger"
-            }
-         ],
-         "definition": "Clinical administrator"
-      },
-      {
-         "display": "Clinical supporter",
-         "code": "clinicalSupporter",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Klinisk supporter"
-            }
-         ],
-         "definition": "Clinical supporter"
-      },
-      {
-         "display": "Careteam administrator",
-         "code": "careteamAdministrator",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Care Team Administrator"
-            }
-         ],
-         "definition": "Careteam administrator"
-      },
-      {
-         "display": "Order placer",
-         "code": "orderPlacer",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Bestiller af udstyr"
-            }
-         ],
-         "definition": "Placer of orders"
-      },
-      {
-         "display": "Service and logistics",
-         "code": "serviceAndLogistics",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Service og logistik samarbejdspartner"
-            }
-         ],
-         "definition": "Service and logistics supporter at business partner"
-      },
-      {
-         "display": "Incident reporter",
-         "code": "incidentReporter",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Fejlmelder"
-            }
-         ],
-         "definition": "Reporter of incidents"
-      },
-      {
-         "display": "Incident manager",
-         "code": "incidentManager",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Support samarbejdspartner"
-            }
-         ],
-         "definition": "Incident manager"
-      },
-      {
-         "display": "Catalogue responsible",
-         "code": "catalogueResponsible",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Service og logistik katalogansvarlig"
-            }
-         ],
-         "definition": "SSL catalogue responsible"
-      },
-      {
-         "display": "Catalogue annotator",
-         "code": "catalogueAnnotator",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Service og logistik katalogopmærker"
-            }
-         ],
-         "definition": "SSL catalogue annotator"
-      },
-      {
-         "display": "Contract responsible",
-         "code": "contractResponsible",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Service og logistik kontraktansvarlig"
-            }
-         ],
-         "definition": "SSL contract responsible"
-      },
-      {
-         "display": "Terminology administrator",
-         "code": "terminologyAdministrator",
-         "designation": [
-            {
-               "language": "da",
-               "value": "Terminologiadministrator"
-            }
-         ],
-         "definition": "Terminology administrator"
-      }
-   ],
-   "content": "complete",
-   "caseSensitive": true,
-   "status": "active",
-   "description": "Care Team Participant Role",
-   "name": "CareTeamParticipantRole",
-   "url": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-   "experimental": false,
-   "publisher": "ehealth.sundhed.dk",
-   "date": "2019-09-19T00:00:00+00:00",
-   "title": "CareTeam Participant Role",
-   "version": "0.6.0",
-   "contact": [
-      {
-         "telecom": [
-            {
-               "value": "http://ehealth.sundhed.dk/terminology",
-               "system": "url"
-            }
-         ]
-      }
-   ]
+  "resourceType": "CodeSystem",
+  "id": "ehealth-careteam-participant-role",
+  "url": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+  "version": "0.6.0",
+  "name": "CareTeamParticipantRole",
+  "title": "CareTeam Participant Role",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-09-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Care Team Participant Role",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "citizenEnroller",
+      "display": "Citizen enroller",
+      "definition": "Citizen enroller",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Borgeropretter"
+        }
+      ]
+    },
+    {
+      "code": "clinicalViewer",
+      "display": "Clinical viewer",
+      "definition": "Clinical viewer",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Klinisk se adgang"
+        }
+      ]
+    },
+    {
+      "code": "monitoringAssistor",
+      "display": "Monitoring assistor",
+      "definition": "Monitoring assistor",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Monitoreringsmedhjælper"
+        }
+      ]
+    },
+    {
+      "code": "monitoring_adjuster",
+      "display": "Monitoring adjuster",
+      "definition": "Monitoring adjuster",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Monitoreringstilretter"
+        }
+      ]
+    },
+    {
+      "code": "reportUser",
+      "display": "Report user",
+      "definition": "Report user",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Nøgletalsmedarbejder"
+        }
+      ]
+    },
+    {
+      "code": "questionnaireEditor",
+      "display": "Questionnaire editor",
+      "definition": "Questionnaire editor",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Spørgeskemaeditor"
+        }
+      ]
+    },
+    {
+      "code": "clinicalAdministrator",
+      "display": "Clinical administrator",
+      "definition": "Clinical administrator",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Pakke- og forløbsbygger"
+        }
+      ]
+    },
+    {
+      "code": "clinicalSupporter",
+      "display": "Clinical supporter",
+      "definition": "Clinical supporter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Klinisk supporter"
+        }
+      ]
+    },
+    {
+      "code": "careteamAdministrator",
+      "display": "Careteam administrator",
+      "definition": "Careteam administrator",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Care Team Administrator"
+        }
+      ]
+    },
+    {
+      "code": "orderPlacer",
+      "display": "Order placer",
+      "definition": "Placer of orders",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bestiller af udstyr"
+        }
+      ]
+    },
+    {
+      "code": "serviceAndLogistics",
+      "display": "Service and logistics",
+      "definition": "Service and logistics supporter at business partner",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Service og logistik samarbejdspartner"
+        }
+      ]
+    },
+    {
+      "code": "incidentReporter",
+      "display": "Incident reporter",
+      "definition": "Reporter of incidents",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Fejlmelder"
+        }
+      ]
+    },
+    {
+      "code": "incidentManager",
+      "display": "Incident manager",
+      "definition": "Incident manager",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Support samarbejdspartner"
+        }
+      ]
+    },
+    {
+      "code": "catalogueResponsible",
+      "display": "Catalogue responsible",
+      "definition": "SSL catalogue responsible",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Service og logistik katalogansvarlig"
+        }
+      ]
+    },
+    {
+      "code": "catalogueAnnotator",
+      "display": "Catalogue annotator",
+      "definition": "SSL catalogue annotator",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Service og logistik katalogopmærker"
+        }
+      ]
+    },
+    {
+      "code": "contractResponsible",
+      "display": "Contract responsible",
+      "definition": "SSL contract responsible",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Service og logistik kontraktansvarlig"
+        }
+      ]
+    },
+    {
+      "code": "terminologyAdministrator",
+      "display": "Terminology administrator",
+      "definition": "Terminology administrator",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Terminologiadministrator"
+        }
+      ]
+    }
+  ]
 }
