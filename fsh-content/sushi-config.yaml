@@ -4,22 +4,57 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: dk.ehealth.sundhed.fhir.ig.core
 canonical: http://ehealth.sundhed.dk/fhir
-name: FUT
+name: eHealth Infrastructure
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
+description: The Danish eHealth Infrastructure Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications.
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+publisher:
+  name: Systematic | Trifork
+  url: http://ehealth.sundhed.dk
+
+
 
 dependencies:
   #hl7.fhir.us.core: 3.1.0
   #hl7.fhir.us.davinci-deqm
   #hl7.fhir.au.base
   dk.fhir.ig.dk-core: current
+  #hl7.fhir.dk.core
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+
+pages:
+  index.md:
+  guidance.md:
+  profiles.md:
+  operations.md:
+  searchparams.md:
+  downloads.md:
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  General guidance: guidance.html
+  #FHIR Artifacts: artifacts.html
+  FHIR Artifacts: #artifact.html
+    #Profiles and Extensions: profiles-and-extensions.html
+    Profiles: profiles.html
+    Search Parameters: searchparams.html
+    Operations: operations.html
+    #Terminology: terminology.html
+    #Capability Statements: capability-statements.html
+  Downloads: downloads.html
+  
