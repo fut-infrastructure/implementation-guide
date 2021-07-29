@@ -17,3 +17,9 @@ releaseLabel: ci-build
 menu:
   Home: index.html
   Artifacts: artifacts.html
+
+dependencies:
+  #hl7.fhir.us.core: 3.1.0
+  #hl7.fhir.us.davinci-deqm
+  #hl7.fhir.au.base
+  dk.fhir.ig.dk-core: current
