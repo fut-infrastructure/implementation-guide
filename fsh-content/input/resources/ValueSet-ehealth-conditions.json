@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-conditions",
+  "url": "http://ehealth.sundhed.dk/vs/conditions",
+  "version": "2020-03-13T10:38:16",
+  "name": "Conditions",
+  "title": "Conditions",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Conditions.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/conditions"
+      },
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DJ44",
+            "display": "Kronisk obstruktiv lungesygdom"
+          }
+        ]
+      }
+    ]
+  }
+}
