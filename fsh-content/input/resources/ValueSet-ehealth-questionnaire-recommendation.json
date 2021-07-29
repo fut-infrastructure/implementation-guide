@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-questionnaire-recommendation",
+  "url": "http://ehealth.sundhed.dk/vs/questionnaire-recommendation",
+  "version": "0.6.0",
+  "name": "QuestionnaireRecommendation",
+  "title": "QuestionnaireRecommendation",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of questionnaire recommendation codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/questionnaire-recommendation"
+      }
+    ]
+  }
+}
