@@ -65,7 +65,7 @@ Title:       "Telecom System"
 * valueCodeableConcept from ehealth-contactpoint-system
 
 Extension:   ehealth-organization-telecomCustodian
-Title:       "Telecom System"
+Title:       "Telecom Custodian"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-contactpoint-custodian
 
