@@ -1,5 +1,3 @@
-## General Guidance
-
 ### Introduction to Domain
 Introduction to the eHealth domain can be found at the [wiki site](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/).
 

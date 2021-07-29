@@ -16,16 +16,10 @@ publisher:
   name: Systematic | Trifork
   url: http://ehealth.sundhed.dk
 
-
-
 dependencies:
-  #hl7.fhir.us.core: 3.1.0
-  #hl7.fhir.us.davinci-deqm
-  #hl7.fhir.au.base
   dk.fhir.ig.dk-core: current
-  #hl7.fhir.dk.core
 
-parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/resources
     - fsh-generated/resources
@@ -34,13 +28,20 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/intro-notes
     - fsh-generated/includes
 
+  generate: [genExamples]
+  usage-stats-opt-out: false
+
 pages:
   index.md:
+    title: eHealth Infrastructure Implementation Guide
   guidance.md:
+    title: General guidance
   profiles.md:
   operations.md:
   searchparams.md:
+    title: Search Parameters
   downloads.md:
+  terminology.md:
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -48,13 +49,10 @@ pages:
 menu:
   Home: index.html
   General guidance: guidance.html
-  #FHIR Artifacts: artifacts.html
-  FHIR Artifacts: #artifact.html
-    #Profiles and Extensions: profiles-and-extensions.html
-    Profiles: profiles.html
+  FHIR Artifacts:
+    Profiles and extensions: profiles.html
     Search Parameters: searchparams.html
     Operations: operations.html
-    #Terminology: terminology.html
-    #Capability Statements: capability-statements.html
+  Terminology: terminology.html
+  #Capability Statements: capability-statements.html
   Downloads: downloads.html
-  

@@ -1,4 +1,3 @@
-
 <ul>
 {% for sd_hash in site.data.structuredefinitions -%}
   {%- assign sd = sd_hash[1] -%}
@@ -7,6 +6,11 @@
   {%- endif -%}
 {%- endfor -%}  
 </ul> 
+
+### Extensions
+The following [Extensions]({{site.data.fhir.path}}extensibility.html) have been defined as part of this implementation Guide. A [registry of standard extensions]({{site.data.fhir.path}}extensibility-registry.html) can be found in the FHIR specification and additional extensions may be registered on the HL7 FHIR registry at <http://hl7.org/fhir/registry>.
+
+{% include list-simple-extensions.xhtml %}
 
 ### Datatype Profiles
 
