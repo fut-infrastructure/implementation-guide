@@ -1,7 +1,6 @@
 Profile: ehealth-careteam
 Id: ehealth-careteam
 Parent: CareTeam
-* extension contains ehealth-careteam-telecom named ehealth-careteam-telecom 0..*
 * status 1..1
 * name 1..1
 * subject 0..0
@@ -16,9 +15,5 @@ Parent: CareTeam
 * managingOrganization only Reference(ehealth-organization)
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
-
-Extension: ehealth-careteam-telecom
-Title:     "CareTeam telecom"
-* value[x] only ContactPoint
-* value[x].system from ehealth-contactpoint-system
-* value[x].value 1..1
+* telecom.system from ehealth-contactpoint-system
+* telecom.value 1..1
