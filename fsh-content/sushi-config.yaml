@@ -5,8 +5,9 @@
 id: dk.ehealth.sundhed.fhir.ig.core
 canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
+title: eHealth Infrastructure
 status: draft
-version: 0.1.0
+version: latest
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -38,6 +39,9 @@ pages:
   operations.md:
   searchparams.md:
     title: Search Parameters
+  error-messages.md:
+  service-event-tables.md:
+  event-messages.md:
   downloads.md:
   terminology.md:
 
@@ -54,5 +58,9 @@ menu:
     Operations: operations.html
   Artifacts Summary: artifacts.html
   Terminology: terminology.html
+  Events:
+    Event message types: event-messages.html
+    Service event messages: service-event-tables.html
+  Error Messsages: error-messages.html
   #Capability Statements: capability-statements.html
   Downloads: downloads.html
