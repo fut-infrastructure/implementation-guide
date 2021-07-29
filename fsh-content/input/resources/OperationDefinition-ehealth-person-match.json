@@ -1,1 +1,36 @@
-{"resourceType":"OperationDefinition","id":"ehealth-person-match","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Person name lookup</h2><p>OPERATION: Person name lookup</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-person-match</pre><div><p>This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of <a href=\"https://www.hl7.org/fhir/stu3/patient-operations.html#match\">https://www.hl7.org/fhir/stu3/patient-operations.html#match</a> on the Person resource.</p>\n</div><p>URL: [base]/Person/$match</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>resource</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/STU3/person.html\">Person</a></td><td/><td><div><p>The social security number of the person on which this operation is executed, wrapped in a Person. If the person exists in the infrastructure a link to the patient is provided</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/STU3/bundle.html\">Bundle</a></td><td/><td><div><p>A bundle containing a set of Person records that represent possible matches, optionally it may also contain an OperationOutcome with further information about the search results (such as warnings or information messages, such as a count of records that were close but eliminated)  If the operation was unsuccessful, then an OperationOutcome may be returned along with a BadRequest status Code (e.g. security issue, or insufficient properties in person fragment - check against profile)  Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource.</p>\n</div></td></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-person-match","name":"Person name lookup","status":"active","kind":"operation","date":"2019-10-16","description":"This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource.","idempotent":true,"code":"match","resource":["Person"],"system":false,"type":true,"instance":false,"parameter":[{"name":"resource","use":"in","min":1,"max":"1","documentation":"The social security number of the person on which this operation is executed, wrapped in a Person. If the person exists in the infrastructure a link to the patient is provided","type":"Person"},{"name":"return","use":"out","min":1,"max":"1","documentation":"A bundle containing a set of Person records that represent possible matches, optionally it may also contain an OperationOutcome with further information about the search results (such as warnings or information messages, such as a count of records that were close but eliminated)  If the operation was unsuccessful, then an OperationOutcome may be returned along with a BadRequest status Code (e.g. security issue, or insufficient properties in person fragment - check against profile)  Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource.","type":"Bundle"}]}
+{
+    "resourceType": "OperationDefinition",
+    "id": "ehealth-person-match",
+    "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-person-match",
+    "name": "Person name lookup",
+    "status": "active",
+    "kind": "operation",
+    "date": "2019-10-16",
+    "description": "This operation is used to do a lookup on a citizen in the national infrastructure based on the identifier of the person unless the identifier can be resolved locally. The operation returns a 'limited' Person resource with the identifier and name of the person being the only returned attributes in the bundle. The operation is an implementation of [https://www.hl7.org/fhir/stu3/patient-operations.html#match](https://www.hl7.org/fhir/stu3/patient-operations.html#match) on the Person resource.",
+    "affectsState": true,
+    "code": "match",
+    "resource": [
+        "Person"
+    ],
+    "system": false,
+    "type": true,
+    "instance": false,
+    "parameter": [
+        {
+            "name": "resource",
+            "use": "in",
+            "min": 1,
+            "max": "1",
+            "documentation": "The social security number of the person on which this operation is executed, wrapped in a Person. If the person exists in the infrastructure a link to the patient is provided",
+            "type": "Person"
+        },
+        {
+            "name": "return",
+            "use": "out",
+            "min": 1,
+            "max": "1",
+            "documentation": "A bundle containing a set of Person records that represent possible matches, optionally it may also contain an OperationOutcome with further information about the search results (such as warnings or information messages, such as a count of records that were close but eliminated)  If the operation was unsuccessful, then an OperationOutcome may be returned along with a BadRequest status Code (e.g. security issue, or insufficient properties in person fragment - check against profile)  Note: as this the only out parameter, it is a resource, and it has the name 'return', the result of this operation is returned directly as a resource.",
+            "type": "Bundle"
+        }
+    ]
+}

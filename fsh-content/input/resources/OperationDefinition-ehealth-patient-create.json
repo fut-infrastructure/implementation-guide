@@ -1,1 +1,39 @@
-{"resourceType":"OperationDefinition","id":"ehealth-patient-create","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Create Patient</h2><p>OPERATION: Create Patient</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-patient-create</pre><div><p>This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided civil registration number (crn) is used as the origin of the data.</p>\n<h3>Note</h3>\n<p>This operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers</p>\n</div><p>URL: [base]/Patient/$createPatient</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>crn</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/STU3/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>The social security number of the person on which this operation is executed.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/STU3/patient.html\">Patient</a></td><td/><td><div><p>The Patient resource that has been created on the server or an already created patient</p>\n</div></td></tr></table><div><p>See the wiki for examples on how to use the operation.</p>\n</div></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-patient-create","name":"Create Patient","status":"active","kind":"operation","date":"2019-02-02","description":"This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided civil registration number (crn) is used as the origin of the data. \r\n\r\n### Note\r\nThis operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers","code":"createPatient","comment":"See the wiki for examples on how to use the operation.","resource":["Patient"],"system":false,"type":true,"instance":false,"parameter":[{"name":"crn","use":"in","min":1,"max":"1","documentation":"The social security number of the person on which this operation is executed.","type":"Identifier","profile":{"reference":"http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dk-crn-identifier"}},{"name":"return","use":"out","min":1,"max":"1","documentation":"The Patient resource that has been created on the server or an already created patient","type":"Patient"}]}
+{
+    "resourceType": "OperationDefinition",
+    "id": "ehealth-patient-create",
+    "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-patient-create",
+    "name": "Create Patient",
+    "status": "active",
+    "kind": "operation",
+    "date": "2019-02-02",
+    "description": "This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided civil registration number (crn) is used as the origin of the data. \r\n\r\n### Note\r\nThis operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers",
+    "code": "createPatient",
+    "comment": "See the wiki for examples on how to use the operation.",
+    "resource": [
+        "Patient"
+    ],
+    "system": false,
+    "type": true,
+    "instance": false,
+    "parameter": [
+        {
+            "name": "crn",
+            "use": "in",
+            "min": 1,
+            "max": "1",
+            "documentation": "The social security number of the person on which this operation is executed.",
+            "type": "Identifier",
+            "profile": {
+                "reference": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dk-crn-identifier"
+            }
+        },
+        {
+            "name": "return",
+            "use": "out",
+            "min": 1,
+            "max": "1",
+            "documentation": "The Patient resource that has been created on the server or an already created patient",
+            "type": "Patient"
+        }
+    ]
+}

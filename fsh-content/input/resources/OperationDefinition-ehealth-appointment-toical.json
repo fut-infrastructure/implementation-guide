@@ -1,1 +1,29 @@
-{"resourceType":"OperationDefinition","id":"ehealth-appointment-toical","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Export Appointment to iCal</h2><p>OPERATION: Export Appointment to iCal</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-appointment-toical</pre><div><p>This operation exports the Appointment to an iCal <a href=\"https://tools.ietf.org/html/rfc5545\">RFC-5545</a> format</p>\n</div><p>URL: [base]/Appointment/[id]/$exportAsiCal</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/STU3/bundle.html\">Bundle</a></td><td/><td><div><p>A Binary resource that encapsulates the iCal file.</p>\n</div></td></tr></table><div><p>The iCal file is wrapped inside a Binary resource.</p>\n</div></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-appointment-toical","name":"Export Appointment to iCal","status":"active","kind":"operation","date":"2019-02-02","description":"This operation exports the Appointment to an iCal [RFC-5545](https://tools.ietf.org/html/rfc5545) format","idempotent":true,"code":"exportAsiCal","comment":"The iCal file is wrapped inside a Binary resource.","resource":["Appointment"],"system":false,"type":false,"instance":true,"parameter":[{"name":"return","use":"out","min":1,"max":"1","documentation":"A Binary resource that encapsulates the iCal file. ","type":"Bundle"}]}
+{
+    "resourceType": "OperationDefinition",
+    "id": "ehealth-appointment-toical",
+    "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-appointment-toical",
+    "name": "Export Appointment to iCal",
+    "status": "active",
+    "kind": "operation",
+    "date": "2019-02-02",
+    "description": "This operation exports the Appointment to an iCal [RFC-5545](https://tools.ietf.org/html/rfc5545) format",
+    "affectsState": true,
+    "code": "exportAsiCal",
+    "comment": "The iCal file is wrapped inside a Binary resource.",
+    "resource": [
+        "Appointment"
+    ],
+    "system": false,
+    "type": false,
+    "instance": true,
+    "parameter": [
+        {
+            "name": "return",
+            "use": "out",
+            "min": 1,
+            "max": "1",
+            "documentation": "A Binary resource that encapsulates the iCal file. ",
+            "type": "Bundle"
+        }
+    ]
+}
