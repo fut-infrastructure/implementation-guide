@@ -1,1 +1,16 @@
-{"resourceType":"SearchParameter","id":"ehealth-appointment-search-groupId","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/groupId</code></p><p><b>name</b>: appointmentGroupId</p><p><b>status</b>: active</p><p><b>date</b>: May 6, 2021 8:31:20 AM</p><p><b>code</b>: appointmentGroupId</p><p><b>base</b>: Appointment</p><p><b>type</b>: string</p><p><b>description</b>: Search parameter for finding resources based on group id</p><p><b>expression</b>: Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id')</p><p><b>xpathUsage</b>: normal</p></div>"},"url":"http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/groupId","name":"appointmentGroupId","status":"active","date":"2021-05-06T08:31:20+00:00","code":"appointmentGroupId","base":["Appointment"],"type":"string","description":"Search parameter for finding resources based on group id","expression":"Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id')","xpathUsage":"normal"}
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-appointment-search-groupId",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/groupId",
+    "name": "appointmentGroupId",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "appointmentGroupId",
+    "base": [
+        "Appointment"
+    ],
+    "type": "string",
+    "description": "Search parameter for finding resources based on group id",
+    "expression": "Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id')",
+    "xpathUsage": "normal"
+}

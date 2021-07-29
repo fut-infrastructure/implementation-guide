@@ -1,1 +1,16 @@
-{"resourceType":"SearchParameter","id":"ehealth-communication-search-careTeamSender","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamSender</code></p><p><b>name</b>: careTeamSender</p><p><b>status</b>: active</p><p><b>date</b>: May 6, 2021 8:31:20 AM</p><p><b>code</b>: careTeamSender</p><p><b>base</b>: Communication</p><p><b>type</b>: reference</p><p><b>description</b>: Search parameter for finding communication based on CareTeam sender</p><p><b>expression</b>: Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam')</p><p><b>xpathUsage</b>: normal</p></div>"},"url":"http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamSender","name":"careTeamSender","status":"active","date":"2021-05-06T08:31:20+00:00","code":"careTeamSender","base":["Communication"],"type":"reference","description":"Search parameter for finding communication based on CareTeam sender","expression":"Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam')","xpathUsage":"normal"}
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-communication-search-careTeamSender",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamSender",
+    "name": "careTeamSender",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "careTeamSender",
+    "base": [
+        "Communication"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding communication based on CareTeam sender",
+    "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam')",
+    "xpathUsage": "normal"
+}
