@@ -8,12 +8,12 @@ Parent: Questionnaire
 * extension contains ehealth-questionnaire-type named type 1..*
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
-* item.extension contains questionnaire-minOccurs named minOccurs 0..1
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
+* item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
+* item.extension contains http://hl7.org/fhir/StructureDefinition/maxValue named maxValue 0..1
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue named questionnaire-sliderStepValue 0..1
 * item.extension contains ehealth-questionnaire-feedback named feedback 0..1
-* item.extension contains questionnaire-maxOccurs named maxOccurs 0..1
-* item.extension contains minValue named minValue 0..1
-* item.extension contains maxValue named maxValue 0..1
-* item.extension contains ehealth-questionnaire-sliderStepValue named sliderStepValue 0..1
 * item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 
 Extension: ehealth-questionnaire-recommendation
@@ -49,16 +49,6 @@ Title:     "Questionnaire type"
 * valueCodeableConcept from ehealth-questionnaire-types
 * valueCodeableConcept 1..1
 
-Extension: questionnaire-minOccurs
-Title:     "minOccurs"
-* value[x] only integer
-* valueInteger 1..1
-
-Extension: questionnaire-maxOccurs
-Title:     "maxOccurs"
-* value[x] only integer
-* valueInteger 1..1
-
 Extension: ehealth-questionnaire-feedback
 Title:     "feedback"
 * extension contains
@@ -68,21 +58,6 @@ Title:     "feedback"
 * extension[value].value[x] only string
 * extension[min].value[x] only integer
 * extension[max].value[x] only integer
-
-Extension: minValue
-Title:     "minValue"
-* value[x] only date or dateTime or time or instant or decimal or integer
-* value[x] 1..1
-
-Extension: maxValue
-Title:     "maxValue"
-* value[x] only date or dateTime or time or instant or decimal or integer
-* value[x] 1..1
-
-Extension: ehealth-questionnaire-sliderStepValue
-Title:     "sliderStepValue"
-* value[x] only integer
-* valueInteger 1..1
 
 Extension: ehealth-overviewUsageMode
 Title:     "overviewUsageMode"
