@@ -1,0 +1,38 @@
+Trifork-ressourcer:
+
+Appointment.reason -> Appointment.reasonCode
+
+
+--
+Systematic-ressourcer:
+
+CareTeam:
+- Der benyttes en ContactPoint extension (ehealth-careteam-telecom), som binder til system "contactpoint-system". Det giver denne QA-fejl i R4:
+  - CareTeam telecom.value[x].Extension.value[x].system: Binding http://ehealth.sundhed.dk/vs/contactpoint-system is not a subset of binding http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1
+- På R4 CareTeam er telecom nu standard. Det er derfor fjernet som extension, og valueset-henvisningen er indført på standard-feltet i stedet.
+
+I CodeSystem ehealth-questionnaire-types findes nedenstående data, som får parsning til at køre i hegnet (det er derfor fjernet):
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.999.9.9"
+  },
+
+Ligeledes er dette fjernet fra CodeSystem ehealth-reference-range-type:
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.176.7.200.1"
+  },
+
+Extension "ehealth-quality":
+- har en tekstuel beskrivelse af, at der skal anvendes tre forskellige valuesets for qualityCode afhængigt af qualityType. Der kan ikke på struktureret vis anvendes mere end ét valueset, så løses muligvis ved at lave wrapper-valueset?
+
+Ang. ehealth-careplan:
+- CarePlan.author: der tillades 0..* i eksisterende, men i R4 tillades max 1
+- CarePlan.definition og CarePlan.activity.detail.definition er udgået i R4. Skal muligvis erstattes af instantiatesCanonical?
+- CarePlan.context er også udgået
+- CarePlan.activity.reference henviser til ProcedureRequest, som er udgået i R4
+- CarePlan extensions "ehealth-careplan-statusHistory" og "ehealth-careplan-statusschedule" har en status, som henviser til STU3 ValueSet "care-plan-status". Dette ValueSet eksisterer ikke i R4, men skal muligvis erstattes af care-plan-activity-status? Er dog ikke 1-til-1 med STU3
+- CarePlan.status: ValueSet careplan-status findes ikke i R4. Der er skiftet til request-status, som dog ikke matcher 1-til-1 (suspended og cancelled er udgået, og on-hold, unknown og revoked er tilføjet)
+
