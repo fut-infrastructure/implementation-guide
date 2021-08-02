@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-careplan-category",
+  "url": "http://ehealth.sundhed.dk/cs/careplan-category",
+  "version": "0.6.0",
+  "name": "CarePlanCategory",
+  "title": "CarePlan Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Care Plan Category",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    },
+    {
+      "code": "TBD2",
+      "display": "Example value 2 - Under construction",
+      "definition": "Example value 2 - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    }
+  ]
+}
