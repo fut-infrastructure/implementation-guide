@@ -5,7 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
  
 ### General changes
-- Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
+Entire eHealth Implementation Guide migrated to FHIR R4. 
 
 ### Custom operations
 #### System operations
@@ -14,6 +14,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+
+#### CarePlan
+- Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4)
+
+#### StructutureDefinition ehealth-modifier-role and ehealth-recommendation
+- Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
 
 ## 2021.2 (2021-05-05)
 #### System operations
