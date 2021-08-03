@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-clinicalimpression-finding-codes",
+  "url": "http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes",
+  "version": "0.6.0",
+  "name": "ClinicalImpressionFindingCodes",
+  "title": "ClinicalImpression Finding Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Clinical Impression Finding Codes",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "red-question-answer",
+      "display": "red question and answer combination",
+      "definition": "Applied to a single question and answer pair, this indicates a red combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one red combination found.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Rød spørgsmål/svar-kombination fundet i spørgeskemabesvarelse"
+        }
+      ]
+    },
+    {
+      "code": "yellow-question-answer",
+      "display": "yellow question and answer combination",
+      "definition": "Applied to a single question and answer pair, this indicates a yellow combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one yellow combination found.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Gul spørgsmål/svar-kombination fundet i spørgeskemabesvarelse"
+        }
+      ]
+    },
+    {
+      "code": "green-question-answer",
+      "display": "green question and answer combination",
+      "definition": "Applied to a single question and answer pair, this indicates a green combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates no red or yellow combinations found.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Grøn spørgsmål/svar-kombination fundet i spørgeskemabesvarelse. Når anført som opsummering for hel spørgeskemabesvarelse er der ikke fundet røde eller gule spørgsmål/svar-kombinationer."
+        }
+      ]
+    },
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    }
+  ]
+}
