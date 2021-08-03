@@ -47,3 +47,6 @@ ehealth-communication:
 ehealth-communicationrequest
 - basedOn henviser til ProcedureRequest, som er udgået i R4
 - context er udgået
+
+ehealth-composition:
+- class er omdøbt til category
