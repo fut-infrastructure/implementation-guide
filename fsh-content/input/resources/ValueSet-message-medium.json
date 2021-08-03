@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "message-medium",
+  "url": "http://ehealth.sundhed.dk/vs/message-medium",
+  "version": "0.0.1",
+  "name": "MessageMedium",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "FUT",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://digst.dk/digital-service/digital-velfaerd/telemedicin-kol/faelles-udbud-af-telemedicin-fut/"
+        }
+      ]
+    }
+  ],
+  "description": "The set of possible message types",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/message-medium",
+        "concept": [
+          {
+            "code": "nemsms",
+            "display": "NemSMS",
+            "designation": [
+              {
+                "language": "da",
+                "value": "NemSMS"
+              }
+            ]
+          },
+          {
+            "code": "eboks",
+            "display": "eBoks",
+            "designation": [
+              {
+                "language": "da",
+                "value": "eBoks"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

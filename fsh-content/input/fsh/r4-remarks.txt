@@ -43,3 +43,7 @@ ehealth-communication:
 - definition er udgået. Skal måske erstattes af instantiatesCanonical?
 - context er udgået
 - Max 1 topic - tidligere 0..*. Og refererer CodeableConcept i stedet for Reference
+
+ehealth-communicationrequest
+- basedOn henviser til ProcedureRequest, som er udgået i R4
+- context er udgået
