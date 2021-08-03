@@ -36,6 +36,10 @@ Ang. ehealth-careplan:
 - CarePlan extensions "ehealth-careplan-statusHistory" og "ehealth-careplan-statusschedule" har en status, som henviser til STU3 ValueSet "care-plan-status". Dette ValueSet eksisterer ikke i R4, men skal muligvis erstattes af care-plan-activity-status? Er dog ikke 1-til-1 med STU3
 - CarePlan.status: ValueSet careplan-status findes ikke i R4. Der er skiftet til request-status, som dog ikke matcher 1-til-1 (suspended og cancelled er udgået, og on-hold, unknown og revoked er tilføjet)
 
-ClinicalImpression:
+ehealth-clinicalimpression:
 - context og action er udgået i R4
 
+ehealth-communication:
+- definition er udgået. Skal måske erstattes af instantiatesCanonical?
+- context er udgået
+- Max 1 topic - tidligere 0..*. Og refererer CodeableConcept i stedet for Reference
