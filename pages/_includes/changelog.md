@@ -14,9 +14,9 @@ Entire eHealth Implementation Guide migrated to FHIR R4.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4). This extension is added to all clinical resources that previously had a context reference. The episodeOfCare reference is now mandatory in all cases.  
 
 #### CarePlan
-- Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4)
 
 #### ProcedureRequest
 - Removed in FHIR R4. Replaced by ServiceRequest
