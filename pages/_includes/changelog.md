@@ -18,6 +18,12 @@ Entire eHealth Implementation Guide migrated to FHIR R4.
 #### CarePlan
 - Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4)
 
+#### ProcedureRequest
+- Removed in FHIR R4. Replaced by ServiceRequest
+
+#### ServiceRequest
+- Added and adapted as replacement for ProcedureRequest
+
 #### StructutureDefinition ehealth-modifier-role and ehealth-recommendation
 - Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
 
