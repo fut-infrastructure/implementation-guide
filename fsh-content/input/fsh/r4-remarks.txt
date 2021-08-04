@@ -80,3 +80,5 @@ ehealth-deviceusestatement:
 ehealth-documentreference
 - class er omdøbt til category
 
+ehealth-episodeofcare:
+- referralRequest henviser til ReferralRequest, som ikke findes i R4 (i stedet ServiceRequest)
