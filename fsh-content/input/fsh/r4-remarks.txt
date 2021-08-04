@@ -82,3 +82,7 @@ ehealth-documentreference
 
 ehealth-episodeofcare:
 - referralRequest henviser til ReferralRequest, som ikke findes i R4 (i stedet ServiceRequest)
+
+ehealth-goal:
+- adresses inkluderer ehealth-procedurerequest. Dette er er rettet til ehealth-servicerequest
+
