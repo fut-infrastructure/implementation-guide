@@ -1,7 +1,8 @@
 Trifork-ressourcer:
 
-Appointment.reason -> Appointment.reasonCode
-
+ehealth-appointment + ehealth-group-appointment:
+- reason omdøbt til reasonCode
+- indication er udgået
 
 --
 Systematic-ressourcer:
