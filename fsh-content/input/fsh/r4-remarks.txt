@@ -50,3 +50,6 @@ ehealth-communicationrequest
 
 ehealth-composition:
 - class er omdøbt til category
+
+ehealth-condition:
+- context er udgået
