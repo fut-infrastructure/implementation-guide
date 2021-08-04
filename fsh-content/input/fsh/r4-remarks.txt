@@ -25,6 +25,13 @@ Ligeledes er dette fjernet fra CodeSystem ehealth-reference-range-type:
     "value": "urn:oid:1.2.208.176.7.200.1"
   },
 
+... og denne fra CodeSystem-1.2.208.176.2.1--20190829.json:
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.176.2.1"
+  },
+
 Extension "ehealth-quality":
 - har en tekstuel beskrivelse af, at der skal anvendes tre forskellige valuesets for qualityCode afhængigt af qualityType. Der kan ikke på struktureret vis anvendes mere end ét valueset, så løses muligvis ved at lave wrapper-valueset?
 
