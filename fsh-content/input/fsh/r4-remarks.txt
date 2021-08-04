@@ -67,3 +67,5 @@ ehealth-consent:
 - sourceIdentifier er udgået
 - except er udgået
 
+ehealth-deviceusestatement:
+- indication er udgået
