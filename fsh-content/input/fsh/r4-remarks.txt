@@ -53,3 +53,10 @@ ehealth-composition:
 
 ehealth-condition:
 - context er udgået
+
+ehealth-consent:
+- period, data og actor er udgået i R4. Mulig modellering under "provision"?
+- consentingParty er udgået
+- sourceIdentifier er udgået
+- except er udgået
+
