@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-format-codes",
+  "url": "http://ehealth.sundhed.dk/vs/format-codes",
+  "version": "0.6.0",
+  "name": "FormatCodes",
+  "title": "FormatCodes",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Format Codes value set.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs"
+        ]
+      }
+    ]
+  }
+}

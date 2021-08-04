@@ -32,6 +32,13 @@ Ligeledes er dette fjernet fra CodeSystem ehealth-reference-range-type:
     "value": "urn:oid:1.2.208.176.2.1"
   },
 
+... og denne fra CodeSystem-dk-ihe-formatcode-cs.json:
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.184.100.10"
+  },
+
 Extension "ehealth-quality":
 - har en tekstuel beskrivelse af, at der skal anvendes tre forskellige valuesets for qualityCode afhængigt af qualityType. Der kan ikke på struktureret vis anvendes mere end ét valueset, så løses muligvis ved at lave wrapper-valueset?
 
@@ -69,3 +76,7 @@ ehealth-consent:
 
 ehealth-deviceusestatement:
 - indication er udgået
+
+ehealth-documentreference
+- class er omdøbt til category
+
