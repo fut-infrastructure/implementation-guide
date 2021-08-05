@@ -1,0 +1,50 @@
+{
+    "resourceType": "Patient",
+    "meta":
+    {
+      "profile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
+      ]
+    },
+    "id": "patient01",
+    "identifier": [
+      {
+        "system": "urn:oid:1.2.208.176.1.2",
+        "value": "2512489996"
+      }
+    ],
+    "name": [
+      {
+        "family": "Berggren",
+        "given": [
+          "Nancy",
+          "Ann"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "65123456",
+        "use": "home"
+      },
+      {
+        "system": "email",
+        "value": "nab@udkantsdanmark.dk",
+        "use": "work"
+      }
+    ],
+    "gender": "unknown",
+    "address": [
+      {
+        "use": "home",
+        "line": [
+          "Tårnhøjvej 47 ",
+          "Landet"
+        ],
+        "city": "Aalborg Øst",
+        "postalCode": "9220",
+        "country": "Danmark"
+      }
+    ]
+  }

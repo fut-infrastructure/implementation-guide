@@ -1,7 +1,8 @@
 Trifork-ressourcer:
 
-Appointment.reason -> Appointment.reasonCode
-
+ehealth-appointment + ehealth-group-appointment:
+- reason omdøbt til reasonCode
+- indication er udgået
 
 --
 Systematic-ressourcer:
@@ -25,6 +26,20 @@ Ligeledes er dette fjernet fra CodeSystem ehealth-reference-range-type:
     "value": "urn:oid:1.2.208.176.7.200.1"
   },
 
+... og denne fra CodeSystem-1.2.208.176.2.1--20190829.json:
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.176.2.1"
+  },
+
+... og denne fra CodeSystem-dk-ihe-formatcode-cs.json:
+
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.184.100.10"
+  },
+
 Extension "ehealth-quality":
 - har en tekstuel beskrivelse af, at der skal anvendes tre forskellige valuesets for qualityCode afhængigt af qualityType. Der kan ikke på struktureret vis anvendes mere end ét valueset, så løses muligvis ved at lave wrapper-valueset?
 
@@ -43,3 +58,42 @@ ehealth-communication:
 - definition er udgået. Skal måske erstattes af instantiatesCanonical?
 - context er udgået
 - Max 1 topic - tidligere 0..*. Og refererer CodeableConcept i stedet for Reference
+
+ehealth-communicationrequest
+- basedOn henviser til ProcedureRequest, som er udgået i R4
+- context er udgået
+
+ehealth-composition:
+- class er omdøbt til category
+
+ehealth-condition:
+- context er udgået
+
+ehealth-consent:
+- period, data og actor er udgået i R4. Mulig modellering under "provision"?
+- consentingParty er udgået
+- sourceIdentifier er udgået
+- except er udgået
+
+ehealth-deviceusestatement:
+- indication er udgået
+
+ehealth-documentreference
+- class er omdøbt til category
+
+ehealth-episodeofcare:
+- referralRequest henviser til ReferralRequest, som ikke findes i R4 (i stedet ServiceRequest)
+
+ehealth-goal:
+- adresses inkluderer ehealth-procedurerequest. Dette er er rettet til ehealth-servicerequest
+
+ehealth-guidanceresponse:
+- module kan ikke længere referere ServiceRequest
+- context udgået
+- reason udgået
+
+ehealth-library:
+- basedOn refererer til ProcedureRequest, som er udgået. Ændret til ehealth-servicerequest
+
+ehealth-media:
+- occurrence[x] omdøbt til created[x]

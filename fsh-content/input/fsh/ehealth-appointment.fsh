@@ -17,36 +17,3 @@ Parent: Appointment
 * participant 2..*
 * participant.extension contains ehealth-ext-careteam named careteam 0..1
 * participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson)
-
-Extension:   ehealth-responsible
-Title:       "Responsible"
-* value[x] only Reference(ehealth-careteam or ehealth-practitioner)
-
-Extension:   ehealth-group-id
-Title:       "Group id"
-* value[x] only string
-
-Extension:   ehealth-legalBasis
-Title:       "Legal basis"
-* value[x] only CodeableConcept
-* valueCodeableConcept from jurisdiction
-
-Extension:   ehealth-releasableResource
-Title:       "Releasable resource"
-* value[x] only boolean
-
-Extension:   ehealth-responsible-organization
-Title:       "Responsible organization"
-* value[x] only Reference(ehealth-organization)
-
-Extension:   ehealth-performing-organization
-Title:       "Performing organization"
-* value[x] only Reference(ehealth-organization)
-
-Extension:   ehealth-performer
-Title:       "Performer"
-* value[x] only Reference(ehealth-careteam or ehealth-practitioner or ehealth-organization)
-
-Extension:   ehealth-ext-careteam
-Title:       "Careteam"
-* value[x] only Reference(ehealth-careteam)
