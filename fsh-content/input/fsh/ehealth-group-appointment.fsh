@@ -20,20 +20,4 @@ Parent: Appointment
 * participant.extension contains ehealth-ext-careteam named careteam 0..1
 * participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson)
 * participant.extension contains ehealth-assigning-careteam named assigningCareteam 0..1
-
-Extension: ehealth-creator
-Title: "Creator"
-* valueReference only Reference(ehealth-careteam)
-
-Extension: ehealth-intendedAudience
-Title: "Intended audience"
-* valueReference only Reference(ehealth-organization)
-
-Extension: ehealth-registration-deadline
-Title: "Registration deadline"
-* value[x] only dateTime
-
-Extension: ehealth-assigning-careteam
-Title: "Assigning careteam"
-* valueReference only Reference(ehealth-careteam)
-
+* description 1..1
