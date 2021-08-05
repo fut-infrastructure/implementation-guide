@@ -91,3 +91,9 @@ ehealth-guidanceresponse:
 - module kan ikke længere referere ServiceRequest
 - context udgået
 - reason udgået
+
+ehealth-library:
+- basedOn refererer til ProcedureRequest, som er udgået. Ændret til ehealth-servicerequest
+
+ehealth-media:
+- occurrence[x] omdøbt til created[x]
