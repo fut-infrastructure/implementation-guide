@@ -103,3 +103,7 @@ ehealth-message:
 - context er udgået
 - notDone/notDoneReason er udgået
 
+ehealth-observation:
+- basedOn-reference er rettet fra ehealth-procedurerequest til ehealth-servicerequest
+- context er udgået
+- related er udgået
