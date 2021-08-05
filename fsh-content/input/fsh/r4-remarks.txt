@@ -87,3 +87,7 @@ ehealth-episodeofcare:
 ehealth-goal:
 - adresses inkluderer ehealth-procedurerequest. Dette er er rettet til ehealth-servicerequest
 
+ehealth-guidanceresponse:
+- module kan ikke længere referere ServiceRequest
+- context udgået
+- reason udgået
