@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-event-status",
+  "url": "http://ehealth.sundhed.dk/vs/event-status",
+  "version": "0.6.0",
+  "name": "EventStatus",
+  "title": "EventStatus",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Status codes for ehealth-message",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/event-status",
+        "concept": [
+          {
+            "code": "preparation",
+            "display": "Preparation"
+          },
+          {
+            "code": "completed",
+            "display": "Completed"
+          },
+          {
+            "code": "aborted",
+            "display": "Aborted"
+          }
+        ]
+      }
+    ]
+  }
+}

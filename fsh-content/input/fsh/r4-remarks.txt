@@ -97,3 +97,9 @@ ehealth-library:
 
 ehealth-media:
 - occurrence[x] omdøbt til created[x]
+
+ehealth-message:
+- definition er udgået
+- context er udgået
+- notDone/notDoneReason er udgået
+

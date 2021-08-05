@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-communication-not-done-reason",
+  "url": "http://ehealth.sundhed.dk/vs/communication-not-done-reason",
+  "version": "0.6.0",
+  "name": "CommunicationNotDoneReason",
+  "title": "CommunicationNotDoneReason",
+  "status": "active",
+  "experimental": true,
+  "date": "2020-08-28T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Not done reason codes for ehealth-message",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/event-status",
+        "concept": [
+          {
+            "code": "in-progress",
+            "display": "In Progress"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/communication-not-done-reason",
+        "concept": [
+          {
+            "code": "system-error",
+            "display": "System Error"
+          },
+          {
+            "code": "recipient-unavailable",
+            "display": "Recipient Unavailable"
+          }
+        ]
+      }
+    ]
+  }
+}

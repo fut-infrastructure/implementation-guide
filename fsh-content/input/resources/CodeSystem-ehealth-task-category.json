@@ -1,0 +1,192 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-task-category",
+  "url": "http://ehealth.sundhed.dk/cs/task-category",
+  "version": "0.6.0",
+  "name": "TaskCategory",
+  "title": "Task Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Task Category",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-27"
+        }
+      ]
+    },
+    {
+      "code": "MissingMeasurementResolving",
+      "display": "Need resolving of why scheduled measurement has not been submitted",
+      "definition": "Need resolving of why scheduled measurement has not been submitted",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Afklaring af årsag til manglende målinger"
+        }
+      ]
+    },
+    {
+      "code": "UnexpectedMeasurementResolving",
+      "display": "Need resolving of why unexpected measurement was submitted",
+      "definition": "Need resolving of why unexpected measurement was submitted",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Uventet måling"
+        }
+      ]
+    },
+    {
+      "code": "MeasurementForAssessment",
+      "display": "Need assessment of measurement",
+      "definition": "Need assessment of measurement",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Måling til vurdering"
+        }
+      ]
+    },
+    {
+      "code": "OpenSSLOrder",
+      "display": "Need processing of open SSL order",
+      "definition": "Need processing of open SSL order",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Behandling af åben SSL bestilling"
+        }
+      ]
+    },
+    {
+      "code": "CalibrationNeeded",
+      "display": "Device in need of calibration",
+      "definition": "Device in need of calibration",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Måleudstyr har behov for kalibrering"
+        }
+      ]
+    },
+    {
+      "code": "MeasurementForAssessmentFailureInAutoProcessing",
+      "display": "Measurement Assessment failure during automated processing",
+      "definition": "Measurement Assessment failure during automated processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Vurdering af måling er fejlet under automatisk behandling"
+        }
+      ]
+    },
+    {
+      "code": "LibraryUseMismatchFixingNeeded",
+      "display": "Input and rule did not match",
+      "definition": "Input and rule did not match",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Input og regel passer ikke sammen"
+        }
+      ]
+    },
+    {
+      "code": "RefRangeNeeded",
+      "display": "Missing reference range required for automated processing",
+      "definition": "Missing reference range required for automated processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mangler grænseværdi påkrævet for automatisk behandling"
+        }
+      ]
+    },
+    {
+      "code": "RefRangeFixingNeeded",
+      "display": "Reference range required for automated processing needs fixing",
+      "definition": "Reference range required for automated processing needs fixing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Grænseværdi påkrævet for automatisk behandling skal udbedres"
+        }
+      ]
+    },
+    {
+      "code": "RefBaseNeeded",
+      "display": "Missing in force reference base required for automatic processing",
+      "definition": "Missing in force reference base required for automatic processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mangler gældende referenceværdi påkrævet for automatisk behandling"
+        }
+      ]
+    },
+    {
+      "code": "RefBaseFixingNeeded",
+      "display": "In force reference base required for automatic processing needs fixing",
+      "definition": "In force reference base required for automatic processing needs fixing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Gældende referenceværdi påkrævet for automatisk behandling skal udbedres"
+        }
+      ]
+    },
+    {
+      "code": "RequiredQuestionAnswerMissing",
+      "display": "Missing question answers required for automated processing",
+      "definition": "Missing question answers required for automated processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mangler besvarelse af spørgsmål påkrævet for automatisk behandling"
+        }
+      ]
+    },
+    {
+      "code": "ExpectedDelivery",
+      "display": "Delivery expected",
+      "definition": "Delivery expected",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Forventet levering"
+        }
+      ]
+    },
+    {
+      "code": "MeasurementForAssessmentNotTriaged",
+      "display": "Need assessment of measurement where triage was not performed during automated processing",
+      "definition": "Need assessment of measurement where triage was not performed during automated processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Måling til vurdering, hvor triagering ikke er udført af automatiseret behandling"
+        }
+      ]
+    }
+  ]
+}
