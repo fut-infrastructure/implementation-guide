@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-sexuality",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-sexuality",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Seksualitet",
+  "title": "Fælles Sprog III, Seksualitet",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Seksualitet",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SEXUALITY",
+      "display": "Problemer med seksualitet",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med seksualitet"
+        }
+      ]
+    }
+  ]
+}

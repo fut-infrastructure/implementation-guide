@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-nutrition",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-nutrition",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Ernæring",
+  "title": "Fælles Sprog III, Ernæring",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Ernæring",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "FLUID_INTAKE",
+      "display": "Problemer med væskeindtag",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med væskeindtag"
+        }
+      ]
+    },
+    {
+      "code": "FOOD_INTAKE",
+      "display": "Problemer med fødeindtag",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med fødeindtag"
+        }
+      ]
+    },
+    {
+      "code": "WEIGHT_CHANGE",
+      "display": "Uhensigtsmæssig vægtændring",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Uhensigtsmæssig vægtændring"
+        }
+      ]
+    },
+    {
+      "code": "OVERWEIGHT",
+      "display": "Problemer med overvægt",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med overvægt"
+        }
+      ]
+    },
+    {
+      "code": "UNDERWEIGHT",
+      "display": "Problemer med undervægt",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med undervægt"
+        }
+      ]
+    }
+  ]
+}

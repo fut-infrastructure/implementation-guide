@@ -1,0 +1,96 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-group-mentalfunctions",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Mentale funktioner",
+  "title": "Fælles Sprog III, Mentale funktioner",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Mentale funktioner",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ACQUIRE_SKILLS",
+      "display": "Tilegne sig færdigheder",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Tilegne sig færdigheder"
+        }
+      ]
+    },
+    {
+      "code": "PROBLEM_SOLVING",
+      "display": "Problemløsning",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemløsning"
+        }
+      ]
+    },
+    {
+      "code": "APPLY_COMMUNICATION_EQUIPMENT_AND_TECHNIQUES",
+      "display": "Anvende kommunikationsudstyr og -teknikker",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Anvende kommunikationsudstyr og -teknikker"
+        }
+      ]
+    },
+    {
+      "code": "ORIENTATION",
+      "display": "Orienteringsevne",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Orienteringsevne"
+        }
+      ]
+    },
+    {
+      "code": "ENERGY_AND_ACTING_POWER",
+      "display": "Energi og handlekraft",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Energi og handlekraft"
+        }
+      ]
+    },
+    {
+      "code": "MEMORY",
+      "display": "Hukommelse",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hukommelse"
+        }
+      ]
+    },
+    {
+      "code": "FEELING_FUNCTIONS",
+      "display": "Følelsesfunktioner",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Følelsesfunktioner"
+        }
+      ]
+    },
+    {
+      "code": "OVERALL_COGNITIVE_FUNCTIONS",
+      "display": "Overordnede kognitive funktioner",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Overordnede kognitive funktioner"
+        }
+      ]
+    }
+  ]
+}

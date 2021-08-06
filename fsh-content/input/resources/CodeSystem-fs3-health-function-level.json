@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-function-level",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-function-level",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Funktionsniveau",
+  "title": "Fælles Sprog III, Funktionsniveau",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Funktionsniveau",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PERSONAL_CARE",
+      "display": "Problemer med personlig pleje",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med personlig pleje"
+        }
+      ]
+    },
+    {
+      "code": "DAILY_ACTIVITIES",
+      "display": "Problemer med daglige aktiviteter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med daglige aktiviteter"
+        }
+      ]
+    }
+  ]
+}

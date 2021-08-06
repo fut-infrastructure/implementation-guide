@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-group-practicaltasks",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Praktiske opgaver",
+  "title": "Fælles Sprog III, Praktiske opgaver",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Praktiske opgaver",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PERFORM_DAILY_ROUTINES",
+      "display": "Udføre daglige rutiner",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Udføre daglige rutiner"
+        }
+      ]
+    },
+    {
+      "code": "OBTAIN_GOODS_AND_SERVICES",
+      "display": "Skaffe sig varer og tjenesteydelser",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Skaffe sig varer og tjenesteydelser"
+        }
+      ]
+    },
+    {
+      "code": "COOKING",
+      "display": "Lave mad",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Lave mad"
+        }
+      ]
+    },
+    {
+      "code": "DOING_DOMESTIC_WORK",
+      "display": "Lave husligt arbejde",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Lave husligt arbejde"
+        }
+      ]
+    }
+  ]
+}
