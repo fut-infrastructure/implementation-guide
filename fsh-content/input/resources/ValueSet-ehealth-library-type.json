@@ -20,11 +20,11 @@
       ]
     }
   ],
-  "description": "http://hl7.org/fhir/ValueSet/library-type + automated-processing",
+  "description": "http://terminology.hl7.org/CodeSystem/library-type + automated-processing",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/library-type"
+        "system": "http://terminology.hl7.org/CodeSystem/library-type"
       },
       {
         "system": "http://ehealth.sundhed.dk/cs/library-type"
