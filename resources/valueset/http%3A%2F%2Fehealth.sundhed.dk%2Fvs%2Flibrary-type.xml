@@ -19,7 +19,7 @@
    <description value="http://hl7.org/fhir/ValueSet/library-type + automated-processing"/>
    <compose>
       <include>
-         <system value="http://hl7.org/fhir/library-type"/>
+         <system value="http://terminology.hl7.org/CodeSystem/library-type"/>
       </include>
       <include>
          <system value="http://ehealth.sundhed.dk/cs/library-type"/>
