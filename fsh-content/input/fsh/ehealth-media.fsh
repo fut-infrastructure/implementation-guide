@@ -19,11 +19,11 @@ Parent: Media
 Extension: ehealth-resolved-timing
 Title:     "Resolved timing"
 * extension contains
-    procedureRequestVersionId 1..1 and
-    start 1..1 and
-    end 1..1 and
+    serviceRequestVersionId 1..1 and
+    start 0..1 and
+    end 0..1 and
     type 1..1
-* extension[procedureRequestVersionId].value[x] only id
+* extension[serviceRequestVersionId].value[x] only id
 * extension[start].value[x] only dateTime
 * extension[end].value[x] only dateTime
 * extension[type].valueCodeableConcept from resolved-timing-type
