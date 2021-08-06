@@ -1,0 +1,96 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-pain-and-sensory-impressions",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-pain-and-sensory-impressions",
+  "version": "0.0.1",
+  "name": "Fælles Sprog III, Smerter og sanseindtryk",
+  "title": "Fælles Sprog III, Smerter og sanseindtryk",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Fælles Sprog III, Smerter og sanseindtryk",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ACUTE_PAIN",
+      "display": "Akutte smerter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Akutte smerter"
+        }
+      ]
+    },
+    {
+      "code": "PERIODIC_PAIN",
+      "display": "Periodevise smerter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Periodevise smerter"
+        }
+      ]
+    },
+    {
+      "code": "CHRONIC_PAIN",
+      "display": "Kroniske smerter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kroniske smerter"
+        }
+      ]
+    },
+    {
+      "code": "SENSE_SIGHT",
+      "display": "Problemer med synssans",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med synssans"
+        }
+      ]
+    },
+    {
+      "code": "SENSE_SMELL",
+      "display": "Problemer med lugtesans",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med lugtesans"
+        }
+      ]
+    },
+    {
+      "code": "SENSE_HEARING",
+      "display": "Problemer med hørelse",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med hørelse"
+        }
+      ]
+    },
+    {
+      "code": "SENSE_TASTE",
+      "display": "Problemer med smagssans",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med smagssans"
+        }
+      ]
+    },
+    {
+      "code": "SENSE_FEELING",
+      "display": "Problemer med følesans",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med følesans"
+        }
+      ]
+    }
+  ]
+}

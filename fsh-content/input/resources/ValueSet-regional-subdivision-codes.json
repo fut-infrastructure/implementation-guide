@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "id": "regional-subdivision-codes",
+  "url": "http://ehealth.sundhed.dk/vs/regional-subdivision-codes",
+  "version": "0.0.1",
+  "name": "RegionalSubdivisionCodes",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Subdivision codes (Regional codes) used in Denmark",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.iso.org/obp/ui/#iso:code:3166:DK"
+      }
+    ]
+  }
+}

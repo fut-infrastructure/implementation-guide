@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "competence-percentage-codes",
+  "url": "http://ehealth.sundhed.dk/vs/itcompetencelevel-codes",
+  "version": "0.0.1",
+  "name": "IT Competence Level codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "The set of possible message types",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/fs3-scores"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/percentage-codes",
+        "concept": [
+          {
+            "code": "0"
+          },
+          {
+            "code": "10"
+          },
+          {
+            "code": "20"
+          },
+          {
+            "code": "30"
+          },
+          {
+            "code": "40"
+          },
+          {
+            "code": "50"
+          },
+          {
+            "code": "60"
+          },
+          {
+            "code": "70"
+          },
+          {
+            "code": "80"
+          },
+          {
+            "code": "90"
+          },
+          {
+            "code": "100"
+          }
+        ]
+      }
+    ]
+  }
+}
