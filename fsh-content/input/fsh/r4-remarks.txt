@@ -107,3 +107,7 @@ ehealth-observation:
 - basedOn-reference er rettet fra ehealth-procedurerequest til ehealth-servicerequest
 - context er udgået
 - related er udgået
+
+ehealth-provenance:
+- agent.who[x] + onBehalfOf[x] ændret til referencer
+

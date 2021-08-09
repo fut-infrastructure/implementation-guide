@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-provenance-policies",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-provenance-policies",
+  "version": "1.0.0",
+  "name": "Policies for provenances",
+  "title": "Policies for provenances",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Policies under which data can be provided",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-provenance-policies"
+      }
+    ]
+  }
+}

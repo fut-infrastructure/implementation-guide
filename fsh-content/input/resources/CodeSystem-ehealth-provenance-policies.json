@@ -1,0 +1,164 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-provenance-policies",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-provenance-policies",
+  "version": "1.0.0",
+  "name": "Policies for provenances",
+  "title": "Policies for provenances",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-24T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Policies under which data can be provided",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "healthcare-act",
+      "display": "Danish healthcare act",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Danish healthcare act"
+        },
+        {
+          "language": "da",
+          "value": "Sundhedsloven"
+        }
+      ]
+    },
+    {
+      "code": "service-act",
+      "display": "Danish service act",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Danish service act"
+        },
+        {
+          "language": "da",
+          "value": "Serviceloven"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement",
+      "display": "Coherent submitted measurement",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Coherent submitted measurement"
+        },
+        {
+          "language": "da",
+          "value": "Målinger indsendt sammen"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/ehealth/measurement-reuse",
+      "display": "Measurement reuse",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Measurement reuse"
+        },
+        {
+          "language": "da",
+          "value": "Genbrugte måledata"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/ehealth/organization-administration",
+      "display": "Organization administration",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Organization administration"
+        },
+        {
+          "language": "da",
+          "value": "Administrering af organisationsoplysninger"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/dk/sundhedsloven",
+      "display": "Danish healthcare act",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Danish healthcare act"
+        },
+        {
+          "language": "da",
+          "value": "Sundhedsloven"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/dk/serviceloven",
+      "display": "Danish service act",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Danish service act"
+        },
+        {
+          "language": "da",
+          "value": "Serviceloven"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/dk/persondataloven",
+      "display": "Person Data",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Person Data"
+        },
+        {
+          "language": "da",
+          "value": "Oplysninger underlagt Persondataloven"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/eu/general-data-protection-regulation",
+      "display": "General Data Protection Regulation",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "General Data Protection Regulation"
+        },
+        {
+          "language": "da",
+          "value": "GDPR data"
+        }
+      ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen",
+      "display": "Reuse of measurement chosen by citizen",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Reuse of measurement chosen by citizen"
+        }
+      ]
+    }
+  ]
+}
