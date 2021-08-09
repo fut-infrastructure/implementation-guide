@@ -111,3 +111,7 @@ ehealth-observation:
 ehealth-provenance:
 - agent.who[x] + onBehalfOf[x] ændret til referencer
 
+ehealth-questionnaireresponse:
+- context udgået
+- basedOn refererer nu servicerequest i stedet for procedurerequest
+- questionnaire er nu Canonical i stedet for Reference
