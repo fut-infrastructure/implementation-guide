@@ -48,14 +48,6 @@ Title:       "Careplan status history"
 * extension[status].valueCodeableConcept from http://hl7.org/fhir/ValueSet/care-plan-activity-status
 * extension[period].value[x] only Period
 
-Extension:   ehealth-teamHistory
-Title:       "Team history"
-* extension contains
-    careTeam 1..1 and
-    period 1..1
-* extension[careTeam].value[x] only Reference(ehealth-careteam)
-* extension[period].value[x] only Period
-
 Extension:   ehealth-careplan-statusschedule
 Title:       "Careplan status schedule"
 * extension contains
@@ -64,15 +56,3 @@ Title:       "Careplan status schedule"
 * extension[status].value[x] only code
 * extension[status].value[x] from http://hl7.org/fhir/ValueSet/care-plan-activity-status
 * extension[scheduledTime].value[x] only dateTime
-
-Extension:   ehealth-teamschedule
-Title:       "Team schedule"
-* extension contains
-    careTeam 1..1 and
-    scheduledTime 1..1 and
-    addCareteam 1..1
-* extension[careTeam].value[x] only Reference(ehealth-careteam)
-* extension[scheduledTime].value[x] only dateTime
-* extension[addCareteam].value[x] only boolean
-
-

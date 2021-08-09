@@ -27,11 +27,6 @@ Title:     "Questionnaire intended organization"
 * value[x] only Reference(ehealth-organization)
 * valueReference 1..1
 
-Extension: ehealth-revision
-Title:     "Revision"
-* value[x] only string
-* valueString 1..1
-
 Extension: ehealth-questionnaire-type
 Title:     "Questionnaire type"
 * value[x] only CodeableConcept

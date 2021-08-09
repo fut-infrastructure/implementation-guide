@@ -10,8 +10,3 @@ Parent: PlanDefinition
 * library only Canonical(ehealth-library)
 * action.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 * action.definition[x] only Canonical(ehealth-activitydefinition or ehealth-plandefinition)
-
-Extension: ehealth-recommendation
-Title:     "Recommendation"
-* value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-plandefinition-recommendation

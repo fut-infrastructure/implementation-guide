@@ -16,14 +16,3 @@ Parent: Media
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 
-Extension: ehealth-resolved-timing
-Title:     "Resolved timing"
-* extension contains
-    serviceRequestVersionId 1..1 and
-    start 0..1 and
-    end 0..1 and
-    type 1..1
-* extension[serviceRequestVersionId].value[x] only id
-* extension[start].value[x] only dateTime
-* extension[end].value[x] only dateTime
-* extension[type].valueCodeableConcept from resolved-timing-type

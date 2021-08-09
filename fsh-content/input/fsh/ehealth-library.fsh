@@ -9,7 +9,3 @@ Parent: Library
 * useContext.code from ehealth-usage-context-type
 * jurisdiction from ehealth-jurisdiction
 * parameter 1..*
-
-Extension: ehealth-revision
-Title: "Revision"
-* value[x] only string

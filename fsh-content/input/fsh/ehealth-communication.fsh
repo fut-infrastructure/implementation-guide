@@ -19,16 +19,3 @@ Parent: Communication
 * reasonReference only Reference(ehealth-condition or ehealth-observation)
 * payload.contentString 1..1
 * payload.contentString only string
-
-Extension: ehealth-communication-recipientCareTeam
-Title: "Recipient careteam"
-* valueReference only Reference(ehealth-careteam)
-
-Extension: ehealth-communication-senderCareTeam
-Title: "Sender careteam"
-* valueReference only Reference(ehealth-careteam)
-
-Extension: ehealth-restriction-category
-Title: "Restriction category"
-* value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-restriction-category

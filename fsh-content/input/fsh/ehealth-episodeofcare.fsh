@@ -20,14 +20,6 @@ Extension: ehealth-episodeofcare-caremanagerOrganization
 Title: "Caremanager organization"
 * valueReference only Reference(ehealth-organization)
 
-Extension:  ehealth-teamHistory
-Title:      "Team history"
-* extension contains
-    careTeam 1..1 and
-    period 1..1
-* extension[careTeam].value[x] only Reference(ehealth-careteam)
-* extension[period].value[x] only Period
-
 Extension:  ehealth-episodeofcare-statusschedule
 Title:      "Status schedule"
 * extension contains
@@ -35,14 +27,3 @@ Title:      "Status schedule"
     scheduledTime 1..1
 * extension[status].value[x] from http://hl7.org/fhir/ValueSet/episode-of-care-status
 * extension[scheduledTime].value[x] only dateTime
-
-Extension:  ehealth-teamschedule
-Title:      "Team schedule"
-* extension contains
-    careTeam 1..1 and
-    scheduledTime 1..1 and
-    addCareTeam 1..1
-* extension[careTeam].value[x] only Reference(ehealth-careteam)
-* extension[scheduledTime].value[x] only dateTime
-* extension[addCareTeam].value[x] only boolean
-

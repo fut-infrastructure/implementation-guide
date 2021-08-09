@@ -50,20 +50,6 @@ Parent: Communication
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 
-Extension: ehealth-communication-recipientCareTeam
-Title:     "Recipient careteam"
-* value[x] only Reference(ehealth-careteam)
-
-Extension: ehealth-communication-senderCareTeam
-Title:     "Sender careteam"
-* value[x] only Reference(ehealth-careteam)
-
-Extension: ehealth-restriction-category
-Title:     "Restriction category"
-* value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-restriction-category
-* valueCodeableConcept 1..1
-
 Extension: ehealth-thread-id
 Title:     "Thread id"
 * value[x] only string
@@ -86,10 +72,6 @@ Extension: ehealth-priority
 Title:     "Priority"
 * value[x] only code
 * valueCode from ehealth-priority
-
-Extension: ehealth-group-id
-Title:     "Group id"
-* value[x] only string
 
 Extension: ehealth-on-behalf-of
 Title:     "On behalf of"
