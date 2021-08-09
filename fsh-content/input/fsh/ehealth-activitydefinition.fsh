@@ -12,7 +12,7 @@ Parent: ActivityDefinition
 * jurisdiction from ehealth-jurisdiction
 * topic from ehealth-topic-type
 * topic 1..1
-//* library only Canonical(ehealth-library)
+* library only Canonical(ehealth-library)
 * code from ehealth-activitydefinition-code
 * code 1..1
 * location only Reference(Location)
@@ -36,12 +36,6 @@ Title:       "recommendation"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-plandefinition-recommendation
 * valueCodeableConcept 1..1
-
-Extension:   ehealth-intendedAudience
-Title:       "intendedAudience"
-* value[x] only Reference(ehealth-organization)
-* valueReference only Reference(ehealth-organization)
-* valueReference 1..1
 
 Extension:   ehealth-referenceRange
 Title:       "referenceRange"
