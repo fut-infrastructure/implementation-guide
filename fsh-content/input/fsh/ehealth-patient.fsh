@@ -6,13 +6,6 @@ Parent: DkCorePatient
 * extension contains ehealth-general-health-condition named generalHealthCondition 0..*
 * extension contains ehealth-nameandaddressprotection named nameAndAddressProtection 0..1
 
-* identifier 1..* MS
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains ehealth-dk-crn-identifier 1..1
-* identifier[ehealth-dk-crn-identifier] only ehealth-dk-crn-identifier
-
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "value"
 * telecom ^slicing.rules = #open
@@ -31,13 +24,6 @@ Parent: DkCorePatient
 * telecom[eBoks].rank 0..0
 
 * gender 1..1
-* address 0..*
-* address ^slicing.discriminator.type = #value
-* address ^slicing.discriminator.path = "url"
-* address ^slicing.rules = #open
-* address contains officialHomeAddress 0..1
-* address[officialHomeAddress] only ehealth-address
-
 * contact.extension contains ehealth-patient-contactnote named patientContactnote 0..*
 * contact.address only ehealth-address
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
@@ -75,4 +61,3 @@ Title:     "Name and address protection"
 Extension: ehealth-patient-contactnote
 Title:     "Patient contact note"
 * value[x] only string
-
