@@ -54,10 +54,6 @@ Title:     "General health condition"
 * extension[type].valueCoding from fs3-health
 * extension[description].value[x] only string
 
-Extension: ehealth-nameandaddressprotection
-Title:     "Name and address protection"
-* value[x] only Period
-
 Extension: ehealth-patient-contactnote
 Title:     "Patient contact note"
 * value[x] only string
