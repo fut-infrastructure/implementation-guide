@@ -119,6 +119,4 @@ ehealth-questionnaireresponse:
 ehealth-task:
 - context er udgået
 - definition[x] er udgået
-- intent har udvidet værdisæt i R4 i forhold til STU3
 - requester er ændret til at være Reference, så requester.onBehalfOf er ikke længere mulig, og requester.agent bliver bare til requester
-
