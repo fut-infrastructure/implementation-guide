@@ -45,7 +45,7 @@ Title:       "Careplan status history"
     status 1..1 and
     period 1..1
 * extension[status].value[x] only CodeableConcept
-* extension[status].valueCodeableConcept from http://hl7.org/fhir/ValueSet/care-plan-activity-status
+* extension[status].valueCodeableConcept from http://hl7.org/fhir/ValueSet/request-status
 * extension[period].value[x] only Period
 
 Extension:   ehealth-careplan-statusschedule
@@ -54,5 +54,5 @@ Title:       "Careplan status schedule"
     status 1..1 and
     scheduledTime 1..1
 * extension[status].value[x] only code
-* extension[status].value[x] from http://hl7.org/fhir/ValueSet/care-plan-activity-status
+* extension[status].value[x] from http://hl7.org/fhir/ValueSet/request-status
 * extension[scheduledTime].value[x] only dateTime
