@@ -7,6 +7,7 @@ Parent: EpisodeOfCare
 * extension contains ehealth-teamschedule named teamschedule 0..*
 * diagnosis 1..*
 * diagnosis.condition only Reference(ehealth-condition)
+* diagnosis.condition ^type.aggregation = #referenced
 * patient only Reference(ehealth-patient)
 * managingOrganization 1..1
 * managingOrganization only Reference(ehealth-organization)
