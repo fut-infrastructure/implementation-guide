@@ -18,4 +18,6 @@ Parent: Composition
 
 Extension: ehealth-composition-authorOrganization
 Title: "Author organization"
+Description: "Organization that authored the Composition"
+* . ^short = "Organization that authored the Composition"
 * valueReference only Reference(ehealth-organization)

@@ -12,10 +12,14 @@ Parent: Device
 
 Extension: ehealth-device-privatelyOwned
 Title: "Privately owned"
+Description: "True if this device is privately owned (BYOD - Bring you own device)."
+* . ^short = "True if this device is owned or provided by the patient."
 * value[x] only boolean
 
 Extension:  ehealth-device-suppliers
 Title:      "Suppliers"
+Description: "Suppliers of different kinds. E.g device suppliers, support suppliers, training suppliers, etc."
+* . ^short = "Different types of suppliers for a device."
 * extension contains
     supplier 1..1 and
     role 1..*

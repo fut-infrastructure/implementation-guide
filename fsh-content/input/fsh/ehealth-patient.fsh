@@ -31,6 +31,8 @@ Parent: DkCorePatient
 
 Extension: ehealth-itcompetencelevel
 Title:     "IT competence level"
+Description: ""
+* . ^short = ""
 * extension contains
     deviceType 0..* and
     score 0..* and
@@ -43,10 +45,14 @@ Title:     "IT competence level"
 
 Extension: patient-interpreterRequired
 Title:     "Interpreter required"
+Description: "This extension describes the IT skills/competence of a patient. The IT competence may optionally be related to a specific device type, and may be assessed using a score (either a FS3 score or a percentage), or as a free text description."
+* . ^short = "Whether the patient needs an interpreter"
 * value[x] only boolean
 
 Extension: ehealth-general-health-condition
 Title:     "General health condition"
+Description: "Describes the general health condition of a patient using FSIII concepts (see http://www.fs3.nu/filer/Dokumenter/Metode/FSIII-Guide-til-helbredstilstande.pdf)"
+* . ^short = "General health condition"
 * extension contains
     type 1..1 and
     description 0..*
@@ -56,4 +62,6 @@ Title:     "General health condition"
 
 Extension: ehealth-patient-contactnote
 Title:     "Patient contact note"
+Description: "This note holds the information of when the patient is available for communication - eg. between 10 and 12 every monday"
+* . ^short = "Note regarding patient contact"
 * value[x] only string

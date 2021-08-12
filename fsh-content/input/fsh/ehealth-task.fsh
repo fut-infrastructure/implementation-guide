@@ -22,10 +22,14 @@ Parent: Task
 
 Extension: ehealth-task-category
 Title:     "Task category"
+Description: "Category of task."
+* . ^short = "Category of task."
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-task-category
 * valueCodeableConcept 1..1
 
 Extension: ehealth-task-responsible
 Title:     "Task responsible"
+Description: "Individual organization or Device currently responsible for task execution."
+* . ^short = "Responsible entity"
 * value[x] only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or ehealth-careteam)

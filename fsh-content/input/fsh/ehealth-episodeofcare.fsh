@@ -19,10 +19,14 @@ Parent: EpisodeOfCare
 
 Extension: ehealth-episodeofcare-caremanagerOrganization
 Title: "Caremanager organization"
+Description: "Reference to caremanagers organization"
+* . ^short = "Reference to caremanagers organization"
 * valueReference only Reference(ehealth-organization)
 
 Extension:  ehealth-episodeofcare-statusschedule
 Title:      "Status schedule"
+Description: "Scheduled status change"
+* . ^short = "Status Schedule"
 * extension contains
     status 1..1 and
     scheduledTime 1..1
