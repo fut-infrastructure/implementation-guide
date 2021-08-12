@@ -11,7 +11,7 @@
    <description value="A set of codes that can be used to indicate the relationship between a Patient and a Related Person used in Denmark"/>
    <compose>
       <include>
-         <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+         <system value="http://hl7.org/fhir/v3/RoleCode"/>
          <concept>
             <code value="FAMMEMB"/>
             <display value="family member"/>

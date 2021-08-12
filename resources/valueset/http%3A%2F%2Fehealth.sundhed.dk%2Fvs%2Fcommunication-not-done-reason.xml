@@ -26,7 +26,7 @@
          </concept>
       </include>
       <include>
-         <system value="http://hl7.org/fhir/ValueSet/communication-not-done-reason"/>
+         <system value="http://hl7.org/fhir/communication-not-done-reason"/>
          <concept>
             <code value="system-error"/>
             <display value="System Error"/>
