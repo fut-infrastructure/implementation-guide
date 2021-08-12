@@ -25,7 +25,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - input/resources
     - fsh-generated/resources
 
-  usage-stats-opt-out: false
+  usage-stats-opt-out: true
 
 pages:
   index.md:
