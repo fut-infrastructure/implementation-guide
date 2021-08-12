@@ -1,5 +1,7 @@
 Extension:   ehealth-teamschedule
 Title:       "Team schedule"
+Description: "Scheduled team change"
+* . ^short = "Team Schedule"
 * extension contains
     careteam 1..1 and
     scheduledTime 1..1 and

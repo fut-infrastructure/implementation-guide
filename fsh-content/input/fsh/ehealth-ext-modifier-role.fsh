@@ -1,5 +1,7 @@
 Extension: ehealth-modifier-role
 Title:     "Modified role"
+Description: "This is a modifier role that can hold a role and a reference to the item who has the role. Ex. owner + a reference to the owner organization."
+* . ^short = "Modifier role"
 * extension contains
     reference 1..1 and
     role 1..1

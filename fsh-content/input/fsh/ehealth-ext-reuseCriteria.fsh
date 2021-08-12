@@ -1,5 +1,7 @@
 Extension:   ehealth-reuseCriteria
 Title:       "reuseCriteria"
+Description: "Defines if and when a response can be reused"
+* . ^short = "Criteria to be met for reuse of responses to be allowed"
 * extension contains
     allowed 1..1 and
     situationQuality 1..1 and
