@@ -19,7 +19,7 @@
    <description value="Topic types."/>
    <compose>
       <include>
-         <system value="http://terminology.hl7.org/CodeSystem/definition-topic"/>
+         <system value="http://hl7.org/fhir/ValueSet/definition-topic"/>
       </include>
       <include>
          <system value="http://ehealth.sundhed.dk/cs/topic-type"/>

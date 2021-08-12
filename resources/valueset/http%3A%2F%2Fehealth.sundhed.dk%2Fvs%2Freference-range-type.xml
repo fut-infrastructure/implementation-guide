@@ -19,7 +19,7 @@
    <description value="Reference Range type value set."/>
    <compose>
       <include>
-         <system value="http://hl7.org/fhir/referencerange-meaning"/>
+         <system value="http://hl7.org/fhir/ValueSet/referencerange-meaning"/>
       </include>
       <include>
          <valueSet value="http://ehealth.sundhed.dk/vs/observation-codes"/>

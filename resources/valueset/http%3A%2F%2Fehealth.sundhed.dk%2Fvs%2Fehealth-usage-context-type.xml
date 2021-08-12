@@ -19,7 +19,7 @@
    <description value="eHealth Usage Context types."/>
    <compose>
       <include>
-         <system value="http://hl7.org/fhir/usage-context-type"/>
+         <system value="http://hl7.org/fhir/ValueSet/usage-context-type"/>
       </include>
       <include>
          <system value="http://ehealth.sundhed.dk/cs/ehealth-usage-context-type"/>
