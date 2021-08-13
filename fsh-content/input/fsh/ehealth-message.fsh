@@ -1,6 +1,8 @@
 Profile: ehealth-message
 Id: ehealth-message
 Parent: Communication
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
+* extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..1
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..1
 * extension contains ehealth-restriction-category named restrictionCategory 0..*
