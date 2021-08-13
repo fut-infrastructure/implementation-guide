@@ -1,7 +1,7 @@
 Profile: ehealth-clinicalimpression
 Id: ehealth-clinicalimpression
 Parent: ClinicalImpression
-* extension contains ehealth-clinicalimpression-careplan named careteam 0..1
+* extension contains ehealth-clinicalimpression-careplan named carePlan 0..1
 * extension contains ehealth-clinicalimpression-decisionContext named decisionContext 0..*
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
