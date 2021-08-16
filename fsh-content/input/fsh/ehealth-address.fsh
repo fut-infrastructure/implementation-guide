@@ -10,11 +10,15 @@ Parent: Address
 
 Extension: ehealth-municipalitycode
 Title:     "Municipality code"
+Description: "Danish municipality code (DK: 'kommunekode')"
+* . ^short = "Danish municipality code (DK: 'kommunekode')"
 * value[x] only Coding
 * valueCoding from municipality-codes
 
 Extension: ehealth-regional-subdivision-code
 Title:     "Regional subdivision code"
+Description: "Danish regional code"
+* . ^short = "Danish regional code"
 * value[x] only CodeableConcept
 * valueCodeableConcept from regional-subdivision-codes
 * valueCodeableConcept 1..1

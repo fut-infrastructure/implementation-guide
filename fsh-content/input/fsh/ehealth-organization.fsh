@@ -24,6 +24,8 @@ Parent: Organization
 
 Extension:  ehealth-organization-relatedTo
 Title:      "Related to"
+Description: "Relations to other Organizations"
+* . ^short = "Relations to other Organizations"
 * extension contains
     target 1..1 and
     relationType 1..1 and
@@ -35,46 +37,66 @@ Title:      "Related to"
 
 Extension:   ehealth-organization-cvrNumber
 Title:       "CVR Number"
+Description: "The organization's identification code in the Danish 'Centrale Virksomhedsregister'"
+* . ^short = "The organization's identification code in the Danish 'Centrale Virksomhedsregister'"
 * value[x] only string
 
 Extension:   ehealth-organization-telecomValue
 Title:       "Telecom Value"
+Description: "The actual contact point details (i.e. phone number or email address)"
+* . ^short = "The actual contact point details (i.e. phone number or email address)"
 * value[x] only string
 
 
 Extension:   ehealth-regionCode
 Title:       "Region code"
+Description: "The regionCode of the organization"
+* . ^short = "The organization's region code"
 * value[x] only string
 
 Extension:   ehealth-organization-municipalityCode
 Title:       "Municipality Code"
+Description: "The organization's municipality code in the Danish 'Det Centrale Personregister'"
+* . ^short = "The organization's municipality code in the Danish 'Det Centrale Personregister'"
 * value[x] only string
 
 Extension:   ehealth-organization-providerIdentifier
 Title:       "Provider identifier"
+Description: "The providerIdentifier of the organization"
+* . ^short = "The organization's provider identifier"
 * value[x] only string
 
 Extension:   ehealth-organization-source
 Title:       "Organization Source"
+Description: "The source of the organization"
+* . ^short = "The organization's source"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-organization-source
 
 Extension:   ehealth-organization-telecomSystem
 Title:       "Telecom System"
+Description: "Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other"
+* . ^short = "Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-contactpoint-system
 
 Extension:   ehealth-organization-telecomCustodian
 Title:       "Telecom Custodian"
+Description: "Custodian of this ContactPoint."
+* . ^short = "The custodian that maintains the contact point: SOR | ORG | MAN"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-contactpoint-custodian
 
 Extension:   ehealth-organization-synchronizationStatus
 Title:       "Organization Synchronization status"
+Description: "The synchronization status of the organization"
+* . ^short = "The organization's synchronization status"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-organization-synchronization-status
 
 Extension:   ehealth-organization-specialty
 Title:       "Organization specialty"
+Description: "The specialty of the organization"
+* . ^short = "The organization's specialty"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-organization-specialty

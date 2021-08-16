@@ -11,4 +11,6 @@ Parent: DeviceUseStatement
 
 Extension:   ehealth-deviceusestatement-context
 Title:       "Context"
+Description: "The careplan context for the device use"
+* . ^short = "The careplan context for the device use"
 * value[x] only Reference(ehealth-careplan)

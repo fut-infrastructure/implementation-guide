@@ -8,6 +8,9 @@ Parent: GuidanceResponse
 * performer only Reference(ehealth-device)
 // not in R4: * reason only Reference(Resource)
 * result only Reference(ehealth-careplan or RequestGroup)
+
 Extension:   ehealth-guidanceresponse-episodeOfCare
 Title:       "EpisodeOfCare"
+Description: "Episode of care"
+* . ^short = "Episode of care"
 * value[x] only Reference(ehealth-episodeofcare)

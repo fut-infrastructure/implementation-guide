@@ -1,6 +1,8 @@
 Profile: ehealth-message
 Id: ehealth-message
 Parent: Communication
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
+* extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..1
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..1
 * extension contains ehealth-restriction-category named restrictionCategory 0..*
@@ -52,28 +54,39 @@ Parent: Communication
 
 Extension: ehealth-thread-id
 Title:     "Thread id"
+Description: "A logical id identifying a set of messages, which are grouped in a thread. Can be supplied by the client, eg. as a UUID"
+* . ^short = "Thread id"
 * value[x] only string
 
 Extension: ehealth-period
 Title:     "Period"
+Description: "Specifies the temporal validity of an ehealth/message instance. Contains a period, eg. specifying temporal validity"
+* . ^short = "Specifies the temporal validity of an ehealth/message instance"
 * value[x] only Period
 
 Extension: ehealth-administrative-status
 Title:     "Administrative status"
+Description: "The administrative status of how a message recipient has handled a message"
+* . ^short = "The administrative status of how a message recipient has handled a message"
 * value[x] only code
 * valueCode from administrative-status
 * valueCode 1..1
 
 Extension: ehealth-title
 Title:     "Title"
+Description: "The title of the message"
+* . ^short = "Message title"
 * value[x] only string
 
 Extension: ehealth-priority
 Title:     "Priority"
+Description: "The priority of a message"
+* . ^short = "The priority of a message"
 * value[x] only code
 * valueCode from ehealth-priority
 
 Extension: ehealth-on-behalf-of
 Title:     "On behalf of"
+Description: "On behalf of"
+* . ^short = "On behalf of"
 * value[x] only Reference(ehealth-careteam)
-

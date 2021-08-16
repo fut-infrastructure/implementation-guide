@@ -1,7 +1,7 @@
 Profile: ehealth-clinicalimpression
 Id: ehealth-clinicalimpression
 Parent: ClinicalImpression
-* extension contains ehealth-clinicalimpression-careteam named careteam 0..1
+* extension contains ehealth-clinicalimpression-careplan named carePlan 0..1
 * extension contains ehealth-clinicalimpression-decisionContext named decisionContext 0..*
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
@@ -22,20 +22,28 @@ Parent: ClinicalImpression
 * note.authorString only string
 * note 0..*
 
-Extension:   ehealth-clinicalimpression-careteam
+Extension:   ehealth-clinicalimpression-careplan
 Title:       "Careteam"
+Description: "Identifies the CarePlan context in which this particular resource was created."
+* . ^short = "The Careplan"
 * value[x] only Reference(ehealth-careplan)
 
 Extension:   ehealth-clinicalimpression-decisionContext
 Title:       "Decision context"
+Description: "Library and relevant resources used for evaluation"
+* . ^short = "Library and relevant resources used for evaluation"
 * value[x] only Reference(Parameters)
 
 Extension:   ehealth-clinicalimpression-decision
 Title:       "Decision"
+Description: "Clinical impression decision, 'approved' or 'approved-for-sharing'"
+* . ^short = "approved | approved-for-sharing"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-clinicalimpression-decision-codes
 
 Extension:   ehealth-clinicalimpression-mediaInvestigationItem
 Title:       "Media investigation item"
+Description: "Investigation item for Media resources so they can be approved."
+* . ^short = "Media item"
 * value[x] only Reference(ehealth-media)
 

@@ -9,4 +9,6 @@ Parent: Provenance
 
 Extension: ehealth-provenance-dateTimeOfReusedEntity
 Title:     "Questionnaire type"
+Description: "Contains date and time of Reused Entity"
+* . ^short = "Contains date and time of Reused Entity"
 * value[x] only dateTime or Period

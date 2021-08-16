@@ -14,6 +14,8 @@ Parent: DeviceMetric
 
 Extension:  ehealth-devicemetric-properties
 Title:      "Properties"
+Description: "Properties of this device. Properties are static by nature whereas qualities are dynamic and may change during the life cycle or calibration cycle of a device."
+* . ^short = "Properties of the Device"
 * extension contains
     type 1..1 and
     value 1..1
@@ -23,6 +25,8 @@ Title:      "Properties"
 
 Extension:  ehealth-devicemetric-qualities
 Title:      "Qualities"
+Description: "Current device quality"
+* . ^short = "Qualities of the Device"
 * extension contains
     category 1..1 and
     value 0..1
@@ -32,6 +36,8 @@ Title:      "Qualities"
 
 Extension:  ehealth-devicemetric-qualityHistory
 Title:      "Quality history"
+Description: "History of device quality"
+* . ^short = "History of device quality"
 * extension contains
     category 1..1 and
     value 0..1 and
@@ -45,6 +51,8 @@ Title:      "Quality history"
 
 Extension:  ehealth-devicemetric-templateQualities
 Title:      "Template qualities"
+Description: "Device quality default settings for an initial, a degraded, and an overridden device quality."
+* . ^short = "Device quality default settings"
 * extension contains
     category 1..1 and
     value 0..1
@@ -54,4 +62,6 @@ Title:      "Template qualities"
 
 Extension:   ehealth-devicemetric-calibrationExpires
 Title:       "Calibration expires"
+Description: "Date when the current calibration expires and recalibration is required."
+* . ^short = "Date when the current calibration expires."
 * value[x] only dateTime

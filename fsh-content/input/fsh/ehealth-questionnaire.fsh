@@ -18,23 +18,31 @@ Parent: Questionnaire
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
+Description: "Defines the recommendation state of the questionnaire."
+* . ^short = "Degree to which this questionnaire is recommended for use."
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-questionnaire-recommendation
 * valueCodeableConcept 1..1
 
 Extension: ehealth-questionnaire-intendedOrganization
 Title:     "Questionnaire intended organization"
+Description: "The questionnaire is intended to be used by these organizations."
+* . ^short = "The organization intended to use this questionnaire."
 * value[x] only Reference(ehealth-organization)
 * valueReference 1..1
 
 Extension: ehealth-questionnaire-type
 Title:     "Questionnaire type"
+Description: "Concept that represents the overall questionnaire"
+* . ^short = "Concept that represents the overall questionnaire"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-questionnaire-types
 * valueCodeableConcept 1..1
 
 Extension: ehealth-questionnaire-feedback
 Title:     "feedback"
+Description: "Feedback if reponse is within the defined range."
+* . ^short = "Feedback if reponse is within the defined range."
 * extension contains
     value 1..1 and
     min 1..1 and
