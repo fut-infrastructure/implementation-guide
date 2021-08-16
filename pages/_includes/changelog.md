@@ -18,6 +18,9 @@ Entire eHealth Implementation Guide migrated to FHIR R4.
 
 #### CarePlan
 
+#### DeviceUseStatement
+- No change: FHIR STU3 element whenUsed period to be modelled through element timing (as whenUsed removed in FHIR R4).
+
 #### ProcedureRequest
 - Removed in FHIR R4. Replaced by ServiceRequest
 
