@@ -9,7 +9,7 @@ of the eHealth Infrastructure.
 
 ## Scope
 
-This document presents Danish use concepts defined via FHIR processable artifacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR STU3 specification.
+This document presents Danish use concepts defined via FHIR processable artifacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR R4 specification.
 * [Profiles](profiles.html) - are constraints of core FHIR resources and datatype for use in the eHealth Infrastructure
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts of the eHealth Infrastructure
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the context of the eHealth Infrastructure
@@ -35,12 +35,12 @@ This guide is the product of collaborative work undertaken with participants fro
 
 ## Note to FHIR Newcomers
 
-If you are new to FHIR (Fast Healthcare Interoperability Resources), consider to head over to the FHIR specification at [http://hl7.org/fhir/STU3/](http://hl7.org/fhir/STU3/) and study it at your own pace. In particular, check out the following links:
+If you are new to FHIR (Fast Healthcare Interoperability Resources), consider to head over to the FHIR specification at [http://hl7.org/fhir/R4/](http://hl7.org/fhir/R4/) and study it at your own pace. In particular, check out the following links:
 
-- Summary: [http://hl7.org/fhir/STU3/summary.html](http://hl7.org/fhir/STU3/summary.html)
-- Developers intro: [http://hl7.org/fhir/STU3/overview-dev.html](http://hl7.org/fhir/STU3/overview-dev.html)
-- Clinical intro: [http://hl7.org/fhir/STU3/overview-clinical.html](http://hl7.org/fhir/STU3/overview-clinical.html)
-- Architects intro: [http://hl7.org/fhir/STU3/overview-arch.html](http://hl7.org/fhir/STU3/overview-arch.html)
+- Summary: [http://hl7.org/fhir/R4/summary.html](http://hl7.org/fhir/R4/summary.html)
+- Developers intro: [http://hl7.org/fhir/R4/overview-dev.html](http://hl7.org/fhir/R4/overview-dev.html)
+- Clinical intro: [http://hl7.org/fhir/R4/overview-clinical.html](http://hl7.org/fhir/R4/overview-clinical.html)
+- Architects intro: [http://hl7.org/fhir/R4/overview-arch.html](http://hl7.org/fhir/R4/overview-arch.html)
 
 Great FHIR exercises and tutorials can be found at [https://fhir-drills.github.io/](https://fhir-drills.github.io/) and [https://simplifier.net/guide/ProfilingAcademy/](https://simplifier.net/guide/ProfilingAcademy/)
 
