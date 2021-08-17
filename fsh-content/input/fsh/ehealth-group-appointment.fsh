@@ -18,6 +18,6 @@ Parent: Appointment
 * supportingInformation only Reference(ehealth-episodeofcare or ehealth-careplan)
 * supportingInformation 0..1
 * participant.extension contains ehealth-ext-careteam named careteam 0..1
-* participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson)
+* participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Location)
 * participant.extension contains ehealth-assigning-careteam named assigningCareteam 0..1
 * description 1..1

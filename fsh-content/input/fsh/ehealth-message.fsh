@@ -68,9 +68,9 @@ Extension: ehealth-administrative-status
 Title:     "Administrative status"
 Description: "The administrative status of how a message recipient has handled a message"
 * . ^short = "The administrative status of how a message recipient has handled a message"
-* value[x] only code
-* valueCode from administrative-status
-* valueCode 1..1
+* value[x] only Coding
+* valueCoding from administrative-status
+* valueCoding 1..1
 
 Extension: ehealth-title
 Title:     "Title"

@@ -1,0 +1,80 @@
+{
+  "resourceType": "Communication",
+  "id": "message01",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-07-15T07:06:55.257+00:00",
+    "profile": [
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-thread-id",
+      "valueString": "b84a4a49-ede2-45eb-8400-eb2469a08f3e"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-title",
+      "valueString": "Sample title..."
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-administrative-status",
+      "valueCoding": {
+        "system": "http://ehealth.sundhed.dk/cs/administrative-status",
+        "code": "activate"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-priority",
+      "valueCode": "routine"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam",
+      "valueReference": {
+        "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/restriction-category",
+            "code": "None"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-category",
+          "code": "advice"
+        }
+      ]
+    }
+  ],
+  "medium": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-medium"
+        }
+      ]
+    }
+  ],
+  "recipient": [
+    {
+      "reference": "https://patient.fut.trifork.com/fhir/Patient/102"
+    }
+  ],
+  "sent": "2021-07-15T07:06:55+00:00",
+  "payload": [
+    {
+      "contentString": "MESSAGE PAYLOAD"
+    }
+  ]
+}
