@@ -19,6 +19,11 @@ Entire eHealth Implementation Guide migrated to FHIR R4.
 #### Appointment
 - Field 'reason' is removed in R4. Substituted with reasonCode
 
+#### Patient
+- Now inherits from dk-core Patient: https://build.fhir.org/ig/hl7dk/dk-core//StructureDefinition-dk-core-patient.html
+- This means that earlier ehealth-patient extensions are replaced by corresponding dk-core extensions
+- Also, earlier CRN/CPR slicing on identifier, telecom, and address is replaced by the corresponding dk-core slicing
+
 #### CarePlan
 
 #### DeviceUseStatement
