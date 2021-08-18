@@ -11,7 +11,6 @@ Parent: Composition
 * author only Reference(ehealth-practitioner or ehealth-device or ehealth-patient or ehealth-relatedperson)
 * attester.party only Reference(ehealth-patient or ehealth-practitioner or ehealth-organization)
 * custodian only Reference(ehealth-organization)
-* relatesTo 1..1
 * relatesTo.targetIdentifier only Identifier
 * relatesTo.targetReference only Reference(ehealth-composition)
 * event.code from ehealth-event-type-codes
