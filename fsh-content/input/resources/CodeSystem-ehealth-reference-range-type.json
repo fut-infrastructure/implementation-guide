@@ -9,6 +9,12 @@
   "experimental": false,
   "date": "2021-01-13T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
+  "identifier" : [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.208.176.7.200.1"
+    }
+  ],
   "contact": [
     {
       "telecom": [

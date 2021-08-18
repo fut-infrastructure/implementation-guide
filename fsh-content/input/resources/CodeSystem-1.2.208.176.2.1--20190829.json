@@ -9,6 +9,12 @@
   "experimental": false,
   "date": "2019-12-18T23:00:00+00:00",
   "publisher": "Sundhedsdatastyrelsen",
+  "identifier" : [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.208.176.2.1"
+    }
+  ],
   "contact": [
     {
       "telecom": [

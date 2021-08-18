@@ -13,6 +13,7 @@ Parent: CarePlan
 * basedOn 0..0
 * replaces 0..0
 * partOf only Reference(ehealth-careplan)
+* partOf 0..1
 * status from http://hl7.org/fhir/ValueSet/request-status
 * intent only code
 * category from ehealth-careplan-category
@@ -29,7 +30,7 @@ Parent: CarePlan
 * activity.progress.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * activity.progress.authorString only string
 * activity.reference 1..1
-// * activity.reference only Reference(ehealth-procedurerequest) // ProcedureRequest is not in R4
+* activity.reference only Reference(ehealth-servicerequest)
 // * activity.detail.definition only Reference(ehealth-plandefinition or ehealth-activitydefinition or ehealth-questionnaire) not in R4
 * activity.detail.reasonReference only Reference(ehealth-condition)
 * activity.detail.goal only Reference(Goal)

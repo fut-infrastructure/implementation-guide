@@ -7,5 +7,6 @@ Description: "Minimum required or actually assessed quality values. The qualityT
     qualityCode 1..1
 * extension[qualityType].value[x] only CodeableConcept
 * extension[qualityType].valueCodeableConcept from ehealth-quality-types
+* extension[qualityCode].value[x] ^short = "Included ValueSets: Usage quality (http://ehealth.sundhed.dk/vs/usage-quality), device measuring quality (http://ehealth.sundhed.dk/vs/device-measuring-quality) and situation quality (http://ehealth.sundhed.dk/vs/situation-quality)"
 * extension[qualityCode].value[x] only CodeableConcept // cannot reference three value sets as below. Build into one?
 //* extension[qualityCode].valueCodeableConcept from ehealth-device-measuring-quality or ehealth-quality-types or ehealth-situation-quality
