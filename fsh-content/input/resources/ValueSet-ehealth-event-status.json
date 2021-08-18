@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/event-status|4.0.1",
+        "system": "http://hl7.org/fhir/event-status",
         "concept": [
           {
             "code": "preparation",

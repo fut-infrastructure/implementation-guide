@@ -16,3 +16,4 @@ Parent: Appointment
 * supportingInformation 0..1
 * participant 2..*
 * participant.extension contains ehealth-ext-careteam named careteam 0..1
+* participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Location)
