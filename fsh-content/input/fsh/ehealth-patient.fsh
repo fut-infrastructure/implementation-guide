@@ -32,7 +32,7 @@ Parent: DkCorePatient
 Extension: ehealth-itcompetencelevel
 Title:     "IT competence level"
 Description: ""
-* . ^short = ""
+* . ^short = "IT competence level"
 * extension contains
     deviceType 0..* and
     score 0..* and
