@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system urn:oid:1.2.208.184.100.9 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">001<a name=\"dk-ihe-classcode-cs-001\"> </a></td><td>Clinical report</td><td>Clinical report document classcode used in DK-IHE metadata.</td></tr><tr><td style=\"white-space:nowrap\">002<a name=\"dk-ihe-classcode-cs-002\"> </a></td><td>Personal information about</td><td/></tr><tr><td style=\"white-space:nowrap\">003<a name=\"dk-ihe-classcode-cs-003\"> </a></td><td>Planning</td><td/></tr><tr><td style=\"white-space:nowrap\">004<a name=\"dk-ihe-classcode-cs-004\"> </a></td><td>Questionnaires</td><td/></tr></table></div>"
   },
   "url" : "urn:oid:1.2.208.184.100.9",
-  "identifier" : {
+  "identifier" : [{
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:1.2.208.184.100.9"
-  },
+  }],
   "version" : "0.99",
   "name" : "DK_IHE_ClassCode_CS",
   "status" : "active",
