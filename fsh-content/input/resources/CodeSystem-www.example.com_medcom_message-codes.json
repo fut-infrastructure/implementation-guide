@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "10233",
+  "id": "www.example.com_medcom_message-codes",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2020-08-22T06:08:20.325+00:00"
