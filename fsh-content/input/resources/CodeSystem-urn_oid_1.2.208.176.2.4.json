@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "10237",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2021-02-08T08:14:10.630+00:00"
+  },
+  "url": "urn:oid:1.2.208.176.2.4",
+  "identifier": [{
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.176.2.4"
+  }],
+  "version": "2020-03-13T12:03:26",
+  "name": "SKS",
+  "title": "Sundhedsvæsenets klassifikationssystem (SKS)",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-12-13T00:00:00+01:00",
+  "publisher": "Sundhedsdatastyrelsen",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "patientregistrering@sundhedsdata.dk"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "A",
+      "display": "Administrative forhold"
+    },
+    {
+      "code": "DJ44",
+      "display": "Kronisk obstruktiv lungesygdom"
+    },
+    {
+      "code": "proZZ3170",
+      "display": "Hjemmeblodtryksmåling udført af patienten",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-09"
+        }
+      ]
+    },
+    {
+      "code": "ZZ3170",
+      "display": "Hjemmeblodtryksmåling udført af patienten"
+    },
+    {
+      "code": "ALCA03",
+      "display": "virtuel kontakt"
+    },
+    {
+      "code": "ALCA00",
+      "display": "fysisk fremmøde"
+    }
+  ]
+}

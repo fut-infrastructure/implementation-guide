@@ -1,0 +1,787 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "10240",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2021-03-16T16:28:30.690+00:00"
+  },
+  "url": "urn:oid:1.2.208.184.100.8",
+  "identifier": [{
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.184.100.8"
+  }],
+  "name": "DAK-E-Codes",
+  "title": "DAK-E Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-01-05T23:00:00+00:00",
+  "publisher": "KiAP - Kvalitet i Almen Praksis",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medcom.dk/opslag/koder-tabeller-ydere/koder/laboratorieomraadet/dak-e-koder"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ghe@medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Procedure and observation codes used for communication and administration of laboratory results in Denmark.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "DIB0010",
+      "display": "Følsomhed højre;Fod",
+      "definition": "Fod—Følsomhed højre arb.akt.(ingen; normal; reduceret) = ?"
+    },
+    {
+      "code": "DIB0011",
+      "display": "Følsomhed venstre;Fod",
+      "definition": "Fod—Følsomhed venstre arb.akt.(ingen; normal; reduceret) = ?"
+    },
+    {
+      "code": "DIB0014",
+      "display": "Blodtryk højre,index;Ankel/Arm",
+      "definition": "Ankel/Arm—Blodtryk højre,index  =  ? mmHg"
+    },
+    {
+      "code": "DIB0015",
+      "display": "Blodtryk venstre,index;Ankel/Arm",
+      "definition": "Ankel/Arm—Blodtryk venstre,index  =  ? mmHg"
+    },
+    {
+      "code": "DIB0018",
+      "display": "Sår højre;Fod",
+      "definition": "Fod—Sår højre; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "DIB0019",
+      "display": "Sår venstre;Fod",
+      "definition": "Fod—Sår venstre; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "DNK05219",
+      "display": "Elektrokardiografi [EKG12];Pt",
+      "definition": "Pt—Elektrokardiografi; egenskabsart(I II III V1-6 aVflr) = ?"
+    },
+    {
+      "code": "DNK05472",
+      "display": "Blodtryk systolisk;Arm",
+      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg"
+    },
+    {
+      "code": "DNK05473",
+      "display": "Blodtryk diastolisk;Arm",
+      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
+    },
+    {
+      "code": "DNK35842",
+      "display": "Glukose(diag.);P(vB; fPt)",
+      "definition": "P(vB; fPt)—Glucose; stofk.(diagnostisk) = ? mmol/L"
+    },
+    {
+      "code": "MCS88001",
+      "display": "Ugentligt;Pt(motion)",
+      "definition": "Pt(motion)—Ugentligt; tid = ? time/uge"
+    },
+    {
+      "code": "MCS88002",
+      "display": "Dagligt;Pt(rygning)",
+      "definition": "Pt(rygning)—Dagligt; antal = ?"
+    },
+    {
+      "code": "MCS88005",
+      "display": "Rygestop tilbudt;Pt(rygning)",
+      "definition": "Pt(rygning)—Rygestop tilbudt; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88006",
+      "display": "Tobaksrygning ophørt;Pt(rygning)",
+      "definition": "Pt(rygning)—Ophørt = ? Årstal"
+    },
+    {
+      "code": "MCS88008",
+      "display": "Passiv tobaksrygning;Pt(rygning)",
+      "definition": "Pt(rygning)—Udsættes du for passiv tobaksrygning; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88009",
+      "display": "Rygestop hjælp ønskes;Pt(rygning)",
+      "definition": "Pt(rygning)—Vil du gerne have hjælp til at holde op; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88010",
+      "display": "Vil du gerne holde op;Pt(rygning)",
+      "definition": "Pt(rygning)—Vil du gerne holde op; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88011",
+      "display": "Ryger du tobak;Pt(rygning)",
+      "definition": "Pt(rygning)—Ryger du tobak; arb.akt.(dagligt; lejlighedsvis; ophørt; aldrig røget) = ?"
+    },
+    {
+      "code": "MCS88014",
+      "display": "Diabeteskontrol aftalt;Pt(diabetes)",
+      "definition": "Pt(diabetes)—Antal diabeteskontroller aftalt i det kommende år; antal (værdi 0-10) = ?"
+    },
+    {
+      "code": "MCS88015",
+      "display": "FEV1;Lunge",
+      "definition": "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "FEV1"
+        }
+      ]
+    },
+    {
+      "code": "MCS88016",
+      "display": "FVC;Lunge",
+      "definition": "Lunge—Lungefunktionsundersøgelse vitalkapasitet FVC; vol. = ? L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "FVC"
+        }
+      ]
+    },
+    {
+      "code": "MCS88017",
+      "display": "FEV1/FVC;Lunge",
+      "definition": "Lunge—FEV1/FVC; ratio = ?"
+    },
+    {
+      "code": "NPU28404",
+      "display": "Taljeomkreds;Pt",
+      "definition": "Pt—Taljeomkreds; længde = ? m"
+    },
+    {
+      "code": "MCS88019",
+      "display": "Blodtryk hjemme systolisk;Arm",
+      "definition": "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Systolisk/diastoliskblodtryk"
+        }
+      ]
+    },
+    {
+      "code": "MCS88020",
+      "display": "Blodtryk hjemme diastolisk;Arm",
+      "definition": "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Systolisk/diastoliskblodtryk"
+        }
+      ]
+    },
+    {
+      "code": "MCS88021",
+      "display": "MRC skala;Pt(KOL)",
+      "definition": "Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "MRC"
+        }
+      ]
+    },
+    {
+      "code": "MCS88022",
+      "display": "Eksacerbationer;Pt(KOL)",
+      "definition": "Pt(KOL)—Antal eksacerbationer i det sidst forløbne år; antal (værdi 1-20) = ?"
+    },
+    {
+      "code": "MCS88023",
+      "display": "FEV1 af forventet værdi;Pt(KOL)",
+      "definition": "Pt(KOL) - FEV1 i % af den forventede værdi (efter højde,alder og køn); ratio = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "FEV1 af forventet værdi"
+        }
+      ]
+    },
+    {
+      "code": "MCS88024",
+      "display": "Pakkeår;Pt(rygning)",
+      "definition": "Pt(rygning)—Antal pakkeår (20 cigaretter dagligt i et år) = ? År"
+    },
+    {
+      "code": "MCS88025",
+      "display": "HbA1c mål aftalt;Hb (B)(diabetes)",
+      "definition": "Hb (B)(diabetes)—HBA1c mål aftalt for det kommende år; stofratio = ?"
+    },
+    {
+      "code": "MCS88026",
+      "display": "LDL-Kolesterol, mål aftalt;P(mål)",
+      "definition": "P(mål)—LDL Kolesterol mål aftalt for kommende år; stofk. = ? mmol/L"
+    },
+    {
+      "code": "MCS88027",
+      "display": "BT(systolisk), mål aftalt;Arm(mål)",
+      "definition": "Arm(mål)—Blodtryk(systolisk) mål aftalt for kommende år = ? mmHg"
+    },
+    {
+      "code": "MCS88028",
+      "display": "Legeme vægt, mål aftalt;Pt(mål)",
+      "definition": "Pt(mål)—Legeme; masse mål aftalt for kommende år = ? Kg"
+    },
+    {
+      "code": "MCS88030",
+      "display": "FEV1 reversibilitet;Lunge",
+      "definition": "Lunge—FEV1 reversibilitet = ? L"
+    },
+    {
+      "code": "MCS88032",
+      "display": "Hjertesvigts funktionskl.;Pt(NYHA)",
+      "definition": "Pt(NYHA)—Hjerteinsufficiens funktionsklasse; antal (værdi 0-4) = ?"
+    },
+    {
+      "code": "MCS88033",
+      "display": "BT(diatolisk), mål aftalt;Arm(mål)",
+      "definition": "Arm(mål)—Blodtryk(diastolisk) mål aftalt for kommende år = ? mmHg"
+    },
+    {
+      "code": "MCS88034",
+      "display": "BMI, mål aftalt;Pt(mål)",
+      "definition": "Pt(mål)—Legeme; massekoefficient(masse/kvadreret højde) mål aftalt for det kommende år  = ? kg/m"
+    },
+    {
+      "code": "MCS88067",
+      "display": "Taljeomkreds mål aftalt;Pt(diabet)",
+      "definition": "Pt(diabetes)—Taljeomkreds mål aftalt for det kommende år; længde = ? M"
+    },
+    {
+      "code": "MCS88036",
+      "display": "Alkoholforbrug;Pt(alkohol)",
+      "definition": "Pt(alkohol)—Alkoholforbrug ugentlig; antal = ? Uge"
+    },
+    {
+      "code": "MCS88039",
+      "display": "Til rådighed for arbejdsmark.;Pt",
+      "definition": "Pt—Står til rådighed for arbejdsmarkedet; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88040",
+      "display": "ASS score;Pt(angst)",
+      "definition": "Pt(angst)—Angst scoreskema; antal (værdi 0-50) = ?"
+    },
+    {
+      "code": "MCS88041",
+      "display": "MDI score;Pt(depression)",
+      "definition": "Pt(depression)—Major Depression Inventory; antal (værdi 0-50) = ?"
+    },
+    {
+      "code": "MCS88042",
+      "display": "MMSE score;Pt",
+      "definition": "Pt—Mini-Mental State Examination score; antal (værdi 0-30) = ?"
+    },
+    {
+      "code": "MCS88043",
+      "display": "Er der talt om kost;Pt(kost)",
+      "definition": "Pt(kost)—Er der talt om kost; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88044",
+      "display": "Øjenus., fundusundersøgelse;Pt(øje)",
+      "definition": "Pt(øje)—Øjenbaggrundsundersøgelse, fundusundersøgelse; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88050",
+      "display": "Rejse sætte sig testen;Pt",
+      "definition": "Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Rejse-sætte-sig-test"
+        }
+      ]
+    },
+    {
+      "code": "MCS88058",
+      "display": "GOLD Inddeling;Pt(KOL)",
+      "definition": "Pt(KOL) —GOLD Inddeling; arb.akt.(A; B; C; D) = ?"
+    },
+    {
+      "code": "MCS88059",
+      "display": "Symptom;Pt(CMDQ)",
+      "definition": "Pt(CMDQ) —Symptom; antal (værdi 0-48) = ?"
+    },
+    {
+      "code": "MCS88060",
+      "display": "Helbredsangst;Pt(CMDQ)",
+      "definition": "Pt(CMDQ) —Helbredsangst; antal (værdi 0-28)  = ?"
+    },
+    {
+      "code": "MCS88061",
+      "display": "Angsttilstand;Pt(CMDQ)",
+      "definition": "Pt(CMDQ) —Angsttilstand; antal (værdi 0-16) = ?"
+    },
+    {
+      "code": "MCS88062",
+      "display": "Depression;Pt(CMDQ)",
+      "definition": "Pt(CMDQ) —Depression; antal (værdi 0-24) = ?"
+    },
+    {
+      "code": "MCS88063",
+      "display": "Alkohol;Pt(CMDQ)",
+      "definition": "Pt(CMDQ) —Alkohol; antal (værdi 0-4) = ?"
+    },
+    {
+      "code": "MCS88105",
+      "display": "FEV1/FVC reversibilitet;Lunge",
+      "definition": "Lunge—FEV1/FVC reversibilitet; ratio = ?"
+    },
+    {
+      "code": "NPU01443",
+      "display": "Calcium;P",
+      "definition": "P—Calcium(II); stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU01566",
+      "display": "Kolesterol;P",
+      "definition": "P—Cholesterol+ester; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU01549",
+      "display": "Kolesterol;P",
+      "definition": "P—Cholesterol(non-ester); stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU18412",
+      "display": "Kolesterol;P(fPt)",
+      "definition": "P(fPt)—Cholesterol+ester; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU01567",
+      "display": "Kolesterol HDL;P",
+      "definition": "P—Cholesterol+ester, i HDL; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU01568",
+      "display": "Kolesterol LDL;P",
+      "definition": "P—Cholesterol+ester, i LDL; stofk. = ? mmol/L"
+    },
+    {
+      "code": "DNK35308",
+      "display": "Kolesterol LDL (beregnet);P",
+      "definition": "P—Cholesterol+ester, i LDL; stofk.(DSKB 2017) = ? mmol/L"
+    },
+    {
+      "code": "NPU01700",
+      "display": "Vitamin B12;P",
+      "definition": "P—Cobalamin; stofk. = ? pmol/L"
+    },
+    {
+      "code": "NPU01807",
+      "display": "Kreatinin (Jaffe);P",
+      "definition": "P—Creatininium; stofk.(Jaffe) = ? µmol/L"
+    },
+    {
+      "code": "NPU04998",
+      "display": "Kreatinin;P",
+      "definition": "P—Creatininium; stofk.(enz.) = ? µmol/L"
+    },
+    {
+      "code": "NPU18016",
+      "display": "Kreatinin;P",
+      "definition": "P—Creatininium; stofk. = ? µmol/L"
+    },
+    {
+      "code": "NPU02192",
+      "display": "Glukose;P",
+      "definition": "P—Glucose; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU02319",
+      "display": "Hæmoglobin;B",
+      "definition": "B—Hæmoglobin(Fe); stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU02593",
+      "display": "Leukocytter;B",
+      "definition": "B—Leukocytter; antalk. = ? × 10e9/L"
+    },
+    {
+      "code": "NPU03011",
+      "display": "O2 sat.;Hb(aB)",
+      "definition": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Iltmætning"
+        }
+      ]
+    },
+    {
+      "code": "NPU03230",
+      "display": "Kalium;P",
+      "definition": "P—Kalium-ion; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU03429",
+      "display": "Natrium;P",
+      "definition": "P—Natrium-ion; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU03568",
+      "display": "Trombocytter;B",
+      "definition": "B—Thrombocytter; antalk. = ? × 10e9/L"
+    },
+    {
+      "code": "NPU03577",
+      "display": "Thyrotropin [TSH];P",
+      "definition": "P—Thyrotropin; arb.stofk.(IRP 80/558; proc.) = ? × 10e-3 IU/L"
+    },
+    {
+      "code": "NPU03794",
+      "display": "Legeme højde;Pt",
+      "definition": "Pt—Legeme; højde = ? m",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Højde"
+        }
+      ]
+    },
+    {
+      "code": "NPU03804",
+      "display": "Legeme vægt;Pt",
+      "definition": "Pt—Legeme; masse = ? kg",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Vægt"
+        }
+      ]
+    },
+    {
+      "code": "NPU27281",
+      "display": "BMI;Pt",
+      "definition": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "BMI"
+        }
+      ]
+    },
+    {
+      "code": "NPU03835",
+      "display": "Hæmoglobin A1c;Hb(B)",
+      "definition": "Hb(Fe; B)—Hæmoglobin A1c(Fe); stoffr. = ?"
+    },
+    {
+      "code": "NPU04094",
+      "display": "Triglycerid;P",
+      "definition": "P—Triglycerid; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU03620",
+      "display": "Triglycerid;P(fPt)",
+      "definition": "P(fPt)—Triglycerid; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU04207",
+      "display": "Glukose(semikvant);U",
+      "definition": "U—Glucose; arb.k.(proc.) = ?"
+    },
+    {
+      "code": "NPU04208",
+      "display": "Hæmoglobin(semikvant);U",
+      "definition": "U—Hæmoglobin; arb.k.(proc.) = ?"
+    },
+    {
+      "code": "NPU10171",
+      "display": "Kolesterol LDL;P(fPt)",
+      "definition": "P(fPt)—Cholesterol+ester, i LDL; stofk. = ? mmol/L"
+    },
+    {
+      "code": "NPU10266",
+      "display": "1,25-Dihydroxy-Vitamin D(D3+D2);P",
+      "definition": "P—Calcitriol+1,25-Dihydroxyergocalciferol; stofk. = ? pmol/L"
+    },
+    {
+      "code": "NPU17181",
+      "display": "Brain natriuretisk peptid [BNP];P",
+      "definition": "P—Brain natriuretisk peptid; stofk. = ? pmol/L"
+    },
+    {
+      "code": "NPU17997",
+      "display": "Albumin (semikvant);U",
+      "definition": "U—Albumin; arb.k.(proc.) = ?"
+    },
+    {
+      "code": "NPU19651",
+      "display": "Alanintransaminase [ALAT];P",
+      "definition": "P—Alanintransaminase; kat.k.(IFCC 2002) = ? U/L"
+    },
+    {
+      "code": "NPU19657",
+      "display": "gamma-Glutamyltransferase;P",
+      "definition": "P—gamma-Glutamyltransferase; kat.k.(IFCC 2002) = ? U/L"
+    },
+    {
+      "code": "NPU19661",
+      "display": "Albumin / Kreatinin-ratio;U",
+      "definition": "U—Albumin/Creatininium; masseratio = ? × 10e-3"
+    },
+    {
+      "code": "NPU03918",
+      "display": "Albumin / Kreatinin-ratio;U",
+      "definition": "U—Albumin/Creatininium; stofratio = ? × 10e-3"
+    },
+    {
+      "code": "NPU19748",
+      "display": "C-reaktivt protein [CRP];P",
+      "definition": "P—C-reaktivt protein; massek. = ? mg/L"
+    },
+    {
+      "code": "NPU21692",
+      "display": "Puls;Hjerte",
+      "definition": "Hjerte—Systole; frekv. = ? × 1/min",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Puls"
+        }
+      ]
+    },
+    {
+      "code": "NPU27300",
+      "display": "Hæmoglobin A1c (IFCC);Hb(B)",
+      "definition": "Hæmoglobin beta kæde(B)—N-(1-deoxyfructos-1-yl)hæmoglobin beta kæde; stoffr. = ? mmol/mol"
+    },
+    {
+      "code": "NPU27412",
+      "display": "Glukose, middel (fra HbA1c);P",
+      "definition": "P—Glucose; stofk.(gennemsnitlig; Hb A1c; proc.) = ? mmol/L"
+    },
+    {
+      "code": "NPU01685",
+      "display": "Koagulationsfaktor II+VII+X [INR];P",
+      "definition": "P—Koagulation, vævsfaktor-induceret; rel.tid(aktuel/norm; INR; IRP 67/40; proc.) = ?"
+    },
+    {
+      "code": "NPU27783",
+      "display": "Basisk fosfatase;P",
+      "definition": "P—Basisk phosphatase; kat.k.(37 °C; proc.) = ? U/L"
+    },
+    {
+      "code": "MCS88071",
+      "display": "30 minutter om dagen;Pt(motion)",
+      "definition": "Pt(motion)—fysisk aktiv 30 minutter om dagen; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88068",
+      "display": "Fysisk aktivitet fritid.;Pt(motion)",
+      "definition": "Pt(motion)—fysisk aktivitet i fritiden; arb.akt.(konkurrence; motionsidræt, lettere motion, stillesiddende) = ?"
+    },
+    {
+      "code": "MCS88052",
+      "display": "Kostscore;Pt(kost)",
+      "definition": "Pt(kost)—kostscore; antal (0-12) = ?"
+    },
+    {
+      "code": "MCS88053",
+      "display": "Helbred;Pt(selvvurderet helbred)",
+      "definition": "Pt(selvvurderet helbred)—hvordan synes du dit helbred er alt i alt; arb.akt.(Fremragende, vældigt godt, godt, mindre godt, dårligt) = ?"
+    },
+    {
+      "code": "MCS88069",
+      "display": "Svangre us.;Pt(svangreundersøgelse)",
+      "definition": "Pt(svangreundersøgelse)—Hvilken svangreundersøgelse;  arb.akt.(første; anden; tredje; fjerde) = ?"
+    },
+    {
+      "code": "MCS88070",
+      "display": "Børne us.;Pt(børneundersøgelse)",
+      "definition": "Pt(børneundersøgelse)—Hvilken børneundersøgelse; arb.akt.( 1 uges; 5 ugers; 5 måneders; 1 års; 2 års; 3 års; 4 års; 5 års) = ?"
+    },
+    {
+      "code": "MCS88100",
+      "display": "FEV6;Lunge",
+      "definition": "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
+    },
+    {
+      "code": "MCS88099",
+      "display": "FEV1/FEV6;Lunge",
+      "definition": "Lunge—FEV1/FEV6 ratio = ?"
+    },
+    {
+      "code": "MCS88104",
+      "display": "FVC reversibilitet;Lunge",
+      "definition": "Lunge—FVC reversibilitet = ? L"
+    },
+    {
+      "code": "NPU17559",
+      "display": "Kreatinin;P",
+      "definition": "P—Creatininium; stofk. = ? mmol/L"
+    },
+    {
+      "code": "MCS88106",
+      "display": "Stoffer;Pt(problematisk stofbrug)",
+      "definition": "Pt(problematisk stofbrug)—Hash 4 eller flere dg inden for den seneste mnd og/eller andre euforiserende stoffer, som fx amfetamin, kokain og ecstasy 1 eller flere dg inden for den seneste mnd; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88116",
+      "display": "Debutår;Pt(diabetes)",
+      "definition": "Pt(diabetes)—Debutår = ? Årstal"
+    },
+    {
+      "code": "MCS88117",
+      "display": "Retinopati;Pt(diabetes)",
+      "definition": "Pt(diabetes)—Retinopati; arb.k.(0 1) = ?"
+    },
+    {
+      "code": "MCS88120",
+      "display": "Stabil Angina Pectoris;Pt(CCS)",
+      "definition": "Pt(CCS)—Stabil Angina Pectoris; antal (værdi 1-4) = ?"
+    },
+    {
+      "code": "MCS88137",
+      "display": "CAT score;Pt",
+      "definition": "Pt—CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "CAT"
+        }
+      ]
+    },
+    {
+      "code": "MCS88142",
+      "display": "Inhalationsteknik kontrol;Pt",
+      "definition": "Pt—Inhalationsteknik for indtagelse af inhalationsmedicin kontrolleret i praksis; antal(værdi 0-1) = ?"
+    },
+    {
+      "code": "MCS88143",
+      "display": "Lungefunktion undersøgt;Pt",
+      "definition": "Pt—Lungefunktion undersøgt; arb.akt.(Ja; Nej; Ej relevant; Ej muligt) = ?"
+    },
+    {
+      "code": "MCS88144",
+      "display": "Henvist til Rehabilitering;Pt",
+      "definition": "Pt—Henvist til Rehabilitering; arb.akt.(Ja; Nej; Ikke egnet; Ønsker ikke; Ej relevant; Ej spurgt) = ?"
+    },
+    {
+      "code": "MCS88145",
+      "display": "Fysisk træning/motion;Pt",
+      "definition": "Pt—Fysisk anstrengende træning/motion; arb.akt.(Dagligt; Ugentligt; Månedligt; Ingen; Undgår; Ej spurgt) = ?"
+    },
+    {
+      "code": "DNK35302",
+      "display": "eGFR / 1,73m²(CKD-EPI)",
+      "definition": "Nyre—Glomerulær filtration; vol.hast.(ovfl.=1,73 m²; CKD-EPIkrea; DSKB-DNS-DPS 2015) = ? mL/min"
+    },
+    {
+      "code": "DNK35131",
+      "display": "eGFR ml/min per 1.73m²;Nyre",
+      "definition": "Nyre—Glomerulær filtration; vol.hast.(ovfl.=1,73 m²; DSKB-DNS 2009) = ? mL/min"
+    },
+    {
+      "code": "MCS88146",
+      "display": "Heartscore;Pt",
+      "definition": "Pt—Heartscore(køn,alder,systolisk blodtryk,cholesterol); ratio=?"
+    },
+    {
+      "code": "MCS88147",
+      "display": "Manniche VAS-score(total);Pt",
+      "definition": "Pt—Manniche VAS-score(total); antal(værdi 0-60) = ?"
+    },
+    {
+      "code": "MCS88148",
+      "display": "STarT score;Pt",
+      "definition": "Pt—Subgroups for Targeted Treatment (STarT) score; arb.akt.(Lav; Middel; Høj) = ?"
+    },
+    {
+      "code": "MCS88149",
+      "display": "Motion, mål aftalt;Pt(mål)",
+      "definition": "Pt(mål)—Motion, mål aftalt for kommende år; arb.akt.(Dagligt; Ugentligt; Månedligt; Ingen; Undgår; Ej spurgt) = ?"
+    },
+    {
+      "code": "MCS88150",
+      "display": "Alkohol, mål aftalt;Pt(mål)",
+      "definition": "Pt(mål)—Alkoholforbrug, mål aftalt for kommende år; antal = ? genstand/uge"
+    },
+    {
+      "code": "MCS88151",
+      "display": "Rygning, mål aftalt;Pt(mål)",
+      "definition": "Pt(mål)—Rygning, mål aftalt for kommende år; arb.akt.(dagligt; lejlighedsvis; ophørt; aldrig røget) = ?"
+    },
+    {
+      "code": "MCS88152",
+      "display": "Øjenlægekontrol;Pt(diatetes)",
+      "definition": "Pt(diabetes)—Øjenlægekontrol; arb.akt.(ja;nej;ej relevant) = ?"
+    },
+    {
+      "code": "MCS88153",
+      "display": "Fodundersøgelse;Pt(diabetes)",
+      "definition": "Pt(diabetes)—Fodundersøgelse; arb.akt.(ja;nej;ej relevant) = ?"
+    }
+  ]
+}
