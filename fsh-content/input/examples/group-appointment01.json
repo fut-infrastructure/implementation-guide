@@ -29,6 +29,15 @@
       }
     },
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis",
+      "valueCodeableConcept": {
+        "coding" : [{
+          "code": "service-act",
+          "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
+        }]
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id",
       "valueString": "42"
     },
