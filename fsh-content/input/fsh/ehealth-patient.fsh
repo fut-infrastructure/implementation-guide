@@ -28,6 +28,7 @@ Parent: DkCorePatient
 * contact.address only ehealth-address
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
 * generalPractitioner only Reference(Organization or Practitioner)
+* generalPractitioner ^type.aggregation = #referenced
 
 Extension: ehealth-itcompetencelevel
 Title:     "IT competence level"

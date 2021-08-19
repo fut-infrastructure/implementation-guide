@@ -11,6 +11,7 @@ Parent: RelatedPerson
 * identifier[ehealth-dk-crn-identifier] only dk-core-cpr-identifier
 
 * patient only Reference(ehealth-patient)
+* patient ^type.aggregation = #referenced
 * relationship.coding from relatedperson-relationshiptype
 * name 1..*
 

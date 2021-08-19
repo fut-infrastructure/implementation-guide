@@ -13,9 +13,13 @@ Parent: ServiceRequest
 * replaces 0..0
 * code from ehealth-activitydefinition-code
 * subject only Reference(ehealth-patient)
+* subject ^type.aggregation = #referenced
 * performer 0..1
 * performer only Reference(ehealth-practitioner or ehealth-organization or ehealth-patient or ehealth-device or ehealth-relatedperson or HealthcareService)
+* performer ^type.aggregation = #referenced
 * reasonReference only Reference(ehealth-condition or ehealth-observation)
+* reasonReference ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 * relevantHistory only Reference(ehealth-provenance)
+* relevantHistory ^type.aggregation = #referenced

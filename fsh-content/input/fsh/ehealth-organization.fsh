@@ -14,6 +14,7 @@ Parent: Organization
 * telecom.system from ehealth-contactpoint-system
 * telecom.value 1..1
 * partOf only Reference(ehealth-organization)
+* partOf ^type.aggregation = #referenced
 * type from ehealth-organization-type
 * contact.telecom.extension contains ehealth-organization-telecomValue named telecomValue 1..1
 * contact.telecom.extension contains ehealth-organization-telecomSystem named telecomSystem 1..1
@@ -31,6 +32,7 @@ Description: "Relations to other Organizations"
     relationType 1..1 and
     period 1..1 
 * extension[target].value[x] only Reference(ehealth-organization)
+* extension[target].value[x] ^type.aggregation = #referenced
 * extension[relationType].value[x] only CodeableConcept
 * extension[relationType].valueCodeableConcept from ehealth-organization-type
 * extension[period].value[x] only Period

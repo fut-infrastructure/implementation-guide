@@ -16,3 +16,4 @@ Parent: ActivityDefinition
 * code from ehealth-activitydefinition-code
 * code 1..1
 * location only Reference(Location)
+* location ^type.aggregation = #referenced

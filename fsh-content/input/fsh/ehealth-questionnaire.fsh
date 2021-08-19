@@ -29,6 +29,7 @@ Title:     "Questionnaire intended organization"
 Description: "The questionnaire is intended to be used by these organizations."
 * . ^short = "The organization intended to use this questionnaire."
 * value[x] only Reference(ehealth-organization)
+* valueReference ^type.aggregation = #referenced
 * valueReference 1..1
 
 Extension: ehealth-questionnaire-type

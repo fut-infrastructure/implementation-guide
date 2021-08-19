@@ -13,6 +13,7 @@ Parent: Appointment
 * reasonCode 0..1
 * reasonCode from ehealth-appointment-reason
 * supportingInformation only Reference(ehealth-episodeofcare or ehealth-careplan)
+* supportingInformation ^type.aggregation = #referenced
 * supportingInformation 0..1
 * participant 2..*
 * participant.extension contains ehealth-ext-careteam named careteam 0..1

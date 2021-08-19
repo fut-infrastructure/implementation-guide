@@ -8,6 +8,7 @@ Parent: DeviceMetric
 * type from ehealth-device-measurement-unit
 * unit from ehealth-device-measurement-unit
 * source 1..1
+* source ^type.aggregation = #referenced
 * source only Reference(ehealth-device)
 * parent 0..0
 * calibration.extension contains ehealth-devicemetric-calibrationExpires named calibrationExpires 0..1

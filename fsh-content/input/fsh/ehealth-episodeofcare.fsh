@@ -9,12 +9,15 @@ Parent: EpisodeOfCare
 * diagnosis.condition only Reference(ehealth-condition)
 * diagnosis.condition ^type.aggregation = #referenced
 * patient only Reference(ehealth-patient)
+* patient ^type.aggregation = #referenced
 * managingOrganization 1..1
+* managingOrganization ^type.aggregation = #referenced
 * managingOrganization only Reference(ehealth-organization)
 * period 1..1
 // No ReferralRequest in R4: * referralRequest only Reference(ReferralRequest)
 * careManager 0..0
 * team only Reference(ehealth-careteam)
+* team ^type.aggregation = #referenced
 * account 0..0
 
 Extension: ehealth-episodeofcare-caremanagerOrganization
@@ -22,6 +25,7 @@ Title: "Caremanager organization"
 Description: "Reference to caremanagers organization"
 * . ^short = "Reference to caremanagers organization"
 * valueReference only Reference(ehealth-organization)
+* valueReference ^type.aggregation = #referenced
 
 Extension:  ehealth-episodeofcare-statusschedule
 Title:      "Status schedule"

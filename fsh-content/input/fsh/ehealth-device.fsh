@@ -7,6 +7,7 @@ Parent: Device
 * type from ehealth-device-types
 * patient 0..0
 * owner only Reference(ehealth-organization)
+* owner ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 

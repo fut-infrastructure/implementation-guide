@@ -19,9 +19,12 @@ Parent: Appointment
 * reasonCode 0..1
 * reasonCode from ehealth-appointment-reason
 * supportingInformation only Reference(ehealth-episodeofcare or ehealth-careplan)
+* supportingInformation ^type.aggregation = #referenced
 * supportingInformation 0..1
 * participant.extension contains ehealth-ext-careteam named careteam 0..1
+* participant.actor ^type.aggregation = #referenced
 * participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Location)
+// TODO Syntax? * participant.actor ^type.aggregation = #referenced or #contained
 * start 1..1
 * end 1..1
 * identifier.system 0..1

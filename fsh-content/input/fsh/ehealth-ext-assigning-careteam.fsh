@@ -1,3 +1,4 @@
 Extension: ehealth-assigning-careteam
 Title: "Assigning careteam"
-* valueReference only Reference(ehealth-careteam)
+* value[x] only Reference(ehealth-careteam)
+* value[x] ^type.aggregation = #referenced

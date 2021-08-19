@@ -4,4 +4,5 @@ Description: "Specifies that the resource is only intended for use in the specif
 * . ^short = "The intended audience of the resource"
 * value[x] only Reference(ehealth-organization)
 * valueReference only Reference(ehealth-organization)
+* valueReference ^type.aggregation = #referenced
 * valueReference 1..1

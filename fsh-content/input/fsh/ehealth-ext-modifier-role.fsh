@@ -6,6 +6,7 @@ Description: "This is a modifier role that can hold a role and a reference to th
     reference 1..1 and
     role 1..1
 * extension[reference].value[x] only Reference(ehealth-organization)
+* extension[reference].valueReference ^type.aggregation = #referenced
 * extension[reference].valueReference 1..1
 * extension[role].value[x] only CodeableConcept
 * extension[role].valueCodeableConcept from ehealth-modifier-role

@@ -7,14 +7,18 @@ Parent: Observation
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
+* basedOn ^type.aggregation = #referenced
 * code from ehealth-observation-codes
 * subject 1..1
 * subject only Reference(ehealth-patient)
+* subject ^type.aggregation = #referenced
 * effective[x] 1..1
 * performer 1..1
 * performer only Reference(ehealth-practitioner or ehealth-organization or ehealth-patient or ehealth-relatedperson)
+* performer ^type.aggregation = #referenced
 * value[x] only Quantity or CodeableConcept
 * device only Reference(ehealth-device)
+* device ^type.aggregation = #referenced
 * referenceRange.type from ehealth-reference-range-type
 // not in r4: * related.target only Reference(ehealth-observation or ehealth-questionnaireresponse or Sequence)
 * component.code from ehealth-observation-codes

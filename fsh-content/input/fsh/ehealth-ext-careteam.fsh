@@ -3,3 +3,4 @@ Title:       "Careteam"
 Description: "Careteam"
 * . ^short = "Careteam"
 * value[x] only Reference(ehealth-careteam)
+* value[x] ^type.aggregation = #referenced

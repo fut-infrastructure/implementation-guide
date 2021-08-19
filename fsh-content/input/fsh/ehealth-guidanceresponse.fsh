@@ -5,12 +5,17 @@ Parent: GuidanceResponse
 * extension[episodeOfCare] ^type.aggregation = #referenced
 // not in R4: * module only Reference(ServiceDefinition)
 * subject only Reference(ehealth-patient)
+* subject ^type.aggregation = #referenced
 * performer only Reference(ehealth-device)
+* performer ^type.aggregation = #referenced
 // not in R4: * reason only Reference(Resource)
+* evaluationMessage ^type.aggregation = #referenced
 * result only Reference(ehealth-careplan or RequestGroup)
+* result ^type.aggregation = #referenced
 
 Extension:   ehealth-guidanceresponse-episodeOfCare
 Title:       "EpisodeOfCare"
 Description: "Episode of care"
 * . ^short = "Episode of care"
+* value[x] ^type.aggregation = #referenced
 * value[x] only Reference(ehealth-episodeofcare)

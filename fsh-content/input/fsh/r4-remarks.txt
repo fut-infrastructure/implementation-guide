@@ -1,44 +1,16 @@
 Trifork-ressourcer:
 
-ehealth-appointment + ehealth-group-appointment:
+ehealth-appointment + ehealth-group-appointment (+ video-varianter):
 - reason omdøbt til reasonCode
 - indication er udgået
 
 --
 Systematic-ressourcer:
 
-CareTeam:
+CareTeam: participantrole
 - Der benyttes en ContactPoint extension (ehealth-careteam-telecom), som binder til system "contactpoint-system". Det giver denne QA-fejl i R4:
   - CareTeam telecom.value[x].Extension.value[x].system: Binding http://ehealth.sundhed.dk/vs/contactpoint-system is not a subset of binding http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1
 - På R4 CareTeam er telecom nu standard. Det er derfor fjernet som extension, og valueset-henvisningen er indført på standard-feltet i stedet.
-
-I CodeSystem ehealth-questionnaire-types findes nedenstående data, som får parsning til at køre i hegnet (det er derfor fjernet):
-
-  "identifier": {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:1.2.208.999.9.9"
-  },
-
-Ligeledes er dette fjernet fra CodeSystem ehealth-reference-range-type:
-
-  "identifier": {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:1.2.208.176.7.200.1"
-  },
-
-... og denne fra CodeSystem-1.2.208.176.2.1--20190829.json:
-
-  "identifier": {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:1.2.208.176.2.1"
-  },
-
-... og denne fra CodeSystem-dk-ihe-formatcode-cs.json:
-
-  "identifier": {
-    "system": "urn:ietf:rfc:3986",
-    "value": "urn:oid:1.2.208.184.100.10"
-  },
 
 Extension "ehealth-quality":
 - har en tekstuel beskrivelse af, at der skal anvendes tre forskellige valuesets for qualityCode afhængigt af qualityType. Der kan ikke på struktureret vis anvendes mere end ét valueset, så løses muligvis ved at lave wrapper-valueset?

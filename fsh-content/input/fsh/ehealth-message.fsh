@@ -14,6 +14,7 @@ Parent: Communication
 * extension contains ehealth-group-id named groupId 0..1
 * extension contains ehealth-on-behalf-of named onBehalfOf 0..1 MS
 * partOf only Reference(CarePlan)
+* partOf ^type.aggregation = #referenced
 * status from ehealth-event-status
 // Not in R4: * notDoneReason MS
 
@@ -37,9 +38,12 @@ Parent: Communication
 
 * recipient 0..1
 * recipient only Reference(Patient or Practitioner)
+* recipient ^type.aggregation = #referenced
 * sender only Reference(Device or Patient or Practitioner)
+// TODO Syntax? * sender ^type.aggregation = #referenced or #contained
 * reasonCode from ehealth-message-reasonCode
 * reasonReference only Reference(Condition or Observation)
+* reasonReference ^type.aggregation = #referenced
 
 * payload 0..1
 * payload.content[x] ^slicing.rules = #closed
@@ -90,3 +94,4 @@ Title:     "On behalf of"
 Description: "On behalf of"
 * . ^short = "On behalf of"
 * value[x] only Reference(ehealth-careteam)
+* value[x] ^type.aggregation = #referenced
