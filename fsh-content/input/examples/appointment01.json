@@ -13,6 +13,15 @@
         "reference": "http://inttest.ehealth.sundhed.dk/CareTeam/42",
         "display": "CareTeam Aarhus"
       }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis",
+      "valueCodeableConcept": {
+        "coding" : [{
+          "code": "service-act",
+          "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
+        }]
+      }
     }
   ],
   "status": "proposed",

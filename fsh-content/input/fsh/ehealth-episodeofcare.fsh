@@ -24,8 +24,8 @@ Extension: ehealth-episodeofcare-caremanagerOrganization
 Title: "Caremanager organization"
 Description: "Reference to caremanagers organization"
 * . ^short = "Reference to caremanagers organization"
-* valueReference only Reference(ehealth-organization)
-* valueReference ^type.aggregation = #referenced
+* value[x] only Reference(ehealth-organization)
+* value[x] ^type.aggregation = #referenced
 
 Extension:  ehealth-episodeofcare-statusschedule
 Title:      "Status schedule"
