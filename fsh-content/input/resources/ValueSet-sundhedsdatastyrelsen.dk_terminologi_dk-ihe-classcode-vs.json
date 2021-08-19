@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dk-ihe-classcode-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-ihe-classcode-cs.html\"><code>urn:oid:1.2.208.184.100.9</code></a></li></ul></div>"
+  },
+  "url" : "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs",
+  "version" : "0.99",
+  "name" : "DK_IHE_ClassCode_VS",
+  "title" : "DK_IHE_ClassCode_VS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-12-11T00:00:00+00:00",
+  "publisher" : "Sundhedsdatastyrelsen",
+  "contact" : [
+    {
+      "name" : "ehealth.sundhed.dk",
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "thsc@sundhedsdata.dk"
+        }
+      ]
+    }
+  ],
+  "description" : "Value set for the classCode attribute.",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "urn:oid:1.2.208.184.100.9"
+      }
+    ]
+  }
+}
