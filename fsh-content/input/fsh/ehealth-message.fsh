@@ -40,7 +40,8 @@ Parent: Communication
 * recipient only Reference(Patient or Practitioner)
 * recipient ^type.aggregation = #referenced
 * sender only Reference(Device or Patient or Practitioner)
-// TODO Syntax? * sender ^type.aggregation = #referenced or #contained
+* sender ^type.aggregation[+] = #referenced
+* sender ^type.aggregation[+] = #contained
 * reasonCode from ehealth-message-reasonCode
 * reasonReference only Reference(Condition or Observation)
 * reasonReference ^type.aggregation = #referenced

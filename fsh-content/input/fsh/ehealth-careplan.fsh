@@ -23,7 +23,6 @@ Parent: CarePlan
 // * context only Reference(ehealth-episodeofcare) not in R4
 * period 1..1
 * author only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or ehealth-organization or ehealth-careteam)
-// TODO Syntax? * author ^type.aggregation = #referenced or #bundled
 * careTeam only Reference(ehealth-careteam)
 * careTeam ^type.aggregation = #referenced
 * addresses only Reference(ehealth-condition)
@@ -39,6 +38,8 @@ Parent: CarePlan
 * activity.progress.authorString only string
 * activity.reference 1..1
 * activity.reference ^type.aggregation = #referenced
+* activity.reference ^type.aggregation[+] = #referenced
+* activity.reference ^type.aggregation[+] = #bundled
 * activity.reference only Reference(ehealth-servicerequest)
 // * activity.detail.definition only Reference(ehealth-plandefinition or ehealth-activitydefinition or ehealth-questionnaire) not in R4
 * activity.detail.reasonReference only Reference(ehealth-condition)
