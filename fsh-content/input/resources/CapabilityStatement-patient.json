@@ -1,0 +1,2424 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "01ba1968-861a-4c43-9185-987e7bbb53d9",
+  "url": "http://ehealth.sundhed.dk/fhir/CapabilityStatement/patient",
+  "name": "patient",
+  "status": "active",
+  "date": "2021-08-20T13:16:14.216+02:00",
+  "publisher": "Trifork",
+  "kind": "instance",
+  "software": {
+    "name": "patient",
+    "version": "1.3.4-SNAPSHOT"
+  },
+  "implementation": {
+    "description": "eHealth Patient service",
+    "url": "http://localhost:8080/fhir/"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "xml",
+    "application/fhir+json",
+    "json",
+    "application/x-turtle",
+    "ttl",
+    "html/json",
+    "html/xml",
+    "html/turtle"
+  ],
+  "patchFormat": [
+    "application/json-patch+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "security": {
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/security/oauth-uris",
+            "extension": [
+              {
+                "url": "token",
+                "valueUri": "https://saml.inttest.ehealth.sundhed.dk/auth/realms/ehealth/protocol/openid-connect/token"
+              },
+              {
+                "url": "authorize",
+                "valueUri": "https://saml.inttest.ehealth.sundhed.dk/auth/realms/ehealth/protocol/openid-connect/auth"
+              },
+              {
+                "url": "revoke",
+                "valueUri": "https://saml.inttest.ehealth.sundhed.dk/auth/realms/ehealth/protocol/openid-connect/revoke"
+              }
+            ]
+          }
+        ],
+        "service": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/restful-security-service",
+                "display": "OAuth"
+              }
+            ]
+          }
+        ]
+      },
+      "resource": [
+        {
+          "type": "Appointment",
+          "profile": "http://hl7.org/fhir/StructureDefinition/Appointment",
+          "supportedProfile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"
+          ],
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "searchInclude": [
+            "*",
+            "Appointment:actor",
+            "Appointment:patient"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-date",
+              "type": "date",
+              "documentation": "Appointment date/time."
+            },
+            {
+              "name": "specialty",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-specialty",
+              "type": "token",
+              "documentation": "The specialty of a practitioner that would be required to perform the service requested in this appointment"
+            },
+            {
+              "name": "service-category",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-service-category",
+              "type": "token",
+              "documentation": "A broad categorization of the service that is to be performed during this appointment"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "slot",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-slot",
+              "type": "reference",
+              "documentation": "The slots that this appointment is filling"
+            },
+            {
+              "name": "reason-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-reason-code",
+              "type": "token",
+              "documentation": "Coded reason this appointment is scheduled"
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-based-on",
+              "type": "reference",
+              "documentation": "The service request this appointment is allocated to assess"
+            },
+            {
+              "name": "appointmentGroupId",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/groupId",
+              "type": "string",
+              "documentation": "Search parameter for finding resources based on group id"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-patient",
+              "type": "reference",
+              "documentation": "One of the individuals of the appointment is this patient"
+            },
+            {
+              "name": "responsible",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/responsible",
+              "type": "reference",
+              "documentation": "Search parameter for finding responsible entity on Appointment"
+            },
+            {
+              "name": "supporting-info",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-supporting-info",
+              "type": "reference",
+              "documentation": "Additional information to support the appointment"
+            },
+            {
+              "name": "careteamParticipant",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/careteamParticipant",
+              "type": "reference",
+              "documentation": "Search parameter for finding appointments based on careteam participants"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-identifier",
+              "type": "token",
+              "documentation": "An Identifier of the Appointment"
+            },
+            {
+              "name": "practitioner",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-practitioner",
+              "type": "reference",
+              "documentation": "One of the individuals of the appointment is this practitioner"
+            },
+            {
+              "name": "appointment-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-appointment-type",
+              "type": "token",
+              "documentation": "The style of appointment or patient that has been booked in the slot (not service type)"
+            },
+            {
+              "name": "part-status",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-part-status",
+              "type": "token",
+              "documentation": "The Participation status of the subject, or other participant on the appointment. Can be used to locate participants that have not responded to meeting requests."
+            },
+            {
+              "name": "service-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-service-type",
+              "type": "token",
+              "documentation": "The specific service that is to be performed during this appointment"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "actor",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-actor",
+              "type": "reference",
+              "documentation": "Any one of the individuals participating in the appointment"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "intended-audience",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/intended-audience",
+              "type": "reference",
+              "documentation": "Search parameter for finding intended audience on Appointment"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "reason-reference",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-reason-reference",
+              "type": "reference",
+              "documentation": "Reason the appointment is to take place (resource)"
+            },
+            {
+              "name": "location",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-location",
+              "type": "reference",
+              "documentation": "This location is listed in the participants of the appointment"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Appointment-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/appointment-status",
+              "type": "token",
+              "documentation": "The overall status of the appointment"
+            }
+          ],
+          "operation": [
+            {
+              "name": "exportAsiCal",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Appointment-i-exportAsiCal"
+            },
+            {
+              "name": "meta",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-its-meta"
+            },
+            {
+              "name": "meta-add",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-i-meta-add"
+            },
+            {
+              "name": "meta-delete",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-i-meta-delete"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
+              "valueDecimal": 65
+            }
+          ],
+          "type": "CodeSystem",
+          "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+          "interaction": [
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "searchInclude": [
+            "*"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "CodeSystem:supplements",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-date",
+              "type": "date",
+              "documentation": "The code system publication date"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-code",
+              "type": "token",
+              "documentation": "A code defined in the code system"
+            },
+            {
+              "name": "context-type-value",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-context-type-value",
+              "type": "composite",
+              "documentation": "A use context type and value assigned to the code system"
+            },
+            {
+              "name": "jurisdiction",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-jurisdiction",
+              "type": "token",
+              "documentation": "Intended jurisdiction for the code system"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-description",
+              "type": "string",
+              "documentation": "The description of the code system"
+            },
+            {
+              "name": "context-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-context-type",
+              "type": "token",
+              "documentation": "A type of use context assigned to the code system"
+            },
+            {
+              "name": "language",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-language",
+              "type": "token",
+              "documentation": "A language in which a designation is provided"
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the code system"
+            },
+            {
+              "name": "context-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-context-quantity",
+              "type": "quantity",
+              "documentation": "A quantity- or range-valued use context assigned to the code system"
+            },
+            {
+              "name": "context",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-context",
+              "type": "token",
+              "documentation": "A use context assigned to the code system"
+            },
+            {
+              "name": "context-type-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-context-type-quantity",
+              "type": "composite",
+              "documentation": "A use context type and quantity- or range-based value assigned to the code system"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-identifier",
+              "type": "token",
+              "documentation": "External identifier for the code system"
+            },
+            {
+              "name": "content-mode",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-content-mode",
+              "type": "token",
+              "documentation": "not-present | example | fragment | complete | supplement"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-version",
+              "type": "token",
+              "documentation": "The business version of the code system"
+            },
+            {
+              "name": "url",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-url",
+              "type": "uri",
+              "documentation": "The uri that identifies the code system"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "supplements",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-supplements",
+              "type": "reference",
+              "documentation": "Find code system supplements for the referenced code system"
+            },
+            {
+              "name": "system",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-system",
+              "type": "uri",
+              "documentation": "The system for any codes defined by this code system (same as 'url')"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-name",
+              "type": "string",
+              "documentation": "Computationally friendly name of the code system"
+            },
+            {
+              "name": "publisher",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-publisher",
+              "type": "string",
+              "documentation": "Name of the publisher of the code system"
+            },
+            {
+              "name": "_source",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_source",
+              "type": "uri",
+              "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/CodeSystem-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/codesystem-status",
+              "type": "token",
+              "documentation": "The current status of the code system"
+            }
+          ],
+          "operation": [
+            {
+              "name": "lookup",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/CodeSystem-t-lookup"
+            },
+            {
+              "name": "subsumes",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/CodeSystem-t-subsumes"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "type": "Communication",
+          "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message",
+          "supportedProfile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"
+          ],
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "conditionalCreate": true,
+          "conditionalDelete": "multiple",
+          "searchInclude": [
+            "*",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:encounter",
+            "Communication:instantiates-canonical",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "Communication:patient",
+            "Communication:recipient",
+            "Communication:sender",
+            "Communication:subject"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "administrativeStatus",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/administrativeStatus",
+              "type": "token",
+              "documentation": "Search parameter for finding communication based on administrative status"
+            },
+            {
+              "name": "subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-subject",
+              "type": "reference",
+              "documentation": "Focus of message"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "part-of",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-part-of",
+              "type": "reference",
+              "documentation": "Part of this action"
+            },
+            {
+              "name": "medium",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-medium",
+              "type": "token",
+              "documentation": "A channel of communication"
+            },
+            {
+              "name": "on-behalf-of",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/on-behalf-of",
+              "type": "reference",
+              "documentation": "Search parameter for finding communication based on on-behalf-of"
+            },
+            {
+              "name": "threadId",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/threadId",
+              "type": "string",
+              "documentation": "Search parameter for finding communication based on thread id"
+            },
+            {
+              "name": "based-on",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-based-on",
+              "type": "reference",
+              "documentation": "Request fulfilled by this communication"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-patient",
+              "type": "reference",
+              "documentation": "Focus of message"
+            },
+            {
+              "name": "instantiates-uri",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-instantiates-uri",
+              "type": "uri",
+              "documentation": "Instantiates external protocol or definition"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-identifier",
+              "type": "token",
+              "documentation": "Unique identifier"
+            },
+            {
+              "name": "period",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/period",
+              "type": "date",
+              "documentation": "Search parameter for finding communication based on period"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "instantiates-canonical",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-instantiates-canonical",
+              "type": "reference",
+              "documentation": "Instantiates FHIR protocol or definition"
+            },
+            {
+              "name": "communicationCategory",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/category",
+              "type": "token",
+              "documentation": "Search parameter for finding communication based on the category code"
+            },
+            {
+              "name": "received",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-received",
+              "type": "date",
+              "documentation": "When received"
+            },
+            {
+              "name": "encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-encounter",
+              "type": "reference",
+              "documentation": "Encounter created as part of"
+            },
+            {
+              "name": "communicationGroupId",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/groupId",
+              "type": "string",
+              "documentation": "Search parameter for finding resources based on group id"
+            },
+            {
+              "name": "careTeamRecipient",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamRecipient",
+              "type": "reference",
+              "documentation": "Search parameter for finding communication based on CareTeam recipient"
+            },
+            {
+              "name": "sent",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-sent",
+              "type": "date",
+              "documentation": "When sent"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "careTeamSender",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careTeamSender",
+              "type": "reference",
+              "documentation": "Search parameter for finding communication based on CareTeam sender"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "sender",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-sender",
+              "type": "reference",
+              "documentation": "Message sender"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "recipient",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-recipient",
+              "type": "reference",
+              "documentation": "Message recipient"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-category",
+              "type": "token",
+              "documentation": "Message category"
+            },
+            {
+              "name": "restrictionCategory",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/restrictionCategory",
+              "type": "token",
+              "documentation": "Search parameter for finding communication based on CareTeam recipient"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/communication-status",
+              "type": "token",
+              "documentation": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
+            }
+          ],
+          "operation": [
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "type": "OperationDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+          "interaction": [
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "searchInclude": [
+            "*",
+            "OperationDefinition:base",
+            "OperationDefinition:input-profile",
+            "OperationDefinition:output-profile"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:instantiates-canonical",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "OperationDefinition:base"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-date",
+              "type": "date",
+              "documentation": "The operation definition publication date"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-code",
+              "type": "token",
+              "documentation": "Name used to invoke the operation"
+            },
+            {
+              "name": "instance",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-instance",
+              "type": "token",
+              "documentation": "Invoke on an instance?"
+            },
+            {
+              "name": "context-type-value",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-context-type-value",
+              "type": "composite",
+              "documentation": "A use context type and value assigned to the operation definition"
+            },
+            {
+              "name": "jurisdiction",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-jurisdiction",
+              "type": "token",
+              "documentation": "Intended jurisdiction for the operation definition"
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-description",
+              "type": "string",
+              "documentation": "The description of the operation definition"
+            },
+            {
+              "name": "context-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-context-type",
+              "type": "token",
+              "documentation": "A type of use context assigned to the operation definition"
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the operation definition"
+            },
+            {
+              "name": "type",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-type",
+              "type": "token",
+              "documentation": "Invoke at the type level?"
+            },
+            {
+              "name": "context-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-context-quantity",
+              "type": "quantity",
+              "documentation": "A quantity- or range-valued use context assigned to the operation definition"
+            },
+            {
+              "name": "output-profile",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-output-profile",
+              "type": "reference",
+              "documentation": "Validation information for out parameters"
+            },
+            {
+              "name": "context",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-context",
+              "type": "token",
+              "documentation": "A use context assigned to the operation definition"
+            },
+            {
+              "name": "context-type-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-context-type-quantity",
+              "type": "composite",
+              "documentation": "A use context type and quantity- or range-based value assigned to the operation definition"
+            },
+            {
+              "name": "kind",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-kind",
+              "type": "token",
+              "documentation": "operation | query"
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-version",
+              "type": "token",
+              "documentation": "The business version of the operation definition"
+            },
+            {
+              "name": "url",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-url",
+              "type": "uri",
+              "documentation": "The uri that identifies the operation definition"
+            },
+            {
+              "name": "input-profile",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-input-profile",
+              "type": "reference",
+              "documentation": "Validation information for in parameters"
+            },
+            {
+              "name": "system",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-system",
+              "type": "token",
+              "documentation": "Invoke at the system level?"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-name",
+              "type": "string",
+              "documentation": "Computationally friendly name of the operation definition"
+            },
+            {
+              "name": "publisher",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-publisher",
+              "type": "string",
+              "documentation": "Name of the publisher of the operation definition"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "base",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-base",
+              "type": "reference",
+              "documentation": "Marks this as a profile of the base"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/operationdefinition-status",
+              "type": "token",
+              "documentation": "The current status of the operation definition"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient",
+          "supportedProfile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrsPatient"
+          ],
+          "interaction": [
+            {
+              "code": "patch"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "searchInclude": [
+            "*",
+            "Patient:link"
+          ],
+          "searchRevInclude": [
+            "Appointment:actor",
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:patient",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "Communication:patient",
+            "Communication:recipient",
+            "Communication:sender",
+            "Communication:subject",
+            "Patient:link",
+            "Person:link",
+            "Person:patient",
+            "RelatedPerson:patient"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "birthdate",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-birthdate",
+              "type": "date",
+              "documentation": "The patient's date of birth"
+            },
+            {
+              "name": "deceased",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-deceased",
+              "type": "token",
+              "documentation": "This patient has been marked as deceased, or as a death date entered"
+            },
+            {
+              "name": "address-state",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address-state",
+              "type": "string",
+              "documentation": "A state specified in an address"
+            },
+            {
+              "name": "gender",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-gender",
+              "type": "token",
+              "documentation": "Gender of the patient"
+            },
+            {
+              "name": "link",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-link",
+              "type": "reference",
+              "documentation": "All patients linked to the given patient"
+            },
+            {
+              "name": "language",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-language",
+              "type": "token",
+              "documentation": "Language code (irrespective of use value)"
+            },
+            {
+              "name": "address-country",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address-country",
+              "type": "string",
+              "documentation": "A country specified in an address"
+            },
+            {
+              "name": "death-date",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-death-date",
+              "type": "date",
+              "documentation": "The date of death has been provided and satisfies this search value"
+            },
+            {
+              "name": "phonetic",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-phonetic",
+              "type": "string",
+              "documentation": "A portion of either family or given name using some kind of phonetic matching algorithm"
+            },
+            {
+              "name": "telecom",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-telecom",
+              "type": "token",
+              "documentation": "The value in any kind of telecom details of the patient"
+            },
+            {
+              "name": "address-city",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address-city",
+              "type": "string",
+              "documentation": "A city specified in an address"
+            },
+            {
+              "name": "email",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-email",
+              "type": "token",
+              "documentation": "A value in an email contact"
+            },
+            {
+              "name": "given",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-given",
+              "type": "string",
+              "documentation": "A portion of the given name of the patient"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-identifier",
+              "type": "token",
+              "documentation": "A patient identifier"
+            },
+            {
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"
+            },
+            {
+              "name": "general-practitioner",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-general-practitioner",
+              "type": "reference",
+              "documentation": "Patient's nominated general practitioner, not the organization that manages the record"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/Patient-_security",
+              "type": "token",
+              "documentation": "The Security Label of the resource"
+            },
+            {
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-active",
+              "type": "token",
+              "documentation": "Whether the patient record is active"
+            },
+            {
+              "name": "address-postalcode",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address-postalcode",
+              "type": "string",
+              "documentation": "A postalCode specified in an address"
+            },
+            {
+              "name": "phone",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-phone",
+              "type": "token",
+              "documentation": "A value in a phone contact"
+            },
+            {
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-organization",
+              "type": "reference",
+              "documentation": "The organization that is the custodian of the patient record"
+            },
+            {
+              "name": "address-use",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-address-use",
+              "type": "token",
+              "documentation": "A use code specified in an address"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "family",
+              "definition": "http://hl7.org/fhir/SearchParameter/patient-family",
+              "type": "string",
+              "documentation": "A portion of the family name of the patient"
+            }
+          ],
+          "operation": [
+            {
+              "name": "createPatient",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Patient-t-createPatient"
+            },
+            {
+              "name": "updatePatientWithSKRSData",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Patient-t-updatePatientWithSKRSData"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "type": "Person",
+          "profile": "http://hl7.org/fhir/StructureDefinition/Person",
+          "versioning": "versioned-update",
+          "searchInclude": [
+            "*",
+            "Person:link",
+            "Person:organization",
+            "Person:patient",
+            "Person:practitioner",
+            "Person:relatedperson"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "Person:link"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-identifier",
+              "type": "token",
+              "documentation": "A person Identifier"
+            },
+            {
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"
+            },
+            {
+              "name": "birthdate",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-birthdate",
+              "type": "date",
+              "documentation": "The person's date of birth"
+            },
+            {
+              "name": "address-state",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address-state",
+              "type": "string",
+              "documentation": "A state specified in an address"
+            },
+            {
+              "name": "gender",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-gender",
+              "type": "token",
+              "documentation": "The gender of the person"
+            },
+            {
+              "name": "practitioner",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-practitioner",
+              "type": "reference",
+              "documentation": "The Person links to this Practitioner"
+            },
+            {
+              "name": "link",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-link",
+              "type": "reference",
+              "documentation": "Any link has this Patient, Person, RelatedPerson or Practitioner reference"
+            },
+            {
+              "name": "relatedperson",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-relatedperson",
+              "type": "reference",
+              "documentation": "The Person links to this RelatedPerson"
+            },
+            {
+              "name": "address-postalcode",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address-postalcode",
+              "type": "string",
+              "documentation": "A postal code specified in an address"
+            },
+            {
+              "name": "address-country",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address-country",
+              "type": "string",
+              "documentation": "A country specified in an address"
+            },
+            {
+              "name": "phonetic",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-phonetic",
+              "type": "string",
+              "documentation": "A portion of name using some kind of phonetic matching algorithm"
+            },
+            {
+              "name": "phone",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-phone",
+              "type": "token",
+              "documentation": "A value in a phone contact"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-patient",
+              "type": "reference",
+              "documentation": "The Person links to this Patient"
+            },
+            {
+              "name": "organization",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-organization",
+              "type": "reference",
+              "documentation": "The organization at which this person record is being managed"
+            },
+            {
+              "name": "address-use",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address-use",
+              "type": "token",
+              "documentation": "A use code specified in an address"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+            },
+            {
+              "name": "telecom",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-telecom",
+              "type": "token",
+              "documentation": "The value in any kind of contact"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "address-city",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-address-city",
+              "type": "string",
+              "documentation": "A city specified in an address"
+            },
+            {
+              "name": "email",
+              "definition": "http://hl7.org/fhir/SearchParameter/person-email",
+              "type": "token",
+              "documentation": "A value in an email contact"
+            }
+          ],
+          "operation": [
+            {
+              "name": "match",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Person-t-match"
+            }
+          ]
+        },
+        {
+          "type": "RelatedPerson",
+          "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson",
+          "supportedProfile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"
+          ],
+          "interaction": [
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "conditionalDelete": "multiple",
+          "searchInclude": [
+            "*",
+            "RelatedPerson:patient"
+          ],
+          "searchRevInclude": [
+            "Appointment:actor",
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "Communication:recipient",
+            "Communication:sender",
+            "Patient:link",
+            "Person:link",
+            "Person:relatedperson"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "birthdate",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-birthdate",
+              "type": "date",
+              "documentation": "The Related Person's date of birth"
+            },
+            {
+              "name": "address-state",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address-state",
+              "type": "string",
+              "documentation": "A state specified in an address"
+            },
+            {
+              "name": "gender",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-gender",
+              "type": "token",
+              "documentation": "Gender of the related person"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "address-country",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address-country",
+              "type": "string",
+              "documentation": "A country specified in an address"
+            },
+            {
+              "name": "phonetic",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-phonetic",
+              "type": "string",
+              "documentation": "A portion of name using some kind of phonetic matching algorithm"
+            },
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-patient",
+              "type": "reference",
+              "documentation": "The patient this related person is related to"
+            },
+            {
+              "name": "telecom",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-telecom",
+              "type": "token",
+              "documentation": "The value in any kind of contact"
+            },
+            {
+              "name": "address-city",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address-city",
+              "type": "string",
+              "documentation": "A city specified in an address"
+            },
+            {
+              "name": "relationship",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-relationship",
+              "type": "token",
+              "documentation": "The relationship between the patient and the relatedperson"
+            },
+            {
+              "name": "email",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-email",
+              "type": "token",
+              "documentation": "A value in an email contact"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-identifier",
+              "type": "token",
+              "documentation": "An Identifier of the RelatedPerson"
+            },
+            {
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "active",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-active",
+              "type": "token",
+              "documentation": "Indicates if the related person record is active"
+            },
+            {
+              "name": "address-postalcode",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address-postalcode",
+              "type": "string",
+              "documentation": "A postal code specified in an address"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "phone",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-phone",
+              "type": "token",
+              "documentation": "A value in a phone contact"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "address-use",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-address-use",
+              "type": "token",
+              "documentation": "A use code specified in an address"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-name",
+              "type": "string",
+              "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/relatedperson-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/RelatedPerson-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            }
+          ],
+          "operation": [
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
+              "valueDecimal": 17
+            }
+          ],
+          "type": "SearchParameter",
+          "profile": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
+          "interaction": [
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "history-type"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "update"
+            }
+          ],
+          "versioning": "versioned-update",
+          "conditionalCreate": true,
+          "conditionalUpdate": true,
+          "conditionalDelete": "multiple",
+          "searchInclude": [
+            "*",
+            "SearchParameter:component"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "SearchParameter:component",
+            "SearchParameter:derived-from"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-date",
+              "type": "date",
+              "documentation": "The search parameter publication date"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-code",
+              "type": "token",
+              "documentation": "Code used in URL"
+            },
+            {
+              "name": "context-type-value",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-context-type-value",
+              "type": "composite",
+              "documentation": "A use context type and value assigned to the search parameter"
+            },
+            {
+              "name": "jurisdiction",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-jurisdiction",
+              "type": "token",
+              "documentation": "Intended jurisdiction for the search parameter"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "derived-from",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-derived-from",
+              "type": "reference",
+              "documentation": "Original definition for the search parameter"
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-description",
+              "type": "string",
+              "documentation": "The description of the search parameter"
+            },
+            {
+              "name": "context-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-context-type",
+              "type": "token",
+              "documentation": "A type of use context assigned to the search parameter"
+            },
+            {
+              "name": "type",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-type",
+              "type": "token",
+              "documentation": "number | date | string | token | reference | composite | quantity | uri | special"
+            },
+            {
+              "name": "context-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-context-quantity",
+              "type": "quantity",
+              "documentation": "A quantity- or range-valued use context assigned to the search parameter"
+            },
+            {
+              "name": "context",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-context",
+              "type": "token",
+              "documentation": "A use context assigned to the search parameter"
+            },
+            {
+              "name": "context-type-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-context-type-quantity",
+              "type": "composite",
+              "documentation": "A use context type and quantity- or range-based value assigned to the search parameter"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "sp-unique-url",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/SearchParameter/url-unique",
+              "type": "composite",
+              "documentation": "Search parameter for making a SearchParameter unique by URL"
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-version",
+              "type": "token",
+              "documentation": "The business version of the search parameter"
+            },
+            {
+              "name": "url",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/SearchParameter/url",
+              "type": "uri",
+              "documentation": "Search parameter for finding a searchparameter by URL"
+            },
+            {
+              "name": "target",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-target",
+              "type": "token",
+              "documentation": "Types of resource (if a resource reference)"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "component",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-component",
+              "type": "reference",
+              "documentation": "Defines how the part works"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-name",
+              "type": "string",
+              "documentation": "Computationally friendly name of the search parameter"
+            },
+            {
+              "name": "publisher",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-publisher",
+              "type": "string",
+              "documentation": "Name of the publisher of the search parameter"
+            },
+            {
+              "name": "_source",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_source",
+              "type": "uri",
+              "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/SearchParameter-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "base",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-base",
+              "type": "token",
+              "documentation": "The resource type(s) this search parameter applies to"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/searchparameter-status",
+              "type": "token",
+              "documentation": "The current status of the search parameter"
+            }
+          ],
+          "operation": [
+            {
+              "name": "expunge",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/SearchParameter-its-expunge"
+            },
+            {
+              "name": "meta",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-its-meta",
+              "documentation": "Request a global list of tags, profiles, and security labels"
+            },
+            {
+              "name": "meta-add",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-i-meta-add",
+              "documentation": "Add tags, profiles, and/or security labels to a resource"
+            },
+            {
+              "name": "meta-delete",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-i-meta-delete",
+              "documentation": "Delete tags, profiles, and/or security labels from a resource"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
+              "valueDecimal": 121
+            }
+          ],
+          "type": "StructureDefinition",
+          "profile": "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+          "supportedProfile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
+          ],
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "conditionalCreate": true,
+          "searchInclude": [
+            "*",
+            "StructureDefinition:valueset"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "OperationDefinition:input-profile",
+            "OperationDefinition:output-profile",
+            "StructureDefinition:base"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-date",
+              "type": "date",
+              "documentation": "The structure definition publication date"
+            },
+            {
+              "name": "context-type-value",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-context-type-value",
+              "type": "composite",
+              "documentation": "A use context type and value assigned to the structure definition"
+            },
+            {
+              "name": "jurisdiction",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-jurisdiction",
+              "type": "token",
+              "documentation": "Intended jurisdiction for the structure definition"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-description",
+              "type": "string",
+              "documentation": "The description of the structure definition"
+            },
+            {
+              "name": "context-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-context-type",
+              "type": "token",
+              "documentation": "A type of use context assigned to the structure definition"
+            },
+            {
+              "name": "experimental",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-experimental",
+              "type": "token",
+              "documentation": "For testing purposes, not real usage"
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the structure definition"
+            },
+            {
+              "name": "type",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-type",
+              "type": "uri",
+              "documentation": "Type defined or constrained by this structure"
+            },
+            {
+              "name": "context-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-context-quantity",
+              "type": "quantity",
+              "documentation": "A quantity- or range-valued use context assigned to the structure definition"
+            },
+            {
+              "name": "path",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-path",
+              "type": "token",
+              "documentation": "A path that is constrained in the StructureDefinition"
+            },
+            {
+              "name": "base-path",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-base-path",
+              "type": "token",
+              "documentation": "Path that identifies the base element"
+            },
+            {
+              "name": "context",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-context",
+              "type": "token",
+              "documentation": "A use context assigned to the structure definition"
+            },
+            {
+              "name": "sd-unique-url",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/StructureDefinition/url-unique",
+              "type": "composite",
+              "documentation": "Search parameter for making a structureDefinition unique by URL"
+            },
+            {
+              "name": "keyword",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-keyword",
+              "type": "token",
+              "documentation": "A code for the StructureDefinition"
+            },
+            {
+              "name": "context-type-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-context-type-quantity",
+              "type": "composite",
+              "documentation": "A use context type and quantity- or range-based value assigned to the structure definition"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-identifier",
+              "type": "token",
+              "documentation": "External identifier for the structure definition"
+            },
+            {
+              "name": "valueset",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-valueset",
+              "type": "reference",
+              "documentation": "A vocabulary binding reference"
+            },
+            {
+              "name": "kind",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-kind",
+              "type": "token",
+              "documentation": "primitive-type | complex-type | resource | logical"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "abstract",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-abstract",
+              "type": "token",
+              "documentation": "Whether the structure is abstract"
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-version",
+              "type": "token",
+              "documentation": "The business version of the structure definition"
+            },
+            {
+              "name": "url",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/StructureDefinition/url",
+              "type": "uri",
+              "documentation": "Search parameter for finding a structureDefinition by URL"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "ext-context",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-ext-context",
+              "type": "token",
+              "documentation": "The system is the URL for the context-type: e.g. http://hl7.org/fhir/extension-context-type#element|CodeableConcept.text"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-name",
+              "type": "string",
+              "documentation": "Computationally friendly name of the structure definition"
+            },
+            {
+              "name": "publisher",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-publisher",
+              "type": "string",
+              "documentation": "Name of the publisher of the structure definition"
+            },
+            {
+              "name": "derivation",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-derivation",
+              "type": "token",
+              "documentation": "specialization | constraint - How relates to base definition"
+            },
+            {
+              "name": "_source",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_source",
+              "type": "uri",
+              "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/StructureDefinition-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "base",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-base",
+              "type": "reference",
+              "documentation": "Definition that this type is constrained/specialized from"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/structuredefinition-status",
+              "type": "token",
+              "documentation": "The current status of the structure definition"
+            }
+          ],
+          "operation": [
+            {
+              "name": "generateSnapshot",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/StructureDefinition-t-generateSnapshot"
+            },
+            {
+              "name": "snapshot",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/StructureDefinition-it-snapshot"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7api.sourceforge.net/hapi-fhir/res/extdefs.html#resourceCount",
+              "valueDecimal": 57
+            }
+          ],
+          "type": "ValueSet",
+          "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+          "interaction": [
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "versioning": "versioned-update",
+          "searchInclude": [
+            "*"
+          ],
+          "searchRevInclude": [
+            "Appointment:careteamParticipant",
+            "Appointment:intended-audience",
+            "Appointment:responsible",
+            "Appointment:supporting-info",
+            "Communication:based-on",
+            "Communication:careTeamRecipient",
+            "Communication:careTeamSender",
+            "Communication:on-behalf-of",
+            "Communication:part-of",
+            "StructureDefinition:valueset"
+          ],
+          "searchParam": [
+            {
+              "name": "_language",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-_language",
+              "type": "string",
+              "documentation": "The language of the resource"
+            },
+            {
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-date",
+              "type": "date",
+              "documentation": "The value set publication date"
+            },
+            {
+              "name": "code",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-code",
+              "type": "token",
+              "documentation": "This special parameter searches for codes in the value set. See additional notes on the ValueSet resource"
+            },
+            {
+              "name": "context-type-value",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-context-type-value",
+              "type": "composite",
+              "documentation": "A use context type and value assigned to the value set"
+            },
+            {
+              "name": "jurisdiction",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-jurisdiction",
+              "type": "token",
+              "documentation": "Intended jurisdiction for the value set"
+            },
+            {
+              "name": "_lastUpdated",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_lastUpdated",
+              "type": "date",
+              "documentation": "Only return resources which were last updated as specified by the given range"
+            },
+            {
+              "name": "description",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-description",
+              "type": "string",
+              "documentation": "The description of the value set"
+            },
+            {
+              "name": "context-type",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-context-type",
+              "type": "token",
+              "documentation": "A type of use context assigned to the value set"
+            },
+            {
+              "name": "title",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-title",
+              "type": "string",
+              "documentation": "The human-friendly name of the value set"
+            },
+            {
+              "name": "reference",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-reference",
+              "type": "uri",
+              "documentation": "A code system included or excluded in the value set or an imported value set"
+            },
+            {
+              "name": "context-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-context-quantity",
+              "type": "quantity",
+              "documentation": "A quantity- or range-valued use context assigned to the value set"
+            },
+            {
+              "name": "context",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-context",
+              "type": "token",
+              "documentation": "A use context assigned to the value set"
+            },
+            {
+              "name": "context-type-quantity",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-context-type-quantity",
+              "type": "composite",
+              "documentation": "A use context type and quantity- or range-based value assigned to the value set"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-identifier",
+              "type": "token",
+              "documentation": "External identifier for the value set"
+            },
+            {
+              "name": "_security",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_security",
+              "type": "token",
+              "documentation": "Search for resources which have the given security labels"
+            },
+            {
+              "name": "version",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-version",
+              "type": "token",
+              "documentation": "The business version of the value set"
+            },
+            {
+              "name": "url",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-url",
+              "type": "uri",
+              "documentation": "The uri that identifies the value set"
+            },
+            {
+              "name": "expansion",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-expansion",
+              "type": "uri",
+              "documentation": "Identifies the value set expansion (business identifier)"
+            },
+            {
+              "name": "_filter",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_filter",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a filter"
+            },
+            {
+              "name": "_profile",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_profile",
+              "type": "uri",
+              "documentation": "Search for resources which have the given profile"
+            },
+            {
+              "name": "_has",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_has",
+              "type": "string",
+              "documentation": "Return resources linked to by the given target"
+            },
+            {
+              "name": "_tag",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_tag",
+              "type": "token",
+              "documentation": "Search for resources which have the given tag"
+            },
+            {
+              "name": "name",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-name",
+              "type": "string",
+              "documentation": "Computationally friendly name of the value set"
+            },
+            {
+              "name": "publisher",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-publisher",
+              "type": "string",
+              "documentation": "Name of the publisher of the value set"
+            },
+            {
+              "name": "_source",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_source",
+              "type": "uri",
+              "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+            },
+            {
+              "name": "_id",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-_id",
+              "type": "token",
+              "documentation": "The ID of the resource"
+            },
+            {
+              "name": "_content",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_content",
+              "type": "string",
+              "documentation": "Search the contents of the resource's data using a fulltext search"
+            },
+            {
+              "name": "_text",
+              "definition": "http://localhost:8080/fhir//SearchParameter/ValueSet-_text",
+              "type": "string",
+              "documentation": "Search the contents of the resource's narrative using a fulltext search"
+            },
+            {
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/valueset-status",
+              "type": "token",
+              "documentation": "The current status of the value set"
+            }
+          ],
+          "operation": [
+            {
+              "name": "expand",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/ValueSet-it-expand"
+            },
+            {
+              "name": "validate-code",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/ValueSet-it-validate-code"
+            },
+            {
+              "name": "validate",
+              "definition": "http://localhost:8080/fhir/OperationDefinition/Multi-it-validate"
+            }
+          ]
+        }
+      ],
+      "operation": [
+        {
+          "name": "expunge",
+          "definition": "http://localhost:8080/fhir/OperationDefinition/SearchParameter-its-expunge"
+        },
+        {
+          "name": "get-resource-counts",
+          "definition": "http://localhost:8080/fhir/OperationDefinition/-s-get-resource-counts",
+          "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+        },
+        {
+          "name": "mark-all-resources-for-reindexing",
+          "definition": "http://localhost:8080/fhir/OperationDefinition/-s-mark-all-resources-for-reindexing"
+        },
+        {
+          "name": "meta",
+          "definition": "http://localhost:8080/fhir/OperationDefinition/AppointmentSearchParameter-its-meta"
+        },
+        {
+          "name": "process-message",
+          "definition": "http://localhost:8080/fhir/OperationDefinition/-s-process-message"
+        }
+      ]
+    }
+  ]
+}
