@@ -1,5 +1,5 @@
 Extension: ehealth-quality
-Title:     "quality"
+Title:     "Quality"
 Description: "Minimum required or actually assessed quality values. The qualityType element states the type of quality. For different values of qualityType the required or assessed quality value (qualityCode) must be from different value sets. The relation between qualityType and allowed value sets are defined in the definition of value set http://ehealth.sundhed.dk/vs/quality-types."
 * . ^short = "Minimum requirements for qualities"
 * extension contains

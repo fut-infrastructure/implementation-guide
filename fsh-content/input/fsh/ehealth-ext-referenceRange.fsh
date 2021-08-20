@@ -1,5 +1,5 @@
 Extension:   ehealth-referenceRange
-Title:       "referenceRange"
+Title:       "Reference range"
 Description: "Provides guide for interpretation. Must have at least a low or a high."
 * . ^short = "Provides guide for interpretation."
 * extension contains

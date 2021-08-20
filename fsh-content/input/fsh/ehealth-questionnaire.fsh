@@ -41,7 +41,7 @@ Description: "Concept that represents the overall questionnaire"
 * valueCodeableConcept 1..1
 
 Extension: ehealth-questionnaire-feedback
-Title:     "feedback"
+Title:     "Feedback"
 Description: "Feedback if reponse is within the defined range."
 * . ^short = "Feedback if reponse is within the defined range."
 * extension contains
