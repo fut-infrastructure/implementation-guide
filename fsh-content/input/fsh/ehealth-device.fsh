@@ -26,4 +26,5 @@ Description: "Suppliers of different kinds. E.g device suppliers, support suppli
     role 1..*
 * extension[supplier].value[x] only Reference(ehealth-organization or ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * extension[role].value[x] only CodeableConcept
+* extension[role].valueCodeableConcept 1..1
 * extension[role].valueCodeableConcept from ehealth-device-supplier-roles

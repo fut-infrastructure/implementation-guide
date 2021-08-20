@@ -14,9 +14,3 @@ Parent: RelatedPerson
 * patient ^type.aggregation = #referenced
 * relationship.coding from relatedperson-relationshiptype
 * name 1..*
-
-Extension: ehealth-patient-contactnote
-Title:     "Contact note"
-Description: "This note holds the information of when the patient is available for communication - eg. between 10 and 12 every monday"
-* . ^short = "Free text description of the role played by the related person towards the patient, which every day tasks he/she may be helpful in taking part of, etc."
-* value[x] only string

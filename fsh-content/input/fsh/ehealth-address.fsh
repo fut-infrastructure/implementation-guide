@@ -13,6 +13,7 @@ Title:     "Municipality code"
 Description: "Danish municipality code (DK: 'kommunekode')"
 * . ^short = "Danish municipality code (DK: 'kommunekode')"
 * value[x] only Coding
+* valueCoding 1..1
 * valueCoding from municipality-codes
 
 Extension: ehealth-regional-subdivision-code

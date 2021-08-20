@@ -41,6 +41,7 @@ Title:       "Decision context"
 Description: "Library and relevant resources used for evaluation"
 * . ^short = "Library and relevant resources used for evaluation"
 * value[x] only Reference(Parameters)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-clinicalimpression-decision
@@ -55,4 +56,5 @@ Title:       "Media investigation item"
 Description: "Investigation item for Media resources so they can be approved."
 * . ^short = "Media item"
 * value[x] only Reference(ehealth-media)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced

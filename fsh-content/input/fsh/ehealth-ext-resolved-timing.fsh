@@ -8,7 +8,11 @@ Description: "Resolved timing reflects whether a measurement (Observation, Quest
     end 0..1 and
     type 1..1
 * extension[serviceRequestVersionId].value[x] only id
+* extension[serviceRequestVersionId].valueId 1..1
 * extension[start].value[x] only dateTime
+* extension[start].valueDateTime 1..1
 * extension[end].value[x] only dateTime
+* extension[end].valueDateTime 1..1
 * extension[type].value[x] only CodeableConcept
 * extension[type].valueCodeableConcept from resolved-timing-type
+* extension[type].valueCodeableConcept 1..1

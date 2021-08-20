@@ -25,4 +25,6 @@ Title: "Author organization"
 Description: "Organization that authored the Composition"
 * . ^short = "Organization that authored the Composition"
 * value[x] only Reference(ehealth-organization)
-* value[x] ^type.aggregation = #referenced
+* valueReference 1..1
+* value[x] ^type.aggregation[+] = #referenced
+* value[x] ^type.aggregation[+] = #contained

@@ -49,5 +49,8 @@ Description: "Feedback if reponse is within the defined range."
     min 1..1 and
     max 1..1
 * extension[value].value[x] only string
+* extension[value].valueString 1..1
 * extension[min].value[x] only integer
+* extension[min].valueInteger 1..1
 * extension[max].value[x] only integer
+* extension[max].valueInteger 1..1

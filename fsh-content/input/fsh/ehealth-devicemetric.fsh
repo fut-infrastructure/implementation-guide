@@ -22,6 +22,7 @@ Description: "Properties of this device. Properties are static by nature whereas
     value 1..1
 * extension[type].value[x] only CodeableConcept
 * extension[type].valueCodeableConcept from ehealth-devicemetric-property-types
+* extension[value].value[x] 1..1
 * extension[value].value[x] only boolean or code or date or dateTime or decimal or integer or markdown or string or CodeableConcept or Quantity or Range
 
 Extension:  ehealth-devicemetric-qualities
@@ -56,7 +57,7 @@ Description: "Device quality default settings for an initial, a degraded, and an
 * . ^short = "Device quality default settings"
 * extension contains
     category 1..1 and
-    value 0..1
+    value 1..1
 * extension[category].value[x] only CodeableConcept
 * extension[category].valueCodeableConcept from ehealth-devicemetric-quality-types
 * extension[value].value[x] only decimal or integer or CodeableConcept

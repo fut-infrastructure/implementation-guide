@@ -3,10 +3,13 @@ Title:       "Reference range"
 Description: "Provides guide for interpretation. Must have at least a low or a high."
 * . ^short = "Provides guide for interpretation."
 * extension contains
-    low 1..1 and
-    high 1..1 and
-    type 1..1
+    low 0..1 and
+    high 0..1 and
+    type 0..1
 * extension[low].value[x] only SimpleQuantity
+* extension[low].valueQuantity 1..1
 * extension[high].value[x] only SimpleQuantity
+* extension[high].valueQuantity 1..1
 * extension[type].value[x] only CodeableConcept
 * extension[type].valueCodeableConcept from ehealth-reference-range-type
+* extension[type].valueCodeableConcept 1..1

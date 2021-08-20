@@ -17,4 +17,5 @@ Title:       "Context"
 Description: "The careplan context for the device use"
 * . ^short = "The careplan context for the device use"
 * value[x] only Reference(ehealth-careplan)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced

@@ -68,6 +68,7 @@ Title:     "Period"
 Description: "Specifies the temporal validity of an ehealth/message instance. Contains a period, eg. specifying temporal validity"
 * . ^short = "Specifies the temporal validity of an ehealth/message instance"
 * value[x] only Period
+* valuePeriod 1..1
 
 Extension: ehealth-administrative-status
 Title:     "Administrative status"
@@ -95,4 +96,5 @@ Title:     "On behalf of"
 Description: "On behalf of"
 * . ^short = "On behalf of"
 * value[x] only Reference(ehealth-careteam)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced

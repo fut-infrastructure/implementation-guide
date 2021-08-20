@@ -42,12 +42,14 @@ Title:       "CVR Number"
 Description: "The organization's identification code in the Danish 'Centrale Virksomhedsregister'"
 * . ^short = "The organization's identification code in the Danish 'Centrale Virksomhedsregister'"
 * value[x] only string
+* valueString 1..1
 
 Extension:   ehealth-organization-telecomValue
 Title:       "Telecom Value"
 Description: "The actual contact point details (i.e. phone number or email address)"
 * . ^short = "The actual contact point details (i.e. phone number or email address)"
 * value[x] only string
+* valueString 1..1
 
 
 Extension:   ehealth-regionCode
@@ -55,6 +57,7 @@ Title:       "Region code"
 Description: "The regionCode of the organization"
 * . ^short = "The organization's region code"
 * value[x] only string
+* valueString 1..1
 
 Extension:   ehealth-organization-municipalityCode
 Title:       "Municipality Code"
@@ -66,6 +69,7 @@ Extension:   ehealth-organization-providerIdentifier
 Title:       "Provider identifier"
 Description: "The providerIdentifier of the organization"
 * . ^short = "The organization's provider identifier"
+* valueString 1..1
 * value[x] only string
 
 Extension:   ehealth-organization-source
@@ -81,12 +85,14 @@ Description: "Type of communications system required to make use of the contact 
 * . ^short = "Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-contactpoint-system
+* valueCodeableConcept 1..1
 
 Extension:   ehealth-organization-telecomCustodian
 Title:       "Telecom Custodian"
 Description: "Custodian of this ContactPoint."
 * . ^short = "The custodian that maintains the contact point: SOR | ORG | MAN"
 * value[x] only CodeableConcept
+* valueCodeableConcept 1..1
 * valueCodeableConcept from ehealth-contactpoint-custodian
 
 Extension:   ehealth-organization-synchronizationStatus
