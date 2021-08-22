@@ -66,5 +66,7 @@ menu:
     Event message types: event-messages.html
     Service event messages: service-event-tables.html
   Error Messsages: error-messages.html
+  Capability Statements:
+      Patient service:  CapabilityStatement-patient.html
   #Capability Statements: capability-statements.html
   Downloads: downloads.html

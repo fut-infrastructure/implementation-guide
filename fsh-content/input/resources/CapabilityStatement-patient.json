@@ -1,6 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "01ba1968-861a-4c43-9185-987e7bbb53d9",
+  "id": "patient",
   "url": "http://ehealth.sundhed.dk/fhir/CapabilityStatement/patient",
   "name": "patient",
   "status": "active",
