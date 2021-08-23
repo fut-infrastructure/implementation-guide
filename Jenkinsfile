@@ -68,7 +68,7 @@ podTemplate(label: label,
             igPath = 'v' + version + "/ig"
           }
           s3Delete(bucket: config.s3.bucket, path: igPath)
-          s3Upload(file:'output/', bucket:config.s3.bucket, path: igPath)
+          s3Upload(file:'fsh-content/output/', bucket:config.s3.bucket, path: igPath)
                     
           s3Delete(bucket: config.s3.bucket, path: 'sitemap.txt')
           s3Upload(file:'static/sitemap.txt', bucket:config.s3.bucket, path:'sitemap.txt')
@@ -79,7 +79,7 @@ podTemplate(label: label,
           if (version != "latest") {
             igPathLatestReleased = "latest-released/ig"
             s3Delete(bucket: config.s3.bucket, path: igPathLatestReleased)
-            s3Upload(file:'output/', bucket:config.s3.bucket, path: igPathLatestReleased)
+            s3Upload(file:'fsh-content/output/', bucket:config.s3.bucket, path: igPathLatestReleased)
           }
 
         }
