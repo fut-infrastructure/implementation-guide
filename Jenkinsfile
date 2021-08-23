@@ -26,7 +26,7 @@ podTemplate(label: label,
     println "pipeline config ==> ${config}"
 
 
-    def sushi-version = readYaml file: 'fsh-content/resushi-config.yml'
+    def sushi-version = readYaml file: 'fsh-content/sushi-config.yml'
     println "sushi-version ==> ${sushi-version['version']}"
 
     def version = readFile('pages/_data/version.yaml')
