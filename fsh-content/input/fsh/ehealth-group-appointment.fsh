@@ -22,4 +22,4 @@ Parent: Appointment
 * participant.actor only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Location)
 * participant.actor ^type.aggregation[+] = #referenced
 * participant.actor ^type.aggregation[+] = #contained
-* participant.extension contains ehealth-assigning-careteam named assigningCareteam 0..1
+* participant.extension contains ehealth-assigning-careteam named assigningCareteam 1..1
