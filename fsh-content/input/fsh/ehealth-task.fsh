@@ -40,6 +40,7 @@ Description: "Individual organization or Device currently responsible for task e
 * . ^short = "Responsible entity"
 * value[x] ^type.aggregation = #referenced
 * value[x] only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or ehealth-careteam)
+* valueReference 1..1
 
 Extension:   ehealth-task-episodeOfCare
 Title:       "EpisodeOfCare"

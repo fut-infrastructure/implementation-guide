@@ -77,6 +77,7 @@ Title:       "Organization Source"
 Description: "The source of the organization"
 * . ^short = "The organization's source"
 * value[x] only CodeableConcept
+* valueCodeableConcept 1..1
 * valueCodeableConcept from ehealth-organization-source
 
 Extension:   ehealth-organization-telecomSystem
@@ -100,6 +101,7 @@ Title:       "Organization Synchronization status"
 Description: "The synchronization status of the organization"
 * . ^short = "The organization's synchronization status"
 * value[x] only CodeableConcept
+* valueCodeableConcept 1..1
 * valueCodeableConcept from ehealth-organization-synchronization-status
 
 Extension:   ehealth-organization-specialty
@@ -107,4 +109,5 @@ Title:       "Organization specialty"
 Description: "The specialty of the organization"
 * . ^short = "The organization's specialty"
 * value[x] only CodeableConcept
+* valueCodeableConcept 1..1
 * valueCodeableConcept from ehealth-organization-specialty

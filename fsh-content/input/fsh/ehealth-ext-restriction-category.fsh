@@ -4,4 +4,3 @@ Description: "The resource is intended for certain category of workflow/responsi
 * . ^short = "Restriction category"
 * value[x] only CodeableConcept
 * valueCodeableConcept from ehealth-restriction-category
-* valueCodeableConcept 1..1

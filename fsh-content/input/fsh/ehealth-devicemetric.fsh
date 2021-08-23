@@ -34,6 +34,7 @@ Description: "Current device quality"
     value 0..1
 * extension[category].value[x] only CodeableConcept
 * extension[category].valueCodeableConcept from ehealth-devicemetric-quality-types
+* extension[value] 1..1
 * extension[value].value[x] only decimal or integer or CodeableConcept
 
 Extension:  ehealth-devicemetric-qualityHistory
@@ -42,7 +43,7 @@ Description: "History of device quality"
 * . ^short = "History of device quality"
 * extension contains
     category 1..1 and
-    value 0..1 and
+    value 1..1 and
     period 1..1 and
     reason 0..1
 * extension[category].value[x] only CodeableConcept

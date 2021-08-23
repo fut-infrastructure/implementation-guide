@@ -25,6 +25,7 @@ Title: "Caremanager organization"
 Description: "Reference to caremanagers organization"
 * . ^short = "Reference to caremanagers organization"
 * value[x] only Reference(ehealth-organization)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
 Extension:  ehealth-episodeofcare-statusschedule
@@ -34,5 +35,7 @@ Description: "Scheduled status change"
 * extension contains
     status 1..1 and
     scheduledTime 1..1
+* extension[status].value[x] only code
+* extension[status].valueCode 1..1
 * extension[status].value[x] from http://hl7.org/fhir/ValueSet/episode-of-care-status
 * extension[scheduledTime].value[x] only dateTime

@@ -34,6 +34,7 @@ Title:       "Careplan"
 Description: "Identifies the CarePlan context in which this particular resource was created."
 * . ^short = "The Careplan"
 * value[x] only Reference(ehealth-careplan)
+* valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-clinicalimpression-decisionContext

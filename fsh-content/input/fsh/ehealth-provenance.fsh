@@ -8,7 +8,8 @@ Parent: Provenance
 * agent.onBehalfOf only Reference(ehealth-practitioner or ehealth-relatedperson or ehealth-patient or ehealth-device or ehealth-organization)
 
 Extension: ehealth-provenance-dateTimeOfReusedEntity
-Title:     "Questionnaire type"
+Title:     "Date/time of re-used entity"
 Description: "Contains date and time of Reused Entity"
 * . ^short = "Contains date and time of Reused Entity"
+* value[x] 1..1
 * value[x] only dateTime or Period
