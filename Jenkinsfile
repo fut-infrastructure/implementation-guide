@@ -51,7 +51,7 @@ podTemplate(label: label,
 
       stage ('generate documentation') {
         container('igpublisher') {
-          sh "java -jar /input-cache/publisher.jar -ig ig.json"
+          sh "java -jar /input-cache/publisher.jar -ig fsh-content/ig.ini"
         }
       }
 
