@@ -31,7 +31,7 @@ Parent: Communication
 * medium ^slicing.discriminator.type = #value
 * medium ^slicing.discriminator.path = "coding.system"
 * medium ^slicing.rules = #open
-* medium 1..*
+* medium 0..*
 * medium contains DkTmMedium 0..1
 * medium[DkTmMedium].coding.system = "http://ehealth.sundhed.dk/cs/message-medium"
 * medium[DkTmMedium].coding.code from message-medium (required)
