@@ -25,6 +25,10 @@ podTemplate(label: label,
     def config = new groovy.json.JsonSlurperClassic().parseText(inputFile)
     println "pipeline config ==> ${config}"
 
+
+    def sushi-version = readYaml file: 'fsh-content/resushi-config.yml'
+    println "sushi-version ==> ${sushi-version['version']}"
+
     def version = readFile('pages/_data/version.yaml')
     println "pipeline version ==> ${version}"
 
