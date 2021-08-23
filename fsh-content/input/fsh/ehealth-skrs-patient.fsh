@@ -1,5 +1,5 @@
-Profile: ehealth-skrsPatient
-Id: ehealth-skrsPatient
+Profile: ehealth-skrs-patient
+Id: ehealth-skrs-patient
 Parent: Patient
 
 * extension contains ehealth-nameandaddressprotection named nameAndAddressProtection 0..1
