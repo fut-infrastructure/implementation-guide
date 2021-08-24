@@ -1,6 +1,7 @@
 Profile: ehealth-group-videoappointment
 Id: ehealth-group-videoappointment
 Parent: Appointment
+* obeys responsible-1 and max-participants and min-participants
 * extension contains ehealth-end-meeting-on-end-time named endMeetingOnEndTime 0..1
 * extension contains ehealth-max-participants named maxParticipants 0..1
 * extension contains ehealth-meeting-url named meetingUrl 0..1
@@ -17,6 +18,7 @@ Parent: Appointment
 * extension contains ehealth-intendedAudience named intendedAudience 0..*
 * extension contains ehealth-registration-deadline named registrationDeadline 0..1
 * extension contains ehealth-performing-organization named performingOrganization 0..1
+* extension[ehealth-legalBasis] obeys governance-1 and responsible-2
 * appointmentType 1..1
 * appointmentType from appointmenttype-codes
 * reasonCode 0..1

@@ -1,6 +1,7 @@
 Profile: ehealth-message
 Id: ehealth-message
 Parent: Communication
+* obeys nemsms-invariant and note-invariant and notification-invariant and message-invariant
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..1
@@ -98,3 +99,23 @@ Description: "On behalf of"
 * value[x] only Reference(ehealth-careteam)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
+
+Invariant:   message-invariant
+Description: "Category message invariant"
+Expression:  "category.coding.code = 'message' implies (recipient.reference.contains('Patient/') and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not() or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and (sender.reference.contains('Patient/') or sender.reference.contains('Device/'))) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists() )"
+Severity:    #error
+
+Invariant:   note-invariant
+Description: "Category note invariant"
+Expression:  "category.coding.code = 'note' implies (sender.reference = recipient.reference) or (recipient.reference.exists().not() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists())"
+Severity:    #error
+
+Invariant:   nemsms-invariant
+Description: "If communication resource is a NemSMS payload cannot exceed 160"
+Expression:  "medium.coding.where(code = 'nemsms').exists() implies payload.contentString.length() <= 160"
+Severity:    #error
+
+Invariant:   notification-invariant
+Description: "Category notification invariant"
+Expression:  "category.coding.code = 'notification' implies recipient.reference.contains('Patient/') and ( sender.reference.contains('Practitioner/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())"
+Severity:    #error

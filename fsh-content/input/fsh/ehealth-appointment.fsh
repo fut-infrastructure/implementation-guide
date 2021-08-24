@@ -1,6 +1,7 @@
 Profile: ehealth-appointment
 Id: ehealth-appointment
 Parent: Appointment
+* obeys responsible-1 and single-patient-appointment
 * extension contains ehealth-responsible named responsible 1..1
 * extension contains ehealth-group-id named groupId 0..1
 * extension contains ehealth-legalBasis named legalBasis 0..1
@@ -8,6 +9,7 @@ Parent: Appointment
 * extension contains ehealth-responsible-organization named responsibleOrganization 0..1
 * extension contains ehealth-performer named performer 0..1
 * extension contains ehealth-performing-organization named performingOrganization 0..1
+* extension[ehealth-legalBasis] obeys governance-2 and responsible-3
 * appointmentType 1..1
 * appointmentType from appointmenttype-codes
 * reasonCode 0..1
