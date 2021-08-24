@@ -34,7 +34,7 @@ Description: "Relations to other Organizations"
 * extension[target].value[x] only Reference(ehealth-organization)
 * extension[target].value[x] ^type.aggregation = #referenced
 * extension[relationType].value[x] only CodeableConcept
-* extension[relationType].valueCodeableConcept from ehealth-organization-type
+* extension[relationType].valueCodeableConcept from ehealth-organization-relation-type
 * extension[period].value[x] only Period
 
 Extension:   ehealth-organization-cvrNumber
