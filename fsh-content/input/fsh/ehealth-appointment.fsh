@@ -9,7 +9,7 @@ Parent: Appointment
 * extension contains ehealth-responsible-organization named responsibleOrganization 0..1
 * extension contains ehealth-performer named performer 0..1
 * extension contains ehealth-performing-organization named performingOrganization 0..1
-* extension[ehealth-legalBasis] obeys governance-2 and responsible-3
+* extension[ehealth-legalBasis] obeys governance-1 and responsible-2
 * appointmentType 1..1
 * appointmentType from appointmenttype-codes
 * reasonCode 0..1
