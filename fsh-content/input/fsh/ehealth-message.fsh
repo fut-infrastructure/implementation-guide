@@ -16,7 +16,6 @@ Parent: Communication
 * extension contains ehealth-on-behalf-of named onBehalfOf 0..1 MS
 * partOf only Reference(CarePlan)
 * partOf ^type.aggregation = #referenced
-* status from ehealth-event-status
 // Not in R4: * notDoneReason MS
 
 * category.coding.system 0..1
