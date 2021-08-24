@@ -5,7 +5,7 @@ Parent: Communication
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..*
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..*
-* extension contains ehealth-restriction-category named restrictionCategory 0..*
+* extension contains ehealth-restriction-category named restrictionCategory 1..*
 // not in R4: * definition only Reference(ehealth-plandefinition or ehealth-activitydefinition)
 * basedOn only Reference(Resource)
 * basedOn ^type.aggregation = #referenced
