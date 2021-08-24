@@ -7,11 +7,9 @@ Parent: Composition
 * category 0..1
 * subject 1..1
 * subject only Reference(Resource)
-* subject ^type.aggregation = #referenced
 * encounter only Reference(Encounter)
 * encounter ^type.aggregation = #referenced
 * author only Reference(ehealth-practitioner or ehealth-device or ehealth-patient or ehealth-relatedperson)
-* author ^type.aggregation = #referenced
 * attester.party only Reference(ehealth-patient or ehealth-practitioner or ehealth-organization)
 * attester.party ^type.aggregation = #referenced
 * custodian only Reference(ehealth-organization)
