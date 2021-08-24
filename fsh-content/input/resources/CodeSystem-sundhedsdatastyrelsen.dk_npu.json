@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "npu",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://sundhedsdatastyrelsen.dk/npu defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">NPU03011<a name=\"npu-NPU03011\"> </a></td><td>O2 sat.;Hb(aB)</td><td>Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?</td></tr><tr><td style=\"white-space:nowrap\">NPU21692<a name=\"npu-NPU21692\"> </a></td><td>Puls;Hjerte</td><td>Hjerte—Systole; frekv. = ? × 1/min</td></tr><tr><td style=\"white-space:nowrap\">NPU03804<a name=\"npu-NPU03804\"> </a></td><td>Legeme vægt; Pt</td><td>Pt—Legeme; masse = ? kg</td></tr><tr><td style=\"white-space:nowrap\">NPU03794<a name=\"npu-NPU03794\"> </a></td><td>Legeme højde;Pt</td><td>Pt—Legeme; højde = ? m</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>NPU03011</td><td>Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?</td></tr><tr><td>NPU21692</td><td>Hjerte—Systole; frekv. = ? × 1/min</td></tr><tr><td>NPU03804</td><td>Pt—Legeme; masse = ? kg</td></tr><tr><td>NPU03794</td><td></td></tr></table></div>"
+  },
+  "url" : "http://sundhedsdatastyrelsen.dk/npu",
+  "version" : "2020-02-27T08:47:11",
+  "name" : "DanishNPUCodes",
+  "title" : "Danish NPU Codes (NPU)",
+  "status" : "retired",
+  "experimental" : false,
+  "date" : "2019-01-24T00:00:00+00:00",
+  "publisher" : "The Danish Health Data Authority",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://sundhedsdatastyrelsen.dk/npu"
+        }
+      ]
+    }
+  ],
+  "description" : "Observation codes used for communication and administration of laboratory results in Denmark.",
+  "caseSensitive" : true,
+  "content" : "fragment",
+  "concept" : [
+    {
+      "code" : "NPU03011",
+      "display" : "O2 sat.;Hb(aB)",
+      "definition" : "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
+        }
+      ]
+    },
+    {
+      "code" : "NPU21692",
+      "display" : "Puls;Hjerte",
+      "definition" : "Hjerte—Systole; frekv. = ? × 1/min",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Hjerte—Systole; frekv. = ? × 1/min"
+        }
+      ]
+    },
+    {
+      "code" : "NPU03804",
+      "display" : "Legeme vægt; Pt",
+      "definition" : "Pt—Legeme; masse = ? kg",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Pt—Legeme; masse = ? kg"
+        }
+      ]
+    },
+    {
+      "code" : "NPU03794",
+      "display" : "Legeme højde;Pt",
+      "definition" : "Pt—Legeme; højde = ? m"
+    }
+  ]
+}
