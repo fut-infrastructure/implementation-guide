@@ -19,7 +19,7 @@ comes in four flavours depending on the "category" of the message:
   must be referred by the recipientCareTeam extension, and the receiver deleted (both can take place in the same
   PATCH operation). A personal note may be updated by the sender, but not by the recipient.
 
-An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "topic" field, no 
+An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "about" field, no 
 matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by
 assigning the same thread-id in the provided extension. Similarly, they may be organized in a group (eg. group messages)
 by assigning the same group-id in that extension. The message subject may be provided in the title extension, and
@@ -123,7 +123,7 @@ __Path__ | __Description__
 /definition.* | For category 'note' or status 'preparation'
 /basedOn.* | For category 'note' or status 'preparation'
 /partOf.* | For category 'note' or status 'preparation'
-/topic.* | For category 'note' or status 'preparation'
+/about.* | For category 'note' or status 'preparation'
 /notDone.* | For category 'note' or status 'preparation'
 /notDoneReason.* | For category 'note' or status 'preparation'
 /context.* | For category 'note' or status 'preparation'
