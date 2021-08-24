@@ -10,11 +10,6 @@ Description: "Only a single patient is allowed pr. appointment"
 Expression:  "participant.actor.where(reference.contains('/Patient')).count() < 2"
 Severity:    #error
 
-Invariant:   single-patient-videoappointment
-Description: "Only a single patient is allowed pr. appointment"
-Expression:  "participant.actor.where(reference.contains('/Patient')).count() < 2"
-Severity:    #error
-
 Invariant:   governance-1
 Description: "When extension is used a Episode of Care MUST be referenced"
 Expression:  "%resource.supportingInformation.reference.contains('EpisodeOfCare/')"
