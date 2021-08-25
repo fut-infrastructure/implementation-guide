@@ -21,7 +21,6 @@ Parent: ClinicalImpression
 * investigation.item ^type.aggregation = #referenced
 * finding.itemCodeableConcept from ehealth-clinicalimpression-finding-codes
 * finding.itemReference only Reference(Observation or ehealth-condition)
-* finding.itemReference ^type.aggregation = #referenced
 * prognosisReference only Reference(RiskAssessment)
 * prognosisReference ^type.aggregation = #referenced
 // Not in R4: * action only Reference(ReferralRequest or ehealth-procedurerequest or Procedure or MedicationRequest or ehealth-appointment)
@@ -43,7 +42,8 @@ Description: "Library and relevant resources used for evaluation"
 * . ^short = "Library and relevant resources used for evaluation"
 * value[x] only Reference(Parameters)
 * valueReference 1..1
-* value[x] ^type.aggregation = #referenced
+* value[x] ^type.aggregation[+] = #referenced
+* value[x] ^type.aggregation[+] = #contained
 
 Extension:   ehealth-clinicalimpression-decision
 Title:       "Decision"
