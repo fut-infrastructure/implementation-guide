@@ -4,6 +4,7 @@ Parent: CareTeam
 * status 1..1
 * name 1..1
 * subject 0..0
+* category from ehealth-careteam-category
 * participant.role from ehealth-careteam-participant-role
 * participant.role 1..*
 * participant.member only Reference(ehealth-practitioner or ehealth-practitionerrole or ehealth-relatedperson or ehealth-patient or ehealth-organization or ehealth-careteam)
