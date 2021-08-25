@@ -29,9 +29,9 @@ an optional priority may be provided in the ehealth-priority extension.
 
 The ehealth-message profile contains two status fields:
 
-- __status__: Makes it possible for the message __sender__ to create a draft message by specifying status "not-done", 
+- __status__: Makes it possible for the message __sender__ to create a draft message by specifying status "preparation", 
               and to cancel the message by setting status "aborted". When the message is ready to be sent, specify status 
-              "completed". Then the platform will handle any necessary forwarding. As long as the status is "not-done",
+              "completed". Then the platform will handle any necessary forwarding. As long as the status is "preparation",
               the message may be updated as desired, but not after the status is set to "completed".
 - __administrative-status__ (extension): Makes it possible for the message __recipient__ to indicate the state of a message. 
               A message may hold an administrative status that defines the last action the recipient took on the message
@@ -110,27 +110,27 @@ The Patient service will generate NemSMS ehealth-messages, notifying patients th
 
 An ehealth-message may not have its category changed, eg. from 'note' to 'message'.
 
-When status is "not-done", message contents may be updated, but not after status has been set to "completed".
+When status is "preparation", message contents may be updated, but not after status has been set to "completed".
 
 An ehealth-message may be PATCH updated on paths complying with the regular expressions below.
 
 __Path__ | __Description__ 
 :--- | ---
-/implicitRules.* | For category 'note' or status 'not-done'
-/category.* | For category 'note' or status 'not-done'
-/contained.* | For category 'note' or status 'not-done'
-/recipient.* | For category 'note' or status 'not-done'
-/definition.* | For category 'note' or status 'not-done'
-/basedOn.* | For category 'note' or status 'not-done'
-/partOf.* | For category 'note' or status 'not-done'
-/about.* | For category 'note' or status 'not-done'
-/notDone.* | For category 'note' or status 'not-done'
-/notDoneReason.* | For category 'note' or status 'not-done'
-/context.* | For category 'note' or status 'not-done'
+/implicitRules.* | For category 'note' or status 'preparation'
+/category.* | For category 'note' or status 'preparation'
+/contained.* | For category 'note' or status 'preparation'
+/recipient.* | For category 'note' or status 'preparation'
+/definition.* | For category 'note' or status 'preparation'
+/basedOn.* | For category 'note' or status 'preparation'
+/partOf.* | For category 'note' or status 'preparation'
+/about.* | For category 'note' or status 'preparation'
+/notDone.* | For category 'note' or status 'preparation'
+/notDoneReason.* | For category 'note' or status 'preparation'
+/context.* | For category 'note' or status 'preparation'
 /received.* | For all values of category
-/reasonCode.* | For category 'note' or status 'not-done'
-/reasonReference.* | For category 'note' or status 'not-done'
-/payload.* | For category 'note' or status 'not-done'
-/note.* | For category 'note' or status 'not-done'
-/status.* | For category 'note' or status 'not-done'
-/extension.* | For category 'note' or status 'not-done'
+/reasonCode.* | For category 'note' or status 'preparation'
+/reasonReference.* | For category 'note' or status 'preparation'
+/payload.* | For category 'note' or status 'preparation'
+/note.* | For category 'note' or status 'preparation'
+/status.* | For category 'note' or status 'preparation'
+/extension.* | For category 'note' or status 'preparation'
