@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ehealth-oio-bpp-roles",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ehealth-oio-bpp-roles.html\"><code>http://ehealth.sundhed.dk/cs/oio-bpp-roles</code></a></li></ul></div>"
+  },
+  "url" : "http://ehealth.sundhed.dk/vs/oio-bpp-roles",
+  "version" : "0.6.0",
+  "name" : "OIOBPPRoles",
+  "title" : "OIO BPP Roles",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-12-02T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "name" : "ehealth.sundhed.dk",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "OIO BPP roles.",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://ehealth.sundhed.dk/cs/oio-bpp-roles"
+      }
+    ]
+  }
+}

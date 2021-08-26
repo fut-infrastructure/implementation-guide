@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ehealth-ucum-printsymbol-supplement",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ehealth-ucum-printsymbol-supplement.html\"><code>http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement</code></a></li></ul></div>"
+  },
+  "url" : "http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement",
+  "version" : "0.6.0",
+  "name" : "UCUMPrintSymbolSupplement",
+  "title" : "UCUM printSymbol supplement",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-02-13T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "name" : "ehealth.sundhed.dk",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "UCUM printSymbol supplement",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement"
+      }
+    ]
+  }
+}
