@@ -1,0 +1,73 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "address-type-dk-supplement",
+    "url": "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement",
+    "version": "3.0.2",
+    "name": "AddressTypeDkSupplement",
+    "status": "draft",
+    "experimental": false,
+    "date": "2019-10-24T11:53:00+11:00",
+    "publisher": "HL7 (FHIR Project)",
+    "contact": [
+        {
+            "name": "HL7 Denmark",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.dk"
+                }
+            ]
+        }
+    ],
+    "description": "The type of an address (physical / postal) - danish supplement",
+    "caseSensitive": true,
+    "content": "supplement",
+    "supplements": "http://hl7.org/fhir/address-type",
+    "concept": [
+        {
+            "code": "postal",
+            "display": "Postal",
+            "definition": "Mailing addresses - PO Boxes and care-of addresses.",
+            "designation": [
+                {
+                    "language": "da",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009"
+                    },
+                    "value": "Post"
+                }
+            ]
+        },
+        {
+            "code": "physical",
+            "display": "Physical",
+            "definition": "A physical address that can be visited.",
+            "designation": [
+                {
+                    "language": "da",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009"
+                    },
+                    "value": "Fysisk"
+                }
+            ]
+        },
+        {
+            "code": "both",
+            "display": "Postal & Physical",
+            "definition": "An address that is both physical and postal.",
+            "designation": [
+                {
+                    "language": "da",
+                    "use": {
+                        "system": "http://snomed.info/sct",
+                        "code": "900000000000013009"
+                    },
+                    "value": "Post & fysisk"
+                }
+            ]
+        }
+    ]
+}
