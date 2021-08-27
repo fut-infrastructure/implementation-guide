@@ -32,9 +32,6 @@
         ]
       },
       {
-        "system": "http://www.example.com/medcom/message-codes"
-      },
-      {
         "system": "urn:oid:1.2.208.184.100.1",
         "concept": [
           {
