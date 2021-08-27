@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/usage-context-type"
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
       },
       {
         "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type"
