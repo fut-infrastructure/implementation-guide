@@ -6,6 +6,13 @@ Parent: DkCorePatient
 * extension contains ehealth-general-health-condition named generalHealthCondition 0..*
 * extension contains ehealth-nameandaddressprotection named nameAndAddressProtection 0..1
 
+* address 0..*
+* address ^slicing.discriminator.type = #value
+* address ^slicing.discriminator.path = "use"
+* address ^slicing.rules = #open
+* address contains officialHomeAddress 0..1
+* address[officialHomeAddress].use = #home (exactly)
+
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "value"
 * telecom ^slicing.rules = #open

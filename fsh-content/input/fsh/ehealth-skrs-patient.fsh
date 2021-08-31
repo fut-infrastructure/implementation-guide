@@ -19,5 +19,10 @@ Parent: Patient
 * deceased[x][deceasedDateTime] only dateTime
 
 * address 0..1
-* address.extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes named municipalityCodes 0..*
-* address.extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
+* address ^slicing.discriminator.type = #value
+* address ^slicing.discriminator.path = "use"
+* address ^slicing.rules = #closed
+* address contains officialHomeAddress 0..1
+* address[officialHomeAddress].use = #home (exactly)
+* address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes named municipalityCodes 0..*
+* address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
