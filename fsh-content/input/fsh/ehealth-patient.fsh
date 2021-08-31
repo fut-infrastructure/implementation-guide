@@ -27,7 +27,9 @@ Parent: DkCorePatient
 
 * gender 1..1
 * contact.extension contains ehealth-patient-contactnote named patientContactnote 0..*
-* contact.address only ehealth-address
+* contact.address.extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes named municipalityCodes 0..*
+* contact.address.extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
+
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
 * generalPractitioner only Reference(Organization or Practitioner)
 * generalPractitioner ^type.aggregation = #referenced
