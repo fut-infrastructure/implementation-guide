@@ -2,12 +2,6 @@
   "resourceType": "Appointment",
   "id": "group-videoappointment01",
   "meta": {
-    "extension": [
-      {
-        "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-        "valueUri": "#f8812d9d-14fa-49"
-      }
-    ],
     "versionId": "3",
     "lastUpdated": "2021-07-15T07:06:36.667+00:00",
     "profile": [
@@ -25,15 +19,6 @@
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants",
       "valueInteger": 4
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis",
-      "valueCodeableConcept": {
-        "coding" : [{
-          "code": "service-act",
-          "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
-        }]
-      }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url",
@@ -97,6 +82,14 @@
       }
     ]
   },
+  "serviceType": [{
+    "coding": [
+      {
+        "code": "group-video",
+        "system": "http://ehealth.sundhed.dk/cs/appointment-servicetype"
+      }
+    ]
+  }],
   "reasonCode": [
     {
       "coding": [
@@ -115,6 +108,12 @@
   "participant": [
     {
       "extension": [
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        },
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam",
           "valueReference": {

@@ -8,6 +8,18 @@
   },
   "extension": [
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization",
+      "valueReference": {
+        "reference": "https://organization.fut.trifork.com/fhir/Organization/108752"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization",
+      "valueReference": {
+        "reference": "https://organization.fut.trifork.com/fhir/Organization/108752"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible",
       "valueReference": {
         "reference": "http://inttest.ehealth.sundhed.dk/CareTeam/42",
@@ -33,6 +45,14 @@
       }
     ]
   },
+  "serviceType": [{
+    "coding": [
+      {
+        "code": "regular",
+        "system": "http://ehealth.sundhed.dk/cs/appointment-servicetype"
+      }
+    ]
+  }],
   "reasonCode": [
     {
       "coding": [
@@ -42,6 +62,11 @@
         }
       ],
       "text": "Clinical Review"
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "http://inttest.ehealth.sundhed.dk/EpisodeOfCare/42"
     }
   ],
   "participant": [

@@ -2,12 +2,6 @@
   "resourceType": "Appointment",
   "id": "videoappointment01",
   "meta": {
-    "extension": [
-      {
-        "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-        "valueUri": "#f8812d9d-14fa-49"
-      }
-    ],
     "versionId": "3",
     "lastUpdated": "2021-07-15T07:06:36.667+00:00",
     "profile": [
@@ -25,15 +19,6 @@
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants",
       "valueInteger": 4
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis",
-      "valueCodeableConcept": {
-        "coding" : [{
-          "code": "service-act",
-          "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
-        }]
-      }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url",
@@ -64,10 +49,6 @@
   ],
   "identifier": [
     {
-      "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "5d1a3107-9fc8-4a6f-b66a-16fcf1937ade"
-    },
-    {
       "system": "http://vdx.medcom.dk/meeting",
       "value": "894e56b4-53bb-4004-8f06-6a4d7ad115ca"
     }
@@ -81,6 +62,14 @@
       }
     ]
   },
+  "serviceType": [{
+    "coding": [
+      {
+        "code": "video",
+        "system": "http://ehealth.sundhed.dk/cs/appointment-servicetype"
+      }
+    ]
+  }],
   "reasonCode": [
     {
       "coding": [

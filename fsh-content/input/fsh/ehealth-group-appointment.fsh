@@ -25,3 +25,10 @@ Parent: Appointment
 * participant.actor ^type.aggregation[+] = #referenced
 * participant.actor ^type.aggregation[+] = #contained
 * participant.extension contains ehealth-assigning-careteam named assigningCareteam 1..1
+* serviceType 0..*
+* serviceType ^slicing.discriminator.type = #value
+* serviceType ^slicing.discriminator.path = "coding.code"
+* serviceType ^slicing.rules = #open
+* serviceType contains appointmentType 1..1
+* serviceType[appointmentType].coding from ehealth-appointment-servicetype
+* serviceType[appointmentType].coding.code = #group (exactly)

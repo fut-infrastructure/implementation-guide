@@ -2,16 +2,10 @@
   "resourceType": "Appointment",
   "id": "group-appointment01",
   "meta": {
-    "extension": [
-      {
-        "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
-        "valueUri": "#f8812d9d-14fa-49"
-      }
-    ],
     "versionId": "3",
     "lastUpdated": "2021-07-15T07:06:36.667+00:00",
     "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment"
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment"
     ]
   },
   "contained": [
@@ -26,15 +20,6 @@
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible",
       "valueReference": {
         "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis",
-      "valueCodeableConcept": {
-        "coding" : [{
-          "code": "service-act",
-          "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
-        }]
       }
     },
     {
@@ -99,6 +84,14 @@
       }
     ]
   },
+  "serviceType": [{
+    "coding": [
+      {
+        "code": "group",
+        "system": "http://ehealth.sundhed.dk/cs/appointment-servicetype"
+      }
+    ]
+  }],
   "reasonCode": [
     {
       "coding": [
@@ -117,6 +110,12 @@
   "participant": [
     {
       "extension": [
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        },
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam",
           "valueReference": {
@@ -139,6 +138,20 @@
       "status": "accepted"
     },
     {
+      "extension": [
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        },
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        }
+      ],
       "actor": {
         "reference": "https://organization.fut.trifork.com/fhir/Practitioner/107302",
         "display": "actor1 display text"
@@ -147,6 +160,20 @@
       "status": "tentative"
     },
     {
+      "extension": [
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        },
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        }
+      ],
       "actor": {
         "reference": "https://patient.fut.trifork.com/fhir/Patient/102"
       },
@@ -154,6 +181,20 @@
       "status": "accepted"
     },
     {
+      "extension": [
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        },
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam",
+          "valueReference": {
+            "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
+          }
+        }
+      ],
       "actor": {
         "reference": "#1"
       },

@@ -18,7 +18,13 @@ Entire eHealth Implementation Guide migrated to FHIR R4.
 
 #### Appointment
 - Field 'reason' is removed in R4. Substituted with reasonCode
-
+- Appointment.serviceType must now be set depending on the value of meta/profile (with system "http://ehealth.sundhed.dk/cs/appointment-servicetype" for all codes):
+  
+        Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment' => code = 'regular'
+        Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment' => code = 'video'
+        Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment' => code = 'group'
+        Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment' => code = 'group-video'
+  
 #### Patient
 - Now inherits from dk-core Patient: https://build.fhir.org/ig/hl7dk/dk-core//StructureDefinition-dk-core-patient.html
 - This means that earlier ehealth-patient extensions are replaced by corresponding dk-core extensions

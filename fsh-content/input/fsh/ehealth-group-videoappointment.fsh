@@ -34,3 +34,10 @@ Parent: Appointment
 * start 1..1
 * end 1..1
 * description 1..1
+* serviceType 0..*
+* serviceType ^slicing.discriminator.type = #value
+* serviceType ^slicing.discriminator.path = "coding.code"
+* serviceType ^slicing.rules = #open
+* serviceType contains appointmentType 1..1
+* serviceType[appointmentType].coding from ehealth-appointment-servicetype
+* serviceType[appointmentType].coding.code = #group-video (exactly)

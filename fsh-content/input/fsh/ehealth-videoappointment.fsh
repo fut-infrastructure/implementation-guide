@@ -36,3 +36,10 @@ Parent: Appointment
 * identifier ^slicing.rules = #open
 * identifier contains vdxMeetingId 0..1
 * identifier[vdxMeetingId].system = "http://vdx.medcom.dk/meeting" (exactly)
+* serviceType 0..*
+* serviceType ^slicing.discriminator.type = #value
+* serviceType ^slicing.discriminator.path = "coding.code"
+* serviceType ^slicing.rules = #open
+* serviceType contains appointmentType 1..1
+* serviceType[appointmentType].coding from ehealth-appointment-servicetype
+* serviceType[appointmentType].coding.code = #video (exactly)
