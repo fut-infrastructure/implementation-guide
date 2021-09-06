@@ -388,19 +388,6 @@
       </designation>
    </concept>
    <concept>
-      <code value="DataElement"></code>
-      <display value="DataElement"></display>
-      <definition value="The formal description of a single piece of information that can be gathered and reported."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Dataelement"></value>
-      </designation>
-   </concept>
-   <concept>
       <code value="DetectedIssue"></code>
       <display value="DetectedIssue"></display>
       <definition value="Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. Drug-drug interaction, Ineffective treatment frequency, Procedure-condition conflict, etc."></definition>
@@ -531,9 +518,9 @@
       </designation>
    </concept>
    <concept>
-      <code value="EligibilityRequest"></code>
-      <display value="EligibilityRequest"></display>
-      <definition value="The EligibilityRequest provides patient and insurance coverage information to an insurer for them to respond, in the form of an EligibilityResponse, with information regarding whether the stated coverage is valid and in-force and optionally to provide the insurance details of the policy."></definition>
+      <code value="CoverageEligibilityRequest"></code>
+      <display value="CoverageEligibilityRequest"></display>
+      <definition value="The CoverageEligibilityRequest provides patient and insurance coverage information to an insurer for them to respond, in the form of an CoverageEligibilityResponse, with information regarding whether the stated coverage is valid and in-force and optionally to provide the insurance details of the policy."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -544,9 +531,9 @@
       </designation>
    </concept>
    <concept>
-      <code value="EligibilityResponse"></code>
-      <display value="EligibilityResponse"></display>
-      <definition value="This resource provides eligibility and plan details from the processing of an Eligibility resource."></definition>
+      <code value="CoverageEligibilityResponse"></code>
+      <display value="CoverageEligibilityResponse"></display>
+      <definition value="This resource provides eligibility and plan details from the processing of an CoverageEligibilityRequest resource."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -619,19 +606,6 @@
             <code value="900000000000013009"></code>
          </use>
          <value value="Forløb"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ExpansionProfile"></code>
-      <display value="ExpansionProfile"></display>
-      <definition value="Resource to define constraints on the Expansion of a FHIR ValueSet."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Udvidelsesprofil"></value>
       </designation>
    </concept>
    <concept>
@@ -736,32 +710,6 @@
             <code value="900000000000013009"></code>
          </use>
          <value value="Sundhedsservice"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ImagingManifest"></code>
-      <display value="ImagingManifest"></display>
-      <definition value="A text description of the DICOM SOP instances selected in the ImagingManifest; or the reason for, or significance of, the selection."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Billedtypebeskrivelse"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ImagingStudy"></code>
-      <display value="ImagingStudy"></display>
-      <definition value="Representation of the content produced in a DICOM imaging study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context.  A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Billedundersøgelse"></value>
       </designation>
    </concept>
    <concept>
@@ -1183,9 +1131,9 @@ The primary difference between a medication statement and a medication administr
       </designation>
    </concept>
    <concept>
-      <code value="ProcedureRequest"></code>
-      <display value="ProcedureRequest"></display>
-      <definition value="A record of a request for diagnostic investigations, treatments, or operations to be performed."></definition>
+      <code value="ServiceRequest"></code>
+      <display value="ServiceRequest"></display>
+      <definition value="A record of a request for service such as diagnostic investigations, treatments, or operations to be performed."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -1193,32 +1141,6 @@ The primary difference between a medication statement and a medication administr
             <code value="900000000000013009"></code>
          </use>
          <value value="Procedureanmodning"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ProcessRequest"></code>
-      <display value="ProcessRequest"></display>
-      <definition value="This resource provides the target, request and response, and action details for an action to be performed by the target on or about existing resources."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Udførelsesanmodning"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ProcessResponse"></code>
-      <display value="ProcessResponse"></display>
-      <definition value="This resource provides processing status, errors and notes from the processing of a resource."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Udførelsessvar"></value>
       </designation>
    </concept>
    <concept>
@@ -1258,19 +1180,6 @@ The primary difference between a medication statement and a medication administr
             <code value="900000000000013009"></code>
          </use>
          <value value="Spørgeskemasvar"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ReferralRequest"></code>
-      <display value="ReferralRequest"></display>
-      <definition value="Used to record and send details about a request for referral service or transfer of a patient to the care of another provider or provider organization."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Henvisningsanmodning"></value>
       </designation>
    </concept>
    <concept>
@@ -1378,8 +1287,8 @@ The primary difference between a medication statement and a medication administr
       </designation>
    </concept>
    <concept>
-      <code value="Sequence"></code>
-      <display value="Sequence"></display>
+      <code value="MolecularSequence"></code>
+      <display value="MolecularSequence"></display>
       <definition value="Raw data describing a biological sequence."></definition>
       <designation>
          <language value="da"></language>
@@ -1388,19 +1297,6 @@ The primary difference between a medication statement and a medication administr
             <code value="900000000000013009"></code>
          </use>
          <value value="Sekvens"></value>
-      </designation>
-   </concept>
-   <concept>
-      <code value="ServiceDefinition"></code>
-      <display value="ServiceDefinition"></display>
-      <definition value="The ServiceDefinition describes a unit of decision support functionality that is made available as a service, such as immunization modules or drug-drug interaction checking."></definition>
-      <designation>
-         <language value="da"></language>
-         <use>
-            <system value="http://snomed.info/sct"></system>
-            <code value="900000000000013009"></code>
-         </use>
-         <value value="Servicedefinition"></value>
       </designation>
    </concept>
    <concept>
