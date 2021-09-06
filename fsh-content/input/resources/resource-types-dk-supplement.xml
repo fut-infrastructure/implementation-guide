@@ -414,8 +414,8 @@
       </designation>
    </concept>
    <concept>
-      <code value="DeviceComponent"></code>
-      <display value="DeviceComponent"></display>
+      <code value="DeviceDefinition"></code>
+      <display value="DeviceDefinition"></display>
       <definition value="The characteristics, operational status and capabilities of a medical-related component of a medical device."></definition>
       <designation>
          <language value="da"></language>
