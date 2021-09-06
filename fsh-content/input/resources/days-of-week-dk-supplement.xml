@@ -20,7 +20,7 @@
    <description value="The days of the week."></description>
    <caseSensitive value="true"></caseSensitive>
   
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="mon"></code>
       <display value="Monday"></display>

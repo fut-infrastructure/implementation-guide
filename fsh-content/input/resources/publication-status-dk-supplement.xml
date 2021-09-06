@@ -14,7 +14,7 @@
    <description value="The lifecycle status of a Value Set or Concept Map."></description>
    <caseSensitive value="true"></caseSensitive>
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="draft"></code>
       <display value="Draft"></display>

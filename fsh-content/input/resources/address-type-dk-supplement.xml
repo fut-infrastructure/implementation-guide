@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
    <id value="address-type-dk-supplement"></id>
    <url value="http://hl7.org/fhir/address-type"></url>
-   <supplements value="http://hl7.org/fhir/address-type" ></supplements>
+   <supplements value="http://hl7.org/fhir/address-type"></supplements>
    <version value="4.0.1"></version>
    <name value="AddressType"></name>
    <status value="active"></status>
@@ -17,7 +17,7 @@
    <caseSensitive value="true"></caseSensitive>
 
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="postal"></code>
       <display value="Postal"></display>

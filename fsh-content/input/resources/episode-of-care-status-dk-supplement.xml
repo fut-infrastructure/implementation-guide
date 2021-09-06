@@ -24,7 +24,7 @@
    <description value="The status of the episode of care."></description>
    <caseSensitive value="true"></caseSensitive>
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="planned"></code>
       <display value="Planned"></display>

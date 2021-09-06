@@ -22,7 +22,7 @@
    <description value="One of the resource types defined as part of FHIR."></description>
    <caseSensitive value="true"></caseSensitive>
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="Account"></code>
       <display value="Account"></display>

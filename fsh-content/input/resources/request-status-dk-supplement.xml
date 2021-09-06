@@ -21,7 +21,7 @@
    <description value="Codes identifying the stage lifecycle stage of a request"></description>
    <caseSensitive value="true"></caseSensitive>
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="draft"></code>
       <display value="Draft"></display>

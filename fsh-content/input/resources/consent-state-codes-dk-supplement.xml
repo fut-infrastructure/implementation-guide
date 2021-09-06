@@ -19,7 +19,7 @@
    <description value="Indicates the state of the consent"></description>
    <caseSensitive value="true"></caseSensitive>
    
-   <content value="complete"></content>
+   <content value="supplement"></content>
    <concept>
       <code value="draft"></code>
       <display value="Pending"></display>
