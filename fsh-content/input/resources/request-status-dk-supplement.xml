@@ -25,7 +25,7 @@
    <concept>
       <code value="draft"></code>
       <display value="Draft"></display>
-      <definition value="The request has been created but is not yet complete or ready for action"></definition>
+      <definition value="The request has been created but is not yet complete or ready for action."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -38,7 +38,7 @@
    <concept>
       <code value="active"></code>
       <display value="Active"></display>
-      <definition value="The request is ready to be acted upon"></definition>
+      <definition value="The request is in force and ready to be acted upon."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -49,9 +49,9 @@
       </designation>
    </concept>
    <concept>
-      <code value="suspended"></code>
-      <display value="Suspended"></display>
-      <definition value="The authorization/request to act has been temporarily withdrawn but is expected to resume in the future"></definition>
+      <code value="on-hold"></code>
+      <display value="On Hold"></display>
+      <definition value="The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -62,9 +62,9 @@
       </designation>
    </concept>
    <concept>
-      <code value="cancelled"></code>
-      <display value="Cancelled"></display>
-      <definition value="The authorization/request to act has been terminated prior to the full completion of the intended actions.  No further activity should occur."></definition>
+      <code value="revoked"></code>
+      <display value="Revoked"></display>
+      <definition value="The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -77,7 +77,7 @@
    <concept>
       <code value="completed"></code>
       <display value="Completed"></display>
-      <definition value="Activity against the request has been sufficiently completed to the satisfaction of the requester"></definition>
+      <definition value="The activity described by the request has been fully performed. No further activity will occur."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -90,7 +90,7 @@
    <concept>
       <code value="entered-in-error"></code>
       <display value="Entered in Error"></display>
-      <definition value="This electronic record should never have existed, though it is possible that real-world decisions were based on it.  (If real-world activity has occurred, the status should be &quot;cancelled&quot; rather than &quot;entered-in-error&quot;.)"></definition>
+      <definition value="This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be &quot;revoked&quot; rather than &quot;entered-in-error&quot;.)."></definition>
       <designation>
          <language value="da"></language>
          <use>
@@ -103,7 +103,7 @@
    <concept>
       <code value="unknown"></code>
       <display value="Unknown"></display>
-      <definition value="The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for &quot;other&quot; . One of the listed statuses is presumed to apply,  but the system creating the request doesn't know."></definition>
+      <definition value="The authoring system does not know which of the status values currently applies for this request.  Note: This concept is not to be used for &quot;other&quot;  - one of the listed statuses is presumed to apply, but the authoring/source system does not know which."></definition>
       <designation>
          <language value="da"></language>
          <use>
