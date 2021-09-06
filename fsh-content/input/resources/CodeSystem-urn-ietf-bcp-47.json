@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "urn_ietf_bcp_47",
+  "id": "urn-ietf-bcp-47",
   "meta": {
     "versionId": "6",
     "lastUpdated": "2021-02-08T08:13:46.414+00:00"
