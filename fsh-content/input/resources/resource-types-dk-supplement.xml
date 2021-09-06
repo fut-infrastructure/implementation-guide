@@ -141,8 +141,8 @@
       </designation>
    </concept>
    <concept>
-      <code value="BodySite"></code>
-      <display value="BodySite"></display>
+      <code value="BodyStructure"></code>
+      <display value="BodyStructure"></display>
       <definition value="Record details about the anatomical location of a specimen or body part.  This resource may be used when a coded concept does not provide the necessary detail needed for the use case."></definition>
       <designation>
          <language value="da"></language>
