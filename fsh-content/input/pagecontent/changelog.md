@@ -1,7 +1,3 @@
-NOTICE: THIS FILE IS DEPRECATED - INSTEAD USE fsh-content/input/pagecontent/changelog.md
-
-# Changelog
-
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
