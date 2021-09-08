@@ -1,6 +1,11 @@
 {
   "resourceType": "ValueSet",
   "id": "ehealth-measurement-sharing-policies",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2021-09-07T07:55:46.241+00:00",
+    "source": "#562dcf12-78e3-4f"
+  },
   "url": "http://ehealth.sundhed.dk/vs/measurement-sharing-policies",
   "version": "0.6.0",
   "name": "MeasurementSharingPolicies",
