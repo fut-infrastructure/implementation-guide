@@ -2,7 +2,7 @@ Profile: ehealth-organization
 Id: ehealth-organization
 Parent: Organization
 * extension contains ehealth-organization-cvrNumber named cvrNumber 0..1
-* extension contains ehealth-regionCode named regionCode 0..1
+* extension contains ehealth-organization-regionCode named regionCode 0..1
 * extension contains ehealth-organization-municipalityCode named municipalityCode 0..1
 * extension contains ehealth-organization-source named source 1..1
 * extension contains ehealth-organization-synchronizationStatus	named synchronizationStatus 1..1
@@ -52,7 +52,7 @@ Description: "The actual contact point details (i.e. phone number or email addre
 * valueString 1..1
 
 
-Extension:   ehealth-regionCode
+Extension:   ehealth-organization-regionCode
 Title:       "Region code"
 Description: "The regionCode of the organization"
 * . ^short = "The organization's region code"
