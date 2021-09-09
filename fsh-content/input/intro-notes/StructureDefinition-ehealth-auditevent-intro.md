@@ -43,7 +43,7 @@ The "who", "when", and "what" that must be provided to supply a meaningful Audit
 - when: the value of "recorded", eg. "2019-12-04T11:59:28.646+00:00"
 - what: as entries in the "entities" list (typically Patient ID)
 
-![auditevent](assets/images/auditevent.png "AuditEvent"){:style="width:600px;float:none;"}
+![auditevent](assets/images/auditevent2.png "AuditEvent"){:style="width:600px;float:none;"}
 
 (source: https://drive.google.com/file/d/17lkCVScT2nyweapw6CtL20QRKCUoCCuj/view)
 
@@ -244,6 +244,6 @@ Derived from the auditlog it is possible to make reports covering the usage of t
 
 When a template of a fulfilling report has been generated an automatic report generation could be scheduled for instance monthly. After creating the report it could be sent by email.
 
-![usagelog](assets/images/usagelog.png "UsageLog"){:style="width:800px;float:none;"}
+![usagelog](assets/images/usagelog2.png "UsageLog"){:style="width:800px;float:none;"}
 
 <pre>kubernetes_container_name="auditlog-consumer" type":"audit index="exttest_k8s_ehealth-audit_audit" | stats dc(patientId) as nr_of_patients by organizationId</pre>
