@@ -10,7 +10,7 @@ System-log must not contain sensitive data ex. CPR
 
 System-logs must be in valid JSON format and must contain the following elements (part of CIM: https://docs.splunk.com/Documentation/CIM/4.12.0/User/Overview)
 
-
+{:class="list"}
 | Field name | Data type | Description |
 | --- | --- | --- |
 | time       | time      | The time of the incident in format yyyy-mm-ddThh:mm:ss:nnnnnnz ("time"="2019-03-01T08:58:26.986123Z") zulu timezone |
@@ -39,8 +39,8 @@ Audit logging is based on the FHIR AuditEvent resource (http://hl7.org/fhir/STU3
 
 The "who", "when", and "what" that must be provided to supply a meaningful AuditEvent are the following:
 
-- who: Practitioner/Patient reference as "agent.userId.value"
-- when: the value of "recorded", eg. "2019-12-04T11:59:28.646+00:00"
+- who: Practitioner/Patient reference as "agent.who.identifier.value"
+- when: the value of "recorded", eg. "2021-09-03T08:56:54.596+02:00"
 - what: as entries in the "entities" list (typically Patient ID)
 
 ![auditevent](assets/images/auditevent2.png "AuditEvent"){:style="width:600px;float:none;"}
@@ -56,14 +56,14 @@ Requests where the JWT user_type=SYSTEM does not need to be audit-logged (they a
 
 ### Sending AuditEvents to ActiveMQ
 
-Additional requirements to the AuditEvent sent to ActiveMQ, besides the one listed on http://hl7.org/fhir/STU3/auditevent.html:
+Additional requirements to the AuditEvent sent to ActiveMQ, besides the one listed on http://hl7.org/fhir/auditevent.html:
 
 - action (what): The action taken (C=create, R=read/search/history, U=update/patch, D=delete, E=custom operations).
   - If action=E then the name of the custom FHIR operation must be provided in the "subtype.code" element. If action is not E, the proper value from http://hl7.org/fhir/STU3/valueset-audit-event-sub-type.html (the "RestOperationTypeEnum") must be present as the "subtype.code", eg. "search-type".
 - outcomeDesc (what)
     - Must be the name of the primary FHIR resource type on which the event relates to
 - agent (who)
-  - Must have exactly 1 requestor that has a userId value
+  - Must have exactly 1 requestor that has a "who.identifier.value" set
   - When an organization is supplied in the JWT context, it must be supplied as an extension on the requestor with url "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleOrganization".
 - source (where)
   - Should have an identifier with
@@ -104,90 +104,85 @@ An example is displayed below.
 
 <pre>
 {
-   "resourceType":"AuditEvent",
-   "type":{
-      "system":"http://hl7.org/fhir/audit-event-type",
-      "code":"rest",
-      "display":"RESTful Operation"
-   },
-   "subtype":[
-      {
-         "system":"http://hl7.org/fhir/restful-interaction",
-         "code":"$createPatient"
-      }
-   ],
-   "action":"E",
-   "recorded":"2019-12-04T11:59:28.646+00:00",
-   "outcome":"0",
-   "outcomeDesc":"Patient",
-   "agent":[
-      {
-         "extension":[
-            {
-               "url":"http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleOrganization",
-               "valueReference":{
-                  "reference":"https://organization.inttest.ehealth.sundhed.dk/fhir/Organization/10357"
-               }
-            }
-         ],
-         "userId":{
-            "system":"http://ehealth.sundhed.dk",
-            "value":"https://organization.inttest.ehealth.sundhed.dk/fhir/Practitioner/143473"
-         },
-         "requestor":true
-      }
-   ],
-   "source":{
-      "identifier":{
-         "system":"http://ehealth.sundhed.dk"
-         "value":"https://patient.exttest.ehealth.sundhed.dk"
+  "resourceType": "AuditEvent",
+  "type": {
+    "system": "http://terminology.hl7.org/CodeSystem/audit-event-type",
+    "code": "rest",
+    "display": "RESTful Operation"
+  },
+  "subtype": [
+    {
+      "system": "http://hl7.org/fhir/restful-interaction",
+      "code": "create"
+    }
+  ],
+  "action": "C",
+  "recorded": "2021-09-03T08:56:54.596+02:00",
+  "outcome": "0",
+  "outcomeDesc": "Communication",
+  "agent": [
+    {
+      "who": {
+        "identifier": {
+          "system": "http://ehealth.sundhed.dk",
+          "value": "http://localhost:55326/fhir/Practitioner/9"
+        }
       },
-      "type":[
-         {
-            "system":"http://hl7.org/fhir/security-source-type",
-            "code":"4"
-         }
-      ]
-   },
-   "entity":[
-      {
-         "reference":{
-            "reference":"https://patient.inttest.ehealth.sundhed.dk/fhir/Patient/852"
-         },
-         "role":{
-            "system":"http://hl7.org/fhir/object-role",
-            "code":"1"
-         }
-      },
-      {
-         "identifier":{
-            "system":"http://ehealth.sundhed.dk",
-            "value":"6b507ee2d716780372c255df69ece653"
-         },
-         "type":{
-            "system":"http://hl7.org/fhir/security-source-type",
-            "code":"2",
-            "display":"Data Interface"
-         },
-         "role":{
-            "system":"http://hl7.org/fhir/object-role",
-            "code":"21",
-            "display":"Job Stream"
-         }
+      "requestor": true
+    }
+  ],
+  "source": {
+    "observer": {
+      "identifier": {
+        "system": "http://ehealth.sundhed.dk",
+        "value": "http://localhost:8484/fhir/"
       }
-   ],
-   "purposeOfEvent": [
-     {
-       "coding": [
-         {
-           "system": "http://ehealth.sundhed.dk/fhir/PurposeOfUse",
-           "code": "INTERNAL_AUDIT_ONLY"
-         }
-       ]
-     }
-   ],
-   "headers":[
-   ]
+    },
+    "type": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "code": "4"
+      }
+    ]
+  },
+  "entity": [
+    {
+      "what": {
+        "identifier": {
+          "system": "http://ehealth.sundhed.dk",
+          "value": "e24a5a3479bb433c978afd40ab7e2067"
+        }
+      },
+      "type": {
+        "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "code": "2",
+        "display": "Data Interface"
+      },
+      "role": {
+        "system": "http://terminology.hl7.org/CodeSystem/object-role",
+        "code": "21",
+        "display": "Job Stream"
+      }
+    },
+    {
+      "what": {
+        "reference": "http://localhost:8484/fhir/Patient/745"
+      },
+      "role": {
+        "system": "http://terminology.hl7.org/CodeSystem/object-role",
+        "code": "1"
+      }
+    },
+    {
+      "what": {
+        "reference": "http://localhost:8484/fhir/Communication/746/_history/1"
+      },
+      "role": {
+        "system": "http://terminology.hl7.org/CodeSystem/object-role",
+        "code": "4"
+      }
+    }
+  ]
 }
 </pre>
 
@@ -195,20 +190,21 @@ An example is displayed below.
 
 A central service handles the AuditEvent entities, and writes them to Splunk to allow for search, statistics, report generation etc. However, only a simplified version of the AuditEvent is logged, containing the following attributes:
 
+{:class="list"}
 | Attribute | AuditEvent source |
 | --- | --- |
 | actionOutcome | outcome |
 | actionResource | outcomeDesc |
 | actionType | action |
-| entities | entity.reference (where role.code<>21) |
-| issuerId | agent.userId.value |
+| entities | entity.what.identifier.value (where role.code<>21) |
+| issuerId | agent.who.identifier.value |
 | organizationId | agent.extension(ehealth-responsibleOrganization).valueReference.reference |
-| patientId | entity.reference (where role.code=1) |
+| patientIds | entity.what.reference (where role.code=1) |
 | subtype | subtype.code |
 | time | recorded |
-| traceId | entity.identifier.value (where role.code=21 and type.code=2) |
+| traceId | entity.what.identifier.value (where role.code=21 and type.code=2) |
 | queryParameters | entity.query (where role.code=24) |
-| bundleId | entity.identifier.value (where role.code=24) |
+| bundleId | entity.what.identifier.value (where role.code=24) |
 | source | source.identifier.value |
 | purposeOfEvent | purposeOfEvent |
 
@@ -216,21 +212,24 @@ An example:
 
 <pre>
 {
-   "traceId":"nPPwpZQqDdCIHCcNXjKB",
+   "traceId":"3e6f97b77b5e495fa75690bfc302dea5",
    "issuerId":"http://organization.fut.trifork.com/fhir/Practitioner/35205",
    "organizationId":"http://organization.fut.trifork.com/fhir/Organization/10357",
-   "patientId":"http://patient.fut.trifork.com/fhir/Patient/286",
-   "time":"2019-12-04 11:01:59.601",
+   "patientIds": [
+     "https://patient.fut.trifork.com/fhir/Patient/179081/_history/53"
+   ],
+   "time":"2021-09-10T07:07:01:000540Z",
    "actionType":"R",
    "actionResource":"Patient",
    "actionOutcome":"0",
    "subtype":"_search",
    "entities":[
-      "http://patient.fut.trifork.com/fhir/Patient/286"
+      "https://patient.fut.trifork.com/fhir/Patient/179081/_history/53"
    ],
-  "purposeOfEvent": [
-    "http://ehealth.sundhed.dk/fhir/PurposeOfUse|INTERNAL_AUDIT_ONLY"
-  ]
+   "purposeOfEvent": [
+     "http://ehealth.sundhed.dk/fhir/PurposeOfUse|INTERNAL_AUDIT_ONLY"
+   ]
+   "type": "audit"
 }
 </pre>
 
