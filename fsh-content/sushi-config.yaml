@@ -20,17 +20,13 @@ publisher:
 dependencies:
   dk.fhir.ig.dk-core: current
 
-# No apparant influence of this global definition? Check eg. ehealth-careplan.instantiatesCanonical/contributor
-global:
-  Patient: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient
-  PlanDefinition: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition
-  Questionnaire: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire
-  QuestionnaireResponse: http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse
-
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/resources
     - fsh-generated/resources
+
+  path-pages:
+    - input/includes
 
   usage-stats-opt-out: true
 
