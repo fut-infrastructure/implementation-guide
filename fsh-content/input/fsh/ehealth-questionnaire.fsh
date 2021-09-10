@@ -6,6 +6,7 @@ Parent: Questionnaire
 * extension contains ehealth-revision named revision 0..1
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-questionnaire-type named type 1..*
+
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
@@ -15,6 +16,10 @@ Parent: Questionnaire
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue named questionnaire-sliderStepValue 0..1
 * item.extension contains ehealth-questionnaire-feedback named feedback 0..1
 * item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
+* item.extension contains ehealth-question-image named questionImage 0..1
+* item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
+* item.answerOption.extension contains ehealth-question-image named answerOptionimage 0..1
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
@@ -54,3 +59,50 @@ Description: "Feedback if reponse is within the defined range."
 * extension[min].valueInteger 1..1
 * extension[max].value[x] only integer
 * extension[max].valueInteger 1..1
+
+Extension: ehealth-question-image
+Title:     "Question image"
+Description: "Defines the image for a question in the questionnaire."
+* . ^short = "The image for a question"
+* extension contains
+    content 1..1 and
+    terms 0..1
+* extension[terms].value[x] only string
+* extension[content].value[x] only Reference(Binary)
+* extension[content].value[x] ^type.aggregation = #contained
+
+Extension: ehealth-answeroption-image
+Title:     "Answer option image"
+Description: "Defines the image for an answer option in the questionnaire."
+* . ^short = "The image for an answer option"
+* extension contains
+    content 1..1 and
+    terms 0..1
+* extension[terms].value[x] only string
+* extension[terms].value[x] 1..1
+* extension[content].value[x] only Reference(Binary)
+* extension[content].value[x] 1..1
+* extension[content].value[x] ^type.aggregation = #contained
+
+Extension: ehealth-questionnaire-answerSignificance
+Title:     "Answer significance"
+Description: "Defines the Answer significance for an answer option in the questionnaire."
+* . ^short = "The Answer significance for an answer"
+* extension contains
+    ehealth-answer-Condition 1..2 and
+    significance 1..1
+* extension[significance].value[x] from http://ehealth.sundhed.dk/vs/observation-codes
+* extension[significance].value[x] 1..1
+
+Extension: ehealth-answer-Condition
+Title:     "Answer condition"
+Description: "Defines the Answer condition for an answer option in the questionnaire."
+* . ^short = "An Answer condition for an answer"
+* extension contains
+    value 1..1 and
+    operator 1..1
+* extension[value].value[x] 1..1
+* extension[value].value[x] only decimal or integer or string or Coding or boolean
+* extension[operator].value[x] from http://hl7.org/fhir/questionnaire-enable-operator
+* extension[operator].value[x] 1..1
+* extension[operator].value[x] only code
