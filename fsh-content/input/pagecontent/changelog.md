@@ -3,7 +3,18 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
  
 ### General changes
-Entire eHealth Implementation Guide migrated to FHIR R4. 
+The changes described here are those beyond changes made with the FHIR R4 migration (see section Changes with FHIR R4 Migration). 
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+ 
+### Changes with FHIR R4 Migration
+Entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4. 
 
 ### Custom operations
 #### System operations
