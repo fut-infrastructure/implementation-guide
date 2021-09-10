@@ -5,13 +5,16 @@
 
 {% include fragment-pagebegin.html %}
 <div style="counter-reset: section 6" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Polish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   {% include fragment-profile-navtabs.html type='{{[type]}}' id='{{[id]}}' active='example' %}
 
   <a name="root"> </a>
   <h2 id="root">{{modelType}}: {{[title]}} - Examples</h2>
 
-{% assign basepath = page.path | replace: '-examples.html', '.html' %}
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='{{[type]}}' id='{{[id]}}' %}
+
+  {% assign basepath = page.path | replace: '-examples.html', '.html' %}
 {% if site.data.pages[basepath].examples.size > 0 %}
   <p>Examples for the {{[id]}} Profile:</p>
   <table style="grid">
@@ -29,6 +32,8 @@
   <p><b>No examples are currently available for the {{id}} profile.</b></p>
 {% endif %}
 
+  <table style="grid">
+    <tbody>
   <a name="root"> </a>
   <h2 id="root">StructureDefinition: {{[title]}} - Operation examples</h2>
     {% capture profile_id %}{{[id]}}{% endcapture %}
@@ -38,6 +43,8 @@
         <hr>
       {% endif %}
     {% endfor %}
+    </tbody>
+  </table>
 
     <!-- insert notes if present -->
 {% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
