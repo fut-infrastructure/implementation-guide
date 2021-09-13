@@ -8,12 +8,13 @@ Parent: Composition
 * subject 1..1
 * subject only Reference(Resource)
 * encounter only Reference(Encounter)
-* encounter ^type.aggregation = #referenced
+* encounter ^type.aggregation[+] = #bundled
+* encounter ^type.aggregation[+] = #contained
 * author only Reference(ehealth-practitioner or ehealth-device or ehealth-patient or ehealth-relatedperson)
 * attester.party only Reference(ehealth-patient or ehealth-practitioner or ehealth-organization)
-* attester.party ^type.aggregation = #referenced
 * custodian only Reference(ehealth-organization)
-* custodian ^type.aggregation = #referenced
+* custodian ^type.aggregation[+] = #bundled
+* custodian ^type.aggregation[+] = #contained
 * relatesTo.targetIdentifier only Identifier
 * relatesTo.targetReference only Reference(ehealth-composition)
 * event.code from ehealth-event-type-codes
@@ -24,5 +25,5 @@ Description: "Organization that authored the Composition"
 * . ^short = "Organization that authored the Composition"
 * value[x] only Reference(ehealth-organization)
 * valueReference 1..1
-* value[x] ^type.aggregation[+] = #referenced
+* value[x] ^type.aggregation[+] = #bundled
 * value[x] ^type.aggregation[+] = #contained
