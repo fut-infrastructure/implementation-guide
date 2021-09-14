@@ -1,0 +1,126 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ehealth-device-service-types",
+  "url" : "http://ehealth.sundhed.dk/cs/device-service-types",
+  "version" : "0.6.0",
+  "name" : "DeviceServiceTypes",
+  "title" : "Device service types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-09-16T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "Device service types.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "TRAINING",
+      "display" : "Training patient in use of device",
+      "definition" : "Training patient in use of device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Oplæring af patient/borger i brug af udstyr"
+        }
+      ]
+    },
+    {
+      "code" : "RE-TRAINING",
+      "display" : "Re-training a patient previously trained in using a device",
+      "definition" : "Re-training a patient previously trained in using a device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Oplæring af patient/borger tidligere oplært i brug af udstyr"
+        }
+      ]
+    },
+    {
+      "code" : "CALIBRATION",
+      "display" : "Calibration of device",
+      "definition" : "Calibration of device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Kalibrering af udstyr"
+        }
+      ]
+    },
+    {
+      "code" : "REPAIR",
+      "display" : "Off-site repair of device",
+      "definition" : "Off-site repair of device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Hjemtagelse af udstyr til reparation"
+        }
+      ]
+    },
+    {
+      "code" : "MAINTENANCE",
+      "display" : "On-site maintenance or repair of device",
+      "definition" : "On-site maintenance or repair of device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Reparation af udstyr på stedet"
+        }
+      ]
+    },
+    {
+      "code" : "REPLACE",
+      "display" : "Replacement of device",
+      "definition" : "Replacement of device",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Udskiftning af udstyr"
+        }
+      ]
+    },
+    {
+      "code" : "PICKUP",
+      "display" : "Pickup and return device after use",
+      "definition" : "Pickup and return device after use",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Afhentning af udstyr efter brug"
+        }
+      ]
+    },
+    {
+      "code" : "DELIVER",
+      "display" : "Deliver device to patient",
+      "definition" : "Deliver device to patient",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Levering til patient/borger"
+        }
+      ]
+    },
+    {
+      "code" : "INSTALL",
+      "display" : "Install and configure device on-site with patient",
+      "definition" : "Install and configure device on-site with patient",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Installation og opsætning hos patient/borger"
+        }
+      ]
+    }
+  ]
+}
