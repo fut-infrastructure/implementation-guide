@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-questionnaire-item-significance-indicator",
+  "url": "http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicatorn",
+  "version": "2021-01-13T00:00:00+00:00",
+  "name": "QuestionnaireItemSignificanceIndicator",
+  "title": "Questionnaire Item Significance Indicator",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-16T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Questionnaire Item Significance Indicator",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "green",
+      "display": "Green",
+      "definition": "Green significance indicator",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Grøn"
+        }
+      ]
+    },
+    {
+      "code": "yellow",
+      "display": "Yellow",
+      "definition": "Yellow significance indicator",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Gul"
+        }
+      ]
+    },
+    {
+      "code": "red",
+      "display": "Red",
+      "definition": "Red significance indicator",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Rød"
+        }
+      ]
+    }
+  ]
+}
