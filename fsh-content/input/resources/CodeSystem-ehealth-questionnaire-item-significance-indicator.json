@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "ehealth-questionnaire-item-significance-indicator",
-  "url": "http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicatorn",
+  "url": "http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator",
   "version": "2021-01-13T00:00:00+00:00",
   "name": "QuestionnaireItemSignificanceIndicator",
   "title": "Questionnaire Item Significance Indicator",
