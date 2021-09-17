@@ -91,5 +91,5 @@ Description: "Defines the Answer condition for an answer option in the questionn
     operator 1..1
 * extension[value].value[x] 1..1
 * extension[value].value[x] only decimal or integer or string or Coding or boolean
-* extension[operator].valueCode from http://hl7.org/fhir/questionnaire-enable-operator
+* extension[operator].valueCode from http://hl7.org/fhir/ValueSet/questionnaire-enable-operator
 
