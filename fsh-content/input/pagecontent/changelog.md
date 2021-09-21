@@ -9,9 +9,28 @@ The changes described here are those beyond changes made with the FHIR R4 migrat
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new codesystem `http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator`
+- Added new codesystem `http://hl7.org/fhir/questionnaire-item-control`
+- Added new codesystem `http://hl7.org/fhir/questionnaire-enable-operator`
+
 ### ValueSets
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/questionnaire-item-control`
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/questionnaire-item-significance-indicator`
+- Added new valueSet: `http://ehealth.sundhed.dk/vs/questionnaire-item-image-format`
+- Added new valueSet: `http://hl7.org/fhir/ValueSet/questionnaire-enable-operator`
+
+
+
 ### ConceptMaps
 ### Resource/profile changes
+
+#### Questionaire
+- Added extensions to Questionaire Item to added images to items and answer options, as well as item control, answer significance and answer conditions: 
+    - Item Image - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment
+    - Item Control - Profile http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
+    - Item AnswerSignificance  - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-answerSignificance
+    - AnswerContion - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-answer-Condition
+ 
  
 ### Changes with FHIR R4 Migration
 Entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4. 
