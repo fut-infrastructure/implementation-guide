@@ -2,7 +2,7 @@
     "resourceType": "ValueSet",
     "id": "sor-organization-specialty",
     "url": "http://ehealth.sundhed.dk/vs/sor-organization-specialty",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "SorOrganizationSpecialty",
     "title": "SorOrganizationSpecialty",
     "status": "active",

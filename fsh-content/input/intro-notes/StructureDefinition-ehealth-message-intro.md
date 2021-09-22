@@ -41,6 +41,7 @@ The following custom search parameters may be used when searching for ehealth-me
 - __period__: Use a date-type search to filter messages that must conform to temporal constraints (eg. notifications that are only valid until a specific point in time)
 - __threadId__: Specify the logical "thread id" used to correlate messages
 - __restrictionCategory__: Specify the desired restriction category using system and code (eg. "http://ehealth.sundhed.dk/cs/restriction-category" and "measurement-monitoring")
+- __episodeOfCare__: Specify the desired episodeOfCare reference (provided in extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare)
 
 # Scope and Usage
 

@@ -44,6 +44,10 @@ Entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4.
 ### Resource/profile changes
 - Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4). This extension is added to all clinical resources that previously had a context reference. The episodeOfCare reference is now mandatory in all cases.  
 
+#### Communication (ehealth-message)
+
+- Added search parameter 'episodeOfCare' for querying extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
+
 #### Appointment
 - Field 'reason' is removed in R4. Substituted with reasonCode
 - Appointment.serviceType must now be set depending on the value of meta/profile (with system "http://ehealth.sundhed.dk/cs/appointment-servicetype" for all codes):

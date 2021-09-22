@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ehealth-device-calibration-actor",
+  "url" : "http://ehealth.sundhed.dk/cs/device-calibration-actor",
+  "version" : "0.6.0",
+  "name" : "DeviceCalibrationActor",
+  "title" : "Device calibration actor",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-09-16T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "Device calibration actor.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "PATIENT",
+      "display" : "Calibrated by patient",
+      "definition" : "Calibrated by patient",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Kalibreret af patient/borger"
+        }
+      ]
+    },
+    {
+      "code" : "SSLPATIENT",
+      "display" : "Calibrated by SSL provider at patient residence",
+      "definition" : "Calibrated by SSL provider at patient residence",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Kalibreret af Service, Support og Logistik-leverandør hos patient/borger"
+        }
+      ]
+    },
+    {
+      "code" : "SSL",
+      "display" : "Calibrated by SSL at SSL supplier",
+      "definition" : "Calibrated by SSL at SSL supplier",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Kalibreret af Service, Support og Logistik-leverandør hos leverandøren"
+        }
+      ]
+    }
+  ]
+}
