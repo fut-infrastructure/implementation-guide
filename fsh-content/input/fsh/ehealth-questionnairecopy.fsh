@@ -1,5 +1,5 @@
-Profile: ehealth-questionnaire-copy
-Id: ehealth-questionnaire-copy
+Profile: ehealth-questionnairecopy
+Id: ehealth-questionnairecopy
 Parent: Questionnaire
 * extension contains ehealth-questionnaire-recommendation named recommendation 0..1
 * extension contains ehealth-questionnaire-intendedOrganization named intendedOrganization 0..*
@@ -54,4 +54,3 @@ Description: "Feedback if reponse is within the defined range."
 * extension[min].valueInteger 1..1
 * extension[max].value[x] only integer
 * extension[max].valueInteger 1..1
- 
