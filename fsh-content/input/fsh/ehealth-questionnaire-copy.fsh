@@ -54,3 +54,4 @@ Description: "Feedback if reponse is within the defined range."
 * extension[min].valueInteger 1..1
 * extension[max].value[x] only integer
 * extension[max].valueInteger 1..1
+ 
