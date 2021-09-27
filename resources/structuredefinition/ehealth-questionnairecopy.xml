@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ehealth-questionnaire-copy" />
-  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-copy" />
+  <id value="ehealth-questionnairecopy" />
+  <url value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairecopy" />
   <name value="ehealth-questionnaire-copy" />
   <title value="eHealth Questionnaire copy" />
   <status value="draft" />
