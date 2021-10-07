@@ -68,7 +68,7 @@ Description: "Defines the images in the questionnaire answers and questions."
 * extension contains
     content 1..1 and
     terms 0..1
-* extension[terms].valueString
+* extension[terms].value[x] only string
 * extension[content].valueReference(Binary)
 * extension[content].valueReference ^type.aggregation = #contained
 

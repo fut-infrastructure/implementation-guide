@@ -19,3 +19,21 @@ The feedback is pre-defined in the Questionnaire resource using the `item.feedba
 ### Recommendation
 In the `recommendation` element, a questionnaire can optionally hold a "degree of recommendation" intended to aid the Practitioner in deciding whether or not the Questionnaire should be applied to the Patient.
 
+### Images for items and answerOptions
+For each `item` and `item.answerOption` in a questionnaire an image can be applyed. The items and answerOptions with images must reference a [Binary](https://www.hl7.org/fhir/binary.html) with the base64 encoded image in `Binary.data` and the format of the image in `Binary.contentType`.
+The format and size of the `item.`[ehealth-questionnaire-image](https://docs.ehealth.sundhed.dk/latest/ig/StructureDefinition-ehealth-questionnaire-image.html) and `item.answerOption.`[ehealth-questionnaire-image](https://docs.ehealth.sundhed.dk/latest/ig/StructureDefinition-ehealth-questionnaire-image.html) is validated server side. The server side validation only accepts:
+* `Binary.contentType` codes contained in the [Questionnaire Item Image Format](https://docs.ehealth.sundhed.dk/latest/ig/ValueSet-ehealth-questionnaire-item-image-format.html) valueset.
+* `Binary.data` with size under ~150 kb.
+
+The accepted size of the `item.`[ehealth-questionnaire-image](https://docs.ehealth.sundhed.dk/latest/ig/StructureDefinition-ehealth-questionnaire-image.html) and `answerOption.`[ehealth-questionnaire-image](https://docs.ehealth.sundhed.dk/latest/ig/StructureDefinition-ehealth-questionnaire-image.html) is individually configurable server side.
+
+### AnswerSignificance
+The `item.ehealth-questionnaire-answerSignificance` element functions as a triaging indicator, describing the importance of answers relativ to others. `answerSignificance` have two subelements:
+* The `answerSignificance.significance` element which states the triaging color defined in the [Questionnaire Item Significance Indicator](https://docs.ehealth.sundhed.dk/latest/ig/ValueSet-ehealth-questionnaire-significance-indicator.html) valueset. 
+
+* The `answerSignificance.answerCondition` elements contains the value or interval limits for comparison against the given answer. 
+    * `answerCondition.value[x]` is the value to compare with an answer and holds varies type depending on the need.
+    * `answerCondition.operator` from [QuestionnaireItemOperator](http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html) determines the relation between the `answerCondition.value[x]` and a given answer, eg. the openness for an interval limit, an open interval or closed, if the `answerCondition.value[x]` should be equal to or different from an answer or to check that a written answer exists (operator = exists, `answerCondition.value[x]` = true).
+    
+### ItemControl
+The `item.questionnaire-itemControl` element enables the optional use of controls like radio buttons to items with the [FHIR-standardextension itemControl](https://www.hl7.org/fhir/r4/extension-questionnaire-itemcontrol.html). Available controls are in the [Questionnaire Item Control](https://www.hl7.org/fhir/r4/extension-questionnaire-itemcontrol.html) valueset.
