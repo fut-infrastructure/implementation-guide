@@ -37,6 +37,7 @@ The entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR
 #### Instance operations
 ### Code systems
 ### ValueSets
+- Removed ValueSet with url http://ehealth.sundhed.dk/vs/it-selfreliance as not used and defined using system SNOMED CT but non-SNOMED CT concepts.
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4). This extension is added to all clinical resources that previously had a context reference. The episodeOfCare reference is now mandatory in all cases.  
