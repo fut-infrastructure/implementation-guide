@@ -66,11 +66,9 @@ Title:     "Questionnaire image"
 Description: "Defines the images in the questionnaire answers and questions."
 * . ^short = "The image for a questionnaire"
 * extension contains
-    content 1..1 and
-    terms 0..1
-* extension[terms].value[x] only string
-* extension[content].valueReference(Binary)
-* extension[content].valueReference ^type.aggregation = #contained
+    ehealth-image-content named content 1..1 and
+    ehealth-image-terms named terms 0..1
+
 
 Extension: ehealth-questionnaire-answerSignificance
 Title:     "Answer significance"
