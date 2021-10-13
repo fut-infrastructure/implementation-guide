@@ -1,0 +1,55 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-questionnaire-view-type",
+  "url": "http://ehealth.sundhed.dk/cs/questionnaire-view-type",
+  "version": "2021-10-11T16:03:01",
+  "name": "QuestionnaireViewTypes",
+  "title": "Questionnaire View Types",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-10-11T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.208.999.9.9"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Questionnaire View Types",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "INTERPRETVIEW",
+      "display": "Interpretview display",
+      "definition": "interpretview",
+      "property": [
+        {
+          "code": "active",
+          "valueDateTime": "2020-02-27"
+        }
+      ]
+    },
+    {
+      "code": "VIEW",
+      "display": "View",
+      "definition": "View",
+      "property": [
+        {
+          "code": "active",
+          "valueDateTime": "2020-02-27"
+        }
+      ]
+    }
+  ]
+}
