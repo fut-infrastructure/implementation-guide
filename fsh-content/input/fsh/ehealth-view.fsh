@@ -89,5 +89,3 @@ Description: "The valueset matching the for-reference"
 * value[x] only Coding
 * valueCoding from http://hl7.org/fhir/resource-types
 * valueCoding 1..1
-
-
