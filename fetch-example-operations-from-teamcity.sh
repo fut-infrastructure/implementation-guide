@@ -7,7 +7,7 @@ echo "Downloading examples for operations from Systematic TeamCity and store at 
 branch=default:true #release%2F2019.6
 dir=exampleOperations
 
-read -s -p "Username: " username
+read -p "Username: " username
 echo
 read -s -p "Password: " password
 echo

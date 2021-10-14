@@ -545,18 +545,18 @@
 - profile: ehealth-practitionerrole
   path: PUT_PractitionerRole.md
 
-# ehealth-procedurerequest
-- profile: ehealth-procedurerequest
-  path: GET_ProcedureRequest.md
+# ehealth-servicerequest
+- profile: ehealth-servicerequest
+  path: GET_ServiceRequest.md
 
-- profile: ehealth-procedurerequest
-  path: GET_ProcedureRequest_version.md
+- profile: ehealth-servicerequest
+  path: GET_ServiceRequest_version.md
 
-- profile: ehealth-procedurerequest
-  path: POST_ProcedureRequest_validate.md
+- profile: ehealth-servicerequest
+  path: POST_ServiceRequest_validate.md
 
-- profile: ehealth-procedurerequest
-  path: PUT_ProcedureRequest.md
+- profile: ehealth-servicerequest
+  path: PUT_ServiceRequest.md
 
 # ehealth-provenance
 - profile: ehealth-provenance
@@ -592,6 +592,12 @@
 
 - profile: ehealth-questionnaire
   path: PUT_Questionnaire.md
+
+- profile: ehealth-questionnaire
+  path: PUT_QuestionnaireResponse.md
+
+- profile: ehealth-questionnaire
+  path: POST_QuestionnaireResponse.md
 
 # ehealth-questionnaireresponse
 - profile: ehealth-questionnaireresponse
