@@ -1,0 +1,30 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+   <id value="Binary-t-retrieve-document"/>
+   <url value="https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-t-retrieve-document"/>
+   <name value="retrieve-document"/>
+   <title value="Retrieve document"/>
+   <status value="active"/>
+   <kind value="operation"/>
+   <description value="Retrieve document"/>
+   <affectsState value="false"/>
+   <code value="retrieve-document"/>
+   <resource value="Binary"/>
+   <system value="false"/>
+   <type value="true"/>
+   <instance value="false"/>
+   <parameter>
+      <name value="url"/>
+      <use value="in"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type value="string"/>
+      <searchType value="uri"/>
+   </parameter>
+   <parameter>
+      <name value="return"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type value="Binary"/>
+   </parameter>
+</OperationDefinition>

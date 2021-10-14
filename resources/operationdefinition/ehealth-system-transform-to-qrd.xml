@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="-s-transform-to-QRD"/>
+   <url value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD"/>
    <name value="transform-to-QRD"/>
+   <title value="Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource. The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource. The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."/>
-   <idempotent value="true"/>
+   <affectsState value="false"/>
    <code value="transform-to-QRD"/>
    <system value="true"/>
    <type value="false"/>

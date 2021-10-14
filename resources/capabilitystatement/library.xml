@@ -1,42 +1,47 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="library"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-03T09:12:53+00:00"/>
+   <date value="2021-09-29T11:34:12.441+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="library"/>
-      <version value="1.6.0"/>
+      <version value="1.7.0"/>
    </software>
    <implementation>
       <description value="eHealth library service"/>
       <url value="https://library.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="Library"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
@@ -46,163 +51,189 @@
          <searchInclude value="Library:derived-from"/>
          <searchInclude value="Library:predecessor"/>
          <searchInclude value="Library:successor"/>
+         <searchRevInclude value="Library:composed-of"/>
+         <searchRevInclude value="Library:depends-on"/>
+         <searchRevInclude value="Library:derived-from"/>
+         <searchRevInclude value="Library:predecessor"/>
+         <searchRevInclude value="Library:successor"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="composed-of"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-composed-of"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-date"/>
             <type value="date"/>
             <documentation value="The library publication date"/>
          </searchParam>
          <searchParam>
             <name value="depends-on"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-derived-from"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-description"/>
             <type value="string"/>
             <documentation value="The description of the library"/>
          </searchParam>
          <searchParam>
             <name value="effective"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-effective"/>
             <type value="date"/>
             <documentation value="The time during which the library is intended to be in use"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the library"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the library"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the library"/>
          </searchParam>
          <searchParam>
             <name value="predecessor"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the library"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-status"/>
             <type value="token"/>
             <documentation value="The current status of the library"/>
          </searchParam>
          <searchParam>
             <name value="successor"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the library"/>
          </searchParam>
          <searchParam>
             <name value="topic"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-topic"/>
             <type value="token"/>
             <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the library"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-version"/>
             <type value="token"/>
             <documentation value="The business version of the library"/>
          </searchParam>
+         <operation>
+            <name value="evaluate"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-evaluate"/>
+            <documentation value="This operation evaluates parameters passed as input against the decision support rule identified by the Library resource. It returns the computed clinical decision support result and/or errors. The Library resource identifies the clinical decision rule and define its parameters.&#xa;&#xa;The operation is idempotent.&#xa;### Input&#xa;- 1..1 Parameters: HL7 FHIR [Parameters](https://www.hl7.org/fhir/stu3/parameters.html) resource containing input parameters for the clinical decision support computation.This should either be a QuestionnaireResponse or an Observation for evaluation.&#xa;&#xa;### Output&#xa;Upon success this operation returns an GuidanceResponse resource containing the decision support result."/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="Library:composed-of"/>
+         <searchRevInclude value="Library:depends-on"/>
+         <searchRevInclude value="Library:derived-from"/>
+         <searchRevInclude value="Library:predecessor"/>
+         <searchRevInclude value="Library:successor"/>
       </resource>
-      <operation>
-         <name value="evaluate"/>
-         <definition>
-            <reference value="https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-i-evaluate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-i-validate"/>
-         </definition>
-      </operation>
    </rest>
 </CapabilityStatement>

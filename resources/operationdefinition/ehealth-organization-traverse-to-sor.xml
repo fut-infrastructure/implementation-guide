@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="Organization-i-traverse-to-sor"/>
+   <url value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor"/>
    <name value="traverse-to-sor"/>
+   <title value="Traverse upforwards to the first SOR organization&#xa;Http response code 404 will be returned if no related SOR organization could be found"/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Traverse upforwards to the first SOR organization&#xa;Http response code 404 will be returned if no related SOR organization could be found"/>
-   <idempotent value="true"/>
+   <affectsState value="false"/>
    <code value="traverse-to-sor"/>
    <resource value="Organization"/>
    <system value="false"/>

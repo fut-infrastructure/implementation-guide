@@ -1,107 +1,125 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="document-query"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-01T14:42:38+00:00"/>
+   <date value="2021-09-29T11:25:32.313+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="document-query"/>
-      <version value="1.5.0"/>
+      <version value="1.6.0"/>
    </software>
    <implementation>
       <description value="eHealth document-query service"/>
       <url value="https://document-query.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="Binary"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/Binary"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+         <searchInclude value="*"/>
+         <searchRevInclude value="DocumentReference:patient"/>
+         <operation>
+            <name value="retrieve-document"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-t-retrieve-document"/>
+            <documentation value="Retrieve document"/>
+         </operation>
       </resource>
       <resource>
          <type value="DocumentReference"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"/>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchInclude value="DocumentReference:patient"/>
+         <searchRevInclude value="DocumentReference:patient"/>
          <searchParam>
             <name value="status"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-status"/>
             <type value="token"/>
             <documentation value="current | superseded"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-category"/>
             <type value="token"/>
             <documentation value="Categorization of document"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-date"/>
             <type value="date"/>
             <documentation value="Document creation time"/>
          </searchParam>
          <searchParam>
             <name value="event"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-event"/>
             <type value="token"/>
             <documentation value="Main clinical acts documented"/>
          </searchParam>
          <searchParam>
             <name value="facility"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-facility"/>
             <type value="token"/>
             <documentation value="Kind of facility where patient was seen"/>
          </searchParam>
          <searchParam>
             <name value="format"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-format"/>
             <type value="token"/>
             <documentation value="Format/content rules for the document"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-patient"/>
             <type value="reference"/>
             <documentation value="Who/what is the subject of the document"/>
          </searchParam>
          <searchParam>
             <name value="patient-identifier"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-patient-identifier"/>
             <type value="token"/>
             <documentation value="Who/what is the subject of the document (identifier)"/>
          </searchParam>
          <searchParam>
             <name value="period"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-period"/>
             <type value="date"/>
             <documentation value="Time of service that is being documented"/>
          </searchParam>
          <searchParam>
             <name value="setting"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-setting"/>
             <type value="token"/>
             <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://document-query.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-type"/>
             <type value="token"/>
             <documentation value="Kind of document (LOINC if possible)"/>
          </searchParam>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="DocumentReference:patient"/>
       </resource>
-      <operation>
-         <name value="retrieve-document"/>
-         <definition>
-            <reference value="https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary--retrieve-document"/>
-         </definition>
-      </operation>
    </rest>
 </CapabilityStatement>

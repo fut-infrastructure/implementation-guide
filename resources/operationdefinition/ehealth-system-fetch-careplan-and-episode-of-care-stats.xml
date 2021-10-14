@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="-s-fetch-careplan-and-episode-of-care-stats"/>
+   <url value="https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-and-episode-of-care-stats"/>
    <name value="fetch-careplan-and-episode-of-care-stats"/>
+   <title value="### Report Contents&#xa;This report contains a count of active EpisodeOfCare and CarePlans.&#xa;### Grouping &#xa;This report is grouped by ConditionCode. Each group is returned in a separate JSon file.&#xa;### Parameters&#xa;- organization: Filter on EpisodeOfCare.managingOrganization match&#xa;- period: Filter on CarePlan.period overlap&#xa;&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.&#xa;### Example output&#xa;The ConditionCode is a Fhir CodeableConcept. See the implementation guide for details&#xa;&#xa;    {&#xa;        'ConditionCode': {&#xa;            'valueCodeableConcept': {&#xa;                'coding': [{&#xa;                        'system': 'urn:oid:1.2.208.176.2.4',&#xa;                        'code': 'DJ44'&#xa;                    }&#xa;                ]&#xa;            }&#xa;        },&#xa;        'ConditionSummary': {&#xa;            'activeEpisodeOfCareCount': 1,&#xa;            'activeCarePlanCount': 1&#xa;        }&#xa;    }"/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="### Report Contents&#xa;This report contains a count of active EpisodeOfCare and CarePlans.&#xa;### Grouping &#xa;This report is grouped by ConditionCode. Each group is returned in a separate JSon file.&#xa;### Parameters&#xa;- organization: Filter on EpisodeOfCare.managingOrganization match&#xa;- period: Filter on CarePlan.period overlap&#xa;&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.&#xa;### Example output&#xa;The ConditionCode is a Fhir CodeableConcept. See the implementation guide for details&#xa;&#xa;    {&#xa;        'ConditionCode': {&#xa;            'valueCodeableConcept': {&#xa;                'coding': [{&#xa;                        'system': 'urn:oid:1.2.208.176.2.4',&#xa;                        'code': 'DJ44'&#xa;                    }&#xa;                ]&#xa;            }&#xa;        },&#xa;        'ConditionSummary': {&#xa;            'activeEpisodeOfCareCount': 1,&#xa;            'activeCarePlanCount': 1&#xa;        }&#xa;    }"/>
-   <idempotent value="false"/>
+   <affectsState value="true"/>
    <code value="fetch-careplan-and-episode-of-care-stats"/>
    <system value="true"/>
    <type value="false"/>
@@ -14,6 +16,7 @@
       <use value="in"/>
       <min value="1"/>
       <max value="1"/>
+      <documentation value="anonymization"/>
       <type value="string"/>
    </parameter>
    <parameter>

@@ -15,7 +15,7 @@ function fetch_operation_definitions {
 	for service in $services; do
 		file="$IG_PATH/resources/capabilitystatement/${service}.xml"
 		#Ignore namespace declaration as xmllint can not handle it
-		find_values_command="sed  's|xmlns=\"http://hl7.org/fhir\"||' $IG_PATH/resources/capabilitystatement/${service}.xml | xmllint --xpath \"//operation[name/@value!='validate']/definition/reference/@value\" -"
+		find_values_command="sed  's|xmlns=\"http://hl7.org/fhir\"||' $IG_PATH/resources/capabilitystatement/${service}.xml | xmllint --xpath \"//operation[name/@value!='validate']/definition/@value\" -"
 		#pipe_commands explained: " | <remove the ' value=' string> | <remove quotes>"
 		pipe_commands=" | sed 's|value=||g' | sed 's/\"//g'"
 		operations=$(eval ${find_values_command}${pipe_commands})

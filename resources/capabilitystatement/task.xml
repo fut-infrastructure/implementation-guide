@@ -1,196 +1,269 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="task"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-05T05:53:35+00:00"/>
+   <date value="2021-10-12T09:01:02.570+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="task"/>
-      <version value="1.6.0"/>
+      <version value="1.7.0"/>
    </software>
    <implementation>
       <description value="eHealth task service"/>
       <url value="https://task.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="ClinicalImpression"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
          <conditionalCreate value="true"/>
          <searchInclude value="ClinicalImpression:previous"/>
+         <searchRevInclude value="ClinicalImpression:action"/>
+         <searchRevInclude value="ClinicalImpression:assessor"/>
+         <searchRevInclude value="ClinicalImpression:carePlan"/>
+         <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
+         <searchRevInclude value="ClinicalImpression:finding-ref"/>
+         <searchRevInclude value="ClinicalImpression:investigation"/>
+         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
+         <searchRevInclude value="ClinicalImpression:patient"/>
+         <searchRevInclude value="ClinicalImpression:previous"/>
+         <searchRevInclude value="ClinicalImpression:problem"/>
+         <searchRevInclude value="ClinicalImpression:subject"/>
+         <searchRevInclude value="Task:based-on"/>
+         <searchRevInclude value="Task:episodeOfCare"/>
+         <searchRevInclude value="Task:focus"/>
+         <searchRevInclude value="Task:organization"/>
+         <searchRevInclude value="Task:owner"/>
+         <searchRevInclude value="Task:part-of"/>
+         <searchRevInclude value="Task:patient"/>
+         <searchRevInclude value="Task:requester"/>
+         <searchRevInclude value="Task:responsible"/>
+         <searchRevInclude value="Task:subject"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="action"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-action"/>
             <type value="reference"/>
             <documentation value="Action taken as part of assessment procedure"/>
          </searchParam>
          <searchParam>
             <name value="assessor"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-assessor"/>
             <type value="reference"/>
             <documentation value="The clinician performing the assessment"/>
          </searchParam>
          <searchParam>
             <name value="carePlan"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-carePlan"/>
             <type value="reference"/>
             <documentation value="CarePlan"/>
          </searchParam>
          <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or Episode created from"/>
-         </searchParam>
-         <searchParam>
             <name value="date"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-date"/>
             <type value="date"/>
             <documentation value="When the assessment was documented"/>
          </searchParam>
          <searchParam>
             <name value="decision"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-decision"/>
             <type value="token"/>
             <documentation value="Decision"/>
          </searchParam>
          <searchParam>
+            <name value="episodeOfCare"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-episodeOfCare"/>
+            <type value="reference"/>
+            <documentation value="Encounter or Episode created from"/>
+         </searchParam>
+         <searchParam>
             <name value="finding-code"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-finding-code"/>
             <type value="token"/>
             <documentation value="What was found"/>
          </searchParam>
          <searchParam>
             <name value="finding-ref"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-finding-ref"/>
             <type value="reference"/>
             <documentation value="What was found"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-identifier"/>
             <type value="token"/>
             <documentation value="Business identifier"/>
          </searchParam>
          <searchParam>
             <name value="investigation"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-investigation"/>
             <type value="reference"/>
             <documentation value="Record of a specific investigation"/>
          </searchParam>
          <searchParam>
             <name value="mediaInvestigationItem"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-mediaInvestigationItem"/>
             <type value="reference"/>
             <documentation value="Media investigation item"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-patient"/>
             <type value="reference"/>
             <documentation value="Patient or group assessed"/>
          </searchParam>
          <searchParam>
             <name value="previous"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-previous"/>
             <type value="reference"/>
             <documentation value="Reference to last assessment"/>
          </searchParam>
          <searchParam>
             <name value="problem"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-problem"/>
             <type value="reference"/>
             <documentation value="Relevant impressions of patient state"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-status"/>
             <type value="token"/>
             <documentation value="draft | completed | entered-in-error"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-subject"/>
             <type value="reference"/>
             <documentation value="Patient or group assessed"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="ClinicalImpression:action"/>
+         <searchRevInclude value="ClinicalImpression:assessor"/>
+         <searchRevInclude value="ClinicalImpression:carePlan"/>
+         <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
+         <searchRevInclude value="ClinicalImpression:finding-ref"/>
+         <searchRevInclude value="ClinicalImpression:investigation"/>
+         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
+         <searchRevInclude value="ClinicalImpression:patient"/>
+         <searchRevInclude value="ClinicalImpression:previous"/>
+         <searchRevInclude value="ClinicalImpression:problem"/>
+         <searchRevInclude value="ClinicalImpression:subject"/>
+         <searchRevInclude value="Task:based-on"/>
+         <searchRevInclude value="Task:episodeOfCare"/>
+         <searchRevInclude value="Task:focus"/>
+         <searchRevInclude value="Task:organization"/>
+         <searchRevInclude value="Task:owner"/>
+         <searchRevInclude value="Task:part-of"/>
+         <searchRevInclude value="Task:patient"/>
+         <searchRevInclude value="Task:requester"/>
+         <searchRevInclude value="Task:responsible"/>
+         <searchRevInclude value="Task:subject"/>
       </resource>
       <resource>
          <type value="Task"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
@@ -199,190 +272,223 @@
          <searchInclude value="Task:based-on"/>
          <searchInclude value="Task:focus"/>
          <searchInclude value="Task:part-of"/>
+         <searchRevInclude value="ClinicalImpression:action"/>
+         <searchRevInclude value="ClinicalImpression:assessor"/>
+         <searchRevInclude value="ClinicalImpression:carePlan"/>
+         <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
+         <searchRevInclude value="ClinicalImpression:finding-ref"/>
+         <searchRevInclude value="ClinicalImpression:investigation"/>
+         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
+         <searchRevInclude value="ClinicalImpression:patient"/>
+         <searchRevInclude value="ClinicalImpression:previous"/>
+         <searchRevInclude value="ClinicalImpression:problem"/>
+         <searchRevInclude value="ClinicalImpression:subject"/>
+         <searchRevInclude value="Task:based-on"/>
+         <searchRevInclude value="Task:episodeOfCare"/>
+         <searchRevInclude value="Task:focus"/>
+         <searchRevInclude value="Task:organization"/>
+         <searchRevInclude value="Task:owner"/>
+         <searchRevInclude value="Task:part-of"/>
+         <searchRevInclude value="Task:patient"/>
+         <searchRevInclude value="Task:requester"/>
+         <searchRevInclude value="Task:responsible"/>
+         <searchRevInclude value="Task:subject"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="authored-on"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-authored-on"/>
             <type value="date"/>
             <documentation value="Search by creation date"/>
          </searchParam>
          <searchParam>
             <name value="based-on"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-based-on"/>
             <type value="reference"/>
             <documentation value="Search by requests this task is based on"/>
          </searchParam>
          <searchParam>
             <name value="business-status"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-business-status"/>
             <type value="token"/>
             <documentation value="Search by business status"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-category"/>
             <type value="token"/>
             <documentation value="Search by category"/>
          </searchParam>
          <searchParam>
             <name value="code"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-code"/>
             <type value="token"/>
             <documentation value="Search by task code"/>
          </searchParam>
          <searchParam>
-            <name value="context"/>
+            <name value="episodeOfCare"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-episodeOfCare"/>
             <type value="reference"/>
             <documentation value="Search by encounter or episode"/>
          </searchParam>
          <searchParam>
             <name value="focus"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-focus"/>
             <type value="reference"/>
             <documentation value="Search by task focus"/>
          </searchParam>
          <searchParam>
             <name value="group-identifier"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-group-identifier"/>
             <type value="token"/>
             <documentation value="Search by group identifier"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-identifier"/>
             <type value="token"/>
             <documentation value="Search for a task instance by its business identifier"/>
          </searchParam>
          <searchParam>
             <name value="intent"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-intent"/>
             <type value="token"/>
             <documentation value="Search by task intent"/>
          </searchParam>
          <searchParam>
             <name value="modified"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-modified"/>
             <type value="date"/>
             <documentation value="Search by last modification date"/>
          </searchParam>
          <searchParam>
             <name value="organization"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-organization"/>
             <type value="reference"/>
             <documentation value="Search by responsible organization"/>
          </searchParam>
          <searchParam>
             <name value="owner"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-owner"/>
             <type value="reference"/>
             <documentation value="Search by task owner"/>
          </searchParam>
          <searchParam>
             <name value="part-of"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-part-of"/>
             <type value="reference"/>
             <documentation value="Search by task this task is part of"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-patient"/>
             <type value="reference"/>
             <documentation value="Search by patient"/>
          </searchParam>
          <searchParam>
             <name value="performer"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-performer"/>
             <type value="token"/>
             <documentation value="Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."/>
          </searchParam>
          <searchParam>
             <name value="period"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-period"/>
             <type value="date"/>
             <documentation value="Search by period Task is/was underway"/>
          </searchParam>
          <searchParam>
             <name value="priority"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-priority"/>
             <type value="token"/>
             <documentation value="Search by task priority"/>
          </searchParam>
          <searchParam>
             <name value="requester"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-requester"/>
             <type value="reference"/>
             <documentation value="Search by task requester"/>
          </searchParam>
          <searchParam>
             <name value="responsible"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-responsible"/>
             <type value="reference"/>
             <documentation value="Search by responsible"/>
          </searchParam>
          <searchParam>
             <name value="restriction-category"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-restriction-category"/>
             <type value="token"/>
             <documentation value="Search by restriction category"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-status"/>
             <type value="token"/>
             <documentation value="Search by task status"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-subject"/>
             <type value="reference"/>
             <documentation value="Search by subject"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"/>
+         </operation>
       </resource>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpression-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/Task-i-validate"/>
-         </definition>
-      </operation>
    </rest>
 </CapabilityStatement>
