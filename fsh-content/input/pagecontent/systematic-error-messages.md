@@ -1,3 +1,32 @@
+### Error messages 
+
+The following list contains the error messages that are defined for the eHealth Infrastructure. The error messages are grouped by profile and follows the pattern `<PROFILENAME>_<OPERATION>_<ERROR>`. The pattern is used to determine which operation can result in the specific error. Note that general errors follows the pattern `GENERAL_<ERROR>`.
+
+If a requests result in an error, the error message can be obtained from the `diagnostics` element for the specific entry in the returned `issue` list:
+
+```
+{
+    "resourceType": "OperationOutcome",
+    ...
+    "issue": [
+        {
+            "severity": "error",
+            "code": "processing",
+            "diagnostics": "Update is only allowed for PlanDefinition with status: DRAFT or ACTIVE."
+        }
+    ]
+}
+```
+
+#### General errors
+
+- `GENERAL_RESOURCE_NOT_FOUND`: Resource %s with id %s is not found.
+
+- `GENERAL_SUBJECT_AND_CONTEXT_NOT_PROVIDED`: At least one of subject and context must be provided.
+
+- `GENERAL_VALIDATION_ERROR`: Validation error: %s
+
+- `GENERAL_EXPORT_FAILED`: Export resource has failed.
 
 #### ehealth-activitydefinition
 
@@ -43,11 +72,11 @@
 
 #### ehealth-communicationrequest
 
-- `COMMUNICATIONREQUEST_CONTEXT_NOT_MATCHING_PROCEDUREREQUEST`: The context for the CommunicationRequest: %s does not match the context of the referenced ProcedureRequest: %s
+- `COMMUNICATIONREQUEST_CONTEXT_NOT_MATCHING_SERVICEREQUEST`: The context for the CommunicationRequest: %s does not match the context of the referenced ServiceRequest: %s
 
 - `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_RECIPIENT`: Patient recipient: %s does not match the subject: %s
 
-- `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_PROCEDUREREQUEST`: The subject for the CommunicationRequest: %s does not match the subject of the referenced ProcedureRequest: %s
+- `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_SERVICEREQUEST`: The subject for the CommunicationRequest: %s does not match the subject of the referenced ServiceRequest: %s
 
 - `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Excactly one recipient search parameter required
 
@@ -115,7 +144,7 @@
 
 - `LIBRARY_EVALUATE_NO_RULE_DEFINED`: Library with id %s do not contain a rule to use for evaluation.
 
-- `LIBRARY_EVALUATE_NO_CAREPLAN_REFERENCING_PROVIDED_PROCEDUREQUEST`: CarePlan with reference to ProcedureRequest with id %s is not found.
+- `LIBRARY_EVALUATE_NO_CAREPLAN_REFERENCING_PROVIDED_PROCEDUREQUEST`: CarePlan with reference to ServiceRequest with id %s is not found.
 
 - `LIBRARY_EVALUATE_RULE_SYNTAX_ERRORS`: Syntax for rule is invalid. %s
 
@@ -153,7 +182,7 @@
 
 - `MEASUREMENT_SEARCHMEASUREMENT_REFERENCED_RESOURCE_NOT_FOUND`: Referenced resource not found: %s
 
-- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_OBSERVATION_CODE`: Observation.code does not match the code of the referenced ProcedureRequest with id %s.
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_OBSERVATION_CODE`: Observation.code does not match the code of the referenced ServiceRequest with id %s.
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INVALID_QUESTIONNAIRE_REFERENCE`: Questionnaire reference with id %s is unexpected. Expected questionnaire reference to match questionnaire reference of related ActivityDefinition with id %s.
 
@@ -256,6 +285,12 @@
 - `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_STATUS`: Update is not allowed for questionnaires with %s status to different than %s status
 
 - `QUESTIONNAIRE_NOT_ALLOWED_TO_DELETE_WITH_STATUS`: Delete only possible for questionnaires with status: %s
+
+- `QUESTIONNAIRE_IMAGE_FORMAT_VALIDATION_MESSAGE`: 
+%s Image in questionnaire item with linkID %s and Binary contentType %s does not match any code in ValueSet: %s
+
+- `QUESTIONNAIRE_IMAGE_SIZE_VALIDATION_MESSAGE`: 
+%s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
 
 #### ehealth-reporting
 

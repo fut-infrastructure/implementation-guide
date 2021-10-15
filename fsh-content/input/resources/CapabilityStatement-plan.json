@@ -1,0 +1,597 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "plan",
+  "name": "RestServer",
+  "status": "active",
+  "date": "2021-10-07T03:04:37.472+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "plan",
+    "version": "1.8.0"
+  },
+  "implementation": {
+    "description": "eHealth plan service",
+    "url": "https://plan.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "ActivityDefinition",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:predecessor", "ActivityDefinition:successor" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "composed-of",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-composed-of",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "date",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-date",
+        "type": "date",
+        "documentation": "The activity definition publication date"
+      }, {
+        "name": "depends-on",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-depends-on",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "derived-from",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-derived-from",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "description",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-description",
+        "type": "string",
+        "documentation": "The description of the activity definition"
+      }, {
+        "name": "effective",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-effective",
+        "type": "date",
+        "documentation": "The time during which the activity definition is intended to be in use"
+      }, {
+        "name": "identifier",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-identifier",
+        "type": "token",
+        "documentation": "External identifier for the activity definition"
+      }, {
+        "name": "intendedAudience",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-intendedAudience",
+        "type": "reference",
+        "documentation": "The intended audience of the plan definition"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the activity definition"
+      }, {
+        "name": "modifier_role_reference",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-modifier_role_reference",
+        "type": "reference",
+        "documentation": "Reference to either Organization, CareTeam, Practitioner"
+      }, {
+        "name": "modifier_role_role",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-modifier_role_role",
+        "type": "token",
+        "documentation": "Role of Organization, CareTeam, Practitioner"
+      }, {
+        "name": "name",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the activity definition"
+      }, {
+        "name": "predecessor",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-predecessor",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "publisher",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the activity definition"
+      }, {
+        "name": "recommendation",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-recommendation",
+        "type": "token",
+        "documentation": "Recommendation for the plan definition"
+      }, {
+        "name": "status",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-status",
+        "type": "token",
+        "documentation": "The current status of the activity definition"
+      }, {
+        "name": "successor",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-successor",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "title",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the activity definition"
+      }, {
+        "name": "topic",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-topic",
+        "type": "token",
+        "documentation": "Topics associated with the module"
+      }, {
+        "name": "url",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the activity definition"
+      }, {
+        "name": "version",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-version",
+        "type": "token",
+        "documentation": "The business version of the activity definition"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "DocumentReference",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchInclude": [ "DocumentReference:encounter", "DocumentReference:related-ref", "DocumentReference:relatesto" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "authenticator",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-authenticator",
+        "type": "reference",
+        "documentation": "Who/what authenticated the document"
+      }, {
+        "name": "author",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-author",
+        "type": "reference",
+        "documentation": "Who and/or what authored the document"
+      }, {
+        "name": "class",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-class",
+        "type": "token",
+        "documentation": "Categorization of document"
+      }, {
+        "name": "created",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-created",
+        "type": "date",
+        "documentation": "Document creation time"
+      }, {
+        "name": "custodian",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-custodian",
+        "type": "reference",
+        "documentation": "Organization which maintains the document"
+      }, {
+        "name": "description",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-description",
+        "type": "string",
+        "documentation": "Human-readable description (title)"
+      }, {
+        "name": "encounter",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-encounter",
+        "type": "reference",
+        "documentation": "Context of the document  content"
+      }, {
+        "name": "event",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-event",
+        "type": "token",
+        "documentation": "Main clinical acts documented"
+      }, {
+        "name": "facility",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-facility",
+        "type": "token",
+        "documentation": "Kind of facility where patient was seen"
+      }, {
+        "name": "format",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-format",
+        "type": "token",
+        "documentation": "Format/content rules for the document"
+      }, {
+        "name": "identifier",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-identifier",
+        "type": "token",
+        "documentation": "Master Version Specific Identifier"
+      }, {
+        "name": "indexed",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-indexed",
+        "type": "date",
+        "documentation": "When this document reference was created"
+      }, {
+        "name": "language",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-language",
+        "type": "token",
+        "documentation": "Human language of the content (BCP-47)"
+      }, {
+        "name": "location",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-location",
+        "type": "uri",
+        "documentation": "Uri where the data can be found"
+      }, {
+        "name": "patient",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-patient",
+        "type": "reference",
+        "documentation": "Who/what is the subject of the document"
+      }, {
+        "name": "period",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-period",
+        "type": "date",
+        "documentation": "Time of service that is being documented"
+      }, {
+        "name": "related-id",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-id",
+        "type": "token",
+        "documentation": "Identifier of related objects or events"
+      }, {
+        "name": "related-ref",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-ref",
+        "type": "reference",
+        "documentation": "Related Resource"
+      }, {
+        "name": "relatesto",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relatesto",
+        "type": "reference",
+        "documentation": "Target of the relationship"
+      }, {
+        "name": "relation",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relation",
+        "type": "token",
+        "documentation": "replaces | transforms | signs | appends"
+      }, {
+        "name": "relationship",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relationship",
+        "type": "composite",
+        "documentation": "Combination of relation and relatesTo"
+      }, {
+        "name": "securitylabel",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-securitylabel",
+        "type": "token",
+        "documentation": "Document security-tags"
+      }, {
+        "name": "setting",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-setting",
+        "type": "token",
+        "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
+      }, {
+        "name": "status",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-status",
+        "type": "token",
+        "documentation": "current | superseded | entered-in-error"
+      }, {
+        "name": "subject",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-subject",
+        "type": "reference",
+        "documentation": "Who/what is the subject of the document"
+      }, {
+        "name": "type",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-type",
+        "type": "token",
+        "documentation": "Kind of document (LOINC if possible)"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ]
+    }, {
+      "type": "PlanDefinition",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchInclude": [ "*", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "composed-of",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-composed-of",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "date",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-date",
+        "type": "date",
+        "documentation": "The plan definition publication date"
+      }, {
+        "name": "definition",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-definition",
+        "type": "reference",
+        "documentation": "Activity or plan definitions used by plan definition"
+      }, {
+        "name": "depends-on",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-depends-on",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "derived-from",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-derived-from",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "description",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-description",
+        "type": "string",
+        "documentation": "The description of the plan definition"
+      }, {
+        "name": "documentation",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-documentation",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "effective",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-effective",
+        "type": "date",
+        "documentation": "The time during which the plan definition is intended to be in use"
+      }, {
+        "name": "identifier",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-identifier",
+        "type": "token",
+        "documentation": "External identifier for the plan definition"
+      }, {
+        "name": "intendedAudience",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-intendedAudience",
+        "type": "reference",
+        "documentation": "The intended audience of the plan definition"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the plan definition"
+      }, {
+        "name": "modifier_role_reference",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-modifier_role_reference",
+        "type": "reference",
+        "documentation": "Reference to either Organization, CareTeam, Practitioner"
+      }, {
+        "name": "modifier_role_role",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-modifier_role_role",
+        "type": "token",
+        "documentation": "Role of Organization, CareTeam, Practitioner"
+      }, {
+        "name": "name",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the plan definition"
+      }, {
+        "name": "predecessor",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-predecessor",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "publisher",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the plan definition"
+      }, {
+        "name": "recommendation",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-recommendation",
+        "type": "token",
+        "documentation": "Recommendation for the plan definition"
+      }, {
+        "name": "status",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-status",
+        "type": "token",
+        "documentation": "The current status of the plan definition"
+      }, {
+        "name": "successor",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-successor",
+        "type": "reference",
+        "documentation": "What resource is being referenced"
+      }, {
+        "name": "title",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the plan definition"
+      }, {
+        "name": "topic",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-topic",
+        "type": "token",
+        "documentation": "Topics associated with the module"
+      }, {
+        "name": "url",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the plan definition"
+      }, {
+        "name": "version",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-version",
+        "type": "token",
+        "documentation": "The business version of the plan definition"
+      } ],
+      "operation": [ {
+        "name": "apply",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply",
+        "documentation": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."
+      }, {
+        "name": "export",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export",
+        "documentation": "Export a PlanDefinition.\n### Export Contents\nThe export contains the PlanDefinition including referenced resources:- PlanDefinitions\n- ActivityDefinitions\n- Questionnaires\n- Libraries\n- Organizations\n\nEach resource is returned in a separate JSon file.\n### Parameters\n- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.\nAll returned objects are Fhir resources. See the implementation guide for details"
+      }, {
+        "name": "import",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-t-import",
+        "documentation": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Libraries and Organizations are used to find the corresponding resources on the target system."
+      }, {
+        "name": "validate",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    } ]
+  } ]
+}

@@ -1,0 +1,358 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "device",
+  "name": "RestServer",
+  "status": "active",
+  "date": "2021-10-12T10:27:44.909+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "device",
+    "version": "1.8.0"
+  },
+  "implementation": {
+    "description": "eHealth device service",
+    "url": "https://device.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "Device",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "device-name",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-device-name",
+        "type": "string",
+        "documentation": "A server defined search that may match any of the string fields in the Device.udi.name  or Device.type.coding.display or  Device.type.text"
+      }, {
+        "name": "identifier",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-identifier",
+        "type": "token",
+        "documentation": "Instance id from manufacturer, owner, and others"
+      }, {
+        "name": "location",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-location",
+        "type": "reference",
+        "documentation": "A location, where the resource is found"
+      }, {
+        "name": "manufacturer",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-manufacturer",
+        "type": "string",
+        "documentation": "The manufacturer of the device"
+      }, {
+        "name": "model",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-model",
+        "type": "string",
+        "documentation": "The model of the device"
+      }, {
+        "name": "organization",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-organization",
+        "type": "reference",
+        "documentation": "The organization responsible for the device"
+      }, {
+        "name": "patient",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-patient",
+        "type": "reference",
+        "documentation": "Patient information, if the resource is affixed to a person"
+      }, {
+        "name": "status",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-status",
+        "type": "token",
+        "documentation": "active | inactive | entered-in-error | unknown"
+      }, {
+        "name": "type",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-type",
+        "type": "token",
+        "documentation": "The type of the device"
+      }, {
+        "name": "udi-carrier",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-udi-carrier",
+        "type": "string",
+        "documentation": "UDI Barcode (RFID or other technology) string either in HRF format or AIDC format converted to base64 string."
+      }, {
+        "name": "udi-di",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-udi-di",
+        "type": "string",
+        "documentation": "The udi Device Identifier (DI)"
+      }, {
+        "name": "url",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-url",
+        "type": "uri",
+        "documentation": "Network address to contact device"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"
+      } ]
+    }, {
+      "type": "DeviceMetric",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "single",
+      "searchInclude": [ "DeviceMetric:source" ],
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "category",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-category",
+        "type": "token",
+        "documentation": "The category of the metric"
+      }, {
+        "name": "identifier",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-identifier",
+        "type": "token",
+        "documentation": "The identifier of the metric"
+      }, {
+        "name": "parent",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-parent",
+        "type": "reference",
+        "documentation": "The parent DeviceMetric resource"
+      }, {
+        "name": "qualityCategory",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-qualityCategory",
+        "type": "token",
+        "documentation": "The device metric quality"
+      }, {
+        "name": "source",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-source",
+        "type": "reference",
+        "documentation": "The device resource"
+      }, {
+        "name": "type",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-type",
+        "type": "token",
+        "documentation": "The component type"
+      } ]
+    }, {
+      "type": "DeviceUseStatement",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchInclude": [ "DeviceUseStatement:device" ],
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "context",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-context",
+        "type": "reference",
+        "documentation": "Search by context"
+      }, {
+        "name": "device",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-device",
+        "type": "reference",
+        "documentation": "Search by device"
+      }, {
+        "name": "identifier",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-identifier",
+        "type": "token",
+        "documentation": "Search by identifier"
+      }, {
+        "name": "patient",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-patient",
+        "type": "reference",
+        "documentation": "Search by subject - a patient"
+      }, {
+        "name": "status",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-status",
+        "type": "token",
+        "documentation": "active | completed | entered-in-error +"
+      }, {
+        "name": "subject",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-subject",
+        "type": "reference",
+        "documentation": "Search by subject"
+      }, {
+        "name": "timing",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-timing",
+        "type": "date",
+        "documentation": "Period device was used"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
+    } ]
+  } ]
+}

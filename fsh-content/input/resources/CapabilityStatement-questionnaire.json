@@ -1,0 +1,367 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "questionnaire",
+  "name": "RestServer",
+  "status": "active",
+  "date": "2021-09-29T11:27:43.868+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "questionnaire",
+    "version": "1.9.0"
+  },
+  "implementation": {
+    "description": "eHealth questionnaire service",
+    "url": "https://questionnaire.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Questionnaire:reference", "StructureDefinition:valueset" ]
+    }, {
+      "type": "Questionnaire",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "code",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-code",
+        "type": "token",
+        "documentation": "A code that corresponds to one of its items in the questionnaire"
+      }, {
+        "name": "date",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-date",
+        "type": "date",
+        "documentation": "The questionnaire publication date"
+      }, {
+        "name": "description",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-description",
+        "type": "string",
+        "documentation": "The description of the questionnaire"
+      }, {
+        "name": "effective",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-effective",
+        "type": "date",
+        "documentation": "The time during which the questionnaire is intended to be in use"
+      }, {
+        "name": "identifier",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-identifier",
+        "type": "token",
+        "documentation": "External identifier for the questionnaire"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the questionnaire"
+      }, {
+        "name": "name",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the questionnaire"
+      }, {
+        "name": "publisher",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the questionnaire"
+      }, {
+        "name": "reference",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-reference",
+        "type": "reference",
+        "documentation": "Modifier reference"
+      }, {
+        "name": "role",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-role",
+        "type": "token",
+        "documentation": "Modifier role"
+      }, {
+        "name": "status",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-status",
+        "type": "token",
+        "documentation": "The current status of the questionnaire"
+      }, {
+        "name": "title",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the questionnaire"
+      }, {
+        "name": "type",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-type",
+        "type": "token",
+        "documentation": "Questionnaire type"
+      }, {
+        "name": "url",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the questionnaire"
+      }, {
+        "name": "version",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/Questionnaire-version",
+        "type": "token",
+        "documentation": "The business version of the questionnaire"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireStructureDefinition-it-validate"
+      } ]
+    }, {
+      "type": "StructureDefinition",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "single",
+      "searchInclude": [ "*", "StructureDefinition:valueset" ],
+      "searchRevInclude": [ "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "abstract",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-abstract",
+        "type": "token",
+        "documentation": "Whether the structure is abstract"
+      }, {
+        "name": "base",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-base",
+        "type": "uri",
+        "documentation": "Definition that this type is constrained/specialized from"
+      }, {
+        "name": "base-path",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-base-path",
+        "type": "token",
+        "documentation": "Path that identifies the base element"
+      }, {
+        "name": "context-type",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-context-type",
+        "type": "token",
+        "documentation": "resource | datatype | extension"
+      }, {
+        "name": "date",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-date",
+        "type": "date",
+        "documentation": "The structure definition publication date"
+      }, {
+        "name": "derivation",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-derivation",
+        "type": "token",
+        "documentation": "specialization | constraint - How relates to base definition"
+      }, {
+        "name": "description",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-description",
+        "type": "string",
+        "documentation": "The description of the structure definition"
+      }, {
+        "name": "experimental",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-experimental",
+        "type": "token",
+        "documentation": "For testing purposes, not real usage"
+      }, {
+        "name": "ext-context",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-ext-context",
+        "type": "string",
+        "documentation": "Where the extension can be used in instances"
+      }, {
+        "name": "identifier",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-identifier",
+        "type": "token",
+        "documentation": "External identifier for the structure definition"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the structure definition"
+      }, {
+        "name": "keyword",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-keyword",
+        "type": "token",
+        "documentation": "A code for the profile"
+      }, {
+        "name": "kind",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-kind",
+        "type": "token",
+        "documentation": "primitive-type | complex-type | resource | logical"
+      }, {
+        "name": "name",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the structure definition"
+      }, {
+        "name": "path",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-path",
+        "type": "token",
+        "documentation": "A path that is constrained in the profile"
+      }, {
+        "name": "publisher",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the structure definition"
+      }, {
+        "name": "status",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-status",
+        "type": "token",
+        "documentation": "The current status of the structure definition"
+      }, {
+        "name": "title",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the structure definition"
+      }, {
+        "name": "type",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-type",
+        "type": "token",
+        "documentation": "Type defined or constrained by this structure"
+      }, {
+        "name": "url",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the structure definition"
+      }, {
+        "name": "valueset",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-valueset",
+        "type": "reference",
+        "documentation": "A vocabulary binding reference"
+      }, {
+        "name": "version",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-version",
+        "type": "token",
+        "documentation": "The business version of the structure definition"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/QuestionnaireStructureDefinition-it-validate"
+      } ]
+    } ]
+  } ]
+}

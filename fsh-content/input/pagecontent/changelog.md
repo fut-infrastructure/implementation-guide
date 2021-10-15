@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2021.3 (2021-10-28)
  
 ### General changes
 The changes described here are those beyond changes made with the FHIR R4 migration (see section Changes with FHIR R4 Migration). 

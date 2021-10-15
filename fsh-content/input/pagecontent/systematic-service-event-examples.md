@@ -1,4 +1,3 @@
-
 #### ActivityDefinition created example
 
 ```
@@ -1624,7 +1623,7 @@ Message body:
   "messageType": "EHealthContextEvent",
   "messageVersion": "1.0",
   "eventType": "created",
-  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/79457",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/79457",
   "resourceVersion": "1",
   "context": "measurement-missing"
 }
@@ -1640,7 +1639,7 @@ messageType = EHealthContextEvent
 x-frame-options = SAMEORIGIN
 destination = topic://ehealth-procedurerequest.measurement-missing
 patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/17174
-resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/16802
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/16802
 pragma = no-cache
 resourceProfile = ehealth-procedurerequest
 context = measurement-missing
@@ -2217,7 +2216,7 @@ messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
 }
 
 ```
-#### Plandefinition Info-material added example (with identifier)
+#### Plandefinition Info-material added example (with document url)
 
 ```
 Message body:
@@ -2225,16 +2224,16 @@ Message body:
   "messageType": "EHealthReferenceEvent",
   "messageVersion": "1.0",
   "eventType": "reference_added",
-  "resourceReference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/208",
+  "resourceReference": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/15",
   "resourceVersion": "2",
   "resourceElement": "relatedArtifact.resource",
   "references": [
-    "[urn:ietf:rfc:3986]urn:uuid:482cc8c6-afab-11ea-b3de-0242ac130004"
+    "https://ssl-catalogue.ehealth.sundhed.dk/v1/package/694e363e-88c3-458a-95b1-d3bf4978de81"
   ]
 }
 Message properties:
 {
-date = Thu, 25 Jun 2020 12:35:29 GMT
+date = Wed, 11 Aug 2021 11:17:49 GMT
 server = istio-envoy
 expires = Thu, 01 Jan 1970 00:00:00 GMT
 x-envoy-upstream-service-time = 1
@@ -2244,12 +2243,12 @@ messageType = EHealthReferenceEvent
 x-frame-options = SAMEORIGIN
 destination = topic://ehealth-plandefinition.relatedArtifact.resource
 resourceelement = relatedArtifact.resource
-resourceReference = https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/208
+resourceReference = https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/15
 pragma = no-cache
 resourceProfile = ehealth-plandefinition
 content-type = text/plain; charset=ISO-8859-1
 eventType = reference_added
-id = ID:plan-86cd6d5dc9-cxvrz-46523-1593087908930-1:4:24:2:1
+id = ID:plan-7f8769cd75-224sk-33239-1628678387583-1:10:8:2:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
 }
@@ -2421,39 +2420,6 @@ messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 
 ```
-#### ProcedureRequest created example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "created",
-  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/1478",
-  "resourceVersion": "1"
-}
-Message properties:
-{
-date = Fri, 14 Feb 2020 14:43:08 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 1
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ehealth-procedurerequest
-patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/5508
-resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ProcedureRequest/526
-pragma = no-cache
-resourceProfile = ehealth-procedurerequest
-content-type = text/plain; charset=ISO-8859-1
-eventType = created
-id = ID:careplan-9bb97fb69-wtthx-45155-1581690908132-1:6:632:3:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
 #### Questionnaire created example
 
 ```
@@ -2549,6 +2515,39 @@ resourceProfile = ehealth-questionnaire
 content-type = text/plain; charset=ISO-8859-1
 eventType = updated
 id = ID:questionnaire-5d947cfc79-vnd6l-36679-1581689998946-1:6:32:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### ServiceRequest created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/1478",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 14:43:08 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 1
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-procedurerequest
+patientReference = https://patient.local.ehealth.sundhed.dk/fhir/Patient/5508
+resourceReference = https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/526
+pragma = no-cache
+resourceProfile = ehealth-procedurerequest
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:careplan-9bb97fb69-wtthx-45155-1581690908132-1:6:632:3:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
