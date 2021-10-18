@@ -590,12 +590,6 @@
 - profile: ehealth-questionnaire
   path: PUT_Questionnaire.md
 
-- profile: ehealth-questionnaire
-  path: PUT_QuestionnaireResponse.md
-
-- profile: ehealth-questionnaire
-  path: POST_QuestionnaireResponse.md
-
 # ehealth-questionnaireresponse
 - profile: ehealth-questionnaireresponse
   path: GET_QuestionnaireResponse.md
@@ -608,6 +602,12 @@
 
 - profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse_validate.md
+
+- profile: ehealth-questionnaire
+  path: PUT_QuestionnaireResponse.md
+
+- profile: ehealth-questionnaire
+  path: POST_QuestionnaireResponse.md
 
 # ehealth-definedquestion
 - profile: ehealth-definedquestion
