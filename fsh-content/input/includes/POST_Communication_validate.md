@@ -1,11 +1,11 @@
-`POST [base]/Communication/191/$validate`
+`POST [base]/Communication/145/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjlmNWI4YmQtZTczYS00NDdmLWFiMjAtYmM0OTE0Y2Q5OTdjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWI1YWNiZTAtZDg2Ni00MWM5LTk4YTUtNGRjZjJkMmVkNDM2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,15 +19,21 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Communication",
-        "id": "191",
+        "id": "145",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-04-20T07:19:54.711+00:00",
+          "lastUpdated": "2021-09-29T14:03:52.394+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
         },
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference": {
+              "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/91702"
+            }
+          },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
             "valueCodeableConcept": {
@@ -52,15 +58,15 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/59703"
+          "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/8899"
         },
-        "topic": [
-          {
-            "reference": "https://measurement.cit-measurement-1229.local/fhir/Observation/190"
-          }
-        ],
-        "context": {
-          "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/83891"
+        "topic": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
+              "code": "report-labs"
+            }
+          ]
         }
       }
     }

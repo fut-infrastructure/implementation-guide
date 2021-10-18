@@ -2,10 +2,11 @@
 projects="Careplan Device DocumentQuery DocumentTransformation Library Measurement Organization Plan Questionnaire Reporting Task"
 
 IG_PATH=$(pwd)
-echo "Downloading examples for operations from Systematic TeamCity and store at ${IG_PATH}"
 
 branch=default:true #release%2F2019.6
-dir=exampleOperations
+dir=fsh-content/input/resources/includes
+
+echo "Downloading examples for operations from Systematic TeamCity and store at ${IG_PATH}/${dir}"
 
 read -p "Username: " username
 echo

@@ -6,8 +6,10 @@ source "${REPOPATH}/login-utility.sh"
 services="careplan device document-query document-transformation library measurement organization plan questionnaire reporting task"
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
 
+dir=fsh-content/input/pagecontent
+
 IG_PATH=$(pwd)
-echo "Fetching operation definitions from ${SOURCE_ENVIRONMENT} to ${IG_PATH}"
+echo "Fetching operation definitions from ${SOURCE_ENVIRONMENT} to ${IG_PATH}/${dir}"
 
 function fetch_operation_definitions {
   login
@@ -30,7 +32,7 @@ function fetch_operation_definitions {
 				filename=${filename/--/-} #remove -
 				filename=${filename,,} #to lower case
 				echo "Fetching ${operation} and store as ${filename}"
-				curl -k -H "Content-Type: application/fhir+xml" -H "${AUTHORIZATION}" -o ${IG_PATH}/resources/operationdefinition/${filename} ${operation}
+				curl -k -H "Content-Type: application/fhir+xml" -H "${AUTHORIZATION}" -o ${IG_PATH}/${dir}/${filename} ${operation}
 			else
 				echo "Unable to find ${operation} - status code: ${status_code}"
 				exit 1
