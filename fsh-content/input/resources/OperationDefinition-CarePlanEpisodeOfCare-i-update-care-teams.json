@@ -1,0 +1,41 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "CarePlanEpisodeOfCare-i-update-care-teams",
+  "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
+  "name": "update-care-teams",
+  "title": "Modify the care team assignment of the care plan and all of its sub plans.",
+  "status": "active",
+  "kind": "operation",
+  "description": "Modify the care team assignment of the care plan and all of its sub plans.",
+  "affectsState": true,
+  "code": "update-care-teams",
+  "resource": [ "CarePlan", "EpisodeOfCare" ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [ {
+    "name": "addCareTeams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "removeCareTeams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "addCareteams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "removeCareteams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  } ]
+}

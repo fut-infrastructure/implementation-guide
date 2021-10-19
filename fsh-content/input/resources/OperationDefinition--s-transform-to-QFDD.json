@@ -1,1 +1,28 @@
-{"resourceType":"OperationDefinition","id":"-s-transform-to-QFDD","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>transform-to-QFDD</h2><p>OPERATION: transform-to-QFDD</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-QFDD</pre><div><p>Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.</p>\n</div><p>URL: [base]/$transform-to-QFDD</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>bundle</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/bundle.html\">Bundle</a></td><td/><td/></tr><tr><td>OUT</td><td>documentReference</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/documentreference.html\">DocumentReference</a></td><td/><td/></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-QFDD","name":"transform-to-QFDD","status":"active","kind":"operation","date":"2021-05-06T08:31:20+00:00","description":"Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.","idempotent":true,"code":"transform-to-QFDD","system":true,"type":false,"instance":false,"parameter":[{"name":"bundle","use":"in","min":0,"max":"1","type":"Bundle"},{"name":"documentReference","use":"out","min":0,"max":"1","type":"DocumentReference"}]}
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-transform-to-QFDD",
+  "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD",
+  "name": "transform-to-QFDD",
+  "title": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.",
+  "status": "active",
+  "kind": "operation",
+  "description": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.",
+  "affectsState": false,
+  "code": "transform-to-QFDD",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "bundle",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  }, {
+    "name": "documentReference",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "DocumentReference"
+  } ]
+}
