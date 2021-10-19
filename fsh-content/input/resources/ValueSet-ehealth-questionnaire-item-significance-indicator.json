@@ -24,39 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator",
-        "concept": [
-          {
-            "code": "green",
-            "display": "Green",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Grøn"
-              }
-            ]
-          },
-          {
-            "code": "yellow",
-            "display": "Yellow",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Gul"
-              }
-            ]
-          },
-          {
-            "code": "red",
-            "display": "Red",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Rød"
-              }
-            ]
-          }
-        ]
+        "system": "http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator"
       }
     ]
   }

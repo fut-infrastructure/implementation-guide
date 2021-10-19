@@ -34,6 +34,26 @@
               "value" : "PNG billedformat"
             }
           ]
+        },
+        {
+          "code" : "image/jpeg",
+          "display" : "JPEG image format",
+          "designation" : [
+            {
+              "language" : "da",
+              "value" : "JPEG billedformat"
+            }
+          ]
+        },
+        {
+          "code" : "image/svg+xml",
+          "display" : "SVG og XML format",
+          "designation" : [
+            {
+              "language" : "da",
+              "value" : "SVG og XML format"
+            }
+          ]
         }
       ]
     }]
