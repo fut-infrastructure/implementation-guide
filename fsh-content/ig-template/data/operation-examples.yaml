@@ -603,10 +603,10 @@
 - profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse_validate.md
 
-- profile: ehealth-questionnaire
+- profile: ehealth-questionnaireresponse
   path: PUT_QuestionnaireResponse.md
 
-- profile: ehealth-questionnaire
+- profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse.md
 
 # ehealth-definedquestion
@@ -634,6 +634,7 @@
   path: POST_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
+  path: PUT_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
   path: PATCH_RelatedPerson_1.md
