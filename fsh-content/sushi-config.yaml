@@ -64,18 +64,18 @@ menu:
     Service event messages: service-event-tables.html
   Error Messsages: error-messages.html
   Capability Statements:
-      CarePlan service: CapabilityStatement-careplan.html
-      Device service: CapabilityStatement-device.html
-      DocumentQuery service: CapabilityStatement-document-query.html
-      DocumentTransformation service: CapabilityStatement-document-transformation.html
-      Library service: CapabilityStatement-library.html
-      Measurement service: CapabilityStatement-measurement.html
-      Organization service: CapabilityStatement-organization.html
-      Patient service:  CapabilityStatement-patient.html
-      Plan service: CapabilityStatement-plan.html
-      Questionnaire service: CapabilityStatement-questionnaire.html
-      Reporting service: CapabilityStatement-reporting.html
-      Task service: CapabilityStatement-task.html
-      Terminology service: CapabilityStatement-terminology.html
+    CarePlan service: CapabilityStatement-careplan.html
+    Device service: CapabilityStatement-device.html
+    DocumentQuery service: CapabilityStatement-document-query.html
+    DocumentTransformation service: CapabilityStatement-document-transformation.html
+    Library service: CapabilityStatement-library.html
+    Measurement service: CapabilityStatement-measurement.html
+    Organization service: CapabilityStatement-organization.html
+    Patient service:  CapabilityStatement-patient.html
+    Plan service: CapabilityStatement-plan.html
+    Questionnaire service: CapabilityStatement-questionnaire.html
+    Reporting service: CapabilityStatement-reporting.html
+    Task service: CapabilityStatement-task.html
+    Terminology service: CapabilityStatement-terminology.html
   #Capability Statements: capability-statements.html
   Downloads: downloads.html
