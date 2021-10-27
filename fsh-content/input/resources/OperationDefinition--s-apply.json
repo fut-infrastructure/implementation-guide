@@ -3,7 +3,7 @@
   "id": "-s-apply",
   "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply",
   "name": "apply",
-  "title": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
+  "title": "Create a careplan",
   "status": "active",
   "kind": "operation",
   "description": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.",

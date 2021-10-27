@@ -3,7 +3,7 @@
   "id": "CarePlanEpisodeOfCare-i-update-care-teams",
   "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
   "name": "update-care-teams",
-  "title": "Modify the care team assignment of the care plan and all of its sub plans.",
+  "title": "Update careteams",
   "status": "active",
   "kind": "operation",
   "description": "Modify the care team assignment of the care plan and all of its sub plans.",

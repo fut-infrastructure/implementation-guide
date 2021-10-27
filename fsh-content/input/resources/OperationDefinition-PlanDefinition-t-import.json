@@ -3,7 +3,7 @@
   "id": "PlanDefinition-t-import",
   "url": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-t-import",
   "name": "import",
-  "title": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Libraries and Organizations are used to find the corresponding resources on the target system.\n",
+  "title": "Import a Plandefinition",
   "status": "active",
   "kind": "operation",
   "description": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Libraries and Organizations are used to find the corresponding resources on the target system.\n",

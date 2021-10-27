@@ -3,7 +3,7 @@
   "id": "Organization-i-traverse-to-sor",
   "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
   "name": "traverse-to-sor",
-  "title": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found",
+  "name": "Traverse to SOR",
   "status": "active",
   "kind": "operation",
   "description": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found",

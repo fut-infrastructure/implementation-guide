@@ -3,7 +3,7 @@
   "id": "-s-transform-to-QFDD",
   "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD",
   "name": "transform-to-QFDD",
-  "title": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.",
+  "title": "Transform to QFDD",
   "status": "active",
   "kind": "operation",
   "description": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document.",

@@ -3,7 +3,7 @@
   "id": "-s-import-organizations",
   "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations",
   "name": "import-organizations",
-  "title": "Import a bundle containing at least one organization tree.",
+  "title": "Import organizations",
   "status": "active",
   "kind": "operation",
   "description": "Import a bundle containing at least one organization tree.",
