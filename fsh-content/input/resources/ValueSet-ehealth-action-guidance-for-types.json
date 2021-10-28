@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-action-guidance-for-types",
+  "url": "http://ehealth.sundhed.dk/vs/action-guidance-for-types",
+  "version": "0.6.0",
+  "name": "ActionGuidanceForTypes",
+  "title": "Action guidance For Types",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-10-20T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Action guidance for types",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/resource-types"
+      }
+    ]
+  }
+}

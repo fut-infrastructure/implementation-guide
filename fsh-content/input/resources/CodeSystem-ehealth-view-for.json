@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-view-for-type",
+  "url": "http://ehealth.sundhed.dk/cs/view-for-type",
+  "version": "0.6.0",
+  "name": "ViewType",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-10-15T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "View types",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "INTERPRETVIEW",
+      "display": "Interpretview display",
+      "definition": "interpretview",
+      "property": [
+        {
+          "code": "InterpredView",
+          "valueDateTime": "2021-10-14"
+        }
+      ]
+    },
+    {
+      "code": "ACTIONGUIDE",
+      "display": "Acton guide display",
+      "definition": "Action guide",
+      "property": [
+        {
+          "code": "ActionGuide",
+          "valueDateTime": "2021-10-14"
+        }
+      ]
+    }
+  ]
+}

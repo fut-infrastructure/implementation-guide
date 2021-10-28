@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-view-type",
+  "url": "http://ehealth.sundhed.dk/vs/view-type",
+  "version": "0.6.0",
+  "name": "ViewType",
+  "title": "View Type",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-10-14T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "View Types",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/view-type"
+      }
+    ]
+  }
+}
