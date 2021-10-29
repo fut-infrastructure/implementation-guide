@@ -19,6 +19,7 @@ publisher:
 
 dependencies:
   dk.fhir.ig.dk-core: current
+  hl7.fhir.uv.sdc: current
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
