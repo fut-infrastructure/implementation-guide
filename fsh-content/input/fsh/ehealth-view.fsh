@@ -17,23 +17,23 @@ Parent: Basic
 
 
 Extension: ehealth-view-content
-Title:     "ehealth view content"
-Description: "ehealth view content"
+Title:     "Ehealth view content"
+Description: "The view content"
 * . ^short = "View content"
 * value[x] only base64Binary
 
 
 Extension: ehealth-view-status
-Title:     "ehealth view type status"
-Description: "ehealth view type status"
-* . ^short = "View type status"
+Title:     "Ehealth view type status"
+Description: "The current status of the view"
+* . ^short = "The current status of the view"
 * value[x] only Coding
 * valueCoding from http://hl7.org/fhir/ValueSet/publication-status
 * valueCoding 1..1
 
 
 Extension: ehealth-view-title
-Title:     "ehealth view title"
+Title:     "Ehealth view title"
 Description: "Name for this view (human friendly)"
 * . ^short = "Name for this view (human friendly)"
 * value[x] only string
@@ -41,37 +41,37 @@ Description: "Name for this view (human friendly)"
 
 
 Extension: ehealth-view-description
-Title:     "ehealth view description"
+Title:     "Ehealth view description"
 Description: "Natural language description of the view"
 * . ^short = "Natural language description of the view"
 * value[x] only markdown
 
 
 Extension: ehealth-view-purpose
-Title:     "ehealth view purpose"
+Title:     "Ehealth view purpose"
 Description: "Why this plan definition is defined"
 * . ^short = "Why this plan definition is defined"
 * value[x] only markdown
 
 
 Extension: ehealth-view-version
-Title:     "ehealth view version"
-Description: "Business version of the view"
+Title:     "Ehealth view version"
+Description: "The current version of the view"
 * . ^short = "View version"
 * value[x] only string
 * valueString 1..1
 
 
 Extension: ehealth-view-useContext
-Title:     "ehealth view useContext"
+Title:     "Ehealth view useContext"
 Description: "The context that the content is intended to support"
 * . ^short = "The context that the content is intended to support"
 * value[x] only UsageContext
 
 
 Extension: ehealth-view-type
-Title:     "ehealth view type"
-Description: "ehealth view type"
+Title:     "Ehealth view type"
+Description: "Ehealth view type"
 * . ^short = "View type"
 * value[x] only Coding
 * valueCoding from ehealth-view-type
@@ -79,15 +79,17 @@ Description: "ehealth view type"
 
 
 Extension: ehealth-view-for
-Title:     "ehealth action guidance test"
+Title:     "Ehealth action guidance test"
 Description: "The valueset matching the action guidance test"
 * . ^short = "The valueset matching the action guidance test"
 * extension contains
     forType 1..1 and
     forReference 1..1
+//* extension[forReference].value[x] only Reference
+* extension[forReference].valueReference 1..1
+* extension[forReference]. ^short = "What resource is this a view for"
 //* extension[forType].value[x] only Coding
 * extension[forType].valueCoding from ehealth-view-for-type
 * extension[forType].valueCoding 1..1
-//* extension[forReference].value[x] only Reference
-* extension[forReference].valueReference 1..1
+* extension[forType]. ^short = "In type is stated what this is a reference to"
 

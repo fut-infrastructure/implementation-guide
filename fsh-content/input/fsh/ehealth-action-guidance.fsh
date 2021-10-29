@@ -17,77 +17,79 @@ Parent: Basic
 
 
 Extension: ehealth-action-guidance-title
-Title:     "ehealth action guidance title"
+Title:     "Ehealth action guidance title"
 Description: "Name for this action guidance (human friendly)"
-* . ^short = "action guidance title"
+* . ^short = "Name for this action guidance (human friendly)"
 * value[x] only string
 * valueString 1..1
 
 
 Extension: ehealth-action-guidance-content
-Title:     "ehealth action guidance content"
-Description: "ehealth action guidance content"
-* . ^short = "ehealth action guidance content"
+Title:     "Ehealth action guidance content"
+Description: "The action guidance content"
+* . ^short = "The action guidance content"
 * value[x] only base64Binary
 
 
 Extension: ehealth-action-guidance-status
-Title:     "ehealth action guidance type status"
-Description: "ehealth action guidance type status"
-* . ^short = "ehealth action guidance type status"
+Title:     "Ehealth action guidance type status"
+Description: "The current status of the action guidance"
+* . ^short = "The current status of the action guidance"
 * value[x] only Coding
 * valueCoding from http://hl7.org/fhir/ValueSet/publication-status
 * valueCoding 1..1
 
 
 Extension: ehealth-action-guidance-description
-Title:     "ehealth action-guidance description"
+Title:     "Ehealth action-guidance description"
 Description: "Natural language description of the action guidance"
 * . ^short = "Natural language description of the action guidance"
 * value[x] only markdown
 
 
 Extension: ehealth-action-guidance-purpose
-Title:     "ehealth action guidance purpose"
+Title:     "Ehealth action guidance purpose"
 Description: "Why this plan definition is defined"
 * . ^short = "Why this plan definition is defined"
 * value[x] only markdown
 
 
 Extension: ehealth-action-guidance-version
-Title:     "ehealth action guidance version"
+Title:     "Ehealth action guidance version"
 Description: "Business version of the action guidance"
-* . ^short = "Business version of the action guidance"
+* . ^short = "The current version of the action guidance"
 * value[x] only string
 * valueString 1..1
 
 
 Extension: ehealth-action-guidance-useContext
-Title:     "ehealth action-guidance useContext"
+Title:     "Ehealth action-guidance useContext"
 Description: "The context that the content is intended to support"
 * . ^short = "The context that the content is intended to support"
 * value[x] only UsageContext
 
 
 Extension: ehealth-action-guidance-type
-Title:     "ehealth action guidance type"
-Description: "ehealth action guidance type"
-* . ^short = "Action guidance type"
+Title:     "Ehealth action guidance type"
+Description: "The action guidance type"
+* . ^short = "The action guidance type"
 * value[x] only Coding
 * valueCoding from ehealth-action-guidance-types
 * valueCoding 1..1
 
 
 Extension: ehealth-action-guidance-for
-Title:     "ehealth action guidance for"
+Title:     "Ehealth action guidance for"
 Description: "Action guidance for"
 * . ^short = "Action guidance for"
 * extension contains
     forType 1..1 and
     forReference 1..1
-* extension[forType].value[x] only Coding
+//* extension[forReference].value[x] only Reference
+* extension[forReference].valueReference 1..1
+* extension[forReference]. ^short = "What resource is this an action guide for"
+//* extension[forType].value[x] only Coding
 * extension[forType].valueCoding from ehealth-action-guidance-for-types
 * extension[forType].valueCoding 1..1
-* extension[forReference].value[x] only Reference
-* extension[forReference].valueReference 1..1
+* extension[forType]. ^short = "In type is stated what this is a reference to"
 
