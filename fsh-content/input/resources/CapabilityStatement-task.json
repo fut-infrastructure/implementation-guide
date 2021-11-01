@@ -1,9 +1,9 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "task",
-  "name": "RestServer",
+  "name": "task",
   "status": "active",
-  "date": "2021-10-12T09:01:02.570+00:00",
+  "date": "2021-10-31T19:24:36.151+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {

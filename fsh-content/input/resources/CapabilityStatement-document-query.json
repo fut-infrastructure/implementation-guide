@@ -1,9 +1,9 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "document-query",
-  "name": "RestServer",
+  "name": "document-query",
   "status": "active",
-  "date": "2021-09-29T11:25:32.313+00:00",
+  "date": "2021-10-22T09:21:42.457+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {

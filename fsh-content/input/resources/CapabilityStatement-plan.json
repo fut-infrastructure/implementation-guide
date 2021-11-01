@@ -1,14 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "plan",
-  "name": "RestServer",
+  "name": "plan",
   "status": "active",
-  "date": "2021-10-07T03:04:37.472+00:00",
+  "date": "2021-10-30T03:07:24.854+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "1.8.0"
+    "version": "1.8.1"
   },
   "implementation": {
     "description": "eHealth plan service",

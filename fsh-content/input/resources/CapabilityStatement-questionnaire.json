@@ -1,14 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "questionnaire",
-  "name": "RestServer",
+  "name": "questionnaire",
   "status": "active",
-  "date": "2021-09-29T11:27:43.868+00:00",
+  "date": "2021-10-30T03:07:21.222+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "1.9.0"
+    "version": "1.10.0"
   },
   "implementation": {
     "description": "eHealth questionnaire service",
@@ -28,7 +28,7 @@
       "searchRevInclude": [ "Questionnaire:reference", "StructureDefinition:valueset" ]
     }, {
       "type": "Questionnaire",
-      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
       "interaction": [ {
         "code": "create"
       }, {

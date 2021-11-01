@@ -1,14 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "reporting",
-  "name": "RestServer",
+  "name": "reporting",
   "status": "active",
-  "date": "2021-10-12T09:00:58.940+00:00",
+  "date": "2021-10-29T03:05:43.574+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "reporting",
-    "version": "1.6.0"
+    "version": "1.6.1"
   },
   "implementation": {
     "description": "eHealth reporting service",
