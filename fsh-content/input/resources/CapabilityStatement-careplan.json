@@ -1,9 +1,9 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "careplan",
-  "name": "RestServer",
+  "name": "careplan",
   "status": "active",
-  "date": "2021-10-07T18:07:20.924+00:00",
+  "date": "2021-10-26T18:54:19.010+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
