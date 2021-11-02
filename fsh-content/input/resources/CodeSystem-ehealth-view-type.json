@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ehealth-view-for-type",
-  "url": "http://ehealth.sundhed.dk/cs/view-for-type",
+  "id": "ehealth-view-type",
+  "url": "http://ehealth.sundhed.dk/cs/view-type",
   "version": "0.6.0",
   "name": "ViewType",
   "status": "active",
@@ -35,7 +35,7 @@
     },
     {
       "code": "ACTIONGUIDE",
-      "display": "Acton guide display",
+      "display": "Action guide display",
       "definition": "Action guide",
       "property": [
         {

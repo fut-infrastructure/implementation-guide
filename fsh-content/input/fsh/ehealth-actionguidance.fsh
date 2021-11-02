@@ -85,10 +85,8 @@ Description: "Action guidance for"
 * extension contains
     forType 1..1 and
     forReference 1..1
-//* extension[forReference].value[x] only Reference
 * extension[forReference].valueReference 1..1
 * extension[forReference]. ^short = "What resource is this an action guide for"
-//* extension[forType].value[x] only Coding
 * extension[forType].valueCoding from ehealth-action-guidance-for-types
 * extension[forType].valueCoding 1..1
 * extension[forType]. ^short = "In type is stated what this is a reference to"
