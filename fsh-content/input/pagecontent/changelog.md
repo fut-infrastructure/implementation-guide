@@ -1,22 +1,5 @@
 This is the log of changes made to the eHealth Implementation Guide.
-## Unreleased
 
-### General changes
-
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-#### QuestionnaireAdvance
-- QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
-  - calculatedExpression - http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
-  - UsageMode - http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode
-  - OrdinalValue - http://hl7.org/fhir/StructureDefinition/ordinalValue
-  - Variable - http://hl7.org/fhir/StructureDefinition/variable
-  
 ## 2021.3 (2021-10-28)
  
 ### General changes
