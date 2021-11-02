@@ -1,5 +1,5 @@
-Profile: ehealth-action-guidance
-Id: ehealth-action-guidance
+Profile: ehealth-actionguidance
+Id: ehealth-actionguidance
 Parent: Basic
 * ^status = #active
 * extension contains ehealth-recommendation named recommendation 0..1
