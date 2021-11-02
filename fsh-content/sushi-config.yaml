@@ -7,10 +7,10 @@ canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
 status: draft
-version: 2021.3.0
+version: 0.7.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
-releaseLabel: build
+releaseLabel: ci-build
 description: The Danish eHealth Infrastructure Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications.
 
 publisher:
