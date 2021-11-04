@@ -88,6 +88,17 @@
           "value": "Resultat af beslutningsstøtte"
         }
       ]
+    },
+    {
+      "code": "approved-view",
+      "display": "Approved View",
+      "definition": "Approved View",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Godkendt visning"
+        }
+      ]
     }
   ]
 }

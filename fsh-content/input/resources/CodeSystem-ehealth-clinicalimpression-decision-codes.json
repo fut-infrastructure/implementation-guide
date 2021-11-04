@@ -44,6 +44,17 @@
           "value": "Godkendt til dokumentdeling"
         }
       ]
+    },
+    {
+      "code": "citizen-view-approved",
+      "display": "Approved Citizen View",
+      "definition": "Approved Citizen View",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Godkendt Borger Visning"
+        }
+      ]
     }
   ]
 }
