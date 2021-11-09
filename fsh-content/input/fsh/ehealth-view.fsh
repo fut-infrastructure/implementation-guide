@@ -17,7 +17,7 @@ Parent: Basic
 
 
 Extension: ehealth-view-type
-Title:     "Type"
+Title:     "View type"
 Description: "Ehealth view type"
 * . ^short = "View type"
 * value[x] only Coding
