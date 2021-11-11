@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "View Types",
+  "description": "View types",
   "compose": {
     "include": [
       {

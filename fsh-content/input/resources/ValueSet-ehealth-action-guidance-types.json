@@ -4,7 +4,7 @@
   "url": "http://ehealth.sundhed.dk/vs/action-guidance-types",
   "version": "0.6.0",
   "name": "ActionGuidanceTypes",
-  "title": "Action guidance Types",
+  "title": "Action guidance types",
   "status": "active",
   "experimental": true,
   "date": "2021-10-14T00:00:00+00:00",
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Action guidance Types",
+  "description": "Action guidance types",
   "compose": {
     "include": [
       {
