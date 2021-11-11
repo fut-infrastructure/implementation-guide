@@ -23,23 +23,12 @@
   "content": "complete",
   "concept": [
     {
-      "code": "INTERPRETVIEW",
-      "display": "Interpretview display",
-      "definition": "interpretview",
+      "code": "INTERPREDVIEW",
+      "display": "Interpredview display",
+      "definition": "InterpredView",
       "property": [
         {
           "code": "InterpredView",
-          "valueDateTime": "2021-10-14"
-        }
-      ]
-    },
-    {
-      "code": "ACTIONGUIDE",
-      "display": "Action guide display",
-      "definition": "Action guide",
-      "property": [
-        {
-          "code": "ActionGuide",
           "valueDateTime": "2021-10-14"
         }
       ]

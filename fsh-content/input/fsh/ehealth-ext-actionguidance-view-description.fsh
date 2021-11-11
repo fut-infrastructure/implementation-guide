@@ -1,5 +1,5 @@
 Extension: ehealth-description
 Title:     "Description"
-Description: "Natural language description of the action guidance"
-* . ^short = "Natural language description of the action guidance"
+Description: "Natural language description"
+* . ^short = "Natural language description"
 * value[x] only markdown

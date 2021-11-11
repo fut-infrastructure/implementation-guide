@@ -23,17 +23,6 @@
   "content": "complete",
   "concept": [
     {
-      "code": "INTERPRETVIEW",
-      "display": "Interpretview display",
-      "definition": "interpretview",
-      "property": [
-        {
-          "code": "InterpredView",
-          "valueDateTime": "2021-10-14"
-        }
-      ]
-    },
-    {
       "code": "ACTIONGUIDE",
       "display": "Acton guide display",
       "definition": "Action guide",
