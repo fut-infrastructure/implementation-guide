@@ -1,11 +1,11 @@
-`GET [base]/QuestionnaireResponse/522/_history/1`
+`GET [base]/QuestionnaireResponse/494/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTNmZTZjNzctNWY3YS00MjdlLWJmY2ItYTkyMThjNGU4NGRhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTkwMWJjZTAtNTc1Yy00MGM3LWFhMGYtZTE4NTI0ZjYzZjNlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,20 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "522",
+  "id": "494",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-20T07:22:45.105+00:00",
+    "lastUpdated": "2021-09-29T14:07:20.913+00:00",
+    "source": "#c4db43cd-aa1f-40",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/88119"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
       "extension": [
         {
-          "url": "procedureRequestVersionId",
+          "url": "serviceRequestVersionId",
           "valueId": "42"
         },
         {
@@ -47,22 +54,17 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1229.local/fhir/ProcedureRequest/78330"
+      "reference": "https://careplan.cit-measurement-1363.local/fhir/ServiceRequest/81746"
     }
   ],
-  "questionnaire": {
-    "reference": "https://questionnaire.cit-measurement-1229.local/fhir/Questionnaire/98584"
-  },
+  "questionnaire": "https://questionnaire.cit-measurement-1363.local/fhir/Questionnaire/58450",
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/16297"
+    "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/71455"
   },
-  "context": {
-    "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/99093"
-  },
-  "authored": "2021-04-20T07:22:45+00:00",
+  "authored": "2021-09-29T14:07:20+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/58692"
+    "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/41685"
   }
 }
 ```

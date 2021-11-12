@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE3MTYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvODExNTYiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnBhdGNoIiwiQ29uZGl0aW9uLnJlYWQiLCJDb25kaXRpb24uY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvOTMyNiIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24ucmVhZCIsIkNvbmRpdGlvbi5jcmVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,7 +19,14 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
     ]
   },
-  "clinicalStatus": "active",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
   "code": {
     "coding": [
       {
@@ -29,7 +36,7 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/41199"
+    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/32535"
   }
 }
 ```
@@ -38,15 +45,22 @@ __Response__
 ```json
 {
   "resourceType": "Condition",
-  "id": "1981",
+  "id": "1469",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-05-04T09:58:36.255+00:00",
+    "lastUpdated": "2021-10-13T08:45:08.186+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
     ]
   },
-  "clinicalStatus": "active",
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active"
+      }
+    ]
+  },
   "code": {
     "coding": [
       {
@@ -56,7 +70,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/41199"
+    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/32535"
   }
 }
 ```

@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="PlanDefinition-i-apply"/>
+   <url value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
    <name value="apply"/>
+   <title value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."/>
-   <idempotent value="false"/>
+   <affectsState value="true"/>
    <code value="apply"/>
    <resource value="PlanDefinition"/>
    <system value="false"/>

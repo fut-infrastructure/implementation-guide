@@ -1,6 +1,24 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+#### QuestionnaireAdvance
+- QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
+  - calculatedExpression - http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
+  - UsageMode - http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode
+  - OrdinalValue - http://hl7.org/fhir/StructureDefinition/ordinalValue
+  - Variable - http://hl7.org/fhir/StructureDefinition/variable
+  
+## 2021.3 (2021-10-28)
  
 ### General changes
 The changes described here are those beyond changes made with the FHIR R4 migration (see section Changes with FHIR R4 Migration). 
@@ -9,29 +27,45 @@ The changes described here are those beyond changes made with the FHIR R4 migrat
 #### System operations
 #### Instance operations
 ### Code systems
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator`
+
 ### ValueSets
+- Added ValueSet `http://ehealth.sundhed.dk/vs/questionnaire-item-control`
+- Added ValueSet `http://ehealth.sundhed.dk/vs/questionnaire-item-significance-indicator`
+- Added ValueSet `http://ehealth.sundhed.dk/vs/questionnaire-item-image-format`
+
 ### ConceptMaps
 ### Resource/profile changes
+
+#### Questionnaire
+- Added extensions to Questionnaire Item to support small images on items and answer options, as well as item control, answer significance and answer conditions: 
+    - Item Image - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment
+    - Item Control - Profile http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl
+    - Item AnswerSignificance  - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-answerSignificance
+    - AnswerCondition - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-answer-Condition
+ 
+#### StructureDefinition ehealth-modifier-role and ehealth-recommendation
+- Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
  
 ### Changes with FHIR R4 Migration
-Entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4. 
+The entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4. Core migration changes described in `https://www.hl7.org/fhir/r4/diff.html` are mentioned in the changelog entries below only when significant to eHealth use. For instance, such mentioning could be that another FHIR element, possible introduced with FHIR R4, is now used instead of a FHIR STU3 element. 
 
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 ### ValueSets
+- Removed ValueSet with url http://ehealth.sundhed.dk/vs/it-selfreliance as not used and defined using system SNOMED CT but non-SNOMED CT concepts.
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension workflow-episodeOfCare to reintroduce reference to EpisodeOfCare (as removed with FHIR R4). This extension is added to all clinical resources that previously had a context reference. The episodeOfCare reference is now mandatory in all cases.  
 
 #### Communication (ehealth-message)
-
 - Added search parameter 'episodeOfCare' for querying extension http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 
 #### Appointment
-- Field 'reason' is removed in R4. Substituted with reasonCode
-- Appointment.serviceType must now be set depending on the value of meta/profile (with system "http://ehealth.sundhed.dk/cs/appointment-servicetype" for all codes):
+- Element 'reasonCode' is used instead of 'reason' as that har been removed in FHIR R4
+- serviceType must now be set depending on the value of meta/profile (with system "http://ehealth.sundhed.dk/cs/appointment-servicetype" for all codes):
   
         Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment' => code = 'regular'
         Profile 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment' => code = 'video'
@@ -53,9 +87,6 @@ Entire eHealth Implementation Guide has been migrated from FHIR STU3 to FHIR R4.
 
 #### ServiceRequest
 - Added and adapted as replacement for ProcedureRequest
-
-#### StructutureDefinition ehealth-modifier-role and ehealth-recommendation
-- Replaced TBD in StructureDefinitions ehealth-modifier-role and ehealth-recommendation
 
 ## 2021.2 (2021-05-05)
 #### System operations

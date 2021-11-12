@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZWIyZWJlNWYtY2QzYy00MTRhLTg0ODUtNWM2ZDM0MzQ0MjhjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS01OTIubG9jYWwvZmhpci9QYXRpZW50LzU3MTU4IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiN2M3NTAwMjEtZTUyNC00NzU4LWE0NTQtZDM0ZmYxZGI0OGU2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS02MzUubG9jYWwvZmhpci9QYXRpZW50LzMxNDEiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,7 +18,8 @@ __Response__
   "id": "64",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-04-19T15:15:18.596+00:00",
+    "lastUpdated": "2021-10-12T09:28:42.732+00:00",
+    "source": "#b12dd248-f60c-95",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
@@ -27,16 +28,16 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-592.local/fhir/CarePlan/48394"
+        "reference": "https://careplan.cit-device-635.local/fhir/CarePlan/8664"
       }
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-device-592.local/fhir/Patient/57158"
+    "reference": "https://patient.cit-device-635.local/fhir/Patient/3141"
   },
   "device": {
-    "reference": "https://device.cit-device-592.local/fhir/Device/63"
+    "reference": "https://device.cit-device-635.local/fhir/Device/63"
   }
 }
 ```

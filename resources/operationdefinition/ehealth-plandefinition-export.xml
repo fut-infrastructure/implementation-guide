@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="PlanDefinition-i-export"/>
+   <url value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export"/>
    <name value="export"/>
+   <title value="Export a PlanDefinition.&#xa;### Export Contents&#xa;The export contains the PlanDefinition including referenced resources:- PlanDefinitions&#xa;- ActivityDefinitions&#xa;- Questionnaires&#xa;- Libraries&#xa;- Organizations&#xa;&#xa;Each resource is returned in a separate JSon file.&#xa;### Parameters&#xa;- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.&#xa;All returned objects are Fhir resources. See the implementation guide for details&#xa;"/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Export a PlanDefinition.&#xa;### Export Contents&#xa;The export contains the PlanDefinition including referenced resources:- PlanDefinitions&#xa;- ActivityDefinitions&#xa;- Questionnaires&#xa;- Libraries&#xa;- Organizations&#xa;&#xa;Each resource is returned in a separate JSon file.&#xa;### Parameters&#xa;- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.&#xa;All returned objects are Fhir resources. See the implementation guide for details&#xa;"/>
-   <idempotent value="true"/>
+   <affectsState value="false"/>
    <code value="export"/>
    <resource value="PlanDefinition"/>
    <system value="false"/>

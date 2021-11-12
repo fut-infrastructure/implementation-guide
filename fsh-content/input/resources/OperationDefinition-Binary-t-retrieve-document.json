@@ -1,0 +1,30 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Binary-t-retrieve-document",
+  "url": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-t-retrieve-document",
+  "name": "retrieve-document",
+  "title": "Retrieve document",
+  "status": "active",
+  "kind": "operation",
+  "description": "Retrieve document",
+  "affectsState": false,
+  "code": "retrieve-document",
+  "resource": [ "Binary" ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [ {
+    "name": "url",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "string",
+    "searchType": "uri"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Binary"
+  } ]
+}

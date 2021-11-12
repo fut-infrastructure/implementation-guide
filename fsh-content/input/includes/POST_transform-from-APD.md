@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLUFQRCIsIiR0cmFuc2Zvcm0tdG8tQVBEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2021-04-19T15:09:52.792+00:00",
+        "indexed": "2021-10-14T06:04:33.805+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "151fe15a-3adc-4ff3-9589-a9dd3ada8501",
+        "id": "ddb19dd4-4029-4397-a1de-3da4db009e47",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -281,35 +281,6 @@ __Response__
           {
             "resourceType": "Organization",
             "id": "2",
-            "meta": {
-              "profile": [
-                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
-              ]
-            },
-            "extension": [
-              {
-                "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/organization-source",
-                      "code": "manual"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/organization-synchronization-status",
-                      "code": "NotSynchronized"
-                    }
-                  ]
-                }
-              }
-            ],
             "identifier": [
               {
                 "system": "1.2.208.176.1.1",

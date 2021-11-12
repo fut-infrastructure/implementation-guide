@@ -1,701 +1,913 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="careplan"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-04T11:31:20+00:00"/>
+   <date value="2021-10-07T18:07:20.924+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="careplan"/>
-      <version value="1.11.0"/>
+      <version value="1.13.0"/>
    </software>
    <implementation>
       <description value="eHealth careplan service"/>
       <url value="https://careplan.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="CarePlan"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"/>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalUpdate value="true"/>
          <searchInclude value="CarePlan:activity-reference"/>
-         <searchInclude value="CarePlan:context"/>
+         <searchInclude value="CarePlan:episodeOfCare"/>
          <searchInclude value="CarePlan:goal"/>
          <searchInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="activity-reference"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-activity-reference"/>
             <type value="reference"/>
             <documentation value="Activity details defined in specific resource"/>
          </searchParam>
          <searchParam>
             <name value="care-team"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-care-team"/>
             <type value="reference"/>
             <documentation value="Who's involved in plan?"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-category"/>
             <type value="token"/>
             <documentation value="Type of plan"/>
          </searchParam>
          <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Created in context of"/>
-         </searchParam>
-         <searchParam>
             <name value="date"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-date"/>
             <type value="date"/>
             <documentation value="Time period plan covers"/>
          </searchParam>
          <searchParam>
+            <name value="episodeOfCare"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-episodeOfCare"/>
+            <type value="reference"/>
+            <documentation value="EpisodeOfCare"/>
+         </searchParam>
+         <searchParam>
             <name value="goal"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-goal"/>
             <type value="reference"/>
             <documentation value="Goal of the care plan"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-identifier"/>
             <type value="token"/>
             <documentation value="External Ids for this plan"/>
          </searchParam>
          <searchParam>
             <name value="part-of"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-part-of"/>
             <type value="reference"/>
             <documentation value="Part of referenced CarePlan"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-patient"/>
             <type value="reference"/>
             <documentation value="Who care plan is for"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-status"/>
             <type value="token"/>
             <documentation value="draft | active | suspended | completed | entered-in-error | cancelled | unknown"/>
          </searchParam>
          <searchParam>
             <name value="status-scheduled-time"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-status-scheduled-time"/>
             <type value="date"/>
             <documentation value="Scheduled time for status change"/>
          </searchParam>
          <searchParam>
             <name value="team-scheduled-time"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CarePlan-team-scheduled-time"/>
             <type value="date"/>
             <documentation value="Scheduled time for team change"/>
          </searchParam>
+         <operation>
+            <name value="suggest-care-teams"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams"/>
+            <documentation value="Suggest care teams matching the conditions required by the care plan on either a regional or a municipality level. The suggested care teams has reason codes matching all the conditions addressed by the care plan and has a managing organization matching the input region code or municipality code. One of region code or municipality code must be input. If both region code and municipality code is input, then the municipality code is ignored. Return a bundle with matching care teams and their managing organizations."/>
+         </operation>
+         <operation>
+            <name value="update-care-teams"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams"/>
+            <documentation value="Modify the care team assignment of the care plan and all of its sub plans."/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="CommunicationRequest"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="CommunicationRequest:based-on"/>
          <searchInclude value="CommunicationRequest:context"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="authored"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-authored"/>
             <type value="date"/>
             <documentation value="When request transitioned to being actionable"/>
          </searchParam>
          <searchParam>
             <name value="based-on"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-based-on"/>
             <type value="reference"/>
             <documentation value="Fulfills plan or proposal"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-category"/>
             <type value="token"/>
             <documentation value="Message category"/>
          </searchParam>
          <searchParam>
-            <name value="context"/>
-            <type value="reference"/>
-            <documentation value="Encounter or episode leading to message"/>
-         </searchParam>
-         <searchParam>
             <name value="encounter"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-encounter"/>
             <type value="reference"/>
             <documentation value="Encounter leading to message"/>
          </searchParam>
          <searchParam>
+            <name value="episodeOfCare"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-episodeOfCare"/>
+            <type value="reference"/>
+            <documentation value="Episode leading to message"/>
+         </searchParam>
+         <searchParam>
             <name value="group-identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-group-identifier"/>
             <type value="token"/>
             <documentation value="Composite request this is part of"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-identifier"/>
             <type value="token"/>
             <documentation value="Unique identifier"/>
          </searchParam>
          <searchParam>
             <name value="medium"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-medium"/>
             <type value="token"/>
             <documentation value="A channel of communication"/>
          </searchParam>
          <searchParam>
             <name value="occurrence"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-occurrence"/>
             <type value="date"/>
             <documentation value="When scheduled"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-patient"/>
             <type value="reference"/>
             <documentation value="Focus of message"/>
          </searchParam>
          <searchParam>
             <name value="priority"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-priority"/>
             <type value="token"/>
             <documentation value="Message urgency"/>
          </searchParam>
          <searchParam>
             <name value="reasonCode"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-reasonCode"/>
             <type value="token"/>
             <documentation value="ReasonCode"/>
          </searchParam>
          <searchParam>
             <name value="recipient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-recipient"/>
             <type value="reference"/>
             <documentation value="Message recipient"/>
          </searchParam>
          <searchParam>
             <name value="replaces"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-replaces"/>
             <type value="reference"/>
             <documentation value="Request(s) replaced by this request"/>
          </searchParam>
          <searchParam>
             <name value="requester"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-requester"/>
             <type value="reference"/>
             <documentation value="Individual making the request"/>
          </searchParam>
          <searchParam>
             <name value="sender"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-sender"/>
             <type value="reference"/>
             <documentation value="Message sender"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-status"/>
             <type value="token"/>
             <documentation value="draft | active | suspended | cancelled | completed | entered-in-error | unknown"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/CommunicationRequest-subject"/>
             <type value="reference"/>
             <documentation value="Focus of message"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="Condition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/Condition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <conditionalCreate value="true"/>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="Consent"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
          <searchParam>
             <name value="data"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-data"/>
             <type value="reference"/>
             <documentation value="The actual data reference"/>
          </searchParam>
          <searchParam>
             <name value="actor"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-actor"/>
             <type value="reference"/>
             <documentation value="Resource for the actor (or group, by role)"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-category"/>
             <type value="token"/>
             <documentation value="Classification of the consent statement - for indexing/retrieval"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-identifier"/>
             <type value="token"/>
             <documentation value="Identifier for this record (external references)"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-patient"/>
             <type value="reference"/>
             <documentation value="Who the consent applies to"/>
          </searchParam>
          <searchParam>
             <name value="period"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-period"/>
             <type value="date"/>
             <documentation value="Period that this consent applies"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Consent-status"/>
             <type value="token"/>
             <documentation value="draft | proposed | active | rejected | inactive | entered-in-error"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="EpisodeOfCare"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"/>
          <interaction>
-            <code value="read"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="patch"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
-         <searchInclude value="CarePlan:context"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
          <searchParam>
             <name value="condition"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-condition"/>
             <type value="reference"/>
             <documentation value="Conditions/problems/diagnoses this episode of care is for"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-identifier"/>
             <type value="token"/>
             <documentation value="Business Identifier(s) relevant for this EpisodeOfCare"/>
          </searchParam>
          <searchParam>
             <name value="organization"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-organization"/>
             <type value="reference"/>
             <documentation value="The organization that has assumed the specific responsibilities of this EpisodeOfCare"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-patient"/>
             <type value="reference"/>
             <documentation value="The patient who is the focus of this episode of care"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-status"/>
             <type value="token"/>
             <documentation value="The current status of the Episode of Care as provided (does not check the status history collection)"/>
          </searchParam>
          <searchParam>
             <name value="status-scheduled-time"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-status-scheduled-time"/>
             <type value="date"/>
             <documentation value="Scheduled time for status change"/>
          </searchParam>
          <searchParam>
             <name value="team"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-team"/>
             <type value="reference"/>
             <documentation value="The list of practitioners that may be facilitating this episode of care for specific purposes."/>
          </searchParam>
          <searchParam>
             <name value="team-scheduled-time"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/EpisodeOfCare-team-scheduled-time"/>
             <type value="date"/>
             <documentation value="Scheduled time for team change"/>
          </searchParam>
+         <operation>
+            <name value="is-context-allowed"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed"/>
+            <documentation value="Checks that it is allowed to set an EpisodeOfCare as context.&#xd;&#xa;If the user requesting context is a patient, then the patient input parameter should be specified.&#xd;&#xa;If the user requesting context is a practitioner, then the careTeam input parameter should be specified.&#xd;&#xa;Throws an exception if it is not allowed to select the Episode Of Care context.&#xd;&#xa;## Output&#xd;&#xa;For valid Episode of Care is returned references that cause the Episode of Care to be valid context. &#xd;&#xa;For a practitioner, two output parameters will be returned on success:&#xd;&#xa;- CareTeam: The Careteam that gave access&#xd;&#xa;- EpisodeOfCare/CarePlan: The EpisodeOfCare or CarePlan that referenced the CareTeam"/>
+         </operation>
+         <operation>
+            <name value="update-care-teams"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams"/>
+            <documentation value="Modify the care team assignment of the episode of care and all care plans that has the episode of care as context."/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="Goal"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
          <searchInclude value="Goal:patient"/>
          <searchInclude value="Goal:subject"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="addresses"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-addresses"/>
             <type value="reference"/>
             <documentation value="What the goal addresses"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-category"/>
             <type value="token"/>
             <documentation value="E.g. Treatment, dietary, behavioral, etc."/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-identifier"/>
             <type value="token"/>
             <documentation value="External Ids for this goal"/>
          </searchParam>
          <searchParam>
+            <name value="lifecycle-status"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-lifecycle-status"/>
+            <type value="token"/>
+            <documentation value="proposed | accepted | planned | in-progress | on-target | ahead-of-target | behind-target | sustaining | achieved | on-hold | cancelled | entered-in-error | rejected"/>
+         </searchParam>
+         <searchParam>
             <name value="patient"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-patient"/>
             <type value="reference"/>
             <documentation value="Who this goal is intended for"/>
          </searchParam>
          <searchParam>
             <name value="start-date"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-start-date"/>
             <type value="date"/>
             <documentation value="When goal pursuit begins"/>
          </searchParam>
          <searchParam>
-            <name value="status"/>
-            <type value="token"/>
-            <documentation value="proposed | accepted | planned | in-progress | on-target | ahead-of-target | behind-target | sustaining | achieved | on-hold | cancelled | entered-in-error | rejected"/>
-         </searchParam>
-         <searchParam>
             <name value="subject"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-subject"/>
             <type value="reference"/>
             <documentation value="Who this goal is intended for"/>
          </searchParam>
          <searchParam>
             <name value="target-date"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Goal-target-date"/>
             <type value="date"/>
             <documentation value="Reach goal on or before"/>
          </searchParam>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
       </resource>
       <resource>
-         <type value="ProcedureRequest"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"/>
-         </profile>
+         <type value="Provenance"/>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
          <interaction>
             <code value="read"/>
          </interaction>
          <interaction>
+            <code value="search-type"/>
+         </interaction>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
+         <searchParam>
+            <name value="target"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/SearchParameter/Provenance-target"/>
+            <type value="reference"/>
+            <documentation value="Target Reference(s) (usually version specific)"/>
+         </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
+      </resource>
+      <resource>
+         <type value="ServiceRequest"/>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"/>
+         <interaction>
             <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="update"/>
          </interaction>
          <conditionalUpdate value="true"/>
-      </resource>
-      <resource>
-         <type value="Provenance"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="search-type"/>
-         </interaction>
-         <searchParam>
-            <name value="target"/>
-            <type value="reference"/>
-            <documentation value="Target Reference(s) (usually version specific)"/>
-         </searchParam>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CarePlan:activity-reference"/>
+         <searchRevInclude value="CarePlan:care-team"/>
+         <searchRevInclude value="CarePlan:episodeOfCare"/>
+         <searchRevInclude value="CarePlan:goal"/>
+         <searchRevInclude value="CarePlan:part-of"/>
+         <searchRevInclude value="CarePlan:patient"/>
+         <searchRevInclude value="CommunicationRequest:based-on"/>
+         <searchRevInclude value="CommunicationRequest:encounter"/>
+         <searchRevInclude value="CommunicationRequest:episodeOfCare"/>
+         <searchRevInclude value="CommunicationRequest:patient"/>
+         <searchRevInclude value="CommunicationRequest:recipient"/>
+         <searchRevInclude value="CommunicationRequest:replaces"/>
+         <searchRevInclude value="CommunicationRequest:requester"/>
+         <searchRevInclude value="CommunicationRequest:sender"/>
+         <searchRevInclude value="CommunicationRequest:subject"/>
+         <searchRevInclude value="Consent:actor"/>
+         <searchRevInclude value="Consent:data"/>
+         <searchRevInclude value="Consent:patient"/>
+         <searchRevInclude value="EpisodeOfCare:condition"/>
+         <searchRevInclude value="EpisodeOfCare:organization"/>
+         <searchRevInclude value="EpisodeOfCare:patient"/>
+         <searchRevInclude value="EpisodeOfCare:team"/>
+         <searchRevInclude value="Goal:addresses"/>
+         <searchRevInclude value="Goal:patient"/>
+         <searchRevInclude value="Goal:subject"/>
+         <searchRevInclude value="Provenance:target"/>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <operation>
          <name value="apply"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply"/>
-         </definition>
+         <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply"/>
+         <documentation value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."/>
       </operation>
       <operation>
          <name value="create-episode-of-care"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-create-episode-of-care"/>
-         </definition>
+         <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-create-episode-of-care"/>
+         <documentation value="This operation persists an EpisodeOfCare based on the transient value of an EpisodeOfCare provided in the input.&#xd;&#xa;## Input&#xd;&#xa;The input is a Bundle which must contain exactly one EpisodeOfCare, conditions referenced in diagnosis list and at least one Provenance resource. All Provenances in the input must have the EpisodeOfCare as target. At least one Provenance must be interpreted into a 'Privacy-provenance' (see below).&#xd;&#xa;### The EpisodeOfCare resource&#xd;&#xa;The EpisodeOfCare has to have `PLANNED` status &#xd;&#xa;The 'id' property of the EpisodeOfCare will be reassigned by the server, but can be referenced by other resources in the same bundle. &#xd;&#xa;The 'managingOrganization' property of the EpisodeOfCare references the GDPR Data Controller (Danish: 'Dataansvarlig').&#xd;&#xa;### The privacy-Provenance resource&#xd;&#xa;A privacy-Provenance is a Provenance resource characterized by having at least one entry in Provenance.policy which data are transported, stored, or processed in the system. Possible values are:&#xd;&#xa;- 'http://ehealth.sundhed.dk/policy/dk/sundhedsloven'&#xd;&#xa;- 'http://ehealth.sundhed.dk/policy/dk/serviceloven'&#xd;&#xa;### Diagnosis referenced Condition resource&#xd;&#xa;For any diagnosis listed, the referenced Condition must be concerning the same Patient as the EpisodeOfCare.&#xd;&#xa;## Output&#xd;&#xa;For valid inputs, the server will create, persist and return a new EpisodeOfCare, client-supplied provenances, conditions and origin-provenance carrying a server-assigned ids.&#xd;&#xa;To get resources bodies in the output the request header has to contain parameter ```Prefer: return=representation```.&#xd;&#xa;### The origin-Provenance resource&#xd;&#xa;Whenever an EpisodeOfCare is created, the server automatically creates an 'origin' Provenance resource point to it (in addition to the client-supplied Privacy-Provenance). This Origin-Provenance resource is filled with data from the JWT access token in order to record the origin of the EpisodeOfCare resource. For instance agent.whoReference points to a resource which is created as a shadow identity from the JWT token."/>
       </operation>
       <operation>
          <name value="get-patient-procedures"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-patient-procedures"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="suggest-care-teams"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="update-care-teams"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-update-care-teams"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CommunicationRequest--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CommunicationRequest-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Condition--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Condition-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Consent--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Consent-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="is-context-allowed"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="update-care-teams"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-update-care-teams"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ProcedureRequest--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ProcedureRequest-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Provenance--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Provenance-i-validate"/>
-         </definition>
+         <definition value="https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-patient-procedures"/>
+         <documentation value="This operation returns an overview of patient procedures within a time period and filtered by either EpisodeOfCare or Condition code(s). On success, the returned Bundle contains a Parameters structure detailing the count of measurements received and expected. This is done per ServiceRequest with status active for those that are related to EpisodeOfCare either given as input or pertaining to one of the Condition codes. The measurement regime expressed in ServiceRequest.occurrence[x] is, when possible, resolved to time slot(s) corresponding to datetime/period where an action is supposed to take place, typically performed by the Patient. When the occurrenceTiming variant is used, resolved time slots overlapping with the input time periode are considered. For occurrenceTiming expression which are either adhoc or unresolved, the effective datetime/period of a measurement is considered when checked for overlap with input time period.&#xd;&#xa;## Input&#xd;&#xa;The operation has three mandatory inputs, a Patient reference, a start date and an end date. Additionally the operation has two optional inputs: a list of reference(s) to EpisodeOfCare and a list of Codings for Condition.&#xd;&#xa;### Patient reference&#xd;&#xa;Mandatory reference for the Patient which the procedure overview is computed for.&#xd;&#xa;### Start and end datetimes&#xd;&#xa;Start and end datetime are both mandatory, and together specify the period of interest in the patient procedure overview. As stated above, for resolvable past and future time slots as well as adhoc and unresolved timings there must overlap with this period.&#xd;&#xa;### EpisodeOfCare list&#xd;&#xa;The EpisodeOfCare list is optional, but either of EpisodeOfCare or Condition codes must be provided. If EpisodeOfCare are provided, these will be used to further filter which active CarePlan and ServiceRequest are considered for the patient procedure overview.&#xd;&#xa;### Condition Coding list&#xd;&#xa;The list of Coding for Condition is optional, but either of EpisodeOfCare or Condition codes must be provided. If Condition Coding are provided, the EpisodeOfCare considered are those referring to a Condition matching at least one of the codes in the list. As above, the EpisodeOfCare (one or more) considered further determines which active CarePlan and ServiceRequest are considered.&#xd;&#xa;## Output&#xd;&#xa;For valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with resolved measurement regimes and associated counts of measurement submitted and counts expected. Such counts are also included in the Parameters structure when the measurement regime is either adhoc or unresolved. In addition, the Bundle contains CarePlan and ServiceRequest referenced in the Parameters. The Bundle can contain an OperationOutcome describing any encountered warnings."/>
       </operation>
    </rest>
 </CapabilityStatement>

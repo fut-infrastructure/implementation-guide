@@ -7,7 +7,7 @@ canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
 status: draft
-version: latest
+version: 0.7.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -19,6 +19,7 @@ publisher:
 
 dependencies:
   dk.fhir.ig.dk-core: current
+  hl7.fhir.uv.sdc: current
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
@@ -64,6 +65,18 @@ menu:
     Service event messages: service-event-tables.html
   Error Messsages: error-messages.html
   Capability Statements:
-      Patient service:  CapabilityStatement-patient.html
+    CarePlan service: CapabilityStatement-careplan.html
+    Device service: CapabilityStatement-device.html
+    DocumentQuery service: CapabilityStatement-document-query.html
+    DocumentTransformation service: CapabilityStatement-document-transformation.html
+    Library service: CapabilityStatement-library.html
+    Measurement service: CapabilityStatement-measurement.html
+    Organization service: CapabilityStatement-organization.html
+    Patient service:  CapabilityStatement-patient.html
+    Plan service: CapabilityStatement-plan.html
+    Questionnaire service: CapabilityStatement-questionnaire.html
+    Reporting service: CapabilityStatement-reporting.html
+    Task service: CapabilityStatement-task.html
+    Terminology service: CapabilityStatement-terminology.html
   #Capability Statements: capability-statements.html
   Downloads: downloads.html

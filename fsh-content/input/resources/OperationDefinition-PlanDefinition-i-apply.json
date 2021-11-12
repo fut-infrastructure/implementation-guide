@@ -1,1 +1,23 @@
-{"resourceType":"OperationDefinition","id":"PlanDefinition-i-apply","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>apply</h2><p>OPERATION: apply</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-apply</pre><div><p>Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.</p>\n</div><p>URL: [base]/PlanDefinition/[id]/$apply</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>episodeOfCare</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/references.html#Reference\">Reference</a></td><td/><td/></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-apply","name":"apply","status":"active","kind":"operation","date":"2021-05-06T08:31:20+00:00","description":"Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.","idempotent":false,"code":"apply","resource":["PlanDefinition"],"system":false,"type":false,"instance":true,"parameter":[{"name":"episodeOfCare","use":"in","min":0,"max":"1","type":"Reference"}]}
+{
+  "resourceType": "OperationDefinition",
+  "id": "PlanDefinition-i-apply",
+  "url": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply",
+  "name": "apply",
+  "title": "Create a careplan",
+  "status": "active",
+  "kind": "operation",
+  "description": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
+  "affectsState": true,
+  "code": "apply",
+  "resource": [ "PlanDefinition" ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [ {
+    "name": "episodeOfCare",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  } ]
+}

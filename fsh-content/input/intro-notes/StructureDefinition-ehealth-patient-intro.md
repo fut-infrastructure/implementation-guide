@@ -33,7 +33,7 @@ Certain data on an ehealth-patient are automatically updated based on the CPR sy
 address, and of course the CPR number itself.
 
 When adding/updating an address (non-home address), the service will by default "wash" the address using DAWA (Danmarks Adressers Web API).  
-See https://dawa.aws.dk/dok/api/adresse#datavask.   
+See https://dawadocs.dataforsyningen.dk/dok/api/adresse#datavask.   
 A client may overrule the default validation strategy by setting a request header `x-address-validation-strategy` 
 with the value "STRICT", "WASH" or "NONE".  
 If "STRICT" is used the request will fail if the address does not match strictly an address in DAWA.  

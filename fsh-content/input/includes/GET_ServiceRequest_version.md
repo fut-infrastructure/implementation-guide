@@ -1,11 +1,11 @@
-`GET [base]/ProcedureRequest/1171/_history/2`
+`GET [base]/ServiceRequest/1564/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -14,16 +14,23 @@ Accept-Encoding: gzip
 __Response__
 ```json
 {
-  "resourceType": "ProcedureRequest",
-  "id": "1171",
+  "resourceType": "ServiceRequest",
+  "id": "1564",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-05-04T09:54:35.181+00:00",
+    "lastUpdated": "2021-10-13T08:46:04.456+00:00",
+    "source": "#0827606b-769e-42",
     "profile": [
-      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
+      "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
   },
   "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-careplan-1804.local/fhir/EpisodeOfCare/1563"
+      }
+    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy",
       "valueCodeableConcept": {
@@ -37,10 +44,8 @@ __Response__
       }
     }
   ],
-  "definition": [
-    {
-      "reference": "https://plan.cit-careplan-1716.local/fhir/ActivityDefinition/6487"
-    }
+  "instantiatesCanonical": [
+    "https://plan.cit-careplan-1804.local/fhir/ActivityDefinition/31541"
   ],
   "status": "completed",
   "intent": "option",
@@ -51,13 +56,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "afa54c11-2682-41ff-bd63-4697ec2697ff"
+    "text": "864feaec-a063-46dd-a51f-df6c69fce8c7"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/15796"
-  },
-  "context": {
-    "reference": "https://careplan.cit-careplan-1716.local/fhir/EpisodeOfCare/1170"
+    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/51011"
   }
 }
 ```

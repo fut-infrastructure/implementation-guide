@@ -1,42 +1,47 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="plan"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-01T15:28:04+00:00"/>
+   <date value="2021-10-07T03:04:37.472+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="plan"/>
-      <version value="1.7.0"/>
+      <version value="1.8.0"/>
    </software>
    <implementation>
       <description value="eHealth plan service"/>
       <url value="https://plan.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="ActivityDefinition"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
@@ -45,611 +50,772 @@
          <searchInclude value="ActivityDefinition:derived-from"/>
          <searchInclude value="ActivityDefinition:predecessor"/>
          <searchInclude value="ActivityDefinition:successor"/>
+         <searchRevInclude value="ActivityDefinition:composed-of"/>
+         <searchRevInclude value="ActivityDefinition:depends-on"/>
+         <searchRevInclude value="ActivityDefinition:derived-from"/>
+         <searchRevInclude value="ActivityDefinition:intendedAudience"/>
+         <searchRevInclude value="ActivityDefinition:modifier_role_reference"/>
+         <searchRevInclude value="ActivityDefinition:predecessor"/>
+         <searchRevInclude value="ActivityDefinition:successor"/>
+         <searchRevInclude value="DocumentReference:authenticator"/>
+         <searchRevInclude value="DocumentReference:author"/>
+         <searchRevInclude value="DocumentReference:custodian"/>
+         <searchRevInclude value="DocumentReference:encounter"/>
+         <searchRevInclude value="DocumentReference:patient"/>
+         <searchRevInclude value="DocumentReference:related-ref"/>
+         <searchRevInclude value="DocumentReference:relatesto"/>
+         <searchRevInclude value="DocumentReference:subject"/>
+         <searchRevInclude value="PlanDefinition:composed-of"/>
+         <searchRevInclude value="PlanDefinition:definition"/>
+         <searchRevInclude value="PlanDefinition:depends-on"/>
+         <searchRevInclude value="PlanDefinition:derived-from"/>
+         <searchRevInclude value="PlanDefinition:documentation"/>
+         <searchRevInclude value="PlanDefinition:intendedAudience"/>
+         <searchRevInclude value="PlanDefinition:modifier_role_reference"/>
+         <searchRevInclude value="PlanDefinition:predecessor"/>
+         <searchRevInclude value="PlanDefinition:successor"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="composed-of"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-composed-of"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-date"/>
             <type value="date"/>
             <documentation value="The activity definition publication date"/>
          </searchParam>
          <searchParam>
             <name value="depends-on"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-derived-from"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-description"/>
             <type value="string"/>
             <documentation value="The description of the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="effective"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-effective"/>
             <type value="date"/>
             <documentation value="The time during which the activity definition is intended to be in use"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="intendedAudience"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-intendedAudience"/>
             <type value="reference"/>
             <documentation value="The intended audience of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="modifier_role_reference"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-modifier_role_reference"/>
             <type value="reference"/>
             <documentation value="Reference to either Organization, CareTeam, Practitioner"/>
          </searchParam>
          <searchParam>
             <name value="modifier_role_role"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-modifier_role_role"/>
             <type value="token"/>
             <documentation value="Role of Organization, CareTeam, Practitioner"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="predecessor"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="recommendation"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-recommendation"/>
             <type value="token"/>
             <documentation value="Recommendation for the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-status"/>
             <type value="token"/>
             <documentation value="The current status of the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="successor"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="topic"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-topic"/>
             <type value="token"/>
             <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the activity definition"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/ActivityDefinition-version"/>
             <type value="token"/>
             <documentation value="The business version of the activity definition"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="DocumentReference"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="DocumentReference:encounter"/>
          <searchInclude value="DocumentReference:related-ref"/>
          <searchInclude value="DocumentReference:relatesto"/>
+         <searchRevInclude value="ActivityDefinition:composed-of"/>
+         <searchRevInclude value="ActivityDefinition:depends-on"/>
+         <searchRevInclude value="ActivityDefinition:derived-from"/>
+         <searchRevInclude value="ActivityDefinition:intendedAudience"/>
+         <searchRevInclude value="ActivityDefinition:modifier_role_reference"/>
+         <searchRevInclude value="ActivityDefinition:predecessor"/>
+         <searchRevInclude value="ActivityDefinition:successor"/>
+         <searchRevInclude value="DocumentReference:authenticator"/>
+         <searchRevInclude value="DocumentReference:author"/>
+         <searchRevInclude value="DocumentReference:custodian"/>
+         <searchRevInclude value="DocumentReference:encounter"/>
+         <searchRevInclude value="DocumentReference:patient"/>
+         <searchRevInclude value="DocumentReference:related-ref"/>
+         <searchRevInclude value="DocumentReference:relatesto"/>
+         <searchRevInclude value="DocumentReference:subject"/>
+         <searchRevInclude value="PlanDefinition:composed-of"/>
+         <searchRevInclude value="PlanDefinition:definition"/>
+         <searchRevInclude value="PlanDefinition:depends-on"/>
+         <searchRevInclude value="PlanDefinition:derived-from"/>
+         <searchRevInclude value="PlanDefinition:documentation"/>
+         <searchRevInclude value="PlanDefinition:intendedAudience"/>
+         <searchRevInclude value="PlanDefinition:modifier_role_reference"/>
+         <searchRevInclude value="PlanDefinition:predecessor"/>
+         <searchRevInclude value="PlanDefinition:successor"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="authenticator"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-authenticator"/>
             <type value="reference"/>
             <documentation value="Who/what authenticated the document"/>
          </searchParam>
          <searchParam>
             <name value="author"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-author"/>
             <type value="reference"/>
             <documentation value="Who and/or what authored the document"/>
          </searchParam>
          <searchParam>
             <name value="class"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-class"/>
             <type value="token"/>
             <documentation value="Categorization of document"/>
          </searchParam>
          <searchParam>
             <name value="created"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-created"/>
             <type value="date"/>
             <documentation value="Document creation time"/>
          </searchParam>
          <searchParam>
             <name value="custodian"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-custodian"/>
             <type value="reference"/>
             <documentation value="Organization which maintains the document"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-description"/>
             <type value="string"/>
             <documentation value="Human-readable description (title)"/>
          </searchParam>
          <searchParam>
             <name value="encounter"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-encounter"/>
             <type value="reference"/>
             <documentation value="Context of the document  content"/>
          </searchParam>
          <searchParam>
             <name value="event"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-event"/>
             <type value="token"/>
             <documentation value="Main clinical acts documented"/>
          </searchParam>
          <searchParam>
             <name value="facility"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-facility"/>
             <type value="token"/>
             <documentation value="Kind of facility where patient was seen"/>
          </searchParam>
          <searchParam>
             <name value="format"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-format"/>
             <type value="token"/>
             <documentation value="Format/content rules for the document"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-identifier"/>
             <type value="token"/>
             <documentation value="Master Version Specific Identifier"/>
          </searchParam>
          <searchParam>
             <name value="indexed"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-indexed"/>
             <type value="date"/>
             <documentation value="When this document reference was created"/>
          </searchParam>
          <searchParam>
             <name value="language"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-language"/>
             <type value="token"/>
             <documentation value="Human language of the content (BCP-47)"/>
          </searchParam>
          <searchParam>
             <name value="location"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-location"/>
             <type value="uri"/>
             <documentation value="Uri where the data can be found"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-patient"/>
             <type value="reference"/>
             <documentation value="Who/what is the subject of the document"/>
          </searchParam>
          <searchParam>
             <name value="period"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-period"/>
             <type value="date"/>
             <documentation value="Time of service that is being documented"/>
          </searchParam>
          <searchParam>
             <name value="related-id"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-id"/>
             <type value="token"/>
             <documentation value="Identifier of related objects or events"/>
          </searchParam>
          <searchParam>
             <name value="related-ref"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-ref"/>
             <type value="reference"/>
             <documentation value="Related Resource"/>
          </searchParam>
          <searchParam>
             <name value="relatesto"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relatesto"/>
             <type value="reference"/>
             <documentation value="Target of the relationship"/>
          </searchParam>
          <searchParam>
             <name value="relation"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relation"/>
             <type value="token"/>
             <documentation value="replaces | transforms | signs | appends"/>
          </searchParam>
          <searchParam>
             <name value="relationship"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relationship"/>
             <type value="composite"/>
             <documentation value="Combination of relation and relatesTo"/>
          </searchParam>
          <searchParam>
             <name value="securitylabel"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-securitylabel"/>
             <type value="token"/>
             <documentation value="Document security-tags"/>
          </searchParam>
          <searchParam>
             <name value="setting"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-setting"/>
             <type value="token"/>
             <documentation value="Additional details about where the content was created (e.g. clinical specialty)"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-status"/>
             <type value="token"/>
             <documentation value="current | superseded | entered-in-error"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-subject"/>
             <type value="reference"/>
             <documentation value="Who/what is the subject of the document"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-type"/>
             <type value="token"/>
             <documentation value="Kind of document (LOINC if possible)"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="ActivityDefinition:composed-of"/>
+         <searchRevInclude value="ActivityDefinition:depends-on"/>
+         <searchRevInclude value="ActivityDefinition:derived-from"/>
+         <searchRevInclude value="ActivityDefinition:intendedAudience"/>
+         <searchRevInclude value="ActivityDefinition:modifier_role_reference"/>
+         <searchRevInclude value="ActivityDefinition:predecessor"/>
+         <searchRevInclude value="ActivityDefinition:successor"/>
+         <searchRevInclude value="DocumentReference:authenticator"/>
+         <searchRevInclude value="DocumentReference:author"/>
+         <searchRevInclude value="DocumentReference:custodian"/>
+         <searchRevInclude value="DocumentReference:encounter"/>
+         <searchRevInclude value="DocumentReference:patient"/>
+         <searchRevInclude value="DocumentReference:related-ref"/>
+         <searchRevInclude value="DocumentReference:relatesto"/>
+         <searchRevInclude value="DocumentReference:subject"/>
+         <searchRevInclude value="PlanDefinition:composed-of"/>
+         <searchRevInclude value="PlanDefinition:definition"/>
+         <searchRevInclude value="PlanDefinition:depends-on"/>
+         <searchRevInclude value="PlanDefinition:derived-from"/>
+         <searchRevInclude value="PlanDefinition:documentation"/>
+         <searchRevInclude value="PlanDefinition:intendedAudience"/>
+         <searchRevInclude value="PlanDefinition:modifier_role_reference"/>
+         <searchRevInclude value="PlanDefinition:predecessor"/>
+         <searchRevInclude value="PlanDefinition:successor"/>
       </resource>
       <resource>
          <type value="PlanDefinition"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="*"/>
-         <searchInclude value="PlanDefinition:action-definition"/>
          <searchInclude value="PlanDefinition:composed-of"/>
+         <searchInclude value="PlanDefinition:definition"/>
          <searchInclude value="PlanDefinition:depends-on"/>
          <searchInclude value="PlanDefinition:derived-from"/>
          <searchInclude value="PlanDefinition:documentation"/>
          <searchInclude value="PlanDefinition:predecessor"/>
          <searchInclude value="PlanDefinition:successor"/>
+         <searchRevInclude value="ActivityDefinition:composed-of"/>
+         <searchRevInclude value="ActivityDefinition:depends-on"/>
+         <searchRevInclude value="ActivityDefinition:derived-from"/>
+         <searchRevInclude value="ActivityDefinition:intendedAudience"/>
+         <searchRevInclude value="ActivityDefinition:modifier_role_reference"/>
+         <searchRevInclude value="ActivityDefinition:predecessor"/>
+         <searchRevInclude value="ActivityDefinition:successor"/>
+         <searchRevInclude value="DocumentReference:authenticator"/>
+         <searchRevInclude value="DocumentReference:author"/>
+         <searchRevInclude value="DocumentReference:custodian"/>
+         <searchRevInclude value="DocumentReference:encounter"/>
+         <searchRevInclude value="DocumentReference:patient"/>
+         <searchRevInclude value="DocumentReference:related-ref"/>
+         <searchRevInclude value="DocumentReference:relatesto"/>
+         <searchRevInclude value="DocumentReference:subject"/>
+         <searchRevInclude value="PlanDefinition:composed-of"/>
+         <searchRevInclude value="PlanDefinition:definition"/>
+         <searchRevInclude value="PlanDefinition:depends-on"/>
+         <searchRevInclude value="PlanDefinition:derived-from"/>
+         <searchRevInclude value="PlanDefinition:documentation"/>
+         <searchRevInclude value="PlanDefinition:intendedAudience"/>
+         <searchRevInclude value="PlanDefinition:modifier_role_reference"/>
+         <searchRevInclude value="PlanDefinition:predecessor"/>
+         <searchRevInclude value="PlanDefinition:successor"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="composed-of"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-composed-of"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-date"/>
             <type value="date"/>
             <documentation value="The plan definition publication date"/>
          </searchParam>
          <searchParam>
+            <name value="definition"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-definition"/>
+            <type value="reference"/>
+            <documentation value="Activity or plan definitions used by plan definition"/>
+         </searchParam>
+         <searchParam>
             <name value="depends-on"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-depends-on"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="derived-from"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-derived-from"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-description"/>
             <type value="string"/>
             <documentation value="The description of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="documentation"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-documentation"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="effective"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-effective"/>
             <type value="date"/>
             <documentation value="The time during which the plan definition is intended to be in use"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="intendedAudience"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-intendedAudience"/>
             <type value="reference"/>
             <documentation value="The intended audience of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="modifier_role_reference"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-modifier_role_reference"/>
             <type value="reference"/>
             <documentation value="Reference to either Organization, CareTeam, Practitioner"/>
          </searchParam>
          <searchParam>
             <name value="modifier_role_role"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-modifier_role_role"/>
             <type value="token"/>
             <documentation value="Role of Organization, CareTeam, Practitioner"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="predecessor"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-predecessor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="recommendation"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-recommendation"/>
             <type value="token"/>
             <documentation value="Recommendation for the plan definition"/>
          </searchParam>
          <searchParam>
-            <name value="role"/>
-            <type value="token"/>
-            <documentation value="Role for the plan definition"/>
-         </searchParam>
-         <searchParam>
             <name value="status"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-status"/>
             <type value="token"/>
             <documentation value="The current status of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="successor"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-successor"/>
             <type value="reference"/>
             <documentation value="What resource is being referenced"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="topic"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-topic"/>
             <type value="token"/>
             <documentation value="Topics associated with the module"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the plan definition"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/SearchParameter/PlanDefinition-version"/>
             <type value="token"/>
             <documentation value="The business version of the plan definition"/>
          </searchParam>
+         <operation>
+            <name value="apply"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
+            <documentation value="Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."/>
+         </operation>
+         <operation>
+            <name value="export"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export"/>
+            <documentation value="Export a PlanDefinition.&#xa;### Export Contents&#xa;The export contains the PlanDefinition including referenced resources:- PlanDefinitions&#xa;- ActivityDefinitions&#xa;- Questionnaires&#xa;- Libraries&#xa;- Organizations&#xa;&#xa;Each resource is returned in a separate JSon file.&#xa;### Parameters&#xa;- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.&#xa;### Output&#xa;Output can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.&#xa;All returned objects are Fhir resources. See the implementation guide for details"/>
+         </operation>
+         <operation>
+            <name value="import"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-t-import"/>
+            <documentation value="Import a Plandefinition&#xa;### Parameters&#xa;- planDefinitionPackage: Binary package produced by the export operation&#xa;### Output&#xa;Bundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Libraries and Organizations are used to find the corresponding resources on the target system."/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinition-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="apply"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="export"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="import"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--import"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-validate"/>
-         </definition>
-      </operation>
    </rest>
 </CapabilityStatement>

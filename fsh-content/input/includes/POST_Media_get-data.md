@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEyMjkubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzI2ODkiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWVkaWEucmVhZCJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtbWVhc3VyZW1lbnQtMTIyOS5sb2NhbC9maGlyL0NhcmVUZWFtLzExNTI1IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTIyOS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMTQzNzIiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEzNjMubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNTk0MTUiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiTWVkaWEucmVhZCJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtbWVhc3VyZW1lbnQtMTM2My5sb2NhbC9maGlyL0NhcmVUZWFtLzk1NDAyIiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTM2My5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvODk4ODUiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -17,7 +17,7 @@ __Body__:
   "parameter": [
     {
       "name": "uuid",
-      "valueString": "3330a911-790d-488a-94ee-a143a665e9c1"
+      "valueString": "0964bab6-e7a5-446b-b2a0-448ebe82c344"
     }
   ]
 }
@@ -28,6 +28,6 @@ __Response__
 {
   "resourceType": "Binary",
   "contentType": "text",
-  "content": "NDFjYTY5MTMtZGNkMS00MjZmLWEzYWYtNWE5ZWZlZTBhYmFl"
+  "data": "YTJlNzE0YTQtZjhlMS00OTk4LWJmNzAtYzEyMDViYmYyODFk"
 }
 ```

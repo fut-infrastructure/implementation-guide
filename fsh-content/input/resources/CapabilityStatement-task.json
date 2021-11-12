@@ -1,0 +1,360 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "task",
+  "name": "task",
+  "status": "active",
+  "date": "2021-10-31T19:24:36.151+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "task",
+    "version": "1.7.0"
+  },
+  "implementation": {
+    "description": "eHealth task service",
+    "url": "https://task.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "ClinicalImpression",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      } ],
+      "conditionalCreate": true,
+      "searchInclude": [ "ClinicalImpression:previous" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "action",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-action",
+        "type": "reference",
+        "documentation": "Action taken as part of assessment procedure"
+      }, {
+        "name": "assessor",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-assessor",
+        "type": "reference",
+        "documentation": "The clinician performing the assessment"
+      }, {
+        "name": "carePlan",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-carePlan",
+        "type": "reference",
+        "documentation": "CarePlan"
+      }, {
+        "name": "date",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-date",
+        "type": "date",
+        "documentation": "When the assessment was documented"
+      }, {
+        "name": "decision",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-decision",
+        "type": "token",
+        "documentation": "Decision"
+      }, {
+        "name": "episodeOfCare",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-episodeOfCare",
+        "type": "reference",
+        "documentation": "Encounter or Episode created from"
+      }, {
+        "name": "finding-code",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-finding-code",
+        "type": "token",
+        "documentation": "What was found"
+      }, {
+        "name": "finding-ref",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-finding-ref",
+        "type": "reference",
+        "documentation": "What was found"
+      }, {
+        "name": "identifier",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-identifier",
+        "type": "token",
+        "documentation": "Business identifier"
+      }, {
+        "name": "investigation",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-investigation",
+        "type": "reference",
+        "documentation": "Record of a specific investigation"
+      }, {
+        "name": "mediaInvestigationItem",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-mediaInvestigationItem",
+        "type": "reference",
+        "documentation": "Media investigation item"
+      }, {
+        "name": "patient",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-patient",
+        "type": "reference",
+        "documentation": "Patient or group assessed"
+      }, {
+        "name": "previous",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-previous",
+        "type": "reference",
+        "documentation": "Reference to last assessment"
+      }, {
+        "name": "problem",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-problem",
+        "type": "reference",
+        "documentation": "Relevant impressions of patient state"
+      }, {
+        "name": "status",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-status",
+        "type": "token",
+        "documentation": "draft | completed | entered-in-error"
+      }, {
+        "name": "subject",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-subject",
+        "type": "reference",
+        "documentation": "Patient or group assessed"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+    }, {
+      "type": "Task",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "search-type"
+      } ],
+      "conditionalCreate": true,
+      "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "authored-on",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-authored-on",
+        "type": "date",
+        "documentation": "Search by creation date"
+      }, {
+        "name": "based-on",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-based-on",
+        "type": "reference",
+        "documentation": "Search by requests this task is based on"
+      }, {
+        "name": "business-status",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-business-status",
+        "type": "token",
+        "documentation": "Search by business status"
+      }, {
+        "name": "category",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-category",
+        "type": "token",
+        "documentation": "Search by category"
+      }, {
+        "name": "code",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-code",
+        "type": "token",
+        "documentation": "Search by task code"
+      }, {
+        "name": "episodeOfCare",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-episodeOfCare",
+        "type": "reference",
+        "documentation": "Search by encounter or episode"
+      }, {
+        "name": "focus",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-focus",
+        "type": "reference",
+        "documentation": "Search by task focus"
+      }, {
+        "name": "group-identifier",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-group-identifier",
+        "type": "token",
+        "documentation": "Search by group identifier"
+      }, {
+        "name": "identifier",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-identifier",
+        "type": "token",
+        "documentation": "Search for a task instance by its business identifier"
+      }, {
+        "name": "intent",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-intent",
+        "type": "token",
+        "documentation": "Search by task intent"
+      }, {
+        "name": "modified",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-modified",
+        "type": "date",
+        "documentation": "Search by last modification date"
+      }, {
+        "name": "organization",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-organization",
+        "type": "reference",
+        "documentation": "Search by responsible organization"
+      }, {
+        "name": "owner",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-owner",
+        "type": "reference",
+        "documentation": "Search by task owner"
+      }, {
+        "name": "part-of",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-part-of",
+        "type": "reference",
+        "documentation": "Search by task this task is part of"
+      }, {
+        "name": "patient",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-patient",
+        "type": "reference",
+        "documentation": "Search by patient"
+      }, {
+        "name": "performer",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-performer",
+        "type": "token",
+        "documentation": "Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."
+      }, {
+        "name": "period",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-period",
+        "type": "date",
+        "documentation": "Search by period Task is/was underway"
+      }, {
+        "name": "priority",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-priority",
+        "type": "token",
+        "documentation": "Search by task priority"
+      }, {
+        "name": "requester",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-requester",
+        "type": "reference",
+        "documentation": "Search by task requester"
+      }, {
+        "name": "responsible",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-responsible",
+        "type": "reference",
+        "documentation": "Search by responsible"
+      }, {
+        "name": "restriction-category",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-restriction-category",
+        "type": "token",
+        "documentation": "Search by restriction category"
+      }, {
+        "name": "status",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-status",
+        "type": "token",
+        "documentation": "Search by task status"
+      }, {
+        "name": "subject",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-subject",
+        "type": "reference",
+        "documentation": "Search by subject"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"
+      } ]
+    } ]
+  } ]
+}

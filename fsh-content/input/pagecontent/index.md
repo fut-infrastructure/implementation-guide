@@ -7,14 +7,13 @@ of the eHealth Infrastructure.
 
 ### Scope
 
-This document presents Danish use concepts defined via FHIR processable artifacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR STU3 specification.
+This document presents Danish use concepts defined via FHIR processable artifacts; these are outputs with agreed approaches to varied kinds of healthcare related information based on the core FHIR R4 specification.
 * [Profiles](profiles.html) - are constraints of core FHIR resources and datatype for use in the eHealth Infrastructure
 * [Extensions](extensions.html) - are FHIR extensions that are added for local use, covering needed concepts of the eHealth Infrastructure
 * [Terminologies](terminology.html) - are defined or referenced code systems and value sets for the context of the eHealth Infrastructure
 
-FHIR profiles are managed under the constellation of the Danish municipalities, regions and the Danish Health Authority:
+FHIR profiles are managed under the constellation of the Danish municipalities and regions:
 
-* [Danish Health Authority](https://sst.dk/)
 * [Danish regions](https://regioner.dk/)
 * [Danish municipalities](https://kl.dk/)
 

@@ -1,11 +1,11 @@
-`POST [base]/ProcedureRequest/$validate`
+`POST [base]/ServiceRequest/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,13 +18,19 @@ __Body__:
     {
       "name": "resource",
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-procedurerequest"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
         },
         "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference": {
+              "reference": "https://careplan.cit-careplan-1804.local/fhir/EpisodeOfCare/1588"
+            }
+          },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingPolicy",
             "valueCodeableConcept": {
@@ -79,7 +85,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -1953403031,
+                  "value": -345758820,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -87,10 +93,8 @@ __Body__:
             ]
           }
         ],
-        "definition": [
-          {
-            "reference": "https://plan.cit-careplan-1716.local/fhir/ActivityDefinition/3743"
-          }
+        "instantiatesCanonical": [
+          "https://plan.cit-careplan-1804.local/fhir/ActivityDefinition/83834"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -101,13 +105,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "e3a2ed71-7545-4525-a619-a70cd799fc38"
+          "text": "9b02b7aa-092d-4f92-9694-18972cd98b41"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-1716.local/fhir/Patient/99169"
-        },
-        "context": {
-          "reference": "https://careplan.cit-careplan-1716.local/fhir/EpisodeOfCare/1195"
+          "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/560"
         }
       }
     }
