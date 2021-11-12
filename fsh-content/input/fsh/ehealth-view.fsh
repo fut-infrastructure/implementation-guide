@@ -37,4 +37,3 @@ Description: "The valueset matching the view"
 * extension[forType].valueCoding from ehealth-view-for-type
 * extension[forType].valueCoding 1..1
 * extension[forType]. ^short = "In type is stated what this is a reference to"
-
