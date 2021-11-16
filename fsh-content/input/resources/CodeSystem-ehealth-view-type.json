@@ -4,6 +4,7 @@
   "url": "http://ehealth.sundhed.dk/cs/view-type",
   "version": "0.6.0",
   "name": "ViewType",
+  "title": "View types",
   "status": "active",
   "experimental": false,
   "date": "2021-10-15T00:00:00+00:00",
@@ -23,13 +24,13 @@
   "content": "complete",
   "concept": [
     {
-      "code": "INTERPREDVIEW",
-      "display": "Interpredview display",
-      "definition": "InterpredView",
-      "property": [
+      "code": "interpretedview",
+      "display": "Interpreted view",
+      "definition": "interpretedView",
+      "designation": [
         {
-          "code": "InterpredView",
-          "valueDateTime": "2021-10-14"
+          "language": "da",
+          "value": "Fortolket visning"
         }
       ]
     }

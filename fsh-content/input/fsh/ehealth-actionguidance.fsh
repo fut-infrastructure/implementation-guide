@@ -14,6 +14,7 @@ Parent: Basic
 * extension contains ehealth-content named content 1..1
 * extension contains ehealth-actionguidance-type named type 1..1
 * extension contains ehealth-actionguidance-for named forType 1..*
+* code from http://ehealth.sundhed.dk/vs/basic-resource-type
 
 
 Extension: ehealth-actionguidance-type

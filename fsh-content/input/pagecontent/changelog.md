@@ -11,6 +11,23 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+#### ActionGuidiance and View
+- Both ActonGuidance and View extends Basic FHIR resource. New added extensions common for both:
+  - actionguidance-view-title - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-view-title
+  - version - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version
+  - description - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-description
+  - purpose - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-purpose
+  - useContext - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext
+  - status - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status
+  - content - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-content
+  - code - http://ehealth.sundhed.dk/fhir/StructureDefinition/basic-resource-type
+- New extensions for ActionGuidance
+  - actionguidance-type - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-type
+  - actionguidance-for -http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-for
+- New extensions for View
+  - view-type - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view-type
+  - view-for - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view-for
+
 #### QuestionnaireAdvance
 - QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
   - calculatedExpression - http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression

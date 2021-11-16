@@ -1,8 +1,32 @@
 # Introduction
-A service exhibition of interpreted display is created in the administrative domain. It is exhibited as FHIR resources, with its own profile. The profile are added elements used in existing profiles in the administrative domain, for management of ownership, marking, as well as general elements such as name, purpose, status etc.
+The Action guidance is based on FHIRs Basic resource. The Action guidance expresses which questions / answers should give rise to the presentation of instructions to employee.
 
 # Scope and Usage
+The eHealth profile of Action guidance has the following extensions:
+* `ehealth-content` The element is used for the actual modeling of interpreted display resp. action guide
+* `ehealth-type` This is used so that different types of interpreted display/action guidance can be searched for and distinguished.
+* `ehealth-title` Name for this action guidance
+* `ehealth-description` A description of this action guidance
+* `ehealth-purpose` Why this action definition is defined
+* `ehealth-version` The business version of the action guidance
+* `ehealth-useContext` The context that the content is intended to support
+* `ehealth-recommendation` Which defines the recommendation level of this action guidance. The values of the used ValueSet allows for indicating the life cycle state, for instance that it is a draft or recommended action guidance.
+* `ehealth-intendedAudience` Can be set to one or more Organizations to indicate for which Organization(s) this action guidance should be selectable for use. This is meant for filtering and is not enforced or in any way restricting which Organization have access.
+* `ehealth-actionguidance-type` A code to determine the type of information in field ehealth-actionguidance-for
+* `ehealth-actionguidance-for` A reference to the resource type in actionguidance-type
 
-The FHIR resources contain a construction with a contained FHIR Binary intended text-based representation of the actual modeling of action guide. This with regard to maximum flexibility and agility, as these modeling is not currently are finally determined.
+### Update restrictions
+The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
+the Action guidance:
 
-An action guidance is organization-specific and linked to one or more FHIR resources. Modeling is generally done with respect to the type of associated FHIR resource, regardless of whether the first, known application concerns the FHIR Questionnaire. Interpreted display is a projection on one / several Questionnaire in relation to display of selected questions / answers in a QuestionnaireResponse, while an action guide expresses which questions / answers should give rise to the presentation of which instructions / instructions to employee fva. action.
+* `ehealth-modifier-role.reference` references the Organization
+* `ehealth-modifier-role.role` set to `owner` means that the referenced Organization can update the resource
+  and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors.
+* `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
+  but not alter the element `ehealth-modifier-role`.
+
+### Life cycle
+* `ehealth-status` The lifecycle status of the resource. "draft | active | retired"
+    - When created it will have status draft.
+    - From draft can change to either active or retired.
+    - If status is active, it can only change to retired.

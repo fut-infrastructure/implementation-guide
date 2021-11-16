@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "ehealth-action-guidance-for-types",
-  "url": "http://ehealth.sundhed.dk/vs/action-guidance-for-types",
+  "id": "ehealth-basic-resource-type",
+  "url": "http://ehealth.sundhed.dk/vs/basic-resource-type",
   "version": "0.6.0",
-  "name": "ActionGuidanceForTypes",
-  "title": "Action guidance For Types",
+  "name": "BasicResourceType",
+  "title": "Basic resource type",
   "status": "active",
   "experimental": true,
   "date": "2021-10-20T00:00:00+00:00",
@@ -20,11 +20,11 @@
       ]
     }
   ],
-  "description": "Action guidance for types",
+  "description": "Basic resource type",
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/ehealth-basic-resource-type"
+        "system": "http://ehealth.sundhed.dk/cs/basic-resource-type"
       }
     ]
   }
