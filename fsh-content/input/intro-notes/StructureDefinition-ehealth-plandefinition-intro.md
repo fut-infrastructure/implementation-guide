@@ -6,6 +6,8 @@ This resource allows for the definition of various types of plans as a sharable,
 
 In scope of the eHealth infrastructure, PlanDefinitions are used for defining tele-medicine plans. A PlanDefinition is comprised by potentially a number of subplans (each also represented as a PlanDefinition), and a number of activities each represented by an ActivityDefinition instance. These in turn can specify an activity to be performed, for instance measuring of a measure or answering of a Questionnaire.
 
+By specifying an `ActionTrigger` in the PlanDefinition, the Practitioner can specify when an ActivityDefinition should become active based on what other ActivitiesDefinitions the patient has completed.
+
 Once a PlanDefinition and all the PlanDefinition, ActivityDefinition, and Questionnaire instances comprising it has a status set to other than draft, it can be itself be set to active. With that status it can be used as a template for applying it into a CarePlan bound to a specific Patient. The CarePlan then references the PlanDefinition as its definition.
 
 ### Governance principles

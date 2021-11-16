@@ -8,7 +8,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/action-type`
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/action`
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/trigger-enablement-code`
+
 ### ValueSets
+- Added ValueSet `http://ehealth.sundhed.dk/vs/action`
+- Added ValueSet `http://ehealth.sundhed.dk/vs/trigger-behavior`
+- Added ValueSet `http://ehealth.sundhed.dk/vs/trigger-enablement-code`
+
 ### ConceptMaps
 ### Resource/profile changes
 #### QuestionnaireAdvance
@@ -17,6 +25,15 @@ This is the log of changes made to the eHealth Implementation Guide.
   - UsageMode - http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode
   - OrdinalValue - http://hl7.org/fhir/StructureDefinition/ordinalValue
   - Variable - http://hl7.org/fhir/StructureDefinition/variable
+
+#### PlanDefinition
+- added extensions to PlanDefinition to enable actions performed by the planDefinition along with the conditions for the action
+  - Action ActionTrigger - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionTrigger
+  - TriggerCondition - Profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-triggerCondition
+
+#### ServiceRequest
+- added extension to ServiceRequest to enable a reaction to trigger conditions expressed in other activities.
+  - TriggerEnablementCode - profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-trigger-enablement-code
   
 ## 2021.3 (2021-10-28)
  
