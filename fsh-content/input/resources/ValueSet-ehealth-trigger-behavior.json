@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "trigger-behavior",
+  "url": "http://ehealth.sundhed.dk/vs/trigger-behavior",
+  "version": "2021-10-22T14:11:00",
+  "name": "TriggerBehavior",
+  "title": "Trigger Behavior",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-10-22",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Trigger behavior",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/action-selection-behavior",
+        "concept": [
+          {
+            "code": "any",
+            "display": "Any"
+          },
+          {
+            "code": "all",
+            "display": "All"
+          }
+        ]
+      }
+    ]
+  }
+}
