@@ -29,17 +29,17 @@
       "designation": [
         {
           "language": "da",
-          "value": ""
+          "value": "Handlingsvejledning"
         }
       ]
     },
     {
-      "code": "interpretedview",
-      "display": "Interpreted view",
+      "code": "view",
+      "display": "View",
       "designation": [
         {
           "language": "da",
-          "value": "Fortolket visning"
+          "value": "Visning"
         }
       ]
     }
