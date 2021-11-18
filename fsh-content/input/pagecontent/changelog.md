@@ -11,6 +11,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/action-type`
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/action`
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/trigger-enablement-code`
+- Added approved-view to CodeSystem: http://ehealth.sundhed.dk/cs/clinicalimpression-codes
+- Added citizen-view-approved to CodeSystem: http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes
 
 ### ValueSets
 - Added ValueSet `http://ehealth.sundhed.dk/vs/action`
@@ -35,6 +37,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - New extensions for View
   - view-type - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view-type
   - view-for - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view-for
+
+#### ClinicalImpression
+- Added extension: ehealth-clinicalimpression-viewInvestigationItem
 
 #### QuestionnaireAdvance
 - QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
