@@ -65,5 +65,6 @@ Extension:   ehealth-clinicalimpression-viewInvestigationItem
 Title:       "View investigation item"
 Description: "Investigation item for View resources so they can be approved."
 * . ^short = "View item"
+* value[x] only Reference(ehealth-view)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
