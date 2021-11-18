@@ -1,11 +1,11 @@
-`GET [base]/Communication/2`
+`GET [base]/Communication/6`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmQ3YTk1MzQtOWM4Mi00NWVkLTk5N2MtNTRlODZiOWIxYmFhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWQwZDk3NjgtMDRhZi00M2Q2LTlhZmQtMjM5NjBlNzdlODcyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,19 +15,26 @@ __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "2",
+  "id": "6",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-20T07:17:34.699+00:00",
+    "lastUpdated": "2021-09-29T14:01:54.156+00:00",
+    "source": "#3cd8adba-1710-42",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/43048"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam",
       "valueReference": {
-        "reference": "https://organization.cit-measurement-1229.local/fhir/CareTeam/67764"
+        "reference": "https://organization.cit-measurement-1363.local/fhir/CareTeam/95881"
       }
     },
     {
@@ -54,15 +61,15 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/75491"
+    "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/29719"
   },
-  "topic": [
-    {
-      "reference": "https://measurement.cit-measurement-1229.local/fhir/Observation/1"
-    }
-  ],
-  "context": {
-    "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/39350"
+  "topic": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
+        "code": "report-labs"
+      }
+    ]
   }
 }
 ```

@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="-s-transform-to-QFDD"/>
+   <url value="https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD"/>
    <name value="transform-to-QFDD"/>
+   <title value="Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document."/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document."/>
-   <idempotent value="true"/>
+   <affectsState value="false"/>
    <code value="transform-to-QFDD"/>
    <system value="true"/>
    <type value="false"/>

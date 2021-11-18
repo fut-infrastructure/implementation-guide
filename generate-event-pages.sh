@@ -57,5 +57,5 @@ done
 append_newline_to_all_files_in_directory "${dir}/eventtables"
 append_newline_to_all_files_in_directory "${dir}/eventexamples"
 
-cat ${dir}/eventtables/*.md > pages/_includes/systematic-service-event-tables.md
-cat ${dir}/eventexamples/*.md > pages/_includes/systematic-service-event-examples.md
+cat ${dir}/eventtables/*.md > fsh-content/input/pagecontent/systematic-service-event-tables.md
+cat ${dir}/eventexamples/*.md > fsh-content/input/pagecontent/systematic-service-event-examples.md

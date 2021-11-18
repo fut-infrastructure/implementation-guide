@@ -1,5 +1,5 @@
 Extension: ehealth-purpose
 Title:     "Purpose"
-Description: "Why this plan definition is defined"
-* . ^short = "Why this plan definition is defined"
+Description: "Why this is defined"
+* . ^short = "Why this is defined"
 * value[x] only markdown

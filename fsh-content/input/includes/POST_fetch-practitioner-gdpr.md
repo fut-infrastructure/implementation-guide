@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWYzYzA5YmUtNzhhNS00NDMwLWJkYzgtYjRmZTVkM2RlNTZjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmRmYmQyMzQtYTEwYi00Y2JjLWEwODAtYzM2MTg4NTE1NTgxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-558.local/fhir/Organization/62537"
+        "reference": "https://organization.cit-reporting-597.local/fhir/Organization/72705"
       }
     },
     {
       "name": "practitioner",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-558.local/fhir/Practitioner/85867"
+        "reference": "https://organization.cit-reporting-597.local/fhir/Practitioner/49638"
       }
     }
   ]
@@ -47,9 +47,9 @@ __Response__
   "contentType": "application/gzip-json",
   "securityContext": {
     "identifier": {
-      "value": "9f3c09be-78a5-4430-bdc8-b4fe5d3de56c"
+      "value": "bdfbd234-a10b-4cbc-a080-c36188515581"
     }
   },
-  "content": "UEsDBBQACAgIAEx0k1IAAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIxXzA0XzE5XzE0XzM0XzI0L1JlcG9ydEhlYWRlcrWRwY7CIBCG32XOtrTYupWziTc13Z40HggZK0kFMsVN3Kbvvtgal+x9j+T/hu8fGIDQWfI7eUMQcCCpvPbaGqTt5lDXUwiLF9XoieIZz5OsSPJ1kxdiWQhepBVfZzk/BtRJCpd5pB7EEAZ7eyeFzcNNgt8wIkGcBjBzBWmsedz0t3y2CNCX7O746UmbNqS70AzGxZu21ErzB67xgoRG4ex/H+DqvesFY/FQqrRP5u2CISnLKu2skh27XDWxfUSyFS+XHzBGdhc91z/Y499gVVmtnvbzOP4AUEsHCG7MtbzXAAAAtQEAAFBLAwQUAAgICABMdJNSAAAAAAAAAAAAAAAARAAAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAyMV8wNF8xOV8xNF8zNF8yNC9FSGVhbHRoUHJhY3RpdGlvbmVyLzg1ODY3tZJNj9MwEIb/i89189U4H0d2keAEgt7QHibjSWOR2JHtVCpV/zt22q66aDkhjvZ43vedx3NmHz8RjH74agG98sposqw9M0vOLBZpf5qJtexNecOUDHd1WYsqHCbyEFuOZF148DnWsnA/W9OrMXT/YIP3c5skNKxeW7doOZDcyp9JPyibfPd2Qb9YeqZe6dXm/pbPj84vlw3TMEXNM+thUuMpmMGuaYoKCy6kqPgOs55DXXQ8rUQhsatTASW7xN53hv1m1ogvr8UnsLQnmFaPPzC81m4IiqZuxH9HgMHVR9c4gpKkvepV/KYQ0J2cp5CVLVa3inzf2h7bkCvGOsK40K22LEq2Ac2u7FPkuRQd33USeYNlwesyy9NaVhV1IpDaMOfBLy6yDaCOxO7YGWEqRNcVPM+qjO+aLDRX1PCsyxqRNkUJedyJGaxXqGbQfo050dTdF6snSxqjWGTiAhRjD6DVL4hTb1F5bmk2QUAfeFnW29EgjFdMjz+XXBfwEvNaAmf0k5HX1UAjQ/NbQH//AHQJGi1XWRfC4yrD9h+e49YE9Qk0HILgl4ect/X4l2Ee5RKRl0W1+l1+A1BLBwimK3XuugEAAJUDAABQSwECFAAUAAgICABMdJNSbsy1vNcAAAC1AQAANwAAAAAAAAAAAAAAAAAAAAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIxXzA0XzE5XzE0XzM0XzI0L1JlcG9ydEhlYWRlclBLAQIUABQACAgIAEx0k1KmK3XuugEAAJUDAABEAAAAAAAAAAAAAAAAADwBAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjFfMDRfMTlfMTRfMzRfMjQvRUhlYWx0aFByYWN0aXRpb25lci84NTg2N1BLBQYAAAAAAgACANcAAABoAwAAAAA="
+  "data": "UEsDBBQACAgIACA+TFMAAAAAAAAAAAAAAAA3AAAAUHJhY3RpdGlvbmVyR0RQUlJlcG9ydF8yMDIxXzEwXzEyXzA3XzQ5XzAxL1JlcG9ydEhlYWRlcrWRsW7DIBCG3+Xm2IDj2DVzpW5J5Hhq1QGhS4LkADqTSInldy+1qxR174j+7/j+gxEIvaOwVRcECXtSOphgnEV6e9237RzC6ofqzEwVvBCZ4JkoOl7LspFc5FWzrkT5HlGvKF4WkAaQYxwc3JU0dnc/C37DhAT5MYJdKijr7P1iHuq7RYRuqr/iIZCxp5huYzOYVk/a0UnZP3CLRyS0Ghf/8wDnEPwgGUuHcm1CtmwXDdmmqfPeadWz49kQ2yUkq4uab2BK7D55rn+wp7/ByqZav0T75zR9AVBLBwjtHgYb2AAAALUBAABQSwMEFAAICAgAID5MUwAAAAAAAAAAAAAAAEQAAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjFfMTBfMTJfMDdfNDlfMDEvRUhlYWx0aFByYWN0aXRpb25lci80OTYzOLVSS4/bIBD+L5xD/ADHxsfuVmpPrdrcqj2M8RCj2mABjpRG+e8FJ1llq+2p6hFmvsd8M2fy8RPCGIavDmTQQVuDjrRn4tDbxUncn2YkLXlT3hDdxz8udqyJjwkDJMgRnY8Nn1OtiP+zs0qPEf2DDCHMbZbhsGpt/WL6Aftt/zNTg3bZ9+AWGRaHz6i0WWXuvXR+VH65bIiBKXGeiYJJj6coVqqCV3VXUlHvGOVN3lHIoaJV13Cmdgg5z8klYd8Z9ptdLb68Fp/A4R5hWjX+iOG1dougbvJK/PcIZFQNSTWNoHs0QSud1hQN+pMPGL2SxZlWY1CtU7JlotlF+SOMC95qy6L7tmKAUEBDZSU6ynmZ045JRWuBsKuaEkVfxqQ2xAcIi4/QFNQRyT12UjAha5WXVOasoFwiox0WQBlw1ghe5KJI3TO4oKWewYTV5oRTdz8shQ6NTGQpEx9Dse4ARv+CNPVW6kAdzjYSmAOtRL0drYTxGtPj5rLrAV6SX4fgrXmy/fU0pO0j+G1Af1+A9Jm0pl9pfTQvVxqy//CcriayT2DgEAm/PPi8nce/DPNIl9VlnVer3uU3UEsHCJHcfFe4AQAAlQMAAFBLAQIUABQACAgIACA+TFPtHgYb2AAAALUBAAA3AAAAAAAAAAAAAAAAAAAAAABQcmFjdGl0aW9uZXJHRFBSUmVwb3J0XzIwMjFfMTBfMTJfMDdfNDlfMDEvUmVwb3J0SGVhZGVyUEsBAhQAFAAICAgAID5MU5HcfFe4AQAAlQMAAEQAAAAAAAAAAAAAAAAAPQEAAFByYWN0aXRpb25lckdEUFJSZXBvcnRfMjAyMV8xMF8xMl8wN180OV8wMS9FSGVhbHRoUHJhY3RpdGlvbmVyLzQ5NjM4UEsFBgAAAAACAAIA1wAAAGcDAAAAAA=="
 }
 ```

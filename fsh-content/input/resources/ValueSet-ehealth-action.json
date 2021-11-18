@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-action",
+  "url": "http://ehealth.sundhed.dk/vs/action",
+  "version": "2021-10-22T13:25:25",
+  "name": "Action",
+  "title": "Action",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-10-22",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "action status.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/action"
+      }
+    ]
+  }
+}

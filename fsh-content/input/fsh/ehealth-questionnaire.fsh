@@ -6,6 +6,7 @@ Parent: Questionnaire
 * extension contains ehealth-revision named revision 0..1
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-questionnaire-type named type 1..*
+
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
@@ -15,6 +16,11 @@ Parent: Questionnaire
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue named questionnaire-sliderStepValue 0..1
 * item.extension contains ehealth-questionnaire-feedback named feedback 0..1
 * item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
+* item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
+* item.extension contains ehealth-questionnaire-image named ehealth-question-image 0..1
+* item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
+* item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
+* item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
@@ -54,3 +60,36 @@ Description: "Feedback if reponse is within the defined range."
 * extension[min].valueInteger 1..1
 * extension[max].value[x] only integer
 * extension[max].valueInteger 1..1
+
+Extension: ehealth-questionnaire-image
+Title:     "Questionnaire image"
+Description: "Defines the images in the questionnaire answers and questions."
+* . ^short = "The image for a questionnaire"
+* extension contains
+    content 1..1 and
+    terms 0..1
+* extension[terms].value[x] only string
+* extension[content].valueReference(Binary)
+* extension[content].valueReference ^type.aggregation = #contained
+
+Extension: ehealth-questionnaire-answerSignificance
+Title:     "Answer significance"
+Description: "Defines the Answer significance for an answer option in the questionnaire."
+* . ^short = "The Answer significance for an answer"
+* extension contains
+    ehealth-answer-Condition named answerCondition 1..2 and
+    significance 1..1
+* extension[significance].valueCoding from http://ehealth.sundhed.dk/vs/questionnaire-item-significance-indicator
+* extension[significance].valueCoding 1..1
+
+Extension: ehealth-answer-Condition
+Title:     "Answer condition"
+Description: "Defines the Answer condition for an answer option in the questionnaire."
+* . ^short = "An Answer condition for an answer"
+* extension contains
+    value 1..1 and
+    operator 1..1
+* extension[value].value[x] 1..1
+* extension[value].value[x] only decimal or integer or string or Coding or boolean
+* extension[operator].valueCode from http://hl7.org/fhir/ValueSet/questionnaire-enable-operator
+

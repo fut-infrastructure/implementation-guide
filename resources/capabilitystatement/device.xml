@@ -1,378 +1,462 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="device"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-05-05T00:31:47+00:00"/>
+   <date value="2021-10-12T10:27:44.909+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="device"/>
-      <version value="1.6.0"/>
+      <version value="1.8.0"/>
    </software>
    <implementation>
       <description value="eHealth device service"/>
       <url value="https://device.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="Device"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
+         <searchRevInclude value="Device:location"/>
+         <searchRevInclude value="Device:organization"/>
+         <searchRevInclude value="Device:patient"/>
+         <searchRevInclude value="DeviceMetric:parent"/>
+         <searchRevInclude value="DeviceMetric:source"/>
+         <searchRevInclude value="DeviceUseStatement:context"/>
+         <searchRevInclude value="DeviceUseStatement:device"/>
+         <searchRevInclude value="DeviceUseStatement:patient"/>
+         <searchRevInclude value="DeviceUseStatement:subject"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="device-name"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-device-name"/>
             <type value="string"/>
             <documentation value="A server defined search that may match any of the string fields in the Device.udi.name  or Device.type.coding.display or  Device.type.text"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-identifier"/>
             <type value="token"/>
             <documentation value="Instance id from manufacturer, owner, and others"/>
          </searchParam>
          <searchParam>
             <name value="location"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-location"/>
             <type value="reference"/>
             <documentation value="A location, where the resource is found"/>
          </searchParam>
          <searchParam>
             <name value="manufacturer"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-manufacturer"/>
             <type value="string"/>
             <documentation value="The manufacturer of the device"/>
          </searchParam>
          <searchParam>
             <name value="model"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-model"/>
             <type value="string"/>
             <documentation value="The model of the device"/>
          </searchParam>
          <searchParam>
             <name value="organization"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-organization"/>
             <type value="reference"/>
             <documentation value="The organization responsible for the device"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-patient"/>
             <type value="reference"/>
             <documentation value="Patient information, if the resource is affixed to a person"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-status"/>
             <type value="token"/>
             <documentation value="active | inactive | entered-in-error | unknown"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-type"/>
             <type value="token"/>
             <documentation value="The type of the device"/>
          </searchParam>
          <searchParam>
             <name value="udi-carrier"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-udi-carrier"/>
             <type value="string"/>
             <documentation value="UDI Barcode (RFID or other technology) string either in HRF format or AIDC format converted to base64 string."/>
          </searchParam>
          <searchParam>
             <name value="udi-di"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-udi-di"/>
             <type value="string"/>
             <documentation value="The udi Device Identifier (DI)"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/Device-url"/>
             <type value="uri"/>
             <documentation value="Network address to contact device"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="DeviceMetric"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="single"/>
          <searchInclude value="DeviceMetric:source"/>
+         <searchRevInclude value="Device:location"/>
+         <searchRevInclude value="Device:organization"/>
+         <searchRevInclude value="Device:patient"/>
+         <searchRevInclude value="DeviceMetric:parent"/>
+         <searchRevInclude value="DeviceMetric:source"/>
+         <searchRevInclude value="DeviceUseStatement:context"/>
+         <searchRevInclude value="DeviceUseStatement:device"/>
+         <searchRevInclude value="DeviceUseStatement:patient"/>
+         <searchRevInclude value="DeviceUseStatement:subject"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-category"/>
             <type value="token"/>
             <documentation value="The category of the metric"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-identifier"/>
             <type value="token"/>
             <documentation value="The identifier of the metric"/>
          </searchParam>
          <searchParam>
             <name value="parent"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-parent"/>
             <type value="reference"/>
             <documentation value="The parent DeviceMetric resource"/>
          </searchParam>
          <searchParam>
             <name value="qualityCategory"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-qualityCategory"/>
             <type value="token"/>
             <documentation value="The device metric quality"/>
          </searchParam>
          <searchParam>
             <name value="source"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-source"/>
             <type value="reference"/>
             <documentation value="The device resource"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceMetric-type"/>
             <type value="token"/>
             <documentation value="The component type"/>
          </searchParam>
       </resource>
       <resource>
          <type value="DeviceUseStatement"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"/>
          <interaction>
-            <code value="read"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="vread"/>
          </interaction>
          <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="create"/>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <searchInclude value="DeviceUseStatement:device"/>
+         <searchRevInclude value="Device:location"/>
+         <searchRevInclude value="Device:organization"/>
+         <searchRevInclude value="Device:patient"/>
+         <searchRevInclude value="DeviceMetric:parent"/>
+         <searchRevInclude value="DeviceMetric:source"/>
+         <searchRevInclude value="DeviceUseStatement:context"/>
+         <searchRevInclude value="DeviceUseStatement:device"/>
+         <searchRevInclude value="DeviceUseStatement:patient"/>
+         <searchRevInclude value="DeviceUseStatement:subject"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="context"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-context"/>
             <type value="reference"/>
             <documentation value="Search by context"/>
          </searchParam>
          <searchParam>
             <name value="device"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-device"/>
             <type value="reference"/>
             <documentation value="Search by device"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-identifier"/>
             <type value="token"/>
             <documentation value="Search by identifier"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-patient"/>
             <type value="reference"/>
             <documentation value="Search by subject - a patient"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-status"/>
             <type value="token"/>
             <documentation value="active | completed | entered-in-error +"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-subject"/>
             <type value="reference"/>
             <documentation value="Search by subject"/>
          </searchParam>
          <searchParam>
-            <name value="when-used"/>
+            <name value="timing"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/SearchParameter/DeviceUseStatement-timing"/>
             <type value="date"/>
             <documentation value="Period device was used"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="Device:location"/>
+         <searchRevInclude value="Device:organization"/>
+         <searchRevInclude value="Device:patient"/>
+         <searchRevInclude value="DeviceMetric:parent"/>
+         <searchRevInclude value="DeviceMetric:source"/>
+         <searchRevInclude value="DeviceUseStatement:context"/>
+         <searchRevInclude value="DeviceUseStatement:device"/>
+         <searchRevInclude value="DeviceUseStatement:patient"/>
+         <searchRevInclude value="DeviceUseStatement:subject"/>
       </resource>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Device--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceUseStatement--validate"/>
-         </definition>
-      </operation>
    </rest>
 </CapabilityStatement>

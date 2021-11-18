@@ -6,6 +6,7 @@ Parent: ServiceRequest
 * extension contains ehealth-referenceRange named referenceRange 0..*
 * extension contains ehealth-sharingPolicy named sharingPolicy 1..1
 * extension contains ehealth-reuseCriteria named reuseCriteria 0..1
+* extension contains ehealth-trigger-enablement-code named triggerEnablementCode 0..1
 
 * instantiatesCanonical 1..1
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
@@ -23,3 +24,11 @@ Parent: ServiceRequest
 * note.authorString only string
 * relevantHistory only Reference(ehealth-provenance)
 * relevantHistory ^type.aggregation = #referenced
+
+Extension: ehealth-trigger-enablement-code
+Title:     "triggerEnablementCode"
+Description: "Controls whether this ServiceRequest will react to trigger conditions expressed in other activities of the plan."
+* . ^short = "Enablement of reaction to triggering conditions being met."
+* value[x] only code
+* valueCode from http://ehealth.sundhed.dk/vs/trigger-enablement-code
+* valueCode 1..1

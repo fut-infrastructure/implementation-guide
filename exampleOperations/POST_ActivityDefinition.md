@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -45,7 +45,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-705.local/fhir/Organization/27649"
+        "reference": "https://organization.cit-plan-750.local/fhir/Organization/84788"
       }
     },
     {
@@ -54,7 +54,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-705.local/fhir/Organization/52697"
+            "reference": "https://organization.cit-plan-750.local/fhir/Organization/63909"
           }
         },
         {
@@ -168,7 +168,7 @@ __Body__:
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 1913483160,
+            "value": 1971349840,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -176,14 +176,14 @@ __Body__:
       ]
     }
   ],
-  "version": "177b9c80-34f7-4c0c-adac-eac24af44388",
-  "name": "cb0a0a96-d7b4-47da-a60e-a04334028d4c",
+  "version": "6bd17cb6-4f52-4ee5-9889-3ba47732037b",
+  "name": "e88bcd26-acfd-45ba-b882-74880feea23b",
   "status": "active",
   "topic": [
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/definition-topic",
+          "system": "http://terminology.hl7.org/CodeSystem/definition-topic",
           "code": "treatment"
         }
       ]
@@ -204,10 +204,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "124",
+  "id": "130",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-19T15:02:25.015+00:00",
+    "lastUpdated": "2021-10-05T08:11:59.039+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -238,7 +238,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-705.local/fhir/Organization/27649"
+        "reference": "https://organization.cit-plan-750.local/fhir/Organization/84788"
       }
     },
     {
@@ -247,7 +247,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-705.local/fhir/Organization/52697"
+            "reference": "https://organization.cit-plan-750.local/fhir/Organization/63909"
           }
         },
         {
@@ -361,7 +361,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 1913483160,
+            "value": 1971349840,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -369,14 +369,14 @@ __Response__
       ]
     }
   ],
-  "version": "177b9c80-34f7-4c0c-adac-eac24af44388",
-  "name": "cb0a0a96-d7b4-47da-a60e-a04334028d4c",
+  "version": "6bd17cb6-4f52-4ee5-9889-3ba47732037b",
+  "name": "e88bcd26-acfd-45ba-b882-74880feea23b",
   "status": "active",
   "topic": [
     {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/definition-topic",
+          "system": "http://terminology.hl7.org/CodeSystem/definition-topic",
           "code": "treatment"
         }
       ]

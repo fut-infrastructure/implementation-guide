@@ -1,45 +1,50 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="organization"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-04-20T03:58:32+00:00"/>
+   <date value="2021-10-07T09:15:32.926+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="organization"/>
-      <version value="1.8.0"/>
+      <version value="1.9.0"/>
    </software>
    <implementation>
       <description value="eHealth organization service"/>
       <url value="https://organization.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="CareTeam"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
@@ -47,469 +52,594 @@
          <searchInclude value="CareTeam:managingOrganization"/>
          <searchInclude value="CareTeam:participant"/>
          <searchInclude value="CareTeam:subject"/>
+         <searchRevInclude value="CareTeam:context"/>
+         <searchRevInclude value="CareTeam:encounter"/>
+         <searchRevInclude value="CareTeam:managingOrganization"/>
+         <searchRevInclude value="CareTeam:participant"/>
+         <searchRevInclude value="CareTeam:patient"/>
+         <searchRevInclude value="CareTeam:subject"/>
+         <searchRevInclude value="Organization:endpoint"/>
+         <searchRevInclude value="Organization:partof"/>
+         <searchRevInclude value="PractitionerRole:endpoint"/>
+         <searchRevInclude value="PractitionerRole:location"/>
+         <searchRevInclude value="PractitionerRole:organization"/>
+         <searchRevInclude value="PractitionerRole:practitioner"/>
+         <searchRevInclude value="PractitionerRole:service"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="category"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-category"/>
             <type value="token"/>
             <documentation value="Type of team"/>
          </searchParam>
          <searchParam>
             <name value="context"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-context"/>
             <type value="reference"/>
             <documentation value="Encounter or episode associated with CareTeam"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-date"/>
             <type value="date"/>
             <documentation value="Time period team covers"/>
          </searchParam>
          <searchParam>
             <name value="encounter"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-encounter"/>
             <type value="reference"/>
             <documentation value="Encounter or episode associated with CareTeam"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-identifier"/>
             <type value="token"/>
             <documentation value="External Ids for this team"/>
          </searchParam>
          <searchParam>
             <name value="managingOrganization"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-managingOrganization"/>
             <type value="reference"/>
             <documentation value="Managing organization of a care team"/>
          </searchParam>
          <searchParam>
             <name value="participant"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-participant"/>
             <type value="reference"/>
             <documentation value="Who is involved"/>
          </searchParam>
          <searchParam>
             <name value="patient"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-patient"/>
             <type value="reference"/>
             <documentation value="Who care team is for"/>
          </searchParam>
          <searchParam>
             <name value="reasonCode"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-reasonCode"/>
             <type value="token"/>
             <documentation value="Reason care team exists"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-status"/>
             <type value="token"/>
             <documentation value="proposed | active | suspended | inactive | entered-in-error"/>
          </searchParam>
          <searchParam>
             <name value="subject"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/CareTeam-subject"/>
             <type value="reference"/>
             <documentation value="Who care team is for"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CareTeam:context"/>
+         <searchRevInclude value="CareTeam:encounter"/>
+         <searchRevInclude value="CareTeam:managingOrganization"/>
+         <searchRevInclude value="CareTeam:participant"/>
+         <searchRevInclude value="CareTeam:patient"/>
+         <searchRevInclude value="CareTeam:subject"/>
+         <searchRevInclude value="Organization:endpoint"/>
+         <searchRevInclude value="Organization:partof"/>
+         <searchRevInclude value="PractitionerRole:endpoint"/>
+         <searchRevInclude value="PractitionerRole:location"/>
+         <searchRevInclude value="PractitionerRole:organization"/>
+         <searchRevInclude value="PractitionerRole:practitioner"/>
+         <searchRevInclude value="PractitionerRole:service"/>
       </resource>
       <resource>
          <type value="Organization"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="update"/>
+         </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
-         <searchInclude value="CareTeam:managingOrganization"/>
          <searchInclude value="Organization:partof"/>
+         <searchRevInclude value="CareTeam:managingOrganization"/>
+         <searchRevInclude value="Organization:partof"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="active"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-active"/>
             <type value="token"/>
             <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
          </searchParam>
          <searchParam>
             <name value="address"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address"/>
             <type value="string"/>
             <documentation value="A (part of the) address of the organization"/>
          </searchParam>
          <searchParam>
             <name value="address-city"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address-city"/>
             <type value="string"/>
             <documentation value="A city specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-country"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address-country"/>
             <type value="string"/>
             <documentation value="A country specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-postalcode"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address-postalcode"/>
             <type value="string"/>
             <documentation value="A postal code specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-state"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address-state"/>
             <type value="string"/>
             <documentation value="A state specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-use"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-address-use"/>
             <type value="token"/>
             <documentation value="A use code specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="contactName"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-contactName"/>
             <type value="string"/>
             <documentation value="Contact name"/>
          </searchParam>
          <searchParam>
             <name value="cvrNumber"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-cvrNumber"/>
             <type value="string"/>
             <documentation value="Cvr number of the organization"/>
          </searchParam>
          <searchParam>
             <name value="endpoint"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-endpoint"/>
             <type value="reference"/>
             <documentation value="Technical endpoints providing access to services operated for the organization"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-identifier"/>
             <type value="token"/>
             <documentation value="Any identifier for the organization (not the accreditation issuer's identifier)"/>
          </searchParam>
          <searchParam>
             <name value="municipalityCode"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-municipalityCode"/>
             <type value="string"/>
             <documentation value="Municipality code of the organization"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-name"/>
             <type value="string"/>
             <documentation value="A portion of the organization's name or alias"/>
          </searchParam>
          <searchParam>
             <name value="partof"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-partof"/>
             <type value="reference"/>
             <documentation value="An organization of which this organization forms a part"/>
          </searchParam>
          <searchParam>
             <name value="phonetic"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-phonetic"/>
             <type value="string"/>
             <documentation value="A portion of the organization's name using some kind of phonetic matching algorithm"/>
          </searchParam>
          <searchParam>
             <name value="providerIdentifier"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-providerIdentifier"/>
             <type value="string"/>
             <documentation value="Provider identifier of the organization"/>
          </searchParam>
          <searchParam>
             <name value="regionCode"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-regionCode"/>
             <type value="string"/>
             <documentation value="Region code of the organization"/>
          </searchParam>
          <searchParam>
             <name value="source"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-source"/>
             <type value="token"/>
             <documentation value="Source of the organization"/>
          </searchParam>
          <searchParam>
             <name value="specialty"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-specialty"/>
             <type value="token"/>
             <documentation value="Specialty of the organization"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Organization-type"/>
             <type value="token"/>
             <documentation value="A code for the type of organization"/>
          </searchParam>
+         <operation>
+            <name value="traverse-to-sor"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor"/>
+            <documentation value="Traverse upforwards to the first SOR organization&#xa;Http response code 404 will be returned if no related SOR organization could be found"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="Practitioner"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchRevInclude value="CareTeam:context"/>
+         <searchRevInclude value="CareTeam:encounter"/>
+         <searchRevInclude value="CareTeam:managingOrganization"/>
+         <searchRevInclude value="CareTeam:participant"/>
+         <searchRevInclude value="CareTeam:patient"/>
+         <searchRevInclude value="CareTeam:subject"/>
+         <searchRevInclude value="Organization:endpoint"/>
+         <searchRevInclude value="Organization:partof"/>
+         <searchRevInclude value="PractitionerRole:endpoint"/>
+         <searchRevInclude value="PractitionerRole:location"/>
+         <searchRevInclude value="PractitionerRole:organization"/>
+         <searchRevInclude value="PractitionerRole:practitioner"/>
+         <searchRevInclude value="PractitionerRole:service"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="active"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-active"/>
             <type value="token"/>
             <documentation value="Whether the practitioner record is active"/>
          </searchParam>
          <searchParam>
             <name value="address"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address"/>
             <type value="string"/>
             <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
          </searchParam>
          <searchParam>
             <name value="address-city"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-city"/>
             <type value="string"/>
             <documentation value="A city specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-country"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-country"/>
             <type value="string"/>
             <documentation value="A country specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-postalcode"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-postalcode"/>
             <type value="string"/>
             <documentation value="A postalCode specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-state"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-state"/>
             <type value="string"/>
             <documentation value="A state specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-use"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-use"/>
             <type value="token"/>
             <documentation value="A use code specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="communication"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-communication"/>
             <type value="token"/>
             <documentation value="One of the languages that the practitioner can communicate with"/>
          </searchParam>
          <searchParam>
             <name value="email"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-email"/>
             <type value="token"/>
             <documentation value="A value in an email contact"/>
          </searchParam>
          <searchParam>
             <name value="family"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-family"/>
             <type value="string"/>
             <documentation value="A portion of the family name"/>
          </searchParam>
          <searchParam>
             <name value="gender"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-gender"/>
             <type value="token"/>
             <documentation value="Gender of the practitioner"/>
          </searchParam>
          <searchParam>
             <name value="given"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-given"/>
             <type value="string"/>
             <documentation value="A portion of the given name"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-identifier"/>
             <type value="token"/>
             <documentation value="A practitioner's Identifier"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-name"/>
             <type value="string"/>
             <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
          </searchParam>
          <searchParam>
             <name value="phone"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phone"/>
             <type value="token"/>
             <documentation value="A value in a phone contact"/>
          </searchParam>
          <searchParam>
             <name value="phonetic"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phonetic"/>
             <type value="string"/>
             <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
          </searchParam>
          <searchParam>
             <name value="telecom"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-telecom"/>
             <type value="token"/>
             <documentation value="The value in any kind of contact"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="PractitionerRole"/>
-         <profile>
-            <reference value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"/>
-         </profile>
+         <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
@@ -520,182 +650,165 @@
          <searchInclude value="PractitionerRole:organization"/>
          <searchInclude value="PractitionerRole:practitioner"/>
          <searchInclude value="PractitionerRole:service"/>
+         <searchRevInclude value="CareTeam:context"/>
+         <searchRevInclude value="CareTeam:encounter"/>
+         <searchRevInclude value="CareTeam:managingOrganization"/>
+         <searchRevInclude value="CareTeam:participant"/>
+         <searchRevInclude value="CareTeam:patient"/>
+         <searchRevInclude value="CareTeam:subject"/>
+         <searchRevInclude value="Organization:endpoint"/>
+         <searchRevInclude value="Organization:partof"/>
+         <searchRevInclude value="PractitionerRole:endpoint"/>
+         <searchRevInclude value="PractitionerRole:location"/>
+         <searchRevInclude value="PractitionerRole:organization"/>
+         <searchRevInclude value="PractitionerRole:practitioner"/>
+         <searchRevInclude value="PractitionerRole:service"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="active"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-active"/>
             <type value="token"/>
             <documentation value="Whether this practitioner's record is in active use"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-date"/>
             <type value="date"/>
             <documentation value="The period during which the practitioner is authorized to perform in these role(s)"/>
          </searchParam>
          <searchParam>
             <name value="email"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-email"/>
             <type value="token"/>
             <documentation value="A value in an email contact"/>
          </searchParam>
          <searchParam>
             <name value="endpoint"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-endpoint"/>
             <type value="reference"/>
             <documentation value="Technical endpoints providing access to services operated for the practitioner with this role"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-identifier"/>
             <type value="token"/>
             <documentation value="A practitioner's Identifier"/>
          </searchParam>
          <searchParam>
             <name value="location"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-location"/>
             <type value="reference"/>
             <documentation value="One of the locations at which this practitioner provides care"/>
          </searchParam>
          <searchParam>
             <name value="organization"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-organization"/>
             <type value="reference"/>
             <documentation value="The identity of the organization the practitioner represents / acts on behalf of"/>
          </searchParam>
          <searchParam>
             <name value="phone"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-phone"/>
             <type value="token"/>
             <documentation value="A value in a phone contact"/>
          </searchParam>
          <searchParam>
             <name value="practitioner"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-practitioner"/>
             <type value="reference"/>
             <documentation value="Practitioner that is able to provide the defined services for the organation"/>
          </searchParam>
          <searchParam>
             <name value="role"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-role"/>
             <type value="token"/>
             <documentation value="The practitioner can perform this role at for the organization"/>
          </searchParam>
          <searchParam>
             <name value="service"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-service"/>
             <type value="reference"/>
             <documentation value="The list of healthcare services that this worker provides for this role's Organization/Location(s)"/>
          </searchParam>
          <searchParam>
             <name value="specialty"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-specialty"/>
             <type value="token"/>
             <documentation value="The practitioner has this specialty at an organization"/>
          </searchParam>
          <searchParam>
             <name value="telecom"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/SearchParameter/PractitionerRole-telecom"/>
             <type value="token"/>
             <documentation value="The value in any kind of contact"/>
          </searchParam>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <operation>
          <name value="import-organizations"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations"/>
-         </definition>
+         <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations"/>
+         <documentation value="Import a bundle containing at least one organization tree."/>
       </operation>
       <operation>
          <name value="persist-login"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="traverse-to-sor"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/PractitionerRole--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/PractitionerRole-i-validate"/>
-         </definition>
+         <definition value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login"/>
+         <documentation value="This operation persists login information into CareTeams and PractitionerRoles&#xa;The following elements of each careteam are mandatory:&#xa;- id: Reference based on the careteam from the saml security token&#xa;- status: any&#xa;- name: any&#xa;- reasonCode: any&#xa;- participant: 1 for each careteam-role in the saml security token&#xa;-- role: from the saml security token&#xa;-- member: reference to the practitioner&#xa;-- onBehalfOf: reference to organization (cannot be set currently because of a bug in hapi)&#xa;&#xa;Persist-login will find each careteam, and update it with any new participants and roles from the input bundle.&#xa;The input careteam resources are are used as a container for the participant list. The rest of the fields are not used.&#xa;The following elements of each PractitionerRole are mandatory:&#xa;- practitioner&#xa;- organization&#xa;- code: roles from the saml security token (CareteamParticipantRole valueset)&#xa;&#xa;Persist-login will search for practitionerRoles for each combination of (practitioner, organization) and create it if it doesn't already exists."/>
       </operation>
    </rest>
 </CapabilityStatement>

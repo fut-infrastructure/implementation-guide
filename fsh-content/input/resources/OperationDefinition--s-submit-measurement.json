@@ -1,1 +1,28 @@
-{"resourceType":"OperationDefinition","id":"-s-submit-measurement","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>submit-measurement</h2><p>OPERATION: submit-measurement</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-submit-measurement</pre><div><p>The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted.</p>\n<h3>Parameter description</h3>\n<p>measurement: Bundle containing:\n- 0..<em> Observation (ehealth-observation profile)\n- 0..</em> QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..<em> Media (ehealth-media profile)\n- 0..</em> Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format &quot;urn:oid:&lt;the oid&gt;&quot; or &quot;urn:uuid:&lt;the uuid&gt;.&quot;.</p>\n<p>All resources in the Bundle must refer to the same Patient and EpisodeOfCare.</p>\n<h3>Output description</h3>\n<p>The returned Bundle contains references to the stored input resources where the id has been substituted.</p>\n<p>eHealth infrastructure will substitute the id when saving the resources in a single transaction.</p>\n</div><p>URL: [base]/$submit-measurement</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>measurement</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/bundle.html\">Bundle</a></td><td/><td/></tr><tr><td>OUT</td><td>bundle</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/bundle.html\">Bundle</a></td><td/><td/></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-submit-measurement","name":"submit-measurement","status":"active","kind":"operation","date":"2021-05-06T08:31:20+00:00","description":"The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction.","idempotent":false,"code":"submit-measurement","system":true,"type":false,"instance":false,"parameter":[{"name":"measurement","use":"in","min":0,"max":"1","type":"Bundle"},{"name":"bundle","use":"out","min":0,"max":"1","type":"Bundle"}]}
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-submit-measurement",
+  "url": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-submit-measurement",
+  "name": "submit-measurement",
+  "title": "Submit measurement",
+  "status": "active",
+  "kind": "operation",
+  "description": "The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction.",
+  "affectsState": true,
+  "code": "submit-measurement",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "measurement",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  }, {
+    "name": "bundle",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
+}

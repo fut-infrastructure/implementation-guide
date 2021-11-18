@@ -4,6 +4,7 @@
   "url": "http://ehealth.sundhed.dk/cs/action-guidance-types",
   "version": "0.6.0",
   "name": "ActionGuidanceType",
+  "title": "Action guidance types",
   "status": "active",
   "experimental": false,
   "date": "2021-10-15T00:00:00+00:00",
@@ -23,24 +24,13 @@
   "content": "complete",
   "concept": [
     {
-      "code": "INTERPRETVIEW",
-      "display": "Interpretview display",
-      "definition": "interpretview",
-      "property": [
+      "code": "actionguidance",
+      "display": "Action guidance display",
+      "definition": "Action guidance",
+      "designation": [
         {
-          "code": "InterpredView",
-          "valueDateTime": "2021-10-14"
-        }
-      ]
-    },
-    {
-      "code": "ACTIONGUIDE",
-      "display": "Acton guide display",
-      "definition": "Action guide",
-      "property": [
-        {
-          "code": "ActionGuide",
-          "valueDateTime": "2021-10-14"
+          "language": "da",
+          "value": "Handlingsvejledning"
         }
       ]
     }

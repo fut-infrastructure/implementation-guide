@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTA2ZjEyNDUtYTdiMi00MzliLWJlMmQtODY5M2NkMjk1OTk3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzMwODM3MzAtNDVmZC00OGY1LWI0NTUtMGFkOWE2NTRhZmY3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -29,16 +29,18 @@ __Body__:
         "name": "Name",
         "participant": [
           {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-                  "code": "monitoring_adjuster"
-                }
-              ]
-            },
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
+                    "code": "monitoring_adjuster"
+                  }
+                ]
+              }
+            ],
             "member": {
-              "reference": "https://organization.cit-organization-795.local/fhir/Practitioner/108"
+              "reference": "https://organization.cit-organization-851.local/fhir/Practitioner/108"
             }
           }
         ],

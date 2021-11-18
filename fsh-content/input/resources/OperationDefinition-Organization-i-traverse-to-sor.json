@@ -1,1 +1,23 @@
-{"resourceType":"OperationDefinition","id":"Organization-i-traverse-to-sor","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>traverse-to-sor</h2><p>OPERATION: traverse-to-sor</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-i-traverse-to-sor</pre><div><p>Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found</p>\n</div><p>URL: [base]/Organization/[id]/$traverse-to-sor</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>return</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/organization.html\">Organization</a></td><td/><td/></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-i-traverse-to-sor","name":"traverse-to-sor","status":"active","kind":"operation","date":"2021-05-06T08:31:20+00:00","description":"Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found","idempotent":true,"code":"traverse-to-sor","resource":["Organization"],"system":false,"type":false,"instance":true,"parameter":[{"name":"return","use":"out","min":0,"max":"1","type":"Organization"}]}
+{
+  "resourceType": "OperationDefinition",
+  "id": "Organization-i-traverse-to-sor",
+  "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
+  "name": "traverse-to-sor",
+  "title": "Traverse to SOR",
+  "status": "active",
+  "kind": "operation",
+  "description": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found",
+  "affectsState": false,
+  "code": "traverse-to-sor",
+  "resource": [ "Organization" ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [ {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Organization"
+  } ]
+}

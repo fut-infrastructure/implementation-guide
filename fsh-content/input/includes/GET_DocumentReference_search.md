@@ -1,11 +1,11 @@
-`GET [base]/DocumentReference?description=a2a715da-1e52-4a91-a321-f9fbf64317cb`
+`GET [base]/DocumentReference?related-ref=https%3A%2F%2Fmeasurement.cit-document-transformation-1155.local%2Ffhir%2FObservation%2F27477%2F_history%2F1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5kZWxldGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,27 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "4a10ca82-2746-46e6-b711-3e413f86efbf",
+  "id": "aa508471-4c6d-4d5d-97c9-bdcea5616b59",
   "meta": {
-    "lastUpdated": "2021-04-19T15:02:13.002+00:00"
+    "lastUpdated": "2021-10-14T06:10:07.804+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-705.local/fhir/DocumentReference?_format=json&_pretty=true&description=a2a715da-1e52-4a91-a321-f9fbf64317cb"
+      "url": "https://document-transformation.cit-document-transformation-1155.local/fhir/DocumentReference?_format=json&_pretty=true&related-ref=https%3A%2F%2Fmeasurement.cit-document-transformation-1155.local%2Ffhir%2FObservation%2F27477%2F_history%2F1"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-705.local/fhir/DocumentReference/119",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1155.local/fhir/DocumentReference/66",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "119",
+        "id": "66",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-04-19T15:02:12.832+00:00",
+          "lastUpdated": "2021-10-14T06:10:07.082+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -49,28 +49,41 @@ __Response__
             }
           ]
         },
-        "indexed": "2021-04-19T15:02:12.746+00:00",
-        "description": "a2a715da-1e52-4a91-a321-f9fbf64317cb",
+        "indexed": "2021-10-14T06:10:07.041+00:00",
         "content": [
           {
             "attachment": {
               "url": "http://some.com/"
             }
           }
-        ]
+        ],
+        "context": {
+          "related": [
+            {
+              "ref": {
+                "reference": "https://measurement.cit-document-transformation-1155.local/fhir/Observation/27477/_history/1"
+              }
+            },
+            {
+              "ref": {
+                "reference": "https://measurement.cit-document-transformation-1155.local/fhir/Observation/22069/_history/1"
+              }
+            }
+          ]
+        }
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-705.local/fhir/DocumentReference/117",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1155.local/fhir/DocumentReference/67",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "117",
+        "id": "67",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-04-19T15:02:12.328+00:00",
+          "lastUpdated": "2021-10-14T06:10:07.361+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -84,15 +97,28 @@ __Response__
             }
           ]
         },
-        "indexed": "2021-04-19T15:02:12.241+00:00",
-        "description": "a2a715da-1e52-4a91-a321-f9fbf64317cb",
+        "indexed": "2021-10-14T06:10:07.307+00:00",
         "content": [
           {
             "attachment": {
               "url": "http://some.com/"
             }
           }
-        ]
+        ],
+        "context": {
+          "related": [
+            {
+              "ref": {
+                "reference": "https://measurement.cit-document-transformation-1155.local/fhir/Observation/76243/_history/1"
+              }
+            },
+            {
+              "ref": {
+                "reference": "https://measurement.cit-document-transformation-1155.local/fhir/Observation/27477/_history/1"
+              }
+            }
+          ]
+        }
       },
       "search": {
         "mode": "match"

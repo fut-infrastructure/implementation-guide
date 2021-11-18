@@ -1,11 +1,11 @@
-`GET [base]/Observation/588/_history/1`
+`GET [base]/Observation/574/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWNmNDU0MTEtOGE1ZS00OTJiLTlhMmQtZjQyYmM5NTEyMmFiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEyMjkubG9jYWwvZmhpci9DYXJlVGVhbS81NzcwNSIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTEyMjkubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzYzNjQ5IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDI4NzZlMjktNzc2Ny00ZWI0LWJmNzUtOWM1NzZhNDkzM2RiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTEzNjMubG9jYWwvZmhpci9DYXJlVGVhbS84NTExOCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTEzNjMubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzgwNDY4IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,20 +15,27 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "588",
+  "id": "574",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-20T07:23:24.985+00:00",
+    "lastUpdated": "2021-09-29T14:08:09.870+00:00",
+    "source": "#9f4ebd56-8351-48",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/80468"
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
       "extension": [
         {
-          "url": "procedureRequestVersionId",
+          "url": "serviceRequestVersionId",
           "valueId": "42"
         },
         {
@@ -47,7 +54,7 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1229.local/fhir/ProcedureRequest/41146"
+      "reference": "https://careplan.cit-measurement-1363.local/fhir/ServiceRequest/70117"
     }
   ],
   "status": "final",
@@ -60,22 +67,19 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/8109"
-  },
-  "context": {
-    "reference": "https://careplan.cit-measurement-1229.local/fhir/EpisodeOfCare/63649"
+    "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/98664"
   },
   "effectivePeriod": {
-    "start": "2021-04-20T07:23:24+00:00",
-    "end": "2021-04-20T07:23:24+00:00"
+    "start": "2021-09-29T14:08:09+00:00",
+    "end": "2021-09-29T14:08:09+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1229.local/fhir/Patient/8109"
+      "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/98664"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1229.local/fhir/Device/17805"
+    "reference": "https://device.cit-measurement-1363.local/fhir/Device/13096"
   }
 }
 ```

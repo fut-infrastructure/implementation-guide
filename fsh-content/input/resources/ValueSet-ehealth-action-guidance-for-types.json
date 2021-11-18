@@ -24,7 +24,21 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/resource-types"
+        "system": "http://hl7.org/fhir/resource-types",
+        "concept": [
+          {
+            "code" : "Questionnaire",
+            "display" : "Questionnaire",
+            "definition" : "A structured set of questions intended to guide the collection of answers from end-users. Questionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, consistent data collection.",
+            "designation":
+            [
+              {
+                "language": "da",
+                "value": "Spørgeskema"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

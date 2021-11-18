@@ -6,7 +6,7 @@ Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRGV2aWNlTWV0cmljLnJlYWQiLCJEZXZpY2VNZXRyaWMud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,7 +18,7 @@ __Body__:
   "id": "139",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-19T15:16:27.778+00:00",
+    "lastUpdated": "2021-10-12T09:30:38.114+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -105,9 +105,11 @@ __Body__:
       ]
     }
   ],
-  "identifier": {
-    "value": "Foo"
-  },
+  "identifier": [
+    {
+      "value": "Foo"
+    }
+  ],
   "type": {
     "coding": [
       {
@@ -117,7 +119,7 @@ __Body__:
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-592.local/fhir/Device/138"
+    "reference": "https://device.cit-device-635.local/fhir/Device/138"
   },
   "operationalStatus": "off",
   "category": "calculation"
@@ -131,7 +133,7 @@ __Response__
   "id": "139",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-04-19T15:16:27.956+00:00",
+    "lastUpdated": "2021-10-12T09:30:39.599+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -218,9 +220,11 @@ __Response__
       ]
     }
   ],
-  "identifier": {
-    "value": "Foo"
-  },
+  "identifier": [
+    {
+      "value": "Foo"
+    }
+  ],
   "type": {
     "coding": [
       {
@@ -230,7 +234,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-592.local/fhir/Device/138"
+    "reference": "https://device.cit-device-635.local/fhir/Device/138"
   },
   "operationalStatus": "off",
   "category": "calculation"

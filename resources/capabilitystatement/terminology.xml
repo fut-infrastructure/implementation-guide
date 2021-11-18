@@ -1,39 +1,38 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
    <id value="terminology"/>
+   <name value="RestServer"/>
    <status value="active"/>
-   <date value="2021-04-20T03:59:48+00:00"/>
+   <date value="2021-09-29T11:32:14.773+00:00"/>
    <publisher value="ehealth.sundhed.dk"/>
    <kind value="instance"/>
    <software>
       <name value="terminology"/>
-      <version value="1.7.0"/>
+      <version value="1.8.0"/>
    </software>
    <implementation>
       <description value="eHealth terminology service"/>
       <url value="https://terminology.devtest.systematic-ehealth.com/fhir"/>
    </implementation>
-   <fhirVersion value="3.0.2"/>
-   <acceptUnknown value="extensions"/>
+   <fhirVersion value="4.0.1"/>
    <format value="application/fhir+xml"/>
+   <format value="xml"/>
    <format value="application/fhir+json"/>
+   <format value="json"/>
+   <format value="application/x-turtle"/>
+   <format value="ttl"/>
+   <format value="html/json"/>
+   <format value="html/xml"/>
+   <format value="html/turtle"/>
    <rest>
       <mode value="server"/>
       <resource>
          <type value="CodeSystem"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/CodeSystem"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/CodeSystem"/>
          <interaction>
-            <code value="read"/>
+            <code value="search-type"/>
          </interaction>
          <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -45,157 +44,272 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="search-type"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-code"/>
             <type value="token"/>
             <documentation value="A code defined in the code system"/>
          </searchParam>
          <searchParam>
             <name value="content-mode"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-content-mode"/>
             <type value="token"/>
-            <documentation value="not-present | example | fragment | complete"/>
+            <documentation value="not-present | example | fragment | complete | supplement"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context"/>
+            <type value="token"/>
+            <documentation value="A use context assigned to the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-quantity"/>
+            <type value="quantity"/>
+            <documentation value="A quantity- or range-valued use context assigned to the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type"/>
+            <type value="token"/>
+            <documentation value="A type of use context assigned to the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type-quantity"/>
+            <type value="composite"/>
+            <documentation value="A use context type and quantity- or range-based value assigned to the code system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type-value"/>
+            <type value="composite"/>
+            <documentation value="A use context type and value assigned to the code system"/>
          </searchParam>
          <searchParam>
             <name value="date"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-date"/>
             <type value="date"/>
             <documentation value="The code system publication date"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-description"/>
             <type value="string"/>
             <documentation value="The description of the code system"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the code system"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the code system"/>
          </searchParam>
          <searchParam>
             <name value="language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-language"/>
             <type value="token"/>
             <documentation value="A language in which a designation is provided"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the code system"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the code system"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-status"/>
             <type value="token"/>
             <documentation value="The current status of the code system"/>
          </searchParam>
          <searchParam>
+            <name value="supplements"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-supplements"/>
+            <type value="reference"/>
+            <documentation value="Find code system supplements for the referenced code system"/>
+         </searchParam>
+         <searchParam>
             <name value="system"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-system"/>
             <type value="uri"/>
             <documentation value="The system for any codes defined by this code system (same as 'url')"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the code system"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the code system"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-version"/>
             <type value="token"/>
             <documentation value="The business version of the code system"/>
          </searchParam>
+         <operation>
+            <name value="lookup"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-lookup"/>
+         </operation>
+         <operation>
+            <name value="subsumes"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-subsumes"/>
+         </operation>
+         <operation>
+            <name value="validate-code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"/>
+         </operation>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
+         <operation>
+            <name value="apply-codesystem-delta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"/>
+         </operation>
+         <operation>
+            <name value="apply-codesystem-delta-remove"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-remove"/>
+         </operation>
+         <operation>
+            <name value="upload-external-code-system"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-upload-external-code-system"/>
+         </operation>
       </resource>
       <resource>
          <type value="ConceptMap"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/ConceptMap"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/ConceptMap"/>
          <interaction>
-            <code value="read"/>
+            <code value="search-type"/>
          </interaction>
          <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -207,196 +321,289 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="search-type"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchInclude value="ConceptMap:other"/>
          <searchInclude value="ConceptMap:source"/>
          <searchInclude value="ConceptMap:source-uri"/>
          <searchInclude value="ConceptMap:target"/>
          <searchInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
+            <name value="context"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context"/>
+            <type value="token"/>
+            <documentation value="A use context assigned to the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-quantity"/>
+            <type value="quantity"/>
+            <documentation value="A quantity- or range-valued use context assigned to the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type"/>
+            <type value="token"/>
+            <documentation value="A type of use context assigned to the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type-quantity"/>
+            <type value="composite"/>
+            <documentation value="A use context type and quantity- or range-based value assigned to the concept map"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type-value"/>
+            <type value="composite"/>
+            <documentation value="A use context type and value assigned to the concept map"/>
+         </searchParam>
+         <searchParam>
             <name value="date"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-date"/>
             <type value="date"/>
             <documentation value="The concept map publication date"/>
          </searchParam>
          <searchParam>
             <name value="dependson"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-dependson"/>
             <type value="uri"/>
             <documentation value="Reference to property mapping depends on"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-description"/>
             <type value="string"/>
             <documentation value="The description of the concept map"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the concept map"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the concept map"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the concept map"/>
          </searchParam>
          <searchParam>
             <name value="other"/>
-            <type value="uri"/>
-            <documentation value="Canonical URL for other concept map"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-other"/>
+            <type value="reference"/>
+            <documentation value="canonical reference to an additional ConceptMap to use for mapping if the source concept is unmapped"/>
          </searchParam>
          <searchParam>
             <name value="product"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-product"/>
             <type value="uri"/>
             <documentation value="Reference to property mapping depends on"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the concept map"/>
          </searchParam>
          <searchParam>
             <name value="source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source"/>
             <type value="reference"/>
-            <documentation value="Identifies the source of the concepts which are being mapped"/>
+            <documentation value="The source value set that contains the concepts that are being mapped"/>
          </searchParam>
          <searchParam>
             <name value="source-code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-code"/>
             <type value="token"/>
             <documentation value="Identifies element being mapped"/>
          </searchParam>
          <searchParam>
             <name value="source-system"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-system"/>
             <type value="uri"/>
-            <documentation value="Code System (if value set crosses code systems)"/>
+            <documentation value="Source system where concepts to be mapped are defined"/>
          </searchParam>
          <searchParam>
             <name value="source-uri"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-uri"/>
             <type value="reference"/>
-            <documentation value="Identifies the source of the concepts which are being mapped"/>
+            <documentation value="The source value set that contains the concepts that are being mapped"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-status"/>
             <type value="token"/>
             <documentation value="The current status of the concept map"/>
          </searchParam>
          <searchParam>
             <name value="target"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target"/>
             <type value="reference"/>
-            <documentation value="Provides context to the mappings"/>
+            <documentation value="The target value set which provides context for the mappings"/>
          </searchParam>
          <searchParam>
             <name value="target-code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-code"/>
             <type value="token"/>
             <documentation value="Code that identifies the target element"/>
          </searchParam>
          <searchParam>
             <name value="target-system"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-system"/>
             <type value="uri"/>
-            <documentation value="System of the target (if necessary)"/>
+            <documentation value="Target system that the concepts are to be mapped to"/>
          </searchParam>
          <searchParam>
             <name value="target-uri"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-uri"/>
             <type value="reference"/>
-            <documentation value="Provides context to the mappings"/>
+            <documentation value="The target value set which provides context for the mappings"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the concept map"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the concept map"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-version"/>
             <type value="token"/>
             <documentation value="The business version of the concept map"/>
          </searchParam>
+         <operation>
+            <name value="translate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-it-translate"/>
+         </operation>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="Group"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/Group"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/Group"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -408,7 +615,16 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
@@ -417,124 +633,174 @@
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchInclude value="Group:managing-entity"/>
          <searchInclude value="Group:member"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="actual"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-actual"/>
             <type value="token"/>
             <documentation value="Descriptive or actual"/>
          </searchParam>
          <searchParam>
             <name value="characteristic"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-characteristic"/>
             <type value="token"/>
             <documentation value="Kind of characteristic"/>
          </searchParam>
          <searchParam>
             <name value="characteristic-value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-characteristic-value"/>
             <type value="composite"/>
             <documentation value="A composite of both characteristic and value"/>
          </searchParam>
          <searchParam>
             <name value="code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-code"/>
             <type value="token"/>
             <documentation value="The kind of resources contained"/>
          </searchParam>
          <searchParam>
             <name value="exclude"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-exclude"/>
             <type value="token"/>
             <documentation value="Group includes or excludes"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-identifier"/>
             <type value="token"/>
             <documentation value="Unique id"/>
          </searchParam>
          <searchParam>
+            <name value="managing-entity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-managing-entity"/>
+            <type value="reference"/>
+            <documentation value="Entity that is the custodian of the Group's definition"/>
+         </searchParam>
+         <searchParam>
             <name value="member"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-member"/>
             <type value="reference"/>
             <documentation value="Reference to the group member"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-type"/>
             <type value="token"/>
             <documentation value="The type of resources the group contains"/>
          </searchParam>
          <searchParam>
             <name value="value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-value"/>
             <type value="token"/>
             <documentation value="Value held by characteristic"/>
          </searchParam>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="NamingSystem"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/NamingSystem"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/NamingSystem"/>
          <interaction>
-            <code value="read"/>
+            <code value="search-type"/>
          </interaction>
          <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -546,172 +812,254 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="search-type"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
-         <searchInclude value="NamingSystem:replaced-by"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="contact"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-contact"/>
             <type value="string"/>
             <documentation value="Name of an individual to contact"/>
          </searchParam>
          <searchParam>
+            <name value="context"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context"/>
+            <type value="token"/>
+            <documentation value="A use context assigned to the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-quantity"/>
+            <type value="quantity"/>
+            <documentation value="A quantity- or range-valued use context assigned to the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type"/>
+            <type value="token"/>
+            <documentation value="A type of use context assigned to the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type-quantity"/>
+            <type value="composite"/>
+            <documentation value="A use context type and quantity- or range-based value assigned to the naming system"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type-value"/>
+            <type value="composite"/>
+            <documentation value="A use context type and value assigned to the naming system"/>
+         </searchParam>
+         <searchParam>
             <name value="date"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-date"/>
             <type value="date"/>
             <documentation value="The naming system publication date"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-description"/>
             <type value="string"/>
             <documentation value="The description of the naming system"/>
          </searchParam>
          <searchParam>
             <name value="id-type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-id-type"/>
             <type value="token"/>
             <documentation value="oid | uuid | uri | other"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the naming system"/>
          </searchParam>
          <searchParam>
             <name value="kind"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-kind"/>
             <type value="token"/>
             <documentation value="codesystem | identifier | root"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the naming system"/>
          </searchParam>
          <searchParam>
             <name value="period"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-period"/>
             <type value="date"/>
             <documentation value="When is identifier valid?"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the naming system"/>
          </searchParam>
          <searchParam>
-            <name value="replaced-by"/>
-            <type value="reference"/>
-            <documentation value="Use this instead"/>
-         </searchParam>
-         <searchParam>
             <name value="responsible"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-responsible"/>
             <type value="string"/>
             <documentation value="Who maintains system namespace?"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-status"/>
             <type value="token"/>
             <documentation value="The current status of the naming system"/>
          </searchParam>
          <searchParam>
             <name value="telecom"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-telecom"/>
             <type value="token"/>
             <documentation value="Contact details for individual or organization"/>
          </searchParam>
          <searchParam>
             <name value="type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-type"/>
             <type value="token"/>
             <documentation value="e.g. driver,  provider,  patient, bank etc."/>
          </searchParam>
          <searchParam>
             <name value="value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-value"/>
             <type value="string"/>
             <documentation value="The unique identifier"/>
          </searchParam>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="OperationDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/OperationDefinition"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
          <interaction>
             <code value="read"/>
          </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
       </resource>
       <resource>
          <type value="Practitioner"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/Practitioner"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
          <interaction>
-            <code value="read"/>
-         </interaction>
-         <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -723,7 +1071,16 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
+         </interaction>
+         <interaction>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <interaction>
             <code value="search-type"/>
@@ -732,180 +1089,239 @@
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="active"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-active"/>
             <type value="token"/>
             <documentation value="Whether the practitioner record is active"/>
          </searchParam>
          <searchParam>
             <name value="address"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address"/>
             <type value="string"/>
-            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, state, country, postalCode, and/or text"/>
+            <documentation value="A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"/>
          </searchParam>
          <searchParam>
             <name value="address-city"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-city"/>
             <type value="string"/>
             <documentation value="A city specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-country"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-country"/>
             <type value="string"/>
             <documentation value="A country specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-postalcode"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-postalcode"/>
             <type value="string"/>
             <documentation value="A postalCode specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-state"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-state"/>
             <type value="string"/>
             <documentation value="A state specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="address-use"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-use"/>
             <type value="token"/>
             <documentation value="A use code specified in an address"/>
          </searchParam>
          <searchParam>
             <name value="communication"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-communication"/>
             <type value="token"/>
             <documentation value="One of the languages that the practitioner can communicate with"/>
          </searchParam>
          <searchParam>
             <name value="email"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-email"/>
             <type value="token"/>
             <documentation value="A value in an email contact"/>
          </searchParam>
          <searchParam>
             <name value="family"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-family"/>
             <type value="string"/>
             <documentation value="A portion of the family name"/>
          </searchParam>
          <searchParam>
             <name value="gender"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-gender"/>
             <type value="token"/>
             <documentation value="Gender of the practitioner"/>
          </searchParam>
          <searchParam>
             <name value="given"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-given"/>
             <type value="string"/>
             <documentation value="A portion of the given name"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-identifier"/>
             <type value="token"/>
             <documentation value="A practitioner's Identifier"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-name"/>
             <type value="string"/>
             <documentation value="A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"/>
          </searchParam>
          <searchParam>
             <name value="phone"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phone"/>
             <type value="token"/>
             <documentation value="A value in a phone contact"/>
          </searchParam>
          <searchParam>
             <name value="phonetic"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phonetic"/>
             <type value="string"/>
             <documentation value="A portion of either family or given name using some kind of phonetic matching algorithm"/>
          </searchParam>
          <searchParam>
             <name value="telecom"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-telecom"/>
             <type value="token"/>
             <documentation value="The value in any kind of contact"/>
          </searchParam>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <resource>
          <type value="StructureDefinition"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/StructureDefinition"/>
-         </profile>
-         <interaction>
-            <code value="read"/>
-         </interaction>
+         <profile value="http://hl7.org/fhir/StructureDefinition/StructureDefinition"/>
          <interaction>
             <code value="search-type"/>
          </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <searchInclude value="*"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-type"/>
             <type value="token"/>
             <documentation value="Type defined or constrained by this structure"/>
          </searchParam>
       </resource>
       <resource>
          <type value="ValueSet"/>
-         <profile>
-            <reference value="http://hl7.org/fhir/Profile/ValueSet"/>
-         </profile>
+         <profile value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
          <interaction>
-            <code value="read"/>
+            <code value="search-type"/>
          </interaction>
          <interaction>
-            <code value="vread"/>
-         </interaction>
-         <interaction>
-            <code value="update"/>
-         </interaction>
-         <interaction>
-            <code value="patch"/>
+            <code value="create"/>
          </interaction>
          <interaction>
             <code value="delete"/>
@@ -917,478 +1333,239 @@
             <code value="history-type"/>
          </interaction>
          <interaction>
-            <code value="create"/>
+            <code value="patch"/>
          </interaction>
          <interaction>
-            <code value="search-type"/>
+            <code value="vread"/>
+         </interaction>
+         <interaction>
+            <code value="read"/>
+         </interaction>
+         <interaction>
+            <code value="update"/>
          </interaction>
          <conditionalCreate value="true"/>
          <conditionalUpdate value="true"/>
          <conditionalDelete value="multiple"/>
          <searchInclude value="*"/>
+         <searchRevInclude value="CodeSystem:supplements"/>
+         <searchRevInclude value="ConceptMap:other"/>
+         <searchRevInclude value="ConceptMap:source"/>
+         <searchRevInclude value="ConceptMap:source-uri"/>
+         <searchRevInclude value="ConceptMap:target"/>
+         <searchRevInclude value="ConceptMap:target-uri"/>
+         <searchRevInclude value="Group:managing-entity"/>
+         <searchRevInclude value="Group:member"/>
          <searchParam>
             <name value="_content"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_content"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a fulltext search"/>
          </searchParam>
          <searchParam>
             <name value="_filter"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_filter"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's data using a filter"/>
          </searchParam>
          <searchParam>
             <name value="_has"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_has"/>
             <type value="string"/>
             <documentation value="Return resources linked to by the given target"/>
          </searchParam>
          <searchParam>
             <name value="_id"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_id"/>
             <type value="token"/>
             <documentation value="The ID of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_language"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_language"/>
             <type value="string"/>
             <documentation value="The language of the resource"/>
          </searchParam>
          <searchParam>
             <name value="_lastUpdated"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_lastUpdated"/>
             <type value="date"/>
             <documentation value="Only return resources which were last updated as specified by the given range"/>
          </searchParam>
          <searchParam>
             <name value="_profile"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_profile"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given profile"/>
          </searchParam>
          <searchParam>
             <name value="_security"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_security"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given security labels"/>
          </searchParam>
          <searchParam>
             <name value="_source"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_source"/>
             <type value="uri"/>
             <documentation value="Search for resources which have the given source value (Resource.meta.source)"/>
          </searchParam>
          <searchParam>
             <name value="_tag"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_tag"/>
             <type value="token"/>
             <documentation value="Search for resources which have the given tag"/>
          </searchParam>
          <searchParam>
             <name value="_text"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_text"/>
             <type value="string"/>
             <documentation value="Search the contents of the resource's narrative using a fulltext search"/>
          </searchParam>
          <searchParam>
+            <name value="code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-code"/>
+            <type value="token"/>
+            <documentation value="This special parameter searches for codes in the value set. See additional notes on the ValueSet resource"/>
+         </searchParam>
+         <searchParam>
+            <name value="context"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context"/>
+            <type value="token"/>
+            <documentation value="A use context assigned to the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-quantity"/>
+            <type value="quantity"/>
+            <documentation value="A quantity- or range-valued use context assigned to the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type"/>
+            <type value="token"/>
+            <documentation value="A type of use context assigned to the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-quantity"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type-quantity"/>
+            <type value="composite"/>
+            <documentation value="A use context type and quantity- or range-based value assigned to the value set"/>
+         </searchParam>
+         <searchParam>
+            <name value="context-type-value"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type-value"/>
+            <type value="composite"/>
+            <documentation value="A use context type and value assigned to the value set"/>
+         </searchParam>
+         <searchParam>
             <name value="date"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-date"/>
             <type value="date"/>
             <documentation value="The value set publication date"/>
          </searchParam>
          <searchParam>
             <name value="description"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-description"/>
             <type value="string"/>
             <documentation value="The description of the value set"/>
          </searchParam>
          <searchParam>
             <name value="expansion"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-expansion"/>
             <type value="uri"/>
-            <documentation value="Uniquely identifies this expansion"/>
+            <documentation value="Identifies the value set expansion (business identifier)"/>
          </searchParam>
          <searchParam>
             <name value="identifier"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-identifier"/>
             <type value="token"/>
             <documentation value="External identifier for the value set"/>
          </searchParam>
          <searchParam>
             <name value="jurisdiction"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-jurisdiction"/>
             <type value="token"/>
             <documentation value="Intended jurisdiction for the value set"/>
          </searchParam>
          <searchParam>
             <name value="name"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-name"/>
             <type value="string"/>
             <documentation value="Computationally friendly name of the value set"/>
          </searchParam>
          <searchParam>
             <name value="publisher"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-publisher"/>
             <type value="string"/>
             <documentation value="Name of the publisher of the value set"/>
          </searchParam>
          <searchParam>
             <name value="reference"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-reference"/>
             <type value="uri"/>
             <documentation value="A code system included or excluded in the value set or an imported value set"/>
          </searchParam>
          <searchParam>
             <name value="status"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-status"/>
             <type value="token"/>
             <documentation value="The current status of the value set"/>
          </searchParam>
          <searchParam>
             <name value="title"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-title"/>
             <type value="string"/>
             <documentation value="The human-friendly name of the value set"/>
          </searchParam>
          <searchParam>
             <name value="url"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-url"/>
             <type value="uri"/>
             <documentation value="The uri that identifies the value set"/>
          </searchParam>
          <searchParam>
             <name value="version"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-version"/>
             <type value="token"/>
             <documentation value="The business version of the value set"/>
          </searchParam>
+         <operation>
+            <name value="expand"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-it-expand"/>
+         </operation>
+         <operation>
+            <name value="validate-code"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"/>
+         </operation>
+         <operation>
+            <name value="expunge"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"/>
+         </operation>
+         <operation>
+            <name value="meta"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta"/>
+            <documentation value="Request a global list of tags, profiles, and security labels"/>
+         </operation>
+         <operation>
+            <name value="meta-add"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add"/>
+            <documentation value="Add tags, profiles, and/or security labels to a resource"/>
+         </operation>
+         <operation>
+            <name value="meta-delete"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete"/>
+            <documentation value="Delete tags, profiles, and/or security labels from a resource"/>
+         </operation>
+         <operation>
+            <name value="validate"/>
+            <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"/>
+         </operation>
       </resource>
       <operation>
          <name value="import"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="lookup"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--lookup"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="subsumes"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--subsumes"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate-code"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-i-validate-code"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="apply-codesystem-delta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--apply-codesystem-delta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="apply-codesystem-delta-remove"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--apply-codesystem-delta-remove"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="upload-external-code-system"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem--upload-external-code-system"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="translate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-translate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Group-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/NamingSystem-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Practitioner-i-validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expand"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expand"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate-code"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate-code"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="expunge"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-expunge"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-add"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-add"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="meta-delete"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-meta-delete"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet--validate"/>
-         </definition>
-      </operation>
-      <operation>
-         <name value="validate"/>
-         <definition>
-            <reference value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-validate"/>
-         </definition>
+         <definition value="https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import"/>
+         <documentation value="Import terminology resources"/>
       </operation>
    </rest>
 </CapabilityStatement>

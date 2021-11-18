@@ -1,10 +1,12 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
    <id value="-s-import-organizations"/>
+   <url value="https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations"/>
    <name value="import-organizations"/>
+   <title value="Import a bundle containing at least one organization tree."/>
    <status value="active"/>
    <kind value="operation"/>
    <description value="Import a bundle containing at least one organization tree."/>
-   <idempotent value="false"/>
+   <affectsState value="true"/>
    <code value="import-organizations"/>
    <system value="true"/>
    <type value="false"/>

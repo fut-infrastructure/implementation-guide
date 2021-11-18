@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsicmVwb3J0LW5vbi1hbm9ueW1pemVkIiwiJGZldGNoLWNhcmVwbGFuLWN1c3RvbWl6YXRpb24tc3RhdHMiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTU1OC5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi85NjciLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJGZldGNoLWNhcmVwbGFuLWN1c3RvbWl6YXRpb24tc3RhdHMiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTU5Ny5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi8xNzQ4MiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.3.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-558.local/fhir/Organization/967"
+        "reference": "https://organization.cit-reporting-597.local/fhir/Organization/17482"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2021-04-19T14:33:55+00:00",
-        "end": "2021-04-19T14:33:55+00:00"
+        "start": "2021-10-12T07:48:29+00:00",
+        "end": "2021-10-12T07:48:29+00:00"
       }
     }
   ]
@@ -43,12 +43,12 @@ __Response__
   "id": "7",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-04-19T14:33:56.317+00:00",
+    "lastUpdated": "2021-10-12T07:48:30.496+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
   },
   "contentType": "text/plain",
-  "content": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="
+  "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="
 }
 ```

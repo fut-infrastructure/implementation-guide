@@ -1,4 +1,3 @@
-
 #### EpisodeOfCare Messages
 
 |MessageType|EventType|Topic|Description|
@@ -23,12 +22,12 @@
 |EHealthReferenceEvent|reference_added|ehealth-careplan.subject|A CarePlan has been assigned to a Patient. This only happens when $apply is called on a PlanDefinition|
 {:.grid}
 
-#### ProcedureRequest Messages
+#### ServiceRequest Messages
 
 |MessageType|EventType|Topic|Description|
 |---|---|---|---|
-|EHealthSimpleEvent|created|ehealth-procedurerequest|Generated when a ProcedureRequest is created. This only happens when $apply is called on a PlanDefinition|
-|EHealthSimpleEvent|updated|ehealth-procedurerequest|Generated when a ProcedureRequest is updated.|
+|EHealthSimpleEvent|created|ehealth-procedurerequest|Generated when a ServiceRequest is created. This only happens when $apply is called on a PlanDefinition|
+|EHealthSimpleEvent|updated|ehealth-procedurerequest|Generated when a ServiceRequest is updated.|
 {:.grid}
 
 #### Consent Messages

@@ -1,0 +1,1241 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "terminology",
+  "name": "terminology",
+  "status": "active",
+  "date": "2021-10-22T03:10:59.662+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "terminology",
+    "version": "1.8.0"
+  },
+  "implementation": {
+    "description": "eHealth terminology service",
+    "url": "https://terminology.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "CodeSystem",
+      "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*", "CodeSystem:supplements" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-code",
+        "type": "token",
+        "documentation": "A code defined in the code system"
+      }, {
+        "name": "content-mode",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-content-mode",
+        "type": "token",
+        "documentation": "not-present | example | fragment | complete | supplement"
+      }, {
+        "name": "context",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context",
+        "type": "token",
+        "documentation": "A use context assigned to the code system"
+      }, {
+        "name": "context-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the code system"
+      }, {
+        "name": "context-type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the code system"
+      }, {
+        "name": "context-type-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type-quantity",
+        "type": "composite",
+        "documentation": "A use context type and quantity- or range-based value assigned to the code system"
+      }, {
+        "name": "context-type-value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the code system"
+      }, {
+        "name": "date",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-date",
+        "type": "date",
+        "documentation": "The code system publication date"
+      }, {
+        "name": "description",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-description",
+        "type": "string",
+        "documentation": "The description of the code system"
+      }, {
+        "name": "identifier",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-identifier",
+        "type": "token",
+        "documentation": "External identifier for the code system"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the code system"
+      }, {
+        "name": "language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-language",
+        "type": "token",
+        "documentation": "A language in which a designation is provided"
+      }, {
+        "name": "name",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the code system"
+      }, {
+        "name": "publisher",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the code system"
+      }, {
+        "name": "status",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-status",
+        "type": "token",
+        "documentation": "The current status of the code system"
+      }, {
+        "name": "supplements",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-supplements",
+        "type": "reference",
+        "documentation": "Find code system supplements for the referenced code system"
+      }, {
+        "name": "system",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-system",
+        "type": "uri",
+        "documentation": "The system for any codes defined by this code system (same as 'url')"
+      }, {
+        "name": "title",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the code system"
+      }, {
+        "name": "url",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the code system"
+      }, {
+        "name": "version",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/CodeSystem-version",
+        "type": "token",
+        "documentation": "The business version of the code system"
+      } ],
+      "operation": [ {
+        "name": "lookup",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-lookup"
+      }, {
+        "name": "subsumes",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-subsumes"
+      }, {
+        "name": "validate-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      }, {
+        "name": "apply-codesystem-delta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"
+      }, {
+        "name": "apply-codesystem-delta-remove",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-remove"
+      }, {
+        "name": "upload-external-code-system",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-upload-external-code-system"
+      } ]
+    }, {
+      "type": "ConceptMap",
+      "profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "context",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context",
+        "type": "token",
+        "documentation": "A use context assigned to the concept map"
+      }, {
+        "name": "context-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the concept map"
+      }, {
+        "name": "context-type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the concept map"
+      }, {
+        "name": "context-type-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type-quantity",
+        "type": "composite",
+        "documentation": "A use context type and quantity- or range-based value assigned to the concept map"
+      }, {
+        "name": "context-type-value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the concept map"
+      }, {
+        "name": "date",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-date",
+        "type": "date",
+        "documentation": "The concept map publication date"
+      }, {
+        "name": "dependson",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-dependson",
+        "type": "uri",
+        "documentation": "Reference to property mapping depends on"
+      }, {
+        "name": "description",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-description",
+        "type": "string",
+        "documentation": "The description of the concept map"
+      }, {
+        "name": "identifier",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-identifier",
+        "type": "token",
+        "documentation": "External identifier for the concept map"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the concept map"
+      }, {
+        "name": "name",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the concept map"
+      }, {
+        "name": "other",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-other",
+        "type": "reference",
+        "documentation": "canonical reference to an additional ConceptMap to use for mapping if the source concept is unmapped"
+      }, {
+        "name": "product",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-product",
+        "type": "uri",
+        "documentation": "Reference to property mapping depends on"
+      }, {
+        "name": "publisher",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the concept map"
+      }, {
+        "name": "source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source",
+        "type": "reference",
+        "documentation": "The source value set that contains the concepts that are being mapped"
+      }, {
+        "name": "source-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-code",
+        "type": "token",
+        "documentation": "Identifies element being mapped"
+      }, {
+        "name": "source-system",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-system",
+        "type": "uri",
+        "documentation": "Source system where concepts to be mapped are defined"
+      }, {
+        "name": "source-uri",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-source-uri",
+        "type": "reference",
+        "documentation": "The source value set that contains the concepts that are being mapped"
+      }, {
+        "name": "status",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-status",
+        "type": "token",
+        "documentation": "The current status of the concept map"
+      }, {
+        "name": "target",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target",
+        "type": "reference",
+        "documentation": "The target value set which provides context for the mappings"
+      }, {
+        "name": "target-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-code",
+        "type": "token",
+        "documentation": "Code that identifies the target element"
+      }, {
+        "name": "target-system",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-system",
+        "type": "uri",
+        "documentation": "Target system that the concepts are to be mapped to"
+      }, {
+        "name": "target-uri",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-target-uri",
+        "type": "reference",
+        "documentation": "The target value set which provides context for the mappings"
+      }, {
+        "name": "title",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the concept map"
+      }, {
+        "name": "url",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the concept map"
+      }, {
+        "name": "version",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ConceptMap-version",
+        "type": "token",
+        "documentation": "The business version of the concept map"
+      } ],
+      "operation": [ {
+        "name": "translate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-it-translate"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "Group",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Group",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      }, {
+        "code": "search-type"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*", "Group:managing-entity", "Group:member" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "actual",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-actual",
+        "type": "token",
+        "documentation": "Descriptive or actual"
+      }, {
+        "name": "characteristic",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-characteristic",
+        "type": "token",
+        "documentation": "Kind of characteristic"
+      }, {
+        "name": "characteristic-value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-characteristic-value",
+        "type": "composite",
+        "documentation": "A composite of both characteristic and value"
+      }, {
+        "name": "code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-code",
+        "type": "token",
+        "documentation": "The kind of resources contained"
+      }, {
+        "name": "exclude",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-exclude",
+        "type": "token",
+        "documentation": "Group includes or excludes"
+      }, {
+        "name": "identifier",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-identifier",
+        "type": "token",
+        "documentation": "Unique id"
+      }, {
+        "name": "managing-entity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-managing-entity",
+        "type": "reference",
+        "documentation": "Entity that is the custodian of the Group's definition"
+      }, {
+        "name": "member",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-member",
+        "type": "reference",
+        "documentation": "Reference to the group member"
+      }, {
+        "name": "type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-type",
+        "type": "token",
+        "documentation": "The type of resources the group contains"
+      }, {
+        "name": "value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Group-value",
+        "type": "token",
+        "documentation": "Value held by characteristic"
+      } ],
+      "operation": [ {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "NamingSystem",
+      "profile": "http://hl7.org/fhir/StructureDefinition/NamingSystem",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "contact",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-contact",
+        "type": "string",
+        "documentation": "Name of an individual to contact"
+      }, {
+        "name": "context",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context",
+        "type": "token",
+        "documentation": "A use context assigned to the naming system"
+      }, {
+        "name": "context-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the naming system"
+      }, {
+        "name": "context-type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the naming system"
+      }, {
+        "name": "context-type-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type-quantity",
+        "type": "composite",
+        "documentation": "A use context type and quantity- or range-based value assigned to the naming system"
+      }, {
+        "name": "context-type-value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the naming system"
+      }, {
+        "name": "date",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-date",
+        "type": "date",
+        "documentation": "The naming system publication date"
+      }, {
+        "name": "description",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-description",
+        "type": "string",
+        "documentation": "The description of the naming system"
+      }, {
+        "name": "id-type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-id-type",
+        "type": "token",
+        "documentation": "oid | uuid | uri | other"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the naming system"
+      }, {
+        "name": "kind",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-kind",
+        "type": "token",
+        "documentation": "codesystem | identifier | root"
+      }, {
+        "name": "name",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the naming system"
+      }, {
+        "name": "period",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-period",
+        "type": "date",
+        "documentation": "When is identifier valid?"
+      }, {
+        "name": "publisher",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the naming system"
+      }, {
+        "name": "responsible",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-responsible",
+        "type": "string",
+        "documentation": "Who maintains system namespace?"
+      }, {
+        "name": "status",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-status",
+        "type": "token",
+        "documentation": "The current status of the naming system"
+      }, {
+        "name": "telecom",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-telecom",
+        "type": "token",
+        "documentation": "Contact details for individual or organization"
+      }, {
+        "name": "type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-type",
+        "type": "token",
+        "documentation": "e.g. driver,  provider,  patient, bank etc."
+      }, {
+        "name": "value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/NamingSystem-value",
+        "type": "string",
+        "documentation": "The unique identifier"
+      } ],
+      "operation": [ {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ]
+    }, {
+      "type": "Practitioner",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+      "interaction": [ {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      }, {
+        "code": "search-type"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "active",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-active",
+        "type": "token",
+        "documentation": "Whether the practitioner record is active"
+      }, {
+        "name": "address",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address",
+        "type": "string",
+        "documentation": "A server defined search that may match any of the string fields in the Address, including line, city, district, state, country, postalCode, and/or text"
+      }, {
+        "name": "address-city",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-city",
+        "type": "string",
+        "documentation": "A city specified in an address"
+      }, {
+        "name": "address-country",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-country",
+        "type": "string",
+        "documentation": "A country specified in an address"
+      }, {
+        "name": "address-postalcode",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-postalcode",
+        "type": "string",
+        "documentation": "A postalCode specified in an address"
+      }, {
+        "name": "address-state",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-state",
+        "type": "string",
+        "documentation": "A state specified in an address"
+      }, {
+        "name": "address-use",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-address-use",
+        "type": "token",
+        "documentation": "A use code specified in an address"
+      }, {
+        "name": "communication",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-communication",
+        "type": "token",
+        "documentation": "One of the languages that the practitioner can communicate with"
+      }, {
+        "name": "email",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-email",
+        "type": "token",
+        "documentation": "A value in an email contact"
+      }, {
+        "name": "family",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-family",
+        "type": "string",
+        "documentation": "A portion of the family name"
+      }, {
+        "name": "gender",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-gender",
+        "type": "token",
+        "documentation": "Gender of the practitioner"
+      }, {
+        "name": "given",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-given",
+        "type": "string",
+        "documentation": "A portion of the given name"
+      }, {
+        "name": "identifier",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-identifier",
+        "type": "token",
+        "documentation": "A practitioner's Identifier"
+      }, {
+        "name": "name",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-name",
+        "type": "string",
+        "documentation": "A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text"
+      }, {
+        "name": "phone",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phone",
+        "type": "token",
+        "documentation": "A value in a phone contact"
+      }, {
+        "name": "phonetic",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-phonetic",
+        "type": "string",
+        "documentation": "A portion of either family or given name using some kind of phonetic matching algorithm"
+      }, {
+        "name": "telecom",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/Practitioner-telecom",
+        "type": "token",
+        "documentation": "The value in any kind of contact"
+      } ],
+      "operation": [ {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "StructureDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/StructureDefinition",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/StructureDefinition-type",
+        "type": "token",
+        "documentation": "Type defined or constrained by this structure"
+      } ]
+    }, {
+      "type": "ValueSet",
+      "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "create"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "update"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "conditionalDelete": "multiple",
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CodeSystem:supplements", "ConceptMap:other", "ConceptMap:source", "ConceptMap:source-uri", "ConceptMap:target", "ConceptMap:target-uri", "Group:managing-entity", "Group:member" ],
+      "searchParam": [ {
+        "name": "_content",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_has",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_source",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
+        "name": "_tag",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-code",
+        "type": "token",
+        "documentation": "This special parameter searches for codes in the value set. See additional notes on the ValueSet resource"
+      }, {
+        "name": "context",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context",
+        "type": "token",
+        "documentation": "A use context assigned to the value set"
+      }, {
+        "name": "context-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the value set"
+      }, {
+        "name": "context-type",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the value set"
+      }, {
+        "name": "context-type-quantity",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type-quantity",
+        "type": "composite",
+        "documentation": "A use context type and quantity- or range-based value assigned to the value set"
+      }, {
+        "name": "context-type-value",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the value set"
+      }, {
+        "name": "date",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-date",
+        "type": "date",
+        "documentation": "The value set publication date"
+      }, {
+        "name": "description",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-description",
+        "type": "string",
+        "documentation": "The description of the value set"
+      }, {
+        "name": "expansion",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-expansion",
+        "type": "uri",
+        "documentation": "Identifies the value set expansion (business identifier)"
+      }, {
+        "name": "identifier",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-identifier",
+        "type": "token",
+        "documentation": "External identifier for the value set"
+      }, {
+        "name": "jurisdiction",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-jurisdiction",
+        "type": "token",
+        "documentation": "Intended jurisdiction for the value set"
+      }, {
+        "name": "name",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-name",
+        "type": "string",
+        "documentation": "Computationally friendly name of the value set"
+      }, {
+        "name": "publisher",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-publisher",
+        "type": "string",
+        "documentation": "Name of the publisher of the value set"
+      }, {
+        "name": "reference",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-reference",
+        "type": "uri",
+        "documentation": "A code system included or excluded in the value set or an imported value set"
+      }, {
+        "name": "status",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-status",
+        "type": "token",
+        "documentation": "The current status of the value set"
+      }, {
+        "name": "title",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-title",
+        "type": "string",
+        "documentation": "The human-friendly name of the value set"
+      }, {
+        "name": "url",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-url",
+        "type": "uri",
+        "documentation": "The uri that identifies the value set"
+      }, {
+        "name": "version",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/SearchParameter/ValueSet-version",
+        "type": "token",
+        "documentation": "The business version of the value set"
+      } ],
+      "operation": [ {
+        "name": "expand",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-it-expand"
+      }, {
+        "name": "validate-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
+        "documentation": "Request a global list of tags, profiles, and security labels"
+      }, {
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta-delete",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
+        "documentation": "Delete tags, profiles, and/or security labels from a resource"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    } ],
+    "operation": [ {
+      "name": "import",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import",
+      "documentation": "Import terminology resources"
+    } ]
+  } ]
+}
