@@ -3,13 +3,13 @@
   "id": "fs3-health-pain-and-sensory-impressions",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-pain-and-sensory-impressions",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Smerter og sanseindtryk",
-  "title": "Fælles Sprog III, Smerter og sanseindtryk",
+  "name": "FS III, Smerter og sanseindtryk",
+  "title": "FS III, Smerter og sanseindtryk",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Smerter og sanseindtryk",
+  "description": "FS III, Smerter og sanseindtryk",
   "content": "complete",
   "concept": [
     {

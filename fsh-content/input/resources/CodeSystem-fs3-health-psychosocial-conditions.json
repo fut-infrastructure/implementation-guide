@@ -3,13 +3,13 @@
   "id": "fs3-health-psychosocial-conditions",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Psykosociale forhold",
-  "title": "Fælles Sprog III, Psykosociale forhold",
+  "name": "FS III, Psykosociale forhold",
+  "title": "FS III, Psykosociale forhold",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Psykosociale forhold",
+  "description": "FS III, Psykosociale forhold",
   "content": "complete",
   "concept": [
     {

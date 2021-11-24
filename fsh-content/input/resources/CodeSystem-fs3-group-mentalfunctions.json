@@ -3,13 +3,13 @@
   "id": "fs3-group-mentalfunctions",
   "url": "http://ehealth.sundhed.dk/cs/fs3-group-mentalfunctions",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Mentale funktioner",
-  "title": "Fælles Sprog III, Mentale funktioner",
+  "name": "FS III, Mentale funktioner",
+  "title": "FS III, Mentale funktioner",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Mentale funktioner",
+  "description": "FS III, Mentale funktioner",
   "content": "complete",
   "concept": [
     {

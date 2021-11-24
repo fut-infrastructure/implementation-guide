@@ -3,13 +3,13 @@
   "id": "fs3-group-communitylife",
   "url": "http://ehealth.sundhed.dk/cs/fs3-group-communitylife",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Samfundsliv",
-  "title": "Fælles Sprog III, Samfundsliv",
+  "name": "FS III, Samfundsliv",
+  "title": "FS III, Samfundsliv",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Samfundsliv",
+  "description": "FS III, Samfundsliv",
   "content": "complete",
   "concept": [
     {

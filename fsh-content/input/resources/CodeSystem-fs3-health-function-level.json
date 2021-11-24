@@ -3,13 +3,13 @@
   "id": "fs3-health-function-level",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-function-level",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Funktionsniveau",
-  "title": "Fælles Sprog III, Funktionsniveau",
+  "name": "FS III, Funktionsniveau",
+  "title": "FS III, Funktionsniveau",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Funktionsniveau",
+  "description": "FS III, Funktionsniveau",
   "content": "complete",
   "concept": [
     {

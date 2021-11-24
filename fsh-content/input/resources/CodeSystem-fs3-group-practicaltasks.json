@@ -3,13 +3,13 @@
   "id": "fs3-group-practicaltasks",
   "url": "http://ehealth.sundhed.dk/cs/fs3-group-practicaltasks",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Praktiske opgaver",
-  "title": "Fælles Sprog III, Praktiske opgaver",
+  "name": "FS III, Praktiske opgaver",
+  "title": "FS III, Praktiske opgaver",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Praktiske opgaver",
+  "description": "FS III, Praktiske opgaver",
   "content": "complete",
   "concept": [
     {

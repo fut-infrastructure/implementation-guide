@@ -411,14 +411,14 @@
   path: PUT_Library.md
 
 # ehealth-measurement
-- profile: ehealth-measurement
-  path: GET_Media__filter=subject%20eq%20https%3A
+#- profile: ehealth-measurement
+#  path: GET_Media__filter=subject%20eq%20https%3A
 
-- profile: ehealth-measurement
-  path: GET_Observation__filter=subject%20eq%20https%3A
+#- profile: ehealth-measurement
+#  path: GET_Observation__filter=subject%20eq%20https%3A
 
-- profile: ehealth-measurement
-  path: GET_QuestionnaireResponse__filter=subject%20eq%20https%3A
+#- profile: ehealth-measurement
+#  path: GET_QuestionnaireResponse__filter=subject%20eq%20https%3A
 
 # ehealth-media
 - profile: ehealth-media

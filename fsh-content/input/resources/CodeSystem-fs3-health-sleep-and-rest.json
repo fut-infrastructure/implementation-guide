@@ -3,13 +3,13 @@
   "id": "fs3-health-sleep-and-rest",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-sleep-and-rest",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Søvn og hvile",
-  "title": "Fælles Sprog III, Søvn og hvile",
+  "name": "FS III, Søvn og hvile",
+  "title": "FS III, Søvn og hvile",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Søvn og hvile",
+  "description": "FS III, Søvn og hvile",
   "content": "complete",
   "concept": [
     {

@@ -3,13 +3,13 @@
   "id": "fs3-health-skin-and-mucous-membranes",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-skin-and-mucous-membranes",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Hud og slimhinder",
-  "title": "Fælles Sprog III, Hud og slimhinder",
+  "name": "FS III, Hud og slimhinder",
+  "title": "FS III, Hud og slimhinder",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Hud og slimhinder",
+  "description": "FS III, Hud og slimhinder",
   "content": "complete",
   "concept": [
     {

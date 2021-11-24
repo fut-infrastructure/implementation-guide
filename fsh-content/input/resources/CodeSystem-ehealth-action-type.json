@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ehealth-action-type",
   "url": "http://ehealth.sundhed.dk/cs/action-type",
-  "version": "2021-10-22T13:45:00",
+  "version": "0.6.0",
   "name": "ActionType",
   "title": "Action Type",
   "status": "active",

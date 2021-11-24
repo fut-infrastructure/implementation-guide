@@ -3,13 +3,13 @@
   "id": "fs3-health-nutrition",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-nutrition",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Ernæring",
-  "title": "Fælles Sprog III, Ernæring",
+  "name": "FS III, Ernæring",
+  "title": "FS III, Ernæring",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Ernæring",
+  "description": "FS III, Ernæring",
   "content": "complete",
   "concept": [
     {

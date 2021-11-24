@@ -3,13 +3,13 @@
   "id": "fs3-citizen-importance-scores",
   "url": "http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, borgerens vurdering af betydning",
-  "title": "Fælles Sprog III, borgerens vurdering af betydning",
+  "name": "FS III, borgerens vurdering af betydning",
+  "title": "FS III, borgerens vurdering af betydning",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, borgerens vurdering af betydning",
+  "description": "FS III, borgerens vurdering af betydning",
   "content": "complete",
   "concept": [
     {

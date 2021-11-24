@@ -3,13 +3,13 @@
   "id": "fs3-health-communication",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-communication",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Kommunikation",
-  "title": "Fælles Sprog III, Kommunikation",
+  "name": "FS III, Kommunikation",
+  "title": "FS III, Kommunikation",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Kommunikation",
+  "description": "FS III, Kommunikation",
   "content": "complete",
   "concept": [
     {

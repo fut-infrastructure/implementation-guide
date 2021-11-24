@@ -3,13 +3,13 @@
   "id": "fs3-health-knowledge-and-development",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Viden og udvikling",
-  "title": "Fælles Sprog III, Viden og udvikling",
+  "name": "FS III, Viden og udvikling",
+  "title": "FS III, Viden og udvikling",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Viden og udvikling",
+  "description": "FS III, Viden og udvikling",
   "content": "complete",
   "concept": [
     {

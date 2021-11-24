@@ -3,13 +3,13 @@
   "id": "fs3-group-mobility",
   "url": "http://ehealth.sundhed.dk/cs/fs3-group-mobility",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Mobilitet",
-  "title": "Fælles Sprog III, Mobilitet",
+  "name": "FS III, Mobilitet",
+  "title": "FS III, Mobilitet",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Mobilitet",
+  "description": "FS III, Mobilitet",
   "content": "complete",
   "concept": [
     {

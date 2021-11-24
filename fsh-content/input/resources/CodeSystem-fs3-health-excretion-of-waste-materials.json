@@ -3,13 +3,13 @@
   "id": "fs3-health-excretion-of-waste-materials",
   "url": "http://ehealth.sundhed.dk/cs/fs3-health-excretion-of-waste-materials",
   "version": "0.0.1",
-  "name": "Fælles Sprog III, Udskillelse af affaldsstoffer",
-  "title": "Fælles Sprog III, Udskillelse af affaldsstoffer",
+  "name": "FS III, Udskillelse af affaldsstoffer",
+  "title": "FS III, Udskillelse af affaldsstoffer",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "Fælles Sprog III, Udskillelse af affaldsstoffer",
+  "description": "FS III, Udskillelse af affaldsstoffer",
   "content": "complete",
   "concept": [
     {
