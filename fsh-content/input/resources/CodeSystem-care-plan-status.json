@@ -22,9 +22,11 @@
   "version": "3.0.2",
   "name": "Care Plan Status",
   "status": "draft",
+  "content": "supplement",
   "experimental": false,
   "date": "2019-10-24T11:53:00+11:00",
   "publisher": "HL7 (FHIR Project)",
+  "supplements": "http://hl7.org/fhir/request-status",
   "contact": [
     {
       "telecom": [
@@ -41,12 +43,10 @@
   ],
   "description": "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record.",
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/ValueSet/care-plan-status",
-  "content": "complete",
   "concept": [
     {
       "code": "draft",
-      "display": "Pending",
+      "display": "Draft",
       "definition": "The plan is in development or awaiting use but is not yet intended to be acted upon.",
       "designation": [
         {
@@ -75,8 +75,8 @@
       ]
     },
     {
-      "code": "suspended",
-      "display": "Suspended",
+      "code": "on-hold",
+      "display": "On Hold",
       "definition": "The plan has been temporarily stopped but is expected to resume in the future.",
       "designation": [
         {
@@ -120,8 +120,8 @@
       ]
     },
     {
-      "code": "cancelled",
-      "display": "Cancelled",
+      "code": "revoked",
+      "display": "Revoked",
       "definition": "The plan has been terminated prior to reaching completion (though it may have been replaced by a new plan).",
       "designation": [
         {
