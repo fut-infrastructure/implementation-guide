@@ -19,7 +19,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/item-type",
-  "version": "3.0.2",
+  "version": "4.0.1",
   "name": "Questionnaire Item Type",
   "status": "draft",
   "experimental": false,
@@ -41,8 +41,8 @@
   ],
   "description": "Distinguishes groups from questions and display text and indicates data type for questions",
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/ValueSet/item-type",
-  "content": "complete",
+  "supplements": "http://hl7.org/fhir/ValueSet/item-type",
+  "content": "supplement",
   "property": [
     {
       "code": "notSelectable",

@@ -33,9 +33,9 @@
   ],
   "description": "**** MISSING DEFINITIONS ****",
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/ValueSet/v3-TimingEvent",
+  "supplements": "http://hl7.org/fhir/ValueSet/v3-TimingEvent",
   "hierarchyMeaning": "is-a",
-  "content": "complete",
+  "content": "supplement",
   "concept": [
     {
       "code": "AC",
