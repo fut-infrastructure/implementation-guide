@@ -1,23 +1,22 @@
 # Introduction
-The Ehealth-view is based on FHIRs Basic resource. It is a projection on one or several Questionnaires in relation to the display of selected questions / answers in a QuestionnaireResponse.
+The FHIR Basic-based eHealth profile ehealth-view is used for defining projections of associated resource(s). A view can be a projection into groups of selected elements. Currently, an example use is applying a QuestionnaireResponse to an interpreted view type of view which defines a projection of answers to a Questionnaire. The view, in this case, references the Questionnaire through `ehealth-view-for`.
 
 # Scope and Usage
-The eHealth profile of View has the following extensions:
-* `ehealth-content` The element is used for the actual modeling of interpreted display resp. action guide
-* `ehealth-type` This is used so that different types of interpreted display/action guidance can be searched for and distinguished.
-* `ehealth-title` Name for this action guidance
-* `ehealth-description` A description of this action guidance
-* `ehealth-purpose` Why this action definition is defined
-* `ehealth-version` The business version of the action guidance
+The eHealth profile of view has the following extensions:
+* `ehealth-content` The element is used for the actual modeling of the view
+* `ehealth-basic-title` Name for this view
+* `ehealth-description` A description of this view
+* `ehealth-purpose` Why this view is defined
+* `ehealth-version` The business version of the view
 * `ehealth-useContext` The context that the content is intended to support
-* `ehealth-recommendation` Which defines the recommendation level of this action guidance. The values of the used ValueSet allows for indicating the life cycle state, for instance that it is a draft or recommended action guidance.
-* `ehealth-intendedAudience` Can be set to one or more Organizations to indicate for which Organization(s) this action guidance should be selectable for use. This is meant for filtering and is not enforced or in any way restricting which Organization have access.
-* `ehealth-view-type` A code to determine the type of information in field ehealth-view-for 
-* `ehealth-view-for` A reference to the resource type
+* `ehealth-recommendation` The recommendation level of this view.
+* `ehealth-intendedAudience` Can be set to one or more Organizations to indicate for which Organization(s) this view is intended to be used by. This is meant for filtering and is not enforced or in any way restricting which Organization has access.
+* `ehealth-view-type` Type of view 
+* `ehealth-view-for` A reference to a resource for which this view applies
 
-### Update restrictions
+## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
-the View:
+the view:
 
 * `ehealth-modifier-role.reference` references the Organization
 * `ehealth-modifier-role.role` set to `owner` means that the referenced Organization can update the resource
@@ -25,8 +24,8 @@ the View:
 * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
 
-### Life cycle
-* `ehealth-status` The lifecycle status of the resource. "draft | active | retired"
-    - When created it will have status draft.
-    - From draft can change to either active or retired.
-    - If status is active, it can only change to retired.
+## Lifecycle
+* `ehealth-status` The lifecycle of the resource
+    - When created it will have status `draft`.
+    - Status `draft` can change to either `active` or `retired`.
+    - Status `active` can change to `retired` only.
