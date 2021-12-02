@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 
 ### Custom operations
+- Added description of output parameters for $get-patient-procedures
 #### System operations
 #### Instance operations
 ### Code systems
