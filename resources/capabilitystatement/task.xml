@@ -51,7 +51,6 @@
          <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
          <searchRevInclude value="ClinicalImpression:finding-ref"/>
          <searchRevInclude value="ClinicalImpression:investigation"/>
-         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
          <searchRevInclude value="ClinicalImpression:patient"/>
          <searchRevInclude value="ClinicalImpression:previous"/>
          <searchRevInclude value="ClinicalImpression:problem"/>
@@ -181,12 +180,6 @@
             <documentation value="Record of a specific investigation"/>
          </searchParam>
          <searchParam>
-            <name value="mediaInvestigationItem"/>
-            <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-mediaInvestigationItem"/>
-            <type value="reference"/>
-            <documentation value="Media investigation item"/>
-         </searchParam>
-         <searchParam>
             <name value="patient"/>
             <definition value="https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-patient"/>
             <type value="reference"/>
@@ -234,7 +227,6 @@
          <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
          <searchRevInclude value="ClinicalImpression:finding-ref"/>
          <searchRevInclude value="ClinicalImpression:investigation"/>
-         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
          <searchRevInclude value="ClinicalImpression:patient"/>
          <searchRevInclude value="ClinicalImpression:previous"/>
          <searchRevInclude value="ClinicalImpression:problem"/>
@@ -278,7 +270,6 @@
          <searchRevInclude value="ClinicalImpression:episodeOfCare"/>
          <searchRevInclude value="ClinicalImpression:finding-ref"/>
          <searchRevInclude value="ClinicalImpression:investigation"/>
-         <searchRevInclude value="ClinicalImpression:mediaInvestigationItem"/>
          <searchRevInclude value="ClinicalImpression:patient"/>
          <searchRevInclude value="ClinicalImpression:previous"/>
          <searchRevInclude value="ClinicalImpression:problem"/>
