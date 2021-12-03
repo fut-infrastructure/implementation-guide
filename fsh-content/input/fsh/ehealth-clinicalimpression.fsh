@@ -16,9 +16,8 @@ Parent: ClinicalImpression
 * previous ^type.aggregation = #referenced
 * problem only Reference(ehealth-condition or AllergyIntolerance)
 * problem ^type.aggregation = #referenced
-* investigation.extension contains ehealth-clinicalimpression-mediaInvestigationItem named mediaInvestigationItem 0..*
 * investigation.extension contains ehealth-clinicalimpression-viewInvestigationItem named viewInvestigationItem 0..*
-* investigation.item only Reference(ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
+* investigation.item only Reference(ehealth-media or ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
 * investigation.item ^type.aggregation = #referenced
 * finding.itemCodeableConcept from ehealth-clinicalimpression-finding-codes
 * finding.itemReference only Reference(Observation or ehealth-condition)

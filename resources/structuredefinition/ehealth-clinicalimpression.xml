@@ -136,19 +136,13 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="ClinicalImpression.investigation.extension:mediaItem">
-      <path value="ClinicalImpression.investigation.extension" />
-      <sliceName value="mediaItem" />
-      <short value="Media item" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-mediaInvestigationItem" />
-      </type>
-    </element>
     <element id="ClinicalImpression.investigation.item">
       <path value="ClinicalImpression.investigation.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media" />
+        <aggregation value="referenced" />
+      </type>
       <type>
         <code value="Reference" />
         <targetProfile value="http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation" />
