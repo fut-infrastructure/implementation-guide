@@ -48,6 +48,7 @@ pages:
   downloads.md:
   terminology.md:
   changelog.md:
+  search.md:
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
