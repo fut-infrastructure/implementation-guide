@@ -1,25 +1,7 @@
-# README
-This IG inspired by the Implementation guide found at https://github.com/hl7ch/ch-core
+## Manual build instructions
+Step into fsh-content folder and execute `_genonce.sh`
 
-The IG publication tool to build this site can be found at https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar
-
-Fetch it as follows:
-
-```
-wget 'https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.hl7.fhir.publisher&a=org.hl7.fhir.publisher.cli&v=LATEST&e=jar' -O org.hl7.fhir.igpublisher.jar
-```
-
-Run it from the root of the project by doing eg.:
-```
-java -jar org.hl7.fhir.igpublisher.jar -ig ig.json
-```
-
-View the results by doing:
-```
-jekyll serve
-```
-in the /output directory
-
+View the results in the fsh-content/output directory
 ## Build results
 
 Results of a successful build can be found at `/qa.html`
@@ -38,19 +20,18 @@ When creating a new version in `ig.json`, remember to add the new version in the
 ## Building with docker
 
 ```sh
-docker build -t igpublisher .
-docker run -v $(pwd):/tmp igpublisher /tmp/ig.json
-open output/index.html
+docker run -v $(pwd)/fsh-content:/tmp igpublisher /tmp/ig.ini
+open fsh-content/output/index.html
 ```
-
 ## Add a introduction to a profile
 It is possible to write an introduction to a profile by following these steps:
-1. Create a markdown file in `/pages/_includes` with the name id-intro.md where id is the name of the resource (eg. dk-tm-correspondance-intro.md). The content of the file should be the introduction.
-2. Create a html file in `/pages/_includes` with the name id-intro.html where id is the name of the resource (eg. dk-tm-correspondance-intro.html). The content should be `{% capture my-include %}{% include dk-tm-correspondance-intro.md %}{% endcapture %}{{ my-include | markdownify }}` where the included markdown file should be the on created in step 1.
-3. Add the name of the profile to `/pages/_data/introduction.csv`
+1. Create a markdown file in `/fsh-content/input/intro-notes/` folder with the name StructureDefinition-ehealth-*-intro.md where * is the name of the resource (eg. StructureDefinition-ehealth-activitydefinition-intro.md). The content of the file should be the introduction.
+
+## General documentation for IG layout
+See http://build.fhir.org/ig/FHIR/ig-guidance/index.html
 
 ## Update documentation on event messages
-Event messages are documented in the markdown file `/pages/_includes/eventmessages.md`. It is displayed in the `Operations and Search Parameters` tab. The file is generated from the hapi-fhir-base project, and if changes are done to the package `com.systematic.ehealth.events`, then the documentation may need to be updated. 
+Event messages are documented in the markdown file `/fsh-content/input/pagecontent/event-messages.md`. It is displayed in the `Operations and Search Parameters` tab. The file is generated from the hapi-fhir-base project, and if changes are done to the package `com.systematic.ehealth.events`, then the documentation may need to be updated. 
 1. In the hapi-fhir-base project, run the test GenerateEventsForIGTest.
 2. Locate the file `eventmessages.md` in the root of the hapi-fhir-base project.
-3. Copy the file to `/pages/_includes/eventmessages.md` in the implementationguide project.
+3. Copy the file to `/fsh-content/input/pagecontent/event-messages.md` in the implementationguide project.
