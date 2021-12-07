@@ -22,6 +22,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### ConceptMaps
 ### Resource/profile changes
+- Removed mediaInvestigationItem from `ehealth-clinicalimpression.fsh`
+- Added ehealth-media as option for investigation.item in `ehealth-clinicalimpression.fsh`
+
 #### ActionGuidiance and View
 - Both ActonGuidance and View extends Basic FHIR resource. New added extensions common for both:
   - actionguidance-view-title - http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-view-title
