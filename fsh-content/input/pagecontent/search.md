@@ -11,7 +11,7 @@ function Gsitesearch(curobj)
 </script>
 
 <form action="https://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
-<h2 id="search">Search</h2>
 <input name="q" type="hidden" />
-<input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
+<input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" />
 </form>
+<br>
