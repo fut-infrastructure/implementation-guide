@@ -44,6 +44,9 @@
 - profile: system
   path: POST_Binary_retrieve-document.md
 
+- profile: system
+  path: POST_get-patient-procedures-AT.md
+
 # system reporting
 
 - profile: system
