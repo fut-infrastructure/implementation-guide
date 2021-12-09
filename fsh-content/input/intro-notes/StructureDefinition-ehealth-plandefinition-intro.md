@@ -42,5 +42,16 @@ the PlanDefinition:
  * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
 
+### Setting up conditional activation of action/activityDefinition
+
+A practitioner can set up an ActivityDefinition to be triggered conditionally based on what other activityDefinitions have been "completed" by the patient. 
+The conditional activation is set up by adding an `ActionTrigger` to the activityDefinition intended to be conditionally activated. This actionTrigger then contains parameters specifying the conditions of activation:
+* `triggerCondition` is a list of the conditions that should be met for the actionTrigger to activate the activityDefinition. TriggerConditions points to activityDefinitions.   
+  * `actionID` contains the actionID of another action/activityDefinition in the same planDefinition. Actions intended to be used as triggerConditions must be given an actionID for the triggerCondition and the actionTrigger to function. 
+  * `count` specifies the number of measurements registered on the given activityDefinition before the triggerCondition is considered to be complete. 
+* `triggerBehavior` is set as either "all" or "any", this specifies whether the actionTrigger should activate when "all" the triggerConditions are met or activate when "any" of the triggerConditions are met
+* `offset` Controls the offset applied to timing bounds of the action that is activated when trigger conditions are met.
+* `action` specifies what action should be performed by the actionTrigger. For now the only possible action is a change of status from "on-hold" to "active"
+
 ### Referencing information material
 PlanDefinitions can reference information material intended for [Practitioner](StructureDefinition-ehealth-practitioner.html), [Patient](StructureDefinition-ehealth-patient.html) or [RelatedPerson](StructureDefinition-ehealth-relatedperson.html). The material can be in the form of embedded material (of reasonable size) or referenced videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.
