@@ -111,3 +111,30 @@ Description: "The specialty of the organization"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from ehealth-organization-specialty
+
+
+
+
+Instance: 312
+InstanceOf: ehealth-organization
+Usage: #example
+* meta.versionId = "2"
+* meta.lastUpdated = "2021-10-14T07:58:31.119+00:00"
+* meta.source = "#5d7e2cca-a0ec-9d"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+* extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source"
+* extension[=].valueCodeableConcept = http://ehealth.sundhed.dk/cs/organization-source#manual
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-synchronizationStatus"
+* extension[=].valueCodeableConcept = http://ehealth.sundhed.dk/cs/organization-synchronization-status#NotSynchronized
+* identifier.use = #official
+* identifier.system = "urn:oid:2.16.840.1.113883.2.24.1.1"
+* identifier.value = "11111111"
+* identifier.period.start = "2021-10-14T07:58:28+00:00"
+* name = "63785662-18ad-4896-b960-505e94bdc5c4"
+* contact.name.period.end = "2021-01-01"
+* contact.telecom.extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomCustodian"
+* contact.telecom.extension[=].valueCodeableConcept = http://ehealth.sundhed.dk/cs/contactpoint-custodian#SOR
+* contact.telecom.extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomSystem"
+* contact.telecom.extension[=].valueCodeableConcept = http://ehealth.sundhed.dk/cs/contactpoint-system#TBD
+* contact.telecom.extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue"
+* contact.telecom.extension[=].valueString = "5513495a-ed1b-43a9-b890-c2a09762c584"
