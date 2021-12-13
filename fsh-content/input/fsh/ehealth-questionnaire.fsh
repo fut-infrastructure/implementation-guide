@@ -21,9 +21,9 @@ Parent: Questionnaire
 * item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
 * item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
 * item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
-* item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-markdown named markdown 0..1
-* item.initial.valueString.extension contains http://hl7.org/fhir/StructureDefinition/rendering-markdown named markdown 0..1
-* item.answerOption.valueString.extension contains http://hl7.org/fhir/StructureDefinition/rendering-markdown named markdown 0..1
+* item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.initial.valueString.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.answerOption.valueString.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"

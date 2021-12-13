@@ -46,7 +46,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension: ehealth-clinicalimpression-viewInvestigationItem
 
 #### Questionnaire
-- added new markdown extensions
+- added new xhtml extensions
 
 #### QuestionnaireAdvanced
 - QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
