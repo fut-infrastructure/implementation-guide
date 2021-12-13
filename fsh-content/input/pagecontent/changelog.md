@@ -45,7 +45,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ClinicalImpression
 - Added extension: ehealth-clinicalimpression-viewInvestigationItem
 
-#### QuestionnaireAdvance
+#### Questionnaire
+- added new markdown extensions
+
+#### QuestionnaireAdvanced
 - QuestionnaireAdvanced extends EHealthQuestionnaire with new added extensions:
   - calculatedExpression - http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression
   - UsageMode - http://hl7.org/fhir/StructureDefinition/questionnaire-usageMode
