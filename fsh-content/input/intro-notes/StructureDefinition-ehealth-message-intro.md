@@ -11,6 +11,8 @@ An ehealth-message defines written communication and comes in four flavours depe
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "about" field, no matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by assigning the same thread-id in the provided extension. Similarly, they may be organized in a group (eg. group messages)
 by assigning the same group-id in that extension. The message subject may be provided in the title extension, and an optional priority may be provided in the ehealth-priority extension.
 
+In case a thread-id is not set by the client, it will be generated server-side at message creation.
+
 # Remarks about status and administrative-status
 
 The ehealth-message profile contains two status fields:
