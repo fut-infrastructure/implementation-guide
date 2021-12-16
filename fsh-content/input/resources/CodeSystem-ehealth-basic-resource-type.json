@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ehealth-basic-resource-type.json",
+  "id": "ehealth-basic-resource-type",
   "url": "http://ehealth.sundhed.dk/cs/basic-resource-type",
   "version": "0.6.0",
   "name": "BasicResourceType",

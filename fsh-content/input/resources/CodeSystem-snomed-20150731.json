@@ -1,6 +1,6 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "SnomedCT-RF2Release-DK-20150731",
+  "id" : "snomed-20150731",
   "url" : "http://snomed.info/sct/554471000005108/version/20150731",
   "identifier" : [
     {

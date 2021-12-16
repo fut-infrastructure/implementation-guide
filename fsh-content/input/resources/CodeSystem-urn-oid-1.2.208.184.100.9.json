@@ -1,6 +1,6 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "dk-ihe-classcode-cs",
+  "id" : "urn-oid-1.2.208.184.100.9",
   "url" : "urn:oid:1.2.208.184.100.9",
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

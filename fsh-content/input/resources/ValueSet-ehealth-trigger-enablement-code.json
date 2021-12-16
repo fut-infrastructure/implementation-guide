@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "trigger-enablement-code",
+  "id": "ehealth-trigger-enablement-code",
   "url": "http://ehealth.sundhed.dk/vs/trigger-enablement-code",
   "version": "2021-10-22T11:14:43",
   "name": "triggerEnablementCode",
