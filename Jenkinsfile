@@ -27,10 +27,10 @@ podTemplate(label: label,
 
 
     def sushiVersion = readYaml file: 'fsh-content/sushi-config.yaml'
-    println "sushiVersion ==> ${sushiVersion['version']}"
+    
+    def igVersion = sushiVersion['version']
+    println "igVersion version ==> ${igVersion}"
 
-    def version = readFile('pages/_data/version.yaml')
-    println "pipeline version ==> ${version}"
 
     def pwd = pwd()
     def chart_dir = "${pwd}/charts/${config.app.name}"
@@ -66,10 +66,10 @@ podTemplate(label: label,
           
 
           def igPath = ""
-          if (version == "latest") {
+          if (igVersion == "latest") {
             igPath = "latest/ig"
           } else {
-            igPath = 'v' + version + "/ig"
+            igPath = 'v' + igVersion + "/ig"
           }
           s3Delete(bucket: config.s3.bucket, path: igPath)
           s3Upload(file:'fsh-content/output/', bucket:config.s3.bucket, path: igPath)
@@ -80,7 +80,7 @@ podTemplate(label: label,
           s3Delete(bucket: config.s3.bucket, path: 'robots.txt')
           s3Upload(file:'static/robots.txt', bucket:config.s3.bucket, path:'robots.txt')
 
-          if (version != "latest") {
+          if (igVersion != "latest") {
             igPathLatestReleased = "latest-released/ig"
             s3Delete(bucket: config.s3.bucket, path: igPathLatestReleased)
             s3Upload(file:'fsh-content/output/', bucket:config.s3.bucket, path: igPathLatestReleased)

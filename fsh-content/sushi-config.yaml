@@ -6,8 +6,8 @@ id: dk.ehealth.sundhed.fhir.ig.core
 canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
-status: draft
-version: 0.7.0
+status: active
+version: latest
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
