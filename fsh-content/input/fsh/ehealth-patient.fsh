@@ -71,3 +71,31 @@ Description: "Describes the general health condition of a patient using FSIII co
 * extension[type].value[x] only Coding
 * extension[type].valueCoding from fs3-health
 * extension[description].value[x] only string
+
+
+Instance: patient01
+InstanceOf: Patient
+Usage: #example
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "2512489996"
+* identifier.use = #official
+* name.family = "Berggren"
+* name.given[0] = "Nancy"
+* name.given[+] = "Ann"
+* name.use = #official
+* telecom[0].value = "NemSMS"
+* telecom[=].system = #other
+* telecom[+].value = "eBoks"
+* telecom[=].system = #other
+* gender = #unknown
+* address.extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
+* address.extension[=].valueCodeableConcept = http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes#0330
+* address.extension[+].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
+* address.extension[=].valueCodeableConcept = http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes#DK-85
+* address.use = #home
+* address.line[0] = "Tårnhøjvej 47"
+* address.line[+] = "Landet"
+* address.city = "Aalborg Øst"
+* address.postalCode = "9220"
+* address.country = "Danmark"

@@ -43,3 +43,56 @@ Parent: Appointment
 * serviceType contains appointmentType 1..1
 * serviceType[appointmentType].coding from ehealth-appointment-servicetype
 * serviceType[appointmentType].coding.code = #video (exactly)
+
+Instance: videoappointment01
+InstanceOf: Appointment
+Usage: #example
+* meta.versionId = "3"
+* meta.lastUpdated = "2021-07-15T07:06:36.667+00:00"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"
+* contained = Inline-Instance-for-videoappointment01-1
+* extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants"
+* extension[=].valueInteger = 4
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-meeting-url"
+* extension[=].valueUri = "https://portal.vconf.dk/?url=721834@rooms.vconf-stage.dk&pin=37835&start_dato=2021-07-16T09:00:00"
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-vmr-uri"
+* extension[=].valueUri = "721834@rooms.vconf-stage.dk"
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-end-meeting-on-end-time"
+* extension[=].valueBoolean = false
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-host-pin-code"
+* extension[=].valueString = "29202"
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guest-pin-code"
+* extension[=].valueString = "37835"
+* identifier.system = "http://vdx.medcom.dk/meeting"
+* identifier.value = "894e56b4-53bb-4004-8f06-6a4d7ad115ca"
+* status = #booked
+* appointmentType = http://ehealth.sundhed.dk/cs/appointmenttype-codes#EMERGENCY
+* serviceType = http://ehealth.sundhed.dk/cs/appointment-servicetype#video
+* reasonCode = http://ehealth.sundhed.dk/cs/appointment-reason#412776001
+* priority = 1
+* description = "Forundersøgelse"
+* start = "2021-07-16T09:00:00.000+00:00"
+* end = "2021-07-16T11:00:00.000+00:00"
+* comment = "Forundersøgelse for grå stær hos Trifork.\n Patienten møder op hos Trifork med udfyldt spørgeskema"
+* participant[0].extension.url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension.valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART "Participation"
+* participant[=].required = #required
+* participant[=].status = #accepted
+* participant[+].actor = Reference(https://organization.fut.trifork.com/fhir/Practitioner/107302) "actor1 display text"
+* participant[=].required = #required
+* participant[=].status = #tentative
+* participant[+].actor = Reference(https://patient.fut.trifork.com/fhir/Patient/102)
+* participant[=].required = #required
+* participant[=].status = #accepted
+* participant[+].actor = Reference(1)
+* participant[=].required = #required
+* participant[=].status = #accepted
+
+Instance: Inline-Instance-for-videoappointment01-1
+InstanceOf: Location
+Usage: #inline
+* id = "1"
+* name = "Room 43b"

@@ -27,28 +27,12 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - fsh-generated/resources
 
   path-pages:
-    - input/includes
+    - input/pages
 
   usage-stats-opt-out: true
   show-inherited-invariants: false
 
-pages:
-  index.md:
-    title: eHealth Infrastructure Implementation Guide
-  guidance.md:
-    title: General guidance
-  profiles.md:
-  operations.md:
-  example-operations.md:
-  searchparams.md:
-    title: Search Parameters
-  error-messages.md:
-  service-event-tables.md:
-  event-messages.md:
-  downloads.md:
-  terminology.md:
-  changelog.md:
-  search.md:
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

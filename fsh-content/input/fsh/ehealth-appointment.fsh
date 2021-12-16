@@ -29,3 +29,31 @@ Parent: Appointment
 * serviceType contains appointmentType 1..1
 * serviceType[appointmentType].coding from ehealth-appointment-servicetype
 * serviceType[appointmentType].coding.code = #regular (exactly)
+
+
+Instance: appointment01
+InstanceOf: Appointment
+Usage: #example
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"
+* extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible"
+* extension[=].valueReference = Reference(http://inttest.ehealth.sundhed.dk/CareTeam/42) "CareTeam Aarhus"
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis"
+* extension[=].valueCodeableConcept = http://ehealth.sundhed.dk/cs/jurisdiction#service-act
+* status = #proposed
+* appointmentType = http://ehealth.sundhed.dk/cs/appointmenttype-codes#FOLLOWUP
+* serviceType = http://ehealth.sundhed.dk/cs/appointment-servicetype#regular
+* reasonCode = http://ehealth.sundhed.dk/cs/appointment-reason#412776001
+* reasonCode.text = "Clinical Review"
+* supportingInformation = Reference(http://inttest.ehealth.sundhed.dk/EpisodeOfCare/42)
+* participant[0].actor = Reference(http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/42) "Tove Jensen"
+* participant[=].status = #needs-action
+* participant[+].actor = Reference(http://inttest.ehealth.sundhed.dk/organization/fhir/Practitioner/123)
+* participant[=].status = #needs-action
+* participant[+].extension.url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension.valueReference = Reference(http://inttest.ehealth.sundhed.dk/CareTeam/42) "CareTeam Aarhus"
+* participant[=].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#ATND
+* participant[=].status = #needs-action
