@@ -1,4 +1,4 @@
-Extension: ehealth-actionguidance-view-title
+Extension: ehealth-basic-title
 Title:     "Title"
 Description: "Name for this (human friendly)"
 * . ^short = "Name for this (human friendly)"
