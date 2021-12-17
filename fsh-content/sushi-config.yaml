@@ -26,8 +26,8 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
     - input/resources
     - fsh-generated/resources
 
-  path-pages:
-    - input/pages
+#  path-pages:
+#    - input/pages
 
   usage-stats-opt-out: true
   show-inherited-invariants: false
