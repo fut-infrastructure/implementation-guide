@@ -9,13 +9,13 @@ In scope of the eHealth Infrastructure, the Task resource is used for:
 * tracking an activity to be performed by a Practitioner, CareTeam or Organization. The entity responsible for performing the Task is identified through the extension `ehealth-task-responsible`.
 * coordinating which Practitioner has assigned or been assigned a Task. This is identified through `owner`.
 
-Task resources are produced by the eHealth Infrastructure as reaction to measurements being submitted, measurements being submitted at odd timing or expected measurements not being submitted. Measurements in the form of Observation, QuestionnaireResponse or other resources are expected to be submitted by a Patient according to a measurement regime specified in a CarePlan and referenced CarePlan/ProcedureRequest.
+Task resources are produced by the eHealth Infrastructure as reaction to measurements being submitted, measurements being submitted at odd timing or expected measurements not being submitted. Measurements in the form of Observation, QuestionnaireResponse or other resources are expected to be submitted by a Patient according to a measurement regime specified in a CarePlan and referenced CarePlan/ServiceRequest.
 
 The context in which the Task is created is identified through `context`. In the eHealth Infrastructure, this is currently a reference to an EpisodeOfCare, but in future use, it could be a reference to an Encounter. The `focus` element describes what resource the Task responsible should be acting on and can reference any resource.
 
 ### Use of Task for coordinating assessment of submitted measurement
 
-The eHealth Infrastructure supports that automated processing rules can be defined as Library resources, attached to plans (through the complex of PlanDefinition/ActivityDefinition/Library and CarePlan/ProcedureRequest) and applied to submitted measurements. This includes automated processing rules performing triaging based on comparison of submitted measurements against reference ranges specified in CarePlan/ProcedureRequest.
+The eHealth Infrastructure supports that automated processing rules can be defined as Library resources, attached to plans (through the complex of PlanDefinition/ActivityDefinition/Library and CarePlan/ServiceRequest) and applied to submitted measurements. This includes automated processing rules performing triaging based on comparison of submitted measurements against reference ranges specified in CarePlan/ServiceRequest.
 
 The definition of each automated processing rule controls whether to create the following as a result of the applying the rule:
 
@@ -25,7 +25,7 @@ The definition of each automated processing rule controls whether to create the 
 
 A typical result of triaging, for instance, is expected to be:
 * A Communication referring to a Task - creation of this might depend on Task.priority being other than routine
-* A Task with focus set to the measurement
+* A Task with focus set to the ClinicalImpression
 * A ClinicalImpression referring to a measurement (Observation, QuestionnaireResponse or Media)
 
 In case no automated processing rule has been attached to the plan, the current fallback automated processing rule creates a Task that refers to a single measurement. This, however, could change.
@@ -36,7 +36,7 @@ In case no automated processing rule has been attached to the plan, the current 
 * Task `ehealth-task-responsible` that references the one or more CareTeam attached to the CarePlan
 * Task `ehealth-restriction-category` is a coding that can be used to restrict access to the task, for instance restricting a task so only CareTeam members involved in monitoring measurements can access it
 * Task `priority` reflecting the urgency set by the triaging rule
-* Task `focus` references an Observation, QuestionnaireResponse or Media
+* Task `focus` referencing the ClinicalImpression that was also created during triaging. Focus can be overridden by the automated processing rule to reference something different than the ClinicalImpression. 
 
 ### Use of Task for resolving missing measurement
 
@@ -46,7 +46,7 @@ In case the eHealth Infrastructure detects that a measurement submission is miss
 * Task `ehealth-task-responsible` references the one or more CareTeam attached to the CarePlan
 * Task `ehealth-restriction-category` is a coding that can be used to restrict access to the task, for instance restricting a task so only CareTeam members involved in monitoring measurements can access it
 * Task `priority` set to `routine`
-* Task `focus` references the ProcedureRequest for the missing measurement
+* Task `focus` references the ServiceRequest for the missing measurement
 
 ### Use of Task for unexpected measurement
 In case the eHealth Infrastructure detects a measurement submission at unexpected or odd time compared to the measurement regime, it creates a Task where:

@@ -1,8 +1,8 @@
 # Introduction
 
-An Observation contains the result of a measurement performed by the Patient. It is based on a ProcedureRequest that contains information about what to measure and when to measure.
+An Observation contains the result of a measurement performed by the Patient. It is based on a ServiceRequest that contains information about what to measure and when to measure.
 
-In addition to the result and context, the Observation also contains information about the device used to perform the measurement and reference ranges copied from the ProcedureRequest. Reference ranges can change over time, so the copy ensures that the reference range at the time of measurement is preserved.
+In addition to the result and context, the Observation also contains information about the device used to perform the measurement and reference ranges copied from the ServiceRequest. Reference ranges can change over time, so the copy ensures that the reference range at the time of measurement is preserved.
 
 The eHealth Infrastructure will assist in calculating qualities of the measurement. The observation will be annotated with these qualities.
 

@@ -28,7 +28,7 @@ parameters defined in the clinical decision rule logic. The eHealth infrastructu
 inconsistency exists.
 
 When defining a rule to be used for evaluation of Observation resources, it is possible to specify that historical 
-Observation resources with the same ProcedureRequest reference should be used as input to the rule. This is done using the 
+Observation resources with the same ServiceRequest reference should be used as input to the rule. This is done using the 
 `dataRequirement` structure where the `dateFilter.valueDuration` is set. Observation resources where the `effective` element
 is overlapping this duration is given as input to the rule. 
 
@@ -42,7 +42,7 @@ automatic evaluation of submitted measurements.
 ### Use of Library resources at time of decision support rules invocation
 
 The decision support rule Library can be associated with a CarePlan /
-ProcedureRequest through their references to PlanDefinition / ActivityDefinition resources.
+ServiceRequest through their references to PlanDefinition / ActivityDefinition resources.
 When a measurement is submitted in scope of a CarePlan, the answer values in a submitted
 QuestionnaireResponse can be found and passed in as parameters to the decision support rule
 as specified by the Library resources. 

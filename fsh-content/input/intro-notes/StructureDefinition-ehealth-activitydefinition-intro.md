@@ -23,7 +23,7 @@ this ActivityDefinition should be selectable for use. This is meant for filterin
 in any way restricting which Organization have access.
 * `ehealth-referenceRange` can contain one or more reference ranges against which values in measurements (resource(s)
  resulting from conducting the activity) can be compared. The reference ranges in the ActivityDefinition function as templates
-assigned and adaptable to a particular Patient in the ProcedureRequest reference ranges.
+assigned and adaptable to a particular Patient in the ServiceRequest reference ranges.
 * `ehealth-modifier-role` see below.
 * `ehealth-quality` The minimum quality levels that should be obtained with measurements (resource(s) resulting
 from conducting the activity). These do not constitute enforced levels but rather expectations which
@@ -32,7 +32,7 @@ may or may not be met with actual submitted measurements.
 of the measurements (resource(s) resulting
 from conducting the activity) shall be allowed or not. The value in the ActivityDefinition
 function as a template assigned and adaptable to a particular Patient in a similar element in the
- ProcedureRequest.
+ ServiceRequest.
 
 ### Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining

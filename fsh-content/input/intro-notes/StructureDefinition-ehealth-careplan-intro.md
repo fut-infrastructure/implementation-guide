@@ -10,8 +10,8 @@ A CarePlan can be constructed as a hierarchy of sub plans. The initial hierarchy
 Sub plans can be attached by making them `partOf` the parent plan.
 
 ### Restrictions on deletion
-In order to preserve the context and history, it is not allowed to delete sub plans or remove ProcedureRequest from the CarePlan.
- The `status` element can be used to either `cancel` or `complete` a CarePlan or ProcedureRequest, if it is no longer relevant for the Patient.
+In order to preserve the context and history, it is not allowed to delete sub plans or remove ServiceRequest from the CarePlan.
+ The `status` element can be used to either `cancel` or `complete` a CarePlan or ServiceRequest, if it is no longer relevant for the Patient.
 
 The history of changes in `status` is automatically maintained in the element `ehealth-careplan-statusHistory`. 
 

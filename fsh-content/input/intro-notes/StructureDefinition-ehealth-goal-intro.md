@@ -8,7 +8,7 @@ This use is indicated by setting the code `reference-value` in Goal.description.
 
 A Goal must have a startDate and optionally a target.dueDate or dueDuration to specify during which period the Goal applies. 
 
-Goal.addresses must reference exactly one procedureRequest containing the reference ranges that the Goal supports. 
+Goal.addresses must reference exactly one serviceRequest containing the reference ranges that the Goal supports. 
  
 Goal.target.measure must contain an observation code indicating which type of observation the Goal is intended for. 
 
