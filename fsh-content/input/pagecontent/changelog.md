@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Cleaned up some obselete references to ProcedureRequest
 
 ### Custom operations
 - Added description of output parameters for $get-patient-procedures
@@ -63,6 +64,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ServiceRequest
 - added extension to ServiceRequest to enable a reaction to trigger conditions expressed in other activities.
   - TriggerEnablementCode - profile http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-trigger-enablement-code
+
+#### Task
+- Clarified the use of Task.focus element
   
 ## 2021.3 (2021-10-28)
  
