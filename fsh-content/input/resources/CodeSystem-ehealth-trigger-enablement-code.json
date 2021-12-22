@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "trigger-enablement-code",
+  "id": "ehealth-trigger-enablement-code",
   "url": "http://ehealth.sundhed.dk/cs/trigger-enablement-code",
   "version": "0.6.0",
   "name": "TriggerEnablementCode",

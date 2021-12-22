@@ -32,3 +32,76 @@ Parent: Appointment
 * serviceType contains appointmentType 1..1
 * serviceType[appointmentType].coding from ehealth-appointment-servicetype
 * serviceType[appointmentType].coding.code = #group (exactly)
+
+Instance: group-appointment01
+InstanceOf: Appointment
+Usage: #example
+* meta.versionId = "3"
+* meta.lastUpdated = "2021-07-15T07:06:36.667+00:00"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment"
+* contained = Inline-Instance-for-group-appointment01-1
+* extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-id"
+* extension[=].valueString = "42"
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-releasableResource"
+* extension[=].valueBoolean = true
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-creator"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performer"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience"
+* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/8564)
+* extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline"
+* extension[=].valueDateTime = "2021-12-25T14:35:45-05:00"
+* identifier[0].system = "http://ehealth.sundhed.dk/id/ehealth-identifier"
+* identifier[=].value = "5d1a3107-9fc8-4a6f-b66a-16fcf1937ade"
+* identifier[+].system = "http://vdx.medcom.dk/meeting"
+* identifier[=].value = "894e56b4-53bb-4004-8f06-6a4d7ad115ca"
+* status = #booked
+* appointmentType = http://ehealth.sundhed.dk/cs/appointmenttype-codes#FOLLOWUP
+* serviceType = http://ehealth.sundhed.dk/cs/appointment-servicetype#group
+* reasonCode = http://ehealth.sundhed.dk/cs/appointment-reason#412776001
+* priority = 1
+* description = "Forundersøgelse"
+* start = "2021-07-16T09:00:00.000+00:00"
+* end = "2021-07-16T11:00:00.000+00:00"
+* comment = "Forundersøgelse for grå stær hos Trifork.\n Patienten møder op hos Trifork med udfyldt spørgeskema"
+* participant[0].extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART "Participation"
+* participant[=].required = #required
+* participant[=].status = #accepted
+* participant[+].extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].actor = Reference(https://organization.fut.trifork.com/fhir/Practitioner/107302) "actor1 display text"
+* participant[=].required = #required
+* participant[=].status = #tentative
+* participant[+].extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].actor = Reference(https://patient.fut.trifork.com/fhir/Patient/102)
+* participant[=].required = #required
+* participant[=].status = #accepted
+* participant[+].extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
+* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].actor = Reference(1)
+* participant[=].required = #required
+* participant[=].status = #accepted
+
+Instance: Inline-Instance-for-group-appointment01-1
+InstanceOf: Location
+Usage: #inline
+* id = "1"
+* name = "Room 43b"

@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "trigger-behavior",
+  "id": "ehealth-trigger-behavior",
   "url": "http://ehealth.sundhed.dk/vs/trigger-behavior",
   "version": "2021-10-22T14:11:00",
   "name": "TriggerBehavior",

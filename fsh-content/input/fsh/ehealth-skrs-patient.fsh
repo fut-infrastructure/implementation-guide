@@ -26,3 +26,18 @@ Parent: Patient
 * address[officialHomeAddress].use = #home (exactly)
 * address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes named municipalityCodes 0..*
 * address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
+
+
+Instance: 291
+InstanceOf: Patient
+Usage: #example
+* meta.versionId = "1"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"
+* extension.url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-nameandaddressprotection"
+* extension.valuePeriod.start = "2021-08-19T15:22:44+02:00"
+* extension.valuePeriod.end = "2021-08-23T15:22:44+02:00"
+* identifier.use = #official
+* identifier.system = "urn:oid:1.2.208.176.1.2"
+* identifier.value = "1908560343"
+* address.use = #home
+* address.city = "Aalborg"

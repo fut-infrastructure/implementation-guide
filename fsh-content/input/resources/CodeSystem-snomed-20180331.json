@@ -1,6 +1,6 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180331T120000Z",
+  "id" : "snomed-20180331",
   "url" : "http://snomed.info/sct/554471000005108/version/20180331",
   "identifier" : [
     {
