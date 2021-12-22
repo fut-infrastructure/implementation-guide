@@ -18,7 +18,9 @@ publisher:
   url: http://ehealth.sundhed.dk
 
 dependencies:
-  dk.fhir.ig.dk-core: current
+  dk.fhir.ig.dk-core:
+    uri: https://hl7.dk/fhir/core
+    version: current
   hl7.fhir.uv.sdc: current
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
