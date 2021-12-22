@@ -6,11 +6,10 @@ Parent: Questionnaire
 * extension contains ehealth-revision named revision 0..1
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-questionnaire-type named type 1..*
+* extension contains http://hl7.org/fhir/StructureDefinition/rendering-styleSensitive named styleSensitive 0..1
 
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
-* id.extension contains http://hl7.org/fhir/StructureDefinition/rendering-styleSensitive named styleSensitive 0..1
-
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
