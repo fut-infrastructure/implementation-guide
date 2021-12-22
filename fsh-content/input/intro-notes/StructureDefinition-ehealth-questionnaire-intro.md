@@ -33,3 +33,6 @@ The `item.ehealth-questionnaire-answerSignificance` element functions as a triag
     
 ### Item control
 The `item.questionnaire-itemControl` element enables indication of what sort of user interface control type, for instance radio buttons, to use when displaying an item.
+
+### Formatted text
+The elements: `item.text`, `item.answerOption.value`, and `item.inital.value` supports formatted text using the standard extension: http://hl7.org/fhir/R4/extension-rendering-xhtml.html       
