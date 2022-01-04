@@ -19,6 +19,7 @@ publisher:
 
 dependencies:
   dk.fhir.ig.dk-core:
+    uri: http://www.hl7.dk/fhir/core
     version: current
   hl7.fhir.uv.sdc:
     version: current
