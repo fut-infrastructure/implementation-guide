@@ -35,6 +35,7 @@ The `item.ehealth-questionnaire-answerSignificance` element functions as a triag
 The `item.questionnaire-itemControl` element enables indication of what sort of user interface control type, for instance radio buttons, to use when displaying an item.
 
 ### Formatted text
-The elements: `item.text`, `item.answerOption.value`, and `item.inital.value` supports formatted text for valueString using the standard extension: http://hl7.org/fhir/extension-rendering-xhtml.html
+The elements `item.text`, `item.answerOption.value`, and `item.inital.value` supports formatted text for valueString using the standard extension: http://hl7.org/fhir/extension-rendering-xhtml.html
+Note that the original text without formatting must be added to the elements `item.text`, `item.answerOption.value`, and `item.inital.value`, respectively, for those where the formatted extension has been used.
 
-The extension: rendering-styleSensitive indicates if clients must be able to display the formatted text for this Questionnaire  
+The extension rendering-styleSensitive indicates if clients must be able to display the formatted text for this Questionnaire, or if not capable to do this, at least indicate to the user that rendering is not appropriate.  
