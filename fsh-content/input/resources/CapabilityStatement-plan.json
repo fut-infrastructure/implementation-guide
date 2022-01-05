@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2021-10-30T03:07:24.854+00:00",
+  "date": "2022-01-01T02:41:42.039+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
   "implementation": {
     "description": "eHealth plan service",

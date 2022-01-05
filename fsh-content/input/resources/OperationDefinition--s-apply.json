@@ -6,7 +6,7 @@
   "title": "Create a careplan",
   "status": "active",
   "kind": "operation",
-  "description": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
+  "description": "This operation creates a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
   "affectsState": true,
   "code": "apply",
   "system": true,

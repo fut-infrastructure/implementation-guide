@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2021-10-22T03:07:21.432+00:00",
+  "date": "2022-01-01T02:26:49.132+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.9.0"
+    "version": "1.9.1"
   },
   "implementation": {
     "description": "eHealth measurement service",

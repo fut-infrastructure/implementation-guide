@@ -3,12 +3,12 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2021-10-31T19:24:36.151+00:00",
+  "date": "2022-01-01T03:11:52.162+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.7.0"
+    "version": "1.8.1"
   },
   "implementation": {
     "description": "eHealth task service",
@@ -34,7 +34,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "ClinicalImpression:previous" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-_content",
@@ -131,11 +131,6 @@
         "type": "reference",
         "documentation": "Record of a specific investigation"
       }, {
-        "name": "mediaInvestigationItem",
-        "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-mediaInvestigationItem",
-        "type": "reference",
-        "documentation": "Media investigation item"
-      }, {
         "name": "patient",
         "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/ClinicalImpression-patient",
         "type": "reference",
@@ -172,7 +167,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
     }, {
       "type": "Task",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
@@ -189,7 +184,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:mediaInvestigationItem", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "definition": "https://task.devtest.systematic-ehealth.com/fhir/SearchParameter/Task-_content",
