@@ -22,7 +22,7 @@ dependencies:
     uri: http://www.hl7.dk/fhir/core
     version: current
   hl7.fhir.uv.sdc:
-    version: current
+    version: 2.7.0
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
