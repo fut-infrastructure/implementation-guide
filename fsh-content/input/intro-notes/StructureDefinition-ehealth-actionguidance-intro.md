@@ -27,7 +27,7 @@ the Action guidance:
   but not alter the element `ehealth-modifier-role`.
 
 ## Lifecycle
-The status field,`ehealth-status`, will express the lifecycle of the resource. Changes follow this pattern
+The status field,`ehealth-status`, will express the lifecycle of the resource. Changes follow this pattern.
   - When created it will have status `draft`.
   - From status `draft` can change to either `active` or `retired`.
   - From status `active` can only change to `retired`.
