@@ -16,7 +16,7 @@ The profile is based on the native FHIR Basic resource and adds the following ex
 
 ## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
-the Action guidance:
+the View:
 
 * `ehealth-modifier-role.reference` references the Organization.
 * `ehealth-modifier-role.role` set to `owner` means that the referenced Organization can update the resource
