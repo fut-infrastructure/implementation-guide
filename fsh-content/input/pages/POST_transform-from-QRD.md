@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVFSRCIsIiR0cmFuc2Zvcm0tdG8tUVJEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2021-10-14T06:06:55.846+00:00",
+        "date": "2021-12-21T14:02:25.502+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "f03c929f-e62c-45bd-9e89-b9b915b2ce6e",
+        "id": "fb027c9f-9676-4cf9-9818-ddff003edb39",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -282,11 +282,7 @@ __Response__
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
-        "questionnaire": {
-          "identifier": {
-            "value": "https://svn.medcom.dk/svn/drafts/QFDD/Hofteartrose_v0.11__QFD.xml"
-          }
-        },
+        "questionnaire": "https://svn.medcom.dk/svn/drafts/QFDD/Hofteartrose_v0.11__QFD.xml",
         "item": [
           {
             "text": "Baggrundsinformation",

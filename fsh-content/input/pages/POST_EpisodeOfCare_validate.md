@@ -1,9 +1,9 @@
-`POST [base]/EpisodeOfCare/897/$validate`
+`POST [base]/EpisodeOfCare/1363/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMzI4OTIiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNDY0NCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJFcGlzb2RlT2ZDYXJlLnNlYXJjaCIsIkVwaXNvZGVPZkNhcmUucmVhZCIsIkNhcmVQbGFuLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJHVwZGF0ZS1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJFcGlzb2RlT2ZDYXJlLnBhdGNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "EpisodeOfCare",
-        "id": "897",
+        "id": "1363",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-13T08:39:57.847+00:00",
+          "lastUpdated": "2021-12-21T16:15:42.550+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
             "valueReference": {
-              "reference": "https://organization.cit-careplan-1804.local/fhir/Organization/82393"
+              "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/4431"
             }
           }
         ],
@@ -39,16 +39,16 @@ __Body__:
         "diagnosis": [
           {
             "condition": {
-              "reference": "https://careplan.cit-careplan-1804.local/fhir/Condition/896"
+              "reference": "https://careplan.cit-careplan-1945.local/fhir/Condition/1362"
             },
             "rank": 1
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/90360"
+          "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/74349"
         },
         "managingOrganization": {
-          "reference": "https://organization.cit-careplan-1804.local/fhir/Organization/22468"
+          "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/28856"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",

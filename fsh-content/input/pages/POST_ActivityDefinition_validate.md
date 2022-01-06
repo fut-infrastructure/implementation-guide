@@ -1,4 +1,4 @@
-`POST [base]/ActivityDefinition/152/$validate`
+`POST [base]/ActivityDefinition/162/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "152",
+        "id": "162",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-05T08:12:29.938+00:00",
+          "lastUpdated": "2021-12-21T15:28:52.912+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -45,7 +45,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-750.local/fhir/Organization/6527"
+                  "reference": "https://organization.cit-plan-818.local/fhir/Organization/70745"
                 }
               },
               {
@@ -62,8 +62,8 @@ __Body__:
             ]
           }
         ],
-        "version": "87212f05-5688-4415-9cde-ccc828a31d5a",
-        "name": "4dad6783-9083-42ff-9370-22ffb779290b",
+        "version": "825a1317-69e6-4467-b3c8-e400488f62a0",
+        "name": "91c0fa2b-cd6a-40d6-9965-98d6ab7bb46c",
         "status": "active",
         "topic": [
           {
@@ -95,7 +95,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1067]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1067]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
   },
   "issue": [
     {
@@ -108,30 +108,12 @@ __Response__
       ]
     },
     {
-      "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1067"
-      ]
-    },
-    {
       "severity": "warning",
       "code": "processing",
       "diagnostics": "adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
         "Line 1, Col 1"
-      ]
-    },
-    {
-      "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1067"
       ]
     }
   ]

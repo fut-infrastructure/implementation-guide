@@ -1,4 +1,4 @@
-`POST [base]/DocumentReference/129/$validate`
+`POST [base]/DocumentReference/139/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "129",
+        "id": "139",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-05T08:11:52.532+00:00",
+          "lastUpdated": "2021-12-21T15:28:28.567+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -36,7 +36,7 @@ __Body__:
             }
           ]
         },
-        "date": "2021-10-05T08:11:52.432+00:00",
+        "date": "2021-12-21T15:28:28.506+00:00",
         "content": [
           {
             "attachment": {
@@ -56,26 +56,18 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(DocumentReference), Line 1, Col 309]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(DocumentReference), Line 1, Col 309]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(DocumentReference)",
-        "Line 1, Col 309"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     },
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(DocumentReference)",
-        "Line 1, Col 309"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     }
   ]
 }

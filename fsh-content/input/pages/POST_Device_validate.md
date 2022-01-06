@@ -55,26 +55,18 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(Device), Line 1, Col 106]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(Device), Line 1, Col 106]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(Device)",
-        "Line 1, Col 106"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     },
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(Device)",
-        "Line 1, Col 106"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     }
   ]
 }

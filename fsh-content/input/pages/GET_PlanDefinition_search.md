@@ -1,4 +1,4 @@
-`GET [base]/PlanDefinition?name=7b653fbb-f4ef-4f20-ada4-5aa766d9a27c&_include%3Aiterate=*`
+`GET [base]/PlanDefinition?name=b5de9665-170f-42b3-8c0b-1d0ea12955b8&_include%3Aiterate=*`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "176bb8d2-e2de-4f81-97f7-2caab303d6e4",
+  "id": "d6fb7313-afca-4580-bd8f-806108ec29ff",
   "meta": {
-    "lastUpdated": "2021-10-05T08:11:34.923+00:00"
+    "lastUpdated": "2021-12-21T15:28:13.561+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-750.local/fhir/PlanDefinition?_format=json&_include%3Aiterate=*&_pretty=true&name=7b653fbb-f4ef-4f20-ada4-5aa766d9a27c"
+      "url": "https://plan.cit-plan-818.local/fhir/PlanDefinition?_format=json&_include%3Aiterate=*&_pretty=true&name=b5de9665-170f-42b3-8c0b-1d0ea12955b8"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-750.local/fhir/PlanDefinition/120",
+      "fullUrl": "https://plan.cit-plan-818.local/fhir/PlanDefinition/130",
       "resource": {
         "resourceType": "PlanDefinition",
-        "id": "120",
+        "id": "130",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-05T08:11:34.729+00:00",
-          "source": "#249c790b-3e03-45",
+          "lastUpdated": "2021-12-21T15:28:13.371+00:00",
+          "source": "#26515f8e-fb38-45",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
           ]
@@ -48,7 +48,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-750.local/fhir/Organization/63989"
+                  "reference": "https://organization.cit-plan-818.local/fhir/Organization/69304"
                 }
               },
               {
@@ -65,14 +65,14 @@ __Response__
             ]
           }
         ],
-        "version": "7d43915e-5cfb-4394-a033-66edc0e85147",
-        "name": "7b653fbb-f4ef-4f20-ada4-5aa766d9a27c",
+        "version": "01d4e430-312b-449d-bafd-cabe11cf699d",
+        "name": "b5de9665-170f-42b3-8c0b-1d0ea12955b8",
         "status": "active",
         "relatedArtifact": [
           {
             "type": "predecessor",
-            "display": "491ceecb-984c-4c6b-b83d-d543bd897c53",
-            "resource": "https://plan.cit-plan-750.local/fhir/DocumentReference/119"
+            "display": "52bac869-121a-4490-8e21-fb46a04ebc54",
+            "resource": "https://plan.cit-plan-818.local/fhir/DocumentReference/129"
           }
         ]
       },
@@ -81,14 +81,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-750.local/fhir/DocumentReference/119",
+      "fullUrl": "https://plan.cit-plan-818.local/fhir/DocumentReference/129",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "119",
+        "id": "129",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-05T08:11:32.945+00:00",
-          "source": "#330cbf59-ea6f-4d",
+          "lastUpdated": "2021-12-21T15:28:13.126+00:00",
+          "source": "#34cde4a0-0e08-4f",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -102,7 +102,7 @@ __Response__
             }
           ]
         },
-        "date": "2021-10-05T08:11:32.768+00:00",
+        "date": "2021-12-21T15:28:13.055+00:00",
         "content": [
           {
             "attachment": {

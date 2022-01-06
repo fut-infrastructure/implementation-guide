@@ -18,8 +18,8 @@ __Response__
   "id": "139",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-10-12T09:30:39.599+00:00",
-    "source": "#07a2bfac-bfe7-41",
+    "lastUpdated": "2021-12-21T13:40:29.854+00:00",
+    "source": "#d31d572c-71b6-45",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -120,7 +120,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-635.local/fhir/Device/138"
+    "reference": "https://device.cit-device-676.local/fhir/Device/138"
   },
   "operationalStatus": "off",
   "category": "calculation"

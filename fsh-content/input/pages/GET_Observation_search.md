@@ -1,9 +1,9 @@
-`GET [base]/Observation?episodeOfCare=https%3A%2F%2Fcareplan.cit-measurement-1363.local%2Ffhir%2FEpisodeOfCare%2F68775`
+`GET [base]/Observation?episodeOfCare=https%3A%2F%2Fcareplan.cit-measurement-1414.local%2Ffhir%2FEpisodeOfCare%2F66697`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDIyODcwMGMtMzAwOS00OWJmLTliODMtYjEzMjFlZjRiNWZjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnNlYXJjaCJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtbWVhc3VyZW1lbnQtMTM2My5sb2NhbC9maGlyL0NhcmVUZWFtLzg2NzY5IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTM2My5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNjg3NzUiLCJ0ZWFtX29uX2VvYyI6dHJ1ZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMThjMzQ5YWMtZDRmYi00YzYzLTlkMDgtMTFlZjM4MjNjMDg5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnNlYXJjaCJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtbWVhc3VyZW1lbnQtMTQxNC5sb2NhbC9maGlyL0NhcmVUZWFtLzE4Mjk4IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTQxNC5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNjY2OTciLCJ0ZWFtX29uX2VvYyI6dHJ1ZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "8b72f140-f279-44b2-8004-8eac1c77ac97",
+  "id": "c437d42d-035f-440d-b4a3-85dbaf899783",
   "meta": {
-    "lastUpdated": "2021-09-29T14:08:12.054+00:00"
+    "lastUpdated": "2021-12-21T14:12:34.022+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://measurement.cit-measurement-1363.local/fhir/Observation?_format=json&_pretty=true&episodeOfCare=https%3A%2F%2Fcareplan.cit-measurement-1363.local%2Ffhir%2FEpisodeOfCare%2F68775"
+      "url": "https://measurement.cit-measurement-1414.local/fhir/Observation?_format=json&_pretty=true&episodeOfCare=https%3A%2F%2Fcareplan.cit-measurement-1414.local%2Ffhir%2FEpisodeOfCare%2F66697"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://measurement.cit-measurement-1363.local/fhir/Observation/580",
+      "fullUrl": "https://measurement.cit-measurement-1414.local/fhir/Observation/578",
       "resource": {
         "resourceType": "Observation",
-        "id": "580",
+        "id": "578",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-09-29T14:08:11.917+00:00",
-          "source": "#f53226a7-665e-41",
+          "lastUpdated": "2021-12-21T14:12:33.903+00:00",
+          "source": "#f642b598-42d5-49",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
           ]
@@ -45,7 +45,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/68775"
+              "reference": "https://careplan.cit-measurement-1414.local/fhir/EpisodeOfCare/66697"
             }
           },
           {
@@ -71,7 +71,7 @@ __Response__
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1363.local/fhir/ServiceRequest/87825"
+            "reference": "https://careplan.cit-measurement-1414.local/fhir/ServiceRequest/20015"
           }
         ],
         "status": "final",
@@ -84,19 +84,19 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/96142"
+          "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/46769"
         },
         "effectivePeriod": {
-          "start": "2021-09-29T14:08:11+00:00",
-          "end": "2021-09-29T14:08:11+00:00"
+          "start": "2021-12-21T14:12:33+00:00",
+          "end": "2021-12-21T14:12:33+00:00"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/96142"
+            "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/46769"
           }
         ],
         "device": {
-          "reference": "https://device.cit-measurement-1363.local/fhir/Device/5628"
+          "reference": "https://device.cit-measurement-1414.local/fhir/Device/557"
         }
       },
       "search": {

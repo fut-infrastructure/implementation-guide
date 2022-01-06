@@ -1,11 +1,11 @@
-`GET [base]/Composition?title=2ccf6787-4fd8-413d-b81d-bbb69c83be5f`
+`GET [base]/Composition?title=7683ae6f-97c2-434f-980e-2849c1b6e901`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,27 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "3d691555-a38a-4e67-b05f-a18146b87c8d",
+  "id": "c5878966-9514-451a-82cc-0553475fe1ab",
   "meta": {
-    "lastUpdated": "2021-10-14T06:10:33.962+00:00"
+    "lastUpdated": "2021-12-21T14:09:56.212+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-transformation.cit-document-transformation-1155.local/fhir/Composition?_format=json&_pretty=true&title=2ccf6787-4fd8-413d-b81d-bbb69c83be5f"
+      "url": "https://document-transformation.cit-document-transformation-1257.local/fhir/Composition?_format=json&_pretty=true&title=7683ae6f-97c2-434f-980e-2849c1b6e901"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1155.local/fhir/Composition/84",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1257.local/fhir/Composition/84",
       "resource": {
         "resourceType": "Composition",
         "id": "84",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-14T06:10:33.189+00:00",
+          "lastUpdated": "2021-12-21T14:09:55.443+00:00",
+          "source": "#16572dc7-4040-47",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -55,6 +56,15 @@ __Response__
                 "value": "0101010001"
               }
             ],
+            "name": [
+              {
+                "use": "usual",
+                "family": "LastName",
+                "given": [
+                  "FirstName"
+                ]
+              }
+            ],
             "gender": "female",
             "address": [
               {
@@ -65,7 +75,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1155.local/fhir/Organization/18667"
+              "reference": "https://organization.cit-document-transformation-1257.local/fhir/Organization/82144"
             }
           },
           {
@@ -78,7 +88,7 @@ __Response__
             },
             "name": [
               {
-                "family": "ab4a436b-6e1b-48f9-ad9f-605af68b445b"
+                "family": "0c20a1d0-0d8b-4a62-a166-2856fc020d39"
               }
             ]
           }
@@ -95,26 +105,27 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2021-10-14T06:10:33+00:00",
+        "date": "2021-12-21T14:09:55+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "2ccf6787-4fd8-413d-b81d-bbb69c83be5f"
+        "title": "7683ae6f-97c2-434f-980e-2849c1b6e901"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1155.local/fhir/Composition/85",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1257.local/fhir/Composition/85",
       "resource": {
         "resourceType": "Composition",
         "id": "85",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-14T06:10:33.421+00:00",
+          "lastUpdated": "2021-12-21T14:09:55.726+00:00",
+          "source": "#b2769493-9585-44",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -134,6 +145,15 @@ __Response__
                 "value": "0101010001"
               }
             ],
+            "name": [
+              {
+                "use": "usual",
+                "family": "LastName",
+                "given": [
+                  "FirstName"
+                ]
+              }
+            ],
             "gender": "female",
             "address": [
               {
@@ -144,7 +164,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1155.local/fhir/Organization/65687"
+              "reference": "https://organization.cit-document-transformation-1257.local/fhir/Organization/29470"
             }
           },
           {
@@ -157,7 +177,7 @@ __Response__
             },
             "name": [
               {
-                "family": "edad7525-dec4-4497-8605-2254e23beb40"
+                "family": "27b1accd-982a-4e39-b678-f09b085b1cae"
               }
             ]
           }
@@ -174,13 +194,13 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2021-10-14T06:10:33+00:00",
+        "date": "2021-12-21T14:09:55+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "2ccf6787-4fd8-413d-b81d-bbb69c83be5f"
+        "title": "7683ae6f-97c2-434f-980e-2849c1b6e901"
       },
       "search": {
         "mode": "match"
