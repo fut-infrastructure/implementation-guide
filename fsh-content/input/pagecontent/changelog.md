@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2022.1 (2022-01-19)
 
 ### General changes
 - Cleaned up some obselete references to ProcedureRequest
