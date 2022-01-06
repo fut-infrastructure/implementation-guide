@@ -1,3 +1,5 @@
+### Event messages 
+
 This document describes the types of event messages that are published to destinations (topic/queue) on the message broker for the eHealth Infrastructure. Each message consists of a JSON body and additionally some message properties.
 
 The JSON body contains the event details, while the message properties enable the use of message selectors when consuming messages from a destination.

@@ -1,3 +1,21 @@
+- `GENERAL_RESOURCE_NOT_FOUND`: Resource %s with id %s is not found.
+
+- `GENERAL_SUBJECT_AND_CONTEXT_NOT_PROVIDED`: At least one of subject and context must be provided.
+
+- `GENERAL_VALIDATION_ERROR`: Validation error: %s
+
+- `GENERAL_EXPORT_FAILED`: Export resource has failed.
+
+- `GENERAL_CANONICAL_TARGET_NOT_ALLOWED_ERROR`: Unsupported target in canonical: %s
+
+#### ehealth-actionguidanceview
+
+- `ACTIONGUIDANCEVIEW_ILLEGAL_CONTENT_SIZE`: Size of content is greater than the max allowed size. Content size: %s, max size: %s
+
+- `ACTIONGUIDANCEVIEW_ILLEGAL_STATUS_CHANGE`: Illegal status change for action_guidance or view from %s and to %s
+
+- `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status)
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s.
@@ -311,6 +329,8 @@
 - `TASK_AUTOMATED_PROCESSING_MISSING_MEASUREMENT_PROCEDURE_REQUEST`: Could not determine if measurement is missing for procedure request: %s.
 
 - `TASK_AUTOMATED_PROCESSING_FAILING_REQUESTS_JOB_TERMINATED`: Limit of %s consecutive failing requests is reached. Scheduled audit job is terminated.
+
+- `TASK_AUTOMATED_PROCESSING_CAREPLAN_NOT_FOUND`: CarePlan is not found when searching by activity: %s.
 
 #### ehealth-transformation
 
