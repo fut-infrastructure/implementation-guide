@@ -696,6 +696,32 @@
 - profile: ehealth-group-appointment
   path: POST_Appointment_Video.html
 
+# ehealth-actionguidance
+- profile: ehealth-actionguidance
+  path: PUT_Actionguidance.html
+
+- profile: ehealth-actionguidance
+  path: POST_Actionguidance.html
+
+- profile: ehealth-actionguidance
+  path: GET_Actionguidance_version.html
+
+- profile: ehealth-actionguidance
+  path: GET_Actionguidance_search.html
+
+  # ehealth-view
+- profile: ehealth-view
+  path: PUT_View.html
+
+- profile: ehealth-view
+  path: POST_View.html
+
+- profile: ehealth-view
+  path: GET_View_version.html
+
+- profile: ehealth-view
+  path: GET_View_search.html
+
 # setting profile = system, in order to include in general operation examples page
 - profile: system
   path: POST_Person.html
