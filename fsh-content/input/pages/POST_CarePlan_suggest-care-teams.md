@@ -1,9 +1,9 @@
-`POST [base]/CarePlan/1252/$suggest-care-teams`
+`POST [base]/CarePlan/1718/$suggest-care-teams`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNDkyNzUiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9DYXJlVGVhbS8yODU4NCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzEyNTAiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0xODA0LmxvY2FsL2ZoaXIvUGF0aWVudC84MDk1OCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzQxMTciLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9DYXJlVGVhbS8zNzEwOSIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzE3MTYiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0xOTQ1LmxvY2FsL2ZoaXIvUGF0aWVudC8yNTc3OSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -30,10 +30,10 @@ __Response__
   "type": "searchset",
   "entry": [
     {
-      "fullUrl": "https://organization.cit-careplan-1804.local/fhir/CareTeam/28584",
+      "fullUrl": "https://organization.cit-careplan-1945.local/fhir/CareTeam/37109",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "28584",
+        "id": "37109",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -43,11 +43,11 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:1a3c6ec4-e6fb-406b-ab23-68e18702fa33"
+            "value": "urn:uuid:1734f5c2-38f6-44db-9f88-1d46d52e4cf2"
           }
         ],
         "status": "active",
-        "name": "1796e84e-0339-4a9a-b79f-275ffd6a5df6",
+        "name": "0557be13-1d11-4d99-a2ce-687fa333bcb1",
         "reasonCode": [
           {
             "coding": [
@@ -61,10 +61,10 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.cit-careplan-1804.local/fhir/CareTeam/76684",
+      "fullUrl": "https://organization.cit-careplan-1945.local/fhir/CareTeam/2921",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "76684",
+        "id": "2921",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -74,11 +74,11 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:d10b18e5-ef49-4b58-b89c-14584c94fbec"
+            "value": "urn:uuid:f314cf5b-e38f-4c46-9ae2-cbdefa6f83ac"
           }
         ],
         "status": "active",
-        "name": "eca00353-fde1-4869-9c45-87ff518e4def",
+        "name": "93ae07e7-f847-4b1e-82a5-ff49bad7c637",
         "reasonCode": [
           {
             "coding": [

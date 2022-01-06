@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1290.local/fhir/EpisodeOfCare/40490"
+              "reference": "https://careplan.cit-task-1405.local/fhir/EpisodeOfCare/99292"
             }
           },
           {
@@ -56,7 +56,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1290.local/fhir/Practitioner/88760"
+              "reference": "https://organization.cit-task-1405.local/fhir/Practitioner/8099"
             }
           }
         ],
@@ -75,26 +75,18 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(Task), Line 1, Col 104]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(Task), Line 1, Col 104]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(Task)",
-        "Line 1, Col 104"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     },
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(Task)",
-        "Line 1, Col 104"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     }
   ]
 }

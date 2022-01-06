@@ -1,9 +1,9 @@
-`GET [base]/QuestionnaireResponse?subject=https%3A%2F%2Fpatient.cit-measurement-1363.local%2Ffhir%2FPatient%2F53852&_revinclude=Provenance%3Atarget`
+`GET [base]/QuestionnaireResponse?subject=https%3A%2F%2Fpatient.cit-measurement-1414.local%2Ffhir%2FPatient%2F25041&_revinclude=Provenance%3Atarget`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzJmMDY5NjQtOTY1My00YTE3LWJjZTctN2Q5OTU0MzA4OGY4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODEwOGMzNGMtZTc1OS00Y2Y5LTk0ZWMtZGJjMWJmZGY1OGY2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "81f6cf48-2274-4dbc-a84a-6b19a46b1a13",
+  "id": "be9c5e28-2292-463d-8524-d4778ac33a66",
   "meta": {
-    "lastUpdated": "2021-09-29T14:07:54.036+00:00"
+    "lastUpdated": "2021-12-21T14:12:13.770+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://measurement.cit-measurement-1363.local/fhir/QuestionnaireResponse?_format=json&_pretty=true&_revinclude=Provenance%3Atarget&subject=https%3A%2F%2Fpatient.cit-measurement-1363.local%2Ffhir%2FPatient%2F53852"
+      "url": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse?_format=json&_pretty=true&_revinclude=Provenance%3Atarget&subject=https%3A%2F%2Fpatient.cit-measurement-1414.local%2Ffhir%2FPatient%2F25041"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://measurement.cit-measurement-1363.local/fhir/QuestionnaireResponse/555",
+      "fullUrl": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse/553",
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "555",
+        "id": "553",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-09-29T14:07:53.638+00:00",
-          "source": "#fc320471-7c9c-47",
+          "lastUpdated": "2021-12-21T14:12:13.337+00:00",
+          "source": "#bac49d70-8c0e-4a",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
@@ -45,7 +45,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/14106"
+              "reference": "https://careplan.cit-measurement-1414.local/fhir/EpisodeOfCare/80024"
             }
           },
           {
@@ -71,17 +71,17 @@ __Response__
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1363.local/fhir/ServiceRequest/94458"
+            "reference": "https://careplan.cit-measurement-1414.local/fhir/ServiceRequest/39469"
           }
         ],
-        "questionnaire": "https://questionnaire.cit-measurement-1363.local/fhir/Questionnaire/62737",
+        "questionnaire": "https://questionnaire.cit-measurement-1414.local/fhir/Questionnaire/69668",
         "status": "completed",
         "subject": {
-          "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/53852"
+          "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/25041"
         },
-        "authored": "2021-09-29T14:07:53+00:00",
+        "authored": "2021-12-21T14:12:13+00:00",
         "source": {
-          "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/69520"
+          "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/55281"
         }
       },
       "search": {
@@ -89,31 +89,31 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://measurement.cit-measurement-1363.local/fhir/Provenance/556",
+      "fullUrl": "https://measurement.cit-measurement-1414.local/fhir/Provenance/554",
       "resource": {
         "resourceType": "Provenance",
-        "id": "556",
+        "id": "554",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-09-29T14:07:53.845+00:00",
-          "source": "#7fb0cd6d-d695-47",
+          "lastUpdated": "2021-12-21T14:12:13.594+00:00",
+          "source": "#739aa9d6-c9b1-4c",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
           ]
         },
         "target": [
           {
-            "reference": "https://measurement.cit-measurement-1363.local/fhir/QuestionnaireResponse/555"
+            "reference": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse/553"
           }
         ],
-        "recorded": "2021-09-29T14:07:53.791+00:00",
+        "recorded": "2021-12-21T14:12:13.524+00:00",
         "policy": [
           "healthcare-act"
         ],
         "agent": [
           {
             "who": {
-              "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/86422"
+              "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/59285"
             }
           }
         ]

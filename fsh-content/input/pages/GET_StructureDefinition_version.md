@@ -1,9 +1,9 @@
-`GET [base]/StructureDefinition/20/_history/2`
+`GET [base]/StructureDefinition/267/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,17 +15,17 @@ __Response__
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "20",
+  "id": "267",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-10-11T08:16:47.423+00:00",
-    "source": "#b4b7c633-da4e-4d",
+    "lastUpdated": "2022-01-05T12:40:58.157+00:00",
+    "source": "#99bb34f7-e787-49",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "4dfd76b0-14dd-4773-a587-8479b2709aa2",
-  "name": "deb1a4ec-abfc-4afe-96bc-8e542e796e67",
+  "url": "e6cd35d7-e8e5-4678-baaf-48f3391224db",
+  "name": "941d9ad9-b8df-41d3-bae6-6fb5ce0681ce",
   "status": "draft",
   "kind": "logical",
   "abstract": true,

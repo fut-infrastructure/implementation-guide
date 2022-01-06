@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzU0ZjUzMzItY2U0OC00MjM3LTkxNTYtNjgxM2UxN2Y0ZGU4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODU5ZTVmNGItMDk5NC00ZDFiLWFkYzItZjA2ZGZjMDEzZDRlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,8 +18,8 @@ __Response__
   "id": "168",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-10-12T09:31:08.144+00:00",
-    "source": "#c4da248b-6c1d-9b",
+    "lastUpdated": "2021-12-21T13:40:46.754+00:00",
+    "source": "#82e28beb-05a1-43",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -120,7 +120,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-635.local/fhir/Device/166"
+    "reference": "https://device.cit-device-676.local/fhir/Device/166"
   },
   "category": "calculation",
   "calibration": [
@@ -128,7 +128,7 @@ __Response__
       "extension": [
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric-calibrationExpires",
-          "valueDateTime": "2021-10-13T09:31:07+00:00"
+          "valueDateTime": "2021-12-22T13:40:46+00:00"
         }
       ]
     }

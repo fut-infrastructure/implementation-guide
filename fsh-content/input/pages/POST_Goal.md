@@ -29,9 +29,9 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/23548"
+    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/70044"
   },
-  "startDate": "2021-10-13",
+  "startDate": "2021-12-21",
   "target": [
     {
       "measure": {
@@ -46,7 +46,7 @@ __Body__:
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-1804.local/fhir/ServiceRequest/785"
+      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1251"
     }
   ]
 }
@@ -56,10 +56,10 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "786",
+  "id": "1252",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-10-13T08:38:57.790+00:00",
+    "lastUpdated": "2021-12-21T16:14:28.119+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
     ]
@@ -74,9 +74,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/23548"
+    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/70044"
   },
-  "startDate": "2021-10-13",
+  "startDate": "2021-12-21",
   "target": [
     {
       "measure": {
@@ -91,7 +91,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-1804.local/fhir/ServiceRequest/785"
+      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1251"
     }
   ]
 }

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDc4NjA3M2UtYTUxOC00NjAzLThiN2YtM2ZlMjcyODNlODc0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWI5NDFkYWEtYzRlYi00Yjc0LWExNDUtYWNjZTljY2ZjZjM2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-597.local/fhir/Organization/39281"
+        "reference": "https://organization.cit-reporting-647.local/fhir/Organization/88799"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2021-10-12T07:48:44+00:00",
-        "end": "2021-10-12T07:48:44+00:00"
+        "start": "2022-01-05T13:43:02+00:00",
+        "end": "2022-01-05T13:43:02+00:00"
       }
     }
   ]
@@ -43,7 +43,7 @@ __Response__
   "id": "12",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-10-12T07:48:44.515+00:00",
+    "lastUpdated": "2022-01-05T13:43:02.941+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "0786073e-a518-4603-8b7f-3fe27283e874"
+      "value": "ab941daa-c4eb-4b74-a145-acce9ccfcf36"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

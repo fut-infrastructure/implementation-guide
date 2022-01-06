@@ -45,7 +45,13 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-750.local/fhir/Organization/84788"
+        "reference": "https://organization.cit-plan-818.local/fhir/Organization/41368"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-818.local/fhir/Organization/15414"
       }
     },
     {
@@ -54,7 +60,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-750.local/fhir/Organization/63909"
+            "reference": "https://organization.cit-plan-818.local/fhir/Organization/77802"
           }
         },
         {
@@ -168,7 +174,7 @@ __Body__:
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 1971349840,
+            "value": -1800020114,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -176,8 +182,8 @@ __Body__:
       ]
     }
   ],
-  "version": "6bd17cb6-4f52-4ee5-9889-3ba47732037b",
-  "name": "e88bcd26-acfd-45ba-b882-74880feea23b",
+  "version": "6bba8b25-9ce0-4579-a697-0b1ddf368c1c",
+  "name": "59ce18e0-8e18-418a-8ddc-54b30b8ae748",
   "status": "active",
   "topic": [
     {
@@ -204,10 +210,10 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "130",
+  "id": "140",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-10-05T08:11:59.039+00:00",
+    "lastUpdated": "2021-12-21T15:28:34.418+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -238,7 +244,13 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-plan-750.local/fhir/Organization/84788"
+        "reference": "https://organization.cit-plan-818.local/fhir/Organization/41368"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-plan-818.local/fhir/Organization/15414"
       }
     },
     {
@@ -247,7 +259,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-750.local/fhir/Organization/63909"
+            "reference": "https://organization.cit-plan-818.local/fhir/Organization/77802"
           }
         },
         {
@@ -361,7 +373,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 1971349840,
+            "value": -1800020114,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -369,8 +381,8 @@ __Response__
       ]
     }
   ],
-  "version": "6bd17cb6-4f52-4ee5-9889-3ba47732037b",
-  "name": "e88bcd26-acfd-45ba-b882-74880feea23b",
+  "version": "6bba8b25-9ce0-4579-a697-0b1ddf368c1c",
+  "name": "59ce18e0-8e18-418a-8ddc-54b30b8ae748",
   "status": "active",
   "topic": [
     {

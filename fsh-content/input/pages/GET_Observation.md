@@ -1,9 +1,9 @@
-`GET [base]/Observation/487`
+`GET [base]/Observation/485`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDU1NjQ5NmQtOGQ2OC00Y2NjLWI4ZDQtZGQ5ZjY2N2E3ZmNhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDE4OTQ5ZDctNzNiNS00M2E3LThmOTgtZWNlY2IyM2I4NGIwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "487",
+  "id": "485",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-09-29T14:07:11.634+00:00",
-    "source": "#cc8c375e-6737-45",
+    "lastUpdated": "2021-12-21T14:11:32.004+00:00",
+    "source": "#65d71bb9-e66e-4a",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1363.local/fhir/EpisodeOfCare/30923"
+        "reference": "https://careplan.cit-measurement-1414.local/fhir/EpisodeOfCare/85988"
       }
     },
     {
@@ -83,20 +83,20 @@ __Response__
   "identifier": [
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "9fa52380-a091-4a2b-b202-206a6c65e9c0"
+      "value": "f450acb3-3e50-4ed3-a887-ae0aa85a23e1"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "50fb94f1-b47c-4ea4-b8c7-5c6cba4e79f9_NPU03011"
+      "value": "377fd17c-571b-4465-a9c5-46fd69b3dd55_NPU03011"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "202c20d5-e2d2-4133-8626-a9203257519d_MCS88015"
+      "value": "4762dba8-a270-4a35-935d-d06fe27af9c5_MCS88015"
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1363.local/fhir/ServiceRequest/85113"
+      "reference": "https://careplan.cit-measurement-1414.local/fhir/ServiceRequest/92263"
     }
   ],
   "status": "final",
@@ -107,22 +107,22 @@ __Response__
         "code": "NPU03011"
       }
     ],
-    "text": "33f076c5-f699-4000-b722-4bec6751b27e"
+    "text": "05d0741f-15b5-4fb7-bc65-1f638b5c8a05"
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/97358"
+    "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/52579"
   },
   "effectivePeriod": {
-    "start": "2021-09-29T14:07:08+00:00",
-    "end": "2021-09-29T14:07:08+00:00"
+    "start": "2021-12-21T14:11:28+00:00",
+    "end": "2021-12-21T14:11:28+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1363.local/fhir/Patient/16456"
+      "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/62166"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1363.local/fhir/Device/71664"
+    "reference": "https://device.cit-measurement-1414.local/fhir/Device/28692"
   },
   "component": [
     {

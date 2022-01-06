@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE4MDQubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvOTMyNiIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24ucmVhZCIsIkNvbmRpdGlvbi5jcmVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMzM3NTIiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24uY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -36,7 +36,7 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/32535"
+    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/41722"
   }
 }
 ```
@@ -45,10 +45,10 @@ __Response__
 ```json
 {
   "resourceType": "Condition",
-  "id": "1469",
+  "id": "1935",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-10-13T08:45:08.186+00:00",
+    "lastUpdated": "2021-12-21T16:22:10.002+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
     ]
@@ -70,7 +70,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1804.local/fhir/Patient/32535"
+    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/41722"
   }
 }
 ```

@@ -1,4 +1,4 @@
-`PUT [base]/ActivityDefinition/149`
+`PUT [base]/ActivityDefinition/159`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Body__:
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "149",
+  "id": "159",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-10-05T08:12:20.554+00:00",
-    "source": "#9bd5bdf3-c327-4e",
+    "lastUpdated": "2021-12-21T15:28:46.398+00:00",
+    "source": "#b6e4ca67-ace1-40",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -42,7 +42,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-750.local/fhir/Organization/18303"
+            "reference": "https://organization.cit-plan-818.local/fhir/Organization/41741"
           }
         },
         {
@@ -59,8 +59,8 @@ __Body__:
       ]
     }
   ],
-  "version": "106a3e91-7b10-404c-877b-248ec619efbe",
-  "name": "0b38bfd0-5ded-4e91-8cdd-4f20698e31c8",
+  "version": "dac26f21-0c03-4b1b-bdf1-6eecbc9ba0ec",
+  "name": "f9ce4c6f-d31a-4401-ac87-a504f71451dc",
   "status": "draft",
   "topic": [
     {
@@ -87,11 +87,11 @@ __Response__
 ```json
 {
   "resourceType": "ActivityDefinition",
-  "id": "149",
+  "id": "159",
   "meta": {
     "versionId": "3",
-    "lastUpdated": "2021-10-05T08:12:24.176+00:00",
-    "source": "#9bd5bdf3-c327-4e",
+    "lastUpdated": "2021-12-21T15:28:49.004+00:00",
+    "source": "#b6e4ca67-ace1-40",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -114,7 +114,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-750.local/fhir/Organization/18303"
+            "reference": "https://organization.cit-plan-818.local/fhir/Organization/41741"
           }
         },
         {
@@ -131,8 +131,8 @@ __Response__
       ]
     }
   ],
-  "version": "106a3e91-7b10-404c-877b-248ec619efbe",
-  "name": "0b38bfd0-5ded-4e91-8cdd-4f20698e31c8",
+  "version": "dac26f21-0c03-4b1b-bdf1-6eecbc9ba0ec",
+  "name": "f9ce4c6f-d31a-4401-ac87-a504f71451dc",
   "status": "draft",
   "topic": [
     {

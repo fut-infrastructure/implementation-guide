@@ -1,4 +1,4 @@
-`POST [base]/ClinicalImpression/345/$validate`
+`POST [base]/ClinicalImpression/341/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ClinicalImpression",
-        "id": "345",
+        "id": "341",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-10-11T15:17:58.837+00:00",
+          "lastUpdated": "2021-12-21T15:53:43.209+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1290.local/fhir/EpisodeOfCare/63868"
+              "reference": "https://careplan.cit-task-1405.local/fhir/EpisodeOfCare/12599"
             }
           }
         ],
@@ -45,7 +45,7 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-task-1290.local/fhir/Patient/27775"
+          "reference": "https://patient.cit-task-1405.local/fhir/Patient/97440"
         }
       }
     }
@@ -59,26 +59,18 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(ClinicalImpression), Line 1, Col 600]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Parameters.parameter[0].resource.ofType(ClinicalImpression), Line 1, Col 600]</td><td><pre>dom-6: Rule 'A resource should have narrative for robust management' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
   },
   "issue": [
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(ClinicalImpression)",
-        "Line 1, Col 600"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     },
     {
       "severity": "information",
-      "code": "processing",
-      "diagnostics": "dom-6: Rule 'A resource should have narrative for robust management' Failed",
-      "location": [
-        "Parameters.parameter[0].resource.ofType(ClinicalImpression)",
-        "Line 1, Col 600"
-      ]
+      "code": "informational",
+      "diagnostics": "No issues detected during validation"
     }
   ]
 }

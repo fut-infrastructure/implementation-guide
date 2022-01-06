@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVBITVIiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIiR0cmFuc2Zvcm0tdG8tUEhNUiJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 3.0.2/DSTU3; apache)
+User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "indexed": "2021-10-14T06:10:25.847+00:00",
+        "date": "2021-12-21T14:09:45.837+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "7ae64b65-de3c-486f-9976-a5471ab810f1",
+        "id": "80062d32-af38-4200-9132-e696d9a17436",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -263,12 +263,14 @@ __Response__
     {
       "resource": {
         "resourceType": "Device",
-        "id": "18b7fe66-ca57-43fd-bedc-bddc036665e7",
+        "id": "6ca40e68-2873-4e5c-8406-27493ba7b2fc",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
         },
+        "lotNumber": "MCI00005",
+        "modelNumber": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
         "type": {
           "coding": [
             {
@@ -277,15 +279,17 @@ __Response__
             }
           ]
         },
-        "lotNumber": "MCI00005",
-        "model": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
-        "version": "SerialNr: N/A / SW Rev. N/A"
+        "version": [
+          {
+            "value": "SerialNr: N/A / SW Rev. N/A"
+          }
+        ]
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "a37b39c0-fbe2-48c8-916b-3586c3eb0f0a",
+        "id": "32e3ccf6-b232-4824-bb70-ad0aa67b4c49",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -398,14 +402,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1155.local/fhir/Device/18b7fe66-ca57-43fd-bedc-bddc036665e7"
+          "reference": "https://document-transformation.cit-document-transformation-1257.local/fhir/Device/6ca40e68-2873-4e5c-8406-27493ba7b2fc"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "238837b6-7787-4295-b09e-77ef941c86f2",
+        "id": "dddca0aa-5ddc-41fa-98fc-8267138cdbbb",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -518,14 +522,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1155.local/fhir/Device/18b7fe66-ca57-43fd-bedc-bddc036665e7"
+          "reference": "https://document-transformation.cit-document-transformation-1257.local/fhir/Device/6ca40e68-2873-4e5c-8406-27493ba7b2fc"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "9e6ba141-f445-4c18-b242-0eb98071a238",
+        "id": "361dd94c-dc06-4bec-a865-495a35d1cb80",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -632,7 +636,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1155.local/fhir/Device/18b7fe66-ca57-43fd-bedc-bddc036665e7"
+          "reference": "https://document-transformation.cit-document-transformation-1257.local/fhir/Device/6ca40e68-2873-4e5c-8406-27493ba7b2fc"
         }
       }
     }
