@@ -1,8 +1,8 @@
 # Introduction
-The FHIR Basic-based eHealth profile ehealth-view is used for defining projections of associated resource(s). A view can be a projection into groups of selected elements. Currently, an example use is applying a QuestionnaireResponse to an interpreted view type of view which defines a projection of answers to a Questionnaire. The view, in this case, references the Questionnaire through `ehealth-view-for`.
+An ehealth-view is a projection on one / several Questionnaires in relation to the display of selected questions / answers in a QuestionnaireResponse. An example of applying a questionnaire response to an interpreted view defines a projection of responses to a questionnaire. Here it refers to the questionnaire through `ehealth-view-for`.
 
 # Scope and Usage
-The eHealth profile of view has the following extensions:
+The profile is based on the native FHIR Basic resource and adds the following extensions:
 * `ehealth-content` The element is used for the actual modeling of the view
 * `ehealth-basic-title` Name for this view
 * `ehealth-description` A description of this view
@@ -16,16 +16,16 @@ The eHealth profile of view has the following extensions:
 
 ## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
-the view:
+the Action guidance:
 
-* `ehealth-modifier-role.reference` references the Organization
+* `ehealth-modifier-role.reference` references the Organization.
 * `ehealth-modifier-role.role` set to `owner` means that the referenced Organization can update the resource
   and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors.
 * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
 
 ## Lifecycle
-* `ehealth-status` The lifecycle of the resource
-    - When created it will have status `draft`.
-    - Status `draft` can change to either `active` or `retired`.
-    - Status `active` can change to `retired` only.
+The status field,`ehealth-status`, will express the lifecycle og the resource. Changes follow this pattern
+- When created it will have status `draft`.
+- From status `draft` can change to either `active` or `retired`.
+ 
