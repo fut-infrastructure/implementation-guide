@@ -41,7 +41,7 @@
       <a name="root"> </a>
       <h2 id="root">StructureDefinition: {{[title]}} - Operation examples</h2>
       {% capture profile_id %}{{[id]}}{% endcapture %}
-      {% for example in site.data.operation-examples %}
+      {% for example in site.data.crud-operation-examples %}
       {% if example.profile != 'system' %}
       {% if example.profile == profile_id %}
       {% capture my-include %}{% include {{ example.path }} %}{% endcapture %}{{ my-include | markdownify }}

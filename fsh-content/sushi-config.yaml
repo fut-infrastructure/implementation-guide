@@ -28,7 +28,9 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
 
   path-pages:
     - input/includes
-
+#    - input/include-ops
+  
+  
   usage-stats-opt-out: true
   show-inherited-invariants: false
 
