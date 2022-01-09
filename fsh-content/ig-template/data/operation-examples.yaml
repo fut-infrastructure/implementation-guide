@@ -1,417 +1,417 @@
 # system
 - profile: system
-  path: POST_apply.html
+  path: POST_apply.md
 
 - profile: system
-  path: POST_create-episode-of-care.html
+  path: POST_create-episode-of-care.md
 
 - profile: system
-  path: POST_search-measurements.html
+  path: POST_search-measurements.md
 
 - profile: system
-  path: POST_submit-measurement.html
+  path: POST_submit-measurement.md
 
 - profile: system
-  path: POST_transform-to-APD.html
+  path: POST_transform-to-APD.md
 
 - profile: system
-  path: POST_transform-from-APD.html
+  path: POST_transform-from-APD.md
 
 - profile: system
-  path: POST_transform-to-PHMR.html
+  path: POST_transform-to-PHMR.md
 
 - profile: system
-  path: POST_transform-to-QFDD.html
+  path: POST_transform-to-QFDD.md
 
 - profile: system
-  path: POST_transform-to-QRD.html
+  path: POST_transform-to-QRD.md
 
 - profile: system
-  path: POST_transform-from-QFDD.html
+  path: POST_transform-from-QFDD.md
 
 - profile: system
-  path: POST_transform-from-PHMR.html
+  path: POST_transform-from-PHMR.md
 
 - profile: system
-  path: POST_transform-from-QRD.html
+  path: POST_transform-from-QRD.md
 
 - profile: system
-  path: POST_import-organizations.html
+  path: POST_import-organizations.md
 
 - profile: system
-  path: POST_persist-login.html
+  path: POST_persist-login.md
 
 - profile: system
-  path: POST_Binary_retrieve-document.html
+  path: POST_Binary_retrieve-document.md
 
 - profile: system
-  path: POST_get-patient-procedures-AT.html
+  path: POST_get-patient-procedures-AT.md
 
 # system reporting
 
 - profile: system
-  path: POST_fetch-careplan-and-episode-of-care-stats.html
+  path: POST_fetch-careplan-and-episode-of-care-stats.md
 
 - profile: system
-  path: POST_fetch-careplan-customization-stats.html
+  path: POST_fetch-careplan-customization-stats.md
 
 - profile: system
-  path: POST_fetch-careplan-duration-stats.html
+  path: POST_fetch-careplan-duration-stats.md
 
 - profile: system
-  path: POST_fetch-careplans-by-patient.html
+  path: POST_fetch-careplans-by-patient.md
 
 - profile: system
-  path: POST_fetch-careteam-stats.html
+  path: POST_fetch-careteam-stats.md
 
 - profile: system
-  path: POST_fetch-measurement-stats.html
+  path: POST_fetch-measurement-stats.md
 
 - profile: system
-  path: POST_fetch-patient-devices.html
+  path: POST_fetch-patient-devices.md
 
 - profile: system
-  path: POST_fetch-patient-gdpr.html
+  path: POST_fetch-patient-gdpr.md
 
 - profile: system
-  path: POST_fetch-practitioner-gdpr.html
+  path: POST_fetch-practitioner-gdpr.md
 
 - profile: system
-  path: POST_fetch-practitioner-stats.html
+  path: POST_fetch-practitioner-stats.md
 
 - profile: system
-  path: POST_fetch-ssl-orders.html
+  path: POST_fetch-ssl-orders.md
 
 - profile: system
-  path: POST_schedule-careplan-and-episode-of-care-stats.html
+  path: POST_schedule-careplan-and-episode-of-care-stats.md
 
 - profile: system
-  path: POST_schedule-careplan-customization-stats.html
+  path: POST_schedule-careplan-customization-stats.md
 
 - profile: system
-  path: POST_schedule-careplan-duration-stats.html
+  path: POST_schedule-careplan-duration-stats.md
 
 - profile: system
-  path: POST_schedule-careplans-by-patient.html
+  path: POST_schedule-careplans-by-patient.md
 
 - profile: system
-  path: POST_schedule-careteam-stats.html
+  path: POST_schedule-careteam-stats.md
 
 - profile: system
-  path: POST_schedule-measurement-stats.html
+  path: POST_schedule-measurement-stats.md
 
 - profile: system
-  path: POST_schedule-patient-devices.html
+  path: POST_schedule-patient-devices.md
 
 - profile: system
-  path: POST_schedule-patient-gdpr.html
+  path: POST_schedule-patient-gdpr.md
 
 - profile: system
-  path: POST_schedule-patient-total.html
+  path: POST_schedule-patient-total.md
 
 - profile: system
-  path: POST_schedule-practitioner-gdpr.html
+  path: POST_schedule-practitioner-gdpr.md
 
 - profile: system
-  path: POST_schedule-practitioner-stats.html
+  path: POST_schedule-practitioner-stats.md
 
 - profile: system
-  path: POST_schedule-ssl-orders.html
+  path: POST_schedule-ssl-orders.md
 
 # ehealth-activitydefinition
 - profile: ehealth-activitydefinition
-  path: GET_ActivityDefinition.html
+  path: GET_ActivityDefinition.md
 
 - profile: ehealth-activitydefinition
-  path: GET_ActivityDefinition_search.html
+  path: GET_ActivityDefinition_search.md
 
 - profile: ehealth-activitydefinition
-  path: GET_ActivityDefinition_version.html
+  path: GET_ActivityDefinition_version.md
 
 - profile: ehealth-activitydefinition
-  path: POST_ActivityDefinition.html
+  path: POST_ActivityDefinition.md
 
 - profile: ehealth-activitydefinition
-  path: POST_ActivityDefinition_validate.html
+  path: POST_ActivityDefinition_validate.md
 
 - profile: ehealth-activitydefinition
-  path: PUT_ActivityDefinition.html
+  path: PUT_ActivityDefinition.md
 
 # ehealth-appointment
 - profile: ehealth-appointment
-  path: POST_Appointment_7.html
+  path: POST_Appointment_7.md
 
 - profile: ehealth-appointment
-  path: GET_Appointment_5.html
+  path: GET_Appointment_5.md
 
 - profile: ehealth-appointment
-  path: PUT_Appointment_5.html
+  path: PUT_Appointment_5.md
 
 - profile: ehealth-appointment
-  path: PATCH_Appointment_5.html
+  path: PATCH_Appointment_5.md
 
 # ehealth-careplan
 - profile: ehealth-careplan
-  path: GET_CarePlan.html
+  path: GET_CarePlan.md
 
 - profile: ehealth-careplan
-  path: GET_CarePlan_search.html
+  path: GET_CarePlan_search.md
 
 - profile: ehealth-careplan
-  path: GET_CarePlan_version.html
+  path: GET_CarePlan_version.md
 
 - profile: ehealth-careplan
-  path: GET_Goal_search.html
+  path: GET_Goal_search.md
 
 - profile: ehealth-careplan
-  path: GET_Goal_version.html
+  path: GET_Goal_version.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan_validate.html
+  path: POST_CarePlan_validate.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan_suggest-care-teams.html
+  path: POST_CarePlan_suggest-care-teams.md
 
 - profile: ehealth-careplan
-  path: POST_CarePlan_update-care-teams.html
+  path: POST_CarePlan_update-care-teams.md
 
 - profile: ehealth-careplan
-  path: POST_Goal.html
+  path: POST_Goal.md
 
 - profile: ehealth-careplan
-  path: PUT_CarePlan.html
+  path: PUT_CarePlan.md
 
 - profile: ehealth-careplan
-  path: PUT_Goal.html
+  path: PUT_Goal.md
 
 # ehealth-careteam
 - profile: ehealth-careteam
-  path: DELETE_CareTeam.html
+  path: DELETE_CareTeam.md
 
 - profile: ehealth-careteam
-  path: GET_CareTeam_search.html
+  path: GET_CareTeam_search.md
 
 - profile: ehealth-careteam
-  path: GET_CareTeam_version.html
+  path: GET_CareTeam_version.md
 
 - profile: ehealth-careteam
-  path: GET_CareTeam.html
+  path: GET_CareTeam.md
 
 - profile: ehealth-careteam
-  path: POST_CareTeam.html
+  path: POST_CareTeam.md
 
 - profile: ehealth-careteam
-  path: POST_CareTeam_validate.html
+  path: POST_CareTeam_validate.md
 
 - profile: ehealth-careteam
-  path: PUT_CareTeam.html
+  path: PUT_CareTeam.md
 
 # ehealth-clinicalimpression
 - profile: ehealth-clinicalimpression
-  path: GET_ClinicalImpression_search.html
+  path: GET_ClinicalImpression_search.md
 
 - profile: ehealth-clinicalimpression
-  path: GET_ClinicalImpression_version.html
+  path: GET_ClinicalImpression_version.md
 
 - profile: ehealth-clinicalimpression
-  path: PATCH_ClinicalImpression.html
+  path: PATCH_ClinicalImpression.md
 
 - profile: ehealth-clinicalimpression
-  path: POST_ClinicalImpression.html
+  path: POST_ClinicalImpression.md
 
 - profile: ehealth-clinicalimpression
-  path: POST_ClinicalImpression.html
+  path: POST_ClinicalImpression.md
 
 # ehealth-communication
 - profile: ehealth-communication
-  path: POST_ClinicalImpression_validate.html
+  path: POST_ClinicalImpression_validate.md
 
 - profile: ehealth-communication
-  path: GET_Communication_search.html
+  path: GET_Communication_search.md
 
 - profile: ehealth-communication
-  path: GET_Communication_version.html
+  path: GET_Communication_version.md
 
 - profile: ehealth-communication
-  path: PATCH_Communication.html
+  path: PATCH_Communication.md
 
 - profile: ehealth-communication
-  path: POST_Communication.html
+  path: POST_Communication.md
 
 - profile: ehealth-communication
-  path: POST_Communication_validate.html
+  path: POST_Communication_validate.md
 
 # ehealth-communication-request
 - profile: ehealth-communication-request
-  path: DELETE_CommunicationRequest.html
+  path: DELETE_CommunicationRequest.md
 
 - profile: ehealth-communication-request
-  path: GET_CommunicationRequest_search.html
+  path: GET_CommunicationRequest_search.md
 
 - profile: ehealth-communication-request
-  path: GET_CommunicationRequest_version.html
+  path: GET_CommunicationRequest_version.md
 
 - profile: ehealth-communication-request
-  path: POST_CommunicationRequest.html
+  path: POST_CommunicationRequest.md
 
 - profile: ehealth-communication-request
-  path: PUT_CommunicationRequest.html
+  path: PUT_CommunicationRequest.md
 
 # ehealth-composition
 - profile: ehealth-composition
-  path: DELETE_Composition.html
+  path: DELETE_Composition.md
 
 - profile: ehealth-composition
-  path: GET_Composition_search.html
+  path: GET_Composition_search.md
 
 - profile: ehealth-composition
-  path: GET_Composition.html
+  path: GET_Composition.md
 
 - profile: ehealth-composition
-  path: POST_Composition.html
+  path: POST_Composition.md
 
 # ehealth-condition
 - profile: ehealth-condition
-  path: GET_Condition.html
+  path: GET_Condition.md
 
 - profile: ehealth-condition
-  path: GET_Condition_version.html
+  path: GET_Condition_version.md
 
 - profile: ehealth-condition
-  path: PATCH_Condition.html
+  path: PATCH_Condition.md
 
 - profile: ehealth-condition
-  path: POST_Condition.html
+  path: POST_Condition.md
 
 - profile: ehealth-condition
-  path: POST_Condition_validate.html
+  path: POST_Condition_validate.md
 
 # ehealth-consent
 - profile: ehealth-consent
-  path: GET_Consent_search.html
+  path: GET_Consent_search.md
 
 - profile: ehealth-consent
-  path: GET_Consent_version.html
+  path: GET_Consent_version.md
 
 - profile: ehealth-consent
-  path: POST_Consent.html
+  path: POST_Consent.md
 
 - profile: ehealth-consent
-  path: POST_Consent_validate.html
+  path: POST_Consent_validate.md
 
 - profile: ehealth-consent
-  path: PUT_Consent.html
+  path: PUT_Consent.md
 
 # ehealth-device
 - profile: ehealth-device
-  path: GET_Device_search.html
+  path: GET_Device_search.md
 
 - profile: ehealth-device
-  path: GET_Device_version.html
+  path: GET_Device_version.md
 
 - profile: ehealth-device
-  path: POST_Device.html
+  path: POST_Device.md
 
 - profile: ehealth-device
-  path: POST_Device_validate.html
+  path: POST_Device_validate.md
 
 - profile: ehealth-device
-  path: PUT_Device.html
+  path: PUT_Device.md
 
 # ehealth-devicemetric
 - profile: ehealth-devicemetric
-  path: DELETE_DeviceMetric.html
+  path: DELETE_DeviceMetric.md
 
 - profile: ehealth-devicemetric
-  path: GET_DeviceMetric.html
+  path: GET_DeviceMetric.md
 
 - profile: ehealth-devicemetric
-  path: GET_DeviceMetric_search.html
+  path: GET_DeviceMetric_search.md
 
 - profile: ehealth-devicemetric
-  path: GET_DeviceMetric_version.html
+  path: GET_DeviceMetric_version.md
 
 - profile: ehealth-devicemetric
-  path: POST_DeviceMetric.html
+  path: POST_DeviceMetric.md
 
 - profile: ehealth-devicemetric
-  path: PUT_DeviceMetric.html
+  path: PUT_DeviceMetric.md
 
 # ehealth-deviceusestatement
 - profile: ehealth-deviceusestatement
-  path: GET_DeviceUseStatement_search.html
+  path: GET_DeviceUseStatement_search.md
 
 - profile: ehealth-deviceusestatement
-  path: GET_DeviceUseStatement_version.html
+  path: GET_DeviceUseStatement_version.md
 
 - profile: ehealth-deviceusestatement
-  path: POST_DeviceUseStatement.html
+  path: POST_DeviceUseStatement.md
 
 - profile: ehealth-deviceusestatement
-  path: POST_DeviceUseStatement_validate.html
+  path: POST_DeviceUseStatement_validate.md
 
 - profile: ehealth-deviceusestatement
-  path: PUT_DeviceUseStatement.html
+  path: PUT_DeviceUseStatement.md
 
 # ehealth-documentreference
 - profile: ehealth-documentreference
-  path: DELETE_DocumentReference.html
+  path: DELETE_DocumentReference.md
 
 - profile: ehealth-documentreference
-  path: GET_DocumentReference_search.html
+  path: GET_DocumentReference_search.md
 
 - profile: ehealth-documentreference
-  path: GET_DocumentReference_version.html
+  path: GET_DocumentReference_version.md
 
 - profile: ehealth-documentreference
-  path: POST_DocumentReference.html
+  path: POST_DocumentReference.md
 
 - profile: ehealth-documentreference
-  path: POST_DocumentReference_validate.html
+  path: POST_DocumentReference_validate.md
 
 - profile: ehealth-documentreference
-  path: PUT_DocumentReference.html
+  path: PUT_DocumentReference.md
 
 # ehealth-episodeofcare
 - profile: ehealth-episodeofcare
-  path: GET_EpisodeOfCare.html
+  path: GET_EpisodeOfCare.md
 
 - profile: ehealth-episodeofcare
-  path: GET_EpisodeOfCare_search.html
+  path: GET_EpisodeOfCare_search.md
 
 - profile: ehealth-episodeofcare
-  path: GET_EpisodeOfCare_version.html
+  path: GET_EpisodeOfCare_version.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare_is-context-allowed.html
+  path: POST_EpisodeOfCare_is-context-allowed.md
 
 - profile: ehealth-episodeofcare
-  path: PATCH_EpisodeOfCare.html
+  path: PATCH_EpisodeOfCare.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare_validate.html
+  path: POST_EpisodeOfCare_validate.md
 
 - profile: ehealth-episodeofcare
-  path: POST_EpisodeOfCare_update-care-teams.html
+  path: POST_EpisodeOfCare_update-care-teams.md
 
 # ehealth-library
 - profile: ehealth-library
-  path: GET_Library_search.html
+  path: GET_Library_search.md
 
 - profile: ehealth-library
-  path: GET_Library_version.html
+  path: GET_Library_version.md
 
 - profile: ehealth-library
-  path: POST_Library_evaluate.html
+  path: POST_Library_evaluate.md
 
 - profile: ehealth-library
-  path: POST_Library.html
+  path: POST_Library.md
 
 - profile: ehealth-library
-  path: POST_Library_validate.html
+  path: POST_Library_validate.md
 
 - profile: ehealth-library
-  path: PUT_Library.html
+  path: PUT_Library.md
 
 # ehealth-measurement
 #- profile: ehealth-measurement
@@ -425,303 +425,303 @@
 
 # ehealth-media
 - profile: ehealth-media
-  path: GET_Media.html
+  path: GET_Media.md
 
 - profile: ehealth-media
-  path: GET_Media_search.html
+  path: GET_Media_search.md
 
 - profile: ehealth-media
-  path: GET_Media_version.html
+  path: GET_Media_version.md
 
 - profile: ehealth-media
-  path: POST_Media_get-data.html
+  path: POST_Media_get-data.md
 
 - profile: ehealth-media
-  path: POST_Media_validate.html
+  path: POST_Media_validate.md
 
 # ehealth-message
 - profile: ehealth-message
-  path: POST_Message_1.html
+  path: POST_Message_1.md
 
 - profile: ehealth-message
-  path: PATCH_Message_3.html
+  path: PATCH_Message_3.md
 
 - profile: ehealth-message
-  path: DELETE_Message_3.html
+  path: DELETE_Message_3.md
 
 # ehealth-observation
 - profile: ehealth-observation
-  path: GET_Observation.html
+  path: GET_Observation.md
 
 - profile: ehealth-observation
-  path: GET_Observation_search.html
+  path: GET_Observation_search.md
 
 - profile: ehealth-observation
-  path: GET_Observation_version.html
+  path: GET_Observation_version.md
 
 - profile: ehealth-observation
-  path: POST_Observation_validate.html
+  path: POST_Observation_validate.md
 
 # ehealth-organization
 - profile: ehealth-organization
-  path: GET_Organization.html
+  path: GET_Organization.md
 
 - profile: ehealth-organization
-  path: GET_Organization_search.html
+  path: GET_Organization_search.md
 
 - profile: ehealth-organization
-  path: GET_Organization_traverse-to-sor.html
+  path: GET_Organization_traverse-to-sor.md
 
 - profile: ehealth-organization
-  path: GET_Organization_version.html
+  path: GET_Organization_version.md
 
 - profile: ehealth-organization
-  path: PATCH_Organization.html
+  path: PATCH_Organization.md
 
 - profile: ehealth-organization
-  path: POST_Organization_validate.html
+  path: POST_Organization_validate.md
 
 # ehealth-patient
 - profile: ehealth-patient
-  path: POST_Patient_1.html
+  path: POST_Patient_1.md
 
 - profile: ehealth-patient
-  path: GET_Patient_1.html
+  path: GET_Patient_1.md
 
 - profile: ehealth-patient
-  path: PATCH_Patient_7.html
+  path: PATCH_Patient_7.md
 
 # ehealth-plandefinition
 - profile: ehealth-plandefinition
-  path: GET_PlanDefinition_search.html
+  path: GET_PlanDefinition_search.md
 
 - profile: ehealth-plandefinition
-  path: GET_PlanDefinition_version.html
+  path: GET_PlanDefinition_version.md
 
 - profile: ehealth-plandefinition
-  path: POST_PlanDefinition.html
+  path: POST_PlanDefinition.md
 
 - profile: ehealth-plandefinition
-  path: POST_PlanDefinition_apply.html
+  path: POST_PlanDefinition_apply.md
 
 - profile: ehealth-plandefinition
-  path: POST_PlanDefinition_validate.html
+  path: POST_PlanDefinition_validate.md
 
 - profile: ehealth-plandefinition
-  path: PUT_PlanDefinition.html
+  path: PUT_PlanDefinition.md
 
 # ehealth-practitioner
 - profile: ehealth-practitioner
-  path: GET_Practitioner_search.html
+  path: GET_Practitioner_search.md
 
 - profile: ehealth-practitioner
-  path: GET_Practitioner_version.html
+  path: GET_Practitioner_version.md
 
 - profile: ehealth-practitioner
-  path: POST_Practitioner.html
+  path: POST_Practitioner.md
 
 - profile: ehealth-practitioner
-  path: POST_Practitioner_validate.html
+  path: POST_Practitioner_validate.md
 
 - profile: ehealth-practitioner
-  path: PUT_Practitioner.html
+  path: PUT_Practitioner.md
 
 # ehealth-practitionerrole
 - profile: ehealth-practitionerrole
-  path: DELETE_PractitionerRole.html
+  path: DELETE_PractitionerRole.md
 
 - profile: ehealth-practitionerrole
-  path: GET_PractitionerRole_search.html
+  path: GET_PractitionerRole_search.md
 
 - profile: ehealth-practitionerrole
-  path: GET_PractitionerRole_version.html
+  path: GET_PractitionerRole_version.md
 
 - profile: ehealth-practitionerrole
-  path: POST_PractitionerRole_validate.html
+  path: POST_PractitionerRole_validate.md
 
 - profile: ehealth-practitionerrole
-  path: GET_PractitionerRole_version.html
+  path: GET_PractitionerRole_version.md
 
 - profile: ehealth-practitionerrole
-  path: PUT_PractitionerRole.html
+  path: PUT_PractitionerRole.md
 
 # ehealth-servicerequest
 - profile: ehealth-servicerequest
-  path: GET_ServiceRequest.html
+  path: GET_ServiceRequest.md
 
 - profile: ehealth-servicerequest
-  path: GET_ServiceRequest_version.html
+  path: GET_ServiceRequest_version.md
 
 - profile: ehealth-servicerequest
-  path: POST_ServiceRequest_validate.html
+  path: POST_ServiceRequest_validate.md
 
 - profile: ehealth-servicerequest
-  path: PUT_ServiceRequest.html
+  path: PUT_ServiceRequest.md
 
 # ehealth-provenance
 - profile: ehealth-provenance
-  path: GET_Provenance.html
+  path: GET_Provenance.md
 
 - profile: ehealth-provenance
-  path: GET_Provenance_search.html
+  path: GET_Provenance_search.md
 
 - profile: ehealth-provenance
-  path: GET_Provenance_version.html
+  path: GET_Provenance_version.md
 
 - profile: ehealth-provenance
-  path: POST_Provenance_validate.html
+  path: POST_Provenance_validate.md
 
 # ehealth-questionnaire
 - profile: ehealth-questionnaire
-  path: DELETE_Questionnaire.html
+  path: DELETE_Questionnaire.md
 
 - profile: ehealth-questionnaire
-  path: GET_Questionnaire.html
+  path: GET_Questionnaire.md
 
 - profile: ehealth-questionnaire
-  path: GET_Questionnaire_search.html
+  path: GET_Questionnaire_search.md
 
 - profile: ehealth-questionnaire
-  path: GET_Questionnaire_version.html
+  path: GET_Questionnaire_version.md
 
 - profile: ehealth-questionnaire
-  path: POST_Questionnaire.html
+  path: POST_Questionnaire.md
 
 - profile: ehealth-questionnaire
-  path: POST_Questionnaire_validate.html
+  path: POST_Questionnaire_validate.md
 
 - profile: ehealth-questionnaire
-  path: PUT_Questionnaire.html
+  path: PUT_Questionnaire.md
 
 # ehealth-questionnaireresponse
 - profile: ehealth-questionnaireresponse
-  path: GET_QuestionnaireResponse.html
+  path: GET_QuestionnaireResponse.md
 
 - profile: ehealth-questionnaireresponse
-  path: GET_QuestionnaireResponse_search.html
+  path: GET_QuestionnaireResponse_search.md
 
 - profile: ehealth-questionnaireresponse
-  path: GET_QuestionnaireResponse_version.html
+  path: GET_QuestionnaireResponse_version.md
 
 - profile: ehealth-questionnaireresponse
-  path: POST_QuestionnaireResponse_validate.html
+  path: POST_QuestionnaireResponse_validate.md
 
 - profile: ehealth-questionnaireresponse
-  path: PUT_QuestionnaireResponse.html
+  path: PUT_QuestionnaireResponse.md
 
 - profile: ehealth-questionnaireresponse
-  path: POST_QuestionnaireResponse.html
+  path: POST_QuestionnaireResponse.md
 
 # ehealth-definedquestion
 - profile: ehealth-definedquestion
-  path: DELETE_StructureDefinition.html
+  path: DELETE_StructureDefinition.md
 
 - profile: ehealth-definedquestion
-  path: GET_StructureDefinition_search.html
+  path: GET_StructureDefinition_search.md
 
 - profile: ehealth-definedquestion
-  path: GET_StructureDefinition_version.html
+  path: GET_StructureDefinition_version.md
 
 - profile: ehealth-definedquestion
-  path: POST_StructureDefinition.html
+  path: POST_StructureDefinition.md
 
 - profile: ehealth-definedquestion
-  path: POST_StructureDefinition_validate.html
+  path: POST_StructureDefinition_validate.md
 
 - profile: ehealth-definedquestion
-  path: PUT_StructureDefinition.html
+  path: PUT_StructureDefinition.md
 
 # ehealth-relatedperson
 
 - profile: ehealth-relatedperson
-  path: POST_RelatedPerson_1.html
+  path: POST_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
-  path: PUT_RelatedPerson_1.html
+  path: PUT_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
-  path: PATCH_RelatedPerson_1.html
+  path: PATCH_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
-  path: GET_RelatedPerson_1.html
+  path: GET_RelatedPerson_1.md
 
 - profile: ehealth-relatedperson
-  path: DELETE_RelatedPerson_1.html
+  path: DELETE_RelatedPerson_1.md
 
 # ehealth-reporting
 - profile: ehealth-binary
-  path: DELETE_Binary.html
+  path: DELETE_Binary.md
 
 - profile: ehealth-binary
-  path: GET_Binary.html
+  path: GET_Binary.md
 
 - profile: ehealth-binary
-  path: GET_Binary_version.html
+  path: GET_Binary_version.md
 
 # ehealth-task
 - profile: ehealth-task
-  path: GET_Task.html
+  path: GET_Task.md
 
 - profile: ehealth-task
-  path: GET_Task_search.html
+  path: GET_Task_search.md
 
 - profile: ehealth-task
-  path: GET_Task_version.html
+  path: GET_Task_version.md
 
 - profile: ehealth-task
-  path: PATCH_Task.html
+  path: PATCH_Task.md
 
 - profile: ehealth-task
-  path: POST_Task.html
+  path: POST_Task.md
 
 - profile: ehealth-task
-  path: POST_Task_validate.html
+  path: POST_Task_validate.md
 
 # ehealth-videoappointment
 - profile: ehealth-videoappointment
-  path: POST_Appointment_Video.html
+  path: POST_Appointment_Video.md
 
 - profile: ehealth-videoappointment
-  path: GET_Appointment_Video.html
+  path: GET_Appointment_Video.md
 
 - profile: ehealth-videoappointment
-  path: PATCH_Appointment_Video.html
+  path: PATCH_Appointment_Video.md
 
 - profile: ehealth-videoappointment
-  path: PUT_Appointment_Video.html
+  path: PUT_Appointment_Video.md
 
 - profile: ehealth-group-appointment
-  path: POST_Group_Appointment.html
+  path: POST_Group_Appointment.md
 
 - profile: ehealth-group-appointment
-  path: POST_Appointment_Video.html
+  path: POST_Appointment_Video.md
 
 # ehealth-actionguidance
 - profile: ehealth-actionguidance
-  path: PUT_Actionguidance.html
+  path: PUT_Actionguidance.md
 
 - profile: ehealth-actionguidance
-  path: POST_Actionguidance.html
+  path: POST_Actionguidance.md
 
 - profile: ehealth-actionguidance
-  path: GET_Actionguidance_version.html
+  path: GET_Actionguidance_version.md
 
 - profile: ehealth-actionguidance
-  path: GET_Actionguidance_search.html
+  path: GET_Actionguidance_search.md
 
   # ehealth-view
 - profile: ehealth-view
-  path: PUT_View.html
+  path: PUT_View.md
 
 - profile: ehealth-view
-  path: POST_View.html
+  path: POST_View.md
 
 - profile: ehealth-view
-  path: GET_View_version.html
+  path: GET_View_version.md
 
 - profile: ehealth-view
-  path: GET_View_search.html
+  path: GET_View_search.md
 
 # setting profile = system, in order to include in general operation examples page
 - profile: system
-  path: POST_Person.html
+  path: POST_Person.md
