@@ -39,9 +39,11 @@ The element `code` must be set to approved-view
 
 The element `ehealth-clinicalimpression-decision` must be set to citizen-view-approved
 
-The element `investigation.ehealth-clinicalimpression-viewInvestigationItem` must be a reference to the ehealth-view that is approved.
+The element `investigation.ehealth-clinicalimpression-viewInvestigationItem` must contain references to the ehealth-views that are approved.
 
-This indicates to the patient solution that the patient referenced in the `subject` element is allowed to use the InterpretedView. An InterpretedView is related to a Questionnaire and can be used to interpret QuestionnaireResponses for that Questionnaire. 
+The element `investigation.item` must contain references to the QuestionnaireResponses that may use the views.
+
+This indicates to the patient solution that the patient referenced in the `subject` element is allowed to use the InterpretedViews for the specified QuestionnaireResponses. 
  
 
 ### Required if CarePlan is known
