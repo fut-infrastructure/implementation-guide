@@ -12,6 +12,7 @@ In scope of the eHealth Infrastructure, the ClinicalImpression resource is used 
 * representing the result of automated processing such as triaging and decision support performed on submitted measurement(s)
 * representing a placeholder for subsequent Practitioner assessment. This ClinicalImpression instance is generated when no instance is otherwise created as per automated processing described above. 
 * representing an assessment of a Practitioner such as approval and/or approval for publication in national document sharing
+* representing an approval for using an InterpretedView (ehealth-view) for QuestionnaireResponses
 
 The element `code` specifies which of the above uses is the case.
 
@@ -32,6 +33,16 @@ The ClinicalImpression instance for the Practitioner assessment can refer to a C
 The element `ehealth-clinicalimpression-decision` contains the Practitioner's assessment of the measurement/triaging result/decision support result, that is whether the measurement/result is approved and/or approved for publishing in national document sharing.
 
 In case the Practitioner has comments or notes, these can be captured as one or more occurrences of the element `note.text`. 
+
+### Use for approving InterpretedView
+The element `code` must be set to approved-view
+
+The element `ehealth-clinicalimpression-decision` must be set to citizen-view-approved
+
+The element `investigation.ehealth-clinicalimpression-viewInvestigationItem` must be a reference to the ehealth-view that is approved.
+
+This indicates to the patient solution that the patient referenced in the `subject` element is allowed to use the InterpretedView. An InterpretedView is related to a Questionnaire and can be used to interpret QuestionnaireResponses for that Questionnaire. 
+ 
 
 ### Required if CarePlan is known
 
