@@ -27,8 +27,8 @@
         "system": "http://hl7.org/fhir/action-selection-behavior",
         "concept": [
           {
-            "code": "any",
-            "display": "Any"
+            "code": "one-or-more",
+            "display": "One Or More"
           },
           {
             "code": "all",

@@ -24,7 +24,7 @@ Description: "Defines a reaction along with its trigger conditions."
 * extension[triggerBehavior].valueCode from http://ehealth.sundhed.dk/vs/trigger-behavior
 * extension[triggerBehavior].valueCode 1..1
 * extension[triggerBehavior] ^short = "Controls how multiple triggerCondition must be met"
-* extension[triggerBehavior] ^definition = "Controls how multiple triggerCondition must be met - all or any."
+* extension[triggerBehavior] ^definition = "Controls how multiple triggerCondition must be met - all or one-or-more."
 * extension[offset].valueDuration 0..1
 * extension[offset].valueDuration only Duration
 * extension[offset] ^short = "Offset applied to timing bounds"
