@@ -23,7 +23,14 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct"
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "404684003"
+          }
+        ]
       },
       {
         "system": "http://ehealth.sundhed.dk/cs/task-category"
