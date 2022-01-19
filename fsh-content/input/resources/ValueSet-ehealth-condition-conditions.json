@@ -1,0 +1,13 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-condition-conditions",
+  "url": "http://ehealth.sundhed.dk/vs/condition-conditions",
+  "version": "2022-01-14T12:21:02",
+  "name": "Condition_Conditions",
+  "title": "Tilstandskoder",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-01-14T00:00:00+00:00",
+  "publisher": "FUT-S",
+  "description": "Condition Codes"
+}
