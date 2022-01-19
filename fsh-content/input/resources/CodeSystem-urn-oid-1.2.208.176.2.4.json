@@ -59,6 +59,22 @@
     {
       "code": "ALCA00",
       "display": "fysisk fremmøde"
+    },
+    {
+      "code": "DE10",
+      "display": "Type 1-diabetes"
+    },
+    {
+      "code": "DE100",
+      "display": "Type 1-diabetes med koma"
+    },
+    {
+      "code": "DI20",
+      "display": "Angina pectoris"
+    },
+    {
+      "code": "DI200",
+      "display": "Ustabil angina pectoris"
     }
   ]
 }
