@@ -27,13 +27,154 @@
         "system": "http://ehealth.sundhed.dk/cs/conditions"
       },
       {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/health-conditions"
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DJ44",
+            "display": "Kronisk obstruktiv lungesygdom"
+          },
+          {
+            "code": "DE10",
+            "display": "Type 1-diabetes"
+          },
+          {
+            "code": "DI20",
+            "display": "Angina pectoris"
+          }
         ]
       },
       {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/condition-conditions"
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "I9.1"
+          },
+          {
+            "code": "I4.9"
+          },
+          {
+            "code": "I7.2"
+          },
+          {
+            "code": "I10.1"
+          },
+          {
+            "code": "I6.2"
+          },
+          {
+            "code": "I11.4"
+          },
+          {
+            "code": "I9.3"
+          },
+          {
+            "code": "I6.4"
+          },
+          {
+            "code": "I9.2"
+          },
+          {
+            "code": "I12.1"
+          },
+          {
+            "code": "I4.5"
+          },
+          {
+            "code": "I4.7"
+          },
+          {
+            "code": "I4.3"
+          },
+          {
+            "code": "I1.2"
+          },
+          {
+            "code": "I4.2"
+          },
+          {
+            "code": "I3.2"
+          },
+          {
+            "code": "I9.5"
+          },
+          {
+            "code": "I11.1"
+          },
+          {
+            "code": "I9.7"
+          },
+          {
+            "code": "I11.2"
+          },
+          {
+            "code": "I4.1"
+          },
+          {
+            "code": "I5.1"
+          },
+          {
+            "code": "I9.4"
+          },
+          {
+            "code": "I12.4"
+          },
+          {
+            "code": "I6.3"
+          },
+          {
+            "code": "I2.1"
+          },
+          {
+            "code": "I3.4"
+          },
+          {
+            "code": "I1.1"
+          },
+          {
+            "code": "I8.1"
+          },
+          {
+            "code": "I9.8"
+          },
+          {
+            "code": "I6.1"
+          },
+          {
+            "code": "I11.3"
+          },
+          {
+            "code": "I9.6"
+          },
+          {
+            "code": "I4.8"
+          },
+          {
+            "code": "I4.4"
+          },
+          {
+            "code": "I3.5"
+          },
+          {
+            "code": "I12.3"
+          },
+          {
+            "code": "I12.2"
+          },
+          {
+            "code": "I4.6"
+          },
+          {
+            "code": "I3.1"
+          },
+          {
+            "code": "I7.1"
+          },
+          {
+            "code": "I10.2"
+          },
+          {
+            "code": "I3.3"
+          }
         ]
       }
     ]
