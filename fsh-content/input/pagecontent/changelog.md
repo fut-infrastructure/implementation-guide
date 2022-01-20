@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 ### ValueSets
+- http://ehealth.sundhed.dk/vs/trigger-behavior now includes concept `one-or-more` instead of `any`
 ### ConceptMaps
 ### Resource/profile changes
 

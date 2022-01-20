@@ -9,5 +9,14 @@
   "experimental": false,
   "date": "2022-01-14T00:00:00+00:00",
   "publisher": "FUT-S",
-  "description": "Condition Codes"
+  "description": "Condition Codes",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://kl.dk/fhir/common/caresocial/ValueSet/KLConditionCodesNursing"
+        ]
+      }
+    ]
+  }
 }
