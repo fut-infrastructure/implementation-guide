@@ -11,6 +11,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - http://ehealth.sundhed.dk/vs/trigger-behavior now includes concept `one-or-more` instead of `any`
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension ehealth-employee-title as title directed at clinicians for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in  `ehealth-activitydefinition.fsh`, `ehealth-plandefinition.fsh` and `ehealth-questionnaire.fsh`
+- Added extension ehealth-usage as description directed at clinicians for ehealth-activitydefinition in `ehealth-questionnaire.fsh`
+- Added extension item.ehealth-questionnaire-shortText for ehealth-questionnaire-activitydefinition in `ehealth-questionnaire.fsh`
 
 ## 2022.1 (2022-01-19)
 
