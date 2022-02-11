@@ -55,3 +55,6 @@ An action trigger is defined in the element `action.ehealth-actionTrigger` with 
 
 ### Referencing information material
 PlanDefinitions can reference information material intended for [Practitioner](StructureDefinition-ehealth-practitioner.html), [Patient](StructureDefinition-ehealth-patient.html) or [RelatedPerson](StructureDefinition-ehealth-relatedperson.html). The material can be in the form of embedded material (of reasonable size) or referenced videos, PDF-files or printed material. Information material is contained or referenced using a [DocumentReference](StructureDefinition-ehealth-documentreference.html) resource and referenced from the PlanDefinition using the `relatedArtifact` element.
+
+### Title and description
+A PlanDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `usage` are intended for clinicians and should be of a specific and professional language.

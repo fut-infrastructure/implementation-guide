@@ -43,3 +43,6 @@ the ActivityDefinition:
  and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors.
  * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
+
+### Title and description
+A PlanDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `usage` are intended for clinicians and should be of a specific and professional language.
