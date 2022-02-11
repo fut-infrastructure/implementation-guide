@@ -7,6 +7,8 @@ Parent: Questionnaire
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-questionnaire-type named type 1..*
 * extension contains http://hl7.org/fhir/StructureDefinition/rendering-styleSensitive named styleSensitive 0..1
+* extension contains ehealth-employee-title named employeeTitle 0..1
+* extension contains ehealth-usage named usage 0..1
 
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
@@ -19,6 +21,7 @@ Parent: Questionnaire
 * item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
 * item.extension contains ehealth-questionnaire-image named ehealth-question-image 0..1
+* item.extension contains ehealth-questionnaire-shortText named shortText 0..1
 * item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
 * item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
 * item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control

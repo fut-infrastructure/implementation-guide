@@ -8,6 +8,7 @@ Parent: ActivityDefinition
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-sharingPolicy named sharingPolicy 1..1
+* extension contains ehealth-employee-title named employeeTitle 0..1
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
 * topic from ehealth-topic-type
