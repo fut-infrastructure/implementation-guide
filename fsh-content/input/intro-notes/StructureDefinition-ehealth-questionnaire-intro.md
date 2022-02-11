@@ -41,4 +41,4 @@ Note that the original text without formatting must be added to the elements `it
 The extension rendering-styleSensitive indicates if clients must be able to display the formatted text for this Questionnaire, or if not capable to do this, at least indicate to the user that rendering is not appropriate.  
 
 ### Title and description
-A PlanDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `ehealth-usage` are intended for clinicians and should be of a specific and professional language.
+A Questionnaire has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `ehealth-usage` are intended for clinicians and should be of a specific and professional language.
