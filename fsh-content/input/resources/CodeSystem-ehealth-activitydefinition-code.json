@@ -109,6 +109,17 @@
           "value": "Bestemmelse af betjeningskvalitet"
         }
       ]
+    },
+    {
+      "code": "SDG",
+      "display": "Same device group",
+      "definition": "Same device group",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Samme udstyrsgruppe"
+        }
+      ]
     }
   ]
 }
