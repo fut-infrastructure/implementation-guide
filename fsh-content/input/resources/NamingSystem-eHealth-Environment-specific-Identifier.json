@@ -1,0 +1,28 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "ehealth-environment-specific-identifier",
+  "name": "eHealth Environment-specific Identifier",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2021-02-23T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "responsible": "ehealth.sundhed.dk",
+  "description": "The eHealth Environment-specific Identifier is assigned to PlanDefinition, ActivityDefinition and Questionnaire resources in the eHealth Infrastructure created on EXTTEST",
+  "uniqueId": [
+    {
+
+      "type": "uri",
+      "value": "http://ehealth.sundhed.dk/id/environment-specific-identifier"
+    }
+  ]
+}
