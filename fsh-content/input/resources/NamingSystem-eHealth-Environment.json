@@ -1,7 +1,7 @@
 {
   "resourceType": "NamingSystem",
-  "id": "ehealth-environment-specific-identifier",
-  "name": "eHealth Environment-specific Identifier",
+  "id": "ehealth-environment",
+  "name": "eHealth Environment",
   "status": "active",
   "kind": "identifier",
   "date": "2021-02-23T00:00:00+00:00",
@@ -17,12 +17,12 @@
     }
   ],
   "responsible": "ehealth.sundhed.dk",
-  "description": "The eHealth Environment-specific Identifier is assigned to PlanDefinition, ActivityDefinition and Questionnaire resources in the eHealth Infrastructure created on EXTTEST",
+  "description": "The eHealth Environment is assigned to PlanDefinition, ActivityDefinition and Questionnaire resources in the eHealth Infrastructure created on the environment",
   "uniqueId": [
     {
 
       "type": "uri",
-      "value": "http://ehealth.sundhed.dk/id/environment-specific-identifier"
+      "value": "http://ehealth.sundhed.dk/id/ehealth-environment"
     }
   ]
 }
