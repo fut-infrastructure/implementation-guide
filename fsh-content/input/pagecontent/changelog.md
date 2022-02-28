@@ -7,10 +7,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/ehealth-clone-operation for Clone operation codes `major-version`, `minor-version` and `copy`
+### Naming systems
+- Added http://ehealth.sundhed.dk/id/ehealth-environment as naming system for all ehealth environments
 ### ValueSets
 - http://ehealth.sundhed.dk/vs/trigger-behavior now includes concept `one-or-more` instead of `any`
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension ehealth-base as an Identifier to describe the first business-version of a resource for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
+- Added extension ehealth-predecessor as Identifier to describe which business-version precessed the current resource for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
+
+
+- Added extension ehealth-base-environment as Identifier to describe which ehealth environment a resource originate from for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
+
 - Added extension ehealth-employee-title as title directed at clinicians for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in  `ehealth-activitydefinition.fsh`, `ehealth-plandefinition.fsh` and `ehealth-questionnaire.fsh`
 - Added extension ehealth-usage as description directed at clinicians for ehealth-activitydefinition in `ehealth-questionnaire.fsh`
 - Added extension item.ehealth-questionnaire-shortText for ehealth-questionnaire in `ehealth-questionnaire.fsh`
