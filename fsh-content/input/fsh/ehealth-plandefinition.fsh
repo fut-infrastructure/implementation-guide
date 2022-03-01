@@ -7,6 +7,7 @@ Parent: PlanDefinition
 * extension contains ehealth-employee-title named employeeTitle 0..1
 * extension contains ehealth-predecessor named predecessor 0..1
 * extension contains ehealth-base named base 0..1
+* extension contains ehealth-base-environment named baseEnvironment 0..1
 
 * version 1..1
 * jurisdiction from ehealth-jurisdiction
