@@ -58,3 +58,8 @@ PlanDefinitions can reference information material intended for [Practitioner](S
 
 ### Title and description
 A PlanDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `usage` are intended for clinicians and should be of a specific and professional language.
+
+### Actions and Timing
+Each `action` element must either have sub-actions or an `action.definition`. This makes it possible to create top-level group-actions that functions as containers for a number of related sub-actions. 
+
+It is possible to specify timing for each action in the `action.timing[x]` element. When the PlanDefiniton is applied to a Patient this will override any timing specified on the related ActivityDefinition.

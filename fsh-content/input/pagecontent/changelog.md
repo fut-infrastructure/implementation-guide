@@ -14,6 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-employee-title as title directed at clinicians for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in  `ehealth-activitydefinition.fsh`, `ehealth-plandefinition.fsh` and `ehealth-questionnaire.fsh`
 - Added extension ehealth-usage as description directed at clinicians for ehealth-activitydefinition in `ehealth-questionnaire.fsh`
 - Added extension item.ehealth-questionnaire-shortText for ehealth-questionnaire in `ehealth-questionnaire.fsh`
+- Added description of group-actions and timing to PlanDefinition intro
 
 ## 2022.1 (2022-01-19)
 
