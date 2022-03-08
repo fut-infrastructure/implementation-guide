@@ -25,7 +25,11 @@ For each `item` and `item.answerOption` in a Questionnaire, a small image can be
  In the service, the `Binary.contentType` is verified against a ValueSet with `uri` `http://ehealth.sundhed.dk/vs/questionnaire-item-image-format` while the size of `Binary.data` must not exceed a configurable size, currently 266Kb (base64 encoded). 
  
 ### Answer significance
-The `item.ehealth-questionnaire-answerSignificance` element functions as a triaging indicator, describing the importance of answers to respective questions. `answerSignificance` has two sub elements:
+The `item.ehealth-questionnaire-answerSignificance` element functions as a triaging indicator, describing the importance of answers to respective questions.
+
+Answer significance is a colour. Currently the possible values are red, yellow, green. Answer condition specifies the conditions that must be fulfilled for the answer to result in the given colour.
+  
+`answerSignificance` has two sub elements:
 * The `answerSignificance.significance` element which states the triaging color
 * The `answerSignificance.answerCondition` contains the value or interval limits for comparison against the given answer. 
     * `answerCondition.value[x]` is the value to compare with an answer and contains various type depending on the need.
