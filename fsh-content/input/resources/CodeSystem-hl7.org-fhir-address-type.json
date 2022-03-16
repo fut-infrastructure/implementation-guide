@@ -24,7 +24,6 @@
     }
   ],
   "description": "The type of an address (physical / postal)",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/address-type",
   "concept": [

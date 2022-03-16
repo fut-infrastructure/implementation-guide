@@ -42,7 +42,6 @@
     }
   ],
   "description": "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record.",
-  "caseSensitive": true,
   "concept": [
     {
       "code": "draft",

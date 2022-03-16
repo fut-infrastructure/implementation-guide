@@ -24,7 +24,6 @@
     }
   ],
   "description": "The status of the episode of care.",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/episode-of-care-status",
   "concept": [

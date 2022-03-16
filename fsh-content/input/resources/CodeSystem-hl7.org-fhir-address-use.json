@@ -24,7 +24,6 @@
     }
   ],
   "description": "The use of an address",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/address-use",
   "concept": [

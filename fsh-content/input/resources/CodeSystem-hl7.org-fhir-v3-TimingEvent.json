@@ -32,7 +32,6 @@
     }
   ],
   "description": "**** MISSING DEFINITIONS ****",
-  "caseSensitive": true,
   "supplements": "http://hl7.org/fhir/ValueSet/v3-TimingEvent",
   "hierarchyMeaning": "is-a",
   "content": "supplement",

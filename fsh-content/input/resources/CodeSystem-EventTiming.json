@@ -22,7 +22,6 @@
     }
   ],
   "description": "EventTiming",
-  "caseSensitive": true,
   "supplements": "http://hl7.org/fhir/event-timing",
   "content": "supplement",
   "concept": [

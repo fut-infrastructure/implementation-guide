@@ -24,7 +24,6 @@
     }
   ],
   "description": "The lifecycle status of a Value Set or Concept Map.",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/publication-status",
   "concept": [

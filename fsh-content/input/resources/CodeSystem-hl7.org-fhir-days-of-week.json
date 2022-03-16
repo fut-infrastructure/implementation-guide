@@ -24,7 +24,6 @@
     }
   ],
   "description": "The days of the week.",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/days-of-week",
   "concept": [

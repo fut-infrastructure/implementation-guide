@@ -24,7 +24,6 @@
     }
   ],
   "description": "Indicates the state of the consent",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/consent-state-codes",
   "concept": [
