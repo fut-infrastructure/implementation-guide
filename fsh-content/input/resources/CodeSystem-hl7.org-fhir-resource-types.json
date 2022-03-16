@@ -24,7 +24,6 @@
     }
   ],
   "description": "One of the resource types defined as part of FHIR.",
-  "caseSensitive": true,
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/resource-types",
   "concept": [
