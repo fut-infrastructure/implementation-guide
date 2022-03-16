@@ -51,7 +51,7 @@ podTemplate(label: label,
     }
 
     // deploy only the master branch
-    if (env.BRANCH_NAME == 'master') {
+    if (env.BRANCH_NAME == 'FUT1-5892_upgrade_to_hapi_fhir_570') {
 
       stage ('generate documentation') {
         container('igpublisher') {
