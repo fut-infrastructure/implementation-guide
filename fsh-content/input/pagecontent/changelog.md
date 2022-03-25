@@ -20,6 +20,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 - Cleaned up some obselete references to ProcedureRequest
+- Added link to Documentreference Search in operations list
 
 ### Custom operations
 - Added description of output parameters for $get-patient-procedures
