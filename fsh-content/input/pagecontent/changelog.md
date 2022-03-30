@@ -16,6 +16,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension item.ehealth-questionnaire-shortText for ehealth-questionnaire in `ehealth-questionnaire.fsh`
 - Added more detailed description of Answer Significance to the Questionnaire profile.  
 - Added description of group-actions and timing to PlanDefinition intro
+- Added more detailed description of Answer Significance to the Questionnaire profile.  
 
 ## 2022.1 (2022-01-19)
 
