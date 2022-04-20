@@ -8,10 +8,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-clone-operation for Clone operation codes `major-version`, `minor-version` and `copy`
+- Updated SKS with new concepts from exttest
+- Updated some descriptions of DAK-E-Codes
 ### Naming systems
 - Added http://ehealth.sundhed.dk/id/ehealth-environment as naming system for all ehealth environments
 ### ValueSets
 - http://ehealth.sundhed.dk/vs/trigger-behavior now includes concept `one-or-more` instead of `any`
+- Updated http://ehealth.sundhed.dk/vs/conditions with new conditions from exttest
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-base as an Identifier to describe the first business-version of a resource for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
