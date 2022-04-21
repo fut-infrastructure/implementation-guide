@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2022-01-01T02:17:16.241+00:00",
+  "date": "2022-04-21T13:54:14.612+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.8.1"
+    "version": "1.8.3"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -38,137 +38,110 @@
       "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ],
       "searchParam": [ {
         "name": "_content",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_content",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a fulltext search"
       }, {
         "name": "_has",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_has",
         "type": "string",
         "documentation": "Return resources linked to by the given target"
       }, {
         "name": "_id",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_id",
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
         "name": "_language",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_language",
         "type": "string",
         "documentation": "The language of the resource"
       }, {
         "name": "_lastUpdated",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "_profile",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_profile",
         "type": "uri",
         "documentation": "Search for resources which have the given profile"
       }, {
         "name": "_security",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_security",
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
         "name": "_tag",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
       }, {
         "name": "_text",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-_text",
         "type": "string",
         "documentation": "Search the contents of the resource's narrative using a fulltext search"
       }, {
         "name": "attester",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-attester",
         "type": "reference",
         "documentation": "Who attested the composition"
       }, {
         "name": "author",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-author",
         "type": "reference",
         "documentation": "Who and/or what authored the composition"
       }, {
         "name": "class",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-class",
         "type": "token",
         "documentation": "Categorization of Composition"
       }, {
         "name": "confidentiality",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-confidentiality",
         "type": "token",
         "documentation": "As defined by affinity domain"
       }, {
         "name": "context",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-context",
         "type": "token",
         "documentation": "Code(s) that apply to the event being documented"
       }, {
         "name": "date",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-date",
         "type": "date",
         "documentation": "Composition editing time"
       }, {
         "name": "encounter",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-encounter",
         "type": "reference",
         "documentation": "Context of the Composition"
       }, {
         "name": "entry",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-entry",
         "type": "reference",
         "documentation": "A reference to data that supports this section"
       }, {
         "name": "identifier",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-identifier",
         "type": "token",
         "documentation": "Logical identifier of composition (version-independent)"
       }, {
         "name": "patient",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-patient",
         "type": "reference",
         "documentation": "Who and/or what the composition is about"
       }, {
         "name": "period",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-period",
         "type": "date",
         "documentation": "The period covered by the documentation"
       }, {
         "name": "related-id",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-related-id",
         "type": "token",
         "documentation": "Target of the relationship"
       }, {
         "name": "related-ref",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-related-ref",
         "type": "reference",
         "documentation": "Target of the relationship"
       }, {
         "name": "section",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-section",
         "type": "token",
         "documentation": "Classification of section (recommended)"
       }, {
         "name": "status",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-status",
         "type": "token",
         "documentation": "preliminary | final | amended | entered-in-error"
       }, {
         "name": "subject",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-subject",
         "type": "reference",
         "documentation": "Who and/or what the composition is about"
       }, {
         "name": "title",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-title",
         "type": "string",
         "documentation": "Human Readable name/title"
       }, {
         "name": "type",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/Composition-type",
         "type": "token",
         "documentation": "Kind of composition (LOINC if possible)"
       } ],
@@ -196,182 +169,146 @@
       "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ],
       "searchParam": [ {
         "name": "_content",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_content",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a fulltext search"
       }, {
         "name": "_has",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_has",
         "type": "string",
         "documentation": "Return resources linked to by the given target"
       }, {
         "name": "_id",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_id",
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
         "name": "_language",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_language",
         "type": "string",
         "documentation": "The language of the resource"
       }, {
         "name": "_lastUpdated",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "_profile",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_profile",
         "type": "uri",
         "documentation": "Search for resources which have the given profile"
       }, {
         "name": "_security",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_security",
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
         "name": "_tag",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
       }, {
         "name": "_text",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-_text",
         "type": "string",
         "documentation": "Search the contents of the resource's narrative using a fulltext search"
       }, {
         "name": "authenticator",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-authenticator",
         "type": "reference",
         "documentation": "Who/what authenticated the document"
       }, {
         "name": "author",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-author",
         "type": "reference",
         "documentation": "Who and/or what authored the document"
       }, {
         "name": "class",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-class",
         "type": "token",
         "documentation": "Categorization of document"
       }, {
         "name": "custodian",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-custodian",
         "type": "reference",
         "documentation": "Organization which maintains the document"
       }, {
         "name": "date",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-date",
         "type": "date",
         "documentation": "Document creation time"
       }, {
         "name": "description",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-description",
         "type": "string",
         "documentation": "Human-readable description (title)"
       }, {
         "name": "encounter",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-encounter",
         "type": "reference",
         "documentation": "Context of the document  content"
       }, {
         "name": "event",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-event",
         "type": "token",
         "documentation": "Main clinical acts documented"
       }, {
         "name": "facility",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-facility",
         "type": "token",
         "documentation": "Kind of facility where patient was seen"
       }, {
         "name": "format",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-format",
         "type": "token",
         "documentation": "Format/content rules for the document"
       }, {
         "name": "identifier",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-identifier",
         "type": "token",
         "documentation": "Master Version Specific Identifier"
       }, {
         "name": "indexed",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-indexed",
         "type": "date",
         "documentation": "When this document reference was created"
       }, {
         "name": "language",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-language",
         "type": "token",
         "documentation": "Human language of the content (BCP-47)"
       }, {
         "name": "location",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-location",
         "type": "uri",
         "documentation": "Uri where the data can be found"
       }, {
         "name": "patient",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-patient",
         "type": "reference",
         "documentation": "Who/what is the subject of the document"
       }, {
         "name": "period",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-period",
         "type": "date",
         "documentation": "Time of service that is being documented"
       }, {
         "name": "related",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related",
         "type": "reference",
         "documentation": "Related identifiers or resources"
       }, {
         "name": "related-id",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-id",
         "type": "token",
         "documentation": "Identifier of related objects or events"
       }, {
         "name": "related-ref",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-related-ref",
         "type": "reference",
         "documentation": "Related Resource"
       }, {
         "name": "relatesto",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relatesto",
         "type": "reference",
         "documentation": "Target of the relationship"
       }, {
         "name": "relation",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relation",
         "type": "token",
         "documentation": "replaces | transforms | signs | appends"
       }, {
         "name": "relationship",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-relationship",
         "type": "composite",
         "documentation": "Combination of relation and relatesTo"
       }, {
         "name": "securitylabel",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-securitylabel",
         "type": "token",
         "documentation": "Document security-tags"
       }, {
         "name": "setting",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-setting",
         "type": "token",
         "documentation": "Additional details about where the content was created (e.g. clinical specialty)"
       }, {
         "name": "status",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-status",
         "type": "token",
         "documentation": "current | superseded | entered-in-error"
       }, {
         "name": "subject",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-subject",
         "type": "reference",
         "documentation": "Who/what is the subject of the document"
       }, {
         "name": "type",
-        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/SearchParameter/DocumentReference-type",
         "type": "token",
         "documentation": "Kind of document (LOINC if possible)"
       } ],

@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2022-01-01T02:28:05.594+00:00",
+  "date": "2022-04-16T02:29:27.349+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.7.1"
+    "version": "1.7.3"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -38,132 +38,106 @@
       "searchRevInclude": [ "Library:composed-of", "Library:depends-on", "Library:derived-from", "Library:predecessor", "Library:successor" ],
       "searchParam": [ {
         "name": "_content",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_content",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a fulltext search"
       }, {
         "name": "_has",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_has",
         "type": "string",
         "documentation": "Return resources linked to by the given target"
       }, {
         "name": "_id",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_id",
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
         "name": "_language",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_language",
         "type": "string",
         "documentation": "The language of the resource"
       }, {
         "name": "_lastUpdated",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "_profile",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_profile",
         "type": "uri",
         "documentation": "Search for resources which have the given profile"
       }, {
         "name": "_security",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_security",
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
         "name": "_tag",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
       }, {
         "name": "_text",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-_text",
         "type": "string",
         "documentation": "Search the contents of the resource's narrative using a fulltext search"
       }, {
         "name": "composed-of",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-composed-of",
         "type": "reference",
         "documentation": "What resource is being referenced"
       }, {
         "name": "date",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-date",
         "type": "date",
         "documentation": "The library publication date"
       }, {
         "name": "depends-on",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-depends-on",
         "type": "reference",
         "documentation": "What resource is being referenced"
       }, {
         "name": "derived-from",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-derived-from",
         "type": "reference",
         "documentation": "What resource is being referenced"
       }, {
         "name": "description",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-description",
         "type": "string",
         "documentation": "The description of the library"
       }, {
         "name": "effective",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-effective",
         "type": "date",
         "documentation": "The time during which the library is intended to be in use"
       }, {
         "name": "identifier",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-identifier",
         "type": "token",
         "documentation": "External identifier for the library"
       }, {
         "name": "jurisdiction",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-jurisdiction",
         "type": "token",
         "documentation": "Intended jurisdiction for the library"
       }, {
         "name": "name",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-name",
         "type": "string",
         "documentation": "Computationally friendly name of the library"
       }, {
         "name": "predecessor",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-predecessor",
         "type": "reference",
         "documentation": "What resource is being referenced"
       }, {
         "name": "publisher",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-publisher",
         "type": "string",
         "documentation": "Name of the publisher of the library"
       }, {
         "name": "status",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-status",
         "type": "token",
         "documentation": "The current status of the library"
       }, {
         "name": "successor",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-successor",
         "type": "reference",
         "documentation": "What resource is being referenced"
       }, {
         "name": "title",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-title",
         "type": "string",
         "documentation": "The human-friendly name of the library"
       }, {
         "name": "topic",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-topic",
         "type": "token",
         "documentation": "Topics associated with the module"
       }, {
         "name": "url",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-url",
         "type": "uri",
         "documentation": "The uri that identifies the library"
       }, {
         "name": "version",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/SearchParameter/Library-version",
         "type": "token",
         "documentation": "The business version of the library"
       } ],

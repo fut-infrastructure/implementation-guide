@@ -3,12 +3,12 @@
   "id": "reporting",
   "name": "reporting",
   "status": "active",
-  "date": "2022-01-05T14:50:18.105+00:00",
+  "date": "2022-04-21T13:54:05.374+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "reporting",
-    "version": "1.6.1"
+    "version": "1.6.2"
   },
   "implementation": {
     "description": "eHealth reporting service",

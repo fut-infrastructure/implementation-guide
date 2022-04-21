@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2022-01-01T02:26:49.132+00:00",
+  "date": "2022-04-21T13:54:13.511+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.9.1"
+    "version": "1.9.2"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -36,37 +36,30 @@
       "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
       "searchParam": [ {
         "name": "episodeOfCare",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-episodeOfCare",
         "type": "reference",
         "documentation": "Episode associated with communication"
       }, {
         "name": "identifier",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-identifier",
         "type": "token",
         "documentation": "Unique identifier"
       }, {
         "name": "recipient",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-recipient",
         "type": "reference",
         "documentation": "Message recipient"
       }, {
         "name": "recipientCareTeam",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-recipientCareTeam",
         "type": "reference",
         "documentation": "Recipient care team"
       }, {
         "name": "sender",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-sender",
         "type": "reference",
         "documentation": "Message sender"
       }, {
         "name": "senderCareTeam",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-senderCareTeam",
         "type": "reference",
         "documentation": "Sender care team"
       }, {
         "name": "subject",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Communication-subject",
         "type": "reference",
         "documentation": "Focus of message"
       } ],
@@ -87,72 +80,58 @@
       "searchRevInclude": [ "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-_content",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a fulltext search"
       }, {
         "name": "_filter",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-_filter",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a filter"
       }, {
         "name": "based-on",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-based-on",
         "type": "reference",
         "documentation": "Procedure that caused this media to be created"
       }, {
         "name": "created",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-created",
         "type": "date",
         "documentation": "When Media was collected"
       }, {
         "name": "episodeOfCare",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-episodeOfCare",
         "type": "reference",
         "documentation": "Episode associated with media"
       }, {
         "name": "identifier",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-identifier",
         "type": "token",
         "documentation": "Identifier(s) for the image"
       }, {
         "name": "qualityCode",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-qualityCode",
         "type": "token",
         "documentation": "Quality code of the media"
       }, {
         "name": "qualityType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-qualityType",
         "type": "token",
         "documentation": "Quality type of the media"
       }, {
         "name": "resolvedTimingEnd",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-resolvedTimingEnd",
         "type": "date",
         "documentation": "Resolved Timing end"
       }, {
         "name": "resolvedTimingServiceRequestVersionId",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-resolvedTimingServiceRequestVersionId",
         "type": "token",
         "documentation": "Resolved Timing serviceRequestVersionID"
       }, {
         "name": "resolvedTimingStart",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-resolvedTimingStart",
         "type": "date",
         "documentation": "Resolved Timing start"
       }, {
         "name": "resolvedTimingType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-resolvedTimingType",
         "type": "token",
         "documentation": "Resolved Timing type"
       }, {
         "name": "subject",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-subject",
         "type": "reference",
         "documentation": "Who/What this Media is a record of"
       }, {
         "name": "type",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Media-type",
         "type": "token",
         "documentation": "photo | video | audio"
       } ],
@@ -176,87 +155,70 @@
       "searchRevInclude": [ "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-_content",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a fulltext search"
       }, {
         "name": "_filter",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-_filter",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a filter"
       }, {
         "name": "_id",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-_id",
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
         "name": "_text",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-_text",
         "type": "string",
         "documentation": "Search the contents of the resource's narrative using a fulltext search"
       }, {
         "name": "based-on",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-based-on",
         "type": "reference",
         "documentation": "Reference to the test or procedure request."
       }, {
         "name": "code",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-code",
         "type": "token",
         "documentation": "The code of the observation type"
       }, {
         "name": "date",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-date",
         "type": "date",
         "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
       }, {
         "name": "episodeOfCare",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-episodeOfCare",
         "type": "reference",
         "documentation": "Episode associated with observation"
       }, {
         "name": "identifier",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-identifier",
         "type": "token",
         "documentation": "The unique id for a particular observation"
       }, {
         "name": "patient",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-patient",
         "type": "reference",
         "documentation": "The subject that the observation is about (if patient)"
       }, {
         "name": "qualityCode",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-qualityCode",
         "type": "token",
         "documentation": "The quality code of the observation"
       }, {
         "name": "qualityType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-qualityType",
         "type": "token",
         "documentation": "The quality type of the observation"
       }, {
         "name": "resolvedTimingEnd",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-resolvedTimingEnd",
         "type": "date",
         "documentation": "Resolved Timing end"
       }, {
         "name": "resolvedTimingServiceRequestVersionId",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-resolvedTimingServiceRequestVersionId",
         "type": "token",
         "documentation": "Resolved Timing serviceRequestVersionID"
       }, {
         "name": "resolvedTimingStart",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-resolvedTimingStart",
         "type": "date",
         "documentation": "Resolved Timing start"
       }, {
         "name": "resolvedTimingType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-resolvedTimingType",
         "type": "token",
         "documentation": "Resolved Timing type"
       }, {
         "name": "subject",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/Observation-subject",
         "type": "reference",
         "documentation": "The subject that the observation is about"
       } ],
@@ -301,77 +263,62 @@
       "searchRevInclude": [ "Provenance:target" ],
       "searchParam": [ {
         "name": "_filter",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-_filter",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a filter"
       }, {
         "name": "authored",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-authored",
         "type": "date",
         "documentation": "When the questionnaire response was last changed"
       }, {
         "name": "based-on",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-based-on",
         "type": "reference",
         "documentation": "Plan/proposal/order fulfilled by this questionnaire response"
       }, {
         "name": "episodeOfCare",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-episodeOfCare",
         "type": "reference",
         "documentation": "Episode associated with questionnaire response"
       }, {
         "name": "identifier",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-identifier",
         "type": "token",
         "documentation": "The unique identifier for the questionnaire response"
       }, {
         "name": "lastUpdated",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-lastUpdated",
         "type": "date",
         "documentation": "The date when resource was updated last time"
       }, {
         "name": "qualityCode",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-qualityCode",
         "type": "token",
         "documentation": "The quality code of the questionnaire response"
       }, {
         "name": "qualityType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-qualityType",
         "type": "token",
         "documentation": "The quality type of the questionnaire response"
       }, {
         "name": "questionnaire",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-questionnaire",
         "type": "reference",
         "documentation": "The questionnaire the answers are provided for"
       }, {
         "name": "resolvedTimingEnd",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-resolvedTimingEnd",
         "type": "date",
         "documentation": "Resolved Timing end"
       }, {
         "name": "resolvedTimingServiceRequestVersionId",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-resolvedTimingServiceRequestVersionId",
         "type": "token",
         "documentation": "Resolved Timing serviceRequestVersionID"
       }, {
         "name": "resolvedTimingStart",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-resolvedTimingStart",
         "type": "date",
         "documentation": "Resolved Timing start"
       }, {
         "name": "resolvedTimingType",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-resolvedTimingType",
         "type": "token",
         "documentation": "Resolved Timing type"
       }, {
         "name": "status",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-status",
         "type": "token",
         "documentation": "The status of the questionnaire response"
       }, {
         "name": "subject",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/SearchParameter/QuestionnaireResponse-subject",
         "type": "reference",
         "documentation": "The subject of the questionnaire response"
       } ],
