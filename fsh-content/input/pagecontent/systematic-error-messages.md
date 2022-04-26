@@ -374,3 +374,6 @@
 
 - `TRANSFORMATION_APD_XML_MISSING`: Invalid input document reference, it must contain content with data of APD xml
 
+- `VERSIONING_RESOURCE_MUST_BE_FROM_CURRENT_ENVIRONMENT`: Versioning validation error: Resource must be from current environment: %s.
+
+- `VERSIONING_MULTIPLE_DRAFTS_IN_BASE_NOT_ALLOWED`: Versioning validation error: Only one draft resource at a time is allowed per base.
