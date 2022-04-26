@@ -145,7 +145,7 @@ __Response__
 ####Example of validation-error.
 `POST [base]/ActivityDefinition/34/$create-clone`
 
-The version of the resource that is atempted to be cloned is itself in draft, and as there can be no more than one draft resource per base at a time, this will cause an error.
+The version of the resource that is atempted to be cloned is itself in draft, therefore, as there can be no more than one draft resource per base at a time, this will cause an error.
 
 __Header__
 ```
