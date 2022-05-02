@@ -1,10 +1,10 @@
 ####Example of success.
-`POST [base]/ActivityDefinition/36/$create-clone`
+`POST [base]/ActivityDefinition/11/$create-clone`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzI5ODU3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiQWN0aXZpdHlEZWZpbml0aW9uLmNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzUzMTIyIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzMxNjg2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiQWN0aXZpdHlEZWZpbml0aW9uLmNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzcwMTMwIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -34,14 +34,14 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "ActivityDefinition/37",
+      "fullUrl": "ActivityDefinition/12",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "37",
+        "id": "12",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-04-26T14:40:24.611+00:00",
-          "source": "#397796b4-8e18-43",
+          "lastUpdated": "2022-05-02T07:43:08.969+00:00",
+          "source": "#4e0f0cc1-0d39-47",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -53,7 +53,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-                  "code": "TBD"
+                  "code": "noSharing"
                 }
               ]
             }
@@ -64,7 +64,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/53122"
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/70130"
                 }
               },
               {
@@ -84,7 +84,7 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:29d53773-5cae-4ec3-ba5e-1d0c6bb53284",
+              "value": "urn:uuid:e3bbd12d-2552-4407-8e09-dfd10d9dad75",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
@@ -97,7 +97,7 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:332504a5-6774-4485-846f-cb38414165f1"
+              "value": "urn:uuid:010c45d5-6a25-4989-aa0f-fd120c6ebb24"
             }
           },
           {
@@ -111,11 +111,11 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:129ab633-c64a-43bf-ada5-cf0f576a9842"
+            "value": "urn:uuid:112a909e-90e8-47b7-90c2-802f9b33824e"
           }
         ],
         "version": "2.0",
-        "name": "375ae3cd-f583-475e-8c52-f952d2f1a826",
+        "name": "78721120-7174-4d4f-819e-5167176cc211",
         "status": "draft",
         "topic": [
           {
@@ -130,8 +130,8 @@ __Response__
         "code": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-              "code": "TBD"
+              "system": "urn:oid:1.2.208.176.2.1",
+              "code": "NPU03011"
             }
           ]
         }
@@ -143,14 +143,14 @@ __Response__
 
 
 ####Example of validation-error.
-`POST [base]/ActivityDefinition/34/$create-clone`
+`POST [base]/ActivityDefinition/9/$create-clone`
 
-The version of the resource that is atempted to be cloned is itself in draft, therefore, as there can be no more than one draft resource per base at a time, this will cause an error.
+The version of the resource on which clone is attempted is itself in draft. Validation fails on clone as it requires no other version in the same base having status draft.
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzE4NiIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJBY3Rpdml0eURlZmluaXRpb24ucmVhZCIsIkFjdGl2aXR5RGVmaW5pdGlvbi5jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi83NzQ0NSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzQ4MDEyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiQWN0aXZpdHlEZWZpbml0aW9uLmNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzMxMzMiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip

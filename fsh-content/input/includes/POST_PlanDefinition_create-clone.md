@@ -1,9 +1,9 @@
-`POST [base]/PlanDefinition/11/$create-clone`
+`POST [base]/PlanDefinition/4/$create-clone`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzg2MTI4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uLmNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiQWN0aXZpdHlEZWZpbml0aW9uLmNyZWF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiLCJBY3Rpdml0eURlZmluaXRpb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi83NTIyMCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzM3NTc3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uLmNyZWF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiUGxhbkRlZmluaXRpb24ucmVhZCIsIkFjdGl2aXR5RGVmaW5pdGlvbi5jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL09yZ2FuaXphdGlvbi8zODk2NyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -37,174 +37,14 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "PlanDefinition/14",
-      "resource": {
-        "resourceType": "PlanDefinition",
-        "id": "14",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2022-04-25T10:30:29.233+00:00",
-          "source": "#64f63546-685a-4f",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
-            "extension": [
-              {
-                "url": "reference",
-                "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/75220"
-                }
-              },
-              {
-                "url": "role",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/modifier-role",
-                      "code": "owner"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
-            "valueIdentifier": {
-              "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:b4718c40-bd4d-4a95-a8a3-62a1330640bc",
-              "assigner": {
-                "identifier": {
-                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "local"
-                }
-              }
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
-            "valueIdentifier": {
-              "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:35d2cea6-3184-4aaf-ab1a-952eb71e9d94"
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
-            "valueIdentifier": {
-              "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-              "value": "local"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:7c654567-0b64-468a-936e-d9621203df60"
-          }
-        ],
-        "version": "1.0",
-        "name": "rootPlan",
-        "status": "draft",
-        "action": [
-          {
-            "definitionCanonical": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/13"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "PlanDefinition/13",
-      "resource": {
-        "resourceType": "PlanDefinition",
-        "id": "13",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2022-04-25T10:30:29.093+00:00",
-          "source": "#da7f9e3e-69e2-4d",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
-          ]
-        },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
-            "extension": [
-              {
-                "url": "reference",
-                "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/75220"
-                }
-              },
-              {
-                "url": "role",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "http://ehealth.sundhed.dk/cs/modifier-role",
-                      "code": "owner"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
-            "valueIdentifier": {
-              "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:d98963b4-4b64-4a2a-a7a2-70eb6a740de4",
-              "assigner": {
-                "identifier": {
-                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "local"
-                }
-              }
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
-            "valueIdentifier": {
-              "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:5e74caef-0ee8-4630-a800-1cbc121acaf2"
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
-            "valueIdentifier": {
-              "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-              "value": "local"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:9c46b20d-e59f-42f6-a535-540bfbbbc8a7"
-          }
-        ],
-        "version": "1.0",
-        "name": "subPlan",
-        "status": "draft",
-        "action": [
-          {
-            "definitionCanonical": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/12"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "ActivityDefinition/12",
+      "fullUrl": "ActivityDefinition/5",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "12",
+        "id": "5",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-04-25T10:30:28.975+00:00",
-          "source": "#4f9949f9-5f95-4b",
+          "lastUpdated": "2022-05-02T07:36:31.101+00:00",
+          "source": "#db0e9243-99a4-4c",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -216,7 +56,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-                  "code": "TBD"
+                  "code": "noSharing"
                 }
               ]
             }
@@ -227,7 +67,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/75220"
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/38967"
                 }
               },
               {
@@ -247,7 +87,7 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:a2784ebd-a09e-4080-868b-a206dc9319c2",
+              "value": "urn:uuid:221a66b7-9823-405b-9d8e-6085fd0413fd",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
@@ -260,7 +100,7 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:405bccf9-e32e-459e-ad4a-4bd166d39c37"
+              "value": "urn:uuid:599313d1-d4cc-423e-9988-675a091f8ef9"
             }
           },
           {
@@ -274,11 +114,11 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:0034b21d-b587-4382-8931-19ae84a7fb40"
+            "value": "urn:uuid:3f7d0b8b-e837-4b34-a021-7625e26cb05d"
           }
         ],
         "version": "1.0",
-        "name": "db189a06-8073-42d3-aba4-d728be2d6a1e",
+        "name": "fb887a71-dfb8-4177-8988-c08ec0aab0c4",
         "status": "draft",
         "topic": [
           {
@@ -293,11 +133,171 @@ __Response__
         "code": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-              "code": "TBD"
+              "system": "urn:oid:1.2.208.176.2.1",
+              "code": "NPU03011"
             }
           ]
         }
+      }
+    },
+    {
+      "fullUrl": "PlanDefinition/6",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "6",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-05-02T07:36:31.283+00:00",
+          "source": "#c783b14b-f06b-4b",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+            "extension": [
+              {
+                "url": "reference",
+                "valueReference": {
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/38967"
+                }
+              },
+              {
+                "url": "role",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                      "code": "owner"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:d6fc7dc5-7372-4527-a7c5-53b202e571e9",
+              "assigner": {
+                "identifier": {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+                  "value": "local"
+                }
+              }
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:001d0ccc-b8a5-43ee-a199-d45c5af203aa"
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+            "valueIdentifier": {
+              "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+              "value": "local"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:85e3c670-a69f-46bf-bc3f-4566efdd4980"
+          }
+        ],
+        "version": "1.0",
+        "name": "subPlan",
+        "status": "draft",
+        "action": [
+          {
+            "definitionCanonical": "https://plan.local.ehealth.sundhed.dk/fhir/ActivityDefinition/5"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PlanDefinition/7",
+      "resource": {
+        "resourceType": "PlanDefinition",
+        "id": "7",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-05-02T07:36:31.489+00:00",
+          "source": "#e4d587d1-f768-43",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+            "extension": [
+              {
+                "url": "reference",
+                "valueReference": {
+                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/38967"
+                }
+              },
+              {
+                "url": "role",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/modifier-role",
+                      "code": "owner"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:c4a71ae5-9706-42fb-a0fe-0cc24ddd5a4d",
+              "assigner": {
+                "identifier": {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+                  "value": "local"
+                }
+              }
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:3bbcdfdf-c318-4333-a8a8-12193e7a67cf"
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+            "valueIdentifier": {
+              "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+              "value": "local"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:8209dc07-fedc-4d0d-9c5c-06b24433bfee"
+          }
+        ],
+        "version": "1.0",
+        "name": "rootPlan",
+        "status": "draft",
+        "action": [
+          {
+            "definitionCanonical": "https://plan.local.ehealth.sundhed.dk/fhir/PlanDefinition/6"
+          }
+        ]
       }
     }
   ]
