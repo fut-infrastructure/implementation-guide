@@ -377,3 +377,5 @@
 - `VERSIONING_RESOURCE_MUST_BE_FROM_CURRENT_ENVIRONMENT`: Versioning validation error: Resource must be from current environment: %s.
 
 - `VERSIONING_MULTIPLE_DRAFTS_IN_BASE_NOT_ALLOWED`: Versioning validation error: Only one draft resource at a time is allowed per base.
+
+- `VERSIONING_RESOURCE_NOT_ELIGIBLE_FOR_CLONE`: Versioning validation error: A resource must have base-identifier, environment-identifier, versioning-identifier and version to be cloned.
