@@ -55,7 +55,7 @@ podTemplate(label: label,
 
       stage ('generate documentation') {
         container('igpublisher') {
-          sh "export NODE_TLS_REJECT_UNAUTHORIZED=0; cd fsh-content; sushi .;java -jar /input-cache/publisher.jar -no-sushi -ig ig.ini"
+          sh "cd fsh-content; sushi .;java -jar /input-cache/publisher.jar -no-sushi -ig ig.ini"
         }
       }
 
