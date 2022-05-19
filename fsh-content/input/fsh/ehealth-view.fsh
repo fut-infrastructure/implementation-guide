@@ -13,7 +13,7 @@ Parent: Basic
 * extension contains ehealth-status named status 1..1
 * extension contains ehealth-content named content 1..1
 * extension contains ehealth-view-type named type 1..1
-* extension contains ehealth-view-for named viewFor 1..*
+* extension contains ehealth-view-for named viewFor 0..*
 * code from http://ehealth.sundhed.dk/vs/basic-resource-type (required)
 
 
