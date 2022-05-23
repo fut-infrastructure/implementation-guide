@@ -17,17 +17,21 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated http://ehealth.sundhed.dk/vs/conditions with new conditions from exttest
 ### ConceptMaps
 ### Resource/profile changes
+#### ActionGuidance
+- Cardinality of ehealth-actionguidance-for changed to 0..*
+#### View
+- Cardinality of ehealth-view-for changed to 0..*
+#### ActivityDefinition, PlanDefinition and Questionnaire
 - Added extension ehealth-base as an Identifier to describe the first business-version of a resource for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
 - Added extension ehealth-predecessor as Identifier to describe which business-version precessed the current resource for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
-
-
 - Added extension ehealth-base-environment as Identifier to describe which ehealth environment a resource originate from for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in `ehealth-plandefinition.fsh`, `ehealth-activitydefinition.fsh` and `ehealth-questionnaire.fsh`
-
 - Added extension ehealth-employee-title as title directed at clinicians for ehealth-activitydefinition, ehealth-plandefinition and ehealth-questionnaire in  `ehealth-activitydefinition.fsh`, `ehealth-plandefinition.fsh` and `ehealth-questionnaire.fsh`
+#### Questionnaire
 - Added extension ehealth-usage as description directed at clinicians for ehealth-activitydefinition in `ehealth-questionnaire.fsh`
 - Added extension item.ehealth-questionnaire-shortText for ehealth-questionnaire in `ehealth-questionnaire.fsh`
+- Added more detailed description of Answer Significance to the Questionnaire profile.
+#### PlanDefinition
 - Added description of group-actions and timing to PlanDefinition intro
-- Added more detailed description of Answer Significance to the Questionnaire profile.  
 
 ## 2022.1 (2022-01-19)
 
