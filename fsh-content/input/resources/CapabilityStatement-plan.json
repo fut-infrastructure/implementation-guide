@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2022-04-21T13:53:36.145+00:00",
+  "date": "2022-06-16T08:28:45.516+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "1.8.4"
+    "version": "2.0.1"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -176,7 +176,7 @@
       "operation": [ {
         "name": "create-clone",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
-        "documentation": "### Input\n- resourceId: reference to the ActivityDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions can only be created on the base environment\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
+        "documentation": "### Input\n- resourceId: reference to the ActivityDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
       }, {
         "name": "validate",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
@@ -526,7 +526,7 @@
       }, {
         "name": "create-clone",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
-        "documentation": "### Input\n- resourceId: reference to the PlanDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions can only be created on the base environment\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
+        "documentation": "### Input\n- resourceId: reference to the PlanDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
       }, {
         "name": "export",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export",
@@ -539,6 +539,11 @@
         "name": "validate",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       } ]
+    } ],
+    "operation": [ {
+      "name": "migrate",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
     } ]
   } ]
 }
