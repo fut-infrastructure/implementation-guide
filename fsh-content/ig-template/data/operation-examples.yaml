@@ -1,60 +1,60 @@
 # system
 - profile: system
-  path: POST_apply.html
+  path: POST_apply.md
 
 - profile: system
-  path: POST_create-episode-of-care.html
+  path: POST_create-episode-of-care.md
 
 - profile: system
-  path: POST_search-measurements.html
+  path: POST_search-measurements.md
 
 - profile: system
-  path: POST_submit-measurement.html
+  path: POST_submit-measurement.md
 
 - profile: system
-  path: POST_transform-to-APD.html
+  path: POST_transform-to-APD.md
 
 - profile: system
-  path: POST_transform-from-APD.html
+  path: POST_transform-from-APD.md
 
 - profile: system
-  path: POST_transform-to-PHMR.html
+  path: POST_transform-to-PHMR.md
 
 - profile: system
-  path: POST_transform-to-QFDD.html
+  path: POST_transform-to-QFDD.md
 
 - profile: system
-  path: POST_transform-to-QRD.html
+  path: POST_transform-to-QRD.md
 
 - profile: system
-  path: POST_transform-from-QFDD.html
+  path: POST_transform-from-QFDD.md
 
 - profile: system
-  path: POST_transform-from-PHMR.html
+  path: POST_transform-from-PHMR.md
 
 - profile: system
-  path: POST_transform-from-QRD.html
+  path: POST_transform-from-QRD.md
 
 - profile: system
-  path: POST_import-organizations.html
+  path: POST_import-organizations.md
 
 - profile: system
-  path: POST_persist-login.html
+  path: POST_persist-login.md
 
 - profile: system
-  path: POST_Binary_retrieve-document.html
+  path: POST_Binary_retrieve-document.md
 
 - profile: system
-  path: POST_get-patient-procedures-AT.html
+  path: POST_get-patient-procedures-AT.md
 
 - profile: system
-  path: POST_CarePlan_suggest-care-teams.html
+  path: POST_CarePlan_suggest-care-teams.md
 
 - profile: system
-  path: POST_CarePlan_update-care-teams.html
+  path: POST_CarePlan_update-care-teams.md
 
 - profile: system
-  path: POST_EpisodeOfCare_update-care-teams.html
+  path: POST_EpisodeOfCare_update-care-teams.md
 
 - profile: system
   path: POST_EpisodeOfCare_is-context-allowed.md
@@ -68,74 +68,74 @@
 # system reporting
 
 - profile: system
-  path: POST_fetch-careplan-and-episode-of-care-stats.html
+  path: POST_fetch-careplan-and-episode-of-care-stats.md
 
 - profile: system
-  path: POST_fetch-careplan-customization-stats.html
+  path: POST_fetch-careplan-customization-stats.md
 
 - profile: system
-  path: POST_fetch-careplan-duration-stats.html
+  path: POST_fetch-careplan-duration-stats.md
 
 - profile: system
-  path: POST_fetch-careplans-by-patient.html
+  path: POST_fetch-careplans-by-patient.md
 
 - profile: system
-  path: POST_fetch-careteam-stats.html
+  path: POST_fetch-careteam-stats.md
 
 - profile: system
-  path: POST_fetch-measurement-stats.html
+  path: POST_fetch-measurement-stats.md
 
 - profile: system
-  path: POST_fetch-patient-devices.html
+  path: POST_fetch-patient-devices.md
 
 - profile: system
-  path: POST_fetch-patient-gdpr.html
+  path: POST_fetch-patient-gdpr.md
 
 - profile: system
-  path: POST_fetch-practitioner-gdpr.html
+  path: POST_fetch-practitioner-gdpr.md
 
 - profile: system
-  path: POST_fetch-practitioner-stats.html
+  path: POST_fetch-practitioner-stats.md
 
 - profile: system
-  path: POST_fetch-ssl-orders.html
+  path: POST_fetch-ssl-orders.md
 
 - profile: system
-  path: POST_schedule-careplan-and-episode-of-care-stats.html
+  path: POST_schedule-careplan-and-episode-of-care-stats.md
 
 - profile: system
-  path: POST_schedule-careplan-customization-stats.html
+  path: POST_schedule-careplan-customization-stats.md
 
 - profile: system
-  path: POST_schedule-careplan-duration-stats.html
+  path: POST_schedule-careplan-duration-stats.md
 
 - profile: system
-  path: POST_schedule-careplans-by-patient.html
+  path: POST_schedule-careplans-by-patient.md
 
 - profile: system
-  path: POST_schedule-careteam-stats.html
+  path: POST_schedule-careteam-stats.md
 
 - profile: system
-  path: POST_schedule-measurement-stats.html
+  path: POST_schedule-measurement-stats.md
 
 - profile: system
-  path: POST_schedule-patient-devices.html
+  path: POST_schedule-patient-devices.md
 
 - profile: system
-  path: POST_schedule-patient-gdpr.html
+  path: POST_schedule-patient-gdpr.md
 
 - profile: system
-  path: POST_schedule-patient-total.html
+  path: POST_schedule-patient-total.md
 
 - profile: system
-  path: POST_schedule-practitioner-gdpr.html
+  path: POST_schedule-practitioner-gdpr.md
 
 - profile: system
-  path: POST_schedule-practitioner-stats.html
+  path: POST_schedule-practitioner-stats.md
 
 - profile: system
-  path: POST_schedule-ssl-orders.html
+  path: POST_schedule-ssl-orders.md
 
 # setting profile = system, in order to include in general operation examples page
 - profile: system
-  path: POST_Person.html
+  path: POST_Person.md
