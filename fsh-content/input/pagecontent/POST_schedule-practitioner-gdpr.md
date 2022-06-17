@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjZmYzBiYmMtMGRlYS00ZDIyLThlOTgtN2UxMGFiZDdhNjcwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWNkMmRmNWQtZmMxMy00NzRhLTkzNWQtNWZjODFmMDQ1NTdmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-647.local/fhir/Organization/17890"
+        "reference": "https://organization.cit-reporting-667.local/fhir/Organization/87136"
       }
     },
     {
       "name": "practitioner",
       "valueReference": {
-        "reference": "https://patient.cit-reporting-647.local/fhir/Patient/47305"
+        "reference": "https://patient.cit-reporting-667.local/fhir/Patient/83151"
       }
     }
   ]
@@ -42,7 +42,7 @@ __Response__
   "id": "15",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-01-05T13:43:20.679+00:00",
+    "lastUpdated": "2022-06-07T09:55:28.208+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -50,7 +50,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "f6fc0bbc-0dea-4d22-8e98-7e10abd7a670"
+      "value": "acd2df5d-fc13-474a-935d-5fc81f04557f"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

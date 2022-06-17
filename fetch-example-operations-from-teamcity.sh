@@ -4,7 +4,7 @@ projects="Careplan Device DocumentQuery DocumentTransformation Library Measureme
 IG_PATH=$(pwd)
 
 branch=default:true #release%2F2019.6
-dir=fsh-content/input/pages
+dir=fsh-content/input/pagecontent
 
 echo "Downloading examples for operations from Systematic TeamCity and store at ${IG_PATH}/${dir}"
 

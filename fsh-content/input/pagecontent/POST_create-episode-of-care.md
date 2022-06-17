@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTE5NDUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNTg0MDQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJGNyZWF0ZS1lcGlzb2RlLW9mLWNhcmUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlByb3ZlbmFuY2UucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTIwNDYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMTI5MTQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJFcGlzb2RlT2ZDYXJlJGNyZWF0ZS1lcGlzb2RlLW9mLWNhcmUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlByb3ZlbmFuY2UucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Prefer: return=representation
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
@@ -23,7 +23,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:46adb7cb-aee1-4705-8442-4c203dffc0be",
+            "fullUrl": "urn:uuid:7a0d69d7-78a8-4098-ac77-8a8c6cc99bbc",
             "resource": {
               "resourceType": "Provenance",
               "meta": {
@@ -33,17 +33,17 @@ __Body__:
               },
               "target": [
                 {
-                  "reference": "urn:uuid:79727e81-19b1-4ea4-a7c8-183ab93fb524"
+                  "reference": "urn:uuid:8f07f621-2bd8-444a-b39b-8ebec35bccca"
                 }
               ],
-              "recorded": "2021-12-21T16:01:18.979+00:00",
+              "recorded": "2022-06-17T08:26:24.536+00:00",
               "policy": [
                 "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
               ],
               "agent": [
                 {
                   "who": {
-                    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+                    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
                   }
                 }
               ]
@@ -54,7 +54,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:79727e81-19b1-4ea4-a7c8-183ab93fb524",
+            "fullUrl": "urn:uuid:8f07f621-2bd8-444a-b39b-8ebec35bccca",
             "resource": {
               "resourceType": "EpisodeOfCare",
               "meta": {
@@ -66,7 +66,7 @@ __Body__:
                 {
                   "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
                   "valueReference": {
-                    "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/59587"
+                    "reference": "https://organization.cit-careplan-2046.local/fhir/Organization/258"
                   }
                 },
                 {
@@ -78,7 +78,7 @@ __Body__:
                     },
                     {
                       "url": "scheduledTime",
-                      "valueDateTime": "2021-12-21T16:01:18+00:00"
+                      "valueDateTime": "2022-06-17T08:26:24+00:00"
                     }
                   ]
                 }
@@ -87,15 +87,15 @@ __Body__:
               "diagnosis": [
                 {
                   "condition": {
-                    "reference": "urn:uuid:2e34f014-aab1-47fb-81bb-25f47b962484"
+                    "reference": "urn:uuid:21d079eb-8e29-43a8-b015-9d83621057bb"
                   }
                 }
               ],
               "patient": {
-                "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+                "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
               },
               "managingOrganization": {
-                "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/47375"
+                "reference": "https://organization.cit-careplan-2046.local/fhir/Organization/66028"
               },
               "period": {
                 "start": "1970-01-01T00:00:01+00:00",
@@ -108,7 +108,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:2e34f014-aab1-47fb-81bb-25f47b962484",
+            "fullUrl": "urn:uuid:21d079eb-8e29-43a8-b015-9d83621057bb",
             "resource": {
               "resourceType": "Condition",
               "meta": {
@@ -120,7 +120,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "urn:uuid:79727e81-19b1-4ea4-a7c8-183ab93fb524"
+                    "reference": "urn:uuid:8f07f621-2bd8-444a-b39b-8ebec35bccca"
                   }
                 }
               ],
@@ -141,7 +141,7 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+                "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
               }
             },
             "request": {
@@ -165,45 +165,45 @@ __Response__
     {
       "resource": {
         "resourceType": "Provenance",
-        "id": "144",
+        "id": "154",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T16:01:19.055+00:00",
+          "lastUpdated": "2022-06-17T08:26:24.630+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
           ]
         },
         "target": [
           {
-            "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/145"
+            "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/155"
           }
         ],
-        "recorded": "2021-12-21T16:01:18.979+00:00",
+        "recorded": "2022-06-17T08:26:24.536+00:00",
         "policy": [
           "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
         ],
         "agent": [
           {
             "who": {
-              "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+              "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
             }
           }
         ]
       },
       "response": {
         "status": "201 Created",
-        "location": "https://careplan.cit-careplan-1945.local/fhir/Provenance/144/_history/1",
+        "location": "https://careplan.cit-careplan-2046.local/fhir/Provenance/154/_history/1",
         "etag": "1",
-        "lastModified": "2021-12-21T16:01:19.055+00:00"
+        "lastModified": "2022-06-17T08:26:24.630+00:00"
       }
     },
     {
       "resource": {
         "resourceType": "EpisodeOfCare",
-        "id": "145",
+        "id": "155",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T16:01:19.055+00:00",
+          "lastUpdated": "2022-06-17T08:26:24.630+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
           ]
@@ -212,7 +212,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
             "valueReference": {
-              "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/59587"
+              "reference": "https://organization.cit-careplan-2046.local/fhir/Organization/258"
             }
           },
           {
@@ -224,7 +224,7 @@ __Response__
               },
               {
                 "url": "scheduledTime",
-                "valueDateTime": "2021-12-21T16:01:18+00:00"
+                "valueDateTime": "2022-06-17T08:26:24+00:00"
               }
             ]
           },
@@ -237,7 +237,7 @@ __Response__
               },
               {
                 "url": "scheduledTime",
-                "valueDateTime": "2021-12-28T16:01:18+00:00"
+                "valueDateTime": "2022-06-24T08:26:24+00:00"
               }
             ]
           }
@@ -247,22 +247,22 @@ __Response__
           {
             "status": "planned",
             "period": {
-              "start": "2021-12-21T16:01:19+00:00"
+              "start": "2022-06-17T08:26:24+00:00"
             }
           }
         ],
         "diagnosis": [
           {
             "condition": {
-              "reference": "https://careplan.cit-careplan-1945.local/fhir/Condition/146"
+              "reference": "https://careplan.cit-careplan-2046.local/fhir/Condition/156"
             }
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+          "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
         },
         "managingOrganization": {
-          "reference": "https://organization.cit-careplan-1945.local/fhir/Organization/47375"
+          "reference": "https://organization.cit-careplan-2046.local/fhir/Organization/66028"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -271,18 +271,18 @@ __Response__
       },
       "response": {
         "status": "201 Created",
-        "location": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/145/_history/1",
+        "location": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/155/_history/1",
         "etag": "1",
-        "lastModified": "2021-12-21T16:01:19.055+00:00"
+        "lastModified": "2022-06-17T08:26:24.630+00:00"
       }
     },
     {
       "resource": {
         "resourceType": "Condition",
-        "id": "146",
+        "id": "156",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T16:01:19.055+00:00",
+          "lastUpdated": "2022-06-17T08:26:24.630+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
           ]
@@ -291,7 +291,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/145"
+              "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/155"
             }
           }
         ],
@@ -312,33 +312,33 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/2622"
+          "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/96394"
         }
       },
       "response": {
         "status": "201 Created",
-        "location": "https://careplan.cit-careplan-1945.local/fhir/Condition/146/_history/1",
+        "location": "https://careplan.cit-careplan-2046.local/fhir/Condition/156/_history/1",
         "etag": "1",
-        "lastModified": "2021-12-21T16:01:19.055+00:00"
+        "lastModified": "2022-06-17T08:26:24.630+00:00"
       }
     },
     {
       "resource": {
         "resourceType": "Provenance",
-        "id": "147",
+        "id": "157",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T16:01:19.055+00:00",
+          "lastUpdated": "2022-06-17T08:26:24.630+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
           ]
         },
         "target": [
           {
-            "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/145"
+            "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/155"
           }
         ],
-        "recorded": "2021-12-21T16:01:19.054+00:00",
+        "recorded": "2022-06-17T08:26:24.629+00:00",
         "policy": [
           "http://ehealth.sundhed.dk/policy/ehealth/patient-data",
           "http://ehealth.sundhed.dk/policy/eu/general-data-protection-regulation"
@@ -374,16 +374,16 @@ __Response__
               }
             ],
             "who": {
-              "reference": "https://organization.cit-careplan-1945.local/fhir/Practitioner/58404"
+              "reference": "https://organization.cit-careplan-2046.local/fhir/Practitioner/12914"
             }
           }
         ]
       },
       "response": {
         "status": "201 Created",
-        "location": "https://careplan.cit-careplan-1945.local/fhir/Provenance/147/_history/1",
+        "location": "https://careplan.cit-careplan-2046.local/fhir/Provenance/157/_history/1",
         "etag": "1",
-        "lastModified": "2021-12-21T16:01:19.055+00:00"
+        "lastModified": "2022-06-17T08:26:24.630+00:00"
       }
     }
   ]
