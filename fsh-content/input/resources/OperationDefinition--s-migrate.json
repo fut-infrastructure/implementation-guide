@@ -1,0 +1,21 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-migrate",
+  "url": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+  "name": "migrate",
+  "title": "Data migration",
+  "status": "active",
+  "kind": "operation",
+  "description": "Data migration",
+  "affectsState": true,
+  "code": "migrate",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "migrationId",
+    "use": "in",
+    "min": 1,
+    "max": "1"
+  } ]
+}
