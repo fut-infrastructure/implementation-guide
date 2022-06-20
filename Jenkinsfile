@@ -51,7 +51,7 @@ podTemplate(label: label,
     }
 
     // deploy only the master branch
-    if (env.BRANCH_NAME == 'master') {
+    if (env.BRANCH_NAME == 'release_11__2022_2') {
 
       stage ('generate documentation') {
         container('igpublisher') {
