@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWJhYTQyYTAtNmUyNy00YWQwLTllYTEtZjM1ODI1NTBhMmQ3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZGE3MWYwMzgtYzUxMC00MGRiLWE0NTgtZTFlN2IwMGZiY2QzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZU1ldHJpYy53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -115,7 +115,7 @@ __Body__:
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-676.local/fhir/Device/178"
+    "reference": "https://device.cit-device-700.local/fhir/Device/178"
   },
   "category": "calculation"
 }
@@ -128,7 +128,7 @@ __Response__
   "id": "179",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T13:40:53.442+00:00",
+    "lastUpdated": "2022-06-07T09:37:19.033+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -229,7 +229,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-676.local/fhir/Device/178"
+    "reference": "https://device.cit-device-700.local/fhir/Device/178"
   },
   "category": "calculation"
 }

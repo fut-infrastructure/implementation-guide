@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=463e175b-6f4c-4af6-9203-629b069309e8`
+`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=30e32e07-41f9-4ff3-a7d2-8c636c28c60d`
 
 __Header__
 ```
@@ -6,7 +6,7 @@ Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 Cache-Control: no-cache
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -16,28 +16,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "6a7d323a-c219-4f66-b88b-748501b8290e",
+  "id": "2185c45c-407f-4080-93df-2e2e813c735d",
   "meta": {
-    "lastUpdated": "2021-12-21T15:28:42.671+00:00"
+    "lastUpdated": "2022-06-15T15:24:35.276+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-818.local/fhir/ActivityDefinition?_format=json&_pretty=true&name=463e175b-6f4c-4af6-9203-629b069309e8&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
+      "url": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition?_format=json&_pretty=true&name=30e32e07-41f9-4ff3-a7d2-8c636c28c60d&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/155",
+      "fullUrl": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/354",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "155",
+        "id": "354",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T15:28:41.941+00:00",
-          "source": "#d95ab31c-53d4-49",
+          "lastUpdated": "2022-06-15T15:24:35.175+00:00",
+          "source": "#60182ed4-8fa0-44",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -49,7 +49,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-                  "code": "TBD"
+                  "code": "noSharing"
                 }
               ]
             }
@@ -71,7 +71,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-818.local/fhir/Organization/61129"
+                  "reference": "https://organization.cit-plan-1108.local/fhir/Organization/37402"
                 }
               },
               {
@@ -88,8 +88,8 @@ __Response__
             ]
           }
         ],
-        "version": "5d8485b1-6ef6-4975-ae84-60507fd3410a",
-        "name": "463e175b-6f4c-4af6-9203-629b069309e8",
+        "version": "1.0",
+        "name": "30e32e07-41f9-4ff3-a7d2-8c636c28c60d",
         "status": "active",
         "topic": [
           {
@@ -104,8 +104,8 @@ __Response__
         "code": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-              "code": "TBD"
+              "system": "urn:oid:1.2.208.176.2.1",
+              "code": "NPU03011"
             }
           ]
         }
@@ -115,14 +115,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/156",
+      "fullUrl": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/353",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "156",
+        "id": "353",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T15:28:42.335+00:00",
-          "source": "#8e13a7b8-05ba-43",
+          "lastUpdated": "2022-06-15T15:24:35.059+00:00",
+          "source": "#e023481f-a9e1-4c",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -134,7 +134,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-                  "code": "TBD"
+                  "code": "noSharing"
                 }
               ]
             }
@@ -156,7 +156,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-818.local/fhir/Organization/84179"
+                  "reference": "https://organization.cit-plan-1108.local/fhir/Organization/6207"
                 }
               },
               {
@@ -173,8 +173,8 @@ __Response__
             ]
           }
         ],
-        "version": "3820d756-6af5-44b1-89bc-7347cbb6af54",
-        "name": "463e175b-6f4c-4af6-9203-629b069309e8",
+        "version": "1.0",
+        "name": "30e32e07-41f9-4ff3-a7d2-8c636c28c60d",
         "status": "active",
         "topic": [
           {
@@ -189,8 +189,8 @@ __Response__
         "code": {
           "coding": [
             {
-              "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-              "code": "TBD"
+              "system": "urn:oid:1.2.208.176.2.1",
+              "code": "NPU03011"
             }
           ]
         }

@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ2FyZVBsYW4uc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -29,9 +29,9 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/70044"
+    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/28412"
   },
-  "startDate": "2021-12-21",
+  "startDate": "2022-06-17",
   "target": [
     {
       "measure": {
@@ -46,7 +46,7 @@ __Body__:
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1251"
+      "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/1292"
     }
   ]
 }
@@ -56,10 +56,10 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "1252",
+  "id": "1293",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T16:14:28.119+00:00",
+    "lastUpdated": "2022-06-17T08:36:41.813+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
     ]
@@ -74,9 +74,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/70044"
+    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/28412"
   },
-  "startDate": "2021-12-21",
+  "startDate": "2022-06-17",
   "target": [
     {
       "measure": {
@@ -91,7 +91,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1251"
+      "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/1292"
     }
   ]
 }

@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/2072"
+              "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/2113"
             }
           },
           {
@@ -37,7 +37,7 @@ __Body__:
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-                  "code": "TBD"
+                  "code": "noSharing"
                 }
               ]
             }
@@ -85,7 +85,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -1613180430,
+                  "value": 1846825371,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -94,7 +94,7 @@ __Body__:
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-1945.local/fhir/ActivityDefinition/64304"
+          "https://plan.cit-careplan-2046.local/fhir/ActivityDefinition/69663"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -105,10 +105,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "0a8bbc74-3160-4ea6-a18a-11e6e3dfda38"
+          "text": "8436705e-fb53-4919-8892-e4e0859a8a5d"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/38675"
+          "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/78835"
         }
       }
     }

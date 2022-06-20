@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUGxhbkRlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJQbGFuRGVmaW5pdGlvbi5zZWFyY2giLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlBsYW5EZWZpbml0aW9uLnVwZGF0ZSIsIlBsYW5EZWZpbml0aW9uLnJlYWQiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSIsIkRvY3VtZW50UmVmZXJlbmNlLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUGxhbkRlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiUGxhbkRlZmluaXRpb24uc2VhcmNoIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbi51cGRhdGUiLCJQbGFuRGVmaW5pdGlvbi5yZWFkIiwiRG9jdW1lbnRSZWZlcmVuY2UucmVhZCIsIlBsYW5EZWZpbml0aW9uJGFwcGx5Il19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -26,7 +26,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-818.local/fhir/Organization/26336"
+            "reference": "https://organization.cit-plan-1108.local/fhir/Organization/29555"
           }
         },
         {
@@ -43,7 +43,7 @@ __Body__:
       ]
     }
   ],
-  "version": "46953ffc-36e4-42d0-ac62-54b3555d858d",
+  "version": "1.0",
   "status": "active",
   "action": [
     {
@@ -60,7 +60,7 @@ __Body__:
           }
         }
       ],
-      "definitionCanonical": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/47",
+      "definitionCanonical": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/155",
       "action": [
         {
           "extension": [
@@ -76,7 +76,7 @@ __Body__:
               }
             }
           ],
-          "definitionCanonical": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/48"
+          "definitionCanonical": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/156"
         }
       ]
     }
@@ -88,10 +88,10 @@ __Response__
 ```json
 {
   "resourceType": "PlanDefinition",
-  "id": "49",
+  "id": "157",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T15:26:31.892+00:00",
+    "lastUpdated": "2022-06-15T15:21:55.823+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -103,7 +103,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-818.local/fhir/Organization/26336"
+            "reference": "https://organization.cit-plan-1108.local/fhir/Organization/29555"
           }
         },
         {
@@ -118,9 +118,35 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+      "valueIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:af8ec868-e022-4a3b-9209-d7f8ddd44412",
+        "assigner": {
+          "identifier": {
+            "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+            "value": "cit-plan-1108"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+      "valueIdentifier": {
+        "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+        "value": "cit-plan-1108"
+      }
     }
   ],
-  "version": "46953ffc-36e4-42d0-ac62-54b3555d858d",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:f1d70526-0ee2-405f-b58c-9f916e56fa7d"
+    }
+  ],
+  "version": "1.0",
   "status": "active",
   "action": [
     {
@@ -137,7 +163,7 @@ __Response__
           }
         }
       ],
-      "definitionCanonical": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/47",
+      "definitionCanonical": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/155",
       "action": [
         {
           "extension": [
@@ -153,7 +179,7 @@ __Response__
               }
             }
           ],
-          "definitionCanonical": "https://plan.cit-plan-818.local/fhir/ActivityDefinition/48"
+          "definitionCanonical": "https://plan.cit-plan-1108.local/fhir/ActivityDefinition/156"
         }
       ]
     }

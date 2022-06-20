@@ -1,9 +1,9 @@
-`POST [base]/Questionnaire/1/$create-clone`
+`POST [base]/Questionnaire/89/$create-clone`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUHJhY3RpdGlvbmVyLzYyMzMyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmUuc2VhcmNoIiwiUXVlc3Rpb25uYWlyZS5yZWFkIiwiUXVlc3Rpb25uYWlyZS5jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvT3JnYW5pemF0aW9uLzI4NjQ3IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXF1ZXN0aW9ubmFpcmUtMTAyNC5sb2NhbC9maGlyL1ByYWN0aXRpb25lci80NDk1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuc2VhcmNoIiwiUXVlc3Rpb25uYWlyZS5jcmVhdGUiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXF1ZXN0aW9ubmFpcmUtMTAyNC5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi8yNjkzMyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,7 +19,7 @@ __Body__:
       "name": "clone-operation",
       "valueCoding": {
         "system": "http://ehealth.sundhed.dk/cs/ehealth-clone-operation",
-        "code": "copy"
+        "code": "minor-version"
       }
     }
   ]
@@ -33,14 +33,14 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "Questionnaire/2",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire/90",
       "resource": {
         "resourceType": "Questionnaire",
-        "id": "2",
+        "id": "90",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-05-02T07:54:18.316+00:00",
-          "source": "#752db253-0e01-4b",
+          "lastUpdated": "2022-06-16T09:07:24.744+00:00",
+          "source": "#056390e2-441f-4f",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
           ]
@@ -63,7 +63,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/28647"
+                  "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/26933"
                 }
               },
               {
@@ -83,11 +83,11 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:a3a35ed0-7fb3-48b2-8f91-d554d4a73e10",
+              "value": "urn:uuid:44b5b30a-218d-4de5-960a-31fdca7042bc",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "local"
+                  "value": "cit-questionnaire-1024"
                 }
               }
             }
@@ -96,25 +96,25 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:8a45fecf-fa6d-461c-80be-515a965421d6"
+              "value": "urn:uuid:e6dfc035-0d3a-4b26-8f4d-a74016f0a5f5"
             }
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
             "valueIdentifier": {
               "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-              "value": "local"
+              "value": "cit-questionnaire-1024"
             }
           }
         ],
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:8d884290-d411-487e-aefa-2b315410e38b"
+            "value": "urn:uuid:f06525e3-d57e-4681-a8d7-8f0161e714d0"
           }
         ],
-        "version": "1.0",
-        "name": "a610f407-105f-46b2-a51e-64808000d341",
+        "version": "1.10",
+        "name": "588614fa-352a-4101-a87c-4c0ba7072023",
         "status": "draft"
       }
     }

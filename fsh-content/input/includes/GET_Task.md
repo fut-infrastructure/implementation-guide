@@ -1,11 +1,11 @@
-`GET [base]/Task/284`
+`GET [base]/Task/285`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "284",
+  "id": "285",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-12-21T15:52:10.966+00:00",
-    "source": "#082ba12a-c295-49",
+    "lastUpdated": "2022-06-07T10:51:21.213+00:00",
+    "source": "#29138b43-51c6-49",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1405.local/fhir/EpisodeOfCare/55541"
+        "reference": "https://careplan.cit-task-1440.local/fhir/EpisodeOfCare/24568"
       }
     },
     {
@@ -56,7 +56,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1405.local/fhir/Practitioner/65649"
+        "reference": "https://organization.cit-task-1440.local/fhir/Practitioner/43731"
       }
     }
   ],
@@ -64,7 +64,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "owner": {
-    "reference": "https://organization.cit-task-1405.local/fhir/Practitioner/24173"
+    "reference": "https://organization.cit-task-1440.local/fhir/Practitioner/46253"
   }
 }
 ```

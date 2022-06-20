@@ -1,4 +1,4 @@
-`PUT [base]/CommunicationRequest/1991`
+`PUT [base]/CommunicationRequest/2032`
 
 __Header__
 ```
@@ -6,7 +6,7 @@ Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3Quc2VhcmNoIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuZGVsZXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "1991",
+  "id": "2032",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T16:22:48.697+00:00",
+    "lastUpdated": "2022-06-17T08:41:15.859+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -27,18 +27,18 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/1989"
+        "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/2030"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1990"
+      "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/2031"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/59306"
+    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/17477"
   }
 }
 ```
@@ -47,10 +47,10 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "1991",
+  "id": "2032",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-12-21T16:22:49.814+00:00",
+    "lastUpdated": "2022-06-17T08:41:15.942+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -59,18 +59,18 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/1989"
+        "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/2030"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-1945.local/fhir/ServiceRequest/1990"
+      "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/2031"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/59306"
+    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/17477"
   }
 }
 ```

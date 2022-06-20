@@ -1,11 +1,11 @@
-`GET [base]/ServiceRequest/2048/_history/2`
+`GET [base]/ServiceRequest/2089/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2048",
+  "id": "2089",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-12-21T16:23:34.359+00:00",
-    "source": "#627b8be7-d30b-40",
+    "lastUpdated": "2022-06-17T08:41:38.462+00:00",
+    "source": "#8aa81ec6-bd78-42",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-1945.local/fhir/EpisodeOfCare/2047"
+        "reference": "https://careplan.cit-careplan-2046.local/fhir/EpisodeOfCare/2088"
       }
     },
     {
@@ -45,7 +45,7 @@ __Response__
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-1945.local/fhir/ActivityDefinition/4002"
+    "https://plan.cit-careplan-2046.local/fhir/ActivityDefinition/41535"
   ],
   "status": "completed",
   "intent": "option",
@@ -56,10 +56,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "61505a8c-abab-4981-8f16-cc121d72c8de"
+    "text": "f6c25d0e-1368-4f66-a24a-466c1255b2fa"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-1945.local/fhir/Patient/99557"
+    "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/9138"
   }
 }
 ```

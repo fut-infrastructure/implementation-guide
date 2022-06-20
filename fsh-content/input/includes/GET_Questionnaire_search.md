@@ -1,11 +1,11 @@
-`GET [base]/Questionnaire?name%3Aexact=3d68c937-feb4-4aa3-b39a-7fb5587cb6e2&type=TBD2`
+`GET [base]/Questionnaire?name%3Aexact=58cd7d10-a7ac-4cca-8ab0-1b95cc750084&ehealthPredecessor=urn%3Auuid%3A53fefa32-fcbb-4ff8-8a92-55ee120877b7`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDg1MTk3OWUtODhmZi00Yzk0LTg3MTEtNmI1NjMxOWE5MzU3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmUuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "300ed6e3-082e-47db-92b9-6c3526bb6018",
+  "id": "dcd5146b-0870-4ab8-b773-c5e356f806bb",
   "meta": {
-    "lastUpdated": "2022-01-05T12:29:52.590+00:00"
+    "lastUpdated": "2022-06-16T09:08:02.443+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://questionnaire.cit-questionnaire-881.local/fhir/Questionnaire?_format=json&_pretty=true&name%3Aexact=3d68c937-feb4-4aa3-b39a-7fb5587cb6e2&type=TBD2"
+      "url": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire?_format=json&_pretty=true&ehealthPredecessor=urn%3Auuid%3A53fefa32-fcbb-4ff8-8a92-55ee120877b7&name%3Aexact=58cd7d10-a7ac-4cca-8ab0-1b95cc750084"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-881.local/fhir/Questionnaire/126",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire/119",
       "resource": {
         "resourceType": "Questionnaire",
-        "id": "126",
+        "id": "119",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-01-05T12:29:51.015+00:00",
-          "source": "#695ef7fd-6073-46",
+          "lastUpdated": "2022-06-16T09:08:01.987+00:00",
+          "source": "#958a3208-59a3-4d",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
           ]
@@ -48,7 +48,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/questionnaire-types",
-                  "code": "TBD2"
+                  "code": "QQ"
                 }
               ]
             }
@@ -59,7 +59,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/59604"
+                  "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/85825"
                 }
               },
               {
@@ -74,10 +74,23 @@ __Response__
                 }
               }
             ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+              "assigner": {
+                "identifier": {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+                  "value": "cit-questionnaire-1024"
+                }
+              }
+            }
           }
         ],
-        "version": "510e9a54-59b9-4248-9438-e64e0cabad9d",
-        "name": "3d68c937-feb4-4aa3-b39a-7fb5587cb6e2",
+        "version": "1.0",
+        "name": "58cd7d10-a7ac-4cca-8ab0-1b95cc750084",
         "status": "active"
       },
       "search": {
@@ -85,14 +98,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-881.local/fhir/Questionnaire/128",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire/121",
       "resource": {
         "resourceType": "Questionnaire",
-        "id": "128",
+        "id": "121",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-01-05T12:29:52.393+00:00",
-          "source": "#fa4e506a-184e-45",
+          "lastUpdated": "2022-06-16T09:08:02.318+00:00",
+          "source": "#a16264b3-50fb-92",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
           ]
@@ -104,7 +117,7 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/questionnaire-types",
-                  "code": "TBD2"
+                  "code": "QQ"
                 }
               ]
             }
@@ -115,7 +128,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/16611"
+                  "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/92520"
                 }
               },
               {
@@ -130,10 +143,23 @@ __Response__
                 }
               }
             ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
+            "valueIdentifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+              "assigner": {
+                "identifier": {
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+                  "value": "cit-questionnaire-1024"
+                }
+              }
+            }
           }
         ],
-        "version": "c2cfb3b4-0b34-49ad-9b5c-8f3eaa299525",
-        "name": "3d68c937-feb4-4aa3-b39a-7fb5587cb6e2",
+        "version": "1.0",
+        "name": "58cd7d10-a7ac-4cca-8ab0-1b95cc750084",
         "status": "active"
       },
       "search": {

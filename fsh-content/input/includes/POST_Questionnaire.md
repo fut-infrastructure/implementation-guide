@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -23,13 +23,13 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/57518"
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/6828"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/29807"
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/48523"
       }
     },
     {
@@ -49,7 +49,7 @@ __Body__:
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/questionnaire-types",
-            "code": "TBD"
+            "code": "QQ"
           }
         ]
       }
@@ -60,7 +60,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/6493"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/26692"
           }
         },
         {
@@ -75,10 +75,51 @@ __Body__:
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-employee-title",
+      "valueString": "EmployeeTitle"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-usage",
+      "valueString": "Usage - Description for clinicians"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+      "valueIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+        "assigner": {
+          "identifier": {
+            "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+            "value": "cit-questionnaire-1024"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
+      "valueIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7",
+        "assigner": {
+          "identifier": {
+            "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+            "value": "cit-questionnaire-1024"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+      "valueIdentifier": {
+        "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+        "value": "bad-env"
+      }
     }
   ],
-  "version": "26b11267-8bf0-4ffb-a644-bcf4116335d6",
-  "name": "2bf17c0d-238d-4986-849e-6d7c7f30f11e",
+  "version": "1.0",
+  "name": "c7143b2a-4717-42ea-8d73-8bafbcecad70",
   "status": "active",
   "item": [
     {
@@ -119,6 +160,10 @@ __Body__:
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue",
           "valueInteger": 2
+        },
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-shortText",
+          "valueString": "Short text about item"
         }
       ],
       "linkId": "link,link,link",
@@ -134,10 +179,10 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "116",
+  "id": "97",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-01-05T12:29:31.363+00:00",
+    "lastUpdated": "2022-06-16T09:07:40.458+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -146,13 +191,13 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/57518"
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/6828"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/29807"
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/48523"
       }
     },
     {
@@ -172,7 +217,7 @@ __Response__
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/questionnaire-types",
-            "code": "TBD"
+            "code": "QQ"
           }
         ]
       }
@@ -183,7 +228,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-881.local/fhir/Organization/6493"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/26692"
           }
         },
         {
@@ -198,10 +243,44 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-employee-title",
+      "valueString": "EmployeeTitle"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-usage",
+      "valueString": "Usage - Description for clinicians"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+      "valueIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:3a83639b-31df-4512-9a50-724d8f01926b",
+        "assigner": {
+          "identifier": {
+            "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+            "value": "cit-questionnaire-1024"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+      "valueIdentifier": {
+        "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+        "value": "cit-questionnaire-1024"
+      }
     }
   ],
-  "version": "26b11267-8bf0-4ffb-a644-bcf4116335d6",
-  "name": "2bf17c0d-238d-4986-849e-6d7c7f30f11e",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:dc3d822f-e610-4f4c-926d-739e8ea4e0f9"
+    }
+  ],
+  "version": "1.0",
+  "name": "c7143b2a-4717-42ea-8d73-8bafbcecad70",
   "status": "active",
   "item": [
     {
@@ -242,6 +321,10 @@ __Response__
         {
           "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue",
           "valueInteger": 2
+        },
+        {
+          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-shortText",
+          "valueString": "Short text about item"
         }
       ],
       "linkId": "link,link,link",

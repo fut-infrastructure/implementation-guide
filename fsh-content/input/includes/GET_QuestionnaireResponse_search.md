@@ -1,11 +1,11 @@
-`GET [base]/QuestionnaireResponse?subject=https%3A%2F%2Fpatient.cit-measurement-1414.local%2Ffhir%2FPatient%2F25041&_revinclude=Provenance%3Atarget`
+`GET [base]/QuestionnaireResponse?subject=https%3A%2F%2Fpatient.cit-measurement-1437.local%2Ffhir%2FPatient%2F57604&_revinclude=Provenance%3Atarget`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODEwOGMzNGMtZTc1OS00Y2Y5LTk0ZWMtZGJjMWJmZGY1OGY2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDM2YWQ5NmMtOGRkZi00ZDM1LThmM2ItNGZmOGQzYTdlMjlhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "be9c5e28-2292-463d-8524-d4778ac33a66",
+  "id": "ae936d9c-989b-46a3-8904-284b495709a7",
   "meta": {
-    "lastUpdated": "2021-12-21T14:12:13.770+00:00"
+    "lastUpdated": "2022-06-07T12:13:13.266+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse?_format=json&_pretty=true&_revinclude=Provenance%3Atarget&subject=https%3A%2F%2Fpatient.cit-measurement-1414.local%2Ffhir%2FPatient%2F25041"
+      "url": "https://measurement.cit-measurement-1437.local/fhir/QuestionnaireResponse?_format=json&_pretty=true&_revinclude=Provenance%3Atarget&subject=https%3A%2F%2Fpatient.cit-measurement-1437.local%2Ffhir%2FPatient%2F57604"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse/553",
+      "fullUrl": "https://measurement.cit-measurement-1437.local/fhir/QuestionnaireResponse/552",
       "resource": {
         "resourceType": "QuestionnaireResponse",
-        "id": "553",
+        "id": "552",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T14:12:13.337+00:00",
-          "source": "#bac49d70-8c0e-4a",
+          "lastUpdated": "2022-06-07T12:13:13.087+00:00",
+          "source": "#7571e393-46a8-48",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
@@ -45,7 +45,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1414.local/fhir/EpisodeOfCare/80024"
+              "reference": "https://careplan.cit-measurement-1437.local/fhir/EpisodeOfCare/15054"
             }
           },
           {
@@ -71,17 +71,17 @@ __Response__
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1414.local/fhir/ServiceRequest/39469"
+            "reference": "https://careplan.cit-measurement-1437.local/fhir/ServiceRequest/46642"
           }
         ],
-        "questionnaire": "https://questionnaire.cit-measurement-1414.local/fhir/Questionnaire/69668",
+        "questionnaire": "https://questionnaire.cit-measurement-1437.local/fhir/Questionnaire/26667",
         "status": "completed",
         "subject": {
-          "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/25041"
+          "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/57604"
         },
-        "authored": "2021-12-21T14:12:13+00:00",
+        "authored": "2022-06-07T12:13:13+00:00",
         "source": {
-          "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/55281"
+          "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/64367"
         }
       },
       "search": {
@@ -89,31 +89,31 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://measurement.cit-measurement-1414.local/fhir/Provenance/554",
+      "fullUrl": "https://measurement.cit-measurement-1437.local/fhir/Provenance/553",
       "resource": {
         "resourceType": "Provenance",
-        "id": "554",
+        "id": "553",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2021-12-21T14:12:13.594+00:00",
-          "source": "#739aa9d6-c9b1-4c",
+          "lastUpdated": "2022-06-07T12:13:13.184+00:00",
+          "source": "#044fbe0f-9436-4c",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
           ]
         },
         "target": [
           {
-            "reference": "https://measurement.cit-measurement-1414.local/fhir/QuestionnaireResponse/553"
+            "reference": "https://measurement.cit-measurement-1437.local/fhir/QuestionnaireResponse/552"
           }
         ],
-        "recorded": "2021-12-21T14:12:13.524+00:00",
+        "recorded": "2022-06-07T12:13:13.152+00:00",
         "policy": [
           "healthcare-act"
         ],
         "agent": [
           {
             "who": {
-              "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/59285"
+              "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/5168"
             }
           }
         ]

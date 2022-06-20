@@ -1,11 +1,11 @@
-`GET [base]/Observation/485`
+`GET [base]/Observation/484`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDE4OTQ5ZDctNzNiNS00M2E3LThmOTgtZWNlY2IyM2I4NGIwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDEyYjQ5ZjEtZWM2My00YTBmLWI2ZWMtZTUzNzQyMjRkNzk5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "485",
+  "id": "484",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T14:11:32.004+00:00",
-    "source": "#65d71bb9-e66e-4a",
+    "lastUpdated": "2022-06-07T12:12:41.317+00:00",
+    "source": "#cd074cd8-34a1-4e",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1414.local/fhir/EpisodeOfCare/85988"
+        "reference": "https://careplan.cit-measurement-1437.local/fhir/EpisodeOfCare/11662"
       }
     },
     {
@@ -83,20 +83,20 @@ __Response__
   "identifier": [
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "f450acb3-3e50-4ed3-a887-ae0aa85a23e1"
+      "value": "e5580db3-ef07-47db-a30f-5110a304a134"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "377fd17c-571b-4465-a9c5-46fd69b3dd55_NPU03011"
+      "value": "912e129c-2b48-4acb-ab3f-9c3e72b39568_NPU03011"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "4762dba8-a270-4a35-935d-d06fe27af9c5_MCS88015"
+      "value": "df33cf81-9614-4db7-bc1e-a6829036fa9b_MCS88015"
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1414.local/fhir/ServiceRequest/92263"
+      "reference": "https://careplan.cit-measurement-1437.local/fhir/ServiceRequest/75424"
     }
   ],
   "status": "final",
@@ -107,22 +107,22 @@ __Response__
         "code": "NPU03011"
       }
     ],
-    "text": "05d0741f-15b5-4fb7-bc65-1f638b5c8a05"
+    "text": "359be35e-c70b-4be2-a4c8-17edb73da8aa"
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/52579"
+    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/52208"
   },
   "effectivePeriod": {
-    "start": "2021-12-21T14:11:28+00:00",
-    "end": "2021-12-21T14:11:28+00:00"
+    "start": "2022-06-07T12:12:37+00:00",
+    "end": "2022-06-07T12:12:37+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1414.local/fhir/Patient/62166"
+      "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/71200"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1414.local/fhir/Device/28692"
+    "reference": "https://device.cit-measurement-1437.local/fhir/Device/2184"
   },
   "component": [
     {
