@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aW9uR2l1ZGFuY2Uud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkFjdGlvbkdpdWRhbmNlLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aW9uR3VpZGFuY2Uud3JpdGUiLCJBY3Rpb25HdWlkYW5jZS5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -44,7 +44,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/34771",
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/48454",
         "display": "Abcd"
       }
     },
@@ -54,7 +54,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/83496"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/98717"
           }
         },
         {
@@ -72,7 +72,7 @@ __Body__:
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
-      "valueString": "This is a title"
+      "valueString": "Jeg gik mig en tur"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version",
@@ -95,7 +95,7 @@ __Body__:
           "display": "Age Range"
         },
         "valueReference": {
-          "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/37508",
+          "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/2444",
           "display": "1234"
         }
       }
@@ -121,7 +121,7 @@ __Body__:
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/16189"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/91571"
           }
         },
         {
@@ -159,10 +159,10 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "5",
+  "id": "169",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-01-05T11:25:25.671+00:00",
+    "lastUpdated": "2022-06-16T09:16:59.601+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -197,7 +197,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/34771",
+        "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/48454",
         "display": "Abcd"
       }
     },
@@ -207,7 +207,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/83496"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/98717"
           }
         },
         {
@@ -225,7 +225,7 @@ __Response__
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
-      "valueString": "This is a title"
+      "valueString": "Jeg gik mig en tur"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version",
@@ -248,7 +248,7 @@ __Response__
           "display": "Age Range"
         },
         "valueReference": {
-          "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/37508",
+          "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/2444",
           "display": "1234"
         }
       }
@@ -274,7 +274,7 @@ __Response__
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/16189"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/91571"
           }
         },
         {

@@ -1,12 +1,12 @@
-`PUT [base]/Basic/257`
+`PUT [base]/Basic/201`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aW9uR2l1ZGFuY2Uud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkFjdGlvbkdpdWRhbmNlLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aW9uR3VpZGFuY2Uud3JpdGUiLCJBY3Rpb25HdWlkYW5jZS5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.4.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Basic",
-  "id": "257",
+  "id": "201",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2021-12-21T16:14:12.129+00:00",
+    "lastUpdated": "2022-06-16T09:17:35.094+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -43,7 +43,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-867.local/fhir/Organization/99310"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/34949"
           }
         },
         {
@@ -67,8 +67,8 @@ __Body__:
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
       "valueCoding": {
         "system": "http://hl7.org/fhir/publication-status",
-        "code": "active",
-        "display": "active"
+        "code": "draft",
+        "display": "draft"
       }
     },
     {
@@ -83,7 +83,7 @@ __Body__:
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-867.local/fhir/Questionnaire/256"
+            "reference": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire/202"
           }
         },
         {
@@ -121,10 +121,10 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "257",
+  "id": "201",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2021-12-21T16:14:13.344+00:00",
+    "lastUpdated": "2022-06-16T09:17:36.256+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -149,7 +149,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-867.local/fhir/Organization/99310"
+            "reference": "https://organization.cit-questionnaire-1024.local/fhir/Organization/34949"
           }
         },
         {
@@ -173,8 +173,8 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
       "valueCoding": {
         "system": "http://hl7.org/fhir/publication-status",
-        "code": "active",
-        "display": "active"
+        "code": "draft",
+        "display": "draft"
       }
     },
     {
@@ -189,7 +189,7 @@ __Response__
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-867.local/fhir/Questionnaire/256"
+            "reference": "https://questionnaire.cit-questionnaire-1024.local/fhir/Questionnaire/202"
           }
         },
         {
