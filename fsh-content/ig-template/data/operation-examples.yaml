@@ -6,6 +6,9 @@
   path: POST_create-episode-of-care.html
 
 - profile: system
+  path: POST_migrate.html
+
+- profile: system
   path: POST_search-measurements.html
 
 - profile: system
@@ -43,6 +46,9 @@
 
 - profile: system
   path: POST_Binary_retrieve-document.html
+
+- profile: system
+  path: POST_get-patient-procedures.html
 
 - profile: system
   path: POST_get-patient-procedures-AT.html
