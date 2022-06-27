@@ -11,8 +11,6 @@ An ehealth-message defines written communication and comes in four flavours depe
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "about" field, no matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by assigning the same thread-id in the provided extension. Similarly, they may be organized in a group (eg. group messages)
 by assigning the same group-id in that extension. The message subject may be provided in the title extension, and an optional priority may be provided in the ehealth-priority extension.
 
-In case a thread-id is not set by the client, it will be generated server-side at message creation.
-
 # Remarks about status and administrative-status
 
 The ehealth-message profile contains two status fields:
@@ -31,6 +29,14 @@ The ehealth-message profile contains two status fields:
 
 - __administrative-status__ (extension): Makes it possible for the message __recipient__ to indicate the state of a message. A message may hold an administrative status that defines the last action the recipient took on the message in question. At first, the message has administrative-status "activate". The recipient may mark the message as read by setting administrative-status "read". If the recipient considers the message a sort of "task", the message may also be updated with
   administrative-status "complete" when the task is done, or "reactivate" if the task was not complete anyway.
+
+# Fields with auto-assigned values
+
+Some fields are filled in automatically on message creation, eg. if a sound default value makes sense. These fields are:
+
+- Field "sent": If message state is set to "in-progress" on creation, then the "sent" field will be assigned current date/time.
+- Extension "restriction-category": If not set by the caller, it will be set to value "None"
+- Extension "thread-id": In case a thread-id is not set by the client, it will be generated server-side (random UUID) at message creation.
 
 # Search parameters
 
