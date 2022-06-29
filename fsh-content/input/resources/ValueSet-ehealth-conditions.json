@@ -42,7 +42,7 @@
             "display": "Angina pectoris"
           },
           {
-            "code": "DJ440 ",
+            "code": "DJ440",
             "display": "Kronisk obstruktiv lungesygdom med akut nedre luftvejs infektion"
           },
           {
@@ -50,15 +50,15 @@
             "display": "Kronisk obstruktiv lungesygdom med akut eksacerbation UNS"
           },
           {
-            "code": "DJ448 ",
+            "code": "DJ448",
             "display": "Anden form for kronisk obstruktiv lungesygdom"
           },
           {
-            "code": "DJ449 ",
+            "code": "DJ449",
             "display": "Kronisk obstruktiv lungesygdom UNS"
           },
           {
-            "code": "DZ038RA ",
+            "code": "DZ038RA",
             "display": "Observation pga. mistanke om kronisk obstruktiv lungesygdom"
           },
           {
@@ -70,19 +70,19 @@
             "display": "Klinisk vurderet ustabil angina pectoris"
           },
           {
-            "code": "DI200C ",
+            "code": "DI200C",
             "display": "Ustabil angina pectoris med dokumenteret iskæmi"
           },
           {
-            "code": "DI201 ",
+            "code": "DI201",
             "display": "Prinzmetals angina pectoris"
           },
           {
-            "code": "DI208 ",
+            "code": "DI208",
             "display": "Anden form for angina pectoris"
           },
           {
-            "code": "DI208D ",
+            "code": "DI208D",
             "display": "Mikrovaskulær angina"
           },
           {
