@@ -24,338 +24,77 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/conditions"
-      },
-      {
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
-            "code": "DJ44",
-            "display": "Kronisk obstruktiv lungesygdom"
-          },
-          {
             "code": "DE10",
             "display": "Type 1-diabetes"
-          },
-          {
-            "code": "DI20",
-            "display": "Angina pectoris"
-          },
-          {
-            "code": "DJ440 ",
-            "display": "Kronisk obstruktiv lungesygdom med akut nedre luftvejs infektion"
-          },
-          {
-            "code": "DJ441",
-            "display": "Kronisk obstruktiv lungesygdom med akut eksacerbation UNS"
-          },
-          {
-            "code": "DJ448 ",
-            "display": "Anden form for kronisk obstruktiv lungesygdom"
-          },
-          {
-            "code": "DJ449 ",
-            "display": "Kronisk obstruktiv lungesygdom UNS"
-          },
-          {
-            "code": "DZ038RA ",
-            "display": "Observation pga. mistanke om kronisk obstruktiv lungesygdom"
-          },
-          {
-            "code": "DI200",
-            "display": "Ustabil angina pectoris"
-          },
-          {
-            "code": "DI200B ",
-            "display": "Klinisk vurderet ustabil angina pectoris"
-          },
-          {
-            "code": "DI200C ",
-            "display": "Ustabil angina pectoris med dokumenteret iskæmi"
-          },
-          {
-            "code": "DI201 ",
-            "display": "Prinzmetals angina pectoris"
-          },
-          {
-            "code": "DI208 ",
-            "display": "Anden form for angina pectoris"
-          },
-          {
-            "code": "DI208D ",
-            "display": "Mikrovaskulær angina"
-          },
-          {
-            "code": "DI208E",
-            "display": "Stabil angina pectoris"
-          },
-          {
-            "code": "DE100",
-            "display": "Type 1-diabetes med koma"
-          },
-          {
-            "code": "DE101",
-            "display": "Type 1-diabetes med ketoacidose"
-          },
-          {
-            "code": "DE102",
-            "display": "Type 1-diabetes med nyrekomplikation"
-          },
-          {
-            "code": "DE103",
-            "display": "Type 1-diabetes med øjenkomplikation"
-          },
-          {
-            "code": "DE104",
-            "display": "Type 1-diabetes med neurologisk komplikation"
-          },
-          {
-            "code": "DE105",
-            "display": "Type 1-diabetes med komplikationer i perifere karsystem"
-          },
-          {
-            "code": "DE105A",
-            "display": "Type 1-diabetes med perifer angiopati"
-          },
-          {
-            "code": "DE105B",
-            "display": "Type 1-diabetes med fodsår"
-          },
-          {
-            "code": "DE105C",
-            "display": "Type 1-diabetes med gangræn"
-          },
-          {
-            "code": "DE105D",
-            "display": "Type 1-diabetes med mikroangiopati"
-          },
-          {
-            "code": "DE106",
-            "display": "Type 1-diabetes med anden komplikation"
-          },
-          {
-            "code": "DE107",
-            "display": "Type 1-diabetes med multiple komplikationer"
-          },
-          {
-            "code": "DE108",
-            "display": "Type 1-diabetes med komplikation UNS"
-          },
-          {
-            "code": "DE109",
-            "display": "Type 1-diabetes uden komplikationer"
-          },
-          {
-            "code": "DE109A",
-            "display": "Type 1-diabetes UNS"
           },
           {
             "code": "DE11",
             "display": "Type 2-diabetes"
           },
           {
-            "code": "DE110",
-            "display": "Type 2-diabetes med koma"
+            "code": "DI20",
+            "display": "Angina pectoris"
           },
           {
-            "code": "DE111",
-            "display": "Type 2-diabetes med ketoacidose"
+            "code": "DI25",
+            "display": "Kronisk iskæmisk hjertesygdom"
           },
           {
-            "code": "DE112",
-            "display": "Type 2-diabetes med nyrekomplikation"
-          },
-          {
-            "code": "DE113",
-            "display": "Type 2-diabetes med øjenkomplikation"
-          },
-          {
-            "code": "DE114",
-            "display": "Type 2-diabetes med neurologisk komplikation"
-          },
-          {
-            "code": "DE115",
-            "display": "Type 2-diabetes med komplikationer i perifere karsystem"
-          },
-          {
-            "code": "DE115A",
-            "display": "Type 2-diabetes med perifer angiopati"
-          },
-          {
-            "code": "DE115B",
-            "display": "Type 2-diabetes med fodsår"
-          },
-          {
-            "code": "DE115C",
-            "display": "Type 2-diabetes med gangræn"
-          },
-          {
-            "code": "DE115D",
-            "display": "Type 2-diabetes med mikroangiopati"
-          },
-          {
-            "code": "DE116",
-            "display": "Type 2-diabetes med anden komplikation"
-          },
-          {
-            "code": "DE117",
-            "display": "Type 2-diabetes med multiple komplikationer"
-          },
-          {
-            "code": "DE118",
-            "display": "Type 2-diabetes med komplikation UNS"
-          },
-          {
-            "code": "DE119",
-            "display": "Type 2-diabetes uden komplikationer"
-          },
-          {
-            "code": "DE119A",
-            "display": "Type 2-diabetes UNS"
-          },
-          {
-            "code": "DI208E1",
-            "display": "Klinisk vurderet angina pectoris"
-          },
-          {
-            "code": "DI208E2",
-            "display": "Hjerteaneurisme"
+            "code": "DZ76",
+            "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
           }
         ]
       },
       {
         "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
-        "concept": [
-          {
-            "code": "I9.1"
-          },
-          {
-            "code": "I4.9"
-          },
-          {
-            "code": "I7.2"
-          },
-          {
-            "code": "I10.1"
-          },
-          {
-            "code": "I6.2"
-          },
-          {
-            "code": "I11.4"
-          },
-          {
-            "code": "I9.3"
-          },
-          {
-            "code": "I6.4"
-          },
-          {
-            "code": "I9.2"
-          },
-          {
-            "code": "I12.1"
-          },
-          {
-            "code": "I4.5"
-          },
-          {
-            "code": "I4.7"
-          },
-          {
-            "code": "I4.3"
-          },
-          {
-            "code": "I1.2"
-          },
-          {
-            "code": "I4.2"
-          },
-          {
-            "code": "I3.2"
-          },
-          {
-            "code": "I9.5"
-          },
-          {
-            "code": "I11.1"
-          },
-          {
-            "code": "I9.7"
-          },
-          {
-            "code": "I11.2"
-          },
-          {
-            "code": "I4.1"
-          },
-          {
-            "code": "I5.1"
-          },
-          {
-            "code": "I9.4"
-          },
-          {
-            "code": "I12.4"
-          },
-          {
-            "code": "I6.3"
-          },
-          {
-            "code": "I2.1"
-          },
-          {
-            "code": "I3.4"
-          },
-          {
-            "code": "I1.1"
-          },
-          {
-            "code": "I8.1"
-          },
-          {
-            "code": "I9.8"
-          },
-          {
-            "code": "I6.1"
-          },
-          {
-            "code": "I11.3"
-          },
-          {
-            "code": "I9.6"
-          },
-          {
-            "code": "I4.8"
-          },
-          {
-            "code": "I4.4"
-          },
-          {
-            "code": "I3.5"
-          },
-          {
-            "code": "I12.3"
-          },
-          {
-            "code": "I12.2"
-          },
-          {
-            "code": "I4.6"
-          },
-          {
-            "code": "I3.1"
-          },
-          {
-            "code": "I7.1"
-          },
-          {
-            "code": "I10.2"
-          },
-          {
-            "code": "I3.3"
-          }
-        ]
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "F"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J1"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J2"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J3"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J4"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J5"
+        } ]
       }
     ]
   }
