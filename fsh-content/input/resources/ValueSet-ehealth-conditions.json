@@ -35,6 +35,10 @@
             "display": "Type 2-diabetes"
           },
           {
+            "code": "DJ44",
+            "display": "Kronisk obstruktiv lungesygdom"
+          },
+          {
             "code": "DI20",
             "display": "Angina pectoris"
           },
