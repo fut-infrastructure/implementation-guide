@@ -7,9 +7,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added codes to ehealth-clinicalimpression-finding-codes: no-effective-answer-significance and no-answer-significance-defined.
+- Updated definition of green-question-answer and yellow-question-answer codes in ehealth-clinicalimpression-finding-codes.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension ehealth-questionnaireresponse-basis to ehealth-clinicalimpression for additional info regarding the finding.
 
 ## 2022.2 (2022-06-30)
 

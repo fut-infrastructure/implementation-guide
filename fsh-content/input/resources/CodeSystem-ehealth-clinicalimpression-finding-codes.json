@@ -37,7 +37,7 @@
     {
       "code": "yellow-question-answer",
       "display": "yellow question and answer combination",
-      "definition": "Applied to a single question and answer pair, this indicates a yellow combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one yellow combination found.",
+      "definition": "Applied to a single question and answer pair, this indicates a yellow combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one yellow combination found and no red combinations found.",
       "designation": [
         {
           "language": "da",
@@ -48,11 +48,33 @@
     {
       "code": "green-question-answer",
       "display": "green question and answer combination",
-      "definition": "Applied to a single question and answer pair, this indicates a green combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates no red or yellow combinations found.",
+      "definition": "Applied to a single question and answer pair, this indicates a green combination. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates at least one green combination found and no red or yellow combinations found.",
       "designation": [
         {
           "language": "da",
-          "value": "Grøn spørgsmål/svar-kombination fundet i spørgeskemabesvarelse. Når anført som opsummering for hel spørgeskemabesvarelse er der ikke fundet røde eller gule spørgsmål/svar-kombinationer."
+          "value": "Grøn spørgsmål/svar-kombination fundet i spørgeskemabesvarelse."
+        }
+      ]
+    },
+    {
+      "code": "no-effective-answer-significance",
+      "display": "no effective answer significance for answer and question combination",
+      "definition": "Applied to a single question and answer pair, this indicates that answer did not meet any answer significance conditions. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates that no answer met the conditions of any answer significance(s) in the related question.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ingen triageringsindikator for spørgsmål/svar-kombination har fundet anvendelse."
+        }
+      ]
+    },
+    {
+      "code": "no-answer-significance-defined",
+      "display": "no answer significance defined for question(s)",
+      "definition": "Applied to a single question and answer pair, this indicates that the question did not have any answer significance. Applied as summary to multiple question and answer pairs in a questionnaire response, this indicates that no question had any associated answer significance(s).",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ingen triageringsindikator defineret i spørgeskemaet."
         }
       ]
     },

@@ -5,6 +5,7 @@ Parent: ClinicalImpression
 * extension contains ehealth-clinicalimpression-decisionContext named decisionContext 0..*
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
+* extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * code 1..1
 * code from ehealth-clinicalimpression-codes
@@ -67,3 +68,21 @@ Description: "Investigation item for View resources so they can be approved."
 * value[x] only Reference(ehealth-view)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
+
+Extension:   ehealth-questionnaireresponse-finding-basis
+Title:       "Questionnaire response finding basis"
+Description: "Basis for the overall clinical impression finding of the questionnaire response"
+* . ^short = "The basis for a clinical impression finding"
+* extension contains
+    linkId 1..1 and
+    value 0..1 and
+    finding 1..1
+* extension[value].value[x] 1..1
+* extension[value].value[x] only decimal or integer or string or Coding or boolean
+* extension[value] ^short = "Value from questionnaire response"
+* extension[finding].valueCodeableConcept from ehealth-clinicalimpression-finding-codes
+* extension[finding] ^short = "What was found"
+* extension[linkId].value[x] only string
+* extension[linkId] ^short = "Unique id for item in questionnaire"
+* extension contains ehealth-questionnaire-answerSignificance named answerSignificance 1..1
+* extension[answerSignificance] ^short = "The Answer significance for an answer"
