@@ -26,6 +26,18 @@ With the extension `ehealth-clinicalimpression-decisionContext`, the ClinicalImp
 * decision rule identification in the form of a versioned reference to the Library containing the decision rule details including input and output parameter definitions
 * actual parameter values used at invocation, in the form of versioned references to resource(s), for instance input Observation 
 
+### Use for Triaging Result Basis
+
+With the extension `ehealth-questionnaireresponse-finding-basis`, the foundation of the overall ClinicalImpression finding can be expressed.
+
+The extension consists of a list, where each element in the list represents an answer significance which was triggered during triage.
+
+Each element includes the following:
+* linkId of the question/answer pair which triggered the finding basis
+* the value of the answer. This element is not populated if the answer significance condition operator is "exists", and the condition value is false.
+* the clinical impression finding code corresponding to the triggered answer significance
+* the triggered ehealth-questionnaire-answerSignificance
+
 ### Use for Practitioner's Assessment
 
 The ClinicalImpression instance for the Practitioner assessment can refer to a ClinicalImpression instance of the other types through the element `previous`.
