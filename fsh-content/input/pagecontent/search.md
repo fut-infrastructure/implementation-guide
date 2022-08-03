@@ -1,5 +1,5 @@
 <script type="text/javascript">
-var version="{{site.data.version}}";
+var version="{{site.data.fhir.igVer}}";
 if (version != "latest") {
   version = "v" + version;
 }
