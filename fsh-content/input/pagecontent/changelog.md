@@ -13,6 +13,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-questionnaireresponse-basis to ehealth-clinicalimpression for additional info regarding the finding.
+### Search parameters
+- Added search on 'about' on ehealth-message
 
 ## 2022.2 (2022-06-30)
 
