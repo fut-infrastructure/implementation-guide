@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "The set of possible message types.",
+  "description": "The set of possible message types..",
   "compose": {
     "include": [
       {
