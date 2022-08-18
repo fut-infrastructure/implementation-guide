@@ -51,7 +51,7 @@ podTemplate(label: label,
     }
 
     // deploy only the master branch
-    if (env.BRANCH_NAME == 'master') {
+    if (env.BRANCH_NAME == 'FUT1-7385-revisit') {
 
       stage ('generate documentation') {
         container('igpublisher') {
