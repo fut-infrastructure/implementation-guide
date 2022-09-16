@@ -86,6 +86,10 @@
 
 - `DEVICE_USE_STATEMENT_WRITE_WRONG_ORGANIZATION_CONTEXT`: User must be logged into the organization that is the owner of the device
 
+- `DEVICE_WRONG_PATIENT_CONTEXT`: User with patient context can only interact with devices that has been issued to the patient or not issued to anyone yet
+
+- `DEVICE_WRITE_NON_PRIVATELY_OWNED`: Patient user can only create/update privately owned devices
+
 #### ehealth-document
 
 - `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be a SOR organization for query
@@ -297,6 +301,8 @@
 - `SECURITY_USER_NOT_ALLOWED`: Resource not allowed for user: %s
 
 - `SECURITY_TOKEN_CONTEXT_MISSING`: Security token context missing for user type: %s
+
+- `SECURITY_TOKEN_CONTEXT_MISSING_CONTEXT`: Security token context missing for context type: %s
 
 - `SECURITY_RESOURCE_NOT_MATCHING_TOKEN_CONTEXT`: Resource not matching security token context: %s
 
