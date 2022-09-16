@@ -9,3 +9,4 @@ https://docs.ehealth.sundhed.dk/v2021.2/ig/index.html
 https://docs.ehealth.sundhed.dk/v2021.3/ig/index.html
 https://docs.ehealth.sundhed.dk/v2022.1/ig/index.html
 https://docs.ehealth.sundhed.dk/v2022.2/ig/index.html
+https://docs.ehealth.sundhed.dk/v2.0.3/ig/index.html
