@@ -3,12 +3,12 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2022-06-18T03:04:32.116+00:00",
+  "date": "2022-09-16T10:33:12.993+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "careplan",
-    "version": "1.14.1"
+    "version": "1.14.3"
   },
   "implementation": {
     "description": "eHealth careplan service",
@@ -22,13 +22,13 @@
       "type": "CarePlan",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan",
       "interaction": [ {
-        "code": "vread"
-      }, {
-        "code": "read"
+        "code": "update"
       }, {
         "code": "search-type"
       }, {
-        "code": "update"
+        "code": "vread"
+      }, {
+        "code": "read"
       } ],
       "conditionalUpdate": true,
       "searchInclude": [ "CarePlan:activity-reference", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:part-of" ],
@@ -87,32 +87,32 @@
         "documentation": "Scheduled time for team change"
       } ],
       "operation": [ {
-        "name": "suggest-care-teams",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
-        "documentation": "Suggest care teams matching the conditions required by the care plan on either a regional or a municipality level. The suggested care teams has reason codes matching all the conditions addressed by the care plan and has a managing organization matching the input region code or municipality code. One of region code or municipality code must be input. If both region code and municipality code is input, then the municipality code is ignored. Return a bundle with matching care teams and their managing organizations."
+        "name": "validate",
+        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "update-care-teams",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
         "documentation": "The operation modifies the care team assignment of the care plan and all of its sub plans."
       }, {
-        "name": "validate",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "suggest-care-teams",
+        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
+        "documentation": "Suggest care teams matching the conditions required by the care plan on either a regional or a municipality level. The suggested care teams has reason codes matching all the conditions addressed by the care plan and has a managing organization matching the input region code or municipality code. One of region code or municipality code must be input. If both region code and municipality code is input, then the municipality code is ignored. Return a bundle with matching care teams and their managing organizations."
       } ]
     }, {
       "type": "CommunicationRequest",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
       }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "delete"
       }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -235,13 +235,13 @@
       "type": "Condition",
       "profile": "http://hl7.org/fhir/StructureDefinition/Condition",
       "interaction": [ {
-        "code": "create"
-      }, {
-        "code": "patch"
-      }, {
         "code": "vread"
       }, {
         "code": "read"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "*" ],
@@ -254,15 +254,15 @@
       "type": "Consent",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -304,13 +304,13 @@
       "type": "EpisodeOfCare",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare",
       "interaction": [ {
-        "code": "patch"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "patch"
       } ],
       "searchRevInclude": [ "CarePlan:episodeOfCare" ],
       "searchParam": [ {
@@ -347,30 +347,30 @@
         "documentation": "Scheduled time for team change"
       } ],
       "operation": [ {
-        "name": "is-context-allowed",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed",
-        "documentation": "Checks that it is allowed to set an EpisodeOfCare as context.\r\nIf the user requesting context is a patient, then the patient input parameter should be specified.\r\nIf the user requesting context is a practitioner, then the careTeam input parameter should be specified.\r\nThrows an exception if it is not allowed to select the Episode Of Care context.\r\n## Output\r\nFor valid Episode of Care is returned references that cause the Episode of Care to be valid context. \r\nFor a practitioner, two output parameters will be returned on success:\r\n- CareTeam: The Careteam that gave access\r\n- EpisodeOfCare/CarePlan: The EpisodeOfCare or CarePlan that referenced the CareTeam"
+        "name": "validate",
+        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "update-care-teams",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
         "documentation": "Modify the care team assignment of the episode of care and all care plans that has the episode of care as context."
       }, {
-        "name": "validate",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "is-context-allowed",
+        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed",
+        "documentation": "Checks that it is allowed to set an EpisodeOfCare as context.\r\nIf the user requesting context is a patient, then the patient input parameter should be specified.\r\nIf the user requesting context is a practitioner, then the careTeam input parameter should be specified.\r\nThrows an exception if it is not allowed to select the Episode Of Care context.\r\n## Output\r\nFor valid Episode of Care is returned references that cause the Episode of Care to be valid context. \r\nFor a practitioner, two output parameters will be returned on success:\r\n- CareTeam: The Careteam that gave access\r\n- EpisodeOfCare/CarePlan: The EpisodeOfCare or CarePlan that referenced the CareTeam"
       } ]
     }, {
       "type": "Goal",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -465,11 +465,11 @@
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
       "interaction": [ {
+        "code": "search-type"
+      }, {
         "code": "vread"
       }, {
         "code": "read"
-      }, {
-        "code": "search-type"
       } ],
       "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:part-of", "CarePlan:patient", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:data", "Consent:patient", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
       "searchParam": [ {
@@ -485,11 +485,11 @@
       "type": "ServiceRequest",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest",
       "interaction": [ {
+        "code": "update"
+      }, {
         "code": "vread"
       }, {
         "code": "read"
-      }, {
-        "code": "update"
       } ],
       "conditionalUpdate": true,
       "searchInclude": [ "*" ],
@@ -499,18 +499,41 @@
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       } ]
     } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
     "operation": [ {
-      "name": "apply",
-      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply",
-      "documentation": "This operation creates a careplan for a specific episodeOfCare using this PlanDefinition as a template."
+      "name": "get-patient-procedures",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-patient-procedures",
+      "documentation": "This operation returns an overview of patient activities within a time period and filtered by either EpisodeOfCare or Condition code(s). On success, the returned Bundle contains a Parameters structure detailing the count of measurements received and expected. This is done per ServiceRequest with status active for those part of a CarePlan with status active related to eligible EpisodeOfCare resources. Eligible EpisodeOfCare are those with status active that refer to the given Patient and are either given as EpisodeOfCare reference in input or are referencing a Condition with a condition code that matches at least one of the Condition codes possibly given as input. The measurement regime expressed in ServiceRequest.occurrence[x] is, when possible, resolved to time slot(s) corresponding to datetime/period where an action is supposed to take place, typically performed by the Patient. When the occurrenceTiming variant is used, resolved time slots overlapping with the input time periode are considered. For occurrenceTiming expression which are either adhoc or unresolved, the effective datetime/period of a measurement is considered when checked for overlap with input time period.\r\n## Input\r\nThe operation has three mandatory inputs, a Patient reference, a start date and an end date. Additionally the operation has two optional inputs: a list of reference(s) to EpisodeOfCare and a list of Codings for Condition.\r\n### Patient reference\r\nMandatory reference for the Patient which the procedure overview is computed for.\r\n### Start and end datetimes\r\nStart and end datetime are both mandatory, and together specify the period of interest in the patient procedure overview. As stated above, for resolvable past and future time slots as well as adhoc and unresolved timings there must overlap with this period.\r\n### EpisodeOfCare list\r\nThe list of EpisodeOfCare references is optional, but either of EpisodeOfCare or Condition codes must be provided. If EpisodeOfCare are provided, these will be used to further filter which active EpisodeOfCare, CarePlan and ServiceRequest are considered for the patient procedure overview.\r\n### Condition Coding list\r\nThe list of Coding for Condition is optional, but either of EpisodeOfCare or Condition codes must be provided. If Condition Coding are provided, the EpisodeOfCare considered are those referring to a Condition matching at least one of the codes in the list. As above, the EpisodeOfCare (one or more) considered further determines which active EpisodeOfCare, CarePlan and ServiceRequest are considered.\r\n## Output\r\nFor valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with resolved measurement regimes and associated counts of measurement submitted and counts expected. Such counts are also included in the Parameters structure when the measurement regime is either adhoc or unresolved. In addition, the Bundle contains CarePlan and ServiceRequest referenced in the Parameters. The Bundle can contain an OperationOutcome describing any encountered warnings.\r\n### Output Parameters\r\nThe output contains rows (encoded in parameters) for each matching and active ServiceRequest with resolved timings overlapping with the requested period. \r\n\r\nRows are represented as Parameters.parameter with names: item_1, item_2, etc. Columns are represented as Parameters.parameter.part with name and value \r\n```\r\nExample:\r\n'resource': {\r\n    'resourceType': 'Parameters',\r\n    'parameter': [{\r\n            'name': 'item_1',\r\n            'part': [{\r\n                    'name': 'CarePlan',\r\n                    'valueReference': {\r\n                        'reference': 'https://careplan.devtest.systematic-ehealth.com/fhir/CarePlan/164581'\r\n                    }\r\n            }]\r\n    }]\r\n}\r\n ```\r\n\r\n### Columns\r\n\r\n- CarePlan: Reference to the CarePlan that the ServiceRequest belongs to.\r\n- ServiceRequest: Reference to the ServiceRequest.\r\n- ServiceRequestVersionId: The version of the ServiceRequest (version specified at time of submit-measurement or the current version (for expected activities)).\r\n- Activity: Description of the planned activity.\r\n- ResolvedTimingStart: A planned start time for the activity in the requested period.\r\n- ResolvedTimingEnd: A planned end time for the activity in the requested period. May be identical to start if no duration is specified in the measurement regime.\r\n- TotalSubmitted: The number of measurements already submitted for this ServiceRequest and resolved timing.\r\n- SubmittedTimely: The number of measurements where the measurement time matches the resolved timing.\r\n- TimingType:\r\n    * Resolved: a measurement regime that is supported by the infrastructure and where resolved timing and requested number of measurements can be calculated.\r\n    * Unresolved: a measurement regime that is not supported by the infrastructure. Resolved Timing Start, end, submitted timely and Occurrences requested will be empty.\r\n    * Adhoc: A ServiceRequest without a measurement regime or a measurement regime stating ad-hoc.\r\n- OccurencesRequested: Expected number of measurements."
     }, {
       "name": "create-episode-of-care",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-create-episode-of-care",
       "documentation": "This operation persists an EpisodeOfCare based on the transient value of an EpisodeOfCare provided in the input.\r\n## Input\r\nThe input is a Bundle which must contain exactly one EpisodeOfCare, conditions referenced in diagnosis list and at least one Provenance resource. All Provenances in the input must have the EpisodeOfCare as target. At least one Provenance must be interpreted into a 'Privacy-provenance' (see below).\r\n### The EpisodeOfCare resource\r\nThe EpisodeOfCare has to have `PLANNED` status \r\nThe 'id' property of the EpisodeOfCare will be reassigned by the server, but can be referenced by other resources in the same bundle. \r\nThe 'managingOrganization' property of the EpisodeOfCare references the GDPR Data Controller (Danish: 'Dataansvarlig').\r\n### The privacy-Provenance resource\r\nA privacy-Provenance is a Provenance resource characterized by having at least one entry in Provenance.policy which data are transported, stored, or processed in the system. Possible values are:\r\n- 'http://ehealth.sundhed.dk/policy/dk/sundhedsloven'\r\n- 'http://ehealth.sundhed.dk/policy/dk/serviceloven'\r\n### Diagnosis referenced Condition resource\r\nFor any diagnosis listed, the referenced Condition must be concerning the same Patient as the EpisodeOfCare.\r\n## Output\r\nFor valid inputs, the server will create, persist and return a new EpisodeOfCare, client-supplied provenances, conditions and origin-provenance carrying a server-assigned ids.\r\nTo get resources bodies in the output the request header has to contain parameter ```Prefer: return=representation```.\r\n### The origin-Provenance resource\r\nWhenever an EpisodeOfCare is created, the server automatically creates an 'origin' Provenance resource point to it (in addition to the client-supplied Privacy-Provenance). This Origin-Provenance resource is filled with data from the JWT access token in order to record the origin of the EpisodeOfCare resource. For instance agent.whoReference points to a resource which is created as a shadow identity from the JWT token."
     }, {
-      "name": "get-patient-procedures",
-      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-patient-procedures",
-      "documentation": "This operation returns an overview of patient activities within a time period and filtered by either EpisodeOfCare or Condition code(s). On success, the returned Bundle contains a Parameters structure detailing the count of measurements received and expected. This is done per ServiceRequest with status active for those part of a CarePlan with status active related to eligible EpisodeOfCare resources. Eligible EpisodeOfCare are those with status active that refer to the given Patient and are either given as EpisodeOfCare reference in input or are referencing a Condition with a condition code that matches at least one of the Condition codes possibly given as input. The measurement regime expressed in ServiceRequest.occurrence[x] is, when possible, resolved to time slot(s) corresponding to datetime/period where an action is supposed to take place, typically performed by the Patient. When the occurrenceTiming variant is used, resolved time slots overlapping with the input time periode are considered. For occurrenceTiming expression which are either adhoc or unresolved, the effective datetime/period of a measurement is considered when checked for overlap with input time period.\r\n## Input\r\nThe operation has three mandatory inputs, a Patient reference, a start date and an end date. Additionally the operation has two optional inputs: a list of reference(s) to EpisodeOfCare and a list of Codings for Condition.\r\n### Patient reference\r\nMandatory reference for the Patient which the procedure overview is computed for.\r\n### Start and end datetimes\r\nStart and end datetime are both mandatory, and together specify the period of interest in the patient procedure overview. As stated above, for resolvable past and future time slots as well as adhoc and unresolved timings there must overlap with this period.\r\n### EpisodeOfCare list\r\nThe list of EpisodeOfCare references is optional, but either of EpisodeOfCare or Condition codes must be provided. If EpisodeOfCare are provided, these will be used to further filter which active EpisodeOfCare, CarePlan and ServiceRequest are considered for the patient procedure overview.\r\n### Condition Coding list\r\nThe list of Coding for Condition is optional, but either of EpisodeOfCare or Condition codes must be provided. If Condition Coding are provided, the EpisodeOfCare considered are those referring to a Condition matching at least one of the codes in the list. As above, the EpisodeOfCare (one or more) considered further determines which active EpisodeOfCare, CarePlan and ServiceRequest are considered.\r\n## Output\r\nFor valid inputs, the server will compute and return a Bundle. The Bundle contains a Parameters resource with resolved measurement regimes and associated counts of measurement submitted and counts expected. Such counts are also included in the Parameters structure when the measurement regime is either adhoc or unresolved. In addition, the Bundle contains CarePlan and ServiceRequest referenced in the Parameters. The Bundle can contain an OperationOutcome describing any encountered warnings.\r\n### Output Parameters\r\nThe output contains rows (encoded in parameters) for each matching and active ServiceRequest with resolved timings overlapping with the requested period. \r\n\r\nRows are represented as Parameters.parameter with names: item_1, item_2, etc. Columns are represented as Parameters.parameter.part with name and value \r\n```\r\nExample:\r\n'resource': {\r\n    'resourceType': 'Parameters',\r\n    'parameter': [{\r\n            'name': 'item_1',\r\n            'part': [{\r\n                    'name': 'CarePlan',\r\n                    'valueReference': {\r\n                        'reference': 'https://careplan.devtest.systematic-ehealth.com/fhir/CarePlan/164581'\r\n                    }\r\n            }]\r\n    }]\r\n}\r\n ```\r\n\r\n### Columns\r\n\r\n- CarePlan: Reference to the CarePlan that the ServiceRequest belongs to.\r\n- ServiceRequest: Reference to the ServiceRequest.\r\n- ServiceRequestVersionId: The version of the ServiceRequest (version specified at time of submit-measurement or the current version (for expected activities)).\r\n- Activity: Description of the planned activity.\r\n- ResolvedTimingStart: A planned start time for the activity in the requested period.\r\n- ResolvedTimingEnd: A planned end time for the activity in the requested period. May be identical to start if no duration is specified in the measurement regime.\r\n- TotalSubmitted: The number of measurements already submitted for this ServiceRequest and resolved timing.\r\n- SubmittedTimely: The number of measurements where the measurement time matches the resolved timing.\r\n- TimingType:\r\n    * Resolved: a measurement regime that is supported by the infrastructure and where resolved timing and requested number of measurements can be calculated.\r\n    * Unresolved: a measurement regime that is not supported by the infrastructure. Resolved Timing Start, end, submitted timely and Occurrences requested will be empty.\r\n    * Adhoc: A ServiceRequest without a measurement regime or a measurement regime stating ad-hoc.\r\n- OccurencesRequested: Expected number of measurements."
+      "name": "apply",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply",
+      "documentation": "This operation creates a careplan for a specific episodeOfCare using this PlanDefinition as a template."
+    }, {
+      "name": "meta",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }

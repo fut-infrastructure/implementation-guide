@@ -3,12 +3,12 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2022-06-18T03:11:44.319+00:00",
+  "date": "2022-09-16T10:34:41.179+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.8.3"
+    "version": "1.9.0"
   },
   "implementation": {
     "description": "eHealth task service",
@@ -22,15 +22,15 @@
       "type": "ClinicalImpression",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
       "interaction": [ {
-        "code": "create"
-      }, {
-        "code": "patch"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "patch"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "ClinicalImpression:previous" ],
@@ -148,15 +148,15 @@
       "type": "Task",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
       "interaction": [ {
-        "code": "create"
-      }, {
-        "code": "patch"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "patch"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
@@ -294,6 +294,30 @@
         "name": "validate",
         "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"
       } ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
+    "operation": [ {
+      "name": "reindex-terminology",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
+      "name": "meta",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
     } ]
   } ]
 }

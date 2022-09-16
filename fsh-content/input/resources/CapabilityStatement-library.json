@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2022-06-18T02:28:36.319+00:00",
+  "date": "2022-09-14T13:09:29.606+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.7.3"
+    "version": "1.8.0"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -22,15 +22,15 @@
       "type": "Library",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -142,12 +142,12 @@
         "documentation": "The business version of the library"
       } ],
       "operation": [ {
+        "name": "validate",
+        "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-validate"
+      }, {
         "name": "evaluate",
         "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-evaluate",
         "documentation": "This operation evaluates parameters passed as input against the decision support rule identified by the Library resource. It returns the computed clinical decision support result and/or errors. The Library resource identifies the clinical decision rule and define its parameters.\n\nThe operation is idempotent.\n### Input\n- 1..1 Parameters: HL7 FHIR [Parameters](https://www.hl7.org/fhir/stu3/parameters.html) resource containing input parameters for the clinical decision support computation.This should either be a QuestionnaireResponse or an Observation for evaluation.\n\n### Output\nUpon success this operation returns an GuidanceResponse resource containing the decision support result."
-      }, {
-        "name": "validate",
-        "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-validate"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -157,6 +157,30 @@
       } ],
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Library:composed-of", "Library:depends-on", "Library:derived-from", "Library:predecessor", "Library:successor" ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
+    "operation": [ {
+      "name": "meta",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }

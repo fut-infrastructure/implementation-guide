@@ -3,12 +3,12 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2022-06-18T02:46:54.380+00:00",
+  "date": "2022-09-16T10:35:54.439+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "2.0.1"
+    "version": "2.0.2"
   },
   "implementation": {
     "description": "eHealth questionnaire service",
@@ -22,15 +22,15 @@
       "type": "Basic",
       "profile": "http://hl7.org/fhir/StructureDefinition/Basic",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -141,17 +141,17 @@
       "type": "Questionnaire",
       "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
       }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "delete"
       }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -271,28 +271,28 @@
         "documentation": "The business version of the questionnaire"
       } ],
       "operation": [ {
-        "name": "create-clone",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire-i-create-clone",
-        "documentation": "### Input\n- resourceId: reference to the Questionnaire resource that should be cloned\n- clone-operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
-      }, {
         "name": "validate",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      }, {
+        "name": "create-clone",
+        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire-i-create-clone",
+        "documentation": "### Input\n- resourceId: reference to the Questionnaire resource that should be cloned\n- clone-operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New copy does not require that the user has a modifier-role.\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
       } ]
     }, {
       "type": "StructureDefinition",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
       }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "delete"
       }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -437,10 +437,33 @@
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       } ]
     } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
     "operation": [ {
       "name": "migrate",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
+      "name": "meta",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
     } ]
   } ]
 }

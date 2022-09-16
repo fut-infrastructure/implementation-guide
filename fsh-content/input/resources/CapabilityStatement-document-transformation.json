@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2022-06-18T02:17:41.797+00:00",
+  "date": "2022-09-16T10:36:58.418+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.8.3"
+    "version": "1.9.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -22,15 +22,15 @@
       "type": "Composition",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition",
       "interaction": [ {
-        "code": "create"
-      }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "delete"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalDelete": "multiple",
@@ -153,15 +153,15 @@
       "type": "DocumentReference",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
       "interaction": [ {
-        "code": "create"
-      }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
+        "code": "delete"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalDelete": "multiple",
@@ -325,38 +325,61 @@
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ]
     } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
     "operation": [ {
-      "name": "transform-from-APD",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
-      "documentation": "Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."
-    }, {
-      "name": "transform-from-PHMR",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-PHMR",
-      "documentation": "Transforms a DK-HL7 Personal Health Monitoring Report (PHMR) XML document to FHIR Observation (ehealth-observation profile) resource. The input FHIR DocumentReference contains the PHMR XML document adhering to the DK-HL7 Personal Health Monitoring Report profile The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing.one or more FHIR Observation (ehealth-observation profile) resources and referenced resources such as FHIR Organization."
-    }, {
-      "name": "transform-from-QFDD",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QFDD",
-      "documentation": "Transforms the DK-HL7 Questionnaire Form Definition Document (QFDD) to an eHealth Questionnaire resource. The input FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document. The returned Bundle contains the eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire."
-    }, {
-      "name": "transform-from-QRD",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD",
-      "documentation": "Transforms a DK-HL7 Questionnaire Response Document (QRD) XML document to a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource. The input FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile. The returned FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource."
-    }, {
-      "name": "transform-to-APD",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD",
-      "documentation": "Transforms a FHIR Appointment (ehealth-appointment profile) resource to a DK-HL7 Appointment Document (APD) XML document. The input FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource and referenced resources such as FHIR Organization. The returned FHIR DocumentReference contains the APD XML document adhering to the DK-HL7 Appointment Document profile."
-    }, {
-      "name": "transform-to-PHMR",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-PHMR",
-      "documentation": "Transforms a FHIR Observation (ehealth-observation profile) resource to a DK-HL7 Personal Health Monitoring Report (PHMR) XML document. The input FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing one or more FHIR Observation (ehealth-observation profile) resources and referenced resources such as FHIR Organization. The returned FHIR DocumentReference contains the PHMR XML document adhering to the DK-HL7 Personal Health Monitoring Report profile."
+      "name": "transform-to-QRD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD",
+      "documentation": "Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource. The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."
     }, {
       "name": "transform-to-QFDD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD",
       "documentation": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document."
     }, {
-      "name": "transform-to-QRD",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD",
-      "documentation": "Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource. The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."
+      "name": "transform-to-PHMR",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-PHMR",
+      "documentation": "Transforms a FHIR Observation (ehealth-observation profile) resource to a DK-HL7 Personal Health Monitoring Report (PHMR) XML document. The input FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing one or more FHIR Observation (ehealth-observation profile) resources and referenced resources such as FHIR Organization. The returned FHIR DocumentReference contains the PHMR XML document adhering to the DK-HL7 Personal Health Monitoring Report profile."
+    }, {
+      "name": "transform-to-APD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD",
+      "documentation": "Transforms a FHIR Appointment (ehealth-appointment profile) resource to a DK-HL7 Appointment Document (APD) XML document. The input FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource and referenced resources such as FHIR Organization. The returned FHIR DocumentReference contains the APD XML document adhering to the DK-HL7 Appointment Document profile."
+    }, {
+      "name": "transform-from-QRD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD",
+      "documentation": "Transforms a DK-HL7 Questionnaire Response Document (QRD) XML document to a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource. The input FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile. The returned FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource."
+    }, {
+      "name": "transform-from-QFDD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QFDD",
+      "documentation": "Transforms the DK-HL7 Questionnaire Form Definition Document (QFDD) to an eHealth Questionnaire resource. The input FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document. The returned Bundle contains the eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire."
+    }, {
+      "name": "transform-from-PHMR",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-PHMR",
+      "documentation": "Transforms a DK-HL7 Personal Health Monitoring Report (PHMR) XML document to FHIR Observation (ehealth-observation profile) resource. The input FHIR DocumentReference contains the PHMR XML document adhering to the DK-HL7 Personal Health Monitoring Report profile The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing.one or more FHIR Observation (ehealth-observation profile) resources and referenced resources such as FHIR Organization."
+    }, {
+      "name": "transform-from-APD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
+      "documentation": "Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."
+    }, {
+      "name": "meta",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }

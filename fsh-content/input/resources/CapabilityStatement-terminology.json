@@ -3,12 +3,12 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2022-06-18T03:20:11.293+00:00",
+  "date": "2022-09-14T03:08:08.120+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.8.3"
+    "version": "1.9.0"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -22,23 +22,23 @@
       "type": "CodeSystem",
       "profile": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
       "interaction": [ {
-        "code": "search-type"
-      }, {
-        "code": "create"
-      }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
+      }, {
+        "code": "search-type"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -167,63 +167,63 @@
         "documentation": "The business version of the code system"
       } ],
       "operation": [ {
-        "name": "lookup",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-lookup"
+        "name": "upload-external-code-system",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-upload-external-code-system"
       }, {
-        "name": "subsumes",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-subsumes"
+        "name": "apply-codesystem-delta-remove",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-remove"
+      }, {
+        "name": "apply-codesystem-delta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"
       }, {
         "name": "validate-code",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
       }, {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
-      }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
-      }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
       }, {
-        "name": "apply-codesystem-delta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
       }, {
-        "name": "apply-codesystem-delta-remove",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-remove"
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
       }, {
-        "name": "upload-external-code-system",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-upload-external-code-system"
+        "name": "subsumes",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-subsumes"
+      }, {
+        "name": "lookup",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-lookup"
       } ]
     }, {
       "type": "ConceptMap",
       "profile": "http://hl7.org/fhir/StructureDefinition/ConceptMap",
       "interaction": [ {
-        "code": "search-type"
-      }, {
-        "code": "create"
-      }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
+      }, {
+        "code": "search-type"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -376,48 +376,48 @@
         "documentation": "The business version of the concept map"
       } ],
       "operation": [ {
-        "name": "translate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-it-translate"
-      }, {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
-      }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
-      }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "translate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ConceptMap-it-translate"
       } ]
     }, {
       "type": "Group",
       "profile": "http://hl7.org/fhir/StructureDefinition/Group",
       "interaction": [ {
-        "code": "create"
+        "code": "search-type"
       }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
       }, {
-        "code": "search-type"
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -506,45 +506,45 @@
         "documentation": "Value held by characteristic"
       } ],
       "operation": [ {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
-      }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
-      }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
       } ]
     }, {
       "type": "NamingSystem",
       "profile": "http://hl7.org/fhir/StructureDefinition/NamingSystem",
       "interaction": [ {
-        "code": "search-type"
-      }, {
-        "code": "create"
-      }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
+      }, {
+        "code": "search-type"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -669,23 +669,23 @@
         "documentation": "The unique identifier"
       } ],
       "operation": [ {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
-      }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
-      }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -699,23 +699,23 @@
       "type": "Practitioner",
       "profile": "http://hl7.org/fhir/StructureDefinition/Practitioner",
       "interaction": [ {
-        "code": "create"
+        "code": "search-type"
       }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
       }, {
-        "code": "search-type"
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -832,23 +832,23 @@
         "documentation": "The value in any kind of contact"
       } ],
       "operation": [ {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
-      }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
-      }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
+      }, {
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
+      }, {
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
       } ]
     }, {
       "type": "StructureDefinition",
@@ -869,23 +869,23 @@
       "type": "ValueSet",
       "profile": "http://hl7.org/fhir/StructureDefinition/ValueSet",
       "interaction": [ {
-        "code": "search-type"
-      }, {
-        "code": "create"
-      }, {
-        "code": "delete"
-      }, {
-        "code": "history-instance"
-      }, {
-        "code": "history-type"
-      }, {
-        "code": "patch"
+        "code": "update"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "update"
+        "code": "patch"
+      }, {
+        "code": "history-type"
+      }, {
+        "code": "history-instance"
+      }, {
+        "code": "delete"
+      }, {
+        "code": "create"
+      }, {
+        "code": "search-type"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -1006,38 +1006,61 @@
         "documentation": "The business version of the value set"
       } ],
       "operation": [ {
-        "name": "expunge",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+        "name": "validate-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
       }, {
-        "name": "meta",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-meta",
-        "documentation": "Request a global list of tags, profiles, and security labels"
+        "name": "invalidate-expansion",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-invalidate-expansion"
       }, {
-        "name": "meta-add",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
-        "documentation": "Add tags, profiles, and/or security labels to a resource"
+        "name": "expand",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-it-expand"
+      }, {
+        "name": "validate",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
         "name": "meta-delete",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-delete",
         "documentation": "Delete tags, profiles, and/or security labels from a resource"
       }, {
-        "name": "validate",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+        "name": "meta-add",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-i-meta-add",
+        "documentation": "Add tags, profiles, and/or security labels to a resource"
       }, {
-        "name": "expand",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-it-expand"
+        "name": "meta",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta",
+        "documentation": "Request a list of tags, profiles, and security labels for a specfic resource instance"
       }, {
-        "name": "invalidate-expansion",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/ValueSet-i-invalidate-expansion"
-      }, {
-        "name": "validate-code",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
+        "name": "expunge",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
       } ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
     } ],
     "operation": [ {
       "name": "import",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import",
       "documentation": "Import terminology resources"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
+      "name": "meta",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
     } ]
   } ]
 }

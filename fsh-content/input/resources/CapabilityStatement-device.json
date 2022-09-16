@@ -3,12 +3,12 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2022-06-18T02:12:59.522+00:00",
+  "date": "2022-09-14T03:14:58.699+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "device",
-    "version": "1.8.2"
+    "version": "1.9.0"
   },
   "implementation": {
     "description": "eHealth device service",
@@ -22,15 +22,15 @@
       "type": "Device",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -128,21 +128,18 @@
       "type": "DeviceMetric",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
       }, {
-        "code": "delete"
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
-      "conditionalDelete": "single",
       "searchInclude": [ "DeviceMetric:source" ],
       "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ],
       "searchParam": [ {
@@ -210,15 +207,15 @@
       "type": "DeviceUseStatement",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement",
       "interaction": [ {
-        "code": "create"
+        "code": "update"
+      }, {
+        "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
       }, {
-        "code": "search-type"
-      }, {
-        "code": "update"
+        "code": "create"
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
@@ -301,6 +298,30 @@
       } ],
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
+    "operation": [ {
+      "name": "meta",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    }, {
+      "name": "process-message",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }
