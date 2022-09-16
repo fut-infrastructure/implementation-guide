@@ -1,4 +1,17 @@
 This is the log of changes made to the eHealth Implementation Guide.
+
+## Unreleased
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
 ## 2.3.0 (2022-09-27)
 
 ### General changes
