@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVBITVIiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIiR0cmFuc2Zvcm0tdG8tUEhNUiJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2022-06-07T09:47:31.465+00:00",
+        "date": "2022-09-16T10:24:59.287+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "434ed964-6099-4124-a543-74ca88c40398",
+        "id": "a0d8d3de-4b9c-4f4c-814b-f4fd9ba23fcc",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -125,6 +125,10 @@ __Response__
           {
             "resourceType": "Patient",
             "id": "2",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Address</td><td><span>Tårnhøjvej 47 </span><br/><span>Landet </span><br/><span>Aalborg Øst </span><span>Danmark </span></td></tr></tbody></table></div>"
+            },
             "identifier": [
               {
                 "system": "urn:oid:1.2.208.176.1.2",
@@ -263,7 +267,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Device",
-        "id": "b8943f69-fc6a-4af7-a5f2-df432fda75bc",
+        "id": "49b515a4-23a9-4d1d-9cfe-592cb33fc27a",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
@@ -289,7 +293,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "28446421-4f9c-46bd-b2e8-98ee06a23656",
+        "id": "fe4bfcda-7663-4055-ae8a-9867a51e5c32",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -299,6 +303,10 @@ __Response__
           {
             "resourceType": "Patient",
             "id": "2",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Address</td><td><span>Tårnhøjvej 47 </span><br/><span>Landet </span><br/><span>Aalborg Øst </span><span>Danmark </span></td></tr></tbody></table></div>"
+            },
             "identifier": [
               {
                 "system": "urn:oid:1.2.208.176.1.2",
@@ -402,14 +410,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1293.local/fhir/Device/b8943f69-fc6a-4af7-a5f2-df432fda75bc"
+          "reference": "https://document-transformation.cit-document-transformation-1341.local/fhir/Device/49b515a4-23a9-4d1d-9cfe-592cb33fc27a"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "9fc063aa-69e3-430f-abe2-a2205f24a3f1",
+        "id": "85cc8f71-17c0-4fad-a758-dc3d6b341015",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -419,6 +427,10 @@ __Response__
           {
             "resourceType": "Patient",
             "id": "2",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Address</td><td><span>Tårnhøjvej 47 </span><br/><span>Landet </span><br/><span>Aalborg Øst </span><span>Danmark </span></td></tr></tbody></table></div>"
+            },
             "identifier": [
               {
                 "system": "urn:oid:1.2.208.176.1.2",
@@ -522,14 +534,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1293.local/fhir/Device/b8943f69-fc6a-4af7-a5f2-df432fda75bc"
+          "reference": "https://document-transformation.cit-document-transformation-1341.local/fhir/Device/49b515a4-23a9-4d1d-9cfe-592cb33fc27a"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "f3723a01-4eab-4104-a82f-c5cbd56a0db0",
+        "id": "fb6c1e95-1b1b-4cb4-9099-89ef973b308a",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -539,6 +551,10 @@ __Response__
           {
             "resourceType": "Patient",
             "id": "2",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Address</td><td><span>Tårnhøjvej 47 </span><br/><span>Landet </span><br/><span>Aalborg Øst </span><span>Danmark </span></td></tr></tbody></table></div>"
+            },
             "identifier": [
               {
                 "system": "urn:oid:1.2.208.176.1.2",
@@ -636,7 +652,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1293.local/fhir/Device/b8943f69-fc6a-4af7-a5f2-df432fda75bc"
+          "reference": "https://document-transformation.cit-document-transformation-1341.local/fhir/Device/49b515a4-23a9-4d1d-9cfe-592cb33fc27a"
         }
       }
     }

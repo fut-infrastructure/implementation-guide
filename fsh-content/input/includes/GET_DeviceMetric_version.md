@@ -1,11 +1,11 @@
-`GET [base]/DeviceMetric/139/_history/2`
+`GET [base]/DeviceMetric/115/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRGV2aWNlTWV0cmljLnJlYWQiLCJEZXZpY2VNZXRyaWMud3JpdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "DeviceMetric",
-  "id": "139",
+  "id": "115",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-06-07T09:36:59.890+00:00",
-    "source": "#37e864af-971f-4e",
+    "lastUpdated": "2022-09-16T09:09:27.460+00:00",
+    "source": "#5c46c4a0-a686-99",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -120,7 +120,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-700.local/fhir/Device/138"
+    "reference": "https://device.cit-device-733.local/fhir/Device/114"
   },
   "operationalStatus": "off",
   "category": "calculation"

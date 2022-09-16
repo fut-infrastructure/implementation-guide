@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWJmMjFhYWMtOGFiZi00Y2FlLTk4NGItN2ZkODY5ZDc3ZDAzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjczNjMyOTgtZmY1ZC00NzIzLWIxZjgtN2I4NjVlZTE4NmE5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-667.local/fhir/Organization/60646"
+        "reference": "https://organization.cit-reporting-685.local/fhir/Organization/80054"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-667.local/fhir/Organization/1288"
+        "reference": "https://organization.cit-reporting-685.local/fhir/Organization/41247"
       }
     }
   ]
@@ -47,9 +47,9 @@ __Response__
   "contentType": "application/gzip-json",
   "securityContext": {
     "identifier": {
-      "value": "1bf21aac-8abf-4cae-984b-7fd869d77d03"
+      "value": "27363298-ff5d-4723-b1f8-7b865ee186a9"
     }
   },
-  "data": "UEsDBBQACAgIANZOx1QAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjJfMDZfMDdfMDlfNTRfNDUvUmVwb3J0SGVhZGVytY9BbsIwEEXvMmsSu65jwGeoAJGsWnVhpQNYMnY0MUg0yt07JRWNuu9y/N+fNx6AsEuUN+6MYKGuX7b0gdTv76+w+Ikbf4+VVKqQppDLRq5tpa2uyrVWlX5+ZbRzxFsyt8EOXOzThVpsbt13dfcbzkiwbwPEye1iirez/3TZp8jQ1YUL1pl8PHK6SRFhXDzoREcX/8B7PCBhbHHyPwY45dz1Voh5qWx9LqbfsaEwZlmG1LogDidPYjsjhZFGGxhn9h5D4Ov/2fukVivWvo/jF1BLBwhL6VHU0AAAAKcBAABQSwMEFAAICAgA107HVAAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wNl8wN18wOV81NF80NS9PcmRlckRldGFpbHMvT1JERVKtU01rwkAQ/S85J8ZIsa1HPwpCqMXqoS09TJNRBza7YXaUpuJ/70a7QaWXamEPM/OWx9t5b7fBhHPkIQqQskFvG5i6rwvKg16wEiltL46tVdEeaWUkEWNpWEgvo273tqVMBireJPH+QjyZDkfTIAxkxQj52LHotVKh40MttCBk60dWQNZNVzIZJql8r41gA36sq1rW3wSVwFLF/fnLXpBFpS7leB6l6RHJEBVtkKuB0QKZjAq3Pa80A8YnBXqKi/PRjEShHyKwIrTiuYYgDaZc/TvCmGE9PPS78OBXSrpe1dvFrkXKMRysS8ePoyD0ObgmAaf2kmDha1gyYv7A5mwyM77PcUPZz6t37y5NDBle/cyDtDip40mFWzEUpSPqtJP7KOlEnZtZctdrt915dVcyF2DBvF9NeAmavkDI6MZTD86td8OR4qc04V6XpcLChR64mh0B/7DZxvTTnzRYgV42S9vtvgFQSwcIZoDUxGUBAADeAwAAUEsBAhQAFAAICAgA1k7HVEvpUdTQAAAApwEAADAAAAAAAAAAAAAAAAAAAAAAAFNTTE9yZGVyc1JlcG9ydF8yMDIyXzA2XzA3XzA5XzU0XzQ1L1JlcG9ydEhlYWRlclBLAQIUABQACAgIANdOx1RmgNTEZQEAAN4DAAA2AAAAAAAAAAAAAAAAAC4BAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wNl8wN18wOV81NF80NS9PcmRlckRldGFpbHMvT1JERVJQSwUGAAAAAAIAAgDCAAAA9wIAAAAA"
+  "data": "UEsDBBQACAgIANU+MFUAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjJfMDlfMTZfMDdfNTRfNDIvUmVwb3J0SGVhZGVytY9BbsIwEEXvMmsSG8eG4DNUUJGsqFhY6QCWjB1NDBJEuTsuQTTqvsuZ//48uwfCNlBcmzOChqr62NA3Urd9bmH2imv7jAUXIuOrbL6o+VIrqaXIlSrKVVGoYpfo1lA6FNMB0H3qduFCDda39qf9+RtOSNBfPfhRb3zwt7O9m2iDT9DVuAtWkaw/pnQdPMIwe9OBjsb/gbd4QELf4Oh/D3CKse00Y9NS3tiYjR9MhmxRqtyFxjh2OFlimwnJSs6VhGFi79C59Pp/9sq5kMvk3Q/DA1BLBwi8okmC0wAAAKsBAABQSwMEFAAICAgA1T4wVQAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wOV8xNl8wN181NF80Mi9PcmRlckRldGFpbHMvT1JERVKtU01rwkAQ/S85J8ZIW6xHPwpCqMXqoS09TJNRBza7YXaUpuJ/70a7QaWXamEPM/OWx9t5b7fBhHPkIQqQskFvG5i6rwvKg16wEiltL46tVdEeaWUkEWNpWEgvo7vubUuZDFS8SeL9hXgyHY6mQRjIihHysWPRa6VCx4daaEHI1o+sgKybrmQyTFL5XhvBBvxYV7WsvwkqgaWK+/OXvSCLSl3K8TxK0yOSISraIFcDowUyGRVue15pBoxPCvQUF+ejGYlCP0RgRWjFcw1BGky5+neEMcN6eOh34cGvlHS9qreLXYuUYzhYl44fR0Hoc3BNAk7tJcHC17BkxPyBzdlkZnyf44ayn1fv3l2aGDK8+pkHaXFSx5MKt2IoSkfUaSf3UdKJOjezpNtrt915dVcyF2DBvF9NeAmavkDI6MZTD86td8OR4qc04V6XpcLChR64mh0B/7DZxvTTnzRYgV42S9vtvgFQSwcIf8fzD2UBAADeAwAAUEsBAhQAFAAICAgA1T4wVbyiSYLTAAAAqwEAADAAAAAAAAAAAAAAAAAAAAAAAFNTTE9yZGVyc1JlcG9ydF8yMDIyXzA5XzE2XzA3XzU0XzQyL1JlcG9ydEhlYWRlclBLAQIUABQACAgIANU+MFV/x/MPZQEAAN4DAAA2AAAAAAAAAAAAAAAAADEBAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wOV8xNl8wN181NF80Mi9PcmRlckRldGFpbHMvT1JERVJQSwUGAAAAAAIAAgDCAAAA+gIAAAAA"
 }
 ```

@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,9 +19,9 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://230b5f11-d24b-4531-ac7f-f13c8672d3e3",
-  "version": "668f5cd8-29ec-4433-8325-3242645e95fe",
-  "name": "f1414985-0ac5-4010-809b-b2e57278b017",
+  "url": "http://fd93d880-7174-4d92-8764-04d7e7bcd2c5",
+  "version": "495cc0a7-b73e-4cd0-9428-8d9e017026bf",
+  "name": "34aa80d4-10de-4565-8356-13e06d3cd530",
   "status": "draft",
   "kind": "resource",
   "abstract": true,
@@ -46,14 +46,14 @@ __Response__
   "id": "207",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-06-16T09:17:56.455+00:00",
+    "lastUpdated": "2022-09-16T08:36:43.307+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://230b5f11-d24b-4531-ac7f-f13c8672d3e3",
-  "version": "668f5cd8-29ec-4433-8325-3242645e95fe",
-  "name": "f1414985-0ac5-4010-809b-b2e57278b017",
+  "url": "http://fd93d880-7174-4d92-8764-04d7e7bcd2c5",
+  "version": "495cc0a7-b73e-4cd0-9428-8d9e017026bf",
+  "name": "34aa80d4-10de-4565-8356-13e06d3cd530",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDEyYjQ5ZjEtZWM2My00YTBmLWI2ZWMtZTUzNzQyMjRkNzk5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTc3MjdlZTItY2I5Mi00ZjRkLTgxYjUtZWQ4ZDQ2YzQ1ZDY0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,8 +18,8 @@ __Response__
   "id": "484",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-06-07T12:12:41.317+00:00",
-    "source": "#cd074cd8-34a1-4e",
+    "lastUpdated": "2022-09-16T09:59:35.028+00:00",
+    "source": "#a96c199a-2f73-97",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1437.local/fhir/EpisodeOfCare/11662"
+        "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/13752"
       }
     },
     {
@@ -83,20 +83,20 @@ __Response__
   "identifier": [
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "e5580db3-ef07-47db-a30f-5110a304a134"
+      "value": "441054da-1e3b-4acc-b489-bbbbaa45ab6b"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "912e129c-2b48-4acb-ab3f-9c3e72b39568_NPU03011"
+      "value": "262b7cc1-c048-477f-9ebb-db6597d53473_NPU03011"
     },
     {
       "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-      "value": "df33cf81-9614-4db7-bc1e-a6829036fa9b_MCS88015"
+      "value": "7d0deb00-f376-4f7b-8d45-9ab3d7fb76e4_MCS88015"
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1437.local/fhir/ServiceRequest/75424"
+      "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/63024"
     }
   ],
   "status": "final",
@@ -107,22 +107,22 @@ __Response__
         "code": "NPU03011"
       }
     ],
-    "text": "359be35e-c70b-4be2-a4c8-17edb73da8aa"
+    "text": "c48aba95-548a-4da7-9d75-095c0c5cba37"
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/52208"
+    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/41855"
   },
   "effectivePeriod": {
-    "start": "2022-06-07T12:12:37+00:00",
-    "end": "2022-06-07T12:12:37+00:00"
+    "start": "2022-09-16T09:59:30+00:00",
+    "end": "2022-09-16T09:59:30+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/71200"
+      "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/68757"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-1437.local/fhir/Device/2184"
+    "reference": "https://device.cit-measurement-1477.local/fhir/Device/55140"
   },
   "component": [
     {

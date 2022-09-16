@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -53,7 +53,7 @@ __Body__:
         }
       ],
       "managingOrganization": {
-        "reference": "https://organization.cit-document-transformation-1293.local/fhir/Organization/71984"
+        "reference": "https://organization.cit-document-transformation-1341.local/fhir/Organization/62706"
       }
     },
     {
@@ -66,7 +66,7 @@ __Body__:
       },
       "name": [
         {
-          "family": "56b2fe73-79ac-4d8c-9557-b27e3fdd1850"
+          "family": "c141c39c-efb9-426d-bd6c-0f6426086b2a"
         }
       ]
     }
@@ -83,13 +83,13 @@ __Body__:
   "subject": {
     "reference": "#1"
   },
-  "date": "2022-06-07T09:47:40+00:00",
+  "date": "2022-09-16T10:25:06+00:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "37732e70-9c33-43a4-913b-f456a95230d6"
+  "title": "85db7334-3b75-42c2-9291-cf38b619a024"
 }
 ```
 
@@ -100,7 +100,7 @@ __Response__
   "id": "79",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-06-07T09:47:40.614+00:00",
+    "lastUpdated": "2022-09-16T10:25:06.362+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
     ]
@@ -113,6 +113,10 @@ __Response__
         "profile": [
           "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
         ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">FirstName <b>LASTNAME </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>0101010001</td></tr><tr><td>Address</td><td><span>Scot 2 </span><br/></td></tr></tbody></table></div>"
       },
       "identifier": [
         {
@@ -139,7 +143,7 @@ __Response__
         }
       ],
       "managingOrganization": {
-        "reference": "https://organization.cit-document-transformation-1293.local/fhir/Organization/71984"
+        "reference": "https://organization.cit-document-transformation-1341.local/fhir/Organization/62706"
       }
     },
     {
@@ -152,7 +156,7 @@ __Response__
       },
       "name": [
         {
-          "family": "56b2fe73-79ac-4d8c-9557-b27e3fdd1850"
+          "family": "c141c39c-efb9-426d-bd6c-0f6426086b2a"
         }
       ]
     }
@@ -169,12 +173,12 @@ __Response__
   "subject": {
     "reference": "#1"
   },
-  "date": "2022-06-07T09:47:40+00:00",
+  "date": "2022-09-16T10:25:06+00:00",
   "author": [
     {
       "reference": "#2"
     }
   ],
-  "title": "37732e70-9c33-43a4-913b-f456a95230d6"
+  "title": "85db7334-3b75-42c2-9291-cf38b619a024"
 }
 ```

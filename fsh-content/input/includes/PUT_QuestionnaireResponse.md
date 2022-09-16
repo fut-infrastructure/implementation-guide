@@ -3,10 +3,10 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODA3MjcxYjgtMGVmZC00ZDhhLTlmNWUtYjQ3MDRlZTcyMGFlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTE0MzcubG9jYWwvZmhpci9DYXJlVGVhbS81NjQ2NCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTE0MzcubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzIxMTQ5IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMGU2MTQyMjEtYjcyMC00YjdlLWExMzgtODllMzk1YTQ4OTcwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTE0NzcubG9jYWwvZmhpci9DYXJlVGVhbS83MDMxNyIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTE0NzcubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzg3MDU4IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,7 +18,7 @@ __Body__:
   "id": "557",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-06-07T12:13:15.513+00:00",
+    "lastUpdated": "2022-09-16T10:00:13.301+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -27,7 +27,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1437.local/fhir/EpisodeOfCare/21149"
+        "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/87058"
       }
     },
     {
@@ -80,24 +80,24 @@ __Body__:
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1437.local/fhir/ServiceRequest/12367"
+      "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/37975"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1437.local/fhir/Questionnaire/1393",
+  "questionnaire": "https://questionnaire.cit-measurement-1477.local/fhir/Questionnaire/44426",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/94301"
+    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/76113"
   },
-  "authored": "2022-06-08T12:13:15+00:00",
+  "authored": "2022-09-17T10:00:13+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/50010"
+    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/42158"
   },
   "item": [
     {
-      "linkId": "95c17e6d-bde4-488f-a838-c67b3c67f520",
+      "linkId": "f34b8c78-ad82-4353-9402-126471af81bc",
       "answer": [
         {
-          "valueInteger": 270
+          "valueInteger": 926
         }
       ]
     }
@@ -112,7 +112,7 @@ __Response__
   "id": "557",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-06-07T12:13:15.621+00:00",
+    "lastUpdated": "2022-09-16T10:00:13.473+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -121,7 +121,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1437.local/fhir/EpisodeOfCare/21149"
+        "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/87058"
       }
     },
     {
@@ -174,24 +174,24 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1437.local/fhir/ServiceRequest/12367"
+      "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/37975"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1437.local/fhir/Questionnaire/1393",
+  "questionnaire": "https://questionnaire.cit-measurement-1477.local/fhir/Questionnaire/44426",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/94301"
+    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/76113"
   },
-  "authored": "2022-06-08T12:13:15+00:00",
+  "authored": "2022-09-17T10:00:13+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1437.local/fhir/Patient/50010"
+    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/42158"
   },
   "item": [
     {
-      "linkId": "95c17e6d-bde4-488f-a838-c67b3c67f520",
+      "linkId": "f34b8c78-ad82-4353-9402-126471af81bc",
       "answer": [
         {
-          "valueInteger": 270
+          "valueInteger": 926
         }
       ]
     }

@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDAzZDhkNDYtZDFiMy00YTc2LWFkMGUtYWM5NjE3NTM1MmFhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWU3YWMxZTUtNmVmZS00MmExLWI1YmEtNTE0MTMwNTg2N2M1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -24,7 +24,7 @@ __Body__:
             "name": "observationHeight",
             "resource": {
               "resourceType": "Observation",
-              "id": "96377",
+              "id": "70321",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -35,7 +35,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-library-694.local/fhir/EpisodeOfCare/55347"
+                    "reference": "https://careplan.cit-library-719.local/fhir/EpisodeOfCare/57096"
                   }
                 },
                 {
@@ -61,7 +61,7 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-library-694.local/fhir/ServiceRequest/27130"
+                  "reference": "https://careplan.cit-library-719.local/fhir/ServiceRequest/94251"
                 }
               ],
               "status": "final",
@@ -74,15 +74,15 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.cit-library-694.local/fhir/Patient/93142"
+                "reference": "https://patient.cit-library-719.local/fhir/Patient/93885"
               },
               "effectivePeriod": {
-                "start": "2022-06-07T09:43:47+00:00",
-                "end": "2022-06-07T09:43:47+00:00"
+                "start": "2022-09-16T08:18:28+00:00",
+                "end": "2022-09-16T08:18:28+00:00"
               },
               "performer": [
                 {
-                  "reference": "https://patient.cit-library-694.local/fhir/Patient/93142"
+                  "reference": "https://patient.cit-library-719.local/fhir/Patient/93885"
                 }
               ],
               "valueQuantity": {
@@ -91,7 +91,7 @@ __Body__:
                 "code": "m"
               },
               "device": {
-                "reference": "https://device.cit-library-694.local/fhir/Device/58352"
+                "reference": "https://device.cit-library-719.local/fhir/Device/40350"
               }
             }
           },
@@ -99,7 +99,7 @@ __Body__:
             "name": "observationWeight",
             "resource": {
               "resourceType": "Observation",
-              "id": "30570",
+              "id": "53415",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -110,7 +110,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-library-694.local/fhir/EpisodeOfCare/91859"
+                    "reference": "https://careplan.cit-library-719.local/fhir/EpisodeOfCare/46546"
                   }
                 },
                 {
@@ -136,7 +136,7 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-library-694.local/fhir/ServiceRequest/27130"
+                  "reference": "https://careplan.cit-library-719.local/fhir/ServiceRequest/94251"
                 }
               ],
               "status": "final",
@@ -149,15 +149,15 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.cit-library-694.local/fhir/Patient/35814"
+                "reference": "https://patient.cit-library-719.local/fhir/Patient/60600"
               },
               "effectivePeriod": {
-                "start": "2022-06-07T09:43:47+00:00",
-                "end": "2022-06-07T09:43:47+00:00"
+                "start": "2022-09-16T08:18:28+00:00",
+                "end": "2022-09-16T08:18:28+00:00"
               },
               "performer": [
                 {
-                  "reference": "https://patient.cit-library-694.local/fhir/Patient/35814"
+                  "reference": "https://patient.cit-library-719.local/fhir/Patient/60600"
                 }
               ],
               "valueQuantity": {
@@ -166,7 +166,7 @@ __Body__:
                 "code": "kg"
               },
               "device": {
-                "reference": "https://device.cit-library-694.local/fhir/Device/58637"
+                "reference": "https://device.cit-library-719.local/fhir/Device/11417"
               }
             }
           }
@@ -198,25 +198,25 @@ __Response__
         {
           "name": "fact",
           "valueReference": {
-            "reference": "http://patient.cit-library-694/fhir/Patient/93142/_history/1"
+            "reference": "https://careplan.cit-library-719.local/fhir/ServiceRequest/94251/_history/1"
           }
         },
         {
           "name": "fact",
           "valueReference": {
-            "reference": "https://plan.cit-library-694.local/fhir/ActivityDefinition/88116/_history/1"
+            "reference": "https://plan.cit-library-719.local/fhir/ActivityDefinition/7315/_history/1"
           }
         },
         {
           "name": "fact",
           "valueReference": {
-            "reference": "https://plan.cit-library-694.local/fhir/PlanDefinition/52514/_history/1"
+            "reference": "http://patient.cit-library-719/fhir/Patient/93885/_history/1"
           }
         },
         {
           "name": "fact",
           "valueReference": {
-            "reference": "https://careplan.cit-library-694.local/fhir/ServiceRequest/27130/_history/1"
+            "reference": "https://plan.cit-library-719.local/fhir/PlanDefinition/90575/_history/1"
           }
         }
       ]
@@ -226,14 +226,14 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-library-694.local/fhir/EpisodeOfCare/55347"
+        "reference": "https://careplan.cit-library-719.local/fhir/EpisodeOfCare/57096"
       }
     }
   ],
-  "moduleCanonical": "https://library.cit-library-694.local/fhir/Library/31",
+  "moduleCanonical": "https://library.cit-library-719.local/fhir/Library/31",
   "status": "success",
   "subject": {
-    "reference": "https://patient.cit-library-694.local/fhir/Patient/93142"
+    "reference": "https://patient.cit-library-719.local/fhir/Patient/93885"
   },
   "outputParameters": {
     "reference": "#1"

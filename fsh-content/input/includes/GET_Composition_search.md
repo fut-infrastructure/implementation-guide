@@ -1,11 +1,11 @@
-`GET [base]/Composition?title=8567fa6b-f24f-44c8-a37a-d865e071420f`
+`GET [base]/Composition?title=6617419e-5123-4c2d-acf2-70f627560260`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "d9ca7305-7b48-4645-b0ae-98dd1f27f5a7",
+  "id": "5ae2ec56-7386-41c6-9ced-8fcbcc9dc4fb",
   "meta": {
-    "lastUpdated": "2022-06-07T09:47:43.668+00:00"
+    "lastUpdated": "2022-09-16T10:25:09.204+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-transformation.cit-document-transformation-1293.local/fhir/Composition?_format=json&_pretty=true&title=8567fa6b-f24f-44c8-a37a-d865e071420f"
+      "url": "https://document-transformation.cit-document-transformation-1341.local/fhir/Composition?_format=json&_pretty=true&title=6617419e-5123-4c2d-acf2-70f627560260"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1293.local/fhir/Composition/84",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1341.local/fhir/Composition/84",
       "resource": {
         "resourceType": "Composition",
         "id": "84",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-06-07T09:47:42.813+00:00",
-          "source": "#e759d53d-4bc9-46",
+          "lastUpdated": "2022-09-16T10:25:08.524+00:00",
+          "source": "#5a56ba09-9308-95",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -49,6 +49,10 @@ __Response__
               "profile": [
                 "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
               ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">FirstName <b>LASTNAME </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>0101010001</td></tr><tr><td>Address</td><td><span>Scot 2 </span><br/></td></tr></tbody></table></div>"
             },
             "identifier": [
               {
@@ -75,7 +79,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1293.local/fhir/Organization/10630"
+              "reference": "https://organization.cit-document-transformation-1341.local/fhir/Organization/95073"
             }
           },
           {
@@ -88,7 +92,7 @@ __Response__
             },
             "name": [
               {
-                "family": "36ea9055-0e91-4416-ae0e-da1a51b48df8"
+                "family": "b98ea8d3-d7fd-493d-b01f-b4ff62a38b85"
               }
             ]
           }
@@ -105,27 +109,27 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2022-06-07T09:47:42+00:00",
+        "date": "2022-09-16T10:25:08+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "8567fa6b-f24f-44c8-a37a-d865e071420f"
+        "title": "6617419e-5123-4c2d-acf2-70f627560260"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1293.local/fhir/Composition/85",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1341.local/fhir/Composition/85",
       "resource": {
         "resourceType": "Composition",
         "id": "85",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-06-07T09:47:43.220+00:00",
-          "source": "#d015b3e4-9c54-4d",
+          "lastUpdated": "2022-09-16T10:25:08.778+00:00",
+          "source": "#80a8a9cd-1c5e-97",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -138,6 +142,10 @@ __Response__
               "profile": [
                 "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
               ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">FirstName <b>LASTNAME </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>0101010001</td></tr><tr><td>Address</td><td><span>Scot 2 </span><br/></td></tr></tbody></table></div>"
             },
             "identifier": [
               {
@@ -164,7 +172,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1293.local/fhir/Organization/86228"
+              "reference": "https://organization.cit-document-transformation-1341.local/fhir/Organization/16894"
             }
           },
           {
@@ -177,7 +185,7 @@ __Response__
             },
             "name": [
               {
-                "family": "5e21993f-4c75-4725-8f32-96faa749da33"
+                "family": "ac973a2a-0f5b-4b40-9223-17561d4a55f6"
               }
             ]
           }
@@ -194,13 +202,13 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2022-06-07T09:47:42+00:00",
+        "date": "2022-09-16T10:25:08+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "8567fa6b-f24f-44c8-a37a-d865e071420f"
+        "title": "6617419e-5123-4c2d-acf2-70f627560260"
       },
       "search": {
         "mode": "match"

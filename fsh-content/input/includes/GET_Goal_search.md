@@ -1,11 +1,11 @@
-`GET [base]/Goal?lifecycle-status=entered-in-error&subject=https%3A%2F%2Fpatient.cit-careplan-2046.local%2Ffhir%2FPatient%2F65731&addresses=https%3A%2F%2Fcareplan.cit-careplan-2046.local%2Ffhir%2FServiceRequest%2F1325%2F_history%2F1`
+`GET [base]/Goal?lifecycle-status=entered-in-error&subject=https%3A%2F%2Fpatient.cit-careplan-2097.local%2Ffhir%2FPatient%2F51614&addresses=https%3A%2F%2Fcareplan.cit-careplan-2097.local%2Ffhir%2FServiceRequest%2F1330%2F_history%2F1`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ2FyZVBsYW4uc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "4d99a73a-855f-4ecd-85ec-85e7c190db27",
+  "id": "29709f62-bddd-420e-b2d2-67738eb35623",
   "meta": {
-    "lastUpdated": "2022-06-17T08:36:49.885+00:00"
+    "lastUpdated": "2022-09-16T09:13:30.801+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.cit-careplan-2046.local/fhir/Goal?_format=json&_pretty=true&addresses=https%3A%2F%2Fcareplan.cit-careplan-2046.local%2Ffhir%2FServiceRequest%2F1325%2F_history%2F1&lifecycle-status=entered-in-error&subject=https%3A%2F%2Fpatient.cit-careplan-2046.local%2Ffhir%2FPatient%2F65731"
+      "url": "https://careplan.cit-careplan-2097.local/fhir/Goal?_format=json&_pretty=true&addresses=https%3A%2F%2Fcareplan.cit-careplan-2097.local%2Ffhir%2FServiceRequest%2F1330%2F_history%2F1&lifecycle-status=entered-in-error&subject=https%3A%2F%2Fpatient.cit-careplan-2097.local%2Ffhir%2FPatient%2F51614"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://careplan.cit-careplan-2046.local/fhir/Goal/1328",
+      "fullUrl": "https://careplan.cit-careplan-2097.local/fhir/Goal/1333",
       "resource": {
         "resourceType": "Goal",
-        "id": "1328",
+        "id": "1333",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-06-17T08:36:49.815+00:00",
-          "source": "#c1727387-07c4-40",
+          "lastUpdated": "2022-09-16T09:13:30.730+00:00",
+          "source": "#eec9e8e0-c675-99",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
           ]
@@ -51,9 +51,9 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/65731"
+          "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/51614"
         },
-        "startDate": "2022-06-17",
+        "startDate": "2022-09-16",
         "target": [
           {
             "measure": {
@@ -68,7 +68,7 @@ __Response__
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/1325"
+            "reference": "https://careplan.cit-careplan-2097.local/fhir/ServiceRequest/1330"
           }
         ]
       },
@@ -77,14 +77,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://careplan.cit-careplan-2046.local/fhir/Goal/1326",
+      "fullUrl": "https://careplan.cit-careplan-2097.local/fhir/Goal/1331",
       "resource": {
         "resourceType": "Goal",
-        "id": "1326",
+        "id": "1331",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-06-17T08:36:49.619+00:00",
-          "source": "#ed0e699c-a5ff-41",
+          "lastUpdated": "2022-09-16T09:13:30.542+00:00",
+          "source": "#1c9829ef-5c82-92",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
           ]
@@ -99,9 +99,9 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2046.local/fhir/Patient/65731"
+          "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/51614"
         },
-        "startDate": "2022-06-17",
+        "startDate": "2022-09-16",
         "target": [
           {
             "measure": {
@@ -116,7 +116,7 @@ __Response__
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2046.local/fhir/ServiceRequest/1325"
+            "reference": "https://careplan.cit-careplan-2097.local/fhir/ServiceRequest/1330"
           }
         ]
       },

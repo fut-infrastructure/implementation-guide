@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTYxNzFhYTgtM2M2My00Yjk5LTkzODItY2FhZTllNzE4MTAyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzYxOTdkODQtOTUxNC00YmU4LTg3NTMtOTViZGVjYmQ4YWYzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,8 +18,8 @@ __Response__
   "id": "106",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-06-07T10:59:14.673+00:00",
-    "source": "#b43ee10e-d918-41",
+    "lastUpdated": "2022-09-16T08:21:25.780+00:00",
+    "source": "#f7923c89-8bbf-99",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,11 +27,11 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:ace66566-f6b5-46d4-83f6-38b34153f0a8"
+      "value": "urn:uuid:8f32835f-4242-4367-a38a-cf92f158bc06"
     }
   ],
   "status": "active",
-  "name": "a369719f-5b6d-4d18-a4b5-ab34fdec29f9",
+  "name": "0e05ab3e-f1cc-445c-9821-fcf45e9dcbe4",
   "participant": [
     {
       "role": [
@@ -45,10 +45,10 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-962.local/fhir/Practitioner/108"
+        "reference": "https://organization.cit-organization-1015.local/fhir/Practitioner/108"
       },
       "period": {
-        "start": "2022-06-07T10:59:14+00:00"
+        "start": "2022-09-16T08:21:25+00:00"
       }
     }
   ],
@@ -56,8 +56,8 @@ __Response__
     {
       "coding": [
         {
-          "system": "http://ehealth.sundhed.dk/cs/conditions",
-          "code": "TBD"
+          "system": "urn:oid:1.2.208.176.2.4",
+          "code": "DJ44"
         }
       ]
     }

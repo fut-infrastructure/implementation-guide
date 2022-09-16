@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGQ3N2IwMGMtNzFjMy00M2VkLWFkZGItYThmNTIzMDI1NWJiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOGVhMGQxYzEtZTAyNy00NzdmLWJiMTYtYWFmYmEwZDBhZDQ2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/5.7.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,8 +18,8 @@ __Response__
   "id": "188",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-06-07T11:00:29.713+00:00",
-    "source": "#b117be75-1413-42",
+    "lastUpdated": "2022-09-16T08:22:34.431+00:00",
+    "source": "#0c0bfb4c-80f9-92",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,17 +27,17 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:dc5bcc1a-0ad2-4ec6-bc66-f6b4d0a8442e"
+      "value": "urn:uuid:4c01912a-20d3-46cf-ba45-fe3b2ac4339e"
     }
   ],
   "status": "active",
-  "name": "e2aed6fb-dae9-4bbe-9bd3-7d24cdda85aa",
+  "name": "43c24cfa-6663-47fb-967a-529784980c8d",
   "reasonCode": [
     {
       "coding": [
         {
-          "system": "http://ehealth.sundhed.dk/cs/conditions",
-          "code": "TBD"
+          "system": "urn:oid:1.2.208.176.2.4",
+          "code": "DJ44"
         }
       ]
     }
