@@ -13,7 +13,7 @@ DeviceUseStatements which have been in status `Active` cannot be deleted.
 DeviceUseStatements resources are created and updated automatically based on actions and information provided in the Service, Support & Logistics (SSL) domain of the eHealth Infrastructure. The use of DeviceUseStatements therefore concerns reading and searching only.
 
 ### Life cycle
-The life cycle of DeviceUseStatement resources is normally managed by the SSL subsystem, when an SSL supplier or a practitioner signals that a device has been delivered to a patient. At this time the Device Service is searched for an existing instance of this Device resource and a DeviceUseStatement referencing this Device is created.
+The life cycle of DeviceUseStatement resources is normally managed by the SSL subsystem, when an SSL supplier or a practitioner signals that a device has been delivered to a patient. At this time a Device resource has been created and using this reference a DeviceUseStatement is created.
 
 When the SSL subsystem is signaled that a Device is no longer being used, it will update the corresponding DeviceUseStatement automatically. 
 

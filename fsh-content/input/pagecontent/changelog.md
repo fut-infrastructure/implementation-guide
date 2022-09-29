@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Updated life cycle descriptions for ehealth-device and ehealth-deviceusestatement.
 
 ## 2.3.0 (2022-09-27)
 

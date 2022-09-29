@@ -13,7 +13,7 @@ The main purpose of registering a specific Device to a Patient through a CarePla
 Device resources are created and updated automatically based on actions and information provided in the Service, Support & Logistics (SSL) domain of the eHealth Infrastructure. The use of Device therefore concerns reading and searching only.
 
 ### Life cycle
-The life cycle of Device resources is normally managed by the SSL subsystem, when an SSL supplier or a practitioner signals that a device has been delivered to a patient. At this time the Device service is searched for an existing instance of this Device resource - if one is found it will be reused. Otherwise a new device resource is created and related to the Patient's Careplan through a DeviceUseStatement.
+The life cycle of Device resources is normally managed by the SSL subsystem, when an SSL supplier or a practitioner signals that a device has been delivered to a patient. At this time a new Device resource is created and related to the Patient's CarePlan through a DeviceUseStatement.
 
 ### Privately owned devices
 Bring your own device (BYOD), where the patient provides the device him or herself, is indicated with the extension `Device.privatelyOwned` being set to `true`. In all other cases, it is set to `null` or `false`.
