@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system 
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
