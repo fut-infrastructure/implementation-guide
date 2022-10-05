@@ -317,6 +317,10 @@
           ]
         },
         {
+          "code": "DI50",
+          "display": "Hjertesvigt"
+        },
+        {
           "code": "DJ44",
           "display": "Kronisk obstruktiv lungesygdom",
           "concept": [

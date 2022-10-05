@@ -8,8 +8,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
-- Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system 
+- Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system
+- Added "DI50: Hjertesvigt" concept to SKS CodeSystem
 ### ValueSets
+- Added "DI50: Hjertesvigt" to ehealth-conditions ValueSet
 ### ConceptMaps
 ### Resource/profile changes
 - Updated life cycle descriptions for ehealth-device and ehealth-deviceusestatement.

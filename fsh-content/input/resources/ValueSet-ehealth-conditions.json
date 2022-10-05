@@ -47,6 +47,10 @@
             "display": "Kronisk iskæmisk hjertesygdom"
           },
           {
+            "code": "DI50",
+            "display": "Hjertesvigt"
+          },
+          {
             "code": "DZ76",
             "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
           }
