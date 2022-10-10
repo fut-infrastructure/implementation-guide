@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system
 - Added "DI50: Hjertesvigt" concept to SKS CodeSystem
+- Moved "DZ76: Personer i kontakt med sundhedsvæsenet af andre årsager" to correct place in SKS CodeSystem hierarchi
 ### ValueSets
 - Added "DI50: Hjertesvigt" to ehealth-conditions ValueSet
 ### ConceptMaps

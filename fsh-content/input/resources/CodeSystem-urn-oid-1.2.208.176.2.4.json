@@ -353,12 +353,12 @@
             {
               "code": "DJ449",
               "display": "Kronisk obstruktiv lungesygdom UNS"
-            },
-            {
-              "code": "DZ76",
-              "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
             }
           ]
+        },
+        {
+          "code": "DZ76",
+          "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
         }
       ]
     },
