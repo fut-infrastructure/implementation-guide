@@ -318,6 +318,10 @@
 
 - `STATUS_SCHEDULE_IDENTICAL_TIME`: Multiple status changes may not be scheduled to be activated simultaneously
 
+#### ehealth-system
+
+- `SYSTEM_TAG_UNEXPECTED_TAG`: Resource contains system tag(s), which do not match related resource.
+
 #### ehealth-task
 
 - `TASK_INVESTIGATION_ITEM_REFERENCES_MUST_HAVE_VERSION_AND_VERSIONLESS`: Investigation references must have an item with version and one versionless
