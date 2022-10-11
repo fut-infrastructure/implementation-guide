@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2022-09-14T13:09:29.606+00:00",
+  "date": "2022-10-11T03:07:47.997+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.8.0"
+    "version": "1.8.1"
   },
   "implementation": {
     "description": "eHealth library service",

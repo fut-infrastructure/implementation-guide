@@ -3,12 +3,12 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2022-09-16T10:33:12.993+00:00",
+  "date": "2022-10-11T03:11:19.288+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "careplan",
-    "version": "1.14.3"
+    "version": "1.14.4"
   },
   "implementation": {
     "description": "eHealth careplan service",
@@ -37,6 +37,10 @@
         "name": "_id",
         "type": "token",
         "documentation": "The ID of the resource"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
       }, {
         "name": "activity-reference",
         "type": "reference",
@@ -272,6 +276,10 @@
         "type": "reference",
         "documentation": "The actual data reference"
       }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
         "name": "actor",
         "type": "reference",
         "documentation": "Resource for the actor (or group, by role)"
@@ -314,6 +322,10 @@
       } ],
       "searchRevInclude": [ "CarePlan:episodeOfCare" ],
       "searchParam": [ {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
         "name": "condition",
         "type": "reference",
         "documentation": "Conditions/problems/diagnoses this episode of care is for"
@@ -476,6 +488,10 @@
         "name": "target",
         "type": "reference",
         "documentation": "Target Reference(s) (usually version specific)"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
       } ],
       "operation": [ {
         "name": "validate",

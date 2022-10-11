@@ -3,12 +3,12 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2022-09-14T03:08:08.120+00:00",
+  "date": "2022-10-11T03:09:22.980+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.9.0"
+    "version": "1.9.1"
   },
   "implementation": {
     "description": "eHealth terminology service",
