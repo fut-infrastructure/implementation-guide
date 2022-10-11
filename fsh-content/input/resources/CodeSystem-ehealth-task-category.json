@@ -41,7 +41,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Data fra borger ikke modtaget i forventet tidsrum"
+          "value": "Afklaring af årsag til manglende målinger"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Borger har indsendt data udenfor forventet tidsrum"
+          "value": "Uventet måling"
         }
       ]
     },
@@ -63,7 +63,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Borger har indsendt data indenfor forventet tidsrum"
+          "value": "Måling til vurdering"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Uventet fejl i data indsendt fra borger. Du skal kontakte din lokale support."
+          "value": "Vurdering af måling er fejlet under automatisk behandling"
         }
       ]
     },
