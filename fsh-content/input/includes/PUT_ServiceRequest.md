@@ -1,4 +1,4 @@
-`PUT [base]/ServiceRequest/2094`
+`PUT [base]/ServiceRequest/2209`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2094",
+  "id": "2209",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-09-16T09:18:52.689+00:00",
+    "lastUpdated": "2022-10-10T15:05:32.042+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -27,7 +27,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/2093"
+        "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/2208"
       }
     },
     {
@@ -44,7 +44,7 @@ __Body__:
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2097.local/fhir/ActivityDefinition/60745"
+    "https://plan.cit-careplan-2135.local/fhir/ActivityDefinition/81386"
   ],
   "status": "completed",
   "intent": "option",
@@ -55,10 +55,10 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "f63a5812-e7ee-4e83-8139-7695b3e2f805"
+    "text": "00960b4b-c803-43e1-bb36-18c9d6d07358"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/42302"
+    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/53894"
   }
 }
 ```
@@ -67,10 +67,10 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2094",
+  "id": "2209",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-09-16T09:18:54.938+00:00",
+    "lastUpdated": "2022-10-10T15:05:34.380+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -79,7 +79,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/2093"
+        "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/2208"
       }
     },
     {
@@ -96,7 +96,7 @@ __Response__
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2097.local/fhir/ActivityDefinition/60745"
+    "https://plan.cit-careplan-2135.local/fhir/ActivityDefinition/81386"
   ],
   "status": "completed",
   "intent": "option",
@@ -107,10 +107,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "f63a5812-e7ee-4e83-8139-7695b3e2f805"
+    "text": "00960b4b-c803-43e1-bb36-18c9d6d07358"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/42302"
+    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/53894"
   }
 }
 ```

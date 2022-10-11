@@ -1,4 +1,4 @@
-`PUT [base]/Organization/292`
+`PUT [base]/Organization/279`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "292",
+  "id": "279",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-09-16T08:23:25.580+00:00",
+    "lastUpdated": "2022-10-10T14:33:48.410+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -53,20 +53,20 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2022-09-16T08:23:25+00:00"
+        "start": "2022-10-10T14:33:48+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "abda934b-19fa-4e4f-8f32-2469210aedda",
+      "value": "58402aeb-580a-4156-9ded-b3d6f7669569",
       "period": {
-        "start": "2022-09-16T08:23:25+00:00"
+        "start": "2022-10-10T14:33:48+00:00"
       }
     }
   ],
   "active": false,
-  "name": "50ef531c-eb45-4691-a18e-31cac2c6c864"
+  "name": "fd6ba68e-17aa-4b80-a37f-b4d79b0867e5"
 }
 ```
 
@@ -74,10 +74,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "292",
+  "id": "279",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-09-16T08:23:25.698+00:00",
+    "lastUpdated": "2022-10-10T14:33:48.564+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -112,19 +112,19 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2022-09-16T08:23:25+00:00"
+        "start": "2022-10-10T14:33:48+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "abda934b-19fa-4e4f-8f32-2469210aedda",
+      "value": "58402aeb-580a-4156-9ded-b3d6f7669569",
       "period": {
-        "start": "2022-09-16T08:23:25+00:00"
+        "start": "2022-10-10T14:33:48+00:00"
       }
     }
   ],
   "active": false,
-  "name": "50ef531c-eb45-4691-a18e-31cac2c6c864"
+  "name": "fd6ba68e-17aa-4b80-a37f-b4d79b0867e5"
 }
 ```

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGZmNmZhNzQtN2Y1My00ZWUwLTkxMDItMDExOWM2OGZmNDBlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2E1MjZlZTItMTBiZC00NjI2LWI1NTMtN2VkMzAwMjRlMDFlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/38863"
+              "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/70317"
             }
           },
           {
@@ -54,7 +54,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/60695"
+            "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/8344"
           }
         ],
         "status": "final",
@@ -67,19 +67,19 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/85248"
+          "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/69261"
         },
         "effectivePeriod": {
-          "start": "2022-09-16T10:00:30+00:00",
-          "end": "2022-09-16T10:00:30+00:00"
+          "start": "2022-10-11T13:07:49+00:00",
+          "end": "2022-10-11T13:07:49+00:00"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/85248"
+            "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/69261"
           }
         ],
         "device": {
-          "reference": "https://device.cit-measurement-1477.local/fhir/Device/80363"
+          "reference": "https://device.cit-measurement-1521.local/fhir/Device/12401"
         }
       }
     }

@@ -1,4 +1,4 @@
-`GET [base]/CarePlan?care-team=https%3A%2F%2Forganization.cit-careplan-2097.local%2Ffhir%2FCareTeam%2F72260&patient=https%3A%2F%2Fpatient.cit-careplan-2097.local%2Ffhir%2FPatient%2F56288&episodeOfCare.team=https%3A%2F%2Forganization.cit-careplan-2097.local%2Ffhir%2FCareTeam%2F88880`
+`GET [base]/CarePlan?care-team=https%3A%2F%2Forganization.cit-careplan-2135.local%2Ffhir%2FCareTeam%2F63408&patient=https%3A%2F%2Fpatient.cit-careplan-2135.local%2Ffhir%2FPatient%2F90134&episodeOfCare.team=https%3A%2F%2Forganization.cit-careplan-2135.local%2Ffhir%2FCareTeam%2F36673`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "64053112-af77-4ce3-9495-212c9a65a576",
+  "id": "7ed6bf3a-bc38-425c-ae2f-69b301e025fc",
   "meta": {
-    "lastUpdated": "2022-09-16T09:15:57.670+00:00"
+    "lastUpdated": "2022-10-10T15:02:19.162+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.cit-careplan-2097.local/fhir/CarePlan?_format=json&_pretty=true&care-team=https%3A%2F%2Forganization.cit-careplan-2097.local%2Ffhir%2FCareTeam%2F72260&episodeOfCare.team=https%3A%2F%2Forganization.cit-careplan-2097.local%2Ffhir%2FCareTeam%2F88880&patient=https%3A%2F%2Fpatient.cit-careplan-2097.local%2Ffhir%2FPatient%2F56288"
+      "url": "https://careplan.cit-careplan-2135.local/fhir/CarePlan?_format=json&_pretty=true&care-team=https%3A%2F%2Forganization.cit-careplan-2135.local%2Ffhir%2FCareTeam%2F63408&episodeOfCare.team=https%3A%2F%2Forganization.cit-careplan-2135.local%2Ffhir%2FCareTeam%2F36673&patient=https%3A%2F%2Fpatient.cit-careplan-2135.local%2Ffhir%2FPatient%2F90134"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://careplan.cit-careplan-2097.local/fhir/CarePlan/1752",
+      "fullUrl": "https://careplan.cit-careplan-2135.local/fhir/CarePlan/1828",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "1752",
+        "id": "1828",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-09-16T09:15:56.140+00:00",
-          "source": "#572ee3ac-be05-95",
+          "lastUpdated": "2022-10-10T15:02:17.537+00:00",
+          "source": "#5a4a05cf-f919-92",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -45,12 +45,12 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/1748"
+              "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/1824"
             }
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2097.local/fhir/PlanDefinition/59741"
+          "https://plan.cit-careplan-2135.local/fhir/PlanDefinition/12739"
         ],
         "status": "draft",
         "intent": "option",
@@ -65,7 +65,7 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/56288"
+          "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/90134"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -73,12 +73,12 @@ __Response__
         },
         "careTeam": [
           {
-            "reference": "https://organization.cit-careplan-2097.local/fhir/CareTeam/72260"
+            "reference": "https://organization.cit-careplan-2135.local/fhir/CareTeam/63408"
           }
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2097.local/fhir/Condition/1751"
+            "reference": "https://careplan.cit-careplan-2135.local/fhir/Condition/1827"
           }
         ]
       },
@@ -87,14 +87,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://careplan.cit-careplan-2097.local/fhir/CarePlan/1754",
+      "fullUrl": "https://careplan.cit-careplan-2135.local/fhir/CarePlan/1830",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "1754",
+        "id": "1830",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-09-16T09:15:57.340+00:00",
-          "source": "#9818ddaa-0162-90",
+          "lastUpdated": "2022-10-10T15:02:17.791+00:00",
+          "source": "#3821b0d8-1ac8-98",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -103,12 +103,12 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/1748"
+              "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/1824"
             }
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2097.local/fhir/PlanDefinition/54160"
+          "https://plan.cit-careplan-2135.local/fhir/PlanDefinition/13614"
         ],
         "status": "draft",
         "intent": "option",
@@ -123,7 +123,7 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/56288"
+          "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/90134"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -131,12 +131,12 @@ __Response__
         },
         "careTeam": [
           {
-            "reference": "https://organization.cit-careplan-2097.local/fhir/CareTeam/72260"
+            "reference": "https://organization.cit-careplan-2135.local/fhir/CareTeam/63408"
           }
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2097.local/fhir/Condition/1753"
+            "reference": "https://careplan.cit-careplan-2135.local/fhir/Condition/1829"
           }
         ]
       },

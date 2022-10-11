@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOTljNTBjMTktMDdlMC00NTNjLWFjODYtZjdhMWE2OTQ2Y2IzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjZiNjhmMTItMjU3MS00MWVhLTg1NTQtZTQ4N2IyNjQ5NzIzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,13 +18,19 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/89767"
+        "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/34223"
+      }
+    },
+    {
+      "name": "episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/40503"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2021-09-16T00:00:00+00:00"
+        "start": "2021-10-11T00:00:00+00:00"
       }
     }
   ]
@@ -38,102 +44,36 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "d41cc3c8-657b-481b-b604-027dd2d54135",
+      "fullUrl": "a5dd1b34-7acb-46e4-8342-d07e8f4fbb81",
       "resource": {
         "resourceType": "Bundle",
-        "id": "d41cc3c8-657b-481b-b604-027dd2d54135",
+        "id": "a5dd1b34-7acb-46e4-8342-d07e8f4fbb81",
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://measurement.cit-measurement-1477.local/fhir/Observation/349",
+            "fullUrl": "https://measurement.cit-measurement-1521.local/fhir/Observation/507",
             "resource": {
               "resourceType": "Observation",
-              "id": "349",
+              "id": "507",
               "meta": {
                 "versionId": "1",
-                "lastUpdated": "2022-09-16T09:58:12.354+00:00",
-                "source": "#5eedfcdf-7bb5-95",
+                "lastUpdated": "2022-10-11T13:06:39.628+00:00",
+                "source": "#0f49e44e-d40c-99",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
-                ]
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-                  "valueReference": {
-                    "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/91888"
-                  }
-                },
-                {
-                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
-                  "extension": [
-                    {
-                      "url": "serviceRequestVersionId",
-                      "valueId": "42"
-                    },
-                    {
-                      "url": "type",
-                      "valueCodeableConcept": {
-                        "coding": [
-                          {
-                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
-                            "code": "Adhoc"
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ],
-              "basedOn": [
-                {
-                  "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/49186"
-                }
-              ],
-              "status": "final",
-              "code": {
-                "coding": [
+                ],
+                "tag": [
                   {
-                    "system": "urn:oid:1.2.208.176.2.1",
-                    "code": "NPU03011"
+                    "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+                    "code": "xb"
                   }
-                ]
-              },
-              "subject": {
-                "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/89767"
-              },
-              "effectivePeriod": {
-                "start": "2022-09-16T09:58:12+00:00",
-                "end": "2022-09-16T09:58:12+00:00"
-              },
-              "performer": [
-                {
-                  "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/89767"
-                }
-              ],
-              "device": {
-                "reference": "https://device.cit-measurement-1477.local/fhir/Device/90428"
-              }
-            }
-          },
-          {
-            "fullUrl": "https://measurement.cit-measurement-1477.local/fhir/Media/350",
-            "resource": {
-              "resourceType": "Media",
-              "id": "350",
-              "meta": {
-                "versionId": "1",
-                "lastUpdated": "2022-09-16T09:58:12.473+00:00",
-                "source": "#be325ead-775a-93",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
                 ]
               },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/40625"
+                    "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/40503"
                   }
                 },
                 {
@@ -145,7 +85,8 @@ __Response__
                         "coding": [
                           {
                             "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                            "code": "TBD"
+                            "code": "DMQ",
+                            "display": "Device Measuring Quality"
                           }
                         ]
                       }
@@ -155,7 +96,7 @@ __Response__
                       "valueCodeableConcept": {
                         "coding": [
                           {
-                            "system": "http://ehealth.sundhed.dk/cs/usage-quality",
+                            "system": "http://ehealth.sundhed.dk/cs/device-measuring-quality",
                             "code": "TBD"
                           }
                         ]
@@ -184,27 +125,102 @@ __Response__
                   ]
                 }
               ],
-              "basedOn": [
+              "identifier": [
                 {
-                  "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/61224"
+                  "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
+                  "value": "909f0c35-6024-4d41-b401-24753be465af"
                 }
               ],
-              "status": "completed",
-              "type": {
+              "basedOn": [
+                {
+                  "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/190"
+                }
+              ],
+              "status": "final",
+              "code": {
                 "coding": [
                   {
-                    "system": "http://terminology.hl7.org/CodeSystem/media-type",
-                    "code": "audio"
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ],
+                "text": "e4225db2-3769-46a9-9cfc-3ca77bbbc079"
+              },
+              "subject": {
+                "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/34223"
+              },
+              "effectiveDateTime": "2022-10-11T13:06:39+00:00",
+              "performer": [
+                {
+                  "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/90293"
+                }
+              ],
+              "device": {
+                "reference": "https://device.cit-measurement-1521.local/fhir/Device/59436"
+              }
+            }
+          },
+          {
+            "fullUrl": "https://measurement.cit-measurement-1521.local/fhir/Provenance/506",
+            "resource": {
+              "resourceType": "Provenance",
+              "id": "506",
+              "meta": {
+                "versionId": "1",
+                "lastUpdated": "2022-10-11T13:06:39.628+00:00",
+                "source": "#0f49e44e-d40c-99",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
+                ],
+                "tag": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+                    "code": "xb"
                   }
                 ]
               },
-              "subject": {
-                "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/89767"
+              "target": [
+                {
+                  "reference": "https://measurement.cit-measurement-1521.local/fhir/Observation/507"
+                }
+              ],
+              "occurredPeriod": {
+                "end": "2022-10-11T13:06:39+00:00"
               },
-              "createdDateTime": "2022-09-16T09:58:12+00:00",
-              "content": {
-                "language": "en"
-              }
+              "recorded": "2022-10-11T13:06:39.611+00:00",
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/reuse-of-measurement-chosen-by-citizen"
+              ],
+              "activity": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/w3c-provenance-activity-type",
+                    "code": "Quotation",
+                    "display": "Quotation"
+                  }
+                ]
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/34223"
+                  }
+                }
+              ],
+              "entity": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance-dateTimeOfReusedEntity",
+                      "valueDateTime": "2022-10-11T13:06:39+00:00"
+                    }
+                  ],
+                  "role": "quotation",
+                  "what": {
+                    "reference": "https://measurement.cit-measurement-1521.local/fhir/Observation/505"
+                  }
+                }
+              ]
             }
           }
         ]

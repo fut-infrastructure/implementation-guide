@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjczNjMyOTgtZmY1ZC00NzIzLWIxZjgtN2I4NjVlZTE4NmE5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjY3NDQxYTktNDJlMi00MmZjLTgxZGItODlmZTJkOTU4NDdjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-685.local/fhir/Organization/80054"
+        "reference": "https://organization.cit-reporting-692.local/fhir/Organization/28284"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-685.local/fhir/Organization/41247"
+        "reference": "https://organization.cit-reporting-692.local/fhir/Organization/89988"
       }
     }
   ]
@@ -47,9 +47,9 @@ __Response__
   "contentType": "application/gzip-json",
   "securityContext": {
     "identifier": {
-      "value": "27363298-ff5d-4723-b1f8-7b865ee186a9"
+      "value": "667441a9-42e2-42fc-81db-89fe2d95847c"
     }
   },
-  "data": "UEsDBBQACAgIANU+MFUAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjJfMDlfMTZfMDdfNTRfNDIvUmVwb3J0SGVhZGVytY9BbsIwEEXvMmsSG8eG4DNUUJGsqFhY6QCWjB1NDBJEuTsuQTTqvsuZ//48uwfCNlBcmzOChqr62NA3Urd9bmH2imv7jAUXIuOrbL6o+VIrqaXIlSrKVVGoYpfo1lA6FNMB0H3qduFCDda39qf9+RtOSNBfPfhRb3zwt7O9m2iDT9DVuAtWkaw/pnQdPMIwe9OBjsb/gbd4QELf4Oh/D3CKse00Y9NS3tiYjR9MhmxRqtyFxjh2OFlimwnJSs6VhGFi79C59Pp/9sq5kMvk3Q/DA1BLBwi8okmC0wAAAKsBAABQSwMEFAAICAgA1T4wVQAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wOV8xNl8wN181NF80Mi9PcmRlckRldGFpbHMvT1JERVKtU01rwkAQ/S85J8ZIW6xHPwpCqMXqoS09TJNRBza7YXaUpuJ/70a7QaWXamEPM/OWx9t5b7fBhHPkIQqQskFvG5i6rwvKg16wEiltL46tVdEeaWUkEWNpWEgvo7vubUuZDFS8SeL9hXgyHY6mQRjIihHysWPRa6VCx4daaEHI1o+sgKybrmQyTFL5XhvBBvxYV7WsvwkqgaWK+/OXvSCLSl3K8TxK0yOSISraIFcDowUyGRVue15pBoxPCvQUF+ejGYlCP0RgRWjFcw1BGky5+neEMcN6eOh34cGvlHS9qreLXYuUYzhYl44fR0Hoc3BNAk7tJcHC17BkxPyBzdlkZnyf44ayn1fv3l2aGDK8+pkHaXFSx5MKt2IoSkfUaSf3UdKJOjezpNtrt915dVcyF2DBvF9NeAmavkDI6MZTD86td8OR4qc04V6XpcLChR64mh0B/7DZxvTTnzRYgV42S9vtvgFQSwcIf8fzD2UBAADeAwAAUEsBAhQAFAAICAgA1T4wVbyiSYLTAAAAqwEAADAAAAAAAAAAAAAAAAAAAAAAAFNTTE9yZGVyc1JlcG9ydF8yMDIyXzA5XzE2XzA3XzU0XzQyL1JlcG9ydEhlYWRlclBLAQIUABQACAgIANU+MFV/x/MPZQEAAN4DAAA2AAAAAAAAAAAAAAAAADEBAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8wOV8xNl8wN181NF80Mi9PcmRlckRldGFpbHMvT1JERVJQSwUGAAAAAAIAAgDCAAAA+gIAAAAA"
+  "data": "UEsDBBQACAgIAEBxSlUAAAAAAAAAAAAAAAAwAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjJfMTBfMTBfMTRfMTBfMDAvUmVwb3J0SGVhZGVytY9BbsIwEEXvMmsSOyYtjs+AAJGsWrGw0gEsGTuamEo0yt07JYhG3Vfyxv7vzxsPQNhFSht7QTBQ1+stfSD1+/srLB5x4+6xkkplheTTFKUppJEyr9TLqlzpZfnGdGeJByUeAGbgbh+v1GJz637au99wRoJ5HyBMehtiuF3cl00uBoY+rb9inciFE6ebGBDGxZOOdLLhD7zHIxKGFif/8wLnlLreCDEv5a1L2fRBNmSvlcp9bK0Xx7MjsZ2RQmmlSxhn9h695+3/2aurSmv2HsbxG1BLBwhD03uY0wAAAKsBAABQSwMEFAAICAgAQHFKVQAAAAAAAAAAAAAAADYAAABTU0xPcmRlcnNSZXBvcnRfMjAyMl8xMF8xMF8xNF8xMF8wMC9PcmRlckRldGFpbHMvT1JERVKtU8FqwkAQ/ZecjTFSSvVoY0EItdh4aEsP02TUgc1umB2lqfjv3Wg3qPRSLexhZt7yeDvv7TaYcoGcoAApGwy3gWn6pqAiGAYrkcoOo8haFe6Rbk4SMlaGhfQyvB30u8rkoKJNHO0vRNNZMp4FnUBWjFBMHIteK9VxfKiFFoRs/cgKyLrtKibDJLXvtRFswY913cj6m6AKWOpoNH/ZC7Ko1KUcz+M0PSJJUNEGub43WiCXcem255XmwPikQM9wcT7KSBT6IQIrQiueKwFpMeXq3xHGHJvhod91Dn6lpJtVvV3sWqgcw8G6dPI4Djo+B9ck4NReEix9DUtGLB7YnE0y4/sCN5T/vHr37tLEkOPVzzxIi+ImnlS6FUNZOaJ+Lx6EcT/s32Tx3bDXc+fVXcldgAWLUT3lJWj6AiGjW089OLfeDUeKn9KGe11VCksXeuA6OwL+YbOt6ac/6X4Fetkubbf7BlBLBwh88aSkZAEAAN4DAABQSwECFAAUAAgICABAcUpVQ9N7mNMAAACrAQAAMAAAAAAAAAAAAAAAAAAAAAAAU1NMT3JkZXJzUmVwb3J0XzIwMjJfMTBfMTBfMTRfMTBfMDAvUmVwb3J0SGVhZGVyUEsBAhQAFAAICAgAQHFKVXzxpKRkAQAA3gMAADYAAAAAAAAAAAAAAAAAMQEAAFNTTE9yZGVyc1JlcG9ydF8yMDIyXzEwXzEwXzE0XzEwXzAwL09yZGVyRGV0YWlscy9PUkRFUlBLBQYAAAAAAgACAMIAAAD5AgAAAAA="
 }
 ```

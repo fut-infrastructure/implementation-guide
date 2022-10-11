@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzYxOTdkODQtOTUxNC00YmU4LTg3NTMtOTViZGVjYmQ4YWYzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzkxMGFhZTYtNGJlMS00Mjg1LThhYmQtYWIwYjA4OWMxMWU5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,8 +18,8 @@ __Response__
   "id": "106",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-09-16T08:21:25.780+00:00",
-    "source": "#f7923c89-8bbf-99",
+    "lastUpdated": "2022-10-10T14:32:00.899+00:00",
+    "source": "#21f952ed-ca7b-9d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,11 +27,11 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:8f32835f-4242-4367-a38a-cf92f158bc06"
+      "value": "urn:uuid:19cae28d-d43c-4248-8c4f-b3b6b699f050"
     }
   ],
   "status": "active",
-  "name": "0e05ab3e-f1cc-445c-9821-fcf45e9dcbe4",
+  "name": "b24fe0b7-c8c4-472f-b3ab-440b670e6ff0",
   "participant": [
     {
       "role": [
@@ -45,10 +45,10 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1015.local/fhir/Practitioner/108"
+        "reference": "https://organization.cit-organization-1022.local/fhir/Practitioner/108"
       },
       "period": {
-        "start": "2022-09-16T08:21:25+00:00"
+        "start": "2022-10-10T14:32:00+00:00"
       }
     }
   ],

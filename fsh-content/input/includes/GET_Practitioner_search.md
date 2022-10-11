@@ -1,9 +1,9 @@
-`GET [base]/Practitioner?address-use=work&name=37e5ac83-3335-4dff-9755-264769658f65`
+`GET [base]/Practitioner?address-use=work&name=153feea7-a54c-442a-a865-f6815faf1ffb`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjM3MDBkNTYtYjNhMy00ZjFjLTlhNmItZDY4NDZkNDIwNGQ2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTBhODBkMGUtMGZlOC00ZjUxLWE0ODktZGUyMWNiMWI0NTgxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,45 +15,45 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "1eb8e30b-76c7-4c41-883b-ff7b7c3ffc75",
+  "id": "2e6b3229-d426-454b-86ac-50c368d93014",
   "meta": {
-    "lastUpdated": "2022-09-16T08:24:52.734+00:00"
+    "lastUpdated": "2022-10-10T14:35:10.950+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1015.local/fhir/Practitioner?_format=json&_pretty=true&address-use=work&name=37e5ac83-3335-4dff-9755-264769658f65"
+      "url": "https://organization.cit-organization-1022.local/fhir/Practitioner?_format=json&_pretty=true&address-use=work&name=153feea7-a54c-442a-a865-f6815faf1ffb"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1015.local/fhir/Practitioner/374",
+      "fullUrl": "https://organization.cit-organization-1022.local/fhir/Practitioner/361",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "374",
+        "id": "361",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-09-16T08:24:52.314+00:00",
-          "source": "#64f91d81-917b-90",
+          "lastUpdated": "2022-10-10T14:35:10.612+00:00",
+          "source": "#04181d1a-fa01-9a",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
         },
         "name": [
           {
-            "family": "37e5ac83-3335-4dff-9755-264769658f65"
+            "family": "153feea7-a54c-442a-a865-f6815faf1ffb"
           }
         ],
         "address": [
           {
             "use": "work",
-            "text": "b6de69cb-7480-4f03-9db3-1ae6d2ffa60c",
-            "city": "c25f3074-dfc2-44fd-aa96-fff6fe98c210",
-            "state": "4410afda-34e9-4247-b05b-ea6aea322607",
-            "postalCode": "9b722d20-e273-4d74-9549-1bad2896e932",
-            "country": "4d119d2c-76a8-40af-a23a-cdb9f1d20a83"
+            "text": "d89faa42-76a4-469e-b069-14027d29f17e",
+            "city": "5b75b172-c000-4950-a5ff-5da4068e2fb8",
+            "state": "a4975fd7-7b64-4c1f-8716-2835a5602650",
+            "postalCode": "aab2c730-f7a6-464d-a8b7-e951ad3f04cb",
+            "country": "0a809933-09f6-4e96-a6b5-2fce47deb4c1"
           }
         ]
       },
@@ -62,31 +62,31 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.cit-organization-1015.local/fhir/Practitioner/375",
+      "fullUrl": "https://organization.cit-organization-1022.local/fhir/Practitioner/362",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "375",
+        "id": "362",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-09-16T08:24:52.412+00:00",
-          "source": "#37e4b911-92a6-94",
+          "lastUpdated": "2022-10-10T14:35:10.727+00:00",
+          "source": "#bed3a045-6d30-96",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
         },
         "name": [
           {
-            "family": "37e5ac83-3335-4dff-9755-264769658f65"
+            "family": "153feea7-a54c-442a-a865-f6815faf1ffb"
           }
         ],
         "address": [
           {
             "use": "work",
-            "text": "b6de69cb-7480-4f03-9db3-1ae6d2ffa60c",
-            "city": "c25f3074-dfc2-44fd-aa96-fff6fe98c210",
-            "state": "4410afda-34e9-4247-b05b-ea6aea322607",
-            "postalCode": "9b722d20-e273-4d74-9549-1bad2896e932",
-            "country": "4d119d2c-76a8-40af-a23a-cdb9f1d20a83"
+            "text": "d89faa42-76a4-469e-b069-14027d29f17e",
+            "city": "5b75b172-c000-4950-a5ff-5da4068e2fb8",
+            "state": "a4975fd7-7b64-4c1f-8716-2835a5602650",
+            "postalCode": "aab2c730-f7a6-464d-a8b7-e951ad3f04cb",
+            "country": "0a809933-09f6-4e96-a6b5-2fce47deb4c1"
           }
         ]
       },

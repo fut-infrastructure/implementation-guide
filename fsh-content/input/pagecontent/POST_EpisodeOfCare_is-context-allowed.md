@@ -1,4 +1,4 @@
-`POST [base]/EpisodeOfCare/445/$is-context-allowed`
+`POST [base]/EpisodeOfCare/452/$is-context-allowed`
 
 __Header__
 ```
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/71831"
+        "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/6289"
       }
     }
   ]
@@ -33,7 +33,7 @@ __Response__
     {
       "name": "Patient",
       "valueReference": {
-        "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/71831"
+        "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/6289"
       }
     }
   ]

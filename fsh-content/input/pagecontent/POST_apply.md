@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMjA5Ny5sb2NhbC9maGlyL0NhcmVUZWFtLzI5NzkiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1jYXJlcGxhbi0yMDk3LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS82NSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMjEzNS5sb2NhbC9maGlyL0NhcmVUZWFtLzg5NTI0IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtY2FyZXBsYW4tMjEzNS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNzIiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,13 +18,13 @@ __Body__:
     {
       "name": "episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/65"
+        "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/72"
       }
     },
     {
       "name": "planDefinition",
       "valueReference": {
-        "reference": "https://plan.cit-careplan-2097.local/fhir/PlanDefinition/44207"
+        "reference": "https://plan.cit-careplan-2135.local/fhir/PlanDefinition/33949"
       }
     }
   ]
@@ -35,11 +35,11 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "67",
+  "id": "74",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-09-16T09:00:54.119+00:00",
-    "source": "#1ffcb11b-76fe-9b",
+    "lastUpdated": "2022-10-10T14:46:47.898+00:00",
+    "source": "#56621428-ee88-9d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
@@ -48,7 +48,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2097.local/fhir/EpisodeOfCare/65"
+        "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/72"
       }
     },
     {
@@ -68,37 +68,37 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2022-09-16T09:00:54+00:00"
+            "start": "2022-10-10T14:46:47+00:00"
           }
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2097.local/fhir/PlanDefinition/44207"
+    "https://plan.cit-careplan-2135.local/fhir/PlanDefinition/33949"
   ],
   "status": "draft",
   "intent": "order",
   "subject": {
-    "reference": "https://patient.cit-careplan-2097.local/fhir/Patient/59156"
+    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/35577"
   },
   "period": {
-    "start": "2022-09-16T09:00:54+00:00"
+    "start": "2022-10-10T14:46:47+00:00"
   },
   "careTeam": [
     {
-      "reference": "https://organization.cit-careplan-2097.local/fhir/CareTeam/2979"
+      "reference": "https://organization.cit-careplan-2135.local/fhir/CareTeam/89524"
     }
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2097.local/fhir/Condition/64"
+      "reference": "https://careplan.cit-careplan-2135.local/fhir/Condition/71"
     }
   ],
   "activity": [
     {
       "reference": {
-        "reference": "https://careplan.cit-careplan-2097.local/fhir/ServiceRequest/66"
+        "reference": "https://careplan.cit-careplan-2135.local/fhir/ServiceRequest/73"
       }
     }
   ]

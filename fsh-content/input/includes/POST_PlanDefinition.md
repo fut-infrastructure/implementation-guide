@@ -26,7 +26,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-1136.local/fhir/Organization/81468"
+            "reference": "https://organization.cit-plan-1143.local/fhir/Organization/77086"
           }
         },
         {
@@ -60,7 +60,7 @@ __Body__:
           }
         }
       ],
-      "definitionCanonical": "https://plan.cit-plan-1136.local/fhir/ActivityDefinition/155",
+      "definitionCanonical": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/155",
       "action": [
         {
           "extension": [
@@ -76,7 +76,7 @@ __Body__:
               }
             }
           ],
-          "definitionCanonical": "https://plan.cit-plan-1136.local/fhir/ActivityDefinition/156"
+          "definitionCanonical": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/156"
         }
       ]
     }
@@ -91,7 +91,7 @@ __Response__
   "id": "157",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-09-16T10:13:19.633+00:00",
+    "lastUpdated": "2022-10-10T14:17:25.550+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
     ]
@@ -103,7 +103,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-1136.local/fhir/Organization/81468"
+            "reference": "https://organization.cit-plan-1143.local/fhir/Organization/77086"
           }
         },
         {
@@ -123,11 +123,11 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
       "valueIdentifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:a2109624-b9df-4a6d-a5a9-8dfc64c53eac",
+        "value": "urn:uuid:71536d86-97a4-4cf0-b3e8-85fa6e3c5846",
         "assigner": {
           "identifier": {
             "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-            "value": "cit-plan-1136"
+            "value": "cit-plan-1143"
           }
         }
       }
@@ -136,14 +136,14 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
       "valueIdentifier": {
         "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-        "value": "cit-plan-1136"
+        "value": "cit-plan-1143"
       }
     }
   ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:10599775-e20f-4178-a661-c967cc4093ee"
+      "value": "urn:uuid:804cd707-0393-474d-8597-945034779bbb"
     }
   ],
   "version": "1.0",
@@ -163,7 +163,7 @@ __Response__
           }
         }
       ],
-      "definitionCanonical": "https://plan.cit-plan-1136.local/fhir/ActivityDefinition/155",
+      "definitionCanonical": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/155",
       "action": [
         {
           "extension": [
@@ -179,7 +179,7 @@ __Response__
               }
             }
           ],
-          "definitionCanonical": "https://plan.cit-plan-1136.local/fhir/ActivityDefinition/156"
+          "definitionCanonical": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/156"
         }
       ]
     }

@@ -1,9 +1,9 @@
-`GET [base]/QuestionnaireResponse/491/_history/1`
+`GET [base]/QuestionnaireResponse/534/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWI4YjVlMWItOWZkOS00OTdmLTk0YTAtZDJjN2I5OWZjMzUxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzE5M2MzMGEtOTZmYS00YmYwLWFiOWItOGI2ZDU4YWE4MzZhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "491",
+  "id": "534",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-09-16T09:59:43.771+00:00",
-    "source": "#3905a527-4d56-97",
+    "lastUpdated": "2022-10-11T13:07:11.101+00:00",
+    "source": "#cb266872-6309-95",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1477.local/fhir/EpisodeOfCare/26527"
+        "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/93458"
       }
     },
     {
@@ -54,17 +54,17 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1477.local/fhir/ServiceRequest/14091"
+      "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/97342"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1477.local/fhir/Questionnaire/26778",
+  "questionnaire": "https://questionnaire.cit-measurement-1521.local/fhir/Questionnaire/22900",
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/73751"
+    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/8176"
   },
-  "authored": "2022-09-16T09:59:43+00:00",
+  "authored": "2022-10-11T13:07:10+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1477.local/fhir/Patient/42417"
+    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/94979"
   }
 }
 ```

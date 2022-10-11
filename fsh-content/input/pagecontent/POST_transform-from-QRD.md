@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2022-09-16T10:17:22.380+00:00",
+        "date": "2022-10-11T10:10:09.353+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "98ba5c62-1018-472c-af97-5698ad966700",
+        "id": "ea07b4ce-7f2a-489e-a53d-be64d6583369",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
