@@ -1,5 +1,17 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
 ## 2.4.0 (2022-10-11)
 
 ### General changes
@@ -8,7 +20,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
-- Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system 
+- Added codesystem for tags: http://ehealth.sundhed.dk/cs/ehealth-system
 - Added "DI50: Hjertesvigt" concept to SKS CodeSystem
 - Moved "DZ76: Personer i kontakt med sundhedsvæsenet af andre årsager" to correct place in SKS CodeSystem hierarchi
 ### ValueSets
