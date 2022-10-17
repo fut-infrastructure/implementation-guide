@@ -118,7 +118,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Mangler grænseværdi påkrævet for automatisk behandling"
+          "value": "Opsætning af grænseværdi mangler, hvilket er nødvendig for at systemet kan foretage vurdering"
         }
       ]
     },
@@ -129,7 +129,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Grænseværdi påkrævet for automatisk behandling skal udbedres"
+          "value": "Grænseværdiopsætning er forkert og justering er nødvendig for at systemet kan foretage vurdering"
         }
       ]
     },
@@ -140,7 +140,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Mangler gældende referenceværdi påkrævet for automatisk behandling"
+          "value": "Der mangler en referenceværdi for at måledata (måling eller spørgeskemabesvarelse) kan vurderes af systemet"
         }
       ]
     },
@@ -151,7 +151,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Gældende referenceværdi påkrævet for automatisk behandling skal udbedres"
+          "value": "Referenceværdi er forkert og justering er nødvendig for at systemet kan foretage vurdering"
         }
       ]
     },
@@ -162,7 +162,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Mangler besvarelse af spørgsmål påkrævet for automatisk behandling"
+          "value": "Spørgsmål mangler besvarelse i spørgeskemabesvarelse for at vurdering af spørgeskemabesvarelse kan foretages af systemet"
         }
       ]
     },
@@ -184,7 +184,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Måling til vurdering, hvor triagering ikke er udført af automatiseret behandling"
+          "value": "Indsendte måledata (måling og/eller spørgeskemabesvarelse) er ikke vurderet af systemet. Du skal selv vurdere måledata."
         }
       ]
     }
