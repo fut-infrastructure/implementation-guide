@@ -41,7 +41,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Afklaring af årsag til manglende målinger"
+          "value": "Undersøg hvorfor der ikke er indsendt Måledata (måling og/eller spørgeskemabesvarelse)."
         }
       ]
     },
@@ -52,7 +52,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Uventet måling"
+          "value": "Undersøg hvorfor der uventet er indsendt Måledata (måling og/eller spørgeskemabesvarelse)."
         }
       ]
     },
@@ -63,7 +63,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Måling til vurdering"
+          "value": "Måledata (måling og/eller spørgeskemabesvarelse) er modtaget og klar til vurdering"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Vurdering af måling er fejlet under automatisk behandling"
+          "value": "Indsendte måledata (måling og/eller spørgeskemabesvarelse) kunne ikke vurderes af systemet. Du skal selv vurdere måledata."
         }
       ]
     },
