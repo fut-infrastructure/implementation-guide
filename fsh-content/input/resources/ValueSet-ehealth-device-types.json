@@ -24,6 +24,9 @@
   "compose": {
     "include": [
       {
+        "system": "http://ehealth.sundhed.dk/cs/device-types"
+      },
+      {
         "system": "http://snomed.info/sct",
         "concept": [
           {
