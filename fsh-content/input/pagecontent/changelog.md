@@ -12,6 +12,20 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+## 2.5.0 (2022-10-25)
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Updated http://ehealth.sundhed.dk/cs/task-category with new Danish descriptions.
+### ValueSets
+### ConceptMaps
+- Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement The map controls whether an activity shall be subjected to missing measurements checks or not.
+### Resource/profile changes
+
 ## 2.4.0 (2022-10-11)
 
 ### General changes
