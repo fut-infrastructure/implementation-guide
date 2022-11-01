@@ -19,5 +19,4 @@ Parent: CareTeam
 * managingOrganization ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
-* telecom.system from ehealth-contactpoint-system
 * telecom.value 1..1

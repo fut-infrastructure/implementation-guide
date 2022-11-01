@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- telecom.system valueset binding updated in CareTeam and Organization.
 
 ## 2.5.0 (2022-10-25)
 

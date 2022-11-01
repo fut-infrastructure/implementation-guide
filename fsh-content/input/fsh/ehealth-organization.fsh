@@ -11,7 +11,6 @@ Parent: Organization
 * extension contains ehealth-organization-relatedTo named relatedTo 0..*
 * identifier 1..*
 * name 1..1
-* telecom.system from ehealth-contactpoint-system
 * telecom.value 1..1
 * partOf only Reference(ehealth-organization)
 * partOf ^type.aggregation = #referenced
