@@ -51,7 +51,7 @@ podTemplate(label: label,
     }
 
     // deploy only the master branch
-    if (env.BRANCH_NAME == 'master') {
+    if (env.BRANCH_NAME == 'feature/searchparameter-patient-identifier') {
 
       stage ('generate documentation') {
         container('igpublisher') {
