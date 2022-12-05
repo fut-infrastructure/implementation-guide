@@ -55,6 +55,17 @@
           "value": "Adhoc"
         }
       ]
+    },
+    {
+      "code": "Extra",
+      "display": "Extra",
+      "definition": "Extra",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ekstra"
+        }
+      ]
     }
   ]
 }
