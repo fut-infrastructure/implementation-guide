@@ -79,6 +79,39 @@
       ]
     },
     {
+      "code": "red",
+      "display": "Red overall assessment",
+      "definition": "Overall assessment is red",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Samlet vurdering er rød"
+        }
+      ]
+    },
+    {
+      "code": "yellow",
+      "display": "Yellow overall assessment",
+      "definition": "Overall assessment is yellow",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Samlet vurdering er gul"
+        }
+      ]
+    },
+    {
+      "code": "green",
+      "display": "Green overall assessment",
+      "definition": "Overall assessment is green",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Samlet vurdering er grøn"
+        }
+      ]
+    },
+    {
       "code": "TBD",
       "display": "Example value - Under construction",
       "definition": "Example value - Under construction",
