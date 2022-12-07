@@ -8,7 +8,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/message-reasonCode
 ### ValueSets
+- Updated http://ehealth.sundhed.dk/vs/message-reasonCode to include http://ehealth.sundhed.dk/cs/message-reasonCode
 ### ConceptMaps
 ### Resource/profile changes
 - telecom.system valueset binding updated in CareTeam and Organization.

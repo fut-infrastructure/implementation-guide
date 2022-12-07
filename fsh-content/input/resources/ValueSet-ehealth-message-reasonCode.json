@@ -24,6 +24,9 @@
     "include": [
       {
         "system": "http://ehealth.sundhed.dk/cs/task-category"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/message-reasonCode"
       }
     ]
   }
