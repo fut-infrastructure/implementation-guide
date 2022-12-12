@@ -135,6 +135,56 @@
             ]
           }
         ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.1",
+        "concept": [
+          {
+            "code": "RAL",
+            "display": "Terapeutiske grænseværdier for RØD alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske grænseværdier for RØD alarm"
+              }
+            ]
+          },
+          {
+            "code": "GAL",
+            "display": "Terapeutiske grænseværdier for GUL alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske grænseværdier for GUL alarm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
+        "concept": [
+          {
+            "code": "RELRAL",
+            "display": "Terapeutic relative reference range for RED alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske relative grænseværdier for RØD alarm"
+              }
+            ]
+          },
+          {
+            "code": "RELGAL",
+            "display": "Terapeutic relative reference range for YELLOW alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske relative grænseværdier for GUL alarm"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
