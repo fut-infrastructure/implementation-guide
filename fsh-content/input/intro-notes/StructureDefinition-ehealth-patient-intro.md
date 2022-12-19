@@ -1,6 +1,6 @@
 # Introduction
 
-An ehealth-patient is a central entity, which is referenced by many other entities in the FUT infrastructure.
+An ehealth-patient is a central entity, which is referenced by many other entities in the FUT infrastructure. The ehealth-patient inherits characteristics from <https://hl7.dk/fhir/core/1.1.0/StructureDefinition-dk-core-patient.html>.
 
 # Scope and Usage
 
