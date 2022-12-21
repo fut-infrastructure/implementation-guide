@@ -1,10 +1,6 @@
 {
   "resourceType": "ConceptMap",
   "id": "activitydefinition-code-to-do-missing-measurement",
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Activitydefinition-code to do missing measurement</div>"
-  },
   "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement",
   "version": "2022-10-17T13:35:20",
   "name": "activitydefinition-code-to-do-missing-measurement",
