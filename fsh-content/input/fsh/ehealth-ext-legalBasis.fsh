@@ -3,4 +3,4 @@ Title:       "Legal basis"
 Description: "Legal basis"
 * . ^short = "Legal basis"
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-jurisdiction
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/jurisdiction

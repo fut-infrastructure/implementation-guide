@@ -8,7 +8,7 @@ Parent: Observation
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
-* code from ehealth-observation-codes
+* code from http://ehealth.sundhed.dk/vs/observation-codes
 * subject 1..1
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
@@ -19,7 +19,7 @@ Parent: Observation
 * value[x] only Quantity or CodeableConcept
 * device only Reference(ehealth-device)
 * device ^type.aggregation = #referenced
-* referenceRange.type from ehealth-reference-range-type
+* referenceRange.type from http://ehealth.sundhed.dk/vs/reference-range-type
 // not in r4: * related.target only Reference(ehealth-observation or ehealth-questionnaireresponse or Sequence)
-* component.code from ehealth-observation-codes
+* component.code from http://ehealth.sundhed.dk/vs/observation-codes
 * component.value[x] only Quantity or CodeableConcept

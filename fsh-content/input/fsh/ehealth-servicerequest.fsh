@@ -12,7 +12,7 @@ Parent: ServiceRequest
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
 * basedOn 0..0
 * replaces 0..0
-* code from ehealth-activitydefinition-code
+* code from http://ehealth.sundhed.dk/vs/activitydefinition-code
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
 * performer 0..1

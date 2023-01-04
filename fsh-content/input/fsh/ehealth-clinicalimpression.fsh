@@ -8,7 +8,6 @@ Parent: ClinicalImpression
 * extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * code 1..1
-* code from ehealth-clinicalimpression-codes
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
 * assessor only Reference(ehealth-practitioner)
@@ -20,7 +19,7 @@ Parent: ClinicalImpression
 * investigation.extension contains ehealth-clinicalimpression-viewInvestigationItem named viewInvestigationItem 0..*
 * investigation.item only Reference(ehealth-media or ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
 * investigation.item ^type.aggregation = #referenced
-* finding.itemCodeableConcept from ehealth-clinicalimpression-finding-codes
+* finding.itemCodeableConcept from http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 * finding.itemReference only Reference(Observation or ehealth-condition)
 * prognosisReference only Reference(RiskAssessment)
 * prognosisReference ^type.aggregation = #referenced
@@ -51,7 +50,7 @@ Title:       "Decision"
 Description: "Clinical impression decision, 'approved' or 'approved-for-sharing'"
 * . ^short = "approved | approved-for-sharing"
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-clinicalimpression-decision-codes
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes
 
 Extension:   ehealth-clinicalimpression-mediaInvestigationItem
 Title:       "Media investigation item"
@@ -80,7 +79,7 @@ Description: "Basis for the overall clinical impression finding of the questionn
 * extension[value].value[x] 1..1
 * extension[value].value[x] only decimal or integer or string or Coding or boolean
 * extension[value] ^short = "Value from questionnaire response"
-* extension[finding].valueCodeableConcept from ehealth-clinicalimpression-finding-codes
+* extension[finding].valueCodeableConcept from http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 * extension[finding] ^short = "What was found"
 * extension[linkId].value[x] only string
 * extension[linkId] ^short = "Unique id for item in questionnaire"

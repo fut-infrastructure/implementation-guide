@@ -8,7 +8,7 @@ Parent: DeviceUseStatement
 * source ^type.aggregation = #referenced
 * device only Reference(ehealth-device)
 * device only Reference(ehealth-device)
-// not in R4: * indication from ehealth-device-use-reason
+// not in R4: * indication from http://ehealth.sundhed.dk/vs/device-use-reason
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 

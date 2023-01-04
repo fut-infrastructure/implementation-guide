@@ -5,8 +5,8 @@ Parent: DeviceMetric
 * extension contains ehealth-devicemetric-qualities named qualities 1..1
 * extension contains ehealth-devicemetric-qualityHistory named qualitiyHistory 0..*
 * extension contains ehealth-devicemetric-templateQualities named templateQualities 3..3
-* type from ehealth-device-measurement-unit
-* unit from ehealth-device-measurement-unit
+* type from http://ehealth.sundhed.dk/vs/device-measurement-unit
+* unit from http://ehealth.sundhed.dk/vs/device-measurement-unit
 * source 1..1
 * source ^type.aggregation = #referenced
 * source only Reference(ehealth-device)
@@ -21,7 +21,7 @@ Description: "Properties of this device. Properties are static by nature whereas
     type 1..1 and
     value 1..1
 * extension[type].value[x] only CodeableConcept
-* extension[type].valueCodeableConcept from ehealth-devicemetric-property-types
+* extension[type].valueCodeableConcept from http://ehealth.sundhed.dk/vs/devicemetric-property-types
 * extension[value].value[x] 1..1
 * extension[value].value[x] only boolean or code or date or dateTime or decimal or integer or markdown or string or CodeableConcept or Quantity or Range
 
@@ -33,7 +33,7 @@ Description: "Current device quality"
     category 1..1 and
     value 0..1
 * extension[category].value[x] only CodeableConcept
-* extension[category].valueCodeableConcept from ehealth-devicemetric-quality-types
+* extension[category].valueCodeableConcept from http://ehealth.sundhed.dk/vs/devicemetric-quality-types
 * extension[value] 1..1
 * extension[value].value[x] only decimal or integer or CodeableConcept
 
@@ -47,7 +47,7 @@ Description: "History of device quality"
     period 1..1 and
     reason 0..1
 * extension[category].value[x] only CodeableConcept
-* extension[category].valueCodeableConcept from ehealth-devicemetric-quality-types
+* extension[category].valueCodeableConcept from http://ehealth.sundhed.dk/vs/devicemetric-quality-types
 * extension[value].value[x] only decimal or integer or CodeableConcept
 * extension[period].value[x] only Period
 * extension[reason].value[x] only string
@@ -60,7 +60,7 @@ Description: "Device quality default settings for an initial, a degraded, and an
     category 1..1 and
     value 1..1
 * extension[category].value[x] only CodeableConcept
-* extension[category].valueCodeableConcept from ehealth-devicemetric-quality-types
+* extension[category].valueCodeableConcept from http://ehealth.sundhed.dk/vs/devicemetric-quality-types
 * extension[value].value[x] only decimal or integer or CodeableConcept
 
 Extension:   ehealth-devicemetric-calibrationExpires

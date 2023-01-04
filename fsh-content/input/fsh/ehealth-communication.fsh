@@ -12,7 +12,7 @@ Parent: Communication
 * partOf only Reference(Resource)
 * partOf ^type.aggregation = #referenced
 * category 1..*
-* category from ehealth-communication-category
+* category from http://ehealth.sundhed.dk/vs/communication-category
 * subject 1..1
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced

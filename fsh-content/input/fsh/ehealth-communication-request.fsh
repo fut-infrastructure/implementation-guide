@@ -5,9 +5,9 @@ Parent: CommunicationRequest
 * extension[episodeOfCare] ^type.aggregation = #referenced
 // No ProcedureRequest in R4: * basedOn only Reference(ProcedureRequest)
 * basedOn 0..1
-* category from message-category
+* category from http://ehealth.sundhed.dk/vs/message-category
 * priority from http://hl7.org/fhir/ValueSet/request-priority
-* medium from message-medium
+* medium from http://ehealth.sundhed.dk/vs/message-medium
 * subject 1..1
 * subject only Reference(Patient)
 * recipient only Reference(Patient or CareTeam)

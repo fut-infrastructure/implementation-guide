@@ -22,7 +22,7 @@ Title:     "Ehealth action guidance type"
 Description: "The action guidance type"
 * . ^short = "The action guidance type"
 * value[x] only Coding
-* valueCoding from ehealth-action-guidance-types
+* valueCoding from http://ehealth.sundhed.dk/vs/action-guidance-types
 * valueCoding 1..1
 
 
@@ -35,7 +35,7 @@ Description: "Action guidance for"
     forReference 1..1
 * extension[forReference].valueReference 1..1
 * extension[forReference]. ^short = "What resource is this an action guide for"
-* extension[forType].valueCoding from ehealth-action-guidance-for-types
+* extension[forType].valueCoding from http://ehealth.sundhed.dk/vs/action-guidance-for-types
 * extension[forType].valueCoding 1..1
 * extension[forType]. ^short = "In type is stated what this is a reference to"
 

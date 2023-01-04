@@ -11,5 +11,5 @@ Description: "Provides guide for interpretation. Must have at least a low or a h
 * extension[high].value[x] only SimpleQuantity
 * extension[high].valueQuantity 1..1
 * extension[type].value[x] only CodeableConcept
-* extension[type].valueCodeableConcept from ehealth-reference-range-type
+* extension[type].valueCodeableConcept from http://ehealth.sundhed.dk/vs/reference-range-type
 * extension[type].valueCodeableConcept 1..1

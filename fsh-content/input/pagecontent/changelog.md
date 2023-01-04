@@ -3,12 +3,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
-
+- Change ValueSet bindings from id to url (FUT1-6050)
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/message-reasonCode
+- Change supplement link in v3-TimingEvent to R4 link: http://terminology.hl7.org/ValueSet/v3-TimingEvent (FUT1-7461) 
 ### ValueSets
 - Updated http://ehealth.sundhed.dk/vs/message-reasonCode to include http://ehealth.sundhed.dk/cs/message-reasonCode
 ### ConceptMaps

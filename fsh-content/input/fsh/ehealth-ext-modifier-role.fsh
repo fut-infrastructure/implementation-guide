@@ -9,5 +9,5 @@ Description: "This is a modifier role that can hold a role and a reference to th
 * extension[reference].valueReference ^type.aggregation = #referenced
 * extension[reference].valueReference 1..1
 * extension[role].value[x] only CodeableConcept
-* extension[role].valueCodeableConcept from ehealth-modifier-role
+* extension[role].valueCodeableConcept from http://ehealth.sundhed.dk/vs/modifier-role
 * extension[role].valueCodeableConcept 1..1

@@ -1,9 +1,9 @@
 Profile: ehealth-documentreference
 Id: ehealth-documentreference
 Parent: DocumentReference
-* type from ehealth-document-type
+* type from http://ehealth.sundhed.dk/vs/document-type
 * category 0..1
-* category from ehealth-document-class
+* category from http://ehealth.sundhed.dk/vs/document-class
 * subject only Reference(ehealth-patient or ehealth-practitioner or Group or ehealth-device)
 * subject ^type.aggregation = #referenced
 * author only Reference(ehealth-practitioner or ehealth-organization or ehealth-device or ehealth-patient or ehealth-relatedperson)
@@ -13,8 +13,8 @@ Parent: DocumentReference
 * custodian only Reference(ehealth-organization)
 * custodian ^type.aggregation = #referenced
 * relatesTo.target only Reference(ehealth-documentreference)
-* content.format from ehealth-format-codes
-* context.event from ehealth-event-type-codes
-* context.facilityType from ehealth-facility-type-codes
-* context.practiceSetting from ehealth-practice-setting-codes
+* content.format from http://ehealth.sundhed.dk/vs/format-codes
+* context.event from http://ehealth.sundhed.dk/vs/event-type-codes
+* context.facilityType from http://ehealth.sundhed.dk/vs/facility-type-codes
+* context.practiceSetting from http://ehealth.sundhed.dk/vs/practice-setting-codes
 * context.sourcePatientInfo only Reference(ehealth-patient)

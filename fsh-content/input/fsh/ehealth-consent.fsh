@@ -1,7 +1,7 @@
 Profile: ehealth-consent
 Id: ehealth-consent
 Parent: Consent
-* category from ehealth-consent-category
+* category from http://ehealth.sundhed.dk/vs/consent-category
 * patient 1..1
 * patient only Reference(ehealth-patient)
 * patient ^type.aggregation = #referenced

@@ -10,8 +10,8 @@ Parent: PlanDefinition
 * extension contains ehealth-base-environment named baseEnvironment 0..1
 
 * version 1..1
-* jurisdiction from ehealth-jurisdiction
-* topic from ehealth-topic-type
+* jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
+* topic from http://ehealth.sundhed.dk/vs/topic-type
 * library only Canonical(ehealth-library)
 * action.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 * action.definition[x] only Canonical(ehealth-activitydefinition or ehealth-plandefinition)

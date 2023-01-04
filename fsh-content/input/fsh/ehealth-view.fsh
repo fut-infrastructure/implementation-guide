@@ -22,7 +22,7 @@ Title:     "View type"
 Description: "Ehealth view type"
 * . ^short = "View type"
 * value[x] only Coding
-* valueCoding from ehealth-view-type
+* valueCoding from http://ehealth.sundhed.dk/vs/view-type
 * valueCoding 1..1
 
 
@@ -35,6 +35,6 @@ Description: "The valueset matching the view"
     forReference 1..1
 * extension[forReference].valueReference 1..1
 * extension[forReference]. ^short = "What resource is this a view for"
-* extension[forType].valueCoding from ehealth-view-for-type
+* extension[forType].valueCoding from http://ehealth.sundhed.dk/vs/view-for-type
 * extension[forType].valueCoding 1..1
 * extension[forType]. ^short = "In type is stated what this is a reference to"

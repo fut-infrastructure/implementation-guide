@@ -25,7 +25,7 @@ Parent: Communication
 * category 1..*
 * category contains DkTmCategory 1..1
 * category[DkTmCategory].coding.system = "http://ehealth.sundhed.dk/cs/message-category"
-* category[DkTmCategory].coding.code from message-category (required)
+* category[DkTmCategory].coding.code from http://ehealth.sundhed.dk/vs/message-category (required)
 
 * medium.coding.system 0..1
 * medium ^slicing.discriminator.type = #value
@@ -34,7 +34,7 @@ Parent: Communication
 * medium 0..*
 * medium contains DkTmMedium 0..1
 * medium[DkTmMedium].coding.system = "http://ehealth.sundhed.dk/cs/message-medium"
-* medium[DkTmMedium].coding.code from message-medium (required)
+* medium[DkTmMedium].coding.code from http://ehealth.sundhed.dk/vs/message-medium (required)
 
 * recipient 0..1
 * recipient only Reference(Patient or Practitioner)
@@ -42,7 +42,7 @@ Parent: Communication
 * sender only Reference(Device or Patient or Practitioner)
 * sender ^type.aggregation[+] = #referenced
 * sender ^type.aggregation[+] = #contained
-* reasonCode from ehealth-message-reasonCode
+* reasonCode from http://ehealth.sundhed.dk/vs/message-reasonCode
 * reasonReference only Reference(Condition or Observation)
 * reasonReference ^type.aggregation = #referenced
 
@@ -75,7 +75,7 @@ Title:     "Administrative status"
 Description: "The administrative status of how a message recipient has handled a message"
 * . ^short = "The administrative status of how a message recipient has handled a message"
 * value[x] only Coding
-* valueCoding from administrative-status
+* valueCoding from http://ehealth.sundhed.dk/vs/administrative-status
 * valueCoding 1..1
 
 Extension: ehealth-title
@@ -89,7 +89,7 @@ Title:     "Priority"
 Description: "The priority of a message"
 * . ^short = "The priority of a message"
 * value[x] only code
-* valueCode from ehealth-priority
+* valueCode from http://ehealth.sundhed.dk/vs/priority
 
 Extension: ehealth-on-behalf-of
 Title:     "On behalf of"

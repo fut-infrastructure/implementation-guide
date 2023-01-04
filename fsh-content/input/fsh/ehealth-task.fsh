@@ -31,7 +31,7 @@ Title:     "Task category"
 Description: "Category of task."
 * . ^short = "Category of task."
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-task-category
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/task-category
 * valueCodeableConcept 1..1
 
 Extension: ehealth-task-responsible

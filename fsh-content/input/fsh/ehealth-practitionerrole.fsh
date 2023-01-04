@@ -5,4 +5,4 @@ Parent: PractitionerRole
 * practitioner ^type.aggregation = #referenced
 * organization only Reference(ehealth-organization)
 * organization ^type.aggregation = #referenced
-* code from ehealth-careteam-participant-role
+* code from http://ehealth.sundhed.dk/vs/careteam-participant-role

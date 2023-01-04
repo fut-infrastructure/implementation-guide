@@ -14,7 +14,7 @@ Parent: Organization
 * telecom.value 1..1
 * partOf only Reference(ehealth-organization)
 * partOf ^type.aggregation = #referenced
-* type from ehealth-organization-type
+* type from http://ehealth.sundhed.dk/vs/organization-type
 * contact.telecom.extension contains ehealth-organization-telecomValue named telecomValue 1..1
 * contact.telecom.extension contains ehealth-organization-telecomSystem named telecomSystem 1..1
 * contact.telecom.extension contains ehealth-organization-telecomCustodian named telecomCustodian 1..1
@@ -33,7 +33,7 @@ Description: "Relations to other Organizations"
 * extension[target].value[x] only Reference(ehealth-organization)
 * extension[target].value[x] ^type.aggregation = #referenced
 * extension[relationType].value[x] only CodeableConcept
-* extension[relationType].valueCodeableConcept from ehealth-organization-relation-type
+* extension[relationType].valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-relation-type
 * extension[period].value[x] only Period
 
 Extension:   ehealth-organization-cvrNumber
@@ -77,14 +77,14 @@ Description: "The source of the organization"
 * . ^short = "The organization's source"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
-* valueCodeableConcept from ehealth-organization-source
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-source
 
 Extension:   ehealth-organization-telecomSystem
 Title:       "Telecom System"
 Description: "Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other"
 * . ^short = "Type of communications system required to make use of the contact point: phone | fax | email | pager | url | sms | ean | other"
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-contactpoint-system
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/contactpoint-system
 * valueCodeableConcept 1..1
 
 Extension:   ehealth-organization-telecomCustodian
@@ -93,7 +93,7 @@ Description: "Custodian of this ContactPoint."
 * . ^short = "The custodian that maintains the contact point: SOR | ORG | MAN"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
-* valueCodeableConcept from ehealth-contactpoint-custodian
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/contactpoint-custodian
 
 Extension:   ehealth-organization-synchronizationStatus
 Title:       "Organization Synchronization status"
@@ -101,7 +101,7 @@ Description: "The synchronization status of the organization"
 * . ^short = "The organization's synchronization status"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
-* valueCodeableConcept from ehealth-organization-synchronization-status
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-synchronization-status
 
 Extension:   ehealth-organization-specialty
 Title:       "Organization specialty"
@@ -109,7 +109,7 @@ Description: "The specialty of the organization"
 * . ^short = "The organization's specialty"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
-* valueCodeableConcept from ehealth-organization-specialty
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-specialty
 
 
 

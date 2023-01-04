@@ -14,9 +14,9 @@ Parent: Appointment
 * extension contains ehealth-registration-deadline named registrationDeadline 0..1
 * extension[ehealth-legalBasis] obeys governance-1 and responsible-2
 * appointmentType 1..1
-* appointmentType from appointmenttype-codes
+* appointmentType from http://ehealth.sundhed.dk/vs/appointmenttype-codes
 * reasonCode 0..1
-* reasonCode from ehealth-appointment-reason
+* reasonCode from http://ehealth.sundhed.dk/vs/appointment-reason
 * supportingInformation only Reference(ehealth-episodeofcare or ehealth-careplan)
 * supportingInformation ^type.aggregation = #referenced
 * supportingInformation 0..1
@@ -30,7 +30,7 @@ Parent: Appointment
 * serviceType ^slicing.discriminator.path = "coding.code"
 * serviceType ^slicing.rules = #open
 * serviceType contains appointmentType 1..1
-* serviceType[appointmentType].coding from ehealth-appointment-servicetype
+* serviceType[appointmentType].coding from http://ehealth.sundhed.dk/vs/appointment-servicetype
 * serviceType[appointmentType].coding.code = #group (exactly)
 
 Instance: group-appointment01

@@ -17,7 +17,7 @@ Parent: CarePlan
 * partOf 0..1
 * status from http://hl7.org/fhir/ValueSet/request-status
 * intent only code
-* category from ehealth-careplan-category
+* category from http://ehealth.sundhed.dk/vs/careplan-category
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
 // * context only Reference(ehealth-episodeofcare) not in R4

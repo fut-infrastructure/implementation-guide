@@ -2,8 +2,8 @@ Profile: ehealth-composition
 Id: ehealth-composition
 Parent: Composition
 * extension contains ehealth-composition-authorOrganization named authorOrganization 0..*
-* type from ehealth-document-type
-* category from ehealth-document-class
+* type from http://ehealth.sundhed.dk/vs/document-type
+* category from http://ehealth.sundhed.dk/vs/document-class
 * category 0..1
 * subject 1..1
 * subject only Reference(Resource)
@@ -17,7 +17,7 @@ Parent: Composition
 * custodian ^type.aggregation[+] = #contained
 * relatesTo.targetIdentifier only Identifier
 * relatesTo.targetReference only Reference(ehealth-composition)
-* event.code from ehealth-event-type-codes
+* event.code from http://ehealth.sundhed.dk/vs/event-type-codes
 
 Extension: ehealth-composition-authorOrganization
 Title: "Author organization"

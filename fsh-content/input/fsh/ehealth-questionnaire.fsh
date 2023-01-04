@@ -14,7 +14,7 @@ Parent: Questionnaire
 * extension contains ehealth-base-environment named baseEnvironment 0..1
 
 * version 1..1
-* jurisdiction from ehealth-jurisdiction
+* jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
@@ -37,7 +37,7 @@ Title:     "Questionnaire recommendation"
 Description: "Defines the recommendation state of the questionnaire."
 * . ^short = "Degree to which this questionnaire is recommended for use."
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-questionnaire-recommendation
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-recommendation
 * valueCodeableConcept 1..1
 
 Extension: ehealth-questionnaire-intendedOrganization
@@ -53,7 +53,7 @@ Title:     "Questionnaire type"
 Description: "Concept that represents the overall questionnaire"
 * . ^short = "Concept that represents the overall questionnaire"
 * value[x] only CodeableConcept
-* valueCodeableConcept from ehealth-questionnaire-types
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-types
 * valueCodeableConcept 1..1
 
 Extension: ehealth-questionnaire-feedback

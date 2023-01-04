@@ -13,11 +13,11 @@ Parent: ActivityDefinition
 * extension contains ehealth-base named base 0..1
 * extension contains ehealth-base-environment named baseEnvironment 0..1
 * version 1..1
-* jurisdiction from ehealth-jurisdiction
-* topic from ehealth-topic-type
+* jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
+* topic from http://ehealth.sundhed.dk/vs/topic-type
 * topic 1..1
 * library only Canonical(ehealth-library)
-* code from ehealth-activitydefinition-code
+* code from http://ehealth.sundhed.dk/vs/activitydefinition-code
 * code 1..1
 * location only Reference(Location)
 * location ^type.aggregation = #referenced

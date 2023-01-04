@@ -14,5 +14,5 @@ Description: "Resolved timing reflects whether a measurement (Observation, Quest
 * extension[end].value[x] only dateTime
 * extension[end].valueDateTime 1..1
 * extension[type].value[x] only CodeableConcept
-* extension[type].valueCodeableConcept from resolved-timing-type
+* extension[type].valueCodeableConcept from http://ehealth.sundhed.dk/vs/resolved-timing-type
 * extension[type].valueCodeableConcept 1..1

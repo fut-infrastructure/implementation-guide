@@ -50,9 +50,9 @@ Description: ""
     score 0..* and
     description 0..*
 * extension[deviceType].value[x] only Coding
-* extension[deviceType].valueCoding from ehealth-device-types
+* extension[deviceType].valueCoding from http://ehealth.sundhed.dk/vs/device-types
 * extension[score].value[x] only CodeableConcept
-* extension[score].valueCodeableConcept from competence-percentage-codes
+* extension[score].valueCodeableConcept from http://ehealth.sundhed.dk/vs/itcompetencelevel-codes
 * extension[description].value[x] only string
 
 Extension: patient-interpreterRequired
