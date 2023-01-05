@@ -1,53 +1,45 @@
 # Introduction
-The CommunicationRequest resource allows for change in the way eHealth automated processing creates Communication (of profile `ehealth-message`) as a result of a submitted measurement or lack thereof for a particular Patient and context.
+The CommunicationRequest resource allows for changes in the way the eHealth Infrastructure creates Communications (of profile `ehealth-message`).
 
 # Scope and Usage
-In the eHealth Infrastructure, automated processing generates Communication (of profile `ehealth-message`) in the following cases:
+The eHealth Infrastructure generates Communications (of profile `ehealth-message`) in the following cases:
 
 * Automated processing has been performed on a submitted measurement - whether zero, one or more Communication are created depends on the automated processing rules involved.
 * A measurement is missing, that is, expected measurement has not been submitted
-* A measurement has been submitted at unexpected time
+* A measurement has been submitted at an unexpected time
+* A reminder that a measurement is expected to be submitted
+* A CarePlan or EpisodeOfCare has been created or updated
+* A reminder that an order in the SSL domain is to be delivered (requires additional configuration in the SSL Contract)
 
-By default, the Communication is created with recipient set to the one or more CareTeam associated with the CarePlan referencing the ServiceRequest for which the measurement was made.
+The default behaviour and controllability for the different Communication scenarios differ. An overview of how to control the different Communication generation can be found [here](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/2415034369/Controlling+Creation+of+Messages).
 
-The CommunicationRequest is used to customize how and when Communications are created by automated processing:
+The CommunicationRequest is used to customize how and when Communications are created by the infrastructure:
 
-* For a CareTeam, the CommunicationRequest specifies suppression of setting the CareTeam as recipient of Communication
-* For a Patient, the CommunicationRequest specifies additional creation of Communication with the Patient as recipient
+* CommunicationRequest can in some scenarios specify suppression of a specific Communication for CareTeams and/or Patients
+* CommunicationRequest can in some scenarios specify overriding of medium and/or payload for Patient Communications
 
-If multiple CommunicationRequests for the same recipient are found, then only the newest is considered valid.
+If multiple CommunicationRequests for the same recipient are found, the newest active is considered. If multiple CommunicationRequests are found for with the same timestamp, any CommunicationRequest with `doNotPerform` = true is prioritized.
 
-## Suppression of setting a CareTeam as recipient in Communication
+## Suppression of Communications
 
-When automated processing creates Communication about a specific ServiceRequest and Patient, the CareTeam is not set as recipient when a CommunicationRequest exists where:
+When the infrastructure by default creates Communication for either a Patient or CareTeam, it is possible to suppress:
 
-* `basedOn` references the ServiceRequest
-* `recipient` references the CareTeam
-* `reasonCode` matches the Communication reasonCode (of the Communication created for CareTeam).
-* `priority` matches the Task priority (of the Task created for CareTeam).
-* `status` is 'suspended'
-
-Setting the `status` to any other value than 'suspended' disables the specified suppression of Communication with the CareTeam as recipient. The Communication is created with recipient set as the 
-remaining one or more CareTeam referenced from the CarePlan referencing the ServiceRequest. In case no remaining CareTeam are referenced from the CarePlan, no Communication is created.
-
-## Creation of Communication with Patient as recipient
-
-When automated processing creates Communication about a specific ServiceRequest and Patient, additional Communication with the Patient as 
-recipient is created if a CommunicationRequest exists where:
-
-* `basedOn` references the ServiceRequest
-* `recipient` references the Patient
-* `reasonCode` matches the Communication reasonCode (of the Communication created for CareTeam).
-* `priority` matches the Task priority (of the Task created for CareTeam).
+* `doNotPerform` is set to true
 * `status` is 'active'
+* `occurrence` is of type Period and time of Communication creation is within the defined Period
+* `recipient` references the recipient (CareTeam / Patient)
+* `reasonCode` matches the Communication reasonCode (of the Communication being suppressed).
+* `basedOn` references the ServiceRequest
+* `episodeOfCare` references the EpisodeOfCare
 
-Setting the `status` to 'suspended' disables the specified creation of Communication with the Patient as recipient.
+Updating `doNotPerform` to false or removing the attribute disables the specified suppression of the Communication.
 
 ## Override medium and payload
 
-It is possible to use CommunicationRequest to override some default values of the Communication: 
-* `medium` of the Communication (created for the Patient or Careteam) overrides the Communication medium (of the Communication created for CareTeam).
-* `payload` of the Communication (created for the Patient) overrides the Communication payload (of the Communication created for CareTeam).
+In some scenarios it is possible to use CommunicationRequest to override some default values of the Communication: 
+
+* `medium` overrides the Communication medium.
+* `payload` overrides the Communication payload.
 
 # Boundaries and Relationships
-A CommunicationRequest is related to Communication (`ehealth-message`), Task (`ehealth-task`), and ServiceRequest (`ehealth-serviceRequest`).
+A CommunicationRequest is related to Communication (`ehealth-message`), EpisodeOfCare (`ehealth-episode-of-care`) and in some cases ServiceRequest (`ehealth-serviceRequest`).
