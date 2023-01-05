@@ -4,6 +4,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 - Change ValueSet bindings from id to url (FUT1-6050)
+- Fix broken SearchParameter links in patient CapabilityStatement
 ### Custom operations
 #### System operations
 #### Instance operations
