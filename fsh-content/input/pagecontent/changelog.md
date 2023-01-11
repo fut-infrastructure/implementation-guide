@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2.6.0 (2023-01-16)
 
 ### General changes
 - Change ValueSet bindings from id to url (FUT1-6050)
