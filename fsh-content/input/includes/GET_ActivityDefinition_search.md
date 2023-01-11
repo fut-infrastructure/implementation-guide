@@ -1,4 +1,4 @@
-`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=41b8a206-504f-4a50-b5de-7abdb7e9e9b3`
+`GET [base]/ActivityDefinition?recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD&name=4f84c620-6a48-461c-9a15-71ff3c0f14ba`
 
 __Header__
 ```
@@ -6,7 +6,7 @@ Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 Cache-Control: no-cache
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -16,28 +16,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "2939ef46-31f6-416d-8ed7-4986a96af556",
+  "id": "242489d9-9e52-45d8-8e00-f3095c110e3d",
   "meta": {
-    "lastUpdated": "2022-10-10T14:19:57.693+00:00"
+    "lastUpdated": "2023-01-06T09:19:00.133+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition?_format=json&_pretty=true&name=41b8a206-504f-4a50-b5de-7abdb7e9e9b3&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
+      "url": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition?_format=json&_pretty=true&name=4f84c620-6a48-461c-9a15-71ff3c0f14ba&recommendation=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fplandefinition-recommendation%7CTBD"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/353",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition/353",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "353",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:19:57.473+00:00",
-          "source": "#dc2fcb43-86f8-92",
+          "lastUpdated": "2023-01-06T09:18:59.938+00:00",
+          "source": "#c4eb864a-b5f3-96",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -71,7 +71,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1143.local/fhir/Organization/89864"
+                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/93144"
                 }
               },
               {
@@ -89,7 +89,7 @@ __Response__
           }
         ],
         "version": "1.0",
-        "name": "41b8a206-504f-4a50-b5de-7abdb7e9e9b3",
+        "name": "4f84c620-6a48-461c-9a15-71ff3c0f14ba",
         "status": "active",
         "topic": [
           {
@@ -115,14 +115,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/354",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition/354",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "354",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:19:57.601+00:00",
-          "source": "#b80dd2ed-09c5-9e",
+          "lastUpdated": "2023-01-06T09:19:00.043+00:00",
+          "source": "#dee569fb-2519-97",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -156,7 +156,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1143.local/fhir/Organization/66587"
+                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/31612"
                 }
               },
               {
@@ -174,7 +174,7 @@ __Response__
           }
         ],
         "version": "1.0",
-        "name": "41b8a206-504f-4a50-b5de-7abdb7e9e9b3",
+        "name": "4f84c620-6a48-461c-9a15-71ff3c0f14ba",
         "status": "active",
         "topic": [
           {

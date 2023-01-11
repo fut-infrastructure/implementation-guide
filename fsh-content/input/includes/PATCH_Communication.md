@@ -1,11 +1,11 @@
-`PATCH [base]/Communication/124`
+`PATCH [base]/Communication/102`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTE1MjEubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNDE4MjMiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xNTIxLmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS8xNjIwIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtbWVhc3VyZW1lbnQtMTUyMS5sb2NhbC9maGlyL1BhdGllbnQvNzExMjEiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTE1OTUubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMTgzNzAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvbi5yZWFkIiwiQ29tbXVuaWNhdGlvbi5wYXRjaCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0xNTk1LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS80NDM4OCIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LW1lYXN1cmVtZW50LTE1OTUubG9jYWwvZmhpci9QYXRpZW50LzY0MjM1IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/json-patch+json; charset=UTF-8
 ```
@@ -25,11 +25,11 @@ __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "124",
+  "id": "102",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-11T13:03:47.683+00:00",
-    "source": "#697b71d3-44a1-9f",
+    "lastUpdated": "2023-01-06T09:12:35.096+00:00",
+    "source": "#255a11c0-76d0-98",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -38,7 +38,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/1620"
+        "reference": "https://careplan.cit-measurement-1595.local/fhir/EpisodeOfCare/44388"
       }
     },
     {
@@ -65,7 +65,7 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/71121"
+    "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/64235"
   },
   "topic": {
     "coding": [
@@ -76,7 +76,7 @@ __Response__
     ]
   },
   "sender": {
-    "reference": "https://organization.cit-measurement-1521.local/fhir/Practitioner/41823"
+    "reference": "https://organization.cit-measurement-1595.local/fhir/Practitioner/18370"
   }
 }
 ```

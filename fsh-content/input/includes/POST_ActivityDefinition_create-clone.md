@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXBsYW4tMTE0My5sb2NhbC9maGlyL1ByYWN0aXRpb25lci82ODM1OCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiUXVlc3Rpb25uYWlyZS5jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UucmVhZCIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXBsYW4tMTE0My5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi8zNDk2MiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXBsYW4tMTE5MS5sb2NhbC9maGlyL1ByYWN0aXRpb25lci80NDU1MSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnJlYWQiLCJEb2N1bWVudFJlZmVyZW5jZS5jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2Uuc2VhcmNoIiwiRG9jdW1lbnRSZWZlcmVuY2UucmVhZCIsIkFjdGl2aXR5RGVmaW5pdGlvbi5zZWFyY2giXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXBsYW4tMTE5MS5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi81ODAwOCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -29,19 +29,19 @@ __Body__:
     {
       "name": "deep-clone-references",
       "valueReference": {
-        "reference": "https://plan.cit-plan-1143.local/fhir/DocumentReference/320"
+        "reference": "https://plan.cit-plan-1191.local/fhir/DocumentReference/320"
       }
     },
     {
       "name": "deep-clone-references",
       "valueReference": {
-        "reference": "https://plan.cit-plan-1143.local/fhir/DocumentReference/321"
+        "reference": "https://plan.cit-plan-1191.local/fhir/DocumentReference/321"
       }
     },
     {
       "name": "deep-clone-references",
       "valueReference": {
-        "reference": "https://questionnaire.cit-plan-1143.local/fhir/Questionnaire/42111"
+        "reference": "https://questionnaire.cit-plan-1191.local/fhir/Questionnaire/35398"
       }
     }
   ]
@@ -55,10 +55,10 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/https://questionnaire.cit-plan-1143.local/fhir/Questionnaire/42046",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/https://questionnaire.cit-plan-1191.local/fhir/Questionnaire/14048",
       "resource": {
         "resourceType": "Questionnaire",
-        "id": "42046",
+        "id": "14048",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
@@ -82,7 +82,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1143.local/fhir/Organization/48030"
+                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/68237"
                 }
               },
               {
@@ -102,11 +102,11 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:7ee27d73-809d-447b-8aaf-86eb09c7b297",
+              "value": "urn:uuid:5f797295-6200-41f2-9a27-f74e78ea1be6",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "cit-plan-1143"
+                  "value": "cit-plan-1191"
                 }
               }
             }
@@ -115,11 +115,11 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:8961d0c4-f4a5-42b9-9121-225626f364e2",
+              "value": "urn:uuid:514461eb-bb3b-460e-b53a-23cb18806c2c",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "cit-plan-1143"
+                  "value": "cit-plan-1191"
                 }
               }
             }
@@ -128,30 +128,30 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
             "valueIdentifier": {
               "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-              "value": "cit-plan-1143"
+              "value": "cit-plan-1191"
             }
           }
         ],
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:24716ff7-ac6a-496d-b470-7ea26d00ef41"
+            "value": "urn:uuid:86102e0a-d242-4d1a-84e2-0797eb771661"
           }
         ],
         "version": "1.0",
-        "name": "64cd78ce-2aa0-4794-8f6d-f8cdb9015f31",
+        "name": "f0001e23-eb92-47cc-8a22-0075f0c4f8be",
         "status": "active"
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/DocumentReference/323",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/DocumentReference/323",
       "resource": {
         "resourceType": "DocumentReference",
         "id": "323",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:19:46.795+00:00",
-          "source": "#a1cbc713-bac7-9c",
+          "lastUpdated": "2023-01-06T09:18:50.577+00:00",
+          "source": "#9468ceed-ae4d-93",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -165,7 +165,7 @@ __Response__
             }
           ]
         },
-        "date": "2022-10-10T14:19:45.435+00:00",
+        "date": "2023-01-06T09:18:49.962+00:00",
         "content": [
           {
             "attachment": {
@@ -176,14 +176,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/DocumentReference/324",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/DocumentReference/324",
       "resource": {
         "resourceType": "DocumentReference",
         "id": "324",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:19:46.828+00:00",
-          "source": "#b7315b5a-cc74-99",
+          "lastUpdated": "2023-01-06T09:18:50.584+00:00",
+          "source": "#066bb5ef-6c64-9a",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -197,7 +197,7 @@ __Response__
             }
           ]
         },
-        "date": "2022-10-10T14:19:45.540+00:00",
+        "date": "2023-01-06T09:18:50.052+00:00",
         "content": [
           {
             "attachment": {
@@ -208,14 +208,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1143.local/fhir/ActivityDefinition/325",
+      "fullUrl": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition/325",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "325",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:19:46.859+00:00",
-          "source": "#0d4140d8-3a37-91",
+          "lastUpdated": "2023-01-06T09:18:50.591+00:00",
+          "source": "#be499e3d-c536-95",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -238,7 +238,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1143.local/fhir/Organization/34962"
+                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/58008"
                 }
               },
               {
@@ -258,11 +258,11 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:d9308f39-c600-4708-b9ba-5955a6457c23",
+              "value": "urn:uuid:4b6117ce-bcd0-496e-b35d-f3708055dacb",
               "assigner": {
                 "identifier": {
                   "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-                  "value": "cit-plan-1143"
+                  "value": "cit-plan-1191"
                 }
               }
             }
@@ -271,25 +271,25 @@ __Response__
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-predecessor",
             "valueIdentifier": {
               "system": "urn:ietf:rfc:3986",
-              "value": "urn:uuid:342f1854-e2e4-4895-a037-3fcc42276a6b"
+              "value": "urn:uuid:21f128c4-7daa-4b2f-b1f5-464d2ef901e1"
             }
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
             "valueIdentifier": {
               "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-              "value": "cit-plan-1143"
+              "value": "cit-plan-1191"
             }
           }
         ],
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:2e605d51-d656-4bc5-91f7-6f7652c426bb"
+            "value": "urn:uuid:95c4a3bf-1b1e-4c5f-a789-e54be9c9990c"
           }
         ],
         "version": "2.5",
-        "name": "f9497c61-c646-4bff-b2dc-45c0311fedad",
+        "name": "43975dd8-6a8e-472b-b1ec-67d3e86d0705",
         "status": "draft",
         "topic": [
           {
@@ -304,15 +304,15 @@ __Response__
         "relatedArtifact": [
           {
             "type": "documentation",
-            "resource": "https://plan.cit-plan-1143.local/fhir/https://questionnaire.cit-plan-1143.local/fhir/Questionnaire/42046"
+            "resource": "https://plan.cit-plan-1191.local/fhir/https://questionnaire.cit-plan-1191.local/fhir/Questionnaire/14048"
           },
           {
             "type": "documentation",
-            "resource": "https://plan.cit-plan-1143.local/fhir/DocumentReference/323/_history/1"
+            "resource": "https://plan.cit-plan-1191.local/fhir/DocumentReference/323/_history/1"
           },
           {
             "type": "documentation",
-            "resource": "https://plan.cit-plan-1143.local/fhir/DocumentReference/324/_history/1"
+            "resource": "https://plan.cit-plan-1191.local/fhir/DocumentReference/324/_history/1"
           }
         ],
         "code": {

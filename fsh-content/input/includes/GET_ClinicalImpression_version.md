@@ -1,11 +1,11 @@
-`GET [base]/ClinicalImpression/282/_history/2`
+`GET [base]/ClinicalImpression/302/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnBhdGNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiLCJDbGluaWNhbEltcHJlc3Npb24uY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "282",
+  "id": "302",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-10T14:02:22.366+00:00",
-    "source": "#bbca9a1f-1b69-9c",
+    "lastUpdated": "2023-01-06T08:27:08.822+00:00",
+    "source": "#b7dd3b1b-c2db-93",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1504.local/fhir/EpisodeOfCare/30976"
+        "reference": "https://careplan.cit-task-1577.local/fhir/EpisodeOfCare/60834"
       }
     },
     {
@@ -53,7 +53,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1504.local/fhir/Patient/59540"
+    "reference": "https://patient.cit-task-1577.local/fhir/Patient/13945"
   }
 }
 ```

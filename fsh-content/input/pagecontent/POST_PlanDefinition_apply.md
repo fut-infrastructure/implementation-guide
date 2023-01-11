@@ -1,11 +1,11 @@
-`POST [base]/PlanDefinition/45/$apply`
+`POST [base]/PlanDefinition/91/$apply`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODM4NmMyMjQtMTZkYi00M2EyLWFkYTAtMzI2Y2Q5OThjNTI5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uJGFwcGx5Il19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTExNDMubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vNDQzNDMiLCJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcGxhbi0xMTQzLmxvY2FsL2ZoaXIvQ2FyZVRlYW0vOTcxMjIiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1wbGFuLTExNDMubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzY1MjQiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1wbGFuLTExNDMubG9jYWwvZmhpci9QYXRpZW50Lzc1MTUzIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjYyNmZkZGItNTJmMy00NDJjLTlhMjUtN2ExZDljYzBjNmEwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlBsYW5EZWZpbml0aW9uJGFwcGx5Il19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTExOTEubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vNTc1MDYiLCJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcGxhbi0xMTkxLmxvY2FsL2ZoaXIvQ2FyZVRlYW0vMzA2NTciLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1wbGFuLTExOTEubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzQyMzI2IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtcGxhbi0xMTkxLmxvY2FsL2ZoaXIvUGF0aWVudC83NzA5NSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-plan-1143.local/fhir/EpisodeOfCare/6524"
+        "reference": "https://careplan.cit-plan-1191.local/fhir/EpisodeOfCare/42326"
       }
     }
   ]
@@ -29,7 +29,7 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "56406",
+  "id": "80297",
   "meta": {
     "versionId": "1",
     "profile": [
@@ -40,12 +40,12 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-plan-1143.local/fhir/EpisodeOfCare/93791"
+        "reference": "https://careplan.cit-plan-1191.local/fhir/EpisodeOfCare/43948"
       }
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-plan-1143.local/fhir/PlanDefinition/46/_history/1"
+    "https://plan.cit-plan-1191.local/fhir/PlanDefinition/92/_history/1"
   ],
   "status": "draft",
   "intent": "option",
@@ -60,7 +60,7 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-plan-1143.local/fhir/Patient/56565"
+    "reference": "https://patient.cit-plan-1191.local/fhir/Patient/32003"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
@@ -68,7 +68,7 @@ __Response__
   },
   "addresses": [
     {
-      "reference": "https://careplan.cit-plan-1143.local/fhir/Condition/43793"
+      "reference": "https://careplan.cit-plan-1191.local/fhir/Condition/21560"
     }
   ]
 }

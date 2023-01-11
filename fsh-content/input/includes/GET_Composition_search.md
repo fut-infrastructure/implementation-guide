@@ -1,11 +1,11 @@
-`GET [base]/Composition?title=1d87301a-251a-49ac-80f1-8858d559a981`
+`GET [base]/Composition?title=6921eb75-91bd-449e-83a0-c1b50576106d`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "56c03776-1444-4f5d-916a-69efa4566a2b",
+  "id": "7d907e71-debe-4bc9-8aa6-12d799b01f5b",
   "meta": {
-    "lastUpdated": "2022-10-11T10:17:31.140+00:00"
+    "lastUpdated": "2023-01-06T09:01:07.122+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://document-transformation.cit-document-transformation-1352.local/fhir/Composition?_format=json&_pretty=true&title=1d87301a-251a-49ac-80f1-8858d559a981"
+      "url": "https://document-transformation.cit-document-transformation-1419.local/fhir/Composition?_format=json&_pretty=true&title=6921eb75-91bd-449e-83a0-c1b50576106d"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1352.local/fhir/Composition/84",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1419.local/fhir/Composition/84",
       "resource": {
         "resourceType": "Composition",
         "id": "84",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-11T10:17:30.478+00:00",
-          "source": "#cad81050-b4ee-9f",
+          "lastUpdated": "2023-01-06T09:01:06.273+00:00",
+          "source": "#baad9356-3707-95",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -79,7 +79,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1352.local/fhir/Organization/6801"
+              "reference": "https://organization.cit-document-transformation-1419.local/fhir/Organization/4598"
             }
           },
           {
@@ -92,7 +92,7 @@ __Response__
             },
             "name": [
               {
-                "family": "83a2ab3c-5fbf-4911-a1f0-67725d43d678"
+                "family": "e3d64b2e-aece-4f04-a53d-951549f1b383"
               }
             ]
           }
@@ -109,27 +109,27 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2022-10-11T10:17:30+00:00",
+        "date": "2023-01-06T09:01:06+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "1d87301a-251a-49ac-80f1-8858d559a981"
+        "title": "6921eb75-91bd-449e-83a0-c1b50576106d"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://document-transformation.cit-document-transformation-1352.local/fhir/Composition/85",
+      "fullUrl": "https://document-transformation.cit-document-transformation-1419.local/fhir/Composition/85",
       "resource": {
         "resourceType": "Composition",
         "id": "85",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-11T10:17:30.690+00:00",
-          "source": "#a1264b03-dff5-98",
+          "lastUpdated": "2023-01-06T09:01:06.554+00:00",
+          "source": "#b7f7f58e-f387-97",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
           ]
@@ -172,7 +172,7 @@ __Response__
               }
             ],
             "managingOrganization": {
-              "reference": "https://organization.cit-document-transformation-1352.local/fhir/Organization/53023"
+              "reference": "https://organization.cit-document-transformation-1419.local/fhir/Organization/80286"
             }
           },
           {
@@ -185,7 +185,7 @@ __Response__
             },
             "name": [
               {
-                "family": "c1f19799-9785-4153-9256-7f9fbdf701d0"
+                "family": "a1e974d6-341f-4150-8212-03502d3ffb8d"
               }
             ]
           }
@@ -202,13 +202,13 @@ __Response__
         "subject": {
           "reference": "#1"
         },
-        "date": "2022-10-11T10:17:30+00:00",
+        "date": "2023-01-06T09:01:06+00:00",
         "author": [
           {
             "reference": "#2"
           }
         ],
-        "title": "1d87301a-251a-49ac-80f1-8858d559a981"
+        "title": "6921eb75-91bd-449e-83a0-c1b50576106d"
       },
       "search": {
         "mode": "match"

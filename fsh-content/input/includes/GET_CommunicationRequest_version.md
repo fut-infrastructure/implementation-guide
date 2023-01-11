@@ -1,11 +1,11 @@
-`GET [base]/CommunicationRequest/2149/_history/2`
+`GET [base]/CommunicationRequest/2055/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3Quc2VhcmNoIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuZGVsZXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2149",
+  "id": "2055",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-10T15:05:05.027+00:00",
-    "source": "#8452236e-eca3-92",
+    "lastUpdated": "2023-01-06T09:01:18.971+00:00",
+    "source": "#0fe35955-27c1-97",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -28,18 +28,18 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/2147"
+        "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/2053"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2135.local/fhir/ServiceRequest/2148"
+      "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/2054"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/45751"
+    "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/91757"
   }
 }
 ```

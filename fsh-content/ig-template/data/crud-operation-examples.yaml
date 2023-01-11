@@ -82,6 +82,9 @@
 
 # ehealth-clinicalimpression
 - profile: ehealth-clinicalimpression
+  path: GET_ClinicalImpression.md
+
+- profile: ehealth-clinicalimpression
   path: GET_ClinicalImpression_search.md
 
 - profile: ehealth-clinicalimpression

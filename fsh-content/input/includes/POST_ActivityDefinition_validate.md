@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,7 +22,7 @@ __Body__:
         "id": "365",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:20:08.488+00:00",
+          "lastUpdated": "2023-01-06T09:19:10.487+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -45,7 +45,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1143.local/fhir/Organization/99485"
+                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/50443"
                 }
               },
               {
@@ -63,7 +63,7 @@ __Body__:
           }
         ],
         "version": "1.0",
-        "name": "6025969d-dcea-42e8-acde-971e409ddcfc",
+        "name": "388a867e-2644-412b-ae8c-bec7d83f4b40",
         "status": "active",
         "topic": [
           {
@@ -95,13 +95,21 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
   },
   "issue": [
     {
       "severity": "warning",
       "code": "processing",
-      "diagnostics": "adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
+      "details": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/java-core-messageId",
+            "code": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"
+          }
+        ]
+      },
+      "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
         "Line 1, Col 1042"
@@ -110,7 +118,15 @@ __Response__
     {
       "severity": "warning",
       "code": "processing",
-      "diagnostics": "adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
+      "details": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/java-core-messageId",
+            "code": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"
+          }
+        ]
+      },
+      "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
         "Line 1, Col 1042"

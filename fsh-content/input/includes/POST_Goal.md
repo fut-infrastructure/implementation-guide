@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ2FyZVBsYW4uc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -29,9 +29,9 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/24336"
+    "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/50447"
   },
-  "startDate": "2022-10-10",
+  "startDate": "2023-01-06",
   "target": [
     {
       "measure": {
@@ -46,7 +46,7 @@ __Body__:
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2135.local/fhir/ServiceRequest/1322"
+      "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/1156"
     }
   ]
 }
@@ -56,12 +56,22 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "1323",
+  "id": "1157",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-10-10T14:59:13.212+00:00",
+    "lastUpdated": "2023-01-06T08:55:28.794+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
+    ],
+    "tag": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+        "code": "xb"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+        "code": "xa"
+      }
     ]
   },
   "lifecycleStatus": "accepted",
@@ -74,9 +84,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/24336"
+    "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/50447"
   },
-  "startDate": "2022-10-10",
+  "startDate": "2023-01-06",
   "target": [
     {
       "measure": {
@@ -91,7 +101,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2135.local/fhir/ServiceRequest/1322"
+      "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/1156"
     }
   ]
 }

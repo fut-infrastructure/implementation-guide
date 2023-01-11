@@ -1,11 +1,11 @@
-`POST [base]/CarePlan/2056/$validate`
+`POST [base]/CarePlan/609/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDYXJlUGxhbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJDYXJlUGxhbi5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "2056",
+        "id": "609",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T15:04:22.000+00:00",
+          "lastUpdated": "2023-01-06T08:51:25.183+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -31,12 +31,12 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2135.local/fhir/EpisodeOfCare/2054"
+              "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/607"
             }
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2135.local/fhir/PlanDefinition/35679"
+          "https://plan.cit-careplan-2271.local/fhir/PlanDefinition/10764"
         ],
         "status": "draft",
         "intent": "option",
@@ -51,7 +51,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2135.local/fhir/Patient/37239"
+          "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/70899"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -59,7 +59,7 @@ __Body__:
         },
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2135.local/fhir/Condition/2055"
+            "reference": "https://careplan.cit-careplan-2271.local/fhir/Condition/608"
           }
         ]
       }

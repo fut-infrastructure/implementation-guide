@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjk3OGQyODQtNmNhNS00YTU4LWJkMWUtYzA4MDg4OTI0NTA2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiTGlicmFyeSRldmFsdWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDEyOTBlNmItYTExYy00YTU0LWE2ZjAtOTc4OThmMTI0YzU2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,8 +18,8 @@ __Response__
   "id": "36",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-10T14:34:44.021+00:00",
-    "source": "#3457bb6a-df08-99",
+    "lastUpdated": "2023-01-06T07:43:12.058+00:00",
+    "source": "#a361b3e6-c80e-9b",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -27,7 +27,13 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "375f192b-ec0b-4698-bc88-68bdb6e38866"
+      "valueString": "new revision value"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
+      "valueReference": {
+        "reference": "https://organization.cit-library-774.local/fhir/Organization/67451"
+      }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -35,7 +41,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-library-729.local/fhir/Organization/90181"
+            "reference": "https://organization.cit-library-774.local/fhir/Organization/2550"
           }
         },
         {
@@ -52,7 +58,7 @@ __Response__
       ]
     }
   ],
-  "version": "57eeea2c-fa4d-4106-b96e-962c4dd0c450",
+  "version": "73beb43e-52f1-4d27-b9a9-92c70d7ae1e1",
   "status": "draft",
   "type": {
     "coding": [

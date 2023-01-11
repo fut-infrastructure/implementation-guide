@@ -1,12 +1,12 @@
-`PUT [base]/DocumentReference/284`
+`PUT [base]/DocumentReference/21`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTExOTEubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vMTg2NjYiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQQVRJRU5UIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,15 +15,15 @@ __Body__:
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "284",
+  "id": "21",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-10-10T14:19:11.431+00:00",
+    "lastUpdated": "2023-01-06T09:15:30.016+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
   },
-  "status": "superseded",
+  "status": "entered-in-error",
   "type": {
     "coding": [
       {
@@ -32,7 +32,10 @@ __Body__:
       }
     ]
   },
-  "date": "2022-10-10T14:19:11.385+00:00",
+  "date": "2023-01-06T09:15:29.908+00:00",
+  "custodian": {
+    "reference": "https://organization.cit-plan-1191.local/fhir/Organization/18666"
+  },
   "content": [
     {
       "attachment": {
@@ -47,15 +50,15 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "284",
+  "id": "21",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-10T14:19:14.205+00:00",
+    "lastUpdated": "2023-01-06T09:15:30.170+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
   },
-  "status": "superseded",
+  "status": "entered-in-error",
   "type": {
     "coding": [
       {
@@ -64,7 +67,10 @@ __Response__
       }
     ]
   },
-  "date": "2022-10-10T14:19:11.385+00:00",
+  "date": "2023-01-06T09:15:29.908+00:00",
+  "custodian": {
+    "reference": "https://organization.cit-plan-1191.local/fhir/Organization/18666"
+  },
   "content": [
     {
       "attachment": {

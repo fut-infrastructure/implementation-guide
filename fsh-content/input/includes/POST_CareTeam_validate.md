@@ -1,11 +1,11 @@
-`POST [base]/CareTeam/190/$validate`
+`POST [base]/CareTeam/199/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzc0MjNiNmYtNWM5NC00YzE3LWI5YzQtODRhODI2YzJjZjU2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzU0MjJlODctOWY5Ny00Y2U4LTg5NGUtY2E1NTllNzE2MzFhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "190",
+        "id": "199",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2022-10-10T14:33:05.306+00:00",
+          "lastUpdated": "2023-01-06T07:50:23.808+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
@@ -30,11 +30,11 @@ __Body__:
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:482e1bca-13b8-4920-821a-53619dd9b134"
+            "value": "urn:uuid:aaca5721-e7cc-4eea-9e28-fc4785f3dadd"
           }
         ],
         "status": "active",
-        "name": "d065d870-8c96-41b9-a8ca-d891a95472d3",
+        "name": "7d2a7dff-3fe8-4233-b19d-4f83a54acac7",
         "reasonCode": [
           {
             "coding": [

@@ -1,11 +1,11 @@
-`GET [base]/Organization/292/_history/2`
+`GET [base]/Organization/330/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDA5NzIxZTEtNGEzMS00NTBjLTgyYTEtNDJhZmQzOGQ3NjMwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDQwYjY1ZTQtMDBkYS00MGZkLTg0YWYtYzBhYzRkYzNiZWI0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,16 +15,45 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "292",
+  "id": "330",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2022-10-10T14:34:16.212+00:00",
-    "source": "#180d72b3-51da-9d",
+    "versionId": "1",
+    "lastUpdated": "2023-01-06T07:52:17.914+00:00",
+    "source": "#06c2c1fc-c3a7-97",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
   },
   "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-relatedTo",
+      "extension": [
+        {
+          "url": "target",
+          "valueReference": {
+            "reference": "https://organization.cit-organization-1062.local/fhir/Organization/256"
+          }
+        },
+        {
+          "url": "relationType",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ehealth.sundhed.dk/cs/organization-relation-type",
+                "code": "related-to-SOR"
+              }
+            ]
+          }
+        },
+        {
+          "url": "period",
+          "valuePeriod": {
+            "start": "2023-01-06T07:52:17+00:00",
+            "end": "2023-01-06T07:52:17+00:00"
+          }
+        }
+      ]
+    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
       "valueCodeableConcept": {
@@ -54,34 +83,14 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2022-10-10T14:34:13+00:00"
+        "start": "2023-01-06T07:52:17+00:00"
       }
     }
   ],
   "active": false,
-  "name": "defaultTestFactory-decdede4-8a72-40be-b5a4-e47a00492964",
+  "name": "defaultTestFactory-b8d4010b-d7ea-4d98-81b0-c2167832e353",
   "contact": [
     {
-      "purpose": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/contactentity-type",
-            "code": "HR"
-          }
-        ]
-      },
-      "name": {
-        "use": "official",
-        "text": "Mr John Snow Junior",
-        "family": "Snow",
-        "given": [
-          "John"
-        ],
-        "period": {
-          "start": "2017-01-01",
-          "end": "2020-01-01"
-        }
-      },
       "telecom": [
         {
           "extension": [
@@ -109,34 +118,11 @@ __Response__
             },
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue",
-              "valueString": "john.snow@gmail.com"
+              "valueString": "4eab9543-e001-45d7-978c-0a05e8287e27"
             }
-          ],
-          "use": "home",
-          "rank": 1,
-          "period": {
-            "start": "2017-01-01",
-            "end": "2020-01-01"
-          }
+          ]
         }
-      ],
-      "address": {
-        "use": "home",
-        "type": "physical",
-        "text": "Westeros, The North, Winterfell, John Snow street, 1/14",
-        "line": [
-          "John Snow street, 1/14"
-        ],
-        "city": "Winterfell",
-        "district": "Winterfell",
-        "state": "The North",
-        "postalCode": "79070",
-        "country": "Westeros",
-        "period": {
-          "start": "2017-01-01",
-          "end": "2020-01-01"
-        }
-      }
+      ]
     }
   ]
 }

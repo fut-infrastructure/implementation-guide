@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2E1MjZlZTItMTBiZC00NjI2LWI1NTMtN2VkMzAwMjRlMDFlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTkzNmFiOGMtMmI0ZC00ZTEwLWE0ZDctYWExYjgwYmY2MmNiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/70317"
+              "reference": "https://careplan.cit-measurement-1595.local/fhir/EpisodeOfCare/86796"
             }
           },
           {
@@ -54,7 +54,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/8344"
+            "reference": "https://careplan.cit-measurement-1595.local/fhir/ServiceRequest/98491"
           }
         ],
         "status": "final",
@@ -67,19 +67,19 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/69261"
+          "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/2347"
         },
         "effectivePeriod": {
-          "start": "2022-10-11T13:07:49+00:00",
-          "end": "2022-10-11T13:07:49+00:00"
+          "start": "2023-01-06T09:14:59+00:00",
+          "end": "2023-01-06T09:14:59+00:00"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/69261"
+            "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/2347"
           }
         ],
         "device": {
-          "reference": "https://device.cit-measurement-1521.local/fhir/Device/12401"
+          "reference": "https://device.cit-measurement-1595.local/fhir/Device/96512"
         }
       }
     }

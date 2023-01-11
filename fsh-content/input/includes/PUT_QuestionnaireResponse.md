@@ -1,12 +1,12 @@
-`PUT [base]/QuestionnaireResponse/606`
+`PUT [base]/QuestionnaireResponse/641`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjdkNGQ0YTUtMDZlYi00ZDViLTkzMTctZmI5YTAzYWE0MDMwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTE1MjEubG9jYWwvZmhpci9DYXJlVGVhbS82NTM4IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMTUyMS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNTUxMiIsInRlYW1fb25fZW9jIjp0cnVlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDYwODFkZWEtNjliNS00MjE2LWEwMTItZGNjOGM0ZmIwY2JlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.1.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "606",
+  "id": "641",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2022-10-11T13:07:36.803+00:00",
+    "lastUpdated": "2023-01-06T09:16:37.415+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -27,35 +27,8 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/5512"
+        "reference": "https://careplan.cit-measurement-1595.local/fhir/EpisodeOfCare/22111"
       }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
-      "extension": [
-        {
-          "url": "qualityType",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                "code": "TBD"
-              }
-            ]
-          }
-        },
-        {
-          "url": "qualityCode",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
-                "code": "TBD"
-              }
-            ]
-          }
-        }
-      ]
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
@@ -80,28 +53,18 @@ __Body__:
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/76473"
+      "reference": "https://careplan.cit-measurement-1595.local/fhir/ServiceRequest/37437"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1521.local/fhir/Questionnaire/90363",
+  "questionnaire": "https://questionnaire.cit-measurement-1595.local/fhir/Questionnaire/54591",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/48927"
+    "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/72817"
   },
-  "authored": "2022-10-12T13:07:36+00:00",
+  "authored": "2022-12-07T09:16:37+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/33039"
-  },
-  "item": [
-    {
-      "linkId": "dfcf4d27-d3eb-46d7-a1ce-5df2bdc380e5",
-      "answer": [
-        {
-          "valueInteger": 401
-        }
-      ]
-    }
-  ]
+    "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/74382"
+  }
 }
 ```
 
@@ -109,10 +72,10 @@ __Response__
 ```json
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "606",
+  "id": "641",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2022-10-11T13:07:36.911+00:00",
+    "lastUpdated": "2023-01-06T09:16:37.489+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -121,35 +84,8 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1521.local/fhir/EpisodeOfCare/5512"
+        "reference": "https://careplan.cit-measurement-1595.local/fhir/EpisodeOfCare/22111"
       }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-quality",
-      "extension": [
-        {
-          "url": "qualityType",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/quality-types",
-                "code": "TBD"
-              }
-            ]
-          }
-        },
-        {
-          "url": "qualityCode",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://ehealth.sundhed.dk/cs/usage-quality",
-                "code": "TBD"
-              }
-            ]
-          }
-        }
-      ]
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
@@ -174,27 +110,17 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1521.local/fhir/ServiceRequest/76473"
+      "reference": "https://careplan.cit-measurement-1595.local/fhir/ServiceRequest/37437"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1521.local/fhir/Questionnaire/90363",
+  "questionnaire": "https://questionnaire.cit-measurement-1595.local/fhir/Questionnaire/54591",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/48927"
+    "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/72817"
   },
-  "authored": "2022-10-12T13:07:36+00:00",
+  "authored": "2022-12-07T09:16:37+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1521.local/fhir/Patient/33039"
-  },
-  "item": [
-    {
-      "linkId": "dfcf4d27-d3eb-46d7-a1ce-5df2bdc380e5",
-      "answer": [
-        {
-          "valueInteger": 401
-        }
-      ]
-    }
-  ]
+    "reference": "https://patient.cit-measurement-1595.local/fhir/Patient/74382"
+  }
 }
 ```
