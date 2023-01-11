@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2022-10-11T13:21:55.396+00:00",
+  "date": "2023-01-07T02:27:25.432+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.10.2"
+    "version": "1.11.1"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -349,6 +349,10 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "migrate",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
+    }, {
       "name": "search-measurements",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements",
       "documentation": "The search-measurements operation searches for bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- device: Find resource(s) referring the specified device - Reference(eHealth Device | eHealth DeviceMetric).\n- period: Resource(s) must have either an instant or time period within or overlapping the given period. The used instant/time period varies with resource as follows: Element effective for eHealth Observation; Element authored for eHealth QuestionnaireResponse; Element occurrence for eHealth Media.\n- based-on: Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\n\"period\" must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" must be specified.\n\n### Output description\n\nThe result of this operation will return a Bundle with a list of nested Bundles having resources matching the search parameters.\n\nEach of the nested bundles will contain the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources.\n\nIf a eHealth QuestionnaireResponse is part of the nested bundle the referenced eHealth Questionnaire will also be included in the nested bundle.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation."

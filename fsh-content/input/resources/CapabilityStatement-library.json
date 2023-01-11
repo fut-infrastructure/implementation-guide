@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2022-10-11T03:07:47.997+00:00",
+  "date": "2023-01-07T02:22:35.163+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.8.1"
+    "version": "1.8.4"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -164,6 +164,14 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "process-message",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
       "name": "meta",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
     }, {
@@ -173,14 +181,6 @@
     }, {
       "name": "reindex-terminology",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
-      "name": "process-message",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
-    }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }

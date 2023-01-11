@@ -3,12 +3,12 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2022-10-11T03:09:22.980+00:00",
+  "date": "2023-01-07T03:28:15.342+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.9.1"
+    "version": "1.9.3"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -176,9 +176,6 @@
         "name": "apply-codesystem-delta-add",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-apply-codesystem-delta-add"
       }, {
-        "name": "validate-code",
-        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
-      }, {
         "name": "validate",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
@@ -196,6 +193,9 @@
       }, {
         "name": "expunge",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-its-expunge"
+      }, {
+        "name": "validate-code",
+        "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystemValueSet-it-validate-code"
       }, {
         "name": "subsumes",
         "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/CodeSystem-t-subsumes"

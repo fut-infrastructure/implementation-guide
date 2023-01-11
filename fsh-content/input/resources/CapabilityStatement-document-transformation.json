@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2022-10-11T13:22:52.806+00:00",
+  "date": "2023-01-07T02:17:57.140+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.9.1"
+    "version": "1.9.3"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -363,6 +363,14 @@
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
       "documentation": "Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."
     }, {
+      "name": "process-message",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
       "name": "meta",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
     }, {
@@ -372,14 +380,6 @@
     }, {
       "name": "reindex-terminology",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
-      "name": "process-message",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
-    }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
     } ]
   } ]
 }
