@@ -13,6 +13,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Change supplement link in v3-TimingEvent to R4 link: http://terminology.hl7.org/ValueSet/v3-TimingEvent (FUT1-7461) 
 ### ValueSets
 - Updated http://ehealth.sundhed.dk/vs/message-reasonCode to include http://ehealth.sundhed.dk/cs/message-reasonCode
+- Removed codesystem http://ehealth.sundhed.dk/cs/device-types from valueset http://ehealth.sundhed.dk/vs/device-types
 ### ConceptMaps
 ### Resource/profile changes
 - telecom.system valueset binding updated in CareTeam and Organization.
