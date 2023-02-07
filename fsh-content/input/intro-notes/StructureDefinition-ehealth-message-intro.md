@@ -92,7 +92,8 @@ The message is forwarded asynchronously. To track the progress of the NemSMS, th
 
 ### Automatic NemSMS Notifications
 
-The Patient service will generate NemSMS ehealth-messages, notifying the recipient that they have received a message, given the following conditions:
+Automatic NemSMS notifications is a toggleable feature at the service level. 
+If enabled, the Patient service will generate NemSMS ehealth-messages, notifying the recipient that they have received a message, given the following conditions:
 
 * message.medium.code is not 'nemsms'
 * message.status is 'completed'
