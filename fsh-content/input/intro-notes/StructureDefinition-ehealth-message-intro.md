@@ -2,11 +2,17 @@
 
 An ehealth-message defines written communication and comes in four flavours depending on the "category" of the message:
 
-- __Message__: For sending messages from Patients, CareTeams (Practitioners), and Devices to Patients or CareTeams. Messages may not be sent between Patients or between Practitioners. When sending a message to a CareTeam, it is possible to narrow the recipient to be of a certain role. This is done by setting the "restriction-category"
-  extension to a specific role value.
-- __Notification__: For sending notification from Practitioners to Patients. These are usually text-based, and may have a temporal validity attached (see "period" extension) to indicate at which point a notification is no longer valid. When sent, a notification may no longer be updated by the sender.
-- __Advise__: Advise is much like notifications. They may also have a validity period, but they can be seen as reminders caused by a planned event, eg. a measurement or online meeting which is to take place.
-- __Note__: For personal notes (written by a Patient or Practitioner), which may be shared with a CareTeam. A personal note must be created with sender=recipient. In case a personal note wants to be shared with a CareTeam, the CareTeam must be referred by the recipientCareTeam extension, and the receiver deleted (both can take place in the same PATCH operation). A personal note may be updated by the sender, but not by the recipient.
+- __Message__: For sending user-generated messages from Patients and CareTeams (Practitioners) to Patients or CareTeams. Messages may not be sent between 
+  Patients or between Practitioners. When sending a message to a CareTeam, it is possible to narrow the recipient to be of a certain role. This is done by setting 
+  the "restriction-category" extension to a specific role value.
+- __Notification__: Must regard an incident or event that has already occurred, where the sender must be of type Device, and the recipient must be a Patient or CareTeam. 
+  These are usually text-based, and may have a temporal validity attached (see "period" extension) to indicate at which point a notification is no longer valid. 
+  When sent, a notification may no longer be updated by the sender.
+- __Advise__: Advise is much like notifications. They may also have a validity period, but they may only concern a future planned event, eg. a measurement 
+  or online meeting which is to take place. The sender must be of type Device, and the recipient must be a Patient or CareTeam
+- __Note__: For personal notes (written by a Patient or Practitioner), which may be shared with a CareTeam. A personal note must be created with sender=recipient. 
+  In case a personal note wants to be shared with a CareTeam, the CareTeam must be referred by the recipientCareTeam extension, and the receiver deleted 
+  (both can take place in the same PATCH operation). A personal note may be updated by the sender, but not by the recipient.
 
 An ehealth-message may refer related resources (eg. Device, CarePlan, Appointment etc) using the "about" field, no matter which category it is. Different instances of ehealth-message may be logically organized into "threads" by assigning the same thread-id in the provided extension. Similarly, they may be organized in a group (eg. group messages)
 by assigning the same group-id in that extension. The message subject may be provided in the title extension, and an optional priority may be provided in the ehealth-priority extension.
@@ -62,7 +68,7 @@ In the eHealth Infrastructure the ehealth-message resource is used in conjunctio
     - As sender/recipient of a message (only when category is "note")
 
 - Device
-    - As sender of an ehealth-message (as a result of automatic processing/triage)
+    - As sender of an ehealth-message (eg. as a result of automatic processing/triage)
 
 - CareTeam
     - As sender or recipient using the extensions senderCareTeam/recipientCareTeam, respectively
@@ -78,9 +84,9 @@ The following rules apply for the ehealth-message profile:
 
 # NemSMS Notifications
 
-The Patient service will forward ehealth-messages to the public danish NemSMS service given the following conditions:
+The Patient service will forward ehealth-messages to the public Danish NemSMS service given the following conditions:
 
-* message.medium.code is 'nemsms' (defined in  http://ehealth.sundhed.dk/cs/message-medium)
+* message.medium.code is 'nemsms' (defined in http://ehealth.sundhed.dk/cs/message-medium)
 * message.status is 'in-progress'
 
 The message is forwarded asynchronously. To track the progress of the NemSMS, the `status` and `statusReason` code is used:
