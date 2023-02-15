@@ -13,7 +13,7 @@ podTemplate(label: label,
     containerTemplate(name: 'igpublisher', image: 'registry.admin.ehealth.sundhed.dk/management/igpublisher:2022-12-21', command: 'cat', ttyEnabled: true)
   ],
   imagePullSecrets: [
-      'harbor-robot-admin-' + buildEnv + '-management'
+      'harbor-robot-admin-test-management'
   ]){
 
   node (label) {
