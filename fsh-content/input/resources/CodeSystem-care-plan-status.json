@@ -21,7 +21,7 @@
   "url": "http://hl7.org/fhir/care-plan-status",
   "version": "3.0.2",
   "name": "Care Plan Status",
-  "status": "draft",
+  "status": "active",
   "content": "supplement",
   "experimental": false,
   "date": "2019-10-24T11:53:00+11:00",
