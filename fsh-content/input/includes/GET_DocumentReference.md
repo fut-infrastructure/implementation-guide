@@ -18,8 +18,8 @@ __Response__
   "id": "213",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T09:17:47.209+00:00",
-    "source": "#faa67052-3451-92",
+    "lastUpdated": "2023-03-07T19:09:29.726+00:00",
+    "source": "#f196e4e5-222e-90",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -33,10 +33,10 @@ __Response__
       }
     ]
   },
-  "date": "2023-01-06T09:17:46.071+00:00",
+  "date": "2023-03-07T19:09:28.793+00:00",
   "author": [
     {
-      "reference": "https://organization.cit-plan-1191.local/fhir/Organization/24865"
+      "reference": "https://organization.cit-plan-1230.local/fhir/Organization/30301"
     }
   ],
   "content": [

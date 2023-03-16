@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTkyMzhiZDEtNjhiMC00YmFlLThjM2EtZmY5YWY0ZmUyMzBlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctNzMzLmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzMwNjIxIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDk1OTZiZjItMTVkYS00Y2JlLWE3ZWItNzM5NmU1Y2JhY2EzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCIsInJlcG9ydC1ub24tYW5vbnltaXplZCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctNzQ5LmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzM0Njk5IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-733.local/fhir/Organization/30621"
+        "reference": "https://organization.cit-reporting-749.local/fhir/Organization/34699"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-01-06T07:32:44+00:00",
-        "end": "2023-01-06T07:32:44+00:00"
+        "start": "2023-03-07T14:47:02+00:00",
+        "end": "2023-03-07T14:47:02+00:00"
       }
     }
   ]
@@ -43,7 +43,7 @@ __Response__
   "id": "24",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:32:45.898+00:00",
+    "lastUpdated": "2023-03-07T14:47:03.542+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "e9238bd1-68b0-4bae-8c3a-ff9af4fe230e"
+      "value": "09596bf2-15da-4cbe-a7eb-7396e5cbaca3"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDVjNDFhZTYtNzMzNC00YjJiLThlODItNTE0NmM5ZDI2ZmRmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1lcGlzb2Rlb2ZjYXJlLXN0YXRzIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy03MzMubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vMTYxOTQiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMGUyOWZlMzUtOWU2NC00YjUzLWEwYTMtOWJhNWVmMGQzMmViIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1lcGlzb2Rlb2ZjYXJlLXN0YXRzIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy03NDkubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vMTkwODgiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-733.local/fhir/Organization/16194"
+        "reference": "https://organization.cit-reporting-749.local/fhir/Organization/19088"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-01-06T07:31:26+00:00",
-        "end": "2023-01-06T07:31:26+00:00"
+        "start": "2023-03-07T14:45:42+00:00",
+        "end": "2023-03-07T14:45:42+00:00"
       }
     }
   ]
@@ -43,7 +43,7 @@ __Response__
   "id": "7",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:31:27.577+00:00",
+    "lastUpdated": "2023-03-07T14:45:43.660+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "d5c41ae6-7334-4b2b-8e82-5146c9d26fdf"
+      "value": "0e29fe35-9e64-4b53-a0a3-9ba5ef0d32eb"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

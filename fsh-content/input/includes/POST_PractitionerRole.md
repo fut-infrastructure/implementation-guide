@@ -30,7 +30,7 @@ __Response__
   "id": "54",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:49:30.132+00:00",
+    "lastUpdated": "2023-03-07T15:04:09.347+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]

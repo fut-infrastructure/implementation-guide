@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/2133"
+              "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2253"
             }
           },
           {
@@ -85,7 +85,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 1737398270,
+                  "value": 1606445976,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -94,7 +94,7 @@ __Body__:
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2271.local/fhir/ActivityDefinition/56045"
+          "https://plan.cit-careplan-2359.local/fhir/ActivityDefinition/41669"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -105,10 +105,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "c6493e5d-bc96-4257-ae00-cf57232f9295"
+          "text": "a968aab6-0587-4d3d-ab47-02cf96594c71"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/99726"
+          "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/19112"
         }
       }
     }

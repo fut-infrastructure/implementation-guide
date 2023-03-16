@@ -18,7 +18,7 @@ __Body__:
   "id": "59",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:49:31.984+00:00",
+    "lastUpdated": "2023-03-07T15:04:11.188+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]
@@ -34,7 +34,7 @@ __Response__
   "id": "59",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-01-06T07:49:32.106+00:00",
+    "lastUpdated": "2023-03-07T15:04:11.338+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]

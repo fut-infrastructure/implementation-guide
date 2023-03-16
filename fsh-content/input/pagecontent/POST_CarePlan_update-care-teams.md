@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDYXJlUGxhbiR1cGRhdGUucmVzcG9uc2liaWxpdHkiLCJDYXJlUGxhbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTIyNzEubG9jYWwvZmhpci9DYXJlVGVhbS8zMzE5NCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTIyNzEubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzg3NyIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWNhcmVwbGFuLTIyNzEubG9jYWwvZmhpci9QYXRpZW50LzQ1MjE5IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJDYXJlUGxhbiR1cGRhdGUucmVzcG9uc2liaWxpdHkiLCJDYXJlUGxhbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTIzNTkubG9jYWwvZmhpci9DYXJlVGVhbS84ODIyNSIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTIzNTkubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzg3NyIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWNhcmVwbGFuLTIzNTkubG9jYWwvZmhpci9QYXRpZW50LzQ5MTMwIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "addCareTeams",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-2271.local/fhir/CareTeam/33194"
+        "reference": "https://organization.cit-careplan-2359.local/fhir/CareTeam/88225"
       }
     }
   ]
@@ -32,8 +32,8 @@ __Response__
   "id": "879",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T08:53:10.434+00:00",
-    "source": "#5501eba1-16b5-9d",
+    "lastUpdated": "2023-03-15T14:42:11.203+00:00",
+    "source": "#3ca4c504-4644-93",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ]
@@ -42,12 +42,12 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/877"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/877"
       }
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2271.local/fhir/PlanDefinition/60748"
+    "https://plan.cit-careplan-2359.local/fhir/PlanDefinition/52450"
   ],
   "status": "draft",
   "intent": "option",
@@ -62,7 +62,7 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/45219"
+    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/49130"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
@@ -70,12 +70,12 @@ __Response__
   },
   "careTeam": [
     {
-      "reference": "https://organization.cit-careplan-2271.local/fhir/CareTeam/33194"
+      "reference": "https://organization.cit-careplan-2359.local/fhir/CareTeam/88225"
     }
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2271.local/fhir/Condition/878"
+      "reference": "https://careplan.cit-careplan-2359.local/fhir/Condition/878"
     }
   ]
 }

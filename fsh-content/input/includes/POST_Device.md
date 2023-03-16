@@ -21,7 +21,7 @@ __Body__:
   },
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-780.local/fhir/Organization/81366"
+    "reference": "https://organization.cit-device-803.local/fhir/Organization/98169"
   }
 }
 ```
@@ -33,14 +33,14 @@ __Response__
   "id": "102",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:54:02.873+00:00",
+    "lastUpdated": "2023-03-07T15:23:32.103+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
   },
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-780.local/fhir/Organization/81366"
+    "reference": "https://organization.cit-device-803.local/fhir/Organization/98169"
   }
 }
 ```

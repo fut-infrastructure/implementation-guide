@@ -1,4 +1,4 @@
-`GET [base]/PlanDefinition?_id=https%3A%2F%2Fplan.cit-plan-1191.local%2Ffhir%2FPlanDefinition%2F266%2F_history%2F1&_include%3Aiterate=PlanDefinition%3Adefinition`
+`GET [base]/PlanDefinition?_id=https%3A%2F%2Fplan.cit-plan-1230.local%2Ffhir%2FPlanDefinition%2F266%2F_history%2F1&_include%3Aiterate=PlanDefinition%3Adefinition`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "9b00ac95-165f-4546-ae02-6d435a775da7",
+  "id": "ef887440-c3f5-4013-9655-eb00936712af",
   "meta": {
-    "lastUpdated": "2023-01-06T09:18:03.313+00:00"
+    "lastUpdated": "2023-03-07T19:09:46.567+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-1191.local/fhir/PlanDefinition?_format=json&_id=https%3A%2F%2Fplan.cit-plan-1191.local%2Ffhir%2FPlanDefinition%2F266%2F_history%2F1&_include%3Aiterate=PlanDefinition%3Adefinition&_pretty=true"
+      "url": "https://plan.cit-plan-1230.local/fhir/PlanDefinition?_format=json&_id=https%3A%2F%2Fplan.cit-plan-1230.local%2Ffhir%2FPlanDefinition%2F266%2F_history%2F1&_include%3Aiterate=PlanDefinition%3Adefinition&_pretty=true"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1191.local/fhir/PlanDefinition/266",
+      "fullUrl": "https://plan.cit-plan-1230.local/fhir/PlanDefinition/266",
       "resource": {
         "resourceType": "PlanDefinition",
         "id": "266",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-01-06T09:18:03.026+00:00",
-          "source": "#415f1f44-d190-98",
+          "lastUpdated": "2023-03-07T19:09:46.290+00:00",
+          "source": "#27cda25a-2f2e-93",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
           ]
@@ -48,7 +48,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/86262"
+                  "reference": "https://organization.cit-plan-1230.local/fhir/Organization/994"
                 }
               },
               {
@@ -69,7 +69,7 @@ __Response__
         "status": "active",
         "action": [
           {
-            "definitionCanonical": "https://plan.cit-plan-1191.local/fhir/PlanDefinition/265"
+            "definitionCanonical": "https://plan.cit-plan-1230.local/fhir/PlanDefinition/265"
           }
         ]
       },
@@ -78,14 +78,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition/264",
+      "fullUrl": "https://plan.cit-plan-1230.local/fhir/ActivityDefinition/264",
       "resource": {
         "resourceType": "ActivityDefinition",
         "id": "264",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-01-06T09:18:02.718+00:00",
-          "source": "#c7092ff6-0621-9d",
+          "lastUpdated": "2023-03-07T19:09:46.037+00:00",
+          "source": "#7fa1352c-f638-9b",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -108,7 +108,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/83527"
+                  "reference": "https://organization.cit-plan-1230.local/fhir/Organization/6452"
                 }
               },
               {
@@ -126,7 +126,7 @@ __Response__
           }
         ],
         "version": "1.0",
-        "name": "e44991b1-8c82-4e68-a538-1f4fae81994e",
+        "name": "3c1e3e83-42bd-438a-9d26-4b00decf9c54",
         "status": "active",
         "topic": [
           {
@@ -152,14 +152,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1191.local/fhir/PlanDefinition/265",
+      "fullUrl": "https://plan.cit-plan-1230.local/fhir/PlanDefinition/265",
       "resource": {
         "resourceType": "PlanDefinition",
         "id": "265",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-01-06T09:18:02.835+00:00",
-          "source": "#5626d358-1556-9b",
+          "lastUpdated": "2023-03-07T19:09:46.184+00:00",
+          "source": "#054f6e73-fc36-99",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
           ]
@@ -171,7 +171,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/46074"
+                  "reference": "https://organization.cit-plan-1230.local/fhir/Organization/2975"
                 }
               },
               {
@@ -192,7 +192,7 @@ __Response__
         "status": "active",
         "action": [
           {
-            "definitionCanonical": "https://plan.cit-plan-1191.local/fhir/ActivityDefinition/264"
+            "definitionCanonical": "https://plan.cit-plan-1230.local/fhir/ActivityDefinition/264"
           }
         ]
       },

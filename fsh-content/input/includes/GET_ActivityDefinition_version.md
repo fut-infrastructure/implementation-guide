@@ -18,8 +18,8 @@ __Response__
   "id": "362",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-01-06T09:19:04.877+00:00",
-    "source": "#d7d429f0-2b99-9a",
+    "lastUpdated": "2023-03-07T19:10:48.503+00:00",
+    "source": "#953ea37f-5436-9c",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
     ]
@@ -42,7 +42,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-plan-1191.local/fhir/Organization/86317"
+            "reference": "https://organization.cit-plan-1230.local/fhir/Organization/40086"
           }
         },
         {
@@ -62,11 +62,11 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
       "valueIdentifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:5c0a885a-7f7c-4236-904a-bd05f3659578",
+        "value": "urn:uuid:68c6e0ad-0a65-4ff5-8850-30747f1692ef",
         "assigner": {
           "identifier": {
             "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-            "value": "cit-plan-1191"
+            "value": "cit-plan-1230"
           }
         }
       }
@@ -75,18 +75,18 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
       "valueIdentifier": {
         "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-        "value": "cit-plan-1191"
+        "value": "cit-plan-1230"
       }
     }
   ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:bccb09d2-888c-4816-a6d2-f0df8c00de05"
+      "value": "urn:uuid:a5af2204-580f-4b1e-9df9-c48740fc75fe"
     }
   ],
   "version": "1.0",
-  "name": "f224cf36-4707-4ad7-919b-8f7323eb8bd1",
+  "name": "57a11f04-54fc-47d2-b5e6-d7ce9994e95b",
   "status": "draft",
   "topic": [
     {
@@ -101,7 +101,7 @@ __Response__
   "relatedArtifact": [
     {
       "type": "documentation",
-      "resource": "https://plan.cit-plan-1191.local/fhir/DocumentReference/363"
+      "resource": "https://plan.cit-plan-1230.local/fhir/DocumentReference/363"
     }
   ],
   "code": {

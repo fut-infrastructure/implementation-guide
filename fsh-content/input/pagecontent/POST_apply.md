@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTIyNzEubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNDUxMjkiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMjI3MS5sb2NhbC9maGlyL0NhcmVUZWFtLzY2OTI0IiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtY2FyZXBsYW4tMjI3MS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMjE2MyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTIzNTkubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMjk2ODMiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMjM1OS5sb2NhbC9maGlyL0NhcmVUZWFtLzU2MTQxIiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtY2FyZXBsYW4tMjM1OS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMjI4MyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,13 +18,13 @@ __Body__:
     {
       "name": "episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/2163"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2283"
       }
     },
     {
       "name": "planDefinition",
       "valueReference": {
-        "reference": "https://plan.cit-careplan-2271.local/fhir/PlanDefinition/42467"
+        "reference": "https://plan.cit-careplan-2359.local/fhir/PlanDefinition/45117"
       }
     }
   ]
@@ -35,11 +35,11 @@ __Response__
 ```json
 {
   "resourceType": "CarePlan",
-  "id": "2167",
+  "id": "2287",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T09:02:22.882+00:00",
-    "source": "#6ee37432-a4a6-9d",
+    "lastUpdated": "2023-03-15T14:53:44.739+00:00",
+    "source": "#46d9222a-3478-90",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
     ],
@@ -58,7 +58,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/EpisodeOfCare/2163"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2283"
       }
     },
     {
@@ -78,50 +78,50 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-01-06T09:02:22+00:00"
+            "start": "2023-03-15T14:53:44+00:00"
           }
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2271.local/fhir/PlanDefinition/42467"
+    "https://plan.cit-careplan-2359.local/fhir/PlanDefinition/45117"
   ],
   "status": "draft",
   "intent": "order",
   "subject": {
-    "reference": "https://patient.cit-careplan-2271.local/fhir/Patient/69789"
+    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/80482"
   },
   "period": {
-    "start": "2023-01-06T09:02:22+00:00"
+    "start": "2023-03-15T14:53:44+00:00"
   },
   "careTeam": [
     {
-      "reference": "https://organization.cit-careplan-2271.local/fhir/CareTeam/66924"
+      "reference": "https://organization.cit-careplan-2359.local/fhir/CareTeam/56141"
     }
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2271.local/fhir/Condition/2162"
+      "reference": "https://careplan.cit-careplan-2359.local/fhir/Condition/2282"
     }
   ],
   "activity": [
     {
       "id": "0",
       "reference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/2164"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/ServiceRequest/2284"
       }
     },
     {
       "id": "1",
       "reference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/2165"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/ServiceRequest/2285"
       }
     },
     {
       "id": "2",
       "reference": {
-        "reference": "https://careplan.cit-careplan-2271.local/fhir/ServiceRequest/2166"
+        "reference": "https://careplan.cit-careplan-2359.local/fhir/ServiceRequest/2286"
       }
     }
   ]

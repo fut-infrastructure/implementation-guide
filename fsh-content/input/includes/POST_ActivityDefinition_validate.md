@@ -22,7 +22,7 @@ __Body__:
         "id": "365",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-01-06T09:19:10.487+00:00",
+          "lastUpdated": "2023-03-07T19:10:53.952+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -45,7 +45,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1191.local/fhir/Organization/50443"
+                  "reference": "https://organization.cit-plan-1230.local/fhir/Organization/6178"
                 }
               },
               {
@@ -63,7 +63,7 @@ __Body__:
           }
         ],
         "version": "1.0",
-        "name": "388a867e-2644-412b-ae8c-bec7d83f4b40",
+        "name": "c1a24bb8-9ed9-4295-a8c4-c179c5a5886a",
         "status": "active",
         "topic": [
           {
@@ -95,7 +95,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1041]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1041]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
   },
   "issue": [
     {
@@ -112,7 +112,7 @@ __Response__
       "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1042"
+        "Line 1, Col 1041"
       ]
     },
     {
@@ -129,7 +129,7 @@ __Response__
       "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1042"
+        "Line 1, Col 1041"
       ]
     }
   ]

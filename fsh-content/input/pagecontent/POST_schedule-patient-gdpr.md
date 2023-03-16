@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOGY3ZmI2NTItNTNkMS00NGQ4LWI2MmEtOTU4NjNhMGMwZDNiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWdkcHIiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCJCaW5hcnkucmVhZCJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTczMy5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi84MDk4IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNWI5OGNjZjQtZjYwNC00NTg3LThiMTAtZTllNDM0YTQ0MTc3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWdkcHIiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCJCaW5hcnkucmVhZCJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTc0OS5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi85NTk1MCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-733.local/fhir/Organization/8098"
+        "reference": "https://organization.cit-reporting-749.local/fhir/Organization/95950"
       }
     },
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.cit-reporting-733.local/fhir/Patient/57898"
+        "reference": "https://patient.cit-reporting-749.local/fhir/Patient/44963"
       }
     }
   ]
@@ -42,7 +42,7 @@ __Response__
   "id": "25",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:32:57.523+00:00",
+    "lastUpdated": "2023-03-07T14:47:14.639+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -50,7 +50,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "8f7fb652-53d1-44d8-b62a-95863a0c0d3b"
+      "value": "5b98ccf4-f604-4587-8b10-e9e434a44177"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

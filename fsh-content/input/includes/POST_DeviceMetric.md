@@ -115,7 +115,7 @@ __Body__:
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-780.local/fhir/Device/136"
+    "reference": "https://device.cit-device-803.local/fhir/Device/136"
   },
   "category": "calculation"
 }
@@ -128,7 +128,7 @@ __Response__
   "id": "137",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-01-06T07:54:41.723+00:00",
+    "lastUpdated": "2023-03-07T15:24:11.009+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -229,7 +229,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-780.local/fhir/Device/136"
+    "reference": "https://device.cit-device-803.local/fhir/Device/136"
   },
   "category": "calculation"
 }
