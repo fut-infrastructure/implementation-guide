@@ -3,12 +3,12 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2023-01-07T02:02:35.982+00:00",
+  "date": "2023-03-15T15:06:41.166+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "careplan",
-    "version": "1.15.1"
+    "version": "1.16.0"
   },
   "implementation": {
     "description": "eHealth careplan service",

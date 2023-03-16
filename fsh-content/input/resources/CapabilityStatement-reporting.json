@@ -3,12 +3,12 @@
   "id": "reporting",
   "name": "reporting",
   "status": "active",
-  "date": "2023-01-07T02:53:05.126+00:00",
+  "date": "2023-03-11T02:52:13.622+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "reporting",
-    "version": "1.7.3"
+    "version": "1.7.4"
   },
   "implementation": {
     "description": "eHealth reporting service",
@@ -140,9 +140,6 @@
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-careplan-and-episode-of-care-stats",
       "documentation": "### Report Contents\nThis report contains a count of active EpisodeOfCare and CarePlans.\n### Grouping \nThis report is grouped by ConditionCode. Each group is returned in a separate JSon file.\n### Parameters\n- organization: Filter on EpisodeOfCare.managingOrganization match\n- period: Filter on CarePlan.period overlap\n\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.\n### Example output\nThe ConditionCode is a Fhir CodeableConcept. See the implementation guide for details\n\n    {\n        'ConditionCode': {\n            'valueCodeableConcept': {\n                'coding': [{\n                        'system': 'urn:oid:1.2.208.176.2.4',\n                        'code': 'DJ44'\n                    }\n                ]\n            }\n        },\n        'ConditionSummary': {\n            'activeEpisodeOfCareCount': 1,\n            'activeCarePlanCount': 1\n        }\n    }"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -157,6 +154,9 @@
       "name": "get-resource-counts",
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

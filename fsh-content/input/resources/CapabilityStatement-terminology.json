@@ -3,12 +3,12 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2023-01-07T03:28:15.342+00:00",
+  "date": "2023-03-11T03:28:32.890+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.9.3"
+    "version": "1.9.4"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -1044,9 +1044,6 @@
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import",
       "documentation": "Import terminology resources"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -1061,6 +1058,9 @@
       "name": "get-resource-counts",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

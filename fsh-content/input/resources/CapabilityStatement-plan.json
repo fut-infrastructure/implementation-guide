@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2023-01-07T02:42:25.442+00:00",
+  "date": "2023-03-11T02:42:12.996+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.0.6"
+    "version": "2.0.7"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -550,9 +550,6 @@
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -567,6 +564,9 @@
       "name": "get-resource-counts",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

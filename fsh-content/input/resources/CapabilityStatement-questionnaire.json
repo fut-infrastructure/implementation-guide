@@ -3,12 +3,12 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2023-01-07T02:47:25.563+00:00",
+  "date": "2023-03-11T02:47:13.274+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "2.0.5"
+    "version": "2.0.6"
   },
   "implementation": {
     "description": "eHealth questionnaire service",
@@ -447,9 +447,6 @@
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -464,6 +461,9 @@
       "name": "get-resource-counts",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

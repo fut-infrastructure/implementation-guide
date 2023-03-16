@@ -3,12 +3,12 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2023-01-07T02:37:45.478+00:00",
+  "date": "2023-03-11T02:37:13.541+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "organization",
-    "version": "1.10.3"
+    "version": "1.10.4"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -536,9 +536,6 @@
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations",
       "documentation": "Import a bundle containing at least one organization tree."
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -553,6 +550,9 @@
       "name": "get-resource-counts",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

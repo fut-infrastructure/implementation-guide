@@ -3,12 +3,12 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2023-01-07T03:12:15.325+00:00",
+  "date": "2023-03-14T14:07:03.664+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.10.1"
+    "version": "1.10.2"
   },
   "implementation": {
     "description": "eHealth task service",
@@ -305,9 +305,6 @@
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "process-message",
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
       "documentation": "Accept a FHIR Message Bundle for processing"
@@ -322,6 +319,9 @@
       "name": "get-resource-counts",
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }
