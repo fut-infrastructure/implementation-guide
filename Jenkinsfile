@@ -51,7 +51,7 @@ podTemplate(label: label,
     }
 
     // deploy only the master branch
-    if (env.BRANCH_NAME == 'trifork-ccr0154') {
+    if (env.BRANCH_NAME == 'master') {
 
       stage ('generate documentation') {
         container('igpublisher') {
