@@ -1,8 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2.7.0 (2023-03-29)
 
 ### General changes
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
 ### Custom operations
 #### System operations
 #### Instance operations
@@ -10,6 +11,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- EpisodeOfCare is now optional on Ehealth-communication-request.
+  - Changed intro text for Ehealth-communication-request.
+- Clinical Impression Codes valueSet reference was accidentally deleted from Ehealth-clinicalImpression.code in last IG release. Has been reintroduced
 
 ## 2.6.0 (2023-01-16)
 
