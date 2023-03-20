@@ -4,16 +4,21 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 - Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
+- Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
+- Two new codes "AppointmentReminder" and "VideoAppointmentReminder" added to "ehealth-message-reasonCode" code system.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
 - EpisodeOfCare is now optional on Ehealth-communication-request.
   - Changed intro text for Ehealth-communication-request.
 - Clinical Impression Codes valueSet reference was accidentally deleted from Ehealth-clinicalImpression.code in last IG release. Has been reintroduced
+- Ehealth-message changed to reflect CCR0154 changes. This includes the following:
+  - Device-type sender is no longer allowed for category "message".
+  - For categories "advice" and "notification", only Device-type senders are now allowed.
 
 ## 2.6.0 (2023-01-16)
 
