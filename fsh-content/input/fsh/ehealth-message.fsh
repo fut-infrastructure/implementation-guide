@@ -1,7 +1,7 @@
 Profile: ehealth-message
 Id: ehealth-message
 Parent: Communication
-* obeys nemsms-invariant and note-invariant and notification-invariant and message-invariant
+* obeys nemsms-invariant and note-invariant and notification-invariant and message-invariant and advice-invariant
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..1
@@ -101,7 +101,7 @@ Description: "On behalf of"
 
 Invariant:   message-invariant
 Description: "Category message invariant"
-Expression:  "category.coding.code = 'message' implies (recipient.reference.contains('Patient/') and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not() or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and (sender.reference.contains('Patient/') or sender.reference.contains('Device/'))) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists() )"
+Expression:  "category.coding.code = 'message' implies (recipient.reference.contains('Patient/') and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and (sender.reference.contains('Patient/')) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists() ))"
 Severity:    #error
 
 Invariant:   note-invariant
@@ -116,5 +116,10 @@ Severity:    #error
 
 Invariant:   notification-invariant
 Description: "Category notification invariant"
-Expression:  "category.coding.code = 'notification' implies recipient.reference.contains('Patient/') and ( sender.reference.contains('Practitioner/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').valueReference.exists())"
+Expression:  "category.coding.code = 'notification' implies (recipient.reference.contains('Patient/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
+Severity:    #error
+
+Invariant:   advice-invariant
+Description: "Category advice invariant"
+Expression:  "category.coding.code = 'advice' implies (recipient.reference.contains('Patient/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
 Severity:    #error

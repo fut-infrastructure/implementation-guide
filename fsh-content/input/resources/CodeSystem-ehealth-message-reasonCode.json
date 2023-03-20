@@ -143,6 +143,28 @@
           "value": "Påmindelse om at indsende måledata"
         }
       ]
+    },
+    {
+      "code": "AppointmentReminder",
+      "display": "Appointment Reminder",
+      "definition": "Appointment Reminder",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Påmindelse om aftale"
+        }
+      ]
+    },
+    {
+      "code": "VideoAppointmentReminder",
+      "display": "Video Appointment Reminder",
+      "definition": "Video Appointment Reminder",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Påmindelse om videoaftale"
+        }
+      ]
     }
   ]
 }
