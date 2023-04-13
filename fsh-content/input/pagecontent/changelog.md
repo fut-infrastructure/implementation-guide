@@ -9,6 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 ### ValueSets
+- Added http://ehealth.sundhed.dk/vs/data-absent-reason
 ### ConceptMaps
 ### Resource/profile changes
 - Added ehealth-servicerequest-statusHistory and ehealth-servicerequest-statusSchedule to ServiceRequest

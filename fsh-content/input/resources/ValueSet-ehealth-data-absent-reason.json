@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-data-absent-reason",
+  "url": "http://ehealth.sundhed.dk/vs/data-absent-reason",
+  "version": "2023-04-13T15:13:00",
+  "name": "Action",
+  "title": "Action",
+  "status": "active",
+  "experimental": true,
+  "date": "2023-04-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "Used to specify why the normally expected content of the data element is missing.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/data-absent-reason"
+        ]
+      }
+    ]
+  }
+}
