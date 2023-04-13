@@ -112,6 +112,17 @@
       ]
     },
     {
+      "code": "data-absent",
+      "display": "measurement data is absent",
+      "definition": "measurement data is absent",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Måling har fravær af værdi"
+        }
+      ]
+    },
+    {
       "code": "TBD",
       "display": "Example value - Under construction",
       "definition": "Example value - Under construction",
