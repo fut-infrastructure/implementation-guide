@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/data-absent-reason
+- Added "MeasurementForAssessmentAbsentValue" to http://ehealth.sundhed.dk/cs/task-category
 ### ConceptMaps
 ### Resource/profile changes
 - Added ehealth-servicerequest-statusHistory and ehealth-servicerequest-statusSchedule to ServiceRequest

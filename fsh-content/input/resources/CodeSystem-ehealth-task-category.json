@@ -187,6 +187,17 @@
           "value": "Indsendte måledata (måling og/eller spørgeskemabesvarelse) er ikke vurderet af systemet. Du skal selv vurdere måledata."
         }
       ]
+    },
+    {
+      "code": "MeasurementForAssessmentAbsentValue",
+      "display": "Need assessment of measurement with absent value",
+      "definition": "Need assessment of measurement with absent value",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Indsendte måledata har fravær af målt værdi."
+        }
+      ]
     }
   ]
 }
