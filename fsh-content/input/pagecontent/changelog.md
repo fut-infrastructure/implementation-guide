@@ -15,6 +15,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Added ehealth-servicerequest-statusHistory and ehealth-servicerequest-statusSchedule to ServiceRequest
+- ehealth-observation dataAbsentReason changed to http://ehealth.sundhed.dk/vs/data-absent-reason (required)
 
 ## 2.7.0 (2023-03-29)
 

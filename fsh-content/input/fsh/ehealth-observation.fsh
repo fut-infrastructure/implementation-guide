@@ -23,3 +23,4 @@ Parent: Observation
 // not in r4: * related.target only Reference(ehealth-observation or ehealth-questionnaireresponse or Sequence)
 * component.code from http://ehealth.sundhed.dk/vs/observation-codes
 * component.value[x] only Quantity or CodeableConcept
+* dataAbsentReason from http://ehealth.sundhed.dk/vs/data-absent-reason (required)
