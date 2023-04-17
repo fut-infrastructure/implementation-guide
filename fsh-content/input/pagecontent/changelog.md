@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added ehealth-servicerequest-statusHistory and ehealth-servicerequest-statusSchedule to ServiceRequest
 
 ## 2.7.0 (2023-03-29)
 

@@ -7,6 +7,8 @@ Parent: ServiceRequest
 * extension contains ehealth-sharingPolicy named sharingPolicy 1..1
 * extension contains ehealth-reuseCriteria named reuseCriteria 0..1
 * extension contains ehealth-trigger-enablement-code named triggerEnablementCode 0..1
+* extension contains ehealth-servicerequest-statusHistory named statusHistory 0..*
+* extension contains ehealth-servicerequest-statusSchedule named statusSchedule 0..*
 
 * instantiatesCanonical 1..1
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
@@ -32,3 +34,24 @@ Description: "Controls whether this ServiceRequest will react to trigger conditi
 * value[x] only code
 * valueCode from http://ehealth.sundhed.dk/vs/trigger-enablement-code
 * valueCode 1..1
+
+Extension:   ehealth-servicerequest-statusHistory
+Title:       "ServiceRequest status history"
+* extension contains
+    status 1..1 and
+    period 1..1
+* extension[status].value[x] only CodeableConcept
+* extension[status].valueCodeableConcept 1..1
+* extension[period].value[x] only Period
+* extension[period].valuePeriod 1..1
+
+Extension:   ehealth-servicerequest-statusSchedule
+Title:       "ServiceRequest status schedule"
+* extension contains
+    status 1..1 and
+    scheduledTime 1..1
+* extension[status].value[x] only code
+* extension[status].valueCode 1..1
+* extension[status].value[x] from http://hl7.org/fhir/ValueSet/request-status
+* extension[scheduledTime].value[x] only dateTime
+* extension[scheduledTime].valueDateTime 1..1
