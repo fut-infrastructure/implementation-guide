@@ -195,7 +195,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Indsendte måledata har fravær af målt værdi."
+          "value": "Indsendte måledata (måling) har fravær af målt værdi."
         }
       ]
     }
