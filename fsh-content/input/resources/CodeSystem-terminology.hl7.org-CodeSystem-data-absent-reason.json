@@ -2,26 +2,19 @@
   "resourceType": "CodeSystem",
   "id": "data-absent-reason",
   "url": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-  "identifier": [
-    {
-      "system": "urn:ietf:rfc:3986",
-      "value": "urn:oid:2.16.840.1.113883.4.642.4.1048"
-    }
-  ],
   "version": "4.0.1",
   "name": "DataAbsentReason",
   "title": "DataAbsentReason",
   "status": "active",
   "experimental": false,
   "date": "2023-04-24T09:40:00+00:00",
-  "publisher": "HL7 DK",
+  "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
-      "name": "HL7 DK",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.dk/"
+          "value": "http://ehealth.sundhed.dk/terminology"
         }
       ]
     }
@@ -34,21 +27,61 @@
       "code": "unknown",
       "display": "Unknown",
       "definition": "The value is expected to exist but is not known.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Ukendt"
+        }
+      ],
       "concept": [
         {
           "code": "asked-unknown",
           "display": "Asked But Unknown",
-          "definition": "The source was asked but does not know the value."
+          "definition": "The source was asked but does not know the value.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Svaret ukendt"
+            }
+          ]
         },
         {
           "code": "temp-unknown",
           "display": "Temporarily Unknown",
-          "definition": "There is reason to expect (from the workflow) that the value may become known."
+          "definition": "There is reason to expect (from the workflow) that the value may become known.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Midlertidigt ukendt"
+            }
+          ]
         },
         {
           "code": "not-asked",
           "display": "Not Asked",
-          "definition": "The workflow didn't lead to this value being known."
+          "definition": "The workflow didn't lead to this value being known.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Ikke spurgt"
+            }
+          ]
         },
         {
           "code": "asked-declined",
@@ -61,7 +94,7 @@
                 "system": "http://snomed.info/sct",
                 "code": "900000000000013009"
               },
-              "value": "Sprunget over"
+              "value": "Spurgt men sprunget over"
             }
           ]
         }
@@ -76,17 +109,47 @@
       ],
       "code": "masked",
       "display": "Masked",
-      "definition": "The information is not available due to security, privacy or related reasons."
+      "definition": "The information is not available due to security, privacy or related reasons.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Skjult"
+        }
+      ]
     },
     {
       "code": "not-applicable",
       "display": "Not Applicable",
-      "definition": "There is no proper value for this element (e.g. last menstrual period for a male)."
+      "definition": "There is no proper value for this element (e.g. last menstrual period for a male).",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Ikke brugbar"
+        }
+      ]
     },
     {
       "code": "unsupported",
       "display": "Unsupported",
-      "definition": "The source system wasn't capable of supporting this element."
+      "definition": "The source system wasn't capable of supporting this element.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Ikke understøttet"
+        }
+      ]
     },
     {
       "extension": [
@@ -97,7 +160,17 @@
       ],
       "code": "as-text",
       "display": "As Text",
-      "definition": "The content of the data is represented in the resource narrative."
+      "definition": "The content of the data is represented in the resource narrative.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Svaret er givet som text i narrative"
+        }
+      ]
     },
     {
       "code": "error",
@@ -123,7 +196,17 @@
           ],
           "code": "not-a-number",
           "display": "Not a Number (NaN)",
-          "definition": "The numeric value is undefined or unrepresentable due to a floating point processing error."
+          "definition": "The numeric value is undefined or unrepresentable due to a floating point processing error.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Udefinerbar"
+            }
+          ]
         },
         {
           "extension": [
@@ -134,7 +217,17 @@
           ],
           "code": "negative-infinity",
           "display": "Negative Infinity (NINF)",
-          "definition": "The numeric value is excessively low and unrepresentable due to a floating point processing error."
+          "definition": "The numeric value is excessively low and unrepresentable due to a floating point processing error.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Negativ uendelig"
+            }
+          ]
         },
         {
           "extension": [
@@ -145,14 +238,34 @@
           ],
           "code": "positive-infinity",
           "display": "Positive Infinity (PINF)",
-          "definition": "The numeric value is excessively high and unrepresentable due to a floating point processing error."
+          "definition": "The numeric value is excessively high and unrepresentable due to a floating point processing error.",
+          "designation": [
+            {
+              "language": "da",
+              "use": {
+                "system": "http://snomed.info/sct",
+                "code": "900000000000013009"
+              },
+              "value": "Positiv uendelig"
+            }
+          ]
         }
       ]
     },
     {
       "code": "not-performed",
       "display": "Not Performed",
-      "definition": "The value is not available because the observation procedure (test, etc.) was not performed."
+      "definition": "The value is not available because the observation procedure (test, etc.) was not performed.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Sprunget over"
+        }
+      ]
     },
     {
       "extension": [
@@ -163,7 +276,17 @@
       ],
       "code": "not-permitted",
       "display": "Not Permitted",
-      "definition": "The value is not permitted in this context (e.g. due to profiles, or the base data types)."
+      "definition": "The value is not permitted in this context (e.g. due to profiles, or the base data types).",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Ikke tilladt"
+        }
+      ]
     }
   ]
 }
