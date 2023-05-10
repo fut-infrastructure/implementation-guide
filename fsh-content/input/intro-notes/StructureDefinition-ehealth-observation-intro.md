@@ -55,10 +55,8 @@ a Provenance resource, which identifies the resources which were submitted in th
 
 The search-measurements operation can return the resources submitted as part of the same bundle.
 
-##### Marking Observations with Data Absent Reason
-If marking an Observation, without a measured value, with a reason for data to be absent using `.dataAbsentReason`, then the eHealth Infrastructure will create a Task with `.category` "MeasurementForAssessmentAbsentValue" unless the Null-rule is specified by the ServiceRequest.
-Other rules than Null-rule specified by ServiceRequests will be ignored if a "dataAbsentReason" is present.
-The "dataAbsentReason" requires a value from the ValueSet: "http://ehealth.sundhed.dk/vs/data-absent-reason".
+##### Marking Observations with result missing
+An Observation is expected to contain a result along with details, for instance when it was obtained. In the event that no result can be measured or otherwise obtained, an Observation can be submitted with the `.dataAbsentReason` specified.
 
 ### Searching for Observations
 It is possible to search for Observations based on:
