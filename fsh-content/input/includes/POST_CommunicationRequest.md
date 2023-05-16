@@ -23,13 +23,13 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2108"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2152"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/32622"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/83632"
   }
 }
 ```
@@ -38,10 +38,10 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2110",
+  "id": "2154",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-15T14:52:17.401+00:00",
+    "lastUpdated": "2023-05-16T07:50:06.542+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -50,13 +50,13 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2108"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2152"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/32622"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/83632"
   }
 }
 ```

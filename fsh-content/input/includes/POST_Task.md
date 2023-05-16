@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXRhc2stMTYxNy5sb2NhbC9maGlyL1ByYWN0aXRpb25lci84NDIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlRhc2suY3JlYXRlIiwiUmVzdHJpY3Rpb25DYXRlZ29yeSRtZWFzdXJlbWVudC1tb25pdG9yaW5nIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC10YXNrLTE2MTcubG9jYWwvZmhpci9DYXJlVGVhbS84OTAyNCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXRhc2stMTY3OS5sb2NhbC9maGlyL1ByYWN0aXRpb25lci81NDA0NCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJUYXNrLmNyZWF0ZSIsIlJlc3RyaWN0aW9uQ2F0ZWdvcnkkbWVhc3VyZW1lbnQtbW9uaXRvcmluZyJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtdGFzay0xNjc5LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vNjUwMzQiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1617.local/fhir/EpisodeOfCare/75895"
+        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/18889"
       }
     },
     {
@@ -51,19 +51,19 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1617.local/fhir/CareTeam/89024"
+        "reference": "https://organization.cit-task-1679.local/fhir/CareTeam/65034"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1617.local/fhir/Practitioner/32849"
+        "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/82565"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://patient.cit-task-1617.local/fhir/Patient/47946"
+        "reference": "https://patient.cit-task-1679.local/fhir/Patient/61099"
       }
     }
   ],
@@ -71,7 +71,7 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1617.local/fhir/Patient/89635"
+    "reference": "https://patient.cit-task-1679.local/fhir/Patient/56731"
   }
 }
 ```
@@ -80,10 +80,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "260",
+  "id": "264",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-07T15:40:51.645+00:00",
+    "lastUpdated": "2023-05-16T07:00:29.940+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -92,7 +92,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1617.local/fhir/EpisodeOfCare/75895"
+        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/18889"
       }
     },
     {
@@ -120,19 +120,19 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1617.local/fhir/CareTeam/89024"
+        "reference": "https://organization.cit-task-1679.local/fhir/CareTeam/65034"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1617.local/fhir/Practitioner/32849"
+        "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/82565"
       }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://patient.cit-task-1617.local/fhir/Patient/47946"
+        "reference": "https://patient.cit-task-1679.local/fhir/Patient/61099"
       }
     }
   ],
@@ -140,8 +140,8 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1617.local/fhir/Patient/89635"
+    "reference": "https://patient.cit-task-1679.local/fhir/Patient/56731"
   },
-  "authoredOn": "2023-03-07T15:40:51+00:00"
+  "authoredOn": "2023-05-16T07:00:29+00:00"
 }
 ```

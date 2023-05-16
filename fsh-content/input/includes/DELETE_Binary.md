@@ -1,9 +1,9 @@
-`DELETE [base]/Binary/11`
+`DELETE [base]/Binary/21`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2NkZDljOTEtNGUxYy00ZjhiLTk3NTgtNGY4MzMxNzBjMGY4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjAyYTJmOTktOWE3ZS00NTM4LWFmNDctMjY2YTI1Yjc4YzM5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip

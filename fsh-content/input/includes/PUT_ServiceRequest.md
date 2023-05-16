@@ -1,4 +1,4 @@
-`PUT [base]/ServiceRequest/2235`
+`PUT [base]/ServiceRequest/2297`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2235",
+  "id": "2297",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-15T14:53:01.371+00:00",
+    "lastUpdated": "2023-05-16T07:50:59.790+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -27,7 +27,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2234"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2296"
       }
     },
     {
@@ -36,18 +36,43 @@ __Body__:
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-            "code": "noSharing",
-            "display": "No sharing"
+            "code": "noSharing"
           }
         ]
       }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
+      "extension": [
+        {
+          "url": "status",
+          "valueCode": "on-hold"
+        },
+        {
+          "url": "scheduledTime",
+          "valueDateTime": "2023-05-16T07:50:59+00:00"
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
+      "extension": [
+        {
+          "url": "status",
+          "valueCode": "revoked"
+        },
+        {
+          "url": "scheduledTime",
+          "valueDateTime": "2023-06-14T07:50:59+00:00"
+        }
+      ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2359.local/fhir/ActivityDefinition/85886"
+    "https://plan.cit-careplan-2467.local/fhir/ActivityDefinition/94941"
   ],
-  "status": "completed",
-  "intent": "option",
+  "status": "active",
+  "intent": "filler-order",
   "code": {
     "coding": [
       {
@@ -55,10 +80,10 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "4bbfa774-77c2-4d00-a0ea-8dbb2c738349"
+    "text": "12254d24-58c3-480a-946f-ca72cdfa54d3"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/56957"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/87825"
   }
 }
 ```
@@ -67,10 +92,10 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2235",
+  "id": "2297",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-15T14:53:03.690+00:00",
+    "lastUpdated": "2023-05-16T07:51:00.889+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -79,7 +104,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2234"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2296"
       }
     },
     {
@@ -88,18 +113,43 @@ __Response__
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies",
-            "code": "noSharing",
-            "display": "No sharing"
+            "code": "noSharing"
           }
         ]
       }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
+      "extension": [
+        {
+          "url": "status",
+          "valueCode": "on-hold"
+        },
+        {
+          "url": "scheduledTime",
+          "valueDateTime": "2023-05-16T07:50:59+00:00"
+        }
+      ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
+      "extension": [
+        {
+          "url": "status",
+          "valueCode": "revoked"
+        },
+        {
+          "url": "scheduledTime",
+          "valueDateTime": "2023-06-14T07:50:59+00:00"
+        }
+      ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2359.local/fhir/ActivityDefinition/85886"
+    "https://plan.cit-careplan-2467.local/fhir/ActivityDefinition/94941"
   ],
-  "status": "completed",
-  "intent": "option",
+  "status": "active",
+  "intent": "filler-order",
   "code": {
     "coding": [
       {
@@ -107,10 +157,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "4bbfa774-77c2-4d00-a0ea-8dbb2c738349"
+    "text": "12254d24-58c3-480a-946f-ca72cdfa54d3"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/56957"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/87825"
   }
 }
 ```

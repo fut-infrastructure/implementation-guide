@@ -1,9 +1,9 @@
-`GET [base]/Organization/330/_history/1`
+`GET [base]/Organization/326/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzQ0ODY3MzMtYjEwMi00MTdlLWI0ZjgtZGNkOTA1Mzc0YTA0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWFjNjI0ODAtYjcyNy00OTZhLTlkMDgtOGU5YWNmOWUxZGU2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "330",
+  "id": "326",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-07T15:06:50.301+00:00",
-    "source": "#5ba326c3-8610-92",
+    "lastUpdated": "2023-05-08T14:30:19.110+00:00",
+    "source": "#3a260603-931d-91",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -31,7 +31,7 @@ __Response__
         {
           "url": "target",
           "valueReference": {
-            "reference": "https://organization.cit-organization-1081.local/fhir/Organization/256"
+            "reference": "https://organization.cit-organization-1090.local/fhir/Organization/252"
           }
         },
         {
@@ -48,8 +48,8 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-03-07T15:06:50+00:00",
-            "end": "2023-03-07T15:06:50+00:00"
+            "start": "2023-05-08T14:30:19+00:00",
+            "end": "2023-05-08T14:30:19+00:00"
           }
         }
       ]
@@ -83,12 +83,12 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-03-07T15:06:49+00:00"
+        "start": "2023-05-08T14:30:18+00:00"
       }
     }
   ],
   "active": false,
-  "name": "defaultTestFactory-417da76c-4047-4869-82d9-e0baab61015b",
+  "name": "defaultTestFactory-365c6de8-792a-4680-ac53-3175731dea26",
   "contact": [
     {
       "telecom": [
@@ -118,7 +118,7 @@ __Response__
             },
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue",
-              "valueString": "66f061e0-1ac2-4a41-be0d-43ce14b3fd81"
+              "valueString": "13b7bbee-2263-4fbf-ab54-50f5f7f02b81"
             }
           ]
         }

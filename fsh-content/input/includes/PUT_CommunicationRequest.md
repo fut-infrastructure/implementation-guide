@@ -1,4 +1,4 @@
-`PUT [base]/CommunicationRequest/2175`
+`PUT [base]/CommunicationRequest/2219`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2175",
+  "id": "2219",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-15T14:52:37.201+00:00",
+    "lastUpdated": "2023-05-16T07:50:25.725+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -27,18 +27,18 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2173"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2217"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2359.local/fhir/ServiceRequest/2174"
+      "reference": "https://careplan.cit-careplan-2467.local/fhir/ServiceRequest/2218"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/25780"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/76542"
   }
 }
 ```
@@ -47,10 +47,10 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2175",
+  "id": "2219",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-15T14:52:37.316+00:00",
+    "lastUpdated": "2023-05-16T07:50:25.851+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -59,18 +59,18 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2173"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2217"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2359.local/fhir/ServiceRequest/2174"
+      "reference": "https://careplan.cit-careplan-2467.local/fhir/ServiceRequest/2218"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/25780"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/76542"
   }
 }
 ```

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmI4ZDQwYjktNWZiNy00M2E4LThiMDQtOTc2NzM3YWRhZWI1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTU1OTY4NzctMjcyOS00YWRmLTlkZjMtZDQ4NGFiNWJmMThhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1626.local/fhir/EpisodeOfCare/52979"
+        "reference": "https://careplan.cit-measurement-1639.local/fhir/EpisodeOfCare/89192"
       }
     },
     {
@@ -76,24 +76,24 @@ __Body__:
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1626.local/fhir/ServiceRequest/44299"
+      "reference": "https://careplan.cit-measurement-1639.local/fhir/ServiceRequest/22247"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1626.local/fhir/Questionnaire/54813",
+  "questionnaire": "https://questionnaire.cit-measurement-1639.local/fhir/Questionnaire/90562",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1626.local/fhir/Patient/17253"
+    "reference": "https://patient.cit-measurement-1639.local/fhir/Patient/33962"
   },
-  "authored": "2023-03-07T15:44:49+00:00",
+  "authored": "2023-05-11T10:30:29+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1626.local/fhir/Patient/58886"
+    "reference": "https://patient.cit-measurement-1639.local/fhir/Patient/83166"
   },
   "item": [
     {
-      "linkId": "769e59e1-3a05-40af-ba26-65f9e770ddfd",
+      "linkId": "eaadd0c8-8604-435b-bb91-2b127fb35d9f",
       "answer": [
         {
-          "valueInteger": 61
+          "valueInteger": 559
         }
       ]
     }
@@ -108,7 +108,7 @@ __Response__
   "id": "232",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-07T15:44:49.959+00:00",
+    "lastUpdated": "2023-05-11T10:30:29.774+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -117,7 +117,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-1626.local/fhir/EpisodeOfCare/52979"
+        "reference": "https://careplan.cit-measurement-1639.local/fhir/EpisodeOfCare/89192"
       }
     },
     {
@@ -170,24 +170,24 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-1626.local/fhir/ServiceRequest/44299"
+      "reference": "https://careplan.cit-measurement-1639.local/fhir/ServiceRequest/22247"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-1626.local/fhir/Questionnaire/54813",
+  "questionnaire": "https://questionnaire.cit-measurement-1639.local/fhir/Questionnaire/90562",
   "status": "in-progress",
   "subject": {
-    "reference": "https://patient.cit-measurement-1626.local/fhir/Patient/17253"
+    "reference": "https://patient.cit-measurement-1639.local/fhir/Patient/33962"
   },
-  "authored": "2023-03-07T15:44:49+00:00",
+  "authored": "2023-05-11T10:30:29+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-1626.local/fhir/Patient/58886"
+    "reference": "https://patient.cit-measurement-1639.local/fhir/Patient/83166"
   },
   "item": [
     {
-      "linkId": "769e59e1-3a05-40af-ba26-65f9e770ddfd",
+      "linkId": "eaadd0c8-8604-435b-bb91-2b127fb35d9f",
       "answer": [
         {
-          "valueInteger": 61
+          "valueInteger": 559
         }
       ]
     }

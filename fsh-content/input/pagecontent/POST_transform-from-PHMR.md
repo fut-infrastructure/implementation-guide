@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2023-03-07T15:17:57.112+00:00",
+        "date": "2023-05-08T13:11:22.711+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "d91a8f33-2c94-49f5-a5d5-904ddc0b8954",
+        "id": "90b403c2-8fd0-461c-adae-f1af92833476",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -267,7 +267,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Device",
-        "id": "ff8e8a18-d10c-4645-8fdb-8afa24a3e898",
+        "id": "75cb0c8f-0422-48f0-92b1-e243f13de43e",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
@@ -293,7 +293,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "971f4cac-a2fa-42f2-8877-0a01c6764b7c",
+        "id": "400e2f83-77c4-433f-82d7-7002d35763ae",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -410,14 +410,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1445.local/fhir/Device/ff8e8a18-d10c-4645-8fdb-8afa24a3e898"
+          "reference": "https://document-transformation.cit-document-transformation-1461.local/fhir/Device/75cb0c8f-0422-48f0-92b1-e243f13de43e"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "c827ca3b-ffbb-47b2-8956-618f2201a926",
+        "id": "5b6ae5c9-2910-447e-8c40-27c6a078813c",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -534,14 +534,14 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1445.local/fhir/Device/ff8e8a18-d10c-4645-8fdb-8afa24a3e898"
+          "reference": "https://document-transformation.cit-document-transformation-1461.local/fhir/Device/75cb0c8f-0422-48f0-92b1-e243f13de43e"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "9625c784-bda9-4ec6-97a4-a664ac365a3c",
+        "id": "3049a610-1e3e-41bc-bf04-e74ff095dce2",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -652,7 +652,7 @@ __Response__
           "unit": "NA"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-1445.local/fhir/Device/ff8e8a18-d10c-4645-8fdb-8afa24a3e898"
+          "reference": "https://document-transformation.cit-document-transformation-1461.local/fhir/Device/75cb0c8f-0422-48f0-92b1-e243f13de43e"
         }
       }
     }

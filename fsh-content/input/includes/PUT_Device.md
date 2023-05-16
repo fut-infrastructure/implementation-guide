@@ -18,7 +18,7 @@ __Body__:
   "id": "147",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-07T15:24:17.459+00:00",
+    "lastUpdated": "2023-05-08T07:11:12.997+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -40,7 +40,7 @@ __Response__
   "id": "147",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-07T15:24:17.718+00:00",
+    "lastUpdated": "2023-05-08T07:11:13.263+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]

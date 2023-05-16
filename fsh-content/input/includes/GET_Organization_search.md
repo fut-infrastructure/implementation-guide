@@ -1,9 +1,9 @@
-`GET [base]/Organization?name=defaultTestFactory-8b2bd67b-65d5-4286-9163-627d0e98c0ac&_count=1`
+`GET [base]/Organization?name=defaultTestFactory-0315a853-c9e5-40c3-b84c-911d09754665&_count=1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjAzZjgyM2MtNmUxNS00YWMzLWE3ZGQtNjUzMzdiOWZlNDJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOTJlZGY4ZDctYzk3YS00ZWM4LWJlZjgtMGVkZDMwMzZmNDI3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,32 +15,32 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "5545e2a8-43c8-43da-9a2c-8bbaede4f4b4",
+  "id": "54d15433-7a75-489d-9e97-dffdf9e0d24c",
   "meta": {
-    "lastUpdated": "2023-03-07T15:06:54.366+00:00"
+    "lastUpdated": "2023-05-08T14:30:23.214+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1081.local/fhir/Organization?_count=1&_format=json&_pretty=true&name=defaultTestFactory-8b2bd67b-65d5-4286-9163-627d0e98c0ac"
+      "url": "https://organization.cit-organization-1090.local/fhir/Organization?_count=1&_format=json&_pretty=true&name=defaultTestFactory-0315a853-c9e5-40c3-b84c-911d09754665"
     },
     {
       "relation": "next",
-      "url": "https://organization.cit-organization-1081.local/fhir?_getpages=5545e2a8-43c8-43da-9a2c-8bbaede4f4b4&_getpagesoffset=1&_count=1&_format=json&_pretty=true&_bundletype=searchset"
+      "url": "https://organization.cit-organization-1090.local/fhir?_getpages=54d15433-7a75-489d-9e97-dffdf9e0d24c&_getpagesoffset=1&_count=1&_format=json&_pretty=true&_bundletype=searchset"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1081.local/fhir/Organization/344",
+      "fullUrl": "https://organization.cit-organization-1090.local/fhir/Organization/340",
       "resource": {
         "resourceType": "Organization",
-        "id": "344",
+        "id": "340",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-03-07T15:06:52.888+00:00",
-          "source": "#4a098072-3849-97",
+          "lastUpdated": "2023-05-08T14:30:21.700+00:00",
+          "source": "#24bf53c7-cadd-98",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
           ]
@@ -75,12 +75,12 @@ __Response__
             "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
             "value": "11111111",
             "period": {
-              "start": "2023-03-07T15:06:52+00:00"
+              "start": "2023-05-08T14:30:21+00:00"
             }
           }
         ],
         "active": false,
-        "name": "defaultTestFactory-8b2bd67b-65d5-4286-9163-627d0e98c0ac"
+        "name": "defaultTestFactory-0315a853-c9e5-40c3-b84c-911d09754665"
       },
       "search": {
         "mode": "match"

@@ -1,9 +1,9 @@
-`PATCH [base]/Organization/274`
+`PATCH [base]/Organization/270`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzQ4N2NlM2EtMzA5Ni00YWM5LTg5ZWItMTM3ZmVmNzUyZDcxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDMzZmQyNGItMzNkZC00ZjllLTg4NDctNzVkNDI5MDFlYzdiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -16,7 +16,7 @@ __Body__:
   {
     "op": "replace",
     "path": "/extension/0/extension/2/valuePeriod/end",
-    "value": "2023-03-08"
+    "value": "2023-05-09"
   }
 ]
 ```
@@ -25,11 +25,11 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "274",
+  "id": "270",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-07T15:06:19.953+00:00",
-    "source": "#df229e31-ece1-9d",
+    "lastUpdated": "2023-05-08T14:29:46.807+00:00",
+    "source": "#df287525-a95b-95",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -41,7 +41,7 @@ __Response__
         {
           "url": "target",
           "valueReference": {
-            "reference": "https://organization.cit-organization-1081.local/fhir/Organization/256"
+            "reference": "https://organization.cit-organization-1090.local/fhir/Organization/252"
           }
         },
         {
@@ -58,8 +58,8 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-03-07T15:06:19+00:00",
-            "end": "2023-03-08"
+            "start": "2023-05-08T14:29:46+00:00",
+            "end": "2023-05-09"
           }
         }
       ]
@@ -93,11 +93,11 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-03-07T15:06:19+00:00"
+        "start": "2023-05-08T14:29:46+00:00"
       }
     }
   ],
   "active": false,
-  "name": "defaultTestFactory-06c0052b-7d23-4a45-b800-ad58df09d9c6"
+  "name": "defaultTestFactory-13799201-e04d-4353-972c-814b0f12e630"
 }
 ```

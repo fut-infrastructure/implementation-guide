@@ -1,4 +1,4 @@
-`GET [base]/Task/271`
+`GET [base]/Task/275`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "271",
+  "id": "275",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-07T15:41:23.292+00:00",
-    "source": "#a061f009-0805-91",
+    "lastUpdated": "2023-05-16T07:01:02.275+00:00",
+    "source": "#639ee516-1b25-97",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1617.local/fhir/EpisodeOfCare/96364"
+        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/34543"
       }
     },
     {
@@ -56,7 +56,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1617.local/fhir/Practitioner/87133"
+        "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/75118"
       }
     }
   ],
@@ -64,7 +64,7 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "owner": {
-    "reference": "https://organization.cit-task-1617.local/fhir/Practitioner/9303"
+    "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/5621"
   }
 }
 ```

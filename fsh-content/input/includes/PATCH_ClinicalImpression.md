@@ -1,4 +1,4 @@
-`PATCH [base]/ClinicalImpression/302`
+`PATCH [base]/ClinicalImpression/306`
 
 __Header__
 ```
@@ -25,11 +25,11 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "302",
+  "id": "306",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-03-07T15:42:28.424+00:00",
-    "source": "#1dbd3ac9-cca4-9e",
+    "lastUpdated": "2023-05-16T07:02:10.096+00:00",
+    "source": "#8530d613-5bd5-99",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -38,7 +38,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1617.local/fhir/EpisodeOfCare/51798"
+        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/91644"
       }
     },
     {
@@ -63,7 +63,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1617.local/fhir/Patient/87101"
+    "reference": "https://patient.cit-task-1679.local/fhir/Patient/15590"
   }
 }
 ```

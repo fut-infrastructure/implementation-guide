@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiN2NjZjcyN2EtYzFkZC00ZGRhLWI0ZDktOGY3ODcwMmIxYjM4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC53cml0ZSJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1kZXZpY2UtODAzLmxvY2FsL2ZoaXIvUGF0aWVudC83MTIxIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTQ2NTFjYWItZWU0OC00YWEzLTliMGItNjRjNmU3MDM0Njc5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC53cml0ZSJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1kZXZpY2UtODE0LmxvY2FsL2ZoaXIvUGF0aWVudC8yNzY2OSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -23,16 +23,16 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-803.local/fhir/CarePlan/5274"
+        "reference": "https://careplan.cit-device-814.local/fhir/CarePlan/6925"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.cit-device-803.local/fhir/Patient/7121"
+    "reference": "https://patient.cit-device-814.local/fhir/Patient/27669"
   },
   "device": {
-    "reference": "https://device.cit-device-803.local/fhir/Device/55"
+    "reference": "https://device.cit-device-814.local/fhir/Device/55"
   }
 }
 ```
@@ -44,7 +44,7 @@ __Response__
   "id": "56",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-07T15:23:11.908+00:00",
+    "lastUpdated": "2023-05-08T07:09:57.939+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ],
@@ -65,16 +65,16 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-803.local/fhir/CarePlan/5274"
+        "reference": "https://careplan.cit-device-814.local/fhir/CarePlan/6925"
       }
     }
   ],
   "status": "active",
   "subject": {
-    "reference": "https://patient.cit-device-803.local/fhir/Patient/7121"
+    "reference": "https://patient.cit-device-814.local/fhir/Patient/27669"
   },
   "device": {
-    "reference": "https://device.cit-device-803.local/fhir/Device/55"
+    "reference": "https://device.cit-device-814.local/fhir/Device/55"
   }
 }
 ```

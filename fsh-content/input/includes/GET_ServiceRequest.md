@@ -1,4 +1,4 @@
-`GET [base]/ServiceRequest/2280`
+`GET [base]/ServiceRequest/2345`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2280",
+  "id": "2345",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-03-15T14:53:43.852+00:00",
-    "source": "#9b35e8b8-0044-9a",
+    "lastUpdated": "2023-05-16T07:51:39.008+00:00",
+    "source": "#0e61812f-d945-93",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ],
@@ -38,7 +38,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2359.local/fhir/EpisodeOfCare/2276"
+        "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2341"
       }
     },
     {
@@ -95,7 +95,7 @@ __Response__
         {
           "url": "dataActuality",
           "valueDuration": {
-            "value": 1846031514,
+            "value": -967491325,
             "system": "http://unitsofmeasure.org",
             "code": "h"
           }
@@ -105,10 +105,32 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-trigger-enablement-code",
       "valueCode": "NO_TRIGGER"
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusHistory",
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/request-status",
+                "code": "draft"
+              }
+            ]
+          }
+        },
+        {
+          "url": "period",
+          "valuePeriod": {
+            "start": "2023-05-16T07:51:39+00:00"
+          }
+        }
+      ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2359.local/fhir/ActivityDefinition/6677"
+    "https://plan.cit-careplan-2467.local/fhir/ActivityDefinition/14535"
   ],
   "status": "draft",
   "intent": "order",
@@ -121,7 +143,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2359.local/fhir/Patient/1628"
+    "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/41412"
   }
 }
 ```

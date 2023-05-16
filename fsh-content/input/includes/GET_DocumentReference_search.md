@@ -1,4 +1,4 @@
-`GET [base]/DocumentReference?type=http%3A%2F%2Floinc.org%7C48766-0&description=d4a240ec-9543-4bb8-a5f5-7bcca167d2c1`
+`GET [base]/DocumentReference?type=http%3A%2F%2Floinc.org%7C48766-0&description=99fd8205-a9d9-4916-806e-2d109b0e41dd`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "3dfeec5b-bc54-4122-85cb-3518d2221d92",
+  "id": "7097a0b1-bb4e-469b-a45c-b6cb5c2fcdec",
   "meta": {
-    "lastUpdated": "2023-03-07T19:08:01.452+00:00"
+    "lastUpdated": "2023-05-08T13:55:15.300+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-1230.local/fhir/DocumentReference?_format=json&_pretty=true&description=d4a240ec-9543-4bb8-a5f5-7bcca167d2c1&type=http%3A%2F%2Floinc.org%7C48766-0"
+      "url": "https://plan.cit-plan-1240.local/fhir/DocumentReference?_format=json&_pretty=true&description=99fd8205-a9d9-4916-806e-2d109b0e41dd&type=http%3A%2F%2Floinc.org%7C48766-0"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1230.local/fhir/DocumentReference/87",
+      "fullUrl": "https://plan.cit-plan-1240.local/fhir/DocumentReference/44",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "87",
+        "id": "44",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-03-07T19:08:01.146+00:00",
-          "source": "#76c817ed-feef-99",
+          "lastUpdated": "2023-05-08T13:55:15.007+00:00",
+          "source": "#5801d651-a8f3-99",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -50,8 +50,8 @@ __Response__
             }
           ]
         },
-        "date": "2023-03-07T19:08:01.134+00:00",
-        "description": "d4a240ec-9543-4bb8-a5f5-7bcca167d2c1",
+        "date": "2023-05-08T13:55:14.867+00:00",
+        "description": "99fd8205-a9d9-4916-806e-2d109b0e41dd",
         "content": [
           {
             "attachment": {
@@ -65,14 +65,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1230.local/fhir/DocumentReference/88",
+      "fullUrl": "https://plan.cit-plan-1240.local/fhir/DocumentReference/45",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "88",
+        "id": "45",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-03-07T19:08:01.327+00:00",
-          "source": "#e1dd003c-0dec-98",
+          "lastUpdated": "2023-05-08T13:55:15.135+00:00",
+          "source": "#fec2527e-94e0-92",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -86,8 +86,8 @@ __Response__
             }
           ]
         },
-        "date": "2023-03-07T19:08:01.330+00:00",
-        "description": "d4a240ec-9543-4bb8-a5f5-7bcca167d2c1",
+        "date": "2023-05-08T13:55:15.096+00:00",
+        "description": "99fd8205-a9d9-4916-806e-2d109b0e41dd",
         "content": [
           {
             "attachment": {

@@ -1,4 +1,4 @@
-`GET [base]/CommunicationRequest?category=notification&status=active&reasonCode=EpisodeOfCareCreated&episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-2359.local%2Ffhir%2FEpisodeOfCare%2F2530&recipient=https%3A%2F%2Fpatient.cit-careplan-2359.local%2Ffhir%2FPatient%2F65823`
+`GET [base]/CommunicationRequest?category=notification&status=active&reasonCode=EpisodeOfCareCareTeamChange&episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-2467.local%2Ffhir%2FEpisodeOfCare%2F2654&recipient=https%3A%2F%2Fpatient.cit-careplan-2467.local%2Ffhir%2FPatient%2F14527`
 
 __Header__
 ```
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "658b2cf0-271e-477b-aecf-e1a19d08d0ac",
+  "id": "ad1e08f7-dcaf-4316-9110-5868357c3610",
   "meta": {
-    "lastUpdated": "2023-03-15T14:55:42.283+00:00"
+    "lastUpdated": "2023-05-16T07:54:17.630+00:00"
   },
   "type": "searchset",
   "total": 0,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.cit-careplan-2359.local/fhir/CommunicationRequest?_format=json&_pretty=true&category=notification&episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-2359.local%2Ffhir%2FEpisodeOfCare%2F2530&reasonCode=EpisodeOfCareCreated&recipient=https%3A%2F%2Fpatient.cit-careplan-2359.local%2Ffhir%2FPatient%2F65823&status=active"
+      "url": "https://careplan.cit-careplan-2467.local/fhir/CommunicationRequest?_format=json&_pretty=true&category=notification&episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-2467.local%2Ffhir%2FEpisodeOfCare%2F2654&reasonCode=EpisodeOfCareCareTeamChange&recipient=https%3A%2F%2Fpatient.cit-careplan-2467.local%2Ffhir%2FPatient%2F14527&status=active"
     }
   ]
 }
