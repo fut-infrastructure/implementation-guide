@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2023-03-11T02:27:23.781+00:00",
+  "date": "2023-05-13T02:27:23.698+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.11.2"
+    "version": "1.12.2"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -278,6 +278,10 @@
         "type": "string",
         "documentation": "Search the contents of the resource's data using a filter"
       }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -297,10 +301,6 @@
         "name": "identifier",
         "type": "token",
         "documentation": "The unique identifier for the questionnaire response"
-      }, {
-        "name": "lastUpdated",
-        "type": "date",
-        "documentation": "The date when resource was updated last time"
       }, {
         "name": "qualityCode",
         "type": "token",
