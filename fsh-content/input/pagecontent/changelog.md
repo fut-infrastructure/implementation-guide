@@ -3,6 +3,18 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
+## 2.8.0 (2023-06-01)
+
+### General changes
 - Added mention of dataAbsentReason to intro for Observation.
 
 ### Custom operations
