@@ -25,6 +25,7 @@ Parent: Task
 * relevantHistory ^type.aggregation = #referenced
 * restriction.recipient only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Group or ehealth-organization)
 * restriction.recipient ^type.aggregation = #referenced
+* obeys forIsPatient
 
 Extension: ehealth-task-category
 Title:     "Task category"
@@ -46,3 +47,9 @@ Extension:   ehealth-task-episodeOfCare
 Title:       "EpisodeOfCare"
 * value[x] only Reference(ehealth-episodeofcare)
 * value[x] ^type.aggregation = #referenced
+
+Invariant: forIsPatient
+Description: "Constrains for to be exactly 1 reference to a patient"
+Severity: #error
+Expression: "episodeOfCare.count() != 1 or (for.ofType(Patient).count() = 1 and for.count() = 1)"
+
