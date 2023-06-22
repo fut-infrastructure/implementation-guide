@@ -1,0 +1,232 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ns-jpa-profile",
+  "url": "https://github.com/hapifhir/hapi-fhir/ns/jpa/profile",
+  "version": "0.6.0",
+  "name": "NS_JPA_PROFILE",
+  "title": "NS_JPA_PROFILE",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-06-22T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Tag værdi for FHIR profile",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-auditevent",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-auditevent",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-auditevent"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-appointment",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-group-videoappointment"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-advanced",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-advanced",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-advanced"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-skrs-patient"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-videoappointment"
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view",
+      "display": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view",
+      "definition": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-view"
+    }
+  ]
+}
