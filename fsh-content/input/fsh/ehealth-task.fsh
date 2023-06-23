@@ -51,5 +51,5 @@ Title:       "EpisodeOfCare"
 Invariant: forIsPatient
 Description: "Constrains for to be exactly 1 reference to a patient"
 Severity: #error
-Expression: "for.count() = 1"
+Expression: "for.count() = 1 and for.contains('Patient/')"
 

@@ -118,7 +118,6 @@ Invariant:   notification-invariant
 Description: "Category notification invariant"
 Expression:  "category.coding.code = 'notification' implies (recipient.reference.contains('Patient/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
 Severity:    #error
-
 Invariant:   advice-invariant
 Description: "Category advice invariant"
 Expression:  "category.coding.code = 'advice' implies (recipient.reference.contains('Patient/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').valueReference.exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
