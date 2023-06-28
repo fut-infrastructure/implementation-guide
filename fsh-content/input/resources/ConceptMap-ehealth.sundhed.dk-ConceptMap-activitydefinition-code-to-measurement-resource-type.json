@@ -2,13 +2,13 @@
   "resourceType": "ConceptMap",
   "id": "activitydefinition-code-to-measurement-resource-type",
   "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type",
-  "version": "2023-27-06T15:00:00",
+  "version": "2023-06-28T15:00:00",
   "name": "activitydefinition-code-to-measurement-resource-type",
   "title": "Activitydefinition-code to measurement resource type",
   "status": "active",
   "experimental": false,
   "description": "The map controls what type of measurement resource type is expected for a given activity code.",
-  "date": "2023-27-06T00:00:00+00:00",
+  "date": "2023-06-28T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
     {

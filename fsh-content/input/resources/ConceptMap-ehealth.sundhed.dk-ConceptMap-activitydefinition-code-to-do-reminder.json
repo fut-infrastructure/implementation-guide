@@ -2,13 +2,13 @@
   "resourceType": "ConceptMap",
   "id": "activitydefinition-code-to-do-reminder",
   "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder",
-  "version": "2023-27-06T15:00:00",
+  "version": "2023-06-28T15:00:00",
   "name": "activitydefinition-code-to-do-reminder",
   "title": "Activitydefinition-code to do reminder",
   "status": "active",
   "experimental": false,
   "description": "The map controls whether an activity shall be subjected to producing reminders or not.",
-  "date": "2023-27-06T00:00:00+00:00",
+  "date": "2023-06-28T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
     {
