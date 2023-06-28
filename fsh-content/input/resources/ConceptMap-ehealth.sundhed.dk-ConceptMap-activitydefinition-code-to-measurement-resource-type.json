@@ -33,8 +33,8 @@
           "display": "Master Questionnaire",
           "target": [
             {
-              "code": "Questionnaire",
-              "display": "Questionnaire",
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
               "equivalence": "relatedto"
             }
           ]
@@ -44,8 +44,8 @@
           "display": "Situation quality assessment",
           "target": [
             {
-              "code": "Questionnaire",
-              "display": "Questionnaire",
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
               "equivalence": "relatedto"
             }
           ]
@@ -55,8 +55,8 @@
           "display": "Usage quality assessment",
           "target": [
             {
-              "code": "Questionnaire",
-              "display": "Questionnaire",
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
               "equivalence": "relatedto"
             }
           ]
@@ -255,8 +255,8 @@
           "display": "Assessment using health assessment questionnaire (procedure)",
           "target": [
             {
-              "code": "Questionnaire",
-              "display": "Questionnaire",
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
               "equivalence": "relatedto"
             }
           ]
@@ -266,8 +266,8 @@
           "display": "Master questionnaire",
           "target": [
             {
-              "code": "Questionnaire",
-              "display": "Questionnaire",
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
               "equivalence": "relatedto"
             }
           ]
