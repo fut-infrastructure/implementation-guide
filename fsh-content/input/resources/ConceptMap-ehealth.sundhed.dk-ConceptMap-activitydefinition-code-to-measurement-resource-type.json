@@ -7,7 +7,7 @@
   "title": "Activitydefinition-code to measurement resource type",
   "status": "active",
   "experimental": false,
-  "description": "The map controls what type of measurement resource type is expected for a given activity code.",
+  "description": "The map controls what type of measurement resource is expected for a given activity code.",
   "date": "2023-06-28T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
