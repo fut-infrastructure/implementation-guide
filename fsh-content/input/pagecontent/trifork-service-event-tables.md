@@ -1,10 +1,12 @@
 
 #### Appointment Messages
 
-|MessageType|EventType|Topic|Description|
-|---|---|---|---|
-|EHealthSimpleEvent|created|ehealth-appointment|Generated when an Appointment is created.|
-|EHealthSimpleEvent|updated|ehealth-appointment|Generated when an Appointment is updated.|
+|MessageType|EventType| Topic                | Description                                   |
+|---|---|----------------------|-----------------------------------------------|
+|EHealthSimpleEvent|created| ehealth-appointment  | Generated when an Appointment is created.     |
+|EHealthSimpleEvent|updated| ehealth-appointment  | Generated when an Appointment is updated.     |
+|EHealthSimpleEvent|created| ehealth-appointment  | Generated when a GroupAppointment is created. |
+|EHealthSimpleEvent|updated| ehealth-appointment  | Generated when a GroupAppointment is updated. |
 {:.grid}
 
 #### Communication Messages
@@ -35,8 +37,10 @@
 
 #### Video Appointment Messages
 
-|MessageType|EventType|Topic|Description|
-|---|---|---|---|
-|EHealthSimpleEvent|created|ehealth-videoappointment|Generated when a VideoAppointment is created.|
-|EHealthSimpleEvent|updated|ehealth-videoappointment|Generated when a VideoAppointment is updated.|
+|MessageType|EventType| Topic                     | Description                                        |
+|---|---|---------------------------|----------------------------------------------------|
+|EHealthSimpleEvent|created| ehealth-videoappointment  | Generated when a VideoAppointment is created.      |
+|EHealthSimpleEvent|updated| ehealth-videoappointment  | Generated when a VideoAppointment is updated.      |
+|EHealthSimpleEvent|created| ehealth-videoappointment  | Generated when a GroupVideoAppointment is created. |
+|EHealthSimpleEvent|updated| ehealth-videoappointment  | Generated when a GroupVideoAppointment is updated. |
 {:.grid}
