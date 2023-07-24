@@ -51,5 +51,5 @@ Title:       "EpisodeOfCare"
 Invariant: forIsPatient
 Description: "Constrains for to be exactly 1 reference to a patient"
 Severity: #error
-Expression: "episodeOfCare.count() = 0 or (for.count() = 1 and for.reference.contains('Patient/'))"
+Expression: "episodeOfCare.count() = 1 implies (for.count() = 1 and for.reference.contains('Patient/'))"
 
