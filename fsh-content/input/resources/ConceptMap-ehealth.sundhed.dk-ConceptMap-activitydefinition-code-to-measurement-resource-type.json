@@ -1,0 +1,278 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "activitydefinition-code-to-measurement-resource-type",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type",
+  "version": "2023-06-28T15:00:00",
+  "name": "activitydefinition-code-to-measurement-resource-type",
+  "title": "Activitydefinition-code to measurement resource type",
+  "status": "active",
+  "experimental": false,
+  "description": "The map controls what type of measurement resource is expected for a given activity code.",
+  "date": "2023-06-28T00:00:00+00:00",
+  "publisher": "Systematic A/S",
+  "contact": [
+    {
+      "name": "Systematic A/S",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
+  "targetUri": "http://hl7.org/fhir/resource-types",
+  "group": [
+    {
+      "source": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "273586006",
+          "display": "Master Questionnaire",
+          "target": [
+            {
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "SQ",
+          "display": "Situation quality assessment",
+          "target": [
+            {
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "QR",
+          "display": "Usage quality assessment",
+          "target": [
+            {
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:1.2.208.176.2.1",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "NPU03011",
+          "display": "O2 sat.;Hb(aB)",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU21692",
+          "display": "Puls;Hjerte",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU03804",
+          "display": "Legeme vægt; Pt",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU27281",
+          "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU03794",
+          "display": "Pt—Legeme; højde = ? m",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:1.2.208.184.100.8",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "MCS88015",
+          "display": "FEV1;Lunge",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88016",
+          "display": "FVC;Lunge",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88017",
+          "display": "FEV1/FVC;Lunge",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88021",
+          "display": "MRC skala;Pt(KOL)",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88023",
+          "display": "FEV1 af forventet værdi;Pt(KOL)",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88050",
+          "display": "Rejse sætte sig testen;Pt",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88137",
+          "display": "CAT score;Pt",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:1.2.208.176.2.4",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "ZZ3170",
+          "display": "Hjemmeblodtryksmåling udført af patienten",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "445988008",
+          "display": "Assessment using health assessment questionnaire (procedure)",
+          "target": [
+            {
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "273586006",
+          "display": "Master questionnaire",
+          "target": [
+            {
+              "code": "QuestionnaireResponse",
+              "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

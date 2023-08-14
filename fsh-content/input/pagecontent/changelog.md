@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Added missing documentation for group appointment/video appointment events
 
 ### Custom operations
 #### System operations
