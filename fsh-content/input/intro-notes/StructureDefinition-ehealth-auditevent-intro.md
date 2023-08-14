@@ -235,7 +235,7 @@ An example:
 
 Once indexed in Splunk, entities can be queried wrt. generating reports, statistics etc. For example, to view the number of audit-entries for the different practitioners on inttest, use this Splunk query:
 
-<pre>index="inttest_k8s_ehealth-private_application" kubernetes_deployment_name="auditlog-consumer" sourcetype=kubernetes_logs kubernetes_container_name="auditlog-consumer" | top issuerId</pre>
+<pre>index="inttest_k8s_ehealth-audit_audit" kubernetes_deployment_name="auditlog-consumer" sourcetype=kubernetes_logs kubernetes_container_name="auditlog-consumer" | top issuerId</pre>
 
 ### Usage log
 
