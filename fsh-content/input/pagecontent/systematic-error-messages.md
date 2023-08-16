@@ -342,6 +342,8 @@
 
 - `TASK_AUTOMATED_PROCESSING_CAREPLAN_NOT_FOUND`: CarePlan is not found when searching by activity: %s.
 
+- `TASK_FOR_NOT_SET`: When episode of care is set, the field 'for' must reference the corresponding patient
+
 #### ehealth-transformation
 
 - `TRANSFORMATION_QFDD_XML_MISSING`: Invalid input document reference, it must contain content with data of QFDD xml
@@ -395,4 +397,3 @@
 - `VERSIONING_REFERENCE_NOT_RELEVANT_FOR_RESOURCE`: Versioning validation error: References included in deep_clone_references must be present in resource to clone, %s: %s.
 
 - `VERSIONING_REFERENCE_MISSING_IN_TREE_PATH`: Versioning validation error: The following resources could not be cloned since their parent resource, %s, is not present in deep_clone_refernces: %s.
-
