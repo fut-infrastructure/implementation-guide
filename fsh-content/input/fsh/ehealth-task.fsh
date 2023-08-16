@@ -46,4 +46,3 @@ Extension:   ehealth-task-episodeOfCare
 Title:       "EpisodeOfCare"
 * value[x] only Reference(ehealth-episodeofcare)
 * value[x] ^type.aggregation = #referenced
-
