@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDYxMjY5MDMtZjM1Yy00NDhiLWI1NjQtZjkyMTM2N2RlZGEyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1kdXJhdGlvbi1zdGF0cyIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctNzU3LmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzY5MDQzIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmZkMDI1ZTktOGM0NS00ZTE5LTkwNzctOTRlZWFmNDAyZTBkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1kdXJhdGlvbi1zdGF0cyIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctODU4LmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzU0MDkyIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-757.local/fhir/Organization/69043"
+        "reference": "https://organization.cit-reporting-858.local/fhir/Organization/54092"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-05-08T14:11:43+00:00",
-        "end": "2023-05-08T14:11:43+00:00"
+        "start": "2023-08-16T06:35:46+00:00",
+        "end": "2023-08-16T06:35:46+00:00"
       }
     }
   ]
@@ -40,10 +40,10 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "9",
+  "id": "10",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T14:11:44.891+00:00",
+    "lastUpdated": "2023-08-16T06:35:47.943+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "06126903-f35c-448b-b564-f921367deda2"
+      "value": "6fd025e9-8c45-4e19-9077-94eeaf402e0d"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

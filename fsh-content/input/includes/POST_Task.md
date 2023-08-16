@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXRhc2stMTY3OS5sb2NhbC9maGlyL1ByYWN0aXRpb25lci81NDA0NCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJUYXNrLmNyZWF0ZSIsIlJlc3RyaWN0aW9uQ2F0ZWdvcnkkbWVhc3VyZW1lbnQtbW9uaXRvcmluZyJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtdGFzay0xNjc5LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vNjUwMzQiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/18889"
+        "reference": "https://careplan.cit-task-1746.local/fhir/EpisodeOfCare/94249"
       }
     },
     {
@@ -43,7 +43,7 @@ __Body__:
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-            "code": "measurement-monitoring"
+            "code": "None"
           }
         ]
       }
@@ -51,19 +51,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1679.local/fhir/CareTeam/65034"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/82565"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "https://patient.cit-task-1679.local/fhir/Patient/61099"
+        "reference": "https://organization.cit-task-1746.local/fhir/Practitioner/4186"
       }
     }
   ],
@@ -71,7 +59,7 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1679.local/fhir/Patient/56731"
+    "reference": "https://patient.cit-task-1746.local/fhir/Patient/57884"
   }
 }
 ```
@@ -80,10 +68,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "264",
+  "id": "348",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-16T07:00:29.940+00:00",
+    "lastUpdated": "2023-08-15T11:51:36.211+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -92,7 +80,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1679.local/fhir/EpisodeOfCare/18889"
+        "reference": "https://careplan.cit-task-1746.local/fhir/EpisodeOfCare/94249"
       }
     },
     {
@@ -112,7 +100,7 @@ __Response__
         "coding": [
           {
             "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-            "code": "measurement-monitoring"
+            "code": "None"
           }
         ]
       }
@@ -120,19 +108,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1679.local/fhir/CareTeam/65034"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "https://organization.cit-task-1679.local/fhir/Practitioner/82565"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "https://patient.cit-task-1679.local/fhir/Patient/61099"
+        "reference": "https://organization.cit-task-1746.local/fhir/Practitioner/4186"
       }
     }
   ],
@@ -140,8 +116,8 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1679.local/fhir/Patient/56731"
+    "reference": "https://patient.cit-task-1746.local/fhir/Patient/57884"
   },
-  "authoredOn": "2023-05-16T07:00:29+00:00"
+  "authoredOn": "2023-08-15T11:51:36+00:00"
 }
 ```

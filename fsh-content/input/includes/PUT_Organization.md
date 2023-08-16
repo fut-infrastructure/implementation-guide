@@ -1,4 +1,4 @@
-`PUT [base]/Organization/352`
+`PUT [base]/Organization/275`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "352",
+  "id": "275",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T14:30:26.621+00:00",
+    "lastUpdated": "2023-07-28T13:16:01.138+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -53,20 +53,20 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-05-08T14:30:26+00:00"
+        "start": "2023-07-28T13:16:00+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "4f08ed0c-649f-45d4-8f1e-043a13cccfe8",
+      "value": "97e6e828-717d-4128-97e2-475ae6888c5c",
       "period": {
-        "start": "2023-05-08T14:30:26+00:00"
+        "start": "2023-07-28T13:16:00+00:00"
       }
     }
   ],
   "active": false,
-  "name": "77afb786-08ee-43f5-a23b-3bff17289904"
+  "name": "b12f1aa6-9b5a-4265-a445-9e29eb708460"
 }
 ```
 
@@ -74,10 +74,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "352",
+  "id": "275",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-05-08T14:30:26.722+00:00",
+    "lastUpdated": "2023-07-28T13:16:01.332+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -112,19 +112,19 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-05-08T14:30:26+00:00"
+        "start": "2023-07-28T13:16:00+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "4f08ed0c-649f-45d4-8f1e-043a13cccfe8",
+      "value": "97e6e828-717d-4128-97e2-475ae6888c5c",
       "period": {
-        "start": "2023-05-08T14:30:26+00:00"
+        "start": "2023-07-28T13:16:00+00:00"
       }
     }
   ],
   "active": false,
-  "name": "77afb786-08ee-43f5-a23b-3bff17289904"
+  "name": "b12f1aa6-9b5a-4265-a445-9e29eb708460"
 }
 ```

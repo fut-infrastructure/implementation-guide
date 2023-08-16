@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTEyNDAubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vODkxMzYiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQQVRJRU5UIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1wbGFuLTEyNTEubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vNjQ0OTQiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQQVRJRU5UIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -28,9 +28,9 @@ __Body__:
       }
     ]
   },
-  "date": "2023-05-08T13:58:07.797+00:00",
+  "date": "2023-07-28T12:51:50.462+00:00",
   "custodian": {
-    "reference": "https://organization.cit-plan-1240.local/fhir/Organization/89136"
+    "reference": "https://organization.cit-plan-1251.local/fhir/Organization/64494"
   },
   "content": [
     {
@@ -46,10 +46,10 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "328",
+  "id": "348",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T13:58:07.812+00:00",
+    "lastUpdated": "2023-07-28T12:51:50.568+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -63,9 +63,9 @@ __Response__
       }
     ]
   },
-  "date": "2023-05-08T13:58:07.797+00:00",
+  "date": "2023-07-28T12:51:50.462+00:00",
   "custodian": {
-    "reference": "https://organization.cit-plan-1240.local/fhir/Organization/89136"
+    "reference": "https://organization.cit-plan-1251.local/fhir/Organization/64494"
   },
   "content": [
     {

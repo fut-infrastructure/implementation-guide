@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -21,7 +21,7 @@ __Body__:
         "resourceType": "Questionnaire",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-advanced"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
           ]
         },
         "extension": [
@@ -42,7 +42,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/56705"
+                  "reference": "https://organization.cit-questionnaire-1149.local/fhir/Organization/65537"
                 }
               },
               {
@@ -59,8 +59,8 @@ __Body__:
             ]
           }
         ],
-        "version": "b4526341-4803-400a-af83-c6b84261ee84",
-        "name": "fdf6515a-b57f-49cd-bd1f-d7d68346cf20",
+        "version": "1.0",
+        "name": "13577e80-7081-4645-a7f7-06d7030a1fa3",
         "status": "active"
       }
     }

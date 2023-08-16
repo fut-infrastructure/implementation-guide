@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjJkZjFjZDAtMjcxMi00MTEyLWI1YjItMmRlN2U2YjdlZWFkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTU2MGEzMmUtNGJmYy00YzQ2LWE0YTItZTU2OTBlMDhhZTFiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,8 +18,8 @@ __Response__
   "id": "36",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-05-08T14:05:01.469+00:00",
-    "source": "#7d012235-e5fe-94",
+    "lastUpdated": "2023-07-28T12:53:55.095+00:00",
+    "source": "#9667b64d-6b32-9b",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -27,13 +27,7 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "new revision value"
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "https://organization.cit-library-804.local/fhir/Organization/27113"
-      }
+      "valueString": "3d668c7a-e688-460a-b88a-5cc82d60b4d3"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -41,7 +35,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-library-804.local/fhir/Organization/52588"
+            "reference": "https://organization.cit-library-813.local/fhir/Organization/63091"
           }
         },
         {
@@ -58,7 +52,7 @@ __Response__
       ]
     }
   ],
-  "version": "4203df51-6ad2-44c7-91ab-6a746ffe1115",
+  "version": "38506763-de76-42bb-8c6d-220005a290d2",
   "status": "draft",
   "type": {
     "coding": [

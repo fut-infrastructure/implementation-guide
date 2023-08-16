@@ -1,9 +1,9 @@
-`PUT [base]/Questionnaire/180`
+`PUT [base]/Questionnaire/130`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
@@ -15,21 +15,15 @@ __Body__:
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "180",
+  "id": "130",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T14:28:15.818+00:00",
+    "lastUpdated": "2023-08-15T07:15:44.205+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
   },
   "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/99389"
-      }
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type",
       "valueCodeableConcept": {
@@ -47,7 +41,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/44922"
+            "reference": "https://organization.cit-questionnaire-1149.local/fhir/Organization/48366"
           }
         },
         {
@@ -65,8 +59,8 @@ __Body__:
     }
   ],
   "version": "1.0",
-  "name": "ac976170-d81e-4bab-9768-ac4b32d9318f",
-  "status": "retired"
+  "name": "c270e1f4-af39-4880-9bf7-dc282aabccec",
+  "status": "active"
 }
 ```
 
@@ -74,22 +68,15 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "180",
+  "id": "130",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-05-08T14:28:15.979+00:00",
-    "source": "#db791e5a-c161-9c",
+    "lastUpdated": "2023-08-15T07:15:48.724+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
   },
   "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/99389"
-      }
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type",
       "valueCodeableConcept": {
@@ -107,7 +94,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/44922"
+            "reference": "https://organization.cit-questionnaire-1149.local/fhir/Organization/48366"
           }
         },
         {
@@ -122,10 +109,36 @@ __Response__
           }
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
+      "valueIdentifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:bee7c8a2-27c3-4038-ad01-e37f06b51396",
+        "assigner": {
+          "identifier": {
+            "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+            "value": "cit-questionnaire-1149"
+          }
+        }
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
+      "valueIdentifier": {
+        "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
+        "value": "cit-questionnaire-1149"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:4c1191b8-5128-4adc-a415-fd226e01c9a8"
     }
   ],
   "version": "1.0",
-  "name": "ac976170-d81e-4bab-9768-ac4b32d9318f",
-  "status": "retired"
+  "name": "c270e1f4-af39-4880-9bf7-dc282aabccec",
+  "status": "active"
 }
 ```

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTUyNDQ0ZGItZGUwZS00ODNmLTk5MmMtNjYwOTcwZTZkOTdkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjZjYmIyNWUtYjY5YS00OThmLWI5NjktNzc5YzY2Y2EyM2E4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1639.local/fhir/EpisodeOfCare/6179"
+              "reference": "https://careplan.cit-measurement-1661.local/fhir/EpisodeOfCare/19192"
             }
           },
           {
@@ -81,7 +81,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1639.local/fhir/ServiceRequest/18096"
+            "reference": "https://careplan.cit-measurement-1661.local/fhir/ServiceRequest/12502"
           }
         ],
         "status": "completed",
@@ -94,9 +94,9 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1639.local/fhir/Patient/99507"
+          "reference": "https://patient.cit-measurement-1661.local/fhir/Patient/80638"
         },
-        "createdDateTime": "2023-05-11T10:31:20+00:00",
+        "createdDateTime": "2023-08-15T11:49:29+00:00",
         "content": {
           "language": "en"
         }

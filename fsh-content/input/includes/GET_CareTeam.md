@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2RjMWViOTQtNjJhOC00YTAzLWI2YjUtODVhNTFiMGQ3ODIzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWM4OWM5NGEtZDU3Zi00ZTkyLTk2ZDQtYTA3OTI1ZDg5NjhmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,8 +18,8 @@ __Response__
   "id": "364",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T14:30:32.429+00:00",
-    "source": "#4a704a19-d892-9d",
+    "lastUpdated": "2023-07-28T13:17:28.091+00:00",
+    "source": "#fcef19da-663e-96",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,11 +27,11 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:44dd3bb9-8ede-4c4e-a06a-00e1ee3361b1"
+      "value": "urn:uuid:912322df-0718-4a4f-aced-5fd19ec273ce"
     }
   ],
   "status": "active",
-  "name": "5aa89b0e-cd19-4160-bf20-07e5807074f1",
+  "name": "66886e6c-c3a4-4d79-af49-eaa6552b0b01",
   "participant": [
     {
       "role": [
@@ -45,7 +45,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1090.local/fhir/Patient/45431"
+        "reference": "https://patient.cit-organization-1099.local/fhir/Patient/77444"
       }
     },
     {
@@ -60,7 +60,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1090.local/fhir/CareTeam/361"
+        "reference": "https://organization.cit-organization-1099.local/fhir/CareTeam/361"
       }
     },
     {
@@ -75,7 +75,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1090.local/fhir/Practitioner/363"
+        "reference": "https://organization.cit-organization-1099.local/fhir/Practitioner/363"
       }
     }
   ],
@@ -91,7 +91,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-1090.local/fhir/Organization/362"
+      "reference": "https://organization.cit-organization-1099.local/fhir/Organization/362"
     }
   ]
 }

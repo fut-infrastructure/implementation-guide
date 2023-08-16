@@ -20,7 +20,7 @@ __Body__:
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
-          "lastUpdated": "2023-05-16T07:51:07.725+00:00",
+          "lastUpdated": "2023-08-15T10:21:45.951+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -29,7 +29,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/2318"
+              "reference": "https://careplan.cit-careplan-2595.local/fhir/EpisodeOfCare/2835"
             }
           },
           {
@@ -86,16 +86,38 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -890807887,
+                  "value": 1843657089,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
+                }
+              }
+            ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusHistory",
+            "extension": [
+              {
+                "url": "status",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/request-status",
+                      "code": "completed"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2023-08-15T10:21:45+00:00"
                 }
               }
             ]
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2467.local/fhir/ActivityDefinition/80593"
+          "https://plan.cit-careplan-2595.local/fhir/ActivityDefinition/55792"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -106,10 +128,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "c00ae124-3bdc-4b63-a739-5998e0c46aa7"
+          "text": "a8bfa98a-688a-4f68-86c7-b7b3d19c3ab9"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/73960"
+          "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/39534"
         }
       }
     }

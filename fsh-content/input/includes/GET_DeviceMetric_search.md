@@ -1,4 +1,4 @@
-`GET [base]/DeviceMetric?qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-814.local%2Ffhir%2FDevice%2F143`
+`GET [base]/DeviceMetric?qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-833.local%2Ffhir%2FDevice%2F89`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "48c5ecc1-1225-4698-89c3-401584b41846",
+  "id": "7c2cac94-44a4-43d3-9d3f-ecd9206ce0fc",
   "meta": {
-    "lastUpdated": "2023-05-08T07:11:10.361+00:00"
+    "lastUpdated": "2023-08-15T08:18:27.737+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.cit-device-814.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-814.local%2Ffhir%2FDevice%2F143"
+      "url": "https://device.cit-device-833.local/fhir/DeviceMetric?_format=json&_pretty=true&qualityCategory=initial&source=https%3A%2F%2Fdevice.cit-device-833.local%2Ffhir%2FDevice%2F89"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://device.cit-device-814.local/fhir/DeviceMetric/146",
+      "fullUrl": "https://device.cit-device-833.local/fhir/DeviceMetric/92",
       "resource": {
         "resourceType": "DeviceMetric",
-        "id": "146",
+        "id": "92",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-05-08T07:11:10.162+00:00",
-          "source": "#8d536967-8044-99",
+          "lastUpdated": "2023-08-15T08:18:27.579+00:00",
+          "source": "#2d9c1e3d-f51e-98",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
           ]
@@ -137,7 +137,7 @@ __Response__
           ]
         },
         "source": {
-          "reference": "https://device.cit-device-814.local/fhir/Device/143"
+          "reference": "https://device.cit-device-833.local/fhir/Device/89"
         },
         "category": "calculation"
       },

@@ -1,4 +1,4 @@
-`POST [base]/CarePlan/635/$validate`
+`POST [base]/CarePlan/2493/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "635",
+        "id": "2493",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-05-16T07:36:04.345+00:00",
+          "lastUpdated": "2023-08-15T10:19:12.280+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -31,12 +31,34 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2467.local/fhir/EpisodeOfCare/633"
+              "reference": "https://careplan.cit-careplan-2595.local/fhir/EpisodeOfCare/2491"
             }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan-statusHistory",
+            "extension": [
+              {
+                "url": "status",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/request-status",
+                      "code": "draft"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2023-08-15T10:19:10+00:00"
+                }
+              }
+            ]
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2467.local/fhir/PlanDefinition/69851"
+          "https://plan.cit-careplan-2595.local/fhir/PlanDefinition/67512"
         ],
         "status": "draft",
         "intent": "option",
@@ -51,7 +73,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2467.local/fhir/Patient/67189"
+          "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/32525"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -59,7 +81,7 @@ __Body__:
         },
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2467.local/fhir/Condition/634"
+            "reference": "https://careplan.cit-careplan-2595.local/fhir/Condition/2492"
           }
         ]
       }

@@ -1,9 +1,9 @@
-`GET [base]/DeviceUseStatement/94/_history/2`
+`GET [base]/DeviceUseStatement/41/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjI0M2E5MjItOGJjYi00NmViLThmMWUtNTg4YjhkNzA2MjIzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS04MTQubG9jYWwvZmhpci9QYXRpZW50LzI3NjY5IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMmViNDAxYjMtOGIxYy00YTViLWIyZDYtZDZmMDBiZmIyMjU0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIiwiRGV2aWNlVXNlU3RhdGVtZW50LndyaXRlIl19LCJjb250ZXh0Ijp7InBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRldmljZS04MzMubG9jYWwvZmhpci9QYXRpZW50LzUzMDA1IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "DeviceUseStatement",
-  "id": "94",
+  "id": "41",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-05-08T07:10:08.995+00:00",
-    "source": "#110008fb-bb4d-99",
+    "lastUpdated": "2023-08-15T08:17:30.572+00:00",
+    "source": "#b2059047-a7a0-94",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement"
     ]
@@ -28,16 +28,16 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
       "valueReference": {
-        "reference": "https://careplan.cit-device-814.local/fhir/CarePlan/8543"
+        "reference": "https://careplan.cit-device-833.local/fhir/CarePlan/20805"
       }
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-device-814.local/fhir/Patient/27669"
+    "reference": "https://patient.cit-device-833.local/fhir/Patient/53005"
   },
   "device": {
-    "reference": "https://device.cit-device-814.local/fhir/Device/93"
+    "reference": "https://device.cit-device-833.local/fhir/Device/40"
   }
 }
 ```

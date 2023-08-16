@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -21,12 +21,6 @@ __Body__:
   },
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/43797"
-      }
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type",
       "valueCodeableConcept": {
         "coding": [
@@ -43,7 +37,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/57870"
+            "reference": "https://organization.cit-questionnaire-1149.local/fhir/Organization/60155"
           }
         },
         {
@@ -61,8 +55,49 @@ __Body__:
     }
   ],
   "version": "1.0",
-  "name": "d31c6e16-37b4-4f3a-8a03-a6efb8694763",
-  "status": "active"
+  "name": "ab2da586-1cac-4d3b-9df3-5839b37fcc9e",
+  "title": "Title",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "extension,root,authorityName",
+      "text": "Question text",
+      "type": "text"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+          "valueInteger": 1
+        }
+      ],
+      "linkId": "extension1,root,authorityName",
+      "text": "Question text",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:1.2.208.176.2.4",
+            "code": "ALCA00",
+            "display": "fysisk fremmøde"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "urn:oid:1.2.208.176.2.4",
+            "code": "ALCA03",
+            "display": "virtuel kontakt"
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -70,21 +105,15 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "179",
+  "id": "123",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-05-08T14:28:15.422+00:00",
+    "lastUpdated": "2023-08-15T07:10:27.642+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
   },
   "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-intendedOrganization",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/43797"
-      }
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-type",
       "valueCodeableConcept": {
@@ -102,7 +131,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1132.local/fhir/Organization/57870"
+            "reference": "https://organization.cit-questionnaire-1149.local/fhir/Organization/60155"
           }
         },
         {
@@ -122,11 +151,11 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
       "valueIdentifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:6b377491-2c3a-4b02-8335-02560c20c279",
+        "value": "urn:uuid:0418c586-9e24-40d2-a4df-f82e9714be38",
         "assigner": {
           "identifier": {
             "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-            "value": "cit-questionnaire-1132"
+            "value": "cit-questionnaire-1149"
           }
         }
       }
@@ -135,18 +164,59 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
       "valueIdentifier": {
         "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-        "value": "cit-questionnaire-1132"
+        "value": "cit-questionnaire-1149"
       }
     }
   ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:6d5eba49-2a64-4401-9126-8ec9964e0c44"
+      "value": "urn:uuid:c03e64e4-1777-4073-9c13-45517b7830d7"
     }
   ],
   "version": "1.0",
-  "name": "d31c6e16-37b4-4f3a-8a03-a6efb8694763",
-  "status": "active"
+  "name": "ab2da586-1cac-4d3b-9df3-5839b37fcc9e",
+  "title": "Title",
+  "status": "active",
+  "item": [
+    {
+      "linkId": "extension,root,authorityName",
+      "text": "Question text",
+      "type": "text"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+          "valueInteger": 1
+        }
+      ],
+      "linkId": "extension1,root,authorityName",
+      "text": "Question text",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "urn:oid:1.2.208.176.2.4",
+            "code": "ALCA00",
+            "display": "fysisk fremmøde"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "urn:oid:1.2.208.176.2.4",
+            "code": "ALCA03",
+            "display": "virtuel kontakt"
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
