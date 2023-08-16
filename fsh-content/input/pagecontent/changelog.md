@@ -11,6 +11,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 ### ValueSets
 ### ConceptMaps
+- Added `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder`: The map controls whether an activity shall be able to result in the production of reminders.
+- Added `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type`: The map controls what measurement-resource-type is relevant as submission for a given activity.
+
 ### Resource/profile changes
 
 ## 2.8.0 (2023-06-01)
