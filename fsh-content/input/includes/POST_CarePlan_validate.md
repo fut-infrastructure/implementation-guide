@@ -22,7 +22,7 @@ __Body__:
         "id": "2493",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-08-15T10:19:12.280+00:00",
+          "lastUpdated": "2023-08-17T13:40:47.106+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2595.local/fhir/EpisodeOfCare/2491"
+              "reference": "https://careplan.cit-careplan-2598.local/fhir/EpisodeOfCare/2491"
             }
           },
           {
@@ -51,14 +51,14 @@ __Body__:
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2023-08-15T10:19:10+00:00"
+                  "start": "2023-08-17T13:40:45+00:00"
                 }
               }
             ]
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2595.local/fhir/PlanDefinition/67512"
+          "https://plan.cit-careplan-2598.local/fhir/PlanDefinition/65941"
         ],
         "status": "draft",
         "intent": "option",
@@ -73,7 +73,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/32525"
+          "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/79497"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -81,7 +81,7 @@ __Body__:
         },
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2595.local/fhir/Condition/2492"
+            "reference": "https://careplan.cit-careplan-2598.local/fhir/Condition/2492"
           }
         ]
       }

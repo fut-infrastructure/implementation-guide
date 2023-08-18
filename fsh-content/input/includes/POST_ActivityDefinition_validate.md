@@ -22,7 +22,7 @@ __Body__:
         "id": "327",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-07-28T12:51:37.022+00:00",
+          "lastUpdated": "2023-08-16T14:51:40.799+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -45,7 +45,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1251.local/fhir/Organization/83387"
+                  "reference": "https://organization.cit-plan-1259.local/fhir/Organization/89066"
                 }
               },
               {
@@ -63,7 +63,7 @@ __Body__:
           }
         ],
         "version": "1.0",
-        "name": "ffc7eca1-8f8f-45c5-91d7-6466213dd421",
+        "name": "174b78bb-1082-4aa2-9cfc-200e420bcef2",
         "status": "active",
         "topic": [
           {

@@ -22,7 +22,7 @@ __Body__:
         "id": "249",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-07-28T12:50:42.530+00:00",
+          "lastUpdated": "2023-08-16T14:50:46.056+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -36,7 +36,7 @@ __Body__:
             }
           ]
         },
-        "date": "2023-07-28T12:50:42.414+00:00",
+        "date": "2023-08-16T14:50:46.016+00:00",
         "content": [
           {
             "attachment": {

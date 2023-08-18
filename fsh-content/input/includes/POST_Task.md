@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1746.local/fhir/EpisodeOfCare/94249"
+        "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/87919"
       }
     },
     {
@@ -51,7 +51,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1746.local/fhir/Practitioner/4186"
+        "reference": "https://organization.cit-task-1748.local/fhir/Practitioner/54233"
       }
     }
   ],
@@ -59,7 +59,7 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1746.local/fhir/Patient/57884"
+    "reference": "https://patient.cit-task-1748.local/fhir/Patient/60113"
   }
 }
 ```
@@ -71,7 +71,7 @@ __Response__
   "id": "348",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-08-15T11:51:36.211+00:00",
+    "lastUpdated": "2023-08-17T07:59:24.509+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -80,7 +80,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1746.local/fhir/EpisodeOfCare/94249"
+        "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/87919"
       }
     },
     {
@@ -108,7 +108,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1746.local/fhir/Practitioner/4186"
+        "reference": "https://organization.cit-task-1748.local/fhir/Practitioner/54233"
       }
     }
   ],
@@ -116,8 +116,8 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1746.local/fhir/Patient/57884"
+    "reference": "https://patient.cit-task-1748.local/fhir/Patient/60113"
   },
-  "authoredOn": "2023-08-15T11:51:36+00:00"
+  "authoredOn": "2023-08-17T07:59:24+00:00"
 }
 ```

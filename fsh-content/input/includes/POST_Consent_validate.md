@@ -22,7 +22,7 @@ __Body__:
         "id": "1543",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-08-15T10:11:20.993+00:00",
+          "lastUpdated": "2023-08-17T13:32:58.511+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -48,11 +48,11 @@ __Body__:
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/10409"
+          "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/80264"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/58002"
+            "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/91880"
           }
         ],
         "policyRule": {
@@ -70,7 +70,7 @@ __Body__:
           },
           "actor": [
             {
-              "id": "42b5a1f9-7f00-4dad-a59b-20d8bce43e64",
+              "id": "72445f49-b0cf-488c-9ef4-d356af8a2edd",
               "role": {
                 "coding": [
                   {
@@ -80,7 +80,7 @@ __Body__:
                 ]
               },
               "reference": {
-                "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/47760"
+                "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/39678"
               }
             }
           ],
@@ -88,7 +88,7 @@ __Body__:
             {
               "meaning": "related",
               "reference": {
-                "reference": "https://careplan.cit-careplan-2595.local/fhir/EpisodeOfCare/1542"
+                "reference": "https://careplan.cit-careplan-2598.local/fhir/EpisodeOfCare/1542"
               }
             }
           ]

@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1746.local/fhir/EpisodeOfCare/92056"
+              "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/91685"
             }
           },
           {
@@ -56,7 +56,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1746.local/fhir/Practitioner/62848"
+              "reference": "https://organization.cit-task-1748.local/fhir/Practitioner/25018"
             }
           }
         ],

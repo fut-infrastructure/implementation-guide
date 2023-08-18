@@ -1,4 +1,4 @@
-`GET [base]/ServiceRequest/2751`
+`GET [base]/ServiceRequest/2791`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2751",
+  "id": "2791",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-08-15T10:21:05.007+00:00",
-    "source": "#98394b49-1fda-9e",
+    "lastUpdated": "2023-08-17T13:42:54.686+00:00",
+    "source": "#17e34866-3f9e-94",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2595.local/fhir/EpisodeOfCare/2750"
+        "reference": "https://careplan.cit-careplan-2598.local/fhir/EpisodeOfCare/2790"
       }
     },
     {
@@ -87,14 +87,14 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-08-15T10:21:03+00:00"
+            "start": "2023-08-17T13:42:53+00:00"
           }
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2595.local/fhir/ActivityDefinition/85018"
+    "https://plan.cit-careplan-2598.local/fhir/ActivityDefinition/26117"
   ],
   "status": "completed",
   "intent": "filler-order",
@@ -105,10 +105,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "b45bfd77-d6e0-4c04-8836-8af6d5a3b184"
+    "text": "94596ba6-5dfe-4d5d-a2d0-1471d378bc98"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2595.local/fhir/Patient/52628"
+    "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/44789"
   }
 }
 ```
