@@ -15,3 +15,4 @@ https://docs.ehealth.sundhed.dk/v2.5.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.6.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.7.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.8.0/ig/index.html
+https://docs.ehealth.sundhed.dk/v2.9.0/ig/index.html

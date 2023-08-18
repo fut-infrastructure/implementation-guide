@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2.9.0 (2023-08-29)
 
 ### General changes
 - Added missing documentation for group appointment/video appointment events
