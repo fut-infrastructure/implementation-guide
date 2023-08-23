@@ -1,17 +1,5 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
-
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-
 ## 2.9.0 (2023-08-29)
 
 ### General changes
@@ -19,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Custom operations
 #### System operations
+- Added enforcement on Task (ehealth-task). Requires Task.for to contain Patient reference if Task.episodeOfCare is populated.
 #### Instance operations
 ### Code systems
 ### ValueSets

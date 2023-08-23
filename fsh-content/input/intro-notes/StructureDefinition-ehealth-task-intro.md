@@ -11,7 +11,7 @@ In scope of the eHealth Infrastructure, the Task resource is used for:
 
 Task resources are produced by the eHealth Infrastructure as reaction to measurements being submitted, measurements being submitted at odd timing or expected measurements not being submitted. Measurements in the form of Observation, QuestionnaireResponse or other resources are expected to be submitted by a Patient according to a measurement regime specified in a CarePlan and referenced CarePlan/ServiceRequest.
 
-The context in which the Task is created is identified through `context`. In the eHealth Infrastructure, this is currently a reference to an EpisodeOfCare, but in future use, it could be a reference to an Encounter. The `focus` element describes what resource the Task responsible should be acting on and can reference any resource. The `for` element contains a reference to the patient specified as patient in the referenced EpisodeOfCare.
+The context in which the Task is created is identified through `episodeOfCare`. The `focus` element describes what resource the Task responsible should be acting on and can reference any resource. The `for` element can contain a reference to a Patient and shall be specified if the Task pertains to a Patient as subject. In case `episodeOfCare` references an EpisodeOfCare, it is enforced that `for` references the same Patient as is referenced in the EpisodeOfCare."
 
 ### Use of Task for coordinating assessment of submitted measurement
 
