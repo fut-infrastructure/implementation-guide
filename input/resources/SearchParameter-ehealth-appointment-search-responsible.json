@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-appointment-search-responsible",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/responsible",
+    "name": "responsible",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "responsible",
+    "base": [
+        "Appointment"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding responsible entity on Appointment",
+    "expression": "Appointment.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible')",
+    "xpathUsage": "normal"
+}

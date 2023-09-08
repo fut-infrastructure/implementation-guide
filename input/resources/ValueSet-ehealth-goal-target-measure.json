@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "goal-target-measure",
+  "url": "http://ehealth.sundhed.dk/vs/goal-target-measure",
+  "version": "2021-01-13T00:00:00+00:00",
+  "name": "GoalTargetMeasure",
+  "title": "Goal Target Measure",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-01-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set for goal target measure.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/observation-codes"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "care-plan-status",
+  "meta": {
+    "lastUpdated": "2019-10-24T11:53:00+11:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
+      "valueString": "Informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    }
+  ],
+  "url": "http://hl7.org/fhir/care-plan-status",
+  "version": "3.0.2",
+  "name": "Care Plan Status",
+  "status": "active",
+  "content": "supplement",
+  "experimental": false,
+  "date": "2019-10-24T11:53:00+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "supplements": "http://hl7.org/fhir/request-status",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record.",
+  "concept": [
+    {
+      "code": "draft",
+      "display": "Draft",
+      "definition": "The plan is in development or awaiting use but is not yet intended to be acted upon.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Under udarbejdelse"
+        }
+      ]
+    },
+    {
+      "code": "active",
+      "display": "Active",
+      "definition": "The plan is intended to be followed and used as part of patient care.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Aktiv"
+        }
+      ]
+    },
+    {
+      "code": "on-hold",
+      "display": "On Hold",
+      "definition": "The plan has been temporarily stopped but is expected to resume in the future.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Suspenderet"
+        }
+      ]
+    },
+    {
+      "code": "completed",
+      "display": "Completed",
+      "definition": "The plan is no longer in use and is not expected to be followed or used in patient care.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Afsluttet"
+        }
+      ]
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered In Error",
+      "definition": "The plan was entered in error and voided.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Fejlindtastning"
+        }
+      ]
+    },
+    {
+      "code": "revoked",
+      "display": "Revoked",
+      "definition": "The plan has been terminated prior to reaching completion (though it may have been replaced by a new plan).",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Annulleret"
+        }
+      ]
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown",
+      "definition": "The authoring system doesn't know the current state of the care plan.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Ukendt"
+        }
+      ]
+    }
+  ]
+}

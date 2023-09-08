@@ -1,0 +1,136 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hl7.org-fhir-episode-of-care-status",
+  "text": {
+    "status": "generated",
+    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003cp/\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDisplay\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDefinition\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eplanned\u003ca name\u003d\"episode-of-care-status-dk-supplement-planned\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003ePlanned\u003c/td\u003e\u003ctd\u003eThis episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003ewaitlist\u003ca name\u003d\"episode-of-care-status-dk-supplement-waitlist\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eWaitlist\u003c/td\u003e\u003ctd\u003eThis episode has been placed on a waitlist, pending the episode being made active (or cancelled).\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eactive\u003ca name\u003d\"episode-of-care-status-dk-supplement-active\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eActive\u003c/td\u003e\u003ctd\u003eThis episode of care is current.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eonhold\u003ca name\u003d\"episode-of-care-status-dk-supplement-onhold\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eOn Hold\u003c/td\u003e\u003ctd\u003eThis episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite).\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003efinished\u003ca name\u003d\"episode-of-care-status-dk-supplement-finished\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eFinished\u003c/td\u003e\u003ctd\u003eThis episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as \u0026quot;closed\u0026quot;, \u0026quot;completed\u0026quot; or other similar terms.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003ecancelled\u003ca name\u003d\"episode-of-care-status-dk-supplement-cancelled\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eCancelled\u003c/td\u003e\u003ctd\u003eThe episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eentered-in-error\u003ca name\u003d\"episode-of-care-status-dk-supplement-entered-in-error\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eEntered in Error\u003c/td\u003e\u003ctd\u003eThis instance should not have been part of this patient\u0027s medical record.\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003cp\u003e\u003cb\u003eAdditional Language Displays\u003c/b\u003e\u003c/p\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDansk (Danish, da)\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eplanned\u003c/td\u003e\u003ctd\u003ePlanlagt\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003ewaitlist\u003c/td\u003e\u003ctd\u003eVenteliste\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eactive\u003c/td\u003e\u003ctd\u003eAktiv\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eonhold\u003c/td\u003e\u003ctd\u003ePauseret\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003efinished\u003c/td\u003e\u003ctd\u003eFærdig\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003ecancelled\u003c/td\u003e\u003ctd\u003eAnnulleret\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eentered-in-error\u003c/td\u003e\u003ctd\u003eFejlindtastning\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e"
+  },
+  "url": "http://hl7.org/fhir/episode-of-care-status",
+  "version": "2021.3.0",
+  "name": "EpisodeOfCareStatus",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-10-27T13:27:27+00:00",
+  "publisher": "HL7 DK",
+  "contact": [
+    {
+      "name": "HL7 DK",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.dk/"
+        }
+      ]
+    }
+  ],
+  "description": "The status of the episode of care.",
+  "content": "supplement",
+  "supplements": "http://hl7.org/fhir/episode-of-care-status",
+  "concept": [
+    {
+      "code": "planned",
+      "display": "Planned",
+      "definition": "This episode of care is planned to start at the date specified in the period.start. During this status, an organization may perform assessments to determine if the patient is eligible to receive services, or be organizing to make resources available to provide care services.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Planlagt"
+        }
+      ]
+    },
+    {
+      "code": "waitlist",
+      "display": "Waitlist",
+      "definition": "This episode has been placed on a waitlist, pending the episode being made active (or cancelled).",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Venteliste"
+        }
+      ]
+    },
+    {
+      "code": "active",
+      "display": "Active",
+      "definition": "This episode of care is current.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Aktiv"
+        }
+      ]
+    },
+    {
+      "code": "onhold",
+      "display": "On Hold",
+      "definition": "This episode of care is on hold, the organization has limited responsibility for the patient (such as while on respite).",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Pauseret"
+        }
+      ]
+    },
+    {
+      "code": "finished",
+      "display": "Finished",
+      "definition": "This episode of care is finished and the organization is not expecting to be providing further care to the patient. Can also be known as \"closed\", \"completed\" or other similar terms.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Færdig"
+        }
+      ]
+    },
+    {
+      "code": "cancelled",
+      "display": "Cancelled",
+      "definition": "The episode of care was cancelled, or withdrawn from service, often selected during the planned stage as the patient may have gone elsewhere, or the circumstances have changed and the organization is unable to provide the care. It indicates that services terminated outside the planned/expected workflow.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Annulleret"
+        }
+      ]
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "This instance should not have been part of this patient\u0027s medical record.",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009"
+          },
+          "value": "Fejlindtastning"
+        }
+      ]
+    }
+  ]
+}

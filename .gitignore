@@ -21,3 +21,6 @@ def.json
 validator_cli.jar
 fsh-content/node_modules
 *.DS_Store
+.index.json
+fsh-generated
+input-cache

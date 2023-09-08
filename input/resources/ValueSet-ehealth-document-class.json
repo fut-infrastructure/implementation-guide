@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-document-class",
+  "url": "http://ehealth.sundhed.dk/vs/document-class",
+  "version": "0.6.0",
+  "name": "DocumentClass",
+  "title": "Document Class",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Class value set.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "900000000000469006",
+            "display": "URL",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Hyperlink"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-message-reasonCode",
+  "url": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+  "version": "0.1.0",
+  "name": "MessageReasonCode",
+  "title": "Message ReasonCode",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-12-07T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Message ReasonCode",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "EpisodeOfCareCreated",
+      "display": "EpisodeOfCare Created",
+      "definition": "EpisodeOfCare Created",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Oprettelse af telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "EpisodeOfCareCareTeamChange",
+      "display": "EpisodeOfCare CareTeam Change",
+      "definition": "EpisodeOfCare CareTeam Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af tilknyttede teams for telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "EpisodeOfCareScheduledCareTeamChange",
+      "display": "EpisodeOfCare Scheduled CareTeam Change",
+      "definition": "EpisodeOfCare Scheduled CareTeam Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af planlagte ændringer af tilknyttede teams for telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "EpisodeOfCareStatusChange",
+      "display": "EpisodeOfCare Status Change",
+      "definition": "EpisodeOfCare Status Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af status for telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "EpisodeOfCareScheduledStatusChange",
+      "display": "EpisodeOfCare Scheduled Status Change",
+      "definition": "EpisodeOfCare Scheduled Status Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af planlagte ændringer af status for telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "CarePlanCreated",
+      "display": "CarePlan Created",
+      "definition": "CarePlan Created",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Oprettelse af borgerknyttet plan"
+        }
+      ]
+    },
+    {
+      "code": "CarePlanCareTeamChange",
+      "display": "CarePlan CareTeam Change",
+      "definition": "CarePlan CareTeam Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af tilknyttede teams for borgerknyttet plan"
+        }
+      ]
+    },
+    {
+      "code": "CarePlanScheduledCareTeamChange",
+      "display": "CarePlan Scheduled CareTeam Change",
+      "definition": "CarePlan Scheduled CareTeam Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af planlagte ændringer af tilknyttede teams for borgerknyttet plan"
+        }
+      ]
+    },
+    {
+      "code": "CarePlanStatusChange",
+      "display": "CarePlan Status Change",
+      "definition": "CarePlan Status Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af status for borgerknyttet plan"
+        }
+      ]
+    },
+    {
+      "code": "CarePlanScheduledStatusChange",
+      "display": "CarePlan Scheduled Status Change",
+      "definition": "CarePlan Scheduled Status Change",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændring af planlagte ændringer af status for borgerknyttet plan"
+        }
+      ]
+    },
+    {
+      "code": "ReminderSubmitMeasurement",
+      "display": "Reminder Submit Measurement",
+      "definition": "Reminder Submit Measurement",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Påmindelse om at indsende måledata"
+        }
+      ]
+    },
+    {
+      "code": "AppointmentReminder",
+      "display": "Appointment Reminder",
+      "definition": "Appointment Reminder",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Påmindelse om aftale"
+        }
+      ]
+    },
+    {
+      "code": "VideoAppointmentReminder",
+      "display": "Video Appointment Reminder",
+      "definition": "Video Appointment Reminder",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Påmindelse om videoaftale"
+        }
+      ]
+    }
+  ]
+}

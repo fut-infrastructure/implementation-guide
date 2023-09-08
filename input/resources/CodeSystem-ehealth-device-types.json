@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-device-types",
+  "url": "http://ehealth.sundhed.dk/cs/device-types",
+  "version": "0.6.0",
+  "name": "DeviceTypes",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Types of devices.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    },
+    {
+      "code": "59181002",
+      "display": "Oxygen analyser",
+      "definition": "Oxygen analyser",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-careteam-participant-role",
+  "url": "http://ehealth.sundhed.dk/vs/careteam-participant-role",
+  "version": "0.6.0",
+  "name": "CareTeamParticipantRole",
+  "title": "CareTeam Participant Role",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Care Team Participant Role.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role"
+      }
+    ]
+  }
+}

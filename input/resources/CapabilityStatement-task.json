@@ -1,0 +1,327 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "task",
+  "name": "task",
+  "status": "active",
+  "date": "2023-08-18T03:12:13.041+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "task",
+    "version": "1.12.5"
+  },
+  "implementation": {
+    "description": "eHealth task service",
+    "url": "https://task.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "ClinicalImpression",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "create"
+      } ],
+      "conditionalCreate": true,
+      "searchInclude": [ "ClinicalImpression:previous" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "action",
+        "type": "reference",
+        "documentation": "Action taken as part of assessment procedure"
+      }, {
+        "name": "assessor",
+        "type": "reference",
+        "documentation": "The clinician performing the assessment"
+      }, {
+        "name": "carePlan",
+        "type": "reference",
+        "documentation": "CarePlan"
+      }, {
+        "name": "date",
+        "type": "date",
+        "documentation": "When the assessment was documented"
+      }, {
+        "name": "decision",
+        "type": "token",
+        "documentation": "Decision"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Encounter or Episode created from"
+      }, {
+        "name": "finding-code",
+        "type": "token",
+        "documentation": "What was found"
+      }, {
+        "name": "finding-ref",
+        "type": "reference",
+        "documentation": "What was found"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "Business identifier"
+      }, {
+        "name": "investigation",
+        "type": "reference",
+        "documentation": "Record of a specific investigation"
+      }, {
+        "name": "patient",
+        "type": "reference",
+        "documentation": "Patient or group assessed"
+      }, {
+        "name": "previous",
+        "type": "reference",
+        "documentation": "Reference to last assessment"
+      }, {
+        "name": "problem",
+        "type": "reference",
+        "documentation": "Relevant impressions of patient state"
+      }, {
+        "name": "status",
+        "type": "token",
+        "documentation": "draft | completed | entered-in-error"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "Patient or group assessed"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+    }, {
+      "type": "Task",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "create"
+      } ],
+      "conditionalCreate": true,
+      "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchParam": [ {
+        "name": "_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_has",
+        "type": "string",
+        "documentation": "Return resources linked to by the given target"
+      }, {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_language",
+        "type": "string",
+        "documentation": "The language of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_profile",
+        "type": "uri",
+        "documentation": "Search for resources which have the given profile"
+      }, {
+        "name": "_security",
+        "type": "token",
+        "documentation": "Search for resources which have the given security labels"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "authored-on",
+        "type": "date",
+        "documentation": "Search by creation date"
+      }, {
+        "name": "based-on",
+        "type": "reference",
+        "documentation": "Search by requests this task is based on"
+      }, {
+        "name": "business-status",
+        "type": "token",
+        "documentation": "Search by business status"
+      }, {
+        "name": "category",
+        "type": "token",
+        "documentation": "Search by category"
+      }, {
+        "name": "code",
+        "type": "token",
+        "documentation": "Search by task code"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Search by encounter or episode"
+      }, {
+        "name": "focus",
+        "type": "reference",
+        "documentation": "Search by task focus"
+      }, {
+        "name": "group-identifier",
+        "type": "token",
+        "documentation": "Search by group identifier"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "Search for a task instance by its business identifier"
+      }, {
+        "name": "intent",
+        "type": "token",
+        "documentation": "Search by task intent"
+      }, {
+        "name": "modified",
+        "type": "date",
+        "documentation": "Search by last modification date"
+      }, {
+        "name": "organization",
+        "type": "reference",
+        "documentation": "Search by responsible organization"
+      }, {
+        "name": "owner",
+        "type": "reference",
+        "documentation": "Search by task owner"
+      }, {
+        "name": "part-of",
+        "type": "reference",
+        "documentation": "Search by task this task is part of"
+      }, {
+        "name": "patient",
+        "type": "reference",
+        "documentation": "Search by patient"
+      }, {
+        "name": "performer",
+        "type": "token",
+        "documentation": "Search by recommended type of performer (e.g., Requester, Performer, Scheduler)."
+      }, {
+        "name": "period",
+        "type": "date",
+        "documentation": "Search by period Task is/was underway"
+      }, {
+        "name": "priority",
+        "type": "token",
+        "documentation": "Search by task priority"
+      }, {
+        "name": "requester",
+        "type": "reference",
+        "documentation": "Search by task requester"
+      }, {
+        "name": "responsible",
+        "type": "reference",
+        "documentation": "Search by responsible"
+      }, {
+        "name": "restriction-category",
+        "type": "token",
+        "documentation": "Search by restriction category"
+      }, {
+        "name": "status",
+        "type": "token",
+        "documentation": "Search by task status"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "Search by subject"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/ClinicalImpressionTask-it-validate"
+      } ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
+    "operation": [ {
+      "name": "migrate",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
+    }, {
+      "name": "process-message",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
+      "name": "meta",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    } ]
+  } ]
+}

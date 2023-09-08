@@ -1,0 +1,28 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-persist-login",
+  "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login",
+  "name": "persist-login",
+  "title": "Persist login",
+  "status": "active",
+  "kind": "operation",
+  "description": "This operation persists login information into CareTeams and PractitionerRoles\nThe following elements of each careteam are mandatory:\n- id: Reference based on the careteam from the saml security token\n- status: any\n- name: any\n- reasonCode: any\n- participant: 1 for each careteam-role in the saml security token\n-- role: from the saml security token\n-- member: reference to the practitioner\n-- onBehalfOf: reference to organization (cannot be set currently because of a bug in hapi)\n\nPersist-login will find each careteam, and update it with any new participants and roles from the input bundle.\nThe input careteam resources are are used as a container for the participant list. The rest of the fields are not used.\nThe following elements of each PractitionerRole are mandatory:\n- practitioner\n- organization\n- code: roles from the saml security token (CareteamParticipantRole valueset)\n\nPersist-login will search for practitionerRoles for each combination of (practitioner, organization) and create it if it doesn't already exists.",
+  "affectsState": true,
+  "code": "persist-login",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "careTeam",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "CareTeam"
+  }, {
+    "name": "practitionerRole",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "PractitionerRole"
+  } ]
+}

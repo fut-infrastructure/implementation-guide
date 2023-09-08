@@ -1,0 +1,43 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "snomed-20180930",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://snomed.info/sct/554471000005108/version/20180930 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">557671000005101<a name=\"SnomedCT-ManagedServiceDK-PRODUCTION-DK1000005-20180930T120000Z-557671000005101\"> </a></td><td>Osteopathy clinic</td><td>Osteopathy clinic</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>557671000005101</td><td>osteopatiklinik</td></tr></table></div>"
+    },
+    "url": "http://snomed.info/sct/554471000005108/version/20180930",
+    "identifier": [{
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113883.6.96"
+        }
+    ],
+    "version": "20180930",
+    "name": "Danish-SNOMED-CT-Extension",
+    "title": "Danish SNOMED CT Extension",
+    "status": "active",
+    "experimental": false,
+    "date": "2019-12-27T00:00:00+00:00",
+    "publisher": "Danish Release Centre for SNOMED CT",
+    "contact": [{
+            "telecom": [{
+                    "system": "url",
+                    "value": "https://sundhedsdatastyrelsen.dk/snomedct"
+                }
+            ]
+        }
+    ],
+    "description": "Danish SNOMED CT Extension",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [{
+            "code": "557671000005101",
+            "display": "Osteopathy clinic",
+            "definition": "Osteopathy clinic",
+            "designation": [{
+                    "language": "da",
+                    "value": "osteopatiklinik"
+                }
+            ]
+        }
+    ]
+}

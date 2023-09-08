@@ -1,0 +1,106 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-group-mobility",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-group-mobility",
+  "version": "0.0.1",
+  "name": "FS III, Mobilitet",
+  "title": "FS III, Mobilitet",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "FS III, Mobilitet",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CHANGE_BODY_POSITION",
+      "display": "Ændre kropsstilling",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ændre kropsstilling"
+        }
+      ]
+    },
+    {
+      "code": "MOVE",
+      "display": "Forflytte sig",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Forflytte sig"
+        }
+      ]
+    },
+    {
+      "code": "LIFT_AND_CARRY",
+      "display": "Løfte og bære",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Løfte og bære"
+        }
+      ]
+    },
+    {
+      "code": "WALK",
+      "display": "Gå",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Gå"
+        }
+      ]
+    },
+    {
+      "code": "MOVE_AROUND",
+      "display": "Bevæge sig omkring",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bevæge sig omkring"
+        }
+      ]
+    },
+    {
+      "code": "MOVE_IN_DIFFERENT_ENVIRONMENTS",
+      "display": "Færden i forskellige omgivelser",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Færden i forskellige omgivelser"
+        }
+      ]
+    },
+    {
+      "code": "USE_TRANSPORTATION",
+      "display": "Bruge transportmidler",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bruge transportmidler"
+        }
+      ]
+    },
+    {
+      "code": "ENDURANCE",
+      "display": "Udholdenhed",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Udholdenhed"
+        }
+      ]
+    },
+    {
+      "code": "MUSCLE_STRENGTH",
+      "display": "Muskelstyrke",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Muskelstyrke"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-conditions",
+  "url": "http://ehealth.sundhed.dk/vs/conditions",
+  "version": "2022-01-14T13:07:24",
+  "name": "Conditions",
+  "title": "Conditions",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "Systematic | Trifork",
+  "contact": [
+    {
+      "name": "Systematic | Trifork",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Conditions.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DE10",
+            "display": "Type 1-diabetes"
+          },
+          {
+            "code": "DE11",
+            "display": "Type 2-diabetes"
+          },
+          {
+            "code": "DJ44",
+            "display": "Kronisk obstruktiv lungesygdom"
+          },
+          {
+            "code": "DI20",
+            "display": "Angina pectoris"
+          },
+          {
+            "code": "DI25",
+            "display": "Kronisk iskæmisk hjertesygdom"
+          },
+          {
+            "code": "DI50",
+            "display": "Hjertesvigt"
+          },
+          {
+            "code": "DZ76",
+            "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "F"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J1"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J2"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J3"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J4"
+        } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [ {
+          "property": "concept",
+          "op": "is-a",
+          "value": "J5"
+        } ]
+      }
+    ]
+  }
+}

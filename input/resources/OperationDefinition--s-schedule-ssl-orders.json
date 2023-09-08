@@ -1,0 +1,46 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-schedule-ssl-orders",
+  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-schedule-ssl-orders",
+  "name": "schedule-ssl-orders",
+  "title": "Schedule ssl orders",
+  "status": "active",
+  "kind": "operation",
+  "description": "### Report Contents\nThis report contains SSL Orders\n- OrderDetails\n- OrderLines\n- TraceLines\n### Grouping \nOrder. Each Order is returned in a single JSon file.\n### Parameters\n- organization: Filter on Order.buyer\n- period: Filter on TraceLine.timestamp\n- seller: Filter on Order.seller\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.\n### Example output\nAll returned objects are SSL resources. See the SSL API description for details\n\n    {\n        'OrderDetails': {\n            'order': {\n                'id': 'https://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER',\n                'threadId': null,\n                'identifiers': null,\n                'status': null,\n                'priority': null,\n                'notes': null,\n                'buyer': 'https://ssl-order.local.ehealth.sundhed.dk/v1/party/BUYER',\n                'seller': 'https://ssl-order.local.ehealth.sundhed.dk/v1/party/SELLER',\n                'sellerDeliveryContactEmail': null,\n                'carePlanRef': null,\n                'carePlanTitle': null,\n                'earliestDeliveryDate': null,\n                'latestDeliveryDate': null,\n                'receiver': null\n            },\n            'orderLines': [{\n                    'id': 'https://ssl-order.local.ehealth.sundhed.dk/v1/order-line/ORDERLINE',\n                    'order': 'https://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER',\n                    'status': null,\n                    'item': null,\n                    'agreedDate': null,\n                    'device': null\n                }\n            ],\n            'traceLines': [{\n                    'id': 'https://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER/1',\n                    'timestamp': '2019-12-24T18:00:00Z',\n                    'createdByOrganization': null,\n                    'createdByUser': null,\n                    'text': null,\n                    'supplementaryText': null,\n                    'order': 'https://ssl-order.local.ehealth.sundhed.dk/v1/order/ORDER',\n                    'orderLine': null,\n                    'statusChange': null\n                }\n            ]\n        }\n    }\n",
+  "affectsState": true,
+  "code": "schedule-ssl-orders",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "anonymization",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "string"
+  }, {
+    "name": "organization",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  }, {
+    "name": "seller",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  }, {
+    "name": "period",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Period"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Binary"
+  } ]
+}

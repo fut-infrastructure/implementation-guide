@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-library-type",
+  "url": "http://ehealth.sundhed.dk/cs/library-type",
+  "version": "0.6.0",
+  "name": "LibraryType",
+  "title": "Library Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-08-27T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Library Type",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "automated-processing",
+      "display": "Automated Processing",
+      "definition": "The resource defines an evaluation context for automated processing",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ressourcen definerer en regel og dennes kontekst til brug i automatisk processering"
+        }
+      ]
+    }
+  ]
+}

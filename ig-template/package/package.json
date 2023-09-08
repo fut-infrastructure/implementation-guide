@@ -1,0 +1,12 @@
+{
+  "name": "ehealth.dk.template",
+  "version": "1.0.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Ehealth FHIR Template",
+  "author": "ehealth.sundhed.dk",
+	"base": "fhir.base.template",
+	"dependencies": {
+		"fhir.base.template": "current"
+	}
+}

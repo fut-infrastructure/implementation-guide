@@ -1,0 +1,78 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-plandefinition-recommendation",
+  "url": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
+  "version": "0.6.0",
+  "name": "PlanDefinitionRecommendation",
+  "title": "PlanDefinition Recommendation",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Plan Definition Recommendation",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-24"
+        }
+      ]
+    },
+    {
+      "code": "Mandatory",
+      "display": "Mandatory",
+      "definition": "Mandatory"
+    },
+    {
+      "code": "Recommended",
+      "display": "Recommended",
+      "definition": "Recommended"
+    },
+    {
+      "code": "Confirmed",
+      "display": "Confirmed",
+      "definition": "Confirmed"
+    },
+    {
+      "code": "NotRecommended",
+      "display": "NotRecommended",
+      "definition": "NotRecommended"
+    },
+    {
+      "code": "Applicable",
+      "display": "Applicable",
+      "definition": "Applicable"
+    },
+    {
+      "code": "PhasedOut",
+      "display": "PhasedOut",
+      "definition": "PhasedOut"
+    },
+    {
+      "code": "Observed",
+      "display": "Observed",
+      "definition": "Observed"
+    },
+    {
+      "code": "Planned",
+      "display": "Planned",
+      "definition": "Planned"
+    }
+  ]
+}

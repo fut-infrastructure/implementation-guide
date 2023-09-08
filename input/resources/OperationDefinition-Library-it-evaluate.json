@@ -1,0 +1,29 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Library-it-evaluate",
+  "url": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/Library-it-evaluate",
+  "name": "evaluate",
+  "title": "Evaluate",
+  "status": "active",
+  "kind": "operation",
+  "description": "This operation evaluates parameters passed as input against the decision support rule identified by the Library resource. It returns the computed clinical decision support result and/or errors. The Library resource identifies the clinical decision rule and define its parameters.\n\nThe operation is idempotent.\n### Input\n- 1..1 Parameters: HL7 FHIR [Parameters](https://www.hl7.org/fhir/stu3/parameters.html) resource containing input parameters for the clinical decision support computation.This should either be a QuestionnaireResponse or an Observation for evaluation.\n\n### Output\nUpon success this operation returns an GuidanceResponse resource containing the decision support result.\n\n",
+  "affectsState": false,
+  "code": "evaluate",
+  "resource": [ "Library" ],
+  "system": false,
+  "type": true,
+  "instance": true,
+  "parameter": [ {
+    "name": "parameters",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "Parameters"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "GuidanceResponse"
+  } ]
+}

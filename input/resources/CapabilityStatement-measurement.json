@@ -1,0 +1,383 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "measurement",
+  "name": "measurement",
+  "status": "active",
+  "date": "2023-08-18T02:27:24.678+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "kind": "instance",
+  "software": {
+    "name": "measurement",
+    "version": "1.12.5"
+  },
+  "implementation": {
+    "description": "eHealth measurement service",
+    "url": "https://measurement.devtest.systematic-ehealth.com/fhir"
+  },
+  "fhirVersion": "4.0.1",
+  "format": [ "application/fhir+xml", "xml", "application/fhir+json", "json", "application/x-turtle", "ttl", "html/json", "html/xml", "html/turtle" ],
+  "rest": [ {
+    "mode": "server",
+    "resource": [ {
+      "type": "Communication",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "patch"
+      }, {
+        "code": "create"
+      } ],
+      "conditionalCreate": true,
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
+      "searchParam": [ {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Episode associated with communication"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "Unique identifier"
+      }, {
+        "name": "recipient",
+        "type": "reference",
+        "documentation": "Message recipient"
+      }, {
+        "name": "recipientCareTeam",
+        "type": "reference",
+        "documentation": "Recipient care team"
+      }, {
+        "name": "sender",
+        "type": "reference",
+        "documentation": "Message sender"
+      }, {
+        "name": "senderCareTeam",
+        "type": "reference",
+        "documentation": "Sender care team"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "Focus of message"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "Media",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchRevInclude": [ "Provenance:target" ],
+      "searchParam": [ {
+        "name": "_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "based-on",
+        "type": "reference",
+        "documentation": "Procedure that caused this media to be created"
+      }, {
+        "name": "created",
+        "type": "date",
+        "documentation": "When Media was collected"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Episode associated with media"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "Identifier(s) for the image"
+      }, {
+        "name": "qualityCode",
+        "type": "token",
+        "documentation": "Quality code of the media"
+      }, {
+        "name": "qualityType",
+        "type": "token",
+        "documentation": "Quality type of the media"
+      }, {
+        "name": "resolvedTimingEnd",
+        "type": "date",
+        "documentation": "Resolved Timing end"
+      }, {
+        "name": "resolvedTimingServiceRequestVersionId",
+        "type": "token",
+        "documentation": "Resolved Timing serviceRequestVersionID"
+      }, {
+        "name": "resolvedTimingStart",
+        "type": "date",
+        "documentation": "Resolved Timing start"
+      }, {
+        "name": "resolvedTimingType",
+        "type": "token",
+        "documentation": "Resolved Timing type"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "Who/What this Media is a record of"
+      }, {
+        "name": "type",
+        "type": "token",
+        "documentation": "photo | video | audio"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      }, {
+        "name": "get-data",
+        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-t-get-data"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation",
+      "interaction": [ {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchRevInclude": [ "Provenance:target" ],
+      "searchParam": [ {
+        "name": "_content",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a fulltext search"
+      }, {
+        "name": "_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "_text",
+        "type": "string",
+        "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "based-on",
+        "type": "reference",
+        "documentation": "Reference to the test or procedure request."
+      }, {
+        "name": "code",
+        "type": "token",
+        "documentation": "The code of the observation type"
+      }, {
+        "name": "date",
+        "type": "date",
+        "documentation": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Episode associated with observation"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "The unique id for a particular observation"
+      }, {
+        "name": "patient",
+        "type": "reference",
+        "documentation": "The subject that the observation is about (if patient)"
+      }, {
+        "name": "qualityCode",
+        "type": "token",
+        "documentation": "The quality code of the observation"
+      }, {
+        "name": "qualityType",
+        "type": "token",
+        "documentation": "The quality type of the observation"
+      }, {
+        "name": "resolvedTimingEnd",
+        "type": "date",
+        "documentation": "Resolved Timing end"
+      }, {
+        "name": "resolvedTimingServiceRequestVersionId",
+        "type": "token",
+        "documentation": "Resolved Timing serviceRequestVersionID"
+      }, {
+        "name": "resolvedTimingStart",
+        "type": "date",
+        "documentation": "Resolved Timing start"
+      }, {
+        "name": "resolvedTimingType",
+        "type": "token",
+        "documentation": "Resolved Timing type"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "The subject that the observation is about"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    }, {
+      "type": "OperationDefinition",
+      "profile": "http://hl7.org/fhir/StructureDefinition/OperationDefinition",
+      "interaction": [ {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
+    }, {
+      "type": "Provenance",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
+    }, {
+      "type": "QuestionnaireResponse",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse",
+      "interaction": [ {
+        "code": "update"
+      }, {
+        "code": "search-type"
+      }, {
+        "code": "vread"
+      }, {
+        "code": "read"
+      }, {
+        "code": "create"
+      } ],
+      "conditionalCreate": true,
+      "conditionalUpdate": true,
+      "searchRevInclude": [ "Provenance:target" ],
+      "searchParam": [ {
+        "name": "_filter",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_tag",
+        "type": "token",
+        "documentation": "Search for resources which have the given tag"
+      }, {
+        "name": "authored",
+        "type": "date",
+        "documentation": "When the questionnaire response was last changed"
+      }, {
+        "name": "based-on",
+        "type": "reference",
+        "documentation": "Plan/proposal/order fulfilled by this questionnaire response"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "Episode associated with questionnaire response"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "The unique identifier for the questionnaire response"
+      }, {
+        "name": "qualityCode",
+        "type": "token",
+        "documentation": "The quality code of the questionnaire response"
+      }, {
+        "name": "qualityType",
+        "type": "token",
+        "documentation": "The quality type of the questionnaire response"
+      }, {
+        "name": "questionnaire",
+        "type": "reference",
+        "documentation": "The questionnaire the answers are provided for"
+      }, {
+        "name": "resolvedTimingEnd",
+        "type": "date",
+        "documentation": "Resolved Timing end"
+      }, {
+        "name": "resolvedTimingServiceRequestVersionId",
+        "type": "token",
+        "documentation": "Resolved Timing serviceRequestVersionID"
+      }, {
+        "name": "resolvedTimingStart",
+        "type": "date",
+        "documentation": "Resolved Timing start"
+      }, {
+        "name": "resolvedTimingType",
+        "type": "token",
+        "documentation": "Resolved Timing type"
+      }, {
+        "name": "status",
+        "type": "token",
+        "documentation": "The status of the questionnaire response"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "The subject of the questionnaire response"
+      } ],
+      "operation": [ {
+        "name": "validate",
+        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      } ]
+    } ],
+    "interaction": [ {
+      "code": "transaction"
+    }, {
+      "code": "history-system"
+    } ],
+    "operation": [ {
+      "name": "migrate",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
+    }, {
+      "name": "search-measurements",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements",
+      "documentation": "The search-measurements operation searches for bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- device: Find resource(s) referring the specified device - Reference(eHealth Device | eHealth DeviceMetric).\n- period: Resource(s) must have either an instant or time period within or overlapping the given period. The used instant/time period varies with resource as follows: Element effective for eHealth Observation; Element authored for eHealth QuestionnaireResponse; Element occurrence for eHealth Media.\n- based-on: Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\n\"period\" must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" must be specified.\n\n### Output description\n\nThe result of this operation will return a Bundle with a list of nested Bundles having resources matching the search parameters.\n\nEach of the nested bundles will contain the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources.\n\nIf a eHealth QuestionnaireResponse is part of the nested bundle the referenced eHealth Questionnaire will also be included in the nested bundle.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation."
+    }, {
+      "name": "submit-measurement",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-submit-measurement",
+      "documentation": "The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\nAll resources in the Bundle as well as the created Provenance will receive any missing system tags (ehealth-system CodeSystem) provided by the referenced EpisodeOfCare.\nThe request will be denied if any resource in the Bundle contains a system tag, which is not present on the referenced EpisodeOfCare\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction."
+    }, {
+      "name": "process-message",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
+      "documentation": "Accept a FHIR Message Bundle for processing"
+    }, {
+      "name": "perform-reindexing-pass",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
+      "documentation": "Forces a single pass of the resource reindexing processor"
+    }, {
+      "name": "meta",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
+    }, {
+      "name": "get-resource-counts",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
+      "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "reindex-terminology",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+    } ]
+  } ]
+}

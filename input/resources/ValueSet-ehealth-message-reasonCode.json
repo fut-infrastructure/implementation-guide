@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-message-reasonCode",
+  "url": "http://ehealth.sundhed.dk/vs/message-reasonCode",
+  "version": "0.0.1",
+  "name": "eHealth Message Reason Code",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "eHealth Message Reason Code",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/task-category"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/message-reasonCode"
+      }
+    ]
+  }
+}

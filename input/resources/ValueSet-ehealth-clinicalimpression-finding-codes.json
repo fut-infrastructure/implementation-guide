@@ -1,0 +1,191 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-clinicalimpression-finding-codes",
+  "url": "http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes",
+  "version": "0.6.0",
+  "name": "ClinicalImpressionFindingCodes",
+  "title": "ClinicalImpression Finding Codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of clinical impression finding codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes"
+      },
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/observation-codes"
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "281300000",
+            "display": "Below reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Below reference range"
+              }
+            ]
+          },
+          {
+            "code": "281302008",
+            "display": "Above reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Above reference range"
+              }
+            ]
+          },
+          {
+            "code": "281301001",
+            "display": "Within reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Within reference range"
+              }
+            ]
+          },
+          {
+            "code": "394844007",
+            "display": "Outside reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Outside reference range"
+              }
+            ]
+          },
+          {
+            "code": "442686002",
+            "display": "Measurement finding below reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Measurement finding below reference range"
+              }
+            ]
+          },
+          {
+            "code": "442756004",
+            "display": "Measurement finding above reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Measurement finding above reference range"
+              }
+            ]
+          },
+          {
+            "code": "442082004",
+            "display": "Measurement finding within reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Measurement finding within reference range"
+              }
+            ]
+          },
+          {
+            "code": "442096005",
+            "display": "Measurement finding outside reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Measurement finding outside reference range"
+              }
+            ]
+          },
+          {
+            "code": "449171008",
+            "display": "Oxygen saturation below reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Oxygen saturation below reference range"
+              }
+            ]
+          },
+          {
+            "code": "448225001",
+            "display": "Oxygen saturation within reference range",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Oxygen saturation within reference range"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.1",
+        "concept": [
+          {
+            "code": "RAL",
+            "display": "Terapeutiske grænseværdier for RØD alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske grænseværdier for RØD alarm"
+              }
+            ]
+          },
+          {
+            "code": "GAL",
+            "display": "Terapeutiske grænseværdier for GUL alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske grænseværdier for GUL alarm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
+        "concept": [
+          {
+            "code": "RELRAL",
+            "display": "Terapeutic relative reference range for RED alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske relative grænseværdier for RØD alarm"
+              }
+            ]
+          },
+          {
+            "code": "RELGAL",
+            "display": "Terapeutic relative reference range for YELLOW alarm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Terapeutiske relative grænseværdier for GUL alarm"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

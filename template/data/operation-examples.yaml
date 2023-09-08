@@ -1,0 +1,147 @@
+# system
+- profile: system
+  path: POST_apply.html
+
+- profile: system
+  path: POST_create-episode-of-care.html
+
+- profile: system
+  path: POST_migrate.html
+
+- profile: system
+  path: POST_search-measurements.html
+
+- profile: system
+  path: POST_submit-measurement.html
+
+- profile: system
+  path: POST_transform-to-APD.html
+
+- profile: system
+  path: POST_transform-from-APD.html
+
+- profile: system
+  path: POST_transform-to-PHMR.html
+
+- profile: system
+  path: POST_transform-to-QFDD.html
+
+- profile: system
+  path: POST_transform-to-QRD.html
+
+- profile: system
+  path: POST_transform-from-QFDD.html
+
+- profile: system
+  path: POST_transform-from-PHMR.html
+
+- profile: system
+  path: POST_transform-from-QRD.html
+
+- profile: system
+  path: POST_import-organizations.html
+
+- profile: system
+  path: POST_persist-login.html
+
+- profile: system
+  path: POST_Binary_retrieve-document.html
+
+- profile: system
+  path: POST_get-patient-procedures.html
+
+- profile: system
+  path: POST_get-patient-procedures-AT.html
+
+- profile: system
+  path: POST_CarePlan_suggest-care-teams.html
+
+- profile: system
+  path: POST_CarePlan_update-care-teams.html
+
+- profile: system
+  path: POST_EpisodeOfCare_update-care-teams.html
+
+- profile: system
+  path: POST_EpisodeOfCare_is-context-allowed.md
+
+- profile: system
+  path: POST_Library_evaluate.md
+
+- profile: system
+  path: POST_PlanDefinition_apply.md
+
+# system reporting
+
+- profile: system
+  path: POST_fetch-careplan-and-episode-of-care-stats.html
+
+- profile: system
+  path: POST_fetch-careplan-customization-stats.html
+
+- profile: system
+  path: POST_fetch-careplan-duration-stats.html
+
+- profile: system
+  path: POST_fetch-careplans-by-patient.html
+
+- profile: system
+  path: POST_fetch-careteam-stats.html
+
+- profile: system
+  path: POST_fetch-measurement-stats.html
+
+- profile: system
+  path: POST_fetch-patient-devices.html
+
+- profile: system
+  path: POST_fetch-patient-gdpr.html
+
+- profile: system
+  path: POST_fetch-practitioner-gdpr.html
+
+- profile: system
+  path: POST_fetch-practitioner-stats.html
+
+- profile: system
+  path: POST_fetch-ssl-orders.html
+
+- profile: system
+  path: POST_schedule-careplan-and-episode-of-care-stats.html
+
+- profile: system
+  path: POST_schedule-careplan-customization-stats.html
+
+- profile: system
+  path: POST_schedule-careplan-duration-stats.html
+
+- profile: system
+  path: POST_schedule-careplans-by-patient.html
+
+- profile: system
+  path: POST_schedule-careteam-stats.html
+
+- profile: system
+  path: POST_schedule-measurement-stats.html
+
+- profile: system
+  path: POST_schedule-patient-devices.html
+
+- profile: system
+  path: POST_schedule-patient-gdpr.html
+
+- profile: system
+  path: POST_schedule-patient-total.html
+
+- profile: system
+  path: POST_schedule-practitioner-gdpr.html
+
+- profile: system
+  path: POST_schedule-practitioner-stats.html
+
+- profile: system
+  path: POST_schedule-ssl-orders.html
+
+# setting profile = system, in order to include in general operation examples page
+- profile: system
+  path: POST_Person.html

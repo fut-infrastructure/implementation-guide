@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "appointmenttype-codes",
+  "url": "http://ehealth.sundhed.dk/vs/appointmenttype-codes",
+  "version": "0.0.1",
+  "name": "AppointmentTypeCodes",
+  "title": "Appointment Type Codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Appointment type codes used by the system",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/appointmenttype-codes"
+      }
+    ]
+  }
+}

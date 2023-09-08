@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-communication-search-on-behalf-of",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/on-behalf-of",
+    "name": "on-behalf-of",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "on-behalf-of",
+    "base": [
+        "Communication"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding communication based on on-behalf-of",
+    "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-on-behalf-of')",
+    "xpathUsage": "normal"
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-goal-description",
+  "url": "http://ehealth.sundhed.dk/cs/goal-description",
+  "version": "2021-01-13T00:00:00+00:00",
+  "name": "GoalDescription",
+  "title": "Goal Description",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-01-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Goal Description",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "reference-value",
+      "display": "Reference value for relative reference ranges",
+      "definition": "Reference value for relative reference ranges",
+      "designation": [
+        {
+          "language": "da",
+          "value": "referenceværdi"
+        }
+      ]
+    }
+  ]
+}

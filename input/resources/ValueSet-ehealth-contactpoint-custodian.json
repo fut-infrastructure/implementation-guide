@@ -1,0 +1,31 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ehealth-contactpoint-custodian",
+    "url": "http://ehealth.sundhed.dk/vs/contactpoint-custodian",
+    "version": "0.6.0",
+    "name": "ContactPointCustodian",
+    "title": "ContactPoint Custodian",
+    "status": "active",
+    "experimental": true,
+    "date": "2019-02-08T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "name": "ehealth.sundhed.dk",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Contact point custodians.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://ehealth.sundhed.dk/cs/contactpoint-custodian"
+            }
+        ]
+    }
+}

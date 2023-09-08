@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-situation-quality",
+  "url": "http://ehealth.sundhed.dk/vs/situation-quality",
+  "version": "0.6.0",
+  "name": "SituationQuality",
+  "title": "Situation Quality",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of hierarchical codes stating the quality of a measurement situation.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/situation-quality"
+      }
+    ]
+  }
+}

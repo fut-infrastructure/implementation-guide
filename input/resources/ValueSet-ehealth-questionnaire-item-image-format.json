@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-questionnaire-item-image-format",
+  "url": "http://ehealth.sundhed.dk/vs/questionnaire-item-image-format",
+  "version": "2021-09-16T08:28:43",
+  "name": "QuestionnaireItemImageFormat",
+  "title": "Questionnaire Item Image Format",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-09-16",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Questionnaire item image format value set.",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13",
+      "concept" : [
+        {
+          "code" : "image/png",
+          "display" : "PNG image format",
+          "designation" : [
+            {
+              "language" : "da",
+              "value" : "PNG billedformat"
+            }
+          ]
+        },
+        {
+          "code" : "image/jpeg",
+          "display" : "JPEG image format",
+          "designation" : [
+            {
+              "language" : "da",
+              "value" : "JPEG billedformat"
+            }
+          ]
+        },
+        {
+          "code" : "image/svg+xml",
+          "display" : "SVG og XML format",
+          "designation" : [
+            {
+              "language" : "da",
+              "value" : "SVG og XML format"
+            }
+          ]
+        }
+      ]
+    }]
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-communication-search-restrictionCategory",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/restrictionCategory",
+    "name": "restrictionCategory",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "restrictionCategory",
+    "base": [
+        "Communication"
+    ],
+    "type": "token",
+    "description": "Search parameter for finding communication based on CareTeam recipient",
+    "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category')",
+    "xpathUsage": "normal"
+}
