@@ -47,3 +47,4 @@ Do `docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 
 # Combined
 Do `rm -rf output && rm -rf temp/ && ./_genonce.sh && docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
+
