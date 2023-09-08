@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-citizen-importance-scores",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-citizen-importance-scores",
+  "version": "0.0.1",
+  "name": "FS III, borgerens vurdering af betydning",
+  "title": "FS III, borgerens vurdering af betydning",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "FS III, borgerens vurdering af betydning",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "EXPERIENCES_NO_LIMITATIONS",
+      "display": "Oplever ikke begrænsninger",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Oplever ikke begrænsninger"
+        }
+      ]
+    },
+    {
+      "code": "EXPERIENCES_LIMITATIONS",
+      "display": "Oplever begrænsninger",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Oplever begrænsninger"
+        }
+      ]
+    }
+  ]
+}

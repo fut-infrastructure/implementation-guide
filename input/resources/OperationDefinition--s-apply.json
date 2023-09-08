@@ -1,0 +1,28 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-apply",
+  "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply",
+  "name": "apply",
+  "title": "Create a careplan",
+  "status": "active",
+  "kind": "operation",
+  "description": "This operation creates a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
+  "affectsState": true,
+  "code": "apply",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "planDefinition",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  }, {
+    "name": "episodeOfCare",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-devicemetric-quality-types",
+  "url": "http://ehealth.sundhed.dk/vs/devicemetric-quality-types",
+  "version": "0.6.0",
+  "name": "DeviceMetricQualityTypes",
+  "title": "DeviceMetric Quality Types",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Device Metric Quality Types value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/devicemetric-quality-types"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ehealth-contactpoint-system",
+    "url": "http://ehealth.sundhed.dk/vs/contactpoint-system",
+    "version": "0.6.0",
+    "name": "ContactPointSystem",
+    "title": "ContactPoint System",
+    "status": "active",
+    "experimental": true,
+    "date": "2019-02-08T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "name": "ehealth.sundhed.dk",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Contact point systems.",
+    "compose": {
+        "include": [
+            {
+                "valueSet": [
+                    "http://hl7.org/fhir/ValueSet/contact-point-system"
+                ]
+            },
+            {
+                "system": "http://ehealth.sundhed.dk/cs/contactpoint-system"
+            }
+        ]
+    }
+}

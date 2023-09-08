@@ -1,0 +1,125 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-activitydefinition-code",
+  "url": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
+  "version": "2020-02-27T07:13:46",
+  "name": "ActivityDefinitionCodes",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Kinds of activities",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    },
+    {
+      "code": "229057006",
+      "display": "Møder",
+      "definition": "Meetings(procedure)",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-24"
+        }
+      ]
+    },
+    {
+      "code": "229058001",
+      "display": "Sagskonferencer",
+      "definition": "Case-conference",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-24"
+        }
+      ]
+    },
+    {
+      "code": "409073007",
+      "display": "Instruktion",
+      "definition": "Instruction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-24"
+        }
+      ]
+    },
+    {
+      "code": "273586006",
+      "display": "Master Questionnaire",
+      "definition": "Master-questionnaire(DK)",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-03-24"
+        }
+      ]
+    },
+    {
+      "code": "HA",
+      "display": "Head activity",
+      "definition": "Head activity",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hovedaktivitet"
+        }
+      ]
+    },
+    {
+      "code": "SQ",
+      "display": "Situation quality assessment",
+      "definition": "Assessment of situation quality",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bestemmelse af situationskvalitet"
+        }
+      ]
+    },
+    {
+      "code": "QR",
+      "display": "Usage quality assessment",
+      "definition": "Assessment of usage quality",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bestemmelse af betjeningskvalitet"
+        }
+      ]
+    },
+    {
+      "code": "SDG",
+      "display": "Same device group",
+      "definition": "Same device group",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Samme udstyrsgruppe"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-jurisdiction",
+  "url": "http://ehealth.sundhed.dk/vs/jurisdiction",
+  "version": "0.6.0",
+  "name": "Jurisdiction",
+  "title": "Jurisdiction",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-12-16T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Jurisdiction value set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/jurisdiction"
+      }
+    ]
+  }
+}

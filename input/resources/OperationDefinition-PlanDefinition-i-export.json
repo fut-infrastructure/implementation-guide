@@ -1,0 +1,23 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "PlanDefinition-i-export",
+  "url": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export",
+  "name": "export",
+  "title": "Export a PlanDefinition",
+  "status": "active",
+  "kind": "operation",
+  "description": "Export a PlanDefinition.\n### Export Contents\nThe export contains the PlanDefinition including referenced resources:- PlanDefinitions\n- ActivityDefinitions\n- Questionnaires\n- Libraries\n- Organizations\n\nEach resource is returned in a separate JSon file.\n### Parameters\n- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.\nAll returned objects are Fhir resources. See the implementation guide for details\n",
+  "affectsState": false,
+  "code": "export",
+  "resource": [ "PlanDefinition" ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [ {
+    "name": "exclude",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "string"
+  } ]
+}

@@ -1,0 +1,214 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "ehealth-oio-bpp-roles",
+    "url": "http://ehealth.sundhed.dk/cs/oio-bpp-roles",
+    "version": "0.6.0",
+    "name": "OIOBPPRole",
+    "title": "OIO-BPP Role",
+    "status": "active",
+    "experimental": false,
+    "date": "2019-12-02T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "OIO BPP Role",
+    "caseSensitive": true,
+    "content": "complete",
+    "concept": [
+        {
+            "code": "urn:dk:sundhed:ehealth:role:citizen_enroller",
+            "display": "Borgeropretter",
+            "definition": "Kan oprette borger i telemedicinsk forløb og tildele borger en foruddefineret plan",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Borgeropretter"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:clinical_viewer",
+            "display": "Klinisk se adgang",
+            "definition": "Kan se telemedicinske Måledata for at kunne understøtte dagligt ikke-telemedicinsk arbejde rettet på konkret borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Klinisk se adgang"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:monitoring_assistor",
+            "display": "Monitoreringsmedhjælper",
+            "definition": "Kan håndtere Måledata og kommunikation til/fra borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Monitoreringsmedhjælper"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:monitoring_adjuster",
+            "display": "Monitoreringstilretter",
+            "definition": "Kan håndtere og ændre i Måleregime, Grænseværdier og telemedicinsk forløb/pakke til borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Monitoreringstilretter"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:report_user",
+            "display": "Nøgletalsmedarbejder",
+            "definition": "Kan udføre datatrækning, rapporter og statistik",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Nøgletalsmedarbejder"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:questionnaire_editor",
+            "display": "Sundhedsfaglig spørgeskemaeditor",
+            "definition": "Kan udarbejde, ændre og teste Spørgeskema",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Sundhedsfaglig spørgeskemaeditor"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:clinical_administrator",
+            "display": "Pakke- og forløbsbygger",
+            "definition": "Kan udvælge Spørgeskema/Måling, sammensætte indholdet af pakker og forløb, navngive pakke/forløb og tilrette de generelle Grænseværdier",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Pakke- og forløbsbygger"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:clinical_supporter",
+            "display": "Klinisk supporter",
+            "definition": "Kan undersøge hændelser ud fra div. kriterier fx borger, bruger, dato, hændelse",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Klinisk supporter"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:careteam_administrator",
+            "display": "Care Team administrator",
+            "definition": "Kan håndtere Care Teams i den telemedicinske løsning",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Care Team administrator"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:order_placer",
+            "display": "Bestiller af udstyr",
+            "definition": "Håndterer bestilling af telemedicinsk udstyr ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Bestiller af udstyr"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:service_and_logistics",
+            "display": "Service og logistik samarbejdspartner",
+            "definition": "Kan håndtere bestilling ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Service og logistik samarbejdspartner"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:incident_reporter",
+            "display": "Fejlmelder",
+            "definition": "Kan indberette fejl på telemedicinske løsninger og udstyr",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Fejlmelder"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:incident_manager",
+            "display": "Support samarbejdspartner",
+            "definition": "Kan håndtere fejlmelding ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Support samarbejdspartner"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:terminology_administrator",
+            "display": "Terminologiadministrator",
+            "definition": "Oprette og vedligeholde terminologi",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Terminologiadministrator"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:ssl_catalogue_responsible",
+            "display": "Katalogansvarlig",
+            "definition": "Oprette og vedligeholde SSL kataloger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Katalogansvarlig"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:ssl_catalogue_annotator",
+            "display": "Katalogopmærker",
+            "definition": "Opmærke varer og serviceydelser i SSL kataloger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Katalogopmærker"
+                }
+            ]
+        },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:ssl_contract_responsible",
+            "display": "Aftaleansvarlig",
+            "definition": "Oprette og rette SSL samarbejdsaftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Aftaleansvarlig"
+                }
+            ]
+        }
+    ]
+}

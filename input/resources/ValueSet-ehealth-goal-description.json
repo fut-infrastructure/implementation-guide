@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-goal-description",
+  "url": "http://ehealth.sundhed.dk/vs/goal-description",
+  "version": "2021-01-13T00:00:00+00:00",
+  "name": "GoalDescription",
+  "title": "Goal Description",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-01-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set for goal description.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/goal-description"
+      }
+    ]
+  }
+}

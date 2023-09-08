@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-appointment-search-careteam-participant",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/careteamParticipant",
+    "name": "careteamParticipant",
+    "status": "active",
+    "date": "2021-05-06T08:31:20+00:00",
+    "code": "careteamParticipant",
+    "base": [
+        "Appointment"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding appointments based on careteam participants",
+    "expression": "Appointment.participant.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam')",
+    "xpathUsage": "normal"
+}

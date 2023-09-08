@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-knowledge-and-development",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-knowledge-and-development",
+  "version": "0.0.1",
+  "name": "FS III, Viden og udvikling",
+  "title": "FS III, Viden og udvikling",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "FS III, Viden og udvikling",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "MEMORY",
+      "display": "Problemer med hukommelse",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med hukommelse"
+        }
+      ]
+    },
+    {
+      "code": "INSIGHT_DISEASE",
+      "display": "Problemer med sygdomsindsigt",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med sygdomsindsigt"
+        }
+      ]
+    },
+    {
+      "code": "INSIGHT_TREATMENT_PURPOSE",
+      "display": "Problemer med indsigt i behandlingsformål",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med indsigt i behandlingsformål"
+        }
+      ]
+    },
+    {
+      "code": "COGNITIVE",
+      "display": "Kognitive problemer",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kognitive problemer"
+        }
+      ]
+    }
+  ]
+}

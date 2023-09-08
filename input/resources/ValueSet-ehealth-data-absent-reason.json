@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-data-absent-reason",
+  "url": "http://ehealth.sundhed.dk/vs/data-absent-reason",
+  "version": "2023-04-13T15:13:00",
+  "name": "DataAbsentReason",
+  "title": "Data Absent Reason",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-04-13T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Used to specify why the normally expected content of the data element is missing.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "asked-declined",
+            "display": "Asked But Declined",
+            "definition": "The source was asked but declined to answer."
+          },
+          {
+            "code": "error",
+            "display": "Error",
+            "definition": "Some system or workflow process error means that the information is not available."
+          }
+        ]
+      }
+    ]
+  }
+}

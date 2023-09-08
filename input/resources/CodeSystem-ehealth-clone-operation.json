@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-clone-operation",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-clone-operation",
+  "version": "0.6.0",
+  "name": "CloneOperation",
+  "title": "Clone Operation",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Clone operation codes",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "minor-version",
+      "display": "Minor version",
+      "definition": "Code for minor version clone operation"
+    },
+    {
+      "code": "major-version",
+      "display": "Major version",
+      "definition": "Code for major version clone operation"
+    },
+    {
+      "code": "copy",
+      "display": "Copy",
+      "definition": "Code for copy operation"
+    }
+  ]
+}

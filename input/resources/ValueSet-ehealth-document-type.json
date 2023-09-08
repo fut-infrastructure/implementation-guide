@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-document-type",
+  "url": "http://ehealth.sundhed.dk/vs/document-type",
+  "version": "0.6.0",
+  "name": "DocumentType",
+  "title": "Document Type",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Type value set.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs"
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "69730-0",
+            "display": "Instructions",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Instruktioner"
+              }
+            ]
+          },
+          {
+            "code": "48766-0",
+            "display": "Information source",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Informationskilde"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-reference-range-type",
+  "url": "http://ehealth.sundhed.dk/vs/reference-range-type",
+  "version": "2020-03-16T07:00:46",
+  "name": "ReferenceRangeType",
+  "title": "Reference Range Type",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Reference Range type value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      },
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/observation-codes"
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.1",
+        "concept": [
+          {
+            "code": "RAL",
+            "display": "Terapeutiske grænseværdier for RØD alarm"
+          },
+          {
+            "code": "GAL",
+            "display": "Terapeutiske grænseværdier for GUL alarm"
+          }
+        ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/reference-range-type"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "activitydefinition-code-to-observation-code",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-observation-code",
+  "version": "2020-03-16T12:24:16",
+  "name": "activitydefinition-code-to-observation-code",
+  "title": "ActivityDefinition code to Observation code",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-13",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
+  "targetUri": "http://ehealth.sundhed.dk/vs/observation-codes",
+  "group": [
+    {
+      "source": "urn:oid:1.2.208.176.2.4",
+      "target": "urn:oid:1.2.208.184.100.8",
+      "element": [
+        {
+          "code": "ZZ3170",
+          "display": "Hjemmeblodtryksmåling udført af patienten",
+          "target": [
+            {
+              "code": "MCS88019",
+              "display": "Blodtryk hjemme systolisk;Arm",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            },
+            {
+              "code": "MCS88020",
+              "display": "Blodtryk hjemme diastolisk;Arm",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

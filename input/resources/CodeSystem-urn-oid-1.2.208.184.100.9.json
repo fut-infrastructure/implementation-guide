@@ -1,0 +1,47 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "urn-oid-1.2.208.184.100.9",
+  "url" : "urn:oid:1.2.208.184.100.9",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.208.184.100.9"
+  }],
+  "version" : "0.99",
+  "name" : "DK_IHE_ClassCode_CS",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-12-11T00:00:00+00:00",
+  "publisher" : "Sundhedsdatastyrelsen",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "email",
+          "value" : "thsc@sundhedsdata.dk"
+        }
+      ]
+    }
+  ],
+  "description" : "Code system for the classCode attribute",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "001",
+      "display" : "Clinical report",
+      "definition" : "Clinical report document classcode used in DK-IHE metadata."
+    },
+    {
+      "code" : "002",
+      "display" : "Personal information about"
+    },
+    {
+      "code" : "003",
+      "display" : "Planning"
+    },
+    {
+      "code" : "004",
+      "display" : "Questionnaires"
+    }
+  ]
+}

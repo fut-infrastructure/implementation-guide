@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ehealth-device-service-types",
+  "url" : "http://ehealth.sundhed.dk/vs/device-service-types",
+  "version" : "0.6.0",
+  "name" : "SSLServiceTypes",
+  "title" : "SSL Service Types",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-09-16T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "name" : "ehealth.sundhed.dk",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "SSL service types",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://ehealth.sundhed.dk/cs/device-service-types"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "resourceType": "OperationDefinition",
+    "id": "ehealth-patient-create",
+    "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-patient-create",
+    "name": "Create Patient",
+    "status": "active",
+    "kind": "operation",
+    "date": "2019-02-02",
+    "description": "This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided civil registration number (crn) is used as the origin of the data. \r\n\r\n### Note\r\nThis operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers",
+    "code": "createPatient",
+    "comment": "See the wiki for examples on how to use the operation.",
+    "resource": [
+        "Patient"
+    ],
+    "system": false,
+    "type": true,
+    "instance": false,
+    "parameter": [
+        {
+            "name": "crn",
+            "use": "in",
+            "min": 1,
+            "max": "1",
+            "documentation": "The social security number of the person on which this operation is executed.",
+            "type": "Identifier",
+            "profile": {
+                "reference": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-dk-crn-identifier"
+            }
+        },
+        {
+            "name": "return",
+            "use": "out",
+            "min": 1,
+            "max": "1",
+            "documentation": "The Patient resource that has been created on the server or an already created patient",
+            "type": "Patient"
+        }
+    ]
+}

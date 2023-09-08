@@ -1,0 +1,43 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-appointment-servicetype",
+  "url": "http://ehealth.sundhed.dk/cs/appointment-servicetype",
+  "version": "0.6.0",
+  "name": "AppointmentServiceTypes",
+  "title": "Appointment Service Types",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Appointment service type",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "regular",
+      "display": "A regular appointment"
+    },
+    {
+      "code": "video",
+      "display": "A video appointment"
+    },
+    {
+      "code": "group",
+      "display": "A group appointment"
+    },
+    {
+      "code": "group-video",
+      "display": "A group video appointment"
+    }
+  ]
+}

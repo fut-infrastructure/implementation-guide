@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-psychosocial-conditions",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-psychosocial-conditions",
+  "version": "0.0.1",
+  "name": "FS III, Psykosociale forhold",
+  "title": "FS III, Psykosociale forhold",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "FS III, Psykosociale forhold",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SOCIALIZATION",
+      "display": "Problemer med socialt samvær",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med socialt samvær"
+        }
+      ]
+    },
+    {
+      "code": "EMOTIONAL",
+      "display": "Emotionelle problemer",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Emotionelle problemer"
+        }
+      ]
+    },
+    {
+      "code": "ABUSE",
+      "display": "Problemer med misbrug",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med misbrug"
+        }
+      ]
+    },
+    {
+      "code": "MENTAL",
+      "display": "Mentale problemer",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mentale problemer"
+        }
+      ]
+    }
+  ]
+}

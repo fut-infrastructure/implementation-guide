@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-measurement-sharing-policies",
+  "url": "http://ehealth.sundhed.dk/vs/measurement-sharing-policies",
+  "version": "0.6.0",
+  "name": "MeasurementSharingPolicies",
+  "title": "Measurement Sharing Policies",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Policies of sharing submissions with national registers such as KIH.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-policies"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "urn-oid-1.2.208.184.100.1",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2021-02-08T08:14:10.892+00:00"
+  },
+  "url": "urn:oid:1.2.208.184.100.1",
+  "identifier": [{
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.184.100.1"
+  }],
+  "version": "2020-03-16T06:59:27",
+  "name": "MedCom Message Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-04-10",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "MedCom Message Codes.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "RAL",
+      "display": "Terapeutiske grænseværdier for RØD alarm",
+      "definition": "Terapeutiske grænseværdier for RØD alarm",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Terapeutiske grænseværdier for RØD alarm"
+        }
+      ]
+    },
+    {
+      "code": "GAL",
+      "display": "Terapeutiske grænseværdier for GUL alarm",
+      "definition": "Terapeutiske grænseværdier for GUL alarm",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Terapeutiske grænseværdier for GUL alarm"
+        }
+      ]
+    }
+  ]
+}

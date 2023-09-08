@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-document-type",
+  "url": "http://ehealth.sundhed.dk/cs/document-type",
+  "version": "0.6.0",
+  "name": "DocumentType",
+  "title": "Document Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Type",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Midlertidig værdi"
+        }
+      ],
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2019-09-18"
+        }
+      ]
+    },
+    {
+      "code": "TBD2",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Midlertidig værdi"
+        }
+      ],
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2019-09-18"
+        }
+      ]
+    }
+  ]
+}

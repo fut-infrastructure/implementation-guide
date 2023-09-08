@@ -1,0 +1,207 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "conceptmap-ucum-to-printsymbol",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol",
+  "version": "0.1.0",
+  "name": "conceptmap-ucum-to-printsymbol",
+  "title": "UCUM code to PrintSymbol mapping",
+  "status": "active",
+  "experimental": true,
+  "date": "2020-08-31T00:00:00+00:00",
+  "publisher": "Systematic A/S",
+  "contact": [
+    {
+      "name": "Systematic A/S",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "http://ehealth.sundhed.dk/vs/ehealth-unit",
+  "targetUri": "http://ehealth.sundhed.dk/vs/ehealth-ucum-printsymbol-supplement",
+  "group": [
+    {
+      "source": "http://unitsofmeasure.org",
+      "target": "http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement",
+      "element": [
+        {
+          "code": "%",
+          "display": "percent",
+          "target": [
+            {
+              "code": "%",
+              "display": "percent",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "1/min",
+          "display": "one per minute",
+          "target": [
+            {
+              "code": "1/min",
+              "display": "one per minute",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "kg",
+          "display": "kilogram",
+          "target": [
+            {
+              "code": "kg",
+              "display": "kilogram",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "kg/m2",
+          "display": "kilogram / (meter ^ 2)",
+          "target": [
+            {
+              "code": "kg/m2",
+              "display": "kilogram / (meter ^ 2)",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "m",
+          "display": "meter",
+          "target": [
+            {
+              "code": "m",
+              "display": "meter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "display": "liter",
+          "target": [
+            {
+              "code": "L",
+              "display": "liter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "{ratio}",
+          "display": "ratio",
+          "target": [
+            {
+              "code": "{ratio}",
+              "display": "ratio",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "mm[Hg]",
+          "display": "millimeter of mercury",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "millimeter of mercury",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "{Number}",
+          "display": "Number",
+          "target": [
+            {
+              "code": "{Number}",
+              "display": "Number",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "Cel",
+          "display": "degree Celsius",
+          "target": [
+            {
+              "code": "Cel",
+              "display": "degree Celsius",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "mg/L",
+          "display": "milligram per liter",
+          "target": [
+            {
+              "code": "mg/L",
+              "display": "milligram per liter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "/min",
+          "display": "per minute",
+          "target": [
+            {
+              "code": "/min",
+              "display": "per minute",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://ehealth.sundhed.dk/cs/ehealth-unit-code",
+      "target": "http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement",
+      "element": [
+        {
+          "code": "1/30sec",
+          "display": "one per 30 seconds",
+          "target": [
+            {
+              "code": "1/30sec",
+              "display": "one per 30 seconds",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "percentpoint",
+          "display": "percent point",
+          "target": [
+            {
+              "code": "percentpoint",
+              "display": "percent point",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

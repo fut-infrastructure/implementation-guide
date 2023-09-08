@@ -1,0 +1,161 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-questionnaire-recommendation",
+  "url": "http://ehealth.sundhed.dk/cs/questionnaire-recommendation",
+  "version": "0.6.0",
+  "name": "QuestionnaireRecommendation",
+  "title": "Questionnaire Recommendation",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Questionnaire Recommendation",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TBD",
+      "display": "Example value - Under construction",
+      "definition": "Example value - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    },
+    {
+      "code": "TBD2",
+      "display": "Example value2 - Under construction",
+      "definition": "Example value2 - Under construction",
+      "property": [
+        {
+          "code": "deprecated",
+          "valueDateTime": "2020-02-03"
+        }
+      ]
+    },
+    {
+      "code": "Obligatory",
+      "display": "Obligatory",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Mandatory"
+        },
+        {
+          "language": "da",
+          "value": "Obligatorisk"
+        }
+      ]
+    },
+    {
+      "code": "Recommended",
+      "display": "Recommended",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Recommended"
+        },
+        {
+          "language": "da",
+          "value": "Anbefalet"
+        }
+      ]
+    },
+    {
+      "code": "Sustained",
+      "display": "Sustained",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Sustained"
+        },
+        {
+          "language": "da",
+          "value": "Opretholdt"
+        }
+      ]
+    },
+    {
+      "code": "Deprecated",
+      "display": "Deprecated",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Deprecated"
+        },
+        {
+          "language": "da",
+          "value": "Frarådes"
+        }
+      ]
+    },
+    {
+      "code": "Applicable",
+      "display": "Applicable",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Applicable"
+        },
+        {
+          "language": "da",
+          "value": "Anvendelig"
+        }
+      ]
+    },
+    {
+      "code": "BeingPhasedOut",
+      "display": "BeingPhasedOut",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "BeingPhasedOut"
+        },
+        {
+          "language": "da",
+          "value": "Udfases"
+        }
+      ]
+    },
+    {
+      "code": "Observed",
+      "display": "Observed",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Observed"
+        },
+        {
+          "language": "da",
+          "value": "Observeres"
+        }
+      ]
+    },
+    {
+      "code": "Planned",
+      "display": "Planned",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Planned"
+        },
+        {
+          "language": "da",
+          "value": "Planlagt"
+        }
+      ]
+    }
+  ]
+}

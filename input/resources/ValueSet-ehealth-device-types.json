@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-device-types",
+  "url": "http://ehealth.sundhed.dk/vs/device-types",
+  "version": "2020-02-28T07:09:20",
+  "name": "DeviceTypes",
+  "title": "Device Types",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Device Types value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "59181002",
+            "display": "Oxygen analyser",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Oxygen analyser"
+              }
+            ]
+          },
+          {
+            "code": "258057004",
+            "display": "Ikke-invasiv blodtryksmonitor"
+          },
+          {
+            "code": "19892000",
+            "display": "Vægt"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "conceptmap-obs-code-to-value-type",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type",
+  "version": "2020-11-26T12:24:16",
+  "name": "conceptmap-obs-code-to-value-type",
+  "title": "conceptmap-obs-code-to-value-type",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-11-26",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "http://ehealth.sundhed.dk/vs/observation-codes",
+  "targetUri": "http://hl7.org/fhir/ValueSet/data-types",
+  "group": [
+    {
+      "source": "urn:oid:1.2.208.176.2.1",
+      "target": "http://hl7.org/fhir/data-types",
+      "element": [
+        {
+          "code": "NPU03011",
+          "display": "O2 sat.;Hb(aB)",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU21692",
+          "display": "Puls;Hjerte",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU03804",
+          "display": "Legeme vægt; Pt",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU27281",
+          "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU03794",
+          "display": "Pt—Legeme; højde = ? m",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU08676",
+          "display": "Pt—Legeme; temp. = ? °C",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "P—C-reaktivt protein; massek. = ? mg/L",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:1.2.208.184.100.8",
+      "target": "http://hl7.org/fhir/data-types",
+      "element": [
+        {
+          "code": "MCS88015",
+          "display": "FEV1;Lunge",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88016",
+          "display": "FVC;Lunge",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88017",
+          "display": "FEV1/FVC;Lunge",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88021",
+          "display": "MRC skala;Pt(KOL)",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88023",
+          "display": "FEV1 af forventet værdi;Pt(KOL)",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88050",
+          "display": "Rejse sætte sig testen;Pt",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88137",
+          "display": "CAT score;Pt",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

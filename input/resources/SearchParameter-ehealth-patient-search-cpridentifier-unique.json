@@ -1,0 +1,28 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-patient-search-cpridentifier-unique",
+    "extension" : [
+        {
+            "url" : "http://hapifhir.io/fhir/StructureDefinition/sp-unique",
+            "valueBoolean" : true
+        }
+    ],
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Patient/cprIdentifierUnique",
+    "name": "patientCPRIdentifierUnique",
+    "status": "active",
+    "date": "2022-11-15T08:31:20+00:00",
+    "code": "patientCPRIdentifierUnique",
+    "base": [
+        "Patient"
+    ],
+    "type": "token",
+    "description": "Uniqueness constraint on search parameter patientCPRIdentifier",
+    "expression": "Patient.identifier.where(system = 'urn:oid:1.2.208.176.1.2').value",
+    "xpathUsage": "normal",
+    "component" : [
+        {
+            "definition" : "http://ehealth.sundhed.dk/fhir/SearchParameter/Patient/cprIdentifier",
+            "expression" : "Patient"
+        }
+    ]
+}

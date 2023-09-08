@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "fs3-health-communication",
+  "url": "http://ehealth.sundhed.dk/cs/fs3-health-communication",
+  "version": "0.0.1",
+  "name": "FS III, Kommunikation",
+  "title": "FS III, Kommunikation",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-02-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "FS III, Kommunikation",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "COMMUNICATION",
+      "display": "Problemer med kommunikation",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Problemer med kommunikation"
+        }
+      ]
+    }
+  ]
+}
