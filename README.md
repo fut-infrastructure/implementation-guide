@@ -48,3 +48,5 @@ Do `docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 # Combined
 Do `rm -rf output && rm -rf temp/ && ./_genonce.sh && docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 
+# Location of CI/CD build
+http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/master/index.html
