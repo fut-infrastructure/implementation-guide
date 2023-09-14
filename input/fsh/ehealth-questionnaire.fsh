@@ -102,7 +102,7 @@ Description: "Help text for questionnaires"
 * extension contains
     value 0..1 and
     xhtml 0..1
-* extension[value].value[x] 0..1
+* extension[value].value[x] 1..1
 * extension[value].value[x] only string
 * extension[xhtml] 0..1
 * extension[xhtml] only http://hl7.org/fhir/StructureDefinition/rendering-xhtml
