@@ -100,7 +100,7 @@ Title:     "Help text"
 Description: "Help text for questionnaires"
 * . ^short = "Help text"
 * extension contains
-    value 0..1 and
+    value 1..1 and
     xhtml 0..1
 * extension[value].value[x] 1..1
 * extension[value].value[x] only string
