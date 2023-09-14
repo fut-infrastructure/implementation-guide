@@ -25,12 +25,14 @@ Parent: Questionnaire
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
 * item.extension contains ehealth-questionnaire-image named ehealth-question-image 0..1
 * item.extension contains ehealth-questionnaire-shortText named shortText 0..1
+* item.extension contains ehealth-questionnaire-helpText named helpText 0..1
 * item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
 * item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
 * item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
 * item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.enableWhen.extension contains ehealth-enableWhen-conditionId named conditionId 0..1
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
@@ -92,4 +94,22 @@ Description: "Defines the Answer condition for an answer option in the questionn
 * extension[value].value[x] 1..1
 * extension[value].value[x] only decimal or integer or string or Coding or boolean
 * extension[operator].valueCode from http://hl7.org/fhir/ValueSet/questionnaire-enable-operator
+
+Extension: ehealth-questionnaire-helpText
+Title:     "Help text"
+Description: "Help text for questionnaires"
+* . ^short = "Help text"
+* extension contains
+    value 0..1 and
+    xhtml 0..1
+* extension[value].value[x] 0..1
+* extension[value].value[x] only string
+* extension[xhtml] 0..1
+* extension[xhtml] only http://hl7.org/fhir/StructureDefinition/rendering-xhtml
+
+Extension: ehealth-enableWhen-conditionId
+Title:     "Condition Id"
+Description: "Id for condition on question"
+* . ^short = "Condition Id"
+* value[x] only string
 
