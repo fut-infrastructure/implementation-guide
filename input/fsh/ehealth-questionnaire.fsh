@@ -100,10 +100,11 @@ Title:     "Help text"
 Description: "Help text for questionnaires"
 * . ^short = "Help text"
 * extension contains
-    value 1..1 and
+    text 1..1 and
     http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
-* extension[value].value[x] 1..1
-* extension[value].value[x] only string
+* extension[text].value[x] 1..1
+* extension[text].value[x] only string
+* value[x] 0..0
 
 Extension: ehealth-enableWhen-conditionId
 Title:     "Condition Id"
