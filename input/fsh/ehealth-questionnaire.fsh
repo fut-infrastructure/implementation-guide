@@ -32,7 +32,7 @@ Parent: Questionnaire
 * item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
-* item.enableWhen.extension contains ehealth-enableWhen-conditionId named conditionId 0..1
+* item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
@@ -95,18 +95,14 @@ Description: "Defines the Answer condition for an answer option in the questionn
 * extension[value].value[x] only decimal or integer or string or Coding or boolean
 * extension[operator].valueCode from http://hl7.org/fhir/ValueSet/questionnaire-enable-operator
 
-Extension: ehealth-questionnaire-helpText
-Title:     "Help text"
+Logical: HelpText
+Id: ehealth-questionnaire-helpText
+Title: "Help text"
 Description: "Help text for questionnaires"
-* . ^short = "Help text"
-* extension contains
-    text 1..1 and
-    http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
-* extension[text].value[x] 1..1
-* extension[text].value[x] only string
-* value[x] 0..0
+* text 1..1 string "Text" "String containing the value of for the help text"
+* xhtml 0..1 http://hl7.org/fhir/StructureDefinition/rendering-xhtml "XHTML" "xhtml representation of text"
 
-Extension: ehealth-enableWhen-conditionId
+Extension: ehealth-enableBehavior-conditionId
 Title:     "Condition Id"
 Description: "Id for condition on question"
 * . ^short = "Condition Id"
