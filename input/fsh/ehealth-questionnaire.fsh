@@ -95,12 +95,18 @@ Description: "Defines the Answer condition for an answer option in the questionn
 * extension[value].value[x] only decimal or integer or string or Coding or boolean
 * extension[operator].valueCode from http://hl7.org/fhir/ValueSet/questionnaire-enable-operator
 
-Logical: HelpText
-Id: ehealth-questionnaire-helpText
-Title: "Help text"
-Description: "Help text for questionnaires"
-* text 1..1 string "Text" "String containing the value of for the help text"
-* xhtml 0..1 http://hl7.org/fhir/StructureDefinition/rendering-xhtml "XHTML" "xhtml representation of text"
+Extension: ehealth-questionnaire-helpText
+Title:     "Help text"
+Description: "Help text for questionnaires. xhtml contains an equivalent of the text string, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing restrictions on XHTML content apply. Note that using markdown allows for greater flexibility of display."
+* . ^short = "Help text"
+* extension contains
+    text 1..1 and
+    xhtml 0..1
+* extension[text].value[x] 1..1
+* extension[text].value[x] only string
+* extension[xhtml].value[x] 1..1
+* extension[xhtml].value[x] only string
+* value[x] 0..0
 
 Extension: ehealth-enableBehavior-conditionId
 Title:     "Condition Id"
