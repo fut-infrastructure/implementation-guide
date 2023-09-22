@@ -108,7 +108,7 @@ Description: "Help text for questions. xhtml contains an equivalent of the text 
 * extension[xhtml].value[x] only string
 * value[x] 0..0
 
-Extension: ehealth-enableWhenBehavior-conditionId
+Extension: ehealth-enableBehavior-conditionId
 Title:     "Condition Id"
 Description: "Id for condition on question"
 * . ^short = "Condition Id"
