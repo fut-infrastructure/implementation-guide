@@ -97,7 +97,7 @@ Description: "Defines the Answer condition for an answer option in the questionn
 
 Extension: ehealth-questionnaire-helpText
 Title:     "Help text"
-Description: "Help text for questionnaires. xhtml contains an equivalent of the text string, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing restrictions on XHTML content apply. Note that using markdown allows for greater flexibility of display."
+Description: "Help text for questions. xhtml contains an equivalent of the text string, but includes additional XHTML markup, such as bold, italics, styles, tables, etc. Existing restrictions on XHTML content apply. Note that using markdown allows for greater flexibility of display."
 * . ^short = "Help text"
 * extension contains
     text 1..1 and
@@ -108,7 +108,7 @@ Description: "Help text for questionnaires. xhtml contains an equivalent of the 
 * extension[xhtml].value[x] only string
 * value[x] 0..0
 
-Extension: ehealth-enableBehavior-conditionId
+Extension: ehealth-enableWhenBehavior-conditionId
 Title:     "Condition Id"
 Description: "Id for condition on question"
 * . ^short = "Condition Id"

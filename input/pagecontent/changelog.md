@@ -11,6 +11,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added ehealth-questionnaire-helpText to Questionnaire.QuestionnaireItem
+- Added ehealth-enableWhenBehavior-conditionId to EnableWhenBehaviour in Questionnaire.QuestionnaireItem 
 
 ## 2.9.0 (2023-08-29)
 
