@@ -28,6 +28,7 @@ Parent: Questionnaire
 * item.extension contains ehealth-questionnaire-helpText named helpText 0..1
 * item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
 * item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
+* item.extension contains ehealth-external-identifier named externalIdentifier 0..1
 * item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
 * item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
@@ -110,6 +111,12 @@ Description: "Help text for questions. xhtml contains an equivalent of the text 
 
 Extension: ehealth-enableBehavior-conditionId
 Title:     "Condition Id"
-Description: "Id for condition on question"
+Description: "Id for condition on question."
 * . ^short = "Condition Id"
 * value[x] only string
+
+Extension:   ehealth-external-identifier
+Title:       "ExternalIdentifier"
+Description: "External Identifier. Note that this Identifier does not have to unique within the Questionnaire."
+* . ^short = "External Identifier"
+* value[x] only Identifier

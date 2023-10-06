@@ -52,4 +52,7 @@ The `item.helpText` element supports adding additional descriptions and help for
 The `helpText.xhtml` value should follow the same standards as http://hl7.org/fhir/extension-rendering-xhtml.html.
 
 ### ConditionId
-The `item.enableBehavior.conditionId` can be used to identify conditions. This property is primarily used when modeling Questionnaire which should be transformed to CDA documents.
+The `item.enableBehavior.conditionId` can be used to identify conditions. This property is primarily used when modeling Questionnaires which should be transformed to CDA documents.
+
+### External identifier
+The `item.externalIdentifier` can be used to identify either questionnaire groups or questionnaire questions. This property is primarily used when modeling Questionnaires which should be transformed to CDA documents.
