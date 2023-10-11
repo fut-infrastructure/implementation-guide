@@ -1,0 +1,22 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-get-report-job-status",
+  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-report-job-status",
+  "name": "get-report-job-status",
+  "title": "Get Report job status",
+  "status": "active",
+  "kind": "operation",
+  "description": "### Report Contents\n",
+  "affectsState": true,
+  "code": "get-report-job-status",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
+}
