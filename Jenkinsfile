@@ -45,7 +45,7 @@ podTemplates.igPublisher('test') {
     }
 
     // ### Deploy only the master branch ###
-    if (env.BRANCH_NAME != 'FUT1-11222_ccr0179') {
+    if (env.BRANCH_NAME != 'master') {
       return
     }
 
