@@ -6,6 +6,25 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Custom operations
 #### System operations
+- Added description of `-s-execute-careplan-and-episode-of-care-stats` operation
+- Added description of `-s-execute-careplan-customization-stats` operation
+- Added description of `-s-execute-careplan-duration-stats` operation
+- Added description of `-s-execute-careplans-by-patient` operation
+- Added description of `-s-execute-careteam-stats` operation
+- Added description of `-s-execute-measurement-stats` operation
+- Added description of `-s-execute-patient-devices` operation
+- Added description of `-s-execute-patient-gdpr` operation
+- Added description of `-s-execute-patient-total` operation
+- Added description of `-s-execute-patient-usage-stats` operation
+- Added description of `-s-execute-practitioner-gdpr` operation
+- Added description of `-s-execute-practitioner-stats` operation
+- Added description of `-s-execute-questionnaireresponses` operation
+- Added description of `-s-execute-ssl-orders` operation
+- Added description of `-s-fetch-patient-usage-stats` operation
+- Added description of `-s-fetch-questionnaireresponses` operation
+- Added description of `-s-get-report-job-status` operation
+- Added description of `-s-schedule-patient-usage-stats` operation
+- Added description of `-s-schedule-questionnaireresponses` operation#### Instance operations
 #### Instance operations
 ### Code systems
 ### ValueSets
@@ -13,6 +32,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Added ehealth-questionnaire-helpText to Questionnaire.QuestionnaireItem
 - Added ehealth-enableBehavior-conditionId to EnableBehaviour in Questionnaire.QuestionnaireItem 
+#### CarePlan (ehealth-careplan)
+- Added search parameter 'condition'
+- Added search parameter 'instantiates-canonical'
 
 ## 2.9.0 (2023-08-29)
 
