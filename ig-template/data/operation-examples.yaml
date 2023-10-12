@@ -74,7 +74,7 @@
 # system reporting
 
 - profile: system
-  path: POST_execute_questionnaireresponses.html
+  path: POST_execute-questionnaireresponses.html
 
 - profile: system
   path: POST_fetch-careplan-and-episode-of-care-stats.html
@@ -110,7 +110,7 @@
   path: POST_fetch-practitioner-stats.html
 
 - profile: system
-  path: POST_fetch_questionnaireresponses.html
+  path: POST_fetch-questionnaireresponses.html
 
 - profile: system
   path: POST_fetch-ssl-orders.html
