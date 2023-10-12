@@ -116,6 +116,9 @@
   path: POST_fetch-ssl-orders.html
 
 - profile: system
+  path: POST_get-report-job-status.html
+
+- profile: system
   path: POST_schedule-careplan-and-episode-of-care-stats.html
 
 - profile: system
