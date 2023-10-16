@@ -1,0 +1,61 @@
+# ReleaseBuild Workflow
+#
+# This GitHub Actions workflow performs the publication process for a FHIR IG Release.
+#
+# Based on these workflows:
+# https://github.com/medigree/base/blob/main/.github/workflows/ghbuild.yml
+# https://github.com/WorldHealthOrganization/smart-html/blob/main/.github/workflows/release.yml
+
+name: "ReleaseBuild"
+
+# Controls when the action will run.
+on:
+  workflow_call: # Reusable by other workflows.
+  # Triggers the workflow on push or pull request events.
+  push:
+    branches: # Only triggers on pushes on these branches.
+      - "master"
+      #- "releases/**"
+  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: "ubuntu-latest"
+    env:
+      #GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: Get branch name
+        run: echo ${GITHUB_REF##*/}
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      - name: Update the image to the latest publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Get the latest publisher - don't run the batch script but run the line directly
+          args: >
+            curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
+                 -o ./input-cache/publisher.jar --create-dirs
+
+      - name: Create package cache folder
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          entrypoint: /bin/sh
+          args: -c "mkdir -p ./fhir-package-cache && chown 1001:127 ./fhir-package-cache"
+
+      - name: Run the IG publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          # Run the publisher - don't run the batch script but run the line directly
+          args: >
+            java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build
+                 -repo https://github.com/${{github.repository}} -package-cache-folder ./fhir-package-cache
