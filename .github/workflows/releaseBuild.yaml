@@ -15,6 +15,8 @@ on:
   push:
     branches: # Only triggers on pushes on these branches.
       - "master"
+        # Temporarily enable to test the workflow on a feature branch.
+      - "*/feature/**"
       #- "releases/**"
   pull_request:
 
