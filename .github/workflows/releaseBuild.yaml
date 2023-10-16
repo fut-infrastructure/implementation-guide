@@ -98,7 +98,7 @@ jobs:
         id: ig-version
         uses: pietrobolcato/action-read-yaml@1.1.0
         with:
-          config: ${{ github.workspace }}/fsh-content/sushi-config.yaml
+          config: ${{ github.workspace }}/sushi-config.yaml
         
         # Change the default destination directory to the IG version if it's not the latest.
       - name: IG Path version
@@ -115,7 +115,7 @@ jobs:
           secret_key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
 
       - name: Deploy IG to S3
-        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/${{ env.DEST_DIR }}
+        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/${{ env.DEST_DIR }}/
 
       - name: Deploy static files to S3
         run: |
@@ -130,4 +130,4 @@ jobs:
 
       - name: Deploy latest released to S3
         if: steps.ig-version.outputs['version'] == 'latest'
-        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/latest-released/ig
+        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/latest-released/ig/
