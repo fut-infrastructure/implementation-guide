@@ -29,13 +29,23 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: "ubuntu-latest"
-    #env:
-      #GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Get branch name
         run: echo ${GITHUB_REF##*/}
+      
+        # Cache Fish output for usage in other jobs.
+      - name: Output cache
+        id: fsh-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            static/**
+            output/**
+            fsh-content/sushi-config.yaml
+          key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
+          restore-keys: ${{ runner.os }}-fsh-
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
@@ -60,3 +70,63 @@ jobs:
           args: >
             java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build
                  -repo https://github.com/${{github.repository}} -package-cache-folder ./fhir-package-cache
+
+  release:
+    runs-on: "ubuntu-latest"
+    # Only deploy on pushes to master.
+    #if: github.ref == 'refs/heads/master'
+      
+    env:
+      AWS_BUCKET: "ehealth-documentation-github"
+      DEST_DIR: "latest/ig"
+
+    steps:
+        # Retrieve cached Fish output.
+      - name: Output cache
+        id: fsh-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            static/**
+            output/**
+            fsh-content/sushi-config.yaml
+          key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
+      
+        # Load the IG config from the sushi-config.yaml file.
+      - name: IG Version
+        id: ig-version
+        uses: pietrobolcato/action-read-yaml@1
+        with:
+          config: ${{ github.workspace }}/fsh-content/sushi-config.yaml
+        
+        # Change the default destination directory to the IG version if it's not the latest.
+      - name: IG Path version
+        if: steps.ig-version.outputs["version"] != "latest"
+        run: echo "DEST_DIR=v${{ steps.ig-version.outputs["version"] }}/ig" >> "$GITHUB_ENV"
+
+        # Configure the AWS CLI.
+      - name: Set up S3cmd cli tool
+        uses: s3-actions/s3cmd@v1
+        with:
+          provider: aws # default is linode
+          region: 'eu-west-1'
+          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret_key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
+
+      - name: Deploy IG to S3
+        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/${{ env.DEST_DIR }}
+
+      - name: Deploy static files to S3
+        run: |
+          s3cmd del --force "s3://${{ env.AWS_BUCKET }}/index.html"
+          s3cmd put --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose "static/index.html" "s3://${{ env.AWS_BUCKET }}/index.html"
+
+          s3cmd del --force "s3://${{ env.AWS_BUCKET }}/sitemap.txt"
+          s3cmd put --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose "static/sitemap.txt" "s3://${{ env.AWS_BUCKET }}/sitemap.txt"
+
+          s3cmd del --force "s3://${{ env.AWS_BUCKET }}/robots.txt"
+          s3cmd put --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose "static/robots.txt" "s3://${{ env.AWS_BUCKET }}/robots.txt"
+
+      - name: Deploy latest released to S3
+        if: steps.ig-version.outputs["version"] == "latest"
+        run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/latest-released/ig
