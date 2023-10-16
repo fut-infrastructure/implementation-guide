@@ -102,7 +102,7 @@ jobs:
         # Change the default destination directory to the IG version if it's not the latest.
       - name: IG Path version
         if: steps.ig-version.outputs["version"] != "latest"
-        run: echo "DEST_DIR=v${{ steps.ig-version.outputs["version"] }}/ig" >> "$GITHUB_ENV"
+        run: echo "DEST_DIR=v${{ steps.ig-version.outputs['version'] }}/ig" >> "$GITHUB_ENV"
 
         # Configure the AWS CLI.
       - name: Set up S3cmd cli tool
