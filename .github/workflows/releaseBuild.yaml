@@ -101,7 +101,7 @@ jobs:
         
         # Change the default destination directory to the IG version if it's not the latest.
       - name: IG Path version
-        if: steps.ig-version.outputs["version"] != "latest"
+        if: steps.ig-version.outputs['version'] != "latest"
         run: echo "DEST_DIR=v${{ steps.ig-version.outputs['version'] }}/ig" >> "$GITHUB_ENV"
 
         # Configure the AWS CLI.
@@ -128,5 +128,5 @@ jobs:
           s3cmd put --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose "static/robots.txt" "s3://${{ env.AWS_BUCKET }}/robots.txt"
 
       - name: Deploy latest released to S3
-        if: steps.ig-version.outputs["version"] == "latest"
+        if: steps.ig-version.outputs['version'] == "latest"
         run: s3cmd sync --delete-removed --acl-public --no-mime-magic --guess-mime-type --no-preserve --no-progress --verbose --recursive output/ s3://${{ env.AWS_BUCKET }}/latest-released/ig
