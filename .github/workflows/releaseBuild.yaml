@@ -43,7 +43,7 @@ jobs:
           path: |
             static/**
             output/**
-            fsh-content/sushi-config.yaml
+            sushi-config.yaml
           key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
           restore-keys: ${{ runner.os }}-fsh-
 
@@ -90,7 +90,7 @@ jobs:
           path: |
             static/**
             output/**
-            fsh-content/sushi-config.yaml
+            sushi-config.yaml
           key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
       
         # Load the IG config from the sushi-config.yaml file.
