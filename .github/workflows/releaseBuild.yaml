@@ -96,7 +96,7 @@ jobs:
         # Load the IG config from the sushi-config.yaml file.
       - name: IG Version
         id: ig-version
-        uses: pietrobolcato/action-read-yaml@1.1
+        uses: pietrobolcato/action-read-yaml@1.1.0
         with:
           config: ${{ github.workspace }}/fsh-content/sushi-config.yaml
         
