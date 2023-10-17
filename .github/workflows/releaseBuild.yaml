@@ -13,10 +13,9 @@ on:
   workflow_call: # Reusable by other workflows.
   # Triggers the workflow on push or pull request events.
   push:
-    branches: # Only triggers on pushes on these branches.
+    branches: 
+      # Only triggers on pushes on these branches.
       - "master"
-        # Temporarily enable to test the workflow on a feature branch.
-      - "*/feature/**"
       #- "releases/**"
   pull_request:
 
@@ -75,10 +74,10 @@ jobs:
     runs-on: "ubuntu-latest"
     needs: build
     # Only deploy on pushes to master.
-    #if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
       
     env:
-      AWS_BUCKET: "ehealth-documentation-github"
+      AWS_BUCKET: "ehealth-documentation"
       DEST_DIR: "latest/ig"
 
     steps:
