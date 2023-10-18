@@ -74,10 +74,10 @@ jobs:
     runs-on: "ubuntu-latest"
     needs: build
     # Only deploy on pushes to master.
-    #if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
       
     env:
-      AWS_BUCKET: "ehealth-documentation-github"
+      AWS_BUCKET: "ehealth-documentation"
       DEST_DIR: "latest/ig"
 
     steps:
