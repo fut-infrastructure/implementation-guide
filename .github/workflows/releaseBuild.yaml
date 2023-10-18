@@ -33,18 +33,6 @@ jobs:
     steps:
       - name: Get branch name
         run: echo ${GITHUB_REF##*/}
-      
-        # Cache Fish output for usage in other jobs.
-      - name: Output cache
-        id: fsh-cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            static/**
-            output/**
-            sushi-config.yaml
-          key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
-          restore-keys: ${{ runner.os }}-fsh-
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
@@ -69,6 +57,18 @@ jobs:
           args: >
             java -Xmx4g -jar ./input-cache/publisher.jar publisher -ig . -auto-ig-build
                  -repo https://github.com/${{github.repository}} -package-cache-folder ./fhir-package-cache
+      
+        # Cache Fish output for usage in other jobs.
+      - name: Output cache
+        id: fsh-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            static/**
+            output/**
+            sushi-config.yaml
+          key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
+          restore-keys: ${{ runner.os }}-fsh-
 
   release:
     runs-on: "ubuntu-latest"
