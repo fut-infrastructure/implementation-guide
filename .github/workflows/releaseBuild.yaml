@@ -91,6 +91,7 @@ jobs:
             output/**
             sushi-config.yaml
           key: ${{ runner.os }}-fsh-${{ hashFiles('static/**') }}-${{ hashFiles('output/**') }}
+          restore-keys: ${{ runner.os }}-fsh-
       
         # Load the IG config from the sushi-config.yaml file.
       - name: IG Version
