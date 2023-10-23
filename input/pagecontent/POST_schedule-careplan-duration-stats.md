@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDliODZkYzUtODNjYy00MmE4LWEwOGEtN2JjZDQxMjVlNTQxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1kdXJhdGlvbi1zdGF0cyIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTA0MS5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi82NDEzMCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZjA2ODI5ZjktNmYxMy00OTY1LWIwNmEtOWU5N2FmNDI0MzIyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbi1kdXJhdGlvbi1zdGF0cyIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTA1Mi5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi85NTA0NCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1041.local/fhir/Organization/64130"
+        "reference": "https://organization.cit-reporting-1052.local/fhir/Organization/95044"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-10-11T11:40:17+00:00",
-        "end": "2023-10-11T11:40:17+00:00"
+        "start": "2023-10-20T10:52:48+00:00",
+        "end": "2023-10-20T10:52:48+00:00"
       }
     }
   ]
@@ -40,10 +40,10 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "11",
+  "id": "12",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-11T11:40:18.184+00:00",
+    "lastUpdated": "2023-10-20T10:52:49.994+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "09b86dc5-83cc-42a8-a08a-7bcd4125e541"
+      "value": "f06829f9-6f13-4965-b06a-9e97af424322"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

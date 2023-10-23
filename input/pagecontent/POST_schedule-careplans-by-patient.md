@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTk3NmMyYTEtYzEzYi00OTllLWJkYzMtNWUwYTcyOTYxMzRjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCIsInJlcG9ydC1ub24tYW5vbnltaXplZCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTA0MS5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi8xOTg4NiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZDBkMjdjYjUtMjVjMC00M2ZjLTk4NGEtYWY1ZDFjM2E3MDRjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1jYXJlcGxhbnMtYnktcGF0aWVudCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTA1Mi5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi81MDYwIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,14 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1041.local/fhir/Organization/19886"
+        "reference": "https://organization.cit-reporting-1052.local/fhir/Organization/5060"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-10-11T11:41:06+00:00",
-        "end": "2023-10-11T11:41:06+00:00"
+        "start": "2023-10-20T10:53:38+00:00",
+        "end": "2023-10-20T10:53:38+00:00"
       }
     }
   ]
@@ -40,10 +40,10 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "21",
+  "id": "22",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-11T11:41:07.422+00:00",
+    "lastUpdated": "2023-10-20T10:53:39.357+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -51,7 +51,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "1976c2a1-c13b-499e-bdc3-5e0a7296134c"
+      "value": "d0d27cb5-25c0-43fc-984a-af5d1c3a704c"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

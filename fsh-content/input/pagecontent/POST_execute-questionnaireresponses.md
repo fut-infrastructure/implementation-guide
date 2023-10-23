@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiN2U0MGE1ODYtNmNjMy00ODgzLWIzNWEtNTI4YmUwMmEzNzNiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1xdWVzdGlvbm5haXJlcmVzcG9uc2VzIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy0xMDQxLmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzE0MzkzIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiY2RmZDMxYmQtNmI5OC00YWM0LTg1YmQtZmVhYzJhN2VjOGUxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1xdWVzdGlvbm5haXJlcmVzcG9uc2VzIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy0xMDUyLmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzgxMDciLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -26,7 +26,7 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1041.local/fhir/Organization/14393"
+        "reference": "https://organization.cit-reporting-1052.local/fhir/Organization/8107"
       }
     },
     {
@@ -40,32 +40,32 @@ __Body__:
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2023-10-11T11:40:43+00:00",
-        "end": "2023-10-11T11:40:43+00:00"
+        "start": "2023-10-20T10:53:16+00:00",
+        "end": "2023-10-20T10:53:16+00:00"
       }
     },
     {
       "name": "questionnaire",
       "valueReference": {
-        "reference": "https://questionnaire.cit-reporting-1041.local/fhir/Questionnaire/13110"
+        "reference": "https://questionnaire.cit-reporting-1052.local/fhir/Questionnaire/71195"
       }
     },
     {
       "name": "questionnaire",
       "valueReference": {
-        "reference": "https://questionnaire.cit-reporting-1041.local/fhir/Questionnaire/37110"
+        "reference": "https://questionnaire.cit-reporting-1052.local/fhir/Questionnaire/37370"
       }
     },
     {
       "name": "careteam",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1041.local/fhir/CareTeam/54503"
+        "reference": "https://organization.cit-reporting-1052.local/fhir/CareTeam/5984"
       }
     },
     {
       "name": "careteam",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1041.local/fhir/CareTeam/73908"
+        "reference": "https://organization.cit-reporting-1052.local/fhir/CareTeam/22095"
       }
     },
     {
@@ -83,10 +83,10 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "19",
+  "id": "20",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-11T11:40:45.948+00:00",
+    "lastUpdated": "2023-10-20T10:53:18.664+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -94,7 +94,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "7e40a586-6cc3-4883-b35a-528be02a373b"
+      "value": "cdfd31bd-6b98-4ac4-85bd-feac2a7ec8e1"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="
