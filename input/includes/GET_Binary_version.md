@@ -1,9 +1,9 @@
-`GET [base]/Binary/24/_history/1`
+`GET [base]/Binary/34/_history/1`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzQzZjVjYmMtM2FlZC00MTFmLWEwNjEtYzBkNmRmNGMyNDQ5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiR0ZXN0LW9ubHktY3JlYXRlIiwiQmluYXJ5LnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWI1MWQ5NGMtYWU2Ny00ZDRiLThjMTQtMDg0NmUzNTFiMmUxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiR0ZXN0LW9ubHktY3JlYXRlIiwiQmluYXJ5LnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "24",
+  "id": "34",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-08-17T12:38:15.956+00:00",
-    "source": "#ab27162a-2e31-9b",
+    "lastUpdated": "2023-10-20T10:54:34.356+00:00",
+    "source": "#3e54790e-6112-9a",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -27,7 +27,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "c43f5cbc-3aed-411f-a061-c0d6df4c2449"
+      "value": "1b51d94c-ae67-4d4b-8c14-0846e351b2e1"
     }
   },
   "data": "eyJIZWxsbyI6IldvcmxkIn0="
