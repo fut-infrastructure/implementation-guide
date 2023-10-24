@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 2.10.0 (2023-11-09)
 
 ### General changes
 
