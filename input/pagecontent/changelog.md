@@ -17,7 +17,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-classcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-eventcodelists-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-formatcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
-- Updated ValueSet-ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 ### ConceptMaps
 ### Resource/profile changes
