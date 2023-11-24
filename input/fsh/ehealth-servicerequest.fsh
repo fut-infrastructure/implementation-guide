@@ -5,6 +5,7 @@ Parent: ServiceRequest
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-referenceRange named referenceRange 0..*
 * extension contains ehealth-sharingPolicy named sharingPolicy 1..1
+* extension contains ehealth-sharingApprovalPolicy named sharingApprovalPolicy 1..1
 * extension contains ehealth-reuseCriteria named reuseCriteria 0..1
 * extension contains ehealth-trigger-enablement-code named triggerEnablementCode 0..1
 * extension contains ehealth-servicerequest-statusHistory named statusHistory 0..*

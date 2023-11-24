@@ -8,12 +8,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies
 - Updated urn:oid:1.2.208.176.2.1 with NPU22089 and NPU03963
 - Updated urn:oid:1.2.208.176.2.4 with ALAL codes
 - Added urn:oid:1.2.208.176.7.3.1
 - Updated urn:oid:1.2.208.184.100.1 with CMR, PDC and MADC
 - Updated urn:oid:1.2.208.184.100.10 with codes
 ### ValueSets
+- Added http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-classcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-eventcodelists-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-formatcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
@@ -21,18 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 ### ConceptMaps
 ### Resource/profile changes
-
-## 2.11.0 (2023-11-24)
-
-### General changes
-
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
+- Added extension ehealth-ext-sharingApprovalPolicy to ActivityDefinition and ServiceRequest
 - Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
 
 ## 2.10.0 (2023-11-09)
