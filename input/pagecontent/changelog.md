@@ -22,6 +22,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 
+## 2.11.0 (2023-11-24)
+
+### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
+
 ## 2.10.0 (2023-11-09)
 
 ### General changes
