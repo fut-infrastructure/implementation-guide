@@ -1,7 +1,7 @@
 Profile: ehealth-clinicalimpression
 Id: ehealth-clinicalimpression
 Parent: ClinicalImpression
-* extension contains ehealth-clinicalimpression-organization named assesorOrganization 0..1
+* extension contains ehealth-clinicalimpression-assessor-organization named assessorOrganization 0..1
 * extension contains ehealth-clinicalimpression-careplan named carePlan 0..1
 * extension contains ehealth-clinicalimpression-decisionContext named decisionContext 0..*
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
@@ -30,7 +30,7 @@ Parent: ClinicalImpression
 * note.authorString only string
 * note 0..*
 
-Extension: ehealth-clinicalimpression-assesor-organization
+Extension: ehealth-clinicalimpression-assessor-organization
 Title:     "assesor-Organization"
 Description: "The organization that the assessor is a part of."
 * . ^short = "Assesors Organization"
