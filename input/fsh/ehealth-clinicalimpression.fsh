@@ -31,9 +31,9 @@ Parent: ClinicalImpression
 * note 0..*
 
 Extension: ehealth-clinicalimpression-assessor-organization
-Title:     "assesor-Organization"
+Title:     "assessor-Organization"
 Description: "The organization that the assessor is a part of."
-* . ^short = "Assesors Organization"
+* . ^short = "Assessors Organization"
 * value[x] only Reference(ehealth-organization)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
