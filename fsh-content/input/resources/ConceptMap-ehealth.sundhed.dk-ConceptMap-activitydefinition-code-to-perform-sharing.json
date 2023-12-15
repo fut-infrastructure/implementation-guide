@@ -1,12 +1,13 @@
 {
   "resourceType": "ConceptMap",
-  "id": "activitydefinition-code-to-sharing-approval-policy",
+  "id": "activitydefinition-code-to-perform-sharing",
   "url": "http://hl7.org/fhir/ConceptMap/activitydefinition-code-to-perform-sharing",
   "version": "2023-14-12T11:30:00",
-  "name": "activitydefinition-code-to-sharing-approval-policy",
-  "title": "Activitydefinition-code-to-sharing-approval-policy",
+  "name": "activitydefinition-code-to-perform-sharing",
+  "title": "Activitydefinition-code-to-perform-sharing",
   "status": "active",
   "experimental": false,
+  "description": "The map controls whether an activity shall have sharingApprovalPolicy or not",
   "date": "2023-12-14T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
