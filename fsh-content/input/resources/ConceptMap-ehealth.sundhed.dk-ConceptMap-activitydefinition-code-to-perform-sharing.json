@@ -1,7 +1,7 @@
 {
   "resourceType": "ConceptMap",
   "id": "activitydefinition-code-to-perform-sharing",
-  "url": "http://hl7.org/fhir/ConceptMap/activitydefinition-code-to-perform-sharing",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing",
   "version": "2023-14-12T11:30:00",
   "name": "activitydefinition-code-to-perform-sharing",
   "title": "Activitydefinition-code-to-perform-sharing",
