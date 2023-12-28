@@ -15,11 +15,13 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
+* item obeys only-one-sliderStepValue-type-per-item
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/maxValue named maxValue 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue named questionnaire-sliderStepValue 0..1
+* item.extension contains ehealth-questionnaire-sliderStepValueDecimal named questionnaire-sliderStepValueDecimal 0..1
 * item.extension contains ehealth-questionnaire-feedback named feedback 0..1
 * item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
@@ -34,6 +36,13 @@ Parent: Questionnaire
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
+
+Extension: ehealth-questionnaire-sliderStepValueDecimal
+Title:     "Slider Step-value Decimal"
+Description: "Defines a decimal number step-value for the slider in the questionnaire."
+* . ^short = "The slider step-value as decimal-number"
+* value[x] only decimal
+* valueDecimal 1..1
 
 Extension: ehealth-questionnaire-recommendation
 Title:     "Questionnaire recommendation"
@@ -120,3 +129,8 @@ Title:       "ExternalIdentifier"
 Description: "External Identifier. Note that this Identifier does not have to unique within the Questionnaire."
 * . ^short = "External Identifier"
 * value[x] only Identifier
+
+Invariant:   only-one-sliderStepValue-type-per-item
+Description: "Only one sliderStepValue type can be used per item, either decimal or integer, not both."
+Expression:  "(( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists()) and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue').value.exists().not())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue').value.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValue').value.exists().not()))"
+Severity:    #error
