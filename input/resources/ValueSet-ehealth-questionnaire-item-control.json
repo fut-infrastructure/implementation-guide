@@ -37,6 +37,10 @@
           {
             "code": "check-box",
             "display": "Check-box"
+          },
+          {
+            "code": "slider",
+            "display": "Slider"
           }
         ]
       }

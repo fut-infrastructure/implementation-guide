@@ -21,11 +21,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-formatcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-ext-sharingApprovalPolicy to ActivityDefinition and ServiceRequest
 - Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
-
+- Added invariant to Questionnaire that only allows one sliderStepValue at a time 
 ## 2.10.0 (2023-11-09)
 
 ### General changes
