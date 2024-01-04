@@ -23,6 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
 ### ConceptMaps
+- Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing The map controls whether the sharingApprovalPolicy-field should be set on the given resource.
 ### Resource/profile changes
 - Added extension ehealth-ext-sharingApprovalPolicy to ActivityDefinition and ServiceRequest
 - Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
