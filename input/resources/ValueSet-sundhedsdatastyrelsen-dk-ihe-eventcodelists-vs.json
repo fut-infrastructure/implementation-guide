@@ -24,7 +24,90 @@
   "compose": {
     "include": [
       {
-        "system": "urn:oid:1.2.208.176.2.1"
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "ALAL01",
+            "display": "Kræftsygdomme"
+          },
+          {
+            "code": "ALAL02",
+            "display": "Hjertesygdomme"
+          },
+          {
+            "code": "ALAL03",
+            "display": "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+          },
+          {
+            "code": "ALAL21",
+            "display": "Kronisk obstruktiv lungesygdom (KOL)"
+          },
+          {
+            "code": "ALAL22",
+            "display": "Type 2-diabetes"
+          },
+          {
+            "code": "ALAL23",
+            "display": "Osteoporose"
+          },
+          {
+            "code": "ALAL51",
+            "display": "Graviditet, fødsel og barsel"
+          },
+          {
+            "code": "ALAL52",
+            "display": "Nyfødte"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.176.2.1",
+        "concept": [
+          {
+            "code": "NPU03804",
+            "display": "Pt—Legeme; masse = ? kg"
+          },
+          {
+            "code": "NPU03963",
+            "display": "U—Erythrocytter; arb.k.(proc.) = ?"
+          },
+          {
+            "code": "NPU21692",
+            "display": "Hjerte—Systole; frekv. = ? × 1/min"
+          },
+          {
+            "code": "NPU22089",
+            "display": "P(kB)—Glucose; stofk. = ? mmol/L"
+          }
+        ]
+      },
+      {
+        "system": "urn-oid-1.2.208.184.100.8",
+        "concept": [
+          {
+            "code": "NPU19748",
+            "display": "C-reaktivt protein [CRP];P"
+          },
+          {
+            "code": "DNK05472",
+            "display": "Blodtryk systolisk;Arm"
+          },
+          {
+            "code": "DNK05473",
+            "display": "Blodtryk diastolisk;Arm"
+          },
+          {
+            "code": "MCS88100",
+            "display": "FEV6;Lunge"
+          },
+          {
+            "code": "MCS88015",
+            "display": "FEV1;Lunge"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.176.7.3.1"
       }
     ]
   }

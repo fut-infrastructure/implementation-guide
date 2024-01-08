@@ -1,4 +1,4 @@
-`PUT [base]/ServiceRequest/2854`
+`PUT [base]/ServiceRequest/2905`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2854",
+  "id": "2905",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-08-17T13:43:27.630+00:00",
+    "lastUpdated": "2023-10-18T07:43:32.716+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -27,7 +27,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2598.local/fhir/EpisodeOfCare/2853"
+        "reference": "https://careplan.cit-careplan-2626.local/fhir/EpisodeOfCare/2904"
       }
     },
     {
@@ -58,7 +58,7 @@ __Body__:
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-08-17T13:43:26+00:00"
+            "start": "2023-10-18T07:43:31+00:00"
           }
         }
       ]
@@ -72,7 +72,7 @@ __Body__:
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2023-08-17T13:43:26+00:00"
+          "valueDateTime": "2023-10-18T07:43:31+00:00"
         }
       ]
     },
@@ -85,13 +85,13 @@ __Body__:
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2023-09-15T13:43:26+00:00"
+          "valueDateTime": "2023-11-16T07:43:31+00:00"
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2598.local/fhir/ActivityDefinition/67305"
+    "https://plan.cit-careplan-2626.local/fhir/ActivityDefinition/1168"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -102,10 +102,10 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "d5b8c689-6a03-4d0a-9d42-622bcefcfc59"
+    "text": "51f14d18-4946-4222-ab04-740d8fcb35e8"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/10587"
+    "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/12858"
   }
 }
 ```
@@ -114,10 +114,10 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2854",
+  "id": "2905",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-08-17T13:43:27.761+00:00",
+    "lastUpdated": "2023-10-18T07:43:32.886+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -126,7 +126,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2598.local/fhir/EpisodeOfCare/2853"
+        "reference": "https://careplan.cit-careplan-2626.local/fhir/EpisodeOfCare/2904"
       }
     },
     {
@@ -157,7 +157,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2023-08-17T13:43:26+00:00"
+            "start": "2023-10-18T07:43:31+00:00"
           }
         }
       ]
@@ -171,7 +171,7 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2023-08-17T13:43:26+00:00"
+          "valueDateTime": "2023-10-18T07:43:31+00:00"
         }
       ]
     },
@@ -184,13 +184,13 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2023-09-15T13:43:26+00:00"
+          "valueDateTime": "2023-11-16T07:43:31+00:00"
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2598.local/fhir/ActivityDefinition/67305"
+    "https://plan.cit-careplan-2626.local/fhir/ActivityDefinition/1168"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -201,10 +201,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "d5b8c689-6a03-4d0a-9d42-622bcefcfc59"
+    "text": "51f14d18-4946-4222-ab04-740d8fcb35e8"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2598.local/fhir/Patient/10587"
+    "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/12858"
   }
 }
 ```

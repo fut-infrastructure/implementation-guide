@@ -51,6 +51,21 @@
           "value": "Terapeutiske grænseværdier for GUL alarm"
         }
       ]
+    },
+    {
+      "code": "CMR",
+      "display": "Clinical Mesurement Report",
+      "definition": "Clinical Mesurement Report"
+    },
+    {
+      "code": "PDC",
+      "display": "Stamkort",
+      "definition": "Personal Data Card"
+    },
+    {
+      "code": "MADC",
+      "display": "MADC",
+      "definition": "Graviditetskort"
     }
   ]
 }

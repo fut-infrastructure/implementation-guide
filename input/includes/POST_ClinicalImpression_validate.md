@@ -22,7 +22,7 @@ __Body__:
         "id": "313",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-08-17T07:58:08.663+00:00",
+          "lastUpdated": "2023-10-16T08:35:52.529+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/20498"
+              "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/73036"
             }
           }
         ],
@@ -45,7 +45,7 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-task-1748.local/fhir/Patient/81451"
+          "reference": "https://patient.cit-task-1774.local/fhir/Patient/27649"
         }
       }
     }

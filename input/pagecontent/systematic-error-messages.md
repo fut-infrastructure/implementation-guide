@@ -292,6 +292,12 @@
 
 - `REPORTING_SYNCHRONOUS_GENERATION_NOT_ALLOWED`: Synchronous generation of the report is not allowed
 
+- `REPORTING_SCHEDULE_NOT_ALLOWED`: Scheduled generation of the report is not allowed
+
+- `REPORTING_EXECUTE_NOT_ALLOWED`: Asynchronous generation of the report is not allowed
+
+- `REPORTING_MUTUALLY_EXCLUSIVE_INPUT_PARAMETER`: Parameters "%s" and "%s" are mutually exclusive for report "%s".
+
 #### ehealth-security
 
 - `SECURITY_TOKEN_CONTEXT_NOT_ALLOWED`: Security token context not allowed: %s
@@ -311,6 +317,8 @@
 - `SECURITY_SEARCH_PARAM_NOT_MATCHING_TOKEN_CONTEXT`: Search parameters not matching security token context: %s
 
 - `SECURITY_SEARCH_PARAMS_MANDATORY`: Search parameters mandatory with current user type and combination of search parameters: %s
+
+- `SECURITY_SEARCH_OPERATION_POST_CONSTRAINT`: Search on %s only supports POST style.
 
 #### ehealth-status
 

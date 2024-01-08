@@ -1,4 +1,4 @@
-`GET [base]/Task?focus=https%3A%2F%2Fcareplan.cit-task-1748.local%2Ffhir%2FServiceRequest%2F69559`
+`GET [base]/Task?focus=https%3A%2F%2Fcareplan.cit-task-1774.local%2Ffhir%2FServiceRequest%2F17570`
 
 __Header__
 ```
@@ -15,16 +15,16 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "19b0c2f0-8aa4-4f9b-bb0d-94c405c3f963",
+  "id": "cecc2cce-e12e-48ff-8668-d981960878a1",
   "meta": {
-    "lastUpdated": "2023-08-17T08:00:08.743+00:00"
+    "lastUpdated": "2023-10-16T08:37:54.909+00:00"
   },
   "type": "searchset",
   "total": 0,
   "link": [
     {
       "relation": "self",
-      "url": "https://task.cit-task-1748.local/fhir/Task?_format=json&_pretty=true&focus=https%3A%2F%2Fcareplan.cit-task-1748.local%2Ffhir%2FServiceRequest%2F69559"
+      "url": "https://task.cit-task-1774.local/fhir/Task?_format=json&_pretty=true&focus=https%3A%2F%2Fcareplan.cit-task-1774.local%2Ffhir%2FServiceRequest%2F17570"
     }
   ]
 }

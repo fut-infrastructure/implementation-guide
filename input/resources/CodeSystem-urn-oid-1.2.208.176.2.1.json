@@ -9,7 +9,7 @@
   "experimental": false,
   "date": "2019-12-18T23:00:00+00:00",
   "publisher": "Sundhedsdatastyrelsen",
-  "identifier" : [
+  "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
       "value": "urn:oid:1.2.208.176.2.1"
@@ -41,6 +41,21 @@
             "code": "consumer"
           },
           "value": "Iltmætning"
+        }
+      ]
+    },
+    {
+      "code": "NPU22089",
+      "display": "P(kB)—Glucose; stofk. = ? mmol/L",
+      "definition": "P(kB)—Glucose; stofk. = ? mmol/L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Glukose"
         }
       ]
     },
@@ -101,6 +116,21 @@
             "code": "consumer"
           },
           "value": "Højde"
+        }
+      ]
+    },
+    {
+      "code": "NPU03963",
+      "display": "U—Erythrocytter; arb.k.(proc.) = ?",
+      "definition": "U—Erythrocytter; arb.k.(proc.) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Erytrocytter(semikvant)"
         }
       ]
     }

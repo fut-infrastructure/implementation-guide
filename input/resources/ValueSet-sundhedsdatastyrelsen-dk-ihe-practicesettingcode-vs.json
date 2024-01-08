@@ -27,6 +27,16 @@
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
+            "code" : "773568002",
+            "display" : "Emergency medicine",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "akutmedicin"
+              }
+            ]
+          },
+          {
             "code" : "408443003",
             "display" : "almen medicin",
             "designation" : [
@@ -357,6 +367,16 @@
             ]
           },
           {
+            "code" : "394608004",
+            "display" : "Orthodontics",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "ortodonti"
+              }
+            ]
+          },
+          {
             "code" : "394801008",
             "display" : "ortopædisk kirurgi",
             "designation" : [
@@ -423,16 +443,6 @@
               {
                 "language" : "da",
                 "value" : "reumatologi"
-              }
-            ]
-          },
-          {
-            "code" : "554011000005107",
-            "display" : "Retsmedicin",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Retsmedicin"
               }
             ]
           },

@@ -41,6 +41,50 @@
           "display": "Administrative koder til LPR3",
           "concept": [
             {
+              "code": "ALA",
+              "display": "Koder vedr. Forløbselement",
+              "concept": [
+                {
+                  "code": "ALAL",
+                  "display": "Forløbselement label",
+                  "concept": [
+                    {
+                      "code": "ALAL01",
+                      "display": "Kræftsygdomme"
+                    },
+                    {
+                      "code": "ALAL02",
+                      "display": "Hjertesygdomme"
+                    },
+                    {
+                      "code": "ALAL03",
+                      "display": "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+                    },
+                    {
+                      "code": "ALAL21",
+                      "display": "Kronisk obstruktiv lungesygdom (KOL)"
+                    },
+                    {
+                      "code": "ALAL22",
+                      "display": "Type 2-diabetes"
+                    },
+                    {
+                      "code": "ALAL23",
+                      "display": "Osteoporose"
+                    },
+                    {
+                      "code": "ALAL51",
+                      "display": "Graviditet, fødsel og barsel"
+                    },
+                    {
+                      "code": "ALAL52",
+                      "display": "Nyfødte"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "code": "ALCA",
               "display": "Kontakt type",
               "concept": [
