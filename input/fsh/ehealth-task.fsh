@@ -25,6 +25,7 @@ Parent: Task
 * relevantHistory ^type.aggregation = #referenced
 * restriction.recipient only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson or Group or ehealth-organization)
 * restriction.recipient ^type.aggregation = #referenced
+* extension contains ehealth-resolved-timing named resolvedTiming 0..1
 
 Extension: ehealth-task-category
 Title:     "Task category"

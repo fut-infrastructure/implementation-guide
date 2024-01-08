@@ -28,6 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-ext-sharingApprovalPolicy to ActivityDefinition and ServiceRequest
 - Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
 - Added invariant to Questionnaire that only allows one sliderStepValue at a time 
+- Added extention ehealth-resolved-timing to Task
 ## 2.10.0 (2023-11-09)
 
 ### General changes
