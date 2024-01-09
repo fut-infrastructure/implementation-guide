@@ -138,5 +138,5 @@ Severity:    #error
 
 Invariant:   only-type-integer-if-sliderStepValue-is-integer
 Description: "If type is integer, then the sliderStepValue must be integer."
-Expression:  "item.where(type = 'integer').exists() implies extension.where(url ='http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists()
+Expression:  "type = 'integer' implies extension.where(url ='http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists()
 Severity:    #error
