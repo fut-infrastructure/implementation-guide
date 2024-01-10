@@ -136,6 +136,6 @@ Expression:  "(( extension.where(url = 'http://ehealth.sundhed.dk/fhir/Structure
 Severity:    #error
 
 Invariant:   only-type-integer-if-sliderStepValue-is-integer
-Description: "If type is integer, then the sliderStepValue must be integer."
+Description: "If the type is integer, then the sliderStepValue must also be an integer."
 Expression:  "type = 'integer' implies extension.where(url ='http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists()"
 Severity:    #error
