@@ -134,8 +134,3 @@ Invariant:   only-one-sliderStepValue-type-per-item
 Description: "Only one sliderStepValue type can be used per item, either decimal or integer, not both."
 Expression:  "(( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists().not())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists().not()))"
 Severity:    #error
-
-Invariant:   only-type-integer-if-sliderStepValue-is-integer
-Description: "If the type is integer, then the sliderStepValue must also be an integer."
-Expression:  "(type = 'integer' and extension.where(url ='http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl').value.coding.where(code = 'slider').exists()) implies extension.where(url ='http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists()"
-Severity:    #error
