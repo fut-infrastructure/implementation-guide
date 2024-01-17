@@ -15,7 +15,7 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
-* item obeys only-one-sliderStepValue-type-per-item
+* item obeys sliderStepValue-Type
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
@@ -130,7 +130,7 @@ Description: "External Identifier. Note that this Identifier does not have to un
 * . ^short = "External Identifier"
 * value[x] only Identifier
 
-Invariant:   only-one-sliderStepValue-type-per-item
-Description: "Only one sliderStepValue type can be used per item, either decimal or integer, not both."
-Expression:  "(( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists().not())) or (( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists().not()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists())) or (( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists().not()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists().not()))"
+Invariant:   sliderStepValue-Type
+Description: "Item must have type='decimal' when using extension 'ehealth-questionnaire-sliderStepValueDecimal'"
+Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists() implies type = 'decimal'"
 Severity:    #error
