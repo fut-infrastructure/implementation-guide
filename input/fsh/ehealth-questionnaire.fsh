@@ -15,7 +15,7 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
-* item obeys only-one-sliderStepValue-type-per-item and only-type-integer-if-sliderStepValue-is-integer
+* item obeys only-one-sliderStepValue-type-per-item
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
@@ -132,5 +132,5 @@ Description: "External Identifier. Note that this Identifier does not have to un
 
 Invariant:   only-one-sliderStepValue-type-per-item
 Description: "Only one sliderStepValue type can be used per item, either decimal or integer, not both."
-Expression:  "(( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists().not())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').value.exists().not()) and ( extension.where(url = 'http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').value.exists().not()))"
+Expression:  "(( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists().not())) or (( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists().not()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists())) or (( extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists().not()) and ( extension('http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue').exists().not()))"
 Severity:    #error
