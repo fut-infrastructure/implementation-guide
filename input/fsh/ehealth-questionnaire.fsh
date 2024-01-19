@@ -130,7 +130,7 @@ Description: "External Identifier. Note that this Identifier does not have to un
 * . ^short = "External Identifier"
 * value[x] only Identifier
 
-Invariant:   sliderStepValue-Type
+Invariant:   sliderStepValueDecimal-Type
 Description: "Item must have type='decimal' when using extension 'ehealth-questionnaire-sliderStepValueDecimal'"
 Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists() implies type = 'decimal'"
 Severity:    #error
