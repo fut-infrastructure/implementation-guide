@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Publisher for all resources has been changed to "Den telemedicinske infrastruktur (eHealth Infrastructure)" instead of "Systematic | Trifork"
 
 ### Custom operations
 #### System operations
@@ -14,6 +15,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added urn:oid:1.2.208.176.7.3.1
 - Updated urn:oid:1.2.208.184.100.1 with CMR, PDC and MADC
 - Updated urn:oid:1.2.208.184.100.10 with codes
+- Added http://ehealth.sundhed.dk/cs/ehealth-questionnaire-elements
+- Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type with questionnaire-related code
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-classcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
@@ -22,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
+- Added http://ehealth.sundhed.dk/vs/ehealth-questionnaire-elements
 ### ConceptMaps
 - Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing The map controls whether the sharingApprovalPolicy-field should be set on the given resource.
 ### Resource/profile changes
@@ -29,6 +33,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
 - Added invariant to Questionnaire that only allows one sliderStepValue at a time 
 - Added extention ehealth-resolved-timing to Task
+- Added extention ehealth-external-identifier to Questionnaire.QuestionnaireItem
 ## 2.10.0 (2023-11-09)
 
 ### General changes
