@@ -10,7 +10,7 @@
         "Communication"
     ],
     "type": "token",
-    "description": "Search parameter for finding communication based on CareTeam recipient",
+    "description": "Search parameter for finding communication based on restriction category",
     "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category')",
     "xpathUsage": "normal"
 }
