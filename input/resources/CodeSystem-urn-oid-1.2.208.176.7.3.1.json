@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "urn-oid-1.2.208.176.7.3.1",
+  "url" : "urn:oid:1.2.208.176.7.3.1",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.208.176.7.3.1"
+  }],
+  "version" : "1.0",
+  "name" : "Questionnaires_used_in_the_Danish_Patient_Reported_Outcome_PRO",
+  "title": "Questionnaires used in the Danish Patient Reported Outcome (PRO)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-23T12:30:00+00:00",
+  "publisher" : "Sundhedsdatastyrelsen / Pro-Danmark",
+  "description" : "Code system for questionnaires used in the Danish Patient Reported",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "3d3d6f46-ea42-4d64-a2bb-52646dcd6513",
+      "display" : "Psoriasis v.3",
+      "definition" : "Psoriasis;  Version: 3; Dato: 2021-12-03"
+    },
+    {
+      "code" : "1de279ff-99fd-4544-9e41-300f56bc08e4",
+      "display" : "Diabetes v.10",
+      "definition" : "Spørgeskema i forb. med diabetes; Version: 10; Dato: 2021-12-07"
+    },
+    {
+      "code" : "898cba44-c668-41e8-ac25-c2b880ac7090",
+      "display" : "Hjerterehabilitering uddrag start v.3",
+      "definition" : "Kort spørgeskema i forbindelse med hjerterehabilitering, start; Version: 3; Dato: 20220610"
+    },
+    {
+      "code" : "c820effc-91d3-45cd-b2df-53ae95284349",
+      "display" : "Hjerterehabilitering uddrag slut v.3",
+      "definition" : "Kort spørgeskema i forbindelse med hjerterehabilitering, slut; Version: 3; Dato: 2022-06-10"
+    }
+  ]
+}

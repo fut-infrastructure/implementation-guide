@@ -1,4 +1,4 @@
-`GET [base]/StructureDefinition?name=af6bed8a-2a37-481b-8ff1-32fc7d089f59`
+`GET [base]/StructureDefinition?name=f808c02a-c6db-4716-a6d1-c511bbc2e52e`
 
 __Header__
 ```
@@ -15,34 +15,34 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "e0f09ec8-e8ec-44c8-9e7d-df7bfd0d6d46",
+  "id": "077ee9d1-88e4-47f1-872f-510eb2acf6c2",
   "meta": {
-    "lastUpdated": "2023-08-15T07:17:09.546+00:00"
+    "lastUpdated": "2023-10-16T09:05:41.984+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://questionnaire.cit-questionnaire-1149.local/fhir/StructureDefinition?_format=json&_pretty=true&name=af6bed8a-2a37-481b-8ff1-32fc7d089f59"
+      "url": "https://questionnaire.cit-questionnaire-1176.local/fhir/StructureDefinition?_format=json&_pretty=true&name=f808c02a-c6db-4716-a6d1-c511bbc2e52e"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-1149.local/fhir/StructureDefinition/211",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1176.local/fhir/StructureDefinition/215",
       "resource": {
         "resourceType": "StructureDefinition",
-        "id": "211",
+        "id": "215",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-08-15T07:17:09.117+00:00",
-          "source": "#effc1b9a-3116-9b",
+          "lastUpdated": "2023-10-16T09:05:40.063+00:00",
+          "source": "#f6791812-0128-90",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "http://a2466508-9763-4763-a123-169757e32848",
-        "name": "af6bed8a-2a37-481b-8ff1-32fc7d089f59",
+        "url": "http://e52840b5-cd54-4f6b-8369-741d09059b32",
+        "name": "f808c02a-c6db-4716-a6d1-c511bbc2e52e",
         "status": "draft",
         "kind": "resource",
         "abstract": true,
@@ -63,20 +63,20 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-1149.local/fhir/StructureDefinition/213",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1176.local/fhir/StructureDefinition/217",
       "resource": {
         "resourceType": "StructureDefinition",
-        "id": "213",
+        "id": "217",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-08-15T07:17:09.409+00:00",
-          "source": "#d012e0e9-4d14-92",
+          "lastUpdated": "2023-10-16T09:05:41.866+00:00",
+          "source": "#e2202a24-e6e3-96",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "http://dc106e94-c68a-44d4-a864-b5bacad1c6e8",
-        "name": "af6bed8a-2a37-481b-8ff1-32fc7d089f59",
+        "url": "http://76a9f9de-abcd-4975-8abe-0d1a49ae0ba3",
+        "name": "f808c02a-c6db-4716-a6d1-c511bbc2e52e",
         "status": "draft",
         "kind": "resource",
         "abstract": true,

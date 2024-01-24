@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-questionnaire-elements",
+  "url": "http://ehealth.sundhed.dk/cs/questionnaire-elements",
+  "version": "1.0.0",
+  "name": "Questionnaire_Elements",
+  "title": "Questionnaire Elements",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-09-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Questionnaire elements",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "questionnaireID",
+      "display": "Questionnaire ID",
+      "definition": "Questionnaire ID",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Spørgeskema ID"
+        }
+      ]
+    },
+    {
+      "code": "condition",
+      "display": "Condition",
+      "definition": "Condition",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Betingelse"
+        }
+      ]
+    },
+    {
+      "code": "group",
+      "display": "Questionnaire Group",
+      "definition": "Questionnaire Group",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Spørgsmålsgruppe"
+        }
+      ]
+    },
+    {
+      "code": "question",
+      "display": "Question",
+      "definition": "Question",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Spørgsmål"
+        }
+      ]
+    },
+    {
+      "code": "answer",
+      "display": "Answer",
+      "definition": "Answer",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Svar"
+        }
+      ]
+    }
+  ]
+}

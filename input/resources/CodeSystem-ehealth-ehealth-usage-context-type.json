@@ -55,6 +55,17 @@
           "value": "Type af grænseværdi med hvilken det er relevant at benytte det modul/element/ressource, der har nærværende brugskontekst (UsageContext)."
         }
       ]
+    },
+    {
+      "code": "questionnaire-related",
+      "display": "questionnaire related",
+      "definition": "The type of questionnaire element with which it is relevant to use a coded values/id registries having this use context (see http://hl7.org/fhir/metadatatypes.html#UsageContext). For this context type, the value should be a code taken from the http://ehealth.sundhed.dk/vs/questionnaire-elements value set",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Type af spørgeskemaelement med hvilken det er relevant at benytte kodede værdier/id register, der har nærværende brugskontekst (UsageContext)."
+        }
+      ]
     }
   ]
 }

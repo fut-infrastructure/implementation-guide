@@ -33,6 +33,10 @@ of the measurements (resource(s) resulting
 from conducting the activity) shall be allowed or not. The value in the ActivityDefinition
 function as a template assigned and adaptable to a particular Patient in a similar element in the
  ServiceRequest.
+* `ehealth-sharingApprovalPolicy` Selects whether the approval of publication to national document sharing 
+of measurements (resource(s) resulting from conducting the activity) must be done manually or if it is done automatically. 
+The value in the ActivityDefinition function as a template assigned and adaptable to a particular Patient in a similar element in the 
+ServiceRequest.
 
 ### Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining

@@ -1,6 +1,7 @@
 Profile: ehealth-clinicalimpression
 Id: ehealth-clinicalimpression
 Parent: ClinicalImpression
+* extension contains ehealth-clinicalimpression-assessor-organization named assessorOrganization 0..1
 * extension contains ehealth-clinicalimpression-careplan named carePlan 0..1
 * extension contains ehealth-clinicalimpression-decisionContext named decisionContext 0..*
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
@@ -28,6 +29,14 @@ Parent: ClinicalImpression
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 * note 0..*
+
+Extension: ehealth-clinicalimpression-assessor-organization
+Title:     "assessor-Organization"
+Description: "The organization that the assessor is a part of."
+* . ^short = "Assessors Organization"
+* value[x] only Reference(ehealth-organization)
+* valueReference 1..1
+* value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-clinicalimpression-careplan
 Title:       "Careplan"

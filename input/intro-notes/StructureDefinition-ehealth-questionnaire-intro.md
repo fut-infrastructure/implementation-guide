@@ -46,3 +46,13 @@ The extension rendering-styleSensitive indicates if clients must be able to disp
 
 ### Title and description
 A Questionnaire has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `ehealth-usage` are intended for clinicians and should be of a specific and professional language.
+
+### Help text
+The `item.helpText` element supports adding additional descriptions and help for a question. The element must contain a `helpText.text` string value, and can additionally hold a xhtml formatted equivalent in the `helpText.xhtml` string value.
+The `helpText.xhtml` value should follow the same standards as http://hl7.org/fhir/extension-rendering-xhtml.html.
+
+### ConditionId
+The `item.enableBehavior.conditionId` can be used to identify conditions. This property is primarily used when modeling Questionnaires which should be transformed to CDA documents.
+
+### External identifier
+The `item.externalIdentifier` can be used to identify either questionnaire groups or questionnaire questions. This property is primarily used when modeling Questionnaires which should be transformed to CDA documents.

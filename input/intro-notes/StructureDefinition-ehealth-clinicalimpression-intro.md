@@ -65,3 +65,8 @@ This indicates to the patient solution that the patient referenced in the `subje
     * For example, when a Practitioner assessment ClinicalImpression refers another ClinicalImpression through the element `previous` then it must also have the `ehealth-clinicalimpression-careplan` element set, referring the same CarePlan as the `previous` ClinicalImpression.
 
 2. A ClinicalImpression is not allowed to concern resources from different CarePlans, for example Observations from different CarePlans.
+
+### Used for manual approval of measurement sharing
+The element `assessorOrganization` is automatically set by the infrastructure to reflect the organizational context of the assessor who performed the assessment, when a ClinicalImpression is created to indicate the approval of document sharing.
+* In the case of a manual approval, the element `assessorOrganization` will automatically be set to the organizational context of the Practitioner who performed the assessment.
+* In the case of an automated approval, the element `assessorOrganization` will automatically be set to the CarePlan.author if possible, else it will be the EpisodeOfCare.caremanagerOrganization.

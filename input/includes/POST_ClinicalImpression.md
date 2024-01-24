@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/39814"
+        "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/86901"
       }
     },
     {
@@ -48,7 +48,7 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1748.local/fhir/Patient/92289"
+    "reference": "https://patient.cit-task-1774.local/fhir/Patient/72084"
   }
 }
 ```
@@ -60,7 +60,7 @@ __Response__
   "id": "280",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-08-17T07:57:38.125+00:00",
+    "lastUpdated": "2023-10-16T08:35:21.966+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -69,7 +69,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/39814"
+        "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/86901"
       }
     },
     {
@@ -94,8 +94,8 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1748.local/fhir/Patient/92289"
+    "reference": "https://patient.cit-task-1774.local/fhir/Patient/72084"
   },
-  "date": "2023-08-17T07:57:38+00:00"
+  "date": "2023-10-16T08:35:21+00:00"
 }
 ```

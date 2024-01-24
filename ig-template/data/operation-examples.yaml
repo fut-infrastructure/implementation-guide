@@ -74,6 +74,9 @@
 # system reporting
 
 - profile: system
+  path: POST_execute-questionnaireresponses.html
+
+- profile: system
   path: POST_fetch-careplan-and-episode-of-care-stats.html
 
 - profile: system
@@ -98,13 +101,22 @@
   path: POST_fetch-patient-gdpr.html
 
 - profile: system
+  path: POST_fetch-patient-usage-stats.html
+
+- profile: system
   path: POST_fetch-practitioner-gdpr.html
 
 - profile: system
   path: POST_fetch-practitioner-stats.html
 
 - profile: system
+  path: POST_fetch-questionnaireresponses.html
+
+- profile: system
   path: POST_fetch-ssl-orders.html
+
+- profile: system
+  path: POST_get-report-job-status.html
 
 - profile: system
   path: POST_schedule-careplan-and-episode-of-care-stats.html
@@ -132,6 +144,9 @@
 
 - profile: system
   path: POST_schedule-patient-total.html
+
+- profile: system
+  path: POST_schedule-patient-usage-stats.html
 
 - profile: system
   path: POST_schedule-practitioner-gdpr.html

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-measurement-sharing-approval-policies",
+  "url": "http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies",
+  "version": "1.0.0",
+  "name": "SharingApprovalPolicies",
+  "title": "Sharing Approval Policies",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-11-24T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Sharing approval policies",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "manual",
+      "display": "Manual",
+      "definition": "Document sharing must be approved manually",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Deling af dokument skal godkendes manuelt"
+        }
+      ]
+    },
+    {
+      "code": "automatic",
+      "display": "Automatic",
+      "definition": "Document sharing is approved automatically",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Deling af dokument bliver godkendt automatisk"
+        }
+      ]
+    }
+  ]
+}

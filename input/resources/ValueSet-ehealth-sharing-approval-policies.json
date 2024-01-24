@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-measurement-sharing-approval-policies",
+  "url": "http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies",
+  "version": "1.0.0",
+  "name": "SharingApprovalPolicies",
+  "title": "Sharing Approval Policies",
+  "status": "active",
+  "experimental": true,
+  "date": "2023-11-24T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Policies of approval for sharing measurement submissions with national registers such as KIH.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies"
+      }
+    ]
+  }
+}

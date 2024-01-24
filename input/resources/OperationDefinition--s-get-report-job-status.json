@@ -1,0 +1,22 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-get-report-job-status",
+  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-report-job-status",
+  "name": "get-report-job-status",
+  "title": "Get Report Job Status",
+  "status": "active",
+  "kind": "operation",
+  "description": "### Status Contents \nThis operation returns status for reports scheduled by the user (by schedule or execute)\n### Output\nThe output is a Bundle containing Parameters resources for each scheduled report.\nThe parts of the Parameters describe the class of report, the parameters that the report\nwas scheduled with, the user ID, the status of the report, a reference to the report Binary\nand time of creation, start, and end of execution.\n### Example output\n{\n  'resourceType': 'Bundle',\n  'type': 'collection',\n  'entry': [\n    {\n      'fullUrl': 'ce35bcd5-4bb2-4c6e-b230-5347df1fe9bc',\n      'resource': {\n        'resourceType': 'Parameters',\n        'id': 'ce35bcd5-4bb2-4c6e-b230-5347df1fe9bc',\n        'parameter': [\n          {\n            'name': 'reportJob',\n            'part': [\n              {\n                'name': 'reportClass',\n                'valueString': 'com.systematic.ehealth.reporting.reports.PatientsUsageReport'\n              },\n              {\n                'name': 'userId',\n                'valueString': '0aaca7cd-67c3-48dd-a8c4-0cceecb5d276'\n              },\n              {\n                'name': 'status',\n                'valueString': 'DONE'\n              },\n              {\n                'name': 'binary',\n                'valueReference': {\n                  'reference': 'https://reporting.local.ehealth.sundhed.dk/fhir/Binary/7'\n                }\n              },\n              {\n                'name': 'parameters',\n                'resource': {\n                  'resourceType': 'Parameters',\n                  'parameter': [\n                    {\n                      'name': 'anonymization',\n                      'valueString': 'None'\n                    }\n                  ]\n                }\n              },\n              {\n                'name': 'created',\n                'valueDateTime': '2023-10-12T09:51:50+00:00'\n              },\n              {\n                'name': 'started',\n                'valueDateTime': '2023-10-12T09:51:50+00:00'\n              },\n              {\n                'name': 'ended',\n                'valueDateTime': '2023-10-12T09:51:51+00:00'\n              }\n            ]\n          }\n        ]\n      }\n    }\n  ]\n}\n",
+  "affectsState": false,
+  "code": "get-report-job-status",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
+}

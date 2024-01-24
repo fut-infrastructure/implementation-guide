@@ -18,8 +18,8 @@ __Response__
   "id": "339",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-08-17T07:59:15.835+00:00",
-    "source": "#219bd7c6-b744-99",
+    "lastUpdated": "2023-10-16T08:37:02.591+00:00",
+    "source": "#5335c44f-cf2f-96",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1748.local/fhir/EpisodeOfCare/47230"
+        "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/51719"
       }
     },
     {
@@ -56,7 +56,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1748.local/fhir/Practitioner/17209"
+        "reference": "https://organization.cit-task-1774.local/fhir/Practitioner/8711"
       }
     }
   ],

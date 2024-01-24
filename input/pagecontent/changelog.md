@@ -8,9 +8,59 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies
+- Updated urn:oid:1.2.208.176.2.1 with NPU22089 and NPU03963
+- Updated urn:oid:1.2.208.176.2.4 with ALAL codes
+- Added urn:oid:1.2.208.176.7.3.1
+- Updated urn:oid:1.2.208.184.100.1 with CMR, PDC and MADC
+- Updated urn:oid:1.2.208.184.100.10 with codes
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-classcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-eventcodelists-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-formatcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
+### ConceptMaps
+### Resource/profile changes
+- Added extension ehealth-ext-sharingApprovalPolicy to ActivityDefinition and ServiceRequest
+- Added extension ehealth-clinicalimpression-assesor-organization to ClinicalImpression
+
+## 2.10.0 (2023-11-09)
+
+### General changes
+
+### Custom operations
+#### System operations
+- Added description of `-s-execute-careplan-and-episode-of-care-stats` operation
+- Added description of `-s-execute-careplan-customization-stats` operation
+- Added description of `-s-execute-careplan-duration-stats` operation
+- Added description of `-s-execute-careplans-by-patient` operation
+- Added description of `-s-execute-careteam-stats` operation
+- Added description of `-s-execute-measurement-stats` operation
+- Added description of `-s-execute-patient-devices` operation
+- Added description of `-s-execute-patient-gdpr` operation
+- Added description of `-s-execute-patient-total` operation
+- Added description of `-s-execute-patient-usage-stats` operation
+- Added description of `-s-execute-practitioner-gdpr` operation
+- Added description of `-s-execute-practitioner-stats` operation
+- Added description of `-s-execute-questionnaireresponses` operation
+- Added description of `-s-execute-ssl-orders` operation
+- Added description of `-s-fetch-patient-usage-stats` operation
+- Added description of `-s-fetch-questionnaireresponses` operation
+- Added description of `-s-get-report-job-status` operation
+- Added description of `-s-schedule-patient-usage-stats` operation
+- Added description of `-s-schedule-questionnaireresponses` operation#### Instance operations
+#### Instance operations
+### Code systems
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added ehealth-questionnaire-helpText to Questionnaire.QuestionnaireItem
+- Added ehealth-enableBehavior-conditionId to EnableBehaviour in Questionnaire.QuestionnaireItem 
+#### CarePlan (ehealth-careplan)
+- Added search parameter 'condition'
+- Added search parameter 'instantiates-canonical'
 
 ## 2.9.0 (2023-08-29)
 

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-questionnaire-elements",
+  "url": "http://ehealth.sundhed.dk/vs/questionnaire-elements",
+  "version": "1.0.0",
+  "name": "Questionnaire_Elements",
+  "title": "Questionnaire Elements",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-09-08T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Types of questionnaire elements; e.g. group, question, answer.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/questionnaire-elements"
+      }
+    ]
+  }
+}

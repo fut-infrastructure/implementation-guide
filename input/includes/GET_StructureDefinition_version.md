@@ -1,4 +1,4 @@
-`GET [base]/StructureDefinition/214/_history/2`
+`GET [base]/StructureDefinition/218/_history/2`
 
 __Header__
 ```
@@ -15,17 +15,17 @@ __Response__
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "214",
+  "id": "218",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-08-15T07:17:10.807+00:00",
-    "source": "#98f4c01a-d672-9a",
+    "lastUpdated": "2023-10-16T09:05:42.212+00:00",
+    "source": "#5849fc4d-bb9d-92",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://79f281dc-dee9-4a93-a53c-e9d42f6d3187",
-  "name": "8f13cef1-7591-481e-a4f6-aaacf2b15193",
+  "url": "http://72b4de95-850d-48a1-b08d-e27c153b9cd8",
+  "name": "5b1d8c99-36ac-44fb-9f72-3128c0fe00e4",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

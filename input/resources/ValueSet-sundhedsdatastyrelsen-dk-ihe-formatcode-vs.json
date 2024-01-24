@@ -24,7 +24,65 @@
   "compose" : {
     "include" : [
       {
-        "system" : "urn:oid:1.2.208.184.100.10"
+        "system": "urn:oid:1.2.208.184.100.10",
+        "concept": [
+          {
+            "code": "urn:ad:dk:medcom:apd-v2.0.1:full",
+            "display": "DK APD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:appointmentsummary:full",
+            "display": "DK Appointment Summary Document schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:cmr-v1.0:full",
+            "display": "DK CMR schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:cpd-v1.0.1:full",
+            "display": "DK CPD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:sds:cpd-v1.0.1:maternity",
+            "display": "DK CPD schema for maternity"
+          },
+          {
+            "code": "urn:ad:dk:medcom:labreports:svareksponeringsservice",
+            "display": "Laboratoriesvar (samling af svar)"
+          },
+          {
+            "code": "urn:ad:dk:medcom:pdc-v2.0:full",
+            "display": "DK PDC schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:phmr-v1.3:full",
+            "display": "DK PHMR schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:prvs-v1.0:full",
+            "display": "DK PRVS schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:qfdd-v1.1:full",
+            "display": "DK QFDD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:qfdd-v1.2:full",
+            "display": "DK QFDD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:qrd-v1.1:full",
+            "display": "DK QRD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:qrd-v1.2:full",
+            "display": "DK QRD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:qrd-v1.3:full",
+            "display": "DK QRD schema"
+          }
+        ]
       }
     ]
   }
