@@ -100,6 +100,21 @@
       "code": "urn:ad:dk:medcom:prvs-v1.0:full",
       "display": "DK PRVS schema",
       "definition": "Document adheres to HL7 PRVS DK profile ver. 1.0"
+    },
+    {
+      "code": "urn:ad:dk:medcom:pdc-v3.0:full",
+      "display": "DK PDC schema",
+      "definition": "Document adheres to HL7 PDC DK profile ver. 3.0"
+    },
+    {
+      "code": "urn:ad:dk:medcom:cpd-v2.0:full",
+      "display": "DK CPD schema",
+      "definition": "Document adheres to HL7 CPD DK profile ver. 2.0"
+    },
+    {
+      "code": "urn:ad:dk:medcom:phad-v1.0:full",
+      "display": "DK PHAD schema",
+      "definition": "Document adheres to HL7 PHAD DK profile ver. 1.0"
     }
   ]
 }

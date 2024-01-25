@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "dk-ihe-eventcodelists-vs",
   "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs",
-  "version": "0.99",
+  "version": "0.96.6",
   "name": "DK_IHE_EventCodeLists_VS",
   "title": "DK_IHE_EventCodeLists_VS",
   "status": "active",

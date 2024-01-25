@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "dk-ihe-classcode-vs",
   "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs",
-  "version": "0.99",
+  "version": "0.96.6",
   "name": "DK_IHE_ClassCode_VS",
   "title": "DK_IHE_ClassCode_VS",
   "status": "active",

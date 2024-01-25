@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "dk-ihe-typecode-vs",
   "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-typecode-vs",
-  "version": "0.99",
+  "version": "0.96.6",
   "name": "DK_IHE_TypeCode_VS",
   "title": "DK_IHE_TypeCode_VS",
   "status": "active",
@@ -26,6 +26,16 @@
       {
         "system": "http://loinc.org",
         "concept": [
+          {
+            "code": "103140-0",
+            "display": "Personal health attachment Document",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Personal health attachment Document"
+              }
+            ]
+          },
           {
             "code": "53576-5",
             "display": "Personal health monitoring report Document",

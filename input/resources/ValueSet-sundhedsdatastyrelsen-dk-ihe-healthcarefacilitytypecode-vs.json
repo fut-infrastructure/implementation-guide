@@ -2,7 +2,7 @@
   "resourceType" : "ValueSet",
   "id" : "dk-ihe-healthcarefacilitytypecode-vs",
   "url" : "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs",
-  "version" : "0.99",
+  "version" : "0.96.6",
   "name" : "DK_IHE_HealthcareFacilityTypeCode_VS",
   "title" : "DK_IHE_HealthcareFacilityTypeCode_VS",
   "status" : "active",
@@ -663,6 +663,16 @@
               {
                 "language" : "da",
                 "value" : "zoneterapiklinik"
+              }
+            ]
+          },
+          {
+            "code" : "550811000005108",
+            "display" : "administrativ enhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "administrativ enhed"
               }
             ]
           }
