@@ -14,7 +14,7 @@ releaseLabel: ci-build
 description: The Danish eHealth Infrastructure Implementation Guide defines a set of FHIR profiles with extensions and bindings needed to create interoperable, quality-focused applications.
 
 publisher:
-  name: Systematic | Trifork
+  name: Den telemedicinske infrastruktur (eHealth Infrastructure)
   url: http://ehealth.sundhed.dk
 
 dependencies:

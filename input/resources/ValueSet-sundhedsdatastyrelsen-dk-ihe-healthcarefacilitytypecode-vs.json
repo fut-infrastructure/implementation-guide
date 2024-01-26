@@ -2,7 +2,7 @@
   "resourceType" : "ValueSet",
   "id" : "dk-ihe-healthcarefacilitytypecode-vs",
   "url" : "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs",
-  "version" : "0.99",
+  "version" : "0.96.6",
   "name" : "DK_IHE_HealthcareFacilityTypeCode_VS",
   "title" : "DK_IHE_HealthcareFacilityTypeCode_VS",
   "status" : "active",
@@ -27,12 +27,72 @@
         "system" : "http://snomed.info/sct",
         "concept" : [
           {
+            "code" : "557511000005107",
+            "display" : "akupunkturklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "akupunkturklinik"
+              }
+            ]
+          },
+          {
+            "code" : "550871000005101",
+            "display" : "akutmodtageenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "akutmodtageenhed"
+              }
+            ]
+          },
+          {
+            "code" : "394761003",
+            "display" : "almen lægepraksis",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "almen lægepraksis"
+              }
+            ]
+          },
+          {
             "code" : "264372000",
             "display" : "apotek",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "apotek"
+              }
+            ]
+          },
+          {
+            "code" : "557501000005109",
+            "display" : "apoteksfilial",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "apoteksfilial"
+              }
+            ]
+          },
+          {
+            "code" : "554851000005102",
+            "display" : "asylcenter",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "asylcenter"
+              }
+            ]
+          },
+          {
+            "code" : "557531000005103",
+            "display" : "bandagistklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "bandagistklinik"
               }
             ]
           },
@@ -47,12 +107,52 @@
             ]
           },
           {
+            "code" : "722173008",
+            "display" : "behandlingsenhed i fængsel eller arresthus",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "behandlingsenhed i fængsel eller arresthus"
+              }
+            ]
+          },
+          {
+            "code" : "309964003",
+            "display" : "billeddiagnostisk enhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "billeddiagnostisk enhed\n"
+              }
+            ]
+          },
+          {
             "code" : "554221000005108",
             "display" : "bosted",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "bosted"
+              }
+            ]
+          },
+          {
+            "code" : "56781000005109",
+            "display" : "center for misbrugsbehandling",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "center for misbrugsbehandling"
+              }
+            ]
+          },
+          {
+            "code" : "557881000005104",
+            "display" : "COVID-19-testenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "COVID-19-testenhed"
               }
             ]
           },
@@ -67,12 +167,62 @@
             ]
           },
           {
+            "code" : "557891000005101",
+            "display" : "enhed for aktivitetstilbud",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "enhed for aktivitetstilbud"
+              }
+            ]
+          },
+          {
             "code" : "546821000005103",
             "display" : "ergoterapiklinik",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "ergoterapiklinik"
+              }
+            ]
+          },
+          {
+            "code" : "702871004",
+            "display" : "fertilitetsklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "fertilitetsklinik"
+              }
+            ]
+          },
+          {
+            "code" : "554061000005105",
+            "display" : "statsautoriseret fodterapeut (snomed:  fodterapeutklinik)",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "statsautoriseret fodterapeut (snomed:  fodterapeutklinik)"
+              }
+            ]
+          },
+          {
+            "code" : "557901000005102",
+            "display" : "forebyggende hjemmebesøgsenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "forebyggende hjemmebesøgsenhed"
+              }
+            ]
+          },
+          {
+            "code" : "550861000005106",
+            "display" : "fysioterapi- og ergoterapiklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "fysioterapi- og ergoterapiklinik"
               }
             ]
           },
@@ -97,6 +247,36 @@
             ]
           },
           {
+            "code" : "554881000005108",
+            "display" : "handicap- og psykiatrienhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "handicap- og psykiatrienhed"
+              }
+            ]
+          },
+          {
+            "code" : "554861000005100",
+            "display" : "handicapenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "handicapenhed"
+              }
+            ]
+          },
+          {
+            "code" : "554821000005109",
+            "display" : "hjemmeplejeenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "hjemmeplejeenhed"
+              }
+            ]
+          },
+          {
             "code" : "550621000005101",
             "display" : "hjemmesygepleje",
             "designation" : [
@@ -107,12 +287,62 @@
             ]
           },
           {
+            "code" : "284546000",
+            "display" : "hospice",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "hospice"
+              }
+            ]
+          },
+          {
             "code" : "22232009",
             "display" : "hospital",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "hospital"
+              }
+            ]
+          },
+          {
+            "code" : "702824005",
+            "display" : "hørecenter",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "hørecenter"
+              }
+            ]
+          },
+          {
+            "code" : "309904001",
+            "display" : "intensivenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "intensivenhed"
+              }
+            ]
+          },
+          {
+            "code" : "557591000005104",
+            "display" : "internetbaseret sundhedsydelse",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "internetbaseret sundhedsydelse"
+              }
+            ]
+          },
+          {
+            "code" : "554411000005101",
+            "display" : "jobcenter",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "jobcenter"
               }
             ]
           },
@@ -137,22 +367,62 @@
             ]
           },
           {
+            "code" : "557521000005101",
+            "display" : "klinik for alternativ behandling",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "klinik for alternativ behandling"
+              }
+            ]
+          },
+          {
+            "code" : "550851000005109",
+            "display" : "klinisk enhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "klinisk enhed"
+              }
+            ]
+          },
+          {
+            "code" : "547211000005108",
+            "display" : "kommune",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "kommune"
+              }
+            ]
+          },
+          {
+            "code" : "557561000005105",
+            "display" : "konsulentvirksomhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "konsulentvirksomhed"
+              }
+            ]
+          },
+          {
+            "code" : "557541000005106",
+            "display" : "kosmetisk klinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "kosmetisk klinik"
+              }
+            ]
+          },
+          {
             "code" : "550651000005108",
             "display" : "lægelaboratorium",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "lægelaboratorium"
-              }
-            ]
-          },
-          {
-            "code" : "394761003",
-            "display" : "lægepraksis (snomed:  almen lægepraksis)",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "lægepraksis (snomed:  almen lægepraksis)"
               }
             ]
           },
@@ -167,12 +437,62 @@
             ]
           },
           {
+            "code" : "551611000005102",
+            "display" : "operationsgang",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "operationsgang"
+              }
+            ]
+          },
+          {
+            "code" : "557581000005102",
+            "display" : "optikervirksomhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "optikervirksomhed"
+              }
+            ]
+          },
+          {
+            "code" : "557671000005101",
+            "display" : "osteopatiklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "osteopatiklinik"
+              }
+            ]
+          },
+          {
+            "code" : "309939001",
+            "display" : "palliativ enhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "palliativ enhed"
+              }
+            ]
+          },
+          {
             "code" : "42665001",
             "display" : "plejehjem",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "plejehjem"
+              }
+            ]
+          },
+          {
+            "code" : "550891000005100",
+            "display" : "privat",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "privat"
               }
             ]
           },
@@ -187,6 +507,16 @@
             ]
           },
           {
+            "code" : "554871000005105",
+            "display" : "psykiatrienhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "psykiatrienhed"
+              }
+            ]
+          },
+          {
             "code" : "550711000005101",
             "display" : "psykologisk rådgivningsklinik",
             "designation" : [
@@ -197,22 +527,42 @@
             ]
           },
           {
+            "code" : "556841000005105",
+            "display" : "pædagogisk psykologisk rådgivning (PPR)",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "pædagogisk psykologisk rådgivning (PPR)"
+              }
+            ]
+          },
+          {
+            "code" : "702916001",
+            "display" : "rehabiliteringsenhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "rehabiliteringsenhed"
+              }
+            ]
+          },
+          {
+            "code" : "225728007",
+            "display" : "skadestue",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "skadestue"
+              }
+            ]
+          },
+          {
             "code" : "550671000005100",
             "display" : "speciallægepraksis",
             "designation" : [
               {
                 "language" : "da",
                 "value" : "speciallægepraksis"
-              }
-            ]
-          },
-          {
-            "code" : "554061000005105",
-            "display" : "statsautoriseret fodterapeut (snomed:  fodterapeutklinik)",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "statsautoriseret fodterapeut (snomed:  fodterapeutklinik)"
               }
             ]
           },
@@ -243,6 +593,26 @@
               {
                 "language" : "da",
                 "value" : "sundhedspleje"
+              }
+            ]
+          },
+          {
+            "code" : "554071000005100",
+            "display" : "sygehusapotek",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "sygehusapotek"
+              }
+            ]
+          },
+          {
+            "code" : "703069008",
+            "display" : "sygeplejeklinik",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "sygeplejeklinik"
               }
             ]
           },
@@ -293,6 +663,16 @@
               {
                 "language" : "da",
                 "value" : "zoneterapiklinik"
+              }
+            ]
+          },
+          {
+            "code" : "550811000005108",
+            "display" : "administrativ enhed",
+            "designation" : [
+              {
+                "language" : "da",
+                "value" : "administrativ enhed"
               }
             ]
           }

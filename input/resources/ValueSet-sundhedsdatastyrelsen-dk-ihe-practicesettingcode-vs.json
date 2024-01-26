@@ -2,7 +2,7 @@
   "resourceType" : "ValueSet",
   "id" : "dk-ihe-practicesettingcode-vs",
   "url" : "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs",
-  "version" : "0.99",
+  "version" : "0.96.6",
   "name" : "DK_IHE_practiceSettingCode_VS",
   "title" : "DK_IHE_practiceSettingCode_VS",
   "status" : "active",

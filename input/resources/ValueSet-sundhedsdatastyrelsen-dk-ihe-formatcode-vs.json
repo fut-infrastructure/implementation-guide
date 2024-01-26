@@ -2,7 +2,7 @@
   "resourceType" : "ValueSet",
   "id" : "dk-ihe-formatcode-vs",
   "url" : "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs",
-  "version" : "0.99",
+  "version" : "0.96.6",
   "name" : "DK_IHE_FormatCode_VS",
   "title" : "DK_IHE_FormatCode_VS",
   "status" : "active",
@@ -81,6 +81,18 @@
           {
             "code": "urn:ad:dk:medcom:qrd-v1.3:full",
             "display": "DK QRD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:pdc-v3.0:full",
+            "display": "DK PDC schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:cpd-v2.0:full",
+            "display": "DK CPD schema"
+          },
+          {
+            "code": "urn:ad:dk:medcom:phad-v1.0:ful",
+            "display": "DK PHAD schema"
           }
         ]
       }
