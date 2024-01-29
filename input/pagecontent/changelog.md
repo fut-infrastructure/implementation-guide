@@ -16,6 +16,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated urn:oid:1.2.208.184.100.1 with CMR, PDC and MADC
 - Updated urn:oid:1.2.208.184.100.10 with codes
 - Added http://ehealth.sundhed.dk/cs/ehealth-questionnaire-elements
+- Added http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type with questionnaire-related code
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies
@@ -25,6 +26,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
+- Added http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-questionnaire-elements
 ### ConceptMaps
 - Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing The map controls whether the sharingApprovalPolicy-field should be set on the given resource.
@@ -34,6 +36,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added invariant to Questionnaire that only allows one sliderStepValue at a time 
 - Added extention ehealth-resolved-timing to Task
 - Added extention ehealth-external-identifier to Questionnaire.QuestionnaireItem
+- Updated binding for ClinicalImpression.investigation.code to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
+
 ## 2.10.0 (2023-11-09)
 
 ### General changes
