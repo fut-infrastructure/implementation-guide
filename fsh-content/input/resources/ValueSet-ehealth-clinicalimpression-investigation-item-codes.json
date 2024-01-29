@@ -30,14 +30,7 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "160237006",
-            "display": "Anamnese/symptomer",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "History/symptoms"
-              }
-            ]
+            "code": "160237006"
           }
         ]
       }
