@@ -45,7 +45,7 @@ podTemplates.igPublisher('test') {
     }
 
     // ### Deploy only the master branch ###
-    if (env.BRANCH_NAME != 'master') {
+    if (env.BRANCH_NAME != 'trifork-release-2024.2') {
       return
     }
 

@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-communication-search-participant",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/participant",
+    "name": "communicationParticipant",
+    "status": "active",
+    "date": "2024-01-30T12:40:20+00:00",
+    "code": "communicationParticipant",
+    "base": [
+        "Communication"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding communication based on participant",
+    "expression": "Communication.recipient | Communication.sender | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value",
+    "xpathUsage": "normal"
+}

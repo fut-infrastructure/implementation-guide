@@ -758,6 +758,12 @@
               "documentation": "Search parameter for finding communication based on CareTeam sender"
             },
             {
+              "name": "communicationParticipant",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/participant",
+              "type": "reference",
+              "documentation": "Search parameter for finding communication based on participant"
+            },
+            {
               "name": "_profile",
               "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_profile",
               "type": "uri",
