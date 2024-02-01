@@ -25,31 +25,6 @@
     "include": [
       {
         "system": "http://ehealth.sundhed.dk/cs/careplan-category"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "concept": [
-          {
-            "code": "412776001",
-            "display": "Chronic obstructive pulmonary disease clinical management plan",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Chronic obstructive pulmonary disease clinical management plan"
-              }
-            ]
-          },
-          {
-            "code": "412777005",
-            "display": "Diabetes clinical management plan",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Diabetes clinical management plan"
-              }
-            ]
-          }
-        ]
       }
     ]
   }
