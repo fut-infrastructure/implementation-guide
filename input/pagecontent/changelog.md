@@ -28,7 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
 - Added http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-questionnaire-elements
-- Removed 412776001 and 412777005 SNOMED CT codes from http://ehealth.sundhed.dk/vs/careplan-category (Verified that codes are not used in any CarePlan resources on the following environments: INTTEST, DEVENVCGI,EXTTEST, PREPROD and PORD)
+- Removed 412776001 and 412777005 SNOMED CT codes from http://ehealth.sundhed.dk/vs/careplan-category due to codes being removed from SNOMED CT
 ### ConceptMaps
 - Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing The map controls whether the sharingApprovalPolicy-field should be set on the given resource.
 ### Resource/profile changes
