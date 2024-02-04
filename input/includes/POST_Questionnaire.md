@@ -37,7 +37,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1176.local/fhir/Organization/9402"
+            "reference": "https://organization.cit-questionnaire-1238.local/fhir/Organization/44972"
           }
         },
         {
@@ -55,7 +55,7 @@ __Body__:
     }
   ],
   "version": "1.0",
-  "name": "dd3e0579-9ba9-4a61-9758-0777e9922943",
+  "name": "72e5afce-130f-4a91-9396-df34cdb6acca",
   "title": "Title",
   "status": "active",
   "item": [
@@ -105,10 +105,10 @@ __Response__
 ```json
 {
   "resourceType": "Questionnaire",
-  "id": "127",
+  "id": "130",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-16T08:58:05.721+00:00",
+    "lastUpdated": "2024-01-29T21:05:30.635+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
     ]
@@ -131,7 +131,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1176.local/fhir/Organization/9402"
+            "reference": "https://organization.cit-questionnaire-1238.local/fhir/Organization/44972"
           }
         },
         {
@@ -151,11 +151,11 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base",
       "valueIdentifier": {
         "system": "urn:ietf:rfc:3986",
-        "value": "urn:uuid:50f0cefe-2cb3-4699-b430-dba9969f39ef",
+        "value": "urn:uuid:53293a64-20a0-4192-b14e-f9d6d60adef6",
         "assigner": {
           "identifier": {
             "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-            "value": "cit-questionnaire-1176"
+            "value": "cit-questionnaire-1238"
           }
         }
       }
@@ -164,18 +164,18 @@ __Response__
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-base-environment",
       "valueIdentifier": {
         "system": "http://ehealth.sundhed.dk/id/ehealth-environment",
-        "value": "cit-questionnaire-1176"
+        "value": "cit-questionnaire-1238"
       }
     }
   ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:ce3495da-d1cf-403e-a77a-ee2ef6149ee7"
+      "value": "urn:uuid:2ab6a243-3662-49ca-8850-70b128f40c5a"
     }
   ],
   "version": "1.0",
-  "name": "dd3e0579-9ba9-4a61-9758-0777e9922943",
+  "name": "72e5afce-130f-4a91-9396-df34cdb6acca",
   "title": "Title",
   "status": "active",
   "item": [

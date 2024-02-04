@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVFSRCIsIiR0cmFuc2Zvcm0tdG8tUVJEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVFSRCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,7 +19,9 @@ __Body__:
       "name": "documentReference",
       "resource": {
         "resourceType": "DocumentReference",
+        "id": "90156",
         "meta": {
+          "versionId": "1",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -33,7 +35,7 @@ __Body__:
             }
           ]
         },
-        "date": "2023-08-24T21:44:05.443+00:00",
+        "date": "2024-01-29T20:24:59.661+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +59,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "b5dbfb67-6521-4793-8795-bb020ca68cf3",
+        "id": "b223c708-5078-474a-a03e-a60dbe97a7f5",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -287,429 +289,472 @@ __Response__
           ]
         },
         "questionnaire": "https://svn.medcom.dk/svn/drafts/QFDD/Hofteartrose_v0.11__QFD.xml",
+        "status": "completed",
         "item": [
           {
+            "linkId": "d0286ccb-9f9d-4c73-88fe-c785dbf70184",
             "text": "Baggrundsinformation",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,280,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "3f19aa83-bddf-4bcc-9ec9-0e5e25c8db1e",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "280.A2",
-                      "display": "Begge er dårlige, men venstre er værst"
-                    }
+                    "linkId": "7c547981-8beb-4cff-99a8-a35c73a87a9f",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "280.A2",
+                          "display": "Begge er dårlige, men venstre er værst"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "c3d37497-12ec-493d-8295-3f9bd35b3d9c",
             "text": "Sygdomsspecifikt funktionsniveau ",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,281,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "8729c8f0-b6ae-439b-9ad9-86fc43fa326a",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "281.A4",
-                      "display": "Moderate smerter"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,282,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "013eca90-a9e5-4871-a2aa-99279254d7de",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "281.A4",
+                          "display": "Moderate smerter"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "282.A3",
-                      "display": "Ja, moderat besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,283,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "a2450df7-cfe7-4049-b224-3d78a35bc1cb",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "282.A3",
+                          "display": "Ja, moderat besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "283.A4",
-                      "display": "Ja, meget store problemer"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,284,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "9e839b2f-f350-40ce-8996-991cef9b056b",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "283.A4",
+                          "display": "Ja, meget store problemer"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "284.A3",
-                      "display": "Med moderat besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,285,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "ff0df3fc-09f1-45d9-8193-e65dd5ccb2c6",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "284.A3",
+                          "display": "Med moderat besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "285.A4",
-                      "display": "Med meget stort besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,286,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "272b1ab1-3a67-4786-aa5b-05cf2bbb93c5",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "285.A4",
+                          "display": "Med meget stort besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "286.A3",
-                      "display": "5 til 15 minutter"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,287,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "14821d57-a92e-4bab-9747-81cadd65884c",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "286.A3",
+                          "display": "5 til 15 minutter"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "287.A4",
-                      "display": "Med meget stort besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,288,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "ec114796-8643-4b0b-b3e9-af009d6cec48",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "287.A4",
+                          "display": "Med meget stort besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "288.A3",
-                      "display": "Moderate smerter"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,289,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "39c5551b-42d5-4093-b61d-7e3dd3a3dbc0",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "288.A3",
+                          "display": "Moderate smerter"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "289.A4",
-                      "display": "Ja, det meste af tiden"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,290,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "743c1092-a56f-47bb-a6b2-1c394187e4aa",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "289.A4",
+                          "display": "Ja, det meste af tiden"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "290.A5",
-                      "display": "Hver dag"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,291,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "752ac44d-2f79-41a6-b477-ca7d4dd90ebf",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "290.A5",
+                          "display": "Hver dag"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "291.A3",
-                      "display": "En del"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,292,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "c24c68ca-f80d-47c2-acdd-92c6860ac978",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "291.A3",
+                          "display": "En del"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "292.A4",
-                      "display": "De fleste nætter"
-                    }
+                    "linkId": "add80e1d-5c95-4a55-8cd1-77804616e015",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "292.A4",
+                          "display": "De fleste nætter"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "8c85b8b1-05e6-44b9-aa8b-7f34b28f3193",
             "text": "Behandling",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,294,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "9c48b5ec-5677-40b2-8541-f45f022ffa2b",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "294.A2",
-                      "display": "Flere gange om måneden"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,295,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "f772d808-408d-4791-91ac-e7ed6454f8ff",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "294.A2",
+                          "display": "Flere gange om måneden"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "295.A2",
-                      "display": "Nej"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,296,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "249b52f8-3daf-43d0-8881-b623f44fafb3",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "295.A2",
+                          "display": "Nej"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "296.A1",
-                      "display": "Ja"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,293,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "ede9dab5-1b80-45b8-bd84-0b71293c7781",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "296.A1",
+                          "display": "Ja"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "293.A3",
-                      "display": "Ved ikke"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,243,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "eb0a3542-c036-4a86-98ce-30478a90153a",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "293.A3",
+                          "display": "Ved ikke"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueString": "De tre vigstigst ting for mig er: at jeg kan                                        handle selv, at jeg kan klare dagligdagen uden for meget medicin og at jeg kan                                        gå tur med børnebørnene igen."
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,297,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "1a661fd7-82ee-445f-9e0b-6dfe269c7ef8",
+                    "answer": [
+                      {
+                        "valueString": "De tre vigstigst ting for mig er: at jeg kan                                        handle selv, at jeg kan klare dagligdagen uden for meget medicin og at jeg kan                                        gå tur med børnebørnene igen."
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "297.A4",
-                      "display": "4"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,298,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "5cdf8013-7b10-49e2-ab69-c94c3a69266b",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "297.A4",
+                          "display": "4"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "298.A1",
-                      "display": "1"
-                    }
+                    "linkId": "80042cef-2eb0-4fd7-b149-09565936b20f",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "298.A1",
+                          "display": "1"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "4a1274de-3df0-4317-9f50-f7f5c98c888b",
             "text": "Bevægelighed",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,299,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "56dd6983-e614-4619-8f47-86898fd80491",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "299.A2",
-                      "display": "Med brug af gelænder, stok eller krykke"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,300,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "4bd382d6-99b7-4277-9433-132edccfacdf",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "299.A2",
+                          "display": "Med brug af gelænder, stok eller krykke"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "300.A2",
-                      "display": "Kan tage strømper på og binde skoen med besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,301,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "fa26bf9a-5b91-4a0a-b750-d3b6e1a69e4b",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "300.A2",
+                          "display": "Kan tage strømper på og binde skoen med besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "301.A2",
-                      "display": "Kan tage strømper på og binde skoen med besvær"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,302,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "75f11f3c-4d02-4a78-ac1e-30abd353c311",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "301.A2",
+                          "display": "Kan tage strømper på og binde skoen med besvær"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "302.A3",
-                      "display": "Kan ikke sidde ned i 30 min. på grund af smerter"
-                    }
+                    "linkId": "4af6bc3d-43a8-4764-b11c-630f3a35936f",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "302.A3",
+                          "display": "Kan ikke sidde ned i 30 min. på grund af smerter"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "45ef3e39-5bf3-4b28-a386-a49680e36749",
             "text": "Arbejdsmarkedstilknytning",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,254,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "bf287139-da79-4754-bb39-c5c9c48a6641",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "254.A4",
-                      "display": "Sygemeldt på deltid / fleksjob"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,303,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "67cc0f0e-aeeb-40b1-bc0e-74e766044cec",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "254.A4",
+                          "display": "Sygemeldt på deltid / fleksjob"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "303.A1",
-                      "display": "Ja "
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,304,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "3c7b26b7-c3f7-4d14-ba0d-3a168bc0dfa1",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "303.A1",
+                          "display": "Ja "
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "304.A3",
-                      "display": "Mere end 3 måneder"
-                    }
+                    "linkId": "dd29e776-33dc-4cc6-bb55-89c66c37a357",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "304.A3",
+                          "display": "Mere end 3 måneder"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "8eed58d5-16d7-4bcd-ab04-513b154ddc77",
             "text": "Livskvalitet",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,257,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "ebc4c471-4166-4916-bff6-a466e7658799",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "257.A4",
-                      "display": "Jeg har store problemer med at gå omkring "
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,258,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "ddf13c27-fa2c-4822-b974-a359f322bb0f",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "257.A4",
+                          "display": "Jeg har store problemer med at gå omkring "
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "258.A3",
-                      "display": "Jeg har moderate problemer med at vaske mig eller klæde mig på"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,259,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "0fe5b2fa-23d9-4009-b36e-c8539b8ba916",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "258.A3",
+                          "display": "Jeg har moderate problemer med at vaske mig eller klæde mig på"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "259.A3",
-                      "display": "Jeg har moderate problemer med at udføre mine sædvanlige aktiviteter"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,260,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "6604664e-467b-4fd2-8720-c499e4d834e6",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "259.A3",
+                          "display": "Jeg har moderate problemer med at udføre mine sædvanlige aktiviteter"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "260.A4",
-                      "display": "Jeg har stærke smerter eller ubehag"
-                    }
-                  }
-                ]
-              },
-              {
-                "linkId": "1.2.208.176.1.5,261,Sundhedsdatastyrelsen",
-                "answer": [
+                    "linkId": "28a63356-34a1-4a74-958a-8eafb820ba60",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "260.A4",
+                          "display": "Jeg har stærke smerter eller ubehag"
+                        }
+                      }
+                    ]
+                  },
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "261.A1",
-                      "display": "Jeg er ikke ængstelig eller deprimeret"
-                    }
+                    "linkId": "b9d17924-6b0c-464c-8e28-ae2f3512c25e",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "261.A1",
+                          "display": "Jeg er ikke ængstelig eller deprimeret"
+                        }
+                      }
+                    ]
                   }
                 ]
               }
             ]
           },
           {
+            "linkId": "1813a191-981e-44df-8775-a12ca24f4459",
             "text": "Om besvarelsen",
             "item": [
               {
-                "linkId": "1.2.208.176.1.5,173,Sundhedsdatastyrelsen",
-                "answer": [
+                "linkId": "4a0aff6a-840e-4b44-a3d8-5ec35bf34426",
+                "item": [
                   {
-                    "valueCoding": {
-                      "system": "urn:oid:1.2.208.176.1.5",
-                      "code": "173.A1",
-                      "display": "Jeg har selv udfyldt skemaet"
-                    }
+                    "linkId": "316527b7-9852-40dc-b220-e0be22e22b13",
+                    "answer": [
+                      {
+                        "valueCoding": {
+                          "system": "urn:oid:1.2.208.176.1.5",
+                          "code": "173.A1",
+                          "display": "Jeg har selv udfyldt skemaet"
+                        }
+                      }
+                    ]
                   }
                 ]
               }

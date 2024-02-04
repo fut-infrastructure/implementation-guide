@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2MwYmFiYTAtOTE5Yy00MmJjLTk1ZDYtYTFiYzI2NmQ3OTVkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjU4MjYzMjUtNzc4NC00NDRkLWE5Y2MtYzBlZGM4OWJjYTRmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -54,12 +54,11 @@ __Body__:
             "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
             "value": "11111111",
             "period": {
-              "start": "2023-10-16T09:16:55+00:00"
+              "start": "2024-02-02T10:47:36+00:00"
             }
           }
         ],
-        "active": false,
-        "name": "defaultTestFactory-20f7ab5c-62b7-4a90-9e9e-6970d20ab291"
+        "name": "defaultTestFactory-c86aede0-7b2c-47b1-a67b-a6ba18018d80"
       }
     }
   ]

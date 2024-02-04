@@ -23,7 +23,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/42674"
+        "reference": "https://careplan.cit-task-1858.local/fhir/EpisodeOfCare/10972"
       }
     },
     {
@@ -51,7 +51,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1774.local/fhir/Practitioner/41740"
+        "reference": "https://organization.cit-task-1858.local/fhir/Practitioner/25440"
       }
     }
   ],
@@ -59,7 +59,7 @@ __Body__:
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1774.local/fhir/Patient/32854"
+    "reference": "https://patient.cit-task-1858.local/fhir/Patient/67978"
   }
 }
 ```
@@ -68,10 +68,10 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "348",
+  "id": "360",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-16T08:37:11.405+00:00",
+    "lastUpdated": "2024-01-30T11:09:33.107+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -80,7 +80,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1774.local/fhir/EpisodeOfCare/42674"
+        "reference": "https://careplan.cit-task-1858.local/fhir/EpisodeOfCare/10972"
       }
     },
     {
@@ -108,7 +108,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1774.local/fhir/Practitioner/41740"
+        "reference": "https://organization.cit-task-1858.local/fhir/Practitioner/25440"
       }
     }
   ],
@@ -116,8 +116,8 @@ __Response__
   "intent": "proposal",
   "priority": "routine",
   "for": {
-    "reference": "https://patient.cit-task-1774.local/fhir/Patient/32854"
+    "reference": "https://patient.cit-task-1858.local/fhir/Patient/67978"
   },
-  "authoredOn": "2023-10-16T08:37:11+00:00"
+  "authoredOn": "2024-01-30T11:09:33+00:00"
 }
 ```

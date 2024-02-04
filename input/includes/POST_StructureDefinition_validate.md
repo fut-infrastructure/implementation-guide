@@ -24,8 +24,8 @@ __Body__:
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "http://9abf97a7-56cc-456a-91fb-c2999b7ac799",
-        "name": "054db52a-a6d0-4825-8243-88b72ce24ca1",
+        "url": "http://f05cb5c6-ad8a-470d-9ab9-a6b5b6f8f54c",
+        "name": "0b8b726c-f4f3-443f-a883-4105f5e14fc2",
         "status": "draft",
         "kind": "resource",
         "abstract": true,

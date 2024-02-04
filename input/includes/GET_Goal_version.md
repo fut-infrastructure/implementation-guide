@@ -1,4 +1,4 @@
-`GET [base]/Goal/1732/_history/2`
+`GET [base]/Goal/1756/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "1732",
+  "id": "1756",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-18T07:34:09.138+00:00",
-    "source": "#d91738a3-348c-99",
+    "lastUpdated": "2024-01-29T20:59:33.642+00:00",
+    "source": "#c69c1ade-1d89-46",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
     ]
@@ -34,9 +34,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/38544"
+    "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/83004"
   },
-  "startDate": "2023-10-18",
+  "startDate": "2024-01-29",
   "target": [
     {
       "measure": {
@@ -51,7 +51,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2626.local/fhir/ServiceRequest/1731"
+      "reference": "https://careplan.cit-careplan-2719.local/fhir/ServiceRequest/1755"
     }
   ]
 }

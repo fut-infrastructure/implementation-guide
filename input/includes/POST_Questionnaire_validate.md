@@ -42,7 +42,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-questionnaire-1176.local/fhir/Organization/26277"
+                  "reference": "https://organization.cit-questionnaire-1238.local/fhir/Organization/29030"
                 }
               },
               {
@@ -60,7 +60,7 @@ __Body__:
           }
         ],
         "version": "1.0",
-        "name": "b0412f4a-7c3b-4f69-aed1-edeeebe3f8a7",
+        "name": "2476eb54-a3f9-4902-a07c-03a90ae1f6bc",
         "status": "active"
       }
     }

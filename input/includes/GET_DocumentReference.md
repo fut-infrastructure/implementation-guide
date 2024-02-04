@@ -1,4 +1,4 @@
-`GET [base]/DocumentReference/129`
+`GET [base]/DocumentReference/151`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "DocumentReference",
-  "id": "129",
+  "id": "151",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-17T07:25:48.794+00:00",
-    "source": "#1a0e60f8-ddb7-9c",
+    "lastUpdated": "2024-01-30T08:03:15.809+00:00",
+    "source": "#bf28d6a8-8d32-49",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
     ]
@@ -33,10 +33,10 @@ __Response__
       }
     ]
   },
-  "date": "2023-10-17T07:25:47.036+00:00",
+  "date": "2024-01-30T08:03:13.999+00:00",
   "author": [
     {
-      "reference": "https://organization.cit-plan-1284.local/fhir/Organization/91468"
+      "reference": "https://organization.cit-plan-1366.local/fhir/Organization/36691"
     }
   ],
   "content": [

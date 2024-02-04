@@ -1,9 +1,9 @@
-`GET [base]/Organization/288/_history/2`
+`GET [base]/Organization/357/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjQxMjQ3M2UtM2ZhNy00MDNhLWEyMzYtMmY2NzY0NDM1Yzg1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOTZmM2FjOTYtODNmMy00MzE1LTg3YWMtZDAxZTJlMjlmNGU3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "288",
+  "id": "357",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-16T09:17:22.100+00:00",
-    "source": "#ba7e58cb-9ba7-9e",
+    "lastUpdated": "2024-02-02T10:48:02.131+00:00",
+    "source": "#5b0ff706-a892-4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -54,12 +54,11 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-10-16T09:17:19+00:00"
+        "start": "2024-02-02T10:47:59+00:00"
       }
     }
   ],
-  "active": false,
-  "name": "defaultTestFactory-3b8a165b-6ca0-43ee-ae78-5f9c440d5f10",
+  "name": "defaultTestFactory-81123761-9db4-4404-bc0f-a11bbacf732e",
   "contact": [
     {
       "purpose": {
