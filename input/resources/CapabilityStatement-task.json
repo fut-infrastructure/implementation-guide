@@ -3,12 +3,12 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2023-10-23T03:12:34.500+00:00",
+  "date": "2024-02-04T03:12:13.672+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.12.9"
+    "version": "1.12.10"
   },
   "implementation": {
     "description": "eHealth task service",

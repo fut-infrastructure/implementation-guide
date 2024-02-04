@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2023-10-23T02:18:04.980+00:00",
+  "date": "2024-02-04T02:18:07.604+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.11.4"
+    "version": "1.12.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -158,6 +158,8 @@
         "code": "vread"
       }, {
         "code": "read"
+      }, {
+        "code": "patch"
       }, {
         "code": "delete"
       }, {
@@ -315,6 +317,10 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/CompositionDocumentReference-it-validate"
+      }, {
+        "name": "deprecate-document",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-t-deprecate-document",
+        "documentation": "Deprecates a shared document. The operation takes a documentIdentifier and cpr-number as parameters and finds the DocumentReference with the corresponding masterIdentifier. masterIdentifier should be unique for DocumentReference so if less than 0 or more than 1 are found the operation throws and exception. If the found documentReference has a patient which cpr number matches the provided value the document is deprecated. iti-57 is used to deprecate the document on XDS. On successthe documentReference status is updated to superseded and updated in the database."
       } ]
     }, {
       "type": "OperationDefinition",
@@ -331,9 +337,13 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "upload-QFDD",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-upload-QFDD",
+      "documentation": "Uploads an DK-HL7 Questionnaire Form Definition Document (QFDD). The input FHIR DocumentReference must be of type QFDD (74468-0) and the status set to current. Include an attachment which contains the base64 encoded QFDD XML document with contentType application/xml. The QFDD XML document must contain a unique id which is used as the the masterIdentifier in the DocumentReference. The returned FHIR DocumentReference contains a masterIdentifier, a type and the description all pulled from the attachment."
+    }, {
       "name": "transform-to-QRD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QRD",
-      "documentation": "Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource. The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."
+      "documentation": "Transforms a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource to a DK-HL7 Questionnaire Response Document (QRD) XML document. The input FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse resource. a FHIR Questionnaire resource. The bundle must also contain a FHIR DocumentReference containing a QFDD xml file (base64 encoded)The returned FHIR DocumentReference contains the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile."
     }, {
       "name": "transform-to-QFDD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD",
@@ -346,6 +356,10 @@
       "name": "transform-to-APD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-APD",
       "documentation": "Transforms a FHIR Appointment (ehealth-appointment profile) resource to a DK-HL7 Appointment Document (APD) XML document. The input FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource and referenced resources such as FHIR Organization. The returned FHIR DocumentReference contains the APD XML document adhering to the DK-HL7 Appointment Document profile."
+    }, {
+      "name": "transform-from-QRD-based-on-questionnaire",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD-based-on-questionnaire",
+      "documentation": "Transforms a DK-HL7 Questionnaire Response Document (QRD) XML document to a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource. The input bundle must contain the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile. And a FHIR Questionnaire resource. The returned FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource."
     }, {
       "name": "transform-from-QRD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD",
