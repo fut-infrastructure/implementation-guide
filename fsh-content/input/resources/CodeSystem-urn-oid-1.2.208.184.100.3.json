@@ -1,0 +1,663 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "urn-oid-1.2.208.184.100.3",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-02-22T14:43:10.892+00:00"
+  },
+  "url": "urn:oid:1.2.208.184.100.3",
+  "identifier": [{
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.2.208.184.100.3"
+  }],
+  "name": "Medcom Instrument Codes",
+  "title": "Medcom Instrument Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2016-05-18",
+  "publisher": "Medcom",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medcom.dk/opslag/koder-tabeller-ydere/koder/laboratorieomraadet/dak-e-koder"
+        }
+      ]
+    },
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "ghe@medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "MedCom Instrument Codes.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "MCI00001",
+      "display": "Vægt",
+      "definition": "Vægt",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Vægt"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Company"
+        },
+        {
+          "code": "Model",
+          "value": "AD-6121ABT1"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00002",
+      "display": "Vægt",
+      "definition": "Vægt",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Vægt"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Company"
+        },
+        {
+          "code": "Model",
+          "value": "UC-321PBT-C (bluetooth – Continua)"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00003",
+      "display": "Vægt",
+      "definition": "Vægt",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Vægt"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Company"
+        },
+        {
+          "code": "Model",
+          "value": "UC-355PBT-Ci"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00004",
+      "display": "Blodtryk",
+      "definition": "Blodtryk",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Blodtryk"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Medical"
+        },
+        {
+          "code": "Model",
+          "value": "UA-767PlusBT-C Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00005",
+      "display": "OX2SAT",
+      "definition": "OX2SAT",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "OX2SAT"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Nonin"
+        },
+        {
+          "code": "Model",
+          "value": "Onyx II 9560 bluetooth oximeter"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00006",
+      "display": "Lungefunktion",
+      "definition": "Lungefunktion",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Lungefunktion"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Vitalograph"
+        },
+        {
+          "code": "Model",
+          "value": "Lung Monitor Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00007",
+      "display": "Urinstix",
+      "definition": "Urinstix",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Urinstix"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Roche Diagnostics"
+        },
+        {
+          "code": "Model",
+          "value": "Urisys 1100"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00008",
+      "display": "Urinstix",
+      "definition": "Urinstix",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Urinstix"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Siemens"
+        },
+        {
+          "code": "Model",
+          "value": "Clinitek Status+"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00009",
+      "display": "Vægt",
+      "definition": "Vægt",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Vægt"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Company"
+        },
+        {
+          "code": "Model",
+          "value": "UC352BLE"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00010",
+      "display": "Temperatur",
+      "definition": "Temperatur",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Temperatur"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Medical"
+        },
+        {
+          "code": "Model",
+          "value": "UT-302PlusBT Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00011",
+      "display": "Vægt",
+      "definition": "Vægt",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Vægt"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Medical"
+        },
+        {
+          "code": "Model",
+          "value": "UA-351-PBT-Ci Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00012",
+      "display": "Blodtryk",
+      "definition": "Blodtryk",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Blodtryk"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "A&D Medical"
+        },
+        {
+          "code": "Model",
+          "value": "UA-767PlusBT-Ci Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00013",
+      "display": "OX2SAT",
+      "definition": "OX2SAT",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "OX2SAT"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Nonin"
+        },
+        {
+          "code": "Model",
+          "value": "3230 Bluetooth Smart Pulse Oximeter"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00014",
+      "display": "Lungefunktion",
+      "definition": "Lungefunktion",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Lungefunktion"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Vitalograph"
+        },
+        {
+          "code": "Model",
+          "value": "4000 Lung Monitor Bluetooth"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00015",
+      "display": "Flere",
+      "definition": "Flere",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Flere"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Alere"
+        },
+        {
+          "code": "Model",
+          "value": "Afinion AS100"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00016",
+      "display": "Flere",
+      "definition": "Flere",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Flere"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Simens"
+        },
+        {
+          "code": "Model",
+          "value": "DCA Vantage Analyzer"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00017",
+      "display": "Hæmatologi",
+      "definition": "Hæmatologi",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Hæmatologi"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Hemocue"
+        },
+        {
+          "code": "Model",
+          "value": "WBC DIFF"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00018",
+      "display": "Hæmatologi",
+      "definition": "Hæmatologi",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Hæmatologi"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Hemocue"
+        },
+        {
+          "code": "Model",
+          "value": "Hb 201+"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00019",
+      "display": "Hæmatologi",
+      "definition": "Hæmatologi",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Hæmatologi"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Hemocue"
+        },
+        {
+          "code": "Model",
+          "value": "Hb 201 RT"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00020",
+      "display": "Glucose",
+      "definition": "Glucose",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Glucose"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Hemocue"
+        },
+        {
+          "code": "Model",
+          "value": "Glukose 201"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00021",
+      "display": "Glucose",
+      "definition": "Glucose",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Glucose"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Hemocue"
+        },
+        {
+          "code": "Model",
+          "value": "Glukose 201RT"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00022",
+      "display": "INR",
+      "definition": "INR",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "INR"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Roche Diagnostics"
+        },
+        {
+          "code": "Model",
+          "value": "CoaguChek"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00023",
+      "display": "Urinstix",
+      "definition": "Urinstix",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Urinstix"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Macherey-Nagel"
+        },
+        {
+          "code": "Model",
+          "value": "URYXXON Relax"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00024",
+      "display": "Flere",
+      "definition": "Flere",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Flere"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Orion Diagnostica"
+        },
+        {
+          "code": "Model",
+          "value": "Quick Read Go"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00025",
+      "display": "Flere",
+      "definition": "Flere",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Flere"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "EKF Diagnostic"
+        },
+        {
+          "code": "Model",
+          "value": "Quo-Test"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00026",
+      "display": "Hæmatologi",
+      "definition": "Hæmatologi",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Hæmatologi"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Bodytech"
+        },
+        {
+          "code": "Model",
+          "value": "i-CHROMA"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    },
+    {
+      "code": "MCI00027",
+      "display": "Urinstix",
+      "definition": "Urinstix",
+      "property": [
+        {
+          "code": "ApparatType",
+          "value": "Urinstix"
+        },
+        {
+          "code": "Manufacturer",
+          "value": "Alere"
+        },
+        {
+          "code": "Model",
+          "value": "Urilyzer 100"
+        },
+        {
+          "code": "SoftwareVersion",
+          "value": "NA"
+        }
+      ]
+    }
+  ]
+}
