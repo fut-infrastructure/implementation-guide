@@ -21,15 +21,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.medcom.dk/opslag/koder-tabeller-ydere/koder/laboratorieomraadet/dak-e-koder"
-        }
-      ]
-    },
-    {
-      "telecom": [
-        {
-          "system": "email",
-          "value": "ghe@medcom.dk"
+          "value": "http://www.medcom.dk"
         }
       ]
     }
