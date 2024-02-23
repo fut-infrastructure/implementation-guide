@@ -37,19 +37,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Vægt"
+          "valueString": "Vægt"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Company"
+          "valueString": "A&D Company"
         },
         {
           "code": "Model",
-          "value": "AD-6121ABT1"
+          "valueString": "AD-6121ABT1"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -60,19 +60,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Vægt"
+          "valueString": "Vægt"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Company"
+          "valueString": "A&D Company"
         },
         {
           "code": "Model",
-          "value": "UC-321PBT-C (bluetooth – Continua)"
+          "valueString": "UC-321PBT-C (bluetooth – Continua)"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -83,19 +83,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Vægt"
+          "valueString": "Vægt"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Company"
+          "valueString": "A&D Company"
         },
         {
           "code": "Model",
-          "value": "UC-355PBT-Ci"
+          "valueString": "UC-355PBT-Ci"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -106,19 +106,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Blodtryk"
+          "valueString": "Blodtryk"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Medical"
+          "valueString": "A&D Medical"
         },
         {
           "code": "Model",
-          "value": "UA-767PlusBT-C Bluetooth"
+          "valueString": "UA-767PlusBT-C Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -129,19 +129,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "OX2SAT"
+          "valueString": "OX2SAT"
         },
         {
           "code": "Manufacturer",
-          "value": "Nonin"
+          "valueString": "Nonin"
         },
         {
           "code": "Model",
-          "value": "Onyx II 9560 bluetooth oximeter"
+          "valueString": "Onyx II 9560 bluetooth oximeter"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -152,19 +152,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Lungefunktion"
+          "valueString": "Lungefunktion"
         },
         {
           "code": "Manufacturer",
-          "value": "Vitalograph"
+          "valueString": "Vitalograph"
         },
         {
           "code": "Model",
-          "value": "Lung Monitor Bluetooth"
+          "valueString": "Lung Monitor Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -175,19 +175,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Urinstix"
+          "valueString": "Urinstix"
         },
         {
           "code": "Manufacturer",
-          "value": "Roche Diagnostics"
+          "valueString": "Roche Diagnostics"
         },
         {
           "code": "Model",
-          "value": "Urisys 1100"
+          "valueString": "Urisys 1100"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -198,19 +198,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Urinstix"
+          "valueString": "Urinstix"
         },
         {
           "code": "Manufacturer",
-          "value": "Siemens"
+          "valueString": "Siemens"
         },
         {
           "code": "Model",
-          "value": "Clinitek Status+"
+          "valueString": "Clinitek Status+"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -221,19 +221,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Vægt"
+          "valueString": "Vægt"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Company"
+          "valueString": "A&D Company"
         },
         {
           "code": "Model",
-          "value": "UC352BLE"
+          "valueString": "UC352BLE"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -244,19 +244,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Temperatur"
+          "valueString": "Temperatur"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Medical"
+          "valueString": "A&D Medical"
         },
         {
           "code": "Model",
-          "value": "UT-302PlusBT Bluetooth"
+          "valueString": "UT-302PlusBT Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -267,19 +267,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Vægt"
+          "valueString": "Vægt"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Medical"
+          "valueString": "A&D Medical"
         },
         {
           "code": "Model",
-          "value": "UA-351-PBT-Ci Bluetooth"
+          "valueString": "UA-351-PBT-Ci Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -290,19 +290,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Blodtryk"
+          "valueString": "Blodtryk"
         },
         {
           "code": "Manufacturer",
-          "value": "A&D Medical"
+          "valueString": "A&D Medical"
         },
         {
           "code": "Model",
-          "value": "UA-767PlusBT-Ci Bluetooth"
+          "valueString": "UA-767PlusBT-Ci Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -313,19 +313,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "OX2SAT"
+          "valueString": "OX2SAT"
         },
         {
           "code": "Manufacturer",
-          "value": "Nonin"
+          "valueString": "Nonin"
         },
         {
           "code": "Model",
-          "value": "3230 Bluetooth Smart Pulse Oximeter"
+          "valueString": "3230 Bluetooth Smart Pulse Oximeter"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -336,19 +336,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Lungefunktion"
+          "valueString": "Lungefunktion"
         },
         {
           "code": "Manufacturer",
-          "value": "Vitalograph"
+          "valueString": "Vitalograph"
         },
         {
           "code": "Model",
-          "value": "4000 Lung Monitor Bluetooth"
+          "valueString": "4000 Lung Monitor Bluetooth"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -359,19 +359,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Flere"
+          "valueString": "Flere"
         },
         {
           "code": "Manufacturer",
-          "value": "Alere"
+          "valueString": "Alere"
         },
         {
           "code": "Model",
-          "value": "Afinion AS100"
+          "valueString": "Afinion AS100"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -382,19 +382,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Flere"
+          "valueString": "Flere"
         },
         {
           "code": "Manufacturer",
-          "value": "Simens"
+          "valueString": "Simens"
         },
         {
           "code": "Model",
-          "value": "DCA Vantage Analyzer"
+          "valueString": "DCA Vantage Analyzer"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -405,19 +405,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Hæmatologi"
+          "valueString": "Hæmatologi"
         },
         {
           "code": "Manufacturer",
-          "value": "Hemocue"
+          "valueString": "Hemocue"
         },
         {
           "code": "Model",
-          "value": "WBC DIFF"
+          "valueString": "WBC DIFF"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -428,19 +428,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Hæmatologi"
+          "valueString": "Hæmatologi"
         },
         {
           "code": "Manufacturer",
-          "value": "Hemocue"
+          "valueString": "Hemocue"
         },
         {
           "code": "Model",
-          "value": "Hb 201+"
+          "valueString": "Hb 201+"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -451,19 +451,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Hæmatologi"
+          "valueString": "Hæmatologi"
         },
         {
           "code": "Manufacturer",
-          "value": "Hemocue"
+          "valueString": "Hemocue"
         },
         {
           "code": "Model",
-          "value": "Hb 201 RT"
+          "valueString": "Hb 201 RT"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -474,19 +474,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Glucose"
+          "valueString": "Glucose"
         },
         {
           "code": "Manufacturer",
-          "value": "Hemocue"
+          "valueString": "Hemocue"
         },
         {
           "code": "Model",
-          "value": "Glukose 201"
+          "valueString": "Glukose 201"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -497,19 +497,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Glucose"
+          "valueString": "Glucose"
         },
         {
           "code": "Manufacturer",
-          "value": "Hemocue"
+          "valueString": "Hemocue"
         },
         {
           "code": "Model",
-          "value": "Glukose 201RT"
+          "valueString": "Glukose 201RT"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -520,19 +520,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "INR"
+          "valueString": "INR"
         },
         {
           "code": "Manufacturer",
-          "value": "Roche Diagnostics"
+          "valueString": "Roche Diagnostics"
         },
         {
           "code": "Model",
-          "value": "CoaguChek"
+          "valueString": "CoaguChek"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -543,19 +543,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Urinstix"
+          "valueString": "Urinstix"
         },
         {
           "code": "Manufacturer",
-          "value": "Macherey-Nagel"
+          "valueString": "Macherey-Nagel"
         },
         {
           "code": "Model",
-          "value": "URYXXON Relax"
+          "valueString": "URYXXON Relax"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -566,19 +566,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Flere"
+          "valueString": "Flere"
         },
         {
           "code": "Manufacturer",
-          "value": "Orion Diagnostica"
+          "valueString": "Orion Diagnostica"
         },
         {
           "code": "Model",
-          "value": "Quick Read Go"
+          "valueString": "Quick Read Go"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -589,19 +589,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Flere"
+          "valueString": "Flere"
         },
         {
           "code": "Manufacturer",
-          "value": "EKF Diagnostic"
+          "valueString": "EKF Diagnostic"
         },
         {
           "code": "Model",
-          "value": "Quo-Test"
+          "valueString": "Quo-Test"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -612,19 +612,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Hæmatologi"
+          "valueString": "Hæmatologi"
         },
         {
           "code": "Manufacturer",
-          "value": "Bodytech"
+          "valueString": "Bodytech"
         },
         {
           "code": "Model",
-          "value": "i-CHROMA"
+          "valueString": "i-CHROMA"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     },
@@ -635,19 +635,19 @@
       "property": [
         {
           "code": "ApparatType",
-          "value": "Urinstix"
+          "valueString": "Urinstix"
         },
         {
           "code": "Manufacturer",
-          "value": "Alere"
+          "valueString": "Alere"
         },
         {
           "code": "Model",
-          "value": "Urilyzer 100"
+          "valueString": "Urilyzer 100"
         },
         {
           "code": "SoftwareVersion",
-          "value": "NA"
+          "valueString": "NA"
         }
       ]
     }
