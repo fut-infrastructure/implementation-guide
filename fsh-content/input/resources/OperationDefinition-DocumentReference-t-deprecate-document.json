@@ -1,0 +1,31 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "DocumentReference-t-deprecate-document",
+  "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-t-deprecate-document",
+  "name": "deprecate-document",
+  "title": "Deprecate document",
+  "status": "active",
+  "kind": "operation",
+  "description": "Deprecates a shared document. The operation takes a documentIdentifier and cpr-number as parameters and finds the DocumentReference with the corresponding masterIdentifier. masterIdentifier should be unique for DocumentReference so if less than 0 or more than 1 are found the operation throws and exception. If the found documentReference has a patient which cpr number matches the provided value the document is deprecated. iti-57 is used to deprecate the document on XDS. On successthe documentReference status is updated to superseded and updated in the database.",
+  "affectsState": true,
+  "code": "deprecate-document",
+  "resource": [ "DocumentReference" ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [ {
+    "name": "documentId",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string",
+    "searchType": "token"
+  }, {
+    "name": "cpr",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string",
+    "searchType": "string"
+  } ]
+}

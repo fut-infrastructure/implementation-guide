@@ -6,7 +6,7 @@
   "title": "Retrieve document",
   "status": "active",
   "kind": "operation",
-  "description": "Retrieve document",
+  "description": "Input (url) is the element DocumentReference.content.attachment.url for metadata about the QRD/APD/PHMR document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document.",
   "affectsState": false,
   "code": "retrieve-document",
   "resource": [ "Binary" ],
