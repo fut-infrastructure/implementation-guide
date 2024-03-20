@@ -18,6 +18,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Publisher for all resources has been changed to "Den telemedicinske infrastruktur (eHealth Infrastructure)" instead of "Systematic | Trifork"
 
 ### Custom operations
+- Added custom operation "deprecate-document" on DocumentTransformation service
+- Added custom operation "upload-QFDD" on DocumentTransformation service
+- Added custom operation "transform-from-QRD-based-on-questionnaire" on DocumentTransformation service
+- Updated description of "import" operation on PlanDefinition service
+- Updated description of "export" operation on PlanDefinition service
 #### System operations
 #### Instance operations
 ### Code systems
