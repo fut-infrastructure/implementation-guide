@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- DkCorePractitioner set as parent for the ehealth-practitioner profile
 
 ## 3.0.0 (2024-01-08)
 
