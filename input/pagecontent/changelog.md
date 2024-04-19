@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added custom operation "retrieve-and-transform-QRD" on DocumentQuery service
 - Added custom operation "retrieve-and-transform-APD" on DocumentQuery service
 - Added custom operation "retrieve-and-transform-PHMR" on DocumentQuery service
+- Operation "retrieve-document" on DocumentQuery service has been extended with parameters `consentOverride` and `reason` to be able to specify if the operation should override the lack of consent from a patient to view their medical documents, and to indicate the reason for the override. 
 
 #### System operations
 #### Instance operations
@@ -18,7 +19,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - DkCorePractitioner set as parent for the ehealth-practitioner profile
 
 ### Search parameters
-- Added search parameters `consentOverride` and `reason` on `ehealth-documentreference` (`DocumentReference`) search operation to be able to specify if the search should override the lack of consent from a patient to view their medical documents, and to indicate the reason for the override. 
+- Added search parameters `consentOverride` and `reason` on `ehealth-documentreference` (`DocumentReference`) search operation in DocumentQuery service, to be able to specify if the search should override the lack of consent from a patient to view their medical documents, and to indicate the reason for the override. 
 
 ## 3.0.0 (2024-01-08)
 
