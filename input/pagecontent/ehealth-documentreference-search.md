@@ -9,6 +9,12 @@ The operation implements the Document Responder actor of the ITI-67 Find Documen
 ## Input
 The search parameters are described in section 3.67.4.1.2.1 [IHE ITI Supplement MHD](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf).
 
+Besides the parameters described in the IHE ITI Supplement MHD, the operation supports the following additional parameters: consentOverride and reason.
+
+ConsentOverride signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.
+
+Reason is mandatory when parameter consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure.
+
 ## Output
 When available to the requesting user, DocumentReference resources corresponding to found XDS document metadata are returned. Also returned in the Bundle is an OperationOutcome capturing any errors and warnings possibly returned with the document sharing response, whether those reflect a Success or PartialSuccess.
 
@@ -21,7 +27,7 @@ URL: `GET [base]/DocumentReference?<query>`
 Parameters
 
 | Use | Name               | Cardinality | Type      | Binding                                                                          | Documentation             |
-|:--- | ------------------ | ----------- | ------    | -------------------------------------------------------------------------------- | ------------------------- |
+|:--- | ------------------ | ----------- |-----------|----------------------------------------------------------------------------------| ------------------------- |
 | IN  | patient            | 0..1        | Reference |                                                                                  |                           |
 | IN  | patient.identifier | 0..1        | token     |                                                                                  |                           |
 | IN  | status             | 1..*        | code      | http://hl7.org/fhir/ValueSet/document-reference-status                           | current and/or superseded |
@@ -33,6 +39,8 @@ Parameters
 | IN  | facility           | 0..*        | token     | http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs |                           |
 | IN  | event              | 0..*        | token     | http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs             |                           |
 | IN  | format             | 0..*        | token     | http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs                 |                           |
+| IN  | consentOverride    | 0..*        | token     |                                                                                  |                           |
+| IN  | reason             | 0..*        | String    |                                                                                  |                           |
 | OUT | return             | 1..1        | Bundle    |                                                                                  |                           |
 
 
