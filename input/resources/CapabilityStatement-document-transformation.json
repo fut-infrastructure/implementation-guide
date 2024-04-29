@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2024-02-04T02:18:07.604+00:00",
+  "date": "2024-04-29T02:18:14.728+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.12.0"
+    "version": "1.13.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -261,6 +261,10 @@
         "name": "location",
         "type": "uri",
         "documentation": "Uri where the data can be found"
+      }, {
+        "name": "masterIdentifier",
+        "type": "token",
+        "documentation": "Master identifier"
       }, {
         "name": "patient",
         "type": "reference",

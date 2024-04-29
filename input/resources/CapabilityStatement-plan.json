@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2024-02-04T02:42:24.694+00:00",
+  "date": "2024-04-29T02:42:23.634+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.1.7"
+    "version": "2.2.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -65,6 +65,10 @@
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
+        "name": "_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -84,6 +88,18 @@
         "name": "composed-of",
         "type": "reference",
         "documentation": "What resource is being referenced"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the activity definition"
+      }, {
+        "name": "context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the activity definition"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the activity definition"
       }, {
         "name": "date",
         "type": "date",
@@ -403,6 +419,10 @@
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
+        "name": "_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -422,6 +442,18 @@
         "name": "composed-of",
         "type": "reference",
         "documentation": "What resource is being referenced"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the plan definition"
+      }, {
+        "name": "context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the plan definition"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the plan definition"
       }, {
         "name": "date",
         "type": "date",
@@ -510,6 +542,10 @@
         "name": "topic",
         "type": "token",
         "documentation": "Topics associated with the module"
+      }, {
+        "name": "type",
+        "type": "token",
+        "documentation": "The type of artifact the plan (e.g. order-set, eca-rule, protocol)"
       }, {
         "name": "url",
         "type": "uri",

@@ -3,12 +3,12 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2024-02-04T03:12:13.672+00:00",
+  "date": "2024-04-29T03:12:22.910+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.12.10"
+    "version": "1.13.1"
   },
   "implementation": {
     "description": "eHealth task service",
@@ -34,7 +34,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "ClinicalImpression:previous" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -143,7 +143,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
     }, {
       "type": "Task",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
@@ -160,7 +160,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:organization", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -242,10 +242,6 @@
         "type": "date",
         "documentation": "Search by last modification date"
       }, {
-        "name": "organization",
-        "type": "reference",
-        "documentation": "Search by responsible organization"
-      }, {
         "name": "owner",
         "type": "reference",
         "documentation": "Search by task owner"
@@ -273,6 +269,22 @@
         "name": "requester",
         "type": "reference",
         "documentation": "Search by task requester"
+      }, {
+        "name": "resolvedTimingEnd",
+        "type": "date",
+        "documentation": "Resolved Timing end"
+      }, {
+        "name": "resolvedTimingServiceRequestVersionId",
+        "type": "token",
+        "documentation": "Resolved Timing serviceRequestVersionID"
+      }, {
+        "name": "resolvedTimingStart",
+        "type": "date",
+        "documentation": "Resolved Timing start"
+      }, {
+        "name": "resolvedTimingType",
+        "type": "token",
+        "documentation": "Resolved Timing type"
       }, {
         "name": "responsible",
         "type": "reference",

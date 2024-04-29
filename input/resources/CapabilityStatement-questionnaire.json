@@ -3,12 +3,12 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2024-02-04T02:47:34.226+00:00",
+  "date": "2024-04-29T02:47:14.155+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "2.2.0"
+    "version": "2.2.1"
   },
   "implementation": {
     "description": "eHealth questionnaire service",

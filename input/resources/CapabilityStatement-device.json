@@ -3,12 +3,12 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2024-02-04T02:07:45.355+00:00",
+  "date": "2024-04-29T02:07:23.240+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "device",
-    "version": "1.10.6"
+    "version": "1.10.7"
   },
   "implementation": {
     "description": "eHealth device service",

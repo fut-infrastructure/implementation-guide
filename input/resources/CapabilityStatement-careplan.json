@@ -3,12 +3,12 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2024-02-04T02:02:34.861+00:00",
+  "date": "2024-04-29T07:54:13.143+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "careplan",
-    "version": "1.17.2"
+    "version": "1.18.0"
   },
   "implementation": {
     "description": "eHealth careplan service",
@@ -37,6 +37,10 @@
         "name": "_id",
         "type": "token",
         "documentation": "The ID of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "_tag",
         "type": "token",
