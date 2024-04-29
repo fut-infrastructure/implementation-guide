@@ -1,4 +1,4 @@
-`GET [base]/CommunicationRequest/2664`
+`GET [base]/CommunicationRequest/2679`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2664",
+  "id": "2679",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-01-29T21:07:39.178+00:00",
+    "lastUpdated": "2024-04-05T09:08:26.100+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ],
@@ -32,7 +32,7 @@ __Response__
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2719.local/fhir/ServiceRequest/2663"
+      "reference": "https://careplan.cit-careplan-2740.local/fhir/ServiceRequest/2678"
     }
   ],
   "status": "active",
@@ -49,10 +49,10 @@ __Response__
   ],
   "doNotPerform": true,
   "subject": {
-    "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/96267"
+    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/69877"
   },
   "occurrencePeriod": {
-    "start": "2024-01-29T21:07:37+00:00"
+    "start": "2024-04-05T09:08:23+00:00"
   },
   "reasonCode": [
     {

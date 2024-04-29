@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/27644"
+        "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/9391"
       }
     }
   ]
@@ -33,7 +33,7 @@ __Response__
     {
       "name": "Patient",
       "valueReference": {
-        "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/27644"
+        "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/9391"
       }
     }
   ]

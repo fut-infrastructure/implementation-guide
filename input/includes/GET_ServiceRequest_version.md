@@ -1,4 +1,4 @@
-`GET [base]/ServiceRequest/2953/_history/2`
+`GET [base]/ServiceRequest/2968/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2953",
+  "id": "2968",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-01-29T21:10:06.086+00:00",
-    "source": "#206276f6-c340-43",
+    "lastUpdated": "2024-04-05T09:11:02.099+00:00",
+    "source": "#073c80ae-ab4a-4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2719.local/fhir/EpisodeOfCare/2952"
+        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2967"
       }
     },
     {
@@ -59,7 +59,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-01-29T21:10:04+00:00"
+            "start": "2024-04-05T09:10:59+00:00"
           }
         }
       ]
@@ -73,7 +73,7 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-01-29T21:10:04+00:00"
+          "valueDateTime": "2024-04-05T09:10:59+00:00"
         }
       ]
     },
@@ -86,13 +86,13 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-02-27T21:10:04+00:00"
+          "valueDateTime": "2024-05-04T09:10:59+00:00"
         }
       ]
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2719.local/fhir/ActivityDefinition/89816"
+    "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/13908"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -103,10 +103,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "f47bfae6-6089-47f0-9c86-65e11e4d4dc0"
+    "text": "b831116a-ff80-4f4e-bf68-c2c3af11092c"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/22377"
+    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/86986"
   }
 }
 ```

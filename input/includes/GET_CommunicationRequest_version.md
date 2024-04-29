@@ -1,4 +1,4 @@
-`GET [base]/CommunicationRequest/2863/_history/2`
+`GET [base]/CommunicationRequest/2878/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2863",
+  "id": "2878",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-01-29T21:09:02.020+00:00",
-    "source": "#d0a67865-ea29-95",
+    "lastUpdated": "2024-04-05T09:09:54.177+00:00",
+    "source": "#bcc7e335-c1f8-4b",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ]
@@ -28,18 +28,18 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2719.local/fhir/EpisodeOfCare/2861"
+        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2876"
       }
     }
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2719.local/fhir/ServiceRequest/2862"
+      "reference": "https://careplan.cit-careplan-2740.local/fhir/ServiceRequest/2877"
     }
   ],
   "status": "on-hold",
   "subject": {
-    "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/70470"
+    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/99042"
   }
 }
 ```

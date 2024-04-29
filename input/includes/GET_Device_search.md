@@ -1,4 +1,4 @@
-`GET [base]/Device?manufacturer%3Aexact=9abbb3af-164b-4692-bd52-b7d56cfd1ea2&model%3Aexact=c8f347a6-10f9-436c-b05d-49d0a4c7ee33`
+`GET [base]/Device?manufacturer%3Aexact=7cdb8641-e611-49b7-8901-1f1dd2a00767&model%3Aexact=0982ed66-a972-4b30-be26-ddd05bfb2448`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "09d51108-eeb9-4193-aedc-574116de1dd0",
+  "id": "1ffe3557-4acb-4cbf-b928-3c94b4cd4099",
   "meta": {
-    "lastUpdated": "2024-01-29T21:20:00.147+00:00"
+    "lastUpdated": "2024-03-22T07:26:30.530+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://device.cit-device-866.local/fhir/Device?_format=json&_pretty=true&manufacturer%3Aexact=9abbb3af-164b-4692-bd52-b7d56cfd1ea2&model%3Aexact=c8f347a6-10f9-436c-b05d-49d0a4c7ee33"
+      "url": "https://device.cit-device-874.local/fhir/Device?_format=json&_pretty=true&manufacturer%3Aexact=7cdb8641-e611-49b7-8901-1f1dd2a00767&model%3Aexact=0982ed66-a972-4b30-be26-ddd05bfb2448"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://device.cit-device-866.local/fhir/Device/141",
+      "fullUrl": "https://device.cit-device-874.local/fhir/Device/141",
       "resource": {
         "resourceType": "Device",
         "id": "141",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-01-29T21:19:59.548+00:00",
-          "source": "#4fe718cc-c724-4b",
+          "lastUpdated": "2024-03-22T07:26:29.851+00:00",
+          "source": "#ff535ad6-7624-42",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -48,22 +48,22 @@ __Response__
           }
         ],
         "status": "active",
-        "manufacturer": "9abbb3af-164b-4692-bd52-b7d56cfd1ea2",
-        "modelNumber": "c8f347a6-10f9-436c-b05d-49d0a4c7ee33"
+        "manufacturer": "7cdb8641-e611-49b7-8901-1f1dd2a00767",
+        "modelNumber": "0982ed66-a972-4b30-be26-ddd05bfb2448"
       },
       "search": {
         "mode": "match"
       }
     },
     {
-      "fullUrl": "https://device.cit-device-866.local/fhir/Device/143",
+      "fullUrl": "https://device.cit-device-874.local/fhir/Device/143",
       "resource": {
         "resourceType": "Device",
         "id": "143",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-01-29T21:19:59.834+00:00",
-          "source": "#b57cbaec-1a44-9f",
+          "lastUpdated": "2024-03-22T07:26:30.247+00:00",
+          "source": "#d173f792-fac9-40",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
@@ -75,8 +75,8 @@ __Response__
           }
         ],
         "status": "active",
-        "manufacturer": "9abbb3af-164b-4692-bd52-b7d56cfd1ea2",
-        "modelNumber": "c8f347a6-10f9-436c-b05d-49d0a4c7ee33"
+        "manufacturer": "7cdb8641-e611-49b7-8901-1f1dd2a00767",
+        "modelNumber": "0982ed66-a972-4b30-be26-ddd05bfb2448"
       },
       "search": {
         "mode": "match"

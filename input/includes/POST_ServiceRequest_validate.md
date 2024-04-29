@@ -20,7 +20,7 @@ __Body__:
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
-          "lastUpdated": "2024-01-29T21:10:18.777+00:00",
+          "lastUpdated": "2024-04-05T09:11:11.537+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -29,7 +29,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2719.local/fhir/EpisodeOfCare/2974"
+              "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2989"
             }
           },
           {
@@ -86,7 +86,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 2139679437,
+                  "value": -2087029085,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -110,14 +110,14 @@ __Body__:
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2024-01-29T21:10:18+00:00"
+                  "start": "2024-04-05T09:11:11+00:00"
                 }
               }
             ]
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2719.local/fhir/ActivityDefinition/47993"
+          "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/92709"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -128,10 +128,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "1e605b32-5f57-41e3-bd8b-ab9a7f5a443c"
+          "text": "d4e45ace-2f62-4e05-84f5-6a8639cc9d52"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2719.local/fhir/Patient/75397"
+          "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/22188"
         }
       }
     }

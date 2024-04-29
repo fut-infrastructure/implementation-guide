@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTRjNzFlZDItYjQ5Ny00MzkyLTg5NmYtYjYxNDI1ZjdmMDlkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODU0MjM1YmUtMWJhYi00Yjc3LTkyOTYtZWViOTc4MWFkZDVkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1706.local/fhir/EpisodeOfCare/50447"
+              "reference": "https://careplan.cit-measurement-1730.local/fhir/EpisodeOfCare/81156"
             }
           },
           {
@@ -81,7 +81,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1706.local/fhir/ServiceRequest/16994"
+            "reference": "https://careplan.cit-measurement-1730.local/fhir/ServiceRequest/59772"
           }
         ],
         "status": "completed",
@@ -94,9 +94,9 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1706.local/fhir/Patient/3175"
+          "reference": "https://patient.cit-measurement-1730.local/fhir/Patient/80545"
         },
-        "createdDateTime": "2024-01-29T20:21:31+00:00",
+        "createdDateTime": "2024-04-23T12:53:47+00:00",
         "content": {
           "language": "en"
         }

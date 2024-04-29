@@ -19,9 +19,9 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://f9d6d3f1-3960-4173-9a37-8a9bf14187d5",
-  "version": "678f7ad0-33a7-4cd9-9437-706ab6deec07",
-  "name": "55ad44f3-1619-4b44-bafb-99aa002f03ab",
+  "url": "http://73a8a6e4-72de-4921-b575-826af16de233",
+  "version": "88a156b7-82ac-4b28-a413-d6a7576cb5cc",
+  "name": "d6d7e892-1582-47c5-8712-647544913cf2",
   "status": "draft",
   "kind": "resource",
   "abstract": true,
@@ -46,14 +46,14 @@ __Response__
   "id": "217",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-01-29T21:11:59.429+00:00",
+    "lastUpdated": "2024-03-18T15:33:53.941+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://f9d6d3f1-3960-4173-9a37-8a9bf14187d5",
-  "version": "678f7ad0-33a7-4cd9-9437-706ab6deec07",
-  "name": "55ad44f3-1619-4b44-bafb-99aa002f03ab",
+  "url": "http://73a8a6e4-72de-4921-b575-826af16de233",
+  "version": "88a156b7-82ac-4b28-a413-d6a7576cb5cc",
+  "name": "d6d7e892-1582-47c5-8712-647544913cf2",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

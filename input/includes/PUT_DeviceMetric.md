@@ -18,7 +18,7 @@ __Body__:
   "id": "116",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-01-29T21:19:38.917+00:00",
+    "lastUpdated": "2024-03-22T07:26:10.161+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -119,7 +119,7 @@ __Body__:
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-866.local/fhir/Device/115"
+    "reference": "https://device.cit-device-874.local/fhir/Device/115"
   },
   "operationalStatus": "off",
   "category": "calculation"
@@ -133,7 +133,7 @@ __Response__
   "id": "116",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-01-29T21:19:39.114+00:00",
+    "lastUpdated": "2024-03-22T07:26:10.444+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-devicemetric"
     ]
@@ -234,7 +234,7 @@ __Response__
     ]
   },
   "source": {
-    "reference": "https://device.cit-device-866.local/fhir/Device/115"
+    "reference": "https://device.cit-device-874.local/fhir/Device/115"
   },
   "operationalStatus": "off",
   "category": "calculation"

@@ -31,7 +31,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1366.local/fhir/Organization/10958"
+                  "reference": "https://organization.cit-plan-1463.local/fhir/Organization/48187"
                 }
               },
               {

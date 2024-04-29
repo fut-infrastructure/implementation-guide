@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNzJjYzQzZDEtZjVmNS00MGM3LThiYjMtYTFjMzQ0M2QyZTVjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGE5Y2UzNjMtZmQ5Ni00MTU2LWEzNmQtZDExMGMyNTc3MzgwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
@@ -18,7 +18,7 @@ __Body__:
   "id": "202",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-02-02T10:46:36.688+00:00",
+    "lastUpdated": "2024-04-26T09:26:36.554+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -26,11 +26,11 @@ __Body__:
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:36aea4c7-3d09-459b-8bd7-f453f471079b"
+      "value": "urn:uuid:6ceb8a5a-397d-4c81-83e4-180b1cd77d69"
     }
   ],
   "status": "active",
-  "name": "07f06529-f74e-4b30-8445-ed9f7b6db254",
+  "name": "c5f0125d-99b4-467f-aded-355cfc8aea08",
   "reasonCode": [
     {
       "coding": [
@@ -51,7 +51,7 @@ __Response__
   "id": "202",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-02-02T10:46:36.764+00:00",
+    "lastUpdated": "2024-04-26T09:26:36.744+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -59,11 +59,11 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:36aea4c7-3d09-459b-8bd7-f453f471079b"
+      "value": "urn:uuid:6ceb8a5a-397d-4c81-83e4-180b1cd77d69"
     }
   ],
   "status": "active",
-  "name": "07f06529-f74e-4b30-8445-ed9f7b6db254",
+  "name": "c5f0125d-99b4-467f-aded-355cfc8aea08",
   "reasonCode": [
     {
       "coding": [

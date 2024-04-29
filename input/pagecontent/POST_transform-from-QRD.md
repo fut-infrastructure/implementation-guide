@@ -19,7 +19,7 @@ __Body__:
       "name": "documentReference",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "90156",
+        "id": "77095",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -35,7 +35,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-01-29T20:24:59.661+00:00",
+        "date": "2024-04-26T08:01:18.109+00:00",
         "content": [
           {
             "attachment": {
@@ -59,7 +59,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "b223c708-5078-474a-a03e-a60dbe97a7f5",
+        "id": "bbb98ab7-a460-4116-bbb5-e8965d7e5847",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -292,14 +292,14 @@ __Response__
         "status": "completed",
         "item": [
           {
-            "linkId": "d0286ccb-9f9d-4c73-88fe-c785dbf70184",
+            "linkId": "491a2936-4ec4-4a3d-952e-eac55a36cec5",
             "text": "Baggrundsinformation",
             "item": [
               {
-                "linkId": "3f19aa83-bddf-4bcc-9ec9-0e5e25c8db1e",
+                "linkId": "bf28c67d-be5c-4fcf-9961-8dea213def1a",
                 "item": [
                   {
-                    "linkId": "7c547981-8beb-4cff-99a8-a35c73a87a9f",
+                    "linkId": "aa651288-31d2-4f1a-81b0-e77fb65182aa",
                     "answer": [
                       {
                         "valueCoding": {
@@ -315,14 +315,14 @@ __Response__
             ]
           },
           {
-            "linkId": "c3d37497-12ec-493d-8295-3f9bd35b3d9c",
+            "linkId": "993a47a5-8a74-452a-85e9-b61fc648c774",
             "text": "Sygdomsspecifikt funktionsniveau ",
             "item": [
               {
-                "linkId": "8729c8f0-b6ae-439b-9ad9-86fc43fa326a",
+                "linkId": "db69e65b-c49a-4d3c-b769-f31808e82d52",
                 "item": [
                   {
-                    "linkId": "013eca90-a9e5-4871-a2aa-99279254d7de",
+                    "linkId": "6559e83e-9567-4d64-bf66-d30d5812ed0e",
                     "answer": [
                       {
                         "valueCoding": {
@@ -334,7 +334,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "a2450df7-cfe7-4049-b224-3d78a35bc1cb",
+                    "linkId": "2594b40c-9089-4aff-88c0-05ea834e694f",
                     "answer": [
                       {
                         "valueCoding": {
@@ -346,7 +346,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "9e839b2f-f350-40ce-8996-991cef9b056b",
+                    "linkId": "33c8d0e8-de1d-46c2-8301-5fcbec466161",
                     "answer": [
                       {
                         "valueCoding": {
@@ -358,7 +358,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "ff0df3fc-09f1-45d9-8193-e65dd5ccb2c6",
+                    "linkId": "18349f51-a42d-4e6a-a941-0bd1bac30cf9",
                     "answer": [
                       {
                         "valueCoding": {
@@ -370,7 +370,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "272b1ab1-3a67-4786-aa5b-05cf2bbb93c5",
+                    "linkId": "a737f5ea-e303-465a-8f0f-866f01defc06",
                     "answer": [
                       {
                         "valueCoding": {
@@ -382,7 +382,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "14821d57-a92e-4bab-9747-81cadd65884c",
+                    "linkId": "66f1b95d-b9b3-464d-a1a0-dd6a48ff9d19",
                     "answer": [
                       {
                         "valueCoding": {
@@ -394,7 +394,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "ec114796-8643-4b0b-b3e9-af009d6cec48",
+                    "linkId": "b99bf0b5-7ef9-4f4b-9a77-f56bb71afbf2",
                     "answer": [
                       {
                         "valueCoding": {
@@ -406,7 +406,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "39c5551b-42d5-4093-b61d-7e3dd3a3dbc0",
+                    "linkId": "e2b1afc1-fdda-4aea-afb1-1d7743dcabdf",
                     "answer": [
                       {
                         "valueCoding": {
@@ -418,7 +418,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "743c1092-a56f-47bb-a6b2-1c394187e4aa",
+                    "linkId": "b1f16274-2006-4854-b9ca-c8fbfa75d1ef",
                     "answer": [
                       {
                         "valueCoding": {
@@ -430,7 +430,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "752ac44d-2f79-41a6-b477-ca7d4dd90ebf",
+                    "linkId": "c9d3712c-79a0-45b1-a6a6-c9313a19b4e2",
                     "answer": [
                       {
                         "valueCoding": {
@@ -442,7 +442,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "c24c68ca-f80d-47c2-acdd-92c6860ac978",
+                    "linkId": "bfed9877-b0f3-49ec-b938-9c9d87a8b24b",
                     "answer": [
                       {
                         "valueCoding": {
@@ -454,7 +454,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "add80e1d-5c95-4a55-8cd1-77804616e015",
+                    "linkId": "1bfbed08-dd70-4d6b-8d9c-3169251d9875",
                     "answer": [
                       {
                         "valueCoding": {
@@ -470,14 +470,14 @@ __Response__
             ]
           },
           {
-            "linkId": "8c85b8b1-05e6-44b9-aa8b-7f34b28f3193",
+            "linkId": "76917d44-398b-4fcc-8d25-b37dad723f5b",
             "text": "Behandling",
             "item": [
               {
-                "linkId": "9c48b5ec-5677-40b2-8541-f45f022ffa2b",
+                "linkId": "bffe99dd-f4f4-4ea4-a9b3-d6f90a539a95",
                 "item": [
                   {
-                    "linkId": "f772d808-408d-4791-91ac-e7ed6454f8ff",
+                    "linkId": "7e2e768c-9939-4860-98aa-bfe530e617aa",
                     "answer": [
                       {
                         "valueCoding": {
@@ -489,7 +489,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "249b52f8-3daf-43d0-8881-b623f44fafb3",
+                    "linkId": "da7f86d3-9b0c-4fef-b5b4-a71cd6fe6298",
                     "answer": [
                       {
                         "valueCoding": {
@@ -501,7 +501,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "ede9dab5-1b80-45b8-bd84-0b71293c7781",
+                    "linkId": "66761fc6-00d1-4fef-827d-45ca5bcf7293",
                     "answer": [
                       {
                         "valueCoding": {
@@ -513,7 +513,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "eb0a3542-c036-4a86-98ce-30478a90153a",
+                    "linkId": "8454250d-aa60-4ff6-a087-9633eb3f7139",
                     "answer": [
                       {
                         "valueCoding": {
@@ -525,7 +525,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "1a661fd7-82ee-445f-9e0b-6dfe269c7ef8",
+                    "linkId": "4385bacd-67cb-43e2-bda5-5960bcdb244d",
                     "answer": [
                       {
                         "valueString": "De tre vigstigst ting for mig er: at jeg kan                                        handle selv, at jeg kan klare dagligdagen uden for meget medicin og at jeg kan                                        gå tur med børnebørnene igen."
@@ -533,7 +533,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "5cdf8013-7b10-49e2-ab69-c94c3a69266b",
+                    "linkId": "87ae9bb1-7953-4558-8fed-1c3fec60b3bd",
                     "answer": [
                       {
                         "valueCoding": {
@@ -545,7 +545,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "80042cef-2eb0-4fd7-b149-09565936b20f",
+                    "linkId": "2e1a9a6a-b86b-46bd-871e-2002b20ebac0",
                     "answer": [
                       {
                         "valueCoding": {
@@ -561,14 +561,14 @@ __Response__
             ]
           },
           {
-            "linkId": "4a1274de-3df0-4317-9f50-f7f5c98c888b",
+            "linkId": "4d3c177d-305b-48f1-b5fe-4186bd578e52",
             "text": "Bevægelighed",
             "item": [
               {
-                "linkId": "56dd6983-e614-4619-8f47-86898fd80491",
+                "linkId": "ae0ae1cc-bbd9-46f7-980e-4209a3ad1b76",
                 "item": [
                   {
-                    "linkId": "4bd382d6-99b7-4277-9433-132edccfacdf",
+                    "linkId": "93ccd7d8-e90e-4354-8f78-3eb10ccb564b",
                     "answer": [
                       {
                         "valueCoding": {
@@ -580,7 +580,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "fa26bf9a-5b91-4a0a-b750-d3b6e1a69e4b",
+                    "linkId": "c448efd0-b451-4168-9c0e-fb0a18b4b19b",
                     "answer": [
                       {
                         "valueCoding": {
@@ -592,7 +592,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "75f11f3c-4d02-4a78-ac1e-30abd353c311",
+                    "linkId": "518e0c87-b090-4ecb-aefc-56050ca5bed2",
                     "answer": [
                       {
                         "valueCoding": {
@@ -604,7 +604,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "4af6bc3d-43a8-4764-b11c-630f3a35936f",
+                    "linkId": "28b495dc-ec21-406b-82c8-935b68b8ee0e",
                     "answer": [
                       {
                         "valueCoding": {
@@ -620,14 +620,14 @@ __Response__
             ]
           },
           {
-            "linkId": "45ef3e39-5bf3-4b28-a386-a49680e36749",
+            "linkId": "72cb2f07-0b1b-4811-add7-b390fbdf563f",
             "text": "Arbejdsmarkedstilknytning",
             "item": [
               {
-                "linkId": "bf287139-da79-4754-bb39-c5c9c48a6641",
+                "linkId": "4f0e8697-a41a-4f94-ad71-247794609129",
                 "item": [
                   {
-                    "linkId": "67cc0f0e-aeeb-40b1-bc0e-74e766044cec",
+                    "linkId": "8edafbfd-4d56-4d7a-bcc6-6993431df5c0",
                     "answer": [
                       {
                         "valueCoding": {
@@ -639,7 +639,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "3c7b26b7-c3f7-4d14-ba0d-3a168bc0dfa1",
+                    "linkId": "908663c7-5803-42b1-8c32-b45b48064566",
                     "answer": [
                       {
                         "valueCoding": {
@@ -651,7 +651,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "dd29e776-33dc-4cc6-bb55-89c66c37a357",
+                    "linkId": "5e5cbda0-7684-44ed-9851-00106bce9b1c",
                     "answer": [
                       {
                         "valueCoding": {
@@ -667,14 +667,14 @@ __Response__
             ]
           },
           {
-            "linkId": "8eed58d5-16d7-4bcd-ab04-513b154ddc77",
+            "linkId": "6141c78a-a597-461c-bb00-1555fe309080",
             "text": "Livskvalitet",
             "item": [
               {
-                "linkId": "ebc4c471-4166-4916-bff6-a466e7658799",
+                "linkId": "d686cbf5-079f-4909-8e7a-581206f98524",
                 "item": [
                   {
-                    "linkId": "ddf13c27-fa2c-4822-b974-a359f322bb0f",
+                    "linkId": "cf72b4fe-65ed-491f-8fc0-98607672fc4a",
                     "answer": [
                       {
                         "valueCoding": {
@@ -686,7 +686,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "0fe5b2fa-23d9-4009-b36e-c8539b8ba916",
+                    "linkId": "c247b79a-1911-44eb-8d50-f857310adad0",
                     "answer": [
                       {
                         "valueCoding": {
@@ -698,7 +698,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "6604664e-467b-4fd2-8720-c499e4d834e6",
+                    "linkId": "51c2c658-f698-47a8-804f-4b55306028c7",
                     "answer": [
                       {
                         "valueCoding": {
@@ -710,7 +710,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "28a63356-34a1-4a74-958a-8eafb820ba60",
+                    "linkId": "e779fe6f-73ff-4e8f-b4c7-f969c253a82a",
                     "answer": [
                       {
                         "valueCoding": {
@@ -722,7 +722,7 @@ __Response__
                     ]
                   },
                   {
-                    "linkId": "b9d17924-6b0c-464c-8e28-ae2f3512c25e",
+                    "linkId": "82a8af71-6fef-465e-86ee-bc73059b8d4e",
                     "answer": [
                       {
                         "valueCoding": {
@@ -738,14 +738,14 @@ __Response__
             ]
           },
           {
-            "linkId": "1813a191-981e-44df-8775-a12ca24f4459",
+            "linkId": "6cbef01f-1c9c-4000-8e7b-aea46ffab655",
             "text": "Om besvarelsen",
             "item": [
               {
-                "linkId": "4a0aff6a-840e-4b44-a3d8-5ec35bf34426",
+                "linkId": "4b707efd-b071-4ae8-b1fc-fc8de24d1b74",
                 "item": [
                   {
-                    "linkId": "316527b7-9852-40dc-b220-e0be22e22b13",
+                    "linkId": "6b7c614a-cb6e-4080-803e-eef9e8a15793",
                     "answer": [
                       {
                         "valueCoding": {

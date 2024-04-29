@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDYxYjNlYzktNDA5Ny00ZTE4LWExZDYtOGIwYjE4MjJhZGM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzFlYjMxODgtNzJjYi00NmQ0LTliODMtYmI0MzdmMmRlZmUwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZS53cml0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -27,7 +27,7 @@ __Body__:
   ],
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-866.local/fhir/Organization/45947"
+    "reference": "https://organization.cit-device-874.local/fhir/Organization/91200"
   }
 }
 ```
@@ -39,7 +39,7 @@ __Response__
   "id": "154",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-01-29T21:20:12.233+00:00",
+    "lastUpdated": "2024-03-22T07:26:42.983+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
     ]
@@ -52,7 +52,7 @@ __Response__
   ],
   "status": "active",
   "owner": {
-    "reference": "https://organization.cit-device-866.local/fhir/Organization/45947"
+    "reference": "https://organization.cit-device-874.local/fhir/Organization/91200"
   }
 }
 ```
