@@ -27,7 +27,7 @@ URL: `GET [base]/DocumentReference?<query>`
 Parameters
 
 | Use | Name               | Cardinality | Type      | Binding                                                                          | Documentation             |
-|:--- | ------------------ | ----------- |-----------|----------------------------------------------------------------------------------| ------------------------- |
+|:--- | ------------------ |-------------|-----------|----------------------------------------------------------------------------------| ------------------------- |
 | IN  | patient            | 0..1        | Reference |                                                                                  |                           |
 | IN  | patient.identifier | 0..1        | token     |                                                                                  |                           |
 | IN  | status             | 1..*        | code      | http://hl7.org/fhir/ValueSet/document-reference-status                           | current and/or superseded |
@@ -39,8 +39,8 @@ Parameters
 | IN  | facility           | 0..*        | token     | [http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-healthcarefacilitytypecode-vs](https://docs.ehealth.sundhed.dk/latest-released/ig/ValueSet-dk-ihe-healthcarefacilitytypecode-vs.html) |                           |
 | IN  | event              | 0..*        | token     | [http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs](https://docs.ehealth.sundhed.dk/latest-released/ig/ValueSet-dk-ihe-eventcodelists-vs.html)             |                           |
 | IN  | format             | 0..*        | token     | [http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs](https://docs.ehealth.sundhed.dk/latest-released/ig/ValueSet-dk-ihe-formatcode-vs.html)                 |                           |
-| IN  | consentOverride    | 0..*        | token     |                                                                                  |                           |
-| IN  | reason             | 0..*        | String    |                                                                                  |                           |
+| IN  | consentOverride    | 0..1        | token     |                                                                                  |                           |
+| IN  | reason             | 0..1        | String    |                                                                                  |                           |
 | OUT | return             | 1..1        | Bundle    |                                                                                  |                           |
 
 
