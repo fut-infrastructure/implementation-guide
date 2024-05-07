@@ -27,10 +27,10 @@ __Response__
 ```json
 {
   "resourceType": "PractitionerRole",
-  "id": "206",
+  "id": "224",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-16T09:16:20.224+00:00",
+    "lastUpdated": "2024-04-26T09:26:51.697+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
     ]

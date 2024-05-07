@@ -21,6 +21,7 @@ Parent: ClinicalImpression
 * investigation.extension contains ehealth-clinicalimpression-viewInvestigationItem named viewInvestigationItem 0..*
 * investigation.item only Reference(ehealth-media or ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
 * investigation.item ^type.aggregation = #referenced
+* investigation.code from http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
 * finding.itemCodeableConcept from http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 * finding.itemReference only Reference(Observation or ehealth-condition)
 * prognosisReference only Reference(RiskAssessment)

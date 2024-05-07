@@ -3,9 +3,47 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
+## 3.1.0 (2024-05-14)
+
+### General changes
+
+### Custom operations
+- Added custom operation "retrieve-and-transform-QRD" on DocumentQuery service
+- Added custom operation "retrieve-and-transform-APD" on DocumentQuery service
+- Added custom operation "retrieve-and-transform-PHMR" on DocumentQuery service
+- Operation "retrieve-document" on DocumentQuery service has been extended with parameters `consentOverride` and `reason` to be able to specify if the operation should override the lack of consent from a patient to view their medical documents, and to indicate the reason for the override. 
+
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- DkCorePractitioner set as parent for the ehealth-practitioner profile
+
+### Search parameters
+- Added search parameters `consentOverride` and `reason` on `ehealth-documentreference` (`DocumentReference`) search operation in DocumentQuery service, to be able to specify if the search should override the lack of consent from a patient to view their medical documents, and to indicate the reason for the override. 
+
+## 3.0.0 (2024-01-08)
+
+### General changes
 - Publisher for all resources has been changed to "Den telemedicinske infrastruktur (eHealth Infrastructure)" instead of "Systematic | Trifork"
 
 ### Custom operations
+- Added custom operation "deprecate-document" on DocumentTransformation service
+- Added custom operation "upload-QFDD" on DocumentTransformation service
+- Added custom operation "transform-from-QRD-based-on-questionnaire" on DocumentTransformation service
+- Updated description of "import" operation on PlanDefinition service
+- Updated description of "export" operation on PlanDefinition service
 #### System operations
 #### Instance operations
 ### Code systems
@@ -16,6 +54,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated urn:oid:1.2.208.184.100.1 with CMR, PDC and MADC
 - Updated urn:oid:1.2.208.184.100.10 with codes
 - Added http://ehealth.sundhed.dk/cs/ehealth-questionnaire-elements
+- Added http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type with questionnaire-related code
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/measurement-sharing-approval-policies
@@ -25,7 +64,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-practicesettingcode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-typecode-vs to match DK-IHE_Metadata Value_sets 0.96.5
 - Updated ValueSet-ehealth-questionnaire-item-control to contain code `slider`
+- Added http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-questionnaire-elements
+- Removed 412776001 and 412777005 SNOMED CT codes from http://ehealth.sundhed.dk/vs/careplan-category due to codes being removed from SNOMED CT
 ### ConceptMaps
 - Added http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing The map controls whether the sharingApprovalPolicy-field should be set on the given resource.
 ### Resource/profile changes
@@ -34,6 +75,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added invariant to Questionnaire that only allows one sliderStepValue at a time 
 - Added extention ehealth-resolved-timing to Task
 - Added extention ehealth-external-identifier to Questionnaire.QuestionnaireItem
+- Updated binding for ClinicalImpression.investigation.code to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
+### Search parameters
+- Added search parameter `communicationParticipant` on `ehealth-message` (`Communication`) to be able to query either by CareTeam or Patient/Practitioner
+
 ## 2.10.0 (2023-11-09)
 
 ### General changes

@@ -39,6 +39,9 @@
   path: POST_transform-from-QRD.html
 
 - profile: system
+  path: POST_transform-from-QRD-based-on-questionnaire.html
+
+- profile: system
   path: POST_import-organizations.html
 
 - profile: system
@@ -72,6 +75,9 @@
   path: POST_PlanDefinition_apply.md
 
 # system reporting
+
+- profile: system
+  path: POST_execute-patient-usage-stats.html
 
 - profile: system
   path: POST_execute-questionnaireresponses.html
@@ -157,6 +163,30 @@
 - profile: system
   path: POST_schedule-ssl-orders.html
 
-# setting profile = system, in order to include in general operation examples page
+- profile: system
+  path: POST_Binary_retrieve-document.html
+
 - profile: system
   path: POST_Person.html
+
+- profile: system
+  path: POST_Bundle_retrieve-and-transform-APD.html
+
+- profile: system
+  path: POST_Bundle_retrieve-and-transform-PHMR.html
+
+- profile: system
+  path: POST_Bundle_retrieve-and-transform-QRD.html
+
+- profile: system
+  path: POST_upload-QFDD.html
+
+- profile: system
+  path: POST_DocumentReference_deprecate-document.html
+
+- profile: system
+  path: POST_PlanDefinition_export.html
+
+- profile: system
+  path: POST_PlanDefinition_import.html
+# setting profile = system, in order to include in general operation examples page

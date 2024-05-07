@@ -1,4 +1,4 @@
-`PUT [base]/Organization/275`
+`PUT [base]/Organization/371`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "275",
+  "id": "371",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-16T09:16:52.964+00:00",
+    "lastUpdated": "2024-04-26T09:27:51.518+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -53,20 +53,19 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-10-16T09:16:52+00:00"
+        "start": "2024-04-26T09:27:51+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "8fe90e7a-ea03-45dc-90e8-e915b69fc93b",
+      "value": "de201094-82d9-49cf-87de-8729c366b8ff",
       "period": {
-        "start": "2023-10-16T09:16:52+00:00"
+        "start": "2024-04-26T09:27:51+00:00"
       }
     }
   ],
-  "active": false,
-  "name": "40d743ec-93b6-4921-9661-cc838665b5fd"
+  "name": "138452ec-f1bf-48d5-a8dd-d7e8d8c2d1a3"
 }
 ```
 
@@ -74,10 +73,10 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "275",
+  "id": "371",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-16T09:16:53.090+00:00",
+    "lastUpdated": "2024-04-26T09:27:51.676+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -112,19 +111,18 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-10-16T09:16:52+00:00"
+        "start": "2024-04-26T09:27:51+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "8fe90e7a-ea03-45dc-90e8-e915b69fc93b",
+      "value": "de201094-82d9-49cf-87de-8729c366b8ff",
       "period": {
-        "start": "2023-10-16T09:16:52+00:00"
+        "start": "2024-04-26T09:27:51+00:00"
       }
     }
   ],
-  "active": false,
-  "name": "40d743ec-93b6-4921-9661-cc838665b5fd"
+  "name": "138452ec-f1bf-48d5-a8dd-d7e8d8c2d1a3"
 }
 ```

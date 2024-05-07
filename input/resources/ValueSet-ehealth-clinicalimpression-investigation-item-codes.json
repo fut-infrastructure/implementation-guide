@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-clinicalimpression-investigation-item-codes",
+  "url": "http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes",
+  "version": "1.0.0",
+  "name": "ClinicalImpressionInvestigationItemCodes",
+  "title": "ClinicalImpression Investigation Item Codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2024-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of clinical impression investigation item codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "160237006"
+          }
+        ]
+      }
+    ]
+  }
+}

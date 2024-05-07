@@ -1,0 +1,28 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-transform-from-QRD-based-on-questionnaire",
+  "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-QRD-based-on-questionnaire",
+  "name": "transform-from-QRD-based-on-questionnaire",
+  "title": "Transform from QRD based on FHIR Questionnaire",
+  "status": "active",
+  "kind": "operation",
+  "description": "Transforms a DK-HL7 Questionnaire Response Document (QRD) XML document to a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource. The input bundle must contain the QRD XML document adhering to the DK-HL7 Questionnaire Response Document profile. And a FHIR Questionnaire resource. The returned FHIR Bundle contains FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource.",
+  "affectsState": false,
+  "code": "transform-from-QRD-based-on-questionnaire",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "bundle",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  }, {
+    "name": "bundle",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
+}

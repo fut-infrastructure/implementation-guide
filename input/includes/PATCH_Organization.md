@@ -1,9 +1,9 @@
-`PATCH [base]/Organization/295`
+`PATCH [base]/Organization/391`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjgzZGVkZTItZDc2YS00NTA3LWE3MjQtZTkwMzNjYTFmNDIyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjE5YTY2OGQtZDA5ZS00YWU1LTljNGItODE0OWE0ODBhMjg1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -25,11 +25,11 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "295",
+  "id": "391",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-16T09:17:56.013+00:00",
-    "source": "#716799e3-b80a-95",
+    "lastUpdated": "2024-04-26T09:28:52.318+00:00",
+    "source": "#b140b7ed-7e16-4c",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -64,12 +64,11 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2023-10-16T09:17:53+00:00"
+        "start": "2024-04-26T09:28:49+00:00"
       }
     }
   ],
-  "active": false,
-  "name": "defaultTestFactory-27700e53-2c99-41de-995d-3868e33eddbf",
+  "name": "defaultTestFactory-e52aef2c-114e-4c99-94dd-bf8e1cab4a6d",
   "contact": [
     {
       "name": {
@@ -104,7 +103,7 @@ __Response__
             },
             {
               "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue",
-              "valueString": "1650501c-a91e-452e-a6b6-dd2dd3dabd9a"
+              "valueString": "8f532787-605a-4b54-b4d6-8fab1ae1c858"
             }
           ]
         }

@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2023-10-23T02:42:34.406+00:00",
+  "date": "2024-04-29T02:42:23.634+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.1.5"
+    "version": "2.2.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -65,6 +65,10 @@
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
+        "name": "_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -84,6 +88,18 @@
         "name": "composed-of",
         "type": "reference",
         "documentation": "What resource is being referenced"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the activity definition"
+      }, {
+        "name": "context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the activity definition"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the activity definition"
       }, {
         "name": "date",
         "type": "date",
@@ -403,6 +419,10 @@
         "type": "token",
         "documentation": "Search for resources which have the given security labels"
       }, {
+        "name": "_source",
+        "type": "uri",
+        "documentation": "Search for resources which have the given source value (Resource.meta.source)"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -422,6 +442,18 @@
         "name": "composed-of",
         "type": "reference",
         "documentation": "What resource is being referenced"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the plan definition"
+      }, {
+        "name": "context-quantity",
+        "type": "quantity",
+        "documentation": "A quantity- or range-valued use context assigned to the plan definition"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the plan definition"
       }, {
         "name": "date",
         "type": "date",
@@ -511,6 +543,10 @@
         "type": "token",
         "documentation": "Topics associated with the module"
       }, {
+        "name": "type",
+        "type": "token",
+        "documentation": "The type of artifact the plan (e.g. order-set, eca-rule, protocol)"
+      }, {
         "name": "url",
         "type": "uri",
         "documentation": "The uri that identifies the plan definition"
@@ -525,11 +561,11 @@
       }, {
         "name": "import",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-t-import",
-        "documentation": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Libraries and Organizations are used to find the corresponding resources on the target system."
+        "documentation": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Imports QFFD DocumentReference into Document-Transformation service.Libraries and Organizations are used to find the corresponding resources on the target system."
       }, {
         "name": "export",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export",
-        "documentation": "Export a PlanDefinition.\n### Export Contents\nThe export contains the PlanDefinition including referenced resources:- PlanDefinitions\n- ActivityDefinitions\n- Questionnaires\n- Libraries\n- Organizations\n\nEach resource is returned in a separate JSon file.\n### Parameters\n- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.\nAll returned objects are Fhir resources. See the implementation guide for details"
+        "documentation": "Export a PlanDefinition.\n### Export Contents\nThe export contains the PlanDefinition including referenced resources:- PlanDefinitions\n- ActivityDefinitions\n- Questionnaires\n- Libraries\n- Organizations\n- DocumentReference + QFDD\n\nEach resource is returned in a separate JSon file.\n### Parameters\n- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.\nAll returned objects are Fhir resources. See the implementation guide for details"
       }, {
         "name": "create-clone",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
@@ -546,6 +582,10 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "migrate-list",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate-list",
+      "documentation": "Data migration"
+    }, {
       "name": "migrate",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"

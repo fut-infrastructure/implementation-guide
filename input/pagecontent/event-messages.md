@@ -1,4 +1,4 @@
-### Event messages 
+### Event messages
 
 This document describes the types of event messages that are published to destinations (topic/queue) on the message broker for the eHealth Infrastructure. Each message consists of a JSON body and additionally some message properties.
 

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDYyZWJlZTEtNjYzYy00NWIyLTk2NmYtMzRmZWJlYzQ4ODBmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIkNvbW11bmljYXRpb24uY3JlYXRlIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnNlYXJjaCIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzBjNzY5OWEtNTk2Yi00ODc4LWEzYjAtNDIxNGZiODczMzJhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5zZWFyY2giLCJDb21tdW5pY2F0aW9uLmNyZWF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiTWVkaWEucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,7 +22,7 @@ __Body__:
         "id": "133",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-10-16T08:43:16.568+00:00",
+          "lastUpdated": "2024-04-23T12:54:23.462+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1673.local/fhir/EpisodeOfCare/80376"
+              "reference": "https://careplan.cit-measurement-1730.local/fhir/EpisodeOfCare/11850"
             }
           },
           {
@@ -58,7 +58,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-measurement-1673.local/fhir/Patient/24285"
+          "reference": "https://patient.cit-measurement-1730.local/fhir/Patient/51247"
         },
         "topic": {
           "coding": [

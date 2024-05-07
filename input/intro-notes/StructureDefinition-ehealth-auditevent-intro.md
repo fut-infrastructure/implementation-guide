@@ -65,6 +65,7 @@ Additional requirements to the AuditEvent sent to ActiveMQ, besides the one list
 - agent (who)
   - Must have exactly 1 requestor that has a "who.identifier.value" set
   - When an organization is supplied in the JWT context, it must be supplied as an extension on the requestor with url "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsibleOrganization".
+  - purposeOfUse (optional) may be supplied to indicate the agent’s underlying purpose
 - source (where)
   - Should have an identifier with
     - system: http://ehealth.sundhed.dk
@@ -129,6 +130,19 @@ An example is displayed below.
         }
       },
       "requestor": true
+    },
+    {
+      "purposeOfUse": [
+        {
+          "coding": [
+            {
+              "system": "agent1 system 1",
+              "code": "agent1 code 1"
+            }
+          ],
+          "text": "a1-c1-text"
+        }
+      ]
     }
   ],
   "source": {
@@ -207,6 +221,7 @@ A central service handles the AuditEvent entities, and writes them to Splunk to 
 | bundleId | entity.what.identifier.value (where role.code=24) |
 | source | source.identifier.value |
 | purposeOfEvent | purposeOfEvent |
+| agents | agent with purposeOfUse assigned |
 
 An example:
 
@@ -228,6 +243,16 @@ An example:
    ],
    "purposeOfEvent": [
      "http://ehealth.sundhed.dk/fhir/PurposeOfUse|INTERNAL_AUDIT_ONLY"
+   ],
+   "agents": [
+     {
+       "purposeOfUse": [
+         "agent1 system 1|agent1 code 1"
+       ],
+       "purposeOfUseText": [
+         "a1-c1-text"
+       ]
+     }
    ]
    "type": "audit"
 }

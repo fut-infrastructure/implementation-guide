@@ -1,0 +1,28 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-upload-QFDD",
+  "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-upload-QFDD",
+  "name": "upload-QFDD",
+  "title": "Upload QFDD",
+  "status": "active",
+  "kind": "operation",
+  "description": "Uploads an DK-HL7 Questionnaire Form Definition Document (QFDD). The input FHIR DocumentReference must be of type QFDD (74468-0) and the status set to current. Include an attachment which contains the base64 encoded QFDD XML document with contentType application/xml. The QFDD XML document must contain a unique id which is used as the the masterIdentifier in the DocumentReference. The returned FHIR DocumentReference contains a masterIdentifier, a type and the description all pulled from the attachment. ",
+  "affectsState": false,
+  "code": "upload-QFDD",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "documentReference",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "DocumentReference"
+  }, {
+    "name": "documentReference",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "DocumentReference"
+  } ]
+}

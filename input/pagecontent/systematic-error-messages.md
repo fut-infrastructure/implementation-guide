@@ -8,6 +8,8 @@
 
 - `GENERAL_CANONICAL_TARGET_NOT_ALLOWED_ERROR`: Unsupported target in canonical: %s
 
+- `GENERAL_NAMING_SYSTEM_NOT_FOUND`: NamingSystem with identifier %s is not found.
+
 #### ehealth-actionguidanceview
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_CONTENT_SIZE`: Size of content is greater than the max allowed size. Content size: %s, max size: %s
@@ -22,11 +24,21 @@
 
 - `ACTIVITYDEFINITION_UPDATE_TO_NOT_ALLOWED_STATE`: Update is not allowed for ActivityDefinition with %s status to different than %s status.
 
+- `ACTIVITYDEFINITION_SHARINGAPPROVALPOLICY_NOT_ALLOWED`: Resource %s does not allow SharingApprovalPolicy to be set with code: %s | %s.
+
+- `ACTIVITYDEFINITION_SHARINGAPPROVALPOLICY_NOT_SET`: Resource %s with code: %s | %s must have SharingApprovalPolicy set.
+
+#### ehealth-appointment
+
+- `APPOINTMENT_LISTENER_APPOINTMENT_MISSING_CAREPLAN`: Appointment has no CarePlan
+
 #### ehealth-assembler
 
-- `ASSEMBLER_QRD_COMPOSITION_MISSING_DOCUMENT_REFERENCE`: eHealthComposition related to questionnaire is missing eHealthDocumentReference
+- `ASSEMBLER_QRD_FOUND_NON_OR_SEVERAL_MATCHES_FOR_QFDD_DOCUMENT_REFERENCE`: Found non or more than 1 match for QFDD DocumentReference. Identifier: system: %s, value: %s.
 
-- `ASSEMBLER_QRD_INVALID_QUESTIONNAIRE_RELATED_COMPOSITION`: There must be just 1 eHealthComposition related to eHealthQuestionnaire
+- `ASSEMBLER_QRD_NOT_ABLE_TO_DETERMINE_QFDD_REFERENCE`: Not able to determine QFDD reference from questionnaire.identifier. Non or more than 1 identifier system starting with 'urn:oid'. Questionnaire: %s.
+
+- `ASSEMBLER_QRD_QR_SOURCE_IS_UNSUPPORTED`: QuestionnaireResponse with id: '%s' has source '%s', which is not supported - Skipping publication
 
 - `ASSEMBLER_APD_MISSING_SUPPORTING_INFORMATION`: Appointment must have supportingInformation
 
@@ -37,6 +49,10 @@
 - `ASSEMBLER_APD_MISSING_PERFORMER`: Appointment must have performer
 
 - `ASSEMBLER_APD_MISSING_RESPONSIBLE_PRACTITIONER`: Appointment must have responsible Practitioner
+
+- `ASSEMBLER_APD_MISSING_PATIENT_CPR`: Patient has no CPR number
+
+- `ASSEMBLER_PHMR_UNKNOWN_AUTHOR_TYPE`: Unknown author type:
 
 #### ehealth-careplan
 
@@ -92,11 +108,19 @@
 
 #### ehealth-document
 
+- `DOCUMENT_NOT_OF_TYPE_QFDD`: The document is expected to be of type QFDD
+
 - `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be a SOR organization for query
 
 - `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
 
 - `DOCUMENT_QUERY_DOCUMENT_URL_NOT_CORRECT_FORMAT`: Url doesn't have expected format: <DocumentEntry.uniqueId>_<DocumentEntry.repositoryUniqueId>_<DocumentEntry.homeCommunityId>
+
+- `DOCUMENT_QUERY_DOCUMENT_NOT_VALID_TYPE`: Requested document type is not valid. The requested type was %s, but the operation only supports %s
+
+- `DOCUMENT_QUERY_DOCUMENT_NOT_VALID_XML`: Retrieved document is not valid XML
+
+- `DOCUMENT_QUERY_REASON_NOT_PRESENT_WHEN_CONSENT_OVERRIDDEN`: Reason is mandatory when the consent is overridden
 
 #### ehealth-documentreference
 
@@ -284,6 +308,14 @@
 - `QUESTIONNAIRE_IMAGE_SIZE_VALIDATION_MESSAGE`:
   %s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
 
+- `QUESTIONNAIRE_QFDD_DOES_NOT_EXIST_IN_DOCUMENT_TRANSFORMATION`: The QFDD with the identifier %s does not exist in document transformation
+
+- `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_NOT_FOUND`: Code %s for CodeSystem %s not found
+
+- `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_SYSTEM_NOT_FOUND`: Code system not found for url: %s
+
+- `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_SYSTEM_FOUND_MORE_THAN_ONE`: Found more than one code system for url: %s
+
 #### ehealth-reporting
 
 - `REPORTING_MISSING_INPUT_PARAMETER`: Parameter "%s" is mandatory for report "%s".
@@ -350,35 +382,127 @@
 
 - `TASK_AUTOMATED_PROCESSING_CAREPLAN_NOT_FOUND`: CarePlan is not found when searching by activity: %s.
 
+- `TASK_AUTOMATED_PROCESSING_RULE_OUTPUT_NOT_FOUND`: RuleOutput not found when searching through Task Automated Processing Resource
+
 - `TASK_FOR_NOT_SET`: When episode of care is set, the field 'for' must reference the corresponding patient
 
 #### ehealth-transformation
 
+- `TRANSFORMATION_DEPRECATE_DOCUMENT_CPR_DIDNT_MATCH`: Found document didn't match with CPR
+
+- `TRANSFORMATION_DEPRECATE_DOCUMENT_MORE_THAN_ONE_FOUND`: More than 1 DocumentReference with same master identifier found. The master identifier should be unique.
+
+- `TRANSFORMATION_DEPRECATE_DOCUMENT_NO_DOCUMENT_FOUND`: No matching document found
+
 - `TRANSFORMATION_QFDD_XML_MISSING`: Invalid input document reference, it must contain content with data of QFDD xml
 
-- `TRANSFORMATION_QRD_INVALID_INPUT_PARAMETERS`: Input bundle should contain just one EHealthComposition, EHealthQuestionnaireResponse and EHealthQuestionnaire.
+- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_MISSING_STEPVALUE`: Questionnaire item with linkId '%s' has itemControl: 'slider' but has no step value extension.
+
+- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider' but maxOccursValue is not 1. Was: %s.
+
+- `TRANSFORMATION_QRD_INVALID_INPUT_PARAMETERS`: Input bundle should contain just one EHealthComposition, EHealthQuestionnaireResponse, EHealthQuestionnaire and DocumentReference(QFDD).
+
+- `TRANSFORMATION_FROM_QRD_INVALID_INPUT_PARAMETERS`: Input bundle should contain just one EHealthQuestionnaire and DocumentReference(QRD).
+
+- `TRANSFORMATION_FROM_QRD_DUPLICATED_EXTERNAL_IDENTIFIER`: Cannot transform from QRD to QuestionnaireResponse. Duplicated external identifiers: %s.
+
+- `TRANSFORMATION_FROM_QRD_EXTERNAL_DOCUMENT_NOT_MATCHING_QFDD_IDENTIFIER_ON_QUESTIONNAIRE`: External Document reference in QRD does not match QFDD identifier on Questionnaire. External Document reference: '%s'. QFDD identifier on Questionnaire: '%s'.
+
+- `TRANSFORMATION_FROM_QRD_NO_EXTERNAL_DOCUMENT_FOUND_IN_QRD`: No External Document reference found in QRD.
+
+- `TRANSFORMATION_FROM_QRD_NO_QFDD_IDENTIFIER_ON_QUESTIONNAIRE`: Questionnaire does not have a QFDD identifier. No identifier with system starting with 'urn:oid'.
+
+- `TRANSFORMATION_FROM_QRD_COULD_NOT_FIND_PARENT_FOR_LINK_ID`: Could not find parent for item with linkId: %s.
+
+- `TRANSFORMATION_FROM_QRD_QRD_HAS_NO_SECTIONS`: QRD has no sections with questions.
+
+- `TRANSFORMATION_FROM_QRD_QRD_QUESTION_TYPE_DOES_NOT_MATCH_QUESTIONNAIRE_ITEM_TYPE`: QRD Question type '%s' does not match questionnaire item type '%s'. LinkId: %s.
 
 - `TRANSFORMATION_QRD_UNSUPPORTED_QUESTION_TYPE`: Unsupported Questionnaire type: %s.
 
 - `TRANSFORMATION_QRD_INVALID_NUMBER_OF_ANSWERS`: QuestionnaireResponse item should contain from %s to %s answers.
 
-- `TRANSFORMATION_QRD_INVALID_NUMBER_OF_EXTENSIONS`: Questionnaire item has invalid extensions.
+- `TRANSFORMATION_QRD_SLIDER_MISMATCH_BETWEEN_TYPE_AND_SLIDER_STEP`: Questionnaire item with linkId '%s' has itemControl: 'slider' and item.type: 'Integer' but has decimal step value: %s.
+
+- `TRANSFORMATION_QRD_INVALID_SLIDER_EXTENSIONS`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain at least the following extensions: %s.
+
+- `TRANSFORMATION_QRD_NO_SLIDER_STEP_EXTENSION`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain one of the following extensions: %s.
+
+- `TRANSFORMATION_QRD_NO_SLIDER_ITEM_CONTROL_EXTENSION`: Questionnaire item with linkId '%s' has no itemControl extension with code: 'slider'.
 
 - `TRANSFORMATION_QRD_MISSING_IDENTIFIER`: Identifier on composition is mandatory
 
 - `TRANSFORMATION_QRD_XML_MISSING`: Invalid input document reference, it must contain content with data of QRD xml
 
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to have exactly one item of display. Found %s items.
+
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION_FOUND_OTHER_TYPE`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to contain exactly one item of type 'display'. Found item of type: '%s'.
+
+- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_IN_ROOT_GROUP_DOES_NOT_MATCH_NUMBER_OF_ORGANIZERS`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain the same number of items with type 'group'. Found: %s.
+
+- `TRANSFORMATION_QRD_EXPECTING_ONLY_SUB_GROUPS_IN_ROOT_GROUP`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain only items of type: 'group'.
+
+- `TRANSFORMATION_QRD_EXPECTING_ROOT_ITEM_TO_BE_OF_TYPE_GROUP`: Root item on questionnaire is not of type 'group'. Type was: %s
+
+- `TRANSFORMATION_QRD_EXPECTING_ITEM_TO_BE_OF_TYPE_GROUP`: Item is not of type group. Type: %s
+
+- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_ON_ROOT_LEVEL_DOES_NOT_MATCH_NUMBER_OF_SECTIONS`: The number of root items on questionnaire does not match the number of QFDD sections. Questionnaire: %s.
+
+- `TRANSFORMATION_QRD_FOUND_MORE_THAN_ONE_MATCH_FOR_LINKID_IN_QUESTIONNAIRE_RESPONSE`: Found more than 1 match for LinkId in QuestionnaireResponse. LinkId: %s.
+
+- `TRANSFORMATION_QRD_NO_MATCH_FOR_ASSOCIATED_TEXT_QUESTION_IN_QUESTIONNAIRE_RESPONSE`: Found no match for associatedTextQuestion in QuestionnaireResponse. Found Questionnaire item with linkId: %s.
+
+- `TRANSFORMATION_QRD_EXPECTING_QUESTIONNAIRE_TIEM_TO_HAVE_EXTERNAL_IDENTIFIER`: Expected questionnaireItem to have externalIdentifier: %s. But was: %s
+
+- `TRANSFORMATION_QRD_FOUND_NO_QUESTIONNAIRE_RESPONSE_FOR_ASSOCIATED_TEST_QUESTION`: Found no QuestionnaireResponse for associatedTextQuestion. Found Questionnaire item with linkId: %s.
+
+- `TRANSFORMATION_QRD_PRECONDITION_DO_NOT_MATCH_THE_QUESTION_FOR_ASSOCIATED_TEXT_QUESTION`: The precondition criterion code does not match the expected question code. Expected: %s. But was: %s
+
+- `TRANSFORMATION_QRD_MULTIPLE_CHOICE_ANSWER_EXPECTING_CODING_TYPE_FOR_VALUE`: Expecting answer value to be of type Coding. QuestionResponseItem with linkId: %s.
+
+- `TRANSFORMATION_QRD_PRECONDITION_GROUP_GROUP_TYPE_UNKNOWN`: Unknown GroupType: %s
+
+- `TRANSFORMATION_QRD_PRECONDITION_MORE_THAN_ONE`: Transformation do not support more than one precondition for associatedTextQuestion. Found %s. AssociatedTextQuestion: %s
+
+- `TRANSFORMATION_QRD_EXPECT_IMAGE_IN_QUESTIONNAIRE_ITEM`: Expecting QuestionnaireItem to have an image as the corresponding QFDD question has an image. Question id: %s
+
+- `TRANSFORMATION_QRD_NOT_EXPECTING_IMAGE_IN_QUESTIONNAIRE_ITEM`: Not expecting QuestionnaireItem to have an image as the corresponding QFDD question do not have an image. Question id: %s
+
+- `TRANSFORMATION_QRD_UNKNOWN_QRD_RESPONSE_TYPE`: Unknown QRD response type. QRD Question id: %s
+
+- `TRANSFORMATION_QRD_ASSOCIATED_TEXT_QUESTION_ITEM_NOT_OF_TYPE_TEXT`: AssociatedTextQuestion item with id: '%s' is not of type 'text'. Type was: %s
+
+- `TRANSFORMATION_QRD_QFDD_QUESTION_DOES_NOT_SUPPORT_ASSOCIATED_TEXT_QUESTION`: QFDDQuestion with id: '%s' does not support associatedText. Class was: %s
+
 - `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
+
+- `TRANSFORMATION_PHMR_NARRATIVE_ERROR`: Can't generate narrative for: %s
+
+- `TRANSFORMATION_HEADER_MISSING_CPR`: CPR is mandatory for patient but not present in fhir bundle
 
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_CODING`: Observation coding system must be urn:oid:1.2.208.176.2.1
 
+- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_COMMENT_AUTHOR_REFERENCE`: The author of a measurement comment is a reference not provided in the bundle.
+
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_CODING`: Observation.observationRanges[x].type.coding.system should be http://www.example.com/medcom/message-codes
+
+- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES`: Observation ranges should not have both High and Low set when transforming to PHRM, but High is: %s, and Low is: %s
+
+- `TRANSFORMATION_PHMR_INVALID_NUMBER_OF_DECIMALS`: Value should have no more than 7 decimals, but is: %s
 
 - `TRANSFORMATION_PHMR_OBSERVATION_QUANTITY_MISSING`: Value should be Quantity type and not null
 
 - `TRANSFORMATION_PHMR_XML_MISSING`: Invalid input document reference, it must contain content with data of PHMR xml
 
 - `TRANSFORMATION_PHMR_ID_OID_NOT_FOUND`: NamingSystem or CodeSystem with url %s is not found.
+
+- `TRANSFORMATION_PHMR_MISSING_MEASUREMENT_IDENTIFIER`: No identifier found for measurement
+
+- `TRANSFORMATION_PHMR_DOCUMENT_TIME_INTERVAL_MISSING`: Document is missing serviceStartTime and serviceStopTime.
+
+- `TRANSFORMATION_PHMR_DOCUMENT_INVALID_EFFECTIVE`: Invalid Observation.effective, expecting DateTime, Period or Instant
+
+- `TRANSFORMATION_PHMR_MEASUREMENT_INVALID_METHOD_CODES`: Method codes for performerType and provisionMethod for observation with id '%s' could not be established.
 
 - `TRANSFORMATION_HEADER_MISSING_CONFIDENTIALITY_CODE`: Composition.confidentiality is mandatory
 
@@ -388,11 +512,31 @@
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION`: Composition expected for transformation is not found
 
+- `TRANSFORMATION_HEADER_MISSING_ATTESTER`: Composition.attester.party is mandatory for transformation
+
 - `TRANSFORMATION_HEADER_WRONG_TYPE_COMPOSITION_AUTHOR`: Composition.author should either be a Patient or Practitioner
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION_AUTHOR_ORGANIZATION`: Composition.authorOrganization is mandatory for transformation
 
+- `TRANSFORMATION_HEADER_AUTHOR_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.authorOrganization must contain SOR identifier: %s
+
+- `TRANSFORMATION_HEADER_ATTESTER_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.attester.party must contain SOR identifier: %s
+
+- `TRANSFORMATION_HEADER_CUSTODIAN_MUST_CONTAIN_SOR_ID`: Custodian organization must contain SOR identifier: %s
+
+- `TRANSFORMATION_HEADER_COMPOSITION_HAS_NO_TIMEZONE_OR_SECONDS`: Composition has no timezone or seconds set: %s
+
+- `TRANSFORMATION_XDS_PROPERTY_MISSING_EXCEPTION`: '%s' is missing which is required for document sharing. DocumentReference id: '%s'.
+
+- `TRANSFORMATION_XDS_PROPERTY_CODE_INVALID_EXCEPTION`: '%s' is required for document sharing but the specified coding is not valid for the valueSet '%s': system=%s, code=%s, display=%s. DocumentReference id: '%s'
+
 - `TRANSFORMATION_APD_XML_MISSING`: Invalid input document reference, it must contain content with data of APD xml
+
+#### ehealth-upload
+
+- `UPLOAD_QFDD_MASTERIDENTIFIER_IS_ALREADY_IN_USE`: The masterIdentifier on the DocumentReference is not unique
+
+- `UPLOAD_QFDD_THE_ID_OF_THE_DOCUMENT_IS_NULL`: Missing Id in the QFDD.
 
 #### ehealth-versioning
 
@@ -405,3 +549,4 @@
 - `VERSIONING_REFERENCE_NOT_RELEVANT_FOR_RESOURCE`: Versioning validation error: References included in deep_clone_references must be present in resource to clone, %s: %s.
 
 - `VERSIONING_REFERENCE_MISSING_IN_TREE_PATH`: Versioning validation error: The following resources could not be cloned since their parent resource, %s, is not present in deep_clone_refernces: %s.
+

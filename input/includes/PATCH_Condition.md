@@ -1,9 +1,9 @@
-`PATCH [base]/Condition/2552`
+`PATCH [base]/Condition/2603`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI2MjYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvODI3NDkiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJDb25kaXRpb24ucGF0Y2giLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1jYXJlcGxhbi0yNjI2LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS8yNTUxIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtY2FyZXBsYW4tMjYyNi5sb2NhbC9maGlyL1BhdGllbnQvMjU4OTkiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI3NDAubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNTc0NSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJjb250ZXh0Ijp7ImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTI3NDAubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzI2MDIiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0yNzQwLmxvY2FsL2ZoaXIvUGF0aWVudC83NDI2MiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -33,11 +33,11 @@ __Response__
 ```json
 {
   "resourceType": "Condition",
-  "id": "2552",
+  "id": "2603",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-18T07:40:45.127+00:00",
-    "source": "#a33ac4a6-77ee-9e",
+    "lastUpdated": "2024-04-05T09:07:42.382+00:00",
+    "source": "#7236a41a-0e64-48",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
     ]
@@ -46,7 +46,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2626.local/fhir/EpisodeOfCare/2551"
+        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2602"
       }
     }
   ],
@@ -76,7 +76,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/25899"
+    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/74262"
   }
 }
 ```

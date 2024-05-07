@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDk4MWQyYjctNWIzZC00ZDA3LTgwNDYtZGFlNjYxNDhmYjY3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTA1Mi5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi80MzEyNyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzMwZjgxM2YtNjBiMS00ZGQ3LWI5OGEtZGMxNWZhZGUwODQyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wcmFjdGl0aW9uZXItZ2RwciIsInJlcG9ydC1ub24tYW5vbnltaXplZCIsIkJpbmFyeS5yZWFkIl19LCJjb250ZXh0Ijp7Im9yZ2FuaXphdGlvbl9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1yZXBvcnRpbmctMTExMy5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi8xMTE5NSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1052.local/fhir/Organization/43127"
+        "reference": "https://organization.cit-reporting-1113.local/fhir/Organization/11195"
       }
     },
     {
       "name": "practitioner",
       "valueReference": {
-        "reference": "https://patient.cit-reporting-1052.local/fhir/Patient/52649"
+        "reference": "https://patient.cit-reporting-1113.local/fhir/Patient/91732"
       }
     }
   ]
@@ -42,7 +42,7 @@ __Response__
   "id": "26",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-20T10:54:17.390+00:00",
+    "lastUpdated": "2024-03-19T08:05:37.223+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -50,7 +50,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "4981d2b7-5b3d-4d07-8046-dae66148fb67"
+      "value": "330f813f-60b1-4dd7-b98a-dc15fade0842"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

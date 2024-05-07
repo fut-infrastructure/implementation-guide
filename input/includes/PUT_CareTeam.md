@@ -1,9 +1,9 @@
-`PUT [base]/CareTeam/184`
+`PUT [base]/CareTeam/202`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWZhZDU4ZDctZmQwYy00YTQ1LWFhZmMtNGYzZWY3ZjYyYjA1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGE5Y2UzNjMtZmQ5Ni00MTU2LWEzNmQtZDExMGMyNTc3MzgwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
@@ -15,10 +15,10 @@ __Body__:
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "184",
+  "id": "202",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-10-16T09:16:03.120+00:00",
+    "lastUpdated": "2024-04-26T09:26:36.554+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -26,11 +26,11 @@ __Body__:
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:6a573a49-40f4-42c4-9e3a-60419f25b70c"
+      "value": "urn:uuid:6ceb8a5a-397d-4c81-83e4-180b1cd77d69"
     }
   ],
   "status": "active",
-  "name": "af080015-6c0e-4d5a-a2a1-ff16227d95d6",
+  "name": "c5f0125d-99b4-467f-aded-355cfc8aea08",
   "reasonCode": [
     {
       "coding": [
@@ -48,10 +48,10 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "184",
+  "id": "202",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-16T09:16:03.257+00:00",
+    "lastUpdated": "2024-04-26T09:26:36.744+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -59,11 +59,11 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:6a573a49-40f4-42c4-9e3a-60419f25b70c"
+      "value": "urn:uuid:6ceb8a5a-397d-4c81-83e4-180b1cd77d69"
     }
   ],
   "status": "active",
-  "name": "af080015-6c0e-4d5a-a2a1-ff16227d95d6",
+  "name": "c5f0125d-99b4-467f-aded-355cfc8aea08",
   "reasonCode": [
     {
       "coding": [

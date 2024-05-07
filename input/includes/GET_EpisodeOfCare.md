@@ -1,4 +1,4 @@
-`GET [base]/EpisodeOfCare/1734`
+`GET [base]/EpisodeOfCare/1758`
 
 __Header__
 ```
@@ -15,10 +15,10 @@ __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "1734",
+  "id": "1758",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2023-10-18T07:34:13.172+00:00",
+    "lastUpdated": "2024-04-05T09:00:36.274+00:00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -27,7 +27,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-2626.local/fhir/Organization/98555"
+        "reference": "https://organization.cit-careplan-2740.local/fhir/Organization/16525"
       }
     }
   ],
@@ -36,23 +36,23 @@ __Response__
     {
       "status": "active",
       "period": {
-        "start": "2023-10-18T07:34:11+00:00"
+        "start": "2024-04-05T09:00:34+00:00"
       }
     }
   ],
   "diagnosis": [
     {
       "condition": {
-        "reference": "https://careplan.cit-careplan-2626.local/fhir/Condition/1733"
+        "reference": "https://careplan.cit-careplan-2740.local/fhir/Condition/1757"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/131"
+    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/13084"
   },
   "managingOrganization": {
-    "reference": "https://organization.cit-careplan-2626.local/fhir/Organization/98555"
+    "reference": "https://organization.cit-careplan-2740.local/fhir/Organization/16525"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",

@@ -1,4 +1,4 @@
-`GET [base]/PractitionerRole?practitioner=https%3A%2F%2Forganization.cit-organization-1125.local%2Ffhir%2FPractitioner%2F208%2F_history%2F1&organization=https%3A%2F%2Forganization.cit-organization-1125.local%2Ffhir%2FOrganization%2F209%2F_history%2F1`
+`GET [base]/PractitionerRole?practitioner=https%3A%2F%2Forganization.cit-organization-1181.local%2Ffhir%2FPractitioner%2F226%2F_history%2F1&organization=https%3A%2F%2Forganization.cit-organization-1181.local%2Ffhir%2FOrganization%2F227%2F_history%2F1`
 
 __Header__
 ```
@@ -15,38 +15,38 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "78b91070-c937-4bd8-9c5d-2b4714412a71",
+  "id": "81830190-ddf2-4be7-9023-fdbca9667e54",
   "meta": {
-    "lastUpdated": "2023-10-16T09:16:21.368+00:00"
+    "lastUpdated": "2024-04-26T09:26:52.654+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1125.local/fhir/PractitionerRole?_format=json&_pretty=true&organization=https%3A%2F%2Forganization.cit-organization-1125.local%2Ffhir%2FOrganization%2F209%2F_history%2F1&practitioner=https%3A%2F%2Forganization.cit-organization-1125.local%2Ffhir%2FPractitioner%2F208%2F_history%2F1"
+      "url": "https://organization.cit-organization-1181.local/fhir/PractitionerRole?_format=json&_pretty=true&organization=https%3A%2F%2Forganization.cit-organization-1181.local%2Ffhir%2FOrganization%2F227%2F_history%2F1&practitioner=https%3A%2F%2Forganization.cit-organization-1181.local%2Ffhir%2FPractitioner%2F226%2F_history%2F1"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1125.local/fhir/PractitionerRole/210",
+      "fullUrl": "https://organization.cit-organization-1181.local/fhir/PractitionerRole/228",
       "resource": {
         "resourceType": "PractitionerRole",
-        "id": "210",
+        "id": "228",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-10-16T09:16:21.270+00:00",
-          "source": "#7bb5d153-ad0c-99",
+          "lastUpdated": "2024-04-26T09:26:52.542+00:00",
+          "source": "#dc24a374-4bf8-40",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitionerrole"
           ]
         },
         "active": true,
         "practitioner": {
-          "reference": "https://organization.cit-organization-1125.local/fhir/Practitioner/208"
+          "reference": "https://organization.cit-organization-1181.local/fhir/Practitioner/226"
         },
         "organization": {
-          "reference": "https://organization.cit-organization-1125.local/fhir/Organization/209"
+          "reference": "https://organization.cit-organization-1181.local/fhir/Organization/227"
         }
       },
       "search": {

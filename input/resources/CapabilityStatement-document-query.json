@@ -3,12 +3,12 @@
   "id": "document-query",
   "name": "document-query",
   "status": "active",
-  "date": "2023-10-23T02:12:34.549+00:00",
+  "date": "2024-04-29T02:12:33.807+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-query",
-    "version": "1.8.7"
+    "version": "1.8.10"
   },
   "implementation": {
     "description": "eHealth document-query service",
@@ -26,7 +26,25 @@
       "operation": [ {
         "name": "retrieve-document",
         "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-t-retrieve-document",
-        "documentation": "Retrieve document"
+        "documentation": "Input (url) is the element DocumentReference.content.attachment.url for metadata about the QRD/APD/PHMR document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document. Input (consentOverride) signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed  by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.Input (reason) is mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents.The value is logged in the Infrastructure."
+      } ]
+    }, {
+      "type": "Bundle",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "DocumentReference:patient" ],
+      "operation": [ {
+        "name": "retrieve-and-transform-QRD",
+        "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Bundle-t-retrieve-and-transform-QRD",
+        "documentation": "Retrieves a DK-HL7 Questionnaire Response Document (QRD) XML document from national document sharing infrastructure and transforms the QRD XML document to a FHIR QuestionnaireResponse (ehealth-questionnaireresponse profile) resource.Input (url) is the element DocumentReference.content.attachment.url for metadata about the QRD document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document. Input (bundle) must contain a Questionnaire FHIR resource corresponding to the questionnaire definition (QFDD) that the QRD references and is a response to.Input (consentOverride) signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.Input (reason) is mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure.The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR QuestionnaireResponse (ehealth-documentreference profile) resource, if the Questionnaire FHIR resource was provided as an input, and if the transformation was successful.If the Questionnaire FHIR resource was not provided as an input, or if the transformation was not successful, the returned FHIR Bundle contains the QRD XML document that was retrieved from the national document sharing infrastructure."
+      }, {
+        "name": "retrieve-and-transform-PHMR",
+        "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Bundle-t-retrieve-and-transform-PHMR",
+        "documentation": "Retrieves a DK-HL7 Personal Health Monitoring Report (PHMR) XML document from national document sharing infrastructure and transforms the PHMR XML document to FHIR Observation (ehealth-observation profile) resources.Input (url) is the element DocumentReference.content.attachment.url for metadata about the PHMR document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document. Input (consentOverride) signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.Input (reason) is mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure.The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing one or more FHIR Observation (ehealth-observation profile) resources and referenced resources such as FHIR Organization."
+      }, {
+        "name": "retrieve-and-transform-APD",
+        "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/Bundle-t-retrieve-and-transform-APD",
+        "documentation": "Retrieves a DK-HL7 Appointment (APD) XML document from national document sharing infrastructure and transforms the APD XML document to a FHIR Appointment (ehealth-appointment profile) resource.Input (url) is the element DocumentReference.content.attachment.url for metadata about the APD document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document. Input (consentOverride) signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.Input (reason) is mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure.The returned FHIR Bundle contains a FHIR Appointment (ehealth-appointment profile) resource."
       } ]
     }, {
       "type": "DocumentReference",
@@ -44,6 +62,10 @@
         "name": "category",
         "type": "token",
         "documentation": "Categorization of document"
+      }, {
+        "name": "consentOverride",
+        "type": "token",
+        "documentation": "ConsentOverride signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring."
       }, {
         "name": "date",
         "type": "date",
@@ -72,6 +94,10 @@
         "name": "period",
         "type": "date",
         "documentation": "Time of service that is being documented"
+      }, {
+        "name": "reason",
+        "type": "string",
+        "documentation": "Reason is mandatory when parameter consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure."
       }, {
         "name": "setting",
         "type": "token",

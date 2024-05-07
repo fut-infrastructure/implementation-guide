@@ -6,7 +6,7 @@
   "title": "Retrieve document",
   "status": "active",
   "kind": "operation",
-  "description": "Retrieve document",
+  "description": "Input (url) is the element DocumentReference.content.attachment.url for metadata about the QRD/APD/PHMR document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure. The url, which shall be used as-is in this operation, is an encoding of the XDS DocumentEntry.uniqueId, XDS DocumentEntry.repositoryUniqueId and XDS DocumentEntry.homeCommunityId metadata attributes needed to retrieve the document. Input (consentOverride) signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed  by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring.Input (reason) is mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents.The value is logged in the Infrastructure.",
   "affectsState": false,
   "code": "retrieve-document",
   "resource": [ "Binary" ],
@@ -20,6 +20,18 @@
     "max": "1",
     "type": "string",
     "searchType": "uri"
+  }, {
+    "name": "consentOverride",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "boolean"
+  }, {
+    "name": "reason",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string"
   }, {
     "name": "return",
     "use": "out",

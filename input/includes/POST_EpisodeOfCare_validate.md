@@ -1,9 +1,9 @@
-`POST [base]/EpisodeOfCare/1827/$validate`
+`POST [base]/EpisodeOfCare/1866/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI2MjYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvODMyNjYiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI3NDAubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMzYyMDAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "EpisodeOfCare",
-        "id": "1827",
+        "id": "1866",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-10-18T07:35:06.184+00:00",
+          "lastUpdated": "2024-04-05T09:01:48.440+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
           ]
@@ -31,7 +31,7 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
             "valueReference": {
-              "reference": "https://organization.cit-careplan-2626.local/fhir/Organization/26862"
+              "reference": "https://organization.cit-careplan-2740.local/fhir/Organization/73774"
             }
           }
         ],
@@ -40,23 +40,23 @@ __Body__:
           {
             "status": "active",
             "period": {
-              "start": "2023-10-18T07:35:06+00:00"
+              "start": "2024-04-05T09:01:48+00:00"
             }
           }
         ],
         "diagnosis": [
           {
             "condition": {
-              "reference": "https://careplan.cit-careplan-2626.local/fhir/Condition/1826"
+              "reference": "https://careplan.cit-careplan-2740.local/fhir/Condition/1865"
             },
             "rank": 1
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-2626.local/fhir/Patient/78035"
+          "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/8849"
         },
         "managingOrganization": {
-          "reference": "https://organization.cit-careplan-2626.local/fhir/Organization/26862"
+          "reference": "https://organization.cit-careplan-2740.local/fhir/Organization/73774"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",

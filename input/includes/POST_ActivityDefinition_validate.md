@@ -1,4 +1,4 @@
-`POST [base]/ActivityDefinition/327/$validate`
+`POST [base]/ActivityDefinition/415/$validate`
 
 __Header__
 ```
@@ -19,10 +19,10 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "327",
+        "id": "415",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2023-10-17T07:28:12.274+00:00",
+          "lastUpdated": "2024-04-26T07:57:14.726+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -40,12 +40,23 @@ __Body__:
             }
           },
           {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingApprovalPolicy",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies",
+                  "code": "manual"
+                }
+              ]
+            }
+          },
+          {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
             "extension": [
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1284.local/fhir/Organization/43951"
+                  "reference": "https://organization.cit-plan-1463.local/fhir/Organization/95777"
                 }
               },
               {
@@ -63,7 +74,7 @@ __Body__:
           }
         ],
         "version": "1.0",
-        "name": "59855a6e-6e33-44b9-8eae-e3da5e28270c",
+        "name": "c4a46c2b-4e48-482c-a479-6c4b68956219",
         "status": "active",
         "topic": [
           {
@@ -95,7 +106,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1042]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1265]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Parameters.parameter[0].resource.ofType(ActivityDefinition), Line 1, Col 1265]</td><td><pre>Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</pre></td></tr></table></div>"
   },
   "issue": [
     {
@@ -112,7 +123,7 @@ __Response__
       "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1042"
+        "Line 1, Col 1265"
       ]
     },
     {
@@ -129,7 +140,7 @@ __Response__
       "diagnostics": "Rule adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed",
       "location": [
         "Parameters.parameter[0].resource.ofType(ActivityDefinition)",
-        "Line 1, Col 1042"
+        "Line 1, Col 1265"
       ]
     }
   ]

@@ -596,70 +596,6 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthReferenceEvent
 }
 ```
-#### SSL Catalogue created example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "created",
-  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/1b996c36-1d75-4836-934c-1dee75336639",
-  "resourceVersion": ""
-}
-Message properties:
-{
-date = Mon, 17 Feb 2020 22:09:12 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 1
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ssl-catalogue
-resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/1b996c36-1d75-4836-934c-1dee75336639
-pragma = no-cache
-resourceProfile = ssl-catalogue
-content-type = text/plain; charset=ISO-8859-1
-eventType = created
-id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:160:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
-#### SSL Catalogue updated example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "updated",
-  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/6ffa7981-75f9-4460-a79a-d27aaeff3c84",
-  "resourceVersion": ""
-}
-Message properties:
-{
-date = Mon, 17 Feb 2020 22:09:14 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 0
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ssl-catalogue
-resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/6ffa7981-75f9-4460-a79a-d27aaeff3c84
-pragma = no-cache
-resourceProfile = ssl-catalogue
-content-type = text/plain; charset=ISO-8859-1
-eventType = updated
-id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:188:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
 #### SSL CatalogueItem created example
 
 ```
@@ -720,6 +656,70 @@ resourceProfile = ssl-catalogueItem
 content-type = text/plain; charset=ISO-8859-1
 eventType = updated
 id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:230:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Catalogue created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/1b996c36-1d75-4836-934c-1dee75336639",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 17 Feb 2020 22:09:12 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 1
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-catalogue
+resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/1b996c36-1d75-4836-934c-1dee75336639
+pragma = no-cache
+resourceProfile = ssl-catalogue
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:160:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Catalogue updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/6ffa7981-75f9-4460-a79a-d27aaeff3c84",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 17 Feb 2020 22:09:14 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-catalogue
+resourceReference = https://ssl-catalogue.local.ehealth.sundhed.dk/v1/catalogue/6ffa7981-75f9-4460-a79a-d27aaeff3c84
+pragma = no-cache
+resourceProfile = ssl-catalogue
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:ssl-catalogue-7ddbf8dc8-zxm27-34233-1581977089020-1:1:188:1:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
@@ -1118,70 +1118,6 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 ```
-#### Device created example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "created",
-  "resourceReference": "https://device.local.ehealth.sundhed.dk/fhir/Device/179",
-  "resourceVersion": "1"
-}
-Message properties:
-{
-date = Fri, 14 Feb 2020 14:09:00 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 2
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ehealth-device
-resourceReference = https://device.local.ehealth.sundhed.dk/fhir/Device/83
-pragma = no-cache
-resourceProfile = ehealth-device
-content-type = text/plain; charset=ISO-8859-1
-eventType = created
-id = ID:device-5bf9bf9956-g7mf9-39023-1581689083687-1:6:174:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
-#### Device updated example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "updated",
-  "resourceReference": "https://device.local.ehealth.sundhed.dk/fhir/Device/181",
-  "resourceVersion": "2"
-}
-Message properties:
-{
-date = Fri, 14 Feb 2020 14:09:08 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 3
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ehealth-device
-resourceReference = https://device.local.ehealth.sundhed.dk/fhir/Device/104
-pragma = no-cache
-resourceProfile = ehealth-device
-content-type = text/plain; charset=ISO-8859-1
-eventType = updated
-id = ID:device-5bf9bf9956-g7mf9-39023-1581689083687-1:6:216:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
 #### DeviceMetric created example
 
 ```
@@ -1274,6 +1210,70 @@ resourceProfile = ehealth-devicemetric
 content-type = text/plain; charset=ISO-8859-1
 eventType = updated
 id = ID:device-5bf9bf9956-g7mf9-39023-1581689083687-1:6:362:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### Device created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://device.local.ehealth.sundhed.dk/fhir/Device/179",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 14:09:00 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 2
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-device
+resourceReference = https://device.local.ehealth.sundhed.dk/fhir/Device/83
+pragma = no-cache
+resourceProfile = ehealth-device
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:device-5bf9bf9956-g7mf9-39023-1581689083687-1:6:174:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### Device updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://device.local.ehealth.sundhed.dk/fhir/Device/181",
+  "resourceVersion": "2"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 14:09:08 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 3
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ehealth-device
+resourceReference = https://device.local.ehealth.sundhed.dk/fhir/Device/104
+pragma = no-cache
+resourceProfile = ehealth-device
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:device-5bf9bf9956-g7mf9-39023-1581689083687-1:6:216:1:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
@@ -1721,12 +1721,6 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthContextEvent
 }
 ```
-#### Library Messages
-
-|MessageType|EventType|Topic|Description|
-|---|---|---|---|
-|EHealthSimpleEvent|created|ehealth-library|A Library has been created.|
-|EHealthSimpleEvent|updated|ehealth-library|A Library has been updated.|
 #### NamingSystem created example
 
 ```
@@ -1823,101 +1817,6 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 ```
-#### SSL Order created example
-
-```
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "created",
-  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/7b00e2e9-b7cb-4774-8959-09141b6a2f89",
-  "resourceVersion": ""
-}
-Message properties:
-{
-date = Mon, 09 Dec 2019 13:16:43 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 2
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ssl-order
-resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/7b00e2e9-b7cb-4774-8959-09141b6a2f89
-pragma = no-cache
-resourceProfile = ssl-order
-content-type = text/plain; charset=ISO-8859-1
-eventType = created
-id = ID:ssl-order-7988f794f9-kp2fd-42193-1575897373767-1:1:2:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
-#### SSL Order deleted example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "deleted",
-  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/45f8b3ad-26c8-47f1-9c15-61486d726656",
-  "resourceVersion": ""
-}
-Message properties:
-{
-date = Mon, 09 Dec 2019 17:54:31 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 0
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ssl-order
-resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/45f8b3ad-26c8-47f1-9c15-61486d726656
-pragma = no-cache
-resourceProfile = ssl-order
-content-type = text/plain; charset=ISO-8859-1
-eventType = deleted
-id = ID:ssl-order-7988f794f9-xplpf-45971-1575913854217-1:1:468:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
-#### SSL Order updated example
-
-```
-Message body:
-{
-  "messageType": "EHealthSimpleEvent",
-  "messageVersion": "1.0",
-  "eventType": "updated",
-  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/26e9ce82-a741-4b24-9cab-a799eb3eec28",
-  "resourceVersion": ""
-}
-Message properties:
-{
-date = Mon, 09 Dec 2019 17:56:15 GMT
-server = istio-envoy
-expires = Thu, 01 Jan 1970 00:00:00 GMT
-x-envoy-upstream-service-time = 0
-messageVersion = 1.0
-transfer-encoding = chunked
-messageType = EHealthSimpleEvent
-x-frame-options = SAMEORIGIN
-destination = topic://ssl-order
-resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/26e9ce82-a741-4b24-9cab-a799eb3eec28
-pragma = no-cache
-resourceProfile = ssl-order
-content-type = text/plain; charset=ISO-8859-1
-eventType = updated
-id = ID:ssl-order-7988f794f9-xplpf-45971-1575913854217-1:1:844:1:1
-cache-control = no-cache, no-store, must-revalidate
-messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
-}
-```
 #### SSL OrderLine created example
 
 ```
@@ -2009,6 +1908,101 @@ resourceProfile = ssl-orderline
 content-type = text/plain; charset=ISO-8859-1
 eventType = updated
 id = ID:ssl-order-7988f794f9-9bt4v-36539-1575984410700-1:1:384:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Order created example
+
+```
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/7b00e2e9-b7cb-4774-8959-09141b6a2f89",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 09 Dec 2019 13:16:43 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 2
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-order
+resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/7b00e2e9-b7cb-4774-8959-09141b6a2f89
+pragma = no-cache
+resourceProfile = ssl-order
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:ssl-order-7988f794f9-kp2fd-42193-1575897373767-1:1:2:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Order deleted example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "deleted",
+  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/45f8b3ad-26c8-47f1-9c15-61486d726656",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 09 Dec 2019 17:54:31 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-order
+resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/45f8b3ad-26c8-47f1-9c15-61486d726656
+pragma = no-cache
+resourceProfile = ssl-order
+content-type = text/plain; charset=ISO-8859-1
+eventType = deleted
+id = ID:ssl-order-7988f794f9-xplpf-45971-1575913854217-1:1:468:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### SSL Order updated example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "updated",
+  "resourceReference": "https://ssl-order.local.ehealth.sundhed.dk/v1/order/26e9ce82-a741-4b24-9cab-a799eb3eec28",
+  "resourceVersion": ""
+}
+Message properties:
+{
+date = Mon, 09 Dec 2019 17:56:15 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 0
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ssl-order
+resourceReference = https://ssl-order.local.ehealth.sundhed.dk/v1/order/26e9ce82-a741-4b24-9cab-a799eb3eec28
+pragma = no-cache
+resourceProfile = ssl-order
+content-type = text/plain; charset=ISO-8859-1
+eventType = updated
+id = ID:ssl-order-7988f794f9-xplpf-45971-1575913854217-1:1:844:1:1
 cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
@@ -2419,6 +2413,134 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 
+```
+#### CodeSystem created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/CodeSystem/160",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 15:53:52 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 13
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://CodeSystem
+resourceReference = https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/CodeSystem/1
+pragma = no-cache
+resourceProfile = CodeSystem
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:terminology-64bcbcc7f9-ccgtd-45113-1581695504155-1:52:2:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### ConceptMap created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/ConceptMap/173",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 15:55:41 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 7
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ConceptMap
+resourceReference = https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/ConceptMap/34
+pragma = no-cache
+resourceProfile = ConceptMap
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:terminology-64bcbcc7f9-ccgtd-45113-1581695504155-1:94:2:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### NamingSystem created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/NamingSystem/181",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 15:56:48 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 4
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://NamingSystem
+resourceReference = https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/NamingSystem/53
+pragma = no-cache
+resourceProfile = NamingSystem
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:terminology-64bcbcc7f9-ccgtd-45113-1581695504155-1:120:2:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
+```
+#### ValueSet created example
+
+```
+Message body:
+{
+  "messageType": "EHealthSimpleEvent",
+  "messageVersion": "1.0",
+  "eventType": "created",
+  "resourceReference": "https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/ValueSet/190",
+  "resourceVersion": "1"
+}
+Message properties:
+{
+date = Fri, 14 Feb 2020 15:58:06 GMT
+server = istio-envoy
+expires = Thu, 01 Jan 1970 00:00:00 GMT
+x-envoy-upstream-service-time = 3
+messageVersion = 1.0
+transfer-encoding = chunked
+messageType = EHealthSimpleEvent
+x-frame-options = SAMEORIGIN
+destination = topic://ValueSet
+resourceReference = https://questionnaireterminology.local.ehealth.sundhed.dk/fhir/ValueSet/73
+pragma = no-cache
+resourceProfile = ValueSet
+content-type = text/plain; charset=ISO-8859-1
+eventType = created
+id = ID:terminology-64bcbcc7f9-ccgtd-45113-1581695504155-1:151:2:1:1
+cache-control = no-cache, no-store, must-revalidate
+messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
+}
 ```
 #### Questionnaire created example
 
@@ -2934,3 +3056,9 @@ cache-control = no-cache, no-store, must-revalidate
 messageClass = com.systematic.ehealth.event.event.EHealthSimpleEvent
 }
 ```
+#### Library Messages
+
+|MessageType|EventType|Topic|Description|
+|---|---|---|---|
+|EHealthSimpleEvent|created|ehealth-library|A Library has been created.|
+|EHealthSimpleEvent|updated|ehealth-library|A Library has been updated.|

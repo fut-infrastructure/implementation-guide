@@ -17,3 +17,5 @@ https://docs.ehealth.sundhed.dk/v2.7.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.8.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.9.0/ig/index.html
 https://docs.ehealth.sundhed.dk/v2.10.0/ig/index.html
+https://docs.ehealth.sundhed.dk/v3.0.0/ig/index.html
+https://docs.ehealth.sundhed.dk/v3.1.0/ig/index.html
