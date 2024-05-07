@@ -7,7 +7,7 @@ canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
 status: active
-version: latest
+version: 3.2.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
