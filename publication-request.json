@@ -5,7 +5,7 @@
   "status": "release",
   "sequence": "Releases",
   "mode" : "milestone", 
-  "title": "eHealth Infrastructure",
+  "title": "FUT Infrastructure",
   "category": "Core",
   "introduction": "A FHIR Implementation Guide for FUT Infrastructure",
   "desc": "FUT Infrastructure version 3.3.0",
