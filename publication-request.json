@@ -1,0 +1,15 @@
+{
+  "package-id": "dk.ehealth.sundhed.fhir.ig.core",
+  "version": "3.3.0",
+  "path": "https://docs.ehealth.sundhed.dk/3.3.0",
+  "status": "release",
+  "sequence": "Releases",
+  "mode" : "milestone", 
+  "title": "eHealth Infrastructure",
+  "category": "Core",
+  "introduction": "A FHIR Implementation Guide for FUT Infrastructure",
+  "desc": "FUT Infrastructure version 3.3.0",
+  "descmd": "@release-notes.md",
+  "first": true,
+  "ci-build": "https://build.fhir.org/ig/fut-infrastructure/implementation-guide/"
+}
