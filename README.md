@@ -12,6 +12,8 @@ See http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/ma
 
 All branch builds can be found under http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/
 
+The state of each build can also be found at https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build
+
 ### GOTCHA's
 Dont out `/`'s in the branch name as those branches will never be built.
 
