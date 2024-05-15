@@ -15,7 +15,7 @@ All branch builds can be found under http://build.fhir.org/ig/fut-infrastructure
 The state of each build can also be found at https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build
 
 ### GOTCHA's
-Dont out `/`'s in the branch name as those branches will never be built.
+Dont use `/`'s in the branch name as those branches will never be built by the HL7 CI pipeline.
 
 The CI/CD pipeline uses the HL7 CI/CD infrastructure and Github webhooks which is documented here https://github.com/FHIR/auto-ig-builder
 
