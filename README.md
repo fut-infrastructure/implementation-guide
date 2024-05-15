@@ -57,7 +57,9 @@ Once executed the IGP will put the contents of the release into the directory of
 
 The command for doing the publication is the following:
 
-`java -jar publisher.jar -go-publish -source $(pwd)/implementationguide  -web $(pwd)/fut-ig-website -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)fhir-ig-history-template -templates $(pwd)/fut-ig-website/templates`
+1) Step into `$(pwd)/implementationguide` and execute `./_genonce.sh`
+
+2) Step out and execute `java -jar publisher.jar -go-publish -source $(pwd)/implementationguide  -web $(pwd)/fut-ig-website -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)fhir-ig-history-template -templates $(pwd)/fut-ig-website/templates`
 
 Execution takes a couple of minutes. Once done, the content of the `$(pwd)/fut-ig-website` must be committed and pushed to the origin. Now your publication is done.
 
