@@ -1,21 +1,11 @@
-
-## Auto deployment
-
-All commits to `master` branch is automatically build as html and deployed to s3.
-
-http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/
-
-The output of the igpublisher is uploaded to `s3://ehealth-documentation/vx.x.x/ig/`
-where `x.x.x` is taken from `pages/_data/version.yaml`.
-
-When creating a new version in `ig.json`, remember to add the new version in the `static/index.html` file to be able to browse to the new version.
-
-
 ## General documentation for IG layout
 See http://build.fhir.org/ig/FHIR/ig-guidance/index.html
 
 ### General documentation for doing IG publications
 See https://confluence.hl7.org/display/FHIR/Maintaining+a+FHIR+IG+Publication
+
+### Version number of HEAD/latest
+In order to have traceability and not use `latest`or `SNAPSHOT` in the CI version of the IG, the version [here](https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L10) ([at this point in time](https://github.com/fut-infrastructure/implementation-guide/commit/87984511188dce487a2ccbc490d5985981b83aa3)) should be a semantic version + a build number (constructed as a function of time) e.g. `3.3.0-20240516134561`.
 
 ### Location of the master CI/CD build
 See http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/master/index.html
@@ -39,31 +29,59 @@ Do `docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 ### Combined
 Do `rm -rf output && rm -rf temp/ && ./_genonce.sh && docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 
-## 'Formal publications'
-The Implementation Guide Publisher (IGP for short) makes a set of assumptions that any formal publications needs to adhere to (documented here https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-DirectoryStructure). When a publication process is to be executed, the content of the IG (this repository) and its former publications (currently set to be hosted on https://github.com/fut-infrastructure/fut-ig-website) needs to available. Besides that, the following entries needs to be updated ahead of execution:
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L10
-   - Flip it to requested version number.
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L13
-   - Flip it to `release` - (documented here: https://fshschool.org/docs/sushi/configuration/)
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/release-notes.md
-   - Put in the full release log.
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L3
-   - Flip it to requested version number.
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L4
-   - Flip context path to the requested version number.
- - https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L11
-   - The short overall release description.
+# \<Formal publications\>
+The Implementation Guide Publisher (IGP for short) makes a set of assumptions that any formal publications needs to adhere to (documented here https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-DirectoryStructure and here https://confluence.hl7.org/display/FHIR/IG+Publication+Request+Documentation for the https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json the file). When a publication process is to be executed, the following content needs to be cloned:
+
+- https://github.com/fut-infrastructure/implementation-guide (this repo)
+- https://github.com/fut-infrastructure/fut-ig-website (this is where the publications ends up)
+- https://github.com/fut-infrastructure/fhir-ig-history-template (this is where the styling of the history page is)
+- https://github.com/fut-infrastructure/ig-registry (this is where and entry is created/updated pr publication. Once a publication is done, the changes should be committed and push and a PR to its origin should be made. This last step is not mandatory for FUT)
+
+Besides that, the following entries needs to be updated ahead of execution (links relative to [this point in time](https://github.com/fut-infrastructure/implementation-guide/commit/87984511188dce487a2ccbc490d5985981b83aa3)):
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L10
+    - Flip it to requested version number.
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L13
+    - Flip it to `release` - (documented here: https://fshschool.org/docs/sushi/configuration/)
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/release-notes.md
+    - Put in the full release log.
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L3
+    - Flip it to requested version number.
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L4
+    - Flip context path to the requested version number.
+- https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json#L11
+    - The short overall release description.
 
 Once executed the IGP will put the contents of the release into the directory of where the https://github.com/fut-infrastructure/fut-ig-website was cloned to.
+
+The command for doing the publication is the following:
+
+`java -jar publisher.jar -go-publish -source $(pwd)/implementationguide  -web $(pwd)/fut-ig-website -registry $(pwd)/ig-registry/fhir-ig-list.json -history $(pwd)fhir-ig-history-template -templates $(pwd)/fut-ig-website/templates`
+
+Execution takes a couple of minutes. Once done, the content of the `$(pwd)/fut-ig-website` must be committed and pushed to the origin. Now your publication is done.
+
+## Publication trigger rules - WORK IN PROGRESS
+Publications needs to be triggered by human interaction. Either by approval of merging to master or by tagging on master.
 
 ## General (FUT) development guidelines
 
 ### Add a introduction to a profile
 It is possible to write an introduction to a profile by following these steps:
-1. Create a markdown file in `/fsh-content/input/intro-notes/` folder with the name StructureDefinition-ehealth-*-intro.md where * is the name of the resource (eg. StructureDefinition-ehealth-activitydefinition-intro.md). The content of the file should be the introduction.
+1. Create a markdown file in `/input/intro-notes/` folder with the name StructureDefinition-ehealth-*-intro.md where * is the name of the resource (eg. StructureDefinition-ehealth-activitydefinition-intro.md). The content of the file should be the introduction.
 
 ### Update documentation on event messages
-Event messages are documented in the markdown file `/fsh-content/input/pagecontent/event-messages.md`. It is displayed in the `Operations and Search Parameters` tab. The file is generated from the hapi-fhir-base project, and if changes are done to the package `com.systematic.ehealth.events`, then the documentation may need to be updated. 
+Event messages are documented in the markdown file `/input/pagecontent/event-messages.md`. It is displayed in the `Operations and Search Parameters` tab. The file is generated from the hapi-fhir-base project, and if changes are done to the package `com.systematic.ehealth.events`, then the documentation may need to be updated. 
 1. In the hapi-fhir-base project, run the test GenerateEventsForIGTest.
 2. Locate the file `eventmessages.md` in the root of the hapi-fhir-base project.
-3. Copy the file to `/fsh-content/input/pagecontent/event-messages.md` in the implementationguide project.
+3. Copy the file to `/input/pagecontent/event-messages.md` in the implementationguide project.
+
+### Auto deployment - DEPRECATED SECTION
+
+All commits to `master` branch is automatically build as html and deployed to s3.
+
+http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/
+
+The output of the igpublisher is uploaded to `s3://ehealth-documentation/vx.x.x/ig/`
+where `x.x.x` is taken from `pages/_data/version.yaml`.
+
+When creating a new version in `ig.json`, remember to add the new version in the `static/index.html` file to be able to browse to the new version.
+
