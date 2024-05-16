@@ -3,7 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
-
+- Search functionality has been updated to use Bing search instead of Google search. 
 ### Custom operations
 #### System operations
 #### Instance operations
