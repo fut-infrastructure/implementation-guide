@@ -79,6 +79,12 @@ podTemplates.igPublisher('test') {
         s3Delete(bucket: config.s3.bucket, path: 'robots.txt')
         s3Upload(file: 'static/robots.txt', bucket:config.s3.bucket, path:'robots.txt')
 
+        s3Delete(bucket: config.s3.bucket, path: 'google745a774a0734f263.html')
+        s3Upload(file: 'static/google745a774a0734f263.html', bucket:config.s3.bucket, path:'google745a774a0734f263.html')
+
+        s3Delete(bucket: config.s3.bucket, path: 'BingSiteAuth.xml')
+        s3Upload(file: 'static/BingSiteAuth.xml', bucket:config.s3.bucket, path:'BingSiteAuth.xml')
+
         if (igVersion != 'latest') {
           igPathLatestReleased = 'latest-released/ig'
           s3Delete(bucket: config.s3.bucket, path: igPathLatestReleased)
