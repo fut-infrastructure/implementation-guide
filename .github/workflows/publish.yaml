@@ -1,0 +1,26 @@
+name: FUT Infrastructure Implementation Guide publish pipeline
+
+on:
+  workflow_dispatch: # Enable manual run
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ig-publish:
+    name: Transpile and publish the IG
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the repos needed
+      - uses: actions/checkout@v4
+
+      # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
+      - name: ig transpile
+        uses: docker://ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
+        with:
+          args: -ig .
