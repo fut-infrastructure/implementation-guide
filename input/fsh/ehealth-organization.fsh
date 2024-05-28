@@ -107,12 +107,14 @@ Extension:   ehealth-organization-specialty
 Title:       "Organization specialty"
 Description: "The specialty of the organization"
 * . ^short = "The organization's specialty"
-* value[x] only CodeableConcept
-* valueCodeableConcept 1..1
-* valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-specialty
-
-
-
+* extension contains
+    specialty 1..1 and
+    isPrimary 0..1
+* extension[specialty].value[x] only CodeableConcept
+* extension[specialty].valueCodeableConcept 1..1
+* extension[specialty].valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-specialty
+* extension[primaryIndicator].value[x] only boolean
+* extension[primaryIndicator].valueBoolean 0..1
 
 Instance: 312
 InstanceOf: ehealth-organization
