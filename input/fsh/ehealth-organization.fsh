@@ -109,10 +109,10 @@ Description: "The specialty of the organization"
 * . ^short = "The organization's specialty"
 * extension contains
     specialty 1..1 and
-    isPrimary 0..1
+    primaryIndicator 0..1
 * extension[specialty].value[x] only CodeableConcept
-* extension[specialty].valueCodeableConcept 1..1
 * extension[specialty].valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-specialty
+* extension[specialty].valueCodeableConcept 1..1
 * extension[primaryIndicator].value[x] only boolean
 * extension[primaryIndicator].valueBoolean 0..1
 
