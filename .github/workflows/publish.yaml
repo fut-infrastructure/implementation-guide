@@ -2,25 +2,59 @@ name: FUT Infrastructure Implementation Guide publish pipeline
 
 on:
   workflow_dispatch: # Enable manual run
-    branches:
-      - main
   push:
-    # branches:
-    #   - main
+    # branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   ig-publish:
     name: Transpile and publish the IG
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
     steps:
       # Checkout the repos needed
       - uses: actions/checkout@v4
-
-      # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
-      - name: ig transpile
-        uses: docker://ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
         with:
-          args: -ig .
+          path: ig
+
+       # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
+      - name: ig transpile
+        run: java -Xmx4g -jar /input-cache/publisher.jar -ig ig/
+
+      - name: web repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/fut-ig-website
+          path: web
+
+      - name: registry repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/ig-registry
+          path: registry
+
+      - name: history repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/fhir-ig-history-template
+          path: history
+
+      # https://confluence.hl7.org/display/FHIR/HL7+Process+for+Publishing+a+FHIR+IG
+      - name: ig publish
+        run: >-
+          java -Xmx4g -jar /input-cache/publisher.jar -go-publish
+          -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
+
+      - name: commit web publication
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: web
+
+      - name: commit publication to registry
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: registry
