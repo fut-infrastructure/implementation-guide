@@ -1,3 +1,5 @@
+[![FUT Infrastructure Implementation Guide publish pipeline](https://github.com/fut-infrastructure/implementation-guide/actions/workflows/publish.yaml/badge.svg?event=push)](https://github.com/fut-infrastructure/implementation-guide/actions/workflows/publish.yaml)
+
 ## General documentation for IG layout
 See http://build.fhir.org/ig/FHIR/ig-guidance/index.html
 
