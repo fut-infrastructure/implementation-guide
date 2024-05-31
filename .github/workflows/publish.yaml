@@ -23,16 +23,27 @@ jobs:
       - name: ig transpile
         run: java -Xmx4g -jar /input-cache/publisher.jar -ig ig/
 
+      - name: Generate app token
+        id: token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: "fut-ig-website,ig-registry"
+
       - name: web repo
         uses: actions/checkout@v4
         with:
           repository: fut-infrastructure/fut-ig-website
+          token: ${{ steps.token.outputs.token }}
           path: web
 
       - name: registry repo
         uses: actions/checkout@v4
         with:
           repository: fut-infrastructure/ig-registry
+          token: ${{ steps.token.outputs.token }}
           path: registry
 
       - name: history repo
@@ -50,11 +61,17 @@ jobs:
       - name: commit web publication
         uses: actions-js/push@v1.5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.token.outputs.token }}
+          author_name: fut-ig-publisher[bot]
+          author_email: ig-publisher[bot]@users.noreply.github.com
+          repository: fut-infrastructure/fut-ig-website
           directory: web
 
       - name: commit publication to registry
         uses: actions-js/push@v1.5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ steps.token.outputs.token }}
+          author_name: fut-ig-publisher[bot]
+          author_email: ig-publisher[bot]@users.noreply.github.com
+          repository: fut-infrastructure/ig-registry
           directory: registry
