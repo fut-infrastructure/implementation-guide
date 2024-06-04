@@ -58,6 +58,12 @@ jobs:
           java -Xmx4g -jar /input-cache/publisher.jar -go-publish
           -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
 
+      - name: remove large unnecessary files
+        run: |
+          rm -rf web/ig-build-zips/
+          rm -rf web/core/full-ig.zip
+          rm -rf web/core/*/full-ig.zip
+
       - name: commit web publication
         uses: actions-js/push@v1.5
         with:
