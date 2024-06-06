@@ -117,8 +117,8 @@ Description: "The specialty of the organization"
 * extension[specialty] ^definition = "The code defining the specialty of the organization."
 * extension[primaryIndicator].value[x] only boolean
 * extension[primaryIndicator].valueBoolean 0..1
-* extension[primaryIndicator]^short = "Indicator of primary specialty"
-* extension[primaryIndicator]^definition = "Indicates if the specialty is the primary specialty of the organization."
+* extension[primaryIndicator] ^short = "Indicator of primary specialty"
+* extension[primaryIndicator] ^definition = "Indicates if the specialty is the primary specialty of the organization."
 
 Instance: 312
 InstanceOf: ehealth-organization
