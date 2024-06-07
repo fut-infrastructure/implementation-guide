@@ -8,8 +8,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added missing NPU codes to urn:oid:1.2.208.176.2.1 used in concept maps
 ### ValueSets
 ### ConceptMaps
+- Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing 
 ### Resource/profile changes
 - Expanded the `ehealth-organization-specialty` extension with `primaryIndicator` boolean to allow indication of whether a specialty is the primary for an organization.
 

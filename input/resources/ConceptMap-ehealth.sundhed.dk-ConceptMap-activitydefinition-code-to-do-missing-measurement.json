@@ -187,6 +187,28 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "NPU08676",
+          "display": "Pt—Legeme; temp. = ? °C",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "C-reaktivt protein [CRP];P",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },

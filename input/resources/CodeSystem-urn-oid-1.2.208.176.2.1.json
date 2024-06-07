@@ -133,6 +133,38 @@
           "value": "Erytrocytter(semikvant)"
         }
       ]
+    },
+    {
+      "code": "NPU08676",
+      "display": "Pt—Legeme; temp. = ? °C",
+      "definition": "Pt—Legeme; temp. = ? °C",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Temperatur"
+        }
+      ]
+    },
+    {
+      "code": "NPU19748",
+      "display": "C-reaktivt protein [CRP];P",
+      "definition": "P—C-reaktivt protein; massek. = ? mg/L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "C-reaktivt protein"
+        }
+      ]
     }
   ]
 }
+
+
