@@ -62,17 +62,6 @@
           ]
         },
         {
-          "code": "445988008",
-          "display": "Assessment using health assessment questionnaire (procedure)",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "409073007",
           "display": "Instruktion",
           "target": [
