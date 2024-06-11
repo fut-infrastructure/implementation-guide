@@ -16,7 +16,7 @@ Parent: PlanDefinition
 * action.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
 * action.definition[x] only Canonical(ehealth-activitydefinition or ehealth-plandefinition)
 * action.extension contains ehealth-actionTrigger named ehealth-actionTrigger 0..1
-* action.extension contains ehealth-include-as-extra named includeAsExtra 1..1
+* action.extension contains ehealth-include-as-extra named includeAsExtra 0..1
 
 Extension: ehealth-actionTrigger
 Title:     "Action Trigger"

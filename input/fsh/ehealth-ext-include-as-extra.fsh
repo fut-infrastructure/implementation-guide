@@ -3,3 +3,4 @@ Title: "includeAsExtra"
 Description: "Indicates if the resource/resources deriving from this resource should be presented as extra activities for the patient."
 * . ^short = "Include as extra activity"
 * value[x] only boolean
+* valueBoolean 1..1
