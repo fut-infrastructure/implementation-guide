@@ -66,7 +66,16 @@ The command for doing the publication is the following:
 Execution takes a couple of minutes. Once done, the content of the `$(pwd)/fut-ig-website` must be committed and pushed to the origin. Now your publication is done.
 
 ## Publication trigger rules - WORK IN PROGRESS
-Publications needs to be triggered by human interaction. Either by approval of merging to master or by tagging on master.
+
+When a new publication version is to be created, the following rules apply:
+
+- All changes must be created as a pull request on master
+- They can only be merged when they have been reviewed/approved
+- When all changes have been merged to master, a tag with the new SemVer version
+  must be created on master
+
+That will publish the new version on the HL7 CI/CD infrastructure
+(see the above sections), and on the FUT ehealth documentation website.
 
 ## General (FUT) development guidelines
 
