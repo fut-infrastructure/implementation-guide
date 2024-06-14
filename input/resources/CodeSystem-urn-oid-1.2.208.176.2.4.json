@@ -247,6 +247,50 @@
           ]
         },
         {
+          "code": "DF00",
+          "display": "Demens ved Alzheimers sygdom"
+        },
+        {
+          "code": "DF10",
+          "display": "Psykiske lidelser og adfærdsmæssige forstyrrelser forårsaget af brug af alkohol"
+        },
+        {
+          "code": "DF20",
+          "display": "Skizofreni"
+        },
+        {
+          "code": "DF30",
+          "display": "Manisk enkeltepisode"
+        },
+        {
+          "code": "DF40",
+          "display": "Fobiske angsttilstande"
+        },
+        {
+          "code": "DF50",
+          "display": "Spiseforstyrrelser"
+        },
+        {
+          "code": "DF60",
+          "display": "Specifikke forstyrrelser af personlighedsstrukturen"
+        },
+        {
+          "code": "DF70",
+          "display": "Mental retardering af lettere grad"
+        },
+        {
+          "code": "DF80",
+          "display": "Specifikke udviklingsforstyrrelser af tale og sprog"
+        },
+        {
+          "code": "DF90",
+          "display": "Hyperkinetiske forstyrrelser"
+        },
+        {
+          "code": "DF99",
+          "display": "Ikke nærmere specificerede psykiske lidelser"
+        },
+        {
           "code": "DI20",
           "display": "Angina pectoris",
           "concept": [
