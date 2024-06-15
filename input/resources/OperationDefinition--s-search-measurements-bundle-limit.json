@@ -6,7 +6,7 @@
   "title": "Search measurements bundle limit",
   "status": "active",
   "kind": "operation",
-  "description": "The search-measurements-bundle-limit operation searches for a number of bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- count: The number of bundles to return, max allowed value is 100 - Integer.\n- start: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted after this time. The result bundles will be sorted in ascending order - DateTime.\n- end: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted before this time. The result bundles will be sorted in descending order - DateTime.\n- based-on: Resources(s) must be based on any of the specified service requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\nOne of either \"start\" or \"end\", along with the \"count\" parameter must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" or \"serviceRequest\" must be specified.\n\n### Output description\n\nThe result of this operation will return a Bundle with a list of nested Bundles having resources matching the search parameters. The number of nested Bundles will depend on the count parameter.\n\nEach of the nested bundles will contain the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources, from the same submission request.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation.\n\n",
+  "description": "The search-measurements-bundle-limit operation searches for a number of bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- count: The number of bundles to return, max allowed value is 100 - Integer.\n- start: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted after this time. The result bundles will be sorted in ascending order - DateTime.\n- end: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted before this time. The result bundles will be sorted in descending order - DateTime.\n- based-on: Resources(s) must be based on any of the specified service requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\nOne of either \"start\" or \"end\", along with the \"count\" parameter must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" or \"serviceRequest\" must be specified.\n\n### Output description\n\nThe result of this operation returns a Bundle with a list of nested Bundles having resources matching the search parameters. The number of nested Bundles depends on the count parameter.\n\nEach of the nested bundles contains the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources, from the same submission request.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation.\n\n",
   "affectsState": false,
   "code": "search-measurements-bundle-limit",
   "system": true,
@@ -31,28 +31,28 @@
     "use": "in",
     "min": 1,
     "max": "1",
-    "documentation": "Resource(s) must have either an instant or time period within or overlapping the given period.",
+    "documentation": "The number of bundles to return, max allowed value is 100 - Integer.",
     "type": "integer"
   }, {
     "name": "start",
     "use": "in",
     "min": 0,
     "max": "1",
-    "documentation": "Resource(s) must have either an instant or time period within or overlapping the given period.",
+    "documentation": "Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted after this time. The result bundles will be sorted in ascending order - DateTime.",
     "type": "dateTime"
   }, {
     "name": "end",
     "use": "in",
     "min": 0,
     "max": "1",
-    "documentation": "Resource(s) must have either an instant or time period within or overlapping the given period.",
+    "documentation": "Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted before this time. The result bundles will be sorted in descending order - DateTime.",
     "type": "dateTime"
   }, {
     "name": "based-on",
     "use": "in",
     "min": 0,
     "max": "*",
-    "documentation": "Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest).",
+    "documentation": "Resources(s) must be based on any of the specified service requests - Reference(eHealth ServiceRequest).",
     "type": "Reference"
   }, {
     "name": "_tag",
