@@ -18,7 +18,7 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
+        "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
       }
     },
     {
@@ -26,8 +26,8 @@ __Body__:
       "valueInteger": 10
     },
     {
-      "name": "start",
-      "valueDateTime": "2024-05-21T13:55:27+02:00"
+      "name": "end",
+      "valueDateTime": "2024-06-06T04:41:38+02:00"
     }
   ]
 }
@@ -36,255 +36,687 @@ __Body__:
 __Response__
 ```json
 {
+  "resourceType": "Bundle",
   "type": "collection",
   "entry": [
     {
+      "fullUrl": "f0d826c9-61d3-4406-8d3e-43e0a0c1ebbd",
       "resource": {
+        "resourceType": "Bundle",
+        "id": "f0d826c9-61d3-4406-8d3e-43e0a0c1ebbd",
         "type": "collection",
-        "id": "796ecc5a-245f-43a3-a76d-fa9d7b46490b",
         "entry": [
           {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/30",
             "resource": {
-              "recorded": "2024-05-22T13:55:26.659+02:00",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/25"
-                }
-              ],
               "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "26",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "meta": {
-                "source": "#9f165990-87b4-45",
-                "lastUpdated": "2024-06-07T11:55:26.718+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/26"
-          }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "796ecc5a-245f-43a3-a76d-fa9d7b46490b"
-    },
-    {
-      "resource": {
-        "type": "collection",
-        "id": "6726134b-76ea-4c7c-b471-a9af07ad9e16",
-        "entry": [
-          {
-            "resource": {
-              "recorded": "2024-05-24T13:55:26.924+02:00",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/27"
-                }
-              ],
-              "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "28",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "meta": {
-                "source": "#c350e479-e6a0-47",
-                "lastUpdated": "2024-06-07T11:55:26.946+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/28"
-          }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "6726134b-76ea-4c7c-b471-a9af07ad9e16"
-    },
-    {
-      "resource": {
-        "type": "collection",
-        "id": "c1c9ae30-7240-4003-a2fb-0459813b6a50",
-        "entry": [
-          {
-            "resource": {
-              "recorded": "2024-05-26T13:55:27.211+02:00",
+              "id": "30",
               "target": [
                 {
                   "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/29"
                 }
               ],
-              "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "30",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
               "meta": {
-                "source": "#8f56bce2-6c48-45",
-                "lastUpdated": "2024-06-07T11:55:27.234+00:00",
+                "source": "#408ec467-6c79-43",
+                "lastUpdated": "2024-06-17T05:41:37.304+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
                 ],
                 "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/30"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-06-05T07:41:37.286+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/29",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:37+02:00",
+                "start": "2024-06-17T07:41:37+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/72047"
+              },
+              "id": "29",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/46567"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#6b5ef661-57ea-4a",
+                "lastUpdated": "2024-06-17T05:41:37.174+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/31566"
+                }
+              ]
+            }
           }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "c1c9ae30-7240-4003-a2fb-0459813b6a50"
+        ]
+      }
     },
     {
+      "fullUrl": "2666bbd6-1c51-418a-a32c-ac915dfef6a3",
       "resource": {
+        "resourceType": "Bundle",
+        "id": "2666bbd6-1c51-418a-a32c-ac915dfef6a3",
         "type": "collection",
-        "id": "e4c4f253-3b15-4140-9b3d-43deffc93d9b",
         "entry": [
           {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/28",
             "resource": {
-              "recorded": "2024-05-27T13:55:27.426+02:00",
+              "resourceType": "Provenance",
+              "id": "28",
               "target": [
                 {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/31"
+                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/27"
                 }
-              ],
-              "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "32",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
               ],
               "meta": {
-                "source": "#16621d9d-185c-4f",
-                "lastUpdated": "2024-06-07T11:55:27.443+00:00",
+                "source": "#eb81403f-d6e4-4c",
+                "lastUpdated": "2024-06-17T05:41:37.063+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
                 ],
                 "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/32"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-06-03T07:41:36.986+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/27",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:36+02:00",
+                "start": "2024-06-17T07:41:36+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/2050"
+              },
+              "id": "27",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/65152"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#b7bbebca-a50c-43",
+                "lastUpdated": "2024-06-17T05:41:36.956+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/82641"
+                }
+              ]
+            }
           }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "e4c4f253-3b15-4140-9b3d-43deffc93d9b"
+        ]
+      }
     },
     {
+      "fullUrl": "b515e3be-13f3-4eed-8067-83743581781f",
       "resource": {
+        "resourceType": "Bundle",
+        "id": "b515e3be-13f3-4eed-8067-83743581781f",
         "type": "collection",
-        "id": "c57c6e94-4423-487b-9c29-b25bc8cb3e27",
         "entry": [
           {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/26",
             "resource": {
-              "recorded": "2024-05-28T13:55:27.613+02:00",
+              "resourceType": "Provenance",
+              "id": "26",
               "target": [
                 {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/33"
+                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/25"
                 }
-              ],
-              "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "34",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
               ],
               "meta": {
-                "source": "#d0b8e791-bb0a-46",
-                "lastUpdated": "2024-06-07T11:55:27.632+00:00",
+                "source": "#b505a71c-28f4-45",
+                "lastUpdated": "2024-06-17T05:41:36.791+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
                 ],
                 "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/34"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-06-01T07:41:36.772+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/25",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:36+02:00",
+                "start": "2024-06-17T07:41:36+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/48238"
+              },
+              "id": "25",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/95071"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#589f2ffe-7597-4c",
+                "lastUpdated": "2024-06-17T05:41:36.675+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/44178"
+                }
+              ]
+            }
           }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "c57c6e94-4423-487b-9c29-b25bc8cb3e27"
+        ]
+      }
     },
     {
+      "fullUrl": "2233f5a6-1d86-436d-9b24-0a1b29082160",
       "resource": {
+        "resourceType": "Bundle",
+        "id": "2233f5a6-1d86-436d-9b24-0a1b29082160",
         "type": "collection",
-        "id": "87f27014-00fd-4baf-aa9a-8f4e38206dc6",
         "entry": [
           {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/24",
             "resource": {
-              "recorded": "2024-05-30T13:55:27.762+02:00",
+              "resourceType": "Provenance",
+              "id": "24",
               "target": [
                 {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/35"
+                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/23"
                 }
-              ],
-              "resourceType": "Provenance",
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/96890"
-                  }
-                }
-              ],
-              "id": "36",
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
               ],
               "meta": {
-                "source": "#b3ac45ea-9313-4e",
-                "lastUpdated": "2024-06-07T11:55:27.822+00:00",
+                "source": "#c321fda6-1f04-45",
+                "lastUpdated": "2024-06-17T05:41:36.550+00:00",
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
                 ],
                 "versionId": "1"
-              }
-            },
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/36"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-05-31T07:41:36.480+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/23",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:36+02:00",
+                "start": "2024-06-17T07:41:36+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/66978"
+              },
+              "id": "23",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/55315"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#eba350f6-e680-40",
+                "lastUpdated": "2024-06-17T05:41:36.301+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/52820"
+                }
+              ]
+            }
           }
-        ],
-        "resourceType": "Bundle"
-      },
-      "fullUrl": "87f27014-00fd-4baf-aa9a-8f4e38206dc6"
+        ]
+      }
+    },
+    {
+      "fullUrl": "3624c79a-1647-4ea3-97ef-9c153a5ea210",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "3624c79a-1647-4ea3-97ef-9c153a5ea210",
+        "type": "collection",
+        "entry": [
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/22",
+            "resource": {
+              "resourceType": "Provenance",
+              "id": "22",
+              "target": [
+                {
+                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/21"
+                }
+              ],
+              "meta": {
+                "source": "#92e3dc36-5881-46",
+                "lastUpdated": "2024-06-17T05:41:36.180+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
+                ],
+                "versionId": "1"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-05-30T07:41:36.163+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/21",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:35+02:00",
+                "start": "2024-06-17T07:41:35+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/65032"
+              },
+              "id": "21",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/72530"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#f0aede18-939d-40",
+                "lastUpdated": "2024-06-17T05:41:36.072+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/4423"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "c9afae18-c908-4f2a-a0e7-b9b487195fc4",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "c9afae18-c908-4f2a-a0e7-b9b487195fc4",
+        "type": "collection",
+        "entry": [
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/20",
+            "resource": {
+              "resourceType": "Provenance",
+              "id": "20",
+              "target": [
+                {
+                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/19"
+                }
+              ],
+              "meta": {
+                "source": "#9c9c8c39-fe5d-4d",
+                "lastUpdated": "2024-06-17T05:41:35.953+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
+                ],
+                "versionId": "1"
+              },
+              "agent": [
+                {
+                  "who": {
+                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                  }
+                }
+              ],
+              "policy": [
+                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
+              ],
+              "recorded": "2024-05-28T07:41:35.898+02:00"
+            }
+          },
+          {
+            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/19",
+            "resource": {
+              "resourceType": "Observation",
+              "effectivePeriod": {
+                "end": "2024-06-17T07:41:35+02:00",
+                "start": "2024-06-17T07:41:35+02:00"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+                }
+              ],
+              "status": "final",
+              "device": {
+                "reference": "https://device.local.ehealth.sundhed.dk/fhir/Device/34570"
+              },
+              "id": "19",
+              "extension": [
+                {
+                  "valueReference": {
+                    "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/EpisodeOfCare/5775"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+                },
+                {
+                  "extension": [
+                    {
+                      "valueId": "42",
+                      "url": "serviceRequestVersionId"
+                    },
+                    {
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      },
+                      "url": "type"
+                    }
+                  ],
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing"
+                }
+              ],
+              "subject": {
+                "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
+              },
+              "meta": {
+                "source": "#a124fe94-2f0d-43",
+                "lastUpdated": "2024-06-17T05:41:35.785+00:00",
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ],
+                "versionId": "1"
+              },
+              "basedOn": [
+                {
+                  "reference": "https://careplan.local.ehealth.sundhed.dk/fhir/ServiceRequest/35457"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
-  ],
-  "resourceType": "Bundle"
+  ]
 }
 ```
