@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
 ### Custom operations
+- Added custom operation "search-measurements-bundle-limit" on Measurement service
 #### System operations
 #### Instance operations
 ### Code systems

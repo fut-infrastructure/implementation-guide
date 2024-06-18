@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2024-04-29T02:27:14.161+00:00",
+  "date": "2024-06-14T12:51:39.849+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.15.0"
+    "version": "1.16.0"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -33,7 +33,7 @@
         "code": "create"
       } ],
       "conditionalCreate": true,
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
       "searchParam": [ {
         "name": "_tag",
         "type": "token",
@@ -245,17 +245,48 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
     }, {
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
       "interaction": [ {
+        "code": "search-type"
+      }, {
         "code": "vread"
       }, {
         "code": "read"
       } ],
-      "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
+      "searchInclude": [ "Provenance:target" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
+      "searchParam": [ {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "agent",
+        "type": "reference",
+        "documentation": "Who participated in the activity"
+      }, {
+        "name": "entity",
+        "type": "reference",
+        "documentation": "Identity of entity"
+      }, {
+        "name": "entity-episodeOfCare",
+        "type": "reference",
+        "documentation": "EpisodeOfCare identity of entity"
+      }, {
+        "name": "entity-serviceRequest",
+        "type": "reference",
+        "documentation": "ServiceRequest identity of entity"
+      }, {
+        "name": "recorded",
+        "type": "date",
+        "documentation": "When the activity was recorded / updated"
+      }, {
+        "name": "target",
+        "type": "reference",
+        "documentation": "Target Reference(s) (usually version specific)"
+      } ]
     }, {
       "type": "QuestionnaireResponse",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse",
@@ -355,15 +386,15 @@
     }, {
       "name": "search-measurements",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements",
-      "documentation": "The search-measurements operation searches for bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- device: Find resource(s) referring the specified device - Reference(eHealth Device | eHealth DeviceMetric).\n- period: Resource(s) must have either an instant or time period within or overlapping the given period. The used instant/time period varies with resource as follows: Element effective for eHealth Observation; Element authored for eHealth QuestionnaireResponse; Element occurrence for eHealth Media.\n- based-on: Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\n\"period\" must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" must be specified.\n\n### Output description\n\nThe result of this operation will return a Bundle with a list of nested Bundles having resources matching the search parameters.\n\nEach of the nested bundles will contain the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources.\n\nIf a eHealth QuestionnaireResponse is part of the nested bundle the referenced eHealth Questionnaire will also be included in the nested bundle.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation."
+      "documentation": "The search-measurements operation searches for bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- device: Find resource(s) referring the specified device - Reference(eHealth Device | eHealth DeviceMetric).\n- period: Resource(s) must have either an instant or time period within or overlapping the given period. The used instant/time period varies with resource as follows: Element effective for eHealth Observation; Element authored for eHealth QuestionnaireResponse; Element occurrence for eHealth Media.\n- based-on: Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\n\"period\" must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" must be specified.\n\n### Output description\n\nThe result of this operation returns a Bundle with a list of nested Bundles having resources matching the search parameters.\n\nEach of the nested bundles contains the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources.\n\nIf a eHealth QuestionnaireResponse is part of the nested bundle the referenced eHealth Questionnaire is also included in the nested bundle.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation."
+    }, {
+      "name": "search-measurements-bundle-limit",
+      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements-bundle-limit",
+      "documentation": "The search-measurements-bundle-limit operation searches for a number of bundles of related resources having Observations, Media or QuestionnaireResponses matching the search criteria.\n\n\n### Parameter description\n- patient: Find resource(s) referring the specified patient - Reference(eHealth Patient).\n- episodeOfCare: Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare).\n- count: The number of bundles to return, max allowed value is 100 - Integer.\n- start: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted after this time. The result bundles will be sorted in ascending order - DateTime.\n- end: Based on submitted time / Provenance.recorded. If provided, the operation will search for resource(s) submitted before this time. The result bundles will be sorted in descending order - DateTime.\n- based-on: Resources(s) must be based on any of the specified service requests - Reference(eHealth ServiceRequest).\n- _tag: When specified, resource(s) must have at least one of the specified tags in meta data - for instance a Coding(ehealth-system CodeSystem) or on token form: http://ehealth.sundhed.dk/cs/ehealth-system|xa. Note that the _tag functions as an optional filter, not as a selection criteria in the way the other parameters work.\n\n\nOne of either \"start\" or \"end\", along with the \"count\" parameter must always be specified.\n\nAdditionally at least \"patient\" or \"episodeOfCare\" or \"serviceRequest\" must be specified.\n\n### Output description\n\nThe result of this operation will return a Bundle with a list of nested Bundles having resources matching the search parameters. The number of nested Bundles will depend on the count parameter.\n\nEach of the nested bundles will contain the full set of related eHealth Observation, eHealth Media, eHealth QuestionnaireResponse and eHealth Provenance resources, from the same submission request.\n\nRelated resources are the set of resources created by a single invocation of the submit-measurement operation."
     }, {
       "name": "submit-measurement",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-submit-measurement",
       "documentation": "The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\nAll resources in the Bundle as well as the created Provenance will receive any missing system tags (ehealth-system CodeSystem) provided by the referenced EpisodeOfCare.\nThe request will be denied if any resource in the Bundle contains a system tag, which is not present on the referenced EpisodeOfCare\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction."
-    }, {
-      "name": "process-message",
-      "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
     }, {
       "name": "perform-reindexing-pass",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
