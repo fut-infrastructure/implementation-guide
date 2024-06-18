@@ -12,6 +12,9 @@
   path: POST_search-measurements.html
 
 - profile: system
+  path: POST_search-measurements-bundle-limit.html
+
+- profile: system
   path: POST_submit-measurement.html
 
 - profile: system
@@ -66,13 +69,13 @@
   path: POST_EpisodeOfCare_update-care-teams.html
 
 - profile: system
-  path: POST_EpisodeOfCare_is-context-allowed.md
+  path: POST_EpisodeOfCare_is-context-allowed.html
 
 - profile: system
-  path: POST_Library_evaluate.md
+  path: POST_Library_evaluate.html
 
 - profile: system
-  path: POST_PlanDefinition_apply.md
+  path: POST_PlanDefinition_apply.html
 
 # system reporting
 
