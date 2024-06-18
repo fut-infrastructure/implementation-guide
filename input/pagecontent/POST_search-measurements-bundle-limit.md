@@ -47,37 +47,6 @@ __Response__
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/30",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "30",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/29"
-                }
-              ],
-              "meta": {
-                "source": "#408ec467-6c79-43",
-                "lastUpdated": "2024-06-17T05:41:37.304+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-06-05T07:41:37.286+02:00"
-            }
-          },
-          {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/29",
             "resource": {
               "resourceType": "Observation",
@@ -159,37 +128,6 @@ __Response__
         "id": "2666bbd6-1c51-418a-a32c-ac915dfef6a3",
         "type": "collection",
         "entry": [
-          {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/28",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "28",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/27"
-                }
-              ],
-              "meta": {
-                "source": "#eb81403f-d6e4-4c",
-                "lastUpdated": "2024-06-17T05:41:37.063+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-06-03T07:41:36.986+02:00"
-            }
-          },
           {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/27",
             "resource": {
@@ -273,37 +211,6 @@ __Response__
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/26",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "26",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/25"
-                }
-              ],
-              "meta": {
-                "source": "#b505a71c-28f4-45",
-                "lastUpdated": "2024-06-17T05:41:36.791+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-06-01T07:41:36.772+02:00"
-            }
-          },
-          {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/25",
             "resource": {
               "resourceType": "Observation",
@@ -385,37 +292,6 @@ __Response__
         "id": "2233f5a6-1d86-436d-9b24-0a1b29082160",
         "type": "collection",
         "entry": [
-          {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/24",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "24",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/23"
-                }
-              ],
-              "meta": {
-                "source": "#c321fda6-1f04-45",
-                "lastUpdated": "2024-06-17T05:41:36.550+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-05-31T07:41:36.480+02:00"
-            }
-          },
           {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/23",
             "resource": {
@@ -499,37 +375,6 @@ __Response__
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/22",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "22",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/21"
-                }
-              ],
-              "meta": {
-                "source": "#92e3dc36-5881-46",
-                "lastUpdated": "2024-06-17T05:41:36.180+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-05-30T07:41:36.163+02:00"
-            }
-          },
-          {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/21",
             "resource": {
               "resourceType": "Observation",
@@ -611,37 +456,6 @@ __Response__
         "id": "c9afae18-c908-4f2a-a0e7-b9b487195fc4",
         "type": "collection",
         "entry": [
-          {
-            "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Provenance/20",
-            "resource": {
-              "resourceType": "Provenance",
-              "id": "20",
-              "target": [
-                {
-                  "reference": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/19"
-                }
-              ],
-              "meta": {
-                "source": "#9c9c8c39-fe5d-4d",
-                "lastUpdated": "2024-06-17T05:41:35.953+00:00",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
-                ],
-                "versionId": "1"
-              },
-              "agent": [
-                {
-                  "who": {
-                    "reference": "https://patient.local.ehealth.sundhed.dk/fhir/Patient/8100"
-                  }
-                }
-              ],
-              "policy": [
-                "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement"
-              ],
-              "recorded": "2024-05-28T07:41:35.898+02:00"
-            }
-          },
           {
             "fullUrl": "https://measurement.local.ehealth.sundhed.dk/fhir/Observation/19",
             "resource": {
