@@ -114,6 +114,18 @@ jobs:
           rm -rf web/ig-build-zips/
           rm -rf web/fhir/full-ig.zip
           rm -rf web/fhir/*/full-ig.zip
+      
+      - name: configure publication registry
+        run: |
+          export FUT_DESC=$(yq -r .description ig/sushi-config.yaml)
+          export FUT_AUTHORITY=$(yq -r .publisher.name ig/sushi-config.yaml)
+          echo $FUT_DESC
+          echo $FUT_AUTHORITY
+          echo "$(jq '
+            .guides[-1].description = env.FUT_DESC |
+            .guides[-1].authority = env.FUT_AUTHORITY |
+            .guides[-1].country = "dk"
+          ' registry/ig-registry.json)" > registry/ig-registry.json
 
       - name: commit web publication
         uses: actions-js/push@v1.5
