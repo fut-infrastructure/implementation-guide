@@ -1,0 +1,144 @@
+name: FUT Infrastructure Implementation Guide publish pipeline
+
+on:
+  workflow_dispatch: # Enable manual run
+  push:
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+    tags: [ '[0-9]+.[0-9]+.[0-9]+' ]
+  pull_request:
+    branches: [ master ]
+
+env:
+  # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
+  ig_cmd: java -Xmx4g -jar /input-cache/publisher.jar
+
+jobs:
+  # Check if the IG transpiles without errors
+  check-transpile:
+    name: Transpile IG
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
+    steps:
+      # Checkout the repos needed
+      - uses: actions/checkout@v4
+
+        # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
+      - name: ig transpile
+        run: $ig_cmd -ig .
+
+  # Transpile and publish the IG, if it was pushed to main with a tag
+  release:
+    name: Transpile and publish to the IG release
+    # A release is defined as a tag pushed to main
+    if: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
+    steps:
+      # Checkout the repos needed
+      - uses: actions/checkout@v4
+        with:
+          path: ig
+
+      - name: Set Sushi config release YAML properties
+        uses: fjogeleit/yaml-update-action@v0.14.0
+        with:
+          valueFile: ig/sushi-config.yaml
+          commitChange: false
+          createPR: false
+          changes: |
+            {
+              "version": "${{ github.ref_name }}",
+              "releaseLabel": "release"
+            }
+
+      - name: Update publicaction-request.json with the release version
+        run: |
+          echo "$(jq '
+            .version = env.GITHUB_REF_NAME |
+            .path |= sub("/[0-9\\.]+$"; "/" + env.GITHUB_REF_NAME) |
+            .desc |= sub(" [0-9\\.]+$"; " " + env.GITHUB_REF_NAME)
+          ' ig/publication-request.json)" > ig/publication-request.json
+
+      - name: Print edited config files
+        run: |
+          echo "======================== sushi-config.yaml        ========================"
+          cat ig/sushi-config.yaml
+          echo -n "\n\n======================== publication-request.json ========================\n"
+          cat ig/publication-request.json
+      
+      - name: ig transpile
+        run: $ig_cmd -ig ig/
+
+      - name: Generate app token
+        id: token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: "fut-ig-website,ig-registry"
+
+      - name: web repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/fut-ig-website
+          token: ${{ steps.token.outputs.token }}
+          path: web
+
+      - name: registry repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/ig-registry
+          token: ${{ steps.token.outputs.token }}
+          path: registry
+
+      - name: history repo
+        uses: actions/checkout@v4
+        with:
+          repository: fut-infrastructure/fhir-ig-history-template
+          path: history
+
+      # https://confluence.hl7.org/display/FHIR/HL7+Process+for+Publishing+a+FHIR+IG
+      # https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-CanonicalURLs
+      - name: ig publish
+        run: >-
+          $ig_cmd -go-publish
+          -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
+
+      - name: remove large unnecessary files
+        run: |
+          rm -rf web/ig-build-zips/
+          rm -rf web/fhir/full-ig.zip
+          rm -rf web/fhir/*/full-ig.zip
+      
+      - name: configure publication registry
+        run: |
+          export FUT_DESC=$(yq -r .description ig/sushi-config.yaml)
+          export FUT_AUTHORITY=$(yq -r .publisher.name ig/sushi-config.yaml)
+          echo "$(jq '
+            .guides[-1].description = env.FUT_DESC |
+            .guides[-1].authority = env.FUT_AUTHORITY |
+            .guides[-1].country = "dk"
+          ' registry/fhir-ig-list.json)" > registry/fhir-ig-list.json
+
+      - name: commit web publication
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ steps.token.outputs.token }}
+          author_name: fut-ig-publisher[bot]
+          author_email: ig-publisher[bot]@users.noreply.github.com
+          repository: fut-infrastructure/fut-ig-website
+          directory: web
+
+      - name: commit publication to registry
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ steps.token.outputs.token }}
+          author_name: fut-ig-publisher[bot]
+          author_email: ig-publisher[bot]@users.noreply.github.com
+          repository: fut-infrastructure/ig-registry
+          branch: master
+          directory: registry
