@@ -30,6 +30,38 @@
                 "system": "http://snomed.info/sct/554471000005108/version/20150731",
                 "concept": [
                     {
+                        "code": "658171000005102",
+                        "display": "hjemmepleje"
+                    },
+                    {
+                        "code": "658161000005107",
+                        "display": "hjemmesygepleje"
+                    },
+                    {
+                        "code": "658151000005105",
+                        "display": "sundhedsfremme og forebyggelse"
+                    },
+                    {
+                        "code": "658191000005101",
+                        "display": "sundhedspleje"
+                    },
+                    {
+                        "code": "658201000005103",
+                        "display": "kommunal tandpleje"
+                    },
+                    {
+                        "code": "658141000005108",
+                        "display": "genoptræning efter hospitalsophold"
+                    },
+                    {
+                        "code": "658181000005104",
+                        "display": "hjælpemiddelområdet"
+                    },
+                    {
+                        "code": "2903041000005106",
+                        "display": "det kommunale omsorgs-, social- og sundhedsområde"
+                    },
+                    {
                         "code": "394812008",
                         "display": "Dental medicine specialties",
                         "designation": [

@@ -12,6 +12,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added missing NPU codes to urn:oid:1.2.208.176.2.1 used in concept maps
 - Updated urn:oid:1.2.208.176.2.4 with 11 SKS codes ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ValueSets
+- Updated `http://ehealth.sundhed.dk/vs/sor-organization-specialty` with 8 new codes for the `http://snomed.info/sct` concept (658171000005102, 658161000005107, 658151000005105, 658191000005101, 658201000005103, 658141000005108, 658181000005104, 2903041000005106).
 - Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ConceptMaps
 - Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing 
