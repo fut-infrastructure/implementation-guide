@@ -1,1 +1,0 @@
-* Initial formal release
