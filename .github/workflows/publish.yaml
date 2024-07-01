@@ -125,7 +125,7 @@ jobs:
             .guides[-1].description = env.FUT_DESC |
             .guides[-1].authority = env.FUT_AUTHORITY |
             .guides[-1].country = "dk"
-          ' registry/ig-registry.json)" > registry/ig-registry.json
+          ' registry/fhir-ig-list.json)" > registry/fhir-ig-list.json
 
       - name: commit web publication
         uses: actions-js/push@v1.5
