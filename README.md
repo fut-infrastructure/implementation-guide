@@ -71,8 +71,13 @@ When a new publication version is to be created, the following rules apply:
 
 - All changes must be created as a pull request on master
 - They can only be merged when they have been reviewed/approved
+- This file needs to contain the release notes for the new version: [release-notes.md](release-notes.md)
+  - It will be used on the [history page](https://ehealth.sundhed.dk/fhir/history.html)
+    of the implementation guide.
 - When all changes have been merged to master, a tag with the new SemVer version
   must be created on master
+  - The page [create a new release](https://github.com/fut-infrastructure/implementation-guide/releases/new)
+    can be used to create a new tag with a description of the new release.
 
 That will publish the new version on the HL7 CI/CD infrastructure
 (see the above sections), and on the FUT ehealth documentation website.
