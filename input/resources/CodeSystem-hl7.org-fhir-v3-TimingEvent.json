@@ -17,6 +17,7 @@
   "url": "http://hl7.org/fhir/v3/TimingEvent",
   "version": "2016-11-11",
   "name": "v3 Code System TimingEvent",
+  "title": "v3 Code System TimingEvent",
   "status": "active",
   "experimental": false,
   "date": "2016-11-11T00:00:00+11:00",
