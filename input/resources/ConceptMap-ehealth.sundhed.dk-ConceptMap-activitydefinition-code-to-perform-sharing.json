@@ -62,17 +62,6 @@
           ]
         },
         {
-          "code": "445988008",
-          "display": "Assessment using health assessment questionnaire (procedure)",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "409073007",
           "display": "Instruktion",
           "target": [
@@ -191,6 +180,28 @@
         {
           "code": "NPU03794",
           "display": "Pt—Legeme; højde = ? m",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU08676",
+          "display": "Pt—Legeme; temp. = ? °C",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "C-reaktivt protein [CRP];P",
           "target": [
             {
               "code": "Y",

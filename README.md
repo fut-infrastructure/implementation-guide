@@ -1,3 +1,5 @@
+[![FUT Infrastructure Implementation Guide publish pipeline](https://github.com/fut-infrastructure/implementation-guide/actions/workflows/publish.yaml/badge.svg?event=push)](https://github.com/fut-infrastructure/implementation-guide/actions/workflows/publish.yaml)
+
 ## General documentation for IG layout
 See http://build.fhir.org/ig/FHIR/ig-guidance/index.html
 
@@ -64,7 +66,21 @@ The command for doing the publication is the following:
 Execution takes a couple of minutes. Once done, the content of the `$(pwd)/fut-ig-website` must be committed and pushed to the origin. Now your publication is done.
 
 ## Publication trigger rules - WORK IN PROGRESS
-Publications needs to be triggered by human interaction. Either by approval of merging to master or by tagging on master.
+
+When a new publication version is to be created, the following rules apply:
+
+- All changes must be created as a pull request on master
+- They can only be merged when they have been reviewed/approved
+- This file needs to contain the release notes for the new version: [release-notes.md](release-notes.md)
+  - It will be used on the [history page](https://ehealth.sundhed.dk/fhir/history.html)
+    of the implementation guide.
+- When all changes have been merged to master, a tag with the new SemVer version
+  must be created on master
+  - The page [create a new release](https://github.com/fut-infrastructure/implementation-guide/releases/new)
+    can be used to create a new tag with a description of the new release.
+
+That will publish the new version on the HL7 CI/CD infrastructure
+(see the above sections), and on the FUT ehealth documentation website.
 
 ## General (FUT) development guidelines
 

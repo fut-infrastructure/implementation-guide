@@ -10,9 +10,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added missing NPU codes to urn:oid:1.2.208.176.2.1 used in concept maps
+- Updated urn:oid:1.2.208.176.2.4 with 11 SKS codes ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ValueSets
+- Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ConceptMaps
+- Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing 
 ### Resource/profile changes
+- Expanded the `ehealth-organization-specialty` extension with `primaryIndicator` boolean to allow indication of whether a specialty is the primary for an organization.
 - Added extension ehealth-include-as-extra to ServiceRequest
 - Added extension ehealth-include-as-extra to PlanDefinition.action
 
