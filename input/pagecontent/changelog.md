@@ -5,8 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
 ### Custom operations
-- Updated behavior of custom operation "$get-patient-procedures" on CarePlan service to return extra activites based on resource field includeAsExtra instead of whether activity has resolvable timing.
-- Updated behavior of custom operation "$apply" on Plan/CarePlan service to transfer the value of includeAsExtra field on PlanDefinition.action to the resulting ServiceRequests.
+- Updated $get-patient-procedures behavior on input specifying the optional 'extra' parameter. When 'extra' is true, the operation returns a row for extra activities as determined by ServiceRequest.includeAsExtra.
+- Updated behavior of custom operation "$apply" on Plan/CarePlan service to transfer the value of includeAsExtra element in PlanDefinition.action to the resulting ServiceRequests.includeAsExtra.
 - Added custom operation "search-measurements-bundle-limit" on Measurement service
 - Improved the export and import plan definition operations on Plan service
 #### System operations
