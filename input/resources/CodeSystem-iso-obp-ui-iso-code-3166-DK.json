@@ -4,6 +4,7 @@
   "url": "https://www.iso.org/obp/ui/#iso:code:3166:DK",
   "version": "0.0.1",
   "name": "Regional subdivision codes",
+  "title": "Regional subdivision codes",
   "status": "active",
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
