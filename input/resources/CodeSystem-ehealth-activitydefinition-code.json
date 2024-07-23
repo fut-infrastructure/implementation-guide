@@ -4,6 +4,7 @@
   "url": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
   "version": "2020-02-27T07:13:46",
   "name": "ActivityDefinitionCodes",
+  "title": "Activity Definition Codes",
   "status": "active",
   "experimental": false,
   "date": "2019-01-29T00:00:00+00:00",

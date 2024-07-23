@@ -5,6 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
 ### Custom operations
+- Updated behavior of custom operation "$get-patient-procedures" on CarePlan service to return extra activites based on resource field includeAsExtra instead of whether activity has resolvable timing.
+- Updated behavior of custom operation "$apply" on Plan/CarePlan service to transfer the value of includeAsExtra field on PlanDefinition.action to the resulting ServiceRequests.
 - Added custom operation "search-measurements-bundle-limit" on Measurement service
 - Improved the export and import plan definition operations on Plan service
 #### System operations
@@ -12,12 +14,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added missing NPU codes to urn:oid:1.2.208.176.2.1 used in concept maps
 - Updated urn:oid:1.2.208.176.2.4 with 11 SKS codes ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
+- Added missing title to code systems
 ### ValueSets
 - Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ConceptMaps
 - Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing 
 ### Resource/profile changes
 - Expanded the `ehealth-organization-specialty` extension with `primaryIndicator` boolean to allow indication of whether a specialty is the primary for an organization.
+- Added extension ehealth-include-as-extra to ServiceRequest
+- Added extension ehealth-include-as-extra to PlanDefinition.action
 
 ## 3.1.0 (2024-05-14)
 
