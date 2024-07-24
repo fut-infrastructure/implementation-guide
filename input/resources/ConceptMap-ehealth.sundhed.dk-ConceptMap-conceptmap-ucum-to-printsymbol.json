@@ -170,6 +170,30 @@
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
           ]
+        },
+        {
+          "code": "/d",
+          "display": "per day",
+          "target": [
+            {
+              "code": "/d",
+              "display": "per day",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "/wk",
+          "display": "per week",
+          "target": [
+            {
+              "code": "/wk",
+              "display": "per week",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
         }
       ]
     },
