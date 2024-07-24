@@ -150,6 +150,26 @@
           "value" : "procentpoint"
         }
       ]
+    },
+    {
+      "code" : "/d",
+      "display" : "per day",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "/dag"
+        }
+      ]
+    },
+    {
+      "code" : "/wk",
+      "display" : "per week",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "/uge"
+        }
+      ]
     }
   ]
 }
