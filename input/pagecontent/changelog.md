@@ -14,7 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated urn:oid:1.2.208.176.2.4 with 11 SKS codes ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 - Added missing title to code systems
 - Added missing measurement types (MCS88192, MCS88193, MCS88194) to urn:oid:1.2.208.184.100.8
-- Added two new codes to UCUM printSymbol supplement (/d and /wd)
+- Added two new codes to UCUM printSymbol supplement (/d and /wk)
 ### ValueSets
 - Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
 ### ConceptMaps
@@ -23,7 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added mapping for MCS88192, MCS88193, MCS88194 codes in ConceptMap: Activitydefinition-code to measurement resource type
 - Added mapping for MCS88192, MCS88193, MCS88194 codes in ConceptMap: conceptmap-obs-code-to-value-type
 - Added mapping for MCS88192, MCS88193, MCS88194 codes in ConceptMap: Observation code to UCUM mapping (Experimental)
-- Added mapping for MCS88192, MCS88193, MCS88194 codes in ConceptMap: UCUM code to PrintSymbol mapping (Experimental)
+- Added mapping for /d and /wk codes in ConceptMap: UCUM code to PrintSymbol mapping (Experimental)
 ### Resource/profile changes
 - Expanded the `ehealth-organization-specialty` extension with `primaryIndicator` boolean to allow indication of whether a specialty is the primary for an organization.
 - Added extension ehealth-include-as-extra to ServiceRequest
