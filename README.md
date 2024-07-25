@@ -10,11 +10,16 @@ See https://confluence.hl7.org/display/FHIR/Maintaining+a+FHIR+IG+Publication
 In order to have traceability and not use `latest`or `SNAPSHOT` in the CI version of the IG, the version [here](https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L10) ([at this point in time](https://github.com/fut-infrastructure/implementation-guide/commit/87984511188dce487a2ccbc490d5985981b83aa3)) should be a semantic version + a build number (constructed as a function of time) e.g. `3.3.0-20240516134561`.
 
 ### Location of the master CI/CD build
-See http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/master/index.html
+See http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/master/index.html (master branch also defaults to http://build.fhir.org/ig/fut-infrastructure/implementation-guide/index.html)
 
 All branch builds can be found under http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/
 
 The state of each build can also be found at https://chat.fhir.org/#narrow/stream/179297-committers.2Fnotification/topic/ig-build
+
+Releases of the IG can be found under https://ehealth.sundhed.dk/fhir/history.html where latest released will always be hosted on https://ehealth.sundhed.dk/fhir
+
+Versioned releases will be under https://ehealth.sundhed.dk/fhir/x.y.z . This means that latest released, e.g. 3.2.0 will be under the links https://ehealth.sundhed.dk/fhir AND https://ehealth.sundhed.dk/fhir/3.2.0
+
 
 ### GOTCHA's
 Dont use `/`'s in the branch name as those branches will never be built by the HL7 CI pipeline.
