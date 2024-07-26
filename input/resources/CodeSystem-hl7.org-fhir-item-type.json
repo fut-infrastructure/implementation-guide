@@ -21,6 +21,7 @@
   "url": "http://hl7.org/fhir/item-type",
   "version": "4.0.1",
   "name": "Questionnaire Item Type",
+  "title": "Questionnaire Item Type",
   "status": "active",
   "experimental": false,
   "date": "2019-10-24T11:53:00+11:00",
