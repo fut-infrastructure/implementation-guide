@@ -764,6 +764,12 @@
               "documentation": "Search parameter for finding communication based on participant"
             },
             {
+              "name": "communicationAllPurpose",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/allPurpose",
+              "type": "reference",
+              "documentation": "Search parameter for finding communication based on either participant or episode of care."
+            },
+            {
               "name": "_profile",
               "definition": "http://localhost:8080/fhir//SearchParameter/Communication-_profile",
               "type": "uri",
