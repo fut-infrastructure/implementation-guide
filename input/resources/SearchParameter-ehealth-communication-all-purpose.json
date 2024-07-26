@@ -1,44 +1,16 @@
 {
-  "entry": [
-    {
-      "request": {
-        "ifNoneExist": "url=http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/allPurpose",
-        "url": "SearchParameter",
-        "method": "POST"
-      },
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "ehealth-communication-search-all-purpose",
-        "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/allPurpose",
-        "name": "communicationAllPurpose",
-        "status": "active",
-        "publisher": "Systematic | Trifork",
-        "contact": [
-          {
-            "name": "Systematic | Trifork",
-            "telecom": [
-              {
-                "system": "url",
-                "value": "http://ehealth.sundhed.dk"
-              }
-            ]
-          }
-        ],
-        "description": "Search parameter for finding communication based on either participant or episode of care",
-        "code": "communicationAllPurpose",
-        "base": [
-          "Communication"
-        ],
-        "type": "reference",
-        "expression": "Communication.recipient | Communication.sender | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value | Communication.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare').value",
-        "xpathUsage": "normal"
-      }
-    }
+  "resourceType": "SearchParameter",
+  "id": "ehealth-communication-search-all-purpose",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/allPurpose",
+  "name": "communicationAllPurpose",
+  "status": "active",
+  "date": "2024-07-26T12:44:20+00:00",
+  "code": "communicationAllPurpose",
+  "base": [
+    "Communication"
   ],
-  "type": "transaction",
-  "resourceType": "Bundle",
-  "identifier": {
-    "system": "fut",
-    "value": "bundle-searchparameter-communication-all-purpose"
-  }
+  "type": "reference",
+  "description": "Search parameter for finding communication based on either participant or episode of care",
+  "expression": "Communication.recipient | Communication.sender | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value | Communication.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare').value",
+  "xpathUsage": "normal"
 }
