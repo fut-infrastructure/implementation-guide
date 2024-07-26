@@ -211,6 +211,42 @@
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
           ]
+        },
+        {
+          "code": "MCS88192",
+          "display": "Skridt per dag;Pt",
+          "target": [
+            {
+              "code": "/d",
+              "display": "/d",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88193",
+          "display": "Skridt per uge;Pt",
+          "target": [
+            {
+              "code": "/wk",
+              "display": "/wk",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88194",
+          "display": "Skridt;Pt",
+          "target": [
+            {
+              "code": "{Number}",
+              "display": "Number",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
         }
       ]
     },

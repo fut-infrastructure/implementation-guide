@@ -782,6 +782,21 @@
       "code": "MCS88153",
       "display": "Fodundersøgelse;Pt(diabetes)",
       "definition": "Pt(diabetes)—Fodundersøgelse; arb.akt.(ja;nej;ej relevant) = ?"
+    },
+    {
+      "code": "MCS88192",
+      "display": "Skridt per dag;Pt",
+      "definition": "Pt—Skridt; antal per dag (værdi) = ?"
+    },
+    {
+      "code": "MCS88193",
+      "display": "Skridt per uge;Pt",
+      "definition": "Pt—Skridt; antal per uge (værdi) = ?"
+    },
+    {
+      "code": "MCS88194",
+      "display": "Skridt;Pt",
+      "definition": "Pt—Skridt; antal (værdi) = ?"
     }
   ]
 }
