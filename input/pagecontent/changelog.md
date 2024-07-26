@@ -12,11 +12,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added missing NPU codes to urn:oid:1.2.208.176.2.1 used in concept maps
 - Updated urn:oid:1.2.208.176.2.4 with 11 SKS codes ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
+- Updated ehealth-sor-organization-type CodeSystem with new code 557881000005104
 - Added missing title to code systems
 - Added missing measurement types (MCS88192, MCS88193, MCS88194) to urn:oid:1.2.208.184.100.8
 - Added two new codes to UCUM printSymbol supplement (/d and /wk)
 ### ValueSets
 - Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
+- Updated ehealth-sor-organization-type ValueSet with 3 new Snomed concepts (702916001, 284546000, 272511002)
 ### ConceptMaps
 - Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
 - Added mapping for MCS88192, MCS88193, MCS88194 codes in ConceptMap: Activitydefinition-code to do missing measurement, Activitydefinition-code to do reminder and Activitydefinition-code-to-perform-sharing
