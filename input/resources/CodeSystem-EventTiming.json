@@ -7,6 +7,7 @@
   "url": "http://hl7.org/fhir/event-timing",
   "version": "4.0.1",
   "name": "EventTiming",
+  "title": "Event Timing",
   "status": "active",
   "experimental": false,
   "date": "2016-11-11T00:00:00+11:00",

@@ -10,6 +10,6 @@
   "introduction": "A FHIR Implementation Guide for FUT Infrastructure",
   "desc": "FUT Infrastructure version 3.3.0",
   "descmd": "@release-notes.md",
-  "first": true,
+  "first": false,
   "ci-build": "https://build.fhir.org/ig/fut-infrastructure/implementation-guide/"
 }

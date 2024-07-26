@@ -4,7 +4,8 @@ on:
   workflow_dispatch: # Enable manual run
   push:
     branches: [ master ]
-    tags: ['*']
+    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
+    tags: [ '[0-9]+.[0-9]+.[0-9]+' ]
   pull_request:
     branches: [ master ]
 
@@ -102,6 +103,7 @@ jobs:
           path: history
 
       # https://confluence.hl7.org/display/FHIR/HL7+Process+for+Publishing+a+FHIR+IG
+      # https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-CanonicalURLs
       - name: ig publish
         run: >-
           $ig_cmd -go-publish
@@ -110,8 +112,20 @@ jobs:
       - name: remove large unnecessary files
         run: |
           rm -rf web/ig-build-zips/
-          rm -rf web/core/full-ig.zip
-          rm -rf web/core/*/full-ig.zip
+          rm -rf web/fhir/full-ig.zip
+          rm -rf web/fhir/*/full-ig.zip
+      
+      - name: configure publication registry
+        run: |
+          export FUT_DESC=$(yq -r .description ig/sushi-config.yaml)
+          export FUT_AUTHORITY=$(yq -r .publisher.name ig/sushi-config.yaml)
+          echo $FUT_DESC
+          echo $FUT_AUTHORITY
+          echo "$(jq '
+            .guides[-1].description = env.FUT_DESC |
+            .guides[-1].authority = env.FUT_AUTHORITY |
+            .guides[-1].country = "dk"
+          ' registry/fhir-ig-list.json)" > registry/fhir-ig-list.json
 
       - name: commit web publication
         uses: actions-js/push@v1.5
