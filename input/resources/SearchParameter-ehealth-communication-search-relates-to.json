@@ -1,11 +1,11 @@
 {
   "resourceType": "SearchParameter",
-  "id": "ehealth-communication-search-all-purpose",
-  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/allPurpose",
-  "name": "communicationAllPurpose",
+  "id": "ehealth-communication-search-relates-to",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/relatesTo",
+  "name": "communicationRelatesTo",
   "status": "active",
   "date": "2024-07-26T12:44:20+00:00",
-  "code": "communicationAllPurpose",
+  "code": "communicationRelatesTo",
   "base": [
     "Communication"
   ],

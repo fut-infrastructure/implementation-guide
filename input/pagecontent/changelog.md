@@ -32,7 +32,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-include-as-extra to ServiceRequest
 - Added extension ehealth-include-as-extra to PlanDefinition.action
 ### Search parameters
-- Added search parameter `communicationAllPurpose` on `ehealth-message` (`Communication`) to be able to narrow down search results for a general GET Communication query. This new search parameter also takes into account the episode of care of the communication.
+- Added search parameter `communicationRelatesTo` on `ehealth-message` (`Communication`). This search parameter can be used to search for Communications based on either participant or episodeOfCare.
 ## 3.1.0 (2024-05-14)
 
 ### General changes
