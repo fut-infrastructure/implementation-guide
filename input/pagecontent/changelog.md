@@ -33,7 +33,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Expanded the `ehealth-organization-specialty` extension with `primaryIndicator` boolean to allow indication of whether a specialty is the primary for an organization.
 - Added extension ehealth-include-as-extra to ServiceRequest
 - Added extension ehealth-include-as-extra to PlanDefinition.action
-
+### Search parameters
+- Added search parameter `communicationRelatesTo` on `ehealth-message` (`Communication`). This search parameter can be used to search for Communications based on either participant or episodeOfCare.
 ## 3.1.0 (2024-05-14)
 
 ### General changes

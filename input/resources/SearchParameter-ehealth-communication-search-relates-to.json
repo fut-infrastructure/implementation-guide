@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ehealth-communication-search-relates-to",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/relatesTo",
+  "name": "communicationRelatesTo",
+  "status": "active",
+  "date": "2024-07-26T12:44:20+00:00",
+  "code": "communicationRelatesTo",
+  "base": [
+    "Communication"
+  ],
+  "type": "reference",
+  "description": "Search parameter for finding communication based on either participant or episode of care",
+  "expression": "Communication.recipient | Communication.sender | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value | Communication.extension.where(url='http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare').value",
+  "xpathUsage": "normal"
+}
