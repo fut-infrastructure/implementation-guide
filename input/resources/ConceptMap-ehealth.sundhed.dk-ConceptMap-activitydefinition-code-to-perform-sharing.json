@@ -314,6 +314,39 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "MCS88192",
+          "display": "Skridt per dag;Pt",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88193",
+          "display": "Skridt per uge;Pt",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88194",
+          "display": "Skridt;Pt",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },

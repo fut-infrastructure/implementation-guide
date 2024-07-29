@@ -37,6 +37,11 @@
       "code": "56781000005109",
       "display": "Abuse treatment center",
       "definition": "Abuse treatment center"
+    },
+    {
+      "code": "557881000005104",
+      "display": "COVID-19-testenhed",
+      "definition": "COVID-19-testenhed"
     }
   ]
 }
