@@ -19,10 +19,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added missing measurement types (MCS88192, MCS88193, MCS88194) to urn:oid:1.2.208.184.100.8
 - Added two new codes to UCUM printSymbol supplement (/d and /wk)
 ### ValueSets
-- Updated `http://ehealth.sundhed.dk/vs/sor-organization-specialty` with 8 new codes for the `http://snomed.info/sct` concept (658171000005102, 658161000005107, 658151000005105, 658191000005101, 658201000005103, 658141000005108, 658181000005104, 2903041000005106).
+- Updated `http://ehealth.sundhed.dk/vs/sor-organization-specialty` with 8 codes for municipal specialties
 - Updated ehealth-conditions ValueSet with 11 SKS codes from the urn:oid:1.2.208.176.2.4 system ("DF00","DF10","DF20","DF30","DF40","DF50","DF60","DF70","DF80","DF90","DF99")
-- Updated ValueSet-sundhedsdatastyrelsen-dk-ihe-classcode-vs with 8 new specialty codes (658171000005102, 658161000005107, 658151000005105, 658191000005101, 658201000005103, 658141000005108, 658181000005104, 2903041000005106)
-- Updated ehealth-sor-organization-type ValueSet with 3 new Snomed concepts (702916001, 284546000, 272511002)
+- Updated http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-practicesettingcode-vs with 8 codes for municipal specialties
+- Updated ehealth-sor-organization-type ValueSet with 3 SNOMED CT concepts (702916001, 284546000, 272511002)
 
 ### ConceptMaps
 - Removed mapping for non-existing code 445988008 in http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
