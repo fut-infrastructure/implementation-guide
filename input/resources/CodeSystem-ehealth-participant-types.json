@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-participant-types",
+  "url": "http://ehealth.sundhed.dk/cs/participant-types",
+  "version": "1.0",
+  "name": "ParticipantTypes",
+  "title": "Participant Types",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-08-05T00:00:00+00:00",
+  "publisher": "eHealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Participant type codes",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CareTeam",
+      "display": "CareTeam"
+    },
+    {
+      "code": "Organization",
+      "display": "Organization"
+    },
+    {
+      "code": "Patient",
+      "display": "Patient"
+    },
+    {
+      "code": "Practitioner",
+      "display": "Practitioner"
+    },
+    {
+      "code": "RelatedPerson",
+      "display": "RelatedPerson"
+    }
+  ]
+}

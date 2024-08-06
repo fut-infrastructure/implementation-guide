@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "id": "participant-function",
+  "url": "http://ehealth.sundhed.dk/cs/participant-function",
+  "version": "1.0",
+  "name": "ParticipantFunction",
+  "title": "Participant Function",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-02-26T00:00:00+00:00",
+  "publisher": "eHealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "The function of the participant (primay / secondary contact).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/participant-function"
+      }
+    ]
+  }
+}
