@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2024-04-29T02:42:23.634+00:00",
+  "date": "2024-08-06T03:06:01.061+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.2.0"
+    "version": "2.3.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -589,10 +589,6 @@
       "name": "migrate",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
-    }, {
-      "name": "process-message",
-      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
     }, {
       "name": "perform-reindexing-pass",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",

@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2024-04-29T02:22:32.922+00:00",
+  "date": "2024-08-06T02:22:43.738+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.9.8"
+    "version": "1.9.10"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -164,10 +164,6 @@
       "code": "history-system"
     } ],
     "operation": [ {
-      "name": "process-message",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
-    }, {
       "name": "perform-reindexing-pass",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
       "documentation": "Forces a single pass of the resource reindexing processor"
