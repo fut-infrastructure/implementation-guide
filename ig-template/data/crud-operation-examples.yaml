@@ -1,3 +1,16 @@
+#ehealth-basic
+- profile: ehealth-basic
+  path: GET_Basic_search.md
+
+- profile: ehealth-basic
+  path: GET_Basic_version.md
+
+- profile: ehealth-basic
+  path: POST_Basic.md
+
+- profile: ehealth-basic
+  path: PUT_Basic.md
+
 # ehealth-activitydefinition
 - profile: ehealth-activitydefinition
   path: GET_ActivityDefinition.md

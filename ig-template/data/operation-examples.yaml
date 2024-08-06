@@ -9,6 +9,9 @@
   path: POST_migrate.html
 
 - profile: system
+  path: POST_migrate-list.html
+
+- profile: system
   path: POST_search-measurements.html
 
 - profile: system
