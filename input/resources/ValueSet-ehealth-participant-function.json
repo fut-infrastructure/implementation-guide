@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "participant-function",
-  "url": "http://ehealth.sundhed.dk/cs/participant-function",
+  "url": "http://ehealth.sundhed.dk/vs/participant-function",
   "version": "1.0",
   "name": "ParticipantFunction",
   "title": "Participant Function",
