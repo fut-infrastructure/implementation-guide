@@ -74,6 +74,10 @@
 
 - `CARETEAM_GENERAL_EXTERNAL_SECURITY_TOKEN_CARETEAM_IDENTIFIER_SYSTEM_IS_MISSING`: The CareTeam must contain an identifier using system "urn:ietf:rfc:3986"
 
+#### ehealth-cda
+
+- `CDA_XML_VALIDATION_FAILED`: Validation of the CDA XML failed: %s
+
 #### ehealth-communicationrequest
 
 - `COMMUNICATIONREQUEST_CONTEXT_NOT_MATCHING_SERVICEREQUEST`: The context for the CommunicationRequest: %s does not match the context of the referenced ServiceRequest: %s
@@ -188,9 +192,17 @@
 
 - `MEASUREMENT_SEARCHMEASUREMENT_PATIENT_AND_EPISODE_NOT_SPECIFIED`: At least patient or episodeOfCare must be specified
 
-- `MEASUREMENT_SEARCHMEASUREMENT_UNSUPPORTED_PATIENT_REFERENCE`: Unsupported patient reference
+- `MEASUREMENT_SEARCHMEASUREMENT_PATIENT_AND_EPISODE_AND_SERVICEREQUEST_NOT_SPECIFIED`: At least one patient, episodeOfCare or serviceRequest must be specified
 
-- `MEASUREMENT_SEARCHMEASUREMENT_UNSUPPORTED_EPISODEOFCARE_REFERENCE`: Unsupported episodeOfCare reference
+- `MEASUREMENT_SEARCHMEASUREMENT_COUNT_NOT_SPECIFIED`: A positive number for Count must be specified
+
+- `MEASUREMENT_SEARCHMEASUREMENT_COUNT_LIMIT_EXCEEDED`: Count limit of 100 exceeded
+
+- `MEASUREMENT_SEARCHMEASUREMENT_START_OR_END_NOT_SPECIFIED`: Either start or end must be provided, but none was provided
+
+- `MEASUREMENT_SEARCHMEASUREMENT_START_AND_END_BOTH_SPECIFIED`: Both start and end cannot be specified
+
+- `MEASUREMENT_SEARCHMEASUREMENT_UNSUPPORTED_REFERENCE`: Unsupported resource reference, expected %s but was %s
 
 - `MEASUREMENT_SEARCHMEASUREMENT_UNSUPPORTED_DEVICE_REFERENCE`: Unsupported device reference
 
@@ -254,7 +266,15 @@
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INVALID_RESOLVED_TIMING`: ResolvedTiming must have either type=Resolved and start/end or type=Unresolved/Adhoc/Extra and no start/end
 
+- `MEASUREMENT_SUBMITMEASUREMENT_TOO_MANY_ANSWERS`: QuestionnaireResponse: %s has too many answers for the item with linkId: %s
+
+- `MEASUREMENT_SUBMITMEASUREMENT_TOO_FEW_ANSWERS`: QuestionnaireResponse: %s has too few answers for the item with linkId: %s
+
 - `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
+
+#### ehealth-observation
+
+- `OBSERVATION_MEDIA_NOT_SUPPORTED_MESSAGE`: Measurement was of media type. This was not translated to an observation since it is not supported in FHIR
 
 #### ehealth-organization
 
@@ -293,6 +313,12 @@
 - `PROVENANCE_NO_SEARCH_PRIVILEGE`: User must be logged in with the provenance search privilege
 
 - `PROVENANCE_SEARCH_DATA_NOT_MATCH_CONTEXT`: The target property should match to the episode of care in context
+
+#### ehealth-qfdd
+
+- `QFDD_NARRATIVE_MISSING_TEXT_ERROR`: Information section does not have a text element. LinkId: %s
+
+- `QFDD_NARRATIVE_MISSING_EXTENSION_ERROR`: Information section does not have a rendering-xhtml extension. LinkId: %s
 
 #### ehealth-questionnaire
 
@@ -394,11 +420,21 @@
 
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_NO_DOCUMENT_FOUND`: No matching document found
 
+- `TRANSFORMATION_QFDD_UNKNOWN_QUESTION_TYPE`: Unknown QFDD question type. Question id: %s
+
+- `TRANSFORMATION_QFDD_UNSUPPORTED_STRUCTURE`: The root item structure was neither an Information Only Section nor a Question Section. LinkId:  %s
+
 - `TRANSFORMATION_QFDD_XML_MISSING`: Invalid input document reference, it must contain content with data of QFDD xml
 
 - `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_MISSING_STEPVALUE`: Questionnaire item with linkId '%s' has itemControl: 'slider' but has no step value extension.
 
-- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider' but maxOccursValue is not 1. Was: %s.
+- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider' but either repeats if true. Was: %s. or maxOccursValue is larger than 1. Was: %s.
+
+- `TRANSFORMATION_QFDD_CODESYSTEM_TITLE_MISSING`: CodeSystem title is missing, for CodeSystem with url: %s
+
+- `TRANSFORMATION_QFDD_QUESTION_NARRATIVE_FILE_TEMPLATE_ERROR`: Template for question section narrative can't be found or written.
+
+- `TRANSFORMATION_QFDD_QUESTION_NARRATIVE_TEMPLATE_SYNTAX_ERROR`: Could not process template for question section narrative due to syntax errors or missing variables
 
 - `TRANSFORMATION_QRD_INVALID_INPUT_PARAMETERS`: Input bundle should contain just one EHealthComposition, EHealthQuestionnaireResponse, EHealthQuestionnaire and DocumentReference(QFDD).
 
@@ -486,7 +522,9 @@
 
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_CODING`: Observation.observationRanges[x].type.coding.system should be http://www.example.com/medcom/message-codes
 
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES`: Observation ranges should not have both High and Low set when transforming to PHRM, but High is: %s, and Low is: %s
+- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_RAL`: RAL observation ranges should not have both High and Low set when transforming to PHRM, but High is: %s, and Low is: %s
+
+- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_GAL`: GAL observation ranges should not have both High and Low set when transforming to PHRM, unless either bound is replaced with a RAL reference range, but High is: %s, and Low is: %s
 
 - `TRANSFORMATION_PHMR_INVALID_NUMBER_OF_DECIMALS`: Value should have no more than 7 decimals, but is: %s
 
@@ -503,6 +541,8 @@
 - `TRANSFORMATION_PHMR_DOCUMENT_INVALID_EFFECTIVE`: Invalid Observation.effective, expecting DateTime, Period or Instant
 
 - `TRANSFORMATION_PHMR_MEASUREMENT_INVALID_METHOD_CODES`: Method codes for performerType and provisionMethod for observation with id '%s' could not be established.
+
+- `TRANSFORMATION_PHMR_MEASUREMENT_TOO_MANY_DECIMALS`: Could not transform measurement with reference range Low: %s and High: %s since we cannot correctly translate more than 7 decimals.
 
 - `TRANSFORMATION_HEADER_MISSING_CONFIDENTIALITY_CODE`: Composition.confidentiality is mandatory
 
@@ -529,6 +569,14 @@
 - `TRANSFORMATION_XDS_PROPERTY_MISSING_EXCEPTION`: '%s' is missing which is required for document sharing. DocumentReference id: '%s'.
 
 - `TRANSFORMATION_XDS_PROPERTY_CODE_INVALID_EXCEPTION`: '%s' is required for document sharing but the specified coding is not valid for the valueSet '%s': system=%s, code=%s, display=%s. DocumentReference id: '%s'
+
+- `TRANSFORMATION_FROM_XHTML_TO_CDA_XML_FAILED`: Unable to transform XHTML to CDA XML format
+
+- `TRANSFORMATION_FROM_CDA_XML_TO_XHTML_FAILED`: Unable to tranform CDA XML to XHTML format
+
+- `TRANSFORMATION_XSLT_CONFIGURATION_ERROR`: Error creating XLST transformer: %s
+
+- `TRANSFORMATION_XSD_CONFIGURATION_ERROR`: Error creating XSD transformer: %s
 
 - `TRANSFORMATION_APD_XML_MISSING`: Invalid input document reference, it must contain content with data of APD xml
 
