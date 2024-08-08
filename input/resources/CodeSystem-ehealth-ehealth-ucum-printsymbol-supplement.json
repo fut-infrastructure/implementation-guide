@@ -1,173 +1,158 @@
 {
-  "resourceType" : "CodeSystem",
-  "id" : "ehealth-ucum-printsymbol-supplement",
-  "url" : "http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement",
-  "version" : "0.6.0",
-  "name" : "UCUMPrintSymbolSupplement",
-  "title" : "UCUM printSymbol supplement",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2019-01-29T00:00:00+00:00",
-  "publisher" : "ehealth.sundhed.dk",
-  "contact" : [
+  "resourceType": "CodeSystem",
+  "id": "ehealth-ucum-printsymbol-supplement",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ehealth-ucum-printsymbol-supplement</b></p><a name=\"ehealth-ucum-printsymbol-supplement\"> </a><a name=\"hcehealth-ucum-printsymbol-supplement\"> </a><a name=\"ehealth-ucum-printsymbol-supplement-en-US\"> </a><p>This case-sensitive code system <code>http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">%<a name=\"ehealth-ucum-printsymbol-supplement-.37\"> </a></td><td>percent</td><td>%</td></tr><tr><td style=\"white-space:nowrap\">/min<a name=\"ehealth-ucum-printsymbol-supplement-.47min\"> </a></td><td>per minute</td><td>/min</td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"ehealth-ucum-printsymbol-supplement-kg\"> </a></td><td>kilogram</td><td>kg</td></tr><tr><td style=\"white-space:nowrap\">kg/m2<a name=\"ehealth-ucum-printsymbol-supplement-kg.47m2\"> </a></td><td>kilogram / (meter ^ 2)</td><td>kg/m2</td></tr><tr><td style=\"white-space:nowrap\">m<a name=\"ehealth-ucum-printsymbol-supplement-m\"> </a></td><td>meter</td><td>m</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"ehealth-ucum-printsymbol-supplement-L\"> </a></td><td>liter</td><td>l</td></tr><tr><td style=\"white-space:nowrap\">{ratio}<a name=\"ehealth-ucum-printsymbol-supplement-.123ratio.125\"> </a></td><td>ratio</td><td/></tr><tr><td style=\"white-space:nowrap\">mm[Hg]<a name=\"ehealth-ucum-printsymbol-supplement-mm.91Hg.93\"> </a></td><td>millimeter of mercury</td><td>mmHg</td></tr><tr><td style=\"white-space:nowrap\">{Number}<a name=\"ehealth-ucum-printsymbol-supplement-.123Number.125\"> </a></td><td>Number</td><td/></tr><tr><td style=\"white-space:nowrap\">1/30sec<a name=\"ehealth-ucum-printsymbol-supplement-1.4730sec\"> </a></td><td>one per 30 seconds</td><td>1/ 30sek</td></tr><tr><td style=\"white-space:nowrap\">1/min<a name=\"ehealth-ucum-printsymbol-supplement-1.47min\"> </a></td><td>one per minute</td><td>1/min</td></tr><tr><td style=\"white-space:nowrap\">Cel<a name=\"ehealth-ucum-printsymbol-supplement-Cel\"> </a></td><td>degree Celcius</td><td>°C</td></tr><tr><td style=\"white-space:nowrap\">mg/L<a name=\"ehealth-ucum-printsymbol-supplement-mg.47L\"> </a></td><td>milligram per liter</td><td>mg/L</td></tr><tr><td style=\"white-space:nowrap\">percentpoint<a name=\"ehealth-ucum-printsymbol-supplement-percentpoint\"> </a></td><td>percent point</td><td>procentpoint</td></tr><tr><td style=\"white-space:nowrap\">/d<a name=\"ehealth-ucum-printsymbol-supplement-.47d\"> </a></td><td>per day</td><td>/dag</td></tr><tr><td style=\"white-space:nowrap\">/wk<a name=\"ehealth-ucum-printsymbol-supplement-.47wk\"> </a></td><td>per week</td><td>/uge</td></tr></table></div>"
+  },
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement",
+  "version": "3.3.0",
+  "name": "UCUMPrintSymbolSupplement",
+  "title": "UCUM printSymbol supplement",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+  "contact": [
     {
-      "telecom" : [
+      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+      "telecom": [
         {
-          "system" : "url",
-          "value" : "http://ehealth.sundhed.dk/terminology"
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk"
         }
       ]
     }
   ],
-  "description" : "UCUM printSymbol supplement",
-  "caseSensitive" : true,
-  "content" : "complete",
-  "concept" : [
+  "description": "UCUM printSymbol supplement",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
     {
-      "code" : "%",
-      "display" : "percent",
-      "designation" : [
+      "code": "%",
+      "display": "percent",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "%"
+          "language": "da",
+          "value": "%"
         }
       ]
     },
     {
-      "code" : "/min",
-      "display" : "per minute",
-      "designation" : [
+      "code": "/min",
+      "display": "per minute",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "/min"
+          "language": "da",
+          "value": "/min"
         }
       ]
     },
     {
-      "code" : "kg",
-      "display" : "kilogram",
-      "designation" : [
+      "code": "kg",
+      "display": "kilogram",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "kg"
+          "language": "da",
+          "value": "kg"
         }
       ]
     },
     {
-      "code" : "kg/m2",
-      "display" : "kilogram / (meter ^ 2)",
-      "designation" : [
+      "code": "kg/m2",
+      "display": "kilogram / (meter ^ 2)",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "kg/m2"
+          "language": "da",
+          "value": "kg/m2"
         }
       ]
     },
     {
-      "code" : "m",
-      "display" : "meter",
-      "designation" : [
+      "code": "m",
+      "display": "meter",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "m"
+          "language": "da",
+          "value": "m"
         }
       ]
     },
     {
-      "code" : "L",
-      "display" : "liter",
-      "designation" : [
+      "code": "L",
+      "display": "liter",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "l"
+          "language": "da",
+          "value": "l"
         }
       ]
     },
     {
-      "code" : "{ratio}",
-      "display" : "ratio"
+      "code": "{ratio}",
+      "display": "ratio"
     },
     {
-      "code" : "mm[Hg]",
-      "display" : "millimeter of mercury",
-      "designation" : [
+      "code": "mm[Hg]",
+      "display": "millimeter of mercury",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "mmHg"
+          "language": "da",
+          "value": "mmHg"
         }
       ]
     },
     {
-      "code" : "{Number}",
-      "display" : "Number"
+      "code": "{Number}",
+      "display": "Number"
     },
     {
-      "code" : "1/30sec",
-      "display" : "one per 30 seconds",
-      "designation" : [
+      "code": "1/30sec",
+      "display": "one per 30 seconds",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "1/ 30sek"
+          "language": "da",
+          "value": "1/ 30sek"
         }
       ]
     },
     {
-      "code" : "1/min",
-      "display" : "one per minute",
-      "designation" : [
+      "code": "1/min",
+      "display": "one per minute",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "1/min"
+          "language": "da",
+          "value": "1/min"
         }
       ]
     },
     {
-      "code" : "Cel",
-      "display" : "degree Celcius",
-      "designation" : [
+      "code": "Cel",
+      "display": "degree Celcius",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "°C"
+          "language": "da",
+          "value": "°C"
         }
       ]
     },
     {
-      "code" : "mg/L",
-      "display" : "milligram per liter",
-      "designation" : [
+      "code": "mg/L",
+      "display": "milligram per liter",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "mg/L"
+          "language": "da",
+          "value": "mg/L"
         }
       ]
     },
     {
-      "code" : "percentpoint",
-      "display" : "percent point",
-      "designation" : [
+      "code": "percentpoint",
+      "display": "percent point",
+      "designation": [
         {
-          "language" : "da",
-          "value" : "procentpoint"
-        }
-      ]
-    },
-    {
-      "code" : "/d",
-      "display" : "per day",
-      "designation" : [
-        {
-          "language" : "da",
-          "value" : "/dag"
-        }
-      ]
-    },
-    {
-      "code" : "/wk",
-      "display" : "per week",
-      "designation" : [
-        {
-          "language" : "da",
-          "value" : "/uge"
+          "language": "da",
+          "value": "procentpoint"
         }
       ]
     }
