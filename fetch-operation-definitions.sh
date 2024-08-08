@@ -8,7 +8,7 @@ services_for_capability="careplan device document-query document-transformation 
 services="careplan device document-query document-transformation library measurement organization plan questionnaire reporting task"
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
 
-dir=fsh-content/input/resources
+dir=input/resources
 
 IG_PATH=$(pwd)
 

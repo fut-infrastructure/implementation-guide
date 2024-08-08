@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODU0MjM1YmUtMWJhYi00Yjc3LTkyOTYtZWViOTc4MWFkZDVkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjdkMmViMmQtNjlhOC00OTI5LThhZWYtNmNkYWY4M2VkZjBjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk1lZGlhLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -28,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-1730.local/fhir/EpisodeOfCare/81156"
+              "reference": "https://careplan.cit-measurement-1826.local/fhir/EpisodeOfCare/793"
             }
           },
           {
@@ -81,7 +81,7 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-1730.local/fhir/ServiceRequest/59772"
+            "reference": "https://careplan.cit-measurement-1826.local/fhir/ServiceRequest/85553"
           }
         ],
         "status": "completed",
@@ -94,9 +94,9 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-measurement-1730.local/fhir/Patient/80545"
+          "reference": "https://patient.cit-measurement-1826.local/fhir/Patient/25920"
         },
-        "createdDateTime": "2024-04-23T12:53:47+00:00",
+        "createdDateTime": "2024-07-29T09:08:25+00:00",
         "content": {
           "language": "en"
         }
@@ -112,7 +112,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>No issues detected during validation</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>No issues detected during validation</td></tr></table></div>"
   },
   "issue": [
     {

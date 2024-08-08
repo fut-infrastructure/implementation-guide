@@ -1,49 +1,125 @@
 {
-  "resourceType": "CodeSystem",
+  "resourceType": "ValueSet",
   "id": "ehealth-conditions",
-  "url": "http://ehealth.sundhed.dk/cs/conditions",
-  "version": "0.6.0",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ehealth-conditions</b></p><a name=\"ehealth-conditions\"> </a><a name=\"hcehealth-conditions\"> </a><a name=\"ehealth-conditions-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html\"><code>urn:oid:1.2.208.176.2.4</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DE10\">DE10</a></td><td>Type 1-diabetes</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DE11\">DE11</a></td><td>Type 2-diabetes</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF00\">DF00</a></td><td>Demens ved Alzheimers sygdom</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF10\">DF10</a></td><td>Psykiske lidelser og adfærdsmæssige forstyrrelser forårsaget af brug af alkohol</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF20\">DF20</a></td><td>Skizofreni</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF30\">DF30</a></td><td>Manisk enkeltepisode</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF40\">DF40</a></td><td>Fobiske angsttilstande</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF50\">DF50</a></td><td>Spiseforstyrrelser</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF60\">DF60</a></td><td>Specifikke forstyrrelser af personlighedsstrukturen</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF70\">DF70</a></td><td>Mental retardering af lettere grad</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF80\">DF80</a></td><td>Specifikke udviklingsforstyrrelser af tale og sprog</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF90\">DF90</a></td><td>Hyperkinetiske forstyrrelser</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DF99\">DF99</a></td><td>Ikke nærmere specificerede psykiske lidelser</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DJ44\">DJ44</a></td><td>Kronisk obstruktiv lungesygdom</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DI20\">DI20</a></td><td>Angina pectoris</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DI25\">DI25</a></td><td>Kronisk iskæmisk hjertesygdom</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DI50\">DI50</a></td><td>Hjertesvigt</td></tr><tr><td><a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html#urn-oid-1.2.208.176.2.4-DZ76\">DZ76</a></td><td>Personer i kontakt med sundhedsvæsenet af andre årsager</td></tr></table></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-F\">F</a></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-J1\">J1</a></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-J2\">J2</a></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-J3\">J3</a></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-J4\">J4</a></li><li>Include codes from<a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html\"><code>http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII</code></a> where concept  is-a <a href=\"CodeSystem-kl.dk-fhir-common-caresocial-CodeSystem-FSIII.html#kl.dk-fhir-common-caresocial-CodeSystem-FSIII-J5\">J5</a></li></ul></div>"
+  },
+  "url": "http://ehealth.sundhed.dk/vs/conditions",
+  "version": "3.3.0",
   "name": "Conditions",
   "title": "Conditions",
   "status": "active",
   "experimental": false,
-  "date": "2019-01-29T00:00:00+00:00",
-  "publisher": "ehealth.sundhed.dk",
+  "date": "2019-02-08T00:00:00+00:00",
+  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
   "contact": [
     {
+      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ehealth.sundhed.dk/terminology"
+          "value": "http://ehealth.sundhed.dk"
         }
       ]
     }
   ],
-  "description": "Condition codes",
-  "caseSensitive": true,
-  "content": "complete",
-  "concept": [
-    {
-      "code": "TBD",
-      "display": "Example value - Under construction",
-      "definition": "Example value - Under construction",
-      "property": [
-        {
-          "code": "deprecated",
-          "valueDateTime": "2020-02-03"
-        }
-      ]
-    },
-    {
-      "code": "TBD2",
-      "display": "Example value 2 - Under construction",
-      "definition": "Example value 2 - Under construction",
-      "property": [
-        {
-          "code": "deprecated",
-          "valueDateTime": "2020-02-03"
-        }
-      ]
-    }
-  ]
+  "description": "Conditions.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DE10",
+            "display": "Type 1-diabetes"
+          },
+          {
+            "code": "DE11",
+            "display": "Type 2-diabetes"
+          },
+          {
+            "code": "DJ44",
+            "display": "Kronisk obstruktiv lungesygdom"
+          },
+          {
+            "code": "DI20",
+            "display": "Angina pectoris"
+          },
+          {
+            "code": "DI25",
+            "display": "Kronisk iskæmisk hjertesygdom"
+          },
+          {
+            "code": "DI50",
+            "display": "Hjertesvigt"
+          },
+          {
+            "code": "DZ76",
+            "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J1"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J2"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J3"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J4"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J5"
+          }
+        ]
+      }
+    ]
+  }
 }

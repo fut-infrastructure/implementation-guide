@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVBITVIiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIiR0cmFuc2Zvcm0tdG8tUEhNUiJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVBITVIiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIiR0cmFuc2Zvcm0tdG8tUEhNUiJdfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-04-26T08:00:51.534+00:00",
+        "date": "2024-07-29T08:33:01.470+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "307547cd-024e-482c-a764-cf50d5006e16",
+        "id": "30937f43-4168-4fea-a7cb-1e991e8d3b2c",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -259,25 +259,35 @@ __Response__
           }
         ],
         "title": "Hjemmemonitorering for 2512489996",
+        "confidentiality": "N",
         "custodian": {
           "reference": "#4"
-        }
+        },
+        "event": [
+          {
+            "period": {
+              "start": "2019-04-09T10:10:10+00:00",
+              "end": "2019-04-09T10:30:10+00:00"
+            }
+          }
+        ]
       }
     },
     {
       "resource": {
         "resourceType": "Device",
-        "id": "3c58f7fe-402b-4f38-ad1d-34fae0644c4a",
+        "id": "#3",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
           ]
         },
-        "lotNumber": "MCI00005",
-        "modelNumber": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
+        "manufacturer": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
+        "serialNumber": "MCI00005",
         "type": {
           "coding": [
             {
+              "system": "urn:oid:1.2.208.184.100.3",
               "code": "MCI00005",
               "display": "MedCom Instrument Codes"
             }
@@ -293,7 +303,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b77e45ec-0243-4881-9385-c17ffa2ab585",
+        "id": "d264d3a6-d758-4041-96ef-0fe2b87e9713",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -347,6 +357,31 @@ __Response__
                 "country": "Danmark"
               }
             ]
+          },
+          {
+            "resourceType": "Device",
+            "id": "3",
+            "meta": {
+              "profile": [
+                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
+              ]
+            },
+            "manufacturer": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
+            "serialNumber": "MCI00005",
+            "type": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.208.184.100.3",
+                  "code": "MCI00005",
+                  "display": "MedCom Instrument Codes"
+                }
+              ]
+            },
+            "version": [
+              {
+                "value": "SerialNr: N/A / SW Rev. N/A"
+              }
+            ]
           }
         ],
         "extension": [
@@ -360,7 +395,7 @@ __Response__
                     {
                       "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "UQ",
-                      "display": "Usage Quality"
+                      "display": "Usage quality"
                     }
                   ]
                 }
@@ -382,8 +417,11 @@ __Response__
         ],
         "identifier": [
           {
-            "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-            "value": "4eea5cb0-2e67-11e6-bdf4-0800200c9a66"
+            "system": "urn:oid:1.2.208.184",
+            "value": "4eea5cb0-2e67-11e6-bdf4-0800200c9a66",
+            "assigner": {
+              "reference": "https://document-transformation.cit-document-transformation-2592.local/fhir/Organization/76725"
+            }
           }
         ],
         "status": "final",
@@ -406,18 +444,18 @@ __Response__
           }
         ],
         "valueQuantity": {
-          "value": 0.97,
-          "unit": "NA"
+          "value": 97,
+          "unit": "%"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-2250.local/fhir/Device/3c58f7fe-402b-4f38-ad1d-34fae0644c4a"
+          "reference": "#3"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b7dd49c9-3276-4244-9c40-5f2e4a24018f",
+        "id": "58983381-ffdb-4f7f-8b3a-88e6fa96a3f8",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -471,6 +509,31 @@ __Response__
                 "country": "Danmark"
               }
             ]
+          },
+          {
+            "resourceType": "Device",
+            "id": "3",
+            "meta": {
+              "profile": [
+                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
+              ]
+            },
+            "manufacturer": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
+            "serialNumber": "MCI00005",
+            "type": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.208.184.100.3",
+                  "code": "MCI00005",
+                  "display": "MedCom Instrument Codes"
+                }
+              ]
+            },
+            "version": [
+              {
+                "value": "SerialNr: N/A / SW Rev. N/A"
+              }
+            ]
           }
         ],
         "extension": [
@@ -484,7 +547,7 @@ __Response__
                     {
                       "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "UQ",
-                      "display": "Usage Quality"
+                      "display": "Usage quality"
                     }
                   ]
                 }
@@ -506,8 +569,11 @@ __Response__
         ],
         "identifier": [
           {
-            "system": "http://ehealth.sundhed.dk/id/ehealth-identifier",
-            "value": "4eea5cb1-2e67-11e6-bdf4-0800200c9a66"
+            "system": "urn:oid:1.2.208.184",
+            "value": "4eea5cb1-2e67-11e6-bdf4-0800200c9a66",
+            "assigner": {
+              "reference": "https://document-transformation.cit-document-transformation-2592.local/fhir/Organization/76725"
+            }
           }
         ],
         "status": "final",
@@ -530,18 +596,18 @@ __Response__
           }
         ],
         "valueQuantity": {
-          "value": 0.92,
-          "unit": "NA"
+          "value": 92,
+          "unit": "%"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-2250.local/fhir/Device/3c58f7fe-402b-4f38-ad1d-34fae0644c4a"
+          "reference": "#3"
         }
       }
     },
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b0d514e3-f4ab-45cc-ad62-4b75482a7892",
+        "id": "87ae629e-caf8-49a5-82b5-7f96d33018e3",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -595,6 +661,31 @@ __Response__
                 "country": "Danmark"
               }
             ]
+          },
+          {
+            "resourceType": "Device",
+            "id": "3",
+            "meta": {
+              "profile": [
+                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device"
+              ]
+            },
+            "manufacturer": "Manufacturer: Nonin / Model: Onyx II 9560 bluetooth oximeter",
+            "serialNumber": "MCI00005",
+            "type": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.208.184.100.3",
+                  "code": "MCI00005",
+                  "display": "MedCom Instrument Codes"
+                }
+              ]
+            },
+            "version": [
+              {
+                "value": "SerialNr: N/A / SW Rev. N/A"
+              }
+            ]
           }
         ],
         "extension": [
@@ -608,7 +699,7 @@ __Response__
                     {
                       "system": "http://ehealth.sundhed.dk/cs/quality-types",
                       "code": "UQ",
-                      "display": "Usage Quality"
+                      "display": "Usage quality"
                     }
                   ]
                 }
@@ -648,11 +739,11 @@ __Response__
           }
         ],
         "valueQuantity": {
-          "value": 0.95,
-          "unit": "NA"
+          "value": 95,
+          "unit": "%"
         },
         "device": {
-          "reference": "https://document-transformation.cit-document-transformation-2250.local/fhir/Device/3c58f7fe-402b-4f38-ad1d-34fae0644c4a"
+          "reference": "#3"
         }
       }
     }

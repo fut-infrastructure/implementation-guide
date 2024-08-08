@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVFSRCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,10 +22,10 @@ __Body__:
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://document-transformation.cit-document-transformation-2250.local/fhir/DocumentReference/81970",
+            "fullUrl": "https://document-transformation.cit-document-transformation-2592.local/fhir/DocumentReference/98514",
             "resource": {
               "resourceType": "DocumentReference",
-              "id": "81970",
+              "id": "98514",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -41,7 +41,7 @@ __Body__:
                   }
                 ]
               },
-              "date": "2024-04-26T08:01:18.541+00:00",
+              "date": "2024-07-29T08:48:46.612+00:00",
               "content": [
                 {
                   "attachment": {
@@ -53,10 +53,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://questionnaire.cit-document-transformation-2250.local/fhir/Questionnaire/80522",
+            "fullUrl": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/26362",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "80522",
+              "id": "26362",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -90,7 +90,7 @@ __Body__:
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "https://organization.cit-document-transformation-2250.local/fhir/Organization/14658"
+                        "reference": "https://organization.cit-document-transformation-2592.local/fhir/Organization/86154"
                       }
                     },
                     {
@@ -114,7 +114,7 @@ __Body__:
                 }
               ],
               "version": "1.0",
-              "name": "eaafde80-b0dd-4440-8332-8bc5b6a17d87",
+              "name": "9532a47f-92d4-4e33-875e-34bd1163fd15",
               "status": "active",
               "item": [
                 {
@@ -760,7 +760,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "2611eeb3-b258-482e-b41d-c3337f15eeff",
+        "id": "07e532ea-2d30-41a4-9664-355c7cf7c20f",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -823,7 +823,7 @@ __Response__
             "id": "2",
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Tjørn <b>SIMONSEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2910534703</td></tr><tr><td>Address</td><td><span>Forskerparken 10 </span><br/><span>Odense </span><span>Danmark </span></td></tr></tbody></table></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Tjørn <b>SIMONSEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2910534703</td></tr><tr><td>Address</td><td><span>Forskerparken 10 </span><br/><span>Odense </span><span>Danmark </span></td></tr><tr><td>Date of birth</td><td><span>29 October 1953</span></td></tr></tbody></table></div>"
             },
             "identifier": [
               {
@@ -840,6 +840,7 @@ __Response__
               }
             ],
             "gender": "male",
+            "birthDate": "1953-10-29",
             "address": [
               {
                 "use": "home",
@@ -952,9 +953,18 @@ __Response__
           }
         ],
         "title": "QFDD til test af alle spørgemål varianter",
+        "confidentiality": "N",
         "custodian": {
           "reference": "#4"
-        }
+        },
+        "event": [
+          {
+            "period": {
+              "start": "2023-10-25T07:15:00+00:00",
+              "end": "2023-10-25T08:00:00+00:00"
+            }
+          }
+        ]
       }
     },
     {
@@ -965,7 +975,7 @@ __Response__
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
-        "questionnaire": "https://questionnaire.cit-document-transformation-2250.local/fhir/Questionnaire/80522",
+        "questionnaire": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/26362",
         "status": "completed",
         "item": [
           {

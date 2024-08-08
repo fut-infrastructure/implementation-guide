@@ -1,12 +1,12 @@
-`PUT [base]/ServiceRequest/2968`
+`PUT [base]/ServiceRequest/3029`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI4MTgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzgwNzIiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZSRjcmVhdGUtZXBpc29kZS1vZi1jYXJlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,10 +15,11 @@ __Body__:
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2968",
+  "id": "3029",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-04-05T09:11:01.915+00:00",
+    "lastUpdated": "2024-07-29T13:24:23.893+00:00",
+    "source": "#131172a5-0460-994e-8cec-09a59a05db28",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -27,7 +28,7 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2967"
+        "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/3028"
       }
     },
     {
@@ -58,40 +59,18 @@ __Body__:
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-04-05T09:10:59+00:00"
+            "start": "2024-07-29T13:24:23+00:00"
           }
         }
       ]
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
-      "extension": [
-        {
-          "url": "status",
-          "valueCode": "on-hold"
-        },
-        {
-          "url": "scheduledTime",
-          "valueDateTime": "2024-04-05T09:10:59+00:00"
-        }
-      ]
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
-      "extension": [
-        {
-          "url": "status",
-          "valueCode": "revoked"
-        },
-        {
-          "url": "scheduledTime",
-          "valueDateTime": "2024-05-04T09:10:59+00:00"
-        }
-      ]
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-include-as-extra",
+      "valueBoolean": false
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/13908"
+    "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/46556"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -102,10 +81,23 @@ __Body__:
         "code": "TBD"
       }
     ],
-    "text": "b831116a-ff80-4f4e-bf68-c2c3af11092c"
+    "text": "c3adc23b-df9d-4052-af11-ca865aa18e0a"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/86986"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/11685"
+  },
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2024-07-29T13:24:23+00:00",
+        "end": "2024-07-29T18:24:23+00:00"
+      },
+      "duration": 5,
+      "durationUnit": "h",
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "d"
+    }
   }
 }
 ```
@@ -114,10 +106,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2968",
+  "id": "3029",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-04-05T09:11:02.099+00:00",
+    "lastUpdated": "2024-07-29T13:24:26.551+00:00",
+    "source": "#1abe2780-3a98-476e-a7ec-cc5d98c53cc2",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -126,7 +119,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2967"
+        "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/3028"
       }
     },
     {
@@ -157,40 +150,18 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-04-05T09:10:59+00:00"
+            "start": "2024-07-29T13:24:23+00:00"
           }
         }
       ]
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
-      "extension": [
-        {
-          "url": "status",
-          "valueCode": "on-hold"
-        },
-        {
-          "url": "scheduledTime",
-          "valueDateTime": "2024-04-05T09:10:59+00:00"
-        }
-      ]
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusSchedule",
-      "extension": [
-        {
-          "url": "status",
-          "valueCode": "revoked"
-        },
-        {
-          "url": "scheduledTime",
-          "valueDateTime": "2024-05-04T09:10:59+00:00"
-        }
-      ]
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-include-as-extra",
+      "valueBoolean": false
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/13908"
+    "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/46556"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -201,10 +172,23 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "b831116a-ff80-4f4e-bf68-c2c3af11092c"
+    "text": "c3adc23b-df9d-4052-af11-ca865aa18e0a"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/86986"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/11685"
+  },
+  "occurrenceTiming": {
+    "repeat": {
+      "boundsPeriod": {
+        "start": "2024-07-29T13:24:23+00:00",
+        "end": "2024-07-29T18:24:23+00:00"
+      },
+      "duration": 5,
+      "durationUnit": "h",
+      "frequency": 1,
+      "period": 1,
+      "periodUnit": "d"
+    }
   }
 }
 ```

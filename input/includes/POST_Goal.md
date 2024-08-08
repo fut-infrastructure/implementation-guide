@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ2FyZVBsYW4uc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -29,9 +29,9 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/51980"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/9365"
   },
-  "startDate": "2024-04-05",
+  "startDate": "2024-07-29",
   "target": [
     {
       "measure": {
@@ -46,7 +46,7 @@ __Body__:
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2740.local/fhir/ServiceRequest/1703"
+      "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/1578"
     }
   ]
 }
@@ -56,10 +56,11 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "1704",
+  "id": "1579",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-04-05T09:00:07.433+00:00",
+    "lastUpdated": "2024-07-29T13:14:14.158+00:00",
+    "source": "#1df7fe1d-b3a8-4bed-9375-0cb649bcfa00",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
     ],
@@ -86,9 +87,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/51980"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/9365"
   },
-  "startDate": "2024-04-05",
+  "startDate": "2024-07-29",
   "target": [
     {
       "measure": {
@@ -103,7 +104,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2740.local/fhir/ServiceRequest/1703"
+      "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/1578"
     }
   ]
 }

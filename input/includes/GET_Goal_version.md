@@ -1,11 +1,11 @@
-`GET [base]/Goal/1756/_history/2`
+`GET [base]/Goal/1631/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIkNhcmVQbGFuLnVwZGF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ2FyZVBsYW4uc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Goal",
-  "id": "1756",
+  "id": "1631",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-04-05T09:00:30.895+00:00",
-    "source": "#645f9454-a78b-41",
+    "lastUpdated": "2024-07-29T13:14:31.009+00:00",
+    "source": "#8f23ace1-5cf3-4f",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-goal"
     ]
@@ -34,9 +34,9 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/49870"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/39738"
   },
-  "startDate": "2024-04-05",
+  "startDate": "2024-07-29",
   "target": [
     {
       "measure": {
@@ -51,7 +51,7 @@ __Response__
   ],
   "addresses": [
     {
-      "reference": "https://careplan.cit-careplan-2740.local/fhir/ServiceRequest/1755"
+      "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/1630"
     }
   ]
 }

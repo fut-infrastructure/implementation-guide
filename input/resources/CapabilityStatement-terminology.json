@@ -3,12 +3,12 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2024-04-28T18:26:53.266+00:00",
+  "date": "2024-08-05T18:29:23.871+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.11.3"
+    "version": "1.11.4"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -1043,10 +1043,6 @@
       "name": "import",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import",
       "documentation": "Import terminology resources"
-    }, {
-      "name": "process-message",
-      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
     }, {
       "name": "perform-reindexing-pass",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",

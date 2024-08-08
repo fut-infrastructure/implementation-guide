@@ -1,11 +1,11 @@
-`GET [base]/ServiceRequest/2968/_history/2`
+`GET [base]/ServiceRequest/2846/_history/2`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2968",
+  "id": "2846",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-04-05T09:11:02.099+00:00",
-    "source": "#073c80ae-ab4a-4d",
+    "lastUpdated": "2024-07-29T13:22:51.872+00:00",
+    "source": "#353ebccb-b252-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2967"
+        "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/2845"
       }
     },
     {
@@ -59,7 +59,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-04-05T09:10:59+00:00"
+            "start": "2024-07-29T13:22:51+00:00"
           }
         }
       ]
@@ -73,7 +73,7 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-04-05T09:10:59+00:00"
+          "valueDateTime": "2024-07-29T13:22:51+00:00"
         }
       ]
     },
@@ -86,13 +86,17 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-05-04T09:10:59+00:00"
+          "valueDateTime": "2024-08-27T13:22:51+00:00"
         }
       ]
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-include-as-extra",
+      "valueBoolean": false
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/13908"
+    "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/94241"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -103,10 +107,10 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "b831116a-ff80-4f4e-bf68-c2c3af11092c"
+    "text": "6c5930eb-abb0-4af8-8cca-97b0e2502625"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/86986"
+    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/44338"
   }
 }
 ```
