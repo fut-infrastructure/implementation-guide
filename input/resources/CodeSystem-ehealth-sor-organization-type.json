@@ -1,20 +1,25 @@
 {
   "resourceType": "CodeSystem",
   "id": "ehealth-sor-organization-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ehealth-sor-organization-type</b></p><a name=\"ehealth-sor-organization-type\"> </a><a name=\"hcehealth-sor-organization-type\"> </a><a name=\"ehealth-sor-organization-type-en-US\"> </a><p>This case-sensitive code system <code>http://ehealth.sundhed.dk/cs/sor-organization-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"ehealth-sor-organization-type-unknown\"> </a></td><td>Unknown</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">726<a name=\"ehealth-sor-organization-type-726\"> </a></td><td>KONVAFD (Converted Organizational Unit)</td><td>KONVAFD (Converted Organizational Unit)</td></tr><tr><td style=\"white-space:nowrap\">56781000005109<a name=\"ehealth-sor-organization-type-56781000005109\"> </a></td><td>Abuse treatment center</td><td>Abuse treatment center</td></tr><tr><td style=\"white-space:nowrap\">557881000005104<a name=\"ehealth-sor-organization-type-557881000005104\"> </a></td><td>COVID-19-testenhed</td><td>COVID-19-testenhed</td></tr></table></div>"
+  },
   "url": "http://ehealth.sundhed.dk/cs/sor-organization-type",
-  "version": "0.0.1",
+  "version": "3.3.0",
   "name": "SorOrganizationType",
   "title": "SOR Organization Type",
   "status": "active",
   "experimental": false,
   "date": "2019-06-11T00:00:00+00:00",
-  "publisher": "ehealth.sundhed.dk",
+  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
   "contact": [
     {
+      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ehealth.sundhed.dk/terminology"
+          "value": "http://ehealth.sundhed.dk"
         }
       ]
     }
@@ -37,11 +42,6 @@
       "code": "56781000005109",
       "display": "Abuse treatment center",
       "definition": "Abuse treatment center"
-    },
-    {
-      "code": "557881000005104",
-      "display": "COVID-19-testenhed",
-      "definition": "COVID-19-testenhed"
     }
   ]
 }

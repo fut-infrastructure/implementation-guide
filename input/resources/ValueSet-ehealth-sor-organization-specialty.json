@@ -1,21 +1,25 @@
 {
     "resourceType": "ValueSet",
     "id": "sor-organization-specialty",
+    "text": {
+        "status": "extensions",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sor-organization-specialty</b></p><a name=\"sor-organization-specialty\"> </a><a name=\"hcsor-organization-specialty\"> </a><a name=\"sor-organization-specialty-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ehealth-sor-organization-specialty.html\"><code>http://ehealth.sundhed.dk/cs/sor-organization-specialty</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-snomed-20150731.html\"><code>http://snomed.info/sct/554471000005108/version/20150731</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>English (United States) (English (United States), en)</b></td></tr><tr><td><a href=\"CodeSystem-snomed-20150731.html#snomed-20150731-394812008\">394812008</a></td><td>Dental medicine specialties</td><td>dental medicine specialities</td><td>Dental medicine specialties</td></tr><tr><td><a href=\"CodeSystem-snomed-20150731.html#snomed-20150731-551411000005104\">551411000005104</a></td><td>Surgical gastroenterology</td><td>surgical gastroenterology</td><td>Surgical gastroenterology</td></tr><tr><td><a href=\"CodeSystem-snomed-20150731.html#snomed-20150731-554011000005107\">554011000005107</a></td><td>Forensic medicine</td><td>forensic medicine</td><td>Forensic medicine</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>English (United States) (English (United States), en)</b></td></tr><tr><td><a href=\"http://snomed.info/id/658171000005102\">658171000005102</a></td><td>hjemmepleje</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658161000005107\">658161000005107</a></td><td>hjemmesygepleje</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658151000005105\">658151000005105</a></td><td>sundhedsfremme og forebyggelse</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658191000005101\">658191000005101</a></td><td>sundhedspleje</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658201000005103\">658201000005103</a></td><td>kommunal tandpleje</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658141000005108\">658141000005108</a></td><td>genoptræning efter hospitalsophold</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/658181000005104\">658181000005104</a></td><td>hjælpemiddelområdet</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/2903041000005106\">2903041000005106</a></td><td>det kommunale omsorgs-, social- og sundhedsområde</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/394537008\">394537008</a></td><td>Pediatrics</td><td>Pediatrics</td></tr><tr><td><a href=\"http://snomed.info/id/394577000\">394577000</a></td><td>Anaesthetics</td><td>Anaesthetics</td></tr><tr><td><a href=\"http://snomed.info/id/394579002\">394579002</a></td><td>Cardiology</td><td>Cardiology</td></tr><tr><td><a href=\"http://snomed.info/id/394580004\">394580004</a></td><td>Clinical genetics</td><td>Clinical genetics</td></tr><tr><td><a href=\"http://snomed.info/id/394581000\">394581000</a></td><td>Community medicine</td><td>Community medicine</td></tr><tr><td><a href=\"http://snomed.info/id/394582007\">394582007</a></td><td>Dermatology</td><td>Dermatology</td></tr><tr><td><a href=\"http://snomed.info/id/394583002\">394583002</a></td><td>Endocrinology</td><td>Endocrinology</td></tr><tr><td><a href=\"http://snomed.info/id/394584008\">394584008</a></td><td>Gastroenterology</td><td>Gastroenterology</td></tr><tr><td><a href=\"http://snomed.info/id/394585009\">394585009</a></td><td>Obstetrics and gynecology</td><td>Obstetrics and gynecology</td></tr><tr><td><a href=\"http://snomed.info/id/394587001\">394587001</a></td><td>Psychiatry</td><td>Psychiatry</td></tr><tr><td><a href=\"http://snomed.info/id/394588006\">394588006</a></td><td>Child and adolescent psychiatry</td><td>Child and adolescent psychiatry</td></tr><tr><td><a href=\"http://snomed.info/id/394589003\">394589003</a></td><td>Nephrology</td><td>Nephrology</td></tr><tr><td><a href=\"http://snomed.info/id/394591006\">394591006</a></td><td>Neurology</td><td>Neurology</td></tr><tr><td><a href=\"http://snomed.info/id/394592004\">394592004</a></td><td>Clinical oncology</td><td>Clinical oncology</td></tr><tr><td><a href=\"http://snomed.info/id/394594003\">394594003</a></td><td>Ophthalmology</td><td>Ophthalmology</td></tr><tr><td><a href=\"http://snomed.info/id/394596001\">394596001</a></td><td>Chemical pathology</td><td>Chemical pathology</td></tr><tr><td><a href=\"http://snomed.info/id/394600006\">394600006</a></td><td>Clinical pharmacology</td><td>Clinical pharmacology</td></tr><tr><td><a href=\"http://snomed.info/id/394601005\">394601005</a></td><td>Clinical physiology</td><td>Clinical physiology</td></tr><tr><td><a href=\"http://snomed.info/id/394603008\">394603008</a></td><td>Cardiothoracic surgery</td><td>Cardiothoracic surgery</td></tr><tr><td><a href=\"http://snomed.info/id/394604002\">394604002</a></td><td>Ear, nose and throat surgery</td><td>Ear, nose and throat surgery</td></tr><tr><td><a href=\"http://snomed.info/id/394605001\">394605001</a></td><td>Oral surgery</td><td>Oral surgery</td></tr><tr><td><a href=\"http://snomed.info/id/394608004\">394608004</a></td><td>Orthodontics</td><td>Orthodontics</td></tr><tr><td><a href=\"http://snomed.info/id/394609007\">394609007</a></td><td>General surgery</td><td>General surgery</td></tr><tr><td><a href=\"http://snomed.info/id/394610002\">394610002</a></td><td>Neurosurgery</td><td>Neurosurgery</td></tr><tr><td><a href=\"http://snomed.info/id/394611003\">394611003</a></td><td>Plastic surgery - specialty</td><td>Plastic surgery - specialty</td></tr><tr><td><a href=\"http://snomed.info/id/394612005\">394612005</a></td><td>Urology</td><td>Urology</td></tr><tr><td><a href=\"http://snomed.info/id/394801008\">394801008</a></td><td>Trauma and orthopedics</td><td>Trauma and orthopedics</td></tr><tr><td><a href=\"http://snomed.info/id/394803006\">394803006</a></td><td>Clinical hematology</td><td>Clinical hematology</td></tr><tr><td><a href=\"http://snomed.info/id/394805004\">394805004</a></td><td>Clinical immunology/allergy</td><td>Clinical immunology/allergy</td></tr><tr><td><a href=\"http://snomed.info/id/394807007\">394807007</a></td><td>Infectious diseases (specialty)</td><td>Infectious diseases (specialty)</td></tr><tr><td><a href=\"http://snomed.info/id/394809005\">394809005</a></td><td>Clinical neuro-physiology</td><td>Clinical neuro-physiology</td></tr><tr><td><a href=\"http://snomed.info/id/394810000\">394810000</a></td><td>Rheumatology</td><td>Rheumatology</td></tr><tr><td><a href=\"http://snomed.info/id/394811001\">394811001</a></td><td>Geriatric medicine</td><td>Geriatric medicine</td></tr><tr><td><a href=\"http://snomed.info/id/394821009\">394821009</a></td><td>Occupational medicine</td><td>Occupational medicine</td></tr><tr><td><a href=\"http://snomed.info/id/394914008\">394914008</a></td><td>Radiology - speciality</td><td>Radiology - speciality</td></tr><tr><td><a href=\"http://snomed.info/id/394915009\">394915009</a></td><td>General pathology (speciality)</td><td>General pathology (speciality)</td></tr><tr><td><a href=\"http://snomed.info/id/408443003\">408443003</a></td><td>General medical practice</td><td>General medical practice</td></tr><tr><td><a href=\"http://snomed.info/id/408448007\">408448007</a></td><td>Tropical medicine</td><td>Tropical medicine</td></tr><tr><td><a href=\"http://snomed.info/id/408454008\">408454008</a></td><td>Clinical microbiology</td><td>Clinical microbiology</td></tr><tr><td><a href=\"http://snomed.info/id/408463005\">408463005</a></td><td>Vascular surgery</td><td>Vascular surgery</td></tr><tr><td><a href=\"http://snomed.info/id/408472002\">408472002</a></td><td>Hepatology</td><td>Hepatology</td></tr><tr><td><a href=\"http://snomed.info/id/418112009\">418112009</a></td><td>Pulmonary medicine</td><td>Pulmonary medicine</td></tr><tr><td><a href=\"http://snomed.info/id/419192003\">419192003</a></td><td>Internal medicine</td><td>Internal medicine</td></tr><tr><td><a href=\"http://snomed.info/id/421661004\">421661004</a></td><td>Blood banking and transfusion medicine (specialty)</td><td>Blood banking and transfusion medicine (specialty)</td></tr><tr><td><a href=\"http://snomed.info/id/773568002\">773568002</a></td><td>Emergency medicine</td><td>Emergency medicine</td></tr></table></li></ul></div>"
+    },
     "url": "http://ehealth.sundhed.dk/vs/sor-organization-specialty",
-    "version": "0.0.2",
+    "version": "3.3.0",
     "name": "SorOrganizationSpecialty",
     "title": "SorOrganizationSpecialty",
     "status": "active",
     "experimental": true,
     "date": "2019-05-27T00:00:00+00:00",
-    "publisher": "ehealth.sundhed.dk",
+    "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
     "contact": [
         {
-            "name": "ehealth.sundhed.dk",
+            "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
             "telecom": [
                 {
                     "system": "url",
-                    "value": "http://ehealth.sundhed.dk/terminology"
+                    "value": "http://ehealth.sundhed.dk"
                 }
             ]
         }
@@ -29,38 +33,6 @@
             {
                 "system": "http://snomed.info/sct/554471000005108/version/20150731",
                 "concept": [
-                    {
-                        "code": "658171000005102",
-                        "display": "hjemmepleje"
-                    },
-                    {
-                        "code": "658161000005107",
-                        "display": "hjemmesygepleje"
-                    },
-                    {
-                        "code": "658151000005105",
-                        "display": "sundhedsfremme og forebyggelse"
-                    },
-                    {
-                        "code": "658191000005101",
-                        "display": "sundhedspleje"
-                    },
-                    {
-                        "code": "658201000005103",
-                        "display": "kommunal tandpleje"
-                    },
-                    {
-                        "code": "658141000005108",
-                        "display": "genoptræning efter hospitalsophold"
-                    },
-                    {
-                        "code": "658181000005104",
-                        "display": "hjælpemiddelområdet"
-                    },
-                    {
-                        "code": "2903041000005106",
-                        "display": "det kommunale omsorgs-, social- og sundhedsområde"
-                    },
                     {
                         "code": "394812008",
                         "display": "Dental medicine specialties",
