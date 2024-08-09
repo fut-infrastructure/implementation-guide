@@ -1,30 +1,26 @@
 {
   "resourceType": "ConceptMap",
   "id": "activitydefinition-code-to-perform-sharing",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap activitydefinition-code-to-perform-sharing</b></p><a name=\"activitydefinition-code-to-perform-sharing\"> </a><a name=\"hcactivitydefinition-code-to-perform-sharing\"> </a><a name=\"activitydefinition-code-to-perform-sharing-en-US\"> </a><p>Mapping from <a href=\"ValueSet-ehealth-activitydefinition-code.html\">Activity Definition Code</a> to <a href=\"http://terminology.hl7.org/6.0.2/ValueSet-v2-0532.html\">hl7VS-expandedYes-NoIndicator</a></p><p>ACTIVE. Published on 2023-12-14 00:00:00+0000 by Den telemedicinske infrastruktur (eHealth Infrastructure)  (Den telemedicinske infrastruktur (eHealth Infrastructure): <a href=\"http://ehealth.sundhed.dk\">http://ehealth.sundhed.dk</a>). </p><div><p>The map controls whether an activity shall have sharingApprovalPolicy or not</p>\n</div><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-ehealth-activitydefinition-code.html\">Activity Definition Codes</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>TBD (Example value - Under construction)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>229057006 (Møder)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>229058001 (Sagskonferencer)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>409073007 (Instruktion)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>273586006 (Master Questionnaire)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>HA (Head activity)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>SQ (Situation quality assessment)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>QR (Usage quality assessment)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>SDG (Same device group)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-1.2.208.176.2.1--20190829.html\">NPU DK</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>NPU03011 (O2 sat.;Hb(aB))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU21692 (Puls;Hjerte)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU03804 (Legeme vægt; Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU27281 (Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU03794 (Pt—Legeme; højde = ? m)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU08676 (Pt—Legeme; temp. = ? °C)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>NPU19748 (C-reaktivt protein [CRP];P)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href=\"CodeSystem-urn-oid-1.2.208.184.100.8.html\">DAK-E Codes</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>MCS88015 (FEV1;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88016 (FVC;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88017 (FEV1/FVC;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88019 (Blodtryk hjemme systolisk;Arm)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88020 (Blodtryk hjemme diastolisk;Arm)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88021 (MRC skala;Pt(KOL))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88023 (FEV1 af forventet værdi;Pt(KOL))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88050 (Rejse sætte sig testen;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88137 (CAT score;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88192 (Skridt per dag;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88193 (Skridt per uge;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>MCS88194 (Skridt;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr></table><hr/><p><b>Group 4 </b>Mapping from <a href=\"CodeSystem-urn-oid-1.2.208.176.2.4.html\">Sundhedsvæsenets klassifikationssystem (SKS)</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0532.html\">expandedYes-NoIndicator</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ZZ3170 (Hjemmeblodtryksmåling udført af patienten)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>ALCA00 (fysisk fremmøde)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>ALCA03 (virtuel kontakt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr></table><hr/><p><b>Group 5 </b>Mapping from <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>445988008 (Assessment using health assessment questionnaire (procedure))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>229057006 (Meetings (procedure))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr><tr><td>273586006 (Master Questionnaire)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>Y (Yes)</td></tr><tr><td>409073007 (Instruction)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#relatedto\" title=\"relatedto\">is related to</a></td><td>N (No)</td></tr></table></div>"
-  },
   "url": "http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing",
-  "version": "3.3.0",
+  "version": "2023-14-12T11:30:00",
   "name": "activitydefinition-code-to-perform-sharing",
   "title": "Activitydefinition-code-to-perform-sharing",
   "status": "active",
   "experimental": false,
+  "description": "The map controls whether an activity shall have sharingApprovalPolicy or not",
   "date": "2023-12-14T00:00:00+00:00",
-  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+  "publisher": "Systematic A/S",
   "contact": [
     {
-      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+      "name": "Systematic A/S",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ehealth.sundhed.dk"
+          "value": "http://ehealth.sundhed.dk/"
         }
       ]
     }
   ],
-  "description": "The map controls whether an activity shall have sharingApprovalPolicy or not",
   "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
   "targetUri": "http://terminology.hl7.org/ValueSet/v2-0532",
   "group": [
@@ -37,12 +33,6 @@
           "display": "Example value - Under construction",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -54,12 +44,6 @@
           "display": "Møder",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -71,31 +55,8 @@
           "display": "Sagskonferencer",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "445988008",
-          "display": "Assessment using health assessment questionnaire (procedure)",
-          "target": [
-            {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
-              "code": "Y",
-              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -105,12 +66,6 @@
           "display": "Instruktion",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -122,12 +77,6 @@
           "display": "Master Questionnaire",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -139,12 +88,6 @@
           "display": "Head activity",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -156,12 +99,6 @@
           "display": "Situation quality assessment",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -173,12 +110,6 @@
           "display": "Usage quality assessment",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -190,12 +121,6 @@
           "display": "Same device group",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -213,12 +138,6 @@
           "display": "O2 sat.;Hb(aB)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -230,12 +149,6 @@
           "display": "Puls;Hjerte",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -247,12 +160,6 @@
           "display": "Legeme vægt; Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -264,12 +171,6 @@
           "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -281,12 +182,28 @@
           "display": "Pt—Legeme; højde = ? m",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU08676",
+          "display": "Pt—Legeme; temp. = ? °C",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "C-reaktivt protein [CRP];P",
+          "target": [
+            {
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -304,12 +221,6 @@
           "display": "FEV1;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -321,12 +232,6 @@
           "display": "FVC;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -338,12 +243,6 @@
           "display": "FEV1/FVC;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -355,12 +254,6 @@
           "display": "Blodtryk hjemme systolisk;Arm",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -372,12 +265,6 @@
           "display": "Blodtryk hjemme diastolisk;Arm",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -389,12 +276,6 @@
           "display": "MRC skala;Pt(KOL)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -406,12 +287,6 @@
           "display": "FEV1 af forventet værdi;Pt(KOL)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -423,12 +298,6 @@
           "display": "Rejse sætte sig testen;Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -440,12 +309,39 @@
           "display": "CAT score;Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88192",
+          "display": "Skridt per dag;Pt",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88193",
+          "display": "Skridt per uge;Pt",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88194",
+          "display": "Skridt;Pt",
+          "target": [
+            {
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -463,12 +359,6 @@
           "display": "Hjemmeblodtryksmåling udført af patienten",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -480,12 +370,6 @@
           "display": "fysisk fremmøde",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -497,12 +381,6 @@
           "display": "virtuel kontakt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -513,18 +391,13 @@
     },
     {
       "source": "http://snomed.info/sct",
+      "display": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "445988008",
           "display": "Assessment using health assessment questionnaire (procedure)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -536,12 +409,6 @@
           "display": "Meetings (procedure)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -553,12 +420,6 @@
           "display": "Master Questionnaire",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "Y",
               "display": "Yes",
               "equivalence": "relatedto"
@@ -570,12 +431,6 @@
           "display": "Instruction",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "relatedto"
-                }
-              ],
               "code": "N",
               "display": "No",
               "equivalence": "relatedto"
@@ -586,3 +441,4 @@
     }
   ]
 }
+

@@ -1,31 +1,26 @@
 {
   "resourceType": "CodeSystem",
   "id": "1.2.208.176.2.1--20190829",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem 1.2.208.176.2.1--20190829</b></p><a name=\"1.2.208.176.2.1--20190829\"> </a><a name=\"hc1.2.208.176.2.1--20190829\"> </a><a name=\"1.2.208.176.2.1--20190829-en-US\"> </a><p>This case-sensitive code system <code>urn:oid:1.2.208.176.2.1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">NPU03011<a name=\"1.2.208.176.2.1--20190829-NPU03011\"> </a></td><td>Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?</td><td>Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?</td><td>Iltmætning</td></tr><tr><td style=\"white-space:nowrap\">NPU22089<a name=\"1.2.208.176.2.1--20190829-NPU22089\"> </a></td><td>P(kB)—Glucose; stofk. = ? mmol/L</td><td>P(kB)—Glucose; stofk. = ? mmol/L</td><td>Glukose</td></tr><tr><td style=\"white-space:nowrap\">NPU27281<a name=\"1.2.208.176.2.1--20190829-NPU27281\"> </a></td><td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td><td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td><td>BMI</td></tr><tr><td style=\"white-space:nowrap\">NPU03804<a name=\"1.2.208.176.2.1--20190829-NPU03804\"> </a></td><td>Pt—Legeme; masse = ? kg</td><td>Pt—Legeme; masse = ? kg</td><td>Vægt</td></tr><tr><td style=\"white-space:nowrap\">NPU21692<a name=\"1.2.208.176.2.1--20190829-NPU21692\"> </a></td><td>Hjerte—Systole; frekv. = ? × 1/min</td><td>Hjerte—Systole; frekv. = ? × 1/min</td><td>Puls</td></tr><tr><td style=\"white-space:nowrap\">NPU03794<a name=\"1.2.208.176.2.1--20190829-NPU03794\"> </a></td><td>Legeme højde;Pt</td><td>Pt—Legeme; højde = ? m</td><td>Højde</td></tr><tr><td style=\"white-space:nowrap\">NPU03963<a name=\"1.2.208.176.2.1--20190829-NPU03963\"> </a></td><td>U—Erythrocytter; arb.k.(proc.) = ?</td><td>U—Erythrocytter; arb.k.(proc.) = ?</td><td>Erytrocytter(semikvant)</td></tr><tr><td style=\"white-space:nowrap\">NPU08676<a name=\"1.2.208.176.2.1--20190829-NPU08676\"> </a></td><td>Pt—Legeme; temp. = ? °C</td><td>Pt—Legeme; temp. = ? °C</td><td>Temperatur</td></tr><tr><td style=\"white-space:nowrap\">NPU19748<a name=\"1.2.208.176.2.1--20190829-NPU19748\"> </a></td><td>C-reaktivt protein [CRP];P</td><td>P—C-reaktivt protein; massek. = ? mg/L</td><td>C-reaktivt protein</td></tr></table></div>"
-  },
   "url": "urn:oid:1.2.208.176.2.1",
+  "version": "2020-02-27T11:56:23",
+  "name": "npu-dk",
+  "title": "NPU DK",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-12-18T23:00:00+00:00",
+  "publisher": "Sundhedsdatastyrelsen",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
       "value": "urn:oid:1.2.208.176.2.1"
     }
   ],
-  "version": "3.3.0",
-  "name": "npu-dk",
-  "title": "NPU DK",
-  "status": "active",
-  "experimental": false,
-  "date": "2019-12-18T23:00:00+00:00",
-  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
   "contact": [
     {
-      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
       "telecom": [
         {
-          "system": "url",
-          "value": "http://ehealth.sundhed.dk"
+          "system": "email",
+          "value": "labterm@sundhedsdata.dk"
         }
       ]
     }
@@ -138,6 +133,38 @@
           "value": "Erytrocytter(semikvant)"
         }
       ]
+    },
+    {
+      "code": "NPU08676",
+      "display": "Pt—Legeme; temp. = ? °C",
+      "definition": "Pt—Legeme; temp. = ? °C",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "Temperatur"
+        }
+      ]
+    },
+    {
+      "code": "NPU19748",
+      "display": "C-reaktivt protein [CRP];P",
+      "definition": "P—C-reaktivt protein; massek. = ? mg/L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "C-reaktivt protein"
+        }
+      ]
     }
   ]
 }
+
+
