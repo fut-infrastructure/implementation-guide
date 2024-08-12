@@ -1,25 +1,21 @@
 {
   "resourceType": "ConceptMap",
   "id": "conceptmap-obs-code-to-value-type",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap conceptmap-obs-code-to-value-type</b></p><a name=\"conceptmap-obs-code-to-value-type\"> </a><a name=\"hcconceptmap-obs-code-to-value-type\"> </a><a name=\"conceptmap-obs-code-to-value-type-en-US\"> </a><p>Mapping from <a href=\"ValueSet-ehealth-observation-codes.html\">Observation Codes</a> to <a href=\"http://hl7.org/fhir/R4/valueset-data-types.html\">DataType</a></p><p>ACTIVE. Published on 2020-11-26 by Den telemedicinske infrastruktur (eHealth Infrastructure)  (Den telemedicinske infrastruktur (eHealth Infrastructure): <a href=\"http://ehealth.sundhed.dk\">http://ehealth.sundhed.dk</a>). </p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-1.2.208.176.2.1--20190829.html\">NPU DK</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-data-types.html\">DataType</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>NPU03011 (O2 sat.;Hb(aB))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU21692 (Puls;Hjerte)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU03804 (Legeme vægt; Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU27281 (Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU03794 (Pt—Legeme; højde = ? m)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU08676 (Pt—Legeme; temp. = ? °C)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>NPU19748 (P—C-reaktivt protein; massek. = ? mg/L)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-urn-oid-1.2.208.184.100.8.html\">DAK-E Codes</a> to <a href=\"http://hl7.org/fhir/R4/codesystem-data-types.html\">DataType</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>MCS88015 (FEV1;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88016 (FVC;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88017 (FEV1/FVC;Lunge)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>decimal</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88019 (Blodtryk hjemme systolisk;Arm)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88020 (Blodtryk hjemme diastolisk;Arm)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88021 (MRC skala;Pt(KOL))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88023 (FEV1 af forventet værdi;Pt(KOL))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88050 (Rejse sætte sig testen;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88137 (CAT score;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88192 (Skridt per dag;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88193 (Skridt per uge;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>MCS88194 (Skridt;Pt)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>integer</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr></table></div>"
-  },
   "url": "http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type",
-  "version": "3.3.0",
+  "version": "2020-11-26T12:24:16",
   "name": "conceptmap-obs-code-to-value-type",
   "title": "conceptmap-obs-code-to-value-type",
   "status": "active",
   "experimental": false,
   "date": "2020-11-26",
-  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+  "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
-      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+      "name": "ehealth.sundhed.dk",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ehealth.sundhed.dk"
+          "value": "http://ehealth.sundhed.dk/terminology"
         }
       ]
     }
@@ -36,12 +32,6 @@
           "display": "O2 sat.;Hb(aB)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -54,12 +44,6 @@
           "display": "Puls;Hjerte",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -72,12 +56,6 @@
           "display": "Legeme vægt; Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -90,12 +68,6 @@
           "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -108,12 +80,6 @@
           "display": "Pt—Legeme; højde = ? m",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -126,12 +92,6 @@
           "display": "Pt—Legeme; temp. = ? °C",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -144,12 +104,6 @@
           "display": "P—C-reaktivt protein; massek. = ? mg/L",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -168,12 +122,6 @@
           "display": "FEV1;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -186,12 +134,6 @@
           "display": "FVC;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -204,12 +146,6 @@
           "display": "FEV1/FVC;Lunge",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "decimal",
               "display": "decimal",
               "equivalence": "specializes",
@@ -222,12 +158,6 @@
           "display": "Blodtryk hjemme systolisk;Arm",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -240,12 +170,6 @@
           "display": "Blodtryk hjemme diastolisk;Arm",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -258,12 +182,6 @@
           "display": "MRC skala;Pt(KOL)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -276,12 +194,6 @@
           "display": "FEV1 af forventet værdi;Pt(KOL)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -294,12 +206,6 @@
           "display": "Rejse sætte sig testen;Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",
@@ -312,12 +218,42 @@
           "display": "CAT score;Pt",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88192",
+          "display": "Skridt per dag;Pt",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88193",
+          "display": "Skridt per uge;Pt",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88194",
+          "display": "Skridt;Pt",
+          "target": [
+            {
               "code": "integer",
               "display": "integer",
               "equivalence": "specializes",

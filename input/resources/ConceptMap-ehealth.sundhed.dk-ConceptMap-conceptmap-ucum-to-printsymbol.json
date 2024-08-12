@@ -1,25 +1,21 @@
 {
   "resourceType": "ConceptMap",
   "id": "conceptmap-ucum-to-printsymbol",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap conceptmap-ucum-to-printsymbol</b></p><a name=\"conceptmap-ucum-to-printsymbol\"> </a><a name=\"hcconceptmap-ucum-to-printsymbol\"> </a><a name=\"conceptmap-ucum-to-printsymbol-en-US\"> </a><p>Mapping from <a href=\"ValueSet-ehealth-unit.html\">eHealthUnit</a> to <a href=\"ValueSet-ehealth-ucum-printsymbol-supplement.html\">UCUM printSymbol supplement</a></p><p>ACTIVE (not intended for production usage). Published on 2020-08-31 00:00:00+0000 by Den telemedicinske infrastruktur (eHealth Infrastructure)  (Den telemedicinske infrastruktur (eHealth Infrastructure): <a href=\"http://ehealth.sundhed.dk\">http://ehealth.sundhed.dk</a>). </p><br/><p><b>Group 1 </b>Mapping from <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ucum.html\">Unified Code for Units of Measure (UCUM)</a> to <a href=\"CodeSystem-ehealth-ucum-printsymbol-supplement.html\">UCUM printSymbol supplement</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>% (percent)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>% (percent)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>1/min (one per minute)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>1/min (one per minute)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>kg (kilogram)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>kg (kilogram)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>kg/m2 (kilogram / (meter ^ 2))</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>kg/m2 (kilogram / (meter ^ 2))</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>m (meter)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>m (meter)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>L (liter)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>L (liter)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>{ratio} (ratio)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>{ratio} (ratio)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>mm[Hg] (millimeter of mercury)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>mm[Hg] (millimeter of mercury)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>{Number} (Number)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>{Number} (Number)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>Cel (degree Celsius)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>Cel (degree Celsius)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>mg/L (milligram per liter)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>mg/L (milligram per liter)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>/min (per minute)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>/min (per minute)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>/d (per day)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>/d (per day)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>/wk (per week)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>/wk (per week)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-ehealth-unit-code.html\">eHealth Unit Codes</a> to <a href=\"CodeSystem-ehealth-ucum-printsymbol-supplement.html\">UCUM printSymbol supplement</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1/30sec (one per 30 seconds)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>1/30sec (one per 30 seconds)</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr><tr><td>percentpoint</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#specializes\" title=\"specializes\">has specialization</a></td><td>percentpoint</td><td>Should really be specializes but igpublisher turns into narrower (which requires a comment)</td></tr></table></div>"
-  },
   "url": "http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol",
-  "version": "3.3.0",
+  "version": "0.1.0",
   "name": "conceptmap-ucum-to-printsymbol",
   "title": "UCUM code to PrintSymbol mapping",
   "status": "active",
   "experimental": true,
   "date": "2020-08-31T00:00:00+00:00",
-  "publisher": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+  "publisher": "Systematic A/S",
   "contact": [
     {
-      "name": "Den telemedicinske infrastruktur (eHealth Infrastructure)",
+      "name": "Systematic A/S",
       "telecom": [
         {
           "system": "url",
-          "value": "http://ehealth.sundhed.dk"
+          "value": "http://ehealth.sundhed.dk/"
         }
       ]
     }
@@ -36,12 +32,6 @@
           "display": "percent",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "%",
               "display": "percent",
               "equivalence": "specializes",
@@ -54,12 +44,6 @@
           "display": "one per minute",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "1/min",
               "display": "one per minute",
               "equivalence": "specializes",
@@ -72,12 +56,6 @@
           "display": "kilogram",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "kg",
               "display": "kilogram",
               "equivalence": "specializes",
@@ -90,12 +68,6 @@
           "display": "kilogram / (meter ^ 2)",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "kg/m2",
               "display": "kilogram / (meter ^ 2)",
               "equivalence": "specializes",
@@ -108,12 +80,6 @@
           "display": "meter",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "m",
               "display": "meter",
               "equivalence": "specializes",
@@ -126,12 +92,6 @@
           "display": "liter",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "L",
               "display": "liter",
               "equivalence": "specializes",
@@ -144,12 +104,6 @@
           "display": "ratio",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "{ratio}",
               "display": "ratio",
               "equivalence": "specializes",
@@ -162,12 +116,6 @@
           "display": "millimeter of mercury",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "mm[Hg]",
               "display": "millimeter of mercury",
               "equivalence": "specializes",
@@ -180,12 +128,6 @@
           "display": "Number",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "{Number}",
               "display": "Number",
               "equivalence": "specializes",
@@ -198,12 +140,6 @@
           "display": "degree Celsius",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "Cel",
               "display": "degree Celsius",
               "equivalence": "specializes",
@@ -216,12 +152,6 @@
           "display": "milligram per liter",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "mg/L",
               "display": "milligram per liter",
               "equivalence": "specializes",
@@ -234,14 +164,32 @@
           "display": "per minute",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "/min",
               "display": "per minute",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "/d",
+          "display": "per day",
+          "target": [
+            {
+              "code": "/d",
+              "display": "per day",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "/wk",
+          "display": "per week",
+          "target": [
+            {
+              "code": "/wk",
+              "display": "per week",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
@@ -258,12 +206,6 @@
           "display": "one per 30 seconds",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "1/30sec",
               "display": "one per 30 seconds",
               "equivalence": "specializes",
@@ -276,12 +218,6 @@
           "display": "percent point",
           "target": [
             {
-              "modifierExtension": [
-                {
-                  "url": "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
-                  "valueCode": "specializes"
-                }
-              ],
               "code": "percentpoint",
               "display": "percent point",
               "equivalence": "specializes",
