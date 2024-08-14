@@ -62,17 +62,6 @@
           ]
         },
         {
-          "code": "445988008",
-          "display": "Assessment using health assessment questionnaire (procedure)",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "409073007",
           "display": "Instruktion",
           "target": [
@@ -402,6 +391,7 @@
     },
     {
       "source": "http://snomed.info/sct",
+      "display": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "445988008",
@@ -451,3 +441,4 @@
     }
   ]
 }
+
