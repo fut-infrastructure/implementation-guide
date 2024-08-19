@@ -3,6 +3,25 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added http://ehealth.sundhed.dk/cs/participant-function
+
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/participant-function
+
+### ConceptMaps
+### Resource/profile changes
+- Added new generic extension ehealth-participant to be used on all resources where a participant is involved
+- Added ehealth-participant extension to CarePlan
+- Added ehealth-participant extension to EpisodeOfCare
+
+### Search parameters
+
+
+### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
 ### Custom operations
 - Updated $get-patient-procedures behavior on input specifying the optional 'extra' parameter. When 'extra' is true, the operation returns a row for extra activities as determined by ServiceRequest.includeAsExtra.
