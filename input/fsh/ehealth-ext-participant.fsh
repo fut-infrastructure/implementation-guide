@@ -10,6 +10,6 @@ Description: "The participating CareTeam, Organization, Patient, Practitioner, o
 * extension[function].valueCodeableConcept 0..1
 * extension[function] ^short = "The function of the participant"
 * extension[function] ^definition = "The code defining the function of the participant."
-* extension[actor].value[x] only Reference(CareTeam | Organization | Patient | Practitioner | RelatedPerson)
+* extension[actor].value[x] only Reference(CareTeam or Organization or Patient or Practitioner or RelatedPerson)
 * extension[actor].value[x] ^type.aggregation = #referenced
 * extension[actor].valueReference 0..1
