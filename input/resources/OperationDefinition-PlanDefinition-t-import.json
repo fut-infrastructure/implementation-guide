@@ -6,7 +6,7 @@
   "title": "Import a Plandefinition",
   "status": "active",
   "kind": "operation",
-  "description": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created and existing resources:\n- PlanDefinitions (with: owner set to current Organization, and status DRAFT) \n- ActivityDefinitions (with: owner set to current organization, and status set to DRAFT) \n- Questionnaires (with: owner set to current organization, publisher set to current user name, and status set to DRAFT).\nOrganization resources referenced as co-author or intendedAudience that cannot be found, are silently removed.\nIf the main plan already exists on the target system, the import is aborted.\nIf Library resources (used for rules such as triage rules) are missing on the target system, the import fails.\n\nImports DocumentReference containing QFDD into Document-Transformation service. Libraries and Organizations are used to find the corresponding resources on the target system.\n",
+  "description": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Imports QFFD DocumentReference into Document-Transformation service.Libraries and Organizations are used to find the corresponding resources on the target system.\n",
   "affectsState": true,
   "code": "import",
   "resource": [ "PlanDefinition" ],

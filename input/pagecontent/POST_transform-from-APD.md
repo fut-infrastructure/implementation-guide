@@ -3,9 +3,9 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLUFQRCIsIiR0cmFuc2Zvcm0tdG8tQVBEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLUFQRCIsIiR0cmFuc2Zvcm0tdG8tQVBEIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-04-26T07:47:31.466+00:00",
+        "date": "2024-07-29T08:33:22.209+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "e360ab46-7e33-4325-98ff-eb17b9c4dfb5",
+        "id": "39c1abae-c071-4070-b800-f8af5d7babcb",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -108,7 +108,7 @@ __Response__
             "id": "2",
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr></tbody></table></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Date of birth</td><td><span>25 December 1948</span></td></tr></tbody></table></div>"
             },
             "identifier": [
               {
@@ -125,7 +125,8 @@ __Response__
                 ]
               }
             ],
-            "gender": "female"
+            "gender": "female",
+            "birthDate": "1948-12-25"
           },
           {
             "resourceType": "Practitioner",
@@ -216,9 +217,18 @@ __Response__
           }
         ],
         "title": "Aftale for 2512489996",
+        "confidentiality": "N",
         "custodian": {
           "reference": "#4"
-        }
+        },
+        "event": [
+          {
+            "period": {
+              "start": "2019-12-31T08:00:00+00:00",
+              "end": "2019-12-31T11:00:00+00:00"
+            }
+          }
+        ]
       }
     },
     {
@@ -323,7 +333,7 @@ __Response__
             "id": "4",
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr></tbody></table></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Nancy Ann <b>BERGGREN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2512489996</td></tr><tr><td>Date of birth</td><td><span>25 December 1948</span></td></tr></tbody></table></div>"
             },
             "identifier": [
               {
@@ -340,7 +350,8 @@ __Response__
                 ]
               }
             ],
-            "gender": "female"
+            "gender": "female",
+            "birthDate": "1948-12-25"
           }
         ],
         "extension": [

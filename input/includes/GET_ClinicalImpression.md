@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJG1pZ3JhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNsaW5pY2FsSW1wcmVzc2lvbi5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -18,8 +18,8 @@ __Response__
   "id": "333",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-04-04T11:29:53.168+00:00",
-    "source": "#7de4da71-29e6-95",
+    "lastUpdated": "2024-07-29T08:57:04.140+00:00",
+    "source": "#2ecc3b6d-1427-43",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ],
@@ -35,7 +35,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1920.local/fhir/EpisodeOfCare/36901"
+        "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/46167"
       }
     }
   ],
@@ -49,7 +49,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1920.local/fhir/Patient/66023"
+    "reference": "https://patient.cit-task-1940.local/fhir/Patient/64516"
   }
 }
 ```
