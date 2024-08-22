@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 3.2.0 (2024-08-22)
 
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
@@ -37,6 +37,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-include-as-extra to PlanDefinition.action
 ### Search parameters
 - Added search parameter `communicationRelatesTo` on `ehealth-message` (`Communication`). This search parameter can be used to search for Communications based on either participant or episodeOfCare.
+
 ## 3.1.0 (2024-05-14)
 
 ### General changes
