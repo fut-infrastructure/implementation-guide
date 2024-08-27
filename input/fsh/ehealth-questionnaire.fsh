@@ -132,7 +132,7 @@ Description: "External Identifier. Note that this Identifier does not have to un
 * value[x] only Identifier
 
 Extension: ehealth-questionnaire-item-is-copyright
-Title:     "Copyright item"
+Title:     "Copyright item indicator"
 Description: "Indicates that the item is part of a copyright structure (CDA Document sharing - QFDD/QRD)"
 * . ^short = "Indicates that the item is part of a copyright structure (CDA Document sharing - QFDD/QRD)"
 * value[x] only boolean
