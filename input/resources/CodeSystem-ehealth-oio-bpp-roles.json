@@ -209,6 +209,194 @@
                     "value": "Aftaleansvarlig"
                 }
             ]
+        },
+
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
+            "display": "Borgeropretter",
+            "definition": "Kan oprette borger i telemedicinsk forløb og tildele borger en foruddefineret plan",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Borgeropretter"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/clinical_viewer/1",
+            "display": "Klinisk se adgang",
+            "definition": "Kan se telemedicinske Måledata for at kunne understøtte dagligt ikke-telemedicinsk arbejde rettet på konkret borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Klinisk se adgang"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/monitoring_assistor/1",
+            "display": "Monitoreringsmedhjælper",
+            "definition": "Kan håndtere Måledata og kommunikation til/fra borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Monitoreringsmedhjælper"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/monitoring_adjuster/1",
+            "display": "Monitoreringstilretter",
+            "definition": "Kan håndtere og ændre i Måleregime, Grænseværdier og telemedicinsk forløb/pakke til borger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Monitoreringstilretter"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/report_user/1",
+            "display": "Nøgletalsmedarbejder",
+            "definition": "Kan udføre datatrækning, rapporter og statistik",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Nøgletalsmedarbejder"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/questionnaire_editor/1",
+            "display": "Sundhedsfaglig spørgeskemaeditor",
+            "definition": "Kan udarbejde, ændre og teste Spørgeskema",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Sundhedsfaglig spørgeskemaeditor"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/clinical_administrator/1",
+            "display": "Pakke- og forløbsbygger",
+            "definition": "Kan udvælge Spørgeskema/Måling, sammensætte indholdet af pakker og forløb, navngive pakke/forløb og tilrette de generelle Grænseværdier",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Pakke- og forløbsbygger"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/clinical_supporter/1",
+            "display": "Klinisk supporter",
+            "definition": "Kan undersøge hændelser ud fra div. kriterier fx borger, bruger, dato, hændelse",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Klinisk supporter"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/careteam_administrator/1",
+            "display": "Care Team administrator",
+            "definition": "Kan håndtere Care Teams i den telemedicinske løsning",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Care Team administrator"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/order_placer/1",
+            "display": "Bestiller af udstyr",
+            "definition": "Håndterer bestilling af telemedicinsk udstyr ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Bestiller af udstyr"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/service_and_logistics/1",
+            "display": "Service og logistik samarbejdspartner",
+            "definition": "Kan håndtere bestilling ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Service og logistik samarbejdspartner"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/incident_reporter/1",
+            "display": "Fejlmelder",
+            "definition": "Kan indberette fejl på telemedicinske løsninger og udstyr",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Fejlmelder"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/incident_manager/1",
+            "display": "Support samarbejdspartner",
+            "definition": "Kan håndtere fejlmelding ud fra lokale aftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Support samarbejdspartner"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/terminology_administrator/1",
+            "display": "Terminologiadministrator",
+            "definition": "Oprette og vedligeholde terminologi",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Terminologiadministrator"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/ssl_catalogue_responsible/1",
+            "display": "Katalogansvarlig",
+            "definition": "Oprette og vedligeholde SSL kataloger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Katalogansvarlig"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/ssl_catalogue_annotator/1",
+            "display": "Katalogopmærker",
+            "definition": "Opmærke varer og serviceydelser i SSL kataloger",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Katalogopmærker"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/ssl_contract_responsible/1",
+            "display": "Aftaleansvarlig",
+            "definition": "Oprette og rette SSL samarbejdsaftaler",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Aftaleansvarlig"
+                }
+            ]
         }
     ]
 }
