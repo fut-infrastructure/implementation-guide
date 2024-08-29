@@ -17,6 +17,6 @@ Description: "The participating CareTeam or Practitioner."
 * extension[actor] ^short = "The participant"
 * extension[actor] ^definition = "The CareTeam or Practitioner that is participating."
 * extension[actorref].value[x] only string
-* extension[actor].valueString 0..1
+* extension[actorref].valueString 0..1
 * extension[actorref] ^short = "The participant ref (string)"
 * extension[actorref] ^definition = "The CareTeam or Practitioner that is participating."
