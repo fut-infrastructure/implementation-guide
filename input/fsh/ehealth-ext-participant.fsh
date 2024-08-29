@@ -4,7 +4,7 @@ Description: "The participating CareTeam or Practitioner."
 * . ^short = "Who or what is participating"
 * extension contains
     function 0..1 and
-    actor 0..1
+    actor 0..1 and
     actorref 0..1
 * extension[function].value[x] only code
 * extension[function].value[x] from http://ehealth.sundhed.dk/vs/participant-function (required)
