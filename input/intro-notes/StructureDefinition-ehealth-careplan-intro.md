@@ -17,3 +17,8 @@ The history of changes in `status` is automatically maintained in the element `e
 
 ### Responsible CareTeam and responsibleHistory
 A CarePlan can have a number of responsible CareTeam set in `careTeam`. The history of changes in `careTeam` is automatically maintained in the element `ehealth-teamHistory`.
+
+### Participant
+A CarePlan can have a number of Participants set in `participant`. Participants can have up to one function of either Primary or Secondary Contact, and can be of type Practitioner or CareTeam.
+One should not set the value `actorref` directly, but rather use the `actor` element to reference the Practitioner or CareTeam. The `actorref` element is used as a workaround, to allow searching with Composite search parameters.
+
