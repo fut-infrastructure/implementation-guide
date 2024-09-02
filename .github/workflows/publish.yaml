@@ -111,7 +111,7 @@ jobs:
 
       - name: remove large unnecessary files
         run: |
-          rm -rf web/ig-build-zips/
+          rm -rf web/ig-build-zips/*.zip
           rm -rf web/fhir/full-ig.zip
           rm -rf web/fhir/*/full-ig.zip
       
