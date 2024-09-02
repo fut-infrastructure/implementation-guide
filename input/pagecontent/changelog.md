@@ -3,23 +3,24 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Added new Extension ehealth-participant, and made it searchable with composite search parameter
+- Composite search parameters does not work with Reference, so we had to make a workaround where we use a string (actorref) instead of a reference.
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/participant-function
-
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/participant-function
-
 ### ConceptMaps
 ### Resource/profile changes
 - Added new generic extension ehealth-participant to be used on all resources where a participant is involved
 - Added ehealth-participant extension to CarePlan
 - Added ehealth-participant extension to EpisodeOfCare
-
 ### Search parameters
-
+- Added search parameter `function` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the function of the participant.
+- Added search parameter `actor` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the actor reference of the participant.
+- Added search parameter `actorref` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used as composite searchParameter in combination with `function` to search for CarePlans or EpisodesOfCare based on the actor reference of the participant with a given function.
 
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
