@@ -1,11 +1,11 @@
-`GET [base]/Task?episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1920.local%2Ffhir%2FEpisodeOfCare%2F37766&restriction-category=measurement-monitoring%2Cnone`
+`GET [base]/Task?episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1940.local%2Ffhir%2FEpisodeOfCare%2F29715&restriction-category=measurement-monitoring%2Cnone`
 
 __Header__
 ```
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "09022be7-30fd-4d0b-a4e6-db0c04523483",
+  "id": "ed01b56f-9940-42a7-92ba-b63bdd76d7d5",
   "meta": {
-    "lastUpdated": "2024-04-04T11:31:12.944+00:00"
+    "lastUpdated": "2024-07-29T08:58:27.157+00:00"
   },
   "type": "searchset",
   "total": 3,
   "link": [
     {
       "relation": "self",
-      "url": "https://task.cit-task-1920.local/fhir/Task?_format=json&_pretty=true&episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1920.local%2Ffhir%2FEpisodeOfCare%2F37766&restriction-category=measurement-monitoring%2Cnone"
+      "url": "https://task.cit-task-1940.local/fhir/Task?_format=json&_pretty=true&episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1940.local%2Ffhir%2FEpisodeOfCare%2F29715&restriction-category=measurement-monitoring%2Cnone"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://task.cit-task-1920.local/fhir/Task/377",
+      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/377",
       "resource": {
         "resourceType": "Task",
         "id": "377",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-04-04T11:31:12.359+00:00",
-          "source": "#1c889f67-30c2-40",
+          "lastUpdated": "2024-07-29T08:58:26.452+00:00",
+          "source": "#3fa8192a-be28-44",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -45,7 +45,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1920.local/fhir/EpisodeOfCare/37766"
+              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
             }
           },
           {
@@ -84,7 +84,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1920.local/fhir/Practitioner/67283"
+              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/59657"
             }
           }
         ],
@@ -97,14 +97,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://task.cit-task-1920.local/fhir/Task/379",
+      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/379",
       "resource": {
         "resourceType": "Task",
         "id": "379",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-04-04T11:31:12.660+00:00",
-          "source": "#0c87b379-f81e-4e",
+          "lastUpdated": "2024-07-29T08:58:26.900+00:00",
+          "source": "#d11b3b4f-924d-4b",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -113,7 +113,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1920.local/fhir/EpisodeOfCare/37766"
+              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
             }
           },
           {
@@ -141,7 +141,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1920.local/fhir/Practitioner/50295"
+              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/17531"
             }
           }
         ],
@@ -154,14 +154,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://task.cit-task-1920.local/fhir/Task/380",
+      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/380",
       "resource": {
         "resourceType": "Task",
         "id": "380",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-04-04T11:31:12.850+00:00",
-          "source": "#973082ab-a6d9-41",
+          "lastUpdated": "2024-07-29T08:58:27.063+00:00",
+          "source": "#0c7739b2-2e56-96",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -170,7 +170,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1920.local/fhir/EpisodeOfCare/37766"
+              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
             }
           },
           {
@@ -198,7 +198,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1920.local/fhir/Practitioner/99044"
+              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/18029"
             }
           }
         ],

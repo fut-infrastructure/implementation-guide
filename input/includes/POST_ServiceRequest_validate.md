@@ -5,7 +5,7 @@ __Header__
 Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.2.1 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -20,7 +20,7 @@ __Body__:
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
-          "lastUpdated": "2024-04-05T09:11:11.537+00:00",
+          "lastUpdated": "2024-07-29T13:22:59.976+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -29,7 +29,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2740.local/fhir/EpisodeOfCare/2989"
+              "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/2867"
             }
           },
           {
@@ -86,7 +86,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -2087029085,
+                  "value": 1660241136,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -110,14 +110,18 @@ __Body__:
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2024-04-05T09:11:11+00:00"
+                  "start": "2024-07-29T13:22:59+00:00"
                 }
               }
             ]
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-include-as-extra",
+            "valueBoolean": false
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2740.local/fhir/ActivityDefinition/92709"
+          "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/96921"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -128,10 +132,10 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "d4e45ace-2f62-4e05-84f5-6a8639cc9d52"
+          "text": "a3624f9b-642f-4461-91ec-0d64a76f23a3"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2740.local/fhir/Patient/22188"
+          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/41161"
         }
       }
     }
@@ -145,7 +149,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td><pre>No issues detected during validation</pre></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>No issues detected during validation</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>No issues detected during validation</td></tr></table></div>"
   },
   "issue": [
     {

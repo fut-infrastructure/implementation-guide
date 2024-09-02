@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2024-04-29T02:18:14.728+00:00",
+  "date": "2024-08-06T02:18:15.077+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.13.0"
+    "version": "1.14.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -351,7 +351,7 @@
     }, {
       "name": "transform-to-QFDD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-QFDD",
-      "documentation": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned FHIR DocumentReference contains QFDD XML for the DK-HL7 Questionnaire Form Definition Document."
+      "documentation": "Transforms an eHealth Questionnaire resource to the DK-HL7 Questionnaire Form Definition Document (QFDD). The input Bundle contains an eHealth Questionnaire and Composition resource which reference the returned eHealth Questionnaire. The returned Bundle in case of no validation errors contains the FHIR DocumentReference containing the QFDD XML for the DK-HL7 Questionnaire Form Definition Document and an OperationOutcome will possible warnings. In case of validation errors the Bundle will only contain an OperationOutcome with the validation errors/warnings."
     }, {
       "name": "transform-to-PHMR",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-to-PHMR",
@@ -380,10 +380,6 @@
       "name": "transform-from-APD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
       "documentation": "Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."
-    }, {
-      "name": "process-message",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-process-message",
-      "documentation": "Accept a FHIR Message Bundle for processing"
     }, {
       "name": "perform-reindexing-pass",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
