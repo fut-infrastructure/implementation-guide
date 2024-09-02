@@ -52,6 +52,7 @@ Parent: CarePlan
 * activity.detail.performer ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
+* extension contains ehealth-participant named participant 0..*
 
 Extension:   ehealth-careplan-statusHistory
 Title:       "Careplan status history"

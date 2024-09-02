@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "participant-function",
+  "url": "http://ehealth.sundhed.dk/cs/participant-function",
+  "version": "1.0",
+  "name": "ParticipantFunction",
+  "title": "Participant Function",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-09-02T00:00:00+00:00",
+  "publisher": "eHealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Participant Function.",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Primary Contact",
+      "display": "Primary contact",
+      "definition": "Primary contact",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Primær kontaktperson"
+        }
+      ]
+    },
+    {
+      "code": "Secondary Contact",
+      "display": "Secondary contact",
+      "definition": "Secondary contact",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sekundær kontaktperson"
+        }
+      ]
+    }
+  ]
+}
