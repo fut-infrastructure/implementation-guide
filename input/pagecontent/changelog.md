@@ -1,5 +1,18 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Added extension ehealth-questionnaire-item-is-copyright to Questionnaire.item
+- Added invariant to Questionnaire item that only allows isCopyright to be true for type 'group' or 'display'
+
 ## 3.2.0 (2024-08-22)
 
 ### General changes

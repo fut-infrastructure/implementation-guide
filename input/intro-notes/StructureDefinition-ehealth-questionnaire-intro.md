@@ -56,3 +56,12 @@ The `item.enableBehavior.conditionId` can be used to identify conditions. This p
 
 ### External identifier
 The `item.externalIdentifier` can be used to identify either questionnaire groups or questionnaire questions. This property is primarily used when modeling Questionnaires which should be transformed to CDA documents.
+
+### Copyright
+The `item.isCopyright` can be used to indicate a copyright structure.
+`item.isCopyright` is a boolean value, and if set to true, the item must have either `item.type`: 'group' or 'display'. Furthermore, for `item.type` 'group' the isCopyright is only allowed on root items, for items with type 'display' the `item.isCopyright` is only allowed true if the parent item is of type 'group', isCopyright equals true and the group item is on root level.
+
+Example of one copyright structure with two copyrights
+* item.type: 'group', item.isCopyright: true, item.text = 'Copyright title'. (root item)
+  * item.type: 'display', item.isCopyright: true, item.text = 'Copyright 1' (child item)
+  * item.type: 'display', item.isCopyright: true, item.text = 'Copyright 2' (child item)
