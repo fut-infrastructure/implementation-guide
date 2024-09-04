@@ -140,7 +140,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Måledata (måling, spørgeskemabesvarelse eller billlede) er ugyldiggjort"
+          "value": "Måledata (måling, spørgeskemabesvarelse eller billede) er ugyldiggjort"
         }
       ]
     },
@@ -151,7 +151,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Ugyldiggørelse af måledata (måling, spørgeskemabesvarelse eller billlede) er trukket tilbage"
+          "value": "Ugyldiggørelse af måledata (måling, spørgeskemabesvarelse eller billede) er trukket tilbage"
         }
       ]
     }
