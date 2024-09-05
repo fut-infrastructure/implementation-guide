@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 3.2.0 (2024-08-22)
+## Unreleased
 
 ### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
@@ -21,6 +21,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added search parameter `function` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the function of the participant.
 - Added search parameter `actor` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the actor reference of the participant.
 - Added search parameter `actorref` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used as composite searchParameter in combination with `function` to search for CarePlans or EpisodesOfCare based on the actor reference of the participant with a given function.
+
+## 3.2.0 (2024-08-22)
 
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
