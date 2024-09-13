@@ -18,3 +18,11 @@ Parent: DocumentReference
 * context.facilityType from http://ehealth.sundhed.dk/vs/facility-type-codes
 * context.practiceSetting from http://ehealth.sundhed.dk/vs/practice-setting-codes
 * context.sourcePatientInfo only Reference(ehealth-patient)
+* extension contains ehealth-manuallydeprecated-type named manuallyDeprecated 0..1
+
+Extension: ehealth-manuallydeprecated-type
+Title:     "Ehealth Document manually deprecated"
+Description: "Ehealth Document manually deprecated"
+* . ^short = "Ehealth Document manually deprecated"
+* value[x] only boolean
+* value[x] 1..1

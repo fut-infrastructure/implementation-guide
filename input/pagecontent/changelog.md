@@ -124,6 +124,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extention ehealth-resolved-timing to Task
 - Added extention ehealth-external-identifier to Questionnaire.QuestionnaireItem
 - Updated binding for ClinicalImpression.investigation.code to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
+- added a boolean flag extension to ehealth-document-reference detailing if the document has been manually deprecated.
 ### Search parameters
 - Added search parameter `communicationParticipant` on `ehealth-message` (`Communication`) to be able to query either by CareTeam or Patient/Practitioner
 
