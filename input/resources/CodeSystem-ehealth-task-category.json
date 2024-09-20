@@ -198,6 +198,17 @@
           "value": "Indsendte måledata (måling) har fravær af målt værdi."
         }
       ]
+    },
+    {
+      "code": "HandoverNegotiation",
+      "display": "Need negotiation for handover of CarePlans between CareTeams",
+      "definition": "Need negotiation for handover of CarePlans between CareTeams",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Forhandlingsprocess for overdragelse af plan(er) mellem behandlerteams"
+        }
+      ]
     }
   ]
 }
