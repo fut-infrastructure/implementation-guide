@@ -10,8 +10,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/participant-function
+- Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/cs/task-category
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/participant-function
+- Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/vs/task-category
 ### ConceptMaps
 ### Resource/profile changes
 - Added new generic extension ehealth-participant to be used on all resources where a participant is involved
