@@ -555,6 +555,56 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "702916001",
+            "display": "Rehabilitation clinic",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Rehabilitation clinic"
+              }
+            ]
+          },
+          {
+            "code": "284546000",
+            "display": "Hospice",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Hospice"
+              }
+            ]
+          },
+          {
+            "code": "272511002",
+            "display": "Municipal and civic establishment",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Municipal and civic establishment"
+              }
+            ]
+          },
+          {
+            "code": "557891000005101",
+            "display": "Municipal health care activity unit",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Municipal health care activity unit"
+              }
+            ]
+          },
+          {
+            "code": "557901000005102",
+            "display": "Preventive home care",
+            "designation": [
+              {
+                "language": "en-US",
+                "value": "Preventive home care"
+              }
+            ]
+          },
+          {
             "code": "398070004",
             "display": "State",
             "designation": [
