@@ -36,6 +36,11 @@
       "code" : "c820effc-91d3-45cd-b2df-53ae95284349",
       "display" : "Hjerterehabilitering uddrag slut v.3",
       "definition" : "Kort spørgeskema i forbindelse med hjerterehabilitering, slut; Version: 3; Dato: 2022-06-10"
+    },
+    {
+      "code" : "644ef36c-0946-43e2-b168-db37af090293",
+      "display" : "Trivselsmål",
+      "definition" : "WHO-5, Stroke v.1"
     }
   ]
 }

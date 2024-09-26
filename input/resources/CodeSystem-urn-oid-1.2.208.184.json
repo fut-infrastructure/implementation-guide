@@ -1,0 +1,26 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "urn-oid-1.2.208.184",
+  "url" : "urn-oid-1.2.208.184",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn-oid-1.2.208.184"
+  }],
+  "version" : "1.0",
+  "name" : "Questionnaires_used_for_certification_MEDCOM",
+  "title": "Questionnaires used for certification (MEDCOM)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-09-26T16:00:00+00:00",
+  "publisher" : "MedCom",
+  "description" : "Code system used for certification",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [
+    {
+      "code" : "d2474661-afe2-485e-a12c-962f0ec188b6",
+      "display" : "MedCom anvendt testeksempel [version 2024-08-23]",
+      "definition" : "MedCom anvendt testeksempel [version 2024-08-23]"
+    }
+  ]
+}
