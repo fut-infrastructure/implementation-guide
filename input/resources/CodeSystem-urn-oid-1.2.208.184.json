@@ -1,10 +1,10 @@
 {
   "resourceType" : "CodeSystem",
   "id" : "urn-oid-1.2.208.184",
-  "url" : "urn-oid-1.2.208.184",
+  "url" : "urn:oid:1.2.208.184",
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",
-    "value" : "urn-oid-1.2.208.184"
+    "value" : "urn:oid:1.2.208.184"
   }],
   "version" : "1.0",
   "name" : "Questionnaires_used_for_certification_MEDCOM",

@@ -108,6 +108,15 @@
       },
       {
         "system": "urn:oid:1.2.208.176.7.3.1"
+      },
+      {
+        "system": "urn:oid:1.2.208.184",
+        "concept": [
+          {
+            "code": "d2474661-afe2-485e-a12c-962f0ec188b6",
+            "display": "MedCom anvendt testeksempel [version 2024-08-23]"
+          }
+        ]
       }
     ]
   }

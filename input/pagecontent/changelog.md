@@ -12,11 +12,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/cs/participant-function
 - Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/cs/task-category
 - Added `644ef36c-0946-43e2-b168-db37af090293` code to urn:oid:1.2.208.176.7.3.1
-- Added urn-oid-1.2.208.184 with code `d2474661-afe2-485e-a12c-962f0ec188b6`
+- Added urn:oid:1.2.208.184 with code `d2474661-afe2-485e-a12c-962f0ec188b6`
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/participant-function
 - Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/vs/task-category
 - Added `702916001`, `284546000`, `272511002`, `557891000005101` and `557901000005102` codes to http://ehealth.sundhed.dk/vs/facility-type-codes
+- Added `d2474661-afe2-485e-a12c-962f0ec188b6` from urn:oid:1.2.208.184 to http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs
 ### ConceptMaps
 ### Resource/profile changes
 - Added new generic extension ehealth-participant to be used on all resources where a participant is involved
