@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 ### ValueSets
+- Added `702916001`, `284546000`, `272511002`, `557891000005101` and `557901000005102` codes to http://ehealth.sundhed.dk/vs/facility-type-codes
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-questionnaire-item-is-copyright to Questionnaire.item
