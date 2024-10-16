@@ -20,7 +20,7 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
+      image: ghcr.io/fut-infrastructure/ig-publisher:latest
     steps:
       # Checkout the repos needed
       - uses: actions/checkout@v4
@@ -36,7 +36,7 @@ jobs:
     if: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/fut-infrastructure/ig-publisher/ig-publisher:latest
+      image: ghcr.io/fut-infrastructure/ig-publisher:latest
     steps:
       # Checkout the repos needed
       - uses: actions/checkout@v4
@@ -107,11 +107,11 @@ jobs:
       - name: ig publish
         run: >-
           $ig_cmd -go-publish
-          -source ig/ -web web/fhir/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
+          -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
 
       - name: remove large unnecessary files
         run: |
-          rm -rf web/ig-build-zips/
+          rm -rf web/ig-build-zips/*.zip
           rm -rf web/fhir/full-ig.zip
           rm -rf web/fhir/*/full-ig.zip
       
