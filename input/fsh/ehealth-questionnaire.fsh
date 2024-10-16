@@ -139,7 +139,7 @@ Description: "Indicates that the item is part of a copyright structure (CDA Docu
 * valueBoolean 1..1
 
 Invariant:   copyright-type
-Description: "If item extension 'ehealth-questionnaire-item-is-copyright' is set to true item.type must be either 'group' or 'display'."
+Description: "If item extension 'ehealth-questionnaire-item-is-copyright' is set to true, item.type must be either 'group' or 'display'."
 Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright').exists() and extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright').value = true implies type = 'group' or type = 'display'"
 Severity:    #error
 
