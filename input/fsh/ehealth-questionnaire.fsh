@@ -15,7 +15,7 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
-* item obeys sliderStepValueDecimal-Type
+* item obeys sliderStepValueDecimal-Type and copyright-type
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
@@ -31,6 +31,7 @@ Parent: Questionnaire
 * item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
 * item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
 * item.extension contains ehealth-external-identifier named externalIdentifier 0..1
+* item.extension contains ehealth-questionnaire-item-is-copyright named isCopyright 0..1
 * item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
 * item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
@@ -129,6 +130,18 @@ Title:       "ExternalIdentifier"
 Description: "External Identifier. Note that this Identifier does not have to unique within the Questionnaire."
 * . ^short = "External Identifier"
 * value[x] only Identifier
+
+Extension: ehealth-questionnaire-item-is-copyright
+Title:     "Copyright item indicator"
+Description: "Indicates that the item is part of a copyright structure (CDA Document sharing - QFDD/QRD)"
+* . ^short = "Indicates that the item is part of a copyright structure (CDA Document sharing - QFDD/QRD)"
+* value[x] only boolean
+* valueBoolean 1..1
+
+Invariant:   copyright-type
+Description: "If item extension 'ehealth-questionnaire-item-is-copyright' is set to true, item.type must be either 'group' or 'display'."
+Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright').exists() and extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright').value = true implies type = 'group' or type = 'display'"
+Severity:    #error
 
 Invariant:   sliderStepValueDecimal-Type
 Description: "Item must have type='decimal' when using extension 'ehealth-questionnaire-sliderStepValueDecimal'"
