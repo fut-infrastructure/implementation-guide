@@ -12,3 +12,6 @@ The eHealth profile of ServiceRequest has the following extensions:
 * `ehealth-sharingApprovalPolicy` Selects whether the approval of publication to national document sharing of measurements (resource(s) resulting from conducting the activity) must be done manually or if it is done automatically. The initial value will be inherited from the ActivityDefinition referenced in `definition`, but can subsequently be adapted for the particular Patient by adjusting the ServiceRequest.
 * `ehealth-servicerequest-statusHistory` contains history of changes in `status`, and is automatically maintained by the infrastructure.
 * `ehealth-servicerequest-statusSchedule` contains a list of scheduled changes in `status`. The infrastructure applies these changes automatically, and will remove the entry for the change once it has been applied.
+
+### Occurrence validity
+The `ehealth-servicerequest-occurrence[x]` field becomes both mandatory and must be valid when a ServiceRequest is marked as `active`, `on-hold`, or `completed`, as specified by `ehealth-servicerequest-status` or `ehealth-servicerequest-statusSchedule`. This validation applies when updating either the CarePlan (if `ehealth-careplan-status` or `ehealth-careplan-statusSchedule` is `active`) or the ServiceRequest.
