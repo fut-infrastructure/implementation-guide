@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-task-handover-roles",
+  "url": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+  "version": "0.1.0",
+  "name": "TaskHandoverRoles",
+  "title": "Task Handover Roles",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-21T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Task Handover Roles",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "handover-recipient",
+      "display": "Recipient of resource given handover",
+      "definition": "Recipient of resource given handover",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Modtager af resource ved overdragelse"
+        }
+      ]
+    },
+    {
+      "code": "handover-sender",
+      "display": "Sender of resource during handover",
+      "definition": "Sender of resource during handover",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Afsender af resource ved overdragelse"
+        }
+      ]
+    }
+  ]
+}

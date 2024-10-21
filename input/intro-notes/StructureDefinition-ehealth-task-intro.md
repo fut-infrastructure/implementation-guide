@@ -65,3 +65,11 @@ No Task resources are created to assist in adhering to a measurement regime.
 The Task extension `ehealth-task-responsible` enables that multiple entities (CareTeam, Practitioner, Patient, RelatedPerson) can be responsible for the Task. It is expected, for instance, that each CareTeam will provide support/monitoring of multiple patients. The Task resources for which a CareTeam is responsible can form a list sorted by priority to support triaging.
 
 When a Task has been assigned to a particular individual (through Task `owner`) it is possible for the Task responsible(s) to reassign the Task. This way, CareTeam members can coordinate Task assignments (by adding Practitioner as Task owner and setting Task status) while preserving the CareTeam as fallback in case the Practitioner is unable to process the Task, for instance due to absence.
+
+### Use of Task in resource handover negotiations between CareTeams
+Tasks can be used to support resource handover negotiations between CareTeams.
+
+* Task `category` must be set to `HandoverNegotiation`
+* Task `ehealth-task-responsible` must reference the CareTeams that are involved in the handover (both the CareTeam that is handing over and the CareTeam that is taking over)
+* Task `focus` must reference the resource that is being handed over
+* Task `input` should be used to identify which role the responsible CareTeams have in the handover (e.g. `input` with `type` set to Coding `handover-recipient` or `handover-sender` from `http://ehealth.sundhed.dk/cs/task-handover-roles` and valueReference to the CareTeam)
