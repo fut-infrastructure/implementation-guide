@@ -72,4 +72,4 @@ Tasks can be used to support resource handover negotiations between CareTeams.
 * Task `category` must be set to `HandoverNegotiation`
 * Task `ehealth-task-responsible` must reference the CareTeams that are involved in the handover (both the CareTeam that is handing over and the CareTeam that is taking over)
 * Task `focus` must reference the resource that is being handed over
-* Task `input` should be used to identify which role the responsible CareTeams have in the handover (e.g. `input` with `type` set to code from `http://ehealth.sundhed.dk/cs/task-handover-roles` and valueReference to the CareTeam that has that role in the handover)
+* Task `input` should be used to identify which role the responsible CareTeams have in the handover (e.g. `input` with `type` set to code from `http://ehealth.sundhed.dk/cs/task-handover-roles` and `valueReference` to the CareTeam that has that role in the handover)
