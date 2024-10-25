@@ -74,99 +74,13 @@ Tasks can be used to support resource handover negotiations between CareTeams.
 * Task `focus` must reference the resource that is being handed over
 * Task `input` should be used to identify which role the responsible CareTeams have in the handover (e.g. `input` with `type` set to code from `http://ehealth.sundhed.dk/cs/task-handover-roles` and `valueReference` to the CareTeam that has that role in the handover)
 
-Simplified example of a handover negotiation Task regarding handover of CarePlan. The handover is between two CareTeams with a third CareTeam as informed:
+Simplified example of a handover negotiation Task regarding handover of CarePlan1. The handover is between CareTeam1 and CareTeam2 with a CareTeam3 as informed:
 
-```json
-{
-  "resourceType": "Task",
-  "extension": [
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/task-category",
-            "code": "HandoverNegotiation",
-            "display": "Need negotiation for handover of CarePlans between CareTeams"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "CareTeam/1"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "CareTeam/2"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-      "valueReference": {
-        "reference": "CareTeam/3"
-      }
-    }
-  ],
-  "focus": {
-    "reference": "CarePlan/1"
-  },
-  "input": [
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
-            "code": "inviting-entity"
-          }
-        ]
-      },
-      "valueReference": {
-        "reference": "CareTeam/1"
-      }
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
-            "code": "leaving-entity"
-          }
-        ]
-      },
-      "valueReference": {
-        "reference": "CareTeam/1"
-      }
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
-            "code": "arriving-entity"
-          }
-        ]
-      },
-      "valueReference": {
-        "reference": "CareTeam/2"
-      }
-    },
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
-            "code": "informed-entity"
-          }
-        ]
-      },
-      "valueReference": {
-        "reference": "CareTeam/3"
-      }
-    }
-  ]
-}
-```
+* category: coding = `HandoverNegotiation` from system = http://ehealth.sundhed.dk/cs/task-category
+* responsible: reference to CareTeam1, reference to CareTeam2, reference to CareTeam3
+* focus: reference to CarePlan
+* input:
+    * type = coding with `inviting-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam1
+    * type = coding with `leaving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam1
+    * type = coding with `arriving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam2
+    * type = coding with `informed-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam3
