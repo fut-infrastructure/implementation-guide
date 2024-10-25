@@ -18,18 +18,18 @@ The `occurrence[x]` field becomes both mandatory and must be valid when a Servic
 
 The validity depends on the variant of `occurrence[x]` as follows:
 * `occurrenceDateTime`: Shall contain a date-time with at least hours and minutes (and hence timezone).
-* `occurrencePeriod`: Shall contain at least a Period.start containing a date-time with at least hours and minutes (and hence timezone).
+* `occurrencePeriod`: Shall contain at least a `Period.start` containing a date-time with at least hours and minutes (and hence timezone).
 * `occurrenceTiming`: Shall either be ad-hoc or recurring as follows:
-    * `occurrenceTiming ad-hoc`: the elements of `Timing.repeat` shall adhere to: 
-        * `boundsPeriod`: shall be specified and shall contain at least start containing a date-time with at least hours and minutes (and hence timezone). If present, end shall contain a date-time with at least hours and minutes (and hence timezone) which shall be equal to or after start.
+    * `occurrenceTiming` ad-hoc: the elements of `Timing.repeat` shall adhere to: 
+        * `boundsPeriod`: shall be specified and shall contain at least `start` containing a date-time with at least hours and minutes (and hence timezone). If present, `end` shall contain a date-time with at least hours and minutes (and hence timezone) which shall be equal to or after `start`.
         * `frequency`: shall be specified
         * `count`: is optional, required when `countMax` is not empty
         * `countMax`: is optional 
-    * `occurrenceTiming recurring`: the elements of `Timing.repeat` shall adhere to:
-        * `boundsPeriod`: shall be specified and shall contain at least start containing a date-time with at least hours and minutes (and hence timezone). If present, end shall contain a date-time with at least hours and minutes (and hence timezone) which shall be equal to or after start.
+    * `occurrenceTiming` recurring: the elements of `Timing.repeat` shall adhere to:
+        * `boundsPeriod`: shall be specified and shall contain at least `start` containing a date-time with at least hours and minutes (and hence timezone). If present, `end` shall contain a date-time with at least hours and minutes (and hence timezone) which shall be equal to or after `start`.
         * `frequency`: shall be specified
-        * `dayOfWeek`: optional. When one or more values specified, period and periodUnit shall specify either no value (being empty), 1 d (one day), pos-integer wk (week).
-        * `timeOfDay`: optional. When one or more values specified, period and periodUnit shall specify either no value (being empty), pos-integer d (day), pos-integer wk (week), pos-integer mo (month), or pos-integer a (year).
+        * `dayOfWeek`: optional. When one or more values specified, `period` and `periodUnit` shall specify either no value (being empty), 1 d (one day), pos-integer wk (week).
+        * `timeOfDay`: optional. When one or more values specified, `period` and `periodUnit` shall specify either no value (being empty), pos-integer d (day), pos-integer wk (week), pos-integer mo (month), or pos-integer a (year).
         * `durationUnit`: required when `duration` is specified. Shall be one of s, min, h, d, wk, a.
         * `period`: optional. When empty, it corresponds to occurrence every one day (every day).
         * `periodUnit`: required when `period` is not empty. Shall be one of min, h, d, wk, mo, a.
