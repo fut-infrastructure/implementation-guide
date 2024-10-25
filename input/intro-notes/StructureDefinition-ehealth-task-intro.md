@@ -76,11 +76,18 @@ Tasks can be used to support resource handover negotiations between CareTeams.
 
 Simplified example of a handover negotiation Task regarding handover of CarePlan1. The handover is between CareTeam1 and CareTeam2 with a CareTeam3 as informed:
 
-* category: coding = `HandoverNegotiation` from system = http://ehealth.sundhed.dk/cs/task-category
-* responsible: reference to CareTeam1, reference to CareTeam2, reference to CareTeam3
-* focus: reference to CarePlan
-* input:
-    * type = coding with `inviting-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam1
-    * type = coding with `leaving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam1
-    * type = coding with `arriving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam2
-    * type = coding with `informed-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`, value = reference to CareTeam3
+* `category`: coding = `HandoverNegotiation` from system = `http://ehealth.sundhed.dk/cs/task-category`
+* `ehealth-task-responsible`: reference to CareTeam1, reference to CareTeam2, reference to CareTeam3
+* `focus`: reference to CarePlan
+* `input[0]`:
+    * `type` = coding with `inviting-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`
+    * `value` = reference to CareTeam1
+* `input[1]`:
+    * `type` = coding with `leaving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`
+    * `value` = reference to CareTeam1
+* `input[2]`:
+    * `type` = coding with `arriving-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`
+    * `value` = reference to CareTeam2
+* `input[3]`:
+    * `type` = coding with `informed-entity` from system `http://ehealth.sundhed.dk/cs/task-handover-roles`
+    * `value` = reference to CareTeam3
