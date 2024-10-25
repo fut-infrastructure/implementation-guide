@@ -20,7 +20,7 @@ The validity depends on the variant of `occurrence[x]` as follows:
 * `occurrenceDateTime`: Shall contain a date-time with at least hours and minutes (and hence timezone).
 * `occurrencePeriod`: Shall contain at least a Period.start containing a date-time with at least hours and minutes (and hence timezone).
 * `occurrenceTiming`: Shall either be ad-hoc or recurring as follows:
-    * `occurrenceTiming ad-hoc`: the elements of Timing.repeat shall adhere to: 
+    * `occurrenceTiming ad-hoc`: the elements of `Timing.repeat` shall adhere to: 
         * `boundsPeriod`: shall be specified and shall contain at least start containing a date-time with at least hours and minutes (and hence timezone). If present, end shall contain a date-time with at least hours and minutes (and hence timezone) which shall be equal to or after start.
         * `frequency`: shall be specified
         * `count`: is optional, required when `countMax` is not empty
