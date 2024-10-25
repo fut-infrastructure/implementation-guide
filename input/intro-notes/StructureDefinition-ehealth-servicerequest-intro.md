@@ -34,4 +34,5 @@ The validity depends on the variant of `occurrence[x]` as follows:
         * `period`: optional. When empty, it corresponds to occurrence every one day (every day).
         * `periodUnit`: required when `period` is not empty. Shall be one of min, h, d, wk, mo, a.
 
-    See the wiki for examples -> https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing
+    See the [wiki](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing) for examples.
+
