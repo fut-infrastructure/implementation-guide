@@ -11,7 +11,7 @@ In scope of the eHealth Infrastructure, the Task resource is used for:
 
 Task resources are produced by the eHealth Infrastructure as reaction to measurements being submitted, measurements being submitted at odd timing or expected measurements not being submitted. Measurements in the form of Observation, QuestionnaireResponse or other resources are expected to be submitted by a Patient according to a measurement regime specified in a CarePlan and referenced CarePlan/ServiceRequest.
 
-The context in which the Task is created is identified through `episodeOfCare`. The `focus` element describes what resource the Task responsible should be acting on and can reference any resource. The `for` element can contain a reference to a Patient and shall be specified if the Task pertains to a Patient as subject. In case `episodeOfCare` references an EpisodeOfCare, it is enforced that `for` references the same Patient as is referenced in the EpisodeOfCare."
+The context in which the Task is created is identified through `episodeOfCare`. The `focus` element describes what resource the Task responsible should be acting on and can reference any resource. The `for` element can contain a reference to a Patient and shall be specified if the Task pertains to a Patient as subject. In case `episodeOfCare` references an EpisodeOfCare, it is enforced that `for` references the same Patient as is referenced in the EpisodeOfCare.
 
 ### Use of Task for coordinating assessment of submitted measurement
 
@@ -36,7 +36,7 @@ In case no automated processing rule has been attached to the plan, the current 
 * Task `ehealth-task-responsible` that references the one or more CareTeam attached to the CarePlan
 * Task `ehealth-restriction-category` is a coding that can be used to restrict access to the task, for instance restricting a task so only CareTeam members involved in monitoring measurements can access it
 * Task `priority` reflecting the urgency set by the triaging rule
-* Task `focus` referencing the ClinicalImpression that was also created during triaging. Focus can be overridden by the automated processing rule to reference something different than the ClinicalImpression.
+* Task `focus` referencing the ClinicalImpression that was also created during triaging. Focus can be overridden by the automated processing rule to reference something different from the ClinicalImpression.
 
 ### Use of Task for resolving missing measurement
 
@@ -73,3 +73,100 @@ Tasks can be used to support resource handover negotiations between CareTeams.
 * Task `ehealth-task-responsible` must reference the CareTeams that are involved in the handover (both the CareTeam that is handing over and the CareTeam that is taking over)
 * Task `focus` must reference the resource that is being handed over
 * Task `input` should be used to identify which role the responsible CareTeams have in the handover (e.g. `input` with `type` set to code from `http://ehealth.sundhed.dk/cs/task-handover-roles` and `valueReference` to the CareTeam that has that role in the handover)
+
+Simplified example of a handover negotiation Task regarding handover of CarePlan. The handover is between two CareTeams with a third CareTeam as informed:
+
+```json
+{
+  "resourceType": "Task",
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-category",
+            "code": "HandoverNegotiation",
+            "display": "Need negotiation for handover of CarePlans between CareTeams"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+      "valueReference": {
+        "reference": "CareTeam/1"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+      "valueReference": {
+        "reference": "CareTeam/2"
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
+      "valueReference": {
+        "reference": "CareTeam/3"
+      }
+    }
+  ],
+  "focus": {
+    "reference": "CarePlan/1"
+  },
+  "input": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+            "code": "inviting-entity"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "CareTeam/1"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+            "code": "leaving-entity"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "CareTeam/1"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+            "code": "arriving-entity"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "CareTeam/2"
+      }
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+            "code": "informed-entity"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "CareTeam/3"
+      }
+    }
+  ]
+}
+```

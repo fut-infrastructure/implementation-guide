@@ -66,6 +66,17 @@
           "value": "Part som fortsætter tilknyttelse og/eller ansvar"
         }
       ]
+    },
+    {
+      "code": "informed-entity",
+      "display": "Entity informed about planned or effectuated change in involvement and/or responsibility",
+      "definition": "Entity informed about planned or effectuated change in involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part informeret om (planlagt) ændring i tilknyttelse og/eller ansvar"
+        }
+      ]
     }
   ]
 }
