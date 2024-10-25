@@ -6,11 +6,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
 - Composite search parameters does not work with Reference, so we had to make a workaround where we use a string (actorref) instead of a reference.
 - Included a reference to validations for occurrence[x] in the ServiceRequest introduction.
+- Added description on ehealth-task intro page regarding handover of resources between CareTeams 
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/participant-function
+- Added http://ehealth.sundhed.dk/cs/task-handover-roles
 - Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/cs/task-category
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/participant-function
