@@ -2,6 +2,8 @@ Profile: ehealth-observation-wound-dimensions
 Id: ehealth-observation-wound-dimensions
 Parent: ehealth-observation
 
+* code = http://loinc.org#72287-6 // Wound size panel
+
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
