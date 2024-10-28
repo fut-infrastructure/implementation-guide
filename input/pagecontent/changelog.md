@@ -3,6 +3,18 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased
 
 ### General changes
+- Changed cardinality for ehealth-servicerequest performer to 0..*
+- Added ehealth-careteam reference to ehealth-servicerequest performer.
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+
+### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
 - Composite search parameters does not work with Reference, so we had to make a workaround where we use a string (actorref) instead of a reference.
 - Included a reference to validations for occurrence[x] in the ServiceRequest introduction.
