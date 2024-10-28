@@ -52,7 +52,7 @@ Description: "Series identifier."
 
 Extension: ehealth-media-thumbnail
 Title: "Media Thumbnail representation"
-Description: "A downsampled version of a Media resource content"
+Description: "A downsampled version of a Media resource content."
 * . ^short = "Media Thumbnail"
 * extension contains
     sizeCategory 1..1 and
