@@ -23,9 +23,12 @@ Parent: Media
 * device ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
-* bodySite from http://ehealth.sundhed.dk/vs/body-site 0..* (required)
-* modality from http://ehealth.sundhed.dk/vs/media-modality 0..1 (required)
-* view from http://ehealth.sundhed.dk/vs/media-view 0..1 (required)
+* bodySite from http://ehealth.sundhed.dk/vs/body-site (required)
+* bodySite 0..*
+* modality from http://ehealth.sundhed.dk/vs/media-modality (required)
+* modality 0..1
+* view from http://ehealth.sundhed.dk/vs/media-view (required)
+* view 0..1
 
 Extension:   ehealth-media-usage-mode
 Title:       "Usage mode"
