@@ -63,8 +63,8 @@ Description: "A downsampled version of a Media resource content"
 * extension[sizeCategory].valueCoding from http://ehealth.sundhed.dk/vs/thumbnail-size-category
 * extension[sizeCategory].valueCoding 1..1
 * extension[width].value[x] only positiveInt
-* extension[width].valueInteger 1..1
+* extension[width].valuePositiveInt 1..1
 * extension[height].value[x] only positiveInt
-* extension[height].valueInteger 1..1
+* extension[height].valuePositiveInt 1..1
 * extension[content].value[x] only Attachment
 * extension[content].valueAttachment 1..1
