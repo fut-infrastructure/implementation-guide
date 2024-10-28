@@ -1,4 +1,4 @@
-`GET [base]/Consent?patient=https%3A%2F%2Fpatient.cit-careplan-2818.local%2Ffhir%2FPatient%2F58712&data=https%3A%2F%2Fcareplan.cit-careplan-2818.local%2Ffhir%2FEpisodeOfCare%2F1416%2F_history%2F1&category=SSLPCI&status=active`
+`GET [base]/Consent?patient=https%3A%2F%2Fpatient.cit-careplan-2980.local%2Ffhir%2FPatient%2F62941&data=https%3A%2F%2Fcareplan.cit-careplan-2980.local%2Ffhir%2FEpisodeOfCare%2F1412%2F_history%2F1&category=SSLPCI&status=active`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "57d516f3-35ef-4d04-95c0-8d444e640884",
+  "id": "c1792024-43f2-4487-a457-91630a650882",
   "meta": {
-    "lastUpdated": "2024-07-29T13:12:05.178+00:00"
+    "lastUpdated": "2024-10-26T17:02:49.506+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://careplan.cit-careplan-2818.local/fhir/Consent?_format=json&_pretty=true&category=SSLPCI&data=https%3A%2F%2Fcareplan.cit-careplan-2818.local%2Ffhir%2FEpisodeOfCare%2F1416%2F_history%2F1&patient=https%3A%2F%2Fpatient.cit-careplan-2818.local%2Ffhir%2FPatient%2F58712&status=active"
+      "url": "https://careplan.cit-careplan-2980.local/fhir/Consent?_format=json&_pretty=true&category=SSLPCI&data=https%3A%2F%2Fcareplan.cit-careplan-2980.local%2Ffhir%2FEpisodeOfCare%2F1412%2F_history%2F1&patient=https%3A%2F%2Fpatient.cit-careplan-2980.local%2Ffhir%2FPatient%2F62941&status=active"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://careplan.cit-careplan-2818.local/fhir/Consent/1417",
+      "fullUrl": "https://careplan.cit-careplan-2980.local/fhir/Consent/1413",
       "resource": {
         "resourceType": "Consent",
-        "id": "1417",
+        "id": "1413",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T13:12:04.961+00:00",
-          "source": "#889b0fd0-5ca1-43",
+          "lastUpdated": "2024-10-26T17:02:49.277+00:00",
+          "source": "#e04e96f7-374d-4a",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -62,11 +62,11 @@ __Response__
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/58712"
+          "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/62941"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/37379"
+            "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/31578"
           }
         ],
         "policyRule": {
@@ -84,7 +84,7 @@ __Response__
           },
           "actor": [
             {
-              "id": "715a920d-4f83-455f-8718-404dc2e1c896",
+              "id": "ab05ea15-8d29-4e2c-a716-582aefd36b87",
               "role": {
                 "coding": [
                   {
@@ -94,7 +94,7 @@ __Response__
                 ]
               },
               "reference": {
-                "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/78685"
+                "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/78622"
               }
             }
           ],
@@ -102,7 +102,7 @@ __Response__
             {
               "meaning": "related",
               "reference": {
-                "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/1416"
+                "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/1412"
               }
             }
           ]

@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWFiOGM3NzEtM2ZmYS00NTMxLTliMGItMzY5MjkzYTJiMDhmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmNlMTYyYjgtY2RiNi00ZjU4LThhNmUtNTk4NWVmMzljNDI4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,13 +22,13 @@ __Body__:
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:b939621f-7a40-4869-9130-0dbba7ec9ce3"
+      "value": "urn:uuid:bbb10da3-47cd-4d84-ae69-6994a8a027c0"
     }
   ],
   "status": "active",
-  "name": "5564f6ea-6496-4016-b616-2426ed5d7cb1",
+  "name": "6a7225f4-33b8-4cb8-a710-0a139db93179",
   "period": {
-    "start": "2024-07-29T09:15:48+00:00"
+    "start": "2024-10-26T16:05:42+00:00"
   },
   "participant": [
     {
@@ -43,7 +43,7 @@ __Body__:
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/RelatedPerson/13042"
+        "reference": "https://patient.cit-organization-1245.local/fhir/RelatedPerson/93946"
       }
     },
     {
@@ -58,7 +58,7 @@ __Body__:
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/26470"
+        "reference": "https://patient.cit-organization-1245.local/fhir/Patient/1300"
       }
     },
     {
@@ -73,7 +73,7 @@ __Body__:
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/CareTeam/152"
+        "reference": "https://organization.cit-organization-1245.local/fhir/CareTeam/152"
       }
     }
   ],
@@ -89,7 +89,7 @@ __Body__:
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-1209.local/fhir/Organization/153"
+      "reference": "https://organization.cit-organization-1245.local/fhir/Organization/153"
     }
   ]
 }
@@ -102,8 +102,8 @@ __Response__
   "id": "154",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:15:48.138+00:00",
-    "source": "#b1cab1b9-8e0f-4245-a904-c81237c232b0",
+    "lastUpdated": "2024-10-26T16:05:42.254+00:00",
+    "source": "#2bbdcf57-e039-4319-a7c4-6ac6a5799b4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -111,13 +111,13 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:b939621f-7a40-4869-9130-0dbba7ec9ce3"
+      "value": "urn:uuid:bbb10da3-47cd-4d84-ae69-6994a8a027c0"
     }
   ],
   "status": "active",
-  "name": "5564f6ea-6496-4016-b616-2426ed5d7cb1",
+  "name": "6a7225f4-33b8-4cb8-a710-0a139db93179",
   "period": {
-    "start": "2024-07-29T09:15:48+00:00"
+    "start": "2024-10-26T16:05:42+00:00"
   },
   "participant": [
     {
@@ -132,7 +132,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/RelatedPerson/13042"
+        "reference": "https://patient.cit-organization-1245.local/fhir/RelatedPerson/93946"
       }
     },
     {
@@ -147,7 +147,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/26470"
+        "reference": "https://patient.cit-organization-1245.local/fhir/Patient/1300"
       }
     },
     {
@@ -162,7 +162,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/CareTeam/152"
+        "reference": "https://organization.cit-organization-1245.local/fhir/CareTeam/152"
       }
     }
   ],
@@ -178,7 +178,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-1209.local/fhir/Organization/153"
+      "reference": "https://organization.cit-organization-1245.local/fhir/Organization/153"
     }
   ]
 }

@@ -1,4 +1,4 @@
-`PUT [base]/StructureDefinition/222`
+`PUT [base]/StructureDefinition/253`
 
 __Header__
 ```
@@ -15,17 +15,17 @@ __Body__:
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "222",
+  "id": "253",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:29:16.921+00:00",
-    "source": "#7ef1cbd9-13f0-4cf3-bd2d-8177080ee6ff",
+    "lastUpdated": "2024-10-26T16:43:06.155+00:00",
+    "source": "#6bde96c8-4576-4f50-b4fa-c71ebb5ff340",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://eb88bba9-09e2-4de2-b142-05c06b8fa5e4",
-  "name": "731a8fa0-e6f6-4d29-ab66-f413a27ae9be",
+  "url": "http://e28f8300-1b79-45a1-b7c6-acf225b67233",
+  "name": "ecb21d45-1f35-40bd-b1a7-6b2ee7b8f7ee",
   "status": "draft",
   "kind": "resource",
   "abstract": true,
@@ -47,17 +47,17 @@ __Response__
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "222",
+  "id": "253",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-07-29T08:29:17.048+00:00",
-    "source": "#a4042fe1-31b8-4e99-99f7-f4edca9acbe0",
+    "lastUpdated": "2024-10-26T16:43:06.276+00:00",
+    "source": "#25bf511c-e956-40f9-841e-01a56be9a41b",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://eb88bba9-09e2-4de2-b142-05c06b8fa5e4",
-  "name": "731a8fa0-e6f6-4d29-ab66-f413a27ae9be",
+  "url": "http://e28f8300-1b79-45a1-b7c6-acf225b67233",
+  "name": "ecb21d45-1f35-40bd-b1a7-6b2ee7b8f7ee",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

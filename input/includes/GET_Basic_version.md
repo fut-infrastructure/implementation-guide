@@ -1,4 +1,4 @@
-`GET [base]/Basic/211/_history/2`
+`GET [base]/Basic/234/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "211",
+  "id": "234",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-07-29T08:28:54.890+00:00",
-    "source": "#2acfe525-ea67-49",
+    "lastUpdated": "2024-10-26T16:42:40.221+00:00",
+    "source": "#3ef4b6cd-8392-4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -44,7 +44,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/6784"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/94822"
           }
         },
         {
@@ -84,7 +84,7 @@ __Response__
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-1274.local/fhir/Questionnaire/212"
+            "reference": "https://questionnaire.cit-questionnaire-1322.local/fhir/Questionnaire/235"
           }
         },
         {

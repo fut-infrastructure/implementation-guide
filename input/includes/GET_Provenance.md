@@ -1,4 +1,4 @@
-`GET [base]/Provenance/405`
+`GET [base]/Provenance/438`
 
 __Header__
 ```
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Provenance",
-  "id": "405",
+  "id": "438",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:18:49.705+00:00",
-    "source": "#c0c16a87-afb4-48",
+    "lastUpdated": "2024-10-26T16:09:06.853+00:00",
+    "source": "#fc45cb32-b429-44",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
     ]
   },
   "target": [
     {
-      "reference": "https://patient.cit-organization-1209.local/fhir/Patient/71538"
+      "reference": "https://patient.cit-organization-1245.local/fhir/Patient/26026"
     }
   ],
-  "recorded": "2024-07-29T09:18:49.637+00:00",
+  "recorded": "2024-10-26T16:09:06.798+00:00",
   "policy": [
     "healthcare-act"
   ],
   "agent": [
     {
       "who": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/84374"
+        "reference": "https://patient.cit-organization-1245.local/fhir/Patient/35785"
       }
     }
   ]

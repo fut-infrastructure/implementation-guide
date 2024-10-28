@@ -1,4 +1,4 @@
-`POST [base]/Consent/1448/$validate`
+`POST [base]/Consent/1444/$validate`
 
 __Header__
 ```
@@ -19,11 +19,11 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Consent",
-        "id": "1448",
+        "id": "1444",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T13:12:26.185+00:00",
-          "source": "#c2b4ac41-90ff-933e-80cd-96992fd937d5",
+          "lastUpdated": "2024-10-26T17:03:10.700+00:00",
+          "source": "#eecec3a9-87b6-4c93-b775-ab1a1079a226",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -49,11 +49,11 @@ __Body__:
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/58773"
+          "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/16163"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/69760"
+            "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/31603"
           }
         ],
         "policyRule": {
@@ -71,7 +71,7 @@ __Body__:
           },
           "actor": [
             {
-              "id": "8a168510-4b65-4555-bd1b-b21b630783eb",
+              "id": "48fc5c8b-fd36-40fb-b813-5f474926236c",
               "role": {
                 "coding": [
                   {
@@ -81,7 +81,7 @@ __Body__:
                 ]
               },
               "reference": {
-                "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/46997"
+                "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/2557"
               }
             }
           ],
@@ -89,7 +89,7 @@ __Body__:
             {
               "meaning": "related",
               "reference": {
-                "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/1447"
+                "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/1443"
               }
             }
           ]

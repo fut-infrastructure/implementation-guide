@@ -40,11 +40,11 @@ __Body__:
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/93501"
+    "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/6688"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/11413"
+      "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/31772"
     }
   ],
   "policyRule": {
@@ -62,7 +62,7 @@ __Body__:
     },
     "actor": [
       {
-        "id": "a8595157-65ff-4cb9-b70c-7c7a9717b54a",
+        "id": "664a0878-b8f6-4368-b2d8-fce4c73d2b8a",
         "role": {
           "coding": [
             {
@@ -72,7 +72,7 @@ __Body__:
           ]
         },
         "reference": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/50981"
+          "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/10815"
         }
       }
     ],
@@ -80,7 +80,7 @@ __Body__:
       {
         "meaning": "related",
         "reference": {
-          "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/1379"
+          "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/1375"
         }
       }
     ]
@@ -92,11 +92,11 @@ __Response__
 ```json
 {
   "resourceType": "Consent",
-  "id": "1380",
+  "id": "1376",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T13:11:52.442+00:00",
-    "source": "#bfbf85f9-57c2-4d32-a44d-e39f5e4f8554",
+    "lastUpdated": "2024-10-26T17:02:35.241+00:00",
+    "source": "#444afd42-7891-4018-8b73-5163cc171911",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -122,11 +122,11 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/93501"
+    "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/6688"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/11413"
+      "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/31772"
     }
   ],
   "policyRule": {
@@ -144,7 +144,7 @@ __Response__
     },
     "actor": [
       {
-        "id": "a8595157-65ff-4cb9-b70c-7c7a9717b54a",
+        "id": "664a0878-b8f6-4368-b2d8-fce4c73d2b8a",
         "role": {
           "coding": [
             {
@@ -154,7 +154,7 @@ __Response__
           ]
         },
         "reference": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/50981"
+          "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/10815"
         }
       }
     ],
@@ -162,7 +162,7 @@ __Response__
       {
         "meaning": "related",
         "reference": {
-          "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/1379"
+          "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/1375"
         }
       }
     ]

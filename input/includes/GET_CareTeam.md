@@ -1,9 +1,9 @@
-`GET [base]/CareTeam/434`
+`GET [base]/CareTeam/467`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjQzZDU1MDEtODFkNi00ZTk3LTkxZTAtZmVlOTRjM2YxMmZlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjFmMjUyMmYtOGU0OC00NjIxLTk2ZGItNjIxMTRhZTYyOTYyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "434",
+  "id": "467",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:19:03.979+00:00",
-    "source": "#fc658693-d1f0-48",
+    "lastUpdated": "2024-10-26T16:09:19.252+00:00",
+    "source": "#09770fdb-9622-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,13 +27,13 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:6ee011e0-98bc-4235-9ee6-abf28df04af0"
+      "value": "urn:uuid:6b07d9f5-d9c7-487c-b922-3b799498ad76"
     }
   ],
   "status": "active",
-  "name": "e74eac48-68fb-4eb8-9f01-18050df01be5",
+  "name": "1a0c3781-797a-4f73-ae48-f2bdb1277ca2",
   "period": {
-    "start": "2024-07-29T09:19:03+00:00"
+    "start": "2024-10-26T16:09:19+00:00"
   },
   "participant": [
     {
@@ -48,7 +48,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/17835"
+        "reference": "https://patient.cit-organization-1245.local/fhir/Patient/35701"
       }
     },
     {
@@ -63,7 +63,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/CareTeam/431"
+        "reference": "https://organization.cit-organization-1245.local/fhir/CareTeam/464"
       }
     },
     {
@@ -78,7 +78,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/Practitioner/433"
+        "reference": "https://organization.cit-organization-1245.local/fhir/Practitioner/466"
       }
     }
   ],
@@ -94,7 +94,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-1209.local/fhir/Organization/432"
+      "reference": "https://organization.cit-organization-1245.local/fhir/Organization/465"
     }
   ]
 }

@@ -44,7 +44,7 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/18977",
+        "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/66415",
         "display": "Abcd"
       }
     },
@@ -54,7 +54,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/29213"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/3649"
           }
         },
         {
@@ -95,7 +95,7 @@ __Body__:
           "display": "Age Range"
         },
         "valueReference": {
-          "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/98860",
+          "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/16952",
           "display": "1234"
         }
       }
@@ -121,7 +121,7 @@ __Body__:
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/31504"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/10569"
           }
         },
         {
@@ -159,11 +159,11 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "179",
+  "id": "202",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:28:33.931+00:00",
-    "source": "#a3bec3d8-6326-4064-8f7d-7cb1e27f44fc",
+    "lastUpdated": "2024-10-26T16:42:19.444+00:00",
+    "source": "#400c9492-a777-48ce-8868-61f24b23c29b",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -198,7 +198,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/18977",
+        "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/66415",
         "display": "Abcd"
       }
     },
@@ -208,7 +208,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/29213"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/3649"
           }
         },
         {
@@ -249,7 +249,7 @@ __Response__
           "display": "Age Range"
         },
         "valueReference": {
-          "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/98860",
+          "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/16952",
           "display": "1234"
         }
       }
@@ -275,7 +275,7 @@ __Response__
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/31504"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/10569"
           }
         },
         {

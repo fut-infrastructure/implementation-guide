@@ -1,4 +1,4 @@
-`PUT [base]/Basic/211`
+`PUT [base]/Basic/234`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Body__:
 ```json
 {
   "resourceType": "Basic",
-  "id": "211",
+  "id": "234",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:28:53.058+00:00",
-    "source": "#5788a4ea-b550-443b-be4c-ece7c6294d14",
+    "lastUpdated": "2024-10-26T16:42:39.826+00:00",
+    "source": "#11da9ce4-f3d3-4023-9e18-8ca9f491e318",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -44,7 +44,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/6784"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/94822"
           }
         },
         {
@@ -84,7 +84,7 @@ __Body__:
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-1274.local/fhir/Questionnaire/212"
+            "reference": "https://questionnaire.cit-questionnaire-1322.local/fhir/Questionnaire/235"
           }
         },
         {
@@ -122,11 +122,11 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "211",
+  "id": "234",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-07-29T08:28:54.890+00:00",
-    "source": "#2acfe525-ea67-4989-8dda-42b6a869553d",
+    "lastUpdated": "2024-10-26T16:42:40.221+00:00",
+    "source": "#3ef4b6cd-8392-4d05-af9a-8306d2bdc34a",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -151,7 +151,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/6784"
+            "reference": "https://organization.cit-questionnaire-1322.local/fhir/Organization/94822"
           }
         },
         {
@@ -191,7 +191,7 @@ __Response__
         {
           "url": "forReference",
           "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-1274.local/fhir/Questionnaire/212"
+            "reference": "https://questionnaire.cit-questionnaire-1322.local/fhir/Questionnaire/235"
           }
         },
         {
