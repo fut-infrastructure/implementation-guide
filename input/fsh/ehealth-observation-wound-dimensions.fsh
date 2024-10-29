@@ -1,7 +1,7 @@
 Profile: ehealth-observation-wound-dimensions
 Id: ehealth-observation-wound-dimensions
 Parent: ehealth-observation
-
+* obeys observation-wound-dimensions-at-least-one-dimension
 * code = http://loinc.org#72287-6 // Wound size panel
 
 * component.extension contains ehealth-observation-wound-dimensions-component-method named method 1..1
@@ -38,7 +38,7 @@ Parent: ehealth-observation
 * component[woundVolume].value[x] only Quantity
 * component[woundVolume].value[x] = http://unitsofmeasure.org#mL
 
-Extension: ehealth-observation-wound-dimensions-component-method
+Extension: ehealth-observation-wound-dimensions-acquisition-method
 Title: "Method of acquisition"
 Description: "The method of acquiring the value of a wound dimension."
 * . ^short = "measured | derived"
