@@ -4,6 +4,8 @@ Parent: ehealth-observation
 
 * code = http://loinc.org#72287-6 // Wound size panel
 
+* component.extension contains ehealth-observation-wound-dimensions-component-method named method 1..1
+
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -35,3 +37,15 @@ Parent: ehealth-observation
 * component[woundVolume].code = http://hl7.org/fhir/us/lower-extremity-skin-wound-assessment/wound-observation-type#woundvolume (exactly)
 * component[woundVolume].value[x] only Quantity
 * component[woundVolume].value[x] = http://unitsofmeasure.org#mL
+
+Extension: ehealth-observation-wound-dimensions-component-method
+Title: "Method of acquirement"
+Description: "The method of acquiring the value of a wound dimension."
+* . ^short = "measured | derived"
+* value[x] only CodeableConcept
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/observation-method
+
+Invariant:   observation-wound-dimensions-at-least-one-dimension
+Description: "Observation for wound must have at least one dimension"
+Expression:  "component.count() > 0"
+Severity:    #error
