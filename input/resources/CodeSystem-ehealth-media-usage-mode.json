@@ -23,30 +23,30 @@
   "caseSensitive": true,
   "content": "complete",
   "concept": [{
-    "code": "image",
-    "display": "Image",
-    "definition": "Original image",
+    "code": "raw",
+    "display": "Raw",
+    "definition": "Raw",
     "designation": [{
       "language": "da",
-      "value": "Originalt billede"
+      "value": "Original"
     }
     ]
   }, {
     "code": "overlay",
     "display": "Overlay",
-    "definition": "Overlay on an image",
+    "definition": "Overlay",
     "designation": [{
       "language": "da",
-      "value": "Overlay på et billede"
+      "value": "Overlay"
     }
     ]
   }, {
     "code": "metadata",
     "display": "Metadata",
-    "definition": "Metadata for an image",
+    "definition": "Metadata",
     "designation": [{
       "language": "da",
-      "value": "Metadata for et billede"
+      "value": "Metadata"
     }
     ]
   }
