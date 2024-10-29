@@ -20,18 +20,18 @@
       ]
     }
   ],
-  "description": "The method of acquisition of an observation.",
+  "description": "Identifies how an observation is acquired.",
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://ehealth.sundhed.dk/cs/observation-method",
         "concept": [
           {
-            "code": "258104002",
+            "code": "measured",
             "display": "Measured"
           },
           {
-            "code": "258090004",
+            "code": "calculated",
             "display": "Calculated"
           }
         ]
