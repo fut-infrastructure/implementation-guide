@@ -39,7 +39,7 @@ Parent: ehealth-observation
 * component[woundVolume].value[x] = http://unitsofmeasure.org#mL
 
 Extension: ehealth-observation-wound-dimensions-component-method
-Title: "Method of acquirement"
+Title: "Method of acquisition"
 Description: "The method of acquiring the value of a wound dimension."
 * . ^short = "measured | derived"
 * value[x] only CodeableConcept
