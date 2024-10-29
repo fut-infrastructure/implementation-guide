@@ -1,10 +1,10 @@
 {
 	"resourceType": "ValueSet",
-	"id": "ehealth-thumbnail-size",
-	"url": "http://ehealth.sundhed.dk/vs/thumbnail-size",
+	"id": "ehealth-thumbnail-size-category",
+	"url": "http://ehealth.sundhed.dk/vs/thumbnail-size-category",
 	"version": "2021-10-22T13:25:25",
-	"name": "ThumbnailSize",
-	"title": "Thumbnail Size",
+	"name": "ThumbnailSizeCategory",
+	"title": "Thumbnail Size Category",
 	"status": "active",
 	"experimental": true,
 	"date": "2024-10-28T10:02:00+02:00",
@@ -24,7 +24,7 @@
 	"compose": {
 		"include": [
 			{
-				"system": "http://ehealth.sundhed.dk/cs/thumbnail-size"
+				"system": "http://ehealth.sundhed.dk/cs/thumbnail-size-category"
 			}
 		]
 	}
