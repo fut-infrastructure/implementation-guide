@@ -1,10 +1,10 @@
 {
 	"resourceType": "CodeSystem",
 	"id": "ehealth-thumbnail-size",
-	"url": "http://ehealth.sundhed.dk/cs/thumbnail-size",
+	"url": "http://ehealth.sundhed.dk/cs/thumbnail-size-category",
 	"version": "2024-10-28T08:34:49",
 	"name": "ThumbnailSize",
-	"title": "Thumbnail Size",
+	"title": "Thumbnail Size Category",
 	"status": "active",
 	"experimental": false,
 	"date": "2024-10-28T00:00:00+00:00",
