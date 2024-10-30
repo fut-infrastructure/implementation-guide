@@ -1,18 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
-### General changes
-
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-
-## 3.3.0 (2024-10-29)
+## 3.3.0 (2024-11-07)
 
 ### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
