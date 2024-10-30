@@ -8,7 +8,7 @@ Parent: Media
 * extension contains ehealth-media-thumbnail named thumbnail 0..*
 * extension contains ehealth-media-usage-mode named usageMode 1..1
 * extension contains ehealth-media-related-to named relatedTo 0..*
-* extension contains ehealth-media-series-id named seriesId 0..1
+* extension contains ehealth-media-series-id named series 0..1
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
