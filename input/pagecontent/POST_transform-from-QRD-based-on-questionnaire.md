@@ -22,10 +22,10 @@ __Body__:
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://document-transformation.cit-document-transformation-2592.local/fhir/DocumentReference/98514",
+            "fullUrl": "https://document-transformation.cit-document-transformation-2776.local/fhir/DocumentReference/10063",
             "resource": {
               "resourceType": "DocumentReference",
-              "id": "98514",
+              "id": "10063",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -41,7 +41,7 @@ __Body__:
                   }
                 ]
               },
-              "date": "2024-07-29T08:48:46.612+00:00",
+              "date": "2024-10-26T16:05:01.155+00:00",
               "content": [
                 {
                   "attachment": {
@@ -53,10 +53,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/26362",
+            "fullUrl": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/17936",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "26362",
+              "id": "17936",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -90,7 +90,7 @@ __Body__:
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "https://organization.cit-document-transformation-2592.local/fhir/Organization/86154"
+                        "reference": "https://organization.cit-document-transformation-2776.local/fhir/Organization/29196"
                       }
                     },
                     {
@@ -114,7 +114,7 @@ __Body__:
                 }
               ],
               "version": "1.0",
-              "name": "9532a47f-92d4-4e33-875e-34bd1163fd15",
+              "name": "659c73d9-3b86-4da9-86d1-e9832c83ab42",
               "status": "active",
               "item": [
                 {
@@ -740,6 +740,30 @@ __Body__:
                       "type": "display"
                     }
                   ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright",
+                      "valueBoolean": true
+                    }
+                  ],
+                  "linkId": "f6295e5a-2065-4dd0-b2e8-920fc8098113",
+                  "text": "Copyright test",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright",
+                          "valueBoolean": true
+                        }
+                      ],
+                      "linkId": "1ad1215a-2964-4529-a52d-7b13b54e1c2f",
+                      "text": "Copyright informationer for benyttede spørgsmål fremgår her",
+                      "type": "display"
+                    }
+                  ]
                 }
               ]
             }
@@ -760,7 +784,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "07e532ea-2d30-41a4-9664-355c7cf7c20f",
+        "id": "9d34a53a-676d-4cc1-b6c1-fcad49feecfe",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -975,8 +999,9 @@ __Response__
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
-        "questionnaire": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/26362",
+        "questionnaire": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/17936",
         "status": "completed",
+        "authored": "2023-10-25T08:00:00+00:00",
         "item": [
           {
             "linkId": "7e51dfb6-ad5b-495f-af19-7c5a6fb69756",
