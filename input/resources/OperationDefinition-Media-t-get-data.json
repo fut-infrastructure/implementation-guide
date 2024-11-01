@@ -3,8 +3,10 @@
   "id": "Media-t-get-data",
   "url": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-t-get-data",
   "name": "get-data",
+  "title": "Get media data",
   "status": "active",
   "kind": "operation",
+  "description": "The get-data operation returns a media resource matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid",
   "affectsState": false,
   "code": "get-data",
   "resource": [ "Media" ],
@@ -16,6 +18,7 @@
     "use": "in",
     "min": 0,
     "max": "1",
+    "documentation": "Get media data matching the UUID provided",
     "type": "string"
   } ]
 }

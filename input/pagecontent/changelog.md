@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 3.3.0 (2024-11-07)
 
 ### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
