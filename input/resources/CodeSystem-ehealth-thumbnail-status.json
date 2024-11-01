@@ -1,0 +1,47 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "ehealth-thumbnail-status",
+	"url": "http://ehealth.sundhed.dk/cs/thumbnail-status",
+	"version": "2024-10-28T08:34:49",
+	"name": "ThumbnailStatus",
+	"title": "Thumbnail status",
+	"status": "active",
+	"experimental": false,
+	"date": "2024-10-28T00:00:00+00:00",
+	"publisher": "ehealth.sundhed.dk",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://ehealth.sundhed.dk/terminology"
+				}
+			]
+		}
+	],
+	"description": "Thumbnail status is a code system for the status of low resolution media representations.",
+	"caseSensitive": true,
+	"content": "complete",
+	"concept": [
+		{
+			"code": "ready",
+			"display": "Ready",
+			"definition": "The thumbnail has been generated and is ready for use"
+		},
+		{
+			"code": "requested",
+			"display": "Requested",
+			"definition": "A thumbnail generation has been requested"
+		},
+		{
+			"code": "rejected",
+			"display": "Rejected",
+			"definition": "The thumbnail generation has been rejected"
+		},
+		{
+			"code": "failed",
+			"display": "Failed",
+			"definition": "The thumbnail generation has failed"
+		}
+	]
+}
