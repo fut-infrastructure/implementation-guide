@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-task-handover-roles",
+  "url": "http://ehealth.sundhed.dk/cs/task-handover-roles",
+  "version": "0.1.0",
+  "name": "TaskHandoverRoles",
+  "title": "Task Handover Roles",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-21T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Task Handover Roles",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "inviting-entity",
+      "display": "Entity inviting another entity to partake in involvement and/or responsibility",
+      "definition": "Entity inviting another entity to partake in involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part som inviterer anden part til at deltage i tilknyttelse og/eller ansvar"
+        }
+      ]
+    },
+    {
+      "code": "arriving-entity",
+      "display": "Entity entering involvement and/or responsibility",
+      "definition": "Entity entering involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part som træder ind i tilknyttelse og/eller ansvar"
+        }
+      ]
+    },
+    {
+      "code": "leaving-entity",
+      "display": "Entity leaving involvement and/or responsibility",
+      "definition": "Entity leaving involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part som forlader tilknyttelse og/eller ansvar"
+        }
+      ]
+    },
+    {
+      "code": "remaining-entity",
+      "display": "Entity continuing involvement and/or responsibility",
+      "definition": "Entity continuing involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part som fortsætter tilknyttelse og/eller ansvar"
+        }
+      ]
+    },
+    {
+      "code": "informed-entity",
+      "display": "Entity informed about planned or effectuated change in involvement and/or responsibility",
+      "definition": "Entity informed about planned or effectuated change in involvement and/or responsibility",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Part informeret om (planlagt) ændring i tilknyttelse og/eller ansvar"
+        }
+      ]
+    }
+  ]
+}
