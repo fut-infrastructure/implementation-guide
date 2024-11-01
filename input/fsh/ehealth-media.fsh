@@ -56,12 +56,16 @@ Description: "A downsampled version of a Media resource content."
 * . ^short = "Media Thumbnail"
 * extension contains
     sizeCategory 1..1 and
+    status 1..1 and
     width 1..1 and
     height 1..1 and
     content 1..1
 * extension[sizeCategory].value[x] only Coding
 * extension[sizeCategory].valueCoding from http://ehealth.sundhed.dk/vs/thumbnail-size-category
 * extension[sizeCategory].valueCoding 1..1
+* extension[status].value[x] only Coding
+* extension[status].valueCoding from http://ehealth.sundhed.dk/vs/thumbnail-status
+* extension[status].valueCoding 1..1
 * extension[width].value[x] only positiveInt
 * extension[width].valuePositiveInt 1..1
 * extension[height].value[x] only positiveInt
