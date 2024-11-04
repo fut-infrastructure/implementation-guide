@@ -28,13 +28,7 @@
         "concept": [
           {
             "code": "001",
-            "display": "Clinical report",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Klinisk rapport"
-              }
-            ]
+            "display": "Klinisk rapport"
           }
         ]
       }
