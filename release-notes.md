@@ -1,1 +1,1 @@
-* For detailed changelog go [here](https://ehealth.sundhed.dk/fhir/changelog.html#330-2024-11-07)
+* See detailed changes in [the changelog](https://ehealth.sundhed.dk/fhir/changelog.html#replace-me)
