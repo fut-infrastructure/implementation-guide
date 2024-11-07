@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ehealth-observation-method
+  "id": "ehealth-observation-method",
   "url": "http://ehealth.sundhed.dk/cs/observation-method",
   "version": "0.6.0",
   "name": "observationMethod",
