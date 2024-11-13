@@ -14,3 +14,6 @@ It is possible to search for QuestionnaireResponses based on:
 * operationQuality
 
 At least one of "subject" and "context" must be provided. "period" searches on range of "authored".
+
+### Effective Period
+Effective Period (QuestionnaireResponse.effectivePeriod) is used to capture the time period during which the questionnaire was answered. For document sharing to national document sharing, the effective period start is mandatory. If the effective period end is provided, it must be later than the effective period start.

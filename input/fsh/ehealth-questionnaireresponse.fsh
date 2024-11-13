@@ -5,7 +5,7 @@ Parent: QuestionnaireResponse
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
-* extension contains ehealth-effectivePeriod named effectivePeriod 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod named effectivePeriod 0..1
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
@@ -22,10 +22,3 @@ Parent: QuestionnaireResponse
 * source 1..1
 * source only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson)
 * source ^type.aggregation = #referenced
-
-Extension: ehealth-effectivePeriod
-Title: "effectivePeriod"
-Description: "Clinically relevant time-period for questionnaire response."
-* . ^short = "Clinically relevant time-period for questionnaire response."
-* value[x] only Period
-* valuePeriod 1..1
