@@ -1,5 +1,18 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+
 ## 3.3.0 (2024-11-07)
 
 ### General changes

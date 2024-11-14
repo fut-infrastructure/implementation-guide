@@ -12,4 +12,10 @@ Typically, DocumentReference resources are used in document indexing systems, su
 In scope of the eHealth infrastructure the primary use of the DocumentReference resource is to contain or refer to information material used in relation to PlanDefinition and Questionnaire. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material. 
 
 See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
- 
+
+### Document sharing states 
+For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
+
+There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express why the document is in the given state.
+
+The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-ehealth-clinicalimpression-finding-codes.html).
