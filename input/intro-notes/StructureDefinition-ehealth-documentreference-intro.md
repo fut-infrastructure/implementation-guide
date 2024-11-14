@@ -18,4 +18,4 @@ For the purpose of sharing documents to the XDS repository, the DocumentReferenc
 
 There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express why the document is in the given state.
 
-The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-ehealth-clinicalimpression-finding-codes.html).
+The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html).
