@@ -1,26 +1,36 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 3.2.0 (2024-08-22)
+## 3.3.0 (2024-11-07)
 
 ### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
 - Composite search parameters does not work with Reference, so we had to make a workaround where we use a string (actorref) instead of a reference.
+- Included a reference to validations for occurrence[x] in the ServiceRequest introduction.
+- Added description on ehealth-task intro page regarding handover of resources between CareTeams 
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/participant-function
+- Added http://ehealth.sundhed.dk/cs/task-handover-roles
+- Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/cs/task-category
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/participant-function
+- Added `HandoverNegotiation` code to http://ehealth.sundhed.dk/vs/task-category
+- Added `702916001`, `284546000`, `272511002`, `557891000005101` and `557901000005102` codes to http://ehealth.sundhed.dk/vs/facility-type-codes
 ### ConceptMaps
 ### Resource/profile changes
 - Added new generic extension ehealth-participant to be used on all resources where a participant is involved
 - Added ehealth-participant extension to CarePlan
 - Added ehealth-participant extension to EpisodeOfCare
+- Added extension ehealth-questionnaire-item-is-copyright to Questionnaire.item
+- Added invariant to Questionnaire item that only allows isCopyright to be true for type 'group' or 'display'
 ### Search parameters
 - Added search parameter `function` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the function of the participant.
 - Added search parameter `actor` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used to search for CarePlans or EpisodesOfCare based on the actor reference of the participant.
 - Added search parameter `actorref` to `participant` (`CarePlan.participant`, `EpisodeOfCare.participant`). Can be used as composite searchParameter in combination with `function` to search for CarePlans or EpisodesOfCare based on the actor reference of the participant with a given function.
+
+## 3.2.0 (2024-08-22)
 
 ### General changes
 - Search functionality has been updated to use Bing search instead of Google search. 
@@ -122,6 +132,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extention ehealth-resolved-timing to Task
 - Added extention ehealth-external-identifier to Questionnaire.QuestionnaireItem
 - Updated binding for ClinicalImpression.investigation.code to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
+- added a boolean flag extension to ehealth-document-reference detailing if the document has been manually deprecated.
 ### Search parameters
 - Added search parameter `communicationParticipant` on `ehealth-message` (`Communication`) to be able to query either by CareTeam or Patient/Practitioner
 

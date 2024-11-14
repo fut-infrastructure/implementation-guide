@@ -3,12 +3,12 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2024-08-06T02:37:34.036+00:00",
+  "date": "2024-10-28T02:38:02.542+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "organization",
-    "version": "1.13.0"
+    "version": "1.14.0"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -552,6 +552,10 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "migrate",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
+    }, {
       "name": "migrate-list",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate-list",
       "documentation": "Data migration"
