@@ -16,6 +16,6 @@ See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) fo
 ### Document sharing states 
 For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
 
-There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express why the document is in the given state.
+There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express th reason why the document is in the given state.
 
 The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html).
