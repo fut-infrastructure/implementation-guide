@@ -29,9 +29,6 @@ Parent: Media
 * modality 0..1
 * view from http://ehealth.sundhed.dk/vs/media-view (required)
 * view 0..1
-* derivedFrom 1..1
-* derivedFrom only Reference(ehealth-media)
-* derivedFrom ^type.aggregation = #referenced
 
 Extension:   ehealth-media-usage-mode
 Title:       "Usage mode"
