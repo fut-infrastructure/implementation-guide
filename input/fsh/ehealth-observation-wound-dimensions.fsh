@@ -3,8 +3,8 @@ Id: ehealth-observation-wound-dimensions
 Parent: ehealth-observation
 * obeys observation-wound-dimensions-at-least-one-dimension
 * code = http://loinc.org#72287-6 // Wound size panel
-* derivedFrom 1..1
-* derivedFrom only Reference(ehealth-media)
+* derivedFrom 1..*
+* derivedFrom only Reference(ehealth-media or ehealth-observation)
 * derivedFrom ^type.aggregation = #referenced
 
 * component.extension contains ehealth-observation-method named method 1..1
