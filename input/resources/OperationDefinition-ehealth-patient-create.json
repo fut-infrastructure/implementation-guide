@@ -6,7 +6,7 @@
     "status": "active",
     "kind": "operation",
     "date": "2019-02-02",
-    "description": "This operation is used to create a new Patient resource. Once executed successfully the Patient resource is created on the server and as well returned in the response parameter. The operation takes the input parameters listed and returns the Patient resource where the person having the provided civil registration number (crn) is used as the origin of the data. \r\n\r\n### Note\r\nThis operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers",
+    "description": "Creates a Patient resource on the server and returns it in the response. If the patient already exists, it is returned instead. If the CPR number does not match a patient on the service, looks up the CPR in the national registry and finds any potential prior CPRs used by the person. If a prior CPR number matches a patient on the service, returns a patient with the prior CPR number, but data from the service. If the CPR is invalid, i.e. does not correspond to a patient on the national registry, it errors. \r\n\r\n### Note\r\nThis operation is currently the only way to create Patient resources in the eHealth Infrastructure, as it ensures that the correct bindings from national registers",
     "code": "createPatient",
     "comment": "See the wiki for examples on how to use the operation.",
     "resource": [
