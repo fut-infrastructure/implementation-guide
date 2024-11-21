@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2024-08-06T02:18:15.077+00:00",
+  "date": "2024-10-28T02:18:23.495+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.14.0"
+    "version": "1.15.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -341,6 +341,10 @@
       "code": "history-system"
     } ],
     "operation": [ {
+      "name": "migrate",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
+    }, {
       "name": "upload-QFDD",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-upload-QFDD",
       "documentation": "Uploads an DK-HL7 Questionnaire Form Definition Document (QFDD). The input FHIR DocumentReference must be of type QFDD (74468-0) and the status set to current. Include an attachment which contains the base64 encoded QFDD XML document with contentType application/xml. The QFDD XML document must contain a unique id which is used as the the masterIdentifier in the DocumentReference. The returned FHIR DocumentReference contains a masterIdentifier, a type and the description all pulled from the attachment."
