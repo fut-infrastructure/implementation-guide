@@ -38,9 +38,9 @@ Parent: Appointment
 * serviceType ^slicing.discriminator.type = #value
 * serviceType ^slicing.discriminator.path = "coding.code"
 * serviceType ^slicing.rules = #open
-* serviceType contains appointmentType 1..1
-* serviceType[appointmentType].coding from http://ehealth.sundhed.dk/vs/appointment-servicetype
-* serviceType[appointmentType].coding.code = #group-video (exactly)
+* serviceType contains appointmentServiceType 1..1
+* serviceType[appointmentServiceType].coding from http://ehealth.sundhed.dk/vs/appointment-servicetype
+* serviceType[appointmentServiceType].coding.code = #group-video (exactly)
 
 Instance: group-videoappointment01
 InstanceOf: Appointment
