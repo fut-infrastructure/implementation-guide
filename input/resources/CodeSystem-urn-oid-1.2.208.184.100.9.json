@@ -29,7 +29,7 @@
   "concept" : [
     {
       "code" : "001",
-      "display" : "Clinical report",
+      "display" : "Klinisk rapport",
       "definition" : "Clinical report document classcode used in DK-IHE metadata."
     },
     {

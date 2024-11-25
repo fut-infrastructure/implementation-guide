@@ -22,10 +22,10 @@ __Body__:
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://document-transformation.cit-document-transformation-2592.local/fhir/Composition/24546",
+            "fullUrl": "https://document-transformation.cit-document-transformation-2776.local/fhir/Composition/43655",
             "resource": {
               "resourceType": "Composition",
-              "id": "24546",
+              "id": "43655",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -36,7 +36,7 @@ __Body__:
                 {
                   "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition-authorOrganization",
                   "valueReference": {
-                    "reference": "https://organization.cit-document-transformation-2592.local/fhir/Organization/27670"
+                    "reference": "https://organization.cit-document-transformation-2776.local/fhir/Organization/25751"
                   }
                 }
               ],
@@ -54,26 +54,26 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/21701"
+                "reference": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/23263"
               },
-              "date": "2024-07-29T08:45:47+00:00",
+              "date": "2024-10-26T16:02:59+00:00",
               "author": [
                 {
-                  "reference": "https://organization.cit-document-transformation-2592.local/fhir/Practitioner/14173"
+                  "reference": "https://organization.cit-document-transformation-2776.local/fhir/Practitioner/79363"
                 }
               ],
               "title": "QFDD til test af alle spørgemål varianter",
               "confidentiality": "N",
               "custodian": {
-                "reference": "https://organization.cit-document-transformation-2592.local/fhir/Organization/42073"
+                "reference": "https://organization.cit-document-transformation-2776.local/fhir/Organization/34869"
               }
             }
           },
           {
-            "fullUrl": "https://organization.cit-document-transformation-2592.local/fhir/Practitioner/14173",
+            "fullUrl": "https://organization.cit-document-transformation-2776.local/fhir/Practitioner/79363",
             "resource": {
               "resourceType": "Practitioner",
-              "id": "14173",
+              "id": "79363",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -109,10 +109,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://organization.cit-document-transformation-2592.local/fhir/Organization/42073",
+            "fullUrl": "https://organization.cit-document-transformation-2776.local/fhir/Organization/34869",
             "resource": {
               "resourceType": "Organization",
-              "id": "42073",
+              "id": "34869",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -149,7 +149,7 @@ __Body__:
                   "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
                   "value": "11111111",
                   "period": {
-                    "start": "2024-07-29T08:45:47+00:00"
+                    "start": "2024-10-26T16:02:59+00:00"
                   }
                 },
                 {
@@ -188,10 +188,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://organization.cit-document-transformation-2592.local/fhir/Organization/27670",
+            "fullUrl": "https://organization.cit-document-transformation-2776.local/fhir/Organization/25751",
             "resource": {
               "resourceType": "Organization",
-              "id": "27670",
+              "id": "25751",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -228,7 +228,7 @@ __Body__:
                   "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
                   "value": "11111111",
                   "period": {
-                    "start": "2024-07-29T08:45:47+00:00"
+                    "start": "2024-10-26T16:02:59+00:00"
                   }
                 },
                 {
@@ -267,10 +267,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://questionnaire.cit-document-transformation-2592.local/fhir/Questionnaire/21701",
+            "fullUrl": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/23263",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "21701",
+              "id": "23263",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -308,7 +308,7 @@ __Body__:
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "https://organization.cit-document-transformation-2592.local/fhir/Organization/74302"
+                        "reference": "https://organization.cit-document-transformation-2776.local/fhir/Organization/89942"
                       }
                     },
                     {
@@ -923,6 +923,38 @@ __Body__:
                           {
                             "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
                             "valueString": "<div lang=\"da\">   <p>Mange tak for din deltagelse.<br/>Med venlig hilsen<br/>      <span style=\"font-style:italic;\">MedCom</span>   </p></div>"
+                          }
+                        ]
+                      },
+                      "type": "display"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright",
+                      "valueBoolean": true
+                    }
+                  ],
+                  "linkId": "d68218f4-dce8-412e-99fc-a0efb8ed742f",
+                  "text": "Copyright test",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-item-is-copyright",
+                          "valueBoolean": true
+                        }
+                      ],
+                      "linkId": "3149ef89-1a45-47c6-9302-5a23a123e7b9",
+                      "text": "Copyright informationer for benyttede spørgsmål fremgår her",
+                      "_text": {
+                        "extension": [
+                          {
+                            "url": "http://hl7.org/fhir/StructureDefinition/rendering-xhtml",
+                            "valueString": "<p>Copyright informationer for benyttede spørgsmål fremgår her</p>"
                           }
                         ]
                       },
