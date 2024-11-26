@@ -73,6 +73,18 @@
           ]
         },
         {
+          "code": "446080005",
+          "display": "Photography of wound",
+          "target": [
+            {
+              "code": "N",
+              "display": "No",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        ,
+        {
           "code": "273586006",
           "display": "Master Questionnaire",
           "target": [
@@ -434,6 +446,17 @@
         {
           "code": "ALCA03",
           "display": "virtuel kontakt",
+          "target": [
+            {
+              "code": "N",
+              "display": "No",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "ZZ7011",
+          "display": "Klinisk foto",
           "target": [
             {
               "code": "N",
