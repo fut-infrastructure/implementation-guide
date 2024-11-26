@@ -298,6 +298,17 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "ZZ7011",
+          "display": "Klinisk foto",
+          "target": [
+            {
+              "code": "Media",
+              "display": "Media",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },
@@ -323,6 +334,17 @@
             {
               "code": "QuestionnaireResponse",
               "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "446080005",
+          "display": "Photography of wound",
+          "target": [
+            {
+              "code": "Media",
+              "display": "Media",
               "equivalence": "relatedto"
             }
           ]
