@@ -46,6 +46,43 @@
           ]
         }
       ]
+    },
+    {
+      "source": "http://loinc.org",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "72287-6",
+          "display": "Wound size panel",
+          "target": [
+            {
+              "code": "39126-8",
+              "display": "Length of Wound",
+              "equivalence": "specializes"
+            },
+            {
+              "code": "39125-0",
+              "display": "Width of Wound",
+              "equivalence": "specializes"
+            },
+            {
+              "code": "39127-6",
+              "display": "Depth of Wound",
+              "equivalence": "specializes"
+            },
+            {
+              "code": "89260-4",
+              "display": "Area of wound",
+              "equivalence": "specializes"
+            },
+            {
+              "code": "94083-3",
+              "display": "Wound volume",
+              "equivalence": "specializes"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
