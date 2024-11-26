@@ -1,7 +1,6 @@
 Profile: ehealth-media
 Id: ehealth-media
 Parent: Media
-* obeys ehealth-media-usageNode-raw-is-root
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-quality named quality 0..*
@@ -75,7 +74,7 @@ Description: "A downsampled version of a Media resource content."
 * extension[content].valueAttachment 1..1
 
 Invariant:   ehealth-media-usageNode-raw-is-root
-Description: "Media.usageMode.code='raw' implies relatedTo.empty()"
+Description: "Media with usage mode 'raw' cannot depend on related media."
 Severity:    #error
 Expression:  "usageMode='raw' implies relatedTo.empty()"
 XPath:       "f:usageMode/f:valueCode/@value='raw' implies not(exists(f:relatedTo))"
