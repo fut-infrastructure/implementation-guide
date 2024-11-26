@@ -95,7 +95,7 @@
     },
     {
       "code" : "cm3",
-      "display" : "cubic meter",
+      "display" : "cubic centimeter",
       "designation" : [
         {
           "language" : "da",
