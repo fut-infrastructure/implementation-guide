@@ -27,6 +27,10 @@
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
+            "code": "ALAL03",
+            "display": "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+          },
+          {
             "code": "DE10",
             "display": "Type 1-diabetes"
           },

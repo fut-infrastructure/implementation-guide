@@ -1,5 +1,27 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased changes
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+- Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+
 ## 3.3.0 (2024-11-07)
 
 ### General changes
