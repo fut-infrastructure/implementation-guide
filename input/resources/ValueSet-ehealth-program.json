@@ -6,7 +6,7 @@
   "name": "Program",
   "title": "Program",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2024-11-28T09:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "A list of program/project.",
+  "description": "A list of programs/projects.",
   "compose": {
     "include": [
       {
