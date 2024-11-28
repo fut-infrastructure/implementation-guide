@@ -1,14 +1,17 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## latest
+## Unreleased changes
 
 ### General changes
+- Changed cardinality for ehealth-servicerequest performer to 0..*
+- Added ehealth-careteam reference to ehealth-servicerequest performer.
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-program
 ### ValueSets
+- Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 - Added http://ehealth.sundhed.dk/vs/ehealth-program
 - Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
 ### ConceptMaps
