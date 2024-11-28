@@ -63,3 +63,6 @@ A PlanDefinition has two sets of titles and desriptions. `title` and `descriptio
 Each `action` element must either have sub-actions or an `action.definition`. This makes it possible to create top-level group-actions that functions as containers for a number of related sub-actions. 
 
 It is possible to specify timing for each action in the `action.timing[x]` element. When the PlanDefiniton is applied to a Patient this will override any timing specified on the related ActivityDefinition.
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.

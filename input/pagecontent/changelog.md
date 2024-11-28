@@ -1,5 +1,27 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## latest
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added http://ehealth.sundhed.dk/cs/ehealth-program
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/ehealth-program
+- Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
+### ConceptMaps
+### Resource/profile changes
+- Updated IG intro for ehealth-activitydefinition to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-plandefinition to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-questionnaire to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-careteam to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-actionguidance to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-view to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-documentreference to describe the correct ValueSet for UsageContextType (useContext.code).
+### Search parameters
+
 ## 3.3.0 (2024-11-07)
 
 ### General changes

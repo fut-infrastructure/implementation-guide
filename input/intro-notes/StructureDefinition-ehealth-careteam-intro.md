@@ -33,4 +33,6 @@ is a UUID.
 In order to ease selection of CareTeam appropriate for a given CarePlan, at least one Condition type handled
 by a CareTeam must
  be stated in `reasonCode`. This is used as criteria for suggesting CareTeams in the operation suggest-care-teams.
- 
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.

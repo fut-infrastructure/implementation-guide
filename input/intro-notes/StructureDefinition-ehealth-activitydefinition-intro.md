@@ -50,3 +50,6 @@ the ActivityDefinition:
 
 ### Title and description
 A ActivityDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `usage` are intended for clinicians and should be of a specific and professional language.
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.

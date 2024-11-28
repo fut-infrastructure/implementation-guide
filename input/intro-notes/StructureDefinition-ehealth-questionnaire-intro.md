@@ -68,3 +68,6 @@ Example of one copyright structure with two copyrights
 * item.type: 'group', item.isCopyright: true, item.text = 'Copyright title'. (root item)
   * item.type: 'display', item.isCopyright: true, item.text = 'Copyright 1' (child item)
   * item.type: 'display', item.isCopyright: true, item.text = 'Copyright 2' (child item)
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.

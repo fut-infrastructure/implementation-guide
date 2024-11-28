@@ -12,4 +12,6 @@ Typically, DocumentReference resources are used in document indexing systems, su
 In scope of the eHealth infrastructure the primary use of the DocumentReference resource is to contain or refer to information material used in relation to PlanDefinition and Questionnaire. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material. 
 
 See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
- 
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.

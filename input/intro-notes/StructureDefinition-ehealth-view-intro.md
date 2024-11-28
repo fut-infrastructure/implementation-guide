@@ -28,4 +28,6 @@ the View:
 The status field,`ehealth-status`, will express the lifecycle of the resource. Changes follow this pattern.
 - When created it will have status `draft`.
 - From status `draft` can change to either `active` or `retired`.
- 
+
+### UseContext
+https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html supersedes the FHIR core specified on UsageContext.code despite binding to FHIR core one https://hl7.org/fhir/R4/metadatatypes.html#UsageContext.
