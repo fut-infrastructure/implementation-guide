@@ -97,6 +97,21 @@
       "code": "out-of-date-resource",
       "display": "out-of-date-resource",
       "definition": "out-of-date-resource"
+    },
+    {
+      "code": "no-idref-binding-in-document",
+      "display": "no-idref-binding-in-document",
+      "definition": "no-idref-binding-in-document"
+    },
+    {
+      "code": "general-transformation-failure",
+      "display": "general-transformation-failure",
+      "definition": "general-transformation-failure"
+    },
+    {
+      "code": "general-publication-failure",
+      "display": "general-publication-failure",
+      "definition": "general-publication-failure"
     }
   ]
 }
