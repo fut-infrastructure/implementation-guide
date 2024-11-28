@@ -77,5 +77,5 @@ Description: "A downsampled version of a Media resource content."
 Invariant:   ehealth-media-usageMode-raw-is-root
 Description: "Media with usage mode 'raw' cannot depend on related media."
 Severity:    #error
-Expression:  "usageMode = 'raw' implies relatedTo.empty()"
+Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media-usage-mode').value = 'raw' implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media-related-to').empty()"
 XPath:       "f:usageMode/f:valueCode/@value='raw' implies not(exists(f:relatedTo))"
