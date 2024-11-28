@@ -3,6 +3,7 @@ The CareTeam includes all the people and organizations who plan to participate i
 of care for a patient. A CareTeam can be constructed for a single patient but typically handles more patients.
 
 # Scope and Usage
+
 In the eHealth Infrastructure, a CareTeam has a lifecycle independent of Patients and consists of a group of
 Practitioners. Typically the group of Practitioners are affiliated with a real-world organizational unit such
 as a hospital department/care unit, but a CareTeam can also be representing a "virtual" unit comprised of  
@@ -16,6 +17,9 @@ The core FHIR CareTeam has `subject` and `context` which can reference a Patient
 Instead CareTeam is intended to be referenced from CarePlan and EpisodeOfCare. A CareTeam can be referenced from
  a single CarePlan but the typical scenario is that it is
 referenced by multiple CarePlan and/or EpisodeOfCare instances crossing multiple Patient instances.
+
+The profile is based on the native FHIR Basic resource and adds the following extensions:
+* `ehealth-useContext` The context that the content is intended to support
 
 ### Composition of CareTeams
 In the eHealth Infrastructure, the possibility to add CareTeam participant members other than Practitioner
