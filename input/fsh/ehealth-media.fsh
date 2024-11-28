@@ -2,6 +2,7 @@ Profile: ehealth-media
 Id: ehealth-media
 Parent: Media
 * obeys ehealth-media-usageMode-raw-is-root
+* obeys ehealth-media-usageMode-metadata-no-content
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-quality named quality 0..*
@@ -79,3 +80,9 @@ Description: "Media with usage mode 'raw' cannot depend on related media."
 Severity:    #error
 Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media-usage-mode').value = 'raw' implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media-related-to').empty()"
 XPath:       "f:usageMode/f:valueCode/@value='raw' implies not(exists(f:relatedTo))"
+
+Invariant:   ehealth-media-usageMode-metadata-no-content
+Description: "Media with usage mode 'metadata' cannot have content."
+Severity:    #error
+Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media-usage-mode').value = 'metadata' implies (content.data.empty() and content.url.empty())"
+XPath:       "f:usageMode/f:valueCode/@value='metadata' implies (empty(f:content/f:data) and empty(f:content/f:url))"
