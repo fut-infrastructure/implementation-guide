@@ -3,8 +3,8 @@
   "id": "ehealth-program",
   "url": "http://ehealth.sundhed.dk/vs/ehealth-program",
   "version": "2024-11-28T09:00:00",
-  "name": "Program",
-  "title": "Program",
+  "name": "eHealthProgram",
+  "title": "eHealth Program",
   "status": "active",
   "experimental": false,
   "date": "2024-11-28T09:00:00+00:00",
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "A list of programs/projects.",
+  "description": "Programs or projects using the eHealth Infrastructure and wanting to mark various resources as intended for their non-exclusive use.",
   "compose": {
     "include": [
       {
