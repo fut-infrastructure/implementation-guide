@@ -8,33 +8,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 ### ValueSets
-### ConceptMaps
-### Resource/profile changes
-### Search parameters
-### General changes
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 ### ConceptMaps
 ### Resource/profile changes
+#### ServiceRequest (ehealth-servicerequest)
+- Changed cardinality of performer to 0..*
+- Added ehealth-careteam as possible performer
 ### Search parameters
 
 ## 3.3.0 (2024-11-07)
-
-### General changes
-- Changed cardinality for ehealth-servicerequest performer to 0..*
-- Added ehealth-careteam reference to ehealth-servicerequest performer.
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-### Search parameters
 
 ### General changes
 - Added new Extension ehealth-participant, and made it searchable with composite search parameter
