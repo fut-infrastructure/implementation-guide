@@ -25,13 +25,13 @@
   "concept": [
     {
       "code": "kpro",
-      "display": "Kommunal PRO",
+      "display": "K-PRO",
       "definition": "Kommunal patientrapporterede oplysninger"
     },
     {
       "code": "telma",
       "display": "Telma",
-      "definition": "Telemedicinsk Monitorerings Applikation"
+      "definition": "Telemedicinsk monitoreringsapplikation"
     }
   ]
 }
