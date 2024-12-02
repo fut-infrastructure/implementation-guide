@@ -1,0 +1,12 @@
+Profile: ehealth-shareable-documentreference
+Id: ehealth-shareable-documentreference
+Parent: ehealth-documentreference
+* extension contains ehealth-document-sharing-state named documentSharingState 0..1
+
+Extension: ehealth-document-sharing-state
+Title:     "State of the document sharing"
+Description: "Where in the sharing process the document is, and the reason why"
+* . ^short = "Where in the sharing process the document is, and the reason why"
+* value[x] only CodeableConcept
+* value[x] from http://ehealth.sundhed.dk/vs/document-sharing-state (required)
+* value[x] 0..1
