@@ -3,7 +3,6 @@ The CareTeam includes all the people and organizations who plan to participate i
 of care for a patient. A CareTeam can be constructed for a single patient but typically handles more patients.
 
 # Scope and Usage
-
 In the eHealth Infrastructure, a CareTeam has a lifecycle independent of Patients and consists of a group of
 Practitioners. Typically the group of Practitioners are affiliated with a real-world organizational unit such
 as a hospital department/care unit, but a CareTeam can also be representing a "virtual" unit comprised of  
