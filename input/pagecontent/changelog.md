@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased changes
 
 ### General changes
+- Update validations for occurrence[x] in the ServiceRequest introduction.
 ### Custom operations
 #### System operations
 #### Instance operations
