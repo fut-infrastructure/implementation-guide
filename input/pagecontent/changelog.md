@@ -5,6 +5,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Changed cardinality for ehealth-servicerequest performer to 0..*
 - Added ehealth-careteam reference to ehealth-servicerequest performer.
+- Changed cardinality for ehealth-usecontext and ehealth-view to 0..*
+- Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 ### Custom operations
 #### System operations
 #### Instance operations
