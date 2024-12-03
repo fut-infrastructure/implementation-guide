@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ehealth-media-view",
+    "url": "http://ehealth.sundhed.dk/vs/media-view",
+    "version": "0.6.0",
+    "name": "MediaView",
+    "title": "Media view",
+    "status": "active",
+    "experimental": true,
+    "date": "2024-10-21T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "name": "ehealth.sundhed.dk",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Media view",
+    "compose": {
+        "include": [
+            {
+                "valueSet": [
+                    "http://hl7.org/fhir/ValueSet/media-view"
+                ]
+            }
+        ]
+    }
+}
