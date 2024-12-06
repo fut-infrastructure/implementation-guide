@@ -17,6 +17,9 @@ Instead CareTeam is intended to be referenced from CarePlan and EpisodeOfCare. A
  a single CarePlan but the typical scenario is that it is
 referenced by multiple CarePlan and/or EpisodeOfCare instances crossing multiple Patient instances.
 
+The eHealth profile of CareTeam has the following extensions:
+* `ehealth-useContext` which defines the context(s) in which the CareTeam is intended and expected to be used (non-exclusively)
+
 ### Composition of CareTeams
 In the eHealth Infrastructure, the possibility to add CareTeam participant members other than Practitioner
 is not used, but the other types (Organization, CareTeam etc) have been retained for possible future use.  
