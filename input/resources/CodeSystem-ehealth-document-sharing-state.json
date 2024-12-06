@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Tag værdi Dokument delings status",
+  "description": "Document Sharing State",
   "caseSensitive": true,
   "content": "complete",
   "concept": [

@@ -9,8 +9,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 ### ValueSets
+- Added ValueSet http://ehealth.sundhed.dk/vs/document-sharing-state
 ### ConceptMaps
 ### Resource/profile changes
+- Added ehealth-shareable-documentreference profile
+- Added extension ehealth-document-sharing-state to ehealth-shareable-documentreference
 ### Search parameters
 
 ## 3.3.0 (2024-11-07)
