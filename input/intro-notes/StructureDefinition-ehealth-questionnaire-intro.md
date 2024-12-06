@@ -74,4 +74,4 @@ The element useContext.code has binding to the ValueSet http://hl7.org/fhir/Valu
 in the ValueSet described for useContext.code.
 
 ### ApprovalDate
-The date when the Questionnaire's `status` becomes `active`, whether it is created active or changed to active, will be recorded in the `approvalDate` field.
+The date when the Questionnaire's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.
