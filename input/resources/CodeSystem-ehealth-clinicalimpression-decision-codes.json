@@ -55,6 +55,28 @@
           "value": "Godkendt Borger Visning"
         }
       ]
+    },
+    {
+      "code": "invalidated-fulfills",
+      "display": "Handle invalidated measurement as fulfilling expected submission",
+      "definition": "Handle invalidated measurement as fulfilling expected submission",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ugyldiggjort måledata tæller som opfyldelse af indsendt måledata"
+        }
+      ]
+    },
+    {
+      "code": "invalidated-is-not-fulfillment",
+      "display": "Handle invalidated measurement as not fulfilling expected submission",
+      "definition": "Handle invalidated measurement as not fulfilling expected submission",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ugyldiggjort måledata tæller ikke som opfyldelse af indsendt måledata"
+        }
+      ]
     }
   ]
 }
