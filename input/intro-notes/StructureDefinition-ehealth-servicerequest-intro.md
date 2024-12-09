@@ -36,6 +36,7 @@ The validity depends on the variant of `occurrence[x]` as follows:
         * `durationUnit`: required when `duration` is specified. Shall be one of s, min, h, d, wk, a.
         * `period`: optional, required when `dayOfWeek` is missing, and it must be pos-integer. When empty, it corresponds to occurrence every one day (every day).
         * `periodUnit`: required when `period` is not empty. Shall be one of min, h, d, wk, mo, a.
+        * Note: For recurring `occurrenceTiming`, either `dayOfWeek` or `period` must be assigned to clearly differentiate it from ad-hoc timing.
 
     See the [wiki](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing) for examples.
 
