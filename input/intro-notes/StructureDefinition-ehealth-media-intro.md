@@ -22,7 +22,16 @@ Media content delivered by reference in the `content.url` element will not be st
 
 ### Image thumbnails
 The eHealth infrastructure will automatically generate thumbnail representations of media image content delivered inline. The sizes of thumbnails are determined by configuration in the eHealth infrastructure. 
-When retrieving a media, the thumbnail representations can be found in the `thumbnail` element. 
+When retrieving a media, the thumbnail representations can be found in the `thumbnail` element. Thumbnails are generated asynchronously, so they may not be available immediately after the media is submitted. Each thumbnail representations will have `status` set to 'requested' and have no `content` element until the thumbnail is generated.
+In case that errors prevent the generation of a thumbnail, the `status` of the thumbnail will be set to 'failed'.
+
+### Update of media
+Media resources can be updated, to change `status`, or to allow grouping of media that was not grouped at the time of submission by updating `relatedTo`, or to modify the `content` of a media submitted with usage mode 'overlay'. Update of `content` is only allowed for media with `usageMode` 'overlay'.
+The `status` of a Media resource can be updated from any of:  'preparation' | 'in-progress' | 'on-hold' | 'completed'  to  'stopped'.
+Update of any other elements is denied.
+
+
+
 
 ### Searching media
 It is possible to search for Media based on:
