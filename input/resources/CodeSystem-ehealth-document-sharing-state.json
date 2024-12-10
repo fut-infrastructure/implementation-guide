@@ -112,6 +112,11 @@
       "code": "general-publication-failure",
       "display": "general-publication-failure",
       "definition": "general-publication-failure"
+    },
+    {
+      "code": "yielded-to-duplicate-document",
+      "display": "yielded-to-duplicate-document",
+      "definition": "yielded-to-duplicate-document"
     }
   ]
 }
