@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 ### ConceptMaps
 ### Resource/profile changes
+- Changed validations for occurrence[x] in the ServiceRequest introduction.
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
