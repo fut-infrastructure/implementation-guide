@@ -3,19 +3,45 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased changes
 
 ### General changes
+- Updated documentation for Media resource concerning wound assessment and measurements.
+- Updated documentation for Observation resource concerning wound assessment and measurements.
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/media-usage-mode
+- Added http://ehealth.sundhed.dk/cs/observation-method
+- Added http://ehealth.sundhed.dk/cs/thumbnail-size-category 
+- Added http://ehealth.sundhed.dk/cs/thumbnail-status
+- Added codes cm, cm2, cm3 to http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement
+- Added code ZZ7011 to urn:oid:1.2.208.176.2.4 (SKS)
 ### ValueSets
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
+- Added http://ehealth.sundhed.dk/vs/body-site
+- Added http://ehealth.sundhed.dk/vs/media-modality
+- Added http://ehealth.sundhed.dk/vs/media-usage-mode
+- Added http://ehealth.sundhed.dk/vs/media-view
+- Added http://ehealth.sundhed.dk/vs/observation-method
+- Added http://ehealth.sundhed.dk/vs/thumbnail-size-category
+- Added http://ehealth.sundhed.dk/vs/thumbnail-status
+- Added codes ZZ7011, 446080005 to http://ehealth.sundhed.dk/vs/activitydefinition-code
+- Added codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 (wound size panel) to http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
+- Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3, ZZ7011, 446080005 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+- Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type,http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum, http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
+- Added mapping for codes cm, cm2, cm3 in : http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol
+
 ### Resource/profile changes
 - Changed validations for occurrence[x] in the ServiceRequest introduction.
+- Added extensions ehealth-media-thumbnail, ehealth-media-usage-mode, ehealth-media-related-to, ehealth-media-series-id to Media
+- Added invariant ehealth-media-usageMode-metadata-no-content to Media that ensures that content is not present when usageMode is metadata
+- Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
 ### Search parameters
+- Added search parameters `relatedTo`, `series` and `usageMode` on `ehealth-media` (`Media`).
+
 
 ## 3.3.0 (2024-11-07)
 
