@@ -262,6 +262,67 @@
           ]
         }
       ]
+    },
+    {
+      "source": "http://snomed.info/sct",
+      "target": "http://hl7.org/fhir/data-types",
+      "element": [
+        {
+          "code": "39126-8",
+          "display": "Length of Wound",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "39125-0",
+          "display": "Width of Wound",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "39127-6",
+          "display": "Depth of Wound",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "89260-4",
+          "display": "Area of wound",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "94083-3",
+          "display": "Wound volume",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
+              "equivalence": "specializes"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

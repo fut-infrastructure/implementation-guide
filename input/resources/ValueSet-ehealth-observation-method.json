@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-observation-method",
+  "url": "http://ehealth.sundhed.dk/vs/observation-method",
+  "version": "0.6.0",
+  "name": "ObservationMethod",
+  "title": "Observation Method",
+  "status": "active",
+  "experimental": true,
+  "date": "2024-10-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies how an observation is acquired.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/observation-method",
+        "concept": [
+          {
+            "code": "measured",
+            "display": "Measured"
+          },
+          {
+            "code": "calculated",
+            "display": "Calculated"
+          }
+        ]
+      }
+    ]
+  }
+}
