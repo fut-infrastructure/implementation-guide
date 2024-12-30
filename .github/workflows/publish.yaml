@@ -10,8 +10,11 @@ on:
     branches: [ master ]
 
 env:
-  # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
-  ig_cmd: java -Xmx4g -jar /input-cache/publisher.jar
+  WEB_APP_LOCATION: "web/"
+  WEB_REPO: "fut-ig-website"
+  REGISTRY_REPO: "ig-registry"
+  APP_AUTHOR_NAME: "fut-ig-publisher[bot]"
+  APP_AUTHOR_EMAIL: "fut-ig-publisher[bot]@users.noreply.github.com"
 
 jobs:
   # Check if the IG transpiles without errors
@@ -19,15 +22,16 @@ jobs:
     name: Transpile IG
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/trifork/ig-publisher:latest
+    container: ghcr.io/trifork/ig-publisher:latest
+
     steps:
       # Checkout the repos needed
       - uses: actions/checkout@v4
 
         # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
-      - name: ig transpile
-        run: $ig_cmd -ig .
+      - name: IG transpile check
+        uses: trifork/ig-publisher/.github/actions/ig-transpile@v1
+        # uses: ../../trifork/ig-publisher/.github/actions/ig-transpile # Test local action
 
   # Transpile and publish the IG, if it was pushed to main with a tag
   release:
@@ -35,8 +39,8 @@ jobs:
     # A release is defined as a tag pushed to main
     if: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/trifork/ig-publisher:latest
+    container: ghcr.io/trifork/ig-publisher:latest
+
     steps:
       # Checkout the repos needed
       - uses: actions/checkout@v4
@@ -55,7 +59,7 @@ jobs:
               "releaseLabel": "release"
             }
 
-      - name: Update publicaction-request.json with the release version
+      - name: Update publication-request.json with the release version
         run: |
           echo "$(jq '
             .version = env.GITHUB_REF_NAME |
@@ -69,9 +73,6 @@ jobs:
           cat ig/sushi-config.yaml
           echo -n "\n\n======================== publication-request.json ========================\n"
           cat ig/publication-request.json
-      
-      - name: ig transpile
-        run: $ig_cmd -ig ig/
 
       - name: Generate app token
         id: token
@@ -80,68 +81,15 @@ jobs:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
-          repositories: "fut-ig-website,ig-registry"
+          repositories: "${{ env.WEB_REPO }},${{ env.REGISTRY_REPO }}"
 
-      - name: web repo
-        uses: actions/checkout@v4
+      - name: Publish the implementation guide
+        uses: trifork/ig-publisher/.github/actions/ig-publish@v1
+        # uses: ../../trifork/ig-publisher/.github/actions/ig-publish # Test local action
         with:
-          repository: fut-infrastructure/fut-ig-website
-          token: ${{ steps.token.outputs.token }}
-          path: web
-
-      - name: registry repo
-        uses: actions/checkout@v4
-        with:
-          repository: fut-infrastructure/ig-registry
-          token: ${{ steps.token.outputs.token }}
-          path: registry
-
-      - name: history repo
-        uses: actions/checkout@v4
-        with:
-          repository: fut-infrastructure/fhir-ig-history-template
-          path: history
-
-      # https://confluence.hl7.org/display/FHIR/HL7+Process+for+Publishing+a+FHIR+IG
-      # https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-CanonicalURLs
-      - name: ig publish
-        run: >-
-          $ig_cmd -go-publish
-          -source ig/ -web web/ -registry registry/fhir-ig-list.json -history history/ -templates web/templates
-
-      - name: remove large unnecessary files
-        run: |
-          rm -rf web/ig-build-zips/*.zip
-          rm -rf web/fhir/full-ig.zip
-          rm -rf web/fhir/*/full-ig.zip
-      
-      - name: configure publication registry
-        run: |
-          export FUT_DESC=$(yq -r .description ig/sushi-config.yaml)
-          export FUT_AUTHORITY=$(yq -r .publisher.name ig/sushi-config.yaml)
-          echo $FUT_DESC
-          echo $FUT_AUTHORITY
-          echo "$(jq '
-            .guides[-1].description = env.FUT_DESC |
-            .guides[-1].authority = env.FUT_AUTHORITY |
-            .guides[-1].country = "dk"
-          ' registry/fhir-ig-list.json)" > registry/fhir-ig-list.json
-
-      - name: commit web publication
-        uses: actions-js/push@v1.5
-        with:
-          github_token: ${{ steps.token.outputs.token }}
-          author_name: fut-ig-publisher[bot]
-          author_email: ig-publisher[bot]@users.noreply.github.com
-          repository: fut-infrastructure/fut-ig-website
-          directory: web
-
-      - name: commit publication to registry
-        uses: actions-js/push@v1.5
-        with:
-          github_token: ${{ steps.token.outputs.token }}
-          author_name: fut-ig-publisher[bot]
-          author_email: ig-publisher[bot]@users.noreply.github.com
-          repository: fut-infrastructure/ig-registry
-          branch: master
-          directory: registry
+          app-token: ${{ steps.token.outputs.token }}
+          app-author-name: ${{ env.APP_AUTHOR_NAME }}
+          app-author-email: ${{ env.APP_AUTHOR_EMAIL }}
+          registry-repo: ${{ github.repository_owner }}/${{ env.REGISTRY_REPO }}
+          web-repo: ${{ github.repository_owner }}/${{ env.WEB_REPO }}
+          web-source: ${{ env.WEB_APP_LOCATION }}
