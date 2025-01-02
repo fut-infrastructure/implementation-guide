@@ -88,6 +88,42 @@
           ]
         },
         {
+          "code": "cm",
+          "display": "centimeter",
+          "target": [
+            {
+              "code": "cm",
+              "display": "centimeter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "cm2",
+          "display": "square centimeter",
+          "target": [
+            {
+              "code": "cm2",
+              "display": "square centimeter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "cm3",
+          "display": "cubic centimeter",
+          "target": [
+            {
+              "code": "cm3",
+              "display": "cubic centimeter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "L",
           "display": "liter",
           "target": [

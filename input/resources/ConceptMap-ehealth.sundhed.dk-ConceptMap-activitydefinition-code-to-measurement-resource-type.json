@@ -298,6 +298,17 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "ZZ7011",
+          "display": "Klinisk foto",
+          "target": [
+            {
+              "code": "Media",
+              "display": "Media",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },
@@ -323,6 +334,83 @@
             {
               "code": "QuestionnaireResponse",
               "display": "QuestionnaireResponse",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "446080005",
+          "display": "Photography of wound",
+          "target": [
+            {
+              "code": "Media",
+              "display": "Media",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "72287-6",
+          "display": "Wound size panel",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "39126-8",
+          "display": "Length of Wound",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "39125-0",
+          "display": "Width of Wound",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "39127-6",
+          "display": "Depth of Wound",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "89260-4",
+          "display": "Area of wound",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "94083-3",
+          "display": "Wound volume",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
               "equivalence": "relatedto"
             }
           ]
