@@ -18,6 +18,6 @@ It is possible to search for QuestionnaireResponses based on:
 At least one of "subject" and "context" must be provided. "period" searches on range of "authored".
 
 ### Effective Period
-`effectivePeriod` is intended to reflect the period for which the answers in the questionnaire response are considered applicable. In combination with `authored`, this can be used to describe that a questionnaire response about, say, patient's mood, reflects the previous week Monday to Sunday (stated in `effectivePeriod`), while entry of answers happened Monday this week (stated in `authored`).
+`effectivePeriod` is intended to reflect the period for which the answers in the questionnaire response are considered applicable. In combination with `authored`, this can be used to describe that a questionnaire response about, say, patient's mood, reflects the previous week Monday to Sunday (stated in `effectivePeriod`), while entry of answers happened Monday this week (stated in `authored`). If the questionnaire response pertains to the patient's current state, the `effectivePeriod` could represent the start and end time of the period during which the questionnaire was completed.
 
 Transformation of the QuestionnaireResponse to Questionnaire Response Document (QRD) representation requires that `effectivePeriod.start` has been specified and that `effectivePeriod.end`, when specified, differs from `effectivePeriod.start`.
