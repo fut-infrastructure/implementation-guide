@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ehealth-media-modality",
+    "url": "http://ehealth.sundhed.dk/vs/media-modality",
+    "version": "0.6.0",
+    "name": "MediaModality",
+    "title": "Media modality",
+    "status": "active",
+    "experimental": true,
+    "date": "2024-10-21T00:00:00+00:00",
+    "publisher": "ehealth.sundhed.dk",
+    "contact": [
+        {
+            "name": "ehealth.sundhed.dk",
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://ehealth.sundhed.dk/terminology"
+                }
+            ]
+        }
+    ],
+    "description": "Media modality",
+    "compose": {
+        "include": [
+            {
+                "valueSet": [
+                    "http://hl7.org/fhir/ValueSet/media-modality"
+                ]
+            }
+        ]
+    }
+}

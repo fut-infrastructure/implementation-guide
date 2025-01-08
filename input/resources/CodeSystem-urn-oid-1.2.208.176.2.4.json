@@ -453,6 +453,10 @@
     {
       "code": "ZZ3170",
       "display": "Hjemmeblodtryksmåling udført af patienten"
+    },
+    {
+      "code": "ZZ7011",
+      "display": "Klinisk foto"
     }
   ]
 }
