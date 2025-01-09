@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-media-codes",
+  "url": "http://ehealth.sundhed.dk/vs/media-codes",
+  "version": "2025-01-09T11:30:00",
+  "name": "MediaCodes",
+  "title": "Media Codes",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-01-09T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Media codes value set",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "446080005",
+            "display": "Photography of wound"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "ZZ7011",
+            "display": "Klinisk foto"
+          }
+        ]
+      }
+    ]
+  }
+}
