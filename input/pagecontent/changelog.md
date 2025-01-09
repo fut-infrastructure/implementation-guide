@@ -18,6 +18,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 - Added http://ehealth.sundhed.dk/vs/body-site
+- Added http://ehealth.sundhed.dk/vs/media-codes
 - Added http://ehealth.sundhed.dk/vs/media-modality
 - Added http://ehealth.sundhed.dk/vs/media-usage-mode
 - Added http://ehealth.sundhed.dk/vs/media-view
