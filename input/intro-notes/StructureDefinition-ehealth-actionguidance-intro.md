@@ -15,6 +15,8 @@ The profile is based on the native FHIR Basic resource and adds the following ex
 * `ehealth-intendedAudience` Can be set to one or more Organizations to indicate for which Organization(s) this action guidance is intended to be used by. This is meant for filtering and is not enforced or in any way restricting which Organization has access.
 * `ehealth-actionguidance-type` Type of action guidance.
 * `ehealth-actionguidance-for` A reference to a resource for which this action guidance applies.
+* `ehealth-modifier-role`
+* `ehealth-status`
 
 ## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
@@ -25,6 +27,8 @@ the Action guidance:
   and alter the entities referenced by `ehealth-modifier-role`, for instance, by adding more co-authors.
 * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
+
+During an update operation, when the ActionGuidance has a status of `active` or `retired`, only the following elements are permitted to be modified: `ehealth-recommendation`, `ehealth-intendedAudience`, `ehealth-useContext`, `ehealth-modifier-role` and `ehealth-status`.
 
 ## Lifecycle
 The status field,`ehealth-status`, will express the lifecycle of the resource. Changes follow this pattern.
