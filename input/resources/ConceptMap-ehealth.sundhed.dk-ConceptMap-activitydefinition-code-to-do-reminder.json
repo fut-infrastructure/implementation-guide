@@ -424,7 +424,14 @@
               "equivalence": "relatedto"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "source": "http://loinc.org",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "element": [
+
         {
           "code": "72287-6",
           "display": "Wound size panel",

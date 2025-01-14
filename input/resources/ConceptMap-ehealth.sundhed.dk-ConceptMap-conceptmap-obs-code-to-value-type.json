@@ -264,7 +264,7 @@
       ]
     },
     {
-      "source": "http://snomed.info/sct",
+      "source": "http://loinc.org",
       "target": "http://hl7.org/fhir/data-types",
       "element": [
         {
