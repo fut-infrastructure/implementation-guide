@@ -1,7 +1,7 @@
-Profile: ehealth-shareable-documentreference
-Id: ehealth-shareable-documentreference
+Profile: ehealth-transformation-documentreference
+Id: ehealth-tranformation-documentreference
 Parent: ehealth-documentreference
-* extension contains ehealth-document-sharing-state named documentSharingState 0..1
+* extension contains ehealth-document-sharing-state named documentSharingState 0..*
 
 Extension: ehealth-document-sharing-state
 Title:     "State of the document sharing"
