@@ -269,7 +269,7 @@
       ]
     },
     {
-      "source": "http://snomed.info/sct",
+      "source": "http://loinc.org",
       "target": "http://unitsofmeasure.org",
       "element": [
         {
