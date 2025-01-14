@@ -52,6 +52,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated IG intro for ehealth-actionguidance to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-view to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-documentreference to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-actionguidance to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-view to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-questionnaire to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-plandefinition to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-activitydefinition to state that UsageContext has no update restrictions.
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
