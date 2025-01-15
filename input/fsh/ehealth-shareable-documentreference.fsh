@@ -1,5 +1,5 @@
 Profile: ehealth-transformation-documentreference
-Id: ehealth-tranformation-documentreference
+Id: ehealth-transformation-documentreference
 Parent: ehealth-documentreference
 * extension contains ehealth-document-sharing-state named documentSharingState 0..*
 
