@@ -402,7 +402,7 @@
     },
     {
       "source": "http://snomed.info/sct",
-      "display": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "445988008",
