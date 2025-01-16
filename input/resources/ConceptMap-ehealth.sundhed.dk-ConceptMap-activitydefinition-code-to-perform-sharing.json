@@ -392,8 +392,8 @@
           "display": "Klinisk foto",
           "target": [
             {
-              "code": "Y",
-              "display": "Yes",
+              "code": "N",
+              "display": "No",
               "equivalence": "relatedto"
             }
           ]
@@ -453,8 +453,8 @@
           "display": "Photography of wound",
           "target": [
             {
-              "code": "Y",
-              "display": "Yes",
+              "code": "N",
+              "display": "No",
               "equivalence": "relatedto"
             }
           ]
