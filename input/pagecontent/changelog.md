@@ -9,6 +9,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-careteam reference to ehealth-servicerequest performer.
 - Changed useContext cardinality for ehealth-actionguidance and ehealth-view to 0..*
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
+- Added Governance principles section to ehealth-actionguidance and ehealth-view.
+- Changed Governance principles section to ehealth-plandefinition.
 ### Custom operations
 #### System operations
 #### Instance operations

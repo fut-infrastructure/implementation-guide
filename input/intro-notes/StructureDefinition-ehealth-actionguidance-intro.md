@@ -18,6 +18,17 @@ The profile is based on the native FHIR Basic resource and adds the following ex
 * `ehealth-modifier-role`
 * `ehealth-status`
 
+### Governance principles
+
+#### Properties allowed to be changed in regard to the status
+
+* Draft
+  * No restriction
+* Active
+  * *ehealth-recommendation*, *ehealth-intendedAudience*, *ehealth-useContext*, *ehealth-modifier-role* and *ehealth-status*
+* Retired
+  * *ehealth-recommendation*, *ehealth-intendedAudience*, *ehealth-useContext*, *ehealth-modifier-role* and *ehealth-status*
+
 ## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
 the Action guidance:
