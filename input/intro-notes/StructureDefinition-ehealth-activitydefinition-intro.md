@@ -55,5 +55,7 @@ A ActivityDefinition has two sets of titles and desriptions. `title` and `descri
 The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
 in the ValueSet described for useContext.code.
 
+The `useContext` element can be updated at any time, regardless of the status of the ActivityDefinition.
+
 ### ApprovalDate
 The date when the ActivityDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.

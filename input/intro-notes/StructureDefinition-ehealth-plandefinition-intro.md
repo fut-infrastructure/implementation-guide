@@ -18,7 +18,7 @@ These principles are valid for PlanDefinitions, ActivityDefinitions, and Questio
 * Each plan has a version and a status
 * While a plan version is being worked on it shall be in status: *draft*
 * When a plan version is approved it changes status to *active* and is now ready to be used by CarePlans or as a subplan in another plan.
-* A plan with status: *active* can be *retired*, but cannot otherwise change. Status *retired* means that new references to the plan cannot be created. Existing plans may still continue to use the retired version.
+* A plan with status: *active* can be *retired*, but cannot otherwise change, except for *ehealth-useContext*. Status *retired* means that new references to the plan cannot be created. Existing plans may still continue to use the retired version.
 * If a plan needs to be updated, a new version must be created with status: *draft*. The new version will be a separate resource with a new id and version, but the same name as the previous version.
 * References to plans in FHIR are always to a specific resource id. In practice this means that a reference will identify a specific (Name, Version) combination.
 * If a subplan is available in a new active version, that the parent plan wants to use, then a new version of the parent plan must be created and then the reference can be updated to the new subplan.
@@ -29,6 +29,16 @@ Example: A new ActivityDefinition should be added to an existing PlanDefinition.
 2. Bump the version to 2, change the status to *draft*, remove the id.
 3. Add a reference to the new ActivityDefinition in *action.definition*
 4. Call Create with the modified plan. This will create a new version of the plan in the database with the new ActivityDefinition added.
+
+#### Properties allowed to be changed in regard to the status
+
+* Draft
+  * No restriction
+* Active 
+  * Only *ehealth-useContext*
+  * *Status* can be changed to *retired*
+* Retired 
+  * Only *ehealth-useContext*
 
 ### Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
@@ -67,6 +77,8 @@ It is possible to specify timing for each action in the `action.timing[x]` eleme
 ### UseContext
 The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
 in the ValueSet described for useContext.code.
+
+The `useContext` element can be updated at any time, regardless of the status of the PlanDefinition.
 
 ### ApprovalDate
 The date when the PlanDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.
