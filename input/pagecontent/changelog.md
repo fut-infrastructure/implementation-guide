@@ -36,6 +36,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extensions ehealth-media-thumbnail, ehealth-media-usage-mode, ehealth-media-related-to, ehealth-media-series-id to Media
 - Added invariant ehealth-media-usageMode-metadata-no-content to Media that ensures that content is not present when usageMode is metadata
 - Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
+- Added extension effectivePeriod to QuestionnaireResponse
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
