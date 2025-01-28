@@ -132,6 +132,28 @@
           "valueDateTime": "2020-02-03"
         }
       ]
+    },
+    {
+      "code": "measurement-invalidated",
+      "display": "Measurement has been deemed invalid",
+      "definition": "Measurement has been deemed invalid",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Måledata (måling, spørgeskemabesvarelse eller billede) er ugyldiggjort"
+        }
+      ]
+    },
+    {
+      "code": "measurement-invalidation-retracted",
+      "display": "Measurement invalidation has been retracted",
+      "definition": "Measurement invalidation has been retracted",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ugyldiggørelse af måledata (måling, spørgeskemabesvarelse eller billede) er trukket tilbage"
+        }
+      ]
     }
   ]
 }

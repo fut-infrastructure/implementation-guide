@@ -3,12 +3,12 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2024-10-28T10:26:12.434+00:00",
+  "date": "2025-01-27T09:09:20.575+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "measurement",
-    "version": "1.17.0"
+    "version": "1.20.0"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -33,7 +33,7 @@
         "code": "create"
       } ],
       "conditionalCreate": true,
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
       "searchParam": [ {
         "name": "_tag",
         "type": "token",
@@ -75,13 +75,19 @@
       "type": "Media",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-media",
       "interaction": [ {
+        "code": "update"
+      }, {
         "code": "search-type"
       }, {
         "code": "vread"
       }, {
         "code": "read"
+      }, {
+        "code": "patch"
       } ],
-      "searchRevInclude": [ "Provenance:target" ],
+      "conditionalUpdate": true,
+      "searchInclude": [ "Media:relatedTo" ],
+      "searchRevInclude": [ "Media:relatedTo", "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -90,6 +96,10 @@
         "name": "_filter",
         "type": "string",
         "documentation": "Search the contents of the resource's data using a filter"
+      }, {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
       }, {
         "name": "_tag",
         "type": "token",
@@ -119,6 +129,10 @@
         "type": "token",
         "documentation": "Quality type of the media"
       }, {
+        "name": "relatedTo",
+        "type": "reference",
+        "documentation": "Media related to"
+      }, {
         "name": "resolvedTimingEnd",
         "type": "date",
         "documentation": "Resolved Timing end"
@@ -135,6 +149,10 @@
         "type": "token",
         "documentation": "Resolved Timing type"
       }, {
+        "name": "series",
+        "type": "string",
+        "documentation": "Series ID"
+      }, {
         "name": "subject",
         "type": "reference",
         "documentation": "Who/What this Media is a record of"
@@ -142,6 +160,10 @@
         "name": "type",
         "type": "token",
         "documentation": "photo | video | audio"
+      }, {
+        "name": "usageMode",
+        "type": "token",
+        "documentation": "Usage mode"
       } ],
       "operation": [ {
         "name": "validate",
@@ -149,7 +171,7 @@
       }, {
         "name": "get-data",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-t-get-data",
-        "documentation": "The get-data operation returns a media resource matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid"
+        "documentation": "The get-data operation returns a media content matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Request header description\n- ehealth-thumbnail-size: The size of thumbnail to return instead of original content. If thumbnails are not supported for the media, the original content is returned\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid"
       } ]
     }, {
       "type": "Observation",
@@ -160,6 +182,8 @@
         "code": "vread"
       }, {
         "code": "read"
+      }, {
+        "code": "patch"
       } ],
       "searchRevInclude": [ "Provenance:target" ],
       "searchParam": [ {
@@ -246,7 +270,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
     }, {
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
@@ -258,7 +282,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "Provenance:target" ],
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",
@@ -300,6 +324,8 @@
       }, {
         "code": "read"
       }, {
+        "code": "patch"
+      }, {
         "code": "create"
       } ],
       "conditionalCreate": true,
@@ -325,6 +351,14 @@
         "name": "based-on",
         "type": "reference",
         "documentation": "Plan/proposal/order fulfilled by this questionnaire response"
+      }, {
+        "name": "effectivePeriodEnd",
+        "type": "date",
+        "documentation": "Effective Period end"
+      }, {
+        "name": "effectivePeriodStart",
+        "type": "date",
+        "documentation": "Effective Period start"
       }, {
         "name": "episodeOfCare",
         "type": "reference",
@@ -395,7 +429,7 @@
     }, {
       "name": "submit-measurement",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-submit-measurement",
-      "documentation": "The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\nAll resources in the Bundle as well as the created Provenance will receive any missing system tags (ehealth-system CodeSystem) provided by the referenced EpisodeOfCare.\nThe request will be denied if any resource in the Bundle contains a system tag, which is not present on the referenced EpisodeOfCare\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction."
+      "documentation": "The submit-measurement operation provides a single measurement in the form of a Bundle of Observation, QuestionnaireResponse and Media for storage and, subsequently, further processing in the eHealth Infrastructure. A Provenance resource is implicitly created by the infrastructure referencing input Bundle resources as target, thereby relating the resources that were submitted. \n\nMedia resource inline content in `content.data` will be stored outside the resource, and the `content.url` for retrieval is set on the resource. Image content is anonymized by removing sensitive metadate before storage. Image content is processed to generate thumbnail representations in the thumbnail element. \n\n\n### Parameter description\nmeasurement: Bundle containing:\n- 0..* Observation (ehealth-observation profile)\n- 0..* QuestionnaireResponse (ehealth-questionnaireresponse profile)\n- 0..* Media (ehealth-media profile)\n- 0..* Provenance (ehealth-provenance profile). Each Provenance (which is intended for capturing reuse of measurement(s) – as described in the eHealth Observation profile introduction) must refer to other resources in the Bundle as target in the format \"urn:oid:<the oid>\" or \"urn:uuid:<the uuid>.\".\n\nAll resources in the Bundle must refer to the same Patient and EpisodeOfCare.\nAll measurement resources in the Bundle must have status either `completed` or `final` (`completed` in case of Media/QuestionnaireResponse and `final` in case of Observation).\nAll resources in the Bundle as well as the created Provenance will receive any missing system tags (ehealth-system CodeSystem) provided by the referenced EpisodeOfCare.\nThe request will be denied if any resource in the Bundle contains a system tag, which is not present on the referenced EpisodeOfCare\n\n\n### Output description\nThe returned Bundle contains references to the stored input resources where the id has been substituted.\n\neHealth infrastructure will substitute the id when saving the resources in a single transaction."
     }, {
       "name": "perform-reindexing-pass",
       "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
