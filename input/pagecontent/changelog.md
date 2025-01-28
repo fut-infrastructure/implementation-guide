@@ -7,7 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
 ### Custom operations
 - Updated $get-patient-procedures to return information regarding invalidated measurements.
-- Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are COMPLETED for Media/QuestionnaireResponse and FINAL for Observation.
+- Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are `completed` for Media/QuestionnaireResponse and `final` for Observation.
 - Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
 #### Instance operations
