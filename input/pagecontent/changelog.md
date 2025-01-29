@@ -5,13 +5,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
-- Changed cardinality for ehealth-servicerequest performer to 0..*
-- Added ehealth-careteam reference to ehealth-servicerequest performer.
-- Changed useContext cardinality for ehealth-actionguidance and ehealth-view to 0..*
-- Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
-- Added Governance principles section to ehealth-actionguidance and ehealth-view.
-- Changed Governance principles section to ehealth-plandefinition.
 ### Custom operations
+- Updated $get-patient-procedures to return information regarding invalidated measurements.
+- Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are `completed` for Media/QuestionnaireResponse and `final` for Observation.
+- Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
 #### Instance operations
 ### Code systems
@@ -21,6 +18,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/cs/thumbnail-status
 - Added codes cm, cm2, cm3 to http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement
 - Added code ZZ7011 to urn:oid:1.2.208.176.2.4 (SKS)
+- Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes
+- Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes
 - Added http://ehealth.sundhed.dk/cs/ehealth-program
 ### ValueSets
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
@@ -33,7 +32,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/thumbnail-status
 - Added codes ZZ7011, 446080005 to http://ehealth.sundhed.dk/vs/activitydefinition-code
 - Added codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 (wound size panel) to http://ehealth.sundhed.dk/vs/observation-codes
-- Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
+- Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
+- Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-program
 - Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
 ### ConceptMaps
@@ -47,6 +47,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added invariant ehealth-media-usageMode-metadata-no-content to Media that ensures that content is not present when usageMode is metadata
 - Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
 - Added extension effectivePeriod to QuestionnaireResponse
+- Added extension ehealth-clinicalimpression-assessor-other to ClinicalImpression
 - Updated IG intro for ehealth-activitydefinition to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-plandefinition to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-questionnaire to describe the correct ValueSet for UsageContextType (useContext.code).
@@ -59,6 +60,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated IG intro for ehealth-questionnaire to state that UsageContext has no update restrictions.
 - Updated IG intro for ehealth-plandefinition to state that UsageContext has no update restrictions.
 - Updated IG intro for ehealth-activitydefinition to state that UsageContext has no update restrictions.
+- Changed useContext cardinality for ehealth-actionguidance and ehealth-view to 0..*
+- Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
+- Added Governance principles section to ehealth-actionguidance and ehealth-view.
+- Changed Governance principles section to ehealth-plandefinition.
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
