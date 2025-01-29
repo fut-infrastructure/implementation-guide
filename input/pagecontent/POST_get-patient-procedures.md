@@ -249,6 +249,10 @@ __Response__
               {
                 "name": "OccurrencesRequested",
                 "valueInteger": 1
+              },
+              {
+                "name": "TotalInvalidated",
+                "valueInteger": 1
               }
             ]
           }
