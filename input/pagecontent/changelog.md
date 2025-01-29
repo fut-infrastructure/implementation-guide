@@ -47,8 +47,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
 - Added extension effectivePeriod to QuestionnaireResponse
 - Added extension ehealth-clinicalimpression-assessor-other to ClinicalImpression
-- Added ehealth-shareable-documentreference profile
-- Added extension ehealth-document-sharing-state to ehealth-shareable-documentreference
+- Added ehealth-transformation-documentreference profile
+- Added extension ehealth-document-sharing-state to ehealth-transformation-documentreference
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
