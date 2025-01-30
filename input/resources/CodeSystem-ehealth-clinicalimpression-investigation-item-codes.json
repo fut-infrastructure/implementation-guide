@@ -33,6 +33,17 @@
           "value": "Undersøgelseselement"
         }
       ]
+    },
+    {
+      "code": "item-modified",
+      "display": "Item modified",
+      "definition": "Item modified",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Modificeret element"
+        }
+      ]
     }
   ]
 }

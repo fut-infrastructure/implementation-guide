@@ -21,6 +21,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code ZZ7011 to urn:oid:1.2.208.176.2.4 (SKS)
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes
+- Added code item-modified to http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes
 ### ValueSets
 - Added ValueSet http://ehealth.sundhed.dk/vs/document-sharing-state
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
@@ -35,6 +36,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 (wound size panel) to http://ehealth.sundhed.dk/vs/observation-codes
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes
+- Added code item-modified to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 ### ConceptMaps
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3, ZZ7011, 446080005 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type,http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum, http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
