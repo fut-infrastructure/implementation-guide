@@ -402,7 +402,7 @@
     },
     {
       "source": "http://snomed.info/sct",
-      "display": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "445988008",
@@ -458,7 +458,13 @@
               "equivalence": "relatedto"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "source": "http://loinc.org",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "element": [
         {
           "code": "72287-6",
           "display": "Wound size panel",

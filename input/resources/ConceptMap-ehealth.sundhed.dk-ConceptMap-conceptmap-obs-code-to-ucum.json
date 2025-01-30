@@ -6,7 +6,7 @@
   "name": "conceptmap-obs-code-to-ucum",
   "title": "Observation code to UCUM mapping",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2020-08-31T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "source": "http://snomed.info/sct",
+      "source": "http://loinc.org",
       "target": "http://unitsofmeasure.org",
       "element": [
         {

@@ -6,7 +6,7 @@
   "name": "MediaUsageMode",
   "title": "Media Usage Mode",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2024-10-28T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
