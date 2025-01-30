@@ -6,7 +6,7 @@
   "name": "conceptmap-ucum-to-printsymbol",
   "title": "UCUM code to PrintSymbol mapping",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2020-08-31T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
