@@ -20,6 +20,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code ZZ7011 to urn:oid:1.2.208.176.2.4 (SKS)
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes
+- Added http://ehealth.sundhed.dk/cs/ehealth-program
 ### ValueSets
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 - Added http://ehealth.sundhed.dk/vs/body-site
@@ -34,6 +35,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 (wound size panel) to http://ehealth.sundhed.dk/vs/observation-codes
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes
+- Added http://ehealth.sundhed.dk/vs/ehealth-program
+- Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
 ### ConceptMaps
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3, ZZ7011, 446080005 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type,http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum, http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
@@ -46,6 +49,22 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
 - Added extension effectivePeriod to QuestionnaireResponse
 - Added extension ehealth-clinicalimpression-assessor-other to ClinicalImpression
+- Updated IG intro for ehealth-activitydefinition to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-plandefinition to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-questionnaire to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-careteam to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-actionguidance to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-view to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-documentreference to describe the correct ValueSet for UsageContextType (useContext.code).
+- Updated IG intro for ehealth-actionguidance to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-view to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-questionnaire to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-plandefinition to state that UsageContext has no update restrictions.
+- Updated IG intro for ehealth-activitydefinition to state that UsageContext has no update restrictions.
+- Changed useContext cardinality for ehealth-actionguidance and ehealth-view to 0..*
+- Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
+- Added Governance principles section to ehealth-actionguidance and ehealth-view.
+- Changed Governance principles section to ehealth-plandefinition.
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
