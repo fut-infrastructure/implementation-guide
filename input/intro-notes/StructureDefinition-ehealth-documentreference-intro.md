@@ -13,6 +13,14 @@ In scope of the eHealth infrastructure the primary use of the DocumentReference 
 
 See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
 
+The eHealth profile of DocumentReference has the following extensions:
+* `ehealth-manuallydeprecated-type`
+* `ehealth-useContext` which defines the context that the content is intended to support
+
+### UseContext
+The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
+in the ValueSet described for useContext.code.
+
 ### Document sharing states 
 For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
 

@@ -28,7 +28,8 @@
       },
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/observation-codes"
+          "http://ehealth.sundhed.dk/vs/observation-codes",
+          "http://ehealth.sundhed.dk/vs/media-codes"
         ]
       },
       {
@@ -55,10 +56,6 @@
           {
             "code": "409073007",
             "display": "Instruction"
-          },
-          {
-            "code": "446080005",
-            "display": "Photography of wound"
           }
         ]
       },
@@ -72,10 +69,6 @@
           {
             "code": "ALCA03",
             "display": "virtuel kontakt"
-          },
-          {
-            "code": "ZZ7011",
-            "display": "Klinisk foto"
           }
         ]
       }

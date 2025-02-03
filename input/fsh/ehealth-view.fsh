@@ -9,7 +9,7 @@ Parent: Basic
 * extension contains ehealth-version named version 0..1
 * extension contains ehealth-description named description 0..1
 * extension contains ehealth-purpose named purpose 0..1
-* extension contains ehealth-useContext named useContext 0..1
+* extension contains ehealth-useContext named useContext 0..*
 * extension contains ehealth-status named status 1..1
 * extension contains ehealth-content named content 1..1
 * extension contains ehealth-view-type named type 1..1

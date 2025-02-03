@@ -20,3 +20,4 @@ Parent: CareTeam
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 * telecom.value 1..1
+* extension contains ehealth-useContext named useContext 0..*

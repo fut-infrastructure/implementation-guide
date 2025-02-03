@@ -6,7 +6,7 @@
   "name": "ThumbnailSizeCategory",
   "title": "Thumbnail Size Category",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2024-10-28T10:02:00+02:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
