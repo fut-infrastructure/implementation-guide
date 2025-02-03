@@ -12,6 +12,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added http://ehealth.sundhed.dk/cs/media-usage-mode
 - Added http://ehealth.sundhed.dk/cs/observation-method
 - Added http://ehealth.sundhed.dk/cs/thumbnail-size-category 
@@ -20,8 +21,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code ZZ7011 to urn:oid:1.2.208.176.2.4 (SKS)
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes
+- Added code item-modified to http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/cs/ehealth-program
 ### ValueSets
+- Added ValueSet http://ehealth.sundhed.dk/vs/document-sharing-state
 - Added ALAL03 code from SKS CodeSystem (urn-oid-1.2.208.176.2.4) to ehealth-conditions ValueSet
 - Added http://ehealth.sundhed.dk/vs/body-site
 - Added http://ehealth.sundhed.dk/vs/media-codes
@@ -35,6 +38,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 (wound size panel) to http://ehealth.sundhed.dk/vs/observation-codes
 - Added codes measurement-invalidated and measurement-invalidation-retracted to http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
 - Added codes invalidated-fulfills and invalidated-is-not-fulfillment to http://ehealth.sundhed.dk/vs/clinicalimpression-decision-codes
+- Added code item-modified to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-program
 - Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
 ### ConceptMaps
@@ -49,6 +53,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added a new profile, ehealth-observation-wound-dimensions, for Observation to support wound assessment and measurements
 - Added extension effectivePeriod to QuestionnaireResponse
 - Added extension ehealth-clinicalimpression-assessor-other to ClinicalImpression
+- Added ehealth-transformation-documentreference profile
+- Added extension ehealth-document-sharing-state to ehealth-transformation-documentreference
 - Updated IG intro for ehealth-activitydefinition to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-plandefinition to describe the correct ValueSet for UsageContextType (useContext.code).
 - Updated IG intro for ehealth-questionnaire to describe the correct ValueSet for UsageContextType (useContext.code).
