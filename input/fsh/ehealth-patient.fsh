@@ -39,7 +39,7 @@ Parent: DkCorePatient
 
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
 * generalPractitioner 0..1
-* generalPractitioner only Reference(Practitioner)
+* generalPractitioner only Reference(Organization)
 * generalPractitioner ^type.aggregation = #referenced
 
 Extension: ehealth-itcompetencelevel
