@@ -38,6 +38,7 @@ Parent: DkCorePatient
 * contact.address.extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
 
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
+* generalPractitioner 0..1
 * generalPractitioner only Reference(Practitioner)
 * generalPractitioner ^type.aggregation = #referenced
 
