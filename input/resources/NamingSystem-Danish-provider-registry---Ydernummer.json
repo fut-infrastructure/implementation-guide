@@ -1,0 +1,35 @@
+{
+    "resourceType": "NamingSystem",
+    "id": "ydernummer",
+    "name": "Ydernummer",
+    "status": "active",
+    "kind": "identifier",
+    "date": "1968-04-02T00:00:00+00:00",
+    "publisher": "Sundhedsdatastyrelsen", 
+    "contact": [
+        {
+            "name": "Mikkel Wermer Steen"
+        }
+    ],
+    "responsible": "Sundhedsdatastyrelsen",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                "code": "PRN",
+                "display": "Provider Number"
+            }
+        ]
+    },
+    "description": "The Danish Provider Identifier (\"ydernummer\") is assigned to every provider of services covered by public healthcare, e.g. general practitioners, specialist doctors, dentists, physiotherapists, psychologists etc. Note that this number is not an identifier for a specific person, but the clinic. If a service is provided by a clinic with multiple providers, it is not possible to identify which provider provided the service.",
+    "uniqueId": [
+        {
+            "type": "oid",
+            "value": "1.2.208.176.1.4"
+        },
+        {
+            "type": "uri",
+            "value": "urn:oid:1.2.208.176.1.4"
+        }
+    ]
+}
