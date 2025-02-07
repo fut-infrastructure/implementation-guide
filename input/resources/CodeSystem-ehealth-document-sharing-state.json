@@ -1,0 +1,122 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "document-sharing-state",
+  "url": "http://ehealth.sundhed.dk/cs/document-sharing-state",
+  "version": "0.0.1",
+  "name": "DocumentSharingState",
+  "title": "Document Sharing State",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-12T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Sharing State",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "invalidated",
+      "display": "invalidated",
+      "definition": "invalidated"
+    },
+    {
+      "code": "invalidation-retracted",
+      "display": "invalidation-retracted",
+      "definition": "invalidation-retracted"
+    },
+    {
+      "code": "shared",
+      "display": "shared",
+      "definition": "shared"
+    },
+    {
+      "code": "being-shared",
+      "display": "being-shared",
+      "definition": "being-shared"
+    },
+    {
+      "code": "not-shared",
+      "display": "not-shared",
+      "definition": "not-shared"
+    },
+    {
+      "code": "prevented-shared",
+      "display": "prevented-shared",
+      "definition": "prevented-shared"
+    },
+    {
+      "code": "deprecated",
+      "display": "deprecated",
+      "definition": "deprecated"
+    },
+    {
+      "code": "manually-deprecated",
+      "display": "manually-deprecated",
+      "definition": "manually-deprecated"
+    },
+    {
+      "code": "facility-type-error",
+      "display": "facility-type-error",
+      "definition": "facility-type-error"
+    },
+    {
+      "code": "practice-setting-error",
+      "display": "practice-setting-error",
+      "definition": "practice-setting-error"
+    },
+    {
+      "code": "missing-sor-identification",
+      "display": "missing-sor-identification",
+      "definition": "missing-sor-identification"
+    },
+    {
+      "code": "sharing-target-unavailable",
+      "display": "sharing-target-unavailable",
+      "definition": "sharing-target-unavailable"
+    },
+    {
+      "code": "missing-qfdd-reference",
+      "display": "missing-qfdd-reference",
+      "definition": "missing-qfdd-reference"
+    },
+    {
+      "code": "contains-data-absent-reason",
+      "display": "contains-data-absent-reason",
+      "definition": "contains-data-absent-reason"
+    },
+    {
+      "code": "out-of-date-resource",
+      "display": "out-of-date-resource",
+      "definition": "out-of-date-resource"
+    },
+    {
+      "code": "no-idref-binding-in-document",
+      "display": "no-idref-binding-in-document",
+      "definition": "no-idref-binding-in-document"
+    },
+    {
+      "code": "general-transformation-failure",
+      "display": "general-transformation-failure",
+      "definition": "general-transformation-failure"
+    },
+    {
+      "code": "general-publication-failure",
+      "display": "general-publication-failure",
+      "definition": "general-publication-failure"
+    },
+    {
+      "code": "yielded-to-duplicate-document",
+      "display": "yielded-to-duplicate-document",
+      "definition": "yielded-to-duplicate-document"
+    }
+  ]
+}

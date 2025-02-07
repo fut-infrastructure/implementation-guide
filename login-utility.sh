@@ -51,7 +51,7 @@ login() {
 
   log_info "get authorization token on domain ${domain} for user ${username}"
   local response=$(
-    curl --location --location-trusted --write "\n%{json}" --request POST https://saml.${domain}/auth/realms/ehealth/protocol/openid-connect/token \
+    curl --location --location-trusted --write-out "\n%{json}" --request POST https://saml.${domain}/auth/realms/ehealth/protocol/openid-connect/token \
       --header "Content-Type: application/x-www-form-urlencoded" \
       --data-urlencode "grant_type=password" \
       --data-urlencode "client_id=systematic_admin" \
