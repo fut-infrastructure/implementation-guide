@@ -6,7 +6,7 @@
   "name": "conceptmap-obs-code-to-ucum",
   "title": "Observation code to UCUM mapping",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2020-08-31T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
@@ -263,6 +263,67 @@
               "display": "one per 30 seconds",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://loinc.org",
+      "target": "http://unitsofmeasure.org",
+      "element": [
+        {
+          "code": "39126-8",
+          "display": "Length of Wound",
+          "target": [
+            {
+              "code": "cm",
+              "display": "centimeter",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "39125-0",
+          "display": "Width of Wound",
+          "target": [
+            {
+              "code": "cm",
+              "display": "centimeter",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "39127-6",
+          "display": "Depth of Wound",
+          "target": [
+            {
+              "code": "cm",
+              "display": "centimeter",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "89260-4",
+          "display": "Area of wound",
+          "target": [
+            {
+              "code": "cm2",
+              "display": "square centimeter",
+              "equivalence": "specializes"
+            }
+          ]
+        },
+        {
+          "code": "94083-3",
+          "display": "Wound volume",
+          "target": [
+            {
+              "code": "cm3",
+              "display": "cubic centimeter",
+              "equivalence": "specializes"
             }
           ]
         }

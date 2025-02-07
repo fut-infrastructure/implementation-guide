@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-thumbnail-size-category",
+  "url": "http://ehealth.sundhed.dk/vs/thumbnail-size-category",
+  "version": "2021-10-22T13:25:25",
+  "name": "ThumbnailSizeCategory",
+  "title": "Thumbnail Size Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-28T10:02:00+02:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Thumbnail size is a value set with the available sizes of low resolution media representations.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/thumbnail-size-category"
+      }
+    ]
+  }
+}

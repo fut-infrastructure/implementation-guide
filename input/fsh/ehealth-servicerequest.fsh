@@ -19,8 +19,7 @@ Parent: ServiceRequest
 * code from http://ehealth.sundhed.dk/vs/activitydefinition-code
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
-* performer 0..1
-* performer only Reference(ehealth-practitioner or ehealth-organization or ehealth-patient or ehealth-device or ehealth-relatedperson or HealthcareService)
+* performer only Reference(ehealth-practitioner or ehealth-organization or ehealth-patient or ehealth-device or ehealth-relatedperson or ehealth-careteam or HealthcareService)
 * performer ^type.aggregation = #referenced
 * reasonReference only Reference(ehealth-condition or ehealth-observation)
 * reasonReference ^type.aggregation = #referenced

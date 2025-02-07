@@ -187,6 +187,35 @@
             "display": "Hjemmeblodtryksmåling udført af patienten"
           }
         ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "72287-6",
+            "display": "Wound size panel"
+          },
+          {
+            "code": "39126-8",
+            "display": "Length of Wound"
+          },
+          {
+            "code": "39125-0",
+            "display": "Width of Wound"
+          },
+          {
+            "code": "39127-6",
+            "display": "Depth of Wound"
+          },
+          {
+            "code": "89260-4",
+            "display": "Area of wound"
+          },
+          {
+            "code": "94083-3",
+            "display": "Wound volume"
+          }
+        ]
       }
     ]
   }
