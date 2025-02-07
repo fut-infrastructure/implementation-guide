@@ -6,12 +6,7 @@
     "kind": "identifier",
     "date": "1990-01-01T00:00:00+00:00",
     "publisher": "Sundhedsdatastyrelsen", 
-    "contact": [
-        {
-            "name": "Mikkel Wermer Steen"
-        }
-    ],
-    "responsible": "Sundhedsdatastyrelsen",
+    "responsible": "CPR-kontoret",
     "type": {
         "coding": [
             {
