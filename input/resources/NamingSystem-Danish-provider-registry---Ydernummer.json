@@ -4,7 +4,7 @@
     "name": "Ydernummer",
     "status": "active",
     "kind": "identifier",
-    "date": "1968-04-02T00:00:00+00:00",
+    "date": "1990-01-01T00:00:00+00:00",
     "publisher": "Sundhedsdatastyrelsen", 
     "contact": [
         {
@@ -21,7 +21,7 @@
             }
         ]
     },
-    "description": "The Danish Provider Identifier (\"ydernummer\") is assigned to every provider of services covered by public healthcare, e.g. general practitioners, specialist doctors, dentists, physiotherapists, psychologists etc. Note that this number is not an identifier for a specific person, but the clinic. If a service is provided by a clinic with multiple providers, it is not possible to identify which provider provided the service.",
+    "description": "The Danish Health Authority and Danish Regions can identify doctors' names etc. via the provider number (\"ydernummer\"). The different groups of doctors (general practitioners, ear specialists, eye specialists, etc.) have their own provider number range. Multiple doctors in the same practice will often have the same provider number. Only doctors without a provider number use the special out-of-hours doctor numbers.Provider numbers can change over time. A provider number may be assigned to a doctor who quits or retires, after which the provider number becomes available and can later be assigned to another doctor.",
     "uniqueId": [
         {
             "type": "oid",
