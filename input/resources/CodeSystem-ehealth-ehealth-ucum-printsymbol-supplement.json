@@ -74,6 +74,36 @@
       ]
     },
     {
+      "code" : "cm",
+      "display" : "centimeter",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "cm"
+        }
+      ]
+    },
+    {
+      "code" : "cm2",
+      "display" : "square centimeter",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "cm²"
+        }
+      ]
+    },
+    {
+      "code" : "cm3",
+      "display" : "cubic centimeter",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "cm³"
+        }
+      ]
+    },
+    {
       "code" : "L",
       "display" : "liter",
       "designation" : [

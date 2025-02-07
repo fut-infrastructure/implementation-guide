@@ -15,6 +15,19 @@ The profile is based on the native FHIR Basic resource and adds the following ex
 * `ehealth-intendedAudience` Can be set to one or more Organizations to indicate for which Organization(s) this action guidance is intended to be used by. This is meant for filtering and is not enforced or in any way restricting which Organization has access.
 * `ehealth-actionguidance-type` Type of action guidance.
 * `ehealth-actionguidance-for` A reference to a resource for which this action guidance applies.
+* `ehealth-modifier-role`
+* `ehealth-status`
+
+### Governance principles
+
+#### Properties allowed to be changed in regard to the status
+
+* Draft
+  * No restriction
+* Active
+  * *ehealth-recommendation*, *ehealth-intendedAudience*, *ehealth-useContext*, *ehealth-modifier-role* and *ehealth-status*
+* Retired
+  * *ehealth-recommendation*, *ehealth-intendedAudience*, *ehealth-useContext*, *ehealth-modifier-role* and *ehealth-status*
 
 ## Update restrictions
 The element `ehealth-modifier-role` specifies one or more Organization and each Organization's role in maintaining
@@ -26,8 +39,14 @@ the Action guidance:
 * `ehealth-modifier-role.role` set to `co-author` means that the referenced Organization can update the resource
   but not alter the element `ehealth-modifier-role`.
 
+During an update operation, when the ActionGuidance has a status of `active` or `retired`, only the following elements are permitted to be modified: `ehealth-recommendation`, `ehealth-intendedAudience`, `ehealth-useContext`, `ehealth-modifier-role` and `ehealth-status`.
+
 ## Lifecycle
 The status field,`ehealth-status`, will express the lifecycle of the resource. Changes follow this pattern.
   - When created it will have status `draft`.
   - From status `draft` can change to either `active` or `retired`.
   - From status `active` can only change to `retired`.
+
+### UseContext
+The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
+in the ValueSet described for useContext.code.

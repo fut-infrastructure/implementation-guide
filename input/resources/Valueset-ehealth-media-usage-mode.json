@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-media-usage-mode",
+  "url": "http://ehealth.sundhed.dk/vs/media-usage-mode",
+  "version": "0.6.0",
+  "name": "MediaUsageMode",
+  "title": "Media Usage Mode",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-28T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Media Usage Mode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/media-usage-mode"
+      }
+    ]
+  }
+}

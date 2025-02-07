@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-media-usage-mode",
+  "url": "http://ehealth.sundhed.dk/cs/media-usage-mode",
+  "version": "0.6.0",
+  "name": "mediaUsageMode",
+  "title": "Media usage mode",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-28T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies the what the media resource is used for.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [{
+    "code": "raw",
+    "display": "Raw",
+    "definition": "Raw",
+    "designation": [{
+      "language": "da",
+      "value": "Original"
+    }
+    ]
+  }, {
+    "code": "overlay",
+    "display": "Overlay",
+    "definition": "Overlay",
+    "designation": [{
+      "language": "da",
+      "value": "Overlay"
+    }
+    ]
+  }, {
+    "code": "metadata",
+    "display": "Metadata",
+    "definition": "Metadata",
+    "designation": [{
+      "language": "da",
+      "value": "Metadata"
+    }
+    ]
+  }
+  ]
+}

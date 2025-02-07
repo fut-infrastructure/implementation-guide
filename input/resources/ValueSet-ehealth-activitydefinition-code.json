@@ -28,7 +28,8 @@
       },
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/observation-codes"
+          "http://ehealth.sundhed.dk/vs/observation-codes",
+          "http://ehealth.sundhed.dk/vs/media-codes"
         ]
       },
       {
