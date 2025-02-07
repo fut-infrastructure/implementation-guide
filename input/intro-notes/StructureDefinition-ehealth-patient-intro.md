@@ -71,4 +71,4 @@ The period of the name and address protection is expressed in an extention with 
 
 # Resolving general practitioner
 
-When creating and updating a patient, the infrastructure retrieves information on the patients general practitioner from the provider registry (Yderregister: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/yderregisteret). This is added to the patient resource as a logical reference (http://hl7.org/fhir/R4/references.html#logical) containing the provider identifier (ydernummer).
+When creating and updating a patient, the infrastructure retrieves information on the patient's general practitioner from the provider registry (Yderregister: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/yderregisteret). This is added to the patient resource as a logical reference (http://hl7.org/fhir/R4/references.html#logical) containing the provider identifier (ydernummer).
