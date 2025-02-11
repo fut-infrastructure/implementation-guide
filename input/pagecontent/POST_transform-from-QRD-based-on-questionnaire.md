@@ -22,14 +22,14 @@ __Body__:
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://document-transformation.cit-document-transformation-2776.local/fhir/DocumentReference/10063",
+            "fullUrl": "https://document-transformation.cit-document-transformation-2929.local/fhir/TransformationDocumentReference/9577",
             "resource": {
               "resourceType": "DocumentReference",
-              "id": "10063",
+              "id": "9577",
               "meta": {
                 "versionId": "1",
                 "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-transformation-documentreference"
                 ]
               },
               "status": "current",
@@ -41,7 +41,7 @@ __Body__:
                   }
                 ]
               },
-              "date": "2024-10-26T16:05:01.155+00:00",
+              "date": "2025-02-05T12:13:46.533+00:00",
               "content": [
                 {
                   "attachment": {
@@ -53,10 +53,10 @@ __Body__:
             }
           },
           {
-            "fullUrl": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/17936",
+            "fullUrl": "https://questionnaire.cit-document-transformation-2929.local/fhir/Questionnaire/10793",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "17936",
+              "id": "10793",
               "meta": {
                 "versionId": "1",
                 "profile": [
@@ -90,7 +90,7 @@ __Body__:
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "https://organization.cit-document-transformation-2776.local/fhir/Organization/29196"
+                        "reference": "https://organization.cit-document-transformation-2929.local/fhir/Organization/78949"
                       }
                     },
                     {
@@ -114,7 +114,7 @@ __Body__:
                 }
               ],
               "version": "1.0",
-              "name": "659c73d9-3b86-4da9-86d1-e9832c83ab42",
+              "name": "e749967a-fcbe-4261-a6a0-99edc1e0e8ad",
               "status": "active",
               "item": [
                 {
@@ -784,7 +784,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "9d34a53a-676d-4cc1-b6c1-fcad49feecfe",
+        "id": "48708ce0-c1c7-4132-84e6-6dae165b04ed",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -878,19 +878,35 @@ __Response__
             ]
           },
           {
-            "resourceType": "Practitioner",
+            "resourceType": "Patient",
             "id": "3",
-            "meta": {
-              "profile": [
-                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-              ]
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Tjørn <b>SIMONSEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2910534703</td></tr><tr><td>Address</td><td><span>Forskerparken 10 </span><br/><span>Odense </span><span>Danmark </span></td></tr></tbody></table></div>"
             },
+            "identifier": [
+              {
+                "system": "urn:oid:1.2.208.176.1.2",
+                "value": "2910534703"
+              }
+            ],
             "name": [
               {
                 "family": "Simonsen",
                 "given": [
                   "Tjørn"
                 ]
+              }
+            ],
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "Forskerparken 10"
+                ],
+                "city": "Odense",
+                "postalCode": "5230",
+                "country": "Danmark"
               }
             ]
           },
@@ -973,7 +989,8 @@ __Response__
         "date": "2023-10-25T08:00:00+00:00",
         "author": [
           {
-            "reference": "#3"
+            "reference": "#3",
+            "type": "Patient"
           }
         ],
         "title": "QFDD til test af alle spørgemål varianter",
@@ -999,9 +1016,127 @@ __Response__
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
           ]
         },
-        "questionnaire": "https://questionnaire.cit-document-transformation-2776.local/fhir/Questionnaire/17936",
+        "contained": [
+          {
+            "resourceType": "Patient",
+            "id": "2",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Tjørn <b>SIMONSEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2910534703</td></tr><tr><td>Address</td><td><span>Forskerparken 10 </span><br/><span>Odense </span><span>Danmark </span></td></tr><tr><td>Date of birth</td><td><span>29 October 1953</span></td></tr></tbody></table></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:1.2.208.176.1.2",
+                "value": "2910534703"
+              }
+            ],
+            "name": [
+              {
+                "family": "Simonsen",
+                "given": [
+                  "Tjørn"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1953-10-29",
+            "address": [
+              {
+                "use": "home",
+                "line": [
+                  "Forskerparken 10"
+                ],
+                "city": "Odense",
+                "postalCode": "5230",
+                "country": "Danmark"
+              }
+            ]
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "3",
+            "meta": {
+              "profile": [
+                "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+              ]
+            },
+            "name": [
+              {
+                "family": "Personsen",
+                "given": [
+                  "Test"
+                ]
+              }
+            ],
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "Forskerparken 10"
+                ],
+                "city": "Odense",
+                "postalCode": "5230",
+                "country": "Danmark"
+              }
+            ]
+          },
+          {
+            "resourceType": "Patient",
+            "id": "4",
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Tjørn <b>SIMONSEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>2910534703</td></tr><tr><td>Address</td><td><span>Forskerparken 10 </span><br/><span>Odense </span><span>Danmark </span></td></tr></tbody></table></div>"
+            },
+            "identifier": [
+              {
+                "system": "urn:oid:1.2.208.176.1.2",
+                "value": "2910534703"
+              }
+            ],
+            "name": [
+              {
+                "family": "Simonsen",
+                "given": [
+                  "Tjørn"
+                ]
+              }
+            ],
+            "address": [
+              {
+                "use": "work",
+                "line": [
+                  "Forskerparken 10"
+                ],
+                "city": "Odense",
+                "postalCode": "5230",
+                "country": "Danmark"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-effectivePeriod",
+            "valuePeriod": {
+              "start": "2023-10-25T07:15:00+00:00",
+              "end": "2023-10-25T08:00:00+00:00"
+            }
+          }
+        ],
+        "questionnaire": "https://questionnaire.cit-document-transformation-2929.local/fhir/Questionnaire/10793",
         "status": "completed",
+        "subject": {
+          "reference": "#2"
+        },
         "authored": "2023-10-25T08:00:00+00:00",
+        "author": {
+          "reference": "#3",
+          "type": "Practitioner"
+        },
+        "source": {
+          "reference": "#4",
+          "type": "Patient"
+        },
         "item": [
           {
             "linkId": "7e51dfb6-ad5b-495f-af19-7c5a6fb69756",

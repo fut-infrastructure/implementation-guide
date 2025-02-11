@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOTc0MjJmZWMtZDlhOC00NGUyLTk0OGYtMzAxOWExMmIxMjQzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWRldmljZXMiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCJCaW5hcnkucmVhZCJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTExMjkubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vOTM5OCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjNlZjcxYTktN2VhNC00N2MxLTg0YmYtNWNmNjdiMDYxNzEzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1wYXRpZW50LWRldmljZXMiLCJyZXBvcnQtbm9uLWFub255bWl6ZWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,14 +22,7 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1129.local/fhir/Organization/9398"
-      }
-    },
-    {
-      "name": "period",
-      "valuePeriod": {
-        "start": "2024-07-29T09:08:26+00:00",
-        "end": "2024-07-29T09:08:26+00:00"
+        "reference": "https://organization.cit-reporting-1182.local/fhir/Organization/35476"
       }
     }
   ]
@@ -40,11 +33,11 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "11",
+  "id": "36",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:08:27.931+00:00",
-    "source": "#85c07c4f-1c3b-4e50-868d-e0e5159ad3eb",
+    "lastUpdated": "2025-02-04T14:17:52.491+00:00",
+    "source": "#776cc693-1eab-4850-98eb-cbe3ff711312",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -52,7 +45,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "97422fec-d9a8-44e2-948f-3019a12b1243"
+      "value": "b3ef71a9-7ea4-47c1-84bf-5cf67b061713"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

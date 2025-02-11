@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCIkZGVwcmVjYXRlLWRvY3VtZW50IiwiRG9jdW1lbnRSZWZlcmVuY2UuZGVsZXRlIiwiRG9jdW1lbnRSZWZlcmVuY2Uuc2VhcmNoIiwiRG9jdW1lbnRSZWZlcmVuY2UucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJGRlcHJlY2F0ZS1kb2N1bWVudCIsIkRvY3VtZW50UmVmZXJlbmNlLnNlYXJjaCIsIkRvY3VtZW50UmVmZXJlbmNlLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -17,11 +17,11 @@ __Body__:
   "parameter": [
     {
       "name": "documentId",
-      "valueString": "urn:oid:1.2.208.184|524501d7-e2d1-43bc-9d76-020c1919f0da"
+      "valueString": "urn:oid:1.2.208.184|74f3ab29-ffe4-46df-97be-c14297d02244"
     },
     {
       "name": "cpr",
-      "valueString": "0101011232"
+      "valueString": "0123456789"
     }
   ]
 }

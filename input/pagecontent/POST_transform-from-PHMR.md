@@ -21,7 +21,7 @@ __Body__:
         "resourceType": "DocumentReference",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-transformation-documentreference"
           ]
         },
         "status": "current",
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-07-29T08:33:01.470+00:00",
+        "date": "2025-02-05T11:57:10.800+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "30937f43-4168-4fea-a7cb-1e991e8d3b2c",
+        "id": "8fbffd0e-ce1f-4a86-b762-485e60802089",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
@@ -303,7 +303,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "d264d3a6-d758-4041-96ef-0fe2b87e9713",
+        "id": "071eede7-557a-4b84-bc04-f96cf8f27bf8",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -420,7 +420,7 @@ __Response__
             "system": "urn:oid:1.2.208.184",
             "value": "4eea5cb0-2e67-11e6-bdf4-0800200c9a66",
             "assigner": {
-              "reference": "https://document-transformation.cit-document-transformation-2592.local/fhir/Organization/76725"
+              "reference": "https://document-transformation.cit-document-transformation-2929.local/fhir/Organization/94079"
             }
           }
         ],
@@ -455,7 +455,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "58983381-ffdb-4f7f-8b3a-88e6fa96a3f8",
+        "id": "41dd0d60-2c1d-43d4-9d96-b4ee8fa3a108",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
@@ -572,7 +572,7 @@ __Response__
             "system": "urn:oid:1.2.208.184",
             "value": "4eea5cb1-2e67-11e6-bdf4-0800200c9a66",
             "assigner": {
-              "reference": "https://document-transformation.cit-document-transformation-2592.local/fhir/Organization/76725"
+              "reference": "https://document-transformation.cit-document-transformation-2929.local/fhir/Organization/94079"
             }
           }
         ],
@@ -607,7 +607,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "87ae629e-caf8-49a5-82b5-7f96d33018e3",
+        "id": "ab465ec2-ab66-4fc8-acc1-1bceeab83024",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"

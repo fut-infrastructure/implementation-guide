@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZGQzOTAzOGMtMzI1Ny00ZGQxLThkNTEtY2FmMTIxZjFjODBkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy0xMTI5LmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzIxODgiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODExNjgxZjctZjlhYi00MWI1LTk3NjMtZjM2YjQ1ZDliYWU5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRmZXRjaC1zc2wtb3JkZXJzIiwicmVwb3J0LW5vbi1hbm9ueW1pemVkIiwiQmluYXJ5LnJlYWQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXJlcG9ydGluZy0xMTgyLmxvY2FsL2ZoaXIvT3JnYW5pemF0aW9uLzQzNjciLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -22,20 +22,20 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1129.local/fhir/Organization/2188"
+        "reference": "https://organization.cit-reporting-1182.local/fhir/Organization/4367"
       }
     },
     {
       "name": "seller",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1129.local/fhir/Organization/18329"
+        "reference": "https://organization.cit-reporting-1182.local/fhir/Organization/6833"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2024-07-29T09:07:55+00:00",
-        "end": "2024-07-29T09:07:55+00:00"
+        "start": "2025-02-04T14:15:35+00:00",
+        "end": "2025-02-04T14:15:35+00:00"
       }
     }
   ]
@@ -46,11 +46,11 @@ __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "6",
+  "id": "9",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:07:57.039+00:00",
-    "source": "#4a5f993d-8d29-4093-a360-8d2b53aba08e",
+    "lastUpdated": "2025-02-04T14:15:36.924+00:00",
+    "source": "#3277e37c-75c9-4af3-89d8-d648209d7683",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -58,7 +58,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "dd39038c-3257-4dd1-8d51-caf121f1c80d"
+      "value": "811681f7-f9ab-41b5-9763-f36b45d9bae9"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="
