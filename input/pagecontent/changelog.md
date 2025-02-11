@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased changes
+## 3.4.0 (2025-02-19)
 
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
