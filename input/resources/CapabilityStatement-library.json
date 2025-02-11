@@ -3,12 +3,12 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2024-10-28T02:22:52.562+00:00",
+  "date": "2025-02-06T09:22:35.322+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.10.0"
+    "version": "1.13.0"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -158,19 +158,13 @@
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Library:composed-of", "Library:depends-on", "Library:derived-from", "Library:predecessor", "Library:successor" ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
       "name": "migrate",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -178,9 +172,6 @@
       "name": "get-resource-counts",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }
