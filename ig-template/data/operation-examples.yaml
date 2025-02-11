@@ -80,6 +80,9 @@
 - profile: system
   path: POST_PlanDefinition_apply.html
 
+- profile: system
+  path: POST_ClinicalImpression_set-measurement-validity.html
+
 # system reporting
 
 - profile: system
