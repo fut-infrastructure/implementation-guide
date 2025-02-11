@@ -1,4 +1,4 @@
-`GET [base]/ServiceRequest/3024/_history/2`
+`GET [base]/ServiceRequest/2035/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "3024",
+  "id": "2035",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-10-26T17:14:54.211+00:00",
-    "source": "#79faf04b-9bf9-48",
+    "lastUpdated": "2025-02-04T15:20:39.110+00:00",
+    "source": "#4eaf7b8b-9655-42",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/3023"
+        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/2034"
       }
     },
     {
@@ -59,7 +59,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-10-26T17:14:52+00:00"
+            "start": "2025-02-04T15:20:38+00:00"
           }
         }
       ]
@@ -73,7 +73,7 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-10-26T17:14:52+00:00"
+          "valueDateTime": "2025-02-04T15:20:38+00:00"
         }
       ]
     },
@@ -86,7 +86,7 @@ __Response__
         },
         {
           "url": "scheduledTime",
-          "valueDateTime": "2024-11-24T17:14:52+00:00"
+          "valueDateTime": "2025-03-05T15:20:38+00:00"
         }
       ]
     },
@@ -96,7 +96,7 @@ __Response__
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2980.local/fhir/ActivityDefinition/7232"
+    "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/63389"
   ],
   "status": "active",
   "intent": "filler-order",
@@ -107,16 +107,16 @@ __Response__
         "code": "TBD"
       }
     ],
-    "text": "ab8ca657-ab9b-4440-bf5d-beba19cc1834"
+    "text": "9ac41909-f4ac-48f7-9b0b-4dcda1b0000c"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/78737"
+    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/77372"
   },
   "occurrenceTiming": {
     "repeat": {
       "boundsPeriod": {
-        "start": "2024-10-26T17:14:54+00:00",
-        "end": "2024-10-26T22:14:54+00:00"
+        "start": "2025-02-04T15:20:39+00:00",
+        "end": "2025-02-04T20:20:39+00:00"
       },
       "duration": 24,
       "durationUnit": "h",

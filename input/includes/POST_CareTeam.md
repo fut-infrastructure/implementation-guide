@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWFiOGM3NzEtM2ZmYS00NTMxLTliMGItMzY5MjkzYTJiMDhmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmNhYWNkOGUtZTI3ZC00YWZiLTljNzctOGY2NDliMzdhNTQyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLndyaXRlIiwiQ2FyZVRlYW0ucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,64 +19,38 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
+      "valueUsageContext": {
+        "code": {
+          "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type",
+          "code": "range",
+          "display": "Range"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.208.184.100.1",
+              "code": "RAL",
+              "display": "display"
+            }
+          ]
+        }
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:b939621f-7a40-4869-9130-0dbba7ec9ce3"
+      "value": "urn:uuid:0554191e-a45e-47ca-b267-a116af640a04"
     }
   ],
   "status": "active",
-  "name": "5564f6ea-6496-4016-b616-2426ed5d7cb1",
+  "name": "636d641c-d3ac-4cf3-9114-ce5cc3f2da89",
   "period": {
-    "start": "2024-07-29T09:15:48+00:00"
+    "start": "2025-02-04T15:04:49+00:00"
   },
-  "participant": [
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/RelatedPerson/13042"
-      }
-    },
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/26470"
-      }
-    },
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/CareTeam/152"
-      }
-    }
-  ],
   "reasonCode": [
     {
       "coding": [
@@ -85,11 +59,6 @@ __Body__:
           "code": "DJ44"
         }
       ]
-    }
-  ],
-  "managingOrganization": [
-    {
-      "reference": "https://organization.cit-organization-1209.local/fhir/Organization/153"
     }
   ]
 }
@@ -99,73 +68,47 @@ __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "154",
+  "id": "207",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:15:48.138+00:00",
-    "source": "#b1cab1b9-8e0f-4245-a904-c81237c232b0",
+    "lastUpdated": "2025-02-04T15:04:49.928+00:00",
+    "source": "#7bf1ce5c-d925-4920-8b36-d306e7ad552d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
   },
+  "extension": [
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
+      "valueUsageContext": {
+        "code": {
+          "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type",
+          "code": "range",
+          "display": "Range"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.208.184.100.1",
+              "code": "RAL",
+              "display": "display"
+            }
+          ]
+        }
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:b939621f-7a40-4869-9130-0dbba7ec9ce3"
+      "value": "urn:uuid:0554191e-a45e-47ca-b267-a116af640a04"
     }
   ],
   "status": "active",
-  "name": "5564f6ea-6496-4016-b616-2426ed5d7cb1",
+  "name": "636d641c-d3ac-4cf3-9114-ce5cc3f2da89",
   "period": {
-    "start": "2024-07-29T09:15:48+00:00"
+    "start": "2025-02-04T15:04:49+00:00"
   },
-  "participant": [
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/RelatedPerson/13042"
-      }
-    },
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://patient.cit-organization-1209.local/fhir/Patient/26470"
-      }
-    },
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role",
-              "code": "monitoring_adjuster"
-            }
-          ]
-        }
-      ],
-      "member": {
-        "reference": "https://organization.cit-organization-1209.local/fhir/CareTeam/152"
-      }
-    }
-  ],
   "reasonCode": [
     {
       "coding": [
@@ -174,11 +117,6 @@ __Response__
           "code": "DJ44"
         }
       ]
-    }
-  ],
-  "managingOrganization": [
-    {
-      "reference": "https://organization.cit-organization-1209.local/fhir/Organization/153"
     }
   ]
 }

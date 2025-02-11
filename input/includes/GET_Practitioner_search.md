@@ -1,9 +1,9 @@
-`GET [base]/Practitioner?identifier=urn%3Aoid%3A1.2.208.176.1.2%7Ca784075b-9bd7-4ac5-927f-5ddd3872afc7`
+`GET [base]/Practitioner?identifier=urn%3Aoid%3A1.2.208.176.1.2%7C3b7c7c5d-1e0c-49f6-bbf0-d734eeae01e3`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzE3MWY4NjYtN2NkMi00YjcxLWE3YWYtZGJkNjgxOGUwN2ZmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiOWZjMzAwNzEtODVjOC00OGFjLTk4MmItZTczYzRkNDVhOTA1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lci5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "d9e3f5ae-42b5-443a-82e9-91ba6273759a",
+  "id": "18952b76-c943-46ad-8be8-388e79006954",
   "meta": {
-    "lastUpdated": "2024-07-29T09:18:57.123+00:00"
+    "lastUpdated": "2025-02-04T15:08:29.121+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1209.local/fhir/Practitioner?_format=json&_pretty=true&identifier=urn%3Aoid%3A1.2.208.176.1.2%7Ca784075b-9bd7-4ac5-927f-5ddd3872afc7"
+      "url": "https://organization.cit-organization-1291.local/fhir/Practitioner?_format=json&_pretty=true&identifier=urn%3Aoid%3A1.2.208.176.1.2%7C3b7c7c5d-1e0c-49f6-bbf0-d734eeae01e3"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1209.local/fhir/Practitioner/423",
+      "fullUrl": "https://organization.cit-organization-1291.local/fhir/Practitioner/471",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "423",
+        "id": "471",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T09:18:56.799+00:00",
-          "source": "#a81eecb5-7d4a-43",
+          "lastUpdated": "2025-02-04T15:08:28.751+00:00",
+          "source": "#be5db347-4483-44",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
@@ -44,12 +44,12 @@ __Response__
         "identifier": [
           {
             "system": "urn:oid:1.2.208.176.1.2",
-            "value": "a784075b-9bd7-4ac5-927f-5ddd3872afc7"
+            "value": "3b7c7c5d-1e0c-49f6-bbf0-d734eeae01e3"
           }
         ],
         "name": [
           {
-            "family": "d1088a2b-cfc5-4a7f-af92-147197346e33"
+            "family": "5e0076bd-5c44-43c6-b28a-e985a4694eeb"
           }
         ]
       },
@@ -58,14 +58,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.cit-organization-1209.local/fhir/Practitioner/425",
+      "fullUrl": "https://organization.cit-organization-1291.local/fhir/Practitioner/473",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "425",
+        "id": "473",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T09:18:57.043+00:00",
-          "source": "#fc4f1426-1bde-98",
+          "lastUpdated": "2025-02-04T15:08:29.028+00:00",
+          "source": "#aa07a1e0-e0ff-42",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
           ]
@@ -73,12 +73,12 @@ __Response__
         "identifier": [
           {
             "system": "urn:oid:1.2.208.176.1.2",
-            "value": "a784075b-9bd7-4ac5-927f-5ddd3872afc7"
+            "value": "3b7c7c5d-1e0c-49f6-bbf0-d734eeae01e3"
           }
         ],
         "name": [
           {
-            "family": "e1ef9add-30c8-48d4-bbaa-577a46e5a27a"
+            "family": "5dfe1124-1c2c-47db-8b79-a8c00adb3230"
           }
         ]
       },

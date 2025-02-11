@@ -1,4 +1,4 @@
-`GET [base]/Provenance?target=https%3A%2F%2Forganization.cit-organization-1209.local%2Ffhir%2FOrganization%2F411%2F_history%2F1`
+`GET [base]/Provenance?target=https%3A%2F%2Forganization.cit-organization-1291.local%2Ffhir%2FOrganization%2F459%2F_history%2F1`
 
 __Header__
 ```
@@ -15,48 +15,48 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "eb7fb69d-3cac-46db-bf8d-7d8468129dd2",
+  "id": "4bf7c1b3-8da3-4497-a5c1-a1803537baae",
   "meta": {
-    "lastUpdated": "2024-07-29T09:18:51.454+00:00"
+    "lastUpdated": "2025-02-04T15:08:19.884+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1209.local/fhir/Provenance?_format=json&_pretty=true&target=https%3A%2F%2Forganization.cit-organization-1209.local%2Ffhir%2FOrganization%2F411%2F_history%2F1"
+      "url": "https://organization.cit-organization-1291.local/fhir/Provenance?_format=json&_pretty=true&target=https%3A%2F%2Forganization.cit-organization-1291.local%2Ffhir%2FOrganization%2F459%2F_history%2F1"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1209.local/fhir/Provenance/413",
+      "fullUrl": "https://organization.cit-organization-1291.local/fhir/Provenance/461",
       "resource": {
         "resourceType": "Provenance",
-        "id": "413",
+        "id": "461",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T09:18:51.105+00:00",
-          "source": "#760230d6-b0f8-4c",
+          "lastUpdated": "2025-02-04T15:08:19.547+00:00",
+          "source": "#bc06fd36-ba40-4b",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
           ]
         },
         "target": [
           {
-            "reference": "https://organization.cit-organization-1209.local/fhir/Organization/411"
+            "reference": "https://organization.cit-organization-1291.local/fhir/Organization/459"
           },
           {
-            "reference": "https://organization.cit-organization-1209.local/fhir/Organization/412"
+            "reference": "https://organization.cit-organization-1291.local/fhir/Organization/460"
           }
         ],
-        "recorded": "2024-07-29T09:18:50.926+00:00",
+        "recorded": "2025-02-04T15:08:19.438+00:00",
         "policy": [
           "healthcare-act"
         ],
         "agent": [
           {
             "who": {
-              "reference": "https://patient.cit-organization-1209.local/fhir/Patient/81728"
+              "reference": "https://patient.cit-organization-1291.local/fhir/Patient/1260"
             }
           }
         ]

@@ -1,9 +1,9 @@
-`POST [base]/Condition/2482/$validate`
+`POST [base]/Condition/1792/$validate`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTI4MTgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzIzMyIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDb25kaXRpb24ucmVhZCIsIkNvbmRpdGlvbi5wYXRjaCIsIkNvbmRpdGlvbi5jcmVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMTU5OTQiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uZGl0aW9uLnJlYWQiLCJDb25kaXRpb24ucGF0Y2giLCJDb25kaXRpb24uY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,11 +19,11 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Condition",
-        "id": "2482",
+        "id": "1792",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T13:20:23.721+00:00",
-          "source": "#5671ece1-a113-4543-8c45-c7b7666d0fc3",
+          "lastUpdated": "2025-02-04T15:18:11.893+00:00",
+          "source": "#d0529fad-9d03-429c-87a5-e3baaebf1d0d",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-condition"
           ]
@@ -45,7 +45,7 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/78286"
+          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/95477"
         }
       }
     }

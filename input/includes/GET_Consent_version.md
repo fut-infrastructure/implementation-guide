@@ -1,4 +1,4 @@
-`GET [base]/Consent/1439/_history/2`
+`GET [base]/Consent/3098/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Consent",
-  "id": "1439",
+  "id": "3098",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-07-29T13:12:21.170+00:00",
-    "source": "#cbed532d-5a80-42",
+    "lastUpdated": "2025-02-04T15:32:44.026+00:00",
+    "source": "#89f7e76d-c1fe-46",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -45,11 +45,11 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/50545"
+    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/51846"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/75050"
+      "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/63381"
     }
   ],
   "policyRule": {
@@ -67,7 +67,7 @@ __Response__
     },
     "actor": [
       {
-        "id": "d39d61ac-ec05-45ac-9bc0-7b169c818d23",
+        "id": "e3fbadf0-728a-4e1b-a2ae-067eccb60fe2",
         "role": {
           "coding": [
             {
@@ -77,7 +77,7 @@ __Response__
           ]
         },
         "reference": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/39429"
+          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/56856"
         }
       }
     ],
@@ -85,7 +85,7 @@ __Response__
       {
         "meaning": "related",
         "reference": {
-          "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/1438"
+          "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3097"
         }
       }
     ]

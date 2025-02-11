@@ -49,15 +49,15 @@ __Body__:
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2024-07-29T09:17:25+00:00"
+        "start": "2025-02-04T15:06:50+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "b1f0c41a-ebc2-41fd-be00-ad34c2e0c134",
+      "value": "3dcb284e-7e8d-4169-9827-26a05015fa58",
       "period": {
-        "start": "2024-07-29T09:17:25+00:00"
+        "start": "2025-02-04T15:06:50+00:00"
       }
     }
   ],
@@ -72,7 +72,7 @@ __Body__:
       ]
     }
   ],
-  "name": "defaultTestFactory-47c1eec2-ec4b-4e9f-9efd-f0b04e6a0ca6"
+  "name": "defaultTestFactory-970582a7-383a-4e62-8c31-092c62190d3b"
 }
 ```
 
@@ -80,11 +80,11 @@ __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "348",
+  "id": "396",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T09:17:25.949+00:00",
-    "source": "#35a56488-5657-4618-9d22-b96d8f06c2e5",
+    "lastUpdated": "2025-02-04T15:06:50.693+00:00",
+    "source": "#6fb3b544-b5fb-4344-96ff-9978749a8fee",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -119,15 +119,15 @@ __Response__
       "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
       "value": "11111111",
       "period": {
-        "start": "2024-07-29T09:17:25+00:00"
+        "start": "2025-02-04T15:06:50+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "b1f0c41a-ebc2-41fd-be00-ad34c2e0c134",
+      "value": "3dcb284e-7e8d-4169-9827-26a05015fa58",
       "period": {
-        "start": "2024-07-29T09:17:25+00:00"
+        "start": "2025-02-04T15:06:50+00:00"
       }
     }
   ],
@@ -142,6 +142,6 @@ __Response__
       ]
     }
   ],
-  "name": "defaultTestFactory-47c1eec2-ec4b-4e9f-9efd-f0b04e6a0ca6"
+  "name": "defaultTestFactory-970582a7-383a-4e62-8c31-092c62190d3b"
 }
 ```
