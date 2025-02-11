@@ -1,6 +1,5 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 3.5.0
 ## Unreleased changes
 ### General changes
 ### Custom operations
@@ -37,9 +36,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
-
 ## 3.4.0 (2025-02-19)
-
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
@@ -109,12 +106,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 - Added Governance principles section to ehealth-actionguidance and ehealth-view.
 - Changed Governance principles section to ehealth-plandefinition.
+
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
 ### Search parameters
 - Added search parameters `relatedTo`, `series` and `usageMode` on `ehealth-media` (`Media`).
-
 
 ## 3.3.0 (2024-11-07)
 
