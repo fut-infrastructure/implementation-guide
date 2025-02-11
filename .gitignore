@@ -8,3 +8,5 @@ Thumbs.db
 node_modules
 .index.json
 /.idea
+.vscode/settings.json
+.gokid.*
