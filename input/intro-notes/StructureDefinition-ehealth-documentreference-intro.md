@@ -12,4 +12,18 @@ Typically, DocumentReference resources are used in document indexing systems, su
 In scope of the eHealth infrastructure the primary use of the DocumentReference resource is to contain or refer to information material used in relation to PlanDefinition and Questionnaire. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material. 
 
 See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
- 
+
+The eHealth profile of DocumentReference has the following extensions:
+* `ehealth-manuallydeprecated-type`
+* `ehealth-useContext` which defines the context that the content is intended to support
+
+### UseContext
+The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
+in the ValueSet described for useContext.code.
+
+### Document sharing states 
+For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
+
+There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express th reason why the document is in the given state.
+
+The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html).

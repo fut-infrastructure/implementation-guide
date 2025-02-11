@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "document-sharing-state",
+  "url": "http://ehealth.sundhed.dk/vs/document-sharing-state",
+  "version": "0.0.1",
+  "name": "DocumentSharingState",
+  "title": "Document Sharing State",
+  "status": "active",
+  "experimental": true,
+  "date": "2024-12-03T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Sharing State",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/document-sharing-state"
+      }
+    ]
+  }
+}

@@ -6,7 +6,7 @@
   "name": "conceptmap-ucum-to-printsymbol",
   "title": "UCUM code to PrintSymbol mapping",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2020-08-31T00:00:00+00:00",
   "publisher": "Systematic A/S",
   "contact": [
@@ -82,6 +82,42 @@
             {
               "code": "m",
               "display": "meter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "cm",
+          "display": "centimeter",
+          "target": [
+            {
+              "code": "cm",
+              "display": "centimeter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "cm2",
+          "display": "square centimeter",
+          "target": [
+            {
+              "code": "cm2",
+              "display": "square centimeter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "cm3",
+          "display": "cubic centimeter",
+          "target": [
+            {
+              "code": "cm3",
+              "display": "cubic centimeter",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }

@@ -1,0 +1,207 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth.sundhed.dk-loinc.org-supplement",
+  "url": "http://ehealth.sundhed.dk/loinc.org/supplement",
+  "version": "4.0.1",
+  "name": "LOINC Supplement",
+  "title": "LOINC Code System Supplement",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-01-06T00:00:00+01:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "LOINC is a freely available international standard for tests, measurements, and observations",
+  "supplements": "http://loinc.org",
+  "content": "supplement",
+  "concept": [
+    {
+      "code": "72287-6",
+      "display": "Wound size panel",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sår størrelse panel"
+        }
+      ]
+    },
+    {
+      "code": "39126-8",
+      "display": "Length of Wound",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Længde af sår"
+        }
+      ]
+    },
+    {
+      "code": "39125-0",
+      "display": "Width of Wound",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bredde af sår"
+        }
+      ]
+    },
+    {
+      "code": "39127-6",
+      "display": "Depth of Wound",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Dybde af sår"
+        }
+      ]
+    },
+    {
+      "code": "89260-4",
+      "display": "Area of wound",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Areal af sår"
+        }
+      ]
+    },
+    {
+      "code": "94083-3",
+      "display": "Wound volume",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sårvolumen"
+        }
+      ]
+    },
+    {
+      "code": "69730-0",
+      "display": "Instructions",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Instruktioner"
+        }
+      ]
+    },
+    {
+      "code": "48766-0",
+      "display": "Information source",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Informationskilde"
+        }
+      ]
+    },
+    {
+      "code": "53576-5",
+      "display": "Personal health monitoring report Document",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Personal health monitoring report Document"
+        }
+      ]
+    },
+    {
+      "code": "74468-0",
+      "display": "Questionnaire Form Definition Document",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Questionnaire Form Definition Document"
+        }
+      ]
+    },
+    {
+      "code": "74465-6",
+      "display": "Questionnaire Response Document",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Questionnaire Response Document"
+        }
+      ]
+    },
+    {
+      "code": "11502-2",
+      "display": "LABORATORY REPORT.TOTAL",
+      "designation": [
+        {
+          "language": "da",
+          "value": "LABORATORY REPORT.TOTAL"
+        }
+      ]
+    },
+    {
+      "code": "56446-8",
+      "display": "Appointment Summary Document",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Appointment Summary Document"
+        }
+      ]
+    },
+    {
+      "code": "39290-2",
+      "display": "Follow-up (referred to) program, appointment date",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Follow-up (referred to) program, appointment date"
+        }
+      ]
+    },
+    {
+      "code": "39289-4",
+      "display": "Follow-up (referred to) provider and/or specialist, appointment date",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Follow-up (referred to) provider and/or specialist, appointment date"
+        }
+      ]
+    },
+    {
+      "code": "81215-6",
+      "display": "Care plan - recommended C-CDA R2.0 and R2.1 sections",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Care plan - recommended C-CDA R2.0 and R2.1 sections"
+        }
+      ]
+    },
+    {
+      "code": "57059-8",
+      "display": "Pregnancy visit summary note Narrative",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Summary for prenancy visit"
+        }
+      ]
+    },
+    {
+      "code": "28615-3",
+      "display": "Audiology Study",
+      "designation": [
+        {
+          "language": "da",
+          "value": "DA: Audiologi dokument"
+        }
+      ]
+    }
+  ]
+}
