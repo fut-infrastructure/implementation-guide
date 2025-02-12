@@ -42,6 +42,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code item-modified to http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes
 - Added http://ehealth.sundhed.dk/vs/ehealth-program
 - Changed description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
+- Added codes NPU08676, MCS88192, MCS88193, MCS88194 to http://ehealth.sundhed.dk/vs/observation-codes 
 ### ConceptMaps
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3, ZZ7011, 446080005 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder, http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
 - Added mapping for codes 72287-6, 39126-8, 39125-0, 39127-6, 89260-4, 94083-3 in: http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type,http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum, http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
