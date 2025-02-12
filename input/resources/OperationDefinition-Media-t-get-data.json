@@ -6,7 +6,7 @@
   "title": "Get media data",
   "status": "active",
   "kind": "operation",
-  "description": "The get-data operation returns a media resource matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid",
+  "description": "The get-data operation returns a media content matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Request header description\n- ehealth-thumbnail-size: The size of thumbnail to return instead of original content. If thumbnails are not supported for the media, the original content is returned\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid",
   "affectsState": false,
   "code": "get-data",
   "resource": [ "Media" ],

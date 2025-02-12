@@ -29,32 +29,12 @@ __Body__:
   ],
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
-            "code": "TBD",
-            "display": "Example value - Under construction"
-          }
-        ],
-        "text": "abcd"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/18977",
-        "display": "Abcd"
-      }
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/29213"
+            "reference": "https://organization.cit-questionnaire-1509.local/fhir/Organization/66248"
           }
         },
         {
@@ -71,34 +51,8 @@ __Body__:
       ]
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
-      "valueString": "Jeg gik mig en tur"
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version",
       "valueString": "1.0"
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-description",
-      "valueMarkdown": "A record of an event made for purposes of maintaining a security log."
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-purpose",
-      "valueMarkdown": "A record of an event made for purposes of maintaining a security log."
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
-      "valueUsageContext": {
-        "code": {
-          "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
-          "code": "age",
-          "display": "Age Range"
-        },
-        "valueReference": {
-          "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/98860",
-          "display": "1234"
-        }
-      }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
@@ -111,28 +65,8 @@ __Body__:
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-content",
       "valueReference": {
-        "reference": "#1",
-        "display": "A record of an event made for purposes of maintaining a security log."
+        "reference": "#1"
       }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-for",
-      "extension": [
-        {
-          "url": "forReference",
-          "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/31504"
-          }
-        },
-        {
-          "url": "forType",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/resource-types",
-            "code": "Questionnaire",
-            "display": "Questionnaire"
-          }
-        }
-      ]
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-type",
@@ -159,11 +93,11 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "179",
+  "id": "280",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:28:33.931+00:00",
-    "source": "#a3bec3d8-6326-4064-8f7d-7cb1e27f44fc",
+    "lastUpdated": "2025-02-05T10:46:25.317+00:00",
+    "source": "#a21ac33d-ccce-4610-bfc0-2fb8c6cdd562",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -183,32 +117,12 @@ __Response__
   ],
   "extension": [
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-recommendation",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/plandefinition-recommendation",
-            "code": "TBD",
-            "display": "Example value - Under construction"
-          }
-        ],
-        "text": "abcd"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
-      "valueReference": {
-        "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/18977",
-        "display": "Abcd"
-      }
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/29213"
+            "reference": "https://organization.cit-questionnaire-1509.local/fhir/Organization/66248"
           }
         },
         {
@@ -225,34 +139,8 @@ __Response__
       ]
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
-      "valueString": "Jeg gik mig en tur"
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version",
       "valueString": "1.0"
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-description",
-      "valueMarkdown": "A record of an event made for purposes of maintaining a security log."
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-purpose",
-      "valueMarkdown": "A record of an event made for purposes of maintaining a security log."
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
-      "valueUsageContext": {
-        "code": {
-          "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
-          "code": "age",
-          "display": "Age Range"
-        },
-        "valueReference": {
-          "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/98860",
-          "display": "1234"
-        }
-      }
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
@@ -265,28 +153,8 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-content",
       "valueReference": {
-        "reference": "#1",
-        "display": "A record of an event made for purposes of maintaining a security log."
+        "reference": "#1"
       }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-for",
-      "extension": [
-        {
-          "url": "forReference",
-          "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/31504"
-          }
-        },
-        {
-          "url": "forType",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/resource-types",
-            "code": "Questionnaire",
-            "display": "Questionnaire"
-          }
-        }
-      ]
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-type",

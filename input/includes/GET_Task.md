@@ -1,9 +1,9 @@
-`GET [base]/Task/354`
+`GET [base]/Task/376`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJG1pZ3JhdGUiLCJUYXNrLnJlYWQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIkNsaW5pY2FsSW1wcmVzc2lvbi5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Task",
-  "id": "354",
+  "id": "376",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2024-07-29T08:58:02.135+00:00",
-    "source": "#4bf1c115-7133-45",
+    "versionId": "1",
+    "lastUpdated": "2025-02-05T11:49:51.980+00:00",
+    "source": "#bc828b94-4c3b-40",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/7576"
+        "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/96165"
       }
     },
     {
@@ -56,15 +56,30 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
       "valueReference": {
-        "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/83004"
+        "reference": "https://organization.cit-task-2140.local/fhir/Practitioner/14163"
       }
     }
   ],
+  "groupIdentifier": {
+    "assigner": {
+      "reference": "https://organization.cit-task-2140.local/fhir/Organization/61747"
+    }
+  },
   "status": "draft",
   "intent": "proposal",
   "priority": "routine",
+  "requester": {
+    "reference": "https://organization.cit-task-2140.local/fhir/Organization/61747"
+  },
   "owner": {
-    "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/7635"
+    "reference": "https://organization.cit-task-2140.local/fhir/Organization/61747"
+  },
+  "restriction": {
+    "recipient": [
+      {
+        "reference": "https://organization.cit-task-2140.local/fhir/Organization/61747"
+      }
+    ]
   }
 }
 ```

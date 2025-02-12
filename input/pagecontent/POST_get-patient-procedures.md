@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTg0MDA2OWUtMmVmYy00ZTk1LTg4ZDgtMDYxMWJjOWE5ZDM0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVQbGFuLnNlYXJjaCJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0yODE4LmxvY2FsL2ZoaXIvUGF0aWVudC80NjQwNiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMWY1ODIwMzUtZjM0NS00Zjk1LWFiNGYtNDM3NjdjZjNiMmQ4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVQbGFuLnNlYXJjaCJdfSwiY29udGV4dCI6eyJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0zMDM4LmxvY2FsL2ZoaXIvUGF0aWVudC81Njc0MCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -18,16 +18,16 @@ __Body__:
     {
       "name": "patient",
       "valueReference": {
-        "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/46406"
+        "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/56740"
       }
     },
     {
       "name": "start",
-      "valueDateTime": "2024-07-28T13:24:37+00:00"
+      "valueDateTime": "2025-02-03T15:06:58+00:00"
     },
     {
       "name": "end",
-      "valueDateTime": "2024-07-29T12:24:37+00:00"
+      "valueDateTime": "2025-02-04T14:06:58+00:00"
     }
   ]
 }
@@ -40,14 +40,14 @@ __Response__
   "type": "collection",
   "entry": [
     {
-      "fullUrl": "CarePlan/3060",
+      "fullUrl": "CarePlan/211",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "3060",
+        "id": "211",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T13:24:38.105+00:00",
-          "source": "#a6747bff-dbc7-47",
+          "lastUpdated": "2025-02-04T15:07:00.015+00:00",
+          "source": "#437ba9b0-314c-4d",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan"
           ]
@@ -56,7 +56,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/3057"
+              "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/208"
             }
           },
           {
@@ -76,15 +76,15 @@ __Response__
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2024-07-28T13:24:37+00:00",
-                  "end": "2024-07-29T12:24:37+00:00"
+                  "start": "2025-02-03T15:06:58+00:00",
+                  "end": "2025-02-04T14:06:58+00:00"
                 }
               }
             ]
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2818.local/fhir/PlanDefinition/17896"
+          "https://plan.cit-careplan-3038.local/fhir/PlanDefinition/82997"
         ],
         "status": "active",
         "intent": "option",
@@ -99,7 +99,7 @@ __Response__
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/46406"
+          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/56740"
         },
         "period": {
           "start": "1970-01-01T00:00:01+00:00",
@@ -107,27 +107,27 @@ __Response__
         },
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-2818.local/fhir/Condition/3059"
+            "reference": "https://careplan.cit-careplan-3038.local/fhir/Condition/210"
           }
         ],
         "activity": [
           {
             "reference": {
-              "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/3058"
+              "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/209"
             }
           }
         ]
       }
     },
     {
-      "fullUrl": "ServiceRequest/3058",
+      "fullUrl": "ServiceRequest/209",
       "resource": {
         "resourceType": "ServiceRequest",
-        "id": "3058",
+        "id": "209",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T13:24:37.729+00:00",
-          "source": "#6e81d514-73de-4b",
+          "lastUpdated": "2025-02-04T15:06:59.663+00:00",
+          "source": "#0c97195e-7112-40",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -136,7 +136,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/3057"
+              "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/208"
             }
           },
           {
@@ -167,8 +167,8 @@ __Response__
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2024-07-28T13:24:37+00:00",
-                  "end": "2024-07-29T12:24:37+00:00"
+                  "start": "2025-02-03T15:06:58+00:00",
+                  "end": "2025-02-04T14:06:58+00:00"
                 }
               }
             ]
@@ -179,7 +179,7 @@ __Response__
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/86357"
+          "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/96515"
         ],
         "status": "active",
         "intent": "filler-order",
@@ -190,18 +190,18 @@ __Response__
               "code": "TBD"
             }
           ],
-          "text": "ea284549-56a0-4cca-9c32-2f40becbecfc"
+          "text": "40adf5b5-6cb4-4053-b2e4-5ab600b7aa4e"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/46406"
+          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/56740"
         },
-        "occurrenceDateTime": "2024-07-28T13:24:37+00:00"
+        "occurrenceDateTime": "2025-02-03T15:06:58+00:00"
       }
     },
     {
       "resource": {
         "resourceType": "Parameters",
-        "id": "f0542757-7e9c-4651-a17d-589d1df975f4",
+        "id": "e61c99be-1dcb-4fe6-b8c1-323855089146",
         "parameter": [
           {
             "name": "item_1",
@@ -209,13 +209,13 @@ __Response__
               {
                 "name": "CarePlan",
                 "valueReference": {
-                  "reference": "https://careplan.cit-careplan-2818.local/fhir/CarePlan/3060"
+                  "reference": "https://careplan.cit-careplan-3038.local/fhir/CarePlan/211"
                 }
               },
               {
                 "name": "ServiceRequest",
                 "valueReference": {
-                  "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/3058"
+                  "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/209"
                 }
               },
               {
@@ -228,11 +228,11 @@ __Response__
               },
               {
                 "name": "ResolvedTimingStart",
-                "valueDateTime": "2024-07-28T13:24:37+00:00"
+                "valueDateTime": "2025-02-03T15:06:58+00:00"
               },
               {
                 "name": "ResolvedTimingEnd",
-                "valueDateTime": "2024-07-28T13:24:37+00:00"
+                "valueDateTime": "2025-02-03T15:06:58+00:00"
               },
               {
                 "name": "TimingType",
@@ -249,10 +249,6 @@ __Response__
               {
                 "name": "OccurrencesRequested",
                 "valueInteger": 1
-              },
-              {
-                "name": "TotalInvalidated",
-                "valueInteger": 1
               }
             ]
           }
@@ -262,7 +258,7 @@ __Response__
     {
       "resource": {
         "resourceType": "OperationOutcome",
-        "id": "215582b7-0a82-4555-87a5-acde6c29e705",
+        "id": "b5f1bbf5-b25f-40db-a5a8-ee5ea5aecb02",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"></table></div>"

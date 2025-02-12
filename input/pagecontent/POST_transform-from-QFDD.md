@@ -19,11 +19,11 @@ __Body__:
       "name": "documentReference",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "62269",
+        "id": "50275",
         "meta": {
           "versionId": "1",
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-transformation-documentreference"
           ]
         },
         "status": "current",
@@ -35,7 +35,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-07-29T08:45:17.806+00:00",
+        "date": "2025-02-05T12:11:04.920+00:00",
         "content": [
           {
             "attachment": {
@@ -63,7 +63,7 @@ __Response__
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[]</td><td>Numeric question has no interval. Cannot determine type. Setting item.type to 'decimal'. Question id: Root: 1.2.208.184.12.1, Extension: df56d3dd-5ba3-4b13-8fe7-fcd0af5eb5c9</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Question with id: 'Root: 1.2.208.184.12.1, Extension: 93c29222-a869-4900-bfdf-204958dad326' has associated text question with id: 'Root: 1.2.208.184.12.1, Extension: 336c8aa2-a9db-43d7-90c2-d308aac5acb4' will be two question items in Fhir questionnaire.</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[]</td><td>Question is missing text. Id: Root: 1.2.208.184.12.1, Extension: 1253d8ff-086f-4474-add3-5d49fefd0dc6</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[]</td><td>Numeric question has no interval. Cannot determine type. Setting item.type to 'decimal'. Question id: Root: 1.2.208.184.12.1, Extension: df56d3dd-5ba3-4b13-8fe7-fcd0af5eb5c9</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Question with id: 'Root: 1.2.208.184.12.1, Extension: 93c29222-a869-4900-bfdf-204958dad326' has associated text question with id: 'Root: 1.2.208.184.12.1, Extension: 336c8aa2-a9db-43d7-90c2-d308aac5acb4'. The questions will be split into two separate question items in Fhir questionnaire.</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[]</td><td>Question is missing text. Id: Root: 1.2.208.184.12.1, Extension: 1253d8ff-086f-4474-add3-5d49fefd0dc6</td></tr></table></div>"
           },
           "issue": [
             {
@@ -74,7 +74,7 @@ __Response__
             {
               "severity": "information",
               "code": "informational",
-              "diagnostics": "Question with id: 'Root: 1.2.208.184.12.1, Extension: 93c29222-a869-4900-bfdf-204958dad326' has associated text question with id: 'Root: 1.2.208.184.12.1, Extension: 336c8aa2-a9db-43d7-90c2-d308aac5acb4' will be two question items in Fhir questionnaire."
+              "diagnostics": "Question with id: 'Root: 1.2.208.184.12.1, Extension: 93c29222-a869-4900-bfdf-204958dad326' has associated text question with id: 'Root: 1.2.208.184.12.1, Extension: 336c8aa2-a9db-43d7-90c2-d308aac5acb4'. The questions will be split into two separate question items in Fhir questionnaire."
             },
             {
               "severity": "error",

@@ -1,9 +1,9 @@
-`GET [base]/ServiceRequest/2937`
+`GET [base]/ServiceRequest/3142`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNTkyMzYiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiUGxhbkRlZmluaXRpb24kYXBwbHkiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9DYXJlVGVhbS8xODkyMiIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzMxMzkiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "2937",
+  "id": "3142",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-10-26T17:14:08.547+00:00",
-    "source": "#604a2829-9cd8-48",
+    "lastUpdated": "2025-02-04T15:33:22.423+00:00",
+    "source": "#713191cd-3b65-44",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +28,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-2980.local/fhir/EpisodeOfCare/2936"
+        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3139"
       }
     },
     {
@@ -43,6 +43,21 @@ __Response__
       }
     },
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingApprovalPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies",
+            "code": "manual"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-trigger-enablement-code",
+      "valueCode": "NO_TRIGGER"
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusHistory",
       "extension": [
         {
@@ -51,7 +66,7 @@ __Response__
             "coding": [
               {
                 "system": "http://hl7.org/fhir/request-status",
-                "code": "completed"
+                "code": "draft"
               }
             ]
           }
@@ -59,7 +74,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2024-10-26T17:14:07+00:00"
+            "start": "2025-02-04T15:33:22+00:00"
           }
         }
       ]
@@ -70,24 +85,20 @@ __Response__
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-2980.local/fhir/ActivityDefinition/98303"
+    "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/47889"
   ],
-  "status": "completed",
-  "intent": "filler-order",
+  "status": "draft",
+  "intent": "order",
   "code": {
     "coding": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-        "code": "TBD"
+        "system": "urn:oid:1.2.208.176.2.1",
+        "code": "NPU03011"
       }
-    ],
-    "text": "2b8b1b5e-439d-426e-915d-199d2cbf4ad0"
+    ]
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-2980.local/fhir/Patient/94913"
-  },
-  "occurrencePeriod": {
-    "start": "2024-10-21T17:14:07+00:00"
+    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/30442"
   }
 }
 ```

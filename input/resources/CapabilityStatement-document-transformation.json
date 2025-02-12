@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2024-10-28T02:18:23.495+00:00",
+  "date": "2025-02-06T09:21:53.994+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.15.0"
+    "version": "1.21.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -151,7 +151,7 @@
       } ]
     }, {
       "type": "DocumentReference",
-      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
+      "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-transformation-documentreference",
       "interaction": [ {
         "code": "search-type"
       }, {
@@ -229,6 +229,10 @@
         "name": "description",
         "type": "string",
         "documentation": "Human-readable description (title)"
+      }, {
+        "name": "documentSharingState",
+        "type": "token",
+        "documentation": "Sharing State of the Document"
       }, {
         "name": "encounter",
         "type": "reference",
@@ -335,11 +339,6 @@
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
       "name": "migrate",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
@@ -385,9 +384,8 @@
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
       "documentation": "Transforms a DK-HL7 Appointment Document (APD) XML document to a FHIR Appointment (ehealth-appointment profile) resource. The input FHIR DocumentReference (ehealth-documentreference profile) contains the APD XML document. The caller must ensure that the APD XML document is valid and adheres to the DK-HL7 Appointment Document profile. The returned FHIR Bundle contains a FHIR Composition (ehealth-composition profile) resource referencing a FHIR Appointment (ehealth-appointment profile) resource."
     }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -395,9 +393,6 @@
       "name": "get-resource-counts",
       "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }
