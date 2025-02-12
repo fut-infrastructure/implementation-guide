@@ -73,10 +73,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 - Added Governance principles section to ehealth-actionguidance and ehealth-view.
 - Changed Governance principles section to ehealth-plandefinition.
-- Updated IG intro for ehealth-patient
-- Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
-- Added YderNummer NamingSystem
-
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
