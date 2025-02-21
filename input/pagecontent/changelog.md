@@ -18,6 +18,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
   - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
   - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
+- Changed ZZ3170 mapping from MCS88019 and MCS88020 to DNK05472 and DNK05473 in ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-observation-code
 ### Resource/profile changes
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
