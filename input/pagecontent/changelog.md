@@ -1,5 +1,19 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+#### ServiceRequest (ehealth-servicerequest)
+### Search parameters
+
+
 ## 3.4.0 (2025-02-19)
 
 ### General changes
