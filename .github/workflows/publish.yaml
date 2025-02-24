@@ -13,6 +13,7 @@ env:
   WEB_APP_LOCATION: "web/"
   WEB_REPO: "fut-ig-website"
   REGISTRY_REPO: "ig-registry"
+  HISTORY_REPO: "fhir-ig-history-template"
   APP_AUTHOR_NAME: "fut-ig-publisher[bot]"
   APP_AUTHOR_EMAIL: "fut-ig-publisher[bot]@users.noreply.github.com"
 
@@ -91,5 +92,6 @@ jobs:
           app-author-name: ${{ env.APP_AUTHOR_NAME }}
           app-author-email: ${{ env.APP_AUTHOR_EMAIL }}
           registry-repo: ${{ github.repository_owner }}/${{ env.REGISTRY_REPO }}
+          history-repo: ${{ github.repository_owner }}/${{ env.HISTORY_REPO }}
           web-repo: ${{ github.repository_owner }}/${{ env.WEB_REPO }}
           web-source: ${{ env.WEB_APP_LOCATION }}
