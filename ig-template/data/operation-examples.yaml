@@ -198,4 +198,7 @@
 
 - profile: system
   path: POST_PlanDefinition_import.html
+
+- profile: system
+  path: POST_Organization_get-general-practitioner-info.html
 # setting profile = system, in order to include in general operation examples page

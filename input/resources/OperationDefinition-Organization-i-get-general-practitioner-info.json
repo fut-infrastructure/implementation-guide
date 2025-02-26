@@ -10,9 +10,9 @@
   "affectsState": false,
   "code": "get-general-practitioner-info",
   "resource": [ "Organization" ],
-  "system": false,
+  "system": true,
   "type": false,
-  "instance": true,
+  "instance": false,
   "parameter": [ {
     "name": "providerIdentifier",
     "use": "in",
