@@ -13,6 +13,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
+## 3.5.0 (2025-02-19)
+
+### Custom operations
+- Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to resolve to general practitioner information.
 
 ## 3.4.0 (2025-02-19)
 
