@@ -4,11 +4,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### General changes
 ### Custom operations
+- Updated $set-measurement-validity - add validation for ClinicalImpression.code = MeasurementValidityUpdate 
 #### System operations
 #### Instance operations
 ### Code systems
-- Added supplements Code system http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
+- Added supplement CodeSystem http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
 - Changed display name from K-PRO to Kommunal PRO for http://ehealth.sundhed.dk/cs/ehealth-program
+- Added code MeasurementValidityUpdate to http://ehealth.sundhed.dk/cs/clinicalimpression-codes
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
