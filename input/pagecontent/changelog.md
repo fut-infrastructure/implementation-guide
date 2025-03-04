@@ -1,12 +1,14 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 3.4.1 (2025-03-12)
 
 ### General changes
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
+- Added supplements Code system http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
+- Changed display name from K-PRO to Kommunal PRO for http://ehealth.sundhed.dk/cs/ehealth-program
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
