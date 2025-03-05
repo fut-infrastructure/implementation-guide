@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ehealth.sundhed.dk-hl7.org/fhir/action-selection-behavior-supplement",
+  "id": "ehealth.sundhed.dk-action-selection-behavior-supplement",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -22,9 +22,9 @@
       "value": "urn:oid:2.16.840.1.113883.4.642.4.802"
     }
   ],
-  "version": "2024-04-22T12:06:32",
-  "name": "ActionSelectionBehavior",
-  "title": "ActionSelectionBehavior",
+  "version": "2025-03-05T15:30:00",
+  "name": "Action Selection Behavior Supplement",
+  "title": "Action Selection Behavior Supplement",
   "status": "active",
   "experimental": false,
   "publisher": "ehealth.sundhed.dk",
