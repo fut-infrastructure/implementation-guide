@@ -26,6 +26,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
 #### Instance operations
+- Updated $match for patient
 - Updated $create-patient for historical CPRs
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
