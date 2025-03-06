@@ -1,7 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
-
+## Unreleased changes
 ### General changes
 ### Custom operations
 #### System operations
@@ -10,12 +9,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Updated IG intro for ehealth-patient
+- Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
+- Added YderNummer NamingSystem
+
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
-
 ## 3.4.0 (2025-02-19)
-
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
@@ -86,12 +87,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 - Added Governance principles section to ehealth-actionguidance and ehealth-view.
 - Changed Governance principles section to ehealth-plandefinition.
+
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
 ### Search parameters
 - Added search parameters `relatedTo`, `series` and `usageMode` on `ehealth-media` (`Media`).
-
 
 ## 3.3.0 (2024-11-07)
 
