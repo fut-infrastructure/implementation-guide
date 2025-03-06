@@ -70,7 +70,7 @@ The command for doing the publication is the following:
 
 Execution takes a couple of minutes. Once done, the content of the `$(pwd)/fut-ig-website` must be committed and pushed to the origin. Now your publication is done.
 
-## Publication trigger rules - WORK IN PROGRESS
+## Publication trigger rules
 
 When a new publication version is to be created, the following rules apply:
 

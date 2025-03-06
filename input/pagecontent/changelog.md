@@ -27,6 +27,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 - Updated $match for patient
+- Updated $create-patient for historical CPRs
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added http://ehealth.sundhed.dk/cs/media-usage-mode
