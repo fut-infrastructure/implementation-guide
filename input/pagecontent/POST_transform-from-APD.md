@@ -21,7 +21,7 @@ __Body__:
         "resourceType": "DocumentReference",
         "meta": {
           "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-transformation-documentreference"
           ]
         },
         "status": "current",
@@ -33,7 +33,7 @@ __Body__:
             }
           ]
         },
-        "date": "2024-07-29T08:33:22.209+00:00",
+        "date": "2025-02-05T11:57:29.110+00:00",
         "content": [
           {
             "attachment": {
@@ -57,7 +57,7 @@ __Response__
     {
       "resource": {
         "resourceType": "Composition",
-        "id": "39c1abae-c071-4070-b800-f8af5d7babcb",
+        "id": "f9dfa630-594d-49d8-babd-d70ce665a775",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"

@@ -1,9 +1,9 @@
-`GET [base]/Task?episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1940.local%2Ffhir%2FEpisodeOfCare%2F29715&restriction-category=measurement-monitoring%2Cnone`
+`GET [base]/Task?focus=https%3A%2F%2Fcareplan.cit-task-2140.local%2Ffhir%2FServiceRequest%2F38866&resolvedTimingStart=2025-02-05T00%3A00%3A00%2B00%3A00&resolvedTimingEnd=2025-02-05T08%3A00%3A00%2B00%3A00`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiVGFzay5zZWFyY2giLCJUYXNrLnJlYWQiLCJUYXNrLmNyZWF0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiVGFzay5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDk2ZGZiY2MtNDI3Ny00MDBlLTlmZWItNzY3ZmE4NzY1MzM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlRhc2suc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,28 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "ed01b56f-9940-42a7-92ba-b63bdd76d7d5",
+  "id": "e6cadb3c-9d16-4675-b3db-ba5da298d501",
   "meta": {
-    "lastUpdated": "2024-07-29T08:58:27.157+00:00"
+    "lastUpdated": "2025-02-05T11:53:50.606+00:00"
   },
   "type": "searchset",
-  "total": 3,
+  "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://task.cit-task-1940.local/fhir/Task?_format=json&_pretty=true&episodeOfCare=https%3A%2F%2Fcareplan.cit-task-1940.local%2Ffhir%2FEpisodeOfCare%2F29715&restriction-category=measurement-monitoring%2Cnone"
+      "url": "https://task.cit-task-2140.local/fhir/Task?_format=json&_pretty=true&focus=https%3A%2F%2Fcareplan.cit-task-2140.local%2Ffhir%2FServiceRequest%2F38866&resolvedTimingEnd=2025-02-05T08%3A00%3A00%2B00%3A00&resolvedTimingStart=2025-02-05T00%3A00%3A00%2B00%3A00"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/377",
+      "fullUrl": "https://task.cit-task-2140.local/fhir/Task/411",
       "resource": {
         "resourceType": "Task",
-        "id": "377",
+        "id": "411",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T08:58:26.452+00:00",
-          "source": "#3fa8192a-be28-44",
+          "lastUpdated": "2025-02-05T11:53:43.057+00:00",
+          "source": "#3f78c08c-76bb-43",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
           ]
@@ -45,7 +45,7 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
+              "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/63893"
             }
           },
           {
@@ -54,7 +54,8 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/task-category",
-                  "code": "TBD"
+                  "code": "MissingMeasurementResolving",
+                  "display": "Need resolving of why scheduled measurement has not been submitted"
                 }
               ]
             }
@@ -65,18 +66,8 @@ __Response__
               "coding": [
                 {
                   "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "measurement-monitoring"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "measuring-support"
+                  "code": "measurement-monitoring",
+                  "display": "Monitoring of measurement(s)"
                 }
               ]
             }
@@ -84,127 +75,50 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
             "valueReference": {
-              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/59657"
+              "reference": "https://organization.cit-task-2140.local/fhir/CareTeam/63739"
             }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
+            "extension": [
+              {
+                "url": "serviceRequestVersionId",
+                "valueId": "1"
+              },
+              {
+                "url": "start",
+                "valueDateTime": "2025-02-05T00:00:00+00:00"
+              },
+              {
+                "url": "end",
+                "valueDateTime": "2025-02-05T08:00:00+00:00"
+              },
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                      "code": "Resolved",
+                      "display": "Resolved"
+                    }
+                  ]
+                }
+              }
+            ]
           }
         ],
-        "status": "draft",
-        "intent": "proposal",
-        "priority": "routine"
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/379",
-      "resource": {
-        "resourceType": "Task",
-        "id": "379",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2024-07-29T08:58:26.900+00:00",
-          "source": "#d11b3b4f-924d-4b",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
-          ]
+        "status": "requested",
+        "intent": "plan",
+        "priority": "routine",
+        "description": "MissingMeasurementTest",
+        "focus": {
+          "reference": "https://careplan.cit-task-2140.local/fhir/ServiceRequest/38866"
         },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
-            "valueReference": {
-              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/task-category",
-                  "code": "TBD"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "measurement-monitoring"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-            "valueReference": {
-              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/17531"
-            }
-          }
-        ],
-        "status": "draft",
-        "intent": "proposal",
-        "priority": "routine"
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://task.cit-task-1940.local/fhir/Task/380",
-      "resource": {
-        "resourceType": "Task",
-        "id": "380",
-        "meta": {
-          "versionId": "1",
-          "lastUpdated": "2024-07-29T08:58:27.063+00:00",
-          "source": "#0c7739b2-2e56-96",
-          "profile": [
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task"
-          ]
+        "for": {
+          "reference": "https://patient.cit-task-2140.local/fhir/Patient/38971"
         },
-        "extension": [
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-episodeOfCare",
-            "valueReference": {
-              "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/29715"
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/task-category",
-                  "code": "TBD"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://ehealth.sundhed.dk/cs/restriction-category",
-                  "code": "none"
-                }
-              ]
-            }
-          },
-          {
-            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task-responsible",
-            "valueReference": {
-              "reference": "https://organization.cit-task-1940.local/fhir/Practitioner/18029"
-            }
-          }
-        ],
-        "status": "draft",
-        "intent": "proposal",
-        "priority": "routine"
+        "authoredOn": "2025-02-05T11:53:42+00:00"
       },
       "search": {
         "mode": "match"

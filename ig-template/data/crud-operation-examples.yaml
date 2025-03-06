@@ -1,5 +1,8 @@
 #ehealth-basic
 - profile: ehealth-basic
+  path: GET_Basic.md
+
+- profile: ehealth-basic
   path: GET_Basic_search.md
 
 - profile: ehealth-basic
@@ -178,6 +181,9 @@
 
 # ehealth-consent
 - profile: ehealth-consent
+  path: GET_Consent.md
+
+- profile: ehealth-consent
   path: GET_Consent_search.md
 
 - profile: ehealth-consent
@@ -193,6 +199,9 @@
   path: PUT_Consent.md
 
 # ehealth-device
+- profile: ehealth-device
+  path: GET_Device.md
+
 - profile: ehealth-device
   path: GET_Device_search.md
 
@@ -281,6 +290,9 @@
 
 # ehealth-library
 - profile: ehealth-library
+  path: GET_Library.md
+
+- profile: ehealth-library
   path: GET_Library_search.md
 
 - profile: ehealth-library
@@ -321,6 +333,12 @@
 - profile: ehealth-media
   path: POST_Media_validate.md
 
+- profile: ehealth-media
+  path: PUT_Media.md
+
+- profile: ehealth-media
+  path: PATCH_Media.md
+
 # ehealth-message
 - profile: ehealth-message
   path: POST_Message_1.md
@@ -343,6 +361,9 @@
 
 - profile: ehealth-observation
   path: POST_Observation_validate.md
+
+- profile: ehealth-observation
+  path: PATCH_Observation.md
 
 # ehealth-organization
 - profile: ehealth-organization
@@ -391,6 +412,9 @@
 
 # ehealth-practitioner
 - profile: ehealth-practitioner
+  path: GET_Practitioner.md
+
+- profile: ehealth-practitioner
   path: GET_Practitioner_search.md
 
 - profile: ehealth-practitioner
@@ -406,6 +430,9 @@
   path: PUT_Practitioner.md
 
 # ehealth-practitionerrole
+- profile: ehealth-practitionerrole
+  path: GET_PractitionerRole.md
+
 - profile: ehealth-practitionerrole
   path: DELETE_PractitionerRole.md
 
@@ -490,6 +517,9 @@
 
 - profile: ehealth-questionnaireresponse
   path: POST_QuestionnaireResponse.md
+
+- profile: ehealth-questionnaireresponse
+  path: PATCH_QuestionnaireResponse.md
 
 # ehealth-definedquestion
 - profile: ehealth-definedquestion

@@ -80,7 +80,23 @@
           },
           {
             "code": "NPU03794",
-            "display": "Pt—Legeme; højde = ? m"
+            "display": "Pt—Legeme; højde = ? m",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Pt—Legeme; højde = ? m"
+              }
+            ]
+          },
+          {
+            "code": "NPU08676",
+            "display": "Pt—Legeme; temp. = ? °C",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Pt—Legeme; temp. = ? °C"
+              }
+            ]
           }
         ]
       },
@@ -174,6 +190,36 @@
               {
                 "language": "da",
                 "value": "CAT score;Pt"
+              }
+            ]
+          },
+          {
+            "code": "MCS88192",
+            "display": "Skridt per dag;Pt",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Skridt per dag;Pt"
+              }
+            ]
+          },
+          {
+            "code": "MCS88193",
+            "display": "Skridt per uge;Pt",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Skridt per uge;Pt"
+              }
+            ]
+          },
+          {
+            "code": "MCS88194",
+            "display": "Skridt;Pt",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Skridt;Pt"
               }
             ]
           }

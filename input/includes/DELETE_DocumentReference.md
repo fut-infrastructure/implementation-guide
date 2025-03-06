@@ -1,4 +1,4 @@
-`DELETE [base]/DocumentReference/89`
+`DELETE [base]/DocumentReference/48`
 
 __Header__
 ```
@@ -17,7 +17,7 @@ __Response__
   "resourceType": "OperationOutcome",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully deleted 1 resource(s). Took 51ms.</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully deleted 1 resource(s). Took 132ms.</td></tr></table></div>"
   },
   "issue": [
     {
@@ -32,7 +32,7 @@ __Response__
           }
         ]
       },
-      "diagnostics": "Successfully deleted 1 resource(s). Took 51ms."
+      "diagnostics": "Successfully deleted 1 resource(s). Took 132ms."
     }
   ]
 }

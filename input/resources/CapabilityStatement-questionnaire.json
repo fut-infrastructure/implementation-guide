@@ -3,12 +3,12 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2024-10-28T02:48:02.653+00:00",
+  "date": "2025-02-06T09:19:28.659+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "2.4.0"
+    "version": "2.7.0"
   },
   "implementation": {
     "description": "eHealth questionnaire service",
@@ -88,6 +88,18 @@
         "name": "code",
         "type": "token",
         "documentation": "The code"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the action guidance"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the action guidance"
+      }, {
+        "name": "context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the action guidance"
       }, {
         "name": "identifier",
         "type": "token",
@@ -205,6 +217,18 @@
         "name": "code",
         "type": "token",
         "documentation": "A code that corresponds to one of its items in the questionnaire"
+      }, {
+        "name": "context",
+        "type": "token",
+        "documentation": "A use context assigned to the questionnaire"
+      }, {
+        "name": "context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the questionnaire"
+      }, {
+        "name": "context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the questionnaire"
       }, {
         "name": "date",
         "type": "date",
@@ -437,19 +461,13 @@
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       } ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
       "name": "migrate",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -457,9 +475,6 @@
       "name": "get-resource-counts",
       "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

@@ -1,9 +1,9 @@
-`GET [base]/CommunicationRequest/2554`
+`GET [base]/CommunicationRequest/1836`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4kc3VnZ2VzdC1jYXJlLXRlYW1zIiwiQ29uc2VudC5yZWFkIiwiQ2FyZVBsYW4kdXBkYXRlLWNhcmUtdGVhbXMiLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiJG1pZ3JhdGUiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJQcm92ZW5hbmNlLnJlYWQiLCJDYXJlUGxhbi5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uc2VudC5yZWFkIiwiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ2FyZVBsYW4ucmVhZCIsIiRtaWdyYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiUHJvdmVuYW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,55 +15,23 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2554",
+  "id": "1836",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2024-07-29T13:20:54.518+00:00",
+    "versionId": "1",
+    "lastUpdated": "2025-02-04T15:18:39.704+00:00",
+    "source": "#d8126766-0612-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
-    ],
-    "tag": [
-      {
-        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
-        "code": "xa",
-        "display": "xa"
-      }
     ]
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-2818.local/fhir/ServiceRequest/2553"
+      "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/1835"
     }
   ],
   "status": "active",
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://ehealth.sundhed.dk/cs/message-category",
-          "code": "message",
-          "display": "Message"
-        }
-      ]
-    }
-  ],
-  "doNotPerform": true,
   "subject": {
-    "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/12359"
-  },
-  "occurrencePeriod": {
-    "start": "2024-07-29T13:20:53+00:00"
-  },
-  "reasonCode": [
-    {
-      "coding": [
-        {
-          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
-          "code": "CarePlanCreated",
-          "display": "CarePlan Created"
-        }
-      ]
-    }
-  ]
+    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/15952"
+  }
 }
 ```
