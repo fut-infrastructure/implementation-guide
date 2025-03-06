@@ -45,13 +45,13 @@
       ]
     },
     {
-      "code": "Default role for task and communication",
-      "display": "Default role",
-      "definition": "Default role for communication and task",
+      "code": "default-careteam-for-task-and-communication",
+      "display": "Default careteam for task and communication",
+      "definition": "Default careteam for task and communication",
       "designation": [
         {
           "language": "da",
-          "value": "default-for-communication-and-task - TB updated"
+          "value": "Standard careteam for opgaver og kommunikation"
         }
       ]
     }
