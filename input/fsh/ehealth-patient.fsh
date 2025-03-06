@@ -16,7 +16,7 @@ Parent: DkCorePatient
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "value"
 * telecom ^slicing.rules = #open
-* telecom contains NemSMS 0..* and eBoks 0..*
+* telecom contains NemSMS 0..1 and eBoks 0..1
 * telecom[NemSMS].system = #other
 * telecom[NemSMS].value = "NemSMS" (exactly)
 * telecom[NemSMS].system 1..1
