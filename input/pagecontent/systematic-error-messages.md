@@ -2,7 +2,15 @@
 
 - `GENERAL_SUBJECT_AND_CONTEXT_NOT_PROVIDED`: At least one of subject and context must be provided.
 
-- `GENERAL_VALIDATION_ERROR`: Validation error: %s
+- `GENERAL_VALIDATION_ERROR`: Validation error: %s.
+
+- `GENERAL_TIMING_VALIDATION_ERROR`: Timing is invalid for ServiceRequest with id %s and status %s: %s.
+
+- `GENERAL_VALIDATION_ERROR_NO_OCCURRENCE`: Service request with id %s has no occurrence.
+
+- `GENERAL_TIMING_OCCURENCE_WITHOUT_START_VALIDATION_ERROR`: ServiceRequest with id %s not valid with status: %s since occurrence timing has no start date.
+
+- `GENERAL_TRIGGER_ENABLEMENT_VALIDATION_ERROR`: ServiceRequest cannot be changed from %s to %s %s
 
 - `GENERAL_EXPORT_FAILED`: Export resource has failed.
 
@@ -10,17 +18,23 @@
 
 - `GENERAL_NAMING_SYSTEM_NOT_FOUND`: NamingSystem with identifier %s is not found.
 
+- `GENERAL_FIELD_ACCESS_FAILURE`: Failed to access field: %s
+
+- `GENERAL_FIELD_COMPARE_FAILURE`: Failed to compare field: %s
+
 #### ehealth-actionguidanceview
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_CONTENT_SIZE`: Size of content is greater than the max allowed size. Content size: %s, max size: %s
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_STATUS_CHANGE`: Illegal status change for action_guidance or view from %s and to %s
 
-- `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status)
+- `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status). The following differences were found when updating existing resource with id %s: %s.
 
 #### ehealth-activitydefinition
 
-- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s.
+- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
+
+- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating ActivityDefinition with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
 
 - `ACTIVITYDEFINITION_UPDATE_TO_NOT_ALLOWED_STATE`: Update is not allowed for ActivityDefinition with %s status to different than %s status.
 
@@ -39,6 +53,8 @@
 - `ASSEMBLER_QRD_NOT_ABLE_TO_DETERMINE_QFDD_REFERENCE`: Not able to determine QFDD reference from questionnaire.identifier. Non or more than 1 identifier system starting with 'urn:oid'. Questionnaire: %s.
 
 - `ASSEMBLER_QRD_QR_SOURCE_IS_UNSUPPORTED`: QuestionnaireResponse with id: '%s' has source '%s', which is not supported - Skipping publication
+
+- `ASSEMBLER_QRD_QR_AUTHOR_RESOURCE_NOT_FOUND`: QuestionnaireResponse with id: '%s', no resource found for author reference '%s' - Skipping publication
 
 - `ASSEMBLER_APD_MISSING_SUPPORTING_INFORMATION`: Appointment must have supportingInformation
 
@@ -77,6 +93,14 @@
 #### ehealth-cda
 
 - `CDA_XML_VALIDATION_FAILED`: Validation of the CDA XML failed: %s
+
+#### ehealth-clinical
+
+- `CLINICAL_IMPRESSION_VALIDATION_STATE_FINDING_CODE_NOT_ALLOWED`: Invalidation/Invalidation Retraction finding code is not allowed for ClinicalImpression outside custom operation.
+
+#### ehealth-codesystem
+
+- `CODESYSTEM_CONCEPT_CHANGE_NOT_ALLOWED_WHEN_ACTIVE`: Not allowed to remove or update concept when status is active.
 
 #### ehealth-communicationrequest
 
@@ -156,6 +180,8 @@
 
 - `EPISODEOFCARE_IS_CONTEXT_ALLOWED_MATCH_NOT_FOUND`: It is not possible to set the Episode Of Care as a context
 
+- `EPISODEOFCARE_TEAM_REFERENCE_MISSING`: It is not possible to add or replace team without a CareTeam reference
+
 #### ehealth-library
 
 - `LIBRARY_EVALUATE_NO_INPUT_PARAMETER`: An input parameter of type Parameters should be provided.
@@ -182,9 +208,9 @@
 
 - `LIBRARY_IDENTIFIER_UPDATE_RESTRICTED`: Validation error: attempt to update Library Identifiers list.
 
-- `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s. Number of search results: %s
+- `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s and name: %s. Number of search results: %s
 
-- `LIBRARY_MISSING_IDENTIFIER`: Library %s does not have identifier of type: %s
+- `LIBRARY_MISSING_IDENTIFIER`: Library with identifier: %s and name: %s does not have identifier of type: %s
 
 #### ehealth-measurement
 
@@ -270,7 +296,13 @@
 
 - `MEASUREMENT_SUBMITMEASUREMENT_TOO_FEW_ANSWERS`: QuestionnaireResponse: %s has too few answers for the item with linkId: %s
 
-- `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
+- `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Media data with id %s was not found
+
+- `MEASUREMENT_GET_THUMBNAIL_DATA_NO_DATA_FOUND`: Media thumbnail data with size %d for id %s was not found
+
+- `MEASUREMENT_GET_THUMBNAIL_DATA_NOT_SUPPORTED`: Media thumbnail data for id %s is not supported
+
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_STATUS`: Measurement status %s is invalid. Status must be %s for measurement of type %s
 
 #### ehealth-observation
 
@@ -296,7 +328,9 @@
 
 #### ehealth-plandefinition
 
-- `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s.
+- `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
+
+- `PLANDEFINITION_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating PlanDefinition with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
 
 - `PLANDEFINITION_UPDATE_TO_NOT_ALLOWED_STATE`: Update is not allowed for PlanDefinition with %s status to different than %s status.
 
@@ -316,23 +350,31 @@
 
 #### ehealth-qfdd
 
-- `QFDD_NARRATIVE_MISSING_TEXT_ERROR`: Information section does not have a text element. LinkId: %s
+- `QFDD_DISPLAY_ITEM_MUST_HAVE_A_TEXT`: Display item must have a text. LinkId: %s
 
 - `QFDD_NARRATIVE_MISSING_EXTENSION_ERROR`: Information section does not have a rendering-xhtml extension. LinkId: %s
 
 #### ehealth-questionnaire
 
-- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_IN_STATUS`: Update is not allowed for questionnaires with statuses: %s, %s
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMTPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
 
-- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_STATUS`: Update is not allowed for questionnaires with %s status to different than %s status
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_DATETIME`: QuestionnaireResponse has invalid DateTimeType on effectivePeriod.%s, must have minutes, seconds or millis precision and must have a timezone.
+
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_START_AFTER_END`: QuestionnaireResponse has invalid effectivePeriod, effectivePeriod.start must be before effectivePeriod.end
+
+- `QUESTIONNAIRE_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating Questionnaire with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_IN_STATUS`: Update is not allowed for questionnaires with statuses: %s, %s, except for changes to useContext. The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_STATUS`: Update is not allowed for questionnaires with %s status to different than %s status.
 
 - `QUESTIONNAIRE_NOT_ALLOWED_TO_DELETE_WITH_STATUS`: Delete only possible for questionnaires with status: %s
 
-- `QUESTIONNAIRE_IMAGE_FORMAT_VALIDATION_MESSAGE`:
-  %s Image in questionnaire item with linkID %s and Binary contentType %s does not match any code in ValueSet: %s
+- `QUESTIONNAIRE_IMAGE_FORMAT_VALIDATION_MESSAGE`: 
+%s Image in questionnaire item with linkID %s and Binary contentType %s does not match any code in ValueSet: %s
 
-- `QUESTIONNAIRE_IMAGE_SIZE_VALIDATION_MESSAGE`:
-  %s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
+- `QUESTIONNAIRE_IMAGE_SIZE_VALIDATION_MESSAGE`: 
+%s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
 
 - `QUESTIONNAIRE_QFDD_DOES_NOT_EXIST_IN_DOCUMENT_TRANSFORMATION`: The QFDD with the identifier %s does not exist in document transformation
 
@@ -412,6 +454,28 @@
 
 - `TASK_FOR_NOT_SET`: When episode of care is set, the field 'for' must reference the corresponding patient
 
+- `TASK_MEASUREMENT_VALIDITY_INVALID_MEASUREMENT_REFERENCE`: Expecting ClinicalImpression to include a single Investigations. The investigation must contain two items: one item with an versionless reference and one item with a versioned reference of the Measurement that is being invalidated or retracted.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_INVESTIGATION_ITEM_TYPE`: Investigation item type must be of type Media, Observation or QuestionnaireResponse.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_FINDING_CODE_ON_PREVIOUS`: Previous ClinicalImpression must be of type 'invalidation' when trying to retract invalidation.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_INITIAL_STATUS`: ClinicalImpression for invalidation/retracted invalidation must be created with 'COMPLETED' status.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_DECISION_CODE`: ClinicalImpression must contain a single decision, with a single Coding of code 'invalidated-fulfills' or 'invalidated-is-not-fulfillment'.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_FINDING_CODE`: ClinicalImpression must contain a single finding, with a single Coding of code 'measurement-invalidated' or 'measurement-invalidation-retracted'.
+
+- `TASK_MEASUREMENT_VALIDITY_REFERENCE_MISMATCH`: Mismatch between references: %s(%s) and %s(%s).
+
+- `TASK_MEASUREMENT_VALIDITY_MISSING_PREVIOUS`: Unable to find previous ClinicalImpression when trying to retract invalidation.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_PREVIOUS_EXPECTING_INVALIDATION_RETRACTION`: Previous ClinicalImpression must be of type invalidation retraction when trying to invalidate measurement.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_PREVIOUS_EXPECTING_INVALIDATION`: Previous ClinicalImpression must be of type invalidation when trying to retract invalidation for measurement.
+
+- `TASK_MEASUREMENT_VALIDITY_MULTIPLE_PREVIOUS`: Unable to determine previous invalidation/invalidation retracted ClinicalImpression, due to finding multiple candidates for the Measurement.
+
 #### ehealth-transformation
 
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_CPR_DIDNT_MATCH`: Found document didn't match with CPR
@@ -454,15 +518,15 @@
 
 - `TRANSFORMATION_FROM_QRD_QRD_QUESTION_TYPE_DOES_NOT_MATCH_QUESTIONNAIRE_ITEM_TYPE`: QRD Question type '%s' does not match questionnaire item type '%s'. LinkId: %s.
 
-- `TRANSFORMATION_QRD_UNSUPPORTED_QUESTION_TYPE`: Unsupported Questionnaire type: %s.
+- `TRANSFORMATION_QRD_UNSUPPORTED_QUESTION_TYPE`: Unsupported Questionnaire type: '%s'.
 
-- `TRANSFORMATION_QRD_INVALID_NUMBER_OF_ANSWERS`: QuestionnaireResponse item should contain from %s to %s answers.
+- `TRANSFORMATION_QRD_INVALID_NUMBER_OF_ANSWERS`: QuestionnaireResponse item should contain from '%s' to '%s' answers. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_SLIDER_MISMATCH_BETWEEN_TYPE_AND_SLIDER_STEP`: Questionnaire item with linkId '%s' has itemControl: 'slider' and item.type: 'Integer' but has decimal step value: %s.
+- `TRANSFORMATION_QRD_SLIDER_MISMATCH_BETWEEN_TYPE_AND_SLIDER_STEP`: Questionnaire item with linkId '%s' has itemControl: 'slider' and item.type: 'Integer' but has decimal step value: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_INVALID_SLIDER_EXTENSIONS`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain at least the following extensions: %s.
+- `TRANSFORMATION_QRD_INVALID_SLIDER_EXTENSIONS`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain at least the following extensions: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_NO_SLIDER_STEP_EXTENSION`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain one of the following extensions: %s.
+- `TRANSFORMATION_QRD_NO_SLIDER_STEP_EXTENSION`: Questionnaire item with linkId '%s' has itemControl: 'slider', therefore it must contain one of the following extensions: '%s'. QuestionnaireResponse: '%s'.
 
 - `TRANSFORMATION_QRD_NO_SLIDER_ITEM_CONTROL_EXTENSION`: Questionnaire item with linkId '%s' has no itemControl extension with code: 'slider'.
 
@@ -470,45 +534,61 @@
 
 - `TRANSFORMATION_QRD_XML_MISSING`: Invalid input document reference, it must contain content with data of QRD xml
 
-- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to have exactly one item of display. Found %s items.
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to have exactly one item of display. Found %s items. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION_FOUND_OTHER_TYPE`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to contain exactly one item of type 'display'. Found item of type: '%s'.
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_INFO_SECTION_FOUND_OTHER_TYPE`: QFDD section with title '%s' has no organizers(Information Only Section). Expecting FHIR Questionnaire root group to contain exactly one item of type 'display'. Found item of type: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_IN_ROOT_GROUP_DOES_NOT_MATCH_NUMBER_OF_ORGANIZERS`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain the same number of items with type 'group'. Found: %s.
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_COPYRIGHT_SECTION`: Expecting FHIR Questionnaire root group to have one or more items of type display for structure matching QFDD section with title '%s'. Found %s items. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECTING_ONLY_SUB_GROUPS_IN_ROOT_GROUP`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain only items of type: 'group'.
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_FOR_COPYRIGHT_SECTION_FOUND_OTHER_TYPE`: Expecting FHIR Questionnaire root group to contain only sub items of type 'display'. QFDD section with title '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECTING_ROOT_ITEM_TO_BE_OF_TYPE_GROUP`: Root item on questionnaire is not of type 'group'. Type was: %s
+- `TRANSFORMATION_QRD_EXPECTING_DISPLAY_ITEM_TO_MATCH_COPYRIGHT_ENTRIES_IN_QFDD`: Expecting FHIR Questionnaire root group to contain the same number of display items as copyright entries in the matching QFDD section. QFDD section with title '%s'. Found %s items, expecting %s items. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECTING_ITEM_TO_BE_OF_TYPE_GROUP`: Item is not of type group. Type: %s
+- `TRANSFORMATION_QRD_EXPECTING_ROOT_GROUP_TO_BE_COPYRIGHT`: Expecting FHIR Questionnaire root group isCopyright to be true as corresponding QFDD section is a copyright section. QFDD section with title '%s'. QuestionnaireResponse: '%s'
 
-- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_ON_ROOT_LEVEL_DOES_NOT_MATCH_NUMBER_OF_SECTIONS`: The number of root items on questionnaire does not match the number of QFDD sections. Questionnaire: %s.
+- `TRANSFORMATION_QRD_EXPECTING_COPYRIGHT_SUBITEMS_TO_HAVE_IS_COPYRIGHT_TRUE`: Expecting FHIR Questionnaire root group to contain sub items with isCopyright set to true as corresponding QFDD section is a copyright section. QFDD section with title '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_FOUND_MORE_THAN_ONE_MATCH_FOR_LINKID_IN_QUESTIONNAIRE_RESPONSE`: Found more than 1 match for LinkId in QuestionnaireResponse. LinkId: %s.
+- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_IN_ROOT_GROUP_DOES_NOT_MATCH_NUMBER_OF_ORGANIZERS`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain the same number of items with type 'group'. Found: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_NO_MATCH_FOR_ASSOCIATED_TEXT_QUESTION_IN_QUESTIONNAIRE_RESPONSE`: Found no match for associatedTextQuestion in QuestionnaireResponse. Found Questionnaire item with linkId: %s.
+- `TRANSFORMATION_QRD_EXPECTING_ONLY_SUB_GROUPS_IN_ROOT_GROUP`: QFDD section with title '%s' has %s organizers. Expect FHIR Questionnaire root group to contain only items of type: 'group'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECTING_QUESTIONNAIRE_TIEM_TO_HAVE_EXTERNAL_IDENTIFIER`: Expected questionnaireItem to have externalIdentifier: %s. But was: %s
+- `TRANSFORMATION_QRD_EXPECTING_ROOT_ITEM_TO_BE_OF_TYPE_GROUP`: Root item on questionnaire is not of type 'group'. Type was: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_FOUND_NO_QUESTIONNAIRE_RESPONSE_FOR_ASSOCIATED_TEST_QUESTION`: Found no QuestionnaireResponse for associatedTextQuestion. Found Questionnaire item with linkId: %s.
+- `TRANSFORMATION_QRD_EXPECTING_ITEM_TO_BE_OF_TYPE_GROUP`: Item is not of type group. Type: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_PRECONDITION_DO_NOT_MATCH_THE_QUESTION_FOR_ASSOCIATED_TEXT_QUESTION`: The precondition criterion code does not match the expected question code. Expected: %s. But was: %s
+- `TRANSFORMATION_QRD_NUMBER_OF_ITEMS_ON_ROOT_LEVEL_DOES_NOT_MATCH_NUMBER_OF_SECTIONS`: The number of root items on questionnaire does not match the number of QFDD sections. Questionnaire: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_MULTIPLE_CHOICE_ANSWER_EXPECTING_CODING_TYPE_FOR_VALUE`: Expecting answer value to be of type Coding. QuestionResponseItem with linkId: %s.
+- `TRANSFORMATION_QRD_FOUND_MORE_THAN_ONE_MATCH_FOR_LINKID_IN_QUESTIONNAIRE_RESPONSE`: Found more than 1 match for LinkId in QuestionnaireResponse. LinkId: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_PRECONDITION_GROUP_GROUP_TYPE_UNKNOWN`: Unknown GroupType: %s
+- `TRANSFORMATION_QRD_EXPECTING_QUESTIONNAIRE_TIEM_TO_HAVE_EXTERNAL_IDENTIFIER`: Expected questionnaireItem to have externalIdentifier: '%s'. But was: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_PRECONDITION_MORE_THAN_ONE`: Transformation do not support more than one precondition for associatedTextQuestion. Found %s. AssociatedTextQuestion: %s
+- `TRANSFORMATION_QRD_FOUND_NO_QUESTIONNAIRE_RESPONSE_FOR_ASSOCIATED_TEST_QUESTION`: Found no QuestionnaireResponse for associatedTextQuestion. Found Questionnaire item with linkId: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_EXPECT_IMAGE_IN_QUESTIONNAIRE_ITEM`: Expecting QuestionnaireItem to have an image as the corresponding QFDD question has an image. Question id: %s
+- `TRANSFORMATION_QRD_PRECONDITION_DO_NOT_MATCH_THE_QUESTION_FOR_ASSOCIATED_TEXT_QUESTION`: The precondition criterion code does not match the expected question code. Expected: '%s'. But was: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_NOT_EXPECTING_IMAGE_IN_QUESTIONNAIRE_ITEM`: Not expecting QuestionnaireItem to have an image as the corresponding QFDD question do not have an image. Question id: %s
+- `TRANSFORMATION_QRD_MULTIPLE_CHOICE_ANSWER_EXPECTING_CODING_TYPE_FOR_VALUE`: Expecting answer value to be of type Coding. QuestionResponseItem with linkId: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_UNKNOWN_QRD_RESPONSE_TYPE`: Unknown QRD response type. QRD Question id: %s
+- `TRANSFORMATION_QRD_PRECONDITION_GROUP_GROUP_TYPE_UNKNOWN`: Unknown GroupType: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_ASSOCIATED_TEXT_QUESTION_ITEM_NOT_OF_TYPE_TEXT`: AssociatedTextQuestion item with id: '%s' is not of type 'text'. Type was: %s
+- `TRANSFORMATION_QRD_PRECONDITION_MORE_THAN_ONE`: Transformation do not support more than one precondition for associatedTextQuestion. Found '%s'. AssociatedTextQuestion: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_QRD_QFDD_QUESTION_DOES_NOT_SUPPORT_ASSOCIATED_TEXT_QUESTION`: QFDDQuestion with id: '%s' does not support associatedText. Class was: %s
+- `TRANSFORMATION_QRD_EXPECT_IMAGE_IN_QUESTIONNAIRE_ITEM`: Expecting QuestionnaireItem to have an image as the corresponding QFDD question has an image. Question id: '%s'. QuestionnaireResponse: '%s'.
+
+- `TRANSFORMATION_QRD_NOT_EXPECTING_IMAGE_IN_QUESTIONNAIRE_ITEM`: Not expecting QuestionnaireItem to have an image as the corresponding QFDD question do not have an image. Question id: '%s'. QuestionnaireResponse: '%s'.
+
+- `TRANSFORMATION_QRD_UNKNOWN_QRD_RESPONSE_TYPE`: Unknown QRD response type. QRD Question id: '%s'
+
+- `TRANSFORMATION_QRD_ASSOCIATED_TEXT_QUESTION_ITEM_NOT_OF_TYPE_TEXT_OR_STRING`: AssociatedTextQuestion item with id: '%s' is not of type 'text' or 'string'. Type was: '%s'. QuestionnaireResponse: '%s'.
+
+- `TRANSFORMATION_QRD_QFDD_QUESTION_DOES_NOT_SUPPORT_ASSOCIATED_TEXT_QUESTION`: QFDDQuestion with id: '%s' does not support associatedText. Class was: '%s'. QuestionnaireResponse: '%s'.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_MISSING_START`: QuestionnaireResponse with id: '%s' is missing effective period start.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_START`: QuestionnaireResponse with id: '%s' must have a valid effective period start, including time precision and timezone.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_END`: QuestionnaireResponse with id: '%s' must have a valid effective period end, including time precision and timezone.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EQUAL_BOUNDS`: The low and high bounds of the effective period in QuestionnaireResponse with ID '%s' must not be equal.
 
 - `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
 
@@ -585,6 +665,10 @@
 - `UPLOAD_QFDD_MASTERIDENTIFIER_IS_ALREADY_IN_USE`: The masterIdentifier on the DocumentReference is not unique
 
 - `UPLOAD_QFDD_THE_ID_OF_THE_DOCUMENT_IS_NULL`: Missing Id in the QFDD.
+
+#### ehealth-use
+
+- `USE_CONTEXT_VALIDATION_FAILED`: UseContext validation for %s failed: value code %s not found in %s ValueSet
 
 #### ehealth-versioning
 

@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2024-10-28T02:43:02.564+00:00",
+  "date": "2025-02-06T09:20:02.472+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.4.0"
+    "version": "2.7.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -100,6 +100,10 @@
         "name": "context-type",
         "type": "token",
         "documentation": "A type of use context assigned to the activity definition"
+      }, {
+        "name": "context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the activity definition"
       }, {
         "name": "date",
         "type": "date",
@@ -359,6 +363,18 @@
         "name": "type",
         "type": "token",
         "documentation": "Kind of document (LOINC if possible)"
+      }, {
+        "name": "use-context-context",
+        "type": "token",
+        "documentation": "A use context assigned to the DocumentReference"
+      }, {
+        "name": "use-context-context-type",
+        "type": "token",
+        "documentation": "A type of use context assigned to the DocumentReference"
+      }, {
+        "name": "use-context-context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the DocumentReference"
       } ],
       "operation": [ {
         "name": "validate",
@@ -454,6 +470,10 @@
         "name": "context-type",
         "type": "token",
         "documentation": "A type of use context assigned to the plan definition"
+      }, {
+        "name": "context-type-value",
+        "type": "composite",
+        "documentation": "A use context type and value assigned to the plan definition"
       }, {
         "name": "date",
         "type": "date",
@@ -576,11 +596,6 @@
         "documentation": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."
       } ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
       "name": "migrate-list",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate-list",
@@ -590,9 +605,8 @@
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -600,9 +614,6 @@
       "name": "get-resource-counts",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

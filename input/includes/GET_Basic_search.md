@@ -1,4 +1,4 @@
-`GET [base]/Basic?_profile=http%3A%2F%2Fehealth.sundhed.dk%2Ffhir%2FStructureDefinition%2Fehealth-actionguidance&_count=1`
+`GET [base]/Basic?identifier=e2c437ae-0d07-4289-9c65-c477b7fc9e35&context-type-value=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fusage-context-type%7Cprogram%24http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fehealth-program%7Ckpro&code=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fbasic-resource-type%7Cactionguidance`
 
 __Header__
 ```
@@ -15,31 +15,28 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "9cfc4edc-fca9-4f83-ba14-a8108b5dc64f",
+  "id": "af0db3b9-f03b-4650-ad0f-6ead77535265",
   "meta": {
-    "lastUpdated": "2024-07-29T08:28:50.702+00:00"
+    "lastUpdated": "2025-02-05T10:46:23.125+00:00"
   },
   "type": "searchset",
+  "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://questionnaire.cit-questionnaire-1274.local/fhir/Basic?_count=1&_format=json&_pretty=true&_profile=http%3A%2F%2Fehealth.sundhed.dk%2Ffhir%2FStructureDefinition%2Fehealth-actionguidance"
-    },
-    {
-      "relation": "next",
-      "url": "https://questionnaire.cit-questionnaire-1274.local/fhir?_getpages=9cfc4edc-fca9-4f83-ba14-a8108b5dc64f&_getpagesoffset=1&_count=1&_format=json&_pretty=true&_bundletype=searchset"
+      "url": "https://questionnaire.cit-questionnaire-1509.local/fhir/Basic?_format=json&_pretty=true&code=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fbasic-resource-type%7Cactionguidance&context-type-value=http%3A%2F%2Fterminology.hl7.org%2FCodeSystem%2Fusage-context-type%7Cprogram%24http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fehealth-program%7Ckpro&identifier=e2c437ae-0d07-4289-9c65-c477b7fc9e35"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-1274.local/fhir/Basic/3",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1509.local/fhir/Basic/276",
       "resource": {
         "resourceType": "Basic",
-        "id": "3",
+        "id": "276",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T08:17:12.770+00:00",
-          "source": "#75c29831-d3dc-44",
+          "lastUpdated": "2025-02-05T10:46:22.834+00:00",
+          "source": "#7d608581-5db4-4b",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
           ]
@@ -64,7 +61,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/32842"
+                  "reference": "https://organization.cit-questionnaire-1509.local/fhir/Organization/92812"
                 }
               },
               {
@@ -83,6 +80,24 @@ __Response__
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-version",
             "valueString": "1.0"
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
+            "valueUsageContext": {
+              "code": {
+                "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+                "code": "program",
+                "display": "Program"
+              },
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ehealth.sundhed.dk/cs/ehealth-program",
+                    "code": "kpro"
+                  }
+                ]
+              }
+            }
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
@@ -105,6 +120,11 @@ __Response__
               "code": "actionguidance",
               "display": "Action guidance display"
             }
+          }
+        ],
+        "identifier": [
+          {
+            "value": "e2c437ae-0d07-4289-9c65-c477b7fc9e35"
           }
         ],
         "code": {

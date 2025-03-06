@@ -3,12 +3,12 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2024-10-28T02:08:12.745+00:00",
+  "date": "2025-02-06T09:27:36.530+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "device",
-    "version": "1.11.0"
+    "version": "1.14.0"
   },
   "implementation": {
     "description": "eHealth device service",
@@ -299,19 +299,13 @@
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
       "name": "migrate",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "perform-reindexing-pass",
-      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -319,9 +313,6 @@
       "name": "get-resource-counts",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

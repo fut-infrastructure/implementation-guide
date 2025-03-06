@@ -3,12 +3,12 @@
   "id": "document-query",
   "name": "document-query",
   "status": "active",
-  "date": "2024-10-28T02:12:33.027+00:00",
+  "date": "2025-02-06T09:20:35.069+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-query",
-    "version": "1.9.0"
+    "version": "1.13.0"
   },
   "implementation": {
     "description": "eHealth document-query service",
@@ -116,15 +116,9 @@
       "searchInclude": [ "*" ],
       "searchRevInclude": [ "DocumentReference:patient" ]
     } ],
-    "interaction": [ {
-      "code": "transaction"
-    }, {
-      "code": "history-system"
-    } ],
     "operation": [ {
-      "name": "perform-reindexing-pass",
-      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-perform-reindexing-pass",
-      "documentation": "Forces a single pass of the resource reindexing processor"
+      "name": "reindex-terminology",
+      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     }, {
       "name": "meta",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -132,9 +126,6 @@
       "name": "get-resource-counts",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
-    }, {
-      "name": "reindex-terminology",
-      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
     } ]
   } ]
 }

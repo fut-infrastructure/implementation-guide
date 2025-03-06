@@ -1,4 +1,4 @@
-`GET [base]/Basic/211/_history/2`
+`GET [base]/Basic/280/_history/2`
 
 __Header__
 ```
@@ -15,11 +15,11 @@ __Response__
 ```json
 {
   "resourceType": "Basic",
-  "id": "211",
+  "id": "280",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2024-07-29T08:28:54.890+00:00",
-    "source": "#2acfe525-ea67-49",
+    "lastUpdated": "2025-02-05T10:46:25.528+00:00",
+    "source": "#4f568078-58a5-40",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance"
     ]
@@ -44,7 +44,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-questionnaire-1274.local/fhir/Organization/6784"
+            "reference": "https://organization.cit-questionnaire-1509.local/fhir/Organization/66248"
           }
         },
         {
@@ -65,6 +65,25 @@ __Response__
       "valueString": "1.0"
     },
     {
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext",
+      "valueUsageContext": {
+        "code": {
+          "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type",
+          "code": "range",
+          "display": "Range"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.208.184.100.1",
+              "code": "RAL",
+              "display": "display"
+            }
+          ]
+        }
+      }
+    },
+    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
       "valueCoding": {
         "system": "http://hl7.org/fhir/publication-status",
@@ -77,25 +96,6 @@ __Response__
       "valueReference": {
         "reference": "#1"
       }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-for",
-      "extension": [
-        {
-          "url": "forReference",
-          "valueReference": {
-            "reference": "https://questionnaire.cit-questionnaire-1274.local/fhir/Questionnaire/212"
-          }
-        },
-        {
-          "url": "forType",
-          "valueCoding": {
-            "system": "http://hl7.org/fhir/resource-types",
-            "code": "Questionnaire",
-            "display": "Questionnaire"
-          }
-        }
-      ]
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-actionguidance-type",

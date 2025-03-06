@@ -3,7 +3,7 @@
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -19,9 +19,9 @@ __Body__:
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://88bac606-1a33-4ea9-ba08-a70fd25b332f",
-  "version": "9dd41b72-452e-4965-a2e4-d6cba44ecf38",
-  "name": "3a7bc278-1a97-4231-abce-39667daf5b26",
+  "url": "http://df68b5aa-5e3d-43fc-93ff-8a2ad7c63b6b",
+  "version": "599be68a-19c1-42f2-be6f-fecd8af4d218",
+  "name": "381e72f4-9087-4c7c-b336-8a3b44364a7f",
   "status": "draft",
   "kind": "resource",
   "abstract": true,
@@ -43,18 +43,18 @@ __Response__
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "217",
+  "id": "296",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:29:14.559+00:00",
-    "source": "#f97a6359-b75f-4be9-b479-c43aaed138c3",
+    "lastUpdated": "2025-02-05T10:46:56.702+00:00",
+    "source": "#904175c9-350e-42b6-81b2-380d5826c412",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://88bac606-1a33-4ea9-ba08-a70fd25b332f",
-  "version": "9dd41b72-452e-4965-a2e4-d6cba44ecf38",
-  "name": "3a7bc278-1a97-4231-abce-39667daf5b26",
+  "url": "http://df68b5aa-5e3d-43fc-93ff-8a2ad7c63b6b",
+  "version": "599be68a-19c1-42f2-be6f-fecd8af4d218",
+  "name": "381e72f4-9087-4c7c-b336-8a3b44364a7f",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

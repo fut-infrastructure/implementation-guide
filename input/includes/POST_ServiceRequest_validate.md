@@ -20,7 +20,7 @@ __Body__:
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
-          "lastUpdated": "2024-07-29T13:22:59.976+00:00",
+          "lastUpdated": "2025-02-04T15:20:45.671+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -29,7 +29,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-2818.local/fhir/EpisodeOfCare/2867"
+              "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/2056"
             }
           },
           {
@@ -86,7 +86,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 1660241136,
+                  "value": -1257940800,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -110,7 +110,7 @@ __Body__:
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2024-07-29T13:22:59+00:00"
+                  "start": "2025-02-04T15:20:45+00:00"
                 }
               }
             ]
@@ -121,7 +121,7 @@ __Body__:
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-2818.local/fhir/ActivityDefinition/96921"
+          "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/42734"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -132,10 +132,13 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "a3624f9b-642f-4461-91ec-0d64a76f23a3"
+          "text": "44dd7726-2f0c-435e-b98d-b80697a0b978"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-2818.local/fhir/Patient/41161"
+          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/67959"
+        },
+        "occurrencePeriod": {
+          "start": "2025-01-30T15:20:45+00:00"
         }
       }
     }

@@ -1,9 +1,9 @@
-`GET [base]/StructureDefinition?name=32996e25-0bed-4f00-ae69-8581f890439c`
+`GET [base]/StructureDefinition?name=0fcb4459-cdbc-422f-bc2b-cae703801afd`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,34 +15,34 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "b7179cd0-ca33-402b-adb2-ae1344973e5f",
+  "id": "c7c561eb-58b7-4f1d-9bdb-534f3cec3e27",
   "meta": {
-    "lastUpdated": "2024-07-29T08:29:16.779+00:00"
+    "lastUpdated": "2025-02-05T10:46:58.878+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://questionnaire.cit-questionnaire-1274.local/fhir/StructureDefinition?_format=json&_pretty=true&name=32996e25-0bed-4f00-ae69-8581f890439c"
+      "url": "https://questionnaire.cit-questionnaire-1509.local/fhir/StructureDefinition?_format=json&_pretty=true&name=0fcb4459-cdbc-422f-bc2b-cae703801afd"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-1274.local/fhir/StructureDefinition/219",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1509.local/fhir/StructureDefinition/298",
       "resource": {
         "resourceType": "StructureDefinition",
-        "id": "219",
+        "id": "298",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T08:29:15.377+00:00",
-          "source": "#50a6d39e-0d34-97",
+          "lastUpdated": "2025-02-05T10:46:58.402+00:00",
+          "source": "#c65ccbf5-64b0-94",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "http://afabd4de-5d2c-4ed9-9a5f-ec8be89ff7de",
-        "name": "32996e25-0bed-4f00-ae69-8581f890439c",
+        "url": "http://c3bfda24-2c05-4026-93a9-51256b01a51a",
+        "name": "0fcb4459-cdbc-422f-bc2b-cae703801afd",
         "status": "draft",
         "kind": "resource",
         "abstract": true,
@@ -63,20 +63,20 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://questionnaire.cit-questionnaire-1274.local/fhir/StructureDefinition/221",
+      "fullUrl": "https://questionnaire.cit-questionnaire-1509.local/fhir/StructureDefinition/300",
       "resource": {
         "resourceType": "StructureDefinition",
-        "id": "221",
+        "id": "300",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2024-07-29T08:29:16.623+00:00",
-          "source": "#10cb8928-7426-47",
+          "lastUpdated": "2025-02-05T10:46:58.794+00:00",
+          "source": "#74986432-81d5-4f",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
           ]
         },
-        "url": "http://80359331-ede8-45c2-9d6a-617465bcbf7a",
-        "name": "32996e25-0bed-4f00-ae69-8581f890439c",
+        "url": "http://8b0980f9-c06a-48b6-b967-a1afcba1100e",
+        "name": "0fcb4459-cdbc-422f-bc2b-cae703801afd",
         "status": "draft",
         "kind": "resource",
         "abstract": true,

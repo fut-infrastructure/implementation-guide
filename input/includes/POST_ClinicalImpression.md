@@ -23,22 +23,11 @@ __Body__:
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/25838"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes",
-            "code": "approved-for-sharing"
-          }
-        ]
+        "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/9883"
       }
     }
   ],
-  "status": "in-progress",
+  "status": "completed",
   "code": {
     "coding": [
       {
@@ -48,8 +37,20 @@ __Body__:
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1940.local/fhir/Patient/57003"
-  }
+    "reference": "https://patient.cit-task-2140.local/fhir/Patient/15476"
+  },
+  "finding": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes",
+            "code": "data-absent"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
 
@@ -57,11 +58,11 @@ __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "290",
+  "id": "317",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2024-07-29T08:56:09.936+00:00",
-    "source": "#ed81bd0f-8699-4f0a-87cc-3134d8a1d542",
+    "lastUpdated": "2025-02-05T11:48:35.306+00:00",
+    "source": "#08524e09-692a-483d-9243-f8ad03b3f06c",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -70,22 +71,11 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-1940.local/fhir/EpisodeOfCare/25838"
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes",
-            "code": "approved-for-sharing"
-          }
-        ]
+        "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/9883"
       }
     }
   ],
-  "status": "in-progress",
+  "status": "completed",
   "code": {
     "coding": [
       {
@@ -95,8 +85,20 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-1940.local/fhir/Patient/57003"
+    "reference": "https://patient.cit-task-2140.local/fhir/Patient/15476"
   },
-  "date": "2024-07-29T08:56:09+00:00"
+  "date": "2025-02-05T11:48:35+00:00",
+  "finding": [
+    {
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes",
+            "code": "data-absent"
+          }
+        ]
+      }
+    }
+  ]
 }
 ```
