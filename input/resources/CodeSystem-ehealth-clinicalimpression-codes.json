@@ -99,6 +99,17 @@
           "value": "Godkendt visning"
         }
       ]
+    },
+    {
+      "code": "MeasurementValidityUpdate",
+      "display": "Update of measurement validity",
+      "definition": "Update of measurement validity",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Opdatering af gyldighed for måling"
+        }
+      ]
     }
   ]
 }
