@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-property",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-program",
+  "version": "2025-03-05T09:00:00",
+  "name": "eHealthProperty",
+  "title": "eHealth Property",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-03-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Codes used to identity specific properties on codes in eHealth CodeSystems.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "phmr-unit",
+      "display": "PHMR Unit",
+      "definition": "The unit to be used when transforming Observations to PHMR Measurement."
+    },
+    {
+      "code": "phmr-codesystem-name",
+      "display": "PHMR CodeSystem Name",
+      "definition": "The name of the CodeSystem to be used when transforming Observations to PHMR Measurement."
+    }
+  ]
+}

@@ -76,12 +76,44 @@
     {
       "code": "DNK05472",
       "display": "Blodtryk systolisk;Arm",
-      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg"
+      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk systolisk;Arm"
+        }
+      ]
     },
     {
       "code": "DNK05473",
       "display": "Blodtryk diastolisk;Arm",
-      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
+      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk diastolisk;Arm"
+        }
+      ]
     },
     {
       "code": "DNK35842",
@@ -137,6 +169,12 @@
       "code": "MCS88015",
       "display": "FEV1;Lunge",
       "definition": "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "L"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -145,6 +183,14 @@
             "code": "consumer"
           },
           "value": "FEV1"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "FEV1;Lunge"
         }
       ]
     },
@@ -177,6 +223,12 @@
       "code": "MCS88019",
       "display": "Blodtryk hjemme systolisk;Arm",
       "definition": "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -185,6 +237,14 @@
             "code": "consumer"
           },
           "value": "Systolisk blodtryk"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk hjemme systolisk;Arm"
         }
       ]
     },
@@ -192,6 +252,12 @@
       "code": "MCS88020",
       "display": "Blodtryk hjemme diastolisk;Arm",
       "definition": "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -200,6 +266,14 @@
             "code": "consumer"
           },
           "value": "Diastolisk blodtryk"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk hjemme diastolisk;Arm"
         }
       ]
     },
@@ -207,6 +281,12 @@
       "code": "MCS88021",
       "display": "MRC skala;Pt(KOL)",
       "definition": "Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": ""
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -215,6 +295,14 @@
             "code": "consumer"
           },
           "value": "MRC"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "MRC skala;Pt(KOL)"
         }
       ]
     },
@@ -327,6 +415,12 @@
       "code": "MCS88050",
       "display": "Rejse sætte sig testen;Pt",
       "definition": "Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/ 30 sek",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "× 1/30s"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -335,6 +429,14 @@
             "code": "consumer"
           },
           "value": "Rejse-sætte-sig-test"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Rejse sætte sig testen;Pt"
         }
       ]
     },
@@ -447,6 +549,12 @@
       "code": "NPU03011",
       "display": "O2 sat.;Hb(aB)",
       "definition": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": ""
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -455,6 +563,14 @@
             "code": "consumer"
           },
           "value": "Iltmætning"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "O2 sat.;Hb(aB)"
         }
       ]
     },
@@ -497,6 +613,12 @@
       "code": "NPU03804",
       "display": "Legeme vægt;Pt",
       "definition": "Pt—Legeme; masse = ? kg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "kg"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -505,6 +627,14 @@
             "code": "consumer"
           },
           "value": "Vægt"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Legeme vægt;Pt"
         }
       ]
     },
@@ -512,6 +642,12 @@
       "code": "NPU27281",
       "display": "BMI;Pt",
       "definition": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "kg/m²"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -520,6 +656,14 @@
             "code": "consumer"
           },
           "value": "BMI"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "BMI;Pt"
         }
       ]
     },
@@ -591,12 +735,34 @@
     {
       "code": "NPU19748",
       "display": "C-reaktivt protein [CRP];P",
-      "definition": "P—C-reaktivt protein; massek. = ? mg/L"
+      "definition": "P—C-reaktivt protein; massek. = ? mg/L",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mg/L"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "C-reaktivt protein [CRP];P"
+        }
+      ]
     },
     {
       "code": "NPU21692",
       "display": "Puls;Hjerte",
       "definition": "Hjerte—Systole; frekv. = ? × 1/min",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "× 1/min"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -605,6 +771,14 @@
             "code": "consumer"
           },
           "value": "Puls"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Puls;Hjerte"
         }
       ]
     },
@@ -661,7 +835,23 @@
     {
       "code": "MCS88100",
       "display": "FEV6;Lunge",
-      "definition": "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L"
+      "definition": "Lunge—Lungefunktionsundersøgelse COPD FEV6; vol. = ? L",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "L"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "FEV6;Lunge"
+        }
+      ]
     },
     {
       "code": "MCS88099",
@@ -702,6 +892,12 @@
       "code": "MCS88137",
       "display": "CAT score;Pt",
       "definition": "Pt—CORD Assessment Test (CAT) score; antal(værdi 0-40) = ?",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": ""
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -710,6 +906,14 @@
             "code": "consumer"
           },
           "value": "CAT"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "CAT score;Pt"
         }
       ]
     },
