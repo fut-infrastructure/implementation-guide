@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "ehealth-property",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-program",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-property",
   "version": "2025-03-05T09:00:00",
   "name": "eHealthProperty",
   "title": "eHealth Property",
