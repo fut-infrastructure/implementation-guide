@@ -27,11 +27,6 @@
       "code": "phmr-unit",
       "display": "PHMR Unit",
       "definition": "The unit to be used when transforming Observations to PHMR Measurement."
-    },
-    {
-      "code": "phmr-codesystem-name",
-      "display": "PHMR CodeSystem Name",
-      "definition": "The name of the CodeSystem to be used when transforming Observations to PHMR Measurement."
     }
   ]
 }

@@ -37,6 +37,12 @@
   "description": "Procedure and observation codes used for communication and administration of laboratory results in Denmark.",
   "caseSensitive": true,
   "content": "complete",
+  "property": [
+    {
+      "code": "phmr-unit",
+      "type": "string"
+    }
+  ],
   "concept": [
     {
       "code": "DIB0010",

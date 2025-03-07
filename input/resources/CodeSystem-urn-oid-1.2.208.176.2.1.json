@@ -30,8 +30,8 @@
   "content": "complete",
   "property": [
     {
-      "code": "phmr-codesystem-name",
-      "valueString": "NPU Terminologien"
+      "code": "phmr-unit",
+      "type": "string"
     }
   ],
   "concept": [
