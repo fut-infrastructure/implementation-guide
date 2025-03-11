@@ -90,7 +90,7 @@
         ]
       },
       {
-        "system": "urn-oid-1.2.208.184.100.8",
+        "system": "urn:oid:1.2.208.184.100.8",
         "concept": [
           {
             "code": "NPU19748",
