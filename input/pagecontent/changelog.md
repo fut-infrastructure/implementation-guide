@@ -1,5 +1,25 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 3.5.0
+## Unreleased changes
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+- Updated $match for patient
+- Updated $create-patient for historical CPRs
+
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Updated IG intro for ehealth-patient
+- Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
+- Added YderNummer NamingSystem
+
+#### ServiceRequest (ehealth-servicerequest)
+### Search parameters
+
 ## 3.4.1 (2025-03-12)
 
 ### General changes
@@ -28,9 +48,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are `completed` for Media/QuestionnaireResponse and `final` for Observation.
 - Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
-#### Instance operations
-- Updated $match for patient
-- Updated $create-patient for historical CPRs
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added http://ehealth.sundhed.dk/cs/media-usage-mode
