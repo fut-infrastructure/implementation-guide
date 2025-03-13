@@ -6,9 +6,6 @@ See http://build.fhir.org/ig/FHIR/ig-guidance/index.html
 ### General documentation for doing IG publications
 See https://confluence.hl7.org/display/FHIR/Maintaining+a+FHIR+IG+Publication
 
-### Version number of HEAD/latest
-In order to have traceability and not use `latest`or `SNAPSHOT` in the CI version of the IG, the version [here](https://github.com/fut-infrastructure/implementation-guide/blob/master/sushi-config.yaml#L10) ([at this point in time](https://github.com/fut-infrastructure/implementation-guide/commit/87984511188dce487a2ccbc490d5985981b83aa3)) should be a semantic version + a build number (constructed as a function of time) e.g. `3.3.0-20240516134561`.
-
 ### Location of the master CI/CD build
 See http://build.fhir.org/ig/fut-infrastructure/implementation-guide/branches/master/index.html (master branch also defaults to http://build.fhir.org/ig/fut-infrastructure/implementation-guide/index.html)
 
@@ -20,12 +17,10 @@ Releases of the IG can be found under https://ehealth.sundhed.dk/fhir/history.ht
 
 Versioned releases will be under https://ehealth.sundhed.dk/fhir/x.y.z . This means that latest released, e.g. 3.2.0 will be under the links https://ehealth.sundhed.dk/fhir AND https://ehealth.sundhed.dk/fhir/3.2.0
 
-
 ### GOTCHA's
 Dont use `/`'s in the branch name as those branches will never be built by the HL7 CI pipeline.
 
 The CI/CD pipeline uses the HL7 CI/CD infrastructure and Github webhooks which is documented here https://github.com/FHIR/auto-ig-builder
-
 
 ## Local development
 
@@ -38,7 +33,7 @@ Do `docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 ### Combined
 Do `rm -rf output && rm -rf temp/ && ./_genonce.sh && docker run -p 80:80 -v $(pwd)/output:/usr/share/nginx/html nginx`
 
-# \<Formal publications\>
+# Formal publications
 The Implementation Guide Publisher (IGP for short) makes a set of assumptions that any formal publications needs to adhere to (documented here https://confluence.hl7.org/pages/viewpage.action?pageId=81027536#MaintainingaFHIRIGPublication-DirectoryStructure and here https://confluence.hl7.org/display/FHIR/IG+Publication+Request+Documentation for the https://github.com/fut-infrastructure/implementation-guide/blob/master/publication-request.json the file). When a publication process is to be executed, the following content needs to be cloned:
 
 - https://github.com/fut-infrastructure/implementation-guide (this repo)
@@ -98,15 +93,3 @@ Event messages are documented in the markdown file `/input/pagecontent/event-mes
 1. In the hapi-fhir-base project, run the test GenerateEventsForIGTest.
 2. Locate the file `eventmessages.md` in the root of the hapi-fhir-base project.
 3. Copy the file to `/input/pagecontent/event-messages.md` in the implementationguide project.
-
-### Auto deployment - DEPRECATED SECTION
-
-All commits to `master` branch is automatically build as html and deployed to s3.
-
-http://ehealth-documentation.s3-website-eu-west-1.amazonaws.com/
-
-The output of the igpublisher is uploaded to `s3://ehealth-documentation/vx.x.x/ig/`
-where `x.x.x` is taken from `pages/_data/version.yaml`.
-
-When creating a new version in `ig.json`, remember to add the new version in the `static/index.html` file to be able to browse to the new version.
-
