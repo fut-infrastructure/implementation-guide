@@ -267,6 +267,48 @@
           "value": "C-reaktivt protein [CRP];P"
         }
       ]
+    },
+    {
+      "code": "DNK05472",
+      "display": "Blodtryk systolisk;Arm",
+      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk systolisk;Arm"
+        }
+      ]
+    },
+    {
+      "code": "DNK05473",
+      "display": "Blodtryk diastolisk;Arm",
+      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk diastolisk;Arm"
+        }
+      ]
     }
   ]
 }

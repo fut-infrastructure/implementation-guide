@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "dk-ihe-eventcodelists-vs",
   "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "name": "DK_IHE_EventCodeLists_VS",
   "title": "DK_IHE_EventCodeLists_VS",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-18T10:19:12+01:00",
+  "date": "2025-03-07T00:00:00+01:00",
   "publisher": "Sundhedsdatastyrelsen",
   "contact": [
     {
@@ -86,12 +86,7 @@
           {
             "code": "NPU27281",
             "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
-          }
-        ]
-      },
-      {
-        "system": "urn:oid:1.2.208.184.100.8",
-        "concept": [
+          },
           {
             "code": "NPU19748",
             "display": "C-reaktivt protein [CRP];P"
@@ -103,7 +98,12 @@
           {
             "code": "DNK05473",
             "display": "Blodtryk diastolisk;Arm"
-          },
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.8",
+        "concept": [
           {
             "code": "MCS88100",
             "display": "FEV6;Lunge"
