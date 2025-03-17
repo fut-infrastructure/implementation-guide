@@ -30,7 +30,7 @@
   "content": "complete",
   "concept": [
     {
-      "code": "urn:ad:dk:medcom:phmr-v2.0:full",
+      "code": "urn:ad:dk:medcom:phmr-v2.1:full",
       "display": "DK PHMR schema",
       "definition": "Document adheres to HL7 PHMR DK profile ver. 2.1.0"
     },
