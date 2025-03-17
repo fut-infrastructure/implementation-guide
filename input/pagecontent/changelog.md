@@ -15,6 +15,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated IG intro for ehealth-patient
 - Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
 - Added YderNummer NamingSystem
+- ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
+- ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
 
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
