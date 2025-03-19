@@ -9,6 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated $create-patient for historical CPRs
 
 ### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
