@@ -1,5 +1,27 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased changes
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+- Updated $match for patient
+- Updated $create-patient for historical CPRs
+
+### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Updated IG intro for ehealth-patient
+- Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
+- Added YderNummer NamingSystem
+- ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
+- ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
+
+#### ServiceRequest (ehealth-servicerequest)
+### Search parameters
+
 ## 3.4.1 (2025-03-12)
 
 ### General changes
@@ -17,9 +39,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
-
 ## 3.4.0 (2025-02-19)
-
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
@@ -28,7 +48,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are `completed` for Media/QuestionnaireResponse and `final` for Observation.
 - Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
-#### Instance operations
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added http://ehealth.sundhed.dk/cs/media-usage-mode
@@ -90,12 +109,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 - Added Governance principles section to ehealth-actionguidance and ehealth-view.
 - Changed Governance principles section to ehealth-plandefinition.
+
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
 ### Search parameters
 - Added search parameters `relatedTo`, `series` and `usageMode` on `ehealth-media` (`Media`).
-
 
 ## 3.3.0 (2024-11-07)
 
