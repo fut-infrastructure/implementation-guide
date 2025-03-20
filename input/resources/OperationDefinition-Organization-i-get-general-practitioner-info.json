@@ -1,0 +1,29 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Organization-i-get-general-practitioner-info",
+  "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-get-general-practitioner-info",
+  "name": "get-general-practitioner-info",
+  "title": "Resolve to general practitioner information",
+  "status": "active",
+  "kind": "operation",
+  "description": "This operation resolves to general practitioner information and returns an organization. In case all providerNumbers are not the same in the input parameter(s), an OperationOutcome is returned with an explicit error. \n If multiple Organizations match the Provider number, their common parent Organization is returned.\n In case of a single Organization matches, the matching Organization is returned. Otherwise, an OperationOutcome is returned with an explicit error",
+  "affectsState": false,
+  "code": "get-general-practitioner-info",
+  "resource": [ "Organization" ],
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [ {
+    "name": "providerIdentifier",
+    "use": "in",
+    "min": 1,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Organization"
+  } ]
+}

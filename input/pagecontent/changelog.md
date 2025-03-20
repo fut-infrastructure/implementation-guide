@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased changes
 ### General changes
 ### Custom operations
+- Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to resolve to general practitioner information.
 #### System operations
 #### Instance operations
 - Updated $match for patient
