@@ -43,6 +43,17 @@
           "value": "Sekundær kontaktperson"
         }
       ]
+    },
+    {
+      "code": "Default-careteam-for-task-and-communication",
+      "display": "Default careteam for task and communication",
+      "definition": "Default careteam for task and communication",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Standard careteam for opgaver og kommunikation"
+        }
+      ]
     }
   ]
 }
