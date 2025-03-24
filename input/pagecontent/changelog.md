@@ -10,7 +10,18 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- Added code `invalid-observation-code` to http://ehealth.sundhed.dk/cs/document-sharing-state
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-designation-use
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-property
+- Added codes `DNK05472` and `DNK05473` to CodeSystem urn:oid:1.2.208.176.2.1
+- Updated CodeSystem urn:oid:1.2.208.176.2.1 with phmr-unit property and phmr-short-name designations
+- Updated CodeSystem urn:oid:1.2.208.184.100.8 with phmr-unit property and phmr-short-name designations
+- Added code `urn:ad:dk:medcom:phmr-v2.1:full` to CodeSystem urn:oid:1.2.208.184.100.10
 ### ValueSets
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-designation-use
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-property
+- Aligned ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs with DK-IHE_Metadata Value_sets 1.0.5
+- Included code `urn:ad:dk:medcom:phmr-v2.1:full` to ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs
 ### ConceptMaps
 ### Resource/profile changes
 - Updated IG intro for ehealth-patient
