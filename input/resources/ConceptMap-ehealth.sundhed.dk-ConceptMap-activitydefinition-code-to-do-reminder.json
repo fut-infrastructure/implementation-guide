@@ -22,11 +22,11 @@
     }
   ],
   "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
-  "targetUri": "http://terminology.hl7.org/ValueSet/v2-0532",
+  "targetUri": "http://terminology.hl7.org/ValueSet/v2-0136",
   "group": [
     {
       "source": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "TBD",
@@ -131,7 +131,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.1",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "NPU03011",
@@ -213,7 +213,7 @@
     },
     {
       "source": "urn:oid:1.2.208.184.100.8",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "MCS88015",
@@ -351,7 +351,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.4",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "ZZ3170",
@@ -368,7 +368,7 @@
     },
     {
       "source": "http://snomed.info/sct",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "445988008",
@@ -429,7 +429,7 @@
     },
     {
       "source": "http://loinc.org",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
 
         {
@@ -502,7 +502,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.4",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "ALCA00",

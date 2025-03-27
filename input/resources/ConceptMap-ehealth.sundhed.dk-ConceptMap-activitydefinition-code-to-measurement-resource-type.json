@@ -353,7 +353,7 @@
     },
     {
       "source": "http://loinc.org",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
           "code": "72287-6",
