@@ -6,8 +6,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- CodeSystems using property deprecated, is updated with definition of the property
 ### ValueSets
 ### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 ### Resource/profile changes
 ### Search parameters
 
@@ -20,8 +23,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- CodeSystems using property deprecated, is updated with definition of the property
 ### ValueSets
+- ValueSets must use display values from CodeSystem
 ### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
 ### Resource/profile changes
 ### Search parameters
 
@@ -35,7 +43,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated $create-patient for historical CPRs
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
-- CodeSystems using property deprecated, is updated with definition of the property
 - Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
 - Added code `invalid-observation-code` to http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-designation-use
@@ -46,7 +53,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code `urn:ad:dk:medcom:phmr-v2.1:full` to CodeSystem urn:oid:1.2.208.184.100.10
 - Removed CodeSystems: http://ehealth.sundhed.dk/cs/medcom-device-types and urn:oid:1.2.208.184.100.3 (MedCom Instrument Codes) - (Previously used for transforming to/from old PHMR versions)
 ### ValueSets
-- ValueSets must use display values from CodeSystem
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-designation-use
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-property
 - Aligned ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs with DK-IHE_Metadata Value_sets 1.0.5
@@ -54,9 +60,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Removed ValueSets: http://ehealth.sundhed.dk/vs/medcom-device-type and http://ehealth.sundhed.dk/vs/medcom-instrument-code-device-type (Previously used for transforming to/from old PHMR versions)
 - Added codes `DNK05472` and `DNK05473` from CodeSystem urn:oid:1.2.208.176.2.1 to ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
-- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
-- ConceptMaps must use display values from CodeSystem
-- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
 - Removed ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-device-type-to-medcom-device-type (Previously used for transforming to/from old PHMR versions)
 - Added mapping for codes DNK05472 and DNK05473 in ConceptMaps: 
   - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
