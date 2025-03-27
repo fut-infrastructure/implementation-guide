@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
