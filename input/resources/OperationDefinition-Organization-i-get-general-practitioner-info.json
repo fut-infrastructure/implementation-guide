@@ -3,10 +3,10 @@
   "id": "Organization-i-get-general-practitioner-info",
   "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-get-general-practitioner-info",
   "name": "get-general-practitioner-info",
-  "title": "Resolve to general practitioner information",
+  "title": "Get organization information for a healthcare provider with provider number",
   "status": "active",
   "kind": "operation",
-  "description": "This operation resolves to general practitioner information and returns an organization. In case all providerNumbers are not the same in the input parameter(s), an OperationOutcome is returned with an explicit error. \n If multiple Organizations match the Provider number, their common parent Organization is returned.\n In case of a single Organization matches, the matching Organization is returned. Otherwise, an OperationOutcome is returned with an explicit error",
+  "description": "The operation resolves the input organization(s) to the shared organization for organizations that have a provider number. In case a single organization exists in the service's storage has the provider number, that organization is returned. \nAnother common case is that multiple organization share the provider number in which case the shared parent organization is returned. \nAn OperationOutcome with an explicit error is returned in the following cases: multiple organizations have the provider number but do not have a shared parent; input organizations have different provider number. \nA typical use of the operation is to get name, address and telecom details for a general practitioner of which many provider numbers are assigned to a single organization but some provider numbers are shared in a common practice. \nCurrently, the provider number needs to be stated in the input reference with Reference.identifier.system: \"urn:oid:1.2.208.176.1.4\" and Reference.identifier.value: set to the provider number.",
   "affectsState": false,
   "code": "get-general-practitioner-info",
   "resource": [ "Organization" ],
@@ -14,11 +14,12 @@
   "type": false,
   "instance": false,
   "parameter": [ {
-    "name": "providerIdentifier",
+    "name": "organization",
     "use": "in",
     "min": 1,
     "max": "*",
-    "type": "Reference"
+    "type": "Reference",
+    "documentation": "Reference to Organization"
   }, {
     "name": "return",
     "use": "out",

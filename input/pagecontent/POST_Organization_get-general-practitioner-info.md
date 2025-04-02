@@ -14,7 +14,7 @@ __Body__:
 {
   "resourceType": "Parameters",
   "parameter": [ {
-    "name": "providerIdentifier",
+    "name": "organization",
     "valueReference": {
       "reference": "https://organization.local.ehealth.sundhed.dk/fhir/Organization/10445",
       "identifier": {
