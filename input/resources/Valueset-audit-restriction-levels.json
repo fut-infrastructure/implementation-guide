@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-audit-restriction-levels-valueset",
+  "url": "http://ehealth.sundhed.dk/vs/audit-restriction-levels",
+  "version": "1.0.0",
+  "name": "CustomSecurityLabelsValueSet",
+  "title": "Custom Security Labels for Non-Citizens and Non-Guardians ValueSet",
+  "status": "active",
+  "description": "This value set includes standard security labels as defined by FHIR and custom labels related to non-citizens and non-guardians.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://hl7.org/fhir/R4/valueset-security-labels.html",
+        "version": "R4",
+        "display": "Security Labels",
+        "concept": []
+      },
+      {
+        "system": "http://example.org/fhir/custom-security-labels",
+        "concept": [
+          {
+            "code": "NotCitizen",
+            "display": "Not a Citizen",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Ikke borger"
+              }
+            ]
+          },
+          {
+            "code": "NotGuardian",
+            "display": "Not a Guardian",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Ikke forældremyndighedsindehaver"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
