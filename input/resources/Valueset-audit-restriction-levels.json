@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://hl7.org/fhir/valueset-security-labels.html",
+        "system": "http://hl7.org/fhir/ValueSet/security-labels",
         "concept": []
       },
       {
