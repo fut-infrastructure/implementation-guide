@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-audit-restriction-levels",
+  "url": "http://ehealth.sundhed.dk/fhir/audit-restriction-levels",
+  "version": "1.0.0",
+  "name": "eHealthAuditEventRestrictionLevels",
+  "title": "Audit Event Restriction Levels",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-04-01T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Audit Event Restriction Levels for defining restriction levels related to non-citizens and non-guardians, used in the AuditEvent.securityLevel field.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "NotCitizen",
+      "display": "Not a Citizen",
+      "definition": "Indicates the person is not a citizen, and thus has a restricted access level.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ikke borger"
+        }
+      ]
+    },
+    {
+      "code": "NotGuardian",
+      "display": "Not a Guardian",
+      "definition": "Indicates the person is not a legal guardian, and thus has a restricted access level.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ikke forældremyndighedsindehaver"
+        }
+      ]
+    }
+  ]
+}
