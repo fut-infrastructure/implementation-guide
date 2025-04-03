@@ -29,7 +29,7 @@
         ]
       },
       {
-        "system": "http://ehealth.sundhed.dk/cs/audit-restriction-levels"
+        "system": "http://ehealth.sundhed.dk/fhir/audit-restriction-levels"
       }
     ]
   }
