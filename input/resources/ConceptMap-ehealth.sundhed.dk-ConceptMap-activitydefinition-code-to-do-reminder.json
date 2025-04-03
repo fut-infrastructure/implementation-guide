@@ -157,7 +157,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "O2 sat.;Hb(aB)",
+          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
           "target": [
             {
               "code": "Y",
@@ -168,7 +168,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Puls;Hjerte",
+          "display": "Hjerte—Systole; frekv. = ? × 1/min",
           "target": [
             {
               "code": "Y",
@@ -179,7 +179,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Legeme vægt; Pt",
+          "display": "Pt—Legeme; masse = ? kg",
           "target": [
             {
               "code": "Y",
@@ -220,18 +220,8 @@
               "equivalence": "relatedto"
             }
           ]
-        },
-        {
-          "code": "NPU19748",
-          "display": "C-reaktivt protein [CRP];P",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        }      ]
+        }
+      ]
     },
     {
       "source": "urn:oid:1.2.208.184.100.8",
