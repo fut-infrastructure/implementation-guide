@@ -154,17 +154,6 @@
               "equivalence": "relatedto"
             }
           ]
-        },
-        {
-          "code": "NPU19748",
-          "display": "C-reaktivt protein [CRP];P",
-          "target": [
-            {
-              "code": "Observation",
-              "display": "Observation",
-              "equivalence": "relatedto"
-            }
-          ]
         }
       ]
     },
