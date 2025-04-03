@@ -106,7 +106,7 @@
     },
     {
       "code": "NPU03794",
-      "display": "Legeme højde;Pt",
+      "display": "Pt—Legeme; højde = ? m",
       "definition": "Pt—Legeme; højde = ? m",
       "designation": [
         {
@@ -151,7 +151,7 @@
     },
     {
       "code": "NPU19748",
-      "display": "C-reaktivt protein [CRP];P",
+      "display": "P—C-reaktivt protein; massek. = ? mg/L",
       "definition": "P—C-reaktivt protein; massek. = ? mg/L",
       "designation": [
         {

@@ -98,18 +98,6 @@
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
           ]
-        },
-        {
-          "code": "NPU19748",
-          "display": "P—C-reaktivt protein; massek. = ? mg/L",
-          "target": [
-            {
-              "code": "integer",
-              "display": "integer",
-              "equivalence": "specializes",
-              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
-            }
-          ]
         }
       ]
     },

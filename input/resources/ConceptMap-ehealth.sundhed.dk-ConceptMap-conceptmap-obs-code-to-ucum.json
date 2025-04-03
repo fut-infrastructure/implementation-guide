@@ -28,7 +28,7 @@
       "element": [
         {
           "code": "NPU03011",
-          "display": "O2 sat.;Hb(aB)",
+          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
           "target": [
             {
               "code": "%",
@@ -40,7 +40,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Puls;Hjerte",
+          "display": "Hjerte—Systole; frekv. = ? × 1/min",
           "target": [
             {
               "code": "1/min",
@@ -52,7 +52,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Legeme vægt; Pt",
+          "display": "Pt—Legeme; masse = ? kg",
           "target": [
             {
               "code": "kg",
@@ -93,18 +93,6 @@
             {
               "code": "Cel",
               "display": "degree Celcius",
-              "equivalence": "specializes",
-              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
-            }
-          ]
-        },
-        {
-          "code": "NPU19748",
-          "display": "P—C-reaktivt protein; massek. = ? mg/L",
-          "target": [
-            {
-              "code": "mg/L",
-              "display": "milligram per liter",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
