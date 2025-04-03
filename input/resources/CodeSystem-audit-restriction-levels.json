@@ -20,19 +20,31 @@
       ]
     }
   ],
-  "description": "Audit Event Restriction Levels for defining restriction levels related to non-citizens and non-guardians, used in the AuditEvent.securityLevel field.",
+  "description": "Audit Event Restriction Levels used to indicate whether the audit log should be hidden from the citizen and/or the legal guardian when interacting with the infrastructure.",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
     {
       "code": "NotCitizen",
       "display": "Not a Citizen",
-      "definition": "Indicates the person is not a citizen, and thus has a restricted access level."
+      "definition": "The citizen cannot see the specific log entry.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ikke borger"
+        }
+      ]
     },
     {
       "code": "NotGuardian",
       "display": "Not a Guardian",
-      "definition": "Indicates the person is not a legal guardian, and thus has a restricted access level."
+      "definition": "The legal guardian cannot see the log entry.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ikke forældremyndighedsindehaver"
+        }
+      ]
     }
   ]
 }

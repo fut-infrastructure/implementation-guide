@@ -11,7 +11,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
+- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/fhir/audit-restriction-levels
 ### ValueSets
+- Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
 ### ConceptMaps
 ### Resource/profile changes
 - Updated IG intro for ehealth-patient
@@ -19,6 +21,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added YderNummer NamingSystem
 - ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
 - ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
+- Updated binding for AuditEvent.entity.securityLabel to http://ehealth.sundhed.dk/vs/audit-restriction-levels
 
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters

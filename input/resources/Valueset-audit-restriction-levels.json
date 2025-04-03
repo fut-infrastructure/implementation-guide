@@ -20,16 +20,15 @@
       ]
     }
   ],
-  "description": "This value set includes standard security labels as defined by FHIR and custom labels related to non-citizens and non-guardians.",
   "compose": {
     "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/fhir/audit-restriction-levels"
+      },
       {
         "valueSet": [
           "http://hl7.org/fhir/ValueSet/security-labels"
         ]
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/fhir/audit-restriction-levels"
       }
     ]
   }
