@@ -53,7 +53,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "O2 sat.;Hb(aB)",
+          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
           "target": [
             {
               "code": "decimal",
@@ -65,7 +65,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Puls;Hjerte",
+          "display": "Hjerte—Systole; frekv. = ? × 1/min",
           "target": [
             {
               "code": "integer",
@@ -77,7 +77,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Legeme vægt; Pt",
+          "display": "Pt—Legeme; masse = ? kg",
           "target": [
             {
               "code": "decimal",
