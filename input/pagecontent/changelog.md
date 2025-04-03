@@ -9,8 +9,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - CodeSystems using property deprecated, is updated with definition of the property
 ### ValueSets
+- ValueSets must use display values from CodeSystem
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
 ### Resource/profile changes
 ### Search parameters
 
