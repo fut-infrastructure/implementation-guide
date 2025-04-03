@@ -56,6 +56,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 - ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
 - Removed ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-device-type-to-medcom-device-type (Previously used for transforming to/from old PHMR versions)
 - Added mapping for codes DNK05472 and DNK05473 in ConceptMaps: 
   - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
