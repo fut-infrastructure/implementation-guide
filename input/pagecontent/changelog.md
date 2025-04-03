@@ -16,6 +16,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 - ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
 ### Resource/profile changes
 - Updated IG intro for ehealth-patient
 - Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
