@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "ehealth-audit-restriction-levels",
-  "url": "http://ehealth.sundhed.dk/fhir/audit-restriction-levels",
+  "url": "http://ehealth.sundhed.dk/cs/audit-restriction-levels",
   "version": "2025-04-02T00:00:00",
   "name": "auditRestrictionLevels",
   "title": "Audit Restriction Levels",

@@ -11,7 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
-- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/fhir/audit-restriction-levels
+- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/cs/audit-restriction-levels
 ### ValueSets
 - Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
 ### ConceptMaps
