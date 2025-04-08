@@ -309,16 +309,6 @@
           "value": "Blodtryk diastolisk;Arm"
         }
       ]
-    },
-    {
-      "code": "DNK05472",
-      "display": "Blodtryk systolisk;Arm",
-      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg"
-    },
-    {
-      "code": "DNK05473",
-      "display": "Blodtryk diastolisk;Arm",
-      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
     }
   ]
 }
