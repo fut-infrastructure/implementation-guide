@@ -117,6 +117,11 @@
       "code": "yielded-to-duplicate-document",
       "display": "yielded-to-duplicate-document",
       "definition": "yielded-to-duplicate-document"
+    },
+    {
+      "code": "invalid-observation-code",
+      "display": "invalid-observation-code",
+      "definition": "invalid-observation-code"
     }
   ]
 }

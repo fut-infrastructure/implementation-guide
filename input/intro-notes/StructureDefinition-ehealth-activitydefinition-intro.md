@@ -52,10 +52,33 @@ the ActivityDefinition:
 A ActivityDefinition has two sets of titles and desriptions. `title` and `description` are intended for the citizens and should be of a natural language. Whereas `ehealth-employee-title` and `usage` are intended for clinicians and should be of a specific and professional language.
 
 ### UseContext
-The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
-in the ValueSet described for useContext.code.
+The element `useContext` can be used to specify the context in which the ActivityDefinition is applicable.
+The element `useContext.code` is bound to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html) and defines the context which the `useContext` can specify.
+The `useContext.valueCodeableConcept` defines the value (e.g. if the `useContext.code` is `focus`, the `useContext.valueCodeableConcept` can specify a specific condition).
+The element `useContext.valueCodeableConcept` is validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
+The validation includes that the value in `useContext.valueCodeableConcept` is acceptable in the ValueSet described for `useContext.code`.
 
 The `useContext` element can be updated at any time, regardless of the status of the ActivityDefinition.
+
+An example of a `useContext` is that a ActivityDefinition is only applicable for use in a specific intended solution (Note: the code and display for the intended solution in the example are fictional):
+
+```
+{
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/ValueSet/use-context",
+        "code": "program"
+      },
+      "valueCodeableConcept": {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-program",
+        "code": "some-intended-solution",
+        "display": "Some Intended Solution"
+      }
+    }
+  ]
+}
+```
 
 ### ApprovalDate
 The date when the ActivityDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.

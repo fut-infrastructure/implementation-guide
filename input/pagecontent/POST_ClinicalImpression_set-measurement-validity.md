@@ -49,7 +49,7 @@ __Body__:
           "coding": [
             {
               "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-codes",
-              "code": "TBD"
+              "code": "MeasurementValidityUpdate"
             }
           ]
         },

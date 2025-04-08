@@ -2,12 +2,12 @@
   "resourceType": "ValueSet",
   "id": "dk-ihe-eventcodelists-vs",
   "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs",
-  "version": "0.96.6",
+  "version": "1.0.5",
   "name": "DK_IHE_EventCodeLists_VS",
   "title": "DK_IHE_EventCodeLists_VS",
   "status": "active",
   "experimental": false,
-  "date": "2019-12-11T00:00:00+00:00",
+  "date": "2025-03-07T00:00:00+01:00",
   "publisher": "Sundhedsdatastyrelsen",
   "contact": [
     {
@@ -78,12 +78,15 @@
           {
             "code": "NPU22089",
             "display": "P(kB)—Glucose; stofk. = ? mmol/L"
-          }
-        ]
-      },
-      {
-        "system": "urn-oid-1.2.208.184.100.8",
-        "concept": [
+          },
+          {
+            "code": "NPU03011",
+            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
+          },
+          {
+            "code": "NPU27281",
+            "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
+          },
           {
             "code": "NPU19748",
             "display": "C-reaktivt protein [CRP];P"
@@ -95,7 +98,12 @@
           {
             "code": "DNK05473",
             "display": "Blodtryk diastolisk;Arm"
-          },
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.8",
+        "concept": [
           {
             "code": "MCS88100",
             "display": "FEV6;Lunge"
@@ -103,6 +111,26 @@
           {
             "code": "MCS88015",
             "display": "FEV1;Lunge"
+          },
+          {
+            "code": "MCS88019",
+            "display": "Blodtryk hjemme systolisk;Arm"
+          },
+          {
+            "code": "MCS88020",
+            "display": "Blodtryk hjemme diastolisk;Arm"
+          },
+          {
+            "code": "MCS88050",
+            "display": "Rejse sætte sig testen;Pt"
+          },
+          {
+            "code": "MCS88137",
+            "display": "CAT score;Pt"
+          },
+          {
+            "code": "MCS88021",
+            "display": "MRC skala;Pt(KOL)"
           }
         ]
       },
