@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-property",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-property",
+  "version": "2025-03-05T09:00:00",
+  "name": "eHealthProperty",
+  "title": "eHealth Property",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-03-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Used to distinguish/extract specific properties of a code.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-property"
+      }
+    ]
+  }
+}
