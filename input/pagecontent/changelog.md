@@ -25,8 +25,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Aligned ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs with DK-IHE_Metadata Value_sets 1.0.5
 - Included code `urn:ad:dk:medcom:phmr-v2.1:full` to ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs
 - Removed ValueSets: http://ehealth.sundhed.dk/vs/medcom-device-type and http://ehealth.sundhed.dk/vs/medcom-instrument-code-device-type (Previously used for transforming to/from old PHMR versions)
+- Added codes `DNK05472` and `DNK05473` from CodeSystem urn:oid:1.2.208.176.2.1 to ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
 - Removed ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-device-type-to-medcom-device-type (Previously used for transforming to/from old PHMR versions)
+- Added mapping for codes DNK05472 and DNK05473 in ConceptMaps: 
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
 - Updated IG intro for ehealth-patient
 - Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.

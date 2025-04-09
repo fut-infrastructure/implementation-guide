@@ -27,6 +27,30 @@
       "target": "http://unitsofmeasure.org",
       "element": [
         {
+          "code": "DNK05472",
+          "display": "Blodtryk systolisk;Arm",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05473",
+          "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "NPU03011",
           "display": "O2 sat.;Hb(aB)",
           "target": [
