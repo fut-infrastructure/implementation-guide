@@ -68,6 +68,28 @@
       "target": "http://hl7.org/fhir/resource-types",
       "element": [
         {
+          "code": "DNK05472",
+          "display": "Blodtryk systolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05473",
+          "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "NPU03011",
           "display": "O2 sat.;Hb(aB)",
           "target": [

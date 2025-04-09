@@ -28,6 +28,30 @@
       "target": "http://hl7.org/fhir/data-types",
       "element": [
         {
+          "code": "DNK05472",
+          "display": "Blodtryk systolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05473",
+          "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "NPU03011",
           "display": "O2 sat.;Hb(aB)",
           "target": [

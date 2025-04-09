@@ -8,11 +8,20 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added codes DNK05472 and DNK05473 to urn:oid:1.2.208.176.2.1
 - Added supplement CodeSystem http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
 - Changed display name from K-PRO to Kommunal PRO for http://ehealth.sundhed.dk/cs/ehealth-program
 - Added code MeasurementValidityUpdate to http://ehealth.sundhed.dk/cs/clinicalimpression-codes
 ### ValueSets
+- Added codes DNK05472 and DNK05473 from CodeSystem urn:oid:1.2.208.176.2.1 to ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
+- Added mapping for codes DNK05472 and DNK05473 in ConceptMaps:
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters

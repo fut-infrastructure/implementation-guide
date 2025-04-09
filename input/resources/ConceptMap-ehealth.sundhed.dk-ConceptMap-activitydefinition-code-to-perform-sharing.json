@@ -134,6 +134,28 @@
       "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
+          "code": "DNK05472",
+          "display": "Blodtryk systolisk;Arm",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05473",
+          "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "NPU03011",
           "display": "O2 sat.;Hb(aB)",
           "target": [
