@@ -19,7 +19,7 @@
     "min": 1,
     "max": "*",
     "type": "Reference",
-    "documentation": "Reference to Organization"
+    "documentation": "Reference to Organization\nThe provider number needs to be stated in the input reference with Reference.identifier.system: urn:oid:1.2.208.176.1.4 and Reference.identifier.value set to the provider number."
   }, {
     "name": "return",
     "use": "out",
