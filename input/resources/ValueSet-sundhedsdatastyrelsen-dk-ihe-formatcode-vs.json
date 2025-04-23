@@ -59,6 +59,10 @@
             "display": "DK PHMR schema"
           },
           {
+            "code": "urn:ad:dk:medcom:phmr-v2.1:full",
+            "display": "DK PHMR schema"
+          },
+          {
             "code": "urn:ad:dk:medcom:prvs-v1.0:full",
             "display": "DK PRVS schema"
           },

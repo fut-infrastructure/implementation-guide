@@ -75,10 +75,33 @@ Each `action` element must either have sub-actions or an `action.definition`. Th
 It is possible to specify timing for each action in the `action.timing[x]` element. When the PlanDefiniton is applied to a Patient this will override any timing specified on the related ActivityDefinition.
 
 ### UseContext
-The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
-in the ValueSet described for useContext.code.
+The element `useContext` can be used to specify the context in which the PlanDefinition is applicable. 
+The element `useContext.code` is bound to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html) and defines the context which the `useContext` can specify.
+The `useContext.valueCodeableConcept` defines the value (e.g. if the `useContext.code` is `focus`, the `useContext.valueCodeableConcept` can specify a specific condition).
+The element `useContext.valueCodeableConcept` is validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
+The validation includes that the value in `useContext.valueCodeableConcept` is acceptable in the ValueSet described for `useContext.code`.
 
 The `useContext` element can be updated at any time, regardless of the status of the PlanDefinition.
+
+An example of a `useContext` is that a PlanDefinition is only applicable for use in a specific intended solution (Note: the code and display for the intended solution in the example are fictional):
+
+```
+{
+  "useContext": [
+    {
+      "code": {
+        "system": "http://hl7.org/fhir/ValueSet/use-context",
+        "code": "program"
+      },
+      "valueCodeableConcept": {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-program",
+        "code": "some-intended-solution",
+        "display": "Some Intended Solution"
+      }
+    }
+  ]
+}
+```
 
 ### ApprovalDate
 The date when the PlanDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.

@@ -1,5 +1,51 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased changes
+### General changes
+### Custom operations
+- Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to get organization information for a healthcare provider with provider number.
+#### System operations
+#### Instance operations
+- Updated $match for patient
+- Updated $create-patient for historical CPRs
+
+### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
+- Added code `invalid-observation-code` to http://ehealth.sundhed.dk/cs/document-sharing-state
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-designation-use
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-property
+- Added codes `DNK05472` and `DNK05473` to CodeSystem urn:oid:1.2.208.176.2.1
+- Updated CodeSystem urn:oid:1.2.208.176.2.1 with phmr-unit property and phmr-short-name designations
+- Updated CodeSystem urn:oid:1.2.208.184.100.8 with phmr-unit property and phmr-short-name designations
+- Added code `urn:ad:dk:medcom:phmr-v2.1:full` to CodeSystem urn:oid:1.2.208.184.100.10
+- Removed CodeSystems: http://ehealth.sundhed.dk/cs/medcom-device-types and urn:oid:1.2.208.184.100.3 (MedCom Instrument Codes) - (Previously used for transforming to/from old PHMR versions)
+### ValueSets
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-designation-use
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-property
+- Aligned ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs with DK-IHE_Metadata Value_sets 1.0.5
+- Included code `urn:ad:dk:medcom:phmr-v2.1:full` to ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs
+- Removed ValueSets: http://ehealth.sundhed.dk/vs/medcom-device-type and http://ehealth.sundhed.dk/vs/medcom-instrument-code-device-type (Previously used for transforming to/from old PHMR versions)
+- Added codes `DNK05472` and `DNK05473` from CodeSystem urn:oid:1.2.208.176.2.1 to ValueSet http://ehealth.sundhed.dk/vs/observation-codes
+### ConceptMaps
+- Removed ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-device-type-to-medcom-device-type (Previously used for transforming to/from old PHMR versions)
+- Added mapping for codes DNK05472 and DNK05473 in ConceptMaps: 
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
+### Resource/profile changes
+- Updated IG intro for ehealth-patient
+- Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
+- Added YderNummer NamingSystem
+- ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
+- ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
+
+#### ServiceRequest (ehealth-servicerequest)
+### Search parameters
+
 ## 3.4.1 (2025-03-12)
 
 ### General changes
@@ -17,9 +63,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
-
 ## 3.4.0 (2025-02-19)
-
 ### General changes
 - Updated documentation for Media resource concerning wound assessment and measurements.
 - Updated documentation for Observation resource concerning wound assessment and measurements.
@@ -28,7 +72,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated $submit-measurement to include validation of measurement status when submitting measurements. Allowed status are `completed` for Media/QuestionnaireResponse and `final` for Observation.
 - Added new custom operation $set-measurement-validity on Task service. Custom operation is used to invalidate measurement and retract measurement invalidation.
 #### System operations
-#### Instance operations
 ### Code systems
 - Added CodeSystem http://ehealth.sundhed.dk/cs/document-sharing-state
 - Added http://ehealth.sundhed.dk/cs/media-usage-mode
@@ -90,12 +133,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added ehealth-usecontext extension to ehealth-documentreference and ehealth-careteam.
 - Added Governance principles section to ehealth-actionguidance and ehealth-view.
 - Changed Governance principles section to ehealth-plandefinition.
+
 #### ServiceRequest (ehealth-servicerequest)
 - Changed cardinality of performer to 0..*
 - Added ehealth-careteam as possible performer
 ### Search parameters
 - Added search parameters `relatedTo`, `series` and `usageMode` on `ehealth-media` (`Media`).
-
 
 ## 3.3.0 (2024-11-07)
 

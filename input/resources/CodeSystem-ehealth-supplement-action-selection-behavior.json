@@ -83,7 +83,7 @@
             "system": "http://snomed.info/sct",
             "code": "900000000000013009"
           },
-          "value": "Alle eller Ingen"
+          "value": "Alle eller ingen"
         }
       ]
     },
@@ -98,7 +98,7 @@
             "system": "http://snomed.info/sct",
             "code": "900000000000013009"
           },
-          "value": "Præcis En"
+          "value": "Præcis en"
         }
       ]
     },
@@ -113,7 +113,7 @@
             "system": "http://snomed.info/sct",
             "code": "900000000000013009"
           },
-          "value": "Højst En"
+          "value": "Højst en"
         }
       ]
     },
@@ -128,7 +128,7 @@
             "system": "http://snomed.info/sct",
             "code": "900000000000013009"
           },
-          "value": "En Eller Flere"
+          "value": "En eller flere"
         }
       ]
     }
