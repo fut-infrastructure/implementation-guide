@@ -18,17 +18,23 @@
 
 - `GENERAL_NAMING_SYSTEM_NOT_FOUND`: NamingSystem with identifier %s is not found.
 
+- `GENERAL_FIELD_ACCESS_FAILURE`: Failed to access field: %s
+
+- `GENERAL_FIELD_COMPARE_FAILURE`: Failed to compare field: %s
+
 #### ehealth-actionguidanceview
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_CONTENT_SIZE`: Size of content is greater than the max allowed size. Content size: %s, max size: %s
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_STATUS_CHANGE`: Illegal status change for action_guidance or view from %s and to %s
 
-- `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status)
+- `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status). The following differences were found when updating existing resource with id %s: %s.
 
 #### ehealth-activitydefinition
 
-- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s.
+- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
+
+- `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating ActivityDefinition with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
 
 - `ACTIVITYDEFINITION_UPDATE_TO_NOT_ALLOWED_STATE`: Update is not allowed for ActivityDefinition with %s status to different than %s status.
 
@@ -47,6 +53,8 @@
 - `ASSEMBLER_QRD_NOT_ABLE_TO_DETERMINE_QFDD_REFERENCE`: Not able to determine QFDD reference from questionnaire.identifier. Non or more than 1 identifier system starting with 'urn:oid'. Questionnaire: %s.
 
 - `ASSEMBLER_QRD_QR_SOURCE_IS_UNSUPPORTED`: QuestionnaireResponse with id: '%s' has source '%s', which is not supported - Skipping publication
+
+- `ASSEMBLER_QRD_QR_AUTHOR_RESOURCE_NOT_FOUND`: QuestionnaireResponse with id: '%s', no resource found for author reference '%s' - Skipping publication
 
 - `ASSEMBLER_APD_MISSING_SUPPORTING_INFORMATION`: Appointment must have supportingInformation
 
@@ -85,6 +93,12 @@
 #### ehealth-cda
 
 - `CDA_XML_VALIDATION_FAILED`: Validation of the CDA XML failed: %s
+
+#### ehealth-clinical
+
+- `CLINICAL_IMPRESSION_VALIDATION_STATE_FINDING_CODE_NOT_ALLOWED`: Invalidation/Invalidation Retraction finding code is not allowed for ClinicalImpression outside custom operation.
+
+- `CLINICAL_IMPRESSION_MEASUREMENT_VALIDITY_UPDATED_CODE_REQUIRED`: ClinicalImpressions for Invalidation/Invalidation Retraction must have ClinicalImpression.code=MeasurementValidityUpdated
 
 #### ehealth-codesystem
 
@@ -126,7 +140,7 @@
 
 - `DOCUMENT_NOT_OF_TYPE_QFDD`: The document is expected to be of type QFDD
 
-- `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be a SOR organization for query
+- `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be resolvable to a SOR identifier for query
 
 - `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
 
@@ -156,7 +170,7 @@
 
 - `EPISODEOFCARE_PATCH_NO_CONSENT`: No valid Episode Of Care related consent
 
-- `EPISODEOFCARE_CREATE_PATIENT_MUST_BE_ACTIVE_AND_NOT_DECEASED`: Patient.active must be true and Patient.deceased must be false to create episode of care
+- `EPISODEOFCARE_CREATE_PATIENT_MUST_NOT_BE_DECEASED`: Patient.deceased must be false to create episode of care
 
 - `EPISODEOFCARE_CREATE_STATUS_HISTORY_NOT_EMPTY`: It is not allowed to fill status history manually
 
@@ -284,7 +298,13 @@
 
 - `MEASUREMENT_SUBMITMEASUREMENT_TOO_FEW_ANSWERS`: QuestionnaireResponse: %s has too few answers for the item with linkId: %s
 
-- `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Encrypted media data with id %s was not found
+- `MEASUREMENT_GET_DATA_NO_DATA_FOUND`: Media data with id %s was not found
+
+- `MEASUREMENT_GET_THUMBNAIL_DATA_NO_DATA_FOUND`: Media thumbnail data with size %d for id %s was not found
+
+- `MEASUREMENT_GET_THUMBNAIL_DATA_NOT_SUPPORTED`: Media thumbnail data for id %s is not supported
+
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_STATUS`: Measurement status %s is invalid. Status must be %s for measurement of type %s
 
 #### ehealth-observation
 
@@ -308,9 +328,19 @@
 
 - `ORGANIZATION_MISSING_IDENTIFIER`: Organization %s does not have identifier of type: %s
 
+- `ORGANIZATION_REFERENCE_IDENTIFIER_MISSING_PROVIDER_NUMBER`: There are no identifiers of type ProviderNumber in the Organization reference list: %s
+
+- `ORGANIZATION_REFERENCE_IDENTIFIER_PROVIDER_NUMBER_NOT_UNIQUE`: The identifiers of type ProviderNumber are not unique in the Organization reference list: %s
+
+- `ORGANIZATION_NOT_FOUND`: No active Organization could be found for the ProviderNumber: %s
+
+- `ORGANIZATION_NO_COMMON_PARENT_FOUND_PROVIDER_NUMBER`: No common parent found for the ProviderNumber: %s
+
 #### ehealth-plandefinition
 
-- `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s.
+- `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
+
+- `PLANDEFINITION_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating PlanDefinition with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
 
 - `PLANDEFINITION_UPDATE_TO_NOT_ALLOWED_STATE`: Update is not allowed for PlanDefinition with %s status to different than %s status.
 
@@ -336,9 +366,17 @@
 
 #### ehealth-questionnaire
 
-- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_IN_STATUS`: Update is not allowed for questionnaires with statuses: %s, %s
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMTPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
 
-- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_STATUS`: Update is not allowed for questionnaires with %s status to different than %s status
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_DATETIME`: QuestionnaireResponse has invalid DateTimeType on effectivePeriod.%s, must have minutes, seconds or millis precision and must have a timezone.
+
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_START_AFTER_END`: QuestionnaireResponse has invalid effectivePeriod, effectivePeriod.start must be before effectivePeriod.end
+
+- `QUESTIONNAIRE_UPDATE_ALLOWED_FOR_USECONTEXT_STATUS`: Updating Questionnaire with/to status %s is not allowed when modifying fields other than useContext. The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_IN_STATUS`: Update is not allowed for questionnaires with statuses: %s, %s, except for changes to useContext. The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRE_NOT_ALLOWED_TO_UPDATE_STATUS`: Update is not allowed for questionnaires with %s status to different than %s status.
 
 - `QUESTIONNAIRE_NOT_ALLOWED_TO_DELETE_WITH_STATUS`: Delete only possible for questionnaires with status: %s
 
@@ -426,6 +464,28 @@
 
 - `TASK_FOR_NOT_SET`: When episode of care is set, the field 'for' must reference the corresponding patient
 
+- `TASK_MEASUREMENT_VALIDITY_INVALID_MEASUREMENT_REFERENCE`: Expecting ClinicalImpression to include a single Investigations. The investigation must contain two items: one item with an versionless reference and one item with a versioned reference of the Measurement that is being invalidated or retracted.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_INVESTIGATION_ITEM_TYPE`: Investigation item type must be of type Media, Observation or QuestionnaireResponse.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_FINDING_CODE_ON_PREVIOUS`: Previous ClinicalImpression must be of type 'invalidation' when trying to retract invalidation.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_INITIAL_STATUS`: ClinicalImpression for invalidation/retracted invalidation must be created with 'COMPLETED' status.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_DECISION_CODE`: ClinicalImpression must contain a single decision, with a single Coding of code 'invalidated-fulfills' or 'invalidated-is-not-fulfillment'.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_FINDING_CODE`: ClinicalImpression must contain a single finding, with a single Coding of code 'measurement-invalidated' or 'measurement-invalidation-retracted'.
+
+- `TASK_MEASUREMENT_VALIDITY_REFERENCE_MISMATCH`: Mismatch between references: %s(%s) and %s(%s).
+
+- `TASK_MEASUREMENT_VALIDITY_MISSING_PREVIOUS`: Unable to find previous ClinicalImpression when trying to retract invalidation.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_PREVIOUS_EXPECTING_INVALIDATION_RETRACTION`: Previous ClinicalImpression must be of type invalidation retraction when trying to invalidate measurement.
+
+- `TASK_MEASUREMENT_VALIDITY_INVALID_PREVIOUS_EXPECTING_INVALIDATION`: Previous ClinicalImpression must be of type invalidation when trying to retract invalidation for measurement.
+
+- `TASK_MEASUREMENT_VALIDITY_MULTIPLE_PREVIOUS`: Unable to determine previous invalidation/invalidation retracted ClinicalImpression, due to finding multiple candidates for the Measurement.
+
 #### ehealth-transformation
 
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_CPR_DIDNT_MATCH`: Found document didn't match with CPR
@@ -433,6 +493,8 @@
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_MORE_THAN_ONE_FOUND`: More than 1 DocumentReference with same master identifier found. The master identifier should be unique.
 
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_NO_DOCUMENT_FOUND`: No matching document found
+
+- `TRANSFORMATION_GENERIC_NARRATIVE_ERROR`: Can't generate narrative for: %s
 
 - `TRANSFORMATION_QFDD_UNKNOWN_QUESTION_TYPE`: Unknown QFDD question type. Question id: %s
 
@@ -532,23 +594,21 @@
 
 - `TRANSFORMATION_QRD_QFDD_QUESTION_DOES_NOT_SUPPORT_ASSOCIATED_TEXT_QUESTION`: QFDDQuestion with id: '%s' does not support associatedText. Class was: '%s'. QuestionnaireResponse: '%s'.
 
-- `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_MISSING_START`: QuestionnaireResponse with id: '%s' is missing effective period start.
 
-- `TRANSFORMATION_PHMR_NARRATIVE_ERROR`: Can't generate narrative for: %s
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_START`: QuestionnaireResponse with id: '%s' must have a valid effective period start, including time precision and timezone.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_END`: QuestionnaireResponse with id: '%s' must have a valid effective period end, including time precision and timezone.
+
+- `TRANSFORMATION_QRD_INVALID_QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EQUAL_BOUNDS`: The low and high bounds of the effective period in QuestionnaireResponse with ID '%s' must not be equal.
+
+- `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
 
 - `TRANSFORMATION_HEADER_MISSING_CPR`: CPR is mandatory for patient but not present in fhir bundle
 
+- `TRANSFORMATION_PHMR_MISSING_OBSERVATION`: Observation is mandatory for PHMR
+
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_CODING`: Observation coding system must be urn:oid:1.2.208.176.2.1
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_COMMENT_AUTHOR_REFERENCE`: The author of a measurement comment is a reference not provided in the bundle.
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_CODING`: Observation.observationRanges[x].type.coding.system should be http://www.example.com/medcom/message-codes
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_RAL`: RAL observation ranges should not have both High and Low set when transforming to PHRM, but High is: %s, and Low is: %s
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_GAL`: GAL observation ranges should not have both High and Low set when transforming to PHRM, unless either bound is replaced with a RAL reference range, but High is: %s, and Low is: %s
-
-- `TRANSFORMATION_PHMR_INVALID_NUMBER_OF_DECIMALS`: Value should have no more than 7 decimals, but is: %s
 
 - `TRANSFORMATION_PHMR_OBSERVATION_QUANTITY_MISSING`: Value should be Quantity type and not null
 
@@ -562,9 +622,29 @@
 
 - `TRANSFORMATION_PHMR_DOCUMENT_INVALID_EFFECTIVE`: Invalid Observation.effective, expecting DateTime, Period or Instant
 
+- `TRANSFORMATION_PHMR_CODESYSTEM_NOT_FOUND`: CodeSystem was not found. System: '%s'
+
+- `TRANSFORMATION_PHMR_DOCUMENT_OBSERVATION_ENTRY_CODESYSTEM_NAME_NOT_DEFINED`: PHMR document observation entry must have a CodeSystem name. No one defined for '%s'
+
+- `TRANSFORMATION_PHMR_CODE_NOT_FOUND_IN_CODESYSTEM`: Code '%s' was not found in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_DESIGNATION_FOR_CODE`: Could not find designation use 'phmr-short-name' for code '%s' in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_DESIGNATION_VALUE_FOR_CODE`: No value specified for designation use 'phmr-short-name'. Code: '%s'. CodeSystem: '%s'
+
 - `TRANSFORMATION_PHMR_MEASUREMENT_INVALID_METHOD_CODES`: Method codes for performerType and provisionMethod for observation with id '%s' could not be established.
 
-- `TRANSFORMATION_PHMR_MEASUREMENT_TOO_MANY_DECIMALS`: Could not transform measurement with reference range Low: %s and High: %s since we cannot correctly translate more than 7 decimals.
+- `TRANSFORMATION_PHMR_OBSERVATION_MISSING_UNIT_CODE_FOR_QUANTITY`: No unit code found for quantity with observation code '%s'
+
+- `TRANSFORMATION_PHMR_OBSERVATION_INVALID_UNIT_MAPPING_FOR_OBSERVATION_CODE`: Invalid UCUM unit mapping found for observation code '%s'. Observation has unit: '%s', but expected is one of ('%s')
+
+- `TRANSFORMATION_PHMR_OBSERVATION_MISSING_UNIT_MAPPING_FOR_OBSERVATION_CODE`: No UCUM unit mapping found for observation code '%s' in ConceptMap. Has unit code: '%s'
+
+- `TRANSFORMATION_PHMR_INVALID_COMBINATION_OBSERVATION_UNIT_AND_PHMR_UNIT_PROPERTY`: Invalid combination of observation unit: '%s' and PHMR unit property: '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_UNIT_PROPERTY_FOR_CODE`: Could not find property 'phmr-unit' for code '%s' in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_UNIT_VALUE_PROPERTY_FOR_CODE`: No value specified for property 'phmr-unit'. Code: '%s'. CodeSystem: '%s'
 
 - `TRANSFORMATION_HEADER_MISSING_CONFIDENTIALITY_CODE`: Composition.confidentiality is mandatory
 
@@ -574,7 +654,7 @@
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION`: Composition expected for transformation is not found
 
-- `TRANSFORMATION_HEADER_MISSING_ATTESTER`: Composition.attester.party is mandatory for transformation
+- `TRANSFORMATION_HEADER_MISSING_ATTESTER`: Composition.attester must contain one Practitioner and one Organization if the document is shared manually
 
 - `TRANSFORMATION_HEADER_WRONG_TYPE_COMPOSITION_AUTHOR`: Composition.author should either be a Patient or Practitioner
 
@@ -582,7 +662,7 @@
 
 - `TRANSFORMATION_HEADER_AUTHOR_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.authorOrganization must contain SOR identifier: %s
 
-- `TRANSFORMATION_HEADER_ATTESTER_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.attester.party must contain SOR identifier: %s
+- `TRANSFORMATION_HEADER_ATTESTER_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.attester.party Organization must contain SOR identifier: %s
 
 - `TRANSFORMATION_HEADER_CUSTODIAN_MUST_CONTAIN_SOR_ID`: Custodian organization must contain SOR identifier: %s
 
@@ -607,6 +687,10 @@
 - `UPLOAD_QFDD_MASTERIDENTIFIER_IS_ALREADY_IN_USE`: The masterIdentifier on the DocumentReference is not unique
 
 - `UPLOAD_QFDD_THE_ID_OF_THE_DOCUMENT_IS_NULL`: Missing Id in the QFDD.
+
+#### ehealth-use
+
+- `USE_CONTEXT_VALIDATION_FAILED`: UseContext validation for %s failed: value code %s not found in %s ValueSet
 
 #### ehealth-versioning
 
