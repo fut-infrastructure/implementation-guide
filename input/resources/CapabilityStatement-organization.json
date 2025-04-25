@@ -3,12 +3,12 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2025-02-06T09:20:30.128+00:00",
+  "date": "2025-04-25T02:37:22.405+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "organization",
-    "version": "1.17.0"
+    "version": "1.18.0"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -280,6 +280,10 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
+      }, {
+        "name": "get-general-practitioner-info",
+        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-t-get-general-practitioner-info",
+        "documentation": "The operation resolves the input organization(s) to the shared organization for the one or more organizations that have the given provider number. \nThe Organization returned depends on how many active Organization exist in the service with that provider number. When a single Organization has the provider number that Organization is returned. \nWhen multiple Organization resources have the same provider number, the shared parent Organization is returned. \nAn OperationOutcome with an explicit error is returned in case multiple organizations share the provider number but do not have a shared parent, or in case input organizations have different provider numbers. \nA typical use of the operation is to get name, address and telecom details for a general practitioner. Many provider numbers are assigned to a single organization but some provider numbers are shared by multiple entities (organizations) within in a common practice."
       }, {
         "name": "traverse-to-sor",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
