@@ -1,9 +1,9 @@
-`GET [base]/ClinicalImpression?investigation=https%3A%2F%2Fmeasurement.cit-task-2140.local%2Ffhir%2FQuestionnaireResponse%2F24069`
+`GET [base]/ClinicalImpression?carePlan=https%3A%2F%2Fcareplan.cit-task-2205.local%2Ffhir%2FCarePlan%2F39528`
 
 __Header__
 ```
 Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzEwYWQ5NjQtZmMzMi00MDBmLTk2NzMtODk0MjU1YTQ5YWRhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlRhc2suc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXRhc2stMjIwNS5sb2NhbC9maGlyL1ByYWN0aXRpb25lci80MjU1MSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC10YXNrLTIyMDUubG9jYWwvZmhpci9DYXJlVGVhbS83OTkxOCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LXRhc2stMjIwNS5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNTgxNzciLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -15,16 +15,62 @@ __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "d5e095b8-cdd2-4ccf-a3b2-3e175c2efe28",
+  "id": "5fb5a13c-e42c-4365-ad31-a43f36efaf2d",
   "meta": {
-    "lastUpdated": "2025-02-05T11:53:14.627+00:00"
+    "lastUpdated": "2025-04-24T10:19:48.249+00:00"
   },
   "type": "searchset",
-  "total": 0,
+  "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://task.cit-task-2140.local/fhir/ClinicalImpression?_format=json&_pretty=true&investigation=https%3A%2F%2Fmeasurement.cit-task-2140.local%2Ffhir%2FQuestionnaireResponse%2F24069"
+      "url": "https://task.cit-task-2205.local/fhir/ClinicalImpression?_format=json&_pretty=true&carePlan=https%3A%2F%2Fcareplan.cit-task-2205.local%2Ffhir%2FCarePlan%2F39528"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://task.cit-task-2205.local/fhir/ClinicalImpression/380",
+      "resource": {
+        "resourceType": "ClinicalImpression",
+        "id": "380",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2025-04-24T10:19:48.146+00:00",
+          "source": "#bc3a7aac-9e01-43",
+          "profile": [
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference": {
+              "reference": "https://careplan.cit-task-2205.local/fhir/EpisodeOfCare/58177"
+            }
+          },
+          {
+            "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
+            "valueReference": {
+              "reference": "https://careplan.cit-task-2205.local/fhir/CarePlan/39528"
+            }
+          }
+        ],
+        "status": "in-progress",
+        "code": {
+          "coding": [
+            {
+              "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-codes",
+              "code": "TBD"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "https://patient.cit-task-2205.local/fhir/Patient/57966"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
     }
   ]
 }
