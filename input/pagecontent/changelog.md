@@ -3,12 +3,22 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased changes
 ### General changes
 ### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+
+## 3.5.0
+### General changes
+### Custom operations
 - Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to get organization information for a healthcare provider with provider number.
 #### System operations
 #### Instance operations
 - Updated $match for patient
 - Updated $create-patient for historical CPRs
-
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
@@ -42,8 +52,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added YderNummer NamingSystem
 - ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
 - ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
-
-#### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
 ## 3.4.1 (2025-03-12)
