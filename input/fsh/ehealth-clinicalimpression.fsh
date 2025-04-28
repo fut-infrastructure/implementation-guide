@@ -10,7 +10,7 @@ Parent: ClinicalImpression
 * extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
 * extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare].valueReference 1..1
-* extension[episodeOfCare] ^type.aggregation = #referenced
+* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/clinicalimpression-codes
 * subject only Reference(ehealth-patient)
