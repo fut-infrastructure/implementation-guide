@@ -3,3 +3,12 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+error StructureDefinition.snapshot.element[8].type[0]	error	Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
+StructureDefinition​.differential​.element[2]​.type[0] (l1​/c48974)	error	Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
+
+WARNING: Parameters/populate-response: Parameters.parameter[0].resource/*QuestionnaireResponse/questionnaireresponse-sdc-example-ussg-fht-answers*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+
+# Errors to suppress
+ERROR: StructureDefinition/ehealth-guidanceresponse: StructureDefinition.snapshot.element[8].type[0]: Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
+ERROR: StructureDefinition/ehealth-guidanceresponse: StructureDefinition.differential.element[2].type[0]: Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
