@@ -3,8 +3,3 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-
-ERROR: Library/example: Library.relatedArtifact[7].resource: Canonical URLs must be absolute URLs if they are not fragment references (TBD)
-
-# ignore for now
-ERROR: StructureDefinition/ehealth-careplan: StructureDefinition.snapshot.element[8].type[0]: Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
