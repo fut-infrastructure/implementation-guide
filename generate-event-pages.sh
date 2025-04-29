@@ -1,5 +1,5 @@
 #!/bin/bash
-projects="Questionnaire Measurement Organization Plan Careplan Terminology Device Task Library DocumentTransformation SslCatalogue SslCatalogue SslOrder"
+projects="Questionnaire Measurement Organization Plan Careplan Terminology Device Task AutomaticProcessing Library DocumentTransformation SslCatalogue SslCatalogue SslOrder"
 dir=service_event_messages
 branch=default:true #release%2F2019.6
 
@@ -57,5 +57,5 @@ done
 append_newline_to_all_files_in_directory "${dir}/eventtables"
 append_newline_to_all_files_in_directory "${dir}/eventexamples"
 
-cat ${dir}/eventtables/*.md > fsh-content/input/pagecontent/systematic-service-event-tables.md
-cat ${dir}/eventexamples/*.md > fsh-content/input/pagecontent/systematic-service-event-examples.md
+cat ${dir}/eventtables/*.md > input/pagecontent/systematic-service-event-tables.md
+cat ${dir}/eventexamples/*.md > input/pagecontent/systematic-service-event-examples.md
