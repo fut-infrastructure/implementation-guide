@@ -2,8 +2,9 @@ Profile: ehealth-careplan
 Id: ehealth-careplan
 Parent: CarePlan
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
-* extension[episodeOfCare] ^type.aggregation = #referenced
-* extension contains ehealth-careplan-statusHistory named statusHistory 0..*
+* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
+* extension[episodeOfCare].valueReference 1..1
+* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 * extension contains ehealth-teamHistory named teamHistory 0..*
 * extension contains ehealth-careplan-statusschedule named statusSchedule 0..*
 * extension contains ehealth-teamschedule named teamSchedule 0..*
