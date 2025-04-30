@@ -4,3 +4,20 @@ Parent: DkCorePractitioner
 * name 1..1
 * qualification.issuer only Reference(ehealth-organization)
 * qualification.issuer ^type.aggregation = #referenced
+
+Instance: practitioner01
+InstaneOf: ehealth-practitioner
+Usage: #example
+* id = "42"
+* meta.versionId = "2"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+* name = "Example Practitioner"
+
+Instance: practitioner02
+InstaneOf: ehealth-practitioner
+Usage: #example
+* id = "43
+* meta.versionId = "2"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+* name = "Example Practitioner 2"
+

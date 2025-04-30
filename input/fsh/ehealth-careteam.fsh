@@ -21,3 +21,25 @@ Parent: CareTeam
 * note.authorString only string
 * telecom.value 1..1
 * extension contains ehealth-useContext named useContext 0..*
+
+Instance: careteam01
+InstanceOf: ehealth-careteam
+Usage: #example
+* id = "42"
+* meta.versionId = "2"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
+* status = #proposed
+* name = "Example CareTeam"
+* reasonCode = http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII#F12
+* reasonCode.text = "En beskrivelse af boligens fysiske rammer og omgivelser, der har betydning for borgerens hverdagsliv og funktionsevne."
+
+Instance: careteam02
+InstanceOf: ehealth-careteam
+Usage: #example
+* id = "108752"
+* meta.versionId = "2"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
+* status = #proposed
+* name = "Example CareTeam"
+* reasonCode = http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII#F12
+* reasonCode.text = "En beskrivelse af boligens fysiske rammer og omgivelser, der har betydning for borgerens hverdagsliv og funktionsevne."
