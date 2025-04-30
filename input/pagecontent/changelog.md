@@ -12,7 +12,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
-#### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
 ## 3.5.0
