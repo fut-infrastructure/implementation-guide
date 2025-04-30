@@ -11,7 +11,8 @@ Usage: #example
 * id = "42"
 * meta.versionId = "2"
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-* name = "Example Practitioner"
+* name.family = "Practitioner"
+* name.given = "Example1"
 
 Instance: practitioner02
 InstanceOf: ehealth-practitioner
@@ -19,7 +20,8 @@ Usage: #example
 * id = "123"
 * meta.versionId = "2"
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-* name = "Example Practitioner 2"
+* name.family = "Practitioner"
+* name.given = "Example2"
 
 Instance: practitioner03
 InstanceOf: ehealth-practitioner
@@ -27,4 +29,5 @@ Usage: #example
 * id = "107302"
 * meta.versionId = "2"
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
-* name = "Example Practitioner 2"
+* name.family = "Practitioner"
+* name.given = "Example3"
