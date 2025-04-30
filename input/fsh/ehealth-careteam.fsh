@@ -22,7 +22,7 @@ Parent: CareTeam
 * telecom.value 1..1
 * extension contains ehealth-useContext named useContext 0..*
 
-Instance: careteam01
+Instance: 42
 InstanceOf: ehealth-careteam
 Usage: #example
 * id = "42"
