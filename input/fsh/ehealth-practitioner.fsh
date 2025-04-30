@@ -16,8 +16,15 @@ Usage: #example
 Instance: practitioner02
 InstaneOf: ehealth-practitioner
 Usage: #example
-* id = "43
+* id = "123"
 * meta.versionId = "2"
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
 * name = "Example Practitioner 2"
 
+Instance: practitioner03
+InstaneOf: ehealth-practitioner
+Usage: #example
+* id = "107302"
+* meta.versionId = "2"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+* name = "Example Practitioner 2"
