@@ -1,17 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased changes
-### General changes
-### Custom operations
-#### System operations
-#### Instance operations
-### Code systems
-### ValueSets
-### ConceptMaps
-### Resource/profile changes
-### Search parameters
-
-## 3.5.0
+## 3.5.1
 ### General changes
 ### Custom operations
 - Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to get organization information for a healthcare provider with provider number.
