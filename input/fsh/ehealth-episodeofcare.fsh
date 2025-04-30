@@ -52,3 +52,5 @@ Usage: #example
 * extension[=].valueReference = Reference(https://organization.ehealth.sundhed.dk//fhir/Organization/108752)
 * diagnosis[0].condition = Reference(https://condition.ehealth.sundhed.dk/fhir/Condition/42)
 * patient = Reference(https://patient.ehealth.sundhed.dk/fhir/Patient/42)
+* managingOrganization = Reference(https://organization.ehealth.sundhed.dk/fhir/Organization/42)
+* period.start = "2023-01-01T00:00:00Z"

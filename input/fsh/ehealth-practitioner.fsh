@@ -6,7 +6,7 @@ Parent: DkCorePractitioner
 * qualification.issuer ^type.aggregation = #referenced
 
 Instance: practitioner01
-InstaneOf: ehealth-practitioner
+InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "42"
 * meta.versionId = "2"
@@ -14,7 +14,7 @@ Usage: #example
 * name = "Example Practitioner"
 
 Instance: practitioner02
-InstaneOf: ehealth-practitioner
+InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "123"
 * meta.versionId = "2"
@@ -22,7 +22,7 @@ Usage: #example
 * name = "Example Practitioner 2"
 
 Instance: practitioner03
-InstaneOf: ehealth-practitioner
+InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "107302"
 * meta.versionId = "2"
