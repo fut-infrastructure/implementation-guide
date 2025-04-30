@@ -36,9 +36,9 @@ InstanceOf: Appointment
 Usage: #example
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"
 * extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-performing-organization"
-* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[=].valueReference = Reference(312)
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible-organization"
-* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/108752)
+* extension[=].valueReference = Reference(312)
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible"
 * extension[=].valueReference = Reference(http://inttest.ehealth.sundhed.dk/CareTeam/42) "CareTeam Aarhus"
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-legalBasis"
