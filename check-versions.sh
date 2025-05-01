@@ -6,7 +6,7 @@ check_version_in_file() {
     # shellcheck disable=SC2155
     local SHELL_FILE_DIR=$(dirname "$0")
 
-    grep -q "$VERSION" "$SHELL_FILE_DIR/$FILEPATH" || { echo "String '$VERSION' not found in '$FILEPATH' or file does not exist."; return 1; }
+    grep --quiet "$VERSION" "$SHELL_FILE_DIR/$FILEPATH" || { echo "String '$VERSION' not found in '$FILEPATH' or file does not exist."; return 1; }
     return 0
 }
 
