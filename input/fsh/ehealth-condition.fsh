@@ -22,4 +22,4 @@ Usage: #example
 * id = "42"
 * code = http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII#F12
 * code.text = "En beskrivelse af boligens fysiske rammer og omgivelser, der har betydning for borgerens hverdagsliv og funktionsevne."
-* subject = Reference(Patient/42)
+* subject = Reference(Patient/102)

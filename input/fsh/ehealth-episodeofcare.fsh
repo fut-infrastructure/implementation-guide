@@ -51,6 +51,6 @@ Usage: #example
 * extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization"
 * extension[=].valueReference = Reference(Organization/108752)
 * diagnosis[0].condition = Reference(Condition/42)
-* patient = Reference(Patient/42)
+* patient = Reference(Patient/102)
 * managingOrganization = Reference(Organization/108752)
 * period.start = "2023-01-01T00:00:00Z"
