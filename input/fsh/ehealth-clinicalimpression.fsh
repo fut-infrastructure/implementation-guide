@@ -8,7 +8,8 @@ Parent: ClinicalImpression
 * extension contains ehealth-clinicalimpression-decision named decision 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
-* extension[episodeOfCare].valueReference only Reference(EpisodeOfCare)
+* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
+* extension[episodeOfCare].valueReference 1..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/clinicalimpression-codes
