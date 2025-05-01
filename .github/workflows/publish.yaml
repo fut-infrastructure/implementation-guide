@@ -76,7 +76,7 @@ jobs:
 
       - name: Confirm versions are correct
         run: |
-          ./ig/check-versions.sh ${{ github.ref_name }}
+          ./ig/check-versions.sh "${{ github.ref_name }}"
 
       - name: Generate app token
         id: token
