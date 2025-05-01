@@ -41,7 +41,7 @@ Description: "Scheduled status change"
 * extension[status].value[x] from http://hl7.org/fhir/ValueSet/episode-of-care-status
 * extension[scheduledTime].value[x] only dateTime
 
-Instance: episodeOfCare01
+Instance: EpisodeOfCare/42
 InstanceOf: ehealth-episodeofcare
 Usage: #example
 * id = "42"
@@ -49,8 +49,8 @@ Usage: #example
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
 * status = #planned
 * extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization"
-* extension[=].valueReference = Reference(https://organization.ehealth.sundhed.dk//fhir/Organization/108752)
-* diagnosis[0].condition = Reference(https://condition.ehealth.sundhed.dk/fhir/Condition/42)
-* patient = Reference(https://patient.ehealth.sundhed.dk/fhir/Patient/42)
-* managingOrganization = Reference(https://organization.ehealth.sundhed.dk/fhir/Organization/42)
+* extension[=].valueReference = Reference(Organization/108752)
+* diagnosis[0].condition = Reference(Condition/42)
+* patient = Reference(Patient/42)
+* managingOrganization = Reference(Organization/108752)
 * period.start = "2023-01-01T00:00:00Z"

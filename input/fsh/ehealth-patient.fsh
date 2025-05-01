@@ -74,7 +74,7 @@ Description: "Describes the general health condition of a patient using FSIII co
 * extension[description].value[x] only string
 
 
-Instance: patient01
+Instance: Patient/102
 InstanceOf: Patient
 Usage: #example
 * id = "102"

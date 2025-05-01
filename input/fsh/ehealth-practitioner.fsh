@@ -5,7 +5,7 @@ Parent: DkCorePractitioner
 * qualification.issuer only Reference(ehealth-organization)
 * qualification.issuer ^type.aggregation = #referenced
 
-Instance: practitioner01
+Instance: Practitioner/42
 InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "42"
@@ -14,7 +14,7 @@ Usage: #example
 * name.family = "Practitioner"
 * name.given = "Example1"
 
-Instance: practitioner02
+Instance: Practitioner/123
 InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "123"
@@ -23,7 +23,7 @@ Usage: #example
 * name.family = "Practitioner"
 * name.given = "Example2"
 
-Instance: practitioner03
+Instance: Practitioner/107302
 InstanceOf: ehealth-practitioner
 Usage: #example
 * id = "107302"

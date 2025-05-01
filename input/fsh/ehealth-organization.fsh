@@ -120,7 +120,7 @@ Description: "The specialty of the organization"
 * extension[primaryIndicator] ^short = "Indicator of primary specialty"
 * extension[primaryIndicator] ^definition = "Indicates if the specialty is the primary specialty of the organization."
 
-Instance: 312
+Instance: Organization/108752
 InstanceOf: ehealth-organization
 Usage: #example
 * id = "108752"
@@ -144,7 +144,7 @@ Usage: #example
 * contact.telecom.extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-telecomValue"
 * contact.telecom.extension[=].valueString = "5513495a-ed1b-43a9-b890-c2a09762c584"
 
-Instance: organization02
+Instance: Organization/8564
 InstanceOf: ehealth-organization
 Usage: #example
 * id = "8564"
