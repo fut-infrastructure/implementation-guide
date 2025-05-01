@@ -31,7 +31,7 @@ Parent: Appointment
 * serviceType[appointmentType].coding.code = #regular (exactly)
 
 
-Instance: Appointment/01
+Instance: appointment01
 InstanceOf: Appointment
 Usage: #example
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-appointment"
