@@ -3,7 +3,3 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-
-# Errors to suppress
-ERROR: StructureDefinition/ehealth-guidanceresponse: StructureDefinition.snapshot.element[8].type[0]: Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
-ERROR: StructureDefinition/ehealth-guidanceresponse: StructureDefinition.differential.element[2].type[0]: Constraint failed: eld-4: 'Aggregation may only be specified if one of the allowed types for the element is a reference'
