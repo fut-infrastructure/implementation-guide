@@ -2,8 +2,7 @@ Profile: ehealth-task
 Id: ehealth-task
 Parent: Task
 * extension contains ehealth-task-episodeOfCare named episodeOfCare 1..1
-//* extension[episodeOfCare] ^type.aggregation = #referenced
-* extension[episodeOfCare].value[x] ^type.aggregation = #referenced
+* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 * extension contains ehealth-task-category named taskCategory 1..1
 * extension contains ehealth-task-responsible named taskResponsible 1..*
 * extension contains ehealth-restriction-category named restrictionCategory 1..*
