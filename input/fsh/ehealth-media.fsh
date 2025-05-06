@@ -5,7 +5,6 @@ Parent: Media
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare].valueReference ^type.aggregation = #referenced
-* extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
 * extension contains ehealth-media-thumbnail named thumbnail 0..*
