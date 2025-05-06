@@ -7,8 +7,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 ### ValueSets
+- Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
 - Changed ZZ3170 mapping from MCS88019 and MCS88020 to DNK05472 and DNK05473 in ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-observation-code
+- Removed mappings for codes MCS88019 and MCS88020 in ConceptMaps:
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
 ### Search parameters
 
