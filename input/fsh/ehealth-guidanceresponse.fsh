@@ -17,6 +17,5 @@ Extension:   ehealth-guidanceresponse-episodeOfCare
 Title:       "EpisodeOfCare"
 Description: "Episode of care"
 * . ^short = "Episode of care"
-* valueReference ^type.aggregation = #referenced
-* valueReference only Reference(ehealth-episodeofcare)
-
+* value[x] ^type.aggregation = #referenced
+* value[x] only Reference(ehealth-episodeofcare)
