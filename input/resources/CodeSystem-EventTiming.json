@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2016-11-11T00:00:00.000+11:00"
   },
-  "url": "http://ehealth.sundhed.dk/fhir/CodeSystem/EventTiming",
+  "url": "http://hl7.org/fhir/event-timing",
   "version": "4.0.1",
   "name": "EventTiming",
   "title": "Event Timing",
