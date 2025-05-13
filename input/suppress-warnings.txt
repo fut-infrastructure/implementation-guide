@@ -1,3 +1,2 @@
 #Suppresions for CodeSystem-ehealth-action.json
-URL Mismatch http://ehealth.sundhed.dk/fhir/CodeSystem/ehealth-action vs http://ehealth.sundhed.dk/cs/action
-Conformance resource /scratch/repo/input/resources/CodeSystem-ehealth-action.json - the canonical URL (http://ehealth.sundhed.dk/fhir/CodeSystem/ehealth-action) does not match the URL (http://ehealth.sundhed.dk/cs/action)
+URL Mismatch
