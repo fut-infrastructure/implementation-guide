@@ -3,7 +3,3 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-
-#Suppresions for CodeSystem-ehealth-action.json
-ERROR: URL Mismatch http://ehealth.sundhed.dk/fhir/CodeSystem/ehealth-action vs http://ehealth.sundhed.dk/cs/action
-ERROR: Conformance resource /scratch/repo/input/resources/CodeSystem-ehealth-action.json - the canonical URL (http://ehealth.sundhed.dk/fhir/CodeSystem/ehealth-action) does not match the URL (http://ehealth.sundhed.dk/cs/action)
