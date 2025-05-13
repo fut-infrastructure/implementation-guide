@@ -3,3 +3,6 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+#The operation examples are generated from development branch and thus the urls links
+ERROR: OperationDefinition.where(url = 'https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply'): Conformance resource /tmp/ig-builds/dk.ehealth.sundhed.fhir.ig.core#3.5.1-milestone/input/resources/OperationDefinition--s-apply.json - the canonical URL (http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-apply) does not match the URL (https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply)
