@@ -24,11 +24,12 @@ Parent: ehealth-observation
 * component[woundLength].code = http://loinc.org#39126-8 (exactly)
 * component[woundLength].value[x] only Quantity
 * component[woundLength].value[x] = http://unitsofmeasure.org#cm
+* component[woundLength].extension 1..1
 * component[woundWidth] ^short = "Width of wound"
 * component[woundWidth].code = http://loinc.org#39125-0 (exactly)
 * component[woundWidth].value[x] only Quantity
 * component[woundWidth].value[x] = http://unitsofmeasure.org#cm
-* component[woundLength].extension 1..1
+* component[woundWidth].extension 1..1
 * component[woundDepth] ^short = "Depth of wound"
 * component[woundDepth].code = http://loinc.org#39127-6 (exactly)
 * component[woundDepth].value[x] only Quantity
