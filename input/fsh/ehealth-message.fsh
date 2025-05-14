@@ -111,7 +111,7 @@ Severity:    #error
 
 Invariant:   nemsms-invariant
 Description: "If communication resource is a NemSMS payload cannot exceed 160"
-Expression:  "medium.coding.where(code = 'nemsms').exists() implies payload.contentString.length() <= 160"
+Expression:  "medium.coding.where(code = 'nemsms').exists() implies payload.contentas(String).length() <= 160"
 Severity:    #error
 
 Invariant:   notification-invariant
