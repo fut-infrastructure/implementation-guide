@@ -3,7 +3,7 @@ Id: ehealth-message
 Parent: Communication
 * obeys nemsms-invariant and note-invariant and notification-invariant and message-invariant and advice-invariant
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
-* extension[episodeOfCare] ^type.aggregation = #referenced
+* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..1
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..1
 * extension contains ehealth-restriction-category named restrictionCategory 0..*
