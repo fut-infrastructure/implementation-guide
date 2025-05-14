@@ -106,7 +106,7 @@ Severity:    #error
 
 Invariant:   note-invariant
 Description: "Category note invariant"
-Expression:  "category.coding.code contains 'note' implies (sender.reference = recipient.reference) or (recipient.reference.exists().not() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists())"
+Expression:  "category.coding.code contains 'note' implies (recipient.reference contains sender.reference) or (recipient.reference.exists().not() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists())"
 Severity:    #error
 
 Invariant:   nemsms-invariant
