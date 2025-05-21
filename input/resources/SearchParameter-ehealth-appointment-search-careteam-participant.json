@@ -1,6 +1,6 @@
 {
     "resourceType": "SearchParameter",
-    "id": "Appointment-careteamParticipant",
+    "id": "ehealth-appointment-search-careteam-participant",
     "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Appointment/careteamParticipant",
     "name": "careteamParticipant",
     "status": "active",
