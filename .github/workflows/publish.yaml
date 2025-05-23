@@ -74,6 +74,10 @@ jobs:
           echo -n "\n\n======================== publication-request.json ========================\n"
           cat ig/publication-request.json
 
+      - name: Confirm versions are correct
+        run: |
+          ./ig/check-versions.sh "${{ github.ref_name }}"
+
       - name: Generate app token
         id: token
         uses: actions/create-github-app-token@v1
