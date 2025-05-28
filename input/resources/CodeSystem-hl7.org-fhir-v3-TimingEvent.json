@@ -14,7 +14,7 @@
       "valueInteger": 0
     }
   ],
-  "url": "http://hl7.org/fhir/v3/TimingEvent",
+  "url": "http://ehealth.sundhed.dk/cs/v3/TimingEvent/supplememt",
   "version": "2016-11-11",
   "name": "v3 Code System TimingEvent",
   "title": "v3 Code System TimingEvent",
