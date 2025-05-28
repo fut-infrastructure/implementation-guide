@@ -2,7 +2,8 @@ Profile: ehealth-condition
 Id: ehealth-condition
 Parent: Condition
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
-* extension[episodeOfCare].value[x] ^type.aggregation = #referenced
+* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
+* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/conditions
 * subject only Reference(ehealth-patient or Group)

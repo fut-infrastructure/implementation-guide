@@ -2,6 +2,7 @@ Profile: ehealth-guidanceresponse
 Id: ehealth-guidanceresponse
 Parent: GuidanceResponse
 * extension contains ehealth-guidanceresponse-episodeOfCare named episodeOfCare 1..1
+* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare].valueReference ^type.aggregation = #referenced
 // not in R4: * module only Reference(ServiceDefinition)
 * subject only Reference(ehealth-patient)
