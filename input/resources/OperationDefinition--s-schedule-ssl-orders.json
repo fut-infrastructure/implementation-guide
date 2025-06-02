@@ -1,7 +1,11 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-schedule-ssl-orders",
-  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-schedule-ssl-orders",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
+  },
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-ssl-orders",
   "name": "schedule-ssl-orders",
   "title": "Schedule ssl orders",
   "status": "active",
@@ -12,35 +16,41 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [ {
-    "name": "anonymization",
-    "use": "in",
-    "min": 1,
-    "max": "1",
-    "type": "string"
-  }, {
-    "name": "organization",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "type": "Reference"
-  }, {
-    "name": "seller",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "type": "Reference"
-  }, {
-    "name": "period",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "type": "Period"
-  }, {
-    "name": "return",
-    "use": "out",
-    "min": 0,
-    "max": "1",
-    "type": "Binary"
-  } ]
+  "parameter": [
+    {
+      "name": "anonymization",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "string"
+    },
+    {
+      "name": "organization",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Reference"
+    },
+    {
+      "name": "seller",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Reference"
+    },
+    {
+      "name": "period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Binary"
+    }
+  ]
 }
