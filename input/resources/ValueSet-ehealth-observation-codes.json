@@ -154,26 +154,6 @@
             ]
           },
           {
-            "code": "MCS88019",
-            "display": "Blodtryk hjemme systolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
-              }
-            ]
-          },
-          {
-            "code": "MCS88020",
-            "display": "Blodtryk hjemme diastolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
-              }
-            ]
-          },
-          {
             "code": "MCS88021",
             "display": "MRC skala;Pt(KOL)",
             "designation": [
