@@ -166,30 +166,6 @@
           ]
         },
         {
-          "code": "MCS88019",
-          "display": "Blodtryk hjemme systolisk;Arm",
-          "target": [
-            {
-              "code": "integer",
-              "display": "integer",
-              "equivalence": "specializes",
-              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
-            }
-          ]
-        },
-        {
-          "code": "MCS88020",
-          "display": "Blodtryk hjemme diastolisk;Arm",
-          "target": [
-            {
-              "code": "integer",
-              "display": "integer",
-              "equivalence": "specializes",
-              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
-            }
-          ]
-        },
-        {
           "code": "MCS88021",
           "display": "MRC skala;Pt(KOL)",
           "target": [
