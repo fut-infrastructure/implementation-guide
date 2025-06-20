@@ -261,28 +261,6 @@
           ]
         },
         {
-          "code": "MCS88019",
-          "display": "Blodtryk hjemme systolisk;Arm",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "MCS88020",
-          "display": "Blodtryk hjemme diastolisk;Arm",
-          "target": [
-            {
-              "code": "Y",
-              "display": "Yes",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
           "code": "MCS88021",
           "display": "MRC skala;Pt(KOL)",
           "target": [
