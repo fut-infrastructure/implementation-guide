@@ -15,7 +15,7 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
-* item obeys sliderStepValueDecimal-Type and copyright-type and questionnaire-minOccurs-greater-than-one and questionnaire-maxOccurs-greater-than-one
+* item obeys sliderStepValueDecimal-Type and copyright-type and questionnaire-minOccurs-greater-than-one and questionnaire-maxOccurs-greater-than-one and minOccurs-invalid-when-repeats-false
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
