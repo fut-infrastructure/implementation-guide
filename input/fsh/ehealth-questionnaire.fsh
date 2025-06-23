@@ -160,5 +160,5 @@ Severity:    #error
 
 Invariant:   minOccurs-invalid-when-repeats-false
 Description: "minOccurs > 1 is invalid if repeats is false"
-Expression:  "(repeats.empty() or repeats = false) and extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1"
+Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1 implies repeats = true"
 Severity:    #error
