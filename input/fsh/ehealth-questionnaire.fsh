@@ -153,13 +153,12 @@ Description: "When the questionnaire-minOccurs extension is present, its value m
 Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').exists() implies extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1"
 Severity:    #error
 
-
 Invariant:   questionnaire-maxOccurs-greater-than-one
 Description: "When the questionnaire-maxOccurs extension is present, its value must be greater than 1"
 Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs').exists() implies extension('http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs').valueInteger > 1"
 Severity:    #error
 
 Invariant:   minOccurs-invalid-when-repeats-false
-Description: "minOccurs > 1 is invalid if repeats is false or not specified and required is true"
-Expression:  "not((repeats.empty() or repeats = false) and required = true and extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1)"
+Description: "minOccurs > 1 is invalid if repeats is false"
+Expression:  "(repeats.empty() or repeats = false) and extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1"
 Severity:    #error
