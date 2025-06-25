@@ -1,7 +1,11 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-get-patient-procedures",
-  "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-patient-procedures",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
+  },
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-get-patient-procedures",
   "name": "get-patient-procedures",
   "title": "Get patient procedures",
   "status": "active",
@@ -12,53 +16,62 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [ {
-    "name": "patient",
-    "use": "in",
-    "min": 1,
-    "max": "1",
-    "type": "Reference"
-  }, {
-    "name": "episodeOfCare",
-    "use": "in",
-    "min": 0,
-    "max": "*",
-    "type": "Reference"
-  }, {
-    "name": "conditionCodings",
-    "use": "in",
-    "min": 0,
-    "max": "*",
-    "type": "Coding"
-  }, {
-    "name": "start",
-    "use": "in",
-    "min": 1,
-    "max": "1",
-    "type": "dateTime"
-  }, {
-    "name": "end",
-    "use": "in",
-    "min": 1,
-    "max": "1",
-    "type": "dateTime"
-  }, {
-    "name": "_tag",
-    "use": "in",
-    "min": 0,
-    "max": "*",
-    "type": "Coding"
-  }, {
-    "name": "extra",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "type": "boolean"
-  }, {
-    "name": "return",
-    "use": "out",
-    "min": 0,
-    "max": "1",
-    "type": "Bundle"
-  } ]
+  "parameter": [
+    {
+      "name": "patient",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "Reference"
+    },
+    {
+      "name": "episodeOfCare",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "Reference"
+    },
+    {
+      "name": "conditionCodings",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "Coding"
+    },
+    {
+      "name": "start",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "dateTime"
+    },
+    {
+      "name": "end",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "dateTime"
+    },
+    {
+      "name": "_tag",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "type": "Coding"
+    },
+    {
+      "name": "extra",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Bundle"
+    }
+  ]
 }
