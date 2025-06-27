@@ -21,7 +21,5 @@
     }
   ],
   "description": "Empty ValueSet for restricting coded fields to reject any value",
-  "compose": {
-    "include": []
-  }
+  "compose": {}
 }
