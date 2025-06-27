@@ -14,7 +14,7 @@ Parent: DocumentReference
 * custodian ^type.aggregation = #referenced
 * relatesTo.target only Reference(ehealth-documentreference)
 * content.format from http://ehealth.sundhed.dk/vs/format-codes
-* context.event from http://ehealth.sundhed.dk/vs/event-type-codes
+* context.event from http://ehealth.sundhed.dk/vs/restricted
 * context.facilityType from http://ehealth.sundhed.dk/vs/facility-type-codes
 * context.practiceSetting from http://ehealth.sundhed.dk/vs/practice-setting-codes
 * context.sourcePatientInfo only Reference(ehealth-patient)

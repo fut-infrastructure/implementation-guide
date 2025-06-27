@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-restricted",
+  "url": "http://ehealth.sundhed.dk/vs/restricted",
+  "version": "2025-06-27T12:00:00",
+  "name": "Restricted",
+  "title": "Restricted",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-06-27T12:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Empty ValueSet for restricting coded fields to reject any value",
+  "compose": {
+    "include": []
+  }
+}
