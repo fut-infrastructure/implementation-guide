@@ -25,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
   - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
+- Changed Questionnaire.item constraints to ensure logical consistency between Questionnaire.repeats, Questionnaire.required and questionnaire-minOccurs/questionnaire-maxOccurs extensions of Questionnaire.item.
 ### Search parameters
 
 ## 3.5.1
