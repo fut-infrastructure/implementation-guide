@@ -1,5 +1,33 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- CodeSystems using property deprecated, is updated with definition of the property
+- CodeSystems (supplements) published as HL7 must meet validation requirements (VALIDATION_HL7_WG_NEEDED)
+### ValueSets
+- ValueSets must use display values from CodeSystem
+- Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
+### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
+- Changed ZZ3170 mapping from MCS88019 and MCS88020 to DNK05472 and DNK05473 in ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-observation-code
+- Removed mappings for codes MCS88019 and MCS88020 in ConceptMaps:
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
+### Resource/profile changes
+- Changed Questionnaire.item constraints to ensure logical consistency between Questionnaire.repeats, Questionnaire.required and questionnaire-minOccurs/questionnaire-maxOccurs extensions of Questionnaire.item.
+### Search parameters
+
 ## 3.5.1
 ### General changes (Documentation)
 - Updated operation examples.
@@ -9,8 +37,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- CodeSystems using property deprecated, is updated with definition of the property
 ### ValueSets
+- ValueSets must use display values from CodeSystem
 ### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
 ### Resource/profile changes
 ### Search parameters
 

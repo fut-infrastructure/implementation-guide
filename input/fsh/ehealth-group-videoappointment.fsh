@@ -58,11 +58,11 @@ Usage: #example
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-end-meeting-on-end-time"
 * extension[=].valueBoolean = false
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-responsible"
-* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[=].valueReference = Reference(CareTeam/108752)
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-creator"
-* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* extension[=].valueReference = Reference(CareTeam/108752)
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience"
-* extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/Organization/8564)
+* extension[=].valueReference = Reference(Organization/8564)
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-registration-deadline"
 * extension[=].valueDateTime = "2021-12-25T14:35:45-05:00"
 * extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-host-pin-code"
@@ -83,16 +83,16 @@ Usage: #example
 * end = "2021-07-16T11:00:00.000+00:00"
 * comment = "Forundersøgelse for grå stær hos Trifork.\n Patienten møder op hos Trifork med udfyldt spørgeskema"
 * participant[0].extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-assigning-careteam"
-* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[=].valueReference = Reference(CareTeam/108752)
 * participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
-* participant[=].extension[=].valueReference = Reference(https://organization.fut.trifork.com/fhir/CareTeam/108752)
+* participant[=].extension[=].valueReference = Reference(CareTeam/108752)
 * participant[=].type = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#PART "Participation"
 * participant[=].required = #required
 * participant[=].status = #accepted
-* participant[+].actor = Reference(https://organization.fut.trifork.com/fhir/Practitioner/107302) "actor1 display text"
+* participant[+].actor = Reference(Practitioner/107302) "actor1 display text"
 * participant[=].required = #required
 * participant[=].status = #tentative
-* participant[+].actor = Reference(https://patient.fut.trifork.com/fhir/Patient/102)
+* participant[+].actor = Reference(Patient/102)
 * participant[=].required = #required
 * participant[=].status = #accepted
 * participant[+].actor = Reference(1)
