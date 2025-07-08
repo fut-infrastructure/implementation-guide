@@ -53,6 +53,7 @@ Parent: CarePlan
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 * extension contains ehealth-participant named participant 0..*
+* extension[participant].extension[function].value[x] from "http://ehealth.sundhed.dk/vs/participant-function" (required)
 
 Extension:   ehealth-careplan-statusHistory
 Title:       "Careplan status history"
