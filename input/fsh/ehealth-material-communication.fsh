@@ -8,9 +8,9 @@ Parent: ehealth-communication
 * payload.contentRefence only Reference(DocumentReference)
 * payload.contentReference ^type.aggregation = #referenced
 * category 1..*
-* category from http://ehealth.sundhed.dk/vs/communication-category
+* category from hhttp://ehealth.sundhed.dk/cs/material-communication-category
 * extension contains ehealth-participant named participant 1..1
-* extension[participant].extension[function].value[x] from "http://ehealth.sundhed.dk/vs/participant-function" (required)
+* extension[participant].extension[function].value[x] from "http://ehealth.sundhed.dk/vs/material-assignment-participant-function" (required)
 
 Extension: ehealth-period
 Title:     "Period"
