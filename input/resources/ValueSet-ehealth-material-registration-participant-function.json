@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "material-registration-participant-function",
+  "url": "http://ehealth.sundhed.dk/vs/material-registration-participant-function",
+  "version": "1.0",
+  "name": "MaterialRegistrationParticipantFunction",
+  "title": "Material Registration Participant Function",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-07-07T12:00:00+00:00",
+  "publisher": "eHealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "The function of the participant in material registration (author / editor).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/contributor-type",
+        "concept": [
+          {
+            "code": "author",
+            "display": "Author"
+          },
+          {
+            "code": "editor",
+            "display": "Editor"
+          }
+        ]
+      }
+    ]
+  }
+}

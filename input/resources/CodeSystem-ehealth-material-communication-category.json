@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-material-communication-category",
+  "url": "http://ehealth.sundhed.dk/cs/material-communication-category",
+  "version": "1.0.0",
+  "name": "MaterialCommunicationCategory",
+  "title": "Material Communication Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-01-29T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "The set of possible material-communication categories",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "material-assignment",
+      "display": "Material assignment"
+    }
+  ]
+}
