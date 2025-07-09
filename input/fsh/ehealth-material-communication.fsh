@@ -9,7 +9,7 @@ Parent: ehealth-communication
 * category 1..*
 * category from http://ehealth.sundhed.dk/vs/material-communication-category (required)
 * extension contains ehealth-participant named participant 0..*
-* extension[participant].extension[function].value[x] from "http://ehealth.sundhed.dk/vs/material-assignment-participant-function" (required)
+* extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/material-assignment-participant-function (required)
 
 Extension: ehealth-period
 Title:     "Period"
