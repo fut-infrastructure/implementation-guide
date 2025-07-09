@@ -6,6 +6,7 @@ Parent: EpisodeOfCare
 * extension contains ehealth-episodeofcare-statusschedule named episodeofcareStatusschedule 0..*
 * extension contains ehealth-teamschedule named teamschedule 0..*
 * extension contains ehealth-participant named participant 0..*
+* extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/participant-function (required)
 * diagnosis 1..*
 * diagnosis.condition only Reference(ehealth-condition)
 * diagnosis.condition ^type.aggregation = #referenced
