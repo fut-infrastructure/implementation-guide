@@ -1,7 +1,6 @@
 Profile: ehealth-material-communication
 Id: ehealth-material-communication
 Parent: ehealth-communication
-* recepient 1..1
 * recepient only Reference(Patient)
 * recepient ^type.aggregation = #referenced
 * payload.contentReference 1..1
