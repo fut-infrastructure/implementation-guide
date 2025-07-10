@@ -1,15 +1,17 @@
 Profile: ehealth-material-communication
 Id: ehealth-material-communication
-Parent: ehealth-communication
-* recepient only Reference(Patient)
-* recepient ^type.aggregation = #referenced
-* payload.contentReference 1..1
-* payload.contentRefence only Reference(DocumentReference)
-* payload.contentReference ^type.aggregation = #referenced
+Parent: Communication
+* recipient only Reference(Patient)
+* recipient ^type.aggregation = #referenced
+* payload.content[x] only Reference(DocumentReference)
+* payload.content[x] 1..1
+* payload.content[x] ^type.aggregation = #referenced
 * category 1..*
 * category from http://ehealth.sundhed.dk/vs/material-communication-category (required)
 * extension contains ehealth-participant named participant 0..*
 * extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/material-assignment-participant-function (required)
+* extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
+* extension[episodeOfCare] ^type.aggregation = #referenced
 
 Extension: ehealth-period
 Title:     "Period"
