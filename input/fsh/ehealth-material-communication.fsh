@@ -3,9 +3,9 @@ Id: ehealth-material-communication
 Parent: ehealth-communication
 * recipient only Reference(Patient)
 * recipient ^type.aggregation = #referenced
-* payload.contentReference 1..1
-* payload.contentReference only Reference(DocumentReference)
-* payload.contentReference ^type.aggregation = #referenced
+* payload.content[x] only Reference(DocumentReference)
+* payload.content[x] 1..1
+* payload.content[x] ^type.aggregation = #referenced
 * category 1..*
 * category from http://ehealth.sundhed.dk/vs/material-communication-category (required)
 * extension contains ehealth-participant named participant 0..*
