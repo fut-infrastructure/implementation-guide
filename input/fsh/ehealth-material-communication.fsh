@@ -1,10 +1,10 @@
 Profile: ehealth-material-communication
 Id: ehealth-material-communication
 Parent: ehealth-communication
-* recepient only Reference(Patient)
-* recepient ^type.aggregation = #referenced
+* recipient only Reference(Patient)
+* recipient ^type.aggregation = #referenced
 * payload.contentReference 1..1
-* payload.contentRefence only Reference(DocumentReference)
+* payload.contentReference only Reference(DocumentReference)
 * payload.contentReference ^type.aggregation = #referenced
 * category 1..*
 * category from http://ehealth.sundhed.dk/vs/material-communication-category (required)
