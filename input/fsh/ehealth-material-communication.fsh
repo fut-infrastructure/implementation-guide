@@ -3,7 +3,7 @@ Id: ehealth-material-communication
 Parent: ehealth-communication
 * recipient only Reference(Patient)
 * recipient ^type.aggregation = #referenced
-* payload.content[x] only Reference(DocumentReference)
+* payload.content[x] only string or Reference(DocumentReference)
 * payload.content[x] 1..1
 * payload.content[x] ^type.aggregation = #referenced
 * category 1..*
