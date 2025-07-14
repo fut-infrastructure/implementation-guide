@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "phmr-observation-vs",
-  "url": "http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-classcode-vs",
+  "url": "http://medcom.dk/terminologi/phmr-observation-vs",
   "version": "1.0.0",
   "name": "PHMR_Observation_VS",
   "title": "PHMR_Observation_VS",
