@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "1.2.208.176.2.1",
+        "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
             "code": "NPU03804",
@@ -65,7 +65,7 @@
         ]
       },
       {
-        "system": "1.2.208.184.100.8",
+        "system": "urn:oid:1.2.208.184.100.8",
         "concept": [
           {
             "code": "MCS88100",
