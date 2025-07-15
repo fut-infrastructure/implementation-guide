@@ -1311,14 +1311,6 @@
             "code": "phmr-short-name"
           },
           "value": "FEV6;Lunge"
-        },
-        {
-          "language": "da",
-          "use": {
-            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
-            "code": "phmr-short-name"
-          },
-          "value": "FEV6;Lunge"
         }
       ]
     },
