@@ -12,6 +12,7 @@ Parent: Communication
 * extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/material-assignment-participant-function (required)
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
+* extension contains ehealth-period named period 1..1
 
 Extension: ehealth-period
 Title:     "Period"
