@@ -36,7 +36,8 @@
   "property": [
     {
       "code": "phmr-unit",
-      "type": "string"
+      "type": "string",
+      "uri": "http://ehealth.sundhed.dk/cs/ehealth-property#phmr-unit"
     }
   ],
   "concept": [
