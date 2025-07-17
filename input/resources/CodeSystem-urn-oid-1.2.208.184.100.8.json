@@ -1,24 +1,20 @@
 {
   "resourceType": "CodeSystem",
   "id": "urn-oid-1.2.208.184.100.8",
-  "meta": {
-    "versionId": "5",
-    "lastUpdated": "2021-03-16T16:28:30.690+00:00"
-  },
   "url": "urn:oid:1.2.208.184.100.8",
+  "version": "1.0.0",
+  "name": "MedComMeasurementCodeSystem",
+  "title": "MedCom Measurement CodeSystem",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-05-21T10:00:00+00:00",
+  "publisher": "MedCom",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
       "value": "urn:oid:1.2.208.184.100.8"
     }
   ],
-  "version": "1.0.0",
-  "name": "MedComMeasurementCodeSystem",
-  "title": "MedComMeasurementCodeSystem",
-  "status": "active",
-  "experimental": false,
-  "date": "2025-05-21T10:00:00+00:00",
-  "publisher": "MedCom",
   "contact": [
     {
       "name": "Marianne Broholm",
