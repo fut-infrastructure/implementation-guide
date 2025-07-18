@@ -67,6 +67,56 @@
       ]
     },
     {
+      "code": "MCS88016",
+      "display": "FVC;Lunge",
+      "definition": "Lunge—Lungefunktionsundersøgelse vitalkapasitet FVC; vol. = ? L",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "FVC"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "FVC;Lunge"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ]
+    },
+    {
+      "code": "MCS88017",
+      "display": "FEV1/FVC;Lunge",
+      "definition": "Lunge—FEV1/FVC; ratio = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "FEV1/FVC;Lunge"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ]
+    },
+    {
       "code": "MCS88019",
       "display": "Blodtryk hjemme systolisk;Arm",
       "definition": "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg",
@@ -154,6 +204,35 @@
       ]
     },
     {
+      "code": "MCS88023",
+      "display": "FEV1 af forventet værdi;Pt(KOL)",
+      "definition": "Pt(KOL)—FEV1 i % af den forventede værdi (efter højde,alder og køn); ratio = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+            "code": "consumer"
+          },
+          "value": "FEV1 af forventet værdi"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "FEV1 af forventet værdi;Pt(KOL)"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ]
+    },
+    {
       "code": "MCS88050",
       "display": "Rejse sætte sig testen;Pt",
       "definition": "Pt—Rejse sætte sig testen; antal (værdi 0-50) =  × 1/30s",
@@ -229,6 +308,48 @@
             "code": "phmr-short-name"
           },
           "value": "CAT score;Pt"
+        }
+      ]
+    },
+    {
+      "code": "MCS88192",
+      "display": "Skridt per dag;Pt",
+      "definition": "Pt—Skridt; antal per dag (værdi) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Skridt per dag;Pt"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ]
+    },
+    {
+      "code": "MCS88194",
+      "display": "Skridt;Pt",
+      "definition": "Pt—Skridt; antal (værdi) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Skridt;Pt"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
         }
       ]
     }
