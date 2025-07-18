@@ -333,6 +333,27 @@
       ]
     },
     {
+      "code": "MCS88193",
+      "display": "Skridt per uge;Pt",
+      "definition": "Pt—Skridt; antal per uge (værdi) = ?",
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Skridt per uge;Pt"
+        }
+      ],
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ]
+    },
+    {
       "code": "MCS88194",
       "display": "Skridt;Pt",
       "definition": "Pt—Skridt; antal (værdi) = ?",
