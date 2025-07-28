@@ -124,7 +124,7 @@
     {
       "code": "DIB0018",
       "display": "Fodsår;højre fod = ? Ja, Nej",
-      "definition": "Fodsår;højre fod ",
+      "definition": "Fodsår;højre fod",
       "designation": [
         {
           "language": "da",
@@ -145,7 +145,7 @@
     {
       "code": "DIB0019",
       "display": "Fodsår;venstre fod = ? Ja, Nej",
-      "definition": "Fodsår;venstre fod ",
+      "definition": "Fodsår;venstre fod",
       "designation": [
         {
           "language": "da",
@@ -1251,7 +1251,7 @@
     {
       "code": "MCS88072",
       "display": "DAN-PSS;Pt(urinvejssymptomer)",
-      "definition": "Pt(urinvejssymptomer)—Dansk Prostata Symptom Scoringsskema; arb.akt.(tømning; fyldning; andre; seksual) = ?                    ",
+      "definition": "Pt(urinvejssymptomer)—Dansk Prostata Symptom Scoringsskema; arb.akt.(tømning; fyldning; andre; seksual) = ?",
       "designation": [
         {
           "language": "da",
@@ -1397,7 +1397,7 @@
     },
     {
       "code": "MCS88106",
-      "display": "Stoffer;Pt(problematisk stofbrug)\n",
+      "display": "Stoffer;Pt(problematisk stofbrug)",
       "definition": "Pt(problematisk stofbrug)—Hash 4 eller flere dg inden for den seneste mnd og/eller andre euforiserende stoffer, som fx amfetamin, kokain og ecstasy 1 eller flere dg inden for den seneste mnd; arb.k.(0 1) = ?",
       "designation": [
         {
@@ -1406,7 +1406,7 @@
             "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
             "code": "phmr-short-name"
           },
-          "value": "Stoffer;Pt(problematisk stofbrug)\n"
+          "value": "Stoffer;Pt(problematisk stofbrug)"
         }
       ],
       "property": [
@@ -2792,7 +2792,7 @@
     {
       "code": "MCS88173",
       "display": "WHO-5;Pt",
-      "definition": "Pt—Trivselsindekset (WHO-5); antal(værdi 0-100) = ? ",
+      "definition": "Pt—Trivselsindekset (WHO-5); antal(værdi 0-100) = ?",
       "designation": [
         {
           "language": "da",
@@ -3483,7 +3483,7 @@
       ]
     },
     {
-      "code": "MCS88208 ",
+      "code": "MCS88208",
       "display": "Fodstatus",
       "definition": "Fodstatus",
       "designation": [
@@ -8986,7 +8986,7 @@
     },
     {
       "code": "MCS90014",
-      "display": "Indikation f næste øjenlægekontakt ",
+      "display": "Indikation for næste øjenlægekontakt",
       "definition": "Indikation for næste øjenlægekontakt (0-6)",
       "designation": [
         {
@@ -8995,7 +8995,7 @@
             "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
             "code": "phmr-short-name"
           },
-          "value": "Indikation f næste øjenlægekontakt "
+          "value": "Indikation for næste øjenlægekontakt"
         }
       ],
       "property": [
@@ -9007,8 +9007,8 @@
     },
     {
       "code": "MCS90015",
-      "display": "Tidspunkt for næste Screening ",
-      "definition": "Tidspunkt for næste Screening ",
+      "display": "Tidspunkt for næste Screening",
+      "definition": "Tidspunkt for næste Screening",
       "designation": [
         {
           "language": "da",
@@ -9016,7 +9016,7 @@
             "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
             "code": "phmr-short-name"
           },
-          "value": "Tidspunkt for næste Screening "
+          "value": "Tidspunkt for næste Screening"
         }
       ],
       "property": [
