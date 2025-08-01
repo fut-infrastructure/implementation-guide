@@ -9,9 +9,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - CodeSystems using property deprecated, is updated with definition of the property
 - CodeSystems (supplements) published as HL7 must meet validation requirements (VALIDATION_HL7_WG_NEEDED)
+- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/cs/audit-restriction-levels
 ### ValueSets
 - ValueSets must use display values from CodeSystem
 - Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
+- Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 - ConceptMaps must use display values from CodeSystem
@@ -26,6 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
 - Changed Questionnaire.item constraints to ensure logical consistency between Questionnaire.repeats, Questionnaire.required and questionnaire-minOccurs/questionnaire-maxOccurs extensions of Questionnaire.item.
+- Updated binding for AuditEvent.entity.securityLabel to http://ehealth.sundhed.dk/vs/audit-restriction-levels
 ### Search parameters
 
 ## 3.5.1
