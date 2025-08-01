@@ -1,7 +1,11 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-fetch-patient-usage-stats",
-  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-patient-usage-stats",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
+  },
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-patient-usage-stats",
   "name": "fetch-patient-usage-stats",
   "title": "Fetch unique active citizens total",
   "status": "active",
@@ -12,17 +16,20 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [ {
-    "name": "anonymization",
-    "use": "in",
-    "min": 1,
-    "max": "1",
-    "type": "string"
-  }, {
-    "name": "return",
-    "use": "out",
-    "min": 0,
-    "max": "1",
-    "type": "Binary"
-  } ]
+  "parameter": [
+    {
+      "name": "anonymization",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "type": "string"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Binary"
+    }
+  ]
 }

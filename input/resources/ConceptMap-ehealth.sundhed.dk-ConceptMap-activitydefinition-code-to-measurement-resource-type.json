@@ -68,8 +68,30 @@
       "target": "http://hl7.org/fhir/resource-types",
       "element": [
         {
+          "code": "DNK05472",
+          "display": "Blodtryk systolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05473",
+          "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "NPU03011",
-          "display": "O2 sat.;Hb(aB)",
+          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
           "target": [
             {
               "code": "Observation",
@@ -80,7 +102,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Puls;Hjerte",
+          "display": "Hjerte—Systole; frekv. = ? × 1/min",
           "target": [
             {
               "code": "Observation",
@@ -91,7 +113,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Legeme vægt; Pt",
+          "display": "Pt—Legeme; masse = ? kg",
           "target": [
             {
               "code": "Observation",
@@ -132,17 +154,6 @@
               "equivalence": "relatedto"
             }
           ]
-        },
-        {
-          "code": "NPU19748",
-          "display": "C-reaktivt protein [CRP];P",
-          "target": [
-            {
-              "code": "Observation",
-              "display": "Observation",
-              "equivalence": "relatedto"
-            }
-          ]
         }
       ]
     },
@@ -175,28 +186,6 @@
         {
           "code": "MCS88017",
           "display": "FEV1/FVC;Lunge",
-          "target": [
-            {
-              "code": "Observation",
-              "display": "Observation",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "MCS88019",
-          "display": "Blodtryk hjemme systolisk;Arm",
-          "target": [
-            {
-              "code": "Observation",
-              "display": "Observation",
-              "equivalence": "relatedto"
-            }
-          ]
-        },
-        {
-          "code": "MCS88020",
-          "display": "Blodtryk hjemme diastolisk;Arm",
           "target": [
             {
               "code": "Observation",
@@ -353,7 +342,7 @@
     },
     {
       "source": "http://loinc.org",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "target": "http://hl7.org/fhir/resource-types",
       "element": [
         {
           "code": "72287-6",

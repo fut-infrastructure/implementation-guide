@@ -22,6 +22,14 @@
   "description": "Measurement sharing policies",
   "caseSensitive": true,
   "content": "complete",
+  "property": [
+    {
+      "code": "deprecated",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecated",
+      "description": "Indicates that the concept is deprecated and should not be used",
+      "type": "dateTime"
+    }
+  ],
   "concept": [
     {
       "code": "TBD",

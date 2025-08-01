@@ -22,6 +22,14 @@
   "description": "Document Sharing State",
   "caseSensitive": true,
   "content": "complete",
+  "property": [
+    {
+      "code": "deprecated",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecated",
+      "description": "Indicates that the concept is deprecated and should not be used",
+      "type": "dateTime"
+    }
+  ],
   "concept": [
     {
       "code": "invalidated",
@@ -117,6 +125,11 @@
       "code": "yielded-to-duplicate-document",
       "display": "yielded-to-duplicate-document",
       "definition": "yielded-to-duplicate-document"
+    },
+    {
+      "code": "invalid-observation-code",
+      "display": "invalid-observation-code",
+      "definition": "invalid-observation-code"
     }
   ]
 }

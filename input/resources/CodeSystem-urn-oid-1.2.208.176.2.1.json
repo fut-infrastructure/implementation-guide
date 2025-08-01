@@ -28,11 +28,24 @@
   "description": "It is the translation into Danish of the International NPU Terminology. The NPU terminology defines types of clinical laboratory results expressed as patient properties, with measurement units where relevant, and with individual identifiers. The NPU terminology is owned by: the International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC). The Danish Health Data Authority (see OID {iso(1) member-body(2) dk(208) nsi(176)}) serves as the international repository for the international version. Child OIDs may be registered by the Danish Health Data Authority on decision by the NPU Terminology Steering Committee. OIDs for the national versions are registered by the National Release Centers.",
   "caseSensitive": true,
   "content": "complete",
+  "property": [
+    {
+      "code": "phmr-unit",
+      "type": "string",
+      "uri": "http://ehealth.sundhed.dk/cs/ehealth-property#phmr-unit"
+    }
+  ],
   "concept": [
     {
       "code": "NPU03011",
       "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
       "definition": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -41,6 +54,14 @@
             "code": "consumer"
           },
           "value": "Iltmætning"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "O2 sat.;Hb(aB)"
         }
       ]
     },
@@ -48,6 +69,12 @@
       "code": "NPU22089",
       "display": "P(kB)—Glucose; stofk. = ? mmol/L",
       "definition": "P(kB)—Glucose; stofk. = ? mmol/L",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmol/L"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -56,6 +83,14 @@
             "code": "consumer"
           },
           "value": "Glukose"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Glukose;P(kB)"
         }
       ]
     },
@@ -63,6 +98,12 @@
       "code": "NPU27281",
       "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
       "definition": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "kg/m²"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -71,6 +112,14 @@
             "code": "consumer"
           },
           "value": "BMI"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "BMI;Pt"
         }
       ]
     },
@@ -78,6 +127,12 @@
       "code": "NPU03804",
       "display": "Pt—Legeme; masse = ? kg",
       "definition": "Pt—Legeme; masse = ? kg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "kg"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -86,6 +141,14 @@
             "code": "consumer"
           },
           "value": "Vægt"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Legeme vægt;Pt"
         }
       ]
     },
@@ -93,6 +156,12 @@
       "code": "NPU21692",
       "display": "Hjerte—Systole; frekv. = ? × 1/min",
       "definition": "Hjerte—Systole; frekv. = ? × 1/min",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "1/min"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -101,12 +170,20 @@
             "code": "consumer"
           },
           "value": "Puls"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Puls;Hjerte"
         }
       ]
     },
     {
       "code": "NPU03794",
-      "display": "Legeme højde;Pt",
+      "display": "Pt—Legeme; højde = ? m",
       "definition": "Pt—Legeme; højde = ? m",
       "designation": [
         {
@@ -123,6 +200,12 @@
       "code": "NPU03963",
       "display": "U—Erythrocytter; arb.k.(proc.) = ?",
       "definition": "U—Erythrocytter; arb.k.(proc.) = ?",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "BLANK"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -131,6 +214,14 @@
             "code": "consumer"
           },
           "value": "Erytrocytter(semikvant)"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Erytrocytter(semikvant);U"
         }
       ]
     },
@@ -151,8 +242,14 @@
     },
     {
       "code": "NPU19748",
-      "display": "C-reaktivt protein [CRP];P",
+      "display": "P—C-reaktivt protein; massek. = ? mg/L",
       "definition": "P—C-reaktivt protein; massek. = ? mg/L",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mg/L"
+        }
+      ],
       "designation": [
         {
           "language": "da",
@@ -161,6 +258,56 @@
             "code": "consumer"
           },
           "value": "C-reaktivt protein"
+        },
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "C-reaktivt protein [CRP];P"
+        }
+      ]
+    },
+    {
+      "code": "DNK05472",
+      "display": "Blodtryk systolisk;Arm",
+      "definition": "Arm—Blodtryk(systolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk systolisk;Arm"
+        }
+      ]
+    },
+    {
+      "code": "DNK05473",
+      "display": "Blodtryk diastolisk;Arm",
+      "definition": "Arm—Blodtryk(diastolisk); tryk = ? mmHg",
+      "property": [
+        {
+          "code": "phmr-unit",
+          "valueString": "mmHg"
+        }
+      ],
+      "designation": [
+        {
+          "language": "da",
+          "use": {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
+            "code": "phmr-short-name"
+          },
+          "value": "Blodtryk diastolisk;Arm"
         }
       ]
     }

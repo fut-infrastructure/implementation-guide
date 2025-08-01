@@ -27,8 +27,28 @@
         "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
+            "code": "DNK05472",
+            "display": "Blodtryk systolisk;Arm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Arm—Blodtryk(systolisk); tryk = ? mmHg"
+              }
+            ]
+          },
+          {
+            "code": "DNK05473",
+            "display": "Blodtryk diastolisk;Arm",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
+              }
+            ]
+          },
+          {
             "code": "NPU03011",
-            "display": "O2 sat.;Hb(aB)",
+            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
             "designation": [
               {
                 "language": "en-US",
@@ -42,7 +62,7 @@
           },
           {
             "code": "NPU21692",
-            "display": "Puls;Hjerte",
+            "display": "Hjerte—Systole; frekv. = ? × 1/min",
             "designation": [
               {
                 "language": "en-US",
@@ -56,7 +76,7 @@
           },
           {
             "code": "NPU03804",
-            "display": "Legeme vægt; Pt",
+            "display": "Pt—Legeme; masse = ? kg",
             "designation": [
               {
                 "language": "en-US",
@@ -130,26 +150,6 @@
               {
                 "language": "da",
                 "value": "Lunge—FEV1/FVC; ratio = ?"
-              }
-            ]
-          },
-          {
-            "code": "MCS88019",
-            "display": "Blodtryk hjemme systolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(systolisk) hjemme; tryk = ? mmHg"
-              }
-            ]
-          },
-          {
-            "code": "MCS88020",
-            "display": "Blodtryk hjemme diastolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(diastolisk) hjemme; tryk = ? mmHg"
               }
             ]
           },

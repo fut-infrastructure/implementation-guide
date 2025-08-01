@@ -1,29 +1,96 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased changes
+## Unreleased
 ### General changes
 ### Custom operations
 #### System operations
 #### Instance operations
+### Code systems
+- Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
+- CodeSystems using property deprecated, is updated with definition of the property
+- CodeSystems (supplements) published as HL7 must meet validation requirements (VALIDATION_HL7_WG_NEEDED)
+- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/cs/audit-restriction-levels
+### ValueSets
+- ValueSets must use display values from CodeSystem
+- Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
+- Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
+### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
+- Changed ZZ3170 mapping from MCS88019 and MCS88020 to DNK05472 and DNK05473 in ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-observation-code
+- Removed mappings for codes MCS88019 and MCS88020 in ConceptMaps:
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
+### Resource/profile changes
+- Changed Questionnaire.item constraints to ensure logical consistency between Questionnaire.repeats, Questionnaire.required and questionnaire-minOccurs/questionnaire-maxOccurs extensions of Questionnaire.item.
+- Updated binding for AuditEvent.entity.securityLabel to http://ehealth.sundhed.dk/vs/audit-restriction-levels
+### Search parameters
+
+## 3.5.1
+### General changes (Documentation)
+- Updated operation examples.
+- Updated list of error messages.
+- Updated CapabilityStatements.
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- CodeSystems using property deprecated, is updated with definition of the property
+### ValueSets
+- ValueSets must use display values from CodeSystem
+### ConceptMaps
+- ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
+- ConceptMaps must use display values from CodeSystem
+- ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum fixed wrong mapping
+### Resource/profile changes
+### Search parameters
+
+## 3.5.0
+### General changes
+### Custom operations
+- Added new custom operation $get-general-practitioner-info on Organization service. Custom operation is used to get organization information for a healthcare provider with provider number.
+#### System operations
+#### Instance operations
 - Updated $match for patient
 - Updated $create-patient for historical CPRs
-
 ### Code systems
 - Added new participant function to http://ehealth.sundhed.dk/cs/participant-function
 - Updated supplement values for http://ehealth.sundhed.dk/hl7.org/fhir/action-selection-behavior-supplement
-- Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/cs/audit-restriction-levels
+- Added code `invalid-observation-code` to http://ehealth.sundhed.dk/cs/document-sharing-state
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-designation-use
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-property
+- Added codes `DNK05472` and `DNK05473` to CodeSystem urn:oid:1.2.208.176.2.1
+- Updated CodeSystem urn:oid:1.2.208.176.2.1 with phmr-unit property and phmr-short-name designations
+- Updated CodeSystem urn:oid:1.2.208.184.100.8 with phmr-unit property and phmr-short-name designations
+- Added code `urn:ad:dk:medcom:phmr-v2.1:full` to CodeSystem urn:oid:1.2.208.184.100.10
+- Removed CodeSystems: http://ehealth.sundhed.dk/cs/medcom-device-types and urn:oid:1.2.208.184.100.3 (MedCom Instrument Codes) - (Previously used for transforming to/from old PHMR versions)
 ### ValueSets
-- Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-designation-use
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-property
+- Aligned ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs with DK-IHE_Metadata Value_sets 1.0.5
+- Included code `urn:ad:dk:medcom:phmr-v2.1:full` to ValueSet http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-formatcode-vs
+- Removed ValueSets: http://ehealth.sundhed.dk/vs/medcom-device-type and http://ehealth.sundhed.dk/vs/medcom-instrument-code-device-type (Previously used for transforming to/from old PHMR versions)
+- Added codes `DNK05472` and `DNK05473` from CodeSystem urn:oid:1.2.208.176.2.1 to ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 ### ConceptMaps
+- Removed ConceptMap http://ehealth.sundhed.dk/ConceptMap/conceptmap-device-type-to-medcom-device-type (Previously used for transforming to/from old PHMR versions)
+- Added mapping for codes DNK05472 and DNK05473 in ConceptMaps: 
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing
+  - http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum
+  - http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type
 ### Resource/profile changes
 - Updated IG intro for ehealth-patient
 - Requires ehealth-patient to have 0..1 generalPractitioner. If present, must be a reference to an organization.
 - Added YderNummer NamingSystem
 - ehealth-patient NemSMS' cardinality is now 0..1 (from 0..*) 
 - ehealth-patient eBoks cardinality is now 0..1 (from 0..*)
-- Updated binding for AuditEvent.entity.securityLabel to http://ehealth.sundhed.dk/vs/audit-restriction-levels
-
-#### ServiceRequest (ehealth-servicerequest)
 ### Search parameters
 
 ## 3.4.1 (2025-03-12)
