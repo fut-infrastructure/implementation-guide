@@ -1,0 +1,102 @@
+{
+  "resourceType": "ValueSet",
+  "id": "phmr-observation-vs",
+  "url": "http://medcom.dk/terminologi/phmr-observation-vs",
+  "version": "1.0.0",
+  "name": "MedComPHMRObservationValueSet",
+  "title": "MedCom PHMR Observation ValueSet",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-05-13T00:00:00+00:00",
+  "publisher": "MedCom",
+  "contact": [
+    {
+      "name": "MedCom",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "cda@medcom.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Value set used for Danish (DK) HL7 CDA profile PHMR-DK observation codes.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.1",
+        "concept": [
+          {
+            "code": "NPU03804",
+            "display": "Pt—Legeme; masse = ? kg"
+          },
+          {
+            "code": "NPU19748",
+            "display": "P—C-reaktivt protein; massek. = ? mg/L"
+          },
+          {
+            "code": "NPU22089",
+            "display": "P(kB)—Glucose; stofk. = ? mmol/L"
+          },
+          {
+            "code": "NPU03963",
+            "display": "U—Erythrocytter; arb.k.(proc.) = ?"
+          },
+          {
+            "code": "DNK05472",
+            "display": "Blodtryk systolisk;Arm"
+          },
+          {
+            "code": "DNK05473",
+            "display": "Blodtryk diastolisk;Arm"
+          },
+          {
+            "code": "NPU21692",
+            "display": "Hjerte—Systole; frekv. = ? × 1/min"
+          },
+          {
+            "code": "NPU03011",
+            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
+          },
+          {
+            "code": "NPU27281",
+            "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
+          }
+        ]
+      },
+      {
+        "system": "urn:oid:1.2.208.184.100.8",
+        "concept": [
+          {
+            "code": "MCS88100",
+            "display": "FEV6;Lunge"
+          },
+          {
+            "code": "MCS88015",
+            "display": "FEV1;Lunge"
+          },
+          {
+            "code": "MCS88019",
+            "display": "Blodtryk hjemme systolisk;Arm"
+          },
+          {
+            "code": "MCS88020",
+            "display": "Blodtryk hjemme diastolisk;Arm"
+          },
+          {
+            "code": "MCS88050",
+            "display": "Rejse sætte sig testen;Pt"
+          },
+          {
+            "code": "MCS88137",
+            "display": "CAT score;Pt"
+          },
+          {
+            "code": "MCS88021",
+            "display": "MRC skala;Pt(KOL)"
+          }
+        ]
+      }
+    ]
+  }
+}
