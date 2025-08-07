@@ -13,10 +13,5 @@ Parent: Communication
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-period named period 1..1
-
-Extension: ehealth-period
-Title:     "Period"
-Description: "Specifies the temporal validity of an material communication instance. Contains a period, eg. specifying temporal validity"
-* . ^short = "Specifies the temporal validity of an material communication instance"
-* value[x] only Period
-* valuePeriod 1..1
+* extension[period] ^definition = "Specifies the temporal validity of an material communication instance. Contains a period, eg. specifying temporal validity"
+* extension[period] ^short = "Specifies the temporal validity of an material communication instance"
