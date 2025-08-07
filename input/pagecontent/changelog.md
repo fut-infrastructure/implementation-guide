@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 4.0.0
 ### General changes
 ### Custom operations
 #### System operations
