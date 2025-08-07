@@ -8986,7 +8986,7 @@
     },
     {
       "code": "MCS90014",
-      "display": "Indikation for næste øjenlægekontakt",
+      "display": "Indikation f næste øjenlægekontakt",
       "definition": "Indikation for næste øjenlægekontakt (0-6)",
       "designation": [
         {
@@ -8995,7 +8995,7 @@
             "system": "http://ehealth.sundhed.dk/cs/ehealth-designation-use",
             "code": "phmr-short-name"
           },
-          "value": "Indikation for næste øjenlægekontakt"
+          "value": "Indikation f næste øjenlægekontakt"
         }
       ],
       "property": [
