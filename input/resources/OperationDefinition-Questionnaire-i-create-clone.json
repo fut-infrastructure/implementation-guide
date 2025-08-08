@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Questionnaire-i-create-clone",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Questionnaire-i-create-clone",
+  "url": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire-i-create-clone",
   "name": "create-clone",
   "title": "Create a clone of a Questionnaire",
   "status": "active",
@@ -13,19 +9,15 @@
   "description": "### Input\n- resourceId: reference to the Questionnaire resource that should be cloned\n- clone-operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New copy does not require that the user has a modifier-role.\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone\n",
   "affectsState": true,
   "code": "create-clone",
-  "resource": [
-    "Questionnaire"
-  ],
+  "resource": [ "Questionnaire" ],
   "system": false,
   "type": false,
   "instance": true,
-  "parameter": [
-    {
-      "name": "clone-operation",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
-    }
-  ]
+  "parameter": [ {
+    "name": "clone-operation",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Coding"
+  } ]
 }

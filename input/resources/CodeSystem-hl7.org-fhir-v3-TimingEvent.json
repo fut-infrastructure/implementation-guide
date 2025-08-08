@@ -6,10 +6,6 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fhir"
-    },
-    {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-ballot-status",
       "valueString": "External"
     },

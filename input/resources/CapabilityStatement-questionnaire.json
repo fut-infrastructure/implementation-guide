@@ -1,18 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "questionnaire",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">questionnaire</div>"
-  },
   "name": "questionnaire",
   "status": "active",
-  "date": "2025-08-07T08:59:32.755+00:00",
+  "date": "2025-02-06T09:19:28.659+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "questionnaire",
-    "version": "2.11.0"
+    "version": "2.7.0"
   },
   "implementation": {
     "description": "eHealth questionnaire service",

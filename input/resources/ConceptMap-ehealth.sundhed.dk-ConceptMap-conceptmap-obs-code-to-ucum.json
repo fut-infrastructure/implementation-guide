@@ -52,7 +52,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+          "display": "O2 sat.;Hb(aB)",
           "target": [
             {
               "code": "%",
@@ -64,7 +64,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Hjerte—Systole; frekv. = ? × 1/min",
+          "display": "Puls;Hjerte",
           "target": [
             {
               "code": "1/min",
@@ -76,7 +76,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Pt—Legeme; masse = ? kg",
+          "display": "Legeme vægt; Pt",
           "target": [
             {
               "code": "kg",
@@ -121,6 +121,18 @@
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
           ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "P—C-reaktivt protein; massek. = ? mg/L",
+          "target": [
+            {
+              "code": "mg/L",
+              "display": "milligram per liter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
         }
       ]
     },
@@ -159,6 +171,30 @@
             {
               "code": "{ratio}",
               "display": "ratio",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "millimeter of mercury",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "millimeter of mercury",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }

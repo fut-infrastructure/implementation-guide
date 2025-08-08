@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CarePlanEpisodeOfCare-i-update-care-teams",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
+  "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
   "name": "update-care-teams",
   "title": "Modify care team assignment",
   "status": "active",
@@ -13,41 +9,33 @@
   "description": "The operation modifies the care team assignment of the care plan and all of its sub plans.",
   "affectsState": true,
   "code": "update-care-teams",
-  "resource": [
-    "CarePlan",
-    "EpisodeOfCare"
-  ],
+  "resource": [ "CarePlan", "EpisodeOfCare" ],
   "system": false,
   "type": false,
   "instance": true,
-  "parameter": [
-    {
-      "name": "addCareTeams",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "type": "Reference"
-    },
-    {
-      "name": "removeCareTeams",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "type": "Reference"
-    },
-    {
-      "name": "addCareteams",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "type": "Reference"
-    },
-    {
-      "name": "removeCareteams",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "type": "Reference"
-    }
-  ]
+  "parameter": [ {
+    "name": "addCareTeams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "removeCareTeams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "addCareteams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  }, {
+    "name": "removeCareteams",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "type": "Reference"
+  } ]
 }

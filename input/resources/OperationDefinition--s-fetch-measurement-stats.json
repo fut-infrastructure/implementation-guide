@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-fetch-measurement-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-measurement-stats",
+  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-fetch-measurement-stats",
   "name": "fetch-measurement-stats",
   "title": "Fetch measurement stats",
   "status": "active",
@@ -16,34 +12,29 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [
-    {
-      "name": "anonymization",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "type": "string"
-    },
-    {
-      "name": "organization",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Reference"
-    },
-    {
-      "name": "period",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Period"
-    },
-    {
-      "name": "return",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Binary"
-    }
-  ]
+  "parameter": [ {
+    "name": "anonymization",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "string"
+  }, {
+    "name": "organization",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  }, {
+    "name": "period",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Period"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Binary"
+  } ]
 }

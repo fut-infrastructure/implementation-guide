@@ -12,7 +12,6 @@ dir=input/resources
 
 IG_PATH=$(pwd)
 
-CANONICAL_BASE="http://ehealth.sundhed.dk/fhir/OperationDefinition"
 
 function fetch_capability_statement {
   echo "Downloading capability statements from ${SOURCE_ENVIRONMENT} to ${IG_PATH}/${dir} in xml format"
@@ -63,12 +62,8 @@ function fetch_operation_definitions {
 #				filename=${filename/--/-} #remove -
 #				filename=${filename,,} #to lower case
 				filename=OperationDefinition-${filename}
-				tmp=$(mktemp)
 				echo "Fetching ${operation} and store as ${filename}"
-				curl -k -H "Content-Type: application/fhir+json" -H "${AUTHORIZATION}" -o $tmp ${operation}
-				id=$(jq -r '.id' "$tmp")
-				jq --arg url "$CANONICAL_BASE/$id" '.url = $url' "$tmp" > "${IG_PATH}/${dir}/${filename}"
-				rm -f $tmp
+				curl -k -H "Content-Type: application/fhir+json" -H "${AUTHORIZATION}" -o ${IG_PATH}/${dir}/${filename} ${operation}
 			else
 				echo "Unable to find ${operation} - status code: ${status_code}"
 				exit 1

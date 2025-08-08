@@ -2,8 +2,7 @@ Profile: ehealth-servicerequest
 Id: ehealth-servicerequest
 Parent: ServiceRequest
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
-* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
-* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
+* extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-referenceRange named referenceRange 0..*
 * extension contains ehealth-sharingPolicy named sharingPolicy 1..1
 * extension contains ehealth-sharingApprovalPolicy named sharingApprovalPolicy 0..1

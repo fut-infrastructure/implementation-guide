@@ -22,11 +22,11 @@
     }
   ],
   "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
-  "targetUri": "http://terminology.hl7.org/ValueSet/v2-0136",
+  "targetUri": "http://terminology.hl7.org/ValueSet/v2-0532",
   "group": [
     {
       "source": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "TBD",
@@ -131,7 +131,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.1",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "DNK05472",
@@ -157,7 +157,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+          "display": "O2 sat.;Hb(aB)",
           "target": [
             {
               "code": "Y",
@@ -168,7 +168,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Hjerte—Systole; frekv. = ? × 1/min",
+          "display": "Puls;Hjerte",
           "target": [
             {
               "code": "Y",
@@ -179,7 +179,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Pt—Legeme; masse = ? kg",
+          "display": "Legeme vægt; Pt",
           "target": [
             {
               "code": "Y",
@@ -220,12 +220,22 @@
               "equivalence": "relatedto"
             }
           ]
-        }
-      ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "C-reaktivt protein [CRP];P",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        }      ]
     },
     {
       "source": "urn:oid:1.2.208.184.100.8",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "MCS88015",
@@ -252,6 +262,28 @@
         {
           "code": "MCS88017",
           "display": "FEV1/FVC;Lunge",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
           "target": [
             {
               "code": "Y",
@@ -341,7 +373,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.4",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "ZZ3170",
@@ -358,7 +390,7 @@
     },
     {
       "source": "http://snomed.info/sct",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "445988008",
@@ -419,7 +451,7 @@
     },
     {
       "source": "http://loinc.org",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
 
         {
@@ -492,7 +524,7 @@
     },
     {
       "source": "urn:oid:1.2.208.176.2.4",
-      "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "ALCA00",

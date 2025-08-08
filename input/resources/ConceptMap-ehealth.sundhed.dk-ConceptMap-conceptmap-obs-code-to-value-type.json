@@ -53,7 +53,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+          "display": "O2 sat.;Hb(aB)",
           "target": [
             {
               "code": "decimal",
@@ -65,7 +65,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Hjerte—Systole; frekv. = ? × 1/min",
+          "display": "Puls;Hjerte",
           "target": [
             {
               "code": "integer",
@@ -77,7 +77,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Pt—Legeme; masse = ? kg",
+          "display": "Legeme vægt; Pt",
           "target": [
             {
               "code": "decimal",
@@ -122,6 +122,18 @@
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
           ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "P—C-reaktivt protein; massek. = ? mg/L",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
         }
       ]
     },
@@ -160,6 +172,30 @@
             {
               "code": "decimal",
               "display": "decimal",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }

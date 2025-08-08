@@ -2,8 +2,7 @@ Profile: ehealth-communication-request
 Id: ehealth-communication-request
 Parent: CommunicationRequest
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
-* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
-* extension[episodeOfCare].valueReference ^type.aggregation = #referenced
+* extension[episodeOfCare] ^type.aggregation = #referenced
 // No ProcedureRequest in R4: * basedOn only Reference(ProcedureRequest)
 * basedOn 0..1
 * category from http://ehealth.sundhed.dk/vs/message-category
