@@ -1,7 +1,11 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-import-organizations",
-  "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
+  },
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-import-organizations",
   "name": "import-organizations",
   "title": "Import organizations",
   "status": "active",
@@ -12,17 +16,20 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [ {
-    "name": "organizations",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "type": "Bundle"
-  }, {
-    "name": "bundle",
-    "use": "out",
-    "min": 0,
-    "max": "1",
-    "type": "Bundle"
-  } ]
+  "parameter": [
+    {
+      "name": "organizations",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Bundle"
+    },
+    {
+      "name": "bundle",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Bundle"
+    }
+  ]
 }

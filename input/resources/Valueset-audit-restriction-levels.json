@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-audit-restriction-levels",
+  "url": "http://ehealth.sundhed.dk/vs/audit-restriction-levels",
+  "version": "2025-04-02T00:00:00",
+  "name": "auditRestrictionLevels",
+  "title": "Audit Restriction Levels",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-04-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/audit-restriction-levels"
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/security-labels"
+        ]
+      }
+    ]
+  }
+}

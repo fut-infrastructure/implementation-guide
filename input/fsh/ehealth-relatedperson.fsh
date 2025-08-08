@@ -23,14 +23,12 @@ Usage: #example
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"
 * extension.url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote"
 * extension.valueString = "This is a contact note"
-* patient = Reference(https://patient.fut.trifork.com/fhir/Patient/102)
+* patient = Reference(Patient/102)
 * name.use = #official
 * name.family = "Test"
 * name.given = "RelatedPerson"
 * address.extension[0].url = "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
 * address.extension[=].valueCodeableConcept = http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes#0330
-* address.extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-regional-subdivision-code"
-* address.extension[=].valueCodeableConcept = https://www.iso.org/obp/ui/#iso:code:3166:DK#DK-85
 * address.use = #home
 * address.line = "Mønsgade 20 5. tv"
 * address.city = "Aarhus"
