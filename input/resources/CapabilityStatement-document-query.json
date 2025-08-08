@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "document-query",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">document-query</div>"
-  },
   "name": "document-query",
   "status": "active",
   "date": "2025-08-07T02:12:23.759+00:00",

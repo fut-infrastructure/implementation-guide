@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "document-transformation",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">document-transformation</div>"
-  },
   "name": "document-transformation",
   "status": "active",
   "date": "2025-08-07T09:01:32.473+00:00",
