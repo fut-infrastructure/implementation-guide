@@ -42,8 +42,6 @@
 
 - `ACTIVITYDEFINITION_SHARINGAPPROVALPOLICY_NOT_SET`: Resource %s with code: %s | %s must have SharingApprovalPolicy set.
 
-- `ACTIVITYDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
-
 #### ehealth-appointment
 
 - `APPOINTMENT_LISTENER_APPOINTMENT_MISSING_CAREPLAN`: Appointment has no CarePlan
@@ -184,6 +182,8 @@
 
 - `EPISODEOFCARE_IS_CONTEXT_ALLOWED_MATCH_NOT_FOUND`: It is not possible to set the Episode Of Care as a context
 
+- `EPISODEOFCARE_TEAM_REFERENCE_MISSING`: It is not possible to add or replace team without a CareTeam reference
+
 #### ehealth-library
 
 - `LIBRARY_EVALUATE_NO_INPUT_PARAMETER`: An input parameter of type Parameters should be provided.
@@ -204,8 +204,6 @@
 
 - `LIBRARY_EVALUATE_UNABLE_TO_RESOLVE_RESOURCE`: Not able to resolve %s when input is of type %s.
 
-- `LIBRARY_EVALUATE_UNABLE_TO_RESOLVE_HISTORICAL_RESOURCE`: Not able to resolve historical %s when input is of type %s.
-
 - `LIBRARY_EVALUATE_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
 - `LIBRARY_EVALUATE_LOGIC_RULE_INVALID_INPUT`: Error evaluating logic rule. Category: %s, Focus: %s, RuleDescription: %s
@@ -215,18 +213,6 @@
 - `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s and name: %s. Number of search results: %s
 
 - `LIBRARY_MISSING_IDENTIFIER`: Library with identifier: %s and name: %s does not have identifier of type: %s
-
-- `LIBRARY_EVALUATE_LIMIT_EXCEEDED`: Limit %s exceeds the maximum allowed soft limit of %s. Historical data will not be processed for library %s
-
-- `LIBRARY_EVALUATE_SORT_PATH_NOT_RECOGNIZED`: Sort path %s is not recognized. Historical data will not be processed for library %s
-
-- `LIBRARY_EVALUATE_SORT_DIRECTION_NOT_RECOGNIZED`: Sort direction %s is not recognized. Historical data will not be processed for library %s
-
-- `LIBRARY_EVALUATE_SORT_EMPTY`: Sort path is empty. Historical data will not be processed for library %s
-
-- `LIBRARY_EVALUATE_LIMITS_EXCEEDED`: Duration %s exceeds the maximum allowed duration of %s months or limit %s exceeds the maximum allowed soft limit of %s. Historical data will not be processed for library %s
-
-- `LIBRARY_EVALUATE_MISSING_DURATION_OR_LIMIT`: Duration or limit not set. Historical data will not be processed for library %s
 
 #### ehealth-measurement
 
@@ -364,8 +350,6 @@
 
 - `PLANDEFINITION_MISSING_RELATED_ACTION`: An action points to a non-existing related action
 
-- `PLANDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
-
 #### ehealth-provenance
 
 - `PROVENANCE_NO_READ_PRIVILEGE`: User must be logged in with the provenance read privilege
@@ -382,7 +366,7 @@
 
 #### ehealth-questionnaire
 
-- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMTPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
 
 - `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_DATETIME`: QuestionnaireResponse has invalid DateTimeType on effectivePeriod.%s, must have minutes, seconds or millis precision and must have a timezone.
 
@@ -403,8 +387,6 @@
   %s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
 
 - `QUESTIONNAIRE_QFDD_DOES_NOT_EXIST_IN_DOCUMENT_TRANSFORMATION`: The QFDD with the identifier %s does not exist in document transformation
-
-- `QUESTIONNAIRE_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
 
 - `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_NOT_FOUND`: Code %s for CodeSystem %s not found
 
@@ -522,7 +504,7 @@
 
 - `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_MISSING_STEPVALUE`: Questionnaire item with linkId '%s' has itemControl: 'slider' but has no step value extension.
 
-- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider', but either Repeats is true or MaxOccurs is not null. Repeats was: %s and MaxOccurs was: %s.
+- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider' but either repeats if true. Was: %s. or maxOccursValue is larger than 1. Was: %s.
 
 - `TRANSFORMATION_QFDD_CODESYSTEM_TITLE_MISSING`: CodeSystem title is missing, for CodeSystem with url: %s
 

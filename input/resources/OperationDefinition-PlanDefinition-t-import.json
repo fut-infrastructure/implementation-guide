@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "PlanDefinition-t-import",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-t-import",
+  "url": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-t-import",
   "name": "import",
   "title": "Import a Plandefinition",
   "status": "active",
@@ -13,26 +9,21 @@
   "description": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Imports QFFD DocumentReference into Document-Transformation service.Libraries and Organizations are used to find the corresponding resources on the target system.\n",
   "affectsState": true,
   "code": "import",
-  "resource": [
-    "PlanDefinition"
-  ],
+  "resource": [ "PlanDefinition" ],
   "system": false,
   "type": true,
   "instance": false,
-  "parameter": [
-    {
-      "name": "planDefinitionPackage",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Binary"
-    },
-    {
-      "name": "return",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Bundle"
-    }
-  ]
+  "parameter": [ {
+    "name": "planDefinitionPackage",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Binary"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
 }

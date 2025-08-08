@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Organization-i-traverse-to-sor",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-i-traverse-to-sor",
+  "url": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
   "name": "traverse-to-sor",
   "title": "Traverse to SOR",
   "status": "active",
@@ -13,19 +9,15 @@
   "description": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found",
   "affectsState": false,
   "code": "traverse-to-sor",
-  "resource": [
-    "Organization"
-  ],
+  "resource": [ "Organization" ],
   "system": false,
   "type": false,
   "instance": true,
-  "parameter": [
-    {
-      "name": "return",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Organization"
-    }
-  ]
+  "parameter": [ {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Organization"
+  } ]
 }

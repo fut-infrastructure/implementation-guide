@@ -4,24 +4,6 @@
   "meta": {
     "lastUpdated": "2016-11-11T00:00:00.000+11:00"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "fhir"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "normative"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-      "valueCode": "4.0.0"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 5
-    }
-  ],
   "url": "http://hl7.org/fhir/event-timing",
   "version": "4.0.1",
   "name": "EventTiming",

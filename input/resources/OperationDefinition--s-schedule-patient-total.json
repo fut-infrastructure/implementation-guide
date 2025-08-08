@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-schedule-patient-total",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-patient-total",
+  "url": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-schedule-patient-total",
   "name": "schedule-patient-total",
   "title": "Schedule patient total",
   "status": "active",
@@ -16,48 +12,41 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [
-    {
-      "name": "anonymization",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "type": "string"
-    },
-    {
-      "name": "organization",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Reference"
-    },
-    {
-      "name": "period",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Period"
-    },
-    {
-      "name": "conditionCode",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
-    },
-    {
-      "name": "status",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "string"
-    },
-    {
-      "name": "return",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Binary"
-    }
-  ]
+  "parameter": [ {
+    "name": "anonymization",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "type": "string"
+  }, {
+    "name": "organization",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Reference"
+  }, {
+    "name": "period",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Period"
+  }, {
+    "name": "conditionCode",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "Coding"
+  }, {
+    "name": "status",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string"
+  }, {
+    "name": "return",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Binary"
+  } ]
 }

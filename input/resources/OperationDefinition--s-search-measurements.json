@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-search-measurements",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-search-measurements",
+  "url": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-search-measurements",
   "name": "search-measurements",
   "title": "Search measurements",
   "status": "active",
@@ -16,61 +12,53 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [
-    {
-      "name": "patient",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Find resource(s) referring the specified patient - Reference(eHealth Patient).",
-      "type": "Reference"
-    },
-    {
-      "name": "episodeOfCare",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare)",
-      "type": "Reference"
-    },
-    {
-      "name": "device",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Find resource(s) referring the specified device - Reference(eHealth Device)",
-      "type": "Reference"
-    },
-    {
-      "name": "period",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Resource(s) must have either an instant or time period within or overlapping the given period.",
-      "type": "Period"
-    },
-    {
-      "name": "based-on",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "documentation": "Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest)",
-      "type": "Reference"
-    },
-    {
-      "name": "_tag",
-      "use": "in",
-      "min": 0,
-      "max": "*",
-      "documentation": "Search for resources which have the given tag",
-      "type": "Coding"
-    },
-    {
-      "name": "bundle",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Bundle"
-    }
-  ]
+  "parameter": [ {
+    "name": "patient",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "documentation": "Find resource(s) referring the specified patient - Reference(eHealth Patient).",
+    "type": "Reference"
+  }, {
+    "name": "episodeOfCare",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "documentation": "Find resource(s) referring the specified episode of care - Reference(eHealth EpisodeOfCare)",
+    "type": "Reference"
+  }, {
+    "name": "device",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "documentation": "Find resource(s) referring the specified device - Reference(eHealth Device)",
+    "type": "Reference"
+  }, {
+    "name": "period",
+    "use": "in",
+    "min": 1,
+    "max": "1",
+    "documentation": "Resource(s) must have either an instant or time period within or overlapping the given period.",
+    "type": "Period"
+  }, {
+    "name": "based-on",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "documentation": "Resources(s) must be based on any of the specified procedure requests - Reference(eHealth ServiceRequest)",
+    "type": "Reference"
+  }, {
+    "name": "_tag",
+    "use": "in",
+    "min": 0,
+    "max": "*",
+    "documentation": "Search for resources which have the given tag",
+    "type": "Coding"
+  }, {
+    "name": "bundle",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
 }

@@ -91,7 +91,7 @@
         },
         {
           "code": "NPU03011",
-          "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+          "display": "O2 sat.;Hb(aB)",
           "target": [
             {
               "code": "Observation",
@@ -102,7 +102,7 @@
         },
         {
           "code": "NPU21692",
-          "display": "Hjerte—Systole; frekv. = ? × 1/min",
+          "display": "Puls;Hjerte",
           "target": [
             {
               "code": "Observation",
@@ -113,7 +113,7 @@
         },
         {
           "code": "NPU03804",
-          "display": "Pt—Legeme; masse = ? kg",
+          "display": "Legeme vægt; Pt",
           "target": [
             {
               "code": "Observation",
@@ -154,6 +154,17 @@
               "equivalence": "relatedto"
             }
           ]
+        },
+        {
+          "code": "NPU19748",
+          "display": "C-reaktivt protein [CRP];P",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
         }
       ]
     },
@@ -186,6 +197,28 @@
         {
           "code": "MCS88017",
           "display": "FEV1/FVC;Lunge",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88019",
+          "display": "Blodtryk hjemme systolisk;Arm",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MCS88020",
+          "display": "Blodtryk hjemme diastolisk;Arm",
           "target": [
             {
               "code": "Observation",
@@ -342,7 +375,7 @@
     },
     {
       "source": "http://loinc.org",
-      "target": "http://hl7.org/fhir/resource-types",
+      "target": "http://terminology.hl7.org/CodeSystem/v2-0532",
       "element": [
         {
           "code": "72287-6",

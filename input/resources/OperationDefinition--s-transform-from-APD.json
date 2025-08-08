@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-transform-from-APD",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-from-APD",
+  "url": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-transform-from-APD",
   "name": "transform-from-APD",
   "title": "Transform from APD",
   "status": "active",
@@ -16,20 +12,17 @@
   "system": true,
   "type": false,
   "instance": false,
-  "parameter": [
-    {
-      "name": "documentReference",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "DocumentReference"
-    },
-    {
-      "name": "bundle",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Bundle"
-    }
-  ]
+  "parameter": [ {
+    "name": "documentReference",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "DocumentReference"
+  }, {
+    "name": "bundle",
+    "use": "out",
+    "min": 0,
+    "max": "1",
+    "type": "Bundle"
+  } ]
 }

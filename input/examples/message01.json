@@ -31,7 +31,7 @@
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam",
       "valueReference": {
-        "reference": "CareTeam/108752"
+        "reference": "https://organization.fut.trifork.com/fhir/CareTeam/108752"
       }
     },
     {
@@ -61,15 +61,14 @@
     {
       "coding": [
         {
-          "system": "http://ehealth.sundhed.dk/cs/message-medium",
-          "code": "nemsms"
+          "system": "http://ehealth.sundhed.dk/cs/message-medium"
         }
       ]
     }
   ],
   "recipient": [
     {
-      "reference": "Patient/102"
+      "reference": "https://patient.fut.trifork.com/fhir/Patient/102"
     }
   ],
   "sent": "2021-07-15T07:06:55+00:00",

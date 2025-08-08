@@ -1,18 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "plan",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">plan</div>"
-  },
   "name": "plan",
   "status": "active",
-  "date": "2025-08-07T02:42:42.366+00:00",
+  "date": "2025-02-06T09:20:02.472+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.10.0"
+    "version": "2.7.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -601,6 +597,10 @@
       } ]
     } ],
     "operation": [ {
+      "name": "migrate-list",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate-list",
+      "documentation": "Data migration"
+    }, {
       "name": "migrate",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"

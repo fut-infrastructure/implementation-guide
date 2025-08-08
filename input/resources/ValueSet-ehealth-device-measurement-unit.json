@@ -28,7 +28,7 @@
         "concept": [
           {
             "code": "NPU03011",
-            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
+            "display": "O2 sat.;Hb(aB)",
             "designation": [
               {
                 "language": "en-US",
@@ -42,7 +42,7 @@
           },
           {
             "code": "NPU21692",
-            "display": "Hjerte—Systole; frekv. = ? × 1/min",
+            "display": "Puls;Hjerte",
             "designation": [
               {
                 "language": "en-US",
@@ -56,7 +56,7 @@
           },
           {
             "code": "NPU03804",
-            "display": "Pt—Legeme; masse = ? kg",
+            "display": "Legeme vægt; Pt",
             "designation": [
               {
                 "language": "en-US",

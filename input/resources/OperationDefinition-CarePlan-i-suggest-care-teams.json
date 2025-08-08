@@ -1,11 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CarePlan-i-suggest-care-teams",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
-  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
+  "url": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
   "name": "suggest-care-teams",
   "title": "Suggest care teams",
   "status": "active",
@@ -13,26 +9,21 @@
   "description": "Suggest care teams matching the conditions required by the care plan on either a regional or a municipality level. The suggested care teams has reason codes matching all the conditions addressed by the care plan and has a managing organization matching the input region code or municipality code. One of region code or municipality code must be input. If both region code and municipality code is input, then the municipality code is ignored. Return a bundle with matching care teams and their managing organizations.",
   "affectsState": true,
   "code": "suggest-care-teams",
-  "resource": [
-    "CarePlan"
-  ],
+  "resource": [ "CarePlan" ],
   "system": false,
   "type": false,
   "instance": true,
-  "parameter": [
-    {
-      "name": "regionCode",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "string"
-    },
-    {
-      "name": "municipalityCode",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "type": "string"
-    }
-  ]
+  "parameter": [ {
+    "name": "regionCode",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string"
+  }, {
+    "name": "municipalityCode",
+    "use": "in",
+    "min": 0,
+    "max": "1",
+    "type": "string"
+  } ]
 }

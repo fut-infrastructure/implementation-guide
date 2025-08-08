@@ -1,20 +1,10 @@
 {
   "resourceType": "CodeSystem",
   "id": "hl7.org-fhir-publication-status",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-      "valueCode": "cds"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "normative"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 5
-    }
-  ],
+  "text": {
+    "status": "generated",
+    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003cp/\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDisplay\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDefinition\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003edraft\u003ca name\u003d\"publication-status-dk-supplement-draft\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eDraft\u003c/td\u003e\u003ctd\u003eThis resource is still under development and is not yet considered to be ready for normal use.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eactive\u003ca name\u003d\"publication-status-dk-supplement-active\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eActive\u003c/td\u003e\u003ctd\u003eThis resource is ready for normal use.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eretired\u003ca name\u003d\"publication-status-dk-supplement-retired\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eRetired\u003c/td\u003e\u003ctd\u003eThis resource has been withdrawn or superseded and should no longer be used.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003eunknown\u003ca name\u003d\"publication-status-dk-supplement-unknown\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eUnknown\u003c/td\u003e\u003ctd\u003eThe authoring system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \u0026quot;other\u0026quot; - one of the listed statuses is presumed to apply, it\u0027s just not known which one.\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003cp\u003e\u003cb\u003eAdditional Language Displays\u003c/b\u003e\u003c/p\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDansk (Danish, da)\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eNederlands (Dutch, nl)\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eРусский (Russian, ru)\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003edraft\u003c/td\u003e\u003ctd\u003eUdkast\u003c/td\u003e\u003ctd\u003eontwerp\u003c/td\u003e\u003ctd\u003eчерновик\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eactive\u003c/td\u003e\u003ctd\u003eAktiv\u003c/td\u003e\u003ctd\u003eactief\u003c/td\u003e\u003ctd\u003eактивный\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eretired\u003c/td\u003e\u003ctd\u003eUdgået\u003c/td\u003e\u003ctd\u003everouderd\u003c/td\u003e\u003ctd\u003eудалён\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003eunknown\u003c/td\u003e\u003ctd\u003eUkendt\u003c/td\u003e\u003ctd/\u003e\u003ctd/\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e"
+  },
   "url": "http://hl7.org/fhir/publication-status",
   "version": "2021.3.0",
   "name": "PublicationStatus",

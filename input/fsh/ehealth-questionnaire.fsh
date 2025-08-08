@@ -15,7 +15,7 @@ Parent: Questionnaire
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
-* item obeys sliderStepValueDecimal-Type and copyright-type and questionnaire-minOccurs-greater-than-one and questionnaire-maxOccurs-greater-than-one and minOccurs-invalid-when-repeats-false
+* item obeys sliderStepValueDecimal-Type and copyright-type
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
 * item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
@@ -146,19 +146,4 @@ Severity:    #error
 Invariant:   sliderStepValueDecimal-Type
 Description: "Item must have type='decimal' when using extension 'ehealth-questionnaire-sliderStepValueDecimal'"
 Expression:  "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-sliderStepValueDecimal').exists() implies type = 'decimal'"
-Severity:    #error
-
-Invariant:   questionnaire-minOccurs-greater-than-one
-Description: "When the questionnaire-minOccurs extension is present, its value must be greater than 1"
-Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').exists() implies extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1"
-Severity:    #error
-
-Invariant:   questionnaire-maxOccurs-greater-than-one
-Description: "When the questionnaire-maxOccurs extension is present, its value must be greater than 1"
-Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs').exists() implies extension('http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs').valueInteger > 1"
-Severity:    #error
-
-Invariant:   minOccurs-invalid-when-repeats-false
-Description: "minOccurs > 1 is invalid if repeats is false"
-Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').exists() and extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').valueInteger > 1 implies repeats = true"
 Severity:    #error
