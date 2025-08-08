@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "terminology",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">terminology</div>"
-  },
   "name": "terminology",
   "status": "active",
   "date": "2025-08-06T18:29:35.290+00:00",

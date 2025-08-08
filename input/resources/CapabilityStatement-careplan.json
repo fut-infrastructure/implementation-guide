@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "careplan",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">careplan</div>"
-  },
   "name": "careplan",
   "status": "active",
   "date": "2025-08-07T08:59:49.764+00:00",

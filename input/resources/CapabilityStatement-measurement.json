@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "measurement",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">measurement</div>"
-  },
   "name": "measurement",
   "status": "active",
   "date": "2025-08-07T02:27:42.315+00:00",
