@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased changes
+### Code systems
+- In CodeSystem urn:oid:1.2.208.184.100.8 escape character in concept definitions to avoid the narrative generator adding offending html element attribute
+
 ## 4.0.0
 ### General changes
 ### Custom operations
