@@ -1,14 +1,18 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "terminology",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">terminology</div>"
+  },
   "name": "terminology",
   "status": "active",
-  "date": "2025-02-06T09:30:57.273+00:00",
+  "date": "2025-08-06T18:29:35.290+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "terminology",
-    "version": "1.16.0"
+    "version": "1.19.0"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -62,9 +66,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
@@ -247,9 +259,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
@@ -441,9 +461,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
@@ -568,9 +596,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
@@ -739,9 +775,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
@@ -909,9 +953,17 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_language",
+        "type": "token",
+        "documentation": "The language of the resource"
+      }, {
         "name": "_lastUpdated",
         "type": "date",
         "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
+        "name": "_list",
+        "type": "string",
+        "documentation": "Search the contents of the resource's data using a list"
       }, {
         "name": "_profile",
         "type": "uri",
