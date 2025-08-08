@@ -41,6 +41,10 @@ Parent: DkCorePatient
 * generalPractitioner 0..1
 * generalPractitioner only Reference(Organization)
 * generalPractitioner ^type.aggregation = #referenced
+* generalPractitioner contains YderNummer 0..1
+* generalPractitioner[YderNummer].system = "urn:oid.1.2.208.176.1.4"
+* generalPractitioner[YderNummer].system 1..1
+* generalPractitioner[YderNummer].value 1..1
 
 Extension: ehealth-itcompetencelevel
 Title:     "IT competence level"
