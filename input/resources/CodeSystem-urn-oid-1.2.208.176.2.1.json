@@ -31,7 +31,8 @@
   "property": [
     {
       "code": "phmr-unit",
-      "type": "string"
+      "type": "string",
+      "uri": "http://ehealth.sundhed.dk/cs/ehealth-property#phmr-unit"
     }
   ],
   "concept": [
@@ -158,7 +159,7 @@
       "property": [
         {
           "code": "phmr-unit",
-          "valueString": "× 1/min"
+          "valueString": "1/min"
         }
       ],
       "designation": [
@@ -182,7 +183,7 @@
     },
     {
       "code": "NPU03794",
-      "display": "Legeme højde;Pt",
+      "display": "Pt—Legeme; højde = ? m",
       "definition": "Pt—Legeme; højde = ? m",
       "designation": [
         {
@@ -241,7 +242,7 @@
     },
     {
       "code": "NPU19748",
-      "display": "C-reaktivt protein [CRP];P",
+      "display": "P—C-reaktivt protein; massek. = ? mg/L",
       "definition": "P—C-reaktivt protein; massek. = ? mg/L",
       "property": [
         {

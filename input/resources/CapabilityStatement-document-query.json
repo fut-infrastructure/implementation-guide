@@ -3,12 +3,12 @@
   "id": "document-query",
   "name": "document-query",
   "status": "active",
-  "date": "2025-02-06T09:20:35.069+00:00",
+  "date": "2025-08-07T02:12:23.759+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-query",
-    "version": "1.13.0"
+    "version": "1.16.0"
   },
   "implementation": {
     "description": "eHealth document-query service",

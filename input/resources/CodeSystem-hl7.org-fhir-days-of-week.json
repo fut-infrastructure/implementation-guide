@@ -1,10 +1,24 @@
 {
   "resourceType": "CodeSystem",
   "id": "hl7.org-fhir-days-of-week",
-  "text": {
-    "status": "generated",
-    "div": "\u003cdiv xmlns\u003d\"http://www.w3.org/1999/xhtml\"\u003e\u003cp/\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDisplay\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDefinition\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003emon\u003ca name\u003d\"days-of-week-dk-supplement-mon\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eMonday\u003c/td\u003e\u003ctd\u003eMonday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003etue\u003ca name\u003d\"days-of-week-dk-supplement-tue\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eTuesday\u003c/td\u003e\u003ctd\u003eTuesday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003ewed\u003ca name\u003d\"days-of-week-dk-supplement-wed\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eWednesday\u003c/td\u003e\u003ctd\u003eWednesday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003ethu\u003ca name\u003d\"days-of-week-dk-supplement-thu\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eThursday\u003c/td\u003e\u003ctd\u003eThursday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003efri\u003ca name\u003d\"days-of-week-dk-supplement-fri\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eFriday\u003c/td\u003e\u003ctd\u003eFriday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003esat\u003ca name\u003d\"days-of-week-dk-supplement-sat\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eSaturday\u003c/td\u003e\u003ctd\u003eSaturday\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd style\u003d\"white-space:nowrap\"\u003esun\u003ca name\u003d\"days-of-week-dk-supplement-sun\"\u003e \u003c/a\u003e\u003c/td\u003e\u003ctd\u003eSunday\u003c/td\u003e\u003ctd\u003eSunday\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003cp\u003e\u003cb\u003eAdditional Language Displays\u003c/b\u003e\u003c/p\u003e\u003ctable class\u003d\"codes\"\u003e\u003ctr\u003e\u003ctd\u003e\u003cb\u003eCode\u003c/b\u003e\u003c/td\u003e\u003ctd\u003e\u003cb\u003eDansk (Danish, da)\u003c/b\u003e\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003emon\u003c/td\u003e\u003ctd\u003eMandag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003etue\u003c/td\u003e\u003ctd\u003eTirsdag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003ewed\u003c/td\u003e\u003ctd\u003eOnsdag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003ethu\u003c/td\u003e\u003ctd\u003eTorsdag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003efri\u003c/td\u003e\u003ctd\u003eFredag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003esat\u003c/td\u003e\u003ctd\u003eLørdag\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd\u003esun\u003c/td\u003e\u003ctd\u003eSøndag\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e"
-  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "normative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+      "valueCode": "4.0.0"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 5
+    }
+  ],
   "url": "http://hl7.org/fhir/days-of-week",
   "version": "2021.3.0",
   "name": "DaysOfWeek",

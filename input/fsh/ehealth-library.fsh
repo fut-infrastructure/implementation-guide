@@ -6,6 +6,6 @@ Parent: Library
 * extension contains ehealth-modifier-role named modifierRole 1..1
 * version 1..1
 * type from http://ehealth.sundhed.dk/vs/library-type
-* useContext.code from http://ehealth.sundhed.dk/vs/usage-context-type
+* useContext.code from http://ehealth.sundhed.dk/vs/ehealth-usage-context-type
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
 * parameter 1..*

@@ -1,7 +1,11 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Media-t-get-data",
-  "url": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-t-get-data",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
+  },
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Media-t-get-data",
   "name": "get-data",
   "title": "Get media data",
   "status": "active",
@@ -9,16 +13,20 @@
   "description": "The get-data operation returns a media content matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Request header description\n- ehealth-thumbnail-size: The size of thumbnail to return instead of original content. If thumbnails are not supported for the media, the original content is returned\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid",
   "affectsState": false,
   "code": "get-data",
-  "resource": [ "Media" ],
+  "resource": [
+    "Media"
+  ],
   "system": false,
   "type": true,
   "instance": false,
-  "parameter": [ {
-    "name": "uuid",
-    "use": "in",
-    "min": 0,
-    "max": "1",
-    "documentation": "Get media data matching the UUID provided",
-    "type": "string"
-  } ]
+  "parameter": [
+    {
+      "name": "uuid",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Get media data matching the UUID provided",
+      "type": "string"
+    }
+  ]
 }
