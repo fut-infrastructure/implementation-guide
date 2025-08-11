@@ -7,7 +7,7 @@ canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
 status: active # draft | active | retired | unknown
-version: 4.0.0 # This is overridden by .github/workflows/publish.yaml at publication-time
+version: 4.0.1
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 
