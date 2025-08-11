@@ -78,9 +78,10 @@ Description: "Describes the general health condition of a patient using FSIII co
 * extension[description].value[x] only string
 
 
-Instance: patient01
+Instance: Patient/102
 InstanceOf: Patient
 Usage: #example
+* id = "102"
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
 * identifier.system = "urn:oid:1.2.208.176.1.2"
 * identifier.value = "2512489996"
