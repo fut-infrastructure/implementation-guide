@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Bundle-t-retrieve-and-transform-PHMR",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Bundle-t-retrieve-and-transform-PHMR",
   "name": "retrieve-and-transform-PHMR",
   "title": "Retrieve and transform PHMR document",

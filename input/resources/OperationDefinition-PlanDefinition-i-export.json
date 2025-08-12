@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "PlanDefinition-i-export",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/PlanDefinition-i-export",
   "name": "export",
   "title": "Export a PlanDefinition",

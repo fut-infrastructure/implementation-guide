@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-schedule-careplans-by-patient",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-careplans-by-patient",
   "name": "schedule-careplans-by-patient",
   "title": "Schedule careplans-by patient",
