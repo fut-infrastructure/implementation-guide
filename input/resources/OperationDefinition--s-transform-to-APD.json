@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-transform-to-APD",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-APD",
   "name": "transform-to-APD",
   "title": "Transform to APD",

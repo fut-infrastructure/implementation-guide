@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-transform-to-QRD",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-QRD",
   "name": "transform-to-QRD",
   "title": "Transform to QRD",

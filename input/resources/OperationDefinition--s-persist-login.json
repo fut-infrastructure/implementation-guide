@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-persist-login",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-persist-login",
   "name": "persist-login",
   "title": "Persist login",

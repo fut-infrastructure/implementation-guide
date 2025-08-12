@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-fetch-careplans-by-patient",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplans-by-patient",
   "name": "fetch-careplans-by-patient",
   "title": "Fetch careplans by patient",

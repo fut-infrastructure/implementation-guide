@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CarePlanEpisodeOfCare-i-update-care-teams",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CarePlanEpisodeOfCare-i-update-care-teams",
   "name": "update-care-teams",
   "title": "Modify care team assignment",

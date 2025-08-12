@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Organization-t-get-general-practitioner-info",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-t-get-general-practitioner-info",
   "name": "get-general-practitioner-info",
   "title": "Get organization information for a healthcare provider with provider number",

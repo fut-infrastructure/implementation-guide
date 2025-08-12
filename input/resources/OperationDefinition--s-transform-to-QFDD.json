@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-transform-to-QFDD",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-transform-to-QFDD",
   "name": "transform-to-QFDD",
   "title": "Transform to QFDD",

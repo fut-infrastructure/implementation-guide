@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-execute-careplan-duration-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-execute-careplan-duration-stats",
   "name": "execute-careplan-duration-stats",
   "title": "Execute careplan duration stats",

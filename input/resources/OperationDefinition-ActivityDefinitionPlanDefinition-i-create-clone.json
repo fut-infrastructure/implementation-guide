@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "ActivityDefinitionPlanDefinition-i-create-clone",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
   "name": "create-clone",
   "title": "Create a clone of an ActivityDefinition",

@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-execute-careplan-and-episode-of-care-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-execute-careplan-and-episode-of-care-stats",
   "name": "execute-careplan-and-episode-of-care-stats",
   "title": "Execute careplan and episode of care stats",

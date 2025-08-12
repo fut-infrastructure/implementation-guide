@@ -1,10 +1,6 @@
 {
   "resourceType": "CodeSystem",
   "id": "ehealth-unit-code",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ehealth.sundhed.dk/cs/ehealth-unit-code defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1/30sec<a name=\"ehealth-unit-code-1.4730sec\"> </a></td><td>one per 30 seconds</td><td>Number of occurrences in 30 seconds</td></tr><tr><td style=\"white-space:nowrap\">percentpoint<a name=\"ehealth-unit-code-percentpoint\"> </a></td><td>percent point</td><td>Percentage point</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>1/30sec</td><td>1/ 30 sek</td></tr><tr><td>percentpoint</td><td>procentpoint</td></tr></table></div>"
-  },
   "url": "http://ehealth.sundhed.dk/cs/ehealth-unit-code",
   "version": "2020-10-19T10:00:00",
   "name": "eHealthUnitCodes",

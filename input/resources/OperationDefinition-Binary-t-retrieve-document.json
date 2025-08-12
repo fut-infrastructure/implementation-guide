@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Binary-t-retrieve-document",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Binary-t-retrieve-document",
   "name": "retrieve-document",
   "title": "Retrieve document",

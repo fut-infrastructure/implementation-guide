@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "DocumentReference-t-deprecate-document",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/DocumentReference-t-deprecate-document",
   "name": "deprecate-document",
   "title": "Deprecate document",
