@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-document-reference-type",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-document-reference-type",
+  "version": "1.0.0",
+  "name": "EHealthDocumentReferenceType",
+  "title": "EHealthDocumentReference Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-09-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "EHealthDocumentReference Type ValueSet",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-document-reference-type"
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "69730-0",
+            "display": "Instructions",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Instruktioner"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

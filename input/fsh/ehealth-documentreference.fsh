@@ -1,7 +1,7 @@
 Profile: ehealth-documentreference
 Id: ehealth-documentreference
 Parent: DocumentReference
-* type from http://ehealth.sundhed.dk/vs/document-type (required)
+* type from http://ehealth.sundhed.dk/vs/ehealth-document-reference-type (required)
 * category 0..1
 * category from http://ehealth.sundhed.dk/vs/document-category (required)
 * subject only Reference(ehealth-patient or ehealth-practitioner or Group or ehealth-device)
@@ -15,6 +15,9 @@ Parent: DocumentReference
 * relatesTo.target only Reference(ehealth-documentreference)
 * context.sourcePatientInfo only Reference(ehealth-patient)
 * context.encounter only Reference(ehealth-episodeofcare)
+* context.event 0..0
+* context.facilityType 0..0
+* context.practiceSetting 0..0
 
 * extension contains ehealth-useContext named useContext 0..*
 * extension contains ehealth-modifier-role named modifierRole 1..*

@@ -12,11 +12,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added Audit Restriction Levels Code System http://ehealth.sundhed.dk/cs/audit-restriction-levels
 - Updated CodeSystem urn:oid:1.2.208.148.100.8 to represent MedCom Measurement CodeSystem
 - Updated phmr-unit property for NPU21692 to be valid against KIH
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-document-reference-type
 ### ValueSets
 - ValueSets must use display values from CodeSystem
 - Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 - Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
 - Added ValueSet http://medcom.dk/terminologi/phmr-observation-vs to use for validation/transformation of Observation to PHMR
+- Added ValueSet http://ehealth.sundhed.dk/vs/ehealth-document-reference-type
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 - ConceptMaps must use display values from CodeSystem
