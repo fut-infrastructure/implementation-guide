@@ -1,10 +1,10 @@
 {
   "resourceType": "CodeSystem",
-  "id": "ehealth-document-category",
-  "url": "http://ehealth.sundhed.dk/cs/document-category",
+  "id": "ehealth-material-category",
+  "url": "http://ehealth.sundhed.dk/cs/material-category",
   "version": "1.0.0",
-  "name": "DocumentCategory",
-  "title": "Document Category",
+  "name": "MaterialCategory",
+  "title": "Material Category",
   "status": "active",
   "experimental": false,
   "date": "2025-09-02",
@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Document Category",
+  "description": "Material Category",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
