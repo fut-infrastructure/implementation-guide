@@ -24,7 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/document-category"
+        "system": "http://ehealth.sundhed.dk/cs/material-category"
       }
     ]
   }
