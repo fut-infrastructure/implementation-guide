@@ -31,5 +31,5 @@ Parent: DocumentReference
 
 Invariant:   modifierRole-required-for-material-registration
 Description: "'ehealth-modifier-role' extension is required when category code is 'general-material' or 'patient-specific-material'"
-Expression:  "category.coding.exists(system = 'http://ehealth.sundhed.dk/cs/material-category' and code = 'general-material' or code = 'patient-specific-material') implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role').exists()"
+Expression:  "category.coding.exists(system = 'http://ehealth.sundhed.dk/cs/material-category' and (code = 'general-material' or code = 'patient-specific-material')) implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role').exists()"
 Severity:    #error
