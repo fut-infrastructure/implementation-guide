@@ -21,7 +21,7 @@ Parent: DocumentReference
 * context.practiceSetting 0..0
 
 * extension contains ehealth-useContext named useContext 0..*
-* extension contains ehealth-modifier-role named modifierRole 1..*
+* extension contains ehealth-modifier-role named modifierRole 0..*
 * extension contains ehealth-intendedOrganization named intendedOrganization 0..*
 * extension contains ehealth-artifact-date named artifactDate 0..1
 * extension contains ehealth-participant named participant 0..*
