@@ -1,6 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "url": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes",
+  "id": "clinicalimpression-decision-support-codes",
   "version": "1.0.0",
   "name": "ClinicalImpressionDecisionSupportCodes",
   "title": "ClinicalImpression Decision Support Codes",
