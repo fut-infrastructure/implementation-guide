@@ -185,6 +185,44 @@
             ]
           }
         ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes",
+        "concept": [
+          {
+            "code": "deviation-found",
+            "display": "Deviation found",
+            "definition": "Deviation found suggesting possible deterioration of condition",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Der er fundet afvigelse, der tyder på at borgeren vil opleve forværring af sygdom eller tilstand"
+              }
+            ]
+          },
+          {
+            "code": "no-deviation-found",
+            "display": "No deviation found",
+            "definition": "No deviation found suggesting possible deterioration of condition",
+            "designation": [
+              {
+                "language": "da",
+                "value": " Der er ikke fundet afvigelse, der tyder på at borgeren vil opleve forværring af sygdom eller tilstand"
+              }
+            ]
+          },
+          {
+            "code": "insufficient-data",
+            "display": "Insufficient data",
+            "definition": "Insufficient data for determining deviation suggesting possible deterioration of condition",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Utilstrækkelige data forhindrer bestemmelse af afvigelse, der tyder på at borgeren vil opleve forværring af sygdom eller tilstand"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
