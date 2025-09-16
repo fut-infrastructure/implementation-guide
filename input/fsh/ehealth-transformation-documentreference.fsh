@@ -20,19 +20,3 @@ Parent: DocumentReference
 * context.sourcePatientInfo only Reference(ehealth-patient)
 * extension contains ehealth-manuallydeprecated-type named manuallyDeprecated 0..1
 * extension contains ehealth-useContext named useContext 0..*
-
-Extension: ehealth-manuallydeprecated-type
-Title:     "Ehealth Document manually deprecated"
-Description: "Ehealth Document manually deprecated"
-* . ^short = "Ehealth Document manually deprecated"
-* value[x] only boolean
-* value[x] 1..1
-* extension contains ehealth-document-sharing-state named documentSharingState 0..*
-
-Extension: ehealth-document-sharing-state
-Title:     "State of the document sharing"
-Description: "Where in the sharing process the document is, and the reason why"
-* . ^short = "Where in the sharing process the document is, and the reason why"
-* value[x] only Coding
-* value[x] from http://ehealth.sundhed.dk/vs/document-sharing-state (required)
-* value[x] 0..1
