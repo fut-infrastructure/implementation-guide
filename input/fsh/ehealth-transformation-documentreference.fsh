@@ -19,4 +19,5 @@ Parent: DocumentReference
 * context.practiceSetting from http://ehealth.sundhed.dk/vs/practice-setting-codes
 * context.sourcePatientInfo only Reference(ehealth-patient)
 * extension contains ehealth-manuallydeprecated-type named manuallyDeprecated 0..1
+* extension contains ehealth-document-sharing-state named documentSharingState 0..*
 * extension contains ehealth-useContext named useContext 0..*
