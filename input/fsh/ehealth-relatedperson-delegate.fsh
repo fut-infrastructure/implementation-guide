@@ -36,7 +36,7 @@ active, period, and relationship (privilege codes).
 * relationship ^slicing.discriminator.path = "$this"
 * relationship ^slicing.rules = #open
 * relationship contains powatt 1..1
-* relationship[powatt] from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype (required)
+* relationship[powatt] from http://ehealth.sundhed.dk/vs/ehealth-delegation-type (required)
 
 // Fix the POWATT coding inside the slice
 * relationship[powatt].coding 1..1

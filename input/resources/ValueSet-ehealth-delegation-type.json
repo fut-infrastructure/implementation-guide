@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-delegation-type",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-delegation-type",
+  "version": "0.0.1",
+  "name": "DelegationTypes",
+  "title": "Delegation Types (Digital Delegation)",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-09-17T14:28:53+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "description": "Delegation mechanisms applicable to RelatedPerson under Digital Delegation.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "concept": [
+          {
+            "code": "POWATT",
+            "display": "Power of attorney",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Fuldmagt"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
