@@ -2,6 +2,7 @@ Profile: ehealth-communication
 Id: ehealth-communication
 Parent: Communication
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 1..1
+* extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare] ^type.aggregation = #referenced
 * extension contains ehealth-communication-recipientCareTeam named recipientCareTeam 0..*
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..*
