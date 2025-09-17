@@ -133,6 +133,16 @@
                 "value": "Ægtefælle"
               }
             ]
+          },
+          {
+            "code": "POWATT",
+            "display": "Power of attorney",
+            "designation": [
+              {
+                "language": "da",
+                "value": "Fuldmagt"
+              }
+            ]
           }
         ]
       }
