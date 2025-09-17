@@ -25,6 +25,7 @@ jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 dependencies:
   hl7.fhir.dk.core: 1.1.0
   hl7.fhir.uv.sdc: 2.7.0
+  fsh-sushi: 3.16.4
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
