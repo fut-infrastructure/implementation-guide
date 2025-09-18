@@ -83,6 +83,10 @@
             "display": "Ikke nærmere specificerede psykiske lidelser"
           },
           {
+            "code": "DG20",
+            "display": "Parkinsons sygdom"
+          },
+          {
             "code": "DJ44",
             "display": "Kronisk obstruktiv lungesygdom"
           },
