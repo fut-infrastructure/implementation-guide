@@ -185,6 +185,20 @@
             ]
           }
         ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes",
+        "concept": [
+          {
+            "code": "deviation-found"
+          },
+          {
+            "code": "no-deviation-found"
+          },
+          {
+            "code": "insufficient-data"
+          }
+        ]
       }
     ]
   }
