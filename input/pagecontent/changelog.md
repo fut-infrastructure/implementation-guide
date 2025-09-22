@@ -7,8 +7,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added new CodeSystem http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes
+- Added code 'DG20' to 'urn:oid:1.2.208.176.2.4'
 ### ValueSets
 - Added codes from http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes to ValueSet http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
+- Added code 'DG20' to http://ehealth.sundhed.dk/vs/conditions
 ### ConceptMaps
 ### Resource/profile changes
 ### Search parameters
