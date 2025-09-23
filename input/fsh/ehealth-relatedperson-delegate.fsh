@@ -7,9 +7,22 @@ Represents the Attorney-in-fact (delegate) acting for a Grantor under a Power of
 registered via Digital Delegation. System-managed fields include identifier (CPR), patient,
 active, period, and relationship (privilege codes).
 """
-* obeys ehealth-rp-active-1 and ehealth-rp-active-2 and ehealth-rp-active-3
+* obeys ehealth-rp-active-1 and ehealth-rp-active-2 and ehealth-rp-active-3 and ehealth-rp-audience-1
 
 * extension contains ehealth-patient-contactnote named contactNote 0..1
+
+// Slice the repeating meta.tag array by system
+* meta.tag ^slicing.discriminator.type = #pattern
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+
+// Require exactly one audience tag
+* meta.tag contains audience 1..1
+* meta.tag[audience].system 1..1
+* meta.tag[audience].code 1..1
+
+// Fix the audience tag system; code is the solution id (JWT aud)
+* meta.tag[audience].system = "http://ehealth.sundhed.dk/security/audience"
 
 * identifier 0..*
 * identifier ^slicing.discriminator.type = #value
@@ -69,3 +82,8 @@ Invariant: ehealth-rp-active-3
 Description: "If period.end exists, it must not be before period.start."
 Severity: #error
 Expression: "period.end.empty() or (period.start <= period.end)"
+
+Invariant: ehealth-rp-audience-1
+Description: "Exactly one audience tag must be present"
+Severity: #error
+Expression: "meta.tag.where(system='http://ehealth.sundhed.dk/security/audience').count() = 1"
