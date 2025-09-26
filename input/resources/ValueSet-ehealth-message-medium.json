@@ -26,24 +26,10 @@
         "system": "http://ehealth.sundhed.dk/cs/message-medium",
         "concept": [
           {
-            "code": "nemsms",
-            "display": "NemSMS",
-            "designation": [
-              {
-                "language": "da",
-                "value": "NemSMS"
-              }
-            ]
+            "code": "nemsms"
           },
           {
-            "code": "eboks",
-            "display": "eBoks",
-            "designation": [
-              {
-                "language": "da",
-                "value": "eBoks"
-              }
-            ]
+            "code": "eboks"
           }
         ]
       }

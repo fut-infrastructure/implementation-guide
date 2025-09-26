@@ -26,60 +26,16 @@
         "system": "http://ehealth.sundhed.dk/cs/message-category",
         "concept": [
           {
-            "code": "message",
-            "display": "Message",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Message"
-              },
-              {
-                "language": "da",
-                "value": "Besked"
-              }
-            ]
+            "code": "message"
           },
           {
-            "code": "notification",
-            "display": "Notification",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Notification"
-              },
-              {
-                "language": "da",
-                "value": "Notifikation"
-              }
-            ]
+            "code": "notification"
           },
           {
-            "code": "advice",
-            "display": "Advice",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Advice"
-              },
-              {
-                "language": "da",
-                "value": "Advisering"
-              }
-            ]
+            "code": "advice"
           },
           {
-            "code": "note",
-            "display": "Note",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Note"
-              },
-              {
-                "language": "da",
-                "value": "Note"
-              }
-            ]
+            "code": "note"
           }
         ]
       }
