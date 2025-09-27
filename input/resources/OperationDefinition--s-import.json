@@ -1,1 +1,38 @@
-{"resourceType":"OperationDefinition","id":"-s-import","text":{"status":"extensions","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>import</h2><p>OPERATION: import</p><p>The official URL for this operation definition is: </p><pre>http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-import</pre><div><p>Import terminology resources</p>\n</div><p>URL: [base]/$import</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>uriFileLink</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/datatypes.html#uri\">uri</a></td><td/><td/></tr><tr><td>IN</td><td>overwrite</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/datatypes.html#boolean\">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>number-of-resources-created-or-updated</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/STU3/datatypes.html#integer\">integer</a></td><td/><td/></tr></table></div>"},"url":"http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-import","name":"import","status":"active","kind":"operation","date":"2021-05-06T08:31:20+00:00","description":"Import terminology resources","idempotent":false,"code":"import","system":true,"type":false,"instance":false,"parameter":[{"name":"uriFileLink","use":"in","min":0,"max":"1","type":"uri"},{"name":"overwrite","use":"in","min":0,"max":"1","type":"boolean"},{"name":"number-of-resources-created-or-updated","use":"out","min":0,"max":"1","type":"integer"}]}
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-import",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-import",
+  "name": "import",
+  "status": "active",
+  "kind": "operation",
+  "date": "2021-05-06T08:31:20+00:00",
+  "description": "Import terminology resources",
+  "idempotent": false,
+  "code": "import",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "uriFileLink",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "uri"
+    },
+    {
+      "name": "overwrite",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "number-of-resources-created-or-updated",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "integer"
+    }
+  ]
+}

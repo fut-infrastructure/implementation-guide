@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-schedule-patient-usage-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-schedule-patient-usage-stats",
   "name": "schedule-patient-usage-stats",
   "title": "Schedule patient usage statistics",

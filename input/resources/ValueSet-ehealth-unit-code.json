@@ -1,1 +1,31 @@
-{"resourceType":"ValueSet","id":"ehealth-unit-code","text":{"status":"generated","div":"<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ehealth-unit-code.html\"><code>http://ehealth.sundhed.dk/cs/ehealth-unit-code</code></a></li></ul></div>"},"url":"http://ehealth.sundhed.dk/vs/ehealth-unit-code","version":"2020-10-19T10:00:00","name":"eHealthUnitCodes","title":"eHealthUnitCodes","status":"active","experimental":false,"date":"2020-10-19T08:00:00+00:00","publisher":"ehealth.sundhed.dk","contact":[{"name":"ehealth.sundhed.dk","telecom":[{"system":"url","value":"http://ehealth.sundhed.dk/terminology"}]}],"description":"Value set of Unit Codes","compose":{"include":[{"system":"http://ehealth.sundhed.dk/cs/ehealth-unit-code"}]}}
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-unit-code",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-unit-code",
+  "version": "2020-10-19T10:00:00",
+  "name": "eHealthUnitCodes",
+  "title": "eHealthUnitCodes",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-10-19T08:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of Unit Codes",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-unit-code"
+      }
+    ]
+  }
+}

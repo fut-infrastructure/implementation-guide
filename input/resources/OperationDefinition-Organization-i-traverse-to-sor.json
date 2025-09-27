@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "Organization-i-traverse-to-sor",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-i-traverse-to-sor",
   "name": "traverse-to-sor",
   "title": "Traverse to SOR",

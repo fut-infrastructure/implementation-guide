@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-fetch-patient-usage-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-patient-usage-stats",
   "name": "fetch-patient-usage-stats",
   "title": "Fetch unique active citizens total",

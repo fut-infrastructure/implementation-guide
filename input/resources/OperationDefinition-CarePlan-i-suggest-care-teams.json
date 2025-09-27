@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CarePlan-i-suggest-care-teams",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
   "name": "suggest-care-teams",
   "title": "Suggest care teams",

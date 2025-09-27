@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "ClinicalImpression-t-set-measurement-validity",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ClinicalImpression-t-set-measurement-validity",
   "name": "set-measurement-validity",
   "title": "Invalidate / Retract Invalidation of a Measurement",

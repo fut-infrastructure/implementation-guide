@@ -1,10 +1,6 @@
 {
   "resourceType": "OperationDefinition",
   "id": "-s-fetch-careplan-customization-stats",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-fetch-careplan-customization-stats",
   "name": "fetch-careplan-customization-stats",
   "title": "Fetch careplan customization stats",
