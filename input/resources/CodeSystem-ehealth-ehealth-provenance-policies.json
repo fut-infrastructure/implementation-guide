@@ -159,6 +159,17 @@
           "value": "Reuse of measurement chosen by citizen"
         }
       ]
+    },
+    {
+      "code": "http://ehealth.sundhed.dk/policy/dk/aeldreloven",
+      "display": "Danish elderly act",
+      "definition": "Danish elderly act, formally known as The Act on Social Services for the Elderly",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Danish elderly act"
+        }
+      ]
     }
   ]
 }
