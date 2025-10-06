@@ -20,4 +20,3 @@ Parent: DocumentReference
 * context.sourcePatientInfo only Reference(ehealth-patient)
 * extension contains ehealth-manuallydeprecated-type named manuallyDeprecated 0..1
 * extension contains ehealth-document-sharing-state named documentSharingState 0..*
-* extension contains ehealth-useContext named useContext 0..*
