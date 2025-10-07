@@ -27,7 +27,6 @@ dependencies:
   hl7.fhir.uv.sdc: 2.7.0
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  sushi-version: 3.16.4
   path-resource:
     - input/resources
     - fsh-generated/resources
