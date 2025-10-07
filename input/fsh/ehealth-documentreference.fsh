@@ -14,10 +14,8 @@ Parent: DocumentReference
 * custodian only Reference(ehealth-organization)
 * custodian ^type.aggregation = #referenced
 * relatesTo.target only Reference(ehealth-documentreference)
-* content 1..1
 * context.sourcePatientInfo only Reference(ehealth-patient)
 * context.encounter only Reference(ehealth-episodeofcare)
-* context.encounter 0..1
 * context.event 0..0
 * context.facilityType 0..0
 * context.practiceSetting 0..0
