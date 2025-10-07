@@ -1,8 +1,10 @@
 Profile: ehealth-material-communication
 Id: ehealth-material-communication
 Parent: Communication
+* subject 1..1
 * recipient only Reference(Patient)
 * recipient ^type.aggregation = #referenced
+* recipient 0..1
 * payload.content[x] only Reference(DocumentReference)
 * payload.content[x] 1..1
 * payload.content[x] ^type.aggregation = #referenced
