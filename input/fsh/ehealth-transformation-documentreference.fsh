@@ -1,5 +1,5 @@
-Profile: ehealth-sharing-documentreference
-Id: ehealth-sharing-documentreference
+Profile: ehealth-transformation-documentreference
+Id: ehealth-transformation-documentreference
 Parent: DocumentReference
 * type from http://ehealth.sundhed.dk/vs/document-type
 * category 0..1
