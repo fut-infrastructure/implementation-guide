@@ -13,12 +13,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated CodeSystem urn:oid:1.2.208.148.100.8 to represent MedCom Measurement CodeSystem
 - Updated phmr-unit property for NPU21692 to be valid against KIH
 - Added new CodeSystem http://ehealth.sundhed.dk/cs/ehealth-document-reference-type
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/material-category
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/material-communication-category
+- Added in-memory HL7 CodeSystem http://hl7.org/fhir/StructureDefinition/shareablecodesystem
 ### ValueSets
 - ValueSets must use display values from CodeSystem
 - Removed codes MCS88019 and MCS88020 (CodeSystem urn:oid:1.2.208.184.100.8) from ValueSet http://ehealth.sundhed.dk/vs/observation-codes
 - Added Audit Restriction Levels Value Set http://ehealth.sundhed.dk/vs/audit-restriction-levels
 - Added ValueSet http://medcom.dk/terminologi/phmr-observation-vs to use for validation/transformation of Observation to PHMR
 - Added ValueSet http://ehealth.sundhed.dk/vs/ehealth-document-reference-type
+- Added ValueSet http://ehealth.sundhed.dk/vs/document-categor
+- Added ValueSet http://ehealth.sundhed.dk/vs/material-communication-category
+- Added ValueSet http://ehealth.sundhed.dk/vs/material-assignment-participant-function
+- Added ValueSet http://ehealth.sundhed.dk/vs/material-registration-participant-function
 ### ConceptMaps
 - ConceptMaps using Y/N indicators is changed to use ValueSet/v2-0136 and CodeSystem/v2-0136 instead of v2-0532
 - ConceptMaps must use display values from CodeSystem
@@ -34,6 +41,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Changed Questionnaire.item constraints to ensure logical consistency between Questionnaire.repeats, Questionnaire.required and questionnaire-minOccurs/questionnaire-maxOccurs extensions of Questionnaire.item.
 - Updated binding for AuditEvent.entity.securityLabel to http://ehealth.sundhed.dk/vs/audit-restriction-levels
+- Updated ehealth-documentreference to be more precise on the intended usage
+  - Removed ehealth-manually-deprecated extension
+  - Added required binding for type to http://ehealth.sundhed.dk/vs/ehealth-document-reference-type
+  - Added required binding for category to http://ehealth.sundhed.dk/vs/document-category
+- Updated ehealth-transformation-documentreference to inherit from R4 DocumentReference instead of ehealth-documentreference
+- Created new profile ehealth-material-communication used for assignment of materials to patients
+
 ### Search parameters
 
 ## 3.5.1
