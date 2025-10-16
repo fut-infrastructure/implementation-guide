@@ -13,15 +13,15 @@ The eHealth Transformation DocumentReference is used to store CDA documents in t
 # Scope and Usage
 The eHealth Transformation DocumentReference resource is stored solely in the Document-Transformation service. However, the Document-Query service, which is used to query and retrieve CDA documents from the KIH registry, will return the found documents in the form of an eHealth Transformation DocumentReference resource.
 
-The resources stored in the Document-Transformation service are CDA document representations of fhir resources in the eHealth infrastructure, such as [Observation](StructureDefinition-ehealth-observation.html), [QuestionnaireResponses](StructureDefinition-ehealth-questionnaireresponses.html), [Appointments](StructureDefinition-ehealth-appointments.html) and [Questionnaires](StructureDefinition-ehealth-questionnaires.html). Upon approval a resource can be transformed to a CDA format and shared to an XDS repository. The DocumentReference resource will then contain a reference to the document in the XDS repository.
+The resources stored in the Document-Transformation service are CDA document representations of FHIR resources in the eHealth infrastructure, such as [Observation](StructureDefinition-ehealth-observation.html), [QuestionnaireResponses](StructureDefinition-ehealth-questionnaireresponses.html), [Appointments](StructureDefinition-ehealth-appointments.html) and [Questionnaires](StructureDefinition-ehealth-questionnaires.html). Upon approval a resource can be transformed to a CDA format and shared to an XDS repository. The DocumentReference resource will then contain a reference to the document in the XDS repository.
 
 To support the expression of the document lifecycle in the external system as well as the lifecycle of the internal sharing process, the eHealth Transformation profile of DocumentReference has the following extensions:
 * `ehealth-manuallydeprecated-type` - to indicate whether the document is manually deprecated.
 * `ehelth-document-sharing-state` - to indicate the state of the document in relation to sharing it to an XDS repository.
 
 ### Document sharing states 
-For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
+For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of states to express where in the document-sharing process the document is and why it is there.
 
 There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express th reason why the document is in the given state.
 
-The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html).
+The states defined in the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html) and are stored in the DocumentReference using the `ehelth-document-sharing-state` extension.
