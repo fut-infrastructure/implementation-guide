@@ -8,22 +8,91 @@ Typically, DocumentReference resources are used in document indexing systems, su
 - PDF documents , and even digital records of faxes where sufficient information is available
 - Other kinds of documents, such as records of prescriptions
 
+The eHealth DocumentReference profile is primarily used for two purposes:
+1. To contain Instructional Material used in relation to PlanDefinition and Questionnaire.
+2. To refer to informational, instructional or clinical material files assignable to Patients and EpisodeOfCare.
+
 # Scope and Usage
-In scope of the eHealth infrastructure the primary use of the DocumentReference resource is to contain or refer to information material used in relation to PlanDefinition and Questionnaire. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material. 
+In scope of the eHealth infrastructure the primary use of the eHealth DocumentReference resource is to contain information material or refer to information material stored elsewhere in the infrastructure or externally. This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material.
 
-See [eHealth-plandefinition](StructureDefinition-ehealth-plandefinition.html) for further details.
+Two different material domains exist in the infrastructure.
+1. **_Instructional Material_**, is used in relation to PlanDefinition and Questionnaire.
+2. **_Material for Citizens_**, is used in relation to Patient and EpisodeOfCare.
 
-The eHealth profile of DocumentReference has the following extensions:
-* `ehealth-manuallydeprecated-type`
-* `ehealth-useContext` which defines the context that the content is intended to support
+## Instructional Material
+Instructional Material, is used in relation to [PlanDefinition](StructureDefinition-ehealth-plandefinition.html) and [Questionnaire](StructureDefinition-ehealth-questionnaire.html). This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material.
+
+The eHealth DocumentReference profile, when used for Instructional Material, makes use of the following extensions:
+- ehealth-useContext which defines the context that the content is intended to support
+
+### Category
+Instructional Material is stored in the Plan service. To create or update Instructional Material in the Plan service the `DocumentReference.category` code must be unpopulated. Otherwise, it will be interpreted as Material for Citizens.
 
 ### UseContext
-The element useContext.code has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
+The element `useContext.code` has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet [ehealth-usage-context-type](https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
 in the ValueSet described for useContext.code.
 
-### Document sharing states 
-For the purpose of sharing documents to the XDS repository, the DocumentReference has a collection of tags to express where in the document-sharing process the document is and why it is there.
+## Material for Citizens
+Material for Citizens, is used in relation to [Patient](StructureDefinition-ehealth-patient.html) and [EpisodeOfCare](StructureDefinition-ehealth-episodeofcare.html). This material will always be referenced through a URL as it is either stored externally or separately in the infrastructure. Depending on the nature of the material it will fall into two distinct sub-categories.
+- **_Patient-Specific Material_**, is material that contains sensitive information about a specific patient and must be protected accordingly.
+- **_Generic Material_**, is material that has no sensitive information about a specific patient and is broadly relevant and/or applicable to multiple patients.
 
-There are 4 overall states expressing where in the sharing process the document is, and a further 11 sub-states to express th reason why the document is in the given state.
+Material for Citizens is stored in the CarePlan and Plan services. Citizen specific material is stored in the CarePlan service while _Generic Material_ is stored in the Plan service.
 
-The states are contained in DocumentReference.meta.tag using the system [http://ehealth.sundhed.dk/cs/document-sharing-state](CodeSystem-document-sharing-state.html).
+The eHealth DocumentReference profile, when used for Material for Citizens, makes use of the following extensions:
+- ehealth-useContext, which defines the context that the content is intended to support.
+- ehealth-modifier-role, defining the organizational role in regard to the content (Required for Material for Citizens, but optional for Instructional Material).
+- ehealth-intendedOrganization, the organizations that are allowed to access the material.
+- ehealth-artifact-date, the date when the content field was last changed.
+- ehealth-participant, the Practitioner or CareTeam that has contributed to the content.
+- ehealth-usage, clinical description of the content.
+- ehealth-version, version of the content.
+
+### Category
+For storage of _Generic Material_ in the PLan service the `DocumentReference.category` must be populated with `generic-material`. Otherwise, it will be interpreted as Instructional Material.  
+For storage of _Patient-Specific Material_ in the CarePlan service the `DocumentReference.category` must be populated with the code `patient-specific-material`.  
+If the code indicates a different material category than the service stores (e.g. using `patient-specific-material` when registering material on the Plan service), it will be rejected.  
+The category code is immutable after creation.
+
+### Subject
+For _Patient-Specific Material_ the `DocumentReference.subject` must be populated with a reference to the Patient the material is relevant for. Conversely, For _Generic Material_ `DocumentReference.subject` must be unpopulated.
+
+### EpisodeOfCare
+The related EpisodeOfCare is referenced through the `DocumentReference.context.encounter` element. At most 1 EpisodeOfCare can be referenced.  
+For _Patient-Specific Material_ the `DocumentReference.context.encounter` must be populated with a reference to the EpisodeOfCare the material is relevant for. Conversely, For _Generic Material_ `DocumentReference.context.encounter` must be unpopulated.
+
+### Content
+`DocumentReference.content` must have exactly one entry.  
+When creating the DocumentReference in the infrastructure either `DocumentReference.content.attachment.data` or `DocumentReference.content.attachment.url` element must be populated. If both are populated it will be rejected:
+- If providing `DocumentReference.content.attachment.data`, it will be decoded and uploaded to the infrastructure's [Storage-Service](https://storage-service.devtest.systematic-ehealth.com/swagger-ui/index.html), after which the `.data` field is cleared and the `.url` set to download location of the uploaded content. 
+- If providing `DocumentReference.content.attachment.url`, it is possible to manually perform the upload to the Storage-Service beforehand and set the `.url` to the download location of the uploaded content. For _Generic Material_ in the Plan service, it is also possible to provide an external URL.
+
+`DocumentReference.content.attachment.contentType` must be populated with the mime-type of the content as the value is passed on to the Storage-Service. The Storage-Service uses it for validation on download requests to ensure that user's accept-header matches the contentType they are downloading. This is also the case if the upload is performed manually beforehand. Then the used contentType from the manual upload should be the same as the one provided in `DocumentReference.content.attachment.contentType`.
+
+If uploading directly to the Storage-Service instead of going through either the Plan or CarePlan service, it is important to note the difference between uploading _Patient-Specific Material_ and _Generic Material_:
+- For _Patient-Specific Material_ one must supply the `episodeOfCareReference` and `patientReference` parameters as this indicates to the service that the content is sensitive and must be encrypted. Additionally, not supplying them will cause a validation mismatch in the CarePlan service when creating the DocumentReference as they are validated against the patient and episodeOfCare references in the DocumentReference.
+- For _Generic Material_ the `episodeOfCareReference` and `patientReference` parameters must not be supplied as the content is not sensitive and therefore does not require encryption. Additionally, supplying them will cause a validation mismatch in the Plan service when creating the DocumentReference as they are validated to be empty.
+
+After creation of a DocumentReference, when trying to update it:
+- If the `DocumentReference.content.attachment.url` is a URL in the Storage-Service, it is not possible to update the `DocumentReference.content.attachment.url` field after creation. However, it is possible to update the uploaded content through the `DocumentReference.content.attachment.data` field. To do so both the `DocumentReference.content.attachment.data` and `DocumentReference.content.attachment.url` fields must be populated for the update. The content in the `.data` field will be decoded and uploaded to the Storage-Service URL in `.url` overwriting the content that was there before. The `.data` field is cleared after upload and only the `.url` remains in the DocumentReference. 
+- If the `DocumentReference.content.attachment.url` is set to an external URL, it is allowed to update the `DocumentReference.content.attachment.url` field after creation. However, it is not allowed to change it to a Storage-Service URL or add data to the `DocumentReference.content.attachment.data` field.
+
+It is also possible to update the uploaded content directly at the Storage-Service without going through the Plan or CarePlan service. The url of the content will not change, and therefore there is no need to update the Storage-Service URL stored in the DocumentReference. One should note that the `episodeOfCareReference` and `patientReference` parameters are required to match the existing content, it is not possible to change from _Patient-Specific Material_ to _Generic Material_ or vice versa.
+
+### ModifierRole
+This extension is mandatory for Material for Citizens and for _Generic Material_ it is the basis for validation of the user's organizational context. However, for Instructional Material this extension is optional and not used for any validation.
+
+### IntendedOrganization
+Used to indicate the organizations that are allowed to access the material. However, not the basis of any validation.
+
+### ArtifactDate
+In the case of Material for Citizens, this extension is maintained by the infrastructure. When `DocumentReference.content` is created or updated the date is updated. However, for Instructional Material the extension is optional and there is no automatic maintenance of the date.
+
+### Participant
+Used to indicate the Practitioner or CareTeam that has contributed to the content, either as `author` or `editor` as defined bt the ValueSet [material-registration-participant-function](https://ehealth.sundhed.dk/fhir/ValueSet-material-registration-participant-function.html).
+
+### Usage
+Allows the user to provide a clinical description of the content for the clinicians, while the `DocumentReference.decription` is targeted towards citizen understandable description of the content.
+
+### Version
+Allows the user to maintain a version of the content. The infrastructure does not maintain or interpret this extension.
