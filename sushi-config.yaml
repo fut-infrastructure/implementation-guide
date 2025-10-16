@@ -30,6 +30,7 @@ parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+P
   path-resource:
     - input/resources
     - fsh-generated/resources
+  path-expansion-params: Parameters-expParam.json
 
   path-pages:
     - input/includes

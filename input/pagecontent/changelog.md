@@ -1,8 +1,21 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 6.0.0
+## Release 2025.4. todo: change to semver format before release
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added new CodeSystem http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes
+- Added code 'DG20' to 'urn:oid:1.2.208.176.2.4'
+- Added code 'telma-support-team' to http://ehealth.sundhed.dk/cs/ehealth-program
+### ValueSets
+- Added codes from http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes to ValueSet http://ehealth.sundhed.dk/vs/clinicalimpression-finding-codes
+- Added code 'DG20' to http://ehealth.sundhed.dk/vs/conditions
+### ConceptMaps
 ### Resource/profile changes
 - Requires ehealth-careplan CarePlan.instantiatesCanonical 1..1 only Canonical(ehealth-plandefinition)
+### Search parameters
 
 ## 5.0.1
 ### General changes
