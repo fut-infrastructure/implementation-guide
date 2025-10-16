@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "material-assignment-participant-function",
+  "url": "http://ehealth.sundhed.dk/vs/material-assignment-participant-function",
+  "version": "1.0",
+  "name": "MaterialAssignmentParticipantFunction",
+  "title": "Material Assignment Participant Function",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-07-07T12:00:00+00:00",
+  "publisher": "eHealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "The function of the participant in material assignment (performer).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/action-participant-function",
+        "concept": [
+          {
+            "code": "performer",
+            "display": "Performer"
+          }
+        ]
+      }
+    ]
+  }
+}
