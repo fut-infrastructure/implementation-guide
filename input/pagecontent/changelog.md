@@ -14,6 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added code 'DG20' to http://ehealth.sundhed.dk/vs/conditions
 ### ConceptMaps
 ### Resource/profile changes
+- Requires ehealth-careplan CarePlan.instantiatesCanonical 1..1 only Canonical(ehealth-plandefinition)
 ### Search parameters
 
 ## 5.0.1

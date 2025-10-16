@@ -8,9 +8,8 @@ Parent: CarePlan
 * extension contains ehealth-teamHistory named teamHistory 0..*
 * extension contains ehealth-careplan-statusschedule named statusSchedule 0..*
 * extension contains ehealth-teamschedule named teamSchedule 0..*
-// definition is deleted in R4
-// * definition 1..1
-// * definition only Reference(ehealth-plandefinition or ehealth-questionnaire)
+* instantiatesCanonical 1..1
+* instantiatesCanonical only Canonical(ehealth-plandefinition)
 * basedOn 0..0
 * replaces 0..0
 * partOf only Reference(ehealth-careplan)
