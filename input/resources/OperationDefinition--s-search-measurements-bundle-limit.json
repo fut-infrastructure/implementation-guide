@@ -50,7 +50,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "Based on the effective time of measurement, please see https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-observation-definitions.html#Observation.effective[x] , https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-questionnaireresponse.html#effective-period , and https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-media-definitions.html#Media.created[x]. If QuestionnaireResponse.effectivePeriod is missing, authored is used instead. If provided, the operation will search for observation, media and QuestionnaireResponse resource(s) with a clinical effective time before this time. The result bundles will be sorted in descending order - DateTime.",
+      "documentation": "Based on the effective time of measurement, please see <a href='https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-observation-definitions.html#Observation.effective[x]'>Observation.effective[x]</a> , <a href='https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-questionnaireresponse.html#QuestionnaireResponse.effective-period'>QuestionnaireResponse.effective-period</a>, and <a href='https://ehealth.sundhed.dk/fhir/StructureDefinition-ehealth-media-definitions.html#Media.created[x]'>Media.created[x]</a>. If QuestionnaireResponse.effectivePeriod is missing, authored is used instead. If provided, the operation will search for observation, media and QuestionnaireResponse resource(s) with a clinical effective time before this time. The result bundles will be sorted in descending order - DateTime.",
       "type": "dateTime"
     },
     {
