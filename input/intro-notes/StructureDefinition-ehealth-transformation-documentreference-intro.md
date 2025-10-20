@@ -11,7 +11,7 @@ The eHealth Infrastructure has multiple profiles for DocumentReference, each wit
 The eHealth Transformation DocumentReference is used to store CDA documents in the FHIR system or refer to those stored in an XDS modelled repository (i.e. registry/repository following the XDS model).
 
 # Scope and Usage
-The eHealth Transformation DocumentReference resource is stored solely in the Document-Transformation service. However, the Document-Query service, which is used to query and retrieve CDA documents from the KIH registry, will return the found documents in the form of an eHealth Transformation DocumentReference resource.
+The eHealth Transformation DocumentReference resource is stored solely in the Document-Transformation service. However, the Document-Query service, which is used to query and retrieve CDA documents from national document sharing infrastructure, will return the found document metadata and documents in the form of an eHealth Transformation DocumentReference resource.
 
 The resources stored in the Document-Transformation service are CDA document representations of FHIR resources in the eHealth infrastructure, such as [Observation](StructureDefinition-ehealth-observation.html), [QuestionnaireResponses](StructureDefinition-ehealth-questionnaireresponses.html), [Appointments](StructureDefinition-ehealth-appointments.html) and [Questionnaires](StructureDefinition-ehealth-questionnaires.html). Upon approval a resource can be transformed to a CDA format and shared to an XDS repository. The DocumentReference resource will then contain a reference to the document in the XDS repository.
 

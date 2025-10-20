@@ -23,18 +23,18 @@ Two different material domains exist in the infrastructure.
 _Instructional Material_, is used in relation to [PlanDefinition](StructureDefinition-ehealth-plandefinition.html) and [Questionnaire](StructureDefinition-ehealth-questionnaire.html). This information material can be in the form of embedded material (of limited size) or references to videos, PDF-files or printed material.
 
 The eHealth DocumentReference profile, when used for _Instructional Material_, makes use of the following extensions:
-- ehealth-useContext which defines the context for witch the content is intended to support
+- ehealth-useContext which defines the context for which the content is intended to support
 
 ### Category
 _Instructional Material_ is stored in the Plan service. To create or update _Instructional Material_ in the Plan service the `DocumentReference.category` code must be unpopulated. Otherwise, it will be interpreted as _Material for Citizens_.
 
 ### UseContext
-The element `useContext.code` has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet [ehealth-usage-context-type](https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in useContext.valueCodeableConcept is acceptable
+The element `useContext.code` has binding to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html). It is, however, validated against the eHealth ValueSet [ehealth-usage-context-type](https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html). This validation includes that the value in `useContext.valueCodeableConcept` is acceptable
 in the ValueSet described for useContext.code.
 
 ## Material for Citizens
-_Material for Citizens_, is used in relation to [Patient](StructureDefinition-ehealth-patient.html) and [EpisodeOfCare](StructureDefinition-ehealth-episodeofcare.html). This material will always be referenced through a URL as it is either stored externally or separately in the infrastructure. Depending on the nature of the material it will fall into two distinct sub-categories.
-- **_Patient-Specific Material_**, is material that contains sensitive information about a specific patient and must be protected accordingly.
+_Material for Citizens_, is used in relation to [Patient](StructureDefinition-ehealth-patient.html) and [EpisodeOfCare](StructureDefinition-ehealth-episodeofcare.html). This material will always be referenced through a URL as it is either stored externally or internally in the infrastructure. Depending on the nature of the material it will fall into two distinct sub-categories.
+- **_Patient-Specific Material_**, is material that contains sensitive information about a specific patient.
 - **_Generic Material_**, is material that has no sensitive information about a specific patient and is broadly relevant and/or applicable to multiple patients.
 
 _Material for Citizens_ is stored in the CarePlan and Plan services. _Patient-Specific Material_ is stored in the CarePlan service while _Generic Material_ is stored in the Plan service.
@@ -83,7 +83,7 @@ It is also possible to update the uploaded content directly at the Storage-Servi
 This extension is mandatory for _Material for Citizens_. However, for _Instructional Material_ this extension is optional and not used for any validation. Specifically for _Generic Material_ it is the basis for validation of the user's organizational context.
 
 ### IntendedOrganization
-Used to indicate the organizations that are allowed to access the material. However, not the basis of any validation.
+Used to indicate the organizations that might have an interest in accessing the material. However, not the basis of any validation.
 
 ### ArtifactDate
 In the case of _Material for Citizens_, this extension is maintained by the infrastructure. When `DocumentReference.content` is created or updated the date is updated. However, for _Instructional Material_ the extension is optional and there is no automatic maintenance of the date.
@@ -92,7 +92,7 @@ In the case of _Material for Citizens_, this extension is maintained by the infr
 Used to indicate the Practitioner or CareTeam that has contributed to the content, either as `author` or `editor` as defined by the ValueSet [material-registration-participant-function](https://ehealth.sundhed.dk/fhir/ValueSet-material-registration-participant-function.html).
 
 ### Usage
-Allows the user to provide a clinical description of the content for the clinicians, while the `DocumentReference.decription` is targeted towards citizen understandable description of the content.
+Allows the user to provide a clinical description of the content for the clinicians, while the `DocumentReference.decription` is intended as a description of the content understandable by citizens.
 
 ### Version
 Allows the user to maintain a version of the content. The infrastructure does not maintain or interpret this extension.
