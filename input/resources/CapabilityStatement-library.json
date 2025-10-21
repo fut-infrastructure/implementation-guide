@@ -1,14 +1,18 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "library",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">library</div>"
+  },
   "name": "library",
   "status": "active",
-  "date": "2025-08-07T08:59:53.735+00:00",
+  "date": "2025-10-21T11:11:29.387+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "library",
-    "version": "1.17.0"
+    "version": "1.18.0"
   },
   "implementation": {
     "description": "eHealth library service",

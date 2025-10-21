@@ -1,14 +1,18 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "task",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">task</div>"
+  },
   "name": "task",
   "status": "active",
-  "date": "2025-08-07T09:00:16.298+00:00",
+  "date": "2025-10-21T10:54:20.606+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "task",
-    "version": "1.26.0"
+    "version": "1.27.0"
   },
   "implementation": {
     "description": "eHealth task service",
