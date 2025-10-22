@@ -114,7 +114,9 @@
 
 - `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_SERVICEREQUEST`: The subject for the CommunicationRequest: %s does not match the subject of the referenced ServiceRequest: %s
 
-- `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Excactly one recipient search parameter required
+- `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Exactly one recipient search parameter required
+
+- `COMMUNICATIONREQUEST_NO_SYSTEM_TAGS_WITHOUT_EOC`: CommunicationRequest must have a system tags when referencing an EpisodeOfCare
 
 #### ehealth-context
 
@@ -140,6 +142,20 @@
 
 #### ehealth-document
 
+- `DOCUMENT_REFERENCE_MISSING_URL`: DocumentReference to update must contain an URL identifying the content.
+
+- `DOCUMENT_REFERENCE_CONTENT_MANDATORY`: DocumentReference for material must contain exactly one content
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_UPDATE`: When updating registration of DocumentReference for material, data is only allowed for URLs identifying internal content.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_CREATE`: When registering a new DocumentReference for material, either an URL identifying external content, an URL identifying internal content or data in the Attachment must be provided.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ORIGIN_UPDATE`: It is not allowed to change the content origin from internal to external or vice versa.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_DATA_EXTERNAL_ORIGIN`: It is not allowed to have data in the content attachment when the URL is external.
+
+- `DOCUMENT_REFERENCE_UPDATE_NOT_ALLOWED_FOR_FIELD`: DocumentReference for material does not allow update operations with changes for field: %s
+
 - `DOCUMENT_NOT_OF_TYPE_QFDD`: The document is expected to be of type QFDD
 
 - `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be resolvable to a SOR identifier for query
@@ -157,6 +173,28 @@
 #### ehealth-documentreference
 
 - `DOCUMENTREFERENCE_SUBJECT_REFER_TO_PATIENT`: It is not possible to set a patient as a subject for a Document reference
+
+- `DOCUMENTREFERENCE_EPISODEOFCARE_CONTEXT_ENCOUNTER`: DocumentReference for generic material must not contain references to EpisodeOfCare in context.encounter
+
+- `DOCUMENTREFERENCE_STORAGE_SERVICE_UPLOAD_ERROR`: Failed to upload material: Invalid response from storage service
+
+- `DOCUMENTREFERENCE_SUBJECT_MANDATORY`: DocumentReference.subject is mandatory, but is not set
+
+- `DOCUMENTREFERENCE_ENCOUNTER_MANDATORY`: DocumentReference.context.encounter must have exactly one reference
+
+- `DOCUMENTREFERENCE_URL_CHANGED`: The contents attachment.url cannot be changed. The url was: %s, but the new url is: %s
+
+- `DOCUMENTREFERENCE_INTERNAL_URL_NO_CONTENT`: No content found at internal URL: %s
+
+- `DOCUMENTREFERENCE_INTERNAL_URL_REGISTRATION_MUST_MATCH_CONTENT`: DocumentReference.context.encounter and DocumentReference.subject must match EpisodeOfCare and Patient for content at internal URL: %s
+
+- `DOCUMENTREFERENCE_PATIENT_MATERIAL_NOT_ALLOWED`: It is not possible to create or update a DocumentReference for patient-specific material on this service.
+
+- `DOCUMENTREFERENCE_EXTERNAL_URL_NOT_ALLOWED`: It is not allowed to set an external url for patient-specific material
+
+- `DOCUMENTREFERENCE_INVALID_CITIZEN_SPECIFIC_DATA`: When the content is patient-specific material, either an URL or data must be provided, but both were provided
+
+- `DOCUMENTREFERENCE_NOT_CITIZEN_SPECIFIC`: Patient-specific material must use the correct category code, but is: %s
 
 #### ehealth-episodeofcare
 
@@ -227,6 +265,28 @@
 - `LIBRARY_EVALUATE_LIMITS_EXCEEDED`: Duration %s exceeds the maximum allowed duration of %s months or limit %s exceeds the maximum allowed soft limit of %s. Historical data will not be processed for library %s
 
 - `LIBRARY_EVALUATE_MISSING_DURATION_OR_LIMIT`: Duration or limit not set. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_DATE_FILTER_PATH_NOT_RECOGNIZED`: DateFilter path %s is not recognized. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_DATE_FILTER_EMPTY`: DateFilter path is empty. Historical data will not be processed for library %s
+
+#### ehealth-material
+
+- `MATERIAL_COMMUNICATION_MISSING_PAYLOAD`: Expected a single payload entry on MaterialCommunication, but it is missing.
+
+- `MATERIAL_COMMUNICATION_MISSING_EPISODE_OF_CARE`: Missing EpisodeOfCare reference on MaterialCommunication
+
+- `MATERIAL_COMMUNICATION_PATIENT_MISMATCH_ON_EPISODEOFCARE`: Mismatch between Patient on MaterialCommunication and EpisodeOfCare. Subject on MaterialCommunication: %s, Patient on EpisodeOfCare: %s
+
+- `MATERIAL_COMMUNICATION_EPISODE_OF_CARE_MISMATCH_ON_CONTENT`: Mismatch between EpisodeOfCare on MaterialCommunication and DocumentReference content. EpisodeOfCare on MaterialCommunication: %s, EpisodeOfCare on DocumentReference content: %s
+
+- `MATERIAL_COMMUNICATION_PATIENT_MISMATCH_ON_CONTENT`: Mismatch between Patient on MaterialCommunication and DocumentReference content. Patient on MaterialCommunication: %s, Patient on DocumentReference content: %s
+
+- `MATERIAL_COMMUNICATION_UNABLE_TO_FIND_CONTENT`: Unable to find content for DocumentReference with id %s
+
+- `MATERIAL_COMMUNICATION_UPDATE_NOT_ALLOWED_FOR_FIELD`: MaterialCommunication does not allow update operations with changes for field: %s
+
+- `MATERIAL_COMMUNICATION_SUBJECT_AND_RECIPIENT_MISMATCH`: MaterialCommunication subject must also be the recipient.
 
 #### ehealth-measurement
 
