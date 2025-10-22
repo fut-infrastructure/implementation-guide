@@ -4,7 +4,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 ### Custom operations
 #### System operations
+- The $apply operation on careplan service now supports both a persisting mode and a transient mode. The persisting mode is executed with a POST request, and the transient mode is executed with a GET request. The parameters were previously of type Reference but should now be of type StringType. To avoid breaking changes, the use of Reference parameters is automatically converted to StringType. The transient mode returns a transaction bundle with CarePlan and ServiceRequest resources.
+- The careplan service now supports FHIR transactions. Transaction bundles of type batch is not supported. Conditional create, update, or delete is not supported. Custom operations are not supported. Only resources stored in careplan service can be used in transactions. The number of requests in a transaction is limited to 100. and the operations can only be those tabulated below:
+    * Provenance: Read, Search
+    * CommunicationRequest:  Create, Update, Read.
+    * Goal: Create, Update, Read.
+    * Consent: Create, Update, Read, Search.
+    * Condition: Create, Patch, Read.
+    * ServiceRequest: Create, Update, Read.
+    * CarePlan: Create, Update, Read, Search.
+    * EpisodeOfCare: Patch, Read, Search.
+
 #### Instance operations
+- The $apply operation on PlanDefinition now supports both a persisting mode and a transient mode. The persisting mode is executed with a POST request, and the transient mode is executed with a GET request. The parameter was previously of type Reference but should now be of type StringType. To avoid breaking changes, the use of Reference parameter is automatically converted to StringType. The transient mode returns a transaction bundle with CarePlan and ServiceRequest resources.
 ### Code systems
 - Added new CodeSystem http://ehealth.sundhed.dk/cs/clinicalimpression-decision-support-codes
 - Added code 'DG20' to 'urn:oid:1.2.208.176.2.4'
