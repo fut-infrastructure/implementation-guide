@@ -43,6 +43,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - Added required binding for category to http://ehealth.sundhed.dk/vs/document-category
   - Added required modifier-role invariant for ehealth-documentreference used for material registration (category is 'general-material' or 'patient-specific-material')
 - Updated ehealth-transformation-documentreference to inherit from R4 DocumentReference instead of ehealth-documentreference
+  - Added ehealth-document-sharing-state explicitly to the profile, since this was previously inherited from ehealth-documentreference
 - Created new profile ehealth-material-communication used for assignment of materials to patients
 ### Search parameters
 
