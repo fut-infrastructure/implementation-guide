@@ -3,8 +3,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 6.0.0
 ### General changes
 ### Custom operations
-- Updated $search-measurements-bundle-limit to use effective start/end date as search parameters for measurements instead of submitted date
 #### System operations
+- Updated $search-measurements-bundle-limit to use effective start/end date as search parameters for measurements instead of submitted date
 - The $apply operation on careplan service now supports both a persisting mode and a transient mode. The persisting mode is executed with a POST request, and the transient mode is executed with a GET request. The parameters were previously of type Reference but should now be of type StringType. To avoid breaking changes, the use of Reference parameters is automatically converted to StringType. The transient mode returns a transaction bundle with CarePlan and ServiceRequest resources.
 - The careplan service now supports FHIR transactions. Execution of FHIR transactions requires the new privilege, *FHIR.transaction*. Transaction bundles of type *batch* is not supported. Conditional create, update, or delete is not supported. Custom operations are not supported. Only resources stored in careplan service can be used in transactions. The number of requests in a transaction is limited to 100. and the operations can only be those tabulated below:
     * Provenance: Read, Search
