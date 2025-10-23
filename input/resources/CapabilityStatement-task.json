@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "task",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">task</div>"
-  },
   "name": "task",
   "status": "active",
   "date": "2025-10-21T10:54:20.606+00:00",

@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "device",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">device</div>"
-  },
   "name": "device",
   "status": "active",
   "date": "2025-10-21T10:39:51.463+00:00",
