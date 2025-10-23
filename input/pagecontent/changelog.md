@@ -2,6 +2,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## 6.0.0
 ### General changes
+- BREAKING: document-query and document-transformation service now requires and responds with document-reference resources with profile ehealth-transformation-documentreference
 ### Custom operations
 #### System operations
 - Updated $search-measurements-bundle-limit to use effective start/end date as search parameters for measurements instead of submitted date
@@ -37,12 +38,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Requires ehealth-careplan CarePlan.instantiatesCanonical 1..1 only Canonical(ehealth-plandefinition)
-- Updated ehealth-documentreference to be more precise on the intended usage
+- BREAKING: Updated ehealth-documentreference to be more precise on the intended usage
   - Removed ehealth-manually-deprecated extension
   - Added required binding for type to http://ehealth.sundhed.dk/vs/ehealth-document-reference-type
   - Added required binding for category to http://ehealth.sundhed.dk/vs/document-category
   - Added required modifier-role invariant for ehealth-documentreference used for material registration (category is 'general-material' or 'patient-specific-material')
-- Updated ehealth-transformation-documentreference to inherit from R4 DocumentReference instead of ehealth-documentreference
+- BREAKING: Updated ehealth-transformation-documentreference to inherit from R4 DocumentReference instead of ehealth-documentreference
   - Added ehealth-manuallydeprecated-type to the profile, since this was previously inherited from ehealth-documentreference
 - Created new profile ehealth-material-communication used for assignment of materials to patients
 ### Search parameters
