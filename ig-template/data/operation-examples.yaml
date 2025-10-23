@@ -3,6 +3,9 @@
   path: POST_apply.html
 
 - profile: system
+  path: GET_apply.html
+
+- profile: system
   path: POST_create-episode-of-care.html
 
 - profile: system
@@ -81,7 +84,13 @@
   path: POST_PlanDefinition_apply.html
 
 - profile: system
+  path: GET_PlanDefinition_apply.html
+
+- profile: system
   path: POST_ClinicalImpression_set-measurement-validity.html
+
+- profile: system
+  path: POST_fhir.html
 
 # system reporting
 
