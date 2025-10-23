@@ -1,5 +1,8 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+### General changes
+- Added operation examples for CCR0237 concerning transient apply and FHIR transaction
+
 ## 6.0.0
 ### General changes
 - BREAKING: document-query and document-transformation service now requires and responds with document-reference resources with profile ehealth-transformation-documentreference
