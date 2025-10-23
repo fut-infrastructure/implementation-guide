@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-document-category",
+  "url": "http://ehealth.sundhed.dk/vs/document-category",
+  "version": "1.0.0",
+  "name": "DocumentCategory",
+  "title": "Document Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-09-02T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Document Category value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/material-category"
+      }
+    ]
+  }
+}
+

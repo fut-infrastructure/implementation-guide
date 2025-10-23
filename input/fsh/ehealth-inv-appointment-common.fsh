@@ -22,10 +22,10 @@ Severity:    #error
 
 Invariant:   max-participants
 Description: "Too many intended participants"
-Expression:  "extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() <= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').valueInteger"
+Expression:  "extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() <= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-max-participants').value"
 Severity:    #warning
 
 Invariant:   min-participants
 Description: "Too few intended participants"
-Expression:  "extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() >= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').valueInteger"
+Expression:  "extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').exists() implies participant.actor.where(reference.startsWith('#').not()).count() >= extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-min-participants').value"
 Severity:    #warning

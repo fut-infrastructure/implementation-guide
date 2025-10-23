@@ -1,12 +1,11 @@
-`PUT [base]/CommunicationRequest/625`
+`PUT [base]/CommunicationRequest/2394`
 
 __Header__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9DYXJlVGVhbS82NDgiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1jYXJlcGxhbi0zMDM4LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS82MjMiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0zMDM4LmxvY2FsL2ZoaXIvUGF0aWVudC8xOTQ1MyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBBVElFTlQifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3Quc2VhcmNoIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuZGVsZXRlIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1jYXJlcGxhbi0zNTk2LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vNjc0MDAiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0zNTk2LmxvY2FsL2ZoaXIvUGF0aWVudC8yMjUyNiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 If-Match: "1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.0.0 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,35 +14,62 @@ __Body__:
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "625",
+  "id": "2394",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T15:09:59.196+00:00",
-    "source": "#26e0f18a-3b09-434e-ad07-2fb464625ac3",
+    "lastUpdated": "2025-10-21T12:41:25.335+00:00",
+    "source": "#f4551ffb-89d6-48",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
+    ],
+    "tag": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+        "code": "xa",
+        "display": "xa"
+      }
     ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-      "valueReference": {
-        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/623"
-      }
-    }
-  ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/624"
+      "reference": "https://careplan.cit-careplan-3596.local/fhir/ServiceRequest/2393"
     }
   ],
   "status": "on-hold",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-category",
+          "code": "advice"
+        }
+      ]
+    }
+  ],
   "subject": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/19453"
+    "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/22526"
   },
   "recipient": [
     {
-      "reference": "https://organization.cit-careplan-3038.local/fhir/CareTeam/648"
+      "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/67400"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "ReminderSubmitMeasurement"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "AppointmentReminder"
+        }
+      ]
     }
   ]
 }
@@ -53,35 +79,62 @@ __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "625",
+  "id": "2394",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2025-02-04T15:09:59.400+00:00",
-    "source": "#b2edd736-b90f-455d-93aa-8a4a86b2d1d2",
+    "lastUpdated": "2025-10-21T12:41:25.536+00:00",
+    "source": "#3348ff68-4671-4da9-93d7-4b4042e2966a",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
+    ],
+    "tag": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+        "code": "xa",
+        "display": "xa"
+      }
     ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-      "valueReference": {
-        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/623"
-      }
-    }
-  ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/624"
+      "reference": "https://careplan.cit-careplan-3596.local/fhir/ServiceRequest/2393"
     }
   ],
   "status": "on-hold",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-category",
+          "code": "advice"
+        }
+      ]
+    }
+  ],
   "subject": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/19453"
+    "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/22526"
   },
   "recipient": [
     {
-      "reference": "https://organization.cit-careplan-3038.local/fhir/CareTeam/648"
+      "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/67400"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "ReminderSubmitMeasurement"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "AppointmentReminder"
+        }
+      ]
     }
   ]
 }

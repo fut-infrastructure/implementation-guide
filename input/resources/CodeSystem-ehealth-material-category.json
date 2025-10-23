@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-material-category",
+  "url": "http://ehealth.sundhed.dk/cs/material-category",
+  "version": "1.0.0",
+  "name": "MaterialCategory",
+  "title": "Material Category",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-09-02",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Material Category",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "general-material",
+      "display": "General Material",
+      "definition": "Material containing general purpose information without patient specific information."
+    },
+    {
+      "code": "patient-specific-material",
+      "display": "Patient Specific Material",
+      "definition": "Material containing patient specific information."
+    }
+  ]
+}

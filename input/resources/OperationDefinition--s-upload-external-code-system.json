@@ -6,7 +6,7 @@
   "status": "active",
   "kind": "operation",
   "date": "2021-05-06T08:31:20+00:00",
-  "idempotent": false,
+  "affectsState": true,
   "code": "upload-external-code-system",
   "system": true,
   "type": false,

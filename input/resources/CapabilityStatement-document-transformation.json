@@ -3,12 +3,12 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2025-08-07T09:01:32.473+00:00",
+  "date": "2025-10-21T10:39:50.910+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-transformation",
-    "version": "1.27.0"
+    "version": "1.28.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
