@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 6.0.2
+### General changes
+- Added description of transaction in list of supported operations 
+
 ## 6.0.1
 ### General changes
 - Added operation examples for CCR0237 concerning transient apply and FHIR transaction
