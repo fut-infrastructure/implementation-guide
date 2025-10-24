@@ -1,4 +1,4 @@
-Supports the ```transaction``` interaction. A ```transaction``` interaction submit a set of actions to perform on a server in a single HTTP request/response (see https://hl7.org/fhir/R4/http.html#transaction).
+Supports the ```transaction``` interaction. A ```transaction``` interaction submit a set of actions to perform on a server in a single HTTP request/response (see <https://hl7.org/fhir/R4/http.html#transaction>).
 Only supported for the following servers.
 
 ### Server careplan
