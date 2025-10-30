@@ -64,6 +64,30 @@ Parent: Questionnaire
 * item.item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
 
+// 3rd level item constraints
+* item.item.item obeys sliderStepValueDecimal-Type and copyright-type and questionnaire-minOccurs-greater-than-one and questionnaire-maxOccurs-greater-than-one and minOccurs-invalid-when-repeats-false
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs named questionnaire-minOccurs 0..1
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs named questionnaire-maxOccurs 0..1
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/minValue named minValue 0..1
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/maxValue named maxValue 0..1
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-sliderStepValue named questionnaire-sliderStepValue 0..1
+* item.item.item.extension contains ehealth-questionnaire-sliderStepValueDecimal named questionnaire-sliderStepValueDecimal 0..1
+* item.item.item.extension contains ehealth-questionnaire-feedback named feedback 0..1
+* item.item.item.extension contains ehealth-overviewUsageMode named overviewUsageMode 0..*
+* item.item.item.extension contains http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl named itemControl 0..1
+* item.item.item.extension contains ehealth-questionnaire-image named ehealth-question-image 0..1
+* item.item.item.extension contains ehealth-questionnaire-shortText named shortText 0..1
+* item.item.item.extension contains ehealth-questionnaire-helpText named helpText 0..1
+* item.item.item.answerOption.extension contains ehealth-questionnaire-image named ehealth-answeroption-image 0..1
+* item.item.item.extension contains ehealth-questionnaire-answerSignificance named answerSignificance 0..*
+* item.item.item.extension contains ehealth-external-identifier named externalIdentifier 0..1
+* item.item.item.extension contains ehealth-questionnaire-item-is-copyright named isCopyright 0..1
+* item.item.item.extension[itemControl].valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-item-control
+* item.item.item.text.extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.item.item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.item.item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
+* item.item.item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
+
 Extension: ehealth-questionnaire-sliderStepValueDecimal
 Title:     "Slider Step-value Decimal"
 Description: "Defines a decimal number step-value for the slider in the questionnaire."
