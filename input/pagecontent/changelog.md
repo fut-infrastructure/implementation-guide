@@ -3,6 +3,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 6.0.2
 ### General changes
 - Added description of transaction in list of supported operations 
+### ValueSets
+- Added codes 'I3.4', 'I6.4', 'I7.2' and 'I9.3' to http://ehealth.sundhed.dk/vs/conditions
 
 ## 6.0.1
 ### General changes
