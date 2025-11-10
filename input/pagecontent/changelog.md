@@ -9,7 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### ValueSets
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-required-provenance-policies used for validation when creating ehealth-episiode-of-care resources
-- Removed codes 'I3.4', 'I6.4', 'I7.2' and 'I9.3' from http://ehealth.sundhed.dk/vs/conditions
+- Removed codes 'I3.4', 'I6.4', 'I7.2' and 'I9.3' from http://ehealth.sundhed.dk/vs/conditions (was included in 6.0.2 but has later been retracted)
 
 ## 6.0.2
 ### General changes
