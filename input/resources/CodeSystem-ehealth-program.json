@@ -32,6 +32,11 @@
       "code": "telma",
       "display": "Telma",
       "definition": "Telemedicinsk monitoreringsapplikation"
+    },
+    {
+      "code": "telma-support-team",
+      "display": "Telma Supportteam",
+      "definition": "Supportteam for Telemedicinsk monitoreringsapplikation"
     }
   ]
 }

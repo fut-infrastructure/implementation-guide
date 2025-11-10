@@ -3,12 +3,12 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2025-08-07T02:42:42.366+00:00",
+  "date": "2025-10-21T12:28:01.292+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "plan",
-    "version": "2.10.0"
+    "version": "2.12.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -35,7 +35,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:predecessor", "ActivityDefinition:successor" ],
-      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -217,8 +217,8 @@
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
-      "searchInclude": [ "*", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject" ],
-      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchInclude": [ "*", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -312,6 +312,10 @@
         "type": "token",
         "documentation": "Master Version Specific Identifier"
       }, {
+        "name": "intendedOrganization",
+        "type": "reference",
+        "documentation": "The Organization which is intended to use the DocumentReference"
+      }, {
         "name": "language",
         "type": "token",
         "documentation": "Human language of the content (BCP-47)"
@@ -319,6 +323,14 @@
         "name": "location",
         "type": "uri",
         "documentation": "Uri where the data can be found"
+      }, {
+        "name": "modifier_role_reference",
+        "type": "reference",
+        "documentation": "Reference to modifier Organization"
+      }, {
+        "name": "modifier_role_role",
+        "type": "token",
+        "documentation": "Role of Organization related to modification of the DocumentReference"
       }, {
         "name": "patient",
         "type": "reference",
@@ -387,7 +399,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ]
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ]
     }, {
       "type": "PlanDefinition",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
@@ -405,7 +417,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "*", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
-      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -593,7 +605,7 @@
       }, {
         "name": "apply",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply",
-        "documentation": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template."
+        "documentation": "Create a careplan with service requests for a specific episodeOfCare using the PlanDefinition as a template. If using POST the operation will persist resources and return the careplan. If using GET the operation will return transient resources in a transaction bundle. The bundle with transient careplan and servicerequest resources can then be modified before being persisted using a FHIR transaction."
       } ]
     } ],
     "operation": [ {

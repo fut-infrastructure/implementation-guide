@@ -7,7 +7,6 @@ Description: "The participating CareTeam or Practitioner."
     actor 0..1 and
     actorref 0..1
 * extension[function].value[x] only Coding
-* extension[function].value[x] from http://ehealth.sundhed.dk/vs/participant-function (required)
 * extension[function].valueCoding 0..1
 * extension[function] ^short = "The function of the participant"
 * extension[function] ^definition = "The code defining the function of the participant."

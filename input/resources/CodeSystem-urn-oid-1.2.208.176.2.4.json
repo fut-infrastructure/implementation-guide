@@ -291,6 +291,10 @@
           "display": "Ikke nærmere specificerede psykiske lidelser"
         },
         {
+          "code": "DG20",
+          "display": "Parkinsons sygdom"
+        },
+        {
           "code": "DI20",
           "display": "Angina pectoris",
           "concept": [

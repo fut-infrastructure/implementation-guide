@@ -8,9 +8,8 @@ Parent: CarePlan
 * extension contains ehealth-teamHistory named teamHistory 0..*
 * extension contains ehealth-careplan-statusschedule named statusSchedule 0..*
 * extension contains ehealth-teamschedule named teamSchedule 0..*
-// definition is deleted in R4
-// * definition 1..1
-// * definition only Reference(ehealth-plandefinition or ehealth-questionnaire)
+* instantiatesCanonical 1..1
+* instantiatesCanonical only Canonical(ehealth-plandefinition)
 * basedOn 0..0
 * replaces 0..0
 * partOf only Reference(ehealth-careplan)
@@ -54,6 +53,7 @@ Parent: CarePlan
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
 * extension contains ehealth-participant named participant 0..*
+* extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/participant-function (required)
 
 Extension:   ehealth-careplan-statusHistory
 Title:       "Careplan status history"

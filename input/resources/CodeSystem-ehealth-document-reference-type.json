@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-document-reference-type",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-document-reference-type",
+  "version": "1.0.0",
+  "name": "EHealthDocumentReferenceType",
+  "title": "EHealthDocumentReference Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-09-02",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "EHealthDocumentReference Type CodeSystem",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "material",
+      "display": "Material",
+      "definition": "Healthcare material."
+    }
+  ]
+}

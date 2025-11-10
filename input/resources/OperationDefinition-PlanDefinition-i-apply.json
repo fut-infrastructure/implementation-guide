@@ -6,8 +6,8 @@
   "title": "Create a careplan",
   "status": "active",
   "kind": "operation",
-  "description": "Create a careplan for a specific episodeOfCare using this PlanDefinition as a template.",
-  "affectsState": true,
+  "description": "Create a careplan with service requests for a specific episodeOfCare using the PlanDefinition as a template. If using POST the operation will persist resources and return the careplan. If using GET the operation will return transient resources in a transaction bundle. The bundle with transient careplan and servicerequest resources can then be modified before being persisted using a FHIR transaction.",
+  "affectsState": false,
   "code": "apply",
   "resource": [
     "PlanDefinition"
@@ -21,7 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "type": "Reference"
+      "type": "string"
     }
   ]
 }

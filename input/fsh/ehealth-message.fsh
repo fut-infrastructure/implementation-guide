@@ -63,13 +63,6 @@ Description: "A logical id identifying a set of messages, which are grouped in a
 * . ^short = "Thread id"
 * value[x] only string
 
-Extension: ehealth-period
-Title:     "Period"
-Description: "Specifies the temporal validity of an ehealth/message instance. Contains a period, eg. specifying temporal validity"
-* . ^short = "Specifies the temporal validity of an ehealth/message instance"
-* value[x] only Period
-* valuePeriod 1..1
-
 Extension: ehealth-administrative-status
 Title:     "Administrative status"
 Description: "The administrative status of how a message recipient has handled a message"

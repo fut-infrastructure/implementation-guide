@@ -83,6 +83,10 @@
             "display": "Ikke nærmere specificerede psykiske lidelser"
           },
           {
+            "code": "DG20",
+            "display": "Parkinsons sygdom"
+          },
+          {
             "code": "DJ44",
             "display": "Kronisk obstruktiv lungesygdom"
           },
@@ -151,6 +155,23 @@
           "op": "is-a",
           "value": "J5"
         } ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "I3.4"
+          },
+          {
+            "code": "I6.4"
+          },
+          {
+            "code": "I7.2"
+          },
+          {
+            "code": "I9.3"
+          }
+        ]
       }
     ]
   }
