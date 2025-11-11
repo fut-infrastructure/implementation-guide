@@ -1,13 +1,13 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 6.0.3
+## 7.0.0
 ### CodeSystems
 - Added 'http://ehealth.sundhed.dk/policy/dk/aeldreloven' to http://ehealth.sundhed.dk/cs/ehealth-provenance-policies
 - Added 'elderly-act' to http://ehealth.sundhed.dk/cs/jurisdiction
 
 ### ValueSets
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-required-provenance-policies used for validation when creating ehealth-episiode-of-care resources
-- Removed codes 'I3.4', 'I6.4', 'I7.2' and 'I9.3' from http://ehealth.sundhed.dk/vs/conditions (was included in 6.0.2 but has later been retracted)
+- BREAKING: Removed codes 'I3.4', 'I6.4', 'I7.2' and 'I9.3' from http://ehealth.sundhed.dk/vs/conditions (was included in 6.0.2 but has later been retracted, will continue in DEVENVCGI, EXTTEST environments)
 
 ## 6.0.2
 ### General changes
