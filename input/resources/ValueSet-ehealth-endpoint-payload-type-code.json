@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "id": "ehealth-endpoint-payloadType-code",
   "url": "http://ehealth.sundhed.dk/vs/endpoint-payloadType-code",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "EndpointPayloadTypeCode",
   "title": "Endpoint PayloadType Code",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-11-07T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
