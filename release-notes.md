@@ -1,1 +1,1 @@
-* See detailed changes in [the changelog](https://ehealth.sundhed.dk/fhir/changelog.html#602)
+* See detailed changes in [the changelog](https://ehealth.sundhed.dk/fhir/changelog.html#700)

@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-required-provenance-policies",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-required-provenance-policies",
+  "version": "1.0.0",
+  "name": "Required policies for provenances",
+  "title": "Required policies for provenances",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-09-30T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Required policies under which data can be provided. One of these policies must be provided in a provenance.",
+  "compose": {
+    "include": [
+        {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-provenance-policies",
+            "concept": [
+            {
+                "code": "http://ehealth.sundhed.dk/policy/dk/sundhedsloven"
+            },
+            {
+                "code": "http://ehealth.sundhed.dk/policy/dk/serviceloven"
+            },
+            {
+                "code": "http://ehealth.sundhed.dk/policy/dk/aeldreloven"
+            }
+            ]
+        }
+    ]
+  }
+}
