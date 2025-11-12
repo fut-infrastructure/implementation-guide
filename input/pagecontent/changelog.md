@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 7.0.0
+## 7.0.5
 ### CodeSystems
 - Added 'http://ehealth.sundhed.dk/policy/dk/aeldreloven' to http://ehealth.sundhed.dk/cs/ehealth-provenance-policies
 - Added 'elderly-act' to http://ehealth.sundhed.dk/cs/jurisdiction
