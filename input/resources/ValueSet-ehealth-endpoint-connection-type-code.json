@@ -27,8 +27,7 @@
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
         "concept": [
           {
-            "code": "unsupported",
-            "display": "Unsupported"
+            "code": "unsupported"
           }
         ]
       }
