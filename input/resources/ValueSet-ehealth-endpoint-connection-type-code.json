@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "ehealth-endpoint-connectionType-code",
-  "url": "http://ehealth.sundhed.dk/vs/endpoint-connectionType-codes",
+  "url": "http://ehealth.sundhed.dk/vs/endpoint-connectionType-code",
   "version": "1.0.0",
   "name": "EndpointConnectionTypeCode",
   "title": "Endpoint ConnectionType Code",
