@@ -20,6 +20,7 @@ Parent: Organization
 * contact.telecom.extension contains ehealth-organization-telecomCustodian named telecomCustodian 1..1
 * contact.telecom.system 0..0
 * contact.telecom.value 0..0
+* endpoint only Reference(ehealth-endpoint)
 
 
 Extension:  ehealth-organization-relatedTo
