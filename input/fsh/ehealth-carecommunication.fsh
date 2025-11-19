@@ -44,7 +44,8 @@ Parent: Communication
 
 * extension contains ehealth-destination-extension named destination 1..1 MS
 
-* recipient only Reference(CareTeam) MS
+* recipient only Reference(CareTeam)
+* recipient MS
 
 * extension contains ehealth-administrative-status named administrativeStatus 1..1
 
