@@ -18,8 +18,10 @@ Parent: Communication
 // we do not want medcom categories in our IG
 * category 1..1 MS
 * category.coding 1..1 MS
-* category.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes" MS
-* category.coding.code  from http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes (required) MS
+* category.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
+* category.coding.system MS
+* category.coding.code from http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes (required)
+* category.coding.code MS
 
 * subject 1..1 MS
 * subject only Reference(Patient)
@@ -108,12 +110,6 @@ Title: "DateTime Extension"
 Description: "Date and time of the payload segment."
 * . ^short = "Payload dateTime"
 * value[x] only dateTime
-
-Extension: ehealth-practitioner-extension
-Title: "Practitioner Extension"
-Description: "Reference to the author (practitioner role) of this payload segment."
-* . ^short = "Payload author"
-* value[x] only Reference(MedComCorePractitionerRole)
 
 Extension: ehealth-contact-extension
 Title: "Contact Extension"
