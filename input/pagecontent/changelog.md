@@ -12,7 +12,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extention ehealth-reference-careplan to Task
 
 ### Search parameters
-
+- Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
 
 ## 7.0.0
 ### CodeSystems
