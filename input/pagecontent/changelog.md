@@ -1,5 +1,19 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.1. todo: change to semver format before release
+### General changes (Documentation)
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Added extention ehealth-reference-careplan to Task
+
+### Search parameters
+- Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
+
 ## 7.0.0
 ### CodeSystems
 - Added 'http://ehealth.sundhed.dk/policy/dk/aeldreloven' to http://ehealth.sundhed.dk/cs/ehealth-provenance-policies
