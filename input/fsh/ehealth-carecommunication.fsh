@@ -7,6 +7,17 @@ Profile: ehealth-carecommunication
 Id: ehealth-carecommunication
 Parent: Communication
 
+* obeys
+    stopped-status-statusReason
+    and only-asap-or-routine
+    and topic-required-when-category-other
+    and practitionerrole-author-coding-xor-text
+    and practitioner-author-must-have-name
+    and priority-category-invariant
+    and uuidv4
+    and atLeastOnePayloadString
+    and payloadAttachment-contentType-required
+
 * identifier 1..1 MS
 * identifier.use 0..1
 * identifier.use from http://hl7.org/fhir/ValueSet/identifier-use (required)
@@ -17,10 +28,9 @@ Parent: Communication
 
 // we do not want medcom categories in our IG
 * category 1..1 MS
+* category from http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes (required)
 * category.coding 1..1 MS
-* category.coding.system = "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes"
 * category.coding.system MS
-* category.coding.code from http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categoryCodes (required)
 * category.coding.code MS
 
 * subject 1..1 MS
@@ -34,16 +44,17 @@ Parent: Communication
 * topic.text ^definition = "The topic must be present."
 
 * priority MS
-* priority ^short = "The priority of the communication."
+* priority ^short = "Shall be present if the message priority is known to be ASAP, but is only allowed when the category is 'regarding referral', see priority-category-invariant"
 * priority only code
 * priority from http://ehealth.sundhed.dk/vs/priority (required)
 
 * extension contains ehealth-practitionerrole-extension named practitionerRole 0..1
 
-* extension contains ehealth-practitioner-extension named author 0..1 MS
+* extension contains ehealth-practitioner-extension named practitioner 0..1 MS
 
 * extension contains ehealth-destination-extension named destination 1..1 MS
 
+* recipient 0..1
 * recipient only Reference(CareTeam)
 * recipient MS
 
@@ -52,22 +63,19 @@ Parent: Communication
 * extension contains ehealth-Carecommunication-bundle-extension named careCommunicationBundle 1..1 MS
 
 * payload 1..*
-* payload ^slicing.discriminator.type = #value
+* payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "content[x]"
 * payload ^slicing.rules = #open
+* payload contains string 1..* and attachment 0..*
 
-* payload contains string 1..*
 * payload[string].contentString 1..1 MS
-* payload[string].contentString ^short = "Message payload."
 * payload[string].extension contains
-      ehealth-datetime-extension named date 1..1 MS and
-      ehealth-practitioner-extension named author 1..1 MS and
-      ehealth-contact-extension named authorContact 1..1 MS and
-      ehealth-sending-organization-extension named sendingOrganization 1..1 MS
+    ehealth-datetime-extension named date 1..1 MS and
+    ehealth-practitioner-extension named author 1..1 MS and
+    ehealth-contact-extension named authorContact 1..1 MS and
+    ehealth-sending-organization-extension named sendingOrganization 1..1 MS
 
-* payload contains Attachment 0..*
-* payload[Attachment].contentAttachment 1..1 MS
-* payload[Attachment].contentAttachment ^short = "The payload with an attachment shall contain a link or content attached to the message."
+* payload[attachment].contentAttachment 1..1 MS
 * payload[attachment].extension contains
     ehealth-datetime-extension named date 1..1 MS and
     ehealth-practitioner-extension named author 0..1 MS and
@@ -97,14 +105,6 @@ Title: "Destination Extension"
 Description: "Reference to the careCommunication Bundle received."
 * . ^short = "carecommunication bundle"
 * value[x] only Reference(Bundle)
-
-Extension: ehealth-administrative-status
-Title:     "Administrative status"
-Description: "The administrative status of how a message recipient has handled a message"
-* . ^short = "The administrative status of how a message recipient has handled a message"
-* value[x] only Coding
-* valueCoding from http://ehealth.sundhed.dk/vs/administrative-status
-* valueCoding 1..1
 
 Extension: ehealth-datetime-extension
 Title: "DateTime Extension"
