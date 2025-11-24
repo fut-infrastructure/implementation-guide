@@ -21,6 +21,7 @@ Parent: Organization
 * contact.telecom.system 0..0
 * contact.telecom.value 0..0
 * endpoint only Reference(ehealth-endpoint)
+* endpoint ^type.aggregation = #contained
 
 
 Extension:  ehealth-organization-relatedTo

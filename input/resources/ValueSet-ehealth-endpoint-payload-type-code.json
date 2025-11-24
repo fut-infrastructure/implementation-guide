@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Single endpoint payload type code drawn from data-absent-reason.",
+  "description": "ValueSet of endpoint payload types.",
   "compose": {
     "include": [
       {
