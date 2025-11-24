@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Single endpoint connection type code drawn from data-absent-reason.",
+  "description": "ValueSet of endpoint connection types.",
   "compose": {
     "include": [
       {
