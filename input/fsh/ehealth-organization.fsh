@@ -66,8 +66,8 @@ Description: "The organization's municipality code in the Danish 'Det Centrale P
 
 Extension:   ehealth-organization-providerIdentifier
 Title:       "Provider identifier"
-Description: "The providerIdentifier of the organization"
-* . ^short = "The organization's provider identifier"
+Description: "The providerIdentifier of the organization (Danish: Tilknytning til ydernummer)"
+* . ^short = "The organization's provider identifier (Danish: Tilknytning til ydernummer)"
 * valueString 1..1
 * value[x] only string
 
