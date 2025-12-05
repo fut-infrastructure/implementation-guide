@@ -1,0 +1,22 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-export-poll-status",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-export-poll-status",
+  "name": "export-poll-status",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": false,
+  "code": "export-poll-status",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "_jobId",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "string"
+    }
+  ]
+}
