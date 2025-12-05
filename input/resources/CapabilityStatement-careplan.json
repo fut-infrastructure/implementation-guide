@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "careplan",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">careplan</div>"
+  },
   "name": "careplan",
   "status": "active",
-  "date": "2025-10-21T13:03:36.962+00:00",
+  "date": "2025-12-05T02:02:43.957+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "careplan",
-    "version": "1.33.0"
+    "version": "1.37.0"
   },
   "implementation": {
     "description": "eHealth careplan service",
@@ -19,6 +24,16 @@
   "rest": [ {
     "mode": "server",
     "resource": [ {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ]
+    }, {
       "type": "CarePlan",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careplan",
       "interaction": [ {
@@ -731,6 +746,9 @@
       "code": "transaction"
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "migrate",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
@@ -741,14 +759,17 @@
     }, {
       "name": "create-episode-of-care",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-create-episode-of-care",
-      "documentation": "This operation persists an EpisodeOfCare based on the transient value of an EpisodeOfCare provided in the input.\r\n## Input\r\nThe input is a Bundle which must contain exactly one EpisodeOfCare, conditions referenced in diagnosis list and at least one Provenance resource. All Provenances in the input must have the EpisodeOfCare as target. At least one Provenance must be interpreted into a 'Privacy-provenance' (see below).\r\n### The EpisodeOfCare resource\r\nThe EpisodeOfCare has to have `PLANNED` status \r\nThe 'id' property of the EpisodeOfCare will be reassigned by the server, but can be referenced by other resources in the same bundle. \r\nThe 'managingOrganization' property of the EpisodeOfCare references the GDPR Data Controller (Danish: 'Dataansvarlig').\r\n### The privacy-Provenance resource\r\nA privacy-Provenance is a Provenance resource characterized by having at least one entry in Provenance.policy which data are transported, stored, or processed in the system. Possible values are:\r\n- 'http://ehealth.sundhed.dk/policy/dk/sundhedsloven'\r\n- 'http://ehealth.sundhed.dk/policy/dk/serviceloven'\r\n### Diagnosis referenced Condition resource\r\nFor any diagnosis listed, the referenced Condition must be concerning the same Patient as the EpisodeOfCare.\r\n## Output\r\nFor valid inputs, the server will create, persist and return a new EpisodeOfCare, client-supplied provenances, conditions and origin-provenance carrying a server-assigned ids.\r\nTo get resources bodies in the output the request header has to contain parameter ```Prefer: return=representation```.\r\n## Validation\r\n- Patient.deceased must be false to create episode of care\r\n### The origin-Provenance resource\r\nWhenever an EpisodeOfCare is created, the server automatically creates an 'origin' Provenance resource point to it (in addition to the client-supplied Privacy-Provenance). This Origin-Provenance resource is filled with data from the JWT access token in order to record the origin of the EpisodeOfCare resource. For instance agent.whoReference points to a resource which is created as a shadow identity from the JWT token."
+      "documentation": "This operation persists an EpisodeOfCare based on the transient value of an EpisodeOfCare provided in the input.\r\n## Input\r\nThe input is a Bundle which must contain exactly one EpisodeOfCare, conditions referenced in diagnosis list and at least one Provenance resource. All Provenances in the input must have the EpisodeOfCare as target. At least one Provenance must be interpreted into a 'Privacy-provenance' (see below).\r\n### The EpisodeOfCare resource\r\nThe EpisodeOfCare has to have `PLANNED` status \r\nThe 'id' property of the EpisodeOfCare will be reassigned by the server, but can be referenced by other resources in the same bundle. \r\nThe 'managingOrganization' property of the EpisodeOfCare references the GDPR Data Controller (Danish: 'Dataansvarlig').\r\n### The privacy-Provenance resource\r\nA privacy-Provenance is a Provenance resource characterized by having at least one entry in Provenance.policy which data are transported, stored, or processed in the system. Possible values are:\r\n- 'http://ehealth.sundhed.dk/policy/dk/sundhedsloven'\r\n- 'http://ehealth.sundhed.dk/policy/dk/serviceloven'\r\n- 'http://ehealth.sundhed.dk/policy/dk/aeldreloven'\r\n### Diagnosis referenced Condition resource\r\nFor any diagnosis listed, the referenced Condition must be concerning the same Patient as the EpisodeOfCare.\r\n## Output\r\nFor valid inputs, the server will create, persist and return a new EpisodeOfCare, client-supplied provenances, conditions and origin-provenance carrying a server-assigned ids.\r\nTo get resources bodies in the output the request header has to contain parameter ```Prefer: return=representation```.\r\n## Validation\r\n- Patient.deceased must be false to create episode of care\r\n### The origin-Provenance resource\r\nWhenever an EpisodeOfCare is created, the server automatically creates an 'origin' Provenance resource point to it (in addition to the client-supplied Privacy-Provenance). This Origin-Provenance resource is filled with data from the JWT access token in order to record the origin of the EpisodeOfCare resource. For instance agent.whoReference points to a resource which is created as a shadow identity from the JWT token."
     }, {
       "name": "apply",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-apply",
       "documentation": "Create a careplan with service requests for a specific episodeOfCare using the PlanDefinition as a template. If using POST the operation will persist resources and return the careplan. If using GET the operation will return transient resources in a transaction bundle. The bundle with transient careplan and servicerequest resources can then be modified before being persisted using a FHIR transaction."
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -756,6 +777,9 @@
       "name": "get-resource-counts",
       "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "library",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">library</div>"
+  },
   "name": "library",
   "status": "active",
-  "date": "2025-10-21T11:11:29.387+00:00",
+  "date": "2025-12-05T02:22:22.727+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "library",
-    "version": "1.18.0"
+    "version": "1.20.0"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -19,6 +24,16 @@
   "rest": [ {
     "mode": "server",
     "resource": [ {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Library:composed-of", "Library:depends-on", "Library:derived-from", "Library:predecessor", "Library:successor" ]
+    }, {
       "type": "Library",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library",
       "interaction": [ {
@@ -159,12 +174,18 @@
       "searchRevInclude": [ "Library:composed-of", "Library:depends-on", "Library:derived-from", "Library:predecessor", "Library:successor" ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "migrate",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -172,6 +193,9 @@
       "name": "get-resource-counts",
       "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://library.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "organization",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">organization</div>"
+  },
   "name": "organization",
   "status": "active",
-  "date": "2025-10-21T10:35:06.339+00:00",
+  "date": "2025-12-05T02:37:42.362+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "organization",
-    "version": "1.22.0"
+    "version": "1.24.0"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -19,6 +24,16 @@
   "rest": [ {
     "mode": "server",
     "resource": [ {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ]
+    }, {
       "type": "CareTeam",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam",
       "interaction": [ {
@@ -559,6 +574,9 @@
       } ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "persist-login",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login",
       "documentation": "This operation persists login information into CareTeams and PractitionerRoles\nThe following elements of each careteam are mandatory:\n- id: Reference based on the careteam from the saml security token\n- status: any\n- name: any\n- reasonCode: any\n- participant: 1 for each careteam-role in the saml security token\n-- role: from the saml security token\n-- member: reference to the practitioner\n-- onBehalfOf: reference to organization (cannot be set currently because of a bug in hapi)\n\nPersist-login will find each careteam, and update it with any new participants and roles from the input bundle.\nThe input careteam resources are are used as a container for the participant list. The rest of the fields are not used.\nThe following elements of each PractitionerRole are mandatory:\n- practitioner\n- organization\n- code: roles from the saml security token (CareteamParticipantRole valueset)\n\nPersist-login will search for practitionerRoles for each combination of (practitioner, organization) and create it if it doesn't already exists."
@@ -567,8 +585,11 @@
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import-organizations",
       "documentation": "Import a bundle containing at least one organization tree."
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -576,6 +597,9 @@
       "name": "get-resource-counts",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

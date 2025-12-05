@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "plan",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">plan</div>"
+  },
   "name": "plan",
   "status": "active",
-  "date": "2025-10-21T12:28:01.292+00:00",
+  "date": "2025-12-05T02:42:23.067+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "plan",
-    "version": "2.12.0"
+    "version": "2.16.0"
   },
   "implementation": {
     "description": "eHealth plan service",
@@ -201,6 +206,16 @@
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
         "documentation": "### Input\n- resourceId: reference to the ActivityDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New copy does not require that the user has a modifier-role.\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
       } ]
+    }, {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ]
     }, {
       "type": "DocumentReference",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference",
@@ -596,7 +611,7 @@
         "documentation": "Import a Plandefinition\n### Parameters\n- planDefinitionPackage: Binary package produced by the export operation\n### Output\nBundle containing the created resources. PlanDefinitions, ActivityDefinitions, and Questionnaires will be created. Imports QFFD DocumentReference into Document-Transformation service.Libraries and Organizations are used to find the corresponding resources on the target system."
       }, {
         "name": "export",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-export",
+        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-is-export",
         "documentation": "Export a PlanDefinition.\n### Export Contents\nThe export contains the PlanDefinition including referenced resources:- PlanDefinitions\n- ActivityDefinitions\n- Questionnaires\n- Libraries\n- Organizations\n- DocumentReference + QFDD\n\nEach resource is returned in a separate JSon file.\n### Parameters\n- exclude: references to ActivityDefinitions or PlanDefinitions to exclude from the export.\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files.\nAll returned objects are Fhir resources. See the implementation guide for details"
       }, {
         "name": "create-clone",
@@ -609,12 +624,18 @@
       } ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "migrate",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -622,6 +643,9 @@
       "name": "get-resource-counts",
       "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

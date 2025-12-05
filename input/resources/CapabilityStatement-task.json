@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "task",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">task</div>"
+  },
   "name": "task",
   "status": "active",
-  "date": "2025-10-21T10:54:20.606+00:00",
+  "date": "2025-12-05T03:12:42.658+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "task",
-    "version": "1.27.0"
+    "version": "1.28.0"
   },
   "implementation": {
     "description": "eHealth task service",
@@ -19,6 +24,16 @@
   "rest": [ {
     "mode": "server",
     "resource": [ {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:carePlan", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+    }, {
       "type": "ClinicalImpression",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression",
       "interaction": [ {
@@ -34,7 +49,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "ClinicalImpression:previous" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:carePlan", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -147,7 +162,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:carePlan", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ]
     }, {
       "type": "Task",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-task",
@@ -164,7 +179,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "Task:based-on", "Task:focus", "Task:part-of" ],
-      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
+      "searchRevInclude": [ "ClinicalImpression:action", "ClinicalImpression:assessor", "ClinicalImpression:carePlan", "ClinicalImpression:episodeOfCare", "ClinicalImpression:finding-ref", "ClinicalImpression:investigation", "ClinicalImpression:patient", "ClinicalImpression:previous", "ClinicalImpression:problem", "ClinicalImpression:subject", "Task:based-on", "Task:carePlan", "Task:episodeOfCare", "Task:focus", "Task:owner", "Task:part-of", "Task:patient", "Task:requester", "Task:responsible", "Task:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -213,6 +228,10 @@
         "name": "business-status",
         "type": "token",
         "documentation": "Search by business status"
+      }, {
+        "name": "carePlan",
+        "type": "reference",
+        "documentation": "Search by CarePlan"
       }, {
         "name": "category",
         "type": "token",
@@ -312,12 +331,18 @@
       } ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "migrate",
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -325,6 +350,9 @@
       "name": "get-resource-counts",
       "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://task.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

@@ -1,14 +1,19 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "device",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">device</div>"
+  },
   "name": "device",
   "status": "active",
-  "date": "2025-10-21T10:39:51.463+00:00",
+  "date": "2025-12-05T02:07:22.355+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
+  "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "device",
-    "version": "1.19.0"
+    "version": "1.21.0"
   },
   "implementation": {
     "description": "eHealth device service",
@@ -19,6 +24,16 @@
   "rest": [ {
     "mode": "server",
     "resource": [ {
+      "type": "Binary",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Binary",
+      "interaction": [ {
+        "code": "vread"
+      }, {
+        "code": "read"
+      } ],
+      "searchInclude": [ "*" ],
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
+    }, {
       "type": "Device",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-device",
       "interaction": [ {
@@ -300,12 +315,18 @@
       "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "migrate",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
       "documentation": "Data migration"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "export-poll-status",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status"
+    }, {
+      "name": "export",
+      "definition": "http://hl7.org/fhir/uv/bulkdata/OperationDefinition/export"
     }, {
       "name": "meta",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -313,6 +334,9 @@
       "name": "get-resource-counts",
       "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }
