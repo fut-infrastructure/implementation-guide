@@ -4,7 +4,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes (Documentation)
 ### Custom operations
 #### System operations
-- added operations for bulk export - $export, $export-poll-status and retrieving exported files (Binary)
+- Added operations for bulk export - $export, $export-poll-status and retrieving exported files (Binary)
 #### Instance operations
 ### Code systems
 ### ValueSets
