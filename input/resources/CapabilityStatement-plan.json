@@ -1,10 +1,6 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "plan",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">plan</div>"
-  },
   "name": "plan",
   "status": "active",
   "date": "2025-12-05T02:42:23.067+00:00",
