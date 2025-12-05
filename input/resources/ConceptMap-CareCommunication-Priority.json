@@ -1,0 +1,36 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ehealth-to-medcom-carecommunication-priority",
+  "url": "http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-priority",
+  "version": "1.0.0",
+  "status": "active",
+  "title": "eHealth to MedCom CareCommunication Priority Map",
+  "group": [
+    {
+      "source": "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-priority",
+      "target": "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-requestPriority",
+      "element": [
+        {
+          "code": "routine",
+          "target": [
+            {
+              "code": "routine",
+              "display": "Routine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "asap",
+          "target": [
+            {
+              "code": "asap",
+              "display": "ASAP",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

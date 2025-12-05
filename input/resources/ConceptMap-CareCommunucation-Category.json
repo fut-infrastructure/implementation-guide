@@ -1,0 +1,196 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ehealth-to-medcom-carecommunication-category",
+  "url": "http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-category",
+  "version": "1.0.0",
+  "status": "active",
+  "title": "eHealth to MedCom CareCommunication Category Map",
+  "group": [
+    {
+      "source": "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category",
+      "target": "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-categories",
+      "element": [
+        {
+          "code": "alcohol-and-drug-treatment",
+          "target": [
+            {
+              "code": "alcohol-and-drug-treatment",
+              "display": "Alcohol and drug treatment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "assistive-devices",
+          "target": [
+            {
+              "code": "assistive-devices",
+              "display": "Assistive technology",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "carecoordination",
+          "target": [
+            {
+              "code": "carecoordination",
+              "display": "Care Coordination",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "decease",
+          "target": [
+            {
+              "code": "decease",
+              "display": "Decease",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "discharge",
+          "target": [
+            {
+              "code": "discharge",
+              "display": "Discharge",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "examination-results",
+          "target": [
+            {
+              "code": "examination-results",
+              "display": "Examination Results",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "healthcare",
+          "target": [
+            {
+              "code": "healthcare",
+              "display": "Healthcare",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "home-care-assessment",
+          "target": [
+            {
+              "code": "home-care-assessment",
+              "display": "Home care assessment",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "medicine",
+          "target": [
+            {
+              "code": "medicine",
+              "display": "Medicine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nursing",
+          "target": [
+            {
+              "code": "nursing",
+              "display": "Nursing",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "outpatient",
+          "target": [
+            {
+              "code": "outpatient",
+              "display": "Outpatient",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "psychiatry-social-disability",
+          "target": [
+            {
+              "code": "psychiatry-social-disability",
+              "display": "Psychiatry, Social, Disability",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "regarding-referral",
+          "target": [
+            {
+              "code": "regarding-referral",
+              "display": "Regarding Referral",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "telemedicine",
+          "target": [
+            {
+              "code": "telemedicine",
+              "display": "Telemedicine",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "training",
+          "target": [
+            {
+              "code": "training",
+              "display": "Training",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "acute-ambulant",
+          "target": [
+            {
+              "code": "acute-ambulant",
+              "display": "Acute ambulant",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "extended-care-responsibility",
+          "target": [
+            {
+              "code": "extended-care-responsibility",
+              "display": "Extended care responsibility",
+              "relationship": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "other",
+              "display": "Other",
+              "relationship": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
