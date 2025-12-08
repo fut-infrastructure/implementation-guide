@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 ### Code systems
 - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
+
 ### ValueSets
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-system so coexistence tags can be used in UsageContext
 - Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-areas-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-areas-xb for grouping treatment areas for telemedicine solutions 
@@ -22,6 +23,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
+
 ### ConceptMaps
 ### Resource/profile changes
 - Added extention ehealth-reference-careplan to Task
