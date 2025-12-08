@@ -6,7 +6,7 @@
   "name": "PulmonaryDiseases",
   "title": "Pulmonary diseases (treatment area)",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2025-12-05T09:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
