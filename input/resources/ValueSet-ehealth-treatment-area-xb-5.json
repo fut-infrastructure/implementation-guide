@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xb-5",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5",
+  "version": "1.0.0",
+  "name": "SomaticMetabolicDiseases",
+  "title": "Somatic / metabolic diseases (treatment area)",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for somatic / metabolic diseases (xb).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DE10"
+          },
+          {
+            "code": "DE11"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "I3.4"
+          },
+          {
+            "code": "I9.3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xb-7",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7",
+  "version": "1.0.0",
+  "name": "Other",
+  "title": "Other (treatment area)",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for other (xb).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DZ76"
+          }
+        ]
+      }
+    ]
+  }
+}

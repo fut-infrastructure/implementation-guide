@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-system",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-system",
+  "version": "2025-12-05T09:00:00",
+  "name": "eHealthSystem",
+  "title": "eHealth System",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Coexistence tags for telemedicine solutions.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system"
+      }
+    ]
+  }
+}

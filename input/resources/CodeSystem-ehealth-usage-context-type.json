@@ -66,6 +66,17 @@
           "value": "Type af spørgeskemaelement med hvilken det er relevant at benytte kodede værdier/id register, der har nærværende brugskontekst (UsageContext)."
         }
       ]
+    },
+    {
+      "code": "system-treatment-area",
+      "display": "system treatment area",
+      "definition": "The coexistence tag for which the treatment areas ValueSet is relevant. For this context type, the value should be a code taken from the http://ehealth.sundhed.dk/vs/ehealth-system value set",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Markering af hvilken sameksistens tag den pågældende behandlingsområdesamling (ValueSet) er tilkynttet."
+        }
+      ]
     }
   ]
 }

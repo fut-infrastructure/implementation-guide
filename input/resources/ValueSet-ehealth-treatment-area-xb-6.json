@@ -1,0 +1,174 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xb-6",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6",
+  "version": "1.0.0",
+  "name": "FunctionalAbilityAndSocialCircumstances",
+  "title": "Functional ability & social circumstances (treatment area)",
+  "status": "active",
+  "experimental": true,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment are for functional ability & social circumstances (xb).",
+  "compose": {
+    "include": [
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "F"
+          },
+          {
+            "code": "F1"
+          },
+          {
+            "code": "F2"
+          },
+          {
+            "code": "F3"
+          },
+          {
+            "code": "F4"
+          },
+          {
+            "code": "F5"
+          },
+          {
+            "code": "F6"
+          },
+          {
+            "code": "F7"
+          },
+          {
+            "code": "F8"
+          },
+          {
+            "code": "F9"
+          },
+          {
+            "code": "F10"
+          },
+          {
+            "code": "F12"
+          },
+          {
+            "code": "J1"
+          },
+          {
+            "code": "J1.1"
+          },
+          {
+            "code": "J1.2"
+          },
+          {
+            "code": "J1.3"
+          },
+          {
+            "code": "J1.4"
+          },
+          {
+            "code": "J1.5"
+          },
+          {
+            "code": "J1.6"
+          },
+          {
+            "code": "J1.7"
+          },
+          {
+            "code": "J1.8"
+          },
+          {
+            "code": "J2"
+          },
+          {
+            "code": "J2.1"
+          },
+          {
+            "code": "J2.2"
+          },
+          {
+            "code": "J2.3"
+          },
+          {
+            "code": "J2.4"
+          },
+          {
+            "code": "J3"
+          },
+          {
+            "code": "J3.1"
+          },
+          {
+            "code": "J3.2"
+          },
+          {
+            "code": "J3.3"
+          },
+          {
+            "code": "J3.4"
+          },
+          {
+            "code": "J3.5"
+          },
+          {
+            "code": "J3.6"
+          },
+          {
+            "code": "J3.7"
+          },
+          {
+            "code": "J3.8"
+          },
+          {
+            "code": "J3.9"
+          },
+          {
+            "code": "J4"
+          },
+          {
+            "code": "J4.1"
+          },
+          {
+            "code": "J4.2"
+          },
+          {
+            "code": "J4.3"
+          },
+          {
+            "code": "J4.4"
+          },
+          {
+            "code": "J4.5"
+          },
+          {
+            "code": "J4.6"
+          },
+          {
+            "code": "J4.7"
+          },
+          {
+            "code": "J4.8"
+          },
+          {
+            "code": "J5"
+          },
+          {
+            "code": "J5.1"
+          }
+        ]
+      }
+    ]
+  }
+}
