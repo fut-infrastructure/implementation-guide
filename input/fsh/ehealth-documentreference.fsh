@@ -23,7 +23,7 @@ Parent: DocumentReference
 * extension contains ehealth-useContext named useContext 0..*
 * extension contains ehealth-modifier-role named modifierRole 0..*
 * extension contains ehealth-intendedOrganization named intendedOrganization 0..*
-* extension contains http://hl7.org/fhir/extensions/StructureDefinition-artifact-date named artifactDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-date named artifactDate 0..1
 * extension contains ehealth-participant named participant 0..*
 * extension[participant].extension[function].value[x] from http://ehealth.sundhed.dk/vs/material-registration-participant-function (required)
 * extension contains ehealth-usage named usage 0..1
