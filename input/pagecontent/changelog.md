@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Added extention ehealth-reference-careplan to Task
+- BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
 
 ### Search parameters
 - Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
