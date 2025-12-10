@@ -70,11 +70,11 @@
     {
       "code": "system-treatment-area",
       "display": "system treatment area",
-      "definition": "The coexistence tag for which the treatment areas ValueSet is relevant. For this context type, the value should be a code taken from the http://ehealth.sundhed.dk/vs/ehealth-system value set",
+      "definition": "The coexistence-tag for which the treatment area collection ValueSet is relevant. For this context type, the value should be a code taken from the http://ehealth.sundhed.dk/vs/ehealth-system value set",
       "designation": [
         {
           "language": "da",
-          "value": "Markering af hvilken sameksistens tag den pågældende behandlingsområdesamling (ValueSet) er tilkynttet."
+          "value": "Markering af hvilket sameksistens-tag den pågældende samling af behandlingsområder er tilknyttet."
         }
       ]
     }

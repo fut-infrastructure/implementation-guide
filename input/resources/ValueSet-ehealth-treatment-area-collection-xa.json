@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
   "id": "ehealth-treatment-areas-xa",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-areas-xa",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa",
   "version": "1.0.0",
-  "name": "TreatmentAreas_xa",
-  "title": "Treatment Areas xa",
+  "name": "TreatmentAreaCollection_xa",
+  "title": "Treatment Area Collection xa",
   "status": "active",
   "experimental": false,
   "date": "2025-12-05T09:00:00+00:00",

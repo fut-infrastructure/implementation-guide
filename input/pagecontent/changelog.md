@@ -10,7 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ### ValueSets
 - Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-system so coexistence tags can be used in UsageContext
-- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-areas-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-areas-xb for grouping treatment areas for telemedicine solutions 
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb for grouping treatment areas for telemedicine solutions 
 - Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1 (Pulmonary diseases)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-2 (Cardiac diseases)
