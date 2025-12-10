@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xa-3",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-3",
+  "version": "1.0.0",
+  "name": "Psychiatry",
+  "title": "Psychiatry (treatment area)",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for psychiatry (xa).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "ALAL03"
+          }
+        ]
+      }
+    ]
+  }
+}

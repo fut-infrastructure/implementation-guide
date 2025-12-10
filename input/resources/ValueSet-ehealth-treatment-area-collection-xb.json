@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-areas-xb",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb",
+  "version": "1.0.0",
+  "name": "TreatmentAreaCollection_xb",
+  "title": "Treatment Area Collection xb",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type",
+        "code": "system-treatment-area"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+            "code": "xa"
+          }
+        ]
+      }
+    }
+  ],
+  "description": "Combined treatment areas for coexistence tag xb.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6"
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
+      }
+    ]
+  }
+}
