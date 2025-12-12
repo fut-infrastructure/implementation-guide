@@ -16,7 +16,9 @@
 ## Authoring a change
 * Branch out from the current release branch, e.g. `release/2026.1`. If no release branch exists, create a new branch from `master` named e.g. `release/2026.1`, and then branch out from that one.
 * Make your changes to .fsh files
-* Update the `changelog.md`
+* Update the `changelog.md` with:
+    * If it does not exist, a new heading called `# Next Release`
+    * Notes about the changes you've made under the relevant subheading
 * Create a PR against the release branch, e.g. `release/2026.1`
 
 ## Releasing

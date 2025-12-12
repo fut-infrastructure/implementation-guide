@@ -6,9 +6,9 @@
 
 ## Releasing
 - A PR is created from the release branch (e.g. `release/2026.1.0` targeting `master`). 
-  - Based on the changelog, decide on the new `version`. If any breaking changes, make sure to do a major version bump (e.g. 3.5.0 -> 4.0.0).
-  - Update the changelog so its heading matches the `version`.
-  - Update the `version` in `sushi-config.yaml`.
+  - Based on the changelog, decide on a `new_version`. If any breaking changes, make sure to do a major version bump (e.g. 3.5.0 -> 4.0.0).
+  - Update the changelog so its heading matches the `new_version`.
+  - Update the `version` in `sushi-config.yaml` to the `new_version`.
   - Get 2 reviews, one from Systematic, one from TRIFORK. The scope of the review is:
     - Are the contents in the changelog correct
     - Is the SemVer correct
