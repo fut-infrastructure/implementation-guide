@@ -13,6 +13,15 @@
 | **Latest Published IG** | [eHealth IG Latest](https://ehealth.sundhed.dk/fhir) |
 | **Versioned releases** | `https://ehealth.sundhed.dk/fhir/x.y.z`, e.g. **3.2.0** at `https://ehealth.sundhed.dk/fhir/3.2.0` |
 
+## Authoring a change
+* Branch out from the current release branch, e.g. `release/2026.1`. If no release branch exists, create a new branch from `master` named e.g. `release/2026.1`, and then branch out from that one.
+* Make your changes to .fsh files
+* Update the `changelog.md`
+* Create a PR against the release branch, e.g. `release/2026.1`
+
+## Releasing
+See `RELEASE.md`.
+
 ### GOTCHA's
 Dont use `/`'s in the branch name as those branches will never be built by the HL7 CI pipeline.
 
