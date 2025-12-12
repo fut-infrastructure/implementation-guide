@@ -209,6 +209,17 @@
           "value": "Terminologiadministrator"
         }
       ]
+    },
+    {
+      "code": "dataScientist",
+      "display": "Data Scientist",
+      "definition": "Data Scientist",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Data Scientist"
+        }
+      ]
     }
   ]
 }

@@ -210,6 +210,17 @@
                 }
             ]
         },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:data_scientist",
+            "display": "Data Scientist",
+            "definition": "Kan analysere FUT data",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Data Scientist"
+                }
+            ]
+        },
 
         {
             "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
@@ -395,6 +406,17 @@
                 {
                     "language": "da",
                     "value": "Aftaleansvarlig"
+                }
+            ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/data_scientist/1",
+            "display": "Data Scientist",
+            "definition": "Kan analysere FUT data",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Data Scientist"
                 }
             ]
         }
