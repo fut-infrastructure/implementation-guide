@@ -11,3 +11,12 @@ Parent: Consent
 * organization only Reference(ehealth-organization)
 * organization ^type.aggregation = #referenced
 * sourceReference only Reference(ehealth-consent or ehealth-documentreference or Contract or ehealth-questionnaireresponse)
+* extension contains ehealth-consent-affiliation named affiliation 0..*
+
+Extension: ehealth-consent-affiliation
+Title:     "Affiliation to EpisodeOfCare and optionally CarePlan"
+Description: "Affiliation to EpisodeOfCare and optionally CarePlan"
+* . ^short = "Affiliation to EpisodeOfCare and optionally CarePlan"
+* value[x] only Reference(ehealth-episodeofcare or ehealth-careplan)
+* valueReference 1..1
+* value[x] ^type.aggregation = #referenced
