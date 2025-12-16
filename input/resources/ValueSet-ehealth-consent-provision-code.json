@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-ehealth-consent-scope",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-consent-scope",
+  "id": "vs-ehealth-consent-provision-code",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code",
   "version": "1.0.0",
-  "name": "ConsentScope",
-  "title": "Consent Scope",
+  "name": "ConsentProvisionCode",
+  "title": "Consent Provision Code",
   "status": "active",
   "experimental": false,
   "date": "2025-12-16T00:00:00+00:00",
@@ -20,14 +20,16 @@
       ]
     }
   ],
-  "description": "Value set of scope for consent.",
+  "description": "Value set of provision codes for consent.",
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/consent-scope"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/cs/ehealth-consent-scope"
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-codes",
+        "concept": [
+          {
+            "code" : "TriagingResult"
+          }
+        ]
       }
     ]
   }

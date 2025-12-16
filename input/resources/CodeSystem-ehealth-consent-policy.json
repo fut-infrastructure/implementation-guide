@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "ehealth-consent-policy",
   "url": "http://ehealth.sundhed.dk/cs/ehealth-consent-policy",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "name": "ConsentPolicy",
   "title": "Consent policy",
   "status": "active",

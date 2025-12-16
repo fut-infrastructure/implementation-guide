@@ -17,8 +17,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
 - BREAKING: Changed ehealth-consent profile to require consent.policy.uri to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - BREAKING: Changed ehealth-consent profile to require consent.scope to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-scope
-- BREAKING: Changed ehealth-consent profile to require consent.provision.code to be bound to http://ehealth.sundhed.dk/vs/clinicalimpression-codes
-- BREAKING: Changed ehealth-consent profile to require consent.provision.class to be bound to http://hl7.org/fhir/ValueSet/consent-content-class
+- BREAKING: Changed ehealth-consent profile to require consent.provision.code to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
+- BREAKING: Changed ehealth-consent profile to require consent.provision.class to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
 
 ### Search parameters
 - Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan

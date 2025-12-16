@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "cs-ehealth-consent-scope",
   "url": "http://ehealth.sundhed.dk/cs/ehealth-consent-scope",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "name": "ConsentScope",
   "title": "Consent Scope",
   "status": "active",
