@@ -11,6 +11,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
 ### ConceptMaps
 ### Resource/profile changes
 - Added extention ehealth-reference-careplan to Task
