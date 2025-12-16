@@ -18,7 +18,7 @@ Parent: Consent
 * sourceReference only Reference(ehealth-consent or ehealth-documentreference or Contract or ehealth-questionnaireresponse)
 
 Extension: ehealth-consent-affiliation
-Title:     "What te consent is related to"
+Title:     "What the consent is related to"
 Description: "Which resources the consent is affiliated with, e.g. EpisodeOfCare or CarePlan"
 * . ^short = "Affiliation to EpisodeOfCare and optionally CarePlan"
 * value[x] only Reference(ehealth-episodeofcare or ehealth-careplan)
