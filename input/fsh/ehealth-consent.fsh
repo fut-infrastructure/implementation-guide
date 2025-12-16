@@ -22,7 +22,7 @@ Parent: Consent
 
 Extension: ehealth-consent-affiliation
 Title:     "What the consent is related to"
-Description: "Which resources the consent is affiliated with, e.g. EpisodeOfCare or CarePlan"
+Description: "Which resources the consent is affiliated with, for instance EpisodeOfCare and CarePlan"
 * . ^short = "Affiliation to EpisodeOfCare and optionally CarePlan"
 * value[x] only Reference(ehealth-episodeofcare or ehealth-careplan)
 * valueReference 1..1
