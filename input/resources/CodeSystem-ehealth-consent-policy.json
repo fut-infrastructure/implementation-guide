@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-consent-policy",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-consent-policy",
+  "version": "0.6.0",
+  "name": "ConsentPolicy",
+  "title": "Consent policy",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-16T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Consent policy",
+  "caseSensitive": true,
+  "content": "complete",
+  "property": [
+    {
+      "code": "deprecated",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecated",
+      "description": "Indicates that the concept is deprecated and should not be used",
+      "type": "dateTime"
+    }
+  ],
+  "concept": [
+    {
+      "code": "http://ehealth.sundhed.dk/policy/ehealth/display-triage-result",
+      "display": "display triage result",
+      "definition": "Display triage result",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Vis triageringsresultat"
+        }
+      ]
+    }
+  ]
+}
