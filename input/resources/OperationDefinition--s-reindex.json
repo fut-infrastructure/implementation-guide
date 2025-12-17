@@ -1,0 +1,47 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-reindex",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-reindex",
+  "name": "reindex",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": true,
+  "code": "reindex",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "url",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Optionally provides one ore more relative search parameter URLs (e.g. \"Patient?active=true\" or \"Observation?\") that will be reindexed. Note that the URL applies to the resources as they are currently indexed, so you should not use a search parameter that needs reindexing in the URL or some resources may be missed. If no URLs are provided, all resources of all types will be reindexed.",
+      "type": "string"
+    },
+    {
+      "name": "reindexSearchParameters",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Should search parameters be reindexed (default: ALL)",
+      "type": "code"
+    },
+    {
+      "name": "optimizeStorage",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Should we attempt to optimize storage for resources (default: NONE)",
+      "type": "code"
+    },
+    {
+      "name": "optimisticLock",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Should we attempt to optimistically lock resources being reindexed in order to avoid concurrency issues (default: true)",
+      "type": "boolean"
+    }
+  ]
+}

@@ -4,12 +4,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes (Documentation)
 ### Custom operations
 #### System operations
+- Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology. 
 #### Instance operations
 ### Code systems
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
-- Added extention ehealth-reference-careplan to Task
+- Added extension ehealth-reference-careplan to Task
 - BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
 
 ### Search parameters
