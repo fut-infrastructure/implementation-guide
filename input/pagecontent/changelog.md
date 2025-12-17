@@ -2,6 +2,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## Release 2026.1. todo: change to semver format before release
 ### General changes (Documentation)
+- Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 ### Custom operations
 #### System operations
 #### Instance operations
@@ -17,6 +18,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Added extention ehealth-reference-careplan to Task
 - BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
+- Added extension ehealth-consent-affiliation to ehealth-consent profile
 - BREAKING: Changed ehealth-consent profile to require consent.policy.uri to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - BREAKING: Changed ehealth-consent profile to require consent.scope to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-scope
 - BREAKING: Changed ehealth-consent profile to require consent.provision.code to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
