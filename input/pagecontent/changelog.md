@@ -1,5 +1,14 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+# Next Release
+
+### Model 
+- Added http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication
+
+### Conceptmaps
+- Added http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-priority
+- Added http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-category
+
 ## 7.0.0
 ### CodeSystems
 - Added 'http://ehealth.sundhed.dk/policy/dk/aeldreloven' to http://ehealth.sundhed.dk/cs/ehealth-provenance-policies

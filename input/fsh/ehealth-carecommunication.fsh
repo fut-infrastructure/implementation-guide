@@ -11,14 +11,12 @@ Parent: Communication
     stopped-status-statusReason
     and only-asap-or-routine
     and topic-required-when-category-other
-    and practitionerrole-author-coding-xor-text
-    and practitioner-author-must-have-name
     and priority-category-invariant
     and uuidv4
     and atLeastOnePayloadString
     and payloadAttachment-contentType-required
     and no-standard-sender
-    and category-not-required-if-dest-TBD
+    and sender-required-based-on-messagetype
 
 * identifier 1..1 MS
 * identifier.use 0..1
@@ -28,38 +26,37 @@ Parent: Communication
 
 * status 1..1 MS
 
-* category 0..1 MS
+* category 1..1 MS
 * category from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category (required)
 * category.coding 1..1 MS
 * category.coding.system 1..1 MS
+* category.coding.system = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category"
 * category.coding.code 1..1 MS
 
 * subject 1..1 MS
 * subject only Reference(Patient)
 
 * encounter MS
+* encounter ^short = "Shall contain a reference to an Encounter resource with a episodeOfCare-identifier, if the identifier is included in a previous message."
 
 * topic 0..1 MS
+* topic ^short = "Must be added when category is "other". Topic must be added in the text-element."
 * topic.text 1..1 MS
 * topic.text ^short = "Plain text representation of the concept."
 * topic.text ^definition = "The topic must be present."
 
 * priority MS
-* priority ^short = "Shall be present if the message priority is known to be ASAP, but is only allowed when the category is 'regarding referral', see priority-category-invariant"
+* priority ^short = "Only used when the category is 'regarding referral', see priority-category-invariant."
 * priority only code
 * priority from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-priority (required)
 
-* extension contains ehealth-practitionerrole-extension named practitionerRole 0..1
+* extension contains ehealth-carecommunication-sender named sender 0..1 MS
 
-* extension contains ehealth-practitioner-extension named practitioner 0..1 MS
+* extension contains ehealth-carecommunication-destination named destination 1..1 MS
 
-* extension contains ehealth-destination-extension named destination 1..1 MS
+* extension contains ehealth-carecommunication-origin named origin 1..1 MS
 
-* extension contains ehealth-origin-organization-extension named origin 1..1 MS
-
-* extension contains ehealth-sending-actor-extension named sender 0..1 MS
-
-* extension contains ehealth-message-Type-extension named messageType 1..1 MS
+* extension contains ehealth-carecommunication-message-Type named messageType 1..1 MS
 
 * recipient 0..1
 * recipient only Reference(CareTeam or PractitionerRole)
@@ -76,7 +73,7 @@ Parent: Communication
 
 * extension contains ehealth-administrative-status named administrativeStatus 1..1
 
-* extension contains ehealth-Carecommunication-bundle-extension named medComCareCommunicationBundle 0..1 MS
+* extension contains ehealth-carecommunication-bundle named CorrespondingMedComCareCommunicationBundle 0..1 MS
 
 * payload 1..*
 * payload ^slicing.discriminator.type = #type
@@ -86,75 +83,82 @@ Parent: Communication
 
 * payload[string].contentString 1..1 MS
 * payload[string].extension contains
-    ehealth-datetime-extension named date 1..1 MS and
-    ehealth-contact-extension named authorContact 1..1 MS
+    ehealth-carecommunication-datetime named date 1..1 MS and
+    ehealth-carecommunication-contact-point named authorContact 1..1 MS and
+    ehealth-carecommunication-payload-identifier named identifier 0..1 MS
 
 * payload[attachment].contentAttachment 1..1 MS
 * payload[attachment].extension contains
-    ehealth-datetime-extension named date 1..1 MS and
-    ehealth-contact-extension named authorContact 0..1 MS
+    ehealth-carecommunication-datetime named date 1..1 MS and
+    ehealth-carecommunication-contact-point named authorContact 0..1 MS and
+    ehealth-carecommunication-payload-identifier named identifier 0..1 MS
 
-Extension: ehealth-practitionerrole-extension
-Title: "PractitionerRole Extension"
-Description: "Reference to the sending PractitionerRole for this communication."
-* . ^short = "sending practitioner role"
-* value[x] only Reference(PractitionerRole)
 
-Extension: ehealth-practitioner-extension
-Title: "Practitioner Extension"
-Description: "Reference to the sending Practitioner for this communication."
-* . ^short = "sending practitioner"
-* value[x] only Reference(Practitioner)
+// Extensions
 
-Extension: ehealth-destination-extension
+Extension: ehealth-carecommunication-sender
+Id: ehealth-carecommunication-sender
+Title: "Sender Extension, contains the sending PractitionerRole, Practitioner and CareTeam."
+Description: "References the sending PractitionerRole (Actor), the Practitioner, and optionally a CareTeam."
+* extension contains
+    actor 1..1 MS and
+    practitioner 1..1 MS and
+    careteam 0..1 MS
+* extension[actor] ^short = "Sending PractitionerRole"
+* extension[actor].value[x] only Reference(PractitionerRole)
+* extension[practitioner] ^short = "The underlying Practitioner for this sender"
+* extension[practitioner].value[x] only Reference(Practitioner)
+* extension[careteam] ^short = "Optionally, the involved CareTeam"
+* extension[careteam].value[x] only Reference(CareTeam)
+
+Extension: ehealth-carecommunication-destination
 Title: "Destination Extension"
 Description: "Reference to the destination Organization for this communication."
 * . ^short = "Organization receiving the message"
 * value[x] only Reference(Organization)
 
-Extension: ehealth-Carecommunication-bundle-extension
+Extension: ehealth-carecommunication-bundle
 Title: "Destination Extension"
 Description: "Reference to the careCommunication Bundle received."
 * . ^short = "carecommunication bundle"
 * value[x] only Reference(Bundle)
 
-Extension: ehealth-datetime-extension
+Extension: ehealth-carecommunication-datetime
 Title: "DateTime Extension"
 Description: "Date and time of the payload segment."
 * . ^short = "Payload dateTime"
 * value[x] only dateTime
 
-Extension: ehealth-contact-extension
+Extension: ehealth-carecommunication-contact-point
 Title: "Contact Extension"
 Description: "Contact point for the author of this payload segment."
 * . ^short = "Payload author contact"
 * value[x] only ContactPoint
 
-Extension: ehealth-origin-organization-extension
+Extension: ehealth-carecommunication-payload-identifier
+Title: "Identifier Extension"
+Description: "Extension to hold an Identifier for a payload. Value shall be a UUID identifier version 4."
+* value[x] only Identifier
+
+Extension: ehealth-carecommunication-origin
 Title: "sender organization"
 Description: "Reference to the sending organization for this payload segment."
 * . ^short = "Reference to the sending organization of the message"
 * value[x] only Reference(Organization)
 
-Extension: ehealth-message-Type-extension
+Extension: ehealth-carecommunication-message-Type
 Title: "Message type"
 Description: "The type of the message. If inResponseTo is present, the type can not be new-message."
-* value[x] only code
-* valueCode from MessageTypeVS (required)
+* value[x] only Coding
+* valueCoding from MessageType (required)
 * . ^short = "Message type"
-
-Extension: ehealth-sending-actor-extension
-Title: "Sending Actor Extension"
-Description: "Reference to the sending actor (e.g., CareTeam or PractitionerRole) for this communication."
-* . ^short = "Sending actor"
-* value[x] only Reference(CareTeam or PractitionerRole)
-
 
 // Valuesets
 
-ValueSet: MessageTypeVS
+ValueSet: MessageType
 Title: "Message Type ValueSet"
 Description: "Allowed message types: new, reply, forward."
+* ^url = "http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-category"
 * ^compose.include.system = "http://ehealth.sundhed.dk/cs/message-type"
 * ^compose.include.concept[+].code = #new
 * ^compose.include.concept[=].display = "New Message"
@@ -242,16 +246,6 @@ Description: "topic must be present when category is 'other'."
 Expression: "iif(category.coding.code != 'other', true, category.coding.code = 'other' and topic.exists())"
 Severity: #error
 
-Invariant: practitionerrole-author-coding-xor-text
-Description: "If a PractitionerRole is used as an author (via the Practitioner extension), then either code.coding.code or code.text must exist—but not both."
-Expression: "payload.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner').value.resolve().all(code.coding.code.exists() xor code.text.exists())"
-Severity: #error
-
-Invariant: practitioner-author-must-have-name
-Description: "If a Practitioner is used as author in a message segment, the referenced Practitioner must have a name."
-Expression: "payload.where(extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner').exists()).extension.value.reference.resolve().practitioner.resolve().name.exists()"
-Severity: #error
-
 Invariant: priority-category-invariant
 Description: "Priority must not be present when category is not 'regarding-referral'."
 Expression: "where(category.coding.code != 'regarding-referral').priority.empty()"
@@ -273,11 +267,14 @@ Expression: "payload.contentAttachment.data.exists() or payload.contentAttachmen
 Severity: #error
 
 Invariant: no-standard-sender
-Description: "The standard Communication.sender element SHALL NOT be used. Use the ehealth-sending-actor extension instead."
+Description: "The standard Communication.sender element SHALL NOT be used. Use the ehealth-carecommunication-sender extension instead."
 Expression: "sender.empty()"
 Severity: #error
 
-Invariant: category-not-required-if-dest-TBD
-Description: "category may be omitted if extension 'destination' is the reference FUTORGANIZATIONREFERENCETBD, otherwise category must be present"
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-destination-extension').value.as(Reference).reference = 'FUTORGANIZATIONREFERENCETBD' or category.exists()"
+Invariant: sender-required-based-on-messagetype
+Description: """
+If messagetype is 'new' or 'reply', the sender extension must be present.
+If 'forward', sender may be absent.
+"""
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'new' or code = 'reply').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
 Severity: #error
