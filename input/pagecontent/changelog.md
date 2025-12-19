@@ -9,6 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-scope
+- Added new code behavior-by-policy to http://ehealth.sundhed.dk/cs/consent-category
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
