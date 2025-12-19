@@ -24,7 +24,9 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.org/fhir/ValueSet/consent-scope"
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/consent-scope"
+        ]
       },
       {
         "system": "http://ehealth.sundhed.dk/cs/ehealth-consent-scope"
