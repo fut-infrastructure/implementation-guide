@@ -61,3 +61,11 @@ See [Consent/23](Consent-23.html) for an example of how to use the affiliation e
   - Search parameters most contain either `data` or `affiliation` that matches the episodeOfCare in the user context.
   - Parameter `affiliation`:
     - If searching by `affiliation` for multiple CarePlans the `affiliation` parameter must be specified two times `?affiliation=episodeOfCareRef&affiliation=careplanRef1,careplanRef2`. A single OR search contain both episodeOfCareRef and CarePlanRefs are not allowed as there is no guarantee the CarePlan is referencing the episodeOfCare specified.
+
+## Create
+- As patient user
+  - Not allowed to create Consent with policy http://ehealth.sundhed.dk/policy/ehealth/display-triage-result.
+
+## Update
+- As patient user
+  - Not allowed to update Consent with policy http://ehealth.sundhed.dk/policy/ehealth/display-triage-result.
