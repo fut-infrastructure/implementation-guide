@@ -40,25 +40,15 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6"
-      },
-      {
-        "system": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
+        ]
       }
     ]
   }
