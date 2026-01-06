@@ -1,0 +1,13 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-reindex-terminology",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-reindex-terminology",
+  "name": "reindex-terminology",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": true,
+  "code": "reindex-terminology",
+  "system": true,
+  "type": false,
+  "instance": false
+}

@@ -2,31 +2,44 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## Release 2026.1. todo: change to semver format before release
 ### General changes (Documentation)
+- Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 ### Custom operations
 #### System operations
+- Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology. 
 #### Instance operations
 ### Code systems
-- Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
-
+- Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
+- Added http://ehealth.sundhed.dk/cs/ehealth-consent-scope
+- Added new code behavior-by-policy to http://ehealth.sundhed.dk/cs/consent-category
+- - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
 ### ValueSets
-- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-system so coexistence tags can be used in UsageContext
-- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb for grouping treatment areas for telemedicine solutions 
-- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1 (Pulmonary diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-2 (Cardiac diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-3 (Psychiatry)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-4 (Neurology)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1 (Mental disorders and mental health problems)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2 (Neurological diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3 (Cardiovascular diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4 (Pulmonary diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
-  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
-
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
 ### ConceptMaps
 ### Resource/profile changes
-- Added extention ehealth-reference-careplan to Task
+- Added extension ehealth-reference-careplan to Task
+- BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
+- Added extension ehealth-consent-affiliation to ehealth-consent profile
+- BREAKING: Changed ehealth-consent profile to require consent.policy.uri to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-policy
+- BREAKING: Changed ehealth-consent profile to require consent.scope to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-scope
+- BREAKING: Changed ehealth-consent profile to require consent.provision.code to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
+- BREAKING: Changed ehealth-consent profile to require consent.provision.class to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-system so coexistence tags can be used in UsageContext
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb for grouping treatment areas for telemedicine solutions
+- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1 (Pulmonary diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-2 (Cardiac diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-3 (Psychiatry)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-4 (Neurology)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1 (Mental disorders and mental health problems)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2 (Neurological diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3 (Cardiovascular diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4 (Pulmonary diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
 
 ### Search parameters
 - Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
