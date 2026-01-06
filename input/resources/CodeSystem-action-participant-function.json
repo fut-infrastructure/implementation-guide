@@ -66,8 +66,8 @@
     }
   ],
   "caseSensitive": true,
-  "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-function",
-  "content": "complete",
+  "supplements": "http://hl7.org/fhir/ValueSet/action-participant-function",
+  "content": "supplement",
   "concept": [
     {
       "code": "performer",
