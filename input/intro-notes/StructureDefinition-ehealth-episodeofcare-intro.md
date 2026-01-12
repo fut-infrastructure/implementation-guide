@@ -38,7 +38,7 @@ The treatment area ValueSets are characterized by having a useContext with 'syst
 
 When performing a cross-team search, the following rules apply:
 - The search must be performed by a Practitioner with the permission `EpisodeOfCare$cross-team-search`
-- The search must not include a CareTeam in the search parameters
+- The search must not include a `team` in the search parameters
 - The search must include the chained parameter `condition.code`, can be multiple codes
 - The condition codes provided as search parameters must be within the treatment areas of the telemedicine solution in which the Practitioner is operating
-- The search filters out any included or reverse-included resources (CarePlan and Condition) that are not allowed per. the treatment areas of the telemedicine solution in which the Practitioner is operating
+- The search operation filters out any included or reverse-included resources (CarePlan and Condition) that are not allowed by the treatment areas of the telemedicine solution in which the Practitioner is operating

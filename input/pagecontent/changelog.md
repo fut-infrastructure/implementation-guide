@@ -7,13 +7,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
 #### System operations
 - Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology.
-- Updated EpisodeOfCare search operation to support searching across multiple CareTeams by excluding `CareTeam` search parameter. Requires chained search parameter on `Condition.code`.
+- Updated EpisodeOfCare search operation to support searching across multiple CareTeams by excluding `team` search parameter. Requires chained search parameter on `condition.code`.
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-scope
 - Added new code behavior-by-policy to http://ehealth.sundhed.dk/cs/consent-category
-- - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
+- Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
