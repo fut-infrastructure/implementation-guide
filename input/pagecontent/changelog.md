@@ -4,8 +4,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 ### Custom operations
+- BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
 #### System operations
-- Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology. 
+- Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology.
+- Updated EpisodeOfCare search operation to support searching across multiple CareTeams by excluding `CareTeam` search parameter. Requires chained search parameter on `Condition.code`.
 #### Instance operations
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
@@ -33,6 +35,7 @@ This is the log of changes made to the eHealth Implementation Guide.
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-2 (Cardiac diseases)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-3 (Psychiatry)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-4 (Neurology)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-5 (All conditions)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1 (Mental disorders and mental health problems)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2 (Neurological diseases)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3 (Cardiovascular diseases)
