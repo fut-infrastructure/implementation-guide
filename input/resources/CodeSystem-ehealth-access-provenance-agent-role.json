@@ -27,6 +27,11 @@
       "code": "assisted-login",
       "display": "Assisted login",
       "definition": "Assisted login"
+    },
+    {
+      "code": "mitid-login",
+      "display": "MitID login",
+      "definition": "MitID login"
     }
   ]
 }
