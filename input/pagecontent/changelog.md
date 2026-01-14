@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Release 2026.1. todo: change to semver format before release
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
+- Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.
 ### Custom operations
 - BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
 #### System operations
@@ -13,12 +14,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/cs/ehealth-consent-scope
 - Added new code behavior-by-policy to http://ehealth.sundhed.dk/cs/consent-category
+- Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-activity
+- Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-agent-role
 - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
+- Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-activity
+- Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-agent-role
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-reference-careplan to Task
