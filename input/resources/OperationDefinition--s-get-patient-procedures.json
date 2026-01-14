@@ -18,6 +18,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "Mandatory reference for the Patient which the procedure overview is computed for.",
       "type": "Reference"
     },
     {
@@ -25,6 +26,7 @@
       "use": "in",
       "min": 0,
       "max": "*",
+      "documentation": "The list of EpisodeOfCare references is optional. If EpisodeOfCare are provided, these will be used to further filter which active EpisodeOfCare, CarePlan and ServiceRequest are considered for the patient procedure overview.",
       "type": "Reference"
     },
     {
@@ -32,6 +34,7 @@
       "use": "in",
       "min": 0,
       "max": "*",
+      "documentation": "The list of Coding for Condition is optional. If Condition Coding are provided, the EpisodeOfCare considered are those referring to a Condition matching at least one of the codes in the list.",
       "type": "Coding"
     },
     {
@@ -39,6 +42,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "Start datetime is mandatory, and together with end datetime specify the period of interest in the patient procedure overview.",
       "type": "dateTime"
     },
     {
@@ -46,6 +50,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "End datetime is mandatory, and together with start datetime specify the period of interest in the patient procedure overview.",
       "type": "dateTime"
     },
     {
@@ -53,6 +58,7 @@
       "use": "in",
       "min": 0,
       "max": "*",
+      "documentation": "The list of Coding for tags is optional. If tag Coding are provided, the EpisodeOfCare considered are those including a tag matching at least one of the codes in the list.",
       "type": "Coding"
     },
     {
@@ -60,6 +66,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "This is an optional parameter that can be set to true if activities allowing 'Extra' submissions should be included in the response. Whether the ServiceRequest is included when Extra paremeter is set to true, is based on the ServiceRequest.includeAsExtra field.",
       "type": "boolean"
     },
     {

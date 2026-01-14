@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The input FHIR Bundle that contains the FHIR Composition referencing FHIR Observation (ehealth-observation profile) resources to be transformed to PHMR XML.",
       "type": "Bundle"
     },
     {

@@ -21,6 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Region code for the care teams' managing organization",
       "type": "string"
     },
     {
@@ -28,6 +29,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Municipality code for the care teams' managing organization",
       "type": "string"
     }
   ]

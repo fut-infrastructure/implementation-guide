@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Release 2026.1. todo: change to semver format before release
+## 8.0.0
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 - Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.

@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Bundle of 0..* Observation, 0..* QuestionnaireResponse, 0..* Media and 0..* Provenance.",
       "type": "Bundle"
     },
     {
