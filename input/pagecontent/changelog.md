@@ -1,11 +1,4 @@
 This is the log of changes made to the eHealth Implementation Guide.
-## NEXT VERSION
-### CodeSystems
-- Added new careteam participant role `data_scientist` to http://ehealth.sundhed.dk/cs/careteam-participant-role 
-- Added new oio bpp role `data_scientist` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
-
-### ConceptMaps
-- Added mapping between new `data_scientist` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
 
 ## 8.0.0
 ### General changes (Documentation)
@@ -24,6 +17,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-activity
 - Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-agent-role
 - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
+- Added new careteam participant role `data_scientist` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `data_scientist` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
@@ -32,6 +28,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-activity
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-agent-role
 ### ConceptMaps
+- Added mapping between new `data_scientist` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+
 ### Resource/profile changes
 - Added extension ehealth-reference-careplan to Task
 - BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
