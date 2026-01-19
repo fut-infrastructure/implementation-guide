@@ -220,6 +220,17 @@
           "value": "Data Scientist"
         }
       ]
+    },
+    {
+      "code": "loginAssistor",
+      "display": "Login Assistor",
+      "definition": "Login Assistor",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Login Assistor"
+        }
+      ]
     }
   ]
 }
