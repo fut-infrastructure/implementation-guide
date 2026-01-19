@@ -224,11 +224,11 @@
         {
           "code": "urn:dk:sundhed:ehealth:role:login_assistor",
           "display": "Login Assistor",
-          "definition": "Kan logge patienter ind med assisteret login",
+          "definition": "Kan logge borger ind med assisteret login",
           "designation": [
             {
               "language": "da",
-              "value": "Login Assistor"
+              "value": "Loginmedhjælper"
             }
           ]
         },
@@ -434,11 +434,11 @@
         {
           "code": "http://ehealth.seb.dk/roles/usersystemrole/login_assistor/1",
           "display": "Login Assistor",
-          "definition": "Kan logge patienter ind med assisteret login",
+          "definition": "Kan logge borger ind med assisteret login",
           "designation": [
             {
               "language": "da",
-              "value": "Login Assistor"
+              "value": "Loginmedhjælper"
             }
           ]
         }
