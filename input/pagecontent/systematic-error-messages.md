@@ -176,7 +176,7 @@
 
 - `DOCUMENTREFERENCE_SUBJECT_REFER_TO_PATIENT`: It is not possible to set a patient as a subject for a Document reference
 
-- `DOCUMENTREFERENCE_EPISODEOFCARE_CONTEXT_ENCOUNTER`: DocumentReference for generic material must not contain references to EpisodeOfCare in context.encounter
+- `DOCUMENTREFERENCE_EPISODEOFCARE_CONTEXT_ENCOUNTER`: DocumentReference for general material must not contain references to EpisodeOfCare in context.encounter
 
 - `DOCUMENTREFERENCE_STORAGE_SERVICE_UPLOAD_ERROR`: Failed to upload material: Invalid response from storage service
 
