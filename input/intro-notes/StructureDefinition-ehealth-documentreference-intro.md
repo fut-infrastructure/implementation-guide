@@ -35,9 +35,9 @@ in the ValueSet described for useContext.code.
 ## Material for Citizens
 _Material for Citizens_, is used in relation to [Patient](StructureDefinition-ehealth-patient.html) and [EpisodeOfCare](StructureDefinition-ehealth-episodeofcare.html). This material will always be referenced through a URL as it is either stored externally or internally in the infrastructure. Depending on the nature of the material it will fall into two distinct sub-categories.
 - **_Patient-Specific Material_**, is material that contains sensitive information about a specific patient.
-- **_Generic Material_**, is material that has no sensitive information about a specific patient and is broadly relevant and/or applicable to multiple patients.
+- **_General Material_**, is material that has no sensitive information about a specific patient and is broadly relevant and/or applicable to multiple patients.
 
-_Material for Citizens_ is stored in the CarePlan and Plan services. _Patient-Specific Material_ is stored in the CarePlan service while _Generic Material_ is stored in the Plan service.
+_Material for Citizens_ is stored in the CarePlan and Plan services. _Patient-Specific Material_ is stored in the CarePlan service while _General Material_ is stored in the Plan service.
 
 The eHealth DocumentReference profile, when used for _Material for Citizens_, makes use of the following extensions:
 - ehealth-useContext, which defines the context that the content is intended to support.
@@ -49,29 +49,29 @@ The eHealth DocumentReference profile, when used for _Material for Citizens_, ma
 - ehealth-version, version of the content.
 
 ### Category
-For storage of _Generic Material_ in the Plan service the `DocumentReference.category` must be populated with `generic-material`. Otherwise, it will be interpreted as _Instructional Material_.  
+For storage of _General Material_ in the Plan service the `DocumentReference.category` must be populated with `general-material`. Otherwise, it will be interpreted as _Instructional Material_.  
 For storage of _Patient-Specific Material_ in the CarePlan service the `DocumentReference.category` must be populated with the code `patient-specific-material`.  
-If the code indicates a different material category than what the service stores (e.g. using `patient-specific-material` when registering _Generic Material_ on the Plan service), it will be rejected.  
+If the code indicates a different material category than what the service stores (e.g. using `patient-specific-material` when registering _General Material_ on the Plan service), it will be rejected.  
 The category code is immutable after creation.
 
 ### Subject
-For _Patient-Specific Material_ the `DocumentReference.subject` must be populated with a reference to the Patient the material is relevant for. Conversely, for _Generic Material_ `DocumentReference.subject` must be unpopulated.
+For _Patient-Specific Material_ the `DocumentReference.subject` must be populated with a reference to the Patient the material is relevant for. Conversely, for _General Material_ `DocumentReference.subject` must be unpopulated.
 
 ### EpisodeOfCare
 The related EpisodeOfCare is referenced through the `DocumentReference.context.encounter` element. Which is allowed to have at most one entry.  
-For _Patient-Specific Material_ the `DocumentReference.context.encounter` must be populated with a reference to the EpisodeOfCare the material is relevant for. Conversely, for _Generic Material_ `DocumentReference.context.encounter` must be unpopulated.
+For _Patient-Specific Material_ the `DocumentReference.context.encounter` must be populated with a reference to the EpisodeOfCare the material is relevant for. Conversely, for _General Material_ `DocumentReference.context.encounter` must be unpopulated.
 
 ### Content
 `DocumentReference.content` must have exactly one entry.  
 When creating the DocumentReference in the infrastructure either `DocumentReference.content.attachment.data` or `DocumentReference.content.attachment.url` element must be populated. If both are populated it will be rejected:
 - If providing `DocumentReference.content.attachment.data`, it will be decoded and uploaded to the infrastructure's [Storage-Service](https://storage-service.devtest.systematic-ehealth.com/swagger-ui/index.html), after which the `.size` is set to the byte size of the uploaded data, the `.data` field is cleared, and the `.url` set to download location of the uploaded content. 
-- If providing `DocumentReference.content.attachment.url`, then `.attachment.size` is mandatory. It is possible to manually perform the upload to the Storage-Service beforehand and set the `.url` and `.size` of the uploaded content. For _Generic Material_ in the Plan service, the `.url` can be to an external resource/file outside the eHealth infrastructure.
+- If providing `DocumentReference.content.attachment.url`, then `.attachment.size` is mandatory. It is possible to manually perform the upload to the Storage-Service beforehand and set the `.url` and `.size` of the uploaded content. For _General Material_ in the Plan service, the `.url` can be to an external resource/file outside the eHealth infrastructure.
 
 `DocumentReference.content.attachment.contentType` must be populated with the mime-type of the content as the value is passed on to the Storage-Service. The Storage-Service uses it for validation on download requests to ensure that user's accept-header matches the contentType they are downloading. This is also the case if the upload is performed manually beforehand. Then the used contentType from the manual upload should be the same as the one provided in `DocumentReference.content.attachment.contentType`.
 
-If uploading directly to the Storage-Service instead of going through either the Plan or CarePlan service, it is important to note the difference between uploading _Patient-Specific Material_ and _Generic Material_:
+If uploading directly to the Storage-Service instead of going through either the Plan or CarePlan service, it is important to note the difference between uploading _Patient-Specific Material_ and _General Material_:
 - For _Patient-Specific Material_ one must supply the `episodeOfCareReference` and `patientReference` parameters as this indicates to the service that the content is sensitive and must be encrypted. Additionally, not supplying them will cause a validation mismatch in the CarePlan service when creating the DocumentReference as they are validated against the Patient and EpisodeOfCare references in the DocumentReference.
-- For _Generic Material_ the `episodeOfCareReference` and `patientReference` parameters must not be supplied as the content is not sensitive and therefore does not require encryption. Additionally, supplying them will cause a validation mismatch in the Plan service when creating the DocumentReference as they are validated to be empty.
+- For _General Material_ the `episodeOfCareReference` and `patientReference` parameters must not be supplied as the content is not sensitive and therefore does not require encryption. Additionally, supplying them will cause a validation mismatch in the Plan service when creating the DocumentReference as they are validated to be empty.
 
 After creation of a DocumentReference, when trying to update it:
 - If the `DocumentReference.content.attachment.url` is a URL in the Storage-Service, it is not possible to update the `DocumentReference.content.attachment.url` field after creation. However, it is possible to update the uploaded content through the `DocumentReference.content.attachment.data` field. There are two ways to do so:
@@ -79,10 +79,10 @@ After creation of a DocumentReference, when trying to update it:
   2. By providing the `DocumentReference.content.attachment.url`, `DocumentReference.content.attachment.size` and `DocumentReference.content.attachment.data` fields in the update. However, this requires that the `.size` correctly reflects the byte size (before base64 encoding) of the new data and that the `.url` is not changed. This will decode and upload the content to the Storage-Service URL in `.url`, overwriting the content that was there before. The `.data` field is cleared after upload and only the `.url` and `.size` remains in the DocumentReference.
 - If the `DocumentReference.content.attachment.url` is set to an external URL, it is allowed to update the `DocumentReference.content.attachment.url` field after creation. However, it is not allowed to change it to a Storage-Service URL or add data to the `DocumentReference.content.attachment.data` field.
 
-It is also possible to update the uploaded content directly at the Storage-Service without going through the Plan or CarePlan service. The url of the content will not change, and therefore there is no need to update the Storage-Service URL stored in the DocumentReference. One should note that the `episodeOfCareReference` and `patientReference` parameters are required to match the existing content, it is not possible to change from _Patient-Specific Material_ to _Generic Material_ or vice versa.
+It is also possible to update the uploaded content directly at the Storage-Service without going through the Plan or CarePlan service. The url of the content will not change, and therefore there is no need to update the Storage-Service URL stored in the DocumentReference. One should note that the `episodeOfCareReference` and `patientReference` parameters are required to match the existing content, it is not possible to change from _Patient-Specific Material_ to _General Material_ or vice versa.
 
 ### ModifierRole
-This extension is mandatory for _Material for Citizens_. However, for _Instructional Material_ this extension is optional and not used for any validation. Specifically for _Generic Material_ it is the basis for validation of the user's organizational context.
+This extension is mandatory for _Material for Citizens_. However, for _Instructional Material_ this extension is optional and not used for any validation. Specifically for _General Material_ it is the basis for validation of the user's organizational context.
 
 ### IntendedOrganization
 Used to indicate the organizations that might have an interest in accessing the material. However, not the basis of any validation.
