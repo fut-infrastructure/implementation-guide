@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 8.0.0
+## 8.0.0 (2026-02-04)
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 - Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.
