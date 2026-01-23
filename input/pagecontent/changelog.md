@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
 - Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.
 - Align naming of general material (previously references as "generic material").
+- Added ehealth-endpoint profile, to contain EAN identifiers for Organizations.
 ### Custom operations
 - BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
 #### System operations
@@ -30,6 +31,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-activity
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-agent-role
+- Added http://ehealth.sundhed.dk/vs/endpoint-connection-type-code
+- Added http://ehealth.sundhed.dk/vs/endpoint-payload-type-code
 ### ConceptMaps
 - Added mapping between new `data_scientist` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
 - Added mapping between new `login_assistor` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
@@ -53,6 +56,8 @@ This is the log of changes made to the eHealth Implementation Guide.
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
+- Added new ehealth-endpoint profile, based on FHIR R4 Endpoint resource. 
+- Added reference of ehealth-endpoint to ehealth-organization profile.
 
 ### Search parameters
 - Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
