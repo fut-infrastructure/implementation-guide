@@ -39,7 +39,8 @@ Parent: DkCorePatient
 
 * communication.language.coding.system = "urn:ietf:bcp:47" (exactly)
 * generalPractitioner 0..1
-* generalPractitioner only Reference(Organization)
+* generalPractitioner only Reference(DkCoreOrganization)
+//JHN: This is replaced by the above: * generalPractitioner only Reference(Organization)
 * generalPractitioner ^type.aggregation = #referenced
 * generalPractitioner contains YderNummer 0..1
 * generalPractitioner[YderNummer].identifier 1..1
