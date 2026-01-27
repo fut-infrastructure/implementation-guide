@@ -1,5 +1,17 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.3.
+### General changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+
 ## Release 2026.2. todo: change to semver format before release
 ### General changes
 ### Custom operations
