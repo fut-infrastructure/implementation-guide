@@ -21,6 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "*",
+      "documentation": "References to ActivityDefinitions or PlanDefinitions to exclude from the export.",
       "type": "string"
     }
   ]
