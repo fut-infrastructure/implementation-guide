@@ -209,6 +209,28 @@
           "value": "Terminologiadministrator"
         }
       ]
+    },
+    {
+      "code": "dataScientist",
+      "display": "Data Scientist",
+      "definition": "Data Scientist",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Data Scientist"
+        }
+      ]
+    },
+    {
+      "code": "loginAssistor",
+      "display": "Login Assistor",
+      "definition": "Login Assistor",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Loginmedhjælper"
+        }
+      ]
     }
   ]
 }

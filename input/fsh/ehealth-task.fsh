@@ -5,6 +5,7 @@ Parent: Task
 * extension contains ehealth-task-category named taskCategory 1..1
 * extension contains ehealth-task-responsible named taskResponsible 1..*
 * extension contains ehealth-restriction-category named restrictionCategory 1..*
+* extension contains ehealth-reference-careplan named carePlan 0..1
 
 // not in R4: * definition[x].definitionReference only Reference(ehealth-activitydefinition)
 * groupIdentifier.assigner only Reference(ehealth-organization)

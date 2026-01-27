@@ -1,5 +1,78 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.2. todo: change to semver format before release
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
+## 8.0.0 (2026-02-04)
+### General changes (Documentation)
+- Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
+- Updated ehealth-communication introduction. The intro described that Communication.topic is the reference to the measurement. This was true in FHIR STU3, but in FHIR R4, the proper element is Communication.about.
+- Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.
+- Align naming of general material (previously references as "generic material").
+- Added ehealth-endpoint profile, to contain EAN identifiers for Organizations.
+### Custom operations
+- BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
+#### System operations
+- Added operations for bulk export - \$export, \$export-poll-status and retrieving exported files (Binary) - on services careplan, device, document-transformation, library, measurement, organization, plan, questionnaire, task, and terminology.
+- Updated EpisodeOfCare search operation to support searching across multiple CareTeams by excluding `team` search parameter. Requires chained search parameter on `condition.code`.
+#### Instance operations
+### Code systems
+- Added http://ehealth.sundhed.dk/cs/ehealth-consent-policy
+- Added http://ehealth.sundhed.dk/cs/ehealth-consent-scope
+- Added new code behavior-by-policy to http://ehealth.sundhed.dk/cs/consent-category
+- Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-activity
+- Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-agent-role
+- Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
+- Added new careteam participant role `data_scientist` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new careteam participant role `login_assistor` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `data_scientist` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+- Added new oio bpp role `login_assistor` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-scope
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
+- Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
+- Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-activity
+- Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-agent-role
+- Added http://ehealth.sundhed.dk/vs/endpoint-connection-type-code
+- Added http://ehealth.sundhed.dk/vs/endpoint-payload-type-code
+### ConceptMaps
+- Added mapping between new `data_scientist` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+- Added mapping between new `login_assistor` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+
+### Resource/profile changes
+- Added extension ehealth-reference-careplan to Task
+- BREAKING: Limited MaterialCommunication.payload cardinality to 1..1
+- Added extension ehealth-consent-affiliation to ehealth-consent profile
+- BREAKING: Changed ehealth-consent profile to require consent.policy.uri to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-policy
+- BREAKING: Changed ehealth-consent profile to require consent.scope to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-scope
+- BREAKING: Changed ehealth-consent profile to require consent.provision.code to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
+- BREAKING: Changed ehealth-consent profile to require consent.provision.class to be bound to http://ehealth.sundhed.dk/vs/ehealth-consent-provision-class
+- Added new ValueSet http://ehealth.sundhed.dk/vs/ehealth-system so coexistence tags can be used in UsageContext
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa and http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb for grouping treatment areas for telemedicine solutions
+- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1 (All conditions)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1 (Mental disorders and mental health problems)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2 (Neurological diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3 (Cardiovascular diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4 (Pulmonary diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
+    - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
+- Added new ehealth-endpoint profile, based on FHIR R4 Endpoint resource. 
+- Added reference of ehealth-endpoint to ehealth-organization profile.
+
+### Search parameters
+- Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
+
 ## 7.0.0
 ### CodeSystems
 - Added 'http://ehealth.sundhed.dk/policy/dk/aeldreloven' to http://ehealth.sundhed.dk/cs/ehealth-provenance-policies

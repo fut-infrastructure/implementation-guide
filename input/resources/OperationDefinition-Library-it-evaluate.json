@@ -21,6 +21,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "HL7 FHIR Parameters resource containing input parameters for the clinical decision support computation. This should either be a QuestionnaireResponse or an Observation for evaluation.",
       "type": "Parameters"
     },
     {

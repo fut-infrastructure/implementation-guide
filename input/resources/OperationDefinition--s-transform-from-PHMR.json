@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The input FHIR DocumentReference that contains the PHMR XML document.",
       "type": "DocumentReference"
     },
     {
