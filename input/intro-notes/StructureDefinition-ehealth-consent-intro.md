@@ -46,8 +46,8 @@ In addition to the `Consent.category` element, the following elements must be se
 For more information see the element descriptions in the [snapshot table](#tabs) on this page and also see the example Consent resources on the [Examples tab](StructureDefinition-ehealth-consent-examples.html).
 
 ## Affiliation
-Specifies the care context level to which the consent applies—either `EpisodeOfCare` level (mandatory reference) or `CarePlan` level (optional reference). This enables precise scoping of consent in telemedicine solution, such as controlling patient access to triage results for specific `CarePlan` or broader `EpisodeOfCare`.
-Where provision.data is for data controlled by the consent, ehealth-consent-affiliation indicates the care level to which the consent applies.
+Specifies the care context level to which the consent applies—either `EpisodeOfCare` level (mandatory reference) or `CarePlan` level (optional reference). This enables precise scoping of consent in telemedicine solutions, such as controlling patient access to triage results for specific `CarePlan` or broader `EpisodeOfCare`.
+The `Consent.provision.data` element is for data controlled by the consent, while ehealth-consent-affiliation indicates the care level to which the consent applies.
 See [Consent/23](Consent-23.html) for an example of how to use the affiliation extension.
 
 
@@ -60,7 +60,7 @@ See [Consent/23](Consent-23.html) for an example of how to use the affiliation e
 - As practitioner user
   - Search parameters most contain either `data` or `affiliation` that matches the episodeOfCare in the user context.
   - Parameter `affiliation`:
-    - If searching by `affiliation` for multiple CarePlans the `affiliation` parameter must be specified two times `?affiliation=episodeOfCareRef&affiliation=careplanRef1,careplanRef2`. A single OR search contain both episodeOfCareRef and CarePlanRefs are not allowed as there is no guarantee the CarePlan is referencing the episodeOfCare specified.
+    - If searching by `affiliation` for multiple CarePlans, the `affiliation` parameter must be specified two times `?affiliation=episodeOfCareRef&affiliation=careplanRef1,careplanRef2`. A single OR search containing both episodeOfCareRef and CarePlanRefs is not allowed, as there is no guarantee the CarePlan is referencing the specified episodeOfCare.
 
 ## Create
 - As patient user
