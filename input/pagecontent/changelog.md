@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## NEXT
+### Search parameters
+- Added search parameter `topic` on `ehealth-communication` to be able to query by topic
+
 ## 8.0.0 (2026-02-04)
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.

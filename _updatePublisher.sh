@@ -1,5 +1,5 @@
 #!/bin/bash
-pubsource=https://github.com/HL7/fhir-ig-publisher/releases/2.0.15/download/
+pubsource=https://github.com/HL7/fhir-ig-publisher/releases/latest/download/
 publisher_jar=publisher.jar
 dlurl=$pubsource$publisher_jar
 
@@ -12,6 +12,8 @@ gencont_bat_url=$scriptdlroot/_gencontinuous.bat
 gencont_sh_url=$scriptdlroot/_gencontinuous.sh
 gen_sh_url=$scriptdlroot/_genonce.sh
 update_sh_url=$scriptdlroot/_updatePublisher.sh
+build_sh_url=$scriptdlroot/_build.sh
+build_bat_url=$scriptdlroot/_build.bat
 
 skipPrompts=false
 FORCE=false
@@ -102,6 +104,16 @@ if [[ $skipPrompts != true ]]; then
 
 if [[ $skipPrompts == true ]] || [[ $response =~ ^[yY].*$ ]]; then
   echo "Downloading most recent scripts "
+
+  curl -L $build_bat_url -o /tmp/_build.new
+  cp /tmp/_build.new _build.bat
+  rm /tmp/_build.new
+
+
+  curl -L $build_sh_url -o /tmp/_build.new
+  cp /tmp/_build.new _build.sh
+  chmod +x _build.sh
+  rm /tmp/_build.new
 
   curl -L $update_bat_url -o /tmp/_updatePublisher.new
   cp /tmp/_updatePublisher.new _updatePublisher.bat
