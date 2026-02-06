@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 ### ValueSets
 ### ConceptMaps
+- Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
 
 ## 8.0.0 (2026-02-04)
