@@ -103,9 +103,107 @@
       ]
     },
     {
+      "code": "B",
+      "display": "Behandlings- og plejeklassifikation",
+      "concept": [
+        {
+          "code": "BN",
+          "display": "Hud og underhud",
+          "concept": [
+            {
+              "code": "BNP",
+              "display": "Forbinding og anden behandling af hudlidelser",
+              "concept": [
+                {
+                  "code": "BNPF",
+                  "display": "Interventioner ved hudtransplantation",
+                  "concept": [
+                    {
+                      "code": "BNPF2",
+                      "display": "Pleje af huddonorsted"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "code": "D",
       "display": "Klassifikation af sygdomme og helbredsrelaterede tilstande",
       "concept": [
+        {
+          "code": "DA46",
+          "display": "Rosen",
+          "concept": [
+            {
+              "code": "DA469",
+              "display": "Rosen uden specifikation"
+            }
+          ]
+        },
+        {
+          "code": "DB02",
+          "display": "Zoster",
+          "concept": [
+            {
+              "code": "DB028",
+              "display": "Herpes zoster-infektion med anden komplikation"
+            }
+          ]
+        },
+        {
+          "code": "DC43",
+          "display": "Modermærkekræft i huden",
+          "concept": [
+            {
+              "code": "DC434",
+              "display": "Malignt melanom i hud på skalpen eller halsen"
+            },
+            {
+              "code": "DC437",
+              "display": "Malignt melanom i hud på underekstremitet",
+              "concept": [
+                {
+                  "code": "DC437A",
+                  "display": "Malignt melanom i hud på ben"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DC44",
+          "display": "Anden hudkræft",
+          "concept": [
+            {
+              "code": "DC449",
+              "display": "Anden hudkræft uden specifikation"
+            }
+          ]
+        },
+        {
+          "code": "DC50",
+          "display": "Brystkræft",
+          "concept": [
+            {
+              "code": "DC509",
+              "display": "Brystkræft uden specifikation"
+            }
+          ]
+        },
+        {
+          "code": "DD86",
+          "display": "Sarkoidose",
+          "concept": [
+            {
+              "code": "DD863",
+              "display": "Sarkoidose i hud"
+            }
+          ]
+        },
         {
           "code": "DE10",
           "display": "Type 1-diabetes",
@@ -247,6 +345,34 @@
           ]
         },
         {
+          "code": "DE14",
+          "display": "Ikke specificeret diabetes",
+          "concept": [
+            {
+              "code": "DE144",
+              "display": "Diabetes UNS med neurologisk komplikation"
+            },
+            {
+              "code": "DE145",
+              "display": "Diabetes UNS med komplikationer i perifere karsystem",
+              "concept": [
+                {
+                  "code": "DE145B",
+                  "display": "Diabetes UNS med fodsår"
+                },
+                {
+                  "code": "DE145C",
+                  "display": "Diabetes UNS med gangræn"
+                }
+              ]
+            },
+            {
+              "code": "DE147",
+              "display": "Diabetes UNS med multiple komplikationer"
+            }
+          ]
+        },
+        {
           "code": "DF00",
           "display": "Demens ved Alzheimers sygdom"
         },
@@ -293,6 +419,16 @@
         {
           "code": "DG20",
           "display": "Parkinsons sygdom"
+        },
+        {
+          "code": "DG62",
+          "display": "Andre polyneuropatier",
+          "concept": [
+            {
+              "code": "DG629",
+              "display": "Polyneuropati UNS"
+            }
+          ]
         },
         {
           "code": "DI20",
@@ -413,6 +549,74 @@
           "display": "Hjertesvigt"
         },
         {
+          "code": "DI70",
+          "display": "Åreforkalkning",
+          "concept": [
+            {
+              "code": "DI702",
+              "display": "Aterosklerose i arterie i ekstremitet",
+              "concept": [
+                {
+                  "code": "DI702A",
+                  "display": "Aterosklerotisk gangræn"
+                }
+              ]
+            },
+            {
+              "code": "DI708",
+              "display": "Aterosklerose i anden arterie"
+            }
+          ]
+        },
+        {
+          "code": "DI83",
+          "display": "Varicer i underekstremiteter",
+          "concept": [
+            {
+              "code": "DI830",
+              "display": "Varicer i underekstremitet med ulcus",
+              "concept": [
+                {
+                  "code": "DI830A",
+                  "display": "Varicøst ulcus på underekstremite"
+                },
+                {
+                  "code": "DI830B",
+                  "display": "Ulcus cruris post-thromboticum"
+                }
+              ]
+            },
+            {
+              "code": "DI831",
+              "display": "Varicer i underekstremitet med eksem"
+            },
+            {
+              "code": "DI832",
+              "display": "Varicer i underekstremitet med både ulcus og eksem"
+            }
+          ]
+        },
+        {
+          "code": "DI87",
+          "display": "Andre sygdomme i vener",
+          "concept": [
+            {
+              "code": "DI870",
+              "display": "Posttrombotisk syndrom"
+            }
+          ]
+        },
+        {
+          "code": "DI89",
+          "display": "Andre ikke-infektiøse sygdommme i lymfesystemet",
+          "concept": [
+            {
+              "code": "DI890",
+              "display": "Lymfødem IKA"
+            }
+          ]
+        },
+        {
           "code": "DJ44",
           "display": "Kronisk obstruktiv lungesygdom",
           "concept": [
@@ -449,8 +653,746 @@
           ]
         },
         {
+          "code": "DL02",
+          "display": "Bylder i huden",
+          "concept": [
+            {
+              "code": "DL022",
+              "display": "Absces, furunkel eller karbunkel i huden på truncus",
+              "concept": [
+                {
+                  "code": "DL022N",
+                  "display": "Absces på ryggen"
+                }
+              ]
+            },
+            {
+              "code": "DL023",
+              "display": "Absces, furunkel eller karbunkel i huden i sæderegionen"
+            },
+            {
+              "code": "DL024",
+              "display": "Absces, furunkel eller karbunkel i huden på ekstremitet"
+            }
+          ]
+        },
+        {
+          "code": "DL03",
+          "display": "Flegmone",
+          "concept": [
+            {
+              "code": "DL030",
+              "display": "Flegmone i finger eller tå",
+              "concept": [
+                {
+                  "code": "DL030A",
+                  "display": "Panaritium tendinosum"
+                }
+              ]
+            },
+            {
+              "code": "DL039",
+              "display": "Flegmone UNS"
+            }
+          ]
+        },
+        {
+          "code": "DL05",
+          "display": "Hårrede over halebenet",
+          "concept": [
+            {
+              "code": "DL050",
+              "display": "Pilonidalcyste med absces"
+            },
+            {
+              "code": "DL059",
+              "display": "Pilonidalcyste uden absces"
+            }
+          ]
+        },
+        {
+          "code": "DL12",
+          "display": "Pemfigoid",
+          "concept": [
+            {
+              "code": "DL120",
+              "display": "Bulløs pemfigoid"
+            }
+          ]
+        },
+        {
+          "code": "DL13",
+          "display": "Andre former for blæreudslæt",
+          "concept": [
+            {
+              "code": "DL138",
+              "display": "Anden bulløs dermatitis"
+            }
+          ]
+        },
+        {
+          "code": "DL28",
+          "display": "Lichenisering og prurigo",
+          "concept": [
+            {
+              "code": "DL282",
+              "display": "Anden form for prurigo"
+            }
+          ]
+        },
+        {
+          "code": "DL30",
+          "display": "Andre former for dermatitis",
+          "concept": [
+            {
+              "code": "DL308",
+              "display": "Anden form for dermatitis",
+              "concept": [
+                {
+                  "code": "DL308H",
+                  "display": "Håndeksem UNS"
+                }
+              ]
+            },
+            {
+              "code": "DL309",
+              "display": "Dermatitis UNS"
+            }
+          ]
+        },
+        {
+          "code": "DL40",
+          "display": "Psoriasis"
+        },
+        {
+          "code": "DL57",
+          "display": "Hudforandringer ved langvarig eksponering for ikke-joniserende stråling",
+          "concept": [
+            {
+              "code": "DL570",
+              "display": "Aktinisk keratose"
+            }
+          ]
+        },
+        {
+          "code": "DL60",
+          "display": "Sygdomme i negle",
+          "concept": [
+            {
+              "code": "DL600",
+              "display": "Nedgroet negl"
+            },
+            {
+              "code": "DL609",
+              "display": "Neglesygdom UNS"
+            }
+          ]
+        },
+        {
+          "code": "DL73",
+          "display": "Andre follikulære sygdomme i hud og underhud",
+          "concept": [
+            {
+              "code": "DL732",
+              "display": "Suppurerende hidrosadenitis"
+            },
+            {
+              "code": "DL738",
+              "display": "Anden follikulær sygdom i hud og underhud",
+              "concept": [
+                {
+                  "code": "DL738A",
+                  "display": "Folliculitis UNS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DL84",
+          "display": "Hård hud og ligtorne",
+          "concept": [
+            {
+              "code": "DL849",
+              "display": "Callositas et clavus"
+            }
+          ]
+        },
+        {
+          "code": "DL88",
+          "display": "Pusdannelse i huden",
+          "concept": [
+            {
+              "code": "DL889",
+              "display": "Pyoderma gangraenosum"
+            }
+          ]
+        },
+        {
+          "code": "DL89",
+          "display": "Tryksår",
+          "concept": [
+            {
+              "code": "DL890",
+              "display": "Decubitus grad I",
+              "concept": [
+                {
+                  "code": "DL890A",
+                  "display": "Decubitus grad I ved neurologiske udfald"
+                }
+              ]
+            },
+            {
+              "code": "DL891",
+              "display": "Decubitus grad II",
+              "concept": [
+                {
+                  "code": "DL891A",
+                  "display": "Decubitus grad II ved neurologiske udfald"
+                }
+              ]
+            },
+            {
+              "code": "DL892",
+              "display": "Decubitus grad III",
+              "concept": [
+                {
+                  "code": "DL892A",
+                  "display": "Decubitus grad III ved neurologiske udfald"
+                }
+              ]
+            },
+            {
+              "code": "DL893",
+              "display": "Decubitus grad IV",
+              "concept": [
+                {
+                  "code": "DL893A",
+                  "display": "Decubitus grad IV ved neurologiske udfald"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DL92",
+          "display": "Granulomatøse sygdomme i hud og underhud",
+          "concept": [
+            {
+              "code": "DL920",
+              "display": "Annulært granulom",
+              "concept": [
+                {
+                  "code": "DL920B",
+                  "display": "Granuloma annulare perforans"
+                }
+              ]
+            },
+            {
+              "code": "DL921",
+              "display": "Necrobiosis lipoidica IKA"
+            }
+          ]
+        },
+        {
+          "code": "DL95",
+          "display": "Vaskulitis begrænset til huden IKA",
+          "concept": [
+            {
+              "code": "DL951",
+              "display": "Erythema elevatum diutinum"
+            },
+            {
+              "code": "DL958",
+              "display": "Anden vaskulitis begrænset til huden"
+            },
+            {
+              "code": "DL959",
+              "display": "Vaskulitis begrænset til huden UNS"
+            }
+          ]
+        },
+        {
+          "code": "DL97",
+          "display": "Sår på ben IKA",
+          "concept": [
+            {
+              "code": "DL979",
+              "display": "Ulcus på ben IKA",
+              "concept": [
+                {
+                  "code": "DL979A",
+                  "display": "Neurogent ulcus på ben"
+                },
+                {
+                  "code": "DL979B",
+                  "display": "Ulcus cruris arterioscleroticum"
+                },
+                {
+                  "code": "DL979C",
+                  "display": "Ulcus perforans pedis"
+                },
+                {
+                  "code": "DL979E",
+                  "display": "Ulcus pedis arterioscleroticum"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DL98",
+          "display": "Andre sygdomme i hud og underhud IKA",
+          "concept": [
+            {
+              "code": "DL982",
+              "display": "Dermatosis neutrophilica febrilis"
+            },
+            {
+              "code": "DL984",
+              "display": "Kronisk ulcus i huden IKA",
+              "concept": [
+                {
+                  "code": "DL984B",
+                  "display": "Hudfissur"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DM14",
+          "display": "Artropatier ved andre sygdomme klassificeret andetsteds",
+          "concept": [
+            {
+              "code": "DM142",
+              "display": "Diabetisk artropati"
+            },
+            {
+              "code": "DM146",
+              "display": "Neuropatisk artropati"
+            }
+          ]
+        },
+        {
+          "code": "DQ82",
+          "display": "Andre medfødte misdannelser af hud",
+          "concept": [
+            {
+              "code": "DQ828",
+              "display": "Anden medfødt misdannelse af huden",
+              "concept": [
+                {
+                  "code": "DQ828F",
+                  "display": "Dyskeratosis follicularis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DR60",
+          "display": "Ødem IKA",
+          "concept": [
+            {
+              "code": "DR609",
+              "display": "Ødem UNS"
+            }
+          ]
+        },
+        {
+          "code": "DR69",
+          "display": "Ukendte og ikke specificerede årsager til sygdom"
+        },
+        {
+          "code": "DS00",
+          "display": "Overfladisk læsion af hovedet",
+          "concept": [
+            {
+              "code": "DS000",
+              "display": "Overfladisk læsion af skalpen"
+            },
+            {
+              "code": "DS098",
+              "display": "Anden læsion af hovedet"
+            }
+          ]
+        },
+        {
+          "code": "DS31",
+          "display": "Åbent sår på abdomen, lænden og bækkenet",
+          "concept": [
+            {
+              "code": "DS318",
+              "display": "Åbent sår på anden eller ikke specificeret del af abdomen, lænden eller bækkenet",
+              "concept": [
+                {
+                  "code": "DS318A",
+                  "display": "Åbent sår på abdomen UNS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DS41",
+          "display": "Åbent sår på skulder og overarm",
+          "concept": [
+            {
+              "code": "DS411",
+              "display": "Åbent sår på overarm"
+            }
+          ]
+        },
+        {
+          "code": "DS51",
+          "display": "Åbent sår på albueregion og underarm",
+          "concept": [
+            {
+              "code": "DS510",
+              "display": "Åbent sår på albue"
+            },
+            {
+              "code": "DS519",
+              "display": "Åbent sår på albueregion eller underarm UNS"
+            }
+          ]
+        },
+        {
+          "code": "DS61",
+          "display": "Åbent sår på håndled og hånd",
+          "concept": [
+            {
+              "code": "DS610",
+              "display": "Åbent sår på finger uden beskadigelse af negl",
+              "concept": [
+                {
+                  "code": "DS610A",
+                  "display": "Åbent sår på finger UNS"
+                }
+              ]
+            },
+            {
+              "code": "DS611",
+              "display": "Åbent sår på finger med beskadigelse af negl"
+            }
+          ]
+        },
+        {
+          "code": "DS68",
+          "display": "Traumatisk amputation af håndled og hånd",
+          "concept": [
+            {
+              "code": "DS681",
+              "display": "Traumatisk amputation af anden specificeret finger",
+              "concept": [
+                {
+                  "code": "DS681D",
+                  "display": "Traumatisk amputation af 5. finger"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DS71",
+          "display": "Åbent sår på hofteregion og lår",
+          "concept": [
+            {
+              "code": "DS711",
+              "display": "Åbent sår på lår"
+            },
+            {
+              "code": "DS718",
+              "display": "Åbent sår på anden eller ikke specificeret del af hofteregion eller lår"
+            }
+          ]
+        },
+        {
+          "code": "DS81",
+          "display": "Åbent sår på knæ og underben",
+          "concept": [
+            {
+              "code": "DS819",
+              "display": "Åbent sår på underben UNS"
+            }
+          ]
+        },
+        {
+          "code": "DS82",
+          "display": "Fraktur af knæ, underben og ankel"
+        },
+        {
+          "code": "DS89",
+          "display": "Andre og ikke specificerede læsioner af knæregion og underben",
+          "concept": [
+            {
+              "code": "DS898",
+              "display": "Anden læsion i knæregion eller på underben"
+            }
+          ]
+        },
+        {
+          "code": "DS91",
+          "display": "Åbent sår på ankel og fod",
+          "concept": [
+            {
+              "code": "DS911",
+              "display": "Åbent sår på tå uden beskadigelse af negl"
+            },
+            {
+              "code": "DS912",
+              "display": "Åbent sår på tå med beskadigelse af negl"
+            },
+            {
+              "code": "DS913",
+              "display": "Åbent sår på anden del af fod",
+              "concept": [
+                {
+                  "code": "DS913A",
+                  "display": "Åbent sår på fod UNS"
+                }
+              ]
+            },
+            {
+              "code": "DS917",
+              "display": "Multiple åbne sår på ankel og fod"
+            }
+          ]
+        },
+        {
+          "code": "DS99",
+          "display": "Andre og ikke specificerede læsioner af ankel og fod",
+          "concept": [
+            {
+              "code": "DS999",
+              "display": "Læsion af ankel eller fod UNS"
+            }
+          ]
+        },
+        {
+          "code": "DT01",
+          "display": "Åbne sår på flere legemsregioner",
+          "concept": [
+            {
+              "code": "DT019",
+              "display": "Multiple åbne sår UNS"
+            }
+          ]
+        },
+        {
+          "code": "DT09",
+          "display": "Andre læsioner af rygsøjle og krop uden angivelse af lokalisation",
+          "concept": [
+            {
+              "code": "DT091",
+              "display": "Åbent sår på truncus UNS"
+            }
+          ]
+        },
+        {
+          "code": "DT11",
+          "display": "Andre læsioner af overekstremitet uden angivelse af lokalisation",
+          "concept": [
+            {
+              "code": "DT111",
+              "display": "Åbent sår på arm UNS"
+            }
+          ]
+        },
+        {
+          "code": "DT14",
+          "display": "Læsion uden angivelse af legemsregion",
+          "concept": [
+            {
+              "code": "DT140",
+              "display": "Overfladisk læsion uden angivelse af legemsregion",
+              "concept": [
+                {
+                  "code": "DT140D",
+                  "display": "Hæmatom UNS"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DT20",
+          "display": "Forbrænding og ætsning på hovedet og halsen",
+          "concept": [
+            {
+              "code": "DT200",
+              "display": "Forbrænding UNS på hovedet og halsen"
+            }
+          ]
+        },
+        {
+          "code": "DT23",
+          "display": "Forbrænding og ætsning på håndled og hånd",
+          "concept": [
+            {
+              "code": "DT232",
+              "display": "2° forbrænding på håndled og hånd",
+              "concept": [
+                {
+                  "code": "DT232B",
+                  "display": "2° forbrænding på hånd"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DT24",
+          "display": "Forbrænding og ætsning på hofte og ben",
+          "concept": [
+            {
+              "code": "DT247",
+              "display": "3° ætsning på underekstremitet",
+              "concept": [
+                {
+                  "code": "DT247B",
+                  "display": "3° ætsning på ben"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DT66",
+          "display": "Skade forårsaget af stråling",
+          "concept": [
+            {
+              "code": "DT669",
+              "display": "Stråleskade UNS"
+            }
+          ]
+        },
+        {
+          "code": "DT69",
+          "display": "Andre virkninger af nedsat temperatur",
+          "concept": [
+            {
+              "code": "DT691",
+              "display": "Pernio"
+            }
+          ]
+        },
+        {
+          "code": "DT81",
+          "display": "Komplikationer til indgreb IKA",
+          "concept": [
+            {
+              "code": "DT813",
+              "display": "Postoperativ sårruptur IKA",
+              "concept": [
+                {
+                  "code": "DT813C",
+                  "display": "Overfladisk bristning eller nekrose af operationssår"
+                },
+                {
+                  "code": "DT813D",
+                  "display": "Dyb bristning af operationssår"
+                }
+              ]
+            },
+            {
+              "code": "DT814",
+              "display": "Infektion efter indgreb IKA",
+              "concept": [
+                {
+                  "code": "DT814F",
+                  "display": "Postoperativ sårinfektion"
+                },
+                {
+                  "code": "DT814G",
+                  "display": "Postoperativ overfladisk sårinfektion"
+                },
+                {
+                  "code": "DT814H",
+                  "display": "Postoperativ dyb sårinfektion"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DT86",
+          "display": "Svigt og afstødning af transplanterede organer og væv",
+          "concept": [
+            {
+              "code": "DT860",
+              "display": "Afstødning af knoglemarvstransplantat",
+              "concept": [
+                {
+                  "code": "DT860A",
+                  "display": "Graft-versus-host reaktion"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DT87",
+          "display": "Komplikationer til påsætning og amputation",
+          "concept": [
+            {
+              "code": "DT875",
+              "display": "Nekrose i amputationsstump"
+            },
+            {
+              "code": "DT876",
+              "display": "Anden eller ikke specificeret komplikation i amputationstump"
+            }
+          ]
+        },
+        {
+          "code": "DT95",
+          "display": "Følgetilstande efter forbrændinger, ætsninger og forfrysninger",
+          "concept": [
+            {
+              "code": "DT959",
+              "display": "Følgetilstand efter forbrænding, ætsning eller forfrysning UNS"
+            }
+          ]
+        },
+        {
+          "code": "DZ48",
+          "display": "Kontakter mhp. andre efterbehandlinger efter kirurgisk indgreb",
+          "concept": [
+            {
+              "code": "DZ489",
+              "display": "Efterbehandling efter kirurgisk indgreb UNS"
+            }
+          ]
+        },
+        {
           "code": "DZ76",
           "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
+        },
+        {
+          "code": "DZ93",
+          "display": "Tilstand med kunstig legemsåbning",
+          "concept": [
+            {
+              "code": "DZ933",
+              "display": "Tilstand med kolostomi"
+            }
+          ]
+        },
+        {
+          "code": "DZ94",
+          "display": "Tilstand med transplanteret organ eller væv",
+          "concept": [
+            {
+              "code": "DZ940",
+              "display": "Nyretransplanteret"
+            },
+            {
+              "code": "DZ945",
+              "display": "Hudtransplanteret"
+            }
+          ]
         }
       ]
     },
@@ -461,6 +1403,20 @@
     {
       "code": "ZZ7011",
       "display": "Klinisk foto"
+    },
+    {
+      "code": "ZM",
+      "display": "Tillægskoder Morfologi",
+      "concept": [
+        {
+          "code": "ZM80703",
+          "display": "planocellulært karcinom"
+        },
+        {
+          "code": "ZM80903",
+          "display": "basocellulært karcinom"
+        }
+      ]
     }
   ]
 }
