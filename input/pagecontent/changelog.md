@@ -1,6 +1,5 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-
 ## Release 2026.2. todo: change to semver format before release
 ### General changes
 - dk.core updated from 1.1.0 to 3.5.0
@@ -12,6 +11,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+### Search parameters
+- Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
 ## 8.0.0 (2026-02-04)
 ### General changes (Documentation)
