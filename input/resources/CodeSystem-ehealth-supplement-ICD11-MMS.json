@@ -1,0 +1,720 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth.sundhed.dk-ICD-11-MMS-supplement",
+  "url": "http://ehealth.sundhed.dk/icd/release/11/mms/supplement",
+  "version": "2025-01",
+  "name": "ICD-11 MMS Danish Supplement",
+  "title": "ICD-11 for Mortality and Morbidity Statistics - Danish Supplement",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-10T00:00:00+01:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Danish language supplement for ICD-11 for Mortality and Morbidity Statistics - Surface Topography",
+  "supplements": "http://id.who.int/icd/release/11/mms",
+  "content": "supplement",
+  "concept": [
+    {
+      "code": "XA1RS6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hovedet og halsen"
+        }
+      ]
+    },
+    {
+      "code": "XA20Q1",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hovedet"
+        }
+      ]
+    },
+    {
+      "code": "XA6CW5",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Skalpen"
+        }
+      ]
+    },
+    {
+      "code": "XA86S4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ansigtet"
+        }
+      ]
+    },
+    {
+      "code": "XA6TR8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Panden"
+        }
+      ]
+    },
+    {
+      "code": "XA7MK8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kind"
+        }
+      ]
+    },
+    {
+      "code": "XA3H13",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Næsen"
+        }
+      ]
+    },
+    {
+      "code": "XA5A87",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mundregionen"
+        }
+      ]
+    },
+    {
+      "code": "XA7AA6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Halsen"
+        }
+      ]
+    },
+    {
+      "code": "XA4QS6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Forsiden af halsen"
+        }
+      ]
+    },
+    {
+      "code": "XA2ZF0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Side af halsen"
+        }
+      ]
+    },
+    {
+      "code": "XA1M78",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Nakken"
+        }
+      ]
+    },
+    {
+      "code": "XA3FR3",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Truncus"
+        }
+      ]
+    },
+    {
+      "code": "XA4QH7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Øvre truncus"
+        }
+      ]
+    },
+    {
+      "code": "XA5D93",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Thorax"
+        }
+      ]
+    },
+    {
+      "code": "XA55T2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Thoraxvæggen"
+        }
+      ]
+    },
+    {
+      "code": "XA10L7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Øvre del af ryggen"
+        }
+      ]
+    },
+    {
+      "code": "XA6CY1",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Nedre truncus"
+        }
+      ]
+    },
+    {
+      "code": "XA6GV0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Abdomen"
+        }
+      ]
+    },
+    {
+      "code": "XA0U66",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Øvre abdomen"
+        }
+      ]
+    },
+    {
+      "code": "XA4TC0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Nedre abdomen"
+        }
+      ]
+    },
+    {
+      "code": "XA25R8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Lumbosakralregionen"
+        }
+      ]
+    },
+    {
+      "code": "XA6ZR2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Midterste del af ryggen"
+        }
+      ]
+    },
+    {
+      "code": "XA9ET2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Nedre del af ryggen"
+        }
+      ]
+    },
+    {
+      "code": "XA2P90",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ryggen"
+        }
+      ]
+    },
+    {
+      "code": "XA8HA7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Anogenitalregionen"
+        }
+      ]
+    },
+    {
+      "code": "XA4B34",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Perianalregionen"
+        }
+      ]
+    },
+    {
+      "code": "XA6AS2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ekstremiteter"
+        }
+      ]
+    },
+    {
+      "code": "XA4BA8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Overekstremitet"
+        }
+      ]
+    },
+    {
+      "code": "XA2ND5",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Skulder"
+        }
+      ]
+    },
+    {
+      "code": "XA17J1",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Aksil"
+        }
+      ]
+    },
+    {
+      "code": "XA6809",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Overarm"
+        }
+      ]
+    },
+    {
+      "code": "XA9FF8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Albue"
+        }
+      ]
+    },
+    {
+      "code": "XA7WB0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Underarm"
+        }
+      ]
+    },
+    {
+      "code": "XA2J63",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Håndled"
+        }
+      ]
+    },
+    {
+      "code": "XA5R12",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hånd"
+        }
+      ]
+    },
+    {
+      "code": "XA3OZ6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Håndryg"
+        }
+      ]
+    },
+    {
+      "code": "XA3NY8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Håndflade"
+        }
+      ]
+    },
+    {
+      "code": "XA2593",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Fingre og tommelfinger"
+        }
+      ]
+    },
+    {
+      "code": "XA8DJ6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "1. finger"
+        }
+      ]
+    },
+    {
+      "code": "XA6NZ0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "2. finger"
+        }
+      ]
+    },
+    {
+      "code": "XA0Y38",
+      "designation": [
+        {
+          "language": "da",
+          "value": "3. finger"
+        }
+      ]
+    },
+    {
+      "code": "XA06X8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "4. finger"
+        }
+      ]
+    },
+    {
+      "code": "XA5EN3",
+      "designation": [
+        {
+          "language": "da",
+          "value": "5. finger"
+        }
+      ]
+    },
+    {
+      "code": "XA45A6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Underekstremitet"
+        }
+      ]
+    },
+    {
+      "code": "XA3VA7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sæderegionen"
+        }
+      ]
+    },
+    {
+      "code": "XA5S78",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Lår"
+        }
+      ]
+    },
+    {
+      "code": "XA98B3",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Anteriore overflade af lår"
+        }
+      ]
+    },
+    {
+      "code": "XA8RH9",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Laterale overflade af lår"
+        }
+      ]
+    },
+    {
+      "code": "XA0183",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Posteriore overflade af lår"
+        }
+      ]
+    },
+    {
+      "code": "XA1YQ6",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mediale overflade af lår"
+        }
+      ]
+    },
+    {
+      "code": "XA8KL5",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Knæ"
+        }
+      ]
+    },
+    {
+      "code": "XA3YG1",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Underben"
+        }
+      ]
+    },
+    {
+      "code": "XA33X4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Anteriore overflade af underben"
+        }
+      ]
+    },
+    {
+      "code": "XA4PR4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Laterale overflade af underben"
+        }
+      ]
+    },
+    {
+      "code": "XA0LQ2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Posteriore overflade af underben"
+        }
+      ]
+    },
+    {
+      "code": "XA15P0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mediale overflade af underben"
+        }
+      ]
+    },
+    {
+      "code": "XA67V4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ankel"
+        }
+      ]
+    },
+    {
+      "code": "XA47V8",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Fod"
+        }
+      ]
+    },
+    {
+      "code": "XA99M7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bagfod"
+        }
+      ]
+    },
+    {
+      "code": "XA5HK0",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Hæl"
+        }
+      ]
+    },
+    {
+      "code": "XA5151",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mellemfod"
+        }
+      ]
+    },
+    {
+      "code": "XA5YL1",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Forfod"
+        }
+      ]
+    },
+    {
+      "code": "XA8BE2",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Fodryg"
+        }
+      ]
+    },
+    {
+      "code": "XA1XM4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Fodsål"
+        }
+      ]
+    },
+    {
+      "code": "XA4LC9",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Tæer"
+        }
+      ]
+    },
+    {
+      "code": "XA2RP7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "1. tå"
+        }
+      ]
+    },
+    {
+      "code": "XA8ZZ3",
+      "designation": [
+        {
+          "language": "da",
+          "value": "2. tå"
+        }
+      ]
+    },
+    {
+      "code": "XA0SP3",
+      "designation": [
+        {
+          "language": "da",
+          "value": "3. tå"
+        }
+      ]
+    },
+    {
+      "code": "XA4KK7",
+      "designation": [
+        {
+          "language": "da",
+          "value": "4. tå"
+        }
+      ]
+    },
+    {
+      "code": "XA42W4",
+      "designation": [
+        {
+          "language": "da",
+          "value": "5. tå"
+        }
+      ]
+    },
+    {
+      "code": "XK9J",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Bilateral"
+        }
+      ]
+    },
+    {
+      "code": "XK8G",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Venstre"
+        }
+      ]
+    },
+    {
+      "code": "XK9K",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Højre"
+        }
+      ]
+    },
+    {
+      "code": "XK70",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Unilateral, uspecificeret"
+        }
+      ]
+    },
+    {
+      "code": "XK7V",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Anterior"
+        }
+      ]
+    },
+    {
+      "code": "XK8L",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Posterior"
+        }
+      ]
+    }
+  ]
+}

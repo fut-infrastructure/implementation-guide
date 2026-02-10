@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-wound-conditions",
+  "url": "http://ehealth.sundhed.dk/vs/wound-conditions",
+  "version": "2026-02-10T00:00:00+00",
+  "name": "WoundConditions",
+  "title": "Wound Conditions",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-10T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Wound conditions.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "BNPF2"
+          },
+          {
+            "code": "DA46"
+          }
+        ]
+      }
+    ]
+  }
+}
