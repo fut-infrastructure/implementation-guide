@@ -1,7 +1,10 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+
 ## Release 2026.2. todo: change to semver format before release
 ### General changes
+- dk.core updated from 1.1.0 to 3.5.0
+  - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
 ### Custom operations
 #### System operations
 #### Instance operations
