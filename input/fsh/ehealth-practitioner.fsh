@@ -8,8 +8,8 @@ Parent: DkCorePractitioner
 
 Extension: ehealth-provider-affiliation
 Title:     "Ehealth provider affiliation"
-Description: "Defines the affiliation of a healthcare provider to an practitioner."
-* . ^short = "Affiliation of a healthcare provider to an practitioner."
+Description: "Defines the affiliation of a healthcare provider to a practitioner."
+* . ^short = "Affiliation of a healthcare provider to a practitioner."
 * extension contains
     identifier 1..1 and
     period 0..1
