@@ -987,8 +987,8 @@
           "display": "Lichenisering og prurigo",
           "concept": [
             {
-              "code": "DL282",
-              "display": "Anden form for prurigo"
+              "code": "DL281",
+              "display": "Prurigo nodularis"
             }
           ]
         },
@@ -1338,7 +1338,13 @@
         },
         {
           "code": "DR69",
-          "display": "Ukendte og ikke specificerede årsager til sygdom"
+          "display": "Ukendte og ikke specificerede årsager til sygdom",
+            "concept": [
+                {
+                "code": "DR699",
+                "display": "Sygdom uden kendt eller specificeret årsag"
+                }
+            ]
         },
         {
           "code": "DS00",
