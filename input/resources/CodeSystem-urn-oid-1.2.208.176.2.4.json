@@ -140,7 +140,21 @@
           "concept": [
             {
               "code": "DA469",
-              "display": "Rosen uden specifikation"
+              "display": "Rosen UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Rosen uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Rosen uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -180,7 +194,21 @@
           "concept": [
             {
               "code": "DC449",
-              "display": "Anden hudkræft uden specifikation"
+              "display": "Anden hudkræft UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Anden hudkræft uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Anden hudkræft uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -190,7 +218,21 @@
           "concept": [
             {
               "code": "DC509",
-              "display": "Brystkræft uden specifikation"
+              "display": "Brystkræft UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Brystkræft uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Brystkræft uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -260,7 +302,21 @@
             },
             {
               "code": "DE108",
-              "display": "Type 1-diabetes med komplikation UNS"
+              "display": "Type 1-diabetes med komplikation UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Type 1-diabetes med komplikation uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Type 1-diabetes med komplikation uden specifikation"
+                }
+              ]
             },
             {
               "code": "DE109",
@@ -268,7 +324,21 @@
               "concept": [
                 {
                   "code": "DE109A",
-                  "display": "Type 1-diabetes UNS"
+                  "display": "Type 1-diabetes UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Type 1-diabetes uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Type 1-diabetes uden specifikation"
+                    }
+                  ]
                 }
               ]
             }
@@ -330,7 +400,21 @@
             },
             {
               "code": "DE118",
-              "display": "Type 2-diabetes med komplikation UNS"
+              "display": "Type 2-diabetes med komplikation UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Type 2-diabetes med komplikation uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Type 2-diabetes med komplikation uden specifikation"
+                }
+              ]
             },
             {
               "code": "DE119",
@@ -338,7 +422,21 @@
               "concept": [
                 {
                   "code": "DE119A",
-                  "display": "Type 2-diabetes UNS"
+                  "display": "Type 2-diabetes UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Type 2-diabetes uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Type 2-diabetes uden specifikation"
+                    }
+                  ]
                 }
               ]
             }
@@ -350,25 +448,95 @@
           "concept": [
             {
               "code": "DE144",
-              "display": "Diabetes UNS med neurologisk komplikation"
+              "display": "Diabetes UNS med neurologisk komplikation",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Diabetes uden specifikation med neurologisk komplikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Diabetes uden specifikation med neurologisk komplikation"
+                }
+              ]
             },
             {
               "code": "DE145",
               "display": "Diabetes UNS med komplikationer i perifere karsystem",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Diabetes uden specifikation med komplikationer i perifere karsystem"
+                },
+                {
+                  "language": "da",
+                  "value": "Diabetes uden specifikation med komplikationer i perifere karsystem"
+                }
+              ],
               "concept": [
                 {
                   "code": "DE145B",
-                  "display": "Diabetes UNS med fodsår"
+                  "display": "Diabetes UNS med fodsår",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Diabetes uden specifikation med fodsår"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Diabetes uden specifikation med fodsår"
+                    }
+                  ]
                 },
                 {
                   "code": "DE145C",
-                  "display": "Diabetes UNS med gangræn"
+                  "display": "Diabetes UNS med gangræn",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Diabetes uden specifikation med gangræn"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Diabetes uden specifikation med gangræn"
+                    }
+                  ]
                 }
               ]
             },
             {
               "code": "DE147",
-              "display": "Diabetes UNS med multiple komplikationer"
+              "display": "Diabetes UNS med multiple komplikationer",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Diabetes uden specifikation med multiple komplikationer"
+                },
+                {
+                  "language": "da",
+                  "value": "Diabetes uden specifikation med multiple komplikationer"
+                }
+              ]
             }
           ]
         },
@@ -426,7 +594,21 @@
           "concept": [
             {
               "code": "DG629",
-              "display": "Polyneuropati UNS"
+              "display": "Polyneuropati UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Polyneuropati uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Polyneuropati uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -478,7 +660,21 @@
             },
             {
               "code": "DI209",
-              "display": "Angina pectoris UNS"
+              "display": "Angina pectoris UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Angina pectoris uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Angina pectoris uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -540,7 +736,21 @@
             },
             {
               "code": "DI259",
-              "display": "Kronisk iskæmisk hjertesygdom UNS"
+              "display": "Kronisk iskæmisk hjertesygdom UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Kronisk iskæmisk hjertesygdom uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Kronisk iskæmisk hjertesygdom uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -626,7 +836,21 @@
             },
             {
               "code": "DJ441",
-              "display": "Kronisk obstruktiv lungesygdom med akut eksacerbation UNS"
+              "display": "Kronisk obstruktiv lungesygdom med akut eksacerbation UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Kronisk obstruktiv lungesygdom med akut eksacerbation uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Kronisk obstruktiv lungesygdom med akut eksacerbation uden specifikation"
+                }
+              ]
             },
             {
               "code": "DJ448",
@@ -648,7 +872,21 @@
             },
             {
               "code": "DJ449",
-              "display": "Kronisk obstruktiv lungesygdom UNS"
+              "display": "Kronisk obstruktiv lungesygdom UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Kronisk obstruktiv lungesygdom uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Kronisk obstruktiv lungesygdom uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -692,7 +930,21 @@
             },
             {
               "code": "DL039",
-              "display": "Flegmone UNS"
+              "display": "Flegmone UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Flegmone uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Flegmone uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -750,13 +1002,41 @@
               "concept": [
                 {
                   "code": "DL308H",
-                  "display": "Håndeksem UNS"
+                  "display": "Håndeksem UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Håndeksem uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Håndeksem uden specifikation"
+                    }
+                  ]
                 }
               ]
             },
             {
               "code": "DL309",
-              "display": "Dermatitis UNS"
+              "display": "Dermatitis UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Dermatitis uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Dermatitis uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -784,7 +1064,21 @@
             },
             {
               "code": "DL609",
-              "display": "Neglesygdom UNS"
+              "display": "Neglesygdom UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Neglesygdom uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Neglesygdom uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -802,7 +1096,21 @@
               "concept": [
                 {
                   "code": "DL738A",
-                  "display": "Folliculitis UNS"
+                  "display": "Folliculitis UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Folliculitis uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Folliculitis uden specifikation"
+                    }
+                  ]
                 }
               ]
             }
@@ -908,7 +1216,21 @@
             },
             {
               "code": "DL959",
-              "display": "Vaskulitis begrænset til huden UNS"
+              "display": "Vaskulitis begrænset til huden UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Vaskulitis begrænset til huden uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Vaskulitis begrænset til huden uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -996,7 +1318,21 @@
           "concept": [
             {
               "code": "DR609",
-              "display": "Ødem UNS"
+              "display": "Ødem UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Ødem uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Ødem uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1028,7 +1364,21 @@
               "concept": [
                 {
                   "code": "DS318A",
-                  "display": "Åbent sår på abdomen UNS"
+                  "display": "Åbent sår på abdomen UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Åbent sår på abdomen uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Åbent sår på abdomen uden specifikation"
+                    }
+                  ]
                 }
               ]
             }
@@ -1054,7 +1404,21 @@
             },
             {
               "code": "DS519",
-              "display": "Åbent sår på albueregion eller underarm UNS"
+              "display": "Åbent sår på albueregion eller underarm UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Åbent sår på albueregion eller underarm uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Åbent sår på albueregion eller underarm uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1068,7 +1432,21 @@
               "concept": [
                 {
                   "code": "DS610A",
-                  "display": "Åbent sår på finger UNS"
+                  "display": "Åbent sår på finger UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Åbent sår på finger uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Åbent sår på finger uden specifikation"
+                    }
+                  ]
                 }
               ]
             },
@@ -1114,7 +1492,21 @@
           "concept": [
             {
               "code": "DS819",
-              "display": "Åbent sår på underben UNS"
+              "display": "Åbent sår på underben UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Åbent sår på underben uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Åbent sår på underben uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1150,7 +1542,21 @@
               "concept": [
                 {
                   "code": "DS913A",
-                  "display": "Åbent sår på fod UNS"
+                  "display": "Åbent sår på fod UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Åbent sår på fod uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Åbent sår på fod uden specifikation"
+                    }
+                  ]
                 }
               ]
             },
@@ -1166,7 +1572,21 @@
           "concept": [
             {
               "code": "DS999",
-              "display": "Læsion af ankel eller fod UNS"
+              "display": "Læsion af ankel eller fod UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Læsion af ankel eller fod uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Læsion af ankel eller fod uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1176,7 +1596,21 @@
           "concept": [
             {
               "code": "DT019",
-              "display": "Multiple åbne sår UNS"
+              "display": "Multiple åbne sår UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Multiple åbne sår uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Multiple åbne sår utan specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1186,7 +1620,21 @@
           "concept": [
             {
               "code": "DT091",
-              "display": "Åbent sår på truncus UNS"
+              "display": "Åbent sår på truncus UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Åbent sår på truncus uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Åbent sår på truncus utan specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1196,7 +1644,21 @@
           "concept": [
             {
               "code": "DT111",
-              "display": "Åbent sår på arm UNS"
+              "display": "Åbent sår på arm UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Åbent sår på arm uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Åbent sår på arm utan specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1210,7 +1672,21 @@
               "concept": [
                 {
                   "code": "DT140D",
-                  "display": "Hæmatom UNS"
+                  "display": "Hæmatom UNS",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Hæmatom uden specifikation"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Hæmatom uden specifikation"
+                    }
+                  ]
                 }
               ]
             }
@@ -1222,7 +1698,21 @@
           "concept": [
             {
               "code": "DT200",
-              "display": "Forbrænding UNS på hovedet og halsen"
+              "display": "Forbrænding UNS på hovedet og halsen",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Forbrænding uden specifikation på hovedet og halsen"
+                },
+                {
+                  "language": "da",
+                  "value": "Forbrænding uden specifikation på hovedet og halsen"
+                }
+              ]
             }
           ]
         },
@@ -1264,7 +1754,21 @@
           "concept": [
             {
               "code": "DT669",
-              "display": "Stråleskade UNS"
+              "display": "Stråleskade UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Stråleskade uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Stråleskade uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1352,7 +1856,21 @@
           "concept": [
             {
               "code": "DT959",
-              "display": "Følgetilstand efter forbrænding, ætsning eller forfrysning UNS"
+              "display": "Følgetilstand efter forbrænding, ætsning eller forfrysning UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Følgetilstand efter forbrænding, ætsning eller forfrysning uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Følgetilstand efter forbrænding, ætsning eller forfrysning uden specifikation"
+                }
+              ]
             }
           ]
         },
@@ -1362,7 +1880,21 @@
           "concept": [
             {
               "code": "DZ489",
-              "display": "Efterbehandling efter kirurgisk indgreb UNS"
+              "display": "Efterbehandling efter kirurgisk indgreb UNS",
+              "designation": [
+                {
+                  "language": "da",
+                  "use": {
+                    "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                    "code": "consumer"
+                  },
+                  "value": "Efterbehandling efter kirurgisk indgreb uden specifikation"
+                },
+                {
+                  "language": "da",
+                  "value": "Efterbehandling efter kirurgisk indgreb uden specifikation"
+                }
+              ]
             }
           ]
         },
