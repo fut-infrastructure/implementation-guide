@@ -9,6 +9,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension ehealth-provider-affiliation to practitioner.
 
 ## 8.0.0 (2026-02-04)
 ### General changes (Documentation)
