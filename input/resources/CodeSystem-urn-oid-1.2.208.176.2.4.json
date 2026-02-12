@@ -989,6 +989,10 @@
             {
               "code": "DL281",
               "display": "Prurigo nodularis"
+            },
+            {
+              "code": "DL282",
+              "display": "Anden form for prurigo"
             }
           ]
         },
@@ -1614,7 +1618,7 @@
                 },
                 {
                   "language": "da",
-                  "value": "Multiple åbne sår utan specifikation"
+                  "value": "Multiple åbne sår uden specifikation"
                 }
               ]
             }
@@ -1638,7 +1642,7 @@
                 },
                 {
                   "language": "da",
-                  "value": "Åbent sår på truncus utan specifikation"
+                  "value": "Åbent sår på truncus uden specifikation"
                 }
               ]
             }
@@ -1662,7 +1666,7 @@
                 },
                 {
                   "language": "da",
-                  "value": "Åbent sår på arm utan specifikation"
+                  "value": "Åbent sår på arm uden specifikation"
                 }
               ]
             }

@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Danish language supplement for ICD-11 for Mortality and Morbidity Statistics - Surface Topography",
+  "description": "Danish language supplement for ICD-11 for Mortality and Morbidity Statistics - Surface Topography. Translations to Danish provided by the Danish National Health Data Authority (Danish: Sundhedsdatastyrelsen).",
   "supplements": "http://id.who.int/icd/release/11/mms",
   "content": "supplement",
   "concept": [
