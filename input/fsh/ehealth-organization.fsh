@@ -1,6 +1,6 @@
 Profile: ehealth-organization
 Id: ehealth-organization
-Parent: Organization
+Parent: DkCoreOrganization
 * extension contains ehealth-organization-cvrNumber named cvrNumber 0..1
 * extension contains ehealth-organization-regionCode named regionCode 0..1
 * extension contains ehealth-organization-municipalityCode named municipalityCode 0..1
