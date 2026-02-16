@@ -1,6 +1,7 @@
 #!/bin/bash
 # Utility functions for login functionality
 DEBUG=false
+FUTUSER="${SOURCE_ENVIRONMENT:-sre_application_admin}"
 
 prompt() {
   echo "$@" >/dev/tty
@@ -38,7 +39,7 @@ die() {
 }
 
 login() {
-  local domain="devtest.systematic-ehealth.com"
+  local domain="$SOURCE_ENVIRONMENT"
   local username=${FUTUSER}
   local password token
   AUTHORIZATION=""
@@ -46,6 +47,8 @@ login() {
   prompt "Login is required"
   if [ -z "${username}" ]; then
     read -p "User: " username 2> /dev/tty
+  else
+    echo "User: ${username}"
   fi
   read -s -r -p "Password: " password 2> /dev/tty
 
@@ -58,7 +61,7 @@ login() {
       --data-urlencode "username=${username}" \
       --data-urlencode "password=${password}"
   )
-  validate_json "$reply" || fail "Failed to parse response for get authorization" || return 1
+  validate_json "$response" || fail "Failed to parse response for get authorization" || return 1
 
   {
     read -r token
@@ -71,7 +74,7 @@ login() {
 
   [ ${http_code} -eq "200" ] || die "Authorization failed [HTTP ${http_code}]: ${response}"
 
-  log_debug "got authorization token ${token} on domain ${DOMAIN} for user ${username}"
+  log_debug "got authorization token ${token} on domain ${domain} for user ${username}"
   log_info "Authorization token received on domain ${domain} for user ${username}"
 
   [ -n "${token}" ] && AUTHORIZATION="Authorization: Bearer ${token}"
