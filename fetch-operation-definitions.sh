@@ -9,7 +9,7 @@ SERVICES_FOR_CAPABILITY=(careplan device document-query document-transformation 
 SERVICES=(careplan device document-query document-transformation library measurement organization plan questionnaire reporting task)
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
 IG_PATH=$(pwd)
-OUTPUT_DIR="${IG_PATH}/input/resourcesX"
+OUTPUT_DIR="${IG_PATH}/input/resources"
 TIME_OUT=5
 CANONICAL_BASE="http://ehealth.sundhed.dk/fhir/OperationDefinition"
 

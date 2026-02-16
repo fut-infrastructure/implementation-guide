@@ -5,7 +5,7 @@ SERVICES=(careplan device document-query document-transformation library measure
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
 TIME_OUT=5
 IG_PATH=$(pwd)
-OUTPUT_DIR="${IG_PATH}/input/resourcesX"
+OUTPUT_DIR="${IG_PATH}/input/resources"
 
 mkdir -p $OUTPUT_DIR
 
