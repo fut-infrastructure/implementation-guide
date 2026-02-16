@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ehealth-consent-provision-code",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code",
+  "version": "1.0.0",
+  "name": "ConsentProvisionCode",
+  "title": "Consent Provision Code",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-16T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of provision codes for consent.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-codes",
+        "concept": [
+          {
+            "code" : "TriagingResult"
+          }
+        ]
+      }
+    ]
+  }
+}

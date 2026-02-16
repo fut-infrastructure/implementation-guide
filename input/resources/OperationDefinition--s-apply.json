@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The PlanDefinition to be applied as the basis for the careplan.",
       "type": "string"
     },
     {
@@ -25,6 +26,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The episodeOfCare for which the plan is being applied.",
       "type": "string"
     }
   ]

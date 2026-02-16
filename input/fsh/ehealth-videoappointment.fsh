@@ -87,7 +87,7 @@ Usage: #example
 * participant[+].actor = Reference(Patient/102)
 * participant[=].required = #required
 * participant[=].status = #accepted
-* participant[+].actor = Reference(1)
+* participant[+].actor = Reference(Patient/1)
 * participant[=].required = #required
 * participant[=].status = #accepted
 

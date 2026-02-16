@@ -1,16 +1,6 @@
 {
   "resourceType": "CodeSystem",
   "id": "action-participant-function",
-  "meta": {
-    "lastUpdated": "2023-03-26T15:21:02.749+11:00",
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.org/fhir/action-participant-function</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">performer<a name=\"action-participant-function-performer\"> </a></td><td>Performer</td><td>The participant is the performer of the action.</td></tr><tr><td style=\"white-space:nowrap\">author<a name=\"action-participant-function-author\"> </a></td><td>Author</td><td>The participant is the author of the result of the action.</td></tr><tr><td style=\"white-space:nowrap\">reviewer<a name=\"action-participant-function-reviewer\"> </a></td><td>Reviewer</td><td>The participant is reviewing the result of the action.</td></tr><tr><td style=\"white-space:nowrap\">witness<a name=\"action-participant-function-witness\"> </a></td><td>Witness</td><td>The participant is a witness to the action being performed.</td></tr></table></div>"
-  },
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",

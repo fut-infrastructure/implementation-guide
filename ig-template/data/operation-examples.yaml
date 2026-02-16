@@ -210,4 +210,18 @@
 
 - profile: system
   path: POST_Organization_get-general-practitioner-info.html
+
+# bulk export
+- profile: system
+  path: POST_export.html
+
+- profile: system
+  path: GET_export-poll-status_202.html
+
+- profile: system
+  path: GET_export-poll-status_200.html
+
+- profile: system
+  path: GET_Binary_export.html
+
 # setting profile = system, in order to include in general operation examples page

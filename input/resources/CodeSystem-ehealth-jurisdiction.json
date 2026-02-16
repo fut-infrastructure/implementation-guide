@@ -44,6 +44,17 @@
           "value": "Serviceloven"
         }
       ]
+    },
+    {
+      "code": "elderly-act",
+      "display": "Danish elderly act",
+      "definition": "Danish elderly act, formally known as The Act on Social Services for the Elderly",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ældreloven"
+        }
+      ]
     }
   ]
 }
