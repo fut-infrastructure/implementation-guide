@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ehealth-usage-context-body-site",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-body-site",
+  "version": "1.0.0",
+  "name": "usageContextBodySite",
+  "title": "Usage Context Body site",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-02-09T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Usage Body site",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/ehealth-usage-context-body-site-tele-wound"
+        ]
+      }
+    ]
+  }
+}

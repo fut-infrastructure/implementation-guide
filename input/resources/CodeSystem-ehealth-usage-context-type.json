@@ -77,6 +77,28 @@
           "value": "Markering af hvilket sameksistens-tag den pågældende samling af behandlingsområder er tilknyttet."
         }
       ]
+    },
+    {
+      "code": "condition-qualification",
+      "display": "condition qualification",
+      "definition": "Qualification of condition. For this context type, the value shall be a code from http://ehealth.sundhed.dk/vs/ehealth-condition-qualification",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kvalificering af diagnose"
+        }
+      ]
+    },
+    {
+      "code": "body-site",
+      "display": "body site",
+      "definition": "Placement on the body. For this context type, the value shall be a code from http://ehealth.sundhed.dk/vs/usage-context-body-site",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Placering på patients krop"
+        }
+      ]
     }
   ]
 }
