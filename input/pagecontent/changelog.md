@@ -6,9 +6,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS
+- Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with wounds related codes
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
 - Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
 ### ValueSets
+- Added http://ehealth.sundhed.dk/vs/wound-conditions ValueSet for Wound Conditions
 - Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow-tele-wound ValueSet for specific Tele-Wound workflows.
 - Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow ValueSet.
 - Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-task-type-tele-wound ValueSet for specific Tele-Wound tasks.
@@ -21,10 +25,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.
 
-## 8.0.0
+## 8.0.0 (2026-02-04)
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.
+- Updated ehealth-communication introduction. The intro described that Communication.topic is the reference to the measurement. This was true in FHIR STU3, but in FHIR R4, the proper element is Communication.about.
 - Added ehealth-access-consent/ehealth-access-provenance profiles incl. terminology.
+- Align naming of general material (previously references as "generic material").
+- Added ehealth-endpoint profile, to contain EAN identifiers for Organizations.
 ### Custom operations
 - BREAKING: Added validation of Condition.code against treatment area for $create-episode-of-care
 #### System operations
@@ -39,7 +46,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/cs/ehealth-access-provenance-agent-role
 - Added code 'system-treatment-area' to http://ehealth.sundhed.dk/cs/ehealth-usage-context-type
 - Added new careteam participant role `data_scientist` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new careteam participant role `login_assistor` to http://ehealth.sundhed.dk/cs/careteam-participant-role
 - Added new oio bpp role `data_scientist` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+- Added new oio bpp role `login_assistor` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
 
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-policy
@@ -48,8 +57,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/ehealth-consent-provision-code
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-activity
 - Added http://ehealth.sundhed.dk/vs/ehealth-access-provenance-agent-role
+- Added http://ehealth.sundhed.dk/vs/endpoint-connection-type-code
+- Added http://ehealth.sundhed.dk/vs/endpoint-payload-type-code
 ### ConceptMaps
 - Added mapping between new `data_scientist` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+- Added mapping between new `login_assistor` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
 
 ### Resource/profile changes
 - Added extension ehealth-reference-careplan to Task
@@ -70,6 +82,8 @@ This is the log of changes made to the eHealth Implementation Guide.
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5 (Somatic / metabolic diseases)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6 (Functional ability & social circumstances)
     - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7 (Other)
+- Added new ehealth-endpoint profile, based on FHIR R4 Endpoint resource. 
+- Added reference of ehealth-endpoint to ehealth-organization profile.
 
 ### Search parameters
 - Added search parameter `carePlan` on `ehealth-task` to be able to query by CarePlan
