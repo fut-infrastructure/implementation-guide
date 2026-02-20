@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ehealth-usage-context-workflow",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow",
+  "version": "1.0.0",
+  "name": "usageContextWorkflow",
+  "title": "Usage Context Workflow",
+  "status": "active",
+  "experimental": true,
+  "date": "2026-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of workflows",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow-tele-wound"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-usage-context-body-site-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-body-site-tele-wound",
+  "version": "1.0.0",
+  "name": "bodyUsageContextSiteTeleWound",
+  "title": "Usage Context for Tele Wound Body Site",
+  "status": "active",
+  "experimental": true,
+  "date": "2026-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of body site for tele wound domain.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/body-site"
+        ]
+      }
+    ]
+  }
+}

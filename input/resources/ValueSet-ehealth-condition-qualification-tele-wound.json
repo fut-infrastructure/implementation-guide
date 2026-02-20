@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-condition-qualification-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-condition-qualification-tele-wound",
+  "version": "1.0.0",
+  "name": "conditionQualificationTeleWound",
+  "title": "Condition Qualification for Tele Wound",
+  "status": "active",
+  "experimental": true,
+  "date": "2026-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of condition qualifications for tele wound domain.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/conditions"
+        ]
+      }
+    ]
+  }
+}

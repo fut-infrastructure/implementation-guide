@@ -1,5 +1,26 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.2. todo: change to semver format before release
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
+- Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow-tele-wound ValueSet for specific Tele-Wound workflows.
+- Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow ValueSet.
+- Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-task-type-tele-wound ValueSet for specific Tele-Wound tasks.
+- Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-task-type ValueSet.
+- Added http://ehealth.sundhed.dk/vs/ehealth-usage-context-body-site-tele-wound ValueSet for specific Tele-Wound body-sites.
+- Added http://ehealth.sundhed.dk/vs/usage-context-body-site ValueSet.
+- Added http://ehealth.sundhed.dk/vs/ehealth-condition-qualification-tele-wound ValueSet for specific Tele-Wound condition qualification.
+- Added http://ehealth.sundhed.dk/vs/ehealth-condition-qualification ValueSet.
+### ConceptMaps
+### Resource/profile changes
+- Added extension ehealth-provider-affiliation to practitioner.
+
 ## 8.0.0
 ### General changes (Documentation)
 - Updated ehealth-consent introduction to clarify usage of affiliation extension and search parameters.

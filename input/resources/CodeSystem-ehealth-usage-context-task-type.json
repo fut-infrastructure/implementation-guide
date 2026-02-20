@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cs-ehealth-usage-context-task-type",
+  "url": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-task-type",
+  "version": "1.0.0",
+  "name": "eHealthUsageContextTaskType",
+  "title": "eHealth Usage Context Task Type",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-28T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Codes for types of tasks related to resources like PlanDefinition, ActivityDefinition, Questionnaire, etc. using the eHealth Infrastructure and wanting to mark various resources as intended for their non-exclusive use.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "patient-anamnesis ",
+      "display": "Patient anamnesis",
+      "definition": "Indsamling af oplysninger om patientens sygehistorie, symptomer og relevante baggrundsforhold gennem samtale mellem sundhedsperson og patient."
+    },
+    {
+      "code": "wound-anamnesis",
+      "display": "Wound anamnesis",
+      "definition": "Indsamling af oplysninger om sårets opståen, varighed, tidligere behandling og underliggende årsager gennem samtale mellem sundhedsperson og patient."
+    },
+    {
+      "code": "wound-anamnesis-diagnosis-related",
+      "display": "Wound anamnesis, diagnosis-related",
+      "definition": "Indsamling af oplysninger om sårets karakteristika og udvikling, der er relevante for at stille eller bekræfte en diagnose af den underliggende årsag til såret."
+    }
+  ]
+}
