@@ -6,7 +6,7 @@
   "name": "eHealthUsageContextType",
   "title": "eHealth Usage Context Type",
   "status": "active",
-  "experimental": true,
+  "experimental": false,
   "date": "2020-11-20T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
