@@ -1301,6 +1301,16 @@
           ]
         },
         {
+          "code": "DM72",
+          "display": "Fibroblastsygdomme",
+          "concept": [
+            {
+              "code": "DM726",
+              "display": "Nekrotiserende bløddelsinfektion"
+            }
+          ]
+        },
+        {
           "code": "DQ82",
           "display": "Andre medfødte misdannelser af hud",
           "concept": [
@@ -1343,12 +1353,12 @@
         {
           "code": "DR69",
           "display": "Ukendte og ikke specificerede årsager til sygdom",
-            "concept": [
-                {
-                "code": "DR699",
-                "display": "Sygdom uden kendt eller specificeret årsag"
-                }
-            ]
+          "concept": [
+            {
+              "code": "DR699",
+              "display": "Sygdom uden kendt eller specificeret årsag"
+            }
+          ]
         },
         {
           "code": "DS00",
