@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ehealth-communication-search-topic",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/topic",
+  "name": "topic",
+  "status": "active",
+  "date": "2026-02-02T12:00:00+00:00",
+  "code": "topic",
+  "base": [
+    "Communication"
+  ],
+  "type": "token",
+  "description": "Search parameter for finding communication based on topic",
+  "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-search-topic')",
+  "xpathUsage": "normal"
+}

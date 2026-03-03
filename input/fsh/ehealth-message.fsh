@@ -8,6 +8,7 @@ Parent: Communication
 * extension contains ehealth-communication-senderCareTeam named senderCareTeam 0..1
 * extension contains ehealth-restriction-category named restrictionCategory 0..*
 * extension contains ehealth-thread-id named threadId 0..1
+* extension contains ehealth-message-topic named topic 0..1
 * extension contains ehealth-period named period 0..*
 * extension contains ehealth-administrative-status named administrativeStatus 1..1
 * extension contains ehealth-title named title 0..1
@@ -62,6 +63,12 @@ Title:     "Thread id"
 Description: "A logical id identifying a set of messages, which are grouped in a thread. Can be supplied by the client, eg. as a UUID"
 * . ^short = "Thread id"
 * value[x] only string
+
+Extension: ehealth-message-topic
+Title:     "Search topic"
+Description: "A token to identify the topic of a message for search purposes"
+* . ^short = "Search topic"
+* value[x] only Coding
 
 Extension: ehealth-administrative-status
 Title:     "Administrative status"
