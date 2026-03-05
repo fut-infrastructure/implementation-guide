@@ -12,6 +12,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 ### ConceptMaps
+- Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
