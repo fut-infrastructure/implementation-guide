@@ -35,104 +35,34 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "281300000",
-            "display": "Below reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Below reference range"
-              }
-            ]
+            "code": "281300000"
           },
           {
-            "code": "281302008",
-            "display": "Above reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Above reference range"
-              }
-            ]
+            "code": "281302008"
           },
           {
-            "code": "281301001",
-            "display": "Within reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Within reference range"
-              }
-            ]
+            "code": "281301001"
           },
           {
-            "code": "394844007",
-            "display": "Outside reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Outside reference range"
-              }
-            ]
+            "code": "394844007"
           },
           {
-            "code": "442686002",
-            "display": "Measurement finding below reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Measurement finding below reference range"
-              }
-            ]
+            "code": "442686002"
           },
           {
-            "code": "442756004",
-            "display": "Measurement finding above reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Measurement finding above reference range"
-              }
-            ]
+            "code": "442756004"
           },
           {
-            "code": "442082004",
-            "display": "Measurement finding within reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Measurement finding within reference range"
-              }
-            ]
+            "code": "442082004"
           },
           {
-            "code": "442096005",
-            "display": "Measurement finding outside reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Measurement finding outside reference range"
-              }
-            ]
+            "code": "442096005"
           },
           {
-            "code": "449171008",
-            "display": "Oxygen saturation below reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Oxygen saturation below reference range"
-              }
-            ]
+            "code": "449171008"
           },
           {
-            "code": "448225001",
-            "display": "Oxygen saturation within reference range",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Oxygen saturation within reference range"
-              }
-            ]
+            "code": "448225001"
           }
         ]
       },
@@ -140,24 +70,10 @@
         "system": "urn:oid:1.2.208.184.100.1",
         "concept": [
           {
-            "code": "RAL",
-            "display": "Terapeutiske grænseværdier for RØD alarm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Terapeutiske grænseværdier for RØD alarm"
-              }
-            ]
+            "code": "RAL"
           },
           {
-            "code": "GAL",
-            "display": "Terapeutiske grænseværdier for GUL alarm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Terapeutiske grænseværdier for GUL alarm"
-              }
-            ]
+            "code": "GAL"
           }
         ]
       },
@@ -165,24 +81,10 @@
         "system": "http://ehealth.sundhed.dk/cs/reference-range-type",
         "concept": [
           {
-            "code": "RELRAL",
-            "display": "Terapeutic relative reference range for RED alarm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Terapeutiske relative grænseværdier for RØD alarm"
-              }
-            ]
+            "code": "RELRAL"
           },
           {
-            "code": "RELGAL",
-            "display": "Terapeutic relative reference range for YELLOW alarm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Terapeutiske relative grænseværdier for GUL alarm"
-              }
-            ]
+            "code": "RELGAL"
           }
         ]
       },

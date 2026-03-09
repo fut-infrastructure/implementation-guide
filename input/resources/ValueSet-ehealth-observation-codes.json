@@ -27,96 +27,28 @@
         "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
-            "code": "DNK05472",
-            "display": "Blodtryk systolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(systolisk); tryk = ? mmHg"
-              }
-            ]
+            "code": "DNK05472"
           },
           {
-            "code": "DNK05473",
-            "display": "Blodtryk diastolisk;Arm",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Arm—Blodtryk(diastolisk); tryk = ? mmHg"
-              }
-            ]
+            "code": "DNK05473"
           },
           {
-            "code": "NPU03011",
-            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Oxygen saturation"
-              },
-              {
-                "language": "da",
-                "value": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
-              }
-            ]
+            "code": "NPU03011"
           },
           {
-            "code": "NPU21692",
-            "display": "Hjerte—Systole; frekv. = ? × 1/min",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Heartbeats per minute"
-              },
-              {
-                "language": "da",
-                "value": "Hjerte—Systole; frekv. = ? × 1/min"
-              }
-            ]
+            "code": "NPU21692"
           },
           {
-            "code": "NPU03804",
-            "display": "Pt—Legeme; masse = ? kg",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Weight in kilogrammes"
-              },
-              {
-                "language": "da",
-                "value": "Pt—Legeme; masse = ? kg"
-              }
-            ]
+            "code": "NPU03804"
           },
           {
-            "code": "NPU27281",
-            "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
-              }
-            ]
+            "code": "NPU27281"
           },
           {
-            "code": "NPU03794",
-            "display": "Pt—Legeme; højde = ? m",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Pt—Legeme; højde = ? m"
-              }
-            ]
+            "code": "NPU03794"
           },
           {
-            "code": "NPU08676",
-            "display": "Pt—Legeme; temp. = ? °C",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Pt—Legeme; temp. = ? °C"
-              }
-            ]
+            "code": "NPU08676"
           }
         ]
       },
@@ -124,104 +56,34 @@
         "system": "urn:oid:1.2.208.184.100.8",
         "concept": [
           {
-            "code": "MCS88015",
-            "display": "FEV1;Lunge",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Lunge—Lungefunktionsundersøgelse FEV1; vol. = ? L"
-              }
-            ]
+            "code": "MCS88015"
           },
           {
-            "code": "MCS88016",
-            "display": "FVC;Lunge",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Lunge—Lungefunktionsundersøgelse vitalkapasitet FVC; vol. = ? L"
-              }
-            ]
+            "code": "MCS88016"
           },
           {
-            "code": "MCS88017",
-            "display": "FEV1/FVC;Lunge",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Lunge—FEV1/FVC; ratio = ?"
-              }
-            ]
+            "code": "MCS88017"
           },
           {
-            "code": "MCS88021",
-            "display": "MRC skala;Pt(KOL)",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Pt(KOL) —MRC skala; arb.antal(værdi 1-5) = ?"
-              }
-            ]
+            "code": "MCS88021"
           },
           {
-            "code": "MCS88023",
-            "display": "FEV1 af forventet værdi;Pt(KOL)",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Pt(KOL) - FEV1 i % af den forventede værdi (efter højde,alder og køn); ratio = ?"
-              }
-            ]
+            "code": "MCS88023"
           },
           {
-            "code": "MCS88050",
-            "display": "Rejse sætte sig testen;Pt",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Rejse sætte sig testen;Pt"
-              }
-            ]
+            "code": "MCS88050"
           },
           {
-            "code": "MCS88137",
-            "display": "CAT score;Pt",
-            "designation": [
-              {
-                "language": "da",
-                "value": "CAT score;Pt"
-              }
-            ]
+            "code": "MCS88137"
           },
           {
-            "code": "MCS88192",
-            "display": "Skridt per dag;Pt",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Skridt per dag;Pt"
-              }
-            ]
+            "code": "MCS88192"
           },
           {
-            "code": "MCS88193",
-            "display": "Skridt per uge;Pt",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Skridt per uge;Pt"
-              }
-            ]
+            "code": "MCS88193"
           },
           {
-            "code": "MCS88194",
-            "display": "Skridt;Pt",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Skridt;Pt"
-              }
-            ]
+            "code": "MCS88194"
           }
         ]
       },
@@ -229,8 +91,7 @@
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
-            "code": "ZZ3170",
-            "display": "Hjemmeblodtryksmåling udført af patienten"
+            "code": "ZZ3170"
           }
         ]
       },
@@ -238,28 +99,22 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "72287-6",
-            "display": "Wound size panel"
+            "code": "72287-6"
           },
           {
-            "code": "39126-8",
-            "display": "Length of Wound"
+            "code": "39126-8"
           },
           {
-            "code": "39125-0",
-            "display": "Width of Wound"
+            "code": "39125-0"
           },
           {
-            "code": "39127-6",
-            "display": "Depth of Wound"
+            "code": "39127-6"
           },
           {
-            "code": "89260-4",
-            "display": "Area of wound"
+            "code": "89260-4"
           },
           {
-            "code": "94083-3",
-            "display": "Wound volume"
+            "code": "94083-3"
           }
         ]
       }

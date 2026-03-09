@@ -32,14 +32,7 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "900000000000469006",
-            "display": "URL",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Hyperlink"
-              }
-            ]
+            "code": "900000000000469006"
           }
         ]
       }

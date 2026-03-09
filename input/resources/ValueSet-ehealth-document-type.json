@@ -32,24 +32,10 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "69730-0",
-            "display": "Instructions",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Instruktioner"
-              }
-            ]
+            "code": "69730-0"
           },
           {
-            "code": "48766-0",
-            "display": "Information source",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Informationskilde"
-              }
-            ]
+            "code": "48766-0"
           }
         ]
       }
