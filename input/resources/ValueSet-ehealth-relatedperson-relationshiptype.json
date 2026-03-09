@@ -15,124 +15,40 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
         "concept": [
           {
-            "code": "FAMMEMB",
-            "display": "family member",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Øvrig familie"
-              }
-            ]
+            "code": "FAMMEMB"
           },
           {
-            "code": "SIB",
-            "display": "sibling",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Søskende"
-              }
-            ]
+            "code": "SIB"
           },
           {
-            "code": "DOMPART",
-            "display": "domestic partner",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Registreret partner"
-              }
-            ]
+            "code": "DOMPART"
           },
           {
-            "code": "ROOM",
-            "display": "Roommate",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Samboende"
-              }
-            ]
+            "code": "ROOM"
           },
           {
-            "code": "U",
-            "display": "Unknown",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Uspecificeret pårørende"
-              }
-            ]
+            "code": "U"
           },
           {
-            "code": "NBOR",
-            "display": "neighbor",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Nabo"
-              }
-            ]
+            "code": "NBOR"
           },
           {
-            "code": "CHLDINLAW",
-            "display": "child-in-law",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Svigerbarn"
-              }
-            ]
+            "code": "CHLDINLAW"
           },
           {
-            "code": "GRNDCHILD",
-            "display": "grandchild",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Barnebarn"
-              }
-            ]
+            "code": "GRNDCHILD"
           },
           {
-            "code": "PRN",
-            "display": "parent",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Forældre"
-              }
-            ]
+            "code": "PRN"
           },
           {
-            "code": "O",
-            "display": "Other",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Ingen relationer"
-              }
-            ]
+            "code": "O"
           },
           {
-            "code": "CHILD",
-            "display": "child",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Barn"
-              }
-            ]
+            "code": "CHILD"
           },
           {
-            "code": "SPS",
-            "display": "spouse",
-            "designation": [
-              {
-                "language": "da",
-                "value": "Ægtefælle"
-              }
-            ]
+            "code": "SPS"
           }
         ]
       }
