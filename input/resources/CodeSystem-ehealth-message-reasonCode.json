@@ -165,6 +165,28 @@
           "value": "Påmindelse om videoaftale"
         }
       ]
+    },
+    {
+      "code": "NewEHealthMessage",
+      "display": "New eHealth Message",
+      "definition": "New eHealth Message",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ny eHealth besked"
+        }
+      ]
+    },
+    {
+      "code": "MissingMeasurement",
+      "display": "Missing Measurement",
+      "definition": "Missing Measurement",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Manglende måling"
+        }
+      ]
     }
   ]
 }
