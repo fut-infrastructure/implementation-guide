@@ -16,16 +16,13 @@
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
-            "code": "DJ44",
-            "display": "Kronisk obstruktiv lungesygdom"
+            "code": "DJ44"
           },
           {
-            "code": "DE10",
-            "display": "Type 1-diabetes"
+            "code": "DE10"
           },
           {
-            "code": "DI20",
-            "display": "Angina pectoris"
+            "code": "DI20"
           }
         ]
       }
