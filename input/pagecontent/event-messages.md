@@ -150,7 +150,7 @@ topic: `ehealth-application-event`
     },
     "eventType" : {
       "type" : "string",
-      "description" : "{ enum : [ AppointmentReminder, VideoAppointmentReminder, ReminderSubmitMeasurement, NewEHealthMessage, MissingMeasurement ] }"
+      "enum" : [ "AppointmentReminder", "VideoAppointmentReminder", "ReminderSubmitMeasurement", "NewEHealthMessage", "MissingMeasurement" ]
     },
     "payload" : {
       "type" : "string",
@@ -182,9 +182,12 @@ topic: `ehealth-application-event`
 ```
 ##### Properties
 - `ehealth.system`: The coexistence system tag (also present in the JSON body)
-- `eventType`: The type of application event
+- `eventType`: The type of application event (see Event Types table below)
 - `messageType`: The name of the message type
 - `messageVersion`: The version of the message type, eg. "1.0"
+- `payload`: Notification text content from the CommunicationRequest
+- `userReference`: The reference (absolute URL) of the Patient resource representing the citizen
+- `resourceReference`: Array of references to related resources, each with a `label` (resource type) and `reference` (absolute URL)
 
 ##### Event Types
 
