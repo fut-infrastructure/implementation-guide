@@ -42,6 +42,16 @@
           "value": "eBoks"
         }
       ]
+    },
+    {
+      "code": "application-event",
+      "display": "Application Event",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Applikationsbegivenhed"
+        }
+      ]
     }
   ]
 }
