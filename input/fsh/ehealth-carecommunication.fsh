@@ -40,7 +40,7 @@ Parent: Communication
 * encounter ^short = "Shall contain a reference to an Encounter resource with a episodeOfCare-identifier, if the identifier is included in a previous message."
 
 * topic 0..1 MS
-* topic ^short = "Must be added when category is "other". Topic must be added in the text-element."
+* topic ^short = "Must be added when category is \"other\". Topic must be added in the text-element."
 * topic.text 1..1 MS
 * topic.text ^short = "Plain text representation of the concept."
 * topic.text ^definition = "The topic must be present."
@@ -73,8 +73,6 @@ Parent: Communication
 
 * extension contains ehealth-administrative-status named administrativeStatus 1..1
 
-* extension contains ehealth-carecommunication-bundle named CorrespondingMedComCareCommunicationBundle 0..1 MS
-
 * payload 1..*
 * payload ^slicing.discriminator.type = #type
 * payload ^slicing.discriminator.path = "content[x]"
@@ -84,14 +82,12 @@ Parent: Communication
 * payload[string].contentString 1..1 MS
 * payload[string].extension contains
     ehealth-carecommunication-datetime named date 1..1 MS and
-    ehealth-carecommunication-contact-point named authorContact 1..1 MS and
-    ehealth-carecommunication-payload-identifier named identifier 0..1 MS
+    ehealth-carecommunication-payload-identifier named identifier 1..1 MS
 
 * payload[attachment].contentAttachment 1..1 MS
 * payload[attachment].extension contains
     ehealth-carecommunication-datetime named date 1..1 MS and
-    ehealth-carecommunication-contact-point named authorContact 0..1 MS and
-    ehealth-carecommunication-payload-identifier named identifier 0..1 MS
+    ehealth-carecommunication-payload-identifier named identifier 1..1 MS
 
 
 // Extensions
@@ -103,13 +99,16 @@ Description: "References the sending PractitionerRole (Actor), the Practitioner,
 * extension contains
     actor 1..1 MS and
     practitioner 1..1 MS and
-    careteam 0..1 MS
+    contactPoint 0..1 MS and
+    careTeam 0..1 MS
 * extension[actor] ^short = "Sending PractitionerRole"
 * extension[actor].value[x] only Reference(PractitionerRole)
 * extension[practitioner] ^short = "The underlying Practitioner for this sender"
 * extension[practitioner].value[x] only Reference(Practitioner)
-* extension[careteam] ^short = "Optionally, the involved CareTeam"
-* extension[careteam].value[x] only Reference(CareTeam)
+* extension[careTeam] ^short = "Optionally, the involved CareTeam"
+* extension[careTeam].value[x] only Reference(CareTeam)
+* extension[contactPoint] ^short = "Optional contactpoint for the sender"
+* extension[contactPoint].value[x] only ContactPoint
 
 Extension: ehealth-carecommunication-destination
 Title: "Destination Extension"
@@ -117,28 +116,16 @@ Description: "Reference to the destination Organization for this communication."
 * . ^short = "Organization receiving the message"
 * value[x] only Reference(Organization)
 
-Extension: ehealth-carecommunication-bundle
-Title: "Destination Extension"
-Description: "Reference to the careCommunication Bundle received."
-* . ^short = "carecommunication bundle"
-* value[x] only Reference(Bundle)
-
 Extension: ehealth-carecommunication-datetime
 Title: "DateTime Extension"
 Description: "Date and time of the payload segment."
 * . ^short = "Payload dateTime"
 * value[x] only dateTime
 
-Extension: ehealth-carecommunication-contact-point
-Title: "Contact Extension"
-Description: "Contact point for the author of this payload segment."
-* . ^short = "Payload author contact"
-* value[x] only ContactPoint
-
 Extension: ehealth-carecommunication-payload-identifier
 Title: "Identifier Extension"
 Description: "Extension to hold an Identifier for a payload. Value shall be a UUID identifier version 4."
-* value[x] only Identifier
+* value[x]
 
 Extension: ehealth-carecommunication-origin
 Title: "sender organization"
@@ -157,15 +144,15 @@ Description: "The type of the message. If inResponseTo is present, the type can 
 
 ValueSet: MessageType
 Title: "Message Type ValueSet"
-Description: "Allowed message types: new, reply, forward."
+Description: "Allowed message types: new-message, reply-message, forward-message."
 * ^url = "http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-category"
 * ^compose.include.system = "http://ehealth.sundhed.dk/cs/message-type"
-* ^compose.include.concept[+].code = #new
+* ^compose.include.concept[+].code = #new-message
 * ^compose.include.concept[=].display = "New Message"
-* ^compose.include.concept[+].code = #reply
-* ^compose.include.concept[=].display = "Reply"
-* ^compose.include.concept[+].code = #forward
-* ^compose.include.concept[=].display = "Forward"
+* ^compose.include.concept[+].code = #reply-message
+* ^compose.include.concept[=].display = "Reply Message"
+* ^compose.include.concept[+].code = #forward-message
+* ^compose.include.concept[=].display = "Forward Message"
 
 ValueSet: EhealthCareCommunicationCategoryVS
 Id: ehealth-carecommunication-category
@@ -190,9 +177,9 @@ CodeSystem: MessageTypeCS
 Title: "Message Type CodeSystem"
 Description: "Allowed codes for message type."
 * ^url = "http://ehealth.sundhed.dk/cs/message-type"
-* #new "New Message"
-* #reply "Reply"
-* #forward "Forward"
+* #new-message "New Message"
+* #reply-message "Reply"
+* #forward-message "Forward"
 
 CodeSystem: EhealthCareCommunicationCategoryCS
 Id: ehealth-carecommunication-category
@@ -276,5 +263,5 @@ Description: """
 If messagetype is 'new' or 'reply', the sender extension must be present.
 If 'forward', sender may be absent.
 """
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'new' or code = 'reply').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
 Severity: #error
