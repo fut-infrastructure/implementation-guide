@@ -18,6 +18,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "This parameter is used to control if the report should be anonymized or not. If the value is set to NONE (no anonymization) and the user lacks the required permission, an exception is thrown.",
       "type": "string"
     },
     {
@@ -25,6 +26,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "CareTeam: Filter on CareTeam.ManagingOrganization match. PractitionerRole: Filter on PractitionerRole.Organization match.",
       "type": "Reference"
     },
     {
@@ -32,6 +34,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "CareTeam: Filter on CareTeam.participant.period overlap. PractitionerRole: Filter on PractitionerRole.period overlap.",
       "type": "Period"
     },
     {

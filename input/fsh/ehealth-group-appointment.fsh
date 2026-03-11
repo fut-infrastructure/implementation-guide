@@ -96,7 +96,7 @@ Usage: #example
 * participant[=].extension[=].valueReference = Reference(CareTeam/108752)
 * participant[=].extension[+].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-ext-careteam"
 * participant[=].extension[=].valueReference = Reference(CareTeam/108752)
-* participant[=].actor = Reference(1)
+* participant[=].actor = Reference(Patient/1)
 * participant[=].required = #required
 * participant[=].status = #accepted
 

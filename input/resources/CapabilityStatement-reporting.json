@@ -3,12 +3,12 @@
   "id": "reporting",
   "name": "reporting",
   "status": "active",
-  "date": "2025-10-21T10:35:21.882+00:00",
+  "date": "2026-01-13T11:12:00.772+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "reporting",
-    "version": "1.22.0"
+    "version": "1.23.0"
   },
   "implementation": {
     "description": "eHealth reporting service",
@@ -39,6 +39,9 @@
       "searchInclude": [ "*" ]
     } ],
     "operation": [ {
+      "name": "reindex",
+      "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
       "name": "get-report-job-status",
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-report-job-status",
       "documentation": "### Status Contents \nThis operation returns status for reports scheduled by the user (by schedule or execute)\n### Output\nThe output is a Bundle containing Parameters resources for each scheduled report.\nThe parts of the Parameters describe the class of report, the parameters that the report\nwas scheduled with, the user ID, the status of the report, a reference to the report Binary\nand time of creation, start, and end of execution.\n### Example output\n{\n  'resourceType': 'Bundle',\n  'type': 'collection',\n  'entry': [\n    {\n      'fullUrl': 'ce35bcd5-4bb2-4c6e-b230-5347df1fe9bc',\n      'resource': {\n        'resourceType': 'Parameters',\n        'id': 'ce35bcd5-4bb2-4c6e-b230-5347df1fe9bc',\n        'parameter': [\n          {\n            'name': 'reportJob',\n            'part': [\n              {\n                'name': 'reportClass',\n                'valueString': 'com.systematic.ehealth.reporting.reports.PatientsUsageReport'\n              },\n              {\n                'name': 'userId',\n                'valueString': '0aaca7cd-67c3-48dd-a8c4-0cceecb5d276'\n              },\n              {\n                'name': 'status',\n                'valueString': 'DONE'\n              },\n              {\n                'name': 'binary',\n                'valueReference': {\n                  'reference': 'https://reporting.local.ehealth.sundhed.dk/fhir/Binary/7'\n                }\n              },\n              {\n                'name': 'parameters',\n                'resource': {\n                  'resourceType': 'Parameters',\n                  'parameter': [\n                    {\n                      'name': 'anonymization',\n                      'valueString': 'None'\n                    }\n                  ]\n                }\n              },\n              {\n                'name': 'created',\n                'valueDateTime': '2023-10-12T09:51:50+00:00'\n              },\n              {\n                'name': 'started',\n                'valueDateTime': '2023-10-12T09:51:50+00:00'\n              },\n              {\n                'name': 'ended',\n                'valueDateTime': '2023-10-12T09:51:51+00:00'\n              }\n            ]\n          }\n        ]\n      }\n    }\n  ]\n}"
@@ -199,15 +202,15 @@
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-execute-careplan-and-episode-of-care-stats",
       "documentation": "### Report Contents\nThis report contains a count of active EpisodeOfCare and CarePlans.\n### Grouping \nThis report is grouped by ConditionCode. Each group is returned in a separate JSon file.\n### Parameters\n- organization: Filter on EpisodeOfCare.managingOrganization match\n- period: Filter on CarePlan.period overlap\n\n### Output\nOutput can be found in Binary.content. This is a Base64 encoded .zip file containing JSon files corresponding to the report groups.\n### Example output\nThe ConditionCode is a Fhir CodeableConcept. See the implementation guide for details\n\n    {\n        'ConditionCode': {\n            'valueCodeableConcept': {\n                'coding': [{\n                        'system': 'urn:oid:1.2.208.176.2.4',\n                        'code': 'DJ44'\n                    }\n                ]\n            }\n        },\n        'ConditionSummary': {\n            'activeEpisodeOfCareCount': 1,\n            'activeCarePlanCount': 1\n        }\n    }"
     }, {
-      "name": "reindex-terminology",
-      "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
-    }, {
       "name": "meta",
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
     }, {
       "name": "get-resource-counts",
       "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://reporting.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

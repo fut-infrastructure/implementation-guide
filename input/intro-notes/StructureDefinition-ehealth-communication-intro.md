@@ -14,7 +14,7 @@ In the eHealth infrastructure, the annotation is defined using the following ele
 * `ehealth-communication-recipientCareTeam` has same function as `recipient` but is used where the allowed reading entity is one or more CareTeams 
 * `ehealth-restriction-category` indicates, when `ehealth-communication-senderCareTeam` and/or `ehealth-communication-recipientCareTeam` refer to one
 or more CareTeams, what workflow areas/responsibilities of members of those CareTeams that the annotation is relevant for.  
-* `topic` refers to the measurement which the annotation is about. This can be zero or more Observation, zero or more QuestionnaireResponse and zero or more Media.
+* `about` refers to the measurement which the annotation is about. This can be zero or more Observation, zero or more QuestionnaireResponse and zero or more Media.
  At least one of Observation, QuestionnaireResponse or Media should be referred for the annotation to make sense.
 * `payload` contains the annotation text itself
  

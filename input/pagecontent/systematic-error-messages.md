@@ -42,6 +42,8 @@
 
 - `ACTIVITYDEFINITION_SHARINGAPPROVALPOLICY_NOT_SET`: Resource %s with code: %s | %s must have SharingApprovalPolicy set.
 
+- `ACTIVITYDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
+
 #### ehealth-appointment
 
 - `APPOINTMENT_LISTENER_APPOINTMENT_MISSING_CAREPLAN`: Appointment has no CarePlan
@@ -68,7 +70,7 @@
 
 - `ASSEMBLER_APD_MISSING_PATIENT_CPR`: Patient has no CPR number
 
-- `ASSEMBLER_PHMR_UNKNOWN_AUTHOR_TYPE`: Unknown author type:
+- `ASSEMBLER_PHMR_UNKNOWN_AUTHOR_TYPE`: Unknown author type: 
 
 #### ehealth-careplan
 
@@ -98,6 +100,8 @@
 
 - `CLINICAL_IMPRESSION_VALIDATION_STATE_FINDING_CODE_NOT_ALLOWED`: Invalidation/Invalidation Retraction finding code is not allowed for ClinicalImpression outside custom operation.
 
+- `CLINICAL_IMPRESSION_MEASUREMENT_VALIDITY_UPDATED_CODE_REQUIRED`: ClinicalImpressions for Invalidation/Invalidation Retraction must have ClinicalImpression.code=MeasurementValidityUpdated
+
 #### ehealth-codesystem
 
 - `CODESYSTEM_CONCEPT_CHANGE_NOT_ALLOWED_WHEN_ACTIVE`: Not allowed to remove or update concept when status is active.
@@ -110,7 +114,9 @@
 
 - `COMMUNICATIONREQUEST_SUBJECT_NOT_MATCHING_SERVICEREQUEST`: The subject for the CommunicationRequest: %s does not match the subject of the referenced ServiceRequest: %s
 
-- `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Excactly one recipient search parameter required
+- `COMMUNICATIONREQUEST_EXCACTLY_ONE_RECIPIENT_SEARCHPRARAM`: Exactly one recipient search parameter required
+
+- `COMMUNICATIONREQUEST_NO_SYSTEM_TAGS_WITHOUT_EOC`: CommunicationRequest must have a system tags when referencing an EpisodeOfCare
 
 #### ehealth-context
 
@@ -136,9 +142,25 @@
 
 #### ehealth-document
 
+- `DOCUMENT_REFERENCE_MISSING_URL`: DocumentReference to update must contain an URL identifying the content.
+
+- `DOCUMENT_REFERENCE_CONTENT_MANDATORY`: DocumentReference for material must contain exactly one content
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_UPDATE`: When updating registration of DocumentReference for material, data is only allowed for URLs identifying internal content.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_CREATE`: When registering a new DocumentReference for material, either a URL identifying external content, a URL identifying internal content or data in the Attachment must be provided.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ORIGIN_UPDATE`: It is not allowed to change the content origin from internal to external or vice versa.
+
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_DATA_EXTERNAL_ORIGIN`: It is not allowed to have data in the content attachment when the URL is external.
+
+- `DOCUMENT_REFERENCE_UPDATE_NOT_ALLOWED_FOR_FIELD`: DocumentReference for material does not allow update operations with changes for field: %s
+
+- `DOCUMENT_REFERENCE_SIZE_MUST_BE_PROVIDED_FOR_URL`: When providing URL instead of data for content, DocumentReference.attachment.size must be provided (number of bytes of content).
+
 - `DOCUMENT_NOT_OF_TYPE_QFDD`: The document is expected to be of type QFDD
 
-- `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be a SOR organization for query
+- `DOCUMENT_QUERY_SOR_ORGANIZATION_REQUIRED`: Security token organization context must be resolvable to a SOR identifier for query
 
 - `DOCUMENT_QUERY_XDS_ERROR`: The following errors where received from Document Sharing
 
@@ -154,6 +176,28 @@
 
 - `DOCUMENTREFERENCE_SUBJECT_REFER_TO_PATIENT`: It is not possible to set a patient as a subject for a Document reference
 
+- `DOCUMENTREFERENCE_EPISODEOFCARE_CONTEXT_ENCOUNTER`: DocumentReference for general material must not contain references to EpisodeOfCare in context.encounter
+
+- `DOCUMENTREFERENCE_STORAGE_SERVICE_UPLOAD_ERROR`: Failed to upload material: Invalid response from storage service
+
+- `DOCUMENTREFERENCE_SUBJECT_MANDATORY`: DocumentReference.subject is mandatory, but is not set
+
+- `DOCUMENTREFERENCE_ENCOUNTER_MANDATORY`: DocumentReference.context.encounter must have exactly one reference
+
+- `DOCUMENTREFERENCE_URL_CHANGED`: The contents attachment.url cannot be changed. The url was: %s, but the new url is: %s
+
+- `DOCUMENTREFERENCE_INTERNAL_URL_NO_CONTENT`: No content found at internal URL: %s
+
+- `DOCUMENTREFERENCE_INTERNAL_URL_REGISTRATION_MUST_MATCH_CONTENT`: DocumentReference.context.encounter and DocumentReference.subject must match EpisodeOfCare and Patient for content at internal URL: %s
+
+- `DOCUMENTREFERENCE_PATIENT_MATERIAL_NOT_ALLOWED`: It is not possible to create or update a DocumentReference for patient-specific material on this service.
+
+- `DOCUMENTREFERENCE_EXTERNAL_URL_NOT_ALLOWED`: It is not allowed to set an external url for patient-specific material
+
+- `DOCUMENTREFERENCE_INVALID_CITIZEN_SPECIFIC_DATA`: When the content is patient-specific material, either an internal content URL or data must be provided
+
+- `DOCUMENTREFERENCE_NOT_CITIZEN_SPECIFIC`: Patient-specific material must use the correct category code, but is: %s
+
 #### ehealth-episodeofcare
 
 - `EPISODEOFCARE_CREATE_WRONG_EOC_COUNT`: Bundle has to contain only one Episode of Care
@@ -166,9 +210,13 @@
 
 - `EPISODEOFCARE_CREATE_INCORRECT_CONDITION_SUBJECT`: EpisodeOfCare and Condition doesn't point to the same Patient
 
+- `EPISODEOFCARE_CREATE_MISSING_COEXISTENCE_TAGS`: Missing coexistence-tags in JWToken when creating EpisodeOfCare
+
+- `EPISODEOFCARE_CREATE_INVALID_COEXISTENCE_TAGS`: Invalid Conditions provided when creating EpisodeOfCare using coexistence-tags: %s
+
 - `EPISODEOFCARE_PATCH_NO_CONSENT`: No valid Episode Of Care related consent
 
-- `EPISODEOFCARE_CREATE_PATIENT_MUST_BE_ACTIVE_AND_NOT_DECEASED`: Patient.active must be true and Patient.deceased must be false to create episode of care
+- `EPISODEOFCARE_CREATE_PATIENT_MUST_NOT_BE_DECEASED`: Patient.deceased must be false to create episode of care
 
 - `EPISODEOFCARE_CREATE_STATUS_HISTORY_NOT_EMPTY`: It is not allowed to fill status history manually
 
@@ -180,7 +228,9 @@
 
 - `EPISODEOFCARE_IS_CONTEXT_ALLOWED_MATCH_NOT_FOUND`: It is not possible to set the Episode Of Care as a context
 
-- `EPISODEOFCARE_TEAM_REFERENCE_MISSING`: It is not possible to add or replace team without a CareTeam reference
+- `EPISODEOFCARE_CROSS_TEAM_SEARCH_INVALID_CONDITION_PARAMETER`: When using cross-team search on EpisodeOfCare, Condition parameter must use the Condition:code chained property
+
+- `EPISODEOFCARE_CROSS_TEAM_SEARCH_CONDITION_INVALID_AGAINST_TREATMENT_AREA`: Condition:code search parameter must be valid against treatment area determined by coexistence-tag: %s
 
 #### ehealth-library
 
@@ -202,6 +252,8 @@
 
 - `LIBRARY_EVALUATE_UNABLE_TO_RESOLVE_RESOURCE`: Not able to resolve %s when input is of type %s.
 
+- `LIBRARY_EVALUATE_UNABLE_TO_RESOLVE_HISTORICAL_RESOURCE`: Not able to resolve historical %s when input is of type %s.
+
 - `LIBRARY_EVALUATE_DURATION_UNIT_CODE_UNKNOWN`: Unsupported code %s for Duration.code. Duration.code should be a valid UCUM code. Supported codes are ('s', 'min', 'h', 'd', 'wk', 'mo', 'a').
 
 - `LIBRARY_EVALUATE_LOGIC_RULE_INVALID_INPUT`: Error evaluating logic rule. Category: %s, Focus: %s, RuleDescription: %s
@@ -211,6 +263,40 @@
 - `LIBRARY_UNKNOWN_IDENTIFIER`: Unable to find unique Library with identifier: %s and name: %s. Number of search results: %s
 
 - `LIBRARY_MISSING_IDENTIFIER`: Library with identifier: %s and name: %s does not have identifier of type: %s
+
+- `LIBRARY_EVALUATE_LIMIT_EXCEEDED`: Limit %s exceeds the maximum allowed soft limit of %s. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_SORT_PATH_NOT_RECOGNIZED`: Sort path %s is not recognized. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_SORT_DIRECTION_NOT_RECOGNIZED`: Sort direction %s is not recognized. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_SORT_EMPTY`: Sort path is empty. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_LIMITS_EXCEEDED`: Duration %s exceeds the maximum allowed duration of %s months or limit %s exceeds the maximum allowed soft limit of %s. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_MISSING_DURATION_OR_LIMIT`: Duration or limit not set. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_DATE_FILTER_PATH_NOT_RECOGNIZED`: DateFilter path %s is not recognized. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_DATE_FILTER_EMPTY`: DateFilter path is empty. Historical data will not be processed for library %s
+
+#### ehealth-material
+
+- `MATERIAL_COMMUNICATION_MISSING_PAYLOAD`: Expected a single payload entry on MaterialCommunication, but it is missing.
+
+- `MATERIAL_COMMUNICATION_MISSING_EPISODE_OF_CARE`: Missing EpisodeOfCare reference on MaterialCommunication
+
+- `MATERIAL_COMMUNICATION_PATIENT_MISMATCH_ON_EPISODEOFCARE`: Mismatch between Patient on MaterialCommunication and EpisodeOfCare. Subject on MaterialCommunication: %s, Patient on EpisodeOfCare: %s
+
+- `MATERIAL_COMMUNICATION_EPISODE_OF_CARE_MISMATCH_ON_CONTENT`: Mismatch between EpisodeOfCare on MaterialCommunication and DocumentReference content. EpisodeOfCare on MaterialCommunication: %s, EpisodeOfCare on DocumentReference content: %s
+
+- `MATERIAL_COMMUNICATION_PATIENT_MISMATCH_ON_CONTENT`: Mismatch between Patient on MaterialCommunication and DocumentReference content. Patient on MaterialCommunication: %s, Patient on DocumentReference content: %s
+
+- `MATERIAL_COMMUNICATION_UNABLE_TO_FIND_CONTENT`: Unable to find content for DocumentReference with id %s
+
+- `MATERIAL_COMMUNICATION_UPDATE_NOT_ALLOWED_FOR_FIELD`: MaterialCommunication does not allow update operations with changes for field: %s
+
+- `MATERIAL_COMMUNICATION_SUBJECT_AND_RECIPIENT_MISMATCH`: MaterialCommunication subject must also be the recipient.
 
 #### ehealth-measurement
 
@@ -326,6 +412,14 @@
 
 - `ORGANIZATION_MISSING_IDENTIFIER`: Organization %s does not have identifier of type: %s
 
+- `ORGANIZATION_REFERENCE_IDENTIFIER_MISSING_PROVIDER_NUMBER`: There are no identifiers of type ProviderNumber in the Organization reference list: %s
+
+- `ORGANIZATION_REFERENCE_IDENTIFIER_PROVIDER_NUMBER_NOT_UNIQUE`: The identifiers of type ProviderNumber are not unique in the Organization reference list: %s
+
+- `ORGANIZATION_NOT_FOUND`: No active Organization could be found for the ProviderNumber: %s
+
+- `ORGANIZATION_NO_COMMON_PARENT_FOUND_PROVIDER_NUMBER`: No common parent found for the ProviderNumber: %s
+
 #### ehealth-plandefinition
 
 - `PLANDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for PlanDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
@@ -339,6 +433,8 @@
 - `PLANDEFINITION_VALIDATE_ALL_REFERENCED_ACTIVITYDEFINITIONS_OR_SUBPLANS_SHOULD_BE_ACTIVE`: All referenced activity definitions or subplans should be with state: "active"
 
 - `PLANDEFINITION_MISSING_RELATED_ACTION`: An action points to a non-existing related action
+
+- `PLANDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
 
 #### ehealth-provenance
 
@@ -356,7 +452,7 @@
 
 #### ehealth-questionnaire
 
-- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMTPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
+- `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_EMPTY_PERIOD`: QuestionnaireResponse cannot have an effectivePeriod without start or end DateTimeType.
 
 - `QUESTIONNAIRE_RESPONSE_EFFECTIVE_PERIOD_INVALID_DATETIME`: QuestionnaireResponse has invalid DateTimeType on effectivePeriod.%s, must have minutes, seconds or millis precision and must have a timezone.
 
@@ -377,6 +473,8 @@
 %s Image in questionnaire item with linkID %s exceeds the maximum size of %s kB
 
 - `QUESTIONNAIRE_QFDD_DOES_NOT_EXIST_IN_DOCUMENT_TRANSFORMATION`: The QFDD with the identifier %s does not exist in document transformation
+
+- `QUESTIONNAIRE_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
 
 - `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_NOT_FOUND`: Code %s for CodeSystem %s not found
 
@@ -484,6 +582,8 @@
 
 - `TRANSFORMATION_DEPRECATE_DOCUMENT_NO_DOCUMENT_FOUND`: No matching document found
 
+- `TRANSFORMATION_GENERIC_NARRATIVE_ERROR`: Can't generate narrative for: %s
+
 - `TRANSFORMATION_QFDD_UNKNOWN_QUESTION_TYPE`: Unknown QFDD question type. Question id: %s
 
 - `TRANSFORMATION_QFDD_UNSUPPORTED_STRUCTURE`: The root item structure was neither an Information Only Section nor a Question Section. LinkId:  %s
@@ -492,7 +592,7 @@
 
 - `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_MISSING_STEPVALUE`: Questionnaire item with linkId '%s' has itemControl: 'slider' but has no step value extension.
 
-- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider' but either repeats if true. Was: %s. or maxOccursValue is larger than 1. Was: %s.
+- `TRANSFORMATION_QFDD_ITEM_WITH_SLIDER_NOT_MATCHING_DISCRETE_SLIDER`: Questionnaire item with linkId '%s' has itemControl: 'slider', but either Repeats is true or MaxOccurs is not null. Repeats was: %s and MaxOccurs was: %s.
 
 - `TRANSFORMATION_QFDD_CODESYSTEM_TITLE_MISSING`: CodeSystem title is missing, for CodeSystem with url: %s
 
@@ -592,21 +692,11 @@
 
 - `TRANSFORMATION_PHMR_MISSING_RESOURCE`: Input bundle missing resource: %s
 
-- `TRANSFORMATION_PHMR_NARRATIVE_ERROR`: Can't generate narrative for: %s
-
 - `TRANSFORMATION_HEADER_MISSING_CPR`: CPR is mandatory for patient but not present in fhir bundle
 
+- `TRANSFORMATION_PHMR_MISSING_OBSERVATION`: Observation is mandatory for PHMR
+
 - `TRANSFORMATION_PHMR_INVALID_OBSERVATION_CODING`: Observation coding system must be urn:oid:1.2.208.176.2.1
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_COMMENT_AUTHOR_REFERENCE`: The author of a measurement comment is a reference not provided in the bundle.
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_CODING`: Observation.observationRanges[x].type.coding.system should be http://www.example.com/medcom/message-codes
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_RAL`: RAL observation ranges should not have both High and Low set when transforming to PHRM, but High is: %s, and Low is: %s
-
-- `TRANSFORMATION_PHMR_INVALID_OBSERVATION_RANGES_GAL`: GAL observation ranges should not have both High and Low set when transforming to PHRM, unless either bound is replaced with a RAL reference range, but High is: %s, and Low is: %s
-
-- `TRANSFORMATION_PHMR_INVALID_NUMBER_OF_DECIMALS`: Value should have no more than 7 decimals, but is: %s
 
 - `TRANSFORMATION_PHMR_OBSERVATION_QUANTITY_MISSING`: Value should be Quantity type and not null
 
@@ -620,9 +710,29 @@
 
 - `TRANSFORMATION_PHMR_DOCUMENT_INVALID_EFFECTIVE`: Invalid Observation.effective, expecting DateTime, Period or Instant
 
+- `TRANSFORMATION_PHMR_CODESYSTEM_NOT_FOUND`: CodeSystem was not found. System: '%s'
+
+- `TRANSFORMATION_PHMR_DOCUMENT_OBSERVATION_ENTRY_CODESYSTEM_NAME_NOT_DEFINED`: PHMR document observation entry must have a CodeSystem name. No one defined for '%s'
+
+- `TRANSFORMATION_PHMR_CODE_NOT_FOUND_IN_CODESYSTEM`: Code '%s' was not found in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_DESIGNATION_FOR_CODE`: Could not find designation use 'phmr-short-name' for code '%s' in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_DESIGNATION_VALUE_FOR_CODE`: No value specified for designation use 'phmr-short-name'. Code: '%s'. CodeSystem: '%s'
+
 - `TRANSFORMATION_PHMR_MEASUREMENT_INVALID_METHOD_CODES`: Method codes for performerType and provisionMethod for observation with id '%s' could not be established.
 
-- `TRANSFORMATION_PHMR_MEASUREMENT_TOO_MANY_DECIMALS`: Could not transform measurement with reference range Low: %s and High: %s since we cannot correctly translate more than 7 decimals.
+- `TRANSFORMATION_PHMR_OBSERVATION_MISSING_UNIT_CODE_FOR_QUANTITY`: No unit code found for quantity with observation code '%s'
+
+- `TRANSFORMATION_PHMR_OBSERVATION_INVALID_UNIT_MAPPING_FOR_OBSERVATION_CODE`: Invalid UCUM unit mapping found for observation code '%s'. Observation has unit: '%s', but expected is one of ('%s')
+
+- `TRANSFORMATION_PHMR_OBSERVATION_MISSING_UNIT_MAPPING_FOR_OBSERVATION_CODE`: No UCUM unit mapping found for observation code '%s' in ConceptMap. Has unit code: '%s'
+
+- `TRANSFORMATION_PHMR_INVALID_COMBINATION_OBSERVATION_UNIT_AND_PHMR_UNIT_PROPERTY`: Invalid combination of observation unit: '%s' and PHMR unit property: '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_UNIT_PROPERTY_FOR_CODE`: Could not find property 'phmr-unit' for code '%s' in CodeSystem '%s'
+
+- `TRANSFORMATION_PHMR_NO_PHMR_UNIT_VALUE_PROPERTY_FOR_CODE`: No value specified for property 'phmr-unit'. Code: '%s'. CodeSystem: '%s'
 
 - `TRANSFORMATION_HEADER_MISSING_CONFIDENTIALITY_CODE`: Composition.confidentiality is mandatory
 
@@ -632,7 +742,7 @@
 
 - `TRANSFORMATION_HEADER_MISSING_COMPOSITION`: Composition expected for transformation is not found
 
-- `TRANSFORMATION_HEADER_MISSING_ATTESTER`: Composition.attester.party is mandatory for transformation
+- `TRANSFORMATION_HEADER_MISSING_ATTESTER`: Composition.attester must contain one Practitioner and one Organization if the document is shared manually
 
 - `TRANSFORMATION_HEADER_WRONG_TYPE_COMPOSITION_AUTHOR`: Composition.author should either be a Patient or Practitioner
 
@@ -640,7 +750,7 @@
 
 - `TRANSFORMATION_HEADER_AUTHOR_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.authorOrganization must contain SOR identifier: %s
 
-- `TRANSFORMATION_HEADER_ATTESTER_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.attester.party must contain SOR identifier: %s
+- `TRANSFORMATION_HEADER_ATTESTER_ORGANIZATION_MUST_CONTAIN_SOR_ID`: Composition.attester.party Organization must contain SOR identifier: %s
 
 - `TRANSFORMATION_HEADER_CUSTODIAN_MUST_CONTAIN_SOR_ID`: Custodian organization must contain SOR identifier: %s
 

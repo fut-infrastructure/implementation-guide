@@ -39,7 +39,7 @@ jobs:
     name: Transpile and publish to the IG release
     # A release is defined as a tag pushed to main
     if: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-larger-disk
     container: ghcr.io/trifork/ig-publisher:2.0.15
 
     steps:

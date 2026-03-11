@@ -36,26 +36,16 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "445988008",
-            "display": "Assessment using health assessment questionnaire (procedure)",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Assessment using health assessment questionnaire (procedure)"
-              }
-            ]
+            "code": "445988008"
           },
           {
-            "code": "229057006",
-            "display": "Meetings (procedure)"
+            "code": "229057006"
           },
           {
-            "code": "273586006",
-            "display": "Master questionnaire"
+            "code": "273586006"
           },
           {
-            "code": "409073007",
-            "display": "Instruction"
+            "code": "409073007"
           }
         ]
       },
@@ -63,12 +53,10 @@
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
-            "code": "ALCA00",
-            "display": "fysisk fremmøde"
+            "code": "ALCA00"
           },
           {
-            "code": "ALCA03",
-            "display": "virtuel kontakt"
+            "code": "ALCA03"
           }
         ]
       }

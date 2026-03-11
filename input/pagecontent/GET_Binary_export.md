@@ -1,0 +1,63 @@
+`GET [base]/Binary/C1ypRhxTQX4gw3pgiDcUS3wDnaQx7HcE`
+
+__Request Headers__
+```
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmYxNzg0NzItNzNkYS00MjNhLThiZDMtNDdkZjQ5OTcxMjJkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlRhc2suc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnNlYXJjaCIsIiRidWxrLWV4cG9ydCIsIkJpbmFyeS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
+User-Agent: HAPI-FHIR/8.0.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+Accept-Encoding: gzip
+```
+
+
+
+__Response Headers__
+```
+date: Fri, 05 Dec 2025 10:22:35 GMT
+x-request-id: cae66be3-d6c8-9e6c-9604-87cd8e8b8e35
+server: istio-envoy
+x-envoy-upstream-service-time: 22
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Fri, 05 Dec 2025 10:21:31 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 2a11d60e846cf75517568c106fc9bbaa
+x-powered-by: HAPI FHIR 8.0.0 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://task.local.ehealth.sundhed.dk/fhir/Binary/C1ypRhxTQX4gw3pgiDcUS3wDnaQx7HcE/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
+__Response__
+```json
+{
+  "resourceType": "Binary",
+  "id": "C1ypRhxTQX4gw3pgiDcUS3wDnaQx7HcE",
+  "meta": {
+    "extension": [
+      {
+        "url": "https://hapifhir.org/NamingSystem/bulk-export-job-id",
+        "valueString": "61469f6a-453d-4fb5-a6a3-1ac3790ca9a4"
+      },
+      {
+        "url": "https://hapifhir.org/NamingSystem/bulk-export-binary-resource-type",
+        "valueString": "ClinicalImpression"
+      }
+    ],
+    "versionId": "1",
+    "lastUpdated": "2025-12-05T10:21:31.937+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Binary"
+    ]
+  },
+  "contentType": "application/fhir+ndjson",
+  "securityContext": {
+    "identifier": {
+      "value": "ff178472-73da-423a-8bd3-47df4997122d"
+    }
+  },
+  "data": "eyJyZXNvdXJjZVR5cGUiOiJDbGluaWNhbEltcHJlc3Npb24iLCJpZCI6IjEwIiwibWV0YSI6eyJ2ZXJzaW9uSWQiOiIxIiwibGFzdFVwZGF0ZWQiOiIyMDI1LTEyLTA1VDA4OjI1OjM2Ljg4MSswMDowMCIsInNvdXJjZSI6IiM2MDBmYTFiNi1iMWU4LTliIiwicHJvZmlsZSI6WyJodHRwOi8vZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9laGVhbHRoLWNsaW5pY2FsaW1wcmVzc2lvbiJdfSwiZXh0ZW5zaW9uIjpbeyJ1cmwiOiJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vd29ya2Zsb3ctZXBpc29kZU9mQ2FyZSIsInZhbHVlUmVmZXJlbmNlIjp7InJlZmVyZW5jZSI6Imh0dHBzOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS84NjA1NSJ9fV0sInN0YXR1cyI6ImluLXByb2dyZXNzIiwiY29kZSI6eyJjb2RpbmciOlt7InN5c3RlbSI6Imh0dHA6Ly9laGVhbHRoLnN1bmRoZWQuZGsvY3MvY2xpbmljYWxpbXByZXNzaW9uLWNvZGVzIiwiY29kZSI6IlRCRCJ9XX0sInN1YmplY3QiOnsicmVmZXJlbmNlIjoiaHR0cHM6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvNzI3NTQifX0KeyJyZXNvdXJjZVR5cGUiOiJDbGluaWNhbEltcHJlc3Npb24iLCJpZCI6IjE0IiwibWV0YSI6eyJ2ZXJzaW9uSWQiOiIxIiwibGFzdFVwZGF0ZWQiOiIyMDI1LTEyLTA1VDEwOjIwOjI4LjUzMSswMDowMCIsInNvdXJjZSI6IiNiMWQ3MDUyNy1lOTJjLTljIiwicHJvZmlsZSI6WyJodHRwOi8vZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9laGVhbHRoLWNsaW5pY2FsaW1wcmVzc2lvbiJdfSwiZXh0ZW5zaW9uIjpbeyJ1cmwiOiJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vd29ya2Zsb3ctZXBpc29kZU9mQ2FyZSIsInZhbHVlUmVmZXJlbmNlIjp7InJlZmVyZW5jZSI6Imh0dHBzOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS84ODI5MiJ9fV0sInN0YXR1cyI6ImluLXByb2dyZXNzIiwiY29kZSI6eyJjb2RpbmciOlt7InN5c3RlbSI6Imh0dHA6Ly9laGVhbHRoLnN1bmRoZWQuZGsvY3MvY2xpbmljYWxpbXByZXNzaW9uLWNvZGVzIiwiY29kZSI6IlRCRCJ9XX0sInN1YmplY3QiOnsicmVmZXJlbmNlIjoiaHR0cHM6Ly9wYXRpZW50LmxvY2FsLmVoZWFsdGguc3VuZGhlZC5kay9maGlyL1BhdGllbnQvMTc2OTgifX0KeyJyZXNvdXJjZVR5cGUiOiJDbGluaWNhbEltcHJlc3Npb24iLCJpZCI6IjIiLCJtZXRhIjp7InZlcnNpb25JZCI6IjEiLCJsYXN0VXBkYXRlZCI6IjIwMjUtMTItMDVUMDc6NDA6MTIuMTM1KzAwOjAwIiwic291cmNlIjoiI2UyMWQzZmI4LTFhYTItOWUiLCJwcm9maWxlIjpbImh0dHA6Ly9laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9TdHJ1Y3R1cmVEZWZpbml0aW9uL2VoZWFsdGgtY2xpbmljYWxpbXByZXNzaW9uIl19LCJleHRlbnNpb24iOlt7InVybCI6Imh0dHA6Ly9obDcub3JnL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi93b3JrZmxvdy1lcGlzb2RlT2ZDYXJlIiwidmFsdWVSZWZlcmVuY2UiOnsicmVmZXJlbmNlIjoiaHR0cHM6Ly9jYXJlcGxhbi5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9FcGlzb2RlT2ZDYXJlLzIwMDkifX1dLCJzdGF0dXMiOiJpbi1wcm9ncmVzcyIsImNvZGUiOnsiY29kaW5nIjpbeyJzeXN0ZW0iOiJodHRwOi8vZWhlYWx0aC5zdW5kaGVkLmRrL2NzL2NsaW5pY2FsaW1wcmVzc2lvbi1jb2RlcyIsImNvZGUiOiJUQkQifV19LCJzdWJqZWN0Ijp7InJlZmVyZW5jZSI6Imh0dHBzOi8vcGF0aWVudC5sb2NhbC5laGVhbHRoLnN1bmRoZWQuZGsvZmhpci9QYXRpZW50Lzc4MTMwIn19CnsicmVzb3VyY2VUeXBlIjoiQ2xpbmljYWxJbXByZXNzaW9uIiwiaWQiOiI2IiwibWV0YSI6eyJ2ZXJzaW9uSWQiOiIxIiwibGFzdFVwZGF0ZWQiOiIyMDI1LTEyLTA1VDA3OjQ2OjEyLjE5NiswMDowMCIsInNvdXJjZSI6IiM5OGVjOGRhNi1hMDRiLTllIiwicHJvZmlsZSI6WyJodHRwOi8vZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvU3RydWN0dXJlRGVmaW5pdGlvbi9laGVhbHRoLWNsaW5pY2FsaW1wcmVzc2lvbiJdfSwiZXh0ZW5zaW9uIjpbeyJ1cmwiOiJodHRwOi8vaGw3Lm9yZy9maGlyL1N0cnVjdHVyZURlZmluaXRpb24vd29ya2Zsb3ctZXBpc29kZU9mQ2FyZSIsInZhbHVlUmVmZXJlbmNlIjp7InJlZmVyZW5jZSI6Imh0dHBzOi8vY2FyZXBsYW4ubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvRXBpc29kZU9mQ2FyZS84MjE2In19XSwic3RhdHVzIjoiaW4tcHJvZ3Jlc3MiLCJjb2RlIjp7ImNvZGluZyI6W3sic3lzdGVtIjoiaHR0cDovL2VoZWFsdGguc3VuZGhlZC5kay9jcy9jbGluaWNhbGltcHJlc3Npb24tY29kZXMiLCJjb2RlIjoiVEJEIn1dfSwic3ViamVjdCI6eyJyZWZlcmVuY2UiOiJodHRwczovL3BhdGllbnQubG9jYWwuZWhlYWx0aC5zdW5kaGVkLmRrL2ZoaXIvUGF0aWVudC84OTM4MiJ9fQo="
+}
+```

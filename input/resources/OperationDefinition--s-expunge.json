@@ -1,0 +1,49 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-expunge",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-expunge",
+  "name": "expunge",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": true,
+  "code": "expunge",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "limit",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "integer"
+    },
+    {
+      "name": "expungeDeletedResources",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "expungePreviousVersions",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "expungeEverything",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    },
+    {
+      "name": "count",
+      "use": "out",
+      "min": 0,
+      "max": "1"
+    }
+  ]
+}

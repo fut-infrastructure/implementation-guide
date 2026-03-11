@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-ehealth-consent-policy",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-consent-policy",
+  "version": "1.0.0",
+  "name": "ConsentPolicy",
+  "title": "Consent Policy",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-16T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of policy for consent.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-consent-policy"
+      }
+    ]
+  }
+}

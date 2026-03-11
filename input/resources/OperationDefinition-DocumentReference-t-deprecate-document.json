@@ -21,6 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The documentIdentifier that makes up the masterIdentifier of the DocumentReference to deprecate.",
       "type": "string",
       "searchType": "token"
     },
@@ -29,6 +30,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The cpr-number that makes up the masterIdentifier of the DocumentReference to deprecate.",
       "type": "string",
       "searchType": "string"
     }

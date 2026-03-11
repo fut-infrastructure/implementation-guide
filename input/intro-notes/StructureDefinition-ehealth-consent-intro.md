@@ -7,6 +7,9 @@ In the eHealth infrastructure a Consent resource is used
 1. as a record of the fact that a Patient has given a Consent and 
 2. to enforce data policies that require Consent to be given and recorded for a Patient.
 
+The eHealth profile of Consent has the following extensions:
+* `ehealth-consent-affiliation` which specifies the care context level to which the consent applies—either `EpisodeOfCare` level (mandatory reference) or `CarePlan` level (optional reference). See section on Affiliation below.
+
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
 
@@ -35,15 +38,34 @@ This means, that:
 In addition to the `Consent.category` element, the following elements must be set on a Consent resource for the policy enforcing business logic to take effect:
 
 - `Consent.patient` - the patient who is the subject of this consent (must coincide with the `EpisodeOfCare.patient` referenced by `Consent.data.reference`)
-- `Consent.data.reference` - the EpisodeOfCare for which this Consent is in force.
-- `Consent.actor` - the actor (Organization, CareTeam, Practitioner) whose behaviour is controlled by this consent.
+- `Consent.provision.data.reference` - the EpisodeOfCare for which this Consent is in force.
+- `Consent.provision.actor` - the actor (Organization, CareTeam, Practitioner) whose behaviour is controlled by this consent.
 - `Consent.status` - the status of this consent (only active consents are considered to be in force)
-- `Consent.period` - the (possibly open-ended) period for which this consent is in force. 
+- `Consent.provision.period` - the (possibly open-ended) period for which this consent is in force. 
 
 For more information see the element descriptions in the [snapshot table](#tabs) on this page and also see the example Consent resources on the [Examples tab](StructureDefinition-ehealth-consent-examples.html).
 
+## Affiliation
+Specifies the care context level to which the consent applies—either `EpisodeOfCare` level (mandatory reference) or `CarePlan` level (optional reference). This enables precise scoping of consent in telemedicine solutions, such as controlling patient access to triage results for specific `CarePlan` or broader `EpisodeOfCare`.
+The `Consent.provision.data` element is for data controlled by the consent, while ehealth-consent-affiliation indicates the care level to which the consent applies.
+See [Consent/23](Consent-23.html) for an example of how to use the affiliation extension.
+
+
 # Remarks on operations
 
-## Update
+## Search
 
-The update operation on Consent only accepts changes to the _patient_, _category_, _data.reference_, _actor_, _status_,  and _period_ contents.
+- As patient user 
+  - Search parameter `patient` is mandatory and must match the patient in the user context.
+- As practitioner user
+  - Search parameters most contain either `data` or `affiliation` that matches the episodeOfCare in the user context.
+  - Parameter `affiliation`:
+    - If searching by `affiliation` for multiple CarePlans, the `affiliation` parameter must be specified two times `?affiliation=episodeOfCareRef&affiliation=careplanRef1,careplanRef2`. A single OR search containing both episodeOfCareRef and CarePlanRefs is not allowed, as there is no guarantee the CarePlan is referencing the specified episodeOfCare.
+
+## Create
+- As patient user
+  - Not allowed to create Consent with policy http://ehealth.sundhed.dk/policy/ehealth/display-triage-result.
+
+## Update
+- As patient user
+  - Not allowed to update Consent with policy http://ehealth.sundhed.dk/policy/ehealth/display-triage-result.

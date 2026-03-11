@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The input FHIR Bundle that contains the eHealth Questionnaire and Composition resource which reference the eHealth Questionnaire to be transformed to QFDD XML.",
       "type": "Bundle"
     },
     {

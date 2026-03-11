@@ -1,0 +1,15 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-get-resource-counts",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-get-resource-counts",
+  "name": "get-resource-counts",
+  "title": "Provides the number of resources currently stored on the server, broken down by resource type",
+  "status": "active",
+  "kind": "operation",
+  "description": "Provides the number of resources currently stored on the server, broken down by resource type",
+  "affectsState": false,
+  "code": "get-resource-counts",
+  "system": true,
+  "type": false,
+  "instance": false
+}

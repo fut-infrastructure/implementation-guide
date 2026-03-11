@@ -21,6 +21,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
+      "documentation": "This is the element DocumentReference.content.attachment.url for metadata about the APD document as returned from the DocumentReference search operation performing a query to national document sharing infrastructure",
       "type": "string",
       "searchType": "uri"
     },
@@ -29,6 +30,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Signifies, when set to true, that the retrieve of a document shall be performed with override of any withholding of information possibly performed by the national document sharing service in accordance with patient's consents. Override of consents constitutes a form of break-the-glass invocation, known in Danish as værdispring. The preferred method is to call this operation without consent override and to only call with consent override when necessary.",
       "type": "boolean"
     },
     {
@@ -36,6 +38,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Mandatory when input element consentOverride is set to true. The string input is intended as a placeholder for the user's rationale for choosing to override consents. The value is logged in the Infrastructure.",
       "type": "string"
     },
     {

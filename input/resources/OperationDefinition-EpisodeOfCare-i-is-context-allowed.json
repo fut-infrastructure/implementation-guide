@@ -21,6 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "If the user requesting context is a patient, then the patient input parameter should be specified.",
       "type": "Reference"
     },
     {
@@ -28,6 +29,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "If the user requesting context is a practitioner, then the careTeam input parameter should be specified.",
       "type": "Reference"
     },
     {

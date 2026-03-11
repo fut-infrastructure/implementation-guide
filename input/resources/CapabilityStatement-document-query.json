@@ -3,12 +3,12 @@
   "id": "document-query",
   "name": "document-query",
   "status": "active",
-  "date": "2025-10-21T10:39:21.643+00:00",
+  "date": "2026-01-13T11:11:48.429+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-query",
-    "version": "1.18.0"
+    "version": "1.20.0"
   },
   "implementation": {
     "description": "eHealth document-query service",
@@ -117,8 +117,8 @@
       "searchRevInclude": [ "DocumentReference:patient" ]
     } ],
     "operation": [ {
-      "name": "reindex-terminology",
-      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex-terminology"
+      "name": "reindex",
+      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
     }, {
       "name": "meta",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"
@@ -126,6 +126,9 @@
       "name": "get-resource-counts",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-get-resource-counts",
       "documentation": "Provides the number of resources currently stored on the server, broken down by resource type"
+    }, {
+      "name": "expunge",
+      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-expunge"
     } ]
   } ]
 }

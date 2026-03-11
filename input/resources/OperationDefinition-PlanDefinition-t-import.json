@@ -21,6 +21,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "Binary package produced by the export operation.",
       "type": "Binary"
     },
     {

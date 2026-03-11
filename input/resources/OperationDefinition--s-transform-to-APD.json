@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "The input FHIR Bundle that contains the FHIR Composition referencing a FHIR Appointment (ehealth-appointment profile) resource to be transformed to APD XML.",
       "type": "Bundle"
     },
     {

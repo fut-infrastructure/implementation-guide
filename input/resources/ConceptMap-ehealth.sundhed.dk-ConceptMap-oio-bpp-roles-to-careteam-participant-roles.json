@@ -214,6 +214,28 @@
             }
           ]
         },
+        {
+          "code": "urn:dk:sundhed:ehealth:role:data_scientist",
+          "display": "Data Scientist",
+          "target": [
+            {
+              "code": "dataScientist",
+              "display": "Data Scientist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urn:dk:sundhed:ehealth:role:login_assistor",
+          "display": "Login Assistor",
+          "target": [
+            {
+              "code": "loginAssistor",
+              "display": "Login Assistor",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
 
         {
           "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
@@ -398,6 +420,28 @@
             {
               "code": "terminologyAdministrator",
               "display": "Terminology administrator",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/data_scientist/1",
+          "display": "Data Scientist",
+          "target": [
+            {
+              "code": "dataScientist",
+              "display": "Data Scientist",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/login_assistor/1",
+          "display": "Login Assistor",
+          "target": [
+            {
+              "code": "loginAssistor",
+              "display": "Login Assistor",
               "equivalence": "equivalent"
             }
           ]

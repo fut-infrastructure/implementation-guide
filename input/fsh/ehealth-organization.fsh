@@ -20,6 +20,8 @@ Parent: Organization
 * contact.telecom.extension contains ehealth-organization-telecomCustodian named telecomCustodian 1..1
 * contact.telecom.system 0..0
 * contact.telecom.value 0..0
+* endpoint only Reference(ehealth-endpoint)
+* endpoint ^type.aggregation = #contained
 
 
 Extension:  ehealth-organization-relatedTo
@@ -66,8 +68,8 @@ Description: "The organization's municipality code in the Danish 'Det Centrale P
 
 Extension:   ehealth-organization-providerIdentifier
 Title:       "Provider identifier"
-Description: "The providerIdentifier of the organization"
-* . ^short = "The organization's provider identifier"
+Description: "The providerIdentifier of the organization (Danish: Tilknytning til ydernummer)"
+* . ^short = "The organization's provider identifier (Danish: Tilknytning til ydernummer)"
 * valueString 1..1
 * value[x] only string
 

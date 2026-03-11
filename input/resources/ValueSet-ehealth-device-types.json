@@ -27,22 +27,13 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "59181002",
-            "display": "Oxygen analyser",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Oxygen analyser"
-              }
-            ]
+            "code": "59181002"
           },
           {
-            "code": "258057004",
-            "display": "ikke-invasiv blodtryksmonitor"
+            "code": "258057004"
           },
           {
-            "code": "19892000",
-            "display": "Vægt"
+            "code": "19892000"
           }
         ]
       }

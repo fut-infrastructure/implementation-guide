@@ -210,6 +210,28 @@
                 }
             ]
         },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:data_scientist",
+            "display": "Data Scientist",
+            "definition": "Kan analysere FUT data",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Data Scientist"
+                }
+            ]
+        },
+        {
+          "code": "urn:dk:sundhed:ehealth:role:login_assistor",
+          "display": "Login Assistor",
+          "definition": "Kan logge borger ind med assisteret login",
+          "designation": [
+            {
+              "language": "da",
+              "value": "Loginmedhjælper"
+            }
+          ]
+        },
 
         {
             "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
@@ -397,6 +419,28 @@
                     "value": "Aftaleansvarlig"
                 }
             ]
+        },
+        {
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/data_scientist/1",
+            "display": "Data Scientist",
+            "definition": "Kan analysere FUT data",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Data Scientist"
+                }
+            ]
+        },
+        {
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/login_assistor/1",
+          "display": "Login Assistor",
+          "definition": "Kan logge borger ind med assisteret login",
+          "designation": [
+            {
+              "language": "da",
+              "value": "Loginmedhjælper"
+            }
+          ]
         }
     ]
 }

@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "A FHIR Bundle containing the FHIR Composition resource, referencing a FHIR QuestionnaireResponse, a FHIR Questionnaire and a FHIR DocumentReference containing the QFDD XML file (base64 encoded).",
       "type": "Bundle"
     },
     {

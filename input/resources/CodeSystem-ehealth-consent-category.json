@@ -63,6 +63,17 @@
           "value": "Videregivelse til Service, Support og Logistik-leverandør af patientens adresse og kontaktinformation"
         }
       ]
+    },
+    {
+      "code": "behavior-by-policy",
+      "display": "Behavior by policy",
+      "definition": "Behavior by policy",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Adfærd baseret på policy"
+        }
+      ]
     }
   ]
 }

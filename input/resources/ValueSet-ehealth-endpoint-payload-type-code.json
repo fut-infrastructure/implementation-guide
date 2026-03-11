@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-endpoint-payload-type-code",
+  "url": "http://ehealth.sundhed.dk/vs/endpoint-payload-type-code",
+  "version": "1.0.0",
+  "name": "EndpointPayloadTypeCode",
+  "title": "Endpoint Payload Type Code",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-11-07T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "ValueSet of endpoint payload types.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unsupported"
+          }
+        ]
+      }
+    ]
+  }
+}

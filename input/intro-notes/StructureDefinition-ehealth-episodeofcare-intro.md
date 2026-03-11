@@ -27,3 +27,18 @@ the EpisodeOfCare and all other resources directly or indirectly referencing it.
 ### CareTeam and history of CareTeam
 The CareTeam(s) currently responsible for the EpisodeOfCare are referenced in element `team`.
 Changes in CareTeam references are automatically maintained in the element `ehealth-teamHistory`.
+
+### Cross-team EpisodeOfCare search
+Searching EpisodeOfCare resources without specifying a CareTeam in the search parameters is supported, 
+but requires specific permission, adds additional validation and behaviour for filtering reverse/-included resources.
+The behaviour is tied to the treatment areas of the telemedicine solution in which the Practitioner is operating.
+The telemedicine solution is determined by inspecting the incoming security token of the practitioner (coexistence-tag in scope claim).
+The treatment areas are defined by each telemedicine solution having a ValueSet determining the allowed Condition.code.
+The treatment area ValueSets are characterized by having a useContext with 'system-treatment-area' context code, and using the coexistence-tag as the value (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
+
+When performing a cross-team search, the following rules apply:
+- The search must be performed by a Practitioner with the permission `EpisodeOfCare$cross-team-search`
+- The search must not include a `team` in the search parameters
+- The search must include the chained parameter `condition.code`, can be multiple codes
+- The condition codes provided as search parameters must be within the treatment areas of the telemedicine solution in which the Practitioner is operating
+- The search operation filters out any included or reverse-included resources (CarePlan and Condition) that are not allowed by the treatment areas of the telemedicine solution in which the Practitioner is operating

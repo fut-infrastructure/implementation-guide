@@ -18,6 +18,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
+      "documentation": "A FHIR DocumentReference that contains the QFDD XML document to be uploaded.",
       "type": "DocumentReference"
     },
     {
