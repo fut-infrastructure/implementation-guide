@@ -1,0 +1,326 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ICD-11-MMS-2025-01",
+  "url": "http://id.who.int/icd/release/11/mms",
+  "version": "2025-01",
+  "name": "ICD-11 for Mortality and Morbidity Statistics",
+  "status": "active",
+  "experimental": false,
+  "publisher": "World Health Organization",
+  "description": "ICD-11 for Mortality and Morbidity Statistics",
+  "caseSensitive": false,
+  "hierarchyMeaning": "classified-with",
+  "compositional": true,
+  "versionNeeded": false,
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "XA1RS6",
+      "display": "Head and neck"
+    },
+    {
+      "code": "XA20Q1",
+      "display": "Head"
+    },
+    {
+      "code": "XA6CW5",
+      "display": "Scalp"
+    },
+    {
+      "code": "XA86S4",
+      "display": "Face"
+    },
+    {
+      "code": "XA6TR8",
+      "display": "Forehead"
+    },
+    {
+      "code": "XA7MK8",
+      "display": "Cheek"
+    },
+    {
+      "code": "XA3H13",
+      "display": "Nose"
+    },
+    {
+      "code": "XA5A87",
+      "display": "Oral region"
+    },
+    {
+      "code": "XA7AA6",
+      "display": "Neck"
+    },
+    {
+      "code": "XA4QS6",
+      "display": "Front of neck"
+    },
+    {
+      "code": "XA2ZF0",
+      "display": "Side of neck"
+    },
+    {
+      "code": "XA1M78",
+      "display": "Nape of neck"
+    },
+    {
+      "code": "XA3FR3",
+      "display": "Trunk"
+    },
+    {
+      "code": "XA4QH7",
+      "display": "Upper trunk"
+    },
+    {
+      "code": "XA5D93",
+      "display": "Thorax"
+    },
+    {
+      "code": "XA55T2",
+      "display": "Chest wall"
+    },
+    {
+      "code": "XA10L7",
+      "display": "Upper back"
+    },
+    {
+      "code": "XA6CY1",
+      "display": "Lower trunk"
+    },
+    {
+      "code": "XA6GV0",
+      "display": "Abdomen"
+    },
+    {
+      "code": "XA0U66",
+      "display": "Upper abdomen"
+    },
+    {
+      "code": "XA4TC0",
+      "display": "Lower abdomen"
+    },
+    {
+      "code": "XA25R8",
+      "display": "Lumbosacral region"
+    },
+    {
+      "code": "XA6ZR2",
+      "display": "Mid back"
+    },
+    {
+      "code": "XA9ET2",
+      "display": "Lower back"
+    },
+    {
+      "code": "XA2P90",
+      "display": "Back"
+    },
+    {
+      "code": "XA8HA7",
+      "display": "Anogenital region"
+    },
+    {
+      "code": "XA4B34",
+      "display": "Perianal region"
+    },
+    {
+      "code": "XA6AS2",
+      "display": "Extremities"
+    },
+    {
+      "code": "XA4BA8",
+      "display": "Upper extremity"
+    },
+    {
+      "code": "XA2ND5",
+      "display": "Shoulder"
+    },
+    {
+      "code": "XA17J1",
+      "display": "Axilla"
+    },
+    {
+      "code": "XA6809",
+      "display": "Upper arm"
+    },
+    {
+      "code": "XA9FF8",
+      "display": "Elbow"
+    },
+    {
+      "code": "XA7WB0",
+      "display": "Forearm"
+    },
+    {
+      "code": "XA2J63",
+      "display": "Wrist"
+    },
+    {
+      "code": "XA5R12",
+      "display": "Hand"
+    },
+    {
+      "code": "XA3OZ6",
+      "display": "Dorsum of hand"
+    },
+    {
+      "code": "XA3NY8",
+      "display": "Palm of hand"
+    },
+    {
+      "code": "XA2593",
+      "display": "Fingers and thumb"
+    },
+    {
+      "code": "XA8DJ6",
+      "display": "Thumb"
+    },
+    {
+      "code": "XA6NZ0",
+      "display": "Index finger"
+    },
+    {
+      "code": "XA0Y38",
+      "display": "Middle finger"
+    },
+    {
+      "code": "XA06X8",
+      "display": "Ring finger"
+    },
+    {
+      "code": "XA5EN3",
+      "display": "Little finger"
+    },
+    {
+      "code": "XA45A6",
+      "display": "Lower extremity"
+    },
+    {
+      "code": "XA3VA7",
+      "display": "Buttock"
+    },
+    {
+      "code": "XA5S78",
+      "display": "Thigh"
+    },
+    {
+      "code": "XA98B3",
+      "display": "Anterior surface of thigh"
+    },
+    {
+      "code": "XA8RH9",
+      "display": "Lateral surface of thigh"
+    },
+    {
+      "code": "XA0183",
+      "display": "Posterior surface of thigh"
+    },
+    {
+      "code": "XA1YQ6",
+      "display": "Medial surface of thigh"
+    },
+    {
+      "code": "XA8KL5",
+      "display": "Knee"
+    },
+    {
+      "code": "XA3YG1",
+      "display": "Lower leg"
+    },
+    {
+      "code": "XA33X4",
+      "display": "Anterior surface of lower leg"
+    },
+    {
+      "code": "XA4PR4",
+      "display": "Lateral surface of lower leg"
+    },
+    {
+      "code": "XA0LQ2",
+      "display": "Posterior surface of lower leg"
+    },
+    {
+      "code": "XA15P0",
+      "display": "Medial surface of lower leg"
+    },
+    {
+      "code": "XA67V4",
+      "display": "Ankle"
+    },
+    {
+      "code": "XA47V8",
+      "display": "Foot"
+    },
+    {
+      "code": "XA99M7",
+      "display": "Hindfoot"
+    },
+    {
+      "code": "XA5HK0",
+      "display": "Heel"
+    },
+    {
+      "code": "XA5151",
+      "display": "Midfoot"
+    },
+    {
+      "code": "XA5YL1",
+      "display": "Forefoot"
+    },
+    {
+      "code": "XA8BE2",
+      "display": "Dorsum of foot"
+    },
+    {
+      "code": "XA1XM4",
+      "display": "Sole of foot"
+    },
+    {
+      "code": "XA4LC9",
+      "display": "Toes"
+    },
+    {
+      "code": "XA2RP7",
+      "display": "Great toe"
+    },
+    {
+      "code": "XA8ZZ3",
+      "display": "Second toe"
+    },
+    {
+      "code": "XA0SP3",
+      "display": "Third toe"
+    },
+    {
+      "code": "XA4KK7",
+      "display": "Fourth toe"
+    },
+    {
+      "code": "XA42W4",
+      "display": "Fifth toe"
+    },
+    {
+      "code": "XK9J",
+      "display": "Bilateral"
+    },
+    {
+      "code": "XK8G",
+      "display": "Left"
+    },
+    {
+      "code": "XK9K",
+      "display": "Right"
+    },
+    {
+      "code": "XK70",
+      "display": "Unilateral, unspecified"
+    },
+    {
+      "code": "XK7V",
+      "display": "Anterior"
+    },
+    {
+      "code": "XK8L",
+      "display": "Posterior"
+    }
+  ]
+}

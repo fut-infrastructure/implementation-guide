@@ -6,7 +6,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS
+- Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with wounds related codes
 ### ValueSets
+- Added http://ehealth.sundhed.dk/vs/wound-conditions ValueSet for Wound Conditions
 ### ConceptMaps
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.

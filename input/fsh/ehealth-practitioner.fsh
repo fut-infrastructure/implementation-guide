@@ -14,6 +14,7 @@ Description: "The Practitioner's association with a provider identifier (Danish:
     identifier 1..1 and
     period 0..1
 * extension[identifier].valueIdentifier 1..1
+* extension[identifier].valueIdentifier.system 1..1
 * extension[identifier].valueIdentifier.system = "urn:oid:1.2.208.176.1.4" (exactly)
 * extension[identifier].valueIdentifier.value 1..1
 * extension[identifier]. ^short = "Provider identifier (Danish: Ydernummer)"
