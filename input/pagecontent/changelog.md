@@ -1,5 +1,12 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Next Release
+### Code systems
+- Added new careteam participant role `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+### ConceptMaps
+- Added mapping between new `clinical_plan_administrator` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+
 ## 8.0.1 (2026-03-02)
 ### Custom operations
 #### System operations
