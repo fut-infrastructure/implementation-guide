@@ -1,11 +1,24 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Next Release
+## Release 2026.2. todo: change to semver format before release
+### General changes
+- dk.core updated from 1.1.0 to 3.5.0
+  - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
+### Custom operations
+#### System operations
+#### Instance operations
 ### Code systems
+- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
 - Added new careteam participant role `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role
 - Added new oio bpp role `clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+### ValueSets
+- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 ### ConceptMaps
+- Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 - Added mapping between new `clinical_plan_administrator` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+### Resource/profile changes
+### Search parameters
+- Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
 ## 8.0.1 (2026-03-02)
 ### Custom operations

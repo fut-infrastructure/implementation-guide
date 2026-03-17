@@ -123,6 +123,83 @@ topic: Topic is named: [FHIR profile of the resource].[name of resource element]
 - `resourceProfile`: The FHIR profile of the resource for which the event message is issued
 
 
+#### EHealthApplicationEvent
+Messages of EHealthApplicationEvent message type are issued when a citizen has opted in to receive push notifications (via a CommunicationRequest with `medium=application-event` and `doNotPerform=false`) and a relevant event occurs, such as receiving a new eHealth message, a measurement reminder, a missing measurement notification, or an appointment reminder. These events enable client applications to deliver push notifications independently of the NemSMS notification flow.
+
+##### Destination
+topic: `ehealth-application-event`
+
+##### Message
+
+```
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:dk:sundhed:ehealth:event:models:EHealthApplicationEvent",
+  "properties" : {
+    "messageType" : {
+      "type" : "string",
+      "description" : "EHealthApplicationEvent"
+    },
+    "messageVersion" : {
+      "type" : "string",
+      "description" : "1.0"
+    },
+    "ehealth.system" : {
+      "type" : "string",
+      "description" : "The coexistence system tag"
+    },
+    "eventType" : {
+      "type" : "string",
+      "enum" : [ "AppointmentReminder", "VideoAppointmentReminder", "ReminderSubmitMeasurement", "NewEHealthMessage", "MissingMeasurement" ]
+    },
+    "payload" : {
+      "type" : "string",
+      "description" : "Notification text content from the CommunicationRequest"
+    },
+    "userReference" : {
+      "type" : "string",
+      "description" : "The reference (absolute URL) of the Patient resource"
+    },
+    "resourceReference" : {
+      "type" : "array",
+      "description" : "References to related resources",
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "label" : {
+            "type" : "string",
+            "description" : "The type/label of the referenced resource"
+          },
+          "reference" : {
+            "type" : "string",
+            "description" : "The reference (absolute URL) of the resource"
+          }
+        }
+      }
+    }
+  }
+}
+```
+##### Properties
+- `ehealth.system`: The coexistence system tag (also present in the JSON body)
+- `eventType`: The type of application event (see Event Types table below)
+- `messageType`: The name of the message type
+- `messageVersion`: The version of the message type, eg. "1.0"
+- `payload`: Notification text content from the CommunicationRequest
+- `userReference`: The reference (absolute URL) of the Patient resource representing the citizen
+- `resourceReference`: Array of references to related resources, each with a `label` (resource type) and `reference` (absolute URL)
+
+##### Event Types
+
+| eventType | Description | resourceReference label | Source |
+|---|---|---|---|
+| AppointmentReminder | Appointment reminder | Appointment | fut-appointment-notification-job |
+| VideoAppointmentReminder | Video appointment reminder | Appointment | fut-appointment-notification-job |
+| ReminderSubmitMeasurement | Reminder to submit measurement | ServiceRequest | fut-patient |
+| NewEHealthMessage | New eHealth message | EhealthMessage | fut-patient |
+| MissingMeasurement | Missing measurement notification | ServiceRequest | fut-patient |
+
+
 #### EHealthSimpleEvent
 Messages of EHealthSimpleEvent message type are issued when a resource is created, updated or deleted.
 
