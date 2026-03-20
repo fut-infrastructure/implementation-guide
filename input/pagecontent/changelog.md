@@ -13,7 +13,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ValueSets
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 - Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
-- - Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
 - Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
