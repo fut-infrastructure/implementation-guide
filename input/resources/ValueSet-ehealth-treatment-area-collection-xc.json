@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-areas-xc",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc",
+  "version": "1.0.0",
+  "name": "TreatmentAreaCollection_xc",
+  "title": "Treatment Area Collection xc",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-05T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "useContext": [
+    {
+      "code": {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-type",
+        "code": "system-treatment-area"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+            "code": "xc"
+          }
+        ]
+      }
+    }
+  ],
+  "description": "Combined treatment areas for coexistence tag xc.",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3"
+        ]
+      }
+    ]
+  }
+}
