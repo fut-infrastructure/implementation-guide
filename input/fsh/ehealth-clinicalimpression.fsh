@@ -12,7 +12,7 @@ Parent: ClinicalImpression
 * extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/clinicalimpression-codes
-* subject only Reference(ehealth-patient)f
+* subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
 * assessor only Reference(ehealth-practitioner)
 * assessor ^type.aggregation = #referenced

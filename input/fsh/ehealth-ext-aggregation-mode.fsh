@@ -1,4 +1,4 @@
-Extension: ehealth-aggregationMode
+Extension: ehealth-aggregation-mode
 Title:     "Aggregation Mode"
 Description: "Mode of Aggregated Triage"
 * . ^short = "Mode of Aggregated Triage"

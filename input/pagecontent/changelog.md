@@ -6,9 +6,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types
 ### ValueSets
+- Added http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
 ### Resource/profile changes
+- Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
+- Added extension ehealth-aggregate-group-id to ehealth-plandefinition profile
+- Added extension ehealth-aggregation-mode to ehealth-library profile bound to http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
 ### Search parameters
+- Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage. 
+- Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
 
 
 ## 8.0.1 (2026-03-02)
