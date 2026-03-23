@@ -1949,6 +1949,16 @@
       ]
     },
     {
+      "code": "ZZ0150",
+      "display": "Journaloptagelse",
+      "concept": [
+        {
+          "code": "ZZ0150A",
+          "display": "Anamneseoptagelse"
+        }
+      ]
+    },
+    {
       "code": "ZZ3170",
       "display": "Hjemmeblodtryksmåling udført af patienten"
     },

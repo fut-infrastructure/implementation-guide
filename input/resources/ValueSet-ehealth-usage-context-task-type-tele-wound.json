@@ -24,7 +24,12 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/ehealth-usage-context-task-type"
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "ZZ0150A"
+          }
+        ]
       }
     ]
   }
