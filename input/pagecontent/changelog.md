@@ -1,5 +1,16 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 8.0.2 (2026-03-23)
+### General changes (Documentation)
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### Resource/profile changes
+### Search parameters
+
+
 ## 8.0.1 (2026-03-02)
 ### Custom operations
 #### System operations

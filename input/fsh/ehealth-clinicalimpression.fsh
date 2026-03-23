@@ -12,7 +12,7 @@ Parent: ClinicalImpression
 * extension contains ehealth-questionnaireresponse-finding-basis named findingBasis 0..*
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/clinicalimpression-codes
-* subject only Reference(ehealth-patient)
+* subject only Reference(ehealth-patient)f
 * subject ^type.aggregation = #referenced
 * assessor only Reference(ehealth-practitioner)
 * assessor ^type.aggregation = #referenced
@@ -87,6 +87,14 @@ Description: "Investigation item for View resources so they can be approved."
 * . ^short = "View item"
 * value[x] only Reference(ehealth-view)
 * valueReference 1..1
+* value[x] ^type.aggregation = #referenced
+
+Extension:   ehealth-clinicalimpression-otherItem
+Title:       "Other item"
+Description: "Investigation item for Aggregated Triage resources so they can be approved."
+* . ^short = "Other item"
+* value[x] only Reference(ehealth-clinicalimpression or ehealth-provenance or ehealth-observation or ehealth-questionnaireresponse or ehealth-media)
+* valueReference 0..*
 * value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-questionnaireresponse-finding-basis
