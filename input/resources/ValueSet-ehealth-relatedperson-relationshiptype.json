@@ -56,7 +56,8 @@
         ]
       },
       {
-        "system": "http://ehealth.sundhed.dk/cs/poa-privilege"
+        "system": "http://ehealth.sundhed.dk/cs/poa-privilege",
+        "version": "0.0.1"
       }
     ]
   }
