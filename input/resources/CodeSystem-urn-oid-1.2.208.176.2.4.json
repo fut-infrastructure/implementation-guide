@@ -263,8 +263,70 @@
           "display": "Manisk enkeltepisode"
         },
         {
+          "code": "DF32",
+          "display": "Depressiv enkeltepisode",
+          "concept": [
+            {
+              "code": "DF320",
+              "display": "Depressiv enkeltepisode af lettere grad"
+            },
+            {
+              "code": "DF321",
+              "display": "Depressiv enkeltepisode af moderat grad"
+            }
+          ]
+        },
+        {
+          "code": "DF33",
+          "display": "Periodisk depression",
+          "concept": [
+            {
+              "code": "DF330",
+              "display": "Periodisk depression i episode af lettere grad"
+            },
+            {
+              "code": "DF331",
+              "display": "Periodisk depression i episode af moderat grad"
+            }
+          ]
+        },
+        {
           "code": "DF40",
-          "display": "Fobiske angsttilstande"
+          "display": "Fobiske angsttilstande",
+          "concept": [
+            {
+              "code": "DF400",
+              "display": "Agorafobi",
+              "concept": [
+                {
+                  "code": "DF4000",
+                  "display": "Agorafobi uden panikangst"
+                },
+                {
+                  "code": "DF4001",
+                  "display": "Agorafobi med panikangst"
+                }
+              ]
+            },
+            {
+              "code": "DF401",
+              "display": "Socialfobi"
+            },
+            {
+              "code": "DF402",
+              "display": "Enkelfobi"
+            }
+          ]
+        },
+        {
+          "code": "DF41",
+          "display": "Andre angsttilstande",
+          "concept": [
+            {
+              "code": "DF410",
+              "display": "Panikangst"
+            }
+          ]
         },
         {
           "code": "DF50",
@@ -288,7 +350,13 @@
         },
         {
           "code": "DF99",
-          "display": "Ikke nærmere specificerede psykiske lidelser"
+          "display": "Ikke nærmere specificerede psykiske lidelser",
+          "concept": [
+            {
+              "code": "DF999",
+              "display": "Psykisk lidelse eller forstyrrelse UNS"
+            }
+          ]
         },
         {
           "code": "DG20",
@@ -445,6 +513,26 @@
             {
               "code": "DJ449",
               "display": "Kronisk obstruktiv lungesygdom UNS"
+            }
+          ]
+        },
+        {
+          "code": "DZ03",
+          "display": "Lægelig observation for og vurdering af personer mistænkt for sygdom",
+          "concept": [
+            {
+              "code": "DZ032",
+              "display": "Observation pga. mistanke om psykisk lidelse eller adfærdsforstyrrelse"
+            }
+          ]
+        },
+        {
+          "code": "DZ71",
+          "display": "Personer i kontakt med sundhedsvæsenet mhp. rådgivning og lægelig vejledning IKA",
+          "concept": [
+            {
+              "code": "DZ718",
+              "display": "Anden rådgivning"
             }
           ]
         },
