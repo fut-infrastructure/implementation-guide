@@ -21,6 +21,7 @@ Parent: ClinicalImpression
 * problem only Reference(ehealth-condition or AllergyIntolerance)
 * problem ^type.aggregation = #referenced
 * investigation.extension contains ehealth-clinicalimpression-viewInvestigationItem named viewInvestigationItem 0..*
+* investigation.extension contains ehealth-clinicalimpression-otherItem named otherItem 0..*
 * investigation.item only Reference(ehealth-media or ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
 * investigation.item ^type.aggregation = #referenced
 * investigation.code from http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
@@ -94,7 +95,6 @@ Title:       "Other item"
 Description: "Investigation item for Aggregated Triage resources so they can be approved."
 * . ^short = "Other item"
 * value[x] only Reference(ehealth-clinicalimpression or ehealth-provenance or ehealth-observation or ehealth-questionnaireresponse or ehealth-media)
-* valueReference 0..*
 * value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-questionnaireresponse-finding-basis
