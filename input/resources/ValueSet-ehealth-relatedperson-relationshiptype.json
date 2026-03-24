@@ -54,6 +54,9 @@
             "code": "POWATT"
           }
         ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/poa-privilege"
       }
     ]
   }
