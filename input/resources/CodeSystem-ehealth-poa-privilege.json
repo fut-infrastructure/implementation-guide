@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Vendor-specific power of attorney privilege codes used by Keycloak when creating RelatedPerson resources for PoA-authenticated citizens. Codes are URNs created in the NemLog-in administration module by Trifork. The full set of codes is externally governed and not enumerated here.",
+  "description": "Vendor-specific power of attorney privilege codes used by Keycloak when creating RelatedPerson resources for PoA-authenticated citizens. The full set of codes is externally governed and not enumerated here.",
   "caseSensitive": true,
   "content": "not-present"
 }
