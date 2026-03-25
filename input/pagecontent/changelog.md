@@ -1,5 +1,34 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.2. todo: change to semver format before release
+### General changes
+- dk.core updated from 1.1.0 to 3.5.0
+  - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
+- dk.core updated from 3.5.0 to 3.6.0
+### Custom operations
+#### System operations
+- Bulk export (\$export) new parameters _until and _includeHistory
+- Reindex operation (\$reindex) supports async protocol with polling status using \$hapi.fhir.reindex-status 
+#### Instance operations
+- Binary expunge (\$expunge) operation to support bulk export operations
+### Code systems
+- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added ´xc´  to http://ehealth.sundhed.dk/cs/ehealth-system
+### ValueSets
+- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
+- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3 (Z-diagnosis)
+
+### ConceptMaps
+- Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
+### Resource/profile changes
+### Search parameters
+- Added search parameter `topic` on `ehealth-communication` to be able to query by topic
+
 ## 8.0.2 (2026-03-23)
 ### General changes (Documentation)
 ### Custom operations

@@ -861,6 +861,12 @@
               "documentation": "Search parameter for finding communication based on thread id"
             },
             {
+              "name": "topic",
+              "definition": "http://hl7.org/fhir/SearchParameter/Communication-topic",
+              "type": "token",
+              "documentation": "Search parameter to enable filtering ehealth-message Communications by topic"
+            },
+            {
               "name": "communicationRelatesTo",
               "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/relatesTo",
               "type": "reference",

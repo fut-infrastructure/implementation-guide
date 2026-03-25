@@ -30,6 +30,9 @@
           },
           {
             "code": "eboks"
+          },
+          {
+            "code": "application-event"
           }
         ]
       }

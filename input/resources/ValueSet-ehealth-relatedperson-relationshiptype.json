@@ -49,6 +49,9 @@
           },
           {
             "code": "SPS"
+          },
+          {
+            "code": "POWATT"
           }
         ]
       }
