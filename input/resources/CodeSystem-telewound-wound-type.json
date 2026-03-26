@@ -1,0 +1,87 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "telewound-wound-types",
+  "url": "https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer",
+  "version": "1.0.0",
+  "name": "WoundTypes",
+  "title": "Wound types",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-03-25T00:00:00+00:00",
+  "publisher": "Region Nordjyllands Nationale IT-Løsningers (for nu) Fællesoffentlige Systemforvalter (FOSA) for Telesår",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rn.dk/Til-sundhedsfaglige/Sundhed/Sundheds-IT/Nationale-IT-loesninger/Telemedicinsk-Saarvurdering/FOSA"
+        },
+        {
+          "system": "email",
+          "value": "telesaarforvaltning@rn.dk"
+        }
+      ]
+    }
+  ],
+  "description": "Wound types",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TS1",
+      "display": "Arterielt sår"
+    },
+    {
+      "code": "TS2",
+      "display": "Diabetisk fodsår"
+    },
+    {
+      "code": "TS3",
+      "display": "Hudkræft-sår"
+    },
+    {
+      "code": "TS4",
+      "display": "Immunologisk sår"
+    },
+    {
+      "code": "TS5",
+      "display": "Overfladisk læsion af kroppen uden specifikation"
+    },
+    {
+      "code": "TS6",
+      "display": "Tryksår"
+    },
+    {
+      "code": "TS7",
+      "display": "Venøst sår"
+    },
+    {
+      "code": "TS8",
+      "display": "Eksem"
+    },
+    {
+      "code": "TS9",
+      "display": "Kronisk sår på huden"
+    },
+    {
+      "code": "TS10",
+      "display": "Kronisk sår på ben IKA"
+    },
+    {
+      "code": "TS11",
+      "display": "Traumesår"
+    },
+    {
+      "code": "TS12",
+      "display": "Brandsår"
+    },
+    {
+      "code": "TS13",
+      "display": "Kirugisk sår"
+    },
+    {
+      "code": "TS14",
+      "display": "Stomi-sår"
+    }
+  ]
+}
