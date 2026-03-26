@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xc-2",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2",
+  "version": "1.0.0",
+  "name": "Angst",
+  "title": "Angst (treatment area)",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-09T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for angst conditions (xc).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DF400"
+          },
+          {
+            "code": "DF4000"
+          },
+          {
+            "code": "DF4001"
+          },
+          {
+            "code": "DF401"
+          },
+          {
+            "code": "DF402"
+          },
+          {
+            "code": "DF410"
+          }
+        ]
+      }
+    ]
+  }
+}
