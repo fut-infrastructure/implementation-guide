@@ -24,9 +24,7 @@
   "compose": {
     "include": [
       {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/wound-conditions"
-        ]
+        "system": "https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer"
       }
     ]
   }
