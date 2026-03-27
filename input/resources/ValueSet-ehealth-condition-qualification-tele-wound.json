@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "condition-qualification-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/condition-qualification-tele-wound",
+  "version": "1.0.0",
+  "name": "conditionQualificationTeleWound",
+  "title": "Condition Qualification for Tele Wound",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of condition qualifications for tele wound domain.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer"
+      }
+    ]
+  }
+}

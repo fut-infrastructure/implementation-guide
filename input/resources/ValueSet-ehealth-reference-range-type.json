@@ -35,12 +35,10 @@
         "system": "urn:oid:1.2.208.184.100.1",
         "concept": [
           {
-            "code": "RAL",
-            "display": "Terapeutiske grænseværdier for RØD alarm"
+            "code": "RAL"
           },
           {
-            "code": "GAL",
-            "display": "Terapeutiske grænseværdier for GUL alarm"
+            "code": "GAL"
           }
         ]
       },

@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xc-3",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3",
+  "version": "1.0.0",
+  "name": "ZDiagnosis",
+  "title": "Z-diagnoser (treatment area)",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-09T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for Z-diagnosis conditions (xc).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DZ032"
+          },
+          {
+            "code": "DZ718"
+          },
+          {
+            "code": "DF999"
+          }
+        ]
+      }
+    ]
+  }
+}

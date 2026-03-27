@@ -1,62 +1,61 @@
 #!/bin/bash
+set -u
+
 SCRIPT=$(readlink -f $0)
 REPOPATH=$(dirname "${SCRIPT}")
 source "${REPOPATH}/login-utility.sh"
 
-services_for_capability="careplan device document-query document-transformation library measurement organization plan questionnaire reporting task terminology"
-
-services="careplan device document-query document-transformation library measurement organization plan questionnaire reporting task"
+SERVICES_FOR_CAPABILITY=(careplan device document-query document-transformation library measurement organization plan questionnaire reporting task terminology)
+SERVICES=(careplan device document-query document-transformation library measurement organization plan questionnaire reporting task)
 SOURCE_ENVIRONMENT="${SOURCE_ENVIRONMENT:-devtest.systematic-ehealth.com}"
-
-dir=input/resources
-
 IG_PATH=$(pwd)
-
+OUTPUT_DIR="${IG_PATH}/input/resources"
+TIME_OUT=5
 CANONICAL_BASE="http://ehealth.sundhed.dk/fhir/OperationDefinition"
 
-function fetch_capability_statement {
-  echo "Downloading capability statements from ${SOURCE_ENVIRONMENT} to ${IG_PATH}/${dir} in xml format"
+mkdir -p $OUTPUT_DIR
 
-	for service in $services_for_capability; do
+function fetch_capability_statement {
+  echo "Downloading capability statements from ${SOURCE_ENVIRONMENT} to $OUTPUT_DIR in xml format"
+
+#	for service in $services_for_capability; do
+	for service in "${SERVICES_FOR_CAPABILITY[@]}"; do
 		url="https://${service}.${SOURCE_ENVIRONMENT}/fhir/metadata"
-		status_code=$(curl -k -H 'Content-Type: application/fhir+xml' -o /dev/null -sw '%{http_code}' ${url});
-		if [ ${status_code} -eq 200 ]
-		then
-			curl -k -H "Content-Type: application/fhir+xml" -o ${IG_PATH}/${dir}/${service}.xml ${url}
-		else
-		  echo "Unable to find ${url} - status code: ${status_code}"
-			exit 1
-		fi
+    http_code=$(curl -kf -H 'Content-Type: application/fhir+xml' --connect-timeout "$TIME_OUT" -w '%{http_code}' -o "$OUTPUT_DIR/${service}.xml" "${url}")
+    curl_exit=$?
+    if [ "$curl_exit" -ne 0 ] || [ "$http_code" -ne 200 ]; then
+      echo "ERROR: Fetching from ${URL} terminated with curl exit-code: $curl_exit; http-code: $http_code"
+      exit 1
+    fi
 	done
 }
 
 function removeXmlCapabilityStatements {
-  for service in $services_for_capability; do
-    echo "Removing ${IG_PATH}/${dir}/${service}.xml"
-    rm -f ${IG_PATH}/${dir}/${service}.xml
+#  for service in $services_for_capability; do
+	for service in "${SERVICES_FOR_CAPABILITY[@]}"; do
+    echo "Removing $OUTPUT_DIR/${service}.xml"
+    rm -f $OUTPUT_DIR/${service}.xml
 	done
 }
 
 function fetch_operation_definitions {
 
-  echo "Fetching operation definitions from ${SOURCE_ENVIRONMENT} to ${IG_PATH}/${dir}"
+  echo "Fetching operation definitions from ${SOURCE_ENVIRONMENT} to $OUTPUT_DIR"
   login
 
-	for service in $services; do
+#	for service in $services; do
+	for service in "${SERVICES[@]}"; do
 
 	  echo "Handling ${service} service"
 
-		file="$IG_PATH/${dir}/${service}.xml"
+		file="$OUTPUT_DIR/${service}.xml"
 		#Ignore namespace declaration as xmllint can not handle it
-		find_values_command="sed  's|xmlns=\"http://hl7.org/fhir\"||' $IG_PATH/${dir}/${service}.xml | xmllint --xpath \"//operation[name/@value!='validate']/definition/@value\" -"
+		find_values_command="sed  's|xmlns=\"http://hl7.org/fhir\"||' $OUTPUT_DIR/${service}.xml | xmllint --xpath \"//operation[name/@value!='validate']/definition/@value\" -"
 		#pipe_commands explained: " | <remove the ' value=' string> | <remove quotes>"
 		pipe_commands=" | sed 's|value=||g' | sed 's/\"//g'"
 		operations=$(eval ${find_values_command}${pipe_commands})
 
 		for operation in $operations; do
-			status_code=$(curl -k -H 'Content-Type: application/fhir+json' -H "${AUTHORIZATION}" -o /dev/null -sw '%{http_code}' ${operation});
-			if [ ${status_code} -eq 200 ]
-			then
 				filename=${operation##*/} #extract substring after last slash
 				filename=${filename}.json # prefix and postfix and replase -s with system
 #				filename=${filename/-i-/-} #remove -i
@@ -65,14 +64,17 @@ function fetch_operation_definitions {
 				filename=OperationDefinition-${filename}
 				tmp=$(mktemp)
 				echo "Fetching ${operation} and store as ${filename}"
-				curl -k -H "Content-Type: application/fhir+json" -H "${AUTHORIZATION}" -o $tmp ${operation}
+
+        http_code=$(curl -kf -H 'Content-Type: application/fhir+json' -H "${AUTHORIZATION}" --connect-timeout "$TIME_OUT" -w '%{http_code}' -o "$tmp" "${operation}")
+        curl_exit=$?
+        if [ "$curl_exit" -ne 0 ] || [ "$http_code" -ne 200 ]; then
+          echo "ERROR: Fetching ${operation} terminated with curl exit-code: $curl_exit; http-code: $http_code"
+          exit 1
+        fi
+
 				id=$(jq -r '.id' "$tmp")
-				jq --arg url "$CANONICAL_BASE/$id" '.url = $url' "$tmp" > "${IG_PATH}/${dir}/${filename}"
+				jq --arg url "$CANONICAL_BASE/$id" '.url = $url' "$tmp" | jq 'del(.text)' > "$OUTPUT_DIR/${filename}"
 				rm -f $tmp
-			else
-				echo "Unable to find ${operation} - status code: ${status_code}"
-				exit 1
-			fi
 		done
 	done
 }
