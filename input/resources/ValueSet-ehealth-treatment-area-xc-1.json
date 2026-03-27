@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-treatment-area-xc-1",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1",
+  "version": "1.0.0",
+  "name": "Depression",
+  "title": "Depression (treatment area)",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-09T09:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Treatment area for depression conditions (xc).",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "DF320"
+          },
+          {
+            "code": "DF321"
+          },
+          {
+            "code": "DF330"
+          },
+          {
+            "code": "DF331"
+          }
+        ]
+      }
+    ]
+  }
+}

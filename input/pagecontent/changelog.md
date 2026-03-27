@@ -14,9 +14,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
 - Added http://ehealth.sundhed.dk/cs/poa-privilege for Power of Attorney privilege codes issued by NemLog-in. Content is `not-present` — codes are not enumerated in the IG.
+- Added ´xc´  to http://ehealth.sundhed.dk/cs/ehealth-system
 ### ValueSets
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 - Added http://ehealth.sundhed.dk/cs/poa-privilege as an include in http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
+- Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
+- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3 (Z-diagnosis)
+
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
