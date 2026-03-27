@@ -27,36 +27,28 @@
         "system": "urn:oid:1.2.208.176.2.4",
         "concept": [
           {
-            "code": "ALAL01",
-            "display": "Kræftsygdomme"
+            "code": "ALAL01"
           },
           {
-            "code": "ALAL02",
-            "display": "Hjertesygdomme"
+            "code": "ALAL02"
           },
           {
-            "code": "ALAL03",
-            "display": "Psykiske lidelser og adfærdsmæssige forstyrrelser"
+            "code": "ALAL03"
           },
           {
-            "code": "ALAL21",
-            "display": "Kronisk obstruktiv lungesygdom (KOL)"
+            "code": "ALAL21"
           },
           {
-            "code": "ALAL22",
-            "display": "Type 2-diabetes"
+            "code": "ALAL22"
           },
           {
-            "code": "ALAL23",
-            "display": "Osteoporose"
+            "code": "ALAL23"
           },
           {
-            "code": "ALAL51",
-            "display": "Graviditet, fødsel og barsel"
+            "code": "ALAL51"
           },
           {
-            "code": "ALAL52",
-            "display": "Nyfødte"
+            "code": "ALAL52"
           }
         ]
       },
@@ -64,40 +56,31 @@
         "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
-            "code": "NPU03804",
-            "display": "Pt—Legeme; masse = ? kg"
+            "code": "NPU03804"
           },
           {
-            "code": "NPU03963",
-            "display": "U—Erythrocytter; arb.k.(proc.) = ?"
+            "code": "NPU03963"
           },
           {
-            "code": "NPU21692",
-            "display": "Hjerte—Systole; frekv. = ? × 1/min"
+            "code": "NPU21692"
           },
           {
-            "code": "NPU22089",
-            "display": "P(kB)—Glucose; stofk. = ? mmol/L"
+            "code": "NPU22089"
           },
           {
-            "code": "NPU03011",
-            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
+            "code": "NPU03011"
           },
           {
-            "code": "NPU27281",
-            "display": "Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²"
+            "code": "NPU27281"
           },
           {
-            "code": "NPU19748",
-            "display": "P—C-reaktivt protein; massek. = ? mg/L"
+            "code": "NPU19748"
           },
           {
-            "code": "DNK05472",
-            "display": "Blodtryk systolisk;Arm"
+            "code": "DNK05472"
           },
           {
-            "code": "DNK05473",
-            "display": "Blodtryk diastolisk;Arm"
+            "code": "DNK05473"
           }
         ]
       },
@@ -105,32 +88,25 @@
         "system": "urn:oid:1.2.208.184.100.8",
         "concept": [
           {
-            "code": "MCS88100",
-            "display": "FEV6;Lunge"
+            "code": "MCS88100"
           },
           {
-            "code": "MCS88015",
-            "display": "FEV1;Lunge"
+            "code": "MCS88015"
           },
           {
-            "code": "MCS88019",
-            "display": "Blodtryk hjemme systolisk;Arm"
+            "code": "MCS88019"
           },
           {
-            "code": "MCS88020",
-            "display": "Blodtryk hjemme diastolisk;Arm"
+            "code": "MCS88020"
           },
           {
-            "code": "MCS88050",
-            "display": "Rejse sætte sig testen;Pt"
+            "code": "MCS88050"
           },
           {
-            "code": "MCS88137",
-            "display": "CAT score;Pt"
+            "code": "MCS88137"
           },
           {
-            "code": "MCS88021",
-            "display": "MRC skala;Pt(KOL)"
+            "code": "MCS88021"
           }
         ]
       },

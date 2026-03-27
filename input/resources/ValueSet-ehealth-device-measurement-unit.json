@@ -27,46 +27,13 @@
         "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
-            "code": "NPU03011",
-            "display": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Oxygen saturation"
-              },
-              {
-                "language": "da",
-                "value": "Hb(Fe; O2-bind.; aB)—Oxygen(O2); mætn. = ?"
-              }
-            ]
+            "code": "NPU03011"
           },
           {
-            "code": "NPU21692",
-            "display": "Hjerte—Systole; frekv. = ? × 1/min",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Heartbeats per minute"
-              },
-              {
-                "language": "da",
-                "value": "Hjerte—Systole; frekv. = ? × 1/min"
-              }
-            ]
+            "code": "NPU21692"
           },
           {
-            "code": "NPU03804",
-            "display": "Pt—Legeme; masse = ? kg",
-            "designation": [
-              {
-                "language": "en-US",
-                "value": "Weight in kilogrammes"
-              },
-              {
-                "language": "da",
-                "value": "Pt—Legeme; masse = ? kg"
-              }
-            ]
+            "code": "NPU03804"
           }
         ]
       }

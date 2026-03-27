@@ -30,8 +30,7 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "273586006",
-            "display": "Master Questionnaire (DK)"
+            "code": "273586006"
           }
         ]
       }
