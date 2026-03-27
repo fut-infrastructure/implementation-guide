@@ -81,7 +81,7 @@
     {
       "code": "condition-qualification",
       "display": "condition qualification",
-      "definition": "Qualification of condition. For this context type, the value shall be a code from http://ehealth.sundhed.dk/vs/ehealth-condition-qualification",
+      "definition": "Qualification of condition. For this context type, the value shall be a code from http://ehealth.sundhed.dk/vs/condition-qualification",
       "designation": [
         {
           "language": "da",
@@ -96,7 +96,7 @@
       "designation": [
         {
           "language": "da",
-          "value": "Placering på patients krop"
+          "value": "Placering på kroppen"
         }
       ]
     }

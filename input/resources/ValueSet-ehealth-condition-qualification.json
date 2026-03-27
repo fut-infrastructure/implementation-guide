@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "ehealth-condition-qualification",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-condition-qualification",
+  "id": "vs-condition-qualification",
+  "url": "http://ehealth.sundhed.dk/vs/condition-qualification",
   "version": "1.0.0",
   "name": "conditionQualification",
   "title": "Condition Qualification",
@@ -25,7 +25,7 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-condition-qualification-tele-wound"
+          "http://ehealth.sundhed.dk/vs/condition-qualification-tele-wound"
         ]
       }
     ]

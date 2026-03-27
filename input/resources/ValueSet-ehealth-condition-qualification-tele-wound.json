@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "ehealth-condition-qualification-tele-wound",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-condition-qualification-tele-wound",
+  "id": "condition-qualification-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/condition-qualification-tele-wound",
   "version": "1.0.0",
   "name": "conditionQualificationTeleWound",
   "title": "Condition Qualification for Tele Wound",

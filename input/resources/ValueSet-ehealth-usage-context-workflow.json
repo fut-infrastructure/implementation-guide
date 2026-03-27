@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-ehealth-usage-context-workflow",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow",
+  "id": "vs-usage-context-workflow",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-workflow",
   "version": "1.0.0",
   "name": "usageContextWorkflow",
   "title": "Usage Context Workflow",
@@ -25,7 +25,7 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow-tele-wound"
+          "http://ehealth.sundhed.dk/vs/usage-context-workflow-tele-wound"
         ]
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-ehealth-usage-context-task-type",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-task-type",
+  "id": "vs-usage-context-task-type",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-task-type",
   "version": "1.0.0",
   "name": "usageContextTaskType",
   "title": "Usage Context Task Type",
@@ -25,7 +25,7 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-usage-context-task-type-tele-wound"
+          "http://ehealth.sundhed.dk/vs/usage-context-task-type-tele-wound"
         ]
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs-ehealth-usage-context-workflow-tele-wound",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-workflow-tele-wound",
+  "id": "vs-usage-context-workflow-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-workflow-tele-wound",
   "version": "1.0.0",
   "name": "usageContextWorkflowTeleWound",
   "title": "Usage Context for Tele Wound Workflow ",

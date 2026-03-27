@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
-  "id": "ehealth-usage-context-body-site-tele-wound",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-usage-context-body-site-tele-wound",
+  "id": "usage-context-body-site-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-body-site-tele-wound",
   "version": "1.0.0",
   "name": "bodyUsageContextSiteTeleWound",
   "title": "Usage Context for Tele Wound Body Site",
