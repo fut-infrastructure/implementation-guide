@@ -19,7 +19,7 @@ Parent: Condition
 Extension: ehealth-code-qualification
 Title:       "Code Qualification"
 Description: "Condition qualification"
-* . ^short = "Condition-qualification"
+* . ^short = "Condition qualification"
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://ehealth.sundhed.dk/vs/condition-qualification
 
