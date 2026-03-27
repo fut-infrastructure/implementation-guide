@@ -1923,6 +1923,16 @@
           "display": "Personer i kontakt med sundhedsvæsenet af andre årsager"
         },
         {
+          "code": "DZ87",
+          "display": "Anamnese med andre sygdomme og tilstande",
+          "concept": [
+            {
+              "code": "DZ872",
+              "display": "Anamnese med sygdom i hud eller underhud"
+            }
+          ]
+        },
+        {
           "code": "DZ93",
           "display": "Tilstand med kunstig legemsåbning",
           "concept": [
@@ -1945,6 +1955,16 @@
               "display": "Hudtransplanteret"
             }
           ]
+        }
+      ]
+    },
+    {
+      "code": "ZZ0150",
+      "display": "Journaloptagelse",
+      "concept": [
+        {
+          "code": "ZZ0150A",
+          "display": "Anamneseoptagelse"
         }
       ]
     },

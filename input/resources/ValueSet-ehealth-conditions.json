@@ -155,6 +155,11 @@
           "op": "is-a",
           "value": "J5"
         } ]
+      },
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/wound-conditions"
+        ]
       }
     ]
   }
