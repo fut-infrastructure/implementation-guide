@@ -20,6 +20,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
+- Added `ehealth-message-author` extension to `ehealth-message` (`Communication`). When an attorney (`RELATED_PERSON`) sends a message on behalf of a patient, `Communication.sender` must reference the grantor patient. The vendor application must populate the `ehealth-message-author` extension with a reference to the acting `RelatedPerson`. Patient Service validates this on every write by a `RELATED_PERSON` user.
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
