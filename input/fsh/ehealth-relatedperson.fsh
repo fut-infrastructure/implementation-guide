@@ -23,7 +23,14 @@ Usage: #example
 * meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"
 * extension.url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-contactnote"
 * extension.valueString = "This is a contact note"
+* identifier[0].system = "urn:oid:1.2.208.176.1.2"
+* identifier[0].value = "0501792275"
+* active = true
 * patient = Reference(Patient/102)
+* relationship[0].coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* relationship[0].coding.code = #POWATT
+* relationship[+].coding.system = "http://ehealth.sundhed.dk/cs/poa-privilege"
+* relationship[=].coding.code = #urn:dk:sundhed:ehealth:futtest:role:PowerOfAttorney:v1
 * name.use = #official
 * name.family = "Test"
 * name.given = "RelatedPerson"
@@ -34,3 +41,4 @@ Usage: #example
 * address.city = "Aarhus"
 * address.postalCode = "8000"
 * address.country = "Danmark"
+* period.start = "2026-03-24"

@@ -13,9 +13,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Binary expunge (\$expunge) operation to support bulk export operations
 ### Code systems
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added http://ehealth.sundhed.dk/cs/poa-privilege for Power of Attorney privilege codes issued by NemLog-in. Content is `not-present` — codes are not enumerated in the IG.
 - Added ´xc´  to http://ehealth.sundhed.dk/cs/ehealth-system
 ### ValueSets
 - Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added http://ehealth.sundhed.dk/cs/poa-privilege as an include in http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
 - Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
 - Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
 - Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
@@ -26,6 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
+- Added `ehealth-message-author` extension to `ehealth-message` (`Communication`). When an attorney (`RELATED_PERSON`) sends a message on behalf of a patient, `Communication.sender` must reference the grantor patient. The vendor application must populate the `ehealth-message-author` extension with a reference to the acting `RelatedPerson`. Patient Service validates this on every write by a `RELATED_PERSON` user.
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
