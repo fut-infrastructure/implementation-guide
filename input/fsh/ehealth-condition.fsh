@@ -4,7 +4,7 @@ Parent: Condition
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
 * extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare].valueReference ^type.aggregation = #referenced
-* extension contains ehealth-code-qualification named codeQualification 0..*
+* extension contains ehealth-code-qualification named codeQualification 0..1
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/conditions
 * subject only Reference(ehealth-patient or Group)
