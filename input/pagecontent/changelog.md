@@ -12,18 +12,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 - Binary expunge (\$expunge) operation to support bulk export operations
 ### Code systems
-- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
-- Added ´xc´  to http://ehealth.sundhed.dk/cs/ehealth-system
-- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added `xc`  to http://ehealth.sundhed.dk/cs/ehealth-system
+- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS (using `icd11-foundation-entity-id` property to annotate concepts with the ICD-11 foundation entity ids)
 - Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
+- Added `icd11-foundation-entity-id` property to http://ehealth.sundhed.dk/cs/ehealth-property
 - Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with wounds related codes
 - Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with Anamneseoptagelse
 - Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
 - Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
 ### ValueSets
-- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
-- Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
 - Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
 - Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
