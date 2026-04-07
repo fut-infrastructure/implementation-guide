@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "aggregation-mode-types",
+  "url": "http://ehealth.sundhed.dk/vs/aggregation-mode-types",
+  "version": "0.0.1",
+  "name": "AggregationModeTypes",
+  "title": "Aggregation Mode Types",
+  "status": "active",
+  "experimental": true,
+  "date": "2026-03-23T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Aggregation Mode",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/aggregation-mode-types"
+      }
+    ]
+  }
+}

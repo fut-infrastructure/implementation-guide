@@ -53,6 +53,20 @@
       ]
     },
     {
+      "code": "aggregate-input",
+      "display": "Aggregated Triage Input",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Aggregated Triage Input"
+        },
+        {
+          "language": "da",
+          "value": "Input til Aggregeret Triagering"
+        }
+      ]
+    },
+    {
       "code": "http://ehealth.sundhed.dk/policy/ehealth/coherent-submitted-measurement",
       "display": "Coherent submitted measurement",
       "designation": [
