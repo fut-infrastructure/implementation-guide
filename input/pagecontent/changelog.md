@@ -42,6 +42,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.
+- Added extension ehealth-code-qualification to Condition.
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
