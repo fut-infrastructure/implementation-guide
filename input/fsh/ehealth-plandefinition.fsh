@@ -17,7 +17,7 @@ Parent: PlanDefinition
 * action.definition[x] only Canonical(ehealth-activitydefinition or ehealth-plandefinition)
 * action.extension contains ehealth-actionTrigger named ehealth-actionTrigger 0..1
 * action.extension contains ehealth-include-as-extra named includeAsExtra 0..1
-* action.extension contains ehealth-aggregate-group-id named aggregate-group-id 0..1
+* action.extension contains ehealth-aggregate-group-id named aggregateGroupId 0..1
 
 Extension: ehealth-actionTrigger
 Title:     "Action Trigger"
