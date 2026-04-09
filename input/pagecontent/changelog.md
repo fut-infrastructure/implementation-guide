@@ -31,6 +31,7 @@ This is the log of changes made to the eHealth Implementation Guide.
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3 (Z-diagnosis)
 - Added http://ehealth.sundhed.dk/vs/wound-conditions ValueSet for Wound Conditions
+- Updated http://ehealth.sundhed.dk/vs/conditions to include http://ehealth.sundhed.dk/vs/wound-conditions.
 - Added http://ehealth.sundhed.dk/vs/usage-context-workflow-tele-wound ValueSet for specific Tele-Wound workflows.
 - Added http://ehealth.sundhed.dk/vs/usage-context-workflow ValueSet.
 - Added http://ehealth.sundhed.dk/vs/usage-context-task-type-tele-wound ValueSet for specific Tele-Wound tasks.
@@ -44,6 +45,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.
 - Added extension ehealth-code-qualification to Condition.
+- Updated EhealthOrganization to be based on DKCore Organization.
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
 
