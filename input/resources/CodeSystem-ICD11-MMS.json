@@ -1,0 +1,796 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ICD-11-MMS-2025-01",
+  "url": "http://id.who.int/icd/release/11/mms",
+  "version": "2025-01",
+  "name": "ICD-11 for Mortality and Morbidity Statistics",
+  "status": "active",
+  "experimental": false,
+  "publisher": "World Health Organization",
+  "description": "ICD-11 for Mortality and Morbidity Statistics, FHIR representation based on ICD-11 content from https://icd.who.int/en/.",
+  "copyright": "WHO 2020. See ICD-11 license at https://icd.who.int/en/docs/ICD11-license.pdf",
+  "caseSensitive": false,
+  "hierarchyMeaning": "classified-with",
+  "compositional": true,
+  "versionNeeded": false,
+  "content": "fragment",
+  "property": [
+    {
+      "code": "icd11-foundation-entity-id",
+      "type": "string",
+      "uri": "http://ehealth.sundhed.dk/cs/ehealth-property#icd11-foundation-entity-id"
+    }
+  ],
+  "concept": [
+    {
+      "code": "XA1RS6",
+      "display": "Head and neck",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/223243926"
+        }
+      ]
+    },
+    {
+      "code": "XA20Q1",
+      "display": "Head",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1357976561"
+        }
+      ]
+    },
+    {
+      "code": "XA6CW5",
+      "display": "Scalp",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/570444145"
+        }
+      ]
+    },
+    {
+      "code": "XA86S4",
+      "display": "Face",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/968129184"
+        }
+      ]
+    },
+    {
+      "code": "XA6TR8",
+      "display": "Forehead",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/862454798"
+        }
+      ]
+    },
+    {
+      "code": "XA7MK8",
+      "display": "Cheek",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1286369458"
+        }
+      ]
+    },
+    {
+      "code": "XA3H13",
+      "display": "Nose",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1082634473"
+        }
+      ]
+    },
+    {
+      "code": "XA5A87",
+      "display": "Oral region",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/899660487"
+        }
+      ]
+    },
+    {
+      "code": "XA7AA6",
+      "display": "Neck",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/956558826"
+        }
+      ]
+    },
+    {
+      "code": "XA4QS6",
+      "display": "Front of neck",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1274197866"
+        }
+      ]
+    },
+    {
+      "code": "XA2ZF0",
+      "display": "Side of neck",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1921653290"
+        }
+      ]
+    },
+    {
+      "code": "XA1M78",
+      "display": "Nape of neck",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/391324778"
+        }
+      ]
+    },
+    {
+      "code": "XA3FR3",
+      "display": "Trunk",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/947150833"
+        }
+      ]
+    },
+    {
+      "code": "XA4QH7",
+      "display": "Upper trunk",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/17625777"
+        }
+      ]
+    },
+    {
+      "code": "XA5D93",
+      "display": "Thorax",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/650081113"
+        }
+      ]
+    },
+    {
+      "code": "XA55T2",
+      "display": "Chest wall",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1656376572"
+        }
+      ]
+    },
+    {
+      "code": "XA10L7",
+      "display": "Upper back",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/730488167"
+        }
+      ]
+    },
+    {
+      "code": "XA6CY1",
+      "display": "Lower trunk",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/371496561"
+        }
+      ]
+    },
+    {
+      "code": "XA6GV0",
+      "display": "Abdomen",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1983193090"
+        }
+      ]
+    },
+    {
+      "code": "XA0U66",
+      "display": "Upper abdomen",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1927061586"
+        }
+      ]
+    },
+    {
+      "code": "XA4TC0",
+      "display": "Lower abdomen",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/2105593940"
+        }
+      ]
+    },
+    {
+      "code": "XA25R8",
+      "display": "Lumbosacral region",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/501035478"
+        }
+      ]
+    },
+    {
+      "code": "XA6ZR2",
+      "display": "Mid back",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/162152032"
+        }
+      ]
+    },
+    {
+      "code": "XA9ET2",
+      "display": "Lower back",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1218764272"
+        }
+      ]
+    },
+    {
+      "code": "XA2P90",
+      "display": "Back",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1187030"
+        }
+      ]
+    },
+    {
+      "code": "XA8HA7",
+      "display": "Anogenital region",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/294531567"
+        }
+      ]
+    },
+    {
+      "code": "XA4B34",
+      "display": "Perianal region",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/687060814"
+        }
+      ]
+    },
+    {
+      "code": "XA6AS2",
+      "display": "Extremities",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1810600222"
+        }
+      ]
+    },
+    {
+      "code": "XA4BA8",
+      "display": "Upper extremity",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/986233688"
+        }
+      ]
+    },
+    {
+      "code": "XA2ND5",
+      "display": "Shoulder",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/2127070735"
+        }
+      ]
+    },
+    {
+      "code": "XA17J1",
+      "display": "Axilla",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1494375321"
+        }
+      ]
+    },
+    {
+      "code": "XA6809",
+      "display": "Upper arm",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/312192089"
+        }
+      ]
+    },
+    {
+      "code": "XA9FF8",
+      "display": "Elbow",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/667468098"
+        }
+      ]
+    },
+    {
+      "code": "XA7WB0",
+      "display": "Forearm",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1477228030"
+        }
+      ]
+    },
+    {
+      "code": "XA2J63",
+      "display": "Wrist",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1679928503"
+        }
+      ]
+    },
+    {
+      "code": "XA5R12",
+      "display": "Hand",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/430791912"
+        }
+      ]
+    },
+    {
+      "code": "XA30Z6",
+      "display": "Dorsum of hand",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/2088002216"
+        }
+      ]
+    },
+    {
+      "code": "XA3NY8",
+      "display": "Palm of hand",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/243611688"
+        }
+      ]
+    },
+    {
+      "code": "XA2593",
+      "display": "Fingers and thumb",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/822750113"
+        }
+      ]
+    },
+    {
+      "code": "XA8DJ6",
+      "display": "Thumb",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/452671086"
+        }
+      ]
+    },
+    {
+      "code": "XA6NZ0",
+      "display": "Index finger",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/15105170"
+        }
+      ]
+    },
+    {
+      "code": "XA0Y38",
+      "display": "Middle finger",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/806667718"
+        }
+      ]
+    },
+    {
+      "code": "XA06X8",
+      "display": "Ring finger",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1823823558"
+        }
+      ]
+    },
+    {
+      "code": "XA5EN3",
+      "display": "Little finger",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1621005983"
+        }
+      ]
+    },
+    {
+      "code": "XA45A6",
+      "display": "Lower extremity",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/2093217246"
+        }
+      ]
+    },
+    {
+      "code": "XA3VA7",
+      "display": "Buttock",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1894266247"
+        }
+      ]
+    },
+    {
+      "code": "XA5S78",
+      "display": "Thigh",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/238202718"
+        }
+      ]
+    },
+    {
+      "code": "XA98B3",
+      "display": "Anterior surface of thigh",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1956868073"
+        }
+      ]
+    },
+    {
+      "code": "XA8RH9",
+      "display": "Lateral surface of thigh",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1089399959"
+        }
+      ]
+    },
+    {
+      "code": "XA0183",
+      "display": "Posterior surface of thigh",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1472628823"
+        }
+      ]
+    },
+    {
+      "code": "XA1YQ6",
+      "display": "Medial surface of thigh",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/927597086"
+        }
+      ]
+    },
+    {
+      "code": "XA8KL5",
+      "display": "Knee",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1670056745"
+        }
+      ]
+    },
+    {
+      "code": "XA3YG1",
+      "display": "Lower leg",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/106050921"
+        }
+      ]
+    },
+    {
+      "code": "XA33X4",
+      "display": "Anterior surface of lower leg",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/689705614"
+        }
+      ]
+    },
+    {
+      "code": "XA4RR4",
+      "display": "Lateral surface of lower leg",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/855726194"
+        }
+      ]
+    },
+    {
+      "code": "XA0LQ2",
+      "display": "Posterior surface of lower leg",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/491885042"
+        }
+      ]
+    },
+    {
+      "code": "XA15P0",
+      "display": "Medial surface of lower leg",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/606682290"
+        }
+      ]
+    },
+    {
+      "code": "XA67V4",
+      "display": "Ankle",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1106248434"
+        }
+      ]
+    },
+    {
+      "code": "XA47V8",
+      "display": "Foot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1896004518"
+        }
+      ]
+    },
+    {
+      "code": "XA99M7",
+      "display": "Hindfoot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/899012917"
+        }
+      ]
+    },
+    {
+      "code": "XA5HK0",
+      "display": "Heel",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/247910170"
+        }
+      ]
+    },
+    {
+      "code": "XA5151",
+      "display": "Midfoot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/265822591"
+        }
+      ]
+    },
+    {
+      "code": "XA5YL1",
+      "display": "Forefoot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/999662081"
+        }
+      ]
+    },
+    {
+      "code": "XA8BE2",
+      "display": "Dorsum of foot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/2084017562"
+        }
+      ]
+    },
+    {
+      "code": "XA1XM4",
+      "display": "Sole of foot",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1797255514"
+        }
+      ]
+    },
+    {
+      "code": "XA4LC9",
+      "display": "Toes",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1735902769"
+        }
+      ]
+    },
+    {
+      "code": "XA2RP7",
+      "display": "Great toe",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1003902257"
+        }
+      ]
+    },
+    {
+      "code": "XA8ZZ3",
+      "display": "Second toe",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/754856433"
+        }
+      ]
+    },
+    {
+      "code": "XA0SP3",
+      "display": "Third toe",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/361143473"
+        }
+      ]
+    },
+    {
+      "code": "XA4KK7",
+      "display": "Fourth toe",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/45021297"
+        }
+      ]
+    },
+    {
+      "code": "XA42W4",
+      "display": "Fifth toe",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/769712024"
+        }
+      ]
+    },
+    {
+      "code": "XK9J",
+      "display": "Bilateral",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/627678743"
+        }
+      ]
+    },
+    {
+      "code": "XK8G",
+      "display": "Left",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/271422288"
+        }
+      ]
+    },
+    {
+      "code": "XK9K",
+      "display": "Right",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/876572005"
+        }
+      ]
+    },
+    {
+      "code": "XK70",
+      "display": "Unilateral, unspecified",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1038788978"
+        }
+      ]
+    },
+    {
+      "code": "XK7V",
+      "display": "Anterior",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/1190123007"
+        }
+      ]
+    },
+    {
+      "code": "XK8L",
+      "display": "Posterior",
+      "property": [
+        {
+          "code": "icd11-foundation-entity-id",
+          "valueString": "http://id.who.int/icd/entity/648538052"
+        }
+      ]
+    }
+  ]
+}
