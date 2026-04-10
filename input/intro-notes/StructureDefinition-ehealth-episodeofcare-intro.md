@@ -43,23 +43,23 @@ When performing a cross-team search, the following rules apply:
 - The condition codes provided as search parameters must be within the treatment areas of the telemedicine solution in which the Practitioner is operating
 - The search operation filters out any included or reverse-included resources (CarePlan and Condition) that are not allowed by the treatment areas of the telemedicine solution in which the Practitioner is operating
 
-### Supported Patch operations
-The following patch operations are supported on the EpisodeOfCare resource:
+### Supported PATCH operations
+The following PATCH operations are supported on the EpisodeOfCare resource:
 
-- For `diagnosis` the following patch operations are supported:
+- For `diagnosis` the following PATCH operations are supported:
     - `add`, `replace` and `move`
     - Note that `replace` is only allowed if no condition reference is removed.
-- For `status` the following patch operations are supported:
+- For `status` the following PATCH operations are supported:
     - `replace`
-- For `team` the following patch operations are supported:
+- For `team` the following PATCH operations are supported:
     - `add`, `replace` and `remove`
-- For `period` the following patch operations are supported:
+- For `period` the following PATCH operations are supported:
     - `replace`
-- For extension `caremanagerOrganization` the following patch operations are supported:
+- For extension `caremanagerOrganization` the following PATCH operations are supported:
     - `replace`
-- For extension `episodeofcareStatusschedule` the following patch operations are supported:
+- For extension `episodeofcareStatusschedule` the following PATCH operations are supported:
     - `add`, `replace` and `remove`
-- For extension `teamschedule` the following patch operations are supported:
+- For extension `teamschedule` the following PATCH operations are supported:
     - `add`, `replace` and `remove`
-- For extension `participant` the following patch operations are supported:
+- For extension `participant` the following PATCH operations are supported:
     - `add`, `replace` and `remove`

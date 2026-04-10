@@ -3,14 +3,14 @@ A Condition is a clinical condition, problem, diagnosis, or other event, situati
 
 # Scope and Usage
 
-### Supported Patch operations
-The following patch operations are supported on the Condition resource:
+### Supported PATCH operations
+The following PATCH operations are supported on the Condition resource:
 
-- For `verificationStatus` the following patch operations are supported:
+- For `verificationStatus` the following PATCH operations are supported:
     - `add`, `replace` and `remove`
-- For `clinicalStatus` the following patch operations are supported:
+- For `clinicalStatus` the following PATCH operations are supported:
     - `add` and `replace`
-- For `asserter` the following patch operations are supported:
+- For `asserter` the following PATCH operations are supported:
     - `add` and `replace`
-- For extension `codeQualification` the following patch operations are supported:
+- For extension `codeQualification` the following PATCH operations are supported:
     - `add` and `replace`
