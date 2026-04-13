@@ -15,4 +15,4 @@ The following PATCH operations are supported on the Condition resource:
 - For extension `codeQualification` the following PATCH operations are supported:
     - `add` and `replace`
 
-Note: when adding an extension for the first time, the extension property on the resource will not yet be initialized. Since extension is a list, its value must be provided as a JSON array.
+Note: when adding an `extension` for the first time, the `extension` property on the resource will not yet be initialized. Since `extension` is a list, its value must be provided as a JSON array.
