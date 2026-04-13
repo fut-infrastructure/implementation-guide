@@ -12,22 +12,42 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### Instance operations
 - Binary expunge (\$expunge) operation to support bulk export operations
 ### Code systems
-- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added `xc`  to http://ehealth.sundhed.dk/cs/ehealth-system
 - Added http://ehealth.sundhed.dk/cs/poa-privilege for Power of Attorney privilege codes issued by NemLog-in. Content is `not-present` — codes are not enumerated in the IG.
-- Added ´xc´  to http://ehealth.sundhed.dk/cs/ehealth-system
+- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS (using `icd11-foundation-entity-id` property to annotate concepts with the ICD-11 foundation entity ids)
+- Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
+- Added `icd11-foundation-entity-id` property to http://ehealth.sundhed.dk/cs/ehealth-property
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with wounds related codes
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with Anamneseoptagelse
+- Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
+- Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
+- Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
 ### ValueSets
-- Added ´fob´ (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
 - Added http://ehealth.sundhed.dk/cs/poa-privilege as an include in http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
-- Added ´xc´ to http://ehealth.sundhed.dk/vs/ehealth-system
 - Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
 - Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
   - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3 (Z-diagnosis)
-
+- Added http://ehealth.sundhed.dk/vs/wound-conditions ValueSet for Wound Conditions
+- Updated http://ehealth.sundhed.dk/vs/conditions to include http://ehealth.sundhed.dk/vs/wound-conditions.
+- Added http://ehealth.sundhed.dk/vs/usage-context-workflow-tele-wound ValueSet for specific Tele-Wound workflows.
+- Added http://ehealth.sundhed.dk/vs/usage-context-workflow ValueSet.
+- Added http://ehealth.sundhed.dk/vs/usage-context-task-type-tele-wound ValueSet for specific Tele-Wound tasks.
+- Added http://ehealth.sundhed.dk/vs/usage-context-task-type ValueSet.
+- Added http://ehealth.sundhed.dk/vs/usage-context-body-site-tele-wound ValueSet for specific Tele-Wound body-sites.
+- Added http://ehealth.sundhed.dk/vs/usage-context-body-site ValueSet.
+- Added http://ehealth.sundhed.dk/vs/condition-qualification-tele-wound ValueSet for specific Tele-Wound condition qualification.
+- Added http://ehealth.sundhed.dk/vs/condition-qualification ValueSet.
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
 ### Resource/profile changes
+- Added extension ehealth-provider-affiliation to practitioner.
+- Added extension ehealth-code-qualification to Condition.
+- Updated EhealthOrganization to be based on DKCore Organization.
 - Added `ehealth-message-author` extension to `ehealth-message` (`Communication`). When an attorney (`RELATED_PERSON`) sends a message on behalf of a patient, `Communication.sender` must reference the grantor patient. The vendor application must populate the `ehealth-message-author` extension with a reference to the acting `RelatedPerson`. Patient Service validates this on every write by a `RELATED_PERSON` user.
 ### Search parameters
 - Added search parameter `topic` on `ehealth-communication` to be able to query by topic
