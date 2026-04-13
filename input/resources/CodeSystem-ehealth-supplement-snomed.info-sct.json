@@ -32,6 +32,26 @@
           "value": "Billede af sår"
         }
       ]
+    },
+    {
+      "code": "225395003",
+      "display": "Wound assessment (procedure)",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sårvurdering"
+        }
+      ]
+    },
+    {
+      "code": "225358003",
+      "display": "Wound care (regime/therapy)",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Sårbehandling og -pleje"
+        }
+      ]
     }
   ]
 }
