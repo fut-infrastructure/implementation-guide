@@ -4,6 +4,7 @@ Parent: Condition
 * extension contains http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare named episodeOfCare 0..1
 * extension[episodeOfCare].valueReference only Reference(ehealth-episodeofcare)
 * extension[episodeOfCare].valueReference ^type.aggregation = #referenced
+* extension contains ehealth-code-qualification named codeQualification 0..1
 * code 1..1
 * code from http://ehealth.sundhed.dk/vs/conditions
 * subject only Reference(ehealth-patient or Group)
@@ -14,6 +15,13 @@ Parent: Condition
 * stage.assessment ^type.aggregation = #referenced
 * note.authorReference only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * note.authorString only string
+
+Extension: ehealth-code-qualification
+Title:       "Code Qualification"
+Description: "Condition qualification"
+* . ^short = "Condition qualification"
+* value[x] only CodeableConcept
+* valueCodeableConcept from http://ehealth.sundhed.dk/vs/condition-qualification
 
 Instance: Condition/42
 InstanceOf: ehealth-condition
