@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - dk.core updated from 1.1.0 to 3.5.0
   - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
 - dk.core updated from 3.5.0 to 3.6.0
+  - BREAKING: The system for the extension dk-core-RegionalSubDivisionCodes has changed from "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" to "urn:iso:std:iso:3166:-2"
 ### Custom operations
 #### System operations
 - Bulk export (\$export) new parameters _until and _includeHistory
