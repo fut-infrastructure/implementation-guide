@@ -73,7 +73,7 @@ function fetch_operation_definitions {
         fi
 
 				id=$(jq -r '.id' "$tmp")
-				jq --arg url "$CANONICAL_BASE/$id" '.url = $url' "$tmp" | jq 'del(.text)' > "$OUTPUT_DIR/${filename}"
+				jq --arg url "$CANONICAL_BASE/$id" '.url = $url' "$tmp" | jq 'del(.text)' | tr -d '\r' > "$OUTPUT_DIR/${filename}" 
 				rm -f $tmp
 		done
 	done
