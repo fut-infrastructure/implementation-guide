@@ -3,13 +3,13 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2026-03-19T02:18:23.368+00:00",
+  "date": "2026-04-15T02:17:53.839+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "document-transformation",
-    "version": "1.32.0"
+    "version": "1.33.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",
@@ -32,6 +32,12 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
+      }, {
+        "name": "binary-access-write",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
+      }, {
+        "name": "binary-access-read",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Composition",
@@ -163,6 +169,12 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/CompositionDocumentReference-it-validate"
+      }, {
+        "name": "binary-access-write",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
+      }, {
+        "name": "binary-access-read",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "DocumentReference",
@@ -344,6 +356,12 @@
         "name": "deprecate-document",
         "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/DocumentReference-t-deprecate-document",
         "documentation": "Deprecates a shared document. The operation takes a documentIdentifier and cpr-number as parameters and finds the DocumentReference with the corresponding masterIdentifier. masterIdentifier should be unique for DocumentReference so if less than 0 or more than 1 are found the operation throws and exception. If the found documentReference has a patient which cpr number matches the provided value the document is deprecated. iti-57 is used to deprecate the document on XDS. On successthe documentReference status is updated to superseded and updated in the database."
+      }, {
+        "name": "binary-access-write",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
+      }, {
+        "name": "binary-access-read",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -352,7 +370,14 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ]
+      "searchRevInclude": [ "Composition:attester", "Composition:author", "Composition:encounter", "Composition:entry", "Composition:patient", "Composition:related-ref", "Composition:subject", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:related-ref", "DocumentReference:relatesto", "DocumentReference:subject" ],
+      "operation": [ {
+        "name": "binary-access-write",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
+      }, {
+        "name": "binary-access-read",
+        "definition": "https://document-transformation.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
+      } ]
     } ],
     "operation": [ {
       "name": "reindex",
