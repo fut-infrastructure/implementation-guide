@@ -45,7 +45,7 @@ function fetch_operation_definitions {
 
 #	for service in $services; do
 	for service in "${SERVICES[@]}"; do
-
+    login
 	  echo "Handling ${service} service"
 
 		file="$OUTPUT_DIR/${service}.xml"
@@ -69,7 +69,7 @@ function fetch_operation_definitions {
         curl_exit=$?
         if [ "$curl_exit" -ne 0 ] || [ "$http_code" -ne 200 ]; then
           echo "ERROR: Fetching ${operation} terminated with curl exit-code: $curl_exit; http-code: $http_code"
-          exit 1
+          continue
         fi
 
 				id=$(jq -r '.id' "$tmp")
