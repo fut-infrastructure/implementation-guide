@@ -3,7 +3,7 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2026-04-15T02:27:43.081+00:00",
+  "date": "2026-04-16T13:06:02.971+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -32,12 +32,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Communication",
@@ -95,12 +89,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Media",
@@ -207,12 +195,6 @@
         "name": "get-data",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Media-t-get-data",
         "documentation": "The get-data operation returns a media content matching the uuid provided.\n\n\n### Parameter description\n- uuid: The uuid of the media to return\n\n\n### Request header description\n- ehealth-thumbnail-size: The size of thumbnail to return instead of original content. If thumbnails are not supported for the media, the original content is returned\n\n\n### Output description\nThe result of this operation returns a Binary containing the media found from the provided uuid"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Observation",
@@ -307,12 +289,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -321,14 +297,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ]
     }, {
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
@@ -373,13 +342,6 @@
         "name": "target",
         "type": "reference",
         "documentation": "Target Reference(s) (usually version specific)"
-      } ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "QuestionnaireResponse",
@@ -476,12 +438,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://measurement.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     } ],
     "operation": [ {

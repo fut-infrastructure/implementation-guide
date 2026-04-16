@@ -3,7 +3,7 @@
   "id": "plan",
   "name": "plan",
   "status": "active",
-  "date": "2026-04-15T02:42:22.675+00:00",
+  "date": "2026-04-16T13:05:54.225+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -201,12 +201,6 @@
         "name": "create-clone",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/ActivityDefinitionPlanDefinition-i-create-clone",
         "documentation": "### Input\n- resourceId: reference to the ActivityDefinition resource that should be cloned\n- clone_operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n- default-clone-behavior: true/false. False signifies deep-clone mode where the list of deep-clone-references determine which resources should be cloned \n- deep-clone-references: References to resources to create as new resources rather than referencing the existing ones.\n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New copy does not require that the user has a modifier-role.\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Binary",
@@ -221,12 +215,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "DocumentReference",
@@ -418,12 +406,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -432,14 +414,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "ActivityDefinition:composed-of", "ActivityDefinition:depends-on", "ActivityDefinition:derived-from", "ActivityDefinition:intendedAudience", "ActivityDefinition:modifier_role_reference", "ActivityDefinition:predecessor", "ActivityDefinition:successor", "DocumentReference:authenticator", "DocumentReference:author", "DocumentReference:custodian", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:patient", "DocumentReference:related", "DocumentReference:relatesto", "DocumentReference:subject", "PlanDefinition:composed-of", "PlanDefinition:definition", "PlanDefinition:depends-on", "PlanDefinition:derived-from", "PlanDefinition:documentation", "PlanDefinition:intendedAudience", "PlanDefinition:modifier_role_reference", "PlanDefinition:predecessor", "PlanDefinition:successor" ]
     }, {
       "type": "PlanDefinition",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-plandefinition",
@@ -646,12 +621,6 @@
         "name": "apply",
         "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/PlanDefinition-i-apply",
         "documentation": "Create a careplan with service requests for a specific episodeOfCare using the PlanDefinition as a template.\n### HTTP Methods\n- If using POST the operation will persist resources and return the careplan.\n- If using GET the operation will return transient resources in a transaction bundle. The bundle with transient careplan and servicerequest resources can then be modified before being persisted using a FHIR transaction.\n### Parameters\n- episodeOfCare: Reference(EpisodeOfCare) - The episode of care for which the plan is being applied.\n### Output\nCarePlan or Bundle of transient CarePlan and ServiceRequest resources."
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://plan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     } ],
     "operation": [ {

@@ -3,7 +3,7 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2026-04-15T02:47:32.921+00:00",
+  "date": "2026-04-16T13:05:57.461+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -141,12 +141,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Binary",
@@ -161,12 +155,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -175,14 +163,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ]
     }, {
       "type": "Questionnaire",
       "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
@@ -335,12 +316,6 @@
         "name": "create-clone",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Questionnaire-i-create-clone",
         "documentation": "### Input\n- resourceId: reference to the Questionnaire resource that should be cloned\n- clone-operation: minor-version/major-version/copy Coding from codesystem: http://ehealth.sundhed.dk/cs/ehealth-clone-operation \n\n### Output\nBundle containing all resources that were created during the operation.\n\n### Validation\n- New business versions require that the user has modifier-role: owner or co-author for the resource\n- New copy does not require that the user has a modifier-role.\n- New business version can be made only when no draft resource exists (having identical base identifier).\n- Read/search/create privileges are required for the resource types affected by $create-clone"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "StructureDefinition",
@@ -499,12 +474,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     } ],
     "operation": [ {

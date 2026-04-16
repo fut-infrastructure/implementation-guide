@@ -3,7 +3,7 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2026-04-15T02:07:32.995+00:00",
+  "date": "2026-04-16T13:06:10.808+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -32,12 +32,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Device",
@@ -144,12 +138,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "DeviceMetric",
@@ -229,13 +217,6 @@
         "name": "type",
         "type": "token",
         "documentation": "The component type"
-      } ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "DeviceUseStatement",
@@ -323,12 +304,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/DeviceDeviceUseStatement-t-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -337,14 +312,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://device.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "Device:location", "Device:organization", "Device:patient", "DeviceMetric:parent", "DeviceMetric:source", "DeviceUseStatement:context", "DeviceUseStatement:device", "DeviceUseStatement:patient", "DeviceUseStatement:subject" ]
     } ],
     "operation": [ {
       "name": "reindex",

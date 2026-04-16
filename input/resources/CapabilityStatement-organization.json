@@ -3,7 +3,7 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2026-04-15T02:37:32.828+00:00",
+  "date": "2026-04-16T13:06:28.960+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -32,12 +32,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "CareTeam",
@@ -152,12 +146,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -166,14 +154,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ]
     }, {
       "type": "Organization",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization",
@@ -322,12 +303,6 @@
         "name": "traverse-to-sor",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
         "documentation": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Practitioner",
@@ -462,12 +437,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "PractitionerRole",
@@ -582,12 +551,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Provenance",
@@ -616,13 +579,6 @@
         "name": "target",
         "type": "reference",
         "documentation": "Target Reference(s) (usually version specific)"
-      } ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     } ],
     "operation": [ {

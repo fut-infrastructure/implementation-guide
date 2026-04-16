@@ -3,7 +3,7 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2026-04-15T06:30:09.972+00:00",
+  "date": "2026-04-16T13:07:23.034+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
@@ -32,12 +32,6 @@
       "operation": [ {
         "name": "expunge",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "CarePlan",
@@ -162,12 +156,6 @@
         "name": "suggest-care-teams",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/CarePlan-i-suggest-care-teams",
         "documentation": "Suggest care teams matching the conditions required by the care plan on either a regional or a municipality level. The suggested care teams has reason codes matching all the conditions addressed by the care plan and has a managing organization matching the input region code or municipality code. One of region code or municipality code must be input. If both region code and municipality code is input, then the municipality code is ignored. Return a bundle with matching care teams and their managing organizations."
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Communication",
@@ -249,12 +237,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "CommunicationRequest",
@@ -388,12 +370,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Condition",
@@ -413,12 +389,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Consent",
@@ -481,12 +451,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "DocumentReference",
@@ -565,12 +529,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "EpisodeOfCare",
@@ -646,12 +604,6 @@
         "name": "is-context-allowed",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/EpisodeOfCare-i-is-context-allowed",
         "documentation": "Checks that it is allowed to set an EpisodeOfCare as context.\r\nIf the user requesting context is a patient, then the patient input parameter should be specified.\r\nIf the user requesting context is a practitioner, then the careTeam input parameter should be specified.\r\nThrows an exception if it is not allowed to select the Episode Of Care context.\r\n## Output\r\nFor valid Episode of Care is returned references that cause the Episode of Care to be valid context. \r\nFor a practitioner, two output parameters will be returned on success:\r\n- CareTeam: The Careteam that gave access\r\n- EpisodeOfCare/CarePlan: The EpisodeOfCare or CarePlan that referenced the CareTeam"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "Goal",
@@ -747,13 +699,6 @@
         "name": "target-date",
         "type": "date",
         "documentation": "Reach goal on or before"
-      } ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "OperationDefinition",
@@ -762,14 +707,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
-      "operation": [ {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
-      } ]
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ]
     }, {
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
@@ -793,12 +731,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     }, {
       "type": "ServiceRequest",
@@ -879,12 +811,6 @@
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
-      }, {
-        "name": "binary-access-write",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-write"
-      }, {
-        "name": "binary-access-read",
-        "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Global-i-binary-access-read"
       } ]
     } ],
     "interaction": [ {
