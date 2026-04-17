@@ -13,7 +13,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Binary expunge (\$expunge) operation to support bulk export operations
 ### Code systems
 - Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
-  Added `xc`  to http://ehealth.sundhed.dk/cs/ehealth-system
+- Added `xc`  to http://ehealth.sundhed.dk/cs/ehealth-system
 - Added http://ehealth.sundhed.dk/cs/poa-privilege for Power of Attorney privilege codes issued by NemLog-in. Content is `not-present` — codes are not enumerated in the IG.
 - Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS (using `icd11-foundation-entity-id` property to annotate concepts with the ICD-11 foundation entity ids)
 - Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
