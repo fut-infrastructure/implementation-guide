@@ -5,6 +5,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - dk.core updated from 1.1.0 to 3.5.0
   - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
 - dk.core updated from 3.5.0 to 3.6.0
+  - BREAKING: The system for the extension dk-core-RegionalSubDivisionCodes has changed from "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" to "urn:iso:std:iso:3166:-2"
 ### Custom operations
 #### System operations
 - Bulk export (\$export) new parameters _until and _includeHistory
@@ -23,9 +24,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
 - Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
-- Added `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role 
-- Added `urn:dk:sundhed:ehealth:role:clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles
-- Added `http://ehealth.seb.dk/roles/usersystemrole/clinical_plan_administrator/1` to http://ehealth.sundhed.dk/cs/oio-bpp-roles
+- Added new careteam participant role `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
 ### ValueSets
 - Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 - Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
@@ -47,6 +47,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/condition-qualification ValueSet.
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
+- Added mapping between new `clinical_plan_administrator` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.
 - Added extension ehealth-code-qualification to Condition.

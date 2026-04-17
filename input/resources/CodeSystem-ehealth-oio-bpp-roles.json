@@ -232,6 +232,17 @@
             }
           ]
         },
+        {
+            "code": "urn:dk:sundhed:ehealth:role:clinical_plan_administrator",
+            "display": "Clinical Plan Administrator",
+            "definition": "Kan administrere borgeres planer",
+            "designation": [
+                {
+                    "language": "da",
+                    "value": "Klinisk Planadministrator"
+                }
+            ]
+        },
 
         {
             "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
@@ -441,17 +452,6 @@
               "value": "Loginmedhjælper"
             }
           ]
-        },
-        {
-            "code": "urn:dk:sundhed:ehealth:role:clinical_plan_administrator",
-            "display": "Clinical Plan Administrator",
-            "definition": "Kan administrere borgeres planer",
-            "designation": [
-                {
-                    "language": "da",
-                    "value": "Klinisk Planadministrator"
-                }
-            ]
         },
         {
             "code": "http://ehealth.seb.dk/roles/usersystemrole/clinical_plan_administrator/1",

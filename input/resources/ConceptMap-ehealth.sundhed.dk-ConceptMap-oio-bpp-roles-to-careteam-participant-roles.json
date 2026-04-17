@@ -236,6 +236,17 @@
             }
           ]
         },
+        {
+          "code": "urn:dk:sundhed:ehealth:role:clinical_plan_administrator",
+          "display": "Clinical Plan Administrator",
+          "target": [
+            {
+              "code": "clinicalPlanAdministrator",
+              "display": "Clinical Plan Administrator",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
 
         {
           "code": "http://ehealth.seb.dk/roles/usersystemrole/citizen_enroller/1",
@@ -447,17 +458,8 @@
           ]
         },
         {
-          "code": "urn:dk:sundhed:ehealth:role:clinical_plan_administrator",
-          "target": [
-            {
-              "code": "clinicalPlanAdministrator",
-              "display": "Clinical Plan Administrator",
-              "equivalence": "equivalent"
-            }
-          ]
-        },
-        {
           "code": "http://ehealth.seb.dk/roles/usersystemrole/clinical_plan_administrator/1",
+          "display": "Clinical Plan Administrator",
           "target": [
             {
               "code": "clinicalPlanAdministrator",
