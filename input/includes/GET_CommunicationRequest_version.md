@@ -1,49 +1,95 @@
-`GET [base]/CommunicationRequest/625/_history/2`
+`GET [base]/CommunicationRequest/3739/_history/1`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDM4ZjY2NjgtZjIyMi00NzYyLWFjNGYtMzgwMzliMDM3YjA2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCIsIkNvbW11bmljYXRpb25SZXF1ZXN0LnVwZGF0ZSIsIkNvbW11bmljYXRpb25SZXF1ZXN0LnJlYWQiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5jcmVhdGUiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5zZWFyY2giLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5kZWxldGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9DYXJlVGVhbS8xODYyOSIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9QYXRpZW50LzkwMDMxIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:08:29 GMT
+x-request-id: ec71ceff-87d6-4e6b-9d13-a34a80ecd316
+server: istio-envoy
+x-envoy-upstream-service-time: 68
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:08:29 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 6625fadd70a495ccf31250b646ef2ab9
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://careplan.cit-careplan-3920.local/fhir/CommunicationRequest/3739/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "625",
+  "id": "3739",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2025-02-04T15:09:59.400+00:00",
-    "source": "#b2edd736-b90f-45",
+    "versionId": "1",
+    "lastUpdated": "2026-04-16T11:08:29.440+00:00",
+    "source": "#083f0692-193a-44",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
+    ],
+    "tag": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
+        "code": "xa",
+        "display": "xa"
+      }
     ]
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-      "valueReference": {
-        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/623"
-      }
-    }
-  ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-3038.local/fhir/ServiceRequest/624"
+      "reference": "https://careplan.cit-careplan-3920.local/fhir/ServiceRequest/3738"
     }
   ],
-  "status": "on-hold",
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-category",
+          "code": "advice"
+        }
+      ]
+    }
+  ],
   "subject": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/19453"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/90031"
   },
   "recipient": [
     {
-      "reference": "https://organization.cit-careplan-3038.local/fhir/CareTeam/648"
+      "reference": "https://organization.cit-careplan-3920.local/fhir/CareTeam/18629"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "ReminderSubmitMeasurement"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://ehealth.sundhed.dk/cs/message-reasonCode",
+          "code": "AppointmentReminder"
+        }
+      ]
     }
   ]
 }

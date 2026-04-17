@@ -1,25 +1,44 @@
-`GET [base]/QuestionnaireResponse/838/_history/1`
+`GET [base]/QuestionnaireResponse/1719/_history/1`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmZkY2E4NTUtNWVjNi00MzdiLWFjZDYtZGZiODI5YmNhY2NhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmU0MDQwM2EtZmYzZC00OWE5LTg3NzAtZGMxYTY4YzExZDY1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5yZWFkIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1tZWFzdXJlbWVudC0yNDA0LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vODQ3ODEiLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0yNDA0LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS8zMjM1NCIsInRlYW1fb25fZW9jIjp0cnVlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:11:35 GMT
+x-request-id: 0d1806ae-6eca-4eb7-9212-de064ef79afd
+server: istio-envoy
+x-envoy-upstream-service-time: 168
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:11:34 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 47f55b012bfa76cf46c530eb1d6fb776
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://measurement.cit-measurement-2404.local/fhir/QuestionnaireResponse/1719/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "838",
+  "id": "1719",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-06T14:40:09.860+00:00",
-    "source": "#97025b3f-8b95-44",
+    "lastUpdated": "2026-04-16T11:11:34.812+00:00",
+    "source": "#75fbe289-432e-48",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
     ]
@@ -28,7 +47,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/41295"
+        "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/32354"
       }
     },
     {
@@ -54,17 +73,17 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-2050.local/fhir/ServiceRequest/25931"
+      "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/60659"
     }
   ],
-  "questionnaire": "https://questionnaire.cit-measurement-2050.local/fhir/Questionnaire/9829",
+  "questionnaire": "https://questionnaire.cit-measurement-2404.local/fhir/Questionnaire/44005",
   "status": "completed",
   "subject": {
-    "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/79792"
+    "reference": "https://device.cit-measurement-2404.local/fhir/Device/97516"
   },
-  "authored": "2025-02-06T14:40:09+00:00",
+  "authored": "2026-04-16T11:11:34+00:00",
   "source": {
-    "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/9844"
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/90672"
   }
 }
 ```

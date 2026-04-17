@@ -1,11 +1,10 @@
 `POST [base]/Bundle/$retrieve-and-transform-QRD`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJCaW5hcnkkcmV0cmlldmUtZG9jdW1lbnQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWRvY3VtZW50LXF1ZXJ5LTczMi5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi82MjcxNSIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWRvY3VtZW50LXF1ZXJ5LTczMi5sb2NhbC9maGlyL1BhdGllbnQvNjA5ODYiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJCaW5hcnkkcmV0cmlldmUtZG9jdW1lbnQiXX0sImNvbnRleHQiOnsib3JnYW5pemF0aW9uX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWRvY3VtZW50LXF1ZXJ5LTkyMS5sb2NhbC9maGlyL09yZ2FuaXphdGlvbi84OTg4IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtZG9jdW1lbnQtcXVlcnktOTIxLmxvY2FsL2ZoaXIvUGF0aWVudC8zMzEzOSIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -26,10 +25,10 @@ __Body__:
         "type": "collection",
         "entry": [
           {
-            "fullUrl": "https://questionnaire.cit-document-query-732.local/fhir/Questionnaire/41650",
+            "fullUrl": "https://questionnaire.cit-document-query-921.local/fhir/Questionnaire/93028",
             "resource": {
               "resourceType": "Questionnaire",
-              "id": "41650",
+              "id": "93028",
               "meta": {
                 "profile": [
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire"
@@ -53,7 +52,7 @@ __Body__:
                     {
                       "url": "reference",
                       "valueReference": {
-                        "reference": "https://organization.cit-document-query-732.local/fhir/Organization/87100"
+                        "reference": "https://organization.cit-document-query-921.local/fhir/Organization/16674"
                       }
                     },
                     {
@@ -80,6 +79,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:53:58 GMT
+x-request-id: 0006047b-2b34-41c2-87fb-4a2d00204f20
+server: istio-envoy
+x-envoy-upstream-service-time: 425
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: bdd50aff63d07c1a5e02d0d34339a820
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

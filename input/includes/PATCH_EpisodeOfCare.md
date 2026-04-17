@@ -1,11 +1,10 @@
-`PATCH [base]/EpisodeOfCare/2812`
+`PATCH [base]/EpisodeOfCare/3246`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNzY2MzEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiRXBpc29kZU9mQ2FyZS5wYXRjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMzU3NzkiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5zZWFyY2giLCJFcGlzb2RlT2ZDYXJlLnJlYWQiLCJDYXJlUGxhbi5yZWFkIiwiRXBpc29kZU9mQ2FyZSR1cGRhdGUtY2FyZS10ZWFtcyIsIkVwaXNvZGVPZkNhcmUucGF0Y2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSIsInNjb3BlIjoib3BlbmlkIGh0dHA6Ly9laGVhbHRoLnN1bmRoZWQuZGsvY3MvZWhlYWx0aC1zeXN0ZW18eGEifQ.
 Accept: application/fhir+xml;q=1.0, application/fhir+json;q=1.0, application/xml+fhir;q=0.9, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/json-patch+json; charset=UTF-8
 ```
@@ -21,15 +20,34 @@ __Body__:
 ]
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:03:34 GMT
+x-request-id: 62bac5b7-fa5b-4a50-883e-4448a5a311fa
+server: istio-envoy
+x-envoy-upstream-service-time: 75
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:03:34 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 5705bd6a9a0a1d2ba45b20fd1e94b45d
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/3246/_history/2
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "EpisodeOfCare",
-  "id": "2812",
+  "id": "3246",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2025-02-04T15:28:27.104+00:00",
-    "source": "#508e749d-7b41-4eec-b780-520b89151c86",
+    "lastUpdated": "2026-04-16T11:03:34.265+00:00",
+    "source": "#62bac5b7-fa5b-4a50-883e-4448a5a311fa",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
     ]
@@ -38,7 +56,7 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare-caremanagerOrganization",
       "valueReference": {
-        "reference": "https://organization.cit-careplan-3038.local/fhir/Organization/65262"
+        "reference": "https://organization.cit-careplan-3920.local/fhir/Organization/26591"
       }
     }
   ],
@@ -47,30 +65,30 @@ __Response__
     {
       "status": "finished",
       "period": {
-        "start": "2025-02-03T15:28:23+00:00",
-        "end": "2025-02-04T15:28:27+00:00"
+        "start": "2026-04-15T11:03:31+00:00",
+        "end": "2026-04-16T11:03:34+00:00"
       }
     },
     {
       "status": "active",
       "period": {
-        "start": "2025-02-04T15:28:27+00:00"
+        "start": "2026-04-16T11:03:34+00:00"
       }
     }
   ],
   "diagnosis": [
     {
       "condition": {
-        "reference": "https://careplan.cit-careplan-3038.local/fhir/Condition/2811"
+        "reference": "https://careplan.cit-careplan-3920.local/fhir/Condition/3245"
       },
       "rank": 1
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/79738"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/5853"
   },
   "managingOrganization": {
-    "reference": "https://organization.cit-careplan-3038.local/fhir/Organization/65262"
+    "reference": "https://organization.cit-careplan-3920.local/fhir/Organization/26591"
   },
   "period": {
     "start": "1970-01-01T00:00:01+00:00",
