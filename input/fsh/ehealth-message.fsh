@@ -14,6 +14,7 @@ Parent: Communication
 * extension contains ehealth-priority named priority 0..1
 * extension contains ehealth-group-id named groupId 0..1
 * extension contains ehealth-on-behalf-of named onBehalfOf 0..1 MS
+* extension contains ehealth-message-author named author 0..1
 * partOf only Reference(CarePlan)
 * partOf ^type.aggregation = #referenced
 // Not in R4: * notDoneReason MS

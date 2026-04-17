@@ -27,6 +27,11 @@
       "code": "phmr-unit",
       "display": "PHMR Unit",
       "definition": "The unit to be used when transforming Observations to PHMR Measurement."
+    },
+    {
+      "code": "icd11-foundation-entity-id",
+      "display": "ICD11 Foundation Entity ID",
+      "definition": "The identifier of the ICD11 Foundation Entity that corresponds to the code in an ICD11 CodeSystem. This property is used to link the ICD11 CodeSystem to the ICD11 Foundation, which contains the full hierarchy and relationships of ICD11 concepts."
     }
   ]
 }
