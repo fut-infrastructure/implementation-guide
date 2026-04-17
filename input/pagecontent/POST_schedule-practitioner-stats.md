@@ -1,11 +1,10 @@
 `POST [base]/$schedule-practitioner-stats`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTk3ZDg3OTgtZWIwMi00NzdmLWI1ODMtMzI5ZWZmOTk0M2NjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1wcmFjdGl0aW9uZXItc3RhdHMiLCJCaW5hcnkucmVhZCJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTExODIubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vNzA5MiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMThlOTNlNzYtYWI5Mi00NzljLWIwMDgtNTY4Njc3NDMzZjMzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1wcmFjdGl0aW9uZXItc3RhdHMiLCJCaW5hcnkucmVhZCJdfSwiY29udGV4dCI6eyJvcmdhbml6YXRpb25faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtcmVwb3J0aW5nLTEzMTMubG9jYWwvZmhpci9Pcmdhbml6YXRpb24vNDU5MDIiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,29 +21,49 @@ __Body__:
     {
       "name": "organization",
       "valueReference": {
-        "reference": "https://organization.cit-reporting-1182.local/fhir/Organization/7092"
+        "reference": "https://organization.cit-reporting-1313.local/fhir/Organization/45902"
       }
     },
     {
       "name": "period",
       "valuePeriod": {
-        "start": "2025-02-04T14:17:06+00:00",
-        "end": "2025-02-04T14:17:06+00:00"
+        "start": "2026-04-16T11:46:20+00:00",
+        "end": "2026-04-16T11:46:20+00:00"
       }
     }
   ]
 }
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:46:22 GMT
+x-request-id: a0fe588b-c165-49af-b421-f0bd9703210c
+server: istio-envoy
+x-envoy-upstream-service-time: 122
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:46:22 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 660d31f5b1d31d55c9f9b68ff1e6748d
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://reporting.cit-reporting-1313.local/fhir/Binary/1021/_history/1
+content-type: application/fhir+json; charset=UTF-8
+location: https://reporting.cit-reporting-1313.local/fhir/Binary/1021/_history/1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "23",
+  "id": "1021",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T14:17:07.560+00:00",
-    "source": "#781baedf-f387-91ac-afd9-5937cbd45ff6",
+    "lastUpdated": "2026-04-16T11:46:22.214+00:00",
+    "source": "#a0fe588b-c165-49af-b421-f0bd9703210c",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -52,7 +71,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "597d8798-eb02-477f-b583-329eff9943cc"
+      "value": "18e93e76-ab92-479c-b008-568677433f33"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

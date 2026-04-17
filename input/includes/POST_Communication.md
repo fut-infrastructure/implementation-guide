@@ -1,11 +1,10 @@
 `POST [base]/Communication`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNGIxY2JlZGUtYzgxMy00YzgwLWI2MDctODU4YTJhOTIyZGNlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjI3ZTExYTYtMzViYi00NGI3LTg4ZWQtNWE2ZTE1N2M1OGUyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIk9ic2VydmF0aW9uLnNlYXJjaCIsIk1lZGlhLnVwZGF0ZSIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,20 +14,11 @@ __Body__:
 {
   "resourceType": "Communication",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2025-02-06T14:38:48.050+00:00",
-    "source": "#11994ff4-3ee4-9b6b-ba6f-542c4250a5c6",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
   },
   "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-      "valueReference": {
-        "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/98046"
-      }
-    },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-restriction-category",
       "valueCodeableConcept": {
@@ -39,9 +29,15 @@ __Body__:
           }
         ]
       }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+      "valueReference": {
+        "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/62756"
+      }
     }
   ],
-  "status": "in-progress",
+  "status": "completed",
   "category": [
     {
       "coding": [
@@ -53,28 +49,49 @@ __Body__:
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/55107"
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/64073"
   },
-  "topic": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
-        "code": "report-labs"
-      }
-    ]
+  "about": [
+    {
+      "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/67438"
+    }
+  ],
+  "sender": {
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/20233"
   }
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:15:24 GMT
+x-request-id: e3745816-e877-4034-b286-73b96d4048e0
+server: istio-envoy
+x-envoy-upstream-service-time: 91
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:15:24 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: a0d268fe9c5e49a41fca206d53b7820a
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://measurement.cit-measurement-2404.local/fhir/Communication/2187/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+location: https://measurement.cit-measurement-2404.local/fhir/Communication/2187/_history/1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
 ```
 
 __Response__
 ```json
 {
   "resourceType": "Communication",
-  "id": "755",
+  "id": "2187",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-06T14:38:48.140+00:00",
-    "source": "#e976b941-5626-4de4-a6e0-86c68a633478",
+    "lastUpdated": "2026-04-16T11:15:24.330+00:00",
+    "source": "#e3745816-e877-4034-b286-73b96d4048e0",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
     ]
@@ -83,7 +100,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/98046"
+        "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/62756"
       }
     },
     {
@@ -98,7 +115,7 @@ __Response__
       }
     }
   ],
-  "status": "in-progress",
+  "status": "completed",
   "category": [
     {
       "coding": [
@@ -110,15 +127,15 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/55107"
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/64073"
   },
-  "topic": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
-        "code": "report-labs"
-      }
-    ]
+  "about": [
+    {
+      "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/67438"
+    }
+  ],
+  "sender": {
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/20233"
   }
 }
 ```

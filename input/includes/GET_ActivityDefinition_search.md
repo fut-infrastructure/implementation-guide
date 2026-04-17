@@ -1,42 +1,59 @@
-`GET [base]/ActivityDefinition?_source=5c3a8ff9-dab9-41c7-9c74-480e4d349281`
+`GET [base]/ActivityDefinition?_source=b622a4e1-c09f-4aff-9434-cec00dd526ac`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWN0aXZpdHlEZWZpbml0aW9uLnVwZGF0ZSIsIkFjdGl2aXR5RGVmaW5pdGlvbi5yZWFkIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJBY3Rpdml0eURlZmluaXRpb24uY3JlYXRlIiwiQWN0aXZpdHlEZWZpbml0aW9uLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:29:15 GMT
+x-request-id: 8775ffeb-961c-4484-82d5-7adb9cb6e5c1
+server: istio-envoy
+x-envoy-upstream-service-time: 160
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:29:15 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: c6aff74e622f20d9a7baac8fcf1d943c
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "bb38acbd-5cac-4617-baaf-0d321b365d2b",
+  "id": "4ca15309-54bb-4d17-9edc-629461718e9f",
   "meta": {
-    "lastUpdated": "2025-02-05T12:53:24.344+00:00"
+    "lastUpdated": "2026-04-16T11:29:15.655+00:00"
   },
   "type": "searchset",
   "total": 1,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-1878.local/fhir/ActivityDefinition?_format=json&_pretty=true&_source=5c3a8ff9-dab9-41c7-9c74-480e4d349281"
+      "url": "https://plan.cit-plan-2227.local/fhir/ActivityDefinition?_format=json&_pretty=true&_source=b622a4e1-c09f-4aff-9434-cec00dd526ac"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1878.local/fhir/ActivityDefinition/545",
+      "fullUrl": "https://plan.cit-plan-2227.local/fhir/ActivityDefinition/1126",
       "resource": {
         "resourceType": "ActivityDefinition",
-        "id": "545",
+        "id": "1126",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-05T12:53:23.997+00:00",
-          "source": "5c3a8ff9-dab9-41c7-9c74-480e4d349281#f65ef15e-d239-4f",
+          "lastUpdated": "2026-04-16T11:29:14.961+00:00",
+          "source": "b622a4e1-c09f-4aff-9434-cec00dd526ac#0fb2dca6-6ef6-93",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-activitydefinition"
           ]
@@ -70,7 +87,7 @@ __Response__
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-plan-1878.local/fhir/Organization/9225"
+                  "reference": "https://organization.cit-plan-2227.local/fhir/Organization/68289"
                 }
               },
               {
@@ -88,7 +105,7 @@ __Response__
           }
         ],
         "version": "1.0",
-        "name": "1d68ec10-3af7-4a14-9434-c70fa25fc3fd",
+        "name": "e11892d0-117b-45f9-a32c-667195073ca9",
         "status": "active",
         "topic": [
           {

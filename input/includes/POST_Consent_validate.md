@@ -1,11 +1,10 @@
-`POST [base]/Consent/3107/$validate`
+`POST [base]/Consent/2485/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uc2VudC5yZWFkIiwiQ29uc2VudC5zZWFyY2giLCJDb25zZW50LnVwZGF0ZSIsIkNvbnNlbnQuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjkzMmQ4NzctZjVmNS00Y2UxLTllZDQtYjU4ZmExNjU5OThhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbnNlbnQucmVhZCIsIkNvbnNlbnQuc2VhcmNoIiwiQ29uc2VudC51cGRhdGUiLCJDb25zZW50LmNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,11 +18,11 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Consent",
-        "id": "3107",
+        "id": "2485",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-04T15:32:48.763+00:00",
-          "source": "#1a448486-911b-44dd-818d-8c7d70658969",
+          "lastUpdated": "2026-04-16T10:55:22.256+00:00",
+          "source": "#f20dd6f2-368b-4787-8bf3-5158e0639c67",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
           ]
@@ -49,11 +48,11 @@ __Body__:
           }
         ],
         "patient": {
-          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/21689"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/59629"
         },
         "performer": [
           {
-            "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/98162"
+            "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/61688"
           }
         ],
         "policyRule": {
@@ -71,7 +70,7 @@ __Body__:
           },
           "actor": [
             {
-              "id": "80d87d34-95f6-4b13-b8a5-b843dd480f83",
+              "id": "5f22c9a6-1709-40aa-8620-4ccb92a62fed",
               "role": {
                 "coding": [
                   {
@@ -81,7 +80,7 @@ __Body__:
                 ]
               },
               "reference": {
-                "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/3245"
+                "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/56662"
               }
             }
           ],
@@ -89,7 +88,7 @@ __Body__:
             {
               "meaning": "related",
               "reference": {
-                "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3106"
+                "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2484"
               }
             }
           ]
@@ -98,6 +97,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:55:22 GMT
+x-request-id: 685b658c-ac00-90d9-80d5-7bb332ae4e15
+server: istio-envoy
+x-envoy-upstream-service-time: 83
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: dad5c2c8a9c6ca114048ff33c1b6eaf6
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

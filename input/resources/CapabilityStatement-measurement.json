@@ -3,13 +3,13 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2026-03-19T02:28:13.293+00:00",
+  "date": "2026-04-16T13:06:02.971+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "measurement",
-    "version": "1.30.0"
+    "version": "1.31.0"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -50,6 +50,10 @@
       "conditionalCreate": true,
       "searchRevInclude": [ "Communication:episodeOfCare", "Communication:recipient", "Communication:recipientCareTeam", "Communication:sender", "Communication:senderCareTeam", "Communication:subject", "Media:based-on", "Media:episodeOfCare", "Media:relatedTo", "Media:subject", "Observation:based-on", "Observation:episodeOfCare", "Observation:patient", "Observation:subject", "Provenance:agent", "Provenance:entity", "Provenance:entity-episodeOfCare", "Provenance:entity-serviceRequest", "Provenance:target", "QuestionnaireResponse:based-on", "QuestionnaireResponse:episodeOfCare", "QuestionnaireResponse:questionnaire", "QuestionnaireResponse:subject" ],
       "searchParam": [ {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -115,6 +119,10 @@
         "name": "_id",
         "type": "token",
         "documentation": "The ID of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "_tag",
         "type": "token",
@@ -214,6 +222,10 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
         "name": "_tag",
         "type": "token",
         "documentation": "Search for resources which have the given tag"
@@ -302,6 +314,10 @@
         "name": "_id",
         "type": "token",
         "documentation": "The ID of the resource"
+      }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
       }, {
         "name": "agent",
         "type": "reference",

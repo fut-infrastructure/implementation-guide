@@ -1,12 +1,11 @@
-`PUT [base]/Organization/431`
+`PUT [base]/Organization/1394`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiT3JnYW5pemF0aW9uLndyaXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
-If-Match: "1"
+If-Match: W/"1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -15,11 +14,11 @@ __Body__:
 ```json
 {
   "resourceType": "Organization",
-  "id": "431",
+  "id": "1394",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T15:07:05.253+00:00",
-    "source": "#9baaf540-01b2-440a-adb2-b4eee561765e",
+    "lastUpdated": "2026-04-16T11:35:48.098+00:00",
+    "source": "#41d2eae3-e00c-4b5f-84cd-bb7e806889cd",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -51,34 +50,54 @@ __Body__:
   "identifier": [
     {
       "use": "official",
-      "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
-      "value": "11111111",
+      "system": "http://cvr.dk",
+      "value": "12345674",
       "period": {
-        "start": "2025-02-04T15:07:05+00:00"
+        "start": "2026-04-16T11:35:47+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "023044f4-d8a2-4011-b4d9-b74fa7e3ee80",
+      "value": "f73b0142-1bb6-4124-abc0-a1bc342e27fe",
       "period": {
-        "start": "2025-02-04T15:07:05+00:00"
+        "start": "2026-04-16T11:35:47+00:00"
       }
     }
   ],
-  "name": "2fe4784a-d337-49f9-8fc7-b51f048c5e18"
+  "name": "dd75925c-88d2-4651-b1c9-22a22b309d01"
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:35:48 GMT
+x-request-id: 753a9004-e251-48aa-a7e7-ec536830bf94
+server: istio-envoy
+x-envoy-upstream-service-time: 216
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:35:48 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 7ce3de9b1544d32c4af6f3b91cd9cc7c
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://organization.cit-organization-1498.local/fhir/Organization/1394/_history/2
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"2"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
 ```
 
 __Response__
 ```json
 {
   "resourceType": "Organization",
-  "id": "431",
+  "id": "1394",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2025-02-04T15:07:05.391+00:00",
-    "source": "#2ab84d3e-a606-41d4-881b-a8c377342a4e",
+    "lastUpdated": "2026-04-16T11:35:48.311+00:00",
+    "source": "#753a9004-e251-48aa-a7e7-ec536830bf94",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
     ]
@@ -110,21 +129,21 @@ __Response__
   "identifier": [
     {
       "use": "official",
-      "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
-      "value": "11111111",
+      "system": "http://cvr.dk",
+      "value": "12345674",
       "period": {
-        "start": "2025-02-04T15:07:05+00:00"
+        "start": "2026-04-16T11:35:47+00:00"
       }
     },
     {
       "use": "official",
       "system": "http://ehealth.sundhed.dk/organization/ssl",
-      "value": "023044f4-d8a2-4011-b4d9-b74fa7e3ee80",
+      "value": "f73b0142-1bb6-4124-abc0-a1bc342e27fe",
       "period": {
-        "start": "2025-02-04T15:07:05+00:00"
+        "start": "2026-04-16T11:35:47+00:00"
       }
     }
   ],
-  "name": "2fe4784a-d337-49f9-8fc7-b51f048c5e18"
+  "name": "dd75925c-88d2-4651-b1c9-22a22b309d01"
 }
 ```

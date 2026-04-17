@@ -3,7 +3,7 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2026-03-19T02:47:32.430+00:00",
+  "date": "2026-04-16T13:05:57.461+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],

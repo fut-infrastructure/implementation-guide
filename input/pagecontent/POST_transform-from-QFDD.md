@@ -1,11 +1,10 @@
 `POST [base]/$transform-from-QFDD`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRyYW5zZm9ybS1mcm9tLVFGREQiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,7 +18,7 @@ __Body__:
       "name": "documentReference",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "50275",
+        "id": "384",
         "meta": {
           "versionId": "1",
           "profile": [
@@ -35,7 +34,7 @@ __Body__:
             }
           ]
         },
-        "date": "2025-02-05T12:11:04.920+00:00",
+        "date": "2026-04-16T10:34:38.202+00:00",
         "content": [
           {
             "attachment": {
@@ -48,6 +47,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:34:39 GMT
+x-request-id: b3c96a92-b975-42fd-ac76-3f9fc387784d
+server: istio-envoy
+x-envoy-upstream-service-time: 190
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: b80a476a8ae8f6e37be3f887d7703891
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

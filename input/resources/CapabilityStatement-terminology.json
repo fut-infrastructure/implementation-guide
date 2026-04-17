@@ -3,13 +3,13 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2026-03-18T18:27:03.325+00:00",
+  "date": "2026-04-14T18:27:34.185+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "terminology",
-    "version": "1.24.0"
+    "version": "1.25.0"
   },
   "implementation": {
     "description": "eHealth terminology service",
@@ -1107,6 +1107,10 @@
       "name": "import",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-import",
       "documentation": "Import terminology resources"
+    }, {
+      "name": "has-pending-work",
+      "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-has-pending-work",
+      "documentation": "Check for pending work"
     }, {
       "name": "export-poll-status",
       "definition": "https://terminology.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-export-poll-status",
