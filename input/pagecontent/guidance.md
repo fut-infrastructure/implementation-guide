@@ -50,11 +50,6 @@ the eHealth Infrastructure, the source of the values used are as follows:
 This applies for the Quantity and [its defined variations](http://hl7.org/fhir/R4/datatypes.html#QuantityVariations)
 except Count.
 
-#### Getting Total Number of Matching Resources from Search Results
-
-The FHIR specification defines an optional `total` element on the search result Bundle, representing the total number of resources matching the search parameters. A client can express a preference for how the server handles the total count by supplying the `_total` search parameter. According to the FHIR spec this parameter is an optimization hint; servers may ignore it. See the [FHIR specification](https://hl7.org/fhir/R4/search.html#total) for details.
-
-By default, eHealth Infrastructure FHIR services calculate the total asynchronously, prioritizing a fast return of the first page of results. When the total has been calculated it will be present in any subsequent result-page fetched by the client. Using `_total=accurate` forces the total to be calculated before the response is returned, which will delay the response. As noted in the [HAPI FHIR documentation](https://smilecdr.com/docs/fhir_standard/fhir_search_queries.html#search-results-total-count), forcing an accurate total count is considered an antipattern for designs such as search result pagers, as the cost grows with data volume and query complexity. Where possible, clients should rely on the `next` link relation in the Bundle for pagination rather than requiring an up-front total. Alternatively, one can perform a dedicated `_summary=count` search beforehand to get the total and then perform the regular paged search afterward.
-
 ### Security
 eHealth Infrastructure security mechanisms are described on the [wiki site](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/).
+
