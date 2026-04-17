@@ -23,6 +23,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
 - Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
+- Added `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role 
+- Added `urn:dk:sundhed:ehealth:role:clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles
+- Added `http://ehealth.seb.dk/roles/usersystemrole/clinical_plan_administrator/1` to http://ehealth.sundhed.dk/cs/oio-bpp-roles
 ### ValueSets
 - Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 - Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
