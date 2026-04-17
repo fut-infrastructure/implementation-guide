@@ -23,6 +23,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
 - Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
 - Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
+- Added new careteam participant role `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
 ### ValueSets
 - Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
 - Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
@@ -44,6 +46,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added http://ehealth.sundhed.dk/vs/condition-qualification ValueSet.
 ### ConceptMaps
 - Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
+- Added mapping between new `clinical_plan_administrator` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
 ### Resource/profile changes
 - Added extension ehealth-provider-affiliation to practitioner.
 - Added extension ehealth-code-qualification to Condition.
