@@ -18,11 +18,21 @@ Parent: Communication
     and no-standard-sender
     and sender-required-based-on-messagetype
 
-* identifier 1..1 MS
-* identifier.use 0..1
-* identifier.use from http://hl7.org/fhir/ValueSet/identifier-use (required)
-* identifier.value 1..1 MS
-* identifier ^short = "The communication identifier"
+* identifier 1..2 MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains communicationId 1..1 MS and messageHeaderId 0..1 MS
+
+* identifier[communicationId].use 0..1
+* identifier[communicationId].use from http://hl7.org/fhir/ValueSet/identifier-use (required)
+* identifier[communicationId].value 1..1 MS
+* identifier[communicationId] ^short = "The communication identifier"
+
+* identifier[messageHeaderId].system 1..1 MS
+* identifier[messageHeaderId].system = "http://ehealth.sundhed.dk/id/ehealth-carecommunication-messageHeaderId"
+* identifier[messageHeaderId].value 1..1 MS
+* identifier[messageHeaderId] ^short = "The ID of the originating MessageHeader resource"
 
 * status 1..1 MS
 
