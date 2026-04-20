@@ -12,7 +12,7 @@ Parent: DkCoreOrganization
 * identifier 1..*
 * name 1..1
 * telecom.value 1..1
-* partOf only Reference(ehealth-organization)
+* partOf only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization)
 * partOf ^type.aggregation = #referenced
 * type from http://ehealth.sundhed.dk/vs/organization-type
 * contact.telecom.extension contains ehealth-organization-telecomValue named telecomValue 1..1
@@ -20,7 +20,7 @@ Parent: DkCoreOrganization
 * contact.telecom.extension contains ehealth-organization-telecomCustodian named telecomCustodian 1..1
 * contact.telecom.system 0..0
 * contact.telecom.value 0..0
-* endpoint only Reference(ehealth-endpoint)
+* endpoint only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-endpoint)
 * endpoint ^type.aggregation = #contained
 
 
@@ -32,7 +32,7 @@ Description: "Relations to other Organizations"
     target 1..1 and
     relationType 1..1 and
     period 1..1 
-* extension[target].value[x] only Reference(ehealth-organization)
+* extension[target].value[x] only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization)
 * extension[target].value[x] ^type.aggregation = #referenced
 * extension[relationType].value[x] only CodeableConcept
 * extension[relationType].valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-relation-type
