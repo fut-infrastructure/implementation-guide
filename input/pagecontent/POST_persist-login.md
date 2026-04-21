@@ -1,11 +1,10 @@
 `POST [base]/$persist-login`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNjM4YzhmMDQtOWM4OC00YjdiLWFiNTktNGZhNmJmZDgwMTczIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUucmVhZCIsIiRwZXJzaXN0LWxvZ2luIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZTI1MDgwYjEtZjBhMC00MDE2LWIwZjAtNDNlZjg4YjZmNTkwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlByYWN0aXRpb25lclJvbGUuY3JlYXRlIiwiQ2FyZVRlYW0ud3JpdGUiLCIkcGVyc2lzdC1sb2dpbiIsIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,7 +18,7 @@ __Body__:
       "name": "careTeam",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "145",
+        "id": "1021",
         "meta": {
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
@@ -40,7 +39,7 @@ __Body__:
               }
             ],
             "member": {
-              "reference": "https://organization.cit-organization-1291.local/fhir/Practitioner/147"
+              "reference": "https://organization.cit-organization-1498.local/fhir/Practitioner/1023"
             }
           }
         ],
@@ -58,6 +57,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:26:11 GMT
+x-request-id: 1140511f-8149-4391-ab8c-dec3c046a5e3
+server: istio-envoy
+x-envoy-upstream-service-time: 559
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: c36cb9f27e30e8a3f7a481d81935342d
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

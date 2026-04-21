@@ -1,11 +1,10 @@
 `POST [base]/Organization/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNWYyYjJiYjItMTgzZi00M2I2LTgwNDItNGI5ZGNjMTFlNzQxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjNkNmMzN2EtZDNhNC00ODc5LTkxMWItYjM0Yjc5NDNiZDY1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -51,18 +50,35 @@ __Body__:
         "identifier": [
           {
             "use": "official",
-            "system": "urn:oid:2.16.840.1.113883.2.24.1.1",
-            "value": "11111111",
+            "system": "http://cvr.dk",
+            "value": "12345674",
             "period": {
-              "start": "2025-02-04T15:07:07+00:00"
+              "start": "2026-04-16T11:35:50+00:00"
             }
           }
         ],
-        "name": "defaultTestFactory-3856a51d-9f54-432c-99d0-7266cd6bf868"
+        "name": "defaultTestFactory-1059c462-12e7-456b-8e21-1fcdfd892098"
       }
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:35:50 GMT
+x-request-id: b7f4c370-b2cf-4247-a715-a3442fd76fb3
+server: istio-envoy
+x-envoy-upstream-service-time: 90
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 5dd4ff21559a873866801f78316a573c
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

@@ -1,14 +1,31 @@
-`GET [base]/$apply?episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-3596.local%2Ffhir%2FEpisodeOfCare%2F1034%2F_history%2F1&planDefinition=https%3A%2F%2Fplan.cit-careplan-3596.local%2Ffhir%2FPlanDefinition%2F26952`
+`GET [base]/$apply?episodeOfCare=https%3A%2F%2Fcareplan.cit-careplan-3920.local%2Ffhir%2FEpisodeOfCare%2F2190%2F_history%2F1&planDefinition=https%3A%2F%2Fplan.cit-careplan-3920.local%2Ffhir%2FPlanDefinition%2F5972`
 
-__Header__
+__Request Headers__
 ```
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM1OTYubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvMjI3ODciLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRkhJUi50cmFuc2FjdGlvbiIsIkNhcmVQbGFuLnJlYWQiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMzU5Ni5sb2NhbC9maGlyL0NhcmVUZWFtLzU2NTAxIiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtY2FyZXBsYW4tMzU5Ni5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMTAzNCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvODQ4ODAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRkhJUi50cmFuc2FjdGlvbiIsIkNhcmVQbGFuLnJlYWQiLCJQbGFuRGVmaW5pdGlvbiRhcHBseSJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtY2FyZXBsYW4tMzkyMC5sb2NhbC9maGlyL0NhcmVUZWFtLzExMDIzIiwiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtY2FyZXBsYW4tMzkyMC5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvMjE5MCIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/8.0.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:53:30 GMT
+x-request-id: 81aea21c-4bdc-464e-9311-6808fc19d3de
+server: istio-envoy
+x-envoy-upstream-service-time: 52
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 1e7c9509edd9d4ec07788e5fad29f291
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+```
 
 __Response__
 ```json
@@ -17,7 +34,7 @@ __Response__
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:8ca7aa63-ea8f-4337-b42b-3f202af0e14e",
+      "fullUrl": "urn:uuid:11f96d4c-ead1-49c8-9a9a-7f83ceba56d2",
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
@@ -36,7 +53,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3596.local/fhir/EpisodeOfCare/1034"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2190"
             }
           },
           {
@@ -104,7 +121,7 @@ __Response__
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -626286498,
+                  "value": -1041192716,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -121,7 +138,7 @@ __Response__
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3596.local/fhir/ActivityDefinition/10230"
+          "https://plan.cit-careplan-3920.local/fhir/ActivityDefinition/164"
         ],
         "status": "draft",
         "intent": "order",
@@ -134,9 +151,9 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/83184"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/17460"
         },
-        "occurrenceDateTime": "2025-10-21T12:29:43+00:00"
+        "occurrenceDateTime": "2026-04-16T10:53:30+00:00"
       },
       "request": {
         "method": "POST",
@@ -144,7 +161,7 @@ __Response__
       }
     },
     {
-      "fullUrl": "urn:uuid:e83ba5d5-aad2-4aee-bea9-62b737e2d937",
+      "fullUrl": "urn:uuid:449c8aea-7f59-4458-8e96-97e487c63242",
       "resource": {
         "resourceType": "CarePlan",
         "meta": {
@@ -163,35 +180,35 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3596.local/fhir/EpisodeOfCare/1034"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2190"
             }
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3596.local/fhir/PlanDefinition/26952"
+          "https://plan.cit-careplan-3920.local/fhir/PlanDefinition/5972"
         ],
         "status": "draft",
         "intent": "order",
         "subject": {
-          "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/83184"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/17460"
         },
         "period": {
-          "start": "2025-10-21T12:29:44+00:00"
+          "start": "2026-04-16T10:53:30+00:00"
         },
         "careTeam": [
           {
-            "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/56501"
+            "reference": "https://organization.cit-careplan-3920.local/fhir/CareTeam/11023"
           }
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-3596.local/fhir/Condition/1033"
+            "reference": "https://careplan.cit-careplan-3920.local/fhir/Condition/2189"
           }
         ],
         "activity": [
           {
             "reference": {
-              "reference": "urn:uuid:8ca7aa63-ea8f-4337-b42b-3f202af0e14e"
+              "reference": "urn:uuid:11f96d4c-ead1-49c8-9a9a-7f83ceba56d2"
             }
           }
         ]
@@ -202,7 +219,7 @@ __Response__
       }
     },
     {
-      "fullUrl": "urn:uuid:00ebb6cf-83c2-4657-8c0c-331806e49b48",
+      "fullUrl": "urn:uuid:cb24d783-f6e4-432d-9155-ab52aae91f87",
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
@@ -221,7 +238,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3596.local/fhir/EpisodeOfCare/1034"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2190"
             }
           },
           {
@@ -289,7 +306,7 @@ __Response__
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": 1998565341,
+                  "value": 322776817,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -306,7 +323,7 @@ __Response__
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3596.local/fhir/ActivityDefinition/76203"
+          "https://plan.cit-careplan-3920.local/fhir/ActivityDefinition/42695"
         ],
         "status": "draft",
         "intent": "order",
@@ -319,9 +336,9 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/83184"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/17460"
         },
-        "occurrenceDateTime": "2025-10-21T12:29:43+00:00"
+        "occurrenceDateTime": "2026-04-16T10:53:30+00:00"
       },
       "request": {
         "method": "POST",
@@ -329,7 +346,7 @@ __Response__
       }
     },
     {
-      "fullUrl": "urn:uuid:55bd5c36-12d6-46e9-99ea-93db3c32808b",
+      "fullUrl": "urn:uuid:48283421-a5ed-49bd-827f-b3c6ea00289e",
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
@@ -348,7 +365,7 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3596.local/fhir/EpisodeOfCare/1034"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2190"
             }
           },
           {
@@ -416,7 +433,7 @@ __Response__
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -2035815471,
+                  "value": -416583265,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -433,7 +450,7 @@ __Response__
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3596.local/fhir/ActivityDefinition/57968"
+          "https://plan.cit-careplan-3920.local/fhir/ActivityDefinition/48498"
         ],
         "status": "on-hold",
         "intent": "order",
@@ -446,9 +463,9 @@ __Response__
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/83184"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/17460"
         },
-        "occurrenceDateTime": "2025-10-21T12:29:43+00:00"
+        "occurrenceDateTime": "2026-04-16T10:53:30+00:00"
       },
       "request": {
         "method": "POST",
@@ -456,7 +473,7 @@ __Response__
       }
     },
     {
-      "fullUrl": "urn:uuid:47252b9c-a3a6-4fae-abf0-27d405b862e7",
+      "fullUrl": "urn:uuid:c3e21785-f47a-402f-bb08-b5bc25264592",
       "resource": {
         "resourceType": "CarePlan",
         "meta": {
@@ -475,45 +492,45 @@ __Response__
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3596.local/fhir/EpisodeOfCare/1034"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2190"
             }
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3596.local/fhir/PlanDefinition/40392"
+          "https://plan.cit-careplan-3920.local/fhir/PlanDefinition/73867"
         ],
         "partOf": [
           {
-            "reference": "urn:uuid:e83ba5d5-aad2-4aee-bea9-62b737e2d937"
+            "reference": "urn:uuid:449c8aea-7f59-4458-8e96-97e487c63242"
           }
         ],
         "status": "draft",
         "intent": "order",
         "subject": {
-          "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/83184"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/17460"
         },
         "period": {
-          "start": "2025-10-21T12:29:44+00:00"
+          "start": "2026-04-16T10:53:30+00:00"
         },
         "careTeam": [
           {
-            "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/56501"
+            "reference": "https://organization.cit-careplan-3920.local/fhir/CareTeam/11023"
           }
         ],
         "addresses": [
           {
-            "reference": "https://careplan.cit-careplan-3596.local/fhir/Condition/1033"
+            "reference": "https://careplan.cit-careplan-3920.local/fhir/Condition/2189"
           }
         ],
         "activity": [
           {
             "reference": {
-              "reference": "urn:uuid:00ebb6cf-83c2-4657-8c0c-331806e49b48"
+              "reference": "urn:uuid:cb24d783-f6e4-432d-9155-ab52aae91f87"
             }
           },
           {
             "reference": {
-              "reference": "urn:uuid:55bd5c36-12d6-46e9-99ea-93db3c32808b"
+              "reference": "urn:uuid:48283421-a5ed-49bd-827f-b3c6ea00289e"
             }
           }
         ]

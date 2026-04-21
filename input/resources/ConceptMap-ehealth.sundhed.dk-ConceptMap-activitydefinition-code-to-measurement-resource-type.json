@@ -22,7 +22,7 @@
     }
   ],
   "sourceUri": "http://ehealth.sundhed.dk/vs/activitydefinition-code",
-  "targetUri": "http://hl7.org/fhir/resource-types",
+  "targetUri": "http://hl7.org/fhir/ValueSet/resource-types",
   "group": [
     {
       "source": "http://ehealth.sundhed.dk/cs/activitydefinition-code",

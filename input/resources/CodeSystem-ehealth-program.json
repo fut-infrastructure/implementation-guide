@@ -37,6 +37,11 @@
       "code": "telma-support-team",
       "display": "Telma Supportteam",
       "definition": "Supportteam for Telemedicinsk monitoreringsapplikation"
+    },
+    {
+      "code": "fob",
+      "display": "FOB",
+      "definition": "Fællesoffentlig Behandlingsplatform"
     }
   ]
 }

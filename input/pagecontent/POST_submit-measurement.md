@@ -1,11 +1,10 @@
 `POST [base]/$submit-measurement`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWZhNWRlYmEtMDY3Ny00MzA2LWI0M2UtODJiMzA3YTlmYTNjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTNiNTViMmItMTA4My00YWExLWIzYzUtM2ZlMjlhMmNjOTJhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0yNDA0LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS85OTk5MiIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LW1lYXN1cmVtZW50LTI0MDQubG9jYWwvZmhpci9QYXRpZW50LzcxMTEyIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,7 +21,80 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:d6b354bf-5561-4308-a1a3-63d5324fdfca",
+            "fullUrl": "urn:uuid:ea3e16b1-c678-4397-bb0d-a4b780842a09",
+            "resource": {
+              "resourceType": "Observation",
+              "meta": {
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                ]
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+                  "valueReference": {
+                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
+                  }
+                },
+                {
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
+                  "extension": [
+                    {
+                      "url": "serviceRequestVersionId",
+                      "valueId": "42"
+                    },
+                    {
+                      "url": "type",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "basedOn": [
+                {
+                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
+                }
+              ],
+              "status": "final",
+              "code": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.208.176.2.1",
+                    "code": "NPU03011"
+                  }
+                ],
+                "text": "b07bbcde-37d1-4ef6-aee4-55c5c212f58f"
+              },
+              "subject": {
+                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+              },
+              "effectivePeriod": {
+                "start": "2026-04-16T11:15:10+00:00",
+                "end": "2026-04-16T11:15:10+00:00"
+              },
+              "performer": [
+                {
+                  "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+                }
+              ],
+              "device": {
+                "reference": "https://device.cit-measurement-2404.local/fhir/Device/70544"
+              }
+            },
+            "request": {
+              "method": "POST",
+              "url": "Observation"
+            }
+          },
+          {
+            "fullUrl": "urn:uuid:9823b046-78d6-4b37-bdb5-b65468c1fed3",
             "resource": {
               "resourceType": "Media",
               "meta": {
@@ -34,7 +106,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/39765"
+                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
                   }
                 },
                 {
@@ -91,7 +163,7 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-measurement-2050.local/fhir/ServiceRequest/37067"
+                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
                 }
               ],
               "status": "completed",
@@ -104,17 +176,73 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/76312"
+                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
               },
-              "createdDateTime": "2025-02-06T14:40:50+00:00",
+              "createdDateTime": "2026-04-16T11:15:10+00:00",
               "content": {
-                "contentType": "text/plain",
-                "data": "ZTc0ZWViMGEtMTE4MC00MzQ4LWEyMjgtOWViNDcyNTE3Mjlm"
+                "language": "en"
               }
             },
             "request": {
               "method": "POST",
               "url": "Media"
+            }
+          },
+          {
+            "fullUrl": "urn:uuid:737b5a0f-8b6f-4f95-a4a5-c1ccc58763ce",
+            "resource": {
+              "resourceType": "QuestionnaireResponse",
+              "meta": {
+                "profile": [
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
+                ]
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+                  "valueReference": {
+                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
+                  }
+                },
+                {
+                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
+                  "extension": [
+                    {
+                      "url": "serviceRequestVersionId",
+                      "valueId": "42"
+                    },
+                    {
+                      "url": "type",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
+                            "code": "Adhoc"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "basedOn": [
+                {
+                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
+                }
+              ],
+              "questionnaire": "https://questionnaire.cit-measurement-2404.local/fhir/Questionnaire/78460",
+              "status": "completed",
+              "subject": {
+                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+              },
+              "authored": "2026-04-16T11:15:10+00:00",
+              "source": {
+                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/24883"
+              }
+            },
+            "request": {
+              "method": "POST",
+              "url": "QuestionnaireResponse"
             }
           }
         ]
@@ -122,6 +250,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:15:12 GMT
+x-request-id: 9f1771ac-9f6e-4427-afaf-52dd3fd26bbb
+server: istio-envoy
+x-envoy-upstream-service-time: 555
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 005f36dc4a46a8926fb094d31515ba14
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__
@@ -133,14 +278,14 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://measurement.cit-measurement-2050.local/fhir/Media/921/_history/1",
+        "location": "https://measurement.cit-measurement-2404.local/fhir/Observation/2182/_history/1",
         "etag": "1",
-        "lastModified": "2025-02-06T14:40:51.131+00:00",
+        "lastModified": "2026-04-16T11:15:12.249+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Media/921/_history/1&quot;. Took 22ms.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Observation/2182/_history/1&quot;. Took 7ms.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -155,7 +300,69 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully created resource \"Media/921/_history/1\". Took 22ms."
+              "diagnostics": "Successfully created resource \"Observation/2182/_history/1\". Took 7ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "https://measurement.cit-measurement-2404.local/fhir/Media/2183/_history/1",
+        "etag": "1",
+        "lastModified": "2026-04-16T11:15:12.249+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Media/2183/_history/1&quot;. Took 6ms.</td></tr></table></div>"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_CREATE",
+                    "display": "Create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"Media/2183/_history/1\". Took 6ms."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "https://measurement.cit-measurement-2404.local/fhir/QuestionnaireResponse/2184/_history/1",
+        "etag": "1",
+        "lastModified": "2026-04-16T11:15:12.249+00:00",
+        "outcome": {
+          "resourceType": "OperationOutcome",
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;QuestionnaireResponse/2184/_history/1&quot;. Took 4ms.</td></tr></table></div>"
+          },
+          "issue": [
+            {
+              "severity": "information",
+              "code": "informational",
+              "details": {
+                "coding": [
+                  {
+                    "system": "https://hapifhir.io/fhir/CodeSystem/hapi-fhir-storage-response-code",
+                    "code": "SUCCESSFUL_CREATE",
+                    "display": "Create succeeded."
+                  }
+                ]
+              },
+              "diagnostics": "Successfully created resource \"QuestionnaireResponse/2184/_history/1\". Took 4ms."
             }
           ]
         }

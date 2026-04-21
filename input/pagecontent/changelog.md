@@ -1,5 +1,61 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 9.0.0 (2026-05-05)
+### General changes
+- dk.core updated from 1.1.0 to 3.5.0
+  - The only forced change to our implementation as a consequence of this, is that the generalPractitioner element must now contain a reference to an Organization, Practitioner or PractitionerRole. Instead of only being able to reference an Organization.
+- dk.core updated from 3.5.0 to 3.6.0
+  - BREAKING: The system for the extension dk-core-RegionalSubDivisionCodes has changed from "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes" to "urn:iso:std:iso:3166:-2"
+### Custom operations
+#### System operations
+- Bulk export (\$export) new parameters _until and _includeHistory
+- Reindex operation (\$reindex) supports async protocol with polling status using \$hapi.fhir.reindex-status 
+#### Instance operations
+- Binary expunge (\$expunge) operation to support bulk export operations
+### Code systems
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/cs/ehealth-program
+- Added `xc`  to http://ehealth.sundhed.dk/cs/ehealth-system
+- Added http://ehealth.sundhed.dk/cs/poa-privilege for Power of Attorney privilege codes issued by NemLog-in. Content is `not-present` — codes are not enumerated in the IG.
+- Added http://id.who.int/icd/release/11/mms CodeSystem ICD-11 MMS (using `icd11-foundation-entity-id` property to annotate concepts with the ICD-11 foundation entity ids)
+- Added http://ehealth.sundhed.dk/icd/release/11/mms/supplement supplement CodeSystem for ICD-11 MMS http://id.who.int/icd/release/11/mms
+- Added `icd11-foundation-entity-id` property to http://ehealth.sundhed.dk/cs/ehealth-property
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with wounds related codes
+- Updated 'urn:oid:1.2.208.176.2.4' SKS CodeSystem with Anamneseoptagelse
+- Added https://rn.dk/telemedicinsk-saarvurdering/fosa/terminologi/saar-typer CodeSystem for wound types
+- Updated http://ehealth.sundhed.dk/cs/ehealth-usage-context-type to include to new codes: condition-qualification and body-site.
+- Updated table in description for http://ehealth.sundhed.dk/vs/ehealth-usage-context-type to include the overridden binding for body-site and condition-qualification.
+- Added new careteam participant role `clinicalPlanAdministrator` to http://ehealth.sundhed.dk/cs/careteam-participant-role
+- Added new oio bpp role `clinical_plan_administrator` to http://ehealth.sundhed.dk/cs/oio-bpp-roles (both `urn` version and `ehealth.seb.dk` version)
+### ValueSets
+- Added `fob` (Fællesoffentlig Behandlingsplatform) to http://ehealth.sundhed.dk/vs/ehealth-program
+- Added `xc` to http://ehealth.sundhed.dk/vs/ehealth-system
+- Added http://ehealth.sundhed.dk/cs/poa-privilege as an include in http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
+- Added new ValueSets http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc for grouping treatment areas for FOB solution
+- Added new ValueSets for individual treatment areas for including in the treatment areas ValueSets:
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1 (Depression)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2 (Angst)
+  - http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3 (Z-diagnosis)
+- Added http://ehealth.sundhed.dk/vs/wound-conditions ValueSet for Wound Conditions
+- Updated http://ehealth.sundhed.dk/vs/conditions to include http://ehealth.sundhed.dk/vs/wound-conditions.
+- Added http://ehealth.sundhed.dk/vs/usage-context-workflow-tele-wound ValueSet for specific Tele-Wound workflows.
+- Added http://ehealth.sundhed.dk/vs/usage-context-workflow ValueSet.
+- Added http://ehealth.sundhed.dk/vs/usage-context-task-type-tele-wound ValueSet for specific Tele-Wound tasks.
+- Added http://ehealth.sundhed.dk/vs/usage-context-task-type ValueSet.
+- Added http://ehealth.sundhed.dk/vs/usage-context-body-site-tele-wound ValueSet for specific Tele-Wound body-sites.
+- Added http://ehealth.sundhed.dk/vs/usage-context-body-site ValueSet.
+- Added http://ehealth.sundhed.dk/vs/condition-qualification-tele-wound ValueSet for specific Tele-Wound condition qualification.
+- Added http://ehealth.sundhed.dk/vs/condition-qualification ValueSet.
+### ConceptMaps
+- Updated ConceptMap http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type to target http://hl7.org/fhir/ValueSet/resource-types instead of http://hl7.org/fhir/resource-types
+- Added mapping between new `clinical_plan_administrator` roles in http://ehealth.sundhed.dk/ConceptMap/oio-bpp-roles-to-careteam-participant-roles
+### Resource/profile changes
+- Added extension ehealth-provider-affiliation to practitioner.
+- Added extension ehealth-code-qualification to Condition.
+- Updated EhealthOrganization to be based on DKCore Organization.
+- Added `ehealth-message-author` extension to `ehealth-message` (`Communication`). When an attorney (`RELATED_PERSON`) sends a message on behalf of a patient, `Communication.sender` must reference the grantor patient. The vendor application must populate the `ehealth-message-author` extension with a reference to the acting `RelatedPerson`. Patient Service validates this on every write by a `RELATED_PERSON` user.
+### Search parameters
+- Added search parameter `topic` on `ehealth-communication` to be able to query by topic
+
 ## 8.0.1 (2026-03-02)
 ### Custom operations
 #### System operations

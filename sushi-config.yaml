@@ -7,7 +7,7 @@ canonical: http://ehealth.sundhed.dk/fhir
 name: eHealth Infrastructure
 title: eHealth Infrastructure
 status: active # draft | active | retired | unknown
-version: 8.0.1
+version: 9.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 
@@ -23,7 +23,7 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#DK "Denmark"
 
 dependencies:
-  hl7.fhir.dk.core: 1.1.0
+  hl7.fhir.dk.core: 3.6.0
   hl7.fhir.uv.sdc: 2.7.0
 
 parameters: # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters

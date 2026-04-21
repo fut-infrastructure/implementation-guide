@@ -1,11 +1,10 @@
 `POST [base]/Provenance/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNDcyNDAiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQcm92ZW5hbmNlLnJlYWQiLCJQcm92ZW5hbmNlLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvOTkwMTMiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUHJvdmVuYW5jZS5yZWFkIiwiUHJvdmVuYW5jZS5zZWFyY2giXX0sInVzZXJfdHlwZSI6IlNZU1RFTSIsInNjb3BlIjoib3BlbmlkIGh0dHA6Ly9laGVhbHRoLnN1bmRoZWQuZGsvY3MvZWhlYWx0aC1zeXN0ZW18eGEifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -26,17 +25,17 @@ __Body__:
         },
         "target": [
           {
-            "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/36807"
+            "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/47655"
           }
         ],
-        "recorded": "2025-02-04T15:10:12.170+00:00",
+        "recorded": "2026-04-16T10:48:13.014+00:00",
         "policy": [
           "healthcare-act"
         ],
         "agent": [
           {
             "who": {
-              "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/59285"
+              "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/78833"
             }
           }
         ]
@@ -44,6 +43,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:48:13 GMT
+x-request-id: 27adf4b8-9c5e-4274-b62d-53d9612c7da6
+server: istio-envoy
+x-envoy-upstream-service-time: 63
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: b4ba7ce7eaf7dd1132b3acae0d278aaa
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

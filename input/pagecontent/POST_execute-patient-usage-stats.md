@@ -1,11 +1,10 @@
 `POST [base]/$execute-patient-usage-stats`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjQ0OTY4YjQtN2JjNy00YzMyLWI5ODAtMjkwMWJmNTU1MTJjIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1wYXRpZW50LXVzYWdlLXN0YXRzIiwiQmluYXJ5LnJlYWQiXX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmJmNzY5ZmMtNzEzMS00YWQ2LTgyZjEtMjU1Mzc5ODNmNmI1IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbInJlcG9ydC1ub24tYW5vbnltaXplZCIsIiRmZXRjaC1wYXRpZW50LXVzYWdlLXN0YXRzIiwiQmluYXJ5LnJlYWQiXX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -23,15 +22,35 @@ __Body__:
 }
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:44:12 GMT
+x-request-id: 9ac596fa-9782-9550-bb72-d1acbefe6c11
+server: istio-envoy
+x-envoy-upstream-service-time: 189
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:44:11 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: ae93f4149513bc872eaf68c48b5e7ff7
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://reporting.cit-reporting-1313.local/fhir/Binary/1003/_history/1
+content-type: application/fhir+json; charset=UTF-8
+location: https://reporting.cit-reporting-1313.local/fhir/Binary/1003/_history/1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Binary",
-  "id": "4",
+  "id": "1003",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T14:14:44.580+00:00",
-    "source": "#d2f0b304-529c-4921-9857-7c3841613adf",
+    "lastUpdated": "2026-04-16T11:44:11.919+00:00",
+    "source": "#9ac596fa-9782-9550-bb72-d1acbefe6c11",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/Binary"
     ]
@@ -39,7 +58,7 @@ __Response__
   "contentType": "text/plain",
   "securityContext": {
     "identifier": {
-      "value": "b44968b4-7bc7-4c32-b980-2901bf55512c"
+      "value": "fbf769fc-7131-4ad6-82f1-25537983f6b5"
     }
   },
   "data": "Kk5PVCBHRU5FUkFURUQgWUVUKg=="

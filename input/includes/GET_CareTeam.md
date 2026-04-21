@@ -1,25 +1,44 @@
-`GET [base]/CareTeam/482`
+`GET [base]/CareTeam/1448`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMDJkNTU1OTgtYjQ3Zi00ZGU0LTk5YjgtNjBiY2EzOWQ3MmQyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiM2UxNGI3ODUtODU1Yy00NjExLTkzZjItMzlkMDUxM2RmOGM2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnJlYWQiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:36:50 GMT
+x-request-id: fd066101-9431-469f-b6ad-cdf0d9c45273
+server: istio-envoy
+x-envoy-upstream-service-time: 85
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:36:50 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: ab5d94946dfb353bddf794518945d379
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://organization.cit-organization-1498.local/fhir/CareTeam/1448/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "CareTeam",
-  "id": "482",
+  "id": "1448",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T15:08:36.419+00:00",
-    "source": "#382c37b9-a25b-4b",
+    "lastUpdated": "2026-04-16T11:36:50.286+00:00",
+    "source": "#d50301a6-fd28-4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
     ]
@@ -27,13 +46,13 @@ __Response__
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:d16e188d-fc42-494f-bce8-2f0751cdb1ed"
+      "value": "urn:uuid:fa076331-da5a-40be-bd51-c52e309a01e5"
     }
   ],
   "status": "active",
-  "name": "a9cea743-ed65-4396-83cf-b0b334eb0115",
+  "name": "2e41a5a4-14bc-4b47-8901-e63c3d705dff",
   "period": {
-    "start": "2025-02-04T15:08:36+00:00"
+    "start": "2026-04-16T11:36:50+00:00"
   },
   "participant": [
     {
@@ -48,7 +67,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://patient.cit-organization-1291.local/fhir/Patient/31188"
+        "reference": "https://patient.cit-organization-1498.local/fhir/Patient/89418"
       }
     },
     {
@@ -63,7 +82,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1291.local/fhir/CareTeam/479"
+        "reference": "https://organization.cit-organization-1498.local/fhir/CareTeam/1445"
       }
     },
     {
@@ -78,7 +97,7 @@ __Response__
         }
       ],
       "member": {
-        "reference": "https://organization.cit-organization-1291.local/fhir/Practitioner/481"
+        "reference": "https://organization.cit-organization-1498.local/fhir/Practitioner/1447"
       }
     }
   ],
@@ -94,7 +113,7 @@ __Response__
   ],
   "managingOrganization": [
     {
-      "reference": "https://organization.cit-organization-1291.local/fhir/Organization/480"
+      "reference": "https://organization.cit-organization-1498.local/fhir/Organization/1446"
     }
   ]
 }
