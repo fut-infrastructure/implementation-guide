@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 9.0.1 (2026-05-05)
+### ValueSets
+- Removed http://ehealth.sundhed.dk/cs/poa-privilege CodeSystem and http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype ValueSet include of the CodeSystem, since they were causing some issues during release, and are not strictly needed until 2026.3.
+
 ## 9.0.0 (2026-05-05)
 ### General changes
 - dk.core updated from 1.1.0 to 3.5.0
