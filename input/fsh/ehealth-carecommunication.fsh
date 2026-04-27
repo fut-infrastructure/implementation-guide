@@ -24,6 +24,8 @@ Parent: Communication
 * identifier ^slicing.rules = #open
 * identifier contains communicationId 1..1 MS and messageHeaderId 0..1 MS
 
+* identifier[communicationId].system 1..1 MS
+* identifier[communicationId].system = "http://ehealth.sundhed.dk/id/ehealth-carecommunication-identifier"
 * identifier[communicationId].use 0..1
 * identifier[communicationId].use from http://hl7.org/fhir/ValueSet/identifier-use (required)
 * identifier[communicationId].value 1..1 MS
