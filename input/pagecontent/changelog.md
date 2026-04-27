@@ -1,5 +1,27 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2026.3.
+### General changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+
+## Release 2026.2. todo: change to semver format before release
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+
 ## 8.0.1 (2026-03-02)
 ### Custom operations
 #### System operations
@@ -545,7 +567,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2.7.0 (2023-03-29)
 
 ### General changes
-- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from 
+13.
 - Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations
