@@ -1,11 +1,10 @@
 `POST [base]/Library/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYWMyYTQ0NGQtZDExOC00MDExLWFiNWEtNDk4YzNkMjFiNDc2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNmU2YWU5M2EtZDhkNS00NGFhLWE3ZmYtNTk3N2E1NjNlYTZkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -27,7 +26,7 @@ __Body__:
         "extension": [
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-            "valueString": "47e8c1e8-7864-4b0d-90da-2ad3c59131b2"
+            "valueString": "f5b6b37e-2c20-4500-9490-022c5f0e7e24"
           },
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
@@ -35,7 +34,7 @@ __Body__:
               {
                 "url": "reference",
                 "valueReference": {
-                  "reference": "https://organization.cit-library-936.local/fhir/Organization/87362"
+                  "reference": "https://organization.cit-library-1264.local/fhir/Organization/41697"
                 }
               },
               {
@@ -52,7 +51,7 @@ __Body__:
             ]
           }
         ],
-        "version": "79b35558-8936-43c5-8444-2f651126bef9",
+        "version": "9a1ec1fb-d91f-4e25-a7f7-1ba0a52b85e6",
         "status": "draft",
         "type": {
           "coding": [
@@ -72,6 +71,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 12:41:23 GMT
+x-request-id: 1960afc4-6b3c-42d8-b300-39e4cf1992a0
+server: istio-envoy
+x-envoy-upstream-service-time: 471
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 5132d287f64dcdf25dad215feb26ec0f
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

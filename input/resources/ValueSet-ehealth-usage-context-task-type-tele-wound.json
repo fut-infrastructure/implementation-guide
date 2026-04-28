@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-usage-context-task-type-tele-wound",
+  "url": "http://ehealth.sundhed.dk/vs/usage-context-task-type-tele-wound",
+  "version": "1.0.0",
+  "name": "usageContextTaskTypeTeleWound",
+  "title": "Usage Context for Tele Wound Task Type ",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-01-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Value set of task types for the Tele Wound domain.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.208.176.2.4",
+        "concept": [
+          {
+            "code": "ZZ0150A"
+          },
+          {
+            "code": "DZ872"
+          }
+        ]
+      }
+    ]
+  }
+}

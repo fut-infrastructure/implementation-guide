@@ -1,31 +1,50 @@
-`GET [base]/StructureDefinition/301/_history/2`
+`GET [base]/StructureDefinition/1258/_history/2`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnJlYWQiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiUXVlc3Rpb25uYWlyZS5kZWxldGUiLCJRdWVzdGlvbm5haXJlLnNlYXJjaCIsIlF1ZXN0aW9ubmFpcmUucmVhZCIsIlF1ZXN0aW9ubmFpcmUuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJRdWVzdGlvbm5haXJlLnVwZGF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:48:48 GMT
+x-request-id: 66a88369-714b-4da7-a297-149ca374dd46
+server: istio-envoy
+x-envoy-upstream-service-time: 78
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:48:47 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 86533ebbd12abad66af19f79f43ee3bf
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://questionnaire.cit-questionnaire-1801.local/fhir/StructureDefinition/1258/_history/2
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"2"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "StructureDefinition",
-  "id": "301",
+  "id": "1258",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2025-02-05T10:46:59.162+00:00",
-    "source": "#91bdaf6d-0643-4f",
+    "lastUpdated": "2026-04-16T11:48:47.778+00:00",
+    "source": "#0837cee6-d57a-42",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-definedquestion"
     ]
   },
-  "url": "http://400a62ed-dff7-494e-b651-bdf2bef75e46",
-  "name": "dbd6e6e5-e462-4e18-b355-512890173fd7",
+  "url": "http://f333ffc2-4e4e-4f10-a6a3-c012bb2b8256",
+  "name": "1e2a1ae1-0482-46c9-bce3-f7a18bc5a957",
   "status": "draft",
   "kind": "resource",
   "abstract": true,

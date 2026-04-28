@@ -1,42 +1,59 @@
-`GET [base]/CareTeam?status=active&date=ge2025-02-04T15%3A05%3A26%2B00%3A00&date=le2025-02-04T15%3A05%3A26%2B00%3A00&managingOrganization=https%3A%2F%2Forganization.cit-organization-1291.local%2Ffhir%2FOrganization%2F267%2F_history%2F1`
+`GET [base]/CareTeam?reasonCode=DJ44%2CDE10&managingOrganization=https%3A%2F%2Forganization.cit-organization-1498.local%2Ffhir%2FOrganization%2F1241%2F_history%2F1`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYmMwYjVlZDktNTJmMy00MjZkLWIwM2YtMDhiNTFmOTQxNTFmIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODdjZjU0YjEtMmMzNS00OTg4LWExNmItNTdmZWIyNTY1MDBlIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVUZWFtLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:34:36 GMT
+x-request-id: a5eee25e-92f9-4c82-b16c-1afd8b2d0c73
+server: istio-envoy
+x-envoy-upstream-service-time: 100
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:34:36 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: cd10fd777bd2ebc41c580702c61efef1
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "09181565-e58c-4bd3-9855-f2dd9c4d7a71",
+  "id": "256b8192-213b-47c5-8a53-afc9d7255328",
   "meta": {
-    "lastUpdated": "2025-02-04T15:05:27.325+00:00"
+    "lastUpdated": "2026-04-16T11:34:36.557+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://organization.cit-organization-1291.local/fhir/CareTeam?_format=json&_pretty=true&date=ge2025-02-04T15%3A05%3A26%2B00%3A00&date=le2025-02-04T15%3A05%3A26%2B00%3A00&managingOrganization=https%3A%2F%2Forganization.cit-organization-1291.local%2Ffhir%2FOrganization%2F267%2F_history%2F1&status=active"
+      "url": "https://organization.cit-organization-1498.local/fhir/CareTeam?_format=json&_pretty=true&managingOrganization=https%3A%2F%2Forganization.cit-organization-1498.local%2Ffhir%2FOrganization%2F1241%2F_history%2F1&reasonCode=DJ44%2CDE10"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://organization.cit-organization-1291.local/fhir/CareTeam/268",
+      "fullUrl": "https://organization.cit-organization-1498.local/fhir/CareTeam/1242",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "268",
+        "id": "1242",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-04T15:05:26.700+00:00",
-          "source": "#dfdde4c4-b4f8-4d",
+          "lastUpdated": "2026-04-16T11:34:36.128+00:00",
+          "source": "#5e798aa1-dd12-48",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
@@ -44,13 +61,13 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:511b5354-ef87-468a-89a6-856b5e375e5d"
+            "value": "urn:uuid:24fbb179-11f2-4bee-b357-c0e81ef0cce6"
           }
         ],
         "status": "active",
-        "name": "bbdc8b32-fd4c-4842-8200-2c205a7f2279",
+        "name": "fb5d798d-40ae-4909-b72c-91e30a780ef3",
         "period": {
-          "end": "2025-02-04T15:05:26+00:00"
+          "start": "2026-04-16T11:34:35+00:00"
         },
         "reasonCode": [
           {
@@ -64,7 +81,7 @@ __Response__
         ],
         "managingOrganization": [
           {
-            "reference": "https://organization.cit-organization-1291.local/fhir/Organization/267"
+            "reference": "https://organization.cit-organization-1498.local/fhir/Organization/1241"
           }
         ]
       },
@@ -73,14 +90,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://organization.cit-organization-1291.local/fhir/CareTeam/269",
+      "fullUrl": "https://organization.cit-organization-1498.local/fhir/CareTeam/1244",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "269",
+        "id": "1244",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-04T15:05:26.879+00:00",
-          "source": "#54b3c63e-c54e-4f",
+          "lastUpdated": "2026-04-16T11:34:36.427+00:00",
+          "source": "#6f5af102-3456-98",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-careteam"
           ]
@@ -88,27 +105,27 @@ __Response__
         "identifier": [
           {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:uuid:fca2cbb1-f0c7-48bd-a18c-528caf9b9f40"
+            "value": "urn:uuid:f7187260-d100-488c-a3e8-7afa2efd1735"
           }
         ],
         "status": "active",
-        "name": "c9a04a74-a420-451f-83ff-a8831fce3dc7",
+        "name": "bdf27576-e7a1-4764-91ca-9b51e74eae55",
         "period": {
-          "end": "2025-02-04T15:05:26+00:00"
+          "start": "2026-04-16T11:34:36+00:00"
         },
         "reasonCode": [
           {
             "coding": [
               {
                 "system": "urn:oid:1.2.208.176.2.4",
-                "code": "DJ44"
+                "code": "DE10"
               }
             ]
           }
         ],
         "managingOrganization": [
           {
-            "reference": "https://organization.cit-organization-1291.local/fhir/Organization/267"
+            "reference": "https://organization.cit-organization-1498.local/fhir/Organization/1241"
           }
         ]
       },

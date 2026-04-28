@@ -1,11 +1,10 @@
 `POST [base]/DeviceUseStatement/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTAyNGQ1MzMtYWRlOS00YzI4LWJiY2UtZDE2OTZjMmUyNDE5IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiODIyY2UxYzAtNjU0MC00MDk0LTkyNmQtZTY3ODQxMGM5NDk4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkRldmljZVVzZVN0YXRlbWVudC5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -28,24 +27,41 @@ __Body__:
           {
             "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-deviceusestatement-context",
             "valueReference": {
-              "reference": "https://careplan.cit-device-928.local/fhir/CarePlan/15369"
+              "reference": "https://careplan.cit-device-1111.local/fhir/CarePlan/57313"
             }
           }
         ],
         "status": "active",
         "subject": {
-          "reference": "https://patient.cit-device-928.local/fhir/Patient/35244"
+          "reference": "https://patient.cit-device-1111.local/fhir/Patient/2041"
         },
         "source": {
-          "reference": "https://patient.cit-device-928.local/fhir/Patient/69127"
+          "reference": "https://patient.cit-device-1111.local/fhir/Patient/99081"
         },
         "device": {
-          "reference": "https://device.cit-device-928.local/fhir/Device/47"
+          "reference": "https://device.cit-device-1111.local/fhir/Device/1046"
         }
       }
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:41:31 GMT
+x-request-id: ad3986ee-dae5-417d-8da5-9f453eac75a0
+server: istio-envoy
+x-envoy-upstream-service-time: 361
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: f9b4990f31b75fe728497e61271a9617
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

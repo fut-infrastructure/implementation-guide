@@ -1,11 +1,10 @@
-`POST [base]/Library/31/$evaluate`
+`POST [base]/Library/1044/$evaluate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjRiNDc3MTMtMzRiZi00ZjBjLTgxZWMtNTE2OGI4OTA3NGUxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMjdhNjJkYWItZmQ3NC00NmY4LThhZWUtZjQ5NjRmNjU3MTkxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1saWJyYXJ5LTEyNjQubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzY2ODgxIiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtbGlicmFyeS0xMjY0LmxvY2FsL2ZoaXIvUGF0aWVudC8xNjA3MyIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -21,21 +20,21 @@ __Body__:
         "resourceType": "Parameters",
         "parameter": [
           {
-            "name": "observationHeight",
+            "name": "questionnaireResponse",
             "resource": {
-              "resourceType": "Observation",
-              "id": "68797",
+              "resourceType": "QuestionnaireResponse",
+              "id": "57658",
               "meta": {
                 "versionId": "1",
                 "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
+                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaireresponse"
                 ]
               },
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-library-936.local/fhir/EpisodeOfCare/60905"
+                    "reference": "https://careplan.cit-library-1264.local/fhir/EpisodeOfCare/66881"
                   }
                 },
                 {
@@ -61,112 +60,17 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-library-936.local/fhir/ServiceRequest/97502"
+                  "reference": "https://careplan.cit-library-1264.local/fhir/ServiceRequest/94567"
                 }
               ],
-              "status": "final",
-              "code": {
-                "coding": [
-                  {
-                    "system": "urn:oid:1.2.208.176.2.1",
-                    "code": "NPU03011"
-                  }
-                ]
-              },
+              "questionnaire": "https://questionnaire.cit-library-1264.local/fhir/Questionnaire/52770",
+              "status": "completed",
               "subject": {
-                "reference": "https://patient.cit-library-936.local/fhir/Patient/88106"
+                "reference": "https://patient.cit-library-1264.local/fhir/Patient/16073"
               },
-              "effectivePeriod": {
-                "start": "2025-02-04T14:53:42+00:00",
-                "end": "2025-02-04T14:53:42+00:00"
-              },
-              "performer": [
-                {
-                  "reference": "https://patient.cit-library-936.local/fhir/Patient/88106"
-                }
-              ],
-              "valueQuantity": {
-                "value": 1.7,
-                "system": "http://unitsofmeasure.org",
-                "code": "m"
-              },
-              "device": {
-                "reference": "https://device.cit-library-936.local/fhir/Device/76988"
-              }
-            }
-          },
-          {
-            "name": "observationWeight",
-            "resource": {
-              "resourceType": "Observation",
-              "id": "40496",
-              "meta": {
-                "versionId": "1",
-                "profile": [
-                  "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
-                ]
-              },
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-                  "valueReference": {
-                    "reference": "https://careplan.cit-library-936.local/fhir/EpisodeOfCare/98725"
-                  }
-                },
-                {
-                  "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-resolved-timing",
-                  "extension": [
-                    {
-                      "url": "serviceRequestVersionId",
-                      "valueId": "42"
-                    },
-                    {
-                      "url": "type",
-                      "valueCodeableConcept": {
-                        "coding": [
-                          {
-                            "system": "http://ehealth.sundhed.dk/cs/resolved-timing-type",
-                            "code": "Adhoc"
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              ],
-              "basedOn": [
-                {
-                  "reference": "https://careplan.cit-library-936.local/fhir/ServiceRequest/97502"
-                }
-              ],
-              "status": "final",
-              "code": {
-                "coding": [
-                  {
-                    "system": "urn:oid:1.2.208.176.2.1",
-                    "code": "NPU03011"
-                  }
-                ]
-              },
-              "subject": {
-                "reference": "https://patient.cit-library-936.local/fhir/Patient/60837"
-              },
-              "effectivePeriod": {
-                "start": "2025-02-04T14:53:42+00:00",
-                "end": "2025-02-04T14:53:42+00:00"
-              },
-              "performer": [
-                {
-                  "reference": "https://patient.cit-library-936.local/fhir/Patient/60837"
-                }
-              ],
-              "valueQuantity": {
-                "value": 100,
-                "system": "http://unitsofmeasure.org",
-                "code": "kg"
-              },
-              "device": {
-                "reference": "https://device.cit-library-936.local/fhir/Device/76518"
+              "authored": "2026-04-16T12:41:18+00:00",
+              "source": {
+                "reference": "https://patient.cit-library-1264.local/fhir/Patient/90708"
               }
             }
           }
@@ -175,6 +79,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 12:41:19 GMT
+x-request-id: 07b8b9b5-951e-46a5-a27b-462963f713ba
+server: istio-envoy
+x-envoy-upstream-service-time: 277
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: a0dacc8b19f4343f4c795c2c032d5fa2
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__
@@ -189,35 +110,11 @@ __Response__
   "contained": [
     {
       "resourceType": "Parameters",
-      "id": "1",
+      "id": "ccb963bd-32df-4b34-ad9c-6b1009995242",
       "parameter": [
         {
           "name": "rule-output",
-          "valueDecimal": 34.60
-        },
-        {
-          "name": "fact",
-          "valueReference": {
-            "reference": "http://patient.cit-library-936/fhir/Patient/88106/_history/1"
-          }
-        },
-        {
-          "name": "fact",
-          "valueReference": {
-            "reference": "https://careplan.cit-library-936.local/fhir/ServiceRequest/97502/_history/1"
-          }
-        },
-        {
-          "name": "fact",
-          "valueReference": {
-            "reference": "https://plan.cit-library-936.local/fhir/ActivityDefinition/50004/_history/1"
-          }
-        },
-        {
-          "name": "fact",
-          "valueReference": {
-            "reference": "https://plan.cit-library-936.local/fhir/PlanDefinition/21028/_history/1"
-          }
+          "valueString": "{\"Tasks\":[{\"Category\":{\"system\":\"http://ehealth.sundhed.dk/cs/task-category\",\"code\":\"MeasurementForAssessmentFailureInAutoProcessing\",\"display\":\"MeasurementForAssessmentFailureInAutoProcessing\"},\"Description\":\"Vurdering af måledata (måling eller spørgeskemabesvarelse) er fejlet under automatisk behandling\",\"Priority\":\"routine\",\"Restriction-Categories\":[{\"system\":\"http://ehealth.sundhed.dk/cs/restriction-category\",\"code\":\"measurement-monitoring\",\"display\":\"Monitoring of measurement(s)\"}],\"Communications\":[],\"Focus\":null}],\"Observations\":null,\"QuestionnaireResponses\":null,\"activateSelfTreatment\":false,\"ClinicalImpressions\":null}"
         }
       ]
     }
@@ -226,17 +123,17 @@ __Response__
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-guidanceresponse-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-library-936.local/fhir/EpisodeOfCare/60905"
+        "reference": "https://careplan.cit-library-1264.local/fhir/EpisodeOfCare/66881"
       }
     }
   ],
-  "moduleCanonical": "https://library.cit-library-936.local/fhir/Library/31",
+  "moduleCanonical": "https://library.cit-library-1264.local/fhir/Library/1044",
   "status": "success",
   "subject": {
-    "reference": "https://patient.cit-library-936.local/fhir/Patient/88106"
+    "reference": "https://patient.cit-library-1264.local/fhir/Patient/16073"
   },
   "outputParameters": {
-    "reference": "#1"
+    "reference": "#ccb963bd-32df-4b34-ad9c-6b1009995242"
   }
 }
 ```

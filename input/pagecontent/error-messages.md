@@ -44,6 +44,8 @@
 
 - `ACTIVITYDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
 
+- `ACTIVITYDEFINITION_BODYSITE_MISMATCH`: Body Site mismatch: Codes in .bodysite [%s] must match body-site codes in .useContext [%s]
+
 #### ehealth-appointment
 
 - `APPOINTMENT_LISTENER_APPOINTMENT_MISSING_CAREPLAN`: Appointment has no CarePlan
@@ -83,6 +85,8 @@
 - `CAREPLAN_APPLY_PLAN_DEFINITION_REFERENCE_NOT_SPECIFIED`: PlanDefinition reference must be specified
 
 - `CAREPLAN_APPLY_CAN_NOT_FIND_ACTIVITY_DEFINITION`: Can not find activity definition with id :%s
+
+- `CAREPLAN_APPLY_NO_SUITABLE_DIAGNOSIS`: Applying plan failed as no suitable diagnosis found from EpisodeOfCare with id %s when applying PlanDefinition with id %s. Conditions with status: [%s] are ignored
 
 - `CAREPLAN_NOT_FOUND`: CarePlan is not found.
 
@@ -148,13 +152,15 @@
 
 - `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_UPDATE`: When updating registration of DocumentReference for material, data is only allowed for URLs identifying internal content.
 
-- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_CREATE`: When registering a new DocumentReference for material, either an URL identifying external content, an URL identifying internal content or data in the Attachment must be provided.
+- `DOCUMENT_REFERENCE_INVALID_CONTENT_ON_CREATE`: When registering a new DocumentReference for material, either a URL identifying external content, a URL identifying internal content or data in the Attachment must be provided.
 
 - `DOCUMENT_REFERENCE_INVALID_CONTENT_ORIGIN_UPDATE`: It is not allowed to change the content origin from internal to external or vice versa.
 
 - `DOCUMENT_REFERENCE_INVALID_CONTENT_DATA_EXTERNAL_ORIGIN`: It is not allowed to have data in the content attachment when the URL is external.
 
 - `DOCUMENT_REFERENCE_UPDATE_NOT_ALLOWED_FOR_FIELD`: DocumentReference for material does not allow update operations with changes for field: %s
+
+- `DOCUMENT_REFERENCE_SIZE_MUST_BE_PROVIDED_FOR_URL`: When providing URL instead of data for content, DocumentReference.attachment.size must be provided (number of bytes of content).
 
 - `DOCUMENT_NOT_OF_TYPE_QFDD`: The document is expected to be of type QFDD
 
@@ -192,7 +198,7 @@
 
 - `DOCUMENTREFERENCE_EXTERNAL_URL_NOT_ALLOWED`: It is not allowed to set an external url for patient-specific material
 
-- `DOCUMENTREFERENCE_INVALID_CITIZEN_SPECIFIC_DATA`: When the content is patient-specific material, either an URL or data must be provided, but both were provided
+- `DOCUMENTREFERENCE_INVALID_CITIZEN_SPECIFIC_DATA`: When the content is patient-specific material, either an internal content URL or data must be provided
 
 - `DOCUMENTREFERENCE_NOT_CITIZEN_SPECIFIC`: Patient-specific material must use the correct category code, but is: %s
 
@@ -208,7 +214,13 @@
 
 - `EPISODEOFCARE_CREATE_INCORRECT_CONDITION_SUBJECT`: EpisodeOfCare and Condition doesn't point to the same Patient
 
+- `EPISODEOFCARE_CREATE_MISSING_COEXISTENCE_TAGS`: Missing coexistence-tags in JWToken when creating EpisodeOfCare
+
+- `EPISODEOFCARE_CREATE_INVALID_COEXISTENCE_TAGS`: Invalid Conditions provided when creating EpisodeOfCare using coexistence-tags: %s
+
 - `EPISODEOFCARE_PATCH_NO_CONSENT`: No valid Episode Of Care related consent
+
+- `EPISODEOFCARE_PATCH_DIAGNOSIS_REMOVAL_NOT_ALLOWED`: It is not allowed to remove diagnosis(condition) from an episodeOfCare
 
 - `EPISODEOFCARE_CREATE_PATIENT_MUST_NOT_BE_DECEASED`: Patient.deceased must be false to create episode of care
 
@@ -221,6 +233,10 @@
 - `EPISODEOFCARE_CREATE_PATIENT_DOESNT_MATCH_CONTEXT`: Episode of care patient doesn't match to the context
 
 - `EPISODEOFCARE_IS_CONTEXT_ALLOWED_MATCH_NOT_FOUND`: It is not possible to set the Episode Of Care as a context
+
+- `EPISODEOFCARE_CROSS_TEAM_SEARCH_INVALID_CONDITION_PARAMETER`: When using cross-team search on EpisodeOfCare, Condition parameter must use the Condition:code chained property
+
+- `EPISODEOFCARE_CROSS_TEAM_SEARCH_CONDITION_INVALID_AGAINST_TREATMENT_AREA`: Condition:code search parameter must be valid against treatment area determined by coexistence-tag: %s
 
 #### ehealth-library
 

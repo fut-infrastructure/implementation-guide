@@ -1,25 +1,44 @@
-`GET [base]/ServiceRequest/3142`
+`GET [base]/ServiceRequest/1407`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9QcmFjdGl0aW9uZXIvNTkyMzYiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiUGxhbkRlZmluaXRpb24kYXBwbHkiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9DYXJlVGVhbS8xODkyMiIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LWNhcmVwbGFuLTMwMzgubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzMxMzkiLCJ0ZWFtX29uX2VvYyI6ZmFsc2V9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzdlNGFjZGUtNTE1ZS00ZDNhLTk5ZjItZmM2NDg1NTkxNTNiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVQbGFuLnJlYWQiLCJDYXJlUGxhbi51cGRhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:45:35 GMT
+x-request-id: 810c5801-8c33-4576-9d43-8cc34acbd0d4
+server: istio-envoy
+x-envoy-upstream-service-time: 23
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 10:45:35 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: b19a6c4ba8d4626dfed2c7c5a710c191
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://careplan.cit-careplan-3920.local/fhir/ServiceRequest/1407/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "ServiceRequest",
-  "id": "3142",
+  "id": "1407",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T15:33:22.423+00:00",
-    "source": "#713191cd-3b65-44",
+    "lastUpdated": "2026-04-16T10:45:35.729+00:00",
+    "source": "#ae557ba9-ca38-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
     ]
@@ -28,7 +47,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3139"
+        "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/1406"
       }
     },
     {
@@ -43,21 +62,6 @@ __Response__
       }
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-sharingApprovalPolicy",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/measurement-sharing-approval-policies",
-            "code": "manual"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-trigger-enablement-code",
-      "valueCode": "NO_TRIGGER"
-    },
-    {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest-statusHistory",
       "extension": [
         {
@@ -66,7 +70,7 @@ __Response__
             "coding": [
               {
                 "system": "http://hl7.org/fhir/request-status",
-                "code": "draft"
+                "code": "completed"
               }
             ]
           }
@@ -74,7 +78,7 @@ __Response__
         {
           "url": "period",
           "valuePeriod": {
-            "start": "2025-02-04T15:33:22+00:00"
+            "start": "2026-04-16T10:45:35+00:00"
           }
         }
       ]
@@ -85,20 +89,24 @@ __Response__
     }
   ],
   "instantiatesCanonical": [
-    "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/47889"
+    "https://plan.cit-careplan-3920.local/fhir/ActivityDefinition/83702"
   ],
-  "status": "draft",
-  "intent": "order",
+  "status": "completed",
+  "intent": "filler-order",
   "code": {
     "coding": [
       {
-        "system": "urn:oid:1.2.208.176.2.1",
-        "code": "NPU03011"
+        "system": "http://ehealth.sundhed.dk/cs/activitydefinition-code",
+        "code": "TBD"
       }
-    ]
+    ],
+    "text": "83f7915d-5fca-45cd-9d05-4af87081e362"
   },
   "subject": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/30442"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/20352"
+  },
+  "occurrencePeriod": {
+    "start": "2026-04-11T10:45:35+00:00"
   }
 }
 ```

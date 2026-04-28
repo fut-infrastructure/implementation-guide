@@ -231,6 +231,17 @@
           "value": "Loginmedhjælper"
         }
       ]
+    },
+    {
+      "code": "clinicalPlanAdministrator",
+      "display": "Clinical Plan Administrator",
+      "definition": "Clinical Plan Administrator",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Klinisk Planadministrator"
+        }
+      ]
     }
   ]
 }

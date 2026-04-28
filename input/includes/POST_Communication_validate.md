@@ -1,11 +1,10 @@
-`POST [base]/Communication/787/$validate`
+`POST [base]/Communication/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYjM5ODU4ZjItZTQzNC00ZDNjLWJiZDYtYTc3OGQ1NTFiZTk0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNWMxMmQxZjQtMjljZS00NTg2LTkyYmEtYzY2ZmI2N2JkYTMwIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,11 +18,7 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "Communication",
-        "id": "787",
         "meta": {
-          "versionId": "1",
-          "lastUpdated": "2025-02-06T14:39:06.600+00:00",
-          "source": "#7b1252d9-c788-46e6-8a76-8eb9082202ec",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication"
           ]
@@ -32,7 +27,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/29566"
+              "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/92288"
             }
           },
           {
@@ -59,7 +54,7 @@ __Body__:
           }
         ],
         "subject": {
-          "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/89003"
+          "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/47580"
         },
         "topic": {
           "coding": [
@@ -73,6 +68,23 @@ __Body__:
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:12:37 GMT
+x-request-id: 3121a767-7c12-41e0-b550-09542816073f
+server: istio-envoy
+x-envoy-upstream-service-time: 91
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 211976a37e1973b0ff53bd915c38f73a
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

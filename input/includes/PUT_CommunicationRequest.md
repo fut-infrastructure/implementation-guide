@@ -1,11 +1,11 @@
-`PUT [base]/CommunicationRequest/2394`
+`PUT [base]/CommunicationRequest/3739`
 
-__Header__
+__Request Headers__
 ```
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRXBpc29kZU9mQ2FyZS5yZWFkIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QudXBkYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3Quc2VhcmNoIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuY3JlYXRlIiwiQ29tbXVuaWNhdGlvblJlcXVlc3QuZGVsZXRlIl19LCJjb250ZXh0Ijp7ImNhcmVfdGVhbV9pZCI6Imh0dHBzOi8vb3JnYW5pemF0aW9uLmNpdC1jYXJlcGxhbi0zNTk2LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vNjc0MDAiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1jYXJlcGxhbi0zNTk2LmxvY2FsL2ZoaXIvUGF0aWVudC8yMjUyNiIsInRlYW1fb25fZW9jIjpmYWxzZX0sInVzZXJfdHlwZSI6IlBSQUNUSVRJT05FUiJ9.
-If-Match: "1"
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNDM4ZjY2NjgtZjIyMi00NzYyLWFjNGYtMzgwMzliMDM3YjA2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkVwaXNvZGVPZkNhcmUucmVhZCIsIkNvbW11bmljYXRpb25SZXF1ZXN0LnVwZGF0ZSIsIkNvbW11bmljYXRpb25SZXF1ZXN0LnJlYWQiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5jcmVhdGUiLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5zZWFyY2giLCJDb21tdW5pY2F0aW9uUmVxdWVzdC5kZWxldGUiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9DYXJlVGVhbS8xODYyOSIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LWNhcmVwbGFuLTM5MjAubG9jYWwvZmhpci9QYXRpZW50LzkwMDMxIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
+If-Match: W/"1"
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/8.0.0 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -14,11 +14,11 @@ __Body__:
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2394",
+  "id": "3739",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-10-21T12:41:25.335+00:00",
-    "source": "#f4551ffb-89d6-48",
+    "lastUpdated": "2026-04-16T11:08:29.440+00:00",
+    "source": "#083f0692-193a-44",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ],
@@ -32,7 +32,7 @@ __Body__:
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-3596.local/fhir/ServiceRequest/2393"
+      "reference": "https://careplan.cit-careplan-3920.local/fhir/ServiceRequest/3738"
     }
   ],
   "status": "on-hold",
@@ -47,11 +47,11 @@ __Body__:
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/22526"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/90031"
   },
   "recipient": [
     {
-      "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/67400"
+      "reference": "https://organization.cit-careplan-3920.local/fhir/CareTeam/18629"
     }
   ],
   "reasonCode": [
@@ -75,15 +75,35 @@ __Body__:
 }
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:08:29 GMT
+x-request-id: 35bb04d2-e1ef-445e-a651-7d2e4bc1208a
+server: istio-envoy
+x-envoy-upstream-service-time: 176
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:08:29 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: b73c8b3400e0dc70b274b52eafe4dc7c
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://careplan.cit-careplan-3920.local/fhir/CommunicationRequest/3739/_history/2
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"2"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "CommunicationRequest",
-  "id": "2394",
+  "id": "3739",
   "meta": {
     "versionId": "2",
-    "lastUpdated": "2025-10-21T12:41:25.536+00:00",
-    "source": "#3348ff68-4671-4da9-93d7-4b4042e2966a",
+    "lastUpdated": "2026-04-16T11:08:29.714+00:00",
+    "source": "#35bb04d2-e1ef-445e-a651-7d2e4bc1208a",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-request"
     ],
@@ -97,7 +117,7 @@ __Response__
   },
   "basedOn": [
     {
-      "reference": "https://careplan.cit-careplan-3596.local/fhir/ServiceRequest/2393"
+      "reference": "https://careplan.cit-careplan-3920.local/fhir/ServiceRequest/3738"
     }
   ],
   "status": "on-hold",
@@ -112,11 +132,11 @@ __Response__
     }
   ],
   "subject": {
-    "reference": "https://patient.cit-careplan-3596.local/fhir/Patient/22526"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/90031"
   },
   "recipient": [
     {
-      "reference": "https://organization.cit-careplan-3596.local/fhir/CareTeam/67400"
+      "reference": "https://organization.cit-careplan-3920.local/fhir/CareTeam/18629"
     }
   ],
   "reasonCode": [
