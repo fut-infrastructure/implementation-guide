@@ -133,8 +133,10 @@ topic: `ehealth-application-event`
 
 ```
 {
+  "$schema" : "http://json-schema.org/draft-07/schema#",
   "type" : "object",
   "id" : "urn:jsonschema:dk:sundhed:ehealth:event:models:EHealthApplicationEvent",
+  "required" : [ "eventType", "resourceReference" ],
   "properties" : {
     "messageType" : {
       "type" : "string",
@@ -163,7 +165,7 @@ topic: `ehealth-application-event`
     "resourceReference" : {
       "type" : "array",
       "minItems" : 1,
-      "description" : "References to related resources (at least one obligatory entry per eventType — see Event Types table)",
+      "description" : "References to related resources. At least one entry is required; the obligatory label per eventType is listed in the Event Types table below.",
       "items" : {
         "type" : "object",
         "required" : [ "label", "reference" ],
@@ -181,15 +183,15 @@ topic: `ehealth-application-event`
     }
   },
   "allOf" : [
-    { "if" : { "properties" : { "eventType" : { "const" : "AppointmentReminder" } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "AppointmentReminder" } } },
       "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "Appointment" } } } } } } },
-    { "if" : { "properties" : { "eventType" : { "const" : "VideoAppointmentReminder" } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "VideoAppointmentReminder" } } },
       "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "Appointment" } } } } } } },
-    { "if" : { "properties" : { "eventType" : { "const" : "ReminderSubmitMeasurement" } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "ReminderSubmitMeasurement" } } },
       "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "ServiceRequest" } } } } } } },
-    { "if" : { "properties" : { "eventType" : { "const" : "MissingMeasurement" } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "MissingMeasurement" } } },
       "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "ServiceRequest" } } } } } } },
-    { "if" : { "properties" : { "eventType" : { "const" : "NewEHealthMessage" } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "NewEHealthMessage" } } },
       "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "EhealthMessage" } } } } } } }
   ]
 }
