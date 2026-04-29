@@ -12,16 +12,22 @@ Parent: DkCoreOrganization
 * identifier 1..*
 * name 1..1
 * telecom.value 1..1
-* partOf only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization)
-* partOf ^type.aggregation = #referenced
+// workaround transpile only allows base profile 
+//* partOf only Reference(ehealth-organization)
+//* partOf ^type.aggregation = #referenced
+* partOf ^type[0].targetProfile[0] = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+* partOf ^type[0].aggregation[0] = #referenced
 * type from http://ehealth.sundhed.dk/vs/organization-type
 * contact.telecom.extension contains ehealth-organization-telecomValue named telecomValue 1..1
 * contact.telecom.extension contains ehealth-organization-telecomSystem named telecomSystem 1..1
 * contact.telecom.extension contains ehealth-organization-telecomCustodian named telecomCustodian 1..1
 * contact.telecom.system 0..0
 * contact.telecom.value 0..0
-* endpoint only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-endpoint)
-* endpoint ^type.aggregation = #contained
+// workaround transpile only allows base profile 
+//* endpoint only Reference(ehealth-endpoint)
+//* endpoint ^type.aggregation = #contained
+* endpoint ^type[0].targetProfile[0] = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-endpoint"
+* endpoint ^type[0].aggregation[0] = #contained
 
 
 Extension:  ehealth-organization-relatedTo
@@ -32,8 +38,10 @@ Description: "Relations to other Organizations"
     target 1..1 and
     relationType 1..1 and
     period 1..1 
-* extension[target].value[x] only Reference(http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization)
-* extension[target].value[x] ^type.aggregation = #referenced
+// workaround transpile only allows base profile 
+//* extension[target].value[x] only Reference(ehealth-organization)
+//* extension[target].value[x] ^type.aggregation = #referenced
+* extension[target].value[x] ^type[0].targetProfile[0] = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
 * extension[relationType].value[x] only CodeableConcept
 * extension[relationType].valueCodeableConcept from http://ehealth.sundhed.dk/vs/organization-relation-type
 * extension[period].value[x] only Period

@@ -2,8 +2,11 @@ Profile: ehealth-practitioner
 Id: ehealth-practitioner
 Parent: DkCorePractitioner
 * name 1..1
-* qualification.issuer only Reference(ehealth-organization)
-* qualification.issuer ^type.aggregation = #referenced
+// workaround transpile only allows base profile 
+//* qualification.issuer only Reference(ehealth-organization)
+//* qualification.issuer ^type.aggregation = #referenced
+* qualification.issuer ^type[0].targetProfile[0] = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
+* qualification.issuer ^type[0].aggregation[0] = #referenced
 * extension contains ehealth-provider-affiliation named providerAffiliation 0..*
 
 Extension: ehealth-provider-affiliation

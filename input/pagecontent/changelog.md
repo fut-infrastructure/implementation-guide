@@ -1,8 +1,22 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Release 2026.3. todo: change to semver format before release
+### General changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
+
+## 9.0.1 (2026-05-05)
+### ValueSets
+- Removed http://ehealth.sundhed.dk/cs/poa-privilege CodeSystem and http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype ValueSet include of the CodeSystem, since they were causing some issues during release, and are not strictly needed until 2026.3.
 
 ## 9.0.0 (2026-05-05)
 ### General changes
