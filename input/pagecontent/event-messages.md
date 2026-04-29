@@ -133,8 +133,10 @@ topic: `ehealth-application-event`
 
 ```
 {
+  "$schema" : "http://json-schema.org/draft-07/schema#",
   "type" : "object",
   "id" : "urn:jsonschema:dk:sundhed:ehealth:event:models:EHealthApplicationEvent",
+  "required" : [ "eventType", "resourceReference" ],
   "properties" : {
     "messageType" : {
       "type" : "string",
@@ -162,9 +164,11 @@ topic: `ehealth-application-event`
     },
     "resourceReference" : {
       "type" : "array",
-      "description" : "References to related resources",
+      "minItems" : 1,
+      "description" : "References to related resources. At least one entry is required; the obligatory label per eventType is listed in the Event Types table below.",
       "items" : {
         "type" : "object",
+        "required" : [ "label", "reference" ],
         "properties" : {
           "label" : {
             "type" : "string",
@@ -177,7 +181,19 @@ topic: `ehealth-application-event`
         }
       }
     }
-  }
+  },
+  "allOf" : [
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "AppointmentReminder" } } },
+      "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "Appointment" } } } } } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "VideoAppointmentReminder" } } },
+      "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "Appointment" } } } } } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "ReminderSubmitMeasurement" } } },
+      "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "ServiceRequest" } } } } } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "MissingMeasurement" } } },
+      "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "ServiceRequest" } } } } } } },
+    { "if" : { "required" : [ "eventType" ], "properties" : { "eventType" : { "const" : "NewEHealthMessage" } } },
+      "then" : { "properties" : { "resourceReference" : { "contains" : { "properties" : { "label" : { "const" : "EhealthMessage" } } } } } } }
+  ]
 }
 ```
 ##### Properties
@@ -187,11 +203,13 @@ topic: `ehealth-application-event`
 - `messageVersion`: The version of the message type, eg. "1.0"
 - `payload`: Notification text content from the CommunicationRequest
 - `userReference`: The reference (absolute URL) of the Patient resource representing the citizen
-- `resourceReference`: Array of references to related resources, each with a `label` (resource type) and `reference` (absolute URL)
+- `resourceReference`: Non-empty array of references to related resources. Each entry has a `label` (resource type) and `reference` (absolute URL). The obligatory entries per `eventType` are listed in the Event Types table.
 
 ##### Event Types
 
-| eventType | Description | resourceReference label | Source |
+Each `eventType` guarantees at least one `resourceReference` entry with the indicated `label`. This is enforced by the JSON schema's `allOf` / `if`-`then` / `contains` block above.
+
+| eventType | Description | Obligatory resourceReference label | Source |
 |---|---|---|---|
 | AppointmentReminder | Appointment reminder | Appointment | fut-appointment-notification-job |
 | VideoAppointmentReminder | Video appointment reminder | Appointment | fut-appointment-notification-job |
