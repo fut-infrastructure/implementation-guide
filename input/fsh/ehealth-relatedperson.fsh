@@ -12,7 +12,7 @@ Parent: RelatedPerson
 
 * patient only Reference(ehealth-patient)
 * patient ^type.aggregation = #referenced
-* relationship.coding from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
+* relationship.coding from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype (extensible)
 * name 1..*
 
 Instance: relatedperson01
