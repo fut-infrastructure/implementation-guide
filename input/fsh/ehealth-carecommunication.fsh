@@ -17,6 +17,7 @@ Parent: Communication
     and payloadAttachment-contentType-required
     and no-standard-sender
     and sender-required-based-on-messagetype
+    and reply-requires-inResponseTo
 
 * identifier 1..2 MS
 * identifier ^slicing.discriminator.type = #value
@@ -76,6 +77,7 @@ Parent: Communication
 * recipient ^short = "The recieving actor of the message"
 
 * inResponseTo 0..1 MS
+* inResponseTo ^short = "references the Ehealth-CareCommunication Communication.id, which this message is a response to."
 
 * sender 0..0
 
@@ -96,11 +98,22 @@ Parent: Communication
     ehealth-carecommunication-datetime named date 1..1 MS and
     ehealth-carecommunication-payload-identifier named identifier 1..1 MS
 
+* payload[attachment].content[x] only Attachment
 * payload[attachment].contentAttachment 1..1 MS
 * payload[attachment].extension contains
     ehealth-carecommunication-datetime named date 1..1 MS and
     ehealth-carecommunication-payload-identifier named identifier 1..1 MS
-
+* payload[attachment].contentAttachment.contentType MS
+* payload[attachment].contentAttachment.contentType ^short = "The content type shall be present when the content is an attachment included in the data element."
+* payload[attachment].contentAttachment.contentType from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-mimetypes (required)
+* payload[attachment].contentAttachment.data MS
+* payload[attachment].contentAttachment.data ^short = "Shall be present and contain the base64 encoded content of the attachment."
+* payload[attachment].contentAttachment.url MS
+* payload[attachment].contentAttachment.url ^short = "Shall be present if the attachment is a link to a web page."
+* payload[attachment].contentAttachment.title 1.. MS
+* payload[attachment].contentAttachment.title ^short = "Note: it is not allowed for the system to automatically include '.filetype' in the title."
+* payload[attachment].contentAttachment.creation MS
+* payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
 
 // Extensions
 
@@ -137,7 +150,8 @@ Description: "Date and time of the payload segment."
 Extension: ehealth-carecommunication-payload-identifier
 Title: "Identifier Extension"
 Description: "Extension to hold an Identifier for a payload. Value shall be a UUID identifier version 4."
-* value[x]
+* value[x] only string
+* valueString 1..1
 
 Extension: ehealth-carecommunication-origin
 Title: "sender organization"
@@ -173,6 +187,26 @@ Title: "eHealth CareCommunication Categories"
 * ^status = #active
 * ^description = "Categories used for CareCommunciation messages."
 * ^compose.include.system = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category"
+
+ValueSet: EhealthCareCommunicationMimeTypesVS
+Id: ehealth-carecommunication-mimetypes
+Title: "eHealth CareCommunication Attachment MIME Types"
+Description: "Allowed MIME types for attachments in eHealth CareCommunication messages. Mirrors MedCom's medcom-core-attachmentMimeTypes ValueSet."
+* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-mimetypes"
+* ^status = #active
+* ^compose.include.system = "urn:ietf:bcp:13"
+* ^compose.include.concept[+].code = #application/pdf
+* ^compose.include.concept[=].display = "application/pdf"
+* ^compose.include.concept[+].code = #image/gif
+* ^compose.include.concept[=].display = "image/gif"
+* ^compose.include.concept[+].code = #image/jpeg
+* ^compose.include.concept[=].display = "image/jpeg"
+* ^compose.include.concept[+].code = #image/png
+* ^compose.include.concept[=].display = "image/png"
+* ^compose.include.concept[+].code = #image/tiff
+* ^compose.include.concept[=].display = "image/tiff"
+* ^compose.include.concept[+].code = #image/bmp
+* ^compose.include.concept[=].display = "image/bmp"
 
 ValueSet: EhealthCareCommunicationPriorityVS
 Id: ehealth-carecommunication-priority
@@ -268,6 +302,11 @@ Severity: #error
 Invariant: no-standard-sender
 Description: "The standard Communication.sender element SHALL NOT be used. Use the ehealth-carecommunication-sender extension instead."
 Expression: "sender.empty()"
+Severity: #error
+
+Invariant: reply-requires-inResponseTo
+Description: "If messageType is 'reply-message', inResponseTo SHALL be populated."
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'reply-message').exists() implies inResponseTo.exists()"
 Severity: #error
 
 Invariant: sender-required-based-on-messagetype
