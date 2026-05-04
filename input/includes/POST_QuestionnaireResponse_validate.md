@@ -1,11 +1,10 @@
 `POST [base]/QuestionnaireResponse/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMGE1ZTQzMmYtYjQ3Ni00ZmMzLTg0YTItNWRmNGEzYjJiNzRiIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiZmEwMWE2YzgtZWVlNC00M2UxLThhZWItNDJhYTUwYzE0ZWQyIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIlF1ZXN0aW9ubmFpcmVSZXNwb25zZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -28,7 +27,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/91082"
+              "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/3201"
             }
           },
           {
@@ -54,22 +53,39 @@ __Body__:
         ],
         "basedOn": [
           {
-            "reference": "https://careplan.cit-measurement-2050.local/fhir/ServiceRequest/87791"
+            "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/25356"
           }
         ],
-        "questionnaire": "https://questionnaire.cit-measurement-2050.local/fhir/Questionnaire/1137",
+        "questionnaire": "https://questionnaire.cit-measurement-2404.local/fhir/Questionnaire/68702",
         "status": "completed",
         "subject": {
-          "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/64191"
+          "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/94127"
         },
-        "authored": "2025-02-06T14:40:40+00:00",
+        "authored": "2026-04-16T11:11:38+00:00",
         "source": {
-          "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/24812"
+          "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/40006"
         }
       }
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:11:38 GMT
+x-request-id: 00bbb07e-0d3f-96cc-931b-be15444bc53b
+server: istio-envoy
+x-envoy-upstream-service-time: 128
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 77bc498199d4e20414b28187cac6d432
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

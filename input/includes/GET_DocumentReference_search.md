@@ -1,42 +1,59 @@
-`GET [base]/DocumentReference?description=bdae6f97-d04b-4e03-9c68-5381e944de2a`
+`GET [base]/DocumentReference?type=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fehealth-document-reference-type%7Cmaterial&description=df5d55e2-7022-41f8-b98f-21078f8ee8a3`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiRG9jdW1lbnRSZWZlcmVuY2UudXBkYXRlIiwiRG9jdW1lbnRSZWZlcmVuY2UuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJEb2N1bWVudFJlZmVyZW5jZS5zZWFyY2giLCJEb2N1bWVudFJlZmVyZW5jZS5yZWFkIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:34:36 GMT
+x-request-id: 40093c4e-829f-4d76-a894-c86a32d66909
+server: istio-envoy
+x-envoy-upstream-service-time: 58
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:34:36 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: da7ba7e95706b89b49a0d473cd3c8f04
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Bundle",
-  "id": "8112ac1c-bd33-4525-9dd8-4211d2358ff6",
+  "id": "e7b3496e-5724-4791-983b-aa3f661ce94b",
   "meta": {
-    "lastUpdated": "2025-02-05T12:52:42.095+00:00"
+    "lastUpdated": "2026-04-16T11:34:36.883+00:00"
   },
   "type": "searchset",
   "total": 2,
   "link": [
     {
       "relation": "self",
-      "url": "https://plan.cit-plan-1878.local/fhir/DocumentReference?_format=json&_pretty=true&description=bdae6f97-d04b-4e03-9c68-5381e944de2a"
+      "url": "https://plan.cit-plan-2227.local/fhir/DocumentReference?_format=json&_pretty=true&description=df5d55e2-7022-41f8-b98f-21078f8ee8a3&type=http%3A%2F%2Fehealth.sundhed.dk%2Fcs%2Fehealth-document-reference-type%7Cmaterial"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://plan.cit-plan-1878.local/fhir/DocumentReference/455",
+      "fullUrl": "https://plan.cit-plan-2227.local/fhir/DocumentReference/1532",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "455",
+        "id": "1532",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-05T12:52:41.707+00:00",
-          "source": "#6930ea66-9248-4d",
+          "lastUpdated": "2026-04-16T11:34:36.657+00:00",
+          "source": "#476511ff-1d27-4d",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -45,13 +62,13 @@ __Response__
         "type": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "69730-0"
+              "system": "http://ehealth.sundhed.dk/cs/ehealth-document-reference-type",
+              "code": "material"
             }
           ]
         },
-        "date": "2025-02-05T12:52:41.669+00:00",
-        "description": "bdae6f97-d04b-4e03-9c68-5381e944de2a",
+        "date": "2026-04-16T11:34:36.493+00:00",
+        "description": "df5d55e2-7022-41f8-b98f-21078f8ee8a3",
         "content": [
           {
             "attachment": {
@@ -65,14 +82,14 @@ __Response__
       }
     },
     {
-      "fullUrl": "https://plan.cit-plan-1878.local/fhir/DocumentReference/457",
+      "fullUrl": "https://plan.cit-plan-2227.local/fhir/DocumentReference/1533",
       "resource": {
         "resourceType": "DocumentReference",
-        "id": "457",
+        "id": "1533",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-05T12:52:41.955+00:00",
-          "source": "#4e2cd300-bb44-9d",
+          "lastUpdated": "2026-04-16T11:34:36.795+00:00",
+          "source": "#a9cb168a-0db7-42",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-documentreference"
           ]
@@ -81,13 +98,13 @@ __Response__
         "type": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "69730-0"
+              "system": "http://ehealth.sundhed.dk/cs/ehealth-document-reference-type",
+              "code": "material"
             }
           ]
         },
-        "date": "2025-02-05T12:52:41.905+00:00",
-        "description": "bdae6f97-d04b-4e03-9c68-5381e944de2a",
+        "date": "2026-04-16T11:34:36.644+00:00",
+        "description": "df5d55e2-7022-41f8-b98f-21078f8ee8a3",
         "content": [
           {
             "attachment": {

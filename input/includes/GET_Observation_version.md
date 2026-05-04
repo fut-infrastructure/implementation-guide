@@ -1,25 +1,44 @@
-`GET [base]/Observation/200/_history/1`
+`GET [base]/Observation/1599/_history/1`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTgxM2FlNzItZTIxNC00OWYzLWEzMmYtOWIxN2I0NzQ4NWIzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbW11bmljYXRpb24ucmVhZCIsIkNvbW11bmljYXRpb24ucGF0Y2giLCJNZWRpYS5zZWFyY2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2UucmVhZCIsIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiT2JzZXJ2YXRpb24uc2VhcmNoIiwiTWVkaWEudXBkYXRlIiwiT2JzZXJ2YXRpb24ucmVhZCIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIk9ic2VydmF0aW9uLnBhdGNoIiwiTWVkaWEucGF0Y2giLCJRdWVzdGlvbm5haXJlUmVzcG9uc2Uuc2VhcmNoIiwiQ29tbXVuaWNhdGlvbi5jcmVhdGUiLCIkbWlncmF0ZSIsIkNvbW11bmljYXRpb24uc2VhcmNoIiwiUHJvdmVuYW5jZS5yZWFkIiwiUXVlc3Rpb25uYWlyZVJlc3BvbnNlLnBhdGNoIiwiTWVkaWEucmVhZCIsIlByb3ZlbmFuY2Uuc2VhcmNoIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiNTg1YzQ4OTktODMwYS00N2Q3LWEwZmEtYjkyYjc1NTAyNDU0IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9ic2VydmF0aW9uLnJlYWQiXX0sImNvbnRleHQiOnsiY2FyZV90ZWFtX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LW1lYXN1cmVtZW50LTI0MDQubG9jYWwvZmhpci9DYXJlVGVhbS80MDE0NCIsImVwaXNvZGVfb2ZfY2FyZV9pZCI6Imh0dHBzOi8vY2FyZXBsYW4uY2l0LW1lYXN1cmVtZW50LTI0MDQubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzMwNzA1IiwidGVhbV9vbl9lb2MiOnRydWV9LCJ1c2VyX3R5cGUiOiJQUkFDVElUSU9ORVIifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:09:10 GMT
+x-request-id: 0bb53066-6dd7-4e6e-a1bc-b468b0e5988a
+server: istio-envoy
+x-envoy-upstream-service-time: 66
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:09:10 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 3b606a3c82f43e495e45b6bce59b43ae
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://measurement.cit-measurement-2404.local/fhir/Observation/1599/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Observation",
-  "id": "200",
+  "id": "1599",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-06T14:34:01.868+00:00",
-    "source": "#5c31798d-a03c-45",
+    "lastUpdated": "2026-04-16T11:09:10.080+00:00",
+    "source": "#ceefe64a-0bfd-4d",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-observation"
     ]
@@ -28,7 +47,7 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-measurement-2050.local/fhir/EpisodeOfCare/18273"
+        "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/30705"
       }
     },
     {
@@ -54,7 +73,7 @@ __Response__
   ],
   "basedOn": [
     {
-      "reference": "https://careplan.cit-measurement-2050.local/fhir/ServiceRequest/87371"
+      "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/87692"
     }
   ],
   "status": "final",
@@ -67,19 +86,19 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/72573"
+    "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/43497"
   },
   "effectivePeriod": {
-    "start": "2025-02-06T14:34:01+00:00",
-    "end": "2025-02-06T14:34:01+00:00"
+    "start": "2026-04-16T11:09:09+00:00",
+    "end": "2026-04-16T11:09:09+00:00"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-measurement-2050.local/fhir/Patient/72573"
+      "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/43497"
     }
   ],
   "device": {
-    "reference": "https://device.cit-measurement-2050.local/fhir/Device/27391"
+    "reference": "https://device.cit-measurement-2404.local/fhir/Device/91"
   }
 }
 ```

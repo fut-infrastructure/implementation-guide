@@ -3,12 +3,12 @@
   "id": "document-query",
   "name": "document-query",
   "status": "active",
-  "date": "2026-01-13T11:11:48.429+00:00",
+  "date": "2026-04-16T13:06:15.300+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "software": {
     "name": "document-query",
-    "version": "1.20.0"
+    "version": "1.22.0"
   },
   "implementation": {
     "description": "eHealth document-query service",
@@ -119,6 +119,9 @@
     "operation": [ {
       "name": "reindex",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-reindex"
+    }, {
+      "name": "hapi.fhir.reindex-status",
+      "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-hapi.fhir.reindex-status"
     }, {
       "name": "meta",
       "definition": "https://document-query.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-meta"

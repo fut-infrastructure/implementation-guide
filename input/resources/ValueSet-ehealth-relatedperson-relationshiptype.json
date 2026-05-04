@@ -8,7 +8,25 @@
   "experimental": true,
   "date": "2019-02-02T00:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
-  "description": "A set of codes that can be used to indicate the relationship between a Patient and a Related Person used in Denmark",
+  "description": "A set of codes that can be used to indicate the relationship between a Patient and a Related Person used in Denmark. Including the specific permissions granted to the Related Person in the context of a Power of Attorney relationship.",
+  "expansion": {
+    "timestamp": "2026-03-25T00:00:00+00:00",
+    "contains": [
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "FAMMEMB",  "display": "family member" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "SIB",      "display": "sibling" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "DOMPART",  "display": "domestic partner" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "ROOM",     "display": "Roommate" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "U" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "NBOR",     "display": "neighbor" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "CHLDINLAW","display": "child-in-law" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "GRNDCHILD","display": "grandchild" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "PRN",      "display": "parent" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "O",        "display": "Operator Proficiency" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "CHILD",    "display": "child" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "SPS",      "display": "spouse" },
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "POWATT",   "display": "power of attorney" }
+    ]
+  },
   "compose": {
     "include": [
       {
@@ -49,6 +67,9 @@
           },
           {
             "code": "SPS"
+          },
+          {
+            "code": "POWATT"
           }
         ]
       }

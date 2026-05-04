@@ -1,11 +1,10 @@
-`POST [base]/ClinicalImpression/350/$validate`
+`POST [base]/ClinicalImpression/1110/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnBhdGNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiLCJDbGluaWNhbEltcHJlc3Npb24uY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -19,11 +18,11 @@ __Body__:
       "name": "resource",
       "resource": {
         "resourceType": "ClinicalImpression",
-        "id": "350",
+        "id": "1110",
         "meta": {
           "versionId": "1",
-          "lastUpdated": "2025-02-05T11:49:08.270+00:00",
-          "source": "#2bb32534-e1e8-961f-8733-5e68c804d75d",
+          "lastUpdated": "2026-04-16T12:11:13.481+00:00",
+          "source": "#af4b0942-2c8d-910c-87f4-3caf8367ff81",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
           ]
@@ -32,7 +31,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/72669"
+              "reference": "https://careplan.cit-task-2434.local/fhir/EpisodeOfCare/52848"
             }
           }
         ],
@@ -46,12 +45,29 @@ __Body__:
           ]
         },
         "subject": {
-          "reference": "https://patient.cit-task-2140.local/fhir/Patient/19094"
+          "reference": "https://patient.cit-task-2434.local/fhir/Patient/23311"
         }
       }
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 12:11:13 GMT
+x-request-id: 189a363b-9892-4d16-aaf7-319d70de1f45
+server: istio-envoy
+x-envoy-upstream-service-time: 252
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 21dbf61cdcc5520b38a800e75a62e923
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__

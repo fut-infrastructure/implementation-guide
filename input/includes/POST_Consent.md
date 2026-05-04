@@ -1,11 +1,10 @@
 `POST [base]/Consent`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29uc2VudC5yZWFkIiwiQ29uc2VudC5zZWFyY2giLCJDb25zZW50LnVwZGF0ZSIsIkNvbnNlbnQuY3JlYXRlIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTI4NmFiZTgtYWYxMi00Y2VlLWJkNDYtOGEwNWIzNzE4Y2E4IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNvbnNlbnQucmVhZCIsIkNvbnNlbnQuc2VhcmNoIiwiQ29uc2VudC51cGRhdGUiLCJDb25zZW50LmNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -40,11 +39,11 @@ __Body__:
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/97662"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/13479"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/38888"
+      "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/98914"
     }
   ],
   "policyRule": {
@@ -62,7 +61,7 @@ __Body__:
     },
     "actor": [
       {
-        "id": "6dc510e4-ad0f-41aa-a0a8-257b69c3581c",
+        "id": "e67c83b7-88e4-4c20-8ecb-e61329945045",
         "role": {
           "coding": [
             {
@@ -72,7 +71,7 @@ __Body__:
           ]
         },
         "reference": {
-          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/35257"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/91001"
         }
       }
     ],
@@ -80,7 +79,7 @@ __Body__:
       {
         "meaning": "related",
         "reference": {
-          "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3038"
+          "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2239"
         }
       }
     ]
@@ -88,15 +87,36 @@ __Body__:
 }
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:54:18 GMT
+x-request-id: 4a99450e-dbac-4a75-bf1f-e25c53947f1f
+server: istio-envoy
+x-envoy-upstream-service-time: 79
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 10:54:18 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 0815a9b54c936d81f852367598b5270c
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://careplan.cit-careplan-3920.local/fhir/Consent/2240/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+location: https://careplan.cit-careplan-3920.local/fhir/Consent/2240/_history/1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Consent",
-  "id": "3039",
+  "id": "2240",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T15:32:14.185+00:00",
-    "source": "#bc3bba84-85ee-9c87-aa61-4f7a837ff791",
+    "lastUpdated": "2026-04-16T10:54:18.653+00:00",
+    "source": "#4a99450e-dbac-4a75-bf1f-e25c53947f1f",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
     ]
@@ -122,11 +142,11 @@ __Response__
     }
   ],
   "patient": {
-    "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/97662"
+    "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/13479"
   },
   "performer": [
     {
-      "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/38888"
+      "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/98914"
     }
   ],
   "policyRule": {
@@ -144,7 +164,7 @@ __Response__
     },
     "actor": [
       {
-        "id": "6dc510e4-ad0f-41aa-a0a8-257b69c3581c",
+        "id": "e67c83b7-88e4-4c20-8ecb-e61329945045",
         "role": {
           "coding": [
             {
@@ -154,7 +174,7 @@ __Response__
           ]
         },
         "reference": {
-          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/35257"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/91001"
         }
       }
     ],
@@ -162,7 +182,7 @@ __Response__
       {
         "meaning": "related",
         "reference": {
-          "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/3038"
+          "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/2239"
         }
       }
     ]

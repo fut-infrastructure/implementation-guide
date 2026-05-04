@@ -1,74 +1,61 @@
-`GET [base]/Provenance/455`
+`GET [base]/Provenance/1132`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJG1pZ3JhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSIsIlByb3ZlbmFuY2UucmVhZCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJQcm92ZW5hbmNlLnJlYWQiLCJQcm92ZW5hbmNlLnNlYXJjaCJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 11:32:57 GMT
+x-request-id: aebae557-80a5-4963-9fd0-b6cb0d434870
+server: istio-envoy
+x-envoy-upstream-service-time: 132
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 11:32:57 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: acb61ab5954bfd8f126760b14f128029
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://organization.cit-organization-1498.local/fhir/Provenance/1132/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Provenance",
-  "id": "455",
+  "id": "1132",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-04-24T11:47:01.624+00:00",
-    "source": "#c9cc07ca-a9c4-4f",
+    "lastUpdated": "2026-04-16T11:32:57.588+00:00",
+    "source": "#71993e52-f00b-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance"
     ]
   },
   "target": [
     {
-      "reference": "https://organization.cit-organization-1335.local/fhir/Organization/450"
+      "reference": "https://patient.cit-organization-1498.local/fhir/Patient/55793"
     }
   ],
-  "recorded": "2025-04-24T11:47:01.635+00:00",
+  "recorded": "2026-04-16T11:32:57.400+00:00",
   "policy": [
-    "healthcare-act",
-    "http://ehealth.sundhed.dk/policy/ehealth/organization-administration"
+    "healthcare-act"
   ],
-  "reason": [
-    {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/v3/ActReason",
-          "code": "HSYSADMIN"
-        }
-      ]
-    }
-  ],
-  "activity": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/v3/DataOperation",
-        "code": "UPDATE"
-      }
-    ]
-  },
   "agent": [
     {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/v3/ParticipationType",
-              "code": "CST",
-              "display": "agent role"
-            }
-          ]
-        }
-      ],
       "who": {
-        "identifier": {
-          "value": "d04e066d-f87d-46c5-8cad-a811a10805f7"
-        }
+        "reference": "https://patient.cit-organization-1498.local/fhir/Patient/84813"
       }
     }
   ]
