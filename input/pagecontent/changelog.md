@@ -13,8 +13,25 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
+
+## 9.0.2-SNAPSHOT (2026-05-04)
+### Code systems
+- Added http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category for CareCommunication category codes.
+- Added http://ehealth.sundhed.dk/cs/ehealth-carecommunication-priority for CareCommunication priority codes.
+- Added http://ehealth.sundhed.dk/cs/message-type for CareCommunication message types (new-message, reply-message, forward-message).
+### ValueSets
+- Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category.
+- Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-priority.
+- Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-mimetypes for allowed CareCommunication attachment MIME types.
+- Added MessageType ValueSet for CareCommunication message types.
+### ConceptMaps
+- Added ConceptMap CareCommunication-Priority mapping CareCommunication priorities to MedCom equivalents.
+- Added ConceptMap CareCommunucation-Category mapping CareCommunication categories to MedCom equivalents.
+### Resource/profile changes
+- Added new `ehealth-carecommunication` Communication profile with extensions for sender (PractitionerRole, Practitioner, optional CareTeam and ContactPoint), destination Organization, origin Organization, payload datetime, payload identifier, and message type.
 
 ## 9.0.1 (2026-05-05)
 ### ValueSets
@@ -621,7 +638,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2.7.0 (2023-03-29)
 
 ### General changes
-- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from 
+13.
 - Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations
