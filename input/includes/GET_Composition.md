@@ -1,25 +1,44 @@
-`GET [base]/Composition/183`
+`GET [base]/Composition/1150`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
 Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ29tcG9zaXRpb24ucmVhZCIsIkNvbXBvc2l0aW9uLmNyZWF0ZSIsIkNvbXBvc2l0aW9uLnNlYXJjaCIsIkNvbXBvc2l0aW9uLmRlbGV0ZSIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:49:07 GMT
+x-request-id: c553a4da-07c4-4d39-9398-2c5da776446d
+server: istio-envoy
+x-envoy-upstream-service-time: 50
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 10:49:07 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 17cb8ca9a665e9fb867f68b80939b026
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://document-transformation.cit-document-transformation-3534.local/fhir/Composition/1150/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Composition",
-  "id": "183",
+  "id": "1150",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-05T12:11:16.132+00:00",
-    "source": "#6aff5356-77e8-44",
+    "lastUpdated": "2026-04-16T10:49:07.854+00:00",
+    "source": "#3a2dd9c2-50ac-47",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-composition"
     ]
@@ -27,7 +46,7 @@ __Response__
   "contained": [
     {
       "resourceType": "Patient",
-      "id": "1",
+      "id": "780d5009-8d9d-49f7-a6a3-a94cff199d15",
       "meta": {
         "profile": [
           "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
@@ -58,12 +77,12 @@ __Response__
         }
       ],
       "managingOrganization": {
-        "reference": "https://organization.cit-document-transformation-2929.local/fhir/Organization/71370"
+        "reference": "https://organization.cit-document-transformation-3534.local/fhir/Organization/96248"
       }
     },
     {
       "resourceType": "Practitioner",
-      "id": "2",
+      "id": "262e8dbc-5b0b-4957-b68a-ec4f601623c4",
       "meta": {
         "profile": [
           "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
@@ -71,7 +90,7 @@ __Response__
       },
       "name": [
         {
-          "family": "9224c075-a035-40a2-ab1c-cf2743141b9e"
+          "family": "73862369-e603-4e2b-b121-046d4848a23e"
         }
       ]
     }
@@ -86,14 +105,14 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "#1"
+    "reference": "#780d5009-8d9d-49f7-a6a3-a94cff199d15"
   },
-  "date": "2025-02-05T12:11:16+00:00",
+  "date": "2026-04-16T10:49:07+00:00",
   "author": [
     {
-      "reference": "#2"
+      "reference": "#262e8dbc-5b0b-4957-b68a-ec4f601623c4"
     }
   ],
-  "title": "ea2d81b8-d137-43dd-a0d4-264dab51e1c0"
+  "title": "a18ceda1-7d90-4e76-88ba-3ee4f38df183"
 }
 ```

@@ -1,11 +1,10 @@
 `POST [base]/Library`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMzI5OTkwY2MtNTBiYS00YWY5LWFhNTYtYmVhMDI0MGNjODFkIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMmI4MmU2ZWUtNGVjYy00OWU1LTgyODAtYTQyMDFkMmRhOTYzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkxpYnJhcnkuY3JlYXRlIiwiTGlicmFyeS51cGRhdGUiLCJMaWJyYXJ5LnJlYWQiLCJMaWJyYXJ5LnNlYXJjaCIsIkxpYnJhcnkkZXZhbHVhdGUiLCIkdGVzdC1vbmx5LWNyZWF0ZSJdfSwidXNlcl90eXBlIjoiU1lTVEVNIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -22,12 +21,12 @@ __Body__:
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "75af37ba-4129-4613-a8ec-6d8f3c4723ba"
+      "valueString": "50f5d19d-4dd7-47ad-9c6c-385ed32de8f4"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-library-936.local/fhir/Organization/73457"
+        "reference": "https://organization.cit-library-1264.local/fhir/Organization/41341"
       }
     },
     {
@@ -36,7 +35,7 @@ __Body__:
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-library-936.local/fhir/Organization/66001"
+            "reference": "https://organization.cit-library-1264.local/fhir/Organization/47515"
           }
         },
         {
@@ -53,7 +52,7 @@ __Body__:
       ]
     }
   ],
-  "version": "0b36b9ad-acf0-47cd-8612-55058c820fd4",
+  "version": "0ae64e68-a505-4bfc-b4fb-88fc30f13b85",
   "status": "draft",
   "type": {
     "coding": [
@@ -72,15 +71,36 @@ __Body__:
 }
 ```
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 12:41:29 GMT
+x-request-id: 095e02bd-1112-49df-acd6-283b6d4e3017
+server: istio-envoy
+x-envoy-upstream-service-time: 105
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 12:41:29 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: d5cf91e953ccbb8ea0b9e716fad43140
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://library.cit-library-1264.local/fhir/Library/1050/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+location: https://library.cit-library-1264.local/fhir/Library/1050/_history/1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "Library",
-  "id": "15",
+  "id": "1050",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2025-02-04T14:53:08.318+00:00",
-    "source": "#7bfb42a6-e484-497d-800c-73a1921ae02d",
+    "lastUpdated": "2026-04-16T12:41:29.405+00:00",
+    "source": "#095e02bd-1112-49df-acd6-283b6d4e3017",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-library"
     ]
@@ -88,12 +108,12 @@ __Response__
   "extension": [
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-revision",
-      "valueString": "75af37ba-4129-4613-a8ec-6d8f3c4723ba"
+      "valueString": "50f5d19d-4dd7-47ad-9c6c-385ed32de8f4"
     },
     {
       "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-intendedAudience",
       "valueReference": {
-        "reference": "https://organization.cit-library-936.local/fhir/Organization/73457"
+        "reference": "https://organization.cit-library-1264.local/fhir/Organization/41341"
       }
     },
     {
@@ -102,7 +122,7 @@ __Response__
         {
           "url": "reference",
           "valueReference": {
-            "reference": "https://organization.cit-library-936.local/fhir/Organization/66001"
+            "reference": "https://organization.cit-library-1264.local/fhir/Organization/47515"
           }
         },
         {
@@ -119,7 +139,7 @@ __Response__
       ]
     }
   ],
-  "version": "0b36b9ad-acf0-47cd-8612-55058c820fd4",
+  "version": "0ae64e68-a505-4bfc-b4fb-88fc30f13b85",
   "status": "draft",
   "type": {
     "coding": [

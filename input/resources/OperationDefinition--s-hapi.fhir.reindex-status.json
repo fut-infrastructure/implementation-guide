@@ -1,0 +1,31 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-hapi.fhir.reindex-status",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-hapi.fhir.reindex-status",
+  "name": "hapi.fhir.reindex-status",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": false,
+  "code": "hapi.fhir.reindex-status",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "_jobId",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Query the server for the status of a reindex operation",
+      "type": "string"
+    },
+    {
+      "name": "_return",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "If provided, specifies that a specific part of the job report should be returned",
+      "type": "code"
+    }
+  ]
+}

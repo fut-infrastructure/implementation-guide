@@ -3,7 +3,7 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2026-03-19T02:07:32.260+00:00",
+  "date": "2026-04-16T13:06:10.808+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],

@@ -3,13 +3,13 @@
   "id": "careplan",
   "name": "careplan",
   "status": "active",
-  "date": "2026-03-19T02:03:02.907+00:00",
+  "date": "2026-04-16T13:07:23.034+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "careplan",
-    "version": "1.38.0"
+    "version": "1.39.0"
   },
   "implementation": {
     "description": "eHealth careplan service",
@@ -28,7 +28,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "operation": [ {
         "name": "expunge",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
@@ -47,7 +47,7 @@
       } ],
       "conditionalUpdate": true,
       "searchInclude": [ "CarePlan:activity-reference", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:part-of" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",
@@ -172,7 +172,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "*", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",
@@ -257,7 +257,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "CommunicationRequest:based-on", "CommunicationRequest:context" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -385,7 +385,7 @@
       } ],
       "conditionalCreate": true,
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
@@ -406,7 +406,7 @@
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_tag",
         "type": "token",
@@ -468,7 +468,7 @@
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",
@@ -622,7 +622,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "*", "Goal:patient", "Goal:subject" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -707,7 +707,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ]
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ]
     }, {
       "type": "Provenance",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-provenance",
@@ -718,7 +718,7 @@
       }, {
         "code": "read"
       } ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "target",
         "type": "reference",
@@ -738,13 +738,76 @@
       "interaction": [ {
         "code": "update"
       }, {
+        "code": "search-type"
+      }, {
         "code": "vread"
       }, {
         "code": "read"
       } ],
       "conditionalUpdate": true,
-      "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target" ],
+      "searchInclude": [ "ServiceRequest:episodeOfCare" ],
+      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:organization", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
+      "searchParam": [ {
+        "name": "_id",
+        "type": "token",
+        "documentation": "The ID of the resource"
+      }, {
+        "name": "authored",
+        "type": "date",
+        "documentation": "Date request signed"
+      }, {
+        "name": "based-on",
+        "type": "reference",
+        "documentation": "What request fulfills"
+      }, {
+        "name": "category",
+        "type": "token",
+        "documentation": "Classification of service"
+      }, {
+        "name": "code",
+        "type": "token",
+        "documentation": "What is being requested/ordered"
+      }, {
+        "name": "encounter",
+        "type": "reference",
+        "documentation": "An encounter in which this request is made"
+      }, {
+        "name": "episodeOfCare",
+        "type": "reference",
+        "documentation": "episodeOfCare"
+      }, {
+        "name": "identifier",
+        "type": "token",
+        "documentation": "Identifiers assigned to this order"
+      }, {
+        "name": "intent",
+        "type": "token",
+        "documentation": "proposal | plan | directive | order | original-order | reflex-order | filler-order | instance-order | option"
+      }, {
+        "name": "patient",
+        "type": "reference",
+        "documentation": "Search by subject - a patient"
+      }, {
+        "name": "performer",
+        "type": "reference",
+        "documentation": "Requested performer"
+      }, {
+        "name": "replaces",
+        "type": "reference",
+        "documentation": "What request replaces"
+      }, {
+        "name": "requester",
+        "type": "reference",
+        "documentation": "Who/what is requesting service"
+      }, {
+        "name": "status",
+        "type": "token",
+        "documentation": "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
+      }, {
+        "name": "subject",
+        "type": "reference",
+        "documentation": "Search by subject"
+      } ],
       "operation": [ {
         "name": "validate",
         "definition": "https://careplan.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"

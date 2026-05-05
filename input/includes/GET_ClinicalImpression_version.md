@@ -1,25 +1,44 @@
-`GET [base]/ClinicalImpression/322/_history/2`
+`GET [base]/ClinicalImpression/1358/_history/1`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiJHRlc3Qtb25seS1jcmVhdGUiLCJDbGluaWNhbEltcHJlc3Npb24uc2VhcmNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnBhdGNoIiwiQ2xpbmljYWxJbXByZXNzaW9uLnJlYWQiLCJDbGluaWNhbEltcHJlc3Npb24uY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9vcmdhbml6YXRpb24uY2l0LXRhc2stMjQzNC5sb2NhbC9maGlyL1ByYWN0aXRpb25lci8xNjYyMiIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDbGluaWNhbEltcHJlc3Npb24ucmVhZCJdfSwiY29udGV4dCI6eyJjYXJlX3RlYW1faWQiOiJodHRwczovL29yZ2FuaXphdGlvbi5jaXQtdGFzay0yNDM0LmxvY2FsL2ZoaXIvQ2FyZVRlYW0vOTcyNjciLCJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC10YXNrLTI0MzQubG9jYWwvZmhpci9FcGlzb2RlT2ZDYXJlLzk1OTM4IiwicGF0aWVudF9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtdGFzay0yNDM0LmxvY2FsL2ZoaXIvUGF0aWVudC8xNjE2IiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUFJBQ1RJVElPTkVSIn0.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 ```
 
 
 
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 12:12:21 GMT
+x-request-id: 1c5b392a-ca82-9a3d-9f8d-a6b0a06a9021
+server: istio-envoy
+x-envoy-upstream-service-time: 55
+expires: 0
+x-frame-options: DENY
+pragma: no-cache
+last-modified: Thu, 16 Apr 2026 12:12:21 GMT
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: cf288e588be3e754287c4f33bd12ff89
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-location: https://task.cit-task-2434.local/fhir/ClinicalImpression/1358/_history/1
+content-type: application/fhir+json; charset=UTF-8
+etag: W/"1"
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+```
+
 __Response__
 ```json
 {
   "resourceType": "ClinicalImpression",
-  "id": "322",
+  "id": "1358",
   "meta": {
-    "versionId": "2",
-    "lastUpdated": "2025-02-05T11:48:55.335+00:00",
-    "source": "#12120643-d458-44",
+    "versionId": "1",
+    "lastUpdated": "2026-04-16T12:12:21.089+00:00",
+    "source": "#77a212f6-a162-93",
     "profile": [
       "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
     ]
@@ -28,22 +47,17 @@ __Response__
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "https://careplan.cit-task-2140.local/fhir/EpisodeOfCare/20328"
+        "reference": "https://careplan.cit-task-2434.local/fhir/EpisodeOfCare/95938"
       }
     },
     {
-      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-decision",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ehealth.sundhed.dk/cs/clinicalimpression-decision-codes",
-            "code": "approved-for-sharing"
-          }
-        ]
+      "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression-careplan",
+      "valueReference": {
+        "reference": "https://careplan.cit-task-2434.local/fhir/CarePlan/34133"
       }
     }
   ],
-  "status": "entered-in-error",
+  "status": "in-progress",
   "code": {
     "coding": [
       {
@@ -53,7 +67,7 @@ __Response__
     ]
   },
   "subject": {
-    "reference": "https://patient.cit-task-2140.local/fhir/Patient/26593"
+    "reference": "https://patient.cit-task-2434.local/fhir/Patient/1616"
   }
 }
 ```

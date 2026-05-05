@@ -3,13 +3,13 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2026-03-19T02:37:42.295+00:00",
+  "date": "2026-04-16T13:06:28.960+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "organization",
-    "version": "1.25.0"
+    "version": "1.26.0"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -426,6 +426,10 @@
         "type": "string",
         "documentation": "A portion of either family or given name using some kind of phonetic matching algorithm"
       }, {
+        "name": "provider-affiliation-identifier",
+        "type": "token",
+        "documentation": "The Practitioner's association with a provider identifier (Danish: Ydernummer)"
+      }, {
         "name": "telecom",
         "type": "token",
         "documentation": "The value in any kind of contact"
@@ -564,6 +568,10 @@
         "type": "token",
         "documentation": "The ID of the resource"
       }, {
+        "name": "_lastUpdated",
+        "type": "date",
+        "documentation": "Only return resources which were last updated as specified by the given range"
+      }, {
         "name": "recorded",
         "type": "date",
         "documentation": "When the activity was recorded / updated"
@@ -579,6 +587,10 @@
     }, {
       "name": "hapi.fhir.reindex-status",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-hapi.fhir.reindex-status"
+    }, {
+      "name": "migrate",
+      "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-migrate",
+      "documentation": "Data migration"
     }, {
       "name": "persist-login",
       "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/-s-persist-login",

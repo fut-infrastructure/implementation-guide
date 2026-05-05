@@ -1,0 +1,21 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "-s-meta",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/-s-meta",
+  "name": "meta",
+  "status": "active",
+  "kind": "operation",
+  "affectsState": false,
+  "code": "meta",
+  "system": true,
+  "type": false,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1"
+    }
+  ]
+}

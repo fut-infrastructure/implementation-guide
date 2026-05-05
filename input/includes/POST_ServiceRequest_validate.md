@@ -1,11 +1,10 @@
 `POST [base]/ServiceRequest/$validate`
 
-__Header__
+__Request Headers__
 ```
-Accept-Charset: utf-8
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQ2FyZVBsYW4ucmVhZCIsIiR0ZXN0LW9ubHktY3JlYXRlIl19LCJ1c2VyX3R5cGUiOiJTWVNURU0ifQ.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYzUwMGZiMzQtYjdhYS00MWIyLWJkYTMtMzNkZjA3Y2I5MzM3IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIkNhcmVQbGFuLnJlYWQiLCJDYXJlUGxhbi51cGRhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
-User-Agent: HAPI-FHIR/6.10.5 (FHIR Client; FHIR 4.0.1/R4; apache)
+User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
 Content-Type: application/fhir+json; charset=UTF-8
 ```
@@ -20,7 +19,7 @@ __Body__:
       "resource": {
         "resourceType": "ServiceRequest",
         "meta": {
-          "lastUpdated": "2025-02-04T15:20:45.671+00:00",
+          "lastUpdated": "2026-04-16T10:46:23.820+00:00",
           "profile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-servicerequest"
           ]
@@ -29,7 +28,7 @@ __Body__:
           {
             "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
             "valueReference": {
-              "reference": "https://careplan.cit-careplan-3038.local/fhir/EpisodeOfCare/2056"
+              "reference": "https://careplan.cit-careplan-3920.local/fhir/EpisodeOfCare/1518"
             }
           },
           {
@@ -86,7 +85,7 @@ __Body__:
               {
                 "url": "dataActuality",
                 "valueDuration": {
-                  "value": -1257940800,
+                  "value": 996794386,
                   "system": "http://unitsofmeasure.org",
                   "code": "h"
                 }
@@ -110,7 +109,7 @@ __Body__:
               {
                 "url": "period",
                 "valuePeriod": {
-                  "start": "2025-02-04T15:20:45+00:00"
+                  "start": "2026-04-16T10:46:23+00:00"
                 }
               }
             ]
@@ -121,7 +120,7 @@ __Body__:
           }
         ],
         "instantiatesCanonical": [
-          "https://plan.cit-careplan-3038.local/fhir/ActivityDefinition/42734"
+          "https://plan.cit-careplan-3920.local/fhir/ActivityDefinition/96587"
         ],
         "status": "completed",
         "intent": "filler-order",
@@ -132,18 +131,35 @@ __Body__:
               "code": "TBD"
             }
           ],
-          "text": "44dd7726-2f0c-435e-b98d-b80697a0b978"
+          "text": "6c18ce21-8a30-4d55-9ae4-bc5edf7a29e1"
         },
         "subject": {
-          "reference": "https://patient.cit-careplan-3038.local/fhir/Patient/67959"
+          "reference": "https://patient.cit-careplan-3920.local/fhir/Patient/94989"
         },
         "occurrencePeriod": {
-          "start": "2025-01-30T15:20:45+00:00"
+          "start": "2026-04-11T10:46:23+00:00"
         }
       }
     }
   ]
 }
+```
+
+__Response Headers__
+```
+date: Thu, 16 Apr 2026 10:46:24 GMT
+x-request-id: 87f29726-c418-45e1-8263-ba0814f09b81
+server: istio-envoy
+x-envoy-upstream-service-time: 119
+expires: 0
+x-content-type-options: nosniff
+x-xss-protection: 0
+x-b3-traceid: 356cfbca4612bd08118e91481785be29
+x-frame-options: DENY
+x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
+content-type: application/fhir+json; charset=UTF-8
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
 ```
 
 __Response__
