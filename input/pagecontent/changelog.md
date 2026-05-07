@@ -7,10 +7,17 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added new CodeSystem `http://ehealth.sundhed.dk/cs/device-platform` with codes `ios` and `android` for identifying the platform of a citizen's mobile device (CCR0303 S1).
 ### ValueSets
+- Added SNOMED code `1187059002` (Smartphone) to `http://ehealth.sundhed.dk/vs/device-types` (CCR0303 S1).
+- Added new ValueSet `http://ehealth.sundhed.dk/vs/device-platform` including the new `device-platform` CodeSystem (CCR0303 S1).
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- `ehealth-device`: added two new extensions (CCR0303 S1):
+  - `ehealth-device-registrationToken` (string) — registration token from a push notification service (FCM/APNs).
+  - `ehealth-device-platform` (code, bound to `http://ehealth.sundhed.dk/vs/device-platform` with required strength).
+- `ehealth-deviceusestatement`: relaxed the `Context` extension cardinality from `1..1` to `0..1` (CCR0303 S1). The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
 

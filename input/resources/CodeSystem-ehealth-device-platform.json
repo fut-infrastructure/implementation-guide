@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-device-platform",
+  "url": "http://ehealth.sundhed.dk/cs/device-platform",
+  "version": "0.1.0",
+  "name": "DevicePlatform",
+  "title": "Device Platform",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-05-07T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Platform identifier for a citizen's mobile device. Used together with a registration token to direct push notifications to the right push notification service (FCM/APNs).",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ios",
+      "display": "iOS",
+      "definition": "Apple iOS - notifications delivered via Apple Push Notification service (APNs).",
+      "designation": [
+        {
+          "language": "da",
+          "value": "iOS"
+        }
+      ]
+    },
+    {
+      "code": "android",
+      "display": "Android",
+      "definition": "Google Android - notifications delivered via Firebase Cloud Messaging (FCM).",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Android"
+        }
+      ]
+    }
+  ]
+}
