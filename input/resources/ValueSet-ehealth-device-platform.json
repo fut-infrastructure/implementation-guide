@@ -27,10 +27,10 @@
         "system": "http://ehealth.sundhed.dk/cs/device-platform",
         "concept": [
           {
-            "code": "ios"
+            "code": "APN"
           },
           {
-            "code": "android"
+            "code": "FCM"
           }
         ]
       }

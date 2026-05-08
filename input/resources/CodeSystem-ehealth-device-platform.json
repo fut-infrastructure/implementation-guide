@@ -19,29 +19,29 @@
       ]
     }
   ],
-  "description": "Platform identifier for a citizen's mobile device. Used together with a registration token to direct push notifications to the right push notification service (FCM/APNs).",
+  "description": "Push notification service identifier for a citizen's mobile device. Used together with a registration token to direct push notifications to the right push notification service.",
   "caseSensitive": true,
   "content": "complete",
   "concept": [
     {
-      "code": "ios",
-      "display": "iOS",
-      "definition": "Apple iOS - notifications delivered via Apple Push Notification service (APNs).",
+      "code": "APN",
+      "display": "Apple Push Notification service",
+      "definition": "Apple Push Notification service (APNs) - typically used for iOS devices.",
       "designation": [
         {
           "language": "da",
-          "value": "iOS"
+          "value": "Apple Push Notification service"
         }
       ]
     },
     {
-      "code": "android",
-      "display": "Android",
-      "definition": "Google Android - notifications delivered via Firebase Cloud Messaging (FCM).",
+      "code": "FCM",
+      "display": "Firebase Cloud Messaging",
+      "definition": "Firebase Cloud Messaging (FCM) - typically used for Android devices.",
       "designation": [
         {
           "language": "da",
-          "value": "Android"
+          "value": "Firebase Cloud Messaging"
         }
       ]
     }
