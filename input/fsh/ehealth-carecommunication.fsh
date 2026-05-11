@@ -30,11 +30,15 @@ Parent: Communication
 * identifier[communicationId].use 0..1
 * identifier[communicationId].use from http://hl7.org/fhir/ValueSet/identifier-use (required)
 * identifier[communicationId].value 1..1 MS
+* identifier[communicationId].value ^short = "UUID v4 in URN form (urn:uuid:<uuid>)"
+* identifier[communicationId].value ^definition = "The communication identifier as a UUID v4 in URN form. The URN form (urn:uuid:<uuid>) is used so the same UUID is byte-identical to Bundle.entry.fullUrl and references in the MedCom careCommunication Bundle this profile is aligned with."
 * identifier[communicationId] ^short = "The communication identifier"
 
 * identifier[messageHeaderId].system 1..1 MS
-* identifier[messageHeaderId].system = "http://ehealth.sundhed.dk/id/ehealth-carecommunication-messageHeaderId"
+* identifier[messageHeaderId].system = "http://ehealth.sundhed.dk/fhir/system/medcom-message-header-id"
 * identifier[messageHeaderId].value 1..1 MS
+* identifier[messageHeaderId].value ^short = "UUID v4 in URN form (urn:uuid:<uuid>)"
+* identifier[messageHeaderId].value ^definition = "The MessageHeader identifier as a UUID v4 in URN form. The URN form (urn:uuid:<uuid>) is used so the same UUID is byte-identical to Bundle.entry.fullUrl and references in the MedCom careCommunication Bundle this profile is aligned with."
 * identifier[messageHeaderId] ^short = "The ID of the originating MessageHeader resource"
 
 * status 1..1 MS
@@ -150,9 +154,9 @@ Description: "Date and time of the payload segment."
 
 Extension: ehealth-carecommunication-payload-identifier
 Title: "Identifier Extension"
-Description: "Extension to hold an Identifier for a payload. Value shall be a UUID identifier version 4."
-* value[x] only string
-* valueString 1..1
+Description: "Extension to hold an Identifier for a payload. Identifier.value shall be a UUID v4 in URN form (urn:uuid:<uuid>)."
+* value[x] only Identifier
+* valueIdentifier 1..1
 
 Extension: ehealth-carecommunication-origin
 Title: "sender organization"
@@ -286,8 +290,8 @@ Expression: "category.coding.code = 'regarding-referral' or priority.empty()"
 Severity: #error
 
 Invariant: uuidv4
-Description: "The identifier.value SHALL be a valid UUID v4"
-Expression: "identifier.value.matches('^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$')"
+Description: "Each identifier.value SHALL be a valid UUID v4 in URN form (urn:uuid:<uuid>)"
+Expression: "identifier.all(value.matches('^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$'))"
 Severity: #error
 
 Invariant: atLeastOnePayloadString
