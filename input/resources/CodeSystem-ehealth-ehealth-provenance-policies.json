@@ -53,7 +53,7 @@
       ]
     },
     {
-      "code": "aggregate-input",
+      "code": "http://ehealth.sundhed.dk/policy/dk/aggregate-input",
       "display": "Aggregated Triage Input",
       "designation": [
         {
