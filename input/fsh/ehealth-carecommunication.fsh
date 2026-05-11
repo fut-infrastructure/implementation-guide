@@ -89,7 +89,7 @@ Parent: Communication
 
 * payload 1..*
 * payload ^slicing.discriminator.type = #type
-* payload ^slicing.discriminator.path = "content[x]"
+* payload ^slicing.discriminator.path = "$this.content"
 * payload ^slicing.rules = #open
 * payload contains string 1..* and attachment 0..*
 
@@ -136,6 +136,7 @@ Description: "References the sending PractitionerRole (Actor), the Practitioner,
 * extension[contactPoint].value[x] only ContactPoint
 
 Extension: ehealth-carecommunication-destination
+Id: ehealth-carecommunication-destination
 Title: "Destination Extension"
 Description: "Reference to the destination Organization for this communication."
 * . ^short = "Organization receiving the message"
@@ -171,7 +172,7 @@ Description: "The type of the message. If inResponseTo is present, the type can 
 ValueSet: MessageType
 Title: "Message Type ValueSet"
 Description: "Allowed message types: new-message, reply-message, forward-message."
-* ^url = "http://ehealth.sundhed.dk/cm/ehealth-to-medcom-carecommunication-category"
+* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-message-type"
 * ^compose.include.system = "http://ehealth.sundhed.dk/cs/message-type"
 * ^compose.include.concept[+].code = #new-message
 * ^compose.include.concept[=].display = "New Message"
@@ -271,7 +272,7 @@ Severity: #error
 
 Invariant: only-asap-or-routine
 Description: "priority must be either 'asap' or 'routine'"
-Expression: "priority = 'asap' or priority = 'routine'"
+Expression: "priority.empty() or priority = 'asap' or priority = 'routine'"
 Severity: #error
 
 Invariant: topic-required-when-category-other
@@ -281,7 +282,7 @@ Severity: #error
 
 Invariant: priority-category-invariant
 Description: "Priority must not be present when category is not 'regarding-referral'."
-Expression: "where(category.coding.code != 'regarding-referral').priority.empty()"
+Expression: "category.coding.code = 'regarding-referral' or priority.empty()"
 Severity: #error
 
 Invariant: uuidv4
@@ -306,7 +307,7 @@ Severity: #error
 
 Invariant: reply-requires-inResponseTo
 Description: "If messageType is 'reply-message', inResponseTo SHALL be populated."
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'reply-message').exists() implies inResponseTo.exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
 Severity: #error
 
 Invariant: sender-required-based-on-messagetype
@@ -314,5 +315,5 @@ Description: """
 If messagetype is 'new' or 'reply', the sender extension must be present.
 If 'forward', sender may be absent.
 """
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.coding.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
 Severity: #error
