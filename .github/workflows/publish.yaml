@@ -23,7 +23,7 @@ jobs:
     name: Transpile IG
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
-    container: ghcr.io/trifork/ig-publisher:2.0.15
+    container: ghcr.io/trifork/ig-publisher:2.2.27
 
     steps:
       # Checkout the repos needed
