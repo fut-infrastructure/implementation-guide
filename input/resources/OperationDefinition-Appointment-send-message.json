@@ -1,0 +1,54 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Appointment-send-message",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Appointment-send-message",
+  "name": "Appointment-send-message",
+  "title": "Send message",
+  "status": "active",
+  "kind": "operation",
+  "description": "Sends a message to a related person associated with an appointment via the specified channel.",
+  "affectsState": true,
+  "code": "send-message",
+  "resource": [
+    "Appointment"
+  ],
+  "system": false,
+  "type": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "recipient",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The related person to receive the message.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson"
+      ]
+    },
+    {
+      "name": "channel",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The channel to use when sending the message.",
+      "type": "code",
+      "binding": {
+        "strength": "required",
+        "valueSet": "http://ehealth.sundhed.dk/vs/ehealth-message-channel"
+      }
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "A reference to the created message resource.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"
+      ]
+    }
+  ]
+}

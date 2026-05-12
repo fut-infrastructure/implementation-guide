@@ -15,6 +15,15 @@ Parent: RelatedPerson
 * relationship.coding from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype (extensible)
 * name 1..*
 
+* telecom ^slicing.discriminator.type = #value
+* telecom ^slicing.discriminator.path = "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose').value.ofType(Coding).code"
+* telecom ^slicing.rules = #open
+* telecom contains sms-video-reminder 0..1
+* telecom[sms-video-reminder].system = #phone
+* telecom[sms-video-reminder].value 1..1
+* telecom[sms-video-reminder].extension contains ehealth-telecom-purpose named purpose 1..1
+* telecom[sms-video-reminder].extension[purpose].valueCoding from http://ehealth.sundhed.dk/vs/telecom-purpose (required)
+
 Instance: relatedperson01
 InstanceOf: RelatedPerson
 Usage: #example
