@@ -1,35 +1,44 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Release 2026.3. todo: change to semver format before release
+## Release 2026.3
 ### General changes
-- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- Updated ehealth-media to allow patient and relatedPerson references in its operator field.
+- Updated ehealth-relatedperson relationship binding from `required` to `extensible` to accommodate vendor-specific PoA privilege codes.
 ### Custom operations
 #### System operations
 #### Instance operations
+- Added `Appointment/$send-message` instance operation for sending SMS messages to related persons associated with an appointment (CCR0316).
 ### Code systems
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
+- Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
+- Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
+- Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
+- Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 ### ConceptMaps
 ### Resource/profile changes
-- Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- Updated ehealth-media to allow patient and relatedPerson references in its operator field.
+- Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
 
-## 9.0.2-SNAPSHOT (2026-05-04)
+## 9.0.2-SNAPSHOT (2026-05-12)
 ### Code systems
 - Added http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category for CareCommunication category codes.
 - Added http://ehealth.sundhed.dk/cs/ehealth-carecommunication-priority for CareCommunication priority codes.
 - Added http://ehealth.sundhed.dk/cs/message-type for CareCommunication message types (new-message, reply-message, forward-message).
+- Added http://ehealth.sundhed.dk/cs/ehealth-carecommunication-status-reason for CareCommunication stopped-status reason codes (system-error, recipient-unavailable).
 ### ValueSets
 - Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category.
 - Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-priority.
 - Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-mimetypes for allowed CareCommunication attachment MIME types.
-- Added MessageType ValueSet for CareCommunication message types.
+- Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-message-type for CareCommunication message types.
+- Added http://ehealth.sundhed.dk/vs/ehealth-carecommunication-status-reason for CareCommunication stopped-status reason codes.
 ### ConceptMaps
 - Added ConceptMap CareCommunication-Priority mapping CareCommunication priorities to MedCom equivalents.
-- Added ConceptMap CareCommunucation-Category mapping CareCommunication categories to MedCom equivalents.
+- Added ConceptMap CareCommunication-Category mapping CareCommunication categories to MedCom equivalents.
 ### Resource/profile changes
 - Added new `ehealth-carecommunication` Communication profile with extensions for sender (PractitionerRole, Practitioner, optional CareTeam and ContactPoint), destination Organization, origin Organization, payload datetime, payload identifier, and message type.
 
@@ -638,8 +647,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2.7.0 (2023-03-29)
 
 ### General changes
-- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from 
-13.
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
 - Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations

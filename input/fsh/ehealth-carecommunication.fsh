@@ -1,15 +1,9 @@
-// comment for later:
-// The note "should also exist in the MedcomCareCommunicationMessage bundle" is a packaging rule—consider documenting
-// this in your IG narrative, as you can't force presence in a different Bundle with profile alone.
-
-
 Profile: ehealth-carecommunication
 Id: ehealth-carecommunication
 Parent: Communication
 
 * obeys
     stopped-status-statusReason
-    and only-asap-or-routine
     and topic-required-when-category-other
     and priority-category-invariant
     and atLeastOnePayloadString
@@ -41,6 +35,8 @@ Parent: Communication
 
 * status 1..1 MS
 
+* statusReason from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-status-reason (required)
+
 * category 1..1 MS
 * category from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category (required)
 * category.coding 1..1 MS
@@ -71,15 +67,16 @@ Parent: Communication
 
 * extension contains ehealth-carecommunication-origin named origin 1..1 MS
 
-* extension contains ehealth-carecommunication-message-Type named messageType 1..1 MS
+* extension contains ehealth-carecommunication-message-type named messageType 1..1 MS
 
 * recipient 0..1
 * recipient only Reference(CareTeam or PractitionerRole)
 * recipient MS
-* recipient ^short = "The recieving actor of the message"
+* recipient ^short = "The receiving actor of the message"
 
 * inResponseTo 0..1 MS
-* inResponseTo ^short = "references the Ehealth-CareCommunication Communication.id, which this message is a response to."
+* inResponseTo only Reference(ehealth-carecommunication)
+* inResponseTo ^short = "Reference to the previous ehealth-carecommunication resource this message is a response to."
 
 * sender 0..0
 
@@ -117,6 +114,7 @@ Parent: Communication
 * payload[attachment].contentAttachment.creation MS
 * payload[attachment].contentAttachment.creation ^short = "The time the attachment was created"
 
+
 // Extensions
 
 Extension: ehealth-carecommunication-sender
@@ -145,124 +143,33 @@ Description: "Reference to the destination Organization for this communication."
 * value[x] only Reference(Organization)
 
 Extension: ehealth-carecommunication-datetime
+Id: ehealth-carecommunication-datetime
 Title: "DateTime Extension"
 Description: "Date and time of the payload segment."
 * . ^short = "Payload dateTime"
 * value[x] only dateTime
 
 Extension: ehealth-carecommunication-payload-identifier
+Id: ehealth-carecommunication-payload-identifier
 Title: "Identifier Extension"
 Description: "Extension to hold an Identifier for a payload. Identifier.value shall be a UUID v4 in URN form (urn:uuid:<uuid>)."
 * value[x] only Identifier
 * valueIdentifier 1..1
 
 Extension: ehealth-carecommunication-origin
-Title: "sender organization"
+Id: ehealth-carecommunication-origin
+Title: "Sender organization"
 Description: "Reference to the sending organization for this payload segment."
 * . ^short = "Reference to the sending organization of the message"
 * value[x] only Reference(Organization)
 
-Extension: ehealth-carecommunication-message-Type
+Extension: ehealth-carecommunication-message-type
+Id: ehealth-carecommunication-message-type
 Title: "Message type"
 Description: "The type of the message. If inResponseTo is present, the type can not be new-message."
 * value[x] only Coding
-* valueCoding from MessageType (required)
+* valueCoding from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-message-type (required)
 * . ^short = "Message type"
-
-// Valuesets
-
-ValueSet: MessageType
-Title: "Message Type ValueSet"
-Description: "Allowed message types: new-message, reply-message, forward-message."
-* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-message-type"
-* ^compose.include.system = "http://ehealth.sundhed.dk/cs/message-type"
-* ^compose.include.concept[+].code = #new-message
-* ^compose.include.concept[=].display = "New Message"
-* ^compose.include.concept[+].code = #reply-message
-* ^compose.include.concept[=].display = "Reply Message"
-* ^compose.include.concept[+].code = #forward-message
-* ^compose.include.concept[=].display = "Forward Message"
-
-ValueSet: EhealthCareCommunicationCategoryVS
-Id: ehealth-carecommunication-category
-Title: "eHealth CareCommunication Categories"
-* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category"
-* ^status = #active
-* ^description = "Categories used for CareCommunciation messages."
-* ^compose.include.system = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category"
-
-ValueSet: EhealthCareCommunicationMimeTypesVS
-Id: ehealth-carecommunication-mimetypes
-Title: "eHealth CareCommunication Attachment MIME Types"
-Description: "Allowed MIME types for attachments in eHealth CareCommunication messages. Mirrors MedCom's medcom-core-attachmentMimeTypes ValueSet."
-* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-mimetypes"
-* ^status = #active
-* ^compose.include.system = "urn:ietf:bcp:13"
-* ^compose.include.concept[+].code = #application/pdf
-* ^compose.include.concept[=].display = "application/pdf"
-* ^compose.include.concept[+].code = #image/gif
-* ^compose.include.concept[=].display = "image/gif"
-* ^compose.include.concept[+].code = #image/jpeg
-* ^compose.include.concept[=].display = "image/jpeg"
-* ^compose.include.concept[+].code = #image/png
-* ^compose.include.concept[=].display = "image/png"
-* ^compose.include.concept[+].code = #image/tiff
-* ^compose.include.concept[=].display = "image/tiff"
-* ^compose.include.concept[+].code = #image/bmp
-* ^compose.include.concept[=].display = "image/bmp"
-
-ValueSet: EhealthCareCommunicationPriorityVS
-Id: ehealth-carecommunication-priority
-Title: "eHealth CareCommunication Priorities"
-* ^url = "http://ehealth.sundhed.dk/vs/ehealth-carecommunication-priority"
-* ^status = #active
-* ^description = "Priorities used for CareCommunication messages."
-* ^compose.include.system = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-priority"
-
-
-// CodeSystems
-
-CodeSystem: MessageTypeCS
-Title: "Message Type CodeSystem"
-Description: "Allowed codes for message type."
-* ^url = "http://ehealth.sundhed.dk/cs/message-type"
-* #new-message "New Message"
-* #reply-message "Reply"
-* #forward-message "Forward"
-
-CodeSystem: EhealthCareCommunicationCategoryCS
-Id: ehealth-carecommunication-category
-Title: "eHealth CareCommunication Category codes"
-Description: "The set of CareCommunication category code."
-* ^url = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category"
-* #alcohol-and-drug-treatment "Alcohol and drug treatment"
-* #assistive-devices "Assistive technology"
-* #carecoordination "Care Coordination"
-* #decease "Decease"
-* #discharge "Discharge"
-* #examination-results "Examination Results"
-* #healthcare "Healthcare"
-* #home-care-assessment "Home care assessment"
-* #medicine "Medicine"
-* #nursing "Nursing"
-* #outpatient "Outpatient"
-* #psychiatry-social-disability "Psychiatry, Social, Disability"
-* #regarding-referral "Regarding Referral"
-* #telemedicine "Telemedicine"
-* #training "Training"
-* #acute-ambulant "Acute ambulant"
-* #extended-care-responsibility "Extended care responsibility"
-* #other "Other"
-
-CodeSystem: EhealthCareCommunicationPriorityCS
-Id: ehealth-carecommunication-priority
-Title: "eHealth CareCommunication Priority codes"
-Description: "The set of CareCommunication priority code."
-* ^url = "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-priority"
-* #routine "Routine"
-* #asap "ASAP"
-
-
 
 
 // Invariants
@@ -272,14 +179,9 @@ Description: "If status is 'stopped', statusReason must be either 'system-error'
 Expression: "status != 'stopped' or statusReason.coding.where(code = 'system-error' or code = 'recipient-unavailable').exists()"
 Severity: #error
 
-Invariant: only-asap-or-routine
-Description: "priority must be either 'asap' or 'routine'"
-Expression: "priority.empty() or priority = 'asap' or priority = 'routine'"
-Severity: #error
-
 Invariant: topic-required-when-category-other
 Description: "topic must be present when category is 'other'."
-Expression: "iif(category.coding.code != 'other', true, category.coding.code = 'other' and topic.exists())"
+Expression: "category.coding.code != 'other' or topic.exists()"
 Severity: #error
 
 Invariant: priority-category-invariant
@@ -299,7 +201,7 @@ Severity: #error
 
 Invariant: payloadAttachment-contentType-required
 Description: "contentType SHALL be present if data or url is present in Attachment"
-Expression: "payload.contentAttachment.data.exists() or payload.contentAttachment.url.exists() implies payload.contentAttachment.contentType.exists()"
+Expression: "(payload.contentAttachment.data.exists() or payload.contentAttachment.url.exists()) implies payload.contentAttachment.contentType.exists()"
 Severity: #error
 
 Invariant: no-standard-sender
@@ -309,13 +211,10 @@ Severity: #error
 
 Invariant: reply-requires-inResponseTo
 Description: "If messageType is 'reply-message', inResponseTo SHALL be populated."
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
 Severity: #error
 
 Invariant: sender-required-based-on-messagetype
-Description: """
-If messagetype is 'new' or 'reply', the sender extension must be present.
-If 'forward', sender may be absent.
-"""
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Description: "If messageType is 'new-message' or 'reply-message', the sender extension must be present. For 'forward-message', sender may be absent."
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
 Severity: #error

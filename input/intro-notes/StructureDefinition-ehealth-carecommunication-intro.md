@@ -2,7 +2,7 @@
 
 An Ehealth-CareCommunication is an FUT abstraction of a MedCom CareCommunication.
 This is needed to support communication through the VANS network with parties outside the FUT infrastructure, as well as inside FUT.
-The Ehealth-CareCommunication's primary feature is to enable communication in relation to several images of different file types.
+The Ehealth-CareCommunication supports text and attachment-based clinical communication (including documents and images) between healthcare parties over the VANS network.
 
 # Remarks about status and administrative-status
 
@@ -53,6 +53,6 @@ have a PractitionerRole representing that message.
 - The Communication identifier is the same for all Ehealth-CareCommunications of the same conversation. A new Communication Id is needed for a Forward message type, even though bundles from a prior conversation are included.
 - The MessageHeader identifier is set for received messages, as client-side assignment of id's is not possible. For messages sent from the FUT infrastructure, it is not needed. 
 The reasoning for the use of this identifier is that the correlating MedCom model for Ehealth-CareCommunications identifies specific messages based on the MessageHeader identifier.
-- inResponseTo has to be included for Reply messages. It points to the previous MessageHeader identifier in the conversation if present, otherwise Ehealth-CareCommunication.id.
+- inResponseTo has to be included for Reply messages. It references the previous ehealth-carecommunication resource in the conversation.
 - If category is other, the topic.text element has to be populated.
 - recipient can be excluded, which means the message is considered sent to the destination organization.

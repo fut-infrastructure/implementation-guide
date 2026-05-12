@@ -8,7 +8,7 @@
   "group": [
     {
       "source": "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category",
-      "target": "http://medcomfhir.dk/ig/terminology/ValueSet/medcom-careCommunication-categories",
+      "target": "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-careCommunication-categories",
       "element": [
         {
           "code": "alcohol-and-drug-treatment",
