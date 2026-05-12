@@ -12,7 +12,6 @@ Parent: Communication
     and only-asap-or-routine
     and topic-required-when-category-other
     and priority-category-invariant
-    and uuidv4
     and atLeastOnePayloadString
     and payloadAttachment-contentType-required
     and no-standard-sender
@@ -25,6 +24,7 @@ Parent: Communication
 * identifier ^slicing.rules = #open
 * identifier contains communicationId 1..1 MS and messageHeaderId 0..1 MS
 
+* identifier[communicationId] obeys uuidv4
 * identifier[communicationId].system 1..1 MS
 * identifier[communicationId].system = "http://ehealth.sundhed.dk/id/ehealth-carecommunication-identifier"
 * identifier[communicationId].use 0..1
@@ -37,8 +37,6 @@ Parent: Communication
 * identifier[messageHeaderId].system 1..1 MS
 * identifier[messageHeaderId].system = "http://ehealth.sundhed.dk/fhir/system/medcom-message-header-id"
 * identifier[messageHeaderId].value 1..1 MS
-* identifier[messageHeaderId].value ^short = "UUID v4 in URN form (urn:uuid:<uuid>)"
-* identifier[messageHeaderId].value ^definition = "The MessageHeader identifier as a UUID v4 in URN form. The URN form (urn:uuid:<uuid>) is used so the same UUID is byte-identical to Bundle.entry.fullUrl and references in the MedCom careCommunication Bundle this profile is aligned with."
 * identifier[messageHeaderId] ^short = "The ID of the originating MessageHeader resource"
 
 * status 1..1 MS
@@ -290,8 +288,8 @@ Expression: "category.coding.code = 'regarding-referral' or priority.empty()"
 Severity: #error
 
 Invariant: uuidv4
-Description: "Each identifier.value SHALL be a valid UUID v4 in URN form (urn:uuid:<uuid>)"
-Expression: "identifier.all(value.matches('^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$'))"
+Description: "identifier.value SHALL be a valid UUID v4 in URN form (urn:uuid:<uuid>)"
+Expression: "value.matches('^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$')"
 Severity: #error
 
 Invariant: atLeastOnePayloadString
