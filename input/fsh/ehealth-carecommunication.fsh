@@ -35,8 +35,6 @@ Parent: Communication
 
 * status 1..1 MS
 
-* statusReason from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-status-reason (required)
-
 * category 1..1 MS
 * category from http://ehealth.sundhed.dk/vs/ehealth-carecommunication-category (required)
 * category.coding 1..1 MS
@@ -67,7 +65,7 @@ Parent: Communication
 
 * extension contains ehealth-carecommunication-origin named origin 1..1 MS
 
-* extension contains ehealth-carecommunication-message-type named messageType 1..1 MS
+* extension contains ehealth-carecommunication-message-Type named messageType 1..1 MS
 
 * recipient 0..1
 * recipient only Reference(CareTeam or PractitionerRole)
@@ -75,7 +73,6 @@ Parent: Communication
 * recipient ^short = "The receiving actor of the message"
 
 * inResponseTo 0..1 MS
-* inResponseTo only Reference(ehealth-carecommunication)
 * inResponseTo ^short = "Reference to the previous ehealth-carecommunication resource this message is a response to."
 
 * sender 0..0
@@ -163,8 +160,8 @@ Description: "Reference to the sending organization for this payload segment."
 * . ^short = "Reference to the sending organization of the message"
 * value[x] only Reference(Organization)
 
-Extension: ehealth-carecommunication-message-type
-Id: ehealth-carecommunication-message-type
+Extension: ehealth-carecommunication-message-Type
+Id: ehealth-carecommunication-message-Type
 Title: "Message type"
 Description: "The type of the message. If inResponseTo is present, the type can not be new-message."
 * value[x] only Coding
@@ -211,10 +208,10 @@ Severity: #error
 
 Invariant: reply-requires-inResponseTo
 Description: "If messageType is 'reply-message', inResponseTo SHALL be populated."
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
 Severity: #error
 
 Invariant: sender-required-based-on-messagetype
 Description: "If messageType is 'new-message' or 'reply-message', the sender extension must be present. For 'forward-message', sender may be absent."
-Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
 Severity: #error
