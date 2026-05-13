@@ -37,6 +37,7 @@ Parent: Questionnaire
 * item.initial.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
+* item.enableWhen obeys que-7
 
 Extension: ehealth-questionnaire-sliderStepValueDecimal
 Title:     "Slider Step-value Decimal"
@@ -162,3 +163,14 @@ Invariant:   minOccurs-invalid-when-repeats-false
 Description: "minOccurs > 1 is invalid if repeats is false"
 Expression:  "extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').exists() and extension('http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs').value > 1 implies repeats = true"
 Severity:    #error
+
+// FUT1-23535: override the published R4 que-7 expression to use lowercase
+  // `boolean`. The upstream `answer is Boolean` is evaluated case-sensitively
+  // by the FHIRPath engine and never matches the FHIR primitive `boolean`, so
+  // every enableWhen with operator=exists is rejected. Lowercasing the type
+  // name makes the constraint behave as the human-readable text intends.
+  // Remove when HL7 publishes a corrected R4 base or we drop R4 support.
+  Invariant: que-7
+  Description: "If the operator is 'exists', the value must be a boolean"
+  Expression: "operator = 'exists' implies (answer is boolean)"
+  Severity: #error
