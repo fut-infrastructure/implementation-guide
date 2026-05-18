@@ -6,13 +6,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Custom operations
 #### System operations
 #### Instance operations
+- Added `Appointment/$send-message` instance operation for sending SMS messages to related persons associated with an appointment (CCR0316).
 ### Code systems
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
+- Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
+- Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
+- Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
+- Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
