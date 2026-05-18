@@ -51,3 +51,21 @@ Usage: #example
 * address.postalCode = "8000"
 * address.country = "Danmark"
 * period.start = "2026-03-24"
+
+Instance: relatedperson-videosms
+InstanceOf: ehealth-relatedperson
+Usage: #example
+Title: "RelatedPerson with video-appointment SMS reminder telecom"
+Description: "Example RelatedPerson configured to receive an SMS reminder when a related video appointment is upcoming. The telecom slice carries the `ehealth-telecom-purpose` extension with code `video-appointment-reminder-sms`."
+* active = true
+* patient = Reference(Patient/102)
+* relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* relationship.coding.code = #SPS
+* name.use = #official
+* name.family = "Test"
+* name.given = "RelatedPerson"
+* telecom[video-appointment-reminder-sms].system = #phone
+* telecom[video-appointment-reminder-sms].value = "+4512345678"
+* telecom[video-appointment-reminder-sms].extension[purpose].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose"
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.system = "http://ehealth.sundhed.dk/cs/telecom-purpose"
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.code = #video-appointment-reminder-sms

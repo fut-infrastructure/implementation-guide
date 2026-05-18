@@ -6,7 +6,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Custom operations
 #### System operations
 #### Instance operations
-- Added `Appointment/$send-message` instance operation for sending SMS messages to related persons associated with an appointment (CCR0316).
+- Added `Appointment/$send-message` instance operation for sending an SMS reminder to a RelatedPerson participant of a video appointment (CCR0316). The recipient must be a RelatedPerson listed as a participant on the target Appointment; only the `sms` channel is currently supported.
 ### Code systems
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
