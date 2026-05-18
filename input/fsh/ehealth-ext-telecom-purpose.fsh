@@ -7,5 +7,5 @@ Description: "The purpose of a telecom contact point on a RelatedPerson."
 * ^context.expression = "RelatedPerson.telecom"
 * . ^short = "Purpose of telecom contact point"
 * value[x] only Coding
-* valueCoding 0..1
+* valueCoding 1..1
 * valueCoding from http://ehealth.sundhed.dk/vs/telecom-purpose (required)

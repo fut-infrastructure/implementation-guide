@@ -6,7 +6,7 @@
   "title": "Send message",
   "status": "active",
   "kind": "operation",
-  "description": "Sends a message to a related person associated with an appointment via the specified channel.",
+  "description": "Sends a message to a related person associated with an appointment via the specified channel. The recipient must be a RelatedPerson listed as a participant on the target Appointment. The created ehealth-message resource is system-generated; its `sender` is expected to be a Device reference (typically a contained Device representing the issuing system).",
   "affectsState": true,
   "code": "send-message",
   "resource": [
