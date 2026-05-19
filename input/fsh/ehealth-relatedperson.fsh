@@ -23,6 +23,7 @@ Parent: RelatedPerson
 * telecom[video-appointment-reminder-sms].value 1..1
 * telecom[video-appointment-reminder-sms].extension contains ehealth-telecom-purpose named purpose 1..1
 * telecom[video-appointment-reminder-sms].extension[purpose].valueCoding from http://ehealth.sundhed.dk/vs/telecom-purpose (required)
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.code = #video-appointment-reminder-sms
 
 Instance: relatedperson01
 InstanceOf: RelatedPerson
