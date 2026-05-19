@@ -31,6 +31,8 @@ Parent: DkCorePatient
 * telecom[eBoks].rank 0..0
 
 * identifier[cpr] 1..1
+* identifier[x-ecpr] 0..0
+* identifier[d-ecpr] 0..0
 
 * gender 1..1
 * contact.extension contains ehealth-patient-contactnote named patientContactnote 0..*

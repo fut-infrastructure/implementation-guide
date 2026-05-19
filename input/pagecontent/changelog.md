@@ -13,6 +13,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- Excluded inherited `x-ecpr` and `d-ecpr` identifier slices from `ehealth-patient`. These slices were added on `DkCorePatient` in dk-core 3.x and flowed into `ehealth-patient` silently; FUT does not support electronic CPR identifiers, so both are now constrained to `0..0`. Real CPR identifiers (`identifier[cpr]`, system `urn:oid:1.2.208.176.1.2`) are unaffected.
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
