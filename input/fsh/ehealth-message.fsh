@@ -38,7 +38,7 @@ Parent: Communication
 * medium[DkTmMedium].coding.code from http://ehealth.sundhed.dk/vs/message-medium (required)
 
 * recipient 0..1
-* recipient only Reference(Patient or Practitioner)
+* recipient only Reference(Patient or Practitioner or ehealth-relatedperson)
 * recipient ^type.aggregation = #referenced
 * sender only Reference(Device or Patient or Practitioner)
 * sender ^type.aggregation[+] = #referenced
@@ -115,5 +115,5 @@ Severity:    #error
 
 Invariant:   advice-invariant
 Description: "Category advice invariant"
-Expression:  "category.coding.code contains 'advice' implies (recipient.reference.contains('Patient/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
+Expression:  "category.coding.code contains 'advice' implies (recipient.reference.contains('Patient/') or recipient.reference.contains('RelatedPerson/') or extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists()) and ( sender.reference.contains('Device/') or contained.ofType(Device).where('#' + id = %resource.sender.reference).empty().not())"
 Severity:    #error
