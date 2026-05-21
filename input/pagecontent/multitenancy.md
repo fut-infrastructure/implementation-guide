@@ -1,10 +1,22 @@
 The eHealth Infrastructure supports a softened form of multitenancy referred to as *coexistence*: multiple solutions share the same infrastructure while each solution decides when to search generically across the shared data and when to scope queries to its own data. The full description is maintained on the [wiki site](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/2355986433/Multitenancy).
 
-The mechanism rests on three elements:
+The mechanism rests on four elements:
 
 1. A *coexistence tag* assigned to each solution (or pair of citizen/employee solutions) by eHealth Infrastructure system administration (FUT-S). Tag values are short and neutral with respect to vendor, product name and version. Allowed values are defined in the [ehealth-system](CodeSystem-ehealth-system.html) CodeSystem.
-2. *Markup* applied by the creating solution — and in some cases by the infrastructure itself — when a resource is created.
-3. *Search* in which the solution chooses whether to constrain a query with one or more coexistence tags.
+2. A *coexistence scope* in the caller's access token, declaring which coexistence tags the solution is permitted to use.
+3. *Markup* applied by the creating solution — and in some cases by the infrastructure itself — when a resource is created.
+4. *Search* in which the solution chooses whether to constrain a query with one or more coexistence tags.
+
+### JWT Coexistence Scopes
+The coexistence tags a solution is permitted to use are carried as scopes in the `scope` claim of the access token issued by the eHealth Infrastructure. Each code in the [ehealth-system](CodeSystem-ehealth-system.html) CodeSystem has a corresponding scope, formatted as `system|code`:
+
+| tag | scope |
+|-----|-------|
+| `xa` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xa` |
+| `xb` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xb` |
+| `xc` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xc` |
+
+Solutions spanning multiple coexistence tags receive one scope entry per tag.
 
 ### Resource Markup
 Resources fall into four categories with respect to coexistence markup:
