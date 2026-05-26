@@ -124,7 +124,12 @@
           },
           {
             "code": "DZ76"
-          },
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
           {
             "code": "413307004"
           }
