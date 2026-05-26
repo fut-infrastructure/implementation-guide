@@ -38,6 +38,11 @@ Parent: Questionnaire
 * item.answerOption.value[x].extension contains http://hl7.org/fhir/StructureDefinition/rendering-xhtml named xhtml 0..1
 * item.enableBehavior.extension contains ehealth-enableBehavior-conditionId named conditionId 0..1
 
+//FUT1-23535: Redirect the recursive nested-item contentReference from the upstream base Questionnaire SD to this profile's own item element.
+// Rewriting the contentReference to the same-document anchor `#Questionnaire.item`keeps resolution inside this profile, so nested items pick up the patched
+// que-7 (and extensions added to Questionnaire.item).
+* item.item ^contentReference = "#Questionnaire.item"
+
 Extension: ehealth-questionnaire-sliderStepValueDecimal
 Title:     "Slider Step-value Decimal"
 Description: "Defines a decimal number step-value for the slider in the questionnaire."
