@@ -298,8 +298,8 @@ Expression: "payload.contentString.exists()"
 Severity: #error
 
 Invariant: payloadAttachment-contentType-required
-Description: "contentType SHALL be present if data or url is present in Attachment"
-Expression: "payload.contentAttachment.data.exists() or payload.contentAttachment.url.exists() implies payload.contentAttachment.contentType.exists()"
+Description: "contentType SHALL be present when the attachment content is in the data element. It is not required for url-only attachments."
+Expression: "payload.contentAttachment.data.exists() implies payload.contentAttachment.contentType.exists()"
 Severity: #error
 
 Invariant: no-standard-sender
