@@ -19,7 +19,7 @@ Parent: RelatedPerson
 * telecom ^slicing.discriminator.path = "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose').value.ofType(Coding).code"
 * telecom ^slicing.rules = #open
 * telecom contains video-appointment-reminder-sms 0..1
-* telecom[video-appointment-reminder-sms].system = #phone
+* telecom[video-appointment-reminder-sms].system = #sms
 * telecom[video-appointment-reminder-sms].value 1..1
 * telecom[video-appointment-reminder-sms].extension contains ehealth-telecom-purpose named purpose 1..1
 * telecom[video-appointment-reminder-sms].extension[purpose].valueCoding from http://ehealth.sundhed.dk/vs/telecom-purpose (required)
@@ -65,7 +65,7 @@ Description: "Example RelatedPerson configured to receive an SMS reminder when a
 * name.use = #official
 * name.family = "Test"
 * name.given = "RelatedPerson"
-* telecom[video-appointment-reminder-sms].system = #phone
+* telecom[video-appointment-reminder-sms].system = #sms
 * telecom[video-appointment-reminder-sms].value = "+4512345678"
 * telecom[video-appointment-reminder-sms].extension[purpose].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose"
 * telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.system = "http://ehealth.sundhed.dk/cs/telecom-purpose"
