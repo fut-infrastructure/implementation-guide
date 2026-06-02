@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Release 2026.3. todo: change to semver format before release
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
+- Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
 ### Custom operations
 #### System operations
 #### Instance operations
