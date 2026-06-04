@@ -12,10 +12,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
+- Added `DI48` (Atrieflagren og atrieflimren) to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem 
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
+- Added `DI48` (Atrieflagren og atrieflimren) to `http://ehealth.sundhed.dk/vs/conditions`
+- Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
