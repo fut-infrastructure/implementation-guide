@@ -17,7 +17,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 - Added `DI48` (Atrieflagren og atrieflimren) to `http://ehealth.sundhed.dk/vs/conditions`
-- Added `413307004` to `http://ehealth.sundhed.dk/vs/conditions`
+- Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
 ### ConceptMaps
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
