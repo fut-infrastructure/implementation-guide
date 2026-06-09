@@ -94,7 +94,7 @@ Extension:   ehealth-clinicalimpression-otherItem
 Title:       "Other item"
 Description: "Investigation item for Aggregated Triage resources so they can be approved."
 * . ^short = "Other item"
-* value[x] only Reference(ehealth-clinicalimpression or ehealth-provenance or ehealth-observation or ehealth-questionnaireresponse or ehealth-media)
+* value[x] only Reference(ehealth-clinicalimpression or ehealth-provenance)
 * value[x] ^type.aggregation = #referenced
 
 Extension:   ehealth-questionnaireresponse-finding-basis
