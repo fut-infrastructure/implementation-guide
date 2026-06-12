@@ -19,6 +19,15 @@ The Ehealth-CareCommunication's primary feature is to enable communication in re
 - __administrative-status__ (extension): Makes it possible for the message __recipient__ to indicate the state of a message. A message may hold an administrative status that defines the last action the recipient took on the message in question. At first, the message has administrative-status "activate". The recipient may mark the message as read by setting administrative-status "read". If the recipient considers the message a sort of "task", the message may also be updated with
   administrative-status "complete" when the task is done, or "reactivate" if the task was not complete anyway.
 
+# Search parameters
+
+The following custom search parameters may be used when searching for ehealth-CareCommunication instances:
+
+- __administrativeStatus__: Specify the desired administrative status using system and code (eg. "http://ehealth.sundhed.dk/cs/administrative-status" and "read")
+- __careCommunicationSenderPractitioner__: Specify an absolute reference to the Practitioner that must be the sender of the message (the Practitioner linked in the sender extension)
+- __communicationCategory__: Specify the desired category using system and code (eg. "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category" and "nursing")
+- __topic__: Specify the desired topic. For CareCommunication the topic is provided as free text (topic.text), so use a text search
+
 # Scope and Usage
 
 In the eHealth Infrastructure the ehealth-CareCommunication resource is used in conjunction with the 
