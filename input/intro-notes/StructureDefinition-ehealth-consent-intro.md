@@ -40,18 +40,67 @@ A Consent of category **behavior-by-policy** with `Consent.policy.uri = "http://
 
 A Consent recording this decision is expressed with the following elements:
 
-| Element                                          | Value                                                                  | Description                                                                                                                                                                                                   |
-|--------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Consent.category`                               | `http://ehealth.sundhed.dk/cs/consent-category#behavior-by-policy`     | Marks this Consent as expressing a behavior governed by a policy.                                                                                                                                             |
-| `Consent.scope`                                  | `http://ehealth.sundhed.dk/cs/ehealth-consent-scope#behavior`          | The scope of the Consent.                                                                                                                                                                                     |
-| `Consent.policy.uri`                             | `http://ehealth.sundhed.dk/policy/ehealth/display-triage-result`       | The policy being decided on, i.e. display of triage results.                                                                                                                                                  |
-| `Consent.extension[ehealth-consent-affiliation]` | Reference to `EpisodeOfCare`, and optionally also `CarePlan`           | The care context level(s) the decision applies to. See [Affiliation](#affiliation).                                                                                                                           |
-| `Consent.patient`                                | Reference to the Patient                                               | The Patient who is the subject of this Consent.                                                                                                                                                               |
-| `Consent.provision.type`                         | `permit`                                                               | Records that triage results **may** be displayed to the Patient.                                                                                                                                              |
-| `Consent.provision.class`                        | `http://hl7.org/fhir/resource-types#ClinicalImpression`                | The type of data the decision is about.                                                                                                                                                                       |
-| `Consent.provision.code`                         | `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` | The specific kind of data the decision is about.                                                                                                                                                              |
-| `Consent.provision.period`                       | A (possibly open-ended) period                                         | The validity period of the decision. As with the decision itself, the infrastructure stores this period but does not act on or enforce it.                                                                    |
-| `Consent.status`                                 | `active`                                                               | The infrastructure does not act on the status for this category, so deciding which statuses to treat as a current decision (e.g. only `active`) is the responsibility of the consuming Telemedicine Solution. |
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Consent.category</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/consent-category#behavior-by-policy</code></td>
+      <td>Marks this Consent as expressing a behavior governed by a policy.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.scope</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/ehealth-consent-scope#behavior</code></td>
+      <td>The scope of the Consent.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.policy.uri</code></td>
+      <td><code>http://ehealth.sundhed.dk/policy/ehealth/display-triage-result</code></td>
+      <td>The policy being decided on, i.e. display of triage results.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.extension[ehealth-consent-affiliation]</code></td>
+      <td>Reference to <code>EpisodeOfCare</code>, and optionally also <code>CarePlan</code></td>
+      <td>The care context level(s) the decision applies to. See <a href="#affiliation">Affiliation</a>.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.patient</code></td>
+      <td>Reference to the Patient</td>
+      <td>The Patient who is the subject of this Consent.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.type</code></td>
+      <td><code>permit</code></td>
+      <td>Records that triage results <strong>may</strong> be displayed to the Patient.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.class</code></td>
+      <td><code>http://hl7.org/fhir/resource-types#ClinicalImpression</code></td>
+      <td>The type of data the decision is about.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.code</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult</code></td>
+      <td>The specific kind of data the decision is about.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.period</code></td>
+      <td>A (possibly open-ended) period</td>
+      <td>The validity period of the decision. As with the decision itself, the infrastructure stores this period but does not act on or enforce it.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.status</code></td>
+      <td><code>active</code></td>
+      <td>The infrastructure does not act on the status for this category, so deciding which statuses to treat as a current decision (e.g. only <code>active</code>) is the responsibility of the consuming Telemedicine Solution.</td>
+    </tr>
+  </tbody>
+</table>
 
 When the affiliation extension is used, the infrastructure validates the following on create and update — if any check fails, the Consent is rejected:
 - The Consent must carry the `http://ehealth.sundhed.dk/policy/ehealth/display-triage-result` policy.
