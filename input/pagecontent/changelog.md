@@ -25,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added `MCS88214` to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
+- Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
