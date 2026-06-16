@@ -25,6 +25,7 @@ The following custom search parameters may be used when searching for ehealth-Ca
 
 - __administrativeStatus__: Specify the desired administrative status using system and code (eg. "http://ehealth.sundhed.dk/cs/administrative-status" and "read")
 - __careCommunicationSenderPractitioner__: Specify an absolute reference to the Practitioner that must be the sender of the message (the Practitioner linked in the sender extension)
+- __careCommunicationSenderCareTeam__: Specify an absolute reference to the CareTeam that is the sender of the message (the CareTeam linked in the sender extension)
 - __communicationCategory__: Specify the desired category using system and code (eg. "http://ehealth.sundhed.dk/cs/ehealth-carecommunication-category" and "nursing")
 - __topic__: Specify the desired topic. For CareCommunication the topic is provided as free text (topic.text), so use a text search
 
