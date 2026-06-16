@@ -19,7 +19,7 @@ eHealth operates with three categories of consents:
 
 2. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
-3. Category **behavior-by-policy**: A decision, recorded by a Practitioner, of whether triage results may be displayed to the Patient. Unlike PITEOC and SSLPCI, this is not a consent given by the Patient; it is a policy-driven behaviour marker that controls what the citizen-facing Telemedicine Solution may show to the Patient. The decision is scoped to a care pathway (EpisodeOfCare) and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation)  below for details.
+3. Category **behavior-by-policy**: A policy-driven behaviour marker that records whether an actor is permitted or denied a behaviour, where the concrete behaviour is identified by the `Consent.policy.uri`. Unlike PITEOC and SSLPCI, a behavior-by-policy Consent is not necessarily a consent given by the Patient — it is typically recorded by a Practitioner. The behaviour can be scoped to a care pathway (EpisodeOfCare) and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. The policies that can be expressed are defined in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html). At present, the only defined policy controls whether triage results may be displayed to the Patient; additional policies may be added in the future. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation) below for details of that policy.
 
 Consents of category **PITEOC** are expressed by creating a Consent resource with:
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
@@ -31,7 +31,10 @@ Consents of category **SSLPCI** are expressed by creating a Consent resource wit
 
 Consents of category **behavior-by-policy** are expressed by creating a Consent resource with:
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
-- `Consent.category.coding.code = "behavior-by-policy"`.
+- `Consent.category.coding.code = "behavior-by-policy"`
+- `Consent.policy.uri` set to the policy that defines the behaviour being decided. The policy must be one of those in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html) - it is the policy that gives the Consent its concrete meaning.
+
+The remaining elements to set depend on the specific policy. For the currently defined policy, see [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) below.
 
 ### Controlling display of triage results to the Patient
 A Consent of category **behavior-by-policy** with `Consent.policy.uri = "http://ehealth.sundhed.dk/policy/ehealth/display-triage-result"` is used to record the decision of whether triage results may be displayed to the Patient. The decision can be recorded at the EpisodeOfCare level and/or at the CarePlan level by use of the [ehealth-consent-affiliation](#affiliation) extension.
