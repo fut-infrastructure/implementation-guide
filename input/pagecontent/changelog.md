@@ -76,6 +76,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added search parameter "qualification-period" for Practitioner resources, to be able to query Practitioners with a specific qualification period (CCR0298).
 - Added search parameter "qualification-identifier" for Practitioner resources, to be able to query Practitioners with a specific qualification identifier (CCR0298).
 - Added search parameter `careCommunicationSenderPractitioner` on `ehealth-communication` to query CareCommunication by the sending Practitioner (the `practitioner` sub-extension of the `ehealth-carecommunication-sender` extension).
+- Added search parameter `careCommunicationSenderCareTeam` on `ehealth-communication` to query CareCommunication by the sending CareTeam (the `careTeam` sub-extension of the `ehealth-carecommunication-sender` extension).
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; all message fields (`messageType`, `messageVersion`, `ehealth.system`, `eventType`, `payload`, `userReference`, `resourceReference`) are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
