@@ -105,6 +105,8 @@ A Consent recording this decision is expressed with the following elements:
   </tbody>
 </table>
 
+> The elements above are those that give this policy its meaning; the list is **not exhaustive**. As for any Consent, additional elements should be set as appropriate. In particular, it is recommended to also set `Consent.performer` (the actor recording/agreeing the decision) and `Consent.organization` (the custodian Organization responsible for the Consent). These have been omitted from the example above for brevity.
+
 When the affiliation extension is used, the infrastructure validates the following on create and update — if any check fails, the Consent is rejected:
 - The Consent must carry the `http://ehealth.sundhed.dk/policy/ehealth/display-triage-result` policy.
 - Exactly one `EpisodeOfCare` affiliation must be present, and it must match the `EpisodeOfCare` in the creating Practitioner's security context.
