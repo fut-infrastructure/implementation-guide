@@ -17,6 +17,7 @@ Parent: Communication
     and no-standard-sender
     and sender-required-based-on-messagetype
     and reply-requires-inResponseTo
+    and forward-prohibits-inResponseTo
 
 * identifier 1..2 MS
 * identifier ^slicing.discriminator.type = #value
@@ -164,7 +165,7 @@ Description: "Reference to the sending organization for this payload segment."
 
 Extension: ehealth-carecommunication-message-Type
 Title: "Message type"
-Description: "The type of the message. If inResponseTo is present, the type can not be new-message."
+Description: "The type of the message. inResponseTo is only allowed when the type is reply-message."
 * value[x] only Coding
 * valueCoding from MessageType (required)
 * . ^short = "Message type"
@@ -310,6 +311,11 @@ Severity: #error
 Invariant: reply-requires-inResponseTo
 Description: "If messageType is 'reply-message', inResponseTo SHALL be populated."
 Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
+Severity: #error
+
+Invariant: forward-prohibits-inResponseTo
+Description: "If messageType is 'forward-message', inResponseTo SHALL be empty."
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'forward-message').exists() implies inResponseTo.empty()"
 Severity: #error
 
 Invariant: sender-required-based-on-messagetype
