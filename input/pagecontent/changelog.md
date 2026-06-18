@@ -19,6 +19,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `MCS88050` (Rejse sætte sig testen(30 sek.)) in `urn:oid:1.2.208.184.100.8` to be defined specific for 30 seconds, since the 60 second version has been added.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-unit-code` to include new unit for 1/60sec for `MCS88214` 
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
+- Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
@@ -28,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `MCS88214` to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
 - Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
@@ -40,6 +42,13 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
+- Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
+- Added extension ehealth-aggregate-group-id to ehealth-plandefinition profile
+- Added extension ehealth-aggregation-mode to ehealth-library profile bound to http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
+
+### Search parameters
+- Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
+- Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
