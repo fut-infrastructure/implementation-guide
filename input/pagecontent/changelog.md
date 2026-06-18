@@ -36,6 +36,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
 
 ### Resource/profile changes
+- Fixed the `identifier.system` pattern on the `YderNummer` slice of `ehealth-patient.generalPractitioner` from `urn:oid.1.2.208.176.1.4` to `urn:oid:1.2.208.176.1.4`, so Ydernummer references are correctly matched to the slice.
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
 - Added search parameter `careCommunicationSenderPractitioner` on `ehealth-communication` to query CareCommunication by the sending Practitioner (the `practitioner` sub-extension of the `ehealth-carecommunication-sender` extension).
