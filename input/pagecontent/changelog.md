@@ -57,6 +57,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214` and `mmol/L`.
 - Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
+- Fixed the `identifier.system` pattern on the `YderNummer` slice of `ehealth-patient.generalPractitioner` from `urn:oid.1.2.208.176.1.4` to `urn:oid:1.2.208.176.1.4`, so Ydernummer references are correctly matched to the slice.
 - Added extension `ehealth-managing-organization` to `ehealth-episodeofcare`, holding an organization reference and a period, to support multiple managing organizations (data controllers) over time (CCR0333). The period end is optional — an open-ended period marks the currently responsible data controller.
 - Removed `EpisodeOfCare.managingOrganization` (constrained to `0..0`) from `ehealth-episodeofcare`, superseded by the `ehealth-managing-organization` extension (CCR0333). **Note for vendors:** this is a breaking change — the managing organization must now be read from and written to the extension instead of the standard element.
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
