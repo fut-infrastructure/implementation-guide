@@ -24,7 +24,8 @@
       { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "O",        "display": "Operator Proficiency" },
       { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "CHILD",    "display": "child" },
       { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "SPS",      "display": "spouse" },
-      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "POWATT",   "display": "power of attorney" }
+      { "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode", "code": "POWATT",   "display": "power of attorney" },
+      { "system": "http://ehealth.sundhed.dk/cs/poa-privilege", "abstract": true, "display": "Vendor-specific PoA privilege codes (externally governed, not enumerated)" }
     ]
   },
   "compose": {
@@ -72,6 +73,9 @@
             "code": "POWATT"
           }
         ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/poa-privilege"
       }
     ]
   }

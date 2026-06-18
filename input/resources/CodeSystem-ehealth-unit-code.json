@@ -35,6 +35,17 @@
       ]
     },
     {
+      "code": "1/60sec",
+      "display": "one per 60 seconds",
+      "definition": "Number of occurrences in 60 seconds",
+      "designation": [
+        {
+          "language": "da",
+          "value": "1/ 60 sek"
+        }
+      ]
+    },
+    {
       "code": "percentpoint",
       "display": "percent point",
       "definition": "Percentage point",

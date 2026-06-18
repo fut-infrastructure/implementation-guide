@@ -142,6 +142,16 @@
       ]
     },
     {
+      "code" : "1/60sec",
+      "display" : "one per 60 seconds",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "1/ 60sek"
+        }
+      ]
+    },
+    {
       "code" : "1/min",
       "display" : "one per minute",
       "designation" : [
