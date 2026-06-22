@@ -16,6 +16,7 @@ Parent: Communication
     and payloadAttachment-contentType-required
     and no-standard-sender
     and sender-required-based-on-messagetype
+    and sender-contactPoint-required-based-on-messagetype
     and reply-requires-inResponseTo
     and forward-prohibits-inResponseTo
 
@@ -324,4 +325,12 @@ If messagetype is 'new' or 'reply', the sender extension must be present.
 If 'forward', sender may be absent.
 """
 Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Severity: #error
+
+Invariant: sender-contactPoint-required-based-on-messagetype
+Description: """
+If messagetype is 'new' or 'reply', the sender extension must carry a contactPoint.
+If 'forward', it may be absent. Mirrors MedCom's required authorContact on the outbound message.
+"""
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').extension('contactPoint').exists()"
 Severity: #error
