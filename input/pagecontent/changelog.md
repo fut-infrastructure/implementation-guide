@@ -4,26 +4,52 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
+- Updated the ehealth-consent introduction "Registration of Consent" section to document the `behavior-by-policy` consent category and how to record the decision of whether triage results may be displayed to the Patient (policy `display-triage-result`), including the required `category`, `scope`, `policy.uri`, `provision` elements and the affiliation level (CCR0198).
+- Fixed the `Consent/23` example so `provision.code` uses `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` (a code valid against the required `provision.code` binding) and added `provision.type = permit`.
 ### Custom operations
 #### System operations
 #### Instance operations
 - Added definition for `-s-assigned-material-count` operation
-- Added `Appointment/$send-message` instance operation for sending an SMS reminder to a RelatedPerson participant of a video appointment (CCR0316). The recipient must be a RelatedPerson listed as a participant on the target Appointment; only the `sms` channel is currently supported.
+- Added `Appointment/$send-message` instance operation for sending an SMS reminder to a RelatedPerson participant of a video appointment (CCR0316). The recipient must be a RelatedPerson participant on the target Appointment; only the `sms` channel is currently supported. The operation returns the created [ehealth-message](StructureDefinition-ehealth-message.html) Communication, with `status` `completed` on success or `stopped` when the downstream gateway rejected the send. Validation preconditions (appointment profile/status, participant status, RelatedPerson active/period/telecom-purpose) are documented on the [OperationDefinition](OperationDefinition-Appointment-send-message.html).
 ### Code systems
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 - Added `DI48` (Atrieflagren og atrieflimren) to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem 
+- Added `MCS88214` (Rejse sætte sig testen(60 sek.)) to `urn:oid:1.2.208.184.100.8` 
+- Updated `MCS88050` (Rejse sætte sig testen(30 sek.)) in `urn:oid:1.2.208.184.100.8` to be defined specific for 30 seconds, since the 60 second version has been added.
+- Updated `http://ehealth.sundhed.dk/cs/ehealth-unit-code` to include new unit for 1/60sec for `MCS88214` 
+- Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
+- Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 - Added `DI48` (Atrieflagren og atrieflimren) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
+- Added `MCS88214` to `http://ehealth.sundhed.dk/vs/observation-codes`
+- Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
+- Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
 ### ConceptMaps
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
+
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
+- Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
+- Added extension ehealth-aggregate-group-id to ehealth-plandefinition profile
+- Added extension ehealth-aggregation-mode to ehealth-library profile bound to http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
+
+### Search parameters
+- Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
+- Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
