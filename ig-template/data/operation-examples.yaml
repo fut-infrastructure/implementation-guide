@@ -92,6 +92,9 @@
 - profile: system
   path: POST_fhir.html
 
+- profile: system
+  path: POST_assigned-material-count.html
+
 # system reporting
 
 - profile: system
