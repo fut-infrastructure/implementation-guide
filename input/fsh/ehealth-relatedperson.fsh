@@ -12,8 +12,18 @@ Parent: RelatedPerson
 
 * patient only Reference(ehealth-patient)
 * patient ^type.aggregation = #referenced
-* relationship.coding from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype
+* relationship.coding from http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype (extensible)
 * name 1..*
+
+* telecom ^slicing.discriminator.type = #value
+* telecom ^slicing.discriminator.path = "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose').value.ofType(Coding).code"
+* telecom ^slicing.rules = #open
+* telecom contains video-appointment-reminder-sms 0..1
+* telecom[video-appointment-reminder-sms].system = #sms
+* telecom[video-appointment-reminder-sms].value 1..1
+* telecom[video-appointment-reminder-sms].extension contains ehealth-telecom-purpose named purpose 1..1
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding from http://ehealth.sundhed.dk/vs/telecom-purpose (required)
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.code = #video-appointment-reminder-sms
 
 Instance: relatedperson01
 InstanceOf: RelatedPerson
@@ -42,3 +52,21 @@ Usage: #example
 * address.postalCode = "8000"
 * address.country = "Danmark"
 * period.start = "2026-03-24"
+
+Instance: relatedperson-videosms
+InstanceOf: ehealth-relatedperson
+Usage: #example
+Title: "RelatedPerson with video-appointment SMS reminder telecom"
+Description: "Example RelatedPerson configured to receive an SMS reminder when a related video appointment is upcoming. The telecom slice carries the `ehealth-telecom-purpose` extension with code `video-appointment-reminder-sms`."
+* active = true
+* patient = Reference(Patient/102)
+* relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* relationship.coding.code = #SPS
+* name.use = #official
+* name.family = "Test"
+* name.given = "RelatedPerson"
+* telecom[video-appointment-reminder-sms].system = #sms
+* telecom[video-appointment-reminder-sms].value = "+4512345678"
+* telecom[video-appointment-reminder-sms].extension[purpose].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-telecom-purpose"
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.system = "http://ehealth.sundhed.dk/cs/telecom-purpose"
+* telecom[video-appointment-reminder-sms].extension[purpose].valueCoding.code = #video-appointment-reminder-sms

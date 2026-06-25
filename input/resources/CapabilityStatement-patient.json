@@ -751,7 +751,8 @@
           "supportedProfile": [
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication",
             "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-material-communication",
-            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message"
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-message",
+            "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication"
           ],
           "interaction": [
             {
