@@ -21,6 +21,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-unit-code` to include new unit for 1/60sec for `MCS88214` 
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
+- Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
@@ -31,6 +32,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
 - Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
 - Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
+- Added Snomed code `1187059002` (Smartphone) to `http://ehealth.sundhed.dk/vs/device-types`.
+- Added `http://ehealth.sundhed.dk/vs/device-platform`
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
@@ -46,6 +49,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
 - Added extension ehealth-aggregate-group-id to ehealth-plandefinition profile
 - Added extension ehealth-aggregation-mode to ehealth-library profile bound to http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
+- Added extension ehealth-device-registrationToken to ehealth-device profile for storing the registration token from a push notification service (FCM/APNs).
+- Added extension ehealth-device-platform to to ehealth-device profile bound to http://ehealth.sundhed.dk/vs/device-platform for the push notification service
+- Updated ehealth-deviceusestatement to relaxed the Context extension cardinality from 1..1 to 0..1. The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
 
 ### Search parameters
 - Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
@@ -675,8 +681,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2.7.0 (2023-03-29)
 
 ### General changes
-- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from 
-13.
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
 - Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations
