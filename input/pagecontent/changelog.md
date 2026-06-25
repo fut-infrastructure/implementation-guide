@@ -4,6 +4,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
+- Updated intro notes for ehealth-organization to clarify usage of contained endpoint resources for GLN/EAN identifiers.
 ### Custom operations
 #### System operations
 #### Instance operations
