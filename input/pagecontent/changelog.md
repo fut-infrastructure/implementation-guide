@@ -6,6 +6,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
 - Updated the ehealth-consent introduction "Registration of Consent" section to document the `behavior-by-policy` consent category and how to record the decision of whether triage results may be displayed to the Patient (policy `display-triage-result`), including the required `category`, `scope`, `policy.uri`, `provision` elements and the affiliation level (CCR0198).
 - Fixed the `Consent/23` example so `provision.code` uses `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` (a code valid against the required `provision.code` binding) and added `provision.type = permit`.
+- Updated intro notes for ehealth-organization to clarify usage of contained endpoint resources for GLN/EAN identifiers.
 ### Custom operations
 #### System operations
 #### Instance operations
