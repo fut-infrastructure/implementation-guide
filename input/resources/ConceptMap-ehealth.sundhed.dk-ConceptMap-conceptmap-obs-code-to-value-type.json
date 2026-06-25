@@ -191,7 +191,6 @@
         },
         {
           "code": "MCS88050",
-          "display": "Rejse sætte sig testen;Pt",
           "target": [
             {
               "code": "integer",
@@ -240,6 +239,17 @@
         {
           "code": "MCS88194",
           "display": "Skridt;Pt",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MCS88214",
           "target": [
             {
               "code": "integer",

@@ -244,11 +244,27 @@
       "element": [
         {
           "code": "MCS88050",
-          "display": "Rejse sætte sig testen;Pt",
           "target": [
             {
               "code": "1/30sec",
               "display": "one per 30 seconds",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "urn:oid:1.2.208.184.100.8",
+      "target": "http://ehealth.sundhed.dk/cs/ehealth-unit-code",
+      "element": [
+        {
+          "code": "MCS88214",
+          "target": [
+            {
+              "code": "1/60sec",
+              "display": "one per 60 seconds",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
