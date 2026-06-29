@@ -681,6 +681,36 @@
           ]
         },
         {
+          "code": "DG83",
+          "display": "Andre syndromer med lammelse",
+          "concept": [
+            {
+              "code": "DG834",
+              "display": "Cauda equina-syndrom",
+              "concept": [
+                {
+                  "code": "DG834B",
+                  "display": "Neurogen claudicatio intermittens",
+                  "designation": [
+                    {
+                      "language": "da",
+                      "use": {
+                        "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
+                        "code": "consumer"
+                      },
+                      "value": "Neurogen claudicatio intermittens"
+                    },
+                    {
+                      "language": "da",
+                      "value": "Neurogen claudicatio intermittens"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "code": "DI20",
           "display": "Angina pectoris",
           "concept": [
@@ -823,12 +853,48 @@
           ]
         },
         {
+          "code": "DI34",
+          "display": "Ikke-reumatiske sygdomme i mitralklappen",
+          "concept": [
+            {
+              "code": "DI340",
+              "display": "Mitralinsufficiens"
+            }
+          ]
+        },
+        {
+          "code": "DI35",
+          "display": "Ikke-reumatiske sygdomme i aortaklappen",
+          "concept": [
+            {
+              "code": "DI350",
+              "display": "Aortastenose"
+            }
+          ]
+        },
+        {
           "code": "DI48",
           "display": "Atrieflagren og atrieflimren"
         },
         {
           "code": "DI50",
           "display": "Hjertesvigt"
+        },
+        {
+          "code": "DI51",
+          "display": "Dårligt definerede hjertesygdomme og komplikationer til hjertesygdomme",
+          "concept": [
+            {
+              "code": "DI511",
+              "display": "Ruptur af chordae tendineae IKA",
+              "concept": [
+                {
+                  "code": "DI511A",
+                  "display": "Mitralklapinsufficiens ved chordaruptur"
+                }
+              ]
+            }
+          ]
         },
         {
           "code": "DI70",
@@ -847,6 +913,38 @@
             {
               "code": "DI708",
               "display": "Aterosklerose i anden arterie"
+            }
+          ]
+        },
+        {
+          "code": "DI71",
+          "display": "Aorta-aneurisme og aortadissektion",
+          "concept": [
+            {
+              "code": "DI719",
+              "display": "Aorta-aneurisme UNS uden ruptur",
+              "concept": [
+                {
+                  "code": "DI719A",
+                  "display": "Dilateret aorta"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DI73",
+          "display": "Andre sygdomme i perifere kar",
+          "concept": [
+            {
+              "code": "DI739",
+              "display": "Sygdom i perifere kar UNS ",
+              "concept": [
+                {
+                  "code": "DI739A",
+                  "display": "Claudicatio intermittens"
+                }
+              ]
             }
           ]
         },
@@ -961,6 +1059,10 @@
               ]
             }
           ]
+        },
+        {
+          "code": "DJ45",
+          "display": "Astma"
         },
         {
           "code": "DL02",
@@ -1373,12 +1475,66 @@
           ]
         },
         {
+          "code": "DM16",
+          "display": "Slidgigt i hofte"
+        },
+        {
+          "code": "DM17",
+          "display": "Slidgigt i knæ"
+        },
+        {
+          "code": "DM54",
+          "display": "Rygsmerter"
+        },
+        {
           "code": "DM72",
           "display": "Fibroblastsygdomme",
           "concept": [
             {
               "code": "DM726",
               "display": "Nekrotiserende bløddelsinfektion"
+            }
+          ]
+        },
+        {
+          "code": "DQ23",
+          "display": "Medfødte misdannelser af aorta- og mitralklapperne",
+          "concept": [
+            {
+              "code": "DQ231",
+              "display": "Medfødt aortaklapinsufficiens",
+              "concept": [
+                {
+                  "code": "DQ231A",
+                  "display": "Valvula aortae bicuspidalis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DQ23",
+          "display": "Medfødte misdannelser af aorta- og mitralklapperne",
+          "concept": [
+            {
+              "code": "DQ231",
+              "display": "Medfødt aortaklapinsufficiens",
+              "concept": [
+                {
+                  "code": "DQ231A",
+                  "display": "Valvula aortae bicuspidalis"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "DQ25",
+          "display": "Medfødte misdannelser i de store arterier",
+          "concept": [
+            {
+              "code": "DQ251",
+              "display": "Coarctatio aortae"
             }
           ]
         },
@@ -2045,6 +2201,16 @@
             {
               "code": "DZ945",
               "display": "Hudtransplanteret"
+            }
+          ]
+        },
+        {
+          "code": "DZ95",
+          "display": "Tilstand med hjerte- eller karimplantater og -transplantater",
+          "concept": [
+            {
+              "code": "DZ952",
+              "display": "Tilstand med kunstig hjerteklap"
             }
           ]
         }
