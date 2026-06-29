@@ -7,6 +7,7 @@ Parent: DkCorePractitioner
 //* qualification.issuer ^type.aggregation = #referenced
 * qualification.issuer ^type[0].targetProfile[0] = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
 * qualification.issuer ^type[0].aggregation[0] = #referenced
+* qualification.code from http://ehealth.sundhed.dk/vs/practitioner-competences (required)
 * extension contains ehealth-provider-affiliation named providerAffiliation 0..*
 
 Extension: ehealth-provider-affiliation
