@@ -9,7 +9,7 @@ Parent: DkCorePractitioner
 * qualification.issuer ^type[0].aggregation[0] = #referenced
 * extension contains ehealth-provider-affiliation named providerAffiliation 0..*
 * qualification contains decentralizedCompetence 0..*
-* qualification[decentralizedCompetence].identifier.system = "https://ehealth.decentralized.competence" (exactly)
+* qualification[decentralizedCompetence].identifier.system = "https://decentralizedCompetence.ehealth.sundhed.dk" (exactly)
 * qualification[decentralizedCompetence].code from http://ehealth.sundhed.dk/vs/practitioner-competences (required)
 
 Extension: ehealth-provider-affiliation
