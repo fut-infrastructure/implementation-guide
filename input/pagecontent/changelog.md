@@ -24,6 +24,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
+- Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
