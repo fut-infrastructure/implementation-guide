@@ -55,7 +55,8 @@ Description: "An organization that has assumed responsibility for the episode of
 * extension[period].value[x] only Period
 * extension[period].valuePeriod 1..1
 * extension[period].valuePeriod.start 1..1
-* extension[period].valuePeriod.end 1..1
+// end is optional: an open-ended period marks the currently responsible data controller (CCR0333 AK4)
+* extension[period].valuePeriod.end 0..1
 
 Instance: EpisodeOfCare/42
 InstanceOf: ehealth-episodeofcare
