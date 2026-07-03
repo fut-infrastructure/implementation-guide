@@ -17,12 +17,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 - Added `DI48` (Atrieflagren og atrieflimren) to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem 
+- Added additional condition codes to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem: `DG834B` (Neurogen claudicatio intermittens), `DI340` (Mitralinsufficiens), `DI350` (Aortastenose), `DI511A` (Mitralklapinsufficiens ved chordaruptur), `DI719A` (Dilateret aorta), `DI739A` (Claudicatio intermittens), `DJ45` (Astma), `DM16` (Slidgigt i hofte), `DM17` (Slidgigt i knæ), `DM54` (Rygsmerter), `DQ231` (Medfødt aortaklapinsufficiens), `DQ231A` (Valvula aortae bicuspidalis), `DQ251` (Coarctatio aortae) and `DZ952` (Tilstand med kunstig hjerteklap).
 - Added `MCS88214` (Rejse sætte sig testen(60 sek.)) to `urn:oid:1.2.208.184.100.8` 
 - Updated `MCS88050` (Rejse sætte sig testen(30 sek.)) in `urn:oid:1.2.208.184.100.8` to be defined specific for 30 seconds, since the 60 second version has been added.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-unit-code` to include new unit for 1/60sec for `MCS88214` 
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
+- Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
 - Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
 - Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:role:...` and `http://ehealth.seb.dk/roles/usersystemrole/...` variants (CCR0298).
 ### ValueSets
@@ -31,6 +33,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 - Added `DI48` (Atrieflagren og atrieflimren) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
+- Added SKS codes `DG834B`, `DI340`, `DI350`, `DI511A`, `DI719A`, `DI739A`, `DJ45`, `DM16`, `DM17`, `DM54`, `DQ231`, `DQ231A`, `DQ251` and `DZ952` to `http://ehealth.sundhed.dk/vs/conditions`
+- Added FSIII codes `I3.4`, `I6.4`, `I7.2` and `I9.3` (`http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII`) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added `MCS88214` to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
 - Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
