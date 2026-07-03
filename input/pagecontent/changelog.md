@@ -23,6 +23,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
+- Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
+- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:role:...` and `http://ehealth.seb.dk/roles/usersystemrole/...` variants (CCR0298).
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
@@ -35,6 +37,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
 - Added Snomed code `1187059002` (Smartphone) to `http://ehealth.sundhed.dk/vs/device-types`.
 - Added `http://ehealth.sundhed.dk/vs/device-platform`
+- Added `http://ehealth.sundhed.dk/vs/practitioner-competences` (includes the `practitioner-competences` CodeSystem).
+- Added `http://ehealth.sundhed.dk/vs/oio-bpp-competences` (includes the `oio-bpp-competences` CodeSystem).
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
@@ -43,7 +47,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
-
+- Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
@@ -53,7 +57,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-device-registrationToken to ehealth-device profile for storing the registration token from a push notification service (FCM/APNs).
 - Added extension ehealth-device-platform to to ehealth-device profile bound to http://ehealth.sundhed.dk/vs/device-platform for the push notification service
 - Updated ehealth-deviceusestatement to relaxed the Context extension cardinality from 1..1 to 0..1. The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
-
+- Added a `decentralizedCompetence` slice on `ehealth-practitioner` `qualification` (0..*), fixing `qualification.identifier.system` to `https://decentralizedCompetence.ehealth.sundhed.dk` and adding a `required` binding on `qualification.code` to `http://ehealth.sundhed.dk/vs/practitioner-competences` (CCR0298).
 ### Search parameters
 - Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
 - Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
