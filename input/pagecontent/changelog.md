@@ -61,7 +61,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-device-registrationToken to ehealth-device profile for storing the registration token from a push notification service (FCM/APNs).
 - Added extension ehealth-device-platform to to ehealth-device profile bound to http://ehealth.sundhed.dk/vs/device-platform for the push notification service
 - Updated ehealth-deviceusestatement to relaxed the Context extension cardinality from 1..1 to 0..1. The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
-- Added a `decentralizedCompetence` slice on `ehealth-practitioner` `qualification` (0..*), fixing `qualification.identifier.system` to `https://decentralizedCompetence.ehealth.sundhed.dk` and adding a `required` binding on `qualification.code` to `http://ehealth.sundhed.dk/vs/practitioner-competences` (CCR0298).
+- Added a `decentralizedCompetence` slice on `ehealth-practitioner` `qualification` (0..*), fixing `qualification.identifier.system` to `http://ehealth.sundhed.dk/fhir/system/decentralized-competence` and adding a `required` binding on `qualification.code` to `http://ehealth.sundhed.dk/vs/practitioner-competences` (CCR0298).
 ### Search parameters
 - Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
 - Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
