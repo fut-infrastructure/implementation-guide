@@ -26,22 +26,20 @@
     {
       "code": "woundTeleCourse",
       "display": "Wound TeleCourse",
-      "definition": "Citizen enroller",
       "designation": [
         {
           "language": "da",
-          "value": "Borgeropretter"
+          "value": "Telekursus i sårvurdering"
         }
       ]
     },
     {
       "code": "woundDiploma",
       "display": "Wound Diploma",
-      "definition": "Clinical viewer",
       "designation": [
         {
           "language": "da",
-          "value": "Klinisk se adgang"
+          "value": "Diplomuddannelse i sårbehandling"
         }
       ]
     }
