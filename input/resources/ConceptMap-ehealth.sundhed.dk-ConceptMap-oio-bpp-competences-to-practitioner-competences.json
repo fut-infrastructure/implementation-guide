@@ -28,7 +28,7 @@
       "target": "http://ehealth.sundhed.dk/vs/practitioner-competences",
       "element": [
         {
-          "code": "urn:dk:sundhed:ehealth:role:competence_wound_telecourse",
+          "code": "urn:dk:sundhed:ehealth:competence:wound_telecourse",
           "target": [
             {
               "code": "woundTeleCourse",
@@ -37,7 +37,7 @@
           ]
         },
         {
-          "code": "urn:dk:sundhed:ehealth:role:competence_wound_diploma",
+          "code": "urn:dk:sundhed:ehealth:competence:wound_diploma",
           "target": [
             {
               "code": "woundDiploma",
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_telecourse/1",
+          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_telecourse/1",
           "target": [
             {
               "code": "woundTeleCourse",
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_diploma/1",
+          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_diploma/1",
           "target": [
             {
               "code": "woundDiploma",
