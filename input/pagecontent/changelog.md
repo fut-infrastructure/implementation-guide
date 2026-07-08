@@ -25,6 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
 - Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
+- Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.

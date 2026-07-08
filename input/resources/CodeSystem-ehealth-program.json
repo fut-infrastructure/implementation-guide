@@ -39,6 +39,26 @@
       "definition": "Supportteam for Telemedicinsk monitoreringsapplikation"
     },
     {
+      "code": "telma-konfiguration-1",
+      "display": "Telma Konfiguration 1",
+      "definition": "Konfiguration 1 for Telemedicinsk monitoreringsapplikation"
+    },
+    {
+      "code": "telma-konfiguration-2",
+      "display": "Telma Konfiguration 2",
+      "definition": "Konfiguration 2 for Telemedicinsk monitoreringsapplikation"
+    },
+    {
+      "code": "telma-konfiguration-3",
+      "display": "Telma Konfiguration 3",
+      "definition": "Konfiguration 3 for Telemedicinsk monitoreringsapplikation"
+    },
+    {
+      "code": "telma-konfiguration-4",
+      "display": "Telma Konfiguration 4",
+      "definition": "Konfiguration 4 for Telemedicinsk monitoreringsapplikation"
+    },
+    {
       "code": "fob",
       "display": "FOB",
       "definition": "Fællesoffentlig Behandlingsplatform"
