@@ -27,6 +27,50 @@
       "target": "http://unitsofmeasure.org",
       "element": [
         {
+          "code": "DNK05463",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05465",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05467",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05469",
+          "target": [
+            {
+              "code": "mm[Hg]",
+              "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "DNK05472",
           "display": "Blodtryk systolisk;Arm",
           "target": [
@@ -45,6 +89,17 @@
             {
               "code": "mm[Hg]",
               "display": "mm[Hg]",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU02193",
+          "target": [
+            {
+              "code": "mmol/L",
+              "display": "millimole per liter",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }
