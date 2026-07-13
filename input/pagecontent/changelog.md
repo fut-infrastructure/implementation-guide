@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated the ehealth-consent introduction "Registration of Consent" section to document the `behavior-by-policy` consent category and how to record the decision of whether triage results may be displayed to the Patient (policy `display-triage-result`), including the required `category`, `scope`, `policy.uri`, `provision` elements and the affiliation level (CCR0198).
 - Fixed the `Consent/23` example so `provision.code` uses `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` (a code valid against the required `provision.code` binding) and added `provision.type = permit`.
 - Updated intro notes for ehealth-organization to clarify usage of contained endpoint resources for GLN/EAN identifiers.
+- Updated intro notes for ehealth-practitioner to clarify usage of the `qualification` element for decentralized competences (CCR0298).
 ### Custom operations
 #### System operations
 #### Instance operations
@@ -65,6 +66,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Search parameters
 - Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
 - Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
+- Added search parameter "qualification-code" for Practitioner resources, to be able to query Practitioners with a specific qualification code (CCR0298).
+- Added search parameter "qualification-issuer" for Practitioner resources, to be able to query Practitioners with a specific qualification issuer (CCR0298).
+- Added search parameter "qualification-period" for Practitioner resources, to be able to query Practitioners with a specific qualification period (CCR0298).
+- Added search parameter "qualification-identifier" for Practitioner resources, to be able to query Practitioners with a specific qualification identifier (CCR0298).
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
