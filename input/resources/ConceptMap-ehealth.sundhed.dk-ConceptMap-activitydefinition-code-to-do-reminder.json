@@ -134,6 +134,46 @@
       "target": "http://terminology.hl7.org/CodeSystem/v2-0136",
       "element": [
         {
+          "code": "DNK05463",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05465",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05467",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "DNK05469",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "DNK05472",
           "display": "Blodtryk systolisk;Arm",
           "target": [
@@ -147,6 +187,16 @@
         {
           "code": "DNK05473",
           "display": "Blodtryk diastolisk;Arm",
+          "target": [
+            {
+              "code": "Y",
+              "display": "Yes",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "NPU02193",
           "target": [
             {
               "code": "Y",
