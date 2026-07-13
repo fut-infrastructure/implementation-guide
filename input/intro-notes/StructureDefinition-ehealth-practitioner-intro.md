@@ -13,7 +13,7 @@ The `qualification` element holds the qualifications and competences of a practi
 
 These values are maintained solely by the eHealth Infrastructure: they are synchronized from the security ticket each time the practitioner logs in, and direct updates to `qualification` through the FHIR API are rejected. Solutions can read the qualifications — for example to differentiate access to functionality based on competences — but cannot modify them.
 
-Note that synchronization happens only at login. The recorded qualifications reflect the practitioner's competences as of their most recent login, not a real-time view.
+Note that synchronization of decentralized competences only happen at login. The recorded qualifications reflect the practitioner's competences as of their most recent login, not a real-time view. Other qualifications such as authorization identifiers are synchronized once a day as part of nightly import jobs against national registries.
 
 #### Decentralized competences
 Decentrally administered competences (e.g. supplementary courses or diploma educations) are received as OIO-BPP privileges from the municipal or regional identity provider during login and stored as their eHealth competence code equivalent (see [Practitioner Competences](CodeSystem-ehealth-practitioner-competences.html) and the mapping in [OIO-BPP competences to eHealth Practitioner competences](ConceptMap-oio-bpp-competences-to-practitioner-competences.html)). These qualifications are identified by having an identifier with the system `http://ehealth.sundhed.dk/fhir/system/decentralized-competence`.
