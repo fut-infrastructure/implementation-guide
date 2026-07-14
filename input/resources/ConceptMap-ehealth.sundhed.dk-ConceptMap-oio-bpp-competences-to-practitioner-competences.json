@@ -1,0 +1,69 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "oio-bpp-competences-to-practitioner-competences",
+  "url": "http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences",
+  "version": "0.1.0",
+  "name": "OIOBPPCompetencesToPractitionerCompetencesMapping",
+  "title": "OIO BPP competences to eHealth Practitioner competences role mapping",
+  "status": "active",
+  "experimental": true,
+  "date": "2019-12-02T00:00:00+00:00",
+  "publisher": "Systematic A/S",
+  "contact": [
+    {
+      "name": "Systematic A/S",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/"
+        }
+      ]
+    }
+  ],
+  "sourceUri": "http://ehealth.sundhed.dk/vs/oio-bpp-competences",
+  "targetUri": "http://ehealth.sundhed.dk/vs/practitioner-competences",
+  "group": [
+    {
+      "source": "http://ehealth.sundhed.dk/cs/oio-bpp-roles",
+      "target": "http://ehealth.sundhed.dk/vs/practitioner-competences",
+      "element": [
+        {
+          "code": "urn:dk:sundhed:ehealth:competence:wound_telecourse",
+          "target": [
+            {
+              "code": "woundTeleCourse",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "urn:dk:sundhed:ehealth:competence:wound_diploma",
+          "target": [
+            {
+              "code": "woundDiploma",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_telecourse/1",
+          "target": [
+            {
+              "code": "woundTeleCourse",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_diploma/1",
+          "target": [
+            {
+              "code": "woundDiploma",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

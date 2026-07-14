@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated the ehealth-consent introduction "Registration of Consent" section to document the `behavior-by-policy` consent category and how to record the decision of whether triage results may be displayed to the Patient (policy `display-triage-result`), including the required `category`, `scope`, `policy.uri`, `provision` elements and the affiliation level (CCR0198).
 - Fixed the `Consent/23` example so `provision.code` uses `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` (a code valid against the required `provision.code` binding) and added `provision.type = permit`.
 - Updated intro notes for ehealth-organization to clarify usage of contained endpoint resources for GLN/EAN identifiers.
+- Updated intro notes for ehealth-practitioner to clarify usage of the `qualification` element for decentralized competences (CCR0298).
 ### Custom operations
 #### System operations
 #### Instance operations
@@ -26,6 +27,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
 - Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
+- Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
+- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/competence/usercompetence/...` variants (CCR0298).
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
@@ -41,6 +44,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
 - Added Snomed code `1187059002` (Smartphone) to `http://ehealth.sundhed.dk/vs/device-types`.
 - Added `http://ehealth.sundhed.dk/vs/device-platform`
+- Added `http://ehealth.sundhed.dk/vs/practitioner-competences` (includes the `practitioner-competences` CodeSystem).
+- Added `http://ehealth.sundhed.dk/vs/oio-bpp-competences` (includes the `oio-bpp-competences` CodeSystem).
 - Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `http://ehealth.sundhed.dk/vs/observation-codes`
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
@@ -50,7 +55,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214` and `mmol/L`.
-
+- Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
@@ -60,10 +65,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added extension ehealth-device-registrationToken to ehealth-device profile for storing the registration token from a push notification service (FCM/APNs).
 - Added extension ehealth-device-platform to to ehealth-device profile bound to http://ehealth.sundhed.dk/vs/device-platform for the push notification service
 - Updated ehealth-deviceusestatement to relaxed the Context extension cardinality from 1..1 to 0..1. The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
-
+- Added a `decentralizedCompetence` slice on `ehealth-practitioner` `qualification` (0..*), fixing `qualification.identifier.system` to `http://ehealth.sundhed.dk/fhir/system/decentralized-competence` and adding a `required` binding on `qualification.code` to `http://ehealth.sundhed.dk/vs/practitioner-competences` (CCR0298).
 ### Search parameters
 - Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
 - Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
+- Added search parameter "qualification-code" for Practitioner resources, to be able to query Practitioners with a specific qualification code (CCR0298).
+- Added search parameter "qualification-issuer" for Practitioner resources, to be able to query Practitioners with a specific qualification issuer (CCR0298).
+- Added search parameter "qualification-period" for Practitioner resources, to be able to query Practitioners with a specific qualification period (CCR0298).
+- Added search parameter "qualification-identifier" for Practitioner resources, to be able to query Practitioners with a specific qualification identifier (CCR0298).
 
 ### Event messages
 - Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
