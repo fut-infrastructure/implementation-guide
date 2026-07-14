@@ -28,6 +28,50 @@
       "target": "http://hl7.org/fhir/data-types",
       "element": [
         {
+          "code": "DNK05463",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05465",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05467",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "DNK05469",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "DNK05472",
           "display": "Blodtryk systolisk;Arm",
           "target": [
@@ -46,6 +90,17 @@
             {
               "code": "integer",
               "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "NPU02193",
+          "target": [
+            {
+              "code": "decimal",
+              "display": "decimal",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }

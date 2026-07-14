@@ -18,6 +18,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 - Added `DI48` (Atrieflagren og atrieflimren) to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem 
+- Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `urn:oid:1.2.208.176.2.1` 
 - Added additional condition codes to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem: `DG834B` (Neurogen claudicatio intermittens), `DI340` (Mitralinsufficiens), `DI350` (Aortastenose), `DI511A` (Mitralklapinsufficiens ved chordaruptur), `DI719A` (Dilateret aorta), `DI739A` (Claudicatio intermittens), `DJ45` (Astma), `DM16` (Slidgigt i hofte), `DM17` (Slidgigt i knæ), `DM54` (Rygsmerter), `DQ231` (Medfødt aortaklapinsufficiens), `DQ231A` (Valvula aortae bicuspidalis), `DQ251` (Coarctatio aortae) and `DZ952` (Tilstand med kunstig hjerteklap).
 - Added `MCS88214` (Rejse sætte sig testen(60 sek.)) to `urn:oid:1.2.208.184.100.8` 
 - Updated `MCS88050` (Rejse sætte sig testen(30 sek.)) in `urn:oid:1.2.208.184.100.8` to be defined specific for 30 seconds, since the 60 second version has been added.
@@ -28,6 +29,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
 - Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
 - Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/competence/usercompetence/...` variants (CCR0298).
+- Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
@@ -44,14 +46,15 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/device-platform`
 - Added `http://ehealth.sundhed.dk/vs/practitioner-competences` (includes the `practitioner-competences` CodeSystem).
 - Added `http://ehealth.sundhed.dk/vs/oio-bpp-competences` (includes the `oio-bpp-competences` CodeSystem).
+- Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `http://ehealth.sundhed.dk/vs/observation-codes`
 ### ConceptMaps
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214` and `mmol/L`.
 - Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.

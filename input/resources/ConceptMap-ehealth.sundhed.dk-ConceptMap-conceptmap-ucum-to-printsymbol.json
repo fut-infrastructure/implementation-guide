@@ -160,6 +160,17 @@
           ]
         },
         {
+          "code": "mmol/L",
+          "target": [
+            {
+              "code": "mmol/L",
+              "display": "millimole per liter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "{Number}",
           "display": "Number",
           "target": [
