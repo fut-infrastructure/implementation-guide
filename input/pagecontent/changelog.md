@@ -1,5 +1,16 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Next Release
+### Custom operations
+#### Type operations
+- Added `RelatedPerson/$create-managed-related-person`, which creates a managed RelatedPerson seeded from the national registry and marked with `data-governance|managed`. The relationship codes `POWATT` and `PARAUTH` are rejected.
+### Code systems
+- Added the `http://ehealth.sundhed.dk/cs/data-governance` CodeSystem with the `managed` code, used to mark RelatedPerson resources whose master data is synchronized and locked by the infrastructure.
+### Search parameters
+- Added a `date` search parameter on RelatedPerson that searches `RelatedPerson.period`.
+### Profiles
+- Documented the update rules for ehealth-relatedperson, covering the managed variant and its locked master-data fields.
+
 ## 9.0.1 (2026-05-05)
 ### ValueSets
 - Removed http://ehealth.sundhed.dk/cs/poa-privilege CodeSystem and http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype ValueSet include of the CodeSystem, since they were causing some issues during release, and are not strictly needed until 2026.3.
