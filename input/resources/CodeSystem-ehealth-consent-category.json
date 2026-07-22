@@ -74,6 +74,28 @@
           "value": "Adfærd baseret på policy"
         }
       ]
+    },
+    {
+      "code": "RPCTEOC",
+      "display": "RelatedPerson Contributes to EpisodeOfCare",
+      "definition": "RelatedPerson Contributes to EpisodeOfCare",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Pårørendes bidrager til telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "PORPI",
+      "display": "Processing of RelatedPerson Information",
+      "definition": "Processing of RelatedPerson Information",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Behandling af pårørendes oplysninger"
+        }
+      ]
     }
   ]
 }
