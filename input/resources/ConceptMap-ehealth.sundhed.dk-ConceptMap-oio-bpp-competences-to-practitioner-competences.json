@@ -24,8 +24,8 @@
   "targetUri": "http://ehealth.sundhed.dk/vs/practitioner-competences",
   "group": [
     {
-      "source": "http://ehealth.sundhed.dk/cs/oio-bpp-roles",
-      "target": "http://ehealth.sundhed.dk/vs/practitioner-competences",
+      "source": "http://ehealth.sundhed.dk/cs/oio-bpp-competences",
+      "target": "http://ehealth.sundhed.dk/cs/practitioner-competences",
       "element": [
         {
           "code": "urn:dk:sundhed:ehealth:competence:wound_telecourse",
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_telecourse/1",
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_telecourse/1",
           "target": [
             {
               "code": "woundTeleCourse",
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_diploma/1",
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_diploma/1",
           "target": [
             {
               "code": "woundDiploma",

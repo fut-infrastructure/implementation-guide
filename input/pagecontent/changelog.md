@@ -28,7 +28,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
 - Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
 - Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
-- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/competence/usercompetence/...` variants (CCR0298).
+- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/roles/usersystemrole/competence_...` variants (CCR0298).
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.

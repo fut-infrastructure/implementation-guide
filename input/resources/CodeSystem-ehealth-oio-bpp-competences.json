@@ -46,7 +46,7 @@
             ]
         },
         {
-          "code": "http://ehealth.seb.dk/competence/usercompetence/wound_telecourse/1",
+          "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_telecourse/1",
           "display": "Wound Telecourse",
           "definition": "Kvalificeret til at anvende telemedicinsk sårvurdering via gennemført telemedicinsk sårkursus.",
           "designation": [
@@ -57,7 +57,7 @@
           ]
         },
         {
-            "code": "http://ehealth.seb.dk/competence/usercompetence/wound_diploma/1",
+            "code": "http://ehealth.seb.dk/roles/usersystemrole/competence_wound_diploma/1",
             "display": "Wound Diploma",
             "definition": "Har gennemført diplommodul eller længerevarende efteruddannelse i sår behandling",
             "designation": [
