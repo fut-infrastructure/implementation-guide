@@ -41,6 +41,8 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
 
 ### Resource/profile changes
+- Added extension `ehealth-managing-organization` to `ehealth-episodeofcare`, holding an organization reference and a period, to support multiple managing organizations (data controllers) over time (CCR0333). The period end is optional — an open-ended period marks the currently responsible data controller.
+- Removed `EpisodeOfCare.managingOrganization` (constrained to `0..0`) from `ehealth-episodeofcare`, superseded by the `ehealth-managing-organization` extension (CCR0333). **Note for vendors:** this is a breaking change — the managing organization must now be read from and written to the extension instead of the standard element.
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
 - Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
