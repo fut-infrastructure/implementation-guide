@@ -1,0 +1,14 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ehealth-questionnairelinkage-search-for",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/QuestionnaireLinkage/questionnaireLinkageFor",
+  "name": "questionnaireLinkageFor",
+  "status": "active",
+  "date": "2026-07-20T12:00:00+00:00",
+  "code": "questionnaireLinkageFor",
+  "base": ["Basic"],
+  "type": "reference",
+  "description": "Search parameter for finding QuestionnaireLinkage resources (Basic resources with the ehealth-questionnairelinkage profile) that reference the given Questionnaire(s) in the questionnaireLinkageFor extension. Searches should be combined with a profile or code discriminator, since all Basic-based profiles share one search space.",
+  "expression": "Basic.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairelinkage-for').value",
+  "xpathUsage": "normal"
+}

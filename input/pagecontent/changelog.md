@@ -1,5 +1,16 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 9.0.5 (Unreleased — 2026.4)
+### Profiles
+- Added `ehealth-questionnairelinkage` profile (FHIR Basic based, as `ehealth-view`/`ehealth-actionguidance`) for linking questions across questionnaires or questionnaire versions (CCR0317 Option 1, FDD0197)
+### Extensions
+- Added `ehealth-questionnairelinkage-for` extension (0..* version-specific Reference(ehealth-questionnaire) — the questionnaires participating in a linkage)
+- Added `ehealth-questionnairelinkage-item` extension (0..* groups of linked questions: optional description + linkage pairs of questionnaire reference and linkId)
+### Code systems
+- Added `questionnairelinkage` (Spørgeskemasammenknytning) to http://ehealth.sundhed.dk/cs/basic-resource-type
+### Search parameters
+- Added `questionnaireLinkageFor` (reference) and `questionnaireLinkageTitle` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile
+
 ## 9.0.1 (2026-05-05)
 ### ValueSets
 - Removed http://ehealth.sundhed.dk/cs/poa-privilege CodeSystem and http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype ValueSet include of the CodeSystem, since they were causing some issues during release, and are not strictly needed until 2026.3.
