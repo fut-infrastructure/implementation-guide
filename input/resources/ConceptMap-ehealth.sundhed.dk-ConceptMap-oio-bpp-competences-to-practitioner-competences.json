@@ -24,8 +24,8 @@
   "targetUri": "http://ehealth.sundhed.dk/vs/practitioner-competences",
   "group": [
     {
-      "source": "http://ehealth.sundhed.dk/cs/oio-bpp-roles",
-      "target": "http://ehealth.sundhed.dk/vs/practitioner-competences",
+      "source": "http://ehealth.sundhed.dk/cs/oio-bpp-competences",
+      "target": "http://ehealth.sundhed.dk/cs/practitioner-competences",
       "element": [
         {
           "code": "urn:dk:sundhed:ehealth:competence:wound_telecourse",
