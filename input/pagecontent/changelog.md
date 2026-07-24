@@ -30,6 +30,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
 - Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/competence/usercompetence/...` variants (CCR0298).
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
+- Imported new SNOMED CT. Infrastructure now supports SNOMED CT International Edition (2026-04-01) and Danish Extension (2026-03-31).
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
@@ -47,6 +48,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/vs/practitioner-competences` (includes the `practitioner-competences` CodeSystem).
 - Added `http://ehealth.sundhed.dk/vs/oio-bpp-competences` (includes the `oio-bpp-competences` CodeSystem).
 - Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `http://ehealth.sundhed.dk/vs/observation-codes`
+- Added `668041000005104`, `2953061000005104`, `2953071000005109`, `2953081000005107`, `2953091000005105` and `2963071000005104` to `http://ehealth.sundhed.dk/vs/sor-organization-type`
 ### ConceptMaps
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
