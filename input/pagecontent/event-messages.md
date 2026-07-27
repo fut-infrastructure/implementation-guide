@@ -136,7 +136,7 @@ topic: `ehealth-application-event`
   "$schema" : "http://json-schema.org/draft-07/schema#",
   "type" : "object",
   "id" : "urn:jsonschema:dk:sundhed:ehealth:event:models:EHealthApplicationEvent",
-  "required" : [ "eventType", "resourceReference" ],
+  "required" : [ "messageType", "messageVersion", "ehealth.system", "eventType", "payload", "userReference", "resourceReference" ],
   "properties" : {
     "messageType" : {
       "type" : "string",
