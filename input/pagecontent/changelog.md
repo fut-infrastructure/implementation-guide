@@ -10,7 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added `questionnairelinkage` (Spørgeskemasammenknytning) to http://ehealth.sundhed.dk/cs/basic-resource-type
 ### Search parameters
-- Added `questionnaireLinkageFor` (reference) and `questionnaireLinkageTitle` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile
+- Added `questionnaireLinkageFor` (reference) and `questionnaireLinkageTitle` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile (defined in the ehealth-model repo, as for the other Systematic-owned search parameters)
 
 ## 9.0.1 (2026-05-05)
 ### ValueSets
