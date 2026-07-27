@@ -27,10 +27,25 @@
         "system": "urn:oid:1.2.208.176.2.1",
         "concept": [
           {
+            "code": "DNK05463"
+          },
+          {
+            "code": "DNK05465"
+          },
+          {
+            "code": "DNK05467"
+          },
+          {
+            "code": "DNK05469"
+          },
+          {
             "code": "DNK05472"
           },
           {
             "code": "DNK05473"
+          },
+          {
+            "code": "NPU02193"
           },
           {
             "code": "NPU03011"

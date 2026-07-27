@@ -44,6 +44,7 @@ menu:
   Table of Contents: toc.html
   Home: index.html
   General guidance: guidance.html
+  Multitenancy: multitenancy.html
   FHIR Artifacts:
     Profiles and extensions: profiles.html
     Search Parameters: searchparams.html

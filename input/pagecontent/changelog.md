@@ -4,41 +4,78 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
+- Updated the ehealth-consent introduction "Registration of Consent" section to document the `behavior-by-policy` consent category and how to record the decision of whether triage results may be displayed to the Patient (policy `display-triage-result`), including the required `category`, `scope`, `policy.uri`, `provision` elements and the affiliation level (CCR0198).
+- Fixed the `Consent/23` example so `provision.code` uses `http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult` (a code valid against the required `provision.code` binding) and added `provision.type = permit`.
+- Updated intro notes for ehealth-organization to clarify usage of contained endpoint resources for GLN/EAN identifiers.
+- Updated intro notes for ehealth-practitioner to clarify usage of the `qualification` element for decentralized competences (CCR0298).
 ### Custom operations
 #### System operations
 #### Instance operations
+- Added definition and example for the `-s-assigned-material-count` operation.
 - Added `Appointment/$send-message` instance operation for sending an SMS reminder to a RelatedPerson participant of a video appointment (CCR0316). The recipient must be a RelatedPerson participant on the target Appointment; only the `sms` channel is currently supported. The operation returns the created [ehealth-message](StructureDefinition-ehealth-message.html) Communication, with `status` `completed` on success or `stopped` when the downstream gateway rejected the send. Validation preconditions (appointment profile/status, participant status, RelatedPerson active/period/telecom-purpose) are documented on the [OperationDefinition](OperationDefinition-Appointment-send-message.html).
 ### Code systems
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` (Power of Attorney Privilege) CodeSystem. Content is `not-present` — codes are vendor-specific and externally governed.
 - Added `http://ehealth.sundhed.dk/cs/telecom-purpose` for telecom contact point purpose codes.
 - Added `http://ehealth.sundhed.dk/cs/ehealth-message-channel` for message channel codes (e.g. SMS).
 - Added `DI48` (Atrieflagren og atrieflimren) to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem 
+- Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `urn:oid:1.2.208.176.2.1` 
+- Added additional condition codes to `urn:oid:1.2.208.176.2.4` (SKS) CodeSystem: `DG834B` (Neurogen claudicatio intermittens), `DI340` (Mitralinsufficiens), `DI350` (Aortastenose), `DI511A` (Mitralklapinsufficiens ved chordaruptur), `DI719A` (Dilateret aorta), `DI739A` (Claudicatio intermittens), `DJ45` (Astma), `DM16` (Slidgigt i hofte), `DM17` (Slidgigt i knæ), `DM54` (Rygsmerter), `DQ231` (Medfødt aortaklapinsufficiens), `DQ231A` (Valvula aortae bicuspidalis), `DQ251` (Coarctatio aortae) and `DZ952` (Tilstand med kunstig hjerteklap).
 - Added `MCS88214` (Rejse sætte sig testen(60 sek.)) to `urn:oid:1.2.208.184.100.8` 
 - Updated `MCS88050` (Rejse sætte sig testen(30 sek.)) in `urn:oid:1.2.208.184.100.8` to be defined specific for 30 seconds, since the 60 second version has been added.
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-unit-code` to include new unit for 1/60sec for `MCS88214` 
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-ucum-printsymbol-supplement` to include new unit for 1/60sec for `MCS88214` 
+- Added `http://ehealth.sundhed.dk/cs/ehealth-aggregation-mode-types`
+- Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
+- Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
+- Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
+- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/roles/usersystemrole/competence_...` variants (CCR0298).
+- Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
 - Added `http://ehealth.sundhed.dk/vs/telecom-purpose`.
 - Added `http://ehealth.sundhed.dk/vs/ehealth-message-channel`.
 - Added `DI48` (Atrieflagren og atrieflimren) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added Snomed code `413307004` (Mental health problem) to `http://ehealth.sundhed.dk/vs/conditions`
+- Added SKS codes `DG834B`, `DI340`, `DI350`, `DI511A`, `DI719A`, `DI739A`, `DJ45`, `DM16`, `DM17`, `DM54`, `DQ231`, `DQ231A`, `DQ251` and `DZ952` to `http://ehealth.sundhed.dk/vs/conditions`
+- Added FSIII codes `I3.4`, `I6.4`, `I7.2` and `I9.3` (`http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII`) to `http://ehealth.sundhed.dk/vs/conditions`
 - Added `MCS88214` to `http://ehealth.sundhed.dk/vs/observation-codes`
 - Added `MCS88214` to `http://sundhedsdatastyrelsen.dk/terminologi/dk-ihe-eventcodelists-vs`
 - Added `MCS88214` to `http://medcom.dk/terminologi/phmr-observation-vs`
+- Added `http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types`
+- Added Snomed code `1187059002` (Smartphone) to `http://ehealth.sundhed.dk/vs/device-types`.
+- Added `http://ehealth.sundhed.dk/vs/device-platform`
+- Added `http://ehealth.sundhed.dk/vs/practitioner-competences` (includes the `practitioner-competences` CodeSystem).
+- Added `http://ehealth.sundhed.dk/vs/oio-bpp-competences` (includes the `oio-bpp-competences` CodeSystem).
+- Added `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193` to `http://ehealth.sundhed.dk/vs/observation-codes`
 ### ConceptMaps
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`.
-- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214`.
-
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type` to include mapping for `MCS88214`, `DNK05463`, `DNK05465`, `DNK05467`, `DNK05469` and `NPU02193`.
+- Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214` and `mmol/L`.
+- Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
 - Fixed the `identifier.system` pattern on the `YderNummer` slice of `ehealth-patient.generalPractitioner` from `urn:oid.1.2.208.176.1.4` to `urn:oid:1.2.208.176.1.4`, so Ydernummer references are correctly matched to the slice.
+- Added extension `ehealth-managing-organization` to `ehealth-episodeofcare`, holding an organization reference and a period, to support multiple managing organizations (data controllers) over time (CCR0333). The period end is optional — an open-ended period marks the currently responsible data controller.
+- Removed `EpisodeOfCare.managingOrganization` (constrained to `0..0`) from `ehealth-episodeofcare`, superseded by the `ehealth-managing-organization` extension (CCR0333). **Note for vendors:** this is a breaking change — the managing organization must now be read from and written to the extension instead of the standard element.
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
+- Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
+- Added extension ehealth-aggregate-group-id to ehealth-plandefinition profile
+- Added extension ehealth-aggregation-mode to ehealth-library profile bound to http://ehealth.sundhed.dk/vs/ehealth-aggregation-mode-types
+- Added extension ehealth-device-registrationToken to ehealth-device profile for storing the registration token from a push notification service (FCM/APNs).
+- Added extension ehealth-device-platform to to ehealth-device profile bound to http://ehealth.sundhed.dk/vs/device-platform for the push notification service
+- Updated ehealth-deviceusestatement to relaxed the Context extension cardinality from 1..1 to 0..1. The conditional rule (context is required unless the referenced Device is a push-notification device) is enforced in the Device service Java code.
+- Added a `decentralizedCompetence` slice on `ehealth-practitioner` `qualification` (0..*), fixing `qualification.identifier.system` to `http://ehealth.sundhed.dk/fhir/system/decentralized-competence` and adding a `required` binding on `qualification.code` to `http://ehealth.sundhed.dk/vs/practitioner-competences` (CCR0298).
+### Search parameters
+- Added search parameter "aggregate-input" for Provenance resource, to be able to query for Provenance resources intended for Aggregated Triage.
+- Added search parameter "aggregation-mode" for Library resources, to be able to query Libaries with a specific aggregation rule applied.
+- Added search parameter "qualification-code" for Practitioner resources, to be able to query Practitioners with a specific qualification code (CCR0298).
+- Added search parameter "qualification-issuer" for Practitioner resources, to be able to query Practitioners with a specific qualification issuer (CCR0298).
+- Added search parameter "qualification-period" for Practitioner resources, to be able to query Practitioners with a specific qualification period (CCR0298).
+- Added search parameter "qualification-identifier" for Practitioner resources, to be able to query Practitioners with a specific qualification identifier (CCR0298).
 - Added search parameter `careCommunicationSenderPractitioner` on `ehealth-communication` to query CareCommunication by the sending Practitioner (the `practitioner` sub-extension of the `ehealth-carecommunication-sender` extension).
 - Added search parameter `careCommunicationSenderCareTeam` on `ehealth-communication` to query CareCommunication by the sending CareTeam (the `careTeam` sub-extension of the `ehealth-carecommunication-sender` extension).
 
@@ -666,8 +703,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 2.7.0 (2023-03-29)
 
 ### General changes
-- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from 
-13.
+- Changed the description in section "Automatic NemSMS Notifications" for Ehealth-message. This is related to "CCR0167 Ingen automatisk NemSMS for ehealth-message med kategori message" from Release 13.
 - Changed the descriptions of ehealth-message category to reflect CCR0154 changes.
 ### Custom operations
 #### System operations
