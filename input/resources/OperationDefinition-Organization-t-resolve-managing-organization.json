@@ -1,0 +1,35 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Organization-t-resolve-managing-organization",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/Organization-t-resolve-managing-organization",
+  "name": "resolve-managing-organization",
+  "title": "Resolve managing organization (data controller)",
+  "status": "active",
+  "kind": "operation",
+  "description": "Given an organisation, returns the corresponding root authority (the GDPR data controller) by traversing the SOR / FK Organisation hierarchy upwards via Organization.partOf.\r\n## Input\r\nA single mandatory reference 'organization' to the organisation to resolve from.\r\n## Output\r\nThe resolved authority Organization (a municipality or a region).\r\nAn OperationOutcome with HTTP 404 is returned when no authority can be resolved for the organisation.",
+  "affectsState": false,
+  "code": "resolve-managing-organization",
+  "resource": [
+    "Organization"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "organization",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Mandatory reference to the organisation to resolve the data-controller authority from.",
+      "type": "Reference"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Organization"
+    }
+  ]
+}
