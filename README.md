@@ -31,6 +31,9 @@ The CI/CD pipeline uses the HL7 CI/CD infrastructure and Github webhooks which i
 
 ## Local development
 
+### Running SUSHI
+Use `./sushi.sh` instead of `npx sushi` to suppress known-safe naming warnings (ehealth-* names that don't follow PascalCase) while keeping all other output intact.
+
 ### Running locally
 Do `rm -rf output && rm -rf temp/ && ./_genonce.sh`
 

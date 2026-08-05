@@ -3,13 +3,13 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2026-04-16T13:06:28.960+00:00",
+  "date": "2026-08-03T02:37:22.259+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "organization",
-    "version": "1.26.0"
+    "version": "1.28.0"
   },
   "implementation": {
     "description": "eHealth organization service",
@@ -28,7 +28,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
       "operation": [ {
         "name": "expunge",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
@@ -53,7 +53,7 @@
       "conditionalUpdate": true,
       "conditionalDelete": "multiple",
       "searchInclude": [ "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:subject" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -154,7 +154,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ]
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ]
     }, {
       "type": "Organization",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization",
@@ -296,6 +296,10 @@
         "name": "validate",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Multi-it-validate"
       }, {
+        "name": "resolve-managing-organization",
+        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-t-resolve-managing-organization",
+        "documentation": "Given an organisation, returns the corresponding root authority (the GDPR data controller) by traversing the SOR / FK Organisation hierarchy upwards via Organization.partOf.\r\n## Input\r\nA single mandatory reference 'organization' to the organisation to resolve from.\r\n## Output\r\nThe resolved authority Organization (a municipality or a region).\r\nAn OperationOutcome with HTTP 404 is returned when no authority can be resolved for the organisation."
+      }, {
         "name": "get-general-practitioner-info",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-t-get-general-practitioner-info",
         "documentation": "The operation resolves the input organization(s) to the shared organization for the one or more organizations that have the given provider number. \nThe Organization returned depends on how many active Organization exist in the service with that provider number. When a single Organization has the provider number that Organization is returned. \nWhen multiple Organization resources have the same provider number, the shared parent Organization is returned. \nAn OperationOutcome with an explicit error is returned in case multiple organizations share the provider number but do not have a shared parent, or in case input organizations have different provider numbers. \nA typical use of the operation is to get name, address and telecom details for a general practitioner. Many provider numbers are assigned to a single organization but some provider numbers are shared by multiple entities (organizations) within in a common practice."
@@ -324,7 +328,7 @@
       "conditionalUpdate": true,
       "conditionalDelete": "multiple",
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -430,6 +434,22 @@
         "type": "token",
         "documentation": "The Practitioner's association with a provider identifier (Danish: Ydernummer)"
       }, {
+        "name": "qualification-code",
+        "type": "token",
+        "documentation": "The code of the qualification (e.g., medical specialty) that the practitioner holds."
+      }, {
+        "name": "qualification-identifier",
+        "type": "token",
+        "documentation": "An identifier for the qualification that the practitioner holds."
+      }, {
+        "name": "qualification-issuer",
+        "type": "reference",
+        "documentation": "The organization that regulates and issues the qualification."
+      }, {
+        "name": "qualification-period",
+        "type": "date",
+        "documentation": "The period during which the qualification is valid."
+      }, {
         "name": "telecom",
         "type": "token",
         "documentation": "The value in any kind of contact"
@@ -458,7 +478,7 @@
       "conditionalUpdate": true,
       "conditionalDelete": "multiple",
       "searchInclude": [ "*", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service" ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -562,7 +582,7 @@
       }, {
         "code": "read"
       } ],
-      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
+      "searchRevInclude": [ "CareTeam:encounter", "CareTeam:managingOrganization", "CareTeam:participant", "CareTeam:patient", "CareTeam:subject", "Organization:endpoint", "Organization:partof", "Practitioner:qualification-issuer", "PractitionerRole:endpoint", "PractitionerRole:location", "PractitionerRole:organization", "PractitionerRole:practitioner", "PractitionerRole:service", "Provenance:target" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",

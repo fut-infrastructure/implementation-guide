@@ -70,22 +70,23 @@ Example of one copyright structure with two copyrights
   * item.type: 'display', item.isCopyright: true, item.text = 'Copyright 2' (child item)
 
 ### UseContext
-The element `useContext` can be used to specify the context in which the Questionnaire is applicable.
-The element `useContext.code` is bound to the ValueSet http://hl7.org/fhir/ValueSet/use-context (see https://hl7.org/fhir/R4/valueset-use-context.html) and defines the context which the `useContext` can specify.
-The `useContext.valueCodeableConcept` defines the value (e.g. if the `useContext.code` is `focus`, the `useContext.valueCodeableConcept` can specify a specific condition).
-The element `useContext.valueCodeableConcept` is validated against the eHealth ValueSet http://ehealth.sundhed.dk/vs/ehealth-usage-context-type (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
-The validation includes that the value in `useContext.valueCodeableConcept` is acceptable in the ValueSet described for `useContext.code`.
+The `useContext` element specifies the context in which the Questionnaire is applicable. It consists of:
 
-The `useContext` element can be updated at any time, regardless of the status of the Questionnaire.
+- **`useContext.code`** – Defines the context type.
+- **`useContext.valueCodeableConcept`** – Defines the context value (e.g., a specific condition when `useContext.code` is `focus`).
 
-An example of a `useContext` is that a Questionnaire is only applicable for use in a specific intended solution (Note: the code and display for the intended solution in the example are fictional):
+When using `useContext.code` from [http://ehealth.sundhed.dk/vs/ehealth-usage-context-type](https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html), the `useContext.valueCodeableConcept` is validated against the ValueSet outlined for the chosen `useContext.code` as described in the description sections on [ehealth-usage-context-type ValueSet page](https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
+
+> **Note:** The `useContext` element can be updated at any time, regardless of the Questionnaire status.
+
+**Example:** An Questionnaire applicable only to a specific intended solution (codes are fictional):
 
 ```
 {
   "useContext": [
     {
       "code": {
-        "system": "http://hl7.org/fhir/ValueSet/use-context",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
         "code": "program"
       },
       "valueCodeableConcept": {

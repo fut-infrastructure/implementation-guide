@@ -48,7 +48,7 @@ Parent: DkCorePatient
 * generalPractitioner contains YderNummer 0..1
 * generalPractitioner[YderNummer].identifier 1..1
 * generalPractitioner[YderNummer].identifier.system 1..1
-* generalPractitioner[YderNummer].identifier.system = "urn:oid.1.2.208.176.1.4"
+* generalPractitioner[YderNummer].identifier.system = "urn:oid:1.2.208.176.1.4"
 * generalPractitioner[YderNummer].identifier.value 1..1
 
 Extension: ehealth-itcompetencelevel

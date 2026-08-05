@@ -105,7 +105,7 @@
             "code": "DG20"
           },
           {
-            "code": "DJ44"
+            "code": "DG834B"
           },
           {
             "code": "DI20"
@@ -114,7 +114,49 @@
             "code": "DI25"
           },
           {
+            "code": "DI340"
+          },
+          {
+            "code": "DI350"
+          },
+          {
+            "code": "DI48"
+          },
+          {
             "code": "DI50"
+          },
+          {
+            "code": "DI511A"
+          },
+          {
+            "code": "DI719A"
+          },
+          {
+            "code": "DI739A"
+          },
+          {
+            "code": "DJ44"
+          },
+          {
+            "code": "DJ45"
+          },
+          {
+            "code": "DM16"
+          },
+          {
+            "code": "DM17"
+          },
+          {
+            "code": "DM54"
+          },
+          {
+            "code": "DQ231"
+          },
+          {
+            "code": "DQ231A"
+          },
+          {
+            "code": "DQ251"
           },
           {
             "code": "DZ032"
@@ -124,6 +166,17 @@
           },
           {
             "code": "DZ76"
+          },
+          {
+            "code": "DZ952"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "413307004"
           }
         ]
       },
@@ -184,6 +237,23 @@
             "property": "concept",
             "op": "is-a",
             "value": "J5"
+          }
+        ]
+      },
+      {
+        "system": "http://kl.dk/fhir/common/caresocial/CodeSystem/FSIII",
+        "concept": [
+          {
+            "code": "I3.4"
+          },
+          {
+            "code": "I6.4"
+          },
+          {
+            "code": "I7.2"
+          },
+          {
+            "code": "I9.3"
           }
         ]
       },
