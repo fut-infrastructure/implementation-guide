@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `ehealth-questionnairelinkage-for` extension (0..* version-specific Reference(ehealth-questionnaire) — the questionnaires participating in a linkage)
 - Added `ehealth-questionnairelinkage-item` extension (0..* groups of linked questions: optional description + linkage pairs of questionnaire reference and linkId)
 - Added `ehealth-basic-name` extension (computer-friendly name, complementing `ehealth-basic-title`; used by `ehealth-questionnairelinkage`)
+- Added `ehealth-intendedQuestionnaireLinkage` extension (0..* Reference(ehealth-questionnairelinkage)) on `PlanDefinition.action` (any nesting level) and on `ehealth-servicerequest` — the linkages intended for presenting the questionnaire responses of the action/service request; copied action to ServiceRequest by PlanDefinition/$apply (CCR0317 Option 1, FDD0197)
 ### Code systems
 - Added `questionnairelinkage` (Spørgeskemasammenknytning) to http://ehealth.sundhed.dk/cs/basic-resource-type
 ### Search parameters

@@ -12,6 +12,7 @@ Parent: ServiceRequest
 * extension contains ehealth-servicerequest-statusHistory named statusHistory 0..*
 * extension contains ehealth-servicerequest-statusSchedule named statusSchedule 0..*
 * extension contains ehealth-include-as-extra named includeAsExtra 1..1
+* extension contains ehealth-intendedQuestionnaireLinkage named intendedQuestionnaireLinkage 0..*
 
 * instantiatesCanonical 1..1
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
