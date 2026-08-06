@@ -16,6 +16,8 @@ Identifier Systems:
 * KOMBIT STS-ORG-ID: "https://www.kombit.dk/sts/organisation"
 * SSL Identifier: "http://ehealth.sundhed.dk/organization/ssl"
 
+Dependency to DkCoreOrganization introduced identifier slices for EAN-ID (GLN identifier / EAN-nummer). These identifiers are not populated by the import process. This data is stored in a contained endpoint resource, see Endpoint section for more details.
+
 Organizations created manually are not allowed to have identifiers of types SOR-ID or KOMBIT STS-ORG-ID.
 
 ### Source
@@ -42,3 +44,17 @@ Hierarchical relations between Organizations imported from the same source are e
 Relations between Organizations which are expressed using the extension element `relatedTo` have uni-directional semantics.
 
 As an example this implies at that if two representations of the exact same Organization are imported from two different sources, then both could have a `relatedTo` element with the other Organization as target, and a relation type of e.g. "sameAs".
+
+### Endpoint
+Organizations may have one or more contained Endpoint resources. These contained Endpoint resources are used to store GLN/EAN identifiers (Global Location Numbers) associated with the Organization.
+
+Although the parent profile DkCoreOrganization defines identifier slices for EAN-ID (GLN identifier / EAN-nummer), these identifier slices are not used or populated directly on the Organization resource. Instead, GLN/EAN data originating from the import sources (SOR/STS-ORG) is stored in contained Endpoint resources referenced through the `endpoint` element.
+
+The contained Endpoint resource uses:
+* `identifier` to hold the GLN/EAN number
+* `connectionType` bound to the ValueSet http://ehealth.sundhed.dk/vs/endpoint-connection-type-code value set (always contains code `unsupported`)
+* `payloadType` bound to the ValueSet http://ehealth.sundhed.dk/vs/endpoint-payload-type-code (always contains code `unsupported`)
+
+The `endpoint` reference is constrained to contained resources only (aggregation mode: contained), meaning the Endpoint resource must be inline within the Organization resource and cannot exist as a standalone resource.
+
+Organizations must have both a SOR identifier and a GLN (EAN) identifier (via the contained Endpoint) to be eligible for VANS communication.

@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-communication-search-careCommunicationSenderPractitioner",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careCommunicationSenderPractitioner",
+    "name": "careCommunicationSenderPractitioner",
+    "status": "active",
+    "date": "2026-06-12T00:00:00+00:00",
+    "code": "careCommunicationSenderPractitioner",
+    "base": [
+        "Communication"
+    ],
+    "type": "reference",
+    "description": "Search parameter for finding CareCommunication based on the sending Practitioner (the practitioner sub-extension of the ehealth-carecommunication-sender extension).",
+    "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').extension('practitioner').value",
+    "xpathUsage": "normal"
+}
