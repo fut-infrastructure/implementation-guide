@@ -3,13 +3,13 @@
   "id": "document-transformation",
   "name": "document-transformation",
   "status": "active",
-  "date": "2026-04-16T13:05:46.304+00:00",
+  "date": "2026-08-03T02:17:54.155+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "document-transformation",
-    "version": "1.33.0"
+    "version": "1.34.0"
   },
   "implementation": {
     "description": "eHealth document-transformation service",

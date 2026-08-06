@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-device-platform",
+  "url": "http://ehealth.sundhed.dk/cs/device-platform",
+  "version": "0.1.0",
+  "name": "DevicePlatform",
+  "title": "Device Platform",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-05-07T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Push notification service identifier for a citizen's mobile device. Used together with a registration token to direct push notifications to the right push notification service.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "APN",
+      "display": "Apple Push Notification service",
+      "definition": "Apple Push Notification service (APNs) - typically used for iOS devices.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Apple Push Notification service"
+        }
+      ]
+    },
+    {
+      "code": "FCM",
+      "display": "Firebase Cloud Messaging",
+      "definition": "Firebase Cloud Messaging (FCM) - typically used for Android devices.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Firebase Cloud Messaging"
+        }
+      ]
+    }
+  ]
+}

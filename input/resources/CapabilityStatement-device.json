@@ -3,13 +3,13 @@
   "id": "device",
   "name": "device",
   "status": "active",
-  "date": "2026-04-16T13:06:10.808+00:00",
+  "date": "2026-08-03T02:07:12.417+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "device",
-    "version": "1.22.0"
+    "version": "1.23.0"
   },
   "implementation": {
     "description": "eHealth device service",

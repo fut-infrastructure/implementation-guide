@@ -54,6 +54,50 @@
           "value": "Standard careteam for opgaver og kommunikation"
         }
       ]
+    },
+    {
+      "code": "administrative",
+      "display": "Administrative",
+      "definition": "Participant has administrative function of maintaining EpisodeOfCare and/or CarePlan",
+      "designation": [
+        {
+          "language": "da",
+          "value": "administrerende"
+        }
+      ]
+    },
+    {
+      "code": "monitoring",
+      "display": "Monitoring",
+      "definition": "Participant monitors Patient's submissions and adherence to plan",
+      "designation": [
+        {
+          "language": "da",
+          "value": "monitorerende"
+        }
+      ]
+    },
+    {
+      "code": "supporting",
+      "display": "Supporting",
+      "definition": "Participant supports other participants, for instance by setting up and adjusting EpisodeOfCare and/or CarePlan",
+      "designation": [
+        {
+          "language": "da",
+          "value": "supporterende"
+        }
+      ]
+    },
+    {
+      "code": "informed",
+      "display": "Informed",
+      "definition": "Participant is involved to stay informed and expected to perform few if any actions",
+      "designation": [
+        {
+          "language": "da",
+          "value": "informeret"
+        }
+      ]
     }
   ]
 }
