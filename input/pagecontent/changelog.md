@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 9.0.5 (Unreleased — 2026.4)
+## Unreleased (2026.4)
 ### Profiles
 - Added `ehealth-questionnairelinkage` profile (FHIR Basic based, as `ehealth-view`/`ehealth-actionguidance`) for linking questions across questionnaires or questionnaire versions (CCR0317 Option 1, FDD0197)
 ### Extensions
