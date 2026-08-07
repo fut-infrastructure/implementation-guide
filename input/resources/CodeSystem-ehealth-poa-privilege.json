@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-poa-privilege",
+  "url": "http://ehealth.sundhed.dk/cs/poa-privilege",
+  "version": "0.0.1",
+  "name": "PoAPrivilege",
+  "title": "Power of Attorney Privilege",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-03-24T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Vendor-specific power of attorney privilege codes used by Keycloak when creating RelatedPerson resources for PoA-authenticated citizens. The full set of codes is externally governed and not enumerated here.",
+  "caseSensitive": true,
+  "content": "not-present"
+}
