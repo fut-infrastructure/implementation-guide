@@ -3,13 +3,13 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2026-04-16T13:06:02.971+00:00",
+  "date": "2026-08-03T02:27:22.268+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "measurement",
-    "version": "1.31.0"
+    "version": "1.32.1"
   },
   "implementation": {
     "description": "eHealth measurement service",
@@ -334,6 +334,10 @@
         "name": "entity-serviceRequest",
         "type": "reference",
         "documentation": "ServiceRequest identity of entity"
+      }, {
+        "name": "policy",
+        "type": "uri",
+        "documentation": "Policy or plan the activity was defined by"
       }, {
         "name": "recorded",
         "type": "date",

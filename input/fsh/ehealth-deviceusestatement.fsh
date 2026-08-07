@@ -1,7 +1,7 @@
 Profile: ehealth-deviceusestatement
 Id: ehealth-deviceusestatement
 Parent: DeviceUseStatement
-* extension contains ehealth-deviceusestatement-context named Context 1..1
+* extension contains ehealth-deviceusestatement-context named Context 0..1
 * subject only Reference(ehealth-patient)
 * subject ^type.aggregation = #referenced
 * source only Reference(ehealth-patient or ehealth-practitioner or ehealth-relatedperson)

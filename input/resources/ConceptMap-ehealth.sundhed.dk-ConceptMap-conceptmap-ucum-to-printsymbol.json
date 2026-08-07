@@ -160,6 +160,17 @@
           ]
         },
         {
+          "code": "mmol/L",
+          "target": [
+            {
+              "code": "mmol/L",
+              "display": "millimole per liter",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
           "code": "{Number}",
           "display": "Number",
           "target": [
@@ -244,6 +255,18 @@
             {
               "code": "1/30sec",
               "display": "one per 30 seconds",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "1/60sec",
+          "display": "one per 60 seconds",
+          "target": [
+            {
+              "code": "1/60sec",
+              "display": "one per 60 seconds",
               "equivalence": "specializes",
               "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
             }

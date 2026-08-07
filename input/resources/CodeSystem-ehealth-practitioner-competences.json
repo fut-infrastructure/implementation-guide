@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-practitioner-competences",
+  "url": "http://ehealth.sundhed.dk/cs/practitioner-competences",
+  "version": "0.6.0",
+  "name": "PractitionerCompetences",
+  "title": "Practitioner Competences",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-09-19T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Practitioner Competences",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "woundTeleCourse",
+      "display": "Wound TeleCourse",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Telekursus i sårvurdering"
+        }
+      ]
+    },
+    {
+      "code": "woundDiploma",
+      "display": "Wound Diploma",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Diplomuddannelse i sårbehandling"
+        }
+      ]
+    }
+  ]
+}

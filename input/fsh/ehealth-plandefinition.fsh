@@ -18,6 +18,7 @@ Parent: PlanDefinition
 * action.extension contains ehealth-actionTrigger named ehealth-actionTrigger 0..1
 * action.extension contains ehealth-include-as-extra named includeAsExtra 0..1
 * action.extension contains ehealth-intendedQuestionnaireLinkage named intendedQuestionnaireLinkage 0..*
+* action.extension contains ehealth-aggregate-group-id named aggregateGroupId 0..1
 
 Extension: ehealth-actionTrigger
 Title:     "Action Trigger"

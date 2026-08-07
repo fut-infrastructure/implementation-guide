@@ -19,7 +19,7 @@ Parent: Media
 * subject ^type.aggregation = #referenced
 * subject.reference 1..1
 * created[x] 1..1
-* operator only Reference(ehealth-practitioner)
+* operator only Reference(ehealth-practitioner or ehealth-patient or ehealth-relatedperson)
 * operator ^type.aggregation = #referenced
 * device only Reference(ehealth-device or ehealth-devicemetric)
 * device ^type.aggregation = #referenced

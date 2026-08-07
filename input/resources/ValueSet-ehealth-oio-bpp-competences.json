@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ehealth-oio-bpp-competences",
+  "url" : "http://ehealth.sundhed.dk/vs/oio-bpp-competences",
+  "version" : "0.6.0",
+  "name" : "OIOBPPCompetences",
+  "title" : "OIO BPP Competences",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2019-12-02T00:00:00+00:00",
+  "publisher" : "ehealth.sundhed.dk",
+  "contact" : [
+    {
+      "name" : "ehealth.sundhed.dk",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description" : "OIO BPP competences.",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://ehealth.sundhed.dk/cs/oio-bpp-competences"
+      }
+    ]
+  }
+}

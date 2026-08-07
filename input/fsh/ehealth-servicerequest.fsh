@@ -13,6 +13,7 @@ Parent: ServiceRequest
 * extension contains ehealth-servicerequest-statusSchedule named statusSchedule 0..*
 * extension contains ehealth-include-as-extra named includeAsExtra 1..1
 * extension contains ehealth-intendedQuestionnaireLinkage named intendedQuestionnaireLinkage 0..*
+* extension contains ehealth-aggregate-id named aggregateId 0..1
 
 * instantiatesCanonical 1..1
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
@@ -58,3 +59,10 @@ Title:       "ServiceRequest status schedule"
 * extension[status].value[x] from http://hl7.org/fhir/ValueSet/request-status
 * extension[scheduledTime].value[x] only dateTime
 * extension[scheduledTime].valueDateTime 1..1
+
+Extension: ehealth-aggregate-id
+Title:     "aggregateId"
+Description: "An optional identifier used to associate this ServiceRequest with an aggregate or grouping context."
+* . ^short = "Aggregate identifier for grouping purposes."
+* value[x] only string
+* valueString 0..1

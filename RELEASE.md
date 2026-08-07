@@ -5,7 +5,7 @@
 	- The `release` prefix ensures the right branch-protection rules are applied
 
 ## Releasing
-- A PR is created from the release branch (e.g. `release/2026.1.0` targeting `master`). 
+- A PR is created from the release branch (e.g. `release_2026.1.0` targeting `master`). 
   - Based on the changelog, decide on a `new_version` in SemVer, e.g. `7.2.0`. If any breaking changes, make sure to do a major version bump (e.g. 3.5.0 -> 4.0.0).
   - Update the changelog so its heading matches the `new_version`.
   - Update the `version` in `sushi-config.yaml` to the `new_version`.
