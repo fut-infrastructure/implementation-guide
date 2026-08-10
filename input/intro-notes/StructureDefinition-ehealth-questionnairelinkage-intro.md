@@ -35,6 +35,47 @@ Plan templates designate intended linkages per questionnaire activity via the
 `ehealth-intendedQuestionnaireLinkage` extension on `PlanDefinition.action`; the `$apply` operation copies
 the designation onto the created ServiceRequests.
 
+## Example
+
+A linkage connecting the systolic blood pressure question across two business versions of a blood
+pressure questionnaire:
+
+```json
+{
+  "resourceType": "Basic",
+  "meta": { "profile": ["http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairelinkage"] },
+  "code": { "coding": [{ "system": "http://ehealth.sundhed.dk/cs/basic-resource-type", "code": "questionnairelinkage" }] },
+  "identifier": [{ "system": "urn:ietf:rfc:3986", "value": "urn:uuid:7d3e64f0-2b4a-4c5e-9a1f-8f4711aa23c1" }],
+  "extension": [
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status",
+      "valueCoding": { "system": "http://hl7.org/fhir/publication-status", "code": "active" } },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
+      "valueString": "Blodtryk på tværs af versioner" },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-name",
+      "valueString": "bp-cross-version-linkage" },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
+      "extension": [
+        { "url": "reference", "valueReference": { "reference": "Organization/10001" } },
+        { "url": "role", "valueCodeableConcept": { "coding": [{ "system": "http://ehealth.sundhed.dk/cs/modifier-role", "code": "owner" }] } }
+      ] },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairelinkage-for",
+      "valueReference": { "reference": "Questionnaire/101" } },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairelinkage-for",
+      "valueReference": { "reference": "Questionnaire/205" } },
+    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnairelinkage-item",
+      "extension": [
+        { "url": "description", "valueString": "Systolisk blodtryk" },
+        { "url": "linkage", "extension": [
+            { "url": "questionnaire", "valueReference": { "reference": "Questionnaire/101" } },
+            { "url": "linkId", "valueString": "bp.sys,1,fut" } ] },
+        { "url": "linkage", "extension": [
+            { "url": "questionnaire", "valueReference": { "reference": "Questionnaire/205" } },
+            { "url": "linkId", "valueString": "blodtryk.systolisk,2,fut" } ] }
+      ] }
+  ]
+}
+```
+
 ## Lifecycle
 
 Status uses the `ehealth-status` extension bound to the standard publication-status ValueSet. Allowed
