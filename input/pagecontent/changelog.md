@@ -1,5 +1,20 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 10.0.1 (2026-08-26)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Changed danish designation text to `Fastende blodsukker` for `NPU02193` in code system `urn:oid:1.2.208.176.2.1`.
+### ValueSets
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc` ValueSets to specify includes as union rather than intersection, as specified by the fhir spec.
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+### Event messages
+
+
 ## 10.0.0 (2026-08-26)
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
