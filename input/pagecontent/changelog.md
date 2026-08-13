@@ -10,6 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added a `date` search parameter on RelatedPerson that searches `RelatedPerson.period`.
 ### Profiles
 - Documented the update rules for ehealth-relatedperson, covering the managed variant and its locked master-data fields.
+- Constrained `generalPractitioner` on `ehealth-skrs-patient` to `0..1`, matching the `ehealth-patient` profile and the fut-patient server's enforcement that a citizen has at most one active GP.
 
 ## 10.0.0 (2026-08-26)
 ### General changes
