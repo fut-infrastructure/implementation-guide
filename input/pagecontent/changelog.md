@@ -11,6 +11,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc` ValueSets to specify includes as union rather than intersection, as specified by the fhir spec.
 ### ConceptMaps
 ### Resource/profile changes
+- Constrained `generalPractitioner` on `ehealth-skrs-patient` to `0..1`, matching the `ehealth-patient` profile and the fut-patient server's enforcement that a citizen has at most one active GP.
 ### Search parameters
 ### Event messages
 
