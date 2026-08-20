@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-basic-search-context-type",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Basic/context-type",
+    "name": "context-type",
+    "status": "active",
+    "date": "2026-08-19T12:00:00+00:00",
+    "code": "context-type",
+    "base": [
+        "Basic"
+    ],
+    "type": "token",
+    "description": "Search parameter for finding Basic resources by a type of use context",
+    "expression": "Basic.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-useContext').value.code",
+    "xpathUsage": "normal"
+}

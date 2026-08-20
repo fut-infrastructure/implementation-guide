@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-basic-search-status",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Basic/status",
+    "name": "status",
+    "status": "active",
+    "date": "2026-08-19T12:00:00+00:00",
+    "code": "status",
+    "base": [
+        "Basic"
+    ],
+    "type": "token",
+    "description": "Search parameter for finding Basic resources by their status",
+    "expression": "Basic.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-status')",
+    "xpathUsage": "normal"
+}

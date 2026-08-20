@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-basic-search-title",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Basic/title",
+    "name": "title",
+    "status": "active",
+    "date": "2026-08-19T12:00:00+00:00",
+    "code": "title",
+    "base": [
+        "Basic"
+    ],
+    "type": "string",
+    "description": "Search parameter for finding Basic resources by their title (startsWith matching)",
+    "expression": "Basic.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title')",
+    "xpathUsage": "normal"
+}
