@@ -21,8 +21,27 @@ The EpisodeOfCare functions as a representation of a program while the activitie
 An EpisodeOfCare is required to have exactly one reference to the Organization responsible 
 for the treatment through the element `ehealth-episodeofcare-caremanagerOrganization`.
 
-The element `managingOrganization` references the Organization which is data controller for
-the EpisodeOfCare and all other resources directly or indirectly referencing it. 
+The element `managingOrganization` refers to the organization which is the custodian of the patient's data on the eHealth 
+infrastructure and is responsible for data control, as GDPR requires.
+
+This top-level organization controls the patient's data, is used for reporting and billing. 
+The infrastructure enforces that the Managing Organization is a Region or a Municipality.
+
+It is possible for multiple organizations to share the Managing Organization role.
+
+Managing Organisation can be changed for an EpisodeOfCare. The full history of Managing Organizations over time is available in the EpisodeOfCare resource.
+
+The infrastructure enforces that there are no gaps in responsibility, and that historic Managing Organizations cannot be changed.
+
+A custom operation exists, `resolve-managing-organization` which, given an organization, returns the corresponding root authority (the GDPR data controller) by traversing the SOR / FK Organisation hierarchy upwards via Organization.partOf.
+
+#### Usage in the eHealth Infrastructure
+The managing organization is used in e.g. communication resources, when they are created in the eHealth Infrastructure. 
+See [Communication resource](https://ehealth-dk.atlassian.net/l/cp/SSX623xA?xpis=eyJicmlkZ2UiOiJzbWFydExpbmtzIiwiaWQiOiIxNzg3NTcyMDQ3NjMzIiwic291cmNlIjoiY29uZmx1ZW5jZSJ9) (Task Notification) example.
+
+#### RBAC - Access Control
+The managing organization is controlled as part of role-based access control for reporting. 
+See [Access Control in eHealth Services](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1695842461/Access+Control+in+eHealth+Services?xpis=eyJicmlkZ2UiOiJzbWFydExpbmtzIiwiaWQiOiIxNzg3NTcyMDQ3NjMzIiwic291cmNlIjoiY29uZmx1ZW5jZSJ9#Reports).
 
 ### CareTeam and history of CareTeam
 The CareTeam(s) currently responsible for the EpisodeOfCare are referenced in element `team`.
@@ -30,8 +49,8 @@ Changes in CareTeam references are automatically maintained in the element `ehea
 
 ### Cross-team EpisodeOfCare search
 Searching EpisodeOfCare resources without specifying a CareTeam in the search parameters is supported, 
-but requires specific permission, adds additional validation and behaviour for filtering reverse/-included resources.
-The behaviour is tied to the treatment areas of the telemedicine solution in which the Practitioner is operating.
+but requires specific permission, adds additional validation and behavior for filtering reverse/-included resources.
+The behavior is tied to the treatment areas of the telemedicine solution in which the Practitioner is operating.
 The telemedicine solution is determined by inspecting the incoming security token of the practitioner (coexistence-tag in scope claim).
 The treatment areas are defined by each telemedicine solution having a ValueSet determining the allowed Condition.code.
 The treatment area ValueSets are characterized by having a useContext with 'system-treatment-area' context code, and using the coexistence-tag as the value (see https://ehealth.sundhed.dk/fhir/ValueSet-ehealth-usage-context-type.html).
