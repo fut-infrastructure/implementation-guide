@@ -89,7 +89,7 @@ Extension: ehealth-on-behalf-of
 Title:     "On behalf of"
 Description: "On behalf of"
 * . ^short = "On behalf of"
-* value[x] only Reference(ehealth-careteam)
+* value[x] only Reference(ehealth-careteam or ehealth-patient)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
