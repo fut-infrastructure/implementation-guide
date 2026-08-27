@@ -1,6 +1,8 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Next Release
+### General changes
+- Widened `ehealth-on-behalf-of` to accept `Reference(ehealth-patient)` in addition to `ehealth-careteam`, to support parent authority holders sending messages on behalf of a child (CCR0329). 
 ### Custom operations
 #### Type operations
 - Added `RelatedPerson/$create-managed-related-person`, which creates a managed RelatedPerson seeded from the national registry and marked with `data-governance|managed`. The relationship codes `POWATT` and `PARAUTH` are rejected.
