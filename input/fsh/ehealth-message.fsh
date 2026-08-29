@@ -40,7 +40,7 @@ Parent: Communication
 * recipient 0..1
 * recipient only Reference(Patient or Practitioner or ehealth-relatedperson)
 * recipient ^type.aggregation = #referenced
-* sender only Reference(Device or Patient or Practitioner)
+* sender only Reference(Device or Patient or Practitioner or RelatedPerson)
 * sender ^type.aggregation[+] = #referenced
 * sender ^type.aggregation[+] = #contained
 * reasonCode from http://ehealth.sundhed.dk/vs/message-reasonCode
