@@ -10,9 +10,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added `questionnairelinkage` (Spørgeskemasammenknytning) to http://ehealth.sundhed.dk/cs/basic-resource-type
 ### Search parameters
-- Added `questionnaireLinkageFor` (reference) and `title` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile (defined in the ehealth-model repo, as for the other Systematic-owned search parameters)
-- Fixed `Basic.code` of `ehealth-questionnairelinkage` to `basic-resource-type#questionnairelinkage` (pattern), preventing profile/code mismatches with the other Basic-based resource types
-- Added formal SearchParameter definitions for the Basic search parameters (title, status, reference, intendedAudience, recommendation, questionnaireLinkageFor, context, context-type, context-type-value)
+- Added `questionnaireLinkageFor` (reference) and `title` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile
 ## 10.0.0 (2026-08-26)
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
