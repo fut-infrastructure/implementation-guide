@@ -24,9 +24,9 @@ The linkage consists of:
   that questionnaire. A group may span two or more questionnaires, need not cover all questionnaires in
   the linkage, and may link questions within a single questionnaire.
 - The shared metadata extensions known from `ehealth-view`: recommendation, intendedAudience, modifierRole
-  (owner/co-author Organization), title, version, description, purpose, useContext and status — plus `name`
-  (`ehealth-basic-name`, computer-friendly name complementing the human-friendly title, as on
-  `ehealth-questionnaire`).
+  (owner/co-author Organization), title, version, description, purpose, useContext and status.
+
+`Basic.code` is fixed to `http://ehealth.sundhed.dk/cs/basic-resource-type#questionnairelinkage`.
 
 Every QuestionnaireLinkage carries an identifier with a random UUID value (`urn:uuid:` prefix, system
 `urn:ietf:rfc:3986`), assigned at creation and immutable, providing traceability across environments.
@@ -51,8 +51,6 @@ pressure questionnaire:
       "valueCoding": { "system": "http://hl7.org/fhir/publication-status", "code": "active" } },
     { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-title",
       "valueString": "Blodtryk på tværs af versioner" },
-    { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-basic-name",
-      "valueString": "bp-cross-version-linkage" },
     { "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-modifier-role",
       "extension": [
         { "url": "reference", "valueReference": { "reference": "Organization/10001" } },
@@ -92,7 +90,7 @@ A QuestionnaireLinkage can only be set to active when it references at least one
 | Element group | draft | active / retired |
 |---|---|---|
 | status, intendedAudience, useContext, modifierRole, recommendation | editable | editable |
-| title, name, description, version, purpose | editable | locked |
+| title, description, version, purpose | editable | locked |
 | questionnaireLinkageFor, item (defining content) | editable | locked |
 | identifier | immutable | immutable |
 
@@ -111,9 +109,14 @@ On create and update the following is rejected:
 
 ## Search
 
-In addition to the standard parameters (status, code, identifier, modifier role, intended audience,
-recommendation, usage context), QuestionnaireLinkage resources can be searched by
-`questionnaireLinkageFor` (reference — linkages relevant for given questionnaires) and by
-`questionnaireLinkageTitle` (string — startsWith, case- and accent-insensitive; `:contains` is not
-supported). As all Basic-based profiles share one search space, searches should carry a profile or code
+QuestionnaireLinkage resources can be searched by:
+
+- `title` (string — startsWith matching, case- and accent-insensitive; `:contains` is not supported)
+- `questionnaireLinkageFor` (reference — linkages relevant for given questionnaires)
+- `status` (token), `reference` (modifier role reference), `intendedAudience` (reference) and
+  `recommendation` (token)
+- usage context via the standard `context`, `context-type` and `context-type-value` parameters
+- the standard `code`, `identifier`, `_id` and `_lastUpdated` parameters
+
+As all Basic-based profiles share one search space, searches should carry a profile or code
 discriminator.

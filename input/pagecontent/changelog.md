@@ -1,17 +1,14 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased (2026.4)
-### Profiles
-- Added `ehealth-questionnairelinkage` profile (FHIR Basic based, as `ehealth-view`/`ehealth-actionguidance`) for linking questions across questionnaires or questionnaire versions (CCR0317 Option 1, FDD0197)
-### Extensions
-- Added `ehealth-questionnairelinkage-for` extension (0..* version-specific Reference(ehealth-questionnaire) — the questionnaires participating in a linkage)
-- Added `ehealth-questionnairelinkage-item` extension (0..* groups of linked questions: optional description + linkage pairs of questionnaire reference and linkId)
-- Added `ehealth-basic-name` extension (computer-friendly name, complementing `ehealth-basic-title`; used by `ehealth-questionnairelinkage`)
-- Added `ehealth-intendedQuestionnaireLinkage` extension (0..* Reference(ehealth-questionnairelinkage)) on `PlanDefinition.action` (any nesting level) and on `ehealth-servicerequest` — the linkages intended for presenting the questionnaire responses of the action/service request; copied action to ServiceRequest by PlanDefinition/$apply (CCR0317 Option 1, FDD0197)
 ### Code systems
-- Added `questionnairelinkage` (Spørgeskemasammenknytning) to http://ehealth.sundhed.dk/cs/basic-resource-type
+- Added `questionnairelinkage` (Spørgeskemasammenknytning) to `http://ehealth.sundhed.dk/cs/basic-resource-type` (CCR0317).
+### Resource/profile changes
+- Added new `ehealth-questionnairelinkage` profile (FHIR Basic based, like `ehealth-view` and `ehealth-actionguidance`) for linking questions across questionnaires or questionnaire versions (CCR0317). The profile carries the extensions `ehealth-questionnairelinkage-for` (the questionnaires participating in the linkage, as version-specific references) and `ehealth-questionnairelinkage-item` (groups of linked questions, each question given as a questionnaire reference and a linkId).
+- Added extension `ehealth-intendedQuestionnaireLinkage` to `ehealth-plandefinition` (on `action`, at any nesting level) and to `ehealth-servicerequest`, holding the QuestionnaireLinkage references intended for presenting the questionnaire responses of the action/service request (CCR0317). `PlanDefinition/$apply` copies the references from the action to the created ServiceRequest.
 ### Search parameters
-- Added `questionnaireLinkageFor` (reference) and `questionnaireLinkageTitle` (string, startsWith only) search parameters on Basic for the `ehealth-questionnairelinkage` profile (defined in the ehealth-model repo, as for the other Systematic-owned search parameters)
+- Added search parameter `questionnaireLinkageFor` on `ehealth-questionnairelinkage` to query linkages by a participating questionnaire (reference).
+- Added search parameter `title` on `ehealth-questionnairelinkage` to query by title (string, startsWith matching). As the parameter is defined on Basic, it also applies to `ehealth-view` and `ehealth-actionguidance`.
 ## 10.0.0 (2026-08-26)
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
