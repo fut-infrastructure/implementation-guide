@@ -568,8 +568,6 @@
 
 #### ehealth-status
 
-- `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS`: A scheduled pause may not last more than 30 days
-
 - `STATUS_SCHEDULE_IDENTICAL_TIME`: Multiple status changes may not be scheduled to be activated simultaneously
 
 #### ehealth-system
