@@ -1,5 +1,19 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 10.0.2 (2026-09-09)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+Extension `ehealth-managing-organization` added by CCR0333 is mandatory (cardinality 1..*). 
+### Search parameters
+### Event messages
+
+
 ## 10.0.1 (2026-08-26)
 ### General changes
 ### Custom operations
