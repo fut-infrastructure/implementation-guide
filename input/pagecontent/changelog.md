@@ -1,7 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## 10.0.2 (2026-08-28)
-## 10.0.1 (2026-08-26)
+## 10.0.2 (2026-09-09)
 ### General changes
 ### Custom operations
 #### System operations
