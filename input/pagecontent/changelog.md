@@ -1,8 +1,46 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased (2026.4)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
 ### Resource/profile changes
 - Removed the constraints on scheduled pauses in the `ehealth-careplan-statusschedule`, `ehealth-episodeofcare-statusschedule` and `ehealth-servicerequest-statusSchedule` extensions: a scheduled `on-hold` status is no longer limited to a maximum of 30 days, and a scheduled `on-hold` status without a subsequent scheduled status change no longer has a change back to `active` inserted automatically 7 days later. The error message `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS` has been removed. **Note for vendors:** a scheduled `on-hold` status now remains in effect until a further status change is scheduled or performed.
+### Search parameters
+### Event messages
+
+## 10.0.2 (2026-09-09)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+Extension `ehealth-managing-organization` added by CCR0333 is mandatory (cardinality 1..*). 
+### Search parameters
+### Event messages
+
+## 10.0.1 (2026-08-26)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Changed danish designation text to `Fastende blodsukker` for `NPU02193` in code system `urn:oid:1.2.208.176.2.1`.
+### ValueSets
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc` ValueSets to specify includes as union rather than intersection, as specified by the fhir spec.
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+### Event messages
+
+
 ## 10.0.0 (2026-08-26)
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.

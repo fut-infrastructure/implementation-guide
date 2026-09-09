@@ -47,7 +47,7 @@
             "system": "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
             "code": "consumer"
           },
-          "value": "Blodsukker"
+          "value": "Fastende blodsukker"
         }
       ]
     },
