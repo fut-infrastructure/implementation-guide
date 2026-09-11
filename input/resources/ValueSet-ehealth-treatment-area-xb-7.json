@@ -3,11 +3,11 @@
   "id": "ehealth-treatment-area-xb-7",
   "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7",
   "version": "1.0.0",
-  "name": "Other",
-  "title": "Other (treatment area)",
+  "name": "AllConditions_xb",
+  "title": "All conditions (treatment area)",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05T09:00:00+00:00",
+  "date": "2026-09-10T09:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
@@ -20,15 +20,12 @@
       ]
     }
   ],
-  "description": "Treatment area for other (xb).",
+  "description": "Treatment area for all conditions (xb).",
   "compose": {
     "include": [
       {
-        "system": "urn:oid:1.2.208.176.2.4",
-        "concept": [
-          {
-            "code": "DZ76"
-          }
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/conditions"
         ]
       }
     ]
