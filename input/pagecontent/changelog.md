@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased (2026.4)
 ### General changes
 ### Custom operations
+- `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
 #### System operations
 #### Instance operations
 ### Code systems
