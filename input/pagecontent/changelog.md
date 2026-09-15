@@ -17,6 +17,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - Removed the constraints on scheduled pauses in the `ehealth-careplan-statusschedule`, `ehealth-episodeofcare-statusschedule` and `ehealth-servicerequest-statusSchedule` extensions: a scheduled `on-hold` status is no longer limited to a maximum of 30 days, and a scheduled `on-hold` status without a subsequent scheduled status change no longer has a change back to `active` inserted automatically 7 days later. The error message `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS` has been removed. **Note for vendors:** a scheduled `on-hold` status now remains in effect until a further status change is scheduled or performed.
 ### Search parameters
+- Corrected the `Communication` (`ehealth-material-communication`) entry in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html): no `_include` or `_revinclude` is supported. `Communication:subject`, `Communication:recipient`, `Communication:payload`, `Communication:participant-actor` and `Communication:episodeOfCare` were previously listed as supported includes but could never be included, as the referenced resources are persisted in other services. **Note for vendors:** a search with an `_include` or `_revinclude` parameter is now rejected with HTTP 400 instead of the parameter being silently ignored.
 ### Event messages
 
 ## 10.0.2 (2026-09-09)
