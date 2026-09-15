@@ -416,9 +416,9 @@
 
 - `ORGANIZATION_REFERENCE_IDENTIFIER_PROVIDER_NUMBER_NOT_UNIQUE`: The identifiers of type ProviderNumber are not unique in the Organization reference list: %s
 
-- `ORGANIZATION_NOT_FOUND`: No active Organization could be found for the ProviderNumber: %s
+- `ORGANIZATION_NOT_FOUND`: No Organization could be found for the ProviderNumber: %s
 
-- `ORGANIZATION_NO_COMMON_PARENT_FOUND_PROVIDER_NUMBER`: No common parent found for the ProviderNumber: %s
+- `ORGANIZATION_INVALID_PROVIDER_NUMBER`: Invalid ProviderNumber: %s
 
 #### ehealth-plandefinition
 
