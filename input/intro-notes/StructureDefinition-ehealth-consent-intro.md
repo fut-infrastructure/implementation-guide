@@ -13,13 +13,15 @@ The eHealth profile of Consent has the following extensions:
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
 
-eHealth operates with three categories of consents:
+eHealth operates with four categories of consents:
 
 1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpretated to also apply to all CarePlan instances related to the consented EpisodeOfCare.
 
 2. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
 3. Category **behavior-by-policy**: A policy-driven behaviour marker that records whether an actor is permitted or denied a behaviour, where the concrete behaviour is identified by the `Consent.policy.uri`. Unlike PITEOC and SSLPCI, a behavior-by-policy Consent is not necessarily a consent given by the Patient — it is typically recorded by a Practitioner. The behaviour can be scoped to a care pathway (EpisodeOfCare) and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. The policies that can be expressed are defined in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html). At present, the only defined policy controls whether triage results may be displayed to the Patient; additional policies may be added in the future. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation) below for details of that policy.
+
+4. Category **AFPA** (Access for Parent Authority): Blocks access for holders of parental authority (forældremyndighedsindehavere) to a specific EpisodeOfCare. Unlike PITEOC and SSLPCI, an AFPA Consent is not a consent given by the Patient but a *deny* decision recorded by the application solution (anvenderløsning). When an active AFPA Consent exists for an EpisodeOfCare, a parental authority holder (a RelatedPerson with relationship `PARAUTH`, see [ehealth-relatedperson](StructureDefinition-ehealth-relatedperson.html)) cannot set that EpisodeOfCare as security context, and cannot read or search the EpisodeOfCare or its associated data. The block applies to all parental authority holders of the Patient.
 
 Consents of category **PITEOC** are expressed by creating a Consent resource with:
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
@@ -35,6 +37,14 @@ Consents of category **behavior-by-policy** are expressed by creating a Consent 
 - `Consent.policy.uri` set to the policy that defines the behaviour being decided. The policy must be one of those in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html) - it is the policy that gives the Consent its concrete meaning.
 
 The remaining elements to set depend on the specific policy. For the currently defined policy, see [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) below.
+
+Consents of category **AFPA** are expressed by creating a Consent resource with:
+- `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
+- `Consent.category.coding.code = "AFPA"`
+- `Consent.patient` referencing the Patient (child) whose EpisodeOfCare is blocked
+- `Consent.provision.type = "deny"`
+- `Consent.provision.data.reference` referencing the EpisodeOfCare to which parental authority access is blocked
+- `Consent.status = "active"` - only active AFPA Consents are enforced. `Consent.provision.period` is not considered.
 
 ### Controlling display of triage results to the Patient
 A Consent of category **behavior-by-policy** with `Consent.policy.uri = "http://ehealth.sundhed.dk/policy/ehealth/display-triage-result"` is used to record the decision of whether triage results may be displayed to the Patient. The decision can be recorded at the EpisodeOfCare level and/or at the CarePlan level by use of the [ehealth-consent-affiliation](#affiliation) extension.
@@ -132,8 +142,9 @@ This means, that:
 
 1. An EpisodeOfCare can only change status to `active` if a Consent with category PITEOC has been given.
 2. An SSL Order can only change status to `submitted` if a Consent with category SSLPCI has been given.
+3. A parental authority holder (RelatedPerson with relationship `PARAUTH`) cannot set an EpisodeOfCare as security context, nor read or search it or its associated data, if an active Consent with category AFPA and `provision.type = deny` references that EpisodeOfCare.
 
-In addition to the `Consent.category` element, the following elements must be set on a Consent resource for the policy enforcing business logic to take effect:
+In addition to the `Consent.category` element, the following elements must be set on a Consent resource for the policy enforcing business logic to take effect (for category AFPA, `Consent.provision.actor` and `Consent.provision.period` do not apply, see above):
 
 - `Consent.patient` - the patient who is the subject of this consent (must coincide with the `EpisodeOfCare.patient` referenced by `Consent.data.reference`)
 - `Consent.provision.data.reference` - the EpisodeOfCare for which this Consent is in force.

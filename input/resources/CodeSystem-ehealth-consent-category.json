@@ -74,6 +74,17 @@
           "value": "Adfærd baseret på policy"
         }
       ]
+    },
+    {
+      "code": "AFPA",
+      "display": "Access for Parent Authority",
+      "definition": "Access for Parent Authority",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Adgang for forældremyndighedsindehavere"
+        }
+      ]
     }
   ]
 }
