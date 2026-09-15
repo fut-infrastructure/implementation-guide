@@ -7,6 +7,7 @@ Thumbs.db
 /template
 node_modules
 .index.json
+.index.db
 /.idea
 .vscode/settings.json
 .gokid.*

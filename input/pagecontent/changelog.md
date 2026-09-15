@@ -2,11 +2,14 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## Unreleased (2026.4)
 ### General changes
+- Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).
 ### Custom operations
 #### System operations
 #### Instance operations
 ### Code systems
+- Added `AFPA` (Access for Parent Authority / Adgang for forældremyndighedsindehavere) to `http://ehealth.sundhed.dk/cs/consent-category` used to block parental authority holders' access to a specific EpisodeOfCare (CCR0329).
 ### ValueSets
+- Added `PARAUTH` (parental authority, `http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes`) to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype` (CCR0329).
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
 - Removed ValueSets: `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1` (Mental disorders and mental health problems), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2` (Neurological diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3` (Cardiovascular diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4` (Pulmonary diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5` (Somatic / metabolic diseases) and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6` (Functional ability & social circumstances), superseded by `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`.
