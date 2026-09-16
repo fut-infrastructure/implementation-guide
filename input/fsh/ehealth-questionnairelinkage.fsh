@@ -6,7 +6,6 @@ Parent: Basic
 * extension contains ehealth-intendedAudience named intendedAudience 0..*
 * extension contains ehealth-modifier-role named modifierRole 1..*
 * extension contains ehealth-basic-title named title 0..1
-* extension contains ehealth-basic-name named name 0..1
 * extension contains ehealth-version named version 0..1
 * extension contains ehealth-description named description 0..1
 * extension contains ehealth-purpose named purpose 0..1
@@ -15,6 +14,7 @@ Parent: Basic
 * extension contains ehealth-questionnairelinkage-for named questionnaireLinkageFor 0..*
 * extension contains ehealth-questionnairelinkage-item named item 0..*
 * code from http://ehealth.sundhed.dk/vs/basic-resource-type (required)
+* code = http://ehealth.sundhed.dk/cs/basic-resource-type#questionnairelinkage
 
 
 Extension: ehealth-questionnairelinkage-for
