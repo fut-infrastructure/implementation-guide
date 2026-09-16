@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ehealth-communication-search-careCommunicationSenderCareTeam",
+  "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/Communication/careCommunicationSenderCareTeam",
+  "name": "careCommunicationSenderCareTeam",
+  "status": "active",
+  "date": "2026-06-16T00:00:00+00:00",
+  "code": "careCommunicationSenderCareTeam",
+  "base": [
+    "Communication"
+  ],
+  "type": "reference",
+  "description": "Search parameter for finding CareCommunication based on the sending CareTeam (the careteam sub-extension of the ehealth-carecommunication-sender extension).",
+  "expression": "Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').extension('careTeam').value",
+  "xpathUsage": "normal"
+}

@@ -210,6 +210,16 @@
           "value" : "/uge"
         }
       ]
+    },
+    {
+      "code": "mmol/L",
+      "display": "millimole per liter",
+      "designation": [
+        {
+          "language": "da",
+          "value": "mmol/L"
+        }
+      ]
     }
   ]
 }

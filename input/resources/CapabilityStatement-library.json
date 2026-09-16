@@ -3,13 +3,13 @@
   "id": "library",
   "name": "library",
   "status": "active",
-  "date": "2026-04-16T13:05:21.400+00:00",
+  "date": "2026-08-03T02:22:22.823+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "library",
-    "version": "1.22.0"
+    "version": "1.24.0"
   },
   "implementation": {
     "description": "eHealth library service",
@@ -87,6 +87,10 @@
         "name": "_text",
         "type": "string",
         "documentation": "Search the contents of the resource's narrative using a fulltext search"
+      }, {
+        "name": "aggregation_mode",
+        "type": "token",
+        "documentation": "Aggregation mode of the library"
       }, {
         "name": "composed-of",
         "type": "reference",

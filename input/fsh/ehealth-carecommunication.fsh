@@ -16,7 +16,9 @@ Parent: Communication
     and payloadAttachment-contentType-required
     and no-standard-sender
     and sender-required-based-on-messagetype
+    and sender-contactPoint-required-based-on-messagetype
     and reply-requires-inResponseTo
+    and forward-prohibits-inResponseTo
 
 * identifier 1..2 MS
 * identifier ^slicing.discriminator.type = #value
@@ -164,7 +166,7 @@ Description: "Reference to the sending organization for this payload segment."
 
 Extension: ehealth-carecommunication-message-Type
 Title: "Message type"
-Description: "The type of the message. If inResponseTo is present, the type can not be new-message."
+Description: "The type of the message. inResponseTo is only allowed when the type is reply-message."
 * value[x] only Coding
 * valueCoding from MessageType (required)
 * . ^short = "Message type"
@@ -298,8 +300,8 @@ Expression: "payload.contentString.exists()"
 Severity: #error
 
 Invariant: payloadAttachment-contentType-required
-Description: "contentType SHALL be present if data or url is present in Attachment"
-Expression: "payload.contentAttachment.data.exists() or payload.contentAttachment.url.exists() implies payload.contentAttachment.contentType.exists()"
+Description: "contentType SHALL be present when the attachment content is in the data element. It is not required for url-only attachments."
+Expression: "payload.contentAttachment.data.exists() implies payload.contentAttachment.contentType.exists()"
 Severity: #error
 
 Invariant: no-standard-sender
@@ -312,10 +314,23 @@ Description: "If messageType is 'reply-message', inResponseTo SHALL be populated
 Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'reply-message').exists() implies inResponseTo.exists()"
 Severity: #error
 
+Invariant: forward-prohibits-inResponseTo
+Description: "If messageType is 'forward-message', inResponseTo SHALL be empty."
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'forward-message').exists() implies inResponseTo.empty()"
+Severity: #error
+
 Invariant: sender-required-based-on-messagetype
 Description: """
 If messagetype is 'new' or 'reply', the sender extension must be present.
 If 'forward', sender may be absent.
 """
 Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').exists()"
+Severity: #error
+
+Invariant: sender-contactPoint-required-based-on-messagetype
+Description: """
+If messagetype is 'new' or 'reply', the sender extension must carry a contactPoint.
+If 'forward', it may be absent. Mirrors MedCom's required authorContact on the outbound message.
+"""
+Expression: "extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-message-Type').value.where(code = 'new-message' or code = 'reply-message').exists() implies extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-carecommunication-sender').extension('contactPoint').exists()"
 Severity: #error

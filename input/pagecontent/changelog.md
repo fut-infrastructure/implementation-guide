@@ -1,6 +1,52 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Release 2026.3. todo: change to semver format before release
+## Unreleased (2026.4)
+### General changes
+### Custom operations
+- `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
+- Removed ValueSets: `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1` (Mental disorders and mental health problems), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2` (Neurological diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3` (Cardiovascular diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4` (Pulmonary diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5` (Somatic / metabolic diseases) and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6` (Functional ability & social circumstances), superseded by `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`.
+### ConceptMaps
+### Resource/profile changes
+- Removed the constraints on scheduled pauses in the `ehealth-careplan-statusschedule`, `ehealth-episodeofcare-statusschedule` and `ehealth-servicerequest-statusSchedule` extensions: a scheduled `on-hold` status is no longer limited to a maximum of 30 days, and a scheduled `on-hold` status without a subsequent scheduled status change no longer has a change back to `active` inserted automatically 7 days later. The error message `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS` has been removed. **Note for vendors:** a scheduled `on-hold` status now remains in effect until a further status change is scheduled or performed.
+### Search parameters
+- Corrected the `Communication` (`ehealth-material-communication`) entry in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html): no `_include` or `_revinclude` is supported. `Communication:subject`, `Communication:recipient`, `Communication:payload`, `Communication:participant-actor` and `Communication:episodeOfCare` were previously listed as supported includes but could never be included, as the referenced resources are persisted in other services. **Note for vendors:** a search with an `_include` or `_revinclude` parameter is now rejected with HTTP 400 instead of the parameter being silently ignored.
+### Event messages
+
+## 10.0.2 (2026-09-09)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+### ValueSets
+### ConceptMaps
+### Resource/profile changes
+Extension `ehealth-managing-organization` added by CCR0333 is mandatory (cardinality 1..*). 
+### Search parameters
+### Event messages
+
+## 10.0.1 (2026-08-26)
+### General changes
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Changed danish designation text to `Fastende blodsukker` for `NPU02193` in code system `urn:oid:1.2.208.176.2.1`.
+### ValueSets
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xc` ValueSets to specify includes as union rather than intersection, as specified by the fhir spec.
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+### Event messages
+
+
+## 10.0.0 (2026-08-26)
 ### General changes
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Updated description of UseContext sections for ehealth-actionguidance, ehealth-activitydefinition, ehealth-plandefinition, ehealth-questionnaire and ehealth-view.
@@ -28,7 +74,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `http://ehealth.sundhed.dk/cs/device-platform` with codes `APN` (Apple Push Notification service) and `FCM` (Firebase Cloud Messaging) for identifying the push notification service used by a citizen's mobile device.
 - Updated `http://ehealth.sundhed.dk/cs/participant-function` with codes `administrative`, `monitoring`, `supporting` and `informed`.
 - Added `http://ehealth.sundhed.dk/cs/practitioner-competences` (Practitioner Competences) with codes `woundTeleCourse` and `woundDiploma` for decentralized practitioner competences (CCR0298).
-- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/competence/usercompetence/...` variants (CCR0298).
+- Added `http://ehealth.sundhed.dk/cs/oio-bpp-competences` (OIO-BPP Competences) with the wound telecourse/diploma competence codes, in both `urn:dk:sundhed:ehealth:competence:...` and `http://ehealth.seb.dk/roles/usersystemrole/competence_...` variants (CCR0298).
 - Updated `http://ehealth.sundhed.dk/cs/ehealth-program` with 4 new `telma-konfiguration-x` codes.
 ### ValueSets
 - Re-added `http://ehealth.sundhed.dk/cs/poa-privilege` as an include in `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
@@ -57,6 +103,9 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Updated `http://ehealth.sundhed.dk/ConceptMap/conceptmap-ucum-to-printsymbol` to include mapping for `MCS88214` and `mmol/L`.
 - Added `http://ehealth.sundhed.dk/ConceptMap/oio-bpp-competences-to-practitioner-competences` mapping OIO BPP competence codes to eHealth practitioner competence codes (`woundTeleCourse`, `woundDiploma`).
 ### Resource/profile changes
+- Fixed the `identifier.system` pattern on the `YderNummer` slice of `ehealth-patient.generalPractitioner` from `urn:oid.1.2.208.176.1.4` to `urn:oid:1.2.208.176.1.4`, so Ydernummer references are correctly matched to the slice.
+- Added extension `ehealth-managing-organization` to `ehealth-episodeofcare`, holding an organization reference and a period, to support multiple managing organizations (data controllers) over time (CCR0333). The period end is optional — an open-ended period marks the currently responsible data controller.
+- Removed `EpisodeOfCare.managingOrganization` (constrained to `0..0`) from `ehealth-episodeofcare`, superseded by the `ehealth-managing-organization` extension (CCR0333). **Note for vendors:** this is a breaking change — the managing organization must now be read from and written to the extension instead of the standard element.
 - Updated ehealth-media to allow patient and relatedPerson references in it's operator field.
 - Added `video-appointment-reminder-sms` telecom slice on `ehealth-relatedperson` for storing the SMS number used for video appointment reminders to related persons (CCR0316).
 - Added extension ehealth-clinicalimpression-otherItem to ehealth-clinicalimpression profile
@@ -73,9 +122,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added search parameter "qualification-issuer" for Practitioner resources, to be able to query Practitioners with a specific qualification issuer (CCR0298).
 - Added search parameter "qualification-period" for Practitioner resources, to be able to query Practitioners with a specific qualification period (CCR0298).
 - Added search parameter "qualification-identifier" for Practitioner resources, to be able to query Practitioners with a specific qualification identifier (CCR0298).
+- Added search parameter `careCommunicationSenderPractitioner` on `ehealth-communication` to query CareCommunication by the sending Practitioner (the `practitioner` sub-extension of the `ehealth-carecommunication-sender` extension).
+- Added search parameter `careCommunicationSenderCareTeam` on `ehealth-communication` to query CareCommunication by the sending CareTeam (the `careTeam` sub-extension of the `ehealth-carecommunication-sender` extension).
 
 ### Event messages
-- Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; `eventType` and `resourceReference` are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
+- Tightened the `EHealthApplicationEvent` JSON schema (CCR0303 AC-7): the schema is now declared as JSON Schema draft-07; all message fields (`messageType`, `messageVersion`, `ehealth.system`, `eventType`, `payload`, `userReference`, `resourceReference`) are top-level required; `resourceReference` requires `minItems: 1` with each entry requiring both `label` and `reference`; and per-`eventType` `if`/`then`/`contains` rules assert the obligatory `resourceReference.label`. **Note for vendors:** producers must now emit both `label` and `reference` on every `resourceReference` entry and include the `eventType`-specific obligatory label.
 
 ## 9.0.2-SNAPSHOT (2026-05-04)
 ### Code systems

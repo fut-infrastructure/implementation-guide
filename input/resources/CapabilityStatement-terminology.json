@@ -3,13 +3,13 @@
   "id": "terminology",
   "name": "terminology",
   "status": "active",
-  "date": "2026-04-14T18:27:34.185+00:00",
+  "date": "2026-08-02T18:24:23.473+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "terminology",
-    "version": "1.25.0"
+    "version": "1.25.1"
   },
   "implementation": {
     "description": "eHealth terminology service",

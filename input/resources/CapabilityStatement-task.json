@@ -3,13 +3,13 @@
   "id": "task",
   "name": "task",
   "status": "active",
-  "date": "2026-04-16T13:06:17.333+00:00",
+  "date": "2026-08-03T03:12:22.882+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "task",
-    "version": "1.30.0"
+    "version": "1.31.0"
   },
   "implementation": {
     "description": "eHealth task service",
