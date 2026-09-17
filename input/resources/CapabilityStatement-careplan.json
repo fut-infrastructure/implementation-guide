@@ -171,8 +171,6 @@
       } ],
       "conditionalCreate": true,
       "conditionalUpdate": true,
-      "searchInclude": [ "*", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:payload", "Communication:recipient", "Communication:subject" ],
-      "searchRevInclude": [ "CarePlan:activity-reference", "CarePlan:care-team", "CarePlan:condition", "CarePlan:episodeOfCare", "CarePlan:goal", "CarePlan:instantiates-canonical", "CarePlan:part-of", "CarePlan:participant-actor", "CarePlan:patient", "Communication:episodeOfCare", "Communication:participant-actor", "Communication:payload", "Communication:recipient", "Communication:subject", "CommunicationRequest:based-on", "CommunicationRequest:encounter", "CommunicationRequest:episodeOfCare", "CommunicationRequest:patient", "CommunicationRequest:recipient", "CommunicationRequest:replaces", "CommunicationRequest:requester", "CommunicationRequest:sender", "CommunicationRequest:subject", "Consent:actor", "Consent:affiliation", "Consent:data", "Consent:patient", "DocumentReference:encounter", "DocumentReference:intendedOrganization", "DocumentReference:modifier_role_reference", "DocumentReference:subject", "EpisodeOfCare:condition", "EpisodeOfCare:participant-actor", "EpisodeOfCare:patient", "EpisodeOfCare:team", "Goal:addresses", "Goal:patient", "Goal:subject", "Provenance:target", "ServiceRequest:based-on", "ServiceRequest:encounter", "ServiceRequest:episodeOfCare", "ServiceRequest:patient", "ServiceRequest:performer", "ServiceRequest:replaces", "ServiceRequest:requester", "ServiceRequest:subject" ],
       "searchParam": [ {
         "name": "_id",
         "type": "token",
@@ -208,7 +206,7 @@
       }, {
         "name": "payload",
         "type": "reference",
-        "documentation": "Search for MaterialCommunication which are associated to the given status"
+        "documentation": "Search for MaterialCommunication which are associated to the given payload content (DocumentReference)"
       }, {
         "name": "period",
         "type": "date",

@@ -7,7 +7,7 @@
   "title": "Treatment Area Collection xb",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05T09:00:00+00:00",
+  "date": "2026-09-10T09:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
@@ -41,12 +41,6 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6",
           "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
         ]
       }

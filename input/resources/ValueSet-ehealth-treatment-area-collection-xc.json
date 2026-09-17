@@ -41,8 +41,16 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1",
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2",
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-1"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-2"
+        ]
+      },
+      {
+        "valueSet": [
           "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xc-3"
         ]
       }
