@@ -7,6 +7,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 #### System operations
 #### Instance operations
 ### Code systems
+- Added `questionnairelinkage` (Spørgeskemasammenknytning) to `http://ehealth.sundhed.dk/cs/basic-resource-type` (CCR0317).
 ### ValueSets
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
@@ -14,8 +15,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### ConceptMaps
 ### Resource/profile changes
 - Removed the constraints on scheduled pauses in the `ehealth-careplan-statusschedule`, `ehealth-episodeofcare-statusschedule` and `ehealth-servicerequest-statusSchedule` extensions: a scheduled `on-hold` status is no longer limited to a maximum of 30 days, and a scheduled `on-hold` status without a subsequent scheduled status change no longer has a change back to `active` inserted automatically 7 days later. The error message `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS` has been removed. **Note for vendors:** a scheduled `on-hold` status now remains in effect until a further status change is scheduled or performed.
+- Added new `ehealth-questionnairelinkage` profile (FHIR Basic based, like `ehealth-view` and `ehealth-actionguidance`) for linking questions across questionnaires or questionnaire versions (CCR0317). The profile carries the extensions `ehealth-questionnairelinkage-for` (the questionnaires participating in the linkage, as version-specific references) and `ehealth-questionnairelinkage-item` (groups of linked questions, each question given as a questionnaire reference and a linkId).
+- Added extension `ehealth-intendedQuestionnaireLinkage` to `ehealth-plandefinition` (on `action`, at any nesting level) and to `ehealth-servicerequest`, holding the QuestionnaireLinkage references intended for presenting the questionnaire responses of the action/service request (CCR0317). `PlanDefinition/$apply` copies the references from the action to the created ServiceRequest.
 ### Search parameters
 - Corrected the `Communication` (`ehealth-material-communication`) entry in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html): no `_include` or `_revinclude` is supported. `Communication:subject`, `Communication:recipient`, `Communication:payload`, `Communication:participant-actor` and `Communication:episodeOfCare` were previously listed as supported includes but could never be included, as the referenced resources are persisted in other services. **Note for vendors:** a search with an `_include` or `_revinclude` parameter is now rejected with HTTP 400 instead of the parameter being silently ignored.
+- Added search parameter `questionnaireLinkageFor` on `ehealth-questionnairelinkage` to query linkages by a participating questionnaire (reference).
+- Added search parameter `title` on `ehealth-questionnairelinkage` to query by title (string, startsWith matching). As the parameter is defined on Basic, it also applies to `ehealth-view` and `ehealth-actionguidance`.
 ### Event messages
 
 ## 10.0.2 (2026-09-09)
