@@ -1,5 +1,20 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Unreleased (2026.4)
+### General changes
+- Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added `AFPA` (Access for Parent Authority / Adgang for forældremyndighedsindehavere) to `http://ehealth.sundhed.dk/cs/consent-category` used to block parental authority holders' access to a specific EpisodeOfCare (CCR0329).
+### ValueSets
+- Added `PARAUTH` (parental authority, `http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes`) to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype` (CCR0329).
+### ConceptMaps
+### Resource/profile changes
+### Search parameters
+### Event messages
+
 ## 10.0.2 (2026-09-09)
 ### General changes
 ### Custom operations
