@@ -4,15 +4,27 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### General changes
 - Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).
 ### Custom operations
+- `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
 #### System operations
+- Added `$get-performer-activities` system operation on the CarePlan service, returning the overview of activities a related person (RelatedPerson) is expected to perform on behalf of a Patient, with resolved timeslots and counts of submitted, timely and invalidated measurement data (CCR0317). The operation is the counterpart of `$get-patient-procedures` for activities with a performer other than the Patient. It is available to user type `RELATED_PERSON` with `context.role` `related_person` or `power_of_attorney` holding the `CarePlan$get-performer-activities` privilege; the output Bundle contains the referenced ServiceRequest resources and Parameters rows but deliberately no CarePlan resource. See the [OperationDefinition](OperationDefinition--s-get-performer-activities.html) and the [operation example](POST_get-performer-activities.html).
+- `$get-patient-procedures` now excludes ServiceRequests whose `performer` is present and references anyone other than the Patient in context, for instance a RelatedPerson (CCR0317). ServiceRequests without a performer are still included, the Patient being the assumed performer. **Note for vendors:** activities assigned to a related person no longer appear in the patient's own overview; they are reported by `$get-performer-activities` instead. No data migration is performed and no explicit performer is required on existing ServiceRequests.
 #### Instance operations
 ### Code systems
 - Added `AFPA` (Access for Parent Authority / Adgang for forældremyndighedsindehavere) to `http://ehealth.sundhed.dk/cs/consent-category` used to block parental authority holders' access to a specific EpisodeOfCare (CCR0329).
+- Added `RPCTEOC` (RelatedPerson Contributes to EpisodeOfCare) and `PORPI` (Processing of RelatedPerson Information) to `http://ehealth.sundhed.dk/cs/consent-category`, for the Patient's consent to a related person contributing to the episode of care and the related person's consent to processing of their information respectively (CCR0317). Both codes are included in `http://ehealth.sundhed.dk/vs/consent-category`.
+- Added `contribution` to `http://ehealth.sundhed.dk/cs/ehealth-consent-scope`, included in `http://ehealth.sundhed.dk/vs/ehealth-consent-scope`, as the scope of an `RPCTEOC` consent (CCR0317).
 ### ValueSets
 - Added `PARAUTH` (parental authority, `http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes`) to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype` (CCR0329).
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
+- Removed ValueSets: `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1` (Mental disorders and mental health problems), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2` (Neurological diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3` (Cardiovascular diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4` (Pulmonary diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5` (Somatic / metabolic diseases) and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6` (Functional ability & social circumstances), superseded by `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`.
 ### ConceptMaps
 ### Resource/profile changes
+- Added validation of `ServiceRequest.performer` when it references a `RelatedPerson` (CCR0317): on create and update the RelatedPerson must be managed (`meta.security` carries `http://ehealth.sundhed.dk/cs/data-governance#managed`), its `period` must include the current date, and its `patient` must equal `ServiceRequest.subject`; otherwise the request is rejected with HTTP 422. A performer that cannot be resolved is rejected likewise. See the [ehealth-servicerequest](StructureDefinition-ehealth-servicerequest.html) introduction.
+- Documented the two consents for related persons performing activities (CCR0317) in the [ehealth-consent](StructureDefinition-ehealth-consent.html) introduction, with examples [Consent/24](Consent-24.html) (category `PORPI`) and [Consent/25](Consent-25.html) (category `RPCTEOC`). The infrastructure stores but does not enforce these consents.
+- Removed the constraints on scheduled pauses in the `ehealth-careplan-statusschedule`, `ehealth-episodeofcare-statusschedule` and `ehealth-servicerequest-statusSchedule` extensions: a scheduled `on-hold` status is no longer limited to a maximum of 30 days, and a scheduled `on-hold` status without a subsequent scheduled status change no longer has a change back to `active` inserted automatically 7 days later. The error message `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS` has been removed. **Note for vendors:** a scheduled `on-hold` status now remains in effect until a further status change is scheduled or performed.
 ### Search parameters
+- Corrected the `Communication` (`ehealth-material-communication`) entry in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html): no `_include` or `_revinclude` is supported. `Communication:subject`, `Communication:recipient`, `Communication:payload`, `Communication:participant-actor` and `Communication:episodeOfCare` were previously listed as supported includes but could never be included, as the referenced resources are persisted in other services. **Note for vendors:** a search with an `_include` or `_revinclude` parameter is now rejected with HTTP 400 instead of the parameter being silently ignored.
 ### Event messages
 
 ## 10.0.2 (2026-09-09)
@@ -27,7 +39,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 Extension `ehealth-managing-organization` added by CCR0333 is mandatory (cardinality 1..*). 
 ### Search parameters
 ### Event messages
-
 
 ## 10.0.1 (2026-08-26)
 ### General changes

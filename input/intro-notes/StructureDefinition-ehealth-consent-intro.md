@@ -13,13 +13,17 @@ The eHealth profile of Consent has the following extensions:
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
 
-eHealth operates with four categories of consents:
+eHealth operates with six categories of consents:
 
 1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpretated to also apply to all CarePlan instances related to the consented EpisodeOfCare.
 
 2. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
 3. Category **behavior-by-policy**: A policy-driven behaviour marker that records whether an actor is permitted or denied a behaviour, where the concrete behaviour is identified by the `Consent.policy.uri`. Unlike PITEOC and SSLPCI, a behavior-by-policy Consent is not necessarily a consent given by the Patient — it is typically recorded by a Practitioner. The behaviour can be scoped to a care pathway (EpisodeOfCare) and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. The policies that can be expressed are defined in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html). At present, the only defined policy controls whether triage results may be displayed to the Patient; additional policies may be added in the future. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation) below for details of that policy.
+
+4. Category **PORPI** (Processing of RelatedPerson Information): Consent given by a RelatedPerson to have information about themselves, including their CPR number, stored and processed in the infrastructure. This is a precondition for a related person being able to log in and perform activities on behalf of the Patient. See [Consents for related persons performing activities](#consents-for-related-persons-performing-activities).
+
+5. Category **RPCTEOC** (RelatedPerson Contributes to EpisodeOfCare): Consent given by a Patient to a specific RelatedPerson contributing measurement data to the Patient's EpisodeOfCare. See [Consents for related persons performing activities](#consents-for-related-persons-performing-activities).
 
 4. Category **AFPA**: Blocks access for holders of parental authority (forældremyndighedsindehavere) to a specific EpisodeOfCare. Unlike PITEOC and SSLPCI, an AFPA Consent is not a consent given by the Patient but a *deny* decision recorded by the application solution (anvenderløsning). When an active AFPA Consent exists for an EpisodeOfCare, a parental authority holder (a RelatedPerson with relationship `PARAUTH`, see [ehealth-relatedperson](StructureDefinition-ehealth-relatedperson.html)) cannot set that EpisodeOfCare as security context, and cannot read or search the EpisodeOfCare or its associated data. The block applies to all parental authority holders of the Patient.
 
@@ -130,6 +134,130 @@ Note that, unlike the policy-enforcing categories **PITEOC** and **SSLPCI** (see
 
 #### Access control
 A Patient (citizen) is **not** allowed to create or update a Consent with policy `http://ehealth.sundhed.dk/policy/ehealth/display-triage-result` — the decision of whether triage results may be displayed to the Patient is controlled by a Practitioner. See [Remarks on operations](#remarks-on-operations) below.
+
+### Consents for related persons performing activities
+A related person (pårørende) can be assigned as performer of activities on a Patient's CarePlan (see `ServiceRequest.performer` on [ehealth-servicerequest](StructureDefinition-ehealth-servicerequest.html) and the [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) operation). Two consents make this lawful, and both are recorded as Consent resources, typically by a Practitioner:
+
+1. The **related person's own consent** to the infrastructure storing and processing information about them, including their CPR number. Category **PORPI**.
+2. The **Patient's consent** to the related person contributing measurement data to the Patient's EpisodeOfCare. Category **RPCTEOC**.
+
+The information is carried by the category codes. No `Consent.policy` and no `Consent.provision.action` codes are defined for these consents; both elements are optional and are left empty.
+
+A **PORPI** consent is expressed with the following elements:
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Consent.category</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/consent-category#PORPI</code></td>
+      <td>Marks this Consent as the related person's consent to processing of their information.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.scope</code></td>
+      <td><code>http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy</code></td>
+      <td>Agreement to collect, access, use or disclose information.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.patient</code></td>
+      <td>Reference to the Patient</td>
+      <td>The Patient on whose behalf the related person is to perform activities. The Consent is stored in the Patient's context.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.performer</code></td>
+      <td>Reference to the <code>RelatedPerson</code></td>
+      <td>The related person giving the consent.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.type</code></td>
+      <td><code>permit</code></td>
+      <td>The related person permits the processing.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.actor</code></td>
+      <td>Reference to the <code>RelatedPerson</code>, role <code>http://terminology.hl7.org/CodeSystem/v3-ParticipationType#INF</code></td>
+      <td>The related person whose information the consent concerns.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.period</code></td>
+      <td>A (possibly open-ended) period</td>
+      <td>The period for which the consent is in force.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.status</code></td>
+      <td><code>active</code></td>
+      <td>Only active consents are considered to be in force.</td>
+    </tr>
+  </tbody>
+</table>
+
+An **RPCTEOC** consent is expressed with the following elements:
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Consent.category</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/consent-category#RPCTEOC</code></td>
+      <td>Marks this Consent as the Patient's consent to a related person contributing to the EpisodeOfCare.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.scope</code></td>
+      <td><code>http://ehealth.sundhed.dk/cs/ehealth-consent-scope#contribution</code></td>
+      <td>The related person contributes information on behalf of the Patient.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.patient</code></td>
+      <td>Reference to the Patient</td>
+      <td>The Patient giving the consent.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.type</code></td>
+      <td><code>permit</code></td>
+      <td>The Patient permits the contribution.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.actor</code></td>
+      <td>Reference to the <code>RelatedPerson</code>, role <code>http://terminology.hl7.org/CodeSystem/v3-ParticipationType#INF</code></td>
+      <td>The related person permitted to contribute.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.data.reference</code></td>
+      <td>Reference to the <code>EpisodeOfCare</code></td>
+      <td>The EpisodeOfCare the related person may contribute to.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.provision.period</code></td>
+      <td>A (possibly open-ended) period</td>
+      <td>The period for which the consent is in force.</td>
+    </tr>
+    <tr>
+      <td><code>Consent.status</code></td>
+      <td><code>active</code></td>
+      <td>Only active consents are considered to be in force.</td>
+    </tr>
+  </tbody>
+</table>
+
+> As for the behavior-by-policy category, the elements above are those that give the consents their meaning; the list is **not exhaustive**. It is recommended to also set `Consent.dateTime` and `Consent.organization` (the custodian Organization responsible for the Consent).
+
+> The infrastructure **stores** these two consents but does not enforce them: assigning a RelatedPerson as `ServiceRequest.performer` is not conditional on either consent being present. It is the responsibility of the Telemedicine Solution to record the consents before assigning activities to a related person.
+
+A RelatedPerson logged in with `context.role: related_person` has no access to Consent resources; the consents are created, read, updated and searched by Practitioners.
+
+See [Consent/24](Consent-24.html) for an example PORPI consent and [Consent/25](Consent-25.html) for an example RPCTEOC consent.
 
 ## Enforcement of Consent 
 Business rules are built into eHealth infrastructure to ensure that data can only be processed or forwarded to other systems and actors when the proper Consent is given.
