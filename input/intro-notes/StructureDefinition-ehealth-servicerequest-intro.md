@@ -49,5 +49,5 @@ The validity depends on the variant of `occurrence[x]` as follows:
 
 A performer that cannot be resolved is likewise rejected with HTTP 422.
 
-The performer determines which overview reports the activity: [$get-patient-procedures](OperationDefinition--s-get-patient-procedures.html) excludes activities whose performer is anyone other than the Patient, and [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) returns the activities a given RelatedPerson is performer of. The `PlanDefinition.action.participant.type` of the plan template (`patient`, `practitioner`, `related-person` or `device`) is advisory only; no consistency between it and `ServiceRequest.performer` is enforced.
+The infrastructure provides operations helping a performer determine what activities have been performed and/or are to be performed: [$get-patient-procedures](OperationDefinition--s-get-patient-procedures.html) excludes activities whose performer is anyone other than the Patient, and [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) returns the activities a given RelatedPerson is performer of. The `PlanDefinition.action.participant.type` of the plan template (`patient`, `practitioner`, `related-person` or `device`) is advisory only; no consistency between it and `ServiceRequest.performer` is enforced.
 
