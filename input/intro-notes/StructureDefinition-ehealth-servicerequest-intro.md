@@ -51,3 +51,9 @@ A performer that cannot be resolved is likewise rejected with HTTP 422.
 
 The infrastructure provides operations helping a performer determine what activities have been performed and/or are to be performed: [$get-patient-procedures](OperationDefinition--s-get-patient-procedures.html) excludes activities whose performer is anyone other than the Patient, and [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) returns the activities a given RelatedPerson is performer of. The `PlanDefinition.action.participant.type` of the plan template (`patient`, `practitioner`, `related-person` or `device`) is advisory only; no consistency between it and `ServiceRequest.performer` is enforced.
 
+### Intended Questionnaire Linkages
+A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` extensions referencing
+[QuestionnaireLinkage](StructureDefinition-ehealth-questionnairelinkage.html) resources — the linkages
+application systems are intended to use when presenting the questionnaire responses of this request. The
+references are inherited from the plan template's action by `PlanDefinition/$apply` and may subsequently be
+changed or removed via standard ServiceRequest update.
