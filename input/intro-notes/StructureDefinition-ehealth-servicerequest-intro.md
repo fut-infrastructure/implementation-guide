@@ -40,3 +40,9 @@ The validity depends on the variant of `occurrence[x]` as follows:
 
     See the [wiki](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing) for examples.
 
+### Intended Questionnaire Linkages
+A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` extensions referencing
+[QuestionnaireLinkage](StructureDefinition-ehealth-questionnairelinkage.html) resources — the linkages
+application systems are intended to use when presenting the questionnaire responses of this request. The
+references are inherited from the plan template's action by `PlanDefinition/$apply` and may subsequently be
+changed or removed via standard ServiceRequest update.

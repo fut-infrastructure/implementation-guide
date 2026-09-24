@@ -7,7 +7,7 @@
   "title": "Treatment Area Collection xb",
   "status": "active",
   "experimental": false,
-  "date": "2025-12-05T09:00:00+00:00",
+  "date": "2026-09-10T09:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
@@ -39,36 +39,6 @@
   "description": "Combined treatment areas for coexistence tag xb.",
   "compose": {
     "include": [
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6"
-        ]
-      },
       {
         "valueSet": [
           "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
