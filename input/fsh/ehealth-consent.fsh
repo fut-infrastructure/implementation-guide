@@ -44,3 +44,51 @@ Usage: #example
 * extension[0].url = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent-affiliation"
 * extension[0].valueReference = Reference(EpisodeOfCare/42)
 * patient = Reference(Patient/102)
+
+// CCR0317: the related person's consent to the infrastructure processing information about them
+Instance: Consent/24
+InstanceOf: ehealth-consent
+Usage: #example
+Title: "Consent/24 - related person's consent to processing of their information (PORPI)"
+Description: "A RelatedPerson consents to the infrastructure storing and processing information about them (including their CPR number) so that they can log in and perform activities on behalf of the Patient. The consent is recorded by a Practitioner, the consenting RelatedPerson is given in Consent.performer and the verification with the RelatedPerson in Consent.verification. Consent.provision.actor is left empty: the consent is about everybody else being allowed to process the related person's information, not about controlling the related person."
+* id = "24"
+* meta.versionId = "1"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
+* category = http://ehealth.sundhed.dk/cs/consent-category#PORPI
+* patient = Reference(Patient/102)
+* dateTime = "2026-09-01T10:15:00+02:00"
+* performer = Reference(RelatedPerson/701)
+* organization = Reference(Organization/1)
+* verification.verified = true
+* verification.verifiedWith = Reference(RelatedPerson/701)
+* verification.verificationDate = "2026-09-01T10:15:00+02:00"
+* provision.type = #permit
+* provision.period.start = "2026-09-01T00:00:00+02:00"
+
+// CCR0317: the patient's consent to a related person contributing measurement data to the episode of care
+Instance: Consent/25
+InstanceOf: ehealth-consent
+Usage: #example
+Title: "Consent/25 - patient's consent to a related person contributing to the episode of care (RPCTEOC)"
+Description: "A Patient consents to a specific RelatedPerson contributing measurement data to the Patient's EpisodeOfCare. The RelatedPerson is given in Consent.provision.actor and the EpisodeOfCare in Consent.provision.data."
+* id = "25"
+* meta.versionId = "1"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-consent"
+* status = #active
+* scope = http://ehealth.sundhed.dk/cs/ehealth-consent-scope#contribution
+* category = http://ehealth.sundhed.dk/cs/consent-category#RPCTEOC
+* patient = Reference(Patient/102)
+* dateTime = "2026-09-01T10:20:00+02:00"
+* performer = Reference(Patient/102)
+* organization = Reference(Organization/1)
+* verification.verified = true
+* verification.verifiedWith = Reference(RelatedPerson/701)
+* verification.verificationDate = "2026-09-01T10:20:00+02:00"
+* provision.type = #permit
+* provision.period.start = "2026-09-01T00:00:00+02:00"
+* provision.actor.role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#CONT
+* provision.actor.reference = Reference(RelatedPerson/701)
+* provision.data.meaning = #related
+* provision.data.reference = Reference(EpisodeOfCare/42)

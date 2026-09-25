@@ -40,6 +40,17 @@ The validity depends on the variant of `occurrence[x]` as follows:
 
     See the [wiki](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing) for examples.
 
+### Performer
+`ServiceRequest.performer` records who is expected to carry out the activity. When it is absent, the Patient is the assumed performer. A healthcare professional can assign a related person (pårørende) as performer by referencing a `RelatedPerson`. When a ServiceRequest is created or updated with a `RelatedPerson` performer, the infrastructure resolves the RelatedPerson from the patient service and rejects the request with HTTP 422 unless all of the following hold:
+
+* The RelatedPerson is *managed*, i.e. `RelatedPerson.meta.security` carries the code `managed` from `http://ehealth.sundhed.dk/cs/data-governance`. Only managed related persons carry a CPR number and can log in.
+* `RelatedPerson.period`, when present, includes the current date: a start in the future or an end in the past is rejected.
+* `RelatedPerson.patient` references the same Patient as `ServiceRequest.subject`.
+
+A performer that cannot be resolved is likewise rejected with HTTP 422.
+
+The infrastructure provides operations helping a performer determine what activities have been performed and/or are to be performed: [$get-patient-procedures](OperationDefinition--s-get-patient-procedures.html) excludes activities whose performer is anyone other than the Patient, and [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) returns the activities a given RelatedPerson is performer of. The `PlanDefinition.action.participant.type` of the plan template (`patient`, `practitioner`, `related-person` or `device`) is advisory only; no consistency between it and `ServiceRequest.performer` is enforced.
+
 ### Intended Questionnaire Linkages
 A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` extensions referencing
 [QuestionnaireLinkage](StructureDefinition-ehealth-questionnairelinkage.html) resources — the linkages
