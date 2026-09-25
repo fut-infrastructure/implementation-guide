@@ -3,10 +3,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Unreleased (2026.4)
 ### General changes
 ### Custom operations
-- `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
-#### System operations
 - Added `$get-performer-activities` system operation on the CarePlan service, returning the overview of activities a related person (RelatedPerson) is expected to perform on behalf of a Patient, with resolved timeslots and counts of submitted, timely and invalidated measurement data. The operation is the counterpart of `$get-patient-procedures` for activities with a performer other than the Patient. It is available to user type `RELATED_PERSON` with `context.role` `related_person` or `power_of_attorney` holding the `CarePlan$get-performer-activities` privilege; the output Bundle contains the referenced ServiceRequest resources and Parameters rows but deliberately no CarePlan resource. See the [OperationDefinition](OperationDefinition--s-get-performer-activities.html) and the [operation example](POST_get-performer-activities.html).
 - `$get-patient-procedures` now excludes ServiceRequests whose `performer` is present and references anyone other than the Patient in context, for instance a RelatedPerson. ServiceRequests without a performer are still included, the Patient being the assumed performer. **Note for vendors:** activities assigned to a related person no longer appear in the patient's own overview; they are reported by `$get-performer-activities` instead. No data migration is performed and no explicit performer is required on existing ServiceRequests.
+- `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
+#### System operations
 #### Instance operations
 ### Code systems
 - Added `questionnairelinkage` (Spørgeskemasammenknytning) to `http://ehealth.sundhed.dk/cs/basic-resource-type` (CCR0317).
