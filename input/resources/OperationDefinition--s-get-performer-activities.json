@@ -6,7 +6,7 @@
   "title": "Get performer activities",
   "status": "active",
   "kind": "operation",
-  "description": "This operation returns the overview of the activities a given performer is expected to carry out on behalf of a given patient, within a time period and optionally filtered by EpisodeOfCare, Condition code(s) and co-existence tag(s).\r\n\r\nIt is the counterpart of $get-patient-procedures, which reports the activities the patient performs themselves. Where $get-patient-procedures excludes any activity carrying a performer other than the patient, this operation reports exactly those activities where the performer is the one given as input.\r\n\r\nAs preparation for possible future use, the input ```performer``` is declared as Reference(RelatedPerson | Patient | Practitioner) to match ```ServiceRequest.performer```. With explicit ```performer```, the operation is prepared for possible future use where the user invoking the operation differs from the ```performer```.\r\n\r\nCurrently, supported ```performer``` is limited to a Reference to RelatedPerson only and for invoking user of type RelatedPerson only.\r\n## Input\r\nThe operation has five mandatory inputs: a Patient reference, a performer reference, a start date, an end date and the extra flag. Additionally it has three optional inputs: a list of reference(s) to EpisodeOfCare, a list of Codings for Condition and a list of Codings for co-existence tags.\r\n\r\nEvery reference input - patient, performer and episodeOfCare - must be given as an absolute reference, since each names a resource served by another service in the platform. A relative reference such as Patient/123 is not matched against the stored references and yields no activities.\r\n### Patient reference\r\nMandatory reference for the Patient whose care pathways, plans, activities and measurement data form the basis of the overview.\r\n### Performer reference\r\nMandatory reference for the person recorded as performer on the activities. Only RelatedPerson is supported.\r\n### Start and end datetimes\r\nStart and end datetime are both mandatory, and together specify the period of interest. Start may not be after end, the period may not begin further back than the configured measurement age limit, and it may not end further ahead than the configured activity horizon. A request outside either limit is rejected.\r\n### Extra boolean\r\nMandatory. Set to true if rows should be included for activities flagged as extra, i.e. where measurement data may be submitted on request or on the person's own initiative. Whether the ServiceRequest is included when extra is true is based on the ServiceRequest.includeAsExtra field.\r\n### EpisodeOfCare list\r\nOptional. If EpisodeOfCare are provided, activities must belong to a CarePlan related to one of the stated EpisodeOfCare. Supplying both episodeOfCare and conditionCode is rejected; supplying neither considers every episode of care of the patient.\r\n### Condition Coding list\r\nOptional. If Condition Coding are provided, activities must come from a CarePlan carrying one of the stated condition codes. Note that the code is matched against the condition of the CarePlan the activity belongs to, unlike $get-patient-procedures where it is matched against the conditions of the EpisodeOfCare. Supplying both conditionCode and episodeOfCare is rejected.\r\n\r\nA caller whose security context names an EpisodeOfCare must supply that episode as the episodeOfCare parameter, and therefore cannot use conditionCode: the two filters are mutually exclusive. Such a caller is already confined to a single episode of care, and narrows the result by co-existence tag or by period instead. conditionCode is available to callers whose context names no EpisodeOfCare.\r\n### Co-existence tag Coding list\r\nOptional. If co-existence tag Coding are provided, the activities considered are those carrying a co-existence tag matching at least one of the codes in the list.\r\n## Access control\r\nThe operation is available to user type RELATED_PERSON with context.role related_person or power_of_attorney holding the CarePlan$get-performer-activities privilege. Other RELATED_PERSON roles and the PATIENT and PRACTITIONER user types are rejected. In addition, the patient parameter must equal the Patient in the caller's security context, the performer parameter must equal the caller's own RelatedPerson, and when an EpisodeOfCare is present in the security context the episodeOfCare parameter must be supplied as exactly that single reference.\r\n## Output\r\nFor valid inputs, the server computes and returns a Bundle containing a Parameters resource with the resolved measurement regimes and the associated counts, the ServiceRequest referenced in the Parameters, and an OperationOutcome describing any encountered warnings.\r\n\r\nUnlike $get-patient-procedures, the Bundle carries no CarePlan resource: the performer is given the activities they are to perform and nothing further of the patient's plan. The CarePlan and PlanDefinition are still referenced on each row, so the user system can tell which activities belong to the same plan and determine seamless activity groups.\r\n\r\nOnly timeslots falling in a sub-period where the calling RelatedPerson was recorded as performer are returned, determined from the technical versions of the ServiceRequest within the requested period. Timeslots, counts and completion information belonging to another performer - including the patient themselves - are excluded from the output entirely.\r\n### Output Parameters\r\nRows are represented as Parameters.parameter with names: item_1, item_2, etc. Columns are represented as Parameters.parameter.part with name and value. Unlike $get-patient-procedures, a count of zero is reported rather than left out.\r\n\r\n### Columns\r\n\r\n- ServiceRequest: Reference to the ServiceRequest.\r\n- ServiceRequestVersionId: The version of the ServiceRequest (version specified at time of submit-measurement or the current version (for expected activities)).\r\n- CarePlan: Reference to the CarePlan the activity belongs to. The resource itself is not included in the Bundle.\r\n- PlanDefinition: Reference to the plan template the CarePlan was created from. The resource itself is not included in the Bundle.\r\n- Activity: Description of the planned activity.\r\n- ResolvedTimingStart: A planned start time for the activity in the requested period.\r\n- ResolvedTimingEnd: A planned end time for the activity in the requested period. May be identical to start if no duration is specified in the measurement regime.\r\n- TotalSubmitted: The number of measurements already submitted for this ServiceRequest and resolved timing.\r\n- SubmittedTimely: The number of measurements where the measurement time matches the resolved timing.\r\n- TimingType:\r\n    * Resolved: a measurement regime that is supported by the infrastructure and where resolved timing and requested number of measurements can be calculated.\r\n    * Unresolved: a measurement regime that is not supported by the infrastructure. Resolved Timing Start, end, submitted timely and Occurrences requested will be empty.\r\n    * Adhoc: A ServiceRequest without a measurement regime or a measurement regime stating ad-hoc.\r\n    * Extra: The service request may be performed outside the resolved timing.\r\n- OccurrencesRequested: Expected number of measurements.\r\n- TotalInvalidated: Number of measurements which are invalidated.",
+  "description": "This operation returns the overview of the activities a given performer is expected to carry out on behalf of a given patient, within a time period and optionally filtered by EpisodeOfCare, Condition code(s) and co-existence tag(s).\r\n\r\nIt is the counterpart of $get-patient-procedures, which reports the activities the patient performs themselves. Where $get-patient-procedures excludes any activity carrying a performer other than the patient, this operation reports exactly those activities where the performer is the one given as input.\r\n\r\nAs preparation for possible future use, the input ```performer``` is declared as a Reference to a RelatedPerson, a Patient or a Practitioner, matching the allowed targets of ```ServiceRequest.performer```. With explicit ```performer```, the operation is prepared for possible future use where the user invoking the operation differs from the ```performer```.\r\n\r\nCurrently, supported ```performer``` is limited to a Reference to RelatedPerson only and for invoking user of type RelatedPerson only.\r\n\r\nThe inputs, including their interdependencies, are described in the Parameters table below.\r\n## Access control\r\nThe operation is available to user type RELATED_PERSON with context.role related_person or power_of_attorney holding the CarePlan$get-performer-activities privilege. Other RELATED_PERSON roles and the PATIENT and PRACTITIONER user types are rejected. In addition, the patient parameter must equal the Patient in the caller's security context, the performer parameter must equal the caller's own RelatedPerson, and when an EpisodeOfCare is present in the security context the episodeOfCare parameter must be supplied as exactly that single reference.\r\n## Output\r\nFor valid inputs, the server returns a Bundle of type collection with the following entries:\r\n\r\n- One Parameters resource holding the overview as rows and columns, see Rows and columns below.\r\n- The ServiceRequest resources referenced from the rows.\r\n- Possibly an OperationOutcome describing encountered warnings.\r\n\r\nUnlike $get-patient-procedures, the Bundle carries no CarePlan resource: the performer is given the activities they are to perform and nothing further of the patient's plan. The CarePlan and PlanDefinition are still referenced on each row, so the user system can tell which activities belong to the same plan and determine seamless activity groups.\r\n\r\nOnly timeslots falling in a sub-period where the calling RelatedPerson was recorded as performer are returned, determined from the technical versions of the ServiceRequest within the requested period. Timeslots, counts and completion information belonging to another performer - including the patient themselves - are excluded from the output entirely.\r\n### Rows and columns\r\nThe Parameters resource is to be read as a table:\r\n\r\n- Rows: each top-level ```Parameters.parameter``` is one row, that is, one resolved timeslot (or one unresolved, ad hoc or extra activity) of a ServiceRequest. Rows are named item_1, item_2, etc. The name only distinguishes the rows from each other and carries no further meaning. The number of rows is the number of top-level parameters.\r\n- Columns: each ```Parameters.parameter.part``` of a row is one column of that row. The column is identified by ```part.name```, which is one of the column names listed below, and the cell value is the ```part.value[x]``` of the type stated for the column.\r\n\r\nA user system should look up columns by ```part.name``` rather than by position, and should expect a column to be absent from a row where it has no value (for instance ResolvedTimingStart for an Unresolved activity). Unlike $get-patient-procedures, a count of zero is reported rather than left out.\r\n\r\n### Columns\r\n\r\n- ServiceRequest (valueReference): Reference to the ServiceRequest.\r\n- ServiceRequestVersionId (valueId): The version of the ServiceRequest (version specified at time of submit-measurement or the current version (for expected activities)).\r\n- CarePlan (valueReference): Reference to the CarePlan the activity belongs to. The resource itself is not included in the Bundle.\r\n- PlanDefinition (valueReference): Reference to the plan template the CarePlan was created from. The resource itself is not included in the Bundle.\r\n- Activity (valueString): Description of the planned activity.\r\n- ResolvedTimingStart (valueDateTime): A planned start time for the activity in the requested period.\r\n- ResolvedTimingEnd (valueDateTime): A planned end time for the activity in the requested period. May be identical to start if no duration is specified in the measurement regime.\r\n- TotalSubmitted (valueInteger): The number of measurements already submitted for this ServiceRequest and resolved timing.\r\n- SubmittedTimely (valueInteger): The number of measurements where the measurement time matches the resolved timing.\r\n- TimingType (valueCodeableConcept, system http://ehealth.sundhed.dk/cs/resolved-timing-type):\r\n    * Resolved: a measurement regime that is supported by the infrastructure and where resolved timing and requested number of measurements can be calculated.\r\n    * Unresolved: a measurement regime that is not supported by the infrastructure. Resolved Timing Start, end, submitted timely and Occurrences requested will be empty.\r\n    * Adhoc: A ServiceRequest without a measurement regime or a measurement regime stating ad-hoc.\r\n    * Extra: The service request may be performed outside the resolved timing.\r\n- OccurrencesRequested (valueInteger): Expected number of measurements.\r\n- TotalInvalidated (valueInteger): Number of measurements which are invalidated.",
   "affectsState": true,
   "code": "get-performer-activities",
   "system": true,
@@ -18,23 +18,31 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Mandatory reference for the Patient whose activities the overview is computed for.",
-      "type": "Reference"
+      "documentation": "The Patient whose episodes of care, plans, activities and measurement data form the basis of the overview. Must equal the Patient in the caller's security context. Must be an absolute reference, since the Patient is served by another service in the platform; a relative reference such as Patient/123 is not matched against the stored references and yields no activities.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient"
+      ]
     },
     {
       "name": "performer",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Mandatory reference for the person recorded as performer. Only RelatedPerson is supported.",
-      "type": "Reference"
+      "documentation": "The person recorded as performer (ServiceRequest.performer) on the activities. Currently only RelatedPerson is supported, and it must equal the caller's own RelatedPerson. Must be an absolute reference, see patient.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-relatedperson",
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient",
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner"
+      ]
     },
     {
       "name": "start",
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Start datetime is mandatory, and together with end datetime specify the period of interest.",
+      "documentation": "Start of the period of interest. Must not be after end, and must not be further back than the configured measurement age limit. A request outside this limit is rejected.",
       "type": "dateTime"
     },
     {
@@ -42,7 +50,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "End datetime is mandatory, and together with start datetime specify the period of interest.",
+      "documentation": "End of the period of interest. Must not be before start, and must not be further ahead than the configured activity horizon. A request outside this limit is rejected.",
       "type": "dateTime"
     },
     {
@@ -50,7 +58,7 @@
       "use": "in",
       "min": 1,
       "max": "1",
-      "documentation": "Mandatory. Whether rows are included for activities flagged as extra, i.e. where measurement data may be submitted on request or on the person's own initiative.",
+      "documentation": "Set to true if rows should be included for activities flagged as extra, i.e. where measurement data may be submitted on request or on the person's own initiative. Whether the ServiceRequest is included when extra is true is based on the ServiceRequest.includeAsExtra field.",
       "type": "boolean"
     },
     {
@@ -58,7 +66,7 @@
       "use": "in",
       "min": 0,
       "max": "*",
-      "documentation": "The list of Coding for co-existence tags is optional. If co-existence tag Coding are provided, the activities considered are those carrying a co-existence tag matching at least one of the codes in the list.",
+      "documentation": "If provided, the activities considered are those carrying a co-existence tag matching at least one of the codes in the list. Can be combined with either episodeOfCare or conditionCode.",
       "type": "Coding"
     },
     {
@@ -66,15 +74,18 @@
       "use": "in",
       "min": 0,
       "max": "*",
-      "documentation": "The list of EpisodeOfCare references is optional. If EpisodeOfCare are provided, activities must belong to a CarePlan related to one of the stated EpisodeOfCare.",
-      "type": "Reference"
+      "documentation": "If provided, activities must belong to a CarePlan related to one of the stated EpisodeOfCare. Mutually exclusive with conditionCode: supplying both is rejected, and supplying neither considers every episode of care of the patient. When the caller's security context names an EpisodeOfCare, this parameter is required and must be exactly that single reference. Must be absolute reference(s), see patient.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-episodeofcare"
+      ]
     },
     {
       "name": "conditionCode",
       "use": "in",
       "min": 0,
       "max": "*",
-      "documentation": "The list of Coding for Condition is optional. If Condition Coding are provided, activities must come from a CarePlan carrying one of the stated condition codes.",
+      "documentation": "If provided, activities must come from a CarePlan carrying one of the stated condition codes. The code is matched against the condition of the CarePlan the activity belongs to, unlike $get-patient-procedures where it is matched against the conditions of the EpisodeOfCare. Mutually exclusive with episodeOfCare: supplying both is rejected. Consequently it is not available to a caller whose security context names an EpisodeOfCare, since that caller must supply episodeOfCare; such a caller narrows the result by co-existence tag or by period instead.",
       "type": "Coding"
     },
     {
@@ -82,6 +93,7 @@
       "use": "out",
       "min": 0,
       "max": "1",
+      "documentation": "A Bundle of type collection containing a Parameters resource with the overview rows, the ServiceRequest resources referenced from the rows and possibly an OperationOutcome describing encountered warnings. See Output and Rows and columns above for how to read the Parameters resource.",
       "type": "Bundle"
     }
   ]

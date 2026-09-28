@@ -15,11 +15,11 @@ When a Patient gives a consent, this consent must be recorded as a Consent resou
 
 eHealth operates with five categories of consents:
 
-1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpretated to also apply to all CarePlan instances related to the consented EpisodeOfCare.
+1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpreted to also apply to all CarePlan instances related to the consented EpisodeOfCare.
 
 2. Category **SSLPCI**: Consent given by a Patient to have his/her contact information (physical address and telecommunication endpoints) being disclosed to a specified actor supplying device(s) and service(s) to the Patient as part of an EpisodeOfCare and related CarePlan(s).
 
-3. Category **behavior-by-policy**: A policy-driven behaviour marker that records whether an actor is permitted or denied a behaviour, where the concrete behaviour is identified by the `Consent.policy.uri`. Unlike PITEOC and SSLPCI, a behavior-by-policy Consent is not necessarily a consent given by the Patient — it is typically recorded by a Practitioner. The behaviour can be scoped to a care pathway (EpisodeOfCare) and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. The policies that can be expressed are defined in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html). At present, the only defined policy controls whether triage results may be displayed to the Patient; additional policies may be added in the future. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation) below for details of that policy.
+3. Category **behavior-by-policy**: A policy-driven behaviour marker that records whether an actor is permitted or denied a behaviour, where the concrete behaviour is identified by the `Consent.policy.uri`. Unlike PITEOC and SSLPCI, a behavior-by-policy Consent is not necessarily a consent given by the Patient — it is typically recorded by a Practitioner. The behaviour can be scoped to an EpisodeOfCare and/or a citizen-specific plan (CarePlan) by means of the ehealth-consent-affiliation extension. The policies that can be expressed are defined in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html). At present, the only defined policy controls whether triage results may be displayed to the Patient; additional policies may be added in the future. See [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) and [Affiliation](#affiliation) below for details of that policy.
 
 4. Category **PORPI** (Processing of RelatedPerson Information): Consent given by a RelatedPerson to have information about themselves, including their CPR number, stored and processed in the infrastructure. This is a precondition for a related person being able to log in and perform activities on behalf of the Patient. See [Consents for related persons performing activities](#consents-for-related-persons-performing-activities).
 
@@ -117,7 +117,7 @@ When the affiliation extension is used, the infrastructure validates the followi
 - Any `CarePlan` affiliation must reference a `CarePlan` whose `CarePlan.episodeOfCare` equals the affiliated `EpisodeOfCare`.
 
 Accordingly, the affiliation level expresses where the decision applies:
-- An affiliation to **only an EpisodeOfCare** expresses a decision at the care pathway (EpisodeOfCare) level.
+- An affiliation to **only an EpisodeOfCare** expresses a decision at the EpisodeOfCare level.
 - An affiliation to **both an EpisodeOfCare and a CarePlan** expresses a decision at the citizen-specific plan (CarePlan) level.
 
 See [Affiliation](#affiliation) for the extension definition.
@@ -221,8 +221,8 @@ An **RPCTEOC** consent is expressed with the following elements:
     </tr>
     <tr>
       <td><code>Consent.verification</code></td>
-      <td><code>verified</code> = <code>true</code>, <code>verifiedWith</code> = reference to the <code>RelatedPerson</code>, <code>verificationDate</code> = the date/time of verification</td>
-      <td>Records that the consent has been verified with the related person.</td>
+      <td><code>verified</code> = <code>true</code>, <code>verifiedWith</code> = reference to the <code>Patient</code>, <code>verificationDate</code> = the date/time of verification</td>
+      <td>Records that the consent has been verified with the Patient.</td>
     </tr>
     <tr>
       <td><code>Consent.provision.type</code></td>

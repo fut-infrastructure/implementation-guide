@@ -84,7 +84,7 @@ Description: "A Patient consents to a specific RelatedPerson contributing measur
 * performer = Reference(Patient/102)
 * organization = Reference(Organization/1)
 * verification.verified = true
-* verification.verifiedWith = Reference(RelatedPerson/701)
+* verification.verifiedWith = Reference(Patient/102)
 * verification.verificationDate = "2026-09-01T10:20:00+02:00"
 * provision.type = #permit
 * provision.period.start = "2026-09-01T00:00:00+02:00"
