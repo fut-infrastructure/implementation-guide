@@ -66,6 +66,9 @@
   path: POST_get-patient-procedures-AT.html
 
 - profile: system
+  path: POST_get-performer-activities.html
+
+- profile: system
   path: POST_CarePlan_suggest-care-teams.html
 
 - profile: system
