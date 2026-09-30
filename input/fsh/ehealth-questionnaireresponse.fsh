@@ -34,7 +34,7 @@ Description: "Clinically relevant time-period for questionnaire response."
 
 Extension: ehealth-questionnaireresponse-patientAnswerSignificance
 Title:     "patientAnswerSignificance"
-Description: "The version of the individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. The reference is version-specific (ehealth-patient-answersignificance/{id}/_history/{vid}). The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced. If absent, triage uses the answerSignificance of the questionnaire."
+Description: "The version of the individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. The reference is version-specific (Questionnaire/{id}/_history/{vid}). The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced, or removed if the ServiceRequest has no reference. If absent, triage uses the answerSignificance of the questionnaire."
 * . ^short = "Version of the individualised triage indicators that applied at submit"
 * value[x] only Reference(ehealth-patient-answersignificance)
 * valueReference 1..1

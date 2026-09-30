@@ -123,3 +123,19 @@ Description: "Basis for the overall clinical impression finding of the questionn
 * extension[linkId] ^short = "Unique id for item in questionnaire"
 * extension contains ehealth-questionnaire-answerSignificance named answerSignificance 1..1
 * extension[answerSignificance] ^short = "The Answer significance for an answer"
+
+
+Instance: ClinicalImpression/triage-pas-example
+InstanceOf: ehealth-clinicalimpression
+Usage: #example
+* id = "triage-pas-example"
+* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-clinicalimpression"
+* extension[episodeOfCare].valueReference = Reference(EpisodeOfCare/42)
+* status = #completed
+* code = http://ehealth.sundhed.dk/cs/clinicalimpression-codes#TriagingResult
+* subject = Reference(Patient/102)
+* investigation[0].code = http://ehealth.sundhed.dk/cs/clinicalimpression-investigation-item-codes#item-for-investigation
+* investigation[0].item[0] = Reference(QuestionnaireResponse/301/_history/1)
+* investigation[0].item[1] = Reference(QuestionnaireResponse/301)
+* investigation[0].extension[patientAnswerSignificance].valueReference = Reference(Questionnaire/pas-example/_history/1)
+* finding[0].itemCodeableConcept = http://ehealth.sundhed.dk/cs/clinicalimpression-finding-codes#green

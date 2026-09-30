@@ -5,7 +5,7 @@ PatientAnswerSignificance holds individualised triage indicators for one patient
 The resource is created with the `$create-patient-answersignificance` operation on a ServiceRequest. The operation:
 * copies the item structure and the answer significance from the questionnaire of the ServiceRequest, including nested items
 * sets `derivedFrom` to the versioned canonical of that questionnaire (`url|version`)
-* sets the `ehealth-patient-answersignificance-subject`, `ehealth-reference-careplan` and `ehealth-patient-answersignificance-episodeOfCare` extensions from the ServiceRequest
+* sets the `ehealth-patient-answersignificance-subject` and `ehealth-patient-answersignificance-episodeOfCare` extensions from the ServiceRequest, and the `ehealth-patient-answersignificance-carePlan` extension to the CarePlan whose `activity` references the ServiceRequest
 * sets the `ehealth-servicerequest-patientAnswerSignificance` extension on the ServiceRequest
 
 The operation rejects the request if the ServiceRequest already refers to a PatientAnswerSignificance, or if its `ehealth-individualisation-locked` extension is `true`.
