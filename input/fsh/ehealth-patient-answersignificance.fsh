@@ -93,24 +93,3 @@ Invariant: pas-nested-item-elements
 Description: "Nested items SHALL only contain linkId, type, the answerSignificance extension and nested items."
 Expression: "item.repeat(item).all(definition.empty() and code.empty() and prefix.empty() and text.empty() and enableWhen.empty() and enableBehavior.empty() and required.empty() and repeats.empty() and readOnly.empty() and maxLength.empty() and answerValueSet.empty() and answerOption.empty() and initial.empty() and modifierExtension.empty() and extension.where(url != 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-questionnaire-answerSignificance').empty())"
 Severity: #error
-
-
-Instance: Questionnaire/pas-example
-InstanceOf: ehealth-patient-answersignificance
-Usage: #example
-* id = "pas-example"
-* meta.profile = "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-patient-answersignificance"
-* extension[subject].valueReference = Reference(Patient/102)
-* extension[episodeOfCare].valueReference = Reference(EpisodeOfCare/42)
-* extension[carePlan].valueReference = Reference(CarePlan/201)
-* status = #active
-* derivedFrom = "http://ehealth.sundhed.dk/fhir/Questionnaire/2001|1.0"
-* item[0].linkId = "tiredness"
-* item[0].type = #integer
-* item[0].extension[answerSignificance].extension[answerCondition].extension[value].valueInteger = 5
-* item[0].extension[answerSignificance].extension[answerCondition].extension[operator].valueCode = #">="
-* item[0].extension[answerSignificance].extension[significance].valueCoding = http://ehealth.sundhed.dk/cs/questionnaire-item-significance-indicator#yellow
-* item[1].linkId = "wellbeing"
-* item[1].type = #group
-* item[1].item[0].linkId = "wellbeing.sleep"
-* item[1].item[0].type = #boolean
