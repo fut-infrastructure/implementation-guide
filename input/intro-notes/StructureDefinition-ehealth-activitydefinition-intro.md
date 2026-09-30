@@ -83,3 +83,6 @@ When using `useContext.code` from [http://ehealth.sundhed.dk/vs/ehealth-usage-co
 
 ### ApprovalDate
 The date when the ActivityDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.
+
+### Individualisation lock
+The `ehealth-individualisation-locked` extension set to `true` forbids individualised triage indicators ([PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html)) for the activity. When absent or `false`, individualisation is allowed, unless the questionnaire is locked. `PlanDefinition/$apply` copies the lock to the created ServiceRequest. The value can only be changed while the ActivityDefinition is in draft.

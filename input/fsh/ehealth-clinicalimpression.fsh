@@ -22,6 +22,7 @@ Parent: ClinicalImpression
 * problem ^type.aggregation = #referenced
 * investigation.extension contains ehealth-clinicalimpression-viewInvestigationItem named viewInvestigationItem 0..*
 * investigation.extension contains ehealth-clinicalimpression-otherItem named otherItem 0..*
+* investigation.extension contains ehealth-clinicalimpression-patientAnswerSignificance named patientAnswerSignificance 0..1
 * investigation.item only Reference(ehealth-media or ehealth-observation or ehealth-questionnaireresponse or FamilyMemberHistory or DiagnosticReport or RiskAssessment or ImagingStudy)
 * investigation.item ^type.aggregation = #referenced
 * investigation.code from http://ehealth.sundhed.dk/vs/clinicalimpression-investigation-item-codes (example)
@@ -87,6 +88,14 @@ Title:       "View investigation item"
 Description: "Investigation item for View resources so they can be approved."
 * . ^short = "View item"
 * value[x] only Reference(ehealth-view)
+* valueReference 1..1
+* value[x] ^type.aggregation = #referenced
+
+Extension:   ehealth-clinicalimpression-patientAnswerSignificance
+Title:       "patientAnswerSignificance"
+Description: "The version of the individualised triage indicators (ehealth-patient-answersignificance) that the triage used. The infrastructure sets it on the investigation that holds the triaged QuestionnaireResponse, with the version-specific reference from ehealth-questionnaireresponse-patientAnswerSignificance. Absent when the triage used the answer significance of the questionnaire."
+* . ^short = "Version of the individualised triage indicators used by the triage"
+* value[x] only Reference(ehealth-patient-answersignificance)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 

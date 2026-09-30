@@ -38,6 +38,10 @@ Each element includes the following:
 * the clinical impression finding code corresponding to the triggered answer significance
 * the triggered ehealth-questionnaire-answerSignificance
 
+### Use for Individualised Triage Indicators
+
+When the triage used individualised triage indicators, the investigation that holds the triaged QuestionnaireResponse carries the `ehealth-clinicalimpression-patientAnswerSignificance` extension. It is a version-specific reference to the [PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html) that was used. When the triage used the answer significance of the questionnaire, the extension is absent.
+
 ### Use for Practitioner's Assessment
 
 The ClinicalImpression instance for the Practitioner assessment can refer to a ClinicalImpression instance of the other types through the element `previous`.
