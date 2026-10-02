@@ -40,7 +40,7 @@ Each element includes the following:
 
 ### Use for Individualised Triage Indicators
 
-When the triage used individualised triage indicators, the investigation that holds the triaged QuestionnaireResponse carries the `ehealth-clinicalimpression-patientAnswerSignificance` extension. It is a version-specific reference to the [PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html) that was used. When the triage used the answer significance of the questionnaire, the extension is absent.
+When the triage used individualised triage indicators, the `ehealth-clinicalimpression-decisionContext` extension lists the [PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html) that was used as a fact, with a version-specific reference. When the triage used the answer significance of the questionnaire, the questionnaire is listed as the fact instead.
 
 ### Use for Practitioner's Assessment
 

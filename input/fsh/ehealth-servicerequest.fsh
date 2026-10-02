@@ -75,4 +75,4 @@ Description: "The individualised triage indicators (ehealth-patient-answersignif
 * . ^short = "Individualised triage indicators that apply to this ServiceRequest"
 * value[x] only Reference(ehealth-patient-answersignificance)
 * valueReference 1..1
-* valueReference ^type.aggregation = #referenced
+* value[x] ^type.aggregation = #referenced

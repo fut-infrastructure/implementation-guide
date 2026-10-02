@@ -14,7 +14,6 @@ Description: "Individualised triage indicators for one patient: a slim copy of a
 * status = #active
 * derivedFrom 1..1
 * derivedFrom only Canonical(ehealth-questionnaire)
-* derivedFrom obeys pas-versioned-derived-from
 
 * implicitRules 0..0
 * language 0..0
@@ -63,7 +62,7 @@ Description: "The patient the individualised triage indicators apply to. Copied 
 * . ^short = "The patient the individualised triage indicators apply to"
 * value[x] only Reference(ehealth-patient)
 * valueReference 1..1
-* valueReference ^type.aggregation = #referenced
+* value[x] ^type.aggregation = #referenced
 
 
 Extension:   ehealth-patient-answersignificance-episodeOfCare
@@ -83,11 +82,6 @@ Description: "The CarePlan whose activity references the ServiceRequest. Set whe
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
-
-Invariant: pas-versioned-derived-from
-Description: "derivedFrom SHALL be a versioned canonical (url|version)."
-Expression: "$this.toString().matches('^.+[|].+$')"
-Severity: #error
 
 Invariant: pas-nested-item-elements
 Description: "Nested items SHALL only contain linkId, type, the answerSignificance extension and nested items."
