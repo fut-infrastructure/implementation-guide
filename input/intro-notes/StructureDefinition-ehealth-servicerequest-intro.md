@@ -59,27 +59,9 @@ references are inherited from the plan template's action by `PlanDefinition/$app
 changed or removed via standard ServiceRequest update.
 
 ### Search
-ServiceRequests can be searched by Practitioner, Patient, RelatedPerson and system users holding the `CarePlan.search` privilege. The supported search parameters are listed in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html). In addition to the standard search parameters, the following custom search parameters are supported:
+The supported search parameters are listed in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html). In addition to the standard search parameters, the following custom search parameters are supported:
 
 * `occurrenceDateTime` (date): searches `occurrenceDateTime`. ServiceRequests using another variant of `occurrence[x]` are not matched.
 * `occurrencePeriod` (date): searches `occurrencePeriod`. ServiceRequests using another variant of `occurrence[x]` are not matched.
 * `occurrencePeriodEnd` (date): searches `occurrencePeriod.end`. To search within a period, give the parameter twice with a lower and an upper bound, e.g. `occurrencePeriodEnd=ge2026-01-01&occurrencePeriodEnd=le2026-03-31`.
 * `episodeOfCare` (reference): searches the EpisodeOfCare of the ServiceRequest. Supports the chained search `episodeOfCare.team` for the CareTeam of the EpisodeOfCare.
-
-Depending on the user type, the following search parameters are mandatory and must match the user's security context; otherwise the search is rejected with HTTP 403:
-
-* As practitioner user
-  * The CareTeam context is mandatory, and the search parameter `episodeOfCare.team` is mandatory and must match the CareTeam in the user context.
-  * When the user context contains an EpisodeOfCare, the search parameter `episodeOfCare` is mandatory and must match it.
-  * When the user context contains a Patient, the search parameter `subject` is mandatory and must match it.
-* As patient or related person user
-  * The search parameter `subject` is mandatory and must match the Patient in the user context.
-  * When the user context contains an EpisodeOfCare, the search parameter `episodeOfCare` is mandatory and must match it.
-* As system user
-  * No search parameters are mandatory.
-
-Example of a practitioner searching the completed ServiceRequests of a CareTeam with a given code whose occurrence period ends in the first quarter of 2026:
-
-```
-GET [base]/ServiceRequest?episodeOfCare.team=https://organization.devtest.systematic-ehealth.com/fhir/CareTeam/123&occurrencePeriodEnd=ge2026-01-01&occurrencePeriodEnd=le2026-03-31&code=[system]|[code]&status=completed
-```
