@@ -14,6 +14,8 @@ Parent: ServiceRequest
 * extension contains ehealth-include-as-extra named includeAsExtra 1..1
 * extension contains ehealth-intendedQuestionnaireLinkage named intendedQuestionnaireLinkage 0..*
 * extension contains ehealth-aggregate-id named aggregateId 0..1
+* extension contains ehealth-individualisation-locked named individualisationLocked 0..1
+* extension contains ehealth-servicerequest-patientAnswerSignificance named patientAnswerSignificance 0..1
 
 * instantiatesCanonical 1..1
 * instantiatesCanonical only Canonical(ehealth-activitydefinition)
@@ -66,3 +68,11 @@ Description: "An optional identifier used to associate this ServiceRequest with 
 * . ^short = "Aggregate identifier for grouping purposes."
 * value[x] only string
 * valueString 0..1
+
+Extension: ehealth-servicerequest-patientAnswerSignificance
+Title:     "patientAnswerSignificance"
+Description: "The individualised triage indicators (ehealth-patient-answersignificance) that apply to this ServiceRequest now. The $create-patient-answersignificance operation sets the reference. The reference is version-independent. It can be removed and set again. Several ServiceRequests for the same questionnaire version, in the same CarePlan and EpisodeOfCare, can reference the same resource. If absent, triage uses the answerSignificance of the questionnaire."
+* . ^short = "Individualised triage indicators that apply to this ServiceRequest"
+* value[x] only Reference(ehealth-patient-answersignificance)
+* valueReference 1..1
+* value[x] ^type.aggregation = #referenced

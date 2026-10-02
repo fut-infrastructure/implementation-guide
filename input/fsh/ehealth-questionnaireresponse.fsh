@@ -7,6 +7,7 @@ Parent: QuestionnaireResponse
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
 * extension contains ehealth-effectivePeriod named effectivePeriod 0..1
+* extension contains ehealth-questionnaireresponse-patientAnswerSignificance named patientAnswerSignificance 0..1
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
@@ -30,3 +31,16 @@ Description: "Clinically relevant time-period for questionnaire response."
 * . ^short = "Clinically relevant time-period for questionnaire response."
 * value[x] only Period
 * valuePeriod 1..1
+
+Extension: ehealth-questionnaireresponse-patientAnswerSignificance
+Title:     "patientAnswerSignificance"
+Description: "The individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. `reference` is the version-independent reference. `versionId` is the technical version (`meta.versionId`) of the PatientAnswerSignificance that applied at submit. `{reference}/_history/{versionId}` reads that exact version. The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced, or removed if the ServiceRequest has no reference. If absent, triage uses the answerSignificance of the questionnaire."
+* . ^short = "Individualised triage indicators and the technical version that applied at submit"
+* extension contains
+    reference 1..1 and
+    versionId 1..1
+* extension[reference].value[x] only Reference(ehealth-patient-answersignificance)
+* extension[reference].valueReference 1..1
+* extension[reference].value[x] ^type.aggregation = #referenced
+* extension[versionId].value[x] only id
+* extension[versionId].valueId 1..1
