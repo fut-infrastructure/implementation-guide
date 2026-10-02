@@ -57,3 +57,11 @@ A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` e
 application systems are intended to use when presenting the questionnaire responses of this request. The
 references are inherited from the plan template's action by `PlanDefinition/$apply` and may subsequently be
 changed or removed via standard ServiceRequest update.
+
+### Search
+The supported search parameters are listed in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html). In addition to the standard search parameters, the following custom search parameters are supported:
+
+* `occurrenceDateTime` (date): searches `occurrenceDateTime`. ServiceRequests using another variant of `occurrence[x]` are not matched.
+* `occurrencePeriod` (date): searches `occurrencePeriod`. ServiceRequests using another variant of `occurrence[x]` are not matched.
+* `occurrencePeriodEnd` (date): searches `occurrencePeriod.end`. To search within a period, give the parameter twice with a lower and an upper bound, e.g. `occurrencePeriodEnd=ge2026-01-01&occurrencePeriodEnd=le2026-03-31`.
+* `episodeOfCare` (reference): searches the EpisodeOfCare of the ServiceRequest. Supports the chained search `episodeOfCare.team` for the CareTeam of the EpisodeOfCare.
