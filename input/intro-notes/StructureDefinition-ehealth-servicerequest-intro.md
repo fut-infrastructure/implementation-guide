@@ -57,3 +57,14 @@ A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` e
 application systems are intended to use when presenting the questionnaire responses of this request. The
 references are inherited from the plan template's action by `PlanDefinition/$apply` and may subsequently be
 changed or removed via standard ServiceRequest update.
+
+### Individualised Triage Indicators
+A ServiceRequest may carry an `ehealth-servicerequest-patientAnswerSignificance` extension referencing a
+[PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html) resource with
+individualised triage indicators for the patient. The `$create-patient-answersignificance` operation sets the
+reference. It can subsequently be removed, or set to an existing PatientAnswerSignificance for the same
+questionnaire version, CarePlan and EpisodeOfCare, via standard ServiceRequest update.
+
+The `ehealth-individualisation-locked` extension is set by `PlanDefinition/$apply`. It is `true` if the
+ActivityDefinition or the Questionnaire is locked. When it is `true`, the ServiceRequest cannot refer to a
+PatientAnswerSignificance. The value cannot be changed after the ServiceRequest is created.

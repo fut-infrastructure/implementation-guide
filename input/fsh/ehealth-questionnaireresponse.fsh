@@ -7,6 +7,7 @@ Parent: QuestionnaireResponse
 * extension contains ehealth-quality named quality 0..*
 * extension contains ehealth-resolved-timing named resolvedTiming 1..1
 * extension contains ehealth-effectivePeriod named effectivePeriod 0..1
+* extension contains ehealth-questionnaireresponse-patientAnswerSignificance named patientAnswerSignificance 0..1
 * basedOn 1..1
 * basedOn only Reference(ehealth-servicerequest)
 * basedOn ^type.aggregation = #referenced
@@ -30,3 +31,10 @@ Description: "Clinically relevant time-period for questionnaire response."
 * . ^short = "Clinically relevant time-period for questionnaire response."
 * value[x] only Period
 * valuePeriod 1..1
+
+Extension: ehealth-questionnaireresponse-patientAnswerSignificance
+Title:     "patientAnswerSignificance"
+Description: "The individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. The value is the absolute URL of the PatientAnswerSignificance with its technical version (`meta.versionId`), for example `https://careplan.<env>.ehealth.sundhed.dk/fhir/Questionnaire/{id}/_history/{vid}`, and resolves to that exact version. The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced, or removed if the ServiceRequest has no reference. If absent, triage uses the answerSignificance of the questionnaire."
+* . ^short = "Version of the individualised triage indicators that applied at submit"
+* value[x] only Canonical(ehealth-patient-answersignificance)
+* valueCanonical 1..1

@@ -13,6 +13,7 @@ Parent: ActivityDefinition
 * extension contains ehealth-predecessor named predecessor 0..1
 * extension contains ehealth-base named base 0..1
 * extension contains ehealth-base-environment named baseEnvironment 0..1
+* extension contains ehealth-individualisation-locked named individualisationLocked 0..1
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
 * topic from http://ehealth.sundhed.dk/vs/topic-type
