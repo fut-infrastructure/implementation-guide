@@ -13,7 +13,7 @@ The operation rejects the request if the ServiceRequest already refers to a Pati
 After creation, only the `answerSignificance` extensions can be added, changed or removed. The `derivedFrom` element, the item structure and the subject, CarePlan and EpisodeOfCare extensions cannot be changed.
 
 ### When the individualised indicators apply
-The reference on the ServiceRequest decides which indicators apply. When a QuestionnaireResponse is submitted for a ServiceRequest that has the reference, the infrastructure sets the reference and the current version in the `ehealth-questionnaireresponse-patientAnswerSignificance` extension. Triage then uses the individualised indicators of that version in full, and does not use the answer significance of the questionnaire. The two sources are never mixed. When the ServiceRequest has no reference, triage uses the answer significance of the questionnaire.
+The reference on the ServiceRequest decides which indicators apply. When a QuestionnaireResponse is submitted for a ServiceRequest that has the reference, the infrastructure sets the URL of the current version (`.../_history/{vid}`) in the `ehealth-questionnaireresponse-patientAnswerSignificance` extension. Triage then uses the individualised indicators of that version in full, and does not use the answer significance of the questionnaire. The two sources are never mixed. When the ServiceRequest has no reference, triage uses the answer significance of the questionnaire.
 
 If the referenced PatientAnswerSignificance cannot be resolved, the response is not triaged, and a task is created for the response that was not triaged.
 
