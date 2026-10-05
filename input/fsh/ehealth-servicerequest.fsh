@@ -71,7 +71,7 @@ Description: "An optional identifier used to associate this ServiceRequest with 
 
 Extension: ehealth-servicerequest-patientAnswerSignificance
 Title:     "patientAnswerSignificance"
-Description: "The individualised triage indicators (ehealth-patient-answersignificance) that apply to this ServiceRequest now. The $create-patient-answersignificance operation sets the reference. The reference is version-independent. It can be removed and set again. Several ServiceRequests for the same questionnaire version, in the same CarePlan and EpisodeOfCare, can reference the same resource. If absent, triage uses the answerSignificance of the questionnaire."
+Description: "The individualised triage indicators (ehealth-patient-answersignificance) that apply to this ServiceRequest now. The $create-patient-answersignificance operation sets the reference. The reference is version-independent. It can be removed and set again. Several ServiceRequests whose ActivityDefinition refers to the same questionnaire, in the same CarePlan and EpisodeOfCare, can reference the same resource. If absent, triage uses the answerSignificance of the questionnaire."
 * . ^short = "Individualised triage indicators that apply to this ServiceRequest"
 * value[x] only Reference(ehealth-patient-answersignificance)
 * valueReference 1..1

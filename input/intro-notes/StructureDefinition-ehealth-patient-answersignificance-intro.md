@@ -22,4 +22,4 @@ The ClinicalImpression with the triage result refers to the version that was use
 Removing the reference from the ServiceRequest does not delete the PatientAnswerSignificance. The reference can be set again later.
 
 ### Sharing between ServiceRequests
-Several ServiceRequests can refer to the same PatientAnswerSignificance, if they are for the same questionnaire version, in the same CarePlan and EpisodeOfCare.
+Several ServiceRequests can refer to the same PatientAnswerSignificance, if their ActivityDefinitions refer to the same questionnaire and they are in the same CarePlan and EpisodeOfCare. The check compares `derivedFrom` without the `/_history/{vid}` part.

@@ -36,7 +36,7 @@ Answer significance is a colour. Currently the possible values are red, yellow, 
     * `answerCondition.operator` determines the relationship between the `answerCondition.value[x]` and a given answer. When a single `answerSignificance.answerCondition` is given, it represents a precise match or possibly open ended interval. Two `answerSignificance.answerCondition` can specify an interval. To check that a written answer exists, use `answerCondition.operator = exists` and `answerCondition.valueBoolean = true`.
     
 ### Individualisation lock
-The `ehealth-individualisation-locked` extension set to `true` forbids individualised triage indicators ([PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html)) for this questionnaire. When absent or `false`, clinicians can individualise the answer significance for a patient. The value can only be changed while the questionnaire is in draft.
+The `ehealth-individualisation-locked` extension set to `true` forbids individualised triage indicators ([PatientAnswerSignificance](StructureDefinition-ehealth-patient-answersignificance.html)) for this questionnaire. When absent or `false`, clinicians can individualise the answer significance for a patient, unless the ActivityDefinition is locked. The value can only be changed while the questionnaire is in draft.
 
 ### Item control
 The `item.questionnaire-itemControl` element enables indication of what sort of user interface control type, for instance radio buttons, to use when displaying an item.

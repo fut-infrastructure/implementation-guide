@@ -34,7 +34,7 @@ Description: "Clinically relevant time-period for questionnaire response."
 
 Extension: ehealth-questionnaireresponse-patientAnswerSignificance
 Title:     "patientAnswerSignificance"
-Description: "The individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. The value is the absolute URL of the PatientAnswerSignificance with its technical version (`meta.versionId`), for example `https://careplan.<env>.ehealth.sundhed.dk/fhir/Questionnaire/{id}/_history/{vid}`, and reads that exact version. The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced, or removed if the ServiceRequest has no reference. If absent, triage uses the answerSignificance of the questionnaire."
+Description: "The individualised triage indicators (ehealth-patient-answersignificance) that applied when the response was submitted. The value is the absolute URL of the PatientAnswerSignificance with its technical version (`meta.versionId`), for example `https://careplan.<env>.ehealth.sundhed.dk/fhir/Questionnaire/{id}/_history/{vid}`, and resolves to that exact version. The infrastructure sets it at submit from the reference on the ServiceRequest. A value sent by the client is replaced, or removed if the ServiceRequest has no reference. If absent, triage uses the answerSignificance of the questionnaire."
 * . ^short = "Version of the individualised triage indicators that applied at submit"
 * value[x] only Canonical(ehealth-patient-answersignificance)
 * valueCanonical 1..1
