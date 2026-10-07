@@ -40,7 +40,7 @@ Parent: Communication
 * recipient 0..1
 * recipient only Reference(Patient or Practitioner or ehealth-relatedperson)
 * recipient ^type.aggregation = #referenced
-* sender only Reference(Device or Patient or Practitioner)
+* sender only Reference(Device or Patient or Practitioner or RelatedPerson)
 * sender ^type.aggregation[+] = #referenced
 * sender ^type.aggregation[+] = #contained
 * reasonCode from http://ehealth.sundhed.dk/vs/message-reasonCode
@@ -89,13 +89,13 @@ Extension: ehealth-on-behalf-of
 Title:     "On behalf of"
 Description: "On behalf of"
 * . ^short = "On behalf of"
-* value[x] only Reference(ehealth-careteam)
+* value[x] only Reference(ehealth-careteam or ehealth-patient)
 * valueReference 1..1
 * value[x] ^type.aggregation = #referenced
 
 Invariant:   message-invariant
 Description: "Category message invariant"
-Expression:  "category.coding.code contains 'message' implies (recipient.reference.contains('Patient/') and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value.as(Reference).exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists()) and (sender.reference.contains('Patient/')) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value.as(Reference).exists() ))"
+Expression:  "category.coding.code contains 'message' implies (recipient.reference.contains('Patient/') and ( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value.as(Reference).exists())) or (( extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists()) and (sender.reference.contains('Patient/')) or (extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value.as(Reference).exists() and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value.as(Reference).exists() )) or (sender.reference.contains('RelatedPerson/') and extension.where(url = 'http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-on-behalf-of').value.as(Reference).reference.contains('Patient/'))"
 Severity:    #error
 
 Invariant:   note-invariant
