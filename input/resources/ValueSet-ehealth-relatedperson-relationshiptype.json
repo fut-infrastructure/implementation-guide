@@ -76,6 +76,14 @@
         ]
       },
       {
+        "system": "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+        "concept": [
+          {
+            "code": "PARAUTH"
+          }
+        ]
+      },
+      {
         "system": "http://ehealth.sundhed.dk/cs/poa-privilege"
       },
       {

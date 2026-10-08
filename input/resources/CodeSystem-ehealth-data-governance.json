@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-data-governance",
+  "url": "http://ehealth.sundhed.dk/cs/data-governance",
+  "version": "0.6.0",
+  "name": "DataGovernance",
+  "title": "Data Governance",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-07-21T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Data governance codes describing how the master data of a resource is governed by the infrastructure.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "managed",
+      "display": "Managed",
+      "definition": "The master data of this resource is owned and kept in sync by the infrastructure. Master-data fields are locked against client updates and are maintained through infrastructure paths only."
+    }
+  ]
+}

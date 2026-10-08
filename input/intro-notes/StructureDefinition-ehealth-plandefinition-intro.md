@@ -106,3 +106,10 @@ When using `useContext.code` from [http://ehealth.sundhed.dk/vs/ehealth-usage-co
 
 ### ApprovalDate
 The date when the PlanDefinition's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.
+
+### Intended Questionnaire Linkages
+Each `action` (at any nesting level) may carry zero or more `ehealth-intendedQuestionnaireLinkage`
+extensions referencing [QuestionnaireLinkage](StructureDefinition-ehealth-questionnairelinkage.html)
+resources. The plan template author hereby designates which linkages application systems are intended to
+use when presenting the questionnaire responses of the activity (e.g. cross-version or cross-questionnaire
+comparison). The `$apply` operation copies the designation onto the created ServiceRequests.
