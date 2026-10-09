@@ -19,7 +19,7 @@ Parent: Basic
 
 Extension: ehealth-questionnairelinkage-for
 Title:     "Questionnaire linkage for"
-Description: "A questionnaire participating in the linkage. References are version-specific: each questionnaire business version is a separate resource, and two versions of the same questionnaire may both participate in a linkage. The reference SHOULD carry the referenced questionnaire's version-unique business identifier in Reference.identifier as an environment-independent handle."
+Description: "A questionnaire participating in the linkage, given as a normal (not version-specific) reference. Each questionnaire business version is a separate Questionnaire resource, so two versions of the same questionnaire may both participate in a linkage by referencing both resources. The reference SHOULD carry the referenced questionnaire's business identifier in Reference.identifier as an environment-independent handle."
 * . ^short = "Questionnaire participating in the linkage"
 * value[x] only Reference(ehealth-questionnaire)
 * valueReference 1..1
