@@ -8,17 +8,20 @@ The mechanism rests on four elements:
 4. *Search* in which the solution chooses whether to constrain a query with one or more coexistence tags.
 
 ### JWT Coexistence Scopes
+
 The coexistence tags a solution is permitted to use are carried as scopes in the `scope` claim of the access token issued by the eHealth Infrastructure. Each code in the [ehealth-system](CodeSystem-ehealth-system.html) CodeSystem has a corresponding scope, formatted as `system|code`:
 
-| tag | scope |
-|-----|-------|
+| tag  | scope                                             |
+|------|---------------------------------------------------|
 | `xa` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xa` |
 | `xb` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xb` |
 | `xc` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xc` |
+| `xd` | `http://ehealth.sundhed.dk/cs/ehealth-system\|xd` |
 
 Solutions spanning multiple coexistence tags receive one scope entry per tag.
 
 ### Resource Markup
+
 Resources fall into four categories with respect to coexistence markup:
 
 - **Always marked** by the creating solution: `EpisodeOfCare`, `Appointment`, `CarePlan`, `ServiceRequest`.
@@ -35,6 +38,7 @@ Markup is expressed on the resource as:
 Multiple coexistence tags may be present on the same resource where a solution complex spans more than one tag.
 
 ### Searching with Coexistence Tags
+
 Solutions control on a per-request basis whether a search is scoped to a coexistence tag by supplying `_tag` against the `ehealth-system` CodeSystem. For example:
 
 ```
@@ -44,6 +48,7 @@ GET [base]/EpisodeOfCare?subject=Patient/<id>&_tag=http://ehealth.sundhed.dk/cs/
 Multiple tag values are comma-separated within a single `_tag` parameter. Omitting `_tag` performs a generic search across all coexistence scopes that the caller is otherwise authorized to see.
 
 ### Infrastructure Propagation
+
 When the infrastructure creates resources on behalf of a solution — during rule execution, measurement submission, episode creation operations and `PlanDefinition/$apply` — the coexistence tag of the triggering resource or token context is carried over to the produced resources, so that downstream markup remains consistent without explicit action from the calling solution.
 
 Validation errors related to coexistence tagging are listed under [ehealth-system](error-messages.html#ehealth-system) in the error messages catalogue, with related episode-of-care errors such as `EPISODEOFCARE_CREATE_MISSING_COEXISTENCE_TAGS` and `EPISODEOFCARE_CREATE_INVALID_COEXISTENCE_TAGS`.
