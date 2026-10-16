@@ -3,13 +3,13 @@
   "id": "measurement",
   "name": "measurement",
   "status": "active",
-  "date": "2026-08-03T02:27:22.268+00:00",
+  "date": "2026-10-16T09:33:32.963+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "measurement",
-    "version": "1.32.1"
+    "version": "1.36.0"
   },
   "implementation": {
     "description": "eHealth measurement service",
