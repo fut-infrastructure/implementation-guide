@@ -2,7 +2,7 @@
 
 __Request Headers__
 ```
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMGU1OTc5NGEtYjE4OS00ZGJlLWFhZTAtMzg3OWFhZTViODE2IiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5yZWFkIiwiJGltcG9ydC1vcmdhbml6YXRpb25zIiwiT3JnYW5pemF0aW9uLndyaXRlIiwiT3JnYW5pemF0aW9uLnBhdGNoIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiMTFkMDEyODItMDllZS00YTRjLThhZmUtZmM1OWVmNGUzODMzIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIk9yZ2FuaXphdGlvbi5yZWFkIiwiJGltcG9ydC1vcmdhbml6YXRpb25zIiwiT3JnYW5pemF0aW9uLndyaXRlIiwiT3JnYW5pemF0aW9uLnBhdGNoIiwiJHRlc3Qtb25seS1jcmVhdGUiXX0sImNvbnRleHQiOnsidGVhbV9vbl9lb2MiOmZhbHNlLCJ1c2VyX2lkIjoiMTFkMDEyODItMDllZS00YTRjLThhZmUtZmM1OWVmNGUzODMzIn0sInVzZXJfdHlwZSI6IlNZU1RFTSJ9.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -21,7 +21,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:2cbb4d2f-cf00-40a8-a02c-eaf9cf134015",
+            "fullUrl": "urn:uuid:6a8cbd50-41bf-469c-9f00-1b1595a25fd0",
             "resource": {
               "resourceType": "Organization",
               "meta": {
@@ -29,6 +29,35 @@ __Body__:
                   "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization"
                 ]
               },
+              "contained": [
+                {
+                  "resourceType": "Endpoint",
+                  "id": "ean-endpoint",
+                  "identifier": [
+                    {
+                      "system": "http://www.gs1.org/gln",
+                      "value": "5790000000000"
+                    }
+                  ],
+                  "status": "active",
+                  "connectionType": {
+                    "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                    "code": "unsupported"
+                  },
+                  "name": "Test Endpoint",
+                  "payloadType": [
+                    {
+                      "coding": [
+                        {
+                          "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                          "code": "unsupported"
+                        }
+                      ]
+                    }
+                  ],
+                  "address": "http://example.com"
+                }
+              ],
               "extension": [
                 {
                   "url": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-organization-source",
@@ -56,18 +85,10 @@ __Body__:
               "identifier": [
                 {
                   "use": "official",
-                  "system": "http://cvr.dk",
-                  "value": "12345674",
-                  "period": {
-                    "start": "2026-04-16T11:26:48+00:00"
-                  }
-                },
-                {
-                  "use": "official",
                   "system": "urn:oid:1.2.208.176.1.1",
-                  "value": "40929129919",
+                  "value": "96511198565",
                   "period": {
-                    "start": "2026-04-16T11:26:47+00:00"
+                    "start": "2026-10-12T15:27:27+00:00"
                   }
                 }
               ],
@@ -76,12 +97,17 @@ __Body__:
                   "coding": [
                     {
                       "system": "http://ehealth.sundhed.dk/cs/sor-organization-type",
-                      "code": "56781000005109"
+                      "code": "unknown"
                     }
                   ]
                 }
               ],
-              "name": "21fea23b-396c-4096-ade3-643bdbefe4b5"
+              "name": "Test organization",
+              "endpoint": [
+                {
+                  "reference": "#ean-endpoint"
+                }
+              ]
             },
             "request": {
               "method": "POST",
@@ -97,14 +123,14 @@ __Body__:
 
 __Response Headers__
 ```
-date: Thu, 16 Apr 2026 11:26:48 GMT
-x-request-id: aae284e0-78da-438c-86f8-a7c28cbf2fe8
+date: Mon, 12 Oct 2026 15:27:28 GMT
+x-request-id: c0f9a630-803a-46fa-9182-44bb5dc65a81
 server: istio-envoy
-x-envoy-upstream-service-time: 390
+x-envoy-upstream-service-time: 411
 expires: 0
 x-content-type-options: nosniff
 x-xss-protection: 0
-x-b3-traceid: e298846d79b037ddff1db630105fa0d6
+x-b3-traceid: d4e02a8af3d38ab80493c5c0dfd65014
 x-frame-options: DENY
 x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
 content-type: application/fhir+json; charset=UTF-8
@@ -121,14 +147,14 @@ __Response__
     {
       "response": {
         "status": "200 OK",
-        "location": "https://organization.cit-organization-1498.local/fhir/Organization/1061/_history/2",
+        "location": "https://organization.cit-organization-1597.local/fhir/Organization/1063/_history/2",
         "etag": "2",
-        "lastModified": "2026-04-16T11:26:47.789+00:00",
+        "lastModified": "2026-10-12T15:27:27.873+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully updated resource &quot;Organization/1061/_history/2&quot;.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully updated resource &quot;Organization/1063/_history/2&quot;.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -143,7 +169,7 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully updated resource \"Organization/1061/_history/2\"."
+              "diagnostics": "Successfully updated resource \"Organization/1063/_history/2\"."
             }
           ]
         }
@@ -152,14 +178,14 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://organization.cit-organization-1498.local/fhir/Provenance/1062/_history/1",
+        "location": "https://organization.cit-organization-1597.local/fhir/Provenance/1064/_history/1",
         "etag": "1",
-        "lastModified": "2026-04-16T11:26:48.316+00:00",
+        "lastModified": "2026-10-12T15:27:28.359+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Provenance/1062/_history/1&quot;. Took 2ms.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Provenance/1064/_history/1&quot;. Took 3ms.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -174,7 +200,7 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully created resource \"Provenance/1062/_history/1\". Took 2ms."
+              "diagnostics": "Successfully created resource \"Provenance/1064/_history/1\". Took 3ms."
             }
           ]
         }
