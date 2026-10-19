@@ -3,13 +3,13 @@
   "id": "organization",
   "name": "organization",
   "status": "active",
-  "date": "2026-08-03T02:37:22.259+00:00",
+  "date": "2026-10-16T09:31:17.302+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "organization",
-    "version": "1.28.0"
+    "version": "1.31.0"
   },
   "implementation": {
     "description": "eHealth organization service",

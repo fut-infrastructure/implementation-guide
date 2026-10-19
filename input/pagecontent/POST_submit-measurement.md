@@ -2,7 +2,7 @@
 
 __Request Headers__
 ```
-Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiYTNiNTViMmItMTA4My00YWExLWIzYzUtM2ZlMjlhMmNjOTJhIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIiRzZWFyY2gtbWVhc3VyZW1lbnRzIiwiJHN1Ym1pdC1tZWFzdXJlbWVudCJdfSwiY29udGV4dCI6eyJlcGlzb2RlX29mX2NhcmVfaWQiOiJodHRwczovL2NhcmVwbGFuLmNpdC1tZWFzdXJlbWVudC0yNDA0LmxvY2FsL2ZoaXIvRXBpc29kZU9mQ2FyZS85OTk5MiIsInBhdGllbnRfaWQiOiJodHRwczovL3BhdGllbnQuY2l0LW1lYXN1cmVtZW50LTI0MDQubG9jYWwvZmhpci9QYXRpZW50LzcxMTEyIiwidGVhbV9vbl9lb2MiOmZhbHNlfSwidXNlcl90eXBlIjoiUEFUSUVOVCJ9.
+Authorization: Bearer eyJhbGciOiJub25lIn0.eyJ1c2VyX2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1tZWFzdXJlbWVudC0yNTg0LmxvY2FsL2ZoaXIvUmVsYXRlZFBlcnNvbi82MTU3NyIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyIkc2VhcmNoLW1lYXN1cmVtZW50cyIsIiRzdWJtaXQtbWVhc3VyZW1lbnQiXX0sImNvbnRleHQiOnsiZXBpc29kZV9vZl9jYXJlX2lkIjoiaHR0cHM6Ly9jYXJlcGxhbi5jaXQtbWVhc3VyZW1lbnQtMjU4NC5sb2NhbC9maGlyL0VwaXNvZGVPZkNhcmUvNzI0MzkiLCJwYXRpZW50X2lkIjoiaHR0cHM6Ly9wYXRpZW50LmNpdC1tZWFzdXJlbWVudC0yNTg0LmxvY2FsL2ZoaXIvUGF0aWVudC84ODc3NSIsInRlYW1fb25fZW9jIjpmYWxzZSwidXNlcl9pZCI6Imh0dHBzOi8vcGF0aWVudC5jaXQtbWVhc3VyZW1lbnQtMjU4NC5sb2NhbC9maGlyL1JlbGF0ZWRQZXJzb24vNjE1NzciLCJyb2xlIjoicG93ZXJfb2ZfYXR0b3JuZXkifSwidXNlcl90eXBlIjoiUkVMQVRFRF9QRVJTT04ifQ.
 Accept: application/fhir+json;q=1.0, application/json+fhir;q=0.9
 User-Agent: HAPI-FHIR/8.6.5 (FHIR Client; FHIR 4.0.1/R4; apache)
 Accept-Encoding: gzip
@@ -21,7 +21,7 @@ __Body__:
         "type": "transaction",
         "entry": [
           {
-            "fullUrl": "urn:uuid:ea3e16b1-c678-4397-bb0d-a4b780842a09",
+            "fullUrl": "urn:uuid:fb42f0d7-bd36-48ca-a0b1-800712421e40",
             "resource": {
               "resourceType": "Observation",
               "meta": {
@@ -33,7 +33,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
+                    "reference": "https://careplan.cit-measurement-2584.local/fhir/EpisodeOfCare/72439"
                   }
                 },
                 {
@@ -59,7 +59,7 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
+                  "reference": "https://careplan.cit-measurement-2584.local/fhir/ServiceRequest/18222"
                 }
               ],
               "status": "final",
@@ -70,22 +70,22 @@ __Body__:
                     "code": "NPU03011"
                   }
                 ],
-                "text": "b07bbcde-37d1-4ef6-aee4-55c5c212f58f"
+                "text": "9a015bae-5950-4655-80df-ed7551ee5a1b"
               },
               "subject": {
-                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+                "reference": "https://patient.cit-measurement-2584.local/fhir/Patient/88775"
               },
               "effectivePeriod": {
-                "start": "2026-04-16T11:15:10+00:00",
-                "end": "2026-04-16T11:15:10+00:00"
+                "start": "2026-10-12T16:04:43+00:00",
+                "end": "2026-10-12T16:04:43+00:00"
               },
               "performer": [
                 {
-                  "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+                  "reference": "https://patient.cit-measurement-2584.local/fhir/RelatedPerson/61577"
                 }
               ],
               "device": {
-                "reference": "https://device.cit-measurement-2404.local/fhir/Device/70544"
+                "reference": "https://device.cit-measurement-2584.local/fhir/Device/41637"
               }
             },
             "request": {
@@ -94,7 +94,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:9823b046-78d6-4b37-bdb5-b65468c1fed3",
+            "fullUrl": "urn:uuid:d753e47f-f634-4cc0-a1dc-09b516517462",
             "resource": {
               "resourceType": "Media",
               "meta": {
@@ -106,7 +106,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
+                    "reference": "https://careplan.cit-measurement-2584.local/fhir/EpisodeOfCare/72439"
                   }
                 },
                 {
@@ -163,7 +163,7 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
+                  "reference": "https://careplan.cit-measurement-2584.local/fhir/ServiceRequest/18222"
                 }
               ],
               "status": "completed",
@@ -176,9 +176,12 @@ __Body__:
                 ]
               },
               "subject": {
-                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+                "reference": "https://patient.cit-measurement-2584.local/fhir/Patient/88775"
               },
-              "createdDateTime": "2026-04-16T11:15:10+00:00",
+              "createdDateTime": "2026-10-12T16:04:43+00:00",
+              "operator": {
+                "reference": "https://patient.cit-measurement-2584.local/fhir/RelatedPerson/61577"
+              },
               "content": {
                 "language": "en"
               }
@@ -189,7 +192,7 @@ __Body__:
             }
           },
           {
-            "fullUrl": "urn:uuid:737b5a0f-8b6f-4f95-a4a5-c1ccc58763ce",
+            "fullUrl": "urn:uuid:1a3465f5-57ae-418e-bec7-eb69182396f0",
             "resource": {
               "resourceType": "QuestionnaireResponse",
               "meta": {
@@ -201,7 +204,7 @@ __Body__:
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
                   "valueReference": {
-                    "reference": "https://careplan.cit-measurement-2404.local/fhir/EpisodeOfCare/99992"
+                    "reference": "https://careplan.cit-measurement-2584.local/fhir/EpisodeOfCare/72439"
                   }
                 },
                 {
@@ -227,17 +230,20 @@ __Body__:
               ],
               "basedOn": [
                 {
-                  "reference": "https://careplan.cit-measurement-2404.local/fhir/ServiceRequest/74365"
+                  "reference": "https://careplan.cit-measurement-2584.local/fhir/ServiceRequest/18222"
                 }
               ],
-              "questionnaire": "https://questionnaire.cit-measurement-2404.local/fhir/Questionnaire/78460",
+              "questionnaire": "https://questionnaire.cit-measurement-2584.local/fhir/Questionnaire/59065",
               "status": "completed",
               "subject": {
-                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/71112"
+                "reference": "https://patient.cit-measurement-2584.local/fhir/Patient/88775"
               },
-              "authored": "2026-04-16T11:15:10+00:00",
+              "authored": "2026-10-12T16:04:43+00:00",
+              "author": {
+                "reference": "https://patient.cit-measurement-2584.local/fhir/RelatedPerson/61577"
+              },
               "source": {
-                "reference": "https://patient.cit-measurement-2404.local/fhir/Patient/24883"
+                "reference": "https://patient.cit-measurement-2584.local/fhir/Patient/20310"
               }
             },
             "request": {
@@ -254,14 +260,14 @@ __Body__:
 
 __Response Headers__
 ```
-date: Thu, 16 Apr 2026 11:15:12 GMT
-x-request-id: 9f1771ac-9f6e-4427-afaf-52dd3fd26bbb
+date: Mon, 12 Oct 2026 16:04:45 GMT
+x-request-id: 54b02880-dadc-9479-bda7-75de2131a5de
 server: istio-envoy
-x-envoy-upstream-service-time: 555
+x-envoy-upstream-service-time: 573
 expires: 0
 x-content-type-options: nosniff
 x-xss-protection: 0
-x-b3-traceid: 005f36dc4a46a8926fb094d31515ba14
+x-b3-traceid: 23f06b77509753118a92b146ae0fb6cd
 x-frame-options: DENY
 x-powered-by: HAPI FHIR 8.6.5 REST Server (FHIR Server; FHIR 4.0.1/R4)
 content-type: application/fhir+json; charset=UTF-8
@@ -278,14 +284,14 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://measurement.cit-measurement-2404.local/fhir/Observation/2182/_history/1",
+        "location": "https://measurement.cit-measurement-2584.local/fhir/Observation/2217/_history/1",
         "etag": "1",
-        "lastModified": "2026-04-16T11:15:12.249+00:00",
+        "lastModified": "2026-10-12T16:04:44.966+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Observation/2182/_history/1&quot;. Took 7ms.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Observation/2217/_history/1&quot;. Took 5ms.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -300,7 +306,7 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully created resource \"Observation/2182/_history/1\". Took 7ms."
+              "diagnostics": "Successfully created resource \"Observation/2217/_history/1\". Took 5ms."
             }
           ]
         }
@@ -309,14 +315,14 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://measurement.cit-measurement-2404.local/fhir/Media/2183/_history/1",
+        "location": "https://measurement.cit-measurement-2584.local/fhir/Media/2218/_history/1",
         "etag": "1",
-        "lastModified": "2026-04-16T11:15:12.249+00:00",
+        "lastModified": "2026-10-12T16:04:44.966+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Media/2183/_history/1&quot;. Took 6ms.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;Media/2218/_history/1&quot;. Took 8ms.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -331,7 +337,7 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully created resource \"Media/2183/_history/1\". Took 6ms."
+              "diagnostics": "Successfully created resource \"Media/2218/_history/1\". Took 8ms."
             }
           ]
         }
@@ -340,14 +346,14 @@ __Response__
     {
       "response": {
         "status": "201 Created",
-        "location": "https://measurement.cit-measurement-2404.local/fhir/QuestionnaireResponse/2184/_history/1",
+        "location": "https://measurement.cit-measurement-2584.local/fhir/QuestionnaireResponse/2219/_history/1",
         "etag": "1",
-        "lastModified": "2026-04-16T11:15:12.249+00:00",
+        "lastModified": "2026-10-12T16:04:44.966+00:00",
         "outcome": {
           "resourceType": "OperationOutcome",
           "text": {
             "status": "generated",
-            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;QuestionnaireResponse/2184/_history/1&quot;. Took 4ms.</td></tr></table></div>"
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[]</td><td>Successfully created resource &quot;QuestionnaireResponse/2219/_history/1&quot;. Took 4ms.</td></tr></table></div>"
           },
           "issue": [
             {
@@ -362,7 +368,7 @@ __Response__
                   }
                 ]
               },
-              "diagnostics": "Successfully created resource \"QuestionnaireResponse/2184/_history/1\". Took 4ms."
+              "diagnostics": "Successfully created resource \"QuestionnaireResponse/2219/_history/1\". Took 4ms."
             }
           ]
         }
