@@ -25,12 +25,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `RPCTEOC` (RelatedPerson Contributes to EpisodeOfCare) and `PORPI` (Processing of RelatedPerson Information) to `http://ehealth.sundhed.dk/cs/consent-category`, for the Patient's consent to a related person contributing to the episode of care and the related person's consent to processing of their information respectively. Both codes are included in `http://ehealth.sundhed.dk/vs/consent-category`.
 - Added `contribution` to `http://ehealth.sundhed.dk/cs/ehealth-consent-scope`, included in `http://ehealth.sundhed.dk/vs/ehealth-consent-scope`, as the scope of an `RPCTEOC` consent.
 - Added the `http://ehealth.sundhed.dk/cs/data-governance` CodeSystem with the `managed` code, used to mark RelatedPerson resources whose master data is synchronized and locked by the infrastructure.
+- Added code `xd` to `http://ehealth.sundhed.dk/cs/ehealth-system` for Telesår.
+- Added code `telesaar` to `http://ehealth.sundhed.dk/cs/ehealth-program` for Telesår.
 
 ### ValueSets
 - Added `PARAUTH` (parental authority, `http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes`) to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype` (CCR0329).
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
 - Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
 - Removed ValueSets: `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1` (Mental disorders and mental health problems), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2` (Neurological diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3` (Cardiovascular diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4` (Pulmonary diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5` (Somatic / metabolic diseases) and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6` (Functional ability & social circumstances), superseded by `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`.
+- Added `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xd-1` for Telesår.
+- Added `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xd` for Telesår.
 
 ### ConceptMaps
 
