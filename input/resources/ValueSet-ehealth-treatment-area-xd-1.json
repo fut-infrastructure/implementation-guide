@@ -4,10 +4,10 @@
   "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xd-1",
   "version": "1.0.0",
   "name": "AllConditions",
-  "title": "All conditions (treatment area)",
+  "title": "All conditions (treatment area) for xd",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-09T09:00:00+00:00",
+  "date": "2026-10-19T15:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
