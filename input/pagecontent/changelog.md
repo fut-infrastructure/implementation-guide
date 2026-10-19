@@ -25,7 +25,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `RPCTEOC` (RelatedPerson Contributes to EpisodeOfCare) and `PORPI` (Processing of RelatedPerson Information) to `http://ehealth.sundhed.dk/cs/consent-category`, for the Patient's consent to a related person contributing to the episode of care and the related person's consent to processing of their information respectively. Both codes are included in `http://ehealth.sundhed.dk/vs/consent-category`.
 - Added `contribution` to `http://ehealth.sundhed.dk/cs/ehealth-consent-scope`, included in `http://ehealth.sundhed.dk/vs/ehealth-consent-scope`, as the scope of an `RPCTEOC` consent.
 - Added the `http://ehealth.sundhed.dk/cs/data-governance` CodeSystem with the `managed` code, used to mark RelatedPerson resources whose master data is synchronized and locked by the infrastructure.
-- Added code `xd` to `http://ehealth.sundhed.dk/cs/ehealth-system` for Telesår.
+- Added code `xd` to `http://ehealth.sundhed.dk/cs/ehealth-system`.
 - Added code `telesaar` to `http://ehealth.sundhed.dk/cs/ehealth-program` for Telesår.
 
 ### ValueSets
