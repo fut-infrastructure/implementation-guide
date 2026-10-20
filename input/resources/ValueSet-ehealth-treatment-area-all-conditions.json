@@ -1,13 +1,13 @@
 {
   "resourceType": "ValueSet",
-  "id": "ehealth-treatment-area-xb-7",
-  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7",
+  "id": "ehealth-treatment-area-all-conditions",
+  "url": "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-all-conditions",
   "version": "1.0.0",
-  "name": "AllConditions_xb",
+  "name": "AllConditions",
   "title": "All conditions (treatment area)",
   "status": "active",
   "experimental": false,
-  "date": "2026-09-10T09:00:00+00:00",
+  "date": "2026-10-19T15:00:00+00:00",
   "publisher": "ehealth.sundhed.dk",
   "contact": [
     {
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "Treatment area for all conditions (xb).",
+  "description": "Treatment area for all conditions.",
   "compose": {
     "include": [
       {

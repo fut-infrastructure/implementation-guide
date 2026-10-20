@@ -41,7 +41,7 @@
     "include": [
       {
         "valueSet": [
-          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7"
+          "http://ehealth.sundhed.dk/vs/ehealth-treatment-area-all-conditions"
         ]
       }
     ]

@@ -8,10 +8,11 @@ This is the log of changes made to the eHealth Implementation Guide.
 - `$get-patient-procedures` now excludes ServiceRequests whose `performer` is present and references anyone other than the Patient in context, for instance a RelatedPerson. ServiceRequests without a performer are still included, the Patient being the assumed performer. **Note for vendors:** activities assigned to a related person no longer appear in the patient's own overview; they are reported by `$get-performer-activities` instead. No data migration is performed and no explicit performer is required on existing ServiceRequests.
 - `$get-general-practitioner-info` on Organization now returns the most recently updated Organization when several share a provider number without a common parent, includes inactive Organizations as a fallback when none are active, and requires the provider number to be exactly 6 digits. The input parameter cardinality is corrected to 1..1. (CCR0347)
 - Widened `ehealth-on-behalf-of` to accept `Reference(ehealth-patient)` in addition to `ehealth-careteam`, to support parent authority holders sending messages on behalf of a child (CCR0329).
-- Widened `ehealth-message.sender` to accept `Reference(RelatedPeron)`, to support parent authority holders sending messages on behalf of a child (CCR0329).
+- Widened `ehealth-message.sender` to accept `Reference(RelatedPerson)`, to support parent authority holders sending messages on behalf of a child (CCR0329).
 
 #### Type operations
 - Added `RelatedPerson/$create-managed-related-person`, which creates a managed RelatedPerson seeded from the national registry and marked with `data-governance|managed`. The relationship codes `POWATT` and `PARAUTH` are rejected.
+- ServiceRequest search, previously available to system users only, is now available to Practitioner, Patient and RelatedPerson users holding the `CarePlan.search` privilege (CCR0345). **Note for vendors:** a practitioner must search with `episodeOfCare.team` matching the CareTeam in the user context, and a patient or related person with `subject` matching the Patient in the user context; an EpisodeOfCare or Patient in the user context must likewise be matched by `episodeOfCare` or `subject`. Otherwise the search is rejected with HTTP 403.
 
 #### System operations
 
@@ -22,19 +23,16 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `RPCTEOC` (RelatedPerson Contributes to EpisodeOfCare) and `PORPI` (Processing of RelatedPerson Information) to `http://ehealth.sundhed.dk/cs/consent-category`, for the Patient's consent to a related person contributing to the episode of care and the related person's consent to processing of their information respectively (CCR0317). Both codes are included in `http://ehealth.sundhed.dk/vs/consent-category`.
 - Added `contribution` to `http://ehealth.sundhed.dk/cs/ehealth-consent-scope`, included in `http://ehealth.sundhed.dk/vs/ehealth-consent-scope`, as the scope of an `RPCTEOC` consent (CCR0317).
 - Added `questionnairelinkage` (Spørgeskemasammenknytning) to `http://ehealth.sundhed.dk/cs/basic-resource-type` (CCR0317).
-- Added `RPCTEOC` (RelatedPerson Contributes to EpisodeOfCare) and `PORPI` (Processing of RelatedPerson Information) to `http://ehealth.sundhed.dk/cs/consent-category`, for the Patient's consent to a related person contributing to the episode of care and the related person's consent to processing of their information respectively. Both codes are included in `http://ehealth.sundhed.dk/vs/consent-category`.
-- Added `contribution` to `http://ehealth.sundhed.dk/cs/ehealth-consent-scope`, included in `http://ehealth.sundhed.dk/vs/ehealth-consent-scope`, as the scope of an `RPCTEOC` consent.
 - Added the `http://ehealth.sundhed.dk/cs/data-governance` CodeSystem with the `managed` code, used to mark RelatedPerson resources whose master data is synchronized and locked by the infrastructure.
 - Added code `xd` to `http://ehealth.sundhed.dk/cs/ehealth-system`.
 - Added code `telesaar` to `http://ehealth.sundhed.dk/cs/ehealth-program` for Telesår.
 
 ### ValueSets
 - Added `PARAUTH` (parental authority, `http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes`) to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype` (CCR0329).
-- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7` (previously `Other (treatment area)`) to `All conditions (treatment area)`, including `http://ehealth.sundhed.dk/vs/conditions` instead of an explicit list of codes, corresponding to `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xa-1`.
-- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include only `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`. **Note for vendors:** treatment area validation for coexistence tag `xb` now accepts any condition code in `http://ehealth.sundhed.dk/vs/conditions`, including codes added in the future.
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xa` to include all conditions by including `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-all-conditions`
+- Updated `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xb` to include all conditions by including `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-all-conditions`
 - Removed ValueSets: `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-1` (Mental disorders and mental health problems), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-2` (Neurological diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-3` (Cardiovascular diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-4` (Pulmonary diseases), `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-5` (Somatic / metabolic diseases) and `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-6` (Functional ability & social circumstances), superseded by `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xb-7`.
-- Added `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-xd-1` for Telesår.
-- Added `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xd` for Telesår.
+- Added `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-collection-xd` which includes all conditions by including `http://ehealth.sundhed.dk/vs/ehealth-treatment-area-all-conditions`
 
 ### ConceptMaps
 
@@ -50,7 +48,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added search parameter `questionnaireLinkageFor` on `ehealth-questionnairelinkage` to query linkages by a participating questionnaire (reference).
 - Added search parameter `title` on `ehealth-questionnairelinkage` to query by title (string, startsWith matching). As the parameter is defined on Basic, it also applies to `ehealth-view` and `ehealth-actionguidance`.
 - Added search parameters `occurrenceDateTime` (`occurrenceDateTime`), `occurrencePeriod` (`occurrencePeriod`) and `occurrencePeriodEnd` (`occurrencePeriod.end`) on `ehealth-servicerequest`, and support for the standard search parameters `instantiates-canonical` and `_tag` and the chained search `episodeOfCare.team` on ServiceRequest (CCR0345). ServiceRequest search now also supports `_count` to limit the number of ServiceRequests per page; the remaining ServiceRequests are retrieved by following the Bundle's `next` link. `_summary=count` returns only the total number of matching ServiceRequests. See the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html) and the [ehealth-servicerequest](StructureDefinition-ehealth-servicerequest.html) introduction.
-- ServiceRequest search, previously available to system users only, is now available to Practitioner, Patient and RelatedPerson users holding the `CarePlan.search` privilege (CCR0345). **Note for vendors:** a practitioner must search with `episodeOfCare.team` matching the CareTeam in the user context, and a patient or related person with `subject` matching the Patient in the user context; an EpisodeOfCare or Patient in the user context must likewise be matched by `episodeOfCare` or `subject`. Otherwise the search is rejected with HTTP 403.
 - Added a `date` search parameter on RelatedPerson that searches `RelatedPerson.period`.
 
 ### Profiles
