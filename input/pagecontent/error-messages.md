@@ -30,6 +30,8 @@
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status). The following differences were found when updating existing resource with id %s: %s.
 
+- `ACTIONGUIDANCEVIEW_ILLEGAL_PROFILE_CHANGE`: Illegal profile change for resource with id %s: existing profile %s, update profile %s.
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
@@ -97,6 +99,14 @@
 - `CAREPLAN_NOT_FOUND`: CarePlan is not found.
 
 - `CAREPLAN_SEARCH_SUBJECT_CONTEXT_OR_RESPONSIBLE_ACTOR_IS_NOT_SPECIFIED`: At least subject, context or responsible actor must be specified
+
+- `CAREPLAN_SERVICEREQUEST_CREATE_OUTSIDE_APPLY`: ServiceRequest can only be created by applying a plan
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_OUTSIDE_PERIOD`: ServiceRequest.performer refers to RelatedPerson %s whose period does not include the current date
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_NOT_MANAGED`: ServiceRequest.performer refers to RelatedPerson %s which is not tagged with meta.security %s|%s
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_PATIENT_MISMATCH`: ServiceRequest.performer refers to RelatedPerson %s with patient %s, which differs from ServiceRequest.subject %s
 
 #### ehealth-careteam
 
@@ -460,9 +470,9 @@
 
 - `ORGANIZATION_REFERENCE_IDENTIFIER_PROVIDER_NUMBER_NOT_UNIQUE`: The identifiers of type ProviderNumber are not unique in the Organization reference list: %s
 
-- `ORGANIZATION_NOT_FOUND`: No active Organization could be found for the ProviderNumber: %s
+- `ORGANIZATION_NOT_FOUND`: No Organization could be found for the ProviderNumber: %s
 
-- `ORGANIZATION_NO_COMMON_PARENT_FOUND_PROVIDER_NUMBER`: No common parent found for the ProviderNumber: %s
+- `ORGANIZATION_INVALID_PROVIDER_NUMBER`: Invalid ProviderNumber: %s
 
 #### ehealth-plandefinition
 
@@ -530,6 +540,26 @@
 
 - `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_SYSTEM_FOUND_MORE_THAN_ONE`: Found more than one code system for url: %s
 
+#### ehealth-questionnairelinkage
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_IDENTIFIER_CHANGE`: Illegal identifier change for QuestionnaireLinkage with id %s. The identifier is assigned by the server at creation and cannot be changed or removed.
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_STATUS_CHANGE`: Illegal status change for QuestionnaireLinkage from %s to %s
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change for QuestionnaireLinkage. If status is Active or Retired, only the following elements can be changed (recommendation, intendedAudience, useContext, modifierRole and status). The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRELINKAGE_ACTIVATION_REQUIRES_QUESTIONNAIRE`: A QuestionnaireLinkage can only be activated when it references at least one questionnaire in the questionnaireLinkageFor extension.
+
+- `QUESTIONNAIRELINKAGE_QUESTIONNAIRE_NOT_FOUND`: The Questionnaire %s referenced by the QuestionnaireLinkage does not exist.
+
+- `QUESTIONNAIRELINKAGE_QUESTIONNAIRE_ILLEGAL_STATUS`: The Questionnaire %s referenced by the QuestionnaireLinkage must have status active or retired, but has status %s.
+
+- `QUESTIONNAIRELINKAGE_ITEM_QUESTIONNAIRE_NOT_IN_FOR`: The item linkage references Questionnaire %s, which is not referenced in the questionnaireLinkageFor extension.
+
+- `QUESTIONNAIRELINKAGE_UNKNOWN_LINKID`: The linkId %s does not exist in Questionnaire %s.
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_USER_TYPE`: User type %s is not allowed to %s a QuestionnaireLinkage.
+
 #### ehealth-reporting
 
 - `REPORTING_MISSING_INPUT_PARAMETER`: Parameter "%s" is mandatory for report "%s".
@@ -560,15 +590,27 @@
 
 - `SECURITY_OPERATION_NOT_ALLOWED_FOR_USER_TYPE`: Operation not allowed for user type: %s
 
+- `SECURITY_OPERATION_NOT_ALLOWED_FOR_USER_TYPE_WITH_ROLE`: Operation not allowed for user type: %s, with the role: %s
+
 - `SECURITY_SEARCH_PARAM_NOT_MATCHING_TOKEN_CONTEXT`: Search parameters not matching security token context: %s
 
 - `SECURITY_SEARCH_PARAMS_MANDATORY`: Search parameters mandatory with current user type and combination of search parameters: %s
 
 - `SECURITY_SEARCH_OPERATION_POST_CONSTRAINT`: Search on %s only supports POST style.
 
-#### ehealth-status
+- `SECURITY_PATIENT_MUST_BE_SENDER_ON_COMMUNICATION`: Patient user must be the sender of the communication
 
-- `STATUS_SCHEDULE_PAUSE_MAX_30_DAYS`: A scheduled pause may not last more than 30 days
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_SENDER_ON_COMMUNICATION`: RelatedPerson with contextType parent_authority must be sender of the communication
+
+- `SECURITY_PATIENT_MUST_ASSIGNED_TO_TASK`: Patient user must be explicitly assigned to the Task
+
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_REQUESTER_OF_TASK`: RelatedPerson with contextType parent_authority must be requester of the task
+
+- `SECURITY_MANDATORY_RELATED_PERSON_PATIENTCONTEXT`: The RelatedPerson users patientContext must be explicitly assigned to the Task
+
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_PERFORMER`: RelatedPerson with contextType parent_authority holder must be the performer
+
+#### ehealth-status
 
 - `STATUS_SCHEDULE_IDENTICAL_TIME`: Multiple status changes may not be scheduled to be activated simultaneously
 

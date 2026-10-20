@@ -40,3 +40,28 @@ The validity depends on the variant of `occurrence[x]` as follows:
 
     See the [wiki](https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/pages/1661665301/Adhering+to+Care+Plans+and+Measurement+Regimes#When-an-Activity-is-Supposed-to-Happen---The-Notion-of-Resolved-Timing) for examples.
 
+### Performer
+`ServiceRequest.performer` records who is expected to carry out the activity. When it is absent, the Patient is the assumed performer. A healthcare professional can assign a related person (pårørende) as performer by referencing a `RelatedPerson`. When a ServiceRequest is created or updated with a `RelatedPerson` performer, the infrastructure resolves the RelatedPerson from the patient service and rejects the request with HTTP 422 unless all of the following hold:
+
+* The RelatedPerson is *managed*, i.e. `RelatedPerson.meta.security` carries the code `managed` from `http://ehealth.sundhed.dk/cs/data-governance`. Only managed related persons carry a CPR number and can log in.
+* `RelatedPerson.period`, when present, includes the current date: a start in the future or an end in the past is rejected.
+* `RelatedPerson.patient` references the same Patient as `ServiceRequest.subject`.
+
+A performer that cannot be resolved is likewise rejected with HTTP 422.
+
+The infrastructure provides operations helping a performer determine what activities have been performed and/or are to be performed: [$get-patient-procedures](OperationDefinition--s-get-patient-procedures.html) excludes activities whose performer is anyone other than the Patient, and [$get-performer-activities](OperationDefinition--s-get-performer-activities.html) returns the activities a given RelatedPerson is performer of. The `PlanDefinition.action.participant.type` of the plan template (`patient`, `practitioner`, `related-person` or `device`) is advisory only; no consistency between it and `ServiceRequest.performer` is enforced.
+
+### Intended Questionnaire Linkages
+A ServiceRequest may carry zero or more `ehealth-intendedQuestionnaireLinkage` extensions referencing
+[QuestionnaireLinkage](StructureDefinition-ehealth-questionnairelinkage.html) resources — the linkages
+application systems are intended to use when presenting the questionnaire responses of this request. The
+references are inherited from the plan template's action by `PlanDefinition/$apply` and may subsequently be
+changed or removed via standard ServiceRequest update.
+
+### Search
+The supported search parameters are listed in the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html). In addition to the standard search parameters, the following custom search parameters are supported:
+
+* `occurrenceDateTime` (date): searches `occurrenceDateTime`. ServiceRequests using another variant of `occurrence[x]` are not matched.
+* `occurrencePeriod` (date): searches `occurrencePeriod`. ServiceRequests using another variant of `occurrence[x]` are not matched.
+* `occurrencePeriodEnd` (date): searches `occurrencePeriod.end`. To search within a period, give the parameter twice with a lower and an upper bound, e.g. `occurrencePeriodEnd=ge2026-01-01&occurrencePeriodEnd=le2026-03-31`.
+* `episodeOfCare` (reference): searches the EpisodeOfCare of the ServiceRequest. Supports the chained search `episodeOfCare.team` for the CareTeam of the EpisodeOfCare.

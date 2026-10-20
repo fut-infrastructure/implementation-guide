@@ -11,6 +11,6 @@
     ],
     "type": "reference",
     "description": "Search parameter for finding communication based on participant",
-    "expression": "Communication.recipient | Communication.sender | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam').value | Communication.extension.where(url='http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam').value",
+    "expression": "Communication.recipient | Communication.sender | Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-senderCareTeam') | Communication.extension('http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-communication-recipientCareTeam')",
     "xpathUsage": "normal"
 }

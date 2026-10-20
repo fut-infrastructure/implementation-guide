@@ -148,7 +148,7 @@ topic: `ehealth-application-event`
     },
     "ehealth.system" : {
       "type" : "string",
-      "description" : "The coexistence system tag"
+      "description" : "The coexistence tag identifying the telemedicine solution"
     },
     "eventType" : {
       "type" : "string",
@@ -160,7 +160,7 @@ topic: `ehealth-application-event`
     },
     "userReference" : {
       "type" : "string",
-      "description" : "The reference (absolute URL) of the Patient resource"
+      "description" : "The reference (absolute URL) to the patient resource who receives the notification"
     },
     "resourceReference" : {
       "type" : "array",

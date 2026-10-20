@@ -65,6 +65,17 @@
       ]
     },
     {
+      "code": "AFPA",
+      "display": "Access for Parent Authority",
+      "definition": "Access for Parent Authority",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Adgang for forældremyndighedsindehavere"
+        }
+      ]
+    },
+    {
       "code": "behavior-by-policy",
       "display": "Behavior by policy",
       "definition": "Behavior by policy",
@@ -72,6 +83,28 @@
         {
           "language": "da",
           "value": "Adfærd baseret på policy"
+        }
+      ]
+    },
+    {
+      "code": "RPCTEOC",
+      "display": "RelatedPerson Contributes to EpisodeOfCare",
+      "definition": "RelatedPerson Contributes to EpisodeOfCare",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Pårørende bidrager til telemedicinsk forløb"
+        }
+      ]
+    },
+    {
+      "code": "PORPI",
+      "display": "Processing of RelatedPerson Information",
+      "definition": "Processing of RelatedPerson Information",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Behandling af pårørendes oplysninger"
         }
       ]
     }
