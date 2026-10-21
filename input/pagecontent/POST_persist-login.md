@@ -25,6 +25,12 @@ __Body__:
           ]
         },
         "status": "active",
+        "category": [ {
+          "coding": [ {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-category",
+            "code": "general"
+          } ]
+        } ],
         "name": "Name",
         "participant": [
           {

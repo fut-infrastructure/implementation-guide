@@ -46,6 +46,12 @@ __Body__:
     }
   ],
   "status": "active",
+  "category": [ {
+    "coding": [ {
+      "system": "http://ehealth.sundhed.dk/cs/careteam-category",
+      "code": "general"
+    } ]
+  } ],
   "name": "6dd75b26-0597-44d6-b1ae-956cf96b6103",
   "period": {
     "start": "2026-04-16T11:34:40+00:00"
@@ -125,6 +131,12 @@ __Response__
     }
   ],
   "status": "active",
+  "category": [ {
+    "coding": [ {
+      "system": "http://ehealth.sundhed.dk/cs/careteam-category",
+      "code": "general"
+    } ]
+  } ],
   "name": "6dd75b26-0597-44d6-b1ae-956cf96b6103",
   "period": {
     "start": "2026-04-16T11:34:40+00:00"
