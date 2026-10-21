@@ -5,8 +5,8 @@
   "license": "CC0-1.0",
   "description": "Ehealth FHIR Template",
   "author": "ehealth.sundhed.dk",
-	"base": "fhir.base.template",
+	"base": "fhir2.base.template",
 	"dependencies": {
-		"fhir.base.template": "current"
+		"fhir2.base.template": "0.1.0"
 	}
 }
