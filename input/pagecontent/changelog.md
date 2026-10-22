@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Code systems
 - Added `general` and `practitioner-specific` to http://ehealth.sundhed.dk/cs/careteam-category
 ### ValueSets
+- Added http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet to http://ehealth.sundhed.dk/vs/careteam-participant-role
 ### ConceptMaps
 ### Resource/profile changes
 - BREAKING ehealth-careteam: identifier is now required (1..*)

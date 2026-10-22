@@ -25,6 +25,10 @@ __Body__:
           ]
         },
         "status": "active",
+        "identifier": [ {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:<fixed uuid>"
+        } ],
         "category": [ {
           "coding": [ {
             "system": "http://ehealth.sundhed.dk/cs/careteam-category",
