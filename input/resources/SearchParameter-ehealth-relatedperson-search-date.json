@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-relatedperson-search-date",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/date",
+    "name": "date",
+    "status": "active",
+    "date": "2026-07-21T00:00:00+00:00",
+    "code": "date",
+    "base": [
+        "RelatedPerson"
+    ],
+    "type": "date",
+    "description": "Search parameter for finding related persons based on period",
+    "expression": "RelatedPerson.period",
+    "xpathUsage": "normal"
+}

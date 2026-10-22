@@ -13,7 +13,7 @@ The eHealth profile of Consent has the following extensions:
 ## Registration of Consent
 When a Patient gives a consent, this consent must be recorded as a Consent resource. This resource can be created by the Patient herself or by a Practitioner as a result of conversations or correspondence with the Patient.
 
-eHealth operates with five categories of consents:
+eHealth operates with six categories of consents:
 
 1. Category **PITEOC**: Consent given by a Patient to be enrolled into a telemedical EpisodeOfCare. This Consent is interpreted to also apply to all CarePlan instances related to the consented EpisodeOfCare.
 
@@ -24,6 +24,8 @@ eHealth operates with five categories of consents:
 4. Category **PORPI** (Processing of RelatedPerson Information): Consent given by a RelatedPerson to have information about themselves, including their CPR number, stored and processed in the infrastructure. This is a precondition for a related person being able to log in and perform activities on behalf of the Patient. See [Consents for related persons performing activities](#consents-for-related-persons-performing-activities).
 
 5. Category **RPCTEOC** (RelatedPerson Contributes to EpisodeOfCare): Consent given by a Patient to a specific RelatedPerson contributing measurement data to the Patient's EpisodeOfCare. See [Consents for related persons performing activities](#consents-for-related-persons-performing-activities).
+
+4. Category **AFPA**: Blocks access for holders of parental authority (forældremyndighedsindehavere) to a specific EpisodeOfCare. Unlike PITEOC and SSLPCI, an AFPA Consent is not a consent given by the Patient but a *deny* decision recorded by the application solution (anvenderløsning). When an active AFPA Consent exists for an EpisodeOfCare, a parental authority holder (a RelatedPerson with relationship `PARAUTH`, see [ehealth-relatedperson](StructureDefinition-ehealth-relatedperson.html)) cannot set that EpisodeOfCare as security context, and cannot read or search the EpisodeOfCare or its associated data. The block applies to all parental authority holders of the Patient.
 
 Consents of category **PITEOC** are expressed by creating a Consent resource with:
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
@@ -37,6 +39,10 @@ Consents of category **behavior-by-policy** are expressed by creating a Consent 
 - `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
 - `Consent.category.coding.code = "behavior-by-policy"`
 - `Consent.policy.uri` set to the policy that defines the behaviour being decided. The policy must be one of those in the ValueSet [ehealth-consent-policy](ValueSet-vs-ehealth-consent-policy.html) - it is the policy that gives the Consent its concrete meaning.
+
+Consents of category **AFPA** are expressed by creating a Consent resource with:
+- `Consent.category.coding.system = "http://ehealth.sundhed.dk/cs/consent-category"`
+- `Consent.category.coding.code = "AFPA"`
 
 The remaining elements to set depend on the specific policy. For the currently defined policy, see [Controlling display of triage results to the Patient](#controlling-display-of-triage-results-to-the-patient) below.
 

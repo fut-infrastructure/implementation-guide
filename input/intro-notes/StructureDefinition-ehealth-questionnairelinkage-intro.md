@@ -16,9 +16,10 @@ The profile is based on FHIR Basic, following the same construction as `ehealth-
 
 The linkage consists of:
 
-- **questionnaireLinkageFor** (0..*): the questionnaires participating in the linkage. References are
-  version-specific — each questionnaire business version is a separate resource, and two versions of the
-  same questionnaire may both participate (linking across versions).
+- **questionnaireLinkageFor** (0..*): the questionnaires participating in the linkage, as normal (not
+  version-specific) references. Each questionnaire business version is a separate Questionnaire resource,
+  so two versions of the same questionnaire may both participate by referencing both resources (linking
+  across versions).
 - **item** (0..*): groups of linked questions. Each group has an optional user-entered `description` and
   `linkage` entries, each pairing a questionnaire reference with the `linkId` of the linked question in
   that questionnaire. A group may span two or more questionnaires, need not cover all questionnaires in

@@ -3,13 +3,13 @@
   "id": "questionnaire",
   "name": "questionnaire",
   "status": "active",
-  "date": "2026-08-03T02:47:32.323+00:00",
+  "date": "2026-10-16T09:29:54.469+00:00",
   "publisher": "ehealth.sundhed.dk",
   "kind": "instance",
   "instantiates": [ "http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data" ],
   "software": {
     "name": "questionnaire",
-    "version": "2.18.0"
+    "version": "2.21.0"
   },
   "implementation": {
     "description": "eHealth questionnaire service",
@@ -36,7 +36,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:questionnaireLinkageFor", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -110,6 +110,10 @@
         "type": "reference",
         "documentation": "The intended audience"
       }, {
+        "name": "questionnaireLinkageFor",
+        "type": "reference",
+        "documentation": "Questionnaire participating in the questionnaire linkage"
+      }, {
         "name": "recommendation",
         "type": "token",
         "documentation": "The recommendation"
@@ -125,6 +129,10 @@
         "name": "status",
         "type": "token",
         "documentation": "The current status"
+      }, {
+        "name": "title",
+        "type": "string",
+        "documentation": "The title (startsWith matching)"
       }, {
         "name": "viewForReference",
         "type": "reference",
@@ -151,7 +159,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:questionnaireLinkageFor", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
       "operation": [ {
         "name": "expunge",
         "definition": "https://questionnaire.devtest.systematic-ehealth.com/fhir/OperationDefinition/Binary-its-expunge"
@@ -163,7 +171,7 @@
         "code": "read"
       } ],
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ]
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:questionnaireLinkageFor", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ]
     }, {
       "type": "Questionnaire",
       "profile": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
@@ -183,7 +191,7 @@
       "conditionalCreate": true,
       "conditionalUpdate": true,
       "searchInclude": [ "*" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:questionnaireLinkageFor", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",
@@ -337,7 +345,7 @@
       "conditionalUpdate": true,
       "conditionalDelete": "single",
       "searchInclude": [ "*", "StructureDefinition:valueset" ],
-      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
+      "searchRevInclude": [ "Basic:actionGuidanceForReference", "Basic:intendedAudience", "Basic:questionnaireLinkageFor", "Basic:reference", "Basic:viewForReference", "Questionnaire:reference", "StructureDefinition:valueset" ],
       "searchParam": [ {
         "name": "_content",
         "type": "string",

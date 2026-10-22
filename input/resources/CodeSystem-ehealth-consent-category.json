@@ -65,6 +65,17 @@
       ]
     },
     {
+      "code": "AFPA",
+      "display": "Access for Parent Authority",
+      "definition": "Access for Parent Authority",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Adgang for forældremyndighedsindehavere"
+        }
+      ]
+    },
+    {
       "code": "behavior-by-policy",
       "display": "Behavior by policy",
       "definition": "Behavior by policy",

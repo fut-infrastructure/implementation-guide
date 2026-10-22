@@ -23,7 +23,7 @@ jobs:
     name: Transpile IG
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
-    container: ghcr.io/trifork/ig-publisher:2.3.4
+    container: ghcr.io/trifork/ig-publisher:3.0.1
 
     steps:
       # Checkout the repos needed
@@ -31,7 +31,7 @@ jobs:
 
         # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
       - name: IG transpile check
-        uses: trifork/ig-publisher/.github/actions/ig-transpile@v1
+        uses: trifork/ig-publisher/.github/actions/ig-transpile@3.0.1
         # uses: ../../trifork/ig-publisher/.github/actions/ig-transpile # Test local action
 
   # Transpile and publish the IG, if it was pushed to main with a tag
@@ -40,7 +40,7 @@ jobs:
     # A release is defined as a tag pushed to main
     if: ${{ github.event_name == 'push' && github.ref_type == 'tag' }}
     runs-on: ubuntu-latest-larger-disk
-    container: ghcr.io/trifork/ig-publisher:2.3.4
+    container: ghcr.io/trifork/ig-publisher:3.0.1
 
     steps:
       # Checkout the repos needed
@@ -89,7 +89,7 @@ jobs:
           repositories: "${{ env.WEB_REPO }},${{ env.REGISTRY_REPO }}"
 
       - name: Publish the implementation guide
-        uses: trifork/ig-publisher/.github/actions/ig-publish@v1
+        uses: trifork/ig-publisher/.github/actions/ig-publish@3.0.1
         # uses: ../../trifork/ig-publisher/.github/actions/ig-publish # Test local action
         with:
           app-token: ${{ steps.token.outputs.token }}

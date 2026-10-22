@@ -30,6 +30,8 @@
 
 - `ACTIONGUIDANCEVIEW_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change in either EHealthActonGuidance or EhealthView. If status is equal to Active or Retired, only the following elements can be changed (Recommendation, IntendedAudience, useContext, modifierrole and status). The following differences were found when updating existing resource with id %s: %s.
 
+- `ACTIONGUIDANCEVIEW_ILLEGAL_PROFILE_CHANGE`: Illegal profile change for resource with id %s: existing profile %s, update profile %s.
+
 #### ehealth-activitydefinition
 
 - `ACTIVITYDEFINITION_UPDATE_ALLOWED_FOR_STATUS`: Update is only allowed for ActivityDefinition with status: %s or %s, otherwise, only useContext can be modified. The following differences were found when updating existing resource with id %s: %s.
@@ -43,6 +45,8 @@
 - `ACTIVITYDEFINITION_SHARINGAPPROVALPOLICY_NOT_SET`: Resource %s with code: %s | %s must have SharingApprovalPolicy set.
 
 - `ACTIVITYDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
+
+- `ACTIVITYDEFINITION_BODYSITE_MISMATCH`: Body Site mismatch: Codes in .bodysite [%s] must match body-site codes in .useContext [%s]
 
 #### ehealth-appointment
 
@@ -72,6 +76,12 @@
 
 - `ASSEMBLER_PHMR_UNKNOWN_AUTHOR_TYPE`: Unknown author type: 
 
+#### ehealth-assigned
+
+- `ASSIGNED_MATERIAL_COUNT_DOCUMENT_REFERENCE_PARAMETER_MANDATORY`: The 'ehealth-documentReference' parameter is mandatory and must refer to a general-material DocumentReference from the Plan service
+
+- `ASSIGNED_MATERIAL_COUNT_STATUS_PARAMETER_MANDATORY`: The 'status' parameter is mandatory
+
 #### ehealth-careplan
 
 - `CAREPLAN_APPLY_NO_PLANDEFINITION`: There is no PlanDefinition with id %s
@@ -84,9 +94,19 @@
 
 - `CAREPLAN_APPLY_CAN_NOT_FIND_ACTIVITY_DEFINITION`: Can not find activity definition with id :%s
 
+- `CAREPLAN_APPLY_NO_SUITABLE_DIAGNOSIS`: Applying plan failed as no suitable diagnosis found from EpisodeOfCare with id %s when applying PlanDefinition with id %s. Conditions with status: [%s] are ignored
+
 - `CAREPLAN_NOT_FOUND`: CarePlan is not found.
 
 - `CAREPLAN_SEARCH_SUBJECT_CONTEXT_OR_RESPONSIBLE_ACTOR_IS_NOT_SPECIFIED`: At least subject, context or responsible actor must be specified
+
+- `CAREPLAN_SERVICEREQUEST_CREATE_OUTSIDE_APPLY`: ServiceRequest can only be created by applying a plan
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_OUTSIDE_PERIOD`: ServiceRequest.performer refers to RelatedPerson %s whose period does not include the current date
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_NOT_MANAGED`: ServiceRequest.performer refers to RelatedPerson %s which is not tagged with meta.security %s|%s
+
+- `CAREPLAN_SERVICEREQUEST_PERFORMER_RELATED_PERSON_PATIENT_MISMATCH`: ServiceRequest.performer refers to RelatedPerson %s with patient %s, which differs from ServiceRequest.subject %s
 
 #### ehealth-careteam
 
@@ -139,6 +159,8 @@
 - `DEVICE_WRONG_PATIENT_CONTEXT`: User with patient context can only interact with devices that has been issued to the patient or not issued to anyone yet
 
 - `DEVICE_WRITE_NON_PRIVATELY_OWNED`: Patient user can only create/update privately owned devices
+
+- `DEVICE_USE_STATEMENT_MISSING_CONTEXT`: DeviceUseStatement.context must reference a valid CarePlan when referred Device is not smartphone.
 
 #### ehealth-document
 
@@ -216,6 +238,8 @@
 
 - `EPISODEOFCARE_PATCH_NO_CONSENT`: No valid Episode Of Care related consent
 
+- `EPISODEOFCARE_PATCH_DIAGNOSIS_REMOVAL_NOT_ALLOWED`: It is not allowed to remove diagnosis(condition) from an episodeOfCare
+
 - `EPISODEOFCARE_CREATE_PATIENT_MUST_NOT_BE_DECEASED`: Patient.deceased must be false to create episode of care
 
 - `EPISODEOFCARE_CREATE_STATUS_HISTORY_NOT_EMPTY`: It is not allowed to fill status history manually
@@ -232,6 +256,26 @@
 
 - `EPISODEOFCARE_CROSS_TEAM_SEARCH_CONDITION_INVALID_AGAINST_TREATMENT_AREA`: Condition:code search parameter must be valid against treatment area determined by coexistence-tag: %s
 
+- `EPISODEOFCARE_RESOLVE_MANAGING_ORGANIZATION_REFERENCE_MISSING`: A reference to the organisation to resolve must be provided in the 'organization' parameter
+
+- `EPISODEOFCARE_RESOLVE_MANAGING_ORGANIZATION_NO_AUTHORITY`: No data-controller authority (municipality or region) could be resolved for organisation: %s
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_MISSING_START`: A data controller (ehealth-managing-organization) must have a period start date
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_END_BEFORE_START`: A data controller period end date must not be before its start date
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_HISTORICAL_IMMUTABLE`: A historical data controller (its period has already ended) cannot be modified or removed
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_CURRENT_MODIFICATION_NOT_ALLOWED`: A current data controller can only be closed by setting an end date; it cannot be removed, reopened, or have its organisation or start date changed
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_CURRENT_END_IN_PAST`: A current data controller can only be closed with an end date of today or later
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_BACKDATED_ADD_NOT_ALLOWED`: A data controller whose period has already ended cannot be added
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_CONTINUITY_GAP`: Data controller assignments must be continuous; the resulting periods leave a gap with no active data controller
+
+- `EPISODEOFCARE_MANAGING_ORGANIZATION_REQUIRED`: An EpisodeOfCare must have at least one data controller (ehealth-managing-organization)
+
 #### ehealth-library
 
 - `LIBRARY_EVALUATE_NO_INPUT_PARAMETER`: An input parameter of type Parameters should be provided.
@@ -241,6 +285,8 @@
 - `LIBRARY_EVALUATE_NO_RULE_DEFINED`: Library with id %s do not contain a rule to use for evaluation.
 
 - `LIBRARY_EVALUATE_NO_CAREPLAN_REFERENCING_PROVIDED_PROCEDUREQUEST`: CarePlan with reference to ServiceRequest with id %s is not found.
+
+- `LIBRARY_EVALUATE_NO_AGGREGATING_PROVENANCE_TARGETING_PROVIDED_RESOURCE`: Aggregate Provenance targeting factResolvingResource with id %s is not found.
 
 - `LIBRARY_EVALUATE_RULE_SYNTAX_ERRORS`: Syntax for rule is invalid. %s
 
@@ -279,6 +325,8 @@
 - `LIBRARY_EVALUATE_DATE_FILTER_PATH_NOT_RECOGNIZED`: DateFilter path %s is not recognized. Historical data will not be processed for library %s
 
 - `LIBRARY_EVALUATE_DATE_FILTER_EMPTY`: DateFilter path is empty. Historical data will not be processed for library %s
+
+- `LIBRARY_EVALUATE_INCORRECT_REFERENCE_TARGETED_BY_AGGREGATING_PROVENANCE`: Reference %s targeted by aggregating Provenance should be of type QuestionnaireResponse, Observation or Media.
 
 #### ehealth-material
 
@@ -330,6 +378,8 @@
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INPUT_SHOULD_REFERENCE_EPISODEOFCARE`: Input resources of type EHealthObservation, EHealthMedia and EHealthQuestionnaireResponse should reference an episode of care.
 
+- `MEASUREMENT_SUBMITMEASUREMENT_INPUT_SHOULD_REFERENCE_RELATEDPERSON`: Measurements submitted by a related person on behalf of a patient should reference the related person
+
 - `MEASUREMENT_SUBMITMEASUREMENT_EMPTY_INPUT_BUNDLE`: The input bundle does not contain any resources.
 
 - `MEASUREMENT_SUBMITMEASUREMENT_INPUT_BUNDLE_CONTAINS_NONE_OF_EXPECTED_RESOURCES`: The input bundle does not contain any resources of type EHealthObservation, EHealthMedia, EHealthQuestionnaireResponse.
@@ -379,6 +429,10 @@
 - `MEASUREMENT_SUBMITMEASUREMENT_INVALID_RESOLVED_TIMING`: ResolvedTiming must have either type=Resolved and start/end or type=Unresolved/Adhoc/Extra and no start/end
 
 - `MEASUREMENT_SUBMITMEASUREMENT_TOO_MANY_ANSWERS`: QuestionnaireResponse: %s has too many answers for the item with linkId: %s
+
+- `MEASUREMENT_SUBMITMEASUREMENT_SERVICEREQUEST_NOT_MARKED_FOR_AGGREGATION`: The PlanDefinition was not marked for Aggregation
+
+- `MEASUREMENT_SUBMITMEASUREMENT_INVALID_RESOURCE_FOR_AGGREGATION`: Unexpected resource of type %s found in the input bundle for aggregation
 
 - `MEASUREMENT_SUBMITMEASUREMENT_TOO_FEW_ANSWERS`: QuestionnaireResponse: %s has too few answers for the item with linkId: %s
 
@@ -436,6 +490,10 @@
 
 - `PLANDEFINITION_CREATE_MODIFIER_ROLE_OWNER_MANDATORY`: Modifier role owner is mandatory
 
+- `PLANDEFINITION_AGGREGATE_GROUP_ID_MANDATORY`: Aggregate group id is mandatory for the following resources: %s
+
+- `PLANDEFINITION_AGGREGATION_RULE_CONSTRAINTS`: There are aggregation rule constraints violations: %s
+
 #### ehealth-provenance
 
 - `PROVENANCE_NO_READ_PRIVILEGE`: User must be logged in with the provenance read privilege
@@ -482,6 +540,26 @@
 
 - `QUESTIONNAIRE_TERMINOLOGY_HELPER_CODE_SYSTEM_FOUND_MORE_THAN_ONE`: Found more than one code system for url: %s
 
+#### ehealth-questionnairelinkage
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_IDENTIFIER_CHANGE`: Illegal identifier change for QuestionnaireLinkage with id %s. The identifier is assigned by the server at creation and cannot be changed or removed.
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_STATUS_CHANGE`: Illegal status change for QuestionnaireLinkage from %s to %s
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_CHANGE_OF_ELEMENTS`: Illegal element change for QuestionnaireLinkage. If status is Active or Retired, only the following elements can be changed (recommendation, intendedAudience, useContext, modifierRole and status). The following differences were found when updating existing resource with id %s: %s.
+
+- `QUESTIONNAIRELINKAGE_ACTIVATION_REQUIRES_QUESTIONNAIRE`: A QuestionnaireLinkage can only be activated when it references at least one questionnaire in the questionnaireLinkageFor extension.
+
+- `QUESTIONNAIRELINKAGE_QUESTIONNAIRE_NOT_FOUND`: The Questionnaire %s referenced by the QuestionnaireLinkage does not exist.
+
+- `QUESTIONNAIRELINKAGE_QUESTIONNAIRE_ILLEGAL_STATUS`: The Questionnaire %s referenced by the QuestionnaireLinkage must have status active or retired, but has status %s.
+
+- `QUESTIONNAIRELINKAGE_ITEM_QUESTIONNAIRE_NOT_IN_FOR`: The item linkage references Questionnaire %s, which is not referenced in the questionnaireLinkageFor extension.
+
+- `QUESTIONNAIRELINKAGE_UNKNOWN_LINKID`: The linkId %s does not exist in Questionnaire %s.
+
+- `QUESTIONNAIRELINKAGE_ILLEGAL_USER_TYPE`: User type %s is not allowed to %s a QuestionnaireLinkage.
+
 #### ehealth-reporting
 
 - `REPORTING_MISSING_INPUT_PARAMETER`: Parameter "%s" is mandatory for report "%s".
@@ -512,11 +590,25 @@
 
 - `SECURITY_OPERATION_NOT_ALLOWED_FOR_USER_TYPE`: Operation not allowed for user type: %s
 
+- `SECURITY_OPERATION_NOT_ALLOWED_FOR_USER_TYPE_WITH_ROLE`: Operation not allowed for user type: %s, with the role: %s
+
 - `SECURITY_SEARCH_PARAM_NOT_MATCHING_TOKEN_CONTEXT`: Search parameters not matching security token context: %s
 
 - `SECURITY_SEARCH_PARAMS_MANDATORY`: Search parameters mandatory with current user type and combination of search parameters: %s
 
 - `SECURITY_SEARCH_OPERATION_POST_CONSTRAINT`: Search on %s only supports POST style.
+
+- `SECURITY_PATIENT_MUST_BE_SENDER_ON_COMMUNICATION`: Patient user must be the sender of the communication
+
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_SENDER_ON_COMMUNICATION`: RelatedPerson with contextType parent_authority must be sender of the communication
+
+- `SECURITY_PATIENT_MUST_ASSIGNED_TO_TASK`: Patient user must be explicitly assigned to the Task
+
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_REQUESTER_OF_TASK`: RelatedPerson with contextType parent_authority must be requester of the task
+
+- `SECURITY_MANDATORY_RELATED_PERSON_PATIENTCONTEXT`: The RelatedPerson users patientContext must be explicitly assigned to the Task
+
+- `SECURITY_PARENT_AUTHORITY_MUST_BE_PERFORMER`: RelatedPerson with contextType parent_authority holder must be the performer
 
 #### ehealth-status
 

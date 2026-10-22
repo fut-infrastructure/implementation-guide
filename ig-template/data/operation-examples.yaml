@@ -69,6 +69,9 @@
   path: POST_get-performer-activities.html
 
 - profile: system
+  path: POST_RelatedPerson_create-managed-related-person.html
+
+- profile: system
   path: POST_CarePlan_suggest-care-teams.html
 
 - profile: system
