@@ -25,6 +25,16 @@ __Body__:
           ]
         },
         "status": "active",
+        "identifier": [ {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:85b7fc91-edaf-48e8-8688-d743e9ebc898"
+        } ],
+        "category": [ {
+          "coding": [ {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-category",
+            "code": "general"
+          } ]
+        } ],
         "name": "Name",
         "participant": [
           {

@@ -25,6 +25,9 @@
     "include": [
       {
         "system": "http://ehealth.sundhed.dk/cs/careteam-participant-role"
+      },
+      {
+        "valueSet": [ "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet" ]
       }
     ]
   }

@@ -1,5 +1,22 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Release 2027.1. todo: change to semver format before release
+### General changes (Documentation)
+### Custom operations
+#### System operations
+#### Instance operations
+### Code systems
+- Added `general` and `practitioner-specific` to http://ehealth.sundhed.dk/cs/careteam-category
+### ValueSets
+- Added http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet to http://ehealth.sundhed.dk/vs/careteam-participant-role
+### ConceptMaps
+### Resource/profile changes
+- BREAKING ehealth-careteam: identifier is now required (1..*)
+- BREAKING ehealth-careteam: category is now required (1..1)
+- ehealth-careteam: reasonCode is now optional (0..*)
+### Search parameters
+
+
 ## 11.0.0 (2026-11-04)
 ### General changes
 - Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).
