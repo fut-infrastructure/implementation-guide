@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 11.0.1 (2026-11-04)
+### General changes
+- Fixed drop down menus in page render
+
 ## 11.0.0 (2026-11-04)
 ### General changes
 - Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).
