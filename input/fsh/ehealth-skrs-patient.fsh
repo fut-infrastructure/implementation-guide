@@ -27,6 +27,8 @@ Parent: Patient
 * address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes named municipalityCodes 0..*
 * address[officialHomeAddress].extension contains http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes named regionalSubDivisionCodes 0..*
 
+* generalPractitioner 0..1
+
 
 Instance: 291
 InstanceOf: Patient
