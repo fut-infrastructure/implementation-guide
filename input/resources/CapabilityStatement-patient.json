@@ -2472,6 +2472,24 @@
               "documentation": "The relationship between the patient and the relatedperson"
             },
             {
+              "name": "relatedPersonCPRIdentifier",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/cprIdentifier",
+              "type": "token",
+              "documentation": "Search parameter for RelatedPerson DK-Core CPR identifier"
+            },
+            {
+              "name": "relatedPersonRelationshipParauth",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/relationshipParauth",
+              "type": "token",
+              "documentation": "Search parameter for the relationship code PARAUTH (parental authority) on a RelatedPerson"
+            },
+            {
+              "name": "relatedPersonCPRIdentifierPatientParauthUnique",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/cprIdentifierPatientParauthUnique",
+              "type": "composite",
+              "documentation": "Uniqueness constraint: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code PARAUTH"
+            },
+            {
               "name": "email",
               "definition": "http://hl7.org/fhir/SearchParameter/individual-email",
               "type": "token",
