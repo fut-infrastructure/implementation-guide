@@ -1,0 +1,36 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-relatedperson-search-cpridentifier-patient-parauth-unique",
+    "extension" : [
+        {
+            "url" : "http://hapifhir.io/fhir/StructureDefinition/sp-unique",
+            "valueBoolean" : true
+        }
+    ],
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/cprIdentifierPatientParauthUnique",
+    "name": "relatedPersonCPRIdentifierPatientParauthUnique",
+    "status": "active",
+    "date": "2026-10-26T00:00:00+00:00",
+    "code": "relatedPersonCPRIdentifierPatientParauthUnique",
+    "base": [
+        "RelatedPerson"
+    ],
+    "type": "composite",
+    "description": "Uniqueness constraint: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code PARAUTH.",
+    "expression": "RelatedPerson",
+    "xpathUsage": "normal",
+    "component" : [
+        {
+            "definition" : "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/cprIdentifier",
+            "expression" : "RelatedPerson"
+        },
+        {
+            "definition" : "http://hl7.org/fhir/SearchParameter/RelatedPerson-patient",
+            "expression" : "RelatedPerson"
+        },
+        {
+            "definition" : "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/relationshipParauth",
+            "expression" : "RelatedPerson"
+        }
+    ]
+}
