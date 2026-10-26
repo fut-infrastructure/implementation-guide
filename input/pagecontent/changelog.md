@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 11.0.2 (2026-11-04)
+### Search parameters
+- Added search parameters `relatedPersonCPRIdentifier` (CPR identifier) and `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson, and the uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`. **Note for vendors:** creating a second such RelatedPerson is rejected with HTTP 409 (Conflict).
+
 ## 11.0.1 (2026-11-04)
 ### General changes
 - Fixed drop down menus in page render
@@ -53,7 +57,6 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added search parameter `title` on `ehealth-questionnairelinkage` to query by title (string, startsWith matching). As the parameter is defined on Basic, it also applies to `ehealth-view` and `ehealth-actionguidance`.
 - Added search parameters `occurrenceDateTime` (`occurrenceDateTime`), `occurrencePeriod` (`occurrencePeriod`) and `occurrencePeriodEnd` (`occurrencePeriod.end`) on `ehealth-servicerequest`, and support for the standard search parameters `instantiates-canonical` and `_tag` and the chained search `episodeOfCare.team` on ServiceRequest (CCR0345). ServiceRequest search now also supports `_count` to limit the number of ServiceRequests per page; the remaining ServiceRequests are retrieved by following the Bundle's `next` link. `_summary=count` returns only the total number of matching ServiceRequests. See the [CarePlan service CapabilityStatement](CapabilityStatement-careplan.html) and the [ehealth-servicerequest](StructureDefinition-ehealth-servicerequest.html) introduction.
 - Added a `date` search parameter on RelatedPerson that searches `RelatedPerson.period`.
-- Added search parameters `relatedPersonCPRIdentifier` (CPR identifier) and `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson, and the uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`.
 
 ### Profiles
 - Documented the update rules for ehealth-relatedperson, covering the managed variant and its locked master-data fields.
