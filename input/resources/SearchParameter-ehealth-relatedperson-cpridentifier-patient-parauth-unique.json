@@ -1,6 +1,6 @@
 {
     "resourceType": "SearchParameter",
-    "id": "ehealth-relatedperson-search-cpridentifier-patient-parauth-unique",
+    "id": "ehealth-relatedperson-cpridentifier-patient-parauth-unique",
     "extension" : [
         {
             "url" : "http://hapifhir.io/fhir/StructureDefinition/sp-unique",
