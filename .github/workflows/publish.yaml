@@ -27,7 +27,7 @@ jobs:
 
     steps:
       # Checkout the repos needed
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
         # https://confluence.hl7.org/display/FHIR/IG+Publisher+CLI
       - name: IG transpile check
@@ -44,7 +44,7 @@ jobs:
 
     steps:
       # Checkout the repos needed
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           path: ig
 
