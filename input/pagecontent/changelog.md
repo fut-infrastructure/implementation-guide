@@ -14,6 +14,12 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`.
 
+## 11.0.2 (2026-11-04)
+### Search parameters
+- Added search parameter `relatedPersonCPRIdentifier` (CPR identifier) on RelatedPerson
+- Added search parameter `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson
+- Added an uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`. **Note for vendors:** creating a second such RelatedPerson is rejected with HTTP 409 (Conflict).
+
 ## 11.0.1 (2026-11-04)
 ### General changes
 - Fixed drop down menus in page render
