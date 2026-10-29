@@ -110,6 +110,9 @@
         "concept": [
           {
             "code": "ZZ3170"
+          },
+          {
+            "code": "ZZ5048"
           }
         ]
       },
@@ -133,6 +136,29 @@
           },
           {
             "code": "94083-3"
+          }
+        ]
+      },
+      {
+        "system": "http://ehealth.sundhed.dk/cs/mds-codes",
+        "concept": [
+          {
+            "code": "MDS-UPDRS-I"
+          },
+          {
+            "code": "MDS-UPDRS-IA"
+          },
+          {
+            "code": "MDS-UPDRS-IB"
+          },
+          {
+            "code": "MDS-UPDRS-II"
+          },
+          {
+            "code": "MDS-UPDRS-III"
+          },
+          {
+            "code": "MDS-UPDRS-IV"
           }
         ]
       }

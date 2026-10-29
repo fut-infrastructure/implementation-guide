@@ -2201,6 +2201,10 @@
       "display": "Hjemmeblodtryksmåling udført af patienten"
     },
     {
+      "code": "ZZ5048",
+      "display": "Hoehn og Yahr scale (HY)"
+    },
+    {
       "code": "ZZ7011",
       "display": "Klinisk foto"
     },
