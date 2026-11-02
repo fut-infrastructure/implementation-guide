@@ -3,6 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## Release 2027.1. todo: change to semver format before release
 ### General changes (Documentation)
 ### Custom operations
+- Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
 #### System operations
 #### Instance operations
 ### Code systems

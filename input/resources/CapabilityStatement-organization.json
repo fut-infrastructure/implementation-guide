@@ -307,7 +307,11 @@
         "name": "traverse-to-sor",
         "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/Organization-i-traverse-to-sor",
         "documentation": "Traverse upforwards to the first SOR organization\nHttp response code 404 will be returned if no related SOR organization could be found"
-      } ]
+      }, {
+        "name": "find-or-create-practitioner-specific-careteam",
+        "definition": "https://organization.devtest.systematic-ehealth.com/fhir/OperationDefinition/CareTeam-t-find-or-create-practitioner-specific-careteam",
+        "documentation": "Returns the Practitioner-specific CareTeam for the given Practitioner and authorisation (qualification identifier), and creates it when none exists.\r\n## Input\r\n'practitioner': mandatory reference to the Practitioner.\r\n'qualification': mandatory identifier (system and value) of the Practitioner's authorisation qualificationThe qualification must be active.\r\n## Output\r\nThe CareTeam of category practitioner-specific, identified by the qualification's value.\r\nAn OperationOutcome with HTTP 422 is returned when the Practitioner is not found, or has no active qualification with the given identifier, the CareTeam found for the authorisation is inactive or its period has ended, or several CareTeams are found for the authorisation."
+      }]
     }, {
       "type": "Practitioner",
       "profile": "http://ehealth.sundhed.dk/fhir/StructureDefinition/ehealth-practitioner",
