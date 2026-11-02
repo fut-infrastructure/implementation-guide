@@ -1,7 +1,7 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CareTeam-t-find-or-create-practitioner-specific-careteam",
-  "url": "https://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-t-find-or-create-practitioner-specific-careteam",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-t-find-or-create-practitioner-specific-careteam",
   "name": "find-or-create-practitioner-specific-careteam",
   "title": "Find or create a Practitioner-specific CareTeam",
   "status": "active",
