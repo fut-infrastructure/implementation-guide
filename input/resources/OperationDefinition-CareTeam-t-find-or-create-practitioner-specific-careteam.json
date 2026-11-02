@@ -1,16 +1,12 @@
 {
   "resourceType": "OperationDefinition",
   "id": "CareTeam-t-find-or-create-practitioner-specific-careteam",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Operation</div>"
-  },
   "url": "https://organization.local.ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-t-find-or-create-practitioner-specific-careteam",
   "name": "find-or-create-practitioner-specific-careteam",
   "title": "Find or create a Practitioner-specific CareTeam",
   "status": "active",
   "kind": "operation",
-  "description": "Returns the Practitioner-specific CareTeam for the given Practitioner and authorisation (qualification identifier), and creates it when none exists.\r\n## Input\r\n'practitioner': mandatory reference to the Practitioner.\r\n'qualification': mandatory identifier (system and value) of the Practitioner's authorisation qualificationThe qualification must be active.\r\n## Output\r\nThe CareTeam of category practitioner-specific, identified by the qualification's value.\r\nAn OperationOutcome with HTTP 422 is returned when the Practitioner is not found, or has no active qualification with the given identifier, the CareTeam found for the authorisation is inactive or its period has ended, or several CareTeams are found for the authorisation.",
+  "description": "Returns the Practitioner-specific CareTeam for the given Practitioner and authorisation, and creates it when none exists.\r\n## Input\r\n'practitioner': mandatory reference to the Practitioner.\r\n'qualification': mandatory identifier (system and value) of the Practitioner's authorisation qualification. The qualification must be active.\r\n## Output\r\nThe CareTeam of category practitioner-specific, identified by the authorisation number.\r\nAn OperationOutcome with HTTP 422 is returned when the Practitioner is not found, has no active qualification with the given identifier, the CareTeam found for the authorisation is inactive or its period has ended, or several CareTeams are found for the authorisation.",
   "affectsState": true,
   "code": "find-or-create-practitioner-specific-careteam",
   "resource": [
@@ -41,6 +37,7 @@
       "use": "out",
       "min": 0,
       "max": "1",
+      "documentation": "The Practitioner-specific CareTeam for the given authorisation. When none exists, it is created.",
       "type": "CareTeam"
     }
   ]
