@@ -6,7 +6,7 @@
   "title": "Find or create a Practitioner-specific CareTeam",
   "status": "active",
   "kind": "operation",
-  "description": "Returns the Practitioner-specific CareTeam for the given Practitioner and authorisation, and creates it when none exists.\r\n## Input\r\n'practitioner': mandatory reference to the Practitioner.\r\n'qualification': mandatory identifier (system and value) of the Practitioner's authorisation qualification. The qualification must be active.\r\n## Output\r\nThe CareTeam of category practitioner-specific, identified by the authorisation number.\r\nAn OperationOutcome with HTTP 422 is returned when the Practitioner is not found, has no active qualification with the given identifier, the CareTeam found for the authorisation is inactive or its period has ended, or several CareTeams are found for the authorisation.",
+  "description": "The operation returns the Practitioner-specific CareTeam for the given Practitioner and authorisation. \nA Practitioner-specific CareTeam is found by the given qualification. When no such CareTeam exists, a new one is created. \nThe Practitioner must have an active qualification with the given authorisation. \nAn OperationOutcome with an explicit error is returned in case the Practitioner is not found, in case the Practitioner has no active qualification with the given authorisation, in case the CareTeam found is inactive or its period has ended, or in case several CareTeams are found for the authorisation.",
   "affectsState": true,
   "code": "find-or-create-practitioner-specific-careteam",
   "resource": [
