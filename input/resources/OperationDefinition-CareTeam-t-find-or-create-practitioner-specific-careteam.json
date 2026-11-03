@@ -37,8 +37,8 @@
       "use": "out",
       "min": 0,
       "max": "1",
-      "documentation": "The Practitioner-specific CareTeam for the given authorisation. When none exists, it is created.",
-      "type": "CareTeam"
+      "type": "CareTeam",
+      "documentation": "The Practitioner-specific CareTeam for the given authorisation. When none exists, it is created."
     }
   ]
 }

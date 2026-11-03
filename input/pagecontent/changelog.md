@@ -14,7 +14,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ### Resource/profile changes
 - BREAKING ehealth-careteam: identifier is now required (1..*)
 - BREAKING ehealth-careteam: category is now required (1..1)
-- ehealth-careteam: reasonCode is now optional (0..*)
+- BREAKING ehealth-careteam: CareTeam no longer has required reasonCode (0..*)
 ### Search parameters
 
 
