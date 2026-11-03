@@ -1,5 +1,12 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 11.0.4 (2026-11-04)
+### Custom operations
+#### Type operations
+- Added the optional input parameter `period` to `RelatedPerson/$create-managed-related-person`, the period the created RelatedPerson is active for. See the [OperationDefinition](OperationDefinition-ehealth-relatedperson-create-managed.html) and the [operation example](POST_RelatedPerson_create-managed-related-person.html).
+### Capability statements
+- Added the `date` search parameter (searching `RelatedPerson.period`) and the `create-managed-related-person` operation to the RelatedPerson resource in the [Patient service CapabilityStatement](CapabilityStatement-patient.html).
+
 ## 11.0.3 (2026-11-04)
 ### Code systems
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.

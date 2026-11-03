@@ -1,6 +1,6 @@
 `POST [base]/RelatedPerson/$create-managed-related-person`
 
-The caller supplies the related person's CPR number, the Patient reference, at least one relationship, and optional co-existence tags. The service seeds the related person's master data from the national registry and marks the created resource as managed.
+The caller supplies the related person's CPR number, the Patient reference, at least one relationship, optional co-existence tags, and an optional period the related person is active for. The service seeds the related person's master data from the national registry and marks the created resource as managed.
 
 __Request Headers__
 ```
@@ -45,6 +45,13 @@ __Body__
         "system": "http://ehealth.sundhed.dk/cs/ehealth-system",
         "code": "xa"
       }
+    },
+    {
+      "name": "period",
+      "valuePeriod": {
+        "start": "2026-01-01",
+        "end": "2026-12-31"
+      }
     }
   ]
 }
@@ -86,6 +93,10 @@ __Response__
     }
   ],
   "active": true,
+  "period": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
   "patient": {
     "reference": "Patient/123"
   },
