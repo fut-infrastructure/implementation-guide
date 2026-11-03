@@ -1,5 +1,29 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 11.0.3 (2026-11-04)
+### Code systems
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.
+- Added `ZZ5048` (Hoehn og Yahr scale (HY)) to CodeSystem `urn-oid-1.2.208.176.2.4`.
+### ValueSets
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/vs/observation-codes`.
+### ConceptMaps
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`.
+
+## 11.0.2 (2026-11-04)
+### Search parameters
+- Added search parameter `relatedPersonCPRIdentifier` (CPR identifier) on RelatedPerson
+- Added search parameter `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson
+- Added an uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`. **Note for vendors:** creating a second such RelatedPerson is rejected with HTTP 409 (Conflict).
+
+## 11.0.1 (2026-11-04)
+### General changes
+- Fixed drop down menus in page render
+
 ## 11.0.0 (2026-11-04)
 ### General changes
 - Documented the new consent category `AFPA` (Access for Parent Authority) in the ehealth-consent introduction: a deny Consent (`provision.type = deny`, `provision.data.reference` = EpisodeOfCare) that blocks parental authority holders from accessing a specific EpisodeOfCare (CCR0329).

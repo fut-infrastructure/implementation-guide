@@ -376,6 +376,95 @@
           ]
         }
       ]
+    },
+    {
+      "source": "urn:oid:1.2.208.176.2.4",
+      "target": "http://hl7.org/fhir/data-types",
+      "element": [
+        {
+          "code": "ZZ5048",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://ehealth.sundhed.dk/cs/mds-codes",
+      "target": "http://hl7.org/fhir/data-types",
+      "element": [
+        {
+          "code": "MDS-UPDRS-I",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IA",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IB",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-II",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-III",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IV",
+          "target": [
+            {
+              "code": "integer",
+              "display": "integer",
+              "equivalence": "specializes",
+              "comment": "Should really be specializes but igpublisher turns into narrower (which requires a comment)"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
