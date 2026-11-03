@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Upcoming changes (2027.1)
+### ValueSets
+- Added `MTH` (mother) and `FTH` (father) from `http://terminology.hl7.org/CodeSystem/v3-RoleCode` to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
+
 ## 11.0.3 (2026-11-04)
 ### Code systems
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.
