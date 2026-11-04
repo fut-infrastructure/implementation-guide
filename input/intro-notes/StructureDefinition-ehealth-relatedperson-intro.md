@@ -16,7 +16,7 @@ For a managed RelatedPerson the following fields are maintained by the infrastru
 - `address` where `use = home`
 - name and address protection, expressed as `meta.security = R`
 
-All other fields remain editable by client systems, including nicknames, temporary addresses, `active`, `period`, and `relationship`. The exception is a RelatedPerson with the relationship `POWATT` or `PARAUTH`, whose `active` and `period` are controlled by the infrastructure (see [Relationship](#relationship)).
+All other fields remain editable by client systems, including nicknames, temporary addresses, `active`, `period`, and `relationship`. The exception is a RelatedPerson with the relationship `POWATT` or `PARAUTH`, who are entirely controlled by the infrastructure (see [Relationship](#relationship)).
 
 ### Active and period
 When a managed RelatedPerson is created with the `$create-managed-related-person` operation, `active` is set from `period`: it is true when today lies within the period, and an absent start or end leaves that side open. Afterwards the client system maintains `active` and `period`.
