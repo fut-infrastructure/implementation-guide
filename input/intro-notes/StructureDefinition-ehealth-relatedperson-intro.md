@@ -21,7 +21,7 @@ All other fields remain editable by client systems, including nicknames, tempora
 ### Active and period
 When a managed RelatedPerson is created with the `$create-managed-related-person` operation, `active` is set from `period`: it is true when today lies within the period, and an absent start or end leaves that side open. Afterwards the client system maintains `active` and `period`.
 
-A citizen can log in as a managed related person (with tasks) through a client solution when the RelatedPerson carries the client solution's co-existence tag, is active, has an active Patient, and has no `period.end` or a `period.end` in the future. RelatedPersons with the relationship `POWATT` or `PARAUTH` are not part of this login.
+A citizen can log in as a managed related person (with tasks) through a client solution when the RelatedPerson carries the client solution's co-existence tag, is active, has an active Patient, and has a current `period`. RelatedPersons with the relationship `POWATT` or `PARAUTH` are not part of this login.
 
 ## Relationship
 Client systems specify the relationship or relationships a related person has to the patient. The relationship coding is bound to the RelationshipTypes value set.
