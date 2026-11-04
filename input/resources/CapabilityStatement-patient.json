@@ -2472,6 +2472,12 @@
               "documentation": "The relationship between the patient and the relatedperson"
             },
             {
+              "name": "date",
+              "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/date",
+              "type": "date",
+              "documentation": "Search parameter for finding related persons based on period"
+            },
+            {
               "name": "relatedPersonCPRIdentifier",
               "definition": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/cprIdentifier",
               "type": "token",
@@ -2591,6 +2597,11 @@
             {
               "name": "updateRelatedPersonWithSKRSData",
               "definition": "https://patient.ehealth.sundhed.dk/fhir/OperationDefinition/RelatedPerson-t-updateRelatedPersonWithSKRSData"
+            },
+            {
+              "name": "create-managed-related-person",
+              "definition": "http://ehealth.sundhed.dk/fhir/OperationDefinition/ehealth-relatedperson-create-managed",
+              "documentation": "Creates a managed RelatedPerson seeded from the national registry"
             }
           ]
         },
