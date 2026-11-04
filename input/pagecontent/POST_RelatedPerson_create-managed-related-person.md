@@ -2,6 +2,7 @@
 
 The caller supplies the related person's CPR number, the Patient reference, at least one relationship, optional co-existence tags, and an optional period the related person is active for. The service seeds the related person's master data from the national registry and marks the created resource as managed.
 
+`RelatedPerson.active` is set from the period: it is true when today lies within the period, and an absent start or end leaves that side open.
 __Request Headers__
 ```
 Authorization: ******

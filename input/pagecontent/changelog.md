@@ -3,7 +3,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 ## 11.0.4 (2026-11-04)
 ### Custom operations
 #### Type operations
-- Added the optional input parameter `period` to `RelatedPerson/$create-managed-related-person`, the period the created RelatedPerson is active for. See the [OperationDefinition](OperationDefinition-ehealth-relatedperson-create-managed.html) and the [operation example](POST_RelatedPerson_create-managed-related-person.html).
+- Added the optional input parameter `period` to `RelatedPerson/$create-managed-related-person`, the period the created RelatedPerson is active for. `RelatedPerson.active` is now set at creation from the period: true when today lies within it, with an absent start or end leaving that side open. **Note for vendors:** a related person created with a `period` that has ended or not yet started is created inactive. See the [OperationDefinition](OperationDefinition-ehealth-relatedperson-create-managed.html) and the [operation example](POST_RelatedPerson_create-managed-related-person.html).
 ### Capability statements
 - Added the `date` search parameter (searching `RelatedPerson.period`) and the `create-managed-related-person` operation to the RelatedPerson resource in the [Patient service CapabilityStatement](CapabilityStatement-patient.html).
 

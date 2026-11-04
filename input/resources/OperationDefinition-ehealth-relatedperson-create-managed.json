@@ -52,7 +52,7 @@
             "use": "in",
             "min": 0,
             "max": "1",
-            "documentation": "The period which the RelatedPerson is active for",
+            "documentation": "The period which the RelatedPerson is active for. When the RelatedPerson is created, `active` is set from the period: it is true when today (Danish time) lies within the period, where an absent start or end leaves that side open.",
             "type": "Period"
         },
         {
