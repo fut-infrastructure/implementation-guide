@@ -1,0 +1,92 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "mds-codes",
+  "url": "http://ehealth.sundhed.dk/cs/mds-codes",
+  "version": "1.0.0",
+  "name": "MDSCodes",
+  "title": "International Parkinson and Movement Disorder Society (MDS) Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-10-29T00:00:00+00:00",
+  "publisher": "International Parkinson and Movement Disorder Society (MDS) - Goetz et al. 2008 i MDS (Movement Disorder Society-sponsored revision of the Unified Parkinson's Disease Rating Scale (MDS-UPDRS): Scale presentation and clinimetric testing results)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": ""
+        },
+        {
+          "system": "email",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "description": "MDS Codes by Christopher G. Goetz, MD and Nancy LaPelle, PhD",
+  "copyright": "Copyright © (2026) International Parkinson and Movement Disorder Society (MDS). All rights reserved.\nAdapted and used with permission of MDS. This derivative of the MDS-Unified Parkinson's Disease Rating Scale (\"MDS-UPDRS\") has not been validated or tested for reliability",
+  "caseSensitive": true,
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "MDS-UPDRS-I",
+      "display": "MDS - UPDRS-I",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-I"
+        }
+      ]
+    },
+    {
+      "code": "MDS-UPDRS-IA",
+      "display": "MDS - UPDRS-IA",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-IA"
+        }
+      ]
+    },
+    {
+      "code": "MDS-UPDRS-IB",
+      "display": "MDS - UPDRS-IB",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-IB"
+        }
+      ]
+    },
+    {
+      "code": "MDS-UPDRS-II",
+      "display": "MDS - UPDRS-II",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-II"
+        }
+      ]
+    },
+    {
+      "code": "MDS-UPDRS-III",
+      "display": "MDS - UPDRS-III",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-III"
+        }
+      ]
+    },
+    {
+      "code": "MDS-UPDRS-IV",
+      "display": "MDS - UPDRS-IV",
+      "designation": [
+        {
+          "language": "da",
+          "value": "MDS - UPDRS-IV"
+        }
+      ]
+    }
+  ]
+}

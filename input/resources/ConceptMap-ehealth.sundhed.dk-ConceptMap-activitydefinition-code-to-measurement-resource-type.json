@@ -348,6 +348,16 @@
           ]
         },
         {
+          "code": "ZZ5048",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
           "code": "ZZ7011",
           "display": "Klinisk foto",
           "target": [
@@ -461,6 +471,72 @@
         {
           "code": "94083-3",
           "display": "Wound volume",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://ehealth.sundhed.dk/cs/mds-codes",
+      "target": "http://hl7.org/fhir/resource-types",
+      "element": [
+        {
+          "code": "MDS-UPDRS-I",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IA",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IB",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-II",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-III",
+          "target": [
+            {
+              "code": "Observation",
+              "display": "Observation",
+              "equivalence": "relatedto"
+            }
+          ]
+        },
+        {
+          "code": "MDS-UPDRS-IV",
           "target": [
             {
               "code": "Observation",

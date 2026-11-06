@@ -1,22 +1,36 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Release 2027.1. todo: change to semver format before release
-### General changes (Documentation)
+## 11.0.3 (2026-11-04)
 ### Custom operations
 - Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
-#### System operations
-#### Instance operations
 ### Code systems
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.
+- Added `ZZ5048` (Hoehn og Yahr scale (HY)) to CodeSystem `urn-oid-1.2.208.176.2.4`.
 - Added `general` and `practitioner-specific` to http://ehealth.sundhed.dk/cs/careteam-category
 ### ValueSets
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/vs/observation-codes`.
 - Added http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet to http://ehealth.sundhed.dk/vs/careteam-participant-role
 ### ConceptMaps
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`.
 ### Resource/profile changes
 - BREAKING ehealth-careteam: identifier is now required (1..*)
 - BREAKING ehealth-careteam: category is now required (1..1)
 - BREAKING ehealth-careteam: CareTeam no longer has required reasonCode (0..*)
-### Search parameters
 
+## 11.0.2 (2026-11-04)
+### Search parameters
+- Added search parameter `relatedPersonCPRIdentifier` (CPR identifier) on RelatedPerson
+- Added search parameter `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson
+- Added an uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`. **Note for vendors:** creating a second such RelatedPerson is rejected with HTTP 409 (Conflict).
+
+## 11.0.1 (2026-11-04)
+### General changes
+- Fixed drop down menus in page render
 
 ## 11.0.0 (2026-11-04)
 ### General changes
