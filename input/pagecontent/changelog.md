@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## Upcoming changes (2027.1)
+### ValueSets
+- Added `MTH` (mother) and `FTH` (father) from `http://terminology.hl7.org/CodeSystem/v3-RoleCode` to `http://ehealth.sundhed.dk/vs/relatedperson-relationshiptype`.
+
 ## 11.0.3 (2026-11-04)
 ### Custom operations
 - Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
