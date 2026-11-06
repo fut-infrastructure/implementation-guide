@@ -1,0 +1,44 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "CareTeam-t-find-or-create-practitioner-specific-careteam",
+  "url": "http://ehealth.sundhed.dk/fhir/OperationDefinition/CareTeam-t-find-or-create-practitioner-specific-careteam",
+  "name": "find-or-create-practitioner-specific-careteam",
+  "title": "Find or create a Practitioner-specific CareTeam",
+  "status": "active",
+  "kind": "operation",
+  "description": "The operation returns the Practitioner-specific CareTeam for the given Practitioner and authorisation. \nA Practitioner-specific CareTeam is found by the given qualification. When no such CareTeam exists, a new one is created. \nThe Practitioner must have an active qualification with the given authorisation. \nAn OperationOutcome with an explicit error is returned in case the Practitioner is not found, in case the Practitioner has no active qualification with the given authorisation, in case the CareTeam found is inactive or its period has ended, or in case several CareTeams are found for the authorisation.",
+  "affectsState": true,
+  "code": "find-or-create-practitioner-specific-careteam",
+  "resource": [
+    "CareTeam"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "practitioner",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Mandatory reference to the Practitioner.",
+      "type": "Reference"
+    },
+    {
+      "name": "qualification",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "Mandatory identifier (system and value) of the Practitioner's authorisation qualification",
+      "type": "Identifier"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "CareTeam",
+      "documentation": "The Practitioner-specific CareTeam for the given authorisation. When none exists, it is created."
+    }
+  ]
+}

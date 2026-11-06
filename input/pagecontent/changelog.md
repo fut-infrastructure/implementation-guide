@@ -1,11 +1,15 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
 ## 11.0.3 (2026-11-04)
+### Custom operations
+- Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
 ### Code systems
 - Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.
 - Added `ZZ5048` (Hoehn og Yahr scale (HY)) to CodeSystem `urn-oid-1.2.208.176.2.4`.
+- Added `general` and `practitioner-specific` to http://ehealth.sundhed.dk/cs/careteam-category
 ### ValueSets
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/vs/observation-codes`.
+- Added http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet to http://ehealth.sundhed.dk/vs/careteam-participant-role
 ### ConceptMaps
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement`.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder`.
@@ -13,6 +17,10 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing`.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`.
 - Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`.
+### Resource/profile changes
+- BREAKING ehealth-careteam: identifier is now required (1..*)
+- BREAKING ehealth-careteam: category is now required (1..1)
+- BREAKING ehealth-careteam: CareTeam no longer has required reasonCode (0..*)
 
 ## 11.0.2 (2026-11-04)
 ### Search parameters

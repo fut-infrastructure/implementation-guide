@@ -22,5 +22,28 @@
   "description" : "Care Team Category",
   "caseSensitive" : true,
   "content" : "complete",
-  "concept" : []
+  "concept" : [
+    {
+      "code" : "general",
+      "display" : "Team for general, federated use",
+      "definition" : "Team with members typically controlled by federated user administration",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Generelt team"
+        }
+      ]
+    },
+    {
+      "code" : "practitioner-specific",
+      "display" : "Practitioner specific team",
+      "definition" : "Team for specific practitioner and authorization identifier",
+      "designation" : [
+        {
+          "language" : "da",
+          "value" : "Behandler-specifikt team"
+        }
+      ]
+    }
+  ]
 }
