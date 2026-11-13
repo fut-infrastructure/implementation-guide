@@ -1525,6 +1525,10 @@
           ]
         },
         {
+          "code": "DR32",
+          "display": "Urininkontinens uden nærmere specificering"
+        },
+        {
           "code": "DR60",
           "display": "Ødem IKA",
           "concept": [
