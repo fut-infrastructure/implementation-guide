@@ -1,5 +1,14 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 12.0.0 (2027-01-20)
+### Custom operations
+### Code systems
+- Added `DR32` (Urininkontinens uden nærmere specificering) to CodeSystem `urn-oid-1.2.208.176.2.4` (SKS).
+### ValueSets
+- Added `DR32` (Urininkontinens uden nærmere specificering) to `http://ehealth.sundhed.dk/vs/conditions`.
+### ConceptMaps
+### Resource/profile changes
+
 ## 11.0.3 (2026-11-04)
 ### Custom operations
 - Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
