@@ -217,6 +217,28 @@
           "value": "Forhandlingsprocess for overdragelse af plan(er) mellem behandlerteams"
         }
       ]
+    },
+    {
+      "code": "FeedbackNeeded",
+      "display": "Need feedback to patient on submitted response",
+      "definition": "Need feedback to patient on submitted response",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Borger har indsendt en besvarelse, som afventer feedback fra behandler"
+        }
+      ]
+    },
+    {
+      "code": "AssessmentNeeded",
+      "display": "Need assessment by practitioner",
+      "definition": "Need assessment by practitioner",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Opgave til vurdering af behandler."
+        }
+      ]
     }
   ]
 }
