@@ -232,11 +232,11 @@
     {
       "code": "AssessmentNeeded",
       "display": "Need assessment by practitioner",
-      "definition": "Need assessment by practitioner in relation to an episode of care. The specific task is described by the Task title",
+      "definition": "Need assessment by practitioner",
       "designation": [
         {
           "language": "da",
-          "value": "Opgave til vurdering af behandler ifm. forløb. Opgavens titel beskriver den konkrete opgave."
+          "value": "Opgave til vurdering af behandler."
         }
       ]
     }
