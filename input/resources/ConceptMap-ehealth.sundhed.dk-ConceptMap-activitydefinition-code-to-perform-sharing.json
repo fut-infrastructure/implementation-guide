@@ -439,8 +439,8 @@
           "code": "ZZ5048",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -599,8 +599,8 @@
           "code": "MDS-UPDRS-I",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -609,8 +609,8 @@
           "code": "MDS-UPDRS-IA",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -619,8 +619,8 @@
           "code": "MDS-UPDRS-IB",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -629,8 +629,8 @@
           "code": "MDS-UPDRS-II",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -639,8 +639,8 @@
           "code": "MDS-UPDRS-III",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
@@ -649,8 +649,8 @@
           "code": "MDS-UPDRS-IV",
           "target": [
             {
-              "code": "N",
-              "display": "No",
+              "code": "Y",
+              "display": "Yes",
               "equivalence": "relatedto"
             }
           ]
