@@ -1,5 +1,9 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
+## 11.0.5 (2026-11-16)
+### Code systems
+- Added danish designations to CodeSystem `http://ehealth.sundhed.dk/cs/plandefinition-recommendation`.
+
 ## 11.0.4 (2026-11-04)
 ### Custom operations
 #### Type operations
