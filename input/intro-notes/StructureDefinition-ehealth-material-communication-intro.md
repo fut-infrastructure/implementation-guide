@@ -12,8 +12,14 @@ In the eHealth infrastructure, the assignment is done by creating a Communicatio
   - If the material being assigned is _Patient-specific material_ (the material has patient-specific content), the episode of care must be the same as the one referenced in the `DocumentReference.context.encounter`.
 - `Communication.recipient` &rarr; The patient to whom the material is assigned. 
   - If present, must be the same as the subject.
-- `Communication.payload` &rarr; The `DocumentReference` for the material being assigned.
+- `Communication.payload` &rarr; The `DocumentReference` for the material being assigned. Cardinality is 1..2.
   - Must be a reference to an ehealth-documentreference resource from either the Plan or CarePlan service.
+  - A payload can hold a _versioned_ reference (e.g. `DocumentReference/1/_history/1`), an _unversioned_ reference (e.g. `DocumentReference/1`), or both:
+    - The versioned reference identifies the technical version of the DocumentReference that was valid at the time of assignment, and thereby the document the citizen actually received. Consumer solutions can use it to find the originally assigned version of the material.
+    - The unversioned reference always resolves to the latest technical version of the DocumentReference. Consumer solutions can use it to find the latest version of the material.
+  - If two payload elements are supplied, they must reference the same DocumentReference, one versioned and the other unversioned. Otherwise the request is rejected.
+  - If only one payload element is supplied, the infrastructure adds the other on create and update: given a versioned reference, the unversioned reference is added; given an unversioned reference, a versioned reference to the latest technical version is added.
+  - Consumer solutions must not assume a single payload element. Note that some FHIR clients (e.g. HAPI FHIR) strip the version from references by default when serializing, which would drop the versioned reference.
 - `Communication.participant` &rarr; The assigner of the material.
   - Must be a Practitioner or CareTeam.
 - `Communication.sent` &rarr; Time of assignment.

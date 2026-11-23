@@ -8,6 +8,7 @@ This is the log of changes made to the eHealth Implementation Guide.
 - Added `DR32` (Urininkontinens uden nærmere specificering) to `http://ehealth.sundhed.dk/vs/conditions`.
 ### ConceptMaps
 ### Resource/profile changes
+- Cardinality of `ehealth-material-communication.payload` increased from 1..1 to 1..2. This is to allow both a versioned (`DocumentReference/x/_history/n`) and an unversioned (`DocumentReference/x`) reference to the same DocumentReference (CCR0338). **Note:** do not assume a single payload element.
 
 ## 11.0.3 (2026-11-04)
 ### Custom operations
