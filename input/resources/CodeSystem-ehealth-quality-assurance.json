@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ehealth-quality-assurance",
+  "url": "http://ehealth.sundhed.dk/cs/quality-assurance",
+  "version": "0.1.0",
+  "name": "QualityAssurance",
+  "title": "Quality Assurance",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-11-23T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Quality markings that the owner or co-author of a questionnaire can set to record that the questionnaire has passed their quality assurance.",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "mdr-5-5-compliant",
+      "display": "Compliant with MDR Article 5(5)",
+      "definition": "The questionnaire complies with Article 5(5) of the EU Medical Device Regulation (MDR).",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Efterlever MDR Artikel 5(5)"
+        }
+      ]
+    },
+    {
+      "code": "qa-completed",
+      "display": "Quality assurance completed",
+      "definition": "The quality assurance of the questionnaire has been completed.",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kvalitetssikring gennemført"
+        }
+      ]
+    }
+  ]
+}

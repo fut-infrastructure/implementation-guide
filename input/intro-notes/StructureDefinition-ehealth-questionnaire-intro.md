@@ -101,3 +101,9 @@ When using `useContext.code` from [http://ehealth.sundhed.dk/vs/ehealth-usage-co
 
 ### ApprovalDate
 The date when the Questionnaire's `status` is set to `active`, whether it is initially created as active or changed to active, will be recorded in the `approvalDate` field.
+
+### Quality assurance and copy restriction
+Owners and co-authors of a Questionnaire (modifier-role `owner` or `co-author`) can record that the Questionnaire has passed their quality assurance and restrict who may copy it. Both can be set, changed and removed by an ordinary update in any status (`draft`, `active` and `retired`), without a new business version (`version` is unchanged; only a new technical version is created).
+
+- **`locked`** (`ehealth-questionnaire-locked`) – when `true`, a copy with `$create-clone` (`clone-operation` `copy`) requires modifier-role `owner` or `co-author`, in any status. An absent value means not locked. The value is carried over to new versions and copies.
+- **`qualityAssurance`** (`ehealth-questionnaire-qualityAssurance`) – a quality marking from [http://ehealth.sundhed.dk/vs/quality-assurance](ValueSet-ehealth-quality-assurance.html), and who added it. A client sends only `code`; `practitioner` and `organization` are set by the infrastructure from the security ticket when a marking is added or its code changes, and a client value is ignored. A Questionnaire can hold each code only once. Quality markings belong to one version: they are not carried over to new versions or copies created by `$create-clone`, and are removed from Questionnaires created by PlanDefinition `$import`.
