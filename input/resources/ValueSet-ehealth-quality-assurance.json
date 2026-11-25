@@ -24,15 +24,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://ehealth.sundhed.dk/cs/quality-assurance",
-        "concept": [
-          {
-            "code": "mdr-5-5-compliant"
-          },
-          {
-            "code": "qa-completed"
-          }
-        ]
+        "system": "http://ehealth.sundhed.dk/cs/quality-assurance"
       }
     ]
   }
