@@ -1,20 +1,61 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased (2027.1)
-### General changes
+## 12.0.0 (2027-01-20)
 ### Custom operations
-#### System operations
-#### Instance operations
 ### Code systems
+- Added `DR32` (Urininkontinens uden nærmere specificering) to CodeSystem `urn-oid-1.2.208.176.2.4` (SKS).
 ### ValueSets
+- Added `DR32` (Urininkontinens uden nærmere specificering) to `http://ehealth.sundhed.dk/vs/conditions`.
 ### ConceptMaps
 ### Resource/profile changes
 - Added new `ehealth-patient-answersignificance` profile (Questionnaire based) holding individualised triage indicators for one patient (CCR0307). The profile carries only the item structure (`linkId`, `type`), the `ehealth-questionnaire-answerSignificance` extensions, a versioned `derivedFrom` to the source questionnaire, and the extensions `ehealth-patient-answersignificance-subject`, `ehealth-patient-answersignificance-carePlan` and `ehealth-patient-answersignificance-episodeOfCare`.
 - Added extension `ehealth-individualisation-locked` to `ehealth-questionnaire` (and so to `ehealth-questionnaire-advanced`), `ehealth-activitydefinition` and `ehealth-servicerequest` (CCR0307). When `true`, individualised triage indicators are not allowed. `PlanDefinition/$apply` sets it to `true` on the ServiceRequest when the ActivityDefinition or the questionnaire is locked.
 - Added extension `ehealth-servicerequest-patientAnswerSignificance` to `ehealth-servicerequest`, referencing the individualised triage indicators that apply to the ServiceRequest (CCR0307).
 - Added extension `ehealth-questionnaireresponse-patientAnswerSignificance` to `ehealth-questionnaireresponse`, holding a version-specific canonical (`.../_history/{vid}`) to the individualised triage indicators that applied at submit (CCR0307). **Note for vendors:** the infrastructure sets this extension, and replaces or removes a value sent by the client.
+
+## 11.0.5 (2026-11-16)
+### Code systems
+- Added danish designations to CodeSystem `http://ehealth.sundhed.dk/cs/plandefinition-recommendation`.
+- Added `FeedbackNeeded` (Need feedback to patient on submitted response) and `AssessmentNeeded` (Need assessment by practitioner) to CodeSystem `http://ehealth.sundhed.dk/cs/task-category`.
+
+## 11.0.4 (2026-11-04)
+### Custom operations
+#### Type operations
+- Added the optional input parameter `period` to `RelatedPerson/$create-managed-related-person`, the period the created RelatedPerson is active for. `RelatedPerson.active` is now set at creation from the period: true when today lies within it, with an absent start or end leaving that side open. **Note for vendors:** a related person created with a `period` that has ended or not yet started is created inactive. See the [OperationDefinition](OperationDefinition-ehealth-relatedperson-create-managed.html) and the [operation example](POST_RelatedPerson_create-managed-related-person.html).
+### Capability statements
+- Added the `date` search parameter (searching `RelatedPerson.period`) and the `create-managed-related-person` operation to the RelatedPerson resource in the [Patient service CapabilityStatement](CapabilityStatement-patient.html).
+
+## 11.0.3 (2026-11-04)
+### Custom operations
+- Added new custom operation $find-or-create-practitioner-specific-careteam on Organization service. Custom operation is used to find or create the Practitioner-specific CareTeam for a Practitioner and authorisation (CCR0284)
+### Code systems
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/mds-codes` regarding `International Parkinson and Movement Disorder Society (MDS)`.
+- Added `ZZ5048` (Hoehn og Yahr scale (HY)) to CodeSystem `urn-oid-1.2.208.176.2.4`.
+- Added `general` and `practitioner-specific` to http://ehealth.sundhed.dk/cs/careteam-category
+### ValueSets
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/vs/observation-codes`.
+- Added http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet to http://ehealth.sundhed.dk/vs/careteam-participant-role
+### ConceptMaps
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-missing-measurement`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-do-reminder`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-measurement-resource-type`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/activitydefinition-code-to-perform-sharing`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-ucum`.
+- Added `ZZ5048` and MDS codes to `http://ehealth.sundhed.dk/ConceptMap/conceptmap-obs-code-to-value-type`.
+### Resource/profile changes
+- BREAKING ehealth-careteam: identifier is now required (1..*)
+- BREAKING ehealth-careteam: category is now required (1..1)
+- BREAKING ehealth-careteam: CareTeam no longer has required reasonCode (0..*)
+
+## 11.0.2 (2026-11-04)
 ### Search parameters
-### Event messages
+- Added search parameter `relatedPersonCPRIdentifier` (CPR identifier) on RelatedPerson
+- Added search parameter `relatedPersonRelationshipParauth` (relationship code `PARAUTH`) on RelatedPerson
+- Added an uniqueness constraint `relatedPersonCPRIdentifierPatientParauthUnique`: a patient can have at most one RelatedPerson with a given CPR identifier and the relationship code `PARAUTH`. **Note for vendors:** creating a second such RelatedPerson is rejected with HTTP 409 (Conflict).
+
+## 11.0.1 (2026-11-04)
+### General changes
+- Fixed drop down menus in page render
 
 ## 11.0.0 (2026-11-04)
 ### General changes

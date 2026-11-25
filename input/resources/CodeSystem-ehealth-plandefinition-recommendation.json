@@ -45,42 +45,122 @@
     {
       "code": "Mandatory",
       "display": "Mandatory",
-      "definition": "Mandatory"
+      "definition": "Mandatory",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Mandatory"
+        },
+        {
+          "language": "da",
+          "value": "Obligatorisk"
+        }
+      ]
     },
     {
       "code": "Recommended",
       "display": "Recommended",
-      "definition": "Recommended"
+      "definition": "Recommended",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Recommended"
+        },
+        {
+          "language": "da",
+          "value": "Anbefalet"
+        }
+      ]
     },
     {
       "code": "Confirmed",
       "display": "Confirmed",
-      "definition": "Confirmed"
+      "definition": "Confirmed",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Confirmed"
+        },
+        {
+          "language": "da",
+          "value": "Bekræftet"
+        }
+      ]
     },
     {
       "code": "NotRecommended",
       "display": "NotRecommended",
-      "definition": "NotRecommended"
+      "definition": "NotRecommended",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Not recommended"
+        },
+        {
+          "language": "da",
+          "value": "Frarådes"
+        }
+      ]
     },
     {
       "code": "Applicable",
       "display": "Applicable",
-      "definition": "Applicable"
+      "definition": "Applicable",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Applicable"
+        },
+        {
+          "language": "da",
+          "value": "Anvendelig"
+        }
+      ]
     },
     {
       "code": "PhasedOut",
       "display": "PhasedOut",
-      "definition": "PhasedOut"
+      "definition": "PhasedOut",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "PhasedOut"
+        },
+        {
+          "language": "da",
+          "value": "Udfaset"
+        }
+      ]
     },
     {
       "code": "Observed",
       "display": "Observed",
-      "definition": "Observed"
+      "definition": "Observed",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Observed"
+        },
+        {
+          "language": "da",
+          "value": "Observeres"
+        }
+      ]
     },
     {
       "code": "Planned",
       "display": "Planned",
-      "definition": "Planned"
+      "definition": "Planned",
+      "designation": [
+        {
+          "language": "en-US",
+          "value": "Planned"
+        },
+        {
+          "language": "da",
+          "value": "Planlagt"
+        }
+      ]
     }
   ]
 }

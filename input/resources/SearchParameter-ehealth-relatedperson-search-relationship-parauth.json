@@ -1,0 +1,16 @@
+{
+    "resourceType": "SearchParameter",
+    "id": "ehealth-relatedperson-search-relationship-parauth",
+    "url": "http://ehealth.sundhed.dk/fhir/SearchParameter/RelatedPerson/relationshipParauth",
+    "name": "relatedPersonRelationshipParauth",
+    "status": "active",
+    "date": "2026-10-26T00:00:00+00:00",
+    "code": "relatedPersonRelationshipParauth",
+    "base": [
+        "RelatedPerson"
+    ],
+    "type": "token",
+    "description": "Search parameter for the relationship code PARAUTH (parental authority) on a RelatedPerson. Component of the uniqueness constraint relatedPersonCPRIdentifierPatientParauthUnique.",
+    "expression": "RelatedPerson.relationship.coding.where(system = 'http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes' and code = 'PARAUTH').code",
+    "xpathUsage": "normal"
+}

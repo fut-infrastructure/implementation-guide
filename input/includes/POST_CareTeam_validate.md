@@ -34,6 +34,12 @@ __Body__:
           }
         ],
         "status": "active",
+        "category": [ {
+          "coding": [ {
+            "system": "http://ehealth.sundhed.dk/cs/careteam-category",
+            "code": "general"
+          } ]
+        } ],
         "name": "5973aeaa-5a0a-4c07-9dde-bb766adf45d2",
         "period": {
           "start": "2026-04-16T11:34:39+00:00"

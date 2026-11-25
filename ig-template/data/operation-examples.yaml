@@ -220,6 +220,9 @@
 - profile: system
   path: POST_Organization_get-general-practitioner-info.html
 
+- profile: system
+  path: POST_CareTeam_find-or-create-practitioner-specific-careteam.html
+
 # bulk export
 - profile: system
   path: POST_export.html
