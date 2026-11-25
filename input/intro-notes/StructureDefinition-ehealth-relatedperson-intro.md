@@ -27,3 +27,7 @@ A citizen can log in as a managed related person (with tasks) through a client s
 Client systems specify the relationship or relationships a related person has to the patient. The relationship coding is bound to the RelationshipTypes value set.
 
 The codes `POWATT` (power of attorney holder) and `PARAUTH` (holder of parental authority) are reserved for related persons that the infrastructure creates and maintains automatically. They cannot be set on a manually created RelatedPerson and are rejected by the create operation.
+
+Such a RelatedPerson comes into existence as part of the citizen's authentication as a power of attorney holder or as a holder of parental authority — there is no client system or operation that creates one. For a power of attorney, the privileges granted are carried as additional `relationship` codings from [poa-privilege](CodeSystem-ehealth-poa-privilege.html); those codes are issued externally and are not enumerated in this guide. See [relatedperson01](RelatedPerson-relatedperson01.html) for an example.
+
+These relationship codes concern how a related person is authenticated and what they may access. They are unrelated to the consent categories `PORPI` and `RPCTEOC`, which concern a related person assigned as performer of activities — see [Consents for related persons performing activities](StructureDefinition-ehealth-consent.html#consents-for-related-persons-performing-activities) on ehealth-consent.
