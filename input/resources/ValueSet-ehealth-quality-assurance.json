@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ehealth-quality-assurance",
+  "url": "http://ehealth.sundhed.dk/vs/quality-assurance",
+  "version": "0.1.0",
+  "name": "QualityAssurance",
+  "title": "Quality Assurance",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-11-23T00:00:00+00:00",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "name": "ehealth.sundhed.dk",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://ehealth.sundhed.dk/terminology"
+        }
+      ]
+    }
+  ],
+  "description": "Quality Assurance value set.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ehealth.sundhed.dk/cs/quality-assurance"
+      }
+    ]
+  }
+}

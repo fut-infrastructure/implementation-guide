@@ -12,6 +12,8 @@ Parent: Questionnaire
 * extension contains ehealth-predecessor named predecessor 0..1
 * extension contains ehealth-base named base 0..1
 * extension contains ehealth-base-environment named baseEnvironment 0..1
+* extension contains ehealth-questionnaire-locked named locked 0..1
+* extension contains ehealth-questionnaire-qualityAssurance named qualityAssurance 0..*
 
 * version 1..1
 * jurisdiction from http://ehealth.sundhed.dk/vs/jurisdiction
@@ -52,6 +54,37 @@ Description: "Defines the recommendation state of the questionnaire."
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://ehealth.sundhed.dk/vs/questionnaire-recommendation
 * valueCodeableConcept 1..1
+
+Extension: ehealth-questionnaire-locked
+Title:     "Questionnaire locked"
+Description: "Defines whether copying of the questionnaire is restricted to modifier-role owner and co-author."
+* . ^short = "Copying restricted to owner and co-author"
+* value[x] only boolean
+* valueBoolean 1..1
+
+Extension: ehealth-questionnaire-qualityAssurance
+Title:     "Questionnaire quality assurance"
+Description: "Defines a quality marking of the questionnaire and the practitioner and organization who added it."
+* . ^short = "Quality marking and who added it"
+* extension contains
+    code 1..1 and
+    practitioner 0..1 and
+    organization 0..1
+* extension[code].value[x] only CodeableConcept
+* extension[code].valueCodeableConcept from http://ehealth.sundhed.dk/vs/quality-assurance
+* extension[code].valueCodeableConcept 1..1
+* extension[code] ^short = "The quality marking"
+* extension[code] ^definition = "The code defining the quality marking."
+* extension[practitioner].value[x] only Reference(ehealth-practitioner)
+* extension[practitioner].valueReference ^type.aggregation = #referenced
+* extension[practitioner].valueReference 1..1
+* extension[practitioner] ^short = "The Practitioner who added the quality marking"
+* extension[practitioner] ^definition = "The Practitioner who added the quality marking. Set by the infrastructure from the security ticket; a client value is ignored."
+* extension[organization].value[x] only Reference(ehealth-organization)
+* extension[organization].valueReference ^type.aggregation = #referenced
+* extension[organization].valueReference 1..1
+* extension[organization] ^short = "The Organization on whose behalf the quality marking was added"
+* extension[organization] ^definition = "The Organization in whose security context the quality marking was added. Set by the infrastructure from the security ticket; a client value is ignored."
 
 Extension: ehealth-questionnaire-intendedOrganization
 Title:     "Questionnaire intended organization"

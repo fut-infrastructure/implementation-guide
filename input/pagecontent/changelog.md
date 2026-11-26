@@ -2,12 +2,19 @@ This is the log of changes made to the eHealth Implementation Guide.
 
 ## 12.0.0 (2027-01-20)
 ### Custom operations
+- Updated `Questionnaire/$create-clone`: a copy (`clone-operation` `copy`) of a locked Questionnaire (`ehealth-questionnaire-locked` true), in any status, requires modifier-role `owner` or `co-author`. Copies, minor versions and major versions are created without quality markings (`ehealth-questionnaire-qualityAssurance`); the lock is carried over. See the [OperationDefinition](OperationDefinition-Questionnaire-i-create-clone.html).
+- Updated `PlanDefinition/$create-clone` and `ActivityDefinition/$create-clone`: a copy (`clone-operation` `copy`) with a locked Questionnaire (`ehealth-questionnaire-locked` true) in `deep-clone-references`, in any status, requires modifier-role `owner` or `co-author` on that Questionnaire; otherwise nothing is created. See the [OperationDefinition](OperationDefinition-ActivityDefinitionPlanDefinition-i-create-clone.html).
+- Updated `PlanDefinition/$import`: Questionnaires are created without quality markings (`ehealth-questionnaire-qualityAssurance`); the lock is kept. `PlanDefinition/$export` includes both as stored.
 ### Code systems
 - Added `DR32` (Urininkontinens uden nærmere specificering) to CodeSystem `urn-oid-1.2.208.176.2.4` (SKS).
+- Added CodeSystem `http://ehealth.sundhed.dk/cs/quality-assurance` (Quality Assurance) with codes `mdr-5-5-compliant` (Compliant with MDR Article 5(5)) and `qa-completed` (Quality assurance completed).
 ### ValueSets
 - Added `DR32` (Urininkontinens uden nærmere specificering) to `http://ehealth.sundhed.dk/vs/conditions`.
+- Added ValueSet `http://ehealth.sundhed.dk/vs/quality-assurance` with all codes from `http://ehealth.sundhed.dk/cs/quality-assurance`.
 ### ConceptMaps
 ### Resource/profile changes
+- Added extension `ehealth-questionnaire-locked` (boolean, 0..1) to `ehealth-questionnaire`, restricting copying of the Questionnaire to modifier-role `owner` and `co-author`; an absent value means not locked. Inherited by `ehealth-questionnaire-advanced`.
+- Added extension `ehealth-questionnaire-qualityAssurance` (0..*) to `ehealth-questionnaire`, holding a quality marking (`code`, required binding to `http://ehealth.sundhed.dk/vs/quality-assurance`) and the `practitioner` and `organization` who added it. `practitioner` and `organization` are set by the infrastructure from the security ticket; a client value is ignored. Inherited by `ehealth-questionnaire-advanced`. Both extensions can be changed by modifier-role `owner` and `co-author` in any status without a new business version.
 
 ## 11.0.5 (2026-11-16)
 ### Code systems
