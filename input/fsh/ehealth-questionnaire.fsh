@@ -79,12 +79,12 @@ Description: "Defines a quality marking of the questionnaire and the practitione
 * extension[practitioner].valueReference ^type.aggregation = #referenced
 * extension[practitioner].valueReference 1..1
 * extension[practitioner] ^short = "The Practitioner who added the quality marking"
-* extension[practitioner] ^definition = "The Practitioner who added the quality marking."
+* extension[practitioner] ^definition = "The Practitioner who added the quality marking. Set by the infrastructure from the security ticket; a client value is ignored."
 * extension[organization].value[x] only Reference(ehealth-organization)
 * extension[organization].valueReference ^type.aggregation = #referenced
 * extension[organization].valueReference 1..1
 * extension[organization] ^short = "The Organization on whose behalf the quality marking was added"
-* extension[organization] ^definition = "The Organization in whose security context the quality marking was added."
+* extension[organization] ^definition = "The Organization in whose security context the quality marking was added. Set by the infrastructure from the security ticket; a client value is ignored."
 
 Extension: ehealth-questionnaire-intendedOrganization
 Title:     "Questionnaire intended organization"
