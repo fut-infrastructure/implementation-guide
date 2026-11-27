@@ -1,6 +1,6 @@
 This is the log of changes made to the eHealth Implementation Guide.
 
-## Unreleased
+## 11.0.6 (2026-11-27)
 ### Resource/profile changes
 - Documented in the [ehealth-relatedperson](StructureDefinition-ehealth-relatedperson.html) introduction how a RelatedPerson carrying the reserved relationship codes `POWATT` or `PARAUTH` comes into existence, and clarified in both that introduction and the [ehealth-consent](StructureDefinition-ehealth-consent.html) introduction that the consent categories `PORPI` and `RPCTEOC` concern a related person assigned as performer of activities and are unrelated to those relationship codes.
 
