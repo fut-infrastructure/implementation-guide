@@ -143,6 +143,8 @@ A related person (Danish: pårørende) can be assigned as performer of activitie
 
 The information is carried by the category codes. No `Consent.policy` and no `Consent.provision.action` codes are defined for these consents; both elements are optional and are left empty.
 
+These two consents concern a related person assigned as performer of activities, referenced from `ServiceRequest.performer`. They are unrelated to the reserved relationship codes `POWATT` (power of attorney holder) and `PARAUTH` (holder of parental authority), described under [Relationship](StructureDefinition-ehealth-relatedperson.html#relationship) on ehealth-relatedperson: access obtained through a power of attorney or through parental authority rests on a different basis and is not expressed as a `PORPI` or `RPCTEOC` Consent.
+
 A **PORPI** consent is expressed with the following elements:
 
 <table class="grid">
